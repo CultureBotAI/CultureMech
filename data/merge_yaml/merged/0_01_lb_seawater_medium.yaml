@@ -1,82 +1,106 @@
-id: CultureMech:007907
+id: CultureMech:002439
 name: 0_01_lb_seawater_medium
-original_name: 0.01% LB Seawater Medium
+original_name: 0.01% LB SEAWATER MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: JCM Medium J1273
+  term:
+    id: mediadive.medium:J1273
+    label: 0.01% LB SEAWATER MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1273
+
+
+  Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
+
+  Supplier: Multiple suppliers (Difco, Sigma, etc.)
+
+  Catalog: Multiple (L3522 Sigma, 244520 BD)
+
+  Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
 ingredients:
-- preferred_term: K2HPO4
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:63005
+    label: NaNO3
   concentration:
-    value: '5'
+    value: '0.12'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000171
+    label: NaNO3
+- preferred_term: K2HPO4
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
-- preferred_term: Biotin
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Simple component, Organic compound, Defined component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
+    label: Vitamin B12
+- preferred_term: Biotin
   term:
     id: CHEBI:15956
-    label: biotin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
     label: Biotin
-- preferred_term: Thiamine・HCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
+    label: Biotin
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Simple component, Defined component'
-- preferred_term: Vitamin B12
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Simple component, Defined component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+- preferred_term: Fe(III)-EDTA
   term:
-    id: CHEBI:176843
-    label: vitamin B12
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001027
-    label: Vitamin B12
-- preferred_term: NaNO3
-  concentration:
-    value: '120'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
-    Inorganic compound'
-  term:
-    id: CHEBI:63005
-    label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000388
-    label: NaNO3
-- preferred_term: Seawater
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media, Mineral source; Properties: Undefined component'
-- preferred_term: Tris(hydroxymethyl)aminomethane
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'
-  term:
-    id: CHEBI:9754
-    label: tris
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000880
-    label: Tris(hydroxymethyl)aminomethane
-- preferred_term: Fe(III)・EDTA
+    id: CHEBI:30729
+    label: Fe(III)-EDTA
   concentration:
     value: '259'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Simple component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30729
+    label: Fe(III)-EDTA
+- preferred_term: Mn(II) x EDTA
+  concentration:
+    value: '332'
+    unit: G_PER_L
+- preferred_term: Tris(hydroxymethyl)aminomethane
+  term:
+    id: CHEBI:9754
+    label: Tris(hydroxymethyl)aminomethane
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:9754
+    label: Tris(hydroxymethyl)aminomethane
 - preferred_term: Tryptone
   term:
     id: MICRO:0000182
@@ -130,76 +154,54 @@ ingredients:
     synonym_type: EXACT
   - synonym_text: table salt
     synonym_type: EXACT
-- preferred_term: Mn(II)・EDTA
+- preferred_term: Sea water
   concentration:
-    value: '332'
+    value: '1000'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Simple component'
-- preferred_term: HCl
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Solution'
-  term:
-    id: CHEBI:17883
-    label: hydrogen chloride
-  concentration:
-    value: variable
-    unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000150
-    label: HCl
-media_term:
-  preferred_term: TOGO Medium M1369
-  term:
-    id: TOGO:M1369
-    label: 0.01% LB Seawater Medium
-notes: 'Source: https://togomedium.org/medium/M1369
-
-  Original source: JCM - JCM_M1273
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1273
-
-
-  Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
-
-  Supplier: Multiple suppliers (Difco, Sigma, etc.)
-
-  Catalog: Multiple (L3522 Sigma, 244520 BD)
-
-  Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-
-  Accessed: 2026-03-28
-
-
-  Constituent composition researched from product specification.'
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Mix components thoroughly, adjust pH to 8.0 with HCl and autoclave.
+- step_number: 2
+  action: MIX
+  description: 'Comment: Artificial sea water (such as artificial sea water in Medium
+    No. 1118) can be used instead of natural sea water.'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.443716Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M1369'
-- timestamp: '2026-01-28T19:48:22.726368Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:47.424861'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: HCl'
-- timestamp: '2026-03-13T06:19:52.392874Z'
+- timestamp: '2026-01-26T17:53:19.251848Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1273'
+- timestamp: '2026-03-13T06:19:13.321778Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:007907'
-- timestamp: '2026-03-17T06:30:13.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:002439'
+- timestamp: '2026-03-17T06:30:24.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:10.850354+00:00'
+- timestamp: '2026-03-17T19:45:26.425634+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "0.01% LB Seawater Medium" to "0_01_lb_seawater_medium"
+  notes: Normalized name from "0.01% LB SEAWATER MEDIUM" to "0_01_lb_seawater_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:40:15.238806+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:42.430860+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:33.099358+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 73c6b095f2a8acc2cb405b1476b61f3e309977a783a8a41894793ed7d8dd781a
+  source: 0_01_lb_seawater_medium.yaml
 high_metal: true
-merge_fingerprint: f6c75224944a2ed51e74d94e479a39430014a995fc706112bf89a6b2cb279309
+merge_fingerprint: 73c6b095f2a8acc2cb405b1476b61f3e309977a783a8a41894793ed7d8dd781a
 merged_from:
-- TOGO_M1369_0.01_LB_Seawater_Medium
+- 0_01_lb_seawater_medium

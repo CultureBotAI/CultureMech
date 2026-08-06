@@ -3,6 +3,7 @@ name: medium_d
 original_name: Medium D
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: MgSO4 · 7H2O
@@ -12,8 +13,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:32599
-    label: ''
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: NaCl
   concentration:
     value: '0.008'
@@ -23,9 +24,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: NaNO3
   concentration:
     value: '0.7'
@@ -35,8 +36,8 @@ ingredients:
   term:
     id: CHEBI:63005
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000388
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
     label: NaNO3
 - preferred_term: NTA (sodium nitrilotriacetate)
   concentration:
@@ -98,9 +99,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: CoCl2 · 6H2O
   concentration:
     value: '0.045'
@@ -152,8 +153,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: FeCl3
   concentration:
@@ -164,9 +165,9 @@ ingredients:
   term:
     id: CHEBI:30808
     label: iron trichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000705
-    label: FeCl3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30808
+    label: iron trichloride
 media_term:
   preferred_term: TOGO Medium M3140
   term:
@@ -197,9 +198,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009608'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:59.691478'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:41.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -208,6 +209,31 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "Medium D" to "medium_d" for consistent matching
+- timestamp: '2026-05-16T09:04:19.780753+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:28.766891+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:58:20.815704+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:47:05.940453+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:42.927018+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 531d7e90be54b320093642b1929d4774c4eee0788c66681742f3290a2e46d06f
+  source: medium_d.yaml
 solutions:
 - preferred_term: Micronutrient solution
   term:
@@ -224,6 +250,6 @@ solutions:
     value: '1'
     unit: G_PER_L
   name: Unknown solution
-merge_fingerprint: 5e9d785adf5b7e4f7841321cb2165eb0e1375df6dbec21b62bba86383500fd58
+merge_fingerprint: 531d7e90be54b320093642b1929d4774c4eee0788c66681742f3290a2e46d06f
 merged_from:
 - medium_d

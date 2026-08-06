@@ -1,6 +1,7 @@
 id: CultureMech:015479
 name: Vogels fungal media
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Trisodium citrate dihydrate
@@ -67,6 +68,9 @@ ingredients:
     value: '0.05'
     unit: G_PER_L
   notes: 'CAS: 7783-85-9'
+  term:
+    id: CHEBI:76181
+    label: ''
 - preferred_term: Copper (II) sulfate pentahydrate
   concentration:
     value: '0.0125'
@@ -117,7 +121,7 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-99-7; MW: 180.16'
 description: media for growing fungi
 notes: 'Source: FEBA media definitions'
-category: FUNGAL
+category: fungal
 sources:
 - database: CultureBotHT
   database_id: Vogels fungal media
@@ -131,8 +135,17 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015479'
+- timestamp: '2026-05-16T09:04:39.869460+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:04.216967+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 768ee9af5a9afa39027a8a74572796e14b0c984cd0df55d83df2c1baced0d734
+  source: vogels_fungal_media.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: 3bac7b962b85a0019c50c9fd55b68cd38e725698712508abd31dc6436d65e2a9
+merge_fingerprint: 768ee9af5a9afa39027a8a74572796e14b0c984cd0df55d83df2c1baced0d734
 merged_from:
 - vogels_fungal_media

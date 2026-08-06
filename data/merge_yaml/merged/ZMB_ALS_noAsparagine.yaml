@@ -1,6 +1,7 @@
 id: CultureMech:015798
 name: ZMB ALS noAsparagine
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: ZMB_ALS
@@ -17,7 +18,7 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 70-47-3; MW: 132.12'
 description: Media for culturing Bifidobacterium minus asparagine
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: ZMB ALS noAsparagine
@@ -31,6 +32,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015798'
+- timestamp: '2026-05-16T09:04:44.109843+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:09.093604+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 5973a4602bf4887b1e98302ef5973119510292162b220bcd4a0793fb315a248f
+  source: zmb_als_noasparagine.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: 5973a4602bf4887b1e98302ef5973119510292162b220bcd4a0793fb315a248f

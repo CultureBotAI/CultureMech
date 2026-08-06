@@ -4,6 +4,7 @@ original_name: PPLO broth without CV (pH 7.8) with horse serum (not inactivated)
   yeast extract
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -15,8 +16,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Horse Serum (not inactivated)
   concentration:
@@ -67,6 +68,17 @@ curation_history:
   notes: Normalized name from "PPLO broth without CV (pH 7.8) with horse serum (not
     inactivated) and yeast extract" to "pplo_broth_without_cv_ph_7_8_with_horse_serum_not_inactivated_and_yeast_extract"
     for consistent matching
+- timestamp: '2026-06-05T07:41:42.445633+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:53.440673+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 30ce3b1f9b074d7d4ec40d19b76e2ab5d8aaabc40cd8f023053f19457575e85b
+  source: pplo_broth_without_cv_ph_7_8_with_horse_serum_not_inactivated_and_yeast_extract.yaml
 merge_fingerprint: 30ce3b1f9b074d7d4ec40d19b76e2ab5d8aaabc40cd8f023053f19457575e85b
 merged_from:
 - pplo_broth_without_cv_ph_7_8_with_horse_serum_not_inactivated_and_yeast_extract

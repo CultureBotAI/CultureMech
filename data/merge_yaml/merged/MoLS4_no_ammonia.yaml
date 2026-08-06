@@ -1,6 +1,7 @@
 id: CultureMech:015608
 name: MoLS4 no ammonia
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sodium sulfate
@@ -129,6 +130,9 @@ ingredients:
     value: '0.06'
     unit: MICROMOLAR
   notes: 'CAS: 10125-13-0; MW: 170.48'
+  term:
+    id: CHEBI:86318
+    label: ''
 - preferred_term: Sodium selenite pentahydrate
   concentration:
     value: '0.21'
@@ -150,8 +154,8 @@ ingredients:
     value: '0.01'
     unit: MG_PER_L
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Thauer''s vitamin
     mix'
 - preferred_term: 4-Aminobenzoic acid
@@ -247,7 +251,7 @@ ingredients:
 description: Lactate-sulfate media for sulfate-reducing bacteria with no ammonium,
   pH should be 7.2
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: MoLS4 no ammonia
@@ -261,8 +265,27 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015608'
+- timestamp: '2026-05-16T09:04:41.825681+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:53.084056+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:47:15.519344+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:06.639107+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 8f0159b04534659181e5341c69a2f3d4061a51b84654efebea822f371f0fa6e3
+  source: mols4_no_ammonia.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: e04163bc6f4d079454595306ac1bf4e8ba3cf0f7d90ba9291029828f73a3149f
+merge_fingerprint: 8f0159b04534659181e5341c69a2f3d4061a51b84654efebea822f371f0fa6e3
 merged_from:
 - mols4_no_ammonia

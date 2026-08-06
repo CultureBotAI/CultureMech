@@ -1,56 +1,70 @@
-id: CultureMech:015387
+id: CultureMech:007776
 name: marine_agar_2216_with_1_starch
-original_name: MARINE AGAR 2216 WITH 1% STARCH
-category: specialized
+original_name: Marine Agar 2216 With 1% Starch
+category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-media_term:
-  preferred_term: JCM Medium J1164
-  term:
-    id: mediadive.medium:J1164
-    label: MARINE AGAR 2216 WITH 1% STARCH
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1164'
 ingredients:
-- preferred_term: Marine agar 2216
-  term:
-    id: CHEBI:2509
-    label: Marine agar 2216
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Marine agar 2216
-- preferred_term: Starch
-  term:
-    id: CHEBI:28017
-    label: Starch
+- preferred_term: Soluble starch
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
-    label: Starch
+  notes: 'Role: Carbon source; Properties: Undefined component'
+  term:
+    id: CHEBI:28017
+    label: ''
+media_term:
+  preferred_term: TOGO Medium M1246
+  term:
+    id: TOGO:M1246
+    label: Marine Agar 2216 With 1% Starch
+notes: 'Source: https://togomedium.org/medium/M1246
+
+  Original source: JCM - JCM_M1164
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1164'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:18.865982Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J1164'
-- timestamp: '2026-03-13T06:20:42.343436Z'
+- timestamp: '2026-01-27T06:35:54.211664Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1246'
+- timestamp: '2026-03-09T08:04:56.417796+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:51.370830Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:015387'
-- timestamp: '2026-03-17T17:06:21.000000Z'
-  curator: mediaingredientmech-enrichment-v1.0
-  action: Added MediaIngredientMech links
-  notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:33.977540+00:00'
+  notes: 'Assigned stable identifier: CultureMech:007776'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T19:46:09.793216+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MARINE AGAR 2216 WITH 1% STARCH" to "marine_agar_2216_with_1_starch"
+  notes: Normalized name from "Marine Agar 2216 With 1% Starch" to "marine_agar_2216_with_1_starch"
     for consistent matching
-merge_fingerprint: 779acea5898fb18ba4af2bb9fde04c4271ded16538a7660619d289583e4bf855
+- timestamp: '2026-05-16T09:03:40.142421+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:05:41.919066+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b16bfddde711388e6e64c9e0423aee10b58bf121184b5642069890e7f57d1d26
+  source: marine_agar_2216_with_1_starch.yaml
+solutions:
+- preferred_term: Marine agar 2216 (see Medium [M110])
+  composition: []
+  notes: Cross-reference to Medium M110
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: b16bfddde711388e6e64c9e0423aee10b58bf121184b5642069890e7f57d1d26
 merged_from:
 - marine_agar_2216_with_1_starch

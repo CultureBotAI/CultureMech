@@ -3,6 +3,7 @@ name: tomato_juice_milk_medium
 original_name: TOMATO JUICE MILK Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:
@@ -48,6 +49,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TOMATO JUICE MILK Medium" to "tomato_juice_milk_medium"
     for consistent matching
+- timestamp: '2026-08-06T03:06:01.661575+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 1a4580aabc9d798347ca5aba5db05b004ec37edb97b5a3a601b9866feb200d05
+  source: tomato_juice_milk_medium.yaml
 merge_fingerprint: 1a4580aabc9d798347ca5aba5db05b004ec37edb97b5a3a601b9866feb200d05
 merged_from:
 - tomato_juice_milk_medium

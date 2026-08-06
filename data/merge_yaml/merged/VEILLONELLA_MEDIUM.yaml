@@ -1,51 +1,46 @@
-id: CultureMech:000830
+id: CultureMech:002816
 name: veillonella_medium
 original_name: VEILLONELLA MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:
-  preferred_term: DSMZ Medium 136
+  preferred_term: JCM Medium J468
   term:
-    id: mediadive.medium:136
+    id: mediadive.medium:J468
     label: VEILLONELLA MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium136.pdf'
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=468'
 ingredients:
-- preferred_term: Trypticase
+- preferred_term: Trypticase peptone
   concentration:
     value: '5'
     unit: G_PER_L
-  term:
-    id: CHEBI:78018
-    label: dodecylphosphocholine
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000263
-    label: Trypticase
 - preferred_term: Yeast extract
   concentration:
     value: '3'
     unit: G_PER_L
-- preferred_term: Na-(DL)-lactate
+- preferred_term: Sodium DL-lactate
+  term:
+    id: CHEBI:75228
+    label: Sodium DL-lactate
   concentration:
     value: '7.5'
     unit: G_PER_L
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:75228
-    label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001047
-    label: Na-(DL)-lactate
-- preferred_term: Na-thioglycolate
+    label: Sodium DL-lactate
+- preferred_term: Sodium thioglycolate
   term:
     id: CHEBI:86481
-    label: Na-thioglycolate
+    label: Sodium thioglycolate
   concentration:
     value: '0.75'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000569
-    label: Na-thioglycolate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86481
+    label: Sodium thioglycolate
 - preferred_term: Tween 80
   term:
     id: CHEBI:53426
@@ -53,8 +48,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000190
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53426
     label: Tween 80
 - preferred_term: Glucose
   term:
@@ -63,8 +58,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Putrescine
   term:
@@ -73,8 +68,8 @@ ingredients:
   concentration:
     value: '0.003'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000628
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17148
     label: Putrescine
 - preferred_term: Resazurin
   term:
@@ -83,8 +78,8 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 preparation_steps:
 - step_number: 1
@@ -93,27 +88,34 @@ preparation_steps:
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:10.291352Z'
+- timestamp: '2026-01-26T17:53:16.687458Z'
   curator: mediadive-import
   action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 136'
-- timestamp: '2026-01-28T19:48:20.104602Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:18:58.706804Z'
+  notes: 'Source: JCM, ID: J468'
+- timestamp: '2026-03-13T06:19:15.892282Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000830'
-- timestamp: '2026-03-17T06:30:08.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:002816'
+- timestamp: '2026-03-17T06:30:38.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:10.151475+00:00'
+- timestamp: '2026-03-17T19:45:29.350380+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "VEILLONELLA MEDIUM" to "veillonella_medium" for consistent
     matching
-merge_fingerprint: 75ab349aac73d0999dc8c7a8a59460d2f3b6bf6920f9de7645976a9795c1e28e
+- timestamp: '2026-06-05T07:40:17.322447+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:36.369815+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 08bd1807abecc03e8684523351ac4272b322d7738c644ea9db0a2b1ac5093786
+  source: JCM_J468_VEILLONELLA_MEDIUM.yaml
+merge_fingerprint: 08bd1807abecc03e8684523351ac4272b322d7738c644ea9db0a2b1ac5093786
 merged_from:
-- veillonella_medium
+- JCM_J468_VEILLONELLA_MEDIUM

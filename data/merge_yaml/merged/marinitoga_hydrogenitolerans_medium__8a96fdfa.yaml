@@ -1,0 +1,144 @@
+id: CultureMech:002072
+name: marinitoga_hydrogenitolerans_medium
+original_name: MARINITOGA HYDROGENITOLERANS MEDIUM
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_value: 6.0
+media_term:
+  preferred_term: DSMZ Medium 904a
+  term:
+    id: mediadive.medium:904a
+    label: MARINITOGA HYDROGENITOLERANS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium904a.pdf'
+ingredients:
+- preferred_term: Sea Salt
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: MES
+  term:
+    id: CHEBI:39010
+    label: MES
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39010
+    label: MES
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Tryptone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
+    label: D-Glucose
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients except glucose, sulfide and cysteine, adjust pH
+    to 6.0 and sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense
+    medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials
+    (to 30% of volume) and autoclave. Add glucose, sulfide and cysteine from sterile
+    anoxic stock solutions prepared under 100% N2 gas.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.703372Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 904a'
+- timestamp: '2026-03-13T06:19:10.033222Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002072'
+- timestamp: '2026-03-17T06:30:52.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:22.654054+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MARINITOGA HYDROGENITOLERANS MEDIUM" to "marinitoga_hydrogenitolerans_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:13.131941+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:01.663802+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_904_MARINITOGA_medium, for_dsm_15518_dsm_15807_and_dsm_16785,
+    marinitoga_hydrogenitolerans_medium'
+- timestamp: '2026-08-06T03:05:01.663858+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 8a96fdfa8ab2e7bf0da1652e27a66495250f92e99ea0da6de82a23e2139d1f50
+  source: KOMODO_904_MARINITOGA_medium.yaml, for_dsm_15518_dsm_15807_and_dsm_16785.yaml,
+    marinitoga_hydrogenitolerans_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_904_MARINITOGA_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006775
+  name: marinitoga_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.
+synonyms:
+- name: marinitoga_medium
+  source: KOMODO
+  source_id: komodo.medium:904
+  original_category: bacterial
+- name: for_dsm_15518_dsm_15807_and_dsm_16785
+  source: KOMODO
+  source_id: komodo.medium:904.1
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- KOMODO_904_MARINITOGA_medium
+- for_dsm_15518_dsm_15807_and_dsm_16785
+- marinitoga_hydrogenitolerans_medium
+merge_fingerprint: 8a96fdfa8ab2e7bf0da1652e27a66495250f92e99ea0da6de82a23e2139d1f50

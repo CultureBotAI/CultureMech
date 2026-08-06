@@ -1,253 +1,285 @@
-id: CultureMech:000313
+id: CultureMech:000143
 name: waris_h
-original_name: Waris-H
-category: bacterial
+category: algae
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 7.0
-media_term:
-  preferred_term: CCAP Medium C106
-  term:
-    id: mediadive.medium:C106
-    label: Waris-H
-notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_Waris_H.pdf'
+description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater
+  algae cultivation. Recipe available in PDF format.
+notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_Waris_H.pdf
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
+applications:
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
+curation_history:
+- curator: ccap-import
+  action: Imported from CCAP Culture Collection
+  notes: 'Source ID: Waris_H, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_Waris_H.pdf'
+  timestamp: '2026-01-28T00:00:00+00:00'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-02-03T11:26:43.641321'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:18:53.278064Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000143'
+- timestamp: '2026-03-17T19:45:04.224980+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Waris-H" to "waris_h" for consistent matching
+- timestamp: '2026-04-04T12:54:55.039363'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 18 curated ingredients from CCAP
+  source: CCAP Medium MR_Waris_H.pdf
+- timestamp: '2026-05-16T08:57:02.880667+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(3 entries)
+- timestamp: '2026-05-16T09:02:57.119928+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
+    category->lowercase=1
+- timestamp: '2026-08-06T03:04:20.435199+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint fa04bcf9277f55284556b2d583a9a95130dcb89673f3c2fedcf1af8e7125f108
+  source: waris_h.yaml
+references:
+- reference: CCAP:Waris_H
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_Waris_H.pdf
 ingredients:
-- preferred_term: Ca(NO3)2 x 4 H2O
-  term:
-    id: CHEBI:86159
-    label: Ca(NO3)2 x 4 H2O
+- preferred_term: Dissolve
+  notes: Ontology mapping not yet available; From CCAP Medium MR_Waris_H.pdf; Curated
+    from CCAP Medium MR_Waris_H.pdf specification
   concentration:
-    value: '1'
+    value: '1.04'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000586
-    label: Ca(NO3)2 x 4 H2O
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+  source: CCAP Medium MR_Waris_H.pdf
+- preferred_term: Dissolve
+  notes: Ontology mapping not yet available; From CCAP Medium MR_Waris_H.pdf; Curated
+    from CCAP Medium MR_Waris_H.pdf specification
   concentration:
-    value: '1'
+    value: '2.74'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: (NH4)2HPO4
-  term:
-    id: CHEBI:63051
-    label: (NH4)2HPO4
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000385
-    label: (NH4)2HPO4
-- preferred_term: KNO3
-  term:
-    id: CHEBI:63043
-    label: KNO3
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000170
-    label: KNO3
-- preferred_term: HEPES
-  term:
-    id: CHEBI:46756
-    label: HEPES
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001034
-    label: HEPES
-- preferred_term: Na2-EDTA x 2 H2O
-  term:
-    id: CHEBI:64734
-    label: Na2-EDTA x 2 H2O
-  concentration:
-    value: '5.22'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
-    label: Na2-EDTA x 2 H2O
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '4.98'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
-    label: FeSO4 x 7 H2O
+  source: CCAP Medium MR_Waris_H.pdf
 - preferred_term: KOH
   term:
     id: CHEBI:32035
     label: KOH
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.039322'
+    ontology_source: CHEBI
   concentration:
-    value: '54'
+    value: '1.04'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000213
-    label: KOH
-- preferred_term: Na-EDTA x 2 H2O
+  source: CCAP Medium MR_Waris_H.pdf
+  notes: From CCAP Medium MR_Waris_H.pdf; Curated from CCAP Medium MR_Waris_H.pdf
+    specification
+- preferred_term: Na EDTA.2H2O
+  notes: Ontology mapping not yet available; From CCAP Medium MR_Waris_H.pdf; Curated
+    from CCAP Medium MR_Waris_H.pdf specification
+  concentration:
+    value: '4.08'
+    unit: G_PER_L
+  source: CCAP Medium MR_Waris_H.pdf
+- preferred_term: FeSO4 x 7H2O
+  term:
+    id: CHEBI:75832
+    label: FeSO4 x 7H2O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.039334'
+    ontology_source: CHEBI
+  concentration:
+    value: '2.74'
+    unit: G_PER_L
+  source: CCAP Medium MR_Waris_H.pdf
+  notes: From CCAP Medium MR_Waris_H.pdf; Curated from CCAP Medium MR_Waris_H.pdf
+    specification
+- preferred_term: Na EDTA
   term:
     id: CHEBI:64734
-    label: Na-EDTA x 2 H2O
+    label: Na EDTA
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.039337'
+    ontology_source: CHEBI
   concentration:
-    value: '3'
+    value: '1.0'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
-    label: Na-EDTA x 2 H2O
-- preferred_term: H3BO3
+  source: CCAP Medium MR_Waris_H.pdf
+  notes: From CCAP Medium MR_Waris_H.pdf; Curated from CCAP Medium MR_Waris_H.pdf
+    specification
+- preferred_term: H BO
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: H BO
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.039339'
+    ontology_source: CHEBI
   concentration:
-    value: '1.14'
+    value: '1.12'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
+  source: CCAP Medium MR_Waris_H.pdf
+  notes: From CCAP Medium MR_Waris_H.pdf; Curated from CCAP Medium MR_Waris_H.pdf
+    specification
+- preferred_term: MnSO .H O
+  notes: Ontology mapping not yet available; From CCAP Medium MR_Waris_H.pdf; Curated
+    from CCAP Medium MR_Waris_H.pdf specification
+  concentration:
+    value: '0.12'
+    unit: G_PER_L
+  source: CCAP Medium MR_Waris_H.pdf
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
     label: ZnSO4 x 7 H2O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.039342'
+    ontology_source: CHEBI
   concentration:
-    value: '0.021'
+    value: '0.022'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
-    label: ZnSO4 x 7 H2O
-- preferred_term: CoCl2 x 6 H2O
-  term:
-    id: CHEBI:35696
-    label: CoCl2 x 6 H2O
+  source: CCAP Medium MR_Waris_H.pdf
+  notes: From CCAP Medium MR_Waris_H.pdf; Curated from CCAP Medium MR_Waris_H.pdf
+    specification
+- preferred_term: CoSO .7H2O
+  notes: Ontology mapping not yet available; From CCAP Medium MR_Waris_H.pdf; Curated
+    from CCAP Medium MR_Waris_H.pdf specification
   concentration:
-    value: '0.004'
+    value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
-    label: CoCl2 x 6 H2O
-- preferred_term: MnCl2 x 4 H2O
-  term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
-  concentration:
-    value: '0.144'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
-    label: MnCl2 x 4 H2O
+  source: CCAP Medium MR_Waris_H.pdf
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
     label: Thiamine HCl
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.039345'
+    ontology_source: CHEBI
   concentration:
-    value: '0.1'
+    value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
-    label: Thiamine HCl
+  source: CCAP Medium MR_Waris_H.pdf
+  notes: From CCAP Medium MR_Waris_H.pdf; Curated from CCAP Medium MR_Waris_H.pdf
+    specification
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
     label: Biotin
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.039347'
+    ontology_source: CHEBI
   concentration:
-    value: '0.001'
+    value: '0.0001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
-    label: Biotin
+  source: CCAP Medium MR_Waris_H.pdf
+  notes: From CCAP Medium MR_Waris_H.pdf; Curated from CCAP Medium MR_Waris_H.pdf
+    specification
 - preferred_term: Cyanocobalamin
   term:
     id: CHEBI:17439
     label: Cyanocobalamin
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.039349'
+    ontology_source: CHEBI
   concentration:
-    value: '0.0002'
+    value: '0.00002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
-    label: Cyanocobalamin
+  source: CCAP Medium MR_Waris_H.pdf
+  notes: From CCAP Medium MR_Waris_H.pdf; Curated from CCAP Medium MR_Waris_H.pdf
+    specification
 - preferred_term: Niacinamide
+  notes: Ontology mapping not yet available; From CCAP Medium MR_Waris_H.pdf; Curated
+    from CCAP Medium MR_Waris_H.pdf specification
+  concentration:
+    value: '0.00001'
+    unit: G_PER_L
+  source: CCAP Medium MR_Waris_H.pdf
   term:
     id: CHEBI:17154
-    label: Niacinamide
+    label: ''
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.039351'
+    ontology_source: CHEBI
   concentration:
-    value: '0.0001'
+    value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000539
-    label: Niacinamide
-- preferred_term: Soil
+  source: CCAP Medium MR_Waris_H.pdf
+  notes: From CCAP Medium MR_Waris_H.pdf; Curated from CCAP Medium MR_Waris_H.pdf
+    specification
+- preferred_term: Cyanocobalamin
+  term:
+    id: CHEBI:17439
+    label: Cyanocobalamin
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.039353'
+    ontology_source: CHEBI
   concentration:
-    value: variable
-    unit: VARIABLE
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: "Make up to 1 litre with deionized water and adjust pH to 7.0 with\
-    \ 1M NaOH or 1M HCl.\r\nAutoclave at 15 psi for 15 minutes."
-- step_number: 2
-  action: HEAT
-  description: "1M KOH is heated for 30 min (100°C); once cooled it is added to the\
-    \ mixture.\r\nThen heat the solution for 20 mins at 115°C"
-- step_number: 3
-  action: DISSOLVE
-  description: "Dissolve EDTA and boric acid in distilled H2O, then add metals one\
-    \ after the\r\nother."
-- step_number: 4
-  action: MIX
-  description: "Site selection for a good soil is very important and for most purposes\
-    \ a soil from undisturbed\r\ndeciduous woodland is best. Sites to avoid are those\
-    \ showing obvious signs of man's activity\r\nand particular care should be taken\
-    \ to avoid areas where fertilizers, crop sprays or other toxic\r\nchemicals may\
-    \ have been used."
-- step_number: 5
-  action: HEAT
-  description: "A rich loam with good crumb structure should be sought. Stones, roots\
-    \ and larger\r\ninvertebrates should be removed during an initial sieving through\
-    \ a 1 cm mesh. The sieved\r\nsoil should be spread to air dry and handpicked for\
-    \ smaller invertebrates and roots. It should\r\nbe turned periodically and picked\
-    \ over again. When dry sieve through a finer mesh (2-4 mm)\r\nand store in an\
-    \ airtight container away from light and heat."
-- step_number: 6
-  action: AUTOCLAVE
-  description: "Soil is prepared as above. Air-dried soil and twice its volume of\
-    \ supernatant distilled water\r\nare autoclaved together at 15 psi for 2 hours\
-    \ and left to cool. The supernatant is then\r\ndecanted and then distributed to\
-    \ containers in volumes suitable for making up batches of\r\nmedia. The aliquots\
-    \ and their containers are autoclaved for an appropriate length of time\r\n(e.g.\
-    \ 1 litre or less for 15 minutes) and are then kept in a cool place (e.g. a refrigerator)\
-    \ until\r\nrequired."
-applications:
-- Microbial cultivation
-references:
-- reference: doi.org/10.2216/i0031-8884-25-4-551.1
-curation_history:
-- timestamp: '2026-01-26T17:53:19.821425Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: CCAP, ID: C106'
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:16.858308'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Soil'
-- timestamp: '2026-03-13T06:18:54.369714Z'
-  curator: culturemech-id-assigner-v1.0
-  action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000313'
-- timestamp: '2026-03-17T06:30:10.000000Z'
-  curator: mediaingredientmech-enrichment-v1.0
-  action: Added MediaIngredientMech links
-  notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:05.337366+00:00'
-  curator: normalize_media_names_to_snake_case.py
-  action: NAME_NORMALIZED
-  notes: Normalized name from "Waris-H" to "waris_h" for consistent matching
-merge_fingerprint: 6a95453722f6c9a0f8e77227aa28704167ae17b84562c7efdcc08c241d8dd282
+    value: '0.002'
+    unit: G_PER_L
+  source: CCAP Medium MR_Waris_H.pdf
+  notes: From CCAP Medium MR_Waris_H.pdf; Curated from CCAP Medium MR_Waris_H.pdf
+    specification
+- preferred_term: Niacin
+  term:
+    id: CHEBI:15940
+    label: Niacin
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.039355'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  source: CCAP Medium MR_Waris_H.pdf
+  notes: From CCAP Medium MR_Waris_H.pdf; Curated from CCAP Medium MR_Waris_H.pdf
+    specification
+- preferred_term: Make up to 1 litre with deionised water and adjust pH to 7.0 with
+  notes: Ontology mapping not yet available; From CCAP Medium MR_Waris_H.pdf; Curated
+    from CCAP Medium MR_Waris_H.pdf specification
+  concentration:
+    value: '1'
+    unit: MOLAR
+  source: CCAP Medium MR_Waris_H.pdf
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- curation_method:automated_expert_mapping
+original_name: Waris-H
+merge_fingerprint: fa04bcf9277f55284556b2d583a9a95130dcb89673f3c2fedcf1af8e7125f108
 merged_from:
 - waris_h

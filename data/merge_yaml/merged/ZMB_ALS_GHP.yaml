@@ -1,6 +1,7 @@
 id: CultureMech:015793
 name: ZMB ALS GHP
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose
@@ -227,6 +228,9 @@ ingredients:
     value: '0.00019'
     unit: G_PER_L
   notes: 'CAS: 12027-67-7; MW: 1235.86'
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: Manganese (II) sulfate monohydrate
   concentration:
     value: '0.00038'
@@ -319,7 +323,7 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
 description: Media for culturing Bifidobacterium with 3 spiked in amino acids
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: ZMB ALS GHP
@@ -333,8 +337,17 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015793'
+- timestamp: '2026-05-16T09:04:44.078071+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:09.054069+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint c25e258354fee2a37ec84849e5bcbff6733c8676e650dcd3feec8dded2d1e72b
+  source: zmb_als_ghp.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: 6f45fb4ea49ea1fe049918422e45cb2e52e06656f2f05ba713fa10e8e0530ea0
+merge_fingerprint: c25e258354fee2a37ec84849e5bcbff6733c8676e650dcd3feec8dded2d1e72b
 merged_from:
 - zmb_als_ghp

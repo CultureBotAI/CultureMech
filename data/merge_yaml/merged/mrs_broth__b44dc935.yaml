@@ -1,0 +1,41 @@
+id: CultureMech:009068
+name: mrs_broth
+original_name: MRS broth
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: MRS broth (Oxoid)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2494
+  term:
+    id: TOGO:M2494
+    label: MRS broth
+notes: 'Source: https://togomedium.org/medium/M2494'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.584290Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2494'
+- timestamp: '2026-03-13T06:20:02.348018Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009068'
+- timestamp: '2026-03-17T19:46:21.122216+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MRS broth" to "mrs_broth" for consistent matching
+- timestamp: '2026-08-06T03:05:12.065981+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b44dc935ad62d40f9f5e2ed539b185a31f8ae2d57a01e67b15aca22895dd9c30
+  source: TOGO_M2494_MRS_broth.yaml
+merge_fingerprint: b44dc935ad62d40f9f5e2ed539b185a31f8ae2d57a01e67b15aca22895dd9c30
+merged_from:
+- TOGO_M2494_MRS_broth

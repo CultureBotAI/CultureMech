@@ -3,6 +3,7 @@ name: 10_marine_r2a_medium
 original_name: 10% marine R2A medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Aged seawater
@@ -46,6 +47,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "10% marine R2A medium" to "10_marine_r2a_medium" for
     consistent matching
+- timestamp: '2026-08-06T03:04:33.118265+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint f7d6462938f92b18d9a3307c29f8274bd0f7257a371ff830b82f494fc5d53658
+  source: 10_marine_r2a_medium.yaml
 merge_fingerprint: f7d6462938f92b18d9a3307c29f8274bd0f7257a371ff830b82f494fc5d53658
 merged_from:
 - 10_marine_r2a_medium

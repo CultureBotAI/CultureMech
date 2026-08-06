@@ -3,6 +3,7 @@ name: tris_buffered_artificial_seawater_with_nh4cl_and_sulfolactate
 original_name: Tris-buffered artificial seawater with nh4cl and sulfolactate
 category: specialized
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Biotin
@@ -13,14 +14,17 @@ ingredients:
     value: '4.093e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Nicotinate
   concentration:
     value: '0.00081228'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:nac'
+  term:
+    id: CHEBI:15940
+    label: ''
 - preferred_term: Thiamine
   term:
     id: CHEBI:26948
@@ -40,8 +44,8 @@ ingredients:
     value: '0.001486'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pydam'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001024
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16410
     label: Pyridoxamine
 - preferred_term: 4-Aminobenzoate
   term:
@@ -51,17 +55,23 @@ ingredients:
     value: '0.000364591'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4abz'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001121
-    label: 4-Aminobenzoate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17836
+    label: 4-aminobenzoate
 - preferred_term: Hydrochloric acid
   concentration:
     value: '50.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:17883
+    label: ''
 - preferred_term: Tromethamine
   concentration:
     value: '50.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:9754
+    label: ''
 - preferred_term: Magnesium chloride
   concentration:
     value: '50.0'
@@ -69,13 +79,16 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '10.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -83,17 +96,23 @@ ingredients:
   concentration:
     value: '0.485201'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '0.5'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Nickel chloride
   concentration:
     value: '0.00841432'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34887
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.0123992'
@@ -112,9 +131,9 @@ ingredients:
   concentration:
     value: '200.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Potassium chloride
   concentration:
     value: '10.0'
@@ -122,9 +141,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -132,8 +151,8 @@ ingredients:
   concentration:
     value: '9.71598e-05'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium pantothenate
 - preferred_term: Magnesium sulfate
   term:
@@ -142,8 +161,8 @@ ingredients:
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
@@ -152,13 +171,16 @@ ingredients:
   concentration:
     value: '10.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.02'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.084058'
@@ -173,17 +195,23 @@ ingredients:
   concentration:
     value: '0.0347789'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Manganese chloride
   concentration:
     value: '0.015158'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: Cupric chloride
   concentration:
     value: '0.00586579'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49553
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -223,6 +251,17 @@ curation_history:
   notes: Normalized name from "Tris-buffered artificial seawater with nh4cl and sulfolactate"
     to "tris_buffered_artificial_seawater_with_nh4cl_and_sulfolactate" for consistent
     matching
+- timestamp: '2026-06-05T07:41:58.357155+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 11 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:08.585531+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 0ed03c038d1249794855b4bccdbce70009634f6a23f68748193be0c74fe00998
+  source: tris_buffered_artificial_seawater_with_nh4cl_and_sulfolactate.yaml
 media_term:
   preferred_term: MediaDB Medium 16
   term:
@@ -235,6 +274,6 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
-merge_fingerprint: 71075caae9b201416bdfff048d318273af30539b84b1a8c1b1e9bf2d1ebd4bbb
+merge_fingerprint: 0ed03c038d1249794855b4bccdbce70009634f6a23f68748193be0c74fe00998
 merged_from:
 - tris_buffered_artificial_seawater_with_nh4cl_and_sulfolactate

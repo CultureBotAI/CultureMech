@@ -1,6 +1,7 @@
 id: CultureMech:015500
 name: CAAc
-medium_type: DEFINED
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Na2HPO4
@@ -17,7 +18,7 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:63036
-    label: ''
+    label: potassium dihydrogen phosphate
 - preferred_term: Ammonium Sulfate
   concentration:
     value: '1'
@@ -145,14 +146,11 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 65072-00-6'
 description: Harwood UW media for growing RPal; PM media with some Yeast Extract and
   casmino acids
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: CAAc
@@ -166,8 +164,27 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015500'
+- timestamp: '2026-05-16T09:04:40.343803+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:52.324476+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:47:15.054127+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:04.862317+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 134751c0fef4e9bd44ad616cd4742f463a3d56db2af0797d6c1401113cdb2775
+  source: caac.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: 9e14e84042cc7cfcea27bade4d6d94f64f3b649343dc30cfcc7fda8928487755
+merge_fingerprint: 134751c0fef4e9bd44ad616cd4742f463a3d56db2af0797d6c1401113cdb2775
 merged_from:
 - caac

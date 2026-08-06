@@ -3,6 +3,7 @@ name: columbia_blood_agar_containing_10_bovine_blood
 original_name: Columbia blood agar (containing 10% bovine blood)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: bovine blood
@@ -37,6 +38,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Columbia blood agar (containing 10% bovine blood)"
     to "columbia_blood_agar_containing_10_bovine_blood" for consistent matching
+- timestamp: '2026-08-06T03:05:28.979735+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 167aaf42b3cbeab328565a5186ed5a09e008dab7da4bd43a4483d1fb9e32cf05
+  source: columbia_blood_agar_containing_10_bovine_blood.yaml
 merge_fingerprint: 167aaf42b3cbeab328565a5186ed5a09e008dab7da4bd43a4483d1fb9e32cf05
 merged_from:
 - columbia_blood_agar_containing_10_bovine_blood

@@ -3,6 +3,7 @@ name: granulibacter_medium
 original_name: GRANULIBACTER medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1186
@@ -19,8 +20,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Yeast extract
   concentration:
@@ -33,8 +34,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001099
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
     label: CaCO3
 - preferred_term: Agar
   term:
@@ -44,8 +45,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -71,12 +72,38 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "GRANULIBACTER medium" to "granulibacter_medium" for
     consistent matching
-- timestamp: '2026-04-17T06:29:14.678476+00:00'
+- timestamp: '2026-06-05T07:40:19.645764+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:38.892096+00:00'
   curator: recipe-merger
   action: Merged 9 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_105_GLUCONOBACTER_OXYDANS_medium, KOMODO_1186_GRANULIBACTER_medium,
     acetobacter_medium, clostridium_sp_medium, gluconobacter_oxydans_medium, glucose_yeast_extract_medium,
     granulibacter_medium, medium_105_modified_for_dsm_15972, glucose_yeast_extract_medium'
+- timestamp: '2026-08-06T03:04:38.892163+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 9 source recipe(s) on fingerprint 40ee5d1e6d50ccb81d9e274c3ca09c59b201abc459237b922368b2a793e92c8c
+  source: KOMODO_105_GLUCONOBACTER_OXYDANS_medium.yaml, KOMODO_1186_GRANULIBACTER_medium.yaml,
+    acetobacter_medium.yaml, clostridium_sp_medium.yaml, gluconobacter_oxydans_medium.yaml,
+    glucose_yeast_extract_medium.yaml, granulibacter_medium.yaml, medium_105_modified_for_dsm_15972.yaml,
+    glucose_yeast_extract_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/granulibacter_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000628
+  name: granulibacter_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 1186; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 1186; local ingredient
+  and concentration signatures match.
 synonyms:
 - name: gluconobacter_oxydans_medium
   source: KOMODO

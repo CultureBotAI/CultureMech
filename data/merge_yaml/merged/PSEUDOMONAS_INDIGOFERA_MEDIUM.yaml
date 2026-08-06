@@ -3,8 +3,11 @@ name: pseudomonas_indigofera_medium
 original_name: PSEUDOMONAS INDIGOFERA medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_range: 7.0-7.2
+ph_range:
+  min: 7.0
+  max: 7.2
 media_term:
   preferred_term: KOMODO Medium 365
   term:
@@ -24,18 +27,18 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Na-acetate
   term:
     id: CHEBI:32954
-    label: Na-acetate
+    label: sodium acetate
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
     label: Na-acetate
 - preferred_term: Agar
   term:
@@ -44,8 +47,8 @@ ingredients:
   concentration:
     value: '12'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -71,10 +74,41 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "PSEUDOMONAS INDIGOFERA medium" to "pseudomonas_indigofera_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:22.635368+00:00'
+- timestamp: '2026-05-20T06:00:51.411849+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.0-7.2'' -> {''min'': 7.0, ''max'': 7.2}'
+- timestamp: '2026-06-05T07:40:22.744406+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:44.691969+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:47.951658+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_365_PSEUDOMONAS_INDIGOFERA_medium, pseudomonas_indigofera_medium'
+- timestamp: '2026-08-06T03:04:47.951689+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 62d73333a00ad77852332393fa7c390270abb653958df43cc13ee751cbfb734a
+  source: KOMODO_365_PSEUDOMONAS_INDIGOFERA_medium.yaml, pseudomonas_indigofera_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/pseudomonas_indigofera_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001466
+  name: pseudomonas_indigofera_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 365; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 365; local ingredient
+  and concentration signatures match.
 categories:
 - bacterial
 merged_from:

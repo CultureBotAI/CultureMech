@@ -1,6 +1,7 @@
 id: CultureMech:015774
 name: Varel Bryant medium Glucose DTT noNitrogen
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Potassium phosphate monobasic
@@ -116,7 +117,7 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-99-7; MW: 180.16'
 description: Defined medium for B.theta with Glucose, and no Cysteine and with DTT
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: Varel Bryant medium Glucose DTT noNitrogen
@@ -130,6 +131,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015774'
+- timestamp: '2026-05-16T09:04:43.913516+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:08.892339+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint a43f56401ca0306fa05b23b82c9a3a440f87c0eeac7a5db10d8974be7beb5c1a
+  source: varel_bryant_medium_glucose_dtt_nonitrogen.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: a43f56401ca0306fa05b23b82c9a3a440f87c0eeac7a5db10d8974be7beb5c1a

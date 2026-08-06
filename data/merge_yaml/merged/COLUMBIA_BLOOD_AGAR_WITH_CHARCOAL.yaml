@@ -3,6 +3,7 @@ name: columbia_blood_agar_with_charcoal
 original_name: COLUMBIA BLOOD AGAR WITH CHARCOAL
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 429a
@@ -53,8 +54,8 @@ ingredients:
     value: '30.0'
     unit: G_PER_L
   notes: ' (for solid medium) [Merged 2 duplicates: 15.0, 15.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Casein peptone
   concentration:
@@ -71,8 +72,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Calf brains
   term:
@@ -214,6 +215,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "COLUMBIA BLOOD AGAR WITH CHARCOAL" to "columbia_blood_agar_with_charcoal"
     for consistent matching
+- timestamp: '2026-06-05T07:40:54.680198+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:29.020081+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 0c9917adf6af5e7bda99a7dcfad95b514aef9183ccd2f5a620740327039befe6
+  source: columbia_blood_agar_with_charcoal.yaml
 merge_fingerprint: 0c9917adf6af5e7bda99a7dcfad95b514aef9183ccd2f5a620740327039befe6
 merged_from:
 - columbia_blood_agar_with_charcoal

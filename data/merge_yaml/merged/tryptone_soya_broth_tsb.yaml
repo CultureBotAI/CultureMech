@@ -3,6 +3,7 @@ name: tryptone_soya_broth_tsb
 original_name: TRYPTONE SOYA BROTH (TSB)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.3
 media_term:
@@ -27,8 +28,8 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D(+)-Glucose
 - preferred_term: NaCl
   term:
@@ -37,18 +38,18 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 preparation_steps:
 - step_number: 1
@@ -80,11 +81,40 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TRYPTONE SOYA BROTH (TSB)" to "tryptone_soya_broth_tsb"
     for consistent matching
-- timestamp: '2026-04-17T06:30:02.340070+00:00'
+- timestamp: '2026-06-05T07:41:54.582910+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:14.358609+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:32.852262+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: diluted_tryptone_soya_broth_tsb, diluted_tryptone_soya_broth_tsb_1_10,
     tryptone_soya_broth_tsb'
+- timestamp: '2026-08-06T03:05:32.852317+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 77fcbbbb0eb57c1b31bc162ed7291a6255002212afe267e2c94ba78cd12e7fdf
+  source: diluted_tryptone_soya_broth_tsb.yaml, diluted_tryptone_soya_broth_tsb_1_10.yaml,
+    tryptone_soya_broth_tsb.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/diluted_tryptone_soya_broth_tsb.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001678
+  name: diluted_tryptone_soya_broth_tsb
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/diluted_tryptone_soya_broth_tsb_1_10.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:001194
+  name: diluted_tryptone_soya_broth_tsb_1_10
+  notes: Diluted TSB 1:10 decreases casein peptone 17 to 1.7 g/L, soy peptone 3 to
+    0.3 g/L, glucose 2.5 to 0.25 g/L, NaCl 5 to 0.5 g/L, and K2HPO4 2.5 to 0.25 g/L.
 synonyms:
 - name: diluted_tryptone_soya_broth_tsb
   source: MediaDive

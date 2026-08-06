@@ -1,6 +1,7 @@
 id: CultureMech:015693
 name: R2A_Kan10_Lactate
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: R2A
@@ -25,7 +26,7 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-21-5; MW: 90.08'
 description: R2A media for outgrowth of MT123 experiments (Mike Adams lab)
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: R2A_Kan10_Lactate
@@ -39,6 +40,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015693'
+- timestamp: '2026-05-16T09:04:42.786382+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:07.675439+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 953b55c47d49409e5003d108372911aeeef9435f1e6b6e03287ee96395ce3294
+  source: r2a_kan10_lactate.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: 953b55c47d49409e5003d108372911aeeef9435f1e6b6e03287ee96395ce3294

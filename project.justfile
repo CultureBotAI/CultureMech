@@ -1421,7 +1421,7 @@ generate-all-indexes:
     just generate-indexes data/normalized_yaml
     echo ""
     echo "2. Merged recipes (2026 baseline)"
-    just generate-indexes data/merge_yaml/merged_2026
+    just generate-indexes data/merge_yaml/merged
     echo ""
     echo "✓ All indexes generated!"
 
@@ -1473,7 +1473,7 @@ build-browser: gen-browser-data
 # dataset (15,827 records, pre-merge per-source view).
 #
 # Companion to `gen-media-pages` (in `justfile`) which targets
-# `data/merge_yaml/merged_2026/` (4,289 canonical merged records →
+# `data/merge_yaml/merged/` (6,286 canonical merged records →
 # `pages/media/`). Both recipes use the same renderer + template; only
 # the source dir and output dir differ.
 [group('Pages')]

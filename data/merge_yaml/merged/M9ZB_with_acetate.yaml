@@ -3,6 +3,7 @@ name: m9zb_with_acetate
 original_name: M9ZB with acetate
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Acetate
@@ -13,17 +14,23 @@ ingredients:
     value: '34.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ac'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000944
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30089
     label: Acetate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.1'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '49.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -31,13 +38,16 @@ ingredients:
   concentration:
     value: '8.6'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '22.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -45,8 +55,8 @@ ingredients:
   concentration:
     value: '2.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
@@ -55,8 +65,8 @@ ingredients:
   concentration:
     value: '19.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 preparation_steps:
 - step_number: 1
@@ -87,10 +97,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "M9ZB with acetate" to "m9zb_with_acetate" for consistent
     matching
-- timestamp: '2026-04-17T06:30:09.093447+00:00'
+- timestamp: '2026-06-05T07:41:12.302138+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:41.172339+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: m9_minimal_medium_with_acetate, m9zb_with_acetate'
+- timestamp: '2026-08-06T03:05:41.172386+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 128cb8031d2603fb287ace6dbc323cd5ce2949f9f7108e96eec471eebeccd009
+  source: m9_minimal_medium_with_acetate.yaml, m9zb_with_acetate.yaml
 media_term:
   preferred_term: MediaDB Medium 112
   term:
@@ -112,4 +133,4 @@ categories:
 merged_from:
 - m9_minimal_medium_with_acetate
 - m9zb_with_acetate
-merge_fingerprint: c1d9331ced381fe7d5e8f4306b4bc85d2cb2bcccc986414a2bffe46b758681f1
+merge_fingerprint: 128cb8031d2603fb287ace6dbc323cd5ce2949f9f7108e96eec471eebeccd009

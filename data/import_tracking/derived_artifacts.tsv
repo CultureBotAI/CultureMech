@@ -44,8 +44,8 @@ data/import_tracking/schemas/manifest_v1.schema.json	UNKNOWN	no writer found
 data/merge_yaml/merge_stats.json	UNKNOWN	writer purity unestablished (merge_recipes.py)	src/culturemech/merge/merge_recipes.py	scripts/audit_merge_yaml_freshness.py; scripts/verify_merges.py; src/culturemech/merge/merge_recipes.py	
 data/merge_yaml/merge_stats_2026.json	UNKNOWN	no writer found			
 data/merge_yaml/merge_stats_test.json	UNKNOWN	no writer found			
-data/merge_yaml/merged_2026/recipe_index.json	CURRENT_VIEW	generate_recipe_indexes.py		scripts/generate_recipe_indexes.py	
-data/merge_yaml/merged_2026/recipe_statistics.json	CURRENT_VIEW	generate_recipe_indexes.py		scripts/generate_recipe_indexes.py	
+data/merge_yaml/merged/recipe_index.json	CURRENT_VIEW	generate_recipe_indexes.py		scripts/generate_recipe_indexes.py	
+data/merge_yaml/merged/recipe_statistics.json	CURRENT_VIEW	generate_recipe_indexes.py		scripts/generate_recipe_indexes.py	
 data/normalized_yaml/algae_index.json	UNKNOWN	no writer found			
 data/normalized_yaml/archaea_index.json	UNKNOWN	no writer found			
 data/normalized_yaml/bacterial_index.json	UNKNOWN	no writer found			

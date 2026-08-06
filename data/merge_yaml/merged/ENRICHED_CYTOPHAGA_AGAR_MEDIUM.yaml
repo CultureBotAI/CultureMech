@@ -3,8 +3,11 @@ name: enriched_cytophaga_agar_medium
 original_name: ENRICHED CYTOPHAGA AGAR medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_range: 7.2-7.4
+ph_range:
+  min: 7.2
+  max: 7.4
 media_term:
   preferred_term: KOMODO Medium 1133
   term:
@@ -32,8 +35,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
     label: Sodium acetate
 - preferred_term: Agar
   term:
@@ -43,8 +46,8 @@ ingredients:
     value: '19.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 15.0, 4.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -74,12 +77,38 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ENRICHED CYTOPHAGA AGAR medium" to "enriched_cytophaga_agar_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:15.872119+00:00'
+- timestamp: '2026-05-20T06:00:49.028545+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.4'' -> {''min'': 7.2, ''max'': 7.4}'
+- timestamp: '2026-06-05T07:40:19.248612+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:40.425704+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_1133_ENRICHED_CYTOPHAGA_AGAR_medium, enriched_cytophaga_agar,
     enriched_cytophaga_agar_medium'
+- timestamp: '2026-08-06T03:04:40.425760+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 0cefab3777c1ede61ff6c0706948823085066ae41579693ad94ff2d8336951b4
+  source: KOMODO_1133_ENRICHED_CYTOPHAGA_AGAR_medium.yaml, enriched_cytophaga_agar.yaml,
+    enriched_cytophaga_agar_medium.yaml
 kg_microbe_match: mediadive.medium:1133
+parent_media:
+  path: data/normalized_yaml/bacterial/enriched_cytophaga_agar_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000569
+  name: enriched_cytophaga_agar_medium
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and concentration
+    signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.
 synonyms:
 - name: enriched_cytophaga_agar
   source: MediaDive

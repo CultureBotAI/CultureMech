@@ -3,6 +3,7 @@ name: lb_desferrioxamine_b
 original_name: LB + Desferrioxamine B
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +32,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -82,6 +83,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "LB + Desferrioxamine B" to "lb_desferrioxamine_b" for
     consistent matching
+- timestamp: '2026-06-05T07:41:10.857128+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:40.030688+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 4e6a994ec6819c4a5a3490246b41272d5d75b59d7117ccba9afd660ebf1b2b24
+  source: lb_desferrioxamine_b.yaml
 merge_fingerprint: 4e6a994ec6819c4a5a3490246b41272d5d75b59d7117ccba9afd660ebf1b2b24
 merged_from:
 - lb_desferrioxamine_b

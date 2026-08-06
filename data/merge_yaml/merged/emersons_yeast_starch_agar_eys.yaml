@@ -3,6 +3,7 @@ name: emersons_yeast_starch_agar_eys
 original_name: EMERSON'S YEAST STARCH AGAR (EYS)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 6.8
 media_term:
@@ -24,8 +25,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
     label: Starch
 - preferred_term: Na2HPO4
   term:
@@ -34,18 +35,18 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4
 - preferred_term: MgSO4
   term:
     id: CHEBI:32599
-    label: MgSO4
+    label: magnesium sulfate
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: MgSO4
 - preferred_term: Agar
   term:
@@ -54,8 +55,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -81,10 +82,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "EMERSON'S YEAST STARCH AGAR (EYS)" to "emersons_yeast_starch_agar_eys"
     for consistent matching
-- timestamp: '2026-04-17T06:30:02.769685+00:00'
+- timestamp: '2026-06-05T07:40:59.514242+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:56.691814+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:33.532268+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: emersons_yeast_starch_agar_eys, emersons_yeast_starch_agar_eys'
+- timestamp: '2026-08-06T03:05:33.532292+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 8baea4f9a1237d2780214bb144be06741aa25379a92f23a43b4df1ec88724d9b
+  source: emersons_yeast_starch_agar_eys.yaml, emersons_yeast_starch_agar_eys.yaml
 categories:
 - bacterial
 - fungal

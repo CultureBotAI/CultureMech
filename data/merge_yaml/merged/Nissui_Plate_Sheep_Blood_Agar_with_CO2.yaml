@@ -3,6 +3,7 @@ name: nissui_plate_sheep_blood_agar_with_co2
 original_name: Nissui Plate Sheep Blood Agar with CO2
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: NaCl
   concentration:
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Sheep blood
   concentration:
     value: '50'
@@ -42,9 +43,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Corn Starch
   concentration:
     value: '1'
@@ -53,8 +54,8 @@ ingredients:
   term:
     id: CHEBI:28017
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
     label: Corn Starch
 - preferred_term: Casein peptone
   concentration:
@@ -95,9 +96,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:52.445431'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:19:59.962965Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -111,6 +112,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Nissui Plate Sheep Blood Agar with CO2" to "nissui_plate_sheep_blood_agar_with_co2"
     for consistent matching
+- timestamp: '2026-05-16T09:04:27.585167+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:39.670361+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:51.335817+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 25c4bef62272fc1f06368f341857b748d70ffbc153792eead6e3a35f3a9d10fa
+  source: nissui_plate_sheep_blood_agar_with_co2.yaml
 merge_fingerprint: 25c4bef62272fc1f06368f341857b748d70ffbc153792eead6e3a35f3a9d10fa
 merged_from:
 - nissui_plate_sheep_blood_agar_with_co2

@@ -3,6 +3,7 @@ name: lb_agar_miller
 original_name: LB Agar, Miller
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: DI Water
@@ -78,8 +79,8 @@ ingredients:
   term:
     id: CHEBI:26710
     label: Sodium Chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: Sodium Chloride
 - preferred_term: Agar
   concentration:
@@ -89,9 +90,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Tryptone
   concentration:
     value: '10'
@@ -129,10 +130,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "LB Agar, Miller" to "lb_agar_miller" for consistent
     matching
-- timestamp: '2026-04-17T06:29:44.047338+00:00'
+- timestamp: '2026-06-05T07:40:36.793803+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:11.817296+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M2447_LB_Agar_Miller, lb_agar_broth_miller'
+- timestamp: '2026-08-06T03:05:11.817329+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 516847d6666e22d43c6ff569100b4b6a9a6e299cd347d3000c29e61b77a29fe3
+  source: TOGO_M2447_LB_Agar_Miller.yaml, lb_agar_broth_miller.yaml
 kg_microbe_match: mediadive.medium:101
 synonyms:
 - name: lb_agar_broth_miller

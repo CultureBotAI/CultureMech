@@ -3,6 +3,7 @@ name: neomycin_agar
 original_name: NEOMYCIN AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:
@@ -32,8 +33,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Casitone
   concentration:
@@ -62,10 +63,33 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "NEOMYCIN AGAR" to "neomycin_agar" for consistent matching
-- timestamp: '2026-04-17T06:29:21.696722+00:00'
+- timestamp: '2026-06-05T07:40:22.331259+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:46.930310+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_309_NEOMYCIN_AGAR, neomycin_agar'
+- timestamp: '2026-08-06T03:04:46.930341+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 7f3c63753451ce9a6fe49452c7e64b0e82dbdde47ac284c652d4ff4d4fd054c7
+  source: KOMODO_309_NEOMYCIN_AGAR.yaml, neomycin_agar.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/neomycin_agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001407
+  name: neomycin_agar
+  notes: KOMODO record explicitly cites DSMZ Medium 309; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 309; local ingredient
+  and concentration signatures match.
 categories:
 - bacterial
 merged_from:

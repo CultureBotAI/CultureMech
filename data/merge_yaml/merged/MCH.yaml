@@ -3,6 +3,7 @@ name: mch
 original_name: MCH
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: CCAP Medium C51
@@ -18,8 +19,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: NaCl
   term:
@@ -28,8 +29,8 @@ ingredients:
   concentration:
     value: '80'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: KCl
   term:
@@ -38,8 +39,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: Na2HPO4 x 12 H2O
   term:
@@ -48,8 +49,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4 x 12 H2O
 - preferred_term: CaHPO4
   term:
@@ -58,8 +59,8 @@ ingredients:
   concentration:
     value: '0'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000876
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32596
     label: CaHPO4
 preparation_steps:
 - step_number: 1
@@ -85,6 +86,17 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "MCH" to "mch" for consistent matching
+- timestamp: '2026-06-05T07:41:13.431721+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:42.387864+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint ce5086d182dab475eb47634d6ce757ae924ad2ee8c9f3c081adc8d2d4cb322c9
+  source: mch.yaml
 merge_fingerprint: ce5086d182dab475eb47634d6ce757ae924ad2ee8c9f3c081adc8d2d4cb322c9
 merged_from:
 - mch

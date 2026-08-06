@@ -4,6 +4,7 @@ original_name: Tryptic soy broth supplemented with hemin (5 μg/mL) and menadion
   μg/mL)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Hemin
@@ -15,9 +16,9 @@ ingredients:
   term:
     id: CHEBI:50385
     label: hemin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
-    label: Hemin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
+    label: hemin
 - preferred_term: Menadione
   concentration:
     value: '1'
@@ -27,8 +28,8 @@ ingredients:
   term:
     id: CHEBI:28869
     label: Menadione
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000903
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28869
     label: Menadione
 - preferred_term: Pancreatic digest of casein
   term:
@@ -190,6 +191,17 @@ curation_history:
   notes: Normalized name from "Tryptic soy broth supplemented with hemin (5 μg/mL)
     and menadione (1 μg/mL)" to "tryptic_soy_broth_supplemented_with_hemin_5_g_ml_and_menadione_1_g_ml"
     for consistent matching
+- timestamp: '2026-06-05T07:41:54.328405+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:01.939882+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 8ed2a6b23cf69466bbad8c67ce926e5ace7e1eb569d8a70ca834556296aeeb9d
+  source: tryptic_soy_broth_supplemented_with_hemin_5_g_ml_and_menadione_1_g_ml.yaml
 merge_fingerprint: 8ed2a6b23cf69466bbad8c67ce926e5ace7e1eb569d8a70ca834556296aeeb9d
 merged_from:
 - tryptic_soy_broth_supplemented_with_hemin_5_g_ml_and_menadione_1_g_ml

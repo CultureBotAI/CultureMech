@@ -3,6 +3,7 @@ name: antibiotic_medium_1
 original_name: ANTIBIOTIC MEDIUM 1
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 6.5
 media_term:
@@ -35,8 +36,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Agar
   term:
@@ -45,8 +46,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -75,6 +76,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ANTIBIOTIC MEDIUM 1" to "antibiotic_medium_1" for consistent
     matching
+- timestamp: '2026-06-05T07:40:49.355942+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:23.778713+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint a88ec2ab4b1c32685affc17e1d1ea773027c6d26a1cf593be1f272faa7c1553f
+  source: antibiotic_medium_1.yaml
 merge_fingerprint: a88ec2ab4b1c32685affc17e1d1ea773027c6d26a1cf593be1f272faa7c1553f
 merged_from:
 - antibiotic_medium_1

@@ -1,8 +1,9 @@
 id: CultureMech:000273
 name: medium_for_thermophilic_actinomycetes_agre_1964
 original_name: MEDIUM FOR THERMOPHILIC ACTINOMYCETES (AGRE 1964)
-category: ARCHAEA
+category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 6.5
 media_term:
@@ -19,8 +20,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
     label: Starch
 - preferred_term: NaCl
   term:
@@ -29,8 +30,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: CaCl2
   term:
@@ -39,8 +40,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
     label: CaCl2
 - preferred_term: Peptone
   concentration:
@@ -57,8 +58,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -84,14 +85,28 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MEDIUM FOR THERMOPHILIC ACTINOMYCETES (AGRE 1964)"
     to "medium_for_thermophilic_actinomycetes_agre_1964" for consistent matching
-- timestamp: '2026-04-17T06:29:08.836985+00:00'
+- timestamp: '2026-05-16T09:02:57.378943+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-05T07:40:14.657611+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:34.714805+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: medium_for_thermophilic_actinomycetes_agre_1964, medium_for_thermophilic_actinomycetes_agre_1964'
+  notes: 'Sources: DSMZ_570_MEDIUM_FOR_THERMOPHILIC_ACTINOMYCETES_AGRE_1964, medium_for_thermophilic_actinomycetes_agre_1964'
+- timestamp: '2026-08-06T03:04:34.714835+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint db01f6625c2105a1799d2eccd70aa862d457b1b1ccea8ce205094264c3371eb1
+  source: DSMZ_570_MEDIUM_FOR_THERMOPHILIC_ACTINOMYCETES_AGRE_1964.yaml, medium_for_thermophilic_actinomycetes_agre_1964.yaml
 categories:
-- ARCHAEA
 - bacterial
 merged_from:
-- medium_for_thermophilic_actinomycetes_agre_1964
+- DSMZ_570_MEDIUM_FOR_THERMOPHILIC_ACTINOMYCETES_AGRE_1964
 - medium_for_thermophilic_actinomycetes_agre_1964
 merge_fingerprint: db01f6625c2105a1799d2eccd70aa862d457b1b1ccea8ce205094264c3371eb1

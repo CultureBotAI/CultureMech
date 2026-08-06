@@ -1,71 +1,99 @@
-id: CultureMech:001323
+id: CultureMech:008937
 name: caso_agar_merck_105458
-original_name: CASO AGAR (Merck 105458)
+original_name: CASO Agar (Merck 105458)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_value: 7.3
-media_term:
-  preferred_term: DSMZ Medium 220
-  term:
-    id: mediadive.medium:220
-    label: CASO AGAR (Merck 105458)
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium220.pdf'
 ingredients:
-- preferred_term: Casein peptone
+- preferred_term: Distilled water
   concentration:
-    value: '15'
+    value: '1000'
     unit: G_PER_L
-- preferred_term: Soy peptone
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl
   concentration:
     value: '5'
     unit: G_PER_L
-- preferred_term: NaCl
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: Agar
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid
-    CM 131).
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Peptone from casein
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Peptone from soymeal
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2352
+  term:
+    id: TOGO:M2352
+    label: CASO Agar (Merck 105458)
+notes: 'Source: https://togomedium.org/medium/M2352
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium220.pdf'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:10.543451Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 220'
-- timestamp: '2026-03-13T06:19:03.195019Z'
+- timestamp: '2026-01-27T06:35:56.387448Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2352'
+- timestamp: '2026-01-28T19:48:43.035413Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:01.432621Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:001323'
-- timestamp: '2026-03-17T06:30:04.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:008937'
+- timestamp: '2026-03-17T06:30:57.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:15.091082+00:00'
+- timestamp: '2026-03-17T19:46:20.156105+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CASO AGAR (Merck 105458)" to "caso_agar_merck_105458"
+  notes: Normalized name from "CASO Agar (Merck 105458)" to "caso_agar_merck_105458"
     for consistent matching
-kg_microbe_match: mediadive.medium:101
-merge_fingerprint: 07c628531fbbd0a20bf8c86060a1cc60d42b94e58b09e33fd7cece2a1d48c073
+- timestamp: '2026-06-05T07:40:36.433968+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:11.455748+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint c527bef30b6bcd5a9dce4e642ba2b36b83a83180a5a4324665fad76a68d6448b
+  source: TOGO_M2352_CASO_Agar_Merck_105458.yaml
+merge_fingerprint: c527bef30b6bcd5a9dce4e642ba2b36b83a83180a5a4324665fad76a68d6448b
 merged_from:
-- caso_agar_merck_105458
+- TOGO_M2352_CASO_Agar_Merck_105458

@@ -1,90 +1,32 @@
-id: CultureMech:009812
+id: CultureMech:002779
 name: tsby_salt_medium
-original_name: TSBY Salt Medium
+original_name: TSBY SALT MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: JCM Medium J427
+  term:
+    id: mediadive.medium:J427
+    label: TSBY SALT MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=427
+
+
+  Commercial Product: Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)
+
+  Supplier: Multiple suppliers (BD, Sigma, Neogen)
+
+  Catalog: Multiple (22092 Sigma, 211825 BD)
+
+  Source: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:32599
-    label: ''
-- preferred_term: NaCl
-  concentration:
-    value: '13'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: CaCl2・2H2O
-  concentration:
-    value: '0.14'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:86158
-    label: ''
-- preferred_term: NH4Cl
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:31206
-    label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
-- preferred_term: MgCl2・6H2O
-  concentration:
-    value: '4'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:86345
-    label: ''
-- preferred_term: KCl
-  concentration:
-    value: '0.34'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
-- preferred_term: Yeast extract (BD-Difco)
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
 - preferred_term: Pancreatic digest of casein
   term:
     id: MICRO:0000182
@@ -200,54 +142,125 @@ ingredients:
     product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
   notes: Solidifying agent (for TSA only, not in TSB); Constituent of Tryptic Soy
     Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
-media_term:
-  preferred_term: TOGO Medium M427
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: NaCl
   term:
-    id: TOGO:M427
-    label: TSBY Salt Medium
-notes: 'Source: https://togomedium.org/medium/M427
-
-  Original source: JCM - JCM_M427
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=427
-
-
-  Commercial Product: Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)
-
-  Supplier: Multiple suppliers (BD, Sigma, Neogen)
-
-  Catalog: Multiple (22092 Sigma, 211825 BD)
-
-  Source: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-
-  Accessed: 2026-03-28
-
-
-  Constituent composition researched from product specification.'
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '13'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.34'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: KCl
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.14'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.2.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.036692Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M427'
-- timestamp: '2026-01-28T19:48:35.753220Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:20:09.072640Z'
+- timestamp: '2026-01-26T17:53:16.586411Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J427'
+- timestamp: '2026-03-13T06:19:15.663822Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:009812'
-- timestamp: '2026-03-17T06:30:41.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:002779'
+- timestamp: '2026-03-17T06:30:48.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:28.056960+00:00'
+- timestamp: '2026-03-17T19:45:29.090083+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TSBY Salt Medium" to "tsby_salt_medium" for consistent
+  notes: Normalized name from "TSBY SALT MEDIUM" to "tsby_salt_medium" for consistent
     matching
-merge_fingerprint: 0fd43452e0929977c9b8ca04d896e52b40f1c650a207ad77071f153d1b2432e2
+- timestamp: '2026-06-05T07:40:17.248057+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:42.961428+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:36.292532+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: JCM_J427_TSBY_SALT_MEDIUM, KOMODO_466_TSBY_salt_medium, tsby_salt_medium'
+- timestamp: '2026-08-06T03:04:36.292582+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 20e0dce132b904736e71883372139aef92ab4cb10e356d30cb137b7afcb98d85
+  source: JCM_J427_TSBY_SALT_MEDIUM.yaml, KOMODO_466_TSBY_salt_medium.yaml, tsby_salt_medium.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/tsby_salt_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:001595
+  name: tsby_salt_medium
+  notes: Reviewed TSBY Salt Medium pair; child keeps pH, TSBY base, yeast extract,
+    NaCl, KCl, MgCl2, NH4Cl, and CaCl2 unchanged but increases MgSO4 x 7 H2O from
+    0.25 to 3.45 g/L.
+categories:
+- bacterial
 merged_from:
-- TOGO_M427_TSBY_Salt_Medium
+- JCM_J427_TSBY_SALT_MEDIUM
+- KOMODO_466_TSBY_salt_medium
+- tsby_salt_medium
+merge_fingerprint: 20e0dce132b904736e71883372139aef92ab4cb10e356d30cb137b7afcb98d85

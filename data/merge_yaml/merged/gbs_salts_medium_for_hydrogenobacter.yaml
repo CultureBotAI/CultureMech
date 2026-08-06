@@ -1,0 +1,136 @@
+id: CultureMech:015844
+name: gbs_salts_medium_for_hydrogenobacter
+original_name: GBS SALTS MEDIUM FOR HYDROGENOBACTER
+category: bacterial
+medium_type: DEFINED
+composition_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1366
+  term:
+    id: jcm.grmd:1366
+    label: GBS SALTS MEDIUM FOR HYDROGENOBACTER
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1366'
+ingredients:
+- preferred_term: NaCl
+  concentration:
+    value: '3.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: KCl
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: KCl
+- preferred_term: Na2SO4
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
+    label: Na2SO4
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '0.123'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: MgSO4 x 6 H2O
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '14.5'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.107'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+- preferred_term: Mineral solution A (see Medium No. 1353 )
+  concentration:
+    value: '5.0'
+    unit: ML_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: 8% NaHCO3 solution*
+  concentration:
+    value: '12.5'
+    unit: ML_PER_L
+- preferred_term: 1.0 M Na2S2O3 solution
+  concentration:
+    value: '2.5'
+    unit: ML_PER_L
+- preferred_term: 0.5 M Na2HPO4 solution (pH 8.0)
+  concentration:
+    value: '20.0'
+    unit: ML_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix components thoroughly and distribute the medium into culture vessels
+    (e.g., 5.0 ml in 25 ml serum bottles/Balch tubes) under a stream of N2, seal with
+    butyl rubber stoppers and autoclave.
+- step_number: 2
+  action: MIX
+  description: 'After cooling, aseptically add per liter the following solutions (autoclaved
+    or *filter-sterilized and stored anaerobically): After inoculation, add air to
+    the gas phase (30-40% by volume) and pressurize to 100 KPa with H2-CO2 (4:1, v/v)
+    gas mixture.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-06-02T07:08:52.945503+00:00'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1366. Ingredients captured verbatim; CHEBI/MediaIngredientMech
+    enrichment and category (bacterial/archaea) review are downstream steps.
+- timestamp: '2026-06-03T02:00:03.403877Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-06-03T07:12:22.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-08-06T03:04:35.488691+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 6e3b40549b62443108709cdcd7f82f12d1b4c96f79ec9674a619d06517f8f2ba
+  source: JCM_J1366_GBS_SALTS_MEDIUM_FOR_HYDROGENOBACTER.yaml
+merge_fingerprint: 6e3b40549b62443108709cdcd7f82f12d1b4c96f79ec9674a619d06517f8f2ba
+merged_from:
+- JCM_J1366_GBS_SALTS_MEDIUM_FOR_HYDROGENOBACTER

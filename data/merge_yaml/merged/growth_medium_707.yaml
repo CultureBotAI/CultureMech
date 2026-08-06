@@ -1,6 +1,7 @@
 id: CultureMech:015527
 name: growth medium 707
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Bacto Peptone
@@ -29,7 +30,7 @@ ingredients:
   notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 10034-99-8; MW: 246.47'
 description: medium 707
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: growth medium 707
@@ -43,6 +44,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015527'
+- timestamp: '2026-05-16T09:04:40.593770+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:05.140777+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 4475cd4a0b062bf1eed12db10a5028d839935afa6a404f908f3f1e4e618d5967
+  source: growth_medium_707.yaml
 data_quality_flags: []
 merge_fingerprint: 4475cd4a0b062bf1eed12db10a5028d839935afa6a404f908f3f1e4e618d5967
 merged_from:

@@ -3,6 +3,7 @@ name: streptomycin_nutrient_agar
 original_name: STREPTOMYCIN NUTRIENT AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 238
@@ -28,8 +29,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (if necessary)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Streptomycin sulfate
   concentration:
@@ -59,12 +60,35 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "STREPTOMYCIN NUTRIENT AGAR" to "streptomycin_nutrient_agar"
     for consistent matching
-- timestamp: '2026-04-17T06:29:20.947679+00:00'
+- timestamp: '2026-06-05T07:40:21.843499+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:46.073444+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_238_STREPTOMYCIN_NUTRIENT_AGAR, streptomycin_nutrient_agar'
+- timestamp: '2026-08-06T03:04:46.073485+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 6905b68d7e5a396e7b79dcdab632178ad5a133f18b9871a9aa97ce3abf9f04b5
+  source: KOMODO_238_STREPTOMYCIN_NUTRIENT_AGAR.yaml, streptomycin_nutrient_agar.yaml
 ph_value: 7.0
 kg_microbe_match: mediadive.medium:12
+parent_media:
+  path: data/normalized_yaml/bacterial/streptomycin_nutrient_agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001340
+  name: streptomycin_nutrient_agar
+  notes: KOMODO record explicitly cites DSMZ Medium 238; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 238; local ingredient
+  and concentration signatures match.
 categories:
 - bacterial
 merged_from:

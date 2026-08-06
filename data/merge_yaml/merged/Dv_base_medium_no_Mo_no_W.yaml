@@ -1,6 +1,7 @@
 id: CultureMech:015518
 name: Dv base medium no Mo no W
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Dv_base_medium
@@ -25,7 +26,7 @@ ingredients:
     label: ''
 description: Base medium for cultivating Desulfovibrio with no Mo or W
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: Dv base medium no Mo no W
@@ -39,6 +40,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015518'
+- timestamp: '2026-05-16T09:04:40.558952+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:05.083091+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint fa95466aef7a0cda571090984d6afc541b61d51d284bcb24e79631f51225f80f
+  source: dv_base_medium_no_mo_no_w.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: fa95466aef7a0cda571090984d6afc541b61d51d284bcb24e79631f51225f80f

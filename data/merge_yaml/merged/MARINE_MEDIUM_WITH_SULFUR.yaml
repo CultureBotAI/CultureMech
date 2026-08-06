@@ -1,148 +1,227 @@
-id: CultureMech:015401
+id: CultureMech:009749
 name: marine_medium_with_sulfur
-original_name: MARINE MEDIUM WITH SULFUR
-category: specialized
-medium_type: DEFINED
+original_name: Marine Medium With Sulfur
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 6.0
-media_term:
-  preferred_term: JCM Medium J375
-  term:
-    id: mediadive.medium:J375
-    label: MARINE MEDIUM WITH SULFUR
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=375'
 ingredients:
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: MgCl2 x 6 H2O
-  term:
-    id: CHEBI:86345
-    label: MgCl2 x 6 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: MgCl2 x 6 H2O
-- preferred_term: KCl
-  term:
-    id: CHEBI:32588
-    label: KCl
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
-- preferred_term: NH4Cl
-  term:
-    id: CHEBI:31206
-    label: NH4Cl
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
-- preferred_term: NaNO3
-  term:
-    id: CHEBI:63005
-    label: NaNO3
+- preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000171
-    label: NaNO3
-- preferred_term: KH2PO4
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
-    id: CHEBI:63036
-    label: KH2PO4
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl
   concentration:
-    value: '0.2'
+    value: '30'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
-- preferred_term: MES
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
-    id: CHEBI:39010
-    label: MES
-  concentration:
-    value: '1.95'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000269
-    label: MES
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2・2H2O
   concentration:
     value: '0.15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
-- preferred_term: Sulfur
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
-    id: CHEBI:26833
-    label: Sulfur
+    id: CHEBI:86158
+    label: ''
+- preferred_term: KH2PO4
   concentration:
-    value: '5'
+    value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000927
-    label: Sulfur
-- preferred_term: Na2S x 9 H2O
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
   term:
-    id: CHEBI:76209
-    label: Na2S x 9 H2O
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: NH4Cl
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
-    label: Na2S x 9 H2O
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Mix ingredients, except sulfur and Na2S x 9H2O, adjust pH to 6.0 with
-    NaOH, and autoclave. Steam sulfur for 3 hr on each of 3 successive days. Neutralize
-    5% Na2S x 9H2O solution and autoclave under a N2 atmosphere. Distribute the medium
-    into culture vessels (e.g., 20 ml of the medium in 120 ml serum bottles) containing
-    sulfur under a stream of H2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber
-    stoppers. Prior to inoculation, add the sterile Na2S solution to the medium, and
-    readjust pH, if necessary. Pressurize the inoculated bottles to 200 kPa H2-CO2
-    (4:1, v/v).
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
+    Inorganic compound'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: MgCl2・6H2O
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:86345
+    label: ''
+- preferred_term: Na2S・9H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:76209
+    label: ''
+- preferred_term: KCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: NaNO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:63005
+    label: ''
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
+    label: NaNO3
+- preferred_term: Sulfur
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26833
+    label: sulfur atom
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26833
+    label: sulfur atom
+- preferred_term: MES
+  concentration:
+    value: '1.95'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Organic compound'
+  term:
+    id: CHEBI:39010
+    label: MES
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39010
+    label: MES
+- preferred_term: NaOH
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
+- preferred_term: N2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
+- preferred_term: Hydrogen gas
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:18276
+    label: ''
+media_term:
+  preferred_term: TOGO Medium M369
+  term:
+    id: TOGO:M369
+    label: Marine Medium With Sulfur
+notes: 'Source: https://togomedium.org/medium/M369
+
+  Original source: JCM - JCM_M375
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=375'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:16.441463Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J375'
-- timestamp: '2026-03-13T06:20:42.449141Z'
+- timestamp: '2026-01-27T06:35:54.926710Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M369'
+- timestamp: '2026-01-28T19:48:13.810036Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH; Added default concentration
+    for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
+    N2; Added default concentration for ingredient: Hydrogen gas'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-03-13T06:20:08.585844Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:015401'
-- timestamp: '2026-03-17T17:06:21.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:009749'
+- timestamp: '2026-03-17T06:29:54.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:34.094650+00:00'
+- timestamp: '2026-03-17T19:46:27.577522+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MARINE MEDIUM WITH SULFUR" to "marine_medium_with_sulfur"
+  notes: Normalized name from "Marine Medium With Sulfur" to "marine_medium_with_sulfur"
     for consistent matching
-merge_fingerprint: e14121784f05c165a1f7462d7612b25318dd5bf245aef5eb2a7615a7b2124019
+- timestamp: '2026-05-16T09:03:40.317182+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:12.958138+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:00.905332+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:42.057704+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b253b5436c04691e4ffe19dbc867d59b9c417145452f0bc6dda46cba5042a41e
+  source: marine_medium_with_sulfur.yaml
+merge_fingerprint: b253b5436c04691e4ffe19dbc867d59b9c417145452f0bc6dda46cba5042a41e
 merged_from:
 - marine_medium_with_sulfur

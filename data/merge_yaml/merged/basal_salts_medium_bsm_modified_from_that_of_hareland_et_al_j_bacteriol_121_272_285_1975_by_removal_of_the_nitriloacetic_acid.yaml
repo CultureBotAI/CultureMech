@@ -4,6 +4,7 @@ original_name: Basal salts medium (BSM) modified from that of Hareland et al. ( 
   Bacteriol 121:272– 285(1975)) by removal of the nitriloacetic acid
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -15,8 +16,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Magnesium sulfate heptahydrate
   concentration:
@@ -27,8 +28,8 @@ ingredients:
   term:
     id: CHEBI:31795
     label: Magnesium sulfate heptahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: Magnesium sulfate heptahydrate
 - preferred_term: Yeast extract
   concentration:
@@ -44,15 +45,18 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: Ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: Ferrous sulfate heptahydrate
   concentration:
     value: '1.2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: Zinc sulfate heptahydrate
   concentration:
     value: '0.3'
@@ -74,9 +78,12 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
     label: Manganese sulfate monohydrate
+  term:
+    id: CHEBI:86364
+    label: ''
 - preferred_term: di‐Potassium hydrogen orthophosphate trihydrate
   concentration:
     value: '85'
@@ -98,17 +105,14 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: CAS amino acids
   concentration:
     value: '50'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: CAS amino acids
 media_term:
   preferred_term: TOGO Medium M2237
   term:
@@ -142,6 +146,23 @@ curation_history:
     et al. ( J Bacteriol 121:272– 285(1975)) by removal of the nitriloacetic acid"
     to "basal_salts_medium_bsm_modified_from_that_of_hareland_et_al_j_bacteriol_121_272_285_1975_by_removal_of_the_nitriloacetic_acid"
     for consistent matching
-merge_fingerprint: 52fa248951b7bfbc0501c86ebfd5a131155bcb967494737ac73d9c8a46d808e3
+- timestamp: '2026-06-05T07:40:50.562491+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:36.014302+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:05:24.790513+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 58af19d8d8407cb987b003ca0297739f8eb37dc5b9412adcc542f888e4aeefb9
+  source: basal_salts_medium_bsm_modified_from_that_of_hareland_et_al_j_bacteriol_121_272_285_1975_by_removal_of_the_nitriloacetic_acid.yaml
+merge_fingerprint: 58af19d8d8407cb987b003ca0297739f8eb37dc5b9412adcc542f888e4aeefb9
 merged_from:
 - basal_salts_medium_bsm_modified_from_that_of_hareland_et_al_j_bacteriol_121_272_285_1975_by_removal_of_the_nitriloacetic_acid

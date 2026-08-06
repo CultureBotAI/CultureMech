@@ -1,125 +1,256 @@
-id: CultureMech:008442
+id: CultureMech:005909
 name: sporulation_medium
-original_name: Sporulation Medium
+original_name: SPORULATION medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+media_term:
+  preferred_term: KOMODO Medium 531
+  term:
+    id: komodo.medium:531
+    label: SPORULATION medium
+notes: 'Source: KOMODO ModelSEED | ID: 531 | DSMZ Medium: 531 (mediadive.medium:531)
+  | Aerobic: No'
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Nutrient broth
   concentration:
-    value: '1000.0'
+    value: '6'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Defined component,
-    Inorganic compound [Merged 3 duplicates: 800.0, 100.0, 100.0]'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: MgSO4·7H2O
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4·7H2O
-- preferred_term: FeSO4·7H2O
-  concentration:
-    value: '0.278'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:75836
-    label: ''
-- preferred_term: KCl
+- preferred_term: Yeast extract
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+- preferred_term: Trypticase
+  concentration:
+    value: '2'
+    unit: G_PER_L
   term:
-    id: CHEBI:32588
-    label: potassium chloride
+    id: CHEBI:78018
+    label: dodecylphosphocholine
   mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
-- preferred_term: Agar (if needed)
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Nutrient broth
-  concentration:
-    value: '8'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
-- preferred_term: Ca(NO3)2·4H2O
-  concentration:
-    value: '236.15'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+    id: MediaIngredientMech:000263
+    label: Trypticase
+- preferred_term: MnSO4 x H2O
   term:
-    id: CHEBI:86159
-    label: calcium nitrate tetrahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000586
-    label: Ca(NO3)2·4H2O
-- preferred_term: MnCl2·4H2O
+    id: CHEBI:86364
+    label: MnSO4 x H2O
   concentration:
-    value: '1.979'
+    value: '0.0005'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+- preferred_term: Marine Broth
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Agar
   term:
-    id: CHEBI:86368
-    label: ''
-media_term:
-  preferred_term: TOGO Medium M1868
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+- preferred_term: Inosin
   term:
-    id: TOGO:M1868
-    label: Sporulation Medium
-notes: 'Source: https://togomedium.org/medium/M1868
-
-  Original source: NBRC - NBRC_M1113
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1113'
+    id: CHEBI:17596
+    label: Inosin
+  concentration:
+    value: '0.00134113'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17596
+    label: Inosin
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:58.546074Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: NBRC, ID: M1868'
-- timestamp: '2026-01-28T19:48:17.696550Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T03:08:58.157641Z'
-  curator: data-quality-cleanup-v1.0
-  action: Data quality fixes
-  notes: Merged 2 duplicate ingredient(s)
-- timestamp: '2026-03-13T06:19:56.921579Z'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 531'
+- timestamp: '2026-02-03T11:19:06.945011'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 531
+- timestamp: '2026-03-13T06:19:37.202335Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:008442'
-- timestamp: '2026-03-17T06:30:03.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:005909'
+- timestamp: '2026-03-17T06:30:17.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:15.502649+00:00'
+- timestamp: '2026-03-17T19:45:53.919702+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Sporulation Medium" to "sporulation_medium" for consistent
+  notes: Normalized name from "SPORULATION medium" to "sporulation_medium" for consistent
     matching
-high_metal: true
-merge_fingerprint: d65a443a55fd6627624bdfb3b596cf3265b54ebedee97a2fa31aa0e0996e097a
+- timestamp: '2026-06-05T07:40:24.424917+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:55.213244+00:00'
+  curator: recipe-merger
+  action: Merged 13 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_531_SPORULATION_medium, medium_531_modified_for_dsm_1314,
+    medium_531_modified_for_dsm_4332, medium_531_modified_for_dsm_4333, medium_531_modified_for_dsm_4334,
+    medium_531_modified_for_dsm_4335, medium_531_modified_for_dsm_6800, medium_531_modified_for_dsm_6801,
+    medium_531_modified_for_dsm_6802, medium_531_modified_for_dsm_6803, medium_531_modified_for_dsm_6804,
+    medium_531_modified_for_dsm_6805, sporulation_medium'
+- timestamp: '2026-08-06T03:04:55.213323+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 13 source recipe(s) on fingerprint a796b155355f196a255a899434711effbc5098925af39c640be490a3ca43e5da
+  source: KOMODO_531_SPORULATION_medium.yaml, medium_531_modified_for_dsm_1314.yaml,
+    medium_531_modified_for_dsm_4332.yaml, medium_531_modified_for_dsm_4333.yaml,
+    medium_531_modified_for_dsm_4334.yaml, medium_531_modified_for_dsm_4335.yaml,
+    medium_531_modified_for_dsm_6800.yaml, medium_531_modified_for_dsm_6801.yaml,
+    medium_531_modified_for_dsm_6802.yaml, medium_531_modified_for_dsm_6803.yaml,
+    medium_531_modified_for_dsm_6804.yaml, medium_531_modified_for_dsm_6805.yaml,
+    sporulation_medium.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_531_modified_for_dsm_1314.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005898
+  name: medium_531_modified_for_dsm_1314
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_531_modified_for_dsm_4332.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005899
+  name: medium_531_modified_for_dsm_4332
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_531_modified_for_dsm_4333.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005900
+  name: medium_531_modified_for_dsm_4333
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_531_modified_for_dsm_4334.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005901
+  name: medium_531_modified_for_dsm_4334
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_531_modified_for_dsm_4335.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005902
+  name: medium_531_modified_for_dsm_4335
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_531_modified_for_dsm_6800.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005903
+  name: medium_531_modified_for_dsm_6800
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_531_modified_for_dsm_6801.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005904
+  name: medium_531_modified_for_dsm_6801
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_531_modified_for_dsm_6802.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005905
+  name: medium_531_modified_for_dsm_6802
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_531_modified_for_dsm_6803.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005906
+  name: medium_531_modified_for_dsm_6803
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_531_modified_for_dsm_6804.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005907
+  name: medium_531_modified_for_dsm_6804
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_531_modified_for_dsm_6805.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005908
+  name: medium_531_modified_for_dsm_6805
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/sporulation_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001663
+  name: sporulation_medium
+  notes: KOMODO record states DSMZ Medium 531 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
+synonyms:
+- name: medium_531_modified_for_dsm_1314
+  source: KOMODO
+  source_id: komodo.medium:531_1314
+  original_category: bacterial
+- name: medium_531_modified_for_dsm_4332
+  source: KOMODO
+  source_id: komodo.medium:531_4332
+  original_category: bacterial
+- name: medium_531_modified_for_dsm_4333
+  source: KOMODO
+  source_id: komodo.medium:531_4333
+  original_category: bacterial
+- name: medium_531_modified_for_dsm_4334
+  source: KOMODO
+  source_id: komodo.medium:531_4334
+  original_category: bacterial
+- name: medium_531_modified_for_dsm_4335
+  source: KOMODO
+  source_id: komodo.medium:531_4335
+  original_category: bacterial
+- name: medium_531_modified_for_dsm_6800
+  source: KOMODO
+  source_id: komodo.medium:531_6800
+  original_category: bacterial
+- name: medium_531_modified_for_dsm_6801
+  source: KOMODO
+  source_id: komodo.medium:531_6801
+  original_category: bacterial
+- name: medium_531_modified_for_dsm_6802
+  source: KOMODO
+  source_id: komodo.medium:531_6802
+  original_category: bacterial
+- name: medium_531_modified_for_dsm_6803
+  source: KOMODO
+  source_id: komodo.medium:531_6803
+  original_category: bacterial
+- name: medium_531_modified_for_dsm_6804
+  source: KOMODO
+  source_id: komodo.medium:531_6804
+  original_category: bacterial
+- name: medium_531_modified_for_dsm_6805
+  source: KOMODO
+  source_id: komodo.medium:531_6805
+  original_category: bacterial
+categories:
+- bacterial
 merged_from:
-- TOGO_M1868_Sporulation_Medium
+- KOMODO_531_SPORULATION_medium
+- medium_531_modified_for_dsm_1314
+- medium_531_modified_for_dsm_4332
+- medium_531_modified_for_dsm_4333
+- medium_531_modified_for_dsm_4334
+- medium_531_modified_for_dsm_4335
+- medium_531_modified_for_dsm_6800
+- medium_531_modified_for_dsm_6801
+- medium_531_modified_for_dsm_6802
+- medium_531_modified_for_dsm_6803
+- medium_531_modified_for_dsm_6804
+- medium_531_modified_for_dsm_6805
+- sporulation_medium
+merge_fingerprint: a796b155355f196a255a899434711effbc5098925af39c640be490a3ca43e5da

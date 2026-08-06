@@ -1,6 +1,7 @@
 id: CultureMech:015790
 name: YM
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Yeast Extract
@@ -53,7 +54,7 @@ ingredients:
   notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 471-34-1; MW: 100.0869'
 description: Yeast mannitol media
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: YM
@@ -67,6 +68,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015790'
+- timestamp: '2026-05-16T09:04:44.021420+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:08.992604+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b55d7cdd318f0fe41a2c85d03dd90871e54a50ad8f90eb4d05f36f701704f17f
+  source: ym.yaml
 data_quality_flags: []
 merge_fingerprint: b55d7cdd318f0fe41a2c85d03dd90871e54a50ad8f90eb4d05f36f701704f17f
 merged_from:

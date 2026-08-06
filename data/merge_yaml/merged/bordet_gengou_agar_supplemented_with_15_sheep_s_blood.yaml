@@ -3,6 +3,7 @@ name: bordet_gengou_agar_supplemented_with_15_sheep_s_blood
 original_name: Bordet-Gengou agar (supplemented with 15% sheep’s blood)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: sheep’s blood
@@ -36,6 +37,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Bordet-Gengou agar (supplemented with 15% sheep’s blood)"
     to "bordet_gengou_agar_supplemented_with_15_sheep_s_blood" for consistent matching
+- timestamp: '2026-08-06T03:05:25.761227+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2374f922267ec1d3aeb98012c9f9efc7753b94ed891e79b876c3375d6931df1e
+  source: bordet_gengou_agar_supplemented_with_15_sheep_s_blood.yaml
 merge_fingerprint: 2374f922267ec1d3aeb98012c9f9efc7753b94ed891e79b876c3375d6931df1e
 merged_from:
 - bordet_gengou_agar_supplemented_with_15_sheep_s_blood

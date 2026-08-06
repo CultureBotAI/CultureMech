@@ -3,8 +3,11 @@ name: heart_infusion_blood_agar
 original_name: HEART INFUSION BLOOD AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_range: 7-7.4
+ph_range:
+  min: 7.0
+  max: 7.4
 media_term:
   preferred_term: DSMZ Medium 1609
   term:
@@ -23,8 +26,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Defibrinated Blood
   concentration:
@@ -56,6 +59,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HEART INFUSION BLOOD AGAR" to "heart_infusion_blood_agar"
     for consistent matching
+- timestamp: '2026-05-20T06:01:22.455439+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7-7.4'' -> {''min'': 7.0, ''max'': 7.4}'
+- timestamp: '2026-06-05T07:41:08.341669+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:37.439526+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2a83ca8b97ede6ea3486a43e20aeee32d0cd4cd7a2fe37fa25e83724852dc923
+  source: heart_infusion_blood_agar.yaml
 kg_microbe_match: mediadive.medium:12
 merge_fingerprint: 2a83ca8b97ede6ea3486a43e20aeee32d0cd4cd7a2fe37fa25e83724852dc923
 merged_from:

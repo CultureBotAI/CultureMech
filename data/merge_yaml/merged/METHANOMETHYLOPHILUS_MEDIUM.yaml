@@ -1,10 +1,13 @@
 id: CultureMech:001121
 name: methanomethylophilus_medium
 original_name: METHANOMETHYLOPHILUS MEDIUM
-category: bacterial
+category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_range: 7.6-7.8
+ph_range:
+  min: 7.6
+  max: 7.8
 media_term:
   preferred_term: DSMZ Medium 1637
   term:
@@ -27,8 +30,8 @@ ingredients:
   concentration:
     value: '4.90196'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: L-Cysteine HCl x H2O
   term:
@@ -37,8 +40,8 @@ ingredients:
   concentration:
     value: '0.490196'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
     label: L-Cysteine HCl x H2O
 - preferred_term: NaHCO3
   term:
@@ -47,13 +50,16 @@ ingredients:
   concentration:
     value: '0.490196'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.000490196'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: Methanol
   term:
     id: CHEBI:17790
@@ -61,8 +67,8 @@ ingredients:
   concentration:
     value: '7.76471'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000618
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17790
     label: Methanol
 - preferred_term: DL-Dithiothreitol
   term:
@@ -71,8 +77,8 @@ ingredients:
   concentration:
     value: '0.980392'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000793
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18320
     label: DL-Dithiothreitol
 - preferred_term: Haemin
   term:
@@ -81,8 +87,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
     label: Haemin
 - preferred_term: NaOH
   term:
@@ -91,8 +97,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
     label: NaOH
 - preferred_term: Vitamin K1
   term:
@@ -101,8 +107,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000567
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18067
     label: Vitamin K1
 - preferred_term: Ethanol
   term:
@@ -111,8 +117,8 @@ ingredients:
   concentration:
     value: '950'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000686
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16236
     label: Ethanol
 preparation_steps:
 - step_number: 1
@@ -161,6 +167,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "METHANOMETHYLOPHILUS MEDIUM" to "methanomethylophilus_medium"
     for consistent matching
-merge_fingerprint: 998063e1cb9538eda1bb63376ecc72578c444bd338b922b81f57e34ced959eb0
+- timestamp: '2026-05-20T06:01:55.973715+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.6-7.8'' -> {''min'': 7.6, ''max'': 7.8}'
+- timestamp: '2026-06-05T07:41:31.947492+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:30.785612+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 3501c2c9cb68abd32ccdc906ed35dad288327602d4d7554b725cb2342557a5e4
+  source: methanomethylophilus_medium.yaml
+merge_fingerprint: 3501c2c9cb68abd32ccdc906ed35dad288327602d4d7554b725cb2342557a5e4
 merged_from:
 - methanomethylophilus_medium

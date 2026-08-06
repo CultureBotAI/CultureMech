@@ -3,6 +3,7 @@ name: ecoli_bl21_medium_park_et_al
 original_name: Ecoli bl21 medium; park et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Citrate
@@ -10,6 +11,9 @@ ingredients:
     value: '8.8485'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: beta-D-Glucose
   concentration:
     value: '27.753'
@@ -26,8 +30,8 @@ ingredients:
   concentration:
     value: '0.04852'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Sodium molybdate
   concentration:
@@ -43,13 +47,16 @@ ingredients:
   concentration:
     value: '0.01491'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '97.7323'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -57,8 +64,8 @@ ingredients:
   concentration:
     value: '4.86874'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Cobalt chloride
   concentration:
@@ -71,10 +78,16 @@ ingredients:
   concentration:
     value: '0.08875'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: Cupric chloride
   concentration:
     value: '0.008799'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49553
+    label: ''
 - preferred_term: Ammonium phosphate
   concentration:
     value: '30.287'
@@ -116,6 +129,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Ecoli bl21 medium; park et al" to "ecoli_bl21_medium_park_et_al"
     for consistent matching
+- timestamp: '2026-06-05T07:40:59.296413+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:33.284893+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 4865ff043fe992fe86299757fde501a996bbc780fb628fbaed36f1245d990826
+  source: ecoli_bl21_medium_park_et_al.yaml
 media_term:
   preferred_term: MediaDB Medium 277
   term:
@@ -127,6 +151,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 1a1460975332755f0073be4fcd7d704d88b225e12063d973c8d297c30cddcbcd
+merge_fingerprint: 4865ff043fe992fe86299757fde501a996bbc780fb628fbaed36f1245d990826
 merged_from:
 - ecoli_bl21_medium_park_et_al

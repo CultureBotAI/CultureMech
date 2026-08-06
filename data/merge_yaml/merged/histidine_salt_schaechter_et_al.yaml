@@ -3,6 +3,7 @@ name: histidine_salt_schaechter_et_al
 original_name: Histidine salt; schaechter et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: L-Histidine
@@ -13,18 +14,24 @@ ingredients:
     value: '2.57815'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:his-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000272
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15971
     label: L-Histidine
 - preferred_term: Citrate
   concentration:
     value: '5.20497'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '28.0899'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Potassium chloride
   concentration:
     value: '9.92605'
@@ -32,9 +39,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -42,8 +49,8 @@ ingredients:
   concentration:
     value: '0.405729'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Sodium ammonium phosphate
   concentration:
@@ -82,6 +89,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Histidine salt; schaechter et al" to "histidine_salt_schaechter_et_al"
     for consistent matching
+- timestamp: '2026-06-05T07:41:08.567059+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:37.643510+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 8062335b4829467dc92b47a9d368260fe49287b3ac2e6531e11ba975ddaa292d
+  source: histidine_salt_schaechter_et_al.yaml
 media_term:
   preferred_term: MediaDB Medium 234
   term:
@@ -93,6 +111,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 550ff5bb08de54c33552e2ce8fc87109daee2a682beb40724544c51b0c18ac80
+merge_fingerprint: 8062335b4829467dc92b47a9d368260fe49287b3ac2e6531e11ba975ddaa292d
 merged_from:
 - histidine_salt_schaechter_et_al

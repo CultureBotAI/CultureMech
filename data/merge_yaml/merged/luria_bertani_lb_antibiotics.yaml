@@ -3,6 +3,7 @@ name: luria_bertani_lb_antibiotics
 original_name: Luria–Bertani (LB) + antibiotics
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Ampicillin
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:28971
     label: Ampicillin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000826
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28971
     label: Ampicillin
 - preferred_term: Kanamycin
   concentration:
@@ -32,8 +33,8 @@ ingredients:
   term:
     id: CHEBI:28077
     label: Rifampicin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000912
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28077
     label: Rifampicin
 - preferred_term: Tetracycline
   concentration:
@@ -143,6 +144,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Luria–Bertani (LB) + antibiotics" to "luria_bertani_lb_antibiotics"
     for consistent matching
+- timestamp: '2026-06-05T07:41:11.489122+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:40.617264+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e22626294893098fe5a9dfc7babf6fac81db845182d09857c737f24991a4e9f1
+  source: luria_bertani_lb_antibiotics.yaml
 merge_fingerprint: e22626294893098fe5a9dfc7babf6fac81db845182d09857c737f24991a4e9f1
 merged_from:
 - luria_bertani_lb_antibiotics

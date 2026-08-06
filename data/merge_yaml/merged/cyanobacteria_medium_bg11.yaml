@@ -1,16 +1,27 @@
-id: CultureMech:001069
+id: CultureMech:001070
 name: cyanobacteria_medium_bg11
-original_name: Cyanobacteria Medium BG11-
+original_name: Cyanobacteria Medium BG11+
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
-  preferred_term: DSMZ Medium 1592
+  preferred_term: DSMZ Medium 1593
   term:
-    id: mediadive.medium:1592
-    label: Cyanobacteria Medium BG11-
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1592.pdf'
+    id: mediadive.medium:1593
+    label: Cyanobacteria Medium BG11+
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1593.pdf'
 ingredients:
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:63005
+    label: NaNO3
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000171
+    label: NaNO3
 - preferred_term: Mg(SO4) x 7 H2O
   concentration:
     value: '10'
@@ -22,8 +33,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: Na3-citrate x 2 H2O
   concentration:
@@ -32,8 +43,8 @@ ingredients:
   term:
     id: CHEBI:32142
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000719
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32142
     label: Na3-citrate x 2 H2O
 - preferred_term: Na-EDTA x 2 H2O
   term:
@@ -42,28 +53,28 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
     label: Na-EDTA x 2 H2O
 - preferred_term: K2HPO4 x 3 H2O
   term:
     id: CHEBI:131527
-    label: K2HPO4 x 3 H2O
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4 x 3 H2O
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 - preferred_term: Fe(NH4)citrate
   term:
@@ -72,8 +83,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000541
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31604
     label: Fe(NH4)citrate
 - preferred_term: Vitamin B12
   term:
@@ -82,18 +93,18 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '2.9'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -102,8 +113,8 @@ ingredients:
   concentration:
     value: '1.81'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -112,8 +123,8 @@ ingredients:
   concentration:
     value: '0.22'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -122,8 +133,8 @@ ingredients:
   concentration:
     value: '0.39'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
@@ -132,8 +143,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
     label: CuSO4 x 5 H2O
 - preferred_term: Co(NO3)2 x 6 H2O
   term:
@@ -142,8 +153,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000525
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86214
     label: Co(NO3)2 x 6 H2O
 preparation_steps:
 - step_number: 1
@@ -163,27 +174,42 @@ preparation_steps:
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:14.933921Z'
+- timestamp: '2026-01-26T17:53:14.936497Z'
   curator: mediadive-import
   action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1592'
-- timestamp: '2026-01-28T19:48:25.836962Z'
+  notes: 'Source: DSMZ, ID: 1593'
+- timestamp: '2026-01-28T19:48:07.861471Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:19:00.916551Z'
+- timestamp: '2026-03-13T06:19:00.924542Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:001069'
-- timestamp: '2026-03-17T06:30:20.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:001070'
+- timestamp: '2026-03-17T06:29:41.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:12.573981+00:00'
+- timestamp: '2026-03-17T19:45:12.582868+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Cyanobacteria Medium BG11-" to "cyanobacteria_medium_bg11"
+  notes: Normalized name from "Cyanobacteria Medium BG11+" to "cyanobacteria_medium_bg11"
     for consistent matching
-merge_fingerprint: e6d564be2dc3720652d58cf0e65426a756878e52eb2f1bffcf886600e3543146
+- timestamp: '2026-06-05T07:40:16.083247+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 13 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:42.615206+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:34.528456+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b19522851a05205104024215e96e54eb8320d5bcbfb75557b20a8f281897d4c9
+  source: DSMZ_1593_Cyanobacteria_Medium_BG11.yaml
+merge_fingerprint: b19522851a05205104024215e96e54eb8320d5bcbfb75557b20a8f281897d4c9
 merged_from:
-- cyanobacteria_medium_bg11
+- DSMZ_1593_Cyanobacteria_Medium_BG11

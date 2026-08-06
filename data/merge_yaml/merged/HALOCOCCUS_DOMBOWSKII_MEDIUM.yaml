@@ -1,120 +1,132 @@
-id: CultureMech:002758
+id: CultureMech:009780
 name: halococcus_dombowskii_medium
-original_name: HALOCOCCUS DOMBOWSKII MEDIUM
-category: bacterial
+original_name: Halococcus Dombowskii Medium
+category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 7.4
-media_term:
-  preferred_term: JCM Medium J402
-  term:
-    id: mediadive.medium:J402
-    label: HALOCOCCUS DOMBOWSKII MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=402'
 ingredients:
-- preferred_term: Casamino acids
+- preferred_term: Distilled water
   concentration:
-    value: '5'
+    value: '1'
     unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
   term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '5'
     unit: G_PER_L
-- preferred_term: Tris base
-  term:
-    id: CHEBI:9754
-    label: Tris base
-  concentration:
-    value: '12.1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000880
-    label: Tris base
-- preferred_term: KCl
-  term:
-    id: CHEBI:32588
-    label: KCl
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
-- preferred_term: MgCl2 x 6 H2O
-  term:
-    id: CHEBI:86345
-    label: MgCl2 x 6 H2O
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: MgCl2 x 6 H2O
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
+  notes: 'Role: Nutrient source; Properties: Undefined component'
 - preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
   concentration:
     value: '200'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: Add components to distilled water and bring volume to 1.0 L.
-- step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH to 7.4.
-- step_number: 3
-  action: MIX
-  description: For preparation of solid medium, add 20.0 g/L agar.
-- step_number: 4
-  action: MIX
-  description: 'Comment: For cultivation of JCM 19729, supplement with 10.0 g/L sea
-    salts (Sigma).'
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:86158
+    label: ''
+- preferred_term: MgCl2・6H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:86345
+    label: ''
+- preferred_term: KCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Tris base
+  concentration:
+    value: '12.1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'
+  term:
+    id: CHEBI:9754
+    label: tris
+  mediaingredientmech_chebi_term:
+    id: CHEBI:9754
+    label: tris
+- preferred_term: Casamino acids (BD-Difco)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M398
+  term:
+    id: TOGO:M398
+    label: Halococcus Dombowskii Medium
+notes: 'Source: https://togomedium.org/medium/M398
+
+  Original source: JCM - JCM_M402
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=402'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:16.516696Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J402'
-- timestamp: '2026-01-28T19:48:13.374796Z'
+- timestamp: '2026-01-27T06:35:54.983634Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M398'
+- timestamp: '2026-01-28T19:48:29.606621Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:19:15.526528Z'
+- timestamp: '2026-03-13T06:20:08.841570Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002758'
-- timestamp: '2026-03-17T06:29:53.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:009780'
+- timestamp: '2026-03-17T06:30:28.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:28.935715+00:00'
+- timestamp: '2026-03-17T19:46:27.835603+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALOCOCCUS DOMBOWSKII MEDIUM" to "halococcus_dombowskii_medium"
+  notes: Normalized name from "Halococcus Dombowskii Medium" to "halococcus_dombowskii_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:40:41.064192+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:27.469095+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 48a59b7fe07e4c0352b52ea5b935ffb82106696443f8e55d6716152c37b75931
+  source: TOGO_M398_Halococcus_Dombowskii_Medium.yaml
 high_metal: true
-merge_fingerprint: fcee1cab3a570303eebaec5d33a82d896f197348bf91cf8784b540f7b45bd999
+merge_fingerprint: 48a59b7fe07e4c0352b52ea5b935ffb82106696443f8e55d6716152c37b75931
 merged_from:
-- halococcus_dombowskii_medium
+- TOGO_M398_Halococcus_Dombowskii_Medium

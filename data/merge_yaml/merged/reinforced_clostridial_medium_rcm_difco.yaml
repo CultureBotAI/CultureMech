@@ -3,6 +3,7 @@ name: reinforced_clostridial_medium_rcm_difco
 original_name: Reinforced Clostridial Medium (RCM) (Difco)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +32,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: Sodium Chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Dextrose
   concentration:
     value: '5'
@@ -43,9 +44,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Dextrose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Sodium acetate
   concentration:
     value: '3'
@@ -54,14 +55,17 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
-    label: Sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: Soluble starch
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Undefined component'
+  term:
+    id: CHEBI:28017
+    label: ''
 - preferred_term: Agar
   concentration:
     value: '0.5'
@@ -70,9 +74,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Cysteine HCl
   concentration:
     value: '0.5'
@@ -117,6 +121,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Reinforced Clostridial Medium (RCM) (Difco)" to "reinforced_clostridial_medium_rcm_difco"
     for consistent matching
-merge_fingerprint: c23444248123cb72f7a44bc966e0ca0b6078b35c8acc9980671af48959a5c37c
+- timestamp: '2026-06-05T07:41:44.153166+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:54.565688+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 21f660ff55b6bbcc3b48053b783d771b785276ff0c0b0873653cbbf61d89bd91
+  source: reinforced_clostridial_medium_rcm_difco.yaml
+merge_fingerprint: 21f660ff55b6bbcc3b48053b783d771b785276ff0c0b0873653cbbf61d89bd91
 merged_from:
 - reinforced_clostridial_medium_rcm_difco

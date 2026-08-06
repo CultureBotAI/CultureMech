@@ -1,6 +1,7 @@
 id: CultureMech:015484
 name: Agro defined trehalose
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Urea
@@ -68,7 +69,7 @@ ingredients:
     label: ''
 description: Defined minimal media for growing Agrobacterium
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: Agro defined trehalose
@@ -82,6 +83,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015484'
+- timestamp: '2026-05-16T09:04:40.054697+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:04.473541+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2630deec51d6120ab2cd839a1a3b4731564abb6083310c1ac685ee8c2f910919
+  source: agro_defined_trehalose.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: 2630deec51d6120ab2cd839a1a3b4731564abb6083310c1ac685ee8c2f910919

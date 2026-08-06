@@ -3,6 +3,7 @@ name: modified_pyes_medium
 original_name: MODIFIED PYES MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
@@ -28,8 +29,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -55,6 +56,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MODIFIED PYES MEDIUM" to "modified_pyes_medium" for
     consistent matching
+- timestamp: '2026-06-05T07:41:37.645743+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:49.647366+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b550b35d64b0ae4836cef4a1f5213746754198c611a34e4b1e1d7c0572b25ae6
+  source: modified_pyes_medium.yaml
 kg_microbe_match: mediadive.medium:12
 merge_fingerprint: b550b35d64b0ae4836cef4a1f5213746754198c611a34e4b1e1d7c0572b25ae6
 merged_from:

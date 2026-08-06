@@ -3,6 +3,7 @@ name: cyc_agar_ph_8_0
 original_name: CYC AGAR (pH 8.0)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 8.0
 media_term:
@@ -26,12 +27,6 @@ ingredients:
     value: '6'
     unit: G_PER_L
   notes: ' ( vitamin assay)'
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -39,8 +34,8 @@ ingredients:
   concentration:
     value: '16'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -73,11 +68,37 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CYC AGAR (pH 8.0)" to "cyc_agar_ph_8_0" for consistent
     matching
-- timestamp: '2026-04-17T06:29:59.560625+00:00'
+- timestamp: '2026-06-05T07:40:55.143640+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:36.491340+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:05:29.483731+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: cyc_agar, cyc_agar_ph_8_0'
+- timestamp: '2026-08-06T03:05:29.483766+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint ea0207286a7af7606406fc698184c22696f4e1be1b419a50fbdbcb34134f5c0e
+  source: cyc_agar.yaml, cyc_agar_ph_8_0.yaml
 kg_microbe_match: mediadive.medium:550
+parent_media:
+  path: data/normalized_yaml/bacterial/cyc_agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002851
+  name: cyc_agar
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.
 synonyms:
 - name: cyc_agar
   source: MediaDive
@@ -88,4 +109,4 @@ categories:
 merged_from:
 - cyc_agar
 - cyc_agar_ph_8_0
-merge_fingerprint: d164dbf5de7d7a7d1b6bd64e6db66e04240d1fa269ca3ea6e79feae40c09b6d3
+merge_fingerprint: ea0207286a7af7606406fc698184c22696f4e1be1b419a50fbdbcb34134f5c0e

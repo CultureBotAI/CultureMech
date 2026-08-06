@@ -3,6 +3,7 @@ name: togo_medium_m2153
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Yeast extract
@@ -57,6 +58,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TOGO Medium M2153" to "togo_medium_m2153" for consistent
     matching
+- timestamp: '2026-08-06T03:06:01.227762+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint f06c895489218a2ea7623af1e86ed31778f433664fe570b75537ff595af9f53e
+  source: togo_medium_m2153.yaml
 merge_fingerprint: f06c895489218a2ea7623af1e86ed31778f433664fe570b75537ff595af9f53e
 merged_from:
 - togo_medium_m2153

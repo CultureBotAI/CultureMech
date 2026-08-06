@@ -1,44 +1,124 @@
-id: CultureMech:002427
+id: CultureMech:007894
 name: tsby_medium
-original_name: TSBY MEDIUM
+original_name: TSBY Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-media_term:
-  preferred_term: JCM Medium J1261
-  term:
-    id: mediadive.medium:J1261
-    label: TSBY MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1261
-
-
-  Commercial Product: Brain Heart Infusion
-
-  Supplier: Difco/BD
-
-  Catalog: 237500
-
-  Source: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-
-  Accessed: 2026-03-28
-
-
-  Constituent composition researched from product specification.
-
-
-  Commercial Product: Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)
-
-  Supplier: Multiple suppliers (BD, Sigma, Neogen)
-
-  Catalog: Multiple (22092 Sigma, 211825 BD)
-
-  Source: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-
-  Accessed: 2026-03-28
-
-
-  Constituent composition researched from product specification.'
 ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Calf brains
+  term:
+    id: UBERON:0000955
+    label: brain
+  concentration:
+    value: variable
+    unit: VARIABLE
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: infusion from 200 g/L; Tissue infusion - source material is calf brain tissue;
+    Constituent of Brain Heart Infusion commercial product
+- preferred_term: Beef heart
+  term:
+    id: UBERON:0000948
+    label: heart
+  concentration:
+    value: variable
+    unit: VARIABLE
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: infusion from 250 g/L; Tissue infusion - source material is beef/ox heart
+    tissue; Constituent of Brain Heart Infusion commercial product
+- preferred_term: Proteose peptone
+  term:
+    id: MICRO:0000180
+    label: proteose peptone
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: Enzymatic digest of animal protein providing amino acids and peptides; Constituent
+    of Brain Heart Infusion commercial product
+- preferred_term: Dextrose
+  term:
+    id: CHEBI:17234
+    label: D-glucose
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: Carbon/energy source; Constituent of Brain Heart Infusion commercial product
+  synonyms:
+  - synonym_text: glucose
+    synonym_type: EXACT
+  - synonym_text: D-glucose
+    synonym_type: EXACT
+  - synonym_text: dextrose
+    synonym_type: EXACT
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: Maintains osmotic equilibrium; Constituent of Brain Heart Infusion commercial
+    product
+  synonyms:
+  - synonym_text: NaCl
+    synonym_type: EXACT
+  - synonym_text: table salt
+    synonym_type: EXACT
+- preferred_term: Disodium phosphate
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogen phosphate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial
+    product
+  synonyms:
+  - synonym_text: Na2HPO4
+    synonym_type: EXACT
+  - synonym_text: disodium hydrogen phosphate
+    synonym_type: EXACT
+  - synonym_text: sodium phosphate dibasic
+    synonym_type: EXACT
 - preferred_term: Pancreatic digest of casein
   term:
     id: MICRO:0000182
@@ -154,121 +234,78 @@ ingredients:
     product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
   notes: Solidifying agent (for TSA only, not in TSB); Constituent of Tryptic Soy
     Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
-- preferred_term: Calf brains
+media_term:
+  preferred_term: TOGO Medium M1357
   term:
-    id: UBERON:0000955
-    label: brain
-  concentration:
-    value: variable
-    unit: VARIABLE
-  supplier_catalog:
-    supplier_name: Difco/BD Brain Heart Infusion
-    catalog_number: '237500'
-    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: infusion from 200 g/L; Tissue infusion - source material is calf brain tissue;
-    Constituent of Brain Heart Infusion commercial product
-- preferred_term: Beef heart
-  term:
-    id: UBERON:0000948
-    label: heart
-  concentration:
-    value: variable
-    unit: VARIABLE
-  supplier_catalog:
-    supplier_name: Difco/BD Brain Heart Infusion
-    catalog_number: '237500'
-    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: infusion from 250 g/L; Tissue infusion - source material is beef/ox heart
-    tissue; Constituent of Brain Heart Infusion commercial product
-- preferred_term: Proteose peptone
-  term:
-    id: MICRO:0000180
-    label: proteose peptone
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Difco/BD Brain Heart Infusion
-    catalog_number: '237500'
-    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Enzymatic digest of animal protein providing amino acids and peptides; Constituent
-    of Brain Heart Infusion commercial product
-- preferred_term: Dextrose
-  term:
-    id: CHEBI:17234
-    label: D-glucose
-  concentration:
-    value: '2.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Difco/BD Brain Heart Infusion
-    catalog_number: '237500'
-    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Carbon/energy source; Constituent of Brain Heart Infusion commercial product
-  synonyms:
-  - synonym_text: glucose
-    synonym_type: EXACT
-  - synonym_text: D-glucose
-    synonym_type: EXACT
-  - synonym_text: dextrose
-    synonym_type: EXACT
-- preferred_term: Sodium chloride
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  concentration:
-    value: '5.0'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Difco/BD Brain Heart Infusion
-    catalog_number: '237500'
-    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Maintains osmotic equilibrium; Constituent of Brain Heart Infusion commercial
-    product
-  synonyms:
-  - synonym_text: NaCl
-    synonym_type: EXACT
-  - synonym_text: table salt
-    synonym_type: EXACT
-- preferred_term: Disodium phosphate
-  term:
-    id: CHEBI:34683
-    label: disodium hydrogen phosphate
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Difco/BD Brain Heart Infusion
-    catalog_number: '237500'
-    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial
-    product
-  synonyms:
-  - synonym_text: Na2HPO4
-    synonym_type: EXACT
-  - synonym_text: disodium hydrogen phosphate
-    synonym_type: EXACT
-  - synonym_text: sodium phosphate dibasic
-    synonym_type: EXACT
-- preferred_term: Yeast extract
-  concentration:
-    value: '10'
-    unit: G_PER_L
+    id: TOGO:M1357
+    label: TSBY Medium
+notes: 'Source: https://togomedium.org/medium/M1357
+
+  Original source: JCM - JCM_M1261
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1261
+
+
+  Commercial Product: Brain Heart Infusion
+
+  Supplier: Difco/BD
+
+  Catalog: 237500
+
+  Source: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.
+
+
+  Commercial Product: Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)
+
+  Supplier: Multiple suppliers (BD, Sigma, Neogen)
+
+  Catalog: Multiple (22092 Sigma, 211825 BD)
+
+  Source: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:19.214930Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J1261'
-- timestamp: '2026-03-13T06:19:13.235408Z'
+- timestamp: '2026-01-27T06:35:54.421373Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1357'
+- timestamp: '2026-01-28T19:48:22.470481Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:52.289185Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002427'
-- timestamp: '2026-03-17T19:45:26.326346+00:00'
+  notes: 'Assigned stable identifier: CultureMech:007894'
+- timestamp: '2026-03-17T06:30:13.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:10.741608+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TSBY MEDIUM" to "tsby_medium" for consistent matching
-merge_fingerprint: 51fb20cfe5968bc6776ac7a08180554f3fdc061167c8fe19d8c474e12ccd42d0
+  notes: Normalized name from "TSBY Medium" to "tsby_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:32.652823+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:08.284478+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2179632d2a9b8a6f788e6d9a9facd7e1c9b35771ed45265653a04b86fa1bab4e
+  source: TOGO_M1357_TSBY_Medium.yaml
+merge_fingerprint: 2179632d2a9b8a6f788e6d9a9facd7e1c9b35771ed45265653a04b86fa1bab4e
 merged_from:
-- tsby_medium
+- TOGO_M1357_TSBY_Medium

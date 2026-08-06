@@ -3,6 +3,7 @@ name: yel
 original_name: YEL
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: CCAP Medium C107
@@ -38,6 +39,11 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "YEL" to "yel" for consistent matching
+- timestamp: '2026-08-06T03:06:03.163453+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 1005361ed435a27dd13428ecf051d6701c6d790347a72068f184ffec4e3a9a79
+  source: yel.yaml
 merge_fingerprint: 1005361ed435a27dd13428ecf051d6701c6d790347a72068f184ffec4e3a9a79
 merged_from:
 - yel

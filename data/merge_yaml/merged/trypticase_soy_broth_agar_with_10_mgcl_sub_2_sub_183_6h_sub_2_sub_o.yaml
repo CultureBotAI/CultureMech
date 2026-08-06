@@ -3,6 +3,7 @@ name: trypticase_soy_broth_agar_with_10_mgcl_sub_2_sub_183_6h_sub_2_sub_o
 original_name: TRYPTICASE SOY BROTH AGAR WITH 10%  MgCl<sub>2</sub>&#183;6H<sub>2</sub>O
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
@@ -148,8 +149,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: Agar
   term:
@@ -158,8 +159,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -186,6 +187,17 @@ curation_history:
   notes: Normalized name from "TRYPTICASE SOY BROTH AGAR WITH 10%  MgCl<sub>2</sub>&#183;6H<sub>2</sub>O"
     to "trypticase_soy_broth_agar_with_10_mgcl_sub_2_sub_183_6h_sub_2_sub_o" for consistent
     matching
+- timestamp: '2026-06-05T07:41:54.464335+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:02.039158+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 616acd71e8eca453b98f1d19b3ba2bdb5106dfe12a179b4639e8d7844a3a015c
+  source: trypticase_soy_broth_agar_with_10_mgcl_sub_2_sub_183_6h_sub_2_sub_o.yaml
 merge_fingerprint: 616acd71e8eca453b98f1d19b3ba2bdb5106dfe12a179b4639e8d7844a3a015c
 merged_from:
 - trypticase_soy_broth_agar_with_10_mgcl_sub_2_sub_183_6h_sub_2_sub_o

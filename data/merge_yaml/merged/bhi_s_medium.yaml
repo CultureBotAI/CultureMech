@@ -1,31 +1,79 @@
-id: CultureMech:003146
+id: CultureMech:010250
 name: bhi_s_medium
-original_name: BHI-S MEDIUM
+original_name: BHI-S Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 7.1
-media_term:
-  preferred_term: JCM Medium J801
-  term:
-    id: mediadive.medium:J801
-    label: BHI-S MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=801
-
-
-  Commercial Product: Brain Heart Infusion
-
-  Supplier: Difco/BD
-
-  Catalog: 237500
-
-  Source: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-
-  Accessed: 2026-03-28
-
-
-  Constituent composition researched from product specification.'
 ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl
+  concentration:
+    value: '23'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Simple
+    component, Organic compound'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Na2S・9H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:76209
+    label: ''
+- preferred_term: Sulfur (powder)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:33403
+    label: elemental sulfur
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001072
+    label: Sulfur (powder)
+- preferred_term: PIPES
+  concentration:
+    value: '6.05'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:39033
+    label: PIPES
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39033
+    label: PIPES
 - preferred_term: Calf brains
   term:
     id: UBERON:0000955
@@ -122,84 +170,85 @@ ingredients:
     synonym_type: EXACT
   - synonym_text: sodium phosphate dibasic
     synonym_type: EXACT
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
+- preferred_term: N2
+  notes: 'Properties: Gas'
   concentration:
-    value: '23'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: PIPES
+    value: variable
+    unit: VARIABLE
   term:
-    id: CHEBI:39033
-    label: PIPES
-  concentration:
-    value: '6.05'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000276
-    label: PIPES
-- preferred_term: Sulfur
+    id: CHEBI:17997
+    label: ''
+media_term:
+  preferred_term: TOGO Medium M836
   term:
-    id: CHEBI:26833
-    label: Sulfur
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000927
-    label: Sulfur
-- preferred_term: Resazurin
-  term:
-    id: CHEBI:8806
-    label: Resazurin
-  concentration:
-    value: '0.001'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
-    label: Resazurin
-- preferred_term: Na2S x 9 H2O
-  term:
-    id: CHEBI:76209
-    label: Na2S x 9 H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
-    label: Na2S x 9 H2O
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Mix ingredients except sulfur and Na2S x 9H2O, adjust pH to 7.0 - 7.2
-    and autoclave under N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive
-    days. Neutralize Na2S x 9H2O as a 5% solution and autoclave under a N2 gas atmosphere.
-    Distribute the medium and sulfur into culture vessels under a N2 stream, and seal
-    with butyl rubber stoppers. Prior to inoculation, add the sterile Na2S x 9H2O
-    solution and readjust pH to 7.0 - 7.2, if necessary.
+    id: TOGO:M836
+    label: BHI-S Medium
+notes: 'Source: https://togomedium.org/medium/M836
+
+  Original source: JCM - JCM_M801
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=801
+
+
+  Commercial Product: Brain Heart Infusion
+
+  Supplier: Difco/BD
+
+  Catalog: 237500
+
+  Source: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:17.642411Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J801'
-- timestamp: '2026-03-13T06:19:18.134940Z'
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI,
+    0 de-grounded (mixture or unverifiable).
+- timestamp: '2026-01-27T06:35:55.803235Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M836'
+- timestamp: '2026-01-28T19:48:34.779224Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: N2'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-03-13T06:20:12.424403Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:003146'
-- timestamp: '2026-03-17T06:30:49.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:010250'
+- timestamp: '2026-03-17T06:30:39.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:31.948585+00:00'
+- timestamp: '2026-03-17T19:46:31.367396+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BHI-S MEDIUM" to "bhi_s_medium" for consistent matching
-merge_fingerprint: e71412b83750b90305cc02d5d94742dfbb54bc4f808161fcda2d65f5fe240b3e
+  notes: Normalized name from "BHI-S Medium" to "bhi_s_medium" for consistent matching
+- timestamp: '2026-05-16T09:03:21.275082+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:44.894405+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:19.693255+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint dfb479cb3702bb3d42022f8ae828d074a224b06daa60f7916bd5d441b076ef93
+  source: TOGO_M836_BHI-S_Medium.yaml
+merge_fingerprint: dfb479cb3702bb3d42022f8ae828d074a224b06daa60f7916bd5d441b076ef93
 merged_from:
-- bhi_s_medium
+- TOGO_M836_BHI-S_Medium

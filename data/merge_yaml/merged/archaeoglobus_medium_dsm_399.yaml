@@ -1,8 +1,9 @@
 id: CultureMech:009220
 name: archaeoglobus_medium_dsm_399
 original_name: Archaeoglobus medium (DSM 399)
-category: bacterial
+category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4 . 7H2O
   concentration:
@@ -24,8 +25,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component [Merged 2 duplicates: 3.45, 3.0]'
   term:
-    id: CHEBI:32599
-    label: ''
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: NaCl
   concentration:
     value: '19.0'
@@ -35,9 +36,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2 . 2H2O
   concentration:
     value: '0.24000000000000002'
@@ -56,9 +57,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: K2HPO4
   concentration:
     value: '0.14'
@@ -68,9 +69,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -80,8 +81,8 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: MgCl2 . 6H2O
   concentration:
@@ -110,9 +111,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: NaHCO3
   concentration:
     value: '5'
@@ -122,9 +123,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: Sodium lactate
   concentration:
     value: '1.5'
@@ -134,9 +135,9 @@ ingredients:
   term:
     id: CHEBI:75228
     label: sodium lactate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001047
-    label: Sodium lactate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75228
+    label: sodium lactate
 - preferred_term: Fe(NH4)2(SO4)2 . 7H2O
   concentration:
     value: '2'
@@ -185,9 +186,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: FeSO4 . 7H2O
   concentration:
     value: '0.1'
@@ -224,9 +225,9 @@ ingredients:
   term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
-    label: CuSO4 . 5H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
 - preferred_term: Na2SeO3 . 5H2O
   concentration:
     value: '0.3'
@@ -263,9 +264,9 @@ ingredients:
   term:
     id: CHEBI:44557
     label: nitrilotriacetic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
-    label: Nitrilotriacetic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
 - preferred_term: MnSO4 . 2H2O
   concentration:
     value: '0.5'
@@ -300,11 +301,11 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:55.407619'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     KOH solusion'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:04:59.192793+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -318,9 +319,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009220'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:57.374677'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:41.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -330,6 +331,42 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Archaeoglobus medium (DSM 399)" to "archaeoglobus_medium_dsm_399"
     for consistent matching
+- timestamp: '2026-05-16T09:03:24.735668+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-05-28T06:12:21.603198+00:00'
+  curator: deep-research-edison-phase2
+  action: ENRICHED
+  notes: 'Edison phase-2: Archaeoglobus fulgidus DSM 4304 grows on the parent DSM
+    399 medium; STL medium is a recognizable Archaeoglobus-type variant. [added 1
+    organism(s), 1 variant(s)]'
+- timestamp: '2026-06-05T07:40:49.516501+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 11 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:36.625977+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:46:53.457268+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T00:58:02.538197+00:00'
+  curator: curate_organism_culture_type.py
+  action: SET_ORGANISM_CULTURE_TYPE
+  notes: 'Inferred isolate: 1 specific strain(s) named, no community signal (#142)'
+  changes: Set organism_culture_type=isolate (was unset)
+- timestamp: '2026-08-06T03:04:28.299199+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 6573f7ee767003b08e1e2cfab5785f795bcb68099443f56c7ce260eab16a5dfb
+  source: archaeoglobus_medium_dsm_399.yaml
 solutions:
 - preferred_term: Trace Elements Solution
   term:
@@ -340,6 +377,65 @@ solutions:
     unit: G_PER_L
   notes: See mediadive_6129_Trace_elements_solution.yaml for composition
   name: Unknown solution
-merge_fingerprint: 90112e84a6705d7c83c0bd23275fc945b0ad07fc8472553ecd04f59fc90ed4af
+organism_culture_type: isolate
+target_organisms:
+- preferred_term: Archaeoglobus fulgidus
+  term:
+    id: NCBITaxon:2234
+    label: Archaeoglobus fulgidus
+  strain: DSM 4304
+  evidence:
+  - reference: doi:10.7888/juoeh.29.131
+    supports: SUPPORT
+    explanation: 'Tarui et al. 2007 (J UOEH) explicitly grows the A. fulgidus type
+      strain DSM 4304 in DSM399 Archaeoglobus medium, matching this parent record.
+      Conditions: static anaerobic, N2-CO2 4:1, 83C, 2-3 d. | Identifiers: DSM 4304;
+      ATCC 49558; strain VC-16'
+    snippet: Cells of A. fulgidus DSM4304 (VC-16) were grown statically and anaerobically
+      in 600 ml of DSM399 Archaeoglobus medium in a 1-L bottle with N2-CO2 (4:1) at
+      83C for 2 or 3 days.
+variants:
+- name: stl_medium_archaeoglobus_variant
+  relationship: DERIVED_FROM
+  description: STL (sulfate-thiosulfate-lactate) medium, a recognizable Archaeoglobus-type
+    defined/complex medium used to grow A. fulgidus VC-16, distinct in formulation
+    from the DSM 399 record.
+  modifications:
+  - 'Base built from a 10x salt solution (per L of 10x: NaCl 178 g, MgSO4 74 g, MgCl2.6H2O
+    27.5 g, KCl 3.4 g, NH4Cl 2.5 g; Salt II CaCl2.2H2O 1.4 g; Salt III K2HPO4 1.37
+    g) added at 100 ml/L.'
+  - PIPES buffer 20 ml of 1 M per L; base medium adjusted to pH 6.7 (Hartzell 1999).
+    Reed 2001 variant uses Tris+maleic acid 20 mM each, pH 6.1.
+  - 'Carbon/electron donor: sodium lactate 7 ml of 30% (w/v) per L (Hartzell 1999);
+    DL-sodium lactate ~22 mM (Reed 2001).'
+  - Yeast extract 0.5 g/L (replaceable by Wolfe's vitamin mixture 10 ml/L for defined
+    medium).
+  - 1000x trace element stock (1 ml/L) incl. Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V
+    salts; (NH4)2Fe(SO4)2 1 ml of 0.2% per L.
+  - 'Reductant: Na2S 100 mM + Na2S2O3 200 mM stock added at 0.5% v/v after autoclaving
+    (Hartzell); Na2S/Na2S2O3 ~1 mM each (Reed).'
+  - Resazurin redox indicator; anaerobic, boiled and N2-sparged; good growth 75-82C
+    (Hartzell), 83C in glass carboys (Reed).
+  purpose: Capture the STL Archaeoglobus-type medium recipe used for A. fulgidus biofilm
+    and enzyme studies as a variant of the DSM 399 parent rather than a duplicate
+    medium.
+  evidence:
+  - reference: doi:10.1016/s0076-6879(99)10027-2
+    supports: SUPPORT
+    explanation: Hartzell et al. 1999 (Methods in Enzymology) prints the full STL
+      medium recipe used to maintain A. fulgidus VC-16.
+    snippet: A. fulgidus was grown in STL medium ... 10x salt solution 100 ml/L, PIPES
+      buffer 20 ml of 1 M, trace element stock 1 ml of 1000x, yeast extract 0.5 g/L,
+      sodium lactate 7 ml of 30% per L, pH 6.7; reducing agent Na2S 100 mM / Na2S2O3
+      200 mM added 0.5% v/v; good growth at 75-82C.
+  - reference: doi:10.1128/jb.183.24.7007-7016.2001
+    supports: SUPPORT
+    explanation: Reed et al. 2001 (J Bacteriol) reports a modified STL medium 3 for
+      A. fulgidus, confirming the STL lineage and giving an alternate buffer/reductant
+      variant.
+    snippet: cells were grown anaerobically at 83C in glass carboys ... modified sulfate-thiosulfate-lactate
+      (STL) medium 3 ... 20 mM Tris plus maleic acid, pH 6.1; DL-sodium lactate 22
+      mM; yeast extract 0.5 g/L; Na2S and Na2S2O3 1 mM; resazurin.
+merge_fingerprint: 6573f7ee767003b08e1e2cfab5785f795bcb68099443f56c7ce260eab16a5dfb
 merged_from:
 - archaeoglobus_medium_dsm_399

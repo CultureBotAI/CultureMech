@@ -1,8 +1,9 @@
 id: CultureMech:006427
 name: sulfophobococcus_zilligii_medium
 original_name: SULFOPHOBOCOCCUS ZILLIGII medium
-category: bacterial
+category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.6
 media_term:
@@ -20,8 +21,8 @@ ingredients:
   concentration:
     value: '0.0329897'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
     label: Na2-EDTA
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -30,8 +31,8 @@ ingredients:
   concentration:
     value: '0.0680412'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -40,8 +41,8 @@ ingredients:
   concentration:
     value: '0.0319588'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: KCl
   term:
@@ -50,8 +51,8 @@ ingredients:
   concentration:
     value: '0.0319588'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: ZnCl2
   term:
@@ -60,8 +61,8 @@ ingredients:
   concentration:
     value: '0.0021'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
     label: ZnCl2
 - preferred_term: MnSO4 x H2O
   term:
@@ -70,13 +71,16 @@ ingredients:
   concentration:
     value: '0.0023'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
     label: MnSO4 x H2O
 - preferred_term: Na2B4O7 x 10 H2O
   concentration:
     value: '0.0018'
     unit: G_PER_L
+  term:
+    id: CHEBI:131366
+    label: ''
 - preferred_term: Glycine
   term:
     id: CHEBI:15428
@@ -84,22 +88,25 @@ ingredients:
   concentration:
     value: '1.54639'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000244
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15428
     label: Glycine
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.0005'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
   concentration:
     value: '0.237113'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 - preferred_term: Yeast extract
   concentration:
@@ -116,8 +123,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: H2SO4
   term:
@@ -126,8 +133,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26836
     label: H2SO4
 - preferred_term: Dithiothreitol
   term:
@@ -136,8 +143,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000793
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18320
     label: Dithiothreitol
 applications:
 - Microbial cultivation
@@ -163,13 +170,28 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "SULFOPHOBOCOCCUS ZILLIGII medium" to "sulfophobococcus_zilligii_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:31.706004+00:00'
+- timestamp: '2026-06-05T07:40:26.242358+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 11 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:45.817364+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:23.794376+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_770_SULFOPHOBOCOCCUS_ZILLIGII_medium, sulfophobococcus_zilligii_medium'
+- timestamp: '2026-08-06T03:04:23.794424+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint bcc755ff54416f70505bdf3fd1860fab7134502ddce002cd11aea341fd2ea646
+  source: KOMODO_770_SULFOPHOBOCOCCUS_ZILLIGII_medium.yaml, sulfophobococcus_zilligii_medium.yaml
 categories:
-- bacterial
+- archaea
 merged_from:
 - KOMODO_770_SULFOPHOBOCOCCUS_ZILLIGII_medium
 - sulfophobococcus_zilligii_medium
-merge_fingerprint: c7eb69f8c2090f89e033957d4858aca2000e407f6d2a3d6b640a51f09a994566
+merge_fingerprint: bcc755ff54416f70505bdf3fd1860fab7134502ddce002cd11aea341fd2ea646

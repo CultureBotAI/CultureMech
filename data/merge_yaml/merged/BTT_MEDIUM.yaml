@@ -1,87 +1,105 @@
-id: CultureMech:008699
+id: CultureMech:002349
 name: btt_medium
-original_name: BTT medium
+original_name: BTT MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+ph_value: 5.5
+media_term:
+  preferred_term: JCM Medium J1178
   term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
+    id: mediadive.medium:J1178
+    label: BTT MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1178'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: Glucose
 - preferred_term: Yeast extract
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Glucose
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
-    compound'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
-- preferred_term: Agar (if needed)
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Meat Extract
+- preferred_term: Meat extract
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
 - preferred_term: Casitone
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M2107
+- preferred_term: Agar
   term:
-    id: TOGO:M2107
-    label: BTT medium
-notes: 'Source: https://togomedium.org/medium/M2107
-
-  Original source: NBRC - NBRC_M1430
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1430'
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 5.5.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:59.068941Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: NBRC, ID: M2107'
-- timestamp: '2026-01-28T19:48:22.603579Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:19:59.504757Z'
+- timestamp: '2026-01-26T17:53:18.916610Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1178'
+- timestamp: '2026-03-13T06:19:12.603299Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:008699'
-- timestamp: '2026-03-17T06:30:13.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:002349'
+- timestamp: '2026-03-17T06:30:39.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:18.144461+00:00'
+- timestamp: '2026-03-17T19:45:25.605969+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BTT medium" to "btt_medium" for consistent matching
-merge_fingerprint: 53dcfb9864eaa4a6ed7438be79b6b0279498593e71b604edab4c5676c321d3be
+  notes: Normalized name from "BTT MEDIUM" to "btt_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:16.573365+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:35.238030+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: JCM_J1178_BTT_MEDIUM, KOMODO_1109_BTT_medium, btt_medium'
+- timestamp: '2026-08-06T03:04:35.238073+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 94077f9d01d78a8d4a752eebff3f2c1b237bd3516e66fe1548a546c5278b5af4
+  source: JCM_J1178_BTT_MEDIUM.yaml, KOMODO_1109_BTT_medium.yaml, btt_medium.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:003810
+  name: btt_medium
+  notes: Same ingredient identity signature but concentration signature differs from
+    parent.
+- path: data/normalized_yaml/bacterial/btt_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:000543
+  name: btt_medium
+  notes: Same ingredient identity signature but concentration signature differs from
+    parent.
+categories:
+- bacterial
 merged_from:
-- TOGO_M2107_BTT_medium
+- JCM_J1178_BTT_MEDIUM
+- KOMODO_1109_BTT_medium
+- btt_medium
+merge_fingerprint: 94077f9d01d78a8d4a752eebff3f2c1b237bd3516e66fe1548a546c5278b5af4

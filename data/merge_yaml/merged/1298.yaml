@@ -3,7 +3,8 @@ name: '1298'
 original_name: '1298'
 category: bacterial
 description: 1298. NBRC 1296.
-medium_type: DEFINED
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Peptone
@@ -21,9 +22,7 @@ ingredients:
   notes: Pancreatic digest of gelatin, provides nitrogen and amino acids; Constituent
     of MacConkey Agar commercial product
   synonyms:
-  - synonym_text:
-      synonym_text: pancreatic gelatin digest
-      synonym_type: EXACT
+  - synonym_text: pancreatic gelatin digest
     synonym_type: EXACT
 - preferred_term: Proteose peptone
   term:
@@ -54,9 +53,7 @@ ingredients:
   notes: Fermentable carbohydrate for differentiation. Fermentation produces acid
     causing pH drop and color change; Constituent of MacConkey Agar commercial product
   synonyms:
-  - synonym_text:
-      synonym_text: lactose
-      synonym_type: EXACT
+  - synonym_text: lactose
     synonym_type: EXACT
 - preferred_term: Bile salts
   term:
@@ -155,11 +152,24 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007470'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:45.837543'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Nutrient Broth Powder (Kyokuto*)6gPyruvic
     acid sodium salt1gDistilled water1LAgar (if needed)15gpH 7.0*Kyokuto Pharmaceutical
     Industrial Co., LTD., Code; 551-02480-7'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-05-16T09:03:06.631668+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-05-17T07:06:16.028719+00:00'
+  curator: cleanup_residual_errors.py
+  action: CLEANUP_RESIDUAL_ERRORS
+  notes: R01_flatten_synonym_text=2
+- timestamp: '2026-08-06T03:05:04.631589+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e07afd5834a3f9851f9deeac1cb9b332d21f3ba5e3dce208b54a3d2ac5f03f5a
+  source: NBRC_1298.yaml
 notes: 'Commercial Product: MacConkey Agar
 
   Supplier: Multiple suppliers (BD, Sigma-Aldrich, HiMedia, Thermo)

@@ -3,6 +3,7 @@ name: glucose_minmal_media_zhao
 original_name: '''Glucose minmal media (zhao'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: beta-D-Glucose
@@ -13,10 +14,16 @@ ingredients:
   concentration:
     value: '0.04966'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '48.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.00248'
@@ -31,9 +38,9 @@ ingredients:
   concentration:
     value: '10.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -41,13 +48,16 @@ ingredients:
   concentration:
     value: '3.32e-06'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '22.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -55,8 +65,8 @@ ingredients:
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Cobalt chloride
   concentration:
@@ -72,17 +82,23 @@ ingredients:
   concentration:
     value: '30.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
 - preferred_term: Manganese chloride
   concentration:
     value: '0.00448'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: Cupric chloride
   concentration:
     value: '0.00252'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49553
+    label: ''
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.06165'
@@ -123,10 +139,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'Glucose minmal media (zhao" to "glucose_minmal_media_zhao"
     for consistent matching
-- timestamp: '2026-04-17T06:30:05.092517+00:00'
+- timestamp: '2026-06-05T07:41:06.477364+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:36.250291+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: glucose_m9_medium_peng_zhao, glucose_minmal_media_zhao'
+- timestamp: '2026-08-06T03:05:36.250336+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 9e94d55717910f2e689d70503b44d82b4c183be6d095132fe68cdb7629771192
+  source: glucose_m9_medium_peng_zhao.yaml, glucose_minmal_media_zhao.yaml
 media_term:
   preferred_term: MediaDB Medium 128
   term:
@@ -148,4 +175,4 @@ categories:
 merged_from:
 - glucose_m9_medium_peng_zhao
 - glucose_minmal_media_zhao
-merge_fingerprint: 677bfda529dabd2b486ed6f4f9487bdb9f853669c65e6ce5ce364b4a3f1307fd
+merge_fingerprint: 9e94d55717910f2e689d70503b44d82b4c183be6d095132fe68cdb7629771192

@@ -3,6 +3,7 @@ name: minimal_medium_tang_et_al_2009
 original_name: '''Minimal medium (tang et al 2009'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Magnesium chloride
@@ -12,9 +13,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -22,15 +23,15 @@ ingredients:
   concentration:
     value: '0.0032346'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Sodium sulfate
   concentration:
     value: '1.5'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Sodium sulfate
   term:
     id: CHEBI:32149
@@ -39,6 +40,9 @@ ingredients:
   concentration:
     value: '4.4'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.0017986'
@@ -53,9 +57,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -63,8 +67,8 @@ ingredients:
   concentration:
     value: '28.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Cobalt chloride
   concentration:
@@ -77,14 +81,23 @@ ingredients:
   concentration:
     value: '0.0224145'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: Cupric chloride
   concentration:
     value: '0.000117316'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49553
+    label: ''
 - preferred_term: Sodium selenite
   concentration:
     value: '0.000228102'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:48843
+    label: ''
 - preferred_term: Zinc Chloride
   concentration:
     value: '0.0146718'
@@ -96,10 +109,16 @@ ingredients:
   concentration:
     value: '0.0502992'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:30812
+    label: ''
 - preferred_term: Sodium tungstate
   concentration:
     value: '0.000242527'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63940
+    label: ''
 - preferred_term: Nickel Sulfate
   concentration:
     value: '0.0038044'
@@ -111,8 +130,8 @@ ingredients:
   concentration:
     value: '10.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000276
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39033
     label: PIPES
 - preferred_term: Sodium L-lactate
   term:
@@ -121,8 +140,8 @@ ingredients:
   concentration:
     value: '30.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000540
+  mediaingredientmech_chebi_term:
+    id: CHEBI:232798
     label: Sodium L-lactate
 preparation_steps:
 - step_number: 1
@@ -135,6 +154,11 @@ preparation_steps:
   action: FILTER_STERILIZE
   description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: Absent/obsolete CHEBI term ids fixed - 2 re-grounded to the correct CHEBI,
+    0 de-grounded (mixture or unverifiable).
 - timestamp: '2026-01-27T07:21:44.226667Z'
   curator: mediadb-import
   action: Imported from MediaDB
@@ -157,6 +181,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'Minimal medium (tang et al 2009" to "minimal_medium_tang_et_al_2009"
     for consistent matching
+- timestamp: '2026-06-05T07:41:34.701431+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:46.380688+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 145f5a45f7f58383fd255711649e19482c88faec63f57fee1346f3500190ad73
+  source: minimal_medium_tang_et_al_2009.yaml
 media_term:
   preferred_term: MediaDB Medium 182
   term:
@@ -168,6 +203,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: b22865f11c80bd7149d995201d6fbadce9dbc981d674223b35f4f2e07120cfe8
+merge_fingerprint: 145f5a45f7f58383fd255711649e19482c88faec63f57fee1346f3500190ad73
 merged_from:
 - minimal_medium_tang_et_al_2009

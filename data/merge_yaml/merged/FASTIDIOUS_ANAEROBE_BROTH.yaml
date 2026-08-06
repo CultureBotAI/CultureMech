@@ -3,6 +3,7 @@ name: fastidious_anaerobe_broth
 original_name: FASTIDIOUS ANAEROBE BROTH
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1203a
@@ -36,6 +37,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "FASTIDIOUS ANAEROBE BROTH" to "fastidious_anaerobe_broth"
     for consistent matching
+- timestamp: '2026-08-06T03:05:33.859744+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 36ea57e45693ad1602c2e19ea10a86e6584c2fb38533e453a16a90284db42c16
+  source: fastidious_anaerobe_broth.yaml
 merge_fingerprint: 36ea57e45693ad1602c2e19ea10a86e6584c2fb38533e453a16a90284db42c16
 merged_from:
 - fastidious_anaerobe_broth

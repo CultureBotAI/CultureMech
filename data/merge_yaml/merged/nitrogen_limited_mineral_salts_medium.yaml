@@ -3,6 +3,7 @@ name: nitrogen_limited_mineral_salts_medium
 original_name: Nitrogen-limited mineral salts medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: MgSO4.7H2O
@@ -14,9 +15,9 @@ ingredients:
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4.7H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: KH2PO4
   concentration:
     value: '1.5'
@@ -25,9 +26,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
@@ -38,9 +39,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: Na2HPO4.12H2O
   concentration:
     value: '9'
@@ -86,9 +87,9 @@ ingredients:
   term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
-    label: CuSO4.5H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
 - preferred_term: CaCl2
   concentration:
     value: '7.8'
@@ -98,9 +99,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
-    label: CaCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
 - preferred_term: FeCl3
   concentration:
     value: '9.7'
@@ -110,9 +111,9 @@ ingredients:
   term:
     id: CHEBI:30808
     label: iron trichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000705
-    label: FeCl3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30808
+    label: iron trichloride
 - preferred_term: CrCl3.6H2O
   concentration:
     value: '0.105'
@@ -128,9 +129,9 @@ ingredients:
   term:
     id: CHEBI:28645
     label: beta-D-fructofuranose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000288
-    label: Fructose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28645
+    label: beta-D-fructofuranose
 media_term:
   preferred_term: TOGO Medium M3115
   term:
@@ -161,9 +162,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009587'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:59.429729'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:35.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -173,6 +174,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Nitrogen-limited mineral salts medium" to "nitrogen_limited_mineral_salts_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:04:27.673443+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:39.795414+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:09.593414+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:51.427477+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 4c8c97cf0b1ce80c4e53225bf3db06f29fdeef325e2292f77a2f57e37bb2ad63
+  source: nitrogen_limited_mineral_salts_medium.yaml
 solutions:
 - preferred_term: Fructose solution
   composition: []

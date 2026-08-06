@@ -1,0 +1,221 @@
+id: CultureMech:006159
+name: lactobacillus_medium_iii
+original_name: LACTOBACILLUS medium III
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_value: 6.3
+media_term:
+  preferred_term: KOMODO Medium 638
+  term:
+    id: komodo.medium:638
+    label: LACTOBACILLUS medium III
+notes: 'Source: KOMODO ModelSEED | ID: 638 | DSMZ Medium: 638 (mediadive.medium:638)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '7'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: Glucose
+- preferred_term: Fructose
+  term:
+    id: CHEBI:28757
+    label: Fructose
+  concentration:
+    value: '7'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28757
+    label: Fructose
+- preferred_term: Maltose
+  term:
+    id: CHEBI:17306
+    label: Maltose
+  concentration:
+    value: '7'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17306
+    label: Maltose
+- preferred_term: Na-gluconate
+  term:
+    id: CHEBI:84997
+    label: sodium gluconate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:84997
+    label: Na-gluconate
+- preferred_term: Na-acetate x 3 H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32138
+    label: ''
+- preferred_term: (NH4)2 citrate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63076
+    label: ''
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63076
+    label: (NH4)2 citrate
+- preferred_term: K2HPO4 x 3 H2O
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  concentration:
+    value: '2.6'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: K2HPO4 x 3 H2O
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: MnSO4 x 4 H2O
+  term:
+    id: CHEBI:86358
+    label: MnSO4 x 4 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86358
+    label: MnSO4 x 4 H2O
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53426
+    label: Tween 80
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 638'
+- timestamp: '2026-02-03T11:19:03.956237'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 638
+- timestamp: '2026-03-13T06:19:38.679679Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006159'
+- timestamp: '2026-03-17T06:30:07.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:55.642986+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "LACTOBACILLUS medium III" to "lactobacillus_medium_iii"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:25.129149+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:45.442530+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:56.535771+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_638_LACTOBACILLUS_medium_III, lactobacillus_medium_iii,
+    medium_638_modified_for_dsm_17896, medium_638_modified_for_dsm_22696'
+- timestamp: '2026-08-06T03:04:56.535822+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 4 source recipe(s) on fingerprint 99c3c68ae1252a78754d7c21a5b191da39477240143245b6799b0fe634ac204b
+  source: KOMODO_638_LACTOBACILLUS_medium_III.yaml, lactobacillus_medium_iii.yaml,
+    medium_638_modified_for_dsm_17896.yaml, medium_638_modified_for_dsm_22696.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_638_modified_for_dsm_17896.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006157
+  name: medium_638_modified_for_dsm_17896
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_638_modified_for_dsm_22696.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006158
+  name: medium_638_modified_for_dsm_22696
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/lactobacillus_medium_iii.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001771
+  name: lactobacillus_medium_iii
+  notes: KOMODO record states DSMZ Medium 638 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
+synonyms:
+- name: medium_638_modified_for_dsm_17896
+  source: KOMODO
+  source_id: komodo.medium:638_17896
+  original_category: bacterial
+- name: medium_638_modified_for_dsm_22696
+  source: KOMODO
+  source_id: komodo.medium:638_22696
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- KOMODO_638_LACTOBACILLUS_medium_III
+- lactobacillus_medium_iii
+- medium_638_modified_for_dsm_17896
+- medium_638_modified_for_dsm_22696
+merge_fingerprint: 99c3c68ae1252a78754d7c21a5b191da39477240143245b6799b0fe634ac204b

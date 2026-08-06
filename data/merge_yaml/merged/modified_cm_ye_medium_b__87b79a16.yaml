@@ -1,0 +1,201 @@
+id: CultureMech:009242
+name: modified_cm_ye_medium_b
+original_name: Modified CM+YE Medium (B)
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '101.0'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound [Merged 2 duplicates: 1.0, 100.0]'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: NaCl
+  concentration:
+    value: '150'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: KCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Trisodium citrate・2H2O
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
+    label: Trisodium citrate・2H2O
+  term:
+    id: CHEBI:53258
+    label: ''
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Casamino acids, vitamin assay (BD-Difco)
+  concentration:
+    value: '7.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: FeSO4・7H2O
+  concentration:
+    value: '4.98'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:75836
+    label: ''
+media_term:
+  preferred_term: TOGO Medium M268
+  term:
+    id: TOGO:M268
+    label: Modified CM+YE Medium (B)
+notes: 'Source: https://togomedium.org/medium/M268
+
+  Original source: JCM - JCM_M275
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=275'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.734196Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M268'
+- timestamp: '2026-01-28T19:48:30.100130Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:50.008163+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:21.198436Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:04.614032Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009242'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:30:29.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:23.361617+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified CM+YE Medium (B)" to "modified_cm_ye_medium_b"
+    for consistent matching
+- timestamp: '2026-05-16T09:03:15.218226+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:38.501134+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:28.064117+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-08-06T03:05:05.535305+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M107_Modified_CM_YE_Medium_A, TOGO_M268_Modified_CM_YE_Medium_B,
+    TOGO_M51_CM_YE_Medium'
+- timestamp: '2026-08-06T03:05:05.535351+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 87b79a16fffd6a54c238558dc1b272db0ebe2f2205833cf9566a9ddf0a45e1d1
+  source: TOGO_M107_Modified_CM_YE_Medium_A.yaml, TOGO_M268_Modified_CM_YE_Medium_B.yaml,
+    TOGO_M51_CM_YE_Medium.yaml
+solutions:
+- preferred_term: Fe(2+) solution (see below)
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M51_CM_YE_Medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:009911
+  name: cm_ye_medium
+  notes: Both records are TOGO/JCM CM+YE solid agar formulations; modified medium
+    B is a lower MgSO4/NaCl variant of the same base recipe.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Modified CM+YE Medium B decreases MgSO4 from 20 g/L to 10 g/L and NaCl from 200
+  g/L to 100 g/L while other parsed ingredients remain unchanged.
+synonyms:
+- name: modified_cm_ye_medium_a
+  source: TOGO
+  source_id: TOGO:M107
+  original_category: bacterial
+- name: cm_ye_medium
+  source: TOGO
+  source_id: TOGO:M51
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- TOGO_M107_Modified_CM_YE_Medium_A
+- TOGO_M268_Modified_CM_YE_Medium_B
+- TOGO_M51_CM_YE_Medium
+merge_fingerprint: 87b79a16fffd6a54c238558dc1b272db0ebe2f2205833cf9566a9ddf0a45e1d1

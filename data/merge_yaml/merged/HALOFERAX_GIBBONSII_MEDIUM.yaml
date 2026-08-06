@@ -1,8 +1,9 @@
 id: CultureMech:001221
 name: haloferax_gibbonsii_medium
 original_name: HALOFERAX GIBBONSII MEDIUM
-category: bacterial
+category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
@@ -30,8 +31,8 @@ ingredients:
     value: '2000.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 1000.0, 1000.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Tap water
 - preferred_term: Agar
   term:
@@ -41,8 +42,8 @@ ingredients:
     value: '40.0'
     unit: G_PER_L
   notes: ' (for solid medium) [Merged 2 duplicates: 20.0, 20.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: NaCl
   term:
@@ -51,8 +52,8 @@ ingredients:
   concentration:
     value: '240'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: KCl
   term:
@@ -61,8 +62,8 @@ ingredients:
   concentration:
     value: '7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -71,8 +72,8 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -81,8 +82,8 @@ ingredients:
   concentration:
     value: '35'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaCl2
   term:
@@ -91,8 +92,8 @@ ingredients:
   concentration:
     value: '0.5549'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
     label: CaCl2
 preparation_steps:
 - step_number: 1
@@ -133,6 +134,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HALOFERAX GIBBONSII MEDIUM" to "haloferax_gibbonsii_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:41:07.776235+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:28.764034+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b951362597cbf1bfc49ba259bedae011169f4abda496154d49a9212a650ea906
+  source: haloferax_gibbonsii_medium.yaml
 high_metal: true
 merge_fingerprint: b951362597cbf1bfc49ba259bedae011169f4abda496154d49a9212a650ea906
 merged_from:

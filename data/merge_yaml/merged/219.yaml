@@ -4,6 +4,7 @@ original_name: '219'
 category: bacterial
 description: 219. NBRC 214.
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Skim milk100gDistilled water1L
@@ -39,9 +40,18 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007478'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:45.860814'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Skim milk100gDistilled water1L'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-05-16T09:03:06.659775+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:05:04.648369+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 6ececfc21ab8a8f4ff941c4f32ed07897b50d8dfdd938113b23dad258240d87a
+  source: NBRC_219.yaml
 merge_fingerprint: 6ececfc21ab8a8f4ff941c4f32ed07897b50d8dfdd938113b23dad258240d87a
 merged_from:
 - NBRC_219

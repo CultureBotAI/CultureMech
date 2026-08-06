@@ -3,6 +3,7 @@ name: medium_for_dsm_14457_and_14458
 original_name: MEDIUM FOR DSM 14457 AND 14458
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:
@@ -16,22 +17,22 @@ ingredients:
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -40,8 +41,8 @@ ingredients:
   concentration:
     value: '0.125'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: NaCl
   term:
@@ -50,8 +51,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -60,8 +61,8 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: Methanol
   term:
@@ -71,8 +72,8 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: ' (alternative)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000618
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17790
     label: Methanol
 - preferred_term: Methylamine
   term:
@@ -82,8 +83,8 @@ ingredients:
     value: '3'
     unit: G_PER_L
   notes: ' (alternative)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000553
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16830
     label: Methylamine
 applications:
 - Microbial cultivation
@@ -109,11 +110,38 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MEDIUM FOR DSM 14457 AND 14458" to "medium_for_dsm_14457_and_14458"
     for consistent matching
-- timestamp: '2026-04-17T06:29:35.419210+00:00'
+- timestamp: '2026-06-05T07:40:28.155306+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:46.512927+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:02.781154+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458, medium_for_dsm_14457_and_14458,
     medium_for_dsm_14457_and_14458_replace_methanol_with_methylamine'
+- timestamp: '2026-08-06T03:05:02.781185+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint ea4ec34b2f7f3a32bfbeb6efab62d9024b343ea27840b06118c95eb8574500c3
+  source: KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml, medium_for_dsm_14457_and_14458.yaml,
+    medium_for_dsm_14457_and_14458_replace_methanol_with_methylamine.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002134
+  name: medium_for_dsm_14457_and_14458
+  notes: KOMODO record states DSMZ Medium 956 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 synonyms:
 - name: medium_for_dsm_14457_and_14458_replace_methanol_with_methylamine
   source: KOMODO

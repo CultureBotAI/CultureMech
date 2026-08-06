@@ -1,6 +1,7 @@
 id: CultureMech:015727
 name: RCH2 defined YE 10mM Nitrate
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Ammonium chloride
@@ -172,8 +173,8 @@ ingredients:
     value: '0.1'
     unit: MG_PER_L
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Wolfe''s vitamin
     mix'
 - preferred_term: 4-Aminobenzoic acid
@@ -273,7 +274,7 @@ ingredients:
     84.99'
 description: Defined minimal media for soil and groundwater bacteria with lactate
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: RCH2 defined YE 10mM Nitrate
@@ -287,8 +288,27 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015727'
+- timestamp: '2026-05-16T09:04:43.178156+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:53.966012+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:47:15.742860+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:08.140821+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 5e6d44b98a53135705e60ec64e67a3016b5063642a390a383b402e6df4ed9ae1
+  source: rch2_defined_ye_10mm_nitrate.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: 0a28dd059dd123a5a778be1d2273e0c545e11ff5181745c702fce71dc5be2153
+merge_fingerprint: 5e6d44b98a53135705e60ec64e67a3016b5063642a390a383b402e6df4ed9ae1
 merged_from:
 - rch2_defined_ye_10mm_nitrate

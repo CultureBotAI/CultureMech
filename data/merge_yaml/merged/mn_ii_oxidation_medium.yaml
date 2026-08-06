@@ -3,6 +3,7 @@ name: mn_ii_oxidation_medium
 original_name: Mn(II) oxidation medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -74,6 +75,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Mn(II) oxidation medium" to "mn_ii_oxidation_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:41:35.840559+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:47.594408+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint db7c69bad93c72bc6d006091202d50a6d19d898661e8464a14a3d9342cd8fe35
+  source: mn_ii_oxidation_medium.yaml
 merge_fingerprint: db7c69bad93c72bc6d006091202d50a6d19d898661e8464a14a3d9342cd8fe35
 merged_from:
 - mn_ii_oxidation_medium

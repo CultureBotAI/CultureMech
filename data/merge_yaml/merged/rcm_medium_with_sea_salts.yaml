@@ -3,6 +3,7 @@ name: rcm_medium_with_sea_salts
 original_name: RCM MEDIUM (with Sea Salts)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.8
 media_term:
@@ -24,6 +25,9 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -49,6 +53,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "RCM MEDIUM (with Sea Salts)" to "rcm_medium_with_sea_salts"
     for consistent matching
-merge_fingerprint: 018e1e2d32a2ca9705dd5f332ae815b2ee112426fcf16ef4477210d06664cebd
+- timestamp: '2026-08-06T03:05:54.374160+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 5cb1b5ffabae0afc0896e254f87b819d950df385c8dc194c0eb6e2ddda9a2a03
+  source: rcm_medium_with_sea_salts.yaml
+merge_fingerprint: 5cb1b5ffabae0afc0896e254f87b819d950df385c8dc194c0eb6e2ddda9a2a03
 merged_from:
 - rcm_medium_with_sea_salts

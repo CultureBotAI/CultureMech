@@ -1,6 +1,7 @@
 id: CultureMech:015473
 name: TSB_K3
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 'Casein peptone '
@@ -54,7 +55,7 @@ ingredients:
     label: ''
 description: Tryptic Soy Broth
 notes: 'Source: FEBA media definitions'
-category: BACTERIAL
+category: bacterial
 sources:
 - database: CultureBotHT
   database_id: TSB_K3
@@ -68,6 +69,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015473'
+- timestamp: '2026-05-16T09:04:38.217566+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:02.149711+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint f3ca85bb714cc00118cac796c98472de4a900ebb48091489d145b9bb18eaa493
+  source: tsb_k3.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: f3ca85bb714cc00118cac796c98472de4a900ebb48091489d145b9bb18eaa493

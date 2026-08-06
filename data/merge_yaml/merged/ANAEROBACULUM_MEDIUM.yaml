@@ -1,149 +1,184 @@
-id: CultureMech:007872
+id: CultureMech:002409
 name: anaerobaculum_medium
-original_name: Anaerobaculum Medium
+original_name: ANAEROBACULUM MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '960'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J1242
   term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
+    id: mediadive.medium:J1242
+    label: ANAEROBACULUM MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242'
+ingredients:
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '4.87329'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '4.87329'
+    unit: G_PER_L
 - preferred_term: Yeast extract
   concentration:
-    value: '10'
+    value: '9.74659'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
 - preferred_term: NaCl
-  concentration:
-    value: '8'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
   term:
     id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+    label: NaCl
+  concentration:
+    value: '9.797270000000001'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 7.79727, 2.0]'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Resazurin
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic
-    compound, Defined component'
   term:
     id: CHEBI:8806
     label: Resazurin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  concentration:
+    value: '0.000487329'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
-- preferred_term: Trypticase peptone
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Peptone
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: N2
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
+- preferred_term: L-Cysteine HCl x H2O
   term:
-    id: CHEBI:17997
-    label: ''
-media_term:
-  preferred_term: TOGO Medium M1336
-  term:
-    id: TOGO:M1336
-    label: Anaerobaculum Medium
-notes: 'Source: https://togomedium.org/medium/M1336
-
-  Original source: JCM - JCM_M1242
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242'
-applications:
-- Microbial cultivation
-curation_history:
-- timestamp: '2026-01-27T06:35:54.375444Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M1336'
-- timestamp: '2026-01-28T19:48:22.518997Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:47.230447'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: N2; Added default concentration
-    for ingredient: N2'
-- timestamp: '2026-03-09T08:04:37.573195+00:00'
-  curator: solution-migrator-v1.0
-  action: Migrated solutions from ingredients to solutions array
-  notes: Moved 4 solution(s) from ingredients
-- timestamp: '2026-03-13T03:09:07.262694Z'
-  curator: data-quality-cleanup-v1.0
-  action: Data quality fixes
-  notes: Merged 1 duplicate ingredient(s)
-- timestamp: '2026-03-13T06:19:52.097168Z'
-  curator: culturemech-id-assigner-v1.0
-  action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:007872'
-- curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:48.279120'
-  action: Applied schema defaults and normalizations
-  notes: Added default solution name; Added default solution name; Added default solution
-    name; Added default solution name
-- timestamp: '2026-03-17T06:30:13.000000Z'
-  curator: mediaingredientmech-enrichment-v1.0
-  action: Added MediaIngredientMech links
-  notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:10.545838+00:00'
-  curator: normalize_media_names_to_snake_case.py
-  action: NAME_NORMALIZED
-  notes: Normalized name from "Anaerobaculum Medium" to "anaerobaculum_medium" for
-    consistent matching
-solutions:
-- preferred_term: Salt solution (see Medium [M695])
-  composition: []
-  notes: Cross-reference to Medium M695
-  concentration:
-    value: '40'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: 5% L-Cysteine・HCl・H2O solution
-  composition: []
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Solution, Organic compound'
-  name: Unknown solution
-- preferred_term: 1 M Glucose solution
-  composition: []
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
   concentration:
     value: '6'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
-  name: Unknown solution
-- preferred_term: 1 M Na2S2O3 solution
-  composition: []
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: Glucose
+- preferred_term: Na2S2O3
+  term:
+    id: CHEBI:132112
+    label: sodium thiosulfate
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
-  name: Unknown solution
-merge_fingerprint: b7d7697f883320aaf6f36c60cfc333cbd8c89f367be5feaa0b588f172ea7088b
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000321
+    label: Na2S2O3
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: K2HPO4
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: NaHCO3
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: 'Mix components thoroughly, bring to a boil and cool down under a stream
+    of N2. While gassing, add the following solutions and adjust pH to 7.0:'
+- step_number: 2
+  action: AUTOCLAVE
+  description: 'Distribute the medium into culture vessels (e.g., 10 ml in Balch type
+    tubes) under N2, seal with butyl rubber stoppers and autoclave. After cooling,
+    add per liter the following solutions (autoclaved and stored under a N2 atmosphere):'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.139846Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1242'
+- timestamp: '2026-03-13T03:09:16.231698Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:13.060179Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002409'
+- timestamp: '2026-03-17T06:30:23.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:26.126021+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ANAEROBACULUM MEDIUM" to "anaerobaculum_medium" for
+    consistent matching
+- timestamp: '2026-06-05T07:40:16.664063+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:37:34.067926+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:46:42.778389+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:35.347839+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint cc875d30f7f737ae4e4c31493a2db7d02e5bf69e98dcf231f9cbaf00123df1b4
+  source: JCM_J1242_ANAEROBACULUM_MEDIUM.yaml
+merge_fingerprint: cc875d30f7f737ae4e4c31493a2db7d02e5bf69e98dcf231f9cbaf00123df1b4
 merged_from:
-- TOGO_M1336_Anaerobaculum_Medium
+- JCM_J1242_ANAEROBACULUM_MEDIUM

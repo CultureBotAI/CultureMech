@@ -3,6 +3,7 @@ name: liquid_mm_with_rhamnose_hodgson_et_al
 original_name: Liquid mm with rhamnose; hodgson et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: L-Asparagine
@@ -13,8 +14,8 @@ ingredients:
     value: '3.78444'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:asn-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000282
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17196
     label: L-Asparagine
 - preferred_term: L-Rhamnose
   term:
@@ -24,8 +25,8 @@ ingredients:
     value: '10.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:rmn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000997
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62345
     label: L-Rhamnose
 - preferred_term: Ethylene glycol
   term:
@@ -34,8 +35,8 @@ ingredients:
   concentration:
     value: '0.134257'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000374
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30742
     label: Ethylene glycol
 - preferred_term: Potassium hydroxide
   concentration:
@@ -48,6 +49,9 @@ ingredients:
   concentration:
     value: '2.87026'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -55,13 +59,16 @@ ingredients:
   concentration:
     value: '0.811458'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.0359648'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -91,6 +98,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Liquid mm with rhamnose; hodgson et al" to "liquid_mm_with_rhamnose_hodgson_et_al"
     for consistent matching
+- timestamp: '2026-06-05T07:41:11.371319+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:40.495181+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint af5755484d73f44573a42e6fa5b98637c544246f0850ae13df9c6aebc122b1da
+  source: liquid_mm_with_rhamnose_hodgson_et_al.yaml
 media_term:
   preferred_term: MediaDB Medium 269
   term:
@@ -102,6 +120,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: cbf04b062df0f7929a718895f6fb354defbadeb91bfd692dc0e2c8da2025190e
+merge_fingerprint: af5755484d73f44573a42e6fa5b98637c544246f0850ae13df9c6aebc122b1da
 merged_from:
 - liquid_mm_with_rhamnose_hodgson_et_al

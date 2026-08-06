@@ -1,6 +1,7 @@
 id: CultureMech:015579
 name: McCas MOPS
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: KCl
@@ -88,6 +89,9 @@ ingredients:
     value: '0.005'
     unit: G_PER_L
   notes: From Mc_trace_minerals
+  term:
+    id: CHEBI:86356
+    label: ''
 - preferred_term: cobalt chloride
   concentration:
     value: '0.001'
@@ -112,7 +116,7 @@ ingredients:
   term:
     id: CHEBI:31440
     label: ''
-- preferred_term: AlK(SO4)2 12H2O
+- preferred_term: AlK(SO4)2 x 12 H2O
   concentration:
     value: '0.0001'
     unit: G_PER_L
@@ -251,6 +255,9 @@ ingredients:
     value: '0.001'
     unit: G_PER_L
   notes: 'CAS: 62758-13-8; MW: 251.17'
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: 'sodium acetate '
   concentration:
     value: '0.84'
@@ -263,9 +270,6 @@ ingredients:
   concentration:
     value: '2.00'
     unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
 - preferred_term: dithiothreitol
   concentration:
@@ -303,7 +307,7 @@ ingredients:
 description: Used for growing Methanococcus maripaludis with hydrogen as the electron
   donor, reduced (2.5 g/L bicarb + 200mM MOPS)
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: McCas MOPS
@@ -317,8 +321,27 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015579'
+- timestamp: '2026-05-16T09:04:41.498358+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:52.892380+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:47:15.421038+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:06.111172+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 18f5a7b406cc23e8b3973374ece98b81fff8fd06099a23c5f340698592f679c0
+  source: mccas_mops.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: 4893ae3542221e5fb67fec35d4f9bfec60163ab46925d4fb328a6eed6ff47763
+merge_fingerprint: 18f5a7b406cc23e8b3973374ece98b81fff8fd06099a23c5f340698592f679c0
 merged_from:
 - mccas_mops

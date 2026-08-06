@@ -3,6 +3,7 @@ name: hathewaya_medium
 original_name: HATHEWAYA MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:
@@ -152,18 +153,18 @@ ingredients:
   concentration:
     value: '9'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '1.92'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -172,13 +173,16 @@ ingredients:
   concentration:
     value: '0.08'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.0005'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -205,10 +209,32 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HATHEWAYA MEDIUM" to "hathewaya_medium" for consistent
     matching
-- timestamp: '2026-04-17T06:29:58.402509+00:00'
+- timestamp: '2026-06-05T07:41:08.317960+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:59.705984+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:28.144257+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: clostridium_histolyticum_medium, hathewaya_medium'
+- timestamp: '2026-08-06T03:05:28.144327+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 7f553020320113c4f62fa2aff147d1c66d0470b7bf0e83af4913c4cffc21dad4
+  source: clostridium_histolyticum_medium.yaml, hathewaya_medium.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/clostridium_histolyticum_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004116
+  name: clostridium_histolyticum_medium
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 synonyms:
 - name: clostridium_histolyticum_medium
   source: KOMODO
@@ -219,4 +245,4 @@ categories:
 merged_from:
 - clostridium_histolyticum_medium
 - hathewaya_medium
-merge_fingerprint: 5929010e29fe3d1333ce80d2c43c9730e07e1c73336d9becbd9eccad09d666a7
+merge_fingerprint: 7f553020320113c4f62fa2aff147d1c66d0470b7bf0e83af4913c4cffc21dad4

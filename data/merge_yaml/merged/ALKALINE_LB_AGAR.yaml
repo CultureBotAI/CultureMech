@@ -1,81 +1,117 @@
-id: CultureMech:002905
+id: CultureMech:009956
 name: alkaline_lb_agar
-original_name: ALKALINE LB AGAR
+original_name: Alkaline LB Agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_value: 8.5
-media_term:
-  preferred_term: JCM Medium J557
-  term:
-    id: mediadive.medium:J557
-    label: ALKALINE LB AGAR
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=557'
 ingredients:
-- preferred_term: Tryptone
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Na2CO3
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Tryptone (BD-Difco)
   concentration:
     value: '10'
     unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: NaCl
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M561
   term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: Na2CO3
-  term:
-    id: CHEBI:29377
-    label: Na2CO3
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
-    label: Na2CO3
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Separately sterilize Na2CO3 by filtration and aseptically add to the
-    medium. Check final pH to be about 8.5.
+    id: TOGO:M561
+    label: Alkaline LB Agar
+notes: 'Source: https://togomedium.org/medium/M561
+
+  Original source: JCM - JCM_M557
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=557'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:16.927915Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J557'
-- timestamp: '2026-03-13T06:19:16.471126Z'
+- timestamp: '2026-01-27T06:35:55.305287Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M561'
+- timestamp: '2026-01-28T19:48:29.621782Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:10.280232Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002905'
-- timestamp: '2026-03-17T06:30:55.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:009956'
+- timestamp: '2026-03-17T06:30:28.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:30.026957+00:00'
+- timestamp: '2026-03-17T19:46:29.210579+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ALKALINE LB AGAR" to "alkaline_lb_agar" for consistent
+  notes: Normalized name from "Alkaline LB Agar" to "alkaline_lb_agar" for consistent
     matching
-kg_microbe_match: mediadive.medium:1480
-merge_fingerprint: b6acb1cd1c7ab5eb43edf4c4a5c258a1d67a1dd18027c6a6b241fa48656f7f9b
+- timestamp: '2026-06-05T07:40:42.554011+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:51.011523+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:17.349209+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint fdd5427726ad9a3e00c5189b3a7ea3943ac36d03620aed50aca6f5874f84b257
+  source: TOGO_M561_Alkaline_LB_Agar.yaml
+merge_fingerprint: fdd5427726ad9a3e00c5189b3a7ea3943ac36d03620aed50aca6f5874f84b257
 merged_from:
-- alkaline_lb_agar
+- TOGO_M561_Alkaline_LB_Agar

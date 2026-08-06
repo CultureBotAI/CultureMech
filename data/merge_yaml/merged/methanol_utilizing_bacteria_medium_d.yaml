@@ -3,6 +3,7 @@ name: methanol_utilizing_bacteria_medium_d
 original_name: METHANOL-UTILIZING BACTERIA MEDIUM D
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 9.0
 media_term:
@@ -36,6 +37,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "METHANOL-UTILIZING BACTERIA MEDIUM D" to "methanol_utilizing_bacteria_medium_d"
     for consistent matching
+- timestamp: '2026-08-06T03:05:44.569871+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 3bec0e2a5d7c3f5653e193d5cc12a7f6c1d1e72b5a6c853a5ecf491586803631
+  source: methanol_utilizing_bacteria_medium_d.yaml
 merge_fingerprint: 3bec0e2a5d7c3f5653e193d5cc12a7f6c1d1e72b5a6c853a5ecf491586803631
 merged_from:
 - methanol_utilizing_bacteria_medium_d

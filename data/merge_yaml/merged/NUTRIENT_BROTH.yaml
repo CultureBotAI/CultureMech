@@ -1,58 +1,51 @@
-id: CultureMech:015471
-name: nutrient broth
+id: CultureMech:009000
+name: nutrient_broth
+original_name: Nutrient Broth
+category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: Bacto Peptone
+- preferred_term: DI Water
   concentration:
-    value: '15'
+    value: '1000'
     unit: G_PER_L
-  term:
-    id: MICRO:0000178
-    label: Peptone
-  notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 51142-18-8'
-- preferred_term: Yeast Extract
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Nutrient Broth (BD cat 234000)
   concentration:
-    value: '3'
+    value: '8'
     unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M2418
   term:
-    id: FOODON:03315426
-    label: Yeast extract
-  notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 232-387-9'
-- preferred_term: D-Glucose
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 50-99-7; MW: 180.16'
-- preferred_term: Sodium Chloride
-  concentration:
-    value: '6'
-    unit: G_PER_L
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7647-14-5; MW: 58.44'
-description: Nutrient broth medium
-notes: 'Source: FEBA media definitions'
-category: BACTERIAL
-sources:
-- database: CultureBotHT
-  database_id: nutrient broth
-  url: https://github.com/CultureBotAI/CultureBotHT
+    id: TOGO:M2418
+    label: Nutrient Broth
+notes: 'Source: https://togomedium.org/medium/M2418
+
+  Original URL: https://www.atcc.org/~/media/E6FA2163B72E4DCD880719A2612F2C92.ashx'
+applications:
+- Microbial cultivation
 curation_history:
-- timestamp: '2026-03-18T04:31:15.467479+00:00'
-  curator: import_from_culturebotht.py
-  action: IMPORTED
-  notes: 'Imported from CultureBotHT repository: nutrient_broth.yaml'
-- timestamp: '2026-03-18T04:33:58.487706Z'
+- timestamp: '2026-01-27T06:35:56.486543Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2418'
+- timestamp: '2026-03-13T06:20:01.904866Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:015471'
-data_quality_flags: []
-kg_microbe_match: mediadive.medium:681
-merge_fingerprint: 3e8602c516ac05955e64653f6a4eb00363ad95448cb2a3f18419b886ddf499c1
+  notes: 'Assigned stable identifier: CultureMech:009000'
+- timestamp: '2026-03-17T19:46:20.654294+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Nutrient Broth" to "nutrient_broth" for consistent
+    matching
+- timestamp: '2026-08-06T03:05:11.739926+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 4c51ca6350b7e79caacb1d11c5f23da5e3d429408cccbe12ba85475b4014dae2
+  source: TOGO_M2418_Nutrient_Broth.yaml
+merge_fingerprint: 4c51ca6350b7e79caacb1d11c5f23da5e3d429408cccbe12ba85475b4014dae2
 merged_from:
-- nutrient_broth
+- TOGO_M2418_Nutrient_Broth

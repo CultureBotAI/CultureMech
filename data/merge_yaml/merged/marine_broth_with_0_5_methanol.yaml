@@ -3,6 +3,7 @@ name: marine_broth_with_0_5_methanol
 original_name: Marine Broth with 0.5% Methanol
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Agar  (if needed)
   concentration:
@@ -57,9 +58,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008300'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:50.828088'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:09.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -69,11 +70,27 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Marine Broth with 0.5% Methanol" to "marine_broth_with_0_5_methanol"
     for consistent matching
-- timestamp: '2026-04-17T06:29:10.231896+00:00'
+- timestamp: '2026-05-16T09:03:40.232255+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:12.874339+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:33.431842+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: 1_10_marine_broth_agar, 1_2_marine_broth_agar, 1_5_marine_agar_broth,
     marine_broth_with_0_5_methanol'
+- timestamp: '2026-08-06T03:04:33.431887+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 4 source recipe(s) on fingerprint d5e67ebc3e43b20a2b5e584dc015360bd917a820d54848056a706b25e97739dd
+  source: 1_10_marine_broth_agar.yaml, 1_2_marine_broth_agar.yaml, 1_5_marine_agar_broth.yaml,
+    marine_broth_with_0_5_methanol.yaml
 solutions:
 - preferred_term: Methanol*
   composition: []

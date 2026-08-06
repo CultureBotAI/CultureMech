@@ -3,6 +3,7 @@ name: medium_with_met_asp_gly_arg_fang_et_al
 original_name: Medium with Met, Asp, Gly, Arg; Fang et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Glycine
@@ -13,8 +14,8 @@ ingredients:
     value: '5.32836'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gly'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000244
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15428
     label: Glycine
 - preferred_term: L-Aspartate
   concentration:
@@ -29,8 +30,8 @@ ingredients:
     value: '2.68078'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:met-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000274
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16643
     label: L-Methionine
 - preferred_term: Glycerol
   term:
@@ -40,8 +41,8 @@ ingredients:
     value: '27.147'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glyc'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: Starch
   term:
@@ -50,8 +51,8 @@ ingredients:
   concentration:
     value: '154.32'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
     label: Starch
 - preferred_term: Arginine
   term:
@@ -60,23 +61,29 @@ ingredients:
   concentration:
     value: '5.7405'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000341
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29016
     label: Arginine
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.0090106'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '34.443'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Sodium sulfate
   concentration:
     value: '1.408'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Sodium sulfate
   term:
     id: CHEBI:32149
@@ -85,6 +92,9 @@ ingredients:
   concentration:
     value: '14.6965'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -92,8 +102,8 @@ ingredients:
   concentration:
     value: '0.16229'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
@@ -102,9 +112,9 @@ ingredients:
   concentration:
     value: '0.008965'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -112,13 +122,16 @@ ingredients:
   concentration:
     value: '18.6947'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.0071929'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Ammonium nitrate
   term:
     id: CHEBI:63038
@@ -126,8 +139,8 @@ ingredients:
   concentration:
     value: '2.49837'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000287
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63038
     label: Ammonium nitrate
 preparation_steps:
 - step_number: 1
@@ -158,6 +171,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Medium with Met, Asp, Gly, Arg; Fang et al" to "medium_with_met_asp_gly_arg_fang_et_al"
     for consistent matching
+- timestamp: '2026-06-05T07:41:30.380288+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:44.386524+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b4c4df84c023709d4a6c90e4150aa8f2b5ac4c43807ec98983bf876dcdb4376c
+  source: medium_with_met_asp_gly_arg_fang_et_al.yaml
 media_term:
   preferred_term: MediaDB Medium 204
   term:
@@ -169,6 +193,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: e6becda5f355c200420f4e83e5b728fbb4c6e40fbf7f1829a7f0bb5a77b57c26
+merge_fingerprint: b4c4df84c023709d4a6c90e4150aa8f2b5ac4c43807ec98983bf876dcdb4376c
 merged_from:
 - medium_with_met_asp_gly_arg_fang_et_al

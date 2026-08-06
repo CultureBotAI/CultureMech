@@ -3,6 +3,7 @@ name: half_strength_nutrient_broth_or_agar
 original_name: HALF STRENGTH NUTRIENT BROTH OR AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 672
@@ -36,10 +37,26 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HALF STRENGTH NUTRIENT BROTH OR AGAR" to "half_strength_nutrient_broth_or_agar"
     for consistent matching
-- timestamp: '2026-04-17T06:29:30.401014+00:00'
+- timestamp: '2026-08-06T03:04:57.185105+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_672_HALF_STRENGTH_NUTRIENT_BROTH_OR_AGAR, half_strength_nutrient_broth_or_agar'
+- timestamp: '2026-08-06T03:04:57.185142+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 3fdce731329412401c36c127b601e6966c35291dbbae4d81dd85cc1a94e600b7
+  source: KOMODO_672_HALF_STRENGTH_NUTRIENT_BROTH_OR_AGAR.yaml, half_strength_nutrient_broth_or_agar.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/half_strength_nutrient_broth_or_agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001813
+  name: half_strength_nutrient_broth_or_agar
+  notes: KOMODO record states DSMZ Medium 672 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 categories:
 - bacterial
 merged_from:

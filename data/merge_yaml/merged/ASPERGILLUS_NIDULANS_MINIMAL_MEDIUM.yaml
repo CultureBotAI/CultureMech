@@ -1,16 +1,18 @@
-id: CultureMech:001303
+id: CultureMech:004322
 name: aspergillus_nidulans_minimal_medium
 original_name: ASPERGILLUS NIDULANS MINIMAL MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ph_value: 6.5
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 204 | DSMZ Medium: 204 (mediadive.medium:204)
+  | Aerobic: No'
 media_term:
-  preferred_term: DSMZ Medium 204
+  preferred_term: KOMODO Medium 204
   term:
-    id: mediadive.medium:204
+    id: komodo.medium:204
     label: ASPERGILLUS NIDULANS MINIMAL MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf'
 ingredients:
 - preferred_term: NaNO3
   term:
@@ -25,12 +27,12 @@ ingredients:
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '3.04'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: KCl
   term:
@@ -39,8 +41,8 @@ ingredients:
   concentration:
     value: '3.04'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -49,8 +51,8 @@ ingredients:
   concentration:
     value: '2.08'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -59,8 +61,8 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -69,8 +71,8 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: Agar
   term:
@@ -79,8 +81,8 @@ ingredients:
   concentration:
     value: '60'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Glucose
   term:
@@ -89,41 +91,76 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Autoclave separately for 15 min. Mix A, B and C before pouring plates.
-- step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH to 6.5 with 2 N NaOH.
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  notes: pH adjustment (extracted from notes)
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:10.497692Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 204'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 204'
+- timestamp: '2026-02-03T11:18:54.553901'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 204
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:21.468248'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: FeSO4 x 7 H2O; Added default
     concentration for ingredient: ZnSO4 x 7 H2O'
-- timestamp: '2026-03-13T06:19:03.042851Z'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-03-13T03:08:38.268255Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Added pH buffer: NaOH'
+- timestamp: '2026-03-13T06:19:26.582308Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:001303'
-- timestamp: '2026-03-17T06:30:19.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:004322'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:29:39.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:14.924471+00:00'
+- timestamp: '2026-03-17T19:45:41.690802+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "ASPERGILLUS NIDULANS MINIMAL MEDIUM" to "aspergillus_nidulans_minimal_medium"
     for consistent matching
-merge_fingerprint: 03842db3f3a48e0bb03c192229e67b7925934c6d5f651fc57924cdf04b72ea86
+- timestamp: '2026-05-16T09:03:01.680146+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:21.599234+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:44.355711+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:44.828806+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d05a4ec15cde2dd914b1e9dbd3c8237f98e995b801daacca441bf74cc6a2e246
+  source: KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml
+merge_fingerprint: d05a4ec15cde2dd914b1e9dbd3c8237f98e995b801daacca441bf74cc6a2e246
 merged_from:
-- aspergillus_nidulans_minimal_medium
+- KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM

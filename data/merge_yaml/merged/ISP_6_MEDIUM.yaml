@@ -3,6 +3,7 @@ name: isp_6_medium
 original_name: ISP 6 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
@@ -27,8 +28,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000541
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31604
     label: Ferric ammonium citrate
 - preferred_term: Dipotassium Phosphate
   term:
@@ -37,8 +38,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: Dipotassium Phosphate
 - preferred_term: Sodium Thiosulfate
   term:
@@ -47,8 +48,8 @@ ingredients:
   concentration:
     value: '0.08'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000669
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132112
     label: Sodium Thiosulfate
 - preferred_term: Yeast extract
   concentration:
@@ -61,8 +62,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -87,6 +88,17 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "ISP 6 MEDIUM" to "isp_6_medium" for consistent matching
+- timestamp: '2026-06-05T07:41:09.692632+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:38.817453+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d23d8755b14a7c42129f9f06346ad17e0f994fd2078297e9a31ee8d897e9a9aa
+  source: isp_6_medium.yaml
 merge_fingerprint: d23d8755b14a7c42129f9f06346ad17e0f994fd2078297e9a31ee8d897e9a9aa
 merged_from:
 - isp_6_medium

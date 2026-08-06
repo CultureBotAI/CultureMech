@@ -1,132 +1,111 @@
-id: CultureMech:001535
+id: CultureMech:008860
 name: chocolate_agar
-original_name: CHOCOLATE AGAR
+original_name: Chocolate agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-media_term:
-  preferred_term: DSMZ Medium 429b
-  term:
-    id: mediadive.medium:429b
-    label: CHOCOLATE AGAR
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium429b.pdf
-
-
-  Commercial Product: Brain Heart Infusion
-
-  Supplier: Difco/BD
-
-  Catalog: 237500
-
-  Source: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-
-  Accessed: 2026-03-28
-
-
-  Constituent composition researched from product specification.'
 ingredients:
-- preferred_term: Columbia agar base
+- preferred_term: Distilled water
   concentration:
-    value: '1000'
+    value: '1'
     unit: G_PER_L
-- preferred_term: Horse blood
-  concentration:
-    value: '100'
-    unit: G_PER_L
-- preferred_term: Peptone
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Hemin
   concentration:
     value: '5'
     unit: G_PER_L
-- preferred_term: Meat extract
-  concentration:
-    value: '3'
-    unit: G_PER_L
-- preferred_term: Agar
+  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple
+    component'
   term:
-    id: CHEBI:2509
-    label: Agar
+    id: CHEBI:50385
+    label: hemin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
+    label: hemin
+- preferred_term: Menadione
   concentration:
-    value: '30.0'
+    value: '0.2'
     unit: G_PER_L
-  notes: ' (for solid medium) [Merged 2 duplicates: 15.0, 15.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
-- preferred_term: Casein peptone
-  concentration:
-    value: '15'
-    unit: G_PER_L
-- preferred_term: Soy peptone
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: NaCl
+  notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Simple component'
   term:
-    id: CHEBI:26710
-    label: NaCl
+    id: CHEBI:28869
+    label: Menadione
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28869
+    label: Menadione
+- preferred_term: Sheep blood
   concentration:
-    value: '5'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: Calf brains
+    value: '10'
+    unit: PERCENT_W_V
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Pancreatic digest of casein
   term:
-    id: UBERON:0000955
-    label: brain
+    id: MICRO:0000182
+    label: tryptone
   concentration:
-    value: variable
-    unit: VARIABLE
-  supplier_catalog:
-    supplier_name: Difco/BD Brain Heart Infusion
-    catalog_number: '237500'
-    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: infusion from 200 g/L; Tissue infusion - source material is calf brain tissue;
-    Constituent of Brain Heart Infusion commercial product
-- preferred_term: Beef heart
-  term:
-    id: UBERON:0000948
-    label: heart
-  concentration:
-    value: variable
-    unit: VARIABLE
-  supplier_catalog:
-    supplier_name: Difco/BD Brain Heart Infusion
-    catalog_number: '237500'
-    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: infusion from 250 g/L; Tissue infusion - source material is beef/ox heart
-    tissue; Constituent of Brain Heart Infusion commercial product
-- preferred_term: Proteose peptone
-  term:
-    id: MICRO:0000180
-    label: proteose peptone
-  concentration:
-    value: '10.0'
+    value: '17.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Difco/BD Brain Heart Infusion
-    catalog_number: '237500'
-    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Enzymatic digest of animal protein providing amino acids and peptides; Constituent
-    of Brain Heart Infusion commercial product
-- preferred_term: Dextrose
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
+    catalog_number: Multiple (22092 Sigma, 211825 BD)
+    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+  notes: Pancreatic enzymatic digest of casein providing amino acids and peptides;
+    Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
+  synonyms:
+  - synonym_text: tryptone
+    synonym_type: EXACT
+  - synonym_text: casein peptone
+    synonym_type: EXACT
+  - synonym_text: Bacto Tryptone
+    synonym_type: EXACT
+- preferred_term: Peptic digest of soybean meal
+  term:
+    id: FOODON:03315720
+    label: soy peptone
+  concentration:
+    value: '3.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
+    catalog_number: Multiple (22092 Sigma, 211825 BD)
+    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+  notes: Peptic digest of soybean meal providing additional peptides and carbohydrates;
+    Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
+  synonyms:
+  - synonym_text: soytone
+    synonym_type: EXACT
+  - synonym_text: soy peptone
+    synonym_type: EXACT
+  - synonym_text: Bacto Soytone
+    synonym_type: EXACT
+- preferred_term: Glucose
   term:
     id: CHEBI:17234
     label: D-glucose
   concentration:
-    value: '2.0'
+    value: '2.5'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Difco/BD Brain Heart Infusion
-    catalog_number: '237500'
-    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Carbon/energy source; Constituent of Brain Heart Infusion commercial product
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
+    catalog_number: Multiple (22092 Sigma, 211825 BD)
+    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+  notes: Carbon/energy source; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy
+    Agar (TSA) commercial product
   synonyms:
-  - synonym_text: glucose
+  - synonym_text: dextrose
     synonym_type: EXACT
   - synonym_text: D-glucose
-    synonym_type: EXACT
-  - synonym_text: dextrose
     synonym_type: EXACT
 - preferred_term: Sodium chloride
   term:
@@ -136,77 +115,123 @@ ingredients:
     value: '5.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Difco/BD Brain Heart Infusion
-    catalog_number: '237500'
-    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Maintains osmotic equilibrium; Constituent of Brain Heart Infusion commercial
-    product
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
+    catalog_number: Multiple (22092 Sigma, 211825 BD)
+    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+  notes: Maintains osmotic equilibrium; Constituent of Tryptic Soy Broth (TSB) / Tryptic
+    Soy Agar (TSA) commercial product
   synonyms:
   - synonym_text: NaCl
     synonym_type: EXACT
   - synonym_text: table salt
     synonym_type: EXACT
-- preferred_term: Disodium phosphate
+- preferred_term: Dipotassium phosphate
   term:
-    id: CHEBI:34683
-    label: disodium hydrogen phosphate
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '2.5'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Difco/BD Brain Heart Infusion
-    catalog_number: '237500'
-    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial
-    product
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
+    catalog_number: Multiple (22092 Sigma, 211825 BD)
+    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+  notes: pH buffer; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)
+    commercial product
   synonyms:
-  - synonym_text: Na2HPO4
+  - synonym_text: K2HPO4
     synonym_type: EXACT
-  - synonym_text: disodium hydrogen phosphate
+  - synonym_text: potassium phosphate dibasic
     synonym_type: EXACT
-  - synonym_text: sodium phosphate dibasic
+  - synonym_text: dipotassium hydrogen phosphate
     synonym_type: EXACT
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Mix autoclaved Columbia agar base solution with 10% horse or sheep
-    blood, keep at 80°C for 10 min. Mix well and pour plates after cooling to 50°C.
-    Rehydrate pellets of freeze-dried ampoules in liquid medium 220, 215 or 1.
-- step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH to 7.0.
-- step_number: 3
-  action: MIX
-  description: For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended
-    for sporulation.
-- step_number: 4
-  action: ADJUST_PH
-  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid
-    CM 131).
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
+    catalog_number: Multiple (22092 Sigma, 211825 BD)
+    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+  notes: Solidifying agent (for TSA only, not in TSB); Constituent of Tryptic Soy
+    Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
+- preferred_term: CO2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
+media_term:
+  preferred_term: TOGO Medium M2274
+  term:
+    id: TOGO:M2274
+    label: Chocolate agar
+notes: 'Source: https://togomedium.org/medium/M2274
+
+
+  Commercial Product: Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)
+
+  Supplier: Multiple suppliers (BD, Sigma, Neogen)
+
+  Catalog: Multiple (22092 Sigma, 211825 BD)
+
+  Source: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:11.108644Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 429b'
-- timestamp: '2026-03-13T03:09:05.284871Z'
-  curator: data-quality-cleanup-v1.0
-  action: Data quality fixes
-  notes: Merged 1 duplicate ingredient(s)
-- timestamp: '2026-03-13T06:19:05.023215Z'
+- timestamp: '2026-01-27T06:35:56.253760Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2274'
+- timestamp: '2026-01-28T19:48:14.141469Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: CO2'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-03-13T06:20:00.808561Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:001535'
-- timestamp: '2026-03-17T06:30:11.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:008860'
+- timestamp: '2026-03-17T06:29:55.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:17.107193+00:00'
+- timestamp: '2026-03-17T19:46:19.494636+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CHOCOLATE AGAR" to "chocolate_agar" for consistent
+  notes: Normalized name from "Chocolate agar" to "chocolate_agar" for consistent
     matching
-merge_fingerprint: 3b7e698b4577aa12a4898e44984bb79a81159ac7356e8b63e77c5c072fc06d6a
+- timestamp: '2026-05-16T09:03:12.731353+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:35.909528+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:10.840956+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 1637869dd8f5603e091c62995f400a7eb921608c157bdf40bda0b8bd102dae9e
+  source: TOGO_M2274_Chocolate_agar.yaml
+merge_fingerprint: 1637869dd8f5603e091c62995f400a7eb921608c157bdf40bda0b8bd102dae9e
 merged_from:
-- chocolate_agar
+- TOGO_M2274_Chocolate_agar

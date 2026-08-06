@@ -3,6 +3,7 @@ name: bacillus_thermoglucosidasius_medium
 original_name: BACILLUS THERMOGLUCOSIDASIUS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
@@ -20,8 +21,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
     label: Starch
 - preferred_term: Peptone
   concentration:
@@ -38,12 +39,12 @@ ingredients:
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Agar
   term:
@@ -52,8 +53,8 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -79,10 +80,37 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "BACILLUS THERMOGLUCOSIDASIUS medium" to "bacillus_thermoglucosidasius_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:21.652312+00:00'
+- timestamp: '2026-06-05T07:40:22.315173+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:44.554708+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:46.865101+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_305_BACILLUS_THERMOGLUCOSIDASIUS_medium, bacillus_thermoglucosidasius_medium'
+- timestamp: '2026-08-06T03:04:46.865139+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 292ea32e36b057dc40840bf5010e1c988d5f82d4946591d96ca46304c3e1f281
+  source: KOMODO_305_BACILLUS_THERMOGLUCOSIDASIUS_medium.yaml, bacillus_thermoglucosidasius_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/bacillus_thermoglucosidasius_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001404
+  name: bacillus_thermoglucosidasius_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 305; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 305; local ingredient
+  and concentration signatures match.
 categories:
 - bacterial
 merged_from:

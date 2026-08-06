@@ -1,6 +1,7 @@
 id: CultureMech:015688
 name: R2A_.1x
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Peptone
@@ -15,9 +16,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
   notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 65072-00-6'
 - preferred_term: Yeast Extract
   concentration:
@@ -69,7 +67,7 @@ ingredients:
   notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 113-24-6; MW: 110.04'
 description: 10x diluted Reasoner's 2A media
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: R2A_.1x
@@ -83,19 +81,46 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015688'
-- timestamp: '2026-04-17T06:30:31.244509+00:00'
+- timestamp: '2026-05-16T09:04:42.764715+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:53.583497+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:06:07.643393+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: r2a, r2a_1x'
+- timestamp: '2026-08-06T03:06:07.643431+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 24c01524656c70a8046615aac7f7f7d8ca0b1255a4b6a7b340e270b4eb12b1b8
+  source: r2a.yaml, r2a_1x.yaml
 data_quality_flags: []
+parent_media:
+  path: data/normalized_yaml/specialized/r2a.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:015687
+  name: R2A
+  notes: Both specialized records are liquid R2A formulations; the child is explicitly
+    labeled R2A .1x and all parsed components are ten-fold lower.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- R2A .1x decreases all parsed R2A components ten-fold, including peptone, casamino
+  acids, yeast extract, glucose, starch, phosphate, magnesium sulfate, and sodium
+  pyruvate.
 original_name: R2A_.1x
 synonyms:
 - name: R2A
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 categories:
-- SPECIALIZED
+- specialized
 merged_from:
 - r2a
 - r2a_1x
-merge_fingerprint: 323e96fde5545f52a472ae2a1de5fd016b08dbe4c2bd5095f7ed404de94291e9
+merge_fingerprint: 24c01524656c70a8046615aac7f7f7d8ca0b1255a4b6a7b340e270b4eb12b1b8

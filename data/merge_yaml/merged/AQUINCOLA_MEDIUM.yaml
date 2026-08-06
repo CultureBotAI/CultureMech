@@ -3,6 +3,7 @@ name: aquincola_medium
 original_name: AQUINCOLA medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
@@ -28,8 +29,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000288
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28757
     label: Fructose
 - preferred_term: Agar
   term:
@@ -39,8 +40,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -66,10 +67,33 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "AQUINCOLA medium" to "aquincola_medium" for consistent
     matching
-- timestamp: '2026-04-17T06:29:16.373138+00:00'
+- timestamp: '2026-06-05T07:40:19.593191+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:40.966125+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_1178_AQUINCOLA_medium, aquincola_medium'
+- timestamp: '2026-08-06T03:04:40.966159+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint c4cb6ca1c35f3ec63732661feaac979c4ddd7f92b6de21d767fdc390c4599f4a
+  source: KOMODO_1178_AQUINCOLA_medium.yaml, aquincola_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/aquincola_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000620
+  name: aquincola_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 1178; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 1178; local ingredient
+  and concentration signatures match.
 categories:
 - bacterial
 merged_from:

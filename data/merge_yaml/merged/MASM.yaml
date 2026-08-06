@@ -1,257 +1,169 @@
-id: CultureMech:000357
+id: CultureMech:000082
 name: masm
-original_name: MASM
-category: bacterial
+category: algae
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 8.0
-media_term:
-  preferred_term: CCAP Medium C47
-  term:
-    id: mediadive.medium:C47
-    label: MASM
-notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_MASM.pdf'
+description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater
+  algae cultivation. Recipe available in PDF format.
+notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_MASM.pdf
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
+applications:
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
+curation_history:
+- curator: ccap-import
+  action: Imported from CCAP Culture Collection
+  notes: 'Source ID: MASM, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_MASM.pdf'
+  timestamp: '2026-01-28T00:00:00+00:00'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-02-03T11:26:43.525336'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:18:53.112093Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000082'
+- timestamp: '2026-03-17T19:45:04.066986+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MASM" to "masm" for consistent matching
+- timestamp: '2026-04-04T20:18:55.022063'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 8 curated ingredients from CCAP
+  source: CCAP Medium MR_MASM.pdf
+- timestamp: '2026-05-16T08:57:02.478421+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(3 entries)
+- timestamp: '2026-05-16T09:02:56.676551+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
+    category->lowercase=1
+- timestamp: '2026-08-06T03:04:20.064190+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 678d73323228f7b39f530661f594619f61f831d9642601cb3d2f2b97538d3d59
+  source: masm.yaml
+references:
+- reference: CCAP:MASM
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_MASM.pdf
 ingredients:
-- preferred_term: Tris
-  term:
-    id: CHEBI:9754
-    label: Tris
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000880
-    label: Tris
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: KCl
-  term:
-    id: CHEBI:32588
-    label: KCl
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
-- preferred_term: NaNO3
-  term:
-    id: CHEBI:63005
-    label: NaNO3
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000171
-    label: NaNO3
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-  concentration:
-    value: '23.4'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
-- preferred_term: NH4Cl
-  term:
-    id: CHEBI:31206
-    label: NH4Cl
-  concentration:
-    value: '1.5274'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
-- preferred_term: Na2-EDTA
+- preferred_term: Na EDTA
   term:
     id: CHEBI:64734
-    label: Na2-EDTA
+    label: Na EDTA
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T20:18:55.022039'
+    ontology_source: CHEBI
   concentration:
     value: '0.75'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
-    label: Na2-EDTA
+  source: CCAP Medium MR_MASM.pdf
+  notes: From CCAP Medium MR_MASM.pdf; Curated from CCAP Medium MR_MASM.pdf specification
 - preferred_term: FeCl3 x 6 H2O
   term:
     id: CHEBI:86254
     label: FeCl3 x 6 H2O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 0.95
+    curation_date: '2026-04-04T20:18:55.022050'
+    ontology_source: CHEBI
   concentration:
     value: '0.097'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000218
-    label: FeCl3 x 6 H2O
+  source: CCAP Medium MR_MASM.pdf
+  notes: From CCAP Medium MR_MASM.pdf; Curated from CCAP Medium MR_MASM.pdf specification
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
     label: MnCl2 x 4 H2O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T20:18:55.022052'
+    ontology_source: CHEBI
   concentration:
     value: '0.041'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
-    label: MnCl2 x 4 H2O
+  source: CCAP Medium MR_MASM.pdf
+  notes: From CCAP Medium MR_MASM.pdf; Curated from CCAP Medium MR_MASM.pdf specification
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
     label: ZnCl2
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T20:18:55.022054'
+    ontology_source: CHEBI
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
-    label: ZnCl2
+  source: CCAP Medium MR_MASM.pdf
+  notes: From CCAP Medium MR_MASM.pdf; Curated from CCAP Medium MR_MASM.pdf specification
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
     label: CoCl2 x 6 H2O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T20:18:55.022056'
+    ontology_source: CHEBI
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
-    label: CoCl2 x 6 H2O
-- preferred_term: Na2 MoO4 x 2 H2O
+  source: CCAP Medium MR_MASM.pdf
+  notes: From CCAP Medium MR_MASM.pdf; Curated from CCAP Medium MR_MASM.pdf specification
+- preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
-    label: Na2 MoO4 x 2 H2O
+    label: Na2MoO4 x 2 H2O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T20:18:55.022057'
+    ontology_source: CHEBI
   concentration:
     value: '0.004'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
-    label: Na2 MoO4 x 2 H2O
-- preferred_term: Thiamine hydrochloride
-  term:
-    id: CHEBI:49105
-    label: Thiamine hydrochloride
+  source: CCAP Medium MR_MASM.pdf
+  notes: From CCAP Medium MR_MASM.pdf; Curated from CCAP Medium MR_MASM.pdf specification
+- preferred_term: Tris
+  notes: Ontology mapping not yet available; From CCAP Medium MR_MASM.pdf; Curated
+    from CCAP Medium MR_MASM.pdf specification
   concentration:
-    value: '1.2'
+    value: '1.0'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
-    label: Thiamine hydrochloride
-- preferred_term: Cyanocobalamine
+  source: CCAP Medium MR_MASM.pdf
+  term:
+    id: CHEBI:9754
+    label: ''
+- preferred_term: Make up to 1 litre with deionised water and adjust to pH 8.0 with
+  notes: Ontology mapping not yet available; From CCAP Medium MR_MASM.pdf; Curated
+    from CCAP Medium MR_MASM.pdf specification
   concentration:
     value: '1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001039
-    label: Cyanocobalamine
-- preferred_term: Soil
-  concentration:
-    value: variable
-    unit: VARIABLE
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: "Make up to 1 litre with distilled water and adjust to pH 8.0 with\
-    \ 1M NaOH or 1M HCl.\r\nAutoclave at 15 psi for 15 minutes."
-- step_number: 2
-  action: MIX
-  description: For brackish organisms, take 15 g of NaCl instead of 30 g (BW/MASM).
-- step_number: 3
-  action: MIX
-  description: 'Ensure elements are added in the following sequence:'
-- step_number: 4
-  action: AUTOCLAVE
-  description: Once elements are dissolved autoclave at 15 psi for 15 minutes.
-- step_number: 5
-  action: FILTER_STERILIZE
-  description: Filter sterile
-- step_number: 6
-  action: FILTER_STERILIZE
-  description: Take 1 ml of this solution and add 99 ml Deionised water. Filter sterile.
-- step_number: 7
-  action: MIX
-  description: "Site selection for a good soil is very important and for most purposes\
-    \ a soil from undisturbed\r\ndeciduous woodland is best. Sites to avoid are those\
-    \ showing obvious signs of man's activity\r\nand particular care should be taken\
-    \ to avoid areas where fertilizers, crop sprays or other toxic\r\nchemicals may\
-    \ have been used."
-- step_number: 8
-  action: HEAT
-  description: "A rich loam with good crumb structure should be sought. Stones, roots\
-    \ and larger\r\ninvertebrates should be removed during an initial sieving through\
-    \ a 1 cm mesh. The sieved\r\nsoil should be spread to air dry and handpicked for\
-    \ smaller invertebrates and roots. It should\r\nbe turned periodically and picked\
-    \ over again. When dry sieve through a finer mesh (2-4 mm)\r\nand store in an\
-    \ airtight container away from light and heat."
-- step_number: 9
-  action: AUTOCLAVE
-  description: "Soil is prepared as above. Air-dried soil and twice its volume of\
-    \ supernatant distilled water\r\nare autoclaved together at 15 psi for 2 hours\
-    \ and left to cool. The supernatant is then\r\ndecanted and then distributed to\
-    \ containers in volumes suitable for making up batches of\r\nmedia. The aliquots\
-    \ and their containers are autoclaved for an appropriate length of time\r\n(e.g.\
-    \ 1 litre or less for 15 minutes) and are then kept in a cool place (e.g. a refrigerator)\
-    \ until\r\nrequired."
-applications:
-- Microbial cultivation
-curation_history:
-- timestamp: '2026-01-26T17:53:19.635246Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: CCAP, ID: C47'
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:17.080303'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Soil'
-- timestamp: '2026-03-13T06:18:54.724467Z'
-  curator: culturemech-id-assigner-v1.0
-  action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000357'
-- timestamp: '2026-03-17T06:29:43.000000Z'
-  curator: mediaingredientmech-enrichment-v1.0
-  action: Added MediaIngredientMech links
-  notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:05.726246+00:00'
-  curator: normalize_media_names_to_snake_case.py
-  action: NAME_NORMALIZED
-  notes: Normalized name from "MASM" to "masm" for consistent matching
-- timestamp: '2026-04-17T06:29:56.765881+00:00'
-  curator: recipe-merger
-  action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: bw_masm, masm'
-synonyms:
-- name: bw_masm
-  source: MediaDive
-  source_id: mediadive.medium:C19
-  original_category: bacterial
-categories:
-- bacterial
+    unit: MOLAR
+  source: CCAP Medium MR_MASM.pdf
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- curation_method:automated_expert_mapping
+original_name: MASM
+merge_fingerprint: 678d73323228f7b39f530661f594619f61f831d9642601cb3d2f2b97538d3d59
 merged_from:
-- bw_masm
 - masm
-merge_fingerprint: 0373165d8ed3bc13611b6b54773da47db167b045650688254f1c8a967f86bf4e

@@ -3,6 +3,7 @@ name: yeast_extract_malt_extract_agar_isp_medium_no_2_ph_9_0
 original_name: Yeast Extract-Malt Extract Agar (ISP Medium No. 2, pH 9.0)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +32,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Dextrose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Agar
   concentration:
     value: '20'
@@ -42,9 +43,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Malt extract
   concentration:
     value: '10'
@@ -85,12 +86,25 @@ curation_history:
   notes: Normalized name from "Yeast Extract-Malt Extract Agar (ISP Medium No. 2,
     pH 9.0)" to "yeast_extract_malt_extract_agar_isp_medium_no_2_ph_9_0" for consistent
     matching
-- timestamp: '2026-04-17T06:30:07.355633+00:00'
+- timestamp: '2026-06-05T07:41:55.706702+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:38.841045+00:00'
   curator: recipe-merger
   action: Merged 5 duplicate recipes into canonical record
   notes: 'Sources: isp_medium_no_2_ph5_5, yeast_extract_malt_extract_agar_isp_medium_no_2,
     yeast_extract_malt_extract_agar_isp_medium_no_2_ph_5_0, yeast_extract_malt_extract_agar_isp_medium_no_2_ph_5_5,
     yeast_extract_malt_extract_agar_isp_medium_no_2_ph_9_0'
+- timestamp: '2026-08-06T03:05:38.841095+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 5 source recipe(s) on fingerprint a2f8d32d7d7069ca5bdaeae9735dc332e3071c0c9c354df70e0fa6f8baa9a1d1
+  source: isp_medium_no_2_ph5_5.yaml, yeast_extract_malt_extract_agar_isp_medium_no_2.yaml,
+    yeast_extract_malt_extract_agar_isp_medium_no_2_ph_5_0.yaml, yeast_extract_malt_extract_agar_isp_medium_no_2_ph_5_5.yaml,
+    yeast_extract_malt_extract_agar_isp_medium_no_2_ph_9_0.yaml
 synonyms:
 - name: isp_medium_no_2_ph5_5
   source: TOGO

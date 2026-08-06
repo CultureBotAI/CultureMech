@@ -1,6 +1,7 @@
 id: CultureMech:015737
 name: SCFM
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: MOPS
@@ -347,6 +348,9 @@ ingredients:
     value: '1.0000000000000002e-06'
     unit: G_PER_L
   notes: 'CAS: 10125-13-0; MW: 170.48; From Sulfur-free DL minerals'
+  term:
+    id: CHEBI:86318
+    label: ''
 - preferred_term: Boric Acid
   concentration:
     value: '1.0000000000000002e-06'
@@ -404,8 +408,8 @@ ingredients:
     value: '0.001'
     unit: MG_PER_L
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: Pyridoxine HCl
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-56-0; MW: 205.64;
     From DL vitamins'
 - preferred_term: Riboflavin
@@ -468,7 +472,7 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From DL vitamins'
 description: Lung Simulating Media for cultivation of lung pathogens and commensals
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: SCFM
@@ -482,8 +486,28 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015737'
+- timestamp: '2026-05-16T09:04:43.306537+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:54.082692+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (shared-id regrounding audit, G21/G22/G24)
+  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more
+    ingredient groundings on this record that had been collapsed onto a chemically
+    non-specific or shared CHEBI id were re-grounded to the correct chemically-specific
+    term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
+- timestamp: '2026-06-10T07:47:15.765512+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:08.289352+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2bd719050bb341f87d2acb476ca7b26767d8b31b1c7feb399af8b8f43c726e3b
+  source: scfm.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: 639a456075112cdc7ee34b8ff18a383567b9ad82791a19bf29e31bf27636a018
+merge_fingerprint: 2bd719050bb341f87d2acb476ca7b26767d8b31b1c7feb399af8b8f43c726e3b
 merged_from:
 - scfm

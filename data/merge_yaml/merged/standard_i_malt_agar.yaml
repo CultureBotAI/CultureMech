@@ -3,6 +3,7 @@ name: standard_i_malt_agar
 original_name: STANDARD I + MALT AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
@@ -28,8 +29,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001099
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
     label: CaCO3
 - preferred_term: Agar
   term:
@@ -38,8 +39,8 @@ ingredients:
   concentration:
     value: '12'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -65,10 +66,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "STANDARD I + MALT AGAR" to "standard_i_malt_agar" for
     consistent matching
-- timestamp: '2026-04-17T06:30:22.675089+00:00'
+- timestamp: '2026-06-05T07:41:46.926109+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:56.574939+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: standard_i_malt_agar, standard_i_malt_agar'
+- timestamp: '2026-08-06T03:05:56.574989+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 26398fafbf71e5f39d2ff2b9822d70ec8a1159b9aa63ec2f282e715766441632
+  source: standard_i_malt_agar.yaml, standard_i_malt_agar.yaml
 kg_microbe_match: mediadive.medium:310
 categories:
 - bacterial

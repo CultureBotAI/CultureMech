@@ -1,209 +1,251 @@
-id: CultureMech:000352
+id: CultureMech:000076
 name: k_medium
-original_name: K Medium
-category: bacterial
-medium_type: DEFINED
+category: algae
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 8.0
-media_term:
-  preferred_term: CCAP Medium C42
-  term:
-    id: mediadive.medium:C42
-    label: K Medium
-notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_K.pdf'
+description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater
+  algae cultivation. Recipe available in PDF format.
+notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_K.pdf
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
+applications:
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
+curation_history:
+- curator: ccap-import
+  action: Imported from CCAP Culture Collection
+  notes: 'Source ID: K, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_K.pdf'
+  timestamp: '2026-01-28T00:00:00+00:00'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-02-03T11:26:43.513671'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:18:53.095931Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000076'
+- timestamp: '2026-03-17T19:45:04.050209+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "K Medium" to "k_medium" for consistent matching
+- timestamp: '2026-04-04T12:54:54.987164'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 14 curated ingredients from CCAP
+  source: CCAP Medium MR_K.pdf
+- timestamp: '2026-05-16T08:57:02.433094+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(3 entries)
+- timestamp: '2026-05-16T09:02:56.631147+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
+    category->lowercase=1
+- timestamp: '2026-08-06T03:04:19.958258+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 6543f53e508666d3807e0fc29e9e5793cf8a7a064e4902032af216f0a3aa6687
+  source: k_medium.yaml
+references:
+- reference: CCAP:K
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_K.pdf
 ingredients:
-- preferred_term: NaNO3
-  term:
-    id: CHEBI:63005
-    label: NaNO3
+- preferred_term: First, add to 50 ml of deionised water and pH to 7.2 with
+  notes: Ontology mapping not yet available; From CCAP Medium MR_K.pdf; Curated from
+    CCAP Medium MR_K.pdf specification
   concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000171
-    label: NaNO3
-- preferred_term: (NH4)Cl
-  term:
-    id: CHEBI:31206
-    label: (NH4)Cl
-  concentration:
-    value: '1.5274'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: (NH4)Cl
-- preferred_term: Sodium beta-glycerophosphate
-  term:
-    id: CHEBI:132089
-    label: Sodium beta-glycerophosphate
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000486
-    label: Sodium beta-glycerophosphate
-- preferred_term: H2SeO3
-  term:
-    id: CHEBI:26642
-    label: H2SeO3
-  concentration:
-    value: '0.03004'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000434
-    label: H2SeO3
-- preferred_term: Tris base
-  term:
-    id: CHEBI:9754
-    label: Tris base
-  concentration:
-    value: '0.6181'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000880
-    label: Tris base
-- preferred_term: Na2-EDTA
+    value: '2'
+    unit: MOLAR
+  source: CCAP Medium MR_K.pdf
+- preferred_term: Na EDTA
   term:
     id: CHEBI:64734
-    label: Na2-EDTA
+    label: Na EDTA
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.987127'
+    ontology_source: CHEBI
   concentration:
-    value: '43.6'
+    value: '8.32'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
-    label: Na2-EDTA
+  source: CCAP Medium MR_K.pdf
+  notes: From CCAP Medium MR_K.pdf; Curated from CCAP Medium MR_K.pdf specification
 - preferred_term: FeCl3 x 6 H2O
   term:
     id: CHEBI:86254
     label: FeCl3 x 6 H2O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 0.95
+    curation_date: '2026-04-04T12:54:54.987137'
+    ontology_source: CHEBI
   concentration:
-    value: '31.5'
+    value: '6.30'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000218
-    label: FeCl3 x 6 H2O
-- preferred_term: MnCl2 x 4 H2O
-  term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
-  concentration:
-    value: '1.8'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
-    label: MnCl2 x 4 H2O
-- preferred_term: CuSO4 x 5 H2O
-  term:
-    id: CHEBI:31440
-    label: CuSO4 x 5 H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
-    label: CuSO4 x 5 H2O
+  source: CCAP Medium MR_K.pdf
+  notes: From CCAP Medium MR_K.pdf; Curated from CCAP Medium MR_K.pdf specification
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
     label: ZnSO4 x 7 H2O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.987139'
+    ontology_source: CHEBI
   concentration:
-    value: '1'
+    value: '0.044'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
-    label: ZnSO4 x 7 H2O
+  source: CCAP Medium MR_K.pdf
+  notes: From CCAP Medium MR_K.pdf; Curated from CCAP Medium MR_K.pdf specification
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
     label: CoCl2 x 6 H2O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.987141'
+    ontology_source: CHEBI
   concentration:
-    value: '1'
+    value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
-    label: CoCl2 x 6 H2O
+  source: CCAP Medium MR_K.pdf
+  notes: From CCAP Medium MR_K.pdf; Curated from CCAP Medium MR_K.pdf specification
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.987143'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.36'
+    unit: G_PER_L
+  source: CCAP Medium MR_K.pdf
+  notes: From CCAP Medium MR_K.pdf; Curated from CCAP Medium MR_K.pdf specification
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.987145'
+    ontology_source: CHEBI
   concentration:
-    value: '1'
+    value: '0.012'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
-    label: Na2MoO4 x 2 H2O
-- preferred_term: Thiamine HCl
-  term:
-    id: CHEBI:49105
-    label: Thiamine HCl
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
-    label: Thiamine HCl
-- preferred_term: Cyanocobalamin
+  source: CCAP Medium MR_K.pdf
+  notes: From CCAP Medium MR_K.pdf; Curated from CCAP Medium MR_K.pdf specification
+- preferred_term: Cyanocobalamin (Vitamin B )
   term:
     id: CHEBI:17439
-    label: Cyanocobalamin
+    label: Cyanocobalamin (vitamin B )
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.987148'
+    ontology_source: CHEBI
   concentration:
-    value: '1'
+    value: '0.0005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
-    label: Cyanocobalamin
+  source: CCAP Medium MR_K.pdf
+  notes: From CCAP Medium MR_K.pdf; Curated from CCAP Medium MR_K.pdf specification
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
     label: Biotin
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.987150'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  source: CCAP Medium MR_K.pdf
+  notes: From CCAP Medium MR_K.pdf; Curated from CCAP Medium MR_K.pdf specification
+- preferred_term: Thiamine HCl (Vitamin B )
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl (vitamin B )
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.987152'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  source: CCAP Medium MR_K.pdf
+  notes: From CCAP Medium MR_K.pdf; Curated from CCAP Medium MR_K.pdf specification
+- preferred_term: Thiamine HCl (B ) -
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl (B ) -
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.987155'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  source: CCAP Medium MR_K.pdf
+  notes: From CCAP Medium MR_K.pdf; Curated from CCAP Medium MR_K.pdf specification
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.987156'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  source: CCAP Medium MR_K.pdf
+  notes: From CCAP Medium MR_K.pdf; Curated from CCAP Medium MR_K.pdf specification
+- preferred_term: Cyanocobalamin (B )
+  term:
+    id: CHEBI:17439
+    label: Cyanocobalamin (B )
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.987159'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  source: CCAP Medium MR_K.pdf
+  notes: From CCAP Medium MR_K.pdf; Curated from CCAP Medium MR_K.pdf specification
+- preferred_term: Make up to 1 litre with filtered natural seawater. Adjust pH to
+    8.0 with
+  notes: Ontology mapping not yet available; From CCAP Medium MR_K.pdf; Curated from
+    CCAP Medium MR_K.pdf specification
   concentration:
     value: '1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
-    label: Biotin
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: "Note for Tris base: First add to 50ml of DIW and pH. Then slowly top\
-    \ up to 100ml with DIW ensuring\r\nto check pH remains at 7.2."
-- step_number: 2
-  action: AUTOCLAVE
-  description: "Make up to 1 litre with filtered natural seawater. Adjust pH to 8.0\
-    \ with 1M NaOH or 1M HCl.\r\nAutoclave at 15 psi for 15 minutes."
-- step_number: 3
-  action: DISSOLVE
-  description: "There are 7 chemicals. Prepare Primary stock solutions first. Add\
-    \ first three\r\nchemicals separately in 100ml/dH2O, allowing each to completely\
-    \ dissolve\r\nbefore adding the primary stocks in order:"
-- step_number: 4
-  action: MIX
-  description: First make primary stocks of Cyanocobalamin and Biotin.
-- step_number: 5
-  action: POUR_PLATES
-  description: Dispense any excess primary stocks into 1 ml aliquots and freeze.
-- step_number: 6
-  action: MIX
-  description: 'For final vitamin mix stock solution:'
-applications:
-- Microbial cultivation
-curation_history:
-- timestamp: '2026-01-26T17:53:19.613546Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: CCAP, ID: C42'
-- timestamp: '2026-03-13T06:18:54.678187Z'
-  curator: culturemech-id-assigner-v1.0
-  action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000352'
-- timestamp: '2026-03-17T06:30:39.000000Z'
-  curator: mediaingredientmech-enrichment-v1.0
-  action: Added MediaIngredientMech links
-  notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:05.675661+00:00'
-  curator: normalize_media_names_to_snake_case.py
-  action: NAME_NORMALIZED
-  notes: Normalized name from "K Medium" to "k_medium" for consistent matching
-merge_fingerprint: 83e9ec2c301735908fd8e69c116a53ee5451a825c95060daf11b296bc06b6d51
+    unit: MOLAR
+  source: CCAP Medium MR_K.pdf
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- curation_method:automated_expert_mapping
+original_name: K Medium
+merge_fingerprint: 6543f53e508666d3807e0fc29e9e5793cf8a7a064e4902032af216f0a3aa6687
 merged_from:
 - k_medium

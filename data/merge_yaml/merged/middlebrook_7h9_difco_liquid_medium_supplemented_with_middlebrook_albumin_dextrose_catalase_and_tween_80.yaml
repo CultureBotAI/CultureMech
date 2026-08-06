@@ -4,6 +4,7 @@ original_name: Middlebrook 7H9 (Difco) liquid medium supplemented with Middlebro
   albumin/dextrose/catalase and Tween 80
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -15,8 +16,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Tween 80 (BD)
   concentration:
@@ -93,9 +94,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Dextrose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - *id001
 - *id002
 - *id003
@@ -104,9 +105,6 @@ ingredients:
     value: '0.0015'
     unit: G_PER_L
   notes: 'Properties: Simple component, Defined component'
-  term:
-    id: CHEBI:3463
-    label: Catalase
 media_term:
   preferred_term: TOGO Medium M2880
   term:
@@ -131,6 +129,11 @@ notes: 'Source: https://togomedium.org/medium/M2880
 applications:
 - Microbial cultivation
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI,
+    1 de-grounded (mixture or unverifiable).
 - timestamp: '2026-01-27T06:35:57.374710Z'
   curator: togo-import
   action: Imported from TOGO Medium
@@ -157,6 +160,17 @@ curation_history:
   notes: Normalized name from "Middlebrook 7H9 (Difco) liquid medium supplemented
     with Middlebrook albumin/dextrose/catalase and Tween 80" to "middlebrook_7h9_difco_liquid_medium_supplemented_with_middlebrook_albumin_dextrose_catalase_and_tween_80"
     for consistent matching
-merge_fingerprint: fc8af55b3fead85490599ff3f9732dc6c19b37b0b7e4a7a3ca1d73f298ddcacc
+- timestamp: '2026-06-05T07:41:34.001673+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:45.542345+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 11954cc76bcd72fd6447863f19dc59e014d2b51465e1f64ee710aa48061311d9
+  source: middlebrook_7h9_difco_liquid_medium_supplemented_with_middlebrook_albumin_dextrose_catalase_and_tween_80.yaml
+merge_fingerprint: 11954cc76bcd72fd6447863f19dc59e014d2b51465e1f64ee710aa48061311d9
 merged_from:
 - middlebrook_7h9_difco_liquid_medium_supplemented_with_middlebrook_albumin_dextrose_catalase_and_tween_80

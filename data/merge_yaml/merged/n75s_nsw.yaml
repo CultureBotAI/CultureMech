@@ -3,6 +3,7 @@ name: n75s_nsw
 original_name: N75S:NSW
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: CCAP Medium C62
@@ -56,10 +57,15 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "N75S:NSW" to "n75s_nsw" for consistent matching
-- timestamp: '2026-04-17T06:30:17.793470+00:00'
+- timestamp: '2026-08-06T03:05:50.969336+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: n75s, n75s_nsw'
+- timestamp: '2026-08-06T03:05:50.969386+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint c565c2dd8b9efc08f60f4389e928731a4a02e0a24676683df5ae6b2e8667a074
+  source: n75s.yaml, n75s_nsw.yaml
 synonyms:
 - name: n75s
   source: MediaDive

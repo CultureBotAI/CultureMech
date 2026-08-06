@@ -1,0 +1,166 @@
+id: CultureMech:001460
+name: thiomonas_medium
+original_name: THIOMONAS MEDIUM
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+ph_value: 6.0
+media_term:
+  preferred_term: DSMZ Medium 35a
+  term:
+    id: mediadive.medium:35a
+    label: THIOMONAS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35a.pdf'
+ingredients:
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  concentration:
+    value: '0.111111'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  concentration:
+    value: '3.33333'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '22.2222'
+    unit: G_PER_L
+  notes: Optional ingredient (for solid medium)
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1.4'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: Na2S2O3 x 5 H2O
+  term:
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
+  concentration:
+    value: '250'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
+- preferred_term: Yeast extract
+  concentration:
+    value: '100'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Solutions A, B and D are sterilized separately by autoclaving. Solution
+    C is sterilized by filtration. After autoclaving the solutions A and B are combined
+    and then supplemented with the sterile solutions C and D. Best growth is observed
+    in the syneresis water of slant agar tubes.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 6.0 with NaOH.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.020174Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 35a'
+- timestamp: '2026-03-13T06:19:04.379961Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001460'
+- timestamp: '2026-03-17T06:30:56.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:16.394420+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "THIOMONAS MEDIUM" to "thiomonas_medium" for consistent
+    matching
+- timestamp: '2026-06-05T07:41:51.665840+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:13.588356+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:35.195414+00:00'
+  curator: recipe-merger
+  action: Merged 5 duplicate recipes into canonical record
+  notes: 'Sources: for_dsm_22701, for_dsm_612, thiobacillus_thiooxidans_medium, thiomonas_intermedia_medium,
+    thiomonas_medium'
+- timestamp: '2026-08-06T03:05:35.195467+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 5 source recipe(s) on fingerprint 852ccedc05d68569751efd7908b7e519c6010c1664f365f02ef7b95e83310ae1
+  source: for_dsm_22701.yaml, for_dsm_612.yaml, thiobacillus_thiooxidans_medium.yaml,
+    thiomonas_intermedia_medium.yaml, thiomonas_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/for_dsm_612.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005064
+  name: for_dsm_612
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.
+synonyms:
+- name: for_dsm_22701
+  source: KOMODO
+  source_id: komodo.medium:35a.1
+  original_category: bacterial
+- name: for_dsm_612
+  source: KOMODO
+  source_id: komodo.medium:35.1
+  original_category: bacterial
+- name: thiobacillus_thiooxidans_medium
+  source: KOMODO
+  source_id: komodo.medium:35
+  original_category: bacterial
+- name: thiomonas_intermedia_medium
+  source: KOMODO
+  source_id: komodo.medium:35a
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- for_dsm_22701
+- for_dsm_612
+- thiobacillus_thiooxidans_medium
+- thiomonas_intermedia_medium
+- thiomonas_medium
+merge_fingerprint: 852ccedc05d68569751efd7908b7e519c6010c1664f365f02ef7b95e83310ae1

@@ -1,109 +1,170 @@
-id: CultureMech:000404
+id: CultureMech:000049
 name: asw_300_barley
-original_name: ASW 300 + barley
-category: bacterial
-medium_type: DEFINED
+category: algae
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-media_term:
-  preferred_term: CCAP Medium C8
-  term:
-    id: mediadive.medium:C8
-    label: ASW 300 + barley
-notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_ASW_300.pdf'
+description: Algae culture medium from CCAP Culture Collection. Suitable for saltwater
+  algae cultivation. Recipe available in PDF format.
+notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_ASW_300.pdf
+salinity: marine (natural seawater or artificial seawater)
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
+applications:
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
+curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI,
+    0 de-grounded (mixture or unverifiable).
+- curator: ccap-import
+  action: Imported from CCAP Culture Collection
+  notes: 'Source ID: ASW_300, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_ASW_300.pdf'
+  timestamp: '2026-01-28T00:00:00+00:00'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-02-03T11:26:43.463192'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:18:53.023156Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000049'
+- timestamp: '2026-03-17T19:45:03.978855+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ASW 300 + barley" to "asw_300_barley" for consistent
+    matching
+- timestamp: '2026-04-04T12:54:55.098679'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 6 curated ingredients from CCAP
+  source: CCAP Medium MR_ASW_300.pdf
+- timestamp: '2026-05-16T08:57:01.854976+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(3 entries)
+- timestamp: '2026-05-16T09:02:55.890748+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
+    category->lowercase=1
+- timestamp: '2026-06-10T06:57:10.872281+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-08-06T03:04:19.433379+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: CCAP_ASW 300 + barley  + barley grain_), asw_300_barley'
+- timestamp: '2026-08-06T03:04:19.433413+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint e550fef3b0affd45cc468d2e304b1ead6755e6bed115ffdb887ed7078ae95d1b
+  source: CCAP_ASW 300 + barley  + barley grain_).yaml, asw_300_barley.yaml
+references:
+- reference: CCAP:ASW_300
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ASW_300.pdf
 ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: NaCl
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.098653'
+    ontology_source: CHEBI
   concentration:
-    value: '136'
+    value: '243.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  source: CCAP Medium MR_ASW_300.pdf
+  notes: From CCAP Medium MR_ASW_300.pdf; Curated from CCAP Medium MR_ASW_300.pdf
+    specification
 - preferred_term: KCl
   term:
     id: CHEBI:32588
     label: KCl
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.098665'
+    ontology_source: CHEBI
   concentration:
-    value: '3.8'
+    value: '7.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+  source: CCAP Medium MR_ASW_300.pdf
+  notes: From CCAP Medium MR_ASW_300.pdf; Curated from CCAP Medium MR_ASW_300.pdf
+    specification
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
     label: MgCl2 x 6 H2O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.098668'
+    ontology_source: CHEBI
   concentration:
-    value: '8.9'
+    value: '54.36'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: MgCl2 x 6 H2O
-- preferred_term: MgSO4 x 7 H2O
+  source: CCAP Medium MR_ASW_300.pdf
+  notes: From CCAP Medium MR_ASW_300.pdf; Curated from CCAP Medium MR_ASW_300.pdf
+    specification
+- preferred_term: MgSO .7H O
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.098670'
+    ontology_source: CHEBI
   concentration:
-    value: '0.9'
+    value: '59.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
+  source: CCAP Medium MR_ASW_300.pdf
+  notes: From CCAP Medium MR_ASW_300.pdf; Curated from CCAP Medium MR_ASW_300.pdf
+    specification
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.098672'
+    ontology_source: CHEBI
   concentration:
-    value: '0.65'
+    value: '1.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: "Add 20 ml of the autoclaved artificial seawater with 300 psu and 4\
-    \ autoclaved \r\nbarley grains to a T­25 tissue culture flask (Corning 25100)."
-applications:
-- Microbial cultivation
-curation_history:
-- timestamp: '2026-01-26T17:53:19.492666Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: CCAP, ID: C8'
-- timestamp: '2026-03-13T06:18:54.980268Z'
-  curator: culturemech-id-assigner-v1.0
-  action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000404'
-- timestamp: '2026-03-17T06:30:56.000000Z'
-  curator: mediaingredientmech-enrichment-v1.0
-  action: Added MediaIngredientMech links
-  notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:05.992533+00:00'
-  curator: normalize_media_names_to_snake_case.py
-  action: NAME_NORMALIZED
-  notes: Normalized name from "ASW 300 + barley" to "asw_300_barley" for consistent
-    matching
-- timestamp: '2026-04-17T06:29:55.308388+00:00'
-  curator: recipe-merger
-  action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: asw_150_barley, asw_225_barley, asw_300_barley'
-high_metal: true
-synonyms:
-- name: asw_150_barley
-  source: MediaDive
-  source_id: mediadive.medium:C6
-  original_category: bacterial
-- name: asw_225_barley
-  source: MediaDive
-  source_id: mediadive.medium:C7
-  original_category: bacterial
+  source: CCAP Medium MR_ASW_300.pdf
+  notes: From CCAP Medium MR_ASW_300.pdf; Curated from CCAP Medium MR_ASW_300.pdf
+    specification
+- preferred_term: Make up to 1 litre with deionised water. Adjust pH to 7.6-8 with
+  notes: Ontology mapping not yet available; From CCAP Medium MR_ASW_300.pdf; Curated
+    from CCAP Medium MR_ASW_300.pdf specification
+  concentration:
+    value: '1'
+    unit: MOLAR
+  source: CCAP Medium MR_ASW_300.pdf
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- curation_method:automated_expert_mapping
+original_name: ASW 300 + barley
 categories:
-- bacterial
+- algae
 merged_from:
-- asw_150_barley
-- asw_225_barley
+- CCAP_ASW 300 + barley  + barley grain_)
 - asw_300_barley
-merge_fingerprint: 009bee0b2b1783ee163c85cf426c36e95300e7b7f784e4ad192b2ca578b134cd
+merge_fingerprint: e550fef3b0affd45cc468d2e304b1ead6755e6bed115ffdb887ed7078ae95d1b

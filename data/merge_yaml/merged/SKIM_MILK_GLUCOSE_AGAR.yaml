@@ -3,6 +3,7 @@ name: skim_milk_glucose_agar
 original_name: SKIM MILK/GLUCOSE AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 6.8
 media_term:
@@ -24,8 +25,8 @@ ingredients:
   concentration:
     value: '40'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Agar
   term:
@@ -34,8 +35,8 @@ ingredients:
   concentration:
     value: '40'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -61,10 +62,32 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "SKIM MILK/GLUCOSE AGAR" to "skim_milk_glucose_agar"
     for consistent matching
-- timestamp: '2026-04-17T06:29:32.627104+00:00'
+- timestamp: '2026-06-05T07:40:26.649901+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:59.713388+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_810_SKIM_MILK_GLUCOSE_AGAR, skim_milk_glucose_agar'
+- timestamp: '2026-08-06T03:04:59.713436+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint b438b1e6fbafa7f1ac9fa6f752885096ae71546d058db12fa34180b8d0e1259d
+  source: KOMODO_810_SKIM_MILK_GLUCOSE_AGAR.yaml, skim_milk_glucose_agar.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/skim_milk_glucose_agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001955
+  name: skim_milk_glucose_agar
+  notes: KOMODO record states DSMZ Medium 810 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 categories:
 - bacterial
 merged_from:

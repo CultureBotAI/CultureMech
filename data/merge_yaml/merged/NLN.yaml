@@ -1,6 +1,7 @@
 id: CultureMech:015672
 name: NLN
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sucrose
@@ -41,7 +42,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:63036
-    label: ''
+    label: potassium dihydrogen phosphate
 - preferred_term: Sodium Chloride
   concentration:
     value: '0.1'
@@ -94,7 +95,7 @@ ingredients:
     53.49'
 description: NF with Ammonium chloride
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: NLN
@@ -108,22 +109,35 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015672'
-- timestamp: '2026-04-17T06:30:30.683841+00:00'
+- timestamp: '2026-05-16T09:04:42.615078+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-10T07:47:15.562088+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:06.937731+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: nf_with10percent_fulln, nf_with_fulln, nln'
+- timestamp: '2026-08-06T03:06:06.937772+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 6de3693c9b9d5f2037d1c688ceae99db25aba2d7d1e3a25622bef7713d068806
+  source: nf_with10percent_fulln.yaml, nf_with_fulln.yaml, nln.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 original_name: NLN
 synonyms:
 - name: NF with10percent fullN
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 - name: NF with fullN
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 categories:
-- SPECIALIZED
+- specialized
 merged_from:
 - nf_with10percent_fulln
 - nf_with_fulln

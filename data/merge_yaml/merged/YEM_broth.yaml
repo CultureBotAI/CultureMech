@@ -1,36 +1,135 @@
-id: CultureMech:009435
+id: CultureMech:009636
 name: yem_broth
 original_name: YEM broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: YEM broth
+- preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
-media_term:
-  preferred_term: TOGO Medium M2899
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: TOGO:M2899
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: FeSO4·7H2O
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:75836
+    label: ''
+- preferred_term: Mannitol
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:29864
+    label: mannitol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29864
+    label: mannitol
+media_term:
+  preferred_term: TOGO Medium M3195
+  term:
+    id: TOGO:M3195
     label: YEM broth
-notes: 'Source: https://togomedium.org/medium/M2899'
+notes: 'Source: https://togomedium.org/medium/M3195'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:57.391674Z'
+- timestamp: '2026-01-27T06:35:57.584720Z'
   curator: togo-import
   action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2899'
-- timestamp: '2026-03-13T06:20:06.174897Z'
+  notes: 'Source: TOGO, ID: M3195'
+- timestamp: '2026-01-28T19:48:16.602055Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:07.774639Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:009435'
-- timestamp: '2026-03-17T19:46:25.136851+00:00'
+  notes: 'Assigned stable identifier: CultureMech:009636'
+- timestamp: '2026-03-17T06:30:00.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:26.785987+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "YEM broth" to "yem_broth" for consistent matching
-merge_fingerprint: 9c401f152a3055eea7e4aef89794fea95c14df092172e3a587cdbd6d7c9e6239
+- timestamp: '2026-06-05T07:40:40.243037+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:29.586105+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:46:50.256073+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:14.840318+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint c335a2526926a267f38c48312deebe4ef9ad67a1c3be629be24fc01ec5716dfb
+  source: TOGO_M3195_YEM_broth.yaml
+merge_fingerprint: c335a2526926a267f38c48312deebe4ef9ad67a1c3be629be24fc01ec5716dfb
 merged_from:
-- yem_broth
+- TOGO_M3195_YEM_broth

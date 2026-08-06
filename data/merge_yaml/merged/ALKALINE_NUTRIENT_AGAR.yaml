@@ -1,114 +1,696 @@
-id: CultureMech:009003
+id: CultureMech:005008
 name: alkaline_nutrient_agar
-original_name: Alkaline Nutrient Agar
+original_name: ALKALINE NUTRIENT AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1100.0'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component [Merged 2 duplicates: 1000.0, 100.0]'
+ph_value: 9.7
+media_term:
+  preferred_term: KOMODO Medium 31
   term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: Agar, if necessary
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Meat extract
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
+    id: komodo.medium:31
+    label: ALKALINE NUTRIENT AGAR
+notes: 'Source: KOMODO ModelSEED | ID: 31 | DSMZ Medium: 31 (mediadive.medium:31)
+  | Aerobic: No'
+ingredients:
 - preferred_term: Peptone
   concentration:
     value: '5'
     unit: G_PER_L
-- preferred_term: NaHCO3
+- preferred_term: Meat extract
   concentration:
-    value: '4.2'
+    value: '3'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (if necessary)'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+- preferred_term: NaHCO3
   term:
     id: CHEBI:32139
-    label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+    label: NaHCO3
+  concentration:
+    value: '42'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: Na2CO3 anhydrous
-  concentration:
-    value: '5.3'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
-    component'
   term:
     id: CHEBI:29377
     label: Na2CO3 anhydrous
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  concentration:
+    value: '53'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3 anhydrous
-media_term:
-  preferred_term: TOGO Medium M2420
-  term:
-    id: TOGO:M2420
-    label: Alkaline Nutrient Agar
-notes: 'Source: https://togomedium.org/medium/M2420
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.488331Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2420'
-- timestamp: '2026-01-28T19:48:29.874127Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-09T08:04:49.673008+00:00'
-  curator: solution-migrator-v1.0
-  action: Migrated solutions from ingredients to solutions array
-  notes: Moved 1 solution(s) from ingredients
-- timestamp: '2026-03-13T03:09:20.835885Z'
-  curator: data-quality-cleanup-v1.0
-  action: Data quality fixes
-  notes: Merged 1 duplicate ingredient(s)
-- timestamp: '2026-03-13T06:20:01.915042Z'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 31'
+- timestamp: '2026-02-03T11:19:10.830383'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 31
+- timestamp: '2026-03-13T06:19:29.447541Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:009003'
-- curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:55.586157'
-  action: Applied schema defaults and normalizations
-  notes: Added default solution name
-- timestamp: '2026-03-17T06:30:28.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:005008'
+- timestamp: '2026-03-17T06:30:29.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:20.664923+00:00'
+- timestamp: '2026-03-17T19:45:45.021276+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Alkaline Nutrient Agar" to "alkaline_nutrient_agar"
+  notes: Normalized name from "ALKALINE NUTRIENT AGAR" to "alkaline_nutrient_agar"
     for consistent matching
-solutions:
-- preferred_term: Na-sesquicarbonate solution
-  term:
-    id: mediadive.solution:1174
-    label: Na-sesquicarbonate solution
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: See mediadive_1174_Na-sesquicarbonate_solution.yaml for composition
-  name: Unknown solution
-merge_fingerprint: 3291666c616fcf9845ff4576e22185766b0f1083d7e1f86009e2da81b5a4ae28
+- timestamp: '2026-06-05T07:40:22.435685+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:47.361384+00:00'
+  curator: recipe-merger
+  action: Merged 53 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_31_ALKALINE_NUTRIENT_AGAR, alkaline_nutrient_agar, medium_31_modified_for_dsm_16130,
+    medium_31_modified_for_dsm_23228, medium_31_modified_for_dsm_5271, medium_31_modified_for_dsm_6716,
+    medium_31_modified_for_dsm_8714, medium_31_modified_for_dsm_8716, medium_31_modified_for_dsm_8717,
+    medium_31_modified_for_dsm_8719, medium_31_modified_for_dsm_8720, medium_31_modified_for_dsm_8721,
+    medium_31_modified_for_dsm_8722, medium_31_modified_for_dsm_8723, medium_31_modified_for_dsm_8724,
+    medium_31_modified_for_dsm_8725, medium_31_modified_for_dsm_9473, medium_31_modified_for_dsm_9474,
+    medium_31_modified_for_dsm_9475, medium_31_modified_for_dsm_9476, medium_31_modified_for_dsm_9477,
+    medium_31_modified_for_dsm_9478, medium_31_modified_for_dsm_9479, medium_31_modified_for_dsm_9480,
+    medium_31_modified_for_dsm_9481, medium_31_modified_for_dsm_9482, medium_31_modified_for_dsm_9706,
+    medium_31_modified_for_dsm_9711, medium_31_modified_for_dsm_9712, medium_31_modified_for_dsm_9713,
+    medium_31_modified_for_dsm_9714, medium_31_modified_for_dsm_9725, medium_31_modified_for_dsm_9726,
+    medium_31_modified_for_dsm_9727, medium_31_modified_for_dsm_9728, medium_31_modified_for_dsm_9729,
+    medium_31_modified_for_dsm_9730, medium_31_modified_for_dsm_9731, medium_31_modified_for_dsm_9763,
+    medium_31_modified_for_dsm_9768, medium_31_modified_for_dsm_9778, medium_31_modified_for_dsm_9779,
+    medium_31_modified_for_dsm_9780, medium_31_modified_for_dsm_9781, medium_31_modified_for_dsm_9782,
+    medium_31_modified_for_dsm_9783, medium_31_modified_for_dsm_9784, medium_31_modified_for_dsm_9785,
+    medium_31_modified_for_dsm_9813, medium_31_modified_for_dsm_9818, medium_31_modified_for_dsm_9822,
+    medium_31_modified_for_dsm_9823, medium_31_modified_for_dsm_9881'
+- timestamp: '2026-08-06T03:04:47.361654+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 53 source recipe(s) on fingerprint 485bbb74a3d160667b81afca9a8a69e7721b2bf18cdb3962b90160745d54b358
+  source: KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml, alkaline_nutrient_agar.yaml, medium_31_modified_for_dsm_16130.yaml,
+    medium_31_modified_for_dsm_23228.yaml, medium_31_modified_for_dsm_5271.yaml, medium_31_modified_for_dsm_6716.yaml,
+    medium_31_modified_for_dsm_8714.yaml, medium_31_modified_for_dsm_8716.yaml, medium_31_modified_for_dsm_8717.yaml,
+    medium_31_modified_for_dsm_8719.yaml, medium_31_modified_for_dsm_8720.yaml, medium_31_modified_for_dsm_8721.yaml,
+    medium_31_modified_for_dsm_8722.yaml, medium_31_mo
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004887
+  name: medium_31_modified_for_dsm_16130
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004888
+  name: medium_31_modified_for_dsm_23228
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004889
+  name: medium_31_modified_for_dsm_5271
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004890
+  name: medium_31_modified_for_dsm_6716
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004891
+  name: medium_31_modified_for_dsm_8714
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004892
+  name: medium_31_modified_for_dsm_8716
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004893
+  name: medium_31_modified_for_dsm_8717
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004894
+  name: medium_31_modified_for_dsm_8719
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004895
+  name: medium_31_modified_for_dsm_8720
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004896
+  name: medium_31_modified_for_dsm_8721
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004897
+  name: medium_31_modified_for_dsm_8722
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004898
+  name: medium_31_modified_for_dsm_8723
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004899
+  name: medium_31_modified_for_dsm_8724
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004900
+  name: medium_31_modified_for_dsm_8725
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004901
+  name: medium_31_modified_for_dsm_9473
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004902
+  name: medium_31_modified_for_dsm_9474
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004903
+  name: medium_31_modified_for_dsm_9475
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004904
+  name: medium_31_modified_for_dsm_9476
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004905
+  name: medium_31_modified_for_dsm_9477
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004906
+  name: medium_31_modified_for_dsm_9478
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004907
+  name: medium_31_modified_for_dsm_9479
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004908
+  name: medium_31_modified_for_dsm_9480
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004909
+  name: medium_31_modified_for_dsm_9481
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004910
+  name: medium_31_modified_for_dsm_9482
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004911
+  name: medium_31_modified_for_dsm_9706
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004912
+  name: medium_31_modified_for_dsm_9711
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004913
+  name: medium_31_modified_for_dsm_9712
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004914
+  name: medium_31_modified_for_dsm_9713
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004915
+  name: medium_31_modified_for_dsm_9714
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004916
+  name: medium_31_modified_for_dsm_9725
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004917
+  name: medium_31_modified_for_dsm_9726
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004918
+  name: medium_31_modified_for_dsm_9727
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004919
+  name: medium_31_modified_for_dsm_9728
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004920
+  name: medium_31_modified_for_dsm_9729
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004921
+  name: medium_31_modified_for_dsm_9730
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004922
+  name: medium_31_modified_for_dsm_9731
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004923
+  name: medium_31_modified_for_dsm_9763
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004924
+  name: medium_31_modified_for_dsm_9768
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004925
+  name: medium_31_modified_for_dsm_9778
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004926
+  name: medium_31_modified_for_dsm_9779
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004927
+  name: medium_31_modified_for_dsm_9780
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004928
+  name: medium_31_modified_for_dsm_9781
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004929
+  name: medium_31_modified_for_dsm_9782
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004930
+  name: medium_31_modified_for_dsm_9783
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004931
+  name: medium_31_modified_for_dsm_9784
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004932
+  name: medium_31_modified_for_dsm_9785
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004933
+  name: medium_31_modified_for_dsm_9813
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004934
+  name: medium_31_modified_for_dsm_9818
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004935
+  name: medium_31_modified_for_dsm_9822
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004936
+  name: medium_31_modified_for_dsm_9823
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004937
+  name: medium_31_modified_for_dsm_9881
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001421
+  name: alkaline_nutrient_agar
+  notes: KOMODO record explicitly cites DSMZ Medium 31; one unlinked DSMZ parent record
+    exists and the local physical state, pH, ingredient, and concentration signatures
+    match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 31; local ingredient and
+  concentration signatures match.
+synonyms:
+- name: medium_31_modified_for_dsm_16130
+  source: KOMODO
+  source_id: komodo.medium:31_16130
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_23228
+  source: KOMODO
+  source_id: komodo.medium:31_23228
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_5271
+  source: KOMODO
+  source_id: komodo.medium:31_5271
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_6716
+  source: KOMODO
+  source_id: komodo.medium:31_6716
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_8714
+  source: KOMODO
+  source_id: komodo.medium:31_8714
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_8716
+  source: KOMODO
+  source_id: komodo.medium:31_8716
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_8717
+  source: KOMODO
+  source_id: komodo.medium:31_8717
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_8719
+  source: KOMODO
+  source_id: komodo.medium:31_8719
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_8720
+  source: KOMODO
+  source_id: komodo.medium:31_8720
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_8721
+  source: KOMODO
+  source_id: komodo.medium:31_8721
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_8722
+  source: KOMODO
+  source_id: komodo.medium:31_8722
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_8723
+  source: KOMODO
+  source_id: komodo.medium:31_8723
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_8724
+  source: KOMODO
+  source_id: komodo.medium:31_8724
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_8725
+  source: KOMODO
+  source_id: komodo.medium:31_8725
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9473
+  source: KOMODO
+  source_id: komodo.medium:31_9473
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9474
+  source: KOMODO
+  source_id: komodo.medium:31_9474
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9475
+  source: KOMODO
+  source_id: komodo.medium:31_9475
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9476
+  source: KOMODO
+  source_id: komodo.medium:31_9476
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9477
+  source: KOMODO
+  source_id: komodo.medium:31_9477
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9478
+  source: KOMODO
+  source_id: komodo.medium:31_9478
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9479
+  source: KOMODO
+  source_id: komodo.medium:31_9479
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9480
+  source: KOMODO
+  source_id: komodo.medium:31_9480
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9481
+  source: KOMODO
+  source_id: komodo.medium:31_9481
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9482
+  source: KOMODO
+  source_id: komodo.medium:31_9482
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9706
+  source: KOMODO
+  source_id: komodo.medium:31_9706
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9711
+  source: KOMODO
+  source_id: komodo.medium:31_9711
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9712
+  source: KOMODO
+  source_id: komodo.medium:31_9712
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9713
+  source: KOMODO
+  source_id: komodo.medium:31_9713
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9714
+  source: KOMODO
+  source_id: komodo.medium:31_9714
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9725
+  source: KOMODO
+  source_id: komodo.medium:31_9725
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9726
+  source: KOMODO
+  source_id: komodo.medium:31_9726
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9727
+  source: KOMODO
+  source_id: komodo.medium:31_9727
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9728
+  source: KOMODO
+  source_id: komodo.medium:31_9728
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9729
+  source: KOMODO
+  source_id: komodo.medium:31_9729
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9730
+  source: KOMODO
+  source_id: komodo.medium:31_9730
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9731
+  source: KOMODO
+  source_id: komodo.medium:31_9731
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9763
+  source: KOMODO
+  source_id: komodo.medium:31_9763
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9768
+  source: KOMODO
+  source_id: komodo.medium:31_9768
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9778
+  source: KOMODO
+  source_id: komodo.medium:31_9778
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9779
+  source: KOMODO
+  source_id: komodo.medium:31_9779
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9780
+  source: KOMODO
+  source_id: komodo.medium:31_9780
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9781
+  source: KOMODO
+  source_id: komodo.medium:31_9781
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9782
+  source: KOMODO
+  source_id: komodo.medium:31_9782
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9783
+  source: KOMODO
+  source_id: komodo.medium:31_9783
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9784
+  source: KOMODO
+  source_id: komodo.medium:31_9784
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9785
+  source: KOMODO
+  source_id: komodo.medium:31_9785
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9813
+  source: KOMODO
+  source_id: komodo.medium:31_9813
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9818
+  source: KOMODO
+  source_id: komodo.medium:31_9818
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9822
+  source: KOMODO
+  source_id: komodo.medium:31_9822
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9823
+  source: KOMODO
+  source_id: komodo.medium:31_9823
+  original_category: bacterial
+- name: medium_31_modified_for_dsm_9881
+  source: KOMODO
+  source_id: komodo.medium:31_9881
+  original_category: bacterial
+categories:
+- bacterial
 merged_from:
-- TOGO_M2420_Alkaline_Nutrient_Agar
+- KOMODO_31_ALKALINE_NUTRIENT_AGAR
+- alkaline_nutrient_agar
+- medium_31_modified_for_dsm_16130
+- medium_31_modified_for_dsm_23228
+- medium_31_modified_for_dsm_5271
+- medium_31_modified_for_dsm_6716
+- medium_31_modified_for_dsm_8714
+- medium_31_modified_for_dsm_8716
+- medium_31_modified_for_dsm_8717
+- medium_31_modified_for_dsm_8719
+- medium_31_modified_for_dsm_8720
+- medium_31_modified_for_dsm_8721
+- medium_31_modified_for_dsm_8722
+- medium_31_modified_for_dsm_8723
+- medium_31_modified_for_dsm_8724
+- medium_31_modified_for_dsm_8725
+- medium_31_modified_for_dsm_9473
+- medium_31_modified_for_dsm_9474
+- medium_31_modified_for_dsm_9475
+- medium_31_modified_for_dsm_9476
+- medium_31_modified_for_dsm_9477
+- medium_31_modified_for_dsm_9478
+- medium_31_modified_for_dsm_9479
+- medium_31_modified_for_dsm_9480
+- medium_31_modified_for_dsm_9481
+- medium_31_modified_for_dsm_9482
+- medium_31_modified_for_dsm_9706
+- medium_31_modified_for_dsm_9711
+- medium_31_modified_for_dsm_9712
+- medium_31_modified_for_dsm_9713
+- medium_31_modified_for_dsm_9714
+- medium_31_modified_for_dsm_9725
+- medium_31_modified_for_dsm_9726
+- medium_31_modified_for_dsm_9727
+- medium_31_modified_for_dsm_9728
+- medium_31_modified_for_dsm_9729
+- medium_31_modified_for_dsm_9730
+- medium_31_modified_for_dsm_9731
+- medium_31_modified_for_dsm_9763
+- medium_31_modified_for_dsm_9768
+- medium_31_modified_for_dsm_9778
+- medium_31_modified_for_dsm_9779
+- medium_31_modified_for_dsm_9780
+- medium_31_modified_for_dsm_9781
+- medium_31_modified_for_dsm_9782
+- medium_31_modified_for_dsm_9783
+- medium_31_modified_for_dsm_9784
+- medium_31_modified_for_dsm_9785
+- medium_31_modified_for_dsm_9813
+- medium_31_modified_for_dsm_9818
+- medium_31_modified_for_dsm_9822
+- medium_31_modified_for_dsm_9823
+- medium_31_modified_for_dsm_9881
+merge_fingerprint: 485bbb74a3d160667b81afca9a8a69e7721b2bf18cdb3962b90160745d54b358

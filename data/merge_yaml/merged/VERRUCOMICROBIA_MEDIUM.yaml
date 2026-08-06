@@ -3,6 +3,7 @@ name: verrucomicrobia_medium
 original_name: VERRUCOMICROBIA MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:
@@ -19,8 +20,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: NaCl
   term:
@@ -29,38 +30,38 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: MgSO4 x 6 H2O
   term:
     id: CHEBI:32599
-    label: MgSO4 x 6 H2O
+    label: magnesium sulfate
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: MgSO4 x 6 H2O
 - preferred_term: CaCl2
   term:
@@ -69,8 +70,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
     label: CaCl2
 - preferred_term: Li2B4O7
   concentration:
@@ -83,8 +84,8 @@ ingredients:
   concentration:
     value: '1.54'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: Na-EDTA
   term:
@@ -93,8 +94,8 @@ ingredients:
   concentration:
     value: '2.06'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
     label: Na-EDTA
 - preferred_term: Nitrilotriacetic acid
   term:
@@ -103,8 +104,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
     label: Nitrilotriacetic acid
 - preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
   concentration:
@@ -113,16 +114,19 @@ ingredients:
   term:
     id: CHEBI:76181
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000429
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76181
     label: Fe(NH4)2(SO4)2 x 6 H2O
 - preferred_term: Na2SeO4 x 10 H2O
   concentration:
     value: '0.44'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000700
-    label: Na2SeO4 x 10 H2O
+  term:
+    id: CHEBI:77775
+    label: sodium selenate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:77775
+    label: sodium selenate
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -130,8 +134,8 @@ ingredients:
   concentration:
     value: '0.18'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: MnSO4 x H2O
   term:
@@ -140,8 +144,8 @@ ingredients:
   concentration:
     value: '0.12'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
     label: MnSO4 x H2O
 - preferred_term: Na2MoO4
   term:
@@ -150,18 +154,18 @@ ingredients:
   concentration:
     value: '0.16'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000183
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75215
     label: Na2MoO4
 - preferred_term: Na2WO4
   term:
     id: CHEBI:63940
-    label: Na2WO4
+    label: sodium tungstate
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000240
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63940
     label: Na2WO4
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -170,8 +174,8 @@ ingredients:
   concentration:
     value: '0.54'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: AlCl3
   term:
@@ -180,8 +184,8 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000292
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30114
     label: AlCl3
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -190,33 +194,36 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.11'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: CuSO4
   term:
     id: CHEBI:23414
-    label: CuSO4
+    label: copper(II) sulfate
   concentration:
     value: '0.21'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000855
+  mediaingredientmech_chebi_term:
+    id: CHEBI:23414
     label: CuSO4
 - preferred_term: MnCl2
   concentration:
     value: '0.19'
     unit: G_PER_L
+  term:
+    id: CHEBI:63041
+    label: manganese(II) chloride
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -267,6 +274,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "VERRUCOMICROBIA MEDIUM" to "verrucomicrobia_medium"
     for consistent matching
-merge_fingerprint: dad7c563a299057d480d7d60438442a47fda9deacb89d1b440a1ade40ccd30b0
+- timestamp: '2026-06-05T07:41:55.017680+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 20 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:37:36.146915+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:47:14.473127+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 8 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:02.478630+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 936cc2d0cf1609395153dfe1f6ab78fc6d0e557cf1474ad4fa9c552cb8236aed
+  source: verrucomicrobia_medium.yaml
+merge_fingerprint: 936cc2d0cf1609395153dfe1f6ab78fc6d0e557cf1474ad4fa9c552cb8236aed
 merged_from:
 - verrucomicrobia_medium

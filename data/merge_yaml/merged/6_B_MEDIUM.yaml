@@ -1,117 +1,110 @@
-id: CultureMech:009782
+id: CultureMech:002829
 name: 6_b_medium
-original_name: 6 B Medium
+original_name: 6 B MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J47
+  term:
+    id: mediadive.medium:J47
+    label: 6 B MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=47'
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Yeast extract
   concentration:
-    value: '1'
+    value: '5'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: CaCO3
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Protective agent, Mineral source; Properties: Simple component, Defined
-    component, Inorganic compound'
-  term:
-    id: CHEBI:3311
-    label: calcium carbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001099
-    label: CaCO3
 - preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
   concentration:
     value: '50'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
-  term:
-    id: CHEBI:15978
-    label: sn-glycerol 3-phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000588
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
+- preferred_term: N-Z amine
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: ' ( type A)'
 - preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
-- preferred_term: Soluble starch
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Undefined component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
+    label: Starch
+- preferred_term: CaCO3
+  term:
+    id: CHEBI:3311
+    label: CaCO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
+    label: CaCO3
 - preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
     label: Agar
-- preferred_term: Yeast extract (BD-Difco)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: N--Z amine, type A (Sheffield)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M39
-  term:
-    id: TOGO:M39
-    label: 6 B Medium
-notes: 'Source: https://togomedium.org/medium/M39
-
-  Original source: JCM - JCM_M47
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=47'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH unadjusted.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.966254Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M39'
-- timestamp: '2026-01-28T19:48:30.709166Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:20:08.852857Z'
+- timestamp: '2026-01-26T17:53:15.639706Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J47'
+- timestamp: '2026-03-13T06:19:15.952120Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:009782'
-- timestamp: '2026-03-17T06:30:30.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:002829'
+- timestamp: '2026-03-17T06:30:40.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:27.846354+00:00'
+- timestamp: '2026-03-17T19:45:29.418113+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "6 B Medium" to "6_b_medium" for consistent matching
-merge_fingerprint: f21466281cc800b6736432f1a79d6fbf909e244dcef89020283c02c2e5f239cd
+  notes: Normalized name from "6 B MEDIUM" to "6_b_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:15.886961+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:34.183617+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 431aed29fd1a12f2090db2d43591c80b52ba59a6314b0b560baf91971a835abf
+  source: 6_b_medium.yaml
+merge_fingerprint: 431aed29fd1a12f2090db2d43591c80b52ba59a6314b0b560baf91971a835abf
 merged_from:
-- TOGO_M39_6_B_Medium
+- 6_b_medium

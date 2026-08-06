@@ -3,6 +3,7 @@ name: tap_hetero_mixo
 original_name: '''TAP (hetero/mixo'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Orthophosphate
@@ -18,8 +19,8 @@ ingredients:
     value: '17.4'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ac'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000944
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30089
     label: Acetate
 - preferred_term: Manganese
   concentration:
@@ -67,8 +68,8 @@ ingredients:
   concentration:
     value: '0.134'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000165
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64755
     label: EDTA
 - preferred_term: Magnesium
   concentration:
@@ -94,6 +95,9 @@ ingredients:
   concentration:
     value: '20.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:9754
+    label: ''
 - preferred_term: Fe2+
   concentration:
     value: '0.0179'
@@ -131,6 +135,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'TAP (hetero/mixo" to "tap_hetero_mixo" for consistent
     matching
+- timestamp: '2026-06-05T07:41:48.728473+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:57.601773+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 6fb0e31ed874b93aa155226ee47c8888fc0d4f6e70039b2f29e969e0bbfcf6d4
+  source: tap_hetero_mixo.yaml
 media_term:
   preferred_term: MediaDB Medium 36
   term:
@@ -142,6 +157,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: b9c4f1fb50825b46e4ed6ba1d90c9d31c5e6f3bee9ab811bb157bb8ad136f4ca
+merge_fingerprint: 6fb0e31ed874b93aa155226ee47c8888fc0d4f6e70039b2f29e969e0bbfcf6d4
 merged_from:
 - tap_hetero_mixo

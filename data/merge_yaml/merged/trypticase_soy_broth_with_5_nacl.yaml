@@ -3,6 +3,7 @@ name: trypticase_soy_broth_with_5_nacl
 original_name: Trypticase Soy Broth With 5% NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: NaCl
   concentration:
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -37,9 +38,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Pancreatic digest of casein
   term:
     id: MICRO:0000182
@@ -203,7 +204,13 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Trypticase Soy Broth With 5% NaCl" to "trypticase_soy_broth_with_5_nacl"
     for consistent matching
-- timestamp: '2026-04-17T06:29:39.492912+00:00'
+- timestamp: '2026-06-05T07:40:45.570534+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:07.465831+00:00'
   curator: recipe-merger
   action: Merged 18 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M1276_Alkaline_Trypticase_Soy_Broth_Agar, TOGO_M1355_Trypticase_Soy_Broth_Agar_With_3_NaCl,
@@ -214,6 +221,38 @@ curation_history:
     TOGO_M990_Trypticase_Soy_Agar_With_2_NaCl, full_media_trypticase_soy_broth_medium,
     tryptic_soy_agar, tryptic_soy_broth, tryptic_soy_broth_without_glucose_difco_media,
     tsa_ph_5_5, tsb_ph5_5'
+- timestamp: '2026-08-06T03:05:07.465995+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 18 source recipe(s) on fingerprint 6a308fd8e8573d9a774fedbd86dd294454e7ff9b590642ad399823c26672ff89
+  source: TOGO_M1276_Alkaline_Trypticase_Soy_Broth_Agar.yaml, TOGO_M1355_Trypticase_Soy_Broth_Agar_With_3_NaCl.yaml,
+    TOGO_M1458_Trypticase_Soy_Agar.yaml, TOGO_M2327_Trypticase_Soy_Broth_Agar.yaml,
+    TOGO_M476_Trypticase_Soy_Broth_Agar.yaml, TOGO_M488_Trypticase_Soy_Broth_Agar_With_10_NaCl.yaml,
+    TOGO_M489_Trypticase_Soy_Broth_Agar_With_5_NaCl_pH_8.0.yaml, TOGO_M596_Half_Strength_Trypticase_Soy_Broth_Agar_pH_4.0.yaml,
+    TOGO_M66_Trypticase_Soy_Agar.yaml, TOGO_M906_Trypticase_Soy_Broth_With_5_NaCl.yaml,
+    TOGO_M90
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M1355_Trypticase_Soy_Broth_Agar_With_3_NaCl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:007892
+  name: trypticase_soy_broth_agar_with_3_nacl
+  notes: Reviewed TOGO trypticase soy broth/agar salinity series; child changes added
+    NaCl from 5% (50 g/L) in the parent to 3% (30 g/L) while the parsed trypticase
+    soy broth agar base remains unchanged.
+- path: data/normalized_yaml/bacterial/TOGO_M488_Trypticase_Soy_Broth_Agar_With_10_NaCl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:009875
+  name: trypticase_soy_broth_agar_with_10_nacl
+  notes: Reviewed TOGO trypticase soy broth/agar salinity series; child changes added
+    NaCl from 5% (50 g/L) in the parent to 10% (100 g/L) while the parsed trypticase
+    soy broth agar base remains unchanged.
+- path: data/normalized_yaml/bacterial/TOGO_M489_Trypticase_Soy_Broth_Agar_With_5_NaCl_pH_8.0.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:009876
+  name: trypticase_soy_broth_agar_with_5_nacl_ph_8_0
+  notes: Reviewed TOGO trypticase soy broth/agar pH series; child keeps the 5% (50
+    g/L) added NaCl level and specifies pH 8.0 while the parsed trypticase soy broth
+    agar base remains unchanged.
 synonyms:
 - name: alkaline_trypticase_soy_broth_agar
   source: TOGO

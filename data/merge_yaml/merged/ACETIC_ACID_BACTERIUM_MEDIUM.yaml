@@ -3,8 +3,11 @@ name: acetic_acid_bacterium_medium
 original_name: ACETIC ACID BACTERIUM medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_range: 6.6-7.0
+ph_range:
+  min: 6.6
+  max: 7.0
 media_term:
   preferred_term: KOMODO Medium 989
   term:
@@ -28,8 +31,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -38,8 +41,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Agar
   term:
@@ -49,8 +52,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (if required)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -76,10 +79,36 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ACETIC ACID BACTERIUM medium" to "acetic_acid_bacterium_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:35.856053+00:00'
+- timestamp: '2026-05-20T06:00:55.301448+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.6-7.0'' -> {''min'': 6.6, ''max'': 7.0}'
+- timestamp: '2026-06-05T07:40:28.402146+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:03.317226+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_989_ACETIC_ACID_BACTERIUM_medium, acetic_acid_bacterium_medium'
+- timestamp: '2026-08-06T03:05:03.317259+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 00af5d8180ae8a34bacf7e743234e36d2c6eb5c2b99bb93d9f071bab3c21fa0e
+  source: KOMODO_989_ACETIC_ACID_BACTERIUM_medium.yaml, acetic_acid_bacterium_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/acetic_acid_bacterium_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002170
+  name: acetic_acid_bacterium_medium
+  notes: KOMODO record states DSMZ Medium 989 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 categories:
 - bacterial
 merged_from:

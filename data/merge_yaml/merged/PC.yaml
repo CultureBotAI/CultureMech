@@ -1,103 +1,103 @@
-id: CultureMech:000386
+id: CultureMech:000109
 name: pc
-original_name: PC
-category: bacterial
-medium_type: DEFINED
+category: algae
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-media_term:
-  preferred_term: CCAP Medium C73
-  term:
-    id: mediadive.medium:C73
-    label: PC
-notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_PC.pdf'
+description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater
+  algae cultivation. Recipe available in PDF format.
+notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_PC.pdf
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
+applications:
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
+curation_history:
+- curator: ccap-import
+  action: Imported from CCAP Culture Collection
+  notes: 'Source ID: PC, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_PC.pdf'
+  timestamp: '2026-01-28T00:00:00+00:00'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-02-03T11:26:43.577579'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:18:53.185269Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000109'
+- timestamp: '2026-03-17T19:45:04.137886+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PC" to "pc" for consistent matching
+- timestamp: '2026-04-04T12:54:55.087239'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 3 curated ingredients from CCAP
+  source: CCAP Medium MR_PC.pdf
+- timestamp: '2026-05-16T08:57:02.632085+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(3 entries)
+- timestamp: '2026-05-16T09:02:56.840408+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
+    category->lowercase=1
+- timestamp: '2026-08-06T03:04:20.209491+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint c73a6881539e29e708edf31a8e5b1a85b818a2241c64273fbc36e450c56fb9a5
+  source: pc.yaml
+references:
+- reference: CCAP:PC
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_PC.pdf
 ingredients:
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
 - preferred_term: KCl
   term:
     id: CHEBI:32588
     label: KCl
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.087221'
+    ontology_source: CHEBI
   concentration:
-    value: '0.5'
+    value: '5.0'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
-- preferred_term: CaCl2
-  term:
-    id: CHEBI:3312
-    label: CaCl2
+  source: CCAP Medium MR_PC.pdf
+  notes: From CCAP Medium MR_PC.pdf; Curated from CCAP Medium MR_PC.pdf specification
+- preferred_term: CaCl
+  notes: Ontology mapping not yet available; From CCAP Medium MR_PC.pdf; Curated from
+    CCAP Medium MR_PC.pdf specification
   concentration:
-    value: '1'
+    value: '10.0'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
-    label: CaCl2
+  source: CCAP Medium MR_PC.pdf
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: NaCl
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.087234'
+    ontology_source: CHEBI
   concentration:
-    value: '1'
+    value: '10.0'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: CaHPO4
-  term:
-    id: CHEBI:32596
-    label: CaHPO4
-  concentration:
-    value: '0.36'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000876
-    label: CaHPO4
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: "Using aseptic technique, make up to 1 litre with sterile deionized\
-    \ water. It may be necessary\r\nto decant supernatant from precipitate in final\
-    \ medium."
-- step_number: 2
-  action: FILTER_STERILIZE
-  description: "Alternatively, after autoclaving, it might be necessary to filter\
-    \ through 0.2 micron filter\r\n(removes precipitates etc)."
-- step_number: 3
-  action: AUTOCLAVE
-  description: "Autoclave at 15 psi for 15 minutes. Dispense any excess stocks into\
-    \ 10 ml aliquots\r\nand freeze."
-- step_number: 4
-  action: AUTOCLAVE
-  description: "Autoclave at 15 psi for 15 minutes. Dispense any excess stocks into\
-    \ 10 ml aliquots\r\nand freeze."
-applications:
-- Microbial cultivation
-curation_history:
-- timestamp: '2026-01-26T17:53:19.725970Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: CCAP, ID: C73'
-- timestamp: '2026-03-13T06:18:54.888312Z'
-  curator: culturemech-id-assigner-v1.0
-  action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000386'
-- timestamp: '2026-03-17T06:30:10.000000Z'
-  curator: mediaingredientmech-enrichment-v1.0
-  action: Added MediaIngredientMech links
-  notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:05.898328+00:00'
-  curator: normalize_media_names_to_snake_case.py
-  action: NAME_NORMALIZED
-  notes: Normalized name from "PC" to "pc" for consistent matching
-merge_fingerprint: c50558b8c109f5da18144867240e434075bc8f58b5bf47b5744775a55c988617
+  source: CCAP Medium MR_PC.pdf
+  notes: From CCAP Medium MR_PC.pdf; Curated from CCAP Medium MR_PC.pdf specification
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- curation_method:automated_expert_mapping
+original_name: PC
+merge_fingerprint: c73a6881539e29e708edf31a8e5b1a85b818a2241c64273fbc36e450c56fb9a5
 merged_from:
 - pc

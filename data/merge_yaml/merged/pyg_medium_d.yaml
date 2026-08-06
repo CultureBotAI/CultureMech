@@ -3,6 +3,7 @@ name: pyg_medium_d
 original_name: PYG Medium (D)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: L--cysteine・HCl・H2O
@@ -10,6 +11,9 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:91248
+    label: ''
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
@@ -36,9 +40,9 @@ curation_history:
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M568'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:59.492976'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:05:04.155741+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -48,13 +52,22 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009963'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:01.789335'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T19:46:29.266053+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "PYG Medium (D)" to "pyg_medium_d" for consistent matching
+- timestamp: '2026-05-16T09:03:19.166985+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-08-06T03:05:17.420676+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 23e7f2425833af722ff7767d9db5e2e5a2096ddccfc504900b61db0e678ba438
+  source: TOGO_M568_PYG_Medium_D.yaml
 solutions:
 - preferred_term: PYG MEDIUM (B) (see Medium [M423])
   composition: []
@@ -63,6 +76,6 @@ solutions:
     value: '1'
     unit: G_PER_L
   name: Unknown solution
-merge_fingerprint: 40a388d796751d700a92824cd37346dc739a8e35c5eeb928656e9325dec4af36
+merge_fingerprint: 23e7f2425833af722ff7767d9db5e2e5a2096ddccfc504900b61db0e678ba438
 merged_from:
 - TOGO_M568_PYG_Medium_D

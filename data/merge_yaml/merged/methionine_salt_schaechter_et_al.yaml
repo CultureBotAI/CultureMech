@@ -3,6 +3,7 @@ name: methionine_salt_schaechter_et_al
 original_name: Methionine salt; schaechter et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Citrate
@@ -10,18 +11,27 @@ ingredients:
     value: '5.20497'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: D-Methionine
   concentration:
     value: '4.02118'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:met-D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000774
+  term:
+    id: CHEBI:16867
+    label: D-Methionine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16867
     label: D-Methionine
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '28.0899'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Potassium chloride
   concentration:
     value: '9.92605'
@@ -29,9 +39,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -39,8 +49,8 @@ ingredients:
   concentration:
     value: '0.405729'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Sodium ammonium phosphate
   concentration:
@@ -79,6 +89,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Methionine salt; schaechter et al" to "methionine_salt_schaechter_et_al"
     for consistent matching
+- timestamp: '2026-06-05T07:41:32.986844+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:44.596096+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 11955cd1fd5489502aee98c61fcae3fd4aefcbb78ade2d107e1ca5c937a8cc04
+  source: methionine_salt_schaechter_et_al.yaml
 media_term:
   preferred_term: MediaDB Medium 233
   term:
@@ -91,6 +112,6 @@ applications:
 - Metabolic modeling
 - Systems biology research
 kg_microbe_match: mediadive.medium:J526
-merge_fingerprint: 0fc8ef0b6e1a7da7e89d1b345aa11fea21d0ff8bc433f1dfc2439f94a4aac384
+merge_fingerprint: 11955cd1fd5489502aee98c61fcae3fd4aefcbb78ade2d107e1ca5c937a8cc04
 merged_from:
 - methionine_salt_schaechter_et_al

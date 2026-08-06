@@ -1,6 +1,7 @@
 id: CultureMech:015520
 name: Dv base Y medium
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Dv_base_medium
@@ -14,7 +15,7 @@ ingredients:
 description: Rich base medium for cultivating Desulfovibrio (with no carbon source,
   electron donor, or electron acceptor)
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: Dv base Y medium
@@ -28,6 +29,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015520'
+- timestamp: '2026-05-16T09:04:40.563095+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:05.088695+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 26006a2e9a4161a7726afb6d27544daaaa8bae0ca222503837a93c12cf693fd4
+  source: dv_base_y_medium.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: 26006a2e9a4161a7726afb6d27544daaaa8bae0ca222503837a93c12cf693fd4

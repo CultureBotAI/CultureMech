@@ -1,75 +1,47 @@
-id: CultureMech:001888
+id: CultureMech:006409
 name: heterotrophic_nitrobacter_medium
 original_name: HETEROTROPHIC NITROBACTER MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.4
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 756 | DSMZ Medium: 756 (mediadive.medium:756)
+  | Aerobic: No'
 media_term:
-  preferred_term: DSMZ Medium 756
+  preferred_term: KOMODO Medium 756
   term:
-    id: mediadive.medium:756
+    id: komodo.medium:756
     label: HETEROTROPHIC NITROBACTER MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium756.pdf'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
-    value: '1.5'
+    value: '0.15'
     unit: G_PER_L
 - preferred_term: Peptone
   concentration:
-    value: '1.5'
+    value: '0.15'
     unit: G_PER_L
 - preferred_term: Na-pyruvate
   term:
     id: CHEBI:50144
+    label: sodium pyruvate
+  concentration:
+    value: '0.055'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
     label: Na-pyruvate
-  concentration:
-    value: '0.55'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
-    label: Na-pyruvate
-- preferred_term: CaCO3
+- preferred_term: NaNO2
   term:
-    id: CHEBI:3311
-    label: CaCO3
+    id: CHEBI:78870
+    label: NaNO2
   concentration:
-    value: '0.07'
+    value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001099
-    label: CaCO3
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:78870
+    label: NaNO2
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
@@ -77,18 +49,18 @@ ingredients:
   concentration:
     value: '0.0338'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
     label: MnSO4 x H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.0494'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -97,13 +69,16 @@ ingredients:
   concentration:
     value: '0.0431'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: (NH4)6Mo7O24
   concentration:
     value: '0.0371'
     unit: G_PER_L
+  term:
+    id: CHEBI:91249
+    label: ammonium molybdate
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -111,8 +86,8 @@ ingredients:
   concentration:
     value: '0.0973'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
@@ -121,33 +96,130 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
     label: CuSO4 x 5 H2O
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 7.4 with NaOH or KOH.
+- preferred_term: CaCO3
+  term:
+    id: CHEBI:3311
+    label: CaCO3
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
+    label: CaCO3
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  notes: pH adjustment (extracted from notes)
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:12.146718Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 756'
-- timestamp: '2026-03-13T06:19:08.154837Z'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 756'
+- timestamp: '2026-02-03T11:19:00.161646'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 756
+- timestamp: '2026-03-13T03:08:52.167771Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Added pH buffer: NaOH'
+- timestamp: '2026-03-13T06:19:40.503380Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:001888'
-- timestamp: '2026-03-17T06:30:41.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:006409'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:29:56.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:20.563499+00:00'
+- timestamp: '2026-03-17T19:45:57.815884+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "HETEROTROPHIC NITROBACTER MEDIUM" to "heterotrophic_nitrobacter_medium"
     for consistent matching
-merge_fingerprint: 5315c1ca30563dc1e36fe260aec91d44df46f6bce4ab8c7cea6e9746460c6ca2
+- timestamp: '2026-05-16T09:03:04.358877+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:26.090519+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 12 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:45.760565+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:58.527098+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_756_HETEROTROPHIC_NITROBACTER_MEDIUM, KOMODO_756b_10_MIXOTROPHIC_NITROBACTER_medium,
+    KOMODO_756c_AUTOTROPHIC_NITROBACTER_MEDIUM'
+- timestamp: '2026-08-06T03:04:58.527139+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 01686f461373af2a394b460a2a470b813934c600249c45dc98331d5c86e512fd
+  source: KOMODO_756_HETEROTROPHIC_NITROBACTER_MEDIUM.yaml, KOMODO_756b_10_MIXOTROPHIC_NITROBACTER_medium.yaml,
+    KOMODO_756c_AUTOTROPHIC_NITROBACTER_MEDIUM.yaml
+synonyms:
+- name: 10_mixotrophic_nitrobacter_medium
+  source: KOMODO
+  source_id: komodo.medium:756b
+  original_category: bacterial
+- name: autotrophic_nitrobacter_medium
+  source: KOMODO
+  source_id: komodo.medium:756c
+  original_category: bacterial
+categories:
+- bacterial
 merged_from:
-- heterotrophic_nitrobacter_medium
+- KOMODO_756_HETEROTROPHIC_NITROBACTER_MEDIUM
+- KOMODO_756b_10_MIXOTROPHIC_NITROBACTER_medium
+- KOMODO_756c_AUTOTROPHIC_NITROBACTER_MEDIUM
+merge_fingerprint: 01686f461373af2a394b460a2a470b813934c600249c45dc98331d5c86e512fd

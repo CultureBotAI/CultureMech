@@ -3,6 +3,7 @@ name: nutrient_agar_oxoid_cm3
 original_name: NUTRIENT AGAR (OXOID CM3)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 605
@@ -30,8 +31,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Agar
   term:
@@ -40,8 +41,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -63,6 +64,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "NUTRIENT AGAR (OXOID CM3)" to "nutrient_agar_oxoid_cm3"
     for consistent matching
+- timestamp: '2026-06-05T07:41:40.131265+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:51.672641+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 34b02165361f625f01ac3e2a29707666fd4cef83561d327103c44925d1d9dd2a
+  source: nutrient_agar_oxoid_cm3.yaml
 kg_microbe_match: mediadive.medium:101
 merge_fingerprint: 34b02165361f625f01ac3e2a29707666fd4cef83561d327103c44925d1d9dd2a
 merged_from:

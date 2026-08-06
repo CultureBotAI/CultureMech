@@ -3,6 +3,7 @@ name: brain_heart_infusion_2_nacl
 original_name: Brain Heart Infusion + 2% NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: NaCl
   concentration:
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -178,11 +179,23 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Brain Heart Infusion + 2% NaCl" to "brain_heart_infusion_2_nacl"
     for consistent matching
-- timestamp: '2026-04-17T06:29:10.219585+00:00'
+- timestamp: '2026-06-05T07:40:51.383070+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:33.414632+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: 1_10_brain_heart_infusion_medium_bhi, 1_5_brain_heart_infusion,
     brain_heart_infusion, brain_heart_infusion_2_nacl'
+- timestamp: '2026-08-06T03:04:33.414690+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 4 source recipe(s) on fingerprint 7f2ed13ceaece22351080426ee85921d70b89280ca13054fd513287793e20035
+  source: 1_10_brain_heart_infusion_medium_bhi.yaml, 1_5_brain_heart_infusion.yaml,
+    brain_heart_infusion.yaml, brain_heart_infusion_2_nacl.yaml
 synonyms:
 - name: 1_10_brain_heart_infusion_medium_bhi
   source: TOGO

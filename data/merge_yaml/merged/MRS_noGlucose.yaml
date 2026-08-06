@@ -1,6 +1,7 @@
 id: CultureMech:015637
 name: MRS_noGlucose
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Proteose Peptone
@@ -77,7 +78,7 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 52-90-4; MW: 121.16'
 description: Media for culturing lactobacilli without D-Glucose
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: MRS_noGlucose
@@ -91,8 +92,17 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015637'
+- timestamp: '2026-05-16T09:04:41.981108+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:06.841102+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2a8dc17d30149db9a74186aa951ddc2d23e56ec76883647d7ee7f12e27d29659
+  source: mrs_noglucose.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: ec7b09017f38a9f30210f1349e631374555f5484ea2865104f1329b76cfbb35a
+merge_fingerprint: 2a8dc17d30149db9a74186aa951ddc2d23e56ec76883647d7ee7f12e27d29659
 merged_from:
 - mrs_noglucose

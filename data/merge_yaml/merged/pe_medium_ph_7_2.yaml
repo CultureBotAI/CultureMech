@@ -3,6 +3,7 @@ name: pe_medium_ph_7_2
 original_name: PE MEDIUM (pH 7.2)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:
@@ -15,12 +16,12 @@ ingredients:
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '0.49456'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: Na glutamate
   term:
@@ -29,8 +30,8 @@ ingredients:
   concentration:
     value: '0.49456'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000432
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64220
     label: Na glutamate
 - preferred_term: Sodium succinate
   term:
@@ -39,8 +40,8 @@ ingredients:
   concentration:
     value: '0.49456'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001088
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63675
     label: Sodium succinate
 - preferred_term: Sodium acetate
   term:
@@ -49,8 +50,8 @@ ingredients:
   concentration:
     value: '0.49456'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
     label: Sodium acetate
 - preferred_term: Yeast extract
   concentration:
@@ -60,16 +61,10 @@ ingredients:
   concentration:
     value: '0.49456'
     unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
 - preferred_term: Na2S2O3
   term:
     id: CHEBI:132112
-    label: Na2S2O3
+    label: sodium thiosulfate
   concentration:
     value: '0.49456'
     unit: G_PER_L
@@ -84,8 +79,8 @@ ingredients:
     value: '6.07921'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 4.07921, 2.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000377
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63125
     label: Na3-EDTA
 - preferred_term: FeSO4 x H2O
   term:
@@ -94,8 +89,8 @@ ingredients:
   concentration:
     value: '1.09901'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000602
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75834
     label: FeSO4 x H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -104,8 +99,8 @@ ingredients:
   concentration:
     value: '24.4059'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -114,8 +109,8 @@ ingredients:
   concentration:
     value: '2.91089'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: NaCl
   term:
@@ -124,28 +119,28 @@ ingredients:
   concentration:
     value: '23.1683'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '75'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '78'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: Nicotinic acid
   term:
@@ -154,8 +149,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
     label: Nicotinic acid
 - preferred_term: Thiamine HCl
   term:
@@ -164,8 +159,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Biotin
   term:
@@ -174,8 +169,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: p-Aminobenzoic acid
   term:
@@ -184,8 +179,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
     label: p-Aminobenzoic acid
 - preferred_term: Vitamin B12
   term:
@@ -194,8 +189,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 - preferred_term: Calcium pantothenate
   term:
@@ -204,8 +199,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium pantothenate
 - preferred_term: Pyridoxine hydrochloride
   term:
@@ -214,8 +209,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001016
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
     label: Pyridoxine hydrochloride
 - preferred_term: Folic acid
   term:
@@ -224,8 +219,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
     label: Folic acid
 preparation_steps:
 - step_number: 1
@@ -262,11 +257,45 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "PE MEDIUM (pH 7.2)" to "pe_medium_ph_7_2" for consistent
     matching
-- timestamp: '2026-04-17T06:30:19.019640+00:00'
+- timestamp: '2026-06-05T07:41:41.049488+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 20 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:49.594388+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:37:35.727034+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:47:09.928576+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:52.388510+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: pe_medium_ph_6_8, pe_medium_ph_7_2'
+- timestamp: '2026-08-06T03:05:52.388564+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 4154a2fc82bc3ce06f2df484abc42d89fac7242e93535941e249a8146bd12f3f
+  source: pe_medium_ph_6_8.yaml, pe_medium_ph_7_2.yaml
 high_metal: true
+parent_media:
+  path: data/normalized_yaml/bacterial/pe_medium_ph_6_8.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002695
+  name: pe_medium_ph_6_8
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.
 synonyms:
 - name: pe_medium_ph_6_8
   source: MediaDive
@@ -277,4 +306,4 @@ categories:
 merged_from:
 - pe_medium_ph_6_8
 - pe_medium_ph_7_2
-merge_fingerprint: de21f7bcb7ef054b75926642646659cc735eab13035974d11559330e11834305
+merge_fingerprint: 4154a2fc82bc3ce06f2df484abc42d89fac7242e93535941e249a8146bd12f3f

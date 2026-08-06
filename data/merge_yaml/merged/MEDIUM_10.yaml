@@ -1,272 +1,340 @@
-id: CultureMech:002493
+id: CultureMech:007780
 name: medium_10
-original_name: MEDIUM 10
+original_name: Medium 10
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_value: 6.8
-media_term:
-  preferred_term: JCM Medium J133
-  term:
-    id: mediadive.medium:J133
-    label: MEDIUM 10
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=133'
 ingredients:
-- preferred_term: Trypticase peptone
+- preferred_term: Distilled water
   concentration:
-    value: '1.91022'
+    value: '1050.0'
     unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '0.477555'
-    unit: G_PER_L
-- preferred_term: Hemin
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component [Merged 3 duplicates: 850.0, 100.0, 100.0]'
   term:
-    id: CHEBI:50385
-    label: Hemin
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
-    label: Hemin
-- preferred_term: Glucose
-  term:
-    id: CHEBI:17234
-    label: Glucose
-  concentration:
-    value: '0.477555'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
-    label: Glucose
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Cellobiose
-  term:
-    id: CHEBI:17057
-    label: Cellobiose
-  concentration:
-    value: '0.477555'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001069
-    label: Cellobiose
-- preferred_term: Starch
-  term:
-    id: CHEBI:28017
-    label: Starch
-  concentration:
-    value: '0.477555'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
-    label: Starch
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: Agar
-  concentration:
-    value: '17.192'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
-- preferred_term: Resazurin
-  term:
-    id: CHEBI:8806
-    label: Resazurin
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
-    label: Resazurin
-- preferred_term: Toray silicone SH 5535
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: L-Cysteine HCl x H2O
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   term:
-    id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    id: CHEBI:17057
+    label: cellobiose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17057
+    label: cellobiose
+- preferred_term: Glucose
   concentration:
-    value: '10'
+    value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
-    label: L-Cysteine HCl x H2O
-- preferred_term: L-Ascorbic acid
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   term:
-    id: CHEBI:29073
-    label: L-Ascorbic acid
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Soluble starch
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Undefined component'
+  term:
+    id: CHEBI:28017
+    label: ''
+- preferred_term: Agar
+  concentration:
+    value: '18'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Trypticase peptone (BD-BBL)
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001080
-    label: L-Ascorbic acid
-- preferred_term: Na2SO3
-  term:
-    id: CHEBI:86477
-    label: Na2SO3
+  notes: 'Properties: Undefined component'
+- preferred_term: DL--α--Methyl butyric acid
   concentration:
-    value: '100'
+    value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000988
-    label: Na2SO3
-- preferred_term: Acetic acid
-  term:
-    id: CHEBI:15366
-    label: Acetic acid
-  concentration:
-    value: '17'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000342
-    label: Acetic acid
-- preferred_term: Propionic acid
-  term:
-    id: CHEBI:30768
-    label: Propionic acid
-  concentration:
-    value: '6'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000366
-    label: Propionic acid
-- preferred_term: n-Butyric acid
-  term:
-    id: CHEBI:30772
-    label: n-Butyric acid
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+- preferred_term: n--Butyric acid
   concentration:
     value: '4'
     unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   mediaingredientmech_term:
     id: MediaIngredientMech:000471
-    label: n-Butyric acid
-- preferred_term: iso-Butyric acid
+    label: n--Butyric acid
+- preferred_term: Acetic acid
+  concentration:
+    value: '17'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   term:
-    id: CHEBI:16135
-    label: iso-Butyric acid
+    id: CHEBI:15366
+    label: acetic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15366
+    label: acetic acid
+- preferred_term: n--Valeric acid
   concentration:
     value: '1'
     unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   mediaingredientmech_term:
-    id: MediaIngredientMech:000286
-    label: iso-Butyric acid
-- preferred_term: n-Valeric acid
-  term:
-    id: CHEBI:17418
-    label: n-Valeric acid
+    id: MediaIngredientMech:000353
+    label: n--Valeric acid
+- preferred_term: iso--Valeric acid
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000303
-    label: n-Valeric acid
-- preferred_term: iso-Valeric acid
-  term:
-    id: CHEBI:28484
-    label: iso-Valeric acid
-  concentration:
-    value: '1'
-    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   mediaingredientmech_term:
     id: MediaIngredientMech:000378
-    label: iso-Valeric acid
-- preferred_term: DL-alpha-Methyl butyric acid
-  term:
-    id: CHEBI:37070
-    label: DL-alpha-Methyl butyric acid
+    label: iso--Valeric acid
+- preferred_term: iso--Butyric acid
   concentration:
     value: '1'
     unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   mediaingredientmech_term:
-    id: MediaIngredientMech:000939
-    label: DL-alpha-Methyl butyric acid
+    id: MediaIngredientMech:000384
+    label: iso--Butyric acid
+- preferred_term: Propionic acid
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:30768
+    label: propionic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30768
+    label: propionic acid
 - preferred_term: K2HPO4
+  concentration:
+    value: '0.78'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:131527
-    label: K2HPO4
-  concentration:
-    value: '7.8'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-  concentration:
-    value: '4.7'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: NaCl
+  concentration:
+    value: '1.18'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: KH2PO4
   concentration:
-    value: '11.8'
+    value: '0.47'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
 - preferred_term: (NH4)2SO4
-  term:
-    id: CHEBI:62946
-    label: (NH4)2SO4
-  concentration:
-    value: '12'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: (NH4)2SO4
-- preferred_term: CaCl2
-  term:
-    id: CHEBI:3312
-    label: CaCl2
   concentration:
     value: '1.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
-    label: CaCl2
-- preferred_term: MgSO4 x H2O
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+- preferred_term: CaCl2
+  concentration:
+    value: '0.12'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:3312
+    label: calcium dichloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
+- preferred_term: MgSO4・H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:32599
-    label: MgSO4 x H2O
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4 x H2O
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 6.7-6.8.
+    label: magnesium sulfate
+media_term:
+  preferred_term: TOGO Medium M124
+  term:
+    id: TOGO:M124
+    label: Medium 10
+notes: 'Source: https://togomedium.org/medium/M124
+
+  Original source: JCM - JCM_M133
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=133'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:15.785618Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J133'
-- timestamp: '2026-03-13T06:19:13.795639Z'
+- timestamp: '2026-01-27T06:35:54.198082Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M124'
+- timestamp: '2026-01-28T19:48:18.282090Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:30.294639+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 9 solution(s) from ingredients
+- timestamp: '2026-03-13T03:08:59.251194Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:51.408258Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002493'
-- timestamp: '2026-03-17T06:30:47.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:007780'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name; Added default
+    solution name; Added default solution name; Added default solution name; Added
+    default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:30:04.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:26.957050+00:00'
+- timestamp: '2026-03-17T19:46:09.829585+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 10" to "medium_10" for consistent matching
-merge_fingerprint: 5dfd1cf4a469be6bf4ebc7cd1ae7d6a25988042a787e3c6f01a7135cea99daea
+  notes: Normalized name from "Medium 10" to "medium_10" for consistent matching
+- timestamp: '2026-05-16T09:03:08.833283+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:31.742309+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 11 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:47.381136+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:07.121453+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 7f1b2003c2be179752ccf4833948262b3a97a8e52bb8c904beefe937fd0ec06f
+  source: TOGO_M124_Medium_10.yaml
+solutions:
+- preferred_term: 0.1% Resazurin solution
+  composition: []
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+  name: Unknown solution
+- preferred_term: 0.2% Hemin solution
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Solution'
+  name: Unknown solution
+- preferred_term: 4% Na2SO3 solution
+  composition: []
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
+    Solution'
+  name: Unknown solution
+- preferred_term: 10% Toray silicone SH 5535 solution
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Defoaming agent; Properties: Defined component, Solution'
+  name: Unknown solution
+- preferred_term: 25% L--Ascorbic acid solution
+  composition: []
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Solution, Defined component'
+  name: Unknown solution
+- preferred_term: 5% L--Cysteine・HCl・H2O solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Solution'
+  name: Unknown solution
+- preferred_term: VFA solution (see below)
+  composition: []
+  concentration:
+    value: '3.1'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: Salt solution No. 1 (see below)
+  composition: []
+  concentration:
+    value: '37.5'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: Salt solution No. 2 (see below)
+  composition: []
+  concentration:
+    value: '37.5'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: 7f1b2003c2be179752ccf4833948262b3a97a8e52bb8c904beefe937fd0ec06f
 merged_from:
-- medium_10
+- TOGO_M124_Medium_10

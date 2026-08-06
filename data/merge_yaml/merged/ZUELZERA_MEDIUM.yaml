@@ -3,6 +3,7 @@ name: zuelzera_medium
 original_name: ZUELZERA MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.6
 media_term:
@@ -19,8 +20,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Yeast extract
   concentration:
@@ -34,15 +35,18 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: Na-thioglycolate
   term:
     id: CHEBI:86481
-    label: Na-thioglycolate
+    label: sodium thioglycolate
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000569
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86481
     label: Na-thioglycolate
 - preferred_term: Agar
   term:
@@ -52,8 +56,8 @@ ingredients:
     value: '10'
     unit: G_PER_L
   notes: Optional ingredient (for stabs)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -84,6 +88,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ZUELZERA MEDIUM" to "zuelzera_medium" for consistent
     matching
-merge_fingerprint: a007d4deab6b827e1fcae0fbc230f0634f2a02309a5f4c7871f4e3fcff8cb385
+- timestamp: '2026-06-05T07:41:56.648130+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:14.751360+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:03.749048+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 4dd11162ff6b957837ee68624ef7120ba1f8577b9d62fa0258ecbcfe195ae305
+  source: zuelzera_medium.yaml
+merge_fingerprint: 4dd11162ff6b957837ee68624ef7120ba1f8577b9d62fa0258ecbcfe195ae305
 merged_from:
 - zuelzera_medium

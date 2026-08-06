@@ -3,6 +3,7 @@ name: blood_agar_tsa_with_5_sheep_blood_remel
 original_name: Blood agar (TSA with 5% sheep blood) (Remel)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: demineralized water
@@ -14,9 +15,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Demineralized water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: demineralized water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Demineralized water
 - preferred_term: Sheep blood
   concentration:
     value: '5'
@@ -177,9 +178,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.500977'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:05.758493Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -193,6 +194,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Blood agar (TSA with 5% sheep blood) (Remel)" to "blood_agar_tsa_with_5_sheep_blood_remel"
     for consistent matching
+- timestamp: '2026-05-16T09:03:25.927472+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:51.168242+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:25.624168+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 84f8312d0a644ce09d1609f2fcb3bce4511ec771a9573fec550a9d41096ca625
+  source: blood_agar_tsa_with_5_sheep_blood_remel.yaml
 merge_fingerprint: 84f8312d0a644ce09d1609f2fcb3bce4511ec771a9573fec550a9d41096ca625
 merged_from:
 - blood_agar_tsa_with_5_sheep_blood_remel

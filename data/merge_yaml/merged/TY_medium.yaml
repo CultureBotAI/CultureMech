@@ -1,70 +1,108 @@
-id: CultureMech:009391
+id: CultureMech:003854
 name: ty_medium
 original_name: TY medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: KOMODO Medium 1143
+  term:
+    id: komodo.medium:1143
+    label: TY medium
+notes: 'Source: KOMODO ModelSEED | ID: 1143 | DSMZ Medium: 1143 (mediadive.medium:1143)
+  | Aerobic: No'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: CaCl2・6 H2O
-  concentration:
-    value: '1.3'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:91243
-    label: ''
-- preferred_term: Difco Bacto-yeast extract
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Difco Bacto- Tryptone
+- preferred_term: Tryptone
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M2849
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
   term:
-    id: TOGO:M2849
-    label: TY medium
-notes: 'Source: https://togomedium.org/medium/M2849'
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.9'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:57.355534Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2849'
-- timestamp: '2026-01-28T19:48:29.712131Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:20:06.012663Z'
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1143'
+- timestamp: '2026-02-03T11:19:08.748707'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1143
+- timestamp: '2026-03-13T06:19:22.730100Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:009391'
-- timestamp: '2026-03-17T06:30:28.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:003854'
+- timestamp: '2026-03-17T06:30:22.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:24.946399+00:00'
+- timestamp: '2026-03-17T19:45:37.160972+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "TY medium" to "ty_medium" for consistent matching
-merge_fingerprint: 2f67177abd95c6993fc7af876d9a5c1965c82f4824f436c779992c3b07b1915d
+- timestamp: '2026-06-05T07:40:19.333128+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:40.552987+00:00'
+  curator: recipe-merger
+  action: Merged 5 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_1143_TY_medium, medium_1143_modified_for_dsm_23293, ty_medium,
+    ytc_medium, tryptone_yeastextrakt_medium'
+- timestamp: '2026-08-06T03:04:40.553031+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 5 source recipe(s) on fingerprint d65f4314989938311f9bbd1a3329609b5fb0a68cf6cb6f57c6474c5ed6eb45f6
+  source: KOMODO_1143_TY_medium.yaml, medium_1143_modified_for_dsm_23293.yaml, ty_medium.yaml,
+    ytc_medium.yaml, tryptone_yeastextrakt_medium.yaml
+kg_microbe_match: mediadive.medium:1143
+parent_media:
+  path: data/normalized_yaml/bacterial/ty_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000581
+  name: ty_medium
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and concentration
+    signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.
+synonyms:
+- name: medium_1143_modified_for_dsm_23293
+  source: KOMODO
+  source_id: komodo.medium:1143_23293
+  original_category: bacterial
+- name: ytc_medium
+  source: MediaDive
+  source_id: mediadive.medium:1384
+  original_category: bacterial
+- name: tryptone_yeastextrakt_medium
+  source: MediaDive
+  source_id: mediadive.medium:1379
+  original_category: fungal
+categories:
+- bacterial
+- fungal
 merged_from:
-- TOGO_M2849_TY_medium
+- KOMODO_1143_TY_medium
+- medium_1143_modified_for_dsm_23293
+- ty_medium
+- ytc_medium
+- tryptone_yeastextrakt_medium
+merge_fingerprint: d65f4314989938311f9bbd1a3329609b5fb0a68cf6cb6f57c6474c5ed6eb45f6

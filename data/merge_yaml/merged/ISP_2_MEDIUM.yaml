@@ -3,6 +3,7 @@ name: isp_2_medium
 original_name: ISP 2 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
@@ -27,8 +28,8 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000243
+  mediaingredientmech_chebi_term:
+    id: CHEBI:4167
     label: Dextrose
 - preferred_term: Agar
   term:
@@ -37,8 +38,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -63,12 +64,35 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "ISP 2 MEDIUM" to "isp_2_medium" for consistent matching
-- timestamp: '2026-04-17T06:30:07.317127+00:00'
+- timestamp: '2026-06-05T07:41:09.668580+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:38.786391+00:00'
   curator: recipe-merger
   action: Merged 9 duplicate recipes into canonical record
   notes: 'Sources: isp2_medium, isp_2_medium, medium_987_modified_for_dsm_15665, medium_987_modified_for_dsm_41839,
     medium_987_modified_for_dsm_44928, medium_987_modified_for_dsm_45080, medium_987_modified_for_dsm_45096,
     medium_987_modified_for_dsm_45452, medium_987_modified_for_dsm_45783'
+- timestamp: '2026-08-06T03:05:38.786453+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 9 source recipe(s) on fingerprint 92f23da652855286c1f0f1688f9ead05bb6b6551c2585ee28eb7b6a407fa9e9a
+  source: isp2_medium.yaml, isp_2_medium.yaml, medium_987_modified_for_dsm_15665.yaml,
+    medium_987_modified_for_dsm_41839.yaml, medium_987_modified_for_dsm_44928.yaml,
+    medium_987_modified_for_dsm_45080.yaml, medium_987_modified_for_dsm_45096.yaml,
+    medium_987_modified_for_dsm_45452.yaml, medium_987_modified_for_dsm_45783.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/isp2_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006956
+  name: isp2_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.
 synonyms:
 - name: isp2_medium
   source: KOMODO

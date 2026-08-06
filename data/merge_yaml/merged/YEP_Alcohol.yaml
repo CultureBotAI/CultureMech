@@ -3,6 +3,7 @@ name: yep_alcohol
 original_name: YEP Alcohol
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -28,6 +29,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Simple component, Defined component,
     Organic compound'
+  term:
+    id: CHEBI:16236
+    label: ''
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -36,9 +40,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Peptone
   concentration:
     value: '10'
@@ -76,6 +80,17 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "YEP Alcohol" to "yep_alcohol" for consistent matching
-merge_fingerprint: e7a34209acc7e5f57e1547ea7febcfe02453784f4cf6a243de000efc71f19428
+- timestamp: '2026-06-05T07:41:55.783844+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:03.181059+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 5de7351064f2c8bffd09d3432d2f82f03ac98ba51c722cfd195978361288575b
+  source: yep_alcohol.yaml
+merge_fingerprint: 5de7351064f2c8bffd09d3432d2f82f03ac98ba51c722cfd195978361288575b
 merged_from:
 - yep_alcohol

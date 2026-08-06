@@ -1,0 +1,141 @@
+id: CultureMech:009724
+name: thermococcus_medium_ph_6_0
+original_name: Thermococcus Medium (pH 6.0)
+category: archaea
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: H2SO4
+  notes: Extracted from recipe notes (pH buffer)
+  data_quality_flags:
+  - extracted_from_notes
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26836
+    label: H2SO4
+  term:
+    id: CHEBI:26836
+    label: ''
+media_term:
+  preferred_term: TOGO Medium M345
+  term:
+    id: TOGO:M345
+    label: Thermococcus Medium (pH 6.0)
+notes: 'Source: https://togomedium.org/medium/M345
+
+  Original source: JCM - JCM_M350
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=350'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.882013Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M345'
+- timestamp: '2026-01-28T19:48:17.781334Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: H2SO4'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-03-09T08:04:29.454449+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:08.373875Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009724'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:30:03.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:27.363114+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Thermococcus Medium (pH 6.0)" to "thermococcus_medium_ph_6_0"
+    for consistent matching
+- timestamp: '2026-05-16T09:03:17.268558+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:40.575108+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:22.670162+00:00'
+  curator: recipe-merger
+  action: Merged 8 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_184_DESULFUROCOCCUS_medium, KOMODO_723_PICROPHILUS_medium,
+    TOGO_M165_Sulfolobus_Medium_B, TOGO_M345_Thermococcus_Medium_pH_6.0, salt_base_solution_medium_1189,
+    salt_solution_medium_592, trace_element_solution_medium_882, wolfes_mineral_elixir_medium_792'
+- timestamp: '2026-08-06T03:04:22.670220+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 8 source recipe(s) on fingerprint a8e449c13e5077f302afadf992e9a630e9c8e75f0beec6144652e97c67690b61
+  source: KOMODO_184_DESULFUROCOCCUS_medium.yaml, KOMODO_723_PICROPHILUS_medium.yaml,
+    TOGO_M165_Sulfolobus_Medium_B.yaml, TOGO_M345_Thermococcus_Medium_pH_6.0.yaml,
+    salt_base_solution_medium_1189.yaml, salt_solution_medium_592.yaml, trace_element_solution_medium_882.yaml,
+    wolfes_mineral_elixir_medium_792.yaml
+solutions:
+- preferred_term: Thermococcus medium (see Medium [M273])
+  composition: []
+  notes: Cross-reference to Medium M273
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution
+synonyms:
+- name: desulfurococcus_medium
+  source: KOMODO
+  source_id: komodo.medium:184
+  original_category: archaea
+- name: picrophilus_medium
+  source: KOMODO
+  source_id: komodo.medium:723
+  original_category: archaea
+- name: sulfolobus_medium_b
+  source: TOGO
+  source_id: TOGO:M165
+  original_category: archaea
+- name: salt_base_solution_medium_1189
+  source: KOMODO
+  source_id: komodo.medium:3045
+  original_category: bacterial
+- name: salt_solution_medium_592
+  source: KOMODO
+  source_id: komodo.medium:4002
+  original_category: bacterial
+- name: trace_element_solution_medium_882
+  source: KOMODO
+  source_id: komodo.medium:2052
+  original_category: bacterial
+- name: wolfes_mineral_elixir_medium_792
+  source: KOMODO
+  source_id: komodo.medium:2106
+  original_category: bacterial
+categories:
+- archaea
+- bacterial
+merged_from:
+- KOMODO_184_DESULFUROCOCCUS_medium
+- KOMODO_723_PICROPHILUS_medium
+- TOGO_M165_Sulfolobus_Medium_B
+- TOGO_M345_Thermococcus_Medium_pH_6.0
+- salt_base_solution_medium_1189
+- salt_solution_medium_592
+- trace_element_solution_medium_882
+- wolfes_mineral_elixir_medium_792
+merge_fingerprint: a8e449c13e5077f302afadf992e9a630e9c8e75f0beec6144652e97c67690b61

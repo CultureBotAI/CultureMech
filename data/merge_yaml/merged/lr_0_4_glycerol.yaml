@@ -3,6 +3,7 @@ name: lr_0_4_glycerol
 original_name: Lr 0.4% glycerol
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Glycerol
@@ -13,8 +14,8 @@ ingredients:
     value: '43.436'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glyc'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: Sodium hydroxide
   concentration:
@@ -27,6 +28,9 @@ ingredients:
   concentration:
     value: '17.6359'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -34,13 +38,16 @@ ingredients:
   concentration:
     value: '0.02168'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.000108'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
@@ -48,9 +55,9 @@ ingredients:
   concentration:
     value: '0.12676'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -80,6 +87,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Lr 0.4% glycerol" to "lr_0_4_glycerol" for consistent
     matching
+- timestamp: '2026-06-05T07:41:11.421246+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:40.562845+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 6731d53d1f342a05e42f9ae6b9480df71be172d65d18efd383aea7b01337de1e
+  source: lr_0_4_glycerol.yaml
 media_term:
   preferred_term: MediaDB Medium 195
   term:
@@ -91,6 +109,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 4915651cc394f447e0186f1c93bbcd0e016eed39f0c4a71459a1bef96c2673b3
+merge_fingerprint: 6731d53d1f342a05e42f9ae6b9480df71be172d65d18efd383aea7b01337de1e
 merged_from:
 - lr_0_4_glycerol

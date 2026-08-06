@@ -3,6 +3,7 @@ name: lactic_acid_whey_medium_456
 original_name: Lactic acid whey (medium 456)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 5.5
 notes: 'pH buffer: lactic acid | Source: KOMODO ModelSEED | ID: 3137 | DSMZ Medium:
@@ -32,14 +33,23 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:004985'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:34.662519'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: lactic'
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T19:45:44.864631+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "Lactic acid whey (medium 456)" to "lactic_acid_whey_medium_456"
     for consistent matching
+- timestamp: '2026-05-16T09:03:38.686836+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:05:39.875226+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 07001e8089072aa27db4ede1eb5521b5cf152c8928f88f70bf3129db87b39f6d
+  source: lactic_acid_whey_medium_456.yaml
 merge_fingerprint: 07001e8089072aa27db4ede1eb5521b5cf152c8928f88f70bf3129db87b39f6d
 merged_from:
 - lactic_acid_whey_medium_456

@@ -1,112 +1,122 @@
-id: CultureMech:010353
+id: CultureMech:006146
 name: acetobacter_europaeus_medium
-original_name: Acetobacter Europaeus Medium
+original_name: ACETOBACTER EUROPAEUS medium
 category: bacterial
 medium_type: COMPLEX
-physical_state: SOLID_AGAR
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '930'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+composition_type: UNDEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 631
   term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
+    id: komodo.medium:631
+    label: ACETOBACTER EUROPAEUS medium
+notes: 'Source: KOMODO ModelSEED | ID: 631 | DSMZ Medium: 631 (mediadive.medium:631)
+  | Aerobic: No'
+ingredients:
 - preferred_term: Yeast extract
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Ethanol
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Organic compound, Simple component, Defined
-    component'
-  term:
-    id: CHEBI:16236
-    label: ethanol
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000686
-    label: Ethanol
-- preferred_term: Acetic acid
-  concentration:
-    value: '40'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
-    component'
-  term:
-    id: CHEBI:15366
-    label: acetic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000342
-    label: Acetic acid
-- preferred_term: Glucose
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
-- preferred_term: Agar
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
 - preferred_term: Peptone
   concentration:
     value: '3'
     unit: G_PER_L
-media_term:
-  preferred_term: TOGO Medium M931
+- preferred_term: Glucose
   term:
-    id: TOGO:M931
-    label: Acetobacter Europaeus Medium
-notes: 'Source: https://togomedium.org/medium/M931
-
-  Original source: JCM - JCM_M890
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=890'
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: Glucose
+- preferred_term: Acetic acid
+  term:
+    id: CHEBI:15366
+    label: Acetic acid
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15366
+    label: Acetic acid
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16236
+    label: Ethanol
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.983461Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M931'
-- timestamp: '2026-01-28T19:48:12.761173Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:20:13.212997Z'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 631'
+- timestamp: '2026-02-03T11:19:17.590920'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 631
+- timestamp: '2026-03-13T06:19:38.614989Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:010353'
-- timestamp: '2026-03-17T06:29:52.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:006146'
+- timestamp: '2026-03-17T06:30:50.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:32.192693+00:00'
+- timestamp: '2026-03-17T19:45:55.566717+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Acetobacter Europaeus Medium" to "acetobacter_europaeus_medium"
+  notes: Normalized name from "ACETOBACTER EUROPAEUS medium" to "acetobacter_europaeus_medium"
     for consistent matching
-merge_fingerprint: 742559d2764d065ce97c0d95f5b2161249f738647cd608c110b294ca52f861b5
+- timestamp: '2026-06-05T07:40:25.081771+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:56.433152+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_631_ACETOBACTER_EUROPAEUS_medium, acetobacter_europaeus_medium,
+    acetobacter_lambicus_medium, ae_broth'
+- timestamp: '2026-08-06T03:04:56.433198+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 4 source recipe(s) on fingerprint 4058dbbcc8f3517ea40757f99211edd4e289b9abbd6c477b9f84660a84a6415a
+  source: KOMODO_631_ACETOBACTER_EUROPAEUS_medium.yaml, acetobacter_europaeus_medium.yaml,
+    acetobacter_lambicus_medium.yaml, ae_broth.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/acetobacter_europaeus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001762
+  name: acetobacter_europaeus_medium
+  notes: KOMODO record states DSMZ Medium 631 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
+synonyms:
+- name: acetobacter_lambicus_medium
+  source: MediaDive
+  source_id: mediadive.medium:1522
+  original_category: bacterial
+- name: ae_broth
+  source: MediaDive
+  source_id: mediadive.medium:J96
+  original_category: bacterial
+categories:
+- bacterial
 merged_from:
-- TOGO_M931_Acetobacter_Europaeus_Medium
+- KOMODO_631_ACETOBACTER_EUROPAEUS_medium
+- acetobacter_europaeus_medium
+- acetobacter_lambicus_medium
+- ae_broth
+merge_fingerprint: 4058dbbcc8f3517ea40757f99211edd4e289b9abbd6c477b9f84660a84a6415a

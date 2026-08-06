@@ -1,6 +1,7 @@
 id: CultureMech:015534
 name: KB-half
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Bacto Peptone
@@ -21,8 +22,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   term:
-    id: CHEBI:15978
-    label: sn-glycerol 3-phosphate
+    id: CHEBI:17754
+    label: Glycerol
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-81-5; MW: 92.09'
 - preferred_term: Magnesium sulfate
   concentration:
@@ -35,7 +36,7 @@ ingredients:
     120.37'
 description: King's medium B half strength
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: KB-half
@@ -49,20 +50,46 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015534'
-- timestamp: '2026-04-17T06:30:29.552739+00:00'
+- timestamp: '2026-05-16T09:04:40.737533+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:52.622721+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:06:05.289865+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: kb, kb_half'
+- timestamp: '2026-08-06T03:06:05.289902+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 124b5b9a1b05e6c02ca7df8fa7cdc5df23929920380ada0025cd2a573fef47bf
+  source: kb.yaml, kb_half.yaml
 data_quality_flags:
 - has_unmapped_ingredients
+parent_media:
+  path: data/normalized_yaml/specialized/kb.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:015533
+  name: KB
+  notes: Both records are specialized KB liquid formulations; the child is explicitly
+    labeled KB-half and all parsed components are half-strength.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- 'KB-half halves all parsed KB components: Bacto peptone 10 to 5 g/L, K2HPO4 1.5
+  to 0.75 g/L, glycerol 15 to 7.5 g/L, and magnesium sulfate 0.6 to 0.3 g/L.'
 original_name: KB-half
 synonyms:
 - name: KB
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 categories:
-- SPECIALIZED
+- specialized
 merged_from:
 - kb
 - kb_half
-merge_fingerprint: 046426b164adf7c3e395dfa3c604d2391f34b76a56f18598f581c6103fbc3ce9
+merge_fingerprint: 124b5b9a1b05e6c02ca7df8fa7cdc5df23929920380ada0025cd2a573fef47bf

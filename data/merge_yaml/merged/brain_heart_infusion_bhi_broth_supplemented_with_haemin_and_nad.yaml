@@ -3,6 +3,7 @@ name: brain_heart_infusion_bhi_broth_supplemented_with_haemin_and_nad
 original_name: Brain–heart infusion (BHI) broth supplemented with haemin and NAD
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Haemin
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:50385
     label: Haemin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
     label: Haemin
 - preferred_term: NAD
   concentration:
@@ -164,11 +165,23 @@ curation_history:
   notes: Normalized name from "Brain–heart infusion (BHI) broth supplemented with
     haemin and NAD" to "brain_heart_infusion_bhi_broth_supplemented_with_haemin_and_nad"
     for consistent matching
-- timestamp: '2026-04-17T06:29:55.952745+00:00'
+- timestamp: '2026-06-05T07:40:51.468218+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:25.133437+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: bhi_liquid_supplemented_with_haemin_and_nad, brain_heart_infusion_bhi_broth_supplemented_with_15_g_ml_nad_and_15_g_ml_haemin,
     brain_heart_infusion_bhi_broth_supplemented_with_haemin_and_nad'
+- timestamp: '2026-08-06T03:05:25.133483+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 2edf459f064afe928b7123970e6d872784530a9e0efcf00210d5ab7d9eaa5f02
+  source: bhi_liquid_supplemented_with_haemin_and_nad.yaml, brain_heart_infusion_bhi_broth_supplemented_with_15_g_ml_nad_and_15_g_ml_haemin.yaml,
+    brain_heart_infusion_bhi_broth_supplemented_with_haemin_and_nad.yaml
 synonyms:
 - name: bhi_liquid_supplemented_with_haemin_and_nad
   source: TOGO

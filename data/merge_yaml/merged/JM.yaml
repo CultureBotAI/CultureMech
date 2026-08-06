@@ -1,177 +1,131 @@
-id: CultureMech:000350
+id: CultureMech:000074
 name: jm
-original_name: JM
-category: bacterial
-medium_type: DEFINED
-physical_state: SOLID_AGAR
-media_term:
-  preferred_term: CCAP Medium C40
-  term:
-    id: mediadive.medium:C40
-    label: JM
-notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_JM.pdf'
+category: algae
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater
+  algae cultivation. Recipe available in PDF format.
+notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_JM.pdf
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
+applications:
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
+curation_history:
+- curator: ccap-import
+  action: Imported from CCAP Culture Collection
+  notes: 'Source ID: JM, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_JM.pdf'
+  timestamp: '2026-01-28T00:00:00+00:00'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-02-03T11:26:43.509913'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:18:53.090554Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000074'
+- timestamp: '2026-03-17T19:45:04.044825+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "JM" to "jm" for consistent matching
+- timestamp: '2026-04-04T12:54:54.765364'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 5 curated ingredients from CCAP
+  source: CCAP Medium MR_JM.pdf
+- timestamp: '2026-05-16T08:57:02.405104+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(3 entries)
+- timestamp: '2026-05-16T09:02:56.602548+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
+    category->lowercase=1
+- timestamp: '2026-08-06T03:04:19.924919+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 909e5c20b9eeeeae9e96395cf78ac04331389902587f3994ac426ab45e383264
+  source: jm.yaml
+references:
+- reference: CCAP:JM
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_JM.pdf
 ingredients:
-- preferred_term: Ca(NO3)2 x 4 H2O
-  term:
-    id: CHEBI:86159
-    label: Ca(NO3)2 x 4 H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000586
-    label: Ca(NO3)2 x 4 H2O
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-  concentration:
-    value: '2.34'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: NaHCO3
-  term:
-    id: CHEBI:32139
-    label: NaHCO3
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
-- preferred_term: NaNO3
-  term:
-    id: CHEBI:63005
-    label: NaNO3
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000171
-    label: NaNO3
-- preferred_term: Na2HPO4 x 12 H2O
-  term:
-    id: CHEBI:34683
-    label: Na2HPO4 x 12 H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
-    label: Na2HPO4 x 12 H2O
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
-- preferred_term: FeNa-EDTA
-  concentration:
-    value: '2.25'
-    unit: G_PER_L
-- preferred_term: Na2-EDTA
+- preferred_term: Na EDTA
   term:
     id: CHEBI:64734
-    label: Na2-EDTA
+    label: Na EDTA
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.765340'
+    ontology_source: CHEBI
   concentration:
-    value: '2.25'
+    value: '0.45'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
-    label: Na2-EDTA
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '2.48'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
+  source: CCAP Medium MR_JM.pdf
+  notes: From CCAP Medium MR_JM.pdf; Curated from CCAP Medium MR_JM.pdf specification
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
     label: MnCl2 x 4 H2O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.765352'
+    ontology_source: CHEBI
   concentration:
-    value: '1.39'
+    value: '0.278'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
-    label: MnCl2 x 4 H2O
-- preferred_term: (NH4)6Mo7O24 x 4 H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Cyanocobalamine
-  concentration:
-    value: '0.04'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001039
-    label: Cyanocobalamine
+  source: CCAP Medium MR_JM.pdf
+  notes: From CCAP Medium MR_JM.pdf; Curated from CCAP Medium MR_JM.pdf specification
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
     label: Thiamine HCl
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.765355'
+    ontology_source: CHEBI
   concentration:
-    value: '0.04'
+    value: '0.008'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
-    label: Thiamine HCl
-- preferred_term: Biotine
+  source: CCAP Medium MR_JM.pdf
+  notes: From CCAP Medium MR_JM.pdf; Curated from CCAP Medium MR_JM.pdf specification
+- preferred_term: Biotin
   term:
     id: CHEBI:15956
-    label: Biotine
+    label: Biotin
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.765357'
+    ontology_source: CHEBI
   concentration:
-    value: '0.04'
+    value: '0.008'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
-    label: Biotine
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: "Make up to 1 litre with deionized water. For agar, add 15.0 g per\
-    \ litre of Bacteriological Agar\r\n(Thermo Scientific&trade; Oxoid&trade; Agar\
-    \ No.1). Autoclave at 15 psi for 15 minutes."
-applications:
-- Microbial cultivation
-curation_history:
-- timestamp: '2026-01-26T17:53:19.606448Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: CCAP, ID: C40'
-- timestamp: '2026-03-13T06:18:54.660997Z'
-  curator: culturemech-id-assigner-v1.0
-  action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000350'
-- timestamp: '2026-03-17T06:29:42.000000Z'
-  curator: mediaingredientmech-enrichment-v1.0
-  action: Added MediaIngredientMech links
-  notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:05.656435+00:00'
-  curator: normalize_media_names_to_snake_case.py
-  action: NAME_NORMALIZED
-  notes: Normalized name from "JM" to "jm" for consistent matching
-merge_fingerprint: cdb682167114ced4c3848c0124dc43e7fc68e1c975d89344daf7232aa88b34f1
+  source: CCAP Medium MR_JM.pdf
+  notes: From CCAP Medium MR_JM.pdf; Curated from CCAP Medium MR_JM.pdf specification
+- preferred_term: Make up to 1 litre with deionised water. For agar, add
+  notes: Ontology mapping not yet available; From CCAP Medium MR_JM.pdf; Curated from
+    CCAP Medium MR_JM.pdf specification
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: CCAP Medium MR_JM.pdf
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- curation_method:automated_expert_mapping
+original_name: JM
+merge_fingerprint: 909e5c20b9eeeeae9e96395cf78ac04331389902587f3994ac426ab45e383264
 merged_from:
 - jm

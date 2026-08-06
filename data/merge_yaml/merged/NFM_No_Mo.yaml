@@ -1,6 +1,7 @@
 id: CultureMech:015651
 name: NFM No Mo
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Na2HPO4
@@ -17,7 +18,7 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:63036
-    label: ''
+    label: potassium dihydrogen phosphate
 - preferred_term: Nitrilotriacetic acid
   concentration:
     value: '0.02'
@@ -133,7 +134,7 @@ ingredients:
 description: Harwood UW defined media for growing RPal, N2 is nitrogen source, no
   Mo added
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: NFM No Mo
@@ -147,8 +148,21 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015651'
+- timestamp: '2026-05-16T09:04:42.077273+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-10T07:47:15.553359+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:06.957618+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 027cd60564cf279210d65ff910eb7cdb6de07720bf952003c63a4b0c55122082
+  source: nfm_no_mo.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: 5d23bcd7846c61bdec0ba9c39e39396d746538b4ab3dbdbaa70a24cd322a25e9
+merge_fingerprint: 027cd60564cf279210d65ff910eb7cdb6de07720bf952003c63a4b0c55122082
 merged_from:
 - nfm_no_mo

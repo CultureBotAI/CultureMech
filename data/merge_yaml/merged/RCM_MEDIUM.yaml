@@ -3,6 +3,7 @@ name: rcm_medium
 original_name: RCM MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.8
 media_term:
@@ -20,6 +21,9 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -43,6 +47,11 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "RCM MEDIUM" to "rcm_medium" for consistent matching
-merge_fingerprint: fcbb91cd9cd27fd5e3647906ac8150b6907721524caccaa060330cce4d993c1c
+- timestamp: '2026-08-06T03:05:54.365639+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 6bd1738c83da1e7c989f90e75b270f380a2a740b703a8155dc491190842c0bbe
+  source: rcm_medium.yaml
+merge_fingerprint: 6bd1738c83da1e7c989f90e75b270f380a2a740b703a8155dc491190842c0bbe
 merged_from:
 - rcm_medium

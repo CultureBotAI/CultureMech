@@ -3,8 +3,11 @@ name: pirellula_medium_m31_py
 original_name: PIRELLULA MEDIUM (M31 PY)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_range: 7.5-8.5
+ph_range:
+  min: 7.5
+  max: 8.5
 media_term:
   preferred_term: DSMZ Medium 1438
   term:
@@ -28,8 +31,8 @@ ingredients:
     value: '3.440263'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.105263, 3.335]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -38,13 +41,16 @@ ingredients:
   concentration:
     value: '0.105263'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: Tris-HCl buffer
   concentration:
     value: '50'
     unit: G_PER_L
+  term:
+    id: CHEBI:9754
+    label: ''
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -52,8 +58,8 @@ ingredients:
   concentration:
     value: '18.9474'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: N-Acetylglucosamine
   term:
@@ -62,8 +68,8 @@ ingredients:
   concentration:
     value: '40'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000797
+  mediaingredientmech_chebi_term:
+    id: CHEBI:59640
     label: N-Acetylglucosamine
 - preferred_term: Na2HPO4 x 2 H2O
   term:
@@ -72,8 +78,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4 x 2 H2O
 - preferred_term: Vitamin B12
   term:
@@ -82,8 +88,8 @@ ingredients:
   concentration:
     value: '0.0002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 - preferred_term: Biotin
   term:
@@ -92,8 +98,8 @@ ingredients:
   concentration:
     value: '0.004'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
@@ -102,8 +108,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000160
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132751
     label: Thiamine-HCl x 2 H2O
 - preferred_term: Calcium pantothenate
   term:
@@ -112,8 +118,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium pantothenate
 - preferred_term: Folic acid
   term:
@@ -122,8 +128,8 @@ ingredients:
   concentration:
     value: '0.004'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
     label: Folic acid
 - preferred_term: Riboflavin
   term:
@@ -132,8 +138,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: Nicotinamide
   term:
@@ -142,8 +148,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000539
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17154
     label: Nicotinamide
 - preferred_term: p-Aminobenzoic acid
   term:
@@ -152,8 +158,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
     label: p-Aminobenzoic acid
 - preferred_term: Pyridoxine hydrochloride
   term:
@@ -162,8 +168,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001016
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
     label: Pyridoxine hydrochloride
 - preferred_term: Nitrilotriacetic acid
   term:
@@ -172,8 +178,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
     label: Nitrilotriacetic acid
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -182,13 +188,16 @@ ingredients:
   concentration:
     value: '29.7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: (NH4)6Mo7O24 x 4 H2O
   concentration:
     value: '0.00925'
     unit: G_PER_L
+  term:
+    id: CHEBI:91249
+    label: ammonium molybdate
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -197,8 +206,8 @@ ingredients:
     value: '0.599'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.099, 0.5]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: Na-EDTA
   term:
@@ -207,8 +216,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
     label: Na-EDTA
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -217,8 +226,8 @@ ingredients:
   concentration:
     value: '1.095'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: MnSO4 x H2O
   term:
@@ -227,8 +236,8 @@ ingredients:
   concentration:
     value: '0.154'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
     label: MnSO4 x H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
@@ -237,8 +246,8 @@ ingredients:
   concentration:
     value: '0.0392'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
     label: CuSO4 x 5 H2O
 - preferred_term: Co(NO3)2 x 6 H2O
   term:
@@ -247,13 +256,16 @@ ingredients:
   concentration:
     value: '0.0248'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000525
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86214
     label: Co(NO3)2 x 6 H2O
 - preferred_term: Na2B4O7 x 10 H2O
   concentration:
     value: '0.0177'
     unit: G_PER_L
+  term:
+    id: CHEBI:131366
+    label: ''
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -310,6 +322,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "PIRELLULA MEDIUM (M31 PY)" to "pirellula_medium_m31_py"
     for consistent matching
-merge_fingerprint: 57b1c59f48fc6c1db43fb8dac02d287fb2a4d4b33ba5d9c922ae936b87b7f77d
+- timestamp: '2026-05-20T06:02:02.563245+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.5-8.5'' -> {''min'': 7.5, ''max'': 8.5}'
+- timestamp: '2026-06-05T07:41:41.959100+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 22 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:10.248946+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:53.013726+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint c50cfaaa6682d40fa02d7ac876278253e34dbfc0b41254ff39f8acc9e81bce69
+  source: pirellula_medium_m31_py.yaml
+merge_fingerprint: c50cfaaa6682d40fa02d7ac876278253e34dbfc0b41254ff39f8acc9e81bce69
 merged_from:
 - pirellula_medium_m31_py

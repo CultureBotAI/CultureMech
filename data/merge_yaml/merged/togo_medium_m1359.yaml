@@ -3,6 +3,7 @@ name: togo_medium_m1359
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
@@ -24,8 +25,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
   term:
-    id: CHEBI:32599
-    label: ''
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: NaCl
   concentration:
     value: '5'
@@ -35,9 +36,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: K2HPO4
   concentration:
     value: '0.5'
@@ -47,9 +48,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Sodium acetate
   concentration:
     value: '0.164'
@@ -58,9 +59,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
-    label: Sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: NaNO3
   concentration:
     value: '0.425'
@@ -70,8 +71,8 @@ ingredients:
   term:
     id: CHEBI:63005
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000388
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
     label: NaNO3
 - preferred_term: Sodium pyruvate
   concentration:
@@ -82,9 +83,9 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
-    label: Sodium pyruvate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
 - preferred_term: NaNO2
   concentration:
     value: '0.345'
@@ -94,14 +95,17 @@ ingredients:
   term:
     id: CHEBI:78870
     label: sodium nitrite
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000387
-    label: NaNO2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:78870
+    label: sodium nitrite
 - preferred_term: Disodium succinate・6H2O
   concentration:
     value: '0.54'
     unit: G_PER_L
   notes: 'Role: Growth factor'
+  term:
+    id: CHEBI:63686
+    label: ''
 - preferred_term: Disodium oxalate
   concentration:
     value: '0.268'
@@ -109,9 +113,9 @@ ingredients:
   term:
     id: CHEBI:132764
     label: sodium oxalate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000883
-    label: Disodium oxalate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132764
+    label: sodium oxalate
 media_term:
   preferred_term: TOGO Medium M1359
   term:
@@ -134,9 +138,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:47.360931'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Na2CO3 solution'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:04:42.087481+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -146,9 +150,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007896'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:48.438985'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:19.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -158,6 +162,31 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TOGO Medium M1359" to "togo_medium_m1359" for consistent
     matching
+- timestamp: '2026-05-16T09:04:35.908287+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:41:52.111146+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:58:36.509208+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:47:13.733326+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:59.755914+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint a640628b140c36eefb9cbe6353d57965c6f8d31703dc30544dec8468e1ac61f7
+  source: togo_medium_m1359.yaml
 solutions:
 - preferred_term: Na2CO3 solution
   composition: []
@@ -166,6 +195,6 @@ solutions:
     unit: VARIABLE
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
   name: Unknown solution
-merge_fingerprint: 8128c7326258ff2b4d9851197cfd2657d1bc7719a0b9ebded30b6adb17ae734c
+merge_fingerprint: a640628b140c36eefb9cbe6353d57965c6f8d31703dc30544dec8468e1ac61f7
 merged_from:
 - togo_medium_m1359

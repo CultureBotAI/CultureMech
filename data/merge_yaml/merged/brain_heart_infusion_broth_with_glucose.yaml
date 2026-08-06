@@ -3,6 +3,7 @@ name: brain_heart_infusion_broth_with_glucose
 original_name: brain-heart infusion broth (with glucose)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: glucose
@@ -14,9 +15,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: brain-heart infusion broth (Difco)
   concentration:
     value: '1'
@@ -52,6 +53,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "brain-heart infusion broth (with glucose)" to "brain_heart_infusion_broth_with_glucose"
     for consistent matching
+- timestamp: '2026-06-05T07:40:51.511308+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:25.926161+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 543a2ea20e3883010a99fc469f7cd3903eafa69565aa198e4f4ea1ccad472b87
+  source: brain_heart_infusion_broth_with_glucose.yaml
 kg_microbe_match: mediadive.medium:21
 merge_fingerprint: 543a2ea20e3883010a99fc469f7cd3903eafa69565aa198e4f4ea1ccad472b87
 merged_from:

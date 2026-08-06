@@ -1,0 +1,166 @@
+id: CultureMech:015875
+name: desulfobacter_medium_with_horse_serum
+original_name: DESULFOBACTER MEDIUM WITH HORSE SERUM
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_value: 7.1
+media_term:
+  preferred_term: JCM Medium J1475
+  term:
+    id: jcm.grmd:1475
+    label: DESULFOBACTER MEDIUM WITH HORSE SERUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1475'
+ingredients:
+- preferred_term: Na2SO4
+  concentration:
+    value: '3.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
+    label: Na2SO4
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+- preferred_term: NaCl
+  concentration:
+    value: '21.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: MgCl2·6H2O
+  concentration:
+    value: '3.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+- preferred_term: KCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: KCl
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: Tryptone (Difco)
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+- preferred_term: FeCl2 solution (see Medium No. 187 )
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: Trace element solution (see Medium No. 187 )
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: Resazurin
+  concentration:
+    value: '1.0'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Distilled water
+  concentration:
+    value: '920.0'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Horse Serum (Gibco)*
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+- preferred_term: Trace vitamins* (see Medium No. 197 )
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+- preferred_term: 8% NaHCO3 solution*
+  concentration:
+    value: '50.0'
+    unit: ML_PER_L
+- preferred_term: 5% Na2S·9H2O solution
+  concentration:
+    value: '8.0'
+    unit: ML_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix components thoroughly and autoclave under a N2-CO2 (80:20, v/v)
+    gas mixture.
+- step_number: 2
+  action: MIX
+  description: 'After cooling, aseptically and anaerobically add the following solutions
+    (autoclaved or *filtersterilized): Adjust pH 7.1-7.4, if necessary.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-06-02T07:09:27.545201+00:00'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1475. Ingredients captured verbatim; CHEBI/MediaIngredientMech
+    enrichment and category (bacterial/archaea) review are downstream steps.
+- timestamp: '2026-06-03T02:00:03.409516Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-06-03T07:12:22.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-08-06T03:04:35.717222+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 0a964afa31b70017632771bc2c29de7ca05f159fdf28dcae2f9a79f82058bb71
+  source: JCM_J1475_DESULFOBACTER_MEDIUM_WITH_HORSE_SERUM.yaml
+merge_fingerprint: 0a964afa31b70017632771bc2c29de7ca05f159fdf28dcae2f9a79f82058bb71
+merged_from:
+- JCM_J1475_DESULFOBACTER_MEDIUM_WITH_HORSE_SERUM

@@ -3,6 +3,7 @@ name: wilkins_chalgren_anaerobe_broth_n2_co2_for_dsm_15567
 original_name: Wilkins-Chalgren Anaerobe Broth (N2/CO2) (For DSM 15567)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Dehydrated Wilkins-Chalgren medium (Oxoid CM0643)
   concentration:
@@ -45,9 +46,9 @@ ingredients:
   term:
     id: CHEBI:17561
     label: L-cysteine
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000923
-    label: L-cysteine-HCL x H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17561
+    label: L-cysteine
 - preferred_term: Na2CO3 (5% w/v)
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
   concentration:
@@ -67,9 +68,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: Sodium Chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Sodium pyruvate
   concentration:
     value: '1'
@@ -79,9 +80,9 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
-    label: Sodium pyruvate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
 - preferred_term: Haemin
   concentration:
     value: '0.005'
@@ -91,8 +92,8 @@ ingredients:
   term:
     id: CHEBI:50385
     label: Haemin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
     label: Haemin
 - preferred_term: L-Arginine
   concentration:
@@ -103,9 +104,9 @@ ingredients:
   term:
     id: CHEBI:16467
     label: L-arginine
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000289
-    label: L-Arginine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16467
+    label: L-arginine
 - preferred_term: Glucose
   concentration:
     value: '1'
@@ -115,9 +116,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Menadione
   concentration:
     value: '0.0005'
@@ -127,8 +128,8 @@ ingredients:
   term:
     id: CHEBI:28869
     label: Menadione
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000903
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28869
     label: Menadione
 - preferred_term: Gelatin peptone
   concentration:
@@ -160,11 +161,11 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.082008'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     Na2CO3 (5% w/v)'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:05:10.276520+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -174,9 +175,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009286'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:58.081251'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:54.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -186,6 +187,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Wilkins-Chalgren Anaerobe Broth (N2/CO2) (For DSM 15567)"
     to "wilkins_chalgren_anaerobe_broth_n2_co2_for_dsm_15567" for consistent matching
+- timestamp: '2026-05-16T09:04:38.858793+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:41:55.461114+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:02.902161+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 58f36d118fa31ad4348c5bb3c393daaae561f8465140a1689fe0f4efa77a7e65
+  source: wilkins_chalgren_anaerobe_broth_n2_co2_for_dsm_15567.yaml
 solutions:
 - preferred_term: Na-resazurin solution (0.1% w/v)
   composition: []

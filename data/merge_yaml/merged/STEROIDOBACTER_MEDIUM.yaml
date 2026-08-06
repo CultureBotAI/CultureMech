@@ -1,382 +1,294 @@
-id: CultureMech:010316
+id: CultureMech:003208
 name: steroidobacter_medium
-original_name: Steroidobacter Medium
+original_name: STEROIDOBACTER MEDIUM
 category: bacterial
-medium_type: COMPLEX
+medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: JCM Medium J862
+  term:
+    id: mediadive.medium:J862
+    label: STEROIDOBACTER MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=862'
 ingredients:
-- preferred_term: Sol. 1
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Carbon dioxide gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-  term:
-    id: CHEBI:16526
-    label: ''
-- preferred_term: Nitrogen gas
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
-  term:
-    id: CHEBI:17997
-    label: ''
-- preferred_term: Distilled water
-  concentration:
-    value: '4.0'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component [Merged 4 duplicates: 1.0, 1.0, 1.0, 1.0]'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
 - preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
     label: NaCl
-- preferred_term: CaCl2・2H2O
-  concentration:
-    value: '0.15'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: MgCl2 x 6 H2O
   term:
-    id: CHEBI:86158
-    label: ''
-- preferred_term: KH2PO4
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
-- preferred_term: NH4Cl
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:31206
-    label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
-- preferred_term: MgCl2・6H2O
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
   concentration:
     value: '0.4'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:86345
-    label: ''
+    label: MgCl2 x 6 H2O
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
 - preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
     label: KCl
-- preferred_term: NaNO3
-  concentration:
-    value: '0.42'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: NH4Cl
   term:
-    id: CHEBI:63005
-    label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000388
-    label: NaNO3
-- preferred_term: Na2SO4
+    id: CHEBI:31206
+    label: ammonium chloride
   concentration:
-    value: '0.07'
+    value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: Na2SO4
   term:
     id: CHEBI:32149
     label: sodium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Na2SO4
-- preferred_term: testosterone
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Defined component, Simple component'
-- preferred_term: acetone
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Organic compound, Defined component,
-    Simple component'
-- preferred_term: CO2
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
+- preferred_term: NaNO3
   term:
-    id: CHEBI:16526
-    label: ''
-- preferred_term: Na2SeO3・5H2O
+    id: CHEBI:63005
+    label: NaNO3
   concentration:
-    value: '3'
+    value: '0.42'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:48843
-    label: ''
-- preferred_term: Na2WO4・2H2O
-  concentration:
-    value: '4'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:63939
-    label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000171
+    label: NaNO3
 - preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Inorganic compound, Simple component'
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:32145
-    label: sodium hydroxide
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
     label: NaOH
-- preferred_term: Biotin
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: Na2SeO3 x 5 H2O
   term:
-    id: CHEBI:15956
-    label: biotin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
-    label: Biotin
-- preferred_term: p--Aminobenzoic acid
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
   concentration:
-    value: '50'
+    value: '0.003'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000729
-    label: p--Aminobenzoic acid
-- preferred_term: Folic acid
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
+- preferred_term: Na2WO4 x 2 H2O
   term:
-    id: CHEBI:27470
-    label: folic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
-    label: Folic acid
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
 - preferred_term: Vitamin B12
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
-    id: CHEBI:176843
-    label: vitamin B12
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001027
+    id: CHEBI:17439
     label: Vitamin B12
-- preferred_term: Riboflavin
   concentration:
-    value: '50'
+    value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:17015
-    label: riboflavin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
-    label: Riboflavin
-- preferred_term: Nicotinic acid
-  concentration:
-    value: '25'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:15940
-    label: nicotinic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
-    label: Nicotinic acid
-- preferred_term: Nicotinamide
-  concentration:
-    value: '25'
-    unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:17154
-    label: nicotinamide
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000539
-    label: Nicotinamide
-- preferred_term: Thiamine・HCl・2H2O
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
+    label: Vitamin B12
 - preferred_term: Pantothenic acid
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:7916
-    label: pantothenic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000242
     label: Pantothenic acid
-- preferred_term: Pyridoxamine・HCl
   concentration:
-    value: '10'
+    value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-- preferred_term: α--Lipoic acid
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
-    component'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000708
-    label: α--Lipoic acid
-media_term:
-  preferred_term: TOGO Medium M899
+  mediaingredientmech_chebi_term:
+    id: CHEBI:7916
+    label: Pantothenic acid
+- preferred_term: Riboflavin
   term:
-    id: TOGO:M899
-    label: Steroidobacter Medium
-notes: 'Source: https://togomedium.org/medium/M899
-
-  Original source: JCM - JCM_M862
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=862'
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
+    label: Riboflavin
+- preferred_term: Pyridoxamine hydrochloride
+  term:
+    id: CHEBI:131531
+    label: Pyridoxamine hydrochloride
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131531
+    label: Pyridoxamine hydrochloride
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
+    label: Biotin
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
+    label: Folic acid
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+- preferred_term: Nicotinamide
+  term:
+    id: CHEBI:17154
+    label: Nicotinamide
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17154
+    label: Nicotinamide
+- preferred_term: alpha-lipoic acid
+  term:
+    id: CHEBI:16494
+    label: alpha-lipoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16494
+    label: alpha-lipoic acid
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: For growth with testosterone, dissolve testosterone in acetone (20
+    mg/ml) and dispense portions of the solution, e.g., 0.1 ml portions for 10 ml
+    medium, to anaerobic culture tubes. Let the solvent evaporate to dryness. Dispense
+    10 ml portions of medium in the culture tubes and stream with N2-CO2 (80:20, v/v).
+    Close the vessels and autoclave. Treat the vessels in an ultrasonic bath to detach
+    and suspend the testosterone.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: For growth with heptanoate, omit testosterone. Sterilize the gassed
+    medium in anaerobic vessels by autoclaving. Add 2.5 mM heptanoate from a 20-fold
+    filter-sterilized anaerobic stock solution after cooling.
+- step_number: 3
+  action: AUTOCLAVE
+  description: After autoclaving, add (per 10 ml) 0.3 ml NaHCO3 solution (84 g/L,
+    autoclaved under a CO2 atmosphere), 1 ï¿½l Trace element solution SL-10 (see Medium
+    No. 433), 1 ï¿½l Selenite-tungstate solution (see below) and 1 ï¿½l Vitamin solution
+    (see below). Adjust pH to 7.2. Incubate the cultures in the dark for up to 4 weeks.
+    Briefly shake the cultures once per day.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.922005Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M899'
-- timestamp: '2026-01-28T19:48:25.140655Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:21:01.160309'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
-    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
-    CO2'
-- timestamp: '2026-03-09T08:04:41.562057+00:00'
-  curator: solution-migrator-v1.0
-  action: Migrated solutions from ingredients to solutions array
-  notes: Moved 6 solution(s) from ingredients
-- timestamp: '2026-03-13T03:09:11.563828Z'
-  curator: data-quality-cleanup-v1.0
-  action: Data quality fixes
-  notes: Merged 3 duplicate ingredient(s)
-- timestamp: '2026-03-13T06:20:12.951671Z'
+- timestamp: '2026-01-26T17:53:17.825702Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J862'
+- timestamp: '2026-03-13T06:19:18.585236Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:010316'
-- curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:03.783668'
-  action: Applied schema defaults and normalizations
-  notes: Added default solution name; Added default solution name; Added default solution
-    name; Added default solution name; Added default solution name; Added default
-    solution name
-- timestamp: '2026-03-17T06:30:18.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:003208'
+- timestamp: '2026-03-17T06:30:22.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:31.897110+00:00'
+- timestamp: '2026-03-17T19:45:32.469578+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Steroidobacter Medium" to "steroidobacter_medium" for
+  notes: Normalized name from "STEROIDOBACTER MEDIUM" to "steroidobacter_medium" for
     consistent matching
-solutions:
-- preferred_term: testosterone solution
-  composition: []
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: NaHCO3 solution
-  composition: []
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: Trace element solution SL--10 (see Medium [M433])
-  composition: []
-  notes: Cross-reference to Medium M433
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: Selenite--tungstate solution
-  composition: []
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: Vitamin solution
-  term:
-    id: mediadive.solution:6241
-    label: Vitamin solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: See mediadive_6241_Vitamin_solution.yaml for composition
-  name: Unknown solution
-- preferred_term: NaHCO3 solution
-  composition: []
-  concentration:
-    value: '84'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
-  name: Unknown solution
-merge_fingerprint: 80e0877156fe2eb98c617acd43224fe95b73adce8ec82aaf81ea7dff05a410e7
+- timestamp: '2026-06-05T07:40:17.785914+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 21 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:43.134147+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:37.381924+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint c1e56348070851ad226a505375ee13395a0ebafe9212ce72315b34988d497b3a
+  source: JCM_J862_STEROIDOBACTER_MEDIUM.yaml
+merge_fingerprint: c1e56348070851ad226a505375ee13395a0ebafe9212ce72315b34988d497b3a
 merged_from:
-- TOGO_M899_Steroidobacter_Medium
+- JCM_J862_STEROIDOBACTER_MEDIUM

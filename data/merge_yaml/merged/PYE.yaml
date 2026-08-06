@@ -1,6 +1,7 @@
 id: CultureMech:015685
 name: PYE
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Peptone
@@ -37,7 +38,7 @@ ingredients:
   notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 10043-52-4; MW: 110.98'
 description: Rich media for Caulobacter
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: PYE
@@ -51,6 +52,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015685'
+- timestamp: '2026-05-16T09:04:42.730697+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:07.586247+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 273fe8a390f9eb1fde16c457b19112bc09931b8901bf5ed30b4bd2db33a400dd
+  source: pye.yaml
 data_quality_flags: []
 kg_microbe_match: mediadive.medium:969
 merge_fingerprint: 273fe8a390f9eb1fde16c457b19112bc09931b8901bf5ed30b4bd2db33a400dd

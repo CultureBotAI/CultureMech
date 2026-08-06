@@ -3,6 +3,7 @@ name: ysg_medium_ph_4_5
 original_name: YSG Medium (pH 4.5)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +32,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001125
-    label: H2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26836
+    label: sulfuric acid
 - preferred_term: Glucose
   concentration:
     value: '1'
@@ -43,14 +44,17 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Soluble starch
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Undefined component'
+  term:
+    id: CHEBI:28017
+    label: ''
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -78,9 +82,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:49.726354'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: H2SO4'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:04:36.326432+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -94,9 +98,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008347'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:51.192284'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:11.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -106,10 +110,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "YSG Medium (pH 4.5)" to "ysg_medium_ph_4_5" for consistent
     matching
-- timestamp: '2026-04-17T06:29:41.576137+00:00'
+- timestamp: '2026-05-16T09:04:39.140592+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:41:55.893580+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:09.467101+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M1739_YSG_Medium, ysg_medium_ph_4_5'
+- timestamp: '2026-08-06T03:05:09.467136+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint bdcb758e843083ac865afafd3c66467c3d7ed9f2dbb175f3753e7934a3a8fcad
+  source: TOGO_M1739_YSG_Medium.yaml, ysg_medium_ph_4_5.yaml
 solutions:
 - preferred_term: Solution A*
   term:
@@ -139,4 +158,4 @@ categories:
 merged_from:
 - TOGO_M1739_YSG_Medium
 - ysg_medium_ph_4_5
-merge_fingerprint: d7a4260e7aaa7d651fcdf84bdba467119a093a597ec40b9f451e2378101a6c3a
+merge_fingerprint: bdcb758e843083ac865afafd3c66467c3d7ed9f2dbb175f3753e7934a3a8fcad

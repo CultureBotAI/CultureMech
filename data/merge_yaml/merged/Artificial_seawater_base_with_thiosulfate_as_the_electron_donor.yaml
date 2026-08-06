@@ -3,6 +3,7 @@ name: artificial_seawater_base_with_thiosulfate_as_the_electron_donor
 original_name: Artificial seawater base with thiosulfate as the electron donor
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Artificial seawater
@@ -20,9 +21,9 @@ ingredients:
   term:
     id: CHEBI:26977
     label: Thiosulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001096
-    label: thiosulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26977
+    label: Thiosulfate
 - preferred_term: O2
   notes: 'Properties: Gas'
   concentration:
@@ -46,9 +47,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:52.902039'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: O2'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:00.679832Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -63,6 +64,21 @@ curation_history:
   notes: Normalized name from "Artificial seawater base with thiosulfate as the electron
     donor" to "artificial_seawater_base_with_thiosulfate_as_the_electron_donor" for
     consistent matching
+- timestamp: '2026-05-16T09:03:24.914736+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:49.748748+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:24.020107+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 56d84f1f811c62af899070183b301188bcfdeb8edc3a3c2018f34769aa19e91f
+  source: artificial_seawater_base_with_thiosulfate_as_the_electron_donor.yaml
 merge_fingerprint: 56d84f1f811c62af899070183b301188bcfdeb8edc3a3c2018f34769aa19e91f
 merged_from:
 - artificial_seawater_base_with_thiosulfate_as_the_electron_donor

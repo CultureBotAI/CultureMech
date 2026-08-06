@@ -3,6 +3,7 @@ name: brain_heart_infusion_agar
 original_name: Brain Heart Infusion Agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: DI Water
@@ -40,6 +41,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Brain Heart Infusion Agar" to "brain_heart_infusion_agar"
     for consistent matching
+- timestamp: '2026-08-06T03:05:11.757703+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 99bfa02e06ae120984400bdf18f7260d8f77e9e6fbd06b84b83891d830ad8caf
+  source: TOGO_M2425_Brain_Heart_Infusion_Agar.yaml
 merge_fingerprint: 99bfa02e06ae120984400bdf18f7260d8f77e9e6fbd06b84b83891d830ad8caf
 merged_from:
 - TOGO_M2425_Brain_Heart_Infusion_Agar

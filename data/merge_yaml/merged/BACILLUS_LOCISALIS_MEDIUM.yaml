@@ -3,6 +3,7 @@ name: bacillus_locisalis_medium
 original_name: BACILLUS LOCISALIS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1309
@@ -19,8 +20,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Peptone
   concentration:
@@ -33,12 +34,12 @@ ingredients:
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -47,8 +48,8 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Agar
   term:
@@ -58,18 +59,18 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
   concentration:
     value: '40'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 - preferred_term: NaCl
   term:
@@ -78,8 +79,8 @@ ingredients:
   concentration:
     value: '160'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 applications:
 - Microbial cultivation
@@ -105,11 +106,39 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "BACILLUS LOCISALIS medium" to "bacillus_locisalis_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:16.417041+00:00'
+- timestamp: '2026-06-05T07:40:20.788793+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:44.087970+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:41.026139+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_1182_AQUISALIMONAS_medium, KOMODO_1309_BACILLUS_LOCISALIS_medium,
     aquisalimonas_medium, bacillus_locisalis_medium'
+- timestamp: '2026-08-06T03:04:41.026187+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 4 source recipe(s) on fingerprint e0ebc5795e7e96347da0f529506cec74eac7ff7d54972f5840bef97318c9ac74
+  source: KOMODO_1182_AQUISALIMONAS_medium.yaml, KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml,
+    aquisalimonas_medium.yaml, bacillus_locisalis_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000771
+  name: bacillus_locisalis_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 1309; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 1309; local ingredient
+  and concentration signatures match.
 synonyms:
 - name: aquisalimonas_medium
   source: KOMODO

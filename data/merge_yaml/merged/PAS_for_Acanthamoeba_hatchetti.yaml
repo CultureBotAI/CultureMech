@@ -3,6 +3,7 @@ name: pas_for_acanthamoeba_hatchetti
 original_name: PAS for Acanthamoeba hatchetti
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
 media_term:
@@ -19,9 +20,9 @@ ingredients:
   term:
     id: CHEBI:53258
     label: sodium citrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
-    label: Trisodium citrate x 2 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
+    label: sodium citrate
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -29,8 +30,8 @@ ingredients:
   concentration:
     value: '11.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: Na2HPO4
   term:
@@ -39,18 +40,18 @@ ingredients:
   concentration:
     value: '71'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '68.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -59,8 +60,8 @@ ingredients:
   concentration:
     value: '196.806'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 preparation_steps:
 - step_number: 1
@@ -112,6 +113,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "PAS for Acanthamoeba hatchetti" to "pas_for_acanthamoeba_hatchetti"
     for consistent matching
+- timestamp: '2026-06-05T07:41:40.940697+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:09.900624+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:52.267521+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 4a774e44f0fa7ed5a27733e790b2f61b390c0a5b22b16164d0c5af284043f90c
+  source: pas_for_acanthamoeba_hatchetti.yaml
 high_metal: true
 merge_fingerprint: 4a774e44f0fa7ed5a27733e790b2f61b390c0a5b22b16164d0c5af284043f90c
 merged_from:

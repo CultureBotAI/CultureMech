@@ -3,6 +3,7 @@ name: tryptic_soy_broth_supplemented_with_10_nad_and_5_bovine_serum
 original_name: Tryptic Soy Broth (supplemented with 10 % NAD and 5% bovine serum)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: nicotinamide adenine dinucleotide (NAD)
@@ -168,10 +169,15 @@ curation_history:
   notes: Normalized name from "Tryptic Soy Broth (supplemented with 10 % NAD and 5%
     bovine serum)" to "tryptic_soy_broth_supplemented_with_10_nad_and_5_bovine_serum"
     for consistent matching
-- timestamp: '2026-04-17T06:30:27.094723+00:00'
+- timestamp: '2026-08-06T03:06:01.864742+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: tryptic_soy_agar_supplemented_with_10_nad_and_5_bovine_serum, tryptic_soy_broth_supplemented_with_10_nad_and_5_bovine_serum'
+- timestamp: '2026-08-06T03:06:01.864783+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint f7ccdfa3fc8a798d4cbf86c8f40b3b1e62b0c92a6d1f4982cb51d3553e6ed6e5
+  source: tryptic_soy_agar_supplemented_with_10_nad_and_5_bovine_serum.yaml, tryptic_soy_broth_supplemented_with_10_nad_and_5_bovine_serum.yaml
 synonyms:
 - name: tryptic_soy_agar_supplemented_with_10_nad_and_5_bovine_serum
   source: TOGO

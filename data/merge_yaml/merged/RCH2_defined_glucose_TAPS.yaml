@@ -1,6 +1,7 @@
 id: CultureMech:015708
 name: RCH2 defined glucose TAPS
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Ammonium chloride
@@ -169,8 +170,8 @@ ingredients:
     value: '0.1'
     unit: MG_PER_L
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Wolfe''s vitamin
     mix'
 - preferred_term: 4-Aminobenzoic acid
@@ -257,7 +258,7 @@ ingredients:
 description: Defined minimal media for soil and groundwater bacteria with glucose
   and TAPS buffer
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: RCH2 defined glucose TAPS
@@ -271,8 +272,27 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015708'
+- timestamp: '2026-05-16T09:04:42.931207+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:53.735532+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:47:15.657172+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:07.826386+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 1bcd695cd8213cf2cd17e9f9ab021436e9396c45337c8a9b950bb41bb6a8b140
+  source: rch2_defined_glucose_taps.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: a8035674f6b46fd11047a7ba875e0ec38fb265611a49d6cc4113b952e66c9f42
+merge_fingerprint: 1bcd695cd8213cf2cd17e9f9ab021436e9396c45337c8a9b950bb41bb6a8b140
 merged_from:
 - rch2_defined_glucose_taps

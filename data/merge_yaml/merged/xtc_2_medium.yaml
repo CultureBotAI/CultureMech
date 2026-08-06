@@ -3,6 +3,7 @@ name: xtc_2_medium
 original_name: XTC-2 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1311
@@ -74,6 +75,11 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "XTC-2 MEDIUM" to "xtc_2_medium" for consistent matching
+- timestamp: '2026-08-06T03:06:02.943842+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 1a76ef7701343650a3fad529e530b55aa1ad6066bed367b5ed530aa6a3ca289f
+  source: xtc_2_medium.yaml
 merge_fingerprint: 1a76ef7701343650a3fad529e530b55aa1ad6066bed367b5ed530aa6a3ca289f
 merged_from:
 - xtc_2_medium

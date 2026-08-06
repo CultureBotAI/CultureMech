@@ -3,6 +3,7 @@ name: 2x_yeast_extract_tryptone_2xyt
 original_name: 2x Yeast Extract Tryptone (2xYT)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 2x Yeast Extract Tryptone (2xYT)
@@ -32,6 +33,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "2x Yeast Extract Tryptone (2xYT)" to "2x_yeast_extract_tryptone_2xyt"
     for consistent matching
+- timestamp: '2026-08-06T03:04:34.069611+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 69b8ae2d5ae1aa7966693ad313b2e2d767b26c1fc95c1f52c6f1abe5cf9c9a9e
+  source: 2x_yeast_extract_tryptone_2xyt.yaml
 merge_fingerprint: 69b8ae2d5ae1aa7966693ad313b2e2d767b26c1fc95c1f52c6f1abe5cf9c9a9e
 merged_from:
 - 2x_yeast_extract_tryptone_2xyt

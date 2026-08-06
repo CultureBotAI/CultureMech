@@ -3,6 +3,7 @@ name: desulfurobacterium_atlanticum_medium
 original_name: DESULFUROBACTERIUM ATLANTICUM MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
 media_term:
@@ -19,8 +20,8 @@ ingredients:
   concentration:
     value: '29.4118'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -29,8 +30,8 @@ ingredients:
   concentration:
     value: '2.94118'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -39,8 +40,8 @@ ingredients:
   concentration:
     value: '0.147059'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: KCl
   term:
@@ -49,18 +50,18 @@ ingredients:
   concentration:
     value: '0.490196'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '0.490196'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: MES [2-(N-morpholino) ethane sulfonic acid]
   concentration:
@@ -69,23 +70,26 @@ ingredients:
   term:
     id: CHEBI:39005
     label: 2-(N-morpholino)ethanesulfonic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000942
-    label: MES [2-(N-morpholino) ethane sulfonic acid]
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39005
+    label: 2-(N-morpholino)ethanesulfonic acid
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.196078'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.000490196'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: Na2S2O3 x 5 H2O
   term:
     id: CHEBI:32150
@@ -93,8 +97,8 @@ ingredients:
   concentration:
     value: '2.45098'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000492
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32150
     label: Na2S2O3 x 5 H2O
 - preferred_term: Na2S x 9 H2O
   term:
@@ -103,8 +107,8 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 preparation_steps:
 - step_number: 1
@@ -151,6 +155,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "DESULFUROBACTERIUM ATLANTICUM MEDIUM" to "desulfurobacterium_atlanticum_medium"
     for consistent matching
-merge_fingerprint: 0e5ce6f928bbd5515e2072351cc28e21fb1dfa5b72d495c07b72fa753ab88d5e
+- timestamp: '2026-06-05T07:40:58.252780+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:56.210574+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:32.583922+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b57abf0e1df45cf8a8806792024d9232a3ccbb63ec980e7152ae80fa1a4be3e8
+  source: desulfurobacterium_atlanticum_medium.yaml
+merge_fingerprint: b57abf0e1df45cf8a8806792024d9232a3ccbb63ec980e7152ae80fa1a4be3e8
 merged_from:
 - desulfurobacterium_atlanticum_medium

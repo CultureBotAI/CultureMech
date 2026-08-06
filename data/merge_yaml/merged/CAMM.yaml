@@ -3,6 +3,7 @@ name: camm
 original_name: CAMM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose
@@ -13,8 +14,8 @@ ingredients:
     value: '333.037'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Biotin
   term:
@@ -24,8 +25,8 @@ ingredients:
     value: '0.00020465'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: 4-Aminobenzoate
   term:
@@ -35,9 +36,9 @@ ingredients:
     value: '0.00729'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4abz'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001121
-    label: 4-Aminobenzoate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17836
+    label: 4-aminobenzoate
 - preferred_term: Calcium carbonate
   term:
     id: CHEBI:3311
@@ -45,17 +46,23 @@ ingredients:
   concentration:
     value: '199.826'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001099
-    label: Calcium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
+    label: Calcium Carbonate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.0720819'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '50.2296'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.04133'
@@ -70,9 +77,9 @@ ingredients:
   concentration:
     value: '1.36893'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -80,8 +87,8 @@ ingredients:
   concentration:
     value: '0.00296'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Cysteine-HCl
   term:
@@ -97,6 +104,9 @@ ingredients:
   concentration:
     value: '0.293932'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -104,8 +114,8 @@ ingredients:
   concentration:
     value: '0.877863'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
@@ -114,13 +124,16 @@ ingredients:
   concentration:
     value: '0.04483'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.03596'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -128,9 +141,9 @@ ingredients:
   concentration:
     value: '0.017389'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258
@@ -138,8 +151,8 @@ ingredients:
   concentration:
     value: '4.76152'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
     label: Sodium citrate
 - preferred_term: Ammonium phosphate
   concentration:
@@ -173,6 +186,17 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "CAMM" to "camm" for consistent matching
+- timestamp: '2026-06-05T07:40:52.469765+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:26.672638+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 77830ad4ba763156b9b0fc6ee7b1a80eb754fbcce41d6319d7e34492fbe43f9a
+  source: camm.yaml
 media_term:
   preferred_term: MediaDB Medium 88
   term:
@@ -185,6 +209,6 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
-merge_fingerprint: 020bc343b1c2be034f3ad3df01cf9728eec034c782582ef24cd87a7d3f7773fe
+merge_fingerprint: 77830ad4ba763156b9b0fc6ee7b1a80eb754fbcce41d6319d7e34492fbe43f9a
 merged_from:
 - camm

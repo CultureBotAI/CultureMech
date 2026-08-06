@@ -3,6 +3,7 @@ name: cyanobacteria_medium_1_2_swes_brackish_water_medium
 original_name: Cyanobacteria Medium 1/2 SWES - Brackish Water Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1831a
@@ -19,7 +20,7 @@ ingredients:
 - preferred_term: KNO3
   term:
     id: CHEBI:63043
-    label: KNO3
+    label: potassium nitrate
   concentration:
     value: '10.5'
     unit: G_PER_L
@@ -29,12 +30,12 @@ ingredients:
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '4.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -43,8 +44,8 @@ ingredients:
   concentration:
     value: '2.7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Vitamin B12
   term:
@@ -53,8 +54,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 - preferred_term: Fe SO4 x 7 H2O
   term:
@@ -63,8 +64,8 @@ ingredients:
   concentration:
     value: '70'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: Fe SO4 x 7 H2O
 - preferred_term: Na-EDTA x 2 H2O
   term:
@@ -73,8 +74,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
     label: Na-EDTA x 2 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -83,28 +84,28 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: MnSO4 x 1 H2O
   term:
     id: CHEBI:86360
-    label: MnSO4 x 1 H2O
+    label: manganese(II) sulfate
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000605
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86360
     label: MnSO4 x 1 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: Co(NO3)2 x 6 H2O
   term:
@@ -113,8 +114,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000525
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86214
     label: Co(NO3)2 x 6 H2O
 - preferred_term: Na2 MoO4 x 2 H2O
   term:
@@ -123,8 +124,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2 MoO4 x 2 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
@@ -133,8 +134,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
     label: CuSO4 x 5 H2O
 - preferred_term: Garden soil
   concentration:
@@ -204,6 +205,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Cyanobacteria Medium 1/2 SWES - Brackish Water Medium"
     to "cyanobacteria_medium_1_2_swes_brackish_water_medium" for consistent matching
-merge_fingerprint: c6f7c7afd76530d10a628b5dcffd15b817262051d82a2e53397476688397d8c2
+- timestamp: '2026-06-05T07:40:55.046471+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 11 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:37:34.663719+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:46:55.047863+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:29.375181+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 12e801739f9eb0787c2ea66d3f6c7eb338783e3f12e5822e47c8abbd309bb2f3
+  source: cyanobacteria_medium_1_2_swes_brackish_water_medium.yaml
+merge_fingerprint: 12e801739f9eb0787c2ea66d3f6c7eb338783e3f12e5822e47c8abbd309bb2f3
 merged_from:
 - cyanobacteria_medium_1_2_swes_brackish_water_medium

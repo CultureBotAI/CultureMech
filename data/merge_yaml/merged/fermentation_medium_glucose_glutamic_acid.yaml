@@ -3,6 +3,7 @@ name: fermentation_medium_glucose_glutamic_acid
 original_name: '''Fermentation Medium (Glucose+Glutamic acid'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Riboflavin
@@ -13,23 +14,32 @@ ingredients:
     value: '0.0003986'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: L-Glutamate
   concentration:
     value: '130.9'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glu-L'
+  term:
+    id: CHEBI:16015
+    label: ''
 - preferred_term: Nicotinate
   concentration:
     value: '0.09747'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:nac'
+  term:
+    id: CHEBI:15940
+    label: ''
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '36.74'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -37,8 +47,8 @@ ingredients:
   concentration:
     value: '111.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Biotin
   term:
@@ -48,8 +58,8 @@ ingredients:
     value: '0.0001228'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Thiamine HCl
   term:
@@ -58,18 +68,18 @@ ingredients:
   concentration:
     value: '0.0001334'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Pyridoxine HCl
   concentration:
     value: '0.001459'
     unit: MILLIMOLAR
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000703
+    id: CHEBI:30961
+    label: Pyridoxine HCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
     label: Pyridoxine HCl
 - preferred_term: Magnesium sulfate
   term:
@@ -78,8 +88,8 @@ ingredients:
   concentration:
     value: '3.246'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 preparation_steps:
 - step_number: 1
@@ -119,6 +129,23 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'Fermentation Medium (Glucose+Glutamic acid" to "fermentation_medium_glucose_glutamic_acid"
     for consistent matching
+- timestamp: '2026-06-05T07:40:59.957806+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:38.203575+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:05:34.008125+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint ab2df36b8b770710380c63f1207c8c139eb934d5c24172317d416715b67bd87a
+  source: fermentation_medium_glucose_glutamic_acid.yaml
 media_term:
   preferred_term: MediaDB Medium 364
   term:
@@ -130,6 +157,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 83641632dbe7c53cac4fdbd940c287b4a655ff34848665e29f1345ccd3e25fe2
+merge_fingerprint: ab2df36b8b770710380c63f1207c8c139eb934d5c24172317d416715b67bd87a
 merged_from:
 - fermentation_medium_glucose_glutamic_acid

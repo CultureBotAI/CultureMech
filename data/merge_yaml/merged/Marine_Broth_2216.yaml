@@ -1,145 +1,51 @@
-id: CultureMech:015554
-name: marine broth 2216
+id: CultureMech:009055
+name: marine_broth_2216
+original_name: Marine Broth 2216
+category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: Peptone
+- preferred_term: DI Water
   concentration:
-    value: '5'
+    value: '1000'
     unit: G_PER_L
-  term:
-    id: MICRO:0000178
-    label: Peptone
-  notes: 'Mapping: curated_dict (confidence: 0.98)'
-- preferred_term: Yeast Extract
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Broth Medium Marine Broth 2216 (BD 279110)
   concentration:
-    value: '1'
+    value: '37.4'
     unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M2481
   term:
-    id: FOODON:03315426
-    label: Yeast extract
-  notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 232-387-9'
-- preferred_term: Ferric citrate
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  term:
-    id: CHEBI:144421
-    label: iron(III) citrate
-  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 3522-50-7; MW: 244.94'
-- preferred_term: Sodium Chloride
-  concentration:
-    value: '19.45'
-    unit: G_PER_L
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7647-14-5; MW: 58.44'
-- preferred_term: magnesium chloride
-  concentration:
-    value: '5.9'
-    unit: G_PER_L
-  term:
-    id: CHEBI:86345
-    label: magnesium dichloride hexahydrate
-  notes: 'Mapping: micromediaparam (confidence: 0.95)'
-- preferred_term: Magnesium sulfate
-  concentration:
-    value: '3.24'
-    unit: G_PER_L
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 7487-88-9; MW: 120.37'
-- preferred_term: Calcium chloride
-  concentration:
-    value: '1.8'
-    unit: G_PER_L
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 10043-52-4; MW: 110.98'
-- preferred_term: Potassium Chloride
-  concentration:
-    value: '0.55'
-    unit: G_PER_L
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
-  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 7447-40-7; MW: 74.55'
-- preferred_term: Sodium bicarbonate
-  concentration:
-    value: '0.16'
-    unit: G_PER_L
-  term:
-    id: CHEBI:32139
-    label: null
-  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 144-55-8; MW: 84.007'
-- preferred_term: Potassium bromide
-  concentration:
-    value: '0.08'
-    unit: G_PER_L
-  term:
-    id: CHEBI:32030
-    label: potassium bromide
-  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7758-02-3; MW: 119.002'
-- preferred_term: Strontium chloride
-  concentration:
-    value: '34'
-    unit: MG_PER_L
-  term:
-    id: CHEBI:36383
-    label: strontium dichloride
-  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 10476-85-4; MW: 158.53'
-- preferred_term: Boric Acid
-  concentration:
-    value: '22'
-    unit: MG_PER_L
-  term:
-    id: CHEBI:33118
-    label: boric acid
-  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 10043-35-3; MW: 61.83'
-- preferred_term: Sodium silicate
-  concentration:
-    value: '4'
-    unit: MG_PER_L
-  term:
-    id: CHEBI:60720
-    label: sodium silicate
-  notes: 'Mapping: micromediaparam (confidence: 0.95)'
-- preferred_term: sodium fluoride
-  concentration:
-    value: '2.4'
-    unit: MG_PER_L
-  term:
-    id: CHEBI:28741
-    label: sodium fluoride
-  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7681-49-4; MW: 41.99'
-- preferred_term: Disodium phosphate
-  concentration:
-    value: '8'
-    unit: MG_PER_L
-  term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
-  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 7558-79-4; MW: 141.96'
-description: rich media for marine bacteria; difco media 2216
-notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
-sources:
-- database: CultureBotHT
-  database_id: marine broth 2216
-  url: https://github.com/CultureBotAI/CultureBotHT
+    id: TOGO:M2481
+    label: Marine Broth 2216
+notes: 'Source: https://togomedium.org/medium/M2481
+
+  Original URL: https://www.atcc.org/~/media/B5025AB990724A91B4491C391E054448.ashx'
+applications:
+- Microbial cultivation
 curation_history:
-- timestamp: '2026-03-18T04:31:15.462377+00:00'
-  curator: import_from_culturebotht.py
-  action: IMPORTED
-  notes: 'Imported from CultureBotHT repository: marine_broth_2216.yaml'
-- timestamp: '2026-03-18T04:33:59.067977Z'
+- timestamp: '2026-01-27T06:35:56.573328Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2481'
+- timestamp: '2026-03-13T06:20:02.304114Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:015554'
-data_quality_flags: []
-merge_fingerprint: d86c6025f5e42c86ca5fc08f696214e21f5708d4625ac993b379af9d5ac0b4cc
+  notes: 'Assigned stable identifier: CultureMech:009055'
+- timestamp: '2026-03-17T19:46:21.076774+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Marine Broth 2216" to "marine_broth_2216" for consistent
+    matching
+- timestamp: '2026-08-06T03:05:12.035861+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 9722cf6c9201713315cdc938a18bc025cc7f7bc61688f6b51885d1529123ae28
+  source: TOGO_M2481_Marine_Broth_2216.yaml
+merge_fingerprint: 9722cf6c9201713315cdc938a18bc025cc7f7bc61688f6b51885d1529123ae28
 merged_from:
-- marine_broth_2216
+- TOGO_M2481_Marine_Broth_2216

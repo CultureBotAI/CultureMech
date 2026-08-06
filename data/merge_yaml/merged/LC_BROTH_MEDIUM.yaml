@@ -3,6 +3,7 @@ name: lc_broth_medium
 original_name: LC BROTH medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.4
 media_term:
@@ -28,8 +29,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Glucose
   term:
@@ -38,8 +39,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -48,8 +49,8 @@ ingredients:
   concentration:
     value: '0.735075'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -58,8 +59,8 @@ ingredients:
   concentration:
     value: '1.23238'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 applications:
 - Microbial cultivation
@@ -85,10 +86,32 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "LC BROTH medium" to "lc_broth_medium" for consistent
     matching
-- timestamp: '2026-04-17T06:29:29.022687+00:00'
+- timestamp: '2026-06-05T07:40:24.547153+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:55.407150+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_546_LC_BROTH_medium, lc_broth_medium'
+- timestamp: '2026-08-06T03:04:55.407193+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 75892697759ab2ef7c0a8e47a5173d1d5d6a68c30f5d72034a40434b378ef30e
+  source: KOMODO_546_LC_BROTH_medium.yaml, lc_broth_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/lc_broth_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001680
+  name: lc_broth_medium
+  notes: KOMODO record states DSMZ Medium 546 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 categories:
 - bacterial
 merged_from:

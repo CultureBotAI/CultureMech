@@ -1,106 +1,111 @@
-id: CultureMech:008879
+id: CultureMech:003827
 name: yed_medium_salted
-original_name: YED Medium, salted
+original_name: YED medium, salted
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 1123
   term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
+    id: komodo.medium:1123
+    label: YED medium, salted
+notes: 'Source: KOMODO ModelSEED | ID: 1123 | DSMZ Medium: 1123 (mediadive.medium:1123)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '7'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: Glucose
 - preferred_term: Yeast extract
   concentration:
     value: '4'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
 - preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
     label: NaCl
-- preferred_term: Glucose
-  concentration:
-    value: '7'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
-    component'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
 - preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
     label: Agar
-media_term:
-  preferred_term: TOGO Medium M2293
-  term:
-    id: TOGO:M2293
-    label: YED Medium, salted
-notes: 'Source: https://togomedium.org/medium/M2293
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1123.pdf'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.287967Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2293'
-- timestamp: '2026-01-28T19:48:33.522340Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:20:00.971073Z'
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1123'
+- timestamp: '2026-02-03T11:19:05.201517'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1123
+- timestamp: '2026-03-13T06:19:22.552047Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:008879'
-- timestamp: '2026-03-17T06:30:36.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:003827'
+- timestamp: '2026-03-17T06:30:11.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:19.666852+00:00'
+- timestamp: '2026-03-17T19:45:36.958743+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "YED Medium, salted" to "yed_medium_salted" for consistent
+  notes: Normalized name from "YED medium, salted" to "yed_medium_salted" for consistent
     matching
-- timestamp: '2026-04-17T06:29:43.346034+00:00'
+- timestamp: '2026-06-05T07:40:19.179057+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:40.300796+00:00'
   curator: recipe-merger
-  action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: TOGO_M2293_YED_Medium_salted, TOGO_M921_Salt_Glucose_Agar_SGA'
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_1123_YED_medium_salted, salt_glucose_agar_sga, yed_medium_salted'
+- timestamp: '2026-08-06T03:04:40.300842+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 95a7b993fc7f037e61cee9a12f7271aa871ad84ffe3732ae89c211577abc5338
+  source: KOMODO_1123_YED_medium_salted.yaml, salt_glucose_agar_sga.yaml, yed_medium_salted.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/yed_medium_salted.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000561
+  name: yed_medium_salted
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and concentration
+    signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.
 synonyms:
 - name: salt_glucose_agar_sga
-  source: TOGO
-  source_id: TOGO:M921
+  source: MediaDive
+  source_id: mediadive.medium:J880
   original_category: bacterial
 categories:
 - bacterial
 merged_from:
-- TOGO_M2293_YED_Medium_salted
-- TOGO_M921_Salt_Glucose_Agar_SGA
-merge_fingerprint: fc9ac3783533050c13ec586c5f0a6242f62a6158f86404993eb92d6c1bda1af8
+- KOMODO_1123_YED_medium_salted
+- salt_glucose_agar_sga
+- yed_medium_salted
+merge_fingerprint: 95a7b993fc7f037e61cee9a12f7271aa871ad84ffe3732ae89c211577abc5338

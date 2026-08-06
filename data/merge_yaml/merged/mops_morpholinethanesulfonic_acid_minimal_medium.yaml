@@ -3,6 +3,7 @@ name: mops_morpholinethanesulfonic_acid_minimal_medium
 original_name: MOPS (morpholinethanesulfonic acid) minimal medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: NaCl
@@ -14,9 +15,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: NH4Cl
   concentration:
     value: '9.52'
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: K2HPO4
   concentration:
     value: '1.32'
@@ -38,9 +39,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: MOPS
   concentration:
     value: '40'
@@ -49,8 +50,8 @@ ingredients:
   term:
     id: CHEBI:39074
     label: MOPS
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000285
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39074
     label: MOPS
 - preferred_term: MgCl2
   concentration:
@@ -61,9 +62,9 @@ ingredients:
   term:
     id: CHEBI:6636
     label: magnesium dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000663
-    label: MgCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
 - preferred_term: K2SO4
   concentration:
     value: '0.276'
@@ -73,9 +74,9 @@ ingredients:
   term:
     id: CHEBI:32036
     label: potassium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001064
-    label: K2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32036
+    label: potassium sulfate
 - preferred_term: FeSO4
   concentration:
     value: '0.01'
@@ -85,9 +86,9 @@ ingredients:
   term:
     id: CHEBI:75832
     label: iron(2+) sulfate (anhydrous)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001045
-    label: FeSO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75832
+    label: iron(2+) sulfate (anhydrous)
 - preferred_term: Tricine
   concentration:
     value: '4'
@@ -105,9 +106,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
-    label: CaCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
 - preferred_term: Micronutrients
   concentration:
     value: variable
@@ -121,9 +122,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: CuSO4
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
@@ -133,9 +134,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000855
-    label: CuSO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:23414
+    label: copper(II) sulfate
 - preferred_term: CoCl2
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
@@ -145,15 +146,18 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
-    label: CoCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
 - preferred_term: MnCl2
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:63041
+    label: manganese(II) chloride
 - preferred_term: ZnSO4
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
@@ -163,9 +167,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: ZnSO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: zinc sulfate
 - preferred_term: (NH4)6(MO7)24
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
@@ -190,7 +194,6 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.938288'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CaCl2; Added default concentration
     for ingredient: Micronutrients; Added default concentration for ingredient: H3BO3;
@@ -198,6 +201,7 @@ curation_history:
     for ingredient: CoCl2; Added default concentration for ingredient: MnCl2; Added
     default concentration for ingredient: ZnSO4; Added default concentration for ingredient:
     (NH4)6(MO7)24'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-02-06T05:10:37.943745Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
@@ -216,6 +220,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MOPS (morpholinethanesulfonic acid) minimal medium"
     to "mops_morpholinethanesulfonic_acid_minimal_medium" for consistent matching
-merge_fingerprint: c18c52fde4a28008da4032ec01532d4406e1c18e7cd322fff770f8ca99a0576b
+- timestamp: '2026-05-16T09:04:26.625130+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:38.268518+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 12 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:09.114381+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 7 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:50.224148+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint c6bfccee65f5847645bcb0890a35d02e95c709c641e97030fdacdbebfb455f45
+  source: mops_morpholinethanesulfonic_acid_minimal_medium.yaml
+merge_fingerprint: c6bfccee65f5847645bcb0890a35d02e95c709c641e97030fdacdbebfb455f45
 merged_from:
 - mops_morpholinethanesulfonic_acid_minimal_medium

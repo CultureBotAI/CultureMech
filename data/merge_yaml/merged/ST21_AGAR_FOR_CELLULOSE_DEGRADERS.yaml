@@ -1,26 +1,28 @@
-id: CultureMech:002113
+id: CultureMech:006861
 name: st21_agar_for_cellulose_degraders
 original_name: ST21 AGAR FOR CELLULOSE DEGRADERS
 category: bacterial
 medium_type: COMPLEX
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
+notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 938 | DSMZ Medium: 938 (mediadive.medium:938)
+  | Aerobic: No'
 media_term:
-  preferred_term: DSMZ Medium 938
+  preferred_term: KOMODO Medium 938
   term:
-    id: mediadive.medium:938
+    id: komodo.medium:938
     label: ST21 AGAR FOR CELLULOSE DEGRADERS
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium938.pdf'
 ingredients:
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '1.66667'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: Yeast extract
   concentration:
@@ -33,8 +35,8 @@ ingredients:
   concentration:
     value: '23.3333'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Tap water
   term:
@@ -44,13 +46,13 @@ ingredients:
     value: '1000.0'
     unit: G_PER_L
   notes: ' [Merged 3 duplicates: 600.0, 300.0, 100.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Tap water
 - preferred_term: KNO3
   term:
     id: CHEBI:63043
-    label: KNO3
+    label: potassium nitrate
   concentration:
     value: '3.33333'
     unit: G_PER_L
@@ -64,8 +66,8 @@ ingredients:
   concentration:
     value: '3.33333'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -74,18 +76,18 @@ ingredients:
   concentration:
     value: '3.33333'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: MnSO4 x 7 H2O
   term:
     id: CHEBI:86360
-    label: MnSO4 x 7 H2O
+    label: manganese(II) sulfate
   concentration:
     value: '0.333333'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000605
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86360
     label: MnSO4 x 7 H2O
 - preferred_term: FeCl3
   term:
@@ -94,40 +96,75 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000705
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30808
     label: FeCl3
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Autoclave solutions separately and combine after cooling to 50°C. A
-    slight precipitate does not restrict agar quality. Adjust pH to 7.2 with KOH using
-    pH indicating paper strips before pouring plates. Place 3-4 strips of filter paper
-    (ca 1 cm2) on the gelated plates and inoculate the filter strips.
+- preferred_term: KOH
+  term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+  notes: pH adjustment (extracted from notes)
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32035
+    label: potassium hydroxide
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:12.829686Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 938'
-- timestamp: '2026-03-13T03:08:49.619272Z'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 938'
+- timestamp: '2026-02-03T11:19:01.147638'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 938
+- timestamp: '2026-03-13T03:08:54.775464Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
-  notes: Merged 2 duplicate ingredient(s)
-- timestamp: '2026-03-13T06:19:10.439511Z'
+  notes: 'Merged 2 duplicate ingredient(s); Added pH buffer: KOH'
+- timestamp: '2026-03-13T06:19:44.430012Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002113'
-- timestamp: '2026-03-17T06:29:53.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:006861'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: KOH'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:29:59.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:23.105632+00:00'
+- timestamp: '2026-03-17T19:46:02.350755+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "ST21 AGAR FOR CELLULOSE DEGRADERS" to "st21_agar_for_cellulose_degraders"
     for consistent matching
-merge_fingerprint: c2f7bb9740fdabf919e5458e65ac39ea419cadfe159fbdc8a84591c8e99cf61e
+- timestamp: '2026-05-16T09:03:05.587016+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:28.006762+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:37:34.396718+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:46:46.464453+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:02.400305+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b1c37a5d29f90d11cff3b688d6ac01c9882c7cc8d79390d6f5dedf36d0abe81d
+  source: KOMODO_938_ST21_AGAR_FOR_CELLULOSE_DEGRADERS.yaml
+merge_fingerprint: b1c37a5d29f90d11cff3b688d6ac01c9882c7cc8d79390d6f5dedf36d0abe81d
 merged_from:
-- st21_agar_for_cellulose_degraders
+- KOMODO_938_ST21_AGAR_FOR_CELLULOSE_DEGRADERS

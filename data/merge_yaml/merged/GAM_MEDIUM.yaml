@@ -3,6 +3,7 @@ name: gam_medium
 original_name: GAM MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J83
@@ -30,6 +31,11 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "GAM MEDIUM" to "gam_medium" for consistent matching
+- timestamp: '2026-08-06T03:05:35.974320+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d6da557bd09a743f541b8604a3da2dfa0128ee62b8eee0ef1d1ec495d88bf4dc
+  source: gam_medium.yaml
 merge_fingerprint: d6da557bd09a743f541b8604a3da2dfa0128ee62b8eee0ef1d1ec495d88bf4dc
 merged_from:
 - gam_medium

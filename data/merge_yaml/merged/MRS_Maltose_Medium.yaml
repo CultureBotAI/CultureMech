@@ -1,55 +1,85 @@
-id: CultureMech:010518
+id: CultureMech:009414
 name: mrs_maltose_medium
-original_name: MRS MALTOSE MEDIUM
-category: fungal
+original_name: MRS Maltose Medium
+category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 6.5
-media_term:
-  preferred_term: JCM Medium J293
-  term:
-    id: mediadive.medium:J293
-    label: MRS MALTOSE MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=293'
 ingredients:
-- preferred_term: Lactobacilli MRS broth
+- preferred_term: Distilled water
   concentration:
-    value: '55'
+    value: '1'
     unit: G_PER_L
-- preferred_term: Maltose
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:17306
-    label: Maltose
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Maltose
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000591
-    label: Maltose
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 6.5.
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:18167
+    label: alpha-maltose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18167
+    label: alpha-maltose
+- preferred_term: Lactobacilli MRS broth (BD-Difco)
+  concentration:
+    value: '55'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M287
+  term:
+    id: TOGO:M287
+    label: MRS Maltose Medium
+notes: 'Source: https://togomedium.org/medium/M287
+
+  Original source: JCM - JCM_M293
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=293'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:16.202930Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J293'
-- timestamp: '2026-03-13T06:20:14.206285Z'
+- timestamp: '2026-01-27T06:35:54.768045Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M287'
+- timestamp: '2026-01-28T19:48:28.493578Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:06.097893Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:010518'
-- timestamp: '2026-03-17T17:06:08.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:009414'
+- timestamp: '2026-03-17T06:30:25.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:33.232106+00:00'
+- timestamp: '2026-03-17T19:46:25.047184+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MRS MALTOSE MEDIUM" to "mrs_maltose_medium" for consistent
+  notes: Normalized name from "MRS Maltose Medium" to "mrs_maltose_medium" for consistent
     matching
-merge_fingerprint: 2c52f39c84b780d37e7742e9f835bb9d789d4362e6629e0ffacf4f6c2ee485ec
+- timestamp: '2026-06-05T07:41:38.477661+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:50.470675+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 72f311f6de4043dc3bd189a93658d971b7db7d0a537b1a316782416058f2040b
+  source: mrs_maltose_medium.yaml
+merge_fingerprint: 72f311f6de4043dc3bd189a93658d971b7db7d0a537b1a316782416058f2040b
 merged_from:
 - mrs_maltose_medium

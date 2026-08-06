@@ -3,6 +3,7 @@ name: sterile_human_urine
 original_name: Sterile human urine
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sterile human urine
@@ -32,6 +33,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Sterile human urine" to "sterile_human_urine" for consistent
     matching
+- timestamp: '2026-08-06T03:05:56.624545+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b9d38810ed1c0bce860a3bf3d45ca5ef801d2a18e612783aa05a42f038d8fef7
+  source: sterile_human_urine.yaml
 merge_fingerprint: b9d38810ed1c0bce860a3bf3d45ca5ef801d2a18e612783aa05a42f038d8fef7
 merged_from:
 - sterile_human_urine

@@ -1,49 +1,221 @@
-id: CultureMech:001225
+id: CultureMech:001226
 name: seawater_medium
 original_name: SEAWATER MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:
-  preferred_term: DSMZ Medium 1752
+  preferred_term: DSMZ Medium 1753
   term:
-    id: mediadive.medium:1752
+    id: mediadive.medium:1753
     label: SEAWATER MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1752.pdf'
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1753.pdf'
 ingredients:
 - preferred_term: Bacto peptone
   concentration:
-    value: '2.5'
+    value: '5.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 2.5, 2.5]'
 - preferred_term: Yeast extract
   concentration:
-    value: '0.5'
+    value: '1.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.5, 0.5]'
+- preferred_term: Fe(III) citrate
+  term:
+    id: CHEBI:144421
+    label: Fe(III) citrate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:144421
+    label: Fe(III) citrate
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '19.45'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: MgCl2
+  term:
+    id: CHEBI:6636
+    label: MgCl2
+  concentration:
+    value: '5.9'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6636
+    label: MgCl2
+- preferred_term: Na2SO4
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+  concentration:
+    value: '3.24'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
+    label: Na2SO4
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
+    label: CaCl2
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.55'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: KCl
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.16'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: NaHCO3
+- preferred_term: KBr
+  term:
+    id: CHEBI:32030
+    label: potassium bromide
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32030
+    label: KBr
+- preferred_term: SrCl2
+  term:
+    id: CHEBI:36383
+    label: SrCl2
+  concentration:
+    value: '0.034'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:36383
+    label: SrCl2
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  concentration:
+    value: '0.022'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: H3BO3
+- preferred_term: Na silicate
+  term:
+    id: CHEBI:60720
+    label: sodium silicate
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:60720
+    label: Na silicate
+- preferred_term: NaF
+  term:
+    id: CHEBI:28741
+    label: sodium fluoride
+  concentration:
+    value: '0.0024'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28741
+    label: NaF
+- preferred_term: (NH4)NO3
+  term:
+    id: CHEBI:63038
+    label: (NH4)NO3
+  concentration:
+    value: '0.0016'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63038
+    label: (NH4)NO3
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '0.008'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: Na2HPO4
 - preferred_term: Sea water
   concentration:
     value: '1000'
     unit: G_PER_L
 preparation_steps:
 - step_number: 1
+  action: MIX
+  description: or
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.5
+- step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 7.5
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:15.430003Z'
+- timestamp: '2026-01-26T17:53:15.431238Z'
   curator: mediadive-import
   action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1752'
-- timestamp: '2026-03-13T06:19:02.398604Z'
+  notes: 'Source: DSMZ, ID: 1753'
+- timestamp: '2026-03-13T03:09:36.998265Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:02.405340Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:001225'
-- timestamp: '2026-03-17T19:45:14.223481+00:00'
+  notes: 'Assigned stable identifier: CultureMech:001226'
+- timestamp: '2026-03-17T06:30:48.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:14.229968+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "SEAWATER MEDIUM" to "seawater_medium" for consistent
     matching
-merge_fingerprint: 7236c1770d9dc49b566aae7a7e5a65a1cc2eac0f8bec1466d393c1e62516230c
+- timestamp: '2026-06-05T07:40:16.120183+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 14 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:42.625994+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:34.570525+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint ebc94a7a45a54ffc3d999176f4323cde5ee4e83857fb52c26a6e5168ed2832fc
+  source: DSMZ_1753_SEAWATER_MEDIUM.yaml
+merge_fingerprint: ebc94a7a45a54ffc3d999176f4323cde5ee4e83857fb52c26a6e5168ed2832fc
 merged_from:
-- seawater_medium
+- DSMZ_1753_SEAWATER_MEDIUM

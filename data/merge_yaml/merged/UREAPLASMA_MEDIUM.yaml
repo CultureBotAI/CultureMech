@@ -1,103 +1,116 @@
-id: CultureMech:000527
+id: CultureMech:002467
 name: ureaplasma_medium
 original_name: UREAPLASMA MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 6.0
+ph_value: 6.1
 media_term:
-  preferred_term: DSMZ Medium 1096
+  preferred_term: JCM Medium J1303
   term:
-    id: mediadive.medium:1096
+    id: mediadive.medium:J1303
     label: UREAPLASMA MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1096.pdf'
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1303'
 ingredients:
 - preferred_term: PPLO broth
   concentration:
-    value: '21'
+    value: '10.5'
     unit: G_PER_L
-- preferred_term: L-Cysteine HCl
-  term:
-    id: CHEBI:91247
-    label: L-Cysteine HCl
-  concentration:
-    value: '0.142857'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000223
-    label: L-Cysteine HCl
-- preferred_term: Fish-Sperm DNA
-  concentration:
-    value: '0.285714'
-    unit: G_PER_L
-  term:
-    id: CHEBI:16991
-    label: deoxyribonucleic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000732
-    label: Fish-Sperm DNA
 - preferred_term: Phenol red
   term:
     id: CHEBI:31991
     label: Phenol red
   concentration:
-    value: '0.0285714'
+    value: '200'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001075
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31991
     label: Phenol red
+- preferred_term: Hipolypepton
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Bovine calf serum
+  concentration:
+    value: '5'
+    unit: G_PER_L
 - preferred_term: Urea
   term:
     id: CHEBI:16199
     label: Urea
   concentration:
-    value: '0.571429'
+    value: '15.0'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000301
+  notes: ' [Merged 2 duplicates: 10.0, 5.0]'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16199
     label: Urea
 - preferred_term: Yeast extract
   concentration:
-    value: '2'
-    unit: G_PER_L
-- preferred_term: Horse serum
-  concentration:
-    value: '200'
-    unit: G_PER_L
-- preferred_term: Isovitalex
-  concentration:
-    value: '5'
+    value: '20'
     unit: G_PER_L
 preparation_steps:
 - step_number: 1
-  action: AUTOCLAVE
-  description: Adjust solution A for final pH 6.0 with HCl. Autoclave solution A at
-    121°C for 15 min. Cool to room temperature and aseptically add solution B filter
-    sterilised.
+  action: FILTER_STERILIZE
+  description: Mix components, adjust pH to 6.0-6.2. After autoclaving and then cooling
+    to 50-55C, aseptically add the following solutions (filter-sterilized).
+- step_number: 2
+  action: MIX
+  description: <i>1% Phenol red solution:</i>
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Dissolve 1.0 g phenol red first in 10-20 ml of 0.1 N NaOH. Then adjust
+    volume to 100 ml. After filter-sterilizing, store at 4C.
+- step_number: 4
+  action: MIX
+  description: <i>1% Urea - 4% yeast extract solution:</i>
+- step_number: 5
+  action: FILTER_STERILIZE
+  description: Mix components, sterilize by filtration through a 0.22 ï¿½m filter
+    and store at 4C.
+- step_number: 6
+  action: POUR_PLATES
+  description: Dispense the medium into sterilized plastic tubes (e.g., 5 ml medium
+    in 15 ml of plastic tubes) and add 100-200 ï¿½l of culture solution. Incubate
+    the cultures at 37C for 1-3 days. When the color of the medium turns from yellow
+    to orange or red, subculture into the new medium. After color change, the strain
+    can be stored at 4C for 1-2 weeks.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:13.357961Z'
+- timestamp: '2026-01-26T17:53:19.372481Z'
   curator: mediadive-import
   action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1096'
-- timestamp: '2026-01-28T19:48:10.636634Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:18:56.086405Z'
+  notes: 'Source: JCM, ID: J1303'
+- timestamp: '2026-03-13T03:08:48.621406Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:13.558408Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000527'
-- timestamp: '2026-03-17T06:29:47.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:002467'
+- timestamp: '2026-03-17T06:29:51.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:07.122493+00:00'
+- timestamp: '2026-03-17T19:45:26.690654+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "UREAPLASMA MEDIUM" to "ureaplasma_medium" for consistent
     matching
-merge_fingerprint: b8daddf67235780e4110033d785739842f14f3f5eabe298e005af7b7b2e9aac5
+- timestamp: '2026-06-05T07:40:16.682066+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:35.377251+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint ae2f19e22f9275f528d358190105dbb18a75556eb4f1bbce867ca6ebbe9fc7b5
+  source: JCM_J1303_UREAPLASMA_MEDIUM.yaml
+merge_fingerprint: ae2f19e22f9275f528d358190105dbb18a75556eb4f1bbce867ca6ebbe9fc7b5
 merged_from:
-- ureaplasma_medium
+- JCM_J1303_UREAPLASMA_MEDIUM

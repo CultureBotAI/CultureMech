@@ -1,8 +1,9 @@
 id: CultureMech:008908
 name: sulfolobus_medium_for_dsm_5348
 original_name: Sulfolobus Medium (For DSM 5348)
-category: bacterial
+category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4 x 7 H2O
   concentration:
@@ -24,11 +25,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.07'
@@ -38,9 +39,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: KH2PO4
   concentration:
     value: '0.28'
@@ -49,9 +50,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: (NH4)2SO4
   concentration:
@@ -62,9 +63,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: (NH4)2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 - preferred_term: FeCl3 x 6 H2O
   concentration:
     value: '0.02'
@@ -74,9 +75,9 @@ ingredients:
   term:
     id: CHEBI:86254
     label: iron trichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000218
-    label: FeCl3 x 6 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86254
+    label: iron trichloride hexahydrate
 - preferred_term: powdered sulfur
   concentration:
     value: '0.5'
@@ -98,9 +99,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001125
-    label: H2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26836
+    label: sulfuric acid
 - preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '3'
@@ -110,17 +111,17 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000183
-    label: Na2MoO4 x 2 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
 - preferred_term: MnCl2 x 4 H2O
   concentration:
     value: '180'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -134,9 +135,9 @@ ingredients:
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
-    label: ZnSO4 x 7 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
 - preferred_term: CuCl2 x 2 H2O
   concentration:
     value: '5'
@@ -146,9 +147,9 @@ ingredients:
   term:
     id: CHEBI:86318
     label: copper(II) chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
-    label: CuCl2 x 2 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
 - preferred_term: VOSO4 x 2 H2O
   concentration:
     value: '3'
@@ -167,6 +168,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:131366
+    label: ''
 - preferred_term: CoSO4
   concentration:
     value: '1'
@@ -176,9 +180,9 @@ ingredients:
   term:
     id: CHEBI:53470
     label: cobalt(2+) sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000158
-    label: CoSO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53470
+    label: cobalt(2+) sulfate
 - preferred_term: HCl
   notes: 'Role: Solvating media; Properties: Defined component, Solution, Inorganic
     compound'
@@ -188,9 +192,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000150
-    label: HCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
+    label: hydrogen chloride
 media_term:
   preferred_term: TOGO Medium M2320
   term:
@@ -211,10 +215,10 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:53.246827'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: H2SO4; Added default concentration
     for ingredient: HCl'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:05:09.375989+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -228,9 +232,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008908'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:55.083387'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:53.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -240,6 +244,46 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Sulfolobus Medium (For DSM 5348)" to "sulfolobus_medium_for_dsm_5348"
     for consistent matching
+- timestamp: '2026-05-16T09:04:32.788981+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:41:47.444438+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 13 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:58:33.341307+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:47:12.016885+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-02T06:47:50.280515+00:00'
+  curator: deep-research-edison-phase2
+  action: ENRICHED
+  notes: 'Phase-2: Metallosphaera sedula DSM 5348T (the type strain named in the record)
+    is directly supported on DSMZ medium 88 (Sulfolobus medium) at pH 2.0, 70C (Auernik
+    2008). Sulfolobus (Sulfuracidifex) metallicus DSM 6482 grows on recognizable DSM-88
+    variants. Sulfolobus acidocaldarius DSM 639 was deliberately EXCLUDED: phase-2
+    found it grows on a plain Brock''s basal-salts medium (a distinct medium family,
+    not the DSM-88 formulation captured here) that warrants its own record, not an
+    addition here. [added 2 organism(s), 1 variant(s)]'
+- timestamp: '2026-08-06T00:58:02.588077+00:00'
+  curator: curate_organism_culture_type.py
+  action: SET_ORGANISM_CULTURE_TYPE
+  notes: 'Inferred isolate: 2 specific strain(s) named, no community signal (#142)'
+  changes: Set organism_culture_type=isolate (was unset)
+- timestamp: '2026-08-06T03:04:32.794782+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint aae03af8e120a54326cabb0d97a644380aaf20e60b83921e92d550b9182c8dc0
+  source: sulfolobus_medium_for_dsm_5348.yaml
 solutions:
 - preferred_term: Allen’s trace element solution
   composition: []
@@ -247,6 +291,54 @@ solutions:
     value: '10'
     unit: G_PER_L
   name: Unknown solution
-merge_fingerprint: 8883bd883112e59d0e97a8153222378c3c08632b777ddafd584d58c68a0a2bcc
+organism_culture_type: isolate
+target_organisms:
+- preferred_term: Metallosphaera sedula
+  term:
+    id: NCBITaxon:43687
+    label: Metallosphaera sedula
+  strain: DSM 5348T (TH2)
+  genome_assembly_id:
+  - GCA_000016605.1
+  evidence:
+  - reference: doi:10.1128/AEM.02019-07
+    supports: SUPPORT
+    explanation: 'Auernik et al. 2008 directly reports DSMZ 88 cultivation of the
+      DSM 5348 type strain (exact parent match). Full DSMZ 88 recipe is referenced
+      by name rather than printed; parent formulation is inherited from this record.
+      | Identifiers: DSM 5348T; GenBank CP000682; RefSeq NC_009440.1'
+    snippet: Cells (DSMZ 5348) were grown aerobically at 70°C in an orbital shaking
+      oil bath at 70 rpm on DSMZ 88 medium (pH 2), supplemented with 0.1% yeast extract
+      (YE).
+- preferred_term: Sulfuracidifex metallicus
+  term:
+    id: NCBITaxon:47303
+    label: Sulfuracidifex metallicus
+  strain: DSM 6482
+  genome_assembly_id:
+  - GCA_009729515.1
+  evidence:
+  - reference: doi:10.1128/mbio.01033-24
+    supports: SUPPORT
+    explanation: 'Willard et al. 2024 prints a DSM-88/Brock''s salts formulation for
+      DSM 6482. Relative to the parent (which lists sulfide ore) this is a recognizable
+      supplemented MediaVariant rather than the exact parent recipe. | Identifiers:
+      DSM 6482; also classified as Sulfuracidifex metallicus'
+variants:
+- name: dsmz88_sulfolobus_supplemented_yeast_extract_ferrous_iron
+  relationship: SUPPLEMENTED_VARIANT
+  description: DSMZ medium 88 / Sulfolobus medium with organic and/or ferrous-iron
+    supplementation used for M. sedula DSM 5348 cultivation (Auernik 2008).
+  modifications:
+  - Base DSMZ medium 88 (Brock's salts), pH 2.0, 70C, aerobic
+  - Add 0.1% yeast extract (mixotrophic) or 0.1% tryptone (heterotrophic)
+  - Optional ~7.5 g/L FeSO4.7H2O, or FeS2/pyrite as sole energy source
+  purpose: Mixotrophic/heterotrophic and iron/pyrite-oxidizing cultivation of Metallosphaera
+    sedula DSM 5348.
+  evidence:
+  - reference: doi:10.1128/AEM.02019-07
+    supports: SUPPORT
+    explanation: Auernik et al. 2008 documents the supplement set.
+merge_fingerprint: aae03af8e120a54326cabb0d97a644380aaf20e60b83921e92d550b9182c8dc0
 merged_from:
 - sulfolobus_medium_for_dsm_5348

@@ -3,9 +3,10 @@ name: mrs_de_man_rogosa_sharpe_medium
 original_name: MRS (de Man, Rogosa, Sharpe) medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: distilled water
+- preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
@@ -14,18 +15,21 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: distilled water
-- preferred_term: MgSO4 · 7H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4.7H2O
   concentration:
     value: '200'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
   term:
-    id: CHEBI:32599
-    label: ''
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: K2HPO4
   concentration:
     value: '2'
@@ -35,16 +39,16 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: polyoxyethylene sorbitan mono-oleate (Tween 80)
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Surfactant; Properties: Organic compound, Simple component, Defined
     component'
-- preferred_term: MnSO4 · 4 H2O
+- preferred_term: MnSO4.4H2O
   concentration:
     value: '50'
     unit: G_PER_L
@@ -52,8 +56,11 @@ ingredients:
     compound'
   term:
     id: CHEBI:86358
-    label: ''
-- preferred_term: triammonium citrate
+    label: manganese(II) sulfate tetrahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86358
+    label: manganese(II) sulfate tetrahydrate
+- preferred_term: Triammonium citrate
   concentration:
     value: '2'
     unit: G_PER_L
@@ -67,7 +74,7 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Simple component, Organic compound'
-- preferred_term: glucose
+- preferred_term: Glucose
   concentration:
     value: '20'
     unit: G_PER_L
@@ -76,9 +83,14 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Yeast extract (Difco or Oxoid)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
 - preferred_term: Oxoid peptone
   concentration:
     value: '10'
@@ -89,11 +101,6 @@ ingredients:
     value: '10'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Yeast extract (Difco or Oxoid)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Complex component, Undefined component'
 media_term:
   preferred_term: TOGO Medium M2950
   term:
@@ -124,7 +131,40 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MRS (de Man, Rogosa, Sharpe) medium" to "mrs_de_man_rogosa_sharpe_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:41:38.470276+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:58:27.302995+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:47:09.188466+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:50.437988+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: mrs_broth, mrs_de_man_rogosa_sharpe_medium'
+- timestamp: '2026-08-06T03:05:50.438024+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint adf818847efb079ca32a1ac67b423b2c562b41787ff5b237e07564b1acba66c8
+  source: mrs_broth.yaml, mrs_de_man_rogosa_sharpe_medium.yaml
 high_metal: true
-merge_fingerprint: 099be7e01f5cf88a9e4979951879bedd9aa5a334eb5272ab3bbab5c4767e70d9
+synonyms:
+- name: mrs_broth
+  source: TOGO
+  source_id: TOGO:M2238
+  original_category: bacterial
+categories:
+- bacterial
 merged_from:
+- mrs_broth
 - mrs_de_man_rogosa_sharpe_medium
+merge_fingerprint: adf818847efb079ca32a1ac67b423b2c562b41787ff5b237e07564b1acba66c8

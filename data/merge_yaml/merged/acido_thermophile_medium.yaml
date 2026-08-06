@@ -1,8 +1,9 @@
 id: CultureMech:000256
 name: acido_thermophile_medium
 original_name: ACIDO-THERMOPHILE MEDIUM
-category: ARCHAEA
+category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 5.2
 media_term:
@@ -29,22 +30,22 @@ ingredients:
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Na2HPO4 x 7 H2O
   term:
@@ -53,8 +54,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4 x 7 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -63,8 +64,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -73,8 +74,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: Yeast extract
   concentration:
@@ -95,9 +96,7 @@ ingredients:
   notes: Pancreatic digest of gelatin, provides nitrogen and amino acids; Constituent
     of MacConkey Agar commercial product
   synonyms:
-  - synonym_text:
-      synonym_text: pancreatic gelatin digest
-      synonym_type: EXACT
+  - synonym_text: pancreatic gelatin digest
     synonym_type: EXACT
 - preferred_term: Proteose peptone
   term:
@@ -128,9 +127,7 @@ ingredients:
   notes: Fermentable carbohydrate for differentiation. Fermentation produces acid
     causing pH drop and color change; Constituent of MacConkey Agar commercial product
   synonyms:
-  - synonym_text:
-      synonym_text: lactose
-      synonym_type: EXACT
+  - synonym_text: lactose
     synonym_type: EXACT
 - preferred_term: Bile salts
   term:
@@ -207,8 +204,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001069
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17057
     label: Cellobiose
 - preferred_term: Agar
   term:
@@ -217,8 +214,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -247,6 +244,37 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ACIDO-THERMOPHILE MEDIUM" to "acido_thermophile_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:02:57.207028+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-05-17T07:06:05.053686+00:00'
+  curator: cleanup_residual_errors.py
+  action: CLEANUP_RESIDUAL_ERRORS
+  notes: R01_flatten_synonym_text=2
+- timestamp: '2026-06-05T07:40:14.471036+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:42.152852+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-07-29T02:09:00.657591Z'
+  curator: domain-growth-evidence
+  action: ANNOTATED
+  changes: category
+  notes: 'Moved archaea/ -> bacterial/ and restamped category on growth evidence:
+    kg-microbe records only bacterial taxa growing in this medium (Acidothermus cellulolyticus).
+    The name carries a physiology (halophile/thermophile) that spans both domains,
+    so the previous archaea/ placement was unsubstantiated (#138).'
+- timestamp: '2026-08-06T03:05:22.041011+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2b62f160a86e99aa9977388f65ea286a722aa9ab5fbfdc662883575f8cf89c70
+  source: acido_thermophile_medium.yaml
 merge_fingerprint: 2b62f160a86e99aa9977388f65ea286a722aa9ab5fbfdc662883575f8cf89c70
 merged_from:
 - acido_thermophile_medium

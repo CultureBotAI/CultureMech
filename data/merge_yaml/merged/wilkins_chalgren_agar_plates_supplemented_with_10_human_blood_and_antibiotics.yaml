@@ -4,6 +4,7 @@ original_name: Wilkins-Chalgren agar plates (supplemented with 10% human blood a
   antibiotics)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: vancomycin (Lilly France S.A., Fergesheim, France)
@@ -70,12 +71,12 @@ curation_history:
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2852'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.692284'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     Oxygen gas; Added default concentration for ingredient: Wilkins-Chalgren agar
     plates (Oxoid Ltd., Hampshire, UK)'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:06.023849Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -86,6 +87,15 @@ curation_history:
   notes: Normalized name from "Wilkins-Chalgren agar plates (supplemented with 10%
     human blood and antibiotics)" to "wilkins_chalgren_agar_plates_supplemented_with_10_human_blood_and_antibiotics"
     for consistent matching
+- timestamp: '2026-05-16T09:04:38.845499+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:06:02.886676+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 54a8482d9eb5be04692aeb5b24bf731fd6148da6240763cc91d9aec7bd7998bb
+  source: wilkins_chalgren_agar_plates_supplemented_with_10_human_blood_and_antibiotics.yaml
 merge_fingerprint: 54a8482d9eb5be04692aeb5b24bf731fd6148da6240763cc91d9aec7bd7998bb
 merged_from:
 - wilkins_chalgren_agar_plates_supplemented_with_10_human_blood_and_antibiotics

@@ -4,6 +4,7 @@ original_name: '355'
 category: bacterial
 description: 355. NBRC 352.
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Hipolypepton*10gYeast extract2gMethanol**5mlMgSO4·7H2O1gAgar (if
@@ -41,11 +42,20 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007489'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:45.888736'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Hipolypepton*10gYeast extract2gMethanol**5mlMgSO4·7H2O1gAgar
     (if needed)15gDistilled water1LpH 7.0*Wako Pure Chemical Ind., Ltd., Osaka, Japan.**Sterilize
     separately by filtration.'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-05-16T09:03:06.691933+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:05:04.673047+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e60dd0d1b759caef431509b260fe1845d0ca32827c196f69c70bc465949dfe0f
+  source: NBRC_355.yaml
 merge_fingerprint: e60dd0d1b759caef431509b260fe1845d0ca32827c196f69c70bc465949dfe0f
 merged_from:
 - NBRC_355

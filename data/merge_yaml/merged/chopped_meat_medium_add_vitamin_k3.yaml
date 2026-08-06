@@ -3,6 +3,7 @@ name: chopped_meat_medium_add_vitamin_k3
 original_name: Chopped Meat Medium (add Vitamin K3)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: NaOH 1 N
@@ -19,8 +20,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Ground beef (fat free)
   concentration:
@@ -41,9 +42,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -53,8 +54,8 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: Casitone
   concentration:
@@ -84,9 +85,9 @@ ingredients:
   term:
     id: CHEBI:32145
     label: sodium hydroxide
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
-    label: NaOH
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
 - preferred_term: haemin
   concentration:
     value: '50'
@@ -96,14 +97,17 @@ ingredients:
   term:
     id: CHEBI:50385
     label: Haemin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
-    label: haemin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
+    label: Haemin
 - preferred_term: vitamin K3
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Solution, Defined component'
+  term:
+    id: CHEBI:28869
+    label: ''
 - preferred_term: 95% ethanol
   notes: 'Role: Solvating media; Properties: Defined component, Organic compound,
     Simple component'
@@ -130,10 +134,10 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:54.060461'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2; Added default concentration
     for ingredient: 95% ethanol'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:04:23.928230+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -147,9 +151,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009093'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:55.973239'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:29:56.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -159,6 +163,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Chopped Meat Medium (add Vitamin K3)" to "chopped_meat_medium_add_vitamin_k3"
     for consistent matching
+- timestamp: '2026-05-16T09:03:27.400611+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:53.452912+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:54.523031+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:27.593527+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b48a2c91273bf916560815dab447f5048366a2ce568dcb6c051289117328a6de
+  source: chopped_meat_medium_add_vitamin_k3.yaml
 solutions:
 - preferred_term: Haemin solution
   term:
@@ -178,6 +201,6 @@ solutions:
     unit: G_PER_L
   notes: See mediadive_5540_Vitamin_K3_solution.yaml for composition
   name: Unknown solution
-merge_fingerprint: 86c50f4c450df0335931628ccfb7c19e255008f064e4131098486c84b27a1b08
+merge_fingerprint: b48a2c91273bf916560815dab447f5048366a2ce568dcb6c051289117328a6de
 merged_from:
 - chopped_meat_medium_add_vitamin_k3

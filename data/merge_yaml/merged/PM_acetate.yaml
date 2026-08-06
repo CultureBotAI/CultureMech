@@ -1,6 +1,7 @@
 id: CultureMech:015679
 name: PM acetate
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Na2HPO4
@@ -17,7 +18,7 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:63036
-    label: ''
+    label: potassium dihydrogen phosphate
 - preferred_term: Ammonium Sulfate
   concentration:
     value: '1'
@@ -146,7 +147,7 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 127-09-3; MW: 82.03'
 description: Harwood UW defined media for growing RPal with acetate as carbon source
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: PM acetate
@@ -160,8 +161,21 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015679'
+- timestamp: '2026-05-16T09:04:42.686011+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-10T07:47:15.582604+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:07.540628+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint ac99bf2f6fa57e874b3dd11f9cd0022db09cce56770790121aa5200574c91cbf
+  source: pm_acetate.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: 80114ca3672128b2944a3e0fd085157f0cf54a16ccfff82d1ab50cce17504025
+merge_fingerprint: ac99bf2f6fa57e874b3dd11f9cd0022db09cce56770790121aa5200574c91cbf
 merged_from:
 - pm_acetate

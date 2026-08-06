@@ -3,6 +3,7 @@ name: p2_1_butanol_challenge
 original_name: P2, 1% butanol challenge
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose
@@ -13,8 +14,8 @@ ingredients:
     value: '123.21'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Biotin
   term:
@@ -24,8 +25,8 @@ ingredients:
     value: '4.5429e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Thiamine
   term:
@@ -46,9 +47,9 @@ ingredients:
     value: '0.00809302'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4abz'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001121
-    label: 4-Aminobenzoate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17836
+    label: 4-aminobenzoate
 - preferred_term: 1-Butanol
   concentration:
     value: '147.695'
@@ -57,6 +58,9 @@ ingredients:
   concentration:
     value: '3.18564'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -64,13 +68,16 @@ ingredients:
   concentration:
     value: '0.189918'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '4.07785'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -78,8 +85,8 @@ ingredients:
   concentration:
     value: '0.900619'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
@@ -88,13 +95,16 @@ ingredients:
   concentration:
     value: '0.0656655'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.0399165'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Ammonium Acetate
   term:
     id: CHEBI:62947
@@ -102,9 +112,9 @@ ingredients:
   concentration:
     value: '31.6775'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000701
-    label: Ammonium Acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62947
+    label: Ammonium acetate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -134,10 +144,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "P2, 1% butanol challenge" to "p2_1_butanol_challenge"
     for consistent matching
-- timestamp: '2026-04-17T06:30:18.822475+00:00'
+- timestamp: '2026-06-05T07:41:40.738898+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:52.143689+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: p2_1_5_butanol_challenge, p2_1_butanol_challenge'
+- timestamp: '2026-08-06T03:05:52.143747+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint cc41a7ca2d6b5923bbe77cd30924c125de99abf957894c8387c9b2e684c12682
+  source: p2_1_5_butanol_challenge.yaml, p2_1_butanol_challenge.yaml
 media_term:
   preferred_term: MediaDB Medium 90
   term:
@@ -149,6 +170,13 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+variant_children:
+- path: data/normalized_yaml/bacterial/p2_1_5_butanol_challenge.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:007439
+  name: p2_1_5_butanol_challenge
+  notes: 1-Butanol increased from 98.4633 mM to 147.695 mM while the P2 challenge
+    medium base remains unchanged.
 synonyms:
 - name: p2_1_5_butanol_challenge
   source: unknown
@@ -159,4 +187,4 @@ categories:
 merged_from:
 - p2_1_5_butanol_challenge
 - p2_1_butanol_challenge
-merge_fingerprint: d21faf4e60fbd461033791e55bf9052e523a07c9b5215c742c2b8445d3983508
+merge_fingerprint: cc41a7ca2d6b5923bbe77cd30924c125de99abf957894c8387c9b2e684c12682

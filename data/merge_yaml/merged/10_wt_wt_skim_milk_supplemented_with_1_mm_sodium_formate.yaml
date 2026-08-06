@@ -3,6 +3,7 @@ name: 10_wt_wt_skim_milk_supplemented_with_1_mm_sodium_formate
 original_name: 10% (wt/wt) skim milk supplemented with 1 mM sodium formate
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 'Skim milk '
@@ -37,6 +38,11 @@ curation_history:
   notes: Normalized name from "10% (wt/wt) skim milk supplemented with 1 mM sodium
     formate" to "10_wt_wt_skim_milk_supplemented_with_1_mm_sodium_formate" for consistent
     matching
+- timestamp: '2026-08-06T03:04:33.168980+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 8bf4434e04f943cb90e9b92dc43ef3df009d58e692421cd459e7fe9bb7084490
+  source: 10_wt_wt_skim_milk_supplemented_with_1_mm_sodium_formate.yaml
 merge_fingerprint: 8bf4434e04f943cb90e9b92dc43ef3df009d58e692421cd459e7fe9bb7084490
 merged_from:
 - 10_wt_wt_skim_milk_supplemented_with_1_mm_sodium_formate

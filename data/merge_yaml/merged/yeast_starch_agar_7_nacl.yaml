@@ -3,6 +3,7 @@ name: yeast_starch_agar_7_nacl
 original_name: Yeast-Starch agar + 7% NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,14 +32,17 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Soluble starch
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Undefined component'
+  term:
+    id: CHEBI:28017
+    label: ''
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -47,9 +51,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 media_term:
   preferred_term: TOGO Medium M1793
   term:
@@ -84,6 +88,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Yeast-Starch agar + 7% NaCl" to "yeast_starch_agar_7_nacl"
     for consistent matching
-merge_fingerprint: 69f9f6f65898fb7b3861541a6ca66a98515ca9f17cac890016da5f55facd3954
+- timestamp: '2026-06-05T07:41:55.753344+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:03.159117+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 708de2a3846c1d96b7a496cbc2bbb38de5c78578b9ef14ac48530a1451e0b90c
+  source: yeast_starch_agar_7_nacl.yaml
+merge_fingerprint: 708de2a3846c1d96b7a496cbc2bbb38de5c78578b9ef14ac48530a1451e0b90c
 merged_from:
 - yeast_starch_agar_7_nacl

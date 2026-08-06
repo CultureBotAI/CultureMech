@@ -3,6 +3,7 @@ name: mueller_hinton
 original_name: MUELLER-HINTON
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.3
 media_term:
@@ -28,8 +29,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
     label: Starch
 - preferred_term: Agar
   term:
@@ -39,8 +40,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -66,6 +67,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MUELLER-HINTON" to "mueller_hinton" for consistent
     matching
+- timestamp: '2026-06-05T07:41:38.874007+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:50.779779+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint eb1fdde4ed66dc00c6a88ba6b1399d341702b320e5f24202b59447a7826b4617
+  source: mueller_hinton.yaml
 merge_fingerprint: eb1fdde4ed66dc00c6a88ba6b1399d341702b320e5f24202b59447a7826b4617
 merged_from:
 - mueller_hinton

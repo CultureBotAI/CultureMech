@@ -3,6 +3,7 @@ name: minimal_chemically_defined_medium_his_pro_letort_2001
 original_name: '''Minimal chemically-defined medium + His +Pro (letort 2001'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Thiamine HCl
@@ -12,8 +13,8 @@ ingredients:
   concentration:
     value: '0.002965'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Riboflavin
   term:
@@ -23,8 +24,8 @@ ingredients:
     value: '0.002657'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: Magnesium chloride
   concentration:
@@ -33,9 +34,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: DL-methionine
   term:
     id: CHEBI:16811
@@ -43,13 +44,16 @@ ingredients:
   concentration:
     value: '0.8713'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000774
-    label: DL-methionine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16811
+    label: DL-Methionine
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '22.04'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Cysteine
   term:
     id: CHEBI:15356
@@ -57,8 +61,8 @@ ingredients:
   concentration:
     value: '2.063'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001023
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15356
     label: Cysteine
 - preferred_term: Ammonium citrate
   concentration:
@@ -71,8 +75,8 @@ ingredients:
   concentration:
     value: '12.19'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
     label: Sodium acetate
 - preferred_term: Proline
   term:
@@ -81,13 +85,16 @@ ingredients:
   concentration:
     value: '5.906'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000396
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26271
     label: Proline
 - preferred_term: Valine
   concentration:
     value: '2.817'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:16414
+    label: ''
 - preferred_term: Histidine
   term:
     id: CHEBI:27570
@@ -95,18 +102,24 @@ ingredients:
   concentration:
     value: '0.9667'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000355
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27570
     label: Histidine
 - preferred_term: Nicotinate
   concentration:
     value: '0.008123'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:nac'
+  term:
+    id: CHEBI:15940
+    label: ''
 - preferred_term: Pyridoxamine HCl
   concentration:
     value: '0.02443'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131531
+    label: ''
 - preferred_term: Ascorbate
   concentration:
     value: '2.839'
@@ -116,19 +129,31 @@ ingredients:
   concentration:
     value: '0.3401'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Isoleucine
   concentration:
     value: '1.677'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:17191
+    label: ''
 - preferred_term: Leucine
   concentration:
     value: '3.659'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:15603
+    label: ''
 - preferred_term: L-Glutamate
   concentration:
     value: '2.719'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glu-L'
+  term:
+    id: CHEBI:16015
+    label: ''
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -136,13 +161,16 @@ ingredients:
   concentration:
     value: '0.002099'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium pantothenate
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '13.41'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Lactose
   term:
     id: CHEBI:17716
@@ -151,8 +179,8 @@ ingredients:
     value: '29.21'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:lcts'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000339
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17716
     label: Lactose
 preparation_steps:
 - step_number: 1
@@ -193,6 +221,17 @@ curation_history:
   notes: Normalized name from "'Minimal chemically-defined medium + His +Pro (letort
     2001" to "minimal_chemically_defined_medium_his_pro_letort_2001" for consistent
     matching
+- timestamp: '2026-06-05T07:41:34.617177+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:46.279908+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2e04dc86b20be1613010aa7d8848ff003414a9e40be88e83058cafea4dd8f7af
+  source: minimal_chemically_defined_medium_his_pro_letort_2001.yaml
 media_term:
   preferred_term: MediaDB Medium 393
   term:
@@ -204,6 +243,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: ab4063f76f684c679e3cc1a807d5ac86f9ae5e45749550ae71b94951a340d2e2
+merge_fingerprint: 2e04dc86b20be1613010aa7d8848ff003414a9e40be88e83058cafea4dd8f7af
 merged_from:
 - minimal_chemically_defined_medium_his_pro_letort_2001

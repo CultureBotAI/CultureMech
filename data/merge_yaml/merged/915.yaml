@@ -4,6 +4,7 @@ original_name: '915'
 category: bacterial
 description: 915. NBRC 913.
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Casamino Acids (Difco)1gBacto Peptone (Difco)2gK2HPO41gKCl0.5gMgSO4·7H2O0.5gFeSO4·7H2O10mgSucrose30gAgar15gDistilled
@@ -40,11 +41,20 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007504'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:45.930955'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Casamino Acids (Difco)1gBacto
     Peptone (Difco)2gK2HPO41gKCl0.5gMgSO4·7H2O0.5gFeSO4·7H2O10mgSucrose30gAgar15gDistilled
     water1L'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-05-16T09:03:06.744708+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:05:04.698210+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint bb994fc5988c1c4e193cf59c17c332737451a8477fb6153fb56634321cf8a455
+  source: NBRC_915.yaml
 merge_fingerprint: bb994fc5988c1c4e193cf59c17c332737451a8477fb6153fb56634321cf8a455
 merged_from:
 - NBRC_915

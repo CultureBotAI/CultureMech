@@ -3,8 +3,11 @@ name: marine_caulobacter_medium
 original_name: MARINE CAULOBACTER medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_range: 7.2-7.4
+ph_range:
+  min: 7.2
+  max: 7.4
 media_term:
   preferred_term: KOMODO Medium 601
   term:
@@ -45,10 +48,19 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MARINE CAULOBACTER medium" to "marine_caulobacter_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:30:09.730499+00:00'
+- timestamp: '2026-05-20T06:01:25.472905+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.4'' -> {''min'': 7.2, ''max'': 7.4}'
+- timestamp: '2026-08-06T03:05:42.006662+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: marine_caulobacter_medium, marine_caulobacter_medium'
+- timestamp: '2026-08-06T03:05:42.006687+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 9e91fcdeeec039310d5f384522372e6caac4fba3c24bee6248ca5a0910138038
+  source: marine_caulobacter_medium.yaml, marine_caulobacter_medium.yaml
 categories:
 - bacterial
 - specialized

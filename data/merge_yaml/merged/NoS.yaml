@@ -1,6 +1,7 @@
 id: CultureMech:015674
 name: NoS
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Na2HPO4
@@ -17,7 +18,7 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:63036
-    label: ''
+    label: potassium dihydrogen phosphate
 - preferred_term: Ammonium chloride
   concentration:
     value: '1'
@@ -99,6 +100,9 @@ ingredients:
     value: '3.92e-05'
     unit: G_PER_L
   notes: 'CAS: 10125-13-0; MW: 170.48; From UW concentrated base no sulfur'
+  term:
+    id: CHEBI:86318
+    label: ''
 - preferred_term: Cobalt(II) nitrate hexahydrate
   concentration:
     value: '2.5e-05'
@@ -135,7 +139,7 @@ ingredients:
 description: Harwood UW defined media for growing RPal; same as PM except all sulfate
   salts replaced with chloride salts
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: NoS
@@ -149,8 +153,21 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015674'
+- timestamp: '2026-05-16T09:04:42.631686+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-10T07:47:15.568330+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:07.481935+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 3ab1bcfa0f3c1da9551869e9f1ee751c6435b48e9f297665321923a18a32dac0
+  source: nos.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: a378b1972e193aab2215e9553e336f9d9b3615ab801f898a046cf848079594ff
+merge_fingerprint: 3ab1bcfa0f3c1da9551869e9f1ee751c6435b48e9f297665321923a18a32dac0
 merged_from:
 - nos

@@ -1,16 +1,18 @@
-id: CultureMech:000456
+id: CultureMech:003546
 name: thermus_medium
-original_name: THERMUS MEDIUM
+original_name: THERMUS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 8.2
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1033 | DSMZ Medium: 1033
+  (mediadive.medium:1033) | Aerobic: No'
 media_term:
-  preferred_term: DSMZ Medium 1033
+  preferred_term: KOMODO Medium 1033
   term:
-    id: mediadive.medium:1033
-    label: THERMUS MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1033.pdf'
+    id: komodo.medium:1033
+    label: THERMUS medium
 ingredients:
 - preferred_term: Nitrilotriacetic acid
   term:
@@ -19,8 +21,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
     label: Nitrilotriacetic acid
 - preferred_term: CaSO4 x 2 H2O
   term:
@@ -29,8 +31,8 @@ ingredients:
   concentration:
     value: '0.06'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000465
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32583
     label: CaSO4 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -39,8 +41,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: NaCl
   term:
@@ -49,13 +51,13 @@ ingredients:
   concentration:
     value: '0.008'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: KNO3
   term:
     id: CHEBI:63043
-    label: KNO3
+    label: potassium nitrate
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -79,8 +81,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4
 - preferred_term: FeCl3 x 6 H2O
   term:
@@ -89,8 +91,8 @@ ingredients:
   concentration:
     value: '0.000459503'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000218
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86254
     label: FeCl3 x 6 H2O
 - preferred_term: Tryptone
   concentration:
@@ -107,8 +109,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: MnSO4 x H2O
   term:
@@ -117,8 +119,8 @@ ingredients:
   concentration:
     value: '0.22'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
     label: MnSO4 x H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -127,18 +129,18 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: CuSO4 x 5 H2O
   term:
@@ -147,8 +149,8 @@ ingredients:
   concentration:
     value: '0.0025'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
     label: CuSO4 x 5 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -157,8 +159,8 @@ ingredients:
   concentration:
     value: '0.0025'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -167,41 +169,75 @@ ingredients:
   concentration:
     value: '0.0046'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Dissolve the nitrilotriacetic acid (C6H9NO6), adjust the pH to 8.0
-    with 1 M NaOH.
-- step_number: 2
-  action: DISSOLVE
-  description: Dissolve the remaining ingredients in the nitrilotriacetic acid solution
-    and adjust to pH 8.2 with 1 M NaOH.
-- step_number: 3
-  action: AUTOCLAVE
-  description: Autoclave at 121° C for 15 minutes.
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  notes: pH adjustment (extracted from notes)
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:13.164387Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1033'
-- timestamp: '2026-03-13T06:18:55.471622Z'
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1033'
+- timestamp: '2026-02-03T11:18:57.988093'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1033
+- timestamp: '2026-03-13T03:08:46.698021Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Added pH buffer: NaOH'
+- timestamp: '2026-03-13T06:19:20.575924Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000456'
-- timestamp: '2026-03-17T06:30:43.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:003546'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:29:49.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:06.482473+00:00'
+- timestamp: '2026-03-17T19:45:34.730968+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THERMUS MEDIUM" to "thermus_medium" for consistent
+  notes: Normalized name from "THERMUS medium" to "thermus_medium" for consistent
     matching
-merge_fingerprint: 91cad72e35daac0dcc6f37dbf99576b644ed6618f1783b4bb4b98f066e3e1c3a
+- timestamp: '2026-05-16T09:02:59.685769+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:18.312680+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 14 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:37:34.135644+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:46:43.277710+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:38.056634+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 6ad70d618be40d46c63f489e9f7ec940a58fbf4094ccbfedadf8576e384ae5c3
+  source: KOMODO_1033_THERMUS_medium.yaml
+merge_fingerprint: 6ad70d618be40d46c63f489e9f7ec940a58fbf4094ccbfedadf8576e384ae5c3
 merged_from:
-- thermus_medium
+- KOMODO_1033_THERMUS_medium

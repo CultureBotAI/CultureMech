@@ -3,6 +3,7 @@ name: mycorrhiza_medium
 original_name: Mycorrhiza Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +32,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -42,9 +43,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 media_term:
   preferred_term: TOGO Medium M1427
   term:
@@ -79,10 +80,28 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Mycorrhiza Medium" to "mycorrhiza_medium" for consistent
     matching
-- timestamp: '2026-04-17T06:29:10.569314+00:00'
+- timestamp: '2026-06-05T07:41:39.051720+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:33.868886+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: 1_5_mycorrhiza_medium, mycorrhiza_medium'
+- timestamp: '2026-08-06T03:04:33.868915+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 12358e5ba5671bffb83d03d4a5a7da47763de526738e327a1a69404329795395
+  source: 1_5_mycorrhiza_medium.yaml, mycorrhiza_medium.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/1_5_mycorrhiza_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:007961
+  name: 1_5_mycorrhiza_medium
+  notes: 1/5 Mycorrhiza Medium decreases yeast extract from 2 g/L to 0.4 g/L and glucose
+    from 20 g/L to 4 g/L while agar remains 15 g/L.
 synonyms:
 - name: 1_5_mycorrhiza_medium
   source: TOGO

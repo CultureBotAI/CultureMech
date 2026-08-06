@@ -3,6 +3,7 @@ name: mogensen_minimal_medium_glucose
 original_name: '''Mogensen Minimal Medium (Glucose'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Glucose
@@ -12,13 +13,16 @@ ingredients:
   concentration:
     value: '55.51'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Tromethamine
   concentration:
     value: '49.7'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:9754
+    label: ''
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -26,8 +30,8 @@ ingredients:
   concentration:
     value: '138.3'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Sodium molybdate
   concentration:
@@ -40,6 +44,9 @@ ingredients:
   concentration:
     value: '0.006408'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -48,9 +55,9 @@ ingredients:
     value: '0.07292'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4abz'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001121
-    label: 4-Aminobenzoate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17836
+    label: 4-aminobenzoate
 - preferred_term: Sodium EDTA
   concentration:
     value: '0.1315'
@@ -66,6 +73,9 @@ ingredients:
   concentration:
     value: '0.01798'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -73,8 +83,8 @@ ingredients:
   concentration:
     value: '2.16'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Potassium chloride
   concentration:
@@ -83,13 +93,16 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Manganese chloride
   concentration:
     value: '0.02526'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -97,8 +110,8 @@ ingredients:
   concentration:
     value: '0.1779'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Zinc sulfate
   term:
@@ -107,13 +120,16 @@ ingredients:
   concentration:
     value: '0.07651'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '11.17'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -147,6 +163,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'Mogensen Minimal Medium (Glucose" to "mogensen_minimal_medium_glucose"
     for consistent matching
+- timestamp: '2026-06-05T07:41:38.110089+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:50.120156+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 24b5aa0adbfd6f70e132069de274ca584f301b06e68baae03591f5c19472e32b
+  source: mogensen_minimal_medium_glucose.yaml
 media_term:
   preferred_term: MediaDB Medium 309
   term:
@@ -158,6 +185,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 90056c5668e5b62d4562c2ccf3344e83c87d03645e1ae4d8b5f7c9b4e8eaadeb
+merge_fingerprint: 24b5aa0adbfd6f70e132069de274ca584f301b06e68baae03591f5c19472e32b
 merged_from:
 - mogensen_minimal_medium_glucose

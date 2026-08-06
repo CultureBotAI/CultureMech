@@ -3,8 +3,11 @@ name: tryptone_soya_broth_tsb_with_additional_salts
 original_name: TRYPTONE SOYA BROTH (TSB) WITH ADDITIONAL SALTS
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_range: 7.2-7.5
+ph_range:
+  min: 7.2
+  max: 7.5
 media_term:
   preferred_term: DSMZ Medium 1362
   term:
@@ -30,8 +33,8 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 5.0, 5.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Agar
   term:
@@ -40,8 +43,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: D(+)-Glucose
   term:
@@ -50,18 +53,18 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D(+)-Glucose
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 preparation_steps:
 - step_number: 1
@@ -96,7 +99,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TRYPTONE SOYA BROTH (TSB) WITH ADDITIONAL SALTS" to
     "tryptone_soya_broth_tsb_with_additional_salts" for consistent matching
-- timestamp: '2026-04-17T06:29:20.757734+00:00'
+- timestamp: '2026-05-20T06:02:11.395394+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.5'' -> {''min'': 7.2, ''max'': 7.5}'
+- timestamp: '2026-06-05T07:41:54.592924+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:14.363154+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:45.800782+00:00'
   curator: recipe-merger
   action: Merged 147 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_220_CASO_AGAR_Merck_105458, for_strain_dsm_21449_und_dsm_21450,
@@ -149,6 +166,17 @@ curation_history:
     medium_220_modified_for_dsm_6459, medium_220_modified_for_dsm_6460, medium_220_modified_for_dsm_6472,
     medium_220_modified_for_dsm_6706, reactivation_with_tryptone_soya_broth, tryptone_soya_broth_tsb_with_additional,
     tryptone_soya_broth_tsb_with_additional_salts'
+- timestamp: '2026-08-06T03:04:45.801302+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 147 source recipe(s) on fingerprint 7359e1a4f52cec5098a2639be25f6788b30890abc89c6162f34d8bde4a823904
+  source: KOMODO_220_CASO_AGAR_Merck_105458.yaml, for_strain_dsm_21449_und_dsm_21450.yaml,
+    medium_220_modified_for_dsm_11483.yaml, medium_220_modified_for_dsm_11705.yaml,
+    medium_220_modified_for_dsm_11706.yaml, medium_220_modified_for_dsm_11707.yaml,
+    medium_220_modified_for_dsm_11713.yaml, medium_220_modified_for_dsm_12654.yaml,
+    medium_220_modified_for_dsm_12655.yaml, medium_220_modified_for_dsm_12656.yaml,
+    medium_220_modified_for_dsm_12833.yaml, medium_220_modified_for_dsm_13060.yaml,
+    medium_220_modified
 synonyms:
 - name: caso_agar_merck_105458
   source: KOMODO

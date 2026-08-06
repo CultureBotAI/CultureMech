@@ -3,6 +3,7 @@ name: nutrient_broth_0_5_w_v_na2co3
 original_name: Nutrient Broth + 0.5%(w/v) Na2CO3
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Agar (if needed)
   concentration:
@@ -57,9 +58,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008239'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:50.355599'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:17.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -69,6 +70,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Nutrient Broth + 0.5%(w/v) Na2CO3" to "nutrient_broth_0_5_w_v_na2co3"
     for consistent matching
+- timestamp: '2026-05-16T09:04:27.921393+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:40.161474+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:51.694403+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 07445f65d3e9c37fa617a57e9f8d0b1c94902c05b82f90c3c0f6b2b009ecdfa0
+  source: nutrient_broth_0_5_w_v_na2co3.yaml
 solutions:
 - preferred_term: Na2CO3*
   composition: []

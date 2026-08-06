@@ -1,0 +1,181 @@
+id: CultureMech:002723
+name: py4sr_agar
+original_name: PY4SR AGAR
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J364
+  term:
+    id: mediadive.medium:J364
+    label: PY4SR AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=364'
+ingredients:
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '9.96016'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 363
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.98008'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 363
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '0.249004'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: Glucose
+  notes: Copied from referenced JCM Medium 363
+- preferred_term: Cellobiose
+  term:
+    id: CHEBI:17057
+    label: Cellobiose
+  concentration:
+    value: '0.249004'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17057
+    label: Cellobiose
+  notes: Copied from referenced JCM Medium 363
+- preferred_term: Maltose
+  term:
+    id: CHEBI:17306
+    label: Maltose
+  concentration:
+    value: '0.249004'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17306
+    label: Maltose
+  notes: Copied from referenced JCM Medium 363
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '0.249004'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
+    label: Starch
+  notes: Copied from referenced JCM Medium 363
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 363
+  term:
+    id: CHEBI:8806
+    label: ''
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: Na2CO3
+  notes: Copied from referenced JCM Medium 363
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.298805'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  notes: Copied from referenced JCM Medium 363
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '14.9402'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+  notes: Copied from referenced JCM Medium 363
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Use Medium No. 363 supplemented with 50 ml/L plant residue extract.
+    To prepare the plant residue extract, autoclave rice straw in water (1:5) at 120C
+    for 20 min, and use the supernatant after centrifugation.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.403424Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J364'
+- timestamp: '2026-02-03T11:26:54.674375'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:15.261985Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002723'
+- timestamp: '2026-03-17T19:45:28.634772+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PY4SR AGAR" to "py4sr_agar" for consistent matching
+- timestamp: '2026-04-04T18:49:19.519350'
+  curator: copy_referenced_compositions
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (10 ingredients)
+  source: CultureMech:002722
+  notes: Resolved reference by copying from py4s_agar (CultureMech:002722)
+- timestamp: '2026-05-16T08:58:13.361692+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(2 keys) -> list(1 entries)
+- timestamp: '2026-06-05T07:41:42.903131+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:10.539785+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:49.641287+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: modified_py4s_agar, py4s_agar, py4sr_agar'
+- timestamp: '2026-08-06T03:05:49.641332+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint a7b098cc227aaccba04e49f55417e9eb86e1f502d7b31551ff568dbaca179073
+  source: modified_py4s_agar.yaml, py4s_agar.yaml, py4sr_agar.yaml
+data_quality_flags:
+- resolved_reference
+synonyms:
+- name: modified_py4s_agar
+  source: MediaDive
+  source_id: mediadive.medium:J617
+  original_category: bacterial
+- name: py4s_agar
+  source: MediaDive
+  source_id: mediadive.medium:J363
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- modified_py4s_agar
+- py4s_agar
+- py4sr_agar
+merge_fingerprint: a7b098cc227aaccba04e49f55417e9eb86e1f502d7b31551ff568dbaca179073

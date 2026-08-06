@@ -1,0 +1,494 @@
+id: CultureMech:000474
+name: anaerobaculum_medium
+original_name: ANAEROBACULUM MEDIUM
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 104a
+  term:
+    id: mediadive.medium:104a
+    label: ANAEROBACULUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium104a.pdf'
+ingredients:
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Meat peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 8.0, 2.0]'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
+    label: D-Glucose
+- preferred_term: Na2S2O3 x 5 H2O
+  term:
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: K2HPO4
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: NaHCO3
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (except cysteine, glucose and thiosulfate), boil
+    medium for 1 min, then cool to room temperature under 100% N2 gas atmosphere.
+    Add cysteine and adjust pH to 7.0. Thereafter, dispense under100% N2 gas atmosphere
+    into anoxic Hungate-type tubes or serum vials and autoclave. After autoclaving
+    add glucose and thiosulfate from sterile anoxic stock solutions prepared under
+    100% N2 gas. Adjust pH of complete medium to 7.0, if necessary.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.172079Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 104a'
+- timestamp: '2026-03-13T03:09:25.193720Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:18:55.627123Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000474'
+- timestamp: '2026-03-17T06:30:34.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:06.633101+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ANAEROBACULUM MEDIUM" to "anaerobaculum_medium" for
+    consistent matching
+- timestamp: '2026-06-05T07:40:48.762445+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:53.127240+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:38.623583+00:00'
+  curator: recipe-merger
+  action: Merged 57 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_104b_PYX-MEDIUM, anaerobaculum_medium, anaerobaculum_thermoterrenum_medium,
+    for_dsm_12857_dsm_13479_and_dsm_13480, for_dsm_13181, for_dsm_14760_dsm_14761_and_dsm_14762,
+    for_dsm_19022, for_dsm_21120, for_dsm_21650, for_dsm_21761, for_dsm_5387, for_dsm_7320,
+    for_dsm_753, for_dsm_753_dsm_6589_dsm_7320_dsm_15930_dsm_17592_dsm_19522_dsm_22681_dsm_23576_and_dsm_24553,
+    medium_104_modified_for_dsm_15597, medium_104_modified_for_dsm_15598, medium_104_modified_for_dsm_15923,
+    medium_104_modified_for_dsm_16980, medium_104_modified_for_dsm_17217, medium_104_modified_for_dsm_17234,
+    medium_104_modified_for_dsm_17242, medium_104_modified_for_dsm_17243, medium_104_modified_for_dsm_17476,
+    medium_104_modified_for_dsm_17678, medium_104_modified_for_dsm_18011, medium_104_modified_for_dsm_18083,
+    medium_104_modified_for_dsm_18960, medium_104_modified_for_dsm_19450, medium_104_modified_for_dsm_19559,
+    medium_104_modified_for_dsm_19756, medium_104_modified_for_dsm_19857, medium_104_modified_for_dsm_2008,
+    medium_104_modified_for_dsm_20698, medium_104_modified_for_dsm_20732, medium_104_modified_for_dsm_21469,
+    medium_104_modified_for_dsm_21651, medium_104_modified_for_dsm_21825, medium_104_modified_for_dsm_21843,
+    medium_104_modified_for_dsm_21845, medium_104_modified_for_dsm_21887, medium_104_modified_for_dsm_22317,
+    medium_104_modified_for_dsm_22474, medium_104_modified_for_dsm_22477, medium_104_modified_for_dsm_22478,
+    medium_104_modified_for_dsm_22811, medium_104_modified_for_dsm_22835, medium_104_modified_for_dsm_22836,
+    medium_104_modified_for_dsm_22959, medium_104_modified_for_dsm_23047, medium_104_modified_for_dsm_23056,
+    medium_104_modified_for_dsm_23059, medium_104_modified_for_dsm_23594, medium_104_modified_for_dsm_25311,
+    medium_104_modified_for_dsm_3353, medium_104_modified_for_dsm_3985, medium_104_modified_for_dsm_6400,
+    medium_104_modified_for_dsm_9536'
+- timestamp: '2026-08-06T03:04:38.623840+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 57 source recipe(s) on fingerprint 7e498ca67c37850b59b33b2bc679fffb2d43f304206aef374fcb1f6ff36a6247
+  source: KOMODO_104b_PYX-MEDIUM.yaml, anaerobaculum_medium.yaml, anaerobaculum_thermoterrenum_medium.yaml,
+    for_dsm_12857_dsm_13479_and_dsm_13480.yaml, for_dsm_13181.yaml, for_dsm_14760_dsm_14761_and_dsm_14762.yaml,
+    for_dsm_19022.yaml, for_dsm_21120.yaml, for_dsm_21650.yaml, for_dsm_21761.yaml,
+    for_dsm_5387.yaml, for_dsm_7320.yaml, for_dsm_753.yaml, for_dsm_753_dsm_6589_dsm_7320_dsm_15930_dsm_17592_dsm_19522_dsm_22681_dsm_23576_and_dsm_24553.yaml,
+    medium_104_modified_for_dsm_15597.yaml, medium_104_modifie
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_104b_PYX-MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003622
+  name: pyx_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.
+synonyms:
+- name: pyx_medium
+  source: KOMODO
+  source_id: komodo.medium:104b
+  original_category: bacterial
+- name: anaerobaculum_thermoterrenum_medium
+  source: KOMODO
+  source_id: komodo.medium:104a
+  original_category: bacterial
+- name: for_dsm_12857_dsm_13479_and_dsm_13480
+  source: KOMODO
+  source_id: komodo.medium:104b.5
+  original_category: bacterial
+- name: for_dsm_13181
+  source: KOMODO
+  source_id: komodo.medium:104b.6
+  original_category: bacterial
+- name: for_dsm_14760_dsm_14761_and_dsm_14762
+  source: KOMODO
+  source_id: komodo.medium:104b.7
+  original_category: bacterial
+- name: for_dsm_19022
+  source: KOMODO
+  source_id: komodo.medium:104b.8
+  original_category: bacterial
+- name: for_dsm_21120
+  source: KOMODO
+  source_id: komodo.medium:104b.9
+  original_category: bacterial
+- name: for_dsm_21650
+  source: KOMODO
+  source_id: komodo.medium:104b.12
+  original_category: bacterial
+- name: for_dsm_21761
+  source: KOMODO
+  source_id: komodo.medium:104b.11
+  original_category: bacterial
+- name: for_dsm_5387
+  source: KOMODO
+  source_id: komodo.medium:104b.4
+  original_category: bacterial
+- name: for_dsm_7320
+  source: KOMODO
+  source_id: komodo.medium:104b.3
+  original_category: bacterial
+- name: for_dsm_753
+  source: KOMODO
+  source_id: komodo.medium:104b.2
+  original_category: bacterial
+- name: for_dsm_753_dsm_6589_dsm_7320_dsm_15930_dsm_17592_dsm_19522_dsm_22681_dsm_23576_and_dsm_24553
+  source: KOMODO
+  source_id: komodo.medium:104b.1
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_15597
+  source: KOMODO
+  source_id: komodo.medium:104_15597
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_15598
+  source: KOMODO
+  source_id: komodo.medium:104_15598
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_15923
+  source: KOMODO
+  source_id: komodo.medium:104_15923
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_16980
+  source: KOMODO
+  source_id: komodo.medium:104_16980
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_17217
+  source: KOMODO
+  source_id: komodo.medium:104_17217
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_17234
+  source: KOMODO
+  source_id: komodo.medium:104_17234
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_17242
+  source: KOMODO
+  source_id: komodo.medium:104_17242
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_17243
+  source: KOMODO
+  source_id: komodo.medium:104_17243
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_17476
+  source: KOMODO
+  source_id: komodo.medium:104_17476
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_17678
+  source: KOMODO
+  source_id: komodo.medium:104_17678
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_18011
+  source: KOMODO
+  source_id: komodo.medium:104_18011
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_18083
+  source: KOMODO
+  source_id: komodo.medium:104_18083
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_18960
+  source: KOMODO
+  source_id: komodo.medium:104_18960
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_19450
+  source: KOMODO
+  source_id: komodo.medium:104_19450
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_19559
+  source: KOMODO
+  source_id: komodo.medium:104_19559
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_19756
+  source: KOMODO
+  source_id: komodo.medium:104_19756
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_19857
+  source: KOMODO
+  source_id: komodo.medium:104_19857
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_2008
+  source: KOMODO
+  source_id: komodo.medium:104_2008
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_20698
+  source: KOMODO
+  source_id: komodo.medium:104_20698
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_20732
+  source: KOMODO
+  source_id: komodo.medium:104_20732
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_21469
+  source: KOMODO
+  source_id: komodo.medium:104_21469
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_21651
+  source: KOMODO
+  source_id: komodo.medium:104_21651
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_21825
+  source: KOMODO
+  source_id: komodo.medium:104_21825
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_21843
+  source: KOMODO
+  source_id: komodo.medium:104_21843
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_21845
+  source: KOMODO
+  source_id: komodo.medium:104_21845
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_21887
+  source: KOMODO
+  source_id: komodo.medium:104_21887
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_22317
+  source: KOMODO
+  source_id: komodo.medium:104_22317
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_22474
+  source: KOMODO
+  source_id: komodo.medium:104_22474
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_22477
+  source: KOMODO
+  source_id: komodo.medium:104_22477
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_22478
+  source: KOMODO
+  source_id: komodo.medium:104_22478
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_22811
+  source: KOMODO
+  source_id: komodo.medium:104_22811
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_22835
+  source: KOMODO
+  source_id: komodo.medium:104_22835
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_22836
+  source: KOMODO
+  source_id: komodo.medium:104_22836
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_22959
+  source: KOMODO
+  source_id: komodo.medium:104_22959
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_23047
+  source: KOMODO
+  source_id: komodo.medium:104_23047
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_23056
+  source: KOMODO
+  source_id: komodo.medium:104_23056
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_23059
+  source: KOMODO
+  source_id: komodo.medium:104_23059
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_23594
+  source: KOMODO
+  source_id: komodo.medium:104_23594
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_25311
+  source: KOMODO
+  source_id: komodo.medium:104_25311
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_3353
+  source: KOMODO
+  source_id: komodo.medium:104_3353
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_3985
+  source: KOMODO
+  source_id: komodo.medium:104_3985
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_6400
+  source: KOMODO
+  source_id: komodo.medium:104_6400
+  original_category: bacterial
+- name: medium_104_modified_for_dsm_9536
+  source: KOMODO
+  source_id: komodo.medium:104_9536
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- KOMODO_104b_PYX-MEDIUM
+- anaerobaculum_medium
+- anaerobaculum_thermoterrenum_medium
+- for_dsm_12857_dsm_13479_and_dsm_13480
+- for_dsm_13181
+- for_dsm_14760_dsm_14761_and_dsm_14762
+- for_dsm_19022
+- for_dsm_21120
+- for_dsm_21650
+- for_dsm_21761
+- for_dsm_5387
+- for_dsm_7320
+- for_dsm_753
+- for_dsm_753_dsm_6589_dsm_7320_dsm_15930_dsm_17592_dsm_19522_dsm_22681_dsm_23576_and_dsm_24553
+- medium_104_modified_for_dsm_15597
+- medium_104_modified_for_dsm_15598
+- medium_104_modified_for_dsm_15923
+- medium_104_modified_for_dsm_16980
+- medium_104_modified_for_dsm_17217
+- medium_104_modified_for_dsm_17234
+- medium_104_modified_for_dsm_17242
+- medium_104_modified_for_dsm_17243
+- medium_104_modified_for_dsm_17476
+- medium_104_modified_for_dsm_17678
+- medium_104_modified_for_dsm_18011
+- medium_104_modified_for_dsm_18083
+- medium_104_modified_for_dsm_18960
+- medium_104_modified_for_dsm_19450
+- medium_104_modified_for_dsm_19559
+- medium_104_modified_for_dsm_19756
+- medium_104_modified_for_dsm_19857
+- medium_104_modified_for_dsm_2008
+- medium_104_modified_for_dsm_20698
+- medium_104_modified_for_dsm_20732
+- medium_104_modified_for_dsm_21469
+- medium_104_modified_for_dsm_21651
+- medium_104_modified_for_dsm_21825
+- medium_104_modified_for_dsm_21843
+- medium_104_modified_for_dsm_21845
+- medium_104_modified_for_dsm_21887
+- medium_104_modified_for_dsm_22317
+- medium_104_modified_for_dsm_22474
+- medium_104_modified_for_dsm_22477
+- medium_104_modified_for_dsm_22478
+- medium_104_modified_for_dsm_22811
+- medium_104_modified_for_dsm_22835
+- medium_104_modified_for_dsm_22836
+- medium_104_modified_for_dsm_22959
+- medium_104_modified_for_dsm_23047
+- medium_104_modified_for_dsm_23056
+- medium_104_modified_for_dsm_23059
+- medium_104_modified_for_dsm_23594
+- medium_104_modified_for_dsm_25311
+- medium_104_modified_for_dsm_3353
+- medium_104_modified_for_dsm_3985
+- medium_104_modified_for_dsm_6400
+- medium_104_modified_for_dsm_9536
+merge_fingerprint: 7e498ca67c37850b59b33b2bc679fffb2d43f304206aef374fcb1f6ff36a6247

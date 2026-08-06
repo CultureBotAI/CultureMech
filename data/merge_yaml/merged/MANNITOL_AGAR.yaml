@@ -3,6 +3,7 @@ name: mannitol_agar
 original_name: Mannitol Agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +32,9 @@ ingredients:
   term:
     id: CHEBI:3311
     label: calcium carbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001099
-    label: CaCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
+    label: calcium carbonate
 - preferred_term: Mannitol
   concentration:
     value: '25'
@@ -43,9 +44,9 @@ ingredients:
   term:
     id: CHEBI:29864
     label: mannitol
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001010
-    label: Mannitol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29864
+    label: mannitol
 - preferred_term: Agar
   concentration:
     value: '20'
@@ -54,9 +55,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Peptone
   concentration:
     value: '3'
@@ -94,6 +95,17 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "Mannitol Agar" to "mannitol_agar" for consistent matching
+- timestamp: '2026-06-05T07:40:42.922425+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:17.714126+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e10adf911955ba1cebbfd6933c820fc420f3a69aa13a4255b0a3876b2cebc96c
+  source: TOGO_M604_Mannitol_Agar.yaml
 merge_fingerprint: e10adf911955ba1cebbfd6933c820fc420f3a69aa13a4255b0a3876b2cebc96c
 merged_from:
 - TOGO_M604_Mannitol_Agar

@@ -1,90 +1,158 @@
-id: CultureMech:003109
+id: CultureMech:010204
 name: synbiobacterium_ka13_medium
-original_name: SYNBIOBACTERIUM KA13 MEDIUM
+original_name: Synbiobacterium KA13 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 8.0
-media_term:
-  preferred_term: JCM Medium J767
-  term:
-    id: mediadive.medium:J767
-    label: SYNBIOBACTERIUM KA13 MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=767'
 ingredients:
-- preferred_term: Tryptone
+- preferred_term: Distilled water
   concentration:
-    value: '9.99001'
+    value: '1'
     unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '4.99501'
-    unit: G_PER_L
-- preferred_term: KH2PO4
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:63036
-    label: KH2PO4
-  concentration:
-    value: '1.5984'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: KH2PO4
   concentration:
-    value: '4.99501'
+    value: '1.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
 - preferred_term: NaNO3
+  concentration:
+    value: '1.7'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
+    Inorganic compound'
   term:
     id: CHEBI:63005
-    label: NaNO3
-  concentration:
-    value: '1.6983'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000171
+    label: ''
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
     label: NaNO3
 - preferred_term: Dimethyl sulfoxide
-  term:
-    id: CHEBI:28262
-    label: Dimethyl sulfoxide
   concentration:
     value: '1.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000210
-    label: Dimethyl sulfoxide
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Mix components and adjust pH to 8.0 with NaOH. Distribute the medium
-    into culture vessels, replace the gas phase with a N2 gas and autoclave.
+  notes: 'Role: Solvating media; Properties: Simple component, Organic compound, Defined
+    component'
+  term:
+    id: CHEBI:28262
+    label: dimethyl sulfoxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28262
+    label: dimethyl sulfoxide
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Tryptone (BD-Difco)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: NaOH
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+- preferred_term: N2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
+media_term:
+  preferred_term: TOGO Medium M794
+  term:
+    id: TOGO:M794
+    label: Synbiobacterium KA13 Medium
+notes: 'Source: https://togomedium.org/medium/M794
+
+  Original source: JCM - JCM_M767
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=767'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:17.539197Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J767'
-- timestamp: '2026-03-13T06:19:17.881564Z'
+- timestamp: '2026-01-27T06:35:55.725171Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M794'
+- timestamp: '2026-01-28T19:48:09.678081Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH; Added default concentration
+    for ingredient: N2'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-03-13T06:20:12.085986Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:003109'
-- timestamp: '2026-03-17T06:30:54.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:010204'
+- timestamp: '2026-03-17T06:29:45.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:31.661534+00:00'
+- timestamp: '2026-03-17T19:46:31.026468+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SYNBIOBACTERIUM KA13 MEDIUM" to "synbiobacterium_ka13_medium"
+  notes: Normalized name from "Synbiobacterium KA13 Medium" to "synbiobacterium_ka13_medium"
     for consistent matching
-merge_fingerprint: e5b06dfa82bbeed93b767e170d99caf3109dde3362606d894ca7c006de9e5fbb
+- timestamp: '2026-05-16T09:03:20.927846+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:44.500908+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:51.657830+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:19.344086+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint a8ce02189efd00d372f042c2d2161c84d6c1fbf71e593e620c147df1664ed620
+  source: TOGO_M794_Synbiobacterium_KA13_Medium.yaml
+merge_fingerprint: a8ce02189efd00d372f042c2d2161c84d6c1fbf71e593e620c147df1664ed620
 merged_from:
-- synbiobacterium_ka13_medium
+- TOGO_M794_Synbiobacterium_KA13_Medium

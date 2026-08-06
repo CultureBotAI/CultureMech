@@ -1,115 +1,178 @@
-id: CultureMech:003294
+id: CultureMech:010421
 name: korthofs_medium
-original_name: KORTHOF'S MEDIUM
+original_name: Korthof's Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-media_term:
-  preferred_term: JCM Medium J946
-  term:
-    id: mediadive.medium:J946
-    label: KORTHOF'S MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=946'
 ingredients:
-- preferred_term: Rabbit serum
+- preferred_term: Distilled water
+  concentration:
+    value: '900.0'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound [Merged 3 duplicates: 400.0, 450.0, 50.0]'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Rabbit serum heat--inactivated at 56&#8451; for 30 min
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: 10 x Korthof's basal medium (see below)
   concentration:
     value: '50'
     unit: G_PER_L
 - preferred_term: NaCl
+  concentration:
+    value: '7'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '15.5556'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: Na2HPO4
-  term:
-    id: CHEBI:34683
-    label: Na2HPO4
-  concentration:
-    value: '9.77778'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
-    label: Na2HPO4
-- preferred_term: Polypeptone
-  concentration:
-    value: '8.88889'
-    unit: G_PER_L
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: KH2PO4
+  concentration:
+    value: '1.2'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
   term:
     id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
-  concentration:
-    value: '2.66667'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
-- preferred_term: NaHCO3
-  term:
-    id: CHEBI:32139
-    label: NaHCO3
-  concentration:
-    value: '0.222222'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
 - preferred_term: KCl
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:32588
-    label: KCl
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: NaHCO3
   concentration:
-    value: '0.444444'
+    value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
-- preferred_term: CaCl2 x 2 H2O
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: Na2HPO4
+  concentration:
+    value: '4.4'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+- preferred_term: Polypeptone peptone (BD-BBL)
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.444444'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Autoclave distilled water. After autoclaving, allow to cool, aseptically
-    add 10 x Korthof's basal medium and heat-inactivated rabbit serum that has been
-    filter-sterilized ahead of time.
-- step_number: 2
-  action: AUTOCLAVE
-  description: Mix ingredients except CaCl2 and autoclave. Dissolve CaCl2 in 50 ml
-    distilled water and filter-sterilize. After autoclaving, allow to cool, add sterile
-    CaCl2 solution to the medium.
+    label: ''
+media_term:
+  preferred_term: TOGO Medium M993
+  term:
+    id: TOGO:M993
+    label: Korthof's Medium
+notes: 'Source: https://togomedium.org/medium/M993
+
+  Original source: JCM - JCM_M946
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=946'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:18.092123Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J946'
-- timestamp: '2026-03-13T06:19:19.276785Z'
+- timestamp: '2026-01-27T06:35:56.105781Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M993'
+- timestamp: '2026-01-28T19:48:22.454863Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:37.485311+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:07.160805Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:13.751615Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:003294'
-- timestamp: '2026-03-17T06:30:21.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:010421'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:30:13.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:33.209128+00:00'
+- timestamp: '2026-03-17T19:46:32.727713+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "KORTHOF'S MEDIUM" to "korthofs_medium" for consistent
+  notes: Normalized name from "Korthof's Medium" to "korthofs_medium" for consistent
     matching
-merge_fingerprint: bfaea4a7d31b812ef76031d09055c883256b416e8903bb22cbdaa88bdb2497fd
+- timestamp: '2026-05-16T09:03:22.634946+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:46.375747+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:52.268581+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:21.050723+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint ad9dcf6091365dc3e495c0adba831333377ed8550fb59a0e28e782d9f4d52317
+  source: TOGO_M993_Korthof_s_Medium.yaml
+solutions:
+- preferred_term: CaCl2 solution
+  composition: []
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: ad9dcf6091365dc3e495c0adba831333377ed8550fb59a0e28e782d9f4d52317
 merged_from:
-- korthofs_medium
+- TOGO_M993_Korthof_s_Medium

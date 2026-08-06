@@ -1,81 +1,185 @@
-id: CultureMech:015493
-name: BHIS
+id: CultureMech:009362
+name: bhis
+original_name: BHIS
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Calf brains
-  concentration:
-    value: '7.7'
-    unit: G_PER_L
-- preferred_term: Beef heart
-  concentration:
-    value: '9.8'
-    unit: G_PER_L
-- preferred_term: Proteose Peptone
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'CAS: 91079-38-8'
-- preferred_term: Sodium Chloride
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  notes: 'CAS: 7647-14-5; MW: 58.44'
-- preferred_term: Disodium phosphate
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-  term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
-  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7558-79-4; MW:
-    141.96'
-- preferred_term: L-Cysteine
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  term:
-    id: CHEBI:17561
-    label: L-cysteine
-  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 52-90-4; MW: 121.16'
-- preferred_term: Sodium bicarbonate
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  term:
-    id: CHEBI:32139
-    label: null
-  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 144-55-8; MW: 84.007'
 - preferred_term: Hemin
   concentration:
-    value: '0.005'
+    value: '50'
     unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple
+    component'
   term:
     id: CHEBI:50385
     label: hemin
-  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 16009-13-5; MW:
-    651.94'
-description: Brain heart infusion salt broth
-notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
-sources:
-- database: CultureBotHT
-  database_id: BHIS
-  url: https://github.com/CultureBotAI/CultureBotHT
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
+    label: hemin
+- preferred_term: Menadione
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:28869
+    label: Menadione
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28869
+    label: Menadione
+- preferred_term: Calf brains
+  term:
+    id: UBERON:0000955
+    label: brain
+  concentration:
+    value: variable
+    unit: VARIABLE
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: infusion from 200 g/L; Tissue infusion - source material is calf brain tissue;
+    Constituent of Brain Heart Infusion commercial product
+- preferred_term: Beef heart
+  term:
+    id: UBERON:0000948
+    label: heart
+  concentration:
+    value: variable
+    unit: VARIABLE
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: infusion from 250 g/L; Tissue infusion - source material is beef/ox heart
+    tissue; Constituent of Brain Heart Infusion commercial product
+- preferred_term: Proteose peptone
+  term:
+    id: MICRO:0000180
+    label: proteose peptone
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: Enzymatic digest of animal protein providing amino acids and peptides; Constituent
+    of Brain Heart Infusion commercial product
+- preferred_term: Dextrose
+  term:
+    id: CHEBI:17234
+    label: D-glucose
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: Carbon/energy source; Constituent of Brain Heart Infusion commercial product
+  synonyms:
+  - synonym_text: glucose
+    synonym_type: EXACT
+  - synonym_text: D-glucose
+    synonym_type: EXACT
+  - synonym_text: dextrose
+    synonym_type: EXACT
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: Maintains osmotic equilibrium; Constituent of Brain Heart Infusion commercial
+    product
+  synonyms:
+  - synonym_text: NaCl
+    synonym_type: EXACT
+  - synonym_text: table salt
+    synonym_type: EXACT
+- preferred_term: Disodium phosphate
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogen phosphate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial
+    product
+  synonyms:
+  - synonym_text: Na2HPO4
+    synonym_type: EXACT
+  - synonym_text: disodium hydrogen phosphate
+    synonym_type: EXACT
+  - synonym_text: sodium phosphate dibasic
+    synonym_type: EXACT
+media_term:
+  preferred_term: TOGO Medium M2814
+  term:
+    id: TOGO:M2814
+    label: BHIS
+notes: 'Source: https://togomedium.org/medium/M2814
+
+
+  Commercial Product: Brain Heart Infusion
+
+  Supplier: Difco/BD
+
+  Catalog: 237500
+
+  Source: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
+applications:
+- Microbial cultivation
 curation_history:
-- timestamp: '2026-03-18T04:31:12.482767+00:00'
-  curator: import_from_culturebotht.py
-  action: IMPORTED
-  notes: 'Imported from CultureBotHT repository: BHIS.yaml'
-- timestamp: '2026-03-18T04:33:58.656643Z'
+- timestamp: '2026-01-27T06:35:57.328847Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2814'
+- timestamp: '2026-01-28T19:48:37.460530Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:05.876999Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:015493'
-data_quality_flags:
-- has_unmapped_ingredients
-merge_fingerprint: 8d771a65a43d6c31145411569c780a3ddc9aff65859bd50e5b74b92246db87b9
+  notes: 'Assigned stable identifier: CultureMech:009362'
+- timestamp: '2026-03-17T06:30:45.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:24.803599+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BHIS" to "bhis" for consistent matching
+- timestamp: '2026-06-05T07:40:50.947698+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:25.181097+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 66e1b01c930c98f4f254b1fd7ae7eadc098eb2034abf49255b4fe7e9de8411e1
+  source: bhis.yaml
+merge_fingerprint: 66e1b01c930c98f4f254b1fd7ae7eadc098eb2034abf49255b4fe7e9de8411e1
 merged_from:
 - bhis

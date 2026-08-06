@@ -3,6 +3,7 @@ name: corynebacterium_medium_with_salt
 original_name: CORYNEBACTERIUM medium WITH SALT
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 229
@@ -27,8 +28,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: NaCl
   term:
@@ -37,8 +38,8 @@ ingredients:
   concentration:
     value: '65'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Agar
   term:
@@ -47,8 +48,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -74,12 +75,37 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CORYNEBACTERIUM medium WITH SALT" to "corynebacterium_medium_with_salt"
     for consistent matching
-- timestamp: '2026-04-17T06:29:20.832396+00:00'
+- timestamp: '2026-06-05T07:40:21.804890+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:45.902509+00:00'
   curator: recipe-merger
   action: Merged 7 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_229_CORYNEBACTERIUM_medium_WITH_SALT, KOMODO_53_CORYNEBACTERIUM_AGAR,
     corynebacterium_agar, corynebacterium_medium_with_salt, medium_53_modified_for_dsm_16375,
     medium_53_modified_for_dsm_16377, medium_53_modified_for_dsm_16378'
+- timestamp: '2026-08-06T03:04:45.902572+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 7 source recipe(s) on fingerprint 07c3706bae09d789e5ed9bb695aea08017c52c9c8ba7553428cbf4072f07fe28
+  source: KOMODO_229_CORYNEBACTERIUM_medium_WITH_SALT.yaml, KOMODO_53_CORYNEBACTERIUM_AGAR.yaml,
+    corynebacterium_agar.yaml, corynebacterium_medium_with_salt.yaml, medium_53_modified_for_dsm_16375.yaml,
+    medium_53_modified_for_dsm_16377.yaml, medium_53_modified_for_dsm_16378.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/corynebacterium_medium_with_salt.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001332
+  name: corynebacterium_medium_with_salt
+  notes: KOMODO record explicitly cites DSMZ Medium 229; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 229; local ingredient
+  and concentration signatures match.
 synonyms:
 - name: corynebacterium_agar
   source: KOMODO

@@ -3,6 +3,7 @@ name: mmglu_jasiecki_et_al
 original_name: MMGlu; Jasiecki et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose
@@ -13,8 +14,8 @@ ingredients:
     value: '11.1012'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Thiamine
   term:
@@ -32,13 +33,19 @@ ingredients:
     value: '49.9698'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:male'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000610
+  term:
+    id: CHEBI:18300
+    label: Maleic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18300
     label: Maleic acid
 - preferred_term: Tromethamine
   concentration:
     value: '49.5295'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:9754
+    label: ''
 - preferred_term: Magnesium chloride
   concentration:
     value: '4.91859'
@@ -46,15 +53,15 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Sodium sulfate
   concentration:
     value: '0.929316'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Sodium sulfate
   term:
     id: CHEBI:32149
@@ -63,6 +70,9 @@ ingredients:
   concentration:
     value: '0.898939'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -70,9 +80,9 @@ ingredients:
   concentration:
     value: '42.7789'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Potassium chloride
   concentration:
     value: '26.8272'
@@ -80,9 +90,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -90,8 +100,8 @@ ingredients:
   concentration:
     value: '18.6947'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 preparation_steps:
 - step_number: 1
@@ -126,6 +136,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MMGlu; Jasiecki et al" to "mmglu_jasiecki_et_al" for
     consistent matching
+- timestamp: '2026-06-05T07:41:35.425370+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:47.116019+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint a37bcc534313be58161520160416f9e7302af022a8a5bee9a917fbb87fc8184c
+  source: mmglu_jasiecki_et_al.yaml
 media_term:
   preferred_term: MediaDB Medium 138
   term:
@@ -137,6 +158,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 762312bc5dd92ef9ab653d72315b4e86a57f24bee40c51621b2cc62f9854dac7
+merge_fingerprint: a37bcc534313be58161520160416f9e7302af022a8a5bee9a917fbb87fc8184c
 merged_from:
 - mmglu_jasiecki_et_al

@@ -1,9 +1,10 @@
-id: CultureMech:008535
+id: CultureMech:008536
 name: modified_288_medium
 original_name: Modified 288 medium
 category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+composition_type: SEMI_DEFINED
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
@@ -24,11 +25,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
   term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4·7H2O
 - preferred_term: NH4Cl
   concentration:
     value: '0.1'
@@ -38,9 +39,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: K2HPO4
   concentration:
     value: '0.5'
@@ -50,9 +51,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Sodium lactate
   concentration:
     value: '2.6'
@@ -62,21 +63,32 @@ ingredients:
   term:
     id: CHEBI:75228
     label: sodium lactate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001047
-    label: Sodium lactate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75228
+    label: sodium lactate
 - preferred_term: Ferric citrate
   concentration:
     value: '0.006'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Organic compound, Simple
     component'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000281
+  mediaingredientmech_chebi_term:
+    id: CHEBI:144421
     label: Ferric citrate
   term:
     id: CHEBI:144421
     label: ''
+- preferred_term: agar
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Bacto Yeast Extract (Difco)
   concentration:
     value: '0.1'
@@ -90,43 +102,64 @@ ingredients:
   term:
     id: CHEBI:86481
     label: sodium thioglycolate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000569
-    label: Sodium thioglycolate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86481
+    label: sodium thioglycolate
 media_term:
-  preferred_term: TOGO Medium M1955
+  preferred_term: TOGO Medium M1956
   term:
-    id: TOGO:M1955
+    id: TOGO:M1956
     label: Modified 288 medium
-notes: 'Source: https://togomedium.org/medium/M1955
+notes: 'Source: https://togomedium.org/medium/M1956
 
-  Original source: NBRC - NBRC_M1233
+  Original source: NBRC - NBRC_M1233-2
 
   Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1233'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:58.738424Z'
+- timestamp: '2026-01-27T06:35:58.739714Z'
   curator: togo-import
   action: Imported from TOGO Medium
-  notes: 'Source: NBRC, ID: M1955'
-- timestamp: '2026-01-28T19:48:40.737133Z'
+  notes: 'Source: NBRC, ID: M1956'
+- timestamp: '2026-01-28T19:48:19.626630Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:19:57.847986Z'
+- timestamp: '2026-03-13T06:19:57.853845Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:008535'
-- timestamp: '2026-03-17T06:30:52.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:008536'
+- timestamp: '2026-03-17T06:30:07.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:16.474045+00:00'
+- timestamp: '2026-03-17T19:46:16.480491+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "Modified 288 medium" to "modified_288_medium" for consistent
     matching
-merge_fingerprint: ef32cd34b2f8d62bd527533a9543c2cadf01610e785ca00179a26b7d3407ebf2
+- timestamp: '2026-06-05T07:40:35.058431+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:25.113576+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:46:48.457912+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:10.147025+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 46b5662b8a253f0f9ef57501c27fc6ed5f73421e6a208b464538f10053162bd5
+  source: TOGO_M1956_Modified_288_medium.yaml
+merge_fingerprint: 46b5662b8a253f0f9ef57501c27fc6ed5f73421e6a208b464538f10053162bd5
 merged_from:
-- modified_288_medium
+- TOGO_M1956_Modified_288_medium

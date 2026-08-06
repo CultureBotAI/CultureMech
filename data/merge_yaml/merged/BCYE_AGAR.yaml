@@ -1,128 +1,148 @@
-id: CultureMech:001711
+id: CultureMech:002367
 name: bcye_agar
 original_name: BCYE AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
-  preferred_term: DSMZ Medium 585
+  preferred_term: JCM Medium J119
   term:
-    id: mediadive.medium:585
+    id: mediadive.medium:J119
     label: BCYE AGAR
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium585.pdf'
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=119'
 ingredients:
-- preferred_term: OXOID Legionella CYE-Agar base
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '20.4082'
-    unit: G_PER_L
-- preferred_term: ACES
+- preferred_term: R2A agar
   term:
-    id: CHEBI:39061
-    label: ACES
+    id: CHEBI:2509
+    label: R2A agar
   concentration:
-    value: '20.4082'
+    value: '1.82'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000555
-    label: ACES
-- preferred_term: Activated charcoal
-  concentration:
-    value: '4.08163'
-    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: R2A agar
 - preferred_term: Agar
   term:
     id: CHEBI:2509
     label: Agar
   concentration:
-    value: '30.6122'
+    value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
-- preferred_term: L-Cysteine HCl x H2O
-  term:
-    id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
-  concentration:
-    value: '40'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
-    label: L-Cysteine HCl x H2O
-- preferred_term: Fe4(PO4)2
-  term:
-    id: CHEBI:132767
-    label: Fe4(PO4)2
-  concentration:
-    value: '25'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000760
-    label: Fe4(PO4)2
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: Dehydrated media preparations are available from media distributors.
-- step_number: 2
-  action: MIX
-  description: We use OXOID Legionella CYE-Agar base with Legionella BCYE supplement.
-- step_number: 3
-  action: MIX
-  description: For solubilization of the lyophilized pellet use standard liquid media.
-    Although Legionellae do not grow in those media they are suitable for resuspension
-    and transfer onto agar plates.
-- step_number: 4
-  action: MIX
-  description: 'Note: Alternatively use CYE-ACES AGAR'
-- step_number: 5
-  action: POUR_PLATES
-  description: Add Cysteine-HCl, then ferric pyrophosphate solution to solution A.
-    Adjust the complete medium to pH 6.9 ± 0.5 at 50°C with sterile 1.0 N KOH or HCl.
-    The pH of the medium is critical. Finally, add solution B. Swirl medium in flask
-    during dispensing to petri dishes or tubes in order to keep charcoal suspended.
-- step_number: 6
-  action: AUTOCLAVE
-  description: Dissolve ACES and bring to pH 6.9 by slowly adding 1 N KOH. Add the
-    other components and dissolve by boiling. Autoclave at 121°C for 15 minutes. Cool
-    to 50 - 55°C.
-- step_number: 7
-  action: AUTOCLAVE
-  description: Autoclave at 121°C and cool to 50 - 55°C.
-- step_number: 8
-  action: FILTER_STERILIZE
-  description: Prepare a fresh solution and filter-sterilize it.
-- step_number: 9
-  action: FILTER_STERILIZE
-  description: Prepare a fresh solution by heating to 50 - 55°C in a water-bath. Filter-sterilize
-    solution separately.
-- step_number: 10
-  action: MIX
-  description: 'Please note: Soluble ferric pyrophosphate must be kept dry and in
-    the dark. Do not use if chemical looses its green colour and becomes brown or
-    yellow.'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:11.647285Z'
+- timestamp: '2026-01-26T17:53:15.760758Z'
   curator: mediadive-import
   action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 585'
-- timestamp: '2026-03-13T06:19:06.609681Z'
+  notes: 'Source: JCM, ID: J119'
+- timestamp: '2026-03-13T06:19:12.751250Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:001711'
-- timestamp: '2026-03-17T06:30:39.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:002367'
+- timestamp: '2026-03-17T06:30:08.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:18.819897+00:00'
+- timestamp: '2026-03-17T19:45:25.782285+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "BCYE AGAR" to "bcye_agar" for consistent matching
-merge_fingerprint: 77daeccb28e24070ca684580d0594b42bc78cc070c44690fa2cb0c6f9a1af1fe
+- timestamp: '2026-06-05T07:40:16.593322+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:33.502677+00:00'
+  curator: recipe-merger
+  action: Merged 15 duplicate recipes into canonical record
+  notes: 'Sources: 1_10_r2a_agar, 1_2_r2a_agar, JCM_J119_BCYE_AGAR, JCM_J1329_CORN_MEAL_AGAR,
+    JCM_J150_CORN_MEAL_AGAR, TOGO_M2859_BCYE_agar, alkali_reinforced_clostridial_agar,
+    bacto_marine_agar, me_agar, modified_gam_agar, weak_oatmeal_agar, bacto_marine_agar,
+    marine_agar_2216, marine_agar_2216_ph_8_5, marine_agar_2216_ph_9_0'
+- timestamp: '2026-08-06T03:04:33.502743+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 15 source recipe(s) on fingerprint 4aa0cdc82922e6c9424793721864cf1b8ef0ef4c3d561c7c9037ae0dad41c7d4
+  source: 1_10_r2a_agar.yaml, 1_2_r2a_agar.yaml, JCM_J119_BCYE_AGAR.yaml, JCM_J1329_CORN_MEAL_AGAR.yaml,
+    JCM_J150_CORN_MEAL_AGAR.yaml, TOGO_M2859_BCYE_agar.yaml, alkali_reinforced_clostridial_agar.yaml,
+    bacto_marine_agar.yaml, me_agar.yaml, modified_gam_agar.yaml, weak_oatmeal_agar.yaml,
+    bacto_marine_agar.yaml, marine_agar_2216.yaml, marine_agar_2216_ph_8_5.yaml, marine_agar_2216_ph_9_0.yaml
+kg_microbe_match: mediadive.medium:12
+synonyms:
+- name: 1_10_r2a_agar
+  source: MediaDive
+  source_id: mediadive.medium:J804
+  original_category: bacterial
+- name: 1_2_r2a_agar
+  source: MediaDive
+  source_id: mediadive.medium:J845
+  original_category: bacterial
+- name: corn_meal_agar
+  source: MediaDive
+  source_id: mediadive.medium:J1329
+  original_category: bacterial
+- name: corn_meal_agar
+  source: MediaDive
+  source_id: mediadive.medium:J150
+  original_category: bacterial
+- name: alkali_reinforced_clostridial_agar
+  source: MediaDive
+  source_id: mediadive.medium:J455
+  original_category: bacterial
+- name: bacto_marine_agar
+  source: KOMODO
+  source_id: komodo.medium:604
+  original_category: bacterial
+- name: me_agar
+  source: MediaDive
+  source_id: mediadive.medium:J258
+  original_category: bacterial
+- name: modified_gam_agar
+  source: MediaDive
+  source_id: mediadive.medium:J655
+  original_category: bacterial
+- name: weak_oatmeal_agar
+  source: MediaDive
+  source_id: mediadive.medium:J1202
+  original_category: bacterial
+- name: bacto_marine_agar
+  source: MediaDive
+  source_id: mediadive.medium:604
+  original_category: specialized
+- name: marine_agar_2216
+  source: MediaDive
+  source_id: mediadive.medium:J118
+  original_category: specialized
+- name: marine_agar_2216_ph_8_5
+  source: MediaDive
+  source_id: mediadive.medium:J1001
+  original_category: specialized
+- name: marine_agar_2216_ph_9_0
+  source: MediaDive
+  source_id: mediadive.medium:J1016
+  original_category: specialized
+categories:
+- bacterial
+- specialized
 merged_from:
-- bcye_agar
+- 1_10_r2a_agar
+- 1_2_r2a_agar
+- JCM_J119_BCYE_AGAR
+- JCM_J1329_CORN_MEAL_AGAR
+- JCM_J150_CORN_MEAL_AGAR
+- TOGO_M2859_BCYE_agar
+- alkali_reinforced_clostridial_agar
+- bacto_marine_agar
+- me_agar
+- modified_gam_agar
+- weak_oatmeal_agar
+- bacto_marine_agar
+- marine_agar_2216
+- marine_agar_2216_ph_8_5
+- marine_agar_2216_ph_9_0
+merge_fingerprint: 4aa0cdc82922e6c9424793721864cf1b8ef0ef4c3d561c7c9037ae0dad41c7d4

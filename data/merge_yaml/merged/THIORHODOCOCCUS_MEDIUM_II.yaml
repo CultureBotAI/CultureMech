@@ -3,6 +3,7 @@ name: thiorhodococcus_medium_ii
 original_name: THIORHODOCOCCUS medium II
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:
@@ -20,8 +21,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Na2S2O3 x 5 H2O
   term:
@@ -30,8 +31,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000492
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32150
     label: Na2S2O3 x 5 H2O
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -40,8 +41,8 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: Na2S x 9 H2O
   term:
@@ -50,8 +51,8 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 applications:
 - Microbial cultivation
@@ -77,7 +78,13 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "THIORHODOCOCCUS medium II" to "thiorhodococcus_medium_ii"
     for consistent matching
-- timestamp: '2026-04-17T06:29:21.499686+00:00'
+- timestamp: '2026-06-05T07:40:22.159647+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:46.684108+00:00'
   curator: recipe-merger
   action: Merged 28 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_28_PFENNIG_S_MEDIUM_I, KOMODO_28a_THIORHODOCOCCUS_MEDIUM,
@@ -90,6 +97,25 @@ curation_history:
     medium_28_modified_for_dsm_243, medium_28_modified_for_dsm_4868, medium_28_modified_for_dsm_5261,
     medium_28_modified_for_dsm_5652, medium_28_modified_for_dsm_5653, medium_28_modified_for_dsm_6702,
     medium_28_modified_for_dsm_726, thiorhodococcus_medium_ii'
+- timestamp: '2026-08-06T03:04:46.684226+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 28 source recipe(s) on fingerprint 5aeeb62910220a8e9bb9730eda048dd2f57f67621ae60a4b4bf56503871b75ef
+  source: 'KOMODO_28_PFENNIG_S_MEDIUM_I.yaml, KOMODO_28a_THIORHODOCOCCUS_MEDIUM.yaml,
+    KOMODO_28b_THIORHODOCOCCUS_medium_II.yaml, medium_28_modified_for_dsm_12498.yaml,
+    medium_28_modified_for_dsm_15006.yaml, medium_28_modified_for_dsm_15907.yaml,
+    medium_28_modified_for_dsm_1591.yaml, medium_28_modified_for_dsm_1711.yaml, medium_28_modified_for_dsm_1712.yaml,
+    medium_28_modified_for_dsm_1713.yaml, medium_28_modified_for_dsm_18858.yaml, medium_28_modified_for_dsm_203.yaml,
+    medium_28_modified_for_dsm_204.yaml, '
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_28_PFENNIG_S_MEDIUM_I.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004748
+  name: pfennigs_medium_i
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.
 synonyms:
 - name: pfennigs_medium_i
   source: KOMODO

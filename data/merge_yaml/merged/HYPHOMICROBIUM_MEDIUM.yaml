@@ -1,181 +1,378 @@
-id: CultureMech:000813
+id: CultureMech:000880
 name: hyphomicrobium_medium
 original_name: HYPHOMICROBIUM MEDIUM
 category: bacterial
-medium_type: DEFINED
+medium_type: COMPLEX
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
-ph_value: 6.0
+ph_value: 7.5
 media_term:
-  preferred_term: DSMZ Medium 1355
+  preferred_term: DSMZ Medium 1419
   term:
-    id: mediadive.medium:1355
+    id: mediadive.medium:1419
     label: HYPHOMICROBIUM MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1355.pdf'
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1419.pdf'
 ingredients:
-- preferred_term: K2HPO4
+- preferred_term: Vitamin B12
   term:
-    id: CHEBI:131527
-    label: K2HPO4
+    id: CHEBI:17439
+    label: Vitamin B12
   concentration:
-    value: '2.5'
+    value: '0.0001040099'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
-- preferred_term: NaH2PO4
+  notes: ' [Merged 3 duplicates: 2.5e-06, 2.5e-06, 9.90099e-05]'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
+    label: Vitamin B12
+- preferred_term: KH2PO4
   term:
-    id: CHEBI:37585
-    label: NaH2PO4
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
   concentration:
-    value: '2.25'
+    value: '27.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000393
-    label: NaH2PO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: Na2HPO4 x 2 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+  concentration:
+    value: '53.6'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+- preferred_term: Methylamine hydrochloride
+  term:
+    id: CHEBI:59337
+    label: Methylamine hydrochloride
+  concentration:
+    value: '67.6'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:59337
+    label: Methylamine hydrochloride
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.2'
+    value: '29.9'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  notes: ' [Merged 2 duplicates: 0.2, 29.7]'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
+- preferred_term: Bacto peptone
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
 - preferred_term: Agar
   term:
     id: CHEBI:2509
     label: Agar
   concentration:
-    value: '12'
+    value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
-- preferred_term: Methylamine
-  term:
-    id: CHEBI:16830
-    label: Methylamine
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000553
-    label: Methylamine
-- preferred_term: EDTA
-  term:
-    id: CHEBI:64755
-    label: EDTA
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000165
-    label: EDTA
-- preferred_term: ZnSO4 x 7 H2O
-  term:
-    id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
-  concentration:
-    value: '4.4'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
-    label: ZnSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '1.466'
+    value: '5.325'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  notes: ' [Merged 2 duplicates: 1.99, 3.335]'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
-- preferred_term: MnCl2 x 4 H2O
-  term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
-  concentration:
-    value: '1.012'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
-    label: MnCl2 x 4 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.998'
+    value: '1.599'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  notes: ' [Merged 3 duplicates: 1.0, 0.099, 0.5]'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.504'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.35, 0.154]'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
 - preferred_term: (NH4)6Mo7O24 x 4 H2O
   concentration:
-    value: '0.22'
+    value: '0.00925'
     unit: G_PER_L
+  term:
+    id: CHEBI:91249
+    label: ammonium molybdate
+- preferred_term: Na-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na-EDTA
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
+    label: Na-EDTA
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '1.095'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
     label: CuSO4 x 5 H2O
   concentration:
-    value: '0.314'
+    value: '0.0392'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
     label: CuSO4 x 5 H2O
-- preferred_term: CoCl2 x 6 H2O
+- preferred_term: Co(NO3)2 x 6 H2O
   term:
-    id: CHEBI:35696
-    label: CoCl2 x 6 H2O
+    id: CHEBI:86214
+    label: Co(NO3)2 x 6 H2O
   concentration:
-    value: '0.322'
+    value: '0.0248'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
-    label: CoCl2 x 6 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86214
+    label: Co(NO3)2 x 6 H2O
+- preferred_term: Na2B4O7 x 10 H2O
+  concentration:
+    value: '0.0177'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131366
+    label: ''
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.0019802'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
+    label: Biotin
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.0019802'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
+    label: Folic acid
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.00990099'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.00495049'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.00495049'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
+    label: Riboflavin
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.00495049'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+- preferred_term: D-Calcium pantothenate
+  concentration:
+    value: '0.00495049'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.00495049'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
 preparation_steps:
 - step_number: 1
-  action: MIX
-  description: Adjust to pH 6 and sterilize by autoclaving. The medium may be solidified
-    by adding 12.0 g/l agar. After autoclaving add sterile methylamine (0.2% v/v)
-    to the sterile main solution.
+  action: AUTOCLAVE
+  description: Autoclave solution A and B separately and combine after cooling.
 - step_number: 2
+  action: MIX
+  description: 'Prepare the liquid medium. Before inoculation add from sterile stock
+    solutions:'
+- step_number: 3
+  action: MIX
+  description: For solid media add 15.0 g agar to solution B
+- step_number: 4
   action: ADJUST_PH
-  description: Adjust pH to 6.0 with NaOH.
+  description: Adjust pH to 7.5
+- step_number: 5
+  action: ADJUST_PH
+  description: Adjust pH to 7.5
+- step_number: 6
+  action: DISSOLVE
+  description: Dissolve the nitrilotriacetic acid.
+- step_number: 7
+  action: ADJUST_PH
+  description: Adjust pH to 7.0 with KOH (~7.3 g).
+- step_number: 8
+  action: DISSOLVE
+  description: Dissolve other salts separately and combine.
+- step_number: 9
+  action: ADJUST_PH
+  description: Adjust pH to 6.8 with NaOH or H2SO4.
+- step_number: 10
+  action: DISSOLVE
+  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard
+    precipitation of the heavy metal ions.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:14.180315Z'
+- timestamp: '2026-01-26T17:53:14.366935Z'
   curator: mediadive-import
   action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1355'
-- timestamp: '2026-03-13T06:18:58.547274Z'
+  notes: 'Source: DSMZ, ID: 1419'
+- timestamp: '2026-01-28T19:48:19.158280Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:00.861110Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 7 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:18:59.147979Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000813'
-- timestamp: '2026-03-17T06:30:27.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:000880'
+- timestamp: '2026-03-17T06:30:06.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:09.973767+00:00'
+- timestamp: '2026-03-17T19:45:10.631028+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "HYPHOMICROBIUM MEDIUM" to "hyphomicrobium_medium" for
     consistent matching
-merge_fingerprint: 3f6dd939bc18ed484c666eb427b762cabf93bb050a13b759fe29911be1555bfa
+- timestamp: '2026-06-05T07:40:16.044938+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 24 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:42.605864+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:34.473740+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1419_HYPHOMICROBIUM_MEDIUM, half_strenghs_hyphomicrobium_medium'
+- timestamp: '2026-08-06T03:04:34.473777+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 09a86787fdf8090b4239c6e3246b58e7bae8d1a3871907d8aea2f79d3ef4de75
+  source: DSMZ_1419_HYPHOMICROBIUM_MEDIUM.yaml, half_strenghs_hyphomicrobium_medium.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/half_strenghs_hyphomicrobium_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:000884
+  name: half_strenghs_hyphomicrobium_medium
+  notes: Half-strength Hyphomicrobium medium halves phosphate, methylamine hydrochloride,
+    ammonium sulfate, and peptone concentrations while agar and trace/vitamin solutions
+    remain effectively unchanged.
+synonyms:
+- name: half_strenghs_hyphomicrobium_medium
+  source: MediaDive
+  source_id: mediadive.medium:1420
+  original_category: bacterial
+categories:
+- bacterial
 merged_from:
-- hyphomicrobium_medium
+- DSMZ_1419_HYPHOMICROBIUM_MEDIUM
+- half_strenghs_hyphomicrobium_medium
+merge_fingerprint: 09a86787fdf8090b4239c6e3246b58e7bae8d1a3871907d8aea2f79d3ef4de75

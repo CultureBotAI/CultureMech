@@ -1,9 +1,10 @@
-id: CultureMech:009537
+id: CultureMech:009538
 name: natural_seawater_medium_for_halophile
 original_name: Natural Seawater Medium For Halophile
 category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: NaCl
   concentration:
@@ -14,9 +15,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: K2HPO4
   concentration:
     value: '0.6'
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Sodium pyruvate
   concentration:
     value: '0.05'
@@ -38,9 +39,9 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
-    label: Sodium pyruvate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
 - preferred_term: Natural seawater
   concentration:
     value: '1'
@@ -55,9 +56,20 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '1'
@@ -74,39 +86,54 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Undefined component'
 media_term:
-  preferred_term: TOGO Medium M3026
+  preferred_term: TOGO Medium M3027
   term:
-    id: TOGO:M3026
+    id: TOGO:M3027
     label: Natural Seawater Medium For Halophile
-notes: 'Source: https://togomedium.org/medium/M3026
+notes: 'Source: https://togomedium.org/medium/M3027
 
-  Original source: JCM - JCM_M1377-1
+  Original source: JCM - JCM_M1377-2
 
   Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1377'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:53.694744Z'
+- timestamp: '2026-01-27T06:35:53.695988Z'
   curator: togo-import
   action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M3026'
-- timestamp: '2026-01-28T19:48:20.827022Z'
+  notes: 'Source: JCM, ID: M3027'
+- timestamp: '2026-01-28T19:48:12.183067Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:20:06.682695Z'
+- timestamp: '2026-03-13T06:20:06.687873Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:009537'
-- timestamp: '2026-03-17T06:30:09.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:009538'
+- timestamp: '2026-03-17T06:29:51.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:25.701556+00:00'
+- timestamp: '2026-03-17T19:46:25.707174+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "Natural Seawater Medium For Halophile" to "natural_seawater_medium_for_halophile"
     for consistent matching
-merge_fingerprint: c938da9cfb5b736bcf245c73cc4a138fc2554d128e8caa41b09ac1443d19a478
+- timestamp: '2026-06-05T07:40:39.715999+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:50.074012+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:14.326464+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 036526b0a529cadd09ce5590a8dfc926d80a8d5c706570d1830415fb33160171
+  source: TOGO_M3027_Natural_Seawater_Medium_For_Halophile.yaml
+merge_fingerprint: 036526b0a529cadd09ce5590a8dfc926d80a8d5c706570d1830415fb33160171
 merged_from:
-- natural_seawater_medium_for_halophile
+- TOGO_M3027_Natural_Seawater_Medium_For_Halophile

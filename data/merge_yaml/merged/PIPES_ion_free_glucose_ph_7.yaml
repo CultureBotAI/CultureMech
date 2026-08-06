@@ -1,6 +1,7 @@
 id: CultureMech:015676
 name: PIPES ion free glucose ph 7
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: PIPES sesquisodium salt
@@ -47,7 +48,7 @@ ingredients:
 description: Media for testing importance of ions for T4 phage infectivity against
   E. coli
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: PIPES ion free glucose ph 7
@@ -61,6 +62,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015676'
+- timestamp: '2026-05-16T09:04:42.649526+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:07.496217+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2718e2b6de07126654a5409a314e2a78dffe1764ef3f8f2d10b608d4d3868c6d
+  source: pipes_ion_free_glucose_ph_7.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: 2718e2b6de07126654a5409a314e2a78dffe1764ef3f8f2d10b608d4d3868c6d

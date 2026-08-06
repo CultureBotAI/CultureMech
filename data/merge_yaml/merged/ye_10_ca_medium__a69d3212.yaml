@@ -1,0 +1,89 @@
+id: CultureMech:000929
+name: ye_10_ca_medium
+original_name: YE/10 + Ca MEDIUM
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: DSMZ Medium 1463
+  term:
+    id: mediadive.medium:1463
+    label: YE/10 + Ca MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1463.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+- preferred_term: Tris-HCl buffer
+  concentration:
+    value: '0.61'
+    unit: G_PER_L
+  term:
+    id: CHEBI:9754
+    label: ''
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Add all the components together, except calcium chloride which is added
+    from a sterilized stock solution when the autoclaved medium has cooled. Adjust
+    final pH to 7.5.
+- step_number: 2
+  action: MIX
+  description: "<b>Propagation of DSM 25223 in liquid cultures:</b>\r\n\r\nAdd 3 ml\
+    \ of a <i>Caulobacter vibrioides</i> DSM 25117 culture (grown for 24 h in DSMZ\
+    \ medium 1462) to 20 ml of medium and inoculate with 1 ml of a liquid culture\
+    \ of DSM 25223 or transfer some material with an inoculation loop from the lysis\
+    \ zone of a double layer agar plate. Incubate with shaking (ca. 150 rpm) for approximately\
+    \ 48 h."
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.507491Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1463'
+- timestamp: '2026-03-13T06:18:59.648112Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000929'
+- timestamp: '2026-03-17T06:30:56.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:11.179583+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "YE/10 + Ca MEDIUM" to "ye_10_ca_medium" for consistent
+    matching
+- timestamp: '2026-06-05T07:41:55.654790+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:03.060963+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint a69d321209110100d23b1b8ab9e9f95d294eacdcd099fe73adf5b4dfd5d6df3b
+  source: ye_10_ca_medium.yaml
+kg_microbe_match: mediadive.medium:1143
+merge_fingerprint: a69d321209110100d23b1b8ab9e9f95d294eacdcd099fe73adf5b4dfd5d6df3b
+merged_from:
+- ye_10_ca_medium

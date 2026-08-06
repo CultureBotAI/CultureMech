@@ -1,121 +1,228 @@
-id: CultureMech:009763
+id: CultureMech:002744
 name: pygv_agar
-original_name: PYGV Agar
+original_name: PYGV AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.5
+media_term:
+  preferred_term: JCM Medium J387
+  term:
+    id: mediadive.medium:J387
+    label: PYGV AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=387'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '960'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: Yeast extract
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
 - preferred_term: Peptone
   concentration:
     value: '0.25'
     unit: G_PER_L
-- preferred_term: KOH
-  notes: 'Role: Mineral source; Properties: Defined component, Solution'
-  term:
-    id: CHEBI:32035
-    label: potassium hydroxide
+- preferred_term: Yeast extract
   concentration:
-    value: variable
-    unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000213
-    label: KOH
-media_term:
-  preferred_term: TOGO Medium M382
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Glucose
   term:
-    id: TOGO:M382
-    label: PYGV Agar
-notes: 'Source: https://togomedium.org/medium/M382
-
-  Original source: JCM - JCM_M387
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=387'
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: Glucose
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '29.7'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '3.34'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.099'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.013'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
+    label: Biotin
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
+    label: Folic acid
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
+    label: Riboflavin
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+- preferred_term: Nicotinamide
+  term:
+    id: CHEBI:17154
+    label: Nicotinamide
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17154
+    label: Nicotinamide
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
+    label: Vitamin B12
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Add components, except Glucose solution and Vitamin solution, to distilled
+    water and mix thoroughly. Gently heat and bring to a boil. Autoclave and then
+    cool to 45 - 50C. Aseptically add the filter-sterilized Glucose solution and Vitamin
+    solution. Adjust pH to 7.5 with sterile KOH, if necessary.
+- step_number: 2
+  action: ADJUST_PH
+  description: Add nitrilotriacetic acid to 500 ml of distilled water. Dissolve by
+    adjusting pH to 6.5 with KOH. Add the remaining components and distilled water.
+    Readjust pH to 7.2.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.951799Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M382'
-- timestamp: '2026-01-28T19:48:24.283447Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:58.457101'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: KOH'
-- timestamp: '2026-03-09T08:04:40.140992+00:00'
-  curator: solution-migrator-v1.0
-  action: Migrated solutions from ingredients to solutions array
-  notes: Moved 3 solution(s) from ingredients
-- timestamp: '2026-03-13T06:20:08.692954Z'
+- timestamp: '2026-01-26T17:53:16.473570Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J387'
+- timestamp: '2026-03-13T06:19:15.431194Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:009763'
-- curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:00.589885'
-  action: Applied schema defaults and normalizations
-  notes: Added default solution name; Added default solution name; Added default solution
-    name
-- timestamp: '2026-03-17T06:30:16.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:002744'
+- timestamp: '2026-03-17T06:30:49.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:27.688334+00:00'
+- timestamp: '2026-03-17T19:45:28.827648+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PYGV Agar" to "pygv_agar" for consistent matching
-solutions:
-- preferred_term: 2.5% Glucose solution
-  composition: []
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
-  name: Unknown solution
-- preferred_term: Mineral salt solution (see Medium [M299])
-  composition: []
-  notes: Cross-reference to Medium M299
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: Vitamin solution (see Medium [M299])
-  composition: []
-  notes: Cross-reference to Medium M299
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  name: Unknown solution
-merge_fingerprint: 5e08c75327f8f25dfca3aacdb5d06d141736d9dc7a8db574255b3eb51808a4a6
+  notes: Normalized name from "PYGV AGAR" to "pygv_agar" for consistent matching
+- timestamp: '2026-06-05T07:40:17.199599+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 16 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:36.198460+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 6e989e03fcfd1b9c08410ae90eed2d182cd8dd91e45932e0223addf0f05f73eb
+  source: JCM_J387_PYGV_AGAR.yaml
+merge_fingerprint: 6e989e03fcfd1b9c08410ae90eed2d182cd8dd91e45932e0223addf0f05f73eb
 merged_from:
-- TOGO_M382_PYGV_Agar
+- JCM_J387_PYGV_AGAR

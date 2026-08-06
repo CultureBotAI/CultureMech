@@ -3,6 +3,7 @@ name: de_man_rogosa_sharpe_mrs_broth
 original_name: de Man–Rogosa–Sharpe (MRS) broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 'de Man–Rogosa–Sharpe (MRS) broth (LabM) '
@@ -31,6 +32,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "de Man–Rogosa–Sharpe (MRS) broth" to "de_man_rogosa_sharpe_mrs_broth"
     for consistent matching
+- timestamp: '2026-08-06T03:05:29.696897+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 55443704538bd9ebdf1e9b16a2d5ab6fac6e529bad62b83cf5173aa3200e156f
+  source: de_man_rogosa_sharpe_mrs_broth.yaml
 merge_fingerprint: 55443704538bd9ebdf1e9b16a2d5ab6fac6e529bad62b83cf5173aa3200e156f
 merged_from:
 - de_man_rogosa_sharpe_mrs_broth

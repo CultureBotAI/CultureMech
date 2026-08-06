@@ -3,6 +3,7 @@ name: bordet_gengou_agar_medium
 original_name: Bordet Gengou Agar Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Glycerol
@@ -12,10 +13,10 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
     component'
   term:
-    id: CHEBI:15978
-    label: sn-glycerol 3-phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000588
+    id: CHEBI:17754
+    label: Glycerol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: DI Water
   concentration:
@@ -69,7 +70,24 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Bordet Gengou Agar Medium" to "bordet_gengou_agar_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:40:51.294623+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:36.034502+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:05:25.753592+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint a0ceb0166779c54650f19a83d05e57fca3bb0c9971d91f5c1899e5a70cb5c0f9
+  source: bordet_gengou_agar_medium.yaml
 kg_microbe_match: mediadive.medium:780
-merge_fingerprint: f0096b941a294ccb93855adf0027cd1ff92d34c6be320cc9948b9c38ccc1bb09
+merge_fingerprint: a0ceb0166779c54650f19a83d05e57fca3bb0c9971d91f5c1899e5a70cb5c0f9
 merged_from:
 - bordet_gengou_agar_medium

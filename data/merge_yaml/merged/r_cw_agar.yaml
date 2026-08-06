@@ -1,105 +1,150 @@
-id: CultureMech:002521
+id: CultureMech:008087
 name: r_cw_agar
-original_name: R-CW AGAR
+original_name: R-CW Agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-media_term:
-  preferred_term: JCM Medium J162
-  term:
-    id: mediadive.medium:J162
-    label: R-CW AGAR
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=162'
 ingredients:
-- preferred_term: Trypticase peptone
+- preferred_term: MgSO4・7H2O
   concentration:
-    value: '4.99501'
+    value: '0.5'
     unit: G_PER_L
-- preferred_term: Tryptone
-  concentration:
-    value: '4.99501'
-    unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '4.99501'
-    unit: G_PER_L
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-  concentration:
-    value: '4.99501'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
-- preferred_term: Sodium acetate
-  term:
-    id: CHEBI:32954
-    label: Sodium acetate
-  concentration:
-    value: '4.99501'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
-    label: Sodium acetate
-- preferred_term: Diammonium hydrogen citrate
-  term:
-    id: CHEBI:63076
-    label: Diammonium hydrogen citrate
-  concentration:
-    value: '1.998'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000400
-    label: Diammonium hydrogen citrate
-- preferred_term: MgSO4 x 7 H2O
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
+- preferred_term: KH2PO4
   concentration:
-    value: '0.499501'
+    value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: MnSO4 x n H2O
-  concentration:
-    value: '0.499501'
-    unit: G_PER_L
-- preferred_term: Tween 80
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
   term:
-    id: CHEBI:53426
-    label: Tween 80
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: Sodium acetate
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Organic compound'
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
+- preferred_term: Tween 80
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000190
-    label: Tween 80
+  notes: 'Role: Surfactant; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53426
+    label: polysorbate 80
+- preferred_term: MnSO4・xH2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:86360
+    label: ''
+- preferred_term: Diammonium hydrogen citrate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Simple component, Defined component,
+    Organic compound'
+  term:
+    id: CHEBI:63076
+    label: diammonium citrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63076
+    label: diammonium citrate
 - preferred_term: Cheese whey
   concentration:
-    value: '1000'
+    value: '1'
     unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Tryptone (BD-Difco)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Trypticase peptone (BD-BBL)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M153
+  term:
+    id: TOGO:M153
+    label: R-CW Agar
+notes: 'Source: https://togomedium.org/medium/M153
+
+  Original source: JCM - JCM_M162
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=162'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:15.851009Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J162'
-- timestamp: '2026-03-13T06:19:13.940905Z'
+- timestamp: '2026-01-27T06:35:54.524550Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M153'
+- timestamp: '2026-01-28T19:48:09.023323Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:53.427607Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002521'
-- timestamp: '2026-03-17T06:30:17.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:008087'
+- timestamp: '2026-03-17T06:29:43.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:27.120046+00:00'
+- timestamp: '2026-03-17T19:46:11.960772+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "R-CW AGAR" to "r_cw_agar" for consistent matching
-merge_fingerprint: c881ce17e01b0b8e94f9851830b677e80b57e12ac4e8796306014f54cf81f19b
+  notes: Normalized name from "R-CW Agar" to "r_cw_agar" for consistent matching
+- timestamp: '2026-06-05T07:40:33.204738+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:23.383188+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:46:47.837570+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:08.884961+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d7a687f54e41ab9852b019d98217ed63a50d1b4ee32a96cea08628b018a59c96
+  source: TOGO_M153_R-CW_Agar.yaml
+merge_fingerprint: d7a687f54e41ab9852b019d98217ed63a50d1b4ee32a96cea08628b018a59c96
 merged_from:
-- r_cw_agar
+- TOGO_M153_R-CW_Agar

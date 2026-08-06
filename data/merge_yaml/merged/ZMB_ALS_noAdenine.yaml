@@ -1,6 +1,7 @@
 id: CultureMech:015795
 name: ZMB ALS noAdenine
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: ZMB_ALS
@@ -17,7 +18,7 @@ ingredients:
     label: ''
 description: Media for culturing Bifidobacterium minus adenine
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: ZMB ALS noAdenine
@@ -31,6 +32,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015795'
+- timestamp: '2026-05-16T09:04:44.103258+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:09.082753+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d6b5953dc9f2ef587c201dacb6928fb57611e090ef288e6a5b3e9a0e25a1d89c
+  source: zmb_als_noadenine.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: d6b5953dc9f2ef587c201dacb6928fb57611e090ef288e6a5b3e9a0e25a1d89c

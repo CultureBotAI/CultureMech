@@ -3,6 +3,7 @@ name: mm_pyruvate_dunn_et_al
 original_name: MM-Pyruvate; Dunn et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Pyruvate
@@ -13,8 +14,8 @@ ingredients:
     value: '10.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pyr'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000367
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15361
     label: Pyruvate
 - preferred_term: Biotin
   term:
@@ -24,17 +25,23 @@ ingredients:
     value: '4.09316e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.360425'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '1.2629'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -42,8 +49,8 @@ ingredients:
   concentration:
     value: '0.000331323'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Magnesium sulfate
   term:
@@ -52,8 +59,8 @@ ingredients:
   concentration:
     value: '0.40572'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: '''Iron(III'
   concentration:
@@ -66,9 +73,9 @@ ingredients:
   term:
     id: CHEBI:64220
     label: monosodium glutamate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000432
-    label: Sodium Glutamate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64220
+    label: monosodium glutamate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -102,6 +109,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MM-Pyruvate; Dunn et al" to "mm_pyruvate_dunn_et_al"
     for consistent matching
+- timestamp: '2026-06-05T07:41:35.274646+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:46.905647+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b92b9fcaec5433f6e26537fda8f93c27c556522e8b9496f5ca7e06cedd4af3bc
+  source: mm_pyruvate_dunn_et_al.yaml
 media_term:
   preferred_term: MediaDB Medium 148
   term:
@@ -113,6 +131,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: dc2c8b0c6a7f4e0481a1af9ebeb23f515fb48c1529ae903a945e939a332e1f6f
+merge_fingerprint: b92b9fcaec5433f6e26537fda8f93c27c556522e8b9496f5ca7e06cedd4af3bc
 merged_from:
 - mm_pyruvate_dunn_et_al

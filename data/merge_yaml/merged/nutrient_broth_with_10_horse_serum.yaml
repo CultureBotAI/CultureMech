@@ -3,6 +3,7 @@ name: nutrient_broth_with_10_horse_serum
 original_name: NUTRIENT BROTH WITH 10% HORSE SERUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 302
@@ -28,8 +29,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (if necessary)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Horse serum
   concentration:
@@ -59,12 +60,35 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "NUTRIENT BROTH WITH 10% HORSE SERUM" to "nutrient_broth_with_10_horse_serum"
     for consistent matching
-- timestamp: '2026-04-17T06:29:21.638719+00:00'
+- timestamp: '2026-06-05T07:40:22.305154+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:46.844903+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_302_NUTRIENT_BROTH_WITH_10_HORSE_SERUM, nutrient_broth_with_10_horse_serum'
+- timestamp: '2026-08-06T03:04:46.844932+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 8eb43144d7f0fa97dab6691c9ec02683b31f6fbc2405dd6516f9d539c3557659
+  source: KOMODO_302_NUTRIENT_BROTH_WITH_10_HORSE_SERUM.yaml, nutrient_broth_with_10_horse_serum.yaml
 ph_value: 7.0
 kg_microbe_match: mediadive.medium:12
+parent_media:
+  path: data/normalized_yaml/bacterial/nutrient_broth_with_10_horse_serum.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001402
+  name: nutrient_broth_with_10_horse_serum
+  notes: KOMODO record explicitly cites DSMZ Medium 302; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 302; local ingredient
+  and concentration signatures match.
 categories:
 - bacterial
 merged_from:

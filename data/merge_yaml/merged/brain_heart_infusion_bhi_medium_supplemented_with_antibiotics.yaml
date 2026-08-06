@@ -3,6 +3,7 @@ name: brain_heart_infusion_bhi_medium_supplemented_with_antibiotics
 original_name: brain heart infusion (BHI) medium (supplemented with antibiotics)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: kanamycin
@@ -20,9 +21,9 @@ ingredients:
   term:
     id: CHEBI:28971
     label: Ampicillin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000826
-    label: ampicillin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28971
+    label: Ampicillin
 - preferred_term: erythromycin
   concentration:
     value: '30'
@@ -32,9 +33,9 @@ ingredients:
   term:
     id: CHEBI:48923
     label: Erythromycin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000937
-    label: erythromycin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:48923
+    label: Erythromycin
 - preferred_term: chloramphenicol
   concentration:
     value: '50'
@@ -181,6 +182,17 @@ curation_history:
   notes: Normalized name from "brain heart infusion (BHI) medium (supplemented with
     antibiotics)" to "brain_heart_infusion_bhi_medium_supplemented_with_antibiotics"
     for consistent matching
+- timestamp: '2026-06-05T07:40:51.477282+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:25.879175+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 435adfdeb90615c08d4d777b2ebd020a7b8933ac06da0981da3160e71d2ce9ae
+  source: brain_heart_infusion_bhi_medium_supplemented_with_antibiotics.yaml
 merge_fingerprint: 435adfdeb90615c08d4d777b2ebd020a7b8933ac06da0981da3160e71d2ce9ae
 merged_from:
 - brain_heart_infusion_bhi_medium_supplemented_with_antibiotics

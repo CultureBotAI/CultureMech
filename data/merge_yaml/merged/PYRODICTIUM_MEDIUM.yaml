@@ -1,16 +1,18 @@
-id: CultureMech:001381
+id: CultureMech:004740
 name: pyrodictium_medium
-original_name: PYRODICTIUM MEDIUM
-category: bacterial
+original_name: PYRODICTIUM medium
+category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 5.5
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 283 | DSMZ Medium: 283 (mediadive.medium:283)
+  | Aerobic: Yes'
 media_term:
-  preferred_term: DSMZ Medium 283
+  preferred_term: KOMODO Medium 283
   term:
-    id: mediadive.medium:283
-    label: PYRODICTIUM MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium283.pdf'
+    id: komodo.medium:283
+    label: PYRODICTIUM medium
 ingredients:
 - preferred_term: NaCl
   term:
@@ -20,8 +22,8 @@ ingredients:
     value: '14.5122'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 13.5122, 1.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -31,8 +33,8 @@ ingredients:
     value: '6.41463'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 3.41463, 3.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -41,8 +43,8 @@ ingredients:
   concentration:
     value: '2.68293'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: KCl
   term:
@@ -51,29 +53,29 @@ ingredients:
   concentration:
     value: '0.321951'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: NaBr
   term:
     id: CHEBI:63004
-    label: NaBr
+    label: sodium bromide
   concentration:
     value: '0.0487805'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000189
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63004
     label: NaBr
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.0246341'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.0146341, 0.01]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: SrCl2 x 6 H2O
   term:
@@ -82,18 +84,18 @@ ingredients:
   concentration:
     value: '0.00682927'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000463
+  mediaingredientmech_chebi_term:
+    id: CHEBI:36385
     label: SrCl2 x 6 H2O
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '0.0097561'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: Citric acid
   term:
@@ -102,8 +104,8 @@ ingredients:
   concentration:
     value: '0.00487805'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000283
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30769
     label: Citric acid
 - preferred_term: KI
   term:
@@ -123,18 +125,18 @@ ingredients:
     value: '0.831707'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.731707, 0.1]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.487805'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -144,8 +146,8 @@ ingredients:
     value: '0.03195122'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.00195122, 0.03]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: Sulfur
   term:
@@ -154,13 +156,16 @@ ingredients:
   concentration:
     value: '29.2683'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000927
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26833
     label: Sulfur
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.000487805'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: Yeast extract
   concentration:
     value: '1.95122'
@@ -172,8 +177,8 @@ ingredients:
   concentration:
     value: '0.487805'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 - preferred_term: Nitrilotriacetic acid
   term:
@@ -182,8 +187,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
     label: Nitrilotriacetic acid
 - preferred_term: MnSO4 x H2O
   term:
@@ -192,8 +197,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
     label: MnSO4 x H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -202,8 +207,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: CoSO4 x 7 H2O
   term:
@@ -212,8 +217,8 @@ ingredients:
   concentration:
     value: '0.18'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000158
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53470
     label: CoSO4 x 7 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -222,8 +227,8 @@ ingredients:
   concentration:
     value: '0.18'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
@@ -232,8 +237,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
     label: CuSO4 x 5 H2O
 - preferred_term: AlK(SO4)2 x 12 H2O
   term:
@@ -242,8 +247,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000293
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86465
     label: AlK(SO4)2 x 12 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -252,8 +257,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: Na2SeO3 x 5 H2O
   term:
@@ -262,8 +267,8 @@ ingredients:
   concentration:
     value: '0.0003'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000144
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131361
     label: Na2SeO3 x 5 H2O
 - preferred_term: Na2WO4 x 2 H2O
   term:
@@ -272,54 +277,71 @@ ingredients:
   concentration:
     value: '0.0004'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000309
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63939
     label: Na2WO4 x 2 H2O
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Prepare the medium without sulfur, yeast extract and sodium sulfide,
-    adjust pH to 5.0 - 5.5 with 10 N sulfuric acid, then sparge medium with 80% H2
-    and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under
-    80% H2 and CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials  that
-    contain already the appropriate amount of sulfur, only to 30% of their volume
-    to allow for a large headspace. For sterilization of medium heat vessels for at
-    least 1 hour to 90 - 100°C on each of 3 successive days. Do not autoclave! Complete
-    the medium by adding yeast extract and sulfide from sterile anoxic stock solutions
-    prepared under 100% N2 gas atmosphere. Adjust pH of complete medium to 5.5, if
-    necessary.
-- step_number: 2
-  action: MIX
-  description: After inoculation pressurize the vessels to 2 bar overpressure with
-    sterile 80% H2 and 20% CO2 gas mixture.
-- step_number: 3
-  action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+- preferred_term: H2SO4
+  term:
+    id: CHEBI:26836
+    label: sulfuric acid
+  notes: pH adjustment (extracted from notes)
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26836
+    label: sulfuric acid
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:10.656674Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 283'
-- timestamp: '2026-03-13T03:09:14.935156Z'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 283'
+- timestamp: '2026-02-03T11:18:58.426246'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 283
+- timestamp: '2026-03-13T03:08:47.595817Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
-  notes: Merged 5 duplicate ingredient(s)
-- timestamp: '2026-03-13T06:19:03.564491Z'
+  notes: 'Merged 5 duplicate ingredient(s); Added pH buffer: H2SO4'
+- timestamp: '2026-03-13T06:19:28.430749Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:001381'
-- timestamp: '2026-03-17T06:30:22.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:004740'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: H2SO4'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:29:50.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:15.505316+00:00'
+- timestamp: '2026-03-17T19:45:43.830409+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PYRODICTIUM MEDIUM" to "pyrodictium_medium" for consistent
+  notes: Normalized name from "PYRODICTIUM medium" to "pyrodictium_medium" for consistent
     matching
-merge_fingerprint: 7899060b23e6eb1117782883e3a0f6dc4cb3b0fea9a987285e3988d030ee9126
+- timestamp: '2026-05-16T09:03:02.004105+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:22.114000+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 25 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:44.508108+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:22.849976+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 16d0be85dfeb08d457f02af8f835fb7bd2e97069bd389e82be8a586d9f56034a
+  source: KOMODO_283_PYRODICTIUM_medium.yaml
+merge_fingerprint: 16d0be85dfeb08d457f02af8f835fb7bd2e97069bd389e82be8a586d9f56034a
 merged_from:
-- pyrodictium_medium
+- KOMODO_283_PYRODICTIUM_medium

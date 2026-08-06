@@ -1,60 +1,89 @@
-id: CultureMech:002690
+id: CultureMech:009689
 name: antarctic_bacterial_medium
-original_name: ANTARCTIC BACTERIAL MEDIUM
+original_name: Antarctic Bacterial Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_value: 6.9
-media_term:
-  preferred_term: JCM Medium J331
-  term:
-    id: mediadive.medium:J331
-    label: ANTARCTIC BACTERIAL MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=331'
 ingredients:
-- preferred_term: Bacto peptone
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: Yeast extract
+- preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
-- preferred_term: Agar
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:2509
-    label: Agar
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Agar
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 6.9.
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Bacto peptone (BD-Difco)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M326
+  term:
+    id: TOGO:M326
+    label: Antarctic Bacterial Medium
+notes: 'Source: https://togomedium.org/medium/M326
+
+  Original source: JCM - JCM_M331
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=331'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:16.314534Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J331'
-- timestamp: '2026-03-13T06:19:15.042265Z'
+- timestamp: '2026-01-27T06:35:54.857583Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M326'
+- timestamp: '2026-01-28T19:48:38.641548Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:08.151237Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002690'
-- timestamp: '2026-03-17T06:30:05.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:009689'
+- timestamp: '2026-03-17T06:30:48.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:28.380665+00:00'
+- timestamp: '2026-03-17T19:46:27.141528+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ANTARCTIC BACTERIAL MEDIUM" to "antarctic_bacterial_medium"
+  notes: Normalized name from "Antarctic Bacterial Medium" to "antarctic_bacterial_medium"
     for consistent matching
-kg_microbe_match: mediadive.medium:12
-merge_fingerprint: 115440a9a8ffe4f41c1437c6e9de92b58d072bbb9b1efc7e9839c525f5baad8c
+- timestamp: '2026-06-05T07:40:40.418550+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:15.055418+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint c415e2144fbff9fcd8e9d3739bfe37bf6e4136b8c318f2f3bb145beba767a781
+  source: TOGO_M326_Antarctic_Bacterial_Medium.yaml
+merge_fingerprint: c415e2144fbff9fcd8e9d3739bfe37bf6e4136b8c318f2f3bb145beba767a781
 merged_from:
-- antarctic_bacterial_medium
+- TOGO_M326_Antarctic_Bacterial_Medium

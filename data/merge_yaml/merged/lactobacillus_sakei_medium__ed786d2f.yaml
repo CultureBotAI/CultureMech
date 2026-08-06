@@ -1,0 +1,71 @@
+id: CultureMech:002571
+name: lactobacillus_sakei_medium
+original_name: LACTOBACILLUS SAKEI MEDIUM
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J20
+  term:
+    id: mediadive.medium:J20
+    label: LACTOBACILLUS SAKEI MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=20'
+ingredients:
+- preferred_term: Sake
+  concentration:
+    value: '700'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '6.25'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '16.25'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+- preferred_term: Liver extract concentrate
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.595020Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J20'
+- timestamp: '2026-03-13T06:19:14.228670Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002571'
+- timestamp: '2026-03-17T06:29:57.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:27.448768+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "LACTOBACILLUS SAKEI MEDIUM" to "lactobacillus_sakei_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:10.739360+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:39.913470+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint ed786d2fd2ca08475895fb56e222a365794185cba5eea0028c256c272f2848fc
+  source: lactobacillus_sakei_medium.yaml
+kg_microbe_match: mediadive.medium:12
+merge_fingerprint: ed786d2fd2ca08475895fb56e222a365794185cba5eea0028c256c272f2848fc
+merged_from:
+- lactobacillus_sakei_medium

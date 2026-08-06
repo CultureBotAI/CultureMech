@@ -1,61 +1,113 @@
-id: CultureMech:009521
+id: CultureMech:004218
 name: corn_meal_agar
-original_name: Corn Meal Agar
+original_name: CORN MEAL AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: Corn meal agar (Nissui)
-  concentration:
-    value: '17'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
 media_term:
-  preferred_term: TOGO Medium M3004
+  preferred_term: KOMODO Medium 191
   term:
-    id: TOGO:M3004
-    label: Corn Meal Agar
-notes: 'Source: https://togomedium.org/medium/M3004
-
-  Original source: JCM - JCM_M1329
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1329'
+    id: komodo.medium:191
+    label: CORN MEAL AGAR
+notes: 'Source: KOMODO ModelSEED | ID: 191 | DSMZ Medium: 191 (mediadive.medium:191)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Corn meal
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.811183Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M3004'
-- timestamp: '2026-01-28T19:48:33.904604Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:20:06.555470Z'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 191'
+- timestamp: '2026-02-03T11:18:55.549974'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 191
+- timestamp: '2026-03-13T06:19:25.868924Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:009521'
-- timestamp: '2026-03-17T06:30:37.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:004218'
+- timestamp: '2026-03-17T06:29:43.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:25.566392+00:00'
+- timestamp: '2026-03-17T19:45:40.841589+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Corn Meal Agar" to "corn_meal_agar" for consistent
+  notes: Normalized name from "CORN MEAL AGAR" to "corn_meal_agar" for consistent
     matching
-merge_fingerprint: edd1883a8da7164ebe3d5ceaa1de7b683b25270bcc202fe1114bcde08941396d
+- timestamp: '2026-06-05T07:40:21.452441+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:44.051169+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_191_CORN_MEAL_AGAR, corn_meal_agar, for_dsm_25939, for_dsm_25945'
+- timestamp: '2026-08-06T03:04:44.051208+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 4 source recipe(s) on fingerprint 6172486c1304a7661472ef0af807f35edf87ef50c35b563eba5b3dedca35107b
+  source: KOMODO_191_CORN_MEAL_AGAR.yaml, corn_meal_agar.yaml, for_dsm_25939.yaml,
+    for_dsm_25945.yaml
+ph_value: 6.0
+kg_microbe_match: mediadive.medium:12
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_25939.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004217
+  name: for_dsm_25939
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/for_dsm_25945.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004216
+  name: for_dsm_25945
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/corn_meal_agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001283
+  name: corn_meal_agar
+  notes: KOMODO record explicitly cites DSMZ Medium 191; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 191; local ingredient
+  and concentration signatures match.
+synonyms:
+- name: for_dsm_25939
+  source: KOMODO
+  source_id: komodo.medium:191.4
+  original_category: bacterial
+- name: for_dsm_25945
+  source: KOMODO
+  source_id: komodo.medium:191.3
+  original_category: bacterial
+categories:
+- bacterial
 merged_from:
-- TOGO_M3004_Corn_Meal_Agar
+- KOMODO_191_CORN_MEAL_AGAR
+- corn_meal_agar
+- for_dsm_25939
+- for_dsm_25945
+merge_fingerprint: 6172486c1304a7661472ef0af807f35edf87ef50c35b563eba5b3dedca35107b

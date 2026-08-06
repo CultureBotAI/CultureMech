@@ -1,0 +1,97 @@
+id: CultureMech:000434
+name: bacteriovorax_medium
+original_name: BACTERIOVORAX MEDIUM
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 1012b
+  term:
+    id: mediadive.medium:1012b
+    label: BACTERIOVORAX MEDIUM
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: HEPES buffer
+  term:
+    id: CHEBI:46756
+    label: HEPES buffer
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000426
+    label: HEPES buffer
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Grow prey bacteria on agar plates using the medium indicated below.
+    Use one plate of a 24-hour-old culture and wash off grown cells in 5 ml sterile
+    water.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Prepare HEPES buffer, adjust pH to 7.2, and autoclave. After cooling
+    to room temperature add 5 ml cell suspension of the host organism to 50 ml HEPES
+    buffer and mix. The prey medium suspension should contain approx. 10<sup>7</sup>
+    to 10<sup>9</sup> cells. Inoculate the complete medium immediately after preparation
+    and incubate the suspension with shaking until a decrease in turbidity is visible.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI,
+    0 de-grounded (mixture or unverifiable).
+- timestamp: '2026-01-26T17:53:13.108168Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1012b'
+- timestamp: '2026-03-13T06:18:55.256153Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000434'
+- timestamp: '2026-03-17T06:30:07.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:06.296772+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BACTERIOVORAX MEDIUM" to "bacteriovorax_medium" for
+    consistent matching
+- timestamp: '2026-06-05T07:40:50.381734+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:24.689082+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 7f77042353a267d3f7885c2c713b2e4b3c450ec4ba589282406ce6284322e0cf
+  source: bacteriovorax_medium.yaml
+merge_fingerprint: 7f77042353a267d3f7885c2c713b2e4b3c450ec4ba589282406ce6284322e0cf
+merged_from:
+- bacteriovorax_medium

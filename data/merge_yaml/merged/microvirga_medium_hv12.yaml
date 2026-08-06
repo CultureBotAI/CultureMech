@@ -3,6 +3,7 @@ name: microvirga_medium_hv12
 original_name: MICROVIRGA MEDIUM (HV12)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.4
 media_term:
@@ -31,8 +32,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 preparation_steps:
 - step_number: 1
@@ -58,6 +59,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MICROVIRGA MEDIUM (HV12)" to "microvirga_medium_hv12"
     for consistent matching
+- timestamp: '2026-06-05T07:41:33.854783+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:45.409312+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b084f1b5e60ae03456be6b33a1225f7066b00cc9ea120b9902172679bf9b4f22
+  source: microvirga_medium_hv12.yaml
 kg_microbe_match: mediadive.medium:74
 merge_fingerprint: b084f1b5e60ae03456be6b33a1225f7066b00cc9ea120b9902172679bf9b4f22
 merged_from:

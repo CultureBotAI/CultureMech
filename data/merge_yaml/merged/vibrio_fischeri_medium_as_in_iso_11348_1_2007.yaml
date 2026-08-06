@@ -3,6 +3,7 @@ name: vibrio_fischeri_medium_as_in_iso_11348_1_2007
 original_name: Vibrio fischeri medium as in ISO 11348-1:2007
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:
@@ -19,8 +20,8 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: NaH2PO4 x H2O
   term:
@@ -29,18 +30,18 @@ ingredients:
   concentration:
     value: '6.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000393
+  mediaingredientmech_chebi_term:
+    id: CHEBI:37585
     label: NaH2PO4 x H2O
 - preferred_term: K2HPO4 x 3 H2O
   term:
     id: CHEBI:131527
-    label: K2HPO4 x 3 H2O
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '2.75'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4 x 3 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -49,13 +50,13 @@ ingredients:
   concentration:
     value: '0.204'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: (NH4)2HPO4
   term:
     id: CHEBI:63051
-    label: (NH4)2HPO4
+    label: diammonium hydrogen phosphate
   concentration:
     value: '0.5'
     unit: G_PER_L
@@ -69,8 +70,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: glycerin
 - preferred_term: Casein peptone
   concentration:
@@ -116,6 +117,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Vibrio fischeri medium as in ISO 11348-1:2007" to "vibrio_fischeri_medium_as_in_iso_11348_1_2007"
     for consistent matching
-merge_fingerprint: 8dc1d13beda3b83f8af7e1c339e8a3b1708232153640062f7d29859dc6c1071c
+- timestamp: '2026-06-05T07:41:55.072060+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:37:36.151596+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:47:14.491319+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:02.544722+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 9aa5a63dec438e6c5207431b797d28baa5b359b35297e9ab1587ea1fd39f2339
+  source: vibrio_fischeri_medium_as_in_iso_11348_1_2007.yaml
+merge_fingerprint: 9aa5a63dec438e6c5207431b797d28baa5b359b35297e9ab1587ea1fd39f2339
 merged_from:
 - vibrio_fischeri_medium_as_in_iso_11348_1_2007

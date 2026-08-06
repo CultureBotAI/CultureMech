@@ -3,6 +3,7 @@ name: nutrient_rich_nr_medium
 original_name: Nutrient rich (NR) medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -61,6 +62,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Nutrient rich (NR) medium" to "nutrient_rich_nr_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:41:40.244226+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:51.810868+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 51f8545dc4c5aac85b113285cf8b22f21857ee2a8119ccd7553bdabba97f3de0
+  source: nutrient_rich_nr_medium.yaml
 merge_fingerprint: 51f8545dc4c5aac85b113285cf8b22f21857ee2a8119ccd7553bdabba97f3de0
 merged_from:
 - nutrient_rich_nr_medium

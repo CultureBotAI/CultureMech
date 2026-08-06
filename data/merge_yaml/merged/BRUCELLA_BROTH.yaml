@@ -1,87 +1,187 @@
-id: CultureMech:002886
+id: CultureMech:009933
 name: brucella_broth
-original_name: BRUCELLA BROTH
+original_name: Brucella Broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 7.0
-media_term:
-  preferred_term: JCM Medium J538
-  term:
-    id: mediadive.medium:J538
-    label: BRUCELLA BROTH
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=538'
 ingredients:
-- preferred_term: Pancreatic digest of casein
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Peptic digest of animal tissue
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Glucose
-  term:
-    id: CHEBI:17234
-    label: Glucose
+- preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
-    label: Glucose
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '2'
     unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
 - preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: NaHSO3
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
-    id: CHEBI:26709
-    label: NaHSO3
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: NaHSO3
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000838
+  notes: 'Properties: Defined component, Inorganic compound, Simple component'
+  term:
+    id: CHEBI:26709
     label: NaHSO3
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 7.0.
-- step_number: 2
-  action: MIX
-  description: 'Comment: Commercial Brucella broth (Becton & Dickinson or Oxoid) is
-    also available.'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26709
+    label: NaHSO3
+- preferred_term: Pancreatic digest of casein
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Peptic digest of animal tissue
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M540
+  term:
+    id: TOGO:M540
+    label: Brucella Broth
+notes: 'Source: https://togomedium.org/medium/M540
+
+  Original source: JCM - JCM_M538
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=538'
 applications:
 - Microbial cultivation
+references:
+- reference: PMID:10609610
+  year: 1999
+  notes: Primary literature source reporting Helicobacter pylori OMU89-362 growth
+    in Brucella broth supplemented with fetal bovine serum and hydrogen peroxide.
+variants:
+- name: brucella_broth_fbs_h2o2_helicobacter_pylori
+  description: Brucella broth condition used for Helicobacter pylori liquid growth,
+    with fetal bovine serum supplementation and hydrogen-peroxide detoxification of
+    the bisulfite-containing parent broth.
+  modifications:
+  - Supplement Brucella broth with 10% fetal bovine serum.
+  - Add hydrogen peroxide at sublethal concentrations, with maximum growth stimulation
+    reported at 3.5 mM H2O2.
+  - Incubate microaerobically at 37 C with shaking; source measured OD620 and viable
+    CFU after 24 h.
+  purpose: Capture strain-specific Helicobacter pylori growth evidence under the shared
+    Brucella broth parent while modeling serum and H2O2 as study-specific variant
+    conditions.
+  evidence:
+  - reference: PMID:10609610
+    supports: SUPPORT
+    snippet: enhanced the growth of Helicobacter pylori in Brucella broth supplemented
+      with 10% fetal bovine serum (BB/FBS)
+    explanation: The source uses the same Brucella broth basal formulation, supplemented
+      with fetal bovine serum and hydrogen peroxide, to measure Helicobacter pylori
+      OMU89-362 growth.
 curation_history:
-- timestamp: '2026-01-26T17:53:16.873633Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J538'
-- timestamp: '2026-03-13T06:19:16.337060Z'
+- timestamp: '2026-01-27T06:35:55.259218Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M540'
+- timestamp: '2026-01-28T19:48:12.414349Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:10.068964Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002886'
+  notes: 'Assigned stable identifier: CultureMech:009933'
 - timestamp: '2026-03-17T06:29:51.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:29.875593+00:00'
+- timestamp: '2026-03-17T19:46:29.004912+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BRUCELLA BROTH" to "brucella_broth" for consistent
+  notes: Normalized name from "Brucella Broth" to "brucella_broth" for consistent
     matching
-merge_fingerprint: a969823cd9d40a372ce1506f81a452d18854983101511c491745e5d21e8447c2
+- timestamp: '2026-05-05T00:00:00+00:00'
+  curator: literature_review_manual
+  action: ADDED_GROWTH_EVIDENCE
+  notes: Added Helicobacter pylori OMU89-362 Brucella broth growth evidence and FBS/H2O2
+    variant from PMID:10609610.
+- timestamp: '2026-06-05T07:40:42.331227+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T00:58:02.679509+00:00'
+  curator: curate_organism_culture_type.py
+  action: SET_ORGANISM_CULTURE_TYPE
+  notes: 'Inferred isolate: 1 specific strain(s) named, no community signal (#142)'
+  changes: Set organism_culture_type=isolate (was unset)
+- timestamp: '2026-08-06T03:05:17.088817+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 773cc09417493598852ca397d293777b7b84204bb5aefd1f56f0705860190173
+  source: TOGO_M540_Brucella_Broth.yaml
+organism_culture_type: isolate
+target_organisms:
+- preferred_term: Helicobacter pylori
+  term:
+    id: NCBITaxon:210
+    label: Helicobacter pylori
+  strain: OMU89-362
+  growth_metrics:
+  - max_od600: 0.724
+    max_od_wavelength_nm: 620
+    temperature_celsius: 37
+    measurement_conditions: Bisulfite-less Brucella broth supplemented with 10% fetal
+      bovine serum, pretreated with 3.5 mM H2O2 and catalase; source compared this
+      condition with standard bisulfite-containing Brucella broth and H2O2-supplemented
+      Brucella broth.
+    evidence:
+    - reference: PMID:10609610
+      supports: SUPPORT
+      snippet: bacteria grew to a similar extent in bisulfite-less Brucella broth
+        (BLBB0)/FBS compared to the bacterial growth in BHIB/FBS
+      explanation: The source abstract supports growth in the Brucella-broth-derived
+        variant; manual full-text review provides the OD620 value and identifies Helicobacter
+        pylori OMU89-362 as the primary strain in the experiment.
+    is_max_attainment: true
+  evidence:
+  - reference: PMID:10609610
+    supports: SUPPORT
+    snippet: The enhancement was evident at 0.1 mM HPOx and reached a maximun at 3.5
+      mM.
+    explanation: The source names Helicobacter pylori OMU89-362 and directly reports
+      enhanced growth in Brucella broth supplemented with fetal bovine serum and hydrogen
+      peroxide.
+merge_fingerprint: 773cc09417493598852ca397d293777b7b84204bb5aefd1f56f0705860190173
 merged_from:
-- brucella_broth
+- TOGO_M540_Brucella_Broth

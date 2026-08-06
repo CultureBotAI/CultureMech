@@ -3,6 +3,7 @@ name: hemin_medium_for_mycobacterium
 original_name: HEMIN MEDIUM FOR MYCOBACTERIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 645a
@@ -18,8 +19,8 @@ ingredients:
   concentration:
     value: '900'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Middlebrook 7H10 agar
 - preferred_term: OADC Enrichment
   concentration:
@@ -32,8 +33,8 @@ ingredients:
   concentration:
     value: '60'
     unit: MICROMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
     label: Haemin
 preparation_steps:
 - step_number: 1
@@ -60,6 +61,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HEMIN MEDIUM FOR MYCOBACTERIUM" to "hemin_medium_for_mycobacterium"
     for consistent matching
+- timestamp: '2026-06-05T07:41:08.408425+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:37.482612+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 26087a915b28f627d30f665ec1bc8dc35089d7ae8c42cdc8d22e14efee4cc5a4
+  source: hemin_medium_for_mycobacterium.yaml
 merge_fingerprint: 26087a915b28f627d30f665ec1bc8dc35089d7ae8c42cdc8d22e14efee4cc5a4
 merged_from:
 - hemin_medium_for_mycobacterium

@@ -3,6 +3,7 @@ name: 3n_bbm_v_recipe_for_customer_orders
 original_name: 3N-BBM+V recipe for customer orders
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: CCAP Medium C15
@@ -28,8 +29,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -38,28 +39,28 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: K2HPO4 x 3 H2O
   term:
     id: CHEBI:131527
-    label: K2HPO4 x 3 H2O
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4 x 3 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '23.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NaCl
   term:
@@ -68,8 +69,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Agar
   term:
@@ -79,8 +80,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Na2-EDTA
   term:
@@ -89,8 +90,8 @@ ingredients:
   concentration:
     value: '0.75'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
     label: Na2-EDTA
 - preferred_term: FeCl3 x 6 H2O
   term:
@@ -99,8 +100,8 @@ ingredients:
   concentration:
     value: '0.097'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000218
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86254
     label: FeCl3 x 6 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -109,8 +110,8 @@ ingredients:
   concentration:
     value: '0.041'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
@@ -119,8 +120,8 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
     label: ZnCl2
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -129,8 +130,8 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: Na2 MoO4 x 2 H2O
   term:
@@ -139,8 +140,8 @@ ingredients:
   concentration:
     value: '0.004'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2 MoO4 x 2 H2O
 - preferred_term: Thiamine hydrochloride
   term:
@@ -149,16 +150,19 @@ ingredients:
   concentration:
     value: '1.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine hydrochloride
 - preferred_term: Cyanocobalamine
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001039
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Cyanocobalamine
+  term:
+    id: CHEBI:17439
+    label: ''
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -199,10 +203,38 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "3N-BBM+V recipe for customer orders" to "3n_bbm_v_recipe_for_customer_orders"
     for consistent matching
-- timestamp: '2026-04-17T06:29:10.747354+00:00'
+- timestamp: '2026-06-05T07:40:15.821212+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 14 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:42.555350+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:34.107432+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: 3n_bbm_v, 3n_bbm_v_recipe_for_customer_orders'
+- timestamp: '2026-08-06T03:04:34.107479+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 018962bbf493a61fc9aa477ded032fd59ba9b0d98f0d769c006ce538acb2d793
+  source: 3n_bbm_v.yaml, 3n_bbm_v_recipe_for_customer_orders.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/3n_bbm_v.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:000321
+  name: 3n_bbm_v
+  notes: Reviewed 3N-BBM+V concentration variant; child is a customer-order formulation
+    with lower major salt/phosphate concentrations under the same recognizable base
+    medium.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Reviewed 3N-BBM+V records; child keeps the same defined agar base but lowers CaCl2,
+  MgSO4, K2HPO4, KH2PO4, and NaCl from the parent stock-like levels while NaNO3, agar,
+  EDTA, trace metals, thiamine, and cyanocobalamine remain unchanged.
 synonyms:
 - name: 3n_bbm_v
   source: MediaDive
@@ -213,4 +245,4 @@ categories:
 merged_from:
 - 3n_bbm_v
 - 3n_bbm_v_recipe_for_customer_orders
-merge_fingerprint: 850d7a1d70a21faae4396b666aca6b41f30463251281701614154c27854e789e
+merge_fingerprint: 018962bbf493a61fc9aa477ded032fd59ba9b0d98f0d769c006ce538acb2d793

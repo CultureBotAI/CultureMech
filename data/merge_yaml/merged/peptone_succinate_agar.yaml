@@ -3,6 +3,7 @@ name: peptone_succinate_agar
 original_name: Peptone-SUCCINATE AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
@@ -16,12 +17,12 @@ ingredients:
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -30,8 +31,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: MnSO4 x H2O
   term:
@@ -40,8 +41,8 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
     label: MnSO4 x H2O
 - preferred_term: FeCl3 x 6 H2O
   term:
@@ -50,8 +51,8 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000218
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86254
     label: FeCl3 x 6 H2O
 - preferred_term: Succinic acid
   term:
@@ -60,8 +61,8 @@ ingredients:
   concentration:
     value: '1.68'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000373
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15741
     label: Succinic acid
 - preferred_term: Peptone
   concentration:
@@ -74,8 +75,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -101,10 +102,36 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Peptone-SUCCINATE AGAR" to "peptone_succinate_agar"
     for consistent matching
-- timestamp: '2026-04-17T06:29:30.161583+00:00'
+- timestamp: '2026-06-05T07:40:25.215326+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:45.479417+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:56.849632+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_653_Peptone-SUCCINATE_AGAR, peptone_succinate_agar'
+- timestamp: '2026-08-06T03:04:56.849677+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint c22c6ad35cc321dc63686a51937f074155d58436b9c974cbbb5df45abe0d0a38
+  source: KOMODO_653_Peptone-SUCCINATE_AGAR.yaml, peptone_succinate_agar.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/peptone_succinate_agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001791
+  name: peptone_succinate_agar
+  notes: KOMODO record states DSMZ Medium 653 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 categories:
 - bacterial
 merged_from:

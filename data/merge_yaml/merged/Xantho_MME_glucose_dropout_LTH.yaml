@@ -1,6 +1,7 @@
 id: CultureMech:015788
 name: Xantho MME glucose dropout LTH
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Potassium phosphate dibasic
@@ -51,7 +52,7 @@ ingredients:
     unit: G_PER_L
 description: Defined media for Xanthomonas without leucine, tryp, and his
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: Xantho MME glucose dropout LTH
@@ -65,19 +66,28 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015788'
-- timestamp: '2026-04-17T06:30:30.323227+00:00'
+- timestamp: '2026-05-16T09:04:44.006232+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:06.433961+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: mmx_dropout, xantho_mme_glucose_dropout_lth'
+- timestamp: '2026-08-06T03:06:06.433996+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint f7dade92aaf7b69008ce47266fafd7e425096151adcbe49ab530982c0396e83b
+  source: mmx_dropout.yaml, xantho_mme_glucose_dropout_lth.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 original_name: Xantho MME glucose dropout LTH
 synonyms:
 - name: MMX dropout
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 categories:
-- SPECIALIZED
+- specialized
 merged_from:
 - mmx_dropout
 - xantho_mme_glucose_dropout_lth

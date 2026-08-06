@@ -3,6 +3,7 @@ name: melissococcus_plutonius_medium
 original_name: MELISSOCOCCUS PLUTONIUS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.6
 media_term:
@@ -15,12 +16,12 @@ ingredients:
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '13.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Yeast extract
   concentration:
@@ -33,8 +34,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Starch
   term:
@@ -43,8 +44,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
     label: Starch
 - preferred_term: Cysteine hydrochloride
   term:
@@ -53,8 +54,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
     label: Cysteine hydrochloride
 preparation_steps:
 - step_number: 1
@@ -81,6 +82,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MELISSOCOCCUS PLUTONIUS MEDIUM" to "melissococcus_plutonius_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:41:30.463203+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:06.571415+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:44.451696+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint bf85db0374c3e2aa5eceba83c41cc3f05f6a6f54e92e7c50168a51626a8b614b
+  source: melissococcus_plutonius_medium.yaml
 merge_fingerprint: bf85db0374c3e2aa5eceba83c41cc3f05f6a6f54e92e7c50168a51626a8b614b
 merged_from:
 - melissococcus_plutonius_medium

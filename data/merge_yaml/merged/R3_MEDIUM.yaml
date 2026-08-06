@@ -3,6 +3,7 @@ name: r3_medium
 original_name: R3 medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.8
 media_term:
@@ -25,12 +26,6 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -38,18 +33,18 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -58,18 +53,18 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Na pyruvate
   term:
     id: CHEBI:50144
-    label: Na pyruvate
+    label: sodium pyruvate
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
     label: Na pyruvate
 applications:
 - Microbial cultivation
@@ -94,10 +89,49 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "R3 medium" to "r3_medium" for consistent matching
-- timestamp: '2026-04-17T06:29:35.679092+00:00'
+- timestamp: '2026-06-05T07:40:28.264611+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:28.815045+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:46:46.554407+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:03.102219+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_966_R3_medium, medium_966_modified_for_dsm_17972, r3_medium'
+- timestamp: '2026-08-06T03:05:03.102259+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 23ca6b0d1ff0a98d48f220a815f5b528f2120f14193763b1b720d60df01aab84
+  source: KOMODO_966_R3_medium.yaml, medium_966_modified_for_dsm_17972.yaml, r3_medium.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_966_modified_for_dsm_17972.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006923
+  name: medium_966_modified_for_dsm_17972
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/r3_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002147
+  name: r3_medium
+  notes: KOMODO record states DSMZ Medium 966 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 synonyms:
 - name: medium_966_modified_for_dsm_17972
   source: KOMODO
@@ -109,4 +143,4 @@ merged_from:
 - KOMODO_966_R3_medium
 - medium_966_modified_for_dsm_17972
 - r3_medium
-merge_fingerprint: d0a55330002c9d917cf5c8b80032912fcfbda91661f0e76419551dd9d2ee0c83
+merge_fingerprint: 23ca6b0d1ff0a98d48f220a815f5b528f2120f14193763b1b720d60df01aab84

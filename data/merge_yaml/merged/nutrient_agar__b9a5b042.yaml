@@ -1,0 +1,162 @@
+id: CultureMech:008999
+name: nutrient_agar
+original_name: Nutrient Agar
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: DI Water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Peptone
+  term:
+    id: MICRO:0000178
+    label: peptone
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (TM Media, BD, Sigma-Aldrich, HiMedia) Nutrient
+      Agar
+    catalog_number: TM Media, BD 213000
+    product_url: https://microbenotes.com/nutrient-agar/
+  notes: Enzymatic digest of protein, provides nitrogen, amino acids, and peptides;
+    Constituent of Nutrient Agar commercial product
+- preferred_term: Yeast extract
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (TM Media, BD, Sigma-Aldrich, HiMedia) Nutrient
+      Agar
+    catalog_number: TM Media, BD 213000
+    product_url: https://microbenotes.com/nutrient-agar/
+  notes: Provides B-complex vitamins and additional nutrients; Constituent of Nutrient
+    Agar commercial product
+- preferred_term: Beef extract
+  term:
+    id: FOODON:03302088
+    label: beef extract
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (TM Media, BD, Sigma-Aldrich, HiMedia) Nutrient
+      Agar
+    catalog_number: TM Media, BD 213000
+    product_url: https://microbenotes.com/nutrient-agar/
+  notes: Aqueous extract of beef tissue, provides organic compounds and minerals;
+    Constituent of Nutrient Agar commercial product
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (TM Media, BD, Sigma-Aldrich, HiMedia) Nutrient
+      Agar
+    catalog_number: TM Media, BD 213000
+    product_url: https://microbenotes.com/nutrient-agar/
+  notes: Maintains osmotic equilibrium; Constituent of Nutrient Agar commercial product
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (TM Media, BD, Sigma-Aldrich, HiMedia) Nutrient
+      Agar
+    catalog_number: TM Media, BD 213000
+    product_url: https://microbenotes.com/nutrient-agar/
+  notes: Solidifying agent. Omit for Nutrient Broth (liquid variant); Constituent
+    of Nutrient Agar commercial product
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Beef Extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2417
+  term:
+    id: TOGO:M2417
+    label: Nutrient Agar
+notes: 'Source: https://togomedium.org/medium/M2417
+
+  Original URL: https://www.atcc.org/~/media/E6FA2163B72E4DCD880719A2612F2C92.ashx
+
+
+  Commercial Product: Nutrient Agar
+
+  Supplier: Multiple suppliers (TM Media, BD, Sigma-Aldrich, HiMedia)
+
+  Catalog: TM Media, BD 213000
+
+  Source: https://microbenotes.com/nutrient-agar/
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.485839Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2417'
+- timestamp: '2026-03-13T06:20:01.902885Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008999'
+- timestamp: '2026-03-17T19:46:20.652220+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Nutrient Agar" to "nutrient_agar" for consistent matching
+- timestamp: '2026-08-06T03:05:10.668429+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M2192_Nutrient_Agar_Broth, TOGO_M2417_Nutrient_Agar, TOGO_M3212_Nutrient_agar'
+- timestamp: '2026-08-06T03:05:10.668477+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint b9a5b042f8f8838f41822a56981307ee2c5fea28b29dc0ba95064e5bdc05b160
+  source: TOGO_M2192_Nutrient_Agar_Broth.yaml, TOGO_M2417_Nutrient_Agar.yaml, TOGO_M3212_Nutrient_agar.yaml
+kg_microbe_match: mediadive.medium:101
+synonyms:
+- name: nutrient_agar_broth
+  source: TOGO
+  source_id: TOGO:M2192
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- TOGO_M2192_Nutrient_Agar_Broth
+- TOGO_M2417_Nutrient_Agar
+- TOGO_M3212_Nutrient_agar
+merge_fingerprint: b9a5b042f8f8838f41822a56981307ee2c5fea28b29dc0ba95064e5bdc05b160

@@ -1,50 +1,33 @@
-id: CultureMech:008816
+id: CultureMech:003730
 name: friis_medium
-original_name: Friis medium
+original_name: FRIIS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ingredients:
-- preferred_term: Horse serum
-  concentration:
-    value: '40'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Swine serum
-  concentration:
-    value: '40'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source'
-- preferred_term: Basal broth
-  concentration:
-    value: '320'
-    unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '180'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Bacitracin
-  concentration:
-    value: '800'
-    unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Defined component, Simple component'
-- preferred_term: Meticillin
-  concentration:
-    value: '800'
-    unit: G_PER_L
-  notes: 'Role: Antimicrobial agent'
-- preferred_term: Water
-  concentration:
-    value: '2900.0'
-    unit: G_PER_L
-  notes: 'Role: Solvating media [Merged 4 duplicates: 1400.0, 500.0, 500.0, 500.0]'
+ph_value: 7.4
+media_term:
+  preferred_term: KOMODO Medium 1078
   term:
-    id: CHEBI:15377
-    label: Water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Water
+    id: komodo.medium:1078
+    label: FRIIS medium
+notes: 'Source: KOMODO ModelSEED | ID: 1078 | DSMZ Medium: 1078 (mediadive.medium:1078)
+  | Aerobic: No
+
+
+  Commercial Product: Brain Heart Infusion
+
+  Supplier: Difco/BD
+
+  Catalog: 237500
+
+  Source: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
+ingredients:
 - preferred_term: Calf brains
   term:
     id: UBERON:0000955
@@ -141,168 +124,201 @@ ingredients:
     synonym_type: EXACT
   - synonym_text: sodium phosphate dibasic
     synonym_type: EXACT
-- preferred_term: Bacto pleuropneumonia-like organisms (PPLO) broth without crystal
-    violet
+- preferred_term: PPLO broth
   concentration:
-    value: '16'
+    value: '5.40373'
     unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
-- preferred_term: Stock A
+- preferred_term: Porcine serum
   concentration:
-    value: '25'
+    value: '30'
     unit: G_PER_L
-- preferred_term: Stock B
+- preferred_term: Yeast extract
   concentration:
-    value: '25'
+    value: '0.83'
     unit: G_PER_L
-- preferred_term: MgSO4 . 7H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+- preferred_term: Phenol red
   term:
-    id: CHEBI:32599
-    label: ''
-- preferred_term: NaCl
+    id: CHEBI:31991
+    label: Phenol red
   concentration:
-    value: '80'
+    value: '0.00133'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31991
+    label: Phenol red
+- preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
     label: NaCl
-- preferred_term: MgCl2 . 6H2O
   concentration:
-    value: '1'
+    value: '160'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:86345
-    label: ''
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
 - preferred_term: KCl
-  concentration:
-    value: '4'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
   term:
     id: CHEBI:32588
-    label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
     label: KCl
-- preferred_term: CaCl2 (anhydrous)
   concentration:
-    value: '1.4'
+    value: '8'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-- preferred_term: KH2PO4
-  concentration:
-    value: '0.6'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: KCl
+- preferred_term: MgSO4 x 7 H2O
   term:
-    id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
-- preferred_term: Na2HPO4 . 12H2O
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
   concentration:
-    value: '1.5'
+    value: '2'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '3.7'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
+    label: CaCl2
+- preferred_term: Na2HPO4 x 2 H2O
   term:
     id: CHEBI:34683
-    label: ''
-media_term:
-  preferred_term: TOGO Medium M2228
+    label: Na2HPO4 x 2 H2O
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+- preferred_term: KH2PO4
   term:
-    id: TOGO:M2228
-    label: Friis medium
-notes: 'Source: https://togomedium.org/medium/M2228
-
-
-  Commercial Product: Brain Heart Infusion
-
-  Supplier: Difco/BD
-
-  Catalog: 237500
-
-  Source: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-
-  Accessed: 2026-03-28
-
-
-  Constituent composition researched from product specification.'
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  concentration:
+    value: '1.2'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
 applications:
 - Microbial cultivation
+variants:
+- name: friis_medium_mycoplasma_hyopneumoniae_isolate_growth
+  description: Modified Friis medium condition supporting growth of seven Mycoplasma
+    hyopneumoniae isolates measured by ATP luminometry.
+  modifications:
+  - Use modified Friis medium as described by Friis 1975.
+  - Incubate slowly shaken Mycoplasma hyopneumoniae cultures; source reports isolate-dependent
+    behavior across five Friis medium batches.
+  purpose: Capture isolate-level Mycoplasma hyopneumoniae growth evidence under the
+    parent Friis medium record.
+  evidence:
+  - reference: PMID:20851152
+    supports: SUPPORT
+    snippet: Doubling times (Tds) of the isolates grown in slowly shaken cultures
+      varied between 4.8 and 7.8 h.
+    explanation: The source directly measured growth kinetics for seven named Mycoplasma
+      hyopneumoniae isolates in modified Friis medium, supporting this condition as
+      a variant of the Friis parent medium.
 curation_history:
-- timestamp: '2026-01-27T06:35:56.180773Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2228'
-- timestamp: '2026-01-28T19:48:28.725827Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-09T08:04:47.617472+00:00'
-  curator: solution-migrator-v1.0
-  action: Migrated solutions from ingredients to solutions array
-  notes: Moved 3 solution(s) from ingredients
-- timestamp: '2026-03-13T03:09:18.350459Z'
-  curator: data-quality-cleanup-v1.0
-  action: Data quality fixes
-  notes: Merged 3 duplicate ingredient(s)
-- timestamp: '2026-03-13T06:20:00.459705Z'
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1078'
+- timestamp: '2026-02-03T11:19:11.121373'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1078
+- timestamp: '2026-03-13T06:19:21.743179Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:008816'
-- curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:54.567445'
-  action: Applied schema defaults and normalizations
-  notes: Added default solution name; Added default solution name; Added default solution
-    name
-- timestamp: '2026-03-17T06:30:26.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:003730'
+- timestamp: '2026-03-17T06:30:30.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:19.133337+00:00'
+- timestamp: '2026-03-17T19:45:36.019533+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Friis medium" to "friis_medium" for consistent matching
-solutions:
-- preferred_term: Phenol red solution
-  composition: []
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: pH indicator; Properties: Defined component, Organic compound, Solution'
-  name: Unknown solution
-- preferred_term: Solution 1
+  notes: Normalized name from "FRIIS medium" to "friis_medium" for consistent matching
+- timestamp: '2026-05-05T00:00:00+00:00'
+  curator: literature_review_manual
+  action: ADDED_GROWTH_EVIDENCE
+  notes: Added Mycoplasma hyopneumoniae isolate growth evidence from PMID:20851152
+    as a Friis medium variant.
+- timestamp: '2026-06-05T07:40:18.761300+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:43.409658+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T00:58:02.606017+00:00'
+  curator: curate_organism_culture_type.py
+  action: SET_ORGANISM_CULTURE_TYPE
+  notes: 'Inferred isolate: 1 specific strain(s) named, no community signal (#142)'
+  changes: Set organism_culture_type=isolate (was unset)
+- timestamp: '2026-08-06T03:04:39.435975+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_1078_FRIIS_medium, friis_medium'
+- timestamp: '2026-08-06T03:04:39.436047+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 8afd472e2509971b18c8af46fd2843dc3ce3ba9a5447c52d16094498da61fabe
+  source: KOMODO_1078_FRIIS_medium.yaml, friis_medium.yaml
+organism_culture_type: isolate
+target_organisms:
+- preferred_term: Mycoplasma hyopneumoniae
   term:
-    id: mediadive.solution:6108
-    label: Solution 1
-  concentration:
-    value: '557'
-    unit: G_PER_L
-  notes: See mediadive_6108_Solution_1.yaml for composition
-  name: Unknown solution
-- preferred_term: Hanks' balanced salt solution
-  composition: []
-  concentration:
-    value: '2500'
-    unit: G_PER_L
-  name: Unknown solution
-merge_fingerprint: 43db11eddd01a3a0f9a2a53027cf69321bcadf793a38720890d04ad4a1d75e12
+    id: NCBITaxon:2099
+    label: Mesomycoplasma hyopneumoniae
+  strain: F1.12A; F5.6A; F6.12D; F7.2C; F12.6A; 13.7B; Mp143
+  growth_metrics:
+  - doubling_time_minutes: 288.0
+    measurement_conditions: Modified Friis medium; seven M. hyopneumoniae isolates
+      in slowly shaken cultures; source reports doubling times ranging from 4.8 to
+      7.8 h, with this value recording the lower bound.
+    evidence:
+    - reference: PMID:20851152
+      supports: SUPPORT
+      snippet: Doubling times (Tds) of the isolates grown in slowly shaken cultures
+        varied between 4.8 and 7.8 h.
+      explanation: Manual literature review found direct growth-kinetics evidence
+        for seven named Mycoplasma hyopneumoniae isolates in modified Friis medium.
+    is_max_attainment: false
+parent_media:
+  path: data/normalized_yaml/bacterial/friis_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000512
+  name: friis_medium
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and concentration
+    signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.
+categories:
+- bacterial
 merged_from:
-- TOGO_M2228_Friis_medium
+- KOMODO_1078_FRIIS_medium
+- friis_medium
+merge_fingerprint: 8afd472e2509971b18c8af46fd2843dc3ce3ba9a5447c52d16094498da61fabe

@@ -1,0 +1,54 @@
+id: CultureMech:009320
+name: serpulina_murdochii_medium
+original_name: Serpulina Murdochii Medium
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Columbia Agar Plates with 5% sheep blood (BBL 4354005)
+  notes: 'Properties: Undefined component, Complex component'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M2772
+  term:
+    id: TOGO:M2772
+    label: Serpulina Murdochii Medium
+notes: 'Source: https://togomedium.org/medium/M2772
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium840.pdf'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.275189Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2772'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Columbia Agar Plates with 5%
+    sheep blood (BBL 4354005)'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-03-13T06:20:05.603360Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009320'
+- timestamp: '2026-03-17T19:46:24.511988+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Serpulina Murdochii Medium" to "serpulina_murdochii_medium"
+    for consistent matching
+- timestamp: '2026-05-16T09:03:15.989022+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:05:13.857103+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 05379568db7e90a5bd019955fcab8248dee952f1256b2bcb62cd470256f62a6c
+  source: TOGO_M2772_Serpulina_Murdochii_Medium.yaml
+merge_fingerprint: 05379568db7e90a5bd019955fcab8248dee952f1256b2bcb62cd470256f62a6c
+merged_from:
+- TOGO_M2772_Serpulina_Murdochii_Medium

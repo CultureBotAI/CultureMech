@@ -3,6 +3,7 @@ name: gyp_glucose_yeast_peptone_medium
 original_name: GYP GLUCOSE-YEAST-Peptone medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 852
@@ -19,8 +20,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Yeast extract
   concentration:
@@ -33,12 +34,12 @@ ingredients:
 - preferred_term: Na-acetate
   term:
     id: CHEBI:32954
-    label: Na-acetate
+    label: sodium acetate
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
     label: Na-acetate
 - preferred_term: Agar
   term:
@@ -48,8 +49,8 @@ ingredients:
     value: '10'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -58,8 +59,8 @@ ingredients:
   concentration:
     value: '40'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: MnSO4 x 4 H2O
   term:
@@ -68,8 +69,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000711
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86358
     label: MnSO4 x 4 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -78,8 +79,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: NaCl
   term:
@@ -88,8 +89,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 applications:
 - Microbial cultivation
@@ -115,14 +116,82 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "GYP GLUCOSE-YEAST-Peptone medium" to "gyp_glucose_yeast_peptone_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:30:05.446057+00:00'
+- timestamp: '2026-06-05T07:41:06.895406+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:59.232186+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:36.692328+00:00'
   curator: recipe-merger
   action: Merged 10 duplicate recipes into canonical record
   notes: 'Sources: gyp_glucose_yeast_peptone_medium, medium_852_modified_for_dsm_45022,
     medium_852_modified_for_dsm_45023, medium_852_modified_for_dsm_45025, medium_852_modified_for_dsm_45026,
     medium_852_modified_for_dsm_45027, medium_852_modified_for_dsm_45029, medium_852_modified_for_dsm_45031,
     medium_852_modified_for_dsm_45032, gyp_glucose_yeast_peptone_medium'
+- timestamp: '2026-08-06T03:05:36.692402+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 10 source recipe(s) on fingerprint a64d67ec0efde2bdaf9d9139b8160d65c98e694d16f5a0cf4a48380bec14c096
+  source: gyp_glucose_yeast_peptone_medium.yaml, medium_852_modified_for_dsm_45022.yaml,
+    medium_852_modified_for_dsm_45023.yaml, medium_852_modified_for_dsm_45025.yaml,
+    medium_852_modified_for_dsm_45026.yaml, medium_852_modified_for_dsm_45027.yaml,
+    medium_852_modified_for_dsm_45029.yaml, medium_852_modified_for_dsm_45031.yaml,
+    medium_852_modified_for_dsm_45032.yaml, gyp_glucose_yeast_peptone_medium.yaml
 ph_value: 6.8
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_852_modified_for_dsm_45022.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006660
+  name: medium_852_modified_for_dsm_45022
+  notes: Same ingredient and concentration signature; reviewed as duplicate DSMZ Medium
+    852/GYP source record.
+- path: data/normalized_yaml/bacterial/medium_852_modified_for_dsm_45023.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006661
+  name: medium_852_modified_for_dsm_45023
+  notes: Same ingredient and concentration signature; reviewed as duplicate DSMZ Medium
+    852/GYP source record.
+- path: data/normalized_yaml/bacterial/medium_852_modified_for_dsm_45025.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006662
+  name: medium_852_modified_for_dsm_45025
+  notes: Same ingredient and concentration signature; reviewed as duplicate DSMZ Medium
+    852/GYP source record.
+- path: data/normalized_yaml/bacterial/medium_852_modified_for_dsm_45026.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006663
+  name: medium_852_modified_for_dsm_45026
+  notes: Same ingredient and concentration signature; reviewed as duplicate DSMZ Medium
+    852/GYP source record.
+- path: data/normalized_yaml/bacterial/medium_852_modified_for_dsm_45027.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006664
+  name: medium_852_modified_for_dsm_45027
+  notes: Same ingredient and concentration signature; reviewed as duplicate DSMZ Medium
+    852/GYP source record.
+- path: data/normalized_yaml/bacterial/medium_852_modified_for_dsm_45029.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006665
+  name: medium_852_modified_for_dsm_45029
+  notes: Same ingredient and concentration signature; reviewed as duplicate DSMZ Medium
+    852/GYP source record.
+- path: data/normalized_yaml/bacterial/medium_852_modified_for_dsm_45031.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006666
+  name: medium_852_modified_for_dsm_45031
+  notes: Same ingredient and concentration signature; reviewed as duplicate DSMZ Medium
+    852/GYP source record.
+- path: data/normalized_yaml/bacterial/medium_852_modified_for_dsm_45032.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006667
+  name: medium_852_modified_for_dsm_45032
+  notes: Same ingredient and concentration signature; reviewed as duplicate DSMZ Medium
+    852/GYP source record.
 synonyms:
 - name: medium_852_modified_for_dsm_45022
   source: KOMODO

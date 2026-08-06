@@ -1,95 +1,146 @@
-id: CultureMech:002650
+id: CultureMech:009403
 name: lactobacillus_pontis_medium
-original_name: LACTOBACILLUS PONTIS MEDIUM
+original_name: Lactobacillus Pontis Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 6.5
-media_term:
-  preferred_term: JCM Medium J292
-  term:
-    id: mediadive.medium:J292
-    label: LACTOBACILLUS PONTIS MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=292'
 ingredients:
-- preferred_term: Lactobacilli MRS broth
+- preferred_term: Distilled water
+  concentration:
+    value: '197.0'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component [Merged 3 duplicates: 1.0, 100.0, 96.0]'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Lactobacilli MRS broth (BD-Difco)
   concentration:
     value: '55'
     unit: G_PER_L
+  notes: 'Properties: Undefined component'
 - preferred_term: Maltose
-  term:
-    id: CHEBI:17306
-    label: Maltose
   concentration:
-    value: '100'
+    value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000591
-    label: Maltose
-- preferred_term: L-Cysteine HCl x H2O
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+  term:
+    id: CHEBI:18167
+    label: alpha-maltose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18167
+    label: alpha-maltose
+- preferred_term: L--Cysteine・HCl・H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
-  concentration:
-    value: '33.3333'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
-    label: L-Cysteine HCl x H2O
+    label: ''
 - preferred_term: Hemin chloride
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
+    compound'
   term:
     id: CHEBI:50385
-    label: Hemin chloride
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
-    label: Hemin chloride
+    label: hemin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
+    label: hemin
 - preferred_term: Triethanolamine
-  term:
-    id: CHEBI:28621
-    label: Triethanolamine
   concentration:
     value: '4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000660
-    label: Triethanolamine
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 6.5.
-- step_number: 2
-  action: COOL
-  description: After autoclaving, cool to 50C and add aseptically 18 ml Maltose-hemin
-    solution.
-- step_number: 3
-  action: FILTER_STERILIZE
-  description: Filter-sterilize.
-- step_number: 4
-  action: FILTER_STERILIZE
-  description: After filter-sterilizing, store at 4C.
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Organic compound'
+  term:
+    id: CHEBI:28621
+    label: triethanolamine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28621
+    label: triethanolamine
+media_term:
+  preferred_term: TOGO Medium M286
+  term:
+    id: TOGO:M286
+    label: Lactobacillus Pontis Medium
+notes: 'Source: https://togomedium.org/medium/M286
+
+  Original source: JCM - JCM_M292
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=292'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:16.200597Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J292'
-- timestamp: '2026-03-13T06:19:14.772353Z'
+- timestamp: '2026-01-27T06:35:54.766560Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M286'
+- timestamp: '2026-01-28T19:48:09.778900Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:15.853690+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+- timestamp: '2026-03-13T03:08:43.129743Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:06.051512Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002650'
-- timestamp: '2026-03-17T06:30:51.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:009403'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:29:45.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:28.075033+00:00'
+- timestamp: '2026-03-17T19:46:24.995843+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "LACTOBACILLUS PONTIS MEDIUM" to "lactobacillus_pontis_medium"
+  notes: Normalized name from "Lactobacillus Pontis Medium" to "lactobacillus_pontis_medium"
     for consistent matching
-merge_fingerprint: 899ad629eef60c5363119daad3c8bfb95679aaf4d1619c5c9a050b2de6ca6fff
+- timestamp: '2026-05-16T09:03:16.196842+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:39.464181+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:14.071848+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 76c937085d5ed5c22d3c9491ec47277b3c2f29000ac6df72297cfd25c69793a6
+  source: TOGO_M286_Lactobacillus_Pontis_Medium.yaml
+solutions:
+- preferred_term: Maltose--hemin solution
+  composition: []
+  concentration:
+    value: '18'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: Hemin solution (see below)
+  composition: []
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: 76c937085d5ed5c22d3c9491ec47277b3c2f29000ac6df72297cfd25c69793a6
 merged_from:
-- lactobacillus_pontis_medium
+- TOGO_M286_Lactobacillus_Pontis_Medium

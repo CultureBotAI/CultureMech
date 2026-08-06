@@ -3,6 +3,7 @@ name: fibrobacter_medium
 original_name: Fibrobacter medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4 . 7H2O
   concentration:
@@ -24,8 +25,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:32599
-    label: ''
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: Yeast extract
   concentration:
     value: '0.5'
@@ -40,9 +41,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2 . 2H2O
   concentration:
     value: '0.08'
@@ -60,9 +61,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: K2HPO4
   concentration:
@@ -73,9 +74,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -85,8 +86,8 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: (NH4)2SO4
   concentration:
@@ -97,9 +98,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: (NH4)2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 - preferred_term: Na2CO3
   concentration:
     value: '4'
@@ -109,9 +110,9 @@ ingredients:
   term:
     id: CHEBI:29377
     label: sodium carbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
-    label: Na2CO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
 - preferred_term: Cellobiose
   concentration:
     value: '4'
@@ -121,9 +122,9 @@ ingredients:
   term:
     id: CHEBI:17057
     label: cellobiose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001069
-    label: Cellobiose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17057
+    label: cellobiose
 - preferred_term: Tryptone (BD 211705)
   concentration:
     value: '1'
@@ -163,9 +164,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
-    label: Biotin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
+    label: biotin
 - preferred_term: p-Aminobenzoic acid
   concentration:
     value: '1'
@@ -174,9 +175,9 @@ ingredients:
   term:
     id: CHEBI:30753
     label: 4-aminobenzoic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
-    label: p-Aminobenzoic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
 - preferred_term: Thiamine . HCl
   concentration:
     value: '20'
@@ -187,6 +188,9 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:31345
+    label: ''
 - preferred_term: Riboflavin
   concentration:
     value: '20'
@@ -195,9 +199,9 @@ ingredients:
   term:
     id: CHEBI:17015
     label: riboflavin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
-    label: Riboflavin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
+    label: riboflavin
 - preferred_term: Nicotinamide
   concentration:
     value: '20'
@@ -207,9 +211,9 @@ ingredients:
   term:
     id: CHEBI:17154
     label: nicotinamide
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000539
-    label: Nicotinamide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17154
+    label: nicotinamide
 - preferred_term: Pyridoxal hydrochloride
   concentration:
     value: '20'
@@ -218,8 +222,8 @@ ingredients:
   term:
     id: CHEBI:131529
     label: Pyridoxal hydrochloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000417
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131529
     label: Pyridoxal hydrochloride
 - preferred_term: Pyridoxamine . 2HCl
   concentration:
@@ -235,9 +239,9 @@ ingredients:
   term:
     id: CHEBI:16494
     label: lipoic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000166
-    label: Lipoic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16494
+    label: lipoic acid
 - preferred_term: Cyanocobalamin
   concentration:
     value: '1'
@@ -246,9 +250,9 @@ ingredients:
   term:
     id: CHEBI:17439
     label: cyanocob(III)alamin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
-    label: Cyanocobalamin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
+    label: cyanocob(III)alamin
 - preferred_term: Na2MoO4 . 2H2O
   concentration:
     value: '0.03'
@@ -267,9 +271,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: FeSO4 . 7H2O
   concentration:
     value: '2'
@@ -386,9 +390,9 @@ ingredients:
   term:
     id: CHEBI:30772
     label: butyric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000471
-    label: n-Butyric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30772
+    label: butyric acid
 - preferred_term: Acetic acid
   concentration:
     value: '17'
@@ -398,9 +402,9 @@ ingredients:
   term:
     id: CHEBI:15366
     label: acetic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000342
-    label: Acetic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15366
+    label: acetic acid
 - preferred_term: n-Valeric acid
   concentration:
     value: '1'
@@ -410,9 +414,9 @@ ingredients:
   term:
     id: CHEBI:17418
     label: valeric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000303
-    label: n-Valeric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17418
+    label: valeric acid
 - preferred_term: Isovaleric acid
   concentration:
     value: '1'
@@ -422,9 +426,9 @@ ingredients:
   term:
     id: CHEBI:28484
     label: isovaleric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000305
-    label: Isovaleric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28484
+    label: isovaleric acid
 - preferred_term: Isobutyric acid
   concentration:
     value: '1'
@@ -434,9 +438,9 @@ ingredients:
   term:
     id: CHEBI:16135
     label: isobutyric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000286
-    label: Isobutyric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16135
+    label: isobutyric acid
 - preferred_term: Propionic acid
   concentration:
     value: '6'
@@ -446,9 +450,9 @@ ingredients:
   term:
     id: CHEBI:30768
     label: propionic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000366
-    label: Propionic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30768
+    label: propionic acid
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Simple component'
   term:
@@ -457,9 +461,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
-    label: NaOH
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
 media_term:
   preferred_term: TOGO Medium M2570
   term:
@@ -494,10 +498,10 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:54.583279'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2; Added default concentration
     for ingredient: Nitrogen; Added default concentration for ingredient: NaOH'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-02-06T05:10:24.149311Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
@@ -516,10 +520,10 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009139'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:56.518972'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name; Added default solution
     name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:01.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -529,6 +533,31 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Fibrobacter medium" to "fibrobacter_medium" for consistent
     matching
+- timestamp: '2026-05-16T09:03:31.991674+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:41:00.366497+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 23 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:43.582504+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:46:56.863011+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:34.396142+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint a17dc61951a14377f435aa57854abac27ed46faae2702065eefa93f65f2f90a0
+  source: fibrobacter_medium.yaml
 solutions:
 - preferred_term: Vitamin Solution
   term:
@@ -557,6 +586,6 @@ solutions:
     unit: G_PER_L
   notes: See mediadive_4622_VFA_solution.yaml for composition
   name: Unknown solution
-merge_fingerprint: 2b794398d30c46fd56908063ea1dec3a2efa4323fb6eda0d84c22cba58dc5db0
+merge_fingerprint: a17dc61951a14377f435aa57854abac27ed46faae2702065eefa93f65f2f90a0
 merged_from:
 - fibrobacter_medium

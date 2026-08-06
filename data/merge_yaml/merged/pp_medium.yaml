@@ -3,6 +3,7 @@ name: pp_medium
 original_name: PP-MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
@@ -28,8 +29,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Agar
   term:
@@ -38,8 +39,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -64,10 +65,46 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "PP-MEDIUM" to "pp_medium" for consistent matching
-- timestamp: '2026-04-17T06:29:27.742926+00:00'
+- timestamp: '2026-06-05T07:40:24.280514+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:53.855167+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_513_PP-MEDIUM, jcm_medium_no_323, nbrc702_medium, pp_medium'
+- timestamp: '2026-08-06T03:04:53.855226+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 4 source recipe(s) on fingerprint 88df04c26263b01464406dfed709fdab81b5158b8c1784610776b9a20a7237c8
+  source: KOMODO_513_PP-MEDIUM.yaml, jcm_medium_no_323.yaml, nbrc702_medium.yaml,
+    pp_medium.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/jcm_medium_no_323.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002681
+  name: jcm_medium_no_323
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/nbrc702_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000932
+  name: nbrc702_medium
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/pp_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001645
+  name: pp_medium
+  notes: KOMODO record states DSMZ Medium 513 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 synonyms:
 - name: jcm_medium_no_323
   source: MediaDive

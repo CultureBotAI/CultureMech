@@ -3,6 +3,7 @@ name: mueller_hinton_mh_difco_agar
 original_name: Mueller-Hinton (MH; Difco) agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Beef extract
@@ -35,13 +36,9 @@ ingredients:
     and thymine content critical for sulfonamide/trimethoprim testing; Constituent
     of Mueller-Hinton Agar commercial product
   synonyms:
-  - synonym_text:
-      synonym_text: casein hydrolysate
-      synonym_type: EXACT
+  - synonym_text: casein hydrolysate
     synonym_type: EXACT
-  - synonym_text:
-      synonym_text: acid casein hydrolysate
-      synonym_type: EXACT
+  - synonym_text: acid casein hydrolysate
     synonym_type: EXACT
 - preferred_term: Starch
   term:
@@ -106,10 +103,19 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Mueller-Hinton (MH; Difco) agar" to "mueller_hinton_mh_difco_agar"
     for consistent matching
-- timestamp: '2026-04-17T06:29:46.715431+00:00'
+- timestamp: '2026-05-17T07:07:33.023679+00:00'
+  curator: cleanup_residual_errors.py
+  action: CLEANUP_RESIDUAL_ERRORS
+  notes: R01_flatten_synonym_text=2
+- timestamp: '2026-08-06T03:05:14.177949+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M2984_Mueller-Hinton_broth, mueller_hinton_mh_difco_agar'
+- timestamp: '2026-08-06T03:05:14.177975+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 74d59ef2c52d2d4e66d596ad8d3aa3cc88552c4ca5b27793547dd98e6e330567
+  source: TOGO_M2984_Mueller-Hinton_broth.yaml, mueller_hinton_mh_difco_agar.yaml
 synonyms:
 - name: mueller_hinton_broth
   source: TOGO

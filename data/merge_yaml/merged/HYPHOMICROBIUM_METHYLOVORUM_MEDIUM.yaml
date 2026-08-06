@@ -3,6 +3,7 @@ name: hyphomicrobium_methylovorum_medium
 original_name: HYPHOMICROBIUM METHYLOVORUM MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 619
@@ -19,13 +20,13 @@ ingredients:
   concentration:
     value: '7.92'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000618
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17790
     label: Methanol
 - preferred_term: (NH4)2HPO4
   term:
     id: CHEBI:63051
-    label: (NH4)2HPO4
+    label: diammonium hydrogen phosphate
   concentration:
     value: '3'
     unit: G_PER_L
@@ -39,8 +40,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -49,8 +50,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -59,18 +60,18 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: MnSO4 x 1 H2O
   term:
     id: CHEBI:86360
-    label: MnSO4 x 1 H2O
+    label: manganese(II) sulfate
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000605
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86360
     label: MnSO4 x 1 H2O
 - preferred_term: Agar
   term:
@@ -79,8 +80,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Tap water
   term:
@@ -89,8 +90,8 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Tap water
 - preferred_term: Biotin
   term:
@@ -99,8 +100,8 @@ ingredients:
   concentration:
     value: '0.0002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Calcium pantothenate
   term:
@@ -109,8 +110,8 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium pantothenate
 - preferred_term: Folic acid
   term:
@@ -119,8 +120,8 @@ ingredients:
   concentration:
     value: '0.0002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
     label: Folic acid
 - preferred_term: Inositol
   term:
@@ -129,8 +130,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000421
+  mediaingredientmech_chebi_term:
+    id: CHEBI:24848
     label: Inositol
 - preferred_term: Niacin
   term:
@@ -139,8 +140,8 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
     label: Niacin
 - preferred_term: p-Aminobenzoic acid
   term:
@@ -149,8 +150,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
     label: p-Aminobenzoic acid
 - preferred_term: Pyridoxine hydrochloride
   term:
@@ -159,8 +160,8 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001016
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
     label: Pyridoxine hydrochloride
 - preferred_term: Riboflavin
   term:
@@ -169,8 +170,8 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
@@ -179,8 +180,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000160
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132751
     label: Thiamine-HCl x 2 H2O
 - preferred_term: Choline
   term:
@@ -189,8 +190,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000767
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15354
     label: Choline
 - preferred_term: Vitamin B12
   term:
@@ -199,8 +200,8 @@ ingredients:
   concentration:
     value: 2e-06
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 applications:
 - Microbial cultivation
@@ -226,13 +227,43 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HYPHOMICROBIUM METHYLOVORUM MEDIUM" to "hyphomicrobium_methylovorum_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:29.674574+00:00'
+- timestamp: '2026-06-05T07:40:24.979095+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 18 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:37:34.286991+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:46:45.401661+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:56.244617+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_619_HYPHOMICROBIUM_METHYLOVORUM_MEDIUM, hyphomicrobium_methylovorum_medium'
+- timestamp: '2026-08-06T03:04:56.244657+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 6b4e7fd3b6a333e5a7838e789dd1ba603a4aa72732b07e70d4a98a0ce923f549
+  source: KOMODO_619_HYPHOMICROBIUM_METHYLOVORUM_MEDIUM.yaml, hyphomicrobium_methylovorum_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/hyphomicrobium_methylovorum_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001749
+  name: hyphomicrobium_methylovorum_medium
+  notes: KOMODO record states DSMZ Medium 619 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 categories:
 - bacterial
 merged_from:
 - KOMODO_619_HYPHOMICROBIUM_METHYLOVORUM_MEDIUM
 - hyphomicrobium_methylovorum_medium
-merge_fingerprint: 36f577034b21fb3018c6615e186330398187ac32379f3dd973db952ae7bc83b5
+merge_fingerprint: 6b4e7fd3b6a333e5a7838e789dd1ba603a4aa72732b07e70d4a98a0ce923f549

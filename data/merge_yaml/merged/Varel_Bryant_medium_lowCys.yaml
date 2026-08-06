@@ -1,6 +1,7 @@
 id: CultureMech:015783
 name: Varel Bryant medium lowCys
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Potassium phosphate monobasic
@@ -117,7 +118,7 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 144-55-8; MW: 84.007'
 description: Defined medium for B.theta without carbon and low Cysteine concentration
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: Varel Bryant medium lowCys
@@ -131,19 +132,39 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015783'
-- timestamp: '2026-04-17T06:30:32.159990+00:00'
+- timestamp: '2026-05-16T09:04:43.981321+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:08.864967+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: varel_bryant_medium, varel_bryant_medium_lowcys'
+- timestamp: '2026-08-06T03:06:08.865014+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint a6ca772377e3c102fb1a639f9b58efa69b2a2127325e1fd1cd8817998a9f638d
+  source: varel_bryant_medium.yaml, varel_bryant_medium_lowcys.yaml
 data_quality_flags:
 - has_unmapped_ingredients
+parent_media:
+  path: data/normalized_yaml/specialized/varel_bryant_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:015771
+  name: Varel Bryant medium
+  notes: Reviewed FEBA Varel Bryant medium pair; lowCys record differs only in L-cysteine
+    concentration.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- L-Cysteine decreased from 8.25 mM to 3 mM while the Varel Bryant medium formulation
+  remains unchanged.
 original_name: Varel Bryant medium lowCys
 synonyms:
 - name: Varel Bryant medium
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 categories:
-- SPECIALIZED
+- specialized
 merged_from:
 - varel_bryant_medium
 - varel_bryant_medium_lowcys

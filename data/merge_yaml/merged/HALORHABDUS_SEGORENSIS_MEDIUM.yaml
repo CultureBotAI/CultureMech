@@ -1,112 +1,128 @@
-id: CultureMech:003322
+id: CultureMech:007537
 name: halorhabdus_segorensis_medium
-original_name: HALORHABDUS SEGORENSIS MEDIUM
-category: bacterial
+original_name: Halorhabdus Segorensis Medium
+category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 7.0
-media_term:
-  preferred_term: JCM Medium J973
-  term:
-    id: mediadive.medium:J973
-    label: HALORHABDUS SEGORENSIS MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=973'
 ingredients:
-- preferred_term: NaCl
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:26710
-    label: NaCl
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl
   concentration:
     value: '40.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: MgCl2 x 6 H2O
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:86345
-    label: MgCl2 x 6 H2O
-  concentration:
-    value: '203'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: MgCl2 x 6 H2O
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2・2H2O
   concentration:
     value: '29.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
-- preferred_term: KCl
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
-    id: CHEBI:32588
-    label: KCl
+    id: CHEBI:86158
+    label: ''
+- preferred_term: MgCl2・6H2O
+  concentration:
+    value: '203'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:86345
+    label: ''
+- preferred_term: KCl
   concentration:
     value: '7.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
-- preferred_term: Yeast extract
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Casamino acids
-  concentration:
-    value: '1'
-    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
   term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
-- preferred_term: Starch
-  term:
-    id: CHEBI:28017
-    label: Starch
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Soluble starch
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
-    label: Starch
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Dissolve MgCl2 x 6H2O in distilled water and bring volume to 500.0
-    ml. Separately dissolve the remaining components in 500 ml distilled water and
-    adjust pH to 7.0. For preparation of solid medium, add 20.0 g agar to the latter
-    solution. Autoclave the two solutions separately and combine them after autoclaving.
+  notes: 'Role: Carbon source; Properties: Undefined component'
+  term:
+    id: CHEBI:28017
+    label: ''
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Casamino acids (BD-Difco)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M1023
+  term:
+    id: TOGO:M1023
+    label: Halorhabdus Segorensis Medium
+notes: 'Source: https://togomedium.org/medium/M1023
+
+  Original source: JCM - JCM_M973
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=973'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:18.180122Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J973'
-- timestamp: '2026-01-28T19:48:10.304318Z'
+- timestamp: '2026-01-27T06:35:53.774395Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1023'
+- timestamp: '2026-01-28T19:48:38.530994Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:19:19.486702Z'
+- timestamp: '2026-03-13T06:19:49.483342Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:003322'
-- timestamp: '2026-03-17T06:29:47.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:007537'
+- timestamp: '2026-03-17T06:30:47.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:33.490831+00:00'
+- timestamp: '2026-03-17T19:46:07.825647+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALORHABDUS SEGORENSIS MEDIUM" to "halorhabdus_segorensis_medium"
+  notes: Normalized name from "Halorhabdus Segorensis Medium" to "halorhabdus_segorensis_medium"
     for consistent matching
-merge_fingerprint: 2dea97812bade89358719466253f029b47f73c48e5a80d21ae26f6c014c3d6db
+- timestamp: '2026-06-05T07:40:29.758388+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:24.396888+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 8e66a61919cf568998ac283574e450bde3c2eeb0a4fbc58e7ef0a4601d8eb1dd
+  source: TOGO_M1023_Halorhabdus_Segorensis_Medium.yaml
+merge_fingerprint: 8e66a61919cf568998ac283574e450bde3c2eeb0a4fbc58e7ef0a4601d8eb1dd
 merged_from:
-- halorhabdus_segorensis_medium
+- TOGO_M1023_Halorhabdus_Segorensis_Medium

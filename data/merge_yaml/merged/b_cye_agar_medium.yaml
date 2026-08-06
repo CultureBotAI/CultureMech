@@ -3,6 +3,7 @@ name: b_cye_agar_medium
 original_name: B-CYEα agar medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -51,9 +52,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: L-Cysteine hydrochloride
   concentration:
     value: '0.4'
@@ -96,6 +97,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "B-CYEα agar medium" to "b_cye_agar_medium" for consistent
     matching
+- timestamp: '2026-06-05T07:40:50.199046+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:24.534449+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 6493b27a9c03686f9ac101074fc4b4c9d592657af07f0b41c5dffb01320317c0
+  source: b_cye_agar_medium.yaml
 merge_fingerprint: 6493b27a9c03686f9ac101074fc4b4c9d592657af07f0b41c5dffb01320317c0
 merged_from:
 - b_cye_agar_medium

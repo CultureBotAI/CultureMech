@@ -3,6 +3,7 @@ name: rhodobacter_veldkampii_medium
 original_name: RHODOBACTER VELDKAMPII MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 867
@@ -20,12 +21,12 @@ ingredients:
 - preferred_term: Na-acetate
   term:
     id: CHEBI:32954
-    label: Na-acetate
+    label: sodium acetate
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
     label: Na-acetate
 - preferred_term: Vitamin B12
   term:
@@ -35,8 +36,8 @@ ingredients:
     value: '0.112'
     unit: G_PER_L
   notes: ' [Merged 3 duplicates: 0.002, 0.1, 0.01]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -45,8 +46,8 @@ ingredients:
   concentration:
     value: '0.543478'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: Na2S x 9 H2O
   term:
@@ -56,8 +57,8 @@ ingredients:
     value: '44.8148'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 14.8148, 30.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 - preferred_term: NaHCO3
   term:
@@ -66,8 +67,8 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: Resazurin
   term:
@@ -76,8 +77,8 @@ ingredients:
   concentration:
     value: '0.0111111'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: Ammonium chloride
   term:
@@ -86,8 +87,8 @@ ingredients:
   concentration:
     value: '13.4615'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Ammonium acetate
   term:
@@ -96,8 +97,8 @@ ingredients:
   concentration:
     value: '9.61539'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000701
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62947
     label: Ammonium acetate
 - preferred_term: Pyruvic acid sodium salt
   term:
@@ -116,8 +117,8 @@ ingredients:
   concentration:
     value: '9.61539'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000243
+  mediaingredientmech_chebi_term:
+    id: CHEBI:4167
     label: Dextrose
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -126,8 +127,8 @@ ingredients:
   concentration:
     value: '19.2308'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: KCl
   term:
@@ -136,18 +137,18 @@ ingredients:
   concentration:
     value: '13.4615'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '13.4615'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Riboflavin
   term:
@@ -156,8 +157,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
@@ -166,8 +167,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000160
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132751
     label: Thiamine-HCl x 2 H2O
 - preferred_term: Nicotinic acid
   term:
@@ -176,8 +177,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
     label: Nicotinic acid
 - preferred_term: Pyridoxine hydrochloride
   term:
@@ -186,8 +187,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001016
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
     label: Pyridoxine hydrochloride
 - preferred_term: Calcium pantothenate
   term:
@@ -196,8 +197,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium pantothenate
 - preferred_term: Biotin
   term:
@@ -206,8 +207,8 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Folic acid
   term:
@@ -216,8 +217,8 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
     label: Folic acid
 applications:
 - Microbial cultivation
@@ -247,13 +248,39 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "RHODOBACTER VELDKAMPII MEDIUM" to "rhodobacter_veldkampii_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:33.663540+00:00'
+- timestamp: '2026-06-05T07:40:27.133168+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 19 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:46.123613+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:00.878221+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_867_RHODOBACTER_VELDKAMPII_MEDIUM, rhodobacter_veldkampii_medium'
+- timestamp: '2026-08-06T03:05:00.878282+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint b745c4c4fa13c526d05bde7b3e530eff3db9b941d32b612c0b726a9cedb2c238
+  source: KOMODO_867_RHODOBACTER_VELDKAMPII_MEDIUM.yaml, rhodobacter_veldkampii_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/rhodobacter_veldkampii_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002025
+  name: rhodobacter_veldkampii_medium
+  notes: KOMODO record states DSMZ Medium 867 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 categories:
 - bacterial
 merged_from:
 - KOMODO_867_RHODOBACTER_VELDKAMPII_MEDIUM
 - rhodobacter_veldkampii_medium
-merge_fingerprint: ebe2e0817b522fa7d11a6a511071536c2d8bf328b1322384d6c08413e091a0c7
+merge_fingerprint: b745c4c4fa13c526d05bde7b3e530eff3db9b941d32b612c0b726a9cedb2c238

@@ -3,6 +3,7 @@ name: alcanivorax_balericus_medium
 original_name: ALCANIVORAX BALERICUS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
@@ -28,8 +29,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Agar
   term:
@@ -38,8 +39,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -65,13 +66,39 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ALCANIVORAX BALERICUS medium" to "alcanivorax_balericus_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:12.085478+00:00'
+- timestamp: '2026-06-05T07:40:20.664133+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:35.866988+00:00'
   curator: recipe-merger
   action: Merged 8 duplicate recipes into canonical record
   notes: 'Sources: JCM_J23_1_10_NUTRIENT_AGAR_NO._2, JCM_J24_1_100_NUTRIENT_AGAR_NO._2,
     KOMODO_1289_ALCANIVORAX_BALERICUS_medium, alcanivorax_balericus_medium, na_sphingobacterium_medium,
     nutrient_agar_no_2, nutrient_agar_with_50_soil_extract_and_5_nacl, volcanobacter_medium'
+- timestamp: '2026-08-06T03:04:35.867103+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 8 source recipe(s) on fingerprint 4352086db8321d484a1a5e498d1c9d492c4bcca89f8f517df881ab41f4f30bb7
+  source: JCM_J23_1_10_NUTRIENT_AGAR_NO._2.yaml, JCM_J24_1_100_NUTRIENT_AGAR_NO._2.yaml,
+    KOMODO_1289_ALCANIVORAX_BALERICUS_medium.yaml, alcanivorax_balericus_medium.yaml,
+    na_sphingobacterium_medium.yaml, nutrient_agar_no_2.yaml, nutrient_agar_with_50_soil_extract_and_5_nacl.yaml,
+    volcanobacter_medium.yaml
 kg_microbe_match: mediadive.medium:101
+parent_media:
+  path: data/normalized_yaml/bacterial/alcanivorax_balericus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000752
+  name: alcanivorax_balericus_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 1289; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 1289; local ingredient
+  and concentration signatures match.
 synonyms:
 - name: 1_10_nutrient_agar_no_2
   source: MediaDive

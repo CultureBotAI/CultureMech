@@ -1,16 +1,18 @@
-id: CultureMech:000462
+id: CultureMech:003553
 name: anacker_ordal_agar
 original_name: ANACKER-ORDAL AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
+notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 1039 | DSMZ Medium: 1039 (mediadive.medium:1039)
+  | Aerobic: No'
 media_term:
-  preferred_term: DSMZ Medium 1039
+  preferred_term: KOMODO Medium 1039
   term:
-    id: mediadive.medium:1039
+    id: komodo.medium:1039
     label: ANACKER-ORDAL AGAR
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1039.pdf'
 ingredients:
 - preferred_term: Tryptone peptone
   concentration:
@@ -23,12 +25,12 @@ ingredients:
 - preferred_term: Na-acetate
   term:
     id: CHEBI:32954
-    label: Na-acetate
+    label: sodium acetate
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
     label: Na-acetate
 - preferred_term: Meat extract
   concentration:
@@ -41,8 +43,8 @@ ingredients:
   concentration:
     value: '11'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Tap water
   term:
@@ -51,37 +53,71 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Tap water
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: Adjust to pH 7.2 prior to autoclaving with KOH.
-- step_number: 2
-  action: MIX
-  description: It is important to use indicator paper for pH adjustment and not a
-    pH electrode!
+- preferred_term: KOH
+  term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+  notes: pH adjustment (extracted from notes)
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32035
+    label: potassium hydroxide
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:13.176871Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1039'
-- timestamp: '2026-03-13T06:18:55.515371Z'
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1039'
+- timestamp: '2026-02-03T11:19:02.031736'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1039
+- timestamp: '2026-03-13T03:08:57.056085Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Added pH buffer: KOH'
+- timestamp: '2026-03-13T06:19:20.610645Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000462'
-- timestamp: '2026-03-17T06:29:53.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:003553'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: KOH'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:30:01.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:06.518374+00:00'
+- timestamp: '2026-03-17T19:45:34.771378+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "ANACKER-ORDAL AGAR" to "anacker_ordal_agar" for consistent
     matching
-merge_fingerprint: 824a105c33dd586be324d0713e591d38b15f2c9fc898b576c129ee9f3c1f9455
+- timestamp: '2026-05-16T09:02:59.709898+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:18.371304+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:43.294235+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:38.122560+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint de9cb528e52a2b56a47d0208195782affa0381c95d7aa080c401e5abe9149e3d
+  source: KOMODO_1039_ANACKER-ORDAL_AGAR.yaml
+merge_fingerprint: de9cb528e52a2b56a47d0208195782affa0381c95d7aa080c401e5abe9149e3d
 merged_from:
-- anacker_ordal_agar
+- KOMODO_1039_ANACKER-ORDAL_AGAR

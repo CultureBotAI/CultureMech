@@ -1,108 +1,92 @@
-id: CultureMech:003539
+id: CultureMech:009729
 name: yeast_starch_agar_a
-original_name: YEAST STARCH AGAR (A)
+original_name: Yeast-Starch Agar (A)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_value: 7.3
-media_term:
-  preferred_term: KOMODO Medium 1027
-  term:
-    id: komodo.medium:1027
-    label: YEAST STARCH AGAR (A)
-notes: 'Source: KOMODO ModelSEED | ID: 1027 | DSMZ Medium: 1027 (mediadive.medium:1027)
-  | Aerobic: No'
 ingredients:
-- preferred_term: Yeast extract
+- preferred_term: Distilled water
   concentration:
-    value: '2'
+    value: '1'
     unit: G_PER_L
-- preferred_term: Starch
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:28017
-    label: Starch
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Soluble starch
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
-    label: Starch
-- preferred_term: Agar
+  notes: 'Role: Carbon source; Properties: Undefined component'
   term:
-    id: CHEBI:2509
-    label: Agar
+    id: CHEBI:28017
+    label: ''
+- preferred_term: Agar
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M34
+  term:
+    id: TOGO:M34
+    label: Yeast-Starch Agar (A)
+notes: 'Source: https://togomedium.org/medium/M34
+
+  Original source: JCM - JCM_M42
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=42'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: 2026-01-27T01:15:01.fZ
-  curator: komodo-web-import
-  action: Imported from KOMODO web table
-  notes: 'Source: KOMODO, ID: 1027'
-- timestamp: '2026-02-03T11:19:14.433818'
-  curator: dsmz-resolver-v1.0
-  action: Enriched with DSMZ composition
-  notes: Copied ingredients from DSMZ Medium 1027
-- timestamp: '2026-03-13T06:19:20.519975Z'
+- timestamp: '2026-01-27T06:35:54.875160Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M34'
+- timestamp: '2026-01-28T19:48:13.239084Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:08.416657Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:003539'
-- timestamp: '2026-03-17T06:30:40.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:009729'
+- timestamp: '2026-03-17T06:29:53.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:34.667300+00:00'
+- timestamp: '2026-03-17T19:46:27.404689+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "YEAST STARCH AGAR (A)" to "yeast_starch_agar_a" for
+  notes: Normalized name from "Yeast-Starch Agar (A)" to "yeast_starch_agar_a" for
     consistent matching
-- timestamp: '2026-04-17T06:30:28.109290+00:00'
-  curator: recipe-merger
-  action: Merged 9 duplicate recipes into canonical record
-  notes: 'Sources: yeast_extract_starch_agar_nbrc_med_266, yeast_starch_agar_a, 1_10_yeast_starch_agar,
-    1_5_yeast_starch_agar, JCM_J42_YEAST-STARCH_AGAR_A, acidic_yeast_starch_agar_ph_5_0,
-    half_strength_yeast_starch_agar, yeast_extract_starch_agar_nbrc_med_266, yeast_starch_agar_a'
-synonyms:
-- name: yeast_extract_starch_agar_nbrc_med_266
-  source: KOMODO
-  source_id: komodo.medium:1314
-  original_category: bacterial
-- name: 1_10_yeast_starch_agar
-  source: MediaDive
-  source_id: mediadive.medium:J137
-  original_category: fungal
-- name: 1_5_yeast_starch_agar
-  source: MediaDive
-  source_id: mediadive.medium:J202
-  original_category: fungal
-- name: acidic_yeast_starch_agar_ph_5_0
-  source: MediaDive
-  source_id: mediadive.medium:J800
-  original_category: fungal
-- name: half_strength_yeast_starch_agar
-  source: MediaDive
-  source_id: mediadive.medium:J108
-  original_category: fungal
-- name: yeast_extract_starch_agar_nbrc_med_266
-  source: MediaDive
-  source_id: mediadive.medium:1314
-  original_category: fungal
-categories:
-- bacterial
-- fungal
+- timestamp: '2026-06-05T07:40:40.623106+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:15.218844+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e3d00cb984596d0ed4807ea82d80952715ccae33930a5523de31a30201aa42f4
+  source: TOGO_M34_Yeast-Starch_Agar_A.yaml
+merge_fingerprint: e3d00cb984596d0ed4807ea82d80952715ccae33930a5523de31a30201aa42f4
 merged_from:
-- yeast_extract_starch_agar_nbrc_med_266
-- yeast_starch_agar_a
-- 1_10_yeast_starch_agar
-- 1_5_yeast_starch_agar
-- JCM_J42_YEAST-STARCH_AGAR_A
-- acidic_yeast_starch_agar_ph_5_0
-- half_strength_yeast_starch_agar
-- yeast_extract_starch_agar_nbrc_med_266
-- yeast_starch_agar_a
-merge_fingerprint: ff31891568e1ec9b3784400cfc34b6933c71cb7de06b611f1b58d1bf43e80ca9
+- TOGO_M34_Yeast-Starch_Agar_A

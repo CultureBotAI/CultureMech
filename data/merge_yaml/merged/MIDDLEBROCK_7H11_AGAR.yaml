@@ -3,6 +3,7 @@ name: middlebrock_7h11_agar
 original_name: MIDDLEBROCK 7H11 AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 911
@@ -33,8 +34,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: Pancreatic digest of casein
   concentration:
@@ -43,22 +44,22 @@ ingredients:
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '0.555556'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '1.66667'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Na2HPO4
   term:
@@ -67,8 +68,8 @@ ingredients:
   concentration:
     value: '1.66667'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4
 - preferred_term: Sodium citrate
   term:
@@ -77,18 +78,18 @@ ingredients:
   concentration:
     value: '0.444444'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
     label: Sodium citrate
 - preferred_term: MgSO4
   term:
     id: CHEBI:32599
-    label: MgSO4
+    label: magnesium sulfate
   concentration:
     value: '0.0555556'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: MgSO4
 - preferred_term: L-Glutamic acid
   term:
@@ -97,8 +98,8 @@ ingredients:
   concentration:
     value: '0.555556'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000562
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16015
     label: L-Glutamic acid
 - preferred_term: Ferric ammonium citrate
   term:
@@ -107,8 +108,8 @@ ingredients:
   concentration:
     value: '0.0444444'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000541
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31604
     label: Ferric ammonium citrate
 - preferred_term: Pyridoxine
   term:
@@ -117,8 +118,8 @@ ingredients:
   concentration:
     value: '0.00111111'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000317
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16709
     label: Pyridoxine
 - preferred_term: Biotin
   term:
@@ -127,8 +128,8 @@ ingredients:
   concentration:
     value: '0.000555556'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Malachite green
   term:
@@ -137,8 +138,8 @@ ingredients:
   concentration:
     value: '0.00111111'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000835
+  mediaingredientmech_chebi_term:
+    id: CHEBI:72449
     label: Malachite green
 - preferred_term: Agar
   term:
@@ -147,8 +148,8 @@ ingredients:
   concentration:
     value: '16.6667'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Oleic acid
   term:
@@ -157,8 +158,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001012
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16196
     label: Oleic acid
 - preferred_term: Tryptone
   term:
@@ -220,13 +221,10 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000243
+  mediaingredientmech_chebi_term:
+    id: CHEBI:4167
     label: Dextrose
 - preferred_term: Catalase
-  term:
-    id: CHEBI:3463
-    label: Catalase
   concentration:
     value: '0.04'
     unit: G_PER_L
@@ -237,12 +235,17 @@ ingredients:
   concentration:
     value: '8.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 applications:
 - Microbial cultivation
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI,
+    1 de-grounded (mixture or unverifiable).
 - timestamp: 2026-01-27T01:15:03.fZ
   curator: komodo-web-import
   action: Imported from KOMODO web table
@@ -264,11 +267,45 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MIDDLEBROCK 7H11 AGAR" to "middlebrock_7h11_agar" for
     consistent matching
-- timestamp: '2026-04-17T06:29:34.561068+00:00'
+- timestamp: '2026-06-05T07:40:27.724941+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 15 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:46.326310+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:01.795871+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_911_MIDDLEBROCK_7H11_AGAR, medium_911_modified_for_dsm_44536,
     middlebrock_7h11_agar'
+- timestamp: '2026-08-06T03:05:01.795927+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 1b41b940df4b5db41d26a1005631a9bd05e4614614821f8329c662d154dc2b66
+  source: KOMODO_911_MIDDLEBROCK_7H11_AGAR.yaml, medium_911_modified_for_dsm_44536.yaml,
+    middlebrock_7h11_agar.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_911_modified_for_dsm_44536.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006785
+  name: medium_911_modified_for_dsm_44536
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/middlebrock_7h11_agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002079
+  name: middlebrock_7h11_agar
+  notes: KOMODO record states DSMZ Medium 911 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 synonyms:
 - name: medium_911_modified_for_dsm_44536
   source: KOMODO
@@ -280,4 +317,4 @@ merged_from:
 - KOMODO_911_MIDDLEBROCK_7H11_AGAR
 - medium_911_modified_for_dsm_44536
 - middlebrock_7h11_agar
-merge_fingerprint: 3cbb2115abf4f3f9dc3dcebecd1e986a17f957e28d31b4e72c0e47b55a3fa115
+merge_fingerprint: 1b41b940df4b5db41d26a1005631a9bd05e4614614821f8329c662d154dc2b66

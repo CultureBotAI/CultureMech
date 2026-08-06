@@ -3,6 +3,7 @@ name: trypticase_starch_agar
 original_name: TRYPTICASE STARCH AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 56
@@ -152,8 +153,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
     label: Starch
 - preferred_term: Agar
   term:
@@ -162,8 +163,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -189,10 +190,32 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TRYPTICASE STARCH AGAR" to "trypticase_starch_agar"
     for consistent matching
-- timestamp: '2026-04-17T06:29:29.140693+00:00'
+- timestamp: '2026-06-05T07:40:24.640146+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:55.564027+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_56_TRYPTICASE_STARCH_AGAR, trypticase_starch_agar'
+- timestamp: '2026-08-06T03:04:55.564069+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 902349d531428972f985459e2328c1f2c5d8e0a394e921106ca170a41330884b
+  source: KOMODO_56_TRYPTICASE_STARCH_AGAR.yaml, trypticase_starch_agar.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/trypticase_starch_agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001699
+  name: trypticase_starch_agar
+  notes: KOMODO record states DSMZ Medium 56 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 categories:
 - bacterial
 merged_from:

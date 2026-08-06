@@ -1,6 +1,7 @@
 id: CultureMech:015802
 name: ZMB ALS noCysteine
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: ZMB_ALS
@@ -17,7 +18,7 @@ ingredients:
     label: ''
 description: Media for culturing Bifidobacterium minus cysteine
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: ZMB ALS noCysteine
@@ -31,6 +32,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015802'
+- timestamp: '2026-05-16T09:04:44.117703+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:09.105378+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint caee0527cc98ecad116692fcfd9134335dcb80a3fbda273b7127d190eb9830d2
+  source: zmb_als_nocysteine.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: caee0527cc98ecad116692fcfd9134335dcb80a3fbda273b7127d190eb9830d2

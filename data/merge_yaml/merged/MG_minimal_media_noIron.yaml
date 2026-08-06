@@ -1,6 +1,7 @@
 id: CultureMech:015589
 name: MG minimal media noIron
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: L-Ascorbic acid
@@ -153,8 +154,8 @@ ingredients:
     value: '0.1'
     unit: MG_PER_L
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Wolfe''s vitamin
     mix'
 - preferred_term: 4-Aminobenzoic acid
@@ -240,7 +241,7 @@ ingredients:
     From Wolfe''s vitamin mix'
 description: Defined media for AMB-1 with multiple carbon sources and no iron
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: MG minimal media noIron
@@ -254,8 +255,27 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015589'
+- timestamp: '2026-05-16T09:04:41.636170+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:52.972975+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:47:15.460789+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:06.340114+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint a899a9a1f13a5a708589ab06d7cedc288fbf2c592cc93decbaaa1375a18068ea
+  source: mg_minimal_media_noiron.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: d90dc60ebd7bd0f0264524e4e79716b792a2f3fe66a71bb4ee827ecc9ea0778e
+merge_fingerprint: a899a9a1f13a5a708589ab06d7cedc288fbf2c592cc93decbaaa1375a18068ea
 merged_from:
 - mg_minimal_media_noiron

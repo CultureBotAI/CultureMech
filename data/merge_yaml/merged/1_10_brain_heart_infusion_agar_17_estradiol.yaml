@@ -3,6 +3,7 @@ name: 1_10_brain_heart_infusion_agar_17_estradiol
 original_name: 1/10 Brain Heart Infusion Agar + 17β-Estradiol
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: 17β-Estradiol
   concentration:
@@ -172,6 +173,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "1/10 Brain Heart Infusion Agar + 17β-Estradiol" to
     "1_10_brain_heart_infusion_agar_17_estradiol" for consistent matching
+- timestamp: '2026-06-05T07:40:15.363681+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:33.388320+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint c545dccb4cec636664eebee8299cc04fd79a59b2a747e176fabbcde5dcc8e0de
+  source: 1_10_brain_heart_infusion_agar_17_estradiol.yaml
 merge_fingerprint: c545dccb4cec636664eebee8299cc04fd79a59b2a747e176fabbcde5dcc8e0de
 merged_from:
 - 1_10_brain_heart_infusion_agar_17_estradiol

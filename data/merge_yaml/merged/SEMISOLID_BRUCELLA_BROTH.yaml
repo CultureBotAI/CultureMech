@@ -3,6 +3,7 @@ name: semisolid_brucella_broth
 original_name: SEMISOLID BRUCELLA BROTH
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 703
@@ -31,8 +32,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: NaCl
   term:
@@ -41,8 +42,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Agar
   term:
@@ -51,8 +52,8 @@ ingredients:
   concentration:
     value: '1.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -78,10 +79,32 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "SEMISOLID BRUCELLA BROTH" to "semisolid_brucella_broth"
     for consistent matching
-- timestamp: '2026-04-17T06:29:30.860084+00:00'
+- timestamp: '2026-06-05T07:40:25.562827+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:57.735838+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_703_SEMISOLID_BRUCELLA_BROTH, semisolid_brucella_broth'
+- timestamp: '2026-08-06T03:04:57.735882+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 42aa4c87395c1b927f6259a2fe40bd68d6db02e0121d4cfd9b14a0f09fbbf58b
+  source: KOMODO_703_SEMISOLID_BRUCELLA_BROTH.yaml, semisolid_brucella_broth.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/semisolid_brucella_broth.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001842
+  name: semisolid_brucella_broth
+  notes: KOMODO record states DSMZ Medium 703 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 categories:
 - bacterial
 merged_from:

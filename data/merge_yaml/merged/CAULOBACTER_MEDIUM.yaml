@@ -1,75 +1,116 @@
-id: CultureMech:008940
+id: CultureMech:006076
 name: caulobacter_medium
-original_name: Caulobacter Medium
+original_name: CAULOBACTER medium
 category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: KOMODO Medium 595
+  term:
+    id: komodo.medium:595
+    label: CAULOBACTER medium
+notes: 'Source: KOMODO ModelSEED | ID: 595 | DSMZ Medium: 595 (mediadive.medium:595)
+  | Aerobic: No'
 ingredients:
-- preferred_term: MgSO4 x 7 H2O
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4 x 7 H2O
-- preferred_term: Yeast extract
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Tap water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Undefined component'
-  term:
-    id: CHEBI:15377
-    label: Tap water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Tap water
 - preferred_term: Bacto peptone
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M2355
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
   term:
-    id: TOGO:M2355
-    label: Caulobacter Medium
-notes: 'Source: https://togomedium.org/medium/M2355
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium595.pdf'
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: Tap water
+  term:
+    id: CHEBI:15377
+    label: Tap water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Tap water
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.390773Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2355'
-- timestamp: '2026-01-28T19:48:11.665647Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:20:01.445064Z'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 595'
+- timestamp: '2026-02-03T11:19:09.861337'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 595
+- timestamp: '2026-03-13T06:19:38.112990Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:008940'
-- timestamp: '2026-03-17T06:29:50.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:006076'
+- timestamp: '2026-03-17T06:30:26.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:20.168853+00:00'
+- timestamp: '2026-03-17T19:45:54.989328+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Caulobacter Medium" to "caulobacter_medium" for consistent
+  notes: Normalized name from "CAULOBACTER medium" to "caulobacter_medium" for consistent
     matching
-merge_fingerprint: 66f1b52b6c5eea41ab4b2f7ff4d1ac554f9a76356c532aceb55746623255b1a9
+- timestamp: '2026-06-05T07:40:24.788507+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:55.888303+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_595_CAULOBACTER_medium, caulobacter_medium, caulobacter_medium_add_agar'
+- timestamp: '2026-08-06T03:04:55.888347+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 2b077606c8185a27b0adfab542f97f8dc969e3cecc0d8876d3496d3fb351600e
+  source: KOMODO_595_CAULOBACTER_medium.yaml, caulobacter_medium.yaml, caulobacter_medium_add_agar.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/caulobacter_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001722
+  name: caulobacter_medium
+  notes: KOMODO record states DSMZ Medium 595 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
+synonyms:
+- name: caulobacter_medium_add_agar
+  source: TOGO
+  source_id: TOGO:M2356
+  original_category: bacterial
+categories:
+- bacterial
 merged_from:
-- TOGO_M2355_Caulobacter_Medium
+- KOMODO_595_CAULOBACTER_medium
+- caulobacter_medium
+- caulobacter_medium_add_agar
+merge_fingerprint: 2b077606c8185a27b0adfab542f97f8dc969e3cecc0d8876d3496d3fb351600e

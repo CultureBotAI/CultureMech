@@ -1,106 +1,96 @@
-id: CultureMech:010384
+id: CultureMech:002224
 name: organic_medium_79
-original_name: Organic Medium 79
+original_name: ORGANIC MEDIUM 79
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+ph_value: 7.5
+media_term:
+  preferred_term: JCM Medium J103
   term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
+    id: mediadive.medium:J103
+    label: ORGANIC MEDIUM 79
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=103'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: Glucose
+- preferred_term: Bacto peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: N-Z amine
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: ' ( type A)'
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
 - preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
   concentration:
     value: '6'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
     label: NaCl
-- preferred_term: Glucose
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
-    component'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
 - preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
     label: Agar
-- preferred_term: Yeast extract (BD-Difco)
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Bacto peptone (BD-Difco)
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: N--Z amine, type A (Sheffield)
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M95
-  term:
-    id: TOGO:M95
-    label: Organic Medium 79
-notes: 'Source: https://togomedium.org/medium/M95
-
-  Original source: JCM - JCM_M103
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=103'
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.5.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.019056Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M95'
-- timestamp: '2026-01-28T19:48:15.083605Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:20:13.440933Z'
+- timestamp: '2026-01-26T17:53:15.734606Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J103'
+- timestamp: '2026-03-13T06:19:11.414775Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:010384'
-- timestamp: '2026-03-17T06:29:57.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:002224'
+- timestamp: '2026-03-17T06:30:22.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:32.415432+00:00'
+- timestamp: '2026-03-17T19:45:24.204987+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Organic Medium 79" to "organic_medium_79" for consistent
+  notes: Normalized name from "ORGANIC MEDIUM 79" to "organic_medium_79" for consistent
     matching
-merge_fingerprint: 62162611f89d61b69d3fb2a5b381df298851da63f54d8cfd5c5b8c591eb44d01
+- timestamp: '2026-06-05T07:40:16.467719+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:35.128375+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 61ed0f71b93977e50736c6fb2bae53989ac178ea3a7f095190824796e3484d5c
+  source: JCM_J103_ORGANIC_MEDIUM_79.yaml
+merge_fingerprint: 61ed0f71b93977e50736c6fb2bae53989ac178ea3a7f095190824796e3484d5c
 merged_from:
-- TOGO_M95_Organic_Medium_79
+- JCM_J103_ORGANIC_MEDIUM_79

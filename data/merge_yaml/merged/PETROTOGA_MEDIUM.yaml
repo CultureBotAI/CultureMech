@@ -1,166 +1,143 @@
-id: CultureMech:009484
+id: CultureMech:002658
 name: petrotoga_medium
-original_name: Petrotoga Medium
+original_name: PETROTOGA MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+ph_value: 7.5
+media_term:
+  preferred_term: JCM Medium J300
   term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
+    id: mediadive.medium:J300
+    label: PETROTOGA MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=300'
+ingredients:
 - preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
   concentration:
     value: '30'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
     label: NaCl
-- preferred_term: CaCl2・2H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: MgCl2 x 6 H2O
   term:
-    id: CHEBI:86158
-    label: ''
-- preferred_term: KH2PO4
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
-- preferred_term: NH4Cl
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:31206
-    label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
-- preferred_term: MgCl2・6H2O
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:86345
-    label: ''
+    label: MgCl2 x 6 H2O
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
 - preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
     label: KCl
 - preferred_term: HEPES
-  concentration:
-    value: '2.6'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:46756
     label: HEPES
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001034
+  concentration:
+    value: '2.6'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:46756
     label: HEPES
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Bacto peptone
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Tryptone
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
 - preferred_term: Maltose monohydrate
   concentration:
     value: '3.6'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
-- preferred_term: Yeast extract (BD-Difco)
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Tryptone (BD-Difco)
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Bacto peptone (BD-Difco)
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: N2
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
-  term:
-    id: CHEBI:17997
-    label: ''
-media_term:
-  preferred_term: TOGO Medium M295
-  term:
-    id: TOGO:M295
-    label: Petrotoga Medium
-notes: 'Source: https://togomedium.org/medium/M295
-
-  Original source: JCM - JCM_M300
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=300'
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.5. Fill the gas phase with N2.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.784998Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M295'
-- timestamp: '2026-01-28T19:48:29.393826Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.892278'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: N2'
-- timestamp: '2026-03-13T06:20:06.358526Z'
+- timestamp: '2026-01-26T17:53:16.221869Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J300'
+- timestamp: '2026-03-13T06:19:14.822314Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:009484'
-- timestamp: '2026-03-17T06:30:27.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:002658'
+- timestamp: '2026-03-17T06:30:58.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:25.342406+00:00'
+- timestamp: '2026-03-17T19:45:28.131999+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Petrotoga Medium" to "petrotoga_medium" for consistent
+  notes: Normalized name from "PETROTOGA MEDIUM" to "petrotoga_medium" for consistent
     matching
-merge_fingerprint: 6eec33386958c15903cbdf15256f015b11ae9f07ca52a6bc4b27f1ad0b841e53
+- timestamp: '2026-06-05T07:40:17.017715+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:42.890129+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:35.969232+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 48606fc8f094354d1dc9adfa64eda17d5ebaba1fa2126a3d276cc1187d17dad2
+  source: JCM_J300_PETROTOGA_MEDIUM.yaml
+merge_fingerprint: 48606fc8f094354d1dc9adfa64eda17d5ebaba1fa2126a3d276cc1187d17dad2
 merged_from:
-- TOGO_M295_Petrotoga_Medium
+- JCM_J300_PETROTOGA_MEDIUM

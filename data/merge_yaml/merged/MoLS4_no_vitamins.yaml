@@ -1,6 +1,7 @@
 id: CultureMech:015627
 name: MoLS4 no vitamins
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sodium sulfate
@@ -142,6 +143,9 @@ ingredients:
     value: '0.06'
     unit: MICROMOLAR
   notes: 'CAS: 10125-13-0; MW: 170.48; From Desulfovibrio trace elements'
+  term:
+    id: CHEBI:86318
+    label: ''
 - preferred_term: Sodium selenite pentahydrate
   concentration:
     value: '0.21'
@@ -162,7 +166,7 @@ ingredients:
     label: ''
 description: Lactate-sulfate media for sulfate-reducing bacteria with no vitamins
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: MoLS4 no vitamins
@@ -176,8 +180,17 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015627'
+- timestamp: '2026-05-16T09:04:41.899295+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:06.743442+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 43abcf9bf2d3ad1dc69fb043efa013c62d449775f0e261bf53a105f4559a83ce
+  source: mols4_no_vitamins.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: d182d04f74d476e775dab856b96dead42daeaf32481cbd2bbd40c4e91c385bd4
+merge_fingerprint: 43abcf9bf2d3ad1dc69fb043efa013c62d449775f0e261bf53a105f4559a83ce
 merged_from:
 - mols4_no_vitamins

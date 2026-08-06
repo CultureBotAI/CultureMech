@@ -1,0 +1,105 @@
+id: CultureMech:015380
+name: anaerobic_natural_seawater_medium
+original_name: ANAEROBIC NATURAL SEAWATER MEDIUM
+category: specialized
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J1102
+  term:
+    id: mediadive.medium:J1102
+    label: ANAEROBIC NATURAL SEAWATER MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1102'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '4.94071'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.988142'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.000494071'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Sea water
+  concentration:
+    value: '750'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Mix components thoroughly and adjust pH to 7.0. Bring to a boil and
+    cool down under a N2 gas atmosphere. Distribute the medium in culture vessels
+    (e.g., 10 ml in Balch tubes) under N2, seal with butyl rubber stoppers and autoclave.
+    After cooling, aseptically and anaerobically add per liter the following solutions
+    (autoclaved and stored under a N2 atmosphere):'
+- step_number: 2
+  action: MIX
+  description: 'Comment: For strain JCM 32399, supplement with 10 mM sodium pyruvate.
+    For JCM 33129, omit resazurin and the reducing agents (L-cysteine x HCl x H2O
+    and Na2S x 9H2O). For JCM 33131, supplement with 10 ml/L trace vitamins (see Medium
+    No. 197).'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.638847Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1102'
+- timestamp: '2026-03-13T06:20:42.295532Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015380'
+- timestamp: '2026-03-17T17:06:21.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:33.924583+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ANAEROBIC NATURAL SEAWATER MEDIUM" to "anaerobic_natural_seawater_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:57.558335+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:04.720918+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 4fecf7170eccd9ecf59e0ae0ce0292c1a3ed84ab72cf908cf7813dd0306fea25
+  source: anaerobic_natural_seawater_medium.yaml
+merge_fingerprint: 4fecf7170eccd9ecf59e0ae0ce0292c1a3ed84ab72cf908cf7813dd0306fea25
+merged_from:
+- anaerobic_natural_seawater_medium

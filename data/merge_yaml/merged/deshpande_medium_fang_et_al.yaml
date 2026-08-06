@@ -3,20 +3,30 @@ name: deshpande_medium_fang_et_al
 original_name: Deshpande medium; fang et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.00450512'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '80.3673'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '44.0898'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Cobalt chloride
   concentration:
     value: '8.40583e-05'
@@ -31,17 +41,23 @@ ingredients:
   concentration:
     value: '0.00061931'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Manganese chloride
   concentration:
     value: '0.000313803'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: Cupric sulfate
   concentration:
     value: '4.00481e-05'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258
@@ -49,8 +65,8 @@ ingredients:
   concentration:
     value: '15.5003'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
     label: Sodium citrate
 - preferred_term: '''Iron(III'
   concentration:
@@ -64,6 +80,9 @@ ingredients:
   concentration:
     value: '3.23661e-05'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:91249
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -93,6 +112,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Deshpande medium; fang et al" to "deshpande_medium_fang_et_al"
     for consistent matching
+- timestamp: '2026-06-05T07:40:55.726594+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:30.036649+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 8602ba5cfa2b64e2f0bd054bf7bff8ede526c0b48092da6cf7488e4e225072d3
+  source: deshpande_medium_fang_et_al.yaml
 media_term:
   preferred_term: MediaDB Medium 205
   term:
@@ -104,6 +134,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: e8de96eda72c9df4520630101dfc729679d50a86366c0cf8e41941302840471e
+merge_fingerprint: 8602ba5cfa2b64e2f0bd054bf7bff8ede526c0b48092da6cf7488e4e225072d3
 merged_from:
 - deshpande_medium_fang_et_al

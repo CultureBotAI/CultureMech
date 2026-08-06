@@ -1,0 +1,95 @@
+id: CultureMech:002828
+name: thermodesulfovibrio_medium
+original_name: THERMODESULFOVIBRIO MEDIUM
+category: bacterial
+medium_type: DEFINED
+composition_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J479
+  term:
+    id: mediadive.medium:J479
+    label: THERMODESULFOVIBRIO MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=479'
+ingredients:
+- preferred_term: Sodium lactate
+  term:
+    id: CHEBI:75228
+    label: Sodium lactate
+  concentration:
+    value: '44'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75228
+    label: Sodium lactate
+- preferred_term: Na2SO4
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+  concentration:
+    value: '56'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
+    label: Na2SO4
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Solution A of Medium No. 284 without yeast extract. Prepare the
+    culture vessels containing the solution as described in the recipe of Medium No.
+    284.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave and store under a N2 atmosphere.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave and store under a N2 atmosphere.
+- step_number: 4
+  action: AUTOCLAVE
+  description: To complete the medium, add 0.05 volume of Solutions B and C to the
+    culture vessels containing Solution A. Prior to inoculation, aseptically and anaerobically
+    add 0.01 volume of L-cysteine x HCl x H2O and Na2S x 9H2O solutions to the medium
+    (3% solutions, autoclaved and stored under a N2 atmosphere).
+- step_number: 5
+  action: MIX
+  description: 'Comment: For strains JCM 13213, JCM 13214, JCM 13215 and JCM 13216,
+    incubate with a 10% inoculum.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.710714Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J479'
+- timestamp: '2026-03-13T06:19:15.948386Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002828'
+- timestamp: '2026-03-17T06:30:38.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:29.413520+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "THERMODESULFOVIBRIO MEDIUM" to "thermodesulfovibrio_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:50.189408+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:13.026486+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:58.607437+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint cdfba3fbe5bcb900c0a51e608b8ebbc5895d27640271c0ee5ccf0b725af1eef2
+  source: thermodesulfovibrio_medium.yaml
+kg_microbe_match: mediadive.medium:J479
+merge_fingerprint: cdfba3fbe5bcb900c0a51e608b8ebbc5895d27640271c0ee5ccf0b725af1eef2
+merged_from:
+- thermodesulfovibrio_medium

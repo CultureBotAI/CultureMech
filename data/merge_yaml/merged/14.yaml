@@ -4,6 +4,7 @@ original_name: '14'
 category: bacterial
 description: 14. NBRC 13.
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Soytone1gSoluble starch10gSeawater (2% Salinity)*1LAgar15gpH 8.2*Dilute
@@ -40,11 +41,20 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007476'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:45.855902'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Soytone1gSoluble starch10gSeawater
     (2% Salinity)*1LAgar15gpH 8.2*Dilute artificial seawater or natural seawater with
     distilled water.'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-05-16T09:03:06.654573+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:05:04.641119+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 63068d590cdd8fad01819da49fd9f5140aecb7ec8d62e7dae5a588ed1e6fb446
+  source: NBRC_14.yaml
 merge_fingerprint: 63068d590cdd8fad01819da49fd9f5140aecb7ec8d62e7dae5a588ed1e6fb446
 merged_from:
 - NBRC_14

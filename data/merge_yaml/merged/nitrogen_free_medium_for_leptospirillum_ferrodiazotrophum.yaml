@@ -2,6 +2,7 @@ name: nitrogen_free_medium_for_leptospirillum_ferrodiazotrophum
 original_name: Nitrogen-Free Medium for Leptospirillum ferrodiazotrophum
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 id: CultureMech:015436
 ingredients:
@@ -19,8 +20,9 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000174
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate heptahydrate
   term:
     id: CHEBI:32599
     label: magnesium sulfate heptahydrate
@@ -28,8 +30,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000485
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogenphosphate
   term:
     id: CHEBI:63036
     label: potassium dihydrogenphosphate
@@ -92,6 +95,35 @@ curation_history:
   notes: Normalized name from "Nitrogen-Free Medium for Leptospirillum ferrodiazotrophum"
     to "nitrogen_free_medium_for_leptospirillum_ferrodiazotrophum" for consistent
     matching
+- timestamp: '2026-05-24T04:38:33.284210+00:00'
+  curator: backfill_source_environment.py
+  action: BACKFILLED_SOURCE_ENVIRONMENT
+  notes: added=1 env(s) from CommunityMech
+  source: CommunityMech (environment_term + culturemech_id linkage)
+- timestamp: '2026-06-05T07:40:29.560526+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:04.716236+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint ffbc81727eec505f702ca059ecaf9d44be70ec4635f6be877f545ed01dffe9d8
+  source: Nitrogen_Free_Medium_for_Leptospirillum_ferrodiazotrophum.yaml
+source_environment:
+- preferred_term: acid mine drainage
+  term:
+    id: ENVO:00002186
+    label: contaminated water
+  notes: 'Extremely acidic (pH 0.5-1.0) subaerial biofilm formed at the air-solution
+    interface of underground AMD streams and pools within the Richmond Mine. The mine
+    contains massive pyrite (FeS₂) deposits that undergo microbially-mediated oxidation,
+    generating sulfuric acid and solubilizing metals. Temperatures range from 30-50°C
+    at sampling sites and exceed 56°C deeper in the mine. Metal concentrations reach
+    decagrams per liter, creating one of Earth''s most extreme habitats.
+
+    '
 merge_fingerprint: ffbc81727eec505f702ca059ecaf9d44be70ec4635f6be877f545ed01dffe9d8
 merged_from:
 - Nitrogen_Free_Medium_for_Leptospirillum_ferrodiazotrophum

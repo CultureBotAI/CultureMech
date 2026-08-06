@@ -3,6 +3,7 @@ name: mannitol_standard_medium
 original_name: mannitol standard medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: yeast extract
   concentration:
@@ -31,8 +32,8 @@ ingredients:
   term:
     id: CHEBI:29864
     label: mannitol
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001010
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29864
     label: mannitol
 - preferred_term: peptone
   concentration:
@@ -44,6 +45,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17883
+    label: ''
 media_term:
   preferred_term: TOGO Medium M2845
   term:
@@ -62,9 +66,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.673540'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Hydrochloric acid'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:05.994683Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -78,6 +82,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "mannitol standard medium" to "mannitol_standard_medium"
     for consistent matching
-merge_fingerprint: bff17664cf136369fd149c3937669b4fe8f00dd64f8611c9763d2d8bee7912db
+- timestamp: '2026-05-16T09:03:40.070447+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:12.684211+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:41.823954+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint baefb53daf609077a1fecaa3de8ec9aa59f93f15545e2430c50029e425b897e2
+  source: mannitol_standard_medium.yaml
+merge_fingerprint: baefb53daf609077a1fecaa3de8ec9aa59f93f15545e2430c50029e425b897e2
 merged_from:
 - mannitol_standard_medium

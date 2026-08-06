@@ -3,6 +3,7 @@ name: casman_medium
 original_name: CASMAN-MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 439
@@ -44,10 +45,26 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "CASMAN-MEDIUM" to "casman_medium" for consistent matching
-- timestamp: '2026-04-17T06:29:24.006434+00:00'
+- timestamp: '2026-08-06T03:04:49.403304+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_439_CASMAN-MEDIUM, casman_medium'
+- timestamp: '2026-08-06T03:04:49.403343+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint a7f97a027365db8b994c0bd39fe0d97eb694060599cd2bbd5fbbee7008a9db1c
+  source: KOMODO_439_CASMAN-MEDIUM.yaml, casman_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/casman_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001547
+  name: casman_medium
+  notes: KOMODO record states DSMZ Medium 439 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 categories:
 - bacterial
 merged_from:

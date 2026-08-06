@@ -1,6 +1,7 @@
 id: CultureMech:015775
 name: Varel Bryant medium Glucose HOMOPIPES
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Potassium phosphate monobasic
@@ -130,7 +131,7 @@ ingredients:
   notes: 'CAS: 202185-84-0; MW: 316.39'
 description: Defined medium for B.theta with Glucose
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: Varel Bryant medium Glucose HOMOPIPES
@@ -144,6 +145,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015775'
+- timestamp: '2026-05-16T09:04:43.920563+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:08.901077+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2fc3a7a18e0cd4aa277e3b59927c035be338bcf984e570452891632508fdd2fe
+  source: varel_bryant_medium_glucose_homopipes.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: 2fc3a7a18e0cd4aa277e3b59927c035be338bcf984e570452891632508fdd2fe

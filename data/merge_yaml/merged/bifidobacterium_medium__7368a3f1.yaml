@@ -1,0 +1,520 @@
+id: CultureMech:001717
+name: bifidobacterium_medium
+original_name: BIFIDOBACTERIUM MEDIUM
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: DSMZ Medium 58
+  term:
+    id: mediadive.medium:58
+    label: BIFIDOBACTERIUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium58.pdf'
+ingredients:
+- preferred_term: Casein peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Bacto Soytone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: Glucose
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  concentration:
+    value: '3.0'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 2.0, 1.0]'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: K2HPO4
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.2, 0.5]'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53426
+    label: Tween 80
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '7.0'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 5.0, 2.0]'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: NaHCO3
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: The cysteine are added after the medium has been boiled and cooled
+    under CO2. Adjust pH to 6.8 using 8 N NaOH. Distribute under N2 and autoclave.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI,
+    1 de-grounded (mixture or unverifiable).
+- timestamp: '2026-01-26T17:53:10.062641Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 58'
+- timestamp: '2026-01-28T19:48:37.937813Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:35.296055Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:06.653299Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001717'
+- timestamp: '2026-03-17T06:30:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:18.864701+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BIFIDOBACTERIUM MEDIUM" to "bifidobacterium_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:50.998967+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 11 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:53.907761+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:25.421451+00:00'
+  curator: recipe-merger
+  action: Merged 28 duplicate recipes into canonical record
+  notes: 'Sources: bifidobacterium_medium, medium_58_modified_for_dsm_16839, medium_58_modified_for_dsm_16840,
+    medium_58_modified_for_dsm_16980, medium_58_modified_for_dsm_16981, medium_58_modified_for_dsm_17042,
+    medium_58_modified_for_dsm_17774, medium_58_modified_for_dsm_17775, medium_58_modified_for_dsm_17776,
+    medium_58_modified_for_dsm_17777, medium_58_modified_for_dsm_17778, medium_58_modified_for_dsm_17779,
+    medium_58_modified_for_dsm_20461, medium_58_modified_for_dsm_20462, medium_58_modified_for_dsm_20465,
+    medium_58_modified_for_dsm_20466, medium_58_modified_for_dsm_20467, medium_58_modified_for_dsm_20756,
+    medium_58_modified_for_dsm_20757, medium_58_modified_for_dsm_20762, medium_58_modified_for_dsm_20764,
+    medium_58_modified_for_dsm_20765, medium_58_modified_for_dsm_21655, medium_58_modified_for_dsm_24661,
+    medium_58_modified_for_dsm_7198, medium_58_modified_for_dsm_7199, medium_58_modified_for_dsm_7200,
+    medium_58_modified_for_dsm_7201'
+- timestamp: '2026-08-06T03:05:25.421636+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 28 source recipe(s) on fingerprint 7368a3f1cd6e544362f37add9e3a10c2f296466dbc5597863cc79cdb15a1d5a9
+  source: bifidobacterium_medium.yaml, medium_58_modified_for_dsm_16839.yaml, medium_58_modified_for_dsm_16840.yaml,
+    medium_58_modified_for_dsm_16980.yaml, medium_58_modified_for_dsm_16981.yaml,
+    medium_58_modified_for_dsm_17042.yaml, medium_58_modified_for_dsm_17774.yaml,
+    medium_58_modified_for_dsm_17775.yaml, medium_58_modified_for_dsm_17776.yaml,
+    medium_58_modified_for_dsm_17777.yaml, medium_58_modified_for_dsm_17778.yaml,
+    medium_58_modified_for_dsm_17779.yaml, medium_58_modified_for_dsm_20461.yaml,
+    med
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_58_modified_for_dsm_16839.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006025
+  name: medium_58_modified_for_dsm_16839
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_58_modified_for_dsm_16840.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006026
+  name: medium_58_modified_for_dsm_16840
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_58_modified_for_dsm_16980.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006027
+  name: medium_58_modified_for_dsm_16980
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_58_modified_for_dsm_16981.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006028
+  name: medium_58_modified_for_dsm_16981
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_58_modified_for_dsm_17042.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006029
+  name: medium_58_modified_for_dsm_17042
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_58_modified_for_dsm_17774.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006030
+  name: medium_58_modified_for_dsm_17774
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_58_modified_for_dsm_17775.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006031
+  name: medium_58_modified_for_dsm_17775
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_58_modified_for_dsm_17776.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006032
+  name: medium_58_modified_for_dsm_17776
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_58_modified_for_dsm_17777.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006033
+  name: medium_58_modified_for_dsm_17777
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_58_modified_for_dsm_17778.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006034
+  name: medium_58_modified_for_dsm_17778
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_58_modified_for_dsm_17779.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006035
+  name: medium_58_modified_for_dsm_17779
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_58_modified_for_dsm_20461.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006036
+  name: medium_58_modified_for_dsm_20461
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_58_modified_for_dsm_20462.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006037
+  name: medium_58_modified_for_dsm_20462
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_58_modified_for_dsm_20465.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006038
+  name: medium_58_modified_for_dsm_20465
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_58_modified_for_dsm_20466.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006039
+  name: medium_58_modified_for_dsm_20466
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_58_modified_for_dsm_20467.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006040
+  name: medium_58_modified_for_dsm_20467
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_58_modified_for_dsm_20756.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006041
+  name: medium_58_modified_for_dsm_20756
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_58_modified_for_dsm_20757.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006042
+  name: medium_58_modified_for_dsm_20757
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_58_modified_for_dsm_20762.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006043
+  name: medium_58_modified_for_dsm_20762
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_58_modified_for_dsm_20764.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006044
+  name: medium_58_modified_for_dsm_20764
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_58_modified_for_dsm_20765.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006045
+  name: medium_58_modified_for_dsm_20765
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_58_modified_for_dsm_21655.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006046
+  name: medium_58_modified_for_dsm_21655
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_58_modified_for_dsm_24661.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006047
+  name: medium_58_modified_for_dsm_24661
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_58_modified_for_dsm_7198.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006048
+  name: medium_58_modified_for_dsm_7198
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_58_modified_for_dsm_7199.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006049
+  name: medium_58_modified_for_dsm_7199
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_58_modified_for_dsm_7200.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006050
+  name: medium_58_modified_for_dsm_7200
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_58_modified_for_dsm_7201.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006051
+  name: medium_58_modified_for_dsm_7201
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+synonyms:
+- name: medium_58_modified_for_dsm_16839
+  source: KOMODO
+  source_id: komodo.medium:58_16839
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_16840
+  source: KOMODO
+  source_id: komodo.medium:58_16840
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_16980
+  source: KOMODO
+  source_id: komodo.medium:58_16980
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_16981
+  source: KOMODO
+  source_id: komodo.medium:58_16981
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_17042
+  source: KOMODO
+  source_id: komodo.medium:58_17042
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_17774
+  source: KOMODO
+  source_id: komodo.medium:58_17774
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_17775
+  source: KOMODO
+  source_id: komodo.medium:58_17775
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_17776
+  source: KOMODO
+  source_id: komodo.medium:58_17776
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_17777
+  source: KOMODO
+  source_id: komodo.medium:58_17777
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_17778
+  source: KOMODO
+  source_id: komodo.medium:58_17778
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_17779
+  source: KOMODO
+  source_id: komodo.medium:58_17779
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_20461
+  source: KOMODO
+  source_id: komodo.medium:58_20461
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_20462
+  source: KOMODO
+  source_id: komodo.medium:58_20462
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_20465
+  source: KOMODO
+  source_id: komodo.medium:58_20465
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_20466
+  source: KOMODO
+  source_id: komodo.medium:58_20466
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_20467
+  source: KOMODO
+  source_id: komodo.medium:58_20467
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_20756
+  source: KOMODO
+  source_id: komodo.medium:58_20756
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_20757
+  source: KOMODO
+  source_id: komodo.medium:58_20757
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_20762
+  source: KOMODO
+  source_id: komodo.medium:58_20762
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_20764
+  source: KOMODO
+  source_id: komodo.medium:58_20764
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_20765
+  source: KOMODO
+  source_id: komodo.medium:58_20765
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_21655
+  source: KOMODO
+  source_id: komodo.medium:58_21655
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_24661
+  source: KOMODO
+  source_id: komodo.medium:58_24661
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_7198
+  source: KOMODO
+  source_id: komodo.medium:58_7198
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_7199
+  source: KOMODO
+  source_id: komodo.medium:58_7199
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_7200
+  source: KOMODO
+  source_id: komodo.medium:58_7200
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_7201
+  source: KOMODO
+  source_id: komodo.medium:58_7201
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- bifidobacterium_medium
+- medium_58_modified_for_dsm_16839
+- medium_58_modified_for_dsm_16840
+- medium_58_modified_for_dsm_16980
+- medium_58_modified_for_dsm_16981
+- medium_58_modified_for_dsm_17042
+- medium_58_modified_for_dsm_17774
+- medium_58_modified_for_dsm_17775
+- medium_58_modified_for_dsm_17776
+- medium_58_modified_for_dsm_17777
+- medium_58_modified_for_dsm_17778
+- medium_58_modified_for_dsm_17779
+- medium_58_modified_for_dsm_20461
+- medium_58_modified_for_dsm_20462
+- medium_58_modified_for_dsm_20465
+- medium_58_modified_for_dsm_20466
+- medium_58_modified_for_dsm_20467
+- medium_58_modified_for_dsm_20756
+- medium_58_modified_for_dsm_20757
+- medium_58_modified_for_dsm_20762
+- medium_58_modified_for_dsm_20764
+- medium_58_modified_for_dsm_20765
+- medium_58_modified_for_dsm_21655
+- medium_58_modified_for_dsm_24661
+- medium_58_modified_for_dsm_7198
+- medium_58_modified_for_dsm_7199
+- medium_58_modified_for_dsm_7200
+- medium_58_modified_for_dsm_7201
+merge_fingerprint: 7368a3f1cd6e544362f37add9e3a10c2f296466dbc5597863cc79cdb15a1d5a9

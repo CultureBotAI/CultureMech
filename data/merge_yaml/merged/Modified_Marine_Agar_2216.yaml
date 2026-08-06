@@ -1,64 +1,88 @@
-id: CultureMech:015396
+id: CultureMech:010382
 name: modified_marine_agar_2216
-original_name: MODIFIED MARINE AGAR 2216
-category: specialized
+original_name: Modified Marine Agar 2216
+category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_value: 7.5
-media_term:
-  preferred_term: JCM Medium J1251
-  term:
-    id: mediadive.medium:J1251
-    label: MODIFIED MARINE AGAR 2216
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1251'
 ingredients:
-- preferred_term: Marine agar 2216
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:2509
-    label: Marine agar 2216
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Malt extract (BD-Difco)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Casitone (BD-Difco)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Soytone (BD-Difco) or Phytone peptone (BD-BBL)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Marine agar 2216 (BD-Difco)
   concentration:
     value: '55.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Marine agar 2216
-- preferred_term: Casitone
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Phytone peptone
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Malt extract
-  concentration:
-    value: '1'
-    unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 7.5.
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M958
+  term:
+    id: TOGO:M958
+    label: Modified Marine Agar 2216
+notes: 'Source: https://togomedium.org/medium/M958
+
+  Original source: JCM - JCM_M913
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=913'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:19.176909Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J1251'
-- timestamp: '2026-03-13T06:20:42.415975Z'
+- timestamp: '2026-01-27T06:35:56.033402Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M958'
+- timestamp: '2026-01-28T19:48:23.599012Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:13.429467Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:015396'
-- timestamp: '2026-03-17T17:06:21.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:010382'
+- timestamp: '2026-03-17T06:30:15.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:34.058578+00:00'
+- timestamp: '2026-03-17T19:46:32.405093+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MODIFIED MARINE AGAR 2216" to "modified_marine_agar_2216"
+  notes: Normalized name from "Modified Marine Agar 2216" to "modified_marine_agar_2216"
     for consistent matching
-kg_microbe_match: mediadive.medium:12
-merge_fingerprint: e26e71e7e44ef7ccb069ef8e25eb2044117d3a3d93ed725145ec9b7d394f1254
+- timestamp: '2026-06-05T07:40:46.030791+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:20.823503+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 9ca426fe31ad0db8512f4bf1bbc6692c12428709a54b2dd8f9f8ae63d8df0943
+  source: TOGO_M958_Modified_Marine_Agar_2216.yaml
+merge_fingerprint: 9ca426fe31ad0db8512f4bf1bbc6692c12428709a54b2dd8f9f8ae63d8df0943
 merged_from:
-- modified_marine_agar_2216
+- TOGO_M958_Modified_Marine_Agar_2216

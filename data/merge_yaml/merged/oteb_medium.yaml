@@ -3,8 +3,11 @@ name: oteb_medium
 original_name: OTEB-MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_range: 6.8-7.2
+ph_range:
+  min: 6.8
+  max: 7.2
 media_term:
   preferred_term: KOMODO Medium 1245
   term:
@@ -47,8 +50,8 @@ ingredients:
     value: '2'
     unit: G_PER_L
   notes: ' (dibasic)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: Potassium Phosphate
 - preferred_term: Sodium Chloride
   term:
@@ -57,8 +60,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: Sodium Chloride
 - preferred_term: Magnesium sulfate
   term:
@@ -67,8 +70,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Acetic acid
   term:
@@ -77,8 +80,8 @@ ingredients:
   concentration:
     value: '1.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000342
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15366
     label: Acetic acid
 - preferred_term: Propionic acid
   term:
@@ -87,8 +90,8 @@ ingredients:
   concentration:
     value: '0.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000366
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30768
     label: Propionic acid
 - preferred_term: n-Butyric acid
   term:
@@ -97,8 +100,8 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000471
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30772
     label: n-Butyric acid
 - preferred_term: n-Valeric acid
   term:
@@ -107,8 +110,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000303
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17418
     label: n-Valeric acid
 - preferred_term: Isovaleric acid
   term:
@@ -117,8 +120,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000305
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28484
     label: Isovaleric acid
 - preferred_term: Isobutyric acid
   term:
@@ -127,8 +130,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000286
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16135
     label: Isobutyric acid
 - preferred_term: Tryptone
   term:
@@ -190,8 +193,8 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000567
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18067
     label: Vitamin K1
 - preferred_term: L-Cysteine
   term:
@@ -200,8 +203,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000923
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17561
     label: L-Cysteine
 - preferred_term: Fetal bovine serum
   concentration:
@@ -215,8 +218,8 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Fructose
   term:
@@ -225,8 +228,8 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000288
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28757
     label: Fructose
 - preferred_term: Sucrose
   term:
@@ -235,8 +238,8 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000661
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17992
     label: Sucrose
 - preferred_term: Maltose
   term:
@@ -246,8 +249,8 @@ ingredients:
     value: '16.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 8.0, 8.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000591
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17306
     label: Maltose
 - preferred_term: Ribose
   term:
@@ -256,8 +259,8 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000672
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33942
     label: Ribose
 - preferred_term: Xylose
   term:
@@ -266,8 +269,8 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000900
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18222
     label: Xylose
 - preferred_term: Pectin
   term:
@@ -276,8 +279,8 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000531
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17309
     label: Pectin
 - preferred_term: Starch
   term:
@@ -286,8 +289,8 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
     label: Starch
 - preferred_term: Sodium pyruvate
   term:
@@ -296,8 +299,8 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
     label: Sodium pyruvate
 - preferred_term: Thiamine pyrophosphate
   term:
@@ -306,8 +309,8 @@ ingredients:
   concentration:
     value: '0.00075'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000431
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18290
     label: Thiamine pyrophosphate
 applications:
 - Microbial cultivation
@@ -336,10 +339,44 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "OTEB-MEDIUM" to "oteb_medium" for consistent matching
-- timestamp: '2026-04-17T06:29:17.797623+00:00'
+- timestamp: '2026-05-20T06:00:49.748820+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.8-7.2'' -> {''min'': 6.8, ''max'': 7.2}'
+- timestamp: '2026-06-05T07:40:20.369946+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 21 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:42.360519+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_1245_OTEB-MEDIUM, medium_1245_modified_for_dsm_18691, oteb_medium'
+- timestamp: '2026-08-06T03:04:42.360573+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 391f43a9339d9f56eaba3372f64fb2f18bd12277abf3112dd25812588e4611cf
+  source: KOMODO_1245_OTEB-MEDIUM.yaml, medium_1245_modified_for_dsm_18691.yaml, oteb_medium.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_1245_modified_for_dsm_18691.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004002
+  name: medium_1245_modified_for_dsm_18691
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/oteb_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000704
+  name: oteb_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 1245; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 1245; local ingredient
+  and concentration signatures match.
 synonyms:
 - name: medium_1245_modified_for_dsm_18691
   source: KOMODO

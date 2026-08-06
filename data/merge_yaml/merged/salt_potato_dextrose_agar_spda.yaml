@@ -1,82 +1,108 @@
-id: CultureMech:003236
+id: CultureMech:010350
 name: salt_potato_dextrose_agar_spda
-original_name: SALT POTATO-DEXTROSE AGAR (SPDA)
+original_name: Salt Potato-Dextrose Agar (SPDA)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_value: 5.5
-media_term:
-  preferred_term: JCM Medium J888
-  term:
-    id: mediadive.medium:J888
-    label: SALT POTATO-DEXTROSE AGAR (SPDA)
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=888'
 ingredients:
-- preferred_term: Potato
+- preferred_term: Distilled water
   concentration:
-    value: '200'
+    value: '1'
     unit: G_PER_L
-  notes: ' ( peeled and cut)'
-- preferred_term: Glucose
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:17234
-    label: Glucose
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
-    label: Glucose
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: Agar
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:2509
-    label: Agar
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Agar
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Boil potatoes for 20 min. Strain through a fine sieve. Add glucose,
-    NaCl and agar, and boil until dissolved. Do not use new potatoes. Adjust pH to
-    5.4 - 5.6.
-- step_number: 2
-  action: MIX
-  description: 'Comment: Commercial potato dextrose agar (BD-Difco or Oxoid) supplemented
-    with NaCl can be used.'
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Potato, peeled and cut
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M929
+  term:
+    id: TOGO:M929
+    label: Salt Potato-Dextrose Agar (SPDA)
+notes: 'Source: https://togomedium.org/medium/M929
+
+  Original source: JCM - JCM_M888
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=888'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:17.909307Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J888'
-- timestamp: '2026-03-13T06:19:18.823286Z'
+- timestamp: '2026-01-27T06:35:55.979540Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M929'
+- timestamp: '2026-01-28T19:48:28.761171Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:13.197277Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:003236'
-- timestamp: '2026-03-17T06:30:30.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:010350'
+- timestamp: '2026-03-17T06:30:26.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:32.700762+00:00'
+- timestamp: '2026-03-17T19:46:32.177449+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SALT POTATO-DEXTROSE AGAR (SPDA)" to "salt_potato_dextrose_agar_spda"
+  notes: Normalized name from "Salt Potato-Dextrose Agar (SPDA)" to "salt_potato_dextrose_agar_spda"
     for consistent matching
-merge_fingerprint: d2b0b0b0159d321dc3b93ff80f9bec4930e910ad847073fbaff4da45d45a768d
+- timestamp: '2026-06-05T07:40:45.778064+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:20.558457+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint ff9bb854c659df19f639851914e94d4dcd1f7fd6b511f00df919adb8ab9cab39
+  source: TOGO_M929_Salt_Potato-Dextrose_Agar_SPDA.yaml
+merge_fingerprint: ff9bb854c659df19f639851914e94d4dcd1f7fd6b511f00df919adb8ab9cab39
 merged_from:
-- salt_potato_dextrose_agar_spda
+- TOGO_M929_Salt_Potato-Dextrose_Agar_SPDA

@@ -1,6 +1,7 @@
 id: CultureMech:015751
 name: terrific broth
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Tryptone
@@ -37,7 +38,7 @@ ingredients:
   notes: 'Mapping: ols_exact (confidence: 0.92)'
 description: Terrific broth medium
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: terrific broth
@@ -51,6 +52,19 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015751'
+- timestamp: '2026-05-16T09:04:43.570531+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-10T07:47:15.861465+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:08.559985+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 93c7ab35c5b211967e4cc408f3bcb71d27d9b4d1a52e15e322f7b85c7f1fc191
+  source: terrific_broth.yaml
 data_quality_flags: []
 merge_fingerprint: 93c7ab35c5b211967e4cc408f3bcb71d27d9b4d1a52e15e322f7b85c7f1fc191
 merged_from:

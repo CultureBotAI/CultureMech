@@ -3,6 +3,7 @@ name: mm_succinate_with_nh4cl_encarnacion_et_al
 original_name: MM-Succinate with NH4Cl; Encarnacion et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Succinate
@@ -13,17 +14,23 @@ ingredients:
     value: '10.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:succ'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000420
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26806
     label: Succinate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '1.49'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '1.26'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -31,8 +38,8 @@ ingredients:
   concentration:
     value: '0.83'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
@@ -41,8 +48,8 @@ ingredients:
   concentration:
     value: '10.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: '''Iron(III'
   concentration:
@@ -77,6 +84,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MM-Succinate with NH4Cl; Encarnacion et al" to "mm_succinate_with_nh4cl_encarnacion_et_al"
     for consistent matching
+- timestamp: '2026-06-05T07:41:35.306084+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:46.948957+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint f46b6aa02f0adeb9990e628cbc330c98b7c81aff552e5ef2278e6128c4aaa3b8
+  source: mm_succinate_with_nh4cl_encarnacion_et_al.yaml
 media_term:
   preferred_term: MediaDB Medium 165
   term:
@@ -88,6 +106,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: ef6afbe10349d1fdbad1dd300e13d329e6407957c1bc179650709aa364945808
+merge_fingerprint: f46b6aa02f0adeb9990e628cbc330c98b7c81aff552e5ef2278e6128c4aaa3b8
 merged_from:
 - mm_succinate_with_nh4cl_encarnacion_et_al

@@ -3,6 +3,7 @@ name: medium_220_modified_for_dsm_13870
 original_name: MEDIUM 220 MODIFIED FOR DSM 13870
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 9.5
 notes: 'pH buffer: Na-sesquicarbonate | Source: KOMODO ModelSEED | ID: 220_13870 |
@@ -31,8 +32,8 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 5.0, 5.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Agar
   term:
@@ -41,8 +42,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: D(+)-Glucose
   term:
@@ -51,18 +52,18 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D(+)-Glucose
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: Na
   notes: Extracted from recipe notes (pH buffer)
@@ -91,9 +92,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:004443'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:33.323312'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Na'
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:19.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -103,6 +104,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MEDIUM 220 MODIFIED FOR DSM 13870" to "medium_220_modified_for_dsm_13870"
     for consistent matching
+- timestamp: '2026-05-16T09:04:12.242780+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:16.605596+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:01.900274+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:42.651313+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint eaae3cc5abea25f3b24f1a19f41722fdc9477c47915fbb6f69535788cd79dcea
+  source: medium_220_modified_for_dsm_13870.yaml
 merge_fingerprint: eaae3cc5abea25f3b24f1a19f41722fdc9477c47915fbb6f69535788cd79dcea
 merged_from:
 - medium_220_modified_for_dsm_13870

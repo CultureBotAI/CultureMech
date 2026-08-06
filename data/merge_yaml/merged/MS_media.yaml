@@ -1,6 +1,7 @@
 id: CultureMech:015642
 name: MS media
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Ammonium Nitrate
@@ -131,8 +132,8 @@ ingredients:
     value: '0.5'
     unit: MG_PER_L
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: Pyridoxine HCl
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-56-0; MW: 205.64'
 - preferred_term: Sodium Molybdate Dihydrate
   concentration:
@@ -168,7 +169,7 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 57-50-1; MW: 342.3'
 description: Murashige and Skoog Basal Medium for growing plants
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: MS media
@@ -182,8 +183,23 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015642'
+- timestamp: '2026-05-16T09:04:42.017241+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:53.143582+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:06:06.876931+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 99ebf22ec2f1d9dd0308059367e71c3f3cb4ad720f35f07dde088926064129ef
+  source: ms_media.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: 2d016569a91ed630853320cbfa55a106aca50873c92608c880ebe43641098f39
+merge_fingerprint: 99ebf22ec2f1d9dd0308059367e71c3f3cb4ad720f35f07dde088926064129ef
 merged_from:
 - ms_media

@@ -1,55 +1,83 @@
-id: CultureMech:003272
+id: CultureMech:010397
 name: mrs_medium_with_soybean_peptone
-original_name: MRS MEDIUM WITH SOYBEAN PEPTONE
+original_name: MRS Medium With Soybean Peptone
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-media_term:
-  preferred_term: JCM Medium J925
-  term:
-    id: mediadive.medium:J925
-    label: MRS MEDIUM WITH SOYBEAN PEPTONE
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=925'
 ingredients:
-- preferred_term: Lactobacilli MRS broth
+- preferred_term: Distilled water
   concentration:
-    value: '55'
+    value: '1'
     unit: G_PER_L
-- preferred_term: Phytone peptone
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: Agar
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:2509
-    label: Agar
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Bacto agar (BD-Difco)
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  notes: 'Role: Solidifying component'
+- preferred_term: Lactobacilli MRS broth (BD-Difco)
+  concentration:
+    value: '55'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Phytone peptone (BD-BBL)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M971
+  term:
+    id: TOGO:M971
+    label: MRS Medium With Soybean Peptone
+notes: 'Source: https://togomedium.org/medium/M971
+
+  Original source: JCM - JCM_M925
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=925'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:18.026072Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J925'
-- timestamp: '2026-03-13T06:19:19.105133Z'
+- timestamp: '2026-01-27T06:35:56.059260Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M971'
+- timestamp: '2026-01-28T19:48:13.511246Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:13.543180Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:003272'
-- timestamp: '2026-03-17T06:30:06.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:010397'
+- timestamp: '2026-03-17T06:29:54.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:33.017679+00:00'
+- timestamp: '2026-03-17T19:46:32.516560+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MRS MEDIUM WITH SOYBEAN PEPTONE" to "mrs_medium_with_soybean_peptone"
+  notes: Normalized name from "MRS Medium With Soybean Peptone" to "mrs_medium_with_soybean_peptone"
     for consistent matching
-kg_microbe_match: mediadive.medium:12
-merge_fingerprint: 6fcb2d792bb0d157eb4c73051cad2f9e5b9823dccd0cefa714bc4eb460f88917
+- timestamp: '2026-06-05T07:40:46.148865+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:20.935532+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint cfa75973b925cdca6a758bcce647a3c88bfec365344cca4a4016564182f9e83b
+  source: TOGO_M971_MRS_Medium_With_Soybean_Peptone.yaml
+merge_fingerprint: cfa75973b925cdca6a758bcce647a3c88bfec365344cca4a4016564182f9e83b
 merged_from:
-- mrs_medium_with_soybean_peptone
+- TOGO_M971_MRS_Medium_With_Soybean_Peptone

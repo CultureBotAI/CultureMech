@@ -3,6 +3,7 @@ name: yim_medium_10_nacl
 original_name: YIM medium + 10 % NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
@@ -28,8 +29,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: NaCl
   term:
@@ -38,8 +39,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: CaCO3
   term:
@@ -48,8 +49,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001099
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
     label: CaCO3
 - preferred_term: Agar
   term:
@@ -59,8 +60,8 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -86,11 +87,35 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "YIM medium + 10 % NaCl" to "yim_medium_10_nacl" for
     consistent matching
-- timestamp: '2026-04-17T06:29:11.140526+00:00'
+- timestamp: '2026-06-05T07:40:20.731356+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:34.494157+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_1452_AQUISALIMONAS_MEDIUM, KOMODO_1302_YIM_medium_10_NaCl,
     t5_medium, yim_medium_10_nacl'
+- timestamp: '2026-08-06T03:04:34.494214+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 4 source recipe(s) on fingerprint c82060d402c6efa95e9395e3ca56337bb251e9c5495513541e047110bc45172b
+  source: DSMZ_1452_AQUISALIMONAS_MEDIUM.yaml, KOMODO_1302_YIM_medium_10_NaCl.yaml,
+    t5_medium.yaml, yim_medium_10_nacl.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/yim_medium_10_nacl.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000765
+  name: yim_medium_10_nacl
+  notes: KOMODO record explicitly cites DSMZ Medium 1302; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 1302; local ingredient
+  and concentration signatures match.
 synonyms:
 - name: aquisalimonas_medium
   source: MediaDive

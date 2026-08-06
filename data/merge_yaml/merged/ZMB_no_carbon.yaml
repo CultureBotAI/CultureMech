@@ -1,6 +1,7 @@
 id: CultureMech:015829
 name: ZMB no carbon
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: L-Histidine
@@ -336,6 +337,9 @@ ingredients:
     value: '0.00019'
     unit: G_PER_L
   notes: 'CAS: 12027-67-7; MW: 1235.86'
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: Manganese (II) sulfate monohydrate
   concentration:
     value: '0.00038'
@@ -428,7 +432,7 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
 description: Media for culturing Bifidobacterium
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: ZMB no carbon
@@ -442,8 +446,17 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015829'
+- timestamp: '2026-05-16T09:04:44.209671+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:09.215620+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 56f9874f046dd3faaed7f3082666ad5e9e692b78ec1cdc8271d0bd9bfb2b6433
+  source: zmb_no_carbon.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: 55b042aa939d2102ee834268ce7a8a6ff056aa84e68a15147031c7eb815185d3
+merge_fingerprint: 56f9874f046dd3faaed7f3082666ad5e9e692b78ec1cdc8271d0bd9bfb2b6433
 merged_from:
 - zmb_no_carbon

@@ -1,6 +1,7 @@
 id: CultureMech:015574
 name: McCas formate SO4
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: NaHCO3
@@ -88,6 +89,9 @@ ingredients:
     value: '0.005'
     unit: G_PER_L
   notes: From Mc_trace_minerals
+  term:
+    id: CHEBI:86356
+    label: ''
 - preferred_term: cobalt chloride
   concentration:
     value: '0.001'
@@ -112,7 +116,7 @@ ingredients:
   term:
     id: CHEBI:31440
     label: ''
-- preferred_term: AlK(SO4)2 12H2O
+- preferred_term: AlK(SO4)2 x 12 H2O
   concentration:
     value: '0.0001'
     unit: G_PER_L
@@ -251,6 +255,9 @@ ingredients:
     value: '0.001'
     unit: G_PER_L
   notes: 'CAS: 62758-13-8; MW: 251.17'
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: 'sodium acetate '
   concentration:
     value: '0.84'
@@ -288,9 +295,6 @@ ingredients:
   concentration:
     value: '2.00'
     unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
 - preferred_term: dithiothreitol
   concentration:
@@ -310,7 +314,7 @@ ingredients:
     label: ''
 description: McCas_formate
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: McCas formate SO4
@@ -324,8 +328,27 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015574'
+- timestamp: '2026-05-16T09:04:41.421246+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:52.812562+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:47:15.389466+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:06.003818+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 95d60c378de5ff6581fb7192665eefc317ac8c85d908fd9a9cce6bc9f7b610b5
+  source: mccas_formate_so4.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: 257727d35789599bb0e8c837457ef930805c1ad2b2197a74b9d5bb1d364e2ea0
+merge_fingerprint: 95d60c378de5ff6581fb7192665eefc317ac8c85d908fd9a9cce6bc9f7b610b5
 merged_from:
 - mccas_formate_so4

@@ -3,6 +3,7 @@ name: agar_with_e_coli_as_feed
 original_name: AGAR WITH E. COLI AS FEED
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
@@ -19,8 +20,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: Agar
   term:
@@ -29,8 +30,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -61,6 +62,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "AGAR WITH E. COLI AS FEED" to "agar_with_e_coli_as_feed"
     for consistent matching
+- timestamp: '2026-06-05T07:40:47.597470+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:22.170929+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 00f65b019aa693dbea23c7b7fe2141f84b3518ea9d455e15aa62e89af3742e1d
+  source: agar_with_e_coli_as_feed.yaml
 kg_microbe_match: mediadive.medium:49
 merge_fingerprint: 00f65b019aa693dbea23c7b7fe2141f84b3518ea9d455e15aa62e89af3742e1d
 merged_from:

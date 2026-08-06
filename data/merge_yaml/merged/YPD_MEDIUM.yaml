@@ -1,110 +1,123 @@
-id: CultureMech:007973
+id: CultureMech:005177
 name: ypd_medium
-original_name: YPD Medium
+original_name: YPD medium
 category: bacterial
 medium_type: COMPLEX
-physical_state: SOLID_AGAR
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: KOMODO Medium 393
+  term:
+    id: komodo.medium:393
+    label: YPD medium
+notes: 'Source: KOMODO ModelSEED | ID: 393 | DSMZ Medium: 393 (mediadive.medium:393)
+  | Aerobic: No'
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: Glucose
 - preferred_term: Yeast extract
   concentration:
-    value: '5'
+    value: '1'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Glucose
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
-    compound'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
-- preferred_term: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
 - preferred_term: Peptone
   concentration:
-    value: '5'
+    value: '1'
     unit: G_PER_L
-media_term:
-  preferred_term: TOGO Medium M1434
-  term:
-    id: TOGO:M1434
-    label: YPD Medium
-notes: 'Source: https://togomedium.org/medium/M1434
-
-  Original source: NBRC - NBRC_M112
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=112'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:57.673771Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: NBRC, ID: M1434'
-- timestamp: '2026-01-28T19:48:36.712458Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:19:52.792216Z'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 393'
+- timestamp: '2026-02-03T11:18:57.655906'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 393
+- timestamp: '2026-03-13T06:19:30.845655Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:007973'
-- timestamp: '2026-03-17T06:30:43.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:005177'
+- timestamp: '2026-03-17T06:29:48.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:11.270026+00:00'
+- timestamp: '2026-03-17T19:45:46.656450+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "YPD Medium" to "ypd_medium" for consistent matching
-- timestamp: '2026-04-17T06:29:39.781210+00:00'
+  notes: Normalized name from "YPD medium" to "ypd_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:22.988482+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:41.214223+00:00'
   curator: recipe-merger
-  action: Merged 4 duplicate recipes into canonical record
-  notes: 'Sources: TOGO_M130_PYG_Agar_A, TOGO_M1434_YPD_Medium, TOGO_M344_Ancylobacter-Spirosoma_Medium,
-    glucose_yeast_peptone_medium'
+  action: Merged 8 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_1199_K7_medium, KOMODO_21_SARCINA_medium, KOMODO_393_YPD_medium,
+    for_dsm_19966, for_dsm_25088, k7_medium, sarcina_medium, ypd_medium'
+- timestamp: '2026-08-06T03:04:41.214283+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 8 source recipe(s) on fingerprint abdfca7acb216d391b615226b3d8d915927306e7a9e22b90ea0c16dc28cc9c56
+  source: KOMODO_1199_K7_medium.yaml, KOMODO_21_SARCINA_medium.yaml, KOMODO_393_YPD_medium.yaml,
+    for_dsm_19966.yaml, for_dsm_25088.yaml, k7_medium.yaml, sarcina_medium.yaml, ypd_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/ypd_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001500
+  name: ypd_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 393; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 393; local ingredient
+  and concentration signatures match.
 synonyms:
-- name: pyg_agar_a
-  source: TOGO
-  source_id: TOGO:M130
+- name: k7_medium
+  source: KOMODO
+  source_id: komodo.medium:1199
   original_category: bacterial
-- name: ancylobacter_spirosoma_medium
-  source: TOGO
-  source_id: TOGO:M344
+- name: sarcina_medium
+  source: KOMODO
+  source_id: komodo.medium:21
   original_category: bacterial
-- name: glucose_yeast_peptone_medium
-  source: TOGO
-  source_id: TOGO:M251
+- name: for_dsm_19966
+  source: KOMODO
+  source_id: komodo.medium:1199.1
+  original_category: bacterial
+- name: for_dsm_25088
+  source: KOMODO
+  source_id: komodo.medium:1199.2
+  original_category: bacterial
+- name: k7_medium
+  source: MediaDive
+  source_id: mediadive.medium:1199
+  original_category: bacterial
+- name: sarcina_medium
+  source: MediaDive
+  source_id: mediadive.medium:21
   original_category: bacterial
 categories:
 - bacterial
 merged_from:
-- TOGO_M130_PYG_Agar_A
-- TOGO_M1434_YPD_Medium
-- TOGO_M344_Ancylobacter-Spirosoma_Medium
-- glucose_yeast_peptone_medium
-merge_fingerprint: 3a5168a57b46be308b0dece07b6cb536028681af4e87daac9a644f0aece3f0f2
+- KOMODO_1199_K7_medium
+- KOMODO_21_SARCINA_medium
+- KOMODO_393_YPD_medium
+- for_dsm_19966
+- for_dsm_25088
+- k7_medium
+- sarcina_medium
+- ypd_medium
+merge_fingerprint: abdfca7acb216d391b615226b3d8d915927306e7a9e22b90ea0c16dc28cc9c56

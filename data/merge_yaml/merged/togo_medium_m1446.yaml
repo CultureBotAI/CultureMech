@@ -3,6 +3,7 @@ name: togo_medium_m1446
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Skim milk
   concentration:
@@ -56,6 +57,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TOGO Medium M1446" to "togo_medium_m1446" for consistent
     matching
+- timestamp: '2026-06-05T07:41:52.211255+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:59.857176+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint f3d492f45d307b759867c6d0c2c73b699dde46491603e8a6853bb60b1564955b
+  source: togo_medium_m1446.yaml
 merge_fingerprint: f3d492f45d307b759867c6d0c2c73b699dde46491603e8a6853bb60b1564955b
 merged_from:
 - togo_medium_m1446

@@ -3,6 +3,7 @@ name: oatmeal_agar_isp_medium_no_3_ph_5_5
 original_name: Oatmeal Agar (ISP medium No.3, pH 5.5)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Oatmeal
   concentration:
@@ -30,9 +31,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: FeSO4·7H2O
   concentration:
     value: '0.1'
@@ -60,9 +61,9 @@ ingredients:
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
-    label: ZnSO4·7H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
 media_term:
   preferred_term: TOGO Medium M1820
   term:
@@ -97,9 +98,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008392'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:51.549427'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:29:44.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -109,10 +110,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Oatmeal Agar (ISP medium No.3, pH 5.5)" to "oatmeal_agar_isp_medium_no_3_ph_5_5"
     for consistent matching
-- timestamp: '2026-04-17T06:30:18.589380+00:00'
+- timestamp: '2026-05-16T09:04:28.032068+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:40.320095+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:51.874775+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: oatmeal_agar_isp_medium_no_3, oatmeal_agar_isp_medium_no_3_ph_5_5'
+- timestamp: '2026-08-06T03:05:51.874812+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint cb068f7162a7212557d8e554463af1d392695253917f709ccdd03d02bd7b52f2
+  source: oatmeal_agar_isp_medium_no_3.yaml, oatmeal_agar_isp_medium_no_3_ph_5_5.yaml
 solutions:
 - preferred_term: Trace salts solution*
   term:
@@ -123,6 +139,15 @@ solutions:
     unit: G_PER_L
   notes: See mediadive_3683_Trace_salts_solution.yaml for composition
   name: Unknown solution
+parent_media:
+  path: data/normalized_yaml/bacterial/oatmeal_agar_isp_medium_no_3.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008009
+  name: oatmeal_agar_isp_medium_no_3
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.
 synonyms:
 - name: oatmeal_agar_isp_medium_no_3
   source: TOGO

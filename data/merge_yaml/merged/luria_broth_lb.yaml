@@ -3,6 +3,7 @@ name: luria_broth_lb
 original_name: Luria Broth (LB)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Yeast extract
@@ -19,9 +20,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Deionized water
   concentration:
     value: '1'
@@ -42,9 +43,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000150
-    label: HCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
+    label: hydrogen chloride
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
@@ -53,9 +54,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
-    label: NaOH
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
 media_term:
   preferred_term: TOGO Medium M3210
   term:
@@ -74,10 +75,10 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:57.918965'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: HCl; Added default concentration
     for ingredient: NaOH'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:07.894877Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -91,6 +92,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Luria Broth (LB)" to "luria_broth_lb" for consistent
     matching
+- timestamp: '2026-05-16T09:03:39.291127+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:11.514139+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:40.641278+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 55bc28fe50d05390223761810d25455f79ada3525d5b0aac2dd8bff18757da3d
+  source: luria_broth_lb.yaml
 merge_fingerprint: 55bc28fe50d05390223761810d25455f79ada3525d5b0aac2dd8bff18757da3d
 merged_from:
 - luria_broth_lb

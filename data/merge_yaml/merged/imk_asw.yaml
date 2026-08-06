@@ -3,6 +3,7 @@ name: imk_asw
 original_name: IMK (ASW)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Artificial Seawater
@@ -42,13 +43,22 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008569'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:52.858807'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T19:46:16.783291+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "IMK (ASW)" to "imk_asw" for consistent matching
+- timestamp: '2026-05-16T09:03:37.756910+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:05:38.362283+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2da36b944280b4e56e1141282dd51d2243536c4a890b6a889af6f3fe70be10de
+  source: imk_asw.yaml
 solutions:
 - preferred_term: Daigo's IMK Medium*
   composition: []

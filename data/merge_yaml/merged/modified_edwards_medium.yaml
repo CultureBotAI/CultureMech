@@ -3,6 +3,7 @@ name: modified_edwards_medium
 original_name: Modified Edward's medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: NaCl
@@ -14,9 +15,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: KCl
   concentration:
     value: '1.3'
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: NaOAc
   concentration:
     value: '5'
@@ -48,9 +49,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Tryptose
   concentration:
     value: '20'
@@ -90,6 +91,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Modified Edward's medium" to "modified_edwards_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:41:36.564735+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:48.250351+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 1f1fc48a4d528266ebda18a0d941f4921b8452c31e415dc7b8f8b5075dafa049
+  source: modified_edwards_medium.yaml
 merge_fingerprint: 1f1fc48a4d528266ebda18a0d941f4921b8452c31e415dc7b8f8b5075dafa049
 merged_from:
 - modified_edwards_medium

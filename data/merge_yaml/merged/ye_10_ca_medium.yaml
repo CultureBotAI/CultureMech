@@ -1,74 +1,92 @@
-id: CultureMech:000929
+id: CultureMech:008947
 name: ye_10_ca_medium
-original_name: YE/10 + Ca MEDIUM
+original_name: YE/10 + Ca Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 7.5
-media_term:
-  preferred_term: DSMZ Medium 1463
-  term:
-    id: mediadive.medium:1463
-    label: YE/10 + Ca MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1463.pdf'
 ingredients:
-- preferred_term: Yeast extract
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.3'
     unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: TRIS x HCl
+  concentration:
+    value: '0.61'
+    unit: G_PER_L
+  notes: 'Role: Buffer'
+- preferred_term: Yeast extract (Difco)
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
 - preferred_term: Peptone
   concentration:
     value: '0.06'
     unit: G_PER_L
-- preferred_term: Tris-HCl buffer
-  concentration:
-    value: '0.61'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
+media_term:
+  preferred_term: TOGO Medium M2361
   term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Add all the components together, except calcium chloride which is added
-    from a sterilized stock solution when the autoclaved medium has cooled. Adjust
-    final pH to 7.5.
-- step_number: 2
-  action: MIX
-  description: "<b>Propagation of DSM 25223 in liquid cultures:</b>\r\n\r\nAdd 3 ml\
-    \ of a <i>Caulobacter vibrioides</i> DSM 25117 culture (grown for 24 h in DSMZ\
-    \ medium 1462) to 20 ml of medium and inoculate with 1 ml of a liquid culture\
-    \ of DSM 25223 or transfer some material with an inoculation loop from the lysis\
-    \ zone of a double layer agar plate. Incubate with shaking (ca. 150 rpm) for approximately\
-    \ 48 h."
+    id: TOGO:M2361
+    label: YE/10 + Ca Medium
+notes: 'Source: https://togomedium.org/medium/M2361
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1463.pdf'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:14.507491Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1463'
-- timestamp: '2026-03-13T06:18:59.648112Z'
+- timestamp: '2026-01-27T06:35:56.396217Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2361'
+- timestamp: '2026-01-28T19:48:26.824507Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:01.478134Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000929'
-- timestamp: '2026-03-17T06:30:56.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:008947'
+- timestamp: '2026-03-17T06:30:22.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:11.179583+00:00'
+- timestamp: '2026-03-17T19:46:20.204093+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "YE/10 + Ca MEDIUM" to "ye_10_ca_medium" for consistent
+  notes: Normalized name from "YE/10 + Ca Medium" to "ye_10_ca_medium" for consistent
     matching
-kg_microbe_match: mediadive.medium:1143
-merge_fingerprint: 9df5c9298de426f6bc9df00ec694ec5f33a5745e74bd2d2a0e14c856ba0095d2
+- timestamp: '2026-06-05T07:40:36.482931+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:11.564846+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 85179629381556f3dd800729182d8348cc021c59bd28f11bdd1f87d08b258c3f
+  source: TOGO_M2361_YE_10_Ca_Medium.yaml
+merge_fingerprint: 85179629381556f3dd800729182d8348cc021c59bd28f11bdd1f87d08b258c3f
 merged_from:
-- ye_10_ca_medium
+- TOGO_M2361_YE_10_Ca_Medium

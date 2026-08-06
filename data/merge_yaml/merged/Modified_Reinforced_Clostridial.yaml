@@ -3,6 +3,7 @@ name: modified_reinforced_clostridial
 original_name: Modified Reinforced Clostridial
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Resazurin (0.025%)
@@ -24,9 +25,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Dextrose
   concentration:
     value: '5'
@@ -36,9 +37,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Dextrose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Sodium Acetate
   concentration:
     value: '3'
@@ -47,9 +48,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
-    label: Sodium Acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: DI Water
   concentration:
     value: '1000'
@@ -61,6 +62,9 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Undefined component'
+  term:
+    id: CHEBI:28017
+    label: ''
 - preferred_term: Beef Extract
   concentration:
     value: '10'
@@ -76,8 +80,8 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000223
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91247
     label: L-Cysteine HCl
   term:
     id: CHEBI:91247
@@ -114,6 +118,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Modified Reinforced Clostridial" to "modified_reinforced_clostridial"
     for consistent matching
-merge_fingerprint: e1166e8568d84270ab25ccccee5ae86f4649174d820eb8b6126dbeca196774af
+- timestamp: '2026-06-05T07:41:37.669736+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:49.704726+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 9b8dac725524f86975010303cd383615af62eee29c53935fa3b1569f10815964
+  source: modified_reinforced_clostridial.yaml
+merge_fingerprint: 9b8dac725524f86975010303cd383615af62eee29c53935fa3b1569f10815964
 merged_from:
 - modified_reinforced_clostridial

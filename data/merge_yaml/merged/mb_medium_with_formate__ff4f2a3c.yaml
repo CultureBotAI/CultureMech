@@ -1,0 +1,64 @@
+id: CultureMech:003033
+name: mb_medium_with_formate
+original_name: MB MEDIUM WITH FORMATE
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J688
+  term:
+    id: mediadive.medium:J688
+    label: MB MEDIUM WITH FORMATE
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=688'
+ingredients:
+- preferred_term: Sodium formate
+  term:
+    id: CHEBI:62965
+    label: Sodium formate
+  concentration:
+    value: '136'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62965
+    label: Sodium formate
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 687, replacing Methanol solution with Sodium formate
+    solution (see below).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.303585Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J688'
+- timestamp: '2026-03-13T06:19:17.320815Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003033'
+- timestamp: '2026-03-17T06:30:33.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:30.996269+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MB MEDIUM WITH FORMATE" to "mb_medium_with_formate"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:13.286805+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:42.213975+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint ff4f2a3cfb86f705ed675477a7bb93306d805adfb9a9ce694acd20c974b9f708
+  source: mb_medium_with_formate.yaml
+kg_microbe_match: mediadive.medium:J688
+merge_fingerprint: ff4f2a3cfb86f705ed675477a7bb93306d805adfb9a9ce694acd20c974b9f708
+merged_from:
+- mb_medium_with_formate

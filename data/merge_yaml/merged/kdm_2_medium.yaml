@@ -3,6 +3,7 @@ name: kdm_2_medium
 original_name: KDM-2 medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 6.5
 media_term:
@@ -28,8 +29,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
     label: L-Cysteine HCl x H2O
 - preferred_term: Agar
   term:
@@ -38,8 +39,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Activated charcoal
   concentration:
@@ -72,10 +73,32 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "KDM-2 medium" to "kdm_2_medium" for consistent matching
-- timestamp: '2026-04-17T06:29:23.956971+00:00'
+- timestamp: '2026-06-05T07:40:23.323755+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:49.336337+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_435_KDM-2_medium, kdm_2_medium'
+- timestamp: '2026-08-06T03:04:49.336376+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint a86de0b81a4313bc4212a5dd72cb2d6d3158d36a47ff72aca7059ab8c9d41dac
+  source: KOMODO_435_KDM-2_medium.yaml, kdm_2_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/kdm_2_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001543
+  name: kdm_2_medium
+  notes: KOMODO record states DSMZ Medium 435 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 categories:
 - bacterial
 merged_from:

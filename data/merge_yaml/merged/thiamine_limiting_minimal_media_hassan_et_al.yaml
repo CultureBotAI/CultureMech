@@ -3,6 +3,7 @@ name: thiamine_limiting_minimal_media_hassan_et_al
 original_name: '''thiamine limiting minimal media (Hassan et al'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose
@@ -13,14 +14,17 @@ ingredients:
     value: '4.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Citrate
   concentration:
     value: '9.51728'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: Thiamine
   term:
     id: CHEBI:26948
@@ -39,13 +43,16 @@ ingredients:
   concentration:
     value: '1.92926'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000355
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27570
     label: Histidine
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '57.405'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -53,8 +60,8 @@ ingredients:
   concentration:
     value: '0.811458'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Sodium ammonium phosphate
   concentration:
@@ -89,11 +96,23 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'thiamine limiting minimal media (Hassan et al" to
     "thiamine_limiting_minimal_media_hassan_et_al" for consistent matching
-- timestamp: '2026-04-17T06:30:05.081290+00:00'
+- timestamp: '2026-06-05T07:41:51.058922+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:36.235855+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: glucose_limiting_minimal_media_hassan_et_al, glucose_minimal_media_hassan_et_al,
     histidine_limiting_minimal_media_hassan_et_al, thiamine_limiting_minimal_media_hassan_et_al'
+- timestamp: '2026-08-06T03:05:36.235900+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 4 source recipe(s) on fingerprint 03f95806175fb899689ad0b195eba135463d23431776e4a2507d7256f91c9daa
+  source: glucose_limiting_minimal_media_hassan_et_al.yaml, glucose_minimal_media_hassan_et_al.yaml,
+    histidine_limiting_minimal_media_hassan_et_al.yaml, thiamine_limiting_minimal_media_hassan_et_al.yaml
 media_term:
   preferred_term: MediaDB Medium 117
   term:
@@ -105,6 +124,17 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+parent_media:
+  path: data/normalized_yaml/bacterial/glucose_minimal_media_hassan_et_al.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:007002
+  name: glucose_minimal_media_hassan_et_al
+  notes: MediaDB Hassan minimal-media limiting-nutrient grid; reviewed as concentration
+    variants of the glucose minimal medium record.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Thiamine concentration decreased from 0.113053 mM to 0.000188423 mM; all other parsed
+  ingredient concentrations match the parent.
 synonyms:
 - name: glucose_limiting_minimal_media_hassan_et_al
   source: unknown
@@ -125,4 +155,4 @@ merged_from:
 - glucose_minimal_media_hassan_et_al
 - histidine_limiting_minimal_media_hassan_et_al
 - thiamine_limiting_minimal_media_hassan_et_al
-merge_fingerprint: ecbf5e0a0d97829a4da50bb8290f21530f2ed5824e32b268bd19e70e049c6dd9
+merge_fingerprint: 03f95806175fb899689ad0b195eba135463d23431776e4a2507d7256f91c9daa

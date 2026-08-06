@@ -3,6 +3,7 @@ name: mrs_agar
 original_name: MRS agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: MRS agar (Oxoid)
@@ -30,6 +31,11 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "MRS agar" to "mrs_agar" for consistent matching
+- timestamp: '2026-08-06T03:05:50.418633+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 486ac22cb87bba0af29c14313c590a4450338234ae2e13f4a8f351b974c22fc6
+  source: mrs_agar.yaml
 merge_fingerprint: 486ac22cb87bba0af29c14313c590a4450338234ae2e13f4a8f351b974c22fc6
 merged_from:
 - mrs_agar

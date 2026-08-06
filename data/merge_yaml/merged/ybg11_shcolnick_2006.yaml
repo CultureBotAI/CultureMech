@@ -3,17 +3,24 @@ name: ybg11_shcolnick_2006
 original_name: '''YBG11 (Shcolnick 2006'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '1.75'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Citrate
   concentration:
     value: '0.03'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -21,13 +28,16 @@ ingredients:
   concentration:
     value: '0.045'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Manganese chloride
   concentration:
     value: '0.009'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.0016'
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '0.2449'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -46,9 +59,9 @@ ingredients:
   concentration:
     value: '0.0007'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -56,13 +69,16 @@ ingredients:
   concentration:
     value: '0.3'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.0003'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Sodium nitrate
   term:
     id: CHEBI:63005
@@ -70,8 +86,8 @@ ingredients:
   concentration:
     value: '17.5'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000388
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
     label: Sodium nitrate
 - preferred_term: Sodium carbonate
   concentration:
@@ -80,9 +96,9 @@ ingredients:
   term:
     id: CHEBI:29377
     label: sodium carbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
-    label: Sodium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.006'
@@ -91,6 +107,9 @@ ingredients:
   concentration:
     value: '0.00016'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:86209
+    label: ''
 - preferred_term: HEPES
   term:
     id: CHEBI:46756
@@ -98,8 +117,8 @@ ingredients:
   concentration:
     value: '10.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001034
+  mediaingredientmech_chebi_term:
+    id: CHEBI:46756
     label: HEPES
 - preferred_term: Sodium EDTA
   concentration:
@@ -138,6 +157,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'YBG11 (Shcolnick 2006" to "ybg11_shcolnick_2006" for
     consistent matching
+- timestamp: '2026-06-05T07:41:55.582763+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:02.980476+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 27183f6ac214d83a43eb470120ac62427c7a212bb0b3266badb5f62ce19057da
+  source: ybg11_shcolnick_2006.yaml
 media_term:
   preferred_term: MediaDB Medium 383
   term:
@@ -149,6 +179,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 13d4bcdd682098db6d5780c6f0c0938c380bab7a5fc2b3d6915e1caf5e95ad98
+merge_fingerprint: 27183f6ac214d83a43eb470120ac62427c7a212bb0b3266badb5f62ce19057da
 merged_from:
 - ybg11_shcolnick_2006

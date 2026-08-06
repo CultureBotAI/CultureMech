@@ -1,131 +1,116 @@
-id: CultureMech:009167
+id: CultureMech:002624
 name: an1_medium
-original_name: AN1 Medium
+original_name: AN1 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: JCM Medium J267
+  term:
+    id: mediadive.medium:J267
+    label: AN1 MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=267'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: NaCl
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: K2HPO4
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
-  term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
-- preferred_term: Resazurin
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Organic
-    compound, Simple component'
-  term:
-    id: CHEBI:8806
-    label: Resazurin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
-    label: Resazurin
-- preferred_term: Sulfur (powder)
-  concentration:
-    value: '8'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:33403
-    label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001072
-    label: Sulfur (powder)
-- preferred_term: Trypticase peptone (BD-BBL)
+- preferred_term: Trypticase peptone
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: K2HPO4
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
 - preferred_term: Sodium thioglycolate
+  term:
+    id: CHEBI:86481
+    label: Sodium thioglycolate
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Simple component, Organic compound'
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:86481
-    label: sodium thioglycolate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000569
     label: Sodium thioglycolate
-- preferred_term: N2
-  notes: 'Properties: Gas'
+- preferred_term: Sulfur
+  term:
+    id: CHEBI:26833
+    label: Sulfur
   concentration:
-    value: variable
-    unit: VARIABLE
+    value: '8'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26833
+    label: Sulfur
+- preferred_term: Resazurin
   term:
-    id: CHEBI:17997
-    label: ''
-media_term:
-  preferred_term: TOGO Medium M259
-  term:
-    id: TOGO:M259
-    label: AN1 Medium
-notes: 'Source: https://togomedium.org/medium/M259
-
-  Original source: JCM - JCM_M267
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=267'
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Mix ingredients, except sodium thioglycolate and sulfur, and adjust
+    pH to 7.3. Autoclave the medium under a N2 atmosphere. Separately autoclave sodium
+    thioglycolate as 10% solution under a N2 atmosphere. Steam sulfur for 3 hr on
+    each of 3 successive days. Under a N2 stream, mix the medium and sulfur in culture
+    vessels and seal with butyl rubber stoppers. Prior to inoculation, add the thioglycolate
+    solution to the medium anaerobically.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.717622Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M259'
-- timestamp: '2026-01-28T19:48:20.156387Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:54.813649'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: N2'
-- timestamp: '2026-03-13T06:20:03.520694Z'
+- timestamp: '2026-01-26T17:53:16.129921Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J267'
+- timestamp: '2026-03-13T06:19:14.606417Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:009167'
-- timestamp: '2026-03-17T06:30:08.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:002624'
+- timestamp: '2026-03-17T06:30:30.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:22.246740+00:00'
+- timestamp: '2026-03-17T19:45:27.890842+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "AN1 Medium" to "an1_medium" for consistent matching
-merge_fingerprint: fa21b729f991a9f9c91ae05c3cd2f291753beddd730e2136f2d41389d9a36a8c
+  notes: Normalized name from "AN1 MEDIUM" to "an1_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:16.946461+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:42.869342+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:35.891494+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b1b75d60b1accad4322b7663a27863e9d96312089f7a7ab4279f0464995ae143
+  source: JCM_J267_AN1_MEDIUM.yaml
+kg_microbe_match: mediadive.medium:J267
+merge_fingerprint: b1b75d60b1accad4322b7663a27863e9d96312089f7a7ab4279f0464995ae143
 merged_from:
-- TOGO_M259_AN1_Medium
+- JCM_J267_AN1_MEDIUM

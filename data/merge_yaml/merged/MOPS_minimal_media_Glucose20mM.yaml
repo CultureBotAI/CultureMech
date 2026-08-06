@@ -1,6 +1,7 @@
 id: CultureMech:015629
 name: MOPS minimal media Glucose20mM
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose
@@ -90,6 +91,9 @@ ingredients:
     value: '3.00E-09'
     unit: MOLAR
   notes: 'CAS: 12027-67-7; MW: 1235.86'
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: Boric Acid
   concentration:
     value: '4.00E-07'
@@ -132,7 +136,7 @@ ingredients:
     label: ''
 description: MOPS minimal media with Glucose 20mM
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: MOPS minimal media Glucose20mM
@@ -146,8 +150,17 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015629'
+- timestamp: '2026-05-16T09:04:41.910017+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:06.757601+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 6489a0e99c80a8a545810c8ca0b462649fdcb823350e7cfc73455e09e448d4eb
+  source: mops_minimal_media_glucose20mm.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: f027fba4dd46240481fdb167c0eb7b28cba1bf6d57a306799dabb16fa88ca703
+merge_fingerprint: 6489a0e99c80a8a545810c8ca0b462649fdcb823350e7cfc73455e09e448d4eb
 merged_from:
 - mops_minimal_media_glucose20mm

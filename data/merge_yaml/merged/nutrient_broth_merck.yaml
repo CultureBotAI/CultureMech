@@ -3,6 +3,7 @@ name: nutrient_broth_merck
 original_name: Nutrient broth (Merck)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Peptone from meat
@@ -37,6 +38,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Nutrient broth (Merck)" to "nutrient_broth_merck" for
     consistent matching
+- timestamp: '2026-08-06T03:05:51.705466+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint ef86506d60c4bff5612533d9f74c9c9857537c27e5bec2c91aac770209691eff
+  source: nutrient_broth_merck.yaml
 merge_fingerprint: ef86506d60c4bff5612533d9f74c9c9857537c27e5bec2c91aac770209691eff
 merged_from:
 - nutrient_broth_merck

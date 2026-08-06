@@ -3,6 +3,7 @@ name: sea_water_luria_bertani_medium
 original_name: SEA WATER LURIA BERTANI MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 8.0
 media_term:
@@ -27,8 +28,8 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Sea water
   concentration:
@@ -58,6 +59,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "SEA WATER LURIA BERTANI MEDIUM" to "sea_water_luria_bertani_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:41:45.462975+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:55.458819+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 5a60ecab4e83dcd1c648b76c4d3900543c2fc1b2bf61f491cbc62d1b84d29c98
+  source: sea_water_luria_bertani_medium.yaml
 kg_microbe_match: mediadive.medium:74
 merge_fingerprint: 5a60ecab4e83dcd1c648b76c4d3900543c2fc1b2bf61f491cbc62d1b84d29c98
 merged_from:

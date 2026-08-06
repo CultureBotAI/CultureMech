@@ -3,6 +3,7 @@ name: chaetomium_medium
 original_name: CHAETOMIUM medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
@@ -30,8 +31,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: KCl
   term:
@@ -40,8 +41,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: Fe2(SO4)3 x H2O
   concentration:
@@ -50,22 +51,22 @@ ingredients:
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.14'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '1.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: Agar
   term:
@@ -74,8 +75,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Yeast extract
   concentration:
@@ -109,13 +110,40 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CHAETOMIUM medium" to "chaetomium_medium" for consistent
     matching
-- timestamp: '2026-04-17T06:29:19.358425+00:00'
+- timestamp: '2026-06-05T07:40:21.438489+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:44.318127+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:44.004691+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_188_CHAETOMIUM_medium, chaetomium_medium'
+- timestamp: '2026-08-06T03:04:44.004721+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 2ea1eac1d87de4311be545a89e0e21a3f8825f8a6b4bab90fbd1ea9848424846
+  source: KOMODO_188_CHAETOMIUM_medium.yaml, chaetomium_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/chaetomium_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001280
+  name: chaetomium_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 188; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 188; local ingredient
+  and concentration signatures match.
 categories:
 - bacterial
 merged_from:
 - KOMODO_188_CHAETOMIUM_medium
 - chaetomium_medium
-merge_fingerprint: 36b11c4e61596cf12f6c782f4bb6eae4a4cd2830e0a8499a33fc02d64c7704c4
+merge_fingerprint: 2ea1eac1d87de4311be545a89e0e21a3f8825f8a6b4bab90fbd1ea9848424846

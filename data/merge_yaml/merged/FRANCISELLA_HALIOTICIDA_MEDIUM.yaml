@@ -3,6 +3,7 @@ name: francisella_halioticida_medium
 original_name: FRANCISELLA HALIOTICIDA MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 429d
@@ -37,8 +38,8 @@ ingredients:
     value: '17.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 2.0, 15.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Horse blood
   concentration:
@@ -51,8 +52,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: FeCl3
   term:
@@ -61,8 +62,8 @@ ingredients:
   concentration:
     value: '0.3244'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000705
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30808
     label: FeCl3
 - preferred_term: Cysteine
   term:
@@ -71,8 +72,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001023
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15356
     label: Cysteine
 - preferred_term: Casein peptone
   concentration:
@@ -89,8 +90,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Calf brains
   term:
@@ -223,6 +224,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "FRANCISELLA HALIOTICIDA MEDIUM" to "francisella_halioticida_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:41:05.403978+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:35.572650+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 756018919468a23e5b0ba1bc28f8a33148c792f4c20c62d8e0bbe57ac8646dcf
+  source: francisella_halioticida_medium.yaml
 merge_fingerprint: 756018919468a23e5b0ba1bc28f8a33148c792f4c20c62d8e0bbe57ac8646dcf
 merged_from:
 - francisella_halioticida_medium

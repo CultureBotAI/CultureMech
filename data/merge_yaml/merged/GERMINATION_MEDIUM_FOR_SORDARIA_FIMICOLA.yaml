@@ -1,86 +1,119 @@
-id: CultureMech:002511
+id: CultureMech:007979
 name: germination_medium_for_sordaria_fimicola
-original_name: GERMINATION MEDIUM FOR SORDARIA FIMICOLA
+original_name: Germination Medium For Sordaria Fimicola
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-media_term:
-  preferred_term: JCM Medium J152
-  term:
-    id: mediadive.medium:J152
-    label: GERMINATION MEDIUM FOR SORDARIA FIMICOLA
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=152'
 ingredients:
-- preferred_term: Corn meal agar
-  term:
-    id: CHEBI:2509
-    label: Corn meal agar
+- preferred_term: Distilled water
   concentration:
-    value: '4'
+    value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Corn meal agar
-- preferred_term: Sucrose
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
-    id: CHEBI:17992
-    label: Sucrose
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000661
-    label: Sucrose
-- preferred_term: Glucose
-  term:
-    id: CHEBI:17234
-    label: Glucose
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
-    label: Glucose
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Sodium acetate
-  term:
-    id: CHEBI:32954
-    label: Sodium acetate
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
-    label: Sodium acetate
-- preferred_term: Agar
+  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
   term:
-    id: CHEBI:2509
-    label: Agar
+    id: CHEBI:32954
+    label: sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
+- preferred_term: Sucrose
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:17992
+    label: sucrose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17992
+    label: sucrose
+- preferred_term: Glucose
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Corn meal agar (BD-Difco)
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M143
+  term:
+    id: TOGO:M143
+    label: Germination Medium For Sordaria Fimicola
+notes: 'Source: https://togomedium.org/medium/M143
+
+  Original source: JCM - JCM_M152
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=152'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:15.830349Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J152'
-- timestamp: '2026-03-13T06:19:13.901575Z'
+- timestamp: '2026-01-27T06:35:54.512043Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M143'
+- timestamp: '2026-01-28T19:48:34.010754Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:52.816296Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002511'
-- timestamp: '2026-03-17T06:29:54.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:007979'
+- timestamp: '2026-03-17T06:30:37.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:27.074911+00:00'
+- timestamp: '2026-03-17T19:46:11.296453+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "GERMINATION MEDIUM FOR SORDARIA FIMICOLA" to "germination_medium_for_sordaria_fimicola"
+  notes: Normalized name from "Germination Medium For Sordaria Fimicola" to "germination_medium_for_sordaria_fimicola"
     for consistent matching
-merge_fingerprint: b919d7362c2977278c9d433f9b787d969d5a434049421689a7e3c745ffa39302
+- timestamp: '2026-06-05T07:40:33.093786+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:08.748426+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint c46660e0274039a87bd770f4d1bdc95a3a70c29c405a3d0979a9f8acca8d0b37
+  source: TOGO_M143_Germination_Medium_For_Sordaria_Fimicola.yaml
+merge_fingerprint: c46660e0274039a87bd770f4d1bdc95a3a70c29c405a3d0979a9f8acca8d0b37
 merged_from:
-- germination_medium_for_sordaria_fimicola
+- TOGO_M143_Germination_Medium_For_Sordaria_Fimicola

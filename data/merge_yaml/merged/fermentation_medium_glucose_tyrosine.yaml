@@ -3,6 +3,7 @@ name: fermentation_medium_glucose_tyrosine
 original_name: '''Fermentation Medium (Glucose+Tyrosine'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Riboflavin
@@ -13,25 +14,34 @@ ingredients:
     value: '0.0003986'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: DL-Tyrosine
   concentration:
     value: '130.9'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000316
+  term:
+    id: CHEBI:17895
+    label: L-Tyrosine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17895
     label: DL-Tyrosine
 - preferred_term: Nicotinate
   concentration:
     value: '0.09747'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:nac'
+  term:
+    id: CHEBI:15940
+    label: ''
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '36.74'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -39,8 +49,8 @@ ingredients:
   concentration:
     value: '111.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Biotin
   term:
@@ -50,8 +60,8 @@ ingredients:
     value: '0.0001228'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Thiamine HCl
   term:
@@ -60,18 +70,18 @@ ingredients:
   concentration:
     value: '0.0001334'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Pyridoxine HCl
   concentration:
     value: '0.001459'
     unit: MILLIMOLAR
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000703
+    id: CHEBI:30961
+    label: Pyridoxine HCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
     label: Pyridoxine HCl
 - preferred_term: Magnesium sulfate
   term:
@@ -80,8 +90,8 @@ ingredients:
   concentration:
     value: '3.246'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 preparation_steps:
 - step_number: 1
@@ -121,6 +131,23 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'Fermentation Medium (Glucose+Tyrosine" to "fermentation_medium_glucose_tyrosine"
     for consistent matching
+- timestamp: '2026-06-05T07:41:00.041718+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:38.289130+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:05:34.103490+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b6b9d3ae41d86f21d11ce900aefaa2be4fb87503d2691237ca01f4c69fba4c58
+  source: fermentation_medium_glucose_tyrosine.yaml
 media_term:
   preferred_term: MediaDB Medium 367
   term:
@@ -132,6 +159,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 35914c5c41f94c213c3267307ee5c2809348fc4244d1b1d6d26da9336cd30873
+merge_fingerprint: b6b9d3ae41d86f21d11ce900aefaa2be4fb87503d2691237ca01f4c69fba4c58
 merged_from:
 - fermentation_medium_glucose_tyrosine

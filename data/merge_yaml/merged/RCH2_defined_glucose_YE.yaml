@@ -1,6 +1,7 @@
 id: CultureMech:015709
 name: RCH2 defined glucose YE
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Ammonium chloride
@@ -172,8 +173,8 @@ ingredients:
     value: '0.1'
     unit: MG_PER_L
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Wolfe''s vitamin
     mix'
 - preferred_term: 4-Aminobenzoic acid
@@ -264,7 +265,7 @@ ingredients:
   notes: 'CAS: 232-387-9'
 description: Defined minimal media for soil and groundwater bacteria with glucose
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: RCH2 defined glucose YE
@@ -278,8 +279,27 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015709'
+- timestamp: '2026-05-16T09:04:42.944630+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:53.749290+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:47:15.662635+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:07.841516+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 233780b8e8391b17d5d06e7693de692fb0a69d6b901334f52c640532940c0c71
+  source: rch2_defined_glucose_ye.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: 0a964abbada304770ced4e8ab4025716f7936578b6ab7f2994711f8eb1aa9f13
+merge_fingerprint: 233780b8e8391b17d5d06e7693de692fb0a69d6b901334f52c640532940c0c71
 merged_from:
 - rch2_defined_glucose_ye

@@ -3,6 +3,7 @@ name: pseudoalteromonas_espejiana_medium
 original_name: PSEUDOALTEROMONAS ESPEJIANA  MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
@@ -23,8 +24,8 @@ ingredients:
   concentration:
     value: '0.7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -33,8 +34,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -43,8 +44,8 @@ ingredients:
   concentration:
     value: '12'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: NaCl
   term:
@@ -53,8 +54,8 @@ ingredients:
   concentration:
     value: '26'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Agar
   term:
@@ -64,8 +65,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: Optional ingredient
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -94,6 +95,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "PSEUDOALTEROMONAS ESPEJIANA  MEDIUM" to "pseudoalteromonas_espejiana_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:41:42.628851+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:53.607220+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e3f9d95cf703bf78564e73c2dbf125765e45497ff3fd0787d442d044c770d79d
+  source: pseudoalteromonas_espejiana_medium.yaml
 merge_fingerprint: e3f9d95cf703bf78564e73c2dbf125765e45497ff3fd0787d442d044c770d79d
 merged_from:
 - pseudoalteromonas_espejiana_medium

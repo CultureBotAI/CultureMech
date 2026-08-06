@@ -3,6 +3,7 @@ name: mic_herriott_et_al
 original_name: Mic; Herriott et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: ''
@@ -14,6 +15,9 @@ ingredients:
     value: '8.83572'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glu-L'
+  term:
+    id: CHEBI:16015
+    label: ''
 - preferred_term: Glycine
   term:
     id: CHEBI:15428
@@ -22,8 +26,8 @@ ingredients:
     value: '0.39963'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gly'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000244
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15428
     label: Glycine
 - preferred_term: L-Lysine
   term:
@@ -33,8 +37,8 @@ ingredients:
     value: '0.34202'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:lys-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000318
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18019
     label: L-Lysine
 - preferred_term: L-Aspartate
   concentration:
@@ -49,8 +53,8 @@ ingredients:
     value: '3.36738'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:arg-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000289
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16467
     label: L-Arginine
 - preferred_term: L-Serine
   term:
@@ -60,8 +64,8 @@ ingredients:
     value: '0.95157'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ser-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000270
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17115
     label: L-Serine
 - preferred_term: L-Methionine
   term:
@@ -71,8 +75,8 @@ ingredients:
     value: '0.6702'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:met-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000274
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16643
     label: L-Methionine
 - preferred_term: L-Tyrosine
   term:
@@ -82,8 +86,8 @@ ingredients:
     value: '1.10381'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:tyr-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000316
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17895
     label: L-Tyrosine
 - preferred_term: L-Cysteine
   term:
@@ -93,8 +97,8 @@ ingredients:
     value: '0.83229'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cys-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000923
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17561
     label: L-Cysteine
 - preferred_term: Uracil
   term:
@@ -104,8 +108,8 @@ ingredients:
     value: '0.89217'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ura'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000501
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17568
     label: Uracil
 - preferred_term: Glycerol
   term:
@@ -115,8 +119,8 @@ ingredients:
     value: '32.5768'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glyc'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: L-Leucine
   term:
@@ -126,8 +130,8 @@ ingredients:
     value: '2.28711'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:leu-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000278
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15603
     label: L-Leucine
 - preferred_term: L-Histidine
   term:
@@ -137,8 +141,8 @@ ingredients:
     value: '0.06445'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:his-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000272
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15971
     label: L-Histidine
 - preferred_term: Hypoxanthine
   term:
@@ -148,8 +152,8 @@ ingredients:
     value: '0.14693'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:hxan'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000681
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17368
     label: Hypoxanthine
 - preferred_term: EDTA
   term:
@@ -158,8 +162,8 @@ ingredients:
   concentration:
     value: '0.01369'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000165
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64755
     label: EDTA
 - preferred_term: Inosine
   concentration:
@@ -191,8 +195,8 @@ ingredients:
   concentration:
     value: '2.68118'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000660
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28621
     label: Triethanolamine
 - preferred_term: Magnesium chloride
   concentration:
@@ -201,13 +205,16 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.19823'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Tween 80
   term:
     id: CHEBI:53426
@@ -215,8 +222,8 @@ ingredients:
   concentration:
     value: '0.01527'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000190
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53426
     label: Tween 80
 - preferred_term: Potassium sulfate
   concentration:
@@ -229,6 +236,9 @@ ingredients:
   concentration:
     value: '20.0918'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -236,9 +246,9 @@ ingredients:
   concentration:
     value: '99.2471'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -246,13 +256,16 @@ ingredients:
   concentration:
     value: '0.00839'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium pantothenate
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '19.8404'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Hemin
   term:
     id: CHEBI:50385
@@ -260,8 +273,8 @@ ingredients:
   concentration:
     value: '0.01534'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
     label: Hemin
 - preferred_term: Sodium L-lactate
   term:
@@ -270,8 +283,8 @@ ingredients:
   concentration:
     value: '7.13903'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000540
+  mediaingredientmech_chebi_term:
+    id: CHEBI:232798
     label: Sodium L-lactate
 preparation_steps:
 - step_number: 1
@@ -284,6 +297,11 @@ preparation_steps:
   action: FILTER_STERILIZE
   description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: Absent/obsolete CHEBI term ids fixed - 2 re-grounded to the correct CHEBI,
+    0 de-grounded (mixture or unverifiable).
 - timestamp: '2026-01-27T07:21:45.200553Z'
   curator: mediadb-import
   action: Imported from MediaDB
@@ -306,6 +324,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Mic; Herriott et al" to "mic_herriott_et_al" for consistent
     matching
+- timestamp: '2026-06-05T07:41:33.735168+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 20 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:45.288798+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 8e90bb65c3e50ed6a2221e22049a113fa80561ece8da27249726e8377d5ed247
+  source: mic_herriott_et_al.yaml
 media_term:
   preferred_term: MediaDB Medium 281
   term:
@@ -317,6 +346,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 7d651aa44fc3e8888bb6dffd274950a735249a65c0b6244fc7b59f0b5fc108fc
+merge_fingerprint: 8e90bb65c3e50ed6a2221e22049a113fa80561ece8da27249726e8377d5ed247
 merged_from:
 - mic_herriott_et_al

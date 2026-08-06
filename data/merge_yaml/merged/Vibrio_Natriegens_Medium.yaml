@@ -1,80 +1,142 @@
-id: CultureMech:008871
+id: CultureMech:003869
 name: vibrio_natriegens_medium
-original_name: Vibrio Natriegens Medium
+original_name: VIBRIO NATRIEGENS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+media_term:
+  preferred_term: KOMODO Medium 115
+  term:
+    id: komodo.medium:115
+    label: VIBRIO NATRIEGENS medium
+notes: 'Source: KOMODO ModelSEED | ID: 115 | DSMZ Medium: 115 (mediadive.medium:115)
+  | Aerobic: No'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: NaCl
-  concentration:
-    value: '1.5'
-    unit: PERCENT_W_V
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: Agar, if necessary
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Meat extract
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
 - preferred_term: Peptone
   concentration:
-    value: '5'
+    value: '0.1'
     unit: G_PER_L
-media_term:
-  preferred_term: TOGO Medium M2285
+- preferred_term: Meat extract
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: NaCl
   term:
-    id: TOGO:M2285
-    label: Vibrio Natriegens Medium
-notes: 'Source: https://togomedium.org/medium/M2285
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium115.pdf'
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.280076Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2285'
-- timestamp: '2026-01-28T19:48:33.012834Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:20:00.931670Z'
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 115'
+- timestamp: '2026-02-03T11:19:04.346763'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 115
+- timestamp: '2026-03-13T06:19:22.836858Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:008871'
-- timestamp: '2026-03-17T06:30:35.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:003869'
+- timestamp: '2026-03-17T06:30:09.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:19.624541+00:00'
+- timestamp: '2026-03-17T19:45:37.285212+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Vibrio Natriegens Medium" to "vibrio_natriegens_medium"
+  notes: Normalized name from "VIBRIO NATRIEGENS medium" to "vibrio_natriegens_medium"
     for consistent matching
-merge_fingerprint: 46ee1054a812ce49a619ba589c45dadf2e053deeb7306c93264405749a68a2bb
+- timestamp: '2026-06-05T07:40:19.456919+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:33.379364+00:00'
+  curator: recipe-merger
+  action: Merged 11 duplicate recipes into canonical record
+  notes: 'Sources: 1_100_nutrient_agar_no_2, 1_10_nutrient_agar_no_2, KOMODO_101_NUTRIENT_AGAR_or_BROTH_WITH_NaCl,
+    KOMODO_114_PARACOCCUS_HALODENITRIFICANS_medium, KOMODO_115_VIBRIO_NATRIEGENS_medium,
+    KOMODO_952_1_10_NUTRIENT_AGAR_NO.2, KOMODO_953_1_100_NUTRIENT_AGAR_NO.2, nutrient_agar_or_broth_with_nacl,
+    paracoccus_halodenitrificans_medium, reactivation_with_liquid_medium_115, vibrio_natriegens_medium'
+- timestamp: '2026-08-06T03:04:33.379442+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 11 source recipe(s) on fingerprint b666ac462de10a5c4549a7da688c02c1100a953c3cf0be81a811eaa677644a08
+  source: 1_100_nutrient_agar_no_2.yaml, 1_10_nutrient_agar_no_2.yaml, KOMODO_101_NUTRIENT_AGAR_or_BROTH_WITH_NaCl.yaml,
+    KOMODO_114_PARACOCCUS_HALODENITRIFICANS_medium.yaml, KOMODO_115_VIBRIO_NATRIEGENS_medium.yaml,
+    KOMODO_952_1_10_NUTRIENT_AGAR_NO.2.yaml, KOMODO_953_1_100_NUTRIENT_AGAR_NO.2.yaml,
+    nutrient_agar_or_broth_with_nacl.yaml, paracoccus_halodenitrificans_medium.yaml,
+    reactivation_with_liquid_medium_115.yaml, vibrio_natriegens_medium.yaml
+kg_microbe_match: mediadive.medium:101
+synonyms:
+- name: 1_100_nutrient_agar_no_2
+  source: MediaDive
+  source_id: mediadive.medium:953
+  original_category: bacterial
+- name: 1_10_nutrient_agar_no_2
+  source: MediaDive
+  source_id: mediadive.medium:952
+  original_category: bacterial
+- name: nutrient_agar_or_broth_with_nacl
+  source: KOMODO
+  source_id: komodo.medium:101
+  original_category: bacterial
+- name: paracoccus_halodenitrificans_medium
+  source: KOMODO
+  source_id: komodo.medium:114
+  original_category: bacterial
+- name: 1_10_nutrient_agar_no_2
+  source: KOMODO
+  source_id: komodo.medium:952
+  original_category: bacterial
+- name: 1_100_nutrient_agar_no_2
+  source: KOMODO
+  source_id: komodo.medium:953
+  original_category: bacterial
+- name: nutrient_agar_or_broth_with_nacl
+  source: MediaDive
+  source_id: mediadive.medium:101
+  original_category: bacterial
+- name: paracoccus_halodenitrificans_medium
+  source: MediaDive
+  source_id: mediadive.medium:114
+  original_category: bacterial
+- name: reactivation_with_liquid_medium_115
+  source: MediaDive
+  source_id: mediadive.medium:115a
+  original_category: bacterial
+categories:
+- bacterial
 merged_from:
-- TOGO_M2285_Vibrio_Natriegens_Medium
+- 1_100_nutrient_agar_no_2
+- 1_10_nutrient_agar_no_2
+- KOMODO_101_NUTRIENT_AGAR_or_BROTH_WITH_NaCl
+- KOMODO_114_PARACOCCUS_HALODENITRIFICANS_medium
+- KOMODO_115_VIBRIO_NATRIEGENS_medium
+- KOMODO_952_1_10_NUTRIENT_AGAR_NO.2
+- KOMODO_953_1_100_NUTRIENT_AGAR_NO.2
+- nutrient_agar_or_broth_with_nacl
+- paracoccus_halodenitrificans_medium
+- reactivation_with_liquid_medium_115
+- vibrio_natriegens_medium
+merge_fingerprint: b666ac462de10a5c4549a7da688c02c1100a953c3cf0be81a811eaa677644a08

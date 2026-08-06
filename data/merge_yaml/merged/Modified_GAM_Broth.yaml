@@ -3,6 +3,7 @@ name: modified_gam_broth
 original_name: Modified GAM Broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: GAM broth, modified (Nissui)
   concentration:
@@ -56,6 +57,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Modified GAM Broth" to "modified_gam_broth" for consistent
     matching
+- timestamp: '2026-06-05T07:41:36.603713+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:48.297762+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint c63ecf1a3ed1ea2555caa0b524aeca498411bb1b69916ec1753c0fc11306b058
+  source: modified_gam_broth.yaml
 merge_fingerprint: c63ecf1a3ed1ea2555caa0b524aeca498411bb1b69916ec1753c0fc11306b058
 merged_from:
 - modified_gam_broth

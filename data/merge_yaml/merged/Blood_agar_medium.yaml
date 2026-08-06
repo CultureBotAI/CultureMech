@@ -3,6 +3,7 @@ name: blood_agar_medium
 original_name: Blood agar medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Blood agar medium
@@ -32,6 +33,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Blood agar medium" to "blood_agar_medium" for consistent
     matching
+- timestamp: '2026-08-06T03:05:25.616328+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2944f254f846937988d0c90a108a536d58c628b1c92b83925f1a9a9fe5604db4
+  source: blood_agar_medium.yaml
 merge_fingerprint: 2944f254f846937988d0c90a108a536d58c628b1c92b83925f1a9a9fe5604db4
 merged_from:
 - blood_agar_medium

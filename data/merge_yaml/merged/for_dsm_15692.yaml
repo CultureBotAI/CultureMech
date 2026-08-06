@@ -3,6 +3,7 @@ name: for_dsm_15692
 original_name: For DSM 15692
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 notes: 'pH buffer: NaHCO3 | Source: KOMODO ModelSEED | ID: 215c.2 | DSMZ Medium: 215c
@@ -131,9 +132,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogen carbonate
 applications:
 - Microbial cultivation
 curation_history:
@@ -154,9 +155,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:004423'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:33.279706'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaHCO3'
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:36.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -165,6 +166,21 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "For DSM 15692" to "for_dsm_15692" for consistent matching
+- timestamp: '2026-05-16T09:03:33.126743+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:02.166817+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:34.784034+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 69a24e4646ba981a48a91cb6113c46a83951744571642ae92e48a4cbc1afae88
+  source: for_dsm_15692.yaml
 merge_fingerprint: 69a24e4646ba981a48a91cb6113c46a83951744571642ae92e48a4cbc1afae88
 merged_from:
 - for_dsm_15692

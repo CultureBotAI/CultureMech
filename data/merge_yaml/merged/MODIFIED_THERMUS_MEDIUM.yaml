@@ -3,8 +3,11 @@ name: modified_thermus_medium
 original_name: MODIFIED THERMUS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_range: 6-7
+ph_range:
+  min: 6.0
+  max: 7.0
 media_term:
   preferred_term: DSMZ Medium 1562
   term:
@@ -28,8 +31,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -55,6 +58,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MODIFIED THERMUS MEDIUM" to "modified_thermus_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:01:59.819125+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6-7'' -> {''min'': 6.0, ''max'': 7.0}'
+- timestamp: '2026-06-05T07:41:37.910497+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:49.930922+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint a4210d2ec412b073c3163964ac9aa0f7160fde6b2fc9ff12b771b9972e95c4f4
+  source: modified_thermus_medium.yaml
 kg_microbe_match: mediadive.medium:12
 merge_fingerprint: a4210d2ec412b073c3163964ac9aa0f7160fde6b2fc9ff12b771b9972e95c4f4
 merged_from:

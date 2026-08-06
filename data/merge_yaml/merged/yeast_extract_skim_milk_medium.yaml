@@ -3,6 +3,7 @@ name: yeast_extract_skim_milk_medium
 original_name: Yeast extract - SKIM MILK medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 170
@@ -27,8 +28,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -54,10 +55,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Yeast extract - SKIM MILK medium" to "yeast_extract_skim_milk_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:30:28.084951+00:00'
+- timestamp: '2026-06-05T07:41:55.722592+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:03.103316+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: yeast_extract_skim_milk_medium, yeast_extract_skim_milk_medium'
+- timestamp: '2026-08-06T03:06:03.103354+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 0d49a45bf17e70e1b8ed3cd6d6fff18e052b14a798475b67b1ac278eefeb430f
+  source: yeast_extract_skim_milk_medium.yaml, yeast_extract_skim_milk_medium.yaml
 kg_microbe_match: mediadive.medium:12
 categories:
 - bacterial

@@ -4,6 +4,7 @@ original_name: Reinforced Clostridial medium (Oxoid CM149) with sodium lactate (
   solution) at a concentration of 1.5%
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -15,8 +16,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Reinforced Clostridial medium (Oxoid CM149)
   concentration:
@@ -52,9 +53,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009180'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:56.901104'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:29:58.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -65,6 +66,21 @@ curation_history:
   notes: Normalized name from "Reinforced Clostridial medium (Oxoid CM149) with sodium
     lactate (60% solution) at a concentration of 1.5%" to "reinforced_clostridial_medium_oxoid_cm149_with_sodium_lactate_60_solution_at_a_concentration_of_1_5"
     for consistent matching
+- timestamp: '2026-05-16T09:04:30.520907+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:44.147448+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:54.555627+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 1e5d1197844608633a2a6dfb84869e43a17075d718844a65b6a3c5e28486d0f8
+  source: reinforced_clostridial_medium_oxoid_cm149_with_sodium_lactate_60_solution_at_a_concentration_of_1_5.yaml
 solutions:
 - preferred_term: Sodium lactate (60% solution)
   composition: []

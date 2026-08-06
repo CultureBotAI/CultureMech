@@ -1,6 +1,7 @@
 id: CultureMech:015558
 name: Mc formate N Free
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: NaHCO3
@@ -96,6 +97,9 @@ ingredients:
     value: '0.0001'
     unit: G_PER_L
   notes: 'CAS: 10125-13-0; MW: 170.48; From Mc_trace_minerals_SO4free'
+  term:
+    id: CHEBI:86318
+    label: ''
 - preferred_term: aluminum chloride hydrate
   concentration:
     value: '0.0001'
@@ -232,6 +236,9 @@ ingredients:
     value: '0.001'
     unit: G_PER_L
   notes: 'CAS: 62758-13-8; MW: 251.17'
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: 'sodium acetate '
   concentration:
     value: '0.84'
@@ -283,7 +290,7 @@ ingredients:
     label: ''
 description: McCas_formate with no casamino acids or NH4
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: Mc formate N Free
@@ -297,8 +304,21 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015558'
+- timestamp: '2026-05-16T09:04:41.086115+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-10T07:47:15.260774+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:05.687110+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e0eb2acd5573d062f4adb1d757d1ff852bda675b14c3778fae2a1acb56eb5f7b
+  source: mc_formate_n_free.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: 9950f47c02769e2fe56cb60a759bf68a22e6ef742944eac2aa488aabc0e95b8d
+merge_fingerprint: e0eb2acd5573d062f4adb1d757d1ff852bda675b14c3778fae2a1acb56eb5f7b
 merged_from:
 - mc_formate_n_free

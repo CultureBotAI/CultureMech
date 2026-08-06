@@ -3,8 +3,11 @@ name: s_w_amp
 original_name: S/W + AMP
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_range: 7-8
+ph_range:
+  min: 7.0
+  max: 8.0
 media_term:
   preferred_term: CCAP Medium C100
   term:
@@ -45,9 +48,9 @@ curation_history:
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C100'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:16.836914'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Soil'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:18:54.340159Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -56,6 +59,19 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "S/W + AMP" to "s_w_amp" for consistent matching
+- timestamp: '2026-05-16T09:04:31.105341+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-05-20T06:02:04.595326+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7-8'' -> {''min'': 7.0, ''max'': 8.0}'
+- timestamp: '2026-08-06T03:05:55.042832+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint c859fe490e2662411fb5ebc48f4ba6627302f916c013f2918df5b98dfaf1208a
+  source: s_w_amp.yaml
 merge_fingerprint: c859fe490e2662411fb5ebc48f4ba6627302f916c013f2918df5b98dfaf1208a
 merged_from:
 - s_w_amp

@@ -1,26 +1,23 @@
-id: CultureMech:001683
+id: CultureMech:005996
 name: cm_ye_medium
-original_name: CM + YE MEDIUM
+original_name: CM + YE medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.4
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 549 | DSMZ Medium: 549 (mediadive.medium:549)
+  | Aerobic: No'
 media_term:
-  preferred_term: DSMZ Medium 549
+  preferred_term: KOMODO Medium 549
   term:
-    id: mediadive.medium:549
-    label: CM + YE MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium549.pdf'
+    id: komodo.medium:549
+    label: CM + YE medium
 ingredients:
 - preferred_term: Casamino acids
   concentration:
     value: '7.5'
     unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -32,8 +29,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Na3-citrate
   term:
@@ -42,8 +39,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
     label: Na3-citrate
 - preferred_term: KCl
   term:
@@ -52,8 +49,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: NaCl
   term:
@@ -62,8 +59,8 @@ ingredients:
   concentration:
     value: '200'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Agar
   term:
@@ -72,8 +69,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -82,8 +79,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: HCl
   term:
@@ -92,57 +89,73 @@ ingredients:
   concentration:
     value: '0.03646'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000150
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
     label: HCl
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: pH 7.4 (NaOH)
-- step_number: 2
-  action: MIX
-  description: Prepare 4.98% FeSO4 x 7 H2O (= 10 g Fe in 1l 0.001 M HCl)
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  notes: pH adjustment (extracted from notes)
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:11.589060Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 549'
-- timestamp: '2026-01-28T19:48:28.711109Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:19:06.418578Z'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 549'
+- timestamp: '2026-02-03T11:19:05.275305'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 549
+- timestamp: '2026-03-13T03:09:05.567297Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Added pH buffer: NaOH'
+- timestamp: '2026-03-13T06:19:37.517788Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:001683'
-- timestamp: '2026-03-17T06:30:26.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:005996'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:30:11.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:18.611604+00:00'
+- timestamp: '2026-03-17T19:45:54.306840+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CM + YE MEDIUM" to "cm_ye_medium" for consistent matching
-- timestamp: '2026-04-17T06:29:59.071658+00:00'
-  curator: recipe-merger
-  action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: cm_ye_medium, medium_549_modified_for_dsm_25790, medium_549_modified_for_dsm_44640'
+  notes: Normalized name from "CM + YE medium" to "cm_ye_medium" for consistent matching
+- timestamp: '2026-05-16T09:03:03.446524+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:24.568219+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:28.343504+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:04:55.420408+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 48e2ee5b753634439620f91415f3711a54817fef20249bf5725d67e8f15acaf8
+  source: KOMODO_549_CM_YE_medium.yaml
 high_metal: true
-synonyms:
-- name: medium_549_modified_for_dsm_25790
-  source: KOMODO
-  source_id: komodo.medium:549_25790
-  original_category: bacterial
-- name: medium_549_modified_for_dsm_44640
-  source: KOMODO
-  source_id: komodo.medium:549_44640
-  original_category: bacterial
-categories:
-- bacterial
+merge_fingerprint: 48e2ee5b753634439620f91415f3711a54817fef20249bf5725d67e8f15acaf8
 merged_from:
-- cm_ye_medium
-- medium_549_modified_for_dsm_25790
-- medium_549_modified_for_dsm_44640
-merge_fingerprint: 44bb6e605fb69f2de1b8aefe0e9e5807e6e227d29b526a1bc7257a5502ac34ae
+- KOMODO_549_CM_YE_medium

@@ -3,6 +3,7 @@ name: jcm_medium_no_248
 original_name: JCM MEDIUM No. 248
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J248
@@ -22,8 +23,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -51,6 +52,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "JCM MEDIUM No. 248" to "jcm_medium_no_248" for consistent
     matching
+- timestamp: '2026-06-05T07:41:10.021895+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:39.202135+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 621bfde541da5ff780d9bf73434c0f3be12a11731342eeaab2b94c768e291a92
+  source: jcm_medium_no_248.yaml
 kg_microbe_match: mediadive.medium:12
 merge_fingerprint: 621bfde541da5ff780d9bf73434c0f3be12a11731342eeaab2b94c768e291a92
 merged_from:

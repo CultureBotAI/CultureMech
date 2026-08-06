@@ -1,108 +1,152 @@
-id: CultureMech:010522
+id: CultureMech:009517
 name: 2_glucose_yeast_extract_peptone_agar
-original_name: 2% GLUCOSE-YEAST EXTRACT-PEPTONE AGAR
-category: fungal
+original_name: 2% Glucose-Yeast Extract-Peptone Agar
+category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-media_term:
-  preferred_term: JCM Medium J37
-  term:
-    id: mediadive.medium:J37
-    label: 2% GLUCOSE-YEAST EXTRACT-PEPTONE AGAR
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=37'
 ingredients:
-- preferred_term: Peptone
+- preferred_term: Distilled water
   concentration:
-    value: '5'
+    value: '1'
     unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: Yeast extract
   concentration:
     value: '1'
     unit: G_PER_L
-- preferred_term: Glucose
-  term:
-    id: CHEBI:17234
-    label: Glucose
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
-    label: Glucose
+  notes: 'Role: Nutrient source; Properties: Undefined component'
 - preferred_term: K2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: FeSO4・7H2O
   concentration:
-    value: '0.5'
+    value: '50'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: FeSO4 x 7 H2O
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
-    label: FeSO4 x 7 H2O
+    label: ''
 - preferred_term: CaCO3
-  term:
-    id: CHEBI:3311
-    label: CaCO3
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001099
-    label: CaCO3
-- preferred_term: Agar
+  notes: 'Role: Protective agent, Mineral source; Properties: Inorganic compound,
+    Defined component, Simple component'
   term:
-    id: CHEBI:2509
-    label: Agar
+    id: CHEBI:3311
+    label: calcium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
+    label: calcium carbonate
+- preferred_term: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Agar
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: Unadjusted pH will be 6.8.
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M29
+  term:
+    id: TOGO:M29
+    label: 2% Glucose-Yeast Extract-Peptone Agar
+notes: 'Source: https://togomedium.org/medium/M29
+
+  Original source: JCM - JCM_M37
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=37'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:15.623506Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J37'
-- timestamp: '2026-03-13T06:20:14.220470Z'
+- timestamp: '2026-01-27T06:35:54.773613Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M29'
+- timestamp: '2026-01-28T19:48:10.875829Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:06.523507Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:010522'
-- timestamp: '2026-03-17T17:06:08.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:009517'
+- timestamp: '2026-03-17T06:29:48.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:33.248290+00:00'
+- timestamp: '2026-03-17T19:46:25.532118+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "2% GLUCOSE-YEAST EXTRACT-PEPTONE AGAR" to "2_glucose_yeast_extract_peptone_agar"
+  notes: Normalized name from "2% Glucose-Yeast Extract-Peptone Agar" to "2_glucose_yeast_extract_peptone_agar"
     for consistent matching
-merge_fingerprint: 32ac0304a6305137d518b51d0fcc6d6b4f819ced4716ea46b2e146ecf21d9b75
+- timestamp: '2026-06-05T07:40:15.743694+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:12.485917+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:46:42.534502+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:34.001864+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 6042452653d9d937cc0d96b7445a9618e9ef6c73f269e508bc8c0633a017e7f7
+  source: 2_glucose_yeast_extract_peptone_agar.yaml
+merge_fingerprint: 6042452653d9d937cc0d96b7445a9618e9ef6c73f269e508bc8c0633a017e7f7
 merged_from:
 - 2_glucose_yeast_extract_peptone_agar

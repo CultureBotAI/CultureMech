@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-04-17T06:29:07.405302+00:00",
-  "input_recipes": 15827,
-  "output_recipes": 6248,
-  "reduction": 9579,
-  "reduction_percentage": 60.5,
-  "cross_category_merges": 111,
+  "timestamp": "2026-08-06T03:04:18.983988+00:00",
+  "input_recipes": 15878,
+  "output_recipes": 6286,
+  "reduction": 9592,
+  "reduction_percentage": 60.4,
+  "cross_category_merges": 141,
   "largest_group_size": 157,
   "top_duplicates": [
     {

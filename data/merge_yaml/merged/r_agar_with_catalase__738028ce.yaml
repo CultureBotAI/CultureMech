@@ -1,0 +1,71 @@
+id: CultureMech:002351
+name: r_agar_with_catalase
+original_name: R AGAR WITH CATALASE
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J117
+  term:
+    id: mediadive.medium:J117
+    label: R AGAR WITH CATALASE
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=117'
+ingredients:
+- preferred_term: R agar
+  term:
+    id: CHEBI:2509
+    label: R agar
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: R agar
+- preferred_term: Catalase
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Separately sterilize catalase by filtration.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI,
+    1 de-grounded (mixture or unverifiable).
+- timestamp: '2026-01-26T17:53:15.758453Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J117'
+- timestamp: '2026-03-13T06:19:12.610089Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002351'
+- timestamp: '2026-03-17T06:30:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:25.614127+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "R AGAR WITH CATALASE" to "r_agar_with_catalase" for
+    consistent matching
+- timestamp: '2026-06-05T07:41:43.773519+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:54.266197+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 738028ce8099e07f86f5615aae17c4edc8d3a780848bbb4d957dbc2370026fe2
+  source: r_agar_with_catalase.yaml
+merge_fingerprint: 738028ce8099e07f86f5615aae17c4edc8d3a780848bbb4d957dbc2370026fe2
+merged_from:
+- r_agar_with_catalase

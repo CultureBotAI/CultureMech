@@ -3,6 +3,7 @@ name: medium_for_the_2_mapping_strains
 original_name: Medium for the 2μ Mapping Strains
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: L-Leucine
   concentration:
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:15603
     label: L-leucine
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000278
-    label: L-Leucine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15603
+    label: L-leucine
 - preferred_term: L-Tryptophan
   concentration:
     value: '20'
@@ -38,9 +39,9 @@ ingredients:
   term:
     id: CHEBI:16828
     label: L-tryptophan
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001063
-    label: L-Tryptophan
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16828
+    label: L-tryptophan
 - preferred_term: Glucose
   concentration:
     value: '20'
@@ -50,9 +51,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: L-Histidine
   concentration:
     value: '20'
@@ -62,9 +63,9 @@ ingredients:
   term:
     id: CHEBI:15971
     label: L-histidine
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000272
-    label: L-Histidine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15971
+    label: L-histidine
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -73,9 +74,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: L-Methionine
   concentration:
     value: '20'
@@ -84,9 +85,9 @@ ingredients:
   term:
     id: CHEBI:16643
     label: L-methionine
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000274
-    label: L-Methionine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16643
+    label: L-methionine
 - preferred_term: Bacto-Yeast Nitrogen Base w/o Amino acids (Difco)
   concentration:
     value: '6.7'
@@ -126,6 +127,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Medium for the 2μ Mapping Strains" to "medium_for_the_2_mapping_strains"
     for consistent matching
+- timestamp: '2026-06-05T07:41:30.098228+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:44.136764+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 6d1383059743449ded00aaf80aba9a9ef1cce8930177c7d6df5b2bad948c18a2
+  source: medium_for_the_2_mapping_strains.yaml
 merge_fingerprint: 6d1383059743449ded00aaf80aba9a9ef1cce8930177c7d6df5b2bad948c18a2
 merged_from:
 - medium_for_the_2_mapping_strains

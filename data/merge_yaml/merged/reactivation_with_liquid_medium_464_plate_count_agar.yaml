@@ -3,6 +3,7 @@ name: reactivation_with_liquid_medium_464_plate_count_agar
 original_name: Reactivation With Liquid Medium 464 (Plate Count Agar)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +32,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Dextrose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Agar, if required
   concentration:
     value: '15'
@@ -76,6 +77,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Reactivation With Liquid Medium 464 (Plate Count Agar)"
     to "reactivation_with_liquid_medium_464_plate_count_agar" for consistent matching
+- timestamp: '2026-06-05T07:41:44.091272+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:54.502555+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint fdb503f37fbf38f65a9a65ca16263dae069d152af3557894dfebbb1fdb5e807e
+  source: reactivation_with_liquid_medium_464_plate_count_agar.yaml
 merge_fingerprint: fdb503f37fbf38f65a9a65ca16263dae069d152af3557894dfebbb1fdb5e807e
 merged_from:
 - reactivation_with_liquid_medium_464_plate_count_agar

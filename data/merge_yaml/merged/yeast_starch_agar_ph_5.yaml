@@ -3,6 +3,7 @@ name: yeast_starch_agar_ph_5
 original_name: Yeast-Starch Agar (pH 5)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -27,6 +28,9 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Undefined component'
+  term:
+    id: CHEBI:28017
+    label: ''
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -35,9 +39,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 media_term:
   preferred_term: TOGO Medium M1671
   term:
@@ -72,11 +76,23 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Yeast-Starch Agar (pH 5)" to "yeast_starch_agar_ph_5"
     for consistent matching
-- timestamp: '2026-04-17T06:29:10.417801+00:00'
+- timestamp: '2026-06-05T07:41:55.765241+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:33.678840+00:00'
   curator: recipe-merger
   action: Merged 6 duplicate recipes into canonical record
   notes: 'Sources: 1_10_yeast_starch_agar, 1_5_yeast_starch_agar, half_strength_yeast_starch_agar,
     yeast_extract_starch_agar, yeast_extract_starch_agar_ph_5_5, yeast_starch_agar_ph_5'
+- timestamp: '2026-08-06T03:04:33.678882+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 6 source recipe(s) on fingerprint 7a77cb1f0852b9dfd1e0b61288941abe4cb8a096ed15ed0053b68c8c5bd0a6a5
+  source: 1_10_yeast_starch_agar.yaml, 1_5_yeast_starch_agar.yaml, half_strength_yeast_starch_agar.yaml,
+    yeast_extract_starch_agar.yaml, yeast_extract_starch_agar_ph_5_5.yaml, yeast_starch_agar_ph_5.yaml
 synonyms:
 - name: 1_10_yeast_starch_agar
   source: TOGO
@@ -107,4 +123,4 @@ merged_from:
 - yeast_extract_starch_agar
 - yeast_extract_starch_agar_ph_5_5
 - yeast_starch_agar_ph_5
-merge_fingerprint: f1b1349821e03df628017f94dd05a2690f20e34fe5519e11cc8ed25ae37e037d
+merge_fingerprint: 7a77cb1f0852b9dfd1e0b61288941abe4cb8a096ed15ed0053b68c8c5bd0a6a5

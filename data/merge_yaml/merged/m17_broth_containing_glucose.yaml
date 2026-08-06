@@ -3,6 +3,7 @@ name: m17_broth_containing_glucose
 original_name: M17 broth (containing glucose)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: glucose
@@ -13,9 +14,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: M17 broth
   concentration:
     value: '1'
@@ -50,6 +51,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "M17 broth (containing glucose)" to "m17_broth_containing_glucose"
     for consistent matching
+- timestamp: '2026-06-05T07:41:11.706079+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:40.773063+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 27febafa35cbb3bf42148121ff2d191d417340175d01ffc32418ab32b2c60cea
+  source: m17_broth_containing_glucose.yaml
 kg_microbe_match: mediadive.medium:21
 merge_fingerprint: 27febafa35cbb3bf42148121ff2d191d417340175d01ffc32418ab32b2c60cea
 merged_from:

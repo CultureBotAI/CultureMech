@@ -1,64 +1,85 @@
-id: CultureMech:000549
+id: CultureMech:008992
 name: leptospira_medium
-original_name: LEPTOSPIRA-MEDIUM
+original_name: Leptospira-Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_value: 7.5
-media_term:
-  preferred_term: DSMZ Medium 1113
-  term:
-    id: mediadive.medium:1113
-    label: LEPTOSPIRA-MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1113.pdf'
 ingredients:
-- preferred_term: Leptospira Medium Base EMJH
-  concentration:
-    value: '2.3'
-    unit: G_PER_L
-- preferred_term: Agarose
-  term:
-    id: CHEBI:2511
-    label: Agarose
+- preferred_term: agarose
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000909
-    label: Agarose
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2511
+    label: agarose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2511
+    label: agarose
+- preferred_term: water
+  concentration:
+    value: '900'
+    unit: G_PER_L
+  notes: 'Role: Solvating media'
+  term:
+    id: CHEBI:15377
+    label: Water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Water
+- preferred_term: Leptospira Medium Base EMJH (Difco)
+  concentration:
+    value: '2.3'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Complex component'
 - preferred_term: Leptospira Enrichment EMJH
   concentration:
     value: '100'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Dissolve the agarose in water by boiling. Add the Leptospira base and
-    dissolve completely. Autoclave at 121°C for 15 min. Allow the medium to cool to
-    50-55°C. Warm the Leptospira Enrichment to approximately 25°C and add to the warm
-    medium. Mix uniformly and dispense aseptically into sterile tubes as requested.
-    Final pH is 7.5 at 25°C.
+media_term:
+  preferred_term: TOGO Medium M2409
+  term:
+    id: TOGO:M2409
+    label: Leptospira-Medium
+notes: 'Source: https://togomedium.org/medium/M2409
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1113.pdf'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:13.420464Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1113'
-- timestamp: '2026-03-13T06:18:56.296779Z'
+- timestamp: '2026-01-27T06:35:56.478668Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2409'
+- timestamp: '2026-01-28T19:48:28.541346Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:01.872232Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000549'
-- timestamp: '2026-03-17T06:30:30.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:008992'
+- timestamp: '2026-03-17T06:30:25.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:07.358462+00:00'
+- timestamp: '2026-03-17T19:46:20.617868+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "LEPTOSPIRA-MEDIUM" to "leptospira_medium" for consistent
+  notes: Normalized name from "Leptospira-Medium" to "leptospira_medium" for consistent
     matching
-kg_microbe_match: mediadive.medium:1113
-merge_fingerprint: ec2c27947dcb0c3af287fdad8ae8aff342bfac2e0a65ec026982f8159c297d8e
+- timestamp: '2026-06-05T07:40:36.723345+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:11.735812+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 10a3ecd21d78e9c7c06275311f1e4395ac9f422e495802d7693704d14d57c9cb
+  source: TOGO_M2409_Leptospira-Medium.yaml
+merge_fingerprint: 10a3ecd21d78e9c7c06275311f1e4395ac9f422e495802d7693704d14d57c9cb
 merged_from:
-- leptospira_medium
+- TOGO_M2409_Leptospira-Medium

@@ -1,61 +1,89 @@
-id: CultureMech:002278
+id: CultureMech:007697
 name: heart_infusion_agar_with_5_horse_blood
-original_name: HEART INFUSION AGAR WITH 5% HORSE BLOOD
+original_name: Heart Infusion Agar With 5% Horse Blood
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-media_term:
-  preferred_term: JCM Medium J1099
-  term:
-    id: mediadive.medium:J1099
-    label: HEART INFUSION AGAR WITH 5% HORSE BLOOD
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1099'
 ingredients:
-- preferred_term: Heart Infusion Broth
+- preferred_term: Distilled water
   concentration:
-    value: '25'
+    value: '950'
     unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Horse blood
   concentration:
     value: '50'
     unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
 - preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: Agar
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Mix ingredients except horse blood, autoclave and cool to about 50C.
-    Aseptically add 5% (final) sterile defibrinated horse blood. Mix and quickly dispense
-    into sterile petri dishes.
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Heart infusion broth (BD-Difco)
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M1172
+  term:
+    id: TOGO:M1172
+    label: Heart Infusion Agar With 5% Horse Blood
+notes: 'Source: https://togomedium.org/medium/M1172
+
+  Original source: JCM - JCM_M1099
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1099'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:18.625760Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J1099'
-- timestamp: '2026-03-13T06:19:11.901068Z'
+- timestamp: '2026-01-27T06:35:54.057177Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1172'
+- timestamp: '2026-01-28T19:48:13.731909Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:50.702003Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002278'
-- timestamp: '2026-03-17T06:30:40.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:007697'
+- timestamp: '2026-03-17T06:29:54.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:24.785786+00:00'
+- timestamp: '2026-03-17T19:46:09.105275+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HEART INFUSION AGAR WITH 5% HORSE BLOOD" to "heart_infusion_agar_with_5_horse_blood"
+  notes: Normalized name from "Heart Infusion Agar With 5% Horse Blood" to "heart_infusion_agar_with_5_horse_blood"
     for consistent matching
-kg_microbe_match: mediadive.medium:12
-merge_fingerprint: 2d1370edb843e90a22a7952b6b32d0c7425018af54b3dbd1b47784a17c4865d4
+- timestamp: '2026-06-05T07:40:31.023393+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:06.323618+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 37f4c5dd813cb791704e10d293c7838f3524cdcfc371731e563fa1b65e119720
+  source: TOGO_M1172_Heart_Infusion_Agar_With_5_Horse_Blood.yaml
+merge_fingerprint: 37f4c5dd813cb791704e10d293c7838f3524cdcfc371731e563fa1b65e119720
 merged_from:
-- heart_infusion_agar_with_5_horse_blood
+- TOGO_M1172_Heart_Infusion_Agar_With_5_Horse_Blood

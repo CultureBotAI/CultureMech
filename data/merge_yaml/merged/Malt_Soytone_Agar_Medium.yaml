@@ -3,6 +3,7 @@ name: malt_soytone_agar_medium
 original_name: Malt Soytone Agar Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled Water
@@ -14,9 +15,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled Water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -31,9 +32,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Agar
   concentration:
     value: '20'
@@ -42,9 +43,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Malt extract
   concentration:
     value: '10'
@@ -55,9 +56,6 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-  term:
-    id: MICRO:0000181
-    label: ''
 media_term:
   preferred_term: TOGO Medium M2083
   term:
@@ -71,6 +69,11 @@ notes: 'Source: https://togomedium.org/medium/M2083
 applications:
 - Microbial cultivation
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI,
+    1 de-grounded (mixture or unverifiable).
 - timestamp: '2026-01-27T06:35:59.025175Z'
   curator: togo-import
   action: Imported from TOGO Medium
@@ -92,6 +95,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Malt Soytone Agar Medium" to "malt_soytone_agar_medium"
     for consistent matching
-merge_fingerprint: d462758402c2cf0de152c44cc5d756c58c923da0e28dbc848aa1579e785a61e3
+- timestamp: '2026-06-05T07:41:12.644301+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:41.760101+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint aa8df711936b9412d9f59062c004923abe613702d1a04504c7ca75a7251819cb
+  source: malt_soytone_agar_medium.yaml
+merge_fingerprint: aa8df711936b9412d9f59062c004923abe613702d1a04504c7ca75a7251819cb
 merged_from:
 - malt_soytone_agar_medium

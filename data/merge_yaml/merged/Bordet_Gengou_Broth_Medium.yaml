@@ -3,6 +3,7 @@ name: bordet_gengou_broth_medium
 original_name: Bordet Gengou Broth Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Glycerol
@@ -12,10 +13,10 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
     component'
   term:
-    id: CHEBI:15978
-    label: sn-glycerol 3-phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000588
+    id: CHEBI:17754
+    label: Glycerol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: Proteose Peptone
   concentration:
@@ -40,9 +41,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: DI Water
   concentration:
     value: '1000'
@@ -86,6 +87,23 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Bordet Gengou Broth Medium" to "bordet_gengou_broth_medium"
     for consistent matching
-merge_fingerprint: 5f9849e2178f9bca1e30438d3bd731920e0ca9bf9c8e5c508c77540424b7a7f5
+- timestamp: '2026-06-05T07:40:51.299044+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:36.038992+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:05:25.766230+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e4795440cc101644347eee8eba79bdc60e068de633d7c1cc4d954cd93d7a3ada
+  source: bordet_gengou_broth_medium.yaml
+merge_fingerprint: e4795440cc101644347eee8eba79bdc60e068de633d7c1cc4d954cd93d7a3ada
 merged_from:
 - bordet_gengou_broth_medium

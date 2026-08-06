@@ -1,0 +1,77 @@
+id: CultureMech:003155
+name: n_z_amine_a_medium
+original_name: N-Z AMINE A MEDIUM
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J80
+  term:
+    id: mediadive.medium:J80
+    label: N-Z AMINE A MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=80'
+ingredients:
+- preferred_term: N-Z amine
+  concentration:
+    value: '4.62963'
+    unit: G_PER_L
+  notes: ' ( type A)'
+- preferred_term: Beef extract
+  concentration:
+    value: '0.925926'
+    unit: G_PER_L
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '80'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
+    label: Glycerol
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '13.8889'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.695760Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J80'
+- timestamp: '2026-03-13T06:19:18.183719Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003155'
+- timestamp: '2026-03-17T06:30:33.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:32.006240+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "N-Z AMINE A MEDIUM" to "n_z_amine_a_medium" for consistent
+    matching
+- timestamp: '2026-06-05T07:41:39.094547+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:50.986076+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 74b0c3f4ab61fc82af2f39a46582df579ad71c894ccb8883caa35c1e24a1824a
+  source: n_z_amine_a_medium.yaml
+merge_fingerprint: 74b0c3f4ab61fc82af2f39a46582df579ad71c894ccb8883caa35c1e24a1824a
+merged_from:
+- n_z_amine_a_medium

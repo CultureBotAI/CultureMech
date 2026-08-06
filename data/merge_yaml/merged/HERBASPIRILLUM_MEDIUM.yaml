@@ -3,6 +3,7 @@ name: herbaspirillum_medium
 original_name: HERBASPIRILLUM medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
@@ -16,22 +17,22 @@ ingredients:
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -40,8 +41,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: NaCl
   term:
@@ -50,8 +51,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: CaCl2
   term:
@@ -60,8 +61,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
     label: CaCl2
 - preferred_term: FeCl2 x 6 H2O
   term:
@@ -70,8 +71,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000566
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30812
     label: FeCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -80,8 +81,8 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: Yeast extract
   concentration:
@@ -94,8 +95,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Na-malate
   term:
@@ -104,9 +105,9 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000450
-    label: Na-malate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91260
+    label: disodium malate
 applications:
 - Microbial cultivation
 curation_history:
@@ -131,13 +132,39 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HERBASPIRILLUM medium" to "herbaspirillum_medium" for
     consistent matching
-- timestamp: '2026-04-17T06:29:28.902993+00:00'
+- timestamp: '2026-06-05T07:40:24.476516+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:45.256263+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:55.245664+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_538_HERBASPIRILLUM_medium, herbaspirillum_medium'
+- timestamp: '2026-08-06T03:04:55.245710+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 1504a5481ea339fd0f6cc588740f25002cff56c5993f930ede09f8aa856746c7
+  source: KOMODO_538_HERBASPIRILLUM_medium.yaml, herbaspirillum_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/herbaspirillum_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001670
+  name: herbaspirillum_medium
+  notes: KOMODO record states DSMZ Medium 538 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 categories:
 - bacterial
 merged_from:
 - KOMODO_538_HERBASPIRILLUM_medium
 - herbaspirillum_medium
-merge_fingerprint: 8fe2050c1f314ddc8cd050916ea7b788b4f22976eb073f815e827d8f8b3c9678
+merge_fingerprint: 1504a5481ea339fd0f6cc588740f25002cff56c5993f930ede09f8aa856746c7

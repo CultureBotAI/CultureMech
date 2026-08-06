@@ -3,6 +3,7 @@ name: m9_with_1_0_glucose_and_40_emulsion
 original_name: M9 with 1.0% glucose and 40% emulsion
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose
@@ -13,13 +14,16 @@ ingredients:
     value: '22.2024'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.1'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Tween 80
   term:
     id: CHEBI:53426
@@ -27,13 +31,16 @@ ingredients:
   concentration:
     value: '12.219'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000190
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53426
     label: Tween 80
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '47.743'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -41,13 +48,16 @@ ingredients:
   concentration:
     value: '8.5557'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '22.0448'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -55,8 +65,8 @@ ingredients:
   concentration:
     value: '2.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
@@ -65,8 +75,8 @@ ingredients:
   concentration:
     value: '18.6947'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Hexadecane
   term:
@@ -75,8 +85,8 @@ ingredients:
   concentration:
     value: '883.236'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000424
+  mediaingredientmech_chebi_term:
+    id: CHEBI:45296
     label: Hexadecane
 preparation_steps:
 - step_number: 1
@@ -107,11 +117,24 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "M9 with 1.0% glucose and 40% emulsion" to "m9_with_1_0_glucose_and_40_emulsion"
     for consistent matching
-- timestamp: '2026-04-17T06:30:09.183349+00:00'
+- timestamp: '2026-06-05T07:41:12.194458+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:41.291308+00:00'
   curator: recipe-merger
   action: Merged 5 duplicate recipes into canonical record
   notes: 'Sources: m9_with_0_4_glucose_and_20_emulsion, m9_with_0_4_glucose_and_40_emulsion,
     m9_with_0_4_glucose_and_5_emulsion, m9_with_0_7_glucose_and_40_emulsion, m9_with_1_0_glucose_and_40_emulsion'
+- timestamp: '2026-08-06T03:05:41.291358+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 5 source recipe(s) on fingerprint bde61e3e79864fa170de7bd151586895c33bfa7804579158455ef8eaf63471ec
+  source: m9_with_0_4_glucose_and_20_emulsion.yaml, m9_with_0_4_glucose_and_40_emulsion.yaml,
+    m9_with_0_4_glucose_and_5_emulsion.yaml, m9_with_0_7_glucose_and_40_emulsion.yaml,
+    m9_with_1_0_glucose_and_40_emulsion.yaml
 media_term:
   preferred_term: MediaDB Medium 101
   term:
@@ -148,4 +171,4 @@ merged_from:
 - m9_with_0_4_glucose_and_5_emulsion
 - m9_with_0_7_glucose_and_40_emulsion
 - m9_with_1_0_glucose_and_40_emulsion
-merge_fingerprint: 06df6235b836cfa47d892090db11b0f9c4c95174cfae25f61f9e6578797db1b6
+merge_fingerprint: bde61e3e79864fa170de7bd151586895c33bfa7804579158455ef8eaf63471ec

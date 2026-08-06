@@ -1,7 +1,8 @@
 id: CultureMech:000228
 name: soilwater_gr_nh4_medium
-category: ALGAE
+category: algae
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
@@ -18,32 +19,41 @@ ingredients:
   notes: 'Original amount: sterile dH2O'
 preparation_steps:
 - step_number: 1
-  instruction: Important Notes To Consider:The quality of water, including natural
-    seawater, is important.
+  action: MIX
+  description: 'Important Notes To Consider: The quality of water, including natural
+    seawater, is important.'
 - step_number: 2
-  instruction: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
+  action: MIX
+  description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
     water, Milli-Q water (Millipore Corp.), etc.
 - step_number: 3
-  instruction: Natural seawater and natural freshwater should be obtained from a non-polluted
-    source.When dissolving chemicals, wait for the first component to dissolve before
+  action: DISSOLVE
+  description: Natural seawater and natural freshwater should be obtained from a non-polluted
+    source. When dissolving chemicals, wait for the first component to dissolve before
     adding the second.
 - step_number: 4
-  instruction: Stirring, and sometimes the addition of heat, is often required to
+  action: DISSOLVE
+  description: Stirring, and sometimes the addition of heat, is often required to
     dissolve the chemicals efficiently.
 - step_number: 5
-  instruction: Preparation of stock solutions for frequently made algal culture media
+  action: MIX
+  description: Preparation of stock solutions for frequently made algal culture media
     make preparing media convenient but also necessary to avoid errors from weighing
-    very tiny amounts.Attention should be given to the pH of the final medium.
+    very tiny amounts. Attention should be given to the pH of the final medium.
 - step_number: 6
-  instruction: In most cases, if pH adjustment is required, this occurs before sterilization.
+  action: ADJUST_PH
+  description: In most cases, if pH adjustment is required, this occurs before sterilization.
 - step_number: 7
-  instruction: Please note that autoclaving removes carbon dioxide from media lacking
+  action: AUTOCLAVE
+  description: Please note that autoclaving removes carbon dioxide from media lacking
     carbonate stabilizing buffers.
 - step_number: 8
-  instruction: This would make the medium very alkaline soon after removal from the
+  action: AUTOCLAVE
+  description: This would make the medium very alkaline soon after removal from the
     autoclave.
 - step_number: 9
-  instruction: In these cases, you should wait approximately 24 hours for gaseous
+  action: MIX
+  description: In these cases, you should wait approximately 24 hours for gaseous
     equilibrium before inoculating the medium.
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
@@ -54,9 +64,9 @@ applications:
 - Microalgae research
 curation_history:
 - curator: utex-import
-  date: '2026-01-28'
   action: Imported from UTEX Culture Collection
   notes: 'Source ID: soilwater-gr-minus-nh4-medium, URL: https://utex.org/products/soilwater-gr-minus-nh4-medium'
+  timestamp: '2026-01-28T00:00:00+00:00'
 - timestamp: '2026-03-13T06:18:53.633957Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -66,7 +76,16 @@ curation_history:
   action: NAME_NORMALIZED
   notes: 'Normalized name from "Soilwater: GR-/NH4 Medium" to "soilwater_gr_nh4_medium"
     for consistent matching'
-- timestamp: '2026-04-17T06:29:07.538539+00:00'
+- timestamp: '2026-05-16T09:02:56.124839+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1; references.reference_id->reference=2;
+    category->lowercase=1
+- timestamp: '2026-05-16T09:11:01.338686+00:00'
+  curator: migrate_preparation_steps.py
+  action: MIGRATED_PREPARATION_STEPS
+  notes: instruction->action+description for 9 step(s)
+- timestamp: '2026-08-06T03:04:19.186667+00:00'
   curator: recipe-merger
   action: Merged 29 duplicate recipes into canonical record
   notes: 'Sources: 1_2_Enriched_Seawater, 1_2_Erdschreiber_Medium, 1_4_erdschreibers_medium,
@@ -77,94 +96,103 @@ curation_history:
     Soilwater_GR-_Medium, Soilwater_GR-_NH4_Medium, Soilwater_VT_Medium, Spirulina_Medium,
     Volvocacean_Medium, bg_11_0_36_nacl_medium, bg_11_1_nacl_medium, bristol_nacl_medium,
     chus_medium, f_2_nh4_medium, soil_seawater_medium, soilwater_gr_nh4_medium, waris_soil_extract_medium'
+- timestamp: '2026-08-06T03:04:19.186795+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 29 source recipe(s) on fingerprint 22074227d8462b39403011e0bc4c5e7a3f1ee1bae54ae2deb0943dece537f93f
+  source: 1_2_Enriched_Seawater.yaml, 1_2_Erdschreiber_Medium.yaml, 1_4_erdschreibers_medium.yaml,
+    20_allen_80_erdschreiber_1_4_medium.yaml, 2_3_Enriched_Seawater.yaml, 5_3_soil_seawater_agar_medium.yaml,
+    Bold_1NV_Erdshreiber_1_1_Medium.yaml, Bold_1NV_Erdshreiber_4_1_Medium.yaml, Botryococcus_Medium.yaml,
+    ES_10_Enriched_Seawater_Medium.yaml, ES_2_Enriched_Seawater_Medium.yaml, ES_4_Enriched_Seawater_Medium.yaml,
+    Enriched_Seawater_Medium.yaml, Proteose_Medium.yaml, SS_Diatom_Medium.yaml, Soil_Extract_Mediu
 references:
-- reference_id: UTEX:soilwater-gr-minus-nh4-medium
-- reference_id: https://utex.org/products/soilwater-gr-minus-nh4-medium
+- reference: UTEX:soilwater-gr-minus-nh4-medium
+- reference: https://utex.org/products/soilwater-gr-minus-nh4-medium
 original_name: 'Soilwater: GR-/NH4 Medium'
 synonyms:
 - name: 1_2_enriched_seawater
   source: unknown
-  original_category: ALGAE
+  original_category: algae
 - name: 1_2_erdschreiber_medium
   source: unknown
-  original_category: ALGAE
+  original_category: algae
 - name: 1_4_erdschreibers_medium
   source: unknown
-  original_category: ALGAE
+  original_category: algae
 - name: 20_allen_80_erdschreiber_1_4_medium
   source: unknown
-  original_category: ALGAE
+  original_category: algae
 - name: 2_3_enriched_seawater
   source: unknown
-  original_category: ALGAE
+  original_category: algae
 - name: 5_3_soil_seawater_agar_medium
   source: unknown
-  original_category: ALGAE
+  original_category: algae
 - name: bold_1nv_erdshreiber_1_1_medium
   source: unknown
-  original_category: ALGAE
+  original_category: algae
 - name: bold_1nv_erdshreiber_4_1_medium
   source: unknown
-  original_category: ALGAE
+  original_category: algae
 - name: botryococcus_medium
   source: unknown
-  original_category: ALGAE
+  original_category: algae
 - name: es_10_enriched_seawater_medium
   source: unknown
-  original_category: ALGAE
+  original_category: algae
 - name: es_2_enriched_seawater_medium
   source: unknown
-  original_category: ALGAE
+  original_category: algae
 - name: es_4_enriched_seawater_medium
   source: unknown
-  original_category: ALGAE
+  original_category: algae
 - name: enriched_seawater_medium
   source: unknown
-  original_category: ALGAE
+  original_category: algae
 - name: proteose_medium
   source: unknown
-  original_category: ALGAE
+  original_category: algae
 - name: ss_diatom_medium
   source: unknown
-  original_category: ALGAE
+  original_category: algae
 - name: soil_extract_medium
   source: unknown
-  original_category: ALGAE
+  original_category: algae
 - name: soilwater_gr_medium
   source: unknown
-  original_category: ALGAE
+  original_category: algae
 - name: soilwater_vt_medium
   source: unknown
-  original_category: ALGAE
+  original_category: algae
 - name: spirulina_medium
   source: unknown
-  original_category: ALGAE
+  original_category: algae
 - name: volvocacean_medium
   source: unknown
-  original_category: ALGAE
+  original_category: algae
 - name: bg_11_0_36_nacl_medium
   source: unknown
-  original_category: ALGAE
+  original_category: algae
 - name: bg_11_1_nacl_medium
   source: unknown
-  original_category: ALGAE
+  original_category: algae
 - name: bristol_nacl_medium
   source: unknown
-  original_category: ALGAE
+  original_category: algae
 - name: chus_medium
   source: unknown
-  original_category: ALGAE
+  original_category: algae
 - name: f_2_nh4_medium
   source: unknown
-  original_category: ALGAE
+  original_category: algae
 - name: soil_seawater_medium
   source: unknown
-  original_category: ALGAE
+  original_category: algae
 - name: waris_soil_extract_medium
   source: unknown
-  original_category: ALGAE
+  original_category: algae
 categories:
-- ALGAE
+- algae
 merged_from:
 - 1_2_Enriched_Seawater
 - 1_2_Erdschreiber_Medium

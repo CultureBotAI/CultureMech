@@ -3,6 +3,7 @@ name: yepg_medium
 original_name: YEPG medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:
@@ -20,8 +21,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Polypeptone
   concentration:
@@ -37,9 +38,9 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:63038
-    label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000287
+    label: ammonium nitrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63038
     label: NH4NO3
 applications:
 - Microbial cultivation
@@ -64,11 +65,51 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "YEPG medium" to "yepg_medium" for consistent matching
-- timestamp: '2026-04-17T06:29:30.321286+00:00'
+- timestamp: '2026-06-05T07:40:25.278597+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:45.496126+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:57.075349+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_662_YEPG_medium, medium_662_modified_for_dsm_6699, medium_662_modified_for_dsm_6700,
     yepg_medium'
+- timestamp: '2026-08-06T03:04:57.075396+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 4 source recipe(s) on fingerprint 672fc00cb13a7a5ddc331666c5f6a2b8b149c9984e82bdfd5e7543b28563edba
+  source: KOMODO_662_YEPG_medium.yaml, medium_662_modified_for_dsm_6699.yaml, medium_662_modified_for_dsm_6700.yaml,
+    yepg_medium.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_662_modified_for_dsm_6699.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006242
+  name: medium_662_modified_for_dsm_6699
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_662_modified_for_dsm_6700.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006243
+  name: medium_662_modified_for_dsm_6700
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/yepg_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001800
+  name: yepg_medium
+  notes: KOMODO record states DSMZ Medium 662 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 synonyms:
 - name: medium_662_modified_for_dsm_6699
   source: KOMODO

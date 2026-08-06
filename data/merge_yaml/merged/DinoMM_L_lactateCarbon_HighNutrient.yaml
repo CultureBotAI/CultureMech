@@ -1,6 +1,7 @@
 id: CultureMech:015457
 name: DinoMM L lactateCarbon HighNutrient
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sea salts
@@ -152,8 +153,8 @@ ingredients:
     value: '0.1'
     unit: MG_PER_L
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Wolfe''s vitamin
     mix'
 - preferred_term: 4-Aminobenzoic acid
@@ -248,7 +249,7 @@ ingredients:
 description: Minimal media for marine bacteria with Sodium L-Lactate as the carbon
   source and more vitamins and minerals
 notes: 'Source: FEBA media definitions'
-category: BACTERIAL
+category: bacterial
 sources:
 - database: CultureBotHT
   database_id: DinoMM L lactateCarbon HighNutrient
@@ -262,8 +263,27 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015457'
+- timestamp: '2026-05-16T09:03:30.809057+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:37.824177+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:46:56.389601+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:32.864479+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 354d32a1c340dd69a12e44e0f5c80402071261595718ff256af30ec0b5c7d750
+  source: dinomm_l_lactatecarbon_highnutrient.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: db0f21b8901aa9c2ee717a0fc8ffc314296637f10668163f7604ad883ac33c2f
+merge_fingerprint: 354d32a1c340dd69a12e44e0f5c80402071261595718ff256af30ec0b5c7d750
 merged_from:
 - dinomm_l_lactatecarbon_highnutrient

@@ -3,6 +3,7 @@ name: de_man_rogosa_sharpe_broths_supplemented_with_0_05_l_cysteine_hcl
 original_name: de Man-Rogosa-Sharpe broths supplemented with 0.05% l-cysteine · HCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: MRS broth (Difco)
@@ -38,6 +39,11 @@ curation_history:
   notes: Normalized name from "de Man-Rogosa-Sharpe broths supplemented with 0.05%
     l-cysteine · HCl" to "de_man_rogosa_sharpe_broths_supplemented_with_0_05_l_cysteine_hcl"
     for consistent matching
+- timestamp: '2026-08-06T03:05:29.694204+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 70d80f7f52848617d980433407bc00343db6ebe90412022b0bc53169fcc9ae8d
+  source: de_man_rogosa_sharpe_broths_supplemented_with_0_05_l_cysteine_hcl.yaml
 merge_fingerprint: 70d80f7f52848617d980433407bc00343db6ebe90412022b0bc53169fcc9ae8d
 merged_from:
 - de_man_rogosa_sharpe_broths_supplemented_with_0_05_l_cysteine_hcl

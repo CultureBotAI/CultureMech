@@ -2,6 +2,7 @@ name: modified_freshwater_medium_for_diet_coculture
 original_name: Modified Freshwater Medium for DIET Coculture
 category: specialized
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 id: CultureMech:015435
 ingredients:
@@ -9,8 +10,9 @@ ingredients:
   concentration:
     value: '20.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000195
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16236
+    label: ethanol
   term:
     id: CHEBI:16236
     label: ethanol
@@ -18,8 +20,9 @@ ingredients:
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000277
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35235
+    label: L-cysteine
   term:
     id: CHEBI:35235
     label: L-cysteine
@@ -76,6 +79,33 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Modified Freshwater Medium for DIET Coculture" to "modified_freshwater_medium_for_diet_coculture"
     for consistent matching
-merge_fingerprint: b6fde5e55296c57d2d65a45ff7f8b56656fb9f04dea8d5f5254fb609e44ae2a5
+- timestamp: '2026-05-24T04:38:33.279095+00:00'
+  curator: backfill_source_environment.py
+  action: BACKFILLED_SOURCE_ENVIRONMENT
+  notes: added=1 env(s) from CommunityMech
+  source: CommunityMech (environment_term + culturemech_id linkage)
+- timestamp: '2026-06-05T07:41:57.393088+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:04.412364+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2811ffa304f1ed1a6852027147b7cb9e71c67dd0ab2950ee60ee976e198e0fa5
+  source: Modified_Freshwater_Medium_for_DIET_Coculture.yaml
+source_environment:
+- preferred_term: sediment
+  term:
+    id: ENVO:00002007
+    label: sediment
+  notes: 'Isolated from anaerobic sediments. DIET is an important process in anaerobic
+    soils and sediments generating methane. Cocultures form conductive aggregates
+    under strict anaerobic conditions, with direct cell-to-cell electron transfer
+    mediated by conductive pili and aggregate structures.
+
+    '
+merge_fingerprint: 2811ffa304f1ed1a6852027147b7cb9e71c67dd0ab2950ee60ee976e198e0fa5
 merged_from:
 - Modified_Freshwater_Medium_for_DIET_Coculture

@@ -1,156 +1,223 @@
-id: CultureMech:002464
+id: CultureMech:007932
 name: tepidanaerobacter_gt38_medium
-original_name: TEPIDANAEROBACTER GT38 MEDIUM
+original_name: Tepidanaerobacter GT38 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 7.0
-media_term:
-  preferred_term: JCM Medium J1300
-  term:
-    id: mediadive.medium:J1300
-    label: TEPIDANAEROBACTER GT38 MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1300'
 ingredients:
-- preferred_term: K2HPO4
-  term:
-    id: CHEBI:131527
-    label: K2HPO4
+- preferred_term: Distilled water
   concentration:
-    value: '2.9'
+    value: '901.0'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
-- preferred_term: KH2PO4
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component [Merged 2 duplicates: 900.0, 1.0]'
   term:
-    id: CHEBI:63036
-    label: KH2PO4
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
-- preferred_term: Urea
-  term:
-    id: CHEBI:16199
-    label: Urea
-  concentration:
-    value: '2.1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000301
-    label: Urea
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '6'
     unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: CaCl2・2H2O
   concentration:
     value: '37.51'
     unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 0.01, 37.5]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
-- preferred_term: Na2CO3
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound [Merged 2 duplicates: 0.01, 37.5]'
   term:
-    id: CHEBI:29377
-    label: Na2CO3
+    id: CHEBI:86158
+    label: ''
+- preferred_term: KH2PO4
   concentration:
-    value: '4'
+    value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
-    label: Na2CO3
-- preferred_term: L-Cysteine HCl x H2O
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
   term:
-    id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: K2HPO4
+  concentration:
+    value: '2.9'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: Resazurin
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
-    label: L-Cysteine HCl x H2O
-- preferred_term: Resazurin
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Organic
+    compound, Simple component'
   term:
     id: CHEBI:8806
     label: Resazurin
-  concentration:
-    value: '0.0005'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
-- preferred_term: Glucose
-  term:
-    id: CHEBI:17234
-    label: Glucose
+- preferred_term: Na2CO3
   concentration:
-    value: '100'
+    value: '4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
-    label: Glucose
-- preferred_term: MgCl2 x 6 H2O
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
   term:
-    id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    id: CHEBI:29377
+    label: sodium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+- preferred_term: Urea
+  concentration:
+    value: '2.1'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:16199
+    label: urea
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16199
+    label: urea
+- preferred_term: L-Cysteine・HCl・H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Simple component, Organic compound'
+  term:
+    id: CHEBI:91248
+    label: ''
+- preferred_term: CO2
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
+- preferred_term: N2
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
+- preferred_term: MgCl2・6H2O
   concentration:
     value: '25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: MgCl2 x 6 H2O
-- preferred_term: FeSO4 x 7 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    id: CHEBI:86345
+    label: ''
+- preferred_term: FeSO4・7H2O
   concentration:
     value: '0.312'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
-    label: FeSO4 x 7 H2O
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: 'Mix components thoroughly. Distribute the medium in culture vessels
-    (e.g., 9.0 ml in Balch tubes), replace the gas phase with CO2, seal with butyl
-    rubber stoppers, and autoclave. After cooling, aseptically and anaerobically add
-    per 900 ml the following solution (autoclaved under a N2 atmosphere):'
-- step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH to 7.0, if necessary.
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:75836
+    label: ''
+media_term:
+  preferred_term: TOGO Medium M1397
+  term:
+    id: TOGO:M1397
+    label: Tepidanaerobacter GT38 Medium
+notes: 'Source: https://togomedium.org/medium/M1397
+
+  Original source: JCM - JCM_M1300
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1300'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:19.360937Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J1300'
-- timestamp: '2026-03-13T03:08:52.276111Z'
+- timestamp: '2026-01-27T06:35:54.487872Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1397'
+- timestamp: '2026-01-28T19:48:38.636988Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: CO2; Added default concentration
+    for ingredient: N2'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-03-09T08:05:04.690427+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:36.655538Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
-  notes: Merged 1 duplicate ingredient(s)
-- timestamp: '2026-03-13T06:19:13.529935Z'
+  notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:52.590386Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002464'
-- timestamp: '2026-03-17T06:29:56.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:007932'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:30:48.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:26.658121+00:00'
+- timestamp: '2026-03-17T19:46:11.054573+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TEPIDANAEROBACTER GT38 MEDIUM" to "tepidanaerobacter_gt38_medium"
+  notes: Normalized name from "Tepidanaerobacter GT38 Medium" to "tepidanaerobacter_gt38_medium"
     for consistent matching
-merge_fingerprint: 7af048d451ffcd95881a2bafd6f179fb8d12c6138c647a1790b7ee10bbd164e6
+- timestamp: '2026-05-16T09:03:09.959197+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:32.967553+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:47.787811+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:08.633949+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint db7ac52ac66b8331b0045d01a4a45b73b98c16f45ef027f8f2c18061437f1b2a
+  source: TOGO_M1397_Tepidanaerobacter_GT38_Medium.yaml
+high_metal: true
+solutions:
+- preferred_term: Mineral solution (see below)
+  composition: []
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: 10% (w/v) Glucose solution
+  composition: []
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
+  name: Unknown solution
+merge_fingerprint: db7ac52ac66b8331b0045d01a4a45b73b98c16f45ef027f8f2c18061437f1b2a
 merged_from:
-- tepidanaerobacter_gt38_medium
+- TOGO_M1397_Tepidanaerobacter_GT38_Medium

@@ -3,6 +3,7 @@ name: hypertonic_medium
 original_name: Hypertonic medium
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: L-Leucine
@@ -13,8 +14,8 @@ ingredients:
     value: '0.3812'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:leu-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000278
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15603
     label: L-Leucine
 - preferred_term: Sucrose
   term:
@@ -24,8 +25,8 @@ ingredients:
     value: '200.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:sucr'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000661
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17992
     label: Sucrose
 - preferred_term: Ammonium chloride
   term:
@@ -34,19 +35,22 @@ ingredients:
   concentration:
     value: '18.7'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '1.029'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Sodium sulfate
   concentration:
     value: '0.9311'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Sodium sulfate
   term:
     id: CHEBI:32149
@@ -58,8 +62,8 @@ ingredients:
   concentration:
     value: '11.1'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Magnesium chloride
   concentration:
@@ -68,9 +72,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -78,9 +82,9 @@ ingredients:
   concentration:
     value: '0.9925'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Potassium chloride
   concentration:
     value: '0.4695'
@@ -88,13 +92,16 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Tromethamine
   concentration:
     value: '99.06'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:9754
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -128,6 +135,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Hypertonic medium" to "hypertonic_medium" for consistent
     matching
+- timestamp: '2026-06-05T07:41:09.189555+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:38.260874+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 363244e652a99465046f6aa7a8da1fcbce678c8bff2c7e6e0e61882a511f2786
+  source: hypertonic_medium.yaml
 media_term:
   preferred_term: MediaDB Medium 316
   term:
@@ -139,6 +157,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 5daa9cd4a0286ccf17429ea966d643d060a9089707b6928298af3a77235f4e48
+merge_fingerprint: 363244e652a99465046f6aa7a8da1fcbce678c8bff2c7e6e0e61882a511f2786
 merged_from:
 - hypertonic_medium

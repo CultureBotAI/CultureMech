@@ -1,197 +1,260 @@
-id: CultureMech:000371
+id: CultureMech:000043
 name: asw_barley
-original_name: ASW + barley
-category: bacterial
+category: algae
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_range: 7.6-7.8
-media_term:
-  preferred_term: CCAP Medium C5
-  term:
-    id: mediadive.medium:C5
-    label: ASW + barley
-notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_ASW_Barley.pdf'
+description: Algae culture medium from CCAP Culture Collection. Suitable for saltwater
+  algae cultivation. Recipe available in PDF format.
+notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_ASW_Barley.pdf
+salinity: marine (natural seawater or artificial seawater)
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
+applications:
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
+curation_history:
+- curator: ccap-import
+  action: Imported from CCAP Culture Collection
+  notes: 'Source ID: ASW_Barley, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_ASW_Barley.pdf'
+  timestamp: '2026-01-28T00:00:00+00:00'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-02-03T11:26:43.451288'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:18:53.006321Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000043'
+- timestamp: '2026-03-17T19:45:03.962563+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ASW + barley" to "asw_barley" for consistent matching
+- timestamp: '2026-04-04T12:54:55.176885'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 13 curated ingredients from CCAP
+  source: CCAP Medium MR_ASW_Barley.pdf
+- timestamp: '2026-05-16T08:57:02.115835+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(3 entries)
+- timestamp: '2026-05-16T09:02:56.256731+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
+    category->lowercase=1
+- timestamp: '2026-06-10T07:37:33.993168+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:19.631553+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint fec2f0359e128887f8bcea8f4d3955c96f74bfc61d9cd7dd05431eafe3420945
+  source: asw_barley.yaml
+references:
+- reference: CCAP:ASW_Barley
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ASW_Barley.pdf
 ingredients:
-- preferred_term: Tricine
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
+- preferred_term: NaNO
   term:
-    id: CHEBI:46760
-    label: ''
-- preferred_term: Natural sea water
+    id: CHEBI:34545
+    label: NaNO
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.176843'
+    ontology_source: CHEBI
   concentration:
-    value: '1000'
+    value: '15.00'
     unit: G_PER_L
-- preferred_term: NaNO3
-  term:
-    id: CHEBI:63005
-    label: NaNO3
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000171
-    label: NaNO3
+  source: CCAP Medium MR_ASW_Barley.pdf
+  notes: From CCAP Medium MR_ASW_Barley.pdf; Curated from CCAP Medium MR_ASW_Barley.pdf
+    specification
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
     label: Na2HPO4
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.176855'
+    ontology_source: CHEBI
   concentration:
-    value: '1.2'
+    value: '0.60'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
-    label: Na2HPO4
+  source: CCAP Medium MR_ASW_Barley.pdf
+  notes: From CCAP Medium MR_ASW_Barley.pdf; Curated from CCAP Medium MR_ASW_Barley.pdf
+    specification
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
     label: K2HPO4
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.176858'
+    ontology_source: CHEBI
   concentration:
-    value: '1'
+    value: '0.50'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  source: CCAP Medium MR_ASW_Barley.pdf
+  notes: From CCAP Medium MR_ASW_Barley.pdf; Curated from CCAP Medium MR_ASW_Barley.pdf
+    specification
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
     label: Biotin
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.176860'
+    ontology_source: CHEBI
   concentration:
     value: '0.0002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
-    label: Biotin
+  source: CCAP Medium MR_ASW_Barley.pdf
+  notes: From CCAP Medium MR_ASW_Barley.pdf; Curated from CCAP Medium MR_ASW_Barley.pdf
+    specification
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
     label: Calcium pantothenate
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.176863'
+    ontology_source: CHEBI
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
-    label: Calcium pantothenate
-- preferred_term: Cyanocobalamine
+  source: CCAP Medium MR_ASW_Barley.pdf
+  notes: From CCAP Medium MR_ASW_Barley.pdf; Curated from CCAP Medium MR_ASW_Barley.pdf
+    specification
+- preferred_term: Cyanocobalamin
+  term:
+    id: CHEBI:17439
+    label: Cyanocobalamin
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.176866'
+    ontology_source: CHEBI
   concentration:
     value: '0.004'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001039
-    label: Cyanocobalamine
+  source: CCAP Medium MR_ASW_Barley.pdf
+  notes: From CCAP Medium MR_ASW_Barley.pdf; Curated from CCAP Medium MR_ASW_Barley.pdf
+    specification
 - preferred_term: Folic acid
   term:
     id: CHEBI:27470
     label: Folic acid
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.176868'
+    ontology_source: CHEBI
   concentration:
     value: '0.0004'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
-    label: Folic acid
+  source: CCAP Medium MR_ASW_Barley.pdf
+  notes: From CCAP Medium MR_ASW_Barley.pdf; Curated from CCAP Medium MR_ASW_Barley.pdf
+    specification
 - preferred_term: Inositol
   term:
-    id: CHEBI:24848
+    id: CHEBI:17268
     label: Inositol
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 0.95
+    curation_date: '2026-04-04T12:54:55.176870'
+    ontology_source: CHEBI
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000421
-    label: Inositol
+  source: CCAP Medium MR_ASW_Barley.pdf
+  notes: From CCAP Medium MR_ASW_Barley.pdf; Curated from CCAP Medium MR_ASW_Barley.pdf
+    specification
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
     label: Nicotinic acid
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.176872'
+    ontology_source: CHEBI
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
-    label: Nicotinic acid
+  source: CCAP Medium MR_ASW_Barley.pdf
+  notes: From CCAP Medium MR_ASW_Barley.pdf; Curated from CCAP Medium MR_ASW_Barley.pdf
+    specification
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
     label: Thiamine HCl
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.176875'
+    ontology_source: CHEBI
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
-    label: Thiamine HCl
+  source: CCAP Medium MR_ASW_Barley.pdf
+  notes: From CCAP Medium MR_ASW_Barley.pdf; Curated from CCAP Medium MR_ASW_Barley.pdf
+    specification
 - preferred_term: Thymine
   term:
     id: CHEBI:17821
     label: Thymine
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.176877'
+    ontology_source: CHEBI
   concentration:
     value: '0.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000503
-    label: Thymine
-- preferred_term: Soil extract
+  source: CCAP Medium MR_ASW_Barley.pdf
+  notes: From CCAP Medium MR_ASW_Barley.pdf; Curated from CCAP Medium MR_ASW_Barley.pdf
+    specification
+- preferred_term: Tricine
+  term:
+    id: CHEBI:46760
+    label: Tricine
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.176879'
+    ontology_source: CHEBI
   concentration:
-    value: variable
-    unit: VARIABLE
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: "Make up to 1 Litre with filtered natural seawater. Adjust pH to 7.6\
-    \ – 7.8 with 1M NaOH or\r\n1M HCl. Add approximately 1 grain of barley to each\
-    \ 25ml of prepared medium prior to\r\nautoclaving. Autoclave at 15 psi for 15\
-    \ minutes."
-- step_number: 2
-  action: MIX
-  description: 'Alternatively, use: Distilled water to 1 Litre and “Ultramarine Synthetica”
-    sea salts 33.60g'
-- step_number: 3
-  action: MIX
-  description: "Site selection for a good soil is very important and for most purposes\
-    \ a soil from undisturbed\r\ndeciduous woodland is best. Sites to avoid are those\
-    \ showing obvious signs of man's activity\r\nand particular care should be taken\
-    \ to avoid areas where fertilizers, crop sprays or other toxic\r\nchemicals may\
-    \ have been used."
-- step_number: 4
-  action: HEAT
-  description: "A rich loam with good crumb structure should be sought. Stones, roots\
-    \ and larger\r\ninvertebrates should be removed during an initial sieving through\
-    \ a 1 cm mesh. The sieved\r\nsoil should be spread to air dry and handpicked for\
-    \ smaller invertebrates and roots. It should\r\nbe turned periodically and picked\
-    \ over again. When dry sieve through a finer mesh (2-4 mm)\r\nand store in an\
-    \ airtight container away from light and heat."
-- step_number: 5
-  action: AUTOCLAVE
-  description: "Soil is prepared as above. Air-dried soil and twice its volume of\
-    \ supernatant distilled water\r\nare autoclaved together at 15 psi for 2 hours\
-    \ and left to cool. The supernatant is then\r\ndecanted and then distributed to\
-    \ containers in volumes suitable for making up batches of\r\nmedia. The aliquots\
-    \ and their containers are autoclaved for an appropriate length of time\r\n(e.g.\
-    \ 1 litre or less for 15 minutes) and are then kept in a cool place (e.g. a refrigerator)\
-    \ until\r\nrequired."
-applications:
-- Microbial cultivation
-curation_history:
-- timestamp: '2026-01-26T17:53:19.484535Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: CCAP, ID: C5'
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:17.144515'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Soil extract'
-- timestamp: '2026-03-13T06:18:54.824743Z'
-  curator: culturemech-id-assigner-v1.0
-  action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000371'
-- timestamp: '2026-03-17T06:30:53.000000Z'
-  curator: mediaingredientmech-enrichment-v1.0
-  action: Added MediaIngredientMech links
-  notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:05.832709+00:00'
-  curator: normalize_media_names_to_snake_case.py
-  action: NAME_NORMALIZED
-  notes: Normalized name from "ASW + barley" to "asw_barley" for consistent matching
-merge_fingerprint: 69081a2d7b88fe9f21546cbd68fb6752a9ca03ddc20e2ed9066decde5bf84804
+    value: '0.50'
+    unit: G_PER_L
+  source: CCAP Medium MR_ASW_Barley.pdf
+  notes: From CCAP Medium MR_ASW_Barley.pdf; Curated from CCAP Medium MR_ASW_Barley.pdf
+    specification
+- preferred_term: HCl. Add
+  notes: Ontology mapping not yet available; From CCAP Medium MR_ASW_Barley.pdf; Curated
+    from CCAP Medium MR_ASW_Barley.pdf specification
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  source: CCAP Medium MR_ASW_Barley.pdf
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- curation_method:automated_expert_mapping
+original_name: ASW + barley
+merge_fingerprint: fec2f0359e128887f8bcea8f4d3955c96f74bfc61d9cd7dd05431eafe3420945
 merged_from:
 - asw_barley

@@ -1,159 +1,115 @@
-id: CultureMech:015678
-name: PM
-medium_type: DEFINED
+id: CultureMech:000114
+name: pm
+category: algae
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ingredients:
-- preferred_term: Na2HPO4
-  concentration:
-    value: '12.5'
-    unit: MILLIMOLAR
-  term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
-  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
-- preferred_term: KH2PO4
-  concentration:
-    value: '12.5'
-    unit: MILLIMOLAR
-  term:
-    id: CHEBI:63036
-    label: ''
-- preferred_term: Ammonium Sulfate
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  term:
-    id: CHEBI:62946
-    label: ammonium sulfate
-  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7783-20-2; MW:
-    132.14'
-- preferred_term: Nitrilotriacetic acid
-  concentration:
-    value: '0.02'
-    unit: G_PER_L
-  term:
-    id: CHEBI:44557
-    label: nitrilotriacetic acid
-  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 139-13-9; MW: 191.14;
-    From UW concentrated base'
-- preferred_term: MgSO4
-  concentration:
-    value: '0.0289'
-    unit: G_PER_L
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From UW concentrated
-    base'
-- preferred_term: Calcium Chloride Dihydrate
-  concentration:
-    value: '0.00667'
-    unit: G_PER_L
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From UW concentrated
-    base'
-- preferred_term: ammonium molybdate tetrahydrate
-  concentration:
-    value: '1.85e-05'
-    unit: G_PER_L
-  notes: 'CAS: 12054-85-2; MW: 1235.86; From UW concentrated base'
-- preferred_term: Iron (II) sulfate heptahydrate
-  concentration:
-    value: '0.0006979999999999999'
-    unit: G_PER_L
-  notes: 'CAS: 7782-63-0; MW: 278.01; From UW concentrated base; Ontology enriched
-    via CAS-RN lookup'
-  term:
-    id: CHEBI:75836
-    label: ''
-- preferred_term: EDTA
-  concentration:
-    value: '0.00025'
-    unit: G_PER_L
-  term:
-    id: CHEBI:64755
-    label: EDTA(2-)
-  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 60-00-4; MW: 292.24;
-    From UW concentrated base'
-- preferred_term: Zinc sulfate heptahydrate
-  concentration:
-    value: '0.001095'
-    unit: G_PER_L
-  notes: 'CAS: 7446-20-0; MW: 287.56; From UW concentrated base; Ontology enriched
-    via CAS-RN lookup'
-  term:
-    id: CHEBI:32312
-    label: ''
-- preferred_term: Manganese (II) sulfate monohydrate
-  concentration:
-    value: '0.000154'
-    unit: G_PER_L
-  term:
-    id: CHEBI:86364
-    label: manganese(II) sulfate monohydrate
-  notes: 'CAS: 10034-96-5; MW: 169.02; From UW concentrated base'
-- preferred_term: Copper (II) sulfate pentahydrate
-  concentration:
-    value: '3.92e-05'
-    unit: G_PER_L
-  notes: 'CAS: 7758-99-8; MW: 249.69; From UW concentrated base; Ontology enriched
-    via CAS-RN lookup'
-  term:
-    id: CHEBI:31440
-    label: ''
-- preferred_term: Cobalt(II) nitrate hexahydrate
-  concentration:
-    value: '2.5e-05'
-    unit: G_PER_L
-  notes: 'CAS: 10026-22-9; MW: 291.03; From UW concentrated base; Ontology enriched
-    via CAS-RN lookup'
-  term:
-    id: CHEBI:86214
-    label: ''
-- preferred_term: sodium tetraborate decahydrate
-  concentration:
-    value: '1.77e-05'
-    unit: G_PER_L
-  notes: 'CAS: 1303-96-4; From UW concentrated base'
-  term:
-    id: CHEBI:86222
-    label: ''
-- preferred_term: Sodium thiosulfate pentahydrate
-  concentration:
-    value: '0.1'
-    unit: MILLIMOLAR
-  notes: 'CAS: 10102-17-7; MW: 248.18; Ontology enriched via CAS-RN lookup'
-  term:
-    id: CHEBI:32150
-    label: ''
-- preferred_term: 4-Aminobenzoic acid
-  concentration:
-    value: '0.002'
-    unit: G_PER_L
-  notes: 'CAS: 150-13-0; MW: 137.14; Ontology enriched via CAS-RN lookup'
-  term:
-    id: CHEBI:194474
-    label: ''
-description: Harwood UW defined media for growing RPal
-notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
-sources:
-- database: CultureBotHT
-  database_id: PM
-  url: https://github.com/CultureBotAI/CultureBotHT
+description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater
+  algae cultivation. Recipe available in PDF format.
+notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_PM.pdf
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
+applications:
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
 curation_history:
-- timestamp: '2026-03-18T04:31:14.182891+00:00'
-  curator: import_from_culturebotht.py
-  action: IMPORTED
-  notes: 'Imported from CultureBotHT repository: PM.yaml'
-- timestamp: '2026-03-18T04:34:00.430902Z'
+- curator: ccap-import
+  action: Imported from CCAP Culture Collection
+  notes: 'Source ID: PM, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_PM.pdf'
+  timestamp: '2026-01-28T00:00:00+00:00'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-02-03T11:26:43.586882'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:18:53.199108Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:015678'
+  notes: 'Assigned stable identifier: CultureMech:000114'
+- timestamp: '2026-03-17T19:45:04.150715+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PM" to "pm" for consistent matching
+- timestamp: '2026-04-04T12:54:54.942317'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 3 curated ingredients from CCAP
+  source: CCAP Medium MR_PM.pdf
+- timestamp: '2026-05-16T08:57:02.656736+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(3 entries)
+- timestamp: '2026-05-16T09:02:56.865730+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
+    category->lowercase=1
+- timestamp: '2026-08-06T03:04:20.233612+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: pm, pm'
+- timestamp: '2026-08-06T03:04:20.233642+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 897685bdb698e137622633f82c3da4a4e95af8faf61e7dfed156a3e0964ae7e9
+  source: pm.yaml, pm.yaml
+references:
+- reference: CCAP:PM
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_PM.pdf
+ingredients:
+- preferred_term: Sodium acetate trihydrate
+  notes: Ontology mapping not yet available; From CCAP Medium MR_PM.pdf; Curated from
+    CCAP Medium MR_PM.pdf specification
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  source: CCAP Medium MR_PM.pdf
+  term:
+    id: CHEBI:32138
+    label: ''
+- preferred_term: Yeast extract
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.942304'
+    ontology_source: FOODON
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: CCAP Medium MR_PM.pdf
+  notes: From CCAP Medium MR_PM.pdf; Curated from CCAP Medium MR_PM.pdf specification
+- preferred_term: Tryptone
+  term:
+    id: MICRO:0000182
+    label: Tryptone
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 0.9
+    curation_date: '2026-04-04T12:54:54.942312'
+    ontology_source: FOODON
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: CCAP Medium MR_PM.pdf
+  notes: From CCAP Medium MR_PM.pdf; Curated from CCAP Medium MR_PM.pdf specification
 data_quality_flags:
-- has_unmapped_ingredients
-merge_fingerprint: 9a8de8923809266eb7de5c1b50d9321a4cbf6996fb7a5ceeb4bfe610fb2c0c4f
+- has_ontology_mappings
+- ingredients_curated
+- curation_method:automated_expert_mapping
+original_name: PM
+kg_microbe_match: mediadive.medium:C78
+categories:
+- algae
+- bacterial
 merged_from:
 - pm
+- pm
+merge_fingerprint: 897685bdb698e137622633f82c3da4a4e95af8faf61e7dfed156a3e0964ae7e9

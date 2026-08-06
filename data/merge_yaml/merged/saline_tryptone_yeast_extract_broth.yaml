@@ -1,69 +1,105 @@
-id: CultureMech:010546
+id: CultureMech:010091
 name: saline_tryptone_yeast_extract_broth
-original_name: SALINE TRYPTONE-YEAST EXTRACT BROTH
-category: fungal
+original_name: Saline Tryptone-Yeast Extract Broth
+category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 7.1
-media_term:
-  preferred_term: JCM Medium J668
-  term:
-    id: mediadive.medium:J668
-    label: SALINE TRYPTONE-YEAST EXTRACT BROTH
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=668'
 ingredients:
-- preferred_term: Tryptone
+- preferred_term: Distilled water
   concentration:
-    value: '5'
+    value: '1'
     unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '3'
-    unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: NaCl
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:26710
-    label: NaCl
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: NaCl
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 7.0 - 7.2.
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Tryptone (BD-Difco)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M686
+  term:
+    id: TOGO:M686
+    label: Saline Tryptone-Yeast Extract Broth
+notes: 'Source: https://togomedium.org/medium/M686
+
+  Original source: JCM - JCM_M668
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=668'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:17.231535Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J668'
-- timestamp: '2026-03-13T06:20:14.301916Z'
+- timestamp: '2026-01-27T06:35:55.525845Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M686'
+- timestamp: '2026-01-28T19:48:07.691172Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:11.223774Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:010546'
-- timestamp: '2026-03-17T17:06:07.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:010091'
+- timestamp: '2026-03-17T06:29:41.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:33.336448+00:00'
+- timestamp: '2026-03-17T19:46:30.150025+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SALINE TRYPTONE-YEAST EXTRACT BROTH" to "saline_tryptone_yeast_extract_broth"
+  notes: Normalized name from "Saline Tryptone-Yeast Extract Broth" to "saline_tryptone_yeast_extract_broth"
     for consistent matching
-merge_fingerprint: 8f9f1a938d968e889b723edf387a862e05a28e6d01c77ccbda799576908de9e2
+- timestamp: '2026-06-05T07:41:45.065571+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:58:31.712813+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-08-06T03:05:55.128914+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 121a37c9b372e2aa4d124ed3d94abed2aee1d482039d7161bf70ddebbb249d60
+  source: saline_tryptone_yeast_extract_broth.yaml
+merge_fingerprint: 121a37c9b372e2aa4d124ed3d94abed2aee1d482039d7161bf70ddebbb249d60
 merged_from:
 - saline_tryptone_yeast_extract_broth

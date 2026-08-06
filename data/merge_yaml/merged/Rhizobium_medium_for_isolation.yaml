@@ -3,8 +3,11 @@ name: rhizobium_medium_for_isolation
 original_name: Rhizobium medium for isolation
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_range: 6.6-7
+ph_range:
+  min: 6.6
+  max: 7.0
 media_term:
   preferred_term: DSMZ Medium 1848
   term:
@@ -19,28 +22,28 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000538
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16899
     label: D-Mannitol
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4
   term:
     id: CHEBI:32599
-    label: MgSO4
+    label: magnesium sulfate
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: MgSO4
 - preferred_term: Yeast extract
   concentration:
@@ -53,8 +56,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Agar
   term:
@@ -63,8 +66,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -100,6 +103,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Rhizobium medium for isolation" to "rhizobium_medium_for_isolation"
     for consistent matching
+- timestamp: '2026-05-20T06:02:04.061372+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.6-7'' -> {''min'': 6.6, ''max'': 7.0}'
+- timestamp: '2026-06-05T07:41:44.213976+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:10.911104+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:54.619500+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2fc65d21ac0c2ae91307b0188aab54e1d40f020cd8746ace3ade0dec28befb30
+  source: rhizobium_medium_for_isolation.yaml
 kg_microbe_match: mediadive.medium:1848
 merge_fingerprint: 2fc65d21ac0c2ae91307b0188aab54e1d40f020cd8746ace3ade0dec28befb30
 merged_from:

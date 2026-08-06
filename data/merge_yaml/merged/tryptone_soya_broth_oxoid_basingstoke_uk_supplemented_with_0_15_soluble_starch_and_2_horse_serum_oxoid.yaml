@@ -4,6 +4,7 @@ original_name: Tryptone Soya Broth (Oxoid, Basingstoke, UK) supplemented with 0.
   soluble starch and 2% horse serum (Oxoid)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -15,8 +16,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Horse serum (Oxoid)
   concentration:
@@ -28,6 +29,9 @@ ingredients:
     value: '0.15'
     unit: PERCENT_W_V
   notes: 'Role: Carbon source; Properties: Undefined component'
+  term:
+    id: CHEBI:28017
+    label: ''
 - preferred_term: Tryptone soya broth (Oxoid)
   concentration:
     value: '30'
@@ -60,9 +64,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:54.502159'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:03.086597Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -77,6 +81,21 @@ curation_history:
   notes: Normalized name from "Tryptone Soya Broth (Oxoid, Basingstoke, UK) supplemented
     with 0.15% soluble starch and 2% horse serum (Oxoid)" to "tryptone_soya_broth_oxoid_basingstoke_uk_supplemented_with_0_15_soluble_starch_and_2_horse_serum_oxoid"
     for consistent matching
-merge_fingerprint: 1d2372aa8df599468187096b9be25b9b1fafda1f248205ced8abbc1b896016e4
+- timestamp: '2026-05-16T09:04:38.139379+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:54.578031+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:02.064488+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e7c52d3c80a7a856a6e8cf3e21654742dd51c90d21fb9b36a6097b803b4d4cbc
+  source: tryptone_soya_broth_oxoid_basingstoke_uk_supplemented_with_0_15_soluble_starch_and_2_horse_serum_oxoid.yaml
+merge_fingerprint: e7c52d3c80a7a856a6e8cf3e21654742dd51c90d21fb9b36a6097b803b4d4cbc
 merged_from:
 - tryptone_soya_broth_oxoid_basingstoke_uk_supplemented_with_0_15_soluble_starch_and_2_horse_serum_oxoid

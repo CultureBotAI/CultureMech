@@ -1,0 +1,129 @@
+id: CultureMech:015831
+name: desulfurivibrio_ames2_medium
+original_name: DESULFURIVIBRIO AMeS2 MEDIUM
+category: bacterial
+medium_type: DEFINED
+composition_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1333
+  term:
+    id: jcm.grmd:1333
+    label: DESULFURIVIBRIO AMeS2 MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1333'
+ingredients:
+- preferred_term: Na2CO3
+  concentration:
+    value: '22.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: Sodium carbonate solution
+- preferred_term: NaHCO3
+  concentration:
+    value: '8.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: NaHCO3
+- preferred_term: NaCl
+  concentration:
+    value: '6.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: K2HPO4
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: K2HPO4 x 3 H2O
+- preferred_term: Sulfur
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26833
+    label: sulfur atom
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26833
+    label: Sulfur
+- preferred_term: 1 M MgCl2 solution
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: 1 M NH4Cl solution
+  concentration:
+    value: '4.0'
+    unit: ML_PER_L
+- preferred_term: Trace element solution (see Medium No. 1079 )
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: Se/W solution* (see Medium No. 852 )
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: Trace vitamins* (see Medium No. 197 )
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: 5% Na2S·9H2O solution
+  concentration:
+    value: '5.0'
+    unit: ML_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Add components, except sulfur, to distilled water and bring volume
+    to 1.0 L.
+- step_number: 2
+  action: MIX
+  description: Autoclave in closed bottles.
+- step_number: 3
+  action: MIX
+  description: 'After cooling, aseptically add per liter the following solutions (autoclaved
+    or *filter-sterilized): Steam sulfur for 3 hr on each of 3 successive days.'
+- step_number: 4
+  action: MIX
+  description: Aseptically and anaerobically distribute the medium and sterilized
+    sulfur into culture vessels (e.g., 10 ml medium and 0.05 g sulfur in Hungate tubes)
+    under a N2 gas steam and seal with butyl rubber stoppers.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-06-02T07:08:39.276831+00:00'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1333. Ingredients captured verbatim; CHEBI/MediaIngredientMech
+    enrichment and category (bacterial/archaea) review are downstream steps.
+- timestamp: '2026-06-03T02:00:03.508937Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-06-03T07:12:22.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-08-06T03:04:35.388849+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 6c7d6bd5f8e62bab0eac18adc70ea9e38ccb90fcf1e3f66b83746e02eb220833
+  source: JCM_J1333_DESULFURIVIBRIO_AMeS2_MEDIUM.yaml
+merge_fingerprint: 6c7d6bd5f8e62bab0eac18adc70ea9e38ccb90fcf1e3f66b83746e02eb220833
+merged_from:
+- JCM_J1333_DESULFURIVIBRIO_AMeS2_MEDIUM

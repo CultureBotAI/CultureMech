@@ -3,6 +3,7 @@ name: r3_a_medium
 original_name: R3 A medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
@@ -25,12 +26,6 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -38,8 +33,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Starch
   term:
@@ -48,28 +43,28 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
     label: Starch
 - preferred_term: Na-pyruvate
   term:
     id: CHEBI:50144
-    label: Na-pyruvate
+    label: sodium pyruvate
   concentration:
     value: '0.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
     label: Na-pyruvate
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -78,8 +73,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Sodium pyruvate
   term:
@@ -88,8 +83,8 @@ ingredients:
   concentration:
     value: '0.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
     label: Sodium pyruvate
 - preferred_term: Agar
   term:
@@ -98,8 +93,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -124,13 +119,49 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "R3 A medium" to "r3_a_medium" for consistent matching
-- timestamp: '2026-04-17T06:29:10.335930+00:00'
+- timestamp: '2026-06-05T07:40:19.431446+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:27.577447+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:46:43.643271+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:33.572553+00:00'
   curator: recipe-merger
   action: Merged 11 duplicate recipes into canonical record
   notes: 'Sources: 1_10_r2a_medium, KOMODO_1153_R3_A_medium, KOMODO_1320_HALF_STRENGTH_R2A_MEDIUM_IN_75_SEAWATER,
     KOMODO_919_LIMNOBACTER_medium, double_concentrated_830_0_06_sodium_pyruvate, half_strength_r2a,
     half_strength_r2a_medium_in_75_seawater, limnobacter_medium, r2a_medium, r3_a_medium,
     reactivation_with_liquid_medium_830'
+- timestamp: '2026-08-06T03:04:33.572631+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 11 source recipe(s) on fingerprint 4804452e9f68ca5e7c9e0f5171d35b2ab3c2e1280f6695fbc0f67ac430965fd1
+  source: 1_10_r2a_medium.yaml, KOMODO_1153_R3_A_medium.yaml, KOMODO_1320_HALF_STRENGTH_R2A_MEDIUM_IN_75_SEAWATER.yaml,
+    KOMODO_919_LIMNOBACTER_medium.yaml, double_concentrated_830_0_06_sodium_pyruvate.yaml,
+    half_strength_r2a.yaml, half_strength_r2a_medium_in_75_seawater.yaml, limnobacter_medium.yaml,
+    r2a_medium.yaml, r3_a_medium.yaml, reactivation_with_liquid_medium_830.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/r3_a_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000592
+  name: r3_a_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 1153; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 1153; local ingredient
+  and concentration signatures match.
 synonyms:
 - name: 1_10_r2a_medium
   source: MediaDive
@@ -182,4 +213,4 @@ merged_from:
 - r2a_medium
 - r3_a_medium
 - reactivation_with_liquid_medium_830
-merge_fingerprint: 64a9f8e9817814680fd3249d06616fbde2b092bd0ab3364972a9d306ef90cfc0
+merge_fingerprint: 4804452e9f68ca5e7c9e0f5171d35b2ab3c2e1280f6695fbc0f67ac430965fd1

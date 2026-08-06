@@ -3,6 +3,7 @@ name: togo_medium_m1605
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
@@ -24,11 +25,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
   term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4·7H2O
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -43,9 +44,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -81,9 +82,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008158'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:49.748067'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:29:56.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -93,10 +94,31 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TOGO Medium M1605" to "togo_medium_m1605" for consistent
     matching
-- timestamp: '2026-04-17T06:29:11.023035+00:00'
+- timestamp: '2026-05-16T09:04:36.553557+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:52.851208+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:58:37.210299+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-08-06T03:04:34.233620+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: 802_5_glucose, togo_medium_m1562, togo_medium_m1605'
+- timestamp: '2026-08-06T03:04:34.233671+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 4be1073893df9a8066cf8113d451e40f387d4cb70cebfd196f8b3259395640d5
+  source: 802_5_glucose.yaml, togo_medium_m1562.yaml, togo_medium_m1605.yaml
 solutions:
 - preferred_term: Hipolypepton*
   composition: []
@@ -105,6 +127,17 @@ solutions:
     unit: G_PER_L
   notes: 'Properties: Undefined component'
   name: Unknown solution
+parent_media:
+  path: data/normalized_yaml/bacterial/802_5_glucose.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:008387
+  name: 802_5_glucose
+  notes: TOGO/NBRC 802 glucose concentration family; reviewed as concentration variant
+    of 802 + 5% glucose.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Glucose concentration decreased from 50 g/L to 5 g/L; all other parsed ingredient
+  and solution concentrations match the parent.
 synonyms:
 - name: 802_5_glucose
   source: TOGO
@@ -120,4 +153,4 @@ merged_from:
 - 802_5_glucose
 - togo_medium_m1562
 - togo_medium_m1605
-merge_fingerprint: 259c27d247be8b91b43e5f7529e77708758c6ef8ffa8a36e1c0ed662e8ac7eb6
+merge_fingerprint: 4be1073893df9a8066cf8113d451e40f387d4cb70cebfd196f8b3259395640d5

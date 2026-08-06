@@ -1,65 +1,107 @@
-id: CultureMech:003155
+id: CultureMech:010127
 name: n_z_amine_a_medium
-original_name: N-Z AMINE A MEDIUM
+original_name: N-Z Amine A Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-media_term:
-  preferred_term: JCM Medium J80
-  term:
-    id: mediadive.medium:J80
-    label: N-Z AMINE A MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=80'
 ingredients:
-- preferred_term: N-Z amine
+- preferred_term: Distilled water
   concentration:
-    value: '4.62963'
+    value: '1'
     unit: G_PER_L
-  notes: ' ( type A)'
-- preferred_term: Beef extract
-  concentration:
-    value: '0.925926'
-    unit: G_PER_L
-- preferred_term: Glycerol
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:17754
-    label: Glycerol
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Glycerol
   concentration:
     value: '80'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
   term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: N--Z amine, type A (Sheffield)
   concentration:
-    value: '13.8889'
+    value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  notes: 'Properties: Undefined component'
+- preferred_term: Beef extract (BD-Difco)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M71
+  term:
+    id: TOGO:M71
+    label: N-Z Amine A Medium
+notes: 'Source: https://togomedium.org/medium/M71
+
+  Original source: JCM - JCM_M80
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=80'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:15.695760Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J80'
-- timestamp: '2026-03-13T06:19:18.183719Z'
+- timestamp: '2026-01-27T06:35:55.578763Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M71'
+- timestamp: '2026-01-28T19:48:35.492559Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:11.526300Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:003155'
-- timestamp: '2026-03-17T06:30:33.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:010127'
+- timestamp: '2026-03-17T06:30:40.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:32.006240+00:00'
+- timestamp: '2026-03-17T19:46:30.456950+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "N-Z AMINE A MEDIUM" to "n_z_amine_a_medium" for consistent
+  notes: Normalized name from "N-Z Amine A Medium" to "n_z_amine_a_medium" for consistent
     matching
-merge_fingerprint: 74b0c3f4ab61fc82af2f39a46582df579ad71c894ccb8883caa35c1e24a1824a
+- timestamp: '2026-06-05T07:40:43.866370+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:34.852158+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:05:18.701273+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 90ee9e06cad82d8d9f5af9e6c62f06a0d1a9cd875dfc33be7dc97257da21bb5e
+  source: TOGO_M71_N-Z_Amine_A_Medium.yaml
+merge_fingerprint: 90ee9e06cad82d8d9f5af9e6c62f06a0d1a9cd875dfc33be7dc97257da21bb5e
 merged_from:
-- n_z_amine_a_medium
+- TOGO_M71_N-Z_Amine_A_Medium

@@ -4,6 +4,7 @@ original_name: Brain heart infusion (BHI) broth containing C. difficile suppleme
   and 0.04% cysteine
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Cysteine
@@ -15,8 +16,8 @@ ingredients:
   term:
     id: CHEBI:15356
     label: Cysteine
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001023
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15356
     label: Cysteine
 - preferred_term: Calf brains
   term:
@@ -185,13 +186,13 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.586617'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     Hydrogen gas; Added default concentration for ingredient: C. difficile supplement;
     Added default concentration for ingredient: D-cycloserine; Added default concentration
     for ingredient: Cefoxitin'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:05.863937Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -206,6 +207,21 @@ curation_history:
   notes: Normalized name from "Brain heart infusion (BHI) broth containing C. difficile
     supplement and 0.04% cysteine" to "brain_heart_infusion_bhi_broth_containing_c_difficile_supplement_and_0_04_cysteine"
     for consistent matching
+- timestamp: '2026-05-16T09:03:26.123368+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:51.439746+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:25.856654+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e36b75f207ee95ac6143abaaf9b6a57a740f0dff56a740dad434b7ab76f1abca
+  source: brain_heart_infusion_bhi_broth_containing_c_difficile_supplement_and_0_04_cysteine.yaml
 merge_fingerprint: e36b75f207ee95ac6143abaaf9b6a57a740f0dff56a740dad434b7ab76f1abca
 merged_from:
 - brain_heart_infusion_bhi_broth_containing_c_difficile_supplement_and_0_04_cysteine

@@ -4,6 +4,7 @@ original_name: '892'
 category: bacterial
 description: 892. NBRC 891.
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Casein peptone15gSoybean peptone5gNaCl5gAgar15gDistilled water1LpH
@@ -40,10 +41,19 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007502'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:45.925190'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Casein peptone15gSoybean peptone5gNaCl5gAgar15gDistilled
     water1LpH 7.1-7.5'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-05-16T09:03:06.738496+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:05:04.694626+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 0c666f1a498fadd42fc771ee03d800d52c62f321d4b9248fec285280bc534b85
+  source: NBRC_892.yaml
 merge_fingerprint: 0c666f1a498fadd42fc771ee03d800d52c62f321d4b9248fec285280bc534b85
 merged_from:
 - NBRC_892

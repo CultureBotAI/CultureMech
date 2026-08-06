@@ -3,6 +3,7 @@ name: frankia_medium_see_medium_554_554_benutzen
 original_name: FRANKIA MEDIUM (see medium 554; 554 benutzen)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:
@@ -19,8 +20,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Starch
   term:
@@ -29,8 +30,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
     label: Starch
 - preferred_term: Yeast extract
   concentration:
@@ -47,8 +48,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001099
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
     label: CaCO3
 preparation_steps:
 - step_number: 1
@@ -74,6 +75,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "FRANKIA MEDIUM (see medium 554; 554 benutzen)" to "frankia_medium_see_medium_554_554_benutzen"
     for consistent matching
+- timestamp: '2026-06-05T07:41:05.434516+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:35.594840+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 9892a7bf8ccfbdc816671ccdcb18c3cdfa82e5ed5c561099d469faac3cede5a4
+  source: frankia_medium_see_medium_554_554_benutzen.yaml
 merge_fingerprint: 9892a7bf8ccfbdc816671ccdcb18c3cdfa82e5ed5c561099d469faac3cede5a4
 merged_from:
 - frankia_medium_see_medium_554_554_benutzen

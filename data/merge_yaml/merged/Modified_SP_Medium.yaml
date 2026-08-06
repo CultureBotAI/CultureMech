@@ -3,6 +3,7 @@ name: modified_sp_medium
 original_name: Modified SP Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
@@ -24,11 +25,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
   term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4·7H2O
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -43,9 +44,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Sucrose
   concentration:
     value: '1'
@@ -55,9 +56,9 @@ ingredients:
   term:
     id: CHEBI:17992
     label: sucrose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000661
-    label: Sucrose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17992
+    label: sucrose
 - preferred_term: Galactose
   concentration:
     value: '1'
@@ -67,9 +68,9 @@ ingredients:
   term:
     id: CHEBI:28260
     label: galactose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000523
-    label: Galactose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28260
+    label: galactose
 - preferred_term: Raffinose
   concentration:
     value: '1'
@@ -79,14 +80,17 @@ ingredients:
   term:
     id: CHEBI:16634
     label: raffinose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000613
-    label: Raffinose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16634
+    label: raffinose
 - preferred_term: Soluble starch
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Undefined component'
+  term:
+    id: CHEBI:28017
+    label: ''
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -131,6 +135,27 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Modified SP Medium" to "modified_sp_medium" for consistent
     matching
-merge_fingerprint: 20fdaa0ff7ae9edde847b39d53820403944b1652f0c32b873efb3b64b4fd561b
+- timestamp: '2026-06-05T07:41:37.766591+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:58:26.779264+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:47:08.947563+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:49.791852+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 0cbff31f06bb4734a35a3c4fc9817269ecd2028c90a86c74b4e0996dc3ce5c4f
+  source: modified_sp_medium.yaml
+merge_fingerprint: 0cbff31f06bb4734a35a3c4fc9817269ecd2028c90a86c74b4e0996dc3ce5c4f
 merged_from:
 - modified_sp_medium

@@ -1,6 +1,7 @@
 id: CultureMech:015635
 name: MoYLS4 no iron
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: MoYLS4
@@ -17,7 +18,7 @@ ingredients:
     label: ''
 description: Rich lactate-sulfate media for sulfate-reducing bacteria with no Fe
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: MoYLS4 no iron
@@ -31,6 +32,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015635'
+- timestamp: '2026-05-16T09:04:41.971416+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:06.828366+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d4de7444dd41f6db10316ae24dfba2b64e4f164b066e1292cb38ec06182adcb4
+  source: moyls4_no_iron.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: d4de7444dd41f6db10316ae24dfba2b64e4f164b066e1292cb38ec06182adcb4

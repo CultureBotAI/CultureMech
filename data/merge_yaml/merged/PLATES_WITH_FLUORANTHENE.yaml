@@ -3,6 +3,7 @@ name: plates_with_fluoranthene
 original_name: PLATES WITH FLUORANTHENE
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 462a
@@ -30,6 +31,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  term:
+    id: CHEBI:33083
+    label: ''
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
@@ -37,28 +41,28 @@ ingredients:
   concentration:
     value: '2.44'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '1.52'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -67,8 +71,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -77,8 +81,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: EDTA
   term:
@@ -87,8 +91,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000165
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64755
     label: EDTA
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -97,8 +101,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: p-Aminobenzoate
   term:
@@ -107,8 +111,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17836
     label: p-Aminobenzoate
 - preferred_term: Biotin
   term:
@@ -117,8 +121,8 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Nicotinic acid
   term:
@@ -127,8 +131,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
     label: Nicotinic acid
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
@@ -137,8 +141,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000160
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132751
     label: Thiamine-HCl x 2 H2O
 - preferred_term: Calcium pantothenate
   term:
@@ -147,8 +151,8 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium pantothenate
 - preferred_term: Pyridoxamine
   term:
@@ -157,8 +161,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001024
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16410
     label: Pyridoxamine
 - preferred_term: Vitamin B12
   term:
@@ -167,8 +171,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 - preferred_term: Peptone
   concentration:
@@ -186,8 +190,8 @@ ingredients:
     value: '50.0'
     unit: G_PER_L
   notes: ' (for solid medium) [Merged 3 duplicates: 15.0, 15.0, 20.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Casein peptone
   concentration:
@@ -204,8 +208,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Pancreatic digest of casein
   term:
@@ -329,8 +333,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -339,18 +343,18 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -359,8 +363,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
@@ -369,8 +373,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
     label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -379,8 +383,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -389,8 +393,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 applications:
 - Microbial cultivation
@@ -420,7 +424,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "PLATES WITH FLUORANTHENE" to "plates_with_fluoranthene"
     for consistent matching
-- timestamp: '2026-04-17T06:29:26.120842+00:00'
+- timestamp: '2026-06-05T07:40:23.582488+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 23 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:44.975481+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:52.094125+00:00'
   curator: recipe-merger
   action: Merged 24 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_462_MINERAL_MEDIUM_BRUNNER_WITH_VITAMINS, KOMODO_462a_PLATES_WITH_FLUORANTHENE,
@@ -432,7 +446,156 @@ curation_history:
     medium_462_modified_for_dsm_6537, medium_462_modified_for_dsm_7356, medium_462a_modified_for_dsm_11094,
     medium_462a_modified_for_dsm_11095, medium_462a_modified_for_dsm_11096, medium_462a_modified_for_dsm_12247,
     plates_with_fluoranthene'
+- timestamp: '2026-08-06T03:04:52.094560+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 24 source recipe(s) on fingerprint 6d0480c61fb7cf2d0d3a78af5caf81fd606e8942b19092f05948af726ef44655
+  source: KOMODO_462_MINERAL_MEDIUM_BRUNNER_WITH_VITAMINS.yaml, KOMODO_462a_PLATES_WITH_FLUORANTHENE.yaml,
+    medium_462_modified_for_dsm_11192.yaml, medium_462_modified_for_dsm_13439.yaml,
+    medium_462_modified_for_dsm_13620.yaml, medium_462_modified_for_dsm_13957.yaml,
+    medium_462_modified_for_dsm_14926.yaml, medium_462_modified_for_dsm_16550.yaml,
+    medium_462_modified_for_dsm_18203.yaml, medium_462_modified_for_dsm_18781.yaml,
+    medium_462_modified_for_dsm_21507.yaml, medium_462_modified_for_dsm_22840.yaml,
+    med
 ph_value: 6.9
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_462_modified_for_dsm_11192.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005484
+  name: medium_462_modified_for_dsm_11192
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_462_modified_for_dsm_13439.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005485
+  name: medium_462_modified_for_dsm_13439
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_462_modified_for_dsm_13620.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005486
+  name: medium_462_modified_for_dsm_13620
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_462_modified_for_dsm_13957.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005487
+  name: medium_462_modified_for_dsm_13957
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_462_modified_for_dsm_14926.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005488
+  name: medium_462_modified_for_dsm_14926
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_462_modified_for_dsm_16550.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005489
+  name: medium_462_modified_for_dsm_16550
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_462_modified_for_dsm_18203.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005490
+  name: medium_462_modified_for_dsm_18203
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_462_modified_for_dsm_18781.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005491
+  name: medium_462_modified_for_dsm_18781
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_462_modified_for_dsm_21507.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005492
+  name: medium_462_modified_for_dsm_21507
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_462_modified_for_dsm_22840.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005493
+  name: medium_462_modified_for_dsm_22840
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_462_modified_for_dsm_22913.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005494
+  name: medium_462_modified_for_dsm_22913
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_462_modified_for_dsm_23828.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005495
+  name: medium_462_modified_for_dsm_23828
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_462_modified_for_dsm_24952.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005496
+  name: medium_462_modified_for_dsm_24952
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_462_modified_for_dsm_6344.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005497
+  name: medium_462_modified_for_dsm_6344
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_462_modified_for_dsm_6508.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005498
+  name: medium_462_modified_for_dsm_6508
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_462_modified_for_dsm_6537.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005499
+  name: medium_462_modified_for_dsm_6537
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_462_modified_for_dsm_7356.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005500
+  name: medium_462_modified_for_dsm_7356
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_462a_modified_for_dsm_11094.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005502
+  name: medium_462a_modified_for_dsm_11094
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_462a_modified_for_dsm_11095.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005503
+  name: medium_462a_modified_for_dsm_11095
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_462a_modified_for_dsm_11096.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005504
+  name: medium_462a_modified_for_dsm_11096
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_462a_modified_for_dsm_12247.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005505
+  name: medium_462a_modified_for_dsm_12247
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/plates_with_fluoranthene.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001580
+  name: plates_with_fluoranthene
+  notes: KOMODO record states DSMZ Medium 462a provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 synonyms:
 - name: mineral_medium_brunner_with_vitamins
   source: KOMODO
@@ -549,4 +712,4 @@ merged_from:
 - medium_462a_modified_for_dsm_11096
 - medium_462a_modified_for_dsm_12247
 - plates_with_fluoranthene
-merge_fingerprint: 4594c73c04c1368684ed52541cc7518510a574e1b8af4917e0fa8d2e91df349d
+merge_fingerprint: 6d0480c61fb7cf2d0d3a78af5caf81fd606e8942b19092f05948af726ef44655

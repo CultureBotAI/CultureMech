@@ -1,6 +1,7 @@
 id: CultureMech:015552
 name: M9 Thauers
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose
@@ -65,8 +66,8 @@ ingredients:
     value: '0.02'
     unit: MG_PER_L
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Thauer''s vitamin
     mix'
 - preferred_term: 4-Aminobenzoic acid
@@ -161,7 +162,7 @@ ingredients:
     From Thauer''s vitamin mix'
 description: E. coli defined media
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: M9 Thauers
@@ -175,8 +176,27 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015552'
+- timestamp: '2026-05-16T09:04:40.848794+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:52.671279+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:47:15.157094+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:05.430662+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint df5f9ac1c84e8a6049e98762255d20c3e128f368f4ddb6faba7afbb02f350d19
+  source: m9_thauers.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: 043ee7798568d817ee4f8dbefac9eae09f03d704a564c80e13d044e4543392d9
+merge_fingerprint: df5f9ac1c84e8a6049e98762255d20c3e128f368f4ddb6faba7afbb02f350d19
 merged_from:
 - m9_thauers

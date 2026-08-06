@@ -1,152 +1,104 @@
-id: CultureMech:000340
+id: CultureMech:000067
 name: e31
-original_name: E31
-category: bacterial
+category: algae
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-media_term:
-  preferred_term: CCAP Medium C31
-  term:
-    id: mediadive.medium:C31
-    label: E31
-notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_E31.pdf'
+description: Algae culture medium from CCAP Culture Collection. Suitable for saltwater
+  algae cultivation. Recipe available in PDF format.
+notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_E31.pdf
+salinity: marine (natural seawater or artificial seawater)
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
+applications:
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
+curation_history:
+- curator: ccap-import
+  action: Imported from CCAP Culture Collection
+  notes: 'Source ID: E31, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_E31.pdf'
+  timestamp: '2026-01-28T00:00:00+00:00'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-02-03T11:26:43.496829'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:18:53.071555Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000067'
+- timestamp: '2026-03-17T19:45:04.026488+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "E31" to "e31" for consistent matching
+- timestamp: '2026-04-04T20:18:55.107940'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 3 curated ingredients from CCAP
+  source: CCAP Medium MR_E31.pdf
+- timestamp: '2026-05-16T08:57:02.300723+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(3 entries)
+- timestamp: '2026-05-16T09:02:56.489979+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
+    category->lowercase=1
+- timestamp: '2026-08-06T03:04:19.815397+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 9c676bf0ffbdf9358c5f17c6a5298669096d2228aa27b9466443211328c1a626
+  source: e31.yaml
+references:
+- reference: CCAP:E31
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_E31.pdf
 ingredients:
-- preferred_term: Natural sea water
-  concentration:
-    value: '500'
-    unit: G_PER_L
-- preferred_term: KNO3
+- preferred_term: KNO
   term:
     id: CHEBI:63043
-    label: KNO3
+    label: KNO
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T20:18:55.107927'
+    ontology_source: CHEBI
   concentration:
-    value: '0.2'
+    value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000170
-    label: KNO3
+  source: CCAP Medium MR_E31.pdf
+  notes: From CCAP Medium MR_E31.pdf; Curated from CCAP Medium MR_E31.pdf specification
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
     label: K2HPO4
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T20:18:55.107934'
+    ontology_source: CHEBI
   concentration:
-    value: '0.02'
+    value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+  source: CCAP Medium MR_E31.pdf
+  notes: From CCAP Medium MR_E31.pdf; Curated from CCAP Medium MR_E31.pdf specification
+- preferred_term: MgSO .7H 0
+  notes: Ontology mapping not yet available; From CCAP Medium MR_E31.pdf; Curated
+    from CCAP Medium MR_E31.pdf specification
   concentration:
-    value: '0.02'
+    value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: Cyanocobalamine
-  concentration:
-    value: '0.1'
-    unit: MICROG_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001039
-    label: Cyanocobalamine
-- preferred_term: Thiamine HCl
-  term:
-    id: CHEBI:49105
-    label: Thiamine HCl
-  concentration:
-    value: '50'
-    unit: MICROG_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
-    label: Thiamine HCl
-- preferred_term: Biotin
-  term:
-    id: CHEBI:15956
-    label: Biotin
-  concentration:
-    value: '0.1'
-    unit: MICROG_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
-    label: Biotin
-- preferred_term: Soil
-  concentration:
-    value: variable
-    unit: VARIABLE
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: "This medium is made up in 2 parts which are autoclaved separately\
-    \ at 15 psi and \r\nmixed aseptically (1:1), when cool. This avoids precipitation."
-- step_number: 2
-  action: MIX
-  description: "Alternatively,  use  17.5g  of  “Ultramarine  Synthetica” sea  salts\
-    \ in\r\n500ml of distilled water."
-- step_number: 3
-  action: AUTOCLAVE
-  description: Distilled water to 500 ml.  Autoclave
-- step_number: 4
-  action: MIX
-  description: "Site selection for a good soil is very important and for most purposes\
-    \ a soil from undisturbed\r\ndeciduous woodland is best. Sites to avoid are those\
-    \ showing obvious signs of man's activity\r\nand particular care should be taken\
-    \ to avoid areas where fertilizers, crop sprays or other toxic\r\nchemicals may\
-    \ have been used."
-- step_number: 5
-  action: HEAT
-  description: "A rich loam with good crumb structure should be sought. Stones, roots\
-    \ and larger\r\ninvertebrates should be removed during an initial sieving through\
-    \ a 1 cm mesh. The sieved\r\nsoil should be spread to air dry and handpicked for\
-    \ smaller invertebrates and roots. It should\r\nbe turned periodically and picked\
-    \ over again. When dry sieve through a finer mesh (2-4 mm)\r\nand store in an\
-    \ airtight container away from light and heat."
-- step_number: 6
-  action: AUTOCLAVE
-  description: "Soil is  prepared  as  above.  Air­-dried  soil and  twice  its  volume\
-    \  of  supernatant\r\ndistilled water are autoclaved together at 15 psi for 2\
-    \ hours and left to cool.  The \r\nsupernatant is then decanted and filtered through\
-    \ Whatman No 1 filter paper, then\r\ndistributed to containers in volumes suitable\
-    \ for making up batches of media. The \r\naliquots and their containers are autoclaved\
-    \ for an appropriate length of time (e.g.\r\n1 litre or less for 15 minutes) and\
-    \ are then kept in a cool place (e.g. a refrigerator) \r\nuntil required."
-applications:
-- Microbial cultivation
-curation_history:
-- timestamp: '2026-01-26T17:53:19.570830Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: CCAP, ID: C31'
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:16.996609'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Soil'
-- timestamp: '2026-03-13T06:18:54.580470Z'
-  curator: culturemech-id-assigner-v1.0
-  action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000340'
-- timestamp: '2026-03-17T06:30:13.000000Z'
-  curator: mediaingredientmech-enrichment-v1.0
-  action: Added MediaIngredientMech links
-  notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:05.570683+00:00'
-  curator: normalize_media_names_to_snake_case.py
-  action: NAME_NORMALIZED
-  notes: Normalized name from "E31" to "e31" for consistent matching
-- timestamp: '2026-04-17T06:30:02.529894+00:00'
-  curator: recipe-merger
-  action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: e26_biotin, e31'
-synonyms:
-- name: e26_biotin
-  source: MediaDive
-  source_id: mediadive.medium:C28
-  original_category: bacterial
-categories:
-- bacterial
+  source: CCAP Medium MR_E31.pdf
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- curation_method:automated_expert_mapping
+original_name: E31
+merge_fingerprint: 9c676bf0ffbdf9358c5f17c6a5298669096d2228aa27b9466443211328c1a626
 merged_from:
-- e26_biotin
 - e31
-merge_fingerprint: 030864aa3f00021e495e1d2c92e2cd52eea8ec618c4bbad48dc2e9da37aef939

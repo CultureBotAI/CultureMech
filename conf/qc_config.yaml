@@ -7,7 +7,7 @@
 #             if false, reports WARN
 
 repo_name: CultureMech
-yaml_dir: ../data/merge_yaml/merged_2026
+yaml_dir: ../data/merge_yaml/merged
 pattern: "*.yaml"
 
 slots:

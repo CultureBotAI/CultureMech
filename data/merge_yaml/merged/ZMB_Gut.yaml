@@ -1,6 +1,7 @@
 id: CultureMech:015828
 name: ZMB Gut
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose
@@ -381,6 +382,9 @@ ingredients:
     value: '0.00019'
     unit: G_PER_L
   notes: 'CAS: 12027-67-7; MW: 1235.86'
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: Manganese (II) sulfate monohydrate
   concentration:
     value: '0.00038'
@@ -474,7 +478,7 @@ ingredients:
 description: Media for culturing Bifidobacterium - An altered ZMB media from Rebecca
   Culver
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: ZMB Gut
@@ -488,8 +492,17 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015828'
+- timestamp: '2026-05-16T09:04:44.186335+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:09.191587+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 374a8da208ecfc7a50ee42452e338158bd4438aab30a90af4e5dae0d9f198039
+  source: zmb_gut.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: eb08e3fe93970b7315dfbd97e4a4e7156ea9804140dcdae66987a85b90b2b761
+merge_fingerprint: 374a8da208ecfc7a50ee42452e338158bd4438aab30a90af4e5dae0d9f198039
 merged_from:
 - zmb_gut

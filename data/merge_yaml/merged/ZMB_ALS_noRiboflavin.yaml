@@ -1,6 +1,7 @@
 id: CultureMech:015820
 name: ZMB ALS noRiboflavin
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: ZMB_ALS
@@ -17,7 +18,7 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 83-88-5; MW: 376.36'
 description: Media for culturing Bifidobacterium minus riboflavin
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: ZMB ALS noRiboflavin
@@ -31,6 +32,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015820'
+- timestamp: '2026-05-16T09:04:44.154919+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:09.154164+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 1fdbe064f166403c06aea4c186307a414ee2e5e7bdd93a3d78f1bc8539eed404
+  source: zmb_als_noriboflavin.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: 1fdbe064f166403c06aea4c186307a414ee2e5e7bdd93a3d78f1bc8539eed404

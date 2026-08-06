@@ -3,6 +3,7 @@ name: brain_heart_infusion_agar_with_2_nacl
 original_name: Brain Heart Infusion Agar With 2% NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: NaCl
   concentration:
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -37,9 +38,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Calf brains
   term:
     id: UBERON:0000955
@@ -184,10 +185,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Brain Heart Infusion Agar With 2% NaCl" to "brain_heart_infusion_agar_with_2_nacl"
     for consistent matching
-- timestamp: '2026-04-17T06:29:43.026302+00:00'
+- timestamp: '2026-06-05T07:40:37.427127+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:10.700715+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M21_Brain_Heart_Infusion_Agar, TOGO_M255_Brain_Heart_Infusion_Agar_With_2_NaCl'
+- timestamp: '2026-08-06T03:05:10.700753+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 848f9bc3f74e5aeedf3b08373ace3a1d5d62e90841cf7f233ea1b910f30f20ee
+  source: TOGO_M21_Brain_Heart_Infusion_Agar.yaml, TOGO_M255_Brain_Heart_Infusion_Agar_With_2_NaCl.yaml
 synonyms:
 - name: brain_heart_infusion_agar
   source: TOGO

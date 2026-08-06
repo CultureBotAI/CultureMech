@@ -3,6 +3,7 @@ name: modified_vogel_medium_xylose
 original_name: '''Modified Vogel Medium (xylose'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Xylose
@@ -12,8 +13,8 @@ ingredients:
   concentration:
     value: '133.2'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000900
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18222
     label: Xylose
 - preferred_term: Sodium molybdate
   concentration:
@@ -34,6 +35,9 @@ ingredients:
   concentration:
     value: '0.001002'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Ferrous ammonium sulfate
   concentration:
     value: '0.00255'
@@ -45,8 +49,8 @@ ingredients:
   concentration:
     value: '0.0008087'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Manganese sulfate
   term:
@@ -55,9 +59,9 @@ ingredients:
   concentration:
     value: '0.0002189'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -65,14 +69,17 @@ ingredients:
   concentration:
     value: '0.01739'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Citrate
   concentration:
     value: '0.02379'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258
@@ -80,8 +87,8 @@ ingredients:
   concentration:
     value: '9.691'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
     label: Sodium citrate
 - preferred_term: Magnesium sulfate
   term:
@@ -90,13 +97,16 @@ ingredients:
   concentration:
     value: '0.8115'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.68'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Ammonium nitrate
   term:
     id: CHEBI:63038
@@ -104,13 +114,16 @@ ingredients:
   concentration:
     value: '24.99'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000287
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63038
     label: Ammonium nitrate
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '36.74'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -140,6 +153,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'Modified Vogel Medium (xylose" to "modified_vogel_medium_xylose"
     for consistent matching
+- timestamp: '2026-06-05T07:41:37.978028+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:49.993259+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint ebe29040c9c4ba6467c05b9a751beb4a068fce306932c94937a3e4e3aeb2545f
+  source: modified_vogel_medium_xylose.yaml
 media_term:
   preferred_term: MediaDB Medium 311
   term:
@@ -151,6 +175,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: de24f436422b01221aaa1f651849c040b86b1ad6dd16a69b935eca48ffa7d865
+merge_fingerprint: ebe29040c9c4ba6467c05b9a751beb4a068fce306932c94937a3e4e3aeb2545f
 merged_from:
 - modified_vogel_medium_xylose

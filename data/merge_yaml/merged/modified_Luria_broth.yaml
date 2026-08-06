@@ -3,6 +3,7 @@ name: modified_luria_broth
 original_name: modified Luria broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: yeast extract
   concentration:
@@ -31,9 +32,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: N-2-hydroxy- ethylpiperazine-N'-2-ethanesulfonic acid [HEPES; pH
     7.2])
   concentration:
@@ -75,6 +76,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "modified Luria broth" to "modified_luria_broth" for
     consistent matching
+- timestamp: '2026-06-05T07:41:36.800859+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:48.493641+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 0c6080d6f8eb405a9724ca997972c58c9134058e14a493c1416fbe144f2bb170
+  source: modified_luria_broth.yaml
 merge_fingerprint: 0c6080d6f8eb405a9724ca997972c58c9134058e14a493c1416fbe144f2bb170
 merged_from:
 - modified_luria_broth

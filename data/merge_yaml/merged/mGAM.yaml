@@ -1,6 +1,7 @@
 id: CultureMech:015590
 name: mGAM
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Peptone
@@ -55,9 +56,6 @@ ingredients:
   concentration:
     value: '1.2'
     unit: G_PER_L
-  term:
-    id: FOODON:03302129
-    label: Liver extract
   notes: 'Mapping: curated_dict (confidence: 0.98)'
 - preferred_term: D-Glucose
   concentration:
@@ -109,12 +107,17 @@ ingredients:
   notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 367-51-1'
 description: Gifu Anaerobic Broth
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: mGAM
   url: https://github.com/CultureBotAI/CultureBotHT
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI,
+    1 de-grounded (mixture or unverifiable).
 - timestamp: '2026-03-18T04:31:15.450402+00:00'
   curator: import_from_culturebotht.py
   action: IMPORTED
@@ -123,6 +126,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015590'
+- timestamp: '2026-05-16T09:04:41.644948+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:06.352116+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint ab436c496e16479a7ffb06486996a18ea375c4b096e8487938a5d4bfe1915f11
+  source: mgam.yaml
 data_quality_flags: []
 merge_fingerprint: ab436c496e16479a7ffb06486996a18ea375c4b096e8487938a5d4bfe1915f11
 merged_from:

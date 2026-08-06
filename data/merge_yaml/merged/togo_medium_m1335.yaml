@@ -3,6 +3,7 @@ name: togo_medium_m1335
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: distilled water
@@ -14,9 +15,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '20'
@@ -24,8 +25,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
   term:
-    id: CHEBI:32599
-    label: ''
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: NaCl
   concentration:
     value: '200'
@@ -35,9 +36,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: KCl
   concentration:
     value: '2'
@@ -47,9 +48,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: MnCl2・4H2O
   concentration:
     value: '0.36'
@@ -68,9 +69,9 @@ ingredients:
   term:
     id: CHEBI:64220
     label: monosodium glutamate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000432
-    label: Sodium glutamate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64220
+    label: monosodium glutamate
 - preferred_term: Trisodium citrate
   concentration:
     value: '3'
@@ -79,9 +80,9 @@ ingredients:
   term:
     id: CHEBI:53258
     label: sodium citrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
-    label: Trisodium citrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
+    label: sodium citrate
 - preferred_term: FeCl2・4H2O
   concentration:
     value: '36'
@@ -99,8 +100,8 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: agar
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
@@ -146,29 +147,48 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TOGO Medium M1335" to "togo_medium_m1335" for consistent
     matching
-- timestamp: '2026-04-17T06:29:40.976474+00:00'
+- timestamp: '2026-06-05T07:41:52.094314+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:58:36.490388+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-08-06T03:04:25.163857+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
-  notes: 'Sources: TOGO_M160_Halobacteria_Medium, TOGO_M372_Lentibacillus_Medium,
-    TOGO_M960_Halobacteria_Medium_With_15_NaCl, togo_medium_m1335'
+  notes: 'Sources: TOGO_M160_Halobacteria_Medium, TOGO_M960_Halobacteria_Medium_With_15_NaCl,
+    TOGO_M372_Lentibacillus_Medium, togo_medium_m1335'
+- timestamp: '2026-08-06T03:04:25.163924+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 4 source recipe(s) on fingerprint e17fff53a590d2310b2eab1b86bacd4730bbf69e0d031c8800569f425df51311
+  source: TOGO_M160_Halobacteria_Medium.yaml, TOGO_M960_Halobacteria_Medium_With_15_NaCl.yaml,
+    TOGO_M372_Lentibacillus_Medium.yaml, togo_medium_m1335.yaml
 synonyms:
 - name: halobacteria_medium
   source: TOGO
   source_id: TOGO:M160
-  original_category: bacterial
+  original_category: archaea
+- name: halobacteria_medium_with_15_nacl
+  source: TOGO
+  source_id: TOGO:M960
+  original_category: archaea
 - name: lentibacillus_medium
   source: TOGO
   source_id: TOGO:M372
   original_category: bacterial
-- name: halobacteria_medium_with_15_nacl
-  source: TOGO
-  source_id: TOGO:M960
-  original_category: bacterial
 categories:
+- archaea
 - bacterial
 merged_from:
 - TOGO_M160_Halobacteria_Medium
-- TOGO_M372_Lentibacillus_Medium
 - TOGO_M960_Halobacteria_Medium_With_15_NaCl
+- TOGO_M372_Lentibacillus_Medium
 - togo_medium_m1335
-merge_fingerprint: 44dd3381273d1b70fe75f7696452076f1d0682cf88f687781cc736aa922f76ab
+merge_fingerprint: e17fff53a590d2310b2eab1b86bacd4730bbf69e0d031c8800569f425df51311

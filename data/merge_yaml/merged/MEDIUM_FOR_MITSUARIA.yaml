@@ -3,6 +3,7 @@ name: medium_for_mitsuaria
 original_name: MEDIUM FOR MITSUARIA
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 1735
@@ -22,8 +23,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: Magnesium sulfate heptahydrate
 - preferred_term: Calcium chloride dihydrate
   term:
@@ -32,8 +33,8 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: Calcium chloride dihydrate
 - preferred_term: Agar
   term:
@@ -43,8 +44,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -66,6 +67,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MEDIUM FOR MITSUARIA" to "medium_for_mitsuaria" for
     consistent matching
+- timestamp: '2026-06-05T07:41:29.207711+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:43.201700+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 92274ae8c7a6d86f3d107ed1aa3cc1e0eeb3b8465030290a417be047bc278831
+  source: medium_for_mitsuaria.yaml
 merge_fingerprint: 92274ae8c7a6d86f3d107ed1aa3cc1e0eeb3b8465030290a417be047bc278831
 merged_from:
 - medium_for_mitsuaria

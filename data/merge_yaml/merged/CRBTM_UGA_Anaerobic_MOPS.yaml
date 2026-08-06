@@ -1,6 +1,7 @@
 id: CultureMech:015508
 name: CRBTM UGA Anaerobic MOPS
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Ammonium Chloride
@@ -178,7 +179,7 @@ ingredients:
 - preferred_term: Folic Acid
   concentration:
     value: '20.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:27470
     label: folic acid
@@ -187,16 +188,16 @@ ingredients:
 - preferred_term: Pyridoxine HCl
   concentration:
     value: '100.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: Pyridoxine HCl
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-56-0; MW: 205.64;
     From ATCC Wolfe''s vitamin mix'
 - preferred_term: Riboflavin
   concentration:
     value: '50.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:17015
     label: riboflavin
@@ -205,7 +206,7 @@ ingredients:
 - preferred_term: biotin
   concentration:
     value: '20.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:15956
     label: biotin
@@ -214,7 +215,7 @@ ingredients:
 - preferred_term: Thiamine HCl
   concentration:
     value: '50.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:49105
     label: thiamine hydrochloride
@@ -223,7 +224,7 @@ ingredients:
 - preferred_term: Nicotinic Acid
   concentration:
     value: '50.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:15940
     label: nicotinic acid
@@ -232,7 +233,7 @@ ingredients:
 - preferred_term: calcium pantothenate
   concentration:
     value: '50.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:31345
     label: Calcium pantothenate
@@ -241,7 +242,7 @@ ingredients:
 - preferred_term: Cyanocobalamin
   concentration:
     value: '1.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:17439
     label: cyanocob(III)alamin
@@ -250,7 +251,7 @@ ingredients:
 - preferred_term: 4-Aminobenzoic acid
   concentration:
     value: '50.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   notes: 'CAS: 150-13-0; MW: 137.14; From ATCC Wolfe''s vitamin mix; Ontology enriched
     via CAS-RN lookup'
   term:
@@ -259,7 +260,7 @@ ingredients:
 - preferred_term: Lipoic acid
   concentration:
     value: '50.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:16494
     label: lipoic acid
@@ -293,7 +294,7 @@ ingredients:
 description: UGA media for MT123 anaerobic growth with MOPS buffer and nitrate, for
   growth at pH7.5
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: CRBTM UGA Anaerobic MOPS
@@ -307,8 +308,23 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015508'
+- timestamp: '2026-05-16T09:04:40.431712+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1; concentration.unit aliases=10
+- timestamp: '2026-06-08T23:19:52.398953+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:06:04.975087+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint f1c5eaf8fd3f5b13cfe3c3d387006e3c69cd552d34d9fb0a4ccf0b0ae3aa2058
+  source: crbtm_uga_anaerobic_mops.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: 5b862a237ec4278942c407df67b3983715c74c3d13c25ed34fcc52c233c53fbc
+merge_fingerprint: f1c5eaf8fd3f5b13cfe3c3d387006e3c69cd552d34d9fb0a4ccf0b0ae3aa2058
 merged_from:
 - crbtm_uga_anaerobic_mops

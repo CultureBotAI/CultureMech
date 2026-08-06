@@ -1,103 +1,122 @@
-id: CultureMech:008139
+id: CultureMech:006985
 name: vy_2_agar
-original_name: VY/2 Agar
+original_name: VY/2 AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.2
+notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 9 | DSMZ Medium: 9 (mediadive.medium:9)
+  | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 9
+  term:
+    id: komodo.medium:9
+    label: VY/2 AGAR
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: CaCl2·2H2O
-  concentration:
-    value: '1.36'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2·2H2O
-- preferred_term: Vitamin B12
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Simple component'
-  term:
-    id: CHEBI:176843
-    label: vitamin B12
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001027
-    label: Vitamin B12
 - preferred_term: Baker's yeast
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Bacto Agar (Difco)
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1.36'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
+    label: Vitamin B12
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
 - preferred_term: KOH
-  notes: 'Role: Mineral source; Properties: Defined component, Solution'
   term:
     id: CHEBI:32035
     label: potassium hydroxide
+  notes: pH adjustment (extracted from notes)
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000213
-    label: KOH
-media_term:
-  preferred_term: TOGO Medium M1589
-  term:
-    id: TOGO:M1589
-    label: VY/2 Agar
-notes: 'Source: https://togomedium.org/medium/M1589
-
-  Original source: NBRC - NBRC_M397
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=397'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32035
+    label: potassium hydroxide
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:57.903142Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: NBRC, ID: M1589'
-- timestamp: '2026-01-28T19:48:22.722014Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:48.312027'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: KOH'
-- timestamp: '2026-03-13T06:19:53.840278Z'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 9'
+- timestamp: '2026-02-03T11:19:11.761626'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 9
+- timestamp: '2026-03-13T03:09:23.499369Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Added pH buffer: KOH'
+- timestamp: '2026-03-13T06:19:45.449443Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:008139'
-- timestamp: '2026-03-17T06:30:13.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:006985'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: KOH'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:30:32.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:12.390447+00:00'
+- timestamp: '2026-03-17T19:46:03.522445+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "VY/2 Agar" to "vy_2_agar" for consistent matching
-merge_fingerprint: dd400a9e0790b34a2614f498a26fa5dfbc8331295ec28052f62ec7bb42662c59
+  notes: Normalized name from "VY/2 AGAR" to "vy_2_agar" for consistent matching
+- timestamp: '2026-05-16T09:03:05.946252+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:28.550835+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:03.515238+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_9_VY_2_AGAR, for_dsm_11116'
+- timestamp: '2026-08-06T03:05:03.515286+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint bd999ba87b0c617cb1fda651ac2b9a1ab08e5dcae95a15c4aaf382c7ef9da592
+  source: KOMODO_9_VY_2_AGAR.yaml, for_dsm_11116.yaml
+synonyms:
+- name: for_dsm_11116
+  source: KOMODO
+  source_id: komodo.medium:9.1
+  original_category: bacterial
+categories:
+- bacterial
 merged_from:
-- TOGO_M1589_VY_2_Agar
+- KOMODO_9_VY_2_AGAR
+- for_dsm_11116
+merge_fingerprint: bd999ba87b0c617cb1fda651ac2b9a1ab08e5dcae95a15c4aaf382c7ef9da592

@@ -3,6 +3,7 @@ name: glutamine_medium
 original_name: GLUTAMINE MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
@@ -28,8 +29,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (if necessary)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: L-Glutamine
   term:
@@ -38,8 +39,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000220
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18050
     label: L-Glutamine
 - preferred_term: Tryptophan
   term:
@@ -48,8 +49,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001025
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27897
     label: Tryptophan
 preparation_steps:
 - step_number: 1
@@ -76,6 +77,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "GLUTAMINE MEDIUM" to "glutamine_medium" for consistent
     matching
+- timestamp: '2026-06-05T07:41:06.534476+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:36.329900+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 051f0b7b500ebb4a5e8a83d3f6e1f5f36eb7ed4af25017921378d0418cea69a1
+  source: glutamine_medium.yaml
 merge_fingerprint: 051f0b7b500ebb4a5e8a83d3f6e1f5f36eb7ed4af25017921378d0418cea69a1
 merged_from:
 - glutamine_medium

@@ -3,6 +3,7 @@ name: half_strength_bacto_marine_broth_with_50_seawater
 original_name: HALF STRENGTH BACTO MARINE BROTH with 50% Seawater
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.6
 media_term:
@@ -27,8 +28,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000864
+  mediaingredientmech_chebi_term:
+    id: CHEBI:144421
     label: Fe(III) citrate
 - preferred_term: NaCl
   term:
@@ -37,8 +38,8 @@ ingredients:
   concentration:
     value: '9.725'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgCl2
   term:
@@ -47,18 +48,18 @@ ingredients:
   concentration:
     value: '2.95'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000663
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6636
     label: MgCl2
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
-    label: Na2SO4
+    label: sodium sulfate
   concentration:
     value: '1.62'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Na2SO4
 - preferred_term: CaCl2
   term:
@@ -67,8 +68,8 @@ ingredients:
   concentration:
     value: '0.9'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
     label: CaCl2
 - preferred_term: KCl
   term:
@@ -77,8 +78,8 @@ ingredients:
   concentration:
     value: '0.275'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: NaHCO3
   term:
@@ -87,18 +88,18 @@ ingredients:
   concentration:
     value: '0.08'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: KBr
   term:
     id: CHEBI:32030
-    label: KBr
+    label: potassium bromide
   concentration:
     value: '0.04'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001123
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32030
     label: KBr
 - preferred_term: SrCl2
   term:
@@ -107,38 +108,38 @@ ingredients:
   concentration:
     value: '0.017'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000196
+  mediaingredientmech_chebi_term:
+    id: CHEBI:36383
     label: SrCl2
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.011'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: Na-silicate
   term:
     id: CHEBI:60720
-    label: Na-silicate
+    label: sodium silicate
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000833
+  mediaingredientmech_chebi_term:
+    id: CHEBI:60720
     label: Na-silicate
 - preferred_term: NaF
   term:
     id: CHEBI:28741
-    label: NaF
+    label: sodium fluoride
   concentration:
     value: '0.0012'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000182
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28741
     label: NaF
 - preferred_term: (NH4)NO3
   term:
@@ -147,8 +148,8 @@ ingredients:
   concentration:
     value: '0.0008'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000287
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63038
     label: (NH4)NO3
 - preferred_term: Na2HPO4
   term:
@@ -157,8 +158,8 @@ ingredients:
   concentration:
     value: '0.004'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4
 - preferred_term: Sea water
   concentration:
@@ -172,8 +173,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -203,7 +204,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HALF STRENGTH BACTO MARINE BROTH with 50% Seawater"
     to "half_strength_bacto_marine_broth_with_50_seawater" for consistent matching
-- timestamp: '2026-04-17T06:29:28.618889+00:00'
+- timestamp: '2026-06-05T07:41:57.762054+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 15 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:15.121738+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:54.907326+00:00'
   curator: recipe-merger
   action: Merged 157 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_514b_medium_514_plus_additional_salt, bacto_marine_broth_difco_2216,
@@ -261,6 +272,15 @@ curation_history:
     medium_514b_modified_for_dsm_26530, medium_514b_modified_for_dsm_735, medium_514c_modified_for_dsm_23364,
     medium_514d_modified_for_dsm_21633, medium_514d_modified_for_dsm_21756, modified_bacto_marine_broth,
     half_strength_bacto_marine_broth_with_50_seawater'
+- timestamp: '2026-08-06T03:04:54.908354+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 157 source recipe(s) on fingerprint 0afc0a1f985a9b7ccbbb677c2b0e5cce0a2d1eee7589d96114d6dd94ad9ec402
+  source: KOMODO_514b_medium_514_plus_additional_salt.yaml, bacto_marine_broth_difco_2216.yaml,
+    for_strains_dsm_21167_dsm_21194.yaml, for_strains_dsm_21373_dsm_21449_dsm_21450_dsm_21621_and_dsm_21632.yaml,
+    for_strains_dsm_23437_dsm_23508_dsm23509_dsm_21076_dsm_26132.yaml, for_strains_dsm_23438_dsm_21056_dsm_21166_dsm_21888_dsm_5160.yaml,
+    for_strains_dsm_24014.yaml, for_strains_dsm_5349_dsm_24106_dsm_24107_dsm_24186_dsm_23100_dsm_21021_dsm_19800_dsm_19821.yaml,
+    for_strains_dsm_5351_dsm_23229_dsm_22730_dsm_
 synonyms:
 - name: medium_514_plus_additional_salt
   source: KOMODO

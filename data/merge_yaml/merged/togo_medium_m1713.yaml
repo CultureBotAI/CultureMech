@@ -3,6 +3,7 @@ name: togo_medium_m1713
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +32,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -74,9 +75,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008276'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:50.616739'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:38.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -86,11 +87,27 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TOGO Medium M1713" to "togo_medium_m1713" for consistent
     matching
-- timestamp: '2026-04-17T06:30:26.137389+00:00'
+- timestamp: '2026-05-16T09:04:36.673744+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:52.977508+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:00.649153+00:00'
   curator: recipe-merger
   action: Merged 6 duplicate recipes into canonical record
   notes: 'Sources: togo_medium_m1708, togo_medium_m1709, togo_medium_m1710, togo_medium_m1711,
     togo_medium_m1712, togo_medium_m1713'
+- timestamp: '2026-08-06T03:06:00.649217+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 6 source recipe(s) on fingerprint 6030f6f1a312c14da047b65c79bca1b1aaaaf450c4a00955c1f02fe72d4c1142
+  source: togo_medium_m1708.yaml, togo_medium_m1709.yaml, togo_medium_m1710.yaml,
+    togo_medium_m1711.yaml, togo_medium_m1712.yaml, togo_medium_m1713.yaml
 solutions:
 - preferred_term: Kanamycin solution (500 μg/ml)*
   composition: []

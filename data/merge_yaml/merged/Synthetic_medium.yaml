@@ -3,6 +3,7 @@ name: synthetic_medium
 original_name: Synthetic medium
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Lactose
@@ -13,13 +14,16 @@ ingredients:
     value: '233.7'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:lcts'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000339
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17716
     label: Lactose
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '8.61'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -27,13 +31,16 @@ ingredients:
   concentration:
     value: '2.03'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '3.06'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
@@ -41,9 +48,9 @@ ingredients:
   concentration:
     value: '0.179'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -51,13 +58,16 @@ ingredients:
   concentration:
     value: '0.0696'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.072'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.00827'
@@ -69,6 +79,9 @@ ingredients:
   concentration:
     value: '0.00401'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Ammonium phosphate
   concentration:
     value: '121.2'
@@ -81,8 +94,8 @@ ingredients:
     value: '8.69'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pro-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000280
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17203
     label: L-Proline
 - preferred_term: L-Glutamine
   term:
@@ -92,8 +105,8 @@ ingredients:
     value: '6.84'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gln-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000220
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18050
     label: L-Glutamine
 - preferred_term: L-Isoleucine
   term:
@@ -103,8 +116,8 @@ ingredients:
     value: '1.14'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ile-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000294
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17191
     label: L-Isoleucine
 - preferred_term: L-Arginine
   term:
@@ -114,8 +127,8 @@ ingredients:
     value: '2.87'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:arg-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000289
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16467
     label: L-Arginine
 - preferred_term: Thiamine
   term:
@@ -136,8 +149,8 @@ ingredients:
     value: '9.41e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Pantothenate
   term:
@@ -147,8 +160,8 @@ ingredients:
     value: '0.000105'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pnto-R'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000356
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16454
     label: Pantothenate
 - preferred_term: Riboflavin
   term:
@@ -158,8 +171,8 @@ ingredients:
     value: '0.000292'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: Vitamin B12
   term:
@@ -168,8 +181,8 @@ ingredients:
   concentration:
     value: '8.85e-05'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 - preferred_term: Pyridoxine
   term:
@@ -179,8 +192,8 @@ ingredients:
     value: '0.00313'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pydxn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000317
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16709
     label: Pyridoxine
 - preferred_term: 4-Aminobenzoate
   term:
@@ -190,14 +203,17 @@ ingredients:
     value: '0.000729'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4abz'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001121
-    label: 4-Aminobenzoate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17836
+    label: 4-aminobenzoate
 - preferred_term: Nicotinate
   concentration:
     value: '0.0487'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:nac'
+  term:
+    id: CHEBI:15940
+    label: ''
 - preferred_term: myo-Inositol
   term:
     id: CHEBI:17268
@@ -206,9 +222,9 @@ ingredients:
     value: '0.527'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:inost'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000500
-    label: myo-Inositol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17268
+    label: Myo-inositol
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -243,6 +259,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Synthetic medium" to "synthetic_medium" for consistent
     matching
+- timestamp: '2026-06-05T07:41:48.225578+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 15 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:57.330880+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 31d47f7c04dc98a7c0954bfb65de5a327a46046d53593f04524c23a07b1f9faa
+  source: synthetic_medium.yaml
 media_term:
   preferred_term: MediaDB Medium 300
   term:
@@ -254,6 +281,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 7c5319ee0cdb293529ad83dd3e89fc94a01e140868827f582cb74b161b196f31
+merge_fingerprint: 31d47f7c04dc98a7c0954bfb65de5a327a46046d53593f04524c23a07b1f9faa
 merged_from:
 - synthetic_medium

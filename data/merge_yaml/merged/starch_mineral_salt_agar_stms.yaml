@@ -3,6 +3,7 @@ name: starch_mineral_salt_agar_stms
 original_name: STARCH - MINERAL salt - AGAR (STMS)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
@@ -20,28 +21,28 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
     label: Starch
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -50,8 +51,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: NaCl
   term:
@@ -61,8 +62,8 @@ ingredients:
     value: '101.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 1.0, 100.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: CaCO3
   term:
@@ -71,8 +72,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001099
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
     label: CaCO3
 - preferred_term: Agar
   term:
@@ -81,8 +82,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -91,8 +92,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -101,8 +102,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -111,8 +112,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 applications:
 - Microbial cultivation
@@ -138,7 +139,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "STARCH - MINERAL salt - AGAR (STMS)" to "starch_mineral_salt_agar_stms"
     for consistent matching
-- timestamp: '2026-04-17T06:29:17.744464+00:00'
+- timestamp: '2026-06-05T07:40:21.890783+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:44.446713+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:42.294216+00:00'
   curator: recipe-merger
   action: Merged 41 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_1240_STARCH-MINERAL_SALT-AGAR_10_NACL, KOMODO_252_STARCH_-_MINERAL_salt_-_AGAR_STMS,
@@ -155,6 +166,28 @@ curation_history:
     medium_252_modified_for_dsm_45210, medium_252_modified_for_dsm_45211, medium_547_modified_for_dsm_44048,
     medium_547_modified_for_dsm_44681, medium_547_modified_for_dsm_44682, starch_mineral_salt_agar_10_nacl,
     starch_mineral_salt_agar_stms, starch_mineral_salt_agar_stms_15_nacl'
+- timestamp: '2026-08-06T03:04:42.294423+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 41 source recipe(s) on fingerprint d8ebfa5e95b8104fe9eafba59181d3d5f37d4fd79ef792fbef7a9d8f1296d5a8
+  source: KOMODO_1240_STARCH-MINERAL_SALT-AGAR_10_NACL.yaml, KOMODO_252_STARCH_-_MINERAL_salt_-_AGAR_STMS.yaml,
+    KOMODO_547_ISP_medium_4.yaml, inorganic_salts_starch_agar_isp_4.yaml, isp_medium_4.yaml,
+    medium_252_modified_for_dsm_41399.yaml, medium_252_modified_for_dsm_41400.yaml,
+    medium_252_modified_for_dsm_41403.yaml, medium_252_modified_for_dsm_41404.yaml,
+    medium_252_modified_for_dsm_41405.yaml, medium_252_modified_for_dsm_41406.yaml,
+    medium_252_modified_for_dsm_41407.yaml, medium_252_modified_for_dsm_4
+parent_media:
+  path: data/normalized_yaml/bacterial/starch_mineral_salt_agar_stms.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001351
+  name: starch_mineral_salt_agar_stms
+  notes: KOMODO record explicitly cites DSMZ Medium 252; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 252; local ingredient
+  and concentration signatures match.
 synonyms:
 - name: starch_mineral_salt_agar_10_nacl
   source: KOMODO

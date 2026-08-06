@@ -3,6 +3,7 @@ name: tga_medium
 original_name: TGA-MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:
@@ -24,8 +25,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: NaCl
   term:
@@ -34,8 +35,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 applications:
 - Microbial cultivation
@@ -60,10 +61,32 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "TGA-MEDIUM" to "tga_medium" for consistent matching
-- timestamp: '2026-04-17T06:29:30.434188+00:00'
+- timestamp: '2026-06-05T07:40:25.359998+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:57.212309+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_681_TGA-MEDIUM, tga_medium'
+- timestamp: '2026-08-06T03:04:57.212344+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 53f32d5481fef50c67b589f3ffff72cc2a5cdb2d24557b07ccaddee91de09b93
+  source: KOMODO_681_TGA-MEDIUM.yaml, tga_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/tga_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001819
+  name: tga_medium
+  notes: KOMODO record states DSMZ Medium 681 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 categories:
 - bacterial
 merged_from:

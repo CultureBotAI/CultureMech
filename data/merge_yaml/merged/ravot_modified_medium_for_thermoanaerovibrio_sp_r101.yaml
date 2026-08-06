@@ -3,6 +3,7 @@ name: ravot_modified_medium_for_thermoanaerovibrio_sp_r101
 original_name: Ravot Modified Medium For Thermoanaerovibrio SP. R101
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -40,9 +41,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -52,8 +53,8 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: MgCl2・6H2O
   concentration:
@@ -73,9 +74,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Sulfur (powder)
   concentration:
     value: '5'
@@ -84,7 +85,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:33403
-    label: ''
+    label: elemental sulfur
   mediaingredientmech_term:
     id: MediaIngredientMech:001072
     label: Sulfur (powder)
@@ -96,8 +97,8 @@ ingredients:
   term:
     id: CHEBI:39033
     label: PIPES
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000276
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39033
     label: PIPES
 - preferred_term: Sodium acetate・3H2O
   concentration:
@@ -133,6 +134,11 @@ notes: 'Source: https://togomedium.org/medium/M748
 applications:
 - Microbial cultivation
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI,
+    0 de-grounded (mixture or unverifiable).
 - timestamp: '2026-01-27T06:35:55.641737Z'
   curator: togo-import
   action: Imported from TOGO Medium
@@ -142,10 +148,10 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:21:00.358973'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2; Added default concentration
     for ingredient: N2'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:04:57.409121+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -159,10 +165,10 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010153'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:02.832224'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name; Added default solution
     name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:38.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -172,6 +178,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Ravot Modified Medium For Thermoanaerovibrio SP. R101"
     to "ravot_modified_medium_for_thermoanaerovibrio_sp_r101" for consistent matching
+- timestamp: '2026-05-16T09:03:20.559426+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:44.091101+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:51.528502+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:18.933203+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 8c3a0b8719a89df2f1624cbe00062fe907de454da11785d57de8409f1ad602ae
+  source: TOGO_M748_Ravot_Modified_Medium_For_Thermoanaerovibrio_SP._R101.yaml
 solutions:
 - preferred_term: 7% K2HPO4 solution
   composition: []
@@ -195,6 +220,6 @@ solutions:
   notes: 'Role: Reducing agent; Properties: Solution, Inorganic compound, Defined
     component'
   name: Unknown solution
-merge_fingerprint: 4a19df4f59614e756090b21fc7780ba9df963b0715fa9c3e31ba1e1dcf751dbf
+merge_fingerprint: 8c3a0b8719a89df2f1624cbe00062fe907de454da11785d57de8409f1ad602ae
 merged_from:
 - TOGO_M748_Ravot_Modified_Medium_For_Thermoanaerovibrio_SP._R101

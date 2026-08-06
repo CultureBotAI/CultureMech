@@ -3,6 +3,7 @@ name: isp_7_medium
 original_name: ISP 7 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1619
@@ -22,8 +23,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 applications:
 - Microbial cultivation
@@ -44,6 +45,17 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "ISP 7 MEDIUM" to "isp_7_medium" for consistent matching
+- timestamp: '2026-06-05T07:41:09.696002+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:38.822132+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 974f50ba0c8747fe95fafcb0971472d5b3a63566d0ff13d4656ed8f2e98ca587
+  source: isp_7_medium.yaml
 merge_fingerprint: 974f50ba0c8747fe95fafcb0971472d5b3a63566d0ff13d4656ed8f2e98ca587
 merged_from:
 - isp_7_medium

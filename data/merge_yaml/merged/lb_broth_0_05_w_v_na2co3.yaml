@@ -3,6 +3,7 @@ name: lb_broth_0_05_w_v_na2co3
 original_name: LB Broth + 0.05%(w/v) Na2CO3
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Agar (if needed)
   concentration:
@@ -119,9 +120,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008237'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:50.348488'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:23.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -131,6 +132,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "LB Broth + 0.05%(w/v) Na2CO3" to "lb_broth_0_05_w_v_na2co3"
     for consistent matching
+- timestamp: '2026-05-16T09:03:38.814197+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:10.846226+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:40.023943+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 33d7c63a583bca3d86c4a1bb2f020cccf07c8e91abdaf020e6d14accc9d815cc
+  source: lb_broth_0_05_w_v_na2co3.yaml
 solutions:
 - preferred_term: Na2CO3*
   composition: []

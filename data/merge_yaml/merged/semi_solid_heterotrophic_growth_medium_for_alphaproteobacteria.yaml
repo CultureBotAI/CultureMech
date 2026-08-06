@@ -1,0 +1,215 @@
+id: CultureMech:015865
+name: semi_solid_heterotrophic_growth_medium_for_alphaproteobacteria
+original_name: SEMI-SOLID HETEROTROPHIC GROWTH MEDIUM FOR ALPHAPROTEOBACTERIA
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SEMISOLID
+ph_value: 6.7
+media_term:
+  preferred_term: JCM Medium J1430
+  term:
+    id: jcm.grmd:1430
+    label: SEMI-SOLID HETEROTROPHIC GROWTH MEDIUM FOR ALPHAPROTEOBACTERIA
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1430'
+ingredients:
+- preferred_term: NaCl
+  concentration:
+    value: '20.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: MgCl2·6H2O
+  concentration:
+    value: '6.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+- preferred_term: Na2SO4
+  concentration:
+    value: '3.24'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
+    label: Na2SO4
+- preferred_term: KCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: KCl
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+- preferred_term: NaHCO3
+  concentration:
+    value: '1.26'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: NaHCO3
+- preferred_term: HEPES
+  concentration:
+    value: '2.4'
+    unit: G_PER_L
+  term:
+    id: CHEBI:46756
+    label: HEPES
+  mediaingredientmech_chebi_term:
+    id: CHEBI:46756
+    label: HEPES
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Disodium succinate
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63675
+    label: sodium succinate (anhydrous)
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63675
+    label: Sodium succinate
+- preferred_term: Modified Wolfe’s mineral solution (see Medium No. 915 )
+  concentration:
+    value: '5.0'
+    unit: ML_PER_L
+- preferred_term: Resazurin
+  concentration:
+    value: '0.2'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Distilled waterv
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Agarose
+  concentration:
+    value: '1.6'
+    unit: G_PER_L
+  term:
+    id: CHEBI:2511
+    label: agarose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2511
+    label: Agarose
+- preferred_term: 0.5 M Potassium phosphate buffer (pH 7.0)
+  concentration:
+    value: '1.8'
+    unit: ML_PER_L
+- preferred_term: Vitamin solution* (see Medium No. 915 )
+  concentration:
+    value: '0.5'
+    unit: ML_PER_L
+- preferred_term: 0.01 M FeSO4·7H2O solution (in 0.02 N HCl)
+  concentration:
+    value: '3.0'
+    unit: ML_PER_L
+- preferred_term: 5% L-Cysteine·HCl·H2O solution
+  concentration:
+    value: '8.0'
+    unit: ML_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix components thoroughly, except agarose, and adjust pH to 6.7.
+- step_number: 2
+  action: MIX
+  description: Add agarose to the medium and autoclave under a N2 gas atmosphere.
+- step_number: 3
+  action: MIX
+  description: After cooling to 50C, add the following solutions to the medium aseptically
+    and anaerobically (autoclaved or *filter-sterilized).
+- step_number: 4
+  action: MIX
+  description: 'Keep the medium temperature at 50 C until the medium is distributed
+    into sterile screw-capped test tubes as described below: Adjust pH to 7.0 with
+    sterile HCl or NaOH solution.'
+- step_number: 5
+  action: MIX
+  description: Dispense the medium to sterile screw-capped test tubes (typically 11
+    ml medium into sterile Hungate tubes) under air and cap.
+- step_number: 6
+  action: MIX
+  description: Allow to stand until the medium is solidified and a O2-gradient formed
+    (as evidenced by a pink upper oxic zone and a colorless lower anoxic zone).
+- step_number: 7
+  action: MIX
+  description: Inoculate cells just below the pink-colorless interface in the medium
+    tube using a syringe.
+- step_number: 8
+  action: MIX
+  description: 'Comment: The medium tubes can be stocked under a N2 gas atmosphere.'
+- step_number: 9
+  action: MIX
+  description: In this case, prior to use, fill the head space with air and allow
+    to stand until the O2 gradient is formed.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-06-02T07:09:15.791829+00:00'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1430. Ingredients captured verbatim; CHEBI/MediaIngredientMech
+    enrichment and category (bacterial/archaea) review are downstream steps.
+- timestamp: '2026-06-03T02:00:03.574504Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-06-03T07:12:22.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-08-06T03:04:35.634937+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d051c462bfe0dff68c1d51e0d1b718ad00d063cb83d422be7e97ea039fd15e76
+  source: JCM_J1430_SEMI_SOLID_HETEROTROPHIC_GROWTH_MEDIUM_FOR_ALPHAPROTEOBACTERIA.yaml
+merge_fingerprint: d051c462bfe0dff68c1d51e0d1b718ad00d063cb83d422be7e97ea039fd15e76
+merged_from:
+- JCM_J1430_SEMI_SOLID_HETEROTROPHIC_GROWTH_MEDIUM_FOR_ALPHAPROTEOBACTERIA

@@ -3,6 +3,7 @@ name: modified_cytophaga_agar
 original_name: modified cytophaga agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: yeast extract
@@ -19,8 +20,8 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: potassium chloride
 - preferred_term: sodium acetate
   concentration:
@@ -30,8 +31,8 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
     label: sodium acetate
 - preferred_term: magnesium chloride
   concentration:
@@ -42,9 +43,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: magnesium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: gelatin
   concentration:
     value: '0.02'
@@ -53,8 +54,8 @@ ingredients:
   term:
     id: CHEBI:5291
     label: gelatin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000940
+  mediaingredientmech_chebi_term:
+    id: CHEBI:5291
     label: gelatin
 - preferred_term: anhydrous calcium chloride
   concentration:
@@ -62,6 +63,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: agar
   concentration:
     value: '1.5'
@@ -70,8 +74,8 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: agar
 - preferred_term: beef extract
   concentration:
@@ -113,6 +117,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "modified cytophaga agar" to "modified_cytophaga_agar"
     for consistent matching
-merge_fingerprint: c872ebb26f36b0012e4faa3aab48dd07a8af68a4b2378333d029006771f5942c
+- timestamp: '2026-06-05T07:41:36.480568+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:48.213316+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 3be12d3c1ddcd840c2c502071697741e2593ea4eae853800f3f9d3a6068b7416
+  source: modified_cytophaga_agar.yaml
+merge_fingerprint: 3be12d3c1ddcd840c2c502071697741e2593ea4eae853800f3f9d3a6068b7416
 merged_from:
 - modified_cytophaga_agar

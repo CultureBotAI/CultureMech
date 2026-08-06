@@ -3,6 +3,7 @@ name: cm_1_gellangum_ph_2_0
 original_name: CM+1%Gellangum (pH 2.0)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Gellangum
   concentration:
@@ -61,6 +62,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CM+1%Gellangum (pH 2.0)" to "cm_1_gellangum_ph_2_0"
     for consistent matching
+- timestamp: '2026-06-05T07:40:54.526550+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:28.887940+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint ddec4a33bc44c0bb44cc11df6e0e5ae1b5f5318ed3b327f9225a2e826506af96
+  source: cm_1_gellangum_ph_2_0.yaml
 merge_fingerprint: ddec4a33bc44c0bb44cc11df6e0e5ae1b5f5318ed3b327f9225a2e826506af96
 merged_from:
 - cm_1_gellangum_ph_2_0

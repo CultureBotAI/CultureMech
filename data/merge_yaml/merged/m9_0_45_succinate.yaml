@@ -3,16 +3,23 @@ name: m9_0_45_succinate
 original_name: M9 0.45% succinate
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.1'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '47.743'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -20,13 +27,16 @@ ingredients:
   concentration:
     value: '8.5557'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '22.045'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -34,8 +44,8 @@ ingredients:
   concentration:
     value: '2.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
@@ -44,8 +54,8 @@ ingredients:
   concentration:
     value: '18.6947'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Sodium Succinate
   term:
@@ -54,9 +64,9 @@ ingredients:
   concentration:
     value: '16.658'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001088
-    label: Sodium Succinate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63675
+    label: Sodium succinate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -86,6 +96,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "M9 0.45% succinate" to "m9_0_45_succinate" for consistent
     matching
+- timestamp: '2026-06-05T07:41:11.934118+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:41.055637+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 1b46dfdd20b0332b6195cedf3f46fac9600dffb0a77fbae8bbda0c95bb779f68
+  source: m9_0_45_succinate.yaml
 media_term:
   preferred_term: MediaDB Medium 192
   term:
@@ -97,6 +118,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 404e95937c3267c265479f93b07c7dfd18a3cf3a0a83ac63bae32bbbc39a9d62
+merge_fingerprint: 1b46dfdd20b0332b6195cedf3f46fac9600dffb0a77fbae8bbda0c95bb779f68
 merged_from:
 - m9_0_45_succinate

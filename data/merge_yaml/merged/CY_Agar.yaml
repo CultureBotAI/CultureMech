@@ -1,86 +1,113 @@
-id: CultureMech:008922
+id: CultureMech:006279
 name: cy_agar
-original_name: CY-Agar
+original_name: CY-AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 67
+  term:
+    id: komodo.medium:67
+    label: CY-AGAR
+notes: 'Source: KOMODO ModelSEED | ID: 67 | DSMZ Medium: 67 (mediadive.medium:67)
+  | Aerobic: No'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: Yeast extract
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: CaCl2 x 2 H2O
-  concentration:
-    value: '1.36'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
-- preferred_term: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
 - preferred_term: Casitone
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M2335
+- preferred_term: CaCl2 x 2 H2O
   term:
-    id: TOGO:M2335
-    label: CY-Agar
-notes: 'Source: https://togomedium.org/medium/M2335
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf'
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1.36'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.360813Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2335'
-- timestamp: '2026-01-28T19:48:17.197007Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:20:01.301689Z'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 67'
+- timestamp: '2026-02-03T11:19:15.491667'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 67
+- timestamp: '2026-03-13T06:19:39.436089Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:008922'
-- timestamp: '2026-03-17T06:30:02.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:006279'
+- timestamp: '2026-03-17T06:30:43.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:20.017720+00:00'
+- timestamp: '2026-03-17T19:45:56.550295+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CY-Agar" to "cy_agar" for consistent matching
-merge_fingerprint: 2b917782482334de964a2124364ad021f1951cbd72718693e45b40300dd64b86
+  notes: Normalized name from "CY-AGAR" to "cy_agar" for consistent matching
+- timestamp: '2026-06-05T07:40:25.355669+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:57.204283+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_67_CY-AGAR, cy_agar, medium_67_modified_for_dsm_21789'
+- timestamp: '2026-08-06T03:04:57.204316+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 5c2a69eb6d605327b00f8d1277cc2608cbc913ba8461e6834ae17b55b2aba63f
+  source: KOMODO_67_CY-AGAR.yaml, cy_agar.yaml, medium_67_modified_for_dsm_21789.yaml
+kg_microbe_match: mediadive.medium:49
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_67_modified_for_dsm_21789.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006259
+  name: medium_67_modified_for_dsm_21789
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/cy_agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001818
+  name: cy_agar
+  notes: KOMODO record states DSMZ Medium 67 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
+synonyms:
+- name: medium_67_modified_for_dsm_21789
+  source: KOMODO
+  source_id: komodo.medium:67_21789
+  original_category: bacterial
+categories:
+- bacterial
 merged_from:
-- TOGO_M2335_CY-Agar
+- KOMODO_67_CY-AGAR
+- cy_agar
+- medium_67_modified_for_dsm_21789
+merge_fingerprint: 5c2a69eb6d605327b00f8d1277cc2608cbc913ba8461e6834ae17b55b2aba63f

@@ -1,6 +1,7 @@
 id: CultureMech:015760
 name: UGA defined 4CarbonMix Nitrate anaerobic pH 7.1
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Ammonium Chloride
@@ -178,7 +179,7 @@ ingredients:
 - preferred_term: Folic Acid
   concentration:
     value: '20.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:27470
     label: folic acid
@@ -187,16 +188,16 @@ ingredients:
 - preferred_term: Pyridoxine HCl
   concentration:
     value: '100.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: Pyridoxine HCl
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-56-0; MW: 205.64;
     From ATCC Wolfe''s vitamin mix'
 - preferred_term: Riboflavin
   concentration:
     value: '50.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:17015
     label: riboflavin
@@ -205,7 +206,7 @@ ingredients:
 - preferred_term: biotin
   concentration:
     value: '20.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:15956
     label: biotin
@@ -214,7 +215,7 @@ ingredients:
 - preferred_term: Thiamine HCl
   concentration:
     value: '50.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:49105
     label: thiamine hydrochloride
@@ -223,7 +224,7 @@ ingredients:
 - preferred_term: Nicotinic Acid
   concentration:
     value: '50.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:15940
     label: nicotinic acid
@@ -232,7 +233,7 @@ ingredients:
 - preferred_term: calcium pantothenate
   concentration:
     value: '50.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:31345
     label: Calcium pantothenate
@@ -241,7 +242,7 @@ ingredients:
 - preferred_term: Cyanocobalamin
   concentration:
     value: '1.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:17439
     label: cyanocob(III)alamin
@@ -250,7 +251,7 @@ ingredients:
 - preferred_term: 4-Aminobenzoic acid
   concentration:
     value: '50.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   notes: 'CAS: 150-13-0; MW: 137.14; From ATCC Wolfe''s vitamin mix; Ontology enriched
     via CAS-RN lookup'
   term:
@@ -259,7 +260,7 @@ ingredients:
 - preferred_term: Lipoic acid
   concentration:
     value: '50.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:16494
     label: lipoic acid
@@ -313,8 +314,8 @@ ingredients:
     value: '13.3'
     unit: MILLIMOLAR
   term:
-    id: CHEBI:37583
-    label: trisodium phosphate
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
 - preferred_term: Sodium phosphate monobasic
   concentration:
@@ -323,10 +324,10 @@ ingredients:
   notes: 'CAS: 558-80-7; MW: 119.98'
   term:
     id: CHEBI:37585
-    label: ''
+    label: sodium dihydrogenphosphate
 description: Defined minimal media for 4CarbonMix Nitrate reducing for pH 7.1
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: UGA defined 4CarbonMix Nitrate anaerobic pH 7.1
@@ -340,40 +341,64 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015760'
-- timestamp: '2026-04-17T06:30:32.038997+00:00'
+- timestamp: '2026-05-16T09:04:43.724374+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1; concentration.unit aliases=10
+- timestamp: '2026-06-08T23:19:54.383932+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-09T01:42:27.373244+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:06:08.709016+00:00'
   curator: recipe-merger
   action: Merged 8 duplicate recipes into canonical record
   notes: 'Sources: uga_defined_4carbonmix_nitrate_anaerobic_ph_5_0, uga_defined_4carbonmix_nitrate_anaerobic_ph_5_3,
     uga_defined_4carbonmix_nitrate_anaerobic_ph_5_6, uga_defined_4carbonmix_nitrate_anaerobic_ph_5_9,
     uga_defined_4carbonmix_nitrate_anaerobic_ph_6_2, uga_defined_4carbonmix_nitrate_anaerobic_ph_6_5,
     uga_defined_4carbonmix_nitrate_anaerobic_ph_6_8, uga_defined_4carbonmix_nitrate_anaerobic_ph_7_1'
+- timestamp: '2026-08-06T03:06:08.709127+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 8 source recipe(s) on fingerprint 376d7e57e2d920ba5294838a1563791804739c3a6b3c26860382c9ecf09d9cc1
+  source: uga_defined_4carbonmix_nitrate_anaerobic_ph_5_0.yaml, uga_defined_4carbonmix_nitrate_anaerobic_ph_5_3.yaml,
+    uga_defined_4carbonmix_nitrate_anaerobic_ph_5_6.yaml, uga_defined_4carbonmix_nitrate_anaerobic_ph_5_9.yaml,
+    uga_defined_4carbonmix_nitrate_anaerobic_ph_6_2.yaml, uga_defined_4carbonmix_nitrate_anaerobic_ph_6_5.yaml,
+    uga_defined_4carbonmix_nitrate_anaerobic_ph_6_8.yaml, uga_defined_4carbonmix_nitrate_anaerobic_ph_7_1.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 original_name: UGA defined 4CarbonMix Nitrate anaerobic pH 7.1
 synonyms:
 - name: UGA defined 4CarbonMix Nitrate anaerobic pH 5.0
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 - name: UGA defined 4CarbonMix Nitrate anaerobic pH 5.3
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 - name: UGA defined 4CarbonMix Nitrate anaerobic pH 5.6
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 - name: UGA defined 4CarbonMix Nitrate anaerobic pH 5.9
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 - name: UGA defined 4CarbonMix Nitrate anaerobic pH 6.2
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 - name: UGA defined 4CarbonMix Nitrate anaerobic pH 6.5
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 - name: UGA defined 4CarbonMix Nitrate anaerobic pH 6.8
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 categories:
-- SPECIALIZED
+- specialized
 merged_from:
 - uga_defined_4carbonmix_nitrate_anaerobic_ph_5_0
 - uga_defined_4carbonmix_nitrate_anaerobic_ph_5_3
@@ -383,4 +408,4 @@ merged_from:
 - uga_defined_4carbonmix_nitrate_anaerobic_ph_6_5
 - uga_defined_4carbonmix_nitrate_anaerobic_ph_6_8
 - uga_defined_4carbonmix_nitrate_anaerobic_ph_7_1
-merge_fingerprint: fb4414e3efa4787d3274fba5d55d3bf7353459d93ca0e92aac28947161700891
+merge_fingerprint: 376d7e57e2d920ba5294838a1563791804739c3a6b3c26860382c9ecf09d9cc1

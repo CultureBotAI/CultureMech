@@ -1,184 +1,279 @@
-id: CultureMech:003242
+id: CultureMech:010356
 name: mbbs_medium_for_hydrogenobacter
-original_name: MBBS MEDIUM FOR HYDROGENOBACTER
+original_name: Mbbs Medium For Hydrogenobacter
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 6.0
-media_term:
-  preferred_term: JCM Medium J893
-  term:
-    id: mediadive.medium:J893
-    label: MBBS MEDIUM FOR HYDROGENOBACTER
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=893'
 ingredients:
-- preferred_term: Yeast extract
+- preferred_term: Sulfur (powder)
   concentration:
-    value: '5'
+    value: '1'
     unit: G_PER_L
-- preferred_term: NaHCO3
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
-    id: CHEBI:32139
-    label: NaHCO3
-  concentration:
-    value: '10'
-    unit: G_PER_L
+    id: CHEBI:33403
+    label: elemental sulfur
   mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
-- preferred_term: Sulfur
+    id: MediaIngredientMech:001072
+    label: Sulfur (powder)
+- preferred_term: H2SO4
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
   term:
-    id: CHEBI:26833
-    label: Sulfur
+    id: CHEBI:26836
+    label: sulfuric acid
   concentration:
-    value: '0.985222'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000927
-    label: Sulfur
-- preferred_term: (NH4)2SO4
-  term:
-    id: CHEBI:62946
-    label: (NH4)2SO4
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26836
+    label: sulfuric acid
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
   concentration:
-    value: '1.3'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: (NH4)2SO4
-- preferred_term: KH2PO4
+    value: variable
+    unit: VARIABLE
   term:
-    id: CHEBI:63036
-    label: KH2PO4
+    id: CHEBI:16526
+    label: ''
+- preferred_term: Oxygen gas
+  notes: 'Properties: ガス'
   concentration:
-    value: '0.28'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
-- preferred_term: MgSO4 x 7 H2O
+    value: variable
+    unit: VARIABLE
+- preferred_term: Hydrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
   term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    id: CHEBI:18276
+    label: ''
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
   concentration:
     value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: CaCl2 x 2 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: CaCl2・2H2O
   concentration:
     value: '0.07'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
-- preferred_term: FeCl3 x 6 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
-    id: CHEBI:86254
-    label: FeCl3 x 6 H2O
+    id: CHEBI:86158
+    label: ''
+- preferred_term: KH2PO4
   concentration:
-    value: '0.002'
+    value: '0.28'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000218
-    label: FeCl3 x 6 H2O
-- preferred_term: MnCl2 x 4 H2O
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: Na2MoO4・2H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:75215
+    label: ''
+- preferred_term: MnCl2・4H2O
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:86368
-    label: MnCl2 x 4 H2O
+    label: ''
+- preferred_term: ZnSO4・7H2O
   concentration:
-    value: '0.0018'
+    value: '0.22'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
-    label: MnCl2 x 4 H2O
-- preferred_term: Na2B4O7 x 10 H2O
-  concentration:
-    value: '0.0045'
-    unit: G_PER_L
-- preferred_term: ZnSO4 x 7 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
+    label: ''
+- preferred_term: CuCl2・2H2O
   concentration:
-    value: '0.00022'
+    value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
-    label: ZnSO4 x 7 H2O
-- preferred_term: CuCl2 x 2 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:86318
-    label: CuCl2 x 2 H2O
+    label: ''
+- preferred_term: (NH4)2SO4
   concentration:
-    value: 5e-05
+    value: '1.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
-    label: CuCl2 x 2 H2O
-- preferred_term: Na2MoO4 x 2 H2O
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
-    id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
+    id: CHEBI:62946
+    label: ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+- preferred_term: FeCl3・6H2O
   concentration:
-    value: 3e-05
+    value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
-    label: Na2MoO4 x 2 H2O
-- preferred_term: VOSO4 x n H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
-    id: CHEBI:87020
-    label: VOSO4 x n H2O
+    id: CHEBI:86254
+    label: ''
+- preferred_term: CoSO4・7H2O
   concentration:
-    value: 3e-05
+    value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000671
-    label: VOSO4 x n H2O
-- preferred_term: CoSO4 x 7 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:53470
-    label: CoSO4 x 7 H2O
+    label: ''
+- preferred_term: VOSO4・xH2O
   concentration:
-    value: 1e-05
+    value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000158
-    label: CoSO4 x 7 H2O
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Autoclave the base solution and the yeast extract solution separately.
-    Filter-sterilize the NaHCO3 solution and steam sulfur for 3 hr on each of 3 successive
-    3 days. Aseptically mix the three solutions and distribute into culture vessels
-    containing sulfur under a H2-CO2-O2 (80:20:2, v/v) gas stream and seal with butyl
-    rubber stoppers. Adjust pH to 6.0 with sterile 1 N H2SO4, if necessary. Pressurize
-    inoculated bottles to 100 kPa with the same gas mixture.
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Na2B4O7・10H2O
+  concentration:
+    value: '4.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:131366
+    label: ''
+media_term:
+  preferred_term: TOGO Medium M934
+  term:
+    id: TOGO:M934
+    label: Mbbs Medium For Hydrogenobacter
+notes: 'Source: https://togomedium.org/medium/M934
+
+  Original source: JCM - JCM_M893
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=893'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:17.924645Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J893'
-- timestamp: '2026-03-13T06:19:18.865041Z'
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI,
+    0 de-grounded (mixture or unverifiable).
+- timestamp: '2026-01-27T06:35:55.988488Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M934'
+- timestamp: '2026-01-28T19:48:34.553016Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: H2SO4; Added default concentration
+    for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
+    Oxygen gas; Added default concentration for ingredient: Hydrogen gas'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-03-09T08:04:57.387897+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:13.237358Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:003242'
-- timestamp: '2026-03-17T06:29:45.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:010356'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:30:38.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:32.748086+00:00'
+- timestamp: '2026-03-17T19:46:32.215319+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MBBS MEDIUM FOR HYDROGENOBACTER" to "mbbs_medium_for_hydrogenobacter"
+  notes: Normalized name from "Mbbs Medium For Hydrogenobacter" to "mbbs_medium_for_hydrogenobacter"
     for consistent matching
-merge_fingerprint: 0569bf343bea2c1d8e1501c6710115aece613dbcf6813a2003acabef095e1aa5
+- timestamp: '2026-05-16T09:03:22.139497+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:45.822667+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:34.054374+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:46:52.093149+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:20.605155+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 77aee459d7cdee84e7a1ca934f50332d7b8c76e1d2cacfe964d8d4551f6d84c8
+  source: TOGO_M934_Mbbs_Medium_For_Hydrogenobacter.yaml
+solutions:
+- preferred_term: 8% NaHCO3 solution (filter--sterilized)
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Solution'
+  name: Unknown solution
+- preferred_term: 10% Yeast extract solution
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+  name: Unknown solution
+- preferred_term: Modified Brock's salt base solution (see below)
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: 77aee459d7cdee84e7a1ca934f50332d7b8c76e1d2cacfe964d8d4551f6d84c8
 merged_from:
-- mbbs_medium_for_hydrogenobacter
+- TOGO_M934_Mbbs_Medium_For_Hydrogenobacter

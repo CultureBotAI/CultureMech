@@ -3,6 +3,7 @@ name: difco_raka_ray_no_3_medium
 original_name: DIFCO RAKA-RAY NO.3 medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1047
@@ -31,8 +32,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000591
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17306
     label: Maltose
 - preferred_term: Fructose
   term:
@@ -41,8 +42,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000288
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28757
     label: Fructose
 - preferred_term: Glucose
   term:
@@ -51,8 +52,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Betaine Hydrochloride
   concentration:
@@ -65,8 +66,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000400
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63076
     label: Diammonium Citrate
 - preferred_term: Potassium Aspartate
   concentration:
@@ -79,8 +80,8 @@ ingredients:
   concentration:
     value: '0.98'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Manganese Sulfate
   term:
@@ -89,8 +90,8 @@ ingredients:
   concentration:
     value: '0.42'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
     label: Manganese Sulfate
 - preferred_term: Dipotassium Phosphate
   term:
@@ -99,8 +100,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: Dipotassium Phosphate
 - preferred_term: N-Acetylglucosamine
   term:
@@ -109,8 +110,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000797
+  mediaingredientmech_chebi_term:
+    id: CHEBI:59640
     label: N-Acetylglucosamine
 - preferred_term: Potassium Glutamate
   concentration:
@@ -123,8 +124,8 @@ ingredients:
   concentration:
     value: '16'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -150,11 +151,32 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "DIFCO RAKA-RAY NO.3 medium" to "difco_raka_ray_no_3_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:14.169630+00:00'
+- timestamp: '2026-06-05T07:40:18.451606+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:38.238277+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_1047_DIFCO_RAKA-RAY_NO.3_medium, difco_raka_ray_no_3_medium'
+- timestamp: '2026-08-06T03:04:38.238316+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint b248b8de764fd6b3ffe6086a1a89e799b7bd0965654f7a59091026d1ef227706
+  source: KOMODO_1047_DIFCO_RAKA-RAY_NO.3_medium.yaml, difco_raka_ray_no_3_medium.yaml
 ph_value: 5.4
+parent_media:
+  path: data/normalized_yaml/bacterial/difco_raka_ray_no_3_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000470
+  name: difco_raka_ray_no_3_medium
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and concentration
+    signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.
 categories:
 - bacterial
 merged_from:

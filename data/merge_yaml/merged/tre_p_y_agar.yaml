@@ -3,6 +3,7 @@ name: tre_p_y_agar
 original_name: Tre-P-Y Agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Trehalose
   concentration:
@@ -26,8 +27,8 @@ ingredients:
   term:
     id: CHEBI:27082
     label: Trehalose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000545
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27082
     label: Trehalose
 - preferred_term: Agar
   concentration:
@@ -37,9 +38,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Bacto Yeast Extract (Difco)
   concentration:
     value: '1'
@@ -82,6 +83,17 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "Tre-P-Y Agar" to "tre_p_y_agar" for consistent matching
+- timestamp: '2026-06-05T07:41:53.992765+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:01.671881+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 074083fc5481cf9b5f18addfed53386ffdc0b2c5ec59fdaa8fc595103219c0b7
+  source: tre_p_y_agar.yaml
 merge_fingerprint: 074083fc5481cf9b5f18addfed53386ffdc0b2c5ec59fdaa8fc595103219c0b7
 merged_from:
 - tre_p_y_agar

@@ -3,6 +3,7 @@ name: lb_agar_with_mnso_sub_4_sub
 original_name: LB AGAR WITH MnSO<sub>4</sub>
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
@@ -27,13 +28,16 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MnSO4 x n H2O
   concentration:
     value: '0.01'
     unit: G_PER_L
+  term:
+    id: CHEBI:86360
+    label: manganese(II) sulfate
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -41,8 +45,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -68,7 +72,22 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "LB AGAR WITH MnSO<sub>4</sub>" to "lb_agar_with_mnso_sub_4_sub"
     for consistent matching
+- timestamp: '2026-06-05T07:41:10.817048+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:00.491177+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:39.977787+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b4daf4c5b70cc3bf760c76f8bf034e2ac46ac6ab01e1590f129be817996aa121
+  source: lb_agar_with_mnso_sub_4_sub.yaml
 kg_microbe_match: mediadive.medium:101
-merge_fingerprint: f162886e7b5e721894aa2f3d0cfb6e2d6a6c90548a88af346057cde55f6dcd17
+merge_fingerprint: b4daf4c5b70cc3bf760c76f8bf034e2ac46ac6ab01e1590f129be817996aa121
 merged_from:
 - lb_agar_with_mnso_sub_4_sub

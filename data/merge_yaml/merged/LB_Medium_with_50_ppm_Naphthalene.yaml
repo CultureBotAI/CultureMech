@@ -3,6 +3,7 @@ name: lb_medium_with_50_ppm_naphthalene
 original_name: LB Medium with 50 ppm Naphthalene
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +32,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -52,9 +53,9 @@ ingredients:
   term:
     id: CHEBI:16236
     label: ethanol
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000686
-    label: Ethanol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16236
+    label: ethanol
 - preferred_term: Naphthalene
   concentration:
     value: '50'
@@ -64,8 +65,8 @@ ingredients:
   term:
     id: CHEBI:16482
     label: Naphthalene
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000762
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16482
     label: Naphthalene
 media_term:
   preferred_term: TOGO Medium M1847
@@ -97,9 +98,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008421'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:51.765305'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:05.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -109,6 +110,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "LB Medium with 50 ppm Naphthalene" to "lb_medium_with_50_ppm_naphthalene"
     for consistent matching
+- timestamp: '2026-05-16T09:03:38.873614+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:10.921937+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:40.056036+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 7972d1a54721f2e8d8b219cd6778036ceeab16235d3c3719fd2a7b2ee6d74db0
+  source: lb_medium_with_50_ppm_naphthalene.yaml
 solutions:
 - preferred_term: Naphthalene solution (10,000 ppm)*
   composition: []

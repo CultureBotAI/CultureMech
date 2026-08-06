@@ -1,94 +1,80 @@
-id: CultureMech:010188
+id: CultureMech:003216
 name: 25_glucose_medium
-original_name: 25% Glucose Medium
+original_name: 25% GLUCOSE MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+media_term:
+  preferred_term: JCM Medium J86
   term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: Yeast extract
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+    id: mediadive.medium:J86
+    label: 25% GLUCOSE MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=86'
+ingredients:
 - preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
   concentration:
     value: '250'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
-    compound'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
-- preferred_term: Agar
+- preferred_term: Polypeptone
   concentration:
-    value: '25'
+    value: '5'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
 - preferred_term: Malt extract
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Polypepton (Nihon Pharm. Co.)
+- preferred_term: Yeast extract
   concentration:
-    value: '5'
+    value: '3'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M77
+- preferred_term: Agar
   term:
-    id: TOGO:M77
-    label: 25% Glucose Medium
-notes: 'Source: https://togomedium.org/medium/M77
-
-  Original source: JCM - JCM_M86
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=86'
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.681215Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M77'
-- timestamp: '2026-01-28T19:48:39.050871Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:20:11.976138Z'
+- timestamp: '2026-01-26T17:53:15.705138Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J86'
+- timestamp: '2026-03-13T06:19:18.638319Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:010188'
-- timestamp: '2026-03-17T06:30:48.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:003216'
+- timestamp: '2026-03-17T06:30:37.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:30.912783+00:00'
+- timestamp: '2026-03-17T19:45:32.529293+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "25% Glucose Medium" to "25_glucose_medium" for consistent
+  notes: Normalized name from "25% GLUCOSE MEDIUM" to "25_glucose_medium" for consistent
     matching
-merge_fingerprint: 2c0720bc5f4747b922a3d1a3d8beff9e6fe8eec28a34e5fbfa5be5002e6c8591
+- timestamp: '2026-06-05T07:40:15.706315+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:33.952933+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint c0270a7524fec1c6185d5d3f7b364eeb7f94c7608be5e234379df2d4f8ec60ba
+  source: 25_glucose_medium.yaml
+merge_fingerprint: c0270a7524fec1c6185d5d3f7b364eeb7f94c7608be5e234379df2d4f8ec60ba
 merged_from:
-- TOGO_M77_25_Glucose_Medium
+- 25_glucose_medium

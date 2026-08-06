@@ -1,0 +1,163 @@
+id: CultureMech:015874
+name: freshwater_r2a_medium
+original_name: FRESHWATER R2A MEDIUM
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J1468
+  term:
+    id: jcm.grmd:1468
+    label: FRESHWATER R2A MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1468'
+ingredients:
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Proteose peptone No. 3 (BD-Difco)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Casamino acids (BD-Difco)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: glucose
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: Soluble starch
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
+    label: Starch
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
+    label: Na-pyruvate
+- preferred_term: NH4Cl
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+- preferred_term: FeCl2 solution (see Medium No. 187 )
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: Trace element solution (see Medium No. 187 )
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: Selenite tungstate solution (see Medium No. 431 )
+  concentration:
+    value: '0.5'
+    unit: ML_PER_L
+- preferred_term: Vitamin solution* (see Medium No. 403 )
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: Thiamine solution* (see Medium No. 403 )
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: Vitamin B12 solution* (see Medium No. 403 )
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: Resazurin
+  concentration:
+    value: '0.5'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: 1 M NaHCO3 solution
+  concentration:
+    value: '5.0'
+    unit: ML_PER_L
+- preferred_term: 1 M Coenzyme M solution
+  concentration:
+    value: '0.5'
+    unit: ML_PER_L
+- preferred_term: 5% Na2S·9H2O solution
+  concentration:
+    value: '6.0'
+    unit: ML_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix components and autoclave under a N2-CO2 (80:20, v/v) gas mixture.
+- step_number: 2
+  action: MIX
+  description: 'After cooling, aseptically and anaerobically, add the following solutions
+    from anaerobic stocks (autoclaved and stored under a N2 atmosphere): Adjust pH
+    to 7.0.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-06-02T07:09:26.498891+00:00'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1468. Ingredients captured verbatim; CHEBI/MediaIngredientMech
+    enrichment and category (bacterial/archaea) review are downstream steps.
+- timestamp: '2026-06-03T02:00:03.311069Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-06-03T07:12:22.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-08-06T03:04:35.709024+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 128d62901d550a74171bfb682263e165c8240ffd435739eed59f91059878910a
+  source: JCM_J1468_FRESHWATER_R2A_MEDIUM.yaml
+merge_fingerprint: 128d62901d550a74171bfb682263e165c8240ffd435739eed59f91059878910a
+merged_from:
+- JCM_J1468_FRESHWATER_R2A_MEDIUM

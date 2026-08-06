@@ -1,6 +1,7 @@
 id: CultureMech:015529
 name: Hans Basal Media bicarb
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sodium bicarbonate
@@ -67,8 +68,8 @@ ingredients:
     value: '0.10'
     unit: G_PER_L
   term:
-    id: CHEBI:37583
-    label: trisodium phosphate
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
 - preferred_term: Magnesium chloride hexahydrate
   concentration:
@@ -155,6 +156,9 @@ ingredients:
     value: '1.0000000000000002e-06'
     unit: G_PER_L
   notes: 'CAS: 10125-13-0; MW: 170.48; From Sulfur-free DL minerals'
+  term:
+    id: CHEBI:86318
+    label: ''
 - preferred_term: Boric Acid
   concentration:
     value: '1.0000000000000002e-06'
@@ -212,8 +216,8 @@ ingredients:
     value: '0.001'
     unit: MG_PER_L
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: Pyridoxine HCl
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-56-0; MW: 205.64;
     From DL vitamins'
 - preferred_term: Riboflavin
@@ -276,7 +280,7 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From DL vitamins'
 description: A bicarbonate buffered defined medium from Hans
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: Hans Basal Media bicarb
@@ -290,8 +294,29 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015529'
+- timestamp: '2026-05-16T09:04:40.634354+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:52.546773+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-09T01:42:26.646269+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:06:05.178528+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 7048c65acc6dc1dcbb0dbd768ad8a4ba40e8ad6970ad5f0302409647227e449d
+  source: hans_basal_media_bicarb.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: fde9d770949540504b12a0d736aafdd6e45056855c863a74a37ae7e996ed719c
+merge_fingerprint: 7048c65acc6dc1dcbb0dbd768ad8a4ba40e8ad6970ad5f0302409647227e449d
 merged_from:
 - hans_basal_media_bicarb

@@ -3,6 +3,7 @@ name: mannitol_yeast_extract_peptone_myp
 original_name: MANNITOL-Yeast extract-Peptone (MYP)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1087
@@ -19,8 +20,8 @@ ingredients:
   concentration:
     value: '25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000538
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16899
     label: D-Mannitol
 - preferred_term: Yeast extract
   concentration:
@@ -37,8 +38,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -64,10 +65,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MANNITOL-Yeast extract-Peptone (MYP)" to "mannitol_yeast_extract_peptone_myp"
     for consistent matching
-- timestamp: '2026-04-17T06:30:09.598277+00:00'
+- timestamp: '2026-06-05T07:41:12.695026+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:41.839229+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: mannitol_yeast_extract_peptone_myp, mannitol_yeast_extract_peptone_myp'
+- timestamp: '2026-08-06T03:05:41.839259+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint ab2ae452253cfeb500ef69e651bd3d7b83707b986e00df4344a309afc8e60fce
+  source: mannitol_yeast_extract_peptone_myp.yaml, mannitol_yeast_extract_peptone_myp.yaml
 kg_microbe_match: mediadive.medium:1087
 categories:
 - bacterial

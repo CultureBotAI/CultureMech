@@ -1,230 +1,217 @@
-id: CultureMech:009885
+id: CultureMech:002847
 name: modified_biebl_and_pfennigs_medium
-original_name: Modified Biebl And Pfennig's Medium
+original_name: MODIFIED BIEBL AND PFENNIG'S MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: JCM Medium J496
+  term:
+    id: mediadive.medium:J496
+    label: MODIFIED BIEBL AND PFENNIG'S MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=496'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '2.0'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component [Merged 2 duplicates: 1.0, 1.0]'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32599
-    label: ''
-- preferred_term: NaCl
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: CaCl2・2H2O
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86158
-    label: ''
 - preferred_term: KH2PO4
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
-- preferred_term: NH4Cl
+    label: potassium dihydrogen phosphate
   concentration:
-    value: '0.6'
+    value: '0.499501'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.24975'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.999001'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: NH4Cl
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  concentration:
+    value: '0.599401'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.2997'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '19.98'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
 - preferred_term: Sorbitol
+  term:
+    id: CHEBI:30911
+    label: Sorbitol
+  concentration:
+    value: '2.997'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30911
+    label: Sorbitol
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+- preferred_term: FeSO4 x 7 H2O
   term:
-    id: CHEBI:30911
-    label: glucitol
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000447
-    label: Sorbitol
-- preferred_term: Yeast extract (BD-Difco)
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Na2MoO4・2H2O
-  concentration:
-    value: '18'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:75215
-    label: ''
-- preferred_term: H3BO3
-  concentration:
-    value: '300'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:33118
-    label: boric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
-- preferred_term: FeSO4・7H2O
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
   concentration:
     value: '1.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:75836
-    label: ''
-- preferred_term: MnCl2・4H2O
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86368
-    label: ''
-- preferred_term: CoCl2・6H2O
-  concentration:
-    value: '190'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+    label: FeSO4 x 7 H2O
+- preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
-    label: ''
-- preferred_term: NiCl2・6H2O
+    label: CoCl2 x 6 H2O
   concentration:
-    value: '24'
+    value: '0.19'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+- preferred_term: MnCl2 x 4 H2O
   term:
-    id: CHEBI:34887
-    label: ''
-- preferred_term: CuCl2・2H2O
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
   concentration:
-    value: '2'
+    value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86318
-    label: ''
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
 - preferred_term: ZnCl2
-  concentration:
-    value: '42'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
   term:
     id: CHEBI:49976
-    label: zinc dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
     label: ZnCl2
-- preferred_term: EDTA・2Na
   concentration:
-    value: '3'
+    value: '0.042'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Simple component, Organic compound'
-media_term:
-  preferred_term: TOGO Medium M497
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
+    label: ZnCl2
+- preferred_term: NiCl2 x 6 H2O
   term:
-    id: TOGO:M497
-    label: Modified Biebl And Pfennig's Medium
-notes: 'Source: https://togomedium.org/medium/M497
-
-  Original source: JCM - JCM_M496
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=496'
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.018'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: H3BO3
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: 'Add the following component after autoclaving:'
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave separately.
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust pH to 6.8.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.164525Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M497'
-- timestamp: '2026-01-28T19:48:36.892000Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-09T08:05:01.583395+00:00'
-  curator: solution-migrator-v1.0
-  action: Migrated solutions from ingredients to solutions array
-  notes: Moved 1 solution(s) from ingredients
-- timestamp: '2026-03-13T03:09:33.433187Z'
-  curator: data-quality-cleanup-v1.0
-  action: Data quality fixes
-  notes: Merged 1 duplicate ingredient(s)
-- timestamp: '2026-03-13T06:20:09.647388Z'
+- timestamp: '2026-01-26T17:53:16.754602Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J496'
+- timestamp: '2026-03-13T06:19:16.062692Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:009885'
-- curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:01.270961'
-  action: Applied schema defaults and normalizations
-  notes: Added default solution name
-- timestamp: '2026-03-17T06:30:44.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:002847'
+- timestamp: '2026-03-17T06:30:46.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:28.609536+00:00'
+- timestamp: '2026-03-17T19:45:29.553331+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Modified Biebl And Pfennig's Medium" to "modified_biebl_and_pfennigs_medium"
+  notes: Normalized name from "MODIFIED BIEBL AND PFENNIG'S MEDIUM" to "modified_biebl_and_pfennigs_medium"
     for consistent matching
-high_metal: true
-solutions:
-- preferred_term: Trace element solution SL-12 (see below)
-  composition: []
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
-merge_fingerprint: 787bde5fe9d5dfb9f0cac81012cf1ae88295648522177326ca8b6962c13bda6e
+- timestamp: '2026-06-05T07:40:17.376482+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 15 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:43.000649+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:36.883428+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 86be0a5b014cc1bb5bc015c606ae1ca6210836724e95511474c62292aa010485
+  source: JCM_J496_MODIFIED_BIEBL_AND_PFENNIG_S_MEDIUM.yaml
+merge_fingerprint: 86be0a5b014cc1bb5bc015c606ae1ca6210836724e95511474c62292aa010485
 merged_from:
-- TOGO_M497_Modified_Biebl_And_Pfennig_s_Medium
+- JCM_J496_MODIFIED_BIEBL_AND_PFENNIG_S_MEDIUM

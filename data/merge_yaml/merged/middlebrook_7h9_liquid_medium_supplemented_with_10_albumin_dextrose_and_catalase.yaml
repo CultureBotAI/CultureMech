@@ -4,6 +4,7 @@ original_name: Middlebrook 7H9 liquid medium supplemented with 10% albumin, dext
   and catalase
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -15,8 +16,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Glycerol
   concentration:
@@ -25,10 +26,10 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
     component'
   term:
-    id: CHEBI:15978
-    label: sn-glycerol 3-phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000588
+    id: CHEBI:17754
+    label: Glycerol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: Middlebrook 7H9 Broth Base
   concentration:
@@ -47,9 +48,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: Monopotassium Phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
 - preferred_term: Biotin
   concentration:
     value: '0.0005'
@@ -58,9 +59,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
-    label: Biotin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
+    label: biotin
 - preferred_term: Ammonium Sulfate
   concentration:
     value: '0.5'
@@ -70,9 +71,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium Sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 - preferred_term: Calcium Chloride
   concentration:
     value: '0.0005'
@@ -82,9 +83,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: Calcium Chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: Disodium Phosphate
   concentration:
     value: '2.5'
@@ -94,9 +95,9 @@ ingredients:
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
-    label: Disodium Phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
 - preferred_term: Magnesium Sulfate
   concentration:
     value: '0.05'
@@ -106,9 +107,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: Magnesium Sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
 - preferred_term: Copper Sulfate
   concentration:
     value: '0.001'
@@ -118,9 +119,9 @@ ingredients:
   term:
     id: CHEBI:23414
     label: copper(II) sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000855
-    label: Copper Sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:23414
+    label: copper(II) sulfate
 - preferred_term: Sodium Citrate
   concentration:
     value: '0.1'
@@ -129,9 +130,9 @@ ingredients:
   term:
     id: CHEBI:32142
     label: sodium citrate dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000719
-    label: Sodium Citrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32142
+    label: sodium citrate dihydrate
 - preferred_term: Ferric Ammonium Citrate
   concentration:
     value: '0.04'
@@ -141,9 +142,9 @@ ingredients:
   term:
     id: CHEBI:31604
     label: ferric ammonium citrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000541
-    label: Ferric Ammonium Citrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
 - preferred_term: L-Glutamic Acid
   concentration:
     value: '0.5'
@@ -153,9 +154,9 @@ ingredients:
   term:
     id: CHEBI:16015
     label: L-glutamic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000562
-    label: L-Glutamic Acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16015
+    label: L-glutamic acid
 - preferred_term: Pyridoxine
   concentration:
     value: '0.001'
@@ -164,9 +165,9 @@ ingredients:
   term:
     id: CHEBI:16709
     label: pyridoxine
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000317
-    label: Pyridoxine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16709
+    label: pyridoxine
 - preferred_term: Zinc Sulfate
   concentration:
     value: '0.001'
@@ -176,9 +177,9 @@ ingredients:
   term:
     id: CHEBI:35176
     label: zinc sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc Sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: zinc sulfate
 - preferred_term: Dextrose
   concentration:
     value: '1'
@@ -188,9 +189,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Dextrose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Tryptone
   term:
     id: MICRO:0000182
@@ -249,9 +250,6 @@ ingredients:
     value: '0.0015'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component'
-  term:
-    id: CHEBI:3463
-    label: Catalase
 media_term:
   preferred_term: TOGO Medium M2400
   term:
@@ -276,6 +274,11 @@ notes: 'Source: https://togomedium.org/medium/M2400
 applications:
 - Microbial cultivation
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI,
+    1 de-grounded (mixture or unverifiable).
 - timestamp: '2026-01-27T06:35:56.459711Z'
   curator: togo-import
   action: Imported from TOGO Medium
@@ -302,6 +305,23 @@ curation_history:
   notes: Normalized name from "Middlebrook 7H9 liquid medium supplemented with 10%
     albumin, dextrose, and catalase" to "middlebrook_7h9_liquid_medium_supplemented_with_10_albumin_dextrose_and_catalase"
     for consistent matching
-merge_fingerprint: f2c43508237ab7329e28a6fa3777aab2b1262959214f58cec1c1a88c9ec1d8de
+- timestamp: '2026-06-05T07:41:34.013968+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 15 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:48.273379+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:05:45.559030+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 63455e0b61ba8b242fec4a72d7a35129d32e34162aca8416acb7f99990ad8b5e
+  source: middlebrook_7h9_liquid_medium_supplemented_with_10_albumin_dextrose_and_catalase.yaml
+merge_fingerprint: 63455e0b61ba8b242fec4a72d7a35129d32e34162aca8416acb7f99990ad8b5e
 merged_from:
 - middlebrook_7h9_liquid_medium_supplemented_with_10_albumin_dextrose_and_catalase

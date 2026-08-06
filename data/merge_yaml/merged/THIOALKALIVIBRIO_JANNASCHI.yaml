@@ -3,6 +3,7 @@ name: thioalkalivibrio_jannaschi
 original_name: THIOALKALIVIBRIO JANNASCHI
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 10.0
 media_term:
@@ -16,12 +17,12 @@ ingredients:
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 - preferred_term: NaHCO3
   term:
@@ -30,8 +31,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: NaCl
   term:
@@ -40,18 +41,18 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -60,8 +61,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: EDTA
   term:
@@ -70,8 +71,8 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000165
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64755
     label: EDTA
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -80,8 +81,8 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -90,8 +91,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -100,8 +101,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -110,8 +111,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -120,8 +121,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -130,8 +131,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
@@ -140,18 +141,18 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
     label: CuCl2 x 2 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 applications:
 - Microbial cultivation
@@ -177,7 +178,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "THIOALKALIVIBRIO JANNASCHI" to "thioalkalivibrio_jannaschi"
     for consistent matching
-- timestamp: '2026-04-17T06:29:18.099907+00:00'
+- timestamp: '2026-06-05T07:40:20.534737+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 14 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:44.002465+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:42.710094+00:00'
   curator: recipe-merger
   action: Merged 12 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_1272_THIOALKALIVIBRIO_JANNASCHI, KOMODO_925_ALKALIPHILIC_SULPHUR_RESPIRING_STRAINS_MEDIUM,
@@ -186,6 +197,28 @@ curation_history:
     thioalkalimicrobium_aerophilum_al_3_dsm_13739_and_tm_sibericum_al_7_dsm_13740,
     thioalkalispira_microaerophila_alen_1_dsm_14786, thioalkalivibrio_jannaschi, thioalkalivibrio_nitratireducens_alen_2_dsm_14787,
     thioalkalivibrio_versutus_al_2_dsm_13738_tv_nitratus_alj_12_dsm_13741_and_tv_denitrificans_aljd_dsm_13742'
+- timestamp: '2026-08-06T03:04:42.710195+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 12 source recipe(s) on fingerprint 2d272f120d0e3317d68c830ac6cff9bb25c3656971aeeabb89cfb0fce8730e68
+  source: KOMODO_1272_THIOALKALIVIBRIO_JANNASCHI.yaml, KOMODO_925_ALKALIPHILIC_SULPHUR_RESPIRING_STRAINS_MEDIUM.yaml,
+    alkaliphilic_sulphur_respiring_strains_medium.yaml, dsm_13531_arh1_and_dsm_13532_arh2_kscn_grown.yaml,
+    dsm_13533_alrh.yaml, dsm_13541_arh2_thiosulphate_grown.yaml, dsm_13542_arh1_thiosulphate_grown.yaml,
+    thioalkalimicrobium_aerophilum_al_3_dsm_13739_and_tm_sibericum_al_7_dsm_13740.yaml,
+    thioalkalispira_microaerophila_alen_1_dsm_14786.yaml, thioalkalivibrio_jannaschi.yaml,
+    thioalkalivibrio_
+parent_media:
+  path: data/normalized_yaml/bacterial/thioalkalivibrio_jannaschi.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000734
+  name: thioalkalivibrio_jannaschi
+  notes: KOMODO record explicitly cites DSMZ Medium 1272; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 1272; local ingredient
+  and concentration signatures match.
 synonyms:
 - name: alkaliphilic_sulphur_respiring_strains_medium
   source: KOMODO

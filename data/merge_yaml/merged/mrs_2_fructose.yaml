@@ -3,6 +3,7 @@ name: mrs_2_fructose
 original_name: MRS + 2 % fructose
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
@@ -24,11 +25,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4·7H2O
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -43,9 +44,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Sodium acetate
   concentration:
     value: '5'
@@ -54,9 +55,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
-    label: Sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: Tween 80
   concentration:
     value: '1'
@@ -66,15 +67,18 @@ ingredients:
   term:
     id: CHEBI:53426
     label: polysorbate 80
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000190
-    label: Tween 80
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53426
+    label: polysorbate 80
 - preferred_term: MnSO4·nH2O
   concentration:
     value: '0.05'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86360
+    label: manganese(II) sulfate
 - preferred_term: Diammonium hydrogen citrate
   concentration:
     value: '2'
@@ -84,9 +88,9 @@ ingredients:
   term:
     id: CHEBI:63076
     label: diammonium citrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000400
-    label: Diammonium hydrogen citrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63076
+    label: diammonium citrate
 - preferred_term: Fructose
   concentration:
     value: '100'
@@ -96,9 +100,9 @@ ingredients:
   term:
     id: CHEBI:28645
     label: beta-D-fructofuranose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000288
-    label: Fructose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28645
+    label: beta-D-fructofuranose
 - preferred_term: Glucose
   concentration:
     value: '20'
@@ -108,9 +112,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -159,10 +163,42 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MRS + 2 % fructose" to "mrs_2_fructose" for consistent
     matching
-- timestamp: '2026-04-17T06:30:17.330052+00:00'
+- timestamp: '2026-06-05T07:41:38.399441+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:58:27.235635+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:47:09.165073+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:50.375165+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: mrs_10_fructose, mrs_1_fructose, mrs_2_fructose'
+- timestamp: '2026-08-06T03:05:50.375218+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint f42bfb11f6cdcbffa9444e71ff3d4d9c0c1f00928d961f8aef5175b2f7b7abae
+  source: mrs_10_fructose.yaml, mrs_1_fructose.yaml, mrs_2_fructose.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/mrs_1_fructose.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:008427
+  name: mrs_1_fructose
+  notes: TOGO/NBRC MRS fructose-dose grid; reviewed as concentration variant of the
+    1% fructose record.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Fructose concentration increased from 1% (10 g/L) to 2% (20 g/L); all other parsed
+  ingredient concentrations match the parent.
 synonyms:
 - name: mrs_10_fructose
   source: TOGO
@@ -178,4 +214,4 @@ merged_from:
 - mrs_10_fructose
 - mrs_1_fructose
 - mrs_2_fructose
-merge_fingerprint: 8057be6831c196dbe9234a54eb0ed75cb9d9c963381cdda0f6d4e3da59a555a4
+merge_fingerprint: f42bfb11f6cdcbffa9444e71ff3d4d9c0c1f00928d961f8aef5175b2f7b7abae

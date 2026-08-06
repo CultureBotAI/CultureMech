@@ -1,0 +1,176 @@
+id: CultureMech:001046
+name: anaerotignum_medium
+original_name: ANAEROTIGNUM MEDIUM
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_range:
+  min: 7.0
+  max: 7.2
+media_term:
+  preferred_term: DSMZ Medium 156
+  term:
+    id: mediadive.medium:156
+    label: ANAEROTIGNUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium156.pdf'
+ingredients:
+- preferred_term: L-Alanine
+  term:
+    id: CHEBI:16977
+    label: L-Alanine
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16977
+    label: L-Alanine
+- preferred_term: Peptone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.018'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+- preferred_term: Potassium phosphate buffer
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: CaSO4
+  term:
+    id: CHEBI:31346
+    label: calcium sulfate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31346
+    label: CaSO4
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: NaHCO3
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (except bicarbonate and cysteine), adjust pH to
+    7.0, then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add
+    and dissolve bicarbonate and cysteine, then dispense medium under 100% N2 gas
+    atmosphere into anoxic Hungate-type tubes or seruim vials and autoclave. Adjust
+    pH of complete medium to 7.0 - 7.2, if necessary.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.363426Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 156'
+- timestamp: '2026-03-13T06:19:00.728674Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001046'
+- timestamp: '2026-03-17T06:30:52.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:12.365990+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ANAEROTIGNUM MEDIUM" to "anaerotignum_medium" for consistent
+    matching
+- timestamp: '2026-05-20T06:01:08.722919+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7-7.2'' -> {''min'': 7.0, ''max'': 7.2}'
+- timestamp: '2026-06-05T07:40:49.156896+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:53.335071+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:23.632977+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: anaerotignum_medium, clostridium_propionicum_medium, medium_156_modified_for_dsm_6251'
+- timestamp: '2026-08-06T03:05:23.633034+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint bcb5094d30f48f3088474850e9d729c409de112daeae9f9b2493f043f06402c9
+  source: anaerotignum_medium.yaml, clostridium_propionicum_medium.yaml, medium_156_modified_for_dsm_6251.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/clostridium_propionicum_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004179
+  name: clostridium_propionicum_medium
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_156_modified_for_dsm_6251.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004178
+  name: medium_156_modified_for_dsm_6251
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+synonyms:
+- name: clostridium_propionicum_medium
+  source: KOMODO
+  source_id: komodo.medium:156
+  original_category: bacterial
+- name: medium_156_modified_for_dsm_6251
+  source: KOMODO
+  source_id: komodo.medium:156_6251
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- anaerotignum_medium
+- clostridium_propionicum_medium
+- medium_156_modified_for_dsm_6251
+merge_fingerprint: bcb5094d30f48f3088474850e9d729c409de112daeae9f9b2493f043f06402c9

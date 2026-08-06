@@ -3,6 +3,7 @@ name: batch_medium_mattanovich_et_al
 original_name: Batch medium; mattanovich et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sulfate
@@ -18,8 +19,8 @@ ingredients:
     value: '433.27'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glyc'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: Biotin
   term:
@@ -29,18 +30,24 @@ ingredients:
     value: '0.001637'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Citrate
   concentration:
     value: '9.369'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.1496'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -48,8 +55,8 @@ ingredients:
   concentration:
     value: '0.001488'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Sodium molybdate
   concentration:
@@ -65,9 +72,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -75,8 +82,8 @@ ingredients:
   concentration:
     value: '2.0286'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
@@ -85,13 +92,16 @@ ingredients:
   concentration:
     value: '0.08165'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.08273'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.017714'
@@ -103,6 +113,9 @@ ingredients:
   concentration:
     value: '0.11054'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Zinc Chloride
   concentration:
     value: '0.6749'
@@ -151,6 +164,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Batch medium; mattanovich et al" to "batch_medium_mattanovich_et_al"
     for consistent matching
+- timestamp: '2026-06-05T07:40:50.627043+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:24.864266+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 0bc90237f12c1be48a645720e6dfc20cf6fc8d9d83794163af646257bfb501a7
+  source: batch_medium_mattanovich_et_al.yaml
 media_term:
   preferred_term: MediaDB Medium 34
   term:
@@ -162,6 +186,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 8177b66e00ea99a262a1e9f3ea1a79474e2cfb0d59870a9179b534869ac30dd7
+merge_fingerprint: 0bc90237f12c1be48a645720e6dfc20cf6fc8d9d83794163af646257bfb501a7
 merged_from:
 - batch_medium_mattanovich_et_al

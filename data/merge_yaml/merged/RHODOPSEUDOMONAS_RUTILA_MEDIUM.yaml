@@ -1,30 +1,31 @@
-id: CultureMech:001764
+id: CultureMech:003307
 name: rhodopseudomonas_rutila_medium
 original_name: RHODOPSEUDOMONAS RUTILA MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
-  preferred_term: DSMZ Medium 633
+  preferred_term: JCM Medium J95
   term:
-    id: mediadive.medium:633
+    id: mediadive.medium:J95
     label: RHODOPSEUDOMONAS RUTILA MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium633.pdf'
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=95'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
     value: '2'
     unit: G_PER_L
-- preferred_term: Na-L-malate
+- preferred_term: Sodium L-malate
   term:
     id: CHEBI:91261
-    label: Na-L-malate
+    label: Sodium L-malate
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000450
-    label: Na-L-malate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91261
+    label: Sodium L-malate
 - preferred_term: Na glutamate
   term:
     id: CHEBI:64220
@@ -32,18 +33,18 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000432
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64220
     label: Na glutamate
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NaHCO3
   term:
@@ -52,8 +53,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -62,8 +63,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -72,19 +73,16 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
-- preferred_term: MnSO4 x H2O
-  term:
-    id: CHEBI:86364
-    label: MnSO4 x H2O
+- preferred_term: MnSO4 x n H2O
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: MnSO4 x H2O
+  term:
+    id: CHEBI:86360
+    label: manganese(II) sulfate
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -92,8 +90,8 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -102,19 +100,19 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
-- preferred_term: Thiamine-HCl x 2 H2O
+- preferred_term: Thiamine HCl
   term:
-    id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
+    id: CHEBI:49105
+    label: Thiamine HCl
   concentration:
     value: '0.001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000160
-    label: Thiamine-HCl x 2 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
+    label: Thiamine HCl
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
@@ -122,39 +120,54 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
     label: Nicotinic acid
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
     label: Biotin
   concentration:
-    value: '0.001'
+    value: 1e-05
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:11.786312Z'
+- timestamp: '2026-01-26T17:53:15.721455Z'
   curator: mediadive-import
   action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 633'
-- timestamp: '2026-03-13T06:19:07.045999Z'
+  notes: 'Source: JCM, ID: J95'
+- timestamp: '2026-03-13T06:19:19.377900Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:001764'
-- timestamp: '2026-03-17T06:30:18.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:003307'
+- timestamp: '2026-03-17T06:30:03.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:19.304134+00:00'
+- timestamp: '2026-03-17T19:45:33.325324+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "RHODOPSEUDOMONAS RUTILA MEDIUM" to "rhodopseudomonas_rutila_medium"
     for consistent matching
-merge_fingerprint: d1b05a439ce8ac686315f942fa7ee94f096964a647728c4d7588e2195e65dc89
+- timestamp: '2026-06-05T07:40:17.936520+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 11 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:43.186669+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:37.525790+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint db01d481bb26380111ea04d016389c0ae83457e6d3c455ea583e641f4f31c769
+  source: JCM_J95_RHODOPSEUDOMONAS_RUTILA_MEDIUM.yaml
+merge_fingerprint: db01d481bb26380111ea04d016389c0ae83457e6d3c455ea583e641f4f31c769
 merged_from:
-- rhodopseudomonas_rutila_medium
+- JCM_J95_RHODOPSEUDOMONAS_RUTILA_MEDIUM

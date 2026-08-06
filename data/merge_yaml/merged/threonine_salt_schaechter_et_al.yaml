@@ -3,6 +3,7 @@ name: threonine_salt_schaechter_et_al
 original_name: Threonine salt; schaechter et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Citrate
@@ -10,6 +11,9 @@ ingredients:
     value: '5.20497'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: L-Threonine
   term:
     id: CHEBI:16857
@@ -18,13 +22,16 @@ ingredients:
     value: '1.00739'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:thr-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000310
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16857
     label: L-Threonine
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '28.0899'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Potassium chloride
   concentration:
     value: '9.92605'
@@ -32,9 +39,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -42,8 +49,8 @@ ingredients:
   concentration:
     value: '0.405729'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Sodium ammonium phosphate
   concentration:
@@ -82,6 +89,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Threonine salt; schaechter et al" to "threonine_salt_schaechter_et_al"
     for consistent matching
+- timestamp: '2026-06-05T07:41:51.812765+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:59.551518+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b5e8704e8126e5a75f7d9facfce952b4c0b34e178d3044078f27229f8ab3f4f6
+  source: threonine_salt_schaechter_et_al.yaml
 media_term:
   preferred_term: MediaDB Medium 235
   term:
@@ -93,6 +111,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 545caed33be3dc2f0861f3d1950f1155402083b5186a19f041f5100d6297914f
+merge_fingerprint: b5e8704e8126e5a75f7d9facfce952b4c0b34e178d3044078f27229f8ab3f4f6
 merged_from:
 - threonine_salt_schaechter_et_al

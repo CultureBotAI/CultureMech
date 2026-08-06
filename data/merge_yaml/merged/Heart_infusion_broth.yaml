@@ -3,6 +3,7 @@ name: heart_infusion_broth
 original_name: Heart infusion broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Heart infusion broth (Eiken)
@@ -32,6 +33,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Heart infusion broth" to "heart_infusion_broth" for
     consistent matching
+- timestamp: '2026-08-06T03:05:37.442737+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 4ef3925a2ab612bf6fb8da2aeaf382877f081524e009d5a2827f7cbfa94f9f82
+  source: heart_infusion_broth.yaml
 merge_fingerprint: 4ef3925a2ab612bf6fb8da2aeaf382877f081524e009d5a2827f7cbfa94f9f82
 merged_from:
 - heart_infusion_broth

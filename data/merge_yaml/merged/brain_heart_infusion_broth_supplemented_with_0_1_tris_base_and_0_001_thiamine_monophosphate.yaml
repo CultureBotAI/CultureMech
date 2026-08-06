@@ -4,6 +4,7 @@ original_name: brain-heart infusion broth (supplemented with 0.1% Tris base and 
   thiamine monophosphate)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Tris
@@ -14,9 +15,9 @@ ingredients:
   term:
     id: CHEBI:9754
     label: tris
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000880
-    label: Tris
+  mediaingredientmech_chebi_term:
+    id: CHEBI:9754
+    label: tris
 - preferred_term: thiamine monophosphate
   concentration:
     value: '0.001'
@@ -60,6 +61,17 @@ curation_history:
   notes: Normalized name from "brain-heart infusion broth (supplemented with 0.1%
     Tris base and 0.001% thiamine monophosphate)" to "brain_heart_infusion_broth_supplemented_with_0_1_tris_base_and_0_001_thiamine_monophosphate"
     for consistent matching
+- timestamp: '2026-06-05T07:40:51.493800+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:25.906249+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d19e7f4c3f759a198af6ebfddfd7f41cd1fe97c6584c7886b1a6fdd095ce573c
+  source: brain_heart_infusion_broth_supplemented_with_0_1_tris_base_and_0_001_thiamine_monophosphate.yaml
 merge_fingerprint: d19e7f4c3f759a198af6ebfddfd7f41cd1fe97c6584c7886b1a6fdd095ce573c
 merged_from:
 - brain_heart_infusion_broth_supplemented_with_0_1_tris_base_and_0_001_thiamine_monophosphate

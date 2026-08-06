@@ -1,0 +1,99 @@
+id: CultureMech:010532
+name: yeast_extract_malt_extract_agar_isp_2_with_5_nacl_ph_9_0
+original_name: YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) WITH 5% NaCl (pH 9.0)
+category: fungal
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+ph_value: 9.0
+media_term:
+  preferred_term: JCM Medium J527
+  term:
+    id: mediadive.medium:J527
+    label: YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) WITH 5% NaCl (pH 9.0)
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=527'
+ingredients:
+- preferred_term: Yeast extract-malt extract agar
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: After autoclaving, adjust pH to 9.0 with sterilized 10% Na2CO3 solution.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.848067Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J527'
+- timestamp: '2026-03-13T06:20:14.249659Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010532'
+- timestamp: '2026-03-17T17:06:07.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:33.280739+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) WITH 5% NaCl
+    (pH 9.0)" to "yeast_extract_malt_extract_agar_isp_2_with_5_nacl_ph_9_0" for consistent
+    matching
+- timestamp: '2026-06-05T07:41:57.225048+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:04.237063+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: yeast_extract_malt_extract_agar_isp_2_with_2_nacl, yeast_extract_malt_extract_agar_isp_2_with_5_nacl,
+    yeast_extract_malt_extract_agar_isp_2_with_5_nacl_ph_9_0'
+- timestamp: '2026-08-06T03:06:04.237110+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 3a1fc9dbccd2311e61d36bd0c4fbd08c09d401fbdded733f45d138f8a74ac210
+  source: yeast_extract_malt_extract_agar_isp_2_with_2_nacl.yaml, yeast_extract_malt_extract_agar_isp_2_with_5_nacl.yaml,
+    yeast_extract_malt_extract_agar_isp_2_with_5_nacl_ph_9_0.yaml
+kg_microbe_match: mediadive.medium:74
+parent_media:
+  path: data/normalized_yaml/fungal/yeast_extract_malt_extract_agar_isp_2_with_2_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:010493
+  name: yeast_extract_malt_extract_agar_isp_2_with_2_nacl
+  notes: Reviewed JCM fungal ISP-2 agar salinity/pH variant; parent already represents
+    the 2% NaCl base and child is the 5% NaCl pH 9.0 variant.
+variant_relationship: SALINITY_VARIANT
+variant_modifications:
+- NaCl increased from 20 g/L to 50 g/L; child record also specifies pH 9.0 while the
+  yeast extract-malt extract agar ISP-2 base remains unchanged.
+synonyms:
+- name: yeast_extract_malt_extract_agar_isp_2_with_2_nacl
+  source: MediaDive
+  source_id: mediadive.medium:J1152
+  original_category: fungal
+- name: yeast_extract_malt_extract_agar_isp_2_with_5_nacl
+  source: MediaDive
+  source_id: mediadive.medium:J207
+  original_category: fungal
+categories:
+- fungal
+merged_from:
+- yeast_extract_malt_extract_agar_isp_2_with_2_nacl
+- yeast_extract_malt_extract_agar_isp_2_with_5_nacl
+- yeast_extract_malt_extract_agar_isp_2_with_5_nacl_ph_9_0
+merge_fingerprint: 3a1fc9dbccd2311e61d36bd0c4fbd08c09d401fbdded733f45d138f8a74ac210

@@ -3,6 +3,7 @@ name: reconstituted_skim_milk_medium
 original_name: Reconstituted skim milk medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -36,9 +37,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 media_term:
   preferred_term: TOGO Medium M2890
   term:
@@ -69,6 +70,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Reconstituted skim milk medium" to "reconstituted_skim_milk_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:41:44.122348+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:54.526400+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 9061291c832b5b87e2a21029ee41a5366c64152a2bdfd5f29545b199a50258fd
+  source: reconstituted_skim_milk_medium.yaml
 merge_fingerprint: 9061291c832b5b87e2a21029ee41a5366c64152a2bdfd5f29545b199a50258fd
 merged_from:
 - reconstituted_skim_milk_medium

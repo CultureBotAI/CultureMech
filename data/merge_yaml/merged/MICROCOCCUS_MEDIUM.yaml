@@ -3,6 +3,7 @@ name: micrococcus_medium
 original_name: MICROCOCCUS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.4
 media_term:
@@ -31,8 +32,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Agar
   term:
@@ -41,8 +42,8 @@ ingredients:
   concentration:
     value: '12'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -68,6 +69,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MICROCOCCUS MEDIUM" to "micrococcus_medium" for consistent
     matching
+- timestamp: '2026-06-05T07:41:33.830138+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:45.389302+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d54b7e5c352646ebce5d00cf032292fd4d557b7c717952f0d783ab6c4359d0a4
+  source: micrococcus_medium.yaml
 merge_fingerprint: d54b7e5c352646ebce5d00cf032292fd4d557b7c717952f0d783ab6c4359d0a4
 merged_from:
 - micrococcus_medium

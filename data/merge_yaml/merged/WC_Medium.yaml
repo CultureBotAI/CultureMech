@@ -1,7 +1,8 @@
-id: CultureMech:000239
+id: CultureMech:000240
 name: wc_medium
-category: ALGAE
+category: algae
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
@@ -10,90 +11,94 @@ ingredients:
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: MES(CAS: 7365-45-9)'
+  notes: 'Original amount: NaCl(Fisher S271-500)'
 - preferred_term: '2'
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: MWC Metal Solution'
+  notes: 'Original amount: MgSO4•7H2O(Sigma 230391)'
 - preferred_term: '3'
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: CaCl2•2H2O(CAS: 10035-04-8)'
+  notes: 'Original amount: KCl(Fisher P 217)'
 - preferred_term: '4'
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: MgSO4•7H2O(CAS: 10034-99-8)'
+  notes: 'Original amount: NaNO3(Fisher BP360-500)'
 - preferred_term: '5'
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: Na2Glycerophosphate.5H2O(CAS:  13408-09-8)'
+  notes: 'Original amount: CaCl2•2H2O(Sigma C-3881)'
 - preferred_term: '6'
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: NaNO3(CAS: 7631-99-4)'
+  notes: 'Original amount: KH2PO4(Sigma P 0662)'
 - preferred_term: '7'
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: Na2SiO3•9H2O(CAS: 13517-24-3)'
+  notes: 'Original amount: Tricine (adjust to pH 8)(Sigma T-5816-256)'
 - preferred_term: '8'
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: NH4NO3(CAS: 6484-52-2)'
+  notes: 'Original amount: P-II Metal Solution'
 - preferred_term: '9'
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: KCl(CAS:7447-40-7)'
+  notes: 'Original amount: Chelated Iron Solution'
 - preferred_term: '10'
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: Vitamin B12'
+  notes: 'Original amount: NH4Cl(Fisher A 649-500)'
 - preferred_term: '11'
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: Biotin Vitamin Solution'
-- preferred_term: '12'
-  concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Thiamine Vitamin Solution'
+  notes: 'Original amount: Vitamin B12'
 preparation_steps:
 - step_number: 1
-  instruction: Important Notes To Consider:The quality of water, including natural
-    seawater, is important.
+  action: MIX
+  description: 'Important Notes To Consider: The quality of water, including natural
+    seawater, is important.'
 - step_number: 2
-  instruction: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
+  action: MIX
+  description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
     water, Milli-Q water (Millipore Corp.), etc.
 - step_number: 3
-  instruction: Natural seawater and natural freshwater should be obtained from a non-polluted
-    source.When dissolving chemicals, wait for the first component to dissolve before
+  action: DISSOLVE
+  description: Natural seawater and natural freshwater should be obtained from a non-polluted
+    source. When dissolving chemicals, wait for the first component to dissolve before
     adding the second.
 - step_number: 4
-  instruction: Stirring, and sometimes the addition of heat, is often required to
+  action: DISSOLVE
+  description: Stirring, and sometimes the addition of heat, is often required to
     dissolve the chemicals efficiently.
 - step_number: 5
-  instruction: Preparation of stock solutions for frequently made algal culture media
+  action: MIX
+  description: Preparation of stock solutions for frequently made algal culture media
     make preparing media convenient but also necessary to avoid errors from weighing
-    very tiny amounts.Attention should be given to the pH of the final medium.
+    very tiny amounts. Attention should be given to the pH of the final medium.
 - step_number: 6
-  instruction: In most cases, if pH adjustment is required, this occurs before sterilization.
+  action: ADJUST_PH
+  description: In most cases, if pH adjustment is required, this occurs before sterilization.
 - step_number: 7
-  instruction: Please note that autoclaving removes carbon dioxide from media lacking
+  action: AUTOCLAVE
+  description: Please note that autoclaving removes carbon dioxide from media lacking
     carbonate stabilizing buffers.
 - step_number: 8
-  instruction: This would make the medium very alkaline soon after removal from the
+  action: AUTOCLAVE
+  description: This would make the medium very alkaline soon after removal from the
     autoclave.
 - step_number: 9
-  instruction: In these cases, you should wait approximately 24 hours for gaseous
+  action: MIX
+  description: In these cases, you should wait approximately 24 hours for gaseous
     equilibrium before inoculating the medium.
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
@@ -104,40 +109,60 @@ applications:
 - Microalgae research
 curation_history:
 - curator: utex-import
-  date: '2026-01-28'
   action: Imported from UTEX Culture Collection
-  notes: 'Source ID: wc-plus-medium, URL: https://utex.org/products/wc-plus-medium'
-- timestamp: '2026-03-13T06:18:53.691350Z'
+  notes: 'Source ID: wc-medium, URL: https://utex.org/products/wc-medium'
+  timestamp: '2026-01-28T00:00:00+00:00'
+- timestamp: '2026-03-13T06:18:53.698627Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000239'
-- timestamp: '2026-03-17T19:45:04.596600+00:00'
+  notes: 'Assigned stable identifier: CultureMech:000240'
+- timestamp: '2026-03-17T19:45:04.602428+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "WC+ Medium" to "wc_medium" for consistent matching
-- timestamp: '2026-04-17T06:29:07.760348+00:00'
+  notes: Normalized name from "WC Medium" to "wc_medium" for consistent matching
+- timestamp: '2026-05-16T09:02:56.174028+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1; references.reference_id->reference=2;
+    category->lowercase=1
+- timestamp: '2026-05-16T09:11:01.394992+00:00'
+  curator: migrate_preparation_steps.py
+  action: MIGRATED_PREPARATION_STEPS
+  notes: instruction->action+description for 9 step(s)
+- timestamp: '2026-08-06T03:04:19.361793+00:00'
   curator: recipe-merger
-  action: Merged 4 duplicate recipes into canonical record
-  notes: 'Sources: DYIII_Medium, Modified_COMBO_Medium, P49_Medium, WC+_Medium'
+  action: Merged 5 duplicate recipes into canonical record
+  notes: 'Sources: Artificial_Seawater_Medium, LDM_Medium, Modified_Bolds_3N_Medium,
+    N_20_Medium, WC_Medium'
+- timestamp: '2026-08-06T03:04:19.361849+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 5 source recipe(s) on fingerprint 45f7523e48d1b708d46cf2b78b00715ccc525331a6a76c7e14ba1a90455d196d
+  source: Artificial_Seawater_Medium.yaml, LDM_Medium.yaml, Modified_Bolds_3N_Medium.yaml,
+    N_20_Medium.yaml, WC_Medium.yaml
 references:
-- reference_id: UTEX:wc-plus-medium
-- reference_id: https://utex.org/products/wc-plus-medium
-original_name: WC+ Medium
+- reference: UTEX:wc-medium
+- reference: https://utex.org/products/wc-medium
+original_name: WC Medium
 synonyms:
-- name: dyiii_medium
+- name: artificial_seawater_medium
   source: unknown
-  original_category: ALGAE
-- name: modified_combo_medium
+  original_category: algae
+- name: ldm_medium
   source: unknown
-  original_category: ALGAE
-- name: p49_medium
+  original_category: algae
+- name: modified_bolds_3n_medium
   source: unknown
-  original_category: ALGAE
+  original_category: algae
+- name: n_20_medium
+  source: unknown
+  original_category: algae
 categories:
-- ALGAE
+- algae
 merged_from:
-- DYIII_Medium
-- Modified_COMBO_Medium
-- P49_Medium
-- WC+_Medium
-merge_fingerprint: 6b820ca9a00625c3e6e7f38471ba0a5267d0b0ed57d40cc2ad07f7c754c0aab2
+- Artificial_Seawater_Medium
+- LDM_Medium
+- Modified_Bolds_3N_Medium
+- N_20_Medium
+- WC_Medium
+merge_fingerprint: 45f7523e48d1b708d46cf2b78b00715ccc525331a6a76c7e14ba1a90455d196d

@@ -3,6 +3,7 @@ name: luedemann_medium_luedemann_1968
 original_name: LUEDEMANN medium (LUEDEMANN; 1968)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 8.6
 media_term:
@@ -28,8 +29,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
     label: Starch
 - preferred_term: Glucose
   term:
@@ -38,8 +39,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: CaCO3
   term:
@@ -48,8 +49,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001099
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
     label: CaCO3
 - preferred_term: NaCl
   term:
@@ -58,8 +59,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Agar
   term:
@@ -68,8 +69,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -95,10 +96,32 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "LUEDEMANN medium (LUEDEMANN; 1968)" to "luedemann_medium_luedemann_1968"
     for consistent matching
-- timestamp: '2026-04-17T06:29:33.882448+00:00'
+- timestamp: '2026-06-05T07:40:27.264554+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:01.122656+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_877_LUEDEMANN_medium_LUEDEMANN_1968, luedemann_medium_luedemann_1968'
+- timestamp: '2026-08-06T03:05:01.122715+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint e1bdcad19f48014b80bb0b1e7a33cd8d2b689ecddc1533504cbc4fc55e31a97d
+  source: KOMODO_877_LUEDEMANN_medium_LUEDEMANN_1968.yaml, luedemann_medium_luedemann_1968.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/luedemann_medium_luedemann_1968.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002035
+  name: luedemann_medium_luedemann_1968
+  notes: KOMODO record states DSMZ Medium 877 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 categories:
 - bacterial
 merged_from:

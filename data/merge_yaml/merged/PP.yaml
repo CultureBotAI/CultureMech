@@ -1,86 +1,89 @@
-id: CultureMech:000392
+id: CultureMech:000115
 name: pp
-original_name: PP
-category: bacterial
+category: algae
 medium_type: COMPLEX
-physical_state: SOLID_AGAR
-media_term:
-  preferred_term: CCAP Medium C79
-  term:
-    id: mediadive.medium:C79
-    label: PP
-notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_PP.pdf'
-ingredients:
-- preferred_term: Proteose peptone
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: K2HPO4
-  term:
-    id: CHEBI:131527
-    label: K2HPO4
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: KNO3
-  term:
-    id: CHEBI:63043
-    label: KNO3
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000170
-    label: KNO3
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: "The stock solutions are those for SES. Make up to 1 litre with distilled\
-    \ water. For agar add 15g\r\nper litre Bacterial Agar. Autoclave at 15 psi for\
-    \ 15 minutes."
+composition_type: UNDEFINED
+physical_state: LIQUID
+description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater
+  algae cultivation. Recipe available in PDF format.
+notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_PP.pdf
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
 applications:
-- Microbial cultivation
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
 curation_history:
-- timestamp: '2026-01-26T17:53:19.744638Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: CCAP, ID: C79'
-- timestamp: '2026-03-13T06:18:54.917102Z'
+- curator: ccap-import
+  action: Imported from CCAP Culture Collection
+  notes: 'Source ID: PP, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_PP.pdf'
+  timestamp: '2026-01-28T00:00:00+00:00'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-02-03T11:26:43.588714'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:18:53.201766Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000392'
-- timestamp: '2026-03-17T06:30:15.000000Z'
-  curator: mediaingredientmech-enrichment-v1.0
-  action: Added MediaIngredientMech links
-  notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:05.927530+00:00'
+  notes: 'Assigned stable identifier: CultureMech:000115'
+- timestamp: '2026-03-17T19:45:04.153261+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "PP" to "pp" for consistent matching
-merge_fingerprint: d2302259b7d7ee12e0a10d062ca9f21178602b654f559cafbb858f648571a968
+- timestamp: '2026-04-04T12:54:55.264540'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 2 curated ingredients from CCAP
+  source: CCAP Medium MR_PP.pdf
+- timestamp: '2026-05-16T08:57:02.666476+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(3 entries)
+- timestamp: '2026-05-16T09:02:56.879185+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
+    category->lowercase=1
+- timestamp: '2026-08-06T03:04:20.239627+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 527adf83e0e37b7943314bb44fe8ccbf65c227d9ffb385ed3abc5bbae3afe26e
+  source: pp.yaml
+references:
+- reference: CCAP:PP
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_PP.pdf
+ingredients:
+- preferred_term: Proteose peptone
+  term:
+    id: MICRO:0000180
+    label: Proteose peptone
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 0.9
+    curation_date: '2026-04-04T12:54:55.264525'
+    ontology_source: FOODON
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: CCAP Medium MR_PP.pdf
+  notes: From CCAP Medium MR_PP.pdf; Curated from CCAP Medium MR_PP.pdf specification
+- preferred_term: Make up to 1 litre with deionised water. For agar, add
+  notes: Ontology mapping not yet available; From CCAP Medium MR_PP.pdf; Curated from
+    CCAP Medium MR_PP.pdf specification
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  source: CCAP Medium MR_PP.pdf
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- curation_method:automated_expert_mapping
+original_name: PP
+merge_fingerprint: 527adf83e0e37b7943314bb44fe8ccbf65c227d9ffb385ed3abc5bbae3afe26e
 merged_from:
 - pp

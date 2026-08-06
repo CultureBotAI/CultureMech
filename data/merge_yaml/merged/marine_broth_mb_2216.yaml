@@ -3,6 +3,7 @@ name: marine_broth_mb_2216
 original_name: Marine Broth  (MB) 2216
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Marine Broth  (MB) 2216  (Difco)
@@ -32,6 +33,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Marine Broth  (MB) 2216" to "marine_broth_mb_2216"
     for consistent matching
+- timestamp: '2026-08-06T03:05:42.001738+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 8684e625237c202424b9cf168bbc4c17061d88b3cdfdcc06fd750c343dc61a2e
+  source: marine_broth_mb_2216.yaml
 merge_fingerprint: 8684e625237c202424b9cf168bbc4c17061d88b3cdfdcc06fd750c343dc61a2e
 merged_from:
 - marine_broth_mb_2216

@@ -1,64 +1,116 @@
-id: CultureMech:000415
+id: CultureMech:000038
 name: 2asw
-original_name: 2ASW
-category: bacterial
+category: algae
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_range: 7.6-7.8
-media_term:
-  preferred_term: CCAP Medium C9
-  term:
-    id: mediadive.medium:C9
-    label: 2ASW
-notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_2ASW.pdf'
+description: Algae culture medium from CCAP Culture Collection. Suitable for saltwater
+  algae cultivation. Recipe available in PDF format.
+notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_2ASW.pdf
+salinity: marine (natural seawater or artificial seawater)
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
+applications:
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
+curation_history:
+- curator: ccap-import
+  timestamp: '2026-01-28'
+  action: Imported from CCAP Culture Collection
+  notes: 'Source ID: 2ASW, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_2ASW.pdf'
+- curator: schema-defaulter-v1.0
+  timestamp: '2026-02-03T11:23:39.554565'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-02-03T11:26:43.440568'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:18:52.992431Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000038'
+- timestamp: '2026-03-17T19:45:03.950098+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "2ASW" to "2asw" for consistent matching
+- timestamp: '2026-04-04T12:54:55.050840'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  notes: Replaced placeholder with 13 curated ingredients from CCAP Medium MR_2ASW.pdf.
+- timestamp: '2026-05-09T13:35:00-07:00'
+  curator: culturemech-agentic-curation
+  action: ADDED_GROWTH_EVIDENCE
+  notes: Added strain-specific 2ASW growth evidence from CCAP and NCBI records, plus
+    F/2ASW variant evidence from peer-reviewed diatom culture studies.
+- timestamp: '2026-06-10T07:37:33.980020+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T00:58:02.481264+00:00'
+  curator: curate_organism_culture_type.py
+  action: SET_ORGANISM_CULTURE_TYPE
+  notes: 'Inferred isolate: 4 specific strain(s) named, no community signal (#142)'
+  changes: Set organism_culture_type=isolate (was unset)
+- timestamp: '2026-08-06T03:04:19.233421+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 384eabdfd2a58389ab491ad528f1194c6f71dd82691046e104b217d83a936027
+  source: 2asw.yaml
+references:
+- reference: CCAP:2ASW
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_2ASW.pdf
+- reference: https://www.ccap.ac.uk/catalogue/strain-19-18
+  title: Dunaliella salina
+  authors: Culture Collection of Algae and Protozoa
+  year: 2026
+  notes: CCAP strain page reports Medium 2ASW, axenic serial subculture, and 20-35
+    deg C maintenance for Dunaliella salina CCAP 19/18.
+- reference: NCBI:PRJNA32771
+  notes: NCBI BioProject lists Taxonomy ID 3046, BioSample SAMN02746051, WGS NSFN00000000,
+    and assembly GCA_002284615.2 for this strain.
+- reference: DOI:10.1104/pp.18.00453
+  title: Plasma-membrane-type aquaporins from marine diatoms function as CO2/NH3 channels
+    and provide photoprotection
+  authors: Matsui, H.; Hopkinson, B.; Nakajima, K.; Matsuda, Y.
+  year: 2018
+  notes: Source explicitly reports Phaeodactylum tricornutum UTEX 642 and Thalassiosira
+    pseudonana CCMP1335 cultivation in F/2ASW.
+- reference: DOI:10.1007/s10126-021-10037-4
+  title: Characterization of a CO2-Concentrating Mechanism with Low Sodium Dependency
+    in the Centric Diatom Chaetoceros gracilis
+  authors: Tsuji, Y.; Kusi-Appiah, G.; Kozai, N.; Fukuda, Y.; Yamano, T.; Fukuzawa,
+    H.
+  year: 2021
+  notes: Source reports Chaetoceros gracilis UTEX LB2658 growth experiments in a modified
+    F/2ASW formulation with sodium manipulation.
 ingredients:
-- preferred_term: Tricine
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
+- preferred_term: NaNO
   term:
-    id: CHEBI:46760
-    label: ''
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
+    id: CHEBI:34545
+    label: NaNO
   concentration:
-    value: '35'
+    value: '15.00'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: NaNO3
-  term:
-    id: CHEBI:63005
-    label: NaNO3
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000171
-    label: NaNO3
+  notes: From CCAP Medium MR_2ASW.pdf; Curated from CCAP Medium MR_2ASW.pdf specification
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
     label: Na2HPO4
   concentration:
-    value: '1.2'
+    value: '0.60'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
-    label: Na2HPO4
+  notes: From CCAP Medium MR_2ASW.pdf; Curated from CCAP Medium MR_2ASW.pdf specification
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
     label: K2HPO4
   concentration:
-    value: '1'
+    value: '0.50'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  notes: From CCAP Medium MR_2ASW.pdf; Curated from CCAP Medium MR_2ASW.pdf specification
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -66,9 +118,7 @@ ingredients:
   concentration:
     value: '0.0002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
-    label: Biotin
+  notes: From CCAP Medium MR_2ASW.pdf; Curated from CCAP Medium MR_2ASW.pdf specification
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -76,16 +126,15 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
-    label: Calcium pantothenate
-- preferred_term: Cyanocobalamine
+  notes: From CCAP Medium MR_2ASW.pdf; Curated from CCAP Medium MR_2ASW.pdf specification
+- preferred_term: Cyanocobalamin
+  term:
+    id: CHEBI:17439
+    label: Cyanocobalamin
   concentration:
     value: '0.004'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001039
-    label: Cyanocobalamine
+  notes: From CCAP Medium MR_2ASW.pdf; Curated from CCAP Medium MR_2ASW.pdf specification
 - preferred_term: Folic acid
   term:
     id: CHEBI:27470
@@ -93,19 +142,15 @@ ingredients:
   concentration:
     value: '0.0004'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
-    label: Folic acid
+  notes: From CCAP Medium MR_2ASW.pdf; Curated from CCAP Medium MR_2ASW.pdf specification
 - preferred_term: Inositol
   term:
-    id: CHEBI:24848
+    id: CHEBI:17268
     label: Inositol
   concentration:
-    value: '1'
+    value: '1.0'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000421
-    label: Inositol
+  notes: From CCAP Medium MR_2ASW.pdf; Curated from CCAP Medium MR_2ASW.pdf specification
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
@@ -113,9 +158,7 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
-    label: Nicotinic acid
+  notes: From CCAP Medium MR_2ASW.pdf; Curated from CCAP Medium MR_2ASW.pdf specification
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -123,9 +166,7 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
-    label: Thiamine HCl
+  notes: From CCAP Medium MR_2ASW.pdf; Curated from CCAP Medium MR_2ASW.pdf specification
 - preferred_term: Thymine
   term:
     id: CHEBI:17821
@@ -133,70 +174,141 @@ ingredients:
   concentration:
     value: '0.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000503
-    label: Thymine
-- preferred_term: Soil
+  notes: From CCAP Medium MR_2ASW.pdf; Curated from CCAP Medium MR_2ASW.pdf specification
+- preferred_term: Tricine
+  term:
+    id: CHEBI:46760
+    label: Tricine
   concentration:
-    value: variable
-    unit: VARIABLE
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: "Make up to 1 Litre Filtered natural seawater. Adjust pH to 7.6 – 7.8\
-    \ with 1M NaOH or 1M\r\nHCl, prior to autoclaving. Autoclave at 15 psi for 15\
-    \ minutes"
-- step_number: 2
-  action: MIX
-  description: "Alternatively, use: Distilled water to 1 Litre and “Ultramarine Synthetica”\
-    \ sea salts\r\n33.60g"
-- step_number: 3
-  action: MIX
-  description: "Site selection for a good soil is very important and for most purposes\
-    \ a soil from undisturbed\r\ndeciduous woodland is best. Sites to avoid are those\
-    \ showing obvious signs of man's activity\r\nand particular care should be taken\
-    \ to avoid areas where fertilizers, crop sprays or other toxic\r\nchemicals may\
-    \ have been used."
-- step_number: 4
-  action: HEAT
-  description: "A rich loam with good crumb structure should be sought. Stones, roots\
-    \ and larger\r\ninvertebrates should be removed during an initial sieving through\
-    \ a 1 cm mesh. The sieved\r\nsoil should be spread to air dry and handpicked for\
-    \ smaller invertebrates and roots. It should\r\nbe turned periodically and picked\
-    \ over again. When dry sieve through a finer mesh (2-4 mm)\r\nand store in an\
-    \ airtight container away from light and heat."
-- step_number: 5
-  action: AUTOCLAVE
-  description: "Soil is prepared as above. Air-dried soil and twice its volume of\
-    \ supernatant distilled water\r\nare autoclaved together at 15 psi for 2 hours\
-    \ and left to cool. The supernatant is then\r\ndecanted and then distributed to\
-    \ containers in volumes suitable for making up batches of\r\nmedia. The aliquots\
-    \ and their containers are autoclaved for an appropriate length of time\r\n(e.g.\
-    \ 1 litre or less for 15 minutes) and are then kept in a cool place (e.g. a refrigerator)\
-    \ until\r\nrequired."
-applications:
-- Microbial cultivation
-curation_history:
-- timestamp: '2026-01-26T17:53:19.494694Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: CCAP, ID: C9'
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:17.269517'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Soil'
-- timestamp: '2026-03-13T06:18:55.047418Z'
-  curator: culturemech-id-assigner-v1.0
-  action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000415'
-- timestamp: '2026-03-17T06:30:37.000000Z'
-  curator: mediaingredientmech-enrichment-v1.0
-  action: Added MediaIngredientMech links
-  notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:06.065458+00:00'
-  curator: normalize_media_names_to_snake_case.py
-  action: NAME_NORMALIZED
-  notes: Normalized name from "2ASW" to "2asw" for consistent matching
-merge_fingerprint: 6ca896b0c36cdc7134152ca3d09bf4fd6422d8a18d9f38ffd022e8c963a153e6
+    value: '0.50'
+    unit: G_PER_L
+  notes: From CCAP Medium MR_2ASW.pdf; Curated from CCAP Medium MR_2ASW.pdf specification
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '35.00'
+    unit: G_PER_L
+  notes: From CCAP Medium MR_2ASW.pdf; Curated from CCAP Medium MR_2ASW.pdf specification
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- curation_method:automated_expert_mapping
+original_name: 2ASW
+variants:
+- name: f_2asw
+  description: Artificial seawater supplemented with half-strength Guillard f nutrients
+    for marine diatom culture.
+  modifications:
+  - Supplement the artificial seawater base with half-strength Guillard f solution.
+  - Use liquid or agar-solidified F/2ASW depending on maintenance, transformation,
+    or selection protocol.
+  - Reported diatom conditions include 20 deg C, continuous illumination at 30-75
+    umol photons m-2 s-1, and aeration with ambient air or CO2-enriched air.
+  purpose: Capture F/2 nutrient-supplemented artificial seawater as a recognizable
+    variant of the 2ASW parent formulation.
+  evidence:
+  - reference: DOI:10.1104/pp.18.00453
+    supports: SUPPORT
+    explanation: Matsui et al. explicitly define F/2ASW as artificial seawater plus
+      half-strength Guillard f solution for Phaeodactylum tricornutum UTEX 642 and
+      Thalassiosira pseudonana CCMP1335 cultivation.
+- name: modified_f_2asw_sodium_response
+  description: Modified F/2 artificial seawater used to assay sodium and CO2 dependence
+    in Chaetoceros gracilis UTEX LB2658.
+  modifications:
+  - Supplement F/2ASW with 10 nM sodium selenite and 0.1 mM sodium metasilicate.
+  - Manipulate sodium by changing NaCl added to the basal artificial seawater.
+  - Preacclimate cells to sodium concentrations before low-sodium transfer.
+  purpose: Model experimental sodium-response medium variants without creating a duplicate
+    artificial seawater parent record.
+  evidence:
+  - reference: DOI:10.1007/s10126-021-10037-4
+    supports: SUPPORT
+    explanation: Tsuji et al. report Chaetoceros gracilis UTEX LB2658 growth and carbon-concentrating-mechanism
+      experiments in modified F/2ASW with defined sodium manipulations.
+organism_culture_type: isolate
+target_organisms:
+- preferred_term: Dunaliella salina
+  term:
+    id: NCBITaxon:3046
+    label: Dunaliella salina
+  strain: CCAP 19/18
+  growth_metrics:
+  - measurement_conditions: CCAP strain maintenance in 2ASW; axenic serial subculture
+      at 20-35 deg C.
+    evidence:
+    - reference: https://www.ccap.ac.uk/catalogue/strain-19-18
+      supports: SUPPORT
+      explanation: CCAP directly links Dunaliella salina CCAP 19/18 to 2ASW maintenance
+        culture conditions.
+  evidence:
+  - reference: https://www.ccap.ac.uk/catalogue/strain-19-18
+    supports: SUPPORT
+    explanation: The CCAP culture collection strain page explicitly lists 2ASW as
+      the maintenance medium for Dunaliella salina CCAP 19/18.
+  - reference: NCBI:PRJNA32771
+    supports: SUPPORT
+    explanation: NCBI BioProject PRJNA32771 links the same strain to Taxonomy ID 3046,
+      assembly GCA_002284615.2, WGS NSFN00000000, and BioSample SAMN02746051.
+- preferred_term: Phaeodactylum tricornutum
+  term:
+    id: NCBITaxon:556484
+    label: Phaeodactylum tricornutum CCAP 1055/1
+  strain: UTEX 642
+  growth_metrics:
+  - measurement_conditions: F/2ASW variant at 20 deg C, continuous illumination of
+      30-75 umol photons m-2 s-1, and aeration with 1% CO2 or ambient air; reported
+      mid-log harvest OD730 0.2-0.3.
+    evidence:
+    - reference: DOI:10.1104/pp.18.00453
+      supports: SUPPORT
+      explanation: Matsui et al. explicitly name Phaeodactylum tricornutum UTEX 642
+        and F/2ASW culture conditions.
+  evidence:
+  - reference: DOI:10.1104/pp.18.00453
+    supports: PARTIAL
+    explanation: The source supports growth on the F/2ASW variant. The NCBI reference
+      genome identifiers available for Phaeodactylum tricornutum are tied to CCAP
+      1055/1, a closely related collection designation, so the UTEX-to-genome mapping
+      should be treated cautiously.
+- preferred_term: Thalassiosira pseudonana
+  term:
+    id: NCBITaxon:296543
+    label: Thalassiosira pseudonana CCMP1335
+  strain: CCMP1335
+  growth_metrics:
+  - measurement_conditions: F/2ASW variant at 20 deg C, continuous illumination of
+      30-75 umol photons m-2 s-1, and aeration with 1% CO2 or ambient air; reported
+      mid-log harvest OD730 0.1-0.15.
+    evidence:
+    - reference: DOI:10.1104/pp.18.00453
+      supports: SUPPORT
+      explanation: Matsui et al. explicitly name Thalassiosira pseudonana CCMP1335
+        and F/2ASW culture conditions.
+  evidence:
+  - reference: DOI:10.1104/pp.18.00453
+    supports: SUPPORT
+    explanation: The source supports growth on the F/2ASW variant for the same strain
+      represented by NCBI Taxonomy ID 296543, assembly GCF_000149405.2, WGS AAFD00000000,
+      and BioSample SAMN02744045.
+- preferred_term: Chaetoceros gracilis
+  strain: UTEX LB2658
+  growth_metrics:
+  - measurement_conditions: Modified F/2ASW sodium-response variant supplemented with
+      sodium selenite and sodium metasilicate; sodium concentration adjusted by NaCl
+      addition and CO2 availability varied.
+    evidence:
+    - reference: DOI:10.1007/s10126-021-10037-4
+      supports: SUPPORT
+      explanation: Tsuji et al. report Chaetoceros gracilis growth dependency on sodium
+        and CO2 using a modified F/2ASW formulation.
+  evidence:
+  - reference: DOI:10.1007/s10126-021-10037-4
+    supports: SUPPORT
+    explanation: The study identifies the UTEX LB2658 strain and uses modified F/2ASW
+      to test growth under sodium and CO2 conditions.
+merge_fingerprint: 384eabdfd2a58389ab491ad528f1194c6f71dd82691046e104b217d83a936027
 merged_from:
 - 2asw

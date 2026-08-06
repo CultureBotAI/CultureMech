@@ -1,39 +1,31 @@
-id: CultureMech:009856
+id: CultureMech:002815
 name: bhi_2_medium
-original_name: BHI/2 Medium
+original_name: BHI/2 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J467
+  term:
+    id: mediadive.medium:J467
+    label: BHI/2 MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=467
+
+
+  Commercial Product: Brain Heart Infusion
+
+  Supplier: Difco/BD
+
+  Catalog: 237500
+
+  Source: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: Glucose
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
-- preferred_term: Yeast extract (BD-Difco)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
 - preferred_term: Calf brains
   term:
     id: UBERON:0000955
@@ -134,54 +126,58 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M468
+- preferred_term: Glucose
   term:
-    id: TOGO:M468
-    label: BHI/2 Medium
-notes: 'Source: https://togomedium.org/medium/M468
-
-  Original source: JCM - JCM_M467
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=467
-
-
-  Commercial Product: Brain Heart Infusion
-
-  Supplier: Difco/BD
-
-  Catalog: 237500
-
-  Source: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-
-  Accessed: 2026-03-28
-
-
-  Constituent composition researched from product specification.'
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: Glucose
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.114519Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M468'
-- timestamp: '2026-01-28T19:48:12.617695Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:20:09.420591Z'
+- timestamp: '2026-01-26T17:53:16.686112Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J467'
+- timestamp: '2026-03-13T06:19:15.888570Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:009856'
-- timestamp: '2026-03-17T06:29:52.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:002815'
+- timestamp: '2026-03-17T06:30:48.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:28.390669+00:00'
+- timestamp: '2026-03-17T19:45:29.345896+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BHI/2 Medium" to "bhi_2_medium" for consistent matching
-merge_fingerprint: b533146759d1c1783b3d46bc31299425940179ca6ba69a20c47c45f383f3a964
+  notes: Normalized name from "BHI/2 MEDIUM" to "bhi_2_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:17.315597+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:36.362392+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: JCM_J467_BHI_2_MEDIUM, KOMODO_217_BHI_2_medium, bhi_2_medium'
+- timestamp: '2026-08-06T03:04:36.362440+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 9ff91edcbada32fcc2b78691a8154170782f204c48157ecb0544cb737a7a5423
+  source: JCM_J467_BHI_2_MEDIUM.yaml, KOMODO_217_BHI_2_medium.yaml, bhi_2_medium.yaml
+categories:
+- bacterial
 merged_from:
-- TOGO_M468_BHI_2_Medium
+- JCM_J467_BHI_2_MEDIUM
+- KOMODO_217_BHI_2_medium
+- bhi_2_medium
+merge_fingerprint: 9ff91edcbada32fcc2b78691a8154170782f204c48157ecb0544cb737a7a5423

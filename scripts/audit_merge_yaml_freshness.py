@@ -47,8 +47,9 @@ import yaml
 
 REPO = Path(__file__).resolve().parent.parent
 NORMALIZED_DIR = REPO / "data" / "normalized_yaml"
-# The merge-recipes recipe writes here by default; this is the tracked corpus a
-# fresh run must reproduce. merged_2026/ is a separate, older generation (#215).
+# The merge-recipes recipe writes here, this is the tracked corpus a fresh run
+# must reproduce, and it is the source the pages site renders from. The orphan
+# merged_2026/ generation was retired in the consolidation (#215/#219).
 TRACKED_MERGED_DIR = REPO / "data" / "merge_yaml" / "merged"
 
 # Placeholder that replaces every curation-event timestamp before comparison.
@@ -157,11 +158,9 @@ def regenerate(dest: Path) -> None:
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    # Defaults to merged/, which merge-recipes writes. merged_2026/ is a separate,
-    # more-drifted generation that gen-media-pages actually renders; it is NOT a
-    # valid target here because a fresh run uses this tool's default fingerprinting,
-    # which may not match how merged_2026/ was produced (see the HierarchyAware
-    # fingerprinter). Reconciling the two corpora is the policy half of #215.
+    # Defaults to merged/, the single canonical corpus that merge-recipes writes and
+    # the pages site renders from. The divergent merged_2026/ generation was retired
+    # in the consolidation (#215/#219), so there is no longer a second target here.
     ap.add_argument("--tracked-dir", type=Path, default=TRACKED_MERGED_DIR,
                     help="The tracked merged corpus a fresh run must reproduce.")
     ap.add_argument("--json", action="store_true",

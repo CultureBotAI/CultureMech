@@ -3,6 +3,7 @@ name: yeast_mineral_medium_25_g_l_glucose
 original_name: '''Yeast Mineral Medium (25 g/L Glucose'
 category: fungal
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: myo-Inositol
@@ -13,9 +14,9 @@ ingredients:
     value: '0.1388'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:inost'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000500
-    label: myo-Inositol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17268
+    label: Myo-inositol
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -24,8 +25,8 @@ ingredients:
     value: '0.0002047'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: 4-Aminobenzoate
   term:
@@ -35,14 +36,17 @@ ingredients:
     value: '0.1458'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4abz'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001121
-    label: 4-Aminobenzoate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17836
+    label: 4-aminobenzoate
 - preferred_term: Nicotinate
   concentration:
     value: '0.008123'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:nac'
+  term:
+    id: CHEBI:15940
+    label: ''
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -50,8 +54,8 @@ ingredients:
   concentration:
     value: '55.51'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: EDTA
   term:
@@ -60,13 +64,16 @@ ingredients:
   concentration:
     value: '0.05133'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000165
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64755
     label: EDTA
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.01079'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -74,8 +81,8 @@ ingredients:
   concentration:
     value: '2.029'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Thiamine HCl
   term:
@@ -84,13 +91,16 @@ ingredients:
   concentration:
     value: '0.002965'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '22.04'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -98,8 +108,8 @@ ingredients:
   concentration:
     value: '0.002099'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium pantothenate
 - preferred_term: Potassium iodide
   term:
@@ -108,22 +118,25 @@ ingredients:
   concentration:
     value: '0.0006024'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000505
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8346
     label: Potassium iodide
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.03061'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Pyridoxine HCl
   concentration:
     value: '0.004863'
     unit: MILLIMOLAR
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000703
+    id: CHEBI:30961
+    label: Pyridoxine HCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
     label: Pyridoxine HCl
 - preferred_term: Boric acid
   term:
@@ -132,8 +145,8 @@ ingredients:
   concentration:
     value: '0.01617'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Cobalt chloride
   concentration:
@@ -149,9 +162,9 @@ ingredients:
   concentration:
     value: '37.84'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -159,17 +172,23 @@ ingredients:
   concentration:
     value: '0.01565'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.001201'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Manganese chloride
   concentration:
     value: '0.005053'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.001653'
@@ -215,10 +234,27 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'Yeast Mineral Medium (25 g/L Glucose" to "yeast_mineral_medium_25_g_l_glucose"
     for consistent matching
-- timestamp: '2026-04-17T06:30:28.846868+00:00'
+- timestamp: '2026-06-05T07:41:57.295623+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 13 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:52.074931+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:06:04.279524+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: yeast_mineral_medium_10_g_l_glucose, yeast_mineral_medium_25_g_l_glucose'
+- timestamp: '2026-08-06T03:06:04.279567+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint ded7a09f9cd58d30c95ac2a4d750488e5b561c73a7d47cd2ed379b55c7e9c33d
+  source: yeast_mineral_medium_10_g_l_glucose.yaml, yeast_mineral_medium_25_g_l_glucose.yaml
 media_term:
   preferred_term: MediaDB Medium 399
   term:
@@ -240,4 +276,4 @@ categories:
 merged_from:
 - yeast_mineral_medium_10_g_l_glucose
 - yeast_mineral_medium_25_g_l_glucose
-merge_fingerprint: d6bb56a181831f96bbf16ee14d92540ba2a76e202e8922ce2ea3b93ed0c458db
+merge_fingerprint: ded7a09f9cd58d30c95ac2a4d750488e5b561c73a7d47cd2ed379b55c7e9c33d

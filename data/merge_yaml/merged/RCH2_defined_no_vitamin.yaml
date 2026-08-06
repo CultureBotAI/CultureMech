@@ -1,6 +1,7 @@
 id: CultureMech:015714
 name: RCH2 defined no vitamin
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Ammonium chloride
@@ -170,7 +171,7 @@ ingredients:
 description: Defined minimal media for soil and groundwater bacteria with lactate
   and no vitamin mix
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: RCH2 defined no vitamin
@@ -184,8 +185,17 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015714'
+- timestamp: '2026-05-16T09:04:43.008767+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:07.913071+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 5e63e13cf18ae50b75c8d5f917171a0593ae51c1fcfa521ece3b796a1891093d
+  source: rch2_defined_no_vitamin.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: c0f570185178d71fc239eccc5ddc7dbc9fe033b0b6356fa0c21898c03ed2e98d
+merge_fingerprint: 5e63e13cf18ae50b75c8d5f917171a0593ae51c1fcfa521ece3b796a1891093d
 merged_from:
 - rch2_defined_no_vitamin

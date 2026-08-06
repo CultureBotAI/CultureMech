@@ -1,21 +1,22 @@
-id: CultureMech:009700
+id: CultureMech:009701
 name: mnyp_medium
 original_name: MNYP medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
     value: '3.0'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component [Merged 3 duplicates: 1.0, 1.0, 1.0]'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component [Merged 3 duplicates: 1.0, 1.0, 1.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Sodium acetate
   concentration:
@@ -25,9 +26,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
-    label: Sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: Mannitol
   concentration:
     value: '10'
@@ -37,14 +38,9 @@ ingredients:
   term:
     id: CHEBI:29864
     label: mannitol
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001010
-    label: Mannitol
-- preferred_term: Ager
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29864
+    label: mannitol
 - preferred_term: Bacto Yeast Extract (Difco)
   concentration:
     value: '10'
@@ -59,9 +55,9 @@ ingredients:
   term:
     id: CHEBI:53426
     label: polysorbate 80
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000190
-    label: Tween 80
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53426
+    label: polysorbate 80
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '40'
@@ -69,11 +65,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
   term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4·7H2O
 - preferred_term: NaCl
   concentration:
     value: '2'
@@ -83,9 +79,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: FeSO4·7H2O
   concentration:
     value: '2'
@@ -113,59 +109,80 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000150
-    label: HCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
+    label: hydrogen chloride
 media_term:
-  preferred_term: TOGO Medium M3286
+  preferred_term: TOGO Medium M3287
   term:
-    id: TOGO:M3286
+    id: TOGO:M3287
     label: MNYP medium
-notes: 'Source: https://togomedium.org/medium/M3286
+notes: 'Source: https://togomedium.org/medium/M3287
 
-  Original source: NBRC - NBRC_M1647-1
+  Original source: NBRC - NBRC_M1647-2
 
   Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1647'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:59.260506Z'
+- timestamp: '2026-01-27T06:35:59.262445Z'
   curator: togo-import
   action: Imported from TOGO Medium
-  notes: 'Source: NBRC, ID: M3286'
-- timestamp: '2026-01-28T19:48:39.963101Z'
+  notes: 'Source: NBRC, ID: M3287'
+- timestamp: '2026-01-28T19:48:30.585392Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:58.150625'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: HCl'
-- timestamp: '2026-03-09T08:05:07.289485+00:00'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-03-09T08:04:50.868650+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 3 solution(s) from ingredients
-- timestamp: '2026-03-13T03:09:39.010385Z'
+- timestamp: '2026-03-13T03:09:22.168228Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
-- timestamp: '2026-03-13T06:20:08.237268Z'
+- timestamp: '2026-03-13T06:20:08.246070Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:009700'
+  notes: 'Assigned stable identifier: CultureMech:009701'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:00.247430'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name; Added default solution
     name
-- timestamp: '2026-03-17T06:30:50.000000Z'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:30:30.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:27.224631+00:00'
+- timestamp: '2026-03-17T19:46:27.233302+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "MNYP medium" to "mnyp_medium" for consistent matching
+- timestamp: '2026-05-16T09:03:17.165639+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:40.460303+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:29.768692+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-08-06T03:05:15.087104+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 13ccabc8c7a2fad4af7ef17cce684c05735036fed8b6284d2db05b9afda549d7
+  source: TOGO_M3287_MNYP_medium.yaml
 solutions:
 - preferred_term: Hipolypepton*
   composition: []
@@ -189,6 +206,6 @@ solutions:
     unit: G_PER_L
   notes: See mediadive_4429_Salts_solution.yaml for composition
   name: Unknown solution
-merge_fingerprint: 8616ecdd8a34d3eb5958730ddadabae7871aa8bd21741baa6f5fe045a66ec8f3
+merge_fingerprint: 13ccabc8c7a2fad4af7ef17cce684c05735036fed8b6284d2db05b9afda549d7
 merged_from:
-- mnyp_medium
+- TOGO_M3287_MNYP_medium

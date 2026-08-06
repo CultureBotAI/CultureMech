@@ -1,6 +1,7 @@
 id: CultureMech:015609
 name: MoLS4 no ammonium
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: MoLS4
@@ -18,7 +19,7 @@ ingredients:
     53.49'
 description: Lactate-sulfate media for sulfate-reducing bacteria with no ammonia
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: MoLS4 no ammonium
@@ -32,6 +33,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015609'
+- timestamp: '2026-05-16T09:04:41.831605+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:06.646923+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 9ff9ba59355e9ee95e5a70d4bd2022aa0778d3c9b586d28c8bc267f2eee19bca
+  source: mols4_no_ammonium.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 kg_microbe_match: mediadive.medium:J780

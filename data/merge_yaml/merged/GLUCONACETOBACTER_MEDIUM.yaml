@@ -3,6 +3,7 @@ name: gluconacetobacter_medium
 original_name: GLUCONACETOBACTER MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 1430
@@ -26,8 +27,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Acetic acid
   term:
@@ -36,8 +37,8 @@ ingredients:
   concentration:
     value: '40'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000342
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15366
     label: Acetic acid
 - preferred_term: Ethanol
   term:
@@ -46,8 +47,8 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000686
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16236
     label: Ethanol
 - preferred_term: Agar
   term:
@@ -56,8 +57,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -85,10 +86,33 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "GLUCONACETOBACTER MEDIUM" to "gluconacetobacter_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:13.521464+00:00'
+- timestamp: '2026-06-05T07:41:06.376078+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:37.468330+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: JCM_J890_ACETOBACTER_EUROPAEUS_MEDIUM, gluconacetobacter_medium'
+- timestamp: '2026-08-06T03:04:37.468372+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint d2ffb88157313cd2611b568184ff5d2933043a3029aa16d8e78c5c03233183cc
+  source: JCM_J890_ACETOBACTER_EUROPAEUS_MEDIUM.yaml, gluconacetobacter_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/JCM_J890_ACETOBACTER_EUROPAEUS_MEDIUM.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:003239
+  name: acetobacter_europaeus_medium
+  notes: Reviewed Gluconacetobacter medium as a concentration variant of Acetobacter
+    europaeus medium with yeast extract, peptone, acetic acid, and agar differences.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Reviewed Acetobacter/Gluconacetobacter pair; child keeps glucose and ethanol unchanged,
+  raises yeast extract and peptone, lowers acetic acid, and lowers agar from 20 to
+  15 g/L.
 synonyms:
 - name: acetobacter_europaeus_medium
   source: MediaDive

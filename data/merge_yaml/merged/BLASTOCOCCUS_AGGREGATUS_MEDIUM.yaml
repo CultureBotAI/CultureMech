@@ -3,6 +3,7 @@ name: blastococcus_aggregatus_medium
 original_name: BLASTOCOCCUS AGGREGATUS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:
@@ -16,7 +17,7 @@ ingredients:
 - preferred_term: KNO3
   term:
     id: CHEBI:63043
-    label: KNO3
+    label: potassium nitrate
   concentration:
     value: '0.5'
     unit: G_PER_L
@@ -31,6 +32,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: CHEBI:9754
+    label: ''
 - preferred_term: Tryptone
   concentration:
     value: '2'
@@ -46,12 +50,12 @@ ingredients:
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '2.85'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -60,8 +64,8 @@ ingredients:
   concentration:
     value: '1.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: FeSO4
   term:
@@ -70,8 +74,8 @@ ingredients:
   concentration:
     value: '1.36'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001045
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75832
     label: FeSO4
 - preferred_term: Na-tartrate
   term:
@@ -80,8 +84,8 @@ ingredients:
   concentration:
     value: '1.77'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000449
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63017
     label: Na-tartrate
 - preferred_term: CuCl2 x 2 H2O
   term:
@@ -90,8 +94,8 @@ ingredients:
   concentration:
     value: '0.0269'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
     label: CuCl2 x 2 H2O
 - preferred_term: ZnCl2
   term:
@@ -100,8 +104,8 @@ ingredients:
   concentration:
     value: '0.0208'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
     label: ZnCl2
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -110,8 +114,8 @@ ingredients:
   concentration:
     value: '0.0404'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -120,8 +124,8 @@ ingredients:
   concentration:
     value: '0.0252'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 applications:
 - Microbial cultivation
@@ -152,13 +156,43 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "BLASTOCOCCUS AGGREGATUS MEDIUM" to "blastococcus_aggregatus_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:29.408693+00:00'
+- timestamp: '2026-06-05T07:40:24.795505+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:37:34.283741+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:46:45.336671+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:55.902795+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_596_BLASTOCOCCUS_AGGREGATUS_MEDIUM, blastococcus_aggregatus_medium'
+- timestamp: '2026-08-06T03:04:55.902832+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 860a829af02682b64b54287e92430d338cca43409cd70789576b1e077e5a4466
+  source: KOMODO_596_BLASTOCOCCUS_AGGREGATUS_MEDIUM.yaml, blastococcus_aggregatus_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/blastococcus_aggregatus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001723
+  name: blastococcus_aggregatus_medium
+  notes: KOMODO record states DSMZ Medium 596 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 categories:
 - bacterial
 merged_from:
 - KOMODO_596_BLASTOCOCCUS_AGGREGATUS_MEDIUM
 - blastococcus_aggregatus_medium
-merge_fingerprint: 08f9cd54a375d308b765bc22fca0672fcaae7fa53656dfd2b4cb441eac075b7b
+merge_fingerprint: 860a829af02682b64b54287e92430d338cca43409cd70789576b1e077e5a4466

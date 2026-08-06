@@ -3,6 +3,7 @@ name: ypd_liquid_medium
 original_name: YPD Liquid Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +32,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Peptone
   concentration:
     value: '20'
@@ -72,11 +73,23 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "YPD Liquid Medium" to "ypd_liquid_medium" for consistent
     matching
-- timestamp: '2026-04-17T06:29:10.643032+00:00'
+- timestamp: '2026-06-05T07:41:55.850266+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:33.963667+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: 25_glucose_yeast_extract_peptone, gyp_for_acetic_acid_bacteria_ph_6_0_glucose_30g,
     ypd_liquid_medium'
+- timestamp: '2026-08-06T03:04:33.963697+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 31418382bf38b6ba15499a5f56b0205e138fad573dacc23b92f9a36e85680017
+  source: 25_glucose_yeast_extract_peptone.yaml, gyp_for_acetic_acid_bacteria_ph_6_0_glucose_30g.yaml,
+    ypd_liquid_medium.yaml
 synonyms:
 - name: 25_glucose_yeast_extract_peptone
   source: TOGO

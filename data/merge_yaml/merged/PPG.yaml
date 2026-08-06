@@ -1,107 +1,144 @@
-id: CultureMech:000394
+id: CultureMech:000116
 name: ppg
-original_name: PPG
-category: bacterial
+category: algae
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-media_term:
-  preferred_term: CCAP Medium C80
-  term:
-    id: mediadive.medium:C80
-    label: PPG
-notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_PPG.pdf'
-ingredients:
-- preferred_term: Proteose peptone
-  concentration:
-    value: '15'
-    unit: G_PER_L
-- preferred_term: D-Glucose
-  term:
-    id: CHEBI:17634
-    label: D-Glucose
-  concentration:
-    value: '18'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
-    label: D-Glucose
-- preferred_term: NaClO3
-  concentration:
-    value: '24'
-    unit: G_PER_L
-  term:
-    id: CHEBI:65242
-    label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000497
-    label: NaClO3
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '0.8'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: CaCl2 x 6 H2O
-  term:
-    id: CHEBI:91243
-    label: CaCl2 x 6 H2O
-  concentration:
-    value: '1.2'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000327
-    label: CaCl2 x 6 H2O
-- preferred_term: Na2HPO4
-  term:
-    id: CHEBI:34683
-    label: Na2HPO4
-  concentration:
-    value: '28.4'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
-    label: Na2HPO4
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-  concentration:
-    value: '27.2'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Make up to 1 litre of deionized water. Autoclave at 15 psi for 15 minutes.
+description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater
+  algae cultivation. Recipe available in PDF format.
+notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_PPG.pdf
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
 applications:
-- Microbial cultivation
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
 curation_history:
-- timestamp: '2026-01-26T17:53:19.747304Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: CCAP, ID: C80'
-- timestamp: '2026-01-28T19:48:29.465879Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:18:54.925496Z'
+- curator: ccap-import
+  action: Imported from CCAP Culture Collection
+  notes: 'Source ID: PPG, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_PPG.pdf'
+  timestamp: '2026-01-28T00:00:00+00:00'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-02-03T11:26:43.590606'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:18:53.204415Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000394'
-- timestamp: '2026-03-17T06:30:28.000000Z'
-  curator: mediaingredientmech-enrichment-v1.0
-  action: Added MediaIngredientMech links
-  notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:05.936681+00:00'
+  notes: 'Assigned stable identifier: CultureMech:000116'
+- timestamp: '2026-03-17T19:45:04.155761+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "PPG" to "ppg" for consistent matching
-merge_fingerprint: 4be5cc9893f22b7c0924f826bf1d10f9474829c2ac3a23f6dc9cf06a066d51be
+- timestamp: '2026-04-04T12:54:54.837981'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 5 curated ingredients from CCAP
+  source: CCAP Medium MR_PPG.pdf
+- timestamp: '2026-05-16T08:57:02.672250+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(3 entries)
+- timestamp: '2026-05-16T09:02:56.885132+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
+    category->lowercase=1
+- timestamp: '2026-06-10T06:57:11.510050+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-08-06T03:04:20.247004+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint fb55aba9cea0cd8208976f48ecfb896aaafb192179817cafd3430fb1e5c4185e
+  source: ppg.yaml
+references:
+- reference: CCAP:PPG
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_PPG.pdf
+ingredients:
+- preferred_term: MgSO .7H O
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.837961'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.40'
+    unit: G_PER_L
+  source: CCAP Medium MR_PPG.pdf
+  notes: From CCAP Medium MR_PPG.pdf; Curated from CCAP Medium MR_PPG.pdf specification
+- preferred_term: CaCl .6H O
+  term:
+    id: CHEBI:3312
+    label: CaCl .6H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.837969'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.60'
+    unit: G_PER_L
+  source: CCAP Medium MR_PPG.pdf
+  notes: From CCAP Medium MR_PPG.pdf; Curated from CCAP Medium MR_PPG.pdf specification
+- preferred_term: KH PO
+  term:
+    id: CHEBI:63036
+    label: KH PO
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.837972'
+    ontology_source: CHEBI
+  concentration:
+    value: '13.60'
+    unit: G_PER_L
+  source: CCAP Medium MR_PPG.pdf
+  notes: From CCAP Medium MR_PPG.pdf; Curated from CCAP Medium MR_PPG.pdf specification
+- preferred_term: Proteose peptone
+  term:
+    id: MICRO:0000180
+    label: Proteose peptone
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 0.9
+    curation_date: '2026-04-04T12:54:54.837974'
+    ontology_source: FOODON
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: CCAP Medium MR_PPG.pdf
+  notes: From CCAP Medium MR_PPG.pdf; Curated from CCAP Medium MR_PPG.pdf specification
+- preferred_term: D-glucose
+  term:
+    id: CHEBI:17634
+    label: D-glucose
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.837977'
+    ontology_source: CHEBI
+  concentration:
+    value: '18.0'
+    unit: G_PER_L
+  source: CCAP Medium MR_PPG.pdf
+  notes: From CCAP Medium MR_PPG.pdf; Curated from CCAP Medium MR_PPG.pdf specification
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- curation_method:automated_expert_mapping
+original_name: PPG
+merge_fingerprint: fb55aba9cea0cd8208976f48ecfb896aaafb192179817cafd3430fb1e5c4185e
 merged_from:
 - ppg

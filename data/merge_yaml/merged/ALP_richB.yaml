@@ -1,6 +1,7 @@
 id: CultureMech:015491
 name: ALP richB
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sodium phosphate dibasic heptahydrate
@@ -182,8 +183,8 @@ ingredients:
     value: '0.1'
     unit: MG_PER_L
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Wolfe''s vitamin
     mix'
 - preferred_term: 4-Aminobenzoic acid
@@ -269,7 +270,7 @@ ingredients:
     From Wolfe''s vitamin mix'
 description: Rich media for Dechlorosoma suillum PS, pH should be 7.2
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: ALP richB
@@ -283,8 +284,27 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015491'
+- timestamp: '2026-05-16T09:04:40.145181+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:52.246663+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:47:14.962874+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:04.598752+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint fa5407f9663edc1751157080fa53ddb93e1d1797d0235646af39f108e2eced21
+  source: alp_richb.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: f4a8e141f81b872441ead0175cfdc3a7742885f5d4e59333737cba980774e52e
+merge_fingerprint: fa5407f9663edc1751157080fa53ddb93e1d1797d0235646af39f108e2eced21
 merged_from:
 - alp_richb

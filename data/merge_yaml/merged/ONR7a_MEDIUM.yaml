@@ -1,219 +1,222 @@
-id: CultureMech:002128
+id: CultureMech:002165
 name: onr7a_medium
 original_name: ONR7a MEDIUM
 category: bacterial
 medium_type: DEFINED
-physical_state: SOLID_AGAR
+composition_type: DEFINED
+physical_state: LIQUID
 ph_value: 7.6
 media_term:
-  preferred_term: DSMZ Medium 950
+  preferred_term: DSMZ Medium 983
   term:
-    id: mediadive.medium:950
+    id: mediadive.medium:983
     label: ONR7a MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium950.pdf'
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium983.pdf'
 ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '45.58'
+    value: '22.79'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '1.18'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
-    label: Na2SO4
+    label: sodium sulfate
   concentration:
-    value: '7.96'
+    value: '3.98'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
+    label: Na2SO4
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1.46'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: TAPSO
+  term:
+    id: CHEBI:84015
+    label: TAPSO
+  concentration:
+    value: '1.3'
     unit: G_PER_L
   mediaingredientmech_term:
-    id: MediaIngredientMech:000118
-    label: Na2SO4
+    id: MediaIngredientMech:000513
+    label: TAPSO
 - preferred_term: KCl
   term:
     id: CHEBI:32588
     label: KCl
   concentration:
-    value: '1.44'
+    value: '0.72'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  concentration:
+    value: '0.27'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '0.089'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: Na2HPO4
 - preferred_term: NaBr
   term:
     id: CHEBI:63004
-    label: NaBr
+    label: sodium bromide
   concentration:
-    value: '0.166'
+    value: '0.083'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000189
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63004
     label: NaBr
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
     label: NaHCO3
   concentration:
-    value: '0.062'
+    value: '0.031'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
+    label: boric acid
+  concentration:
+    value: '0.027'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
-  concentration:
-    value: '0.054'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
-- preferred_term: NaF
-  term:
-    id: CHEBI:28741
-    label: NaF
-  concentration:
-    value: '0.0052'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000182
-    label: NaF
-- preferred_term: NH4Cl
-  term:
-    id: CHEBI:31206
-    label: NH4Cl
-  concentration:
-    value: '0.54'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
-- preferred_term: Na2HPO4 x 7 H2O
-  term:
-    id: CHEBI:34683
-    label: Na2HPO4 x 7 H2O
-  concentration:
-    value: '0.178'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
-    label: Na2HPO4 x 7 H2O
-- preferred_term: TAPSO
-  term:
-    id: CHEBI:84015
-    label: TAPSO
-  concentration:
-    value: '2.6'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000513
-    label: TAPSO
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: Agar
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  notes: ' (for solid medium, alternative)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
-- preferred_term: Agarose
-  term:
-    id: CHEBI:2511
-    label: Agarose
-  concentration:
-    value: '24'
-    unit: G_PER_L
-  notes: ' (for solid medium, alternative)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000909
-    label: Agarose
-- preferred_term: MgCl2 x 6 H2O
-  term:
-    id: CHEBI:86345
-    label: MgCl2 x 6 H2O
-  concentration:
-    value: '24.8444'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: MgCl2 x 6 H2O
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '3.24444'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
 - preferred_term: SrCl2 x 6 H2O
   term:
     id: CHEBI:36385
     label: SrCl2 x 6 H2O
   concentration:
-    value: '0.0533333'
+    value: '0.024'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000463
+  mediaingredientmech_chebi_term:
+    id: CHEBI:36385
     label: SrCl2 x 6 H2O
+- preferred_term: NaF
+  term:
+    id: CHEBI:28741
+    label: sodium fluoride
+  concentration:
+    value: '0.0026'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28741
+    label: NaF
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
     label: FeCl2 x 4 H2O
   concentration:
-    value: '0.04'
+    value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000329
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86249
     label: FeCl2 x 4 H2O
 preparation_steps:
 - step_number: 1
-  action: AUTOCLAVE
-  description: Autoclave the solutions separately. All solutions should be mixed after
-    autoclaving when they have cooled to at least 50°C. For solid media add to the
-    first solution 15 g/l of Bacto agar or 12 g/l of agarose (Sigma).
-- step_number: 2
-  action: ADJUST_PH
-  description: adjust pH to 7.6 with NaOH
+  action: MIX
+  description: pH 7.6.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:12.878031Z'
+- timestamp: '2026-01-26T17:53:12.988107Z'
   curator: mediadive-import
   action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 950'
-- timestamp: '2026-03-13T06:19:10.588402Z'
+  notes: 'Source: DSMZ, ID: 983'
+- timestamp: '2026-03-13T06:19:10.907441Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002128'
-- timestamp: '2026-03-17T06:30:16.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:002165'
+- timestamp: '2026-03-17T06:29:47.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:23.273014+00:00'
+- timestamp: '2026-03-17T19:45:23.635354+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "ONR7a MEDIUM" to "onr7a_medium" for consistent matching
-- timestamp: '2026-04-17T06:30:10.566635+00:00'
+- timestamp: '2026-06-05T07:40:16.372253+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 13 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:42.685454+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:34.966778+00:00'
   curator: recipe-merger
-  action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: medium_950_modified_for_dsm_14913, onr7a_medium'
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_983_ONR7a_MEDIUM, KOMODO_983_ONR7a_MEDIUM, medium_983_modified_for_dsm_14852'
+- timestamp: '2026-08-06T03:04:34.966818+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint ae2ac7bf4b43b74f5ecdedfa1c70302d1e39166ab627bda9724d8936fa12eabc
+  source: DSMZ_983_ONR7a_MEDIUM.yaml, KOMODO_983_ONR7a_MEDIUM.yaml, medium_983_modified_for_dsm_14852.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_983_modified_for_dsm_14852.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006944
+  name: medium_983_modified_for_dsm_14852
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/KOMODO_983_ONR7a_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006945
+  name: onr7a_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.
 synonyms:
-- name: medium_950_modified_for_dsm_14913
+- name: medium_983_modified_for_dsm_14852
   source: KOMODO
-  source_id: komodo.medium:950_14913
+  source_id: komodo.medium:983_14852
   original_category: bacterial
 categories:
 - bacterial
 merged_from:
-- medium_950_modified_for_dsm_14913
-- onr7a_medium
-merge_fingerprint: d352385766aaf242da7fde82ce41612716ac7982099c2a81867b03849d443dda
+- DSMZ_983_ONR7a_MEDIUM
+- KOMODO_983_ONR7a_MEDIUM
+- medium_983_modified_for_dsm_14852
+merge_fingerprint: ae2ac7bf4b43b74f5ecdedfa1c70302d1e39166ab627bda9724d8936fa12eabc

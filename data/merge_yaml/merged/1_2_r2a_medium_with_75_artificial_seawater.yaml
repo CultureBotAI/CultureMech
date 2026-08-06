@@ -1,252 +1,229 @@
-id: CultureMech:010168
+id: CultureMech:003079
 name: 1_2_r2a_medium_with_75_artificial_seawater
-original_name: 1/2 R2A Medium With 75% Artificial Seawater
+original_name: 1/2 R2A MEDIUM WITH 75% ARTIFICIAL SEAWATER
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: JCM Medium J736
+  term:
+    id: mediadive.medium:J736
+    label: 1/2 R2A MEDIUM WITH 75% ARTIFICIAL SEAWATER
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=736'
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Yeast extract
   concentration:
-    value: '251.0'
+    value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component [Merged 2 duplicates: 250.0, 1.0]'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: MgSO4·7H2O
+- preferred_term: Proteose peptone no. 3
   concentration:
-    value: '0.025'
+    value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: Casamino acids
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Glucose
   term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4·7H2O
-- preferred_term: K2HPO4
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: Glucose
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
+    label: Starch
+- preferred_term: Sodium pyruvate
+  term:
+    id: CHEBI:50144
+    label: Sodium pyruvate
   concentration:
     value: '0.15'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
+    label: Sodium pyruvate
+- preferred_term: K2HPO4
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
-- preferred_term: Sodium pyruvate
   concentration:
     value: '0.15'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: K2HPO4
+- preferred_term: MgSO4 x 7 H2O
   term:
-    id: CHEBI:50144
-    label: sodium pyruvate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
-    label: Sodium pyruvate
-- preferred_term: Glucose
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
   concentration:
-    value: '0.25'
+    value: '0.025'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
-- preferred_term: Soluble starch
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Undefined component'
-- preferred_term: Yeast extract (BD-Difco)
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Proteose peptone No. 3 (BD-Difco)
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Casamino acids (BD-Difco)
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Artificial seawater (see below)
-  concentration:
-    value: '750'
-    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
 - preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
   concentration:
     value: '23.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
     label: NaCl
-- preferred_term: CaCl2·2H2O
-  concentration:
-    value: '1.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: MgCl2 x 6 H2O
   term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2·2H2O
-- preferred_term: MgCl2·6H2O
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
   concentration:
     value: '4.9'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:86345
-    label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: MgCl2·6H2O
-- preferred_term: H3BO3
-  concentration:
-    value: '0.026'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:33118
-    label: boric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
-- preferred_term: KCl
-  concentration:
-    value: '0.66'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
-- preferred_term: NaHCO3
-  concentration:
-    value: '0.19'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
+    label: MgCl2 x 6 H2O
 - preferred_term: Na2SO4
-  concentration:
-    value: '3.9'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
   term:
     id: CHEBI:32149
     label: sodium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  concentration:
+    value: '3.9'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Na2SO4
-- preferred_term: SrCl2·6H2O
-  concentration:
-    value: '0.024'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: CaCl2 x 2 H2O
   term:
-    id: CHEBI:36385
-    label: strontium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000463
-    label: SrCl2·6H2O
-- preferred_term: NaF
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
   concentration:
-    value: '0.003'
+    value: '1.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: KCl
   term:
-    id: CHEBI:28741
-    label: sodium fluoride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000182
-    label: NaF
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.66'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: KCl
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.19'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: NaHCO3
 - preferred_term: KBr
-  concentration:
-    value: '0.096'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
   term:
     id: CHEBI:32030
     label: potassium bromide
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001123
+  concentration:
+    value: '0.096'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32030
     label: KBr
-media_term:
-  preferred_term: TOGO Medium M761
+- preferred_term: H3BO3
   term:
-    id: TOGO:M761
-    label: 1/2 R2A Medium With 75% Artificial Seawater
-notes: 'Source: https://togomedium.org/medium/M761
-
-  Original source: JCM - JCM_M736
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=736'
+    id: CHEBI:33118
+    label: boric acid
+  concentration:
+    value: '0.026'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: H3BO3
+- preferred_term: SrCl2 x 6 H2O
+  term:
+    id: CHEBI:36385
+    label: SrCl2 x 6 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:36385
+    label: SrCl2 x 6 H2O
+- preferred_term: NaF
+  term:
+    id: CHEBI:28741
+    label: sodium fluoride
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28741
+    label: NaF
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.2.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.660047Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M761'
-- timestamp: '2026-01-28T19:48:23.219244Z'
+- timestamp: '2026-01-26T17:53:17.436898Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J736'
+- timestamp: '2026-01-28T19:48:43.062956Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T03:09:08.392679Z'
-  curator: data-quality-cleanup-v1.0
-  action: Data quality fixes
-  notes: Merged 1 duplicate ingredient(s)
-- timestamp: '2026-03-13T06:20:11.806373Z'
+- timestamp: '2026-03-13T06:19:17.635377Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:010168'
-- timestamp: '2026-03-17T06:30:14.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:003079'
+- timestamp: '2026-03-17T06:30:57.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:30.739405+00:00'
+- timestamp: '2026-03-17T19:45:31.377267+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "1/2 R2A Medium With 75% Artificial Seawater" to "1_2_r2a_medium_with_75_artificial_seawater"
+  notes: Normalized name from "1/2 R2A MEDIUM WITH 75% ARTIFICIAL SEAWATER" to "1_2_r2a_medium_with_75_artificial_seawater"
     for consistent matching
-merge_fingerprint: 8900b85cdc7d3b8657e3f3399369f9bc9f1ee1bdae16203df4f2adb68e77f720
+- timestamp: '2026-06-05T07:40:15.519710+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 16 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:27.166781+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:46:42.495188+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:33.724250+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint ee844d0977658b03b16a211e356588b66850aeddad1812ddb364f5f4a94345a4
+  source: 1_2_r2a_medium_with_75_artificial_seawater.yaml
+merge_fingerprint: ee844d0977658b03b16a211e356588b66850aeddad1812ddb364f5f4a94345a4
 merged_from:
-- TOGO_M761_1_2_R2A_Medium_With_75_Artificial_Seawater
+- 1_2_r2a_medium_with_75_artificial_seawater

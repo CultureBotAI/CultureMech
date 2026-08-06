@@ -83,7 +83,7 @@ High-level statistics and breakdowns
 just generate-indexes
 
 # Generate for merged recipes
-just generate-indexes data/merge_yaml/merged_2026
+just generate-indexes data/merge_yaml/merged
 
 # Generate for all collections
 just generate-all-indexes
@@ -99,7 +99,7 @@ python scripts/generate_recipe_indexes.py
 
 # Specific directory
 python scripts/generate_recipe_indexes.py \
-  --recipe-dir data/merge_yaml/merged_2026
+  --recipe-dir data/merge_yaml/merged
 
 # Custom output location
 python scripts/generate_recipe_indexes.py \
@@ -221,7 +221,7 @@ just generate-indexes
 
 # After merging
 just merge-recipes
-just generate-indexes data/merge_yaml/merged_2026
+just generate-indexes data/merge_yaml/merged
 
 # After enrichment
 just enrich-all
@@ -238,7 +238,7 @@ just normalize-all
 just fix-all-data-quality
 just generate-indexes  # ← Generate fresh indexes
 just merge-recipes
-just generate-indexes data/merge_yaml/merged_2026  # ← Index merged recipes
+just generate-indexes data/merge_yaml/merged  # ← Index merged recipes
 ```
 
 ---
@@ -258,7 +258,7 @@ data/normalized_yaml/
 
 ### Merged Recipes
 ```
-data/merge_yaml/merged_2026/
+data/merge_yaml/merged/
 ├── recipe_index.json          # Master index (merged)
 ├── recipe_statistics.json     # Statistics (merged)
 └── ...
@@ -293,7 +293,7 @@ jq '.recipes | to_entries | sort_by(.value.ingredient_count) | reverse | .[0:10]
 
 ```bash
 jq '.recipes | to_entries[] | select(.value.merged_from_count > 1) | .value' \
-  data/merge_yaml/merged_2026/recipe_index.json
+  data/merge_yaml/merged/recipe_index.json
 ```
 
 ### Count by source

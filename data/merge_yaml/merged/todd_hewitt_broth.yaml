@@ -3,6 +3,7 @@ name: todd_hewitt_broth
 original_name: Todd–Hewitt broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Todd–Hewitt broth (Oxoid)
@@ -32,9 +33,9 @@ curation_history:
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2896'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.779042'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:06.168407Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -44,6 +45,15 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Todd–Hewitt broth" to "todd_hewitt_broth" for consistent
     matching
+- timestamp: '2026-05-16T09:04:35.851105+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:05:59.676711+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint df3a0d5e2a7b37a2e29aad577ddeeba1a97f4ef55175c54261bbca6ac645001f
+  source: todd_hewitt_broth.yaml
 merge_fingerprint: df3a0d5e2a7b37a2e29aad577ddeeba1a97f4ef55175c54261bbca6ac645001f
 merged_from:
 - todd_hewitt_broth

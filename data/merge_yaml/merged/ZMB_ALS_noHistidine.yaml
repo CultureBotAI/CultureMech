@@ -1,6 +1,7 @@
 id: CultureMech:015809
 name: ZMB ALS noHistidine
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: ZMB_ALS
@@ -17,7 +18,7 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 71-00-1; MW: 155.16'
 description: Media for culturing Bifidobacterium minus histidine
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: ZMB ALS noHistidine
@@ -31,6 +32,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015809'
+- timestamp: '2026-05-16T09:04:44.131803+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:09.124127+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 7c63b4b93b72905347ce358c86cbc18fe454377f428df777a75ed8340a5ea28f
+  source: zmb_als_nohistidine.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: 7c63b4b93b72905347ce358c86cbc18fe454377f428df777a75ed8340a5ea28f

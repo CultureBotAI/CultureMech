@@ -3,6 +3,7 @@ name: brewer_anaerobic_agar_with_2_nacl
 original_name: Brewer Anaerobic Agar With 2% NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: NaCl
   concentration:
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Brewer anaerobic agar (BD-Difco)
   concentration:
     value: '58'
@@ -68,6 +69,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Brewer Anaerobic Agar With 2% NaCl" to "brewer_anaerobic_agar_with_2_nacl"
     for consistent matching
+- timestamp: '2026-06-05T07:40:51.546415+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:25.958221+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint cd2c24232935eac0eba9984791ccaeb4ef9aa523b270488cbb961d98203468c2
+  source: brewer_anaerobic_agar_with_2_nacl.yaml
 merge_fingerprint: cd2c24232935eac0eba9984791ccaeb4ef9aa523b270488cbb961d98203468c2
 merged_from:
 - brewer_anaerobic_agar_with_2_nacl

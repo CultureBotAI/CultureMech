@@ -3,6 +3,7 @@ name: reinforced_clostridial_medium_rcm
 original_name: Reinforced clostridial medium (RCM)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Reinforced clostridial medium (Oxoid)
@@ -32,6 +33,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Reinforced clostridial medium (RCM)" to "reinforced_clostridial_medium_rcm"
     for consistent matching
+- timestamp: '2026-08-06T03:05:54.559256+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 5a2bc21a426caf6c2cb6d7ae36eecec42ce72e7747eb7cb9594f98bb6134d966
+  source: reinforced_clostridial_medium_rcm.yaml
 merge_fingerprint: 5a2bc21a426caf6c2cb6d7ae36eecec42ce72e7747eb7cb9594f98bb6134d966
 merged_from:
 - reinforced_clostridial_medium_rcm

@@ -1,149 +1,158 @@
-id: CultureMech:008972
+id: CultureMech:002607
 name: ppes_ii_agar_medium
-original_name: PPES-II Agar Medium
+original_name: PPES-II AGAR MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.8
+media_term:
+  preferred_term: JCM Medium J246
+  term:
+    id: mediadive.medium:J246
+    label: PPES-II AGAR MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=246'
 ingredients:
-- preferred_term: Yeast extract
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
-- preferred_term: EDTA・Fe(III)
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Simple component'
-- preferred_term: Proteose peptone No. 3 (BD-Difco)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Soytone
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-  term:
-    id: MICRO:0000181
-    label: ''
 - preferred_term: Peptone
   concentration:
     value: '2'
     unit: G_PER_L
-- preferred_term: Artificial seawater (see below)
+- preferred_term: Proteose peptone no. 3
   concentration:
     value: '1'
     unit: G_PER_L
-- preferred_term: Distilled water
+- preferred_term: Soytone
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
+- preferred_term: Yeast extract
   concentration:
-    value: '5.4'
+    value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
+- preferred_term: Fe(III)-EDTA
   term:
-    id: CHEBI:32599
-    label: ''
+    id: CHEBI:30729
+    label: Fe(III)-EDTA
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30729
+    label: Fe(III)-EDTA
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
 - preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
   concentration:
     value: '30'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
     label: NaCl
-- preferred_term: CaCl2・2H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:86158
-    label: ''
-- preferred_term: MgCl2・6H2O
-  concentration:
-    value: '10.8'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:86345
-    label: ''
 - preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
   concentration:
     value: '0.7'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
     label: KCl
-media_term:
-  preferred_term: TOGO Medium M238
+- preferred_term: MgCl2 x 6 H2O
   term:
-    id: TOGO:M238
-    label: PPES-II Agar Medium
-notes: 'Source: https://togomedium.org/medium/M238
-
-  Original source: JCM - JCM_M246
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=246'
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '10.8'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '5.4'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.8.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.682598Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M238'
-- timestamp: '2026-01-28T19:48:38.981310Z'
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI,
+    1 de-grounded (mixture or unverifiable).
+- timestamp: '2026-01-26T17:53:16.079682Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J246'
+- timestamp: '2026-01-28T19:48:16.528375Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:20:01.703876Z'
+- timestamp: '2026-03-13T06:19:14.518490Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:008972'
-- timestamp: '2026-03-17T06:30:48.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:002607'
+- timestamp: '2026-03-17T06:30:00.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:20.439490+00:00'
+- timestamp: '2026-03-17T19:45:27.793034+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PPES-II Agar Medium" to "ppes_ii_agar_medium" for consistent
+  notes: Normalized name from "PPES-II AGAR MEDIUM" to "ppes_ii_agar_medium" for consistent
     matching
-merge_fingerprint: 3d2b790d97d74a9f56ba71ee46baf81fe60928299a4d35d15cc2f23b768a281f
+- timestamp: '2026-06-05T07:40:16.914444+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:35.884569+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: JCM_J246_PPES-II_AGAR_MEDIUM, KOMODO_1075_PPES-II_AGAR_medium,
+    ppes_ii_agar_medium'
+- timestamp: '2026-08-06T03:04:35.884609+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 0273cd5749452ba50f906484a1a68cf38229fda9fdf7ac0fc61a31a64e5290a9
+  source: JCM_J246_PPES-II_AGAR_MEDIUM.yaml, KOMODO_1075_PPES-II_AGAR_medium.yaml,
+    ppes_ii_agar_medium.yaml
+categories:
+- bacterial
 merged_from:
-- TOGO_M238_PPES-II_Agar_Medium
+- JCM_J246_PPES-II_AGAR_MEDIUM
+- KOMODO_1075_PPES-II_AGAR_medium
+- ppes_ii_agar_medium
+merge_fingerprint: 0273cd5749452ba50f906484a1a68cf38229fda9fdf7ac0fc61a31a64e5290a9

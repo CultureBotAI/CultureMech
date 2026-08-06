@@ -1,89 +1,81 @@
-id: CultureMech:009910
+id: CultureMech:002869
 name: peptone_meat_extract_glycerol_agar
-original_name: Peptone-Meat Extract-Glycerol Agar
+original_name: PEPTONE-MEAT EXTRACT-GLYCEROL AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J518
   term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
+    id: mediadive.medium:J518
+    label: PEPTONE-MEAT EXTRACT-GLYCEROL AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=518'
+ingredients:
+- preferred_term: Proteose peptone no. 3
+  concentration:
+    value: '4.90196'
+    unit: G_PER_L
+- preferred_term: Beef extract
+  concentration:
+    value: '2.94118'
+    unit: G_PER_L
 - preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
-  term:
-    id: CHEBI:15978
-    label: sn-glycerol 3-phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000588
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
   term:
     id: CHEBI:2509
-    label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
     label: Agar
-- preferred_term: Proteose peptone No. 3 (BD-Difco)
   concentration:
-    value: '5'
+    value: '14.7059'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Beef extract (BD-Difco)
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M519
-  term:
-    id: TOGO:M519
-    label: Peptone-Meat Extract-Glycerol Agar
-notes: 'Source: https://togomedium.org/medium/M519
-
-  Original source: JCM - JCM_M518
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=518'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.218903Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M519'
-- timestamp: '2026-01-28T19:48:09.727458Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:20:09.887033Z'
+- timestamp: '2026-01-26T17:53:16.819937Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J518'
+- timestamp: '2026-03-13T06:19:16.212191Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:009910'
-- timestamp: '2026-03-17T06:29:45.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:002869'
+- timestamp: '2026-03-17T06:30:13.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:28.835010+00:00'
+- timestamp: '2026-03-17T19:45:29.727695+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Peptone-Meat Extract-Glycerol Agar" to "peptone_meat_extract_glycerol_agar"
+  notes: Normalized name from "PEPTONE-MEAT EXTRACT-GLYCEROL AGAR" to "peptone_meat_extract_glycerol_agar"
     for consistent matching
-merge_fingerprint: 4a5496baf607eae9388d342642274fb22e34048064f56e0fe78a41af5c5bcc0e
+- timestamp: '2026-06-05T07:40:17.461988+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:36.944509+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 426dc97fe1af58a34029b6599ed870e1be8413f1e4323cefdb4c7f9639bde3a8
+  source: JCM_J518_PEPTONE-MEAT_EXTRACT-GLYCEROL_AGAR.yaml
+merge_fingerprint: 426dc97fe1af58a34029b6599ed870e1be8413f1e4323cefdb4c7f9639bde3a8
 merged_from:
-- TOGO_M519_Peptone-Meat_Extract-Glycerol_Agar
+- JCM_J518_PEPTONE-MEAT_EXTRACT-GLYCEROL_AGAR

@@ -1,0 +1,323 @@
+id: CultureMech:000324
+name: bg11
+original_name: BG11
+category: bacterial
+medium_type: DEFINED
+composition_type: DEFINED
+physical_state: SOLID_AGAR
+ph_value: 7.1
+media_term:
+  preferred_term: CCAP Medium C17
+  term:
+    id: mediadive.medium:C17
+    label: BG11
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_BG11.pdf'
+ingredients:
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:63005
+    label: NaNO3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000171
+    label: NaNO3
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: K2HPO4
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: Citric acid
+  term:
+    id: CHEBI:30769
+    label: Citric acid
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30769
+    label: Citric acid
+- preferred_term: Ammonium ferric citrate
+  term:
+    id: CHEBI:31604
+    label: Ammonium ferric citrate
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31604
+    label: Ammonium ferric citrate
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  concentration:
+    value: '25.3'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: Na2CO3
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  concentration:
+    value: '2.86'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: H3BO3
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '1.81'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.22'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.39'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+- preferred_term: Co(NO3)2 x 6 H2O
+  term:
+    id: CHEBI:86214
+    label: Co(NO3)2 x 6 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86214
+    label: Co(NO3)2 x 6 H2O
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: "Make up to 1 litre with deionized water. Adjust pH to 7.1 with 1M\
+    \ NaOH or HCl.\r\nFor agar add 15.0 g per litre of Bacteriological Agar (Thermo\
+    \ Scientific&trade; Oxoid&trade; Agar No.1).\r\nAutoclave at 15 psi for 15 minutes."
+- step_number: 2
+  action: AUTOCLAVE
+  description: "Due to precipitation, larger volumes require stocks of citric acid\
+    \ and ammonium ferric citrate to be autoclaved separately in 100ml\r\ndeionized\
+    \ water or alternatively they can be autoclaved separately in test tubes and added\
+    \ to\r\nsterile medium in the airflow cabinet."
+applications:
+- Microbial cultivation
+references:
+- reference: doi.org/10.1128/br.35.2.171-205.1971
+variants:
+- name: optimized_bg11_synechocystis_pcc6803
+  description: Optimized BG11 growth condition for Synechocystis sp. PCC 6803.
+  modifications:
+  - Use Synechocystis sp. PCC 6803 as the target organism.
+  - Apply optimized growth conditions reported by the source study.
+  purpose: Capture optimized BG11 growth-rate evidence under the parent BG11 record.
+  evidence:
+  - reference: PMID:29577667
+    supports: SUPPORT
+    snippet: Optimizing these growth conditions resulted in a so far highest growth
+      rate of 0.16 h-1 (4.3 h doubling time), which is significantly higher than the
+      textbook value of 0.09 h-1 (8 h doubling time).
+    explanation: Literature evidence supports a PCC 6803 optimized-growth condition
+      variant under the parent BG11 record.
+- name: ambient_co2_bg11_synechococcus_pcc11801
+  description: Ambient-CO2 BG11 growth condition for Synechococcus elongatus PCC 11801.
+  modifications:
+  - Use Synechococcus elongatus PCC 11801 as the target strain.
+  - Culture under ambient CO2 conditions.
+  purpose: Capture strain-specific BG11 growth evidence under ambient CO2.
+  evidence:
+  - reference: PMID:30413737
+    supports: SUPPORT
+    snippet: PCC 11801 shows a doubling time of 2.3 h, that is the fastest growth
+      for any cyanobacteria reported so far under ambient CO2 conditions.
+    explanation: Literature evidence supports an ambient-CO2 PCC 11801 condition variant
+      under the parent BG11 record.
+- name: high_co2_high_light_bg11_synechococcus_pcc11802
+  description: High-CO2, high-light BG11 growth condition for Synechococcus elongatus
+    PCC 11802.
+  modifications:
+  - Use Synechococcus elongatus PCC 11802 as the target strain.
+  - Culture at 1% CO2.
+  - Culture at 1000 umole photons m-2 s-1.
+  purpose: Capture strain-specific high-CO2/high-light BG11 growth evidence.
+  evidence:
+  - reference: PMID:31932622
+    supports: SUPPORT
+    snippet: The new isolate has a doubling time of 2.8 h at 1% CO2, 1000 µmole photons.m-2.s-1
+      and grows faster under high CO2 and temperature compared to PCC 11801 thus making
+      it an attractive host for outdoor cultivations and eventual applications in
+      the biorefinery.
+    explanation: Literature evidence supports a high-CO2/high-light PCC 11802 condition
+      variant under the parent BG11 record.
+curation_history:
+- timestamp: '2026-01-26T17:53:19.526682Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C17'
+- timestamp: '2026-03-13T06:18:54.466219Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000324'
+- timestamp: '2026-03-17T06:30:25.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:05.445173+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BG11" to "bg11" for consistent matching
+- timestamp: '2026-05-04T02:04:34.256015+00:00'
+  curator: literature_review_apply
+  action: ADDED_GROWTH_EVIDENCE
+  notes: organisms_added=1 metrics_added=1 genomes_added=0
+- timestamp: '2026-05-04T02:38:51.030913+00:00'
+  curator: literature_review_apply
+  action: ADDED_GROWTH_EVIDENCE
+  notes: organisms_added=2 metrics_added=2 genomes_added=0
+- timestamp: '2026-06-05T07:40:50.800655+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 14 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:53.872276+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T00:58:02.702712+00:00'
+  curator: curate_organism_culture_type.py
+  action: SET_ORGANISM_CULTURE_TYPE
+  notes: 'Inferred isolate: 3 specific strain(s) named, no community signal (#142)'
+  changes: Set organism_culture_type=isolate (was unset)
+- timestamp: '2026-08-06T03:05:25.052102+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint f771062f80aa643e47556ee4820cb01e4b669b56231c092bbb9bf3ad8abc4f13
+  source: bg11.yaml
+organism_culture_type: isolate
+target_organisms:
+- preferred_term: Synechocystis sp. PCC 6803
+  term:
+    id: NCBITaxon:1148
+    label: Synechocystis sp. PCC 6803
+  growth_metrics:
+  - growth_rate_per_hour: 0.16
+    doubling_time_minutes: 258.0
+    evidence:
+    - reference: PMID:29577667
+      supports: SUPPORT
+      snippet: Optimizing these growth conditions resulted in a so far highest growth
+        rate of 0.16 h-1 (4.3 h doubling time), which is significantly higher than
+        the textbook value of 0.09 h-1 (8 h doubling time).
+      explanation: 'Auto-applied from literature query: "bg11"[All Fields] AND doubling
+        time[All Fields]'
+    is_max_attainment: true
+- preferred_term: Synechococcus elongatus PCC 11801
+  term:
+    id: NCBITaxon:2219813
+    label: Synechococcus elongatus PCC 11801
+  growth_metrics:
+  - doubling_time_minutes: 138.0
+    evidence:
+    - reference: PMID:30413737
+      supports: SUPPORT
+      snippet: PCC 11801 shows a doubling time of 2.3 h, that is the fastest growth
+        for any cyanobacteria reported so far under ambient CO2 conditions.
+      explanation: 'Auto-applied from literature query: targeted: Synechococcus elongatus
+        PCC 11801'
+    is_max_attainment: true
+- preferred_term: Synechococcus elongatus PCC 11802
+  term:
+    id: NCBITaxon:2283154
+    label: Synechococcus elongatus PCC 11802
+  growth_metrics:
+  - doubling_time_minutes: 168.0
+    evidence:
+    - reference: PMID:31932622
+      supports: SUPPORT
+      snippet: The new isolate has a doubling time of 2.8 h at 1% CO2, 1000 µmole
+        photons.m-2.s-1 and grows faster under high CO2 and temperature compared to
+        PCC 11801 thus making it an attractive host for outdoor cultivations and eventual
+        applications in the biorefinery.
+      explanation: 'Auto-applied from literature query: targeted: Synechococcus elongatus
+        PCC 11802'
+    is_max_attainment: true
+merge_fingerprint: f771062f80aa643e47556ee4820cb01e4b669b56231c092bbb9bf3ad8abc4f13
+merged_from:
+- bg11

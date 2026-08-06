@@ -1,92 +1,98 @@
-id: CultureMech:010062
+id: CultureMech:003093
 name: nutrient_agar
-original_name: Nutrient Agar
+original_name: NUTRIENT AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J74
+  term:
+    id: mediadive.medium:J74
+    label: NUTRIENT AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=74'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
-- preferred_term: Beef extract
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
 - preferred_term: Peptone
   concentration:
     value: '5'
     unit: G_PER_L
-media_term:
-  preferred_term: TOGO Medium M65
+- preferred_term: Beef extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Agar
   term:
-    id: TOGO:M65
-    label: Nutrient Agar
-notes: 'Source: https://togomedium.org/medium/M65
-
-  Original source: JCM - JCM_M74
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=74'
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.464612Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M65'
-- timestamp: '2026-01-28T19:48:32.450067Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:20:11.063608Z'
+- timestamp: '2026-01-26T17:53:15.683971Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J74'
+- timestamp: '2026-03-13T06:19:17.752207Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:010062'
-- timestamp: '2026-03-17T06:30:34.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:003093'
+- timestamp: '2026-03-17T06:29:47.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:29.990065+00:00'
+- timestamp: '2026-03-17T19:45:31.511963+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Nutrient Agar" to "nutrient_agar" for consistent matching
-- timestamp: '2026-04-17T06:29:49.995516+00:00'
+  notes: Normalized name from "NUTRIENT AGAR" to "nutrient_agar" for consistent matching
+- timestamp: '2026-06-05T07:40:17.668550+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:35.031125+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: TOGO_M65_Nutrient_Agar, TOGO_M92_Alkaline_Nutrient_Agar, nutrient_agar_with_25_soil_extract'
+  notes: 'Sources: JCM_J100_ALKALINE_NUTRIENT_AGAR, JCM_J74_NUTRIENT_AGAR, NBRC_NUTRIENT_AGAR'
+- timestamp: '2026-08-06T03:04:35.031175+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 8c57e3250c7f99cc1d199032631706bfff739c2e8d5486d3f1557e1701d527c2
+  source: JCM_J100_ALKALINE_NUTRIENT_AGAR.yaml, JCM_J74_NUTRIENT_AGAR.yaml, NBRC_NUTRIENT_AGAR.yaml
+kg_microbe_match: mediadive.medium:12
+variant_children:
+- path: data/normalized_yaml/bacterial/JCM_J100_ALKALINE_NUTRIENT_AGAR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002194
+  name: alkaline_nutrient_agar
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/NBRC_NUTRIENT_AGAR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:007511
+  name: nutrient_agar
+  notes: Reviewed JCM/NBRC Nutrient Agar records; both parsed formulations contain
+    beef extract 3 g/L, peptone 5 g/L, and agar 15 g/L, with the JCM parent carrying
+    pH 7.0 and the NBRC record not specifying pH.
 synonyms:
 - name: alkaline_nutrient_agar
-  source: TOGO
-  source_id: TOGO:M92
-  original_category: bacterial
-- name: nutrient_agar_with_25_soil_extract
   source: MediaDive
-  source_id: mediadive.medium:J102
+  source_id: mediadive.medium:J100
   original_category: bacterial
 categories:
 - bacterial
 merged_from:
-- TOGO_M65_Nutrient_Agar
-- TOGO_M92_Alkaline_Nutrient_Agar
-- nutrient_agar_with_25_soil_extract
-merge_fingerprint: 990be6d3c6848d2db9e80aa9f7de9e9265ccc01411cbd242589806ad58bdb11a
+- JCM_J100_ALKALINE_NUTRIENT_AGAR
+- JCM_J74_NUTRIENT_AGAR
+- NBRC_NUTRIENT_AGAR
+merge_fingerprint: 8c57e3250c7f99cc1d199032631706bfff739c2e8d5486d3f1557e1701d527c2

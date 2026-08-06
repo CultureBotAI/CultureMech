@@ -3,12 +3,16 @@ name: inorganic_medium
 original_name: Inorganic medium
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.27'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -16,13 +20,16 @@ ingredients:
   concentration:
     value: '3.2e-05'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '11.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -30,13 +37,16 @@ ingredients:
   concentration:
     value: '4.3'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '7.3'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -44,8 +54,8 @@ ingredients:
   concentration:
     value: '2.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
@@ -54,9 +64,9 @@ ingredients:
   concentration:
     value: '8.3e-06'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -64,13 +74,16 @@ ingredients:
   concentration:
     value: '56.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.25'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -78,24 +91,33 @@ ingredients:
   concentration:
     value: '5.7e-06'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Cupric chloride
   concentration:
     value: '8.4e-06'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49553
+    label: ''
 - preferred_term: Cupric sulfate
   concentration:
     value: 4e-06
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Molybdenum trioxide
   concentration:
     value: '1.4e-05'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001119
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30627
     label: Molybdenum trioxide
+  term:
+    id: CHEBI:30627
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -125,10 +147,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Inorganic medium" to "inorganic_medium" for consistent
     matching
-- timestamp: '2026-04-17T06:30:03.432789+00:00'
+- timestamp: '2026-06-05T07:41:09.352086+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:34.373992+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: fex5_medium, inorganic_medium'
+- timestamp: '2026-08-06T03:05:34.374031+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 648c6d7225801c0199b353b050958730707a4856451f06a29f875ed945f9dbd7
+  source: fex5_medium.yaml, inorganic_medium.yaml
 media_term:
   preferred_term: MediaDB Medium 226
   term:
@@ -140,6 +173,13 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+variant_children:
+- path: data/normalized_yaml/bacterial/fex5_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:007122
+  name: fex5_medium
+  notes: Ferrous sulfate increased from 0.05 mM to 0.25 mM while the inorganic medium
+    base remains unchanged.
 synonyms:
 - name: fex5_medium
   source: unknown
@@ -150,4 +190,4 @@ categories:
 merged_from:
 - fex5_medium
 - inorganic_medium
-merge_fingerprint: 72c5523c4be70efbde60f28a65064b97d49986e0569e3cdf80daea0c4b52d6c6
+merge_fingerprint: 648c6d7225801c0199b353b050958730707a4856451f06a29f875ed945f9dbd7

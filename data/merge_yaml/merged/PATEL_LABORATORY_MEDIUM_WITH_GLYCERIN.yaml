@@ -3,6 +3,7 @@ name: patel_laboratory_medium_with_glycerin
 original_name: PATEL LABORATORY MEDIUM WITH GLYCERIN
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J780
@@ -14,12 +15,12 @@ ingredients:
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 applications:
 - Microbial cultivation
@@ -41,6 +42,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "PATEL LABORATORY MEDIUM WITH GLYCERIN" to "patel_laboratory_medium_with_glycerin"
     for consistent matching
+- timestamp: '2026-06-05T07:41:40.944401+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:09.903011+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:52.272929+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2149ee660cdadc7603b05f29501a5ac0d5ae23f5ba956298893d0928478375ce
+  source: patel_laboratory_medium_with_glycerin.yaml
 kg_microbe_match: mediadive.medium:J780
 merge_fingerprint: 2149ee660cdadc7603b05f29501a5ac0d5ae23f5ba956298893d0928478375ce
 merged_from:

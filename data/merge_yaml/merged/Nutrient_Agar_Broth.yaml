@@ -3,6 +3,7 @@ name: nutrient_agar_broth
 original_name: Nutrient Agar/Broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: DI Water
@@ -48,6 +49,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Nutrient Agar/Broth" to "nutrient_agar_broth" for consistent
     matching
+- timestamp: '2026-08-06T03:05:10.673580+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 12af3a4d8531e3e79f8742509448aff04aa1fb0e4613d070ba4ca6faa95c5509
+  source: TOGO_M2193_Nutrient_Agar_Broth.yaml
 merge_fingerprint: 12af3a4d8531e3e79f8742509448aff04aa1fb0e4613d070ba4ca6faa95c5509
 merged_from:
 - TOGO_M2193_Nutrient_Agar_Broth

@@ -1,0 +1,164 @@
+id: CultureMech:001439
+name: wilkins_chalgren_anaerobe_broth
+original_name: WILKINS-CHALGREN ANAEROBE BROTH
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_range:
+  min: 6.8
+  max: 7.0
+media_term:
+  preferred_term: DSMZ Medium 339
+  term:
+    id: mediadive.medium:339
+    label: WILKINS-CHALGREN ANAEROBE BROTH
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium339.pdf'
+ingredients:
+- preferred_term: dehydrated Wilkins-Chalgren medium
+  concentration:
+    value: '33'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
+- preferred_term: L-Cysteine HCl
+  term:
+    id: CHEBI:91247
+    label: L-Cysteine HCl
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000223
+    label: L-Cysteine HCl
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve 33.0 g/l dehydrated Wilkins-Chalgren medium (Oxoid CM0643)
+    in distilled water and add 0.5 ml/l Na-resazurin solution (0.1% w/v), bring to
+    the boil and cool to room temperature while sparging with 100% N2 gas. Add L-cysteine-HCL
+    x H2O (0.3 g/l), dispense the medium under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. After autoclaving check pH and adjust to pH
+    6.8 - 7.0, if necessary.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: 'Note: In case resazurin is not colourless addition of 10 - 20 mg sodium
+    dithionite per liter (e.g. from 5% (w/v) solution, freshly prepared under N2 and
+    filter-sterilized) can be used to completely reduce the medium.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.851639Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 339'
+- timestamp: '2026-03-13T06:19:04.207358Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001439'
+- timestamp: '2026-03-17T06:29:59.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:16.205407+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "WILKINS-CHALGREN ANAEROBE BROTH" to "wilkins_chalgren_anaerobe_broth"
+    for consistent matching
+- timestamp: '2026-05-20T06:02:12.039890+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.8-7'' -> {''min'': 6.8, ''max'': 7.0}'
+- timestamp: '2026-08-06T03:05:34.561110+00:00'
+  curator: recipe-merger
+  action: Merged 12 duplicate recipes into canonical record
+  notes: 'Sources: for_dsm_14204_dsm_14205_dsm_14206_dsm_14207_dsm_14924_dsm_15176_dsm_15243_dsm_15248_dsm_15480_dsm_15481_dsm_15498_dsm_15567_dsm_15692_dsm_17763_and_dsm_22608,
+    for_dsm_14428, for_dsm_23669, medium_339_modified_for_dsm_12679, medium_339_modified_for_dsm_12858,
+    medium_339_modified_for_dsm_19450, medium_339_modified_for_dsm_22006, medium_339_modified_for_dsm_5676,
+    medium_339_modified_for_dsm_6011, medium_339_modified_for_dsm_6400, wilkins_chalgren_anaerobe_broth,
+    wilkins_chalgren_anaerobe_broth_oxoid_cm_643'
+- timestamp: '2026-08-06T03:05:34.561187+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 12 source recipe(s) on fingerprint 3128b39786d51b612014535910ef72329ed5c5a3a02edf4e926ae43897c96a22
+  source: for_dsm_14204_dsm_14205_dsm_14206_dsm_14207_dsm_14924_dsm_15176_dsm_15243_dsm_15248_dsm_15480_dsm_15481_dsm_15498_dsm_15567_dsm_15692_dsm_17763_and_dsm_22608.yaml,
+    for_dsm_14428.yaml, for_dsm_23669.yaml, medium_339_modified_for_dsm_12679.yaml,
+    medium_339_modified_for_dsm_12858.yaml, medium_339_modified_for_dsm_19450.yaml,
+    medium_339_modified_for_dsm_22006.yaml, medium_339_modified_for_dsm_5676.yaml,
+    medium_339_modified_for_dsm_6011.yaml, medium_339_modified_for_dsm_6400.yaml,
+    wilkins_chalgren_an
+parent_media:
+  path: data/normalized_yaml/bacterial/for_dsm_14428.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005041
+  name: for_dsm_14428
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.
+synonyms:
+- name: for_dsm_14204_dsm_14205_dsm_14206_dsm_14207_dsm_14924_dsm_15176_dsm_15243_dsm_15248_dsm_15480_dsm_15481_dsm_15498_dsm_15567_dsm_15692_dsm_17763_and_dsm_22608
+  source: KOMODO
+  source_id: komodo.medium:339.1
+  original_category: bacterial
+- name: for_dsm_14428
+  source: KOMODO
+  source_id: komodo.medium:339.2
+  original_category: bacterial
+- name: for_dsm_23669
+  source: KOMODO
+  source_id: komodo.medium:339.3
+  original_category: bacterial
+- name: medium_339_modified_for_dsm_12679
+  source: KOMODO
+  source_id: komodo.medium:339_12679
+  original_category: bacterial
+- name: medium_339_modified_for_dsm_12858
+  source: KOMODO
+  source_id: komodo.medium:339_12858
+  original_category: bacterial
+- name: medium_339_modified_for_dsm_19450
+  source: KOMODO
+  source_id: komodo.medium:339_19450
+  original_category: bacterial
+- name: medium_339_modified_for_dsm_22006
+  source: KOMODO
+  source_id: komodo.medium:339_22006
+  original_category: bacterial
+- name: medium_339_modified_for_dsm_5676
+  source: KOMODO
+  source_id: komodo.medium:339_5676
+  original_category: bacterial
+- name: medium_339_modified_for_dsm_6011
+  source: KOMODO
+  source_id: komodo.medium:339_6011
+  original_category: bacterial
+- name: medium_339_modified_for_dsm_6400
+  source: KOMODO
+  source_id: komodo.medium:339_6400
+  original_category: bacterial
+- name: wilkins_chalgren_anaerobe_broth_oxoid_cm_643
+  source: KOMODO
+  source_id: komodo.medium:339
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- for_dsm_14204_dsm_14205_dsm_14206_dsm_14207_dsm_14924_dsm_15176_dsm_15243_dsm_15248_dsm_15480_dsm_15481_dsm_15498_dsm_15567_dsm_15692_dsm_17763_and_dsm_22608
+- for_dsm_14428
+- for_dsm_23669
+- medium_339_modified_for_dsm_12679
+- medium_339_modified_for_dsm_12858
+- medium_339_modified_for_dsm_19450
+- medium_339_modified_for_dsm_22006
+- medium_339_modified_for_dsm_5676
+- medium_339_modified_for_dsm_6011
+- medium_339_modified_for_dsm_6400
+- wilkins_chalgren_anaerobe_broth
+- wilkins_chalgren_anaerobe_broth_oxoid_cm_643
+merge_fingerprint: 3128b39786d51b612014535910ef72329ed5c5a3a02edf4e926ae43897c96a22

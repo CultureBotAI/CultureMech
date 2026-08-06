@@ -1,6 +1,7 @@
 id: CultureMech:015591
 name: mGAM plus
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Peptone
@@ -101,7 +102,7 @@ ingredients:
     label: ''
 description: Gifu Anaerobic Broth, with added Hemin and Menadione
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: mGAM plus
@@ -115,6 +116,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015591'
+- timestamp: '2026-05-16T09:04:41.651367+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:06.362111+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint df1403caff70958fe1170c60f67c8003818cd64dcdd9b426f585169110541f1c
+  source: mgam_plus.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: df1403caff70958fe1170c60f67c8003818cd64dcdd9b426f585169110541f1c

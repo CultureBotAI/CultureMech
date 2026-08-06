@@ -3,6 +3,7 @@ name: columbia_broth_supplemented_with_0_01_3_nad_and_25_mm_cacl2
 original_name: Columbia broth supplemented with 0.01% 3-NAD and 25 mM CaCl2
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: CaCl2
   concentration:
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
-    label: CaCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
 - preferred_term: β-NAD
   concentration:
     value: '0.01'
@@ -53,8 +54,8 @@ ingredients:
   term:
     id: CHEBI:26710
     label: Sodium Chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: Sodium Chloride
 - preferred_term: Dextrose
   concentration:
@@ -65,9 +66,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Dextrose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Sodium Carbonate
   concentration:
     value: '0.6'
@@ -77,9 +78,9 @@ ingredients:
   term:
     id: CHEBI:29377
     label: sodium carbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
-    label: Sodium Carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
 - preferred_term: Tris (Hydroxymethyl) Aminomethane
   concentration:
     value: '0.83'
@@ -94,6 +95,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Magnesium Sulfate (anhydrous)
   concentration:
     value: '0.1'
@@ -120,8 +124,8 @@ ingredients:
     value: '0.1'
     unit: G_PER_L
   notes: 'Properties: Organic compound, Simple component, Defined component'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000223
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91247
     label: L-Cysteine HCl
   term:
     id: CHEBI:91247
@@ -162,6 +166,17 @@ curation_history:
   notes: Normalized name from "Columbia broth supplemented with 0.01% 3-NAD and 25
     mM CaCl2" to "columbia_broth_supplemented_with_0_01_3_nad_and_25_mm_cacl2" for
     consistent matching
-merge_fingerprint: 01e24ba60a04d23507bbc9297a83d61a58041669f88cd64cee89579a797925cd
+- timestamp: '2026-06-05T07:40:54.701832+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:29.030747+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d34b93f92e647cb1a5d52481fc60f846ad7cd2ed98d27290d75c57bb7cfc14da
+  source: columbia_broth_supplemented_with_0_01_3_nad_and_25_mm_cacl2.yaml
+merge_fingerprint: d34b93f92e647cb1a5d52481fc60f846ad7cd2ed98d27290d75c57bb7cfc14da
 merged_from:
 - columbia_broth_supplemented_with_0_01_3_nad_and_25_mm_cacl2

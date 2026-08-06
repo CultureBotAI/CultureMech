@@ -1,6 +1,7 @@
 id: CultureMech:015645
 name: MTM noNitrogen noCarbon
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Potassium phosphate dibasic trihydrate
@@ -48,6 +49,9 @@ ingredients:
     value: '2.0'
     unit: MG_PER_L
   notes: 'CAS: 10025-77-1; MW: 270.3; From MME Trace Minerals'
+  term:
+    id: CHEBI:30808
+    label: ''
 - preferred_term: Boric Acid
   concentration:
     value: '0.05'
@@ -69,6 +73,9 @@ ingredients:
     value: '0.03'
     unit: MG_PER_L
   notes: 'CAS: 10125-13-0; MW: 170.48; From MME Trace Minerals'
+  term:
+    id: CHEBI:86318
+    label: ''
 - preferred_term: Manganese (II) chloride tetrahydrate
   concentration:
     value: '0.05'
@@ -107,7 +114,7 @@ ingredients:
     label: ''
 description: Defined media without C and N from PNNL with TAPS
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: MTM noNitrogen noCarbon
@@ -121,8 +128,17 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015645'
+- timestamp: '2026-05-16T09:04:42.040905+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:06.904695+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 038f25d7f85f7599e219cca7a12eca207b78778230aedb908b431c02b2ffd58d
+  source: mtm_nonitrogen_nocarbon.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: cea02429e6f25d89cbd3559dc45f08c501e71499d37d86f5e21777446ea77ca3
+merge_fingerprint: 038f25d7f85f7599e219cca7a12eca207b78778230aedb908b431c02b2ffd58d
 merged_from:
 - mtm_nonitrogen_nocarbon

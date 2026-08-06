@@ -3,6 +3,7 @@ name: lactobacilli_mrs_broth
 original_name: Lactobacilli MRS Broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: DI Water
@@ -40,6 +41,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Lactobacilli MRS Broth" to "lactobacilli_mrs_broth"
     for consistent matching
+- timestamp: '2026-08-06T03:05:39.891172+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint aa707f01da6ff8b18c948c246d8590a32d8b85570e35b1747a1bb39ed4f9aad5
+  source: lactobacilli_mrs_broth.yaml
 merge_fingerprint: aa707f01da6ff8b18c948c246d8590a32d8b85570e35b1747a1bb39ed4f9aad5
 merged_from:
 - lactobacilli_mrs_broth

@@ -1,6 +1,7 @@
 id: CultureMech:015830
 name: ZMB noFolicAcid
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: ZMB
@@ -17,7 +18,7 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-30-3; MW: 441.4'
 description: Media for culturing Bifidobacterium minus folic acid
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: ZMB noFolicAcid
@@ -31,6 +32,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015830'
+- timestamp: '2026-05-16T09:04:44.219256+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:09.225759+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 6b20f9aa8766138ba53cfcdf49a9a3c941f90bd902d882ebb491b994a02d3b74
+  source: zmb_nofolicacid.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: 6b20f9aa8766138ba53cfcdf49a9a3c941f90bd902d882ebb491b994a02d3b74

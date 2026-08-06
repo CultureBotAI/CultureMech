@@ -3,6 +3,7 @@ name: brain_heart_infusion_bhi_agar_supplemented_with_haemin_and_nad
 original_name: Brain–heart infusion (BHI) agar supplemented with haemin and NAD
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Haemin
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:50385
     label: Haemin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
     label: Haemin
 - preferred_term: NAD
   concentration:
@@ -31,9 +32,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Calf brains
   term:
     id: UBERON:0000955
@@ -175,6 +176,17 @@ curation_history:
   notes: Normalized name from "Brain–heart infusion (BHI) agar supplemented with haemin
     and NAD" to "brain_heart_infusion_bhi_agar_supplemented_with_haemin_and_nad" for
     consistent matching
+- timestamp: '2026-06-05T07:40:51.429940+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:25.845710+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint ae64278abfc5e270a0c28911ec0b5bc3c57c7b4f0eb907e2790b711bb4d90b63
+  source: brain_heart_infusion_bhi_agar_supplemented_with_haemin_and_nad.yaml
 merge_fingerprint: ae64278abfc5e270a0c28911ec0b5bc3c57c7b4f0eb907e2790b711bb4d90b63
 merged_from:
 - brain_heart_infusion_bhi_agar_supplemented_with_haemin_and_nad

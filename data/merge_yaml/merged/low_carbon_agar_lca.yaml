@@ -3,6 +3,7 @@ name: low_carbon_agar_lca
 original_name: Low Carbon Agar-LCA
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 1818
@@ -18,18 +19,18 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D(+)-Glucose
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Mg(SO4) x 7 H2O
   concentration:
@@ -42,8 +43,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: NaNO3
   term:
@@ -66,8 +67,8 @@ ingredients:
   concentration:
     value: '9'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -89,6 +90,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Low Carbon Agar-LCA" to "low_carbon_agar_lca" for consistent
     matching
-merge_fingerprint: 1f78e54f823e2ee3f64d6d211c1a08ff59a42f56825f7938f2aa1ebfedb33461
+- timestamp: '2026-06-05T07:41:11.388488+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:00.578155+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:40.516592+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint a3da8dae2e1d15e2455b8851e9828d41ad79f0f34fd7a0f848e3151d706ba730
+  source: low_carbon_agar_lca.yaml
+merge_fingerprint: a3da8dae2e1d15e2455b8851e9828d41ad79f0f34fd7a0f848e3151d706ba730
 merged_from:
 - low_carbon_agar_lca

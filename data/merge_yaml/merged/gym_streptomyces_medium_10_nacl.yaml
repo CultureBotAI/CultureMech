@@ -3,6 +3,7 @@ name: gym_streptomyces_medium_10_nacl
 original_name: GYM STREPTOMYCES medium 10% NACL
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
@@ -20,8 +21,8 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Yeast extract
   concentration:
@@ -38,8 +39,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001099
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
     label: CaCO3
 - preferred_term: NaCl
   term:
@@ -48,8 +49,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Agar
   term:
@@ -58,8 +59,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -85,11 +86,35 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "GYM STREPTOMYCES medium 10% NACL" to "gym_streptomyces_medium_10_nacl"
     for consistent matching
-- timestamp: '2026-04-17T06:29:16.147040+00:00'
+- timestamp: '2026-06-05T07:40:19.452681+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:40.743469+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_1159_GYM_STREPTOMYCES_medium_10_NACL, gym_agar_with_15_nacl,
     gym_streptomyces_medium_10_nacl'
+- timestamp: '2026-08-06T03:04:40.743508+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 0ba7a14559831a63c6352c257a01f543d306c280959153c0ce2d3697d09bc70b
+  source: KOMODO_1159_GYM_STREPTOMYCES_medium_10_NACL.yaml, gym_agar_with_15_nacl.yaml,
+    gym_streptomyces_medium_10_nacl.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/gym_streptomyces_medium_10_nacl.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000597
+  name: gym_streptomyces_medium_10_nacl
+  notes: KOMODO record explicitly cites DSMZ Medium 1159; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 1159; local ingredient
+  and concentration signatures match.
 synonyms:
 - name: gym_agar_with_15_nacl
   source: MediaDive

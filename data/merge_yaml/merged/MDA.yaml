@@ -3,6 +3,7 @@ name: mda
 original_name: MDA
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 1816
@@ -30,8 +31,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000750
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53423
     label: Tween 40
 - preferred_term: Glycerol
   term:
@@ -40,8 +41,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: Olive oil
   concentration:
@@ -58,8 +59,8 @@ ingredients:
   concentration:
     value: '7.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -80,6 +81,17 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "MDA" to "mda" for consistent matching
+- timestamp: '2026-06-05T07:41:13.475556+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:42.426276+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 8f3b7ffac23e8b39f4502f6b81a389bb67847d35cc2878df3bb67cf84a8f2fce
+  source: mda.yaml
 merge_fingerprint: 8f3b7ffac23e8b39f4502f6b81a389bb67847d35cc2878df3bb67cf84a8f2fce
 merged_from:
 - mda

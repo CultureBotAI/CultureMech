@@ -3,6 +3,7 @@ name: kaminskyj_minimal_medium
 original_name: Kaminskyj Minimal Medium
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sodium nitrate
@@ -12,8 +13,8 @@ ingredients:
   concentration:
     value: '1411.9'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000388
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
     label: Sodium nitrate
 - preferred_term: Sodium EDTA
   concentration:
@@ -27,8 +28,8 @@ ingredients:
     value: '55.51'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Cobalt chloride
   concentration:
@@ -41,6 +42,9 @@ ingredients:
   concentration:
     value: '0.01798'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.006199'
@@ -52,10 +56,16 @@ ingredients:
   concentration:
     value: '0.006408'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Manganese chloride
   concentration:
     value: '0.02526'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -63,8 +73,8 @@ ingredients:
   concentration:
     value: '0.1779'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Thiamine
   term:
@@ -84,8 +94,8 @@ ingredients:
   concentration:
     value: '42.2'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Potassium chloride
   concentration:
@@ -94,9 +104,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -104,13 +114,16 @@ ingredients:
   concentration:
     value: '0.07651'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '223.4'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -144,6 +157,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Kaminskyj Minimal Medium" to "kaminskyj_minimal_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:41:10.337033+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:39.529646+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e53e4997a5a89e956d64fa6231762aa57ddc2c70843e01bceb14abbe4aad634f
+  source: kaminskyj_minimal_medium.yaml
 media_term:
   preferred_term: MediaDB Medium 308
   term:
@@ -156,6 +180,6 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
-merge_fingerprint: e33aa5ba24fff0d38e31a7b05b21b63f576f7d1cb9b0ac2ec9624125da98b424
+merge_fingerprint: e53e4997a5a89e956d64fa6231762aa57ddc2c70843e01bceb14abbe4aad634f
 merged_from:
 - kaminskyj_minimal_medium

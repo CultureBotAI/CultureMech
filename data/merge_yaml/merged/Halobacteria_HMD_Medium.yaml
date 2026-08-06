@@ -1,9 +1,10 @@
-id: CultureMech:010338
+id: CultureMech:010337
 name: halobacteria_hmd_medium
 original_name: Halobacteria HMD Medium
-category: bacterial
+category: archaea
 medium_type: COMPLEX
-physical_state: SOLID_AGAR
+composition_type: UNDEFINED
+physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: NaCl
   concentration:
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.1'
@@ -46,9 +47,9 @@ ingredients:
     compound'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
@@ -59,9 +60,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '20'
@@ -79,18 +80,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:32036
-    label: ''
-- preferred_term: agar
-  concentration:
-    value: '18'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: agar
+    label: potassium sulfate
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '0.1'
@@ -102,40 +92,55 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Undefined component'
 media_term:
-  preferred_term: TOGO Medium M918
+  preferred_term: TOGO Medium M917
   term:
-    id: TOGO:M918
+    id: TOGO:M917
     label: Halobacteria HMD Medium
-notes: 'Source: https://togomedium.org/medium/M918
+notes: 'Source: https://togomedium.org/medium/M917
 
-  Original source: JCM - JCM_M878-2
+  Original source: JCM - JCM_M878
 
   Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=878'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.959573Z'
+- timestamp: '2026-01-27T06:35:55.958181Z'
   curator: togo-import
   action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M918'
-- timestamp: '2026-01-28T19:48:16.629126Z'
+  notes: 'Source: JCM, ID: M917'
+- timestamp: '2026-01-28T19:48:31.195258Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:20:13.109513Z'
+- timestamp: '2026-03-13T06:20:13.103518Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:010338'
-- timestamp: '2026-03-17T06:30:00.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:010337'
+- timestamp: '2026-03-17T06:30:31.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:32.091593+00:00'
+- timestamp: '2026-03-17T19:46:32.085762+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "Halobacteria HMD Medium" to "halobacteria_hmd_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:40:45.670560+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:52.037832+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:27.880094+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 3a73a3958ad056a1600d7aaa389a8e249639658f6a9495e07eeb4a864a102cc7
+  source: TOGO_M917_Halobacteria_HMD_Medium.yaml
 high_metal: true
-merge_fingerprint: 9679a774114725dac91dd0ab4b9598fb53707901f13a79a52559bbfc8aa2fb96
+merge_fingerprint: 3a73a3958ad056a1600d7aaa389a8e249639658f6a9495e07eeb4a864a102cc7
 merged_from:
-- TOGO_M918_Halobacteria_HMD_Medium
+- TOGO_M917_Halobacteria_HMD_Medium

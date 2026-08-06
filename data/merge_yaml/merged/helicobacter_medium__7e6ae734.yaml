@@ -1,0 +1,90 @@
+id: CultureMech:000742
+name: helicobacter_medium
+original_name: HELICOBACTER MEDIUM
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_value: 5.0
+media_term:
+  preferred_term: DSMZ Medium 1279
+  term:
+    id: mediadive.medium:1279
+    label: HELICOBACTER MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1279.pdf'
+ingredients:
+- preferred_term: Brucella Broth
+  concentration:
+    value: '35'
+    unit: G_PER_L
+- preferred_term: Demineralized water
+  term:
+    id: CHEBI:15377
+    label: Demineralized water
+  concentration:
+    value: '80'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Demineralized water
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Vitox
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+- preferred_term: Skirrow supplement
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Amphotericin
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Adjust with HCl to pH 5.0, make anoxic under a stream of N2/CO2, distribute
+    in Hungate tubes to 8 ml and autoclave.
+- step_number: 2
+  action: MIX
+  description: 'Add aseptically to each tube:'
+- step_number: 3
+  action: MIX
+  description: Add 1 ml of sterile air to each tube.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.978909Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1279'
+- timestamp: '2026-03-13T06:18:57.999704Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000742'
+- timestamp: '2026-03-17T06:29:49.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:09.344535+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HELICOBACTER MEDIUM" to "helicobacter_medium" for consistent
+    matching
+- timestamp: '2026-06-05T07:41:08.345658+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:37.446574+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 7e6ae7340f276d403b937303afeddda23a500d07bf01338bb1056ea95119692d
+  source: helicobacter_medium.yaml
+merge_fingerprint: 7e6ae7340f276d403b937303afeddda23a500d07bf01338bb1056ea95119692d
+merged_from:
+- helicobacter_medium

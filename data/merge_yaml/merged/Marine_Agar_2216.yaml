@@ -1,8 +1,9 @@
-id: CultureMech:007629
+id: CultureMech:008095
 name: marine_agar_2216
 original_name: Marine Agar 2216
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,48 +15,111 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
-- preferred_term: Marine agar 2216 (BD-Difco)
+- preferred_term: Bacto Marine Agar 2216 (Difco)
   concentration:
     value: '55.1'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
 media_term:
-  preferred_term: TOGO Medium M110
+  preferred_term: TOGO Medium M1547
   term:
-    id: TOGO:M110
+    id: TOGO:M1547
     label: Marine Agar 2216
-notes: 'Source: https://togomedium.org/medium/M110
+notes: 'Source: https://togomedium.org/medium/M1547
 
-  Original source: JCM - JCM_M118
+  Original source: NBRC - NBRC_M340
 
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=118'
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=340'
 applications:
 - Microbial cultivation
+references:
+- reference: PMID:18319453
+  year: 2008
+  notes: Primary literature source reporting colony formation by Sneathiella glossodoripedis
+    type strain MKT133T on Marine Agar 2216 at 30 C after 4-5 days.
+- reference: NCBI:GCF_000616095.1
+  notes: NCBI Datasets genome assembly page for Sneathiella glossodoripedis JCM 23214,
+    the same type strain lineage as MKT133T / IAM 15419 / KCTC 12842.
+- reference: BacDive:134304
+  notes: BacDive type-strain record linking MKT133 / IAM 15419 / KCTC 12842 / JCM
+    23214 to NCBI Taxonomy ID 1236958 and genome assembly GCA_000616095.
 curation_history:
-- timestamp: '2026-01-27T06:35:53.917290Z'
+- timestamp: '2026-01-27T06:35:57.821757Z'
   curator: togo-import
   action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M110'
-- timestamp: '2026-01-28T19:48:33.908736Z'
+  notes: 'Source: NBRC, ID: M1547'
+- timestamp: '2026-01-28T19:48:23.849174Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:19:50.184666Z'
+- timestamp: '2026-03-13T06:19:53.461918Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:007629'
-- timestamp: '2026-03-17T06:30:37.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:008095'
+- timestamp: '2026-03-17T06:30:15.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:08.548312+00:00'
+- timestamp: '2026-03-17T19:46:11.996162+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "Marine Agar 2216" to "marine_agar_2216" for consistent
     matching
-merge_fingerprint: 5672d6e34bd2a62397754980fedd13e9d2609e264884c8f9a61bf4007d1d8b2d
+- timestamp: '2026-05-05T00:00:00Z'
+  curator: literature_review_apply
+  action: ADDED_GROWTH_EVIDENCE
+  notes: Added strain-specific Marine Agar 2216 colony-formation evidence for Sneathiella
+    glossodoripedis MKT133T / JCM 23214.
+- timestamp: '2026-06-05T07:40:33.219863+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T00:58:02.661292+00:00'
+  curator: curate_organism_culture_type.py
+  action: SET_ORGANISM_CULTURE_TYPE
+  notes: 'Inferred isolate: 1 specific strain(s) named, no community signal (#142)'
+  changes: Set organism_culture_type=isolate (was unset)
+- timestamp: '2026-08-06T03:05:08.915667+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 9d772c804133a39265312a450f4065143fe76c314864848c7174ccabe4123bee
+  source: TOGO_M1547_Marine_Agar_2216.yaml
+organism_culture_type: isolate
+target_organisms:
+- preferred_term: Sneathiella glossodoripedis
+  term:
+    id: NCBITaxon:1236958
+    label: Sneathiella glossodoripedis JCM 23214
+  genome_assembly_id:
+  - GCA_000616095
+  - GCF_000616095.1
+  strain: MKT133T; IAM 15419T; KCTC 12842T; JCM 23214T
+  growth_metrics:
+  - temperature_celsius: 30.0
+    measurement_conditions: Marine Agar 2216; aerobic incubation at 30 C; source reports
+      colonies less than 1 mm diameter after 4-5 days.
+    evidence:
+    - reference: PMID:18319453
+      supports: SUPPORT
+      snippet: Colonies of the strain after 4-5 days incubation on marine agar 2216
+        at 30 degrees C were less than 1 mm in diameter.
+      explanation: Kurahashi et al. report colony formation for strain MKT133T on
+        Marine Agar 2216, matching the CultureMech parent medium name.
+    is_max_attainment: false
+  evidence:
+  - reference: PMID:18319453
+    supports: SUPPORT
+    explanation: The species-description paper identifies MKT133T as the type strain
+      and reports growth as colony formation on Marine Agar 2216.
+  - reference: NCBI:GCF_000616095.1
+    supports: SUPPORT
+    explanation: NCBI Datasets lists the genome assembly for Sneathiella glossodoripedis
+      JCM 23214, an equivalent type-strain deposit.
+merge_fingerprint: 9d772c804133a39265312a450f4065143fe76c314864848c7174ccabe4123bee
 merged_from:
-- marine_agar_2216
+- TOGO_M1547_Marine_Agar_2216

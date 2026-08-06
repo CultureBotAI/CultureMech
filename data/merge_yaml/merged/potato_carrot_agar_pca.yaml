@@ -3,6 +3,7 @@ name: potato_carrot_agar_pca
 original_name: Potato Carrot Agar (PCA)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Carrot
   concentration:
@@ -30,9 +31,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Potato
   concentration:
     value: '20'
@@ -72,6 +73,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Potato Carrot Agar (PCA)" to "potato_carrot_agar_pca"
     for consistent matching
+- timestamp: '2026-06-05T07:41:42.374773+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:53.378686+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 7d2a12a256ebdace1cde1bafccfbcc0bf6a9735a85c67e5b61d47a1219036f0f
+  source: potato_carrot_agar_pca.yaml
 merge_fingerprint: 7d2a12a256ebdace1cde1bafccfbcc0bf6a9735a85c67e5b61d47a1219036f0f
 merged_from:
 - potato_carrot_agar_pca

@@ -4,6 +4,7 @@ original_name: '116'
 category: bacterial
 description: 116. NBRC 114.
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Bacto-Yeast Nitrogen Base w/o Amino acids (Difco)6.7gGlucose20gL-Leucine60mgL-Histidine20mgL-Tryptophan20mgL-Methionine20mgDistilled
@@ -40,11 +41,20 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007460'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:45.809514'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Bacto-Yeast Nitrogen Base w/o
     Amino acids (Difco)6.7gGlucose20gL-Leucine60mgL-Histidine20mgL-Tryptophan20mgL-Methionine20mgDistilled
     water1LAgar15g'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-05-16T09:03:06.591026+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:05:04.613327+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 397e5226a50228e4235b5c45ffcc97add7f8125dba817bce23264a64059f314e
+  source: NBRC_116.yaml
 merge_fingerprint: 397e5226a50228e4235b5c45ffcc97add7f8125dba817bce23264a64059f314e
 merged_from:
 - NBRC_116

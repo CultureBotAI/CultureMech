@@ -3,6 +3,7 @@ name: modified_nutrient_agar
 original_name: MODIFIED NUTRIENT AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
@@ -27,8 +28,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Sea water
   concentration:
@@ -58,6 +59,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MODIFIED NUTRIENT AGAR" to "modified_nutrient_agar"
     for consistent matching
+- timestamp: '2026-06-05T07:41:37.551613+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:49.441789+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d4485b694d124f4e4a094a1a84c26200ec792a8d145bb8c1cd766abc258b273d
+  source: modified_nutrient_agar.yaml
 kg_microbe_match: mediadive.medium:12
 merge_fingerprint: d4485b694d124f4e4a094a1a84c26200ec792a8d145bb8c1cd766abc258b273d
 merged_from:

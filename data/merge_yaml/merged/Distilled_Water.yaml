@@ -3,6 +3,7 @@ name: distilled_water
 original_name: Distilled Water
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 media_term:
   preferred_term: TOGO Medium M682
@@ -51,11 +52,32 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Distilled Water" to "distilled_water" for consistent
     matching
-- timestamp: '2026-04-17T06:29:40.640755+00:00'
+- timestamp: '2026-06-05T07:40:43.516945+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:08.877924+00:00'
   curator: recipe-merger
   action: Merged 5 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M1525_GAM_Medium, TOGO_M682_Distilled_Water, distilled_water,
     togo_medium_m1444, water'
+- timestamp: '2026-08-06T03:05:08.877977+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 5 source recipe(s) on fingerprint f6481d0bcfa02ad682282ee3d57c5eac82754fe1de56a29860075f15c1842b69
+  source: TOGO_M1525_GAM_Medium.yaml, TOGO_M682_Distilled_Water.yaml, distilled_water.yaml,
+    togo_medium_m1444.yaml, water.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M1525_GAM_Medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008071
+  name: gam_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.
 synonyms:
 - name: gam_medium
   source: TOGO
@@ -67,10 +89,10 @@ synonyms:
   original_category: bacterial
 - name: Water
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 categories:
-- SPECIALIZED
 - bacterial
+- specialized
 merged_from:
 - TOGO_M1525_GAM_Medium
 - TOGO_M682_Distilled_Water

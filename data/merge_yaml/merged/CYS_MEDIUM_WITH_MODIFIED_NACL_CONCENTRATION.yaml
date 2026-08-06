@@ -3,6 +3,7 @@ name: cys_medium_with_modified_nacl_concentration
 original_name: CYS MEDIUM WITH MODIFIED NACL CONCENTRATION
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:
@@ -28,8 +29,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
     label: Starch
 - preferred_term: NaCl
   term:
@@ -38,8 +39,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgCl2
   term:
@@ -48,8 +49,8 @@ ingredients:
   concentration:
     value: '0.125'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000663
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6636
     label: MgCl2
 - preferred_term: CaCl2
   term:
@@ -58,8 +59,8 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
     label: CaCl2
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -68,8 +69,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: Gelrite
   term:
@@ -78,8 +79,8 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000929
+  mediaingredientmech_chebi_term:
+    id: CHEBI:85248
     label: Gelrite
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -88,8 +89,8 @@ ingredients:
   concentration:
     value: '12'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: VOSO4 x H2O
   concentration:
@@ -102,8 +103,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -112,8 +113,8 @@ ingredients:
   concentration:
     value: '0.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
@@ -122,8 +123,8 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
     label: CuSO4 x 5 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -132,8 +133,8 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -142,8 +143,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 applications:
 - Microbial cultivation
@@ -169,11 +170,34 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CYS MEDIUM WITH MODIFIED NACL CONCENTRATION" to "cys_medium_with_modified_nacl_concentration"
     for consistent matching
-- timestamp: '2026-04-17T06:29:15.469553+00:00'
+- timestamp: '2026-06-05T07:40:19.029494+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 12 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:39.879038+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_1108_CYS_MEDIUM, KOMODO_1108a_CYS_MEDIUM_WITH_MODIFIED_NACL_CONCENTRATION,
     cys_medium, cys_medium_with_modified_nacl_concentration'
+- timestamp: '2026-08-06T03:04:39.879107+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 4 source recipe(s) on fingerprint 6dd1f66e84dc624e2a99a76cfa33fec9a2ec8bd8a2471f7382da83ffda2934cc
+  source: KOMODO_1108_CYS_MEDIUM.yaml, KOMODO_1108a_CYS_MEDIUM_WITH_MODIFIED_NACL_CONCENTRATION.yaml,
+    cys_medium.yaml, cys_medium_with_modified_nacl_concentration.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/cys_medium_with_modified_nacl_concentration.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000542
+  name: cys_medium_with_modified_nacl_concentration
+  notes: KOMODO record states DSMZ Medium 1108a provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 synonyms:
 - name: cys_medium
   source: KOMODO

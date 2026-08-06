@@ -1,0 +1,151 @@
+id: CultureMech:003056
+name: blood_agar
+original_name: BLOOD AGAR
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J70
+  term:
+    id: mediadive.medium:J70
+    label: BLOOD AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=70'
+ingredients:
+- preferred_term: Heart muscle infusion solids
+  notes: From BD-Difco Blood Agar Base (211037); Infusion from heart muscle - provides
+    vitamins, nitrogen, carbon
+  source: BD BBL 211037
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-05T12:55:23.800014'
+    ontology_source: FOODON
+- preferred_term: Pancreatic digest of casein
+  notes: From BD-Difco Blood Agar Base (211037); Nitrogen and amino acid source
+  source: BD BBL 211037
+  concentration:
+    value: '13.0'
+    unit: G_PER_L
+  term:
+    id: MICRO:0000182
+    label: tryptone
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-05T12:55:23.800026'
+    ontology_source: FOODON
+- preferred_term: Yeast extract
+  notes: From BD-Difco Blood Agar Base (211037); Vitamin and amino acid source
+  source: BD BBL 211037
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-05T12:55:23.800029'
+    ontology_source: FOODON
+- preferred_term: Sodium chloride
+  notes: From BD-Difco Blood Agar Base (211037); Maintains osmotic equilibrium
+  source: BD BBL 211037
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-05T12:55:23.800030'
+    ontology_source: CHEBI
+- preferred_term: Agar
+  notes: From BD-Difco Blood Agar Base (211037); Solidifying agent
+  source: BD BBL 211037
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:2509
+    label: agar
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-05T12:55:23.800032'
+    ontology_source: CHEBI
+- preferred_term: Defibrinated rabbit blood
+  term:
+    id: UBERON:0000178
+    label: blood
+  concentration:
+    value: '5'
+    unit: PERCENT_V_V
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-05T12:55:23.800033'
+    ontology_source: UBERON
+  notes: Added aseptically after autoclaving and cooling to 45°C; 5% final concentration
+  source: Blood additive per JCM preparation
+preparation_steps:
+- step_number: 1
+  action: POUR_PLATES
+  description: Prepare Blood agar base (BD-Difco) according to the direction, sterilize
+    and cool to about 45C. Aseptically add final 5% sterile defibrinated rabbit blood.
+    Mix and quickly dispense into sterile test tubes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI,
+    1 de-grounded (mixture or unverifiable).
+- timestamp: '2026-01-26T17:53:15.680102Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J70'
+- timestamp: '2026-02-03T11:26:55.818678'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:17.476406Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003056'
+- timestamp: '2026-03-17T19:45:31.188093+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BLOOD AGAR" to "blood_agar" for consistent matching
+- timestamp: '2026-04-05T12:55:23.800036'
+  curator: expand_blood_agar
+  action: EXPANDED_COMMERCIAL_PRODUCT
+  changes: Replaced placeholder with BD-Difco Blood Agar Base composition + 5% rabbit
+    blood (6 ingredients)
+  source: BD BBL 211037 + rabbit blood
+  notes: 'Commercial product expansion: BD-Difco Blood Agar Base (Infusion Agar) with
+    rabbit blood'
+- timestamp: '2026-05-16T08:57:24.599978+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(3 entries)
+- timestamp: '2026-08-06T03:05:25.606427+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 45bfc12d73e50979e2254eda907d95b0a172e8a525bd53b82f5c77c343519e92
+  source: blood_agar.yaml
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- commercial_product
+kg_microbe_match: mediadive.medium:101
+merge_fingerprint: 45bfc12d73e50979e2254eda907d95b0a172e8a525bd53b82f5c77c343519e92
+merged_from:
+- blood_agar

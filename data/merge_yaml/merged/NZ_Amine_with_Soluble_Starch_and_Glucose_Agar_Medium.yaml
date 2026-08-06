@@ -3,6 +3,7 @@ name: nz_amine_with_soluble_starch_and_glucose_agar_medium
 original_name: NZ Amine with Soluble Starch and Glucose Agar Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -37,14 +38,17 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Soluble starch
   concentration:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Undefined component'
+  term:
+    id: CHEBI:28017
+    label: ''
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -53,9 +57,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: N-Z-Amine A
   concentration:
     value: '5'
@@ -94,6 +98,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "NZ Amine with Soluble Starch and Glucose Agar Medium"
     to "nz_amine_with_soluble_starch_and_glucose_agar_medium" for consistent matching
-merge_fingerprint: 840393575b6d6f9951215ce444d78ac3a910bcfb95f9a6a66cc3e809210615f5
+- timestamp: '2026-06-05T07:41:40.265012+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:51.831872+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2b520c27a1ca0ac7e4044625c582074ffa0064f6189c7034f7b4f0afb469921b
+  source: nz_amine_with_soluble_starch_and_glucose_agar_medium.yaml
+merge_fingerprint: 2b520c27a1ca0ac7e4044625c582074ffa0064f6189c7034f7b4f0afb469921b
 merged_from:
 - nz_amine_with_soluble_starch_and_glucose_agar_medium

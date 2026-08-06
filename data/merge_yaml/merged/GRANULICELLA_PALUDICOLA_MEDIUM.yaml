@@ -1,16 +1,20 @@
-id: CultureMech:000749
+id: CultureMech:004037
 name: granulicella_paludicola_medium
-original_name: GRANULICELLA PALUDICOLA MEDIUM
+original_name: GRANULICELLA PALUDICOLA medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_range: 4-5
+ph_range:
+  min: 4.0
+  max: 5.0
+notes: 'pH buffer: alginic acid | Source: KOMODO ModelSEED | ID: 1285 | DSMZ Medium:
+  1285 (mediadive.medium:1285) | Aerobic: No'
 media_term:
-  preferred_term: DSMZ Medium 1285
+  preferred_term: KOMODO Medium 1285
   term:
-    id: mediadive.medium:1285
-    label: GRANULICELLA PALUDICOLA MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1285.pdf'
+    id: komodo.medium:1285
+    label: GRANULICELLA PALUDICOLA medium
 ingredients:
 - preferred_term: Fructose
   term:
@@ -19,8 +23,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000288
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28757
     label: Fructose
 - preferred_term: Yeast extract
   concentration:
@@ -30,12 +34,6 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -43,8 +41,8 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -53,28 +51,28 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: Agar
   term:
@@ -84,38 +82,73 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: The medium may be solidified with 15 g/l agar. Adjust to pH 4.0 - 5.0
-    with alginic acid.
+- preferred_term: alginic
+  notes: Extracted from recipe notes (pH buffer)
+  data_quality_flags:
+  - extracted_from_notes
+  concentration:
+    value: variable
+    unit: VARIABLE
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:13.997866Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1285'
-- timestamp: '2026-01-28T19:48:28.300978Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:18:58.057296Z'
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1285'
+- timestamp: '2026-02-03T11:18:55.818032'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1285
+- timestamp: '2026-03-13T06:19:24.345910Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000749'
-- timestamp: '2026-03-17T06:30:25.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:004037'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: alginic'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:29:44.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:09.410029+00:00'
+- timestamp: '2026-03-17T19:45:39.070076+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "GRANULICELLA PALUDICOLA MEDIUM" to "granulicella_paludicola_medium"
+  notes: Normalized name from "GRANULICELLA PALUDICOLA medium" to "granulicella_paludicola_medium"
     for consistent matching
-merge_fingerprint: f2430fc9e8d5ea3b4245847569e6a75305d48a7f8069d938b5a0dfd79d4cdb0f
+- timestamp: '2026-05-16T09:03:01.063429+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-05-20T06:00:49.950042+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''4.0-5.0'' -> {''min'': 4.0, ''max'': 5.0}'
+- timestamp: '2026-06-05T07:40:20.649342+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:27.728856+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:46:44.043459+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:42.846301+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 980b33958e6ff6c3b62d5a170840ccddeff8904bd87ae93a0caaf4e85fc3d2c9
+  source: KOMODO_1285_GRANULICELLA_PALUDICOLA_medium.yaml
+merge_fingerprint: 980b33958e6ff6c3b62d5a170840ccddeff8904bd87ae93a0caaf4e85fc3d2c9
 merged_from:
-- granulicella_paludicola_medium
+- KOMODO_1285_GRANULICELLA_PALUDICOLA_medium

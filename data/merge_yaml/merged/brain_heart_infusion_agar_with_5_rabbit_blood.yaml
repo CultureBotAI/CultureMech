@@ -1,30 +1,39 @@
-id: CultureMech:003250
+id: CultureMech:010365
 name: brain_heart_infusion_agar_with_5_rabbit_blood
-original_name: BRAIN HEART INFUSION AGAR WITH 5% RABBIT BLOOD
+original_name: Brain Heart Infusion Agar With 5% Rabbit Blood
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-media_term:
-  preferred_term: JCM Medium J901
-  term:
-    id: mediadive.medium:J901
-    label: BRAIN HEART INFUSION AGAR WITH 5% RABBIT BLOOD
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=901
-
-
-  Commercial Product: Brain Heart Infusion
-
-  Supplier: Difco/BD
-
-  Catalog: 237500
-
-  Source: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-
-  Accessed: 2026-03-28
-
-
-  Constituent composition researched from product specification.'
 ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '950'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Rabbit blood
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Calf brains
   term:
     id: UBERON:0000955
@@ -121,46 +130,65 @@ ingredients:
     synonym_type: EXACT
   - synonym_text: sodium phosphate dibasic
     synonym_type: EXACT
-- preferred_term: Rabbit blood
-  concentration:
-    value: '50'
-    unit: G_PER_L
-- preferred_term: Agar
+media_term:
+  preferred_term: TOGO Medium M942
   term:
-    id: CHEBI:2509
-    label: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Mix ingredients except rabbit blood, autoclave and cool to about 50C.
-    Aseptically add 5% (final) sterile defibrinated rabbit blood. Mix and quickly
-    dispense into sterile petri dishes.
+    id: TOGO:M942
+    label: Brain Heart Infusion Agar With 5% Rabbit Blood
+notes: 'Source: https://togomedium.org/medium/M942
+
+  Original source: JCM - JCM_M901
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=901
+
+
+  Commercial Product: Brain Heart Infusion
+
+  Supplier: Difco/BD
+
+  Catalog: 237500
+
+  Source: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:17.948908Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J901'
-- timestamp: '2026-03-13T06:19:18.924087Z'
+- timestamp: '2026-01-27T06:35:56.006071Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M942'
+- timestamp: '2026-01-28T19:48:39.300065Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:13.309962Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:003250'
-- timestamp: '2026-03-17T06:30:19.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:010365'
+- timestamp: '2026-03-17T06:30:49.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:32.816249+00:00'
+- timestamp: '2026-03-17T19:46:32.289512+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BRAIN HEART INFUSION AGAR WITH 5% RABBIT BLOOD" to
+  notes: Normalized name from "Brain Heart Infusion Agar With 5% Rabbit Blood" to
     "brain_heart_infusion_agar_with_5_rabbit_blood" for consistent matching
-merge_fingerprint: 490a0131420ecb03f8aacc773c60a827aa051d6e396bf157e57ba970768cb3e2
+- timestamp: '2026-06-05T07:40:45.906351+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:20.708046+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint acf29ce26a7fd67c4bc98c7ea7a8331a87c9df4c6ece8c3df7e9ed94e58bdfa4
+  source: TOGO_M942_Brain_Heart_Infusion_Agar_With_5_Rabbit_Blood.yaml
+merge_fingerprint: acf29ce26a7fd67c4bc98c7ea7a8331a87c9df4c6ece8c3df7e9ed94e58bdfa4
 merged_from:
-- brain_heart_infusion_agar_with_5_rabbit_blood
+- TOGO_M942_Brain_Heart_Infusion_Agar_With_5_Rabbit_Blood

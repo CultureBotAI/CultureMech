@@ -1,6 +1,7 @@
 id: CultureMech:015495
 name: BHIS_HOMOPIPES
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Calf brains
@@ -65,7 +66,7 @@ ingredients:
   notes: 'CAS: 202185-84-0; MW: 316.39'
 description: Brain heart infusion salt broth
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: BHIS_HOMOPIPES
@@ -79,6 +80,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015495'
+- timestamp: '2026-05-16T09:04:40.316326+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:04.814861+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 19b2721b76b9dda071004e512bb6c4c4c95a759859c309df6b2a208cfdd95547
+  source: bhis_homopipes.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: 19b2721b76b9dda071004e512bb6c4c4c95a759859c309df6b2a208cfdd95547

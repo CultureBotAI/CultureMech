@@ -1,0 +1,291 @@
+id: CultureMech:003657
+name: modified_biebl_and_pfennigs_medium
+original_name: MODIFIED BIEBL AND PFENNIG'S MEDIUM
+category: bacterial
+medium_type: COMPLEX
+composition_type: SEMI_DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 1069
+  term:
+    id: komodo.medium:1069
+    label: MODIFIED BIEBL AND PFENNIG'S MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 1069 | DSMZ Medium: 1069 (mediadive.medium:1069)
+  | Aerobic: No'
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  concentration:
+    value: '0.34'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: Ferric citrate
+  term:
+    id: CHEBI:144421
+    label: Ferric citrate
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:144421
+    label: Ferric citrate
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: HCl
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
+    label: HCl
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
+    label: ZnCl2
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: H3BO3
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1069'
+- timestamp: '2026-02-03T11:19:02.623887'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1069
+- timestamp: '2026-03-13T06:19:21.415954Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003657'
+- timestamp: '2026-03-17T06:30:03.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:35.677195+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MODIFIED BIEBL AND PFENNIG'S MEDIUM" to "modified_biebl_and_pfennigs_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:18.687326+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 14 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:43.397795+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:39.099995+00:00'
+  curator: recipe-merger
+  action: Merged 8 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_1069_MODIFIED_BIEBL_AND_PFENNIG_S_MEDIUM, for_dsm_18064,
+    for_dsm_18713_and_18859, for_dsm_18985, for_dsm_19947_and_19784, for_dsm_21808_and_21809,
+    for_dsm_24766, modified_biebl_and_pfennigs_medium'
+- timestamp: '2026-08-06T03:04:39.100065+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 8 source recipe(s) on fingerprint 2dbff5b41e4170fb1f45b46158b76e8b504bd6c107dbbc9cb69fcc5c22bbdb54
+  source: KOMODO_1069_MODIFIED_BIEBL_AND_PFENNIG_S_MEDIUM.yaml, for_dsm_18064.yaml,
+    for_dsm_18713_and_18859.yaml, for_dsm_18985.yaml, for_dsm_19947_and_19784.yaml,
+    for_dsm_21808_and_21809.yaml, for_dsm_24766.yaml, modified_biebl_and_pfennigs_medium.yaml
+ph_value: 7.0
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_18064.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003651
+  name: for_dsm_18064
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/for_dsm_18713_and_18859.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003652
+  name: for_dsm_18713_and_18859
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/for_dsm_18985.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003654
+  name: for_dsm_18985
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/for_dsm_19947_and_19784.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003653
+  name: for_dsm_19947_and_19784
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/for_dsm_21808_and_21809.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003655
+  name: for_dsm_21808_and_21809
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/for_dsm_24766.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003656
+  name: for_dsm_24766
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/modified_biebl_and_pfennigs_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000501
+  name: modified_biebl_and_pfennigs_medium
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and concentration
+    signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.
+synonyms:
+- name: for_dsm_18064
+  source: KOMODO
+  source_id: komodo.medium:1069.1
+  original_category: bacterial
+- name: for_dsm_18713_and_18859
+  source: KOMODO
+  source_id: komodo.medium:1069.2
+  original_category: bacterial
+- name: for_dsm_18985
+  source: KOMODO
+  source_id: komodo.medium:1069.4
+  original_category: bacterial
+- name: for_dsm_19947_and_19784
+  source: KOMODO
+  source_id: komodo.medium:1069.3
+  original_category: bacterial
+- name: for_dsm_21808_and_21809
+  source: KOMODO
+  source_id: komodo.medium:1069.5
+  original_category: bacterial
+- name: for_dsm_24766
+  source: KOMODO
+  source_id: komodo.medium:1069.6
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- KOMODO_1069_MODIFIED_BIEBL_AND_PFENNIG_S_MEDIUM
+- for_dsm_18064
+- for_dsm_18713_and_18859
+- for_dsm_18985
+- for_dsm_19947_and_19784
+- for_dsm_21808_and_21809
+- for_dsm_24766
+- modified_biebl_and_pfennigs_medium
+merge_fingerprint: 2dbff5b41e4170fb1f45b46158b76e8b504bd6c107dbbc9cb69fcc5c22bbdb54

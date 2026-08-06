@@ -3,6 +3,7 @@ name: sp4_medium_with_glucose
 original_name: SP4 MEDIUM WITH GLUCOSE
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.4
 media_term:
@@ -19,8 +20,8 @@ ingredients:
   concentration:
     value: '0.52'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Tryptone
   concentration:
@@ -54,8 +55,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001075
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31991
     label: Phenol red
 - preferred_term: L-Glutamine
   term:
@@ -64,8 +65,8 @@ ingredients:
   concentration:
     value: '0.0496876'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000220
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18050
     label: L-Glutamine
 preparation_steps:
 - step_number: 1
@@ -101,6 +102,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "SP4 MEDIUM WITH GLUCOSE" to "sp4_medium_with_glucose"
     for consistent matching
+- timestamp: '2026-06-05T07:41:46.124463+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:55.964748+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 9836e27474fd71d30eac00be20dbe19834486f5995a418bc87ee0c4e73fde6e2
+  source: sp4_medium_with_glucose.yaml
 merge_fingerprint: 9836e27474fd71d30eac00be20dbe19834486f5995a418bc87ee0c4e73fde6e2
 merged_from:
 - sp4_medium_with_glucose

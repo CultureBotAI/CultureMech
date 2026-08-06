@@ -3,6 +3,7 @@ name: oatmeal_agar_ph_6_0
 original_name: OATMEAL AGAR (pH 6.0)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.0
 media_term:
@@ -24,8 +25,8 @@ ingredients:
   concentration:
     value: '17.982'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
   notes: Copied from referenced JCM Medium 50
 - preferred_term: FeSO4 x 7 H2O
@@ -35,8 +36,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
   notes: Copied from referenced JCM Medium 50
 - preferred_term: MnCl2 x 4 H2O
@@ -46,8 +47,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
   notes: Copied from referenced JCM Medium 50
 - preferred_term: ZnSO4 x 7 H2O
@@ -57,8 +58,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
   notes: Copied from referenced JCM Medium 50
 preparation_steps:
@@ -97,14 +98,29 @@ curation_history:
   changes: Copied composition from referenced medium (5 ingredients)
   source: CultureMech:002860
   notes: Resolved reference by copying from oatmeal_agar_isp_3 (CultureMech:002860)
-- timestamp: '2026-04-17T06:29:53.037903+00:00'
+- timestamp: '2026-05-16T08:58:11.849540+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(2 keys) -> list(1 entries)
+- timestamp: '2026-06-05T07:41:40.326208+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:21.757511+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: acidic_oatmeal_agar_ph_5_0, oatmeal_agar_a_isp_3, oatmeal_agar_isp_3,
     oatmeal_agar_ph_6_0'
+- timestamp: '2026-08-06T03:05:21.757566+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 4 source recipe(s) on fingerprint f05f54353f27b35725f3b4af7994807234ac2fec7cd518b722e9daaee98d3f44
+  source: acidic_oatmeal_agar_ph_5_0.yaml, oatmeal_agar_a_isp_3.yaml, oatmeal_agar_isp_3.yaml,
+    oatmeal_agar_ph_6_0.yaml
 data_quality_flags:
-  incomplete_composition: false
-  resolved_reference: true
+- resolved_reference
 synonyms:
 - name: acidic_oatmeal_agar_ph_5_0
   source: MediaDive

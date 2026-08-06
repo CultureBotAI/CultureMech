@@ -3,6 +3,7 @@ name: brucella_albimi_broth
 original_name: Brucella albimi Broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: DI Water
@@ -40,6 +41,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Brucella albimi Broth" to "brucella_albimi_broth" for
     consistent matching
+- timestamp: '2026-08-06T03:05:26.000801+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2c948f0268431a4afa28b5291a7d039376fb8a0124ec7065fb1e7ef4eae485d5
+  source: brucella_albimi_broth.yaml
 merge_fingerprint: 2c948f0268431a4afa28b5291a7d039376fb8a0124ec7065fb1e7ef4eae485d5
 merged_from:
 - brucella_albimi_broth

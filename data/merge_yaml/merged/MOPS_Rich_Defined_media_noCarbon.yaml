@@ -1,6 +1,7 @@
 id: CultureMech:015633
 name: MOPS Rich Defined media noCarbon
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 3-(N-morpholino)propanesulfonic acid
@@ -74,6 +75,9 @@ ingredients:
     value: '3.00E-09'
     unit: MOLAR
   notes: 'CAS: 12027-67-7; MW: 1235.86'
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: Boric Acid
   concentration:
     value: '4.00E-07'
@@ -358,7 +362,7 @@ ingredients:
     label: ''
 description: MOPS rich media with no carbon source
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: MOPS Rich Defined media noCarbon
@@ -372,8 +376,17 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015633'
+- timestamp: '2026-05-16T09:04:41.948349+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:06.803667+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2f42c53ee09ed91abf1424b7b6ebef8b4aab3253cd9fd6685e63cf8ed9e90806
+  source: mops_rich_defined_media_nocarbon.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: cd88a0e0c01ded53848d606d10f93b98563a4b5fc980c1f6ab729a558d25517c
+merge_fingerprint: 2f42c53ee09ed91abf1424b7b6ebef8b4aab3253cd9fd6685e63cf8ed9e90806
 merged_from:
 - mops_rich_defined_media_nocarbon

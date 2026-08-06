@@ -3,6 +3,7 @@ name: kim_medium
 original_name: Kim medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,19 +15,19 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
-- preferred_term: MgSO4⋅7H2O
+- preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
   term:
-    id: CHEBI:32599
-    label: ''
-- preferred_term: FeSO4⋅7H2O
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: FeSO4 x 7 H2O
   concentration:
     value: '44'
     unit: G_PER_L
@@ -44,9 +45,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: (NH4)H2PO4
   concentration:
     value: '2'
@@ -56,8 +57,8 @@ ingredients:
   term:
     id: CHEBI:62982
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000515
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62982
     label: (NH4)H2PO4
 - preferred_term: 10N H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
@@ -83,9 +84,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:57.994404'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: 10N H2SO4'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:08.037869Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -98,6 +99,27 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "Kim medium" to "kim_medium" for consistent matching
-merge_fingerprint: b8faa0d8c6e25119fe3b65468f4ccf8c439c3eb104a9de15578f685a79904e8e
+- timestamp: '2026-05-16T09:03:38.464416+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:10.363999+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:50.051779+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-08-06T03:05:39.555673+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e2b68531023fdd68afd928683aa6e071b0baf69d1d43a79a719c54802de37644
+  source: kim_medium.yaml
+merge_fingerprint: e2b68531023fdd68afd928683aa6e071b0baf69d1d43a79a719c54802de37644
 merged_from:
 - kim_medium

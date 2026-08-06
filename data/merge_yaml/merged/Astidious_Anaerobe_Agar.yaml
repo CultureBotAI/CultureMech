@@ -3,6 +3,7 @@ name: astidious_anaerobe_agar
 original_name: Astidious Anaerobe Agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: add deionized water to
@@ -40,6 +41,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Astidious Anaerobe Agar" to "astidious_anaerobe_agar"
     for consistent matching
+- timestamp: '2026-08-06T03:05:24.290280+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 3f15a59367adfe138f6f8d31dc92673288461df2db7cf732395ffd80a7bb5677
+  source: astidious_anaerobe_agar.yaml
 merge_fingerprint: 3f15a59367adfe138f6f8d31dc92673288461df2db7cf732395ffd80a7bb5677
 merged_from:
 - astidious_anaerobe_agar

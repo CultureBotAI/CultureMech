@@ -3,6 +3,7 @@ name: guaiacol_cmc_agar
 original_name: Guaiacol-CMC Agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: CM-Cellulose
   concentration:
@@ -37,9 +38,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Difco Yeast Carbon Base
   concentration:
     value: '11.7'
@@ -84,6 +85,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Guaiacol-CMC Agar" to "guaiacol_cmc_agar" for consistent
     matching
+- timestamp: '2026-06-05T07:41:06.770258+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:36.559002+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 7f104509b2cc5e4b38b73dbbc4f6d620b0f20128c8c76986442186271a384908
+  source: guaiacol_cmc_agar.yaml
 merge_fingerprint: 7f104509b2cc5e4b38b73dbbc4f6d620b0f20128c8c76986442186271a384908
 merged_from:
 - guaiacol_cmc_agar

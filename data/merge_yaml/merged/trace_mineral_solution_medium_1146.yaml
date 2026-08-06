@@ -3,6 +3,7 @@ name: trace_mineral_solution_medium_1146
 original_name: Trace mineral solution (medium 1146)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 3.0
 notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 2077 | DSMZ Medium: 2077 (mediadive.medium:2077)
@@ -20,8 +21,8 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000150
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
     label: HCl
   term:
     id: CHEBI:17883
@@ -38,9 +39,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:004354'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:33.156372'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: HCl'
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:00.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -50,7 +51,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Trace mineral solution (medium 1146)" to "trace_mineral_solution_medium_1146"
     for consistent matching
-- timestamp: '2026-04-17T06:30:22.142905+00:00'
+- timestamp: '2026-05-16T09:04:37.647927+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:53.988900+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:55.883533+00:00'
   curator: recipe-merger
   action: Merged 15 duplicate recipes into canonical record
   notes: 'Sources: solution_a_medium_1003, solution_a_medium_1145, trace_element_solution_a_medium_253,
@@ -60,6 +71,16 @@ curation_history:
     trace_metals_solution_pfennig_lippert_1966_replace_na2moo4_x_2_h2o_with_nh4moo4,
     trace_mineral_solution_ferguson_and_mah_1983, trace_mineral_solution_medium_1003,
     trace_mineral_solution_medium_1146'
+- timestamp: '2026-08-06T03:05:55.883599+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 15 source recipe(s) on fingerprint 609b3a7836255e3d48e7c831734e13de1d285bc894e03c4c5ac873806ff461de
+  source: solution_a_medium_1003.yaml, solution_a_medium_1145.yaml, trace_element_solution_a_medium_253.yaml,
+    trace_element_solution_medium_1228.yaml, trace_element_solution_medium_1229.yaml,
+    trace_element_solution_medium_1230.yaml, trace_element_solution_medium_1272.yaml,
+    trace_element_solution_medium_796.yaml, trace_element_solution_medium_925.yaml,
+    trace_elements_solution_medium_1183.yaml, trace_metals_solution_pfennig_lippert_1966.yaml,
+    trace_metals_solution_pfennig_lippert_1966_replace_na2moo4_x_2_h2
 synonyms:
 - name: solution_a_medium_1003
   source: KOMODO

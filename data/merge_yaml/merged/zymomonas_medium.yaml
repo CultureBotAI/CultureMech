@@ -3,6 +3,7 @@ name: zymomonas_medium
 original_name: ZYMOMONAS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 10
@@ -27,8 +28,8 @@ ingredients:
   concentration:
     value: '7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Agar
   term:
@@ -37,8 +38,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -64,11 +65,33 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ZYMOMONAS medium" to "zymomonas_medium" for consistent
     matching
-- timestamp: '2026-04-17T06:29:13.865180+00:00'
+- timestamp: '2026-06-05T07:40:18.935634+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:37.862743+00:00'
   curator: recipe-merger
   action: Merged 6 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_1015_YPGA, KOMODO_10_ZYMOMONAS_medium, medium_1015_modified_for_dsm_16734,
     pyg_agar_h, ypga, zymomonas_medium'
+- timestamp: '2026-08-06T03:04:37.862822+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 6 source recipe(s) on fingerprint 5eac4c042c0b9d47baffaca43461aedba087248cca78306fe7610a435ba078dd
+  source: KOMODO_1015_YPGA.yaml, KOMODO_10_ZYMOMONAS_medium.yaml, medium_1015_modified_for_dsm_16734.yaml,
+    pyg_agar_h.yaml, ypga.yaml, zymomonas_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/zymomonas_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000532
+  name: zymomonas_medium
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and concentration
+    signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.
 synonyms:
 - name: ypga
   source: KOMODO

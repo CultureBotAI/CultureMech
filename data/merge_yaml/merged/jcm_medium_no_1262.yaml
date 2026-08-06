@@ -3,6 +3,7 @@ name: jcm_medium_no_1262
 original_name: JCM MEDIUM No. 1262
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 10.0
 media_term:
@@ -29,8 +30,8 @@ ingredients:
   concentration:
     value: '0.345'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000387
+  mediaingredientmech_chebi_term:
+    id: CHEBI:78870
     label: NaNO2
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -39,33 +40,36 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
   concentration:
     value: '4.24'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 - preferred_term: Disodium succinate x 6 H2O
   concentration:
     value: '0.54'
     unit: G_PER_L
+  term:
+    id: CHEBI:63686
+    label: ''
 - preferred_term: Sodium acetate
   term:
     id: CHEBI:32954
@@ -73,8 +77,8 @@ ingredients:
   concentration:
     value: '0.164'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
     label: Sodium acetate
 - preferred_term: Disodium oxalate
   term:
@@ -83,8 +87,8 @@ ingredients:
   concentration:
     value: '0.268'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000883
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132764
     label: Disodium oxalate
 - preferred_term: Sodium pyruvate
   term:
@@ -93,8 +97,8 @@ ingredients:
   concentration:
     value: '0.22'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
     label: Sodium pyruvate
 preparation_steps:
 - step_number: 1
@@ -120,6 +124,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "JCM MEDIUM No. 1262" to "jcm_medium_no_1262" for consistent
     matching
-merge_fingerprint: 7153031eaedef6794ca51cf93145e6888ee38498271c0fb618b9bb815a69a921
+- timestamp: '2026-06-05T07:41:09.803977+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:00.182090+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:38.956534+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2446e817cd67d9cb2712e1fec00d6a96151abca7b01c50583b250fe977aab889
+  source: jcm_medium_no_1262.yaml
+merge_fingerprint: 2446e817cd67d9cb2712e1fec00d6a96151abca7b01c50583b250fe977aab889
 merged_from:
 - jcm_medium_no_1262

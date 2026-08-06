@@ -1,51 +1,84 @@
-id: CultureMech:002606
+id: CultureMech:008964
 name: todd_hewitt_agar
-original_name: TODD HEWITT AGAR
+original_name: Todd Hewitt Agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-media_term:
-  preferred_term: JCM Medium J245
-  term:
-    id: mediadive.medium:J245
-    label: TODD HEWITT AGAR
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=245'
 ingredients:
-- preferred_term: Todd Hewitt Broth
+- preferred_term: Distilled water
   concentration:
-    value: '30'
+    value: '1'
     unit: G_PER_L
-- preferred_term: Agar
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:2509
-    label: Agar
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Agar
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Todd Hewitt Broth (BD-Difco)
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M237
+  term:
+    id: TOGO:M237
+    label: Todd Hewitt Agar
+notes: 'Source: https://togomedium.org/medium/M237
+
+  Original source: JCM - JCM_M245
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=245'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:16.078454Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J245'
-- timestamp: '2026-03-13T06:19:14.514074Z'
+- timestamp: '2026-01-27T06:35:54.681704Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M237'
+- timestamp: '2026-01-28T19:48:22.871932Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:01.625438Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002606'
-- timestamp: '2026-03-17T06:30:08.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:008964'
+- timestamp: '2026-03-17T06:30:14.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:27.788243+00:00'
+- timestamp: '2026-03-17T19:46:20.355310+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TODD HEWITT AGAR" to "todd_hewitt_agar" for consistent
+  notes: Normalized name from "Todd Hewitt Agar" to "todd_hewitt_agar" for consistent
     matching
-kg_microbe_match: mediadive.medium:12
-merge_fingerprint: caa6bd234094965e840f991795f16cd8da0510e2ed526299edebfead2239bc19
+- timestamp: '2026-06-05T07:40:36.596818+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:11.661074+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e48e6fc21e997c03cbb67f29f508baf7d95f06fbcda89f1a3e86969dda121b73
+  source: TOGO_M237_Todd_Hewitt_Agar.yaml
+merge_fingerprint: e48e6fc21e997c03cbb67f29f508baf7d95f06fbcda89f1a3e86969dda121b73
 merged_from:
-- todd_hewitt_agar
+- TOGO_M237_Todd_Hewitt_Agar

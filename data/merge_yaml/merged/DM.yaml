@@ -1,77 +1,131 @@
-id: CultureMech:015514
-name: DM
-medium_type: DEFINED
+id: CultureMech:000063
+name: dm
+category: algae
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ingredients:
-- preferred_term: 3-(N-morpholino)propanesulfonic acid
-  concentration:
-    value: '100'
-    unit: MILLIMOLAR
-  notes: 'CAS: 1132-61-2; MW: 209.2633; Ontology enriched via CAS-RN lookup'
-  term:
-    id: CHEBI:44115
-    label: ''
-- preferred_term: Sodium Chloride
-  concentration:
-    value: '43'
-    unit: MILLIMOLAR
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  notes: 'CAS: 7647-14-5; MW: 58.44'
-- preferred_term: Ammonium chloride
-  concentration:
-    value: '93'
-    unit: MILLIMOLAR
-  term:
-    id: CHEBI:31206
-    label: ammonium chloride
-  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 12125-02-9; MW:
-    53.49'
-- preferred_term: Potassium phosphate monobasic
-  concentration:
-    value: '3.7'
-    unit: MILLIMOLAR
-  term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
-  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7778-77-0; MW:
-    136.09'
-- preferred_term: Magnesium sulfate
-  concentration:
-    value: '1'
-    unit: MILLIMOLAR
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7487-88-9; MW:
-    120.37'
-- preferred_term: D-Glucose
-  concentration:
-    value: '0.02'
-    unit: MILLIMOLAR
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-99-7; MW: 180.16'
-description: Defined media used by Newman lab at Caltech
-notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
-sources:
-- database: CultureBotHT
-  database_id: DM
-  url: https://github.com/CultureBotAI/CultureBotHT
+description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater
+  algae cultivation. Recipe available in PDF format.
+notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_DM.pdf
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
+applications:
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
 curation_history:
-- timestamp: '2026-03-18T04:31:12.588488+00:00'
-  curator: import_from_culturebotht.py
-  action: IMPORTED
-  notes: 'Imported from CultureBotHT repository: DM.yaml'
-- timestamp: '2026-03-18T04:33:58.831480Z'
+- curator: ccap-import
+  action: Imported from CCAP Culture Collection
+  notes: 'Source ID: DM, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_DM.pdf'
+  timestamp: '2026-01-28T00:00:00+00:00'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-02-03T11:26:43.489311'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:18:53.060684Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:015514'
+  notes: 'Assigned stable identifier: CultureMech:000063'
+- timestamp: '2026-03-17T19:45:04.015931+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "DM" to "dm" for consistent matching
+- timestamp: '2026-04-04T20:18:55.040680'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 5 curated ingredients from CCAP
+  source: CCAP Medium MR_DM.pdf
+- timestamp: '2026-05-16T08:57:02.266781+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(3 entries)
+- timestamp: '2026-05-16T09:02:56.453502+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
+    category->lowercase=1
+- timestamp: '2026-08-06T03:04:19.779066+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e31992388ae9a79f749d367125a3ec0a92b3504ee58e3e2df32e5c7ed70af392
+  source: dm.yaml
+references:
+- reference: CCAP:DM
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_DM.pdf
+ingredients:
+- preferred_term: Na EDTA
+  term:
+    id: CHEBI:64734
+    label: Na EDTA
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T20:18:55.040667'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.45'
+    unit: G_PER_L
+  source: CCAP Medium MR_DM.pdf
+  notes: From CCAP Medium MR_DM.pdf; Curated from CCAP Medium MR_DM.pdf specification
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T20:18:55.040671'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.278'
+    unit: G_PER_L
+  source: CCAP Medium MR_DM.pdf
+  notes: From CCAP Medium MR_DM.pdf; Curated from CCAP Medium MR_DM.pdf specification
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T20:18:55.040673'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.008'
+    unit: G_PER_L
+  source: CCAP Medium MR_DM.pdf
+  notes: From CCAP Medium MR_DM.pdf; Curated from CCAP Medium MR_DM.pdf specification
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T20:18:55.040675'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.008'
+    unit: G_PER_L
+  source: CCAP Medium MR_DM.pdf
+  notes: From CCAP Medium MR_DM.pdf; Curated from CCAP Medium MR_DM.pdf specification
+- preferred_term: Make up to 1 litre with deionised water. Adjust to pH 6.9 with
+  notes: Ontology mapping not yet available; From CCAP Medium MR_DM.pdf; Curated from
+    CCAP Medium MR_DM.pdf specification
+  concentration:
+    value: '1'
+    unit: MOLAR
+  source: CCAP Medium MR_DM.pdf
 data_quality_flags:
-- has_unmapped_ingredients
-merge_fingerprint: 5ef4e85da292bb5adba342623a82d91c5a3e62050a291a3b7ce534bf78cd2af7
+- has_ontology_mappings
+- ingredients_curated
+- curation_method:automated_expert_mapping
+original_name: DM
+merge_fingerprint: e31992388ae9a79f749d367125a3ec0a92b3504ee58e3e2df32e5c7ed70af392
 merged_from:
 - dm

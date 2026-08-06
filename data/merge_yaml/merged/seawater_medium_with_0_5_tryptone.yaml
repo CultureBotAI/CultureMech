@@ -3,6 +3,7 @@ name: seawater_medium_with_0_5_tryptone
 original_name: seawater medium (with 0.5% tryptone)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: CrystalSea Marine Mix (Marine Enterprises International, Inc.)
@@ -37,6 +38,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "seawater medium (with 0.5% tryptone)" to "seawater_medium_with_0_5_tryptone"
     for consistent matching
+- timestamp: '2026-08-06T03:05:55.478614+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 3a44acc3ee8a5c2eb30d40f82af232ec997cb42c0af138e3e237316b38690943
+  source: seawater_medium_with_0_5_tryptone.yaml
 merge_fingerprint: 3a44acc3ee8a5c2eb30d40f82af232ec997cb42c0af138e3e237316b38690943
 merged_from:
 - seawater_medium_with_0_5_tryptone

@@ -1,6 +1,7 @@
 id: CultureMech:015586
 name: MELiSSA defined noCarbon noNitrogen phosphatebuffered
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Manganese (II) chloride tetrahydrate
@@ -144,7 +145,7 @@ ingredients:
   notes: 'CAS: 7758-11-4; MW: 174.18'
 description: Defined medium for R. rubrum with no ammonium, pH should be 6.9
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: MELiSSA defined noCarbon noNitrogen phosphatebuffered
@@ -158,8 +159,17 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015586'
+- timestamp: '2026-05-16T09:04:41.595665+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:06.290649+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint eb143dd3efc883f9196a33112c7b17786a7af04c5dbf6521080b7831e7b6722f
+  source: melissa_defined_nocarbon_nonitrogen_phosphatebuffered.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: a2caae3e0f4e91ad5a6cce1e7e2c16ffbe61b6cb062b70860d3a0007c021ac87
+merge_fingerprint: eb143dd3efc883f9196a33112c7b17786a7af04c5dbf6521080b7831e7b6722f
 merged_from:
 - melissa_defined_nocarbon_nonitrogen_phosphatebuffered

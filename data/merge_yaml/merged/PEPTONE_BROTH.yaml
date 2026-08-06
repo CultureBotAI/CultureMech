@@ -3,6 +3,7 @@ name: peptone_broth
 original_name: PEPTONE BROTH
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1471
@@ -35,6 +36,11 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "PEPTONE BROTH" to "peptone_broth" for consistent matching
+- timestamp: '2026-08-06T03:05:52.551668+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 82a681e0d54ca8b81b2d2962d41e83d7d30693f743f3467ad3e00b3ba512338d
+  source: peptone_broth.yaml
 merge_fingerprint: 82a681e0d54ca8b81b2d2962d41e83d7d30693f743f3467ad3e00b3ba512338d
 merged_from:
 - peptone_broth

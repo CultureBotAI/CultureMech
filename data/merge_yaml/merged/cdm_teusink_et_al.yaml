@@ -3,6 +3,7 @@ name: cdm_teusink_et_al
 original_name: CDM; Teusink et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: L-Glutamate
@@ -10,6 +11,9 @@ ingredients:
     value: '3.39836'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glu-L'
+  term:
+    id: CHEBI:16015
+    label: ''
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
@@ -18,8 +22,8 @@ ingredients:
     value: '55.5062'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Glycine
   term:
@@ -29,8 +33,8 @@ ingredients:
     value: '2.33116'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gly'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000244
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15428
     label: Glycine
 - preferred_term: L-Alanine
   term:
@@ -40,8 +44,8 @@ ingredients:
     value: '2.69391'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ala-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000403
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16977
     label: L-Alanine
 - preferred_term: L-Lysine
   term:
@@ -51,8 +55,8 @@ ingredients:
     value: '3.00978'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:lys-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000318
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18019
     label: L-Lysine
 - preferred_term: L-Aspartate
   concentration:
@@ -67,8 +71,8 @@ ingredients:
     value: '0.71757'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:arg-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000289
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16467
     label: L-Arginine
 - preferred_term: L-Serine
   term:
@@ -78,8 +82,8 @@ ingredients:
     value: '3.23532'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ser-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000270
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17115
     label: L-Serine
 - preferred_term: Ascorbate
   concentration:
@@ -94,8 +98,8 @@ ingredients:
     value: '0.83775'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:met-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000274
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16643
     label: L-Methionine
 - preferred_term: L-Tryptophan
   term:
@@ -105,8 +109,8 @@ ingredients:
     value: '0.24482'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:trp-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001063
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16828
     label: L-Tryptophan
 - preferred_term: L-Phenylalanine
   term:
@@ -116,8 +120,8 @@ ingredients:
     value: '1.66475'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:phe-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000312
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17295
     label: L-Phenylalanine
 - preferred_term: L-Tyrosine
   term:
@@ -127,8 +131,8 @@ ingredients:
     value: '1.37977'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:tyr-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000316
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17895
     label: L-Tyrosine
 - preferred_term: Uracil
   term:
@@ -138,8 +142,8 @@ ingredients:
     value: '0.08922'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ura'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000501
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17568
     label: Uracil
 - preferred_term: Biotin
   term:
@@ -149,8 +153,8 @@ ingredients:
     value: '0.01023'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: L-Leucine
   term:
@@ -160,8 +164,8 @@ ingredients:
     value: '3.62125'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:leu-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000278
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15603
     label: L-Leucine
 - preferred_term: L-Histidine
   term:
@@ -171,8 +175,8 @@ ingredients:
     value: '0.96681'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:his-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000272
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15971
     label: L-Histidine
 - preferred_term: Adenine
   concentration:
@@ -187,8 +191,8 @@ ingredients:
     value: '5.86293'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pro-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000280
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17203
     label: L-Proline
 - preferred_term: L-Valine
   term:
@@ -198,8 +202,8 @@ ingredients:
     value: '2.77422'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:val-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000304
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16414
     label: L-Valine
 - preferred_term: L-Threonine
   term:
@@ -209,8 +213,8 @@ ingredients:
     value: '1.88885'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:thr-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000310
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16857
     label: L-Threonine
 - preferred_term: Thymidine
   term:
@@ -220,8 +224,8 @@ ingredients:
     value: '0.02064'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:thymd'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000575
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17748
     label: Thymidine
 - preferred_term: Guanine
   concentration:
@@ -236,6 +240,9 @@ ingredients:
     value: '0.00812'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:nac'
+  term:
+    id: CHEBI:15940
+    label: ''
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
@@ -244,8 +251,8 @@ ingredients:
     value: '0.00266'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: Inosine
   concentration:
@@ -276,14 +283,17 @@ ingredients:
     value: '1.60098'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ile-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000294
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17191
     label: L-Isoleucine
 - preferred_term: Folate
   concentration:
     value: '0.00227'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:fol'
+  term:
+    id: CHEBI:27470
+    label: ''
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -292,18 +302,24 @@ ingredients:
     value: '0.07292'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4abz'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001121
-    label: 4-Aminobenzoate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17836
+    label: 4-aminobenzoate
 - preferred_term: Lipoate
   concentration:
     value: '0.00485'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:lipoate'
+  term:
+    id: CHEBI:16494
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '5.74053'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -311,22 +327,25 @@ ingredients:
   concentration:
     value: '0.00456'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium pantothenate
 - preferred_term: Pyridoxamine HCl
   concentration:
     value: '0.02443'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131531
+    label: ''
 - preferred_term: Pyridoxine HCl
   concentration:
     value: '0.00973'
     unit: MILLIMOLAR
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000703
+    id: CHEBI:30961
+    label: Pyridoxine HCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
     label: Pyridoxine HCl
 - preferred_term: Thiamine HCl
   term:
@@ -335,8 +354,8 @@ ingredients:
   concentration:
     value: '0.00332'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Cysteine-HCl
   term:
@@ -352,6 +371,9 @@ ingredients:
   concentration:
     value: '36.7415'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Sodium acetate
   term:
     id: CHEBI:32954
@@ -359,8 +381,8 @@ ingredients:
   concentration:
     value: '12.1901'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
     label: Sodium acetate
 - preferred_term: Ammonium citrate
   concentration:
@@ -404,6 +426,23 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CDM; Teusink et al" to "cdm_teusink_et_al" for consistent
     matching
+- timestamp: '2026-06-05T07:40:52.837213+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 25 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:36.210701+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:05:26.994094+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint dab9185fa6acf5012fb9bc419f93669dadf6704d32c7c582e2daeefc7b98e6e4
+  source: cdm_teusink_et_al.yaml
 media_term:
   preferred_term: MediaDB Medium 1
   term:
@@ -415,6 +454,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: acbaddc0480b0d20ce8342ba3881026b284ed7120ce5dd09c567304cee24d881
+merge_fingerprint: dab9185fa6acf5012fb9bc419f93669dadf6704d32c7c582e2daeefc7b98e6e4
 merged_from:
 - cdm_teusink_et_al

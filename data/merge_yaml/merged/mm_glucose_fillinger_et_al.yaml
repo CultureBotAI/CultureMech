@@ -3,6 +3,7 @@ name: mm_glucose_fillinger_et_al
 original_name: MM-Glucose; Fillinger et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose
@@ -13,8 +14,8 @@ ingredients:
     value: '25.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Tryptophan
   term:
@@ -23,17 +24,23 @@ ingredients:
   concentration:
     value: '0.244822'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001025
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27897
     label: Tryptophan
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '80.3673'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '44.0898'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -41,8 +48,8 @@ ingredients:
   concentration:
     value: '0.811458'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ammonium sulfate
   term:
@@ -51,9 +58,9 @@ ingredients:
   concentration:
     value: '15.1355'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258
@@ -61,8 +68,8 @@ ingredients:
   concentration:
     value: '3.4002'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
     label: Sodium citrate
 preparation_steps:
 - step_number: 1
@@ -93,6 +100,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MM-Glucose; Fillinger et al" to "mm_glucose_fillinger_et_al"
     for consistent matching
+- timestamp: '2026-06-05T07:41:35.268609+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:46.898598+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 342ce1ce4e374696c84b359f53636b637c31992e7a3ee33c83c4641b9880f8f7
+  source: mm_glucose_fillinger_et_al.yaml
 media_term:
   preferred_term: MediaDB Medium 221
   term:
@@ -104,6 +122,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 4339aaed37b1733462924695fcd9f61c1b4beb2d53be8e0dbce3a8b4ab48a077
+merge_fingerprint: 342ce1ce4e374696c84b359f53636b637c31992e7a3ee33c83c4641b9880f8f7
 merged_from:
 - mm_glucose_fillinger_et_al

@@ -3,6 +3,7 @@ name: bm_in_maltose_hodgson_et_al
 original_name: Bm in maltose; hodgson et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Maltose
@@ -13,8 +14,8 @@ ingredients:
     value: '10.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:malt'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000591
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17306
     label: Maltose
 - preferred_term: Ethylene glycol
   term:
@@ -23,17 +24,23 @@ ingredients:
   concentration:
     value: '80.5542'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000374
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30742
     label: Ethylene glycol
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.00901024'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '0.015'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -41,13 +48,16 @@ ingredients:
   concentration:
     value: '2.43437'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.00359648'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -55,13 +65,16 @@ ingredients:
   concentration:
     value: '0.0034779'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Manganese chloride
   concentration:
     value: '0.0044829'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: Ammonium nitrate
   term:
     id: CHEBI:63038
@@ -69,8 +82,8 @@ ingredients:
   concentration:
     value: '24.9838'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000287
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63038
     label: Ammonium nitrate
 preparation_steps:
 - step_number: 1
@@ -101,6 +114,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Bm in maltose; hodgson et al" to "bm_in_maltose_hodgson_et_al"
     for consistent matching
+- timestamp: '2026-06-05T07:40:51.241084+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:25.708727+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint c94d8d27dbb2cf647a1233a2201c9cb2efd167fd6b5bb8dafd06d4bd433f334c
+  source: bm_in_maltose_hodgson_et_al.yaml
 media_term:
   preferred_term: MediaDB Medium 272
   term:
@@ -112,6 +136,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 707a2f38e95731377242826d3a85f439da2d84998ea2ccce0999f70fb54f148e
+merge_fingerprint: c94d8d27dbb2cf647a1233a2201c9cb2efd167fd6b5bb8dafd06d4bd433f334c
 merged_from:
 - bm_in_maltose_hodgson_et_al

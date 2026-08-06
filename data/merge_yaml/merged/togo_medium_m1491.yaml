@@ -3,6 +3,7 @@ name: togo_medium_m1491
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -30,9 +31,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
-    label: Sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -82,11 +83,35 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TOGO Medium M1491" to "togo_medium_m1491" for consistent
     matching
-- timestamp: '2026-04-17T06:29:40.655766+00:00'
+- timestamp: '2026-06-05T07:41:52.450402+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:08.898705+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M1540_Enriched_Cytophaga_Agar, flavobacterium_columnare_agar,
     togo_medium_m1491'
+- timestamp: '2026-08-06T03:05:08.898748+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint b2e16a8598e367434d82bfd830f0060bb7c7eaccf5e447887d2ae1ff279c764f
+  source: TOGO_M1540_Enriched_Cytophaga_Agar.yaml, flavobacterium_columnare_agar.yaml,
+    togo_medium_m1491.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M1540_Enriched_Cytophaga_Agar.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:008088
+  name: enriched_cytophaga_agar
+  notes: Reviewed source-local Enriched Cytophaga Agar concentration variant; child
+    shares the parsed base formulation with lower tryptone and beef extract concentrations.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Reviewed TOGO Enriched Cytophaga Agar source-local pair; child keeps water, yeast
+  extract, sodium acetate, and agar unchanged but lowers Bacto Tryptone from 2.0 to
+  0.5 g/L and beef extract from 0.5 to 0.2 g/L.
 synonyms:
 - name: enriched_cytophaga_agar
   source: TOGO

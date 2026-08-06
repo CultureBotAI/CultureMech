@@ -1,154 +1,225 @@
-id: CultureMech:002384
+id: CultureMech:007837
 name: modified_haloalkaliphile_medium
-original_name: MODIFIED HALOALKALIPHILE MEDIUM
+original_name: Modified Haloalkaliphile Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-media_term:
-  preferred_term: JCM Medium J1215
-  term:
-    id: mediadive.medium:J1215
-    label: MODIFIED HALOALKALIPHILE MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1215'
 ingredients:
-- preferred_term: Yeast extract
+- preferred_term: Distilled water
   concentration:
-    value: '2'
+    value: '1000.0'
     unit: G_PER_L
-- preferred_term: Casamino acids
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component [Merged 2 duplicates: 500.0, 500.0]'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
   concentration:
-    value: '2'
+    value: '0.1'
     unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
-- preferred_term: Na glutamate
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: NaCl
+  concentration:
+    value: '200.0'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound [Merged 2 duplicates: 100.0, 100.0]'
   term:
-    id: CHEBI:64220
-    label: Na glutamate
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: KCl
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000432
-    label: Na glutamate
-- preferred_term: Trisodium citrate
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:53258
-    label: Trisodium citrate
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: CaSO4・2H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:32583
+    label: ''
+- preferred_term: Sodium glutamate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:64220
+    label: monosodium glutamate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64220
+    label: monosodium glutamate
+- preferred_term: Trisodium citrate・2H2O
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
-    label: Trisodium citrate
-- preferred_term: MgSO4 x 7 H2O
+  notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
+    label: Trisodium citrate・2H2O
   term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    id: CHEBI:53258
+    label: ''
+- preferred_term: Yeast extract (BD-Difco)
   concentration:
-    value: '0.1'
+    value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: CaSO4 x 2 H2O
-  term:
-    id: CHEBI:32583
-    label: CaSO4 x 2 H2O
+  notes: 'Properties: Undefined component'
+- preferred_term: Casamino acids (BD-Difco)
   concentration:
-    value: '0.1'
+    value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000465
-    label: CaSO4 x 2 H2O
-- preferred_term: KCl
-  term:
-    id: CHEBI:32588
-    label: KCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '200'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  notes: 'Properties: Undefined component'
 - preferred_term: Na2CO3
+  concentration:
+    value: '80'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:29377
-    label: Na2CO3
-  concentration:
-    value: '8'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
-    label: Na2CO3
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: Add components to distilled water and bring volume to 500 ml.
-- step_number: 2
-  action: MIX
-  description: Add components to distilled water and bring volume to 500 ml.
-- step_number: 3
-  action: AUTOCLAVE
-  description: Autoclave solutions A and B separately and combine them after cooling.
-    For preparation of solid medium, add 18.0 g agar to Solution A (500 ml), combine
-    them after cooling to 60-70C, mix well and quickly distribute into sterile petri
-    dishes or test tubes.
+    label: sodium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+media_term:
+  preferred_term: TOGO Medium M1302
+  term:
+    id: TOGO:M1302
+    label: Modified Haloalkaliphile Medium
+notes: 'Source: https://togomedium.org/medium/M1302
+
+  Original source: JCM - JCM_M1215
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1215'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:19.052897Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J1215'
-- timestamp: '2026-01-28T19:48:14.765481Z'
+- timestamp: '2026-01-27T06:35:54.321374Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1302'
+- timestamp: '2026-01-28T19:48:08.064061Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T03:08:52.954982Z'
+- timestamp: '2026-03-09T08:04:12.973668+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+- timestamp: '2026-03-13T03:08:39.909770Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
-  notes: Merged 1 duplicate ingredient(s)
-- timestamp: '2026-03-13T06:19:12.903816Z'
+  notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:51.862881Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002384'
-- timestamp: '2026-03-17T06:29:57.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:007837'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:29:41.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:25.951739+00:00'
+- timestamp: '2026-03-17T19:46:10.300637+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MODIFIED HALOALKALIPHILE MEDIUM" to "modified_haloalkaliphile_medium"
+  notes: Normalized name from "Modified Haloalkaliphile Medium" to "modified_haloalkaliphile_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:30:05.754794+00:00'
+- timestamp: '2026-05-16T09:03:09.261514+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:32.198442+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:22.592557+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:46:47.540499+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:07.714769+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: haloalkaliphile_medium, modified_haloalkaliphile_medium'
+  notes: 'Sources: TOGO_M1302_Modified_Haloalkaliphile_Medium, TOGO_M301_Haloalkaliphile_Medium'
+- timestamp: '2026-08-06T03:05:07.714812+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 0a16d1c35e9b3a6b450cb5f4b0327f719527af61800ea5561e90a54d7e5a899b
+  source: TOGO_M1302_Modified_Haloalkaliphile_Medium.yaml, TOGO_M301_Haloalkaliphile_Medium.yaml
 high_metal: true
+solutions:
+- preferred_term: Solution A
+  term:
+    id: mediadive.solution:5342
+    label: Solution A
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  notes: See mediadive_5342_Solution_A.yaml for composition
+  name: Unknown solution
+- preferred_term: Solution B
+  term:
+    id: mediadive.solution:5343
+    label: Solution B
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  notes: See mediadive_5343_Solution_B.yaml for composition
+  name: Unknown solution
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M301_Haloalkaliphile_Medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:009534
+  name: haloalkaliphile_medium
+  notes: Reviewed source-local Modified Haloalkaliphile concentration variant; child
+    shares the parent formulation with carbonate concentration as the curated axis.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Reviewed TOGO Haloalkaliphile pair; child keeps MgSO4, NaCl, KCl, CaSO4, sodium
+  glutamate, citrate, yeast extract, and casamino acids unchanged while Na2CO3 increases
+  from 8 to 80 g/L; water amount differs by source normalization.
 synonyms:
 - name: haloalkaliphile_medium
-  source: MediaDive
-  source_id: mediadive.medium:J306
+  source: TOGO
+  source_id: TOGO:M301
   original_category: bacterial
 categories:
 - bacterial
 merged_from:
-- haloalkaliphile_medium
-- modified_haloalkaliphile_medium
-merge_fingerprint: 9d61ada364122f029256c2588ba34cc84d1ec039ea814fd91ef8eb965b384e59
+- TOGO_M1302_Modified_Haloalkaliphile_Medium
+- TOGO_M301_Haloalkaliphile_Medium
+merge_fingerprint: 0a16d1c35e9b3a6b450cb5f4b0327f719527af61800ea5561e90a54d7e5a899b

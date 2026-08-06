@@ -1,33 +1,35 @@
-id: CultureMech:009880
+id: CultureMech:002842
 name: 1_2_mrs_1_2_bhi_agar
-original_name: 1/2 MRS + 1/2 BHI Agar
+original_name: 1/2 MRS + 1/2 BHI AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J491
+  term:
+    id: mediadive.medium:J491
+    label: 1/2 MRS + 1/2 BHI AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=491
+
+
+  Commercial Product: Brain Heart Infusion
+
+  Supplier: Difco/BD
+
+  Catalog: 237500
+
+  Source: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Lactobacilli MRS broth
   concentration:
-    value: '1'
+    value: '27.5'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
 - preferred_term: Calf brains
   term:
     id: UBERON:0000955
@@ -124,59 +126,47 @@ ingredients:
     synonym_type: EXACT
   - synonym_text: sodium phosphate dibasic
     synonym_type: EXACT
-- preferred_term: Lactobacilli MRS broth (BD-Difco)
-  concentration:
-    value: '27.5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M492
+- preferred_term: Agar
   term:
-    id: TOGO:M492
-    label: 1/2 MRS + 1/2 BHI Agar
-notes: 'Source: https://togomedium.org/medium/M492
-
-  Original source: JCM - JCM_M491
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=491
-
-
-  Commercial Product: Brain Heart Infusion
-
-  Supplier: Difco/BD
-
-  Catalog: 237500
-
-  Source: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-
-  Accessed: 2026-03-28
-
-
-  Constituent composition researched from product specification.'
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.157532Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M492'
-- timestamp: '2026-01-28T19:48:12.502345Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:20:09.606932Z'
+- timestamp: '2026-01-26T17:53:16.738072Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J491'
+- timestamp: '2026-03-13T06:19:16.016580Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:009880'
-- timestamp: '2026-03-17T06:29:51.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:002842'
+- timestamp: '2026-03-17T06:30:11.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:28.570790+00:00'
+- timestamp: '2026-03-17T19:45:29.493958+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "1/2 MRS + 1/2 BHI Agar" to "1_2_mrs_1_2_bhi_agar" for
+  notes: Normalized name from "1/2 MRS + 1/2 BHI AGAR" to "1_2_mrs_1_2_bhi_agar" for
     consistent matching
-merge_fingerprint: 56430c3308623365f15aa41e3cdfd8627ff6efb0df4e4a59cd4c1ea660630eff
+- timestamp: '2026-06-05T07:40:15.496795+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:33.702548+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 3f9e245b5d06d8c641c272c7b376f1af81842bbf72d0ec847d151fbc6fbcdf60
+  source: 1_2_mrs_1_2_bhi_agar.yaml
+merge_fingerprint: 3f9e245b5d06d8c641c272c7b376f1af81842bbf72d0ec847d151fbc6fbcdf60
 merged_from:
-- TOGO_M492_1_2_MRS_1_2_BHI_Agar
+- 1_2_mrs_1_2_bhi_agar

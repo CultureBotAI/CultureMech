@@ -1,6 +1,7 @@
 id: CultureMech:015474
 name: TSB_YeastExtract
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Tryptone
@@ -15,9 +16,6 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  term:
-    id: MICRO:0000181
-    label: null
   notes: 'Mapping: micromediaparam (confidence: 0.95)'
 - preferred_term: D-Glucose
   concentration:
@@ -53,12 +51,17 @@ ingredients:
   notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 232-387-9'
 description: DSMZ media 92; Tryptic soy broth with yeast extract
 notes: 'Source: FEBA media definitions'
-category: BACTERIAL
+category: bacterial
 sources:
 - database: CultureBotHT
   database_id: TSB_YeastExtract
   url: https://github.com/CultureBotAI/CultureBotHT
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI,
+    1 de-grounded (mixture or unverifiable).
 - timestamp: '2026-03-18T04:31:14.894060+00:00'
   curator: import_from_culturebotht.py
   action: IMPORTED
@@ -67,7 +70,20 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015474'
+- timestamp: '2026-05-16T09:04:38.236951+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-10T07:47:14.373483+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:02.155238+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 1a2f3bdb58c858b7d5415fa168a5dac3f43f80921c99eacd450867e06f8842ca
+  source: tsb_yeastextract.yaml
 data_quality_flags: []
-merge_fingerprint: 294715681133a295aa9f2242e2fcac5cf040b85b423492129631d644a8af14d0
+merge_fingerprint: 1a2f3bdb58c858b7d5415fa168a5dac3f43f80921c99eacd450867e06f8842ca
 merged_from:
 - tsb_yeastextract
