@@ -240,6 +240,15 @@ curate-placeholder-composition *args="":
 curate-flag-empty-composition *args="":
     uv run --extra dev python scripts/curate_flag_empty_composition.py {{args}}
 
+# Propose (never apply) how to nest each of the 579 flattened stock cocktails under
+# a solution with an addition volume (#150). Recovers the volume from the record's
+# own preparation_steps/notes where possible; marks the rest MANUAL. Emits a curator
+# worklist, edits nothing — the addition volume is judgement-heavy and a wrong one
+# corrupts a real recipe.
+[group('QC')]
+propose-cocktail-nesting *args="":
+    uv run --extra dev python scripts/propose_cocktail_nesting.py {{args}}
+
 [group('QC')]
 audit-selective-agent-mismatch *args="":
     uv run --extra dev python scripts/audit_selective_agent_mismatch.py {{args}}
