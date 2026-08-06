@@ -218,6 +218,14 @@ triage-missing-compositions *args="":
 curate-medium-type *args="":
     uv run --extra dev python scripts/curate_medium_type.py {{args}}
 
+# Backfill organism_culture_type (isolate vs community) on records that name
+# target_organisms (#142). recommended:, so validate-strict never flags the gap.
+# Sets `isolate` where specific strains are named; leaves community signals for a
+# curator. Report-only without --apply.
+[group('Curation')]
+curate-organism-culture-type *args="":
+    uv run --extra dev python scripts/curate_organism_culture_type.py {{args}}
+
 [group('QC')]
 audit-selective-agent-mismatch *args="":
     uv run --extra dev python scripts/audit_selective_agent_mismatch.py {{args}}

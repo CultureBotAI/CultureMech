@@ -72,8 +72,8 @@ variants:
   modifications:
   - Incubate BHIS broth anaerobically for Brachyspira growth.
   - Source reports growth at 37 to 42 degrees C.
-  purpose: Capture strain-specific BHIS growth evidence under the parent BHIS
-    broth record.
+  purpose: Capture strain-specific BHIS growth evidence under the parent BHIS broth
+    record.
   evidence:
   - reference: PMID:8573497
     supports: SUPPORT
@@ -91,8 +91,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015493'
+- timestamp: '2026-08-06T00:58:02.774578+00:00'
+  curator: curate_organism_culture_type.py
+  action: SET_ORGANISM_CULTURE_TYPE
+  notes: 'Inferred isolate: 1 specific strain(s) named, no community signal (#142)'
+  changes: Set organism_culture_type=isolate (was unset)
 data_quality_flags:
 - has_unmapped_ingredients
+organism_culture_type: isolate
 target_organisms:
 - preferred_term: Brachyspira pilosicoli
   term:
@@ -105,14 +111,14 @@ target_organisms:
   growth_metrics:
   - doubling_time_minutes: 60.0
     temperature_celsius: 37.0
-    measurement_conditions: BHIS broth; source reports 1 to 2 h doubling time,
-      maximum cell density of 2 x 10(9) cells per ml, and growth at 37 to 42
-      degrees C.
+    measurement_conditions: BHIS broth; source reports 1 to 2 h doubling time, maximum
+      cell density of 2 x 10(9) cells per ml, and growth at 37 to 42 degrees C.
     evidence:
     - reference: PMID:8573497
       supports: SUPPORT
-      snippet: In BHIS broth, P43/6/78T cells had a doubling time of 1 to 2 h and grew
-        to a maximum cell density of 2 x 10(9) cells per ml at 37 to 42 degrees C.
+      snippet: In BHIS broth, P43/6/78T cells had a doubling time of 1 to 2 h and
+        grew to a maximum cell density of 2 x 10(9) cells per ml at 37 to 42 degrees
+        C.
       explanation: Auto-curated from specialized media review; the source reports
         quantitative growth of Brachyspira pilosicoli P43/6/78T in BHIS broth.
     is_max_attainment: false

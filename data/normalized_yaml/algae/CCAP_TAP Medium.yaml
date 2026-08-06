@@ -57,6 +57,11 @@ curation_history:
   action: BACKFILLED_SOURCE_ENVIRONMENT
   notes: added=2 env(s) from CommunityMech
   source: CommunityMech (environment_term + culturemech_id linkage)
+- timestamp: '2026-08-06T00:58:02.505628+00:00'
+  curator: curate_organism_culture_type.py
+  action: SET_ORGANISM_CULTURE_TYPE
+  notes: 'Inferred isolate: 1 specific strain(s) named, no community signal (#142)'
+  changes: Set organism_culture_type=isolate (was unset)
 references:
 - reference: CCAP:TAP
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_TAP.pdf
@@ -208,6 +213,7 @@ data_quality_flags:
 - ingredients_curated
 - curation_method:automated_expert_mapping
 original_name: TAP Medium
+organism_culture_type: isolate
 target_organisms:
 - preferred_term: Chlorella vulgaris
   term:

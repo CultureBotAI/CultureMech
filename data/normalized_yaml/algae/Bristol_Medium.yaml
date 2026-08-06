@@ -40,7 +40,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Important Notes To Consider: The quality of water, including natural seawater, is important.'
+  description: 'Important Notes To Consider: The quality of water, including natural
+    seawater, is important.'
 - step_number: 2
   action: MIX
   description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
@@ -95,23 +96,30 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Bristol Medium" to "bristol_medium" for consistent
     matching
+- timestamp: '2026-08-06T00:58:02.502002+00:00'
+  curator: curate_organism_culture_type.py
+  action: SET_ORGANISM_CULTURE_TYPE
+  notes: 'Inferred isolate: 1 specific strain(s) named, no community signal (#142)'
+  changes: Set organism_culture_type=isolate (was unset)
 references:
 - reference: UTEX:bristol-medium
 - reference: https://utex.org/products/bristol-medium
 original_name: Bristol Medium
+organism_culture_type: isolate
 target_organisms:
 - preferred_term: Chlorella pyrenoidosa
   term:
     id: NCBITaxon:3077
     label: Chlorella vulgaris
   growth_metrics:
-  - measurement_conditions: Commercial Bristol medium comparator in settled and
-      activated sewage growth study.
+  - measurement_conditions: Commercial Bristol medium comparator in settled and activated
+      sewage growth study.
     evidence:
     - reference: PMID:15092268
       supports: SUPPORT
-      snippet: Good growth was obtained in both types of wastewater and the algal production
-        was comparable to and even higher than that found in commercial Bristol medium.
-      explanation: Literature evidence supports qualitative growth of Chlorella
-        pyrenoidosa on commercial Bristol medium as a comparator.
+      snippet: Good growth was obtained in both types of wastewater and the algal
+        production was comparable to and even higher than that found in commercial
+        Bristol medium.
+      explanation: Literature evidence supports qualitative growth of Chlorella pyrenoidosa
+        on commercial Bristol medium as a comparator.
     is_max_attainment: false

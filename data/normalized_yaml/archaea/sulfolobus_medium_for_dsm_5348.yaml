@@ -274,6 +274,11 @@ curation_history:
     found it grows on a plain Brock''s basal-salts medium (a distinct medium family,
     not the DSM-88 formulation captured here) that warrants its own record, not an
     addition here. [added 2 organism(s), 1 variant(s)]'
+- timestamp: '2026-08-06T00:58:02.588077+00:00'
+  curator: curate_organism_culture_type.py
+  action: SET_ORGANISM_CULTURE_TYPE
+  notes: 'Inferred isolate: 2 specific strain(s) named, no community signal (#142)'
+  changes: Set organism_culture_type=isolate (was unset)
 solutions:
 - preferred_term: Allen’s trace element solution
   composition: []
@@ -281,6 +286,7 @@ solutions:
     value: '10'
     unit: G_PER_L
   name: Unknown solution
+organism_culture_type: isolate
 target_organisms:
 - preferred_term: Metallosphaera sedula
   term:
@@ -296,9 +302,9 @@ target_organisms:
       DSM 5348 type strain (exact parent match). Full DSMZ 88 recipe is referenced
       by name rather than printed; parent formulation is inherited from this record.
       | Identifiers: DSM 5348T; GenBank CP000682; RefSeq NC_009440.1'
-    snippet: 'Cells (DSMZ 5348) were grown aerobically at 70°C in an orbital shaking
+    snippet: Cells (DSMZ 5348) were grown aerobically at 70°C in an orbital shaking
       oil bath at 70 rpm on DSMZ 88 medium (pH 2), supplemented with 0.1% yeast extract
-      (YE).'
+      (YE).
 - preferred_term: Sulfuracidifex metallicus
   term:
     id: NCBITaxon:47303

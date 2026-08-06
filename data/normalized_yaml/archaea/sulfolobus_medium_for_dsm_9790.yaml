@@ -262,12 +262,17 @@ curation_history:
   action: ANNOTATED
   changes: target_organisms
   notes: 'Added Picrophilus oshimae strain DSM 9790, per the DSMZ catalogue entry
-    (via BacDive record 11901): DSMZ Medium 88, growth yes, 55 C. Resolves issue
-    #119 as no-rename - ''Sulfolobus Medium'' is DSMZ''s own name for Medium 88 and
-    ''(For DSM 9790)'' is accurate TOGO provenance. Metallosphaera sedula
-    deliberately NOT added here: it belongs to the sibling record
-    CultureMech:008908 ''Sulfolobus Medium (For DSM 5348)'' (TOGO M2320), where it
-    is already curated.'
+    (via BacDive record 11901): DSMZ Medium 88, growth yes, 55 C. Resolves issue #119
+    as no-rename - ''Sulfolobus Medium'' is DSMZ''s own name for Medium 88 and ''(For
+    DSM 9790)'' is accurate TOGO provenance. Metallosphaera sedula deliberately NOT
+    added here: it belongs to the sibling record CultureMech:008908 ''Sulfolobus Medium
+    (For DSM 5348)'' (TOGO M2320), where it is already curated.'
+- timestamp: '2026-08-06T00:58:02.597066+00:00'
+  curator: curate_organism_culture_type.py
+  action: SET_ORGANISM_CULTURE_TYPE
+  notes: 'Inferred isolate: 1 specific strain(s) named, no community signal (#142)'
+  changes: Set organism_culture_type=isolate (was unset)
+organism_culture_type: isolate
 target_organisms:
 - preferred_term: Picrophilus oshimae
   term:
@@ -277,17 +282,16 @@ target_organisms:
   evidence:
   - reference: https://www.dsmz.de/collection/catalogue/details/culture/DSM-9790
     supports: SUPPORT
-    explanation: 'DSMZ catalogue entry for DSM 9790, relayed by BacDive strain
-      record 11901 (bacdive.dsmz.de/strain/11901), which lists culture medium
-      ''SULFOLOBUS MEDIUM (DSMZ Medium 88)'' with growth: yes at 55 C and links to
-      mediadive.dsmz.de/medium/88. That is the medium this record transcribes (TOGO
-      M2323 -> DSMZ_Medium88.pdf), and DSM 9790 is the strain the record is named
-      for. TAXONOMY: DSM 9790 was described as the Picrophilus torridus type strain
-      (Zillig et al. 1996), but NCBI has since synonymized P. torridus with
-      P. oshimae - NCBITaxon:46632 carries ''Picrophilus torridus'' as a related
-      synonym, and the former strain id NCBITaxon:263820 (''Picrophilus torridus
-      DSM 9790'') is now an alternative id of NCBITaxon:1122961. Curated to the
-      current species term, with the strain designation preserved above.'
+    explanation: 'DSMZ catalogue entry for DSM 9790, relayed by BacDive strain record
+      11901 (bacdive.dsmz.de/strain/11901), which lists culture medium ''SULFOLOBUS
+      MEDIUM (DSMZ Medium 88)'' with growth: yes at 55 C and links to mediadive.dsmz.de/medium/88.
+      That is the medium this record transcribes (TOGO M2323 -> DSMZ_Medium88.pdf),
+      and DSM 9790 is the strain the record is named for. TAXONOMY: DSM 9790 was described
+      as the Picrophilus torridus type strain (Zillig et al. 1996), but NCBI has since
+      synonymized P. torridus with P. oshimae - NCBITaxon:46632 carries ''Picrophilus
+      torridus'' as a related synonym, and the former strain id NCBITaxon:263820 (''Picrophilus
+      torridus DSM 9790'') is now an alternative id of NCBITaxon:1122961. Curated
+      to the current species term, with the strain designation preserved above.'
 solutions:
 - preferred_term: Allen’s trace element solution
   composition: []

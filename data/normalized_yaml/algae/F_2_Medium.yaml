@@ -45,7 +45,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Important Notes To Consider: The quality of water, including natural seawater, is important.'
+  description: 'Important Notes To Consider: The quality of water, including natural
+    seawater, is important.'
 - step_number: 2
   action: MIX
   description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
@@ -103,74 +104,80 @@ curation_history:
 - timestamp: '2026-05-09T14:15:00-07:00'
   curator: culturemech-agentic-curation
   action: ADDED_GROWTH_EVIDENCE
-  notes: Added strain-specific F/2ASW and modified F/2ASW growth evidence from
-    Falcon report review and primary literature metadata.
+  notes: Added strain-specific F/2ASW and modified F/2ASW growth evidence from Falcon
+    report review and primary literature metadata.
+- timestamp: '2026-08-06T00:58:02.514496+00:00'
+  curator: curate_organism_culture_type.py
+  action: SET_ORGANISM_CULTURE_TYPE
+  notes: 'Inferred isolate: 4 specific strain(s) named, no community signal (#142)'
+  changes: Set organism_culture_type=isolate (was unset)
 references:
 - reference: UTEX:f-2-medium
 - reference: https://utex.org/products/f-2-medium
 - reference: DOI:10.1104/pp.18.00453
-  title: Plasma-membrane-type aquaporins from marine diatoms function as CO2/NH3
-    channels and provide photoprotection
+  title: Plasma-membrane-type aquaporins from marine diatoms function as CO2/NH3 channels
+    and provide photoprotection
   authors: Matsui, H.; Hopkinson, B.; Nakajima, K.; Matsuda, Y.
   year: 2018
-  notes: PubMed PMID 30076224; source reports Phaeodactylum tricornutum UTEX
-    642 and Thalassiosira pseudonana CCMP1335 cultivation in F/2ASW.
+  notes: PubMed PMID 30076224; source reports Phaeodactylum tricornutum UTEX 642 and
+    Thalassiosira pseudonana CCMP1335 cultivation in F/2ASW.
 - reference: DOI:10.1007/s10126-021-10037-4
-  title: Characterization of a CO2-Concentrating Mechanism with Low Sodium
-    Dependency in the Centric Diatom Chaetoceros gracilis
+  title: Characterization of a CO2-Concentrating Mechanism with Low Sodium Dependency
+    in the Centric Diatom Chaetoceros gracilis
   authors: Tsuji, Y.; Kusi-Appiah, G.; Kozai, N.; Fukuda, Y.; Yamano, T.; Fukuzawa,
     H.
   year: 2021
-  notes: PubMed PMID 34109463; source reports Chaetoceros gracilis UTEX LB2658
-    growth experiments in modified F/2ASW.
+  notes: PubMed PMID 34109463; source reports Chaetoceros gracilis UTEX LB2658 growth
+    experiments in modified F/2ASW.
 original_name: F/2 Medium
 variants:
 - name: n_replete_second_stage_tetraselmis_marina
-  description: F/2 culture followed by nitrogen-replete second-stage cultivation
-    for enhanced biomass and lipid productivity of Tetraselmis marina.
+  description: F/2 culture followed by nitrogen-replete second-stage cultivation for
+    enhanced biomass and lipid productivity of Tetraselmis marina.
   modifications:
   - Grow cells in F/2 medium for seven days as the first stage.
   - Shift to a nitrogen-replete second stage with 4.41 mM NaNO3 for three days.
-  purpose: Capture a study-specific F/2-derived nitrogen repletion variant used
-    to increase Tetraselmis marina biomass and lipid productivity.
+  purpose: Capture a study-specific F/2-derived nitrogen repletion variant used to
+    increase Tetraselmis marina biomass and lipid productivity.
   evidence:
   - reference: PMID:28456040
     supports: SUPPORT
     snippet: After second stage of cultivation of T. marina for further 3-days under
       N-replete condition (4.41mM NaNO3) increased biomass concentration of 1900mg/L
       and lipid content of 50% were observed
-    explanation: Literature evidence describes a nitrogen-replete second-stage
-      variant after initial F/2 cultivation.
+    explanation: Literature evidence describes a nitrogen-replete second-stage variant
+      after initial F/2 cultivation.
 - name: f_2asw_diatom_culture
-  description: F/2 artificial seawater culture conditions used for marine diatom
-    maintenance and transformation studies.
+  description: F/2 artificial seawater culture conditions used for marine diatom maintenance
+    and transformation studies.
   modifications:
   - Use artificial seawater supplemented with half-strength Guillard f solution.
-  - Maintain cultures at 20 deg C under continuous illumination at 30-75 umol
-    photons m-2 s-1.
+  - Maintain cultures at 20 deg C under continuous illumination at 30-75 umol photons
+    m-2 s-1.
   - Aerate cultures with ambient air or 1% CO2 depending on the experiment.
-  purpose: Represent F/2ASW as a study-specific F/2 medium implementation for
-    marine diatoms.
+  purpose: Represent F/2ASW as a study-specific F/2 medium implementation for marine
+    diatoms.
   evidence:
   - reference: DOI:10.1104/pp.18.00453
     supports: SUPPORT
-    explanation: Matsui et al. define F/2ASW as artificial seawater plus
-      half-strength Guillard f solution and report use with Phaeodactylum
-      tricornutum UTEX 642 and Thalassiosira pseudonana CCMP1335.
+    explanation: Matsui et al. define F/2ASW as artificial seawater plus half-strength
+      Guillard f solution and report use with Phaeodactylum tricornutum UTEX 642 and
+      Thalassiosira pseudonana CCMP1335.
 - name: modified_f_2asw_sodium_response
-  description: Modified F/2 artificial seawater used for sodium and CO2 response
-    experiments with Chaetoceros gracilis.
+  description: Modified F/2 artificial seawater used for sodium and CO2 response experiments
+    with Chaetoceros gracilis.
   modifications:
   - Supplement F/2ASW with 10 nM sodium selenite and 0.1 mM sodium metasilicate.
   - Adjust sodium concentration by altering NaCl addition to the basal medium.
   - Vary CO2 availability to distinguish sodium-dependent growth effects.
-  purpose: Capture an experimental F/2ASW variant used to study carbon
-    concentrating mechanism physiology.
+  purpose: Capture an experimental F/2ASW variant used to study carbon concentrating
+    mechanism physiology.
   evidence:
   - reference: DOI:10.1007/s10126-021-10037-4
     supports: SUPPORT
-    explanation: Tsuji et al. report Chaetoceros gracilis UTEX LB2658 growth
-      experiments using a modified F/2ASW formulation.
+    explanation: Tsuji et al. report Chaetoceros gracilis UTEX LB2658 growth experiments
+      using a modified F/2ASW formulation.
+organism_culture_type: isolate
 target_organisms:
 - preferred_term: Tetraselmis marina
   term:
@@ -182,10 +189,10 @@ target_organisms:
     - reference: PMID:28456040
       supports: SUPPORT
       snippet: When the cells were grown in F/2-medium for seven days in the first
-        stage, the carotenoid and lipid contents, and productivity were 44g/kg
-        (DW), 27% and 31mg/L/d, respectively.
-      explanation: Literature evidence states that Tetraselmis marina cells were
-        grown in F/2 medium for seven days.
+        stage, the carotenoid and lipid contents, and productivity were 44g/kg (DW),
+        27% and 31mg/L/d, respectively.
+      explanation: Literature evidence states that Tetraselmis marina cells were grown
+        in F/2 medium for seven days.
     is_max_attainment: false
   - measurement_conditions: F/2 first stage followed by three-day N-replete second
       stage with 4.41 mM NaNO3.
@@ -204,56 +211,55 @@ target_organisms:
     label: Phaeodactylum tricornutum CCAP 1055/1
   strain: UTEX 642
   growth_metrics:
-  - measurement_conditions: F/2ASW at 20 deg C, continuous illumination of
-      30-75 umol photons m-2 s-1, and aeration with ambient air or 1% CO2;
-      reported mid-log harvest OD730 0.2-0.3.
+  - measurement_conditions: F/2ASW at 20 deg C, continuous illumination of 30-75 umol
+      photons m-2 s-1, and aeration with ambient air or 1% CO2; reported mid-log harvest
+      OD730 0.2-0.3.
     evidence:
     - reference: DOI:10.1104/pp.18.00453
       supports: SUPPORT
-      explanation: Matsui et al. explicitly report Phaeodactylum tricornutum
-        UTEX 642 cultivation in F/2ASW.
+      explanation: Matsui et al. explicitly report Phaeodactylum tricornutum UTEX
+        642 cultivation in F/2ASW.
     is_max_attainment: false
   evidence:
   - reference: DOI:10.1104/pp.18.00453
     supports: SUPPORT
-    explanation: The publication supports the organism-medium relationship for
-      the F/2ASW variant of this parent F/2 medium record.
+    explanation: The publication supports the organism-medium relationship for the
+      F/2ASW variant of this parent F/2 medium record.
 - preferred_term: Thalassiosira pseudonana
   term:
     id: NCBITaxon:296543
     label: Thalassiosira pseudonana CCMP1335
   strain: CCMP1335
   growth_metrics:
-  - measurement_conditions: F/2ASW at 20 deg C, continuous illumination of
-      30-75 umol photons m-2 s-1, and aeration with ambient air or 1% CO2;
-      reported mid-log harvest OD730 0.1-0.15.
+  - measurement_conditions: F/2ASW at 20 deg C, continuous illumination of 30-75 umol
+      photons m-2 s-1, and aeration with ambient air or 1% CO2; reported mid-log harvest
+      OD730 0.1-0.15.
     evidence:
     - reference: DOI:10.1104/pp.18.00453
       supports: SUPPORT
-      explanation: Matsui et al. explicitly report Thalassiosira pseudonana
-        CCMP1335 cultivation in F/2ASW.
+      explanation: Matsui et al. explicitly report Thalassiosira pseudonana CCMP1335
+        cultivation in F/2ASW.
     is_max_attainment: false
   evidence:
   - reference: DOI:10.1104/pp.18.00453
     supports: SUPPORT
-    explanation: The source supports growth on the F/2ASW variant for the same
-      strain represented by NCBI Taxonomy ID 296543 and reference assembly
-      GCF_000149405.2.
+    explanation: The source supports growth on the F/2ASW variant for the same strain
+      represented by NCBI Taxonomy ID 296543 and reference assembly GCF_000149405.2.
 - preferred_term: Chaetoceros gracilis
   strain: UTEX LB2658
   growth_metrics:
-  - measurement_conditions: Modified F/2ASW supplemented with sodium selenite
-      and sodium metasilicate; sodium concentration adjusted by NaCl addition
-      and CO2 availability varied.
+  - measurement_conditions: Modified F/2ASW supplemented with sodium selenite and
+      sodium metasilicate; sodium concentration adjusted by NaCl addition and CO2
+      availability varied.
     evidence:
     - reference: DOI:10.1007/s10126-021-10037-4
       supports: SUPPORT
-      explanation: Tsuji et al. report growth and CO2-concentrating mechanism
-        experiments for Chaetoceros gracilis UTEX LB2658 using modified F/2ASW.
+      explanation: Tsuji et al. report growth and CO2-concentrating mechanism experiments
+        for Chaetoceros gracilis UTEX LB2658 using modified F/2ASW.
     is_max_attainment: false
   evidence:
   - reference: DOI:10.1007/s10126-021-10037-4
     supports: SUPPORT
-    explanation: The study identifies the UTEX LB2658 strain and modified
-      F/2ASW growth conditions; the UTEX strain page separately lists this strain
-      as a liquid-culture Chaetoceros gracilis accession.
+    explanation: The study identifies the UTEX LB2658 strain and modified F/2ASW growth
+      conditions; the UTEX strain page separately lists this strain as a liquid-culture
+      Chaetoceros gracilis accession.
