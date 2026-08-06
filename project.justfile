@@ -842,6 +842,15 @@ merge-stats:
         --normalized-dir {{normalized_yaml_dir}} \
         --stats-only
 
+# Verify merge_yaml is a current derivation of normalized_yaml (#215). Every
+# corpus gate scans normalized_yaml only, on the assumption that merge_yaml is
+# always regenerated from it; this tests that assumption by regenerating to a temp
+# dir and diffing. Slow (~3 min) and currently DRIFTED, so it is on-demand, not a
+# CI gate — see the script docstring.
+[group('QC')]
+audit-merge-freshness *args="":
+    uv run --extra dev python scripts/audit_merge_yaml_freshness.py {{args}}
+
 [group('Merge')]
 verify-merges:
     #!/usr/bin/env bash
