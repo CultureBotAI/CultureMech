@@ -177,3 +177,8 @@ reports/media_variation_candidate_groups.json
 reports/media_growth_review_manifest.tsv
 reports/media_growth_review_manifest.json
 reports/media_growth_review_manifest_summary.md
+
+# Cocktail-nesting proposal worklist: a regenerable diagnostic for the #150 repair,
+# not a tracked artifact. Regenerate with `just propose-cocktail-nesting`.
+data/import_tracking/reports/cocktail_nesting_proposals.tsv
+data/import_tracking/reports/cocktail_nesting_proposals.json
