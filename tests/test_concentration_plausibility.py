@@ -288,9 +288,21 @@ def test_the_gate_baselines_match_the_current_corpus(acp, media_records):
     # The COCKTAIL baseline is the sharper gate, so it needs the same anti-vacuous
     # guard, not just `> 0` (#221): as the 579-record backlog is repaired the real
     # count drops, and a baseline left far above it silently stops being able to
-    # fire. summarize_records re-reads only the flagged records, not the corpus.
-    summary = acp.summarize_records(rows, acp.NORMALIZED)
-    cocktails = sum(1 for s in summary if s["flattened_cocktail"] == "yes")
+    # fire. Counted in memory from `rows` + the fixture docs — calling
+    # summarize_records re-reads the flagged files and blew the slow-test budget on
+    # CI (193s). The cocktail rule mirrors summarize_records: no `solutions:` block
+    # and >= COCKTAIL_MIN_ROWS indicator OR trace rows.
+    from collections import Counter
+    has_solutions = {str(p.relative_to(acp.NORMALIZED)): bool(d.get("solutions"))
+                     for p, d in media_records}
+    per_record: dict[str, Counter] = {}
+    for r in rows:
+        per_record.setdefault(r["file_path"], Counter())[r["finding"]] += 1
+    cocktails = sum(
+        1 for fp, c in per_record.items()
+        if not has_solutions.get(fp, False)
+        and (c["INDICATOR_UNIT_SLIP"] >= acp.COCKTAIL_MIN_ROWS
+             or c["TRACE_SALT_AS_STOCK"] >= acp.COCKTAIL_MIN_ROWS))
     assert cocktails <= COCKTAIL_BASELINE, (
         f"{cocktails} flattened cocktails exceeds the baseline {COCKTAIL_BASELINE}")
     assert COCKTAIL_BASELINE - cocktails <= 50, (
