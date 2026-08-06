@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-29T02:11:04.625514+00:00",
+  "generated": "2026-08-06T22:51:48.819112+00:00",
   "category": "specialized",
   "count": 455,
   "recipes": {
@@ -494,7 +494,8 @@
       "source": "unknown",
       "categories": [
         "specialized"
-      ]
+      ],
+      "organism_culture_type": "isolate"
     },
     "CultureMech:015494": {
       "name": "BHIS_CaCl2",
@@ -1172,7 +1173,8 @@
       "source": "unknown",
       "categories": [
         "specialized"
-      ]
+      ],
+      "organism_culture_type": "isolate"
     },
     "CultureMech:015543": {
       "name": "M9 1percentGlucose",
@@ -1576,7 +1578,7 @@
     "CultureMech:015402": {
       "name": "marine_medium_with_thiosulfate",
       "filename": "marine_medium_with_thiosulfate.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 0,
       "id": "CultureMech:015402",
       "source_id": "mediadive.medium:J376",
       "source": "MediaDive",

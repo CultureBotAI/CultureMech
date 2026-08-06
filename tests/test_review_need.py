@@ -144,25 +144,16 @@ def _rank(srn, corpus):
 
 
 def test_known_bad_records_rank_near_the_top(srn, corpus):
-    """Validation against records independently confirmed broken.
+    """Validation against a record independently confirmed broken.
 
-    NBRC_1197 carries an unparsed recipe (#166); test_medium_123 is a literal test
-    fixture sitting in the production corpus.
+    NBRC_1197 carries an unparsed recipe (#166). (The former second example,
+    test_medium_123, was a literal test fixture in the production corpus; it was
+    retired in #175, so it is no longer available to assert against.)
     """
     rows = _rank(srn, corpus)
     assert rows, "scorer returned nothing"
     top = [r["file_path"] for r in rows[:60]]
     assert "bacterial/NBRC_1197.yaml" in top, "NBRC_1197 (unparsed recipe) not in the worst 60"
-
-    # test_medium_123 is checked by SCORE, not rank. #175 lifted its "See source
-    # for composition" placeholder to `ingredients: []`, so it scores `no
-    # ingredients` (30) instead of `placeholder text` (25) + `only 1-2` (15); the
-    # reshuffle drops it just outside the worst 60 (score 45, ~rank 106). Still
-    # severe, which is the property this test defends — rank is brittle to corpus
-    # size, the score is the signal.
-    by_score = {r["file_path"]: int(r["score"]) for r in rows}
-    assert by_score.get("bacterial/test_medium_123.yaml", 0) >= 40, (
-        "test_medium_123 (empty test fixture) should still score as severely broken")
 
 
 def test_most_of_the_corpus_is_not_flagged_as_severe(srn, corpus):
