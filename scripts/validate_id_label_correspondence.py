@@ -146,7 +146,16 @@ _ERROR_VERDICTS = {
 # Reported, actionable, but NOT fatal: the grounding is correct and only the
 # label lost its subscript glyphs upstream ("NaCO3" for Na2CO3). Repairing the
 # name is a data-cleanup task, not a mapping error, so it must not fail enforce.
-_WARN_VERDICTS = {"LABEL_SUBSCRIPTS_LOST"}
+# The label's element skeleton matches the term's but the waters of hydration
+# differ. All three are the same MAPPING_SEMANTICS.md Section 3 collapse seen
+# from different sides — reported for curation, never fatal (a hydrate grounded
+# to its anhydrous parent is a defensible interim mapping).
+_HYDRATION_VERDICTS = {
+    "HYDRATE_ON_ANHYDROUS_TERM",   # label has water, term has none
+    "ANHYDROUS_ON_HYDRATE_TERM",   # term has water, label has none
+    "HYDRATION_STATE_MISMATCH",    # both have water, different amounts
+}
+_WARN_VERDICTS = {"LABEL_SUBSCRIPTS_LOST"} | _HYDRATION_VERDICTS
 
 # Path segments under which a `term`/`chebi_term` label-waiver does NOT apply:
 # organism (NCBITaxon) and environment (ENVO) groundings must carry the canonical
@@ -406,8 +415,30 @@ def _plausibility_verdict(
 
     if formula and chem_formula.looks_like_formula(label):
         cmp = chem_formula.compare_formulas(label, formula)
-        if cmp in ("MATCH", "HYDRATE_RELAXED"):
-            return "OK_ID_ONLY", f"formula {cmp.lower()}"
+        if cmp == "MATCH":
+            return "OK_ID_ONLY", "formula match"
+        if cmp == "HYDRATE_RELAXED":
+            # Skeletons agree but the water counts differ. That is symmetric, so
+            # a single "label has extra water" verdict asserts the opposite of
+            # the facts half the time. Split it by comparing the waters on each
+            # side; when the split is not decidable, keep the tolerant pass.
+            states = chem_formula.hydration_states(label, formula)
+            if states is None:
+                return "OK_ID_ONLY", "formula hydrate_relaxed"
+            label_w, term_w = states
+            if term_w == 0:
+                return "HYDRATE_ON_ANHYDROUS_TERM", (
+                    f"label states {label_w} water(s) of hydration that "
+                    f"'{canonical or formula}' (anhydrous) lacks — ground to a "
+                    "hydrate-specific term, or mint cas:<hydrate CAS> with a "
+                    "narrowMatch to this parent (MAPPING_SEMANTICS.md Section 3)")
+            if label_w == 0:
+                return "ANHYDROUS_ON_HYDRATE_TERM", (
+                    f"term carries {term_w} water(s) of hydration the anhydrous "
+                    "label lacks — ground to the anhydrous term instead")
+            return "HYDRATION_STATE_MISMATCH", (
+                f"label states {label_w} water(s), term states {term_w} — ground "
+                "to the term whose hydration state the label actually names")
         if cmp == "SUBSCRIPTS_LOST":
             # Correct grounding, damaged label — flag for name repair, not as a
             # mapping error.
@@ -849,16 +880,20 @@ def run(config_path: Path, report_path: Path | None) -> int:
                 # residuals of exactly the kind the allow-list exists for — a
                 # correct grounding the heuristic cannot see is correct
                 # ("soy peptone" on FOODON "vegetable protein, hydrolyzed"
-                # shares no word) — so they are waivable too. Structural errors
-                # (UNKNOWN_PREFIX, ADAPTER_ERROR, MISSING_*) remain unwaivable.
+                # shares no word) — so they are waivable too. The three
+                # _HYDRATION_VERDICTS are the same kind of curator-judgeable
+                # residual (a hydrate grounded to its anhydrous parent when no
+                # hydrate term exists yet), so a curator gets the same escape
+                # hatch. Structural errors (UNKNOWN_PREFIX, ADAPTER_ERROR,
+                # MISSING_*) remain unwaivable.
                 # ID_OUT_OF_RANGE explicitly signals a foreign identifier
                 # wearing an OBO prefix (e.g. PubChem CID as CHEBI:) — that's
                 # the one class the allow-list must NOT cover; a curator who
                 # really wants to keep such an id should add its true prefix
                 # to `ignored_prefixes` instead.
                 if rec["verdict"] in (
-                    "MISMATCH", "ID_NOT_FOUND", "IMPLAUSIBLE_LABEL",
-                    "LABEL_SUBSCRIPTS_LOST",
+                    {"MISMATCH", "ID_NOT_FOUND", "IMPLAUSIBLE_LABEL",
+                     "LABEL_SUBSCRIPTS_LOST"} | _HYDRATION_VERDICTS
                 ) and (curie, normalize(label)) in exceptions:
                     rec["verdict"] = "OK_EXCEPTION"
                 counts[rec["verdict"]] = counts.get(rec["verdict"], 0) + 1
@@ -889,6 +924,9 @@ def run(config_path: Path, report_path: Path | None) -> int:
         "IMPLAUSIBLE_LABEL",
         "ID_OUT_OF_RANGE",
         "LABEL_SUBSCRIPTS_LOST",
+        "HYDRATE_ON_ANHYDROUS_TERM",
+        "ANHYDROUS_ON_HYDRATE_TERM",
+        "HYDRATION_STATE_MISMATCH",
         "SKIPPED_NO_ADAPTER",
         "SKIPPED_EMPTY_ADAPTER",
     ):

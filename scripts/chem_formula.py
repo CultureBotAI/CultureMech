@@ -255,3 +255,56 @@ def compare_formulas(label: str, ontology_formula: str) -> str | None:
     if ws and set(ws) == set(gs):
         return "SUBSCRIPTS_LOST"
     return "CONFLICT"
+
+
+def _label_water_units(text: str) -> int:
+    """Waters of hydration written in a label string; 0 when none is stated.
+
+    Mirrors the tail/dot hydrate handling ``parse_formula`` applies, so it reads
+    the same count that folded into the element multiset: "NiCl2 x 6 H2O" -> 6,
+    "MnSO4 x H2O" -> 1 (the ``x`` is the separator, count implied), "MgSO4" -> 0.
+    A variable multiplier ("VOSO4·xH2O") never reaches here -- ``parse_formula``
+    returns None for it, so ``compare_formulas`` is None and the caller stops.
+    """
+    s = str(text or "").strip()
+    total = 0
+    m = _HYDRATE_TAIL_RE.search(s)
+    if m:
+        total += int(m.group(1) or 1)
+        s = s[: m.start()].strip().rstrip(".·・")
+    m = _HYDRATE_DOT_RE.match(s)
+    if m:
+        total += int(m.group(2) or 1)
+    return total
+
+
+def hydration_states(label: str, ontology_formula: str) -> tuple[int, int] | None:
+    """Waters of hydration on each side of a ``HYDRATE_RELAXED`` pair.
+
+    Returns ``(label_waters, term_waters)`` when the label and the ontology
+    formula share a non-water skeleton and differ ONLY by water of hydration;
+    None when that is not the case, so the caller keeps the old tolerant pass.
+
+    The term's molecular formula may fold its waters into the H/O totals
+    ("H14MgO11S") or spell them out ("Cl2Mn.4H2O") -- either way the folded
+    OXYGEN difference between the two multisets is the difference in waters
+    (each H2O contributes H2 O1), and the label's own stated count anchors that
+    difference to an absolute pair. A difference that is not a whole number of
+    waters (dH != 2·dO, e.g. an -OH vs -H structural change) is refused.
+    """
+    want = parse_formula(label)
+    got = parse_ontology_formula(ontology_formula)
+    if not want or not got:
+        return None
+    ws, gs = _skeleton(want), _skeleton(got)
+    if not ws or ws != gs:
+        return None
+    d_h = want.get("H", 0) - got.get("H", 0)
+    d_o = want.get("O", 0) - got.get("O", 0)
+    if d_o == 0 or d_h != 2 * d_o:
+        return None
+    label_w = _label_water_units(label)
+    term_w = label_w - d_o
+    if term_w < 0:
+        return None                       # inconsistent counts -- refuse to guess
+    return label_w, term_w
