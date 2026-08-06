@@ -3,6 +3,7 @@ name: marinibactrum_medium
 original_name: MARINIBACTRUM MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1621
@@ -26,8 +27,8 @@ ingredients:
   concentration:
     value: '28.13'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: KCl
   term:
@@ -36,8 +37,8 @@ ingredients:
   concentration:
     value: '0.77'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -46,8 +47,8 @@ ingredients:
   concentration:
     value: '1.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -56,8 +57,8 @@ ingredients:
   concentration:
     value: '4.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: NaHCO3
   term:
@@ -66,8 +67,8 @@ ingredients:
   concentration:
     value: '0.11'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -76,8 +77,8 @@ ingredients:
   concentration:
     value: '3.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 applications:
 - Microbial cultivation
@@ -99,6 +100,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MARINIBACTRUM MEDIUM" to "marinibactrum_medium" for
     consistent matching
+- timestamp: '2026-06-05T07:41:13.074614+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:42.116120+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint cc466b4ccbf53d3a827aaeb3c766b7d32d41446d6640a90e12e68e49a14d3f04
+  source: marinibactrum_medium.yaml
 merge_fingerprint: cc466b4ccbf53d3a827aaeb3c766b7d32d41446d6640a90e12e68e49a14d3f04
 merged_from:
 - marinibactrum_medium

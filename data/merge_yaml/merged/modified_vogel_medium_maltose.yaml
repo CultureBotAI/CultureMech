@@ -3,17 +3,24 @@ name: modified_vogel_medium_maltose
 original_name: '''Modified Vogel Medium (maltose'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.68'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Citrate
   concentration:
     value: '0.02379'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: Maltose
   term:
     id: CHEBI:17306
@@ -22,8 +29,8 @@ ingredients:
     value: '58.43'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:malt'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000591
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17306
     label: Maltose
 - preferred_term: Magnesium sulfate
   term:
@@ -32,8 +39,8 @@ ingredients:
   concentration:
     value: '0.8115'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Boric acid
   term:
@@ -42,8 +49,8 @@ ingredients:
   concentration:
     value: '0.0008087'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Uridine
   concentration:
@@ -57,6 +64,9 @@ ingredients:
   concentration:
     value: '36.74'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.0002066'
@@ -71,9 +81,9 @@ ingredients:
   concentration:
     value: '0.0002189'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Ferrous ammonium sulfate
   concentration:
     value: '0.00255'
@@ -85,13 +95,16 @@ ingredients:
   concentration:
     value: '0.01739'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.001002'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258
@@ -99,8 +112,8 @@ ingredients:
   concentration:
     value: '9.691'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
     label: Sodium citrate
 - preferred_term: Ammonium nitrate
   term:
@@ -109,8 +122,8 @@ ingredients:
   concentration:
     value: '24.99'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000287
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63038
     label: Ammonium nitrate
 preparation_steps:
 - step_number: 1
@@ -141,6 +154,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'Modified Vogel Medium (maltose" to "modified_vogel_medium_maltose"
     for consistent matching
+- timestamp: '2026-06-05T07:41:37.969903+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:49.984355+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint c3aad0e3dd54874f784642cd86278df7861e563b1966d74fda90bae608c76115
+  source: modified_vogel_medium_maltose.yaml
 media_term:
   preferred_term: MediaDB Medium 344
   term:
@@ -152,6 +176,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 0d32d32c02e8e53222a2f02f720b8af1acd5132119dc1834b9c2130b578e69a5
+merge_fingerprint: c3aad0e3dd54874f784642cd86278df7861e563b1966d74fda90bae608c76115
 merged_from:
 - modified_vogel_medium_maltose

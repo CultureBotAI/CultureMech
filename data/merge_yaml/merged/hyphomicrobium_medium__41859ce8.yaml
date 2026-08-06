@@ -1,0 +1,200 @@
+id: CultureMech:000813
+name: hyphomicrobium_medium
+original_name: HYPHOMICROBIUM MEDIUM
+category: bacterial
+medium_type: DEFINED
+composition_type: DEFINED
+physical_state: SOLID_AGAR
+ph_value: 6.0
+media_term:
+  preferred_term: DSMZ Medium 1355
+  term:
+    id: mediadive.medium:1355
+    label: HYPHOMICROBIUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1355.pdf'
+ingredients:
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: K2HPO4
+- preferred_term: NaH2PO4
+  term:
+    id: CHEBI:37585
+    label: NaH2PO4
+  concentration:
+    value: '2.25'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:37585
+    label: NaH2PO4
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '12'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+- preferred_term: Methylamine
+  term:
+    id: CHEBI:16830
+    label: Methylamine
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16830
+    label: Methylamine
+- preferred_term: EDTA
+  term:
+    id: CHEBI:64755
+    label: EDTA
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64755
+    label: EDTA
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '4.4'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1.466'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '1.012'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.998'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+- preferred_term: (NH4)6Mo7O24 x 4 H2O
+  concentration:
+    value: '0.22'
+    unit: G_PER_L
+  term:
+    id: CHEBI:91249
+    label: ammonium molybdate
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.314'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.322'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adjust to pH 6 and sterilize by autoclaving. The medium may be solidified
+    by adding 12.0 g/l agar. After autoclaving add sterile methylamine (0.2% v/v)
+    to the sterile main solution.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 6.0 with NaOH.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.180315Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1355'
+- timestamp: '2026-03-13T06:18:58.547274Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000813'
+- timestamp: '2026-03-17T06:30:27.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:09.973767+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HYPHOMICROBIUM MEDIUM" to "hyphomicrobium_medium" for
+    consistent matching
+- timestamp: '2026-06-05T07:41:09.198231+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 13 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:59.984874+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:38.271023+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 41859ce84b23101f9e449692d965879ffef69282fb79328ae8c38f78d6984757
+  source: hyphomicrobium_medium.yaml
+merge_fingerprint: 41859ce84b23101f9e449692d965879ffef69282fb79328ae8c38f78d6984757
+merged_from:
+- hyphomicrobium_medium

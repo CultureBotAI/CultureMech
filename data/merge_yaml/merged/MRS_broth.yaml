@@ -1,135 +1,61 @@
-id: CultureMech:008826
+id: CultureMech:009062
 name: mrs_broth
 original_name: MRS broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: MRS broth (Difco)
   concentration:
     value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: MgSO4.7H2O
-  concentration:
-    value: '200'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4.7H2O
-- preferred_term: K2HPO4
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
-  term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
-- preferred_term: polyoxyethylene sorbitan mono-oleate (Tween 80)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Surfactant; Properties: Organic compound, Simple component, Defined
-    component'
-- preferred_term: MnSO4.4H2O
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:86358
-    label: manganese(II) sulfate tetrahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000711
-    label: MnSO4.4H2O
-- preferred_term: Triammonium citrate
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
-    Organic compound'
-  term:
-    id: CHEBI:63037
-    label: ''
-- preferred_term: CH3COONa.3H2O
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Organic compound'
-- preferred_term: Glucose
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
-    component'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
-- preferred_term: Yeast extract (Difco or Oxoid)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Oxoid peptone
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Lab-Lemco (Oxoid)
-  concentration:
-    value: '10'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
 media_term:
-  preferred_term: TOGO Medium M2238
+  preferred_term: TOGO Medium M2489
   term:
-    id: TOGO:M2238
+    id: TOGO:M2489
     label: MRS broth
-notes: 'Source: https://togomedium.org/medium/M2238'
+notes: 'Source: https://togomedium.org/medium/M2489'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.202393Z'
+- timestamp: '2026-01-27T06:35:56.580436Z'
   curator: togo-import
   action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2238'
-- timestamp: '2026-01-28T19:48:37.766745Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:20:00.558767Z'
+  notes: 'Source: TOGO, ID: M2489'
+- timestamp: '2026-03-13T06:20:02.330712Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:008826'
-- timestamp: '2026-03-17T06:30:46.000000Z'
-  curator: mediaingredientmech-enrichment-v1.0
-  action: Added MediaIngredientMech links
-  notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:19.235728+00:00'
+  notes: 'Assigned stable identifier: CultureMech:009062'
+- timestamp: '2026-03-17T19:46:21.104003+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "MRS broth" to "mrs_broth" for consistent matching
-high_metal: true
-merge_fingerprint: adf818847efb079ca32a1ac67b423b2c562b41787ff5b237e07564b1acba66c8
+- timestamp: '2026-08-06T03:05:12.059263+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M2489_MRS_broth, man_rogosa_sharpe_mrs_broth_difco'
+- timestamp: '2026-08-06T03:05:12.059299+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 39ed5263218e3300140d21f695130b26d1a7b0467a7fed8457d9bf3e6f4d5039
+  source: TOGO_M2489_MRS_broth.yaml, man_rogosa_sharpe_mrs_broth_difco.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/man_rogosa_sharpe_mrs_broth_difco.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:009250
+  name: man_rogosa_sharpe_mrs_broth_difco
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+synonyms:
+- name: man_rogosa_sharpe_mrs_broth_difco
+  source: TOGO
+  source_id: TOGO:M2698
+  original_category: bacterial
+categories:
+- bacterial
 merged_from:
-- mrs_broth
+- TOGO_M2489_MRS_broth
+- man_rogosa_sharpe_mrs_broth_difco
+merge_fingerprint: 39ed5263218e3300140d21f695130b26d1a7b0467a7fed8457d9bf3e6f4d5039

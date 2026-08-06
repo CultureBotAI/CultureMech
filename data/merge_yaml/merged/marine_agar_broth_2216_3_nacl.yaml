@@ -3,6 +3,7 @@ name: marine_agar_broth_2216_3_nacl
 original_name: Marine Agar/Broth 2216 + 3 % NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: NaCl
   concentration:
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -73,10 +74,28 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Marine Agar/Broth 2216 + 3 % NaCl" to "marine_agar_broth_2216_3_nacl"
     for consistent matching
-- timestamp: '2026-04-17T06:30:09.677571+00:00'
+- timestamp: '2026-06-05T07:41:12.808028+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:41.938896+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: marine_agar_broth_2216_10_nacl, marine_agar_broth_2216_3_nacl'
+- timestamp: '2026-08-06T03:05:41.938938+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 340df8a51923e01a31b62a415de4579b0e32e6d7226569f44d4522c4521443a6
+  source: marine_agar_broth_2216_10_nacl.yaml, marine_agar_broth_2216_3_nacl.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/marine_agar_broth_2216_10_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:008705
+  name: marine_agar_broth_2216_10_nacl
+  notes: NaCl increased from 30 g/L to 100 g/L while Marine Broth 2216 and optional
+    agar remain unchanged.
 synonyms:
 - name: marine_agar_broth_2216_10_nacl
   source: TOGO

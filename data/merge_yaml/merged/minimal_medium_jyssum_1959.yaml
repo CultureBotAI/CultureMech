@@ -3,6 +3,7 @@ name: minimal_medium_jyssum_1959
 original_name: '''Minimal medium (Jyssum 1959'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sodium thiosulfate
@@ -12,21 +13,30 @@ ingredients:
   concentration:
     value: '0.1581'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000669
-    label: Sodium thiosulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132112
+    label: Sodium Thiosulfate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.7752'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '40.05'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.006583'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -34,8 +44,8 @@ ingredients:
   concentration:
     value: '28.04'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Glucose
   term:
@@ -44,8 +54,8 @@ ingredients:
   concentration:
     value: '5.551'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Manganese sulfate
   term:
@@ -54,9 +64,9 @@ ingredients:
   concentration:
     value: '0.006623'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -64,13 +74,16 @@ ingredients:
   concentration:
     value: '0.4057'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '14.7'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -100,6 +113,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'Minimal medium (Jyssum 1959" to "minimal_medium_jyssum_1959"
     for consistent matching
+- timestamp: '2026-06-05T07:41:34.684282+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:46.360092+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 1890c17abceb75e6f424379378103c58d3b103a7aaf8ff4821765e92829067f7
+  source: minimal_medium_jyssum_1959.yaml
 media_term:
   preferred_term: MediaDB Medium 395
   term:
@@ -111,6 +135,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 4d63d19e70d6413b345f777a771581e2ce3d20d0ac092077813f439862e8cbca
+merge_fingerprint: 1890c17abceb75e6f424379378103c58d3b103a7aaf8ff4821765e92829067f7
 merged_from:
 - minimal_medium_jyssum_1959

@@ -1,116 +1,145 @@
-id: CultureMech:003183
+id: CultureMech:010293
 name: r2a_broth
-original_name: R2A BROTH
+original_name: R2A Broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 7.2
-media_term:
-  preferred_term: JCM Medium J839
-  term:
-    id: mediadive.medium:J839
-    label: R2A BROTH
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=839'
 ingredients:
-- preferred_term: Yeast extract
+- preferred_term: Distilled water
   concentration:
-    value: '0.5'
+    value: '1'
     unit: G_PER_L
-- preferred_term: Proteose peptone no. 3
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-- preferred_term: Casamino acids
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
-- preferred_term: Glucose
-  term:
-    id: CHEBI:17234
-    label: Glucose
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
-    label: Glucose
-- preferred_term: Starch
-  term:
-    id: CHEBI:28017
-    label: Starch
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
-    label: Starch
-- preferred_term: Sodium pyruvate
-  term:
-    id: CHEBI:50144
-    label: Sodium pyruvate
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
-    label: Sodium pyruvate
-- preferred_term: K2HPO4
-  term:
-    id: CHEBI:131527
-    label: K2HPO4
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 7.2.
-- step_number: 2
-  action: MIX
-  description: 'Comment: The premixed powder is available from Nihon Pharm. Co. as
-    R2A broth ''DAIGO''.'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+- preferred_term: Glucose
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Soluble starch
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Undefined component'
+  term:
+    id: CHEBI:28017
+    label: ''
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Proteose peptone No. 3 (BD-Difco)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Casamino acids (BD-Difco)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M875
+  term:
+    id: TOGO:M875
+    label: R2A Broth
+notes: 'Source: https://togomedium.org/medium/M875
+
+  Original source: JCM - JCM_M839
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=839'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:17.758902Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J839'
-- timestamp: '2026-01-28T19:48:11.541284Z'
+- timestamp: '2026-01-27T06:35:55.880283Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M875'
+- timestamp: '2026-01-28T19:48:10.088698Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:19:18.415158Z'
+- timestamp: '2026-03-13T06:20:12.758178Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:003183'
-- timestamp: '2026-03-17T06:29:49.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:010293'
+- timestamp: '2026-03-17T06:29:46.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:32.264885+00:00'
+- timestamp: '2026-03-17T19:46:31.703371+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "R2A BROTH" to "r2a_broth" for consistent matching
-merge_fingerprint: 9913a04e1bfe54c933b50a8bdf5adea076d5aa82013b4491f54d69d9edaf1fe2
+  notes: Normalized name from "R2A Broth" to "r2a_broth" for consistent matching
+- timestamp: '2026-06-05T07:40:45.266125+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:33.644001+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:46:51.907435+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:20.102964+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 3242a67dd9b68d1f42f981a7e2dc50882f2f98e11c0d436eb0722f7b7f396246
+  source: TOGO_M875_R2A_Broth.yaml
+merge_fingerprint: 3242a67dd9b68d1f42f981a7e2dc50882f2f98e11c0d436eb0722f7b7f396246
 merged_from:
-- r2a_broth
+- TOGO_M875_R2A_Broth

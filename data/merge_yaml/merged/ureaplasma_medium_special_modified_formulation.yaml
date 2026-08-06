@@ -3,6 +3,7 @@ name: ureaplasma_medium_special_modified_formulation
 original_name: Ureaplasma Medium – Special Modified Formulation
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Basal Medium
@@ -23,9 +24,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: PPLO Broth w/o Crystal Violet (BD 255420)
   concentration:
     value: '3.5'
@@ -92,9 +93,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:52.605084'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Fetal Bovine Serum (ATCC 30-2020)'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:04:35.637523+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -108,10 +109,10 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008773'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:54.392081'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name; Added default solution
     name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:11.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -121,6 +122,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Ureaplasma Medium – Special Modified Formulation" to
     "ureaplasma_medium_special_modified_formulation" for consistent matching
+- timestamp: '2026-05-16T09:04:38.359681+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:41:54.849669+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:02.324441+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint abda7a9e4442e0de84482d0f2ecfb9048d4a4682a94eaf39b434a9a6a45fdcbf
+  source: ureaplasma_medium_special_modified_formulation.yaml
 solutions:
 - preferred_term: Additive Solution
   composition: []

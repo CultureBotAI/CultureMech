@@ -3,6 +3,7 @@ name: hepes_medium
 original_name: HEPES Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
@@ -24,11 +25,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
   term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4·7H2O
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '5'
@@ -38,9 +39,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: KH2PO4
   concentration:
     value: '0.5'
@@ -49,9 +50,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NaHCO3
   concentration:
@@ -62,9 +63,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: (NH4)2SO4
   concentration:
     value: '2.5'
@@ -74,9 +75,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: (NH4)2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 - preferred_term: Fe-EDTA
   concentration:
     value: '75'
@@ -112,9 +113,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008182'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:49.900817'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:52.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -123,6 +124,31 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "HEPES Medium" to "hepes_medium" for consistent matching
+- timestamp: '2026-05-16T09:03:37.095306+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:08.413982+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:48.738953+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:46:59.733078+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:37.491586+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 7c79850eb12afbd56be1b584cb509a2532ce32c79d33eeff350f1d04fb87d43d
+  source: hepes_medium.yaml
 high_metal: true
 solutions:
 - preferred_term: HEPES*
@@ -132,6 +158,6 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
   name: Unknown solution
-merge_fingerprint: 8f0de20c26f5e20fb190960baafeedc9706e89fd82ebf481722fcc2152b71f06
+merge_fingerprint: 7c79850eb12afbd56be1b584cb509a2532ce32c79d33eeff350f1d04fb87d43d
 merged_from:
 - hepes_medium

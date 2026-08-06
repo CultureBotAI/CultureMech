@@ -1,6 +1,7 @@
 id: CultureMech:015623
 name: MoLS4 no Pantothenic acid
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: MoLS4
@@ -17,7 +18,7 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 137-08-6; MW: 238.27'
 description: Lactate-sulfate media for sulfate-reducing bacteria with no pantothenate
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: MoLS4 no Pantothenic acid
@@ -31,6 +32,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015623'
+- timestamp: '2026-05-16T09:04:41.885929+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:06.723403+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint bfd2b6d6db6621cdeeca94196d30ad64c11241d7d87cd96c639edbf355828387
+  source: mols4_no_pantothenic_acid.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: bfd2b6d6db6621cdeeca94196d30ad64c11241d7d87cd96c639edbf355828387

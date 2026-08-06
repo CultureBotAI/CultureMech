@@ -3,6 +3,7 @@ name: togo_medium_m2696
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Yeast extract (Difco)
@@ -34,10 +35,10 @@ curation_history:
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2696'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:55.681165'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Antifoam (Union Carbide Corp.,
     SAG-471)'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:04.672516Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -47,6 +48,15 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TOGO Medium M2696" to "togo_medium_m2696" for consistent
     matching
+- timestamp: '2026-05-16T09:04:37.235250+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:06:01.353439+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 815a039d47abf2ee1c7c3f6e01b74eb96930490a9bcd682856f8412f690f7790
+  source: togo_medium_m2696.yaml
 merge_fingerprint: 815a039d47abf2ee1c7c3f6e01b74eb96930490a9bcd682856f8412f690f7790
 merged_from:
 - togo_medium_m2696

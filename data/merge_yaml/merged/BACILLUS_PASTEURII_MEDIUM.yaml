@@ -3,6 +3,7 @@ name: bacillus_pasteurii_medium
 original_name: BACILLUS PASTEURII medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 8.0
 media_term:
@@ -20,8 +21,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000301
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16199
     label: Urea
 - preferred_term: Peptone
   concentration:
@@ -39,8 +40,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -66,10 +67,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "BACILLUS PASTEURII medium" to "bacillus_pasteurii_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:21.606146+00:00'
+- timestamp: '2026-06-05T07:40:22.255128+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:46.802739+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_2_BACILLUS_PASTEURII_medium, bacillus_pasteurii_medium'
+- timestamp: '2026-08-06T03:04:46.802786+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 50fe56e85a46a5ac87fb1bd05fb6ae6e661955bf288b51e6b16798fffe2dc1cd
+  source: KOMODO_2_BACILLUS_PASTEURII_medium.yaml, bacillus_pasteurii_medium.yaml
 categories:
 - bacterial
 merged_from:

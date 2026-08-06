@@ -3,6 +3,7 @@ name: medium_for_strains_ja430
 original_name: Medium for strains JA430
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Vitamin B12 (0.002% (w/v))
@@ -24,8 +25,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
@@ -34,11 +35,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4·7H2O
 - preferred_term: Yeast extract
   concentration:
     value: '0.5'
@@ -53,9 +54,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.15'
@@ -65,9 +66,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: KH2PO4
   concentration:
     value: '0.5'
@@ -76,9 +77,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
@@ -89,9 +90,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -101,8 +102,8 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: Na2S·9H2O
   concentration:
@@ -113,9 +114,9 @@ ingredients:
   term:
     id: CHEBI:76209
     label: sodium sulfide nonahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
-    label: Na2S·9H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
 - preferred_term: Sodium pyruvate
   concentration:
     value: '3'
@@ -125,9 +126,9 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
-    label: Sodium pyruvate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
@@ -145,9 +146,9 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000183
-    label: Na2MoO4·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
 - preferred_term: H3BO3
   concentration:
     value: '60'
@@ -157,9 +158,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: MnCl2·4H2O
   concentration:
     value: '100'
@@ -187,9 +188,9 @@ ingredients:
   term:
     id: CHEBI:34887
     label: nickel dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
-    label: NiCl2·6H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
 - preferred_term: CuCl2·2H2O
   concentration:
     value: '20'
@@ -199,9 +200,9 @@ ingredients:
   term:
     id: CHEBI:86318
     label: copper(II) chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
-    label: CuCl2·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
 - preferred_term: ZnCl2
   concentration:
     value: '70'
@@ -211,9 +212,9 @@ ingredients:
   term:
     id: CHEBI:49976
     label: zinc dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
-    label: ZnCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
+    label: zinc dichloride
 - preferred_term: HCl (25%; 7.7 M)
   concentration:
     value: '10'
@@ -229,9 +230,9 @@ ingredients:
   term:
     id: CHEBI:86249
     label: iron dichloride tetrahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000329
-    label: FeCl2·4H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
 media_term:
   preferred_term: TOGO Medium M1863
   term:
@@ -254,9 +255,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:50.360020'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:04:31.468883+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -270,9 +271,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008438'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:51.892209'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:05.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -282,10 +283,35 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Medium for strains JA430" to "medium_for_strains_ja430"
     for consistent matching
-- timestamp: '2026-04-17T06:30:11.166517+00:00'
+- timestamp: '2026-05-16T09:04:20.861034+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:41:29.988495+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 15 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:58:21.712038+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:47:06.402146+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:43.548399+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: medium_for_strain_ja349_and_ja350, medium_for_strains_ja430'
+- timestamp: '2026-08-06T03:05:43.548457+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint c2ec1137a5f0e2b265b2abf80234735df7d34d3f5cd5e9e15405ddcd3972aeca
+  source: medium_for_strain_ja349_and_ja350.yaml, medium_for_strains_ja430.yaml
 high_metal: true
 solutions:
 - preferred_term: Ferric citrate solution* (0.1%)
@@ -314,4 +340,4 @@ categories:
 merged_from:
 - medium_for_strain_ja349_and_ja350
 - medium_for_strains_ja430
-merge_fingerprint: 5ade61a156e74cbbe26aa427388f6ef50d7f2fe073a54873131b900bc6d71cca
+merge_fingerprint: c2ec1137a5f0e2b265b2abf80234735df7d34d3f5cd5e9e15405ddcd3972aeca

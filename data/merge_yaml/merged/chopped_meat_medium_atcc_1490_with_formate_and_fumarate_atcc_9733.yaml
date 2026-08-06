@@ -3,6 +3,7 @@ name: chopped_meat_medium_atcc_1490_with_formate_and_fumarate_atcc_9733
 original_name: Chopped Meat Medium (ATCC 1490) with Formate and Fumarate (ATCC 9733)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: ATCC Medium 1490
@@ -42,8 +43,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: N NaOH
   concentration:
@@ -75,9 +76,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Agar
   concentration:
     value: '20'
@@ -86,9 +87,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Trypticase Peptone (BD 211921)
   concentration:
     value: '30'
@@ -114,8 +115,8 @@ ingredients:
   term:
     id: CHEBI:18067
     label: Vitamin K1
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000567
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18067
     label: Vitamin K1
 - preferred_term: Distilled water to
   concentration:
@@ -132,9 +133,9 @@ ingredients:
   term:
     id: CHEBI:50385
     label: hemin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
-    label: Hemin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
+    label: hemin
 - preferred_term: DI Water
   concentration:
     value: '100'
@@ -150,9 +151,9 @@ ingredients:
   term:
     id: CHEBI:18012
     label: fumaric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000984
-    label: Fumaric Acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18012
+    label: fumaric acid
 - preferred_term: Sodium Formate
   concentration:
     value: '6'
@@ -161,9 +162,9 @@ ingredients:
   term:
     id: CHEBI:62965
     label: sodium formate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000985
-    label: Sodium Formate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62965
+    label: sodium formate
 media_term:
   preferred_term: TOGO Medium M2618
   term:
@@ -184,13 +185,13 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:54.982442'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     Hydrogen gas; Added default concentration for ingredient: Carbon dioxide gas;
     Added default concentration for ingredient: Nitrogen gas; Added default concentration
     for ingredient: Hydrogen gas'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:04:25.308235+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -204,10 +205,10 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009185'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:56.933457'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name; Added default solution
     name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:29:58.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -218,6 +219,36 @@ curation_history:
   notes: Normalized name from "Chopped Meat Medium (ATCC 1490) with Formate and Fumarate
     (ATCC 9733)" to "chopped_meat_medium_atcc_1490_with_formate_and_fumarate_atcc_9733"
     for consistent matching
+- timestamp: '2026-05-16T09:03:27.422823+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-05-28T06:12:21.648981+00:00'
+  curator: deep-research-edison-phase2
+  action: ENRICHED
+  notes: 'Edison phase-2: Bacteroides ureolyticus ATCC 33387 is an exact parent match;
+    ATCC 1490 base (without formate/fumarate) and carbonate/CO2-buffered ATCC 1490
+    are variants. [added 7 organism(s), 2 variant(s)]'
+- timestamp: '2026-06-05T07:40:53.479044+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:54.531236+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T00:58:02.728451+00:00'
+  curator: curate_organism_culture_type.py
+  action: SET_ORGANISM_CULTURE_TYPE
+  notes: 'Inferred isolate: 7 specific strain(s) named, no community signal (#142)'
+  changes: Set organism_culture_type=isolate (was unset)
+- timestamp: '2026-08-06T03:05:27.622368+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 54048df36a056bec68d30335d6734a82261bbfb0d371705a6faacc8939966e73
+  source: chopped_meat_medium_atcc_1490_with_formate_and_fumarate_atcc_9733.yaml
 solutions:
 - preferred_term: Formate and Fumarate Solution
   composition: []
@@ -243,6 +274,130 @@ solutions:
     unit: G_PER_L
   notes: See mediadive_2227_Vitamin_K1_solution.yaml for composition
   name: Unknown solution
+organism_culture_type: isolate
+target_organisms:
+- preferred_term: Bacteroides ureolyticus
+  strain: ATCC 33387
+  evidence:
+  - reference: doi:10.1186/1471-2334-11-200
+    supports: SUPPORT
+    explanation: 'O''Hanlon et al. 2011; EXACT parent-medium match (ATCC 1490 + formate
+      + fumarate). Warning: B. ureolyticus has since been reclassified as Campylobacter
+      ureolyticus, but that is external to this source. | Identifiers: ATCC 33387;
+      reclassified as Campylobacter ureolyticus (external to source)'
+    snippet: Bacteroides ureolyticus ATCC 33387 was grown in ATCC medium 1490 with
+      formate and fumarate. Each species was grown anaerobically without agitation
+      at 37C for 24 or 48 hours.
+- preferred_term: Parabacteroides distasonis
+  term:
+    id: NCBITaxon:823
+    label: Parabacteroides distasonis
+  strain: ATCC 8503
+  evidence:
+  - reference: doi:10.1038/s41598-023-47003-0
+    supports: SUPPORT
+    explanation: Kleniewska et al. 2023; grown on ATCC 1490 base (no formate/fumarate
+      stated) -> see variant atcc_1490_base_no_formate_fumarate.
+    snippet: Parabacteroides distasonis (ATCC 8503) was cultivated in ATCC 1490 Modified
+      Chopped Meat medium at 37C anaerobically.
+- preferred_term: Fusobacterium nucleatum
+  term:
+    id: NCBITaxon:851
+    label: Fusobacterium nucleatum
+  strain: ATCC 25586
+  evidence:
+  - reference: doi:10.1186/1471-2334-11-200
+    supports: SUPPORT
+    explanation: O'Hanlon et al. 2011; ATCC 1490 base without formate/fumarate ->
+      see variant atcc_1490_base_no_formate_fumarate.
+    snippet: Fusobacterium nucleatum ATCC 25586 ... grown in ATCC medium 1490 (Modified
+      chopped meat medium), anaerobically at 37C for 24 or 48 h.
+- preferred_term: Porphyromonas levii
+  term:
+    id: NCBITaxon:28114
+    label: Porphyromonas levii
+  strain: ATCC 29147
+  evidence:
+  - reference: doi:10.1186/1471-2334-11-200
+    supports: SUPPORT
+    explanation: O'Hanlon et al. 2011; ATCC 1490 base without formate/fumarate ->
+      see variant atcc_1490_base_no_formate_fumarate.
+    snippet: Porphyromonas levii ATCC 29147 [was] grown in ATCC medium 1490 (Modified
+      chopped meat medium), anaerobically at 37C for 24 or 48 h.
+- preferred_term: Prevotella bivia
+  term:
+    id: NCBITaxon:28125
+    label: Prevotella bivia
+  strain: ATCC 29303
+  evidence:
+  - reference: doi:10.1186/1471-2334-11-200
+    supports: SUPPORT
+    explanation: O'Hanlon et al. 2011; ATCC 1490 base without formate/fumarate ->
+      see variant atcc_1490_base_no_formate_fumarate.
+    snippet: Prevotella bivia ATCC 29303 ... [was] grown in ATCC medium 1490 (Modified
+      chopped meat medium), anaerobically at 37C for 24 or 48 h.
+- preferred_term: Lactobacillus crispatus
+  term:
+    id: NCBITaxon:47770
+    label: Lactobacillus crispatus
+  strain: ATCC 33820
+  evidence:
+  - reference: doi:10.1186/1471-2334-11-200
+    supports: SUPPORT
+    explanation: O'Hanlon et al. 2011; ATCC 1490 base without formate/fumarate ->
+      see variant atcc_1490_base_no_formate_fumarate.
+    snippet: Lactobacillus crispatus ATCC 33820 was grown in ATCC medium 1490 (Modified
+      chopped meat medium) anaerobically without agitation at 37C for 24 h.
+- preferred_term: Fusobacterium necrophorum
+  term:
+    id: NCBITaxon:859
+    label: Fusobacterium necrophorum
+  strain: ATCC 27852
+  evidence:
+  - reference: doi:10.1002/ptr.765
+    supports: SUPPORT
+    explanation: Johnston et al. 2001; carbonate/CO2-buffered ATCC 1490 -> see variant
+      atcc_1490_carbonate_co2_buffered.
+    snippet: Fusobacterium necrophorum (ATCC 27852) was grown in a modified chopped
+      meat medium (ATCC 1490) buffered with carbonate/CO2; 38C, anaerobic glove bag,
+      serum bottle technique.
+variants:
+- name: atcc_1490_base_no_formate_fumarate
+  relationship: OMITTED_COMPONENT_VARIANT
+  description: ATCC medium 1490 (Modified Chopped Meat medium) used WITHOUT the added
+    formate and fumarate of the parent record.
+  modifications:
+  - Formate and fumarate omitted relative to the parent (ATCC 1490 + formate + fumarate).
+  - Base ATCC 1490 Modified Chopped Meat medium; anaerobic, 37C, 24-48 h.
+  purpose: Several BV-associated and gut anaerobes are reported on plain ATCC 1490
+    without the formate/fumarate supplement; model as the base variant rather than
+    asserting growth on the formate+fumarate parent.
+  evidence:
+  - reference: doi:10.1186/1471-2334-11-200
+    supports: SUPPORT
+    explanation: O'Hanlon et al. 2011 distinguishes the plain ATCC 1490 base from
+      the formate+fumarate parent formulation.
+    snippet: Fusobacterium nucleatum ATCC 25586 and Porphyromonas levii ATCC 29147
+      were all grown in ATCC medium 1490 (Modified chopped meat medium).
+- name: atcc_1490_carbonate_co2_buffered
+  relationship: SUPPLEMENTED_VARIANT
+  description: ATCC 1490 modified chopped meat medium buffered with carbonate/CO2
+    (Johnston et al. 2001).
+  modifications:
+  - Carbonate/CO2 buffering added to ATCC 1490 base (exact carbonate species/concentration
+    and gas composition not printed).
+  - For MIC assays, medium clarified through a 0.8 um filter (assay-use processing).
+  - Anaerobic glove bag; serum bottle technique; 38C.
+  purpose: Capture the carbonate/CO2-buffered ATCC 1490 variant used for Fusobacterium
+    necrophorum growth and MIC assays.
+  evidence:
+  - reference: doi:10.1002/ptr.765
+    supports: SUPPORT
+    explanation: Johnston et al. 2001; ATCC 1490-derived variant with carbonate/CO2
+      buffering; no formate/fumarate, so distinct from the parent.
+    snippet: Fusobacterium necrophorum (ATCC 27852) was grown in a modified chopped
+      meat medium (ATCC 1490) buffered with carbonate/CO2. For MIC assays, this medium
+      was clarified through a 0.8 um filter.
 merge_fingerprint: 54048df36a056bec68d30335d6734a82261bbfb0d371705a6faacc8939966e73
 merged_from:
 - chopped_meat_medium_atcc_1490_with_formate_and_fumarate_atcc_9733

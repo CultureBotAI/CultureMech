@@ -1,0 +1,280 @@
+id: CultureMech:002294
+name: ethane_c_medium
+original_name: ETHANE-C MEDIUM
+category: bacterial
+medium_type: DEFINED
+composition_type: DEFINED
+physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: JCM Medium J1120
+  term:
+    id: mediadive.medium:J1120
+    label: ETHANE-C MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1120'
+ingredients:
+- preferred_term: NH4NO3
+  concentration:
+    value: '0.0996016'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63038
+    label: ammonium nitrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63038
+    label: NH4NO3
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  concentration:
+    value: '0.00996016'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: Fe(III)-EDTA
+  term:
+    id: CHEBI:30729
+    label: Fe(III)-EDTA
+  concentration:
+    value: '0.00249004'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30729
+    label: Fe(III)-EDTA
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.0011'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
+    label: Vitamin B12
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
+    label: Biotin
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '0.372'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.00025'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.00575'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+- preferred_term: MnCl2 x 6 H2O
+  concentration:
+    value: '0.00455'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.0006'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+- preferred_term: (NH4)6Mo7O24 x 4 H2O
+  concentration:
+    value: '0.00027'
+    unit: G_PER_L
+  term:
+    id: CHEBI:91249
+    label: ammonium molybdate
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '26.3'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1.54'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: KBr
+  term:
+    id: CHEBI:32030
+    label: potassium bromide
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32030
+    label: KBr
+- preferred_term: KF
+  term:
+    id: CHEBI:66872
+    label: KF
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:66872
+    label: KF
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: KCl
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: H3BO3
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '7'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: KHCO3
+  term:
+    id: CHEBI:81862
+    label: KHCO3
+  concentration:
+    value: '0.24'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:81862
+    label: KHCO3
+- preferred_term: SrCl2 x 6 H2O
+  term:
+    id: CHEBI:36385
+    label: SrCl2 x 6 H2O
+  concentration:
+    value: '0.017'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:36385
+    label: SrCl2 x 6 H2O
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '5.2'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Mix components, adjust pH to 8.0 with NaOH, then distribute the medium
+    into culture vessels (e.g., 20-50 ml per 120 ml serum bottles), seal with butyl
+    rubber stoppers and autoclave at 110C for 5 min. Allow to stand the autoclaved
+    medium overnight. Add ethane to the gas phase (10 to 50% of the gas phase by volume).
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: Artificial seawater can be replaced with natural seawater. In this
+    case, filtrate seawater (pore size, 02 ï¿½m) and boil. After cooling, filtrate
+    again (pore size, 0.45 ï¿½m).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.701647Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1120'
+- timestamp: '2026-01-28T19:48:36.273485Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:12.067131Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002294'
+- timestamp: '2026-03-17T06:30:42.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:24.975038+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ETHANE-C MEDIUM" to "ethane_c_medium" for consistent
+    matching
+- timestamp: '2026-06-05T07:40:59.656499+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 20 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:56.725977+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:33.687424+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2510f74f83bda8379382d3b4184dbd3731253a58691bbb520f063571a4c2d465
+  source: ethane_c_medium.yaml
+merge_fingerprint: 2510f74f83bda8379382d3b4184dbd3731253a58691bbb520f063571a4c2d465
+merged_from:
+- ethane_c_medium

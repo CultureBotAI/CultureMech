@@ -1,0 +1,239 @@
+id: CultureMech:003832
+name: rhodovulum_visakhum_medium
+original_name: RHODOVULUM VISAKHUM medium
+category: bacterial
+medium_type: COMPLEX
+composition_type: SEMI_DEFINED
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: KOMODO Medium 1128
+  term:
+    id: komodo.medium:1128
+    label: RHODOVULUM VISAKHUM medium
+notes: 'Source: KOMODO ModelSEED | ID: 1128 | DSMZ Medium: 1128 (mediadive.medium:1128)
+  | Aerobic: No'
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: MgCl2 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: Sodium pyruvate
+  term:
+    id: CHEBI:50144
+    label: Sodium pyruvate
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
+    label: Sodium pyruvate
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
+    label: Vitamin B12
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '5.2'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+- preferred_term: FeCl2 x 4 H2O
+  term:
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
+    label: ZnCl2
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  concentration:
+    value: '0.062'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: H3BO3
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.19'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.017'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.036'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1128'
+- timestamp: '2026-02-03T11:19:02.662350'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1128
+- timestamp: '2026-03-13T06:19:22.577828Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003832'
+- timestamp: '2026-03-17T06:30:03.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:36.988281+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "RHODOVULUM VISAKHUM medium" to "rhodovulum_visakhum_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:19.206806+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 16 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:43.562966+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:40.348805+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_1128_RHODOVULUM_VISAKHUM_medium, rhodovulum_visakhum_medium'
+- timestamp: '2026-08-06T03:04:40.348847+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 50de029912887a8da8be4d8df8305f885f724256569825b3bd7a048731d93ce7
+  source: KOMODO_1128_RHODOVULUM_VISAKHUM_medium.yaml, rhodovulum_visakhum_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/rhodovulum_visakhum_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000565
+  name: rhodovulum_visakhum_medium
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and concentration
+    signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.
+categories:
+- bacterial
+merged_from:
+- KOMODO_1128_RHODOVULUM_VISAKHUM_medium
+- rhodovulum_visakhum_medium
+merge_fingerprint: 50de029912887a8da8be4d8df8305f885f724256569825b3bd7a048731d93ce7

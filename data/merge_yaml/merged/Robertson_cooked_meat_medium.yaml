@@ -3,6 +3,7 @@ name: robertson_cooked_meat_medium
 original_name: Robertson cooked meat medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Robertson cooked meat medium
@@ -32,6 +33,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Robertson cooked meat medium" to "robertson_cooked_meat_medium"
     for consistent matching
+- timestamp: '2026-08-06T03:05:54.797152+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint bafa6d0876d71d9499319944d464ba5c843176466e742597388094bf620bed21
+  source: robertson_cooked_meat_medium.yaml
 merge_fingerprint: bafa6d0876d71d9499319944d464ba5c843176466e742597388094bf620bed21
 merged_from:
 - robertson_cooked_meat_medium

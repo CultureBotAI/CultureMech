@@ -3,6 +3,7 @@ name: minimal_mineral_medium
 original_name: minimal mineral medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4 · 7H2O
   concentration:
@@ -24,8 +25,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:32599
-    label: ''
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: KH2PO4
   concentration:
     value: '1.9'
@@ -34,9 +35,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: (NH4)2SO4
   concentration:
@@ -47,9 +48,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: (NH4)2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 - preferred_term: Na2HPO4
   concentration:
     value: '5.1'
@@ -59,9 +60,9 @@ ingredients:
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
-    label: Na2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
 - preferred_term: Na2MoO4 · H2O
   concentration:
     value: '0.25'
@@ -80,9 +81,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: FeSO4·7H2O
   concentration:
     value: '1'
@@ -100,7 +101,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:49553
-    label: ''
+    label: copper(II) chloride
 - preferred_term: ZnCl2
   concentration:
     value: '0.25'
@@ -146,9 +147,9 @@ ingredients:
   term:
     id: CHEBI:26836
     label: sulfuric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001125
-    label: H2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26836
+    label: sulfuric acid
 - preferred_term: NH4VO3
   concentration:
     value: '0.1'
@@ -161,10 +162,10 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:77732
-    label: cadmium nitrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000859
+    id: CHEBI:64205
+    label: calcium nitrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64205
     label: Ca(NO3)2
 media_term:
   preferred_term: TOGO Medium M2846
@@ -196,9 +197,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009388'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:58.653436'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:29:48.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -208,6 +209,37 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "minimal mineral medium" to "minimal_mineral_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:04:24.097304+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:34.776904+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:48.550082+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T06:58:24.774575+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:47:08.073181+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:46.481285+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 630b483a5e9b0fdeadb46f5100722771635d437d0b4e0f3f85fd11f4b9d84264
+  source: minimal_mineral_medium.yaml
 solutions:
 - preferred_term: trace element solution
   term:
@@ -224,6 +256,6 @@ solutions:
     value: '1'
     unit: G_PER_L
   name: Unknown solution
-merge_fingerprint: 093aac2407e1e10afbe4f8b17b354b216290b2a7874b401ca61130533087f5d4
+merge_fingerprint: 630b483a5e9b0fdeadb46f5100722771635d437d0b4e0f3f85fd11f4b9d84264
 merged_from:
 - minimal_mineral_medium

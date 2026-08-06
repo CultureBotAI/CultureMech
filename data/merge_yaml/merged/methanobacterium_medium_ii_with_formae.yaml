@@ -1,8 +1,9 @@
 id: CultureMech:010133
 name: methanobacterium_medium_ii_with_formae
 original_name: Methanobacterium Medium (II) With Formae
-category: bacterial
+category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +32,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.1'
@@ -51,9 +52,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
@@ -64,9 +65,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: K2HPO4
   concentration:
     value: '0.3'
@@ -76,9 +77,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Resazurin
   concentration:
     value: '0.5'
@@ -88,8 +89,8 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: MgCl2・6H2O
   concentration:
@@ -109,9 +110,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Sodium acetate
   concentration:
     value: '0.5'
@@ -120,14 +121,17 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
-    label: Sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: L-Cysteine・HCl・H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:91248
+    label: ''
 - preferred_term: sodium formate
   notes: 'Properties: Defined component, Organic compound, Solution'
   term:
@@ -136,8 +140,8 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000985
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62965
     label: sodium formate
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
@@ -177,12 +181,12 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:21:00.254774'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: sodium formate; Added default
     concentration for ingredient: Carbon dioxide gas; Added default concentration
     for ingredient: Nitrogen gas; Added default concentration for ingredient: Carbon
     dioxide gas; Added default concentration for ingredient: Nitrogen gas'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:05:03.931882+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -196,10 +200,10 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010133'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:02.715765'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name; Added default solution
     name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:47.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -209,6 +213,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Methanobacterium Medium (II) With Formae" to "methanobacterium_medium_ii_with_formae"
     for consistent matching
+- timestamp: '2026-05-16T09:03:20.406911+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:43.924058+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:51.472741+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:27.727372+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 738719d5181681b58c91aa12b7488be005f62de54c879b3e8e200b4e61e07f86
+  source: TOGO_M725_Methanobacterium_Medium_II_With_Formae.yaml
 solutions:
 - preferred_term: Trace minerals (see Medium [M142])
   composition: []
@@ -239,6 +262,6 @@ solutions:
   notes: 'Role: Reducing agent; Properties: Defined component, Solution, Inorganic
     compound'
   name: Unknown solution
-merge_fingerprint: 96c08f5963030b92bfb7b66b67388e856ab353c2a2a949ef185322487ff53535
+merge_fingerprint: 738719d5181681b58c91aa12b7488be005f62de54c879b3e8e200b4e61e07f86
 merged_from:
 - TOGO_M725_Methanobacterium_Medium_II_With_Formae

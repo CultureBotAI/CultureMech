@@ -1,6 +1,7 @@
 id: CultureMech:015595
 name: MHII biocarbonate Chelated
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Pancreatic digest of casein
@@ -30,7 +31,7 @@ ingredients:
 description: Mueller Hinton II Broth for cultivation and antimicrobial susceptibility
   testing; with bicarbonate; Chelated with a resin, and then the resin is removed
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: MHII biocarbonate Chelated
@@ -44,19 +45,37 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015595'
-- timestamp: '2026-04-17T06:30:30.294782+00:00'
+- timestamp: '2026-05-16T09:04:41.665968+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:06.386969+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: mhii_biocarbonate, mhii_biocarbonate_chelated'
+- timestamp: '2026-08-06T03:06:06.387001+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 6bcd85ec8d5b04266790a8f09cb0404a3774c077df5afef72374e1b93f222f66
+  source: mhii_biocarbonate.yaml, mhii_biocarbonate_chelated.yaml
 data_quality_flags:
 - has_unmapped_ingredients
+parent_media:
+  path: data/normalized_yaml/specialized/mhii_biocarbonate.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:015594
+  name: MHII biocarbonate
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.
 original_name: MHII biocarbonate Chelated
 synonyms:
 - name: MHII biocarbonate
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 categories:
-- SPECIALIZED
+- specialized
 merged_from:
 - mhii_biocarbonate
 - mhii_biocarbonate_chelated

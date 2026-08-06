@@ -3,6 +3,7 @@ name: hayflick_medium
 original_name: Hayflick medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Yeast Extract
@@ -24,9 +25,9 @@ ingredients:
   term:
     id: CHEBI:31991
     label: Phenol red
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001075
-    label: Phenol Red
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31991
+    label: Phenol red
 - preferred_term: DI Water
   concentration:
     value: '843'
@@ -73,6 +74,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Hayflick medium" to "hayflick_medium" for consistent
     matching
+- timestamp: '2026-06-05T07:41:08.325234+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:37.417105+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 8d963606c762b3443008d37a5e2b936e277ca61ac29405f1de7a518960a7221d
+  source: hayflick_medium.yaml
 merge_fingerprint: 8d963606c762b3443008d37a5e2b936e277ca61ac29405f1de7a518960a7221d
 merged_from:
 - hayflick_medium

@@ -3,6 +3,7 @@ name: pae_ii_medium
 original_name: Pae II Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +32,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: K2HPO4
   concentration:
     value: '1'
@@ -43,9 +44,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: MgSO4
   concentration:
     value: '0.2'
@@ -55,9 +56,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
 - preferred_term: Maltose
   concentration:
     value: '10'
@@ -67,9 +68,9 @@ ingredients:
   term:
     id: CHEBI:18167
     label: alpha-maltose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000916
-    label: Maltose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18167
+    label: alpha-maltose
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -85,6 +86,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:9754
+    label: ''
 media_term:
   preferred_term: TOGO Medium M1831
   term:
@@ -107,9 +111,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:50.082871'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Tris-HCl buffer'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:19:56.489413Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -122,6 +126,25 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "Pae II Medium" to "pae_ii_medium" for consistent matching
-merge_fingerprint: fd5830b5b95072835d0bd5378ad26e64691b3362588d18358a94b241efcec125
+- timestamp: '2026-05-16T09:04:28.343918+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:40.802458+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:09.850433+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:52.209952+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 78010edc11035cc83f2c6a2f74854596277ab08ca50b9124702e82e62a6f3dd8
+  source: pae_ii_medium.yaml
+merge_fingerprint: 78010edc11035cc83f2c6a2f74854596277ab08ca50b9124702e82e62a6f3dd8
 merged_from:
 - pae_ii_medium

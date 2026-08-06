@@ -3,6 +3,7 @@ name: togo_medium_m1566
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water, make up to
@@ -18,11 +19,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
   term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4·7H2O
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -37,9 +38,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: KCl
   concentration:
     value: '2'
@@ -49,9 +50,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: MnCl2·4H2O
   concentration:
     value: '0.36'
@@ -69,9 +70,9 @@ ingredients:
   term:
     id: CHEBI:53258
     label: sodium citrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
-    label: Trisodium citrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
+    label: sodium citrate
 - preferred_term: FeCl3·4H2O
   concentration:
     value: '36'
@@ -91,12 +92,6 @@ ingredients:
     value: '7.5'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
 media_term:
   preferred_term: TOGO Medium M1566
   term:
@@ -131,8 +126,31 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TOGO Medium M1566" to "togo_medium_m1566" for consistent
     matching
+- timestamp: '2026-06-05T07:41:52.785540+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:51.475127+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T06:58:37.140915+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-08-06T03:06:00.465287+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 5eb3bf3c200c5b836530ea44e82875fb7664d96e52dbc92a053e870a11f9896a
+  source: togo_medium_m1566.yaml
 high_metal: true
 kg_microbe_match: mediadive.medium:J771
-merge_fingerprint: 9064fb683b6b6040226e942dd315ab9d1706c49a7b2c5c31471b2639c2bc6242
+merge_fingerprint: 5eb3bf3c200c5b836530ea44e82875fb7664d96e52dbc92a053e870a11f9896a
 merged_from:
 - togo_medium_m1566

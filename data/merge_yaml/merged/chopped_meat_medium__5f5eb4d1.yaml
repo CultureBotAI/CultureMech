@@ -1,0 +1,147 @@
+id: CultureMech:009262
+name: chopped_meat_medium
+original_name: Chopped meat medium
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: N NaOH
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: Ground beef (free of fat)
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: K2HPO4
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: Peptone
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: L-cysteine . HCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Simple component, Defined component, Organic compound'
+- preferred_term: Nitrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
+- preferred_term: Hydrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:18276
+    label: ''
+media_term:
+  preferred_term: TOGO Medium M2710
+  term:
+    id: TOGO:M2710
+    label: Chopped meat medium
+notes: 'Source: https://togomedium.org/medium/M2710
+
+  Original URL: https://www.atcc.org/~/media/2BF00161B1BA47E1A67EBC2003E4AA3D.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.105993Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2710'
+- timestamp: '2026-01-28T19:48:25.477642Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Nitrogen gas; Added default
+    concentration for ingredient: Hydrogen gas'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-03-09T08:04:42.183888+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:04.810290Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009262'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:30:19.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:23.571606+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Chopped meat medium" to "chopped_meat_medium" for consistent
+    matching
+- timestamp: '2026-05-16T09:03:15.329872+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:38.613544+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:49.683089+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:13.154662+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 5f5eb4d166346340d688d9d3bfb4d766d2dd0e3a09bb7cf0cb5c27d43095651b
+  source: TOGO_M2710_Chopped_meat_medium.yaml
+solutions:
+- preferred_term: 0.025% Resazurin solution
+  composition: []
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+  name: Unknown solution
+merge_fingerprint: 5f5eb4d166346340d688d9d3bfb4d766d2dd0e3a09bb7cf0cb5c27d43095651b
+merged_from:
+- TOGO_M2710_Chopped_meat_medium

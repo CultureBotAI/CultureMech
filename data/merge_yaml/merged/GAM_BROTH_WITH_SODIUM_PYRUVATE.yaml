@@ -3,6 +3,7 @@ name: gam_broth_with_sodium_pyruvate
 original_name: GAM BROTH WITH SODIUM PYRUVATE
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:
@@ -23,8 +24,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
     label: Sodium pyruvate
 preparation_steps:
 - step_number: 1
@@ -50,6 +51,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "GAM BROTH WITH SODIUM PYRUVATE" to "gam_broth_with_sodium_pyruvate"
     for consistent matching
+- timestamp: '2026-06-05T07:41:05.939461+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:35.971454+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 81775fceeb9748dbe78b0eb991c621b2534d09dc9666106bd66b8d210faf1246
+  source: gam_broth_with_sodium_pyruvate.yaml
 kg_microbe_match: mediadive.medium:J1244
 merge_fingerprint: 81775fceeb9748dbe78b0eb991c621b2534d09dc9666106bd66b8d210faf1246
 merged_from:

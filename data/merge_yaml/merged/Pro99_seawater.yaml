@@ -1,6 +1,7 @@
 id: CultureMech:015684
 name: Pro99 seawater
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sodium phosphate monobasic monohydrate
@@ -86,7 +87,7 @@ ingredients:
     unit: FOLD_DILUTION
 description: Media from MIT for growing phototrophic bacteria
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: Pro99 seawater
@@ -100,6 +101,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015684'
+- timestamp: '2026-05-16T09:04:42.719842+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:07.581401+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint a161d0c180cee4283e8656580271a4e5bbdca8b755c7d13bcd20bf6e6cb5c025
+  source: pro99_seawater.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: a161d0c180cee4283e8656580271a4e5bbdca8b755c7d13bcd20bf6e6cb5c025

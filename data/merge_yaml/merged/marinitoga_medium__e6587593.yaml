@@ -1,0 +1,154 @@
+id: CultureMech:007632
+name: marinitoga_medium
+original_name: Marinitoga Medium
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Resazurin
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Defined
+    component, Organic compound'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: PIPES
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'
+  term:
+    id: CHEBI:39033
+    label: PIPES
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39033
+    label: PIPES
+- preferred_term: Sea salts (Sigma)
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Complex component, Defined component'
+- preferred_term: Tryptone (BD-Difco)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: N2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
+media_term:
+  preferred_term: TOGO Medium M1112
+  term:
+    id: TOGO:M1112
+    label: Marinitoga Medium
+notes: 'Source: https://togomedium.org/medium/M1112
+
+  Original source: JCM - JCM_M1047
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1047'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:53.942333Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1112'
+- timestamp: '2026-01-28T19:48:10.976162Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: N2'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-03-09T08:04:17.955935+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:50.208305Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007632'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:29:48.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:08.572611+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Marinitoga Medium" to "marinitoga_medium" for consistent
+    matching
+- timestamp: '2026-05-16T09:03:07.660096+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:30.522191+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:05.808213+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e6587593d3e753940e5825d377a7d7f7e73b0a56e1fbfcf082d762a93f169e82
+  source: TOGO_M1112_Marinitoga_Medium.yaml
+solutions:
+- preferred_term: 1.0 M Glucose solution
+  composition: []
+  concentration:
+    value: '14'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
+  name: Unknown solution
+- preferred_term: 5% Na2S・9H2O solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Inorganic compound, Solution, Defined
+    component'
+  name: Unknown solution
+- preferred_term: 5% L--Cysteine・HCl・H2O solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Solution'
+  name: Unknown solution
+merge_fingerprint: e6587593d3e753940e5825d377a7d7f7e73b0a56e1fbfcf082d762a93f169e82
+merged_from:
+- TOGO_M1112_Marinitoga_Medium

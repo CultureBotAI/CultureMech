@@ -1,0 +1,75 @@
+id: CultureMech:010531
+name: oatmeal_agar_isp_3_with_0_1_yeast_extract
+original_name: OATMEAL AGAR (ISP-3) WITH 0.1% YEAST EXTRACT
+category: fungal
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J51
+  term:
+    id: mediadive.medium:J51
+    label: OATMEAL AGAR (ISP-3) WITH 0.1% YEAST EXTRACT
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=51'
+ingredients:
+- preferred_term: Inorganic salts-starch agar
+  term:
+    id: CHEBI:2509
+    label: Inorganic salts-starch agar
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Inorganic salts-starch agar
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.647731Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J51'
+- timestamp: '2026-03-13T06:20:14.247323Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010531'
+- timestamp: '2026-03-17T17:06:08.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:33.278196+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "OATMEAL AGAR (ISP-3) WITH 0.1% YEAST EXTRACT" to "oatmeal_agar_isp_3_with_0_1_yeast_extract"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:57.077835+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:04.027494+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: inorganic_salts_starch_agar_isp_4_with_0_05_yeast_extract, oatmeal_agar_isp_3_with_0_1_yeast_extract'
+- timestamp: '2026-08-06T03:06:04.027531+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint a1cd149372b522bb41243dfe4315b1a7bfecc3da240718946f6fc198d2d6a866
+  source: inorganic_salts_starch_agar_isp_4_with_0_05_yeast_extract.yaml, oatmeal_agar_isp_3_with_0_1_yeast_extract.yaml
+kg_microbe_match: mediadive.medium:12
+synonyms:
+- name: inorganic_salts_starch_agar_isp_4_with_0_05_yeast_extract
+  source: MediaDive
+  source_id: mediadive.medium:J217
+  original_category: fungal
+categories:
+- fungal
+merged_from:
+- inorganic_salts_starch_agar_isp_4_with_0_05_yeast_extract
+- oatmeal_agar_isp_3_with_0_1_yeast_extract
+merge_fingerprint: a1cd149372b522bb41243dfe4315b1a7bfecc3da240718946f6fc198d2d6a866

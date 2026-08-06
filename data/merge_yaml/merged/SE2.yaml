@@ -3,6 +3,7 @@ name: se2
 original_name: SE2
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: CCAP Medium C91
@@ -53,10 +54,15 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "SE2" to "se2" for consistent matching
-- timestamp: '2026-04-17T06:30:21.455641+00:00'
+- timestamp: '2026-08-06T03:05:55.038118+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: s_w, se1, se2'
+- timestamp: '2026-08-06T03:05:55.038167+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint e93d59a02163f846fecf6bb6bd7135d093d8e40b46b1e5c2dda57cd74e655e1e
+  source: s_w.yaml, se1.yaml, se2.yaml
 synonyms:
 - name: s_w
   source: MediaDive

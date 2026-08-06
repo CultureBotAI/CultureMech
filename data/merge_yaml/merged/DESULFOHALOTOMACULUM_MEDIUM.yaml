@@ -3,6 +3,7 @@ name: desulfohalotomaculum_medium
 original_name: DESULFOHALOTOMACULUM MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:
@@ -15,12 +16,12 @@ ingredients:
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
-    label: Na2SO4
+    label: sodium sulfate
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Na2SO4
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -29,8 +30,8 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: NaCl
   term:
@@ -39,8 +40,8 @@ ingredients:
   concentration:
     value: '40'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: KCl
   term:
@@ -49,28 +50,28 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -79,8 +80,8 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: SrCl2 x 6 H2O
   term:
@@ -89,8 +90,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000463
+  mediaingredientmech_chebi_term:
+    id: CHEBI:36385
     label: SrCl2 x 6 H2O
 - preferred_term: MOPS
   term:
@@ -99,8 +100,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000285
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39074
     label: MOPS
 - preferred_term: Yeast extract
   concentration:
@@ -110,6 +111,9 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: Iron powder
   term:
     id: CHEBI:82664
@@ -117,8 +121,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001084
+  mediaingredientmech_chebi_term:
+    id: CHEBI:82664
     label: Iron powder
 - preferred_term: Na-L-lactate
   concentration:
@@ -126,19 +130,19 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:232798
-    label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001017
+    label: sodium L-lactate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:232798
     label: Na-L-lactate
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 - preferred_term: Na2-EDTA x 2 H2O
   term:
@@ -147,8 +151,8 @@ ingredients:
   concentration:
     value: '5.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
     label: Na2-EDTA x 2 H2O
 - preferred_term: FeCl2 x 4 H2O
   term:
@@ -157,8 +161,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000329
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86249
     label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
@@ -167,8 +171,8 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
     label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -177,18 +181,18 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.006'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -197,8 +201,8 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
@@ -207,8 +211,8 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
     label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -217,8 +221,8 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -227,8 +231,8 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 preparation_steps:
 - step_number: 1
@@ -269,6 +273,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "DESULFOHALOTOMACULUM MEDIUM" to "desulfohalotomaculum_medium"
     for consistent matching
-merge_fingerprint: 2b37d02897cb35dfd9bbcbf2a4c8c32cbfaeea8b7e7290c9495566e408a18a35
+- timestamp: '2026-06-05T07:40:56.731378+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 21 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:55.625288+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 6 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:31.414787+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint be0e757de84c2d6003a94235f6fd8c91ca058aa276facb3cc00e8f85e83690f8
+  source: desulfohalotomaculum_medium.yaml
+merge_fingerprint: be0e757de84c2d6003a94235f6fd8c91ca058aa276facb3cc00e8f85e83690f8
 merged_from:
 - desulfohalotomaculum_medium

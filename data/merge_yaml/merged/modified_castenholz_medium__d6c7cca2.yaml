@@ -1,0 +1,229 @@
+id: CultureMech:000937
+name: modified_castenholz_medium
+original_name: MODIFIED CASTENHOLZ MEDIUM
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_value: 8.2
+media_term:
+  preferred_term: DSMZ Medium 1470
+  term:
+    id: mediadive.medium:1470
+    label: MODIFIED CASTENHOLZ MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1470.pdf'
+ingredients:
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: CaSO4 x 2 H2O
+  term:
+    id: CHEBI:32583
+    label: CaSO4 x 2 H2O
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32583
+    label: CaSO4 x 2 H2O
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.008'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:63005
+    label: NaNO3
+  concentration:
+    value: '0.689'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000171
+    label: NaNO3
+- preferred_term: KNO3
+  term:
+    id: CHEBI:63043
+    label: potassium nitrate
+  concentration:
+    value: '0.103'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000170
+    label: KNO3
+- preferred_term: Na2HPO4 x 2 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+  concentration:
+    value: '0.111'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+- preferred_term: Tryptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Sucrose
+  term:
+    id: CHEBI:17992
+    label: Sucrose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17992
+    label: Sucrose
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '0.028'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+- preferred_term: H2SO4
+  term:
+    id: CHEBI:26836
+    label: H2SO4
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26836
+    label: H2SO4
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.0022'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: H3BO3
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '1.6e-05'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '2.5e-05'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '4.6e-05'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 8.2 with NaOH.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.525922Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1470'
+- timestamp: '2026-03-13T06:18:59.709106Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000937'
+- timestamp: '2026-03-17T06:30:02.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:11.249030+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MODIFIED CASTENHOLZ MEDIUM" to "modified_castenholz_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:36.417993+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 14 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:37:35.623686+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:47:08.594061+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:48.183258+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d6c7cca2139bdd206cdcea4a8ad47d72531dc511d93b5d60f1bb8cdd588777ad
+  source: modified_castenholz_medium.yaml
+merge_fingerprint: d6c7cca2139bdd206cdcea4a8ad47d72531dc511d93b5d60f1bb8cdd588777ad
+merged_from:
+- modified_castenholz_medium

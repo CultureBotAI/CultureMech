@@ -3,6 +3,7 @@ name: r_agar_with_5_nacl
 original_name: R AGAR WITH 5% NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J76
@@ -18,8 +19,8 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Glycerol-asparagine agar
 - preferred_term: NaCl
   term:
@@ -28,8 +29,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 applications:
 - Microbial cultivation
@@ -51,7 +52,13 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "R AGAR WITH 5% NaCl" to "r_agar_with_5_nacl" for consistent
     matching
-- timestamp: '2026-04-17T06:30:05.182714+00:00'
+- timestamp: '2026-06-05T07:41:43.770264+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:36.374508+00:00'
   curator: recipe-merger
   action: Merged 17 duplicate recipes into canonical record
   notes: 'Sources: glycerol_asparagine_agar_isp_5_with_10_nacl, inorganic_salts_starch_agar_isp_4_with_10_nacl,
@@ -60,6 +67,15 @@ curation_history:
     r_agar_with_3_nacl, r_agar_with_5_nacl, brewer_anaerobic_agar_with_2_nacl, marine_agar_2216_with_10_nacl,
     marine_agar_2216_with_1_nacl, marine_agar_2216_with_3_1_nacl, marine_agar_2216_with_5_nacl,
     marine_agar_2216_with_8_0_nacl, marine_agar_2216_with_8_nacl'
+- timestamp: '2026-08-06T03:05:36.374570+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 17 source recipe(s) on fingerprint 2a1694ad0eee0fc62ea8d46e0144cf0d6d8c453fe41c87337660ee7005829d62
+  source: glycerol_asparagine_agar_isp_5_with_10_nacl.yaml, inorganic_salts_starch_agar_isp_4_with_10_nacl.yaml,
+    inorganic_salts_starch_agar_isp_4_with_15_nacl.yaml, inorganic_salts_starch_agar_isp_4_with_5_nacl.yaml,
+    r2a_agar_with_1_nacl.yaml, r2a_agar_with_2_nacl.yaml, r2a_agar_with_3_nacl.yaml,
+    r_agar_with_10_nacl.yaml, r_agar_with_3_nacl.yaml, r_agar_with_5_nacl.yaml, brewer_anaerobic_agar_with_2_nacl.yaml,
+    marine_agar_2216_with_10_nacl.yaml, marine_agar_2216_with_1_nacl.yaml, marine_agar_2216_with_3_
 kg_microbe_match: mediadive.medium:101
 synonyms:
 - name: glycerol_asparagine_agar_isp_5_with_10_nacl

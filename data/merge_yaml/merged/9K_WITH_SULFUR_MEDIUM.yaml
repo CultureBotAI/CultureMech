@@ -3,6 +3,7 @@ name: 9k_with_sulfur_medium
 original_name: 9K WITH SULFUR MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 2.5
 media_term:
@@ -15,22 +16,22 @@ ingredients:
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: KCl
   term:
@@ -39,8 +40,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -49,19 +50,19 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Ca(NO3)2
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000470
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64205
     label: Ca(NO3)2
   term:
-    id: CHEBI:77732
-    label: ''
+    id: CHEBI:64205
+    label: calcium nitrate
 - preferred_term: Sulfur
   term:
     id: CHEBI:26833
@@ -69,8 +70,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000927
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26833
     label: Sulfur
 preparation_steps:
 - step_number: 1
@@ -102,6 +103,27 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "9K WITH SULFUR MEDIUM" to "9k_with_sulfur_medium" for
     consistent matching
-merge_fingerprint: ea105eb22d602b9e5e23fad352de6820d1c002cc7c6ffbfd860bb1e1e6d5df3f
+- timestamp: '2026-06-05T07:40:15.990528+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:27.201496+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:46:42.595350+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:34.263174+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 9284e6c5a5781e63f68dd6172d9ba6ebfd4dfe083a05410c4e82906bffc67c68
+  source: 9k_with_sulfur_medium.yaml
+merge_fingerprint: 9284e6c5a5781e63f68dd6172d9ba6ebfd4dfe083a05410c4e82906bffc67c68
 merged_from:
 - 9k_with_sulfur_medium

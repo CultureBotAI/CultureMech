@@ -1,0 +1,191 @@
+id: CultureMech:003006
+name: magnetospirillum_gryphiswaldense_medium
+original_name: MAGNETOSPIRILLUM GRYPHISWALDENSE MEDIUM
+category: bacterial
+medium_type: COMPLEX
+composition_type: SEMI_DEFINED
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: JCM Medium J660
+  term:
+    id: mediadive.medium:J660
+    label: MAGNETOSPIRILLUM GRYPHISWALDENSE MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=660'
+ingredients:
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: K2HPO4
+- preferred_term: Sodium acetate
+  term:
+    id: CHEBI:32954
+    label: Sodium acetate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: Sodium acetate
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Sodium thioglycolate
+  term:
+    id: CHEBI:86481
+    label: Sodium thioglycolate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86481
+    label: Sodium thioglycolate
+- preferred_term: Ferric citrate
+  term:
+    id: CHEBI:144421
+    label: Ferric citrate
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:144421
+    label: Ferric citrate
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 6.8.
+- step_number: 2
+  action: MIX
+  description: 'Comment: For strain JCM 21280, good growth can be obtained in semisolid
+    medium (1.0 g/L agar).'
+applications:
+- Microbial cultivation
+variants:
+- name: crvi_stress_magnetosome_deficient_b17316
+  description: Cr(VI) stress condition for magnetosome-deficient Magnetospirillum
+    gryphiswaldense strain B17316.
+  modifications:
+  - Use magnetosome-deficient strain B17316 derived from M. gryphiswaldense MSR-1.
+  - Add Cr(VI) at 10 mg/L.
+  purpose: Capture strain-modification and chromium-stress growth evidence under the
+    parent Magnetospirillum gryphiswaldense Medium record.
+  evidence:
+  - reference: PMID:37088211
+    supports: SUPPORT
+    snippet: The addition of 10 mg L-1 Cr(VI) significantly inhibited cell growth,
+      but the magnetosome-deficient strain, B17316, showed an average specific growth
+      rate of 0.062 h-1 at the same dosage.
+    explanation: Literature evidence supports a Cr(VI)-stress variant for magnetosome-deficient
+      Magnetospirillum gryphiswaldense strain B17316.
+curation_history:
+- timestamp: '2026-01-26T17:53:17.212107Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J660'
+- timestamp: '2026-02-20T07:49:55.000000Z'
+  curator: organism-data-backfill
+  action: Added curated organism data
+  notes: 'Added organism: MAGNETOSPIRILLUM GRYPHISWALDENSE, culture_type: isolate'
+- timestamp: '2026-03-13T06:19:17.101688Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003006'
+- timestamp: '2026-03-17T06:29:39.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:30.749712+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MAGNETOSPIRILLUM GRYPHISWALDENSE MEDIUM" to "magnetospirillum_gryphiswaldense_medium"
+    for consistent matching
+- timestamp: '2026-05-04T06:34:23.043058+00:00'
+  curator: literature_review_apply
+  action: ADDED_GROWTH_EVIDENCE
+  notes: organisms_added=1 metrics_added=1 genomes_added=0 strain_mods_added=1
+- timestamp: '2026-05-05T07:23:23.129830+00:00'
+  curator: literature_review_apply
+  action: ADDED_GROWTH_EVIDENCE
+  notes: organisms_added=1 metrics_added=1 genomes_added=0
+- timestamp: '2026-05-20T02:54:07.099061+00:00'
+  curator: migrate_ontology_term_rename.py
+  action: MIGRATED_ONTOLOGY_TERM_RENAME
+  notes: ontology_term->ontology_id for 2 entry/entries
+- timestamp: '2026-06-05T07:41:12.525176+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:00.791782+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:41.624889+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 6f77a326378a534cdc513b9b4a63618386cdd0f514d206c85991f6faa80362d2
+  source: magnetospirillum_gryphiswaldense_medium.yaml
+organism_culture_type: isolate
+target_organisms:
+- preferred_term: MAGNETOSPIRILLUM GRYPHISWALDENSE
+  term:
+    id: NCBITaxon:55518
+    label: Magnetospirillum gryphiswaldense
+- preferred_term: Magnetospirillum gryphiswaldense
+  term:
+    id: NCBITaxon:55518
+    label: Magnetospirillum gryphiswaldense
+  strain_modifications:
+  - modification_type: KNOCKOUT
+    target: magnetosome operon
+    description: magnetosome-deficient strain B17316
+    ontology_id: NCIT:C120956
+  growth_metrics:
+  - growth_rate_per_hour: 0.062
+    evidence:
+    - reference: PMID:37088211
+      supports: SUPPORT
+      snippet: The addition of 10 mg L-1 Cr(VI) significantly inhibited cell growth,
+        but the magnetosome-deficient strain, B17316, showed an average specific growth
+        rate of 0.062 h-1 at the same dosage.
+      explanation: 'Auto-applied from literature query: backfill PMID:37088211'
+    is_max_attainment: false
+    growth_mode: BATCH
+    perturbations:
+    - perturbation_type: CHEMICAL_STRESS
+      descriptor: Cr(VI) at 10 mg/L
+      target: chromium hexavalent
+      level: 10.0
+      level_unit: mg/L
+      ontology_id: CHEBI:53456
+merge_fingerprint: 6f77a326378a534cdc513b9b4a63618386cdd0f514d206c85991f6faa80362d2
+merged_from:
+- magnetospirillum_gryphiswaldense_medium

@@ -1,16 +1,20 @@
-id: CultureMech:001372
+id: CultureMech:004703
 name: treponema_succinifaciens_medium
-original_name: TREPONEMA SUCCINIFACIENS MEDIUM
+original_name: TREPONEMA SUCCINIFACIENS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 7.4
+ph_range:
+  min: 6.2
+  max: 6.3
+notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 275 | DSMZ Medium: 275 (mediadive.medium:275)
+  | Aerobic: Yes'
 media_term:
-  preferred_term: DSMZ Medium 275
+  preferred_term: KOMODO Medium 275
   term:
-    id: mediadive.medium:275
-    label: TREPONEMA SUCCINIFACIENS MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium275.pdf'
+    id: komodo.medium:275
+    label: TREPONEMA SUCCINIFACIENS medium
 ingredients:
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -19,8 +23,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -29,28 +33,28 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: NaCl
   term:
@@ -59,8 +63,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Yeast extract
   concentration:
@@ -73,17 +77,20 @@ ingredients:
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.0005'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -91,18 +98,18 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
     label: L-Cysteine HCl x H2O
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 - preferred_term: D-Glucose
   term:
@@ -111,46 +118,76 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Dissolve ingredients except for cysteine, carbonate, and glucose, and
-    sparge medium with 80% N2 and 20% CO2 gas atmosphere to make it anoxic. Add cysteine
-    and adjust pH to 7.2 - 7.4 by adding and dissolving solid Na2CO3. Then distribute
-    the medium under the same gas atmosphere into anoxic Hungate-type tubes or serum
-    vials and autoclave. After autoclaving add glucose from a sterile anoxic stock
-    solution prepared under a 100% N2 gas atmosphere. The final pH of the medium should
-    be at 7.4.
-- step_number: 2
-  action: AUTOCLAVE
-  description: Rumen fluid from cow or sheep (obtained from fistulated animals or
-    abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and
-    then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging
-    with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum
-    vials to 30% of volume and then stored frozen at -20°C.
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: hydrochloric acid
+  notes: pH adjustment (extracted from notes)
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
+    label: hydrochloric acid
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:10.631232Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 275'
-- timestamp: '2026-03-13T06:19:03.465463Z'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 275'
+- timestamp: '2026-02-03T11:19:01.154405'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 275
+- timestamp: '2026-03-13T03:08:54.782014Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Added pH buffer: HCl'
+- timestamp: '2026-03-13T06:19:28.211523Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:001372'
-- timestamp: '2026-03-17T06:30:40.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:004703'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: HCl'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:29:59.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:15.397186+00:00'
+- timestamp: '2026-03-17T19:45:43.571463+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TREPONEMA SUCCINIFACIENS MEDIUM" to "treponema_succinifaciens_medium"
+  notes: Normalized name from "TREPONEMA SUCCINIFACIENS medium" to "treponema_succinifaciens_medium"
     for consistent matching
-merge_fingerprint: 9a7727c139698bc7f7fd9f1d1ed54f6fac13d6fe00b99c020560aab8ed7f6ad1
+- timestamp: '2026-05-16T09:03:01.964343+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-05-20T06:00:50.938854+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.2-6.3'' -> {''min'': 6.2, ''max'': 6.3}'
+- timestamp: '2026-06-05T07:40:22.018512+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:44.488232+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:46.549313+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 298409f965a54a8deee70ff9286da934f21e7314104a89f1412a86994a18101b
+  source: KOMODO_275_TREPONEMA_SUCCINIFACIENS_medium.yaml
+ph_value: 7.4
+merge_fingerprint: 298409f965a54a8deee70ff9286da934f21e7314104a89f1412a86994a18101b
 merged_from:
-- treponema_succinifaciens_medium
+- KOMODO_275_TREPONEMA_SUCCINIFACIENS_medium

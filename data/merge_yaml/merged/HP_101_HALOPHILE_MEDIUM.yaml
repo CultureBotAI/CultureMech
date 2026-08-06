@@ -1,109 +1,114 @@
-id: CultureMech:009853
+id: CultureMech:000275
 name: hp_101_halophile_medium
-original_name: HP 101 Halophile Medium
-category: bacterial
+original_name: HP 101 HALOPHILE MEDIUM
+category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 625
+  term:
+    id: mediadive.medium:625
+    label: HP 101 HALOPHILE MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium625.pdf'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
-  concentration:
-    value: '4.3'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:32599
-    label: ''
-- preferred_term: Yeast extract
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: NaCl
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: NaNO3
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
-    Inorganic compound'
-  term:
-    id: CHEBI:63005
-    label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000388
-    label: NaNO3
-- preferred_term: Agar
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
 - preferred_term: Peptone
   concentration:
     value: '10'
     unit: G_PER_L
-media_term:
-  preferred_term: TOGO Medium M465
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
   term:
-    id: TOGO:M465
-    label: HP 101 Halophile Medium
-notes: 'Source: https://togomedium.org/medium/M465
-
-  Original source: JCM - JCM_M464
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=464'
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '4.3'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:63005
+    label: NaNO3
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000171
+    label: NaNO3
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.2.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.111045Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M465'
-- timestamp: '2026-01-28T19:48:31.159092Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:20:09.404584Z'
+- timestamp: '2026-01-26T17:53:11.769418Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 625'
+- timestamp: '2026-03-13T06:18:54.034852Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:009853'
-- timestamp: '2026-03-17T06:30:31.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:000275'
+- timestamp: '2026-03-17T17:06:12.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:28.374491+00:00'
+- timestamp: '2026-03-17T19:45:04.966233+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HP 101 Halophile Medium" to "hp_101_halophile_medium"
+  notes: Normalized name from "HP 101 HALOPHILE MEDIUM" to "hp_101_halophile_medium"
     for consistent matching
-merge_fingerprint: 73f2c6323dcecd9fe5be9bf61f5cb62673e4697abee597fc275283e05d5069d0
+- timestamp: '2026-05-16T09:02:57.320095+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-05T07:40:14.593261+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:29.001325+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: hp_101_halophile_medium, JCM_J464_HP_101_HALOPHILE_MEDIUM, hp_101_halophile_medium'
+- timestamp: '2026-08-06T03:04:29.001368+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 273f728628eb65a3ce2230800717587964b35fbffd26965bd0bd34e0e0276783
+  source: hp_101_halophile_medium.yaml, JCM_J464_HP_101_HALOPHILE_MEDIUM.yaml, hp_101_halophile_medium.yaml
+categories:
+- archaea
+- bacterial
 merged_from:
-- TOGO_M465_HP_101_Halophile_Medium
+- hp_101_halophile_medium
+- JCM_J464_HP_101_HALOPHILE_MEDIUM
+- hp_101_halophile_medium
+merge_fingerprint: 273f728628eb65a3ce2230800717587964b35fbffd26965bd0bd34e0e0276783

@@ -3,6 +3,7 @@ name: mogensen_minimal_medium_ethanol
 original_name: '''Mogensen Minimal Medium (Ethanol'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Boric acid
@@ -12,8 +13,8 @@ ingredients:
   concentration:
     value: '0.1779'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Ethanol
   term:
@@ -23,13 +24,16 @@ ingredients:
     value: '625.1'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:etoh'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000686
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16236
     label: Ethanol
 - preferred_term: Tromethamine
   concentration:
     value: '49.7'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:9754
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -37,8 +41,8 @@ ingredients:
   concentration:
     value: '2.16'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Sodium molybdate
   concentration:
@@ -55,13 +59,16 @@ ingredients:
     value: '0.07292'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4abz'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001121
-    label: 4-Aminobenzoate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17836
+    label: 4-aminobenzoate
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '11.17'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Potassium chloride
   concentration:
     value: '6.975'
@@ -69,9 +76,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -79,21 +86,30 @@ ingredients:
   concentration:
     value: '138.3'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Manganese chloride
   concentration:
     value: '0.02526'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.006408'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.01798'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Sodium EDTA
   concentration:
     value: '0.1315'
@@ -112,9 +128,9 @@ ingredients:
   concentration:
     value: '0.07651'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -148,6 +164,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'Mogensen Minimal Medium (Ethanol" to "mogensen_minimal_medium_ethanol"
     for consistent matching
+- timestamp: '2026-06-05T07:41:38.101433+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:50.109800+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 058385bf1b99ddd56285e6f381b9d961bfd2cdb01a167e014ced7628df16ebe9
+  source: mogensen_minimal_medium_ethanol.yaml
 media_term:
   preferred_term: MediaDB Medium 345
   term:
@@ -159,6 +186,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 01f62676ec7cadce6d06558ea991b8038c214cf18e71cac4edf4fa79dee58335
+merge_fingerprint: 058385bf1b99ddd56285e6f381b9d961bfd2cdb01a167e014ced7628df16ebe9
 merged_from:
 - mogensen_minimal_medium_ethanol

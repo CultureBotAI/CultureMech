@@ -1,0 +1,149 @@
+id: CultureMech:001303
+name: aspergillus_nidulans_minimal_medium
+original_name: ASPERGILLUS NIDULANS MINIMAL MEDIUM
+category: bacterial
+medium_type: DEFINED
+composition_type: DEFINED
+physical_state: SOLID_AGAR
+ph_value: 6.5
+media_term:
+  preferred_term: DSMZ Medium 204
+  term:
+    id: mediadive.medium:204
+    label: ASPERGILLUS NIDULANS MINIMAL MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium204.pdf'
+ingredients:
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:63005
+    label: NaNO3
+  concentration:
+    value: '12'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000171
+    label: NaNO3
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  concentration:
+    value: '3.04'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '3.04'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: KCl
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '2.08'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '60'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: Glucose
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave separately for 15 min. Mix A, B and C before pouring plates.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 6.5 with 2 N NaOH.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.497692Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 204'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: FeSO4 x 7 H2O; Added default
+    concentration for ingredient: ZnSO4 x 7 H2O'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-03-13T06:19:03.042851Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001303'
+- timestamp: '2026-03-17T06:30:19.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:14.924471+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ASPERGILLUS NIDULANS MINIMAL MEDIUM" to "aspergillus_nidulans_minimal_medium"
+    for consistent matching
+- timestamp: '2026-05-16T09:03:25.047404+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:49.921048+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:53.594208+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:24.285018+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 11ff28ac9e86f90f4325cf1f2cdca20bf1ee45d7f44c3dc77feb1db432b1ca2c
+  source: aspergillus_nidulans_minimal_medium.yaml
+merge_fingerprint: 11ff28ac9e86f90f4325cf1f2cdca20bf1ee45d7f44c3dc77feb1db432b1ca2c
+merged_from:
+- aspergillus_nidulans_minimal_medium

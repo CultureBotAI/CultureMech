@@ -3,6 +3,7 @@ name: marine_broth_2216_0_5_alginate
 original_name: Marine Broth 2216 + 0.5% Alginate
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Sodium alginate
   concentration:
@@ -26,8 +27,8 @@ ingredients:
   term:
     id: CHEBI:53311
     label: Sodium alginate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000721
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53311
     label: Sodium alginate
 - preferred_term: Agar (if needed)
   concentration:
@@ -73,6 +74,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Marine Broth 2216 + 0.5% Alginate" to "marine_broth_2216_0_5_alginate"
     for consistent matching
+- timestamp: '2026-06-05T07:41:12.862324+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:41.993946+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 874094932d882518030a7b1326e7e66f6266fcfe116f27de88787b0c97794d45
+  source: marine_broth_2216_0_5_alginate.yaml
 merge_fingerprint: 874094932d882518030a7b1326e7e66f6266fcfe116f27de88787b0c97794d45
 merged_from:
 - marine_broth_2216_0_5_alginate

@@ -3,6 +3,7 @@ name: streptococcus_suis_medium
 original_name: STREPTOCOCCUS SUIS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.8
 media_term:
@@ -28,22 +29,22 @@ ingredients:
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -52,8 +53,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: MnSO4 x 4 H2O
   term:
@@ -62,8 +63,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000711
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86358
     label: MnSO4 x 4 H2O
 - preferred_term: Glucose
   term:
@@ -72,8 +73,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Lactose
   term:
@@ -82,8 +83,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000339
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17716
     label: Lactose
 - preferred_term: L-Cysteine HCl x H2O
   term:
@@ -92,8 +93,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
     label: L-Cysteine HCl x H2O
 - preferred_term: Bovine serum
   concentration:
@@ -123,10 +124,36 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "STREPTOCOCCUS SUIS medium" to "streptococcus_suis_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:30.715706+00:00'
+- timestamp: '2026-06-05T07:40:25.471415+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:45.564627+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:57.552899+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_696_STREPTOCOCCUS_SUIS_medium, streptococcus_suis_medium'
+- timestamp: '2026-08-06T03:04:57.552935+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 6d9b3d8cb8c351deaead2f7f65f25565897cadf21f9169d8f7de83e8b1052d9d
+  source: KOMODO_696_STREPTOCOCCUS_SUIS_medium.yaml, streptococcus_suis_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/streptococcus_suis_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001833
+  name: streptococcus_suis_medium
+  notes: KOMODO record states DSMZ Medium 696 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 categories:
 - bacterial
 merged_from:

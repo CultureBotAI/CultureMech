@@ -1,0 +1,124 @@
+id: CultureMech:002521
+name: r_cw_agar
+original_name: R-CW AGAR
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J162
+  term:
+    id: mediadive.medium:J162
+    label: R-CW AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=162'
+ingredients:
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+- preferred_term: Tryptone
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: Sodium acetate
+  term:
+    id: CHEBI:32954
+    label: Sodium acetate
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: Sodium acetate
+- preferred_term: Diammonium hydrogen citrate
+  term:
+    id: CHEBI:63076
+    label: Diammonium hydrogen citrate
+  concentration:
+    value: '1.998'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63076
+    label: Diammonium hydrogen citrate
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.499501'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: MnSO4 x n H2O
+  concentration:
+    value: '0.499501'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86360
+    label: manganese(II) sulfate
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53426
+    label: Tween 80
+- preferred_term: Cheese whey
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.851009Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J162'
+- timestamp: '2026-03-13T06:19:13.940905Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002521'
+- timestamp: '2026-03-17T06:30:17.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:27.120046+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "R-CW AGAR" to "r_cw_agar" for consistent matching
+- timestamp: '2026-06-05T07:41:43.778019+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:10.827534+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:54.272107+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 392caa15da165ed0ae0c874f542a3b8ffdee659ec08180846a22baf86e792ccf
+  source: r_cw_agar.yaml
+merge_fingerprint: 392caa15da165ed0ae0c874f542a3b8ffdee659ec08180846a22baf86e792ccf
+merged_from:
+- r_cw_agar

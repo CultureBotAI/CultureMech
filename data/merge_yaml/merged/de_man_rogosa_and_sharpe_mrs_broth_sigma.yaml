@@ -3,6 +3,7 @@ name: de_man_rogosa_and_sharpe_mrs_broth_sigma
 original_name: de Man, Rogosa, and Sharpe (MRS) broth (Sigma)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MRS broth (Sigma)
   concentration:
@@ -30,8 +31,8 @@ ingredients:
   term:
     id: CHEBI:31795
     label: Magnesium sulfate heptahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: Magnesium sulfate heptahydrate
 - preferred_term: Yeast extract
   concentration:
@@ -47,9 +48,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: Dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Manganous sulfate tetrahydrate
   concentration:
     value: '0.05'
@@ -73,9 +74,9 @@ ingredients:
   term:
     id: CHEBI:32138
     label: sodium acetate trihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000585
-    label: Sodium acetate trihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32138
+    label: sodium acetate trihydrate
 - preferred_term: Glucose
   concentration:
     value: '20'
@@ -85,9 +86,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Meat extract
   concentration:
     value: '8'
@@ -127,6 +128,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "de Man, Rogosa, and Sharpe (MRS) broth (Sigma)" to
     "de_man_rogosa_and_sharpe_mrs_broth_sigma" for consistent matching
+- timestamp: '2026-06-05T07:40:55.346556+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:29.689286+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 9115075e91b89905558d5a1b9528dc3f44ea00323f6e16e14ea049f43ce452b2
+  source: de_man_rogosa_and_sharpe_mrs_broth_sigma.yaml
 merge_fingerprint: 9115075e91b89905558d5a1b9528dc3f44ea00323f6e16e14ea049f43ce452b2
 merged_from:
 - de_man_rogosa_and_sharpe_mrs_broth_sigma

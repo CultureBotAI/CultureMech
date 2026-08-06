@@ -1,104 +1,140 @@
-id: CultureMech:008955
+id: CultureMech:006003
 name: n_z_amine_medium
-original_name: N-Z-Amine-Medium
+original_name: N-Z-AMINE-MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 554
   term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
+    id: komodo.medium:554
+    label: N-Z-AMINE-MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 554 | DSMZ Medium: 554 (mediadive.medium:554)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: Glucose
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
+    label: Starch
 - preferred_term: Yeast extract
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: CaCO3
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Protective agent, Mineral source; Properties: Defined component, Simple
-    component, Inorganic compound'
-  term:
-    id: CHEBI:3311
-    label: calcium carbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001099
-    label: CaCO3
-- preferred_term: Glucose
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
-- preferred_term: Starch, soluble
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Undefined component'
-- preferred_term: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
-- preferred_term: N-Z-Amine
+- preferred_term: N-Z amine
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M2370
+- preferred_term: CaCO3
   term:
-    id: TOGO:M2370
-    label: N-Z-Amine-Medium
-notes: 'Source: https://togomedium.org/medium/M2370
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium554.pdf'
+    id: CHEBI:3311
+    label: CaCO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
+    label: CaCO3
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.410644Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2370'
-- timestamp: '2026-01-28T19:48:35.294259Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:20:01.558821Z'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 554'
+- timestamp: '2026-02-03T11:19:17.655238'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 554
+- timestamp: '2026-03-13T06:19:37.542125Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:008955'
-- timestamp: '2026-03-17T06:30:40.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:006003'
+- timestamp: '2026-03-17T06:30:50.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:20.283329+00:00'
+- timestamp: '2026-03-17T19:45:54.336493+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "N-Z-Amine-Medium" to "n_z_amine_medium" for consistent
+  notes: Normalized name from "N-Z-AMINE-MEDIUM" to "n_z_amine_medium" for consistent
     matching
-merge_fingerprint: 25597aae785c4be551ef0fb62beef9b3177c7bb9ae4dcbb7be6939a4aa111cbe
+- timestamp: '2026-06-05T07:40:24.584890+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:55.460583+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_554_N-Z-AMINE-MEDIUM, medium_554_modified_for_dsm_44396,
+    n_z_amine_medium, n_z_amine_with_soluble_starch_and_glucose'
+- timestamp: '2026-08-06T03:04:55.460630+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 4 source recipe(s) on fingerprint c5280cc058c4d9b721b5c70ff958b462aeb94db8220199f487cf59f43ea185cf
+  source: KOMODO_554_N-Z-AMINE-MEDIUM.yaml, medium_554_modified_for_dsm_44396.yaml,
+    n_z_amine_medium.yaml, n_z_amine_with_soluble_starch_and_glucose.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_554_modified_for_dsm_44396.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006002
+  name: medium_554_modified_for_dsm_44396
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/n_z_amine_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001689
+  name: n_z_amine_medium
+  notes: KOMODO record states DSMZ Medium 554 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
+synonyms:
+- name: medium_554_modified_for_dsm_44396
+  source: KOMODO
+  source_id: komodo.medium:554_44396
+  original_category: bacterial
+- name: n_z_amine_with_soluble_starch_and_glucose
+  source: MediaDive
+  source_id: mediadive.medium:J437
+  original_category: bacterial
+categories:
+- bacterial
 merged_from:
-- TOGO_M2370_N-Z-Amine-Medium
+- KOMODO_554_N-Z-AMINE-MEDIUM
+- medium_554_modified_for_dsm_44396
+- n_z_amine_medium
+- n_z_amine_with_soluble_starch_and_glucose
+merge_fingerprint: c5280cc058c4d9b721b5c70ff958b462aeb94db8220199f487cf59f43ea185cf

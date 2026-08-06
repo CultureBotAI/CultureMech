@@ -1,114 +1,170 @@
-id: CultureMech:003058
+id: CultureMech:010143
 name: r83_medium
-original_name: R83 MEDIUM
+original_name: R83 Medium
 category: bacterial
-medium_type: DEFINED
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 6.5
-media_term:
-  preferred_term: JCM Medium J711
-  term:
-    id: mediadive.medium:J711
-    label: R83 MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=711'
 ingredients:
-- preferred_term: K2HPO4
-  term:
-    id: CHEBI:131527
-    label: K2HPO4
+- preferred_term: Distilled water
   concentration:
-    value: '0.24'
+    value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
-- preferred_term: KH2PO4
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:63036
-    label: KH2PO4
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
   concentration:
-    value: '0.24'
+    value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
-- preferred_term: (NH4)2SO4
-  term:
-    id: CHEBI:62946
-    label: (NH4)2SO4
-  concentration:
-    value: '0.48'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: (NH4)2SO4
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '0.48'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: MgSO4 x 7 H2O
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
+- preferred_term: NaCl
   concentration:
-    value: '0.1'
+    value: '480'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: CaCl2 x 2 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '64'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: ''
+- preferred_term: KH2PO4
   concentration:
-    value: '0.064'
+    value: '240'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
-- preferred_term: L-Cysteine HCl x H2O
+  notes: 'Role: Buffer; Properties: Simple component, Defined component, Inorganic
+    compound'
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: K2HPO
+  concentration:
+    value: '240'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '480'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
+    Inorganic compound'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+- preferred_term: Na2CO3
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+- preferred_term: glucose
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: L--Cysteine・HCl・H2O
+  concentration:
+    value: '600'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
-  concentration:
-    value: '0.6'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
-    label: L-Cysteine HCl x H2O
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 6.5.
-- step_number: 2
-  action: MIX
-  description: Add Na2CO3 (4.0 g/L) prior to dispensing and autoclaving. Add glucose
-    (4.0 g/L) as a sterile addition.
+    label: ''
+media_term:
+  preferred_term: TOGO Medium M734
+  term:
+    id: TOGO:M734
+    label: R83 Medium
+notes: 'Source: https://togomedium.org/medium/M734
+
+  Original source: JCM - JCM_M711
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=711'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:17.368590Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J711'
-- timestamp: '2026-03-13T06:19:17.483506Z'
+- timestamp: '2026-01-27T06:35:55.623423Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M734'
+- timestamp: '2026-01-28T19:48:19.767103Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:11.653771Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:003058'
+  notes: 'Assigned stable identifier: CultureMech:010143'
 - timestamp: '2026-03-17T06:30:07.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:31.196836+00:00'
+- timestamp: '2026-03-17T19:46:30.585124+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "R83 MEDIUM" to "r83_medium" for consistent matching
-merge_fingerprint: 322a42cb1c0e4d0a48b3460061d33e1c344abdfcab172c300854dd1cdda492b9
+  notes: Normalized name from "R83 Medium" to "r83_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:44.021126+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:32.702652+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:46:51.507772+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:18.848927+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 53f25b7da1a6528514613dd397bba99c6a4570fde300ee1103a306cfd17ab570
+  source: TOGO_M734_R83_Medium.yaml
+high_metal: true
+merge_fingerprint: 53f25b7da1a6528514613dd397bba99c6a4570fde300ee1103a306cfd17ab570
 merged_from:
-- r83_medium
+- TOGO_M734_R83_Medium

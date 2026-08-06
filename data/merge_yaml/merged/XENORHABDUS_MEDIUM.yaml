@@ -3,6 +3,7 @@ name: xenorhabdus_medium
 original_name: XENORHABDUS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
@@ -28,8 +29,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Agar
   term:
@@ -38,8 +39,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -65,12 +66,35 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "XENORHABDUS medium" to "xenorhabdus_medium" for consistent
     matching
-- timestamp: '2026-04-17T06:29:22.629323+00:00'
+- timestamp: '2026-06-05T07:40:23.182630+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:47.942196+00:00'
   curator: recipe-merger
   action: Merged 5 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_364_PYEA_medium, KOMODO_423_XENORHABDUS_medium, pyea_medium,
     stappia_quadratibracata_medium_28m_7, xenorhabdus_medium'
+- timestamp: '2026-08-06T03:04:47.942246+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 5 source recipe(s) on fingerprint e650a705856a5678e63db754c376d529883c17d8d918de1e4955f054b6c6d973
+  source: KOMODO_364_PYEA_medium.yaml, KOMODO_423_XENORHABDUS_medium.yaml, pyea_medium.yaml,
+    stappia_quadratibracata_medium_28m_7.yaml, xenorhabdus_medium.yaml
 kg_microbe_match: mediadive.medium:101
+parent_media:
+  path: data/normalized_yaml/bacterial/xenorhabdus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001528
+  name: xenorhabdus_medium
+  notes: KOMODO record states DSMZ Medium 423 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 synonyms:
 - name: pyea_medium
   source: KOMODO

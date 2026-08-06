@@ -3,6 +3,7 @@ name: marine_broth_2216_with_pyruvate
 original_name: MARINE BROTH 2216 WITH PYRUVATE
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 8.0
 media_term:
@@ -23,8 +24,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
     label: Sodium pyruvate
 preparation_steps:
 - step_number: 1
@@ -55,6 +56,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MARINE BROTH 2216 WITH PYRUVATE" to "marine_broth_2216_with_pyruvate"
     for consistent matching
+- timestamp: '2026-06-05T07:41:57.926123+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:05.490851+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint aae6fd6c12c17e9587973cdc73deea2806842f837e92c0de0f4c93b04c2c6e3e
+  source: marine_broth_2216_with_pyruvate.yaml
 kg_microbe_match: mediadive.medium:J1244
 merge_fingerprint: aae6fd6c12c17e9587973cdc73deea2806842f837e92c0de0f4c93b04c2c6e3e
 merged_from:

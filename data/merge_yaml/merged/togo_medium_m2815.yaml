@@ -3,6 +3,7 @@ name: togo_medium_m2815
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Glucose
@@ -14,9 +15,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Yeast extract (Difco)
   concentration:
     value: '1'
@@ -30,9 +31,9 @@ ingredients:
   term:
     id: CHEBI:86481
     label: sodium thioglycolate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000569
-    label: Sodium thioglycolate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86481
+    label: sodium thioglycolate
 - preferred_term: Proteose peptone (Difco)
   concentration:
     value: '2'
@@ -51,8 +52,8 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 media_term:
   preferred_term: TOGO Medium M2815
@@ -72,9 +73,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.598626'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Distilled water'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:05.880642Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -88,6 +89,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TOGO Medium M2815" to "togo_medium_m2815" for consistent
     matching
+- timestamp: '2026-05-16T09:04:37.254303+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:53.630404+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:01.376631+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint a42f31961a78e062e1ce2fcbbc543e5d314c4b36f28b01276101780a0b96f55f
+  source: togo_medium_m2815.yaml
 merge_fingerprint: a42f31961a78e062e1ce2fcbbc543e5d314c4b36f28b01276101780a0b96f55f
 merged_from:
 - togo_medium_m2815

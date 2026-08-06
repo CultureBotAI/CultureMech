@@ -3,6 +3,7 @@ name: cmyc_agar
 original_name: CMYC agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
@@ -24,11 +25,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
   term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4·7H2O
 - preferred_term: Yeast extract
   concentration:
     value: '2'
@@ -52,9 +53,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: NaNO3
   concentration:
     value: '2'
@@ -64,8 +65,8 @@ ingredients:
   term:
     id: CHEBI:63005
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000388
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
     label: NaNO3
 - preferred_term: Agar
   concentration:
@@ -75,20 +76,14 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Casamino acid
   concentration:
     value: '6'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acid
 media_term:
   preferred_term: TOGO Medium M1920
   term:
@@ -122,6 +117,29 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "CMYC agar" to "cmyc_agar" for consistent matching
-merge_fingerprint: 331ec35bab20abd9ab6d49526d5df65a64e76605507d02f60bfe29fcc175d734
+- timestamp: '2026-06-05T07:40:54.592600+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:36.423683+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T06:57:39.862820+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-08-06T03:05:28.952658+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 55fbf753b4c1dcf8ac2820a9b27a7bf74e48e5aa299f214f5dbf0c8cc50537de
+  source: cmyc_agar.yaml
+merge_fingerprint: 55fbf753b4c1dcf8ac2820a9b27a7bf74e48e5aa299f214f5dbf0c8cc50537de
 merged_from:
 - cmyc_agar

@@ -3,6 +3,7 @@ name: bsw3_agar
 original_name: BSW3 Agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Malt extract (BD-Difco)
@@ -25,9 +26,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -36,9 +37,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '0.4'
@@ -77,6 +78,17 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "BSW3 Agar" to "bsw3_agar" for consistent matching
+- timestamp: '2026-06-05T07:40:32.214264+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:07.743925+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 4c3144cb6db8ff7bb1c65f5b3c38105a8a04f313ddcceafbdededd2e5ec71b0c
+  source: TOGO_M1304_BSW3_Agar.yaml
 kg_microbe_match: mediadive.medium:7
 merge_fingerprint: 4c3144cb6db8ff7bb1c65f5b3c38105a8a04f313ddcceafbdededd2e5ec71b0c
 merged_from:

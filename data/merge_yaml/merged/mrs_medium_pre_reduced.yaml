@@ -3,8 +3,11 @@ name: mrs_medium_pre_reduced
 original_name: MRS MEDIUM (pre-reduced)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_range: 6.2-6.5
+ph_range:
+  min: 6.2
+  max: 6.5
 media_term:
   preferred_term: DSMZ Medium 11b
   term:
@@ -31,8 +34,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Tween 80
   term:
@@ -41,8 +44,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000190
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53426
     label: Tween 80
 - preferred_term: Resazurin
   term:
@@ -51,28 +54,28 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: Na-acetate
   term:
     id: CHEBI:32954
-    label: Na-acetate
+    label: sodium acetate
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
     label: Na-acetate
 - preferred_term: (NH4)3 citrate
   term:
@@ -81,8 +84,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000335
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63037
     label: (NH4)3 citrate
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -91,8 +94,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: MnSO4 x H2O
   term:
@@ -101,8 +104,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
     label: MnSO4 x H2O
 - preferred_term: L-Cysteine HCl x H2O
   term:
@@ -111,8 +114,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
     label: L-Cysteine HCl x H2O
 preparation_steps:
 - step_number: 1
@@ -139,6 +142,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MRS MEDIUM (pre-reduced)" to "mrs_medium_pre_reduced"
     for consistent matching
+- timestamp: '2026-05-20T06:02:00.194992+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.2-6.5'' -> {''min'': 6.2, ''max'': 6.5}'
+- timestamp: '2026-06-05T07:41:38.492880+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:09.194287+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:50.492548+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint c5f16cac1163ad857026089523f6262329f73c862c8977bf1d4dc91b6ed384b3
+  source: mrs_medium_pre_reduced.yaml
 merge_fingerprint: c5f16cac1163ad857026089523f6262329f73c862c8977bf1d4dc91b6ed384b3
 merged_from:
 - mrs_medium_pre_reduced

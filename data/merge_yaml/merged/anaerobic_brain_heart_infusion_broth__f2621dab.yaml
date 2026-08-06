@@ -1,0 +1,78 @@
+id: CultureMech:015416
+name: anaerobic_brain_heart_infusion_broth
+original_name: ANAEROBIC BRAIN HEART INFUSION BROTH
+category: specialized
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J723
+  term:
+    id: mediadive.medium:J723
+    label: ANAEROBIC BRAIN HEART INFUSION BROTH
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=723'
+ingredients:
+- preferred_term: Brain heart infusion broth
+  concentration:
+    value: '36.6337'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Prepare the medium anaerobically under a N2 atmosphere. Prior to inoculation,
+    add per liter the following solutions (autoclaved and stored under a N2 atmosphere)
+    aseptically and anaerobically:'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.406573Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J723'
+- timestamp: '2026-03-13T06:20:42.565773Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015416'
+- timestamp: '2026-03-17T17:06:21.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:34.222316+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ANAEROBIC BRAIN HEART INFUSION BROTH" to "anaerobic_brain_heart_infusion_broth"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:57.509096+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:04.692803+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint f2621dabf584b5fa657449002cc78a7b59c0974dc66d22c7fd74e64ca08c583b
+  source: anaerobic_brain_heart_infusion_broth.yaml
+merge_fingerprint: f2621dabf584b5fa657449002cc78a7b59c0974dc66d22c7fd74e64ca08c583b
+merged_from:
+- anaerobic_brain_heart_infusion_broth

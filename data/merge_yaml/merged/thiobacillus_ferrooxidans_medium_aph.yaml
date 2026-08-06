@@ -3,6 +3,7 @@ name: thiobacillus_ferrooxidans_medium_aph
 original_name: THIOBACILLUS FERROOXIDANS MEDIUM (APH)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 2.0
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 271 | DSMZ Medium: 271 (mediadive.medium:271)
@@ -16,22 +17,22 @@ ingredients:
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -40,8 +41,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: KCl
   term:
@@ -50,8 +51,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: Ca(NO3)2 x 4 H2O
   term:
@@ -60,8 +61,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000586
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86159
     label: Ca(NO3)2 x 4 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -70,8 +71,8 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: H2SO4
   term:
@@ -81,9 +82,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001125
-    label: H2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26836
+    label: sulfuric acid
 applications:
 - Microbial cultivation
 curation_history:
@@ -104,9 +105,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:004699'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:34.005198'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: H2SO4'
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:34.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -116,6 +117,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "THIOBACILLUS FERROOXIDANS MEDIUM (APH)" to "thiobacillus_ferrooxidans_medium_aph"
     for consistent matching
+- timestamp: '2026-05-16T09:04:35.320582+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:51.215474+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:13.414372+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:59.128187+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint f95ac1b09d37ae37b35b939ef2ee79927065d8f458894ae5bee3d5ae20c6360d
+  source: thiobacillus_ferrooxidans_medium_aph.yaml
 merge_fingerprint: f95ac1b09d37ae37b35b939ef2ee79927065d8f458894ae5bee3d5ae20c6360d
 merged_from:
 - thiobacillus_ferrooxidans_medium_aph

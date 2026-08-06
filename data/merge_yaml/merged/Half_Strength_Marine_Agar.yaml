@@ -1,51 +1,84 @@
-id: CultureMech:015425
+id: CultureMech:010387
 name: half_strength_marine_agar
-original_name: HALF STRENGTH MARINE AGAR
-category: specialized
+original_name: Half Strength Marine Agar
+category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-media_term:
-  preferred_term: JCM Medium J916
-  term:
-    id: mediadive.medium:J916
-    label: HALF STRENGTH MARINE AGAR
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=916'
 ingredients:
-- preferred_term: Marine broth 2216
+- preferred_term: Distilled water
   concentration:
-    value: '18.7'
+    value: '1'
     unit: G_PER_L
-- preferred_term: Agar
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:2509
-    label: Agar
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Agar
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Marine broth 2216 (BD-Difco)
+  concentration:
+    value: '18.7'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M962
+  term:
+    id: TOGO:M962
+    label: Half Strength Marine Agar
+notes: 'Source: https://togomedium.org/medium/M962
+
+  Original source: JCM - JCM_M916
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=916'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:17.996764Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J916'
-- timestamp: '2026-03-13T06:20:42.596001Z'
+- timestamp: '2026-01-27T06:35:56.043239Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M962'
+- timestamp: '2026-01-28T19:48:35.439783Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:13.472408Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:015425'
-- timestamp: '2026-03-17T17:06:21.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:010387'
+- timestamp: '2026-03-17T06:30:40.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:34.257408+00:00'
+- timestamp: '2026-03-17T19:46:32.446691+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALF STRENGTH MARINE AGAR" to "half_strength_marine_agar"
+  notes: Normalized name from "Half Strength Marine Agar" to "half_strength_marine_agar"
     for consistent matching
-kg_microbe_match: mediadive.medium:12
-merge_fingerprint: 3e2aa29f83ff038aa541b226c72cf931273c1a47ed518311780febbfdb01c644
+- timestamp: '2026-06-05T07:41:07.173904+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:36.935780+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 3923af7912fe1a422e324d0d1184679f5a0510a766a4eaca0ddab9fb625773ea
+  source: half_strength_marine_agar.yaml
+merge_fingerprint: 3923af7912fe1a422e324d0d1184679f5a0510a766a4eaca0ddab9fb625773ea
 merged_from:
 - half_strength_marine_agar

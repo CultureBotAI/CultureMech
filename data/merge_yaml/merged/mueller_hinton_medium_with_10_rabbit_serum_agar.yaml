@@ -3,6 +3,7 @@ name: mueller_hinton_medium_with_10_rabbit_serum_agar
 original_name: Mueller Hinton Medium with 10% Rabbit Serum (Agar)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: DI Water
@@ -41,13 +42,9 @@ ingredients:
     and thymine content critical for sulfonamide/trimethoprim testing; Constituent
     of Mueller-Hinton Agar commercial product
   synonyms:
-  - synonym_text:
-      synonym_text: casein hydrolysate
-      synonym_type: EXACT
+  - synonym_text: casein hydrolysate
     synonym_type: EXACT
-  - synonym_text:
-      synonym_text: acid casein hydrolysate
-      synonym_type: EXACT
+  - synonym_text: acid casein hydrolysate
     synonym_type: EXACT
 - preferred_term: Starch
   term:
@@ -119,6 +116,15 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Mueller Hinton Medium with 10% Rabbit Serum (Agar)"
     to "mueller_hinton_medium_with_10_rabbit_serum_agar" for consistent matching
+- timestamp: '2026-05-17T07:07:33.013082+00:00'
+  curator: cleanup_residual_errors.py
+  action: CLEANUP_RESIDUAL_ERRORS
+  notes: R01_flatten_synonym_text=2
+- timestamp: '2026-08-06T03:05:50.802935+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 1848e0c1d0e0bb00d21d40334f211dfc35cb06f0a0abd9b04204cdaa7ea609ba
+  source: mueller_hinton_medium_with_10_rabbit_serum_agar.yaml
 merge_fingerprint: 1848e0c1d0e0bb00d21d40334f211dfc35cb06f0a0abd9b04204cdaa7ea609ba
 merged_from:
 - mueller_hinton_medium_with_10_rabbit_serum_agar

@@ -3,6 +3,7 @@ name: togo_medium_m1537
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +32,9 @@ ingredients:
   term:
     id: CHEBI:3311
     label: calcium carbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001099
-    label: CaCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
+    label: calcium carbonate
 - preferred_term: Glycerol
   concentration:
     value: '30'
@@ -41,10 +42,10 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
     component'
   term:
-    id: CHEBI:15978
-    label: sn-glycerol 3-phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000588
+    id: CHEBI:17754
+    label: Glycerol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: Keratin
   concentration:
@@ -82,9 +83,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008084'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:49.281972'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:11.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -94,6 +95,27 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TOGO Medium M1537" to "togo_medium_m1537" for consistent
     matching
+- timestamp: '2026-05-16T09:04:36.420353+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:52.702713+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:51.468090+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:06:00.378999+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e5102bed178324230c0a1d9a20f7d876180c413be675a783b6c2740d3f710d75
+  source: togo_medium_m1537.yaml
 solutions:
 - preferred_term: Soil extract*
   term:
@@ -104,6 +126,6 @@ solutions:
     unit: G_PER_L
   notes: See mediadive_5555_Soil_extract.yaml for composition
   name: Unknown solution
-merge_fingerprint: a40941667f84272860bc99aa1915c7558fe5f8d49ae32c6ff17deb6817556a14
+merge_fingerprint: e5102bed178324230c0a1d9a20f7d876180c413be675a783b6c2740d3f710d75
 merged_from:
 - togo_medium_m1537

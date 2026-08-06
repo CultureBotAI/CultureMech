@@ -3,6 +3,7 @@ name: caldicellulosiruptor_medium_for_dsm_10319
 original_name: Caldicellulosiruptor Medium (For DSM 10319)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: NaCl
   concentration:
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: KH2PO4
   concentration:
     value: '0.75'
@@ -37,9 +38,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
@@ -50,9 +51,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: K2HPO4
   concentration:
     value: '1.5'
@@ -62,9 +63,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: D-glucose
   concentration:
     value: '5'
@@ -74,9 +75,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: D-glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: MgCl2 x 6 H2O
   concentration:
     value: '0.4'
@@ -86,9 +87,9 @@ ingredients:
   term:
     id: CHEBI:6636
     label: magnesium dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000663
-    label: MgCl2 x 6 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
 - preferred_term: Trypticase peptone (BD BBL)
   concentration:
     value: '2'
@@ -102,9 +103,9 @@ ingredients:
   term:
     id: CHEBI:17561
     label: L-cysteine
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000923
-    label: L-Cysteine-HCl x H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17561
+    label: L-cysteine
 - preferred_term: Yeast extract (OXOID)
   concentration:
     value: '1'
@@ -127,9 +128,9 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000183
-    label: Na2MoO4 x 2 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
 - preferred_term: H3BO3
   concentration:
     value: '6'
@@ -139,17 +140,17 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: MnCl2 x 4 H2O
   concentration:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -163,9 +164,9 @@ ingredients:
   term:
     id: CHEBI:35696
     label: cobalt dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
-    label: CoCl2 x 6 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
 - preferred_term: NiCl2 x 6 H2O
   concentration:
     value: '24'
@@ -175,9 +176,9 @@ ingredients:
   term:
     id: CHEBI:34887
     label: nickel dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
-    label: NiCl2 x 6 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
 - preferred_term: CuCl2 x 2 H2O
   concentration:
     value: '2'
@@ -187,9 +188,9 @@ ingredients:
   term:
     id: CHEBI:86318
     label: copper(II) chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
-    label: CuCl2 x 2 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
 - preferred_term: ZnCl2
   concentration:
     value: '70'
@@ -199,9 +200,9 @@ ingredients:
   term:
     id: CHEBI:49976
     label: zinc dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
-    label: ZnCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
+    label: zinc dichloride
 - preferred_term: HCl (25%; 7.7 M)
   concentration:
     value: '10'
@@ -217,9 +218,9 @@ ingredients:
   term:
     id: CHEBI:86249
     label: iron dichloride tetrahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000329
-    label: FeCl2 x 4 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
 media_term:
   preferred_term: TOGO Medium M2542
   term:
@@ -240,9 +241,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:54.244757'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:04:29.745693+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -256,10 +257,10 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009111'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:56.174834'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name; Added default solution
     name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:03.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -269,6 +270,36 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Caldicellulosiruptor Medium (For DSM 10319)" to "caldicellulosiruptor_medium_for_dsm_10319"
     for consistent matching
+- timestamp: '2026-05-16T09:03:26.499708+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-05-28T06:12:21.633329+00:00'
+  curator: deep-research-edison-phase2
+  action: ENRICHED
+  notes: 'Edison phase-1/phase-2: 8 Caldicellulosiruptor type strains + T. calidifontis
+    Rx1 grown on MODIFIED DSMZ 640 (not the exact parent). NOTE: no source directly
+    evidenced DSM 10319 itself on this medium. [added 9 organism(s), 2 variant(s)]'
+- timestamp: '2026-06-05T07:40:52.082297+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 16 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:54.140312+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T00:58:02.710815+00:00'
+  curator: curate_organism_culture_type.py
+  action: SET_ORGANISM_CULTURE_TYPE
+  notes: 'Inferred isolate: 9 specific strain(s) named, no community signal (#142)'
+  changes: Set organism_culture_type=isolate (was unset)
+- timestamp: '2026-08-06T03:05:26.395459+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 8c95e8f97e6be203eb1316cf1bc33a03a062da680c0ba10c776b38ac223e2d37
+  source: caldicellulosiruptor_medium_for_dsm_10319.yaml
 high_metal: true
 solutions:
 - preferred_term: Na-resazurin solution (0.1% w/v)
@@ -294,6 +325,157 @@ solutions:
     unit: G_PER_L
   notes: See mediadive_4178_Trace_element_solution_SL-10.yaml for composition
   name: Unknown solution
+organism_culture_type: isolate
+target_organisms:
+- preferred_term: Caldicellulosiruptor bescii
+  term:
+    id: NCBITaxon:31899
+    label: Caldicellulosiruptor bescii
+  strain: DSM 6725
+  evidence:
+  - reference: doi:10.1128/AEM.01400-10
+    supports: SUPPORT
+    explanation: 'Blumer-Schuette et al. 2010; growth on the modified DSMZ 640 variant
+      (see variant modified_dsmz_640_blumer_schuette_2010). | Identifiers: DSM 6725;
+      INSDC CP001393'
+    snippet: Freeze-dried cells were resuspended in the recommended medium and subcultured
+      ... into modified DSMZ medium 640 ... grown at 70C with orbital shaking; 50
+      ml in 125 ml serum bottle, N2 headspace, 24 h.
+- preferred_term: Caldicellulosiruptor saccharolyticus
+  term:
+    id: NCBITaxon:44001
+    label: Caldicellulosiruptor saccharolyticus
+  strain: DSM 8903
+  evidence:
+  - reference: doi:10.1128/AEM.01400-10
+    supports: SUPPORT
+    explanation: 'Blumer-Schuette et al. 2010; grown on modified DSMZ 640 variant;
+      70C, N2 headspace. | Identifiers: DSM 8903; INSDC CP000679'
+    snippet: Subcultured into modified DSMZ 640; reported to grow on xylose, glucose,
+      Avicel, pretreated switchgrass, and yeast extract control.
+- preferred_term: Caldicellulosiruptor hydrothermalis
+  term:
+    id: NCBITaxon:413888
+    label: Caldicellulosiruptor hydrothermalis
+  strain: DSM 18901
+  evidence:
+  - reference: doi:10.1128/AEM.01400-10
+    supports: SUPPORT
+    explanation: Blumer-Schuette et al. 2010; modified DSMZ 640 variant; 70C, N2 headspace.
+    snippet: Subcultured into modified DSMZ 640 and included among seven species grown
+      on selected substrates.
+- preferred_term: Caldicellulosiruptor kristjanssonii
+  strain: DSM 12137
+  evidence:
+  - reference: doi:10.1128/AEM.01400-10
+    supports: SUPPORT
+    explanation: Blumer-Schuette et al. 2010; modified DSMZ 640 variant; 70C, N2 headspace.
+    snippet: Subcultured into modified DSMZ 640; explicitly noted to grow on xylose,
+      to lower density than C. saccharolyticus.
+- preferred_term: Caldicellulosiruptor kronotskyensis
+  term:
+    id: NCBITaxon:413889
+    label: Caldicellulosiruptor kronotskyensis
+  strain: DSM 18902
+  evidence:
+  - reference: doi:10.1128/AEM.01400-10
+    supports: SUPPORT
+    explanation: Blumer-Schuette et al. 2010; modified DSMZ 640 variant; 70C, N2 headspace.
+    snippet: Subcultured into modified DSMZ 640 and included among seven species grown
+      on selected substrates.
+- preferred_term: Caldicellulosiruptor lactoaceticus
+  strain: DSM 9545
+  evidence:
+  - reference: doi:10.1128/AEM.01400-10
+    supports: SUPPORT
+    explanation: 'Blumer-Schuette et al. 2010; modified DSMZ 640 variant; 70C, N2
+      headspace. Note: no growth on glucose.'
+    snippet: Subcultured into modified DSMZ 640; explicitly reported as showing no
+      growth on glucose in this comparison.
+- preferred_term: Caldicellulosiruptor owensensis
+  term:
+    id: NCBITaxon:55205
+    label: Caldicellulosiruptor owensensis
+  strain: DSM 13100
+  evidence:
+  - reference: doi:10.1128/AEM.01400-10
+    supports: SUPPORT
+    explanation: Blumer-Schuette et al. 2010; modified DSMZ 640 variant; 70C, N2 headspace.
+    snippet: Subcultured into modified DSMZ 640 and included among seven species grown
+      on selected substrates.
+- preferred_term: Caldicellulosiruptor acetigenus
+  term:
+    id: NCBITaxon:301953
+    label: Caldicellulosiruptor acetigenus
+  strain: DSM 7040
+  evidence:
+  - reference: doi:10.1128/AEM.01400-10
+    supports: SUPPORT
+    explanation: Blumer-Schuette et al. 2010; modified DSMZ 640 variant; substrate-specific
+      growth not shown for this strain.
+    snippet: Listed in Table 1 as available from DSMZ and stated in methods as among
+      Caldicellulosiruptor species subcultured into modified DSMZ 640.
+- preferred_term: Thermoanaerobacterium calidifontis
+  term:
+    id: NCBITaxon:715028
+    label: Thermoanaerobacterium calidifontis
+  strain: Rx1
+  evidence:
+  - reference: doi:10.1007/s00203-013-0895-5
+    supports: SUPPORT
+    explanation: 'Shang et al. 2013; strain Rx1 grown on the modified DSMZ 640 variant
+      (see variant modified_dsmz_640_shang_2013); full recipe printed; 55C, 100% N2.
+      | Identifiers: JCM 18270; CCTCC M 2011109; 16S rRNA AB544080'
+    snippet: All culturing of Rx1 was performed in modified DSMZ medium 640, containing
+      (per liter) 0.9 g NH4Cl, 0.9 g NaCl, 0.4 g MgCl2.6H2O, 0.75 g KH2PO4, 1.5 g
+      K2HPO4, 2.5 mg FeCl3.6H2O, 0.75 g cysteine-HCl.H2O, 2 g tryptone, 1 g yeast
+      extract, 1 ml SL-10, 0.5 mg resazurin, 5 ml vitamin solution, 10.0 g substrate;
+      pH 7.0; prepared under 100% N2.
+variants:
+- name: modified_dsmz_640_blumer_schuette_2010
+  relationship: DERIVED_FROM
+  description: Modified DSMZ medium 640 used for comparative Caldicellulosiruptor
+    physiology (Blumer-Schuette et al. 2010).
+  modifications:
+  - Trypticase, cysteine-HCl, and resazurin omitted relative to standard DSMZ 640.
+  - Carbon source increased to 5 g/L; Na2S.9H2O added to 0.5% final.
+  - Anaerobic batch cultivation under N2; 70C with orbital shaking; 50 ml in 125 ml
+    serum bottle; 24 h.
+  purpose: Reusable variant for the 8 Caldicellulosiruptor DSM strains grown in modified
+    DSMZ 640 in this study.
+  evidence:
+  - reference: doi:10.1128/AEM.01400-10
+    supports: SUPPORT
+    explanation: Blumer-Schuette et al. 2010 methods describe the modified DSMZ 640
+      formulation and cultivation.
+    snippet: subcultured ... into modified DSMZ medium 640 ... grown at 70C with orbital
+      shaking under N2 headspace.
+- name: modified_dsmz_640_shang_2013
+  relationship: DERIVED_FROM
+  description: Modified DSMZ medium 640 for Thermoanaerobacterium calidifontis Rx1
+    (Shang et al. 2013); ferric iron, added SL-10/vitamins/resazurin, variable substrate.
+  modifications:
+  - 'Iron source substituted: FeCl3.6H2O 2.5 mg/L (vs ferrous iron in parent).'
+  - Added trace element solution SL-10 (1 ml/L, DSMZ medium 320) and vitamin solution
+    (5 ml/L, DSMZ medium 141, filter-sterilized).
+  - Added resazurin 0.5 mg/L.
+  - Fixed glucose replaced by variable substrate at 10.0 g/L (e.g. oat spelt xylan,
+    xylose, glucose).
+  - 'Per liter: 0.9 g NH4Cl, 0.9 g NaCl, 0.4 g MgCl2.6H2O, 0.75 g KH2PO4, 1.5 g K2HPO4,
+    0.75 g cysteine-HCl.H2O, 2 g tryptone, 1 g yeast extract; pH 7.0; prepared under
+    100% N2; dispensed 5 ml into 15 ml Hungate tubes; autoclaved.'
+  purpose: Capture the explicit modified DSMZ 640 recipe used to isolate and characterize
+    T. calidifontis Rx1.
+  evidence:
+  - reference: doi:10.1007/s00203-013-0895-5
+    supports: SUPPORT
+    explanation: Shang et al. 2013 prints the full modified DSMZ 640 recipe with explicit
+      deviations from the parent.
+    snippet: All culturing of Rx1 was performed in modified DSMZ medium 640, containing
+      (per liter distilled water) 0.9 g NH4Cl, 0.9 g NaCl, 0.4 g MgCl2 x 6 H2O, 0.75
+      g KH2PO4, 1.5 g K2HPO4, 2.5 mg FeCl3 x 6 H2O, 0.75 g cysteine-HCl x H2O, 2 g
+      tryptone, 1 g yeast extract, 1 ml trace element solution SL-10, 0.5 mg resazurin,
+      5 ml vitamin solution, 10.0 g substrate.
 merge_fingerprint: 8c95e8f97e6be203eb1316cf1bc33a03a062da680c0ba10c776b38ac223e2d37
 merged_from:
 - caldicellulosiruptor_medium_for_dsm_10319

@@ -3,6 +3,7 @@ name: oatmeal_agar_isp_3
 original_name: Oatmeal Agar (ISP-3)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Agar
   concentration:
@@ -25,9 +26,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Oatmeal (Quaker White Oats)
   concentration:
     value: '20'
@@ -94,9 +95,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009815'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:00.879447'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:00.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -106,6 +107,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Oatmeal Agar (ISP-3)" to "oatmeal_agar_isp_3" for consistent
     matching
+- timestamp: '2026-05-16T09:03:17.935560+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:41.297388+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:15.989611+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint c972412a0ac4dd7946c02ed1712bd77201941a81d778e0c045f94f98dc20372c
+  source: TOGO_M42_Oatmeal_Agar_ISP-3.yaml
 solutions:
 - preferred_term: Trace salts solution (see below)
   composition: []

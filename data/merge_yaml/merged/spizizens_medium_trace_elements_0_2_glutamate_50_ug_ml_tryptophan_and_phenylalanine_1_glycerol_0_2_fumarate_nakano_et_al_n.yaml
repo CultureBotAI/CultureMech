@@ -4,6 +4,7 @@ original_name: Spizizen's medium + trace elements + 0.2% glutamate + 50 ug/mL tr
   and phenylalanine + 1% glycerol + 0.2% fumarate; Nakano et al','N
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: L-Glutamate
@@ -11,6 +12,9 @@ ingredients:
     value: '13.5934'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glu-L'
+  term:
+    id: CHEBI:16015
+    label: ''
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
@@ -19,8 +23,8 @@ ingredients:
     value: '108.589'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glyc'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: Tryptophan
   term:
@@ -29,21 +33,30 @@ ingredients:
   concentration:
     value: '0.244822'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001025
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27897
     label: Tryptophan
 - preferred_term: Phenylalanine
   concentration:
     value: '0.302682'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:17295
+    label: ''
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.049556'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '80.3673'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.00247985'
@@ -55,6 +68,9 @@ ingredients:
   concentration:
     value: '44.0898'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -62,8 +78,8 @@ ingredients:
   concentration:
     value: '0.811458'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
@@ -72,9 +88,9 @@ ingredients:
   concentration:
     value: '0.0044828'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.0046211'
@@ -89,13 +105,16 @@ ingredients:
   concentration:
     value: '15.1355'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
 - preferred_term: Cupric chloride
   concentration:
     value: '0.0025222'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49553
+    label: ''
 - preferred_term: Sodium selenate
   concentration:
     value: '0.00248756'
@@ -110,8 +129,8 @@ ingredients:
   concentration:
     value: '3.4002'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
     label: Sodium citrate
 - preferred_term: '''Iron(III'
   concentration:
@@ -131,9 +150,9 @@ ingredients:
   concentration:
     value: '12.4969'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000656
-    label: sodium fumarate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:115156
+    label: Sodium fumarate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -165,6 +184,17 @@ curation_history:
     + 50 ug/mL tryptophan and phenylalanine + 1% glycerol + 0.2% fumarate; Nakano
     et al','N" to "spizizens_medium_trace_elements_0_2_glutamate_50_ug_ml_tryptophan_and_phenylalanine_1_glycerol_0_2_fumarate_nakano_et_al_n"
     for consistent matching
+- timestamp: '2026-06-05T07:41:46.480880+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:56.213616+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 36e6ed32d7c69e20edb7b5b5e3e4a4f1a1494000814a7e8edf105110315eab5b
+  source: spizizens_medium_trace_elements_0_2_glutamate_50_ug_ml_tryptophan_and_phenylalanine_1_glycerol_0_2_fumarate_nakano_et_al_n.yaml
 media_term:
   preferred_term: MediaDB Medium 213
   term:
@@ -177,6 +207,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 51a5dc3ae50f6d9c96d62df4f92bd5d75895915d87bd709d0c94b3feebd4741a
+merge_fingerprint: 36e6ed32d7c69e20edb7b5b5e3e4a4f1a1494000814a7e8edf105110315eab5b
 merged_from:
 - spizizens_medium_trace_elements_0_2_glutamate_50_ug_ml_tryptophan_and_phenylalanine_1_glycerol_0_2_fumarate_nakano_et_al_n

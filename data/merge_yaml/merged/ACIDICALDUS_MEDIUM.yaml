@@ -3,6 +3,7 @@ name: acidicaldus_medium
 original_name: ACIDICALDUS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ph_value: 2.5
 media_term:
@@ -16,12 +17,12 @@ ingredients:
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '0.45'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: KCl
   term:
@@ -30,8 +31,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -40,18 +41,18 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Ca(NO3)2 x 4 H2O
   term:
@@ -60,8 +61,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000586
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86159
     label: Ca(NO3)2 x 4 H2O
 - preferred_term: D-Glucose
   term:
@@ -70,8 +71,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Yeast extract
   concentration:
@@ -101,10 +102,35 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ACIDICALDUS medium" to "acidicaldus_medium" for consistent
     matching
-- timestamp: '2026-04-17T06:29:14.053076+00:00'
+- timestamp: '2026-06-05T07:40:18.362625+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:43.291600+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:38.115479+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_1038_ACIDICALDUS_medium, acidicaldus_medium'
+- timestamp: '2026-08-06T03:04:38.115519+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 86e1246c45f20ef1f22013f3704d5c84a29124a099b3581399735aa6e1ea224f
+  source: KOMODO_1038_ACIDICALDUS_medium.yaml, acidicaldus_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/acidicaldus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000461
+  name: acidicaldus_medium
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and concentration
+    signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.
 categories:
 - bacterial
 merged_from:

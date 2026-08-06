@@ -3,6 +3,7 @@ name: synthetic_dextrose_sd_minimal_medium
 original_name: Synthetic Dextrose (SD) Minimal Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Glucose
   concentration:
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Agar
   concentration:
     value: '20'
@@ -37,9 +38,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Bactp-Yeast Nitrogen Base w/o Amino Acids
   concentration:
     value: '6.7'
@@ -79,6 +80,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Synthetic Dextrose (SD) Minimal Medium" to "synthetic_dextrose_sd_minimal_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:41:48.210479+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:57.313078+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 4e7e05c4fd391815e39e1a6c93cf19059920a262d5fa23079a825a42edb616b3
+  source: synthetic_dextrose_sd_minimal_medium.yaml
 merge_fingerprint: 4e7e05c4fd391815e39e1a6c93cf19059920a262d5fa23079a825a42edb616b3
 merged_from:
 - synthetic_dextrose_sd_minimal_medium

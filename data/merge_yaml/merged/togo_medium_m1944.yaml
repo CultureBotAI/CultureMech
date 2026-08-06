@@ -3,6 +3,7 @@ name: togo_medium_m1944
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +32,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -43,8 +44,8 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: Na2S·9H2O
   concentration:
@@ -55,9 +56,9 @@ ingredients:
   term:
     id: CHEBI:76209
     label: sodium sulfide nonahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
-    label: Na2S·9H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
 - preferred_term: NH4HCO3
   concentration:
     value: '3.16'
@@ -67,8 +68,8 @@ ingredients:
   term:
     id: CHEBI:184335
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000412
+  mediaingredientmech_chebi_term:
+    id: CHEBI:184335
     label: NH4HCO3
 - preferred_term: Cysteine-HCl
   concentration:
@@ -124,10 +125,10 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:50.954974'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:19:57.728387Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -141,6 +142,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TOGO Medium M1944" to "togo_medium_m1944" for consistent
     matching
+- timestamp: '2026-05-16T09:04:36.925873+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:53.262834+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:00.945943+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint c9031a8552ba1baf715756906eea03185f6ca6afdcd777528fa677b6531809b6
+  source: togo_medium_m1944.yaml
 merge_fingerprint: c9031a8552ba1baf715756906eea03185f6ca6afdcd777528fa677b6531809b6
 merged_from:
 - togo_medium_m1944

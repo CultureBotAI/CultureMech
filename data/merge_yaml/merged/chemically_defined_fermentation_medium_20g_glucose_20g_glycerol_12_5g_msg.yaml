@@ -4,6 +4,7 @@ original_name: '''Chemically Defined Fermentation Medium (20g glucose + 20g glyc
   +12.5g MSG'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Boric acid
@@ -13,8 +14,8 @@ ingredients:
   concentration:
     value: '0.1779'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Glycerol
   term:
@@ -24,13 +25,16 @@ ingredients:
     value: '217.18'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glyc'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.136'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
@@ -38,13 +42,16 @@ ingredients:
   concentration:
     value: '0.4483'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '28.71'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -52,8 +59,8 @@ ingredients:
   concentration:
     value: '111.01'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Magnesium sulfate
   term:
@@ -62,17 +69,23 @@ ingredients:
   concentration:
     value: '0.4057'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '36.74'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.7194'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -80,17 +93,23 @@ ingredients:
   concentration:
     value: '0.6955'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Cupric chloride
   concentration:
     value: '0.02933'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49553
+    label: ''
 - preferred_term: Molybdic acid ammonium salt tetrahydrate
   concentration:
     value: '0.004045'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: Sodium Glutamate
   concentration:
     value: '66.8'
@@ -98,9 +117,9 @@ ingredients:
   term:
     id: CHEBI:64220
     label: monosodium glutamate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000432
-    label: Sodium Glutamate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64220
+    label: monosodium glutamate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -135,6 +154,17 @@ curation_history:
   notes: Normalized name from "'Chemically Defined Fermentation Medium (20g glucose
     + 20g glycerol +12.5g MSG" to "chemically_defined_fermentation_medium_20g_glucose_20g_glycerol_12_5g_msg"
     for consistent matching
+- timestamp: '2026-06-05T07:40:53.092215+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:27.276804+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2d2f0a071bf28a8a239e825b2cac0673cff6f87e78a8cc345e62c62e9682e5a0
+  source: chemically_defined_fermentation_medium_20g_glucose_20g_glycerol_12_5g_msg.yaml
 media_term:
   preferred_term: MediaDB Medium 330
   term:
@@ -147,6 +177,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 93c3e39509a084856530789c63cc3d4696171be6db94854402144dbca40b24e9
+merge_fingerprint: 2d2f0a071bf28a8a239e825b2cac0673cff6f87e78a8cc345e62c62e9682e5a0
 merged_from:
 - chemically_defined_fermentation_medium_20g_glucose_20g_glycerol_12_5g_msg

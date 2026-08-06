@@ -3,6 +3,7 @@ name: anaerobic_alkaline_lb_medium
 original_name: ANAEROBIC ALKALINE LB MEDIUM
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 9.5
 media_term:
@@ -23,18 +24,18 @@ ingredients:
   concentration:
     value: '2.97619'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000880
+  mediaingredientmech_chebi_term:
+    id: CHEBI:9754
     label: Tris base
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
   concentration:
     value: '200'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 - preferred_term: Na2S x 9 H2O
   term:
@@ -43,8 +44,8 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 preparation_steps:
 - step_number: 1
@@ -72,6 +73,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ANAEROBIC ALKALINE LB MEDIUM" to "anaerobic_alkaline_lb_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:41:57.460851+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:14.974976+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:04.630030+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 1e17c5d4c2861f78c5f839a2abc0683c3ad1f1367e9906d305e9a3f4fb8b9224
+  source: anaerobic_alkaline_lb_medium.yaml
 high_metal: true
 kg_microbe_match: mediadive.medium:J1111
 merge_fingerprint: 1e17c5d4c2861f78c5f839a2abc0683c3ad1f1367e9906d305e9a3f4fb8b9224

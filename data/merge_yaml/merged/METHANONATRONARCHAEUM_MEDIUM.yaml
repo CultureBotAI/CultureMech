@@ -1,8 +1,9 @@
 id: CultureMech:001076
 name: methanonatronarchaeum_medium
 original_name: METHANONATRONARCHAEUM MEDIUM
-category: bacterial
+category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 9.5
 media_term:
@@ -15,12 +16,12 @@ ingredients:
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
   concentration:
     value: '192.708'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 - preferred_term: NaHCO3
   term:
@@ -29,8 +30,8 @@ ingredients:
   concentration:
     value: '36.4583'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: NaCl
   term:
@@ -40,19 +41,19 @@ ingredients:
     value: '266.6667'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 16.6667, 250.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '3.6458399999999997'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 1.04167, 2.60417]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: KCl
   term:
@@ -61,18 +62,18 @@ ingredients:
   concentration:
     value: '5.20833'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '40'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -81,8 +82,8 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Methanol
   term:
@@ -91,28 +92,28 @@ ingredients:
   concentration:
     value: '792'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000618
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17790
     label: Methanol
 - preferred_term: Na-formate
   term:
     id: CHEBI:62965
-    label: Na-formate
+    label: sodium formate
   concentration:
     value: '340'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000985
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62965
     label: Na-formate
 - preferred_term: Na-acetate
   term:
     id: CHEBI:32954
-    label: Na-acetate
+    label: sodium acetate
   concentration:
     value: '16'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
     label: Na-acetate
 - preferred_term: Yeast extract
   concentration:
@@ -125,8 +126,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000392
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17905
     label: 2-Mercaptoethanesulfonic acid
 - preferred_term: Na2S x 9 H2O
   term:
@@ -136,8 +137,8 @@ ingredients:
     value: '148.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 25.0, 123.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 - preferred_term: EDTA
   term:
@@ -146,8 +147,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000165
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64755
     label: EDTA
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -157,8 +158,8 @@ ingredients:
     value: '156.2'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 2.2, 154.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -167,8 +168,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -177,18 +178,18 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -197,8 +198,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
@@ -207,8 +208,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
     label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -217,8 +218,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -227,8 +228,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: NaOH
   term:
@@ -237,8 +238,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
     label: NaOH
 - preferred_term: Na2SeO3 x 5 H2O
   term:
@@ -247,8 +248,8 @@ ingredients:
   concentration:
     value: '0.003'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000144
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131361
     label: Na2SeO3 x 5 H2O
 - preferred_term: Na2WO4 x 2 H2O
   term:
@@ -257,8 +258,8 @@ ingredients:
   concentration:
     value: '0.004'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000309
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63939
     label: Na2WO4 x 2 H2O
 - preferred_term: Biotin
   term:
@@ -267,8 +268,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Folic acid
   term:
@@ -277,8 +278,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
     label: Folic acid
 - preferred_term: Pyridoxine hydrochloride
   term:
@@ -287,8 +288,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001016
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
     label: Pyridoxine hydrochloride
 - preferred_term: Thiamine HCl
   term:
@@ -297,8 +298,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Riboflavin
   term:
@@ -307,8 +308,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: Nicotinic acid
   term:
@@ -317,13 +318,16 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
     label: Nicotinic acid
 - preferred_term: Calcium D-(+)-pantothenate
   concentration:
     value: '0.05'
     unit: G_PER_L
+  term:
+    id: CHEBI:31345
+    label: ''
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
@@ -331,8 +335,8 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 - preferred_term: p-Aminobenzoic acid
   term:
@@ -341,8 +345,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
     label: p-Aminobenzoic acid
 - preferred_term: (DL)-alpha-Lipoic acid
   term:
@@ -351,8 +355,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000166
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16494
     label: (DL)-alpha-Lipoic acid
 preparation_steps:
 - step_number: 1
@@ -418,7 +422,22 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "METHANONATRONARCHAEUM MEDIUM" to "methanonatronarchaeum_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:41:32.082061+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 33 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:07.179886+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 6 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:30.903508+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b348c635de6957953f99f058c20c54fb9fba653d404c544c0fa7e9dc643afb65
+  source: methanonatronarchaeum_medium.yaml
 high_metal: true
-merge_fingerprint: cb6303dec09a29766a98c14b9e2ffcff5098f27f7e04406dc56c169efc597a87
+merge_fingerprint: b348c635de6957953f99f058c20c54fb9fba653d404c544c0fa7e9dc643afb65
 merged_from:
 - methanonatronarchaeum_medium

@@ -3,6 +3,7 @@ name: nesterenkonia_modified_medium
 original_name: NESTERENKONIA MODIFIED medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 993a
@@ -23,8 +24,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: L-Asparagine
   term:
@@ -33,8 +34,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000282
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17196
     label: L-Asparagine
 - preferred_term: Glycerol
   term:
@@ -43,18 +44,18 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: Agar
   term:
@@ -63,8 +64,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -73,8 +74,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -83,8 +84,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -93,8 +94,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 applications:
 - Microbial cultivation
@@ -120,7 +121,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "NESTERENKONIA MODIFIED medium" to "nesterenkonia_modified_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:35.911581+00:00'
+- timestamp: '2026-06-05T07:40:28.452699+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:46.622249+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:03.397113+00:00'
   curator: recipe-merger
   action: Merged 13 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_993_ISP_5_MEDIUM, KOMODO_993a_NESTERENKONIA_MODIFIED_medium,
@@ -128,7 +139,27 @@ curation_history:
     medium_993_modified_for_dsm_16375, medium_993_modified_for_dsm_44844, medium_993_modified_for_dsm_45009,
     medium_993_modified_for_dsm_45010, medium_993_modified_for_dsm_45011, medium_993_modified_for_dsm_45013,
     medium_993_modified_for_dsm_45014, medium_993_modified_for_dsm_45016, nesterenkonia_modified_medium'
+- timestamp: '2026-08-06T03:05:03.397249+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 13 source recipe(s) on fingerprint 26d18dae74ea1e9f3be8b7f8de895c5e8dab6e60664efa2e16edd2bb1363f697
+  source: KOMODO_993_ISP_5_MEDIUM.yaml, KOMODO_993a_NESTERENKONIA_MODIFIED_medium.yaml,
+    KOMODO_993b_MODIFIED_ISP5_medium.yaml, KOMODO_993c_MODIFIED_ISP5_MEDIUM_WITH_SODIUM_CHLORIDE.yaml,
+    medium_993_modified_for_dsm_16375.yaml, medium_993_modified_for_dsm_44844.yaml,
+    medium_993_modified_for_dsm_45009.yaml, medium_993_modified_for_dsm_45010.yaml,
+    medium_993_modified_for_dsm_45011.yaml, medium_993_modified_for_dsm_45013.yaml,
+    medium_993_modified_for_dsm_45014.yaml, medium_993_modified_for_dsm_45016.yaml,
+    nes
 ph_value: 7.2
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_993_ISP_5_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006973
+  name: isp_5_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.
 synonyms:
 - name: isp_5_medium
   source: KOMODO

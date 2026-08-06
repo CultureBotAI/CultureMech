@@ -3,6 +3,7 @@ name: marine_caulobacter_medium_spyem_containing_sea_salts_and_nh4cl
 original_name: Marine-Caulobacter medium SPYEM containing sea salts and NH4Cl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: NH4Cl
@@ -14,9 +15,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: Sea salts (Sigma)
   concentration:
     value: '30'
@@ -59,9 +60,9 @@ ingredients:
   term:
     id: CHEBI:17015
     label: riboflavin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
-    label: Riboflavin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
+    label: riboflavin
 media_term:
   preferred_term: TOGO Medium M2273
   term:
@@ -97,6 +98,21 @@ curation_history:
   notes: Normalized name from "Marine-Caulobacter medium SPYEM containing sea salts
     and NH4Cl" to "marine_caulobacter_medium_spyem_containing_sea_salts_and_nh4cl"
     for consistent matching
+- timestamp: '2026-06-05T07:41:12.879339+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:00.880820+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:42.012136+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 8c0af4a1b7e7acb99671bcb8e38dc6cf03218b5398106c7d103fd49f268acc7e
+  source: marine_caulobacter_medium_spyem_containing_sea_salts_and_nh4cl.yaml
 merge_fingerprint: 8c0af4a1b7e7acb99671bcb8e38dc6cf03218b5398106c7d103fd49f268acc7e
 merged_from:
 - marine_caulobacter_medium_spyem_containing_sea_salts_and_nh4cl

@@ -3,6 +3,7 @@ name: cyc_medium_modified_following_cross_and_attwell_1973
 original_name: CYC-MEDIUM (modified following Cross and Attwell,1973)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
@@ -20,8 +21,8 @@ ingredients:
   concentration:
     value: '48'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Czapek Dox agar
 - preferred_term: Yeast extract
   concentration:
@@ -31,12 +32,6 @@ ingredients:
   concentration:
     value: '6.1'
     unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
 - preferred_term: Tryptophan
   term:
     id: CHEBI:27897
@@ -44,8 +39,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001025
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27897
     label: Tryptophan
 - preferred_term: Agar
   term:
@@ -54,8 +49,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -81,11 +76,47 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CYC-MEDIUM (modified following Cross and Attwell,1973)"
     to "cyc_medium_modified_following_cross_and_attwell_1973" for consistent matching
-- timestamp: '2026-04-17T06:29:29.042790+00:00'
+- timestamp: '2026-06-05T07:40:24.574648+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:28.349936+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:04:55.434404+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_550_CYC-MEDIUM_modified_following_Cross_and_Attwell_1973,
     cyc_medium_modified_following_cross_and_attwell_1973, medium_550_modified_for_dsm_17572'
+- timestamp: '2026-08-06T03:04:55.434441+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 78be8b492264dd1624176b87095a3a1ecd62127d64c1288163d958581d7e276b
+  source: KOMODO_550_CYC-MEDIUM_modified_following_Cross_and_Attwell_1973.yaml, cyc_medium_modified_following_cross_and_attwell_1973.yaml,
+    medium_550_modified_for_dsm_17572.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_550_modified_for_dsm_17572.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005998
+  name: medium_550_modified_for_dsm_17572
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/cyc_medium_modified_following_cross_and_attwell_1973.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001686
+  name: cyc_medium_modified_following_cross_and_attwell_1973
+  notes: KOMODO record states DSMZ Medium 550 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 synonyms:
 - name: medium_550_modified_for_dsm_17572
   source: KOMODO
@@ -97,4 +128,4 @@ merged_from:
 - KOMODO_550_CYC-MEDIUM_modified_following_Cross_and_Attwell_1973
 - cyc_medium_modified_following_cross_and_attwell_1973
 - medium_550_modified_for_dsm_17572
-merge_fingerprint: a769e778b45a1ba40db0b7260a2cdc99f227f4a9c8c5c3b733938c2e966f30ff
+merge_fingerprint: 78be8b492264dd1624176b87095a3a1ecd62127d64c1288163d958581d7e276b

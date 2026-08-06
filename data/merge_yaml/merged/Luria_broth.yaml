@@ -3,6 +3,7 @@ name: luria_broth
 original_name: Luria broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: NaCl
   concentration:
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Bacto yeast extract
   concentration:
     value: '5'
@@ -68,10 +69,32 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "Luria broth" to "luria_broth" for consistent matching
-- timestamp: '2026-04-17T06:30:08.368014+00:00'
+- timestamp: '2026-06-05T07:41:11.509029+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:40.174913+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: lennox, luria_broth'
+- timestamp: '2026-08-06T03:05:40.174945+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 92073b844b5a258a897e12f20755236a948977e997bf59d9cb296ec71d9a66aa
+  source: lennox.yaml, luria_broth.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/lennox.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:009506
+  name: lennox
+  notes: Reviewed TOGO Lennox/Luria broth salt pair; Luria broth is modeled as the
+    10 g/L NaCl child variant of Lennox broth.
+variant_relationship: SALINITY_VARIANT
+variant_modifications:
+- NaCl increased from 5 g/L to 10 g/L while Bacto yeast extract and Bacto tryptone
+  remain unchanged.
 synonyms:
 - name: lennox
   source: TOGO

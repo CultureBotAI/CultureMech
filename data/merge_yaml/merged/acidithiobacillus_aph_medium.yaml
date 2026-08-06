@@ -3,6 +3,7 @@ name: acidithiobacillus_aph_medium
 original_name: ACIDITHIOBACILLUS (APH) MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 2.0
 media_term:
@@ -15,22 +16,22 @@ ingredients:
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -39,8 +40,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: KCl
   term:
@@ -49,8 +50,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: Ca(NO3)2 x 4 H2O
   term:
@@ -59,8 +60,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000586
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86159
     label: Ca(NO3)2 x 4 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -69,8 +70,8 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 preparation_steps:
 - step_number: 1
@@ -102,11 +103,46 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ACIDITHIOBACILLUS (APH) MEDIUM" to "acidithiobacillus_aph_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:53.186706+00:00'
+- timestamp: '2026-06-05T07:40:47.324087+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:52.606022+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:21.935405+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: acidithiobacillus_aph_medium, medium_271_modified_for_dsm_11477,
     medium_271_modified_for_dsm_11478, medium_271_modified_for_dsm_24413'
+- timestamp: '2026-08-06T03:05:21.935455+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 4 source recipe(s) on fingerprint b0450bbf4774e9eace3d4fcbfb1677b2c61a08ebc5f5e3eca8d354a8a8ba09f3
+  source: acidithiobacillus_aph_medium.yaml, medium_271_modified_for_dsm_11477.yaml,
+    medium_271_modified_for_dsm_11478.yaml, medium_271_modified_for_dsm_24413.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_271_modified_for_dsm_11477.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004696
+  name: medium_271_modified_for_dsm_11477
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_271_modified_for_dsm_11478.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004697
+  name: medium_271_modified_for_dsm_11478
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_271_modified_for_dsm_24413.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004698
+  name: medium_271_modified_for_dsm_24413
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 synonyms:
 - name: medium_271_modified_for_dsm_11477
   source: KOMODO

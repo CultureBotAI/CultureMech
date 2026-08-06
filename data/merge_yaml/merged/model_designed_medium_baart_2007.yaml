@@ -3,6 +3,7 @@ name: model_designed_medium_baart_2007
 original_name: '''Model-designed medium (Baart 2007'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Ammonium chloride
@@ -12,13 +13,16 @@ ingredients:
   concentration:
     value: '23.5'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Cupric sulfate
   concentration:
     value: 8e-05
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Cobalt chloride
   concentration:
     value: 8e-05
@@ -33,17 +37,23 @@ ingredients:
   concentration:
     value: '0.00034'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.136'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Manganese chloride
   concentration:
     value: '0.0008'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.00016'
@@ -58,9 +68,9 @@ ingredients:
   concentration:
     value: '0.38'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000669
-    label: Sodium thiosulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132112
+    label: Sodium Thiosulfate
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
@@ -69,13 +79,16 @@ ingredients:
     value: '31.1'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '12.5'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -83,8 +96,8 @@ ingredients:
   concentration:
     value: '2.43'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Sodium chloride
   term:
@@ -93,9 +106,9 @@ ingredients:
   concentration:
     value: '102.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.3'
@@ -104,6 +117,9 @@ ingredients:
   concentration:
     value: '4.58'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -133,6 +149,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'Model-designed medium (Baart 2007" to "model_designed_medium_baart_2007"
     for consistent matching
+- timestamp: '2026-06-05T07:41:35.941929+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:47.693578+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 3860abcf4108c667977eab8ed90c8ca28e1c857d6488ff389592afe37af1a464
+  source: model_designed_medium_baart_2007.yaml
 media_term:
   preferred_term: MediaDB Medium 394
   term:
@@ -144,6 +171,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 6fb381c1b5b3bfe57b74f0be71abf2759b04008e511657e8cbf3e765e0336cd8
+merge_fingerprint: 3860abcf4108c667977eab8ed90c8ca28e1c857d6488ff389592afe37af1a464
 merged_from:
 - model_designed_medium_baart_2007

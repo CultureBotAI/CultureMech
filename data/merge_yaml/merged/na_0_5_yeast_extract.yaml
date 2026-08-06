@@ -3,6 +3,7 @@ name: na_0_5_yeast_extract
 original_name: NA + 0.5% Yeast Extract
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +32,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -82,6 +83,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "NA + 0.5% Yeast Extract" to "na_0_5_yeast_extract"
     for consistent matching
+- timestamp: '2026-06-05T07:41:39.107693+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:50.991994+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 750059866f1b61f9ca5eb6ff2c039433395cf50653446df898d8d6cea73e8c0e
+  source: na_0_5_yeast_extract.yaml
 merge_fingerprint: 750059866f1b61f9ca5eb6ff2c039433395cf50653446df898d8d6cea73e8c0e
 merged_from:
 - na_0_5_yeast_extract

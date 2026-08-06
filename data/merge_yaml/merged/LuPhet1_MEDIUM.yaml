@@ -3,8 +3,11 @@ name: luphet1_medium
 original_name: LuPhet1 medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_range: 7.2-7.4
+ph_range:
+  min: 7.2
+  max: 7.4
 media_term:
   preferred_term: KOMODO Medium 298e
   term:
@@ -16,22 +19,22 @@ ingredients:
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: NaCl
   term:
@@ -40,8 +43,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -50,8 +53,8 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: KCl
   term:
@@ -60,8 +63,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -70,8 +73,8 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: Yeast extract
   concentration:
@@ -81,15 +84,18 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 - preferred_term: Na-DL-lactate
   term:
@@ -98,8 +104,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001047
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75228
     label: Na-DL-lactate
 - preferred_term: Na2S x 9 H2O
   term:
@@ -108,8 +114,8 @@ ingredients:
   concentration:
     value: '0.36'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 - preferred_term: HCl
   term:
@@ -118,8 +124,8 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000150
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
     label: HCl
 - preferred_term: FeCl2 x 4 H2O
   term:
@@ -128,8 +134,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000329
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86249
     label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
@@ -138,8 +144,8 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
     label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -148,18 +154,18 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.006'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -168,8 +174,8 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
@@ -178,8 +184,8 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
     label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -188,8 +194,8 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -198,8 +204,8 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: NaOH
   term:
@@ -208,8 +214,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
     label: NaOH
 - preferred_term: Na2SeO3 x 5 H2O
   term:
@@ -218,8 +224,8 @@ ingredients:
   concentration:
     value: '0.003'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000144
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131361
     label: Na2SeO3 x 5 H2O
 - preferred_term: Na2WO4 x 2 H2O
   term:
@@ -228,8 +234,8 @@ ingredients:
   concentration:
     value: '0.004'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000309
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63939
     label: Na2WO4 x 2 H2O
 - preferred_term: Vitamin B12
   term:
@@ -238,8 +244,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 - preferred_term: p-Aminobenzoic acid
   term:
@@ -248,8 +254,8 @@ ingredients:
   concentration:
     value: '0.08'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
     label: p-Aminobenzoic acid
 - preferred_term: D-(+)-biotin
   term:
@@ -258,8 +264,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: D-(+)-biotin
 - preferred_term: Nicotinic acid
   term:
@@ -268,8 +274,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
     label: Nicotinic acid
 - preferred_term: Calcium pantothenate
   term:
@@ -278,8 +284,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium pantothenate
 - preferred_term: Pyridoxine hydrochloride
   term:
@@ -288,8 +294,8 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001016
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
     label: Pyridoxine hydrochloride
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
@@ -298,8 +304,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000160
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132751
     label: Thiamine-HCl x 2 H2O
 applications:
 - Microbial cultivation
@@ -325,12 +331,89 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "LuPhet1 medium" to "luphet1_medium" for consistent
     matching
-- timestamp: '2026-04-17T06:29:10.161171+00:00'
+- timestamp: '2026-05-20T06:00:51.052015+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.4'' -> {''min'': 7.2, ''max'': 7.4}'
+- timestamp: '2026-06-05T07:40:22.217078+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 28 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:44.535046+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:33.337830+00:00'
   curator: recipe-merger
   action: Merged 12 duplicate recipes into canonical record
   notes: 'Sources: 16av_medium, 16av_medium_replace_galactose_with_cellobiose, KOMODO_298e_LuPhet1_medium,
     acb90_medium, flglym_medium, for_dsm_8271, gol_chi1_medium, luphet1_medium, lutria3_medium,
     pb90_1_medium, pelobacter_propionicus_medium, veeg4_medium'
+- timestamp: '2026-08-06T03:04:33.337984+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 12 source recipe(s) on fingerprint f95f8174ea929659e0cb871ba38c8514e5bb604c9d9b44266d0a17403f55b34e
+  source: 16av_medium.yaml, 16av_medium_replace_galactose_with_cellobiose.yaml, KOMODO_298e_LuPhet1_medium.yaml,
+    acb90_medium.yaml, flglym_medium.yaml, for_dsm_8271.yaml, gol_chi1_medium.yaml,
+    luphet1_medium.yaml, lutria3_medium.yaml, pb90_1_medium.yaml, pelobacter_propionicus_medium.yaml,
+    veeg4_medium.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/16av_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004770
+  name: 16av_medium
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/acb90_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004772
+  name: acb90_medium
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/flglym_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004765
+  name: flglym_medium
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/for_dsm_8271.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004764
+  name: for_dsm_8271
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/gol_chi1_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004766
+  name: gol_chi1_medium
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/lutria3_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004767
+  name: lutria3_medium
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/pb90_1_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004771
+  name: pb90_1_medium
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/pelobacter_propionicus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004762
+  name: pelobacter_propionicus_medium
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/veeg4_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004773
+  name: veeg4_medium
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 synonyms:
 - name: 16av_medium
   source: KOMODO
@@ -387,4 +470,4 @@ merged_from:
 - pb90_1_medium
 - pelobacter_propionicus_medium
 - veeg4_medium
-merge_fingerprint: caf667eb4072d939fad10e0ae7c28974fb26637dc333667a587629722e4dddc3
+merge_fingerprint: f95f8174ea929659e0cb871ba38c8514e5bb604c9d9b44266d0a17403f55b34e

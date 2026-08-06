@@ -3,8 +3,11 @@ name: anaerobic_azospirillum_medium
 original_name: ANAEROBIC AZOSPIRILLUM MEDIUM
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_range: 7.2-7.4
+ph_range:
+  min: 7.2
+  max: 7.4
 media_term:
   preferred_term: DSMZ Medium 1701
   term:
@@ -15,32 +18,32 @@ ingredients:
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.744681'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '0.319149'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
-    label: Na2SO4
+    label: sodium sulfate
   concentration:
     value: '2.97872'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Na2SO4
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -49,8 +52,8 @@ ingredients:
   concentration:
     value: '1.80851'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -59,8 +62,8 @@ ingredients:
   concentration:
     value: '0.0531915'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: NaCl
   term:
@@ -69,8 +72,8 @@ ingredients:
   concentration:
     value: '10.6383'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Yeast extract
   concentration:
@@ -80,6 +83,9 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: Sodium succinate
   term:
     id: CHEBI:63675
@@ -87,18 +93,18 @@ ingredients:
   concentration:
     value: '162'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001088
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63675
     label: Sodium succinate
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
   concentration:
     value: '50'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 - preferred_term: Na2S x 9 H2O
   term:
@@ -107,8 +113,8 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 - preferred_term: HCl
   term:
@@ -117,8 +123,8 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000150
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
     label: HCl
 - preferred_term: FeCl2 x 4 H2O
   term:
@@ -127,8 +133,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000329
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86249
     label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
@@ -137,8 +143,8 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
     label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -147,18 +153,18 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.006'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -167,8 +173,8 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
@@ -177,8 +183,8 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
     label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -187,8 +193,8 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -197,8 +203,8 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 preparation_steps:
 - step_number: 1
@@ -234,7 +240,26 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ANAEROBIC AZOSPIRILLUM MEDIUM" to "anaerobic_azospirillum_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:02:13.356979+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.4'' -> {''min'': 7.2, ''max'': 7.4}'
+- timestamp: '2026-06-05T07:41:57.482914+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 18 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:14.981680+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:04.659924+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d26b75c88eec68aab103f3bc15fe70c9609f7360a059ad9e5f73f8e90e7c6a3b
+  source: anaerobic_azospirillum_medium.yaml
 high_metal: true
-merge_fingerprint: 8c0b8fc54d5ce785ff3ddcbc43d905269c9468aa560ba55462673182aeff958c
+merge_fingerprint: d26b75c88eec68aab103f3bc15fe70c9609f7360a059ad9e5f73f8e90e7c6a3b
 merged_from:
 - anaerobic_azospirillum_medium

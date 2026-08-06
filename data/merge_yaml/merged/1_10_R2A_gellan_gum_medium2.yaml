@@ -3,6 +3,7 @@ name: 1_10_r2a_gellan_gum_medium2
 original_name: 1/10 R2A gellan gum medium2
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
@@ -24,11 +25,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
   term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4·7H2O
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '2'
@@ -38,9 +39,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: K2HPO4
   concentration:
     value: '0.03'
@@ -50,9 +51,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Sodium pyruvate
   concentration:
     value: '0.03'
@@ -62,9 +63,9 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
-    label: Sodium pyruvate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
 - preferred_term: Gellan gum (if needed)
   concentration:
     value: '15'
@@ -79,14 +80,17 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Soluble starch
   concentration:
     value: '0.05'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Undefined component'
+  term:
+    id: CHEBI:28017
+    label: ''
 - preferred_term: Bacto Yeast Extract (Difco)
   concentration:
     value: '0.05'
@@ -136,6 +140,27 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "1/10 R2A gellan gum medium2" to "1_10_r2a_gellan_gum_medium2"
     for consistent matching
-merge_fingerprint: 31f3180004875220807a61b53f3b3bf9c8d684acf173cf388f7129725072a307
+- timestamp: '2026-06-05T07:40:15.412724+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:12.272134+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:46:42.474082+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:33.513490+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 0fc024c1081146797deb830ca46bd1159dcb43b78242df854aedc5d861db4c31
+  source: 1_10_r2a_gellan_gum_medium2.yaml
+merge_fingerprint: 0fc024c1081146797deb830ca46bd1159dcb43b78242df854aedc5d861db4c31
 merged_from:
 - 1_10_r2a_gellan_gum_medium2

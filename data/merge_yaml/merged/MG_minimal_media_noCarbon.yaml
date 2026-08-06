@@ -1,6 +1,7 @@
 id: CultureMech:015588
 name: MG minimal media noCarbon
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: L-Ascorbic acid
@@ -42,6 +43,9 @@ ingredients:
     value: '0.00486'
     unit: MG_PER_L
   notes: 'CAS: 10025-77-1; MW: 270.3; From ferric malate solution'
+  term:
+    id: CHEBI:30808
+    label: ''
 - preferred_term: D,L-Malic Acid
   concentration:
     value: '0.01207'
@@ -143,8 +147,8 @@ ingredients:
     value: '0.1'
     unit: MG_PER_L
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Wolfe''s vitamin
     mix'
 - preferred_term: 4-Aminobenzoic acid
@@ -230,7 +234,7 @@ ingredients:
     From Wolfe''s vitamin mix'
 description: Defined media for AMB-1 with no carbon source
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: MG minimal media noCarbon
@@ -244,8 +248,27 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015588'
+- timestamp: '2026-05-16T09:04:41.623754+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:52.960288+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:47:15.455734+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:06.322463+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 7f9ff9bf073eaf1dfad829cdbe9fbe833ea0f53334efa100155aa867ceb32197
+  source: mg_minimal_media_nocarbon.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: b06c088c0398e530b01f0bc8e3cc9ca7bd10be4bcfd70e195578964061bfa382
+merge_fingerprint: 7f9ff9bf073eaf1dfad829cdbe9fbe833ea0f53334efa100155aa867ceb32197
 merged_from:
 - mg_minimal_media_nocarbon

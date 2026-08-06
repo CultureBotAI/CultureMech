@@ -1,69 +1,78 @@
-id: CultureMech:002436
+id: CultureMech:007904
 name: chocolate_agar_with_5_sheep_blood
-original_name: CHOCOLATE AGAR WITH  5% SHEEP BLOOD
+original_name: Chocolate Agar With  5% Sheep Blood
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-media_term:
-  preferred_term: JCM Medium J1270
-  term:
-    id: mediadive.medium:J1270
-    label: CHOCOLATE AGAR WITH  5% SHEEP BLOOD
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1270'
 ingredients:
-- preferred_term: Brucella agar
-  term:
-    id: CHEBI:2509
-    label: Brucella agar
+- preferred_term: Distilled water
   concentration:
-    value: '1000'
+    value: '950'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Brucella agar
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Sheep blood
   concentration:
-    value: '100'
+    value: '50'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Mix ingredients except horse blood, autoclave and cool to about 70C.
-    Aseptically add 5% (final) sterile defibrinated horse blood, keep at 70C for 15
-    minutes and cool to about 50C. Mix and quickly dispense into sterile petri dishes.
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Columbia blood agar base (BD-Difco)
+  concentration:
+    value: '44'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M1366
+  term:
+    id: TOGO:M1366
+    label: Chocolate Agar With  5% Sheep Blood
+notes: 'Source: https://togomedium.org/medium/M1366
+
+  Original source: JCM - JCM_M1270
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1270'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:19.243540Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J1270'
-- timestamp: '2026-03-13T06:19:13.297963Z'
+- timestamp: '2026-01-27T06:35:54.439562Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1366'
+- timestamp: '2026-01-28T19:48:34.059512Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:52.372995Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002436'
-- timestamp: '2026-03-17T06:29:58.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:007904'
+- timestamp: '2026-03-17T06:30:37.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:26.399207+00:00'
+- timestamp: '2026-03-17T19:46:10.829897+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CHOCOLATE AGAR WITH  5% SHEEP BLOOD" to "chocolate_agar_with_5_sheep_blood"
+  notes: Normalized name from "Chocolate Agar With  5% Sheep Blood" to "chocolate_agar_with_5_sheep_blood"
     for consistent matching
-- timestamp: '2026-04-17T06:29:56.616980+00:00'
-  curator: recipe-merger
-  action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: brucella_agar, chocolate_agar_with_5_sheep_blood'
-kg_microbe_match: mediadive.medium:12
-synonyms:
-- name: brucella_agar
-  source: MediaDive
-  source_id: mediadive.medium:584
-  original_category: bacterial
-categories:
-- bacterial
+- timestamp: '2026-06-05T07:40:32.719325+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:08.345657+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 83446b3ed14d7f5916a3b03ddb2d2a25028525221cd16eea2990b3022133960b
+  source: TOGO_M1366_Chocolate_Agar_With_5_Sheep_Blood.yaml
+merge_fingerprint: 83446b3ed14d7f5916a3b03ddb2d2a25028525221cd16eea2990b3022133960b
 merged_from:
-- brucella_agar
-- chocolate_agar_with_5_sheep_blood
-merge_fingerprint: 8ec12b7e3497d66c9da6c9ad8cbd5ce155d0eef1446fc2599695e257b84f9d9c
+- TOGO_M1366_Chocolate_Agar_With_5_Sheep_Blood

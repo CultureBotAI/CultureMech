@@ -1,46 +1,48 @@
-id: CultureMech:000563
+id: CultureMech:003830
 name: telmatospirillum_medium
 original_name: TELMATOSPIRILLUM MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
-ph_range: 5.5-6.5
+ph_value: 6.5
+notes: 'pH buffer: H3PO4 | Source: KOMODO ModelSEED | ID: 1126 | DSMZ Medium: 1126
+  (mediadive.medium:1126) | Aerobic: Yes'
 media_term:
-  preferred_term: DSMZ Medium 1126
+  preferred_term: KOMODO Medium 1126
   term:
-    id: mediadive.medium:1126
+    id: komodo.medium:1126
     label: TELMATOSPIRILLUM MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1126.pdf'
 ingredients:
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: CaCl2
   term:
@@ -49,18 +51,18 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
     label: CaCl2
 - preferred_term: MgSO4
   term:
     id: CHEBI:32599
-    label: MgSO4
+    label: magnesium sulfate
   concentration:
     value: '0.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: MgSO4
 - preferred_term: Na-EDTA
   term:
@@ -69,8 +71,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
     label: Na-EDTA
 - preferred_term: FeCl3 x 6 H2O
   term:
@@ -79,8 +81,8 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000218
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86254
     label: FeCl3 x 6 H2O
 - preferred_term: KI
   term:
@@ -99,8 +101,8 @@ ingredients:
   concentration:
     value: '0.0002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -109,18 +111,18 @@ ingredients:
   concentration:
     value: '0.0008'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: ZnSO4
   term:
     id: CHEBI:35176
-    label: ZnSO4
+    label: zinc sulfate
   concentration:
     value: '0.0008'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
     label: ZnSO4
 - preferred_term: H3BO2
   term:
@@ -129,8 +131,8 @@ ingredients:
   concentration:
     value: '0.0001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000920
+  mediaingredientmech_chebi_term:
+    id: CHEBI:38267
     label: H3BO2
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -139,18 +141,18 @@ ingredients:
   concentration:
     value: '0.0001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: CuCl2
   term:
     id: CHEBI:49553
-    label: CuCl2
+    label: copper(II) chloride
   concentration:
     value: '0.0001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000821
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49553
     label: CuCl2
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -159,8 +161,8 @@ ingredients:
   concentration:
     value: '0.0002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: Sodium citrate
   term:
@@ -169,35 +171,63 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
     label: Sodium citrate
-preparation_steps:
-- step_number: 1
-  action: POUR_PLATES
-  description: Prepare the medium anaerobically under nitrogen. Adjust to pH 5.5 -
-    6.5 with 1M H3PO4. Dispense into serum bottles or Hungate tubes (under a nitrogen
-    atmosphere) that can be sealed with rubber stoppers.
+- preferred_term: H3PO4
+  notes: Extracted from recipe notes (pH buffer)
+  data_quality_flags:
+  - extracted_from_notes
+  concentration:
+    value: variable
+    unit: VARIABLE
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:13.455737Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1126'
-- timestamp: '2026-03-13T06:18:56.405336Z'
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1126'
+- timestamp: '2026-02-03T11:19:18.718649'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1126
+- timestamp: '2026-03-13T06:19:22.566173Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000563'
-- timestamp: '2026-03-17T06:30:51.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:003830'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: H3PO4'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:30:54.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:07.486266+00:00'
+- timestamp: '2026-03-17T19:45:36.975041+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "TELMATOSPIRILLUM MEDIUM" to "telmatospirillum_medium"
     for consistent matching
-merge_fingerprint: 8a6621faa3c38260bb0cd8a399937f60b8b367d5e96ecf84e8bcc2173fb7b75f
+- timestamp: '2026-05-16T09:03:00.218638+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:19.191375+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 15 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:43.558600+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 6 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:40.319379+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 28a7df92d5d6432cb30ee3e19ad5a722d92054014cb4f87f5f383bb0a12cfcfc
+  source: KOMODO_1126_TELMATOSPIRILLUM_MEDIUM.yaml
+merge_fingerprint: 28a7df92d5d6432cb30ee3e19ad5a722d92054014cb4f87f5f383bb0a12cfcfc
 merged_from:
-- telmatospirillum_medium
+- KOMODO_1126_TELMATOSPIRILLUM_MEDIUM

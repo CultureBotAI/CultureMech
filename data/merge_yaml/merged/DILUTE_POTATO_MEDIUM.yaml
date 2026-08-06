@@ -3,6 +3,7 @@ name: dilute_potato_medium
 original_name: DILUTE POTATO medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.8
 media_term:
@@ -24,8 +25,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Ca(NO3)2 x 4 H2O
   term:
@@ -34,8 +35,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000586
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86159
     label: Ca(NO3)2 x 4 H2O
 - preferred_term: Na2HPO4
   term:
@@ -44,8 +45,8 @@ ingredients:
   concentration:
     value: '0.12'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4
 - preferred_term: Diced potato
   concentration:
@@ -75,10 +76,32 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "DILUTE POTATO medium" to "dilute_potato_medium" for
     consistent matching
-- timestamp: '2026-04-17T06:29:31.941431+00:00'
+- timestamp: '2026-06-05T07:40:26.377231+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:59.001653+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_789_DILUTE_POTATO_medium, dilute_potato_medium'
+- timestamp: '2026-08-06T03:04:59.001695+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 999c80ef3daedf7701877d35ba83e31c4960ec27f591a5dccdbf2fa97e9b9887
+  source: KOMODO_789_DILUTE_POTATO_medium.yaml, dilute_potato_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/dilute_potato_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001925
+  name: dilute_potato_medium
+  notes: KOMODO record states DSMZ Medium 789 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 categories:
 - bacterial
 merged_from:

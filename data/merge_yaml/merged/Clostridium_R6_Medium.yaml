@@ -3,6 +3,7 @@ name: clostridium_r6_medium
 original_name: Clostridium R6 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Na2S・9H2O
@@ -19,6 +20,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:91248
+    label: ''
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -52,8 +56,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: KH2PO4
   concentration:
@@ -63,9 +67,9 @@ ingredients:
     compound'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Resazurin
   concentration:
@@ -76,8 +80,8 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: Na2HPO4
   concentration:
@@ -88,9 +92,9 @@ ingredients:
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
-    label: Na2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '3'
@@ -110,9 +114,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.006'
@@ -131,9 +135,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '0.063'
@@ -165,12 +169,12 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:59.893000'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Na2S・9H2O; Added default concentration
     for ingredient: L--cysteine・HCl・H2O; Added default concentration for ingredient:
     Carbon dioxide gas; Added default concentration for ingredient: N2; Added default
     concentration for ingredient: Hydrogen gas'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:04:45.497248+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -184,11 +188,11 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010053'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:02.264208'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name; Added default solution
     name; Added default solution name; Added default solution name; Added default
     solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:23.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -198,6 +202,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Clostridium R6 Medium" to "clostridium_r6_medium" for
     consistent matching
+- timestamp: '2026-05-16T09:03:19.787512+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:43.283091+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:51.248790+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:18.104766+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 4098e8bc2dc879130f12c37d753cc117b6c1e8248b77ddbca4529fd9bb0c90e5
+  source: TOGO_M651_Clostridium_R6_Medium.yaml
 solutions:
 - preferred_term: Solution A
   term:
@@ -245,6 +268,6 @@ solutions:
     value: '10'
     unit: G_PER_L
   name: Unknown solution
-merge_fingerprint: 2cfd7f565f2e2ade8b8a0996caed2f6810bebdedd28a02c909c76a20504999a1
+merge_fingerprint: 4098e8bc2dc879130f12c37d753cc117b6c1e8248b77ddbca4529fd9bb0c90e5
 merged_from:
 - TOGO_M651_Clostridium_R6_Medium

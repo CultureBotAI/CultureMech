@@ -3,6 +3,7 @@ name: mmn
 original_name: MMN
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1305
@@ -23,8 +24,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000661
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17992
     label: Sucrose
 - preferred_term: KH2PO4 x 7 H2O
   concentration:
@@ -37,8 +38,8 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaCl2
   term:
@@ -47,8 +48,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
     label: CaCl2
 - preferred_term: FeCl3
   term:
@@ -57,8 +58,8 @@ ingredients:
   concentration:
     value: '0.012'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000705
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30808
     label: FeCl3
 - preferred_term: NaCl
   term:
@@ -67,8 +68,8 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Calcium pantothenate
   term:
@@ -77,8 +78,8 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium pantothenate
 - preferred_term: Agar
   term:
@@ -87,8 +88,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -113,10 +114,33 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "MMN" to "mmn" for consistent matching
-- timestamp: '2026-04-17T06:29:18.407270+00:00'
+- timestamp: '2026-06-05T07:40:20.754322+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:43.023118+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_1305_MMN, mmn'
+- timestamp: '2026-08-06T03:04:43.023169+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 3a329a4a453dc5d86ef7bd3e51d1ae586c5e3ba88bc78744aed98d867821325f
+  source: KOMODO_1305_MMN.yaml, mmn.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/mmn.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000767
+  name: mmn
+  notes: KOMODO record explicitly cites DSMZ Medium 1305; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 1305; local ingredient
+  and concentration signatures match.
 categories:
 - bacterial
 merged_from:

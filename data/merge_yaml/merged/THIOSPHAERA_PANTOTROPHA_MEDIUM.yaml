@@ -3,8 +3,11 @@ name: thiosphaera_pantotropha_medium
 original_name: THIOSPHAERA PANTOTROPHA medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_range: 7.5-8.0
+ph_range:
+  min: 7.5
+  max: 8.0
 media_term:
   preferred_term: KOMODO Medium 356
   term:
@@ -20,28 +23,28 @@ ingredients:
   concentration:
     value: '7.9'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4 x 2 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -50,8 +53,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Yeast extract
   concentration:
@@ -64,8 +67,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: HCl
   term:
@@ -74,8 +77,8 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000150
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
     label: HCl
 - preferred_term: FeCl2 x 4 H2O
   term:
@@ -84,8 +87,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000329
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86249
     label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
@@ -94,8 +97,8 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
     label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -104,18 +107,18 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.006'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -124,8 +127,8 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
@@ -134,8 +137,8 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
     label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -144,8 +147,8 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -154,8 +157,8 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 applications:
 - Microbial cultivation
@@ -181,10 +184,41 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "THIOSPHAERA PANTOTROPHA medium" to "thiosphaera_pantotropha_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:22.534269+00:00'
+- timestamp: '2026-05-20T06:00:51.373554+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.5-8.0'' -> {''min'': 7.5, ''max'': 8.0}'
+- timestamp: '2026-06-05T07:40:22.686543+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 14 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:44.675897+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:47.856801+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_356_THIOSPHAERA_PANTOTROPHA_medium, thiosphaera_pantotropha_medium'
+- timestamp: '2026-08-06T03:04:47.856846+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint f2aadf2457b5ec2382008e3c2a0448407f7f789f2732a9e137560eb62527ec73
+  source: KOMODO_356_THIOSPHAERA_PANTOTROPHA_medium.yaml, thiosphaera_pantotropha_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/thiosphaera_pantotropha_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001455
+  name: thiosphaera_pantotropha_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 356; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 356; local ingredient
+  and concentration signatures match.
 categories:
 - bacterial
 merged_from:

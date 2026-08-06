@@ -3,6 +3,7 @@ name: tap_auto
 original_name: '''TAP (auto'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Orthophosphate
@@ -56,8 +57,8 @@ ingredients:
   concentration:
     value: '0.134'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000165
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64755
     label: EDTA
 - preferred_term: Magnesium
   concentration:
@@ -83,6 +84,9 @@ ingredients:
   concentration:
     value: '20.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:9754
+    label: ''
 - preferred_term: Fe2+
   concentration:
     value: '0.0179'
@@ -119,6 +123,17 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "'TAP (auto" to "tap_auto" for consistent matching
+- timestamp: '2026-06-05T07:41:48.721262+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:57.593762+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint af810fcbbd1feb8632c4fef72b005d6b0fbca5f809a0d8bb76bdfe1624492739
+  source: tap_auto.yaml
 media_term:
   preferred_term: MediaDB Medium 37
   term:
@@ -130,6 +145,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 23b566b0b97b7545adc8644ad8048e884ce3f7a3a6a9845d980125bc7ef80ed6
+merge_fingerprint: af810fcbbd1feb8632c4fef72b005d6b0fbca5f809a0d8bb76bdfe1624492739
 merged_from:
 - tap_auto

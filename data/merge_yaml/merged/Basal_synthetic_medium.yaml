@@ -3,6 +3,7 @@ name: basal_synthetic_medium
 original_name: Basal synthetic medium
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Lactose
@@ -13,8 +14,8 @@ ingredients:
     value: '233.7'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:lcts'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000339
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17716
     label: Lactose
 - preferred_term: Ammonium phosphate
   concentration:
@@ -24,6 +25,9 @@ ingredients:
   concentration:
     value: '11.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -31,13 +35,16 @@ ingredients:
   concentration:
     value: '0.0812'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.072'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.00827'
@@ -49,6 +56,9 @@ ingredients:
   concentration:
     value: '0.0401'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -78,6 +88,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Basal synthetic medium" to "basal_synthetic_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:40:50.580637+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:24.811988+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 32deda9d80444434cd892b901cd7ac51ee3c7a0e5de3ebf2c456b64c731fc57f
+  source: basal_synthetic_medium.yaml
 media_term:
   preferred_term: MediaDB Medium 301
   term:
@@ -89,6 +110,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 16dc750db6ab8ac3931f4c3c5a8ff85610abd79cce89c4616a33177440335f3b
+merge_fingerprint: 32deda9d80444434cd892b901cd7ac51ee3c7a0e5de3ebf2c456b64c731fc57f
 merged_from:
 - basal_synthetic_medium

@@ -1,6 +1,7 @@
 id: CultureMech:015692
 name: R2A_HOMOPIPES
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Peptone
@@ -11,9 +12,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 65072-00-6'
 - preferred_term: Yeast Extract
   concentration:
@@ -67,7 +65,7 @@ ingredients:
   notes: 'CAS: 202185-84-0; MW: 316.39'
 description: Reasoner's 2A media with HOMOPIPES buffer
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: R2A_HOMOPIPES
@@ -81,8 +79,23 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015692'
+- timestamp: '2026-05-16T09:04:42.783154+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:53.603230+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:06:07.671333+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint dd69d9deb4daa558406698d50c0f2b27b891e4a107d81d7b3facf01900d00fd8
+  source: r2a_homopipes.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: 42a1d9b6af55932820716ccb34555d6848c2f93ce85d642cd0957f9de56c683b
+merge_fingerprint: dd69d9deb4daa558406698d50c0f2b27b891e4a107d81d7b3facf01900d00fd8
 merged_from:
 - r2a_homopipes

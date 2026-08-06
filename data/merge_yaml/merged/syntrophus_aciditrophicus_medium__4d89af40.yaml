@@ -1,0 +1,346 @@
+id: CultureMech:003308
+name: syntrophus_aciditrophicus_medium
+original_name: SYNTROPHUS ACIDITROPHICUS MEDIUM
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J960
+  term:
+    id: mediadive.medium:J960
+    label: SYNTROPHUS ACIDITROPHICUS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=960'
+ingredients:
+- preferred_term: Rumen fluid
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: ' ( clarified)'
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '1.0917'
+    unit: G_PER_L
+- preferred_term: Crotonic acid
+  term:
+    id: CHEBI:41131
+    label: Crotonic acid
+  concentration:
+    value: '1.8559'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:41131
+    label: Crotonic acid
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.0010917'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: NaHCO3
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '6.6'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '8'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  concentration:
+    value: '8'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.00025'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
+    label: Biotin
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.0025'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.00125'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.00125'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+- preferred_term: Pantothenic acid
+  term:
+    id: CHEBI:7916
+    label: Pantothenic acid
+  concentration:
+    value: '0.00062'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:7916
+    label: Pantothenic acid
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.0062'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: HCl
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
+    label: HCl
+- preferred_term: FeCl2 x 4 H2O
+  term:
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
+    label: ZnCl2
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: H3BO3
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.19'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.036'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 499 without rumen fluid and trypticase peptone.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.140278Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J960'
+- timestamp: '2026-02-03T11:26:56.781365'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:19.381305Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003308'
+- timestamp: '2026-03-17T19:45:33.329472+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SYNTROPHUS ACIDITROPHICUS MEDIUM" to "syntrophus_aciditrophicus_medium"
+    for consistent matching
+- timestamp: '2026-04-04T18:49:19.712505'
+  curator: copy_referenced_compositions
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (27 ingredients)
+  source: CultureMech:002850
+  notes: Resolved reference by copying from sulfate_free_syntrophomonus_medium (CultureMech:002850)
+- timestamp: '2026-05-16T08:58:16.898641+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(2 keys) -> list(1 entries)
+- timestamp: '2026-06-05T07:41:48.547809+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 25 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:12.421160+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:56.714598+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: sulfate_free_syntrophomonus_medium, syntrophus_aciditrophicus_medium'
+- timestamp: '2026-08-06T03:05:56.714654+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 4d89af40b3ff795023169ef06ef11e3f77208ea32e1f11ce669cf11654808c04
+  source: sulfate_free_syntrophomonus_medium.yaml, syntrophus_aciditrophicus_medium.yaml
+data_quality_flags:
+- resolved_reference
+variant_children:
+- path: data/normalized_yaml/bacterial/sulfate_free_syntrophomonus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002850
+  name: sulfate_free_syntrophomonus_medium
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+synonyms:
+- name: sulfate_free_syntrophomonus_medium
+  source: MediaDive
+  source_id: mediadive.medium:J499
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- sulfate_free_syntrophomonus_medium
+- syntrophus_aciditrophicus_medium
+merge_fingerprint: 4d89af40b3ff795023169ef06ef11e3f77208ea32e1f11ce669cf11654808c04

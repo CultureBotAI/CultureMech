@@ -3,6 +3,7 @@ name: yca_medium
 original_name: YCA Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: CaCl2·2H2O
   concentration:
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: Dry yeast
   concentration:
     value: '10'
@@ -72,6 +73,17 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "YCA Medium" to "yca_medium" for consistent matching
+- timestamp: '2026-06-05T07:41:55.588606+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:02.990697+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 66afd6a7f8399c7647af238ab99a9d8cb7a442b29989b5b951e03faf253c7b11
+  source: yca_medium.yaml
 merge_fingerprint: 66afd6a7f8399c7647af238ab99a9d8cb7a442b29989b5b951e03faf253c7b11
 merged_from:
 - yca_medium

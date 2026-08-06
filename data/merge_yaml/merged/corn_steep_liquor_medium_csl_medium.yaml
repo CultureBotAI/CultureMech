@@ -3,6 +3,7 @@ name: corn_steep_liquor_medium_csl_medium
 original_name: Corn steep liquor medium (CSL medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: KH2PO4
   concentration:
@@ -25,9 +26,9 @@ ingredients:
     compound'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: K2HPO4
   concentration:
@@ -38,9 +39,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: MgCl2.6H2O
   concentration:
     value: '0.4'
@@ -50,9 +51,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: MgCl2.6H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: (NH4)2SO4
   concentration:
     value: '3.1'
@@ -62,9 +63,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: (NH4)2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 - preferred_term: FeCl3.6H2O
   concentration:
     value: '20'
@@ -74,9 +75,9 @@ ingredients:
   term:
     id: CHEBI:86254
     label: iron trichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000218
-    label: FeCl3.6H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86254
+    label: iron trichloride hexahydrate
 - preferred_term: Xylose
   concentration:
     value: '90'
@@ -86,9 +87,9 @@ ingredients:
   term:
     id: CHEBI:18222
     label: xylose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000900
-    label: Xylose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18222
+    label: xylose
 - preferred_term: Corn steep liquor
   concentration:
     value: '10'
@@ -124,6 +125,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Corn steep liquor medium (CSL medium)" to "corn_steep_liquor_medium_csl_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:40:54.870133+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:54.998790+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:29.198119+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint de97a7cb76556a76be2cb79871e03152b396ed77577ec411610b1b73710aac27
+  source: corn_steep_liquor_medium_csl_medium.yaml
 merge_fingerprint: de97a7cb76556a76be2cb79871e03152b396ed77577ec411610b1b73710aac27
 merged_from:
 - corn_steep_liquor_medium_csl_medium

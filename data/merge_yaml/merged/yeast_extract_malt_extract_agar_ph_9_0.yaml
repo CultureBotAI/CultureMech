@@ -3,6 +3,7 @@ name: yeast_extract_malt_extract_agar_ph_9_0
 original_name: YEAST EXTRACT-MALT EXTRACT AGAR (pH 9.0)
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 9.0
 media_term:
@@ -27,8 +28,8 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Agar
   term:
@@ -37,8 +38,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -79,16 +80,33 @@ curation_history:
   source: CultureMech:010528
   notes: Resolved reference by copying from yeast_extract_malt_extract_agar_isp_2
     (CultureMech:010528)
-- timestamp: '2026-04-17T06:29:13.286756+00:00'
+- timestamp: '2026-05-16T08:58:22.266658+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(2 keys) -> list(1 entries)
+- timestamp: '2026-06-05T07:41:57.243457+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:37.184646+00:00'
   curator: recipe-merger
   action: Merged 9 duplicate recipes into canonical record
   notes: 'Sources: JCM_J735_MY_MEDIUM, 1_10_yeast_extract_malt_extract_agar, acidic_yeast_extract_malt_extract_agar_ph_5_0,
     alkaline_yeast_extract_malt_extract_agar, yeast_extract_malt_extract_agar_isp_2,
     yeast_extract_malt_extract_agar_isp_2_ph_8_5, yeast_extract_malt_extract_agar_ph_5_5,
     yeast_extract_malt_extract_agar_ph_6_0, yeast_extract_malt_extract_agar_ph_9_0'
+- timestamp: '2026-08-06T03:04:37.184716+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 9 source recipe(s) on fingerprint a3b8bc6640a5ece0d86455985682c82dbdd0d923f9472ed9d1447cb58e5eab6d
+  source: JCM_J735_MY_MEDIUM.yaml, 1_10_yeast_extract_malt_extract_agar.yaml, acidic_yeast_extract_malt_extract_agar_ph_5_0.yaml,
+    alkaline_yeast_extract_malt_extract_agar.yaml, yeast_extract_malt_extract_agar_isp_2.yaml,
+    yeast_extract_malt_extract_agar_isp_2_ph_8_5.yaml, yeast_extract_malt_extract_agar_ph_5_5.yaml,
+    yeast_extract_malt_extract_agar_ph_6_0.yaml, yeast_extract_malt_extract_agar_ph_9_0.yaml
 data_quality_flags:
-  incomplete_composition: false
-  resolved_reference: true
+- resolved_reference
 synonyms:
 - name: my_medium
   source: MediaDive

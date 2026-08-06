@@ -4,6 +4,7 @@ original_name: '804'
 category: bacterial
 description: 804. NBRC 803.
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Hipolypepton*5gYeast extract5gGlucose5gLactose5gTween 800.5gMgSO4·7H2O1gDistilled
@@ -40,11 +41,20 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007494'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:45.901757'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Hipolypepton*5gYeast extract5gGlucose5gLactose5gTween
     800.5gMgSO4·7H2O1gDistilled water1LAgar (if needed)15gpH 6.5 - 6.8*Wako Pure Chemical
     Ind., Ltd., Osaka, Japan.'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-05-16T09:03:06.706715+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:05:04.686915+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 875c7f11cdb6d5b4d255fecb66ff731ad05a39104c872be2b4267ec087651c70
+  source: NBRC_804.yaml
 merge_fingerprint: 875c7f11cdb6d5b4d255fecb66ff731ad05a39104c872be2b4267ec087651c70
 merged_from:
 - NBRC_804

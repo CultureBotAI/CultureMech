@@ -4,6 +4,7 @@ original_name: '1210'
 category: bacterial
 description: 1210. NBRC 1209.
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Bacto Yeast Extract (Difco)2.5gBacto Proteose Peptone No. 3 (Difco)2.5gBacto
@@ -41,12 +42,21 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007464'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:45.820559'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Bacto Yeast Extract (Difco)2.5gBacto
     Proteose Peptone No. 3 (Difco)2.5gBacto Casamino Acids (Difco)2.5gGlucose2.5gSoluble
     starch2.5gSodium pyruvate1.5gK2HPO41.5gMgSO4·7H2O0.25gAgar (if needed)15gDistilled
     water1LpH 7.2+/-0.2'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-05-16T09:03:06.603934+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:05:04.620502+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 270e024ca7f42caa0d0ff66bd2d8114cd65a1f0a7b238cf9aeca3ce85f7a66c2
+  source: NBRC_1210.yaml
 merge_fingerprint: 270e024ca7f42caa0d0ff66bd2d8114cd65a1f0a7b238cf9aeca3ce85f7a66c2
 merged_from:
 - NBRC_1210

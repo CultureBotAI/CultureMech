@@ -3,6 +3,7 @@ name: tryptone_yeast_extract_salt_tyes_broth
 original_name: tryptone yeast extract salt (TYES) broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: tryptone yeast extract salt (TYES) broth
@@ -31,6 +32,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "tryptone yeast extract salt (TYES) broth" to "tryptone_yeast_extract_salt_tyes_broth"
     for consistent matching
+- timestamp: '2026-08-06T03:06:02.111586+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 766b1735e426601c8fe98110b07d1b9faf9d77c15d098076be54285b1aaed585
+  source: tryptone_yeast_extract_salt_tyes_broth.yaml
 merge_fingerprint: 766b1735e426601c8fe98110b07d1b9faf9d77c15d098076be54285b1aaed585
 merged_from:
 - tryptone_yeast_extract_salt_tyes_broth

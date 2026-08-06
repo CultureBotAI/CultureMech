@@ -3,6 +3,7 @@ name: minimal_medium_a_mma
 original_name: Minimal medium A (MMA)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Mg2SO4.7H2O
   concentration:
@@ -34,9 +35,9 @@ ingredients:
     compound'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: K2HPO4
   concentration:
@@ -47,9 +48,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: (NH4)2SO4
   concentration:
     value: '1'
@@ -59,9 +60,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: (NH4)2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 - preferred_term: Glycerol
   concentration:
     value: '0.2'
@@ -69,10 +70,10 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
     component'
   term:
-    id: CHEBI:15978
-    label: sn-glycerol 3-phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000588
+    id: CHEBI:17754
+    label: Glycerol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: Citric acid
   concentration:
@@ -82,9 +83,9 @@ ingredients:
   term:
     id: CHEBI:53258
     label: sodium citrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
-    label: Citric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
+    label: sodium citrate
 media_term:
   preferred_term: TOGO Medium M2196
   term:
@@ -115,6 +116,27 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Minimal medium A (MMA)" to "minimal_medium_a_mma" for
     consistent matching
-merge_fingerprint: 0b357cf23164f443d9a98fb83dd03d21f61ae12eea92ceeb4eba5ce1db3d4cc1
+- timestamp: '2026-06-05T07:41:34.659590+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:48.494216+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:47:08.066473+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:46.331657+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 8eba133f81f7fcec758db8dfb7d54353e0ff8463421804d07f1d4c3319e0a8b7
+  source: minimal_medium_a_mma.yaml
+merge_fingerprint: 8eba133f81f7fcec758db8dfb7d54353e0ff8463421804d07f1d4c3319e0a8b7
 merged_from:
 - minimal_medium_a_mma

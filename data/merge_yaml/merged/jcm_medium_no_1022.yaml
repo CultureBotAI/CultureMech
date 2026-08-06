@@ -3,6 +3,7 @@ name: jcm_medium_no_1022
 original_name: JCM MEDIUM No. 1022
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 8.0
 media_term:
@@ -16,12 +17,6 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -37,9 +32,9 @@ ingredients:
   term:
     id: CHEBI:53258
     label: sodium citrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
-    label: Trisodium citrate x 2 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
+    label: sodium citrate
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -47,8 +42,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -57,8 +52,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: NaCl
   term:
@@ -67,8 +62,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Agar
   term:
@@ -77,8 +72,8 @@ ingredients:
   concentration:
     value: '18'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -108,6 +103,23 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "JCM MEDIUM No. 1022" to "jcm_medium_no_1022" for consistent
     matching
-merge_fingerprint: 7b18f220456bdcab7560ccafbffbe05298062b8c2e8122bc649a8fd950996ac4
+- timestamp: '2026-06-05T07:41:09.771605+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:40.165212+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:05:38.916872+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint a7af0995d74275ceb89bbf7272642249a2efa6e1c2c44161adb30742ec36a309
+  source: jcm_medium_no_1022.yaml
+merge_fingerprint: a7af0995d74275ceb89bbf7272642249a2efa6e1c2c44161adb30742ec36a309
 merged_from:
 - jcm_medium_no_1022

@@ -1,6 +1,7 @@
 id: CultureMech:015733
 name: RPMI with Fetal bovine serum Conditioned
-medium_type: DEFINED
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Glycine
@@ -221,8 +222,8 @@ ingredients:
     value: '1'
     unit: MG_PER_L
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: Pyridoxine HCl
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-56-0; MW: 205.64'
 - preferred_term: Riboflavin
   concentration:
@@ -330,7 +331,7 @@ ingredients:
 description: RPMI 1640 Medium conditioned with Mesenchymal Stromal Cells grown for
   2 days
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: RPMI with Fetal bovine serum Conditioned
@@ -344,20 +345,35 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015733'
-- timestamp: '2026-04-17T06:30:31.676588+00:00'
+- timestamp: '2026-05-16T09:04:43.260088+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:54.046985+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:06:08.231247+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: rpmi_with_fetal_bovine_serum, rpmi_with_fetal_bovine_serum_conditioned'
+- timestamp: '2026-08-06T03:06:08.231329+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 10127a4346e1cf66d74382fcecc861f81e032ebbdd84c7ca3f4a0fc4a6c5d00f
+  source: rpmi_with_fetal_bovine_serum.yaml, rpmi_with_fetal_bovine_serum_conditioned.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 original_name: RPMI with Fetal bovine serum Conditioned
 synonyms:
 - name: RPMI with Fetal bovine serum
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 categories:
-- SPECIALIZED
+- specialized
 merged_from:
 - rpmi_with_fetal_bovine_serum
 - rpmi_with_fetal_bovine_serum_conditioned
-merge_fingerprint: d5081d24b688b632de2dc8a1fa4d497a0a40b859534fa6187aa1112ddb2ac8f9
+merge_fingerprint: 10127a4346e1cf66d74382fcecc861f81e032ebbdd84c7ca3f4a0fc4a6c5d00f

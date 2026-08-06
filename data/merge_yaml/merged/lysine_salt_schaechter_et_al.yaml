@@ -3,6 +3,7 @@ name: lysine_salt_schaechter_et_al
 original_name: Lysine salt; Schaechter et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: L-Lysine
@@ -13,18 +14,24 @@ ingredients:
     value: '0.957658'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:lys-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000318
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18019
     label: L-Lysine
 - preferred_term: Citrate
   concentration:
     value: '5.20497'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '28.0899'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Potassium chloride
   concentration:
     value: '9.92605'
@@ -32,9 +39,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -42,8 +49,8 @@ ingredients:
   concentration:
     value: '0.405729'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Sodium ammonium phosphate
   concentration:
@@ -82,6 +89,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Lysine salt; Schaechter et al" to "lysine_salt_schaechter_et_al"
     for consistent matching
+- timestamp: '2026-06-05T07:41:11.576601+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:40.699962+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 5a9182edd7c64b0788a3c21a1e3f555c686ab343b3ab3ba7f0100bc3e093427c
+  source: lysine_salt_schaechter_et_al.yaml
 media_term:
   preferred_term: MediaDB Medium 236
   term:
@@ -93,6 +111,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 7daafe48d6d57a23c9940cf808b3b116b69fcd502f19b08c4285363c53123c3b
+merge_fingerprint: 5a9182edd7c64b0788a3c21a1e3f555c686ab343b3ab3ba7f0100bc3e093427c
 merged_from:
 - lysine_salt_schaechter_et_al

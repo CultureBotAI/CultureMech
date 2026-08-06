@@ -3,6 +3,7 @@ name: html_mj_anhox_no_sub_3_sub_with_thiosulfate_medium_html
 original_name: <html>MJ/Anhox-NO<sub>3</sub> With Thiosulfate Medium</html>
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: NH4Cl
   concentration:
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: NaHCO3
   concentration:
     value: '2'
@@ -38,9 +39,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: NaNO3
   concentration:
     value: '0.85'
@@ -50,8 +51,8 @@ ingredients:
   term:
     id: CHEBI:63005
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000388
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
     label: NaNO3
 - preferred_term: Na2SiO3
   concentration:
@@ -105,10 +106,10 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:57.915005'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Hydrogen gas'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-02-06T05:10:41.008083Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
@@ -123,9 +124,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009650'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:00.027058'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:31.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -135,6 +136,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "<html>MJ/Anhox-NO<sub>3</sub> With Thiosulfate Medium</html>"
     to "html_mj_anhox_no_sub_3_sub_with_thiosulfate_medium_html" for consistent matching
+- timestamp: '2026-05-16T09:03:37.381300+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:41:08.820636+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:59.851976+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:37.959175+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 61993c7a16834169a0c11cbe3ce2c57f33a44b49d34e2135859873b84228bf6e
+  source: html_mj_anhox_no_sub_3_sub_with_thiosulfate_medium_html.yaml
 solutions:
 - preferred_term: Trace vitamins (see Medium [M190])
   composition: []

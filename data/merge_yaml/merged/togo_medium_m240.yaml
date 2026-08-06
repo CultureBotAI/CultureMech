@@ -3,6 +3,7 @@ name: togo_medium_m240
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Cow manure
   concentration:
@@ -30,9 +31,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 media_term:
   preferred_term: TOGO Medium M240
   term:
@@ -67,6 +68,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TOGO Medium M240" to "togo_medium_m240" for consistent
     matching
+- timestamp: '2026-06-05T07:41:53.586508+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:01.320723+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 8cc50dea3c4ee763be38bad4f4cb8ff31f68bd0ec0f60eac554c7d4e84f87e4c
+  source: togo_medium_m240.yaml
 merge_fingerprint: 8cc50dea3c4ee763be38bad4f4cb8ff31f68bd0ec0f60eac554c7d4e84f87e4c
 merged_from:
 - togo_medium_m240

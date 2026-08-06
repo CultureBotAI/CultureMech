@@ -3,6 +3,7 @@ name: mm_succinate_without_biotin_dunn_et_al
 original_name: MM-Succinate without biotin; Dunn et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Succinate
@@ -13,17 +14,23 @@ ingredients:
     value: '30.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:succ'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000420
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26806
     label: Succinate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.360425'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '1.2629'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -31,8 +38,8 @@ ingredients:
   concentration:
     value: '0.000331323'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Magnesium sulfate
   term:
@@ -41,8 +48,8 @@ ingredients:
   concentration:
     value: '0.40572'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: '''Iron(III'
   concentration:
@@ -55,9 +62,9 @@ ingredients:
   term:
     id: CHEBI:64220
     label: monosodium glutamate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000432
-    label: Sodium Glutamate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64220
+    label: monosodium glutamate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -91,6 +98,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MM-Succinate without biotin; Dunn et al" to "mm_succinate_without_biotin_dunn_et_al"
     for consistent matching
+- timestamp: '2026-06-05T07:41:35.311846+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:46.956774+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 5c6c6a11fb3710e1739eb226a256055e7cb4cb7a9ebc6f720e0cdfb0dc9dd96a
+  source: mm_succinate_without_biotin_dunn_et_al.yaml
 media_term:
   preferred_term: MediaDB Medium 151
   term:
@@ -102,6 +120,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: fbc423af4d01c357d7a8204c28c5c20008ff29693ed6977bf04a07aeffea64f4
+merge_fingerprint: 5c6c6a11fb3710e1739eb226a256055e7cb4cb7a9ebc6f720e0cdfb0dc9dd96a
 merged_from:
 - mm_succinate_without_biotin_dunn_et_al

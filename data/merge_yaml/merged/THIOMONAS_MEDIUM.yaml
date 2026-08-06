@@ -1,140 +1,124 @@
-id: CultureMech:001460
+id: CultureMech:002962
 name: thiomonas_medium
 original_name: THIOMONAS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_value: 6.0
+ph_value: 7.5
 media_term:
-  preferred_term: DSMZ Medium 35a
+  preferred_term: JCM Medium J615
   term:
-    id: mediadive.medium:35a
+    id: mediadive.medium:J615
     label: THIOMONAS MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium35a.pdf'
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=615'
 ingredients:
-- preferred_term: NH4Cl
-  term:
-    id: CHEBI:31206
-    label: NH4Cl
+- preferred_term: Yeast extract
   concentration:
-    value: '0.111111'
+    value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-  concentration:
-    value: '3.33333'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: Agar
-  concentration:
-    value: '22.2222'
-    unit: G_PER_L
-  notes: Optional ingredient (for solid medium)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
-- preferred_term: MgCl2 x 6 H2O
-  term:
-    id: CHEBI:86345
-    label: MgCl2 x 6 H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: MgCl2 x 6 H2O
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '1.4'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
 - preferred_term: Na2S2O3 x 5 H2O
   term:
     id: CHEBI:32150
     label: Na2S2O3 x 5 H2O
   concentration:
-    value: '250'
+    value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000492
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32150
     label: Na2S2O3 x 5 H2O
-- preferred_term: Yeast extract
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
   concentration:
-    value: '100'
+    value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '4.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: Na2HPO4
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
 preparation_steps:
 - step_number: 1
-  action: MIX
-  description: Solutions A, B and D are sterilized separately by autoclaving. Solution
-    C is sterilized by filtration. After autoclaving the solutions A and B are combined
-    and then supplemented with the sterile solutions C and D. Best growth is observed
-    in the syneresis water of slant agar tubes.
+  action: ADJUST_PH
+  description: Adjust pH to 6.0.
 - step_number: 2
   action: ADJUST_PH
-  description: Adjust pH to 6.0 with NaOH.
+  description: 'Comment: For strain JCM 14806, adjust pH to 7.5.'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:10.020174Z'
+- timestamp: '2026-01-26T17:53:17.093469Z'
   curator: mediadive-import
   action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 35a'
-- timestamp: '2026-03-13T06:19:04.379961Z'
+  notes: 'Source: JCM, ID: J615'
+- timestamp: '2026-03-13T06:19:16.838927Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:001460'
-- timestamp: '2026-03-17T06:30:56.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:002962'
+- timestamp: '2026-03-17T06:30:11.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:16.394420+00:00'
+- timestamp: '2026-03-17T19:45:30.449397+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "THIOMONAS MEDIUM" to "thiomonas_medium" for consistent
     matching
-- timestamp: '2026-04-17T06:30:04.243495+00:00'
-  curator: recipe-merger
-  action: Merged 5 duplicate recipes into canonical record
-  notes: 'Sources: for_dsm_22701, for_dsm_612, thiobacillus_thiooxidans_medium, thiomonas_intermedia_medium,
-    thiomonas_medium'
-synonyms:
-- name: for_dsm_22701
-  source: KOMODO
-  source_id: komodo.medium:35a.1
-  original_category: bacterial
-- name: for_dsm_612
-  source: KOMODO
-  source_id: komodo.medium:35.1
-  original_category: bacterial
-- name: thiobacillus_thiooxidans_medium
-  source: KOMODO
-  source_id: komodo.medium:35
-  original_category: bacterial
-- name: thiomonas_intermedia_medium
-  source: KOMODO
-  source_id: komodo.medium:35a
-  original_category: bacterial
-categories:
-- bacterial
+- timestamp: '2026-06-05T07:40:17.521627+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:43.049240+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:37.016411+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint a3d96f9515be8172850c58eab61024082e997583aff7131d3b526d3f9b87c894
+  source: JCM_J615_THIOMONAS_MEDIUM.yaml
+merge_fingerprint: a3d96f9515be8172850c58eab61024082e997583aff7131d3b526d3f9b87c894
 merged_from:
-- for_dsm_22701
-- for_dsm_612
-- thiobacillus_thiooxidans_medium
-- thiomonas_intermedia_medium
-- thiomonas_medium
-merge_fingerprint: 852ccedc05d68569751efd7908b7e519c6010c1664f365f02ef7b95e83310ae1
+- JCM_J615_THIOMONAS_MEDIUM

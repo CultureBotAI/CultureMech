@@ -3,6 +3,7 @@ name: chemically_de_ned_minimal_medium_mm
 original_name: Chemically-deﬁned minimal medium(MM)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: MgSO4.7H2O
@@ -14,9 +15,9 @@ ingredients:
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4.7H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: NaCl
   concentration:
     value: '0.05'
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: KH2PO4
   concentration:
     value: '0.1'
@@ -37,9 +38,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: K2HPO4
   concentration:
@@ -50,9 +51,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: (NH4)2SO4
   concentration:
     value: '0.1'
@@ -62,9 +63,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: (NH4)2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 - preferred_term: Pantothenate
   concentration:
     value: '0.5'
@@ -74,8 +75,8 @@ ingredients:
   term:
     id: CHEBI:16454
     label: Pantothenate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000356
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16454
     label: Pantothenate
 - preferred_term: Glucose
   concentration:
@@ -86,9 +87,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Distilled water
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
@@ -98,8 +99,8 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 media_term:
   preferred_term: TOGO Medium M2902
@@ -119,9 +120,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.795415'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Distilled water'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:06.198331Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -135,6 +136,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Chemically-deﬁned minimal medium(MM)" to "chemically_de_ned_minimal_medium_mm"
     for consistent matching
+- timestamp: '2026-05-16T09:03:27.125001+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:53.058499+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:54.449050+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:27.216942+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 3364407aaf6bd0dced7fa7210932f481c33066aabd5a890d66e7a3ae2f5f4ef5
+  source: chemically_de_ned_minimal_medium_mm.yaml
 merge_fingerprint: 3364407aaf6bd0dced7fa7210932f481c33066aabd5a890d66e7a3ae2f5f4ef5
 merged_from:
 - chemically_de_ned_minimal_medium_mm

@@ -3,16 +3,23 @@ name: cdm_for_continuous_cultivation
 original_name: CDM for Continuous Cultivation
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.02482'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Nickel chloride
   concentration:
     value: '0.001052'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34887
+    label: ''
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -20,13 +27,16 @@ ingredients:
   concentration:
     value: '126.2'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.6802'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -34,13 +44,16 @@ ingredients:
   concentration:
     value: '17.11'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.005006'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -48,9 +61,9 @@ ingredients:
   concentration:
     value: '0.02487'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -58,13 +71,16 @@ ingredients:
   concentration:
     value: '4.057'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '11.02'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
@@ -72,9 +88,9 @@ ingredients:
   concentration:
     value: '55.24'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -104,10 +120,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CDM for Continuous Cultivation" to "cdm_for_continuous_cultivation"
     for consistent matching
-- timestamp: '2026-04-17T06:29:57.410793+00:00'
+- timestamp: '2026-06-05T07:40:52.754535+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:26.904227+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: cdm_for_batch_cultivation, cdm_for_continuous_cultivation'
+- timestamp: '2026-08-06T03:05:26.904263+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint b04038b84e6acaabb5e32c4f8bb9f06cf77eef329ba9b3e7b8642164531ef8e5
+  source: cdm_for_batch_cultivation.yaml, cdm_for_continuous_cultivation.yaml
 media_term:
   preferred_term: MediaDB Medium 343
   term:
@@ -119,6 +146,19 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+parent_media:
+  path: data/normalized_yaml/bacterial/cdm_for_batch_cultivation.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:007211
+  name: cdm_for_batch_cultivation
+  notes: Reviewed defined CDM cultivation pair; continuous-cultivation child shares
+    the parent formulation with glucose and ammonium sulfate concentration changes
+    as the curated variant axis.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Reviewed CDM batch/continuous cultivation records; child keeps the same defined
+  base formulation but lowers glucose from 126.2 to 40.37 mM and ammonium sulfate
+  from 55.24 to 37.84 mM while the remaining parsed concentrations match.
 synonyms:
 - name: cdm_for_batch_cultivation
   source: unknown
@@ -129,4 +169,4 @@ categories:
 merged_from:
 - cdm_for_batch_cultivation
 - cdm_for_continuous_cultivation
-merge_fingerprint: 43ba0a92d346af928ca498bdcf67313f938540f6bff1f4e09067bb84b2c2d85f
+merge_fingerprint: b04038b84e6acaabb5e32c4f8bb9f06cf77eef329ba9b3e7b8642164531ef8e5

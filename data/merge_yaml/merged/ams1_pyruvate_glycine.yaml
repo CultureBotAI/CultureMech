@@ -1,10 +1,22 @@
-id: CultureMech:007382
+id: CultureMech:007383
 name: ams1_pyruvate_glycine
 original_name: '''AMS1 (Pyruvate+Glycine'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
+- preferred_term: Thiamine
+  term:
+    id: CHEBI:26948
+    label: Thiamine
+  concentration:
+    value: '0.06'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:thm'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000898
+    label: Thiamine
 - preferred_term: Pyruvate
   term:
     id: CHEBI:15361
@@ -13,8 +25,8 @@ ingredients:
     value: '1.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pyr'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000367
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15361
     label: Pyruvate
 - preferred_term: Biotin
   term:
@@ -24,24 +36,26 @@ ingredients:
     value: 4e-06
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
-- preferred_term: Sodium bicarbonate
+- preferred_term: Nickel chloride
   concentration:
-    value: '6.0'
+    value: 1e-06
     unit: MILLIMOLAR
   term:
-    id: CHEBI:32139
-    label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: Sodium bicarbonate
-- preferred_term: 4-Amino-5-hydroxymethyl-2-methylpyrimidine
+    id: CHEBI:34887
+    label: nickel dichloride
+- preferred_term: Magnesium chloride
   concentration:
-    value: 1e-05
+    value: '27.0'
     unit: MILLIMOLAR
-  notes: 'Cross-references: KEGG:4ahmmp'
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Glycine
   term:
     id: CHEBI:15428
@@ -50,105 +64,32 @@ ingredients:
     value: '0.05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gly'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000244
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15428
     label: Glycine
+- preferred_term: Sodium bicarbonate
+  concentration:
+    value: '6.0'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32139
+    label: ''
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: Sodium bicarbonate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '10.0'
     unit: MILLIMOLAR
-- preferred_term: Magnesium chloride
-  concentration:
-    value: '27.0'
-    unit: MILLIMOLAR
   term:
-    id: CHEBI:86345
-    label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium chloride
-- preferred_term: Nickel chloride
-  concentration:
-    value: 1e-06
-    unit: MILLIMOLAR
-- preferred_term: Sodium chloride
-  term:
-    id: CHEBI:26710
-    label: Sodium Chloride
-  concentration:
-    value: '481.0'
-    unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
-- preferred_term: Potassium chloride
-  concentration:
-    value: '9.0'
-    unit: MILLIMOLAR
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
-- preferred_term: '''Iron(III'
-  concentration:
-    value: '0.000117'
-    unit: MILLIMOLAR
-- preferred_term: Sodium selenite
-  concentration:
-    value: 1e-06
-    unit: MILLIMOLAR
-- preferred_term: Ammonium sulfate
-  term:
-    id: CHEBI:62946
-    label: Ammonium Sulfate
-  concentration:
-    value: '0.4'
-    unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium sulfate
-- preferred_term: Manganese chloride
-  concentration:
-    value: 9e-06
-    unit: MILLIMOLAR
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: 3e-07
     unit: MILLIMOLAR
   term:
     id: CHEBI:75215
-    label: ''
-- preferred_term: DL-methionine
-  term:
-    id: CHEBI:16811
-    label: DL-Methionine
-  concentration:
-    value: '0.05'
-    unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000774
-    label: DL-methionine
-- preferred_term: Zinc sulfate
-  term:
-    id: CHEBI:35176
-    label: Zinc Sulfate
-  concentration:
-    value: 8e-07
-    unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
-- preferred_term: Sodium dihydrogen phosphate
-  concentration:
-    value: '0.05'
-    unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: Sodium dihydrogen phosphate
-  term:
-    id: CHEBI:37583
     label: ''
 - preferred_term: Magnesium sulfate
   term:
@@ -157,9 +98,36 @@ ingredients:
   concentration:
     value: '28.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
+- preferred_term: DL-methionine
+  term:
+    id: CHEBI:16811
+    label: DL-Methionine
+  concentration:
+    value: '0.05'
+    unit: MILLIMOLAR
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16811
+    label: DL-Methionine
+- preferred_term: Sodium selenite
+  concentration:
+    value: 1e-06
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:48843
+    label: ''
+- preferred_term: Potassium chloride
+  concentration:
+    value: '9.0'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Cobalt chloride
   concentration:
     value: 5e-07
@@ -167,6 +135,57 @@ ingredients:
   term:
     id: CHEBI:35696
     label: ''
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+  concentration:
+    value: '481.0'
+    unit: MILLIMOLAR
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+- preferred_term: Sodium dihydrogen phosphate
+  concentration:
+    value: '0.05'
+    unit: MILLIMOLAR
+  mediaingredientmech_chebi_term:
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
+  term:
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
+- preferred_term: Ammonium sulfate
+  term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
+  concentration:
+    value: '0.4'
+    unit: MILLIMOLAR
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
+- preferred_term: Manganese chloride
+  concentration:
+    value: 9e-06
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
+- preferred_term: Zinc sulfate
+  term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
+  concentration:
+    value: 8e-07
+    unit: MILLIMOLAR
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
+- preferred_term: '''Iron(III'
+  concentration:
+    value: '0.000117'
+    unit: MILLIMOLAR
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -178,32 +197,50 @@ preparation_steps:
   action: FILTER_STERILIZE
   description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
 curation_history:
-- timestamp: '2026-01-27T07:21:47.035033Z'
+- timestamp: '2026-01-27T07:21:47.043771Z'
   curator: mediadb-import
   action: Imported from MediaDB
-  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 475, Reference:
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 476, Reference:
     Mazumdar et al. (2014) PLOS One'
-- timestamp: '2026-01-28T19:48:33.473703Z'
+- timestamp: '2026-01-28T19:48:09.793865Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:19:48.551101Z'
+- timestamp: '2026-03-13T06:19:48.560546Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:007382'
-- timestamp: '2026-03-17T06:30:36.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:007383'
+- timestamp: '2026-03-17T06:29:45.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:06.894084+00:00'
+- timestamp: '2026-03-17T19:46:06.903832+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "'AMS1 (Pyruvate+Glycine" to "ams1_pyruvate_glycine"
     for consistent matching
+- timestamp: '2026-06-05T07:40:29.459239+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 12 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-09T01:42:16.558815+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (shared-id regrounding audit, G21/G22/G24)
+  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more
+    ingredient groundings on this record that had been collapsed onto a chemically
+    non-specific or shared CHEBI id were re-grounded to the correct chemically-specific
+    term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
+- timestamp: '2026-08-06T03:05:04.509540+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint caa3061b9d1ae729ef9668dd9691540ee7caa226a6b4a445a33286aa5f0e43c8
+  source: MEDIADB_476_AMS1_Pyruvate_Glycine.yaml
 media_term:
-  preferred_term: MediaDB Medium 475
+  preferred_term: MediaDB Medium 476
   term:
-    id: MEDIADB:475
+    id: MEDIADB:476
     label: '''AMS1 (Pyruvate+Glycine'
 notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
   Reference: https://mediadb.systemsbiology.net/'
@@ -212,6 +249,6 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
-merge_fingerprint: 5be21a1928dbf3eabf808e38b2388282a35f296e88378c713827afe745da28ed
+merge_fingerprint: caa3061b9d1ae729ef9668dd9691540ee7caa226a6b4a445a33286aa5f0e43c8
 merged_from:
-- ams1_pyruvate_glycine
+- MEDIADB_476_AMS1_Pyruvate_Glycine

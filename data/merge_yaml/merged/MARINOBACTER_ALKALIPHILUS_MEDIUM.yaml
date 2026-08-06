@@ -1,66 +1,100 @@
-id: CultureMech:002748
+id: CultureMech:009769
 name: marinobacter_alkaliphilus_medium
-original_name: MARINOBACTER ALKALIPHILUS MEDIUM
+original_name: Marinobacter Alkaliphilus Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-media_term:
-  preferred_term: JCM Medium J392
-  term:
-    id: mediadive.medium:J392
-    label: MARINOBACTER ALKALIPHILUS MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=392'
 ingredients:
-- preferred_term: Marine broth 2216
+- preferred_term: Distilled water
   concentration:
-    value: '37.4'
+    value: '1'
     unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Na2CO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
 - preferred_term: Na2SiO3
   concentration:
     value: '0.05'
     unit: G_PER_L
-- preferred_term: Na2CO3
-  term:
-    id: CHEBI:29377
-    label: Na2CO3
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: Marine broth 2216 (BD-Difco)
   concentration:
-    value: '1'
+    value: '37.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
-    label: Na2CO3
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Dissolve Marine broth 2216 in 900 ml distilled water and autoclave.
-    Separately dissolve Na2SiO3 and Na2CO3 in 100 ml distilled water, autoclave, and
-    add to the medium.
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M388
+  term:
+    id: TOGO:M388
+    label: Marinobacter Alkaliphilus Medium
+notes: 'Source: https://togomedium.org/medium/M388
+
+  Original source: JCM - JCM_M392
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=392'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:16.489889Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J392'
-- timestamp: '2026-02-06T05:10:36.353871Z'
+- timestamp: '2026-01-27T06:35:54.963135Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M388'
+- timestamp: '2026-01-28T19:48:12.345124Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-06T05:10:18.736633Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
-- timestamp: '2026-03-13T06:19:15.457417Z'
+- timestamp: '2026-03-13T06:20:08.748468Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002748'
-- timestamp: '2026-03-17T06:30:23.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:009769'
+- timestamp: '2026-03-17T06:29:51.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:28.857972+00:00'
+- timestamp: '2026-03-17T19:46:27.744641+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MARINOBACTER ALKALIPHILUS MEDIUM" to "marinobacter_alkaliphilus_medium"
+  notes: Normalized name from "Marinobacter Alkaliphilus Medium" to "marinobacter_alkaliphilus_medium"
     for consistent matching
-kg_microbe_match: mediadive.medium:634c
-merge_fingerprint: b7770bab4ffb3421201d5f0fce9595b22938015b8aa3415cf078bb58cb7ebbd8
+- timestamp: '2026-06-05T07:40:40.963998+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:50.498427+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:15.593067+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 6f75f449db0018b03511f4f2a29b9d96bf92450480cd1235e72ca8fd99091542
+  source: TOGO_M388_Marinobacter_Alkaliphilus_Medium.yaml
+merge_fingerprint: 6f75f449db0018b03511f4f2a29b9d96bf92450480cd1235e72ca8fd99091542
 merged_from:
-- marinobacter_alkaliphilus_medium
+- TOGO_M388_Marinobacter_Alkaliphilus_Medium

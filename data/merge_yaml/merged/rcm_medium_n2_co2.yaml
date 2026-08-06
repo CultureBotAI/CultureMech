@@ -3,6 +3,7 @@ name: rcm_medium_n2_co2
 original_name: RCM MEDIUM (N2/CO2)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.8
 media_term:
@@ -20,6 +21,9 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: Sodium carbonate
   concentration:
     value: '1'
@@ -27,9 +31,9 @@ ingredients:
   term:
     id: CHEBI:29377
     label: sodium carbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
-    label: Sodium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -65,12 +69,33 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "RCM MEDIUM (N2/CO2)" to "rcm_medium_n2_co2" for consistent
     matching
-- timestamp: '2026-04-17T06:29:29.865305+00:00'
+- timestamp: '2026-06-05T07:41:43.913401+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:56.467111+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_634_RCM_medium, rcm_medium_halophilic_clostridia, rcm_medium_modified,
     rcm_medium_n2_co2'
+- timestamp: '2026-08-06T03:04:56.467160+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 4 source recipe(s) on fingerprint be022f10bb653cbcc33a85471b432aca2525c18484815e2211f18b18dd844d53
+  source: KOMODO_634_RCM_medium.yaml, rcm_medium_halophilic_clostridia.yaml, rcm_medium_modified.yaml,
+    rcm_medium_n2_co2.yaml
 kg_microbe_match: mediadive.medium:634c
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_634_RCM_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006148
+  name: rcm_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.
 synonyms:
 - name: rcm_medium
   source: KOMODO
@@ -91,4 +116,4 @@ merged_from:
 - rcm_medium_halophilic_clostridia
 - rcm_medium_modified
 - rcm_medium_n2_co2
-merge_fingerprint: 231d90d78e1fa78ce01dde05af48e87d50838a4704bd115bb06a036223f20b39
+merge_fingerprint: be022f10bb653cbcc33a85471b432aca2525c18484815e2211f18b18dd844d53

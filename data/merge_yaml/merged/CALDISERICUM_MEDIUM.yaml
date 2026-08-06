@@ -3,8 +3,11 @@ name: caldisericum_medium
 original_name: CALDISERICUM medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_range: 6.5-6.8
+ph_range:
+  min: 6.5
+  max: 6.8
 media_term:
   preferred_term: KOMODO Medium 1211
   term:
@@ -16,32 +19,32 @@ ingredients:
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.0498504'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.0897308'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '0.249252'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -50,8 +53,8 @@ ingredients:
   concentration:
     value: '0.249252'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -61,8 +64,8 @@ ingredients:
     value: '0.249551'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.149551, 0.1]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: Yeast extract
   concentration:
@@ -72,15 +75,18 @@ ingredients:
   concentration:
     value: '0.000498504'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
   concentration:
     value: '0.249252'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 - preferred_term: Na2S2O3 x 5 H2O
   term:
@@ -89,8 +95,8 @@ ingredients:
   concentration:
     value: '2.49252'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000492
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32150
     label: Na2S2O3 x 5 H2O
 - preferred_term: L-Cysteine HCl x H2O
   term:
@@ -99,8 +105,8 @@ ingredients:
   concentration:
     value: '0.249252'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
     label: L-Cysteine HCl x H2O
 - preferred_term: Na2S x 9 H2O
   term:
@@ -109,8 +115,8 @@ ingredients:
   concentration:
     value: '0.249252'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 - preferred_term: Nitrilotriacetic acid
   term:
@@ -119,8 +125,8 @@ ingredients:
   concentration:
     value: '12.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
     label: Nitrilotriacetic acid
 - preferred_term: FeCl2 x 4 H2O
   term:
@@ -129,8 +135,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000329
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86249
     label: FeCl2 x 4 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -139,8 +145,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -149,8 +155,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: ZnCl2
   term:
@@ -159,28 +165,28 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
     label: ZnCl2
 - preferred_term: CuCl2
   term:
     id: CHEBI:49553
-    label: CuCl2
+    label: copper(II) chloride
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000821
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49553
     label: CuCl2
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -189,8 +195,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -199,8 +205,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: NaCl
   term:
@@ -209,8 +215,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Na2SeO3 x 5 H2O
   term:
@@ -219,8 +225,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000144
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131361
     label: Na2SeO3 x 5 H2O
 - preferred_term: Na2WO4 x 2 H2O
   term:
@@ -229,8 +235,8 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000309
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63939
     label: Na2WO4 x 2 H2O
 - preferred_term: Biotin
   term:
@@ -239,8 +245,8 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Folic acid
   term:
@@ -249,8 +255,8 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
     label: Folic acid
 - preferred_term: Pyridoxine hydrochloride
   term:
@@ -259,8 +265,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001016
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
     label: Pyridoxine hydrochloride
 - preferred_term: Thiamine HCl
   term:
@@ -269,8 +275,8 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Riboflavin
   term:
@@ -279,8 +285,8 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: Nicotinic acid
   term:
@@ -289,13 +295,16 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
     label: Nicotinic acid
 - preferred_term: Calcium D-(+)-pantothenate
   concentration:
     value: '0.005'
     unit: G_PER_L
+  term:
+    id: CHEBI:31345
+    label: ''
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
@@ -303,8 +312,8 @@ ingredients:
   concentration:
     value: '0.0001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 - preferred_term: p-Aminobenzoic acid
   term:
@@ -313,8 +322,8 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
     label: p-Aminobenzoic acid
 - preferred_term: (DL)-alpha-Lipoic acid
   term:
@@ -323,8 +332,8 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000166
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16494
     label: (DL)-alpha-Lipoic acid
 applications:
 - Microbial cultivation
@@ -359,13 +368,44 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CALDISERICUM medium" to "caldisericum_medium" for consistent
     matching
-- timestamp: '2026-04-17T06:29:17.199426+00:00'
+- timestamp: '2026-05-20T06:00:49.505973+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.5-6.8'' -> {''min'': 6.5, ''max'': 6.8}'
+- timestamp: '2026-06-05T07:40:19.951195+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 30 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:43.828210+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 6 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:41.600090+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_1211_CALDISERICUM_medium, caldisericum_medium'
+- timestamp: '2026-08-06T03:04:41.600130+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 2762e908643e06b7985a63f8d055e7686af92a2cc419198d7e389d6c5e284e96
+  source: KOMODO_1211_CALDISERICUM_medium.yaml, caldisericum_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/caldisericum_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000669
+  name: caldisericum_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 1211; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 1211; local ingredient
+  and concentration signatures match.
 categories:
 - bacterial
 merged_from:
 - KOMODO_1211_CALDISERICUM_medium
 - caldisericum_medium
-merge_fingerprint: 97c7173f56e20467bc87f9ea8747f0483d2a10ba4ab2ce2836fa89b335705b37
+merge_fingerprint: 2762e908643e06b7985a63f8d055e7686af92a2cc419198d7e389d6c5e284e96

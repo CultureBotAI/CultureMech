@@ -1,6 +1,7 @@
 id: CultureMech:015695
 name: R2A_Kan50_Tween01_Cycloheximide200
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: R2A
@@ -34,7 +35,7 @@ ingredients:
     label: ''
 description: R2A media for outgrowth of bacteria after plant experiments
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: R2A_Kan50_Tween01_Cycloheximide200
@@ -48,19 +49,28 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015695'
-- timestamp: '2026-04-17T06:30:31.270463+00:00'
+- timestamp: '2026-05-16T09:04:42.791942+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:07.681915+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: r2a_kan10_tween01_cycloheximide200, r2a_kan50_tween01_cycloheximide200'
+- timestamp: '2026-08-06T03:06:07.681948+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint f80f0eea9b2f6b829187066aaf86e2aad24a981fc2f9bd708fb4f7e996cacb70
+  source: r2a_kan10_tween01_cycloheximide200.yaml, r2a_kan50_tween01_cycloheximide200.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 original_name: R2A_Kan50_Tween01_Cycloheximide200
 synonyms:
 - name: R2A_Kan10_Tween01_Cycloheximide200
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 categories:
-- SPECIALIZED
+- specialized
 merged_from:
 - r2a_kan10_tween01_cycloheximide200
 - r2a_kan50_tween01_cycloheximide200

@@ -1,65 +1,119 @@
-id: CultureMech:000372
+id: CultureMech:000095
 name: my75s
-original_name: MY75S
-category: bacterial
+category: algae
 medium_type: COMPLEX
-physical_state: SOLID_AGAR
-media_term:
-  preferred_term: CCAP Medium C60
-  term:
-    id: mediadive.medium:C60
-    label: MY75S
-notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_MY75S.pdf'
-ingredients:
-- preferred_term: Natural sea water
-  concentration:
-    value: '750'
-    unit: G_PER_L
-- preferred_term: Malt extract
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: "Make up the 75% seawater, heat, (do not bring to boil) then add and\
-    \ dissolve the malt extract\r\nand yeast extract using a magnetic stirrer. Cool\
-    \ slightly then add the agar and shake to\r\ndisperse. Autoclave at 15 psi for\
-    \ 15 minutes."
+composition_type: UNDEFINED
+physical_state: LIQUID
+description: Algae culture medium from CCAP Culture Collection. Suitable for saltwater
+  algae cultivation. Recipe available in PDF format.
+notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_MY75S.pdf
+salinity: marine (natural seawater or artificial seawater)
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
 applications:
-- Microbial cultivation
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
 curation_history:
-- timestamp: '2026-01-26T17:53:19.683869Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: CCAP, ID: C60'
-- timestamp: '2026-03-13T06:18:54.830303Z'
+- curator: ccap-import
+  action: Imported from CCAP Culture Collection
+  notes: 'Source ID: MY75S, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_MY75S.pdf'
+  timestamp: '2026-01-28T00:00:00+00:00'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-02-03T11:26:43.551229'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:18:53.147156Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000372'
-- timestamp: '2026-03-17T06:30:05.000000Z'
-  curator: mediaingredientmech-enrichment-v1.0
-  action: Added MediaIngredientMech links
-  notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:05.838485+00:00'
+  notes: 'Assigned stable identifier: CultureMech:000095'
+- timestamp: '2026-03-17T19:45:04.101758+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "MY75S" to "my75s" for consistent matching
+- timestamp: '2026-04-04T12:54:54.807263'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 4 curated ingredients from CCAP
+  source: CCAP Medium MR_MY75S.pdf
+- timestamp: '2026-05-16T08:57:02.569233+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(3 entries)
+- timestamp: '2026-05-16T09:02:56.774102+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
+    category->lowercase=1; concentration.unit aliases=1
+- timestamp: '2026-08-06T03:04:20.179024+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint a7fc422891d6d880ac0a00424133ef70460ba842daa7db60ba5698dac9779b18
+  source: my75s.yaml
+references:
+- reference: CCAP:MY75S
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_MY75S.pdf
+ingredients:
+- preferred_term: Malt extract
+  term:
+    id: FOODON:03301056
+    label: Malt extract
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.807245'
+    ontology_source: FOODON
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  source: CCAP Medium MR_MY75S.pdf
+  notes: From CCAP Medium MR_MY75S.pdf; Curated from CCAP Medium MR_MY75S.pdf specification
+- preferred_term: Yeast extract
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.807255'
+    ontology_source: FOODON
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  source: CCAP Medium MR_MY75S.pdf
+  notes: From CCAP Medium MR_MY75S.pdf; Curated from CCAP Medium MR_MY75S.pdf specification
+- preferred_term: Bacteriological agar
+  term:
+    id: CHEBI:2509
+    label: Bacteriological agar
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 0.95
+    curation_date: '2026-04-04T12:54:54.807257'
+    ontology_source: CHEBI
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: CCAP Medium MR_MY75S.pdf
+  notes: From CCAP Medium MR_MY75S.pdf; Curated from CCAP Medium MR_MY75S.pdf specification
+- preferred_term: Make up the
+  notes: Ontology mapping not yet available; From CCAP Medium MR_MY75S.pdf; Curated
+    from CCAP Medium MR_MY75S.pdf specification
+  concentration:
+    value: '75'
+    unit: PERCENT_W_V
+  source: CCAP Medium MR_MY75S.pdf
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- curation_method:automated_expert_mapping
+original_name: MY75S
 kg_microbe_match: mediadive.medium:12
-merge_fingerprint: 961f6b1842ef60b9dbbf1f2a7d8b02be5e897b522f2b551d02206b189452bb9f
+merge_fingerprint: a7fc422891d6d880ac0a00424133ef70460ba842daa7db60ba5698dac9779b18
 merged_from:
 - my75s

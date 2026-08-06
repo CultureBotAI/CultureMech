@@ -3,6 +3,7 @@ name: mw
 original_name: MW
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: CCAP Medium C58
@@ -36,6 +37,11 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "MW" to "mw" for consistent matching
+- timestamp: '2026-08-06T03:05:50.862581+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2aaeafe0d5ee409d6b58a7ec2d9d542f5732e5856f159376127184baf229485f
+  source: mw.yaml
 merge_fingerprint: 2aaeafe0d5ee409d6b58a7ec2d9d542f5732e5856f159376127184baf229485f
 merged_from:
 - mw

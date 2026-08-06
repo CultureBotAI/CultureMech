@@ -3,6 +3,7 @@ name: supplemented_m9_rhee
 original_name: '''Supplemented m9 (rhee'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: L-Proline
@@ -13,8 +14,8 @@ ingredients:
     value: '0.86858'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pro-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000280
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17203
     label: L-Proline
 - preferred_term: beta-D-Glucose
   concentration:
@@ -24,6 +25,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -31,17 +35,23 @@ ingredients:
   concentration:
     value: '0.0009704'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '42.2654'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Cobaltous sulfate
   concentration:
     value: '0.001992'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:53470
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -49,9 +59,9 @@ ingredients:
   concentration:
     value: '8.55578'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -59,13 +69,16 @@ ingredients:
   concentration:
     value: '0.1'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '22.0449'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -73,8 +86,8 @@ ingredients:
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
@@ -83,9 +96,9 @@ ingredients:
   concentration:
     value: '0.010595'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -93,8 +106,8 @@ ingredients:
   concentration:
     value: '18.6947'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Zinc sulfate
   term:
@@ -103,13 +116,16 @@ ingredients:
   concentration:
     value: '0.004799'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Cupric chloride
   concentration:
     value: '0.001264'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49553
+    label: ''
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.01998'
@@ -143,6 +159,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'Supplemented m9 (rhee" to "supplemented_m9_rhee" for
     consistent matching
+- timestamp: '2026-06-05T07:41:48.026443+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:57.183899+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 23ab0551cc3cf62ceec785612763dea2f292eb802b72fbe3f58751e09277c70d
+  source: supplemented_m9_rhee.yaml
 media_term:
   preferred_term: MediaDB Medium 119
   term:
@@ -154,6 +181,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: ca4bb41c3e648c084d3066f756813f1cedbc7c9ab33482d1a93d54341f53c3d3
+merge_fingerprint: 23ab0551cc3cf62ceec785612763dea2f292eb802b72fbe3f58751e09277c70d
 merged_from:
 - supplemented_m9_rhee

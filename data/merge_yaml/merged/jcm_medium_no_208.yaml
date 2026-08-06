@@ -3,6 +3,7 @@ name: jcm_medium_no_208
 original_name: JCM MEDIUM No. 208
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J208
@@ -18,8 +19,8 @@ ingredients:
   concentration:
     value: '333.333'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: YM broth
   concentration:
@@ -32,8 +33,8 @@ ingredients:
   concentration:
     value: '26.6667'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -55,6 +56,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "JCM MEDIUM No. 208" to "jcm_medium_no_208" for consistent
     matching
+- timestamp: '2026-06-05T07:41:09.920814+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:39.094048+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 24959dc619dce34bc871059d5cba1f842780eb8d1ac41f14c6820cf03ee92550
+  source: jcm_medium_no_208.yaml
 merge_fingerprint: 24959dc619dce34bc871059d5cba1f842780eb8d1ac41f14c6820cf03ee92550
 merged_from:
 - jcm_medium_no_208

@@ -3,6 +3,7 @@ name: marinomonas_vaga_medium
 original_name: MARINOMONAS VAGA medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 617
@@ -27,8 +28,8 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Agar
   term:
@@ -37,8 +38,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Tap water
   term:
@@ -47,8 +48,8 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Tap water
 applications:
 - Microbial cultivation
@@ -74,13 +75,38 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MARINOMONAS VAGA medium" to "marinomonas_vaga_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:29.653163+00:00'
+- timestamp: '2026-06-05T07:40:24.961187+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:56.215826+00:00'
   curator: recipe-merger
   action: Merged 10 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_617_MARINOMONAS_VAGA_medium, KOMODO_617a_BLOOD_AGAR_BASE_OXOID_CM55,
     TOGO_M15_Nutrient_Agar_NO._2, TOGO_M16_1_10_Nutrient_Agar_NO._2, TOGO_M17_1_100_Nutrient_Agar_NO._2,
     TOGO_M405_Nutrient_Agar_With_50_Soil_Extract_And_5_NaCl, blood_agar_base_oxoid_cm55,
     for_dsm_7232, marinomonas_vaga_medium, na_medium'
+- timestamp: '2026-08-06T03:04:56.215892+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 10 source recipe(s) on fingerprint 81f6c5d1e83b8e380fb9c8c5a21d6e990ef9a1328cd05475fac79c94b00cddcc
+  source: KOMODO_617_MARINOMONAS_VAGA_medium.yaml, KOMODO_617a_BLOOD_AGAR_BASE_OXOID_CM55.yaml,
+    TOGO_M15_Nutrient_Agar_NO._2.yaml, TOGO_M16_1_10_Nutrient_Agar_NO._2.yaml, TOGO_M17_1_100_Nutrient_Agar_NO._2.yaml,
+    TOGO_M405_Nutrient_Agar_With_50_Soil_Extract_And_5_NaCl.yaml, blood_agar_base_oxoid_cm55.yaml,
+    for_dsm_7232.yaml, marinomonas_vaga_medium.yaml, na_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/marinomonas_vaga_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001746
+  name: marinomonas_vaga_medium
+  notes: KOMODO record states DSMZ Medium 617 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 synonyms:
 - name: blood_agar_base_oxoid_cm55
   source: KOMODO

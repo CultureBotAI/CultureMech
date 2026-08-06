@@ -3,6 +3,7 @@ name: salisaeta_longa_medium
 original_name: SALISAETA LONGA medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
@@ -18,55 +19,49 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '100'
+    value: '125'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
-- preferred_term: K2SO4
-  term:
-    id: CHEBI:32036
-    label: K2SO4
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001064
-    label: K2SO4
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
     label: MgCl2 x 6 H2O
   concentration:
-    value: '50'
+    value: '160'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
-- preferred_term: Yeast extract
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
   concentration:
-    value: '1'
+    value: '0.13'
     unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: K2SO4
+  term:
+    id: CHEBI:32036
+    label: potassium sulfate
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32036
+    label: K2SO4
 - preferred_term: Casamino acids
   concentration:
     value: '1'
     unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
 - preferred_term: Starch
   term:
     id: CHEBI:28017
@@ -74,19 +69,18 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
     label: Starch
 - preferred_term: Agar
   term:
     id: CHEBI:2509
     label: Agar
   concentration:
-    value: '15'
+    value: '20'
     unit: G_PER_L
-  notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -112,19 +106,53 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "SALISAETA LONGA medium" to "salisaeta_longa_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:17.303979+00:00'
+- timestamp: '2026-06-05T07:40:20.033062+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:27.660456+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:46:43.858762+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:28.743668+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: KOMODO_1221_SALISAETA_LONGA_medium, halobaculum_medium, salisaeta_longa_medium'
+  notes: 'Sources: halobaculum_medium, KOMODO_1221_SALISAETA_LONGA_medium, salisaeta_longa_medium'
+- timestamp: '2026-08-06T03:04:28.743715+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 24e9290ea53cf8f0f67150d65305c2a6b3df3a7258412c401fa3a60ebc604fdd
+  source: halobaculum_medium.yaml, KOMODO_1221_SALISAETA_LONGA_medium.yaml, salisaeta_longa_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/salisaeta_longa_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000680
+  name: salisaeta_longa_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 1221; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 1221; local ingredient
+  and concentration signatures match.
 synonyms:
 - name: halobaculum_medium
   source: MediaDive
   source_id: mediadive.medium:J225
-  original_category: bacterial
+  original_category: archaea
 categories:
+- archaea
 - bacterial
 merged_from:
-- KOMODO_1221_SALISAETA_LONGA_medium
 - halobaculum_medium
+- KOMODO_1221_SALISAETA_LONGA_medium
 - salisaeta_longa_medium
-merge_fingerprint: 88b2f0bc4f008e7ef55940681924de115164ffaa51903e074f2b2c3f715421ce
+merge_fingerprint: 24e9290ea53cf8f0f67150d65305c2a6b3df3a7258412c401fa3a60ebc604fdd

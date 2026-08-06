@@ -3,6 +3,7 @@ name: gsy_medium
 original_name: GSY medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: YE
   concentration:
@@ -31,9 +32,9 @@ ingredients:
   term:
     id: CHEBI:3311
     label: calcium carbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001099
-    label: CaCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
+    label: calcium carbonate
 - preferred_term: glucose
   concentration:
     value: '70'
@@ -43,9 +44,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: soybean peptone
   concentration:
     value: '5'
@@ -80,6 +81,17 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "GSY medium" to "gsy_medium" for consistent matching
+- timestamp: '2026-06-05T07:41:06.765832+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:36.553605+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint bf6c7f1ba7606bddead9a11e69cc2e500855700f5f9f65083881d6b144fccd55
+  source: gsy_medium.yaml
 merge_fingerprint: bf6c7f1ba7606bddead9a11e69cc2e500855700f5f9f65083881d6b144fccd55
 merged_from:
 - gsy_medium

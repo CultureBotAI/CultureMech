@@ -3,6 +3,7 @@ name: mmp_biotin_thiamine_and_ca_pantothenate_villasenor_et_al
 original_name: MMP-biotin, thiamine, and Ca pantothenate; Villasenor et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Succinate
@@ -13,8 +14,8 @@ ingredients:
     value: '10.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:succ'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000420
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26806
     label: Succinate
 - preferred_term: Biotin
   term:
@@ -24,8 +25,8 @@ ingredients:
     value: '0.00409316'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Thiamine
   term:
@@ -42,10 +43,16 @@ ingredients:
   concentration:
     value: '1.49'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '1.26'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -53,8 +60,8 @@ ingredients:
   concentration:
     value: '0.001'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium pantothenate
 - preferred_term: Magnesium sulfate
   term:
@@ -63,8 +70,8 @@ ingredients:
   concentration:
     value: '0.83'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
@@ -73,8 +80,8 @@ ingredients:
   concentration:
     value: '10.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: '''Iron(III'
   concentration:
@@ -110,6 +117,17 @@ curation_history:
   notes: Normalized name from "MMP-biotin, thiamine, and Ca pantothenate; Villasenor
     et al" to "mmp_biotin_thiamine_and_ca_pantothenate_villasenor_et_al" for consistent
     matching
+- timestamp: '2026-06-05T07:41:35.763800+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:47.532767+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d12711bc8a022af4927095a1e0995acb828117f4cdfdb6e2c1497555a039bee3
+  source: mmp_biotin_thiamine_and_ca_pantothenate_villasenor_et_al.yaml
 media_term:
   preferred_term: MediaDB Medium 172
   term:
@@ -121,6 +139,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: e91160d22c71f67a51a004dab389a3aca674b29df7aefc8edac8788d7c8d65a9
+merge_fingerprint: d12711bc8a022af4927095a1e0995acb828117f4cdfdb6e2c1497555a039bee3
 merged_from:
 - mmp_biotin_thiamine_and_ca_pantothenate_villasenor_et_al

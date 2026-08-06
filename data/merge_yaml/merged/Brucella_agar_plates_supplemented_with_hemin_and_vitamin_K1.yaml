@@ -3,6 +3,7 @@ name: brucella_agar_plates_supplemented_with_hemin_and_vitamin_k1
 original_name: Brucella agar plates supplemented with hemin and vitamin K1
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast Extract
   concentration:
@@ -31,8 +32,8 @@ ingredients:
   term:
     id: CHEBI:26710
     label: Sodium Chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: Sodium Chloride
 - preferred_term: Hemin
   concentration:
@@ -43,9 +44,9 @@ ingredients:
   term:
     id: CHEBI:50385
     label: hemin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
-    label: Hemin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
+    label: hemin
 - preferred_term: Sheep Blood, defibrinated
   concentration:
     value: '5'
@@ -60,9 +61,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Vitamin K1
   concentration:
     value: '0.01'
@@ -71,8 +72,8 @@ ingredients:
   term:
     id: CHEBI:18067
     label: Vitamin K1
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000567
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18067
     label: Vitamin K1
 - preferred_term: Agar
   concentration:
@@ -82,9 +83,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Sodium Bisulfite
   concentration:
     value: '0.1'
@@ -134,6 +135,17 @@ curation_history:
   notes: Normalized name from "Brucella agar plates supplemented with hemin and vitamin
     K1" to "brucella_agar_plates_supplemented_with_hemin_and_vitamin_k1" for consistent
     matching
+- timestamp: '2026-06-05T07:40:51.577577+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:25.995795+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 7f2a46a0b8287892a768db81d908dfef5a7695fc8db301639b2a3042619e9d8b
+  source: brucella_agar_plates_supplemented_with_hemin_and_vitamin_k1.yaml
 merge_fingerprint: 7f2a46a0b8287892a768db81d908dfef5a7695fc8db301639b2a3042619e9d8b
 merged_from:
 - brucella_agar_plates_supplemented_with_hemin_and_vitamin_k1

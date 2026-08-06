@@ -1,165 +1,277 @@
-id: CultureMech:008953
+id: CultureMech:005104
 name: halobacteria_medium
-original_name: Halobacteria Medium
-category: bacterial
+original_name: HALOBACTERIA medium
+category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_range:
+  min: 7.0
+  max: 7.2
+media_term:
+  preferred_term: KOMODO Medium 372
+  term:
+    id: komodo.medium:372
+    label: HALOBACTERIA medium
+notes: 'Source: KOMODO ModelSEED | ID: 372 | DSMZ Medium: 372 (mediadive.medium:372)
+  | Aerobic: No'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: MgSO4 x 7 H2O
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4 x 7 H2O
 - preferred_term: Yeast extract
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: NaCl
-  concentration:
-    value: '200'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: KCl
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
-- preferred_term: MnCl2 x 4 H2O
-  concentration:
-    value: '0.36'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
-    label: MnCl2 x 4 H2O
-  term:
-    id: CHEBI:86368
-    label: ''
-- preferred_term: Na-glutamate
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Simple component, Organic compound, Defined
-    component'
-  term:
-    id: CHEBI:29988
-    label: L-glutamate(2-)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000886
-    label: Na-glutamate
-- preferred_term: Na3-citrate
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
-  term:
-    id: CHEBI:53258
-    label: Na3-citrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
-    label: Na3-citrate
-- preferred_term: FeCl2 x 4 H2O
-  concentration:
-    value: '36'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:86249
-    label: iron dichloride tetrahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000329
-    label: FeCl2 x 4 H2O
-- preferred_term: Agar
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
 - preferred_term: Casamino acids
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
+- preferred_term: Na glutamate
   term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
-media_term:
-  preferred_term: TOGO Medium M2369
+    id: CHEBI:64220
+    label: Na glutamate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64220
+    label: Na glutamate
+- preferred_term: KCl
   term:
-    id: TOGO:M2369
-    label: Halobacteria Medium
-notes: 'Source: https://togomedium.org/medium/M2369
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium372.pdf'
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: KCl
+- preferred_term: Na3-citrate
+  term:
+    id: CHEBI:53258
+    label: Na3-citrate
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
+    label: Na3-citrate
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: FeCl2 x 4 H2O
+  term:
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
+  concentration:
+    value: '0.036'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.00036'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.409139Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2369'
-- timestamp: '2026-01-28T19:48:19.043088Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:20:01.539284Z'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 372'
+- timestamp: '2026-02-03T11:18:58.295174'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 372
+- timestamp: '2026-03-13T06:19:30.112781Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:008953'
-- timestamp: '2026-03-17T06:30:05.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:005104'
+- timestamp: '2026-03-17T06:29:50.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:20.263568+00:00'
+- timestamp: '2026-03-17T19:45:45.807355+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Halobacteria Medium" to "halobacteria_medium" for consistent
+  notes: Normalized name from "HALOBACTERIA medium" to "halobacteria_medium" for consistent
     matching
+- timestamp: '2026-05-20T06:00:51.444559+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.0-7.2'' -> {''min'': 7.0, ''max'': 7.2}'
+- timestamp: '2026-06-05T07:40:22.785452+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:27.939196+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:04:23.055992+00:00'
+  curator: recipe-merger
+  action: Merged 11 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_372_HALOBACTERIA_medium, halobacteria_medium, jcm_medium_no_1241,
+    medium_372_modified_for_dsm_18341, medium_372_modified_for_dsm_18342, medium_372_modified_for_dsm_19336,
+    medium_372_modified_for_dsm_21622, medium_372_modified_for_dsm_21769, medium_372_modified_for_dsm_21771,
+    medium_372_modified_for_dsm_23158, medium_372_modified_for_dsm_23862'
+- timestamp: '2026-08-06T03:04:23.056094+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 11 source recipe(s) on fingerprint a38d0d843e9da3abc9f0d2a94d230465eb19ff6860bbfb01f34f8e957eb09a3d
+  source: KOMODO_372_HALOBACTERIA_medium.yaml, halobacteria_medium.yaml, jcm_medium_no_1241.yaml,
+    medium_372_modified_for_dsm_18341.yaml, medium_372_modified_for_dsm_18342.yaml,
+    medium_372_modified_for_dsm_19336.yaml, medium_372_modified_for_dsm_21622.yaml,
+    medium_372_modified_for_dsm_21769.yaml, medium_372_modified_for_dsm_21771.yaml,
+    medium_372_modified_for_dsm_23158.yaml, medium_372_modified_for_dsm_23862.yaml
 high_metal: true
-merge_fingerprint: 55bb6b95c8c84a76711fea719733a4ed9c4fbf3c232cf7713e60fd005f0c7b6e
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_372_modified_for_dsm_18341.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005094
+  name: medium_372_modified_for_dsm_18341
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_372_modified_for_dsm_18342.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005095
+  name: medium_372_modified_for_dsm_18342
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_372_modified_for_dsm_19336.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005098
+  name: medium_372_modified_for_dsm_19336
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_372_modified_for_dsm_21622.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005099
+  name: medium_372_modified_for_dsm_21622
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_372_modified_for_dsm_21769.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005100
+  name: medium_372_modified_for_dsm_21769
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_372_modified_for_dsm_21771.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005101
+  name: medium_372_modified_for_dsm_21771
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_372_modified_for_dsm_23158.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005102
+  name: medium_372_modified_for_dsm_23158
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_372_modified_for_dsm_23862.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005103
+  name: medium_372_modified_for_dsm_23862
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/halobacteria_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001474
+  name: halobacteria_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 372; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 372; local ingredient
+  and concentration signatures match.
+synonyms:
+- name: jcm_medium_no_1241
+  source: MediaDive
+  source_id: mediadive.medium:J1241
+  original_category: bacterial
+- name: medium_372_modified_for_dsm_18341
+  source: KOMODO
+  source_id: komodo.medium:372_18341
+  original_category: bacterial
+- name: medium_372_modified_for_dsm_18342
+  source: KOMODO
+  source_id: komodo.medium:372_18342
+  original_category: bacterial
+- name: medium_372_modified_for_dsm_19336
+  source: KOMODO
+  source_id: komodo.medium:372_19336
+  original_category: bacterial
+- name: medium_372_modified_for_dsm_21622
+  source: KOMODO
+  source_id: komodo.medium:372_21622
+  original_category: bacterial
+- name: medium_372_modified_for_dsm_21769
+  source: KOMODO
+  source_id: komodo.medium:372_21769
+  original_category: bacterial
+- name: medium_372_modified_for_dsm_21771
+  source: KOMODO
+  source_id: komodo.medium:372_21771
+  original_category: bacterial
+- name: medium_372_modified_for_dsm_23158
+  source: KOMODO
+  source_id: komodo.medium:372_23158
+  original_category: bacterial
+- name: medium_372_modified_for_dsm_23862
+  source: KOMODO
+  source_id: komodo.medium:372_23862
+  original_category: bacterial
+categories:
+- archaea
+- bacterial
 merged_from:
-- TOGO_M2369_Halobacteria_Medium
+- KOMODO_372_HALOBACTERIA_medium
+- halobacteria_medium
+- jcm_medium_no_1241
+- medium_372_modified_for_dsm_18341
+- medium_372_modified_for_dsm_18342
+- medium_372_modified_for_dsm_19336
+- medium_372_modified_for_dsm_21622
+- medium_372_modified_for_dsm_21769
+- medium_372_modified_for_dsm_21771
+- medium_372_modified_for_dsm_23158
+- medium_372_modified_for_dsm_23862
+merge_fingerprint: a38d0d843e9da3abc9f0d2a94d230465eb19ff6860bbfb01f34f8e957eb09a3d

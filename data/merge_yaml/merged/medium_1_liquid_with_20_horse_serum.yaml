@@ -3,6 +3,7 @@ name: medium_1_liquid_with_20_horse_serum
 original_name: Medium 1 liquid, with 20 % horse serum
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Horse serum
   concentration:
@@ -30,9 +31,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Meat extract
   concentration:
     value: '3'
@@ -74,6 +75,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Medium 1 liquid, with 20 % horse serum" to "medium_1_liquid_with_20_horse_serum"
     for consistent matching
+- timestamp: '2026-06-05T07:41:15.884354+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:42.644848+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 5a09f630742f43d75777b3635baca67170db1123b1fa90e4c6b020ebc86d15c3
+  source: medium_1_liquid_with_20_horse_serum.yaml
 merge_fingerprint: 5a09f630742f43d75777b3635baca67170db1123b1fa90e4c6b020ebc86d15c3
 merged_from:
 - medium_1_liquid_with_20_horse_serum

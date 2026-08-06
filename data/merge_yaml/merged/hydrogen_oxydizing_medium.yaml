@@ -3,6 +3,7 @@ name: hydrogen_oxydizing_medium
 original_name: HYDROGEN-OXYDIZING MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
 media_term:
@@ -20,8 +21,8 @@ ingredients:
   concentration:
     value: '7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: NaS2O3
   concentration:
@@ -30,8 +31,8 @@ ingredients:
   term:
     id: CHEBI:132112
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000669
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132112
     label: NaS2O3
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -41,8 +42,8 @@ ingredients:
     value: '40.4'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.4, 40.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: KCl
   term:
@@ -51,8 +52,8 @@ ingredients:
   concentration:
     value: '0.48'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: MgCl2
   term:
@@ -61,8 +62,8 @@ ingredients:
   concentration:
     value: '0.78'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000663
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6636
     label: MgCl2
 - preferred_term: MES
   term:
@@ -71,18 +72,18 @@ ingredients:
   concentration:
     value: '1.95'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000269
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39010
     label: MES
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: MgCl2 x H2O
   term:
@@ -91,18 +92,18 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000879
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86355
     label: MgCl2 x H2O
 - preferred_term: K2HPO4 x 3 H2O
   term:
     id: CHEBI:131527
-    label: K2HPO4 x 3 H2O
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '200'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4 x 3 H2O
 - preferred_term: Na-EDTA x 2 H2O
   term:
@@ -111,8 +112,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
     label: Na-EDTA x 2 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -121,8 +122,8 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -131,8 +132,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -141,8 +142,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: ZnCl2
   term:
@@ -151,8 +152,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
     label: ZnCl2
 - preferred_term: AlCl3 x 6 H2O
   term:
@@ -161,8 +162,8 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000728
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30115
     label: AlCl3 x 6 H2O
 - preferred_term: Na-tungstate x 2 H2O
   concentration:
@@ -175,8 +176,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000579
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53472
     label: CuCl
 - preferred_term: NiSO4 x 6 H2O
   term:
@@ -185,8 +186,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000599
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53001
     label: NiSO4 x 6 H2O
 - preferred_term: Se-acid
   concentration:
@@ -203,8 +204,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 applications:
 - Microbial cultivation
@@ -234,11 +235,36 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HYDROGEN-OXYDIZING MEDIUM" to "hydrogen_oxydizing_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:13.688918+00:00'
+- timestamp: '2026-06-05T07:40:18.029290+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 18 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:43.218811+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:37.644922+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_1003_HYDROGEN-OXYDIZING_MEDIUM, hydrogen_oxydizing_medium'
+- timestamp: '2026-08-06T03:04:37.644961+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 87df4e050b8a7786e2dad5a117413ed60c56021eed9800efb6ba53739e860941
+  source: KOMODO_1003_HYDROGEN-OXYDIZING_MEDIUM.yaml, hydrogen_oxydizing_medium.yaml
 high_metal: true
+parent_media:
+  path: data/normalized_yaml/bacterial/hydrogen_oxydizing_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000419
+  name: hydrogen_oxydizing_medium
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and concentration
+    signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.
 categories:
 - bacterial
 merged_from:

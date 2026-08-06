@@ -3,6 +3,7 @@ name: bhi_medium_with_additional_glucose
 original_name: BHI MEDIUM WITH ADDITIONAL GLUCOSE
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 215b
@@ -128,8 +129,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 applications:
 - Microbial cultivation
@@ -151,7 +152,13 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "BHI MEDIUM WITH ADDITIONAL GLUCOSE" to "bhi_medium_with_additional_glucose"
     for consistent matching
-- timestamp: '2026-04-17T06:29:20.311085+00:00'
+- timestamp: '2026-06-05T07:40:50.918334+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:45.215905+00:00'
   curator: recipe-merger
   action: Merged 33 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_215_BHI_medium, KOMODO_215a_BHI_medium_modified, KOMODO_215b_BHI_medium_WITH_ADDITIONAL_GLUCOSE,
@@ -164,6 +171,16 @@ curation_history:
     medium_215_modified_for_dsm_13666, medium_215_modified_for_dsm_13667, medium_215_modified_for_dsm_21511,
     medium_215_modified_for_dsm_22834, medium_215_modified_for_dsm_23150, medium_215_modified_for_dsm_25050,
     medium_215_modified_for_dsm_8629, medium_215b_modified_for_dsm_41834, modified_bhi'
+- timestamp: '2026-08-06T03:04:45.216102+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 33 source recipe(s) on fingerprint c9f479eb46e904ba5f4f951ddac3fa23ee2c06f09ce437f640c578c867514d28
+  source: KOMODO_215_BHI_medium.yaml, KOMODO_215a_BHI_medium_modified.yaml, KOMODO_215b_BHI_medium_WITH_ADDITIONAL_GLUCOSE.yaml,
+    KOMODO_215c_BHI_medium_FOR_STRICT_ANAEROBES.yaml, NBRC_1245.yaml, TOGO_M2511_brain_heart_infusion_broth.yaml,
+    TOGO_M2971_Brain_Heart_Infusion_Agar.yaml, bhi_agar.yaml, bhi_broth.yaml, bhi_medium.yaml,
+    bhi_medium_with_additional_glucose.yaml, brain_heart_agar_bhi_luqiao_beijing.yaml,
+    brain_heart_infusion_bhi_broth.yaml, brain_heart_infusion_bhi_difco_agar.yaml,
+    brain_heart_infusi
 synonyms:
 - name: bhi_medium
   source: KOMODO

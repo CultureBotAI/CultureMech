@@ -3,6 +3,7 @@ name: mucispirillum_spezial
 original_name: Mucispirillum Spezial
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:
@@ -268,12 +269,12 @@ ingredients:
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '1.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: Cysteine HCl
   concentration:
@@ -290,8 +291,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
     label: Haemin
 - preferred_term: NaOH
   term:
@@ -300,13 +301,16 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
     label: NaOH
 - preferred_term: Vitamin K3
   concentration:
     value: '0.05'
     unit: G_PER_L
+  term:
+    id: CHEBI:28869
+    label: ''
 - preferred_term: Ethanol
   term:
     id: CHEBI:16236
@@ -314,8 +318,8 @@ ingredients:
   concentration:
     value: '9.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000686
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16236
     label: Ethanol
 preparation_steps:
 - step_number: 1
@@ -361,6 +365,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Mucispirillum Spezial" to "mucispirillum_spezial" for
     consistent matching
-merge_fingerprint: f7ccc46684bf57b5e74657b0495b7813c17ac6ca8d08be51fce9d264310f0f2d
+- timestamp: '2026-06-05T07:41:38.865233+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:09.283543+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:50.769463+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 83780293f97a44c3fcfb6f0a08eccfcc5d548ddb793b66557d89251acc1ecc5d
+  source: mucispirillum_spezial.yaml
+merge_fingerprint: 83780293f97a44c3fcfb6f0a08eccfcc5d548ddb793b66557d89251acc1ecc5d
 merged_from:
 - mucispirillum_spezial

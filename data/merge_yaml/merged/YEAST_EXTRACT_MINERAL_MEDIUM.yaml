@@ -3,8 +3,11 @@ name: yeast_extract_mineral_medium
 original_name: Yeast extract MINERAL medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_range: 7.0-7.2
+ph_range:
+  min: 7.0
+  max: 7.2
 media_term:
   preferred_term: KOMODO Medium 259
   term:
@@ -20,18 +23,18 @@ ingredients:
   concentration:
     value: '3.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4 x 12 H2O
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -40,18 +43,18 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: Yeast extract
   concentration:
@@ -64,8 +67,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -91,10 +94,29 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Yeast extract MINERAL medium" to "yeast_extract_mineral_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:30:28.079601+00:00'
+- timestamp: '2026-05-20T06:02:12.241315+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.0-7.2'' -> {''min'': 7.0, ''max'': 7.2}'
+- timestamp: '2026-06-05T07:41:55.718484+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:14.686322+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:03.095468+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: yeast_extract_mineral_medium, yeast_extract_mineral_medium'
+- timestamp: '2026-08-06T03:06:03.095516+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 27ee043bdc89133260e2a0c829787bd960be05f94886d2b7c9da3c5e209c8601
+  source: yeast_extract_mineral_medium.yaml, yeast_extract_mineral_medium.yaml
 categories:
 - bacterial
 - fungal

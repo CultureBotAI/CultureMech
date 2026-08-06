@@ -3,6 +3,7 @@ name: usab_53_medium
 original_name: USAB 53 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.9
 media_term:
@@ -15,32 +16,32 @@ ingredients:
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '0.999001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.2997'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.2997'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: NaCl
   term:
@@ -50,8 +51,8 @@ ingredients:
     value: '25.975'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 24.975, 1.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -61,8 +62,8 @@ ingredients:
     value: '0.19990010000000002'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.0999001, 0.1]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: KCl
   term:
@@ -71,18 +72,18 @@ ingredients:
   concentration:
     value: '0.0999001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
-    label: Na2SO4
+    label: sodium sulfate
   concentration:
     value: '2.83716'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Na2SO4
 - preferred_term: Yeast extract
   concentration:
@@ -95,8 +96,8 @@ ingredients:
   concentration:
     value: '2.23776'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001047
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75228
     label: Sodium lactate
 - preferred_term: Resazurin
   term:
@@ -105,8 +106,8 @@ ingredients:
   concentration:
     value: '0.000999001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: Nitrilotriacetic acid
   term:
@@ -115,8 +116,8 @@ ingredients:
   concentration:
     value: '12.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
     label: Nitrilotriacetic acid
 - preferred_term: FeCl2 x 4 H2O
   term:
@@ -125,8 +126,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000329
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86249
     label: FeCl2 x 4 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -135,8 +136,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -145,8 +146,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: ZnCl2
   term:
@@ -155,28 +156,28 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
     label: ZnCl2
 - preferred_term: CuCl2
   term:
     id: CHEBI:49553
-    label: CuCl2
+    label: copper(II) chloride
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000821
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49553
     label: CuCl2
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -185,8 +186,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: Na2SeO3 x 5 H2O
   term:
@@ -195,8 +196,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000144
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131361
     label: Na2SeO3 x 5 H2O
 preparation_steps:
 - step_number: 1
@@ -233,6 +234,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "USAB 53 MEDIUM" to "usab_53_medium" for consistent
     matching
+- timestamp: '2026-06-05T07:41:54.883413+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 18 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:14.428109+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 6 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:02.372486+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint aa0f300126bc921114622ef40cc06a32f7e77ce92dbf2704411420d0951033da
+  source: usab_53_medium.yaml
 merge_fingerprint: aa0f300126bc921114622ef40cc06a32f7e77ce92dbf2704411420d0951033da
 merged_from:
 - usab_53_medium

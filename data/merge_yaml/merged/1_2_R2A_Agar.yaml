@@ -3,6 +3,7 @@ name: 1_2_r2a_agar
 original_name: 1/2 R2A Agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Agar
   concentration:
@@ -25,9 +26,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: R2A agar (BD-Difco)
   concentration:
     value: '1.82'
@@ -66,10 +67,28 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "1/2 R2A Agar" to "1_2_r2a_agar" for consistent matching
-- timestamp: '2026-04-17T06:29:51.292367+00:00'
+- timestamp: '2026-06-05T07:40:45.323816+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:19.715287+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M839_1_10_R2A_Agar, TOGO_M881_1_2_R2A_Agar'
+- timestamp: '2026-08-06T03:05:19.715319+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 91d917ee07ef5180979b02c394725670252532c117232acfba08f13ea782dabc
+  source: TOGO_M839_1_10_R2A_Agar.yaml, TOGO_M881_1_2_R2A_Agar.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M839_1_10_R2A_Agar.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:010253
+  name: 1_10_r2a_agar
+  notes: 1/10 R2A Agar decreases R2A agar powder from 9.1 g/L to 1.82 g/L and adjusts
+    added agar from 7.5 g/L to 15 g/L.
 synonyms:
 - name: 1_10_r2a_agar
   source: TOGO

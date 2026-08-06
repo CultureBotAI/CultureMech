@@ -3,6 +3,7 @@ name: low_salt_luria_broth_lslb
 original_name: Low-Salt Luria-Broth (LSLB)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: NaCl (VWR, X190-1KG)
   concentration:
@@ -62,6 +63,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Low-Salt Luria-Broth (LSLB)" to "low_salt_luria_broth_lslb"
     for consistent matching
+- timestamp: '2026-06-05T07:41:11.392422+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:40.522590+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint db4e9e8387a58879a5939b46c3f5347640f855d78cf02af3b18c829774f02e2d
+  source: low_salt_luria_broth_lslb.yaml
 merge_fingerprint: db4e9e8387a58879a5939b46c3f5347640f855d78cf02af3b18c829774f02e2d
 merged_from:
 - low_salt_luria_broth_lslb

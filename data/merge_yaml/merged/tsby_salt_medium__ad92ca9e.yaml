@@ -1,0 +1,284 @@
+id: CultureMech:008626
+name: tsby_salt_medium
+original_name: TSBY Salt Medium
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '3.45'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '13'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '0.14'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: MgCl2·6H2O
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+- preferred_term: KCl
+  concentration:
+    value: '0.34'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Pancreatic digest of casein
+  term:
+    id: MICRO:0000182
+    label: tryptone
+  concentration:
+    value: '17.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
+    catalog_number: Multiple (22092 Sigma, 211825 BD)
+    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+  notes: Pancreatic enzymatic digest of casein providing amino acids and peptides;
+    Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
+  synonyms:
+  - synonym_text: tryptone
+    synonym_type: EXACT
+  - synonym_text: casein peptone
+    synonym_type: EXACT
+  - synonym_text: Bacto Tryptone
+    synonym_type: EXACT
+- preferred_term: Peptic digest of soybean meal
+  term:
+    id: FOODON:03315720
+    label: soy peptone
+  concentration:
+    value: '3.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
+    catalog_number: Multiple (22092 Sigma, 211825 BD)
+    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+  notes: Peptic digest of soybean meal providing additional peptides and carbohydrates;
+    Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
+  synonyms:
+  - synonym_text: soytone
+    synonym_type: EXACT
+  - synonym_text: soy peptone
+    synonym_type: EXACT
+  - synonym_text: Bacto Soytone
+    synonym_type: EXACT
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: D-glucose
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
+    catalog_number: Multiple (22092 Sigma, 211825 BD)
+    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+  notes: Carbon/energy source; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy
+    Agar (TSA) commercial product
+  synonyms:
+  - synonym_text: dextrose
+    synonym_type: EXACT
+  - synonym_text: D-glucose
+    synonym_type: EXACT
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
+    catalog_number: Multiple (22092 Sigma, 211825 BD)
+    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+  notes: Maintains osmotic equilibrium; Constituent of Tryptic Soy Broth (TSB) / Tryptic
+    Soy Agar (TSA) commercial product
+  synonyms:
+  - synonym_text: NaCl
+    synonym_type: EXACT
+  - synonym_text: table salt
+    synonym_type: EXACT
+- preferred_term: Dipotassium phosphate
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
+    catalog_number: Multiple (22092 Sigma, 211825 BD)
+    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+  notes: pH buffer; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)
+    commercial product
+  synonyms:
+  - synonym_text: K2HPO4
+    synonym_type: EXACT
+  - synonym_text: potassium phosphate dibasic
+    synonym_type: EXACT
+  - synonym_text: dipotassium hydrogen phosphate
+    synonym_type: EXACT
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
+    catalog_number: Multiple (22092 Sigma, 211825 BD)
+    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+  notes: Solidifying agent (for TSA only, not in TSB); Constituent of Tryptic Soy
+    Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
+media_term:
+  preferred_term: TOGO Medium M2037
+  term:
+    id: TOGO:M2037
+    label: TSBY Salt Medium
+notes: 'Source: https://togomedium.org/medium/M2037
+
+  Original source: NBRC - NBRC_M1334
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1334
+
+
+  Commercial Product: Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)
+
+  Supplier: Multiple suppliers (BD, Sigma, Neogen)
+
+  Catalog: Multiple (22092 Sigma, 211825 BD)
+
+  Source: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.934451Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M2037'
+- timestamp: '2026-01-28T19:48:23.276646Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:58.830988Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008626'
+- timestamp: '2026-03-17T06:30:14.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:17.452327+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "TSBY Salt Medium" to "tsby_salt_medium" for consistent
+    matching
+- timestamp: '2026-06-05T07:40:35.354734+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:25.378962+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:46:48.561184+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:10.368297+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint ad92ca9ebee99bdb03fd864cbd0ca8adde613e2417017645a83ad5efed8cdf23
+  source: TOGO_M2037_TSBY_Salt_Medium.yaml
+merge_fingerprint: ad92ca9ebee99bdb03fd864cbd0ca8adde613e2417017645a83ad5efed8cdf23
+merged_from:
+- TOGO_M2037_TSBY_Salt_Medium

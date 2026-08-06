@@ -3,6 +3,7 @@ name: standard_petc_medium
 original_name: Standard PETC medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,18 +15,18 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
-- preferred_term: MgSO4⋅7H2O
+- preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:32599
-    label: ''
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: Yeast extract
   concentration:
     value: '0.5'
@@ -40,10 +41,10 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: CaCl2⋅2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.02'
     unit: G_PER_L
@@ -60,9 +61,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
@@ -73,9 +74,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: KCl
   concentration:
     value: '0.1'
@@ -85,14 +86,14 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Reducing agent (100×)
   concentration:
     value: '10'
     unit: G_PER_L
-- preferred_term: Na2MoO4⋅2H2O
+- preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '0.02'
     unit: G_PER_L
@@ -101,7 +102,7 @@ ingredients:
   term:
     id: CHEBI:75215
     label: ''
-- preferred_term: CoCl2⋅6H2O
+- preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
@@ -110,7 +111,7 @@ ingredients:
   term:
     id: CHEBI:35696
     label: ''
-- preferred_term: NiCl2⋅6H2O
+- preferred_term: NiCl2 x 6 H2O
   concentration:
     value: '0.02'
     unit: G_PER_L
@@ -119,7 +120,7 @@ ingredients:
   term:
     id: CHEBI:34887
     label: ''
-- preferred_term: ZnSO4⋅7H2O
+- preferred_term: ZnSO4 x 7 H2O
   concentration:
     value: '0.0002'
     unit: G_PER_L
@@ -128,7 +129,7 @@ ingredients:
   term:
     id: CHEBI:32312
     label: ''
-- preferred_term: CuCl2⋅2H2O
+- preferred_term: CuCl2 x 2 H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
@@ -146,16 +147,16 @@ ingredients:
   term:
     id: CHEBI:44557
     label: nitrilotriacetic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
-    label: Nitrilotriacetic acid (NTA)
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
 - preferred_term: Fe(SO4)2(NH4Cl)2⋅6H2O
   concentration:
     value: '0.8'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
-- preferred_term: MnSO4⋅H2O
+- preferred_term: MnSO4 x H2O
   concentration:
     value: '1'
     unit: G_PER_L
@@ -173,9 +174,9 @@ ingredients:
   term:
     id: CHEBI:63940
     label: sodium tungstate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000240
-    label: Na2WO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63940
+    label: sodium tungstate
 - preferred_term: Na2SeO4
   concentration:
     value: '0.02'
@@ -183,10 +184,10 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:32149
-    label: sodium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+    id: CHEBI:77775
+    label: sodium selenate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:77775
     label: Na2SeO4
 - preferred_term: Biotin
   concentration:
@@ -196,9 +197,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
-    label: Biotin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
+    label: biotin
 - preferred_term: p-Aminobenzoic acid
   concentration:
     value: '5'
@@ -207,9 +208,9 @@ ingredients:
   term:
     id: CHEBI:30753
     label: 4-aminobenzoic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
-    label: p-Aminobenzoic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
 - preferred_term: Thiamin-HCl
   concentration:
     value: '5'
@@ -218,9 +219,9 @@ ingredients:
   term:
     id: CHEBI:49105
     label: thiamine hydrochloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
-    label: Thiamin-HCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
 - preferred_term: Calcium pantothenate
   concentration:
     value: '5'
@@ -229,16 +230,19 @@ ingredients:
   term:
     id: CHEBI:31345
     label: Calcium pantothenate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium pantothenate
 - preferred_term: Pyridoxine-hydrochloride
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001016
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
     label: Pyridoxine-hydrochloride
 - preferred_term: Folic acid
   concentration:
@@ -248,14 +252,17 @@ ingredients:
   term:
     id: CHEBI:27470
     label: folic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
-    label: Folic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
+    label: folic acid
 - preferred_term: Cobalamin
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:28911
+    label: ''
 - preferred_term: Riboflavin
   concentration:
     value: '5'
@@ -264,9 +271,9 @@ ingredients:
   term:
     id: CHEBI:17015
     label: riboflavin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
-    label: Riboflavin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
+    label: riboflavin
 - preferred_term: Nicotinic acid
   concentration:
     value: '5'
@@ -275,9 +282,9 @@ ingredients:
   term:
     id: CHEBI:15940
     label: nicotinic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
-    label: Nicotinic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
+    label: nicotinic acid
 - preferred_term: Lipoic acid
   concentration:
     value: '5'
@@ -287,9 +294,9 @@ ingredients:
   term:
     id: CHEBI:16494
     label: lipoic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000166
-    label: Lipoic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16494
+    label: lipoic acid
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
@@ -307,9 +314,9 @@ ingredients:
   term:
     id: CHEBI:28645
     label: beta-D-fructofuranose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000288
-    label: Fructose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28645
+    label: beta-D-fructofuranose
 - preferred_term: MES
   concentration:
     value: '10'
@@ -318,8 +325,8 @@ ingredients:
   term:
     id: CHEBI:39010
     label: MES
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000269
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39010
     label: MES
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
@@ -329,9 +336,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000213
-    label: KOH
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32035
+    label: potassium hydroxide
 - preferred_term: Na2S
   concentration:
     value: '2.17'
@@ -341,9 +348,9 @@ ingredients:
   term:
     id: CHEBI:76208
     label: sodium sulfide (anhydrous)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000783
-    label: Na2S
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76208
+    label: sodium sulfide (anhydrous)
 - preferred_term: Anaerobic water
   concentration:
     value: '100'
@@ -369,9 +376,9 @@ ingredients:
   term:
     id: CHEBI:32145
     label: sodium hydroxide
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
-    label: NaOH
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
 media_term:
   preferred_term: TOGO Medium M3163
   term:
@@ -390,11 +397,11 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:57.758797'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2; Added default concentration
     for ingredient: KOH; Added default concentration for ingredient: N2; Added default
     concentration for ingredient: N2'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:04:14.067176+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -408,10 +415,10 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009621'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:59.853893'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name; Added default solution
     name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:29:43.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -421,6 +428,38 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Standard PETC medium" to "standard_petc_medium" for
     consistent matching
+- timestamp: '2026-05-16T09:04:32.443342+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:41:46.945786+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 22 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:50.594686+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (shared-id regrounding audit, G21/G22/G24)
+  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more
+    ingredient groundings on this record that had been collapsed onto a chemically
+    non-specific or shared CHEBI id were re-grounded to the correct chemically-specific
+    term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
+- timestamp: '2026-06-10T06:58:32.997988+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:47:11.812924+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:56.592056+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 0ec9cd876307a4ea19e7403a49aa76b15f46b2ef4b8c9c0f4961d2b94e03101a
+  source: standard_petc_medium.yaml
 solutions:
 - preferred_term: Resazurin-solution (0.025 vol%)
   composition: []
@@ -447,6 +486,6 @@ solutions:
     value: '20'
     unit: G_PER_L
   name: Unknown solution
-merge_fingerprint: 46f9a7e842474c2fd09bb7b2a465012028f3c83513e70c40f708d52f3c1c105e
+merge_fingerprint: 0ec9cd876307a4ea19e7403a49aa76b15f46b2ef4b8c9c0f4961d2b94e03101a
 merged_from:
 - standard_petc_medium

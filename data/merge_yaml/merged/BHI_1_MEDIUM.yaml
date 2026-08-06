@@ -3,6 +3,7 @@ name: bhi_1_medium
 original_name: BHI/1 medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 216
@@ -145,10 +146,27 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "BHI/1 medium" to "bhi_1_medium" for consistent matching
-- timestamp: '2026-04-17T06:29:20.325725+00:00'
+- timestamp: '2026-08-06T03:04:45.233937+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_216_BHI_1_medium, bhi_1_medium'
+- timestamp: '2026-08-06T03:04:45.233990+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint bb31692579c5de1bd79c62298b4d67e399bb57d473fc7ac247ba19a10b150227
+  source: KOMODO_216_BHI_1_medium.yaml, bhi_1_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/bhi_1_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001318
+  name: bhi_1_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 216; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 216; local ingredient
+  and concentration signatures match.
 categories:
 - bacterial
 merged_from:

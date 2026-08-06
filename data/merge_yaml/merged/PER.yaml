@@ -3,6 +3,7 @@ name: per
 original_name: PER
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: CCAP Medium C75
@@ -18,12 +19,12 @@ ingredients:
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -32,13 +33,13 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: KNO3
   term:
     id: CHEBI:63043
-    label: KNO3
+    label: potassium nitrate
   concentration:
     value: '20'
     unit: G_PER_L
@@ -117,10 +118,10 @@ curation_history:
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C75'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:17.183532'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Soil; Added default concentration
     for ingredient: Soil'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T03:08:53.380540Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -137,6 +138,29 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "PER" to "per" for consistent matching
-merge_fingerprint: fb7d4c7bb2555545d13785252d9ecde3a876d24f665c518e68ff132a942cc587
+- timestamp: '2026-05-16T09:04:28.713078+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:41.333375+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:37:35.732006+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:47:10.030097+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:52.578595+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint fa980915e0f0289f67e4861ed4b620aee9686c63802b46658bfa9d1700b511fa
+  source: per.yaml
+merge_fingerprint: fa980915e0f0289f67e4861ed4b620aee9686c63802b46658bfa9d1700b511fa
 merged_from:
 - per

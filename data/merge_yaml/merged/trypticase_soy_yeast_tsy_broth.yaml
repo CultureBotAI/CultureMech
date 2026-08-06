@@ -3,6 +3,7 @@ name: trypticase_soy_yeast_tsy_broth
 original_name: trypticase soy yeast (TSY) broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: trypticase soy yeast (TSY) broth
@@ -32,6 +33,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "trypticase soy yeast (TSY) broth" to "trypticase_soy_yeast_tsy_broth"
     for consistent matching
+- timestamp: '2026-08-06T03:06:02.044732+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 1a3baaab3b4f6ec4684ef2846352c80daa3892bf619b1c7af3f7579f93afca7d
+  source: trypticase_soy_yeast_tsy_broth.yaml
 merge_fingerprint: 1a3baaab3b4f6ec4684ef2846352c80daa3892bf619b1c7af3f7579f93afca7d
 merged_from:
 - trypticase_soy_yeast_tsy_broth

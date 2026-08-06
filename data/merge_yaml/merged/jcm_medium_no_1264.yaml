@@ -3,6 +3,7 @@ name: jcm_medium_no_1264
 original_name: JCM MEDIUM No. 1264
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 10.0
 media_term:
@@ -23,8 +24,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000985
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62965
     label: Sodium formate
 - preferred_term: Sodium acetate
   term:
@@ -33,8 +34,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
     label: Sodium acetate
 - preferred_term: Bacto peptone
   concentration:
@@ -47,8 +48,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001047
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75228
     label: Sodium lactate
 - preferred_term: Sodium pyruvate
   term:
@@ -57,13 +58,16 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
     label: Sodium pyruvate
 - preferred_term: Disodium succinate x 6 H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
+  term:
+    id: CHEBI:63686
+    label: ''
 - preferred_term: DL-Malic acid
   term:
     id: CHEBI:6650
@@ -71,8 +75,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000610
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6650
     label: DL-Malic acid
 - preferred_term: Fumaric acid
   term:
@@ -81,8 +85,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000984
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18012
     label: Fumaric acid
 - preferred_term: Trisodium citrate x 2 H2O
   concentration:
@@ -91,9 +95,9 @@ ingredients:
   term:
     id: CHEBI:53258
     label: sodium citrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
-    label: Trisodium citrate x 2 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
+    label: sodium citrate
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -101,18 +105,18 @@ ingredients:
   concentration:
     value: '5.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -121,8 +125,8 @@ ingredients:
   concentration:
     value: '0.29'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: NaNO3
   term:
@@ -141,18 +145,18 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
   concentration:
     value: '9'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 preparation_steps:
 - step_number: 1
@@ -182,6 +186,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "JCM MEDIUM No. 1264" to "jcm_medium_no_1264" for consistent
     matching
-merge_fingerprint: 0bd0433f60eb19e0bcb3f1cdb4bc052bc26484ac29a8daf40dbbc235a468b1e5
+- timestamp: '2026-06-05T07:41:09.818416+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 12 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:00.187694+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:38.976886+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b247ea577c02c81630b1dd5f1138a0d6add549b0fab9ab12c6abf4e82b080a38
+  source: jcm_medium_no_1264.yaml
+merge_fingerprint: b247ea577c02c81630b1dd5f1138a0d6add549b0fab9ab12c6abf4e82b080a38
 merged_from:
 - jcm_medium_no_1264

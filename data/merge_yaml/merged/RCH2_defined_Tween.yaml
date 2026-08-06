@@ -1,6 +1,7 @@
 id: CultureMech:015724
 name: RCH2 defined Tween
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Ammonium chloride
@@ -173,8 +174,8 @@ ingredients:
     value: '0.1'
     unit: MG_PER_L
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Wolfe''s vitamin
     mix'
 - preferred_term: 4-Aminobenzoic acid
@@ -260,12 +261,17 @@ ingredients:
     From Wolfe''s vitamin mix'
 description: Defined minimal media for soil and groundwater bacteria with Tween
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: RCH2 defined Tween
   url: https://github.com/CultureBotAI/CultureBotHT
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI,
+    0 de-grounded (mixture or unverifiable).
 - timestamp: '2026-03-18T04:31:14.366223+00:00'
   curator: import_from_culturebotht.py
   action: IMPORTED
@@ -274,8 +280,27 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015724'
+- timestamp: '2026-05-16T09:04:43.136949+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:53.923430+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:47:15.726464+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:08.075838+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 5ab28dc9ffef5a606c34dd8e1a833964a4ef2b21110eb5d2df06e8b770d1cc06
+  source: rch2_defined_tween.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: 67a169c865cbbf753234dab09a0038b7b8f7150ad318fd2580e3c1423a950f0c
+merge_fingerprint: 5ab28dc9ffef5a606c34dd8e1a833964a4ef2b21110eb5d2df06e8b770d1cc06
 merged_from:
 - rch2_defined_tween

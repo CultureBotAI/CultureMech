@@ -3,6 +3,7 @@ name: trace_element_solution_medium_318
 original_name: Trace element solution (medium 318)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
 notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 3073 | DSMZ Medium: 3073 (mediadive.medium:3073)
@@ -20,8 +21,8 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000213
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32035
     label: KOH
   term:
     id: CHEBI:32035
@@ -38,9 +39,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:004859'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:34.432996'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: KOH'
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:27.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -50,7 +51,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Trace element solution (medium 318)" to "trace_element_solution_medium_318"
     for consistent matching
-- timestamp: '2026-04-17T06:29:21.684298+00:00'
+- timestamp: '2026-05-16T09:03:02.102848+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:22.323025+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:46.912496+00:00'
   curator: recipe-merger
   action: Merged 16 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_3073_Trace_element_solution_medium_318, chitin_stock_solution_medium_766,
@@ -59,6 +70,16 @@ curation_history:
     trace_element_solution_medium_144, trace_element_solution_medium_315, trace_element_solution_medium_318,
     trace_element_solution_medium_574, trace_element_solution_medium_663, trace_element_solution_medium_69,
     trace_elements_solution_medium_1019, zeikus_trace_elements_solution_medium_1343'
+- timestamp: '2026-08-06T03:04:46.912562+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 16 source recipe(s) on fingerprint a0cafceaaf5da7fdba67edf5697e45fb65ed26e001fdb2aef1acfdc71e21a9d9
+  source: KOMODO_3073_Trace_element_solution_medium_318.yaml, chitin_stock_solution_medium_766.yaml,
+    mineral_salt_solution_medium_621.yaml, mineral_solution_1_medium_1033.yaml, trace_element_solution_630.yaml,
+    trace_element_solution_medium_1131.yaml, trace_element_solution_medium_1263.yaml,
+    trace_element_solution_medium_141.yaml, trace_element_solution_medium_144.yaml,
+    trace_element_solution_medium_315.yaml, trace_element_solution_medium_318.yaml,
+    trace_element_solution_medium_574.yaml, trace_element_solu
 synonyms:
 - name: chitin_stock_solution_medium_766
   source: KOMODO

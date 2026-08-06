@@ -1,6 +1,7 @@
 id: CultureMech:015496
 name: BHIS_K3
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Calf brains
@@ -76,7 +77,7 @@ ingredients:
     label: ''
 description: Brain heart infusion salt broth with vitamin K3
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: BHIS_K3
@@ -90,6 +91,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015496'
+- timestamp: '2026-05-16T09:04:40.320890+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:04.822280+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 7921dc71fff7e63fbae2e3a6539d9e8c38f0f091732fb0aaf0941f6dad7eaef0
+  source: bhis_k3.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: 7921dc71fff7e63fbae2e3a6539d9e8c38f0f091732fb0aaf0941f6dad7eaef0

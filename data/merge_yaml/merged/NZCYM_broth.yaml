@@ -3,6 +3,7 @@ name: nzcym_broth
 original_name: NZCYM broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: MgSO4 · 7H2O
@@ -12,8 +13,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
   term:
-    id: CHEBI:32599
-    label: ''
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: NaCl
   concentration:
     value: '5'
@@ -23,9 +24,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: H2O
   concentration:
     value: '1'
@@ -34,9 +35,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Bacto-yeast extract
   concentration:
     value: '5'
@@ -47,12 +48,6 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino Acids
 - preferred_term: NZ amine
   concentration:
     value: '10'
@@ -87,6 +82,29 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "NZCYM broth" to "nzcym_broth" for consistent matching
-merge_fingerprint: 4a238f4c725c8036fb68c80aa11a1e359841a8ea613abcfc06e094cc58793785
+- timestamp: '2026-06-05T07:41:40.269882+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:49.456332+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T06:58:28.541882+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-08-06T03:05:51.837895+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 4630d7ae5b3c989797fa1addac24b240b66326ae649507d4ababac58f1e02456
+  source: nzcym_broth.yaml
+merge_fingerprint: 4630d7ae5b3c989797fa1addac24b240b66326ae649507d4ababac58f1e02456
 merged_from:
 - nzcym_broth

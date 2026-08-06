@@ -1,92 +1,113 @@
-id: CultureMech:002340
+id: CultureMech:007781
 name: lb_luria_bertani_agar_with_kanamycin_and_rifampicin
-original_name: LB (LURIA-BERTANI) AGAR WITH KANAMYCIN AND RIFAMPICIN
+original_name: LB (Luria-Bertani) Agar With Kanamycin And Rifampicin
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_value: 7.0
-media_term:
-  preferred_term: JCM Medium J1168
-  term:
-    id: mediadive.medium:J1168
-    label: LB (LURIA-BERTANI) AGAR WITH KANAMYCIN AND RIFAMPICIN
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1168'
 ingredients:
-- preferred_term: Tryptone
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl
   concentration:
     value: '10'
     unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: NaCl
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: Agar
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
-- preferred_term: Kanamycin sulfate
+  notes: 'Role: Solidifying component'
   term:
-    id: CHEBI:6109
-    label: Kanamycin sulfate
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Yeast extract (BD-Difco)
   concentration:
-    value: '0.05'
+    value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001101
-    label: Kanamycin sulfate
-- preferred_term: Rifampicin
+  notes: 'Properties: Undefined component'
+- preferred_term: Tryptone (BD-Difco)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Kanamycin sulfate (dissolved in distilled water)
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Solution, Organic compound, Defined
+    component'
+- preferred_term: Rifampicin (dissolved in methanol)
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Defined component, Organic compound,
+    Simple component'
+media_term:
+  preferred_term: TOGO Medium M1250
   term:
-    id: CHEBI:28077
-    label: Rifampicin
-  concentration:
-    value: '0.025'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000912
-    label: Rifampicin
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 7.0.
-- step_number: 2
-  action: FILTER_STERILIZE
-  description: 'After autoclaving, aseptically add the following antibiotics (filter-sterilized):'
+    id: TOGO:M1250
+    label: LB (Luria-Bertani) Agar With Kanamycin And Rifampicin
+notes: 'Source: https://togomedium.org/medium/M1250
+
+  Original source: JCM - JCM_M1168
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1168'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:18.878945Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J1168'
-- timestamp: '2026-03-13T06:19:12.515447Z'
+- timestamp: '2026-01-27T06:35:54.221040Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1250'
+- timestamp: '2026-01-28T19:48:07.448497Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:51.415889Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002340'
-- timestamp: '2026-03-17T06:30:55.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:007781'
+- timestamp: '2026-03-17T06:29:40.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:25.503233+00:00'
+- timestamp: '2026-03-17T19:46:09.838302+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "LB (LURIA-BERTANI) AGAR WITH KANAMYCIN AND RIFAMPICIN"
+  notes: Normalized name from "LB (Luria-Bertani) Agar With Kanamycin And Rifampicin"
     to "lb_luria_bertani_agar_with_kanamycin_and_rifampicin" for consistent matching
-merge_fingerprint: 0472ff8f8a0355d722af4a1cfb2c7a7734526c17758375bb6525e03b5f9cf59d
+- timestamp: '2026-06-05T07:40:31.751428+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:07.131777+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 9161f654e8d9c8431d424c4ce35c76ee7e654b3bbbc27cc46450b9c250445e5f
+  source: TOGO_M1250_LB_Luria-Bertani_Agar_With_Kanamycin_And_Rifampicin.yaml
+merge_fingerprint: 9161f654e8d9c8431d424c4ce35c76ee7e654b3bbbc27cc46450b9c250445e5f
 merged_from:
-- lb_luria_bertani_agar_with_kanamycin_and_rifampicin
+- TOGO_M1250_LB_Luria-Bertani_Agar_With_Kanamycin_And_Rifampicin

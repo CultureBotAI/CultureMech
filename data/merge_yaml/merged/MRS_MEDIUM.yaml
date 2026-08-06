@@ -1,122 +1,230 @@
-id: CultureMech:000647
+id: CultureMech:008069
 name: mrs_medium
-original_name: MRS MEDIUM
+original_name: MRS Medium
 category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
-ph_range: 6.2-6.5
-media_term:
-  preferred_term: DSMZ Medium 11
-  term:
-    id: mediadive.medium:11
-    label: MRS MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium11.pdf'
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Casein peptone
+- preferred_term: Distilled water
   concentration:
-    value: '10'
+    value: '1'
     unit: G_PER_L
-- preferred_term: Meat extract
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4·7H2O
   concentration:
-    value: '10'
+    value: '0.2'
     unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
 - preferred_term: Yeast extract
   concentration:
     value: '5'
     unit: G_PER_L
-- preferred_term: Glucose
-  term:
-    id: CHEBI:17234
-    label: Glucose
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
-    label: Glucose
-- preferred_term: Tween 80
-  term:
-    id: CHEBI:53426
-    label: Tween 80
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000190
-    label: Tween 80
+  notes: 'Role: Nutrient source; Properties: Undefined component'
 - preferred_term: K2HPO4
-  term:
-    id: CHEBI:131527
-    label: K2HPO4
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
-- preferred_term: Na-acetate
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
   term:
-    id: CHEBI:32954
-    label: Na-acetate
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: Sodium acetate
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
-    label: Na-acetate
-- preferred_term: (NH4)3 citrate
+  notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
   term:
-    id: CHEBI:63037
-    label: (NH4)3 citrate
+    id: CHEBI:32954
+    label: sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
+- preferred_term: Tween 80
   concentration:
-    value: '2'
+    value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000335
-    label: (NH4)3 citrate
-- preferred_term: MgSO4 x 7 H2O
+  notes: 'Role: Surfactant; Properties: Organic compound, Simple component, Defined
+    component'
   term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: MnSO4 x H2O
-  term:
-    id: CHEBI:86364
-    label: MnSO4 x H2O
+    id: CHEBI:53426
+    label: polysorbate 80
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53426
+    label: polysorbate 80
+- preferred_term: MnSO4·nH2O
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: MnSO4 x H2O
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 6.2 - 6.5.
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:86360
+    label: manganese(II) sulfate
+- preferred_term: Diammonium hydrogen citrate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Defined component, Organic compound,
+    Simple component'
+  term:
+    id: CHEBI:63076
+    label: diammonium citrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63076
+    label: diammonium citrate
+- preferred_term: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Meat extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M1523
+  term:
+    id: TOGO:M1523
+    label: MRS Medium
+notes: 'Source: https://togomedium.org/medium/M1523
+
+  Original source: NBRC - NBRC_M310
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=310'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:09.971970Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 11'
-- timestamp: '2026-03-13T06:18:57.063796Z'
+- timestamp: '2026-01-27T06:35:57.794722Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1523'
+- timestamp: '2026-01-28T19:48:13.517278Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:53.345362Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000647'
-- timestamp: '2026-03-17T06:30:14.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:008069'
+- timestamp: '2026-03-17T06:29:54.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:08.222970+00:00'
+- timestamp: '2026-03-17T19:46:11.870002+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MRS MEDIUM" to "mrs_medium" for consistent matching
-merge_fingerprint: abcd760ba289f3ca344a6053365af73787e83132905d3d6feadf2b9aec132838
+  notes: Normalized name from "MRS Medium" to "mrs_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:33.182473+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:23.366523+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:46:47.833431+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:08.851849+00:00'
+  curator: recipe-merger
+  action: Merged 5 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M1523_MRS_Medium, acidic_mrs_medium_ph_4_8, acidic_mrs_medium_ph_5_2,
+    alkalic_mrs_medium_ph_8_0, mrs_ca'
+- timestamp: '2026-08-06T03:05:08.851905+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 5 source recipe(s) on fingerprint 7a0ba004b08df494b3a44f22b79fc3402e090032c4a5e5bf08cf8065c235654d
+  source: TOGO_M1523_MRS_Medium.yaml, acidic_mrs_medium_ph_4_8.yaml, acidic_mrs_medium_ph_5_2.yaml,
+    alkalic_mrs_medium_ph_8_0.yaml, mrs_ca.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/acidic_mrs_medium_ph_4_8.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008180
+  name: acidic_mrs_medium_ph_4_8
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/acidic_mrs_medium_ph_5_2.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008477
+  name: acidic_mrs_medium_ph_5_2
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/alkalic_mrs_medium_ph_8_0.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008400
+  name: alkalic_mrs_medium_ph_8_0
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/togo_medium_m1564.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008113
+  name: togo_medium_m1564
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+synonyms:
+- name: acidic_mrs_medium_ph_4_8
+  source: TOGO
+  source_id: TOGO:M1625
+  original_category: bacterial
+- name: acidic_mrs_medium_ph_5_2
+  source: TOGO
+  source_id: TOGO:M1900
+  original_category: bacterial
+- name: alkalic_mrs_medium_ph_8_0
+  source: TOGO
+  source_id: TOGO:M1828
+  original_category: bacterial
+- name: mrs_ca
+  source: TOGO
+  source_id: TOGO:M2100
+  original_category: bacterial
+categories:
+- bacterial
 merged_from:
-- mrs_medium
+- TOGO_M1523_MRS_Medium
+- acidic_mrs_medium_ph_4_8
+- acidic_mrs_medium_ph_5_2
+- alkalic_mrs_medium_ph_8_0
+- mrs_ca
+merge_fingerprint: 7a0ba004b08df494b3a44f22b79fc3402e090032c4a5e5bf08cf8065c235654d

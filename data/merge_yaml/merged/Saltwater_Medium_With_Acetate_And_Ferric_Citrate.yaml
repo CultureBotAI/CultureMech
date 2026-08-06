@@ -3,6 +3,7 @@ name: saltwater_medium_with_acetate_and_ferric_citrate
 original_name: Saltwater Medium With Acetate And Ferric Citrate
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sol. 1
@@ -24,8 +25,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: NaCl
   concentration:
@@ -36,9 +37,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.15'
@@ -56,9 +57,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
@@ -69,9 +70,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -81,8 +82,8 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: MgCl2・6H2O
   concentration:
@@ -102,9 +103,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Na2SO4
   concentration:
     value: '4'
@@ -114,9 +115,9 @@ ingredients:
   term:
     id: CHEBI:32149
     label: sodium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
-    label: Na2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
 - preferred_term: KBr
   concentration:
     value: '0.09'
@@ -126,9 +127,9 @@ ingredients:
   term:
     id: CHEBI:32030
     label: potassium bromide
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001123
-    label: KBr
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32030
+    label: potassium bromide
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: Gas'
   concentration:
@@ -153,16 +154,16 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
     label: sodium acetate
 - preferred_term: ferric citrate
   concentration:
     value: '0.74'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Organic compound, Solution, Defined component'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000281
+  mediaingredientmech_chebi_term:
+    id: CHEBI:144421
     label: ferric citrate
   term:
     id: CHEBI:144421
@@ -176,9 +177,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
@@ -209,11 +210,11 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:58.895139'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     N2; Added default concentration for ingredient: N2'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:05:00.164701+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -227,12 +228,12 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009852'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:01.091893'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name; Added default solution
     name; Added default solution name; Added default solution name; Added default
     solution name; Added default solution name; Added default solution name; Added
     default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:42.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -242,6 +243,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Saltwater Medium With Acetate And Ferric Citrate" to
     "saltwater_medium_with_acetate_and_ferric_citrate" for consistent matching
+- timestamp: '2026-05-16T09:03:18.221886+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:41.605218+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 11 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:50.703255+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:16.345694+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint a6884485a3e5a6c3da4f08bf9a5e5f2ffa4de2ebac90899b62f4b5e597d953aa
+  source: TOGO_M464_Saltwater_Medium_With_Acetate_And_Ferric_Citrate.yaml
 solutions:
 - preferred_term: sodium acetate solution
   composition: []

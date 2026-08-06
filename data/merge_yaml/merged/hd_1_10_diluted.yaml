@@ -3,6 +3,7 @@ name: hd_1_10_diluted
 original_name: HD (1:10 diluted)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 5.0
 media_term:
@@ -24,8 +25,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Yeast extract
   concentration:
@@ -39,8 +40,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (if required)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -66,10 +67,31 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HD (1:10 diluted)" to "hd_1_10_diluted" for consistent
     matching
-- timestamp: '2026-04-17T06:29:15.786283+00:00'
+- timestamp: '2026-06-05T07:40:19.183261+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:40.309640+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_1124_HD_1_10_diluted, hd_1_10_diluted'
+- timestamp: '2026-08-06T03:04:40.309680+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint aefeec1eab81bc6ec50d123667e9d603358631c063f3b731f2e44cd888a8f678
+  source: KOMODO_1124_HD_1_10_diluted.yaml, hd_1_10_diluted.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/hd_1_10_diluted.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000562
+  name: hd_1_10_diluted
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and concentration
+    signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.
 categories:
 - bacterial
 merged_from:

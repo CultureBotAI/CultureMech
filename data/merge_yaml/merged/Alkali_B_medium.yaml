@@ -3,6 +3,7 @@ name: alkali_b_medium
 original_name: Alkali B medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
@@ -24,11 +25,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
   term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4·7H2O
 - preferred_term: Yeast extract
   concentration:
     value: '0.1'
@@ -43,9 +44,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: CuSO4·5H2O
   concentration:
     value: '0.001'
@@ -55,9 +56,9 @@ ingredients:
   term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
-    label: CuSO4·5H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
 - preferred_term: Glucose
   concentration:
     value: '10'
@@ -67,9 +68,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: L-Asparagine
   concentration:
     value: '0.3'
@@ -79,9 +80,9 @@ ingredients:
   term:
     id: CHEBI:17196
     label: L-asparagine
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000282
-    label: L-Asparagine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17196
+    label: L-asparagine
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -90,9 +91,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Fe2(SO4)3·6H2O
   concentration:
     value: '0.01'
@@ -111,9 +112,9 @@ ingredients:
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
-    label: ZnSO4·7H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
 - preferred_term: Na2CO3
   concentration:
     value: '10'
@@ -123,9 +124,9 @@ ingredients:
   term:
     id: CHEBI:29377
     label: sodium carbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
-    label: Na2CO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
 - preferred_term: MnSO4·7H2O
   concentration:
     value: '0.001'
@@ -134,7 +135,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86360
-    label: ''
+    label: manganese(II) sulfate
 media_term:
   preferred_term: TOGO Medium M1799
   term:
@@ -169,9 +170,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008367'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:51.352851'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:27.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -181,6 +182,31 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Alkali B medium" to "alkali_b_medium" for consistent
     matching
+- timestamp: '2026-05-16T09:03:23.583568+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:47.799577+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:35.492628+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:46:52.766801+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:22.312790+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 8a14dff4bec8da7e83952bfc4ada79976b0feecacccfda0b6c1c99ed43f3b609
+  source: alkali_b_medium.yaml
 solutions:
 - preferred_term: Solution A*
   term:
@@ -200,6 +226,6 @@ solutions:
     unit: G_PER_L
   notes: See mediadive_5343_Solution_B.yaml for composition
   name: Unknown solution
-merge_fingerprint: fd21d9e32a95b76aadd2b565615b2773a2c12270a03b25911a2b4c8dd88225c5
+merge_fingerprint: 8a14dff4bec8da7e83952bfc4ada79976b0feecacccfda0b6c1c99ed43f3b609
 merged_from:
 - alkali_b_medium

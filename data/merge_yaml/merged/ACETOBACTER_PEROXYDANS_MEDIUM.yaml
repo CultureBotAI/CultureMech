@@ -3,6 +3,7 @@ name: acetobacter_peroxydans_medium
 original_name: ACETOBACTER PEROXYDANS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 254
@@ -27,8 +28,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Ethanol
   term:
@@ -37,8 +38,8 @@ ingredients:
   concentration:
     value: '60'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000686
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16236
     label: Ethanol
 applications:
 - Microbial cultivation
@@ -64,11 +65,34 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ACETOBACTER PEROXYDANS medium" to "acetobacter_peroxydans_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:21.041880+00:00'
+- timestamp: '2026-06-05T07:40:21.912101+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:46.206305+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_254_ACETOBACTER_PEROXYDANS_medium, acetobacter_peroxydans_medium'
+- timestamp: '2026-08-06T03:04:46.206354+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 5d5a1f2033a64a98948717cd80c153cc11f050418504c6d664ae3365b392e247
+  source: KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml, acetobacter_peroxydans_medium.yaml
 kg_microbe_match: mediadive.medium:254
+parent_media:
+  path: data/normalized_yaml/bacterial/acetobacter_peroxydans_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001353
+  name: acetobacter_peroxydans_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 254; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 254; local ingredient
+  and concentration signatures match.
 categories:
 - bacterial
 merged_from:

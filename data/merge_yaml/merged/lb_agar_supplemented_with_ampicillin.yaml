@@ -3,6 +3,7 @@ name: lb_agar_supplemented_with_ampicillin
 original_name: LB agar (supplemented with ampicillin)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: ampicillin
@@ -14,9 +15,9 @@ ingredients:
   term:
     id: CHEBI:28971
     label: Ampicillin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000826
-    label: ampicillin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28971
+    label: Ampicillin
 - preferred_term: Tryptone
   term:
     id: MICRO:0000182
@@ -102,9 +103,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:54.041179'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: LB agar'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:02.423648Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -118,6 +119,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "LB agar (supplemented with ampicillin)" to "lb_agar_supplemented_with_ampicillin"
     for consistent matching
+- timestamp: '2026-05-16T09:03:38.780611+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:10.812007+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:39.971540+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 0937fbc4a265aedcb8d23e2ea8c6acbd12ec62bfe7eb39b5be79ab6df89ae355
+  source: lb_agar_supplemented_with_ampicillin.yaml
 merge_fingerprint: 0937fbc4a265aedcb8d23e2ea8c6acbd12ec62bfe7eb39b5be79ab6df89ae355
 merged_from:
 - lb_agar_supplemented_with_ampicillin

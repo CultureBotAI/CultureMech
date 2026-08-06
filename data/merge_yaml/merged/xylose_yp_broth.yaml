@@ -1,103 +1,146 @@
-id: CultureMech:002657
+id: CultureMech:009518
 name: xylose_yp_broth
-original_name: XYLOSE-YP BROTH
+original_name: Xylose-YP Broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 6.8
-media_term:
-  preferred_term: JCM Medium J2
-  term:
-    id: mediadive.medium:J2
-    label: XYLOSE-YP BROTH
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=2'
 ingredients:
-- preferred_term: Xylose
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
   term:
-    id: CHEBI:18222
-    label: Xylose
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000900
-    label: Xylose
-- preferred_term: Yeast extract
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: Polypeptone
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Sodium acetate
-  term:
-    id: CHEBI:32954
-    label: Sodium acetate
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
-    label: Sodium acetate
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: MnSO4 x n H2O
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
-    label: FeSO4 x 7 H2O
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: NaCl
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: FeSO4・7H2O
   concentration:
-    value: '0.01'
+    value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 6.8.
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:75836
+    label: ''
+- preferred_term: Sodium acetate
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
+- preferred_term: MnSO4・xH2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:86360
+    label: ''
+- preferred_term: Xylose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:18222
+    label: xylose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18222
+    label: xylose
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Polypepton (Nihon Pharm. Co.)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2
+  term:
+    id: TOGO:M2
+    label: Xylose-YP Broth
+notes: 'Source: https://togomedium.org/medium/M2
+
+  Original source: JCM - JCM_M2
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=2'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:15.571869Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J2'
-- timestamp: '2026-03-13T06:19:14.817570Z'
+- timestamp: '2026-01-27T06:35:54.599112Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M2'
+- timestamp: '2026-01-28T19:48:38.337194Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:06.528932Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002657'
-- timestamp: '2026-03-17T06:30:42.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:009518'
+- timestamp: '2026-03-17T06:30:47.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:28.126581+00:00'
+- timestamp: '2026-03-17T19:46:25.538003+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "XYLOSE-YP BROTH" to "xylose_yp_broth" for consistent
+  notes: Normalized name from "Xylose-YP Broth" to "xylose_yp_broth" for consistent
     matching
-merge_fingerprint: 3787cbeb91165931cebde3af4671fc4cca8caf9a59cccb8c60bd3ba1a9aa8658
+- timestamp: '2026-06-05T07:40:39.645741+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:29.054548+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-08-06T03:05:14.250712+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint bfcbcf23852e6adefdd20bb0b1802652cf7c0c01d1a907486d96575a6a2966bd
+  source: TOGO_M2_Xylose-YP_Broth.yaml
+merge_fingerprint: bfcbcf23852e6adefdd20bb0b1802652cf7c0c01d1a907486d96575a6a2966bd
 merged_from:
-- xylose_yp_broth
+- TOGO_M2_Xylose-YP_Broth

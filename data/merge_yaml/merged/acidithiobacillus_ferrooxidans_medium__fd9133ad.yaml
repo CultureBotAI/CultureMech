@@ -1,0 +1,120 @@
+id: CultureMech:001847
+name: acidithiobacillus_ferrooxidans_medium
+original_name: ACIDITHIOBACILLUS FERROOXIDANS MEDIUM
+category: bacterial
+medium_type: DEFINED
+composition_type: DEFINED
+physical_state: LIQUID
+ph_value: 1.8
+media_term:
+  preferred_term: DSMZ Medium 70
+  term:
+    id: mediadive.medium:70
+    label: ACIDITHIOBACILLUS FERROOXIDANS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium70.pdf'
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '33.3'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+- preferred_term: H2SO4
+  term:
+    id: CHEBI:26836
+    label: H2SO4
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26836
+    label: H2SO4
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 1.8 with 2N sulfuric acid. Sterilize by autoclaving for
+    15 min at 121°C.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.086927Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 70'
+- timestamp: '2026-03-13T06:19:07.703002Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001847'
+- timestamp: '2026-03-17T06:30:52.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:20.045827+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ACIDITHIOBACILLUS FERROOXIDANS MEDIUM" to "acidithiobacillus_ferrooxidans_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:47.353381+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:52.617238+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:21.991377+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: acidithiobacillus_ferrooxidans_medium, thiobacillus_ferrooxidans_medium_with_ferrous_sulfate'
+- timestamp: '2026-08-06T03:05:21.991424+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint fd9133adba69616a0e7f496435f9d7191a5ff792b7fb4cbab2c74947d2bc5968
+  source: acidithiobacillus_ferrooxidans_medium.yaml, thiobacillus_ferrooxidans_medium_with_ferrous_sulfate.yaml
+synonyms:
+- name: thiobacillus_ferrooxidans_medium_with_ferrous_sulfate
+  source: KOMODO
+  source_id: komodo.medium:70
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- acidithiobacillus_ferrooxidans_medium
+- thiobacillus_ferrooxidans_medium_with_ferrous_sulfate
+merge_fingerprint: fd9133adba69616a0e7f496435f9d7191a5ff792b7fb4cbab2c74947d2bc5968

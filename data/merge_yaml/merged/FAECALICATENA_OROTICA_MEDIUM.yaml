@@ -3,6 +3,7 @@ name: faecalicatena_orotica_medium
 original_name: FAECALICATENA OROTICA MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:
@@ -23,32 +24,32 @@ ingredients:
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '1.36'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '6.95'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: Na-orotate
   term:
     id: CHEBI:132101
-    label: Na-orotate
+    label: sodium orotate
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000888
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132101
     label: Na-orotate
 - preferred_term: Riboflavin
   term:
@@ -57,8 +58,8 @@ ingredients:
   concentration:
     value: '0.015'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: Resazurin
   term:
@@ -67,18 +68,18 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: Na-thioglycolate
   term:
     id: CHEBI:86481
-    label: Na-thioglycolate
+    label: sodium thioglycolate
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000569
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86481
     label: Na-thioglycolate
 preparation_steps:
 - step_number: 1
@@ -106,10 +107,34 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "FAECALICATENA OROTICA MEDIUM" to "faecalicatena_orotica_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:30:03.013481+00:00'
+- timestamp: '2026-06-05T07:40:59.838789+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:56.770484+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:33.847971+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: faecalicatena_orotica_medium, orotic_acid_medium'
+- timestamp: '2026-08-06T03:05:33.848008+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 0eac8af5813480c576c30eae94119cc31225df501c2e63d92694d31444c78747
+  source: faecalicatena_orotica_medium.yaml, orotic_acid_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/orotic_acid_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004621
+  name: orotic_acid_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.
 synonyms:
 - name: orotic_acid_medium
   source: KOMODO

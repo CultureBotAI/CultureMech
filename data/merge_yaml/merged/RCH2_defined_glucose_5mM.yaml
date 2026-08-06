@@ -1,6 +1,7 @@
 id: CultureMech:015703
 name: RCH2 defined glucose 5mM
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Ammonium chloride
@@ -172,8 +173,8 @@ ingredients:
     value: '0.1'
     unit: MG_PER_L
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Wolfe''s vitamin
     mix'
 - preferred_term: 4-Aminobenzoic acid
@@ -260,7 +261,7 @@ ingredients:
 description: Defined minimal media for soil and groundwater bacteria with glucose
   5mM
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: RCH2 defined glucose 5mM
@@ -274,29 +275,49 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015703'
-- timestamp: '2026-04-17T06:30:31.324689+00:00'
+- timestamp: '2026-05-16T09:04:42.868019+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:53.682200+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:47:15.635827+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:07.751428+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: rch2_defined_1percent_glucose, rch2_defined_glucose, rch2_defined_glucose_0_25xmineral,
     rch2_defined_glucose_5mm'
+- timestamp: '2026-08-06T03:06:07.751491+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 4 source recipe(s) on fingerprint d48d9a7311e2376e8a99c6b2f30c86e91eafe62386858734540b3d1c29d2c482
+  source: rch2_defined_1percent_glucose.yaml, rch2_defined_glucose.yaml, rch2_defined_glucose_0_25xmineral.yaml,
+    rch2_defined_glucose_5mm.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 original_name: RCH2 defined glucose 5mM
 synonyms:
 - name: RCH2 defined 1percent glucose
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 - name: RCH2 defined glucose
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 - name: RCH2 defined glucose 0.25xMineral
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 categories:
-- SPECIALIZED
+- specialized
 merged_from:
 - rch2_defined_1percent_glucose
 - rch2_defined_glucose
 - rch2_defined_glucose_0_25xmineral
 - rch2_defined_glucose_5mm
-merge_fingerprint: 8c55c5666e0adc95a93dd387c30e5bf9199f4d16fcb0dcf378df06666fcd17d5
+merge_fingerprint: d48d9a7311e2376e8a99c6b2f30c86e91eafe62386858734540b3d1c29d2c482

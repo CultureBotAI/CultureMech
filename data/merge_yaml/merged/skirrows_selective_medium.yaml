@@ -3,6 +3,7 @@ name: skirrows_selective_medium
 original_name: Skirrow's selective medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: sheep blood
@@ -37,6 +38,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Skirrow's selective medium" to "skirrows_selective_medium"
     for consistent matching
+- timestamp: '2026-08-06T03:05:55.786597+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 3ba505881410b8be3fd08d6e78fc58f90b7849a454261edbd3089daf2252fd25
+  source: skirrows_selective_medium.yaml
 merge_fingerprint: 3ba505881410b8be3fd08d6e78fc58f90b7849a454261edbd3089daf2252fd25
 merged_from:
 - skirrows_selective_medium

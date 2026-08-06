@@ -1,0 +1,291 @@
+id: CultureMech:002910
+name: thiorhodococcus_bheemlicum_medium
+original_name: THIORHODOCOCCUS BHEEMLICUM MEDIUM
+category: bacterial
+medium_type: COMPLEX
+composition_type: SEMI_DEFINED
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J561
+  term:
+    id: mediadive.medium:J561
+    label: THIORHODOCOCCUS BHEEMLICUM MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=561'
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  concentration:
+    value: '0.489716'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+  notes: Copied from referenced JCM Medium 561
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.146915'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  notes: Copied from referenced JCM Medium 561
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1.95886'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  notes: Copied from referenced JCM Medium 561
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  concentration:
+    value: '0.333007'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+  notes: Copied from referenced JCM Medium 561
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '19.5886'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+  notes: Copied from referenced JCM Medium 561
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.391773'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 561
+- preferred_term: Sodium pyruvate
+  term:
+    id: CHEBI:50144
+    label: Sodium pyruvate
+  concentration:
+    value: '2.9383'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
+    label: Sodium pyruvate
+  notes: Copied from referenced JCM Medium 561
+- preferred_term: Ferric citrate
+  term:
+    id: CHEBI:144421
+    label: Ferric citrate
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:144421
+    label: Ferric citrate
+  notes: Copied from referenced JCM Medium 561
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: NaHCO3
+  notes: Copied from referenced JCM Medium 561
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.240182'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  notes: Copied from referenced JCM Medium 561
+- preferred_term: Na2S2O3 x 5 H2O
+  term:
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
+  concentration:
+    value: '1.48912'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
+  notes: Copied from referenced JCM Medium 561
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: HCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
+    label: HCl
+  notes: Copied from referenced JCM Medium 561
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.0699301'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
+    label: ZnCl2
+  notes: Copied from referenced JCM Medium 561
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.0999001'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  notes: Copied from referenced JCM Medium 561
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  concentration:
+    value: '0.0599401'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: H3BO3
+  notes: Copied from referenced JCM Medium 561
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.1998'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  notes: Copied from referenced JCM Medium 561
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.01998'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  notes: Copied from referenced JCM Medium 561
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.01998'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  notes: Copied from referenced JCM Medium 561
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.03996'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  notes: Copied from referenced JCM Medium 561
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave except NaHCO3, Na2S x 9H2O and Na2S2O3 x 5H2O. After cooling,
+    aseptically add filter-sterilized NaHCO3, Na2S x 9H2O and Na2S2O3 x 5H2O solutions
+    to the medium.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.939420Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J561'
+- timestamp: '2026-03-13T06:19:16.507216Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002910'
+- timestamp: '2026-03-17T06:30:19.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:30.068347+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "THIORHODOCOCCUS BHEEMLICUM MEDIUM" to "thiorhodococcus_bheemlicum_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:51.719968+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 18 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:13.606739+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:22.757430+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: allochromatium_renukaii_medium, lamprobacter_roseus_medium, thiorhodococcus_bheemlicum_medium'
+- timestamp: '2026-08-06T03:05:22.757484+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint cb2983243f44b087b4ce1a8b29342d4245542de762ab1342b209791ffdbef80a
+  source: allochromatium_renukaii_medium.yaml, lamprobacter_roseus_medium.yaml, thiorhodococcus_bheemlicum_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/lamprobacter_roseus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002911
+  name: lamprobacter_roseus_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.
+synonyms:
+- name: allochromatium_renukaii_medium
+  source: MediaDive
+  source_id: mediadive.medium:J570
+  original_category: bacterial
+- name: lamprobacter_roseus_medium
+  source: MediaDive
+  source_id: mediadive.medium:J562
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- allochromatium_renukaii_medium
+- lamprobacter_roseus_medium
+- thiorhodococcus_bheemlicum_medium
+merge_fingerprint: cb2983243f44b087b4ce1a8b29342d4245542de762ab1342b209791ffdbef80a

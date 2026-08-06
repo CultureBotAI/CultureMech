@@ -3,6 +3,7 @@ name: deshpande_medium_with_met_asp_gly_arg_fang_et_al
 original_name: Deshpande medium with Met, Asp, Gly, Arg; Fang et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Glycine
@@ -13,8 +14,8 @@ ingredients:
     value: '5.32836'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gly'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000244
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15428
     label: Glycine
 - preferred_term: L-Aspartate
   concentration:
@@ -29,8 +30,8 @@ ingredients:
     value: '2.68078'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:met-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000274
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16643
     label: L-Methionine
 - preferred_term: Arginine
   term:
@@ -39,21 +40,30 @@ ingredients:
   concentration:
     value: '5.7405'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000341
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29016
     label: Arginine
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.00450512'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '80.3673'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '44.0898'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Cobalt chloride
   concentration:
     value: '8.40583e-05'
@@ -68,17 +78,23 @@ ingredients:
   concentration:
     value: '0.00061931'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Manganese chloride
   concentration:
     value: '0.000313803'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: Cupric sulfate
   concentration:
     value: '4.00481e-05'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258
@@ -86,8 +102,8 @@ ingredients:
   concentration:
     value: '15.5003'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
     label: Sodium citrate
 - preferred_term: '''Iron(III'
   concentration:
@@ -101,6 +117,9 @@ ingredients:
   concentration:
     value: '3.23661e-05'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:91249
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -130,6 +149,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Deshpande medium with Met, Asp, Gly, Arg; Fang et al"
     to "deshpande_medium_with_met_asp_gly_arg_fang_et_al" for consistent matching
+- timestamp: '2026-06-05T07:40:55.741935+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:30.053469+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 0df81e54b669f07b3a774260fd82993b8fc65f500d03de245d394314c989c5fb
+  source: deshpande_medium_with_met_asp_gly_arg_fang_et_al.yaml
 media_term:
   preferred_term: MediaDB Medium 207
   term:
@@ -141,6 +171,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 5438c60263c769627ee7a4653d9494b619c66a65db37e465d2c7c652e3e12aba
+merge_fingerprint: 0df81e54b669f07b3a774260fd82993b8fc65f500d03de245d394314c989c5fb
 merged_from:
 - deshpande_medium_with_met_asp_gly_arg_fang_et_al

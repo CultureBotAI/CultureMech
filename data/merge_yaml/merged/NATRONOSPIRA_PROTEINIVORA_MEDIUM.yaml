@@ -1,243 +1,242 @@
-id: CultureMech:002312
+id: CultureMech:007748
 name: natronospira_proteinivora_medium
-original_name: NATRONOSPIRA PROTEINIVORA MEDIUM
+original_name: Natronospira Proteinivora Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 6.8
-media_term:
-  preferred_term: JCM Medium J1139
-  term:
-    id: mediadive.medium:J1139
-    label: NATRONOSPIRA PROTEINIVORA MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1139'
 ingredients:
-- preferred_term: Tryptone
+- preferred_term: Basic mineral salt medium 1 (see below)
   concentration:
-    value: '15'
+    value: '500'
     unit: G_PER_L
-- preferred_term: Yeast extract
+- preferred_term: Basal medium 2 (see below)
   concentration:
-    value: '2'
+    value: '500'
     unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '102.0'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Defined component,
+    Inorganic compound [Merged 3 duplicates: 1.0, 1.0, 100.0]'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: NaCl
+  concentration:
+    value: '256.0'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component [Merged 2 duplicates: 240.0, 16.0]'
   term:
     id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '122285.71'
-    unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 120000.0, 2285.71]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: K2HPO4
+  concentration:
+    value: '4.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound [Merged 3 duplicates: 2.5, 2.0]'
   term:
     id: CHEBI:131527
-    label: K2HPO4
-  concentration:
-    value: '1535.714'
-    unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 1250.0, 285.714]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: (NH4)2SO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Simple component, Defined component,
+    Inorganic compound'
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
-  concentration:
-    value: '250'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: (NH4)2SO4
-- preferred_term: MgCl2
-  term:
-    id: CHEBI:6636
-    label: MgCl2
-  concentration:
-    value: '2.0'
-    unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 1.0, 1.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000663
-    label: MgCl2
-- preferred_term: Na2CO3
-  term:
-    id: CHEBI:29377
-    label: Na2CO3
-  concentration:
-    value: '27142.9'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
-    label: Na2CO3
+    label: ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 - preferred_term: NaHCO3
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
   term:
     id: CHEBI:32139
-    label: NaHCO3
+    label: sodium hydrogencarbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: Na2CO3
   concentration:
-    value: '4285.71'
+    value: '190'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
-- preferred_term: NH4Cl
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
   term:
-    id: CHEBI:31206
-    label: NH4Cl
-  concentration:
-    value: '4'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+    id: CHEBI:29377
+    label: sodium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
 - preferred_term: Casein
-  term:
-    id: FOODON:03420180
-    label: Casein
-  concentration:
-    value: '50'
-    unit: G_PER_L
-- preferred_term: EDTA
-  term:
-    id: CHEBI:64755
-    label: EDTA
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000165
-    label: EDTA
-- preferred_term: FeSO4 x 7 H2O
+  notes: 'Role: Nitrogen source; Properties: Undefined component'
+- preferred_term: NaOH
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    id: CHEBI:32145
+    label: sodium hydroxide
   concentration:
-    value: '2'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
-    label: FeSO4 x 7 H2O
-- preferred_term: ZnSO4 x 7 H2O
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+media_term:
+  preferred_term: TOGO Medium M1220
   term:
-    id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
-    label: ZnSO4 x 7 H2O
-- preferred_term: MnCl2 x 4 H2O
-  term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
-    label: MnCl2 x 4 H2O
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
-- preferred_term: CoCl2 x 6 H2O
-  term:
-    id: CHEBI:35696
-    label: CoCl2 x 6 H2O
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
-    label: CoCl2 x 6 H2O
-- preferred_term: CuCl2 x 2 H2O
-  term:
-    id: CHEBI:86318
-    label: CuCl2 x 2 H2O
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
-    label: CuCl2 x 2 H2O
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: NiCl2 x 6 H2O
-  concentration:
-    value: '0.02'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
-    label: NiCl2 x 6 H2O
-- preferred_term: Na2MoO4 x 2 H2O
-  term:
-    id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
-    label: Na2MoO4 x 2 H2O
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: Aseptically combine the above described media and solutions.
-- step_number: 2
-  action: AUTOCLAVE
-  description: 'Add components to distilled water and bring volume to 1.0 L. Adjust
-    pH to 6.8 - 6.9 by 1 M K2HPO4 and autoclave. After cooling, add the following
-    solutions (autoclaved):'
-- step_number: 3
-  action: AUTOCLAVE
-  description: 'Add components to distilled water and bring volume to 1.0 L. Check
-    pH of the medium to be 9.9 - 10.0. Autoclave and let it stand for three days.
-    Decant the clear solution into another empty sterile bottle. Aseptically add per
-    liter the following solutions (autoclaved):'
-- step_number: 4
-  action: AUTOCLAVE
-  description: Suspend casein in distilled water and keep at 50C. Titrate pH to 8.2
-    - 8.5 with 1 M NaOH solution, until pH is stabilized. Autoclave the solution at
-    120C for 40 min in a closed bottle.
-- step_number: 5
-  action: ADJUST_PH
-  description: Adjust pH to 3.6.
+    id: TOGO:M1220
+    label: Natronospira Proteinivora Medium
+notes: 'Source: https://togomedium.org/medium/M1220
+
+  Original source: JCM - JCM_M1139
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1139'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:18.772521Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J1139'
-- timestamp: '2026-03-13T03:08:40.547682Z'
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI,
+    1 de-grounded (mixture or unverifiable).
+- timestamp: '2026-01-27T06:35:54.158628Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1220'
+- timestamp: '2026-01-28T19:48:09.210533Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: K2HPO4; Added default concentration
+    for ingredient: NaOH'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-03-09T08:04:14.865332+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 8 solution(s) from ingredients
+- timestamp: '2026-03-13T03:08:42.021189Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
-  notes: Merged 3 duplicate ingredient(s)
-- timestamp: '2026-03-13T06:19:12.243084Z'
+  notes: Merged 5 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:51.142615Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002312'
-- timestamp: '2026-03-17T06:29:42.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:007748'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name; Added default
+    solution name; Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:29:44.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:25.183495+00:00'
+- timestamp: '2026-03-17T19:46:09.557709+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "NATRONOSPIRA PROTEINIVORA MEDIUM" to "natronospira_proteinivora_medium"
+  notes: Normalized name from "Natronospira Proteinivora Medium" to "natronospira_proteinivora_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:03:08.572243+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:31.466990+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:47.272798+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:06.846666+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint f79f93dddea90e3dcb9374b1d87fd8a662a5846a3628eaee4ac934d0dad749d7
+  source: TOGO_M1220_Natronospira_Proteinivora_Medium.yaml
 high_metal: true
-merge_fingerprint: 17296e6fe0d7e817decb02f69713203f565e93b0157022837733ff86e491a1d6
+solutions:
+- preferred_term: 10% Tryptone solution (autoclaved)
+  composition: []
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+  name: Unknown solution
+- preferred_term: 1.0 Yeast extract solution (autoclaved)
+  composition: []
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+  name: Unknown solution
+- preferred_term: Casein solution
+  composition: []
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: 1 M MgCl2 solution
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source'
+  name: Unknown solution
+- preferred_term: Trace element solution (see Medium [M1148])
+  composition: []
+  notes: Cross-reference to Medium M1148
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: 2 M NH4Cl solution
+  composition: []
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
+    Solution'
+  name: Unknown solution
+- preferred_term: 1 M MgCl2 solution
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source'
+  name: Unknown solution
+- preferred_term: Trace element solution (see Medium [M1148])
+  composition: []
+  notes: Cross-reference to Medium M1148
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: f79f93dddea90e3dcb9374b1d87fd8a662a5846a3628eaee4ac934d0dad749d7
 merged_from:
-- natronospira_proteinivora_medium
+- TOGO_M1220_Natronospira_Proteinivora_Medium

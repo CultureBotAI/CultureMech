@@ -1,94 +1,138 @@
-id: CultureMech:003182
+id: CultureMech:010292
 name: mp_agar
-original_name: MP AGAR
+original_name: MP Agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_value: 7.0
-media_term:
-  preferred_term: JCM Medium J838
-  term:
-    id: mediadive.medium:J838
-    label: MP AGAR
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=838'
 ingredients:
-- preferred_term: Melibiose
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:28053
-    label: Melibiose
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
   concentration:
-    value: '10'
+    value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000785
-    label: Melibiose
-- preferred_term: Polypeptone
-  concentration:
-    value: '10'
-    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: K2HPO4
-  term:
-    id: CHEBI:131527
-    label: K2HPO4
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
-- preferred_term: MgSO4 x 7 H2O
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
   term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: KCl
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: KCl
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:32588
-    label: KCl
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Melibiose
   concentration:
-    value: '0.1'
+    value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
-- preferred_term: Agar
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
   term:
-    id: CHEBI:2509
-    label: Agar
+    id: CHEBI:28053
+    label: melibiose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28053
+    label: melibiose
+- preferred_term: Agar
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 7.0.
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Polypepton (Nihon Pharm. Co.)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M874
+  term:
+    id: TOGO:M874
+    label: MP Agar
+notes: 'Source: https://togomedium.org/medium/M874
+
+  Original source: JCM - JCM_M838
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=838'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:17.756965Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J838'
-- timestamp: '2026-03-13T06:19:18.410739Z'
+- timestamp: '2026-01-27T06:35:55.879144Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M874'
+- timestamp: '2026-01-28T19:48:06.878550Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:12.752993Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:003182'
-- timestamp: '2026-03-17T06:30:51.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:010292'
+- timestamp: '2026-03-17T06:29:39.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:32.259956+00:00'
+- timestamp: '2026-03-17T19:46:31.697965+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MP AGAR" to "mp_agar" for consistent matching
-merge_fingerprint: 3414ec19c475c05dec9d410c9ac361286f38fa66de07d7bddbc7ebe2b26bd89a
+  notes: Normalized name from "MP Agar" to "mp_agar" for consistent matching
+- timestamp: '2026-06-05T07:40:45.260065+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:33.637342+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:46:51.904527+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:20.093827+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 97a12ec512375ff744d6168a39ea5da4abe5ef4cc5fae63f84c9edb7c681029d
+  source: TOGO_M874_MP_Agar.yaml
+merge_fingerprint: 97a12ec512375ff744d6168a39ea5da4abe5ef4cc5fae63f84c9edb7c681029d
 merged_from:
-- mp_agar
+- TOGO_M874_MP_Agar

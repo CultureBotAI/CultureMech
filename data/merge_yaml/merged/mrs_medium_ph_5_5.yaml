@@ -3,6 +3,7 @@ name: mrs_medium_ph_5_5
 original_name: MRS MEDIUM (pH 5.5)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 5.5
 media_term:
@@ -36,6 +37,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MRS MEDIUM (pH 5.5)" to "mrs_medium_ph_5_5" for consistent
     matching
+- timestamp: '2026-08-06T03:05:50.486261+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d28ad947536bcdc1a81719a16939cc6cd93adc8b414d67a9963bce97e92b679a
+  source: mrs_medium_ph_5_5.yaml
 merge_fingerprint: d28ad947536bcdc1a81719a16939cc6cd93adc8b414d67a9963bce97e92b679a
 merged_from:
 - mrs_medium_ph_5_5

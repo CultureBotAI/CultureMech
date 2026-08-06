@@ -3,6 +3,7 @@ name: f_2_quad
 original_name: f/2 Quad
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 8.0
 media_term:
@@ -34,8 +35,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000393
+  mediaingredientmech_chebi_term:
+    id: CHEBI:37585
     label: NaH2PO4 x 2 H2O
 - preferred_term: Agar
   term:
@@ -45,8 +46,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Na2-EDTA
   term:
@@ -55,8 +56,8 @@ ingredients:
   concentration:
     value: '41.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
     label: Na2-EDTA
 - preferred_term: FeCl3 x 6 H2O
   term:
@@ -65,8 +66,8 @@ ingredients:
   concentration:
     value: '31.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000218
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86254
     label: FeCl3 x 6 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
@@ -75,8 +76,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
     label: CuSO4 x 5 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -85,8 +86,8 @@ ingredients:
   concentration:
     value: '0.22'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -95,8 +96,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -105,8 +106,8 @@ ingredients:
   concentration:
     value: '1.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -115,16 +116,19 @@ ingredients:
   concentration:
     value: '0.06'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: Cyanocobalamine
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001039
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Cyanocobalamine
+  term:
+    id: CHEBI:17439
+    label: ''
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -132,8 +136,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Thiamine HCl
   term:
@@ -142,8 +146,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 preparation_steps:
 - step_number: 1
@@ -182,10 +186,32 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "f/2 Quad" to "f_2_quad" for consistent matching
-- timestamp: '2026-04-17T06:30:02.985880+00:00'
+- timestamp: '2026-06-05T07:40:59.812910+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 12 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:33.801997+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: f_10, f_2, f_2_quad'
+- timestamp: '2026-08-06T03:05:33.802041+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint da522433065f3dcb52e022b2c3599335008a6ff49b7e764dbfd1aabd22755e59
+  source: f_10.yaml, f_2.yaml, f_2_quad.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/f_2.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:000343
+  name: f_2
+  notes: Both records are MediaDive f/2 solid agar formulations; the child is explicitly
+    labeled f/2 Quad and changes the macronutrient concentration axis.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- f/2 Quad increases NaNO3 and NaH2PO4 x 2 H2O from 1 g/L to 4 g/L while seawater,
+  agar, trace metals, and vitamins remain unchanged.
 synonyms:
 - name: f_10
   source: MediaDive
@@ -201,4 +227,4 @@ merged_from:
 - f_10
 - f_2
 - f_2_quad
-merge_fingerprint: 2e0d4b25fb60194b5a4d934556bec8b91794446d22a6e657caa43417ba33876d
+merge_fingerprint: da522433065f3dcb52e022b2c3599335008a6ff49b7e764dbfd1aabd22755e59

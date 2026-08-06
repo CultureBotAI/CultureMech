@@ -1,198 +1,92 @@
-id: CultureMech:015391
+id: CultureMech:007806
 name: marine_chloroflexi_medium
-original_name: MARINE CHLOROFLEXI MEDIUM
-category: specialized
+original_name: Marine Chloroflexi Medium
+category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-media_term:
-  preferred_term: JCM Medium J1188
-  term:
-    id: mediadive.medium:J1188
-    label: MARINE CHLOROFLEXI MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1188'
 ingredients:
-- preferred_term: KH2PO4
+- preferred_term: sodium pyruvate
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
   term:
-    id: CHEBI:63036
-    label: KH2PO4
-  curation_metadata:
-    mapping_quality: LLM_ASSISTED
-    confidence_score: 1.0
-    curation_date: '2026-04-04T12:54:54.757835'
-    ontology_source: CHEBI
+    id: CHEBI:50144
+    label: sodium pyruvate
   concentration:
-    value: '0.1'
-    unit: G_PER_L
-  source: JCM Medium 1188
-  notes: From JCM Medium 1188; Curated from JCM Medium 1188 specification
-- preferred_term: MgCl2·6H2O
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+media_term:
+  preferred_term: TOGO Medium M1273
   term:
-    id: CHEBI:86345
-    label: MgCl2·6H2O
-  curation_metadata:
-    mapping_quality: LLM_ASSISTED
-    confidence_score: 1.0
-    curation_date: '2026-04-04T12:54:54.757846'
-    ontology_source: CHEBI
-  concentration:
-    value: '4.0'
-    unit: G_PER_L
-  source: JCM Medium 1188
-  notes: From JCM Medium 1188; Curated from JCM Medium 1188 specification
-- preferred_term: CaCl2·2H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2·2H2O
-  curation_metadata:
-    mapping_quality: LLM_ASSISTED
-    confidence_score: 1.0
-    curation_date: '2026-04-04T12:54:54.757849'
-    ontology_source: CHEBI
-  concentration:
-    value: '1.0'
-    unit: G_PER_L
-  source: JCM Medium 1188
-  notes: From JCM Medium 1188; Curated from JCM Medium 1188 specification
-- preferred_term: NH4Cl
-  term:
-    id: CHEBI:31206
-    label: NH4Cl
-  curation_metadata:
-    mapping_quality: LLM_ASSISTED
-    confidence_score: 1.0
-    curation_date: '2026-04-04T12:54:54.757851'
-    ontology_source: CHEBI
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  source: JCM Medium 1188
-  notes: From JCM Medium 1188; Curated from JCM Medium 1188 specification
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  curation_metadata:
-    mapping_quality: LLM_ASSISTED
-    confidence_score: 1.0
-    curation_date: '2026-04-04T12:54:54.757853'
-    ontology_source: CHEBI
-  concentration:
-    value: '5.0'
-    unit: G_PER_L
-  source: JCM Medium 1188
-  notes: From JCM Medium 1188; Curated from JCM Medium 1188 specification
-- preferred_term: Yeast extract
-  term:
-    id: FOODON:03315426
-    label: Yeast extract
-  curation_metadata:
-    mapping_quality: LLM_ASSISTED
-    confidence_score: 1.0
-    curation_date: '2026-04-04T12:54:54.757855'
-    ontology_source: FOODON
-  concentration:
-    value: '1.0'
-    unit: G_PER_L
-  source: JCM Medium 1188
-  notes: From JCM Medium 1188; Curated from JCM Medium 1188 specification
-- preferred_term: Peptone
-  term:
-    id: MICRO:0000178
-    label: Peptone
-  curation_metadata:
-    mapping_quality: LLM_ASSISTED
-    confidence_score: 1.0
-    curation_date: '2026-04-04T12:54:54.757857'
-    ontology_source: FOODON
-  concentration:
-    value: '1.0'
-    unit: G_PER_L
-  source: JCM Medium 1188
-  notes: From JCM Medium 1188; Curated from JCM Medium 1188 specification
-- preferred_term: Trace vitamins solution (see Medium No.284)
-  notes: Ontology mapping not yet available; From JCM Medium 1188; Curated from JCM
-    Medium 1188 specification
-  concentration:
-    value: '2.0'
-    unit: ML_PER_L
-  source: JCM Medium 1188
-- preferred_term: Trace mineral solution (see Medium No.852)
-  notes: Ontology mapping not yet available; From JCM Medium 1188; Curated from JCM
-    Medium 1188 specification
-  concentration:
-    value: '1.0'
-    unit: ML_PER_L
-  source: JCM Medium 1188
-- preferred_term: Se/W solution (Medium No.852)
-  notes: Ontology mapping not yet available; From JCM Medium 1188; Curated from JCM
-    Medium 1188 specification
-  concentration:
-    value: '1.0'
-    unit: ML_PER_L
-  source: JCM Medium 1188
-- preferred_term: 1 M Sodium pyruvate*
-  notes: Ontology mapping not yet available; From JCM Medium 1188; Curated from JCM
-    Medium 1188 specification
-  concentration:
-    value: '10.0'
-    unit: ML_PER_L
-  source: JCM Medium 1188
-- preferred_term: 8% NaHCO3solution*
-  notes: Ontology mapping not yet available; From JCM Medium 1188; Curated from JCM
-    Medium 1188 specification
-  concentration:
-    value: '25.0'
-    unit: ML_PER_L
-  source: JCM Medium 1188
-- preferred_term: 5% L-Cysteine·HCl·H2O solution
-  notes: Ontology mapping not yet available; From JCM Medium 1188; Curated from JCM
-    Medium 1188 specification
-  concentration:
-    value: '6.0'
-    unit: ML_PER_L
-  source: JCM Medium 1188
-- preferred_term: 5% Na2S·9H2O solution
-  notes: Ontology mapping not yet available; From JCM Medium 1188; Curated from JCM
-    Medium 1188 specification
-  concentration:
-    value: '6.0'
-    unit: ML_PER_L
-  source: JCM Medium 1188
-preparation_steps:
-- step_number: 1
-  action: FILTER_STERILIZE
-  description: Use Medium No. 1187 supplemented with 10 mM sodium pyruvate (final,
-    filter-sterilized).
+    id: TOGO:M1273
+    label: Marine Chloroflexi Medium
+notes: 'Source: https://togomedium.org/medium/M1273
+
+  Original source: JCM - JCM_M1188
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1188'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:18.951706Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J1188'
-- timestamp: '2026-02-03T11:27:23.772403'
-  curator: quality-tagger-v1.0
-  action: Added data quality flag
-  notes: Marked as incomplete_composition due to placeholder ingredients
-- timestamp: '2026-03-13T06:20:42.387160Z'
+- timestamp: '2026-01-27T06:35:54.269061Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1273'
+- timestamp: '2026-01-28T19:48:17.756902Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: sodium pyruvate'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-03-09T08:04:29.424327+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:51.618948Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:015391'
-- timestamp: '2026-03-17T19:46:34.026812+00:00'
+  notes: 'Assigned stable identifier: CultureMech:007806'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:30:03.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:10.050440+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MARINE CHLOROFLEXI MEDIUM" to "marine_chloroflexi_medium"
+  notes: Normalized name from "Marine Chloroflexi Medium" to "marine_chloroflexi_medium"
     for consistent matching
-- timestamp: '2026-04-04T12:54:54.757874'
-  curator: batch_process_collection_media
-  action: EXPANDED_INGREDIENTS
-  changes: Replaced placeholder with 14 curated ingredients from JCM
-  source: JCM Medium 1188
-data_quality_flags:
-  incomplete_composition: false
-  has_ontology_mappings: true
-  ingredients_curated: true
-  curation_method: automated_expert_mapping
-merge_fingerprint: 12c60e037dd738f0bf6beb86def0894e7604f2f527e398ac57b436c3bf94fefe
+- timestamp: '2026-05-16T09:03:40.241474+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:41:12.884034+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:42.017741+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 7fd96ba9af23fb0a8f957fb8e59a857b26000cb968f43c9c564093d177a943a3
+  source: marine_chloroflexi_medium.yaml
+solutions:
+- preferred_term: MARINE CLOSTRIDIUM MEDIUM (see Medium [M1272])
+  composition: []
+  notes: Cross-reference to Medium M1272
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution
+kg_microbe_match: mediadive.medium:J1244
+merge_fingerprint: 7fd96ba9af23fb0a8f957fb8e59a857b26000cb968f43c9c564093d177a943a3
 merged_from:
 - marine_chloroflexi_medium

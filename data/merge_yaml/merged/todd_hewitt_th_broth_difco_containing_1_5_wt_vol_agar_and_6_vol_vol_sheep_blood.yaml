@@ -4,6 +4,7 @@ original_name: Todd–Hewitt (TH) broth (Difco) containing 1.5% (wt/vol) agar an
   (vol/vol) sheep blood
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Sheep blood
@@ -19,9 +20,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Todd–Hewitt (TH) broth (Difco)
   concentration:
     value: '1'
@@ -59,6 +60,17 @@ curation_history:
   notes: Normalized name from "Todd–Hewitt (TH) broth (Difco) containing 1.5% (wt/vol)
     agar and 6% (vol/vol) sheep blood" to "todd_hewitt_th_broth_difco_containing_1_5_wt_vol_agar_and_6_vol_vol_sheep_blood"
     for consistent matching
+- timestamp: '2026-06-05T07:41:52.058095+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:59.701219+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 1da1128809b11b8fcb1c88c658c726b902e1c45f04d4d137083c3b105f356984
+  source: todd_hewitt_th_broth_difco_containing_1_5_wt_vol_agar_and_6_vol_vol_sheep_blood.yaml
 kg_microbe_match: mediadive.medium:12
 merge_fingerprint: 1da1128809b11b8fcb1c88c658c726b902e1c45f04d4d137083c3b105f356984
 merged_from:

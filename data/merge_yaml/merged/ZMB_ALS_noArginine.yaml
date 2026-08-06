@@ -1,6 +1,7 @@
 id: CultureMech:015797
 name: ZMB ALS noArginine
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: ZMB_ALS
@@ -17,7 +18,7 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 74-79-3; MW: 174.2'
 description: Media for culturing Bifidobacterium minus arginine
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: ZMB ALS noArginine
@@ -31,6 +32,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015797'
+- timestamp: '2026-05-16T09:04:44.107775+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:09.090462+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 19f611712a5d8a29b1dee7c70191e77fe0fd7f1c565d77d9d077f54698272e62
+  source: zmb_als_noarginine.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: 19f611712a5d8a29b1dee7c70191e77fe0fd7f1c565d77d9d077f54698272e62

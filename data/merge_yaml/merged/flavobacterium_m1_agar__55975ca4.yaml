@@ -1,0 +1,86 @@
+id: CultureMech:002882
+name: flavobacterium_m1_agar
+original_name: FLAVOBACTERIUM M1 AGAR
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+ph_value: 7.1
+media_term:
+  preferred_term: JCM Medium J534
+  term:
+    id: mediadive.medium:J534
+    label: FLAVOBACTERIUM M1 AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=534'
+ingredients:
+- preferred_term: Proteose peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Beef extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0 - 7.2.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.860385Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J534'
+- timestamp: '2026-03-13T06:19:16.301193Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002882'
+- timestamp: '2026-03-17T06:29:52.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:29.832002+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "FLAVOBACTERIUM M1 AGAR" to "flavobacterium_m1_agar"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:00.406047+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:34.410437+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 55975ca493d0b8cac7465dcc94f487dbb96d657fa83521f3ca619f8def9560cb
+  source: flavobacterium_m1_agar.yaml
+kg_microbe_match: mediadive.medium:101
+merge_fingerprint: 55975ca493d0b8cac7465dcc94f487dbb96d657fa83521f3ca619f8def9560cb
+merged_from:
+- flavobacterium_m1_agar

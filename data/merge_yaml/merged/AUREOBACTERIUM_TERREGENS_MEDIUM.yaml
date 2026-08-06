@@ -3,6 +3,7 @@ name: aureobacterium_terregens_medium
 original_name: AUREOBACTERIUM TERREGENS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:
@@ -17,12 +18,6 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -34,8 +29,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: (NH4) citrate
   concentration:
@@ -44,18 +39,18 @@ ingredients:
   term:
     id: CHEBI:63037
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000335
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63037
     label: (NH4) citrate
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -64,8 +59,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: FeCl3 x 6 H2O
   term:
@@ -74,8 +69,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000218
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86254
     label: FeCl3 x 6 H2O
 applications:
 - Microbial cultivation
@@ -101,13 +96,46 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "AUREOBACTERIUM TERREGENS medium" to "aureobacterium_terregens_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:20.814898+00:00'
+- timestamp: '2026-06-05T07:40:21.799580+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:27.848822+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:46:44.423864+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:45.875844+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_226_AUREOBACTERIUM_TERREGENS_medium, aureobacterium_terregens_medium'
+- timestamp: '2026-08-06T03:04:45.875882+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint eae9e88699ef37466e54ceca2ddf22c5318ce1aeb4fc50d3309d858c26af37d1
+  source: KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml, aureobacterium_terregens_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001330
+  name: aureobacterium_terregens_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 226; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 226; local ingredient
+  and concentration signatures match.
 categories:
 - bacterial
 merged_from:
 - KOMODO_226_AUREOBACTERIUM_TERREGENS_medium
 - aureobacterium_terregens_medium
-merge_fingerprint: 4691cc10df4f3016e68994f2293146aaf3b713a303a698b5aeb44567599b31af
+merge_fingerprint: eae9e88699ef37466e54ceca2ddf22c5318ce1aeb4fc50d3309d858c26af37d1

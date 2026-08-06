@@ -3,6 +3,7 @@ name: modified_337a_broth_medium
 original_name: Modified 337a Broth Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: MgSO4 x 7 H2O
@@ -12,11 +13,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
   term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4 x 7 H2O
 - preferred_term: KH2PO4
   concentration:
     value: '1.3'
@@ -25,9 +26,9 @@ ingredients:
     compound'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: (NH4)2SO4
   concentration:
@@ -38,9 +39,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: (NH4)2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 - preferred_term: Na2HPO4
   concentration:
     value: '1.13'
@@ -50,9 +51,9 @@ ingredients:
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
-    label: Na2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
 - preferred_term: DI Water
   concentration:
     value: '1050.0'
@@ -78,9 +79,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '10'
@@ -90,9 +91,9 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000183
-    label: Na2MoO4 x 2 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
 - preferred_term: FeSO4 x 7 H2O
   concentration:
     value: '20'
@@ -102,8 +103,8 @@ ingredients:
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: MnSO4 x 4 H2O
   concentration:
@@ -114,9 +115,9 @@ ingredients:
   term:
     id: CHEBI:86360
     label: manganese(II) sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000605
-    label: MnSO4 x 4 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86360
+    label: manganese(II) sulfate
 media_term:
   preferred_term: TOGO Medium M2444
   term:
@@ -149,9 +150,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009023'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:55.652062'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:08.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -161,6 +162,31 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Modified 337a Broth Medium" to "modified_337a_broth_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:04:24.953231+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:36.068253+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:58:25.607652+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:47:08.475532+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:47.852619+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint ee6dd1461c76e015b7d525eb1432d6408309b3de15aeaf8d53e03ccabc2b0cad
+  source: modified_337a_broth_medium.yaml
 solutions:
 - preferred_term: Trace Element Solution
   term:
@@ -171,6 +197,6 @@ solutions:
     unit: G_PER_L
   notes: See mediadive_6187_Trace_element_solution.yaml for composition
   name: Unknown solution
-merge_fingerprint: 091a34e3a4492f3ee6370718ef0c705ab0b9a79ee4abdcfa6142154901983652
+merge_fingerprint: ee6dd1461c76e015b7d525eb1432d6408309b3de15aeaf8d53e03ccabc2b0cad
 merged_from:
 - modified_337a_broth_medium

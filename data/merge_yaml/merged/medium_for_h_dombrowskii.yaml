@@ -3,6 +3,7 @@ name: medium_for_h_dombrowskii
 original_name: medium FOR H. DOMBROWSKII
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.4
 media_term:
@@ -17,12 +18,6 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -34,8 +29,8 @@ ingredients:
   concentration:
     value: '12.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000880
+  mediaingredientmech_chebi_term:
+    id: CHEBI:9754
     label: Tris
 - preferred_term: KCl
   term:
@@ -44,8 +39,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -54,8 +49,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -64,8 +59,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: NaCl
   term:
@@ -74,8 +69,8 @@ ingredients:
   concentration:
     value: '200'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Agar
   term:
@@ -84,8 +79,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -111,14 +106,42 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "medium FOR H. DOMBROWSKII" to "medium_for_h_dombrowskii"
     for consistent matching
-- timestamp: '2026-04-17T06:29:35.399879+00:00'
+- timestamp: '2026-06-05T07:40:28.144076+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:28.800819+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:05:02.756099+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_954_medium_FOR_H._DOMBROWSKII, medium_for_h_dombrowskii'
+- timestamp: '2026-08-06T03:05:02.756138+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 6f67c5d41dc4a2e22032ed74f728eec0e296fd97822c3febbcfd449a3a376c4f
+  source: KOMODO_954_medium_FOR_H._DOMBROWSKII.yaml, medium_for_h_dombrowskii.yaml
 high_metal: true
+parent_media:
+  path: data/normalized_yaml/bacterial/medium_for_h_dombrowskii.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002132
+  name: medium_for_h_dombrowskii
+  notes: KOMODO record states DSMZ Medium 954 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 categories:
 - bacterial
 merged_from:
 - KOMODO_954_medium_FOR_H._DOMBROWSKII
 - medium_for_h_dombrowskii
-merge_fingerprint: 88e18360a2102928e53d86d8538ca4d7f16330be80d841fa59684d507797f88b
+merge_fingerprint: 6f67c5d41dc4a2e22032ed74f728eec0e296fd97822c3febbcfd449a3a376c4f

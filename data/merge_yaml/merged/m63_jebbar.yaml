@@ -3,6 +3,7 @@ name: m63_jebbar
 original_name: M63; jebbar
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Glycerol
@@ -13,8 +14,8 @@ ingredients:
     value: '22.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glyc'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: Potassium hydroxide
   concentration:
@@ -27,6 +28,9 @@ ingredients:
   concentration:
     value: '100.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -34,13 +38,16 @@ ingredients:
   concentration:
     value: '0.16'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.0039'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
@@ -48,9 +55,9 @@ ingredients:
   concentration:
     value: '15.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -79,6 +86,17 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "M63; jebbar" to "m63_jebbar" for consistent matching
+- timestamp: '2026-06-05T07:41:11.883051+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:40.978441+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 0ae2570ab0df7551a68f4b551efe81193cf8fc9da15c80080e08219f56ddda45
+  source: m63_jebbar.yaml
 media_term:
   preferred_term: MediaDB Medium 163
   term:
@@ -91,6 +109,6 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
-merge_fingerprint: cbb9cb95b080fb7b5771a87d7f66db2fb86054c4cdae13b4f370067576566a35
+merge_fingerprint: 0ae2570ab0df7551a68f4b551efe81193cf8fc9da15c80080e08219f56ddda45
 merged_from:
 - m63_jebbar

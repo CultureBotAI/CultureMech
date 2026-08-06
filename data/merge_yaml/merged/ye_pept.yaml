@@ -3,6 +3,7 @@ name: ye_pept
 original_name: YE ⁄ Pept
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: yeast extract
@@ -35,6 +36,11 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "YE ⁄ Pept" to "ye_pept" for consistent matching
+- timestamp: '2026-08-06T03:06:03.066680+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 325025065f5a0726ca925d85c622615caf919057de02cebf1c0af1cf6cdd11dc
+  source: ye_pept.yaml
 merge_fingerprint: 325025065f5a0726ca925d85c622615caf919057de02cebf1c0af1cf6cdd11dc
 merged_from:
 - ye_pept

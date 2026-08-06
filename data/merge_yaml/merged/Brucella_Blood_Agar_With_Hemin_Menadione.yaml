@@ -3,6 +3,7 @@ name: brucella_blood_agar_with_hemin_menadione
 original_name: Brucella Blood Agar With Hemin Menadione
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Horse blood
   concentration:
@@ -57,9 +58,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010102'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:02.517598'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:52.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -69,6 +70,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Brucella Blood Agar With Hemin Menadione" to "brucella_blood_agar_with_hemin_menadione"
     for consistent matching
+- timestamp: '2026-05-16T09:03:20.142429+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:43.652457+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:18.510726+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint bc6bad7e07d15bdf9b323a1ed4ddbd8bdc6fe7789c73c7c5ff4d5d1ef81b67c3
+  source: TOGO_M696_Brucella_Blood_Agar_With_Hemin_Menadione.yaml
 solutions:
 - preferred_term: Hemin solution (see Medium [M470])
   composition: []

@@ -1,100 +1,164 @@
-id: CultureMech:002543
+id: CultureMech:008324
 name: modified_horikoshi_i_medium
-original_name: MODIFIED HORIKOSHI-I MEDIUM
+original_name: Modified Horikoshi-I Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_value: 9.0
-media_term:
-  preferred_term: JCM Medium J182
-  term:
-    id: mediadive.medium:J182
-    label: MODIFIED HORIKOSHI-I MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=182'
 ingredients:
-- preferred_term: Glucose
+- preferred_term: Distilled water
+  concentration:
+    value: '900'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:17234
-    label: Glucose
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
   concentration:
-    value: '11.1111'
+    value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
-    label: Glucose
-- preferred_term: Polypeptone
-  concentration:
-    value: '5.55556'
-    unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '5.55556'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '11.1111'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: K2HPO4
-  term:
-    id: CHEBI:131527
-    label: K2HPO4
-  concentration:
-    value: '1.11111'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
-- preferred_term: MgSO4 x 7 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
+- preferred_term: Yeast extract
   concentration:
-    value: '0.222222'
+    value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
   term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Polypepton (Nihon Pharm. Co.)
   concentration:
-    value: '16.6667'
+    value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: After autoclaving, aseptically add 100 ml of a sterile 10% NaHCO3 solution
-    to the medium. Check final pH to be about 9.0.
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M175
+  term:
+    id: TOGO:M175
+    label: Modified Horikoshi-I Medium
+notes: 'Source: https://togomedium.org/medium/M175
+
+  Original source: JCM - JCM_M182
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=182'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:15.896706Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J182'
-- timestamp: '2026-03-13T06:19:14.053251Z'
+- timestamp: '2026-01-27T06:35:54.556836Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M175'
+- timestamp: '2026-01-28T19:48:37.742756Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:05:03.011570+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:55.707044Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002543'
-- timestamp: '2026-03-17T06:29:49.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:008324'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:30:45.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:27.247460+00:00'
+- timestamp: '2026-03-17T19:46:14.249047+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MODIFIED HORIKOSHI-I MEDIUM" to "modified_horikoshi_i_medium"
+  notes: Normalized name from "Modified Horikoshi-I Medium" to "modified_horikoshi_i_medium"
     for consistent matching
-merge_fingerprint: fe84179863afbb60ee8fc3317502ed9b599e1d99a84e6682c75ace469b4c982a
+- timestamp: '2026-05-16T09:03:11.097313+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:34.207285+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:24.388988+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:46:48.147173+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:09.483773+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 6b079d398efcce876c5c6a34a54c67de8a0bbedcaa2bf49afac37a067aca5a41
+  source: TOGO_M175_Modified_Horikoshi-I_Medium.yaml
+solutions:
+- preferred_term: NaHCO3 solution
+  composition: []
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+  name: Unknown solution
+merge_fingerprint: 6b079d398efcce876c5c6a34a54c67de8a0bbedcaa2bf49afac37a067aca5a41
 merged_from:
-- modified_horikoshi_i_medium
+- TOGO_M175_Modified_Horikoshi-I_Medium

@@ -3,6 +3,7 @@ name: vogels_medium_n
 original_name: Vogels Medium N
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Orthophosphate
@@ -23,8 +24,8 @@ ingredients:
     value: '29.21'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:sucr'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000661
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17992
     label: Sucrose
 - preferred_term: Biotin
   term:
@@ -34,14 +35,17 @@ ingredients:
     value: '0.00103'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Citrate
   concentration:
     value: '660.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: Potassium
   concentration:
     value: '6390.0'
@@ -105,6 +109,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Vogels Medium N" to "vogels_medium_n" for consistent
     matching
+- timestamp: '2026-06-05T07:41:55.173742+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:02.645256+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2ab320fe651dd459a4c3809f6d6188622116cb9cde3d561c8076dd913e4ec36e
+  source: vogels_medium_n.yaml
 media_term:
   preferred_term: MediaDB Medium 287
   term:
@@ -117,6 +132,6 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
-merge_fingerprint: 91d116f626c9a7ab31776c1dc0c9e4ba61818df3b827193e6200e7bb1777e6c2
+merge_fingerprint: 2ab320fe651dd459a4c3809f6d6188622116cb9cde3d561c8076dd913e4ec36e
 merged_from:
 - vogels_medium_n

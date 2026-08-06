@@ -1,6 +1,7 @@
 id: CultureMech:015551
 name: M9 plus defined noCarbon
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Magnesium sulfate
@@ -186,7 +187,7 @@ ingredients:
 - preferred_term: Folic Acid
   concentration:
     value: '20.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:27470
     label: folic acid
@@ -195,16 +196,16 @@ ingredients:
 - preferred_term: Pyridoxine HCl
   concentration:
     value: '100.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: Pyridoxine HCl
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-56-0; MW: 205.64;
     From ATCC Wolfe''s vitamin mix'
 - preferred_term: Riboflavin
   concentration:
     value: '50.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:17015
     label: riboflavin
@@ -213,7 +214,7 @@ ingredients:
 - preferred_term: biotin
   concentration:
     value: '20.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:15956
     label: biotin
@@ -222,7 +223,7 @@ ingredients:
 - preferred_term: Thiamine HCl
   concentration:
     value: '50.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:49105
     label: thiamine hydrochloride
@@ -231,7 +232,7 @@ ingredients:
 - preferred_term: Nicotinic Acid
   concentration:
     value: '50.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:15940
     label: nicotinic acid
@@ -240,7 +241,7 @@ ingredients:
 - preferred_term: calcium pantothenate
   concentration:
     value: '50.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:31345
     label: Calcium pantothenate
@@ -249,7 +250,7 @@ ingredients:
 - preferred_term: Cyanocobalamin
   concentration:
     value: '1.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:17439
     label: cyanocob(III)alamin
@@ -258,7 +259,7 @@ ingredients:
 - preferred_term: 4-Aminobenzoic acid
   concentration:
     value: '50.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   notes: 'CAS: 150-13-0; MW: 137.14; From ATCC Wolfe''s vitamin mix; Ontology enriched
     via CAS-RN lookup'
   term:
@@ -267,7 +268,7 @@ ingredients:
 - preferred_term: Lipoic acid
   concentration:
     value: '50.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:16494
     label: lipoic acid
@@ -275,7 +276,7 @@ ingredients:
     206.33; From ATCC Wolfe''s vitamin mix'
 description: E. coli defined media
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: M9 plus defined noCarbon
@@ -289,20 +290,35 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015551'
-- timestamp: '2026-04-17T06:30:29.639807+00:00'
+- timestamp: '2026-05-16T09:04:40.837962+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1; concentration.unit aliases=10
+- timestamp: '2026-06-08T23:19:52.660191+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:06:05.414512+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: m9_minimal_media_plus, m9_plus_defined_nocarbon'
+- timestamp: '2026-08-06T03:06:05.414553+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 3524399fccc571db32656218413ae0a96fe81c9a0812bd4bfe7ebc7d7be016f9
+  source: m9_minimal_media_plus.yaml, m9_plus_defined_nocarbon.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 original_name: M9 plus defined noCarbon
 synonyms:
 - name: M9 minimal media plus
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 categories:
-- SPECIALIZED
+- specialized
 merged_from:
 - m9_minimal_media_plus
 - m9_plus_defined_nocarbon
-merge_fingerprint: 40aa8b8ec560c089155114bebdb6f7b737b4179cb30fd6833893d15855a10d71
+merge_fingerprint: 3524399fccc571db32656218413ae0a96fe81c9a0812bd4bfe7ebc7d7be016f9

@@ -3,6 +3,7 @@ name: minimal_medium_frustaci
 original_name: Minimal medium; frustaci
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Glycerol
@@ -13,8 +14,8 @@ ingredients:
     value: '43.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glyc'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: Biotin
   term:
@@ -24,13 +25,16 @@ ingredients:
     value: '0.00041'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.34'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -38,13 +42,16 @@ ingredients:
   concentration:
     value: '0.16'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '2.1'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.0024'
@@ -56,6 +63,9 @@ ingredients:
   concentration:
     value: '1.7'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -63,8 +73,8 @@ ingredients:
   concentration:
     value: '0.41'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
@@ -73,8 +83,8 @@ ingredients:
   concentration:
     value: '4.7'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Zinc sulfate
   term:
@@ -83,17 +93,23 @@ ingredients:
   concentration:
     value: '0.0064'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Manganese chloride
   concentration:
     value: '0.0025'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.002'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.0037'
@@ -127,6 +143,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Minimal medium; frustaci" to "minimal_medium_frustaci"
     for consistent matching
+- timestamp: '2026-06-05T07:41:34.677124+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:46.351533+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 3b2381972eea9240d3d6bac6ab3ae63004a1f78cd4b37dd6a151a19cf8b0e252
+  source: minimal_medium_frustaci.yaml
 media_term:
   preferred_term: MediaDB Medium 225
   term:
@@ -138,6 +165,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 817301156081abe30650cd790880bacd9623bbbaebe843a87b2ed1fa400f479b
+merge_fingerprint: 3b2381972eea9240d3d6bac6ab3ae63004a1f78cd4b37dd6a151a19cf8b0e252
 merged_from:
 - minimal_medium_frustaci

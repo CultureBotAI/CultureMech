@@ -3,6 +3,7 @@ name: ravot_modified_medium_for_thermosipho_sp_g60
 original_name: RAVOT MODIFIED MEDIUM FOR THERMOSIPHO SP. G60
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:
@@ -15,12 +16,12 @@ ingredients:
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '0.981354'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
   notes: Copied from referenced JCM Medium 725
 - preferred_term: MgCl2 x 6 H2O
@@ -30,8 +31,8 @@ ingredients:
   concentration:
     value: '0.196271'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
   notes: Copied from referenced JCM Medium 725
 - preferred_term: CaCl2 x 2 H2O
@@ -41,8 +42,8 @@ ingredients:
   concentration:
     value: '0.0981354'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
   notes: Copied from referenced JCM Medium 725
 - preferred_term: KCl
@@ -52,8 +53,8 @@ ingredients:
   concentration:
     value: '0.0981354'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
   notes: Copied from referenced JCM Medium 725
 - preferred_term: Sodium acetate x 3 H2O
@@ -81,8 +82,8 @@ ingredients:
   concentration:
     value: '3.38567'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000276
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39033
     label: PIPES
   notes: Copied from referenced JCM Medium 725
 - preferred_term: Sulfur
@@ -92,8 +93,8 @@ ingredients:
   concentration:
     value: '4.90677'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000927
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26833
     label: Sulfur
   notes: Copied from referenced JCM Medium 725
 - preferred_term: Resazurin
@@ -103,30 +104,30 @@ ingredients:
   concentration:
     value: '0.000981354'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
   notes: Copied from referenced JCM Medium 725
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '4.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
   notes: Copied from referenced JCM Medium 725
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '4.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
   notes: Copied from referenced JCM Medium 725
 - preferred_term: Na2S x 9 H2O
@@ -136,8 +137,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
   notes: Copied from referenced JCM Medium 725
 preparation_steps:
@@ -171,14 +172,46 @@ curation_history:
   source: CultureMech:003069
   notes: Resolved reference by copying from ravot_modified_medium_for_thermoanaerovibrio_sp_r101
     (CultureMech:003069)
-- timestamp: '2026-04-17T06:30:20.886366+00:00'
+- timestamp: '2026-05-16T08:58:13.948921+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(2 keys) -> list(1 entries)
+- timestamp: '2026-06-05T07:41:43.847723+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:10.846803+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:54.327444+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: ravot_modified_medium_for_fervidobacterium_sp_r8, ravot_modified_medium_for_thermoanaerovibrio_sp_r101,
     ravot_modified_medium_for_thermosipho_sp_g60'
+- timestamp: '2026-08-06T03:05:54.327496+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 3246547a833d4aee6880484f9bbbd5a1451cd42a9073f63201c32de553386d96
+  source: ravot_modified_medium_for_fervidobacterium_sp_r8.yaml, ravot_modified_medium_for_thermoanaerovibrio_sp_r101.yaml,
+    ravot_modified_medium_for_thermosipho_sp_g60.yaml
 data_quality_flags:
-  incomplete_composition: false
-  resolved_reference: true
+- resolved_reference
+variant_children:
+- path: data/normalized_yaml/bacterial/ravot_modified_medium_for_fervidobacterium_sp_r8.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003070
+  name: ravot_modified_medium_for_fervidobacterium_sp_r8
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/ravot_modified_medium_for_thermoanaerovibrio_sp_r101.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003069
+  name: ravot_modified_medium_for_thermoanaerovibrio_sp_r101
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 synonyms:
 - name: ravot_modified_medium_for_fervidobacterium_sp_r8
   source: MediaDive

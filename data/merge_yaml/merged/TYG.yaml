@@ -1,6 +1,7 @@
 id: CultureMech:015752
 name: TYG
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Tryptone
@@ -124,7 +125,7 @@ ingredients:
     label: ''
 description: Tryptone Yeast Extract Glucose medium
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: TYG
@@ -138,6 +139,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015752'
+- timestamp: '2026-05-16T09:04:43.592387+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:08.598375+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e983d48321ec7b1df59db78d584cbb7fd80562d043d5a79f71511f27dd330e22
+  source: tyg.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: e983d48321ec7b1df59db78d584cbb7fd80562d043d5a79f71511f27dd330e22

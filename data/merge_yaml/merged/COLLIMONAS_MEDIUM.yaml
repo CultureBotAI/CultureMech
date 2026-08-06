@@ -3,6 +3,7 @@ name: collimonas_medium
 original_name: COLLIMONAS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.5
 media_term:
@@ -30,12 +31,12 @@ ingredients:
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NaCl
   term:
@@ -44,8 +45,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Pancreatic digest of casein
   term:
@@ -186,10 +187,35 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "COLLIMONAS medium" to "collimonas_medium" for consistent
     matching
-- timestamp: '2026-04-17T06:29:14.031899+00:00'
+- timestamp: '2026-06-05T07:40:18.343034+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:43.284608+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:38.086473+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_1035_COLLIMONAS_medium, collimonas_medium'
+- timestamp: '2026-08-06T03:04:38.086510+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 58304a19a5d417a0eb239fd90c96847fd5baf12d441453a53629e639dfeb8ee3
+  source: KOMODO_1035_COLLIMONAS_medium.yaml, collimonas_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/collimonas_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000458
+  name: collimonas_medium
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and concentration
+    signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.
 categories:
 - bacterial
 merged_from:

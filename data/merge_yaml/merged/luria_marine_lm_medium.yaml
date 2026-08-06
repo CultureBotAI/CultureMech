@@ -3,6 +3,7 @@ name: luria_marine_lm_medium
 original_name: Luria Marine (LM) medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +32,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Tryptone
   concentration:
     value: '10'
@@ -69,11 +70,23 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Luria Marine (LM) medium" to "luria_marine_lm_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:46.619020+00:00'
+- timestamp: '2026-06-05T07:41:11.518441+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:14.086345+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M2897_LB_medium, luria_bertani_lb_medium, luria_marine_lm_medium,
     polymorhobacter_medium'
+- timestamp: '2026-08-06T03:05:14.086386+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 4 source recipe(s) on fingerprint 33735f42ed1dda12bcf89b7f55ee81e6edc4cb41d63f8c337552f41bd59e9aaa
+  source: TOGO_M2897_LB_medium.yaml, luria_bertani_lb_medium.yaml, luria_marine_lm_medium.yaml,
+    polymorhobacter_medium.yaml
 synonyms:
 - name: lb_medium
   source: TOGO

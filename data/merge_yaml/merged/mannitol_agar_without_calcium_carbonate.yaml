@@ -3,6 +3,7 @@ name: mannitol_agar_without_calcium_carbonate
 original_name: MANNITOL AGAR WITHOUT CALCIUM CARBONATE
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J746
@@ -26,8 +27,8 @@ ingredients:
   concentration:
     value: '25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001010
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29864
     label: Mannitol
 - preferred_term: CaCO3
   term:
@@ -36,8 +37,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001099
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
     label: CaCO3
 - preferred_term: Agar
   term:
@@ -46,8 +47,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -79,13 +80,27 @@ curation_history:
   changes: Copied composition from referenced medium (5 ingredients)
   source: CultureMech:002946
   notes: Resolved reference by copying from mannitol_agar (CultureMech:002946)
-- timestamp: '2026-04-17T06:30:09.582544+00:00'
+- timestamp: '2026-05-16T08:57:37.988922+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(2 keys) -> list(1 entries)
+- timestamp: '2026-06-05T07:41:12.679567+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:41.818372+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: mannitol_agar, mannitol_agar_without_calcium_carbonate'
+- timestamp: '2026-08-06T03:05:41.818399+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 8a2646aa8d124238fe51c54eaaeb75508aba51aaeeaff4fd49d0f321993631f8
+  source: mannitol_agar.yaml, mannitol_agar_without_calcium_carbonate.yaml
 data_quality_flags:
-  incomplete_composition: false
-  resolved_reference: true
+- resolved_reference
 kg_microbe_match: mediadive.medium:J598
 synonyms:
 - name: mannitol_agar

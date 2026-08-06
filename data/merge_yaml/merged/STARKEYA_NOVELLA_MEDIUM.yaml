@@ -3,6 +3,7 @@ name: starkeya_novella_medium
 original_name: STARKEYA NOVELLA MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
 ph_value: 8.5
 media_term:
@@ -19,28 +20,28 @@ ingredients:
   concentration:
     value: '11.7517'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4 x 12 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '1.66297'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '0.332594'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: Yeast extract
   concentration:
@@ -53,8 +54,8 @@ ingredients:
   concentration:
     value: '0.00221729'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001075
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31991
     label: Phenol red
 - preferred_term: Agar
   term:
@@ -64,8 +65,8 @@ ingredients:
     value: '16.6297'
     unit: G_PER_L
   notes: Optional ingredient (for solid medium)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -74,8 +75,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Na2S2O3 x 5 H2O
   term:
@@ -84,8 +85,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000492
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32150
     label: Na2S2O3 x 5 H2O
 - preferred_term: Na2-EDTA
   term:
@@ -94,8 +95,8 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
     label: Na2-EDTA
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -104,8 +105,8 @@ ingredients:
   concentration:
     value: '22'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -114,8 +115,8 @@ ingredients:
   concentration:
     value: '5.54'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -124,8 +125,8 @@ ingredients:
   concentration:
     value: '5.06'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -134,13 +135,16 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: (NH4)6Mo7O24 x 4 H2O
   concentration:
     value: '1.1'
     unit: G_PER_L
+  term:
+    id: CHEBI:91249
+    label: ammonium molybdate
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
@@ -148,8 +152,8 @@ ingredients:
   concentration:
     value: '1.57'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
     label: CuSO4 x 5 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -158,8 +162,8 @@ ingredients:
   concentration:
     value: '1.61'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 preparation_steps:
 - step_number: 1
@@ -191,6 +195,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "STARKEYA NOVELLA MEDIUM" to "starkeya_novella_medium"
     for consistent matching
-merge_fingerprint: 4b66bad0916242b54ad9ce1b9f1bbe38f1a6204c9db09b719800f96d1d60529e
+- timestamp: '2026-06-05T07:41:46.999223+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 14 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:11.838421+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:56.618688+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e0d627f398d2026a55e55dbf2e2e9db2dfa23ed10877102e5d83f0bb13f190c6
+  source: starkeya_novella_medium.yaml
+merge_fingerprint: e0d627f398d2026a55e55dbf2e2e9db2dfa23ed10877102e5d83f0bb13f190c6
 merged_from:
 - starkeya_novella_medium

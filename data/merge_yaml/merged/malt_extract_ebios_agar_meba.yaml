@@ -3,6 +3,7 @@ name: malt_extract_ebios_agar_meba
 original_name: Malt Extract Ebios Agar (MEBA)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Agar
   concentration:
@@ -25,9 +26,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Malt extract
   concentration:
     value: '20'
@@ -63,9 +64,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008461'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:52.081259'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:00.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -75,10 +76,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Malt Extract Ebios Agar (MEBA)" to "malt_extract_ebios_agar_meba"
     for consistent matching
-- timestamp: '2026-04-17T06:29:10.688923+00:00'
+- timestamp: '2026-05-16T09:03:40.034586+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:12.632713+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:34.027843+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: 2_malt_extract_agar, ma2, ma4, malt_extract_ebios_agar_meba'
+- timestamp: '2026-08-06T03:04:34.027881+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 4 source recipe(s) on fingerprint 14e464f09fc26e6f156352a3c698185b35e1d61198ec353f00f254865d13e093
+  source: 2_malt_extract_agar.yaml, ma2.yaml, ma4.yaml, malt_extract_ebios_agar_meba.yaml
 solutions:
 - preferred_term: Ebios (tablets)*
   composition: []
@@ -87,6 +103,15 @@ solutions:
     unit: G_PER_L
   notes: 'Properties: Undefined component'
   name: Unknown solution
+parent_media:
+  path: data/normalized_yaml/bacterial/ma2.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:007977
+  name: ma2
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.
 synonyms:
 - name: 2_malt_extract_agar
   source: TOGO

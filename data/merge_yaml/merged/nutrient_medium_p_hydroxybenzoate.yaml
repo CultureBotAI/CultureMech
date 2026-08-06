@@ -3,6 +3,7 @@ name: nutrient_medium_p_hydroxybenzoate
 original_name: Nutrient medium + p-hydroxybenzoate
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 4-Hydroxybenzoate
@@ -10,18 +11,30 @@ ingredients:
     value: '5.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4hbz'
+  term:
+    id: CHEBI:17879
+    label: ''
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.034'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '8.8'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '10.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -29,8 +42,8 @@ ingredients:
   concentration:
     value: '0.8'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
@@ -39,13 +52,16 @@ ingredients:
   concentration:
     value: '9.3'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.033'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -75,6 +91,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Nutrient medium + p-hydroxybenzoate" to "nutrient_medium_p_hydroxybenzoate"
     for consistent matching
+- timestamp: '2026-06-05T07:41:40.206066+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:51.747033+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 4178bf21f7b4743a943785e8cc11daf8afec7aff64b77ed464d797f1db341dd2
+  source: nutrient_medium_p_hydroxybenzoate.yaml
 media_term:
   preferred_term: MediaDB Medium 30
   term:
@@ -86,6 +113,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 88f3f44cdffb17db935da3db985a66a0b729288500a9801b8a944dfa9132b286
+merge_fingerprint: 4178bf21f7b4743a943785e8cc11daf8afec7aff64b77ed464d797f1db341dd2
 merged_from:
 - nutrient_medium_p_hydroxybenzoate

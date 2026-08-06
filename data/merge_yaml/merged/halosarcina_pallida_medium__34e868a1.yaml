@@ -1,0 +1,164 @@
+id: CultureMech:002991
+name: halosarcina_pallida_medium
+original_name: HALOSARCINA PALLIDA MEDIUM
+category: archaea
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: JCM Medium J645
+  term:
+    id: mediadive.medium:J645
+    label: HALOSARCINA PALLIDA MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=645'
+ingredients:
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+- preferred_term: K2SO4 x 7 H2O
+  term:
+    id: CHEBI:32036
+    label: potassium sulfate
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32036
+    label: K2SO4 x 7 H2O
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '180'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Add components to distilled water and bring volume to 1.0 L. Adjust
+    pH to 6.5 and autoclave.
+- step_number: 2
+  action: MIX
+  description: For preparation of solid medium, add 20.0 g/L agar.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.175337Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J645'
+- timestamp: '2026-01-28T19:48:13.765785Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:17.017559Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002991'
+- timestamp: '2026-03-17T06:29:54.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:30.650128+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HALOSARCINA PALLIDA MEDIUM" to "halosarcina_pallida_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:08.213885+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:39.793479+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:46:59.668488+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:28.691410+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: halobacteria_hmd_medium, halosarcina_pallida_medium'
+- timestamp: '2026-08-06T03:04:28.691444+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 34e868a11550f0e6f5ac4052cdff2902421903a6b8d3d5da39a48e21066faf9e
+  source: halobacteria_hmd_medium.yaml, halosarcina_pallida_medium.yaml
+high_metal: true
+parent_media:
+  path: data/normalized_yaml/bacterial/halobacteria_hmd_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:003225
+  name: halobacteria_hmd_medium
+  notes: Reviewed Halosarcina pallida medium as a concentration variant of Halobacteria
+    HMD medium with ammonium and casamino-acid axes.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Reviewed Halobacteria HMD/Halosarcina pallida pair; child keeps NaCl, MgCl2, sulfate,
+  CaCl2, KH2PO4, and yeast extract unchanged, raises NH4Cl from 0.1 to 0.5 g/L and
+  casamino acids from 0.5 to 5 g/L, and changes pH from 7.1 to 6.5.
+synonyms:
+- name: halobacteria_hmd_medium
+  source: MediaDive
+  source_id: mediadive.medium:J878
+  original_category: archaea
+categories:
+- archaea
+merged_from:
+- halobacteria_hmd_medium
+- halosarcina_pallida_medium
+merge_fingerprint: 34e868a11550f0e6f5ac4052cdff2902421903a6b8d3d5da39a48e21066faf9e

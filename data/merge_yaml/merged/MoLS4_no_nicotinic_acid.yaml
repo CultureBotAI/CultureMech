@@ -1,6 +1,7 @@
 id: CultureMech:015622
 name: MoLS4 no nicotinic acid
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: MoLS4
@@ -18,7 +19,7 @@ ingredients:
 description: Lactate-sulfate media for sulfate-reducing bacteria with no nicotinic
   acid
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: MoLS4 no nicotinic acid
@@ -32,6 +33,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015622'
+- timestamp: '2026-05-16T09:04:41.883826+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:06.719941+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 20d60c18033b02df7dbe385b5d2e55c386f25d4b011c36883ba0d475e9aef4c5
+  source: mols4_no_nicotinic_acid.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: 20d60c18033b02df7dbe385b5d2e55c386f25d4b011c36883ba0d475e9aef4c5

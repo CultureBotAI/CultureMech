@@ -3,6 +3,7 @@ name: jcm_medium_161
 original_name: JCM Medium 161
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 5% Na2S . 9H2O
@@ -20,9 +21,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -32,8 +33,8 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: Sulfur
   concentration:
@@ -44,9 +45,9 @@ ingredients:
   term:
     id: CHEBI:26833
     label: sulfur atom
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000927
-    label: Sulfur
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26833
+    label: sulfur atom
 - preferred_term: Peptone, Bacto (BD 211677)
   concentration:
     value: '5'
@@ -73,8 +74,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4 . 7H2O
   concentration:
@@ -83,8 +84,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:32599
-    label: ''
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: CaCl2 . 2H2O
   concentration:
     value: '0.07'
@@ -102,9 +103,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Na2MoO4 . 2H2O
   concentration:
@@ -151,9 +152,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: (NH4)2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 - preferred_term: FeCl3 . 6H2O
   concentration:
     value: '0.02'
@@ -178,6 +179,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:131366
+    label: ''
 - preferred_term: CoSO4
   concentration:
     value: '0.01'
@@ -187,9 +191,9 @@ ingredients:
   term:
     id: CHEBI:53470
     label: cobalt(2+) sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000158
-    label: CoSO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53470
+    label: cobalt(2+) sulfate
 - preferred_term: Yeast Extract (BD 212750)
   concentration:
     value: '1'
@@ -221,10 +225,10 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:55.451570'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2; Added default concentration
     for ingredient: 10 N H2SO4'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:04.359340Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -238,6 +242,31 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "JCM Medium 161" to "jcm_medium_161" for consistent
     matching
-merge_fingerprint: db936d1c5372ead31c16b5eedd8ba5ea6b9a8e69dc4a862118ab95fa81745b6f
+- timestamp: '2026-05-16T09:03:38.049697+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:09.740205+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:49.644315+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:47:00.164253+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:38.871818+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 0f36702e7c03af8e493fc60497fae524a93c07567893354c8caa32a535dfbbd5
+  source: jcm_medium_161.yaml
+merge_fingerprint: 0f36702e7c03af8e493fc60497fae524a93c07567893354c8caa32a535dfbbd5
 merged_from:
 - jcm_medium_161

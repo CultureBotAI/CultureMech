@@ -1,78 +1,51 @@
-id: CultureMech:001717
+id: CultureMech:002562
 name: bifidobacterium_medium
 original_name: BIFIDOBACTERIUM MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.8
 media_term:
-  preferred_term: DSMZ Medium 58
+  preferred_term: JCM Medium J19
   term:
-    id: mediadive.medium:58
+    id: mediadive.medium:J19
     label: BIFIDOBACTERIUM MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium58.pdf'
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=19'
 ingredients:
 - preferred_term: Casein peptone
   concentration:
-    value: '10'
+    value: '9.99001'
+    unit: G_PER_L
+  notes: ' ( tryptic digest)'
+- preferred_term: Beef extract
+  concentration:
+    value: '4.99501'
     unit: G_PER_L
 - preferred_term: Yeast extract
   concentration:
-    value: '5'
+    value: '4.99501'
     unit: G_PER_L
-- preferred_term: Meat extract
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: Bacto Soytone
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  term:
-    id: MICRO:0000181
-    label: ''
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
     label: Glucose
   concentration:
-    value: '10'
+    value: '9.99001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  concentration:
+    value: '2.997'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
-  concentration:
-    value: '3.0'
-    unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 2.0, 1.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '0.7'
-    unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 0.2, 0.5]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: MnSO4 x H2O
-  term:
-    id: CHEBI:86364
-    label: MnSO4 x H2O
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: MnSO4 x H2O
 - preferred_term: Tween 80
   term:
     id: CHEBI:53426
@@ -80,254 +53,54 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000190
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53426
     label: Tween 80
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '7.0'
-    unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 5.0, 2.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: L-Cysteine HCl x H2O
-  term:
-    id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
-    label: L-Cysteine HCl x H2O
-- preferred_term: Resazurin
-  term:
-    id: CHEBI:8806
-    label: Resazurin
-  concentration:
-    value: '4'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
-    label: Resazurin
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
-- preferred_term: NaHCO3
-  term:
-    id: CHEBI:32139
-    label: NaHCO3
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
 preparation_steps:
 - step_number: 1
-  action: AUTOCLAVE
-  description: The cysteine are added after the medium has been boiled and cooled
-    under CO2. Adjust pH to 6.8 using 8 N NaOH. Distribute under N2 and autoclave.
+  action: ADJUST_PH
+  description: Adjust pH to 6.8.
+- step_number: 2
+  action: HEAT
+  description: After sterilization, aseptically add solutions of sodium ascorbate
+    and L-cysteine x HCl to final concentration of 1.0% and 0.05%, respectively. Heat
+    medium not freshly prepared in a steamer for 10 min before addition of the reducing
+    substances.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:10.062641Z'
+- timestamp: '2026-01-26T17:53:15.593283Z'
   curator: mediadive-import
   action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 58'
-- timestamp: '2026-01-28T19:48:37.937813Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T03:09:35.296055Z'
-  curator: data-quality-cleanup-v1.0
-  action: Data quality fixes
-  notes: Merged 3 duplicate ingredient(s)
-- timestamp: '2026-03-13T06:19:06.653299Z'
+  notes: 'Source: JCM, ID: J19'
+- timestamp: '2026-03-13T06:19:14.181687Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:001717'
-- timestamp: '2026-03-17T06:30:46.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:002562'
+- timestamp: '2026-03-17T06:30:22.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:18.864701+00:00'
+- timestamp: '2026-03-17T19:45:27.395583+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "BIFIDOBACTERIUM MEDIUM" to "bifidobacterium_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:56.168001+00:00'
-  curator: recipe-merger
-  action: Merged 28 duplicate recipes into canonical record
-  notes: 'Sources: bifidobacterium_medium, medium_58_modified_for_dsm_16839, medium_58_modified_for_dsm_16840,
-    medium_58_modified_for_dsm_16980, medium_58_modified_for_dsm_16981, medium_58_modified_for_dsm_17042,
-    medium_58_modified_for_dsm_17774, medium_58_modified_for_dsm_17775, medium_58_modified_for_dsm_17776,
-    medium_58_modified_for_dsm_17777, medium_58_modified_for_dsm_17778, medium_58_modified_for_dsm_17779,
-    medium_58_modified_for_dsm_20461, medium_58_modified_for_dsm_20462, medium_58_modified_for_dsm_20465,
-    medium_58_modified_for_dsm_20466, medium_58_modified_for_dsm_20467, medium_58_modified_for_dsm_20756,
-    medium_58_modified_for_dsm_20757, medium_58_modified_for_dsm_20762, medium_58_modified_for_dsm_20764,
-    medium_58_modified_for_dsm_20765, medium_58_modified_for_dsm_21655, medium_58_modified_for_dsm_24661,
-    medium_58_modified_for_dsm_7198, medium_58_modified_for_dsm_7199, medium_58_modified_for_dsm_7200,
-    medium_58_modified_for_dsm_7201'
-synonyms:
-- name: medium_58_modified_for_dsm_16839
-  source: KOMODO
-  source_id: komodo.medium:58_16839
-  original_category: bacterial
-- name: medium_58_modified_for_dsm_16840
-  source: KOMODO
-  source_id: komodo.medium:58_16840
-  original_category: bacterial
-- name: medium_58_modified_for_dsm_16980
-  source: KOMODO
-  source_id: komodo.medium:58_16980
-  original_category: bacterial
-- name: medium_58_modified_for_dsm_16981
-  source: KOMODO
-  source_id: komodo.medium:58_16981
-  original_category: bacterial
-- name: medium_58_modified_for_dsm_17042
-  source: KOMODO
-  source_id: komodo.medium:58_17042
-  original_category: bacterial
-- name: medium_58_modified_for_dsm_17774
-  source: KOMODO
-  source_id: komodo.medium:58_17774
-  original_category: bacterial
-- name: medium_58_modified_for_dsm_17775
-  source: KOMODO
-  source_id: komodo.medium:58_17775
-  original_category: bacterial
-- name: medium_58_modified_for_dsm_17776
-  source: KOMODO
-  source_id: komodo.medium:58_17776
-  original_category: bacterial
-- name: medium_58_modified_for_dsm_17777
-  source: KOMODO
-  source_id: komodo.medium:58_17777
-  original_category: bacterial
-- name: medium_58_modified_for_dsm_17778
-  source: KOMODO
-  source_id: komodo.medium:58_17778
-  original_category: bacterial
-- name: medium_58_modified_for_dsm_17779
-  source: KOMODO
-  source_id: komodo.medium:58_17779
-  original_category: bacterial
-- name: medium_58_modified_for_dsm_20461
-  source: KOMODO
-  source_id: komodo.medium:58_20461
-  original_category: bacterial
-- name: medium_58_modified_for_dsm_20462
-  source: KOMODO
-  source_id: komodo.medium:58_20462
-  original_category: bacterial
-- name: medium_58_modified_for_dsm_20465
-  source: KOMODO
-  source_id: komodo.medium:58_20465
-  original_category: bacterial
-- name: medium_58_modified_for_dsm_20466
-  source: KOMODO
-  source_id: komodo.medium:58_20466
-  original_category: bacterial
-- name: medium_58_modified_for_dsm_20467
-  source: KOMODO
-  source_id: komodo.medium:58_20467
-  original_category: bacterial
-- name: medium_58_modified_for_dsm_20756
-  source: KOMODO
-  source_id: komodo.medium:58_20756
-  original_category: bacterial
-- name: medium_58_modified_for_dsm_20757
-  source: KOMODO
-  source_id: komodo.medium:58_20757
-  original_category: bacterial
-- name: medium_58_modified_for_dsm_20762
-  source: KOMODO
-  source_id: komodo.medium:58_20762
-  original_category: bacterial
-- name: medium_58_modified_for_dsm_20764
-  source: KOMODO
-  source_id: komodo.medium:58_20764
-  original_category: bacterial
-- name: medium_58_modified_for_dsm_20765
-  source: KOMODO
-  source_id: komodo.medium:58_20765
-  original_category: bacterial
-- name: medium_58_modified_for_dsm_21655
-  source: KOMODO
-  source_id: komodo.medium:58_21655
-  original_category: bacterial
-- name: medium_58_modified_for_dsm_24661
-  source: KOMODO
-  source_id: komodo.medium:58_24661
-  original_category: bacterial
-- name: medium_58_modified_for_dsm_7198
-  source: KOMODO
-  source_id: komodo.medium:58_7198
-  original_category: bacterial
-- name: medium_58_modified_for_dsm_7199
-  source: KOMODO
-  source_id: komodo.medium:58_7199
-  original_category: bacterial
-- name: medium_58_modified_for_dsm_7200
-  source: KOMODO
-  source_id: komodo.medium:58_7200
-  original_category: bacterial
-- name: medium_58_modified_for_dsm_7201
-  source: KOMODO
-  source_id: komodo.medium:58_7201
-  original_category: bacterial
-categories:
-- bacterial
+- timestamp: '2026-06-05T07:40:16.818683+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:42.831072+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:35.793696+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 9f8cc8671c819a5b0bb04b36a0a730c4d4bcf1f7c3e24a8c0dd163055be6f35b
+  source: JCM_J19_BIFIDOBACTERIUM_MEDIUM.yaml
+merge_fingerprint: 9f8cc8671c819a5b0bb04b36a0a730c4d4bcf1f7c3e24a8c0dd163055be6f35b
 merged_from:
-- bifidobacterium_medium
-- medium_58_modified_for_dsm_16839
-- medium_58_modified_for_dsm_16840
-- medium_58_modified_for_dsm_16980
-- medium_58_modified_for_dsm_16981
-- medium_58_modified_for_dsm_17042
-- medium_58_modified_for_dsm_17774
-- medium_58_modified_for_dsm_17775
-- medium_58_modified_for_dsm_17776
-- medium_58_modified_for_dsm_17777
-- medium_58_modified_for_dsm_17778
-- medium_58_modified_for_dsm_17779
-- medium_58_modified_for_dsm_20461
-- medium_58_modified_for_dsm_20462
-- medium_58_modified_for_dsm_20465
-- medium_58_modified_for_dsm_20466
-- medium_58_modified_for_dsm_20467
-- medium_58_modified_for_dsm_20756
-- medium_58_modified_for_dsm_20757
-- medium_58_modified_for_dsm_20762
-- medium_58_modified_for_dsm_20764
-- medium_58_modified_for_dsm_20765
-- medium_58_modified_for_dsm_21655
-- medium_58_modified_for_dsm_24661
-- medium_58_modified_for_dsm_7198
-- medium_58_modified_for_dsm_7199
-- medium_58_modified_for_dsm_7200
-- medium_58_modified_for_dsm_7201
-merge_fingerprint: 474925c4715a15753d52a3bb8eada71fe6dfddec9ce6ef05ea737587dd8e35c5
+- JCM_J19_BIFIDOBACTERIUM_MEDIUM

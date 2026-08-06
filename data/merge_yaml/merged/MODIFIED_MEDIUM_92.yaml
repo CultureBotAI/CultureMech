@@ -3,6 +3,7 @@ name: modified_medium_92
 original_name: MODIFIED MEDIUM 92
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 92a
@@ -32,8 +33,8 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Folic acid
   term:
@@ -42,8 +43,8 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
     label: Folic acid
 - preferred_term: Pyridoxine hydrochloride
   term:
@@ -52,8 +53,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001016
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
     label: Pyridoxine hydrochloride
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
@@ -62,8 +63,8 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000160
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132751
     label: Thiamine-HCl x 2 H2O
 - preferred_term: Riboflavin
   term:
@@ -72,8 +73,8 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: Nicotinic acid
   term:
@@ -82,8 +83,8 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
     label: Nicotinic acid
 - preferred_term: Calcium pantothenate
   term:
@@ -92,8 +93,8 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium pantothenate
 - preferred_term: p-Aminobenzoic acid
   term:
@@ -102,8 +103,8 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
     label: p-Aminobenzoic acid
 - preferred_term: Vitamin B12
   term:
@@ -112,8 +113,8 @@ ingredients:
   concentration:
     value: 1e-05
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 - preferred_term: Pancreatic digest of casein
   term:
@@ -242,8 +243,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (if necessary)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -273,6 +274,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MODIFIED MEDIUM 92" to "modified_medium_92" for consistent
     matching
+- timestamp: '2026-06-05T07:41:37.156826+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:48.867466+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 3de3da748606522447dee61287980f8626f4ae23c1ccb671b0aae25f27e00afe
+  source: modified_medium_92.yaml
 merge_fingerprint: 3de3da748606522447dee61287980f8626f4ae23c1ccb671b0aae25f27e00afe
 merged_from:
 - modified_medium_92

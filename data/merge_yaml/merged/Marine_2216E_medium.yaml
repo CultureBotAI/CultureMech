@@ -3,6 +3,7 @@ name: marine_2216e_medium
 original_name: Marine 2216E medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +32,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: FePO4
   concentration:
     value: '0.01'
@@ -43,9 +44,9 @@ ingredients:
   term:
     id: CHEBI:131371
     label: iron(3+) phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000874
-    label: FePO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131371
+    label: iron(3+) phosphate
 - preferred_term: Tryptone
   concentration:
     value: '0.5'
@@ -81,6 +82,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Marine 2216E medium" to "marine_2216e_medium" for consistent
     matching
+- timestamp: '2026-06-05T07:41:12.742709+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:41.884874+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 272a6ef7088b575290703b368aaeac1483754a40090526b1fc4eb47abb1be09e
+  source: marine_2216e_medium.yaml
 merge_fingerprint: 272a6ef7088b575290703b368aaeac1483754a40090526b1fc4eb47abb1be09e
 merged_from:
 - marine_2216e_medium

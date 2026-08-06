@@ -3,6 +3,7 @@ name: togo_medium_m310
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
@@ -24,8 +25,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
   term:
-    id: CHEBI:32599
-    label: ''
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: NaCl
   concentration:
     value: '0.2'
@@ -35,9 +36,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.03'
@@ -55,9 +56,9 @@ ingredients:
     compound'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
@@ -68,9 +69,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: K2HPO4
   concentration:
     value: '0.78'
@@ -80,9 +81,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: FeSO4・7H2O
   concentration:
     value: '0.01'
@@ -101,9 +102,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: Glucose
   concentration:
     value: '0.5'
@@ -113,9 +114,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '0.5'
@@ -134,11 +135,17 @@ ingredients:
     value: '0.04'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
+  term:
+    id: CHEBI:63125
+    label: ''
 - preferred_term: L--Cysteine・HCl・H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
+  term:
+    id: CHEBI:91248
+    label: ''
 - preferred_term: CO2
   notes: 'Properties: ガス'
   concentration:
@@ -177,10 +184,10 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:57.365789'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2; Added default concentration
     for ingredient: Nitrogen gas'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:04:53.339416+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -190,9 +197,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009586'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:59.421679'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:33.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -202,6 +209,31 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TOGO Medium M310" to "togo_medium_m310" for consistent
     matching
+- timestamp: '2026-05-16T09:04:37.315079+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:41:53.692437+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:58:37.897660+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:47:14.182870+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:01.442219+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint db3dc0de11ed79bbe2813ae432ea9d1ea33cab8aca6e62032aa269643af756d8
+  source: togo_medium_m310.yaml
 solutions:
 - preferred_term: Trace vitamins (see Medium [M190])
   composition: []
@@ -217,6 +249,6 @@ solutions:
     value: '10'
     unit: G_PER_L
   name: Unknown solution
-merge_fingerprint: bc7fb81d9b359ed31b27d5816c7457cac9bebed8024e2bd7f3fd175de3cead32
+merge_fingerprint: db3dc0de11ed79bbe2813ae432ea9d1ea33cab8aca6e62032aa269643af756d8
 merged_from:
 - togo_medium_m310

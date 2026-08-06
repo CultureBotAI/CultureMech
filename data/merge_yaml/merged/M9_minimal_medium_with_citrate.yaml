@@ -3,6 +3,7 @@ name: m9_minimal_medium_with_citrate
 original_name: M9 minimal medium with citrate
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Citrate
@@ -10,14 +11,23 @@ ingredients:
     value: '10.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.1'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '49.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -25,13 +35,16 @@ ingredients:
   concentration:
     value: '8.6'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '22.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -39,8 +52,8 @@ ingredients:
   concentration:
     value: '2.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
@@ -49,8 +62,8 @@ ingredients:
   concentration:
     value: '19.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 preparation_steps:
 - step_number: 1
@@ -81,6 +94,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "M9 minimal medium with citrate" to "m9_minimal_medium_with_citrate"
     for consistent matching
+- timestamp: '2026-06-05T07:41:12.019210+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:41.179139+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 0138b6dc39e7c7af1b99f7c83a8fad51f22091bc5bf8c1ed97c59bc6ab639146
+  source: m9_minimal_medium_with_citrate.yaml
 media_term:
   preferred_term: MediaDB Medium 73
   term:
@@ -92,6 +116,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 8b81ae91232c105cc1625bc67b97146a6decefb38e61eb47a35968144ad9da32
+merge_fingerprint: 0138b6dc39e7c7af1b99f7c83a8fad51f22091bc5bf8c1ed97c59bc6ab639146
 merged_from:
 - m9_minimal_medium_with_citrate

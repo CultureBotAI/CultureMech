@@ -4,6 +4,7 @@ original_name: '382'
 category: bacterial
 description: 382. NBRC 380.
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Pepton5gBeef extract3gYeast extract5gNaCl3gAgar (if needed)15gDistilled
@@ -40,10 +41,19 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007491'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:45.893611'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Pepton5gBeef extract3gYeast
     extract5gNaCl3gAgar (if needed)15gDistilled water1LpH 7.0'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-05-16T09:03:06.697406+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:05:04.680101+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint fbdbc52cd366805cc046ac39b2e364695e5efc47389a2ba91441a3ae8eb25b98
+  source: NBRC_382.yaml
 merge_fingerprint: fbdbc52cd366805cc046ac39b2e364695e5efc47389a2ba91441a3ae8eb25b98
 merged_from:
 - NBRC_382

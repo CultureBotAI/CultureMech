@@ -3,6 +3,7 @@ name: marinobacter_lutaoensis_medium
 original_name: MARINOBACTER LUTAOENSIS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:
@@ -28,8 +29,8 @@ ingredients:
   concentration:
     value: '25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -38,8 +39,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 applications:
 - Microbial cultivation
@@ -65,10 +66,31 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MARINOBACTER LUTAOENSIS medium" to "marinobacter_lutaoensis_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:14.755414+00:00'
+- timestamp: '2026-06-05T07:40:18.678523+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:39.044696+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_1066_MARINOBACTER_LUTAOENSIS_medium, marinobacter_lutaoensis_medium'
+- timestamp: '2026-08-06T03:04:39.044731+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 7c4cbd3f0f9b9d0df5e53ba3f5e7106d3cafa4a262a48679450e54f89972f32d
+  source: KOMODO_1066_MARINOBACTER_LUTAOENSIS_medium.yaml, marinobacter_lutaoensis_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/marinobacter_lutaoensis_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000499
+  name: marinobacter_lutaoensis_medium
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and concentration
+    signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.
 categories:
 - bacterial
 merged_from:

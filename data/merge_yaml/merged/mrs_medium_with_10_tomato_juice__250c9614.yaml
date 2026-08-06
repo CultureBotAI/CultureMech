@@ -1,0 +1,72 @@
+id: CultureMech:003148
+name: mrs_medium_with_10_tomato_juice
+original_name: MRS MEDIUM WITH 10% TOMATO JUICE
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_value: 5.2
+media_term:
+  preferred_term: JCM Medium J803
+  term:
+    id: mediadive.medium:J803
+    label: MRS MEDIUM WITH 10% TOMATO JUICE
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=803'
+ingredients:
+- preferred_term: MRS broth
+  concentration:
+    value: '55'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+- preferred_term: Tomato juice
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: ' ( filtered)'
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 5.2.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.646290Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J803'
+- timestamp: '2026-03-13T06:19:18.141533Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003148'
+- timestamp: '2026-03-17T06:29:56.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:31.955670+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MRS MEDIUM WITH 10% TOMATO JUICE" to "mrs_medium_with_10_tomato_juice"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:38.501657+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:50.509151+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 250c9614a656ee51066d9d538bb2ed78388ce83a18bfa894bae3621ad141049e
+  source: mrs_medium_with_10_tomato_juice.yaml
+merge_fingerprint: 250c9614a656ee51066d9d538bb2ed78388ce83a18bfa894bae3621ad141049e
+merged_from:
+- mrs_medium_with_10_tomato_juice

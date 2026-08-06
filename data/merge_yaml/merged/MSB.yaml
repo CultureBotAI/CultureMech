@@ -1,6 +1,7 @@
 id: CultureMech:015644
 name: MSB
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Disodium phosphate
@@ -59,6 +60,9 @@ ingredients:
     value: '1.85E-04'
     unit: G_PER_L
   notes: 'CAS: 12027-67-7; MW: 1235.86'
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: Iron (II) sulfate heptahydrate
   concentration:
     value: '1.98E-03'
@@ -118,7 +122,7 @@ ingredients:
 description: A defined Ralstonia growth medium from Tiffany Lowe-Power lab (note,
   no carbon is added)
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: MSB
@@ -132,8 +136,17 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015644'
+- timestamp: '2026-05-16T09:04:42.034090+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:06.896593+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 52347aff64d2920e1fcad65962be8b3e67412a6552e857982e471bf4ae6e293b
+  source: msb.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: ff42bf4b42787cfb3e276efe3b7d72b550af5ea73772d33d07dac324b8e6fd0e
+merge_fingerprint: 52347aff64d2920e1fcad65962be8b3e67412a6552e857982e471bf4ae6e293b
 merged_from:
 - msb

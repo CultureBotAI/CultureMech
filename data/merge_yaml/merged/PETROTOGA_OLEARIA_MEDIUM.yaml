@@ -3,6 +3,7 @@ name: petrotoga_olearia_medium
 original_name: PETROTOGA OLEARIA MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:
@@ -19,8 +20,8 @@ ingredients:
   concentration:
     value: '26'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -29,8 +30,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -39,18 +40,18 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: KCl
   term:
@@ -59,8 +60,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: PIPES
   term:
@@ -69,33 +70,36 @@ ingredients:
   concentration:
     value: '3.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000276
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39033
     label: PIPES
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.35'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.35'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Na-acetate x 3 H2O
   concentration:
     value: '2.72'
     unit: G_PER_L
+  term:
+    id: CHEBI:32138
+    label: ''
 - preferred_term: Yeast extract
   concentration:
     value: '2'
@@ -108,6 +112,9 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: Maltose
   term:
     id: CHEBI:17306
@@ -115,8 +122,8 @@ ingredients:
   concentration:
     value: '3.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000591
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17306
     label: Maltose
 - preferred_term: Na2S x 9 H2O
   term:
@@ -125,8 +132,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 preparation_steps:
 - step_number: 1
@@ -157,11 +164,27 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "PETROTOGA OLEARIA MEDIUM" to "petrotoga_olearia_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:30:04.142049+00:00'
+- timestamp: '2026-06-05T07:41:41.508144+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:10.096319+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:35.168641+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: for_dsm_21709, marinitoga_litoralis_medium, petrotoga_olearia_medium,
     sl_medium'
+- timestamp: '2026-08-06T03:05:35.168708+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 4 source recipe(s) on fingerprint f9ec7a5fc9a6c8318bf2db6cc44bd1a76cf8fe39ce473d689c5b9b747a12abc3
+  source: for_dsm_21709.yaml, marinitoga_litoralis_medium.yaml, petrotoga_olearia_medium.yaml,
+    sl_medium.yaml
 synonyms:
 - name: for_dsm_21709
   source: KOMODO
@@ -182,4 +205,4 @@ merged_from:
 - marinitoga_litoralis_medium
 - petrotoga_olearia_medium
 - sl_medium
-merge_fingerprint: 82299b1232a783eebc1188c4bd6299182e2c40de40d6eb54fd3e668415e91fb9
+merge_fingerprint: f9ec7a5fc9a6c8318bf2db6cc44bd1a76cf8fe39ce473d689c5b9b747a12abc3

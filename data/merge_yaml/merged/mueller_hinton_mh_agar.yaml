@@ -3,6 +3,7 @@ name: mueller_hinton_mh_agar
 original_name: Mueller Hinton (MH) agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Mueller Hinton (MH) agar
@@ -45,11 +46,11 @@ curation_history:
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2942'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.864234'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     Oxygen gas'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:06.312156Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -59,6 +60,15 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Mueller Hinton (MH) agar" to "mueller_hinton_mh_agar"
     for consistent matching
+- timestamp: '2026-05-16T09:04:27.053776+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:05:50.809382+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b5e2777a943146b68e4c92578640604820f134ac423da1f87f1ff45bb36753b7
+  source: mueller_hinton_mh_agar.yaml
 merge_fingerprint: b5e2777a943146b68e4c92578640604820f134ac423da1f87f1ff45bb36753b7
 merged_from:
 - mueller_hinton_mh_agar

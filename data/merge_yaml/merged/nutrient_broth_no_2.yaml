@@ -3,6 +3,7 @@ name: nutrient_broth_no_2
 original_name: Nutrient broth No.2
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Sodium chloride
   concentration:
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: Sodium Chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -77,6 +78,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Nutrient broth No.2" to "nutrient_broth_no_2" for consistent
     matching
+- timestamp: '2026-06-05T07:41:40.184759+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:51.725694+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 25d3424c5e25b603ef574eedd42c2846c2179737c09427f2bca0501184ca6c5e
+  source: nutrient_broth_no_2.yaml
 merge_fingerprint: 25d3424c5e25b603ef574eedd42c2846c2179737c09427f2bca0501184ca6c5e
 merged_from:
 - nutrient_broth_no_2

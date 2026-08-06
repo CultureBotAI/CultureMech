@@ -1,107 +1,129 @@
-id: CultureMech:008938
+id: CultureMech:006961
 name: rhizobium_medium
-original_name: Rhizobium Medium
+original_name: RHIZOBIUM medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1000.0'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component [Merged 2 duplicates: 800.0, 200.0]'
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 98
   term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
+    id: komodo.medium:98
+    label: RHIZOBIUM medium
+notes: 'Source: KOMODO ModelSEED | ID: 98 | DSMZ Medium: 98 (mediadive.medium:98)
+  | Aerobic: No'
+ingredients:
 - preferred_term: Yeast extract
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
 - preferred_term: Mannitol
+  term:
+    id: CHEBI:29864
+    label: Mannitol
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:29864
-    label: mannitol
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001010
     label: Mannitol
 - preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
     label: Agar
-- preferred_term: Soil extract
+- preferred_term: air-dried garden soil
   concentration:
-    value: '200'
+    value: '400'
     unit: G_PER_L
 - preferred_term: Na2CO3
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
   term:
     id: CHEBI:29377
     label: sodium carbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
-    label: Na2CO3
-- preferred_term: Air-dried garden soil
   concentration:
-    value: '80'
+    value: '1'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M2353
-  term:
-    id: TOGO:M2353
-    label: Rhizobium Medium
-notes: 'Source: https://togomedium.org/medium/M2353
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium98.pdf'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: Na2CO3
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.388429Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2353'
-- timestamp: '2026-01-28T19:48:24.769493Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T03:09:10.980573Z'
-  curator: data-quality-cleanup-v1.0
-  action: Data quality fixes
-  notes: Merged 1 duplicate ingredient(s)
-- timestamp: '2026-03-13T06:20:01.437138Z'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 98'
+- timestamp: '2026-02-03T11:19:06.053418'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 98
+- timestamp: '2026-03-13T06:19:45.284092Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:008938'
-- timestamp: '2026-03-17T06:30:17.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:006961'
+- timestamp: '2026-03-17T06:30:15.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:20.160734+00:00'
+- timestamp: '2026-03-17T19:46:03.326387+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Rhizobium Medium" to "rhizobium_medium" for consistent
+  notes: Normalized name from "RHIZOBIUM medium" to "rhizobium_medium" for consistent
     matching
-merge_fingerprint: 97fed85c4c82514ceeab26abd35e925a112ece40bd472834675416ccdddf8e20
+- timestamp: '2026-06-05T07:40:28.406989+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:46.603823+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:03.330583+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_98_RHIZOBIUM_medium, medium_98_modified_for_dsm_15010, rhizobium_medium'
+- timestamp: '2026-08-06T03:05:03.330621+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint c23d3b65f61c2a07186caed2b857a87e847ed75bdddb14beb255052b1275847d
+  source: KOMODO_98_RHIZOBIUM_medium.yaml, medium_98_modified_for_dsm_15010.yaml,
+    rhizobium_medium.yaml
+kg_microbe_match: mediadive.medium:98
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_98_modified_for_dsm_15010.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006941
+  name: medium_98_modified_for_dsm_15010
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/rhizobium_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002171
+  name: rhizobium_medium
+  notes: KOMODO record states DSMZ Medium 98 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
+synonyms:
+- name: medium_98_modified_for_dsm_15010
+  source: KOMODO
+  source_id: komodo.medium:98_15010
+  original_category: bacterial
+categories:
+- bacterial
 merged_from:
-- TOGO_M2353_Rhizobium_Medium
+- KOMODO_98_RHIZOBIUM_medium
+- medium_98_modified_for_dsm_15010
+- rhizobium_medium
+merge_fingerprint: c23d3b65f61c2a07186caed2b857a87e847ed75bdddb14beb255052b1275847d

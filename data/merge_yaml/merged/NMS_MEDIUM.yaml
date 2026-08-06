@@ -1,233 +1,211 @@
-id: CultureMech:009902
+id: CultureMech:002861
 name: nms_medium
-original_name: NMS Medium
+original_name: NMS MEDIUM
 category: bacterial
-medium_type: COMPLEX
+medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: JCM Medium J510
+  term:
+    id: mediadive.medium:J510
+    label: NMS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=510'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '3.0'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component [Merged 3 duplicates: 1.0, 1.0, 1.0]'
+- preferred_term: MgSO4 x 7 H2O
   term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
   concentration:
-    value: '1'
+    value: '0.952381'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32599
-    label: ''
-- preferred_term: CaCl2・2H2O
-  concentration:
-    value: '0.13'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: ''
-- preferred_term: KNO3
+    label: CaCl2 x 2 H2O
   concentration:
-    value: '1'
+    value: '0.12381'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: Ferric citrate
   term:
-    id: CHEBI:17632
-    label: nitrate
+    id: CHEBI:144421
+    label: Ferric citrate
+  concentration:
+    value: '0.00380952'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:144421
+    label: Ferric citrate
+- preferred_term: KNO3
+  term:
+    id: CHEBI:63043
+    label: potassium nitrate
+  concentration:
+    value: '0.952381'
+    unit: G_PER_L
   mediaingredientmech_term:
     id: MediaIngredientMech:000170
     label: KNO3
-- preferred_term: Ferric citrate
-  concentration:
-    value: '4'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
-    component'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000281
-    label: Ferric citrate
+- preferred_term: Na2-EDTA
   term:
-    id: CHEBI:144421
-    label: ''
-- preferred_term: methane--air (50:50)
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Na2MoO4・2H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:75215
-    label: ''
-- preferred_term: H3BO3
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:33118
-    label: boric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
-- preferred_term: FeSO4・7H2O
-  concentration:
-    value: '200'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:75836
-    label: ''
-- preferred_term: MnCl2・4H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86368
-    label: ''
-- preferred_term: CoCl2・6H2O
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:35696
-    label: ''
-- preferred_term: NiCl2・6H2O
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:34887
-    label: ''
-- preferred_term: ZnSO4・7H2O
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32312
-    label: ''
-- preferred_term: CuCl2・2H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86318
-    label: ''
-- preferred_term: EDTA・2Na
-  concentration:
-    value: '500'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Simple component'
-- preferred_term: KH2PO4
-  concentration:
-    value: '5.44'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
-- preferred_term: Na2HPO4・12H2O
-  concentration:
-    value: '14.3'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:34683
-    label: ''
-media_term:
-  preferred_term: TOGO Medium M511
-  term:
-    id: TOGO:M511
-    label: NMS Medium
-notes: 'Source: https://togomedium.org/medium/M511
-
-  Original source: JCM - JCM_M510
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=510'
-applications:
-- Microbial cultivation
-curation_history:
-- timestamp: '2026-01-27T06:35:55.199476Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M511'
-- timestamp: '2026-01-28T19:48:17.008890Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:59.156924'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: methane--air (50:50)'
-- timestamp: '2026-03-09T08:04:28.128493+00:00'
-  curator: solution-migrator-v1.0
-  action: Migrated solutions from ingredients to solutions array
-  notes: Moved 2 solution(s) from ingredients
-- timestamp: '2026-03-13T03:08:56.885332Z'
-  curator: data-quality-cleanup-v1.0
-  action: Data quality fixes
-  notes: Merged 2 duplicate ingredient(s)
-- timestamp: '2026-03-13T06:20:09.805206Z'
-  curator: culturemech-id-assigner-v1.0
-  action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:009902'
-- curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:01.386410'
-  action: Applied schema defaults and normalizations
-  notes: Added default solution name; Added default solution name
-- timestamp: '2026-03-17T06:30:01.000000Z'
-  curator: mediaingredientmech-enrichment-v1.0
-  action: Added MediaIngredientMech links
-  notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:28.757335+00:00'
-  curator: normalize_media_names_to_snake_case.py
-  action: NAME_NORMALIZED
-  notes: Normalized name from "NMS Medium" to "nms_medium" for consistent matching
-high_metal: true
-solutions:
-- preferred_term: Trace element solution (see below)
-  composition: []
+    id: CHEBI:64734
+    label: Na2-EDTA
   concentration:
     value: '0.5'
     unit: G_PER_L
-  name: Unknown solution
-- preferred_term: 20 x Phosphate solution (see below)
-  composition: []
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
   concentration:
-    value: '50'
+    value: '0.2'
     unit: G_PER_L
-  name: Unknown solution
-merge_fingerprint: 7f559f59dfb29047cfcecc3eb82578286d46ed0da32db040e748335656311be5
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: H3BO3
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  concentration:
+    value: '5.44'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: Na2HPO4 x 12 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 12 H2O
+  concentration:
+    value: '14.3'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 12 H2O
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Adjust pH to 6.8. Separately autoclave 20 x Phosphate solution and
+    add aseptically to the medium. Cultivate under a methane-air (50:50) atmosphere.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.793450Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J510'
+- timestamp: '2026-03-13T06:19:16.140684Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002861'
+- timestamp: '2026-03-17T06:30:00.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:29.645915+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "NMS MEDIUM" to "nms_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:17.415552+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 14 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:37:34.100637+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:46:43.015384+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:36.894345+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 5fc643cbfee2ae795962f27b4de083e1271adbdf809c484dc6c5e31e3166d567
+  source: JCM_J510_NMS_MEDIUM.yaml
+merge_fingerprint: 5fc643cbfee2ae795962f27b4de083e1271adbdf809c484dc6c5e31e3166d567
 merged_from:
-- TOGO_M511_NMS_Medium
+- JCM_J510_NMS_MEDIUM

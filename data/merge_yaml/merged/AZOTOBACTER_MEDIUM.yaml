@@ -3,6 +3,7 @@ name: azotobacter_medium
 original_name: AZOTOBACTER MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.3
 media_term:
@@ -20,8 +21,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Mannitol
   term:
@@ -30,8 +31,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001010
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29864
     label: Mannitol
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -40,8 +41,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -50,8 +51,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -60,28 +61,28 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.9'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -90,8 +91,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: CaCO3
   term:
@@ -100,8 +101,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001099
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
     label: CaCO3
 - preferred_term: Agar
   term:
@@ -110,8 +111,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -137,10 +138,44 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "AZOTOBACTER MEDIUM" to "azotobacter_medium" for consistent
     matching
-- timestamp: '2026-04-17T06:29:23.389612+00:00'
+- timestamp: '2026-06-05T07:40:23.055029+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:44.801909+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:48.585879+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_3_AZOTOBACTER_MEDIUM, azotobacter_medium, medium_3_modified_for_dsm_44106'
+- timestamp: '2026-08-06T03:04:48.585931+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 3762de72a3f7a77aa967501b92a3f50bf8ca9049914cfd321152490da41b62e3
+  source: KOMODO_3_AZOTOBACTER_MEDIUM.yaml, azotobacter_medium.yaml, medium_3_modified_for_dsm_44106.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_3_modified_for_dsm_44106.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004778
+  name: medium_3_modified_for_dsm_44106
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/azotobacter_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001510
+  name: azotobacter_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 3; one unlinked DSMZ parent record
+    exists and the local physical state, pH, ingredient, and concentration signatures
+    match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 3; local ingredient and
+  concentration signatures match.
 synonyms:
 - name: medium_3_modified_for_dsm_44106
   source: KOMODO

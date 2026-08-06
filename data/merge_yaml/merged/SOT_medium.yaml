@@ -3,6 +3,7 @@ name: sot_medium
 original_name: SOT medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4 · 7H2O
   concentration:
@@ -24,8 +25,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:32599
-    label: ''
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: NaCl
   concentration:
     value: '100'
@@ -35,9 +36,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2 · 2H2O
   concentration:
     value: '4'
@@ -56,9 +57,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: FeSO4 · 7H2O
   concentration:
     value: '1'
@@ -77,9 +78,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: NaNO3
   concentration:
     value: '250'
@@ -89,8 +90,8 @@ ingredients:
   term:
     id: CHEBI:63005
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000388
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
     label: NaNO3
 - preferred_term: K2SO4
   concentration:
@@ -101,9 +102,9 @@ ingredients:
   term:
     id: CHEBI:32036
     label: potassium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001064
-    label: K2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32036
+    label: potassium sulfate
 - preferred_term: Na2EDTA · 2H2O
   concentration:
     value: '8'
@@ -137,9 +138,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: ZnSO4 · 7H2O
   concentration:
     value: '22.2'
@@ -184,9 +185,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:54.026652'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:05:11.047983+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -200,9 +201,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009080'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:55.933459'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:55.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -211,6 +212,31 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "SOT medium" to "sot_medium" for consistent matching
+- timestamp: '2026-05-16T09:04:31.885188+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:41:46.077054+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:58:32.433213+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:47:11.558341+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:55.921855+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint f8735ae9a8147a8065ee0b55db499b4b823a2ec9e31dc1934383b4d846c70e62
+  source: sot_medium.yaml
 high_metal: true
 solutions:
 - preferred_term: A5 solution
@@ -222,6 +248,6 @@ solutions:
     unit: G_PER_L
   notes: See mediadive_4987_A5_solution.yaml for composition
   name: Unknown solution
-merge_fingerprint: 0a1820f5591e6b051acbedcbe060ad725bc4a7dffd38f63cc2f35b435f0ce6ea
+merge_fingerprint: f8735ae9a8147a8065ee0b55db499b4b823a2ec9e31dc1934383b4d846c70e62
 merged_from:
 - sot_medium

@@ -3,6 +3,7 @@ name: volvic_af6
 original_name: Volvic AF6
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: MgSO4·7H2O
@@ -12,11 +13,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4·7H2O
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '10'
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: KH2PO4
   concentration:
     value: '10'
@@ -37,9 +38,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: K2HPO4
   concentration:
@@ -50,9 +51,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Biotin
   concentration:
     value: '2'
@@ -61,9 +62,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
-    label: Biotin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
+    label: biotin
 - preferred_term: Thiamine-HCl
   concentration:
     value: '10'
@@ -72,9 +73,9 @@ ingredients:
   term:
     id: CHEBI:49105
     label: thiamine hydrochloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
-    label: Thiamine-HCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
 - preferred_term: Vitamin B12
   concentration:
     value: '1'
@@ -83,9 +84,9 @@ ingredients:
   term:
     id: CHEBI:176843
     label: vitamin B12
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001027
-    label: Vitamin B12
+  mediaingredientmech_chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
 - preferred_term: NaNO3
   concentration:
     value: '140'
@@ -95,8 +96,8 @@ ingredients:
   term:
     id: CHEBI:63005
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000388
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
     label: NaNO3
 - preferred_term: CaCO3
   concentration:
@@ -107,9 +108,9 @@ ingredients:
   term:
     id: CHEBI:3311
     label: calcium carbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001099
-    label: CaCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
+    label: calcium carbonate
 - preferred_term: NH4NO3
   concentration:
     value: '22'
@@ -118,9 +119,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63038
-    label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000287
+    label: ammonium nitrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63038
     label: NH4NO3
 - preferred_term: Fe-citrate
   concentration:
@@ -136,8 +137,8 @@ ingredients:
   term:
     id: CHEBI:39010
     label: MES
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000269
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39010
     label: MES
 - preferred_term: Volvic water
   concentration:
@@ -149,6 +150,9 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:16709
+    label: ''
 - preferred_term: Agar (if needed)
   concentration:
     value: '12'
@@ -162,9 +166,9 @@ ingredients:
   term:
     id: CHEBI:53258
     label: sodium citrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
-    label: Citric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
+    label: sodium citrate
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -174,8 +178,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Na2MoO4·2H2O
   concentration:
@@ -186,9 +190,9 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000183
-    label: Na2MoO4·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
 - preferred_term: MnCl2·4H2O
   concentration:
     value: '3.6'
@@ -216,9 +220,9 @@ ingredients:
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
-    label: ZnSO4·7H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
 - preferred_term: FeCl3·6H2O
   concentration:
     value: '19.6'
@@ -228,9 +232,9 @@ ingredients:
   term:
     id: CHEBI:86254
     label: iron trichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000218
-    label: FeCl3·6H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86254
+    label: iron trichloride hexahydrate
 - preferred_term: Na2EDTA·2H2O
   concentration:
     value: '100'
@@ -239,9 +243,9 @@ ingredients:
   term:
     id: CHEBI:64758
     label: EDTA disodium salt dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000572
-    label: Na2EDTA·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64758
+    label: EDTA disodium salt dihydrate
 media_term:
   preferred_term: TOGO Medium M1918
   term:
@@ -272,9 +276,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008496'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:52.385243'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:47.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -283,6 +287,31 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "Volvic AF6" to "volvic_af6" for consistent matching
+- timestamp: '2026-05-16T09:04:38.668962+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:55.188547+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 17 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:58:39.237475+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:47:14.525480+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:02.658637+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 9dac2bfe43efabf13d1f3339268ac841b7f990809b4b46e2a9d9f35568a5d064
+  source: volvic_af6.yaml
 solutions:
 - preferred_term: P IV Metals solution*
   composition: []
@@ -290,6 +319,6 @@ solutions:
     value: '5'
     unit: G_PER_L
   name: Unknown solution
-merge_fingerprint: 0a28691494119b33624bd73321994615ad571cec23b2596df399c383e037a294
+merge_fingerprint: 9dac2bfe43efabf13d1f3339268ac841b7f990809b4b46e2a9d9f35568a5d064
 merged_from:
 - volvic_af6

@@ -1,148 +1,138 @@
-id: CultureMech:008175
+id: CultureMech:002502
 name: leuconostoc_oenos_medium
-original_name: Leuconostoc oenos Medium
+original_name: LEUCONOSTOC OENOS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 4.8
+media_term:
+  preferred_term: JCM Medium J143
+  term:
+    id: mediadive.medium:J143
+    label: LEUCONOSTOC OENOS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=143'
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Casein peptone
   concentration:
-    value: '900'
+    value: '9.99001'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: MgSO4·7H2O
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4·7H2O
+  notes: ' ( tryptic digest)'
 - preferred_term: Yeast extract
   concentration:
-    value: '5'
+    value: '4.99501'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '9.99001'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: Glucose
+- preferred_term: Fructose
+  term:
+    id: CHEBI:28757
+    label: Fructose
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28757
+    label: Fructose
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1998'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: MnSO4 x n H2O
+  concentration:
+    value: '0.04995'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86360
+    label: manganese(II) sulfate
+- preferred_term: Diammonium Citrate
+  term:
+    id: CHEBI:63076
+    label: Diammonium Citrate
+  concentration:
+    value: '3.4965'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63076
+    label: Diammonium Citrate
 - preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Surfactant; Properties: Simple component, Defined component, Organic
-    compound'
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:53426
-    label: polysorbate 80
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000190
     label: Tween 80
-- preferred_term: MnSO4·H2O
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:86364
-    label: ''
-- preferred_term: Diammonium hydrogencitrate
-  concentration:
-    value: '3.5'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Organic compound, Simple component, Defined
-    component'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000400
-    label: Diammonium hydrogencitrate
-- preferred_term: Fructose
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
-  term:
-    id: CHEBI:28645
-    label: beta-D-fructofuranose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000288
-    label: Fructose
-- preferred_term: Tomato juice, filtered
+- preferred_term: Tomato juice
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Undefined component'
-- preferred_term: Glucose
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
+  notes: ' ( filtered)'
+- preferred_term: L-Cysteine HCl x H2O
   term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
-- preferred_term: Cysteine-HCl
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
   concentration:
-    value: '0.5'
+    value: '0.499501'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Simple component'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000389
-    label: Cysteine-HCl
-  term:
-    id: CHEBI:52891
-    label: ''
-- preferred_term: Casein peptone, tryptic digest
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M1620
-  term:
-    id: TOGO:M1620
-    label: Leuconostoc oenos Medium
-notes: 'Source: https://togomedium.org/medium/M1620
-
-  Original source: NBRC - NBRC_M820
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=820'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 4.8.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:57.968649Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: NBRC, ID: M1620'
-- timestamp: '2026-01-28T19:48:07.532511Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:19:54.159337Z'
+- timestamp: '2026-01-26T17:53:15.808592Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J143'
+- timestamp: '2026-03-13T06:19:13.848221Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:008175'
-- timestamp: '2026-03-17T06:29:40.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:002502'
+- timestamp: '2026-03-17T06:30:34.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:12.735031+00:00'
+- timestamp: '2026-03-17T19:45:27.016338+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Leuconostoc oenos Medium" to "leuconostoc_oenos_medium"
+  notes: Normalized name from "LEUCONOSTOC OENOS MEDIUM" to "leuconostoc_oenos_medium"
     for consistent matching
-merge_fingerprint: 421a245a69aa1044a15d1d426d3cd664366b945ba48af18fe163e78fd80b1eb2
+- timestamp: '2026-06-05T07:40:16.695062+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:42.786368+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:35.675231+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint ca1735cef94f107f127ae351cdd335ce1b358a26fc74588bbd531ee6b299785d
+  source: JCM_J143_LEUCONOSTOC_OENOS_MEDIUM.yaml
+merge_fingerprint: ca1735cef94f107f127ae351cdd335ce1b358a26fc74588bbd531ee6b299785d
 merged_from:
-- TOGO_M1620_Leuconostoc_oenos_Medium
+- JCM_J143_LEUCONOSTOC_OENOS_MEDIUM

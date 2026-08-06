@@ -3,6 +3,7 @@ name: thiobacillus_acidophilus_medium
 original_name: THIOBACILLUS ACIDOPHILUS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ph_value: 3.5
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 108 | DSMZ Medium: 108 (mediadive.medium:108)
@@ -16,22 +17,22 @@ ingredients:
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -40,8 +41,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: KCl
   term:
@@ -50,8 +51,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: Ca(NO3)2 x 4 H2O
   term:
@@ -60,8 +61,8 @@ ingredients:
   concentration:
     value: '0.018'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000586
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86159
     label: Ca(NO3)2 x 4 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -70,8 +71,8 @@ ingredients:
   concentration:
     value: 1e-05
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: Agar
   term:
@@ -81,8 +82,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: Optional ingredient (for solid medium)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: D-Glucose
   term:
@@ -91,8 +92,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: H2SO4
   term:
@@ -102,9 +103,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001125
-    label: H2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26836
+    label: sulfuric acid
 applications:
 - Microbial cultivation
 curation_history:
@@ -125,9 +126,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:003740'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:30.339396'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: H2SO4'
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:09.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -137,6 +138,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "THIOBACILLUS ACIDOPHILUS MEDIUM" to "thiobacillus_acidophilus_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:04:35.280232+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:51.166665+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:13.394865+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:59.092878+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 147714a47f4bf469c50bad8708eeb9be9aaa1a6b9d824a1443fb76927be66f7d
+  source: thiobacillus_acidophilus_medium.yaml
 merge_fingerprint: 147714a47f4bf469c50bad8708eeb9be9aaa1a6b9d824a1443fb76927be66f7d
 merged_from:
 - thiobacillus_acidophilus_medium

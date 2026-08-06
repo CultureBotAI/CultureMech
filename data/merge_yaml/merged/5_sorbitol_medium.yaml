@@ -1,17 +1,17 @@
-id: CultureMech:006132
+id: CultureMech:001757
 name: 5_sorbitol_medium
-original_name: 5% SORBITOL medium
+original_name: 5% SORBITOL MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 6.0
-notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 626 | DSMZ Medium: 626 (mediadive.medium:626)
-  | Aerobic: No'
 media_term:
-  preferred_term: KOMODO Medium 626
+  preferred_term: DSMZ Medium 626
   term:
-    id: komodo.medium:626
-    label: 5% SORBITOL medium
+    id: mediadive.medium:626
+    label: 5% SORBITOL MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium626.pdf'
 ingredients:
 - preferred_term: D-Sorbitol
   term:
@@ -20,8 +20,8 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000869
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17924
     label: D-Sorbitol
 - preferred_term: Yeast extract
   concentration:
@@ -38,52 +38,45 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
-- preferred_term: HCl
-  term:
-    id: CHEBI:17883
-    label: hydrochloric acid
-  notes: pH adjustment (extracted from notes)
-  concentration:
-    value: variable
-    unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000150
-    label: HCl
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adjust medium for final pH 6.0 with HCl.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: 2026-01-27T01:15:03.fZ
-  curator: komodo-web-import
-  action: Imported from KOMODO web table
-  notes: 'Source: KOMODO, ID: 626'
-- timestamp: '2026-02-03T11:19:01.420995'
-  curator: dsmz-resolver-v1.0
-  action: Enriched with DSMZ composition
-  notes: Copied ingredients from DSMZ Medium 626
-- timestamp: '2026-03-13T03:08:55.303864Z'
-  curator: data-quality-cleanup-v1.0
-  action: Data quality fixes
-  notes: 'Added pH buffer: HCl'
-- timestamp: '2026-03-13T06:19:38.518158Z'
+- timestamp: '2026-01-26T17:53:11.770743Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 626'
+- timestamp: '2026-03-13T06:19:06.995508Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:006132'
-- curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:39.788556'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: HCl'
-- timestamp: '2026-03-17T06:29:59.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:001757'
+- timestamp: '2026-03-17T06:30:52.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:55.454494+00:00'
+- timestamp: '2026-03-17T19:45:19.245163+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "5% SORBITOL medium" to "5_sorbitol_medium" for consistent
+  notes: Normalized name from "5% SORBITOL MEDIUM" to "5_sorbitol_medium" for consistent
     matching
-merge_fingerprint: c395a410b29fafe87ea14870f37fda7f61b01bed6e64153544d480a947215637
+- timestamp: '2026-06-05T07:40:15.875357+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:34.163847+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint a64c0871cf82886170cfa1626fb081e459ac60f41e86adff55e8ee6ab008dc0c
+  source: 5_sorbitol_medium.yaml
+kg_microbe_match: mediadive.medium:626
+merge_fingerprint: a64c0871cf82886170cfa1626fb081e459ac60f41e86adff55e8ee6ab008dc0c
 merged_from:
-- KOMODO_626_5_SORBITOL_medium
+- 5_sorbitol_medium

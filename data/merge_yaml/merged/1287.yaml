@@ -4,6 +4,7 @@ original_name: '1287'
 category: bacterial
 description: 1287. NBRC 1286.
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Bacto tryptone3.3gYeast extract1.6gNaCl3.3gDistilled water1LAgar15gpH
@@ -40,11 +41,20 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007469'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:45.835084'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Bacto tryptone3.3gYeast extract1.6gNaCl3.3gDistilled
     water1LAgar15gpH 7.0Biphenyl crystal is supplied on a lid of petri dish as vapor
     phase.'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-05-16T09:03:06.625270+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:05:04.624343+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 416b2d6e18e2d62c50f3fdaa54650e6616b9725aff823099596165d007658a2e
+  source: NBRC_1287.yaml
 merge_fingerprint: 416b2d6e18e2d62c50f3fdaa54650e6616b9725aff823099596165d007658a2e
 merged_from:
 - NBRC_1287

@@ -3,6 +3,7 @@ name: caryophanon_latum_medium
 original_name: CARYOPHANON LATUM medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.8
 media_term:
@@ -34,12 +35,12 @@ ingredients:
 - preferred_term: Na-acetate
   term:
     id: CHEBI:32954
-    label: Na-acetate
+    label: sodium acetate
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
     label: Na-acetate
 - preferred_term: Na glutamate
   term:
@@ -48,8 +49,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000432
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64220
     label: Na glutamate
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
@@ -58,8 +59,8 @@ ingredients:
   concentration:
     value: '0.0002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000160
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132751
     label: Thiamine-HCl x 2 H2O
 - preferred_term: Biotin
   term:
@@ -68,18 +69,18 @@ ingredients:
   concentration:
     value: 5e-05
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -88,14 +89,17 @@ ingredients:
   concentration:
     value: '0.27'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Tris-HCl buffer
   concentration:
     value: '1000'
     unit: G_PER_L
   notes: ' (pH 7.8)'
+  term:
+    id: CHEBI:9754
+    label: ''
 applications:
 - Microbial cultivation
 curation_history:
@@ -120,10 +124,45 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CARYOPHANON LATUM medium" to "caryophanon_latum_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:22.461223+00:00'
+- timestamp: '2026-06-05T07:40:22.639864+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:44.657820+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:47.762827+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_34_CARYOPHANON_LATUM_medium, caryophanon_latum_medium, medium_34_modified_for_dsm_513'
+- timestamp: '2026-08-06T03:04:47.762882+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint d9ea864bcf5fc7e6872a66ab9605803a08f1461a5012e5bec6bd951e1a8c5fae
+  source: KOMODO_34_CARYOPHANON_LATUM_medium.yaml, caryophanon_latum_medium.yaml,
+    medium_34_modified_for_dsm_513.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_34_modified_for_dsm_513.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005047
+  name: medium_34_modified_for_dsm_513
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/caryophanon_latum_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001449
+  name: caryophanon_latum_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 34; one unlinked DSMZ parent record
+    exists and the local physical state, pH, ingredient, and concentration signatures
+    match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 34; local ingredient and
+  concentration signatures match.
 synonyms:
 - name: medium_34_modified_for_dsm_513
   source: KOMODO
@@ -135,4 +174,4 @@ merged_from:
 - KOMODO_34_CARYOPHANON_LATUM_medium
 - caryophanon_latum_medium
 - medium_34_modified_for_dsm_513
-merge_fingerprint: 5638e122c262d412cddd2189eb8e10692c7e3bf38cf5e425c68353fc407d48eb
+merge_fingerprint: d9ea864bcf5fc7e6872a66ab9605803a08f1461a5012e5bec6bd951e1a8c5fae

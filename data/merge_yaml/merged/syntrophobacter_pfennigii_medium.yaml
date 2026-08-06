@@ -3,8 +3,11 @@ name: syntrophobacter_pfennigii_medium
 original_name: SYNTROPHOBACTER PFENNIGII MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
-ph_range: 7.2-7.4
+ph_range:
+  min: 7.2
+  max: 7.4
 notes: 'pH buffer: bicarbonate | Source: KOMODO ModelSEED | ID: 706 | DSMZ Medium:
   706 (mediadive.medium:706) | Aerobic: No'
 media_term:
@@ -32,14 +35,27 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:006338'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:40.545145'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: bicarbonate'
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T19:45:57.027100+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "SYNTROPHOBACTER PFENNIGII MEDIUM" to "syntrophobacter_pfennigii_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:04:33.393232+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-05-20T06:02:07.019164+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.4'' -> {''min'': 7.2, ''max'': 7.4}'
+- timestamp: '2026-08-06T03:05:57.391687+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 683581215de5f58fd6d6f27c53323524eb63280bf623d9e3f9294d7228bf997b
+  source: syntrophobacter_pfennigii_medium.yaml
 merge_fingerprint: 683581215de5f58fd6d6f27c53323524eb63280bf623d9e3f9294d7228bf997b
 merged_from:
 - syntrophobacter_pfennigii_medium

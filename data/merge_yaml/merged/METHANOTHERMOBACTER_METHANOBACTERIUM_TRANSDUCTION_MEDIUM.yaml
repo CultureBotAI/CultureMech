@@ -1,8 +1,9 @@
 id: CultureMech:002022
 name: methanothermobacter_methanobacterium_transduction_medium
 original_name: METHANOTHERMOBACTER/METHANOBACTERIUM TRANSDUCTION MEDIUM
-category: bacterial
+category: archaea
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
@@ -19,28 +20,28 @@ ingredients:
   concentration:
     value: '14.7638'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '68'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '21.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: Resazurin
   term:
@@ -49,8 +50,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: Nitrilotriacetic acid
   term:
@@ -59,8 +60,8 @@ ingredients:
   concentration:
     value: '9.55'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
     label: Nitrilotriacetic acid
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -69,8 +70,8 @@ ingredients:
   concentration:
     value: '4.06'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: FeCl2 x 4 H2O
   term:
@@ -79,8 +80,8 @@ ingredients:
   concentration:
     value: '0.98'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000329
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86249
     label: FeCl2 x 4 H2O
 - preferred_term: Na2WO4 x 6 H2O
   concentration:
@@ -93,8 +94,8 @@ ingredients:
   concentration:
     value: '0.118'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: Na2Se2O3
   concentration:
@@ -107,8 +108,8 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -117,18 +118,18 @@ ingredients:
   concentration:
     value: '0.023'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
   concentration:
     value: '106'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 - preferred_term: L-Cysteine HCl
   term:
@@ -151,8 +152,8 @@ ingredients:
   concentration:
     value: '2.5807'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
     label: Sodium citrate
 - preferred_term: Na2S x 9 H2O
   term:
@@ -161,8 +162,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 preparation_steps:
 - step_number: 1
@@ -215,9 +216,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:002022'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:23.513615'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:29:53.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -227,6 +228,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "METHANOTHERMOBACTER/METHANOBACTERIUM TRANSDUCTION MEDIUM"
     to "methanothermobacter_methanobacterium_transduction_medium" for consistent matching
+- timestamp: '2026-05-16T09:04:22.845977+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:32.848134+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 13 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:07.460011+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:31.530379+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 9573eb9b6562d3e9cbb8464f5f04c19a3ac8a077266246c55bc6de89e45bd6eb
+  source: methanothermobacter_methanobacterium_transduction_medium.yaml
 high_metal: true
 solutions:
 - preferred_term: Sodium carbonate solution
@@ -235,6 +255,6 @@ solutions:
     value: '59.7638'
     unit: G_PER_L
   name: Unknown solution
-merge_fingerprint: 25af484ecafc2227ba2a5a925b6f63e497d9c2e5166417bcc54c317366e1f8ec
+merge_fingerprint: 9573eb9b6562d3e9cbb8464f5f04c19a3ac8a077266246c55bc6de89e45bd6eb
 merged_from:
 - methanothermobacter_methanobacterium_transduction_medium

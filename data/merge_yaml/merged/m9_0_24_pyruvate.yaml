@@ -3,16 +3,23 @@ name: m9_0_24_pyruvate
 original_name: M9 0.24% pyruvate
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.1'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '47.743'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -20,13 +27,16 @@ ingredients:
   concentration:
     value: '8.5557'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '22.045'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -34,8 +44,8 @@ ingredients:
   concentration:
     value: '2.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
@@ -44,8 +54,8 @@ ingredients:
   concentration:
     value: '18.6947'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Sodium pyruvate
   term:
@@ -54,8 +64,8 @@ ingredients:
   concentration:
     value: '21.612'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
     label: Sodium pyruvate
 preparation_steps:
 - step_number: 1
@@ -86,6 +96,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "M9 0.24% pyruvate" to "m9_0_24_pyruvate" for consistent
     matching
+- timestamp: '2026-06-05T07:41:11.917281+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:41.020123+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 8264d5554d8aaade0d523f0310fd53e2042da3ccd82e0b94de67c309b7a43559
+  source: m9_0_24_pyruvate.yaml
 media_term:
   preferred_term: MediaDB Medium 191
   term:
@@ -97,6 +118,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: f9ed68740e35ff5a888d4c0c302dfe777af3a4890e24d0ad4fdd49d0813f81ce
+merge_fingerprint: 8264d5554d8aaade0d523f0310fd53e2042da3ccd82e0b94de67c309b7a43559
 merged_from:
 - m9_0_24_pyruvate

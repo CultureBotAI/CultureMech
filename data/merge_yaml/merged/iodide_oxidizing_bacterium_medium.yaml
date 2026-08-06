@@ -1,66 +1,93 @@
-id: CultureMech:003266
+id: CultureMech:010390
 name: iodide_oxidizing_bacterium_medium
-original_name: IODIDE-OXIDIZING BACTERIUM MEDIUM
+original_name: Iodide-Oxidizing Bacterium Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-media_term:
-  preferred_term: JCM Medium J919
-  term:
-    id: mediadive.medium:J919
-    label: IODIDE-OXIDIZING BACTERIUM MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=919'
 ingredients:
-- preferred_term: Marine agar 2216
-  term:
-    id: CHEBI:2509
-    label: Marine agar 2216
-  concentration:
-    value: '55.1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Marine agar 2216
-- preferred_term: Potassium iodide
-  term:
-    id: CHEBI:8346
-    label: Potassium iodide
+- preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000505
-    label: Potassium iodide
-- preferred_term: Starch
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:28017
-    label: Starch
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Potassium iodide
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:8346
+    label: Potassium iodide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8346
+    label: Potassium iodide
+- preferred_term: Soluble starch
   concentration:
     value: '1.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
-    label: Starch
+  notes: 'Role: Carbon source; Properties: Undefined component'
+  term:
+    id: CHEBI:28017
+    label: ''
+- preferred_term: Marine agar 2216 (BD-Difco)
+  concentration:
+    value: '55.1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M965
+  term:
+    id: TOGO:M965
+    label: Iodide-Oxidizing Bacterium Medium
+notes: 'Source: https://togomedium.org/medium/M965
+
+  Original source: JCM - JCM_M919
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=919'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:18.004556Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J919'
-- timestamp: '2026-03-13T06:19:19.049509Z'
+- timestamp: '2026-01-27T06:35:56.047841Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M965'
+- timestamp: '2026-01-28T19:48:40.973907Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:13.492983Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:003266'
-- timestamp: '2026-03-17T06:30:22.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:010390'
+- timestamp: '2026-03-17T06:30:52.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:32.956392+00:00'
+- timestamp: '2026-03-17T19:46:32.467106+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "IODIDE-OXIDIZING BACTERIUM MEDIUM" to "iodide_oxidizing_bacterium_medium"
+  notes: Normalized name from "Iodide-Oxidizing Bacterium Medium" to "iodide_oxidizing_bacterium_medium"
     for consistent matching
-merge_fingerprint: 9bc6581a704ac33b03e63e39d1a8494ecfdcaa39b27cfa52ac46af4284572f15
+- timestamp: '2026-06-05T07:40:46.098147+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:20.877122+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 3036fc5698aaba18a15c478a0728a206da66dcf86c722610ef301dd7ad5554ad
+  source: TOGO_M965_Iodide-Oxidizing_Bacterium_Medium.yaml
+merge_fingerprint: 3036fc5698aaba18a15c478a0728a206da66dcf86c722610ef301dd7ad5554ad
 merged_from:
-- iodide_oxidizing_bacterium_medium
+- TOGO_M965_Iodide-Oxidizing_Bacterium_Medium

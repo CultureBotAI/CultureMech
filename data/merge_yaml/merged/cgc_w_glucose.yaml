@@ -3,6 +3,7 @@ name: cgc_w_glucose
 original_name: CgC w/ glucose
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose
@@ -13,8 +14,8 @@ ingredients:
     value: '110.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Urea
   term:
@@ -24,8 +25,8 @@ ingredients:
     value: '83.3'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:urea'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000301
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16199
     label: Urea
 - preferred_term: Biotin
   term:
@@ -35,21 +36,30 @@ ingredients:
     value: '0.000819'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.0775'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '2.87'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '3.67'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -57,8 +67,8 @@ ingredients:
   concentration:
     value: '1.01'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
@@ -67,13 +77,16 @@ ingredients:
   concentration:
     value: '0.0592'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.036'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -81,9 +94,9 @@ ingredients:
   concentration:
     value: '0.00348'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
@@ -91,13 +104,16 @@ ingredients:
   concentration:
     value: '37.8'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.00125'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: MOPS
   term:
     id: CHEBI:39074
@@ -105,8 +121,8 @@ ingredients:
   concentration:
     value: '100.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000285
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39074
     label: MOPS
 preparation_steps:
 - step_number: 1
@@ -136,6 +152,17 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "CgC w/ glucose" to "cgc_w_glucose" for consistent matching
+- timestamp: '2026-06-05T07:40:53.010558+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:27.167397+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint c5396b8fc56d9a3074c7b1c354a5dd8bc6dd53202f89d78f603306bf6fc8d757
+  source: cgc_w_glucose.yaml
 media_term:
   preferred_term: MediaDB Medium 285
   term:
@@ -147,6 +174,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 1be215eb898ff367d23cb50aa14ad49eba228af2b187ee7f0fd1eafbd37b9d07
+merge_fingerprint: c5396b8fc56d9a3074c7b1c354a5dd8bc6dd53202f89d78f603306bf6fc8d757
 merged_from:
 - cgc_w_glucose

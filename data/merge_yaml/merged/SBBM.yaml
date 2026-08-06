@@ -1,346 +1,166 @@
-id: CultureMech:000403
+id: CultureMech:000127
 name: sbbm
-original_name: SBBM
-category: bacterial
+category: algae
 medium_type: COMPLEX
-physical_state: SOLID_AGAR
-media_term:
-  preferred_term: CCAP Medium C89
-  term:
-    id: mediadive.medium:C89
-    label: SBBM
-notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_SBBM.pdf'
+composition_type: UNDEFINED
+physical_state: LIQUID
+description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater
+  algae cultivation. Recipe available in PDF format.
+notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_SBBM.pdf
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
+applications:
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
+curation_history:
+- curator: ccap-import
+  action: Imported from CCAP Culture Collection
+  notes: 'Source ID: SBBM, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_SBBM.pdf'
+  timestamp: '2026-01-28T00:00:00+00:00'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-02-03T11:26:43.611446'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:18:53.234022Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000127'
+- timestamp: '2026-03-17T19:45:04.183858+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SBBM" to "sbbm" for consistent matching
+- timestamp: '2026-04-04T12:54:55.268145'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 9 curated ingredients from CCAP
+  source: CCAP Medium MR_SBBM.pdf
+- timestamp: '2026-05-16T08:57:02.746865+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(3 entries)
+- timestamp: '2026-05-16T09:02:56.962515+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
+    category->lowercase=1
+- timestamp: '2026-08-06T03:04:20.321261+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 671659b9ac7a80375796b9abf5290282f3f5dfed722061f4a22b2dab9ccdcfe7
+  source: sbbm.yaml
+references:
+- reference: CCAP:SBBM
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_SBBM.pdf
 ingredients:
-- preferred_term: NaNO3
-  term:
-    id: CHEBI:63005
-    label: NaNO3
+- preferred_term: Make up to 1 litre with distilled water. For agar add
+  notes: Ontology mapping not yet available; From CCAP Medium MR_SBBM.pdf; Curated
+    from CCAP Medium MR_SBBM.pdf specification
   concentration:
-    value: '10.7'
+    value: '15'
     unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 10.0, 0.7]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000171
-    label: NaNO3
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+  source: CCAP Medium MR_SBBM.pdf
+- preferred_term: Add to 1000 ml of distilled water
+  notes: Ontology mapping not yet available; From CCAP Medium MR_SBBM.pdf; Curated
+    from CCAP Medium MR_SBBM.pdf specification
   concentration:
-    value: '10'
+    value: '0.75'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '10.7'
-    unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 10.0, 0.7]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: K2HPO4 x 3 H2O
-  term:
-    id: CHEBI:131527
-    label: K2HPO4 x 3 H2O
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4 x 3 H2O
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-  concentration:
-    value: '25.037999999999997'
-    unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 23.4, 1.638]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: Agar
-  concentration:
-    value: '30.0'
-    unit: G_PER_L
-  notes: ' (for solid medium) [Merged 2 duplicates: 15.0, 15.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
-- preferred_term: Thiamine hydrochloride
-  term:
-    id: CHEBI:49105
-    label: Thiamine hydrochloride
-  concentration:
-    value: '1.2'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
-    label: Thiamine hydrochloride
-- preferred_term: Na2-EDTA
-  term:
-    id: CHEBI:64734
-    label: Na2-EDTA
-  concentration:
-    value: '3.0'
-    unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 0.75, 2.25]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
-    label: Na2-EDTA
+  source: CCAP Medium MR_SBBM.pdf
 - preferred_term: FeCl3 x 6 H2O
   term:
     id: CHEBI:86254
     label: FeCl3 x 6 H2O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 0.95
+    curation_date: '2026-04-04T12:54:55.268124'
+    ontology_source: CHEBI
   concentration:
     value: '0.097'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000218
-    label: FeCl3 x 6 H2O
+  source: CCAP Medium MR_SBBM.pdf
+  notes: From CCAP Medium MR_SBBM.pdf; Curated from CCAP Medium MR_SBBM.pdf specification
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
     label: MnCl2 x 4 H2O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.268133'
+    ontology_source: CHEBI
   concentration:
-    value: '1.4309999999999998'
+    value: '0.041'
     unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 0.041, 1.39]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
-    label: MnCl2 x 4 H2O
-- preferred_term: ZnCl2
+  source: CCAP Medium MR_SBBM.pdf
+  notes: From CCAP Medium MR_SBBM.pdf; Curated from CCAP Medium MR_SBBM.pdf specification
+- preferred_term: ZnCl .6H O
   term:
     id: CHEBI:49976
-    label: ZnCl2
+    label: ZnCl .6H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 0.95
+    curation_date: '2026-04-04T12:54:55.268135'
+    ontology_source: CHEBI
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
-    label: ZnCl2
+  source: CCAP Medium MR_SBBM.pdf
+  notes: From CCAP Medium MR_SBBM.pdf; Curated from CCAP Medium MR_SBBM.pdf specification
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
     label: CoCl2 x 6 H2O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.268137'
+    ontology_source: CHEBI
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
-    label: CoCl2 x 6 H2O
-- preferred_term: Na2 MoO4 x 2 H2O
+  source: CCAP Medium MR_SBBM.pdf
+  notes: From CCAP Medium MR_SBBM.pdf; Curated from CCAP Medium MR_SBBM.pdf specification
+- preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
-    label: Na2 MoO4 x 2 H2O
+    label: Na2MoO4 x 2 H2O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.268139'
+    ontology_source: CHEBI
   concentration:
     value: '0.004'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
-    label: Na2 MoO4 x 2 H2O
-- preferred_term: Cyanocobalamine
+  source: CCAP Medium MR_SBBM.pdf
+  notes: From CCAP Medium MR_SBBM.pdf; Curated from CCAP Medium MR_SBBM.pdf specification
+- preferred_term: Make up to 1 litre with distilled water. For agar add
+  notes: Ontology mapping not yet available; From CCAP Medium MR_SBBM.pdf; Curated
+    from CCAP Medium MR_SBBM.pdf specification
   concentration:
-    value: '1.04'
+    value: '15'
     unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 1.0, 0.04]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001039
-    label: Cyanocobalamine
-- preferred_term: Soil
+  source: CCAP Medium MR_SBBM.pdf
+- preferred_term: Soil is prepared as above.
+  notes: Ontology mapping not yet available; From CCAP Medium MR_SBBM.pdf; Curated
+    from CCAP Medium MR_SBBM.pdf specification
   concentration:
-    value: '159.091'
+    value: '105'
     unit: G_PER_L
-- preferred_term: Ca(NO3)2 x 4 H2O
-  term:
-    id: CHEBI:86159
-    label: Ca(NO3)2 x 4 H2O
-  concentration:
-    value: '0.7'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000586
-    label: Ca(NO3)2 x 4 H2O
-- preferred_term: NaHCO3
-  term:
-    id: CHEBI:32139
-    label: NaHCO3
-  concentration:
-    value: '0.7'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
-- preferred_term: Na2HPO4 x 12 H2O
-  term:
-    id: CHEBI:34683
-    label: Na2HPO4 x 12 H2O
-  concentration:
-    value: '0.7'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
-    label: Na2HPO4 x 12 H2O
-- preferred_term: FeNa-EDTA
-  concentration:
-    value: '2.25'
-    unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '2.48'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
-- preferred_term: (NH4)6Mo7O24 x 4 H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Thiamine HCl
-  term:
-    id: CHEBI:49105
-    label: Thiamine HCl
-  concentration:
-    value: '0.04'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
-    label: Thiamine HCl
-- preferred_term: Biotine
-  term:
-    id: CHEBI:15956
-    label: Biotine
-  concentration:
-    value: '0.04'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
-    label: Biotine
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: "Used for some filamentous green algae e.g. Trentepohlia, can give\
-    \ better growth\r\nthan 3N-BBM+V (Mail sol. C 14) or JM:SE (Mail sol. C 41). Make\
-    \ both media and sterilise, then mix aseptically in\r\nthe ratio of 97% 3N-BBM+V\
-    \ and 3% SE2."
-- step_number: 2
-  action: AUTOCLAVE
-  description: Once elements are dissolved autoclave at 15 psi for 15 minutes.
-- step_number: 3
-  action: AUTOCLAVE
-  description: "Make up to 1 litre with distilled water. For agar add 15 g per litre\
-    \ Bacterialogical Agar.\r\nAutoclave at 15 psi for 15 minutes."
-- step_number: 4
-  action: FILTER_STERILIZE
-  description: Filter sterile
-- step_number: 5
-  action: MIX
-  description: 'Ensure elements are added in the following sequence:'
-- step_number: 6
-  action: AUTOCLAVE
-  description: Once elements are dissolved autoclave at 15 psi for 15 minutes.
-- step_number: 7
-  action: FILTER_STERILIZE
-  description: Take 1 ml of this solution and add 99 ml Deionised water. Filter sterile.
-- step_number: 8
-  action: MIX
-  description: "Site selection for a good soil is very important and for most purposes\
-    \ a soil from \r\nundisturbed deciduous woodland is best.  Sites to avoid are\
-    \ those showing obvious \r\nsigns of man's activity and particular care should\
-    \ be taken to avoid areas where \r\nfertilizers, crop sprays or other toxic chemicals\
-    \ may have been used."
-- step_number: 9
-  action: STORE
-  description: "A rich loam with good crumb structure should be sought.  Stones, roots\
-    \ and larger \r\ninvertebrates should be removed during an initial sieving through\
-    \ a 1 cm mesh.  The sieved soil should be spread to air dry and hand picked for\
-    \ smaller \r\ninvertebrates and roots.  It should be turned periodically and picked\
-    \ over again.  When dry it may be sieved through a finer mesh (2­4 mm) or stored\
-    \ as it is prior to\r\nuse."
-- step_number: 10
-  action: AUTOCLAVE
-  description: "Soil is prepared as above.  105 g of air­dried sieved soil and 660\
-    \ ml of deionized \r\nwater are placed in a 1 litre bottle and autoclaved once\
-    \ at 15 psi for 15 minutes, \r\nthen again after 24 hours.  The contents of the\
-    \ bottle are left to settle (usually for \r\nat least a week) and then the supernatant\
-    \ is decanted and filtered.  The final pH\r\nshould be 7.0 - 8.0."
-- step_number: 11
-  action: AUTOCLAVE
-  description: "This recipe is a 7:3 mixture of JM and SE2. Make up to 1 litre with\
-    \ deionized water. For agar,\r\nadd 15.0 g per litre of Bacteriological Agar (Thermo\
-    \ Scientific&trade; Oxoid&trade; Agar No.1). Autoclave at 15 psi for 15 minutes."
-- step_number: 12
-  action: MIX
-  description: "Site selection for a good soil is very important and for most purposes\
-    \ a soil from undisturbed\r\ndeciduous woodland is best. Sites to avoid are those\
-    \ showing obvious signs of man's activity\r\nand particular care should be taken\
-    \ to avoid areas where fertilizers, crop sprays or other toxic\r\nchemicals may\
-    \ have been used."
-- step_number: 13
-  action: HEAT
-  description: "A rich loam with good crumb structure should be sought. Stones, roots\
-    \ and larger\r\ninvertebrates should be removed during an initial sieving through\
-    \ a 1 cm mesh. The sieved\r\nsoil should be spread to air dry and handpicked for\
-    \ smaller invertebrates and roots. It should\r\nbe turned periodically and picked\
-    \ over again. When dry sieve through a finer mesh (2-4 mm)\r\nand store in an\
-    \ airtight container away from light and heat."
-- step_number: 14
-  action: AUTOCLAVE
-  description: "Soil is prepared as above. Air-dried soil and twice its volume of\
-    \ supernatant distilled water\r\nare autoclaved together at 15 psi for 2 hours\
-    \ and left to cool. The supernatant is then\r\ndecanted and then distributed to\
-    \ containers in volumes suitable for making up batches of\r\nmedia. The aliquots\
-    \ and their containers are autoclaved for an appropriate length of time\r\n(e.g.\
-    \ 1 litre or less for 15 minutes) and are then kept in a cool place (e.g. a refrigerator)\
-    \ until\r\nrequired."
-applications:
-- Microbial cultivation
-curation_history:
-- timestamp: '2026-01-26T17:53:19.770868Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: CCAP, ID: C89'
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:17.222760'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Soil'
-- timestamp: '2026-03-13T03:09:02.914436Z'
-  curator: data-quality-cleanup-v1.0
-  action: Data quality fixes
-  notes: Merged 8 duplicate ingredient(s)
-- timestamp: '2026-03-13T06:18:54.971456Z'
-  curator: culturemech-id-assigner-v1.0
-  action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000403'
-- timestamp: '2026-03-17T06:30:08.000000Z'
-  curator: mediaingredientmech-enrichment-v1.0
-  action: Added MediaIngredientMech links
-  notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:05.983314+00:00'
-  curator: normalize_media_names_to_snake_case.py
-  action: NAME_NORMALIZED
-  notes: Normalized name from "SBBM" to "sbbm" for consistent matching
-merge_fingerprint: b63bd9967a21002f2fd1676be5b7ef20822d925a0988049ba129ee9ad3f134af
+  source: CCAP Medium MR_SBBM.pdf
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- curation_method:automated_expert_mapping
+original_name: SBBM
+merge_fingerprint: 671659b9ac7a80375796b9abf5290282f3f5dfed722061f4a22b2dab9ccdcfe7
 merged_from:
 - sbbm

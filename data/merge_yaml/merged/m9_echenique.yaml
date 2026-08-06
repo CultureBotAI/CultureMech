@@ -3,12 +3,16 @@ name: m9_echenique
 original_name: M9 - echenique
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Tromethamine
   concentration:
     value: '99.9'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:9754
+    label: ''
 - preferred_term: Potassium chloride
   concentration:
     value: '49.6'
@@ -16,9 +20,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -26,19 +30,22 @@ ingredients:
   concentration:
     value: '20.6'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '1.02'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Sodium sulfate
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Sodium sulfate
   term:
     id: CHEBI:32149
@@ -50,9 +57,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -60,9 +67,9 @@ ingredients:
   concentration:
     value: '85.6'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: EDDHA
   concentration:
     value: '0.1'
@@ -99,6 +106,17 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "M9 - echenique" to "m9_echenique" for consistent matching
+- timestamp: '2026-06-05T07:41:11.952227+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:41.075893+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 640d68875be2070f4541bce2d30bab8c61edeccdd06fa685c69073f093685570
+  source: m9_echenique.yaml
 media_term:
   preferred_term: MediaDB Medium 293
   term:
@@ -110,6 +128,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 07a9e24d3206d70df7d12602d2625c4d4270be4bf3e8a36c5a63a90614bbeda0
+merge_fingerprint: 640d68875be2070f4541bce2d30bab8c61edeccdd06fa685c69073f093685570
 merged_from:
 - m9_echenique

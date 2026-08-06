@@ -3,6 +3,7 @@ name: bhi_agar_with_5_bovine_blood
 original_name: BHI agar with 5% bovine blood
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Bovine blood
@@ -142,6 +143,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "BHI agar with 5% bovine blood" to "bhi_agar_with_5_bovine_blood"
     for consistent matching
+- timestamp: '2026-08-06T03:05:25.113342+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d4ab3e23782cae2622d391a8297bac6c39524d7d519dd5d2ea8edc177e7a0a5c
+  source: bhi_agar_with_5_bovine_blood.yaml
 merge_fingerprint: d4ab3e23782cae2622d391a8297bac6c39524d7d519dd5d2ea8edc177e7a0a5c
 merged_from:
 - bhi_agar_with_5_bovine_blood

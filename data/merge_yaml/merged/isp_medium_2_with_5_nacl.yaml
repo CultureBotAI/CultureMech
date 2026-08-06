@@ -3,8 +3,11 @@ name: isp_medium_2_with_5_nacl
 original_name: ISP medium 2 WITH 5% NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_range: 7.3-7.5
+ph_range:
+  min: 7.3
+  max: 7.5
 media_term:
   preferred_term: KOMODO Medium 636
   term:
@@ -28,8 +31,8 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000243
+  mediaingredientmech_chebi_term:
+    id: CHEBI:4167
     label: Dextrose
 - preferred_term: Agar
   term:
@@ -38,8 +41,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: NaCl
   term:
@@ -48,8 +51,8 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 applications:
 - Microbial cultivation
@@ -75,11 +78,58 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ISP medium 2 WITH 5% NaCl" to "isp_medium_2_with_5_nacl"
     for consistent matching
-- timestamp: '2026-04-17T06:29:29.896037+00:00'
+- timestamp: '2026-05-20T06:00:53.005882+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.3-7.5'' -> {''min'': 7.3, ''max'': 7.5}'
+- timestamp: '2026-06-05T07:40:25.121492+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:56.508296+00:00'
   curator: recipe-merger
   action: Merged 5 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_636_ISP_medium_2_WITH_5_NaCl, isp_medium_2_with_5_nacl,
     medium_636_modified_for_dsm_14598, medium_636_modified_for_dsm_18447, medium_636_modified_for_dsm_45264'
+- timestamp: '2026-08-06T03:04:56.508360+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 5 source recipe(s) on fingerprint fb25cb9fb989c6bbfb12645aa7e11a2567720d4b33b6c7e4d4c557a4306878b6
+  source: KOMODO_636_ISP_medium_2_WITH_5_NaCl.yaml, isp_medium_2_with_5_nacl.yaml,
+    medium_636_modified_for_dsm_14598.yaml, medium_636_modified_for_dsm_18447.yaml,
+    medium_636_modified_for_dsm_45264.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_636_modified_for_dsm_14598.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006152
+  name: medium_636_modified_for_dsm_14598
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_636_modified_for_dsm_18447.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006153
+  name: medium_636_modified_for_dsm_18447
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_636_modified_for_dsm_45264.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006154
+  name: medium_636_modified_for_dsm_45264
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/isp_medium_2_with_5_nacl.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001770
+  name: isp_medium_2_with_5_nacl
+  notes: KOMODO record states DSMZ Medium 636 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 synonyms:
 - name: medium_636_modified_for_dsm_14598
   source: KOMODO

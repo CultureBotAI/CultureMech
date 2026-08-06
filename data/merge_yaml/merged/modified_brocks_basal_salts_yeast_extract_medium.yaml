@@ -3,6 +3,7 @@ name: modified_brocks_basal_salts_yeast_extract_medium
 original_name: Modified Brock's Basal Salts-Yeast Extract Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
@@ -24,8 +25,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
   term:
-    id: CHEBI:32599
-    label: ''
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.07'
@@ -43,9 +44,9 @@ ingredients:
     compound'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Na2MoO4・2H2O
   concentration:
@@ -92,9 +93,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: (NH4)2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 - preferred_term: FeCl3・6H2O
   concentration:
     value: '2'
@@ -125,6 +126,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:131366
+    label: ''
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '0.5'
@@ -164,10 +168,38 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Modified Brock's Basal Salts-Yeast Extract Medium"
     to "modified_brocks_basal_salts_yeast_extract_medium" for consistent matching
-- timestamp: '2026-04-17T06:30:15.798193+00:00'
+- timestamp: '2026-06-05T07:41:36.381979+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:58:25.855267+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:47:08.581939+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:48.137909+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: modified_brocks_basal_salts_yeast_extract_medeium_b, modified_brocks_basal_salts_yeast_extract_medium'
+- timestamp: '2026-08-06T03:05:48.137977+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 57fc88f41d952b634a88181338ec7a3b972f53e37fe50b64f0ce8f49b24be6f6
+  source: modified_brocks_basal_salts_yeast_extract_medeium_b.yaml, modified_brocks_basal_salts_yeast_extract_medium.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/modified_brocks_basal_salts_yeast_extract_medeium_b.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:009987
+  name: modified_brocks_basal_salts_yeast_extract_medeium_b
+  notes: Yeast extract (BD-Difco) decreased from 5 g/L to 0.5 g/L while the modified
+    Brock basal salts medium remains unchanged.
 synonyms:
 - name: modified_brocks_basal_salts_yeast_extract_medeium_b
   source: TOGO
@@ -178,4 +210,4 @@ categories:
 merged_from:
 - modified_brocks_basal_salts_yeast_extract_medeium_b
 - modified_brocks_basal_salts_yeast_extract_medium
-merge_fingerprint: b7e4de9e6874c6c5e2b1d0d31cb0952610a7d65dd946227e0028656fc08dbb39
+merge_fingerprint: 57fc88f41d952b634a88181338ec7a3b972f53e37fe50b64f0ce8f49b24be6f6

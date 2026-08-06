@@ -3,6 +3,7 @@ name: mineral_medium_for_thiomonas_islandicum
 original_name: MINERAL MEDIUM FOR THIOMONAS ISLANDICUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 4.0
 media_term:
@@ -15,12 +16,12 @@ ingredients:
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '2.28856'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Na2HPO4 x 6 H2O
   term:
@@ -29,18 +30,18 @@ ingredients:
   concentration:
     value: '2.88557'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4 x 6 H2O
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '0.995025'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: NaHCO3
   term:
@@ -49,8 +50,8 @@ ingredients:
   concentration:
     value: '0.497512'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -59,8 +60,8 @@ ingredients:
   concentration:
     value: '0.0995025'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -69,8 +70,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Fe(NH4)citrate
   term:
@@ -79,8 +80,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000541
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31604
     label: Fe(NH4)citrate
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -89,8 +90,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -99,18 +100,18 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -119,8 +120,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
@@ -129,8 +130,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
     label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -139,8 +140,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -149,8 +150,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 preparation_steps:
 - step_number: 1
@@ -183,13 +184,38 @@ curation_history:
   source: CultureMech:003116
   notes: Resolved reference by copying from mineral_medium_for_hydrogenophilus_islandicum
     (CultureMech:003116)
-- timestamp: '2026-04-17T06:30:14.021699+00:00'
+- timestamp: '2026-05-16T08:58:08.054379+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(2 keys) -> list(1 entries)
+- timestamp: '2026-06-05T07:41:34.166866+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 14 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:07.888730+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:45.668232+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: mineral_medium_for_hydrogenophilus_islandicum, mineral_medium_for_thiomonas_islandicum'
+- timestamp: '2026-08-06T03:05:45.668358+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint b3cbc8b88193ab4410c2185971e6a8c3cf17587ac9e1c401f8a8412eeebc7096
+  source: mineral_medium_for_hydrogenophilus_islandicum.yaml, mineral_medium_for_thiomonas_islandicum.yaml
 data_quality_flags:
-  incomplete_composition: false
-  resolved_reference: true
+- resolved_reference
+variant_children:
+- path: data/normalized_yaml/bacterial/mineral_medium_for_hydrogenophilus_islandicum.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003116
+  name: mineral_medium_for_hydrogenophilus_islandicum
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 synonyms:
 - name: mineral_medium_for_hydrogenophilus_islandicum
   source: MediaDive

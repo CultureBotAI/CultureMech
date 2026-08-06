@@ -3,6 +3,7 @@ name: thermoactinomyces_medium
 original_name: THERMOACTINOMYCES medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
@@ -20,8 +21,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000282
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17196
     label: L-Asparagine
 - preferred_term: Glycerol
   term:
@@ -30,18 +31,18 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: Polypeptone
   concentration:
@@ -54,8 +55,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -64,8 +65,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -74,8 +75,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -84,8 +85,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: Thiamine HCl
   term:
@@ -94,8 +95,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Riboflavin
   term:
@@ -104,13 +105,16 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: Nicotinate
   concentration:
     value: '0.05'
     unit: G_PER_L
+  term:
+    id: CHEBI:15940
+    label: ''
 - preferred_term: Pyridoxine hydrochloride
   term:
     id: CHEBI:30961
@@ -118,8 +122,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001016
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
     label: Pyridoxine hydrochloride
 - preferred_term: Inositol
   term:
@@ -128,15 +132,18 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000421
+  mediaingredientmech_chebi_term:
+    id: CHEBI:24848
     label: Inositol
 - preferred_term: Calcium panthothenate
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000980
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium panthothenate
 - preferred_term: p-Aminobenzoate
   term:
@@ -145,8 +152,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17836
     label: p-Aminobenzoate
 - preferred_term: D-Biotin
   term:
@@ -155,8 +162,8 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: D-Biotin
 applications:
 - Microbial cultivation
@@ -187,13 +194,39 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "THERMOACTINOMYCES medium" to "thermoactinomyces_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:35.798725+00:00'
+- timestamp: '2026-06-05T07:40:28.355520+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 14 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:46.588314+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:03.255424+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_978_THERMOACTINOMYCES_medium, thermoactinomyces_medium'
+- timestamp: '2026-08-06T03:05:03.255481+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 5b68c7aced749c58bac74a1673ee1698912b35f86feee43ce582f4be25cb22f7
+  source: KOMODO_978_THERMOACTINOMYCES_medium.yaml, thermoactinomyces_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/thermoactinomyces_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002160
+  name: thermoactinomyces_medium
+  notes: KOMODO record states DSMZ Medium 978 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 categories:
 - bacterial
 merged_from:
 - KOMODO_978_THERMOACTINOMYCES_medium
 - thermoactinomyces_medium
-merge_fingerprint: 0b40937c3b4c49e50abcaa33e948ff46986e830ca2e9ce0628a9b0ff84e1151b
+merge_fingerprint: 5b68c7aced749c58bac74a1673ee1698912b35f86feee43ce582f4be25cb22f7

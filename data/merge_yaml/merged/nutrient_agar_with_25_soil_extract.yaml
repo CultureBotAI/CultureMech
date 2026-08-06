@@ -3,6 +3,7 @@ name: nutrient_agar_with_25_soil_extract
 original_name: Nutrient Agar With 25% Soil Extract
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Tap water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Tap water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Tap water
 - preferred_term: Agar
   concentration:
@@ -25,9 +26,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Beef extract
   concentration:
     value: '3'
@@ -84,6 +85,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Nutrient Agar With 25% Soil Extract" to "nutrient_agar_with_25_soil_extract"
     for consistent matching
+- timestamp: '2026-06-05T07:40:45.971893+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:20.771520+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d4bea8e734b82b1af79dc0a3e57b16bb0643ba9df25e47e3890322534e0ef45a
+  source: TOGO_M94_Nutrient_Agar_With_25_Soil_Extract.yaml
 merge_fingerprint: d4bea8e734b82b1af79dc0a3e57b16bb0643ba9df25e47e3890322534e0ef45a
 merged_from:
 - TOGO_M94_Nutrient_Agar_With_25_Soil_Extract

@@ -3,6 +3,7 @@ name: microvirga_floculatus_medium
 original_name: MICROVIRGA FLOCULATUS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
@@ -23,12 +24,12 @@ ingredients:
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: NaH2PO4
   term:
@@ -37,8 +38,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000393
+  mediaingredientmech_chebi_term:
+    id: CHEBI:37585
     label: NaH2PO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -47,8 +48,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Agar
   term:
@@ -58,8 +59,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -88,6 +89,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MICROVIRGA FLOCULATUS MEDIUM" to "microvirga_floculatus_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:41:33.850924+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:07.821529+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:45.404490+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint fca08faa78204b470cd0c80bd5ecf5b44fa54aafeff865ada71d44294062a7d2
+  source: microvirga_floculatus_medium.yaml
 merge_fingerprint: fca08faa78204b470cd0c80bd5ecf5b44fa54aafeff865ada71d44294062a7d2
 merged_from:
 - microvirga_floculatus_medium

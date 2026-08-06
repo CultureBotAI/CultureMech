@@ -3,6 +3,7 @@ name: modified_tryptone_soy_broth_agar
 original_name: MODIFIED TRYPTONE SOY BROTH/AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 10.5
 media_term:
@@ -27,8 +28,8 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D(+)-Glucose
 - preferred_term: NaCl
   term:
@@ -37,28 +38,28 @@ ingredients:
   concentration:
     value: '45'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 - preferred_term: Agar
   term:
@@ -68,8 +69,8 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -99,6 +100,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MODIFIED TRYPTONE SOY BROTH/AGAR" to "modified_tryptone_soy_broth_agar"
     for consistent matching
+- timestamp: '2026-06-05T07:41:37.953066+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:09.018669+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:49.976207+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2028ef048b99ec205dc4f459fb800d652baac0406ec05c66d64f63e3cdd1aa6e
+  source: modified_tryptone_soy_broth_agar.yaml
 merge_fingerprint: 2028ef048b99ec205dc4f459fb800d652baac0406ec05c66d64f63e3cdd1aa6e
 merged_from:
 - modified_tryptone_soy_broth_agar

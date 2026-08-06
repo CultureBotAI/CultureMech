@@ -3,6 +3,7 @@ name: mn_marine_medium_atcc_medium_957_with_20_mcg_l_of_vitamin_b12
 original_name: MN Marine medium (ATCC Medium 957) with 20 mcg/L of vitamin B12
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4 · 7H2O
   concentration:
@@ -24,8 +25,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:32599
-    label: ''
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: CaCl2 · 2H2O
   concentration:
     value: '0.02'
@@ -44,9 +45,9 @@ ingredients:
   term:
     id: CHEBI:29377
     label: sodium carbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
-    label: Na2CO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
 - preferred_term: NaNO3
   concentration:
     value: '0.75'
@@ -56,8 +57,8 @@ ingredients:
   term:
     id: CHEBI:63005
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000388
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
     label: NaNO3
 - preferred_term: Seawater
   concentration:
@@ -72,7 +73,7 @@ ingredients:
     component'
   term:
     id: CHEBI:131527
-    label: ''
+    label: dipotassium hydrogen phosphate
 - preferred_term: Ferric ammonium citrate
   concentration:
     value: '3'
@@ -82,9 +83,9 @@ ingredients:
   term:
     id: CHEBI:31604
     label: ferric ammonium citrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000541
-    label: Ferric ammonium citrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
 - preferred_term: Agar Noble (Difco 0142) (if needed)
   concentration:
     value: '10'
@@ -98,9 +99,9 @@ ingredients:
   term:
     id: CHEBI:53258
     label: sodium citrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
-    label: Citric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
+    label: sodium citrate
 - preferred_term: EDTA
   concentration:
     value: '0.5'
@@ -109,9 +110,9 @@ ingredients:
   term:
     id: CHEBI:64755
     label: EDTA(2-)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000165
-    label: EDTA
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64755
+    label: EDTA(2-)
 - preferred_term: Trace Metals A-5 (see below)
   concentration:
     value: '1'
@@ -124,9 +125,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000213
-    label: KOH
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32035
+    label: potassium hydroxide
 - preferred_term: Na2MoO4 · 2H2O
   concentration:
     value: '0.039'
@@ -145,9 +146,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: MnCl2 · 4H2O
   concentration:
     value: '1.81'
@@ -166,9 +167,9 @@ ingredients:
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
-    label: ZnSO4·7H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
 - preferred_term: CuSO4 · 5H2O
   concentration:
     value: '0.079'
@@ -207,9 +208,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:53.977017'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: KOH'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T03:09:15.067302Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -228,6 +229,31 @@ curation_history:
   notes: Normalized name from "MN Marine medium (ATCC Medium 957) with 20 mcg/L of
     vitamin B12" to "mn_marine_medium_atcc_medium_957_with_20_mcg_l_of_vitamin_b12"
     for consistent matching
-merge_fingerprint: 4a446f29780cafb5e7b3d31e111dfaa68197d74e5b10a9f7fbd3ee8e831dd22f
+- timestamp: '2026-05-16T09:04:24.783551+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:35.849346+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:58:25.435465+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:47:08.401807+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:47.605307+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d92ac9d043265d826148ba602f419e7bf559378ad22d2eeaee1fc2661b0a30b2
+  source: mn_marine_medium_atcc_medium_957_with_20_mcg_l_of_vitamin_b12.yaml
+merge_fingerprint: d92ac9d043265d826148ba602f419e7bf559378ad22d2eeaee1fc2661b0a30b2
 merged_from:
 - mn_marine_medium_atcc_medium_957_with_20_mcg_l_of_vitamin_b12

@@ -3,6 +3,7 @@ name: alicyclobacillus_cellulosilyticus_medium
 original_name: Alicyclobacillus cellulosilyticus Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1684
@@ -19,28 +20,28 @@ ingredients:
     value: '2.49252'
     unit: G_PER_L
   notes: ' ( sodium salt)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000952
+  mediaingredientmech_chebi_term:
+    id: CHEBI:85146
     label: Carboxymethyl cellulose
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '1.29611'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.368893'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Glucose
   term:
@@ -49,8 +50,8 @@ ingredients:
   concentration:
     value: '0.997009'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Yeast extract
   concentration:
@@ -67,8 +68,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -77,8 +78,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: FeCl3 x 6 H2O
   term:
@@ -87,8 +88,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000218
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86254
     label: FeCl3 x 6 H2O
 preparation_steps:
 - step_number: 1
@@ -119,10 +120,37 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Alicyclobacillus cellulosilyticus Medium" to "alicyclobacillus_cellulosilyticus_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:10.774069+00:00'
+- timestamp: '2026-06-05T07:40:47.757892+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:52.751951+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:34.142003+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: 573c_medium, alicyclobacillus_cellulosilyticus_medium'
+- timestamp: '2026-08-06T03:04:34.142037+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 7cfec1a8c5650fb80fa2a17181071866f63e721f1c038fa03491762857077e0d
+  source: 573c_medium.yaml, alicyclobacillus_cellulosilyticus_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/573c_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:002235
+  name: 573c_medium
+  notes: Reviewed Alicyclobacillus cellulosilyticus medium as a concentration variant
+    of 573C medium with mineral salt concentrations as the curated axis.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Reviewed 573C/Alicyclobacillus cellulosilyticus pair; child keeps the cellulose,
+  ammonium sulfate, phosphate, glucose, yeast extract, and tryptone levels effectively
+  unchanged but lowers MgSO4, CaCl2, and FeCl3 concentrations.
 synonyms:
 - name: 573c_medium
   source: MediaDive

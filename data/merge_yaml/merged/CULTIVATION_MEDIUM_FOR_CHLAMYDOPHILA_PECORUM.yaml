@@ -3,6 +3,7 @@ name: cultivation_medium_for_chlamydophila_pecorum
 original_name: CULTIVATION MEDIUM FOR CHLAMYDOPHILA PECORUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1503
@@ -65,6 +66,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CULTIVATION MEDIUM FOR CHLAMYDOPHILA PECORUM" to "cultivation_medium_for_chlamydophila_pecorum"
     for consistent matching
+- timestamp: '2026-08-06T03:05:29.336392+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 031aed77bb9396d94a0a5ebd5a2551023d9671189687c7145e480b383b5a7df2
+  source: cultivation_medium_for_chlamydophila_pecorum.yaml
 merge_fingerprint: 031aed77bb9396d94a0a5ebd5a2551023d9671189687c7145e480b383b5a7df2
 merged_from:
 - cultivation_medium_for_chlamydophila_pecorum

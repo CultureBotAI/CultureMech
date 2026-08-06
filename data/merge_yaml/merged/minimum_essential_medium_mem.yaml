@@ -3,6 +3,7 @@ name: minimum_essential_medium_mem
 original_name: Minimum Essential Medium (MEM)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1638
@@ -35,6 +36,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Minimum Essential Medium (MEM)" to "minimum_essential_medium_mem"
     for consistent matching
+- timestamp: '2026-08-06T03:05:46.520152+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint af6a27e5b032c55f6a368b29cd38dbfd579292826bfbf4967a4b10e2181b4312
+  source: minimum_essential_medium_mem.yaml
 merge_fingerprint: af6a27e5b032c55f6a368b29cd38dbfd579292826bfbf4967a4b10e2181b4312
 merged_from:
 - minimum_essential_medium_mem

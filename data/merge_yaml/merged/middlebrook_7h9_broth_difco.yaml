@@ -3,6 +3,7 @@ name: middlebrook_7h9_broth_difco
 original_name: Middlebrook 7H9 broth (Difco)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Middlebrook 7H9 broth (Difco)
@@ -32,6 +33,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Middlebrook 7H9 broth (Difco)" to "middlebrook_7h9_broth_difco"
     for consistent matching
+- timestamp: '2026-08-06T03:05:45.500128+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b82490f06fb490eaf6e487db4be67c25401ba2200433a7f13bb5107fcbbf0357
+  source: middlebrook_7h9_broth_difco.yaml
 merge_fingerprint: b82490f06fb490eaf6e487db4be67c25401ba2200433a7f13bb5107fcbbf0357
 merged_from:
 - middlebrook_7h9_broth_difco

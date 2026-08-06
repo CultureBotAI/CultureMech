@@ -3,6 +3,7 @@ name: t5_medium_modified
 original_name: T5 MEDIUM modified
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
@@ -27,8 +28,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Starch
   term:
@@ -37,8 +38,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
     label: Starch
 - preferred_term: Agar
   term:
@@ -48,8 +49,8 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: Optional ingredient (for solid medium)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -78,6 +79,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "T5 MEDIUM modified" to "t5_medium_modified" for consistent
     matching
+- timestamp: '2026-06-05T07:41:48.678496+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:57.556437+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint c0e1a37516729c4bfeae97a03e46029adfab3f962fe4716002189b5aa64ee543
+  source: t5_medium_modified.yaml
 merge_fingerprint: c0e1a37516729c4bfeae97a03e46029adfab3f962fe4716002189b5aa64ee543
 merged_from:
 - t5_medium_modified

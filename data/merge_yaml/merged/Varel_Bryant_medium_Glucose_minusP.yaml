@@ -1,6 +1,7 @@
 id: CultureMech:015778
 name: Varel Bryant medium Glucose minusP
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Potassium Chloride
@@ -125,7 +126,7 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-99-7; MW: 180.16'
 description: Defined medium for B.theta with Glucose and minus phosphorus
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: Varel Bryant medium Glucose minusP
@@ -139,6 +140,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015778'
+- timestamp: '2026-05-16T09:04:43.945245+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:08.932354+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 78eaeedb2eb656a716e274c495af8a679d40ab6a83057320f99bbecadc51ea42
+  source: varel_bryant_medium_glucose_minusp.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: 78eaeedb2eb656a716e274c495af8a679d40ab6a83057320f99bbecadc51ea42

@@ -1,209 +1,152 @@
-id: CultureMech:000358
+id: CultureMech:000083
 name: mbbm
-original_name: MBBM
-category: bacterial
+category: algae
 medium_type: COMPLEX
-physical_state: SOLID_AGAR
-media_term:
-  preferred_term: CCAP Medium C48
-  term:
-    id: mediadive.medium:C48
-    label: MBBM
-notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_MBBM.pdf'
+composition_type: UNDEFINED
+physical_state: LIQUID
+description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater
+  algae cultivation. Recipe available in PDF format.
+notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_MBBM.pdf
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
+applications:
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
+curation_history:
+- curator: ccap-import
+  action: Imported from CCAP Culture Collection
+  notes: 'Source ID: MBBM, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_MBBM.pdf'
+  timestamp: '2026-01-28T00:00:00+00:00'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-02-03T11:26:43.527309'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:18:53.114674Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000083'
+- timestamp: '2026-03-17T19:45:04.069722+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MBBM" to "mbbm" for consistent matching
+- timestamp: '2026-04-04T12:54:55.141270'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 7 curated ingredients from CCAP
+  source: CCAP Medium MR_MBBM.pdf
+- timestamp: '2026-05-16T08:57:02.486560+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(3 entries)
+- timestamp: '2026-05-16T09:02:56.684218+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
+    category->lowercase=1
+- timestamp: '2026-08-06T03:04:20.072885+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 7e71fc6dc6b157661c2aa7ec66dea241478c5ca917aea1b732b9073389ed6ca0
+  source: mbbm.yaml
+references:
+- reference: CCAP:MBBM
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_MBBM.pdf
 ingredients:
-- preferred_term: Bacto peptone
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Sucrose
-  term:
-    id: CHEBI:17992
-    label: Sucrose
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000661
-    label: Sucrose
-- preferred_term: NaNO3
-  term:
-    id: CHEBI:63005
-    label: NaNO3
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000171
-    label: NaNO3
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: K2HPO4 x 3 H2O
-  term:
-    id: CHEBI:131527
-    label: K2HPO4 x 3 H2O
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4 x 3 H2O
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-  concentration:
-    value: '23.4'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: Agar
+- preferred_term: Make up to 1 litre with distilled water. For agar add
+  notes: Ontology mapping not yet available; From CCAP Medium MR_MBBM.pdf; Curated
+    from CCAP Medium MR_MBBM.pdf specification
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
-- preferred_term: Na2-EDTA
-  term:
-    id: CHEBI:64734
-    label: Na2-EDTA
+  source: CCAP Medium MR_MBBM.pdf
+- preferred_term: Add to 1000 ml of distilled water
+  notes: Ontology mapping not yet available; From CCAP Medium MR_MBBM.pdf; Curated
+    from CCAP Medium MR_MBBM.pdf specification
   concentration:
     value: '0.75'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
-    label: Na2-EDTA
+  source: CCAP Medium MR_MBBM.pdf
 - preferred_term: FeCl3 x 6 H2O
   term:
     id: CHEBI:86254
     label: FeCl3 x 6 H2O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 0.95
+    curation_date: '2026-04-04T12:54:55.141244'
+    ontology_source: CHEBI
   concentration:
     value: '0.097'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000218
-    label: FeCl3 x 6 H2O
+  source: CCAP Medium MR_MBBM.pdf
+  notes: From CCAP Medium MR_MBBM.pdf; Curated from CCAP Medium MR_MBBM.pdf specification
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
     label: MnCl2 x 4 H2O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.141255'
+    ontology_source: CHEBI
   concentration:
     value: '0.041'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
-    label: MnCl2 x 4 H2O
-- preferred_term: ZnCl2 x 6 H2O
+  source: CCAP Medium MR_MBBM.pdf
+  notes: From CCAP Medium MR_MBBM.pdf; Curated from CCAP Medium MR_MBBM.pdf specification
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.141258'
+    ontology_source: CHEBI
   concentration:
     value: '0.005'
     unit: G_PER_L
+  source: CCAP Medium MR_MBBM.pdf
+  notes: From CCAP Medium MR_MBBM.pdf; Curated from CCAP Medium MR_MBBM.pdf specification
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
     label: CoCl2 x 6 H2O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.141261'
+    ontology_source: CHEBI
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
-    label: CoCl2 x 6 H2O
+  source: CCAP Medium MR_MBBM.pdf
+  notes: From CCAP Medium MR_MBBM.pdf; Curated from CCAP Medium MR_MBBM.pdf specification
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.141264'
+    ontology_source: CHEBI
   concentration:
     value: '0.004'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
-    label: Na2MoO4 x 2 H2O
-- preferred_term: Thiamine hydrochloride
-  term:
-    id: CHEBI:49105
-    label: Thiamine hydrochloride
-  concentration:
-    value: '1.2'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
-    label: Thiamine hydrochloride
-- preferred_term: Cyanocobalamine
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001039
-    label: Cyanocobalamine
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: Add to 1000 ml of 3N­BBM+V 1g of Bacto peptone and 5g of sucrose.
-- step_number: 2
-  action: AUTOCLAVE
-  description: "Make up to 1 litre with distilled water.  For agar add 15 g per litre\
-    \ Bacterial Agar.\r\nAutoclave at 15 psi for 15 minutes."
-- step_number: 3
-  action: MIX
-  description: "Add to 1000 ml of distilled water 0.75 g Na2EDTA and the minerals\
-    \ in exactly the \r\nfollowing sequence:"
-- step_number: 4
-  action: FILTER_STERILIZE
-  description: Filter sterile
-- step_number: 5
-  action: FILTER_STERILIZE
-  description: Take 1 ml of this solution and add 99 ml Deionised water. Filter sterile.
-applications:
-- Microbial cultivation
-curation_history:
-- timestamp: '2026-01-26T17:53:19.640512Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: CCAP, ID: C48'
-- timestamp: '2026-03-13T06:18:54.733822Z'
-  curator: culturemech-id-assigner-v1.0
-  action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000358'
-- timestamp: '2026-03-17T06:30:49.000000Z'
-  curator: mediaingredientmech-enrichment-v1.0
-  action: Added MediaIngredientMech links
-  notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:05.736423+00:00'
-  curator: normalize_media_names_to_snake_case.py
-  action: NAME_NORMALIZED
-  notes: Normalized name from "MBBM" to "mbbm" for consistent matching
-merge_fingerprint: 63c6f7b546d08c8a6e262e0f2c2b62aff8ccccd718e085bbe0e9c3936e8a5d0d
+  source: CCAP Medium MR_MBBM.pdf
+  notes: From CCAP Medium MR_MBBM.pdf; Curated from CCAP Medium MR_MBBM.pdf specification
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- curation_method:automated_expert_mapping
+original_name: MBBM
+merge_fingerprint: 7e71fc6dc6b157661c2aa7ec66dea241478c5ca917aea1b732b9073389ed6ca0
 merged_from:
 - mbbm

@@ -3,6 +3,7 @@ name: bhi_w_heat_inactivated_fetal_bovine_serum_and_glucose
 original_name: BHI w/ heat-inactivated Fetal Bovine Serum and Glucose
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: DI Water
@@ -145,9 +146,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 media_term:
   preferred_term: TOGO Medium M2764
   term:
@@ -182,11 +183,11 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.330301'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     Hydrogen gas'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:04:22.833799+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -200,9 +201,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009312'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:58.341323'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:29:54.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -212,11 +213,26 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "BHI w/ heat-inactivated Fetal Bovine Serum and Glucose"
     to "bhi_w_heat_inactivated_fetal_bovine_serum_and_glucose" for consistent matching
-- timestamp: '2026-04-17T06:29:46.324640+00:00'
+- timestamp: '2026-05-16T09:03:15.908533+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:39.187970+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:13.765429+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M2764_BHI_w_heat-inactivated_Fetal_Bovine_Serum_and_Glucose,
     bhi_w_heat_inactivated_fetal_bovine_serum_and_glucose'
+- timestamp: '2026-08-06T03:05:13.765469+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 6f37148f748d1f373d5e32255b512b96bab3aca595ed955288f16f321d6d7caf
+  source: TOGO_M2764_BHI_w_heat-inactivated_Fetal_Bovine_Serum_and_Glucose.yaml, bhi_w_heat_inactivated_fetal_bovine_serum_and_glucose.yaml
 solutions:
 - preferred_term: Glucose Solution
   composition: []

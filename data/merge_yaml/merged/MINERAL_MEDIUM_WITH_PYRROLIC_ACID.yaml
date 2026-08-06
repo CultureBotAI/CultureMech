@@ -3,6 +3,7 @@ name: mineral_medium_with_pyrrolic_acid
 original_name: MINERAL MEDIUM WITH PYRROLIC ACID
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:
@@ -20,18 +21,18 @@ ingredients:
   concentration:
     value: '1.44135'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4 x 2 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.248509'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: CaCl2
   term:
@@ -40,8 +41,8 @@ ingredients:
   concentration:
     value: '0.00994036'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
     label: CaCl2
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -50,28 +51,28 @@ ingredients:
   concentration:
     value: '0.497018'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: MnSO4
   term:
     id: CHEBI:86360
-    label: MnSO4
+    label: manganese(II) sulfate
   concentration:
     value: '0.00994036'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000605
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86360
     label: MnSO4
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '0.298211'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: NaCl
   term:
@@ -80,8 +81,8 @@ ingredients:
   concentration:
     value: '0.0497018'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Pyrrole-2-carboxylic acid
   concentration:
@@ -115,7 +116,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MINERAL MEDIUM WITH PYRROLIC ACID" to "mineral_medium_with_pyrrolic_acid"
     for consistent matching
-- timestamp: '2026-04-17T06:29:25.832646+00:00'
+- timestamp: '2026-06-05T07:40:23.535998+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:44.961984+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:51.750330+00:00'
   curator: recipe-merger
   action: Merged 18 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_461_MINERAL_MEDIUM_NAGEL_AND_ANDREESEN, KOMODO_461a_MINERAL_MEDIUM_WITH_QUINOLINE,
@@ -125,6 +136,16 @@ curation_history:
     medium_461_modified_for_dsm_6284, medium_461_modified_for_dsm_6384, medium_461_modified_for_dsm_6387,
     medium_461_modified_for_dsm_6388, medium_461_modified_for_dsm_6392, medium_461_modified_for_dsm_7215,
     medium_461_modified_for_dsm_7216, medium_461_modified_for_dsm_9506, mineral_medium_with_pyrrolic_acid'
+- timestamp: '2026-08-06T03:04:51.750441+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 18 source recipe(s) on fingerprint 2ae864d108735fda46267d172cc8ed3d4f16e3ff151352c8d647148a8a7c5967
+  source: KOMODO_461_MINERAL_MEDIUM_NAGEL_AND_ANDREESEN.yaml, KOMODO_461a_MINERAL_MEDIUM_WITH_QUINOLINE.yaml,
+    KOMODO_461b_MINERAL_MEDIUM_WITH_PYRROLIC_ACID.yaml, KOMODO_461c_MINERAL_MEDIUM_WITH_O-NITROPHENOL.yaml,
+    medium_461_modified_for_dsm_11853.yaml, medium_461_modified_for_dsm_11853_replace_2_4_dichlorophenol_with_2_6_dichlorophenol.yaml,
+    medium_461_modified_for_dsm_13477.yaml, medium_461_modified_for_dsm_14262.yaml,
+    medium_461_modified_for_dsm_16637.yaml, medium_461_modified_for_dsm_6284.yaml,
+    medium
 high_metal: true
 synonyms:
 - name: mineral_medium_nagel_and_andreesen

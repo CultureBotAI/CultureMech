@@ -3,8 +3,11 @@ name: sehgal_and_gibbons_medium
 original_name: SEHGAL AND GIBBONS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_range: 7.2-7.4
+ph_range:
+  min: 7.2
+  max: 7.4
 media_term:
   preferred_term: DSMZ Medium 1336
   term:
@@ -19,8 +22,8 @@ ingredients:
   concentration:
     value: '40'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: KCl
   term:
@@ -29,8 +32,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -39,8 +42,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Yeast extract
   concentration:
@@ -57,9 +60,9 @@ ingredients:
   term:
     id: CHEBI:53258
     label: sodium citrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
-    label: Trisodium citrate x 2 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
+    label: sodium citrate
 - preferred_term: Casein hydrolysate
   concentration:
     value: '5'
@@ -92,6 +95,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "SEHGAL AND GIBBONS MEDIUM" to "sehgal_and_gibbons_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:02:05.074073+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.4'' -> {''min'': 7.2, ''max'': 7.4}'
+- timestamp: '2026-06-05T07:41:45.639104+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:55.633856+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 5a7ca819f8e9a357835e646b16958a82802582ff1878ef538cdbc71490899b4f
+  source: sehgal_and_gibbons_medium.yaml
 merge_fingerprint: 5a7ca819f8e9a357835e646b16958a82802582ff1878ef538cdbc71490899b4f
 merged_from:
 - sehgal_and_gibbons_medium

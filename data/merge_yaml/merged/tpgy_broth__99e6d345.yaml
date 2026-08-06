@@ -1,0 +1,41 @@
+id: CultureMech:009355
+name: tpgy_broth
+original_name: TPGY broth
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: TPGY broth
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2807
+  term:
+    id: TOGO:M2807
+    label: TPGY broth
+notes: 'Source: https://togomedium.org/medium/M2807'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.319453Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2807'
+- timestamp: '2026-03-13T06:20:05.825088Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009355'
+- timestamp: '2026-03-17T19:46:24.748141+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "TPGY broth" to "tpgy_broth" for consistent matching
+- timestamp: '2026-08-06T03:05:13.952085+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 99e6d345b06b35462ebd529ca1ecde28d63dacf23fd6ef8b830e486c1bb8e16f
+  source: TOGO_M2807_TPGY_broth.yaml
+merge_fingerprint: 99e6d345b06b35462ebd529ca1ecde28d63dacf23fd6ef8b830e486c1bb8e16f
+merged_from:
+- TOGO_M2807_TPGY_broth

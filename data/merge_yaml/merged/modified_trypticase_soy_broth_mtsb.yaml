@@ -3,6 +3,7 @@ name: modified_trypticase_soy_broth_mtsb
 original_name: Modified trypticase soy broth (mTSB)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Pancreatic digest of casein
@@ -161,9 +162,9 @@ curation_history:
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2917'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.818110'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:06.241079Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -173,6 +174,15 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Modified trypticase soy broth (mTSB)" to "modified_trypticase_soy_broth_mtsb"
     for consistent matching
+- timestamp: '2026-05-16T09:04:26.378383+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:05:49.968597+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 229fec7957b2e5e0765366e5a188ba678db29bc8890159b1c103ffdd10d02c56
+  source: modified_trypticase_soy_broth_mtsb.yaml
 merge_fingerprint: 229fec7957b2e5e0765366e5a188ba678db29bc8890159b1c103ffdd10d02c56
 merged_from:
 - modified_trypticase_soy_broth_mtsb

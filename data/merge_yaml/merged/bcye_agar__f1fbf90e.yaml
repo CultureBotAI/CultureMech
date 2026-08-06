@@ -1,0 +1,138 @@
+id: CultureMech:006055
+name: bcye_agar
+original_name: BCYE AGAR
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+ph_range:
+  min: 6.4
+  max: 7.4
+notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 585 | DSMZ Medium: 585 (mediadive.medium:585)
+  | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 585
+  term:
+    id: komodo.medium:585
+    label: BCYE AGAR
+ingredients:
+- preferred_term: OXOID Legionella CYE-Agar base
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '20.4082'
+    unit: G_PER_L
+- preferred_term: ACES
+  term:
+    id: CHEBI:39061
+    label: ACES
+  concentration:
+    value: '20.4082'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000555
+    label: ACES
+- preferred_term: Activated charcoal
+  concentration:
+    value: '4.08163'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '30.6122'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+- preferred_term: Fe4(PO4)2
+  term:
+    id: CHEBI:132767
+    label: Fe4(PO4)2
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132767
+    label: Fe4(PO4)2
+- preferred_term: KOH
+  term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+  notes: pH adjustment (extracted from notes)
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 585'
+- timestamp: '2026-02-03T11:19:04.741899'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 585
+- timestamp: '2026-03-13T03:09:04.304521Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Added pH buffer: KOH'
+- timestamp: '2026-03-13T06:19:37.919607Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006055'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: KOH'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:30:10.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:54.766492+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BCYE AGAR" to "bcye_agar" for consistent matching
+- timestamp: '2026-05-16T09:03:03.529030+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-05-20T06:00:52.725555+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.4-7.4'' -> {''min'': 6.4, ''max'': 7.4}'
+- timestamp: '2026-06-05T07:40:24.701672+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:37:34.275013+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:55.653259+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint f1fbf90ec56a8878a5816d1885431d069fd0a33c7e6a7ddffcb17e0917371403
+  source: KOMODO_585_BCYE_AGAR.yaml
+merge_fingerprint: f1fbf90ec56a8878a5816d1885431d069fd0a33c7e6a7ddffcb17e0917371403
+merged_from:
+- KOMODO_585_BCYE_AGAR

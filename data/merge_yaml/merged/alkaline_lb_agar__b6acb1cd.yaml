@@ -1,0 +1,97 @@
+id: CultureMech:002905
+name: alkaline_lb_agar
+original_name: ALKALINE LB AGAR
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+ph_value: 8.5
+media_term:
+  preferred_term: JCM Medium J557
+  term:
+    id: mediadive.medium:J557
+    label: ALKALINE LB AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=557'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: Na2CO3
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Separately sterilize Na2CO3 by filtration and aseptically add to the
+    medium. Check final pH to be about 8.5.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.927915Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J557'
+- timestamp: '2026-03-13T06:19:16.471126Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002905'
+- timestamp: '2026-03-17T06:30:55.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:30.026957+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ALKALINE LB AGAR" to "alkaline_lb_agar" for consistent
+    matching
+- timestamp: '2026-06-05T07:40:47.886869+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:52.803288+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:22.387888+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b6acb1cd1c7ab5eb43edf4c4a5c258a1d67a1dd18027c6a6b241fa48656f7f9b
+  source: alkaline_lb_agar.yaml
+kg_microbe_match: mediadive.medium:1480
+merge_fingerprint: b6acb1cd1c7ab5eb43edf4c4a5c258a1d67a1dd18027c6a6b241fa48656f7f9b
+merged_from:
+- alkaline_lb_agar

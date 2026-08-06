@@ -3,6 +3,7 @@ name: togo_medium_m205
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: distilled water
@@ -14,9 +15,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '20'
@@ -24,8 +25,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
   term:
-    id: CHEBI:32599
-    label: ''
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: NaCl
   concentration:
     value: '200'
@@ -35,9 +36,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '1'
@@ -65,9 +66,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: NaHCO3
   concentration:
     value: '0.2'
@@ -77,9 +78,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: KBr
   concentration:
     value: '0.5'
@@ -89,9 +90,9 @@ ingredients:
   term:
     id: CHEBI:32030
     label: potassium bromide
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001123
-    label: KBr
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32030
+    label: potassium bromide
 - preferred_term: Glucose
   concentration:
     value: '1'
@@ -101,9 +102,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Agar
   concentration:
     value: '20'
@@ -112,9 +113,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '5'
@@ -154,7 +155,28 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TOGO Medium M205" to "togo_medium_m205" for consistent
     matching
+- timestamp: '2026-06-05T07:41:53.354168+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:58:37.628551+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:47:14.070013+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:01.055405+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint a273cb5e50ec03da2d116044af9cb0a7fefdbde0b5a657df382abb77c27edf8b
+  source: togo_medium_m205.yaml
 high_metal: true
-merge_fingerprint: 1273679d13e534b2d61034b9ffcd38245c210a931a464a765878208bb12e6955
+merge_fingerprint: a273cb5e50ec03da2d116044af9cb0a7fefdbde0b5a657df382abb77c27edf8b
 merged_from:
 - togo_medium_m205

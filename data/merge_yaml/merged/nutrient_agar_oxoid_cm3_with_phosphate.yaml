@@ -3,6 +3,7 @@ name: nutrient_agar_oxoid_cm3_with_phosphate
 original_name: NUTRIENT AGAR (OXOID CM3) WITH PHOSPHATE
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 6.8
 media_term:
@@ -16,12 +17,12 @@ ingredients:
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.45'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Na2HPO4 x 12 H2O
   term:
@@ -30,8 +31,8 @@ ingredients:
   concentration:
     value: '2.39'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4 x 12 H2O
 - preferred_term: Lab-Lemco beef extract
   concentration:
@@ -52,8 +53,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Agar
   term:
@@ -62,8 +63,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -89,11 +90,38 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "NUTRIENT AGAR (OXOID CM3) WITH PHOSPHATE" to "nutrient_agar_oxoid_cm3_with_phosphate"
     for consistent matching
-- timestamp: '2026-04-17T06:29:29.534167+00:00'
+- timestamp: '2026-06-05T07:40:24.887359+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:45.371182+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:56.057206+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_605_NUTRIENT_AGAR_OXOID_CM3, KOMODO_605a_NUTRIENT_AGAR_OXOID_CM3_WITH_PHOSPHATE,
     nutrient_agar_oxoid_cm3_with_phosphate'
+- timestamp: '2026-08-06T03:04:56.057255+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint e5721a2747974eb28b34ec3ae7ce9e53afb5d8adaf2e002544ae09dba0824a2e
+  source: KOMODO_605_NUTRIENT_AGAR_OXOID_CM3.yaml, KOMODO_605a_NUTRIENT_AGAR_OXOID_CM3_WITH_PHOSPHATE.yaml,
+    nutrient_agar_oxoid_cm3_with_phosphate.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/nutrient_agar_oxoid_cm3_with_phosphate.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001733
+  name: nutrient_agar_oxoid_cm3_with_phosphate
+  notes: KOMODO record states DSMZ Medium 605a provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 synonyms:
 - name: nutrient_agar_oxoid_cm3
   source: KOMODO

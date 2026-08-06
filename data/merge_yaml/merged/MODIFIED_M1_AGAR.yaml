@@ -1,87 +1,103 @@
-id: CultureMech:003143
+id: CultureMech:010248
 name: modified_m1_agar
-original_name: MODIFIED M1 AGAR
+original_name: Modified M1 Agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_value: 7.2
-media_term:
-  preferred_term: JCM Medium J799
-  term:
-    id: mediadive.medium:J799
-    label: MODIFIED M1 AGAR
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=799'
 ingredients:
-- preferred_term: Starch
-  term:
-    id: CHEBI:28017
-    label: Starch
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
-    label: Starch
-- preferred_term: Yeast extract
-  concentration:
-    value: '4'
-    unit: G_PER_L
-- preferred_term: Bacto peptone
-  concentration:
-    value: '2'
-    unit: G_PER_L
 - preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: Agar
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:2509
-    label: Agar
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Seawater
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source, Solvating media; Properties: Undefined component'
+- preferred_term: Soluble starch
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Undefined component'
+  term:
+    id: CHEBI:28017
+    label: ''
+- preferred_term: Agar
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
-- preferred_term: Sea water
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Yeast extract (BD-Difco)
   concentration:
-    value: '1000'
+    value: '4'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 7.2.
-- step_number: 2
-  action: MIX
-  description: Artificial seawater can be substituted for seawater.
+  notes: 'Properties: Undefined component'
+- preferred_term: Bacto peptone (BD-Difco)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M834
+  term:
+    id: TOGO:M834
+    label: Modified M1 Agar
+notes: 'Source: https://togomedium.org/medium/M834
+
+  Original source: JCM - JCM_M799
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=799'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:17.638057Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J799'
-- timestamp: '2026-03-13T06:19:18.122346Z'
+- timestamp: '2026-01-27T06:35:55.801590Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M834'
+- timestamp: '2026-01-28T19:48:31.516344Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:12.416563Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:003143'
-- timestamp: '2026-03-17T06:30:07.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:010248'
+- timestamp: '2026-03-17T06:30:32.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:31.934495+00:00'
+- timestamp: '2026-03-17T19:46:31.360107+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MODIFIED M1 AGAR" to "modified_m1_agar" for consistent
+  notes: Normalized name from "Modified M1 Agar" to "modified_m1_agar" for consistent
     matching
-kg_microbe_match: mediadive.medium:687
-merge_fingerprint: c07d47dd59e57ce993605964a028e53d6f5b375ba3af66c87a1ca392cfc89c35
+- timestamp: '2026-06-05T07:40:44.885851+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:19.682991+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d4650d5f05a4d084c7a78cb89e9f7590d4cae7c86b3092f8c803e8b417d1228b
+  source: TOGO_M834_Modified_M1_Agar.yaml
+kg_microbe_match: mediadive.medium:101
+merge_fingerprint: d4650d5f05a4d084c7a78cb89e9f7590d4cae7c86b3092f8c803e8b417d1228b
 merged_from:
-- modified_m1_agar
+- TOGO_M834_Modified_M1_Agar

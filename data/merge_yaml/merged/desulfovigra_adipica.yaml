@@ -3,8 +3,11 @@ name: desulfovigra_adipica
 original_name: DESULFOVIGRA ADIPICA
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_range: 7-7.2
+ph_range:
+  min: 7.0
+  max: 7.2
 notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 868 | DSMZ Medium: 868
   (mediadive.medium:868) | Aerobic: Yes'
 media_term:
@@ -20,12 +23,12 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000149
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
   term:
     id: CHEBI:29377
-    label: ''
+    label: sodium carbonate
 applications:
 - Microbial cultivation
 curation_history:
@@ -38,9 +41,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:006698'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:42.405150'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Na2CO3'
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:32.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -50,6 +53,30 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "DESULFOVIGRA ADIPICA" to "desulfovigra_adipica" for
     consistent matching
+- timestamp: '2026-05-16T09:03:30.386464+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-05-20T06:01:15.032686+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7-7.2'' -> {''min'': 7.0, ''max'': 7.2}'
+- timestamp: '2026-06-05T07:40:58.063313+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:56.138480+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:32.455524+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint fcc1a91ff7b93b93ce15a3108237d86e7edf7421f59012237181fcf3a4d447fc
+  source: desulfovigra_adipica.yaml
+kg_microbe_match: mediadive.medium:634c
 merge_fingerprint: fcc1a91ff7b93b93ce15a3108237d86e7edf7421f59012237181fcf3a4d447fc
 merged_from:
 - desulfovigra_adipica

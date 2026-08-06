@@ -1,0 +1,72 @@
+id: CultureMech:002237
+name: maize_meal_sardine_agar
+original_name: MAIZE MEAL-SARDINE AGAR
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J1054
+  term:
+    id: mediadive.medium:J1054
+    label: MAIZE MEAL-SARDINE AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1054'
+ingredients:
+- preferred_term: Maize meal
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Small dried sardine
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Boil maize meal and dried sardine with 500 ml of distilled water for
+    20 min. Filtered through cloth, make up to 1 L, add agar, and boil till dissolved.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.462234Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1054'
+- timestamp: '2026-03-13T06:19:11.513473Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002237'
+- timestamp: '2026-03-17T06:29:48.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:24.323849+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MAIZE MEAL-SARDINE AGAR" to "maize_meal_sardine_agar"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:12.595137+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:41.706004+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint ec4f6ccb69704cbfdbb107061fa8113f83a3e4ee417ed939221a6643ba613632
+  source: maize_meal_sardine_agar.yaml
+kg_microbe_match: mediadive.medium:12
+merge_fingerprint: ec4f6ccb69704cbfdbb107061fa8113f83a3e4ee417ed939221a6643ba613632
+merged_from:
+- maize_meal_sardine_agar

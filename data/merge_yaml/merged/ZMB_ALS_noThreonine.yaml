@@ -1,6 +1,7 @@
 id: CultureMech:015823
 name: ZMB ALS noThreonine
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: ZMB_ALS
@@ -17,7 +18,7 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 72-19-5; MW: 119.12'
 description: Media for culturing Bifidobacterium minus threonine
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: ZMB ALS noThreonine
@@ -31,6 +32,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015823'
+- timestamp: '2026-05-16T09:04:44.161356+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:09.163204+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d0966e0824ca019847bedc3d2f3f1625acff0b3bcb8f622c8857a1993618bf58
+  source: zmb_als_nothreonine.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: d0966e0824ca019847bedc3d2f3f1625acff0b3bcb8f622c8857a1993618bf58

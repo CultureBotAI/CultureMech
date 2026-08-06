@@ -1,8 +1,9 @@
 id: CultureMech:006550
 name: halobaculum_gomorrense_medium
 original_name: HALOBACULUM GOMORRENSE medium
-category: bacterial
+category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:
@@ -20,8 +21,8 @@ ingredients:
   concentration:
     value: '125'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -30,18 +31,18 @@ ingredients:
   concentration:
     value: '160'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: K2SO4
   term:
     id: CHEBI:32036
-    label: K2SO4
+    label: potassium sulfate
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001064
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32036
     label: K2SO4
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -50,8 +51,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: Yeast extract
   concentration:
@@ -61,12 +62,6 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
 - preferred_term: Starch
   term:
     id: CHEBI:28017
@@ -74,8 +69,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
     label: Starch
 applications:
 - Microbial cultivation
@@ -101,13 +96,45 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HALOBACULUM GOMORRENSE medium" to "halobaculum_gomorrense_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:32.766482+00:00'
+- timestamp: '2026-06-05T07:40:26.743589+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:28.613577+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:46:45.993958+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:23.990750+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_823_HALOBACULUM_GOMORRENSE_medium, halobaculum_gomorrense_medium'
+- timestamp: '2026-08-06T03:04:23.990793+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 73b568160504a354f6b012148c2e3643d7975595e1ceb623ab032fbcb1afddad
+  source: KOMODO_823_HALOBACULUM_GOMORRENSE_medium.yaml, halobaculum_gomorrense_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/halobaculum_gomorrense_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001971
+  name: halobaculum_gomorrense_medium
+  notes: KOMODO record states DSMZ Medium 823 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 categories:
-- bacterial
+- archaea
 merged_from:
 - KOMODO_823_HALOBACULUM_GOMORRENSE_medium
 - halobaculum_gomorrense_medium
-merge_fingerprint: 5f7890b5c311f1247cfa9dcd9f4375ba828ae3296ae2d726bbf11452d00e75cf
+merge_fingerprint: 73b568160504a354f6b012148c2e3643d7975595e1ceb623ab032fbcb1afddad

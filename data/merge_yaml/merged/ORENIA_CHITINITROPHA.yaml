@@ -3,6 +3,7 @@ name: orenia_chitinitropha
 original_name: ORENIA CHITINITROPHA
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1569
@@ -18,28 +19,28 @@ ingredients:
   concentration:
     value: '120'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: Chitin
   concentration:
@@ -53,8 +54,8 @@ ingredients:
   concentration:
     value: '1.01652'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: Yeast extract
   concentration:
@@ -67,8 +68,8 @@ ingredients:
   concentration:
     value: '1.68014'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: Na2S
   term:
@@ -77,8 +78,8 @@ ingredients:
   concentration:
     value: '0.07906'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000783
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76208
     label: Na2S
 - preferred_term: Thiamin
   term:
@@ -87,8 +88,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18385
     label: Thiamin
 - preferred_term: Calcium pantothenate
   term:
@@ -97,8 +98,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium pantothenate
 - preferred_term: B12
   concentration:
@@ -111,8 +112,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: PABA
   term:
@@ -121,8 +122,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
     label: PABA
 - preferred_term: Nicotinic acid
   term:
@@ -131,8 +132,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
     label: Nicotinic acid
 - preferred_term: Pyridoxine
   term:
@@ -141,8 +142,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000317
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16709
     label: Pyridoxine
 - preferred_term: Folic acid
   term:
@@ -151,8 +152,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
     label: Folic acid
 - preferred_term: Riboflavin
   term:
@@ -161,8 +162,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: EDTA
   term:
@@ -171,8 +172,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000165
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64755
     label: EDTA
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -181,8 +182,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -191,22 +192,25 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: MnCl2
   concentration:
     value: '0.03'
     unit: G_PER_L
+  term:
+    id: CHEBI:63041
+    label: manganese(II) chloride
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -215,18 +219,18 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: CuCl2
   term:
     id: CHEBI:49553
-    label: CuCl2
+    label: copper(II) chloride
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000821
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49553
     label: CuCl2
 - preferred_term: NiCl2 x 2 H2O
   term:
@@ -235,8 +239,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 2 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -245,8 +249,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 preparation_steps:
 - step_number: 1
@@ -288,6 +292,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ORENIA CHITINITROPHA" to "orenia_chitinitropha" for
     consistent matching
-merge_fingerprint: e9499b44a7da72187caeef3eb1af670de1f5b68fbacdb7aef8747062dbfa3b31
+- timestamp: '2026-06-05T07:41:40.573506+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 22 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:09.793668+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:52.037339+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 08670826cb942b127203b87d0c1dd81a518703d105417d05418be9f90c31e773
+  source: orenia_chitinitropha.yaml
+merge_fingerprint: 08670826cb942b127203b87d0c1dd81a518703d105417d05418be9f90c31e773
 merged_from:
 - orenia_chitinitropha

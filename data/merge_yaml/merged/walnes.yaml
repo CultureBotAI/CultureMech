@@ -1,176 +1,188 @@
-id: CultureMech:000312
+id: CultureMech:000142
 name: walnes
-original_name: Walne's
-category: bacterial
+category: algae
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-media_term:
-  preferred_term: CCAP Medium C105
-  term:
-    id: mediadive.medium:C105
-    label: Walne's
-notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_Walnes.pdf'
+description: Algae culture medium from CCAP Culture Collection. Suitable for saltwater
+  algae cultivation. Recipe available in PDF format.
+notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_Walnes.pdf
+salinity: marine (natural seawater or artificial seawater)
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
+applications:
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
+curation_history:
+- curator: ccap-import
+  action: Imported from CCAP Culture Collection
+  notes: 'Source ID: Walnes, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_Walnes.pdf'
+  timestamp: '2026-01-28T00:00:00+00:00'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-02-03T11:26:43.639459'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:18:53.275412Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000142'
+- timestamp: '2026-03-17T19:45:04.222360+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Walne's" to "walnes" for consistent matching
+- timestamp: '2026-04-04T12:54:54.851639'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 11 curated ingredients from CCAP
+  source: CCAP Medium MR_Walnes.pdf
+- timestamp: '2026-05-16T08:57:02.869170+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(3 entries)
+- timestamp: '2026-05-16T09:02:57.108439+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
+    category->lowercase=1
+- timestamp: '2026-08-06T03:04:20.422093+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 3f5ad4f4ff8a083ac57c87f60af2e094633de56e45c16151fe98d1c05f36d16b
+  source: walnes.yaml
+references:
+- reference: CCAP:Walnes
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_Walnes.pdf
 ingredients:
-- preferred_term: Sea water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-- preferred_term: FeCl3 x 6 H2O
-  term:
-    id: CHEBI:86254
-    label: FeCl3 x 6 H2O
-  concentration:
-    value: '1.3'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000218
-    label: FeCl3 x 6 H2O
-- preferred_term: MnCl2 x 4 H2O
-  term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
-  concentration:
-    value: '0.36'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
-    label: MnCl2 x 4 H2O
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '33.6'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
-- preferred_term: Na2-EDTA
-  term:
-    id: CHEBI:64734
-    label: Na2-EDTA
-  concentration:
-    value: '45'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
-    label: Na2-EDTA
-- preferred_term: NaH2PO4 x 2 H2O
-  term:
-    id: CHEBI:37585
-    label: NaH2PO4 x 2 H2O
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000393
-    label: NaH2PO4 x 2 H2O
-- preferred_term: NaNO3
-  term:
-    id: CHEBI:63005
-    label: NaNO3
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000171
-    label: NaNO3
-- preferred_term: Cyanocobalamine
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001039
-    label: Cyanocobalamine
-- preferred_term: Thiamine HCl
-  term:
-    id: CHEBI:49105
-    label: Thiamine HCl
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
-    label: Thiamine HCl
-- preferred_term: Biotin
-  term:
-    id: CHEBI:15956
-    label: Biotin
-  concentration:
-    value: '200'
-    unit: MICROG_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
-    label: Biotin
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
     label: ZnCl2
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.851614'
+    ontology_source: CHEBI
   concentration:
-    value: '21'
+    value: '2.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
-    label: ZnCl2
+  source: CCAP Medium MR_Walnes.pdf
+  notes: From CCAP Medium MR_Walnes.pdf; Curated from CCAP Medium MR_Walnes.pdf specification
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
     label: CoCl2 x 6 H2O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.851622'
+    ontology_source: CHEBI
   concentration:
-    value: '20'
+    value: '2.0'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
-    label: CoCl2 x 6 H2O
-- preferred_term: (NH4)6Mo7O24 x 4 H2O
-  concentration:
-    value: '9'
-    unit: G_PER_L
+  source: CCAP Medium MR_Walnes.pdf
+  notes: From CCAP Medium MR_Walnes.pdf; Curated from CCAP Medium MR_Walnes.pdf specification
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
     label: CuSO4 x 5 H2O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.851624'
+    ontology_source: CHEBI
   concentration:
-    value: '20'
+    value: '2.0'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
-    label: CuSO4 x 5 H2O
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: "Dispense nutrient and vitamin solutions separately into 10 ml and\
-    \ 1 ml respectively \r\nand autoclave at 15 psi for 15 minutes.  Add an aliquot\
-    \ of each aseptically to 10\r\nlitres of sterilised seawater."
-- step_number: 2
-  action: MIX
-  description: Make up to 1 litre with distilled water.
-- step_number: 3
-  action: MIX
-  description: Make up to 100 ml with distilled water.
-- step_number: 4
-  action: MIX
-  description: "Make  up  to 100  ml with distilled  water.  This solution is  normally\
-    \ \r\ncloudy.  Acidify with a few drops of conc. HCl to give a clear solution."
-applications:
-- Microbial cultivation
-curation_history:
-- timestamp: '2026-01-26T17:53:19.817459Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: CCAP, ID: C105'
-- timestamp: '2026-03-13T06:18:54.359939Z'
-  curator: culturemech-id-assigner-v1.0
-  action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000312'
-- timestamp: '2026-03-17T06:30:03.000000Z'
-  curator: mediaingredientmech-enrichment-v1.0
-  action: Added MediaIngredientMech links
-  notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:05.326389+00:00'
-  curator: normalize_media_names_to_snake_case.py
-  action: NAME_NORMALIZED
-  notes: Normalized name from "Walne's" to "walnes" for consistent matching
-merge_fingerprint: 64638dddf77874a37630d8eced6f5bc9f461e77eccf729e040c5513520e9d4a4
+  source: CCAP Medium MR_Walnes.pdf
+  notes: From CCAP Medium MR_Walnes.pdf; Curated from CCAP Medium MR_Walnes.pdf specification
+- preferred_term: Vitamin B . (Cyanocobalamin)
+  notes: Ontology mapping not yet available; From CCAP Medium MR_Walnes.pdf; Curated
+    from CCAP Medium MR_Walnes.pdf specification
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  source: CCAP Medium MR_Walnes.pdf
+- preferred_term: Vitamin B (Thiamine.HCl)
+  notes: Ontology mapping not yet available; From CCAP Medium MR_Walnes.pdf; Curated
+    from CCAP Medium MR_Walnes.pdf specification
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  source: CCAP Medium MR_Walnes.pdf
+- preferred_term: FeCl .6H 0
+  notes: Ontology mapping not yet available; From CCAP Medium MR_Walnes.pdf; Curated
+    from CCAP Medium MR_Walnes.pdf specification
+  concentration:
+    value: '1.3'
+    unit: G_PER_L
+  source: CCAP Medium MR_Walnes.pdf
+- preferred_term: MnCl .4H 0
+  notes: Ontology mapping not yet available; From CCAP Medium MR_Walnes.pdf; Curated
+    from CCAP Medium MR_Walnes.pdf specification
+  concentration:
+    value: '0.36'
+    unit: G_PER_L
+  source: CCAP Medium MR_Walnes.pdf
+- preferred_term: H BO
+  term:
+    id: CHEBI:33118
+    label: H BO
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.851629'
+    ontology_source: CHEBI
+  concentration:
+    value: '33.6'
+    unit: G_PER_L
+  source: CCAP Medium MR_Walnes.pdf
+  notes: From CCAP Medium MR_Walnes.pdf; Curated from CCAP Medium MR_Walnes.pdf specification
+- preferred_term: EDTA(Disodium salt)
+  notes: Ontology mapping not yet available; From CCAP Medium MR_Walnes.pdf; Curated
+    from CCAP Medium MR_Walnes.pdf specification
+  concentration:
+    value: '45.0'
+    unit: G_PER_L
+  source: CCAP Medium MR_Walnes.pdf
+- preferred_term: NaH2PO4 x 2 H2O
+  term:
+    id: CHEBI:37585
+    label: NaH2PO4 x 2 H2O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.851632'
+    ontology_source: CHEBI
+  concentration:
+    value: '20.0'
+    unit: G_PER_L
+  source: CCAP Medium MR_Walnes.pdf
+  notes: From CCAP Medium MR_Walnes.pdf; Curated from CCAP Medium MR_Walnes.pdf specification
+- preferred_term: NaNO
+  term:
+    id: CHEBI:34545
+    label: NaNO
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.851635'
+    ontology_source: CHEBI
+  concentration:
+    value: '100.0'
+    unit: G_PER_L
+  source: CCAP Medium MR_Walnes.pdf
+  notes: From CCAP Medium MR_Walnes.pdf; Curated from CCAP Medium MR_Walnes.pdf specification
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- curation_method:automated_expert_mapping
+original_name: Walne's
+merge_fingerprint: 3f5ad4f4ff8a083ac57c87f60af2e094633de56e45c16151fe98d1c05f36d16b
 merged_from:
 - walnes

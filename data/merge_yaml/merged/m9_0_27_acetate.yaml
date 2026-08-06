@@ -3,16 +3,23 @@ name: m9_0_27_acetate
 original_name: M9 0.27% acetate
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.1'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '47.743'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -20,13 +27,16 @@ ingredients:
   concentration:
     value: '8.5557'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '22.045'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Sodium acetate
   term:
     id: CHEBI:32954
@@ -34,8 +44,8 @@ ingredients:
   concentration:
     value: '32.913'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
     label: Sodium acetate
 - preferred_term: Magnesium sulfate
   term:
@@ -44,8 +54,8 @@ ingredients:
   concentration:
     value: '2.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
@@ -54,8 +64,8 @@ ingredients:
   concentration:
     value: '18.6947'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 preparation_steps:
 - step_number: 1
@@ -86,6 +96,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "M9 0.27% acetate" to "m9_0_27_acetate" for consistent
     matching
+- timestamp: '2026-06-05T07:41:11.922758+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:41.026928+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint ceb3edcf5e4f2d1fa6c737748face2a7479c6ab39f27ffe6ef29e3cf4f926fa0
+  source: m9_0_27_acetate.yaml
 media_term:
   preferred_term: MediaDB Medium 193
   term:
@@ -97,6 +118,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 03e7da3a196992d2f1beac7b64fb6c879435ed3087bd6f40d8b69effe5c75926
+merge_fingerprint: ceb3edcf5e4f2d1fa6c737748face2a7479c6ab39f27ffe6ef29e3cf4f926fa0
 merged_from:
 - m9_0_27_acetate

@@ -1,0 +1,205 @@
+id: CultureMech:015872
+name: modified_nms_medium_4
+original_name: MODIFIED NMS MEDIUM-4
+category: bacterial
+medium_type: DEFINED
+composition_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1465
+  term:
+    id: jcm.grmd:1465
+    label: MODIFIED NMS MEDIUM-4
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1465'
+ingredients:
+- preferred_term: KNO3
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63043
+    label: potassium nitrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63043
+    label: KNO3
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: MgSO4 x 6 H2O
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: Fe(III)-EDTA
+  concentration:
+    value: '3.8'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:30729
+    label: ethylenediaminetetraacetatoferrate(1-)
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30729
+    label: Fe(III)-EDTA
+- preferred_term: Na2MoO4·2H2O
+  concentration:
+    value: '0.26'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75215
+    label: Na2MoO4·2H2O
+- preferred_term: Na2HPO4·12H2O
+  concentration:
+    value: '0.72'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: Na2HPO4
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.26'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: Trace element solution (see below)
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: CuSO4·5H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+- preferred_term: FeSO4·7H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+- preferred_term: ZnSO4·7H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+- preferred_term: H3BO2
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: CoCl2·6H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
+    label: CoCl2 x 2 H2O
+- preferred_term: EDTA·2Na
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+- preferred_term: MnCl2·4H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: NiCl2·6H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: CHEBI:34887
+    label: nickel dichloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix components and autoclave.
+- step_number: 2
+  action: MIX
+  description: Aseptically distribute the medium into sterile serum bottles (leave
+    ≥ 80% gas phase by volume) and seal with rubber stoppers.
+- step_number: 3
+  action: MIX
+  description: Replace the gas phase with an air-methane gas mixture (82:18, v/v).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-06-02T07:09:24.407182+00:00'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1465. Ingredients captured verbatim; CHEBI/MediaIngredientMech
+    enrichment and category (bacterial/archaea) review are downstream steps.
+- timestamp: '2026-06-03T02:00:03.425998Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-06-03T07:12:22.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-08-06T03:04:35.700043+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 6e45c497b2aa93620f9f748805537564e6ab77a3b41cf837e2466e4729f4148b
+  source: JCM_J1465_MODIFIED_NMS_MEDIUM_4.yaml
+merge_fingerprint: 6e45c497b2aa93620f9f748805537564e6ab77a3b41cf837e2466e4729f4148b
+merged_from:
+- JCM_J1465_MODIFIED_NMS_MEDIUM_4

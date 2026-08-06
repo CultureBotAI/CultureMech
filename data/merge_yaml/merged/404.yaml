@@ -4,6 +4,7 @@ original_name: '404'
 category: bacterial
 description: 404. NBRC 403.
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: K2HPO40.5gKH2PO40.6gMgSO4·7H2O0.2gNaCl0.1gCaCO33gYeast extract0.6gArabinose4gSodium
@@ -40,11 +41,20 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007493'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:45.899422'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: K2HPO40.5gKH2PO40.6gMgSO4·7H2O0.2gNaCl0.1gCaCO33gYeast
     extract0.6gArabinose4gSodium glutamate6gAgar (if needed)15gDistilled water1LpH
     6.7±0.2'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-05-16T09:03:06.703980+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:05:04.683526+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 67a3b7e56b9352f682e3dcf986438cf055a98c1117299efff5ac3c2f90b87e5b
+  source: NBRC_404.yaml
 merge_fingerprint: 67a3b7e56b9352f682e3dcf986438cf055a98c1117299efff5ac3c2f90b87e5b
 merged_from:
 - NBRC_404

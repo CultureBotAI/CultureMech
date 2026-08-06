@@ -1,78 +1,140 @@
-id: CultureMech:009656
+id: CultureMech:009672
 name: seed_medium
 original_name: Seed medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
 - preferred_term: Yeast extract
   concentration:
-    value: '10'
+    value: '1'
     unit: G_PER_L
   notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: NaCl
+- preferred_term: KH2PO4
   concentration:
-    value: '3'
+    value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: Beef extract
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: Monosodium glutamate
   concentration:
-    value: '5'
+    value: '1'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Trypton
+  notes: 'Role: Nitrogen source; Properties: Simple component, Organic compound, Defined
+    component'
+  term:
+    id: CHEBI:64220
+    label: monosodium glutamate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64220
+    label: monosodium glutamate
+- preferred_term: K2HPO4·3H2O
   concentration:
-    value: '10'
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Tryptone
+  concentration:
+    value: '7'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
 media_term:
-  preferred_term: TOGO Medium M3215
+  preferred_term: TOGO Medium M3233
   term:
-    id: TOGO:M3215
+    id: TOGO:M3233
     label: Seed medium
-notes: 'Source: https://togomedium.org/medium/M3215'
+notes: 'Source: https://togomedium.org/medium/M3233'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:57.606161Z'
+- timestamp: '2026-01-27T06:35:57.625587Z'
   curator: togo-import
   action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M3215'
-- timestamp: '2026-01-28T19:48:37.289484Z'
+  notes: 'Source: TOGO, ID: M3233'
+- timestamp: '2026-01-28T19:48:13.771553Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:20:07.925437Z'
+- timestamp: '2026-03-13T06:20:08.020839Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:009656'
-- timestamp: '2026-03-17T06:30:44.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:009672'
+- timestamp: '2026-03-17T06:29:54.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:26.931049+00:00'
+- timestamp: '2026-03-17T19:46:27.025394+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "Seed medium" to "seed_medium" for consistent matching
-merge_fingerprint: 7c1110676c4ad260e65d5687bdf6215fb4a44e4560052a97acaa10daf004a18f
+- timestamp: '2026-06-05T07:40:40.360674+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:29.688575+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:46:50.304207+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:14.971912+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 1cec54d08758bf173e7c5e4f14c4d31d683e36f28f82aaac2c996cab2437a722
+  source: TOGO_M3233_Seed_medium.yaml
+merge_fingerprint: 1cec54d08758bf173e7c5e4f14c4d31d683e36f28f82aaac2c996cab2437a722
 merged_from:
-- seed_medium
+- TOGO_M3233_Seed_medium

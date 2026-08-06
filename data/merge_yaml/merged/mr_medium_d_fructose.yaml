@@ -3,6 +3,7 @@ name: mr_medium_d_fructose
 original_name: MR Medium + D-fructose
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sodium borate
@@ -13,6 +14,9 @@ ingredients:
   concentration:
     value: '0.0004045'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: D-Fructose
   term:
     id: CHEBI:15824
@@ -21,8 +25,8 @@ ingredients:
     value: '111.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:fru'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000344
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15824
     label: D-Fructose
 - preferred_term: Zinc sulfate
   term:
@@ -31,17 +35,23 @@ ingredients:
   concentration:
     value: '0.03825'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.09011'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.02002'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
@@ -49,13 +59,16 @@ ingredients:
   concentration:
     value: '0.01121'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.1798'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -63,18 +76,24 @@ ingredients:
   concentration:
     value: '4.587'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Citrate
   concentration:
     value: '4.164'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '49.01'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Ammonium phosphate
   concentration:
     value: '30.29'
@@ -108,6 +127,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MR Medium + D-fructose" to "mr_medium_d_fructose" for
     consistent matching
+- timestamp: '2026-06-05T07:41:38.359159+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:50.336814+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 9965f82221dd53cdbeb29bd2f04b2c32385428d5f348f9249a2b82098d04c031
+  source: mr_medium_d_fructose.yaml
 media_term:
   preferred_term: MediaDB Medium 320
   term:
@@ -119,6 +149,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: a964b98c632903c2c3f54444ca186413e034d824734fc9e778aa177e905c833a
+merge_fingerprint: 9965f82221dd53cdbeb29bd2f04b2c32385428d5f348f9249a2b82098d04c031
 merged_from:
 - mr_medium_d_fructose

@@ -3,6 +3,7 @@ name: cyanobacteria_medium_ba_50_b_n_2
 original_name: Cyanobacteria Medium BA+50+B+N/2
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1678
@@ -18,8 +19,8 @@ ingredients:
   concentration:
     value: '33.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -28,8 +29,8 @@ ingredients:
   concentration:
     value: '3.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: KCl
   term:
@@ -38,8 +39,8 @@ ingredients:
   concentration:
     value: '3.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: Mg(SO4) x 7 H2O
   concentration:
@@ -52,8 +53,8 @@ ingredients:
   concentration:
     value: '3.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: Na3-citrate x 2 H2O
   concentration:
@@ -62,8 +63,8 @@ ingredients:
   term:
     id: CHEBI:32142
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000719
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32142
     label: Na3-citrate x 2 H2O
 - preferred_term: Na2-EDTA x 2 H2O
   term:
@@ -72,8 +73,8 @@ ingredients:
   concentration:
     value: '0.00083'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
     label: Na2-EDTA x 2 H2O
 - preferred_term: NaNO3
   term:
@@ -88,12 +89,12 @@ ingredients:
 - preferred_term: K2HPO4 x 3 H2O
   term:
     id: CHEBI:131527
-    label: K2HPO4 x 3 H2O
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.0332'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4 x 3 H2O
 - preferred_term: NaHCO3
   term:
@@ -102,8 +103,8 @@ ingredients:
   concentration:
     value: '0.180075'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: Fe(NH4)citrate
   term:
@@ -112,18 +113,18 @@ ingredients:
   concentration:
     value: '0.0048'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000541
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31604
     label: Fe(NH4)citrate
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '0.02675'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: Vitamin B12
   term:
@@ -132,8 +133,8 @@ ingredients:
   concentration:
     value: 2e-05
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -142,8 +143,8 @@ ingredients:
   concentration:
     value: '0.22'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -152,18 +153,18 @@ ingredients:
   concentration:
     value: '1.81'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '2.86'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -172,8 +173,8 @@ ingredients:
   concentration:
     value: '0.39'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
@@ -182,8 +183,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
     label: CuSO4 x 5 H2O
 - preferred_term: Co(NO3)2 x 6 H2O
   term:
@@ -192,8 +193,8 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000525
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86214
     label: Co(NO3)2 x 6 H2O
 preparation_steps:
 - step_number: 1
@@ -230,6 +231,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Cyanobacteria Medium BA+50+B+N/2" to "cyanobacteria_medium_ba_50_b_n_2"
     for consistent matching
-merge_fingerprint: b427f9112eb34022d044135865f501e9abcbcb533c82a6c405040ee4d76770a7
+- timestamp: '2026-06-05T07:40:55.091659+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 17 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:55.064843+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:29.420294+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 380380eece45fe3e4eb35c86d885eb93ecb66e2de0404dd2051eca388c327e97
+  source: cyanobacteria_medium_ba_50_b_n_2.yaml
+merge_fingerprint: 380380eece45fe3e4eb35c86d885eb93ecb66e2de0404dd2051eca388c327e97
 merged_from:
 - cyanobacteria_medium_ba_50_b_n_2

@@ -1,6 +1,7 @@
 id: CultureMech:015810
 name: ZMB ALS noIsoleucine
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: ZMB_ALS
@@ -17,7 +18,7 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 73-32-5; MW: 131.17'
 description: Media for culturing Bifidobacterium minus isoleucine
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: ZMB ALS noIsoleucine
@@ -31,6 +32,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015810'
+- timestamp: '2026-05-16T09:04:44.134462+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:09.126677+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b23de2397656f6b763b065d388e3fdf0dea573ea363b8f6f8be15219f715d629
+  source: zmb_als_noisoleucine.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: b23de2397656f6b763b065d388e3fdf0dea573ea363b8f6f8be15219f715d629

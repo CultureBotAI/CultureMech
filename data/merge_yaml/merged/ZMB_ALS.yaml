@@ -1,6 +1,7 @@
 id: CultureMech:015792
 name: ZMB ALS
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose
@@ -360,6 +361,9 @@ ingredients:
     value: '0.00019'
     unit: G_PER_L
   notes: 'CAS: 12027-67-7; MW: 1235.86'
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: Manganese (II) sulfate monohydrate
   concentration:
     value: '0.00038'
@@ -453,7 +457,7 @@ ingredients:
 description: Media for culturing Bifidobacterium - An altered ZMB media from Anthony
   Shiver
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: ZMB ALS
@@ -467,8 +471,17 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015792'
+- timestamp: '2026-05-16T09:04:44.059254+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:09.033480+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint efc1748b232681fb3e96b43d31fb42c0fa7876a6f682e0410d1a170a1b065279
+  source: zmb_als.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: cbf065b309fb8095947493d72782390066666369e9f377d705c7e1f88980d504
+merge_fingerprint: efc1748b232681fb3e96b43d31fb42c0fa7876a6f682e0410d1a170a1b065279
 merged_from:
 - zmb_als

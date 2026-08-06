@@ -3,6 +3,7 @@ name: togo_medium_m1460
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: MgSO4·7H2O
@@ -12,11 +13,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4·7H2O
 - preferred_term: NaCl
   concentration:
     value: '1'
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: FeSO4·7H2O
   concentration:
     value: '10'
@@ -44,6 +45,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86360
+    label: manganese(II) sulfate
 - preferred_term: Tap water
   concentration:
     value: '1'
@@ -52,8 +56,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Tap water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Tap water
 - preferred_term: (NH4)2HPO4
   concentration:
@@ -63,7 +67,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63051
-    label: (NH4)2HPO4
+    label: diammonium hydrogen phosphate
   mediaingredientmech_term:
     id: MediaIngredientMech:000385
     label: (NH4)2HPO4
@@ -76,8 +80,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Biotin
   concentration:
@@ -87,9 +91,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
-    label: Biotin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
+    label: biotin
 - preferred_term: p-Aminobenzoic acid
   concentration:
     value: '20'
@@ -98,9 +102,9 @@ ingredients:
   term:
     id: CHEBI:30753
     label: 4-aminobenzoic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
-    label: p-Aminobenzoic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
 - preferred_term: Thiamin-HCl
   concentration:
     value: '20'
@@ -109,9 +113,9 @@ ingredients:
   term:
     id: CHEBI:49105
     label: thiamine hydrochloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
-    label: Thiamin-HCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
 - preferred_term: Ca-pantothenate
   concentration:
     value: '40'
@@ -120,19 +124,19 @@ ingredients:
   term:
     id: CHEBI:29032
     label: (R)-pantothenate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000219
-    label: Ca-pantothenate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29032
+    label: (R)-pantothenate
 - preferred_term: Pyridoxine-HCl
   concentration:
     value: '40'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000703
+    id: CHEBI:30961
+    label: Pyridoxine-HCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
     label: Pyridoxine-HCl
 - preferred_term: Folic acid
   concentration:
@@ -142,9 +146,9 @@ ingredients:
   term:
     id: CHEBI:27470
     label: folic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
-    label: Folic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
+    label: folic acid
 - preferred_term: Cyanocobalamin
   concentration:
     value: '2'
@@ -153,9 +157,9 @@ ingredients:
   term:
     id: CHEBI:17439
     label: cyanocob(III)alamin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
-    label: Cyanocobalamin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
+    label: cyanocob(III)alamin
 - preferred_term: Riboflavin
   concentration:
     value: '40'
@@ -164,9 +168,9 @@ ingredients:
   term:
     id: CHEBI:17015
     label: riboflavin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
-    label: Riboflavin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
+    label: riboflavin
 - preferred_term: Niacin
   concentration:
     value: '40'
@@ -175,9 +179,9 @@ ingredients:
   term:
     id: CHEBI:15940
     label: nicotinic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
-    label: Niacin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
+    label: nicotinic acid
 - preferred_term: Choline chloride
   concentration:
     value: '100'
@@ -187,9 +191,9 @@ ingredients:
   term:
     id: CHEBI:133341
     label: choline chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000437
-    label: Choline chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:133341
+    label: choline chloride
 - preferred_term: myo-Inositol
   concentration:
     value: '200'
@@ -199,9 +203,9 @@ ingredients:
   term:
     id: CHEBI:17268
     label: myo-inositol
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000500
-    label: myo-Inositol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17268
+    label: myo-inositol
 media_term:
   preferred_term: TOGO Medium M1460
   term:
@@ -232,10 +236,10 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008002'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:48.913102'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name; Added default solution
     name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:39.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -245,6 +249,41 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TOGO Medium M1460" to "togo_medium_m1460" for consistent
     matching
+- timestamp: '2026-05-16T09:04:36.035433+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:52.275023+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 15 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:51.347949+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T06:58:36.643439+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:37:36.119677+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:47:13.771734+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:59.940051+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d71402fedef6b3315bafa1ee5b5b527179dc3eab0579ac707f7f81b1e6fded1a
+  source: togo_medium_m1460.yaml
 solutions:
 - preferred_term: Methanol*
   composition: []
@@ -270,6 +309,6 @@ solutions:
     unit: G_PER_L
   notes: See mediadive_5209_Vitamin_mixture.yaml for composition
   name: Unknown solution
-merge_fingerprint: be60037c111def5e9a6f63945916c17e69cb3c2eca16ff4b54a80e019d30df0e
+merge_fingerprint: d71402fedef6b3315bafa1ee5b5b527179dc3eab0579ac707f7f81b1e6fded1a
 merged_from:
 - togo_medium_m1460

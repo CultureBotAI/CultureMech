@@ -3,6 +3,7 @@ name: aam
 original_name: AAM-
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Potassium chloride
@@ -12,9 +13,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -22,9 +23,9 @@ ingredients:
   concentration:
     value: '163.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -32,8 +33,8 @@ ingredients:
   concentration:
     value: '5.28'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ammonium sulfate
   term:
@@ -42,21 +43,30 @@ ingredients:
   concentration:
     value: '30.3'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.15'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '1.03'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.0216'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
@@ -64,13 +74,16 @@ ingredients:
   concentration:
     value: '0.0368'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Tromethamine
   concentration:
     value: '100.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:9754
+    label: ''
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
@@ -79,8 +92,8 @@ ingredients:
     value: '27.8'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: L-Arginine
   term:
@@ -90,8 +103,8 @@ ingredients:
     value: '0.718'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:arg-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000289
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16467
     label: L-Arginine
 - preferred_term: L-Proline
   term:
@@ -101,8 +114,8 @@ ingredients:
     value: '1.74'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pro-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000280
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17203
     label: L-Proline
 - preferred_term: D-Glutamate
   concentration:
@@ -117,8 +130,8 @@ ingredients:
     value: '1.28'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:val-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000304
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16414
     label: L-Valine
 - preferred_term: L-Threonine
   term:
@@ -128,8 +141,8 @@ ingredients:
     value: '1.26'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:thr-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000310
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16857
     label: L-Threonine
 - preferred_term: L-Phenylalanine
   term:
@@ -139,8 +152,8 @@ ingredients:
     value: '0.908'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:phe-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000312
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17295
     label: L-Phenylalanine
 - preferred_term: L-Leucine
   term:
@@ -150,8 +163,8 @@ ingredients:
     value: '1.14'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:leu-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000278
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15603
     label: L-Leucine
 - preferred_term: L-Cysteine
   term:
@@ -161,8 +174,8 @@ ingredients:
     value: '0.66'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cys-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000923
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17561
     label: L-Cysteine
 - preferred_term: Biotin
   term:
@@ -172,8 +185,8 @@ ingredients:
     value: '0.000409'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Thiamine
   term:
@@ -191,6 +204,9 @@ ingredients:
     value: '0.0162'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:nac'
+  term:
+    id: CHEBI:15940
+    label: ''
 - preferred_term: Pantothenate
   term:
     id: CHEBI:16454
@@ -199,8 +215,8 @@ ingredients:
     value: '0.0074'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pnto-R'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000356
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16454
     label: Pantothenate
 preparation_steps:
 - step_number: 1
@@ -239,6 +255,17 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "AAM-" to "aam" for consistent matching
+- timestamp: '2026-06-05T07:40:46.514789+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 15 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:21.314490+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 71c3d2489b02c6aa1ed9ed038d33fa70394e71dfaae4a50aecbbf2b70222793e
+  source: aam.yaml
 media_term:
   preferred_term: MediaDB Medium 292
   term:
@@ -251,6 +278,6 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
-merge_fingerprint: 8902922e45ad9f0797fe9737520d3917a4ccbf2f6abca429ceb38d582ed84ccf
+merge_fingerprint: 71c3d2489b02c6aa1ed9ed038d33fa70394e71dfaae4a50aecbbf2b70222793e
 merged_from:
 - aam

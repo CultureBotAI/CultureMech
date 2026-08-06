@@ -3,6 +3,7 @@ name: mrs_broth_with_0_05_w_v_cysteine_hydrochloride
 original_name: MRS broth with 0.05% (w/v) cysteine hydrochloride
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Cysteine hydrochloride
@@ -13,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:91248
     label: Cysteine hydrochloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
     label: Cysteine hydrochloride
 - preferred_term: MRS broth (Oxoid)
   concentration:
@@ -29,8 +30,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Magnesium sulphate 7H2O
   concentration:
@@ -52,9 +53,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: Dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Manganese sulphate 4H2O
   concentration:
     value: '0.05'
@@ -90,9 +91,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: '`Lab-Lemco’ powder'
   concentration:
     value: '8'
@@ -132,6 +133,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MRS broth with 0.05% (w/v) cysteine hydrochloride"
     to "mrs_broth_with_0_05_w_v_cysteine_hydrochloride" for consistent matching
+- timestamp: '2026-06-05T07:41:38.454753+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:50.461508+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint fb90634a704abf7575055502d31b6d301df379bda1f8dd1f56b8fda3c748d302
+  source: mrs_broth_with_0_05_w_v_cysteine_hydrochloride.yaml
 merge_fingerprint: fb90634a704abf7575055502d31b6d301df379bda1f8dd1f56b8fda3c748d302
 merged_from:
 - mrs_broth_with_0_05_w_v_cysteine_hydrochloride

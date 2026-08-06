@@ -3,6 +3,7 @@ name: thiomicrospira_sp_medium
 original_name: THIOMICROSPIRA SP. MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 8.0
 media_term:
@@ -19,18 +20,18 @@ ingredients:
   concentration:
     value: '17.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '0.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -39,8 +40,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Na2S2O3 x 5 H2O
   term:
@@ -49,18 +50,18 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000492
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32150
     label: Na2S2O3 x 5 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.14'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NaHCO3
   term:
@@ -69,8 +70,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: Na2-EDTA
   term:
@@ -79,8 +80,8 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
     label: Na2-EDTA
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -89,8 +90,8 @@ ingredients:
   concentration:
     value: '11'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -99,8 +100,8 @@ ingredients:
   concentration:
     value: '7.34'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -109,8 +110,8 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -119,13 +120,16 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: (NH4)6Mo7O24 x 4 H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
+  term:
+    id: CHEBI:91249
+    label: ammonium molybdate
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -133,8 +137,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
@@ -143,8 +147,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
     label: CuSO4 x 5 H2O
 - preferred_term: NaOH
   term:
@@ -153,8 +157,8 @@ ingredients:
   concentration:
     value: '11'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
     label: NaOH
 - preferred_term: Vitamin B12
   term:
@@ -163,8 +167,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 - preferred_term: p-Aminobenzoic acid
   term:
@@ -173,8 +177,8 @@ ingredients:
   concentration:
     value: '0.08'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
     label: p-Aminobenzoic acid
 - preferred_term: D-(+)-biotin
   term:
@@ -183,8 +187,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: D-(+)-biotin
 - preferred_term: Nicotinic acid
   term:
@@ -193,8 +197,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
     label: Nicotinic acid
 - preferred_term: Calcium pantothenate
   term:
@@ -203,8 +207,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium pantothenate
 - preferred_term: Pyridoxine hydrochloride
   term:
@@ -213,8 +217,8 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001016
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
     label: Pyridoxine hydrochloride
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
@@ -223,8 +227,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000160
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132751
     label: Thiamine-HCl x 2 H2O
 preparation_steps:
 - step_number: 1
@@ -260,6 +264,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "THIOMICROSPIRA SP. MEDIUM" to "thiomicrospira_sp_medium"
     for consistent matching
-merge_fingerprint: 9933ecaf52d4b96fde50a8b630a077c40f877ee2a5eaef37dfb932a2b9d589b2
+- timestamp: '2026-06-05T07:41:51.574394+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 21 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:13.551998+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:59.393200+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 0838c2747130c5e9a0257d207d670fa149d211fa2e8aaa1c95e4191f8691742c
+  source: thiomicrospira_sp_medium.yaml
+merge_fingerprint: 0838c2747130c5e9a0257d207d670fa149d211fa2e8aaa1c95e4191f8691742c
 merged_from:
 - thiomicrospira_sp_medium

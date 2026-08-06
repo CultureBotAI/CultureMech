@@ -3,6 +3,7 @@ name: lb_luria_bertani_broth_with_1_mm_dtt
 original_name: LB (Luria-Bertani) Broth With 1 mM DTT
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: NaCl
   concentration:
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '5'
@@ -66,9 +67,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:21:00.859540'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: 1,4--dithiothreitol (DTT)'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:12.508875Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -82,6 +83,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "LB (Luria-Bertani) Broth With 1 mM DTT" to "lb_luria_bertani_broth_with_1_mm_dtt"
     for consistent matching
+- timestamp: '2026-05-16T09:03:21.358060+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:44.986345+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:19.782006+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint f24f8fdcc4c5fe7a10e320657b80ae94c101788e63e5e0602c3acd16d1c69f74
+  source: TOGO_M848_LB_Luria-Bertani_Broth_With_1_mM_DTT.yaml
 merge_fingerprint: f24f8fdcc4c5fe7a10e320657b80ae94c101788e63e5e0602c3acd16d1c69f74
 merged_from:
 - TOGO_M848_LB_Luria-Bertani_Broth_With_1_mM_DTT

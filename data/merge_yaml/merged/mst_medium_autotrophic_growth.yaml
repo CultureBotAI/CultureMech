@@ -3,8 +3,11 @@ name: mst_medium_autotrophic_growth
 original_name: MST-MEDIUM, AUTOTROPHIC GROWTH
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
-ph_range: 7.5-8.0
+ph_range:
+  min: 7.5
+  max: 8.0
 media_term:
   preferred_term: KOMODO Medium 1416
   term:
@@ -20,18 +23,18 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000492
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32150
     label: Na2S2O3 x 5 H2O
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -40,28 +43,28 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: HCl
   term:
@@ -70,8 +73,8 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000150
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
     label: HCl
 - preferred_term: FeCl2 x 4 H2O
   term:
@@ -80,8 +83,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000329
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86249
     label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
@@ -90,8 +93,8 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
     label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -100,18 +103,18 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.006'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -120,8 +123,8 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
@@ -130,8 +133,8 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
     label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -140,8 +143,8 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -150,8 +153,8 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 applications:
 - Microbial cultivation
@@ -177,11 +180,50 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MST-MEDIUM, AUTOTROPHIC GROWTH" to "mst_medium_autotrophic_growth"
     for consistent matching
-- timestamp: '2026-04-17T06:29:18.918733+00:00'
+- timestamp: '2026-05-20T06:00:50.326211+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.5-8.0'' -> {''min'': 7.5, ''max'': 8.0}'
+- timestamp: '2026-06-05T07:40:21.144749+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 14 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:44.210832+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:43.567964+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_1416_MST-MEDIUM_AUTOTROPHIC_GROWTH, medium_1416_modified_for_dsm_25733,
     mst_medium_autotrophic_growth'
+- timestamp: '2026-08-06T03:04:43.568010+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 9335b61516f9977fa37e8045205160b5e0c3f6811c0c923be5b3a2cbdb72cdb1
+  source: KOMODO_1416_MST-MEDIUM_AUTOTROPHIC_GROWTH.yaml, medium_1416_modified_for_dsm_25733.yaml,
+    mst_medium_autotrophic_growth.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_1416_modified_for_dsm_25733.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004142
+  name: medium_1416_modified_for_dsm_25733
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/mst_medium_autotrophic_growth.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000878
+  name: mst_medium_autotrophic_growth
+  notes: KOMODO record explicitly cites DSMZ Medium 1416; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 1416; local ingredient
+  and concentration signatures match.
 synonyms:
 - name: medium_1416_modified_for_dsm_25733
   source: KOMODO

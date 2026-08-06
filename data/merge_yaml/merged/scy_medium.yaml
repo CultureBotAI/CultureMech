@@ -3,6 +3,7 @@ name: scy_medium
 original_name: SCY - medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.1
 media_term:
@@ -34,8 +35,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000661
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17992
     label: Sucrose
 - preferred_term: Casitone
   concentration:
@@ -167,8 +168,8 @@ ingredients:
   concentration:
     value: '0.0004'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000160
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132751
     label: Thiamine-HCl x 2 H2O
 - preferred_term: Vitamin B12
   term:
@@ -177,8 +178,8 @@ ingredients:
   concentration:
     value: 1e-05
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 applications:
 - Microbial cultivation
@@ -203,10 +204,33 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "SCY - medium" to "scy_medium" for consistent matching
-- timestamp: '2026-04-17T06:29:21.827589+00:00'
+- timestamp: '2026-06-05T07:40:22.362046+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:47.086209+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_312_SCY_-_medium, scy_medium'
+- timestamp: '2026-08-06T03:04:47.086278+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 9a91b1e0bbe95cc58e3eca40cb3e39ca325515ef1ceb6a5c16837573b10678f7
+  source: KOMODO_312_SCY_-_medium.yaml, scy_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/scy_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001413
+  name: scy_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 312; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 312; local ingredient
+  and concentration signatures match.
 categories:
 - bacterial
 merged_from:

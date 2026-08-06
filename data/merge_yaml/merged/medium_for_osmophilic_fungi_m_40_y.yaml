@@ -3,6 +3,7 @@ name: medium_for_osmophilic_fungi_m_40_y
 original_name: medium FOR OSMOPHILIC FUNGI (M 40 Y)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 187
@@ -19,8 +20,8 @@ ingredients:
   concentration:
     value: '400'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000661
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17992
     label: Sucrose
 - preferred_term: Malt extract
   concentration:
@@ -37,8 +38,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -64,13 +65,44 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "medium FOR OSMOPHILIC FUNGI (M 40 Y)" to "medium_for_osmophilic_fungi_m_40_y"
     for consistent matching
-- timestamp: '2026-04-17T06:29:19.350158+00:00'
+- timestamp: '2026-06-05T07:40:21.432614+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:43.993492+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_187_medium_FOR_OSMOPHILIC_FUNGI_M_40_Y, m40y_agar, m60y_agar,
     medium_for_osmophilic_fungi_m_40_y'
+- timestamp: '2026-08-06T03:04:43.993534+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 4 source recipe(s) on fingerprint 0ec3e5f420027c06ae4e4ca6174ef1322809033a6ee39e4bee721a3c6636e9ac
+  source: KOMODO_187_medium_FOR_OSMOPHILIC_FUNGI_M_40_Y.yaml, m40y_agar.yaml, m60y_agar.yaml,
+    medium_for_osmophilic_fungi_m_40_y.yaml
 ph_value: 5.4
 kg_microbe_match: mediadive.medium:187
+variant_children:
+- path: data/normalized_yaml/bacterial/m40y_agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002699
+  name: m40y_agar
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/medium_for_osmophilic_fungi_m_40_y.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001279
+  name: medium_for_osmophilic_fungi_m_40_y
+  notes: KOMODO record explicitly cites DSMZ Medium 187; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 187; local ingredient
+  and concentration signatures match.
 synonyms:
 - name: m40y_agar
   source: MediaDive

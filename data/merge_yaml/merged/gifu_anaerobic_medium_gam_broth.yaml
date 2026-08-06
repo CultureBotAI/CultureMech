@@ -3,6 +3,7 @@ name: gifu_anaerobic_medium_gam_broth
 original_name: Gifu anaerobic medium (GAM) broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: GAM broth (Nissui)
   concentration:
@@ -52,6 +53,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Gifu anaerobic medium (GAM) broth" to "gifu_anaerobic_medium_gam_broth"
     for consistent matching
+- timestamp: '2026-06-05T07:41:06.357018+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:36.204620+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 3eea33ac0a97d06e1f66aa91dde4b6483dddfa753da4d3d06f7dba684fa02231
+  source: gifu_anaerobic_medium_gam_broth.yaml
 merge_fingerprint: 3eea33ac0a97d06e1f66aa91dde4b6483dddfa753da4d3d06f7dba684fa02231
 merged_from:
 - gifu_anaerobic_medium_gam_broth

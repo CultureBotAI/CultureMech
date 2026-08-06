@@ -1,0 +1,354 @@
+id: CultureMech:007353
+name: defined_freshwater_medium_cocl2
+original_name: '''Defined freshwater medium (CoCl2'
+category: bacterial
+medium_type: DEFINED
+composition_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '0.687'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
+- preferred_term: Pyridoxine HCl
+  concentration:
+    value: '0.0004863'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine HCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
+    label: Pyridoxine HCl
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.0001329'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ribflv'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
+    label: Riboflavin
+- preferred_term: Acetate
+  term:
+    id: CHEBI:30089
+    label: Acetate
+  concentration:
+    value: '113.2'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ac'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30089
+    label: Acetate
+- preferred_term: Nicotinate
+  concentration:
+    value: '0.0004061'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:nac'
+  term:
+    id: CHEBI:15940
+    label: ''
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '7.378e-07'
+    unit: MILLIMOLAR
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
+    label: Vitamin B12
+- preferred_term: Folate
+  concentration:
+    value: '4.531e-05'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:fol'
+  term:
+    id: CHEBI:27470
+    label: ''
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '8.186e-05'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:btn'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
+    label: Biotin
+- preferred_term: Lipoate
+  concentration:
+    value: '0.0002423'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:lipoate'
+  term:
+    id: CHEBI:16494
+    label: ''
+- preferred_term: 4-Aminobenzoate
+  term:
+    id: CHEBI:17836
+    label: 4-aminobenzoate
+  concentration:
+    value: '0.0003646'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:4abz'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17836
+    label: 4-aminobenzoate
+- preferred_term: '''Fe(III'
+  concentration:
+    value: '20.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:fe3dcit'
+- preferred_term: Ferric oxide
+  concentration:
+    value: '100.0'
+    unit: MILLIMOLAR
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.0001482'
+    unit: MILLIMOLAR
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+- preferred_term: Ammonium chloride
+  term:
+    id: CHEBI:31206
+    label: Ammonium chloride
+  concentration:
+    value: '28.04'
+    unit: MILLIMOLAR
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: Ammonium chloride
+- preferred_term: Manganese sulfate
+  term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
+  concentration:
+    value: '0.02673'
+    unit: MILLIMOLAR
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
+- preferred_term: Zinc sulfate
+  term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
+  concentration:
+    value: '0.006194'
+    unit: MILLIMOLAR
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.0001049'
+    unit: MILLIMOLAR
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+- preferred_term: Nickel chloride
+  concentration:
+    value: '0.00101'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:34887
+    label: nickel dichloride
+- preferred_term: Aluminum potassium sulfate
+  concentration:
+    value: '0.0003873'
+    unit: MILLIMOLAR
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86463
+    label: Aluminum potassium sulfate
+  term:
+    id: CHEBI:86463
+    label: ''
+- preferred_term: Sodium molybdate
+  concentration:
+    value: '0.001627'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:75215
+    label: ''
+- preferred_term: Sodium dihydrogen phosphate
+  concentration:
+    value: '4.348'
+    unit: MILLIMOLAR
+  mediaingredientmech_chebi_term:
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
+  term:
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+  concentration:
+    value: '0.1711'
+    unit: MILLIMOLAR
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+- preferred_term: Cobalt chloride
+  concentration:
+    value: '0.007702'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
+- preferred_term: Boric acid
+  term:
+    id: CHEBI:33118
+    label: Boric acid
+  concentration:
+    value: '0.001617'
+    unit: MILLIMOLAR
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: Boric acid
+- preferred_term: Potassium chloride
+  concentration:
+    value: '1.341'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '0.07848'
+    unit: MILLIMOLAR
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+- preferred_term: Sodium bicarbonate
+  concentration:
+    value: '29.76'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32139
+    label: ''
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: Sodium bicarbonate
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '0.1217'
+    unit: MILLIMOLAR
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+- preferred_term: Ferrous sulfate
+  concentration:
+    value: '0.003597'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
+- preferred_term: Cupric sulfate
+  concentration:
+    value: '0.0004005'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:46.761220Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 449, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:32.346122Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-06T05:10:42.215525Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:48.194129Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007353'
+- timestamp: '2026-03-17T06:30:34.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:06.524214+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "'Defined freshwater medium (CoCl2" to "defined_freshwater_medium_cocl2"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:29.099122+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 19 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:29.374315+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (shared-id regrounding audit, G21/G22/G24)
+  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more
+    ingredient groundings on this record that had been collapsed onto a chemically
+    non-specific or shared CHEBI id were re-grounded to the correct chemically-specific
+    term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
+- timestamp: '2026-06-09T01:42:16.202168+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (shared-id regrounding audit, G21/G22/G24)
+  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more
+    ingredient groundings on this record that had been collapsed onto a chemically
+    non-specific or shared CHEBI id were re-grounded to the correct chemically-specific
+    term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
+- timestamp: '2026-08-06T03:05:04.140338+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b28289a23660906b5f38fd4204b8fabad53fbd8bf34a1e48ea1556a4bf9c97c8
+  source: MEDIADB_449_Defined_freshwater_medium_CoCl2.yaml
+media_term:
+  preferred_term: MediaDB Medium 449
+  term:
+    id: MEDIADB:449
+    label: '''Defined freshwater medium (CoCl2'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: b28289a23660906b5f38fd4204b8fabad53fbd8bf34a1e48ea1556a4bf9c97c8
+merged_from:
+- MEDIADB_449_Defined_freshwater_medium_CoCl2

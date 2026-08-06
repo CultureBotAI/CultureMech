@@ -1,0 +1,91 @@
+id: CultureMech:001298
+name: reactivation_with_liquid_medium_1
+original_name: REACTIVATION WITH LIQUID MEDIUM 1
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 1a
+  term:
+    id: mediadive.medium:1a
+    label: REACTIVATION WITH LIQUID MEDIUM 1
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1a.pdf'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0. For Bacillus strains the addition of 10.0 mg MnSO4
+    x H2O is recommended for sporulation.
+- step_number: 2
+  action: MIX
+  description: Rehydrate and grow lyophilized cells from the ampoule in 5 ml liquid
+    broth 1. Subsequent subculturing may be carried out in liquid medium or on agar
+    plates.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:09.956024Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1a'
+- timestamp: '2026-03-13T06:19:02.987652Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001298'
+- timestamp: '2026-03-17T06:29:54.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:14.860098+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "REACTIVATION WITH LIQUID MEDIUM 1" to "reactivation_with_liquid_medium_1"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:44.068265+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:51.656707+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: nutrient_agar, reactivation_with_liquid_medium_1'
+- timestamp: '2026-08-06T03:05:51.656748+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 7d42c4b3d2a02cfea7071bab1c6d93b36cec184b9018ec00a03737e6e8067149
+  source: nutrient_agar.yaml, reactivation_with_liquid_medium_1.yaml
+kg_microbe_match: mediadive.medium:12
+synonyms:
+- name: nutrient_agar
+  source: MediaDive
+  source_id: mediadive.medium:1
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- nutrient_agar
+- reactivation_with_liquid_medium_1
+merge_fingerprint: 7d42c4b3d2a02cfea7071bab1c6d93b36cec184b9018ec00a03737e6e8067149

@@ -1,0 +1,89 @@
+id: CultureMech:010551
+name: tryptone_yeast_extract_isp_1_agar
+original_name: TRYPTONE-YEAST EXTRACT (ISP-1) AGAR
+category: fungal
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+ph_value: 7.1
+media_term:
+  preferred_term: JCM Medium J821
+  term:
+    id: mediadive.medium:J821
+    label: TRYPTONE-YEAST EXTRACT (ISP-1) AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=821'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Tryptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0 - 7.2.
+- step_number: 2
+  action: ADD_AGAR
+  description: 'Comment: The premixed powder of Tryptone-yeast extract broth is available
+    from Becton Dickinson & Co. as ISP Medium 1. Add agar to the medium before autoclaving.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.697343Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J821'
+- timestamp: '2026-03-13T06:20:14.327996Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010551'
+- timestamp: '2026-03-17T17:06:08.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:33.365584+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "TRYPTONE-YEAST EXTRACT (ISP-1) AGAR" to "tryptone_yeast_extract_isp_1_agar"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:57.180666+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:38.811373+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: isp_1_medium, tryptone_yeast_extract_isp_1_agar'
+- timestamp: '2026-08-06T03:05:38.811418+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 985afe4a31305a2087a91ef9ede17739a2e74d2d7dbc9b9385d9ba2de705f7bb
+  source: isp_1_medium.yaml, tryptone_yeast_extract_isp_1_agar.yaml
+kg_microbe_match: mediadive.medium:12
+synonyms:
+- name: isp_1_medium
+  source: MediaDive
+  source_id: mediadive.medium:1764
+  original_category: bacterial
+categories:
+- bacterial
+- fungal
+merged_from:
+- isp_1_medium
+- tryptone_yeast_extract_isp_1_agar
+merge_fingerprint: 985afe4a31305a2087a91ef9ede17739a2e74d2d7dbc9b9385d9ba2de705f7bb

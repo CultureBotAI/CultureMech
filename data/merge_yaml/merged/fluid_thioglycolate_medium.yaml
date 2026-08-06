@@ -3,6 +3,7 @@ name: fluid_thioglycolate_medium
 original_name: FLUID THIOGLYCOLATE medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.1
 notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 153 | DSMZ Medium: 153
@@ -30,8 +31,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001062
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16283
     label: L-Cystine
 - preferred_term: Glucose
   term:
@@ -40,8 +41,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Yeast extract
   concentration:
@@ -54,23 +55,26 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Na-thioglycolate
   term:
     id: CHEBI:86481
-    label: Na-thioglycolate
+    label: sodium thioglycolate
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000569
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86481
     label: Na-thioglycolate
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.0005'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -79,8 +83,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: Optional ingredient (for solid medium)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Na2CO3
   term:
@@ -90,9 +94,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
-    label: Na2CO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
 applications:
 - Microbial cultivation
 curation_history:
@@ -113,9 +117,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:004176'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:32.543737'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Na2CO3'
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:29:43.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -125,6 +129,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "FLUID THIOGLYCOLATE medium" to "fluid_thioglycolate_medium"
     for consistent matching
-merge_fingerprint: e65541979db08318f7f0bd87861f0a9e4acf381366b2dd6b056caf58dae01c74
+- timestamp: '2026-05-16T09:03:32.060912+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:00.472588+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:56.898276+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:34.442121+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 79d384a6c590ac6339d64a4edc5ea9d85dbb5cd467818132c407cfccbc895859
+  source: fluid_thioglycolate_medium.yaml
+merge_fingerprint: 79d384a6c590ac6339d64a4edc5ea9d85dbb5cd467818132c407cfccbc895859
 merged_from:
 - fluid_thioglycolate_medium

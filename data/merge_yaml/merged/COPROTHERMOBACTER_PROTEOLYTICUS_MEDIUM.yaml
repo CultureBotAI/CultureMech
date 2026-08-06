@@ -3,6 +3,7 @@ name: coprothermobacter_proteolyticus_medium
 original_name: COPROTHERMOBACTER PROTEOLYTICUS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:
@@ -15,22 +16,22 @@ ingredients:
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.39604'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '0.990099'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: Yeast extract
   concentration:
@@ -53,8 +54,8 @@ ingredients:
   concentration:
     value: '0.990099'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -64,22 +65,25 @@ ingredients:
     value: '0.49604000000000004'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.39604, 0.1]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.00049505'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
   concentration:
     value: '1.48515'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 - preferred_term: Na2S x 9 H2O
   term:
@@ -88,8 +92,8 @@ ingredients:
   concentration:
     value: '0.29703'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 - preferred_term: Nitrilotriacetic acid
   term:
@@ -98,8 +102,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
     label: Nitrilotriacetic acid
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -108,8 +112,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: MnSO4 x H2O
   term:
@@ -118,8 +122,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
     label: MnSO4 x H2O
 - preferred_term: NaCl
   term:
@@ -128,8 +132,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -138,8 +142,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: CoSO4 x 7 H2O
   term:
@@ -148,8 +152,8 @@ ingredients:
   concentration:
     value: '0.18'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000158
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53470
     label: CoSO4 x 7 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -158,8 +162,8 @@ ingredients:
   concentration:
     value: '0.18'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
@@ -168,8 +172,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
     label: CuSO4 x 5 H2O
 - preferred_term: AlK(SO4)2 x 12 H2O
   term:
@@ -178,18 +182,18 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000293
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86465
     label: AlK(SO4)2 x 12 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -198,8 +202,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -208,8 +212,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: Na2SeO3 x 5 H2O
   term:
@@ -218,8 +222,8 @@ ingredients:
   concentration:
     value: '0.0003'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000144
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131361
     label: Na2SeO3 x 5 H2O
 - preferred_term: Na2WO4 x 2 H2O
   term:
@@ -228,8 +232,8 @@ ingredients:
   concentration:
     value: '0.0004'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000309
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63939
     label: Na2WO4 x 2 H2O
 preparation_steps:
 - step_number: 1
@@ -273,10 +277,32 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "COPROTHERMOBACTER PROTEOLYTICUS MEDIUM" to "coprothermobacter_proteolyticus_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:59.301415+00:00'
+- timestamp: '2026-06-05T07:40:54.853444+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 20 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:54.993371+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:29.182650+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: coprothermobacter_proteolyticus_medium, thermobacteroides_proteolyticus_medium'
+- timestamp: '2026-08-06T03:05:29.182693+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 0c32a2d56fd08c200b94c5599ed4e8299be76f9ebf14b66760aaacbed39d47a3
+  source: coprothermobacter_proteolyticus_medium.yaml, thermobacteroides_proteolyticus_medium.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/thermobacteroides_proteolyticus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005603
+  name: thermobacteroides_proteolyticus_medium
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 synonyms:
 - name: thermobacteroides_proteolyticus_medium
   source: KOMODO
@@ -287,4 +313,4 @@ categories:
 merged_from:
 - coprothermobacter_proteolyticus_medium
 - thermobacteroides_proteolyticus_medium
-merge_fingerprint: b7d889851cfee9ab8af81dda9cc67a2e06baefe70320448c5e2473c6258501f0
+merge_fingerprint: 0c32a2d56fd08c200b94c5599ed4e8299be76f9ebf14b66760aaacbed39d47a3

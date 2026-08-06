@@ -1,16 +1,18 @@
-id: CultureMech:002181
+id: CultureMech:006980
 name: persephonella_medium
 original_name: PERSEPHONELLA MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 996 | DSMZ Medium: 996 (mediadive.medium:996)
+  | Aerobic: No'
 media_term:
-  preferred_term: DSMZ Medium 996
+  preferred_term: KOMODO Medium 996
   term:
-    id: mediadive.medium:996
+    id: komodo.medium:996
     label: PERSEPHONELLA MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium996.pdf'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -19,8 +21,8 @@ ingredients:
   concentration:
     value: '29'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: NaOH
   term:
@@ -29,8 +31,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
     label: NaOH
 - preferred_term: KCl
   term:
@@ -39,8 +41,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -49,8 +51,8 @@ ingredients:
   concentration:
     value: '1.36'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -59,8 +61,8 @@ ingredients:
   concentration:
     value: '7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Na2S2O3 x 5 H2O
   term:
@@ -69,8 +71,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000492
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32150
     label: Na2S2O3 x 5 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -79,28 +81,28 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: K2HPO4 x 3 H2O
   term:
     id: CHEBI:131527
-    label: K2HPO4 x 3 H2O
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4 x 3 H2O
 - preferred_term: Na-EDTA x 2 H2O
   term:
@@ -109,8 +111,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
     label: Na-EDTA x 2 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -119,8 +121,8 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -129,8 +131,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -139,8 +141,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: ZnCl2
   term:
@@ -149,8 +151,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
     label: ZnCl2
 - preferred_term: AlCl3 x 6 H2O
   term:
@@ -159,8 +161,8 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000728
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30115
     label: AlCl3 x 6 H2O
 - preferred_term: Na2O4W x 2 H2O
   concentration:
@@ -173,8 +175,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000579
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53472
     label: CuCl
 - preferred_term: NiSO4 x 6 H2O
   term:
@@ -183,8 +185,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000599
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53001
     label: NiSO4 x 6 H2O
 - preferred_term: H2SeO3
   term:
@@ -193,18 +195,18 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000434
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26642
     label: H2SeO3
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -213,48 +215,71 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
-preparation_steps:
-- step_number: 1
-  action: POUR_PLATES
-  description: Medium is prepared with anoxic water (under a CO2-atmosphere) and the
-    pH is adjusted to 6 with H2SO4 prior to autoclaving. Medium is dispensed under
-    a CO2-atmosphere into Bellco tubes (5 ml medium per 27 ml tube) and stoppered
-    with butyl stoppers, capped and crimped. After autoclaving a white precipitate
-    might be present, this precipitate can be redissolved by shaking the medium. It
-    can take up to an hour before all the precipitate is dissolved.
-- step_number: 2
-  action: HEAT
-  description: 3.8% O2 is added to each tube (1 ml of O2 per 27 ml tube) and after
-    inoculation the tubes were pressurized with H2 to 20 psi (or 138 kPa). Inoculum
-    should be in mid-logarithmic phase (16-10 h after inoculation). Incubation is
-    carried out without shaking at 70°C and both strains (DSM 14351 and DSM 14350)
-    grow within 24 h.
-- step_number: 3
-  action: ADJUST_PH
-  description: Adjust pH of trace elements to 3.
+- preferred_term: H2SO4
+  term:
+    id: CHEBI:26836
+    label: sulfuric acid
+  notes: pH adjustment (extracted from notes)
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26836
+    label: sulfuric acid
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:13.026238Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 996'
-- timestamp: '2026-03-13T06:19:11.015442Z'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 996'
+- timestamp: '2026-02-03T11:19:09.025850'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 996
+- timestamp: '2026-03-13T03:09:15.809604Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Added pH buffer: H2SO4'
+- timestamp: '2026-03-13T06:19:45.398687Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002181'
-- timestamp: '2026-03-17T06:30:54.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:006980'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: H2SO4'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:30:23.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:23.756742+00:00'
+- timestamp: '2026-03-17T19:46:03.462858+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "PERSEPHONELLA MEDIUM" to "persephonella_medium" for
     consistent matching
-merge_fingerprint: fd71a5651967638f633491795b34f00a056721fbdc3ee87725be39f57469aad0
+- timestamp: '2026-05-16T09:03:05.904482+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:28.496447+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 21 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:46.637897+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:03.422086+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 0979ecf0df553756b85abc4bc87f27a6d23092996d8b2acfbe80961785204879
+  source: KOMODO_996_PERSEPHONELLA_MEDIUM.yaml
+merge_fingerprint: 0979ecf0df553756b85abc4bc87f27a6d23092996d8b2acfbe80961785204879
 merged_from:
-- persephonella_medium
+- KOMODO_996_PERSEPHONELLA_MEDIUM

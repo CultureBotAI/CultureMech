@@ -3,6 +3,7 @@ name: thermobacteroides_proteolyticus_medium
 original_name: Thermobacteroides Proteolyticus Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +32,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: NH4Cl
   concentration:
     value: '1'
@@ -43,9 +44,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: K2HPO4
   concentration:
     value: '0.4'
@@ -55,9 +56,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -67,8 +68,8 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: MgCl2 x 6 H2O
   concentration:
@@ -79,9 +80,9 @@ ingredients:
   term:
     id: CHEBI:6636
     label: magnesium dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000663
-    label: MgCl2 x 6 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
 - preferred_term: Na2S x 9 H2O
   concentration:
     value: '0.3'
@@ -91,9 +92,9 @@ ingredients:
   term:
     id: CHEBI:76209
     label: sodium sulfide nonahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
-    label: Na2S x 9 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
 - preferred_term: NaHCO3
   concentration:
     value: '5'
@@ -103,9 +104,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: Trypticase
   concentration:
     value: '2'
@@ -140,11 +141,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4 x 7 H2O
 - preferred_term: NaCl
   concentration:
     value: '1'
@@ -154,9 +155,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '0.01'
@@ -166,9 +167,9 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000183
-    label: Na2MoO4 x 2 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
 - preferred_term: H3BO3
   concentration:
     value: '0.01'
@@ -178,9 +179,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: FeSO4 x 7 H2O
   concentration:
     value: '0.1'
@@ -190,8 +191,8 @@ ingredients:
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: NiCl2 x 6 H2O
   concentration:
@@ -202,9 +203,9 @@ ingredients:
   term:
     id: CHEBI:34887
     label: nickel dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
-    label: NiCl2 x 6 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
 - preferred_term: ZnSO4 x 7 H2O
   concentration:
     value: '0.18'
@@ -214,9 +215,9 @@ ingredients:
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
-    label: ZnSO4 x 7 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
 - preferred_term: CuSO4 x 5 H2O
   concentration:
     value: '0.01'
@@ -226,9 +227,9 @@ ingredients:
   term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
-    label: CuSO4 x 5 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
 - preferred_term: Na2SeO3 x 5 H2O
   concentration:
     value: '0.3'
@@ -238,9 +239,9 @@ ingredients:
   term:
     id: CHEBI:48843
     label: disodium selenite
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000315
-    label: Na2SeO3 x 5 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:48843
+    label: disodium selenite
 - preferred_term: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
@@ -250,9 +251,9 @@ ingredients:
   term:
     id: CHEBI:53470
     label: cobalt(2+) sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000158
-    label: CoSO4 x 7 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53470
+    label: cobalt(2+) sulfate
 - preferred_term: KAl(SO4)2 x 12 H2O
   concentration:
     value: '0.02'
@@ -262,9 +263,9 @@ ingredients:
   term:
     id: CHEBI:86465
     label: potassium aluminium sulfate dodecahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000293
-    label: KAl(SO4)2 x 12 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86465
+    label: potassium aluminium sulfate dodecahydrate
 - preferred_term: Nitrilotriacetic acid
   concentration:
     value: '1.5'
@@ -274,9 +275,9 @@ ingredients:
   term:
     id: CHEBI:44557
     label: nitrilotriacetic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
-    label: Nitrilotriacetic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
 - preferred_term: Na2WO4 x 2 H2O
   concentration:
     value: '0.4'
@@ -286,9 +287,9 @@ ingredients:
   term:
     id: CHEBI:63939
     label: sodium tungstate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000309
-    label: Na2WO4 x 2 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63939
+    label: sodium tungstate
 - preferred_term: MnSO4 x H2O
   concentration:
     value: '0.5'
@@ -296,10 +297,10 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:86360
-    label: manganese(II) sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
     label: MnSO4 x H2O
 media_term:
   preferred_term: TOGO Medium M2709
@@ -321,11 +322,11 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:55.769782'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     KOH solution'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:04:44.973027+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -339,9 +340,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009260'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:57.759528'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:22.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -351,6 +352,38 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Thermobacteroides Proteolyticus Medium" to "thermobacteroides_proteolyticus_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:03:15.312377+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:38.595595+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 22 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:33.253561+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (shared-id regrounding audit, G21/G22/G24)
+  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more
+    ingredient groundings on this record that had been collapsed onto a chemically
+    non-specific or shared CHEBI id were re-grounded to the correct chemically-specific
+    term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
+- timestamp: '2026-06-10T06:57:28.147062+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:46:49.675686+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:13.134880+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 741185765eb6383f0dd636995950176d351910d1c5a82edccf815e89a57c0538
+  source: TOGO_M2709_Thermobacteroides_Proteolyticus_Medium.yaml
 solutions:
 - preferred_term: Trace element solution
   term:
@@ -368,6 +401,6 @@ solutions:
     unit: VARIABLE
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
   name: Unknown solution
-merge_fingerprint: 16219eabccf298d0a22b70a0ea97a1bc3b23697493c6aaf170711ecc7f1341fa
+merge_fingerprint: 741185765eb6383f0dd636995950176d351910d1c5a82edccf815e89a57c0538
 merged_from:
 - TOGO_M2709_Thermobacteroides_Proteolyticus_Medium

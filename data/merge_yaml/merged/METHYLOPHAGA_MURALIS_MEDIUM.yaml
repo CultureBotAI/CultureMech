@@ -3,6 +3,7 @@ name: methylophaga_muralis_medium
 original_name: METHYLOPHAGA MURALIS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 9.0
 media_term:
@@ -15,17 +16,17 @@ ingredients:
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '1.1236'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: KNO3
   term:
     id: CHEBI:63043
-    label: KNO3
+    label: potassium nitrate
   concentration:
     value: '1.1236'
     unit: G_PER_L
@@ -39,8 +40,8 @@ ingredients:
   concentration:
     value: '0.247191'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: NaCl
   term:
@@ -49,8 +50,8 @@ ingredients:
   concentration:
     value: '33.7079'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 preparation_steps:
 - step_number: 1
@@ -84,6 +85,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "METHYLOPHAGA MURALIS MEDIUM" to "methylophaga_muralis_medium"
     for consistent matching
-merge_fingerprint: 11087bc79b04745532893f2a9303d690febe8e3a4c3f9cbeabb28f7c9d9418d7
+- timestamp: '2026-06-05T07:41:33.329668+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:37:35.564265+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:47:07.638027+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:45.049976+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d599aaf507510e99f7a302eb48e80a32f5a32b4020a9e58b7ccceb490ba6582d
+  source: methylophaga_muralis_medium.yaml
+merge_fingerprint: d599aaf507510e99f7a302eb48e80a32f5a32b4020a9e58b7ccceb490ba6582d
 merged_from:
 - methylophaga_muralis_medium

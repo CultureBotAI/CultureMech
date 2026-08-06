@@ -1,6 +1,7 @@
 id: CultureMech:015482
 name: ABB
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Peptic digest of animal tissue
@@ -118,7 +119,7 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 367-51-1'
 description: Anaerobic basal broth
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: ABB
@@ -132,6 +133,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015482'
+- timestamp: '2026-05-16T09:04:40.015659+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:04.447439+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint ce1f621d542b10a8527a9823c6597895e253bf398869b513995a14d8aab9b53b
+  source: abb.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: ce1f621d542b10a8527a9823c6597895e253bf398869b513995a14d8aab9b53b

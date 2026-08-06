@@ -1,116 +1,152 @@
-id: CultureMech:003004
+id: CultureMech:010079
 name: pelagicoccus_agar
-original_name: PELAGICOCCUS AGAR
+original_name: Pelagicoccus Agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_value: 7.5
-media_term:
-  preferred_term: JCM Medium J659
-  term:
-    id: mediadive.medium:J659
-    label: PELAGICOCCUS AGAR
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=659'
 ingredients:
-- preferred_term: Marine agar 2216
+- preferred_term: Distilled water
+  concentration:
+    value: '251.0'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
+    Defined component [Merged 2 duplicates: 250.0, 1.0]'
   term:
-    id: CHEBI:2509
-    label: Marine agar 2216
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Marine agar 2216 (BD-Difco)
   concentration:
     value: '55.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Marine agar 2216
-- preferred_term: R2A agar
-  term:
-    id: CHEBI:2509
-    label: R2A agar
+  notes: 'Properties: Undefined component'
+- preferred_term: R2A agar (BD-Difco)
   concentration:
     value: '9.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: R2A agar
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: Artificial seawater (see below)
   concentration:
-    value: '24'
+    value: '750'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+- preferred_term: MgSO4·7H2O
   concentration:
     value: '7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: MgCl2 x 6 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
-    id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: NaCl
   concentration:
-    value: '5.3'
+    value: '24'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: MgCl2 x 6 H2O
-- preferred_term: KCl
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
-    id: CHEBI:32588
-    label: KCl
-  concentration:
-    value: '0.7'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2·2H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 7.5.
-- step_number: 2
-  action: MIX
-  description: 'Comment: For preparation of the liquid medium, use Marine broth 2216
-    (BD-Difco) instead of Marine agar 2216 and R2A broth instead of R2A agar by omitting
-    agar from the R2A agar medium composition (see Medium No. 346).'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: MgCl2·6H2O
+  concentration:
+    value: '5.3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+- preferred_term: KCl
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+media_term:
+  preferred_term: TOGO Medium M675
+  term:
+    id: TOGO:M675
+    label: Pelagicoccus Agar
+notes: 'Source: https://togomedium.org/medium/M675
+
+  Original source: JCM - JCM_M659
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=659'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:17.210089Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J659'
-- timestamp: '2026-03-13T06:19:17.090753Z'
+- timestamp: '2026-01-27T06:35:55.510041Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M675'
+- timestamp: '2026-01-28T19:48:08.059163Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:08:39.902130Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:11.159597Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:003004'
-- timestamp: '2026-03-17T06:30:39.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:010079'
+- timestamp: '2026-03-17T06:29:41.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:30.737568+00:00'
+- timestamp: '2026-03-17T19:46:30.084933+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PELAGICOCCUS AGAR" to "pelagicoccus_agar" for consistent
+  notes: Normalized name from "Pelagicoccus Agar" to "pelagicoccus_agar" for consistent
     matching
-merge_fingerprint: 922e0a8ad4654b60db6fdcbcbd814b3a3dfbe632a104159ca8409922d11fe031
+- timestamp: '2026-06-05T07:40:43.470144+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:32.259429+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-08-06T03:05:18.317383+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint fbdf115e1f7bfbbbcffe70653a0d6b40dfc02445ef1508e58b12252bb260c209
+  source: TOGO_M675_Pelagicoccus_Agar.yaml
+merge_fingerprint: fbdf115e1f7bfbbbcffe70653a0d6b40dfc02445ef1508e58b12252bb260c209
 merged_from:
-- pelagicoccus_agar
+- TOGO_M675_Pelagicoccus_Agar

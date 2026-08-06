@@ -3,6 +3,7 @@ name: marine_cytophaga_agar
 original_name: Marine Cytophaga Agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Yeast extract
@@ -18,9 +19,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
-    label: Sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -66,9 +67,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008089'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:49.295806'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:39.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -78,6 +79,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Marine Cytophaga Agar" to "marine_cytophaga_agar" for
     consistent matching
+- timestamp: '2026-05-16T09:03:40.256294+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:12.899049+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:42.034992+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 507ea86af6cc64d162f785067142beb96983e6046cc02fdd62840aa44bb21672
+  source: marine_cytophaga_agar.yaml
 solutions:
 - preferred_term: Seawater*
   term:

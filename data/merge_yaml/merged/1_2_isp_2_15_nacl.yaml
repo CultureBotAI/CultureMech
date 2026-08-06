@@ -3,6 +3,7 @@ name: 1_2_isp_2_15_nacl
 original_name: 1/2 ISP-2 + 15% NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +32,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Glucose
   concentration:
     value: '2'
@@ -43,9 +44,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Agar
   concentration:
     value: '18'
@@ -54,9 +55,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Malt extract
   concentration:
     value: '5'
@@ -96,10 +97,30 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "1/2 ISP-2 + 15% NaCl" to "1_2_isp_2_15_nacl" for consistent
     matching
-- timestamp: '2026-04-17T06:29:10.428959+00:00'
+- timestamp: '2026-06-05T07:40:15.485870+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:33.694251+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: 1_2_isp_2_10_nacl, 1_2_isp_2_15_nacl'
+- timestamp: '2026-08-06T03:04:33.694281+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 366c08077b98eb773c58910786615ca557be33a4b15dbb05f5f206870ed46dff
+  source: 1_2_isp_2_10_nacl.yaml, 1_2_isp_2_15_nacl.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/1_2_isp_2_10_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:008378
+  name: 1_2_isp_2_10_nacl
+  notes: Reviewed TOGO 1/2 ISP 2 salinity pair; records differ only in NaCl concentration.
+variant_relationship: SALINITY_VARIANT
+variant_modifications:
+- NaCl increased from 100 g/L to 150 g/L while 1/2 ISP 2 ingredients remain unchanged.
 synonyms:
 - name: 1_2_isp_2_10_nacl
   source: TOGO

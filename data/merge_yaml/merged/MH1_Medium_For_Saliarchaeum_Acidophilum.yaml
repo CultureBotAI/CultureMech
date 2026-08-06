@@ -3,6 +3,7 @@ name: mh1_medium_for_saliarchaeum_acidophilum
 original_name: MH1 Medium For Saliarchaeum Acidophilum
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: NaCl
   concentration:
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: KH2PO4
   concentration:
     value: '1'
@@ -37,9 +38,9 @@ ingredients:
     compound'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
@@ -50,9 +51,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '2'
@@ -71,25 +72,28 @@ ingredients:
   term:
     id: CHEBI:32036
     label: potassium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001064
-    label: K2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32036
+    label: potassium sulfate
 - preferred_term: L--Glutamic acid
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Simple component, Defined
     component'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000562
+  term:
+    id: CHEBI:16015
+    label: L-Glutamic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16015
     label: L--Glutamic acid
 - preferred_term: Trisodium citrate・2H2O
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
     label: Trisodium citrate・2H2O
   term:
     id: CHEBI:53258
@@ -112,9 +116,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000213
-    label: KOH
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32035
+    label: potassium hydroxide
 media_term:
   preferred_term: TOGO Medium M807
   term:
@@ -137,9 +141,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:21:00.669928'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: KOH'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:05:10.930488+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -149,9 +153,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010219'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:03.208470'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:55.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -161,11 +165,31 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MH1 Medium For Saliarchaeum Acidophilum" to "mh1_medium_for_saliarchaeum_acidophilum"
     for consistent matching
-- timestamp: '2026-04-17T06:29:51.091329+00:00'
+- timestamp: '2026-05-16T09:03:21.050099+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:44.634992+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:51.703189+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:27.790486+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: TOGO_M807_MH1_Medium_For_Saliarchaeum_Acidophilum, TOGO_M821_MH1_Medium_For_Halarchaeum,
-    TOGO_M989_MH1_Medium_For_Halarchaeum-2'
+  notes: 'Sources: TOGO_M821_MH1_Medium_For_Halarchaeum, TOGO_M989_MH1_Medium_For_Halarchaeum-2,
+    TOGO_M807_MH1_Medium_For_Saliarchaeum_Acidophilum'
+- timestamp: '2026-08-06T03:04:27.790530+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 72af451a9cc8a2e09ed98c221f6e45925153c9849c30da3b7c28df3e34fbf1a5
+  source: TOGO_M821_MH1_Medium_For_Halarchaeum.yaml, TOGO_M989_MH1_Medium_For_Halarchaeum-2.yaml,
+    TOGO_M807_MH1_Medium_For_Saliarchaeum_Acidophilum.yaml
 high_metal: true
 solutions:
 - preferred_term: 0.2% FeSO4・6H2O solution
@@ -187,15 +211,16 @@ synonyms:
 - name: mh1_medium_for_halarchaeum
   source: TOGO
   source_id: TOGO:M821
-  original_category: bacterial
+  original_category: archaea
 - name: mh1_medium_for_halarchaeum_2
   source: TOGO
   source_id: TOGO:M989
-  original_category: bacterial
+  original_category: archaea
 categories:
+- archaea
 - bacterial
 merged_from:
-- TOGO_M807_MH1_Medium_For_Saliarchaeum_Acidophilum
 - TOGO_M821_MH1_Medium_For_Halarchaeum
 - TOGO_M989_MH1_Medium_For_Halarchaeum-2
-merge_fingerprint: f849775449be696cda3ca423cb12d58bc8d5698599b0b9e07b713303c944b1a1
+- TOGO_M807_MH1_Medium_For_Saliarchaeum_Acidophilum
+merge_fingerprint: 72af451a9cc8a2e09ed98c221f6e45925153c9849c30da3b7c28df3e34fbf1a5

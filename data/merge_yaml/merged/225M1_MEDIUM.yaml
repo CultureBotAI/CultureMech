@@ -1,144 +1,136 @@
-id: CultureMech:010371
+id: CultureMech:003254
 name: 225m1_medium
-original_name: 225M1 Medium
+original_name: 225M1 MEDIUM
 category: bacterial
 medium_type: COMPLEX
-physical_state: SOLID_AGAR
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: JCM Medium J905
+  term:
+    id: mediadive.medium:J905
+    label: 225M1 MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=905'
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Casamino acids
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: NaCl
+- preferred_term: Yeast extract
   concentration:
-    value: '20'
+    value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+- preferred_term: Starch
   term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: CaCl2・2H2O
-  concentration:
-    value: '0.13'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86158
-    label: ''
-- preferred_term: MgCl2・6H2O
-  concentration:
-    value: '300'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
-  term:
-    id: CHEBI:86345
-    label: ''
-- preferred_term: Sodium pyruvate
-  concentration:
-    value: '0.13'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
-  term:
-    id: CHEBI:50144
-    label: sodium pyruvate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
-    label: Sodium pyruvate
-- preferred_term: K2SO4
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:32036
-    label: potassium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001064
-    label: K2SO4
-- preferred_term: Soluble starch
+    id: CHEBI:28017
+    label: Starch
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Undefined component'
-- preferred_term: Bacto agar(BD-Difco)
-  concentration:
-    value: '23'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Yeast extract (BD-Difco)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Casamino acids (BD-Difco)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: KOH
-  notes: 'Role: Mineral source; Properties: Defined component, Solution'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
+    label: Starch
+- preferred_term: NaCl
   term:
-    id: CHEBI:32035
-    label: potassium hydroxide
+    id: CHEBI:26710
+    label: NaCl
   concentration:
-    value: variable
-    unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000213
-    label: KOH
-media_term:
-  preferred_term: TOGO Medium M948
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: MgCl2 x 6 H2O
   term:
-    id: TOGO:M948
-    label: 225M1 Medium
-notes: 'Source: https://togomedium.org/medium/M948
-
-  Original source: JCM - JCM_M905-2
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=905'
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '300'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.13'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: K2SO4
+  term:
+    id: CHEBI:32036
+    label: potassium sulfate
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32036
+    label: K2SO4
+- preferred_term: Sodium pyruvate
+  term:
+    id: CHEBI:50144
+    label: Sodium pyruvate
+  concentration:
+    value: '0.13'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
+    label: Sodium pyruvate
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Add components to distilled water and bring volume to 1.0 L Adjust
+    pH to 6.8 with 25% KOH. For preparation of solid medium, add 23.0 g/L Bacto agar
+    (BD-Difco).
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.015825Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M948'
-- timestamp: '2026-01-28T19:48:13.818350Z'
+- timestamp: '2026-01-26T17:53:17.960518Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J905'
+- timestamp: '2026-01-28T19:48:10.730627Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:21:01.405847'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: KOH'
-- timestamp: '2026-03-13T06:20:13.351836Z'
+- timestamp: '2026-03-13T06:19:18.954765Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:010371'
-- timestamp: '2026-03-17T06:29:54.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:003254'
+- timestamp: '2026-03-17T06:29:48.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:32.329981+00:00'
+- timestamp: '2026-03-17T19:45:32.850836+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "225M1 Medium" to "225m1_medium" for consistent matching
-merge_fingerprint: d38016ca6c690784620f1ae5d33604e9c19149d3ecaa96a6796684599f537676
+  notes: Normalized name from "225M1 MEDIUM" to "225m1_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:15.694843+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:27.174952+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:46:42.524315+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:33.940279+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 69d8f8e9e5e34c0548b22575f9a10a4eac37b697d4d0f0a6b7e604eb0439d7eb
+  source: 225m1_medium.yaml
+merge_fingerprint: 69d8f8e9e5e34c0548b22575f9a10a4eac37b697d4d0f0a6b7e604eb0439d7eb
 merged_from:
-- TOGO_M948_225M1_Medium
+- 225m1_medium

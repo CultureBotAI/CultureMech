@@ -1,7 +1,8 @@
 id: CultureMech:000107
 name: nss_low
-category: ALGAE
+category: algae
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater
   algae cultivation. Recipe available in PDF format.
@@ -15,13 +16,13 @@ applications:
 - Microalgae research
 curation_history:
 - curator: ccap-import
-  date: '2026-01-28'
   action: Imported from CCAP Culture Collection
   notes: 'Source ID: NSS_low, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_NSS_low.pdf'
+  timestamp: '2026-01-28T00:00:00+00:00'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:23:39.670470'
   action: Applied schema defaults and normalizations
   notes: Added placeholder ingredients for missing composition
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-02-03T11:26:43.573926'
   curator: quality-tagger-v1.0
   action: Added data quality flag
@@ -39,13 +40,31 @@ curation_history:
   action: EXPANDED_INGREDIENTS
   changes: Replaced placeholder with 12 curated ingredients from CCAP
   source: CCAP Medium MR_NSS_low.pdf
-- timestamp: '2026-04-17T06:29:07.861925+00:00'
+- timestamp: '2026-05-16T08:57:02.616741+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(3 entries)
+- timestamp: '2026-05-16T09:02:56.823832+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
+    category->lowercase=1
+- timestamp: '2026-06-10T07:37:34.002999+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:19.653289+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: asw_ses, nss_low'
+- timestamp: '2026-08-06T03:04:19.653413+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint f6c12750325bfbc5d1cc74e70cb6d50438635b1d2e636d7884540b310ed35aae
+  source: asw_ses.yaml, nss_low.yaml
 references:
-- reference_id: CCAP:NSS_low
-- reference_id: https://www.ccap.ac.uk/wp-content/uploads/MR_NSS_low.pdf
+- reference: CCAP:NSS_low
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_NSS_low.pdf
 ingredients:
 - preferred_term: NaNO
   term:
@@ -228,18 +247,28 @@ ingredients:
   notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium MR_ASW_SES.pdf
     specification
 data_quality_flags:
-  incomplete_composition: false
-  has_ontology_mappings: true
-  ingredients_curated: true
-  curation_method: automated_expert_mapping
+- has_ontology_mappings
+- ingredients_curated
+- curation_method:automated_expert_mapping
 original_name: NSS Low
+parent_media:
+  path: data/normalized_yaml/algae/asw_ses.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:000052
+  name: asw_ses
+  notes: Reviewed NSS Low as a concentration variant of ASW:SES with nitrate and phosphate
+    concentrations as the curated axes.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Reviewed ASW:SES/NSS Low pair; child keeps vitamins, inositol, thymine, and tricine
+  unchanged but halves NaNO, Na HPO, and K HPO concentrations.
 synonyms:
 - name: asw_ses
   source: unknown
-  original_category: ALGAE
+  original_category: algae
 categories:
-- ALGAE
+- algae
 merged_from:
 - asw_ses
 - nss_low
-merge_fingerprint: c661be8d12a887d21ae4eb0d5b73250470d4a10711d904cdab9597b1fed41b1d
+merge_fingerprint: f6c12750325bfbc5d1cc74e70cb6d50438635b1d2e636d7884540b310ed35aae

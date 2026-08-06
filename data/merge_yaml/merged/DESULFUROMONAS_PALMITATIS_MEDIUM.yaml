@@ -3,6 +3,7 @@ name: desulfuromonas_palmitatis_medium
 original_name: DESULFUROMONAS PALMITATIS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.9
 media_term:
@@ -21,8 +22,8 @@ ingredients:
     value: '24.908'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 23.908, 1.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: KCl
   term:
@@ -31,28 +32,28 @@ ingredients:
   concentration:
     value: '0.885057'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '1.14943'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.114943'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -62,8 +63,8 @@ ingredients:
     value: '3.229885'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.229885, 3.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -73,17 +74,23 @@ ingredients:
     value: '30.1229885'
     unit: G_PER_L
   notes: ' [Merged 3 duplicates: 0.0229885, 30.0, 0.1]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: Na-acetate x 3 H2O
   concentration:
     value: '1.56322'
     unit: G_PER_L
+  term:
+    id: CHEBI:32138
+    label: ''
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.000574713'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -91,28 +98,28 @@ ingredients:
   concentration:
     value: '212'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
   concentration:
     value: '50'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 - preferred_term: Na2-fumarate
   term:
     id: CHEBI:115156
-    label: Na2-fumarate
+    label: disodium fumarate
   concentration:
     value: '160'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000656
+  mediaingredientmech_chebi_term:
+    id: CHEBI:115156
     label: Na2-fumarate
 - preferred_term: Nitrilotriacetic acid
   term:
@@ -121,8 +128,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
     label: Nitrilotriacetic acid
 - preferred_term: MnSO4 x H2O
   term:
@@ -131,8 +138,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
     label: MnSO4 x H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -141,8 +148,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: CoSO4 x 7 H2O
   term:
@@ -151,8 +158,8 @@ ingredients:
   concentration:
     value: '0.18'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000158
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53470
     label: CoSO4 x 7 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -161,8 +168,8 @@ ingredients:
   concentration:
     value: '0.18'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
@@ -171,8 +178,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
     label: CuSO4 x 5 H2O
 - preferred_term: AlK(SO4)2 x 12 H2O
   term:
@@ -181,18 +188,18 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000293
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86465
     label: AlK(SO4)2 x 12 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -201,8 +208,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -211,8 +218,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: Na2SeO3 x 5 H2O
   term:
@@ -221,8 +228,8 @@ ingredients:
   concentration:
     value: '0.0003'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000144
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131361
     label: Na2SeO3 x 5 H2O
 - preferred_term: Na2WO4 x 2 H2O
   term:
@@ -231,8 +238,8 @@ ingredients:
   concentration:
     value: '0.0004'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000309
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63939
     label: Na2WO4 x 2 H2O
 - preferred_term: Biotin
   term:
@@ -241,8 +248,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Folic acid
   term:
@@ -251,8 +258,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
     label: Folic acid
 - preferred_term: Pyridoxine hydrochloride
   term:
@@ -261,8 +268,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001016
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
     label: Pyridoxine hydrochloride
 - preferred_term: Thiamine HCl
   term:
@@ -271,8 +278,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Riboflavin
   term:
@@ -281,8 +288,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: Nicotinic acid
   term:
@@ -291,13 +298,16 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
     label: Nicotinic acid
 - preferred_term: Calcium D-(+)-pantothenate
   concentration:
     value: '0.05'
     unit: G_PER_L
+  term:
+    id: CHEBI:31345
+    label: ''
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
@@ -305,8 +315,8 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 - preferred_term: p-Aminobenzoic acid
   term:
@@ -315,8 +325,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
     label: p-Aminobenzoic acid
 - preferred_term: (DL)-alpha-Lipoic acid
   term:
@@ -325,8 +335,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000166
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16494
     label: (DL)-alpha-Lipoic acid
 - preferred_term: NaOH
   term:
@@ -335,8 +345,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
     label: NaOH
 - preferred_term: Na2S2O4
   term:
@@ -345,8 +355,8 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000376
+  mediaingredientmech_chebi_term:
+    id: CHEBI:66870
     label: Na2S2O4
 applications:
 - Microbial cultivation
@@ -381,13 +391,39 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "DESULFUROMONAS PALMITATIS MEDIUM" to "desulfuromonas_palmitatis_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:33.458656+00:00'
+- timestamp: '2026-06-05T07:40:26.981241+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 32 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:46.078673+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:00.623952+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_837_DESULFUROMONAS_PALMITATIS_MEDIUM, desulfuromonas_palmitatis_medium'
+- timestamp: '2026-08-06T03:05:00.624007+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 02224b3d37507e97429071399a9d9be3d29fa27af97d3eac4b7a2af93211c4aa
+  source: KOMODO_837_DESULFUROMONAS_PALMITATIS_MEDIUM.yaml, desulfuromonas_palmitatis_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/desulfuromonas_palmitatis_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001994
+  name: desulfuromonas_palmitatis_medium
+  notes: KOMODO record states DSMZ Medium 837 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 categories:
 - bacterial
 merged_from:
 - KOMODO_837_DESULFUROMONAS_PALMITATIS_MEDIUM
 - desulfuromonas_palmitatis_medium
-merge_fingerprint: d11d7bfa0f78553ceba518120f182415b3e365c854fc79c930b3caf3b4a1a1c8
+merge_fingerprint: 02224b3d37507e97429071399a9d9be3d29fa27af97d3eac4b7a2af93211c4aa

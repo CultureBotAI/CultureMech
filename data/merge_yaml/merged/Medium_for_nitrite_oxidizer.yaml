@@ -3,6 +3,7 @@ name: medium_for_nitrite_oxidizer
 original_name: Medium for nitrite oxidizer
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
@@ -24,11 +25,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
   term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4·7H2O
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '6.6'
@@ -38,9 +39,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: K2HPO4
   concentration:
     value: '25.4'
@@ -50,9 +51,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: H3BO3
   concentration:
     value: '49.4'
@@ -62,9 +63,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: FeSO4·7H2O
   concentration:
     value: '3.2'
@@ -83,9 +84,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: ZnSO4·7H2O
   concentration:
     value: '43.1'
@@ -95,9 +96,9 @@ ingredients:
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
-    label: ZnSO4·7H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
 - preferred_term: CuSO4·5H2O
   concentration:
     value: '25'
@@ -107,9 +108,9 @@ ingredients:
   term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
-    label: CuSO4·5H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
 - preferred_term: MnSO4·5H2O
   concentration:
     value: '54.2'
@@ -119,9 +120,9 @@ ingredients:
   term:
     id: CHEBI:131524
     label: manganese(II) sulfate pentahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000549
-    label: MnSO4·5H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131524
+    label: manganese(II) sulfate pentahydrate
 - preferred_term: NaNO2
   concentration:
     value: '49.2'
@@ -131,9 +132,9 @@ ingredients:
   term:
     id: CHEBI:78870
     label: sodium nitrite
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000387
-    label: NaNO2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:78870
+    label: sodium nitrite
 - preferred_term: Na2Mo4O4
   concentration:
     value: '27.6'
@@ -174,7 +175,28 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Medium for nitrite oxidizer" to "medium_for_nitrite_oxidizer"
     for consistent matching
+- timestamp: '2026-06-05T07:41:29.258172+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:58:21.133684+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:47:06.117412+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:43.233148+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b2f694c1a7a49bb1ecd9b0ea9f9b336f3c00dd61b648877d3bb6803811f119c0
+  source: medium_for_nitrite_oxidizer.yaml
 high_metal: true
-merge_fingerprint: f4df3439f7ff8545556dc1a2d20aae56a7ac9aaeb106fad8d8483f005792fee2
+merge_fingerprint: b2f694c1a7a49bb1ecd9b0ea9f9b336f3c00dd61b648877d3bb6803811f119c0
 merged_from:
 - medium_for_nitrite_oxidizer

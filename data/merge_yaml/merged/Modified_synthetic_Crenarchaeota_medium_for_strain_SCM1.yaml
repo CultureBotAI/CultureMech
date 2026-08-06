@@ -1,8 +1,9 @@
 id: CultureMech:009549
 name: modified_synthetic_crenarchaeota_medium_for_strain_scm1
 original_name: Modified synthetic Crenarchaeota medium for strain SCM1
-category: bacterial
+category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -15,8 +16,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
@@ -25,11 +26,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4·7H2O
 - preferred_term: NaCl
   concentration:
     value: '26'
@@ -39,9 +40,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '1.5'
@@ -51,9 +52,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: MgCl2·6H2O
   concentration:
     value: '5'
@@ -63,9 +64,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: MgCl2·6H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: KBr
   concentration:
     value: '0.1'
@@ -75,9 +76,9 @@ ingredients:
   term:
     id: CHEBI:32030
     label: potassium bromide
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001123
-    label: KBr
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32030
+    label: potassium bromide
 - preferred_term: HEPES
   concentration:
     value: '238.4'
@@ -86,8 +87,8 @@ ingredients:
   term:
     id: CHEBI:46756
     label: HEPES
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001034
+  mediaingredientmech_chebi_term:
+    id: CHEBI:46756
     label: HEPES
 - preferred_term: NaOH
   concentration:
@@ -97,9 +98,9 @@ ingredients:
   term:
     id: CHEBI:32145
     label: sodium hydroxide
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
-    label: NaOH
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
 - preferred_term: NaHCO3
   concentration:
     value: '8.4'
@@ -109,9 +110,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: KH2PO4
   concentration:
     value: '0.4'
@@ -120,9 +121,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: FeNaEDTA
   concentration:
@@ -138,9 +139,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000183
-    label: Na2MoO4·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
 - preferred_term: H3BO3
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
@@ -150,9 +151,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: MnCl2·4H2O
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
@@ -180,9 +181,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
-    label: NiCl2·6H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
 - preferred_term: ZnSO4·7H2O
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
@@ -192,9 +193,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
-    label: ZnSO4·7H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
 - preferred_term: CuCl2·2H2O
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
@@ -204,9 +205,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
-    label: CuCl2·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
 - preferred_term: HCl (35%)
   notes: 'Role: Solvating media; Properties: Inorganic compound, Solution, Defined
     component'
@@ -222,9 +223,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: Sodium alpha-ketoglutamate
   concentration:
     value: '0.34'
@@ -252,7 +253,6 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:57.204840'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH; Added default concentration
     for ingredient: Na2MoO4·2H2O; Added default concentration for ingredient: H3BO3;
@@ -260,6 +260,7 @@ curation_history:
     for ingredient: CoCl2·6H2O; Added default concentration for ingredient: NiCl2·6H2O;
     Added default concentration for ingredient: ZnSO4·7H2O; Added default concentration
     for ingredient: CuCl2·2H2O; Added default concentration for ingredient: HCl (35%)'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:04:41.425340+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -273,11 +274,11 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009549'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:59.238837'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name; Added default solution
     name; Added default solution name; Added default solution name; Added default
     solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:18.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -288,6 +289,31 @@ curation_history:
   notes: Normalized name from "Modified synthetic Crenarchaeota medium for strain
     SCM1" to "modified_synthetic_crenarchaeota_medium_for_strain_scm1" for consistent
     matching
+- timestamp: '2026-05-16T09:04:26.281295+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:41:37.825959+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 16 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:58:26.827298+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:47:08.968924+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:31.968914+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 8dea0dce63922855bbc7d28c658ad5c8bf379fd02c9da135fa27fa9b7ee51715
+  source: modified_synthetic_crenarchaeota_medium_for_strain_scm1.yaml
 solutions:
 - preferred_term: HEPES buffer*
   composition: []
@@ -334,6 +360,6 @@ solutions:
     value: '5'
     unit: G_PER_L
   name: Unknown solution
-merge_fingerprint: 33358e9a8c8578255b30ca5f5fbe0e87afdddb0f944610eefe78633b6296b8dc
+merge_fingerprint: 8dea0dce63922855bbc7d28c658ad5c8bf379fd02c9da135fa27fa9b7ee51715
 merged_from:
 - modified_synthetic_crenarchaeota_medium_for_strain_scm1

@@ -1,50 +1,32 @@
-id: CultureMech:007618
+id: CultureMech:002540
 name: trypticase_glucose_medium
-original_name: Trypticase Glucose Medium
+original_name: TRYPTICASE GLUCOSE MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.1
+media_term:
+  preferred_term: JCM Medium J17
+  term:
+    id: mediadive.medium:J17
+    label: TRYPTICASE GLUCOSE MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=17
+
+
+  Commercial Product: Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)
+
+  Supplier: Multiple suppliers (BD, Sigma, Neogen)
+
+  Catalog: Multiple (22092 Sigma, 211825 BD)
+
+  Source: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: Glucose
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
-- preferred_term: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
-- preferred_term: Yeast extract (BD-Difco)
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
 - preferred_term: Pancreatic digest of casein
   term:
     id: MICRO:0000182
@@ -160,54 +142,227 @@ ingredients:
     product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
   notes: Solidifying agent (for TSA only, not in TSB); Constituent of Tryptic Soy
     Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
-media_term:
-  preferred_term: TOGO Medium M10
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Glucose
   term:
-    id: TOGO:M10
-    label: Trypticase Glucose Medium
-notes: 'Source: https://togomedium.org/medium/M10
-
-  Original source: JCM - JCM_M17
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=17
-
-
-  Commercial Product: Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)
-
-  Supplier: Multiple suppliers (BD, Sigma, Neogen)
-
-  Catalog: Multiple (22092 Sigma, 211825 BD)
-
-  Source: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-
-  Accessed: 2026-03-28
-
-
-  Constituent composition researched from product specification.'
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: Glucose
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0-7.2.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:53.730925Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M10'
-- timestamp: '2026-01-28T19:48:10.113794Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:19:50.099883Z'
+- timestamp: '2026-01-26T17:53:15.588850Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J17'
+- timestamp: '2026-03-13T06:19:14.042456Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:007618'
-- timestamp: '2026-03-17T06:29:46.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:002540'
+- timestamp: '2026-03-17T06:29:47.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:08.461129+00:00'
+- timestamp: '2026-03-17T19:45:27.234767+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Trypticase Glucose Medium" to "trypticase_glucose_medium"
+  notes: Normalized name from "TRYPTICASE GLUCOSE MEDIUM" to "trypticase_glucose_medium"
     for consistent matching
-merge_fingerprint: db729b4ecd0c8c56715b35705078a00b39c92a467d4a913262d8d7beaa1fe71e
+- timestamp: '2026-06-05T07:41:54.357571+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:02.195535+00:00'
+  curator: recipe-merger
+  action: Merged 29 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_92a_MODIFIED_medium_92, medium_92_modified_for_dsm_10249,
+    medium_92_modified_for_dsm_10672, medium_92_modified_for_dsm_10673, medium_92_modified_for_dsm_11865,
+    medium_92_modified_for_dsm_13240, medium_92_modified_for_dsm_14684, medium_92_modified_for_dsm_15461,
+    medium_92_modified_for_dsm_17027, medium_92_modified_for_dsm_17065, medium_92_modified_for_dsm_17066,
+    medium_92_modified_for_dsm_18607, medium_92_modified_for_dsm_18966, medium_92_modified_for_dsm_19663,
+    medium_92_modified_for_dsm_21577, medium_92_modified_for_dsm_23765, medium_92_modified_for_dsm_23766,
+    medium_92_modified_for_dsm_25585, medium_92_modified_for_dsm_43846, medium_92_modified_for_dsm_6685,
+    medium_92_modified_for_dsm_6688, medium_92_modified_for_dsm_7109, medium_92_modified_for_dsm_7110,
+    medium_92_modified_for_dsm_7111, medium_92_modified_for_dsm_7112, medium_92_modified_for_dsm_7113,
+    medium_92_modified_for_dsm_7171, trypticase_glucose_medium, trypticase_soy_yeast_extract_medium'
+- timestamp: '2026-08-06T03:05:02.195800+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 29 source recipe(s) on fingerprint f4c51aac81b5cf48f55450ad1586afc22ba5f8157c5599ad29080fe620729450
+  source: KOMODO_92a_MODIFIED_medium_92.yaml, medium_92_modified_for_dsm_10249.yaml,
+    medium_92_modified_for_dsm_10672.yaml, medium_92_modified_for_dsm_10673.yaml,
+    medium_92_modified_for_dsm_11865.yaml, medium_92_modified_for_dsm_13240.yaml,
+    medium_92_modified_for_dsm_14684.yaml, medium_92_modified_for_dsm_15461.yaml,
+    medium_92_modified_for_dsm_17027.yaml, medium_92_modified_for_dsm_17065.yaml,
+    medium_92_modified_for_dsm_17066.yaml, medium_92_modified_for_dsm_18607.yaml,
+    medium_92_modified_for_dsm_18966.ya
+synonyms:
+- name: modified_medium_92
+  source: KOMODO
+  source_id: komodo.medium:92a
+  original_category: bacterial
+- name: medium_92_modified_for_dsm_10249
+  source: KOMODO
+  source_id: komodo.medium:92_10249
+  original_category: bacterial
+- name: medium_92_modified_for_dsm_10672
+  source: KOMODO
+  source_id: komodo.medium:92_10672
+  original_category: bacterial
+- name: medium_92_modified_for_dsm_10673
+  source: KOMODO
+  source_id: komodo.medium:92_10673
+  original_category: bacterial
+- name: medium_92_modified_for_dsm_11865
+  source: KOMODO
+  source_id: komodo.medium:92_11865
+  original_category: bacterial
+- name: medium_92_modified_for_dsm_13240
+  source: KOMODO
+  source_id: komodo.medium:92_13240
+  original_category: bacterial
+- name: medium_92_modified_for_dsm_14684
+  source: KOMODO
+  source_id: komodo.medium:92_14684
+  original_category: bacterial
+- name: medium_92_modified_for_dsm_15461
+  source: KOMODO
+  source_id: komodo.medium:92_15461
+  original_category: bacterial
+- name: medium_92_modified_for_dsm_17027
+  source: KOMODO
+  source_id: komodo.medium:92_17027
+  original_category: bacterial
+- name: medium_92_modified_for_dsm_17065
+  source: KOMODO
+  source_id: komodo.medium:92_17065
+  original_category: bacterial
+- name: medium_92_modified_for_dsm_17066
+  source: KOMODO
+  source_id: komodo.medium:92_17066
+  original_category: bacterial
+- name: medium_92_modified_for_dsm_18607
+  source: KOMODO
+  source_id: komodo.medium:92_18607
+  original_category: bacterial
+- name: medium_92_modified_for_dsm_18966
+  source: KOMODO
+  source_id: komodo.medium:92_18966
+  original_category: bacterial
+- name: medium_92_modified_for_dsm_19663
+  source: KOMODO
+  source_id: komodo.medium:92_19663
+  original_category: bacterial
+- name: medium_92_modified_for_dsm_21577
+  source: KOMODO
+  source_id: komodo.medium:92_21577
+  original_category: bacterial
+- name: medium_92_modified_for_dsm_23765
+  source: KOMODO
+  source_id: komodo.medium:92_23765
+  original_category: bacterial
+- name: medium_92_modified_for_dsm_23766
+  source: KOMODO
+  source_id: komodo.medium:92_23766
+  original_category: bacterial
+- name: medium_92_modified_for_dsm_25585
+  source: KOMODO
+  source_id: komodo.medium:92_25585
+  original_category: bacterial
+- name: medium_92_modified_for_dsm_43846
+  source: KOMODO
+  source_id: komodo.medium:92_43846
+  original_category: bacterial
+- name: medium_92_modified_for_dsm_6685
+  source: KOMODO
+  source_id: komodo.medium:92_6685
+  original_category: bacterial
+- name: medium_92_modified_for_dsm_6688
+  source: KOMODO
+  source_id: komodo.medium:92_6688
+  original_category: bacterial
+- name: medium_92_modified_for_dsm_7109
+  source: KOMODO
+  source_id: komodo.medium:92_7109
+  original_category: bacterial
+- name: medium_92_modified_for_dsm_7110
+  source: KOMODO
+  source_id: komodo.medium:92_7110
+  original_category: bacterial
+- name: medium_92_modified_for_dsm_7111
+  source: KOMODO
+  source_id: komodo.medium:92_7111
+  original_category: bacterial
+- name: medium_92_modified_for_dsm_7112
+  source: KOMODO
+  source_id: komodo.medium:92_7112
+  original_category: bacterial
+- name: medium_92_modified_for_dsm_7113
+  source: KOMODO
+  source_id: komodo.medium:92_7113
+  original_category: bacterial
+- name: medium_92_modified_for_dsm_7171
+  source: KOMODO
+  source_id: komodo.medium:92_7171
+  original_category: bacterial
+- name: trypticase_soy_yeast_extract_medium
+  source: KOMODO
+  source_id: komodo.medium:92
+  original_category: bacterial
+categories:
+- bacterial
 merged_from:
-- TOGO_M10_Trypticase_Glucose_Medium
+- KOMODO_92a_MODIFIED_medium_92
+- medium_92_modified_for_dsm_10249
+- medium_92_modified_for_dsm_10672
+- medium_92_modified_for_dsm_10673
+- medium_92_modified_for_dsm_11865
+- medium_92_modified_for_dsm_13240
+- medium_92_modified_for_dsm_14684
+- medium_92_modified_for_dsm_15461
+- medium_92_modified_for_dsm_17027
+- medium_92_modified_for_dsm_17065
+- medium_92_modified_for_dsm_17066
+- medium_92_modified_for_dsm_18607
+- medium_92_modified_for_dsm_18966
+- medium_92_modified_for_dsm_19663
+- medium_92_modified_for_dsm_21577
+- medium_92_modified_for_dsm_23765
+- medium_92_modified_for_dsm_23766
+- medium_92_modified_for_dsm_25585
+- medium_92_modified_for_dsm_43846
+- medium_92_modified_for_dsm_6685
+- medium_92_modified_for_dsm_6688
+- medium_92_modified_for_dsm_7109
+- medium_92_modified_for_dsm_7110
+- medium_92_modified_for_dsm_7111
+- medium_92_modified_for_dsm_7112
+- medium_92_modified_for_dsm_7113
+- medium_92_modified_for_dsm_7171
+- trypticase_glucose_medium
+- trypticase_soy_yeast_extract_medium
+merge_fingerprint: f4c51aac81b5cf48f55450ad1586afc22ba5f8157c5599ad29080fe620729450

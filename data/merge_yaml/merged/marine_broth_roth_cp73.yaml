@@ -3,8 +3,11 @@ name: marine_broth_roth_cp73
 original_name: MARINE BROTH (ROTH CP73)
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_range: 7.4-7.8
+ph_range:
+  min: 7.4
+  max: 7.8
 media_term:
   preferred_term: DSMZ Medium 514f
   term:
@@ -27,8 +30,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000864
+  mediaingredientmech_chebi_term:
+    id: CHEBI:144421
     label: Fe(III) citrate
 - preferred_term: NaCl
   term:
@@ -37,8 +40,8 @@ ingredients:
   concentration:
     value: '19.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgCl2
   term:
@@ -47,18 +50,18 @@ ingredients:
   concentration:
     value: '8.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000663
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6636
     label: MgCl2
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
-    label: Na2SO4
+    label: sodium sulfate
   concentration:
     value: '3.24'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Na2SO4
 - preferred_term: CaCl2
   term:
@@ -67,8 +70,8 @@ ingredients:
   concentration:
     value: '1.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
     label: CaCl2
 - preferred_term: KCl
   term:
@@ -77,8 +80,8 @@ ingredients:
   concentration:
     value: '0.55'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: NaHCO3
   term:
@@ -87,18 +90,18 @@ ingredients:
   concentration:
     value: '0.16'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: KBr
   term:
     id: CHEBI:32030
-    label: KBr
+    label: potassium bromide
   concentration:
     value: '0.08'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001123
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32030
     label: KBr
 - preferred_term: SrCl2
   term:
@@ -107,38 +110,38 @@ ingredients:
   concentration:
     value: '0.034'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000196
+  mediaingredientmech_chebi_term:
+    id: CHEBI:36383
     label: SrCl2
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.022'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: Na-silicate
   term:
     id: CHEBI:60720
-    label: Na-silicate
+    label: sodium silicate
   concentration:
     value: '0.004'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000833
+  mediaingredientmech_chebi_term:
+    id: CHEBI:60720
     label: Na-silicate
 - preferred_term: NaF
   term:
     id: CHEBI:28741
-    label: NaF
+    label: sodium fluoride
   concentration:
     value: '0.0024'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000182
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28741
     label: NaF
 - preferred_term: (NH4)NO3
   term:
@@ -147,8 +150,8 @@ ingredients:
   concentration:
     value: '0.0016'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000287
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63038
     label: (NH4)NO3
 - preferred_term: Na2HPO4
   term:
@@ -157,8 +160,8 @@ ingredients:
   concentration:
     value: '0.008'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4
 - preferred_term: Agar
   term:
@@ -168,8 +171,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (if required)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -197,6 +200,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MARINE BROTH (ROTH CP73)" to "marine_broth_roth_cp73"
     for consistent matching
+- timestamp: '2026-05-20T06:02:13.960804+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.4-7.8'' -> {''min'': 7.4, ''max'': 7.8}'
+- timestamp: '2026-06-05T07:41:57.943848+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 15 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:15.185352+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:05.511318+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint f1bf3433a7d7f3fb7b46ca3c14186e58900a62b29ed8d7ae8d2aee488b5d37b9
+  source: marine_broth_roth_cp73.yaml
 merge_fingerprint: f1bf3433a7d7f3fb7b46ca3c14186e58900a62b29ed8d7ae8d2aee488b5d37b9
 merged_from:
 - marine_broth_roth_cp73

@@ -3,6 +3,7 @@ name: brain_heart_infusion_broth
 original_name: Brain Heart Infusion Broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: DI Water
@@ -145,6 +146,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Brain Heart Infusion Broth" to "brain_heart_infusion_broth"
     for consistent matching
+- timestamp: '2026-08-06T03:05:25.900303+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2bdee35c250a2cb31edb8a41a11623dbfe2c19a37e57e947c11b534f12aed299
+  source: brain_heart_infusion_broth.yaml
 merge_fingerprint: 2bdee35c250a2cb31edb8a41a11623dbfe2c19a37e57e947c11b534f12aed299
 merged_from:
 - brain_heart_infusion_broth

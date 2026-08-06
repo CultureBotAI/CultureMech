@@ -1,0 +1,73 @@
+id: CultureMech:010490
+name: nutrient_agar_with_0_05_yeast_extract_and_3_nacl
+original_name: NUTRIENT AGAR WITH 0.05% YEAST EXTRACT AND 3% NaCl
+category: fungal
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J1109
+  term:
+    id: mediadive.medium:J1109
+    label: NUTRIENT AGAR WITH 0.05% YEAST EXTRACT AND 3% NaCl
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1109'
+ingredients:
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.665553Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1109'
+- timestamp: '2026-03-13T06:20:14.036433Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010490'
+- timestamp: '2026-03-17T17:06:08.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:33.040822+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "NUTRIENT AGAR WITH 0.05% YEAST EXTRACT AND 3% NaCl"
+    to "nutrient_agar_with_0_05_yeast_extract_and_3_nacl" for consistent matching
+- timestamp: '2026-06-05T07:41:57.070010+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:04.135707+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint c7db8d347f1a8187ea3fec6ab47b2e3e88811b13440abf97dc3d0936eb73b421
+  source: nutrient_agar_with_0_05_yeast_extract_and_3_nacl.yaml
+kg_microbe_match: mediadive.medium:101
+merge_fingerprint: c7db8d347f1a8187ea3fec6ab47b2e3e88811b13440abf97dc3d0936eb73b421
+merged_from:
+- nutrient_agar_with_0_05_yeast_extract_and_3_nacl

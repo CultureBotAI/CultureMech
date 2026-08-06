@@ -3,6 +3,7 @@ name: potato_extract_broth
 original_name: Potato Extract Broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: DI Water
@@ -45,6 +46,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Potato Extract Broth" to "potato_extract_broth" for
     consistent matching
+- timestamp: '2026-08-06T03:05:53.382613+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 3a33f548a7a46f49bdf80252ba0030775c6810b2df4b395090b616ec50242779
+  source: potato_extract_broth.yaml
 merge_fingerprint: 3a33f548a7a46f49bdf80252ba0030775c6810b2df4b395090b616ec50242779
 merged_from:
 - potato_extract_broth

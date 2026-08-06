@@ -3,6 +3,7 @@ name: r2a
 original_name: R2A
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: R2A (Difco)
@@ -31,6 +32,11 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "R2A" to "r2a" for consistent matching
+- timestamp: '2026-08-06T03:05:54.068405+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 14176dbf04e58573aecffed1f1ce9264cd8ec45f4b46d28b9eeee82ac8781572
+  source: r2a.yaml
 merge_fingerprint: 14176dbf04e58573aecffed1f1ce9264cd8ec45f4b46d28b9eeee82ac8781572
 merged_from:
 - r2a

@@ -41,7 +41,7 @@ v file:
 vs file:
     just validate-schema {{file}}
 
-# Render per-medium HTML pages from data/merge_yaml/merged_2026/*.yaml
+# Render per-medium HTML pages from data/merge_yaml/merged/*.yaml
 # into pages/media/. Idempotent (skips fresh outputs); pass --force to
 # regenerate everything. New dismech-pattern pipeline (parallel to the
 # legacy `gen-pages` recipe in project.justfile, which renders from a

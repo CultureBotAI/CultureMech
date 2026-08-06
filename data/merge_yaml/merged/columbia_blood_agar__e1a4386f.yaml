@@ -1,0 +1,429 @@
+id: CultureMech:005268
+name: columbia_blood_agar
+original_name: COLUMBIA BLOOD AGAR
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: KOMODO Medium 429
+  term:
+    id: komodo.medium:429
+    label: COLUMBIA BLOOD AGAR
+notes: 'Source: KOMODO ModelSEED | ID: 429 | DSMZ Medium: 429 (mediadive.medium:429)
+  | Aerobic: No
+
+
+  Commercial Product: Brain Heart Infusion
+
+  Supplier: Difco/BD
+
+  Catalog: 237500
+
+  Source: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
+ingredients:
+- preferred_term: Columbia agar base
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Horse blood
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: Casein peptone
+  concentration:
+    value: '17'
+    unit: G_PER_L
+- preferred_term: Soy peptone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: D(+)-Glucose
+  term:
+    id: CHEBI:17634
+    label: D(+)-Glucose
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
+    label: D(+)-Glucose
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: K2HPO4
+- preferred_term: Calf brains
+  term:
+    id: UBERON:0000955
+    label: brain
+  concentration:
+    value: variable
+    unit: VARIABLE
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: infusion from 200 g/L; Tissue infusion - source material is calf brain tissue;
+    Constituent of Brain Heart Infusion commercial product
+- preferred_term: Beef heart
+  term:
+    id: UBERON:0000948
+    label: heart
+  concentration:
+    value: variable
+    unit: VARIABLE
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: infusion from 250 g/L; Tissue infusion - source material is beef/ox heart
+    tissue; Constituent of Brain Heart Infusion commercial product
+- preferred_term: Proteose peptone
+  term:
+    id: MICRO:0000180
+    label: proteose peptone
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: Enzymatic digest of animal protein providing amino acids and peptides; Constituent
+    of Brain Heart Infusion commercial product
+- preferred_term: Dextrose
+  term:
+    id: CHEBI:17234
+    label: D-glucose
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: Carbon/energy source; Constituent of Brain Heart Infusion commercial product
+  synonyms:
+  - synonym_text: glucose
+    synonym_type: EXACT
+  - synonym_text: D-glucose
+    synonym_type: EXACT
+  - synonym_text: dextrose
+    synonym_type: EXACT
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: Maintains osmotic equilibrium; Constituent of Brain Heart Infusion commercial
+    product
+  synonyms:
+  - synonym_text: NaCl
+    synonym_type: EXACT
+  - synonym_text: table salt
+    synonym_type: EXACT
+- preferred_term: Disodium phosphate
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogen phosphate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial
+    product
+  synonyms:
+  - synonym_text: Na2HPO4
+    synonym_type: EXACT
+  - synonym_text: disodium hydrogen phosphate
+    synonym_type: EXACT
+  - synonym_text: sodium phosphate dibasic
+    synonym_type: EXACT
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+variants:
+- name: columbia_blood_agar_staphylococcus_saccharolyticus_anaerobic
+  description: Columbia blood agar cultivation evidence for the type strain Staphylococcus
+    saccharolyticus ATCC 14953 / DSM 20359 / NCTC 11807, formerly Peptococcus saccharolyticus.
+  modifications:
+  - BacDive DSMZ Medium 693 specifies Columbia agar base with 50 g/L defibrinated
+    sheep blood; the local parent record contains a Columbia blood agar base with
+    horse blood at 40 g/L.
+  - Incubate anaerobically or under reduced oxygen at 37 C for this anaerobic organism.
+  purpose: Capture strain-specific qualitative growth evidence while preserving the
+    blood-source and concentration difference as a variant-level formulation note.
+  evidence:
+  - reference: PMID:7077295
+    supports: SUPPORT
+    snippet: The highest bacterial counts were obtained on Columbia blood agar incubated
+      anaerobically.
+    explanation: The primary literature reports quantitative culture of Peptococcus
+      saccharolyticus strains, now Staphylococcus saccharolyticus, on Columbia blood
+      agar under anaerobic incubation.
+  - reference: https://bacdive.dsmz.de/strain/14567
+    supports: SUPPORT
+    explanation: BacDive identifies Staphylococcus saccharolyticus S1 as the type
+      strain with DSM 20359, ATCC 14953, JCM 1768, and NCTC 11807 aliases; its cultivation
+      data list Columbia Blood Medium with positive growth at 37 C.
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 429'
+- timestamp: '2026-02-03T11:19:07.569976'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 429
+- timestamp: '2026-03-13T06:19:31.401973Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005268'
+- timestamp: '2026-03-17T06:30:19.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:47.278865+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "COLUMBIA BLOOD AGAR" to "columbia_blood_agar" for consistent
+    matching
+- timestamp: '2026-05-05T00:00:00+00:00'
+  curator: literature_review_manual
+  action: ADDED_GROWTH_EVIDENCE
+  notes: Added qualitative Columbia blood agar growth evidence for Staphylococcus
+    saccharolyticus ATCC 14953 / DSM 20359 / NCTC 11807 from PMID:7077295 and BacDive
+    strain 14567.
+- timestamp: '2026-06-05T07:40:23.224407+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:44.854341+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T00:58:02.630191+00:00'
+  curator: curate_organism_culture_type.py
+  action: SET_ORGANISM_CULTURE_TYPE
+  notes: 'Inferred isolate: 1 specific strain(s) named, no community signal (#142)'
+  changes: Set organism_culture_type=isolate (was unset)
+- timestamp: '2026-08-06T03:04:49.239611+00:00'
+  curator: recipe-merger
+  action: Merged 24 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_429_COLUMBIA_BLOOD_AGAR, KOMODO_429a_COLUMBIA_BLOOD_AGAR_WITH_CHARCOAL,
+    KOMODO_429b_CHOCOLATE_AGAR, KOMODO_429c_COLUMBIA-GLUCOSE-CYSTEINE-AGAR, KOMODO_429d_FRANCISELLA_HALIOTICIDA_medium,
+    chocolate_agar_replace_horse_blood_with_sheep_blood, columbia_blood_agar, columbia_blood_agar_modified_for_dsm_10001,
+    columbia_blood_agar_modified_for_dsm_11969, columbia_glucose_cysteine_agar_replace_horse_blood_with_sheep_blood,
+    e_columbia_blood_agar_10, francisella_halioticida_medium_replace_horse_blood_with_sheep_blood,
+    medium_429_modified_for_dsm_10000, medium_429_modified_for_dsm_11121, medium_429_modified_for_dsm_15534,
+    medium_429_modified_for_dsm_15746, medium_429_modified_for_dsm_17480, medium_429_modified_for_dsm_17557,
+    medium_429_modified_for_dsm_17739, medium_429_modified_for_dsm_19655, medium_429_modified_for_dsm_21463,
+    medium_429_modified_for_dsm_21768, medium_429_modified_for_dsm_25354, medium_429b_modified_for_dsm_18554'
+- timestamp: '2026-08-06T03:04:49.239813+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 24 source recipe(s) on fingerprint e1a4386f6227b9fea3bc3e226ee3271fcfd3bcce9786cffbc4b1b8085952be27
+  source: KOMODO_429_COLUMBIA_BLOOD_AGAR.yaml, KOMODO_429a_COLUMBIA_BLOOD_AGAR_WITH_CHARCOAL.yaml,
+    KOMODO_429b_CHOCOLATE_AGAR.yaml, KOMODO_429c_COLUMBIA-GLUCOSE-CYSTEINE-AGAR.yaml,
+    KOMODO_429d_FRANCISELLA_HALIOTICIDA_medium.yaml, chocolate_agar_replace_horse_blood_with_sheep_blood.yaml,
+    columbia_blood_agar.yaml, columbia_blood_agar_modified_for_dsm_10001.yaml, columbia_blood_agar_modified_for_dsm_11969.yaml,
+    columbia_glucose_cysteine_agar_replace_horse_blood_with_sheep_blood.yaml, e_columbia_blood_agar_10
+organism_culture_type: isolate
+target_organisms:
+- preferred_term: Staphylococcus saccharolyticus
+  term:
+    id: NCBITaxon:33028
+    label: Staphylococcus saccharolyticus
+  genome_assembly_id:
+  - GCA_003968885.1
+  - SAMN05977977
+  strain: ATCC 14953; DSM 20359; JCM 1768; NCTC 11807; VPI 5661; S1
+  evidence:
+  - reference: https://bacdive.dsmz.de/strain/14567
+    supports: SUPPORT
+    explanation: BacDive lists the type strain aliases, NCBI taxon 33028, Columbia
+      Blood Medium cultivation, and positive growth at 37 C for this strain.
+  growth_metrics:
+  - temperature_celsius: 37.0
+    measurement_conditions: Columbia blood agar; anaerobic incubation; qualitative
+      positive growth/count evidence rather than OD or doubling-time measurement.
+    evidence:
+    - reference: PMID:7077295
+      supports: SUPPORT
+      snippet: The highest bacterial counts were obtained on Columbia blood agar incubated
+        anaerobically.
+      explanation: The abstract directly supports growth of Peptococcus saccharolyticus,
+        now Staphylococcus saccharolyticus, on Columbia blood agar under anaerobic
+        incubation.
+    - reference: https://bacdive.dsmz.de/strain/14567
+      supports: SUPPORT
+      explanation: BacDive strain 14567 links the ATCC 14953 / DSM 20359 / NCTC 11807
+        type strain to positive growth on Columbia Blood Medium at 37 C.
+    is_max_attainment: false
+parent_media:
+  path: data/normalized_yaml/bacterial/columbia_blood_agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001533
+  name: columbia_blood_agar
+  notes: KOMODO record states DSMZ Medium 429 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
+synonyms:
+- name: columbia_blood_agar_with_charcoal
+  source: KOMODO
+  source_id: komodo.medium:429a
+  original_category: bacterial
+- name: chocolate_agar
+  source: KOMODO
+  source_id: komodo.medium:429b
+  original_category: bacterial
+- name: columbia_glucose_cysteine_agar
+  source: KOMODO
+  source_id: komodo.medium:429c
+  original_category: bacterial
+- name: francisella_halioticida_medium
+  source: KOMODO
+  source_id: komodo.medium:429d
+  original_category: bacterial
+- name: chocolate_agar_replace_horse_blood_with_sheep_blood
+  source: KOMODO
+  source_id: komodo.medium:429b_replace_horse blood_with_sheep blood
+  original_category: bacterial
+- name: columbia_blood_agar_modified_for_dsm_10001
+  source: KOMODO
+  source_id: komodo.medium:429_10001
+  original_category: bacterial
+- name: columbia_blood_agar_modified_for_dsm_11969
+  source: KOMODO
+  source_id: komodo.medium:429_11969
+  original_category: bacterial
+- name: columbia_glucose_cysteine_agar_replace_horse_blood_with_sheep_blood
+  source: KOMODO
+  source_id: komodo.medium:429c_replace_horse blood_with_sheep blood
+  original_category: bacterial
+- name: e_columbia_blood_agar_10
+  source: MediaDive
+  source_id: mediadive.medium:429e
+  original_category: bacterial
+- name: francisella_halioticida_medium_replace_horse_blood_with_sheep_blood
+  source: KOMODO
+  source_id: komodo.medium:429d_replace_horse blood_with_sheep blood
+  original_category: bacterial
+- name: medium_429_modified_for_dsm_10000
+  source: KOMODO
+  source_id: komodo.medium:429_10000
+  original_category: bacterial
+- name: medium_429_modified_for_dsm_11121
+  source: KOMODO
+  source_id: komodo.medium:429_11121
+  original_category: bacterial
+- name: medium_429_modified_for_dsm_15534
+  source: KOMODO
+  source_id: komodo.medium:429_15534
+  original_category: bacterial
+- name: medium_429_modified_for_dsm_15746
+  source: KOMODO
+  source_id: komodo.medium:429_15746
+  original_category: bacterial
+- name: medium_429_modified_for_dsm_17480
+  source: KOMODO
+  source_id: komodo.medium:429_17480
+  original_category: bacterial
+- name: medium_429_modified_for_dsm_17557
+  source: KOMODO
+  source_id: komodo.medium:429_17557
+  original_category: bacterial
+- name: medium_429_modified_for_dsm_17739
+  source: KOMODO
+  source_id: komodo.medium:429_17739
+  original_category: bacterial
+- name: medium_429_modified_for_dsm_19655
+  source: KOMODO
+  source_id: komodo.medium:429_19655
+  original_category: bacterial
+- name: medium_429_modified_for_dsm_21463
+  source: KOMODO
+  source_id: komodo.medium:429_21463
+  original_category: bacterial
+- name: medium_429_modified_for_dsm_21768
+  source: KOMODO
+  source_id: komodo.medium:429_21768
+  original_category: bacterial
+- name: medium_429_modified_for_dsm_25354
+  source: KOMODO
+  source_id: komodo.medium:429_25354
+  original_category: bacterial
+- name: medium_429b_modified_for_dsm_18554
+  source: KOMODO
+  source_id: komodo.medium:429b_18554
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- KOMODO_429_COLUMBIA_BLOOD_AGAR
+- KOMODO_429a_COLUMBIA_BLOOD_AGAR_WITH_CHARCOAL
+- KOMODO_429b_CHOCOLATE_AGAR
+- KOMODO_429c_COLUMBIA-GLUCOSE-CYSTEINE-AGAR
+- KOMODO_429d_FRANCISELLA_HALIOTICIDA_medium
+- chocolate_agar_replace_horse_blood_with_sheep_blood
+- columbia_blood_agar
+- columbia_blood_agar_modified_for_dsm_10001
+- columbia_blood_agar_modified_for_dsm_11969
+- columbia_glucose_cysteine_agar_replace_horse_blood_with_sheep_blood
+- e_columbia_blood_agar_10
+- francisella_halioticida_medium_replace_horse_blood_with_sheep_blood
+- medium_429_modified_for_dsm_10000
+- medium_429_modified_for_dsm_11121
+- medium_429_modified_for_dsm_15534
+- medium_429_modified_for_dsm_15746
+- medium_429_modified_for_dsm_17480
+- medium_429_modified_for_dsm_17557
+- medium_429_modified_for_dsm_17739
+- medium_429_modified_for_dsm_19655
+- medium_429_modified_for_dsm_21463
+- medium_429_modified_for_dsm_21768
+- medium_429_modified_for_dsm_25354
+- medium_429b_modified_for_dsm_18554
+merge_fingerprint: e1a4386f6227b9fea3bc3e226ee3271fcfd3bcce9786cffbc4b1b8085952be27

@@ -3,6 +3,7 @@ name: wilkins_chalgren_anaerobe_broth_n2_co2
 original_name: WILKINS-CHALGREN ANAEROBE BROTH (N2/CO2)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.8
 media_term:
@@ -20,6 +21,9 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: L-Cysteine HCl
   term:
     id: CHEBI:91247
@@ -37,18 +41,18 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 preparation_steps:
 - step_number: 1
@@ -86,6 +90,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "WILKINS-CHALGREN ANAEROBE BROTH (N2/CO2)" to "wilkins_chalgren_anaerobe_broth_n2_co2"
     for consistent matching
-merge_fingerprint: a8dff52c2d01f362836466c99c5fe57258fe1c0657fa340b5f490ce7f9aac4b7
+- timestamp: '2026-06-05T07:41:55.453093+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:14.625612+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:02.893088+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 306dc04aef7e0c37fda00951745f580be2717cbfe94f0ec8819cd9feb79a9a8a
+  source: wilkins_chalgren_anaerobe_broth_n2_co2.yaml
+merge_fingerprint: 306dc04aef7e0c37fda00951745f580be2717cbfe94f0ec8819cd9feb79a9a8a
 merged_from:
 - wilkins_chalgren_anaerobe_broth_n2_co2

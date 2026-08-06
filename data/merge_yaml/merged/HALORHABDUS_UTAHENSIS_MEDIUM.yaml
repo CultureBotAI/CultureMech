@@ -1,16 +1,18 @@
-id: CultureMech:002099
+id: CultureMech:006845
 name: halorhabdus_utahensis_medium
-original_name: HALORHABDUS UTAHENSIS MEDIUM
-category: bacterial
+original_name: HALORHABDUS UTAHENSIS medium
+category: archaea
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.6
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 927 | DSMZ Medium: 927 (mediadive.medium:927)
+  | Aerobic: No'
 media_term:
-  preferred_term: DSMZ Medium 927
+  preferred_term: KOMODO Medium 927
   term:
-    id: mediadive.medium:927
-    label: HALORHABDUS UTAHENSIS MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium927.pdf'
+    id: komodo.medium:927
+    label: HALORHABDUS UTAHENSIS medium
 ingredients:
 - preferred_term: NaCl
   term:
@@ -19,18 +21,18 @@ ingredients:
   concentration:
     value: '270'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: NaBr
   term:
     id: CHEBI:63004
-    label: NaBr
+    label: sodium bromide
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000189
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63004
     label: NaBr
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -39,8 +41,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: KCl
   term:
@@ -49,18 +51,18 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: Tris-HCl
   concentration:
@@ -77,8 +79,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: HCl
   term:
@@ -87,8 +89,8 @@ ingredients:
   concentration:
     value: '6.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000150
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
     label: HCl
 - preferred_term: FeCl2 x 7 H2O
   term:
@@ -97,8 +99,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000566
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30812
     label: FeCl2 x 7 H2O
 - preferred_term: ZnCl2
   term:
@@ -107,8 +109,8 @@ ingredients:
   concentration:
     value: '70'
     unit: MG_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
     label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -118,18 +120,18 @@ ingredients:
     value: '100'
     unit: MG_PER_L
   notes: ' [Unit conflict resolved: assumed G_PER_L was data entry error, kept MG_PER_L]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '62'
     unit: MG_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -138,8 +140,8 @@ ingredients:
   concentration:
     value: '190'
     unit: MG_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
@@ -148,8 +150,8 @@ ingredients:
   concentration:
     value: '17'
     unit: MG_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
     label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -158,8 +160,8 @@ ingredients:
   concentration:
     value: '24'
     unit: MG_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -168,18 +170,18 @@ ingredients:
   concentration:
     value: '36'
     unit: MG_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '50'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: CaCl2 x 6 H2O
   term:
@@ -188,8 +190,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000327
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91243
     label: CaCl2 x 6 H2O
 - preferred_term: FeCl2 x 4 H2O
   term:
@@ -198,63 +200,82 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000329
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86249
     label: FeCl2 x 4 H2O
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Prepare the medium, and adjust the pH to 7.6 with 5M NaOH.
-- step_number: 2
-  action: AUTOCLAVE
-  description: Autoclave and when the medium has cooled add 2.5 ml of the phosphate
-    solution, 0.5 ml of the calcium chloride solution, and 0.25 ml of the Fe/Mn solution.
-    This strain will not grow in normal media for halobacteria, such as DSM medium
-    372!
-- step_number: 3
-  action: MIX
-  description: Prepare and sterilise separately
-- step_number: 4
-  action: MIX
-  description: Prepare and sterilise separately
-- step_number: 5
-  action: MIX
-  description: Prepare and sterilise separately
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  notes: pH adjustment (extracted from notes)
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:12.785372Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 927'
-- timestamp: '2026-02-06T05:10:22.239313Z'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 927'
+- timestamp: '2026-02-03T11:19:01.461535'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 927
+- timestamp: '2026-02-06T05:10:23.448461Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
-- timestamp: '2026-03-13T03:08:53.707591Z'
+- timestamp: '2026-03-13T03:08:55.521898Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: 'Merged 1 duplicate ingredient(s); WARNING: Duplicate ''MnCl2 x 4 H2O'' with
-    different units: {''MG_PER_L'', ''G_PER_L''}'
-- timestamp: '2026-03-13T04:23:43.705438Z'
+    different units: {''MG_PER_L'', ''G_PER_L''}; Added pH buffer: NaOH'
+- timestamp: '2026-03-13T04:23:43.716412Z'
   curator: unit-conflict-resolver-v1.0
   action: Resolved unit conflicts
   notes: Resolved trace metal unit conflict for MnCl2 x 4 H2O
-- timestamp: '2026-03-13T06:19:10.293979Z'
+- timestamp: '2026-03-13T06:19:44.281634Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002099'
-- timestamp: '2026-03-17T06:29:57.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:006845'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:29:59.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:22.948837+00:00'
+- timestamp: '2026-03-17T19:46:02.181371+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALORHABDUS UTAHENSIS MEDIUM" to "halorhabdus_utahensis_medium"
+  notes: Normalized name from "HALORHABDUS UTAHENSIS medium" to "halorhabdus_utahensis_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:03:05.485609+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:27.842078+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 19 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:46.409039+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:24.334618+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 70680e848d3c410e74a604c6f217f57d3ae93f7eecac24005bc0a54b39d10bf2
+  source: KOMODO_927_HALORHABDUS_UTAHENSIS_medium.yaml
 high_metal: true
-merge_fingerprint: 605c91f2537fc09c296d737d91f2a012786b220058d8618619e63ecfd03001ed
+merge_fingerprint: 70680e848d3c410e74a604c6f217f57d3ae93f7eecac24005bc0a54b39d10bf2
 merged_from:
-- halorhabdus_utahensis_medium
+- KOMODO_927_HALORHABDUS_UTAHENSIS_medium

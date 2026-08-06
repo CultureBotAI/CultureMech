@@ -4,6 +4,7 @@ original_name: Eagle's  minimum  essential  medium  (MEM) (containing antibiotic
   and fetal  bovine  serum)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: fetal  bovine  serum
@@ -21,12 +22,12 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Antimicrobial agent'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001049
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2682
     label: amphotericin  B
   term:
     id: CHEBI:2682
-    label: ''
+    label: amphotericin B
 - preferred_term: Eagle's  minimum  essential  medium  (MEM) (Nissui  Co.,  Tokyo)
   concentration:
     value: '1'
@@ -40,9 +41,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001085
-    label: penicillin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17334
+    label: Penicillin
 media_term:
   preferred_term: TOGO Medium M2847
   term:
@@ -62,9 +63,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.681619'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: penicillin'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:06.007726Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -79,6 +80,25 @@ curation_history:
   notes: Normalized name from "Eagle's  minimum  essential  medium  (MEM) (containing
     antibiotics and fetal  bovine  serum)" to "eagles_minimum_essential_medium_mem_containing_antibiotics_and_fetal_bovine_serum"
     for consistent matching
+- timestamp: '2026-05-16T09:03:31.265341+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:59.273228+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:56.608131+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:33.270846+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 52fff26ff7b1bc026baca02190ae66db8da6dbe9ae401867b05d45e6507af30a
+  source: eagles_minimum_essential_medium_mem_containing_antibiotics_and_fetal_bovine_serum.yaml
 merge_fingerprint: 52fff26ff7b1bc026baca02190ae66db8da6dbe9ae401867b05d45e6507af30a
 merged_from:
 - eagles_minimum_essential_medium_mem_containing_antibiotics_and_fetal_bovine_serum

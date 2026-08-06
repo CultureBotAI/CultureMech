@@ -3,6 +3,7 @@ name: artificial_seawater_medium_for_strain_js_srb250lac
 original_name: Artificial seawater medium for strain JS_SRB250Lac
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: NaCl
   concentration:
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '1.4'
@@ -38,9 +39,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: KH2PO4
   concentration:
     value: '0.2'
@@ -49,9 +50,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
@@ -62,9 +63,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: Resazurin
   concentration:
     value: '0.5'
@@ -74,8 +75,8 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: MgCl2·6H2O
   concentration:
@@ -86,9 +87,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: MgCl2·6H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: KCl
   concentration:
     value: '0.7'
@@ -98,9 +99,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: NaHCO3
   concentration:
     value: '2.5'
@@ -110,9 +111,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: Na2SO4
   concentration:
     value: '4'
@@ -122,9 +123,9 @@ ingredients:
   term:
     id: CHEBI:32149
     label: sodium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
-    label: Na2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
 - preferred_term: Sodium lactate
   concentration:
     value: '2.3'
@@ -134,9 +135,9 @@ ingredients:
   term:
     id: CHEBI:75228
     label: sodium lactate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001047
-    label: Sodium lactate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75228
+    label: sodium lactate
 - preferred_term: KBr
   concentration:
     value: '0.1'
@@ -146,9 +147,9 @@ ingredients:
   term:
     id: CHEBI:32030
     label: potassium bromide
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001123
-    label: KBr
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32030
+    label: potassium bromide
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: Gas'
   concentration:
@@ -174,9 +175,9 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000183
-    label: Na2MoO4·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
 - preferred_term: H3BO3
   concentration:
     value: '6'
@@ -186,9 +187,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: MnCl2·4H2O
   concentration:
     value: '100'
@@ -216,9 +217,9 @@ ingredients:
   term:
     id: CHEBI:34887
     label: nickel dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
-    label: NiCl2·6H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
 - preferred_term: CuCl2·2H2O
   concentration:
     value: '2'
@@ -228,9 +229,9 @@ ingredients:
   term:
     id: CHEBI:86318
     label: copper(II) chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
-    label: CuCl2·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
 - preferred_term: ZnCl2
   concentration:
     value: '7'
@@ -240,9 +241,9 @@ ingredients:
   term:
     id: CHEBI:49976
     label: zinc dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
-    label: ZnCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
+    label: zinc dichloride
 - preferred_term: HCl (25%; 7.7 M)
   concentration:
     value: '10'
@@ -258,9 +259,9 @@ ingredients:
   term:
     id: CHEBI:86249
     label: iron dichloride tetrahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000329
-    label: FeCl2·4H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
 - preferred_term: Na2SeO3·5H2O
   concentration:
     value: '3'
@@ -270,9 +271,9 @@ ingredients:
   term:
     id: CHEBI:48843
     label: disodium selenite
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000315
-    label: Na2SeO3·5H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:48843
+    label: disodium selenite
 - preferred_term: Na2WO4·2H2O
   concentration:
     value: '4'
@@ -282,9 +283,9 @@ ingredients:
   term:
     id: CHEBI:63939
     label: sodium tungstate dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000309
-    label: Na2WO4·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63939
+    label: sodium tungstate dihydrate
 - preferred_term: NaOH
   concentration:
     value: '0.5'
@@ -293,9 +294,9 @@ ingredients:
   term:
     id: CHEBI:32145
     label: sodium hydroxide
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
-    label: NaOH
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
 - preferred_term: Biotin
   concentration:
     value: '2'
@@ -304,9 +305,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
-    label: Biotin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
+    label: biotin
 - preferred_term: p-Aminobenzoic acid
   concentration:
     value: '5'
@@ -315,9 +316,9 @@ ingredients:
   term:
     id: CHEBI:30753
     label: 4-aminobenzoic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
-    label: p-Aminobenzoic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
 - preferred_term: Thiamine-HCl
   concentration:
     value: '5'
@@ -326,9 +327,9 @@ ingredients:
   term:
     id: CHEBI:49105
     label: thiamine hydrochloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
-    label: Thiamine-HCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
 - preferred_term: Ca-pantothenate
   concentration:
     value: '5'
@@ -337,19 +338,19 @@ ingredients:
   term:
     id: CHEBI:29032
     label: (R)-pantothenate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000219
-    label: Ca-pantothenate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29032
+    label: (R)-pantothenate
 - preferred_term: Pyridoxine-HCl
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000703
+    id: CHEBI:30961
+    label: Pyridoxine-HCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
     label: Pyridoxine-HCl
 - preferred_term: Folic acid
   concentration:
@@ -359,9 +360,9 @@ ingredients:
   term:
     id: CHEBI:27470
     label: folic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
-    label: Folic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
+    label: folic acid
 - preferred_term: Vitamin B12
   concentration:
     value: '0.1'
@@ -370,9 +371,9 @@ ingredients:
   term:
     id: CHEBI:176843
     label: vitamin B12
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001027
-    label: Vitamin B12
+  mediaingredientmech_chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
 - preferred_term: Riboflavin
   concentration:
     value: '5'
@@ -381,9 +382,9 @@ ingredients:
   term:
     id: CHEBI:17015
     label: riboflavin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
-    label: Riboflavin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
+    label: riboflavin
 - preferred_term: Nicotinic acid
   concentration:
     value: '5'
@@ -392,9 +393,9 @@ ingredients:
   term:
     id: CHEBI:15940
     label: nicotinic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
-    label: Nicotinic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
+    label: nicotinic acid
 - preferred_term: Lipoic acid
   concentration:
     value: '5'
@@ -404,9 +405,9 @@ ingredients:
   term:
     id: CHEBI:16494
     label: lipoic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000166
-    label: Lipoic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16494
+    label: lipoic acid
 - preferred_term: Na2S·9H2O
   concentration:
     value: '1.5'
@@ -416,9 +417,9 @@ ingredients:
   term:
     id: CHEBI:76209
     label: sodium sulfide nonahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
-    label: Na2S·9H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
 - preferred_term: H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
@@ -428,9 +429,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001125
-    label: H2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26836
+    label: sulfuric acid
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
@@ -461,11 +462,11 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:49.758809'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     H2SO4; Added default concentration for ingredient: N2'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:04:20.861583+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -479,10 +480,10 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008354'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:51.225334'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name; Added default solution
     name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:29:52.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -492,6 +493,32 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Artificial seawater medium for strain JS_SRB250Lac"
     to "artificial_seawater_medium_for_strain_js_srb250lac" for consistent matching
+- timestamp: '2026-05-16T09:03:24.948906+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:49.781903+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 33 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:35.866471+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (shared-id regrounding audit, G21/G22/G24)
+  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more
+    ingredient groundings on this record that had been collapsed onto a chemically
+    non-specific or shared CHEBI id were re-grounded to the correct chemically-specific
+    term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
+- timestamp: '2026-06-10T07:46:53.549226+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:24.060358+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 4ebd55b82af9bbc86af529838a0183180b225b6e55e5564fe31441f5195b6128
+  source: artificial_seawater_medium_for_strain_js_srb250lac.yaml
 high_metal: true
 solutions:
 - preferred_term: Trace element solution SL-10*
@@ -527,6 +554,6 @@ solutions:
     value: '10'
     unit: G_PER_L
   name: Unknown solution
-merge_fingerprint: 9eeab6235ba327a563e6addef41f22c63ecf77587a253cbfc2bd07f4235a7aa5
+merge_fingerprint: 4ebd55b82af9bbc86af529838a0183180b225b6e55e5564fe31441f5195b6128
 merged_from:
 - artificial_seawater_medium_for_strain_js_srb250lac

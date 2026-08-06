@@ -3,6 +3,7 @@ name: alkaline_nutrient_agar_for_sporulation
 original_name: Alkaline Nutrient Agar (For sporulation)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MnSO4 x H2O
   concentration:
@@ -24,10 +25,10 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
   term:
-    id: CHEBI:86360
-    label: manganese(II) sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
     label: MnSO4 x H2O
 - preferred_term: Agar, if necessary
   concentration:
@@ -52,9 +53,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: Na2CO3 anhydrous
   concentration:
     value: '5.3'
@@ -64,8 +65,8 @@ ingredients:
   term:
     id: CHEBI:29377
     label: Na2CO3 anhydrous
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3 anhydrous
 media_term:
   preferred_term: TOGO Medium M2421
@@ -99,9 +100,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009004'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:55.591064'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:29:46.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -111,6 +112,27 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Alkaline Nutrient Agar (For sporulation)" to "alkaline_nutrient_agar_for_sporulation"
     for consistent matching
+- timestamp: '2026-05-16T09:03:23.664326+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:47.904851+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:35.571695+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:05:22.403642+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 5e02c93acc310c08b1a1fd4dc14b30d622030cb5c5d51f7e317d57e45d934a32
+  source: alkaline_nutrient_agar_for_sporulation.yaml
 solutions:
 - preferred_term: Na-sesquicarbonate solution
   term:
@@ -121,6 +143,6 @@ solutions:
     unit: G_PER_L
   notes: See mediadive_1174_Na-sesquicarbonate_solution.yaml for composition
   name: Unknown solution
-merge_fingerprint: 2a9fdd877b9385e717edda60ab3928f3576e808db97ad93bb1b0b9d35bef47ef
+merge_fingerprint: 5e02c93acc310c08b1a1fd4dc14b30d622030cb5c5d51f7e317d57e45d934a32
 merged_from:
 - alkaline_nutrient_agar_for_sporulation

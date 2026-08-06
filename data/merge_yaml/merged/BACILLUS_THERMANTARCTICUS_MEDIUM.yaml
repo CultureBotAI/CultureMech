@@ -3,8 +3,11 @@ name: bacillus_thermantarcticus_medium
 original_name: BACILLUS THERMANTARCTICUS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_range: 5.6-5.8
+ph_range:
+  min: 5.6
+  max: 5.8
 media_term:
   preferred_term: KOMODO Medium 675
   term:
@@ -24,8 +27,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Soil extract
   concentration:
@@ -55,11 +58,37 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "BACILLUS THERMANTARCTICUS medium" to "bacillus_thermantarcticus_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:30.420735+00:00'
+- timestamp: '2026-05-20T06:00:53.160415+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''5.6-5.8'' -> {''min'': 5.6, ''max'': 5.8}'
+- timestamp: '2026-06-05T07:40:25.351084+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:57.192926+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_675_BACILLUS_THERMANTARCTICUS_medium, bacillus_thermantarcticus_medium'
+- timestamp: '2026-08-06T03:04:57.192960+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 56fe9506a27a7a4ee8e73e064226121b28ad788ccc037fc1b02f3d05c3ae4f4b
+  source: KOMODO_675_BACILLUS_THERMANTARCTICUS_medium.yaml, bacillus_thermantarcticus_medium.yaml
 kg_microbe_match: mediadive.medium:74
+parent_media:
+  path: data/normalized_yaml/bacterial/bacillus_thermantarcticus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001815
+  name: bacillus_thermantarcticus_medium
+  notes: KOMODO record states DSMZ Medium 675 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 categories:
 - bacterial
 merged_from:

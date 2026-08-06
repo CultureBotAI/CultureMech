@@ -1,6 +1,7 @@
 id: CultureMech:015494
 name: BHIS_CaCl2
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Calf brains
@@ -69,7 +70,7 @@ ingredients:
     147.01'
 description: Brain heart infusion salt broth with 1mM CaCl2
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: BHIS_CaCl2
@@ -83,6 +84,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015494'
+- timestamp: '2026-05-16T09:04:40.311360+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:04.805891+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 4f84aef53ae52de4859e9ba921936b8e3527d948a35adce4d7b8c16740f0ef27
+  source: bhis_cacl2.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: 4f84aef53ae52de4859e9ba921936b8e3527d948a35adce4d7b8c16740f0ef27

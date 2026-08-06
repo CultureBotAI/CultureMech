@@ -3,6 +3,7 @@ name: fyp_medium
 original_name: FYP medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Sodium acetate
   concentration:
@@ -25,9 +26,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
-    label: Sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: Fructose
   concentration:
     value: '10'
@@ -37,9 +38,9 @@ ingredients:
   term:
     id: CHEBI:28645
     label: beta-D-fructofuranose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000288
-    label: Fructose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28645
+    label: beta-D-fructofuranose
 - preferred_term: Bacto Yeast Extract (Difco)
   concentration:
     value: '10'
@@ -54,9 +55,9 @@ ingredients:
   term:
     id: CHEBI:53426
     label: polysorbate 80
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000190
-    label: Tween 80
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53426
+    label: polysorbate 80
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '40'
@@ -64,11 +65,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
   term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4·7H2O
 - preferred_term: NaCl
   concentration:
     value: '2'
@@ -78,9 +79,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: FeSO4·7H2O
   concentration:
     value: '2'
@@ -133,10 +134,10 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008675'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:53.705875'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name; Added default solution
     name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:28.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -145,6 +146,27 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "FYP medium" to "fyp_medium" for consistent matching
+- timestamp: '2026-05-16T09:03:35.409181+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:05.816809+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:47.000798+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-08-06T03:05:35.847828+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 57d38908ac1fd3aab06c9245cb71ff7cdf37170909afb5dd24386967fd398958
+  source: fyp_medium.yaml
 solutions:
 - preferred_term: Polypepton*
   composition: []
@@ -168,6 +190,6 @@ solutions:
     unit: G_PER_L
   notes: See mediadive_4429_Salts_solution.yaml for composition
   name: Unknown solution
-merge_fingerprint: 4f14f15bf6a3becc0625d3f2364a79eef757dcae4abec95a95188c2b45ccc0fd
+merge_fingerprint: 57d38908ac1fd3aab06c9245cb71ff7cdf37170909afb5dd24386967fd398958
 merged_from:
 - fyp_medium

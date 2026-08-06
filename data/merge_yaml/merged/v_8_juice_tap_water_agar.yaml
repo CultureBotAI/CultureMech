@@ -3,31 +3,29 @@ name: v_8_juice_tap_water_agar
 original_name: V-8 Juice Tap Water Agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
 - preferred_term: Agar
   concentration:
-    value: '15'
+    value: '20'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
+- preferred_term: Distilled water
+  concentration:
+    value: '980'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
 media_term:
   preferred_term: TOGO Medium M1511
   term:
@@ -58,9 +56,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008056'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:49.164402'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:25.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -70,10 +68,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "V-8 Juice Tap Water Agar" to "v_8_juice_tap_water_agar"
     for consistent matching
-- timestamp: '2026-04-17T06:30:26.152227+00:00'
+- timestamp: '2026-05-16T09:04:38.414890+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:54.929578+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:19.568303+00:00'
   curator: recipe-merger
-  action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: togo_medium_m1749, v_8_juice_tap_water_agar'
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: JCM_J1481_Bold_s_Basal_Medium_BBM, togo_medium_m1749, v_8_juice_tap_water_agar'
+- timestamp: '2026-08-06T03:04:19.568341+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint ea6b07fcfbd18d750e65c102f8729b15491e6d77a1539c68bea8e26b5a5cf509
+  source: JCM_J1481_Bold_s_Basal_Medium_BBM.yaml, togo_medium_m1749.yaml, v_8_juice_tap_water_agar.yaml
 high_metal: true
 solutions:
 - preferred_term: CaCO3*
@@ -92,13 +105,19 @@ solutions:
   notes: 'Role: Nutrient source; Properties: Undefined component'
   name: Unknown solution
 synonyms:
+- name: bold_s_basal_medium_bbm
+  source: unknown
+  source_id: jcm.grmd:1481
+  original_category: algae
 - name: togo_medium_m1749
   source: TOGO
   source_id: TOGO:M1749
   original_category: bacterial
 categories:
+- algae
 - bacterial
 merged_from:
+- JCM_J1481_Bold_s_Basal_Medium_BBM
 - togo_medium_m1749
 - v_8_juice_tap_water_agar
 merge_fingerprint: ea6b07fcfbd18d750e65c102f8729b15491e6d77a1539c68bea8e26b5a5cf509

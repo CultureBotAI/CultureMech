@@ -1,0 +1,63 @@
+id: CultureMech:015420
+name: half_strength_marine_medium_with_1_0_nacl
+original_name: HALF STRENGTH MARINE MEDIUM WITH 1.0% NaCl
+category: specialized
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J762
+  term:
+    id: mediadive.medium:J762
+    label: HALF STRENGTH MARINE MEDIUM WITH 1.0% NaCl
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=762'
+ingredients:
+- preferred_term: Marine broth 2216
+  concentration:
+    value: '18.7'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.525161Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J762'
+- timestamp: '2026-03-13T06:20:42.574819Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015420'
+- timestamp: '2026-03-17T17:06:21.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:34.232966+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HALF STRENGTH MARINE MEDIUM WITH 1.0% NaCl" to "half_strength_marine_medium_with_1_0_nacl"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:57.770740+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:05.148346+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 70db091ef6ebae7d5dfa3ba5485060678fc282c3509672fc20c7829e570e0fde
+  source: half_strength_marine_medium_with_1_0_nacl.yaml
+kg_microbe_match: mediadive.medium:74
+merge_fingerprint: 70db091ef6ebae7d5dfa3ba5485060678fc282c3509672fc20c7829e570e0fde
+merged_from:
+- half_strength_marine_medium_with_1_0_nacl

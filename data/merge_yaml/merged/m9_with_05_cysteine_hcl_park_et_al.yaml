@@ -3,6 +3,7 @@ name: m9_with_05_cysteine_hcl_park_et_al
 original_name: M9 with .05% cysteine HCl; Park et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose
@@ -13,17 +14,23 @@ ingredients:
     value: '11.1012'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.1'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '42.2654'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -31,9 +38,9 @@ ingredients:
   concentration:
     value: '8.55578'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Cysteine-HCl
   term:
     id: CHEBI:91247
@@ -48,6 +55,9 @@ ingredients:
   concentration:
     value: '22.0449'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -55,8 +65,8 @@ ingredients:
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
@@ -65,8 +75,8 @@ ingredients:
   concentration:
     value: '18.6947'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 preparation_steps:
 - step_number: 1
@@ -97,6 +107,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "M9 with .05% cysteine HCl; Park et al" to "m9_with_05_cysteine_hcl_park_et_al"
     for consistent matching
+- timestamp: '2026-06-05T07:41:12.108730+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:41.265916+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 500175dac360611e27db04181e88972c8098b4c2449f3a612876f2de12fb4a1e
+  source: m9_with_05_cysteine_hcl_park_et_al.yaml
 media_term:
   preferred_term: MediaDB Medium 250
   term:
@@ -108,6 +129,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 0c1916f26e9d7575ae8d6fb8d003a93a001909d316d1c5ae78cb12519e0f7fe7
+merge_fingerprint: 500175dac360611e27db04181e88972c8098b4c2449f3a612876f2de12fb4a1e
 merged_from:
 - m9_with_05_cysteine_hcl_park_et_al

@@ -3,6 +3,7 @@ name: tryptic_soy_agar_broth_with_5_sheep_blood_defibrinated
 original_name: Tryptic Soy Agar/Broth with 5% Sheep Blood (defibrinated)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Sheep Blood (defibrinated)
@@ -140,9 +141,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -151,17 +152,14 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Soytone
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-  term:
-    id: MICRO:0000181
-    label: ''
 - preferred_term: Tryptone
   concentration:
     value: '15'
@@ -192,6 +190,11 @@ notes: 'Source: https://togomedium.org/medium/M2572
 applications:
 - Microbial cultivation
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI,
+    1 de-grounded (mixture or unverifiable).
 - timestamp: '2026-01-27T06:35:56.770218Z'
   curator: togo-import
   action: Imported from TOGO Medium
@@ -213,14 +216,26 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Tryptic Soy Agar/Broth with 5% Sheep Blood (defibrinated)"
     to "tryptic_soy_agar_broth_with_5_sheep_blood_defibrinated" for consistent matching
-- timestamp: '2026-04-17T06:29:44.779350+00:00'
+- timestamp: '2026-06-05T07:41:54.267675+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:12.554476+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M2573_Tryptic_Soy_Agar_Broth_with_5_Sheep_Blood_defibrinated,
     tryptic_soy_agar_broth_with_5_sheep_blood_defibrinated'
+- timestamp: '2026-08-06T03:05:12.554525+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 0c59be01a622d11805d04f47f7a527d9e5132aadc3795c8c8f6e42bceb3774de
+  source: TOGO_M2573_Tryptic_Soy_Agar_Broth_with_5_Sheep_Blood_defibrinated.yaml,
+    tryptic_soy_agar_broth_with_5_sheep_blood_defibrinated.yaml
 categories:
 - bacterial
 merged_from:
 - TOGO_M2573_Tryptic_Soy_Agar_Broth_with_5_Sheep_Blood_defibrinated
 - tryptic_soy_agar_broth_with_5_sheep_blood_defibrinated
-merge_fingerprint: 52830455f0ae45a765b6c3e9a1bea694c7e3e268a3e429bf132a192c72a87df0
+merge_fingerprint: 0c59be01a622d11805d04f47f7a527d9e5132aadc3795c8c8f6e42bceb3774de

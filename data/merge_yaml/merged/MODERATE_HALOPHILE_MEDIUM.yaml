@@ -1,153 +1,160 @@
-id: CultureMech:010004
+id: CultureMech:000301
 name: moderate_halophile_medium
-original_name: Moderate Halophile Medium
+original_name: MODERATE HALOPHILE MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
+ph_value: 7.1
+media_term:
+  preferred_term: JCM Medium J599
+  term:
+    id: mediadive.medium:J599
+    label: MODERATE HALOPHILE MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=599'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
-  concentration:
-    value: '9.6'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:32599
-    label: ''
 - preferred_term: Yeast extract
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: NaCl
-  concentration:
-    value: '81'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: CaCl2・2H2O
-  concentration:
-    value: '0.36'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:86158
-    label: ''
-- preferred_term: MgCl2・6H2O
-  concentration:
-    value: '7'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:86345
-    label: ''
-- preferred_term: KCl
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
-- preferred_term: NaHCO3
-  concentration:
-    value: '0.06'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
-    component'
-  term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
-- preferred_term: NaBr
-  concentration:
-    value: '0.026'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:63004
-    label: sodium bromide
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000189
-    label: NaBr
-- preferred_term: Glucose
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
-- preferred_term: Proteose peptone No. 3 (BD-Difco)
+- preferred_term: Proteose peptone no. 3
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M605
+- preferred_term: Glucose
   term:
-    id: TOGO:M605
-    label: Moderate Halophile Medium
-notes: 'Source: https://togomedium.org/medium/M605
-
-  Original source: JCM - JCM_M599
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=599'
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: Glucose
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '81'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '9.6'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '7'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.36'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: KCl
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: NaHCO3
+- preferred_term: NaBr
+  term:
+    id: CHEBI:63004
+    label: sodium bromide
+  concentration:
+    value: '0.026'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63004
+    label: NaBr
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Add components to distilled water and bring volume to 1.0 L. Adjust
+    pH to 7.0 - 7.2. For preparation of solid medium, add 20.0 g/L agar.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.389851Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M605'
-- timestamp: '2026-01-28T19:48:15.449262Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:20:10.642523Z'
+- timestamp: '2026-01-26T17:53:17.046784Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J599'
+- timestamp: '2026-03-13T06:18:54.285155Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:010004'
-- timestamp: '2026-03-17T06:29:58.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:000301'
+- timestamp: '2026-03-17T17:06:12.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:29.570980+00:00'
+- timestamp: '2026-03-17T19:45:05.244617+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Moderate Halophile Medium" to "moderate_halophile_medium"
+  notes: Normalized name from "MODERATE HALOPHILE MEDIUM" to "moderate_halophile_medium"
     for consistent matching
-merge_fingerprint: 345ed6b32bfb76271445f6d41c430b891daf586899a44b3fef438e3973470937
+- timestamp: '2026-05-16T09:02:57.678817+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-05T07:40:14.970025+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:42.336425+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-07-29T02:09:00.657591Z'
+  curator: domain-growth-evidence
+  action: ANNOTATED
+  changes: category
+  notes: 'Moved archaea/ -> bacterial/ and restamped category on growth evidence:
+    kg-microbe records only bacterial taxa growing in this medium (Salinicoccus hispanicus,
+    Salinicoccus roseus). The name carries a physiology (halophile/thermophile) that
+    spans both domains, so the previous archaea/ placement was unsubstantiated (#138).
+    Filename disambiguated with the source id because a DIFFERENT medium already occupies
+    the original name in bacterial/ (#116).'
+- timestamp: '2026-08-06T03:04:36.983213+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 80c8d3c7ebd1524af118342280564bb7a26cff2e00641aa72df6654de7b259dc
+  source: JCM_J599_moderate_halophile_medium.yaml
+merge_fingerprint: 80c8d3c7ebd1524af118342280564bb7a26cff2e00641aa72df6654de7b259dc
 merged_from:
-- moderate_halophile_medium
+- JCM_J599_moderate_halophile_medium

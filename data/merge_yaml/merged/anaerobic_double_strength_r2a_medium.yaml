@@ -3,6 +3,7 @@ name: anaerobic_double_strength_r2a_medium
 original_name: ANAEROBIC DOUBLE-STRENGTH R2A MEDIUM
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:
@@ -24,12 +25,6 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -37,8 +32,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Starch
   term:
@@ -47,8 +42,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
     label: Starch
 - preferred_term: Sodium pyruvate
   term:
@@ -57,18 +52,18 @@ ingredients:
   concentration:
     value: '0.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
     label: Sodium pyruvate
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -77,8 +72,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: L-Cysteine HCl x H2O
   term:
@@ -87,8 +82,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
     label: L-Cysteine HCl x H2O
 preparation_steps:
 - step_number: 1
@@ -120,6 +115,27 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ANAEROBIC DOUBLE-STRENGTH R2A MEDIUM" to "anaerobic_double_strength_r2a_medium"
     for consistent matching
-merge_fingerprint: 3b545ca7d35d99137d62d036e7b78f2609d7c334239ac99f2d143c0bc6a97100
+- timestamp: '2026-06-05T07:41:57.531969+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:52.284063+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:47:14.999532+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:04.704877+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 8a93e50c452e3a728ad240ac130d5c44d413c5a07ef8e88b076c00fab3b77f9d
+  source: anaerobic_double_strength_r2a_medium.yaml
+merge_fingerprint: 8a93e50c452e3a728ad240ac130d5c44d413c5a07ef8e88b076c00fab3b77f9d
 merged_from:
 - anaerobic_double_strength_r2a_medium

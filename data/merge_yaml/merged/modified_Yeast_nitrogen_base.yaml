@@ -3,6 +3,7 @@ name: modified_yeast_nitrogen_base
 original_name: modified Yeast nitrogen base
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1837
@@ -22,8 +23,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: MES Hydrat
   concentration:
@@ -36,8 +37,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Gellan Gum
   term:
@@ -46,8 +47,8 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000929
+  mediaingredientmech_chebi_term:
+    id: CHEBI:85248
     label: Gellan Gum
 preparation_steps:
 - step_number: 1
@@ -74,6 +75,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "modified Yeast nitrogen base" to "modified_yeast_nitrogen_base"
     for consistent matching
+- timestamp: '2026-06-05T07:41:57.010114+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:04.063953+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint ce38033efff3e5268dbc8b3851aa0e350b331f660908e2cbefd891a9b1e86d46
+  source: modified_yeast_nitrogen_base.yaml
 merge_fingerprint: ce38033efff3e5268dbc8b3851aa0e350b331f660908e2cbefd891a9b1e86d46
 merged_from:
 - modified_yeast_nitrogen_base

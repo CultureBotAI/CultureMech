@@ -1,8 +1,9 @@
 id: CultureMech:008958
 name: halobacterium_starch_medium
 original_name: Halobacterium starch medium
-category: bacterial
+category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +32,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2 · 2H2O
   concentration:
     value: '0.13'
@@ -61,14 +62,17 @@ ingredients:
   term:
     id: CHEBI:32036
     label: potassium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001064
-    label: K2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32036
+    label: potassium sulfate
 - preferred_term: Soluble starch
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Undefined component'
+  term:
+    id: CHEBI:28017
+    label: ''
 - preferred_term: Peptone, Bacto (BD 211677)
   concentration:
     value: '1'
@@ -106,6 +110,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Halobacterium starch medium" to "halobacterium_starch_medium"
     for consistent matching
-merge_fingerprint: 389f8ab36eff9ce6358db53873888ba17f20bc68af5e1b5fea82d0208d7d36f9
+- timestamp: '2026-06-05T07:41:07.609397+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:59.464634+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:28.718140+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 14502515dd498f025453c4a1a331923aa2038bc9577810de1f0ec1b95676d0ee
+  source: halobacterium_starch_medium.yaml
+merge_fingerprint: 14502515dd498f025453c4a1a331923aa2038bc9577810de1f0ec1b95676d0ee
 merged_from:
 - halobacterium_starch_medium

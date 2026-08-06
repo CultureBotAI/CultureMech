@@ -1,16 +1,18 @@
-id: CultureMech:000589
+id: CultureMech:003861
 name: haloalkaliphilic_growth_medium
-original_name: HALOALKALIPHILIC GROWTH MEDIUM
+original_name: HALOALKALIPHILIC GROWTH medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 10.0
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1150 | DSMZ Medium: 1150
+  (mediadive.medium:1150) | Aerobic: No'
 media_term:
-  preferred_term: DSMZ Medium 1150
+  preferred_term: KOMODO Medium 1150
   term:
-    id: mediadive.medium:1150
-    label: HALOALKALIPHILIC GROWTH MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1150.pdf'
+    id: komodo.medium:1150
+    label: HALOALKALIPHILIC GROWTH medium
 ingredients:
 - preferred_term: Glucose
   term:
@@ -19,13 +21,16 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Na2B4O7 x 10 H2O
   concentration:
     value: '4'
     unit: G_PER_L
+  term:
+    id: CHEBI:131366
+    label: ''
 - preferred_term: NaNO3
   term:
     id: CHEBI:63005
@@ -39,22 +44,22 @@ ingredients:
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Yeast extract
   concentration:
@@ -64,12 +69,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -77,37 +76,77 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: Adjust to pH 10.0 with concentrated NaOH.
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  notes: pH adjustment (extracted from notes)
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:13.519778Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1150'
-- timestamp: '2026-01-28T19:48:37.050152Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:18:56.627892Z'
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1150'
+- timestamp: '2026-02-03T11:19:03.083981'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1150
+- timestamp: '2026-03-13T03:08:59.943231Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Added pH buffer: NaOH'
+- timestamp: '2026-03-13T06:19:22.787874Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000589'
-- timestamp: '2026-03-17T06:30:44.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:003861'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:30:05.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:07.717378+00:00'
+- timestamp: '2026-03-17T19:45:37.228305+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALOALKALIPHILIC GROWTH MEDIUM" to "haloalkaliphilic_growth_medium"
+  notes: Normalized name from "HALOALKALIPHILIC GROWTH medium" to "haloalkaliphilic_growth_medium"
     for consistent matching
-merge_fingerprint: eea8ecb19d03410f38f9d323f738ca345c14f7bc7e034999c17d025df97aa239
+- timestamp: '2026-05-16T09:03:00.363921+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:19.408266+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:27.570267+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:46:43.633984+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:40.688137+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 3f266cd189531e29953a5a726ea3933ca0a17a987bcda5ad577037f4f881e621
+  source: KOMODO_1150_HALOALKALIPHILIC_GROWTH_medium.yaml
+merge_fingerprint: 3f266cd189531e29953a5a726ea3933ca0a17a987bcda5ad577037f4f881e621
 merged_from:
-- haloalkaliphilic_growth_medium
+- KOMODO_1150_HALOALKALIPHILIC_GROWTH_medium

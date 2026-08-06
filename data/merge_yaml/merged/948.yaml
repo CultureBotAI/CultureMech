@@ -4,6 +4,7 @@ original_name: '948'
 category: bacterial
 description: 948. NBRC 947.
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Bacto Marine Broth 2216 (Difco)37.4gMethanol*5mlAgar (if needed)15gDistilled
@@ -40,10 +41,19 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007507'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:45.939933'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Bacto Marine Broth 2216 (Difco)37.4gMethanol*5mlAgar
     (if needed)15gDistilled water1LpH unadjusted*Sterilize separately by filtration.'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-05-16T09:03:06.754368+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:05:04.701669+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint ab668b0384ad36894c7b907b3f706b12720d283d47bfb69516a0bcecdc186180
+  source: NBRC_948.yaml
 merge_fingerprint: ab668b0384ad36894c7b907b3f706b12720d283d47bfb69516a0bcecdc186180
 merged_from:
 - NBRC_948

@@ -1,109 +1,132 @@
-id: CultureMech:003137
+id: CultureMech:010238
 name: nha_medium
-original_name: NHA MEDIUM
+original_name: NHA Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 7.1
-media_term:
-  preferred_term: JCM Medium J793
-  term:
-    id: mediadive.medium:J793
-    label: NHA MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=793'
 ingredients:
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
+- preferred_term: Distilled water
   concentration:
-    value: '240'
+    value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: MgSO4 x 7 H2O
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: KCl
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
-    id: CHEBI:32588
-    label: KCl
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: NaCl
   concentration:
-    value: '5'
+    value: '240'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
-- preferred_term: Trisodium citrate
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
-    id: CHEBI:53258
-    label: Trisodium citrate
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
-    label: Trisodium citrate
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2・2H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
-- preferred_term: Casamino acids
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:86158
+    label: ''
+- preferred_term: KCl
   concentration:
     value: '5'
     unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Add components to distilled water and bring volume to 1.0 L. Adjust
-    pH to 7.0 - 7.2.
-- step_number: 2
-  action: MIX
-  description: For preparation of solid medium, add 20.0 g/L agar.
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Trisodium citrate
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
+  term:
+    id: CHEBI:53258
+    label: sodium citrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
+    label: sodium citrate
+- preferred_term: Casamino acids (BD-Difco)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M825
+  term:
+    id: TOGO:M825
+    label: NHA Medium
+notes: 'Source: https://togomedium.org/medium/M825
+
+  Original source: JCM - JCM_M793
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=793'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:17.620707Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J793'
-- timestamp: '2026-01-28T19:48:10.935730Z'
+- timestamp: '2026-01-27T06:35:55.788428Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M825'
+- timestamp: '2026-01-28T19:48:34.136644Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:19:18.085319Z'
+- timestamp: '2026-03-13T06:20:12.356767Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:003137'
-- timestamp: '2026-03-17T06:29:48.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:010238'
+- timestamp: '2026-03-17T06:30:37.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:31.893054+00:00'
+- timestamp: '2026-03-17T19:46:31.301001+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "NHA MEDIUM" to "nha_medium" for consistent matching
+  notes: Normalized name from "NHA Medium" to "nha_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:44.815853+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:33.292644+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-08-06T03:05:19.628256+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 0a6530aab9e2c3444ee6d3f4ad0a46cd70fe456007dbcde4073ad6da6e19c422
+  source: TOGO_M825_NHA_Medium.yaml
 high_metal: true
-merge_fingerprint: 6329001ca1d5959bba2657db1f6c573bd499e98b75efa321ebaac95f161a6d1f
+merge_fingerprint: 0a6530aab9e2c3444ee6d3f4ad0a46cd70fe456007dbcde4073ad6da6e19c422
 merged_from:
-- nha_medium
+- TOGO_M825_NHA_Medium

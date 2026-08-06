@@ -4,6 +4,7 @@ original_name: '960'
 category: bacterial
 description: 960. NBRC 959.
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Glucose2gYeast extract0.2gMonosodium glutamate0.5gAgar (if needed)12gSeawater1L
@@ -39,10 +40,19 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007508'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:45.942547'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Glucose2gYeast extract0.2gMonosodium
     glutamate0.5gAgar (if needed)12gSeawater1L'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-05-16T09:03:06.757252+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:05:04.705310+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 768af1e1555db9f1e124e276802edc68c4d95df9526ed885ff6739f7b0ea66ba
+  source: NBRC_960.yaml
 merge_fingerprint: 768af1e1555db9f1e124e276802edc68c4d95df9526ed885ff6739f7b0ea66ba
 merged_from:
 - NBRC_960

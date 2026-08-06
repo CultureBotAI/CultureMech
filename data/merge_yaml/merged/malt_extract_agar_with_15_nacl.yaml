@@ -3,6 +3,7 @@ name: malt_extract_agar_with_15_nacl
 original_name: MALT EXTRACT AGAR WITH 15% NaCl
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J125
@@ -22,8 +23,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Peptone
   concentration:
@@ -36,8 +37,8 @@ ingredients:
   concentration:
     value: '150'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Agar
   term:
@@ -46,8 +47,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -69,6 +70,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MALT EXTRACT AGAR WITH 15% NaCl" to "malt_extract_agar_with_15_nacl"
     for consistent matching
+- timestamp: '2026-06-05T07:41:56.942933+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:04.032106+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b1a7af226dea31e31256fdab030880c9e729f98e3582d0b242338cee9b325ef1
+  source: malt_extract_agar_with_15_nacl.yaml
 merge_fingerprint: b1a7af226dea31e31256fdab030880c9e729f98e3582d0b242338cee9b325ef1
 merged_from:
 - malt_extract_agar_with_15_nacl

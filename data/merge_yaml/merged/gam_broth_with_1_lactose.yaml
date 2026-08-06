@@ -1,50 +1,85 @@
-id: CultureMech:003042
+id: CultureMech:010124
 name: gam_broth_with_1_lactose
-original_name: GAM BROTH WITH 1% LACTOSE
+original_name: GAM Broth With 1% Lactose
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-media_term:
-  preferred_term: JCM Medium J697
-  term:
-    id: mediadive.medium:J697
-    label: GAM BROTH WITH 1% LACTOSE
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=697'
 ingredients:
-- preferred_term: GAM broth
+- preferred_term: Distilled water
   concentration:
-    value: '59'
+    value: '1'
     unit: G_PER_L
-- preferred_term: Lactose
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:17716
-    label: Lactose
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Lactose
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000339
-    label: Lactose
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:36218
+    label: beta-lactose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:36218
+    label: beta-lactose
+- preferred_term: GAM broth (Nissui)
+  concentration:
+    value: '59'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M717
+  term:
+    id: TOGO:M717
+    label: GAM Broth With 1% Lactose
+notes: 'Source: https://togomedium.org/medium/M717
+
+  Original source: JCM - JCM_M697
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=697'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:17.328066Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J697'
-- timestamp: '2026-03-13T06:19:17.376414Z'
+- timestamp: '2026-01-27T06:35:55.590103Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M717'
+- timestamp: '2026-01-28T19:48:18.494848Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:11.511166Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:003042'
-- timestamp: '2026-03-17T06:30:00.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:010124'
+- timestamp: '2026-03-17T06:30:04.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:31.057591+00:00'
+- timestamp: '2026-03-17T19:46:30.441253+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "GAM BROTH WITH 1% LACTOSE" to "gam_broth_with_1_lactose"
+  notes: Normalized name from "GAM Broth With 1% Lactose" to "gam_broth_with_1_lactose"
     for consistent matching
-merge_fingerprint: a547e4bf4a8ed4a0dc83a9ec97f1a6f81dfac4222e7062fb86cf181403532a7d
+- timestamp: '2026-06-05T07:40:43.847886+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:18.695512+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2e4ab1b04244d48e836441905f96801b8de5fc5dbff5fe549f8d73fd692978d5
+  source: TOGO_M717_GAM_Broth_With_1_Lactose.yaml
+merge_fingerprint: 2e4ab1b04244d48e836441905f96801b8de5fc5dbff5fe549f8d73fd692978d5
 merged_from:
-- gam_broth_with_1_lactose
+- TOGO_M717_GAM_Broth_With_1_Lactose

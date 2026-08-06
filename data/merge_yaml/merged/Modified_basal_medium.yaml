@@ -3,6 +3,7 @@ name: modified_basal_medium
 original_name: Modified basal medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,8 +32,8 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: Cysteine-HCl
   concentration:
@@ -71,15 +72,18 @@ ingredients:
   term:
     id: CHEBI:44557
     label: nitrilotriacetic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
-    label: Nitrilotriacetic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
 - preferred_term: Sodium tungstate
   concentration:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:63940
+    label: ''
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.2'
@@ -95,6 +99,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:49553
+    label: ''
 - preferred_term: Sodium selenate
   concentration:
     value: '20'
@@ -110,6 +117,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:34887
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '20'
@@ -128,9 +138,9 @@ ingredients:
   term:
     id: CHEBI:86364
     label: manganese(II) sulfate monohydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: manganese(II) sulfate monohydrate
 - preferred_term: Zinc sulfate
   concentration:
     value: '0.2'
@@ -140,9 +150,9 @@ ingredients:
   term:
     id: CHEBI:35176
     label: zinc sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: zinc sulfate
 - preferred_term: Ferrous ammonium sulfate
   concentration:
     value: '0.8'
@@ -155,6 +165,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Ammonium chloride
   concentration:
     value: '100'
@@ -164,9 +177,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: Ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: Potassium chloride
   concentration:
     value: '10'
@@ -176,9 +189,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Calcium chloride
   concentration:
     value: '4'
@@ -188,9 +201,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: Calcium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: Magnesium sulfate
   concentration:
     value: '20'
@@ -200,9 +213,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: Magnesium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
 - preferred_term: Paraamino benzoic acid
   concentration:
     value: '5'
@@ -219,8 +232,8 @@ ingredients:
   term:
     id: CHEBI:31345
     label: Calcium pantothenate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium pantothenate
 - preferred_term: Folic acid
   concentration:
@@ -230,9 +243,9 @@ ingredients:
   term:
     id: CHEBI:27470
     label: folic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
-    label: Folic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
+    label: folic acid
 - preferred_term: Vitamin B12
   concentration:
     value: '5'
@@ -241,9 +254,9 @@ ingredients:
   term:
     id: CHEBI:176843
     label: vitamin B12
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001027
-    label: Vitamin B12
+  mediaingredientmech_chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
 - preferred_term: Riboflavin
   concentration:
     value: '5'
@@ -252,9 +265,9 @@ ingredients:
   term:
     id: CHEBI:17015
     label: riboflavin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
-    label: Riboflavin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
+    label: riboflavin
 - preferred_term: Nicotinic acid
   concentration:
     value: '5'
@@ -263,9 +276,9 @@ ingredients:
   term:
     id: CHEBI:15940
     label: nicotinic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
-    label: Nicotinic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
+    label: nicotinic acid
 - preferred_term: 2-Mercaptoethanesulfonic acid
   concentration:
     value: '2'
@@ -275,8 +288,8 @@ ingredients:
   term:
     id: CHEBI:17905
     label: 2-Mercaptoethanesulfonic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000392
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17905
     label: 2-Mercaptoethanesulfonic acid
 - preferred_term: Thiamine
   concentration:
@@ -297,9 +310,9 @@ ingredients:
   term:
     id: CHEBI:16709
     label: pyridoxine
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000317
-    label: Pyridoxine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16709
+    label: pyridoxine
 - preferred_term: Thioctic acid
   concentration:
     value: '5'
@@ -309,9 +322,9 @@ ingredients:
   term:
     id: CHEBI:30314
     label: (R)-lipoic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000817
-    label: Thioctic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30314
+    label: (R)-lipoic acid
 - preferred_term: D-biotin
   concentration:
     value: '2'
@@ -320,9 +333,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
-    label: D-biotin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
+    label: biotin
 media_term:
   preferred_term: TOGO Medium M3160
   term:
@@ -341,10 +354,10 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:57.729884'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO; Added default concentration
     for ingredient: N2'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:05:07.934555+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -358,9 +371,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009619'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:59.823414'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:51.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -370,6 +383,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Modified basal medium" to "modified_basal_medium" for
     consistent matching
+- timestamp: '2026-05-16T09:04:25.141488+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:41:36.309204+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 18 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:48.090225+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint a4b2448f8c08e231fac3a6eb666097eb4b0e2507809e5737004064cd77cf6ce2
+  source: modified_basal_medium.yaml
 high_metal: true
 solutions:
 - preferred_term: Mineral solution
@@ -390,6 +418,6 @@ solutions:
     unit: G_PER_L
   notes: See mediadive_6140_Trace_metal_solution.yaml for composition
   name: Unknown solution
-merge_fingerprint: 79208c7db088784f5136abc2875065d10a964cb80ca3aa6c79703ddb6cf6439d
+merge_fingerprint: a4b2448f8c08e231fac3a6eb666097eb4b0e2507809e5737004064cd77cf6ce2
 merged_from:
 - modified_basal_medium

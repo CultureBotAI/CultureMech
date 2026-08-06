@@ -1,388 +1,178 @@
-id: CultureMech:009329
+id: CultureMech:002172
 name: yps_medium
-original_name: YPS medium
+original_name: YPS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ingredients:
-- preferred_term: CaCl2
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+ph_value: 6.8
+media_term:
+  preferred_term: DSMZ Medium 990
   term:
-    id: CHEBI:3312
-    label: calcium dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
-    label: CaCl2
-- preferred_term: PIPES buffer (Sigma)
+    id: mediadive.medium:990
+    label: YPS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium990.pdf'
+ingredients:
+- preferred_term: Sea Salt
   concentration:
-    value: '3'
+    value: '35'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Organic compound, Defined component, Simple component'
-- preferred_term: Bacto Yeast Extract (Difco)
+- preferred_term: PIPES
+  term:
+    id: CHEBI:39033
+    label: PIPES
+  concentration:
+    value: '3.46'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39033
+    label: PIPES
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Peptone
   concentration:
     value: '4'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Bacto Peptone (Difco)
+- preferred_term: Elemental sulphur
+  term:
+    id: CHEBI:33403
+    label: Elemental sulphur
   concentration:
-    value: '0.4'
+    value: '5'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Artificial seawater
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33403
+    label: Elemental sulphur
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
   concentration:
-    value: '1'
+    value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  concentration:
+    value: '0.35'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
+    label: CaCl2
+- preferred_term: FeCl3
+  term:
+    id: CHEBI:30808
+    label: FeCl3
+  concentration:
+    value: '0.0067'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30808
+    label: FeCl3
+- preferred_term: Na2WO4
+  term:
+    id: CHEBI:63940
+    label: sodium tungstate
+  concentration:
+    value: '0.0029'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63940
+    label: Na2WO4
 - preferred_term: Resazurin
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Defined
-    component, Simple component'
   term:
     id: CHEBI:8806
     label: Resazurin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
-- preferred_term: Sulfur
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: Na2S x 9 H2O
   term:
-    id: CHEBI:26833
-    label: sulfur atom
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000927
-    label: Sulfur
-- preferred_term: N2
-  notes: 'Properties: Gas'
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
   concentration:
-    value: variable
-    unit: VARIABLE
-  term:
-    id: CHEBI:17997
-    label: ''
-- preferred_term: Na2S-9H2O
-  concentration:
-    value: '0.025'
+    value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: Distilled water
-  concentration:
-    value: '2.0'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component [Merged 2 duplicates: 1.0, 1.0]'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: NaCl
-  concentration:
-    value: '24.4'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component [Merged 2 duplicates: 23.4, 1.0]'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: MgCl2 . 6H2O
-  concentration:
-    value: '10.8'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86345
-    label: ''
-- preferred_term: H3BO3
-  concentration:
-    value: '0.035'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component [Merged 2 duplicates: 0.025, 0.01]'
-  term:
-    id: CHEBI:33118
-    label: boric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
-- preferred_term: KCl
-  concentration:
-    value: '0.7'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
-- preferred_term: NaHCO3
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
-- preferred_term: Na2SO4
-  concentration:
-    value: '4'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32149
-    label: sodium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
-    label: Na2SO4
-- preferred_term: SrCl2 . 6H2O
-  concentration:
-    value: '0.025'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:36385
-    label: ''
-- preferred_term: NaF
-  concentration:
-    value: '0.003'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:28741
-    label: sodium fluoride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000182
-    label: NaF
-- preferred_term: KBr
-  concentration:
-    value: '0.09'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32030
-    label: potassium bromide
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001123
-    label: KBr
-- preferred_term: MgSO4 . 7H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32599
-    label: ''
-- preferred_term: CaCl2 . 2H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86158
-    label: ''
-- preferred_term: Na2MoO4 . 2H2O
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:75215
-    label: ''
-- preferred_term: FeSO4 . 7H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:75836
-    label: ''
-- preferred_term: CuSO4 . 5H2O
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:31440
-    label: copper(II) sulfate pentahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
-    label: CuSO4 . 5H2O
-- preferred_term: Nitrilotriacetic acid
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:44557
-    label: nitrilotriacetic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
-    label: Nitrilotriacetic acid
-- preferred_term: MnSO4 . 2H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86356
-    label: ''
-- preferred_term: AIK(SO4)2
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: ZnSO4
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:35176
-    label: zinc sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: ZnSO4
-- preferred_term: CoSO4
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:53470
-    label: cobalt(2+) sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000158
-    label: CoSO4
-media_term:
-  preferred_term: TOGO Medium M2780
-  term:
-    id: TOGO:M2780
-    label: YPS medium
-notes: 'Source: https://togomedium.org/medium/M2780'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Prepare the medium without the yeast extract, peptone and sodium sulphide.
+    Boil the medium and cool under nitrogen. Adjust the pH to 6.8. Dispense into hungate
+    tubes or serum bottles under a nitrogen atmosphere. Sterilise the medium at 100°C
+    for 3 hours on 3 consecutive days. Add the peptone and yeast extract from sterile
+    (10% w/v) stock solutions. The medium is reduced by adding a sterile, neutralised
+    5% w/v sodium sulphide solution to an end concentration of 0.025%. Final pH should
+    be 6.8
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:57.289839Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2780'
-- timestamp: '2026-01-28T19:48:31.610010Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.448212'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: N2; Added default concentration
-    for ingredient: KOH solution'
-- timestamp: '2026-03-09T08:04:52.680713+00:00'
-  curator: solution-migrator-v1.0
-  action: Migrated solutions from ingredients to solutions array
-  notes: Moved 6 solution(s) from ingredients
-- timestamp: '2026-03-13T03:09:24.115146Z'
-  curator: data-quality-cleanup-v1.0
-  action: Data quality fixes
-  notes: Merged 3 duplicate ingredient(s)
-- timestamp: '2026-03-13T06:20:05.678816Z'
+- timestamp: '2026-01-26T17:53:13.004540Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 990'
+- timestamp: '2026-03-13T06:19:10.952527Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:009329'
-- curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:58.453689'
-  action: Applied schema defaults and normalizations
-  notes: Added default solution name; Added default solution name; Added default solution
-    name; Added default solution name; Added default solution name; Added default
-    solution name
-- timestamp: '2026-03-17T06:30:32.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:002172'
+- timestamp: '2026-03-17T06:29:51.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:24.592885+00:00'
+- timestamp: '2026-03-17T19:45:23.686698+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "YPS medium" to "yps_medium" for consistent matching
-solutions:
-- preferred_term: 10 mM Na2WO4 solution
-  composition: []
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-  name: Unknown solution
-- preferred_term: 25 mM FeCl3 solution
-  composition: []
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  name: Unknown solution
-- preferred_term: 14% (wt/vol) NH4Cl solution
-  composition: []
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Solution, Defined
-    component'
-  name: Unknown solution
-- preferred_term: 7% (wt/vol) KH2PO4 solution
-  composition: []
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
-  name: Unknown solution
-- preferred_term: Trace element solution
-  term:
-    id: mediadive.solution:6187
-    label: Trace element solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: See mediadive_6187_Trace_element_solution.yaml for composition
-  name: Unknown solution
-- preferred_term: KOH solution
-  composition: []
-  concentration:
-    value: variable
-    unit: VARIABLE
-  notes: 'Role: Mineral source; Properties: Defined component, Solution'
-  name: Unknown solution
-merge_fingerprint: 26e8aac446200322dec5602c0b28a4127e159d9282083afc489654390f4dedbb
+  notes: Normalized name from "YPS MEDIUM" to "yps_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:16.384489+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:42.689076+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:34.981734+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_990_YPS_MEDIUM, KOMODO_990_YPS_medium'
+- timestamp: '2026-08-06T03:04:34.981770+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 54850887def8fb69cdbb8fb581293cf78a4952868512fe720afc5fba3e357ff0
+  source: DSMZ_990_YPS_MEDIUM.yaml, KOMODO_990_YPS_medium.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_990_YPS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006962
+  name: yps_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.
+categories:
+- bacterial
 merged_from:
-- TOGO_M2780_YPS_medium
+- DSMZ_990_YPS_MEDIUM
+- KOMODO_990_YPS_medium
+merge_fingerprint: 54850887def8fb69cdbb8fb581293cf78a4952868512fe720afc5fba3e357ff0

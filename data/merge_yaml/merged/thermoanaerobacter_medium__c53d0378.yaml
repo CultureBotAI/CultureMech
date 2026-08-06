@@ -1,0 +1,148 @@
+id: CultureMech:001750
+name: thermoanaerobacter_medium
+original_name: THERMOANAEROBACTER MEDIUM
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_range:
+  min: 6.8
+  max: 7.5
+media_term:
+  preferred_term: DSMZ Medium 61
+  term:
+    id: mediadive.medium:61
+    label: THERMOANAEROBACTER MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium61.pdf'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+- preferred_term: Sucrose
+  term:
+    id: CHEBI:17992
+    label: Sucrose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17992
+    label: Sucrose
+- preferred_term: Na2SO3
+  term:
+    id: CHEBI:86477
+    label: Na2SO3
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86477
+    label: Na2SO3
+- preferred_term: Na2S2O3 x 5 H2O
+  term:
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (except ferrous sulfate, sucrose, sulfite, and
+    thiosulfate), adjust pH to 6.8 - 7.5, and sparge medium with 100% N2 gas for 30
+    - 45 min to make it anoxic. Add ferrous sulfate, then dispense medium under the
+    same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    After sterilization add sucrose, sulfite, and thiosulfate from anoxic stock solutions
+    prepared under 100% N2 gas and sterilized by filtration. The stock solution of
+    sulfite should be freshly prepared.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.069452Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 61'
+- timestamp: '2026-03-13T06:19:06.944993Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001750'
+- timestamp: '2026-03-17T06:30:00.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:19.184873+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "THERMOANAEROBACTER MEDIUM" to "thermoanaerobacter_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:02:07.902859+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.8-7.5'' -> {''min'': 6.8, ''max'': 7.5}'
+- timestamp: '2026-06-05T07:41:49.570178+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:28.729118+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: clostridium_thermohydrosulfuricum_medium, for_dsm_8686_and_dsm_8690,
+    thermoanaerobacter_medium'
+- timestamp: '2026-08-06T03:05:28.729163+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint c53d0378b39e3314cda25aca885a5218e9540ae7e7bf1c7d5d26999ca4b0ad5d
+  source: clostridium_thermohydrosulfuricum_medium.yaml, for_dsm_8686_and_dsm_8690.yaml,
+    thermoanaerobacter_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/for_dsm_8686_and_dsm_8690.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006099
+  name: for_dsm_8686_and_dsm_8690
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.
+synonyms:
+- name: clostridium_thermohydrosulfuricum_medium
+  source: KOMODO
+  source_id: komodo.medium:61
+  original_category: bacterial
+- name: for_dsm_8686_and_dsm_8690
+  source: KOMODO
+  source_id: komodo.medium:61.1
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- clostridium_thermohydrosulfuricum_medium
+- for_dsm_8686_and_dsm_8690
+- thermoanaerobacter_medium
+merge_fingerprint: c53d0378b39e3314cda25aca885a5218e9540ae7e7bf1c7d5d26999ca4b0ad5d

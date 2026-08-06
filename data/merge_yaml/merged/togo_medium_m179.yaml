@@ -3,6 +3,7 @@ name: togo_medium_m179
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Resazurin
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: Na2S・9H2O
   concentration:
@@ -34,7 +35,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:33403
-    label: ''
+    label: elemental sulfur
   mediaingredientmech_term:
     id: MediaIngredientMech:001072
     label: Sulfur (powder)
@@ -52,9 +53,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001125
-    label: H2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26836
+    label: sulfuric acid
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -92,6 +93,11 @@ notes: 'Source: https://togomedium.org/medium/M179
 applications:
 - Microbial cultivation
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI,
+    0 de-grounded (mixture or unverifiable).
 - timestamp: '2026-01-27T06:35:54.561409Z'
   curator: togo-import
   action: Imported from TOGO Medium
@@ -101,11 +107,11 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:49.876185'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: H2SO4; Added default concentration
     for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
     N2; Added default concentration for ingredient: Hydrogen gas'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:04:19.375430+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -115,9 +121,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008368'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:51.359316'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:29:50.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -127,11 +133,27 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TOGO Medium M179" to "togo_medium_m179" for consistent
     matching
-- timestamp: '2026-04-17T06:29:41.356887+00:00'
+- timestamp: '2026-05-16T09:04:36.735505+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:41:53.046609+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:25.507496+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M168_Acidianus_Infernus_Medium_B, TOGO_M171_Stygiolobus_Medium,
     togo_medium_m179'
+- timestamp: '2026-08-06T03:04:25.507539+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint aa2493a590ef21bd321253b3bca5956d2fcb8c67ad3fed6f404921845bb608d4
+  source: TOGO_M168_Acidianus_Infernus_Medium_B.yaml, TOGO_M171_Stygiolobus_Medium.yaml,
+    togo_medium_m179.yaml
 solutions:
 - preferred_term: Modified Brock's salt base solution (see Medium [M156])
   composition: []
@@ -144,15 +166,16 @@ synonyms:
 - name: acidianus_infernus_medium_b
   source: TOGO
   source_id: TOGO:M168
-  original_category: bacterial
+  original_category: archaea
 - name: stygiolobus_medium
   source: TOGO
   source_id: TOGO:M171
-  original_category: bacterial
+  original_category: archaea
 categories:
+- archaea
 - bacterial
 merged_from:
 - TOGO_M168_Acidianus_Infernus_Medium_B
 - TOGO_M171_Stygiolobus_Medium
 - togo_medium_m179
-merge_fingerprint: faaefa07a1a1edc13232eef0f8d21083c881492525a73102893126f563951bf3
+merge_fingerprint: aa2493a590ef21bd321253b3bca5956d2fcb8c67ad3fed6f404921845bb608d4

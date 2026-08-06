@@ -3,6 +3,7 @@ name: rdm_base_medium_vitamins_maltose_1_g_l_nh4cl
 original_name: '''RDM Base Medium + Vitamins + Maltose (1 g/L NH4Cl'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Riboflavin
@@ -13,8 +14,8 @@ ingredients:
     value: '0.0001063'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: Biotin
   term:
@@ -24,14 +25,17 @@ ingredients:
     value: '8.186e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Nicotinate
   concentration:
     value: '0.0004061'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:nac'
+  term:
+    id: CHEBI:15940
+    label: ''
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
@@ -39,14 +43,17 @@ ingredients:
   concentration:
     value: '7.378e-07'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 - preferred_term: Folate
   concentration:
     value: '4.531e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:fol'
+  term:
+    id: CHEBI:27470
+    label: ''
 - preferred_term: Maltose
   term:
     id: CHEBI:17306
@@ -55,14 +62,17 @@ ingredients:
     value: '5.843'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:malt'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000591
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17306
     label: Maltose
 - preferred_term: Lipoate
   concentration:
     value: '0.0002423'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:lipoate'
+  term:
+    id: CHEBI:16494
+    label: ''
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -71,9 +81,9 @@ ingredients:
     value: '0.0003646'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4abz'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001121
-    label: 4-Aminobenzoate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17836
+    label: 4-aminobenzoate
 - preferred_term: Magnesium chloride
   concentration:
     value: '4.919'
@@ -81,9 +91,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -91,8 +101,8 @@ ingredients:
   concentration:
     value: '0.004363'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: Potassium iodide
   term:
@@ -101,13 +111,16 @@ ingredients:
   concentration:
     value: '0.1205'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000505
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8346
     label: Potassium iodide
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '0.8038'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -115,8 +128,8 @@ ingredients:
   concentration:
     value: '0.3235'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Thiamine HCl
   term:
@@ -125,18 +138,18 @@ ingredients:
   concentration:
     value: '0.0001482'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Pyridoxine HCl
   concentration:
     value: '0.0004863'
     unit: MILLIMOLAR
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000703
+    id: CHEBI:30961
+    label: Pyridoxine HCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
     label: Pyridoxine HCl
 - preferred_term: Sodium sulfide
   concentration:
@@ -152,12 +165,15 @@ ingredients:
   concentration:
     value: '0.009095'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63940
+    label: ''
 - preferred_term: Sodium sulfate
   concentration:
     value: '7.04'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Sodium sulfate
   term:
     id: CHEBI:32149
@@ -169,17 +185,23 @@ ingredients:
   concentration:
     value: '256.7'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.5102'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Sodium bromide
   concentration:
     value: '0.486'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63004
+    label: ''
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -187,8 +209,8 @@ ingredients:
   concentration:
     value: '9.348'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Strontium chloride
   concentration:
@@ -204,9 +226,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -214,8 +236,8 @@ ingredients:
   concentration:
     value: '0.0001049'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium pantothenate
 preparation_steps:
 - step_number: 1
@@ -255,10 +277,27 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'RDM Base Medium + Vitamins + Maltose (1 g/L NH4Cl"
     to "rdm_base_medium_vitamins_maltose_1_g_l_nh4cl" for consistent matching
-- timestamp: '2026-04-17T06:30:20.999525+00:00'
+- timestamp: '2026-06-05T07:41:44.037900+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 16 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:50.145985+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:05:54.469077+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: rdm_base_medium_vitamins_maltose_0_5_g_l_nh4cl, rdm_base_medium_vitamins_maltose_1_g_l_nh4cl'
+- timestamp: '2026-08-06T03:05:54.469134+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 9988931b53bbfe0155feca6cac647246a13928947fa488efb1c937c7ec49b21f
+  source: rdm_base_medium_vitamins_maltose_0_5_g_l_nh4cl.yaml, rdm_base_medium_vitamins_maltose_1_g_l_nh4cl.yaml
 media_term:
   preferred_term: MediaDB Medium 381
   term:
@@ -271,6 +310,13 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
+variant_children:
+- path: data/normalized_yaml/bacterial/rdm_base_medium_vitamins_maltose_0_5_g_l_nh4cl.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:007286
+  name: rdm_base_medium_vitamins_maltose_0_5_g_l_nh4cl
+  notes: Ammonium chloride decreased from 18.7 mM to 9.348 mM while RDM base medium,
+    vitamins, and maltose remain unchanged.
 synonyms:
 - name: rdm_base_medium_vitamins_maltose_0_5_g_l_nh4cl
   source: unknown
@@ -281,4 +327,4 @@ categories:
 merged_from:
 - rdm_base_medium_vitamins_maltose_0_5_g_l_nh4cl
 - rdm_base_medium_vitamins_maltose_1_g_l_nh4cl
-merge_fingerprint: 1801022d621a0d5fbf601d4927547588551da9262eb0b518973da79fb06bb6b6
+merge_fingerprint: 9988931b53bbfe0155feca6cac647246a13928947fa488efb1c937c7ec49b21f

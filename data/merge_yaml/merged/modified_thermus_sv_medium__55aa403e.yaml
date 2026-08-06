@@ -1,0 +1,184 @@
+id: CultureMech:002971
+name: modified_thermus_sv_medium
+original_name: MODIFIED THERMUS SV MEDIUM
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J625
+  term:
+    id: mediadive.medium:J625
+    label: MODIFIED THERMUS SV MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=625'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '2.9703'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.990099'
+    unit: G_PER_L
+- preferred_term: Sodium glutamate monohydrate
+  term:
+    id: CHEBI:64243
+    label: Sodium glutamate monohydrate
+  concentration:
+    value: '0.990099'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64243
+    label: Sodium glutamate monohydrate
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '29.7814314'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 29.703, 0.0784314]'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '0.980392'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+- preferred_term: CaSO4 x 2 H2O
+  term:
+    id: CHEBI:32583
+    label: CaSO4 x 2 H2O
+  concentration:
+    value: '0.588235'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32583
+    label: CaSO4 x 2 H2O
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.980392'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: KNO3
+  term:
+    id: CHEBI:63043
+    label: potassium nitrate
+  concentration:
+    value: '1.0098'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000170
+    label: KNO3
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:63005
+    label: NaNO3
+  concentration:
+    value: '6.7549'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000171
+    label: NaNO3
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '1.08824'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: Na2HPO4
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 624 supplemented with 3.0 g/L L-proline. Trace vitamins
+    (see Medium No. 197, 10 ml/L) can be substituted for L-proline.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.124017Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J625'
+- timestamp: '2026-02-03T11:26:55.526195'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:16.895980Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002971'
+- timestamp: '2026-03-17T19:45:30.512432+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MODIFIED THERMUS SV MEDIUM" to "modified_thermus_sv_medium"
+    for consistent matching
+- timestamp: '2026-04-04T18:49:19.889402'
+  curator: copy_referenced_compositions
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (11 ingredients)
+  source: CultureMech:002970
+  notes: Resolved reference by copying from modified_thermus_medium_with_3_nacl (CultureMech:002970)
+- timestamp: '2026-05-16T08:58:10.349628+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(2 keys) -> list(1 entries)
+- timestamp: '2026-06-05T07:41:37.933648+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:37:35.668019+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:47:09.010273+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:49.943773+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: modified_thermus_medium_with_3_nacl, modified_thermus_sv_medium'
+- timestamp: '2026-08-06T03:05:49.943809+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 55aa403eb26f8343ae457db5124cea1f3c161c384027e2b03502e55f4bda541b
+  source: modified_thermus_medium_with_3_nacl.yaml, modified_thermus_sv_medium.yaml
+data_quality_flags:
+- resolved_reference
+synonyms:
+- name: modified_thermus_medium_with_3_nacl
+  source: MediaDive
+  source_id: mediadive.medium:J624
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- modified_thermus_medium_with_3_nacl
+- modified_thermus_sv_medium
+merge_fingerprint: 55aa403eb26f8343ae457db5124cea1f3c161c384027e2b03502e55f4bda541b

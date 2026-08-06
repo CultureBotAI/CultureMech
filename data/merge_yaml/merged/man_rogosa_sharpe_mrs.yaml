@@ -3,6 +3,7 @@ name: man_rogosa_sharpe_mrs
 original_name: Man-Rogosa-Sharpe (MRS)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Man-Rogosa-Sharpe (MRS) (Beijing Land Bridge Technology Co., Ltd.
@@ -32,6 +33,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Man-Rogosa-Sharpe (MRS)" to "man_rogosa_sharpe_mrs"
     for consistent matching
+- timestamp: '2026-08-06T03:05:41.799645+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 7d1900c8bcf91e8b60f3c724722ddfece5f9e452cfa22cd211e38887f1648887
+  source: man_rogosa_sharpe_mrs.yaml
 merge_fingerprint: 7d1900c8bcf91e8b60f3c724722ddfece5f9e452cfa22cd211e38887f1648887
 merged_from:
 - man_rogosa_sharpe_mrs

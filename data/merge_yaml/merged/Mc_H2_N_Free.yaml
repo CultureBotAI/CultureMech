@@ -1,6 +1,7 @@
 id: CultureMech:015559
 name: Mc H2 N Free
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: KCl
@@ -96,6 +97,9 @@ ingredients:
     value: '0.0001'
     unit: G_PER_L
   notes: 'CAS: 10125-13-0; MW: 170.48; From Mc_trace_minerals_SO4free'
+  term:
+    id: CHEBI:86318
+    label: ''
 - preferred_term: aluminum chloride hydrate
   concentration:
     value: '0.0001'
@@ -151,6 +155,9 @@ ingredients:
     value: '0.001'
     unit: G_PER_L
   notes: 'CAS: 62758-13-8; MW: 251.17'
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: dithiothreitol
   concentration:
     value: '0.50'
@@ -194,7 +201,7 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From MOPS_2M_pH7'
 description: with no casamino acids or NH4
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: Mc H2 N Free
@@ -208,8 +215,21 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015559'
+- timestamp: '2026-05-16T09:04:41.098580+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-10T07:47:15.266671+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:05.709975+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b2305cfdd54ad5d16520bb83a958e68b7d127a1036c5c0dce03ce1bd887c83e1
+  source: mc_h2_n_free.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: 1d3e304691ad9090e6a7bd179daf2872f024c2646d0a71c85d2c35aa1463f635
+merge_fingerprint: b2305cfdd54ad5d16520bb83a958e68b7d127a1036c5c0dce03ce1bd887c83e1
 merged_from:
 - mc_h2_n_free

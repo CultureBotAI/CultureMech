@@ -1,6 +1,7 @@
 id: CultureMech:015606
 name: MOKA
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Potassium phosphate dibasic
@@ -28,13 +29,10 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 65072-00-6'
 description: Rich medium for Xanthomonas
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: MOKA
@@ -48,8 +46,23 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015606'
+- timestamp: '2026-05-16T09:04:41.802566+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:53.060379+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:06:06.611487+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 9eec703fa99afe004c7102a4e3be2b729f50de540852f90819786aef887bb198
+  source: moka.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: 4e16310114858961817b9973a74c35e1c457a964e51ba15959702038afc17937
+merge_fingerprint: 9eec703fa99afe004c7102a4e3be2b729f50de540852f90819786aef887bb198
 merged_from:
 - moka

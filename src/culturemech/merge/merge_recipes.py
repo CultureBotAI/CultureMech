@@ -38,6 +38,32 @@ CURATOR = "merge_recipes.py"
 ACTION = "MERGED_RECIPES"
 
 
+def unique_filename(name: str, fingerprint: str, used_keys: set[str]) -> tuple[str, bool]:
+    """Output filename for a merged group, guaranteed not to collide with an
+    already-claimed one — even on a case-INSENSITIVE filesystem (#218).
+
+    Two distinct groups can share a canonical ``name`` with different ingredient
+    fingerprints (genuinely different media). Keying the file on the name alone let
+    the later group silently overwrite the earlier one — 1,691 of 6,286 records were
+    lost this way. A case collision (``Foo``/``foo``) is the same defect on macOS or
+    Windows, where the OS folds them to one file even though a Python set keeps both.
+
+    ``used_keys`` holds the LOWER-CASED names already taken and is mutated here.
+    Returns ``(filename, collided)``.
+    """
+    base = name.replace('/', '_').replace(' ', '_')
+    filename = base + '.yaml'
+    collided = filename.lower() in used_keys
+    if collided:
+        filename = f'{base}__{fingerprint[:8]}.yaml'
+        n = 1
+        while filename.lower() in used_keys:  # astronomically unlikely; never overwrite
+            filename = f'{base}__{fingerprint[:8]}_{n}.yaml'
+            n += 1
+    used_keys.add(filename.lower())
+    return filename, collided
+
+
 def find_all_recipes(normalized_dir: Path) -> list[Path]:
     """Find all recipe YAML files in normalized_yaml directory.
 
@@ -418,13 +444,22 @@ Examples:
 
     # Merge each group
     print("Merging and writing recipes...")
+    # Two distinct groups can share a canonical name with different ingredient
+    # fingerprints — genuinely different media. Keying the output file on the name
+    # alone let the later group silently overwrite the earlier one, dropping ~1,691
+    # of 6,286 records with no warning (#218). Track claimed filenames and
+    # disambiguate a collision with a short fingerprint suffix so every group lands.
+    used_keys: set[str] = set()
+    collisions = 0
+    errors: list[str] = []
     for i, (fp, paths) in enumerate(groups.items(), 1):
         try:
             # Merge group
             merged_recipe = merger.merge_group(paths, fingerprint=fp)
 
-            # Generate output filename (use canonical name)
-            filename = merged_recipe['name'].replace('/', '_').replace(' ', '_') + '.yaml'
+            # Generate a collision-free output filename (#218).
+            filename, collided = unique_filename(merged_recipe['name'], fp, used_keys)
+            collisions += collided
             output_path = args.output_dir / filename
 
             # Record provenance for the merge so the audit trail captures
@@ -445,11 +480,21 @@ Examples:
                 progress_bar(i, len(groups), prefix="Progress:")
 
         except Exception as e:
+            errors.append(f"{fp}: {e}")
             print(f"\nError merging group {fp}: {e}", file=sys.stderr)
             continue
 
     progress_bar(len(groups), len(groups), prefix="Progress:")
     print()
+    print(f"Wrote {len(used_keys)} files from {len(groups)} groups "
+          f"({collisions} name collision(s) disambiguated with a fingerprint suffix).")
+    if errors:
+        # A skipped group is a dropped record too — surface it rather than leaving a
+        # silent gap between the group count and the file count (#218).
+        print(f"WARNING: {len(errors)} group(s) failed to merge and were NOT written:",
+              file=sys.stderr)
+        for err in errors:
+            print(f"  {err}", file=sys.stderr)
 
     # Write statistics
     print(f"Writing statistics to {args.stats_file}...")

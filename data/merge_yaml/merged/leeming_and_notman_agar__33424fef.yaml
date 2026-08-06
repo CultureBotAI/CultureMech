@@ -1,0 +1,118 @@
+id: CultureMech:002512
+name: leeming_and_notman_agar
+original_name: LEEMING AND NOTMAN AGAR
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J153
+  term:
+    id: mediadive.medium:J153
+    label: LEEMING AND NOTMAN AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=153'
+ingredients:
+- preferred_term: Bacto peptone
+  concentration:
+    value: '9.88142'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '4.94071'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: Glucose
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.0988142'
+    unit: G_PER_L
+- preferred_term: Oxgall
+  concentration:
+    value: '7.90514'
+    unit: G_PER_L
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
+    label: Glycerol
+- preferred_term: Glycerol monostearate
+  term:
+    id: CHEBI:75456
+    label: Glycerol monostearate
+  concentration:
+    value: '0.494071'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75456
+    label: Glycerol monostearate
+- preferred_term: Tween 60
+  term:
+    id: CHEBI:53425
+    label: Tween 60
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53425
+    label: Tween 60
+- preferred_term: Cow's milk
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '11.8577'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave at 110C for 15 min.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.831938Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J153'
+- timestamp: '2026-03-13T06:19:13.905454Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002512'
+- timestamp: '2026-03-17T06:30:07.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:27.079469+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "LEEMING AND NOTMAN AGAR" to "leeming_and_notman_agar"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:11.050837+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:40.161935+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 33424fefd3be01b798b2adb03b0673f9ef2465275082cb88ca934094d4921e6a
+  source: leeming_and_notman_agar.yaml
+merge_fingerprint: 33424fefd3be01b798b2adb03b0673f9ef2465275082cb88ca934094d4921e6a
+merged_from:
+- leeming_and_notman_agar

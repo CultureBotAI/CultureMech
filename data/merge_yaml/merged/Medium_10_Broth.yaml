@@ -3,6 +3,7 @@ name: medium_10_broth
 original_name: Medium 10 Broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Cellobiose
   concentration:
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:17057
     label: cellobiose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001069
-    label: Cellobiose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17057
+    label: cellobiose
 - preferred_term: Glucose
   concentration:
     value: '0.5'
@@ -38,14 +39,17 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Soluble starch
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Undefined component'
+  term:
+    id: CHEBI:28017
+    label: ''
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '0.5'
@@ -86,11 +90,11 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008293'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:50.788700'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name; Added default solution
     name; Added default solution name; Added default solution name; Added default
     solution name; Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:29:49.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -100,6 +104,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Medium 10 Broth" to "medium_10_broth" for consistent
     matching
+- timestamp: '2026-05-16T09:03:11.042838+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:34.157481+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:09.453682+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 5591ab3ec47fd69f5407bcc3a001c34015f03e4d122d6903cb228be45709b2cb
+  source: TOGO_M172_Medium_10_Broth.yaml
 solutions:
 - preferred_term: 0.1% Resazurin solution
   composition: []
@@ -158,6 +177,6 @@ solutions:
     value: '37.5'
     unit: G_PER_L
   name: Unknown solution
-merge_fingerprint: 251440d990e56e68dfc983c643e7c85f74d0c3a4ba734f5b9d8175db325594d1
+merge_fingerprint: 5591ab3ec47fd69f5407bcc3a001c34015f03e4d122d6903cb228be45709b2cb
 merged_from:
 - TOGO_M172_Medium_10_Broth

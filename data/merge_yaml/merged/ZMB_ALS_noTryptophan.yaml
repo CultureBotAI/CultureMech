@@ -1,6 +1,7 @@
 id: CultureMech:015824
 name: ZMB ALS noTryptophan
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: ZMB_ALS
@@ -17,7 +18,7 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 73-22-3; MW: 204.23'
 description: Media for culturing Bifidobacterium minus tryptophan
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: ZMB ALS noTryptophan
@@ -31,6 +32,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015824'
+- timestamp: '2026-05-16T09:04:44.163364+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:09.166195+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 4055d6a1264d011f2fb21c5ed47f479d5c1449ec2820586d4aa79a90caddbff9
+  source: zmb_als_notryptophan.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: 4055d6a1264d011f2fb21c5ed47f479d5c1449ec2820586d4aa79a90caddbff9

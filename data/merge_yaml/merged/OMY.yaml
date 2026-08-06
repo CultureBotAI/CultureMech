@@ -3,6 +3,7 @@ name: omy
 original_name: OMY
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 1815
@@ -30,8 +31,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -52,6 +53,17 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "OMY" to "omy" for consistent matching
+- timestamp: '2026-06-05T07:41:40.515926+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:51.992585+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 483a1ba9c6844550fb7c309f3156fd721210270196c24a42c9b7ed9b62abc207
+  source: omy.yaml
 kg_microbe_match: mediadive.medium:12
 merge_fingerprint: 483a1ba9c6844550fb7c309f3156fd721210270196c24a42c9b7ed9b62abc207
 merged_from:

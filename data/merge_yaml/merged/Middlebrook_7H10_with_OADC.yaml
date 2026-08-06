@@ -3,6 +3,7 @@ name: middlebrook_7h10_with_oadc
 original_name: Middlebrook 7H10 with OADC
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Glycerol
@@ -12,10 +13,10 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
     component'
   term:
-    id: CHEBI:15978
-    label: sn-glycerol 3-phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000588
+    id: CHEBI:17754
+    label: Glycerol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: DI Water
   concentration:
@@ -93,9 +94,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Dextrose (BD 215530)
   concentration:
     value: '2'
@@ -166,6 +167,23 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Middlebrook 7H10 with OADC" to "middlebrook_7h10_with_oadc"
     for consistent matching
-merge_fingerprint: 96f14103101a12e21ef413169bd2a3af7c4a2c70c7f3b052248cb052a08b7ce6
+- timestamp: '2026-06-05T07:41:33.915646+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:48.181658+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:05:45.438133+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 4e67e318dcc70661b82374ed6b589f6edf74de68469388ac0482c650bf6b767a
+  source: middlebrook_7h10_with_oadc.yaml
+merge_fingerprint: 4e67e318dcc70661b82374ed6b589f6edf74de68469388ac0482c650bf6b767a
 merged_from:
 - middlebrook_7h10_with_oadc

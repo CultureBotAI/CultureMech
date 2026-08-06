@@ -1,78 +1,85 @@
-id: CultureMech:000742
+id: CultureMech:002469
 name: helicobacter_medium
 original_name: HELICOBACTER MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 5.0
 media_term:
-  preferred_term: DSMZ Medium 1279
+  preferred_term: JCM Medium J1305
   term:
-    id: mediadive.medium:1279
+    id: mediadive.medium:J1305
     label: HELICOBACTER MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1279.pdf'
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1305'
 ingredients:
 - preferred_term: Brucella Broth
   concentration:
-    value: '35'
+    value: '27.451'
     unit: G_PER_L
-- preferred_term: Demineralized water
-  term:
-    id: CHEBI:15377
-    label: Demineralized water
-  concentration:
-    value: '80'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Demineralized water
 - preferred_term: Fetal bovine serum
   concentration:
-    value: '2'
+    value: '20'
     unit: G_PER_L
 - preferred_term: Vitox
   concentration:
-    value: '0.06'
+    value: '2'
     unit: G_PER_L
 - preferred_term: Skirrow supplement
   concentration:
-    value: '0.02'
+    value: '0.4'
     unit: G_PER_L
-- preferred_term: Amphotericin
+- preferred_term: Amphotericin B
+  term:
+    id: CHEBI:2682
+    label: Amphotericin B
   concentration:
-    value: '0.02'
+    value: '100'
     unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2682
+    label: Amphotericin B
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust with HCl to pH 5.0, make anoxic under a stream of N2/CO2, distribute
-    in Hungate tubes to 8 ml and autoclave.
+  description: Autoclave. After cooling to 50C and add aseptically 135 ï¿½l of conc.
+    HCl (final conc. 0.05%). Then add aseptically the following solutions.
 - step_number: 2
   action: MIX
-  description: 'Add aseptically to each tube:'
-- step_number: 3
-  action: MIX
-  description: Add 1 ml of sterile air to each tube.
+  description: 'For stable culture, incubate the microorganisms in 5 ml of above-mentioned
+    broth in a polystyrene culture flask (25 cmz2 flask, canted neck, vent cap, AS
+    ONE: Cat. No. 2-8589-01) at 37C under a 5% O2 and 12% CO2 atmosphere (with shaking
+    at low speed; 50 rpm).'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:13.978909Z'
+- timestamp: '2026-01-26T17:53:19.380366Z'
   curator: mediadive-import
   action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1279'
-- timestamp: '2026-03-13T06:18:57.999704Z'
+  notes: 'Source: JCM, ID: J1305'
+- timestamp: '2026-03-13T06:19:13.575888Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000742'
-- timestamp: '2026-03-17T06:29:49.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:002469'
+- timestamp: '2026-03-17T06:30:10.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:09.344535+00:00'
+- timestamp: '2026-03-17T19:45:26.710088+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "HELICOBACTER MEDIUM" to "helicobacter_medium" for consistent
     matching
-merge_fingerprint: 7e6ae7340f276d403b937303afeddda23a500d07bf01338bb1056ea95119692d
+- timestamp: '2026-06-05T07:40:16.687049+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:35.382674+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 9cb4659882926c2a152cadb4661884a16fa25496617e9ca5f0aea2203dc31a6d
+  source: JCM_J1305_HELICOBACTER_MEDIUM.yaml
+merge_fingerprint: 9cb4659882926c2a152cadb4661884a16fa25496617e9ca5f0aea2203dc31a6d
 merged_from:
-- helicobacter_medium
+- JCM_J1305_HELICOBACTER_MEDIUM

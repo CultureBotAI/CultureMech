@@ -3,6 +3,7 @@ name: gm17
 original_name: GM17
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: glucose
@@ -14,9 +15,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: M17 media (Oxoid LOT2216165)
   concentration:
     value: '1'
@@ -51,6 +52,17 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "GM17" to "gm17" for consistent matching
+- timestamp: '2026-06-05T07:41:06.568345+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:36.389358+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint a13aaeeea50cde6c9b28d34ecab161f61a8a414c3b6913c21f26d45a080f357e
+  source: gm17.yaml
 kg_microbe_match: mediadive.medium:21
 merge_fingerprint: a13aaeeea50cde6c9b28d34ecab161f61a8a414c3b6913c21f26d45a080f357e
 merged_from:

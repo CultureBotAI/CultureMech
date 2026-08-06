@@ -3,6 +3,7 @@ name: thiomonas_delicata_medium
 original_name: THIOMONAS DELICATA medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 6.0
 media_term:
@@ -16,22 +17,22 @@ ingredients:
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Na2HPO4
   term:
@@ -40,8 +41,8 @@ ingredients:
   concentration:
     value: '4.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -50,8 +51,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Na2S2O3 x 5 H2O
   term:
@@ -60,8 +61,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000492
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32150
     label: Na2S2O3 x 5 H2O
 - preferred_term: Yeast extract
   concentration:
@@ -79,8 +80,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: Optional ingredient (for solid medium)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -106,10 +107,42 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "THIOMONAS DELICATA medium" to "thiomonas_delicata_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:14.044821+00:00'
+- timestamp: '2026-06-05T07:40:18.354862+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:43.288867+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:38.104102+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_1037_THIOMONAS_DELICATA_medium, for_dsm_18570, thiomonas_delicata_medium'
+- timestamp: '2026-08-06T03:04:38.104145+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 88d3ab02b456bae54cabbe4284e28eb68495c8002aa0ef797495cd6c4e001b5d
+  source: KOMODO_1037_THIOMONAS_DELICATA_medium.yaml, for_dsm_18570.yaml, thiomonas_delicata_medium.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_18570.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003550
+  name: for_dsm_18570
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/thiomonas_delicata_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000460
+  name: thiomonas_delicata_medium
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and concentration
+    signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.
 synonyms:
 - name: for_dsm_18570
   source: KOMODO

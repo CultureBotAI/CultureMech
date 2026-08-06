@@ -1,6 +1,7 @@
 id: CultureMech:015725
 name: RCH2 defined with Glycerol
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Ammonium chloride
@@ -34,8 +35,8 @@ ingredients:
     value: '2.2'
     unit: MILLIMOLAR
   term:
-    id: CHEBI:15978
-    label: sn-glycerol 3-phosphate
+    id: CHEBI:17754
+    label: Glycerol
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-81-5; MW: 92.09'
 - preferred_term: PIPES sesquisodium salt
   concentration:
@@ -172,8 +173,8 @@ ingredients:
     value: '0.1'
     unit: MG_PER_L
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Wolfe''s vitamin
     mix'
 - preferred_term: 4-Aminobenzoic acid
@@ -260,7 +261,7 @@ ingredients:
 description: Defined minimal media for soil and groundwater bacteria with glycerol
   - used by Peter Kim for chemotaxis assays
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: RCH2 defined with Glycerol
@@ -274,8 +275,27 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015725'
+- timestamp: '2026-05-16T09:04:43.149665+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:53.937257+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:47:15.731757+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:08.097929+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d69f29bf6b56f7bd7d6bbbc673480abedc6187501b0ebcda63947b2638593f99
+  source: rch2_defined_with_glycerol.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: ac7f12accff9d787d9d2de2f0d04764ef26c6dbdad33b7e1a1918b580ca1d118
+merge_fingerprint: d69f29bf6b56f7bd7d6bbbc673480abedc6187501b0ebcda63947b2638593f99
 merged_from:
 - rch2_defined_with_glycerol

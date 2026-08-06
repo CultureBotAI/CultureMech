@@ -3,6 +3,7 @@ name: ysg_medium
 original_name: YSG Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 3.7
 media_term:
@@ -23,8 +24,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Starch
   term:
@@ -33,18 +34,18 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
     label: Starch
 - preferred_term: MnSO4 x 1 H2O
   term:
     id: CHEBI:86360
-    label: MnSO4 x 1 H2O
+    label: manganese(II) sulfate
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000605
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86360
     label: MnSO4 x 1 H2O
 - preferred_term: Agar
   term:
@@ -53,8 +54,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -84,6 +85,21 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "YSG Medium" to "ysg_medium" for consistent matching
+- timestamp: '2026-06-05T07:41:55.887624+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:14.709780+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:03.234296+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 02478a333d5f6182b128bb11a4c0d84825266f85601f3fa48cf55442b0eec4a1
+  source: ysg_medium.yaml
 merge_fingerprint: 02478a333d5f6182b128bb11a4c0d84825266f85601f3fa48cf55442b0eec4a1
 merged_from:
 - ysg_medium

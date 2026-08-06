@@ -3,6 +3,7 @@ name: weissela_koreensis_medium
 original_name: WEISSELA KOREENSIS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 232b
@@ -31,8 +32,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Tween 80
   term:
@@ -41,28 +42,28 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000190
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53426
     label: Tween 80
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: Na-acetate
   term:
     id: CHEBI:32954
-    label: Na-acetate
+    label: sodium acetate
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
     label: Na-acetate
 - preferred_term: (NH4)2 citrate
   concentration:
@@ -71,8 +72,8 @@ ingredients:
   term:
     id: CHEBI:63076
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000400
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63076
     label: (NH4)2 citrate
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -81,8 +82,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: MnSO4 x H2O
   term:
@@ -91,8 +92,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
     label: MnSO4 x H2O
 applications:
 - Microbial cultivation
@@ -118,7 +119,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "WEISSELA KOREENSIS medium" to "weissela_koreensis_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:20.932387+00:00'
+- timestamp: '2026-06-05T07:40:21.832189+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:44.435604+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:46.050566+00:00'
   curator: recipe-merger
   action: Merged 19 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_232_MRS_medium_WITH_CYSTEINE, KOMODO_232b_WEISSELA_KOREENSIS_medium,
@@ -128,6 +139,26 @@ curation_history:
     medium_232_modified_for_dsm_20406, medium_232_modified_for_dsm_20653, medium_232_modified_for_dsm_20654,
     medium_232_modified_for_dsm_20655, medium_232_modified_for_dsm_20656, medium_232_modified_for_dsm_6306,
     mrs_medium_with_cysteine, weissela_koreensis_medium'
+- timestamp: '2026-08-06T03:04:46.050707+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 19 source recipe(s) on fingerprint f8bc303fe1621a184fb20fda4d7925ce261b666c9be36a67d2cdba2c73bba9da
+  source: KOMODO_232_MRS_medium_WITH_CYSTEINE.yaml, KOMODO_232b_WEISSELA_KOREENSIS_medium.yaml,
+    medium_232_modified_for_dsm_16982.yaml, medium_232_modified_for_dsm_17330.yaml,
+    medium_232_modified_for_dsm_20079.yaml, medium_232_modified_for_dsm_20243.yaml,
+    medium_232_modified_for_dsm_20289.yaml, medium_232_modified_for_dsm_20356.yaml,
+    medium_232_modified_for_dsm_20403.yaml, medium_232_modified_for_dsm_20404.yaml,
+    medium_232_modified_for_dsm_20405.yaml, medium_232_modified_for_dsm_20406.yaml,
+    medium_232_mod
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_232_MRS_medium_WITH_CYSTEINE.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004606
+  name: mrs_medium_with_cysteine
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.
 synonyms:
 - name: mrs_medium_with_cysteine
   source: KOMODO

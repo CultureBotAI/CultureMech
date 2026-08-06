@@ -3,8 +3,11 @@ name: desulfotomaculum_14_5_medium
 original_name: DESULFOTOMACULUM (14.5) MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_range: 6.8-7
+ph_range:
+  min: 6.8
+  max: 7.0
 media_term:
   preferred_term: DSMZ Medium 63a
   term:
@@ -15,32 +18,32 @@ ingredients:
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.510204'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '1.02041'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
-    label: Na2SO4
+    label: sodium sulfate
   concentration:
     value: '1.02041'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Na2SO4
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -49,8 +52,8 @@ ingredients:
   concentration:
     value: '0.102041'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -59,28 +62,28 @@ ingredients:
   concentration:
     value: '2.04082'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Na-acetate
   term:
     id: CHEBI:32954
-    label: Na-acetate
+    label: sodium acetate
   concentration:
     value: '2.04082'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
     label: Na-acetate
 - preferred_term: Na-pyruvate
   term:
     id: CHEBI:50144
-    label: Na-pyruvate
+    label: sodium pyruvate
   concentration:
     value: '5.10204'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
     label: Na-pyruvate
 - preferred_term: Yeast extract
   concentration:
@@ -90,6 +93,9 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -97,18 +103,18 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: Na-thioglycolate
   term:
     id: CHEBI:86481
-    label: Na-thioglycolate
+    label: sodium thioglycolate
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000569
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86481
     label: Na-thioglycolate
 - preferred_term: Ascorbic acid
   term:
@@ -117,8 +123,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000326
+  mediaingredientmech_chebi_term:
+    id: CHEBI:22652
     label: Ascorbic acid
 preparation_steps:
 - step_number: 1
@@ -149,11 +155,40 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "DESULFOTOMACULUM (14.5) MEDIUM" to "desulfotomaculum_14_5_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:30:01.572424+00:00'
+- timestamp: '2026-05-20T06:01:14.559179+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.8-7'' -> {''min'': 6.8, ''max'': 7.0}'
+- timestamp: '2026-06-05T07:40:57.479177+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:55.910447+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 6 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:31.920159+00:00'
   curator: recipe-merger
   action: Merged 6 duplicate recipes into canonical record
   notes: 'Sources: desulfotomaculum_14_5_medium, desulfotomaculum_sp_medium_i, medium_63_modified_for_dsm_12838,
     medium_63_modified_for_dsm_21064, medium_63_modified_for_dsm_6605, medium_for_d_indonesiensis'
+- timestamp: '2026-08-06T03:05:31.920236+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 6 source recipe(s) on fingerprint efef81f35d2df2c23de60d211347f0afb9275462f22ff3f2b30cde4bde946553
+  source: desulfotomaculum_14_5_medium.yaml, desulfotomaculum_sp_medium_i.yaml, medium_63_modified_for_dsm_12838.yaml,
+    medium_63_modified_for_dsm_21064.yaml, medium_63_modified_for_dsm_6605.yaml, medium_for_d_indonesiensis.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/medium_for_d_indonesiensis.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006162
+  name: medium_for_d_indonesiensis
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.
 synonyms:
 - name: desulfotomaculum_sp_medium_i
   source: KOMODO
@@ -184,4 +219,4 @@ merged_from:
 - medium_63_modified_for_dsm_21064
 - medium_63_modified_for_dsm_6605
 - medium_for_d_indonesiensis
-merge_fingerprint: 200453f53789ad702c77893088109885b9d1000a2bc45bd65ca8fb2474ad89a7
+merge_fingerprint: efef81f35d2df2c23de60d211347f0afb9275462f22ff3f2b30cde4bde946553

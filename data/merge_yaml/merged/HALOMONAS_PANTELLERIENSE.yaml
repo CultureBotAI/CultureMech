@@ -3,6 +3,7 @@ name: halomonas_pantelleriense
 original_name: HALOMONAS PANTELLERIENSE
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 9.0
 media_term:
@@ -20,8 +21,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Trisodium citrate
   term:
@@ -30,8 +31,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
     label: Trisodium citrate
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -40,8 +41,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: KCl
   term:
@@ -50,8 +51,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -60,8 +61,8 @@ ingredients:
   concentration:
     value: '0.00036'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -70,8 +71,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: Yeast extract
   concentration:
@@ -80,12 +81,12 @@ ingredients:
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 applications:
 - Microbial cultivation
@@ -111,11 +112,38 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HALOMONAS PANTELLERIENSE" to "halomonas_pantelleriense"
     for consistent matching
-- timestamp: '2026-04-17T06:29:13.610484+00:00'
+- timestamp: '2026-06-05T07:40:26.055340+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:45.755755+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:37.550650+00:00'
   curator: recipe-merger
   action: Merged 5 duplicate recipes into canonical record
   notes: 'Sources: JCM_J975_SALINIVIBRIO_SHARMENSIS_MEDIUM, KOMODO_752_HALOMONAS_PANTELLERIENSE,
     KOMODO_992_BACILLUS_FILIFORMIS_medium, bacillus_filiformis_medium, halomonas_pantelleriense'
+- timestamp: '2026-08-06T03:04:37.550696+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 5 source recipe(s) on fingerprint 6f8b5e7176c03b6f5d9af1fb27cdb9b65ecb98fa60324685f9f6c3fc8516678d
+  source: JCM_J975_SALINIVIBRIO_SHARMENSIS_MEDIUM.yaml, KOMODO_752_HALOMONAS_PANTELLERIENSE.yaml,
+    KOMODO_992_BACILLUS_FILIFORMIS_medium.yaml, bacillus_filiformis_medium.yaml, halomonas_pantelleriense.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/halomonas_pantelleriense.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001885
+  name: halomonas_pantelleriense
+  notes: KOMODO record states DSMZ Medium 752 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 synonyms:
 - name: salinivibrio_sharmensis_medium
   source: MediaDive

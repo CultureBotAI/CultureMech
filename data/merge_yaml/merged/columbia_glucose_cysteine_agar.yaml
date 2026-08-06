@@ -3,6 +3,7 @@ name: columbia_glucose_cysteine_agar
 original_name: COLUMBIA-GLUCOSE-CYSTEINE-AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 429c
@@ -40,8 +41,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Cysteine
   term:
@@ -50,8 +51,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001023
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15356
     label: Cysteine
 - preferred_term: Casein peptone
   concentration:
@@ -68,8 +69,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Agar
   term:
@@ -78,8 +79,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Calf brains
   term:
@@ -207,6 +208,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "COLUMBIA-GLUCOSE-CYSTEINE-AGAR" to "columbia_glucose_cysteine_agar"
     for consistent matching
+- timestamp: '2026-06-05T07:40:54.711728+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:29.041609+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d2eef6fb8cbefc73eddfb31a785ce322a8720dc290dbf6c3a6b42d32dd5ca916
+  source: columbia_glucose_cysteine_agar.yaml
 merge_fingerprint: d2eef6fb8cbefc73eddfb31a785ce322a8720dc290dbf6c3a6b42d32dd5ca916
 merged_from:
 - columbia_glucose_cysteine_agar

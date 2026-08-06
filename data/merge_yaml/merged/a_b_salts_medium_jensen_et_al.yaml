@@ -3,6 +3,7 @@ name: a_b_salts_medium_jensen_et_al
 original_name: A+B Salts Medium; Jensen et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose
@@ -13,8 +14,8 @@ ingredients:
     value: '11.1012'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Thiamine
   term:
@@ -34,19 +35,22 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.090102'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Sodium sulfate
   concentration:
     value: '0.0774429'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Sodium sulfate
   term:
     id: CHEBI:32149
@@ -55,6 +59,9 @@ ingredients:
   concentration:
     value: '42.2654'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -62,13 +69,16 @@ ingredients:
   concentration:
     value: '51.3347'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '22.0449'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
@@ -76,9 +86,9 @@ ingredients:
   concentration:
     value: '15.1355'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.00184979'
@@ -116,6 +126,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "A+B Salts Medium; Jensen et al" to "a_b_salts_medium_jensen_et_al"
     for consistent matching
+- timestamp: '2026-06-05T07:40:46.462805+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:21.151547+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d6633d6656ed329843ca9b8ed1ac50fbbb254c23ff1193f61f4b03d36f49e3d8
+  source: a_b_salts_medium_jensen_et_al.yaml
 media_term:
   preferred_term: MediaDB Medium 142
   term:
@@ -127,6 +148,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: dce85c9cac744aea86bd617928edd0249cea6be4d673cccd0749d74af095665d
+merge_fingerprint: d6633d6656ed329843ca9b8ed1ac50fbbb254c23ff1193f61f4b03d36f49e3d8
 merged_from:
 - a_b_salts_medium_jensen_et_al

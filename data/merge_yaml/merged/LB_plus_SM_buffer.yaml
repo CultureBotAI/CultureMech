@@ -1,6 +1,7 @@
 id: CultureMech:015470
 name: LB_plus_SM_buffer
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Tryptone
@@ -56,7 +57,7 @@ ingredients:
     label: ''
 description: Luria-Bertani broth with SM buffer (for phage work)
 notes: 'Source: FEBA media definitions'
-category: BACTERIAL
+category: bacterial
 sources:
 - database: CultureBotHT
   database_id: LB_plus_SM_buffer
@@ -70,6 +71,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015470'
+- timestamp: '2026-05-16T09:03:38.892053+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:05:40.068254+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 36fa8e0553feb221c460c62fcc7c37410a11ef573565f235f3a4adf39f5e9b53
+  source: lb_plus_sm_buffer.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: 36fa8e0553feb221c460c62fcc7c37410a11ef573565f235f3a4adf39f5e9b53

@@ -4,6 +4,7 @@ original_name: '229'
 category: bacterial
 description: 229. NBRC 228.
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Yeast extract1gBeef extract1gN-Z-Amine A2gGlucose10gDistilled water1LAgar20gpH
@@ -40,10 +41,19 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007479'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:45.863346'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Yeast extract1gBeef extract1gN-Z-Amine
     A2gGlucose10gDistilled water1LAgar20gpH 7.3'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-05-16T09:03:06.662376+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:05:04.651757+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 56048a3a5730ce0fe575ead0bf45fec153ff4095b7451d7e57f0ef3eac2a6bed
+  source: NBRC_229.yaml
 merge_fingerprint: 56048a3a5730ce0fe575ead0bf45fec153ff4095b7451d7e57f0ef3eac2a6bed
 merged_from:
 - NBRC_229

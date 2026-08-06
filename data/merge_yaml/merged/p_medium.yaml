@@ -3,6 +3,7 @@ name: p_medium
 original_name: P-medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:
@@ -23,8 +24,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000591
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17306
     label: Maltose
 - preferred_term: Calcium Chloride
   term:
@@ -33,8 +34,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
     label: Calcium Chloride
 - preferred_term: Magnesium sulfate heptahydrate
   term:
@@ -43,8 +44,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: Magnesium sulfate heptahydrate
 - preferred_term: HEPES
   term:
@@ -53,8 +54,8 @@ ingredients:
   concentration:
     value: '11.9'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001034
+  mediaingredientmech_chebi_term:
+    id: CHEBI:46756
     label: HEPES
 - preferred_term: FeNa-EDTA
   concentration:
@@ -85,6 +86,17 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "P-medium" to "p_medium" for consistent matching
+- timestamp: '2026-06-05T07:41:40.760190+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:52.161410+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 57a25d3fe4a0b14e074ba0286f96bdcd436cb47cbbdde48c1416462a50193656
+  source: p_medium.yaml
 merge_fingerprint: 57a25d3fe4a0b14e074ba0286f96bdcd436cb47cbbdde48c1416462a50193656
 merged_from:
 - p_medium

@@ -3,6 +3,7 @@ name: basal_salts_medium
 original_name: basal salts medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: distilled or deionized water
@@ -18,8 +19,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
   term:
-    id: CHEBI:32599
-    label: ''
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: CaCl2 · 2H2O
   concentration:
     value: '0.07'
@@ -37,9 +38,9 @@ ingredients:
     compound'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NaMoO4 · 2H2O
   concentration:
@@ -47,6 +48,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:75213
+    label: ''
 - preferred_term: MnCl2 · 4H2O
   concentration:
     value: '1.8'
@@ -83,9 +87,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: (NH4)2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 - preferred_term: FeCl3 · 6H2O
   concentration:
     value: '0.02'
@@ -110,6 +114,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
     compound'
+  term:
+    id: CHEBI:131366
+    label: ''
 - preferred_term: CoSO4
   concentration:
     value: '0.01'
@@ -119,9 +126,9 @@ ingredients:
   term:
     id: CHEBI:53470
     label: cobalt(2+) sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000158
-    label: CoSO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53470
+    label: cobalt(2+) sulfate
 - preferred_term: H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
@@ -131,9 +138,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001125
-    label: H2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26836
+    label: sulfuric acid
 media_term:
   preferred_term: TOGO Medium M2877
   term:
@@ -152,9 +159,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.726890'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: H2SO4'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:06.083032Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -168,6 +175,31 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "basal salts medium" to "basal_salts_medium" for consistent
     matching
-merge_fingerprint: 39fcea228da770b99766b83debbb7ec48cba0c5b8498ec2b52fe7d9a38bc6e66
+- timestamp: '2026-05-16T09:03:25.476637+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:50.553612+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:37.317203+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:46:53.812936+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:24.781368+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 17a639565b34120d3fbf000fd5fce8105301d159c86a38c3589fed8bd8920c17
+  source: basal_salts_medium.yaml
+merge_fingerprint: 17a639565b34120d3fbf000fd5fce8105301d159c86a38c3589fed8bd8920c17
 merged_from:
 - basal_salts_medium

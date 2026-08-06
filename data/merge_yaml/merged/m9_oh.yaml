@@ -3,6 +3,7 @@ name: m9_oh
 original_name: '''M9 (oh'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: beta-D-Glucose
@@ -16,17 +17,23 @@ ingredients:
   concentration:
     value: '0.2862'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000826
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28971
     label: Ampicillin
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.1'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '42.2654'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -34,13 +41,16 @@ ingredients:
   concentration:
     value: '8.55578'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '22.0449'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -48,8 +58,8 @@ ingredients:
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
@@ -58,8 +68,8 @@ ingredients:
   concentration:
     value: '18.6947'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 preparation_steps:
 - step_number: 1
@@ -89,6 +99,17 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "'M9 (oh" to "m9_oh" for consistent matching
+- timestamp: '2026-06-05T07:41:12.069148+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:41.232954+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 1c4bfeef077f6695e89a29af7318fc0d4eae111ab7c5adeb917e0ef876eb6211
+  source: m9_oh.yaml
 media_term:
   preferred_term: MediaDB Medium 120
   term:
@@ -100,6 +121,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: ba50567203420bdf5291d83b4a47f4fab93648e2454f4e5a883e7da6ccd085cc
+merge_fingerprint: 1c4bfeef077f6695e89a29af7318fc0d4eae111ab7c5adeb917e0ef876eb6211
 merged_from:
 - m9_oh

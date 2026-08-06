@@ -3,6 +3,7 @@ name: sl7_solution
 original_name: SL7 solution
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: CaCl2 × 2 H2O
   concentration:
@@ -33,8 +34,8 @@ ingredients:
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
     component'
   term:
-    id: CHEBI:32599
-    label: ''
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: NH4Cl
   concentration:
     value: '18.7'
@@ -44,9 +45,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: Na2HPO4 × 12 H2O
   concentration:
     value: '25'
@@ -76,9 +77,9 @@ ingredients:
   term:
     id: CHEBI:84997
     label: sodium gluconate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001052
-    label: Sodium gluconate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:84997
+    label: sodium gluconate
 media_term:
   preferred_term: TOGO Medium M3208
   term:
@@ -108,6 +109,27 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "SL7 solution" to "sl7_solution" for consistent matching
-merge_fingerprint: fef8495dfe3b82d44bce5eb9e2fef584fa757d6156f23d13c5da380c1685d64d
+- timestamp: '2026-06-05T07:41:45.904991+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:58:32.294170+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:47:11.512191+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:55.800842+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e6272326f512164cd414733092d8993621744de12a039d22a0ac4ed58b343248
+  source: sl7_solution.yaml
+merge_fingerprint: e6272326f512164cd414733092d8993621744de12a039d22a0ac4ed58b343248
 merged_from:
 - sl7_solution

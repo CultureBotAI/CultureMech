@@ -3,6 +3,7 @@ name: alifodinibius_medium_tsa_mod
 original_name: ALIFODINIBIUS MEDIUM (TSA mod)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:
@@ -20,9 +21,6 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  term:
-    id: MICRO:0000181
-    label: ''
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -30,8 +28,8 @@ ingredients:
   concentration:
     value: '60'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 preparation_steps:
 - step_number: 1
@@ -40,6 +38,11 @@ preparation_steps:
 applications:
 - Microbial cultivation
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI,
+    1 de-grounded (mixture or unverifiable).
 - timestamp: '2026-01-26T17:53:14.804447Z'
   curator: mediadive-import
   action: Imported from MediaDive
@@ -61,7 +64,18 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ALIFODINIBIUS MEDIUM (TSA mod)" to "alifodinibius_medium_tsa_mod"
     for consistent matching
+- timestamp: '2026-06-05T07:40:47.783485+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:22.293866+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint c200db79d3bf6ba5934dad964b26080910a3f26f71c0eff66d2a598f222f6d1a
+  source: alifodinibius_medium_tsa_mod.yaml
 kg_microbe_match: mediadive.medium:1546
-merge_fingerprint: a0a08d107c0ca1a49ff20e4543d15f1d1ed0306f317dd217674b1b3ae8ae68f7
+merge_fingerprint: c200db79d3bf6ba5934dad964b26080910a3f26f71c0eff66d2a598f222f6d1a
 merged_from:
 - alifodinibius_medium_tsa_mod

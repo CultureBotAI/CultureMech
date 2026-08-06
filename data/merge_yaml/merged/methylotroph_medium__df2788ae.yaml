@@ -1,0 +1,224 @@
+id: CultureMech:007844
+name: methylotroph_medium
+original_name: Methylotroph Medium
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '970'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.27'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: MgCl2・6H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:86345
+    label: ''
+- preferred_term: NaNO3
+  concentration:
+    value: '0.42'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:63005
+    label: ''
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
+    label: NaNO3
+- preferred_term: Na2SO4
+  concentration:
+    value: '0.014'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
+- preferred_term: HEPES
+  concentration:
+    value: '4.77'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
+  term:
+    id: CHEBI:46756
+    label: HEPES
+  mediaingredientmech_chebi_term:
+    id: CHEBI:46756
+    label: HEPES
+- preferred_term: agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: KOH
+  notes: 'Role: Mineral source; Properties: Defined component, Solution'
+  term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+- preferred_term: Methanol
+  concentration:
+    value: '0.81'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:17790
+    label: methanol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17790
+    label: methanol
+media_term:
+  preferred_term: TOGO Medium M1309
+  term:
+    id: TOGO:M1309
+    label: Methylotroph Medium
+notes: 'Source: https://togomedium.org/medium/M1309
+
+  Original source: JCM - JCM_M1219-2
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1219'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.332732Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1309'
+- timestamp: '2026-01-28T19:48:21.580294Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: KOH'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-03-09T08:04:36.093081+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 5 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:51.912150Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007844'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:30:11.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:10.352000+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Methylotroph Medium" to "methylotroph_medium" for consistent
+    matching
+- timestamp: '2026-05-16T09:03:09.308896+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:32.258153+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:47.557059+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:07.860623+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint df2788aec6830484421793ba7eb5bd792a01adecfe1e9cd5399f80051c53fec5
+  source: TOGO_M1309_Methylotroph_Medium.yaml
+solutions:
+- preferred_term: Trace element solution (see Medium [M278])
+  composition: []
+  notes: Cross-reference to Medium M278
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: Se/W solution (see Medium [M278])
+  composition: []
+  notes: Cross-reference to Medium M278
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: 10 mM CuCl2 solution
+  composition: []
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source'
+  name: Unknown solution
+- preferred_term: 10 mM CeCl3 solution
+  composition: []
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source'
+  name: Unknown solution
+merge_fingerprint: df2788aec6830484421793ba7eb5bd792a01adecfe1e9cd5399f80051c53fec5
+merged_from:
+- TOGO_M1309_Methylotroph_Medium

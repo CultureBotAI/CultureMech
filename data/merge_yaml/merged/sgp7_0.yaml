@@ -3,18 +3,19 @@ name: sgp7_0
 original_name: SGP7.0
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: MgSO4∙7H2O
+- preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.041'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
   term:
-    id: CHEBI:32599
-    label: ''
-- preferred_term: CaCl2∙2H2O
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.044'
     unit: G_PER_L
@@ -23,7 +24,7 @@ ingredients:
   term:
     id: CHEBI:86158
     label: ''
-- preferred_term: Na2HPO4∙12H2O
+- preferred_term: Na2HPO4 x 12 H2O
   concentration:
     value: '0.076'
     unit: G_PER_L
@@ -40,10 +41,10 @@ ingredients:
   term:
     id: CHEBI:46756
     label: HEPES
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001034
+  mediaingredientmech_chebi_term:
+    id: CHEBI:46756
     label: HEPES
-- preferred_term: Na2SiO3∙9H2O
+- preferred_term: Na2SiO3 x 9 H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
@@ -52,7 +53,7 @@ ingredients:
   term:
     id: CHEBI:132108
     label: ''
-- preferred_term: KH2PO4∙2H2O
+- preferred_term: KH2PO4 x 2 H2O
   concentration:
     value: '0.02'
     unit: G_PER_L
@@ -67,9 +68,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Ultrapure water
   concentration:
     value: '1'
@@ -104,9 +105,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:58.014672'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: 0.1N NaOH'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:08.067783Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -119,6 +120,27 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "SGP7.0" to "sgp7_0" for consistent matching
-merge_fingerprint: 99c1d9fb05b518eacd4e1304bf42eb402f9aec1f89df7479e896c75ee47fe7a2
+- timestamp: '2026-05-16T09:04:31.688129+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:45.809394+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:58:32.218619+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-08-06T03:05:55.747999+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint bde32639141c91b324cc89bb631464f23df2bc9f31c98d2cb2221a3c94ce9db3
+  source: sgp7_0.yaml
+merge_fingerprint: bde32639141c91b324cc89bb631464f23df2bc9f31c98d2cb2221a3c94ce9db3
 merged_from:
 - sgp7_0

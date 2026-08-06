@@ -3,6 +3,7 @@ name: barbour_sfoenner_kelly_bsk_ii_medium
 original_name: BARBOUR-SFOENNER-KELLY (BSK) II MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.6
 media_term:
@@ -90,8 +91,8 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001034
+  mediaingredientmech_chebi_term:
+    id: CHEBI:46756
     label: HEPES
 - preferred_term: Trisodium citrate
   term:
@@ -100,8 +101,8 @@ ingredients:
   concentration:
     value: '0.7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
     label: Trisodium citrate
 - preferred_term: Glucose
   term:
@@ -110,8 +111,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Sodium pyruvate
   term:
@@ -120,8 +121,8 @@ ingredients:
   concentration:
     value: '0.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
     label: Sodium pyruvate
 - preferred_term: N-Acetyl-D-glucosamine
   term:
@@ -140,8 +141,8 @@ ingredients:
   concentration:
     value: '2.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: Yeast extract
   concentration:
@@ -158,8 +159,8 @@ ingredients:
   concentration:
     value: '70'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000940
+  mediaingredientmech_chebi_term:
+    id: CHEBI:5291
     label: Gelatin
 preparation_steps:
 - step_number: 1
@@ -188,6 +189,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "BARBOUR-SFOENNER-KELLY (BSK) II MEDIUM" to "barbour_sfoenner_kelly_bsk_ii_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:40:50.494870+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:24.741279+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d79c02ba96824279b4e43527b19fde1ea88f11f2e29794a427d59ff399799cd4
+  source: barbour_sfoenner_kelly_bsk_ii_medium.yaml
 merge_fingerprint: d79c02ba96824279b4e43527b19fde1ea88f11f2e29794a427d59ff399799cd4
 merged_from:
 - barbour_sfoenner_kelly_bsk_ii_medium

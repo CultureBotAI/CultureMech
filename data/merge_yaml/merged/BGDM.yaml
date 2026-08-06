@@ -3,6 +3,7 @@ name: bgdm
 original_name: BGDM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: L-Glutamate
@@ -10,14 +11,23 @@ ingredients:
     value: '0.6797'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glu-L'
+  term:
+    id: CHEBI:16015
+    label: ''
 - preferred_term: Alanine
   concentration:
     value: '1.1224'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:16977
+    label: ''
 - preferred_term: Phenylalanine
   concentration:
     value: '0.6054'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:17295
+    label: ''
 - preferred_term: Menadione
   term:
     id: CHEBI:28869
@@ -26,17 +36,23 @@ ingredients:
     value: '0.002904'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:mndn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000903
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28869
     label: Menadione
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.9011'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '1.1481'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Aspartate
   concentration:
     value: '0.7513'
@@ -48,9 +64,9 @@ ingredients:
   concentration:
     value: '1.7112'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Cysteine-HCl
   term:
     id: CHEBI:91247
@@ -65,6 +81,9 @@ ingredients:
   concentration:
     value: '7.3483'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -72,8 +91,8 @@ ingredients:
   concentration:
     value: '2.8401'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Hemin
   term:
@@ -82,8 +101,8 @@ ingredients:
   concentration:
     value: '0.007669'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
     label: Hemin
 preparation_steps:
 - step_number: 1
@@ -113,6 +132,17 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "BGDM" to "bgdm" for consistent matching
+- timestamp: '2026-06-05T07:40:50.854120+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:25.097706+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b42afd7beb2780aa6ab1b53554c632b1e4adc86a6b20d592a77cbbab2d15d0bb
+  source: bgdm.yaml
 media_term:
   preferred_term: MediaDB Medium 72
   term:
@@ -124,6 +154,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 4438d9c3a2443a87fff1f218e141dc086d6f24fd6a9feddc50c761d6b8ee94f4
+merge_fingerprint: b42afd7beb2780aa6ab1b53554c632b1e4adc86a6b20d592a77cbbab2d15d0bb
 merged_from:
 - bgdm

@@ -1,0 +1,174 @@
+id: CultureMech:006248
+name: sulfobacillus_medium
+original_name: SULFOBACILLUS medium
+category: bacterial
+medium_type: COMPLEX
+composition_type: SEMI_DEFINED
+physical_state: LIQUID
+ph_range:
+  min: 1.9
+  max: 2.4
+media_term:
+  preferred_term: KOMODO Medium 665
+  term:
+    id: komodo.medium:665
+    label: SULFOBACILLUS medium
+notes: 'Source: KOMODO ModelSEED | ID: 665 | DSMZ Medium: 665 (mediadive.medium:665)
+  | Aerobic: No'
+ingredients:
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: KCl
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: K2HPO4
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: Ca(NO3)2
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64205
+    label: Ca(NO3)2
+  term:
+    id: CHEBI:64205
+    label: calcium nitrate
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '33.4'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: H2SO4
+  term:
+    id: CHEBI:26836
+    label: sulfuric acid
+  notes: pH adjustment (extracted from notes)
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26836
+    label: sulfuric acid
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 665'
+- timestamp: '2026-02-03T11:19:05.841592'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 665
+- timestamp: '2026-02-06T05:10:31.407633Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:39.259706Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006248'
+- timestamp: '2026-03-17T06:30:14.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:56.338121+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SULFOBACILLUS medium" to "sulfobacillus_medium" for
+    consistent matching
+- timestamp: '2026-05-20T06:00:53.124083+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''1.9-2.4'' -> {''min'': 1.9, ''max'': 2.4}'
+- timestamp: '2026-06-05T07:40:25.303075+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:28.449209+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:46:45.505098+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:37.940864+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_1023_MANNING_medium, KOMODO_665_SULFOBACILLUS_medium, sulfobacillus_medium'
+- timestamp: '2026-08-06T03:04:37.940918+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 128cc83369b573b90cf1945180515c4989ab3406b3a6c8643493592858a15ace
+  source: KOMODO_1023_MANNING_medium.yaml, KOMODO_665_SULFOBACILLUS_medium.yaml, sulfobacillus_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/sulfobacillus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001804
+  name: sulfobacillus_medium
+  notes: KOMODO record states DSMZ Medium 665 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
+synonyms:
+- name: manning_medium
+  source: KOMODO
+  source_id: komodo.medium:1023
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- KOMODO_1023_MANNING_medium
+- KOMODO_665_SULFOBACILLUS_medium
+- sulfobacillus_medium
+merge_fingerprint: 128cc83369b573b90cf1945180515c4989ab3406b3a6c8643493592858a15ace

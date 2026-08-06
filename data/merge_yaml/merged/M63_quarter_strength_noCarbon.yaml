@@ -1,6 +1,7 @@
 id: CultureMech:015541
 name: M63 quarter strength noCarbon
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Potassium phosphate monobasic
@@ -40,7 +41,7 @@ ingredients:
     120.37'
 description: Defined media with no carbon source; Used for Ralstonia
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: M63 quarter strength noCarbon
@@ -54,6 +55,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015541'
+- timestamp: '2026-05-16T09:04:40.780058+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:05.350167+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 207204dcc19c8b68c5956d2ba57e2d153ea2de47064b81cad00a7159d331df94
+  source: m63_quarter_strength_nocarbon.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: 207204dcc19c8b68c5956d2ba57e2d153ea2de47064b81cad00a7159d331df94

@@ -3,8 +3,11 @@ name: sulfuriferula_multivorans_medium
 original_name: SULFURIFERULA MULTIVORANS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
-ph_range: 6.5-7
+ph_range:
+  min: 6.5
+  max: 7.0
 media_term:
   preferred_term: DSMZ Medium 1585
   term:
@@ -19,18 +22,18 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4 x 12 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '1.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -39,18 +42,18 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -59,8 +62,8 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: FeCl3 x 6 H2O
   term:
@@ -69,8 +72,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000218
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86254
     label: FeCl3 x 6 H2O
 - preferred_term: MnSO4 x 5 H2O
   term:
@@ -79,8 +82,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000549
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131524
     label: MnSO4 x 5 H2O
 - preferred_term: Na2S2O3 x 5 H2O
   term:
@@ -89,8 +92,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000492
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32150
     label: Na2S2O3 x 5 H2O
 preparation_steps:
 - step_number: 1
@@ -120,6 +123,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "SULFURIFERULA MULTIVORANS MEDIUM" to "sulfuriferula_multivorans_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:02:06.560504+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.5-7'' -> {''min'': 6.5, ''max'': 7.0}'
+- timestamp: '2026-06-05T07:41:47.657363+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:12.105191+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:56.925936+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 8b148f68fc355ac61121b6b14205511a1effb42fddab60315cc564c169a939d8
+  source: sulfuriferula_multivorans_medium.yaml
 merge_fingerprint: 8b148f68fc355ac61121b6b14205511a1effb42fddab60315cc564c169a939d8
 merged_from:
 - sulfuriferula_multivorans_medium

@@ -3,6 +3,7 @@ name: togo_medium_m1623
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Phenol red
   concentration:
@@ -26,8 +27,8 @@ ingredients:
   term:
     id: CHEBI:31991
     label: Phenol red
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001075
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31991
     label: Phenol red
 - preferred_term: L-Arginine
   concentration:
@@ -38,9 +39,9 @@ ingredients:
   term:
     id: CHEBI:16467
     label: L-arginine
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000289
-    label: L-Arginine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16467
+    label: L-arginine
 - preferred_term: Penicillin G** (20,000 U/ml)
   concentration:
     value: '5'
@@ -81,9 +82,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008178'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:49.873632'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:32.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -93,6 +94,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TOGO Medium M1623" to "togo_medium_m1623" for consistent
     matching
+- timestamp: '2026-05-16T09:04:36.620415+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:52.923636+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:00.607153+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 320c86d526ce8390ca7444e2966cc8ff79917c1c5419f9eb34c3f205022e41d4
+  source: togo_medium_m1623.yaml
 solutions:
 - preferred_term: Horse serum*
   composition: []

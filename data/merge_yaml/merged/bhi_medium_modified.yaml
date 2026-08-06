@@ -3,6 +3,7 @@ name: bhi_medium_modified
 original_name: BHI MEDIUM (modified)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 215a
@@ -128,8 +129,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000937
+  mediaingredientmech_chebi_term:
+    id: CHEBI:48923
     label: Erythromycin
 applications:
 - Microbial cultivation
@@ -151,6 +152,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "BHI MEDIUM (modified)" to "bhi_medium_modified" for
     consistent matching
+- timestamp: '2026-06-05T07:40:50.910450+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:25.152652+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 7ed839815b2cc2a034a3f76cc1ff5266f8cd597780dd0378ed37f9ea7095929c
+  source: bhi_medium_modified.yaml
 merge_fingerprint: 7ed839815b2cc2a034a3f76cc1ff5266f8cd597780dd0378ed37f9ea7095929c
 merged_from:
 - bhi_medium_modified

@@ -1,36 +1,38 @@
-id: CultureMech:001540
+id: CultureMech:005279
 name: ectothiorhodospira_vacuolata_medium
 original_name: ECTOTHIORHODOSPIRA VACUOLATA MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 8.7
+notes: 'pH buffer: Na2S | Source: KOMODO ModelSEED | ID: 431 | DSMZ Medium: 431 (mediadive.medium:431)
+  | Aerobic: No'
 media_term:
-  preferred_term: DSMZ Medium 431
+  preferred_term: KOMODO Medium 431
   term:
-    id: mediadive.medium:431
+    id: komodo.medium:431
     label: ECTOTHIORHODOSPIRA VACUOLATA MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium431.pdf'
 ingredients:
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -39,8 +41,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -49,8 +51,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: NaHCO3
   term:
@@ -59,8 +61,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: NaCl
   term:
@@ -69,8 +71,8 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Na2S x 9 H2O
   term:
@@ -79,8 +81,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 - preferred_term: Na2S2O3 x 5 H2O
   term:
@@ -89,8 +91,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000492
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32150
     label: Na2S2O3 x 5 H2O
 - preferred_term: Na-malate
   term:
@@ -99,9 +101,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000450
-    label: Na-malate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91260
+    label: disodium malate
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -109,8 +111,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Nicotinic acid amide
   term:
@@ -119,8 +121,8 @@ ingredients:
   concentration:
     value: '0.35'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000539
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17154
     label: Nicotinic acid amide
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
@@ -129,8 +131,8 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000160
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132751
     label: Thiamine-HCl x 2 H2O
 - preferred_term: p-Aminobenzoic acid
   term:
@@ -139,8 +141,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
     label: p-Aminobenzoic acid
 - preferred_term: Pyridoxal hydrochloride
   term:
@@ -149,8 +151,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000417
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131529
     label: Pyridoxal hydrochloride
 - preferred_term: Calcium pantothenate
   term:
@@ -159,8 +161,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium pantothenate
 - preferred_term: Vitamin B12
   term:
@@ -169,8 +171,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 - preferred_term: FeCl2 x 4 H2O
   term:
@@ -179,8 +181,8 @@ ingredients:
   concentration:
     value: '1.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000329
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86249
     label: FeCl2 x 4 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -189,8 +191,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -199,8 +201,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
@@ -209,8 +211,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
     label: CuCl2 x 2 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -219,8 +221,8 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
@@ -229,18 +231,18 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
     label: ZnCl2
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -249,8 +251,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: Na2SeO3 x 5 H2O
   term:
@@ -259,37 +261,69 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000144
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131361
     label: Na2SeO3 x 5 H2O
-preparation_steps:
-- step_number: 1
-  action: FILTER_STERILIZE
-  description: Adjust pH to 8.7, filter sterilize and add appropriate amount of Na2S
-    solution.
-- step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH to 2.0 - 3.0.
+- preferred_term: Na2S
+  notes: Extracted from recipe notes (pH buffer)
+  data_quality_flags:
+  - extracted_from_notes
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76208
+    label: Na2S
+  term:
+    id: CHEBI:76208
+    label: ''
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:11.119647Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 431'
-- timestamp: '2026-03-13T06:19:05.061242Z'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 431'
+- timestamp: '2026-02-03T11:18:56.484873'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 431
+- timestamp: '2026-03-13T06:19:31.469254Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:001540'
-- timestamp: '2026-03-17T06:30:25.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:005279'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Na2S'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:29:45.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:17.147301+00:00'
+- timestamp: '2026-03-17T19:45:47.353449+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "ECTOTHIORHODOSPIRA VACUOLATA MEDIUM" to "ectothiorhodospira_vacuolata_medium"
     for consistent matching
-merge_fingerprint: 7d28df5f2dc4de9cce8fb739d7bd65bed88410bb3d9c98880f55a7030ccffb83
+- timestamp: '2026-05-16T09:03:02.715059+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:23.295941+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 26 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:44.881428+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:49.277073+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 3d9bb09d2d1d1c5fd3a484457e439f27acdb66184a67dd071889f469bfe200c0
+  source: KOMODO_431_ECTOTHIORHODOSPIRA_VACUOLATA_MEDIUM.yaml
+merge_fingerprint: 3d9bb09d2d1d1c5fd3a484457e439f27acdb66184a67dd071889f469bfe200c0
 merged_from:
-- ectothiorhodospira_vacuolata_medium
+- KOMODO_431_ECTOTHIORHODOSPIRA_VACUOLATA_MEDIUM

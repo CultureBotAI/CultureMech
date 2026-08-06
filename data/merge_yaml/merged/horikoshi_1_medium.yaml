@@ -3,6 +3,7 @@ name: horikoshi_1_medium
 original_name: HORIKOSHI-1 medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 10.0
 media_term:
@@ -20,8 +21,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Polypeptone
   concentration:
@@ -34,12 +35,12 @@ ingredients:
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -48,8 +49,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Agar
   term:
@@ -58,18 +59,18 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 applications:
 - Microbial cultivation
@@ -95,11 +96,44 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HORIKOSHI-1 medium" to "horikoshi_1_medium" for consistent
     matching
-- timestamp: '2026-04-17T06:29:15.046981+00:00'
+- timestamp: '2026-06-05T07:40:18.770288+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:43.415496+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:39.457489+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_1081_HORIKOSHI-1_medium, KOMODO_1081a_HORIKOSHI-1_medium_WITH_10_NaCl,
     horikoshi_1_medium, medium_1081a_modified_for_dsm_18086'
+- timestamp: '2026-08-06T03:04:39.457542+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 4 source recipe(s) on fingerprint edf28961c59874c26a7facf4c2c0c0ce1d9c8dd67ae16479d88bcafa57a97d0e
+  source: KOMODO_1081_HORIKOSHI-1_medium.yaml, KOMODO_1081a_HORIKOSHI-1_medium_WITH_10_NaCl.yaml,
+    horikoshi_1_medium.yaml, medium_1081a_modified_for_dsm_18086.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_1081a_modified_for_dsm_18086.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003732
+  name: medium_1081a_modified_for_dsm_18086
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/horikoshi_1_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000515
+  name: horikoshi_1_medium
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and concentration
+    signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.
 synonyms:
 - name: horikoshi_1_medium_with_10_nacl
   source: KOMODO

@@ -3,6 +3,7 @@ name: eubacterium_lentum_medium
 original_name: EUBACTERIUM LENTUM medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 209
@@ -19,8 +20,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000341
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29016
     label: Arginine
 - preferred_term: Ground beef
   concentration:
@@ -34,8 +35,8 @@ ingredients:
     value: '26.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 25.0, 1.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
     label: NaOH
 - preferred_term: Casitone
   concentration:
@@ -48,12 +49,12 @@ ingredients:
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '4.87805'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: Resazurin
   term:
@@ -62,8 +63,8 @@ ingredients:
   concentration:
     value: '0.00097561'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: L-Cysteine HCl
   term:
@@ -83,8 +84,8 @@ ingredients:
     value: '14.6341'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Haemin
   term:
@@ -93,13 +94,16 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
     label: Haemin
 - preferred_term: Vitamin K3
   concentration:
     value: '0.05'
     unit: G_PER_L
+  term:
+    id: CHEBI:28869
+    label: ''
 - preferred_term: Ethanol
   term:
     id: CHEBI:16236
@@ -108,8 +112,8 @@ ingredients:
     value: '959.5'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 9.5, 950.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000686
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16236
     label: Ethanol
 - preferred_term: Vitamin K1
   term:
@@ -118,8 +122,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000567
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18067
     label: Vitamin K1
 applications:
 - Microbial cultivation
@@ -149,14 +153,41 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "EUBACTERIUM LENTUM medium" to "eubacterium_lentum_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:20.036922+00:00'
+- timestamp: '2026-06-05T07:40:21.650524+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:44.376735+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:44.884649+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_209_EUBACTERIUM_LENTUM_medium, eubacterium_lentum_medium'
+- timestamp: '2026-08-06T03:04:44.884701+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 18a5d0a470db8db2738fd484d960fe3ffd0409261a1e426fe309a7700413f134
+  source: KOMODO_209_EUBACTERIUM_LENTUM_medium.yaml, eubacterium_lentum_medium.yaml
 ph_value: 7.0
+parent_media:
+  path: data/normalized_yaml/bacterial/eubacterium_lentum_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001307
+  name: eubacterium_lentum_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 209; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 209; local ingredient
+  and concentration signatures match.
 categories:
 - bacterial
 merged_from:
 - KOMODO_209_EUBACTERIUM_LENTUM_medium
 - eubacterium_lentum_medium
-merge_fingerprint: 5eb494a348423ffe728348164f6defe74006b9b5d94c2c0e70fc58f1de7cad55
+merge_fingerprint: 18a5d0a470db8db2738fd484d960fe3ffd0409261a1e426fe309a7700413f134

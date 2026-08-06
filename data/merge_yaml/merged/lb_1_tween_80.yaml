@@ -3,6 +3,7 @@ name: lb_1_tween_80
 original_name: LB + 1% Tween 80
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +32,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Tween 80
   concentration:
     value: '10'
@@ -43,9 +44,9 @@ ingredients:
   term:
     id: CHEBI:53426
     label: polysorbate 80
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000190
-    label: Tween 80
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53426
+    label: polysorbate 80
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -90,6 +91,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "LB + 1% Tween 80" to "lb_1_tween_80" for consistent
     matching
+- timestamp: '2026-06-05T07:41:10.787020+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:39.944470+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e535cc8031b91d6d4fbb1ea4330699cec6dd9c70c2c646526eae326cbb8fc57e
+  source: lb_1_tween_80.yaml
 merge_fingerprint: e535cc8031b91d6d4fbb1ea4330699cec6dd9c70c2c646526eae326cbb8fc57e
 merged_from:
 - lb_1_tween_80

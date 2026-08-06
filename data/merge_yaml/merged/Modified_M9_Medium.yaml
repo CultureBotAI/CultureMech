@@ -3,6 +3,7 @@ name: modified_m9_medium
 original_name: Modified M9 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: NaCl
   concentration:
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: NH4Cl
   concentration:
     value: '0.31'
@@ -38,9 +39,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: KCl
   concentration:
     value: '0.13'
@@ -50,9 +51,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Na2HPO4
   concentration:
     value: '4.33'
@@ -62,9 +63,9 @@ ingredients:
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
-    label: Na2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
 - preferred_term: NaH2PO4
   concentration:
     value: '2.69'
@@ -74,9 +75,9 @@ ingredients:
   term:
     id: CHEBI:37585
     label: sodium dihydrogenphosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000393
-    label: NaH2PO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
@@ -98,9 +99,9 @@ ingredients:
   term:
     id: CHEBI:133341
     label: choline chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000437
-    label: Choline chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:133341
+    label: choline chloride
 - preferred_term: Nicotinamide
   concentration:
     value: '5'
@@ -110,9 +111,9 @@ ingredients:
   term:
     id: CHEBI:17154
     label: nicotinamide
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000539
-    label: Nicotinamide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17154
+    label: nicotinamide
 - preferred_term: myo-Inositol
   concentration:
     value: '5'
@@ -122,9 +123,9 @@ ingredients:
   term:
     id: CHEBI:17268
     label: myo-inositol
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000500
-    label: myo-Inositol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17268
+    label: myo-inositol
 - preferred_term: Sodium ascorbate
   concentration:
     value: '5'
@@ -133,9 +134,9 @@ ingredients:
   term:
     id: CHEBI:113451
     label: sodium ascorbate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001044
-    label: Sodium ascorbate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:113451
+    label: sodium ascorbate
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.1'
@@ -145,9 +146,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: Na2MoO4·2H2O
   concentration:
     value: '0.01'
@@ -157,9 +158,9 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000183
-    label: Na2MoO4·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
 - preferred_term: MgCl2·6H2O
   concentration:
     value: '3'
@@ -169,9 +170,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: MgCl2·6H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: H3BO3
   concentration:
     value: '0.01'
@@ -181,9 +182,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: CoCl2·6H2O
   concentration:
     value: '0.1'
@@ -202,9 +203,9 @@ ingredients:
   term:
     id: CHEBI:86318
     label: copper(II) chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
-    label: CuCl2·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
 - preferred_term: ZnCl2
   concentration:
     value: '0.1'
@@ -214,9 +215,9 @@ ingredients:
   term:
     id: CHEBI:49976
     label: zinc dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
-    label: ZnCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
+    label: zinc dichloride
 - preferred_term: Nitrilotriacetic acid
   concentration:
     value: '1.5'
@@ -226,15 +227,18 @@ ingredients:
   term:
     id: CHEBI:44557
     label: nitrilotriacetic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
-    label: Nitrilotriacetic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
 - preferred_term: MnCl2·2H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:131395
+    label: ''
 - preferred_term: AlCl3
   concentration:
     value: '0.01'
@@ -244,9 +248,9 @@ ingredients:
   term:
     id: CHEBI:30114
     label: aluminium trichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000292
-    label: AlCl3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30114
+    label: aluminium trichloride
 - preferred_term: FeCl2·4H2O
   concentration:
     value: '0.1'
@@ -256,9 +260,9 @@ ingredients:
   term:
     id: CHEBI:86249
     label: iron dichloride tetrahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000329
-    label: FeCl2·4H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
   term:
@@ -267,9 +271,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000213
-    label: KOH
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32035
+    label: potassium hydroxide
 - preferred_term: NaHCO3
   concentration:
     value: '1.64'
@@ -279,9 +283,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: FeCl3·6H2O
   concentration:
     value: '2.7'
@@ -291,9 +295,9 @@ ingredients:
   term:
     id: CHEBI:86254
     label: iron trichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000218
-    label: FeCl3·6H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86254
+    label: iron trichloride hexahydrate
 - preferred_term: Nitrilotriacetic acid trisodium salt monohydrate
   concentration:
     value: '2.75'
@@ -308,9 +312,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
-    label: NaOH
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
 media_term:
   preferred_term: TOGO Medium M3018
   term:
@@ -333,11 +337,11 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:57.084250'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2; Added default concentration
     for ingredient: KOH; Added default concentration for ingredient: NaOH; Added default
     concentration for ingredient: N2'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:05:06.486180+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -351,10 +355,10 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009533'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:59.105253'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name; Added default solution
     name; Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:49.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -364,6 +368,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Modified M9 Medium" to "modified_m9_medium" for consistent
     matching
+- timestamp: '2026-05-16T09:04:25.622603+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:41:36.998372+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 23 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:08.692556+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:48.703178+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e984ecbb1e95ccc3b44c6b310399e6072bc13b28a7887b6a7ce2e9ff5c06ec44
+  source: modified_m9_medium.yaml
 high_metal: true
 solutions:
 - preferred_term: 10% Na2CO3 solution
@@ -399,6 +422,6 @@ solutions:
     value: '1'
     unit: G_PER_L
   name: Unknown solution
-merge_fingerprint: 052884ee0cee6d2f9b3d2bc96d1edf17611a482640b339bbdc3bac0646902197
+merge_fingerprint: e984ecbb1e95ccc3b44c6b310399e6072bc13b28a7887b6a7ce2e9ff5c06ec44
 merged_from:
 - modified_m9_medium

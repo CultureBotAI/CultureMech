@@ -3,6 +3,7 @@ name: hyphomonas_medium
 original_name: HYPHOMONAS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:
@@ -28,8 +29,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 applications:
 - Microbial cultivation
@@ -55,10 +56,33 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HYPHOMONAS medium" to "hyphomonas_medium" for consistent
     matching
-- timestamp: '2026-04-17T06:29:21.406071+00:00'
+- timestamp: '2026-06-05T07:40:22.102068+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:46.567640+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_281_HYPHOMONAS_medium, hyphomonas_medium'
+- timestamp: '2026-08-06T03:04:46.567711+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 7201c049a770d861ecce1308651963c12d6509b910560e8fb3f232a5d83fc054
+  source: KOMODO_281_HYPHOMONAS_medium.yaml, hyphomonas_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/hyphomonas_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001377
+  name: hyphomonas_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 281; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 281; local ingredient
+  and concentration signatures match.
 categories:
 - bacterial
 merged_from:

@@ -1,89 +1,116 @@
-id: CultureMech:000385
+id: CultureMech:000108
 name: pas
-original_name: PAS
-category: bacterial
-medium_type: DEFINED
+category: algae
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-media_term:
-  preferred_term: CCAP Medium C72
-  term:
-    id: mediadive.medium:C72
-    label: PAS
-notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_PAS.pdf'
-ingredients:
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '24'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '0.8'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: CaCl2 x 6 H2O
-  term:
-    id: CHEBI:91243
-    label: CaCl2 x 6 H2O
-  concentration:
-    value: '1.2'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000327
-    label: CaCl2 x 6 H2O
-- preferred_term: Na2HPO4
-  term:
-    id: CHEBI:34683
-    label: Na2HPO4
-  concentration:
-    value: '28.4'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
-    label: Na2HPO4
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-  concentration:
-    value: '27.2'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Make up to 1 litre deionised water. Autoclave at 15 psi for 15 minutes.
+description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater
+  algae cultivation. Recipe available in PDF format.
+notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_PAS.pdf
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
 applications:
-- Microbial cultivation
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
 curation_history:
-- timestamp: '2026-01-26T17:53:19.723601Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: CCAP, ID: C72'
-- timestamp: '2026-03-13T06:18:54.884243Z'
+- curator: ccap-import
+  action: Imported from CCAP Culture Collection
+  notes: 'Source ID: PAS, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_PAS.pdf'
+  timestamp: '2026-01-28T00:00:00+00:00'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-02-03T11:26:43.575744'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:18:53.182590Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000385'
-- timestamp: '2026-03-17T06:30:07.000000Z'
-  curator: mediaingredientmech-enrichment-v1.0
-  action: Added MediaIngredientMech links
-  notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:05.893808+00:00'
+  notes: 'Assigned stable identifier: CultureMech:000108'
+- timestamp: '2026-03-17T19:45:04.135326+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "PAS" to "pas" for consistent matching
-merge_fingerprint: 8de619bad2d9f121c8940a2d7fd3396868d4076b5b7631537b4efb5613f837ec
+- timestamp: '2026-04-04T12:54:55.226873'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 3 curated ingredients from CCAP
+  source: CCAP Medium MR_PAS.pdf
+- timestamp: '2026-05-16T08:57:02.626695+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(3 entries)
+- timestamp: '2026-05-16T09:02:56.835234+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
+    category->lowercase=1
+- timestamp: '2026-06-10T06:57:11.478176+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-08-06T03:04:20.203032+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint f0f5e4ea6f6903b2981b2a7e9dfc0a6631a31d5513d160392c516a7800c931d8
+  source: pas.yaml
+references:
+- reference: CCAP:PAS
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_PAS.pdf
+ingredients:
+- preferred_term: MgSO .7H O
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.226856'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.40'
+    unit: G_PER_L
+  source: CCAP Medium MR_PAS.pdf
+  notes: From CCAP Medium MR_PAS.pdf; Curated from CCAP Medium MR_PAS.pdf specification
+- preferred_term: CaCl .6H O
+  term:
+    id: CHEBI:3312
+    label: CaCl .6H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.226865'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.60'
+    unit: G_PER_L
+  source: CCAP Medium MR_PAS.pdf
+  notes: From CCAP Medium MR_PAS.pdf; Curated from CCAP Medium MR_PAS.pdf specification
+- preferred_term: KH PO
+  term:
+    id: CHEBI:63036
+    label: KH PO
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.226868'
+    ontology_source: CHEBI
+  concentration:
+    value: '13.60'
+    unit: G_PER_L
+  source: CCAP Medium MR_PAS.pdf
+  notes: From CCAP Medium MR_PAS.pdf; Curated from CCAP Medium MR_PAS.pdf specification
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- curation_method:automated_expert_mapping
+original_name: PAS
+merge_fingerprint: f0f5e4ea6f6903b2981b2a7e9dfc0a6631a31d5513d160392c516a7800c931d8
 merged_from:
 - pas

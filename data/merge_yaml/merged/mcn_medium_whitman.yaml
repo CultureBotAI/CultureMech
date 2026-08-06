@@ -2,7 +2,8 @@ id: CultureMech:007380
 name: mcn_medium_whitman
 original_name: '''McN Medium (Whitman'
 category: bacterial
-medium_type: DEFINED
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - &id001
@@ -92,8 +93,8 @@ ingredients:
     value: '7.032e-06'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:com'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000392
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17905
     label: 2-Mercaptoethanesulfonate
 - preferred_term: Sodium bicarbonate
   concentration:
@@ -102,8 +103,8 @@ ingredients:
   term:
     id: CHEBI:32139
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: Sodium bicarbonate
 - preferred_term: Potassium chloride
   concentration:
@@ -112,9 +113,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -122,8 +123,8 @@ ingredients:
   concentration:
     value: '0.0004363'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: Sodium chloride
   term:
@@ -132,9 +133,9 @@ ingredients:
   concentration:
     value: '376.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: 2-Methylpropanoate
   concentration:
     value: '0.05675'
@@ -146,13 +147,16 @@ ingredients:
   concentration:
     value: '0.003478'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Sodium tungstate
   concentration:
     value: '0.003032'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63940
+    label: ''
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -160,8 +164,8 @@ ingredients:
   concentration:
     value: '0.07848'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
     label: Nitrilotriacetic acid
 - preferred_term: Manganese sulfate
   term:
@@ -170,13 +174,16 @@ ingredients:
   concentration:
     value: '0.005347'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Nickel chloride
   concentration:
     value: '0.001052'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34887
+    label: ''
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -184,8 +191,8 @@ ingredients:
   concentration:
     value: '9.348'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Magnesium sulfate
   term:
@@ -194,8 +201,8 @@ ingredients:
   concentration:
     value: '14.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Sodium molybdate
   concentration:
@@ -211,9 +218,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.004203'
@@ -233,18 +240,30 @@ ingredients:
   concentration:
     value: '0.0004005'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Sodium selenite
   concentration:
     value: '0.01156'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:48843
+    label: ''
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '1.085'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '0.8038'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -278,6 +297,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'McN Medium (Whitman" to "mcn_medium_whitman" for consistent
     matching
+- timestamp: '2026-06-05T07:41:13.442654+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 11 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:42.400101+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b8a0ff94d9d9b5c18a73ee93f8d4e11401efb735b9a32934091f1fd9a743bbfd
+  source: mcn_medium_whitman.yaml
 media_term:
   preferred_term: MediaDB Medium 473
   term:
@@ -304,6 +334,6 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
-merge_fingerprint: 59aac67f68badddee5940c29a4a092123bc81ed278f846e215e19c6505f5b192
+merge_fingerprint: b8a0ff94d9d9b5c18a73ee93f8d4e11401efb735b9a32934091f1fd9a743bbfd
 merged_from:
 - mcn_medium_whitman

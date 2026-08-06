@@ -1,6 +1,7 @@
 id: CultureMech:015825
 name: ZMB ALS noTyrosine
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: ZMB_ALS
@@ -17,7 +18,7 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 60-18-4; MW: 181.19'
 description: Media for culturing Bifidobacterium minus tyrosine
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: ZMB ALS noTyrosine
@@ -31,6 +32,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015825'
+- timestamp: '2026-05-16T09:04:44.165295+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:09.168859+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 8643262e4647d0ebcf1b38e1b63faf18cf8d076987ae9db488843c5537316993
+  source: zmb_als_notyrosine.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: 8643262e4647d0ebcf1b38e1b63faf18cf8d076987ae9db488843c5537316993

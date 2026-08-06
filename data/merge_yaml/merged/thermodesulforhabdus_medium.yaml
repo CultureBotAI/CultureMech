@@ -3,6 +3,7 @@ name: thermodesulforhabdus_medium
 original_name: THERMODESULFORHABDUS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
 notes: 'pH buffer: sodium bicarbonate | Source: KOMODO ModelSEED | ID: 707 | DSMZ
@@ -32,14 +33,23 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:006339'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:40.547162'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: sodium'
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T19:45:57.029419+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "THERMODESULFORHABDUS MEDIUM" to "thermodesulforhabdus_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:04:34.627329+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:05:58.588452+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint ee9d62778c8b664aa8501af83ec4738e01d20f2cdca133208c7bf66cbcaa37b8
+  source: thermodesulforhabdus_medium.yaml
 merge_fingerprint: ee9d62778c8b664aa8501af83ec4738e01d20f2cdca133208c7bf66cbcaa37b8
 merged_from:
 - thermodesulforhabdus_medium

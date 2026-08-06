@@ -3,6 +3,7 @@ name: togo_medium_m157
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
@@ -24,8 +25,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
   term:
-    id: CHEBI:32599
-    label: ''
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: NaCl
   concentration:
     value: '250'
@@ -35,9 +36,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: KCl
   concentration:
     value: '2'
@@ -47,9 +48,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Trisodium citrate
   concentration:
     value: '3'
@@ -58,9 +59,9 @@ ingredients:
   term:
     id: CHEBI:53258
     label: sodium citrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
-    label: Trisodium citrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
+    label: sodium citrate
 - preferred_term: Glutamic acid
   concentration:
     value: '2.5'
@@ -70,9 +71,9 @@ ingredients:
   term:
     id: CHEBI:18237
     label: glutamic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000946
-    label: Glutamic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18237
+    label: glutamic acid
 - preferred_term: Agar
   concentration:
     value: '20'
@@ -81,9 +82,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Casamino acids (BD-Difco)
   concentration:
     value: '15'
@@ -111,9 +112,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:48.217374'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Na2CO3 solution'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:05:07.653849+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -123,9 +124,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008129'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:49.522270'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:51.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -135,6 +136,27 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TOGO Medium M157" to "togo_medium_m157" for consistent
     matching
+- timestamp: '2026-05-16T09:04:36.503385+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:41:52.792921+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:58:37.149033+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-08-06T03:06:00.473963+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 052501782aeaf0bead8c54ddeba5e09a5cdd473375b3d238c84bd99790e39cd5
+  source: togo_medium_m157.yaml
 high_metal: true
 solutions:
 - preferred_term: Na2CO3 solution
@@ -144,6 +166,6 @@ solutions:
     unit: VARIABLE
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
   name: Unknown solution
-merge_fingerprint: a01bbbd7ab62a26137d7a18e6c546f95c7f1807fe928aedc39ab63f49c41eb0e
+merge_fingerprint: 052501782aeaf0bead8c54ddeba5e09a5cdd473375b3d238c84bd99790e39cd5
 merged_from:
 - togo_medium_m157

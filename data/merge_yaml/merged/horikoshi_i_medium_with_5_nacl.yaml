@@ -3,6 +3,7 @@ name: horikoshi_i_medium_with_5_nacl
 original_name: HORIKOSHI-I MEDIUM WITH 5% NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J406
@@ -22,8 +23,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 applications:
 - Microbial cultivation
@@ -45,12 +46,34 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HORIKOSHI-I MEDIUM WITH 5% NaCl" to "horikoshi_i_medium_with_5_nacl"
     for consistent matching
-- timestamp: '2026-04-17T06:29:12.279168+00:00'
+- timestamp: '2026-06-05T07:41:08.711685+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:36.013453+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: JCM_J345_HORIKOSHI-1_MEDIUM_WITH_10_NaCl, horikoshi_i_medium_with_2_nacl,
     horikoshi_i_medium_with_3_5_nacl, horikoshi_i_medium_with_5_nacl'
+- timestamp: '2026-08-06T03:04:36.013505+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 4 source recipe(s) on fingerprint ed7dbd146da8e91238c1ef294cd59cf88972479b6df7189977345d5c83debc68
+  source: JCM_J345_HORIKOSHI-1_MEDIUM_WITH_10_NaCl.yaml, horikoshi_i_medium_with_2_nacl.yaml,
+    horikoshi_i_medium_with_3_5_nacl.yaml, horikoshi_i_medium_with_5_nacl.yaml
 kg_microbe_match: mediadive.medium:74
+parent_media:
+  path: data/normalized_yaml/bacterial/horikoshi_i_medium_with_2_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:002765
+  name: horikoshi_i_medium_with_2_nacl
+  notes: Reviewed JCM Horikoshi-I salinity grid; 2% NaCl is used as the lowest-salt
+    parent and 5% NaCl as a child variant.
+variant_relationship: SALINITY_VARIANT
+variant_modifications:
+- NaCl increased from 20 g/L to 50 g/L while Horikoshi-I medium remains unchanged.
 synonyms:
 - name: horikoshi_1_medium_with_10_nacl
   source: MediaDive

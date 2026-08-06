@@ -1,235 +1,492 @@
-id: CultureMech:009894
+id: CultureMech:002853
 name: ui_medium
-original_name: UI Medium
+original_name: UI MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J503
+  term:
+    id: mediadive.medium:J503
+    label: UI MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=503'
 ingredients:
-- preferred_term: L--cysteine・HCl・H2O
+- preferred_term: Yeast extract
   concentration:
-    value: '10'
+    value: '0.110619'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Solution'
-- preferred_term: N2
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-  term:
-    id: CHEBI:17997
-    label: ''
-- preferred_term: Distilled water
-  concentration:
-    value: '1000.0'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component [Merged 2 duplicates: 900.0, 100.0]'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: CaCl2・2H2O
-  concentration:
-    value: '0.15'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86158
-    label: ''
+  notes: Copied from referenced JCM Medium 284
 - preferred_term: KH2PO4
-  concentration:
-    value: '0.14'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
-- preferred_term: NH4Cl
+    label: potassium dihydrogen phosphate
   concentration:
-    value: '0.54'
+    value: '0.154867'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+  notes: Copied from referenced JCM Medium 284
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.221239'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  notes: Copied from referenced JCM Medium 284
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.26592899999999997'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.165929, 0.1] | Copied from referenced JCM Medium
+    284'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: NH4Cl
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
-- preferred_term: Resazurin
   concentration:
-    value: '1'
+    value: '0.597345'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic
-    compound, Defined component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+  notes: Copied from referenced JCM Medium 284
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '2.76549'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: NaHCO3
+  notes: Copied from referenced JCM Medium 284
+- preferred_term: Resazurin
   term:
     id: CHEBI:8806
     label: Resazurin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  concentration:
+    value: '0.00110619'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
-- preferred_term: MgCl2・6H2O
+  notes: Copied from referenced JCM Medium 284
+- preferred_term: Sodium pyruvate
+  term:
+    id: CHEBI:50144
+    label: Sodium pyruvate
   concentration:
-    value: '0.2'
+    value: '22'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
+    label: Sodium pyruvate
+  notes: Copied from referenced JCM Medium 284
+- preferred_term: Biotin
   term:
-    id: CHEBI:86345
-    label: ''
-- preferred_term: NaHCO3
+    id: CHEBI:15956
+    label: Biotin
   concentration:
-    value: '2.5'
+    value: '0.0049'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
+    label: Biotin
+  notes: Copied from referenced JCM Medium 284
+- preferred_term: Folic acid
   term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
-- preferred_term: Yeast extract (BD-Difco)
+    id: CHEBI:27470
+    label: Folic acid
   concentration:
-    value: '0.2'
+    value: '0.0088'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Carbon dioxide gas
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
+    label: Folic acid
+  notes: Copied from referenced JCM Medium 284
+- preferred_term: Pyridoxine hydrochloride
   term:
-    id: CHEBI:16526
-    label: ''
-- preferred_term: Nitrogen gas
-  notes: 'Properties: ガス'
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
   concentration:
-    value: variable
-    unit: VARIABLE
-  term:
-    id: CHEBI:17997
-    label: ''
-- preferred_term: 4-hydroxybenzoic acid
-  concentration:
-    value: '0.414'
+    value: '0.0041'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  notes: Copied from referenced JCM Medium 284
+- preferred_term: Thiamine HCl
   term:
-    id: CHEBI:30763
-    label: 4-Hydroxybenzoic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001057
-    label: 4-hydroxybenzoic acid
-media_term:
-  preferred_term: TOGO Medium M504
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.0067'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  notes: Copied from referenced JCM Medium 284
+- preferred_term: Riboflavin
   term:
-    id: TOGO:M504
-    label: UI Medium
-notes: 'Source: https://togomedium.org/medium/M504
-
-  Original source: JCM - JCM_M503
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=503'
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.0075'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
+    label: Riboflavin
+  notes: Copied from referenced JCM Medium 284
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.0025'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  notes: Copied from referenced JCM Medium 284
+- preferred_term: DL-Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: DL-Calcium pantothenate
+  concentration:
+    value: '0.0095'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
+    label: DL-Calcium pantothenate
+  notes: Copied from referenced JCM Medium 284
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.0271'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  notes: Copied from referenced JCM Medium 284
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.0027'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  notes: Copied from referenced JCM Medium 284
+- preferred_term: Lipoic acid
+  term:
+    id: CHEBI:16494
+    label: Lipoic acid
+  concentration:
+    value: '0.0041'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16494
+    label: Lipoic acid
+  notes: Copied from referenced JCM Medium 284
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '12.8'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  notes: Copied from referenced JCM Medium 284
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '1.35'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  notes: Copied from referenced JCM Medium 284
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  notes: Copied from referenced JCM Medium 284
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  notes: Copied from referenced JCM Medium 284
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
+    label: ZnCl2
+  notes: Copied from referenced JCM Medium 284
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  notes: Copied from referenced JCM Medium 284
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: H3BO3
+  notes: Copied from referenced JCM Medium 284
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  notes: Copied from referenced JCM Medium 284
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.12'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  notes: Copied from referenced JCM Medium 284
+- preferred_term: Na2SeO3 x 5 H2O
+  term:
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
+  notes: Copied from referenced JCM Medium 284
+- preferred_term: Na2WO4 x 2 H2O
+  term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+  notes: Copied from referenced JCM Medium 284
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 284 supplemented with final 0.2 g yeast extract and
+    1.0 ml Trace vitamins solution in Solution A (per 900 ml) and with 0.414 g 4-hydroxybenzoic
+    acid in Solution B (per 100 ml) instead of sodium pyruvate. Otherwise, prepare
+    the medium as described in the recipe of Medium No. 284.
+- step_number: 2
+  action: MIX
+  description: 'Comment: For strain JCM 13376, incubate with a 15 - 20% inoculum.'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.184542Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M504'
-- timestamp: '2026-01-28T19:48:31.251296Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:59.111200'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: N2; Added default concentration
-    for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
-    Nitrogen gas; Added default concentration for ingredient: N2'
-- timestamp: '2026-03-09T08:04:52.062681+00:00'
-  curator: solution-migrator-v1.0
-  action: Migrated solutions from ingredients to solutions array
-  notes: Moved 6 solution(s) from ingredients
-- timestamp: '2026-03-13T03:09:23.445687Z'
-  curator: data-quality-cleanup-v1.0
-  action: Data quality fixes
-  notes: Merged 2 duplicate ingredient(s)
-- timestamp: '2026-03-13T06:20:09.733958Z'
+- timestamp: '2026-01-26T17:53:16.779208Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J503'
+- timestamp: '2026-02-03T11:26:55.117545'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:16.100810Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:009894'
-- curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:01.331212'
-  action: Applied schema defaults and normalizations
-  notes: Added default solution name; Added default solution name; Added default solution
-    name; Added default solution name; Added default solution name; Added default
-    solution name
-- timestamp: '2026-03-17T06:30:32.000000Z'
-  curator: mediaingredientmech-enrichment-v1.0
-  action: Added MediaIngredientMech links
-  notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:28.689789+00:00'
+  notes: 'Assigned stable identifier: CultureMech:002853'
+- timestamp: '2026-03-17T19:45:29.599449+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "UI Medium" to "ui_medium" for consistent matching
-solutions:
-- preferred_term: Na2S・9H2O solutions
-  composition: []
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
-    Solution'
-  name: Unknown solution
-- preferred_term: Solution A
-  term:
-    id: mediadive.solution:5342
-    label: Solution A
-  concentration:
-    value: '900'
-    unit: G_PER_L
-  notes: See mediadive_5342_Solution_A.yaml for composition
-  name: Unknown solution
-- preferred_term: Solution B
-  term:
-    id: mediadive.solution:5343
-    label: Solution B
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: See mediadive_5343_Solution_B.yaml for composition
-  name: Unknown solution
-- preferred_term: Trace vitamins solution (see Medium [M278])
-  composition: []
-  notes: Cross-reference to Medium M278
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: Trace element solution (see Medium [M278])
-  composition: []
-  notes: Cross-reference to Medium M278
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
-- preferred_term: Se/W solution (see Medium [M278])
-  composition: []
-  notes: Cross-reference to Medium M278
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  name: Unknown solution
-merge_fingerprint: c0201bbccff25a209da7c0c77a2b68fd861a6b26678a063d53cc5051dd1f0343
+  notes: Normalized name from "UI MEDIUM" to "ui_medium" for consistent matching
+- timestamp: '2026-04-04T18:49:19.355392'
+  curator: copy_referenced_compositions
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (29 ingredients)
+  source: CultureMech:002642
+  notes: Resolved reference by copying from si_medium (CultureMech:002642)
+- timestamp: '2026-05-16T08:58:20.784219+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(2 keys) -> list(1 entries)
+- timestamp: '2026-06-05T07:41:54.822070+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 28 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:14.408643+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:21.275251+00:00'
+  curator: recipe-merger
+  action: Merged 17 duplicate recipes into canonical record
+  notes: 'Sources: JCM_J507_METHANOCELLA_MEDIUM, methanolinea_medium, 7way_8_7_medium,
+    8kg_4_medium, JCM_J330_SPOROTOMACULUM_MEDIUM, JCM_J370_TEPIDANAEROBACTER_MEDIUM,
+    JCM_J434_ANAEROLINEA_MEDIUM, anaerolinea_medium_b, desulfatirhabdium_butyrativorans_medium,
+    jt_medium, mgp_medium, ne23_3_medium, nm_57_medium, opitutus_terrae_medium, si_medium,
+    syntrophomonas_palmiticicum_medium, ui_medium'
+- timestamp: '2026-08-06T03:04:21.275444+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 17 source recipe(s) on fingerprint a2d11ee30dd1d3afe3333e877eace752342063825dac068f5d3922638bfb069b
+  source: JCM_J507_METHANOCELLA_MEDIUM.yaml, methanolinea_medium.yaml, 7way_8_7_medium.yaml,
+    8kg_4_medium.yaml, JCM_J330_SPOROTOMACULUM_MEDIUM.yaml, JCM_J370_TEPIDANAEROBACTER_MEDIUM.yaml,
+    JCM_J434_ANAEROLINEA_MEDIUM.yaml, anaerolinea_medium_b.yaml, desulfatirhabdium_butyrativorans_medium.yaml,
+    jt_medium.yaml, mgp_medium.yaml, ne23_3_medium.yaml, nm_57_medium.yaml, opitutus_terrae_medium.yaml,
+    si_medium.yaml, syntrophomonas_palmiticicum_medium.yaml, ui_medium.yaml
+data_quality_flags:
+- resolved_reference
+parent_media:
+  path: data/normalized_yaml/bacterial/JCM_J434_ANAEROLINEA_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002785
+  name: anaerolinea_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.
+synonyms:
+- name: methanocella_medium
+  source: MediaDive
+  source_id: mediadive.medium:J507
+  original_category: archaea
+- name: methanolinea_medium
+  source: MediaDive
+  source_id: mediadive.medium:J424
+  original_category: archaea
+- name: 7way_8_7_medium
+  source: MediaDive
+  source_id: mediadive.medium:J835
+  original_category: bacterial
+- name: 8kg_4_medium
+  source: MediaDive
+  source_id: mediadive.medium:J836
+  original_category: bacterial
+- name: sporotomaculum_medium
+  source: MediaDive
+  source_id: mediadive.medium:J330
+  original_category: bacterial
+- name: tepidanaerobacter_medium
+  source: MediaDive
+  source_id: mediadive.medium:J370
+  original_category: bacterial
+- name: anaerolinea_medium
+  source: MediaDive
+  source_id: mediadive.medium:J434
+  original_category: bacterial
+- name: anaerolinea_medium_b
+  source: MediaDive
+  source_id: mediadive.medium:J435
+  original_category: bacterial
+- name: desulfatirhabdium_butyrativorans_medium
+  source: MediaDive
+  source_id: mediadive.medium:J577
+  original_category: bacterial
+- name: jt_medium
+  source: MediaDive
+  source_id: mediadive.medium:J352
+  original_category: bacterial
+- name: mgp_medium
+  source: MediaDive
+  source_id: mediadive.medium:J362
+  original_category: bacterial
+- name: ne23_3_medium
+  source: MediaDive
+  source_id: mediadive.medium:J504
+  original_category: bacterial
+- name: nm_57_medium
+  source: MediaDive
+  source_id: mediadive.medium:J873
+  original_category: bacterial
+- name: opitutus_terrae_medium
+  source: MediaDive
+  source_id: mediadive.medium:J752
+  original_category: bacterial
+- name: si_medium
+  source: MediaDive
+  source_id: mediadive.medium:J284
+  original_category: bacterial
+- name: syntrophomonas_palmiticicum_medium
+  source: MediaDive
+  source_id: mediadive.medium:J575
+  original_category: bacterial
+categories:
+- archaea
+- bacterial
 merged_from:
-- TOGO_M504_UI_Medium
+- JCM_J507_METHANOCELLA_MEDIUM
+- methanolinea_medium
+- 7way_8_7_medium
+- 8kg_4_medium
+- JCM_J330_SPOROTOMACULUM_MEDIUM
+- JCM_J370_TEPIDANAEROBACTER_MEDIUM
+- JCM_J434_ANAEROLINEA_MEDIUM
+- anaerolinea_medium_b
+- desulfatirhabdium_butyrativorans_medium
+- jt_medium
+- mgp_medium
+- ne23_3_medium
+- nm_57_medium
+- opitutus_terrae_medium
+- si_medium
+- syntrophomonas_palmiticicum_medium
+- ui_medium
+merge_fingerprint: a2d11ee30dd1d3afe3333e877eace752342063825dac068f5d3922638bfb069b

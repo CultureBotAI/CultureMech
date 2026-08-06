@@ -4,6 +4,7 @@ original_name: de Man-Rogosa-Sharpe (MRS) medium (Scharlau Chemie) supplemented 
   0.05% (wt/vol) l-cysteine hydrochloride
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: L-cysteine hydrochloride
@@ -51,8 +52,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -68,9 +69,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: Dipotassium phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: D(+)-Glucose
   concentration:
     value: '20'
@@ -80,9 +81,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: D(+)-Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Sodium acetate
   concentration:
     value: '5'
@@ -91,15 +92,18 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
-    label: Sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: Polysorbate 80
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Surfactant; Properties: Simple component, Organic compound, Defined
     component'
+  term:
+    id: CHEBI:53426
+    label: ''
 - preferred_term: Magnesium sulfate
   concentration:
     value: '0.2'
@@ -109,9 +113,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: Magnesium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
 - preferred_term: Triammonium citrate
   concentration:
     value: '2'
@@ -130,9 +134,9 @@ ingredients:
   term:
     id: CHEBI:86364
     label: manganese(II) sulfate monohydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: manganese(II) sulfate monohydrate
 - preferred_term: Meat extract
   concentration:
     value: '8'
@@ -162,11 +166,11 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.426887'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     Hydrogen gas'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:05.648542Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -181,6 +185,21 @@ curation_history:
   notes: Normalized name from "de Man-Rogosa-Sharpe (MRS) medium (Scharlau Chemie)
     supplemented with 0.05% (wt/vol) l-cysteine hydrochloride" to "de_man_rogosa_sharpe_mrs_medium_scharlau_chemie_supplemented_with_0_05_wt_vol_l_cysteine_hydrochloride"
     for consistent matching
-merge_fingerprint: 74eaa6ffef2be6abcc912a2c8ef71117d59dadae5fad31d4094d5958ecbbf4c2
+- timestamp: '2026-05-16T09:03:28.605811+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:55.359042+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:29.709169+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint fc15c764ae3a9605457ab51feb048cdc1e1dec0e0e7845a6d7dcb7269cc7200f
+  source: de_man_rogosa_sharpe_mrs_medium_scharlau_chemie_supplemented_with_0_05_wt_vol_l_cysteine_hydrochloride.yaml
+merge_fingerprint: fc15c764ae3a9605457ab51feb048cdc1e1dec0e0e7845a6d7dcb7269cc7200f
 merged_from:
 - de_man_rogosa_sharpe_mrs_medium_scharlau_chemie_supplemented_with_0_05_wt_vol_l_cysteine_hydrochloride

@@ -3,8 +3,11 @@ name: gym_seawater
 original_name: GYM + SEAWATER
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_range: 7.0-7.4
+ph_range:
+  min: 7.0
+  max: 7.4
 media_term:
   preferred_term: KOMODO Medium 871
   term:
@@ -20,8 +23,8 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Yeast extract
   concentration:
@@ -38,8 +41,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001099
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
     label: CaCO3
 - preferred_term: Agar
   term:
@@ -48,8 +51,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Sea Salt
   concentration:
@@ -78,10 +81,36 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "GYM + SEAWATER" to "gym_seawater" for consistent matching
-- timestamp: '2026-04-17T06:29:33.756368+00:00'
+- timestamp: '2026-05-20T06:00:54.385915+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.0-7.4'' -> {''min'': 7.0, ''max'': 7.4}'
+- timestamp: '2026-06-05T07:40:27.181663+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:00.993926+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_871_GYM_SEAWATER, gym_seawater'
+- timestamp: '2026-08-06T03:05:00.993976+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint a6317762fcaba9fe0c6169204f2cfdbf2781b4077721a671dbd087cf36244ea1
+  source: KOMODO_871_GYM_SEAWATER.yaml, gym_seawater.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/gym_seawater.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002029
+  name: gym_seawater
+  notes: KOMODO record states DSMZ Medium 871 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 categories:
 - bacterial
 merged_from:

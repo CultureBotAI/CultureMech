@@ -3,6 +3,7 @@ name: ex_lm_medium
 original_name: EX-LM MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1550
@@ -26,8 +27,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 preparation_steps:
 - step_number: 1
@@ -52,6 +53,17 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "EX-LM MEDIUM" to "ex_lm_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:59.773910+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:33.753894+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 72f6f89d9fe81d757b9187665c94e8dd9eb50fb9c5b320fd0b9912085c4bdafd
+  source: ex_lm_medium.yaml
 merge_fingerprint: 72f6f89d9fe81d757b9187665c94e8dd9eb50fb9c5b320fd0b9912085c4bdafd
 merged_from:
 - ex_lm_medium

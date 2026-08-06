@@ -3,6 +3,7 @@ name: togo_medium_m1435
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: NH4Cl
   concentration:
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: Methanol
   concentration:
     value: '10'
@@ -38,9 +39,9 @@ ingredients:
   term:
     id: CHEBI:17790
     label: methanol
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000618
-    label: Methanol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17790
+    label: methanol
 - preferred_term: DL-Methionine
   concentration:
     value: '20'
@@ -50,9 +51,9 @@ ingredients:
   term:
     id: CHEBI:16811
     label: methionine
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000774
-    label: DL-Methionine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16811
+    label: methionine
 - preferred_term: DL-Tryptophan
   concentration:
     value: '20'
@@ -62,9 +63,9 @@ ingredients:
   term:
     id: CHEBI:57912
     label: L-tryptophan zwitterion
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000712
-    label: DL-Tryptophan
+  mediaingredientmech_chebi_term:
+    id: CHEBI:57912
+    label: L-tryptophan zwitterion
 - preferred_term: L-Histidine
   concentration:
     value: '10'
@@ -74,9 +75,9 @@ ingredients:
   term:
     id: CHEBI:15971
     label: L-histidine
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000272
-    label: L-Histidine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15971
+    label: L-histidine
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -85,9 +86,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Bacto-Yeast Nitrogen Base w/o Amino Acids and Ammonium Sulfate (Difco)
   concentration:
     value: '1.7'
@@ -127,6 +128,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TOGO Medium M1435" to "togo_medium_m1435" for consistent
     matching
+- timestamp: '2026-06-05T07:41:52.174862+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:13.748442+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:59.817561+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint c0fe833291ed4b8eef3b1464222b1f0fe929675b826e46792d56e0d0ab1c148a
+  source: togo_medium_m1435.yaml
 merge_fingerprint: c0fe833291ed4b8eef3b1464222b1f0fe929675b826e46792d56e0d0ab1c148a
 merged_from:
 - togo_medium_m1435

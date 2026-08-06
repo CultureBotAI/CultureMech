@@ -3,6 +3,7 @@ name: dialister_medium
 original_name: DIALISTER medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:
@@ -19,9 +20,9 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:232798
-    label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001017
+    label: sodium L-lactate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:232798
     label: Na-L-lactate
 - preferred_term: Haemin
   term:
@@ -30,8 +31,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
     label: Haemin
 - preferred_term: NaHCO3
   term:
@@ -40,8 +41,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: Glucose
   term:
@@ -50,8 +51,8 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Cystein-HCl x 2 H2O
   concentration:
@@ -64,18 +65,18 @@ ingredients:
   concentration:
     value: '0.000771255'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000793
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18320
     label: DTT
 - preferred_term: Na-formate
   term:
     id: CHEBI:62965
-    label: Na-formate
+    label: sodium formate
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000985
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62965
     label: Na-formate
 - preferred_term: Na-fumarate
   term:
@@ -84,8 +85,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000656
+  mediaingredientmech_chebi_term:
+    id: CHEBI:115156
     label: Na-fumarate
 - preferred_term: Horse blood
   concentration:
@@ -112,13 +113,13 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: KNO3
   term:
     id: CHEBI:63043
-    label: KNO3
+    label: potassium nitrate
   concentration:
     value: '3'
     unit: G_PER_L
@@ -132,8 +133,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000567
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18067
     label: Vitamin K1
 - preferred_term: Ethanol
   term:
@@ -142,8 +143,8 @@ ingredients:
   concentration:
     value: '19'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000686
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16236
     label: Ethanol
 applications:
 - Microbial cultivation
@@ -169,13 +170,42 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "DIALISTER medium" to "dialister_medium" for consistent
     matching
-- timestamp: '2026-04-17T06:29:15.446555+00:00'
+- timestamp: '2026-06-05T07:40:19.011944+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:37:34.177739+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:46:43.502548+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:39.847361+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_1107_DIALISTER_medium, dialister_medium'
+- timestamp: '2026-08-06T03:04:39.847417+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 44b927c44adfd8e4ba23ad07996b7d938982efd79b61b7387365d43c0c2841a3
+  source: KOMODO_1107_DIALISTER_medium.yaml, dialister_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/dialister_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000540
+  name: dialister_medium
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and concentration
+    signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.
 categories:
 - bacterial
 merged_from:
 - KOMODO_1107_DIALISTER_medium
 - dialister_medium
-merge_fingerprint: 23cb308c405c7a56cc2bf1c73e1e774798819609ca68a69634dd61b8084cb885
+merge_fingerprint: 44b927c44adfd8e4ba23ad07996b7d938982efd79b61b7387365d43c0c2841a3

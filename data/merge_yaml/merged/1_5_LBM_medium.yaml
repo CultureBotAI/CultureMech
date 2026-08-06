@@ -3,6 +3,7 @@ name: 1_5_lbm_medium
 original_name: 1/5 LBM medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Agar (if needed)
@@ -46,14 +47,23 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008247'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:50.390693'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T19:46:13.467248+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "1/5 LBM medium" to "1_5_lbm_medium" for consistent
     matching
+- timestamp: '2026-05-16T09:02:58.154036+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:04:33.851974+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 69631d21d42d34d8418c188d403100fe837b3f5506b92260785b7be1ca1b554e
+  source: 1_5_lbm_medium.yaml
 solutions:
 - preferred_term: Seawater*
   term:

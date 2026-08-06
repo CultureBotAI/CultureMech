@@ -3,8 +3,11 @@ name: succiniclasticum_medium
 original_name: SUCCINICLASTICUM medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_range: 6.6-6.8
+ph_range:
+  min: 6.6
+  max: 6.8
 media_term:
   preferred_term: KOMODO Medium 666
   term:
@@ -16,22 +19,22 @@ ingredients:
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.23'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.23'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NaCl
   term:
@@ -40,18 +43,18 @@ ingredients:
   concentration:
     value: '0.45'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '0.45'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -60,8 +63,8 @@ ingredients:
   concentration:
     value: '0.06'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -70,8 +73,8 @@ ingredients:
   concentration:
     value: '0.09'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Indigocarmine
   term:
@@ -80,8 +83,8 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000487
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31695
     label: Indigocarmine
 - preferred_term: NaHCO3
   term:
@@ -90,8 +93,8 @@ ingredients:
   concentration:
     value: '6.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: Disodium succinate
   term:
@@ -100,8 +103,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001088
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63675
     label: Disodium succinate
 - preferred_term: Yeast extract
   concentration:
@@ -114,8 +117,8 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
     label: L-Cysteine HCl x H2O
 - preferred_term: Na2S x 9 H2O
   term:
@@ -124,8 +127,8 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 applications:
 - Microbial cultivation
@@ -151,12 +154,82 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "SUCCINICLASTICUM medium" to "succiniclasticum_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:30.373547+00:00'
+- timestamp: '2026-05-20T06:00:53.132926+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.6-6.8'' -> {''min'': 6.6, ''max'': 6.8}'
+- timestamp: '2026-06-05T07:40:25.312838+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 11 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:45.508096+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:57.145059+00:00'
   curator: recipe-merger
   action: Merged 8 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_666_SUCCINICLASTICUM_medium, medium_666_modified_for_dsm_10503,
     medium_666_modified_for_dsm_10504, medium_666_modified_for_dsm_10505, medium_666_modified_for_dsm_11001,
     medium_666_modified_for_dsm_11004, medium_666_modified_for_dsm_11016, succiniclasticum_medium'
+- timestamp: '2026-08-06T03:04:57.145144+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 8 source recipe(s) on fingerprint d240465c0b898e459499245d3afef0b43f64801190661ea75e4c0c3813799d26
+  source: KOMODO_666_SUCCINICLASTICUM_medium.yaml, medium_666_modified_for_dsm_10503.yaml,
+    medium_666_modified_for_dsm_10504.yaml, medium_666_modified_for_dsm_10505.yaml,
+    medium_666_modified_for_dsm_11001.yaml, medium_666_modified_for_dsm_11004.yaml,
+    medium_666_modified_for_dsm_11016.yaml, succiniclasticum_medium.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_666_modified_for_dsm_10503.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006249
+  name: medium_666_modified_for_dsm_10503
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_666_modified_for_dsm_10504.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006250
+  name: medium_666_modified_for_dsm_10504
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_666_modified_for_dsm_10505.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006251
+  name: medium_666_modified_for_dsm_10505
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_666_modified_for_dsm_11001.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006252
+  name: medium_666_modified_for_dsm_11001
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_666_modified_for_dsm_11004.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006253
+  name: medium_666_modified_for_dsm_11004
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_666_modified_for_dsm_11016.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006254
+  name: medium_666_modified_for_dsm_11016
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/succiniclasticum_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001805
+  name: succiniclasticum_medium
+  notes: KOMODO record states DSMZ Medium 666 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 synonyms:
 - name: medium_666_modified_for_dsm_10503
   source: KOMODO

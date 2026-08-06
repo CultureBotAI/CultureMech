@@ -1,6 +1,7 @@
 id: CultureMech:015481
 name: 7H9
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Ammonium Sulfate
@@ -33,8 +34,8 @@ ingredients:
     value: '1.00E-03'
     unit: G_PER_L
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: Pyridoxine HCl
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-56-0; MW: 205.64'
 - preferred_term: biotin
   concentration:
@@ -101,6 +102,9 @@ ingredients:
     value: '1.00E-03'
     unit: G_PER_L
   notes: 'CAS: 10125-13-0; MW: 170.48'
+  term:
+    id: CHEBI:86318
+    label: ''
 - preferred_term: bovine serum albumin
   concentration:
     value: '5.00E+00'
@@ -133,7 +137,7 @@ ingredients:
     1310.0'
 description: Complete media for Mycobacterium tuberculosis (H37Rv)
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: 7H9
@@ -147,8 +151,23 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015481'
+- timestamp: '2026-05-16T09:04:39.985603+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:52.142026+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:06:04.376459+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint eb24aeed82f41812974748750b56612074cc8dadc2219620dd48d7d55a5293d9
+  source: 7h9.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: 7b12c1db68e5cb4c0bd2ec6b98ab8764318ebdb810ee37da75782e7b11a1ad93
+merge_fingerprint: eb24aeed82f41812974748750b56612074cc8dadc2219620dd48d7d55a5293d9
 merged_from:
 - 7h9

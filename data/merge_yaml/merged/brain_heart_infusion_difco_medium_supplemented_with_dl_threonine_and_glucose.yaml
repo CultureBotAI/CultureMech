@@ -4,6 +4,7 @@ original_name: Brain heart infusion (Difco) medium supplemented with DL-threonin
   and glucose
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: DL-threonine
@@ -12,8 +13,11 @@ ingredients:
     unit: MILLIMOLAR
   notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
     Simple component'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000310
+  term:
+    id: CHEBI:16857
+    label: L-Threonine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16857
     label: DL-threonine
 - preferred_term: Glucose
   concentration:
@@ -24,9 +28,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Calf brains
   term:
     id: UBERON:0000955
@@ -169,6 +173,17 @@ curation_history:
   notes: Normalized name from "Brain heart infusion (Difco) medium supplemented with
     DL-threonine and glucose" to "brain_heart_infusion_difco_medium_supplemented_with_dl_threonine_and_glucose"
     for consistent matching
-merge_fingerprint: 494952f57b43ccd6c3c8661ba90e71dc0503b65f7c1d0ccc615812b17dabdfb9
+- timestamp: '2026-06-05T07:40:51.518183+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:25.933693+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint f5a82cfd5a13677e0c8c370d34df9012420ab5089a339618f53e52b9eefc603d
+  source: brain_heart_infusion_difco_medium_supplemented_with_dl_threonine_and_glucose.yaml
+merge_fingerprint: f5a82cfd5a13677e0c8c370d34df9012420ab5089a339618f53e52b9eefc603d
 merged_from:
 - brain_heart_infusion_difco_medium_supplemented_with_dl_threonine_and_glucose

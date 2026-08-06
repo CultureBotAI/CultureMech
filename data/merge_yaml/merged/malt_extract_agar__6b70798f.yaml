@@ -1,0 +1,89 @@
+id: CultureMech:010520
+name: malt_extract_agar
+original_name: MALT EXTRACT AGAR
+category: fungal
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J31
+  term:
+    id: mediadive.medium:J31
+    label: MALT EXTRACT AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=31'
+ingredients:
+- preferred_term: Malt extract
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: Glucose
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.615362Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J31'
+- timestamp: '2026-03-13T06:20:14.212976Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010520'
+- timestamp: '2026-03-17T17:06:08.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:33.239834+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MALT EXTRACT AGAR" to "malt_extract_agar" for consistent
+    matching
+- timestamp: '2026-06-05T07:41:56.939008+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:24.277943+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: aspergillus_complete_medium, malt_extract_agar'
+- timestamp: '2026-08-06T03:05:24.277980+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 6b70798f5872d94738a9e13311461ed0f8c50adb854c7a64be23edac8068085c
+  source: aspergillus_complete_medium.yaml, malt_extract_agar.yaml
+synonyms:
+- name: aspergillus_complete_medium
+  source: MediaDive
+  source_id: mediadive.medium:J1134
+  original_category: bacterial
+categories:
+- bacterial
+- fungal
+merged_from:
+- aspergillus_complete_medium
+- malt_extract_agar
+merge_fingerprint: 6b70798f5872d94738a9e13311461ed0f8c50adb854c7a64be23edac8068085c

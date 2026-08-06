@@ -3,6 +3,7 @@ name: glucose_salt_medium_k
 original_name: '''Glucose salt (Medium K'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose
@@ -13,18 +14,24 @@ ingredients:
     value: '11.1012'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Citrate
   concentration:
     value: '5.20497'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '28.0899'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Potassium chloride
   concentration:
     value: '9.92605'
@@ -32,9 +39,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -42,8 +49,8 @@ ingredients:
   concentration:
     value: '0.405729'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Sodium ammonium phosphate
   concentration:
@@ -82,6 +89,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'Glucose salt (Medium K" to "glucose_salt_medium_k"
     for consistent matching
+- timestamp: '2026-06-05T07:41:06.492745+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:36.291329+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint bea2d696d432fa7b8c5e36b1899f5f75651c71eb876f49393d36fd42430915b1
+  source: glucose_salt_medium_k.yaml
 media_term:
   preferred_term: MediaDB Medium 228
   term:
@@ -93,6 +111,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 1f78e9b8609d2aaff3557fcf4ddc07c4962ec55703841bce5a33b9aa56045301
+merge_fingerprint: bea2d696d432fa7b8c5e36b1899f5f75651c71eb876f49393d36fd42430915b1
 merged_from:
 - glucose_salt_medium_k

@@ -1,6 +1,7 @@
 id: CultureMech:015636
 name: MRS
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose
@@ -93,7 +94,7 @@ ingredients:
   notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 52-90-4; MW: 121.16'
 description: Media for culturing lactobacilli
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: MRS
@@ -107,6 +108,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015636'
+- timestamp: '2026-05-16T09:04:41.975781+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:06.833845+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2ef3c9638749e0cb6b0fbdfb73464e2673f0e8a8dee079928cbca225084c56a4
+  source: mrs.yaml
 data_quality_flags: []
 merge_fingerprint: 2ef3c9638749e0cb6b0fbdfb73464e2673f0e8a8dee079928cbca225084c56a4
 merged_from:

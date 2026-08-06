@@ -3,6 +3,7 @@ name: the_basal_medium
 original_name: The basal medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: CaCl2 . 2H2O
   concentration:
@@ -35,9 +36,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: K2HPO4
   concentration:
     value: '0.4'
@@ -47,9 +48,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Resazurin
   concentration:
     value: '0.001'
@@ -59,8 +60,8 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: MgCl2 . 6H2O
   concentration:
@@ -102,9 +103,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: MnCl2 . 4H2O
   concentration:
     value: '0.1'
@@ -141,9 +142,9 @@ ingredients:
   term:
     id: CHEBI:49976
     label: zinc dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
-    label: ZnCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
+    label: zinc dichloride
 - preferred_term: Nitrilotriacetic acid
   concentration:
     value: '4.5'
@@ -153,9 +154,9 @@ ingredients:
   term:
     id: CHEBI:44557
     label: nitrilotriacetic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
-    label: Nitrilotriacetic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
 - preferred_term: CaCl2
   concentration:
     value: '0.02'
@@ -165,9 +166,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
-    label: CaCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
 - preferred_term: FeCl2 . 4H2O
   concentration:
     value: '0.4'
@@ -209,9 +210,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: Anaerobic digestor sludge supernatant (SS)
   concentration:
     value: '25'
@@ -224,9 +225,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
-    label: Biotin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
+    label: biotin
 - preferred_term: p-Aminobenzoic acid
   concentration:
     value: '5'
@@ -235,9 +236,9 @@ ingredients:
   term:
     id: CHEBI:30753
     label: 4-aminobenzoic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
-    label: p-Aminobenzoic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
 - preferred_term: Thiamine hydrochloride
   concentration:
     value: '5'
@@ -246,8 +247,8 @@ ingredients:
   term:
     id: CHEBI:49105
     label: Thiamine hydrochloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine hydrochloride
 - preferred_term: Pyridoxine hydrochloride
   concentration:
@@ -257,9 +258,9 @@ ingredients:
   term:
     id: CHEBI:30961
     label: pyridoxine hydrochloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001016
-    label: Pyridoxine hydrochloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
 - preferred_term: Folic acid
   concentration:
     value: '2'
@@ -268,9 +269,9 @@ ingredients:
   term:
     id: CHEBI:27470
     label: folic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
-    label: Folic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
+    label: folic acid
 - preferred_term: Vitamin B12
   concentration:
     value: '0.1'
@@ -279,9 +280,9 @@ ingredients:
   term:
     id: CHEBI:176843
     label: vitamin B12
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001027
-    label: Vitamin B12
+  mediaingredientmech_chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
 - preferred_term: Riboflavin
   concentration:
     value: '5'
@@ -290,9 +291,9 @@ ingredients:
   term:
     id: CHEBI:17015
     label: riboflavin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
-    label: Riboflavin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
+    label: riboflavin
 - preferred_term: Nicotinic acid
   concentration:
     value: '5'
@@ -301,9 +302,9 @@ ingredients:
   term:
     id: CHEBI:15940
     label: nicotinic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
-    label: Nicotinic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
+    label: nicotinic acid
 - preferred_term: Lipoic acid
   concentration:
     value: '5'
@@ -313,9 +314,9 @@ ingredients:
   term:
     id: CHEBI:16494
     label: lipoic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000166
-    label: Lipoic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16494
+    label: lipoic acid
 - preferred_term: DL-Calcium pantothenate
   concentration:
     value: '5'
@@ -324,9 +325,9 @@ ingredients:
   term:
     id: CHEBI:31345
     label: Calcium pantothenate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
-    label: DL-Calcium pantothenate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
 - preferred_term: Sludge fluid
   concentration:
     value: '5'
@@ -364,12 +365,12 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:54.763098'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     KOH solution; Added default concentration for ingredient: 1M HCl; Added default
     concentration for ingredient: N2'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:04:54.689266+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -383,10 +384,10 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009163'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:56.715625'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name; Added default solution
     name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:35.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -396,6 +397,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "The basal medium" to "the_basal_medium" for consistent
     matching
+- timestamp: '2026-05-16T09:04:34.044781+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:41:49.294081+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 19 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:12.683114+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:58.055385+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint ea69658c47dad3677ab447076f278cec69a0834c467cd490080d4b8a3f8e03dd
+  source: the_basal_medium.yaml
 solutions:
 - preferred_term: Trace metal solution
   term:

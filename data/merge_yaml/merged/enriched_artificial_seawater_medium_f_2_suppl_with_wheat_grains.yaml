@@ -3,6 +3,7 @@ name: enriched_artificial_seawater_medium_f_2_suppl_with_wheat_grains
 original_name: Enriched Artificial Seawater Medium f/2 suppl. with Wheat Grains
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1723a
@@ -33,8 +34,8 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000393
+  mediaingredientmech_chebi_term:
+    id: CHEBI:37585
     label: NaH2PO4 x H2O
 - preferred_term: Wheat Grains
   concentration:
@@ -47,8 +48,8 @@ ingredients:
   concentration:
     value: '4.16'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
     label: Na2-EDTA x 2 H2O
 - preferred_term: FeCl3 x 6 H2O
   term:
@@ -57,8 +58,8 @@ ingredients:
   concentration:
     value: '3.15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000218
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86254
     label: FeCl3 x 6 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -67,8 +68,8 @@ ingredients:
   concentration:
     value: '45'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -77,8 +78,8 @@ ingredients:
   concentration:
     value: '0.02196'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -87,8 +88,8 @@ ingredients:
   concentration:
     value: '1.7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
@@ -97,8 +98,8 @@ ingredients:
   concentration:
     value: '0.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
     label: CuSO4 x 5 H2O
 - preferred_term: Na2 MoO4 x 2 H2O
   term:
@@ -107,8 +108,8 @@ ingredients:
   concentration:
     value: '2.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2 MoO4 x 2 H2O
 - preferred_term: Thiamine HCl
   term:
@@ -117,8 +118,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: D-Biotin
   term:
@@ -127,8 +128,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: D-Biotin
 - preferred_term: Vitamin B12
   term:
@@ -137,8 +138,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 preparation_steps:
 - step_number: 1
@@ -167,9 +168,9 @@ curation_history:
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1723a'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:21.005230'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Wheat Grains'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:19:02.199225Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -184,6 +185,21 @@ curation_history:
   notes: Normalized name from "Enriched Artificial Seawater Medium f/2 suppl. with
     Wheat Grains" to "enriched_artificial_seawater_medium_f_2_suppl_with_wheat_grains"
     for consistent matching
-merge_fingerprint: 4b45917005ef877ea2fabf4b74763fd3c1dde734b54467596c1efdb166f737d2
+- timestamp: '2026-05-16T09:03:31.501955+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:59.608483+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 11 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:33.641289+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint c06516e53278476887bb1b7b0c16e8a22dac49d26fd4035c62018e2cd1deb146
+  source: enriched_artificial_seawater_medium_f_2_suppl_with_wheat_grains.yaml
+merge_fingerprint: c06516e53278476887bb1b7b0c16e8a22dac49d26fd4035c62018e2cd1deb146
 merged_from:
 - enriched_artificial_seawater_medium_f_2_suppl_with_wheat_grains

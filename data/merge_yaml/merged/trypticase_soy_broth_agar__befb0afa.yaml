@@ -1,0 +1,632 @@
+id: CultureMech:002824
+name: trypticase_soy_broth_agar
+original_name: TRYPTICASE SOY BROTH AGAR
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J475
+  term:
+    id: mediadive.medium:J475
+    label: TRYPTICASE SOY BROTH AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=475
+
+
+  Commercial Product: Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)
+
+  Supplier: Multiple suppliers (BD, Sigma, Neogen)
+
+  Catalog: Multiple (22092 Sigma, 211825 BD)
+
+  Source: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
+ingredients:
+- preferred_term: Pancreatic digest of casein
+  term:
+    id: MICRO:0000182
+    label: tryptone
+  concentration:
+    value: '17.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
+    catalog_number: Multiple (22092 Sigma, 211825 BD)
+    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+  notes: Pancreatic enzymatic digest of casein providing amino acids and peptides;
+    Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
+  synonyms:
+  - synonym_text: tryptone
+    synonym_type: EXACT
+  - synonym_text: casein peptone
+    synonym_type: EXACT
+  - synonym_text: Bacto Tryptone
+    synonym_type: EXACT
+- preferred_term: Peptic digest of soybean meal
+  term:
+    id: FOODON:03315720
+    label: soy peptone
+  concentration:
+    value: '3.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
+    catalog_number: Multiple (22092 Sigma, 211825 BD)
+    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+  notes: Peptic digest of soybean meal providing additional peptides and carbohydrates;
+    Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
+  synonyms:
+  - synonym_text: soytone
+    synonym_type: EXACT
+  - synonym_text: soy peptone
+    synonym_type: EXACT
+  - synonym_text: Bacto Soytone
+    synonym_type: EXACT
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: D-glucose
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
+    catalog_number: Multiple (22092 Sigma, 211825 BD)
+    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+  notes: Carbon/energy source; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy
+    Agar (TSA) commercial product
+  synonyms:
+  - synonym_text: dextrose
+    synonym_type: EXACT
+  - synonym_text: D-glucose
+    synonym_type: EXACT
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
+    catalog_number: Multiple (22092 Sigma, 211825 BD)
+    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+  notes: Maintains osmotic equilibrium; Constituent of Tryptic Soy Broth (TSB) / Tryptic
+    Soy Agar (TSA) commercial product
+  synonyms:
+  - synonym_text: NaCl
+    synonym_type: EXACT
+  - synonym_text: table salt
+    synonym_type: EXACT
+- preferred_term: Dipotassium phosphate
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
+    catalog_number: Multiple (22092 Sigma, 211825 BD)
+    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+  notes: pH buffer; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)
+    commercial product
+  synonyms:
+  - synonym_text: K2HPO4
+    synonym_type: EXACT
+  - synonym_text: potassium phosphate dibasic
+    synonym_type: EXACT
+  - synonym_text: dipotassium hydrogen phosphate
+    synonym_type: EXACT
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
+    catalog_number: Multiple (22092 Sigma, 211825 BD)
+    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+  notes: Solidifying agent (for TSA only, not in TSB); Constituent of Tryptic Soy
+    Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.701019Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J475'
+- timestamp: '2026-03-13T06:19:15.923352Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002824'
+- timestamp: '2026-03-17T06:30:43.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:29.385002+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "TRYPTICASE SOY BROTH AGAR" to "trypticase_soy_broth_agar"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:17.366619+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:36.864069+00:00'
+  curator: recipe-merger
+  action: Merged 82 duplicate recipes into canonical record
+  notes: 'Sources: JCM_J475_TRYPTICASE_SOY_BROTH_AGAR, KOMODO_535_TRYPTICASE_SOY_BROTH_AGAR,
+    KOMODO_535a_TRYPTICASE_SOY_BROTH_AGAR_BLOOD, KOMODO_535b_REACTIVATION_WITH_LIQUID_medium,
+    NBRC_1038, NBRC_815, TOGO_M2515_tryptic_soy_broth, TOGO_M2516_tryptic_soy_agar,
+    TOGO_M2834_tryptic_soy_agar, TOGO_M667_Trypticase_Soy_Agar_With_0.5_x_Artificial_Seawater,
+    alkaline_trypticase_soy_broth_agar, alkaline_tryptone_soya_broth_medium, half_strength_trypticase_soy_broth_agar_ph_4_0,
+    medium_535_modified_for_dsm_10247, medium_535_modified_for_dsm_10248, medium_535_modified_for_dsm_10250,
+    medium_535_modified_for_dsm_10633, medium_535_modified_for_dsm_11125, medium_535_modified_for_dsm_13559,
+    medium_535_modified_for_dsm_14655, medium_535_modified_for_dsm_14677, medium_535_modified_for_dsm_15825,
+    medium_535_modified_for_dsm_21440, medium_535_modified_for_dsm_4358, medium_535_modified_for_dsm_43989,
+    medium_535_modified_for_dsm_43989_replace_sheep_blood_with_rabbit_blood, medium_535_modified_for_dsm_44144,
+    medium_535_modified_for_dsm_44145, medium_535_modified_for_dsm_44172, medium_535_modified_for_dsm_44173,
+    medium_535_modified_for_dsm_44174, medium_535_modified_for_dsm_44178, medium_535_modified_for_dsm_44180,
+    medium_535_modified_for_dsm_44184, medium_535_modified_for_dsm_44185, medium_535_modified_for_dsm_44264,
+    medium_535_modified_for_dsm_44265, medium_535_modified_for_dsm_44278, medium_535_modified_for_dsm_44282,
+    medium_535_modified_for_dsm_44283, medium_535_modified_for_dsm_44284, medium_535_modified_for_dsm_44285,
+    medium_535_modified_for_dsm_44286, medium_535_modified_for_dsm_44288, medium_535_modified_for_dsm_44289,
+    medium_535_modified_for_dsm_44290, medium_535_modified_for_dsm_44326, medium_535_modified_for_dsm_44392,
+    medium_535_modified_for_dsm_44415, medium_535_modified_for_dsm_44416, medium_535_modified_for_dsm_44531,
+    medium_535_modified_for_dsm_44612, medium_535_modified_for_dsm_44694, medium_535_modified_for_dsm_44695,
+    medium_535_modified_for_dsm_44696, medium_535_modified_for_dsm_44719, medium_535_modified_for_dsm_44791,
+    medium_535_modified_for_dsm_44792, medium_535_modified_for_dsm_8225, medium_535a_modified_for_dsm_44283,
+    modified_bacto_tryptic_soy_broth_without_dextrose, tryptic_soy_agar_containing_2_5_nacl,
+    tryptic_soy_agar_tsa_carl_roth_gmbh_co, tryptic_soy_broth_acumedia, tryptic_soy_broth_containing_1_nacl,
+    tryptic_soy_broth_difco, tryptic_soy_broth_tsb, tryptic_soy_broth_tsb_carl_roth_gmbh_co,
+    tryptic_soy_broth_tsb_sigma_aldrich, trypticase_soy_agar, trypticase_soy_agar_with_1_glucose,
+    trypticase_soy_agar_with_2_nacl, trypticase_soy_broth_agar, trypticase_soy_broth_agar_with_10_nacl,
+    trypticase_soy_broth_agar_with_3_nacl, trypticase_soy_broth_agar_with_5_nacl_ph_8_0,
+    trypticase_soy_broth_plus_1_sodium_chloride, trypticase_soy_broth_tsb, trypticase_soy_broth_with_5_nacl,
+    trypticase_soy_broth_with_nacl, trypto_soya_agar, tryptone_soya_broth_tsb_oxoid'
+- timestamp: '2026-08-06T03:04:36.864494+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 82 source recipe(s) on fingerprint befb0afacf070852a4b8524d258aee1d5933b5ee946165d7ac781857cb2fdbc2
+  source: JCM_J475_TRYPTICASE_SOY_BROTH_AGAR.yaml, KOMODO_535_TRYPTICASE_SOY_BROTH_AGAR.yaml,
+    KOMODO_535a_TRYPTICASE_SOY_BROTH_AGAR_BLOOD.yaml, KOMODO_535b_REACTIVATION_WITH_LIQUID_medium.yaml,
+    NBRC_1038.yaml, NBRC_815.yaml, TOGO_M2515_tryptic_soy_broth.yaml, TOGO_M2516_tryptic_soy_agar.yaml,
+    TOGO_M2834_tryptic_soy_agar.yaml, TOGO_M667_Trypticase_Soy_Agar_With_0.5_x_Artificial_Seawater.yaml,
+    alkaline_trypticase_soy_broth_agar.yaml, alkaline_tryptone_soya_broth_medium.yaml,
+    half_strength_trypticase_soy_bro
+synonyms:
+- name: trypticase_soy_broth_agar_blood
+  source: KOMODO
+  source_id: komodo.medium:535a
+  original_category: bacterial
+- name: reactivation_with_liquid_medium
+  source: KOMODO
+  source_id: komodo.medium:535b
+  original_category: bacterial
+- name: '1038'
+  source: unknown
+  original_category: bacterial
+- name: '815'
+  source: unknown
+  original_category: bacterial
+- name: tryptic_soy_broth
+  source: TOGO
+  source_id: TOGO:M2515
+  original_category: bacterial
+- name: tryptic_soy_agar
+  source: TOGO
+  source_id: TOGO:M2516
+  original_category: bacterial
+- name: tryptic_soy_agar
+  source: TOGO
+  source_id: TOGO:M2834
+  original_category: bacterial
+- name: trypticase_soy_agar_with_0_5_x_artificial_seawater
+  source: TOGO
+  source_id: TOGO:M667
+  original_category: bacterial
+- name: alkaline_trypticase_soy_broth_agar
+  source: MediaDive
+  source_id: mediadive.medium:J1191
+  original_category: bacterial
+- name: alkaline_tryptone_soya_broth_medium
+  source: MediaDive
+  source_id: mediadive.medium:J763
+  original_category: bacterial
+- name: half_strength_trypticase_soy_broth_agar_ph_4_0
+  source: MediaDive
+  source_id: mediadive.medium:J591
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_10247
+  source: KOMODO
+  source_id: komodo.medium:535_10247
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_10248
+  source: KOMODO
+  source_id: komodo.medium:535_10248
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_10250
+  source: KOMODO
+  source_id: komodo.medium:535_10250
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_10633
+  source: KOMODO
+  source_id: komodo.medium:535_10633
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_11125
+  source: KOMODO
+  source_id: komodo.medium:535_11125
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_13559
+  source: KOMODO
+  source_id: komodo.medium:535_13559
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_14655
+  source: KOMODO
+  source_id: komodo.medium:535_14655
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_14677
+  source: KOMODO
+  source_id: komodo.medium:535_14677
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_15825
+  source: KOMODO
+  source_id: komodo.medium:535_15825
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_21440
+  source: KOMODO
+  source_id: komodo.medium:535_21440
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_4358
+  source: KOMODO
+  source_id: komodo.medium:535_4358
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_43989
+  source: KOMODO
+  source_id: komodo.medium:535_43989
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_43989_replace_sheep_blood_with_rabbit_blood
+  source: KOMODO
+  source_id: komodo.medium:535_43989_replace_sheep blood_with_rabbit blood
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44144
+  source: KOMODO
+  source_id: komodo.medium:535_44144
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44145
+  source: KOMODO
+  source_id: komodo.medium:535_44145
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44172
+  source: KOMODO
+  source_id: komodo.medium:535_44172
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44173
+  source: KOMODO
+  source_id: komodo.medium:535_44173
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44174
+  source: KOMODO
+  source_id: komodo.medium:535_44174
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44178
+  source: KOMODO
+  source_id: komodo.medium:535_44178
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44180
+  source: KOMODO
+  source_id: komodo.medium:535_44180
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44184
+  source: KOMODO
+  source_id: komodo.medium:535_44184
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44185
+  source: KOMODO
+  source_id: komodo.medium:535_44185
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44264
+  source: KOMODO
+  source_id: komodo.medium:535_44264
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44265
+  source: KOMODO
+  source_id: komodo.medium:535_44265
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44278
+  source: KOMODO
+  source_id: komodo.medium:535_44278
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44282
+  source: KOMODO
+  source_id: komodo.medium:535_44282
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44283
+  source: KOMODO
+  source_id: komodo.medium:535_44283
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44284
+  source: KOMODO
+  source_id: komodo.medium:535_44284
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44285
+  source: KOMODO
+  source_id: komodo.medium:535_44285
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44286
+  source: KOMODO
+  source_id: komodo.medium:535_44286
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44288
+  source: KOMODO
+  source_id: komodo.medium:535_44288
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44289
+  source: KOMODO
+  source_id: komodo.medium:535_44289
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44290
+  source: KOMODO
+  source_id: komodo.medium:535_44290
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44326
+  source: KOMODO
+  source_id: komodo.medium:535_44326
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44392
+  source: KOMODO
+  source_id: komodo.medium:535_44392
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44415
+  source: KOMODO
+  source_id: komodo.medium:535_44415
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44416
+  source: KOMODO
+  source_id: komodo.medium:535_44416
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44531
+  source: KOMODO
+  source_id: komodo.medium:535_44531
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44612
+  source: KOMODO
+  source_id: komodo.medium:535_44612
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44694
+  source: KOMODO
+  source_id: komodo.medium:535_44694
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44695
+  source: KOMODO
+  source_id: komodo.medium:535_44695
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44696
+  source: KOMODO
+  source_id: komodo.medium:535_44696
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44719
+  source: KOMODO
+  source_id: komodo.medium:535_44719
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44791
+  source: KOMODO
+  source_id: komodo.medium:535_44791
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_44792
+  source: KOMODO
+  source_id: komodo.medium:535_44792
+  original_category: bacterial
+- name: medium_535_modified_for_dsm_8225
+  source: KOMODO
+  source_id: komodo.medium:535_8225
+  original_category: bacterial
+- name: medium_535a_modified_for_dsm_44283
+  source: KOMODO
+  source_id: komodo.medium:535a_44283
+  original_category: bacterial
+- name: modified_bacto_tryptic_soy_broth_without_dextrose
+  source: MediaDive
+  source_id: mediadive.medium:1260
+  original_category: bacterial
+- name: tryptic_soy_agar_containing_2_5_nacl
+  source: TOGO
+  source_id: TOGO:M2411
+  original_category: bacterial
+- name: tryptic_soy_agar_tsa_carl_roth_gmbh_co
+  source: TOGO
+  source_id: TOGO:M2913
+  original_category: bacterial
+- name: tryptic_soy_broth_acumedia
+  source: TOGO
+  source_id: TOGO:M2918
+  original_category: bacterial
+- name: tryptic_soy_broth_containing_1_nacl
+  source: TOGO
+  source_id: TOGO:M2960
+  original_category: bacterial
+- name: tryptic_soy_broth_difco
+  source: TOGO
+  source_id: TOGO:M2259
+  original_category: bacterial
+- name: tryptic_soy_broth_tsb
+  source: TOGO
+  source_id: TOGO:M2506
+  original_category: bacterial
+- name: tryptic_soy_broth_tsb_carl_roth_gmbh_co
+  source: TOGO
+  source_id: TOGO:M2912
+  original_category: bacterial
+- name: tryptic_soy_broth_tsb_sigma_aldrich
+  source: TOGO
+  source_id: TOGO:M2886
+  original_category: bacterial
+- name: trypticase_soy_agar
+  source: MediaDive
+  source_id: mediadive.medium:J75
+  original_category: bacterial
+- name: trypticase_soy_agar_with_1_glucose
+  source: MediaDive
+  source_id: mediadive.medium:J67
+  original_category: bacterial
+- name: trypticase_soy_agar_with_2_nacl
+  source: MediaDive
+  source_id: mediadive.medium:J943
+  original_category: bacterial
+- name: trypticase_soy_broth_agar_with_10_nacl
+  source: MediaDive
+  source_id: mediadive.medium:J487
+  original_category: bacterial
+- name: trypticase_soy_broth_agar_with_3_nacl
+  source: MediaDive
+  source_id: mediadive.medium:J1259
+  original_category: bacterial
+- name: trypticase_soy_broth_agar_with_5_nacl_ph_8_0
+  source: MediaDive
+  source_id: mediadive.medium:J488
+  original_category: bacterial
+- name: trypticase_soy_broth_plus_1_sodium_chloride
+  source: TOGO
+  source_id: TOGO:M2502
+  original_category: bacterial
+- name: trypticase_soy_broth_tsb
+  source: TOGO
+  source_id: TOGO:M2893
+  original_category: bacterial
+- name: trypticase_soy_broth_with_5_nacl
+  source: MediaDive
+  source_id: mediadive.medium:J869
+  original_category: bacterial
+- name: trypticase_soy_broth_with_nacl
+  source: TOGO
+  source_id: TOGO:M2449
+  original_category: bacterial
+- name: trypto_soya_agar
+  source: MediaDive
+  source_id: mediadive.medium:J27
+  original_category: bacterial
+- name: tryptone_soya_broth_tsb_oxoid
+  source: TOGO
+  source_id: TOGO:M2925
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- JCM_J475_TRYPTICASE_SOY_BROTH_AGAR
+- KOMODO_535_TRYPTICASE_SOY_BROTH_AGAR
+- KOMODO_535a_TRYPTICASE_SOY_BROTH_AGAR_BLOOD
+- KOMODO_535b_REACTIVATION_WITH_LIQUID_medium
+- NBRC_1038
+- NBRC_815
+- TOGO_M2515_tryptic_soy_broth
+- TOGO_M2516_tryptic_soy_agar
+- TOGO_M2834_tryptic_soy_agar
+- TOGO_M667_Trypticase_Soy_Agar_With_0.5_x_Artificial_Seawater
+- alkaline_trypticase_soy_broth_agar
+- alkaline_tryptone_soya_broth_medium
+- half_strength_trypticase_soy_broth_agar_ph_4_0
+- medium_535_modified_for_dsm_10247
+- medium_535_modified_for_dsm_10248
+- medium_535_modified_for_dsm_10250
+- medium_535_modified_for_dsm_10633
+- medium_535_modified_for_dsm_11125
+- medium_535_modified_for_dsm_13559
+- medium_535_modified_for_dsm_14655
+- medium_535_modified_for_dsm_14677
+- medium_535_modified_for_dsm_15825
+- medium_535_modified_for_dsm_21440
+- medium_535_modified_for_dsm_4358
+- medium_535_modified_for_dsm_43989
+- medium_535_modified_for_dsm_43989_replace_sheep_blood_with_rabbit_blood
+- medium_535_modified_for_dsm_44144
+- medium_535_modified_for_dsm_44145
+- medium_535_modified_for_dsm_44172
+- medium_535_modified_for_dsm_44173
+- medium_535_modified_for_dsm_44174
+- medium_535_modified_for_dsm_44178
+- medium_535_modified_for_dsm_44180
+- medium_535_modified_for_dsm_44184
+- medium_535_modified_for_dsm_44185
+- medium_535_modified_for_dsm_44264
+- medium_535_modified_for_dsm_44265
+- medium_535_modified_for_dsm_44278
+- medium_535_modified_for_dsm_44282
+- medium_535_modified_for_dsm_44283
+- medium_535_modified_for_dsm_44284
+- medium_535_modified_for_dsm_44285
+- medium_535_modified_for_dsm_44286
+- medium_535_modified_for_dsm_44288
+- medium_535_modified_for_dsm_44289
+- medium_535_modified_for_dsm_44290
+- medium_535_modified_for_dsm_44326
+- medium_535_modified_for_dsm_44392
+- medium_535_modified_for_dsm_44415
+- medium_535_modified_for_dsm_44416
+- medium_535_modified_for_dsm_44531
+- medium_535_modified_for_dsm_44612
+- medium_535_modified_for_dsm_44694
+- medium_535_modified_for_dsm_44695
+- medium_535_modified_for_dsm_44696
+- medium_535_modified_for_dsm_44719
+- medium_535_modified_for_dsm_44791
+- medium_535_modified_for_dsm_44792
+- medium_535_modified_for_dsm_8225
+- medium_535a_modified_for_dsm_44283
+- modified_bacto_tryptic_soy_broth_without_dextrose
+- tryptic_soy_agar_containing_2_5_nacl
+- tryptic_soy_agar_tsa_carl_roth_gmbh_co
+- tryptic_soy_broth_acumedia
+- tryptic_soy_broth_containing_1_nacl
+- tryptic_soy_broth_difco
+- tryptic_soy_broth_tsb
+- tryptic_soy_broth_tsb_carl_roth_gmbh_co
+- tryptic_soy_broth_tsb_sigma_aldrich
+- trypticase_soy_agar
+- trypticase_soy_agar_with_1_glucose
+- trypticase_soy_agar_with_2_nacl
+- trypticase_soy_broth_agar
+- trypticase_soy_broth_agar_with_10_nacl
+- trypticase_soy_broth_agar_with_3_nacl
+- trypticase_soy_broth_agar_with_5_nacl_ph_8_0
+- trypticase_soy_broth_plus_1_sodium_chloride
+- trypticase_soy_broth_tsb
+- trypticase_soy_broth_with_5_nacl
+- trypticase_soy_broth_with_nacl
+- trypto_soya_agar
+- tryptone_soya_broth_tsb_oxoid
+merge_fingerprint: befb0afacf070852a4b8524d258aee1d5933b5ee946165d7ac781857cb2fdbc2

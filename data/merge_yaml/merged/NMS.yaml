@@ -1,6 +1,7 @@
 id: CultureMech:015673
 name: NMS
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: KNO3
@@ -106,7 +107,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:63036
-    label: ''
+    label: potassium dihydrogen phosphate
 - preferred_term: Disodium phosphate
   concentration:
     value: '33'
@@ -119,7 +120,7 @@ ingredients:
 - preferred_term: Folic Acid
   concentration:
     value: '20'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:27470
     label: folic acid
@@ -127,7 +128,7 @@ ingredients:
 - preferred_term: Riboflavin
   concentration:
     value: '50'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:17015
     label: riboflavin
@@ -135,7 +136,7 @@ ingredients:
 - preferred_term: biotin
   concentration:
     value: '20'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:15956
     label: biotin
@@ -143,7 +144,7 @@ ingredients:
 - preferred_term: Thiamine HCl
   concentration:
     value: '50'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:49105
     label: thiamine hydrochloride
@@ -151,7 +152,7 @@ ingredients:
 - preferred_term: calcium pantothenate
   concentration:
     value: '50'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:31345
     label: Calcium pantothenate
@@ -159,7 +160,7 @@ ingredients:
 - preferred_term: Cyanocobalamin
   concentration:
     value: '1'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:17439
     label: cyanocob(III)alamin
@@ -167,14 +168,14 @@ ingredients:
 - preferred_term: Nicotinamide
   concentration:
     value: '50'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:17154
     label: nicotinamide
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 98-92-0; MW: 122.12'
 description: Nitrate Mineral Salts medium
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: NMS
@@ -188,8 +189,21 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015673'
+- timestamp: '2026-05-16T09:04:42.623123+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1; concentration.unit aliases=7
+- timestamp: '2026-06-10T07:47:15.564679+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:07.469806+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e796cb89b8e03d8abb6ab29405762a536dd7d35dff0da9c1c27de510c8c883ce
+  source: nms.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: 98c589bcb9e91e4d889137614af2127306358d4b398ec7e51923ce8331eeb390
+merge_fingerprint: e796cb89b8e03d8abb6ab29405762a536dd7d35dff0da9c1c27de510c8c883ce
 merged_from:
 - nms

@@ -3,8 +3,11 @@ name: cherry_agar_cbs_formula
 original_name: CHERRY AGAR (CBS formula)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_range: 3.8-4.6
+ph_range:
+  min: 3.8
+  max: 4.6
 media_term:
   preferred_term: DSMZ Medium 277
   term:
@@ -19,8 +22,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Pulp of sour stone cherries
   concentration:
@@ -61,6 +64,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CHERRY AGAR (CBS formula)" to "cherry_agar_cbs_formula"
     for consistent matching
+- timestamp: '2026-05-20T06:01:11.395228+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''3.8-4.6'' -> {''min'': 3.8, ''max'': 4.6}'
+- timestamp: '2026-06-05T07:40:53.246329+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:27.411757+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 34e9df67b39f33000eada4283f7aeb6b1a5a0188b543aade23e64301b253f361
+  source: cherry_agar_cbs_formula.yaml
 kg_microbe_match: mediadive.medium:12
 merge_fingerprint: 34e9df67b39f33000eada4283f7aeb6b1a5a0188b543aade23e64301b253f361
 merged_from:

@@ -3,6 +3,7 @@ name: pjc_with_succinate
 original_name: PJC with succinate
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Succinate
@@ -13,13 +14,16 @@ ingredients:
     value: '15.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:succ'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000420
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26806
     label: Succinate
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '18.6'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -27,13 +31,16 @@ ingredients:
   concentration:
     value: '0.5'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
     label: Nitrilotriacetic acid
 - preferred_term: Cobaltous sulfate
   concentration:
     value: '0.004'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:53470
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -41,8 +48,8 @@ ingredients:
   concentration:
     value: '0.811'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
@@ -51,9 +58,9 @@ ingredients:
   concentration:
     value: '0.017'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -61,13 +68,16 @@ ingredients:
   concentration:
     value: '37.4'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.043'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -75,19 +85,19 @@ ingredients:
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Sodium dihydrogen phosphate
   concentration:
     value: '7.25'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: Sodium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
   term:
-    id: CHEBI:37583
-    label: ''
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -117,6 +127,23 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "PJC with succinate" to "pjc_with_succinate" for consistent
     matching
+- timestamp: '2026-06-05T07:41:42.107246+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-09T01:42:25.382146+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:05:53.117336+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 1d5e103e02102d0586cdec60572cf0f82123f9cd5f79609179af1aff4e2f1d17
+  source: pjc_with_succinate.yaml
 media_term:
   preferred_term: MediaDB Medium 86
   term:
@@ -128,6 +155,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 49f56defeeb133806c5bb760eecbd53b5b17aaf855f261f22a5e668963d2655e
+merge_fingerprint: 1d5e103e02102d0586cdec60572cf0f82123f9cd5f79609179af1aff4e2f1d17
 merged_from:
 - pjc_with_succinate

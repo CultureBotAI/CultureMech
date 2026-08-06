@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - "data/merge_yaml/merged_2026/**.yaml"
+      - "data/merge_yaml/merged/**.yaml"
       - "src/culturemech/templates/**"
       - "src/culturemech/render_media_pages.py"
       - "conf/qc_config.yaml"

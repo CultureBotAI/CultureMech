@@ -4,6 +4,7 @@ original_name: Modified Hayflick medium containing 20% (v/v) heat-inactivated ho
   serum
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 0.5% Phenol red (Flow)
@@ -20,8 +21,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: D-Glucose
   concentration:
@@ -32,9 +33,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: D-Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Liquid yeast extract (Flow)
   concentration:
     value: '100'
@@ -73,9 +74,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:52.736670'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Penicillin G (Parke)'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:00.436335Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -90,6 +91,21 @@ curation_history:
   notes: Normalized name from "Modified Hayflick medium containing 20% (v/v) heat-inactivated
     horse serum" to "modified_hayflick_medium_containing_20_v_v_heat_inactivated_horse_serum"
     for consistent matching
+- timestamp: '2026-05-16T09:04:25.423200+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:36.703311+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:48.376097+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e4c24c293759574db5ff9fc329ec631d2bda204329913d229a939dde0d108f2b
+  source: modified_hayflick_medium_containing_20_v_v_heat_inactivated_horse_serum.yaml
 merge_fingerprint: e4c24c293759574db5ff9fc329ec631d2bda204329913d229a939dde0d108f2b
 merged_from:
 - modified_hayflick_medium_containing_20_v_v_heat_inactivated_horse_serum

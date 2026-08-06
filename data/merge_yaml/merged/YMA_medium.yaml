@@ -1,95 +1,141 @@
-id: CultureMech:000453
+id: CultureMech:008732
 name: yma_medium
-original_name: YMA-MEDIUM
+original_name: YMA medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_value: 7.0
-media_term:
-  preferred_term: DSMZ Medium 1031
-  term:
-    id: mediadive.medium:1031
-    label: YMA-MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1031.pdf'
 ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: K2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
   term:
     id: CHEBI:131527
-    label: K2HPO4
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
-- preferred_term: MgSO4
-  term:
-    id: CHEBI:32599
-    label: MgSO4
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Mannitol
-  term:
-    id: CHEBI:29864
-    label: Mannitol
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001010
-    label: Mannitol
-- preferred_term: Yeast extract
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-- preferred_term: NaCl
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
   term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+    id: CHEBI:29864
+    label: mannitol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29864
+    label: mannitol
 - preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
   term:
     id: CHEBI:2509
-    label: Agar
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: adjust to pH 7.0
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+media_term:
+  preferred_term: TOGO Medium M2138
+  term:
+    id: TOGO:M2138
+    label: YMA medium
+notes: 'Source: https://togomedium.org/medium/M2138
+
+  Original source: NBRC - NBRC_M1477
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1477'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:13.158627Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1031'
-- timestamp: '2026-03-13T06:18:55.449040Z'
+- timestamp: '2026-01-27T06:35:59.156193Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M2138'
+- timestamp: '2026-01-28T19:48:26.286432Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:59.910419Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000453'
-- timestamp: '2026-03-17T06:29:46.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:008732'
+- timestamp: '2026-03-17T06:30:21.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:06.460765+00:00'
+- timestamp: '2026-03-17T19:46:18.557493+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "YMA-MEDIUM" to "yma_medium" for consistent matching
-kg_microbe_match: mediadive.medium:1031
-merge_fingerprint: b97980ff5ed9d288a65f878fa2cf5ef29a38247d319f7f18cce23a10c3432723
+  notes: Normalized name from "YMA medium" to "yma_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:35.514007+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:25.504224+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:46:48.613986+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:10.470433+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 151ac8952159e696d3bd2011960398818207a59d307c4b1be1f7fff9d191d0a8
+  source: TOGO_M2138_YMA_medium.yaml
+merge_fingerprint: 151ac8952159e696d3bd2011960398818207a59d307c4b1be1f7fff9d191d0a8
 merged_from:
-- yma_medium
+- TOGO_M2138_YMA_medium

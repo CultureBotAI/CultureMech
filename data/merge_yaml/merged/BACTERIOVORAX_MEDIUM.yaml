@@ -1,27 +1,25 @@
-id: CultureMech:000434
+id: CultureMech:002000
 name: bacteriovorax_medium
 original_name: BACTERIOVORAX MEDIUM
 category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
-ph_value: 7.2
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
 media_term:
-  preferred_term: DSMZ Medium 1012b
+  preferred_term: DSMZ Medium 844
   term:
-    id: mediadive.medium:1012b
+    id: mediadive.medium:844
     label: BACTERIOVORAX MEDIUM
-notes: 'Source: DSMZ'
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf'
 ingredients:
-- preferred_term: HEPES buffer
-  term:
-    id: CHEBI:46756
-    label: HEPES buffer
+- preferred_term: Proteose peptone no. 3
   concentration:
-    value: '6'
+    value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000426
-    label: HEPES buffer
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -29,8 +27,8 @@ ingredients:
   concentration:
     value: '0.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -39,42 +37,76 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '12'
+    unit: G_PER_L
+  notes: Optional ingredient
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
 preparation_steps:
 - step_number: 1
-  action: MIX
-  description: Grow prey bacteria on agar plates using the medium indicated below.
-    Use one plate of a 24-hour-old culture and wash off grown cells in 5 ml sterile
-    water.
-- step_number: 2
-  action: AUTOCLAVE
-  description: Prepare HEPES buffer, adjust pH to 7.2, and autoclave. After cooling
-    to room temperature add 5 ml cell suspension of the host organism to 50 ml HEPES
-    buffer and mix. The prey medium suspension should contain approx. 10<sup>7</sup>
-    to 10<sup>9</sup> cells. Inoculate the complete medium immediately after preparation
-    and incubate the suspension with shaking until a decrease in turbidity is visible.
+  action: DISSOLVE
+  description: Dissolve ingredients except magnesium chloride and calcium chloride.
+    Add magnesium chloride and calcium chloride after autoclaving from sterile stock
+    solutions of 5% (w/v) each. For agar plates add 1.2% Bacto agar
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:13.108168Z'
+- timestamp: '2026-01-26T17:53:12.477107Z'
   curator: mediadive-import
   action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1012b'
-- timestamp: '2026-03-13T06:18:55.256153Z'
+  notes: 'Source: DSMZ, ID: 844'
+- timestamp: '2026-03-13T06:19:09.273538Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000434'
-- timestamp: '2026-03-17T06:30:07.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:002000'
+- timestamp: '2026-03-17T06:30:22.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:06.296772+00:00'
+- timestamp: '2026-03-17T19:45:21.811377+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "BACTERIOVORAX MEDIUM" to "bacteriovorax_medium" for
     consistent matching
-merge_fingerprint: 36dd67722910faefac738bbed7e4c841dc796b48f42e47149844e0189114dbea
+- timestamp: '2026-06-05T07:40:16.302138+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:34.887067+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_844_BACTERIOVORAX_MEDIUM, ppye_medium'
+- timestamp: '2026-08-06T03:04:34.887106+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint ad9b0a77f7bd2047181360e6cb446b5dc8904a18c955db3b66e2e8f23fad1d0c
+  source: DSMZ_844_BACTERIOVORAX_MEDIUM.yaml, ppye_medium.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/ppye_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006649
+  name: ppye_medium
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+synonyms:
+- name: ppye_medium
+  source: KOMODO
+  source_id: komodo.medium:844
+  original_category: bacterial
+categories:
+- bacterial
 merged_from:
-- bacteriovorax_medium
+- DSMZ_844_BACTERIOVORAX_MEDIUM
+- ppye_medium
+merge_fingerprint: ad9b0a77f7bd2047181360e6cb446b5dc8904a18c955db3b66e2e8f23fad1d0c

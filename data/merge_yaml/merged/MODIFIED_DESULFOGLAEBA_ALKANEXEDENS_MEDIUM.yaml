@@ -1,145 +1,232 @@
-id: CultureMech:002872
+id: CultureMech:009914
 name: modified_desulfoglaeba_alkanexedens_medium
-original_name: MODIFIED DESULFOGLAEBA ALKANEXEDENS MEDIUM
+original_name: Modified Desulfoglaeba Alkanexedens Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 7.3
-media_term:
-  preferred_term: JCM Medium J521
-  term:
-    id: mediadive.medium:J521
-    label: MODIFIED DESULFOGLAEBA ALKANEXEDENS MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=521'
 ingredients:
-- preferred_term: Sea Salt
+- preferred_term: Mineral medium
   concentration:
-    value: '27.7469'
+    value: '9'
     unit: G_PER_L
+- preferred_term: Sol. 1
+  concentration:
+    value: '1.14'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '901.0'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound [Merged 2 duplicates: 900.0, 1.0]'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: NH4Cl
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
+    Inorganic compound'
   term:
     id: CHEBI:31206
-    label: NH4Cl
-  concentration:
-    value: '0.277469'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
-- preferred_term: Na2SO4
-  term:
-    id: CHEBI:32149
-    label: Na2SO4
-  concentration:
-    value: '3.88457'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
-    label: Na2SO4
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic
+    compound, Defined component'
   term:
     id: CHEBI:8806
     label: Resazurin
-  concentration:
-    value: '0.00110988'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
-- preferred_term: NaHCO3
+- preferred_term: Na2SO4
+  concentration:
+    value: '3.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
   term:
-    id: CHEBI:32139
-    label: NaHCO3
+    id: CHEBI:32149
+    label: sodium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
+- preferred_term: Sea salts (Sigma)
   concentration:
-    value: '0.4'
+    value: '25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
-- preferred_term: Sodium pyruvate
+  notes: 'Role: Mineral source; Properties: Complex component, Defined component'
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
   term:
-    id: CHEBI:50144
-    label: Sodium pyruvate
+    id: CHEBI:16526
+    label: ''
+- preferred_term: Nitrogen gas
+  notes: 'Properties: ガス'
   concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
-    label: Sodium pyruvate
-- preferred_term: Trace vitamins (see Medium No. 197)
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: Decane
-  term:
-    id: CHEBI:41808
-    label: Decane
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000896
-    label: Decane
-- preferred_term: Yeast extract
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:41808
+    label: decane
+  mediaingredientmech_chebi_term:
+    id: CHEBI:41808
+    label: decane
+- preferred_term: Na2S・9H2O
   concentration:
-    value: '0.05'
+    value: '12.5'
     unit: G_PER_L
-- preferred_term: Na2S x 9 H2O
+  notes: 'Role: Reducing agent; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
     id: CHEBI:76209
-    label: Na2S x 9 H2O
+    label: ''
+- preferred_term: L--Cysteine・HCl・H2O
   concentration:
     value: '12.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
-    label: Na2S x 9 H2O
-- preferred_term: L-Cysteine HCl x H2O
+  notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    label: ''
+- preferred_term: N2
+  notes: 'Properties: ガス'
   concentration:
-    value: '12.5'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
-    label: L-Cysteine HCl x H2O
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: 'Mix components and adjust pH to 7.2 - 7.4. Boil Mineral medium and
-    cool down under a N2-CO2 (4:1, v/v) gas stream. Distribute Mineral medium into
-    culture vessels (e.g., 9.0 ml of the medium in tubes) under the same gas mixture,
-    seal with Teflon-coated rubber stoppers and autoclave. After cooling, add the
-    following components (per 9.0 ml Mineral medium) from sterile anoxic stock solutions
-    (autoclaved or *filter-sterilized):'
-- step_number: 2
-  action: AUTOCLAVE
-  description: Autoclave and store under a N2 atmosphere.
-- step_number: 3
-  action: MIX
-  description: 'Comment: For strain JCM 13588, inoculate with a 20% inoculum, and
-    incubate the vessels in inverted position.'
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
+media_term:
+  preferred_term: TOGO Medium M522
+  term:
+    id: TOGO:M522
+    label: Modified Desulfoglaeba Alkanexedens Medium
+notes: 'Source: https://togomedium.org/medium/M522
+
+  Original source: JCM - JCM_M521
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=521'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:16.828744Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J521'
-- timestamp: '2026-03-13T06:19:16.237937Z'
+- timestamp: '2026-01-27T06:35:55.227746Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M522'
+- timestamp: '2026-01-28T19:48:09.189775Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
+    N2'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-03-09T08:04:14.815535+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 5 solution(s) from ingredients
+- timestamp: '2026-03-13T03:08:41.957478Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:09.927685Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002872'
-- timestamp: '2026-03-17T06:29:55.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:009914'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:29:44.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:29.755762+00:00'
+- timestamp: '2026-03-17T19:46:28.872862+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MODIFIED DESULFOGLAEBA ALKANEXEDENS MEDIUM" to "modified_desulfoglaeba_alkanexedens_medium"
+  notes: Normalized name from "Modified Desulfoglaeba Alkanexedens Medium" to "modified_desulfoglaeba_alkanexedens_medium"
     for consistent matching
-merge_fingerprint: f10b64fd3177e8acc1ab4683d2def963cafd0f1ae0f911120e85adc99766ba27
+- timestamp: '2026-05-16T09:03:18.759151+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:42.189451+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:50.876443+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:16.924146+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e87cd0237f7afef83aff26549ee628a3b299b3eb2c25880af8932779bfed27d6
+  source: TOGO_M522_Modified_Desulfoglaeba_Alkanexedens_Medium.yaml
+solutions:
+- preferred_term: 8.5% NaHCO3*
+  composition: []
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+  name: Unknown solution
+- preferred_term: 1% yeast extract solution
+  composition: []
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+  name: Unknown solution
+- preferred_term: 2% Sodium pyruvate solution*
+  composition: []
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Solution, Defined component, Organic compound'
+  name: Unknown solution
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: Reducing agent solution (see below)
+  composition: []
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: e87cd0237f7afef83aff26549ee628a3b299b3eb2c25880af8932779bfed27d6
 merged_from:
-- modified_desulfoglaeba_alkanexedens_medium
+- TOGO_M522_Modified_Desulfoglaeba_Alkanexedens_Medium

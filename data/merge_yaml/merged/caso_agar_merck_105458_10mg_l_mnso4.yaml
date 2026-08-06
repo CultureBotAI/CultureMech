@@ -3,6 +3,7 @@ name: caso_agar_merck_105458_10mg_l_mnso4
 original_name: CASO Agar (Merck 105458) + 10mg/L MnSO4
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: NaCl
   concentration:
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: MnSO4 x H2O
   concentration:
     value: '10'
@@ -36,10 +37,10 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
   term:
-    id: CHEBI:86360
-    label: manganese(II) sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
     label: MnSO4 x H2O
 - preferred_term: Agar
   concentration:
@@ -49,9 +50,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Peptone from casein
   concentration:
     value: '15'
@@ -94,6 +95,23 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CASO Agar (Merck 105458) + 10mg/L MnSO4" to "caso_agar_merck_105458_10mg_l_mnso4"
     for consistent matching
-merge_fingerprint: e1049701902b2ac5aaf689fb7b997850855ac42fcf7612a09fcfdc59412ecc49
+- timestamp: '2026-06-05T07:40:52.680555+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:36.149685+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:05:26.881387+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint a681a778adaadbe0847c80c5cb5f40fe1b5e89e3937b926aafc5c60e9dbaefd9
+  source: caso_agar_merck_105458_10mg_l_mnso4.yaml
+merge_fingerprint: a681a778adaadbe0847c80c5cb5f40fe1b5e89e3937b926aafc5c60e9dbaefd9
 merged_from:
 - caso_agar_merck_105458_10mg_l_mnso4

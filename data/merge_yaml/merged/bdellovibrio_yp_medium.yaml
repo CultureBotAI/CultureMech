@@ -3,6 +3,7 @@ name: bdellovibrio_yp_medium
 original_name: BDELLOVIBRIO (YP) MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:
@@ -24,6 +25,9 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
+  term:
+    id: CHEBI:9754
+    label: ''
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -56,10 +60,24 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "BDELLOVIBRIO (YP) MEDIUM" to "bdellovibrio_yp_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:55.809836+00:00'
+- timestamp: '2026-08-06T03:05:24.946313+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: bdellovibrio_yp_medium, tris_yp_medium'
+- timestamp: '2026-08-06T03:05:24.946349+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 555ab9dce651f07cc6b35372794878b0c3236c715d735522b93c9ce044d531c3
+  source: bdellovibrio_yp_medium.yaml, tris_yp_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/tris_yp_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004661
+  name: tris_yp_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.
 synonyms:
 - name: tris_yp_medium
   source: KOMODO
@@ -70,4 +88,4 @@ categories:
 merged_from:
 - bdellovibrio_yp_medium
 - tris_yp_medium
-merge_fingerprint: 93a6092b616421ad104ee2b908279ceb66e46deda00d2be256eaa7a38b2f82f3
+merge_fingerprint: 555ab9dce651f07cc6b35372794878b0c3236c715d735522b93c9ce044d531c3

@@ -3,6 +3,7 @@ name: oligotrophic_denitrification_liquid_medium
 original_name: Oligotrophic denitrification liquid medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,10 +15,10 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
-- preferred_term: MgCl2∙6H2O
+- preferred_term: MgCl2 x 6 H2O
   concentration:
     value: '0.01'
     unit: G_PER_L
@@ -40,8 +41,8 @@ ingredients:
   term:
     id: CHEBI:63005
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000388
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
     label: NaNO3
 - preferred_term: CaCl2
   concentration:
@@ -52,9 +53,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
-    label: CaCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
 - preferred_term: K2HPO4·3H2O
   concentration:
     value: '0.02'
@@ -63,8 +64,8 @@ ingredients:
     component'
   term:
     id: CHEBI:131527
-    label: ''
-- preferred_term: FeSO4∙7H2O
+    label: dipotassium hydrogen phosphate
+- preferred_term: FeSO4 x 7 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -73,7 +74,7 @@ ingredients:
   term:
     id: CHEBI:75836
     label: ''
-- preferred_term: CoCl2∙6H2O
+- preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '0.05'
     unit: G_PER_L
@@ -82,7 +83,7 @@ ingredients:
   term:
     id: CHEBI:35696
     label: ''
-- preferred_term: CuSO4∙5H2O
+- preferred_term: CuSO4 x 5 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -100,9 +101,9 @@ ingredients:
   term:
     id: CHEBI:35176
     label: zinc sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: ZnSO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: zinc sulfate
 - preferred_term: EDTA
   concentration:
     value: '0.5'
@@ -111,9 +112,9 @@ ingredients:
   term:
     id: CHEBI:64755
     label: EDTA(2-)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000165
-    label: EDTA
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64755
+    label: EDTA(2-)
 media_term:
   preferred_term: TOGO Medium M3221
   term:
@@ -144,9 +145,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009661'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:00.078361'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:29:41.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -156,6 +157,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Oligotrophic denitrification liquid medium" to "oligotrophic_denitrification_liquid_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:04:28.116120+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:40.440852+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:09.749427+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:51.921602+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d012b8df93e5bc9989c05a6295bc12a2399325f97a48c36896d9116869ee80b5
+  source: oligotrophic_denitrification_liquid_medium.yaml
 solutions:
 - preferred_term: Trace element solution
   term:

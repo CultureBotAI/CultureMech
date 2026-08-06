@@ -3,6 +3,7 @@ name: medium_for_strain_ja747
 original_name: Medium for Strain JA747
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +32,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.15'
@@ -43,9 +44,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: KH2PO4
   concentration:
     value: '0.2'
@@ -54,9 +55,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
@@ -67,9 +68,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: Dextrose
   concentration:
     value: '0.05'
@@ -79,9 +80,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Dextrose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: MgCl2·6H2O
   concentration:
     value: '0.62'
@@ -91,9 +92,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: MgCl2·6H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: KCl
   concentration:
     value: '0.5'
@@ -103,9 +104,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Na2SO4
   concentration:
     value: '2.84'
@@ -115,9 +116,9 @@ ingredients:
   term:
     id: CHEBI:32149
     label: sodium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
-    label: Na2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
 - preferred_term: Sodium pyruvate
   concentration:
     value: '3'
@@ -127,9 +128,9 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
-    label: Sodium pyruvate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
 - preferred_term: HEPES
   concentration:
     value: '2.38'
@@ -138,8 +139,8 @@ ingredients:
   term:
     id: CHEBI:46756
     label: HEPES
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001034
+  mediaingredientmech_chebi_term:
+    id: CHEBI:46756
     label: HEPES
 - preferred_term: Beef extract
   concentration:
@@ -189,6 +190,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Medium for Strain JA747" to "medium_for_strain_ja747"
     for consistent matching
+- timestamp: '2026-06-05T07:41:29.609782+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 11 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:06.253534+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:43.628225+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 97a9be1a8415b2cd7ed2fd03da5e551e66dc920b6045cc6488a8bc314e0ec791
+  source: medium_for_strain_ja747.yaml
 merge_fingerprint: 97a9be1a8415b2cd7ed2fd03da5e551e66dc920b6045cc6488a8bc314e0ec791
 merged_from:
 - medium_for_strain_ja747

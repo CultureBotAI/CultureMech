@@ -3,6 +3,7 @@ name: sheep_blood_agar
 original_name: sheep blood agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: CO2
@@ -32,9 +33,9 @@ curation_history:
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2510'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:54.031426'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: sheep blood agar'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:02.407675Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -44,6 +45,15 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "sheep blood agar" to "sheep_blood_agar" for consistent
     matching
+- timestamp: '2026-05-16T09:04:31.704215+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:05:55.752874+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint daabf53ba9b284e95eb1456b9bfb60cc58d03fc6d05da04d3cec48a14894da38
+  source: sheep_blood_agar.yaml
 merge_fingerprint: daabf53ba9b284e95eb1456b9bfb60cc58d03fc6d05da04d3cec48a14894da38
 merged_from:
 - sheep_blood_agar

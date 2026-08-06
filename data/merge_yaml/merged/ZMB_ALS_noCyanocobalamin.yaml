@@ -1,6 +1,7 @@
 id: CultureMech:015801
 name: ZMB ALS noCyanocobalamin
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: ZMB_ALS
@@ -17,7 +18,7 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 68-19-9; MW: 1355.37'
 description: Media for culturing Bifidobacterium minus cyanocobalamin
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: ZMB ALS noCyanocobalamin
@@ -31,6 +32,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015801'
+- timestamp: '2026-05-16T09:04:44.115797+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:09.102560+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 848073e38af42fe951a6cd8d5852fdb817385b07e0c978843f83ad36fe38ec72
+  source: zmb_als_nocyanocobalamin.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: 848073e38af42fe951a6cd8d5852fdb817385b07e0c978843f83ad36fe38ec72

@@ -1,6 +1,7 @@
 id: CultureMech:015718
 name: RCH2 defined noCarbon noNitrogen noNitrilotriacetic acid
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Potassium Chloride
@@ -146,8 +147,8 @@ ingredients:
     value: '0.1'
     unit: MG_PER_L
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Wolfe''s vitamin
     mix'
 - preferred_term: 4-Aminobenzoic acid
@@ -234,7 +235,7 @@ ingredients:
 description: Defined minimal media for soil and groundwater bacteria with no carbon;
   with no nitrogen and no Nitrilotriacetic acid
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: RCH2 defined noCarbon noNitrogen noNitrilotriacetic acid
@@ -248,8 +249,27 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015718'
+- timestamp: '2026-05-16T09:04:43.061078+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:53.855095+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:47:15.699639+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:07.972860+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 5bd71ca28f8777aa3b998bc163ad486748e9ebe59d5552ae9b66fa66afe956fc
+  source: rch2_defined_nocarbon_nonitrogen_nonitrilotriacetic_acid.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: b9620fffc770192485aaee1df2212cf417ff5c1d0b2a246db7438218d5b11956
+merge_fingerprint: 5bd71ca28f8777aa3b998bc163ad486748e9ebe59d5552ae9b66fa66afe956fc
 merged_from:
 - rch2_defined_nocarbon_nonitrogen_nonitrilotriacetic_acid

@@ -3,6 +3,7 @@ name: blood_agar_i
 original_name: BLOOD AGAR I
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 420
@@ -50,8 +51,8 @@ ingredients:
     value: '30.0'
     unit: G_PER_L
   notes: ' (for solid medium) [Merged 2 duplicates: 15.0, 15.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Calf brains
   term:
@@ -164,8 +165,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 applications:
 - Microbial cultivation
@@ -194,10 +195,32 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "BLOOD AGAR I" to "blood_agar_i" for consistent matching
-- timestamp: '2026-04-17T06:29:23.680952+00:00'
+- timestamp: '2026-06-05T07:40:23.166916+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:48.969806+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_420_BLOOD_AGAR_I, blood_agar_i, medium_420_modified_for_dsm_4690'
+- timestamp: '2026-08-06T03:04:48.969868+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 1e97aa3292f8073abdb5d5b36876de2d6685437c17dee1e77f85ee6b43ce8945
+  source: KOMODO_420_BLOOD_AGAR_I.yaml, blood_agar_i.yaml, medium_420_modified_for_dsm_4690.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/blood_agar_i.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001525
+  name: blood_agar_i
+  notes: KOMODO record states DSMZ Medium 420 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 synonyms:
 - name: medium_420_modified_for_dsm_4690
   source: KOMODO

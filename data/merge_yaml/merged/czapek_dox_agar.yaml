@@ -3,6 +3,7 @@ name: czapek_dox_agar
 original_name: CZAPEK-DOX AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
@@ -20,8 +21,8 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000661
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17992
     label: Sucrose
 - preferred_term: NaNO3
   term:
@@ -40,8 +41,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: KCl
   term:
@@ -50,8 +51,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -60,18 +61,18 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: Agar
   term:
@@ -80,8 +81,8 @@ ingredients:
   concentration:
     value: '13'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -107,11 +108,27 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CZAPEK-DOX AGAR" to "czapek_dox_agar" for consistent
     matching
-- timestamp: '2026-04-17T06:29:59.618559+00:00'
+- timestamp: '2026-06-05T07:40:55.241021+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:55.097146+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:29.554478+00:00'
   curator: recipe-merger
   action: Merged 6 duplicate recipes into canonical record
   notes: 'Sources: czapek_dox_agar, czapek_dox_agar, czapek_solution_agar_a, czapek_solution_agar_b,
     czapeks_solution_agar_with_200_g_sucrose, sucrose_nitrate_agar_czapek_dox_agar'
+- timestamp: '2026-08-06T03:05:29.554527+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 6 source recipe(s) on fingerprint b640cca8b69cfb1b1487732c387d1e68b60fd2695396505e567a64a4e67f9ce5
+  source: czapek_dox_agar.yaml, czapek_dox_agar.yaml, czapek_solution_agar_a.yaml,
+    czapek_solution_agar_b.yaml, czapeks_solution_agar_with_200_g_sucrose.yaml, sucrose_nitrate_agar_czapek_dox_agar.yaml
 synonyms:
 - name: czapek_solution_agar_a
   source: MediaDive
@@ -139,4 +156,4 @@ merged_from:
 - czapek_solution_agar_b
 - czapeks_solution_agar_with_200_g_sucrose
 - sucrose_nitrate_agar_czapek_dox_agar
-merge_fingerprint: 19d95099e4f9394641ff209c18b8a6a465c6a420ad47bc86cdcc837f4a7a1205
+merge_fingerprint: b640cca8b69cfb1b1487732c387d1e68b60fd2695396505e567a64a4e67f9ce5

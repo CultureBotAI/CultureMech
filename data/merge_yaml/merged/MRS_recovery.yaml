@@ -1,6 +1,7 @@
 id: CultureMech:015638
 name: MRS_recovery
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose
@@ -103,7 +104,7 @@ ingredients:
 description: Media for culturing lactobacilli with some different additives relative
   to MRS
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: MRS_recovery
@@ -117,8 +118,17 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015638'
+- timestamp: '2026-05-16T09:04:41.986544+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:06.847763+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 95c3d4691ca99e17a09dcdd46774fbb3c9eb9cdc8d7b26b1ffea4cee00be1f8c
+  source: mrs_recovery.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: 37aed8d2cdfe6340d70cf24f35d1091ee4434b655420cbd27347078794eeb6cf
+merge_fingerprint: 95c3d4691ca99e17a09dcdd46774fbb3c9eb9cdc8d7b26b1ffea4cee00be1f8c
 merged_from:
 - mrs_recovery

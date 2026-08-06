@@ -1,186 +1,139 @@
-id: CultureMech:002634
+id: CultureMech:009261
 name: mjyp_medium
-original_name: MJYP* MEDIUM
+original_name: MJYP* Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 6.0
-media_term:
-  preferred_term: JCM Medium J277
-  term:
-    id: mediadive.medium:J277
-    label: MJYP* MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=277'
 ingredients:
-- preferred_term: Yeast extract
-  concentration:
-    value: '2'
-    unit: G_PER_L
-- preferred_term: Trypticase peptone
-  concentration:
-    value: '2'
-    unit: G_PER_L
-- preferred_term: NaNO3
-  term:
-    id: CHEBI:63005
-    label: NaNO3
-  concentration:
-    value: '1.7'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000171
-    label: NaNO3
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '1.39'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
-    label: FeSO4 x 7 H2O
-- preferred_term: Na2S x 9 H2O
-  term:
-    id: CHEBI:76209
-    label: Na2S x 9 H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
-    label: Na2S x 9 H2O
 - preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Organic
+    compound, Simple component'
   term:
     id: CHEBI:8806
     label: Resazurin
-  concentration:
-    value: '0.001'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
+- preferred_term: Na2S・9H2O
   concentration:
-    value: '29.703'
+    value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: K2HPO4
+  notes: 'Role: Reducing agent; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
-    id: CHEBI:131527
-    label: K2HPO4
-  concentration:
-    value: '0.138614'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.138614'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3.36634'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: MgCl2 x 6 H2O
-  term:
-    id: CHEBI:86345
-    label: MgCl2 x 6 H2O
-  concentration:
-    value: '4.13861'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: MgCl2 x 6 H2O
-- preferred_term: KCl
-  term:
-    id: CHEBI:32588
-    label: KCl
-  concentration:
-    value: '0.326733'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: NiCl2 x 6 H2O
-  concentration:
-    value: '0.00049505'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
-    label: NiCl2 x 6 H2O
-- preferred_term: Na2SeO3 x 5 H2O
-  term:
-    id: CHEBI:131361
-    label: Na2SeO3 x 5 H2O
-  concentration:
-    value: '0.00049505'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000144
-    label: Na2SeO3 x 5 H2O
-- preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
-  concentration:
-    value: '0.00990099'
-    unit: G_PER_L
-  term:
-    id: CHEBI:76181
+    id: CHEBI:76209
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000429
-    label: Fe(NH4)2(SO4)2 x 6 H2O
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Mix ingredients, except NaNO3, FeSO4 x 7H2O and Na2S x 9H2O, and autoclave
-    under a N2 atmosphere. Separately autoclave NaNO3, FeSO4 x 7H2O and Na2S x 9H2O
-    solutions (pH 7.0, 7.5 and 7.5, respectively) under a N2 atmosphere. Aseptically
-    and anaerobically add the NaNO3, FeSO4 x 7H2O and Na2S x 9H2O solutions to the
-    medium and adjust pH to 6.0. Pressurize the inoculated bottle to 200 kPa N2.
+- preferred_term: FeSO4・7H2O
+  concentration:
+    value: '1.39'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:75836
+    label: ''
+- preferred_term: NaNO3
+  concentration:
+    value: '1.7'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
+    Inorganic compound'
+  term:
+    id: CHEBI:63005
+    label: ''
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
+    label: NaNO3
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Trypticase peptone (BD-BBL)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: N2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
+media_term:
+  preferred_term: TOGO Medium M270
+  term:
+    id: TOGO:M270
+    label: MJYP* Medium
+notes: 'Source: https://togomedium.org/medium/M270
+
+  Original source: JCM - JCM_M277
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=277'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:16.157839Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J277'
-- timestamp: '2026-01-28T19:48:09.454610Z'
+- timestamp: '2026-01-27T06:35:54.737677Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M270'
+- timestamp: '2026-01-28T19:48:25.153385Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:19:14.680832Z'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: N2'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-03-09T08:04:41.587509+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:04.803979Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002634'
-- timestamp: '2026-03-17T06:29:45.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:009261'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:30:18.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:27.973461+00:00'
+- timestamp: '2026-03-17T19:46:23.565207+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MJYP* MEDIUM" to "mjyp_medium" for consistent matching
-merge_fingerprint: 8a5ba39f374d544601f5023bbcb8589aac3aae791a7b5da95d612e1e24c66e11
+  notes: Normalized name from "MJYP* Medium" to "mjyp_medium" for consistent matching
+- timestamp: '2026-05-16T09:03:15.323296+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:38.606465+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:13.146863+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint c6124f05dc3e0bfefa70c84c2ddc2f7e091b26e029055082b8f29bccc2b9112a
+  source: TOGO_M270_MJYP_Medium.yaml
+solutions:
+- preferred_term: MJ(-N) synthetic seawater (see Medium [M260])
+  composition: []
+  notes: Cross-reference to Medium M260
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: c6124f05dc3e0bfefa70c84c2ddc2f7e091b26e029055082b8f29bccc2b9112a
 merged_from:
-- mjyp_medium
+- TOGO_M270_MJYP_Medium

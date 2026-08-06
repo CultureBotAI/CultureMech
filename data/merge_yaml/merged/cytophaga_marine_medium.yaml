@@ -1,141 +1,153 @@
-id: CultureMech:008882
+id: CultureMech:004200
 name: cytophaga_marine_medium
-original_name: Cytophaga (marine) Medium
+original_name: CYTOPHAGA (marine) medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 172
+  term:
+    id: komodo.medium:172
+    label: CYTOPHAGA (marine) medium
+notes: 'Source: KOMODO ModelSEED | ID: 172 | DSMZ Medium: 172 (mediadive.medium:172)
+  | Aerobic: No'
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Yeast extract
   concentration:
-    value: '1000'
+    value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: MgSO4 x 7 H2O
+- preferred_term: Tryptone
   concentration:
-    value: '6.3'
+    value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4 x 7 H2O
 - preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
   concentration:
     value: '24.7'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
     label: NaCl
-- preferred_term: CaCl2 x 2 H2O
-  concentration:
-    value: '1.2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
-- preferred_term: MgCl2 x 6 H2O
-  concentration:
-    value: '4.6'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:6636
-    label: magnesium dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000663
-    label: MgCl2 x 6 H2O
 - preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
   concentration:
     value: '0.7'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
     label: KCl
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '6.3'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '4.6'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1.2'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
 - preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
     label: NaHCO3
-- preferred_term: Agar (Difco)
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Yeast extract (Difco)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Tryptone (Difco)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M2296
-  term:
-    id: TOGO:M2296
-    label: Cytophaga (marine) Medium
-notes: 'Source: https://togomedium.org/medium/M2296
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium172.pdf'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.294038Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2296'
-- timestamp: '2026-01-28T19:48:35.721290Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:20:00.998130Z'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 172'
+- timestamp: '2026-02-03T11:19:03.293428'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 172
+- timestamp: '2026-03-13T06:19:25.796901Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:008882'
-- timestamp: '2026-03-17T06:30:41.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:004200'
+- timestamp: '2026-03-17T06:30:05.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:19.695618+00:00'
+- timestamp: '2026-03-17T19:45:40.756019+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Cytophaga (marine) Medium" to "cytophaga_marine_medium"
+  notes: Normalized name from "CYTOPHAGA (marine) medium" to "cytophaga_marine_medium"
     for consistent matching
-merge_fingerprint: c2d50a20dff478c4729fa92ccc3cbe9848f50822e0100d1d372da92d0b7d5825
+- timestamp: '2026-06-05T07:40:55.229454+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:43.937354+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_172a_CY_S2_medium, cytophaga_marine_medium, medium_172_modified_for_dsm_6480,
+    cytophaga_marine_medium'
+- timestamp: '2026-08-06T03:04:43.937394+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 4 source recipe(s) on fingerprint e8c012d38381b5b792bf92a45458aaf8c693969abe1c3a6b2becefb2809a6919
+  source: KOMODO_172a_CY_S2_medium.yaml, cytophaga_marine_medium.yaml, medium_172_modified_for_dsm_6480.yaml,
+    cytophaga_marine_medium.yaml
+synonyms:
+- name: cy_s2_medium
+  source: KOMODO
+  source_id: komodo.medium:172a
+  original_category: bacterial
+- name: medium_172_modified_for_dsm_6480
+  source: KOMODO
+  source_id: komodo.medium:172_6480
+  original_category: bacterial
+categories:
+- bacterial
+- specialized
 merged_from:
-- TOGO_M2296_Cytophaga_marine_Medium
+- KOMODO_172a_CY_S2_medium
+- cytophaga_marine_medium
+- medium_172_modified_for_dsm_6480
+- cytophaga_marine_medium
+merge_fingerprint: e8c012d38381b5b792bf92a45458aaf8c693969abe1c3a6b2becefb2809a6919

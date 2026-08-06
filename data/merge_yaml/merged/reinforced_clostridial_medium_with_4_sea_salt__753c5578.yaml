@@ -1,0 +1,90 @@
+id: CultureMech:002832
+name: reinforced_clostridial_medium_with_4_sea_salt
+original_name: REINFORCED CLOSTRIDIAL MEDIUM WITH 4%  SEA SALT
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J482
+  term:
+    id: mediadive.medium:J482
+    label: REINFORCED CLOSTRIDIAL MEDIUM WITH 4%  SEA SALT
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=482'
+ingredients:
+- preferred_term: Reinforced clostridial medium
+  concentration:
+    value: '38'
+    unit: G_PER_L
+- preferred_term: Sea Salt
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.717707Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J482'
+- timestamp: '2026-03-13T06:19:15.967930Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002832'
+- timestamp: '2026-03-17T06:29:40.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:29.436908+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "REINFORCED CLOSTRIDIAL MEDIUM WITH 4%  SEA SALT" to
+    "reinforced_clostridial_medium_with_4_sea_salt" for consistent matching
+- timestamp: '2026-06-05T07:41:44.161339+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:54.573911+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: reinforced_clostridial_medium_with_3_sea_salt, reinforced_clostridial_medium_with_4_sea_salt'
+- timestamp: '2026-08-06T03:05:54.573949+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 753c5578fea4247595525083ac8df148f93efa598edfd921d0292245e44004a5
+  source: reinforced_clostridial_medium_with_3_sea_salt.yaml, reinforced_clostridial_medium_with_4_sea_salt.yaml
+kg_microbe_match: mediadive.medium:12
+parent_media:
+  path: data/normalized_yaml/bacterial/reinforced_clostridial_medium_with_3_sea_salt.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:002831
+  name: reinforced_clostridial_medium_with_3_sea_salt
+  notes: 'Reviewed source-family salinity variant: JCM/MediaDive 3% sea salt parent
+    and 4% sea salt child share the same reinforced clostridial base formulation.'
+variant_relationship: SALINITY_VARIANT
+variant_modifications:
+- Sea Salt increased from 30 g/L to 40 g/L while reinforced clostridial medium and
+  agar remain unchanged.
+synonyms:
+- name: reinforced_clostridial_medium_with_3_sea_salt
+  source: MediaDive
+  source_id: mediadive.medium:J481
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- reinforced_clostridial_medium_with_3_sea_salt
+- reinforced_clostridial_medium_with_4_sea_salt
+merge_fingerprint: 753c5578fea4247595525083ac8df148f93efa598edfd921d0292245e44004a5

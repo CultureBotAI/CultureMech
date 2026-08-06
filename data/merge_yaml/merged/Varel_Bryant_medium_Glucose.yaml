@@ -1,6 +1,7 @@
 id: CultureMech:015772
 name: Varel Bryant medium Glucose
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Potassium phosphate monobasic
@@ -125,7 +126,7 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-99-7; MW: 180.16'
 description: Defined medium for B.theta with Glucose
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: Varel Bryant medium Glucose
@@ -139,6 +140,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015772'
+- timestamp: '2026-05-16T09:04:43.898744+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:08.874809+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 0d3d9efe63577450e5f8f6abb05963df2e8e43b402a2e6dcc6e4d1c81d2d991f
+  source: varel_bryant_medium_glucose.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: 0d3d9efe63577450e5f8f6abb05963df2e8e43b402a2e6dcc6e4d1c81d2d991f

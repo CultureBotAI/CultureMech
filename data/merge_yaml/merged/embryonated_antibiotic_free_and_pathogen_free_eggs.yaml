@@ -3,6 +3,7 @@ name: embryonated_antibiotic_free_and_pathogen_free_eggs
 original_name: Embryonated, antibiotic-free, and pathogen-free eggs
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Whole egg
@@ -24,9 +25,9 @@ curation_history:
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2275'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:52.985927'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Whole egg'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:00.811403Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -36,6 +37,15 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Embryonated, antibiotic-free, and pathogen-free eggs"
     to "embryonated_antibiotic_free_and_pathogen_free_eggs" for consistent matching
+- timestamp: '2026-05-16T09:03:31.423357+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:05:33.524183+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint ca118df8a4c6dc94fbcbb096a956a16d54019b8247d763700a84b7d738ec708b
+  source: embryonated_antibiotic_free_and_pathogen_free_eggs.yaml
 merge_fingerprint: ca118df8a4c6dc94fbcbb096a956a16d54019b8247d763700a84b7d738ec708b
 merged_from:
 - embryonated_antibiotic_free_and_pathogen_free_eggs

@@ -3,8 +3,11 @@ name: fastidious_anaerobe_agar
 original_name: FASTIDIOUS ANAEROBE AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_range: 7.0-7.4
+ph_range:
+  min: 7.0
+  max: 7.4
 media_term:
   preferred_term: KOMODO Medium 1203
   term:
@@ -20,8 +23,8 @@ ingredients:
   concentration:
     value: '45.7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Fastidious Anaerobe Agar
 - preferred_term: Horse blood
   concentration:
@@ -52,12 +55,40 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "FASTIDIOUS ANAEROBE AGAR" to "fastidious_anaerobe_agar"
     for consistent matching
-- timestamp: '2026-04-17T06:29:16.969427+00:00'
+- timestamp: '2026-05-20T06:00:49.413743+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.0-7.4'' -> {''min'': 7.0, ''max'': 7.4}'
+- timestamp: '2026-06-05T07:40:19.826093+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:41.490268+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_1203_FASTIDIOUS_ANAEROBE_AGAR, brucella_blood_agar_with_hemin_menadione,
     fastidious_anaerobe_agar'
+- timestamp: '2026-08-06T03:04:41.490307+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint a575c96f923e64955f76382c18968cfc52d4208ef75fec70d46d85864a22ddc8
+  source: KOMODO_1203_FASTIDIOUS_ANAEROBE_AGAR.yaml, brucella_blood_agar_with_hemin_menadione.yaml,
+    fastidious_anaerobe_agar.yaml
 kg_microbe_match: mediadive.medium:12
+parent_media:
+  path: data/normalized_yaml/bacterial/fastidious_anaerobe_agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000653
+  name: fastidious_anaerobe_agar
+  notes: KOMODO record explicitly cites DSMZ Medium 1203; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 1203; local ingredient
+  and concentration signatures match.
 synonyms:
 - name: brucella_blood_agar_with_hemin_menadione
   source: MediaDive

@@ -1,181 +1,160 @@
-id: CultureMech:003302
+id: CultureMech:007514
 name: neutral_oligotrophic_haloarchaeal_medium_no_3
-original_name: NEUTRAL OLIGOTROPHIC HALOARCHAEAL MEDIUM NO.3
-category: bacterial
+original_name: Neutral Oligotrophic Haloarchaeal Medium NO.3
+category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 7.0
-media_term:
-  preferred_term: JCM Medium J954
-  term:
-    id: mediadive.medium:J954
-    label: NEUTRAL OLIGOTROPHIC HALOARCHAEAL MEDIUM NO.3
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954'
 ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '233'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
-    value: '0.993049'
+    value: '1'
     unit: G_PER_L
-- preferred_term: Fish peptone
-  concentration:
-    value: '0.248262'
-    unit: G_PER_L
-- preferred_term: Sodium formate
-  term:
-    id: CHEBI:62965
-    label: Sodium formate
-  concentration:
-    value: '0.248262'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000985
-    label: Sodium formate
+  notes: 'Role: Nutrient source; Properties: Undefined component'
 - preferred_term: Sodium acetate
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'
   term:
     id: CHEBI:32954
-    label: Sodium acetate
-  concentration:
-    value: '0.248262'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
-    label: Sodium acetate
-- preferred_term: Sodium lactate
-  term:
-    id: CHEBI:75228
-    label: Sodium lactate
-  concentration:
-    value: '0.248262'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001047
-    label: Sodium lactate
+    label: sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: Sodium pyruvate
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
+    compound'
   term:
     id: CHEBI:50144
-    label: Sodium pyruvate
+    label: sodium pyruvate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+- preferred_term: Sodium lactate
   concentration:
-    value: '0.248262'
+    value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
-    label: Sodium pyruvate
-- preferred_term: NH4Cl
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
   term:
-    id: CHEBI:31206
-    label: NH4Cl
+    id: CHEBI:75228
+    label: sodium lactate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75228
+    label: sodium lactate
+- preferred_term: Fish peptone (Fluka)
   concentration:
-    value: '0.26745'
+    value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
-- preferred_term: NaCl
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Sodium formate
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Inorganic compound, Simple component'
   term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '240'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: MgCl2 x 6 H2O
+    id: CHEBI:62965
+    label: sodium formate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62965
+    label: sodium formate
+media_term:
+  preferred_term: TOGO Medium M1001
   term:
-    id: CHEBI:86345
-    label: MgCl2 x 6 H2O
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: MgCl2 x 6 H2O
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '35'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: KCl
-  term:
-    id: CHEBI:32588
-    label: KCl
-  concentration:
-    value: '7'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
-- preferred_term: CaCl2
-  term:
-    id: CHEBI:3312
-    label: CaCl2
-  concentration:
-    value: '0.5549'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
-    label: CaCl2
-- preferred_term: K2HPO4
-  term:
-    id: CHEBI:131527
-    label: K2HPO4
-  concentration:
-    value: '14.5263'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-  concentration:
-    value: '2.25901'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Mix components thoroughly and adjust pH to 7.0. For preparation of
-    solid medium, add 20.0 g/L agar. (if necessary, use washed agar as described in
-    the recipe of Medium No. 574). Autoclave and, after cooling, add the following
-    solutions (*filter-sterilized or autoclaved) to the medium.
-- step_number: 2
-  action: ADJUST_PH
-  description: Add components to distilled water and bring volume to 1.0 L. Adjust
-    pH to 7.5 with 1 M Tris base.
-- step_number: 3
-  action: MIX
-  description: Combine the two solutions and check that pH is close to 7.5. Add an
-    equal volume of distilled water.
+    id: TOGO:M1001
+    label: Neutral Oligotrophic Haloarchaeal Medium NO.3
+notes: 'Source: https://togomedium.org/medium/M1001
+
+  Original source: JCM - JCM_M954
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=954'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:18.119673Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J954'
-- timestamp: '2026-03-13T06:19:19.331781Z'
+- timestamp: '2026-01-27T06:35:53.735201Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1001'
+- timestamp: '2026-01-28T19:48:09.997248Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:16.275232+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:49.319982Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:003302'
-- timestamp: '2026-03-17T06:30:04.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:007514'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:29:46.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:33.271961+00:00'
+- timestamp: '2026-03-17T19:46:07.647625+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "NEUTRAL OLIGOTROPHIC HALOARCHAEAL MEDIUM NO.3" to "neutral_oligotrophic_haloarchaeal_medium_no_3"
+  notes: Normalized name from "Neutral Oligotrophic Haloarchaeal Medium NO.3" to "neutral_oligotrophic_haloarchaeal_medium_no_3"
     for consistent matching
-high_metal: true
-merge_fingerprint: 6aabd4ce4573420c07e75a720f21172a51ed38780142a7d1ffcb1e4d108d1337
+- timestamp: '2026-05-16T09:03:06.790224+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:29.585802+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:24.378444+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 46f6315196fe90bbef70f8047165cfc6281f8a21e847a3b62707789f114dd1e5
+  source: TOGO_M1001_Neutral_Oligotrophic_Haloarchaeal_Medium_NO.3.yaml
+solutions:
+- preferred_term: MDS salt water (see Medium [M578])
+  composition: []
+  notes: Cross-reference to Medium M578
+  concentration:
+    value: '767'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: 1 M NH4Cl solution*
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
+    Solution'
+  name: Unknown solution
+- preferred_term: Potassium phosphate buffer (see Medium [M578])
+  composition: []
+  notes: Cross-reference to Medium M578
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: 46f6315196fe90bbef70f8047165cfc6281f8a21e847a3b62707789f114dd1e5
 merged_from:
-- neutral_oligotrophic_haloarchaeal_medium_no_3
+- TOGO_M1001_Neutral_Oligotrophic_Haloarchaeal_Medium_NO.3

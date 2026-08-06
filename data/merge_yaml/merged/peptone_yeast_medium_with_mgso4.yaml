@@ -3,6 +3,7 @@ name: peptone_yeast_medium_with_mgso4
 original_name: Peptone-YEAST medium with MgSO4
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:
@@ -29,18 +30,18 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 applications:
 - Microbial cultivation
@@ -66,10 +67,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Peptone-YEAST medium with MgSO4" to "peptone_yeast_medium_with_mgso4"
     for consistent matching
-- timestamp: '2026-04-17T06:30:19.188336+00:00'
+- timestamp: '2026-06-05T07:41:41.327217+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:10.028465+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:52.570979+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: peptone_yeast_medium_with_mgso4, peptone_yeast_medium_with_mgso4'
+- timestamp: '2026-08-06T03:05:52.571010+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 2048db84a4a9442d2f67574b65e94d15e2aab5add1cb7dccf13881f651e3261b
+  source: peptone_yeast_medium_with_mgso4.yaml, peptone_yeast_medium_with_mgso4.yaml
 categories:
 - bacterial
 - fungal

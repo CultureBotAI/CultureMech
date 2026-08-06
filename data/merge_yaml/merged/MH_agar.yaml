@@ -3,6 +3,7 @@ name: mh_agar
 original_name: MH agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: ciprofloxacin (if needed)
@@ -36,6 +37,11 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "MH agar" to "mh_agar" for consistent matching
+- timestamp: '2026-08-06T03:05:45.222626+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint ff495111f6b891bf66d4bc16d25e133b3dd833af70e12e55d151a18f7a416482
+  source: mh_agar.yaml
 merge_fingerprint: ff495111f6b891bf66d4bc16d25e133b3dd833af70e12e55d151a18f7a416482
 merged_from:
 - mh_agar

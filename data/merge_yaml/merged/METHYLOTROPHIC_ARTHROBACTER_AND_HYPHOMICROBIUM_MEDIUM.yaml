@@ -3,8 +3,11 @@ name: methylotrophic_arthrobacter_and_hyphomicrobium_medium
 original_name: METHYLOTROPHIC ARTHROBACTER AND HYPHOMICROBIUM MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
-ph_range: 7.2-7.5
+ph_range:
+  min: 7.2
+  max: 7.5
 media_term:
   preferred_term: KOMODO Medium 939
   term:
@@ -20,28 +23,28 @@ ingredients:
   concentration:
     value: '7.9'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4 x 2 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '0.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -50,8 +53,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Methanol
   term:
@@ -60,8 +63,8 @@ ingredients:
   concentration:
     value: '7.92'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000618
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17790
     label: Methanol
 - preferred_term: EDTA
   term:
@@ -70,8 +73,8 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000165
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64755
     label: EDTA
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -80,8 +83,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -90,8 +93,8 @@ ingredients:
   concentration:
     value: '7.34'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -100,8 +103,8 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -110,13 +113,16 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: (NH4)6Mo7O24
   concentration:
     value: '0.5'
     unit: G_PER_L
+  term:
+    id: CHEBI:91249
+    label: ammonium molybdate
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -124,8 +130,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
@@ -134,8 +140,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
     label: CuSO4 x 5 H2O
 applications:
 - Microbial cultivation
@@ -161,7 +167,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "METHYLOTROPHIC ARTHROBACTER AND HYPHOMICROBIUM MEDIUM"
     to "methylotrophic_arthrobacter_and_hyphomicrobium_medium" for consistent matching
-- timestamp: '2026-04-17T06:29:35.129873+00:00'
+- timestamp: '2026-05-20T06:00:55.011084+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.5'' -> {''min'': 7.2, ''max'': 7.5}'
+- timestamp: '2026-06-05T07:40:28.015486+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 12 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:46.467839+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:02.439965+00:00'
   curator: recipe-merger
   action: Merged 6 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_939_METHYLOTROPHIC_ARTHROBACTER_AND_HYPHOMICROBIUM_MEDIUM,
@@ -169,6 +189,26 @@ curation_history:
     methylotrophic_arthrobacter_and_hyphomicrobium_medium_replace_dimethysulfone_with_glucose,
     methylotrophic_arthrobacter_and_hyphomicrobium_medium_replace_dimethysulfone_with_methanol,
     methylotrophic_arthrobacter_and_hyphomicrobium_medium_replace_dimethysulfone_with_methylamine'
+- timestamp: '2026-08-06T03:05:02.440031+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 6 source recipe(s) on fingerprint 3bc547acaff20a94af9b886cf43ff933fa292b1cf7a6219b7be9c9a73f1d572b
+  source: KOMODO_939_METHYLOTROPHIC_ARTHROBACTER_AND_HYPHOMICROBIUM_MEDIUM.yaml, methylotrophic_arthrobacter_and_hyphomicrobium_medium.yaml,
+    methylotrophic_arthrobacter_and_hyphomicrobium_medium_replace_dimethysulfone_with_fructose.yaml,
+    methylotrophic_arthrobacter_and_hyphomicrobium_medium_replace_dimethysulfone_with_glucose.yaml,
+    methylotrophic_arthrobacter_and_hyphomicrobium_medium_replace_dimethysulfone_with_methanol.yaml,
+    methylotrophic_arthrobacter_and_hyphomicrobium_medium_replace_dimethysulfone_wi
+parent_media:
+  path: data/normalized_yaml/bacterial/methylotrophic_arthrobacter_and_hyphomicrobium_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002114
+  name: methylotrophic_arthrobacter_and_hyphomicrobium_medium
+  notes: KOMODO record states DSMZ Medium 939 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 synonyms:
 - name: methylotrophic_arthrobacter_and_hyphomicrobium_medium_replace_dimethysulfone_with_fructose
   source: KOMODO
@@ -195,4 +235,4 @@ merged_from:
 - methylotrophic_arthrobacter_and_hyphomicrobium_medium_replace_dimethysulfone_with_glucose
 - methylotrophic_arthrobacter_and_hyphomicrobium_medium_replace_dimethysulfone_with_methanol
 - methylotrophic_arthrobacter_and_hyphomicrobium_medium_replace_dimethysulfone_with_methylamine
-merge_fingerprint: 1a0eb31ee36ff28cb57644865b4bd47e51b6470f6a8b97b7191e8500281f5061
+merge_fingerprint: 3bc547acaff20a94af9b886cf43ff933fa292b1cf7a6219b7be9c9a73f1d572b

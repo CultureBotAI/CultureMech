@@ -3,6 +3,7 @@ name: halophilic_no_3_medium
 original_name: Halophilic No.3 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: NaCl
   concentration:
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.1'
@@ -38,9 +39,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: MgCl2·6H2O
   concentration:
     value: '20'
@@ -50,9 +51,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: MgCl2·6H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: K2SO4
   concentration:
     value: '5'
@@ -62,9 +63,9 @@ ingredients:
   term:
     id: CHEBI:32036
     label: potassium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001064
-    label: K2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32036
+    label: potassium sulfate
 - preferred_term: Agar (if needed)
   concentration:
     value: '20'
@@ -109,6 +110,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Halophilic No.3 Medium" to "halophilic_no_3_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:41:08.046459+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:59.611247+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:37.344568+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2b7fc2cea531e20b16c6efdc8e704941f19c6666cd2d0eb35519b97519a999bc
+  source: halophilic_no_3_medium.yaml
 high_metal: true
 merge_fingerprint: 2b7fc2cea531e20b16c6efdc8e704941f19c6666cd2d0eb35519b97519a999bc
 merged_from:

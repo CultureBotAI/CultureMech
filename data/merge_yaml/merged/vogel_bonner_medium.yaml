@@ -3,6 +3,7 @@ name: vogel_bonner_medium
 original_name: Vogel-Bonner Medium
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose
@@ -13,8 +14,8 @@ ingredients:
     value: '11.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: L-Tryptophan
   term:
@@ -24,8 +25,8 @@ ingredients:
     value: '0.2'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:trp-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001063
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16828
     label: L-Tryptophan
 - preferred_term: L-Phenylalanine
   term:
@@ -35,8 +36,8 @@ ingredients:
     value: '0.2'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:phe-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000312
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17295
     label: L-Phenylalanine
 - preferred_term: L-Tyrosine
   term:
@@ -46,8 +47,8 @@ ingredients:
     value: '0.2'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:tyr-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000316
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17895
     label: L-Tyrosine
 - preferred_term: L-Proline
   term:
@@ -57,18 +58,24 @@ ingredients:
     value: '0.22'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pro-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000280
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17203
     label: L-Proline
 - preferred_term: Citrate
   concentration:
     value: '9.5'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '57.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -76,8 +83,8 @@ ingredients:
   concentration:
     value: '0.33'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Magnesium sulfate
   term:
@@ -86,8 +93,8 @@ ingredients:
   concentration:
     value: '0.81'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Sodium ammonium phosphate
   concentration:
@@ -122,6 +129,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Vogel-Bonner Medium" to "vogel_bonner_medium" for consistent
     matching
+- timestamp: '2026-06-05T07:41:55.167323+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:02.637267+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 7f6fa6db9a11f58a489dd2e6a9aa3c5fdb409db2867ab0580a9c234e734e0999
+  source: vogel_bonner_medium.yaml
 media_term:
   preferred_term: MediaDB Medium 162
   term:
@@ -133,6 +151,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: f34bc850b4d084855a6bd01f90cacdf2dae4418ceda7af806483870e4f6e7581
+merge_fingerprint: 7f6fa6db9a11f58a489dd2e6a9aa3c5fdb409db2867ab0580a9c234e734e0999
 merged_from:
 - vogel_bonner_medium

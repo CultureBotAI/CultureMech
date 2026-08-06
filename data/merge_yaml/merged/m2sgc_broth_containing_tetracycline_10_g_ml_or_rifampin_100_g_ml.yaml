@@ -3,6 +3,7 @@ name: m2sgc_broth_containing_tetracycline_10_g_ml_or_rifampin_100_g_ml
 original_name: M2SGC broth containing tetracycline (10 μg/ml) or rifampin (100 μg/ml)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Tetracycline
@@ -31,8 +32,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4.7H2O
   concentration:
@@ -43,9 +44,9 @@ ingredients:
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4.7H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: Yeast extract
   concentration:
     value: '0.25'
@@ -60,9 +61,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: KH2PO4
   concentration:
     value: '0.045'
@@ -71,9 +72,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: K2HPO4
   concentration:
@@ -84,9 +85,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Resazurin
   concentration:
     value: '0.1'
@@ -96,8 +97,8 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: NaHCO3
   concentration:
@@ -108,9 +109,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: (NH4)2SO4
   concentration:
     value: '0.09'
@@ -120,9 +121,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: (NH4)2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 - preferred_term: CaCl2
   concentration:
     value: '0.009'
@@ -132,9 +133,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
-    label: CaCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
 - preferred_term: Cellobiose
   concentration:
     value: '0.2'
@@ -144,9 +145,9 @@ ingredients:
   term:
     id: CHEBI:17057
     label: cellobiose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001069
-    label: Cellobiose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17057
+    label: cellobiose
 - preferred_term: Cysteine
   concentration:
     value: '0.1'
@@ -156,8 +157,8 @@ ingredients:
   term:
     id: CHEBI:15356
     label: Cysteine
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001023
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15356
     label: Cysteine
 - preferred_term: Clarified rumen fluid
   concentration:
@@ -173,14 +174,17 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Soluble starch
   concentration:
     value: '0.2'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Undefined component'
+  term:
+    id: CHEBI:28017
+    label: ''
 - preferred_term: Casitone
   concentration:
     value: '1'
@@ -204,9 +208,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.474857'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:05.723002Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -221,6 +225,25 @@ curation_history:
   notes: Normalized name from "M2SGC broth containing tetracycline (10 μg/ml) or rifampin
     (100 μg/ml)" to "m2sgc_broth_containing_tetracycline_10_g_ml_or_rifampin_100_g_ml"
     for consistent matching
-merge_fingerprint: 29ef3c6ac2684f992e27fb62385ab302af79a4dc9a923fc9c964f2112e3227f1
+- timestamp: '2026-05-16T09:03:39.481846+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:11.823443+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 12 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:00.692288+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:40.901035+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2133af473e424d7ceec4736c3a0c9b2342be047a430cee01716da2975fbbb98e
+  source: m2sgc_broth_containing_tetracycline_10_g_ml_or_rifampin_100_g_ml.yaml
+merge_fingerprint: 2133af473e424d7ceec4736c3a0c9b2342be047a430cee01716da2975fbbb98e
 merged_from:
 - m2sgc_broth_containing_tetracycline_10_g_ml_or_rifampin_100_g_ml

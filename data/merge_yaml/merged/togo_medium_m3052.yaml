@@ -3,6 +3,7 @@ name: togo_medium_m3052
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4 7H2O
   concentration:
@@ -37,9 +38,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: KH2PO4
   concentration:
     value: '0.45'
@@ -48,9 +49,9 @@ ingredients:
     compound'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: K2HPO4
   concentration:
@@ -61,9 +62,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: NaCO3
   concentration:
     value: '4'
@@ -73,8 +74,8 @@ ingredients:
   term:
     id: CHEBI:29377
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: NaCO3
 - preferred_term: CaCl2
   concentration:
@@ -85,9 +86,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
-    label: CaCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
 - preferred_term: Haemin
   concentration:
     value: '0.01'
@@ -97,8 +98,8 @@ ingredients:
   term:
     id: CHEBI:50385
     label: Haemin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
     label: Haemin
 - preferred_term: Cysteine
   concentration:
@@ -109,8 +110,8 @@ ingredients:
   term:
     id: CHEBI:15356
     label: Cysteine
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001023
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15356
     label: Cysteine
 - preferred_term: Agar
   concentration:
@@ -120,9 +121,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Casitone
   concentration:
     value: '10'
@@ -195,7 +196,6 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:57.285372'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Cobalamin (1 μg/μL); Added default
     concentration for ingredient: Resazurin (1 mg/L); Added default concentration
@@ -203,6 +203,7 @@ curation_history:
     ingredient: Folic acid (5 μg/μL); Added default concentration for ingredient:
     Pyridoxamine (15 μg/μL); Added default concentration for ingredient: Biotin (1
     μg/μL); Added default concentration for ingredient: Thiamine (0.05 μg/mL)'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:06.950346Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -216,6 +217,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TOGO Medium M3052" to "togo_medium_m3052" for consistent
     matching
+- timestamp: '2026-05-16T09:04:37.274746+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:53.650441+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:14.166077+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:01.400158+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2b31fc560dbb36001de6e6fb3ffd8769aa556e3b290ed86e079a23eb9c5eb619
+  source: togo_medium_m3052.yaml
 merge_fingerprint: 2b31fc560dbb36001de6e6fb3ffd8769aa556e3b290ed86e079a23eb9c5eb619
 merged_from:
 - togo_medium_m3052

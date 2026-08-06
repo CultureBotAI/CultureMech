@@ -3,6 +3,7 @@ name: methylobacterium_thiocyanatum_medium
 original_name: METHYLOBACTERIUM THIOCYANATUM MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 805
@@ -19,8 +20,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000608
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30951
     label: KSCN
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -29,18 +30,18 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: Na2HPO4 x 2 H2O
   term:
@@ -49,8 +50,8 @@ ingredients:
   concentration:
     value: '7.9'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4 x 2 H2O
 - preferred_term: Glucose
   term:
@@ -59,8 +60,8 @@ ingredients:
   concentration:
     value: '4.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -69,8 +70,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: Agar
   term:
@@ -80,8 +81,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -107,10 +108,36 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "METHYLOBACTERIUM THIOCYANATUM MEDIUM" to "methylobacterium_thiocyanatum_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:32.494956+00:00'
+- timestamp: '2026-06-05T07:40:26.585118+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:45.941468+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:59.585976+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_805_METHYLOBACTERIUM_THIOCYANATUM_MEDIUM, methylobacterium_thiocyanatum_medium'
+- timestamp: '2026-08-06T03:04:59.585999+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint fcf5140b76f8d72a5b460548a1d8b950c0722ad61936d414483c0e8b55166851
+  source: KOMODO_805_METHYLOBACTERIUM_THIOCYANATUM_MEDIUM.yaml, methylobacterium_thiocyanatum_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/methylobacterium_thiocyanatum_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001949
+  name: methylobacterium_thiocyanatum_medium
+  notes: KOMODO record states DSMZ Medium 805 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 categories:
 - bacterial
 merged_from:

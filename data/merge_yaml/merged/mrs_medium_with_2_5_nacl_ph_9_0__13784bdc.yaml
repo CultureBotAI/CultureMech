@@ -1,0 +1,106 @@
+id: CultureMech:003279
+name: mrs_medium_with_2_5_nacl_ph_9_0
+original_name: MRS MEDIUM WITH 2.5% NaCl (pH 9.0)
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+ph_value: 9.0
+media_term:
+  preferred_term: JCM Medium J931
+  term:
+    id: mediadive.medium:J931
+    label: MRS MEDIUM WITH 2.5% NaCl (pH 9.0)
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=931'
+ingredients:
+- preferred_term: Lactobacilli MRS broth
+  concentration:
+    value: '55'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 9.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.041473Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J931'
+- timestamp: '2026-03-13T06:19:19.145432Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003279'
+- timestamp: '2026-03-17T06:30:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:33.062951+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MRS MEDIUM WITH 2.5% NaCl (pH 9.0)" to "mrs_medium_with_2_5_nacl_ph_9_0"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:38.517012+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:50.504452+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: mrs_medium_with_10_nacl, mrs_medium_with_2_5_nacl, mrs_medium_with_2_5_nacl_ph_9_0'
+- timestamp: '2026-08-06T03:05:50.504493+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 13784bdcac51e18e3ee128152f6a2c03b9e14bae59f1f4ddda5748c04d1b9d9b
+  source: mrs_medium_with_10_nacl.yaml, mrs_medium_with_2_5_nacl.yaml, mrs_medium_with_2_5_nacl_ph_9_0.yaml
+kg_microbe_match: mediadive.medium:101
+parent_media:
+  path: data/normalized_yaml/bacterial/mrs_medium_with_10_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:002615
+  name: mrs_medium_with_10_nacl
+  notes: MRS NaCl salinity family; reviewed as salinity variants of the 10% NaCl parent
+    within the same source import family.
+variant_relationship: SALINITY_VARIANT
+variant_modifications:
+- NaCl concentration decreased from 100 g/L (10%) to 25 g/L (2.5%) and pH is specified
+  as 9.0; all other parsed ingredient concentrations match the parent.
+synonyms:
+- name: mrs_medium_with_10_nacl
+  source: MediaDive
+  source_id: mediadive.medium:J257
+  original_category: bacterial
+- name: mrs_medium_with_2_5_nacl
+  source: MediaDive
+  source_id: mediadive.medium:J596
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- mrs_medium_with_10_nacl
+- mrs_medium_with_2_5_nacl
+- mrs_medium_with_2_5_nacl_ph_9_0
+merge_fingerprint: 13784bdcac51e18e3ee128152f6a2c03b9e14bae59f1f4ddda5748c04d1b9d9b

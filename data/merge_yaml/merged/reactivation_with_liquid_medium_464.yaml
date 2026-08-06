@@ -3,6 +3,7 @@ name: reactivation_with_liquid_medium_464
 original_name: REACTIVATION WITH LIQUID medium 464
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 464a
@@ -27,8 +28,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000243
+  mediaingredientmech_chebi_term:
+    id: CHEBI:4167
     label: Dextrose
 - preferred_term: Agar
   term:
@@ -37,8 +38,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -64,7 +65,13 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "REACTIVATION WITH LIQUID medium 464" to "reactivation_with_liquid_medium_464"
     for consistent matching
-- timestamp: '2026-04-17T06:29:26.188171+00:00'
+- timestamp: '2026-06-05T07:40:23.632910+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:52.185119+00:00'
   curator: recipe-merger
   action: Merged 14 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_464_PLATE_COUNT_AGAR, KOMODO_464a_REACTIVATION_WITH_LIQUID_medium_464,
@@ -72,7 +79,29 @@ curation_history:
     medium_464_modified_for_dsm_15891, medium_464_modified_for_dsm_17107, medium_464_modified_for_dsm_1986,
     medium_464_modified_for_dsm_2114, medium_464_modified_for_dsm_2117, medium_464_modified_for_dsm_22870,
     medium_464_modified_for_dsm_6824, plate_count_agar, reactivation_with_liquid_medium_464'
+- timestamp: '2026-08-06T03:04:52.185219+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 14 source recipe(s) on fingerprint ed98a9a66a84d866e31eb929cd97796a033e56fd1e0a54dc3c6d3fed1b19ed7f
+  source: KOMODO_464_PLATE_COUNT_AGAR.yaml, KOMODO_464a_REACTIVATION_WITH_LIQUID_medium_464.yaml,
+    medium_464_modified_for_dsm_11199.yaml, medium_464_modified_for_dsm_15726.yaml,
+    medium_464_modified_for_dsm_15727.yaml, medium_464_modified_for_dsm_15891.yaml,
+    medium_464_modified_for_dsm_17107.yaml, medium_464_modified_for_dsm_1986.yaml,
+    medium_464_modified_for_dsm_2114.yaml, medium_464_modified_for_dsm_2117.yaml,
+    medium_464_modified_for_dsm_22870.yaml, medium_464_modified_for_dsm_6824.yaml,
+    plate_count_agar
 ph_value: 7.0
+parent_media:
+  path: data/normalized_yaml/bacterial/reactivation_with_liquid_medium_464.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001584
+  name: reactivation_with_liquid_medium_464
+  notes: KOMODO record states DSMZ Medium 464a provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 synonyms:
 - name: plate_count_agar
   source: KOMODO

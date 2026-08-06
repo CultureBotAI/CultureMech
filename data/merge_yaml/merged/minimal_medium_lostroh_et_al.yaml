@@ -3,6 +3,7 @@ name: minimal_medium_lostroh_et_al
 original_name: Minimal Medium; Lostroh et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Succinate
@@ -13,8 +14,8 @@ ingredients:
     value: '10.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:succ'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000420
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26806
     label: Succinate
 - preferred_term: EDTA
   term:
@@ -23,21 +24,30 @@ ingredients:
   concentration:
     value: '0.008554'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000165
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64755
     label: EDTA
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.603712'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '50.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '50.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -45,8 +55,8 @@ ingredients:
   concentration:
     value: '1.151'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
     label: Nitrilotriacetic acid
 - preferred_term: Magnesium sulfate
   term:
@@ -55,8 +65,8 @@ ingredients:
   concentration:
     value: '4.8186'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
@@ -65,13 +75,16 @@ ingredients:
   concentration:
     value: '0.009111'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.03114'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -79,9 +92,9 @@ ingredients:
   concentration:
     value: '0.038082'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
@@ -89,13 +102,16 @@ ingredients:
   concentration:
     value: '7.5677'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.0015698'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Sodium borate
   concentration:
     value: '0.0004641'
@@ -104,10 +120,16 @@ ingredients:
   concentration:
     value: '0.00016183'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: Cobalt nitrate
   concentration:
     value: '0.000852146'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:86209
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -137,6 +159,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Minimal Medium; Lostroh et al" to "minimal_medium_lostroh_et_al"
     for consistent matching
+- timestamp: '2026-06-05T07:41:34.692221+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:46.369931+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 660d6dbf0484951029f08464d349c628558c9bf2e489b796cd27a499ebe832d9
+  source: minimal_medium_lostroh_et_al.yaml
 media_term:
   preferred_term: MediaDB Medium 32
   term:
@@ -148,6 +181,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: f6e40f09fa07d1792fe5627a5c276cae4284300570ddb59b2cdba66e43721720
+merge_fingerprint: 660d6dbf0484951029f08464d349c628558c9bf2e489b796cd27a499ebe832d9
 merged_from:
 - minimal_medium_lostroh_et_al

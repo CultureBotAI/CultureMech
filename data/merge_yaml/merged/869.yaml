@@ -4,6 +4,7 @@ original_name: '869'
 category: bacterial
 description: 869. NBRC 868.
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Bacto Marine Broth 2216 (Difco)7.5gSodium pyruvate5gAgar (if needed)15gSea
@@ -41,12 +42,21 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007500'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:45.920055'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Bacto Marine Broth 2216 (Difco)7.5gSodium
     pyruvate5gAgar (if needed)15gSea water*800mlDistilled water200mlpH 7.6*Filtered,
     aged seawater or artificial seawater (Daigo''s Artificial Seawater SP**)**Wako
     Pure Chemical Ind., Ltd., Osaka, Japan.'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-05-16T09:03:06.732868+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:05:04.690811+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint dbc30c4aa7188347d2ae0739be89ac9e0fb3eb7a74e9b8da528a59e336e3353f
+  source: NBRC_869.yaml
 merge_fingerprint: dbc30c4aa7188347d2ae0739be89ac9e0fb3eb7a74e9b8da528a59e336e3353f
 merged_from:
 - NBRC_869

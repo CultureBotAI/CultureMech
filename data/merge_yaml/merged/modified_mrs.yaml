@@ -3,6 +3,7 @@ name: modified_mrs
 original_name: Modified-MRS
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4.7H2O
   concentration:
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4.7H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -42,9 +43,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: K2HPO4
   concentration:
@@ -55,9 +56,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: FeSO4.7H2O
   concentration:
     value: '0.034'
@@ -67,15 +68,18 @@ ingredients:
   term:
     id: CHEBI:75836
     label: iron(2+) sulfate heptahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
-    label: FeSO4.7H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: Polysorbate 80
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Surfactant; Properties: Organic compound, Simple component, Defined
     component'
+  term:
+    id: CHEBI:53426
+    label: ''
 - preferred_term: MnSO4.4H2O
   concentration:
     value: '0.12'
@@ -85,9 +89,9 @@ ingredients:
   term:
     id: CHEBI:86358
     label: manganese(II) sulfate tetrahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000711
-    label: MnSO4.4H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86358
+    label: manganese(II) sulfate tetrahydrate
 - preferred_term: Tri-ammonium citrate
   concentration:
     value: '2'
@@ -102,8 +106,8 @@ ingredients:
   term:
     id: CHEBI:32816
     label: Pyruvic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000680
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32816
     label: Pyruvic acid
 - preferred_term: Cysteine-HCl
   concentration:
@@ -137,9 +141,9 @@ ingredients:
   term:
     id: CHEBI:18167
     label: alpha-maltose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000916
-    label: Maltose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18167
+    label: alpha-maltose
 media_term:
   preferred_term: TOGO Medium M2782
   term:
@@ -178,6 +182,21 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "Modified-MRS" to "modified_mrs" for consistent matching
-merge_fingerprint: 93cf4dcecc702decae4f8429feff8dcbb00c65af2f9ab90b71508a797d93b02c
+- timestamp: '2026-06-05T07:41:37.443554+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:08.853773+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:49.196578+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 72e4601be8283759e39b4aa85b205e6465f4d2c49ee2906c4c94f474d41b2721
+  source: modified_mrs.yaml
+merge_fingerprint: 72e4601be8283759e39b4aa85b205e6465f4d2c49ee2906c4c94f474d41b2721
 merged_from:
 - modified_mrs

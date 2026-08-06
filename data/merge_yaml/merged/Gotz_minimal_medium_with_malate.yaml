@@ -3,6 +3,7 @@ name: gotz_minimal_medium_with_malate
 original_name: Gotz minimal medium with malate
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Biotin
@@ -13,8 +14,8 @@ ingredients:
     value: '8.2e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: '''(S'
   concentration:
@@ -29,8 +30,8 @@ ingredients:
     value: '5.3e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: Pyridoxine
   term:
@@ -40,8 +41,8 @@ ingredients:
     value: '0.00012'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pydxn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000317
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16709
     label: Pyridoxine
 - preferred_term: 4-Aminobenzoate
   term:
@@ -51,17 +52,23 @@ ingredients:
     value: '0.00015'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4abz'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001121
-    label: 4-Aminobenzoate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17836
+    label: 4-aminobenzoate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.1'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '6.1'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.01'
@@ -76,9 +83,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -86,13 +93,16 @@ ingredients:
   concentration:
     value: '6.6e-05'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '3.9'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -100,13 +110,16 @@ ingredients:
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.001'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
@@ -114,9 +127,9 @@ ingredients:
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
 - preferred_term: MOPS
   term:
     id: CHEBI:39074
@@ -124,8 +137,8 @@ ingredients:
   concentration:
     value: '40.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000285
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39074
     label: MOPS
 preparation_steps:
 - step_number: 1
@@ -156,6 +169,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Gotz minimal medium with malate" to "gotz_minimal_medium_with_malate"
     for consistent matching
+- timestamp: '2026-06-05T07:41:06.624134+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:36.407293+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 7caaff884eec5ef63ee6156b48c8ba98d15001a9e6da78a048d6c060a04855f6
+  source: gotz_minimal_medium_with_malate.yaml
 media_term:
   preferred_term: MediaDB Medium 224
   term:
@@ -167,6 +191,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 8a86fe0bd280689d23fdd07c57311a66b1ba6733fc8a9b0985ab0217ddbeb371
+merge_fingerprint: 7caaff884eec5ef63ee6156b48c8ba98d15001a9e6da78a048d6c060a04855f6
 merged_from:
 - gotz_minimal_medium_with_malate

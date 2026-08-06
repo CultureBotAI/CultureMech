@@ -3,6 +3,7 @@ name: sucrose_asparagine_medium
 original_name: Sucrose-Asparagine Medium
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
@@ -19,18 +20,18 @@ ingredients:
   concentration:
     value: '0.50505'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '1.0101'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: L-Asparagin
   term:
@@ -39,8 +40,8 @@ ingredients:
   concentration:
     value: '2.0202'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000282
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17196
     label: L-Asparagin
 - preferred_term: Tap water
   term:
@@ -49,8 +50,8 @@ ingredients:
   concentration:
     value: '990'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Tap water
 - preferred_term: Agar
   term:
@@ -60,8 +61,8 @@ ingredients:
     value: '15.1515'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Sucrose
   term:
@@ -70,8 +71,8 @@ ingredients:
   concentration:
     value: '2000'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000661
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17992
     label: Sucrose
 preparation_steps:
 - step_number: 1
@@ -105,6 +106,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Sucrose-Asparagine Medium" to "sucrose_asparagine_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:41:47.226881+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:11.928172+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:56.664365+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint a17b7562b56882f9d3bc35b1bc89c1de94eec38dc6c9a88cf6a5ce856f15f12d
+  source: sucrose_asparagine_medium.yaml
 merge_fingerprint: a17b7562b56882f9d3bc35b1bc89c1de94eec38dc6c9a88cf6a5ce856f15f12d
 merged_from:
 - sucrose_asparagine_medium

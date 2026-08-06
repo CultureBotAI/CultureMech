@@ -1,7 +1,8 @@
 name: pcs_fp_medium_for_thermophilic_cellulose_degradation
 original_name: PCS-FP medium for thermophilic cellulose degradation
 category: bacterial
-medium_type: DEFINED
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 id: CultureMech:015439
 ingredients:
@@ -12,15 +13,16 @@ ingredients:
   term:
     id: CHEBI:18246
     label: cellulose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000114
-    label: Filter paper (cellulose substrate)
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18246
+    label: cellulose
 - preferred_term: Calcium carbonate
   concentration:
     value: '2.0'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000839
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
+    label: calcium carbonate
   term:
     id: CHEBI:3311
     label: calcium carbonate
@@ -36,8 +38,9 @@ ingredients:
   concentration:
     value: '5.0'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000187
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -92,6 +95,27 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "PCS-FP medium for thermophilic cellulose degradation"
     to "pcs_fp_medium_for_thermophilic_cellulose_degradation" for consistent matching
+- timestamp: '2026-05-24T04:38:33.299025+00:00'
+  curator: backfill_source_environment.py
+  action: BACKFILLED_SOURCE_ENVIRONMENT
+  notes: added=1 env(s) from CommunityMech
+  source: CommunityMech (environment_term + culturemech_id linkage)
+- timestamp: '2026-06-05T07:40:29.566713+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:04.723292+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint f1904e52b4c4664ca0a949dd9e149090b9e1a5893f065a4227a4669951511a1f
+  source: PCS_FP_medium_for_thermophilic_cellulose_degradation.yaml
+source_environment:
+- preferred_term: compost
+  term:
+    id: ENVO:00002170
+    label: compost
 merge_fingerprint: f1904e52b4c4664ca0a949dd9e149090b9e1a5893f065a4227a4669951511a1f
 merged_from:
 - PCS_FP_medium_for_thermophilic_cellulose_degradation

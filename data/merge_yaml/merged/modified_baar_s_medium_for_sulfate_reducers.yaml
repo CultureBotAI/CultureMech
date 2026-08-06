@@ -3,6 +3,7 @@ name: modified_baar_s_medium_for_sulfate_reducers
 original_name: Modified Baar’s Medium For Sulfate Reducers
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Component I
@@ -42,17 +43,17 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: CaSO4 x 2H2O
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000275
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32583
     label: CaSO4 x 2H2O
   term:
     id: CHEBI:32583
@@ -66,9 +67,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
 - preferred_term: Sodium Citrate
   concentration:
     value: '5'
@@ -77,9 +78,9 @@ ingredients:
   term:
     id: CHEBI:32142
     label: sodium citrate dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000719
-    label: Sodium Citrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32142
+    label: sodium citrate dihydrate
 - preferred_term: DI Water
   concentration:
     value: '1000.0'
@@ -95,9 +96,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Yeast Extract
   concentration:
     value: '1'
@@ -112,9 +113,9 @@ ingredients:
   term:
     id: CHEBI:75228
     label: sodium lactate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001047
-    label: Sodium Lactate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75228
+    label: sodium lactate
 media_term:
   preferred_term: TOGO Medium M2616
   term:
@@ -135,10 +136,10 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:54.968115'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2; Added default concentration
     for ingredient: H2'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T03:09:18.764637Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -156,6 +157,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Modified Baar’s Medium For Sulfate Reducers" to "modified_baar_s_medium_for_sulfate_reducers"
     for consistent matching
+- timestamp: '2026-05-16T09:04:25.069953+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:36.217418+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:08.527723+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:48.021499+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 619ba5b797a8ceec9694242afe745d3f2d83568cc03a62e0dfea4bb59260bbf1
+  source: modified_baar_s_medium_for_sulfate_reducers.yaml
 merge_fingerprint: 619ba5b797a8ceec9694242afe745d3f2d83568cc03a62e0dfea4bb59260bbf1
 merged_from:
 - modified_baar_s_medium_for_sulfate_reducers

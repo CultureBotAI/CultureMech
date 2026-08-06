@@ -3,6 +3,7 @@ name: bordet_gengou_agar_supplemented_with_15_defibrinated_horse_blood
 original_name: Bordet Gengou agar (supplemented with 15% defibrinated horse blood)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Bordet Gengou agar (Difco)
@@ -28,10 +29,10 @@ curation_history:
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2851'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.689505'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: defibrinated horse blood (TCS
     Biologicals)'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:06.020122Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -42,6 +43,15 @@ curation_history:
   notes: Normalized name from "Bordet Gengou agar (supplemented with 15% defibrinated
     horse blood)" to "bordet_gengou_agar_supplemented_with_15_defibrinated_horse_blood"
     for consistent matching
+- timestamp: '2026-05-16T09:03:26.007994+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:05:25.757897+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 948e1684cb79bce369206c4c36ffd4436cf626de0c89a1767947de678ff75fa3
+  source: bordet_gengou_agar_supplemented_with_15_defibrinated_horse_blood.yaml
 merge_fingerprint: 948e1684cb79bce369206c4c36ffd4436cf626de0c89a1767947de678ff75fa3
 merged_from:
 - bordet_gengou_agar_supplemented_with_15_defibrinated_horse_blood

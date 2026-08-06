@@ -3,6 +3,7 @@ name: anaerobiospirillum_thomasii_medium
 original_name: ANAEROBIOSPIRILLUM THOMASII MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.9
 media_term:
@@ -23,8 +24,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000725
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15887
     label: 5-Aminovaleric acid
 - preferred_term: Fildes Enrichment
   concentration:
@@ -38,8 +39,8 @@ ingredients:
     value: '0.2'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.1, 0.1]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000662
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30764
     label: 3-Hydroxybenzoic acid
 preparation_steps:
 - step_number: 1
@@ -76,6 +77,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ANAEROBIOSPIRILLUM THOMASII MEDIUM" to "anaerobiospirillum_thomasii_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:40:48.976609+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:23.505300+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 8ca22612bc50f2f0ef4269b5db05a5cb8544e45db28b35973f8773d27b6e1516
+  source: anaerobiospirillum_thomasii_medium.yaml
 merge_fingerprint: 8ca22612bc50f2f0ef4269b5db05a5cb8544e45db28b35973f8773d27b6e1516
 merged_from:
 - anaerobiospirillum_thomasii_medium

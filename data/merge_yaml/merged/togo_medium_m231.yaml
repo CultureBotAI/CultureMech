@@ -3,6 +3,7 @@ name: togo_medium_m231
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: distilled water
@@ -14,9 +15,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: K2HPO4
   concentration:
     value: '1'
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Glycerol
   concentration:
     value: '2'
@@ -36,10 +37,10 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
     component'
   term:
-    id: CHEBI:15978
-    label: sn-glycerol 3-phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000588
+    id: CHEBI:17754
+    label: Glycerol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: L--Asparagine
   concentration:
@@ -47,8 +48,11 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000282
+  term:
+    id: CHEBI:17196
+    label: L-Asparagine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17196
     label: L--Asparagine
 - preferred_term: Agar
   concentration:
@@ -58,9 +62,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Polypepton (Nihon Pharm. Co.)
   concentration:
     value: '30'
@@ -98,14 +102,20 @@ ingredients:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000729
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
     label: p--Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: ''
 - preferred_term: Thiamine・HCl
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:49105
+    label: ''
 - preferred_term: Calcium pantothenate
   concentration:
     value: '10'
@@ -114,14 +124,17 @@ ingredients:
   term:
     id: CHEBI:31345
     label: Calcium pantothenate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium pantothenate
 - preferred_term: Pyridoxine・HCl
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine・HCl
 - preferred_term: Riboflavin
   concentration:
     value: '10'
@@ -130,22 +143,28 @@ ingredients:
   term:
     id: CHEBI:17015
     label: riboflavin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
-    label: Riboflavin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
+    label: riboflavin
 - preferred_term: Nicotinate
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:15940
+    label: ''
 - preferred_term: myo--Inositol
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
     component'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000500
+  term:
+    id: CHEBI:17268
+    label: myo-Inositol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17268
     label: myo--Inositol
 - preferred_term: D--Biotin
   concentration:
@@ -191,9 +210,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008907'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:55.074305'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:28.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -203,6 +222,31 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TOGO Medium M231" to "togo_medium_m231" for consistent
     matching
+- timestamp: '2026-05-16T09:04:37.177325+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:53.549796+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:51.717358+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 3 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:47:14.133537+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:01.281338+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint cb7268693015dca48cfa26fd1958d3b599d81940e2eb09cf65241d01f00ee829
+  source: togo_medium_m231.yaml
 solutions:
 - preferred_term: Trace salts solution (see below)
   composition: []
@@ -216,6 +260,6 @@ solutions:
     value: '10'
     unit: G_PER_L
   name: Unknown solution
-merge_fingerprint: 9185367f743b62bb0dd1914588a1efa20817eb9bf821d35572cc5aed57bc7019
+merge_fingerprint: cb7268693015dca48cfa26fd1958d3b599d81940e2eb09cf65241d01f00ee829
 merged_from:
 - togo_medium_m231

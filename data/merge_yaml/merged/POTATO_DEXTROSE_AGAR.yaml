@@ -1,84 +1,100 @@
-id: CultureMech:008982
+id: CultureMech:004047
 name: potato_dextrose_agar
-original_name: Potato-Dextrose Agar
+original_name: POTATO DEXTROSE AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+media_term:
+  preferred_term: KOMODO Medium 129
+  term:
+    id: komodo.medium:129
+    label: POTATO DEXTROSE AGAR
+notes: 'Source: KOMODO ModelSEED | ID: 129 | DSMZ Medium: 129 (mediadive.medium:129)
+  | Aerobic: No'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
 - preferred_term: Glucose
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
   term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
     label: Agar
-- preferred_term: Potato, peeled and cut
+- preferred_term: Potato
   concentration:
     value: '200'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M23
-  term:
-    id: TOGO:M23
-    label: Potato-Dextrose Agar
-notes: 'Source: https://togomedium.org/medium/M23
-
-  Original source: JCM - JCM_M30
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=30'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.664791Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M23'
-- timestamp: '2026-01-28T19:48:06.754959Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:20:01.786949Z'
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 129'
+- timestamp: '2026-02-03T11:19:12.951759'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 129
+- timestamp: '2026-03-13T06:19:24.438572Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:008982'
-- timestamp: '2026-03-17T06:29:38.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:004047'
+- timestamp: '2026-03-17T06:30:36.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:20.529873+00:00'
+- timestamp: '2026-03-17T19:45:39.178986+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Potato-Dextrose Agar" to "potato_dextrose_agar" for
+  notes: Normalized name from "POTATO DEXTROSE AGAR" to "potato_dextrose_agar" for
     consistent matching
-merge_fingerprint: 04581fbba3b82bf5c8ed9e05ff581f63870fe32189dbe81c8ec626841b6ee6b0
+- timestamp: '2026-06-05T07:40:20.702438+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:42.936916+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_129_POTATO_DEXTROSE_AGAR, potato_dextrose_agar, potato_dextrose_agar'
+- timestamp: '2026-08-06T03:04:42.936968+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint f23c3edb0839c9f5690bddc32074c18c5cd4420c6072c8b518febcf6e995d1b8
+  source: KOMODO_129_POTATO_DEXTROSE_AGAR.yaml, potato_dextrose_agar.yaml, potato_dextrose_agar.yaml
+ph_value: 5.6
+parent_media:
+  path: data/normalized_yaml/fungal/potato_dextrose_agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:010445
+  name: potato_dextrose_agar
+  notes: KOMODO record states DSMZ Medium 129 provenance and exactly matches the single
+    DSMZ parent signature; parent is categorized fungal while the KOMODO source duplicate
+    is categorized bacterial.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source. Category differs between source records and should be treated
+  as source metadata, not a formulation difference.
+categories:
+- bacterial
+- fungal
 merged_from:
-- TOGO_M23_Potato-Dextrose_Agar
+- KOMODO_129_POTATO_DEXTROSE_AGAR
+- potato_dextrose_agar
+- potato_dextrose_agar
+merge_fingerprint: f23c3edb0839c9f5690bddc32074c18c5cd4420c6072c8b518febcf6e995d1b8

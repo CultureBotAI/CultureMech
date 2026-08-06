@@ -1,6 +1,7 @@
 id: CultureMech:015641
 name: MS Basal Salts Robin LowPhosphate 0.5x
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Ammonium Nitrate
@@ -113,7 +114,7 @@ ingredients:
 description: Murashige and Skoog Basal Salts Medium from Robin at 0.5X concentration
   with low phosphate - 30uM
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: MS Basal Salts Robin LowPhosphate 0.5x
@@ -127,24 +128,45 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015641'
-- timestamp: '2026-04-17T06:30:30.632171+00:00'
+- timestamp: '2026-05-16T09:04:42.008407+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:06.866493+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: ms_basal_salts_robin, ms_basal_salts_robin_0_5x, ms_basal_salts_robin_lowphosphate_0_5x'
+- timestamp: '2026-08-06T03:06:06.866535+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 63c27f8c666aae907c0e6b352020508e90e3c447334d3d508b91bf6331562008
+  source: ms_basal_salts_robin.yaml, ms_basal_salts_robin_0_5x.yaml, ms_basal_salts_robin_lowphosphate_0_5x.yaml
 data_quality_flags:
 - has_unmapped_ingredients
+parent_media:
+  path: data/normalized_yaml/specialized/ms_basal_salts_robin.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:015639
+  name: MS Basal Salts Robin
+  notes: Both specialized records are MS Basal Salts Robin formulations; the child
+    is explicitly labeled LowPhosphate 0.5x and is a strength/phosphate variant of
+    the parent.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- LowPhosphate 0.5x MS Basal Salts Robin halves most parsed basal salt and trace element
+  concentrations and lowers potassium phosphate monobasic from 1250 uM to 30 uM.
 original_name: MS Basal Salts Robin LowPhosphate 0.5x
 synonyms:
 - name: MS Basal Salts Robin
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 - name: MS Basal Salts Robin 0.5x
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 categories:
-- SPECIALIZED
+- specialized
 merged_from:
 - ms_basal_salts_robin
 - ms_basal_salts_robin_0_5x
 - ms_basal_salts_robin_lowphosphate_0_5x
-merge_fingerprint: 1ac75ddcfd584e1b21ee5f638affca7aaf5ecef7051177e06e6b53e35e89454d
+merge_fingerprint: 63c27f8c666aae907c0e6b352020508e90e3c447334d3d508b91bf6331562008

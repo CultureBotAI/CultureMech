@@ -4,6 +4,7 @@ original_name: Anoxic bicarbonate-buffered basal medium (BBM) with 10 mM sodium 
   and various concentrations of sodium acetate
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sodium acetate
@@ -14,9 +15,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
-    label: Sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: Sodium nitrate
   concentration:
     value: '10'
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:63005
     label: sodium nitrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000388
-    label: Sodium nitrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
+    label: sodium nitrate
 - preferred_term: Bicarbonate-buffered basal medium (BBM)
   concentration:
     value: '1'
@@ -42,8 +43,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: NH4Cl
   concentration:
@@ -54,9 +55,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: KCl
   concentration:
     value: '0.1'
@@ -66,9 +67,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: NaHCO3
   concentration:
     value: '2.52'
@@ -78,9 +79,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: NaH2PO4
   concentration:
     value: '0.6'
@@ -90,9 +91,9 @@ ingredients:
   term:
     id: CHEBI:37585
     label: sodium dihydrogenphosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000393
-    label: NaH2PO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
 - preferred_term: Vitamins
   concentration:
     value: '10'
@@ -109,9 +110,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
-    label: Biotin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
+    label: biotin
 - preferred_term: p-Aminobenzoic acid
   concentration:
     value: '5'
@@ -120,19 +121,19 @@ ingredients:
   term:
     id: CHEBI:30753
     label: 4-aminobenzoic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
-    label: p-Aminobenzoic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
 - preferred_term: Pyridoxine HCl
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000703
+    id: CHEBI:30961
+    label: Pyridoxine HCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
     label: Pyridoxine HCl
 - preferred_term: Folic acid
   concentration:
@@ -142,9 +143,9 @@ ingredients:
   term:
     id: CHEBI:27470
     label: folic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
-    label: Folic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
+    label: folic acid
 - preferred_term: Vitamin B12
   concentration:
     value: '0.1'
@@ -153,9 +154,9 @@ ingredients:
   term:
     id: CHEBI:176843
     label: vitamin B12
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001027
-    label: Vitamin B12
+  mediaingredientmech_chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
 - preferred_term: Riboflavin
   concentration:
     value: '5'
@@ -164,9 +165,9 @@ ingredients:
   term:
     id: CHEBI:17015
     label: riboflavin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
-    label: Riboflavin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
+    label: riboflavin
 - preferred_term: Nicotinic acid
   concentration:
     value: '5'
@@ -175,9 +176,9 @@ ingredients:
   term:
     id: CHEBI:15940
     label: nicotinic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
-    label: Nicotinic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
+    label: nicotinic acid
 - preferred_term: Thiamine
   concentration:
     value: '5'
@@ -197,9 +198,9 @@ ingredients:
   term:
     id: CHEBI:7916
     label: pantothenic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000242
-    label: Pantothenic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:7916
+    label: pantothenic acid
 - preferred_term: Thioctic acid
   concentration:
     value: '5'
@@ -209,9 +210,9 @@ ingredients:
   term:
     id: CHEBI:30314
     label: (R)-lipoic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000817
-    label: Thioctic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30314
+    label: (R)-lipoic acid
 - preferred_term: NaCl
   concentration:
     value: '1'
@@ -221,9 +222,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2.2H2O
   concentration:
     value: '0.1'
@@ -242,9 +243,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: FeSO4.7H2O
   concentration:
     value: '0.1'
@@ -254,9 +255,9 @@ ingredients:
   term:
     id: CHEBI:75836
     label: iron(2+) sulfate heptahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
-    label: FeSO4.7H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: CoCl2.6H2O
   concentration:
     value: '0.1'
@@ -284,9 +285,9 @@ ingredients:
   term:
     id: CHEBI:49976
     label: zinc dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
-    label: ZnCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
+    label: zinc dichloride
 - preferred_term: AlK(SO4)2.12H2O
   concentration:
     value: '0.01'
@@ -305,9 +306,9 @@ ingredients:
   term:
     id: CHEBI:44557
     label: nitrilotriacetic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
-    label: Nitrilotriacetic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
 - preferred_term: Na2WO4.2H2O
   concentration:
     value: '0.025'
@@ -335,9 +336,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
 - preferred_term: CuSO4
   concentration:
     value: '0.01'
@@ -347,9 +348,9 @@ ingredients:
   term:
     id: CHEBI:23414
     label: copper(II) sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000855
-    label: CuSO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:23414
+    label: copper(II) sulfate
 - preferred_term: Na2MoO4
   concentration:
     value: '0.025'
@@ -359,9 +360,9 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000183
-    label: Na2MoO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
 media_term:
   preferred_term: TOGO Medium M2185
   term:
@@ -398,6 +399,28 @@ curation_history:
   notes: Normalized name from "Anoxic bicarbonate-buffered basal medium (BBM) with
     10 mM sodium nitrate and various concentrations of sodium acetate" to "anoxic_bicarbonate_buffered_basal_medium_bbm_with_10_mm_sodium_nitrate_and_various_concentrations_of_sodium_acetate"
     for consistent matching
-merge_fingerprint: c0a6b4fe83ac891dce21ce987fffb9f4705b590b671d6dbc4741b9a7a24d5746
+- timestamp: '2026-06-05T07:40:49.233661+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 24 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:35.691305+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (shared-id regrounding audit, G21/G22/G24)
+  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more
+    ingredient groundings on this record that had been collapsed onto a chemically
+    non-specific or shared CHEBI id were re-grounded to the correct chemically-specific
+    term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
+- timestamp: '2026-06-10T07:46:53.359293+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:23.705587+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint a40783c82450a179f94ebd6a5be626db243c92d305bfd31b1b051cd7d9429a45
+  source: anoxic_bicarbonate_buffered_basal_medium_bbm_with_10_mm_sodium_nitrate_and_various_concentrations_of_sodium_acetate.yaml
+merge_fingerprint: a40783c82450a179f94ebd6a5be626db243c92d305bfd31b1b051cd7d9429a45
 merged_from:
 - anoxic_bicarbonate_buffered_basal_medium_bbm_with_10_mm_sodium_nitrate_and_various_concentrations_of_sodium_acetate

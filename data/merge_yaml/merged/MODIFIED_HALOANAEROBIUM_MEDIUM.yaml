@@ -1,322 +1,208 @@
-id: CultureMech:003121
+id: CultureMech:010221
 name: modified_haloanaerobium_medium
-original_name: MODIFIED HALOANAEROBIUM MEDIUM
+original_name: Modified Haloanaerobium Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 8.0
-media_term:
-  preferred_term: JCM Medium J779
-  term:
-    id: mediadive.medium:J779
-    label: MODIFIED HALOANAEROBIUM MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=779'
 ingredients:
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
+- preferred_term: Distilled water
   concentration:
-    value: '1072.43'
+    value: '26.0'
     unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 1071.43, 1.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: MgSO4 x 7 H2O
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound [Merged 2 duplicates: 1.0, 25.0]'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
+  concentration:
+    value: '8.8'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '128.714'
-    unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 125.714, 3.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: KCl
-  term:
-    id: CHEBI:32588
-    label: KCl
-  concentration:
-    value: '14.2857'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+    label: magnesium sulfate heptahydrate
 - preferred_term: Yeast extract
   concentration:
-    value: '142.857'
+    value: '10'
     unit: G_PER_L
-- preferred_term: Trypticase peptone
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
   concentration:
-    value: '142.857'
+    value: '75'
     unit: G_PER_L
-- preferred_term: Glucose
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
-    id: CHEBI:17234
-    label: Glucose
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: KCl
   concentration:
-    value: '25'
+    value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
-    label: Glucose
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Trypticase peptone (BD-BBL)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: NaOH
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+- preferred_term: N2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: Sodium thioglycolate
-  term:
-    id: CHEBI:86481
-    label: Sodium thioglycolate
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000569
-    label: Sodium thioglycolate
-- preferred_term: Sodium ascorbate
-  term:
-    id: CHEBI:113451
-    label: Sodium ascorbate
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001044
-    label: Sodium ascorbate
-- preferred_term: Biotin
-  term:
-    id: CHEBI:15956
-    label: Biotin
-  concentration:
-    value: '0.002'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
-    label: Biotin
-- preferred_term: Folic acid
-  term:
-    id: CHEBI:27470
-    label: Folic acid
-  concentration:
-    value: '0.002'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
-    label: Folic acid
-- preferred_term: Pyridoxine hydrochloride
-  term:
-    id: CHEBI:30961
-    label: Pyridoxine hydrochloride
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001016
-    label: Pyridoxine hydrochloride
-- preferred_term: Thiamine HCl
-  term:
-    id: CHEBI:49105
-    label: Thiamine HCl
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
-    label: Thiamine HCl
-- preferred_term: Riboflavin
-  term:
-    id: CHEBI:17015
-    label: Riboflavin
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
-    label: Riboflavin
-- preferred_term: Nicotinic acid
-  term:
-    id: CHEBI:15940
-    label: Nicotinic acid
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
-    label: Nicotinic acid
-- preferred_term: Calcium pantothenate
-  term:
-    id: CHEBI:31345
-    label: Calcium pantothenate
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
-    label: Calcium pantothenate
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '0.0001'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
-    label: Vitamin B12
-- preferred_term: p-Aminobenzoic acid
-  term:
-    id: CHEBI:30753
-    label: p-Aminobenzoic acid
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
-    label: p-Aminobenzoic acid
-- preferred_term: Lipoic acid
-  term:
-    id: CHEBI:16494
-    label: Lipoic acid
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000166
-    label: Lipoic acid
-- preferred_term: Nitrilotriacetic acid
-  term:
-    id: CHEBI:44557
-    label: Nitrilotriacetic acid
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
-    label: Nitrilotriacetic acid
-- preferred_term: MnSO4 x n H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
+  notes: 'Properties: Simple component, Defined component, Organic compound'
   term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    id: CHEBI:86481
+    label: sodium thioglycolate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86481
+    label: sodium thioglycolate
+- preferred_term: Sodium ascorbate
   concentration:
-    value: '0.1'
+    value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
-    label: FeSO4 x 7 H2O
-- preferred_term: CoSO4 x 7 H2O
+  notes: 'Properties: Defined component, Simple component, Organic compound'
   term:
-    id: CHEBI:53470
-    label: CoSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000158
-    label: CoSO4 x 7 H2O
-- preferred_term: CaCl2 x 2 H2O
+    id: CHEBI:113451
+    label: sodium ascorbate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:113451
+    label: sodium ascorbate
+media_term:
+  preferred_term: TOGO Medium M809
   term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
-- preferred_term: ZnSO4 x 7 H2O
-  term:
-    id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
-    label: ZnSO4 x 7 H2O
-- preferred_term: CuSO4 x 5 H2O
-  term:
-    id: CHEBI:31440
-    label: CuSO4 x 5 H2O
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
-    label: CuSO4 x 5 H2O
-- preferred_term: AlK(SO4)2
-  term:
-    id: CHEBI:86463
-    label: AlK(SO4)2
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001074
-    label: AlK(SO4)2
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
-- preferred_term: Na2MoO4 x 2 H2O
-  term:
-    id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
-    label: Na2MoO4 x 2 H2O
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: 'Add components to distilled water and bring volume to 1.0 L. Adjust
-    pH 8.0 with NaOH. Autoclave under a N2 atmosphere. After cooling, add anaerobically
-    the following solutions (autoclaved or *filter-sterilized):'
-- step_number: 2
-  action: ADJUST_PH
-  description: Readjust pH to 8.0, if necessary.
-- step_number: 3
-  action: FILTER_STERILIZE
-  description: Prepare just before use. Filter-sterilize.
-- step_number: 4
-  action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+    id: TOGO:M809
+    label: Modified Haloanaerobium Medium
+notes: 'Source: https://togomedium.org/medium/M809
+
+  Original source: JCM - JCM_M779
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=779'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:17.574048Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J779'
-- timestamp: '2026-03-13T03:09:35.640261Z'
+- timestamp: '2026-01-27T06:35:55.757620Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M809'
+- timestamp: '2026-01-28T19:48:29.157392Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH; Added default concentration
+    for ingredient: N2'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-03-09T08:04:48.362147+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 4 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:19.383079Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
-  notes: Merged 2 duplicate ingredient(s)
-- timestamp: '2026-03-13T06:19:17.970087Z'
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:12.222016Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:003121'
-- timestamp: '2026-03-17T06:30:46.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:010221'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:30:27.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:31.762857+00:00'
+- timestamp: '2026-03-17T19:46:31.163011+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MODIFIED HALOANAEROBIUM MEDIUM" to "modified_haloanaerobium_medium"
+  notes: Normalized name from "Modified Haloanaerobium Medium" to "modified_haloanaerobium_medium"
     for consistent matching
-high_metal: true
-merge_fingerprint: 0c2d9e34db8123082afa2576d036f510d490527770b8b22c17a9a0909f40fe79
+- timestamp: '2026-05-16T09:03:21.070047+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:44.655429+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:33.170503+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-08-06T03:05:19.516120+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e4454a19e1f41038e9c6751fd6c1736b8dd876b378a74c5abbde89619b645b55
+  source: TOGO_M809_Modified_Haloanaerobium_Medium.yaml
+solutions:
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: Trace minerals (see Medium [M142])
+  composition: []
+  notes: Cross-reference to Medium M142
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: 10% Glucose solution
+  composition: []
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
+  name: Unknown solution
+- preferred_term: Thioglycolate--ascorbate solution* (see below)
+  composition: []
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: e4454a19e1f41038e9c6751fd6c1736b8dd876b378a74c5abbde89619b645b55
 merged_from:
-- modified_haloanaerobium_medium
+- TOGO_M809_Modified_Haloanaerobium_Medium

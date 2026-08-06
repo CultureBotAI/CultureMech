@@ -3,8 +3,11 @@ name: mycoplasma_acholeplasma_medium_cip_medium_88
 original_name: MYCOPLASMA/ACHOLEPLASMA MEDIUM (CIP MEDIUM 88)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_range: 7.4-7.8
+ph_range:
+  min: 7.4
+  max: 7.8
 media_term:
   preferred_term: DSMZ Medium 1079
   term:
@@ -27,8 +30,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001075
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31991
     label: Phenol red
 - preferred_term: Glucose
   term:
@@ -37,8 +40,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Horse serum
   concentration:
@@ -51,8 +54,8 @@ ingredients:
   concentration:
     value: '4.7619'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000826
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28971
     label: Ampicillin
 preparation_steps:
 - step_number: 1
@@ -82,6 +85,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MYCOPLASMA/ACHOLEPLASMA MEDIUM (CIP MEDIUM 88)" to
     "mycoplasma_acholeplasma_medium_cip_medium_88" for consistent matching
+- timestamp: '2026-05-20T06:02:00.560611+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.4-7.8'' -> {''min'': 7.4, ''max'': 7.8}'
+- timestamp: '2026-06-05T07:41:39.027237+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:50.904663+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 03f6fd2670395e01005a1af4c2198ca20f6119967c03546edfe506406101c201
+  source: mycoplasma_acholeplasma_medium_cip_medium_88.yaml
 merge_fingerprint: 03f6fd2670395e01005a1af4c2198ca20f6119967c03546edfe506406101c201
 merged_from:
 - mycoplasma_acholeplasma_medium_cip_medium_88

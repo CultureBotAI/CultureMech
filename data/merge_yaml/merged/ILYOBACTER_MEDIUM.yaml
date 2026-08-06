@@ -1,318 +1,282 @@
-id: CultureMech:002915
+id: CultureMech:009966
 name: ilyobacter_medium
-original_name: ILYOBACTER MEDIUM
+original_name: Ilyobacter Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 7.0
-media_term:
-  preferred_term: JCM Medium J566
-  term:
-    id: mediadive.medium:J566
-    label: ILYOBACTER MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=566'
 ingredients:
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
+- preferred_term: Distilled water
   concentration:
-    value: '9.90099'
+    value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: KCl
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:32588
-    label: KCl
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
   concentration:
-    value: '0.381188'
+    value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.00990099'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
-- preferred_term: MgSO4 x 7 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '0.247525'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: NH4Cl
-  term:
-    id: CHEBI:31206
-    label: NH4Cl
-  concentration:
-    value: '0.49505'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
-- preferred_term: KNO3
-  term:
-    id: CHEBI:63043
-    label: KNO3
-  concentration:
-    value: '0.49505'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000170
-    label: KNO3
-- preferred_term: KH2PO4 x 2 H2O
-  concentration:
-    value: '0.247525'
-    unit: G_PER_L
+    label: magnesium sulfate heptahydrate
 - preferred_term: Yeast extract
   concentration:
-    value: '0.247525'
+    value: '0.5'
     unit: G_PER_L
-- preferred_term: Peptone
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
   concentration:
-    value: '0.247525'
+    value: '20'
     unit: G_PER_L
-- preferred_term: Sodium acetate
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
-    id: CHEBI:32954
-    label: Sodium acetate
-  concentration:
-    value: '0.049505'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
-    label: Sodium acetate
-- preferred_term: Sodium succinate
-  term:
-    id: CHEBI:63675
-    label: Sodium succinate
-  concentration:
-    value: '0.049505'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001088
-    label: Sodium succinate
-- preferred_term: DL-Sodium malate
-  term:
-    id: CHEBI:91260
-    label: disodium malate
-  concentration:
-    value: '0.049505'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000450
-    label: DL-Sodium malate
-- preferred_term: Sodium pyruvate
-  term:
-    id: CHEBI:50144
-    label: Sodium pyruvate
-  concentration:
-    value: '0.049505'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
-    label: Sodium pyruvate
-- preferred_term: Glucose
-  term:
-    id: CHEBI:17234
-    label: Glucose
-  concentration:
-    value: '0.49505'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
-    label: Glucose
-- preferred_term: L-Cysteine HCl x H2O
-  term:
-    id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
-  concentration:
-    value: '0.148515'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
-    label: L-Cysteine HCl x H2O
-- preferred_term: Resazurin
-  term:
-    id: CHEBI:8806
-    label: Resazurin
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
-    label: Resazurin
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: NiCl2 x 6 H2O
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2・2H2O
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
-    label: NiCl2 x 6 H2O
-- preferred_term: Na2SeO3
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
-    id: CHEBI:48843
-    label: Na2SeO3
+    id: CHEBI:86158
+    label: ''
+- preferred_term: NH4Cl
   concentration:
-    value: '0.001'
+    value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000315
-    label: Na2SeO3
-- preferred_term: Na2WO4 x 2 H2O
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:63939
-    label: Na2WO4 x 2 H2O
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: KCl
   concentration:
-    value: '0.01'
+    value: '0.77'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000309
-    label: Na2WO4 x 2 H2O
-- preferred_term: Biotin
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
-    id: CHEBI:15956
-    label: Biotin
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Sodium acetate
   concentration:
-    value: '0.002'
+    value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
-    label: Biotin
-- preferred_term: Folic acid
+  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
   term:
-    id: CHEBI:27470
-    label: Folic acid
+    id: CHEBI:32954
+    label: sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
+- preferred_term: Sodium pyruvate
   concentration:
-    value: '0.002'
+    value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
-    label: Folic acid
-- preferred_term: Pyridoxine hydrochloride
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
   term:
-    id: CHEBI:30961
-    label: Pyridoxine hydrochloride
+    id: CHEBI:50144
+    label: sodium pyruvate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+- preferred_term: KNO3
   concentration:
-    value: '0.01'
+    value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001016
-    label: Pyridoxine hydrochloride
-- preferred_term: Thiamine HCl
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
-    id: CHEBI:49105
-    label: Thiamine HCl
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
+    id: CHEBI:17632
+    label: nitrate
   mediaingredientmech_term:
-    id: MediaIngredientMech:000770
-    label: Thiamine HCl
-- preferred_term: Riboflavin
+    id: MediaIngredientMech:000170
+    label: KNO3
+- preferred_term: Sodium succinate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Organic compound, Simple component, Defined
+    component'
   term:
-    id: CHEBI:17015
-    label: Riboflavin
+    id: CHEBI:63675
+    label: sodium succinate (anhydrous)
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63675
+    label: sodium succinate (anhydrous)
+- preferred_term: KH2PO4・2H2O
   concentration:
-    value: '0.005'
+    value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
-    label: Riboflavin
-- preferred_term: Nicotinic acid
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
   term:
-    id: CHEBI:15940
-    label: Nicotinic acid
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: L-Cysteine・HCl・H2O
   concentration:
-    value: '0.005'
+    value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
-    label: Nicotinic acid
-- preferred_term: Calcium pantothenate
+  notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
-    id: CHEBI:31345
-    label: Calcium pantothenate
+    id: CHEBI:91248
+    label: ''
+- preferred_term: DL--sodium Malate
   concentration:
-    value: '0.005'
+    value: '0.1'
     unit: G_PER_L
+  notes: 'Properties: Defined component, Simple component, Organic compound'
   mediaingredientmech_term:
-    id: MediaIngredientMech:000926
-    label: Calcium pantothenate
-- preferred_term: Vitamin B12
+    id: MediaIngredientMech:000904
+    label: DL--sodium Malate
+- preferred_term: Peptone
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na2S
+  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
+    Solution'
   term:
-    id: CHEBI:17439
-    label: Vitamin B12
+    id: CHEBI:76208
+    label: sodium sulfide (anhydrous)
   concentration:
-    value: '0.0001'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
-    label: Vitamin B12
-- preferred_term: p-Aminobenzoic acid
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76208
+    label: sodium sulfide (anhydrous)
+- preferred_term: N2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
   term:
-    id: CHEBI:30753
-    label: p-Aminobenzoic acid
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
-    label: p-Aminobenzoic acid
-- preferred_term: Lipoic acid
+    id: CHEBI:17997
+    label: ''
+media_term:
+  preferred_term: TOGO Medium M570
   term:
-    id: CHEBI:16494
-    label: Lipoic acid
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000166
-    label: Lipoic acid
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 7.0.
-- step_number: 2
-  action: POUR_PLATES
-  description: Boil until the volume decreases to 1.0 L and dispense under an atmosphere
-    of N2 into 15 ml Hungate tube. If the medium stays pink (O2 is present), add one
-    drop of 5% Na2S from the sterile stock solution.
+    id: TOGO:M570
+    label: Ilyobacter Medium
+notes: 'Source: https://togomedium.org/medium/M570
+
+  Original source: JCM - JCM_M566
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=566'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:16.952552Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J566'
-- timestamp: '2026-03-13T06:19:16.540472Z'
+- timestamp: '2026-01-27T06:35:55.323814Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M570'
+- timestamp: '2026-01-28T19:48:13.506982Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Na2S; Added default concentration
+    for ingredient: N2'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-03-09T08:04:22.327769+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:10.360872Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002915'
-- timestamp: '2026-03-17T06:30:22.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:009966'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:29:54.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:30.105509+00:00'
+- timestamp: '2026-03-17T19:46:29.290804+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ILYOBACTER MEDIUM" to "ilyobacter_medium" for consistent
+  notes: Normalized name from "Ilyobacter Medium" to "ilyobacter_medium" for consistent
     matching
-merge_fingerprint: 969531871c28f48e1421376540538e9b5bec6cb4ac83ad389b62ceec3e76d6a6
+- timestamp: '2026-05-16T09:03:19.190007+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:42.634988+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:31.539027+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:46:51.043115+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:17.446285+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint c79a66ecd682923760c1d9dddcbe4e7f9862a30e73bb44fdc3f4b7ed434feb1a
+  source: TOGO_M570_Ilyobacter_Medium.yaml
+solutions:
+- preferred_term: Resazurin solution (1%)
+  composition: []
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+  name: Unknown solution
+- preferred_term: Wolfe's mineral solution (see Medium [M257])
+  composition: []
+  notes: Cross-reference to Medium M257
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: c79a66ecd682923760c1d9dddcbe4e7f9862a30e73bb44fdc3f4b7ed434feb1a
 merged_from:
-- ilyobacter_medium
+- TOGO_M570_Ilyobacter_Medium

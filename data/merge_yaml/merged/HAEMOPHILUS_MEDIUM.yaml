@@ -3,6 +3,7 @@ name: haemophilus_medium
 original_name: HAEMOPHILUS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 804
@@ -56,13 +57,9 @@ ingredients:
     and thymine content critical for sulfonamide/trimethoprim testing; Constituent
     of Mueller-Hinton Agar commercial product
   synonyms:
-  - synonym_text:
-      synonym_text: casein hydrolysate
-      synonym_type: EXACT
+  - synonym_text: casein hydrolysate
     synonym_type: EXACT
-  - synonym_text:
-      synonym_text: acid casein hydrolysate
-      synonym_type: EXACT
+  - synonym_text: acid casein hydrolysate
     synonym_type: EXACT
 - preferred_term: Starch
   term:
@@ -115,10 +112,37 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HAEMOPHILUS medium" to "haemophilus_medium" for consistent
     matching
-- timestamp: '2026-04-17T06:29:32.485533+00:00'
+- timestamp: '2026-05-17T07:06:13.752097+00:00'
+  curator: cleanup_residual_errors.py
+  action: CLEANUP_RESIDUAL_ERRORS
+  notes: R01_flatten_synonym_text=2
+- timestamp: '2026-08-06T03:04:59.574449+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_804_HAEMOPHILUS_medium, for_haemophilus_spp, haemophilus_medium'
+- timestamp: '2026-08-06T03:04:59.574480+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint e84080997fdeae4e0af8ddfb08e89439623ad1e54888b497fe92c4bfe0a6a766
+  source: KOMODO_804_HAEMOPHILUS_medium.yaml, for_haemophilus_spp.yaml, haemophilus_medium.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/for_haemophilus_spp.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006521
+  name: for_haemophilus_spp
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/haemophilus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001948
+  name: haemophilus_medium
+  notes: KOMODO record states DSMZ Medium 804 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 synonyms:
 - name: for_haemophilus_spp
   source: KOMODO

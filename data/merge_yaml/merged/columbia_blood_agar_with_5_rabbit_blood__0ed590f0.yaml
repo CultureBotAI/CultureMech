@@ -1,0 +1,191 @@
+id: CultureMech:002933
+name: columbia_blood_agar_with_5_rabbit_blood
+original_name: COLUMBIA BLOOD AGAR WITH 5% RABBIT BLOOD
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J586
+  term:
+    id: mediadive.medium:J586
+    label: COLUMBIA BLOOD AGAR WITH 5% RABBIT BLOOD
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=586'
+ingredients:
+- preferred_term: Pancreatic digest of casein
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  notes: From Columbia Agar Base (for anaerobic use); Peptone source providing amino
+    acids and nitrogen
+  source: Columbia Agar Base (Oxoid CM331 equivalent)
+  term:
+    id: MICRO:0000182
+    label: tryptone
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-05T17:19:48.255021'
+    ontology_source: FOODON
+- preferred_term: Peptic digest of animal tissue
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  notes: From Columbia Agar Base (for anaerobic use); Peptone providing nutrients
+  source: Columbia Agar Base (Oxoid CM331 equivalent)
+  term:
+    id: MICRO:0000178
+    label: peptone
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-05T17:19:48.255038'
+    ontology_source: FOODON
+- preferred_term: Beef extract
+  concentration:
+    value: '3.0'
+    unit: G_PER_L
+  notes: From Columbia Agar Base (for anaerobic use); Provides vitamins, minerals,
+    and growth factors
+  source: Columbia Agar Base (Oxoid CM331 equivalent)
+  term:
+    id: FOODON:03302088
+    label: beef extract
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-05T17:19:48.255040'
+    ontology_source: FOODON
+- preferred_term: Yeast extract
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  notes: From Columbia Agar Base (for anaerobic use); Vitamin and amino acid source
+  source: Columbia Agar Base (Oxoid CM331 equivalent)
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-05T17:19:48.255042'
+    ontology_source: FOODON
+- preferred_term: Corn starch
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  notes: From Columbia Agar Base (for anaerobic use); Detoxifies metabolic byproducts
+  source: Columbia Agar Base (Oxoid CM331 equivalent)
+  term:
+    id: CHEBI:28017
+    label: starch
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-05T17:19:48.255043'
+    ontology_source: CHEBI
+- preferred_term: Sodium chloride
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  notes: From Columbia Agar Base (for anaerobic use); Maintains osmotic balance
+  source: Columbia Agar Base (Oxoid CM331 equivalent)
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-05T17:19:48.255045'
+    ontology_source: CHEBI
+- preferred_term: Agar
+  concentration:
+    value: '13.5'
+    unit: G_PER_L
+  notes: From Columbia Agar Base (for anaerobic use); Solidifying agent
+  source: Columbia Agar Base (Oxoid CM331 equivalent)
+  term:
+    id: CHEBI:2509
+    label: agar
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-05T17:19:48.255047'
+    ontology_source: CHEBI
+- preferred_term: Defibrinated rabbit blood
+  term:
+    id: UBERON:0000178
+    label: blood
+  concentration:
+    value: '5'
+    unit: PERCENT_V_V
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-05T17:19:48.255048'
+    ontology_source: UBERON
+  notes: Added aseptically after autoclaving and cooling to 45-50°C; 5% final concentration
+    for anaerobic cultivation
+  source: Blood additive for anaerobic Columbia Agar
+preparation_steps:
+- step_number: 1
+  action: POUR_PLATES
+  description: Prepare Columbia blood agar base (Oxoid CM331) according to the direction,
+    sterilize and cool to about 45C. Aseptically add 5% (final) sterile defibrinated
+    rabbit blood. Mix and quickly dispense into the sterile test tubes or petri dishes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.009426Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J586'
+- timestamp: '2026-02-03T11:26:55.405221'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:16.655653Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002933'
+- timestamp: '2026-03-17T19:45:30.235462+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "COLUMBIA BLOOD AGAR WITH 5% RABBIT BLOOD" to "columbia_blood_agar_with_5_rabbit_blood"
+    for consistent matching
+- timestamp: '2026-04-04T21:05:16.910188'
+  curator: expand_columbia_blood_agar
+  action: EXPANDED_COMMERCIAL_PRODUCT
+  changes: Replaced placeholder with Oxoid CM331 composition + 5% rabbit blood (8
+    ingredients)
+  source: Oxoid CM331 + blood additive
+  notes: 'Commercial product expansion: Columbia Agar Base (CM331) with rabbit blood'
+- timestamp: '2026-05-16T08:57:26.744513+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(3 entries)
+- timestamp: '2026-08-06T03:05:23.215174+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: anaero_columbia_agar_with_rabbit_blood, columbia_blood_agar_with_5_rabbit_blood'
+- timestamp: '2026-08-06T03:05:23.215208+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 0ed590f0a7fd8f5f7ecfb6e154b3cb73ae069564be3381b3fd62e37a61302cb2
+  source: anaero_columbia_agar_with_rabbit_blood.yaml, columbia_blood_agar_with_5_rabbit_blood.yaml
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- commercial_product
+kg_microbe_match: mediadive.medium:687
+synonyms:
+- name: anaero_columbia_agar_with_rabbit_blood
+  source: MediaDive
+  source_id: mediadive.medium:J690
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- anaero_columbia_agar_with_rabbit_blood
+- columbia_blood_agar_with_5_rabbit_blood
+merge_fingerprint: 0ed590f0a7fd8f5f7ecfb6e154b3cb73ae069564be3381b3fd62e37a61302cb2

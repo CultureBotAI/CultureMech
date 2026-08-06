@@ -3,6 +3,7 @@ name: bcye_alpha_agar
 original_name: BCYE alpha agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 6.9
 media_term:
@@ -41,8 +42,8 @@ ingredients:
   concentration:
     value: '2.04082'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000877
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16810
     label: Na2 alpha-ketoglutarate
 - preferred_term: Agar
   term:
@@ -51,8 +52,8 @@ ingredients:
   concentration:
     value: '30.6122'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: L-Cysteine HCl x H2O
   term:
@@ -61,8 +62,8 @@ ingredients:
   concentration:
     value: '40'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
     label: L-Cysteine HCl x H2O
 - preferred_term: Fe4(PO4)2
   term:
@@ -71,8 +72,8 @@ ingredients:
   concentration:
     value: '25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000760
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132767
     label: Fe4(PO4)2
 preparation_steps:
 - step_number: 1
@@ -143,6 +144,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "BCYE alpha agar" to "bcye_alpha_agar" for consistent
     matching
-merge_fingerprint: c3075b2464dc1eccfaa7e47c62ab6495552f25e0d47c834b5be1faf313117f6c
+- timestamp: '2026-06-05T07:40:50.693311+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:37:34.584569+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:24.929686+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 9ae4195123c025fb8d2fb72fe29177e0a665e2603f0109a2c0683b4377a57203
+  source: bcye_alpha_agar.yaml
+merge_fingerprint: 9ae4195123c025fb8d2fb72fe29177e0a665e2603f0109a2c0683b4377a57203
 merged_from:
 - bcye_alpha_agar

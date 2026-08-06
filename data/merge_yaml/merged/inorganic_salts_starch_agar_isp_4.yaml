@@ -3,6 +3,7 @@ name: inorganic_salts_starch_agar_isp_4
 original_name: Inorganic Salts-Starch Agar (ISP-4)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
@@ -24,8 +25,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
   term:
-    id: CHEBI:32599
-    label: ''
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: NaCl
   concentration:
     value: '1'
@@ -35,9 +36,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: K2HPO4
   concentration:
     value: '1'
@@ -47,9 +48,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: (NH4)2SO4
   concentration:
     value: '2'
@@ -59,9 +60,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: (NH4)2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 - preferred_term: CaCO3
   concentration:
     value: '2'
@@ -71,14 +72,17 @@ ingredients:
   term:
     id: CHEBI:3311
     label: calcium carbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001099
-    label: CaCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
+    label: calcium carbonate
 - preferred_term: Soluble starch
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Undefined component'
+  term:
+    id: CHEBI:28017
+    label: ''
 - preferred_term: Agar
   concentration:
     value: '20'
@@ -87,9 +91,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: FeSO4・7H2O
   concentration:
     value: '0.1'
@@ -151,9 +155,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009900'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:01.377217'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:29:39.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -163,6 +167,31 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Inorganic Salts-Starch Agar (ISP-4)" to "inorganic_salts_starch_agar_isp_4"
     for consistent matching
+- timestamp: '2026-05-16T09:03:18.606777+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:42.037221+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:31.046001+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:46:50.824337+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:16.776868+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 95fa3067a16c76be3201a1d57ca86646228c4888f0fc47cb5f7fd044ab84ba17
+  source: TOGO_M50_Inorganic_Salts-Starch_Agar_ISP-4.yaml
 solutions:
 - preferred_term: Trace salts solution (see below)
   composition: []
@@ -170,6 +199,6 @@ solutions:
     value: '1'
     unit: G_PER_L
   name: Unknown solution
-merge_fingerprint: 23b9447dfa0c3917a14fb0adfc034884df96f97e2027c25a2a26aed0b1718aa4
+merge_fingerprint: 95fa3067a16c76be3201a1d57ca86646228c4888f0fc47cb5f7fd044ab84ba17
 merged_from:
 - TOGO_M50_Inorganic_Salts-Starch_Agar_ISP-4

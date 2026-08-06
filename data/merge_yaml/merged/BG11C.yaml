@@ -1,6 +1,7 @@
 id: CultureMech:015454
 name: BG11C
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sodium nitrate
@@ -124,7 +125,7 @@ ingredients:
     label: ''
 description: For growing cyanobacteria, from Luis
 notes: 'Source: FEBA media definitions'
-category: ALGAE
+category: algae
 sources:
 - database: CultureBotHT
   database_id: BG11C
@@ -138,8 +139,17 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015454'
+- timestamp: '2026-05-16T09:02:56.344566+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:04:19.737542+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d647c01cd59f64debab555bde147708ad26bdc690ea49273f7a845dc87cb0c2c
+  source: bg11c.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: 0afdf18bf6ca90ff989c888b0f361b4cb912bae8c5ec6f22b3f348907b38ab98
+merge_fingerprint: d647c01cd59f64debab555bde147708ad26bdc690ea49273f7a845dc87cb0c2c
 merged_from:
 - bg11c

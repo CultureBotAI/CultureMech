@@ -3,6 +3,7 @@ name: nitrogen_free_sm_medium
 original_name: Nitrogen-free SM medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4.7H2O
   concentration:
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4.7H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: NaCl
   concentration:
     value: '0.1'
@@ -38,9 +39,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: KH2PO4
   concentration:
     value: '0.6'
@@ -49,9 +50,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: K2HPO4
   concentration:
@@ -62,9 +63,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Na2MoO4.2H2O
   concentration:
     value: '0.002'
@@ -74,9 +75,9 @@ ingredients:
   term:
     id: CHEBI:75213
     label: sodium molybdate dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
-    label: Na2MoO4.2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
 - preferred_term: Biotin
   concentration:
     value: '0.1'
@@ -85,9 +86,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
-    label: Biotin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
+    label: biotin
 - preferred_term: CaCl2
   concentration:
     value: '0.02'
@@ -97,9 +98,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
-    label: CaCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
 - preferred_term: MnSO4.H2O
   concentration:
     value: '0.01'
@@ -118,9 +119,9 @@ ingredients:
   term:
     id: CHEBI:32035
     label: potassium hydroxide
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000213
-    label: KOH
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32035
+    label: potassium hydroxide
 - preferred_term: DL-malic acid
   concentration:
     value: '5'
@@ -130,9 +131,9 @@ ingredients:
   term:
     id: CHEBI:6650
     label: malic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000610
-    label: DL-malic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6650
+    label: malic acid
 - preferred_term: Agar
   concentration:
     value: '2'
@@ -141,9 +142,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Fe(III)-EDTA (0.66% [wt/vol] in water)
   concentration:
     value: '10'
@@ -156,9 +157,9 @@ ingredients:
   term:
     id: CHEBI:30729
     label: ethylenediaminetetraacetatoferrate(1-)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000348
-    label: Fe(III)-EDTA
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30729
+    label: ethylenediaminetetraacetatoferrate(1-)
 media_term:
   preferred_term: TOGO Medium M2251
   term:
@@ -193,6 +194,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Nitrogen-free SM medium" to "nitrogen_free_sm_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:41:39.785585+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 12 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:09.589433+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:51.416683+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint a2e618a4a247e2621007aaf3aeed50e5d3065fdcd00c6f1136f690b653b73384
+  source: nitrogen_free_sm_medium.yaml
 merge_fingerprint: a2e618a4a247e2621007aaf3aeed50e5d3065fdcd00c6f1136f690b653b73384
 merged_from:
 - nitrogen_free_sm_medium

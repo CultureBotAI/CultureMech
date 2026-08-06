@@ -1,6 +1,7 @@
 id: CultureMech:015497
 name: BHIS_K3_noGlucose
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Calf brains
@@ -68,7 +69,7 @@ ingredients:
     label: ''
 description: Brain heart infusion salt broth with vitamin K3 and no glucose
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: BHIS_K3_noGlucose
@@ -82,6 +83,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015497'
+- timestamp: '2026-05-16T09:04:40.325506+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:04.830704+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 54214f4936f660783dc743765487dd550936a7fb1a5f77bb38da4f6b637f7fec
+  source: bhis_k3_noglucose.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: 54214f4936f660783dc743765487dd550936a7fb1a5f77bb38da4f6b637f7fec

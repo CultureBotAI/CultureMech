@@ -3,6 +3,7 @@ name: jcm_medium_no_247
 original_name: JCM MEDIUM No. 247
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J247
@@ -22,8 +23,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 preparation_steps:
 - step_number: 1
@@ -49,6 +50,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "JCM MEDIUM No. 247" to "jcm_medium_no_247" for consistent
     matching
+- timestamp: '2026-06-05T07:41:10.018828+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:39.198010+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 90fb18f9a494f16b2135c7e3226cde3a3d486baa41681b1e1a20f24bd5102b6e
+  source: jcm_medium_no_247.yaml
 merge_fingerprint: 90fb18f9a494f16b2135c7e3226cde3a3d486baa41681b1e1a20f24bd5102b6e
 merged_from:
 - jcm_medium_no_247

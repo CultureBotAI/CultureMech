@@ -1,6 +1,7 @@
 id: CultureMech:015476
 name: Fungal growth media mCAFEs v1 noCarbon
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Magnesium Sulfate Heptahydrate
@@ -70,7 +71,7 @@ ingredients:
     label: ''
 description: Growth media for diverse fungi with no carbon
 notes: 'Source: FEBA media definitions'
-category: FUNGAL
+category: fungal
 sources:
 - database: CultureBotHT
   database_id: Fungal growth media mCAFEs v1 noCarbon
@@ -84,6 +85,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015476'
+- timestamp: '2026-05-16T09:04:39.634277+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:03.902564+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 740a4e1262d7398d9ef73962f28770015ff829d3bec88882a4b3af5d673ba124
+  source: fungal_growth_media_mcafes_v1_nocarbon.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: 740a4e1262d7398d9ef73962f28770015ff829d3bec88882a4b3af5d673ba124

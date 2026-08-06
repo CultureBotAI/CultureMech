@@ -4,6 +4,7 @@ original_name: '367'
 category: bacterial
 description: 367. NBRC 366.
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Peptone10gMeat extract10gYeast extract5gGlucose20gTween 801gK2HPO42gSodium
@@ -41,11 +42,20 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007490'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:45.891200'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Peptone10gMeat extract10gYeast
     extract5gGlucose20gTween 801gK2HPO42gSodium acetate5gDiammonium hydrogencitrate2gMgSO4·7H2O0.2gMnSO4·nH2O0.05gDistilled
     water1LAgar (if needed)15gpH 5.5'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-05-16T09:03:06.694710+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:05:04.676649+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 415da4131cbcad746497717a4c0aeaa6bb385c66b7e3bb09082f12fa23959ca3
+  source: NBRC_367.yaml
 merge_fingerprint: 415da4131cbcad746497717a4c0aeaa6bb385c66b7e3bb09082f12fa23959ca3
 merged_from:
 - NBRC_367

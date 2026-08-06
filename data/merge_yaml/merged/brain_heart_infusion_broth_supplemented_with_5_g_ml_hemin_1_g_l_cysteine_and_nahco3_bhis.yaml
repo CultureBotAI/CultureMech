@@ -4,6 +4,7 @@ original_name: Brain heart infusion broth supplemented with 5 μg/ml hemin, 1 g/
   and NaHCO3 (BHIS)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: NaHCO3
@@ -15,9 +16,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: Hemin
   concentration:
     value: '5'
@@ -27,9 +28,9 @@ ingredients:
   term:
     id: CHEBI:50385
     label: hemin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
-    label: Hemin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
+    label: hemin
 - preferred_term: Cysteine
   concentration:
     value: '1'
@@ -39,8 +40,8 @@ ingredients:
   term:
     id: CHEBI:15356
     label: Cysteine
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001023
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15356
     label: Cysteine
 - preferred_term: Calf brains
   term:
@@ -184,6 +185,17 @@ curation_history:
   notes: Normalized name from "Brain heart infusion broth supplemented with 5 μg/ml
     hemin, 1 g/L‐cysteine, and NaHCO3 (BHIS)" to "brain_heart_infusion_broth_supplemented_with_5_g_ml_hemin_1_g_l_cysteine_and_nahco3_bhis"
     for consistent matching
+- timestamp: '2026-06-05T07:40:51.500906+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:25.914258+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d98f33d8cade629bbfad6b8fe4cb0207e08aa38f791b49c04116463298cf80bb
+  source: brain_heart_infusion_broth_supplemented_with_5_g_ml_hemin_1_g_l_cysteine_and_nahco3_bhis.yaml
 merge_fingerprint: d98f33d8cade629bbfad6b8fe4cb0207e08aa38f791b49c04116463298cf80bb
 merged_from:
 - brain_heart_infusion_broth_supplemented_with_5_g_ml_hemin_1_g_l_cysteine_and_nahco3_bhis

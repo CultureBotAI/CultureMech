@@ -1,0 +1,153 @@
+id: CultureMech:004109
+name: veillonella_medium
+original_name: VEILLONELLA medium
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_value: 7.5
+notes: 'pH buffer: K2CO3 | Source: KOMODO ModelSEED | ID: 136 | DSMZ Medium: 136 (mediadive.medium:136)
+  | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 136
+  term:
+    id: komodo.medium:136
+    label: VEILLONELLA medium
+ingredients:
+- preferred_term: Trypticase
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78018
+    label: dodecylphosphocholine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000263
+    label: Trypticase
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Na-(DL)-lactate
+  concentration:
+    value: '7.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:75228
+    label: ''
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75228
+    label: Na-(DL)-lactate
+- preferred_term: Na-thioglycolate
+  term:
+    id: CHEBI:86481
+    label: sodium thioglycolate
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86481
+    label: Na-thioglycolate
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53426
+    label: Tween 80
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: Glucose
+- preferred_term: Putrescine
+  term:
+    id: CHEBI:17148
+    label: Putrescine
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17148
+    label: Putrescine
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: K2CO3
+  notes: Extracted from recipe notes (pH buffer)
+  data_quality_flags:
+  - extracted_from_notes
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131526
+    label: K2CO3
+  term:
+    id: CHEBI:131526
+    label: potassium carbonate
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 136'
+- timestamp: '2026-02-03T11:19:18.862467'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 136
+- timestamp: '2026-03-13T06:19:24.920300Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004109'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: K2CO3'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:30:54.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:39.748679+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "VEILLONELLA medium" to "veillonella_medium" for consistent
+    matching
+- timestamp: '2026-05-16T09:03:01.324608+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:21.051231+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:44.180822+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:43.462818+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 07b613b76ea927f117da53062a47e522c2b246dc4a526ce31c45c948d25566dc
+  source: KOMODO_136_VEILLONELLA_medium.yaml
+merge_fingerprint: 07b613b76ea927f117da53062a47e522c2b246dc4a526ce31c45c948d25566dc
+merged_from:
+- KOMODO_136_VEILLONELLA_medium

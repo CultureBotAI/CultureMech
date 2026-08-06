@@ -3,6 +3,7 @@ name: salinibacter_ruber_medium
 original_name: SALINIBACTER RUBER medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:
@@ -20,8 +21,8 @@ ingredients:
   concentration:
     value: '195'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -30,8 +31,8 @@ ingredients:
   concentration:
     value: '32.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -40,8 +41,8 @@ ingredients:
   concentration:
     value: '50.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -50,8 +51,8 @@ ingredients:
   concentration:
     value: '0.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: KCl
   term:
@@ -60,8 +61,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: NaHCO3
   term:
@@ -70,18 +71,18 @@ ingredients:
   concentration:
     value: '0.16'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: NaBr
   term:
     id: CHEBI:63004
-    label: NaBr
+    label: sodium bromide
   concentration:
     value: '0.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000189
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63004
     label: NaBr
 - preferred_term: Yeast extract
   concentration:
@@ -111,22 +112,49 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "SALINIBACTER RUBER medium" to "salinibacter_ruber_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:15.937634+00:00'
+- timestamp: '2026-06-05T07:40:27.990688+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:46.461762+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:21.524275+00:00'
   curator: recipe-merger
   action: Merged 8 duplicate recipes into canonical record
-  notes: 'Sources: KOMODO_1138_HALOPIGER_medium, KOMODO_936_SALINIBACTER_RUBER_medium,
-    halopiger_medium, salinibacter_ruber_medium, sw_10_medium, sw_20_medium, sw_7_5_medium,
-    halophile_yeast_extract_medium'
+  notes: 'Sources: KOMODO_1138_HALOPIGER_medium, halopiger_medium, KOMODO_936_SALINIBACTER_RUBER_medium,
+    salinibacter_ruber_medium, sw_10_medium, sw_20_medium, sw_7_5_medium, halophile_yeast_extract_medium'
+- timestamp: '2026-08-06T03:04:21.524342+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 8 source recipe(s) on fingerprint c2a2e1ebb7ff1830f5a15ce8f0faa408ab85e9b27f7b1c269be6d0da73e7a74c
+  source: KOMODO_1138_HALOPIGER_medium.yaml, halopiger_medium.yaml, KOMODO_936_SALINIBACTER_RUBER_medium.yaml,
+    salinibacter_ruber_medium.yaml, sw_10_medium.yaml, sw_20_medium.yaml, sw_7_5_medium.yaml,
+    halophile_yeast_extract_medium.yaml
 high_metal: true
+parent_media:
+  path: data/normalized_yaml/bacterial/salinibacter_ruber_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002110
+  name: salinibacter_ruber_medium
+  notes: KOMODO record states DSMZ Medium 936 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 synonyms:
 - name: halopiger_medium
   source: KOMODO
   source_id: komodo.medium:1138
-  original_category: bacterial
+  original_category: archaea
 - name: halopiger_medium
   source: MediaDive
   source_id: mediadive.medium:1138
-  original_category: bacterial
+  original_category: archaea
 - name: sw_10_medium
   source: MediaDive
   source_id: mediadive.medium:J797
@@ -144,12 +172,13 @@ synonyms:
   source_id: mediadive.medium:J546
   original_category: fungal
 categories:
+- archaea
 - bacterial
 - fungal
 merged_from:
 - KOMODO_1138_HALOPIGER_medium
-- KOMODO_936_SALINIBACTER_RUBER_medium
 - halopiger_medium
+- KOMODO_936_SALINIBACTER_RUBER_medium
 - salinibacter_ruber_medium
 - sw_10_medium
 - sw_20_medium

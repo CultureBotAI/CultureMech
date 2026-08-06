@@ -3,6 +3,7 @@ name: marinobacter_medium
 original_name: MARINOBACTER medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.8
 media_term:
@@ -20,18 +21,18 @@ ingredients:
   concentration:
     value: '11.7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgSO4
   term:
     id: CHEBI:32599
-    label: MgSO4
+    label: magnesium sulfate
   concentration:
     value: '7.85'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: MgSO4
 - preferred_term: KCl
   term:
@@ -40,8 +41,8 @@ ingredients:
   concentration:
     value: '0.74'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: Tris
   term:
@@ -50,18 +51,18 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000880
+  mediaingredientmech_chebi_term:
+    id: CHEBI:9754
     label: Tris
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: CaCl2
   term:
@@ -70,8 +71,8 @@ ingredients:
   concentration:
     value: '1.47'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
     label: CaCl2
 - preferred_term: Yeast extract
   concentration:
@@ -105,11 +106,37 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MARINOBACTER medium" to "marinobacter_medium" for consistent
     matching
-- timestamp: '2026-04-17T06:29:35.687305+00:00'
+- timestamp: '2026-06-05T07:40:28.270448+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:46.557053+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:03.113974+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_970_MARINOBACTER_medium, marinobacter_medium'
+- timestamp: '2026-08-06T03:05:03.114011+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 40b777c25c06b5c9653d204211ede167566876a98dff09ee385681ae399e7664
+  source: KOMODO_970_MARINOBACTER_medium.yaml, marinobacter_medium.yaml
 kg_microbe_match: mediadive.medium:970
+parent_media:
+  path: data/normalized_yaml/bacterial/marinobacter_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002152
+  name: marinobacter_medium
+  notes: KOMODO record states DSMZ Medium 970 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 categories:
 - bacterial
 merged_from:

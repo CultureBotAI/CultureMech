@@ -3,6 +3,7 @@ name: merds
 original_name: MErds
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: CCAP Medium C53
@@ -28,8 +29,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4
 - preferred_term: Natural sea water
   concentration:
@@ -38,12 +39,12 @@ ingredients:
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -52,13 +53,13 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: KNO3
   term:
     id: CHEBI:63043
-    label: KNO3
+    label: potassium nitrate
   concentration:
     value: '20'
     unit: G_PER_L
@@ -139,10 +140,10 @@ curation_history:
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C53'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:17.109418'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Soil; Added default concentration
     for ingredient: Soil'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T03:09:15.378114Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -159,6 +160,29 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "MErds" to "merds" for consistent matching
-merge_fingerprint: 49862b1cb8fc44376175f71610eb46a9184a915323dcf91aa13d3a8fa458fa74
+- timestamp: '2026-05-16T09:04:21.200573+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:30.469934+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:37:35.453966+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:47:06.573469+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:44.462220+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 9b902a3318f8c7b2363711a752cf503f36563bd66509ea68ca20581213c44278
+  source: merds.yaml
+merge_fingerprint: 9b902a3318f8c7b2363711a752cf503f36563bd66509ea68ca20581213c44278
 merged_from:
 - merds

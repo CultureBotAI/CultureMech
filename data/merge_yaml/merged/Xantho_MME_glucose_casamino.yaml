@@ -1,6 +1,7 @@
 id: CultureMech:015787
 name: Xantho MME glucose casamino
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Potassium phosphate dibasic
@@ -49,13 +50,10 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 65072-00-6'
 description: Defined media for Xanthomonas with casamino acids
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: Xantho MME glucose casamino
@@ -69,19 +67,34 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015787'
-- timestamp: '2026-04-17T06:30:30.317368+00:00'
+- timestamp: '2026-05-16T09:04:44.002572+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:54.611474+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:06:06.424657+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: mmx_casamino, xantho_mme_glucose_casamino'
+- timestamp: '2026-08-06T03:06:06.424701+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 4e5202f541ed994036ecb55a3bff470718b1df4ebb932024303b005f1970682f
+  source: mmx_casamino.yaml, xantho_mme_glucose_casamino.yaml
 data_quality_flags: []
 original_name: Xantho MME glucose casamino
 synonyms:
 - name: MMX casamino
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 categories:
-- SPECIALIZED
+- specialized
 merged_from:
 - mmx_casamino
 - xantho_mme_glucose_casamino
-merge_fingerprint: bcd48cff6ecbd82f73170fdc07bd6c5fcdb2536904978910bb7f36cd3e4d8016
+merge_fingerprint: 4e5202f541ed994036ecb55a3bff470718b1df4ebb932024303b005f1970682f

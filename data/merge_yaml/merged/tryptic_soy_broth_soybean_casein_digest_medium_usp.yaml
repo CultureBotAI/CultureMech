@@ -3,6 +3,7 @@ name: tryptic_soy_broth_soybean_casein_digest_medium_usp
 original_name: Tryptic Soy Broth (Soybean-Casein Digest Medium, USP)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: DI Water
@@ -164,10 +165,15 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Tryptic Soy Broth (Soybean-Casein Digest Medium, USP)"
     to "tryptic_soy_broth_soybean_casein_digest_medium_usp" for consistent matching
-- timestamp: '2026-04-17T06:30:27.081557+00:00'
+- timestamp: '2026-08-06T03:06:01.849370+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: tryptic_soy_agar_soybean_casein_digest_medium_usp, tryptic_soy_broth_soybean_casein_digest_medium_usp'
+- timestamp: '2026-08-06T03:06:01.849424+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint e5138681093e886af2cde36958fb5b02579a21079ac8be496b2e754e2629f1aa
+  source: tryptic_soy_agar_soybean_casein_digest_medium_usp.yaml, tryptic_soy_broth_soybean_casein_digest_medium_usp.yaml
 synonyms:
 - name: tryptic_soy_agar_soybean_casein_digest_medium_usp
   source: TOGO

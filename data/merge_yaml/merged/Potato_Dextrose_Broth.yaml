@@ -1,6 +1,7 @@
 id: CultureMech:015683
 name: Potato Dextrose Broth
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Infusion from Potatoes
@@ -21,7 +22,7 @@ ingredients:
   notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 50-99-7; MW: 180.16'
 description: Growth media for for yeasts, for bacteria, for molds
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: Potato Dextrose Broth
@@ -35,6 +36,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015683'
+- timestamp: '2026-05-16T09:04:42.715504+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:07.576037+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint c6a5ba6bf42113a4af6289fbad0b2777822ffd1813f7c7748b03b118ae639f34
+  source: potato_dextrose_broth.yaml
 data_quality_flags: []
 kg_microbe_match: mediadive.medium:21
 merge_fingerprint: c6a5ba6bf42113a4af6289fbad0b2777822ffd1813f7c7748b03b118ae639f34

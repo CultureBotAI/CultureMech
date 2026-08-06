@@ -1,126 +1,182 @@
-id: CultureMech:003244
+id: CultureMech:010359
 name: modified_bsk_medium
-original_name: MODIFIED BSK MEDIUM
+original_name: Modified BSK Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 7.2
-media_term:
-  preferred_term: JCM Medium J896
-  term:
-    id: mediadive.medium:J896
-    label: MODIFIED BSK MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=896'
 ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '584'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaHCO3
+  concentration:
+    value: '1.1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+  term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
 - preferred_term: HEPES
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
   term:
     id: CHEBI:46756
     label: HEPES
-  concentration:
-    value: '75'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001034
+  mediaingredientmech_chebi_term:
+    id: CHEBI:46756
     label: HEPES
-- preferred_term: Trisodium citrate x 2 H2O
-  concentration:
-    value: '8.75'
-    unit: G_PER_L
-  term:
-    id: CHEBI:53258
-    label: sodium citrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
-    label: Trisodium citrate x 2 H2O
-- preferred_term: Glucose
-  term:
-    id: CHEBI:17234
-    label: Glucose
-  concentration:
-    value: '62.5'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
-    label: Glucose
-- preferred_term: Sodium pyruvate
-  term:
-    id: CHEBI:50144
-    label: Sodium pyruvate
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
-    label: Sodium pyruvate
 - preferred_term: N-Acetyl-D-glucosamine
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
   term:
-    id: CHEBI:506227
-    label: N-Acetyl-D-glucosamine
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000994
-    label: N-Acetyl-D-glucosamine
-- preferred_term: NaHCO3
-  term:
-    id: CHEBI:32139
-    label: NaHCO3
-  concentration:
-    value: '27.5'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
-- preferred_term: MEM alpha Modification
-  concentration:
-    value: '130'
-    unit: G_PER_L
-- preferred_term: Yeast extract
+    id: CHEBI:8006
+    label: Peptidoglycan(N-acetyl-D-glucosamine)
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8006
+    label: Peptidoglycan(N-acetyl-D-glucosamine)
+- preferred_term: Probumin Universal Grade (Millipore)
   concentration:
     value: '25'
     unit: G_PER_L
-- preferred_term: Probumin Universal Grade
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: TC Yeastolate (BD-Difco)
   concentration:
-    value: '625'
+    value: '1'
     unit: G_PER_L
-- preferred_term: Neopeptone
-  concentration:
-    value: '62.5'
-    unit: G_PER_L
-- preferred_term: Rabbit serum
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Rabbit serum sterile non--hemolyzed young (Pel--Freez code No. 31125)
   concentration:
     value: '40'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: FILTER_STERILIZE
-  description: Adjust pH to 7.2 with NaOH, fill up to 584 ml with distilled water
-    and filter-sterilize with 0.22 ï¿½m PES filter.
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Trisodium citrate・2H2O
+  concentration:
+    value: '0.35'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
+    label: Trisodium citrate・2H2O
+  term:
+    id: CHEBI:53258
+    label: ''
+- preferred_term: Glucose
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: MEM alpha Modification (BioWest)
+  concentration:
+    value: '5.2'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Complex component'
+- preferred_term: Neopeptone (BD-Difco)
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: NaOH
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+media_term:
+  preferred_term: TOGO Medium M937
+  term:
+    id: TOGO:M937
+    label: Modified BSK Medium
+notes: 'Source: https://togomedium.org/medium/M937
+
+  Original source: JCM - JCM_M896
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=896'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:17.930369Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J896'
-- timestamp: '2026-01-28T19:48:13.981814Z'
+- timestamp: '2026-01-27T06:35:55.992376Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M937'
+- timestamp: '2026-01-28T19:48:12.489747Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:19:18.873475Z'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-03-13T06:20:13.253996Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:003244'
-- timestamp: '2026-03-17T06:29:55.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:010359'
+- timestamp: '2026-03-17T06:29:51.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:32.757882+00:00'
+- timestamp: '2026-03-17T19:46:32.232430+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MODIFIED BSK MEDIUM" to "modified_bsk_medium" for consistent
+  notes: Normalized name from "Modified BSK Medium" to "modified_bsk_medium" for consistent
     matching
-merge_fingerprint: 578ddf1c5dc4d077abab5305a14e58b865e4f365713a32d175733313d217470b
+- timestamp: '2026-05-16T09:03:22.154149+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:45.838336+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:20.625753+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2f0347817b6183c19d532f4ad6a0cbb2c8a219c0288d1027134eb5e24ceef9f9
+  source: TOGO_M937_Modified_BSK_Medium.yaml
+merge_fingerprint: 2f0347817b6183c19d532f4ad6a0cbb2c8a219c0288d1027134eb5e24ceef9f9
 merged_from:
-- modified_bsk_medium
+- TOGO_M937_Modified_BSK_Medium

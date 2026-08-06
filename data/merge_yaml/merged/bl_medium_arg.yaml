@@ -3,6 +3,7 @@ name: bl_medium_arg
 original_name: BL Medium + Arg
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: L-Valine
@@ -13,8 +14,8 @@ ingredients:
     value: '2.6'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:val-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000304
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16414
     label: L-Valine
 - preferred_term: Thiamine HCl
   term:
@@ -23,8 +24,8 @@ ingredients:
   concentration:
     value: '0.003'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: L-Arginine
   term:
@@ -34,8 +35,8 @@ ingredients:
     value: '1.1'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:arg-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000289
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16467
     label: L-Arginine
 - preferred_term: Pantothenate
   term:
@@ -45,8 +46,8 @@ ingredients:
     value: '0.002'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pnto-R'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000356
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16454
     label: Pantothenate
 - preferred_term: Sodium chloride
   term:
@@ -55,9 +56,9 @@ ingredients:
   concentration:
     value: '50.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: L-Methionine
   term:
     id: CHEBI:16643
@@ -66,8 +67,8 @@ ingredients:
     value: '0.5'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:met-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000274
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16643
     label: L-Methionine
 - preferred_term: Biotin
   term:
@@ -77,8 +78,8 @@ ingredients:
     value: '0.0004'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: MOPS
   term:
@@ -87,8 +88,8 @@ ingredients:
   concentration:
     value: '190.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000285
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39074
     label: MOPS
 - preferred_term: L-Asparagine
   term:
@@ -98,8 +99,8 @@ ingredients:
     value: '0.8'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:asn-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000282
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17196
     label: L-Asparagine
 - preferred_term: Nicotinamide
   term:
@@ -109,14 +110,17 @@ ingredients:
     value: '0.008'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ncam'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000539
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17154
     label: Nicotinamide
 - preferred_term: L-Glutamate
   concentration:
     value: '21.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glu-L'
+  term:
+    id: CHEBI:16015
+    label: ''
 - preferred_term: L-Glutamine
   term:
     id: CHEBI:18050
@@ -125,8 +129,8 @@ ingredients:
     value: '0.7'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gln-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000220
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18050
     label: L-Glutamine
 - preferred_term: L-Leucine
   term:
@@ -136,8 +140,8 @@ ingredients:
     value: '1.5'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:leu-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000278
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15603
     label: L-Leucine
 - preferred_term: L-Histidine
   term:
@@ -147,8 +151,8 @@ ingredients:
     value: '0.3'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:his-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000272
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15971
     label: L-Histidine
 - preferred_term: Riboflavin
   term:
@@ -158,8 +162,8 @@ ingredients:
     value: '0.0026'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: Tricine
   concentration:
@@ -175,22 +179,31 @@ ingredients:
   concentration:
     value: '15.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
     label: Sodium acetate
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '1.3'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Folate
   concentration:
     value: '0.0023'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:fol'
+  term:
+    id: CHEBI:27470
+    label: ''
 - preferred_term: L-Isoleucine
   term:
     id: CHEBI:17191
@@ -199,17 +212,23 @@ ingredients:
     value: '0.8'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ile-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000294
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17191
     label: L-Isoleucine
 - preferred_term: Pyridoxal HCl
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131529
+    label: ''
 - preferred_term: Cupric sulfate
   concentration:
     value: 1e-05
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Cobalt chloride
   concentration:
     value: 3e-05
@@ -224,13 +243,16 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Manganese chloride
   concentration:
     value: 8e-05
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -238,13 +260,16 @@ ingredients:
   concentration:
     value: '0.0004'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.0005'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -252,8 +277,8 @@ ingredients:
   concentration:
     value: '50.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Potassium sulfate
   concentration:
@@ -266,6 +291,9 @@ ingredients:
   concentration:
     value: 3e-06
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -273,8 +301,8 @@ ingredients:
   concentration:
     value: '9.5'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Zinc sulfate
   term:
@@ -283,9 +311,9 @@ ingredients:
   concentration:
     value: 1e-05
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -319,6 +347,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "BL Medium + Arg" to "bl_medium_arg" for consistent
     matching
+- timestamp: '2026-06-05T07:40:51.046681+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 21 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:25.490749+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 4b52abcb5682d3aef89333de752b8ac46f6dbdf51ffef55a7f7a2d5f6eb0c350
+  source: bl_medium_arg.yaml
 media_term:
   preferred_term: MediaDB Medium 402
   term:
@@ -330,6 +369,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 5ea4ba61e99345fe556377e9dd38df34d472ff0cc4bcc3dd6037aa6ed11535b5
+merge_fingerprint: 4b52abcb5682d3aef89333de752b8ac46f6dbdf51ffef55a7f7a2d5f6eb0c350
 merged_from:
 - bl_medium_arg

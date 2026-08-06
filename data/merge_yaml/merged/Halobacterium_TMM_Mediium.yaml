@@ -1,8 +1,9 @@
 id: CultureMech:010230
 name: halobacterium_tmm_mediium
 original_name: Halobacterium TMM Mediium
-category: bacterial
+category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
@@ -24,8 +25,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
   term:
-    id: CHEBI:32599
-    label: ''
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: NaCl
   concentration:
     value: '200'
@@ -35,9 +36,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: KCl
   concentration:
     value: '2'
@@ -47,9 +48,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: MnCl2・4H2O
   concentration:
     value: '0.36'
@@ -68,9 +69,9 @@ ingredients:
   term:
     id: CHEBI:64220
     label: monosodium glutamate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000432
-    label: Sodium glutamate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64220
+    label: monosodium glutamate
 - preferred_term: Trisodium citrate
   concentration:
     value: '0.3'
@@ -79,9 +80,9 @@ ingredients:
   term:
     id: CHEBI:53258
     label: sodium citrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
-    label: Trisodium citrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
+    label: sodium citrate
 - preferred_term: Agar, Noble (BD-Difco)
   concentration:
     value: '20'
@@ -140,7 +141,24 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Halobacterium TMM Mediium" to "halobacterium_tmm_mediium"
     for consistent matching
+- timestamp: '2026-06-05T07:40:44.748989+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:33.245206+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-08-06T03:04:27.750156+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 5ad4784d3ba3bd5cc4f7a9834268e8b5dada5a552f2090c6c995090f07a2d896
+  source: TOGO_M818_Halobacterium_TMM_Mediium.yaml
 high_metal: true
-merge_fingerprint: 2099b8b39460e36b84a217aff175e2545dd7949068f9e3714082345ff4e1c586
+merge_fingerprint: 5ad4784d3ba3bd5cc4f7a9834268e8b5dada5a552f2090c6c995090f07a2d896
 merged_from:
 - TOGO_M818_Halobacterium_TMM_Mediium

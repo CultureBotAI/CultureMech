@@ -1,0 +1,297 @@
+id: CultureMech:001425
+name: treponema_saccharophilum_medium
+original_name: TREPONEMA SACCHAROPHILUM MEDIUM
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 323
+  term:
+    id: mediadive.medium:323
+    label: TREPONEMA SACCHAROPHILUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium323.pdf
+
+
+  Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
+
+  Supplier: Multiple suppliers (Difco, Sigma, etc.)
+
+  Catalog: Multiple (L3522 Sigma, 244520 BD)
+
+  Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
+ingredients:
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.11976'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.189621'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  concentration:
+    value: '0.449102'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  concentration:
+    value: '0.449102'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: K2HPO4
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.898204'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  concentration:
+    value: '0.898204'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.99601'
+    unit: G_PER_L
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '1.99601'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000499002'
+    unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.998004'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  concentration:
+    value: '2.49501'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: Na2CO3
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '1.99601'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
+    label: D-Glucose
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '11.976'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+- preferred_term: n-Butyric acid
+  term:
+    id: CHEBI:30772
+    label: n-Butyric acid
+  concentration:
+    value: '5.8'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30772
+    label: n-Butyric acid
+- preferred_term: iso-Butyric acid
+  term:
+    id: CHEBI:16135
+    label: iso-Butyric acid
+  concentration:
+    value: '275.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16135
+    label: iso-Butyric acid
+- preferred_term: Tryptone
+  term:
+    id: MICRO:0000182
+    label: tryptone
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
+    catalog_number: Multiple (L3522 Sigma, 244520 BD)
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
+    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
+  synonyms:
+  - synonym_text: pancreatic digest of casein
+    synonym_type: EXACT
+  - synonym_text: casein peptone
+    synonym_type: EXACT
+- preferred_term: Yeast extract
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
+    catalog_number: Multiple (L3522 Sigma, 244520 BD)
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
+    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
+    product
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
+    catalog_number: Multiple (L3522 Sigma, 244520 BD)
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
+    (Luria-Bertani, Miller formulation) commercial product
+  synonyms:
+  - synonym_text: NaCl
+    synonym_type: EXACT
+  - synonym_text: table salt
+    synonym_type: EXACT
+- preferred_term: n-Valeric acid
+  term:
+    id: CHEBI:17418
+    label: n-Valeric acid
+  concentration:
+    value: '131.46'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17418
+    label: n-Valeric acid
+- preferred_term: iso-Valeric acid
+  term:
+    id: CHEBI:28484
+    label: iso-Valeric acid
+  concentration:
+    value: '130.34'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000378
+    label: iso-Valeric acid
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (except cysteine, carbonate and glucose), adjust
+    pH to 7.0 and sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic.
+    Add the cysteine and carbonate, then equilibrate the medium with the CO2 gas to
+    pH 7.0. Distribute medium under same gas atmosphere into anoxic Hungate-type tubes
+    or serum vials and autoclave. Thereafter, add glucose from an anoxic stock solution
+    prepared under 100% N2 gas atmosphere and sterilized by filtration. Adjust pH
+    of complete medium to 7.0, if necessary.
+- step_number: 2
+  action: MIX
+  description: For solid medium add 12.00 g/l agar (BD Bacto).
+- step_number: 3
+  action: HEAT
+  description: Store fatty acid mixture at -20°C.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI,
+    0 de-grounded (mixture or unverifiable).
+- timestamp: '2026-01-26T17:53:10.797459Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 323'
+- timestamp: '2026-03-13T06:19:04.043943Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001425'
+- timestamp: '2026-03-17T06:30:15.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:16.027717+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "TREPONEMA SACCHAROPHILUM MEDIUM" to "treponema_saccharophilum_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:54.134476+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 13 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:14.296008+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:01.751355+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint ad64b847845a3fdda4bbb4898880324107f4be941b6d2787b5837012f9c05cde
+  source: treponema_saccharophilum_medium.yaml
+merge_fingerprint: ad64b847845a3fdda4bbb4898880324107f4be941b6d2787b5837012f9c05cde
+merged_from:
+- treponema_saccharophilum_medium

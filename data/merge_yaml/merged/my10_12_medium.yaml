@@ -3,6 +3,7 @@ name: my10_12_medium
 original_name: MY10-12 medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 982
@@ -27,8 +28,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Glucose
   term:
@@ -37,8 +38,8 @@ ingredients:
   concentration:
     value: '120'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Agar
   term:
@@ -47,8 +48,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -74,11 +75,34 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MY10-12 medium" to "my10_12_medium" for consistent
     matching
-- timestamp: '2026-04-17T06:29:35.849323+00:00'
+- timestamp: '2026-06-05T07:40:28.388291+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:03.307507+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_982_MY10-12_medium, isp_2_medium_with_10_nacl, modified_isp2_medium,
     my10_12_medium'
+- timestamp: '2026-08-06T03:05:03.307566+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 4 source recipe(s) on fingerprint c46d1dfdff4ef8bf4dc4f9f0becb62ba5da290b80ccc0b318d59aebe22f0e9c4
+  source: KOMODO_982_MY10-12_medium.yaml, isp_2_medium_with_10_nacl.yaml, modified_isp2_medium.yaml,
+    my10_12_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/my10_12_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002164
+  name: my10_12_medium
+  notes: KOMODO record states DSMZ Medium 982 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 synonyms:
 - name: isp_2_medium_with_10_nacl
   source: MediaDive

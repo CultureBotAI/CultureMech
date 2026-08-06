@@ -1,186 +1,256 @@
-id: CultureMech:002507
+id: CultureMech:007946
 name: tetramethyl_ammonium_medium
-original_name: TETRAMETHYL AMMONIUM MEDIUM
+original_name: Tetramethyl Ammonium Medium
 category: bacterial
-medium_type: DEFINED
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-media_term:
-  preferred_term: JCM Medium J149
-  term:
-    id: mediadive.medium:J149
-    label: TETRAMETHYL AMMONIUM MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=149'
 ingredients:
+- preferred_term: Thiamine・HCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:49105
+    label: ''
 - preferred_term: Tetramethyl ammonium
   concentration:
     value: '1'
     unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:46020
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001094
+  mediaingredientmech_chebi_term:
+    id: CHEBI:46020
     label: Tetramethyl ammonium
-- preferred_term: Thiamine HCl
-  term:
-    id: CHEBI:49105
-    label: Thiamine HCl
-  concentration:
-    value: '0.0005'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
-    label: Thiamine HCl
 - preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: Agar
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
-- preferred_term: Na2HPO4-KH2PO4 buffer
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Standard mineral base (see below)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: 1 M Na2HPO4--KH2PO4 buffer (pH 6.8)
   concentration:
     value: '40'
     unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Complex component'
+- preferred_term: Distilled water
+  concentration:
+    value: '952.0'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component [Merged 3 duplicates: 1.0, 950.0, 1.0]'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: (NH4)2SO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+- preferred_term: Hutner's vitamin free mineral base (see below)
   concentration:
-    value: '0.943396'
+    value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: (NH4)2SO4
-- preferred_term: Nitrilotriacetic acid
-  term:
-    id: CHEBI:44557
-    label: Nitrilotriacetic acid
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
-    label: Nitrilotriacetic acid
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+- preferred_term: MgSO4・7H2O
   concentration:
     value: '14.45'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: CaCl2 x 2 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: CaCl2・2H2O
   concentration:
     value: '3.335'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
-- preferred_term: (NH4)6Mo7O24 x 4 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
+- preferred_term: FeSO4・7H2O
   concentration:
-    value: '0.00925'
+    value: '599.0'
     unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component [Merged 2 duplicates: 99.0, 500.0]'
   term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: ''
+- preferred_term: Nitrilotriacetic acid
   concentration:
-    value: '0.599'
+    value: '10'
     unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 0.099, 0.5]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
-    label: FeSO4 x 7 H2O
-- preferred_term: Na2-EDTA
+  notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
+    component'
   term:
-    id: CHEBI:64734
-    label: Na2-EDTA
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+- preferred_term: (NH4)6Mo7O24・4H2O
   concentration:
-    value: '0.25'
+    value: '9.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
-    label: Na2-EDTA
-- preferred_term: ZnSO4 x 7 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:91249
+    label: ammonium molybdate
+- preferred_term: KOH
+  concentration:
+    value: '7.3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+- preferred_term: Metals ''44'' (see below)
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: ZnSO4・7H2O
+  concentration:
+    value: '1095'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
+    label: ''
+- preferred_term: CuSO4・5H2O
   concentration:
-    value: '1.095'
+    value: '39.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
-    label: ZnSO4 x 7 H2O
-- preferred_term: MnSO4 x n H2O
-  concentration:
-    value: '0.154'
-    unit: G_PER_L
-- preferred_term: CuSO4 x 5 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:31440
-    label: CuSO4 x 5 H2O
+    label: ''
+- preferred_term: MnSO4・xH2O
   concentration:
-    value: '0.0392'
+    value: '154'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
-    label: CuSO4 x 5 H2O
-- preferred_term: Co(NO3)2 x 6 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86360
+    label: ''
+- preferred_term: Co(NO3)2・6H2O
+  concentration:
+    value: '24.8'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:86214
-    label: Co(NO3)2 x 6 H2O
+    label: ''
+- preferred_term: Na2B4O7・10H2O
   concentration:
-    value: '0.0248'
+    value: '17.7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000525
-    label: Co(NO3)2 x 6 H2O
-- preferred_term: Na2B4O7 x 10 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:131366
+    label: ''
+- preferred_term: EDTA・2Na
   concentration:
-    value: '0.0177'
+    value: '250'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: DISSOLVE
-  description: After nitrilotriacetic acid is dissolved in distilled water and neutralized
-    with ca. 7.3 g of KOH, add the remaining salts.
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:64734
+    label: ''
+media_term:
+  preferred_term: TOGO Medium M140
+  term:
+    id: TOGO:M140
+    label: Tetramethyl Ammonium Medium
+notes: 'Source: https://togomedium.org/medium/M140
+
+  Original source: JCM - JCM_M149
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=149'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:15.822131Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J149'
-- timestamp: '2026-01-28T19:48:15.897864Z'
+- timestamp: '2026-01-27T06:35:54.494985Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M140'
+- timestamp: '2026-01-28T19:48:21.861079Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T03:08:54.754800Z'
+- timestamp: '2026-03-13T03:09:05.932657Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
-  notes: Merged 1 duplicate ingredient(s)
-- timestamp: '2026-03-13T06:19:13.878064Z'
+  notes: Merged 3 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:52.677771Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002507'
-- timestamp: '2026-03-17T06:29:59.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:007946'
+- timestamp: '2026-03-17T06:30:12.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:27.048697+00:00'
+- timestamp: '2026-03-17T19:46:11.145206+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TETRAMETHYL AMMONIUM MEDIUM" to "tetramethyl_ammonium_medium"
+  notes: Normalized name from "Tetramethyl Ammonium Medium" to "tetramethyl_ammonium_medium"
     for consistent matching
-merge_fingerprint: 52b7c8eb810e4b3ad184f7fcca04ec991ac597b96eb83c53e82138a69687eb68
+- timestamp: '2026-06-05T07:40:33.052462+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:23.262412+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:46:47.811118+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:08.731217+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint cb2f613a5878c7c5fd28e9d03a22f0e02ff87533a9bf635bb0423c14d44b629b
+  source: TOGO_M140_Tetramethyl_Ammonium_Medium.yaml
+high_metal: true
+merge_fingerprint: cb2f613a5878c7c5fd28e9d03a22f0e02ff87533a9bf635bb0423c14d44b629b
 merged_from:
-- tetramethyl_ammonium_medium
+- TOGO_M140_Tetramethyl_Ammonium_Medium

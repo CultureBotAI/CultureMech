@@ -3,6 +3,7 @@ name: methylophaga_medium_1403
 original_name: Methylophaga Medium 1403
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: methanol
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:17790
     label: methanol
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000618
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17790
     label: methanol
 - preferred_term: Distilled water
   concentration:
@@ -26,8 +27,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4 x 7 H2O
   concentration:
@@ -36,11 +37,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4 x 7 H2O
 - preferred_term: NaCl
   concentration:
     value: '24.1'
@@ -50,9 +51,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: MgCl2 x 6 H2O
   concentration:
     value: '3'
@@ -62,9 +63,9 @@ ingredients:
   term:
     id: CHEBI:6636
     label: magnesium dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000663
-    label: MgCl2 x 6 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
 - preferred_term: KCl
   concentration:
     value: '0.5'
@@ -74,9 +75,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: CaCl2
   concentration:
     value: '11.0'
@@ -86,9 +87,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
-    label: CaCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
 - preferred_term: Bis-Tris
   concentration:
     value: '10.5'
@@ -97,8 +98,8 @@ ingredients:
   term:
     id: CHEBI:41250
     label: Bis-Tris
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000635
+  mediaingredientmech_chebi_term:
+    id: CHEBI:41250
     label: Bis-Tris
 - preferred_term: KH2PO4
   concentration:
@@ -108,9 +109,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
@@ -121,9 +122,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: Ferric ammonium citrate
   concentration:
     value: '0.3'
@@ -133,9 +134,9 @@ ingredients:
   term:
     id: CHEBI:31604
     label: ferric ammonium citrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000541
-    label: Ferric ammonium citrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
 - preferred_term: Nitrilotriacetic acid
   concentration:
     value: '0.15'
@@ -145,9 +146,9 @@ ingredients:
   term:
     id: CHEBI:44557
     label: nitrilotriacetic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
-    label: Nitrilotriacetic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
 - preferred_term: AlK(SO4)2
   concentration:
     value: '1'
@@ -157,9 +158,9 @@ ingredients:
   term:
     id: CHEBI:86463
     label: potassium aluminium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001074
-    label: AlK(SO4)2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86463
+    label: potassium aluminium sulfate
 - preferred_term: MgSO4
   concentration:
     value: '0.3'
@@ -169,9 +170,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
 - preferred_term: CuSO4
   concentration:
     value: '1'
@@ -181,9 +182,9 @@ ingredients:
   term:
     id: CHEBI:23414
     label: copper(II) sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000855
-    label: CuSO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:23414
+    label: copper(II) sulfate
 - preferred_term: CoCl2
   concentration:
     value: '10'
@@ -193,9 +194,9 @@ ingredients:
   term:
     id: CHEBI:35696
     label: cobalt dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
-    label: CoCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
 - preferred_term: FeSO4
   concentration:
     value: '10'
@@ -205,9 +206,9 @@ ingredients:
   term:
     id: CHEBI:75832
     label: iron(2+) sulfate (anhydrous)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001045
-    label: FeSO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75832
+    label: iron(2+) sulfate (anhydrous)
 - preferred_term: Na2MoO4
   concentration:
     value: '1'
@@ -217,9 +218,9 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000183
-    label: Na2MoO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
 - preferred_term: MnSO4
   concentration:
     value: '5'
@@ -229,9 +230,9 @@ ingredients:
   term:
     id: CHEBI:86360
     label: manganese(II) sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000605
-    label: MnSO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86360
+    label: manganese(II) sulfate
 - preferred_term: ZnSO4
   concentration:
     value: '10'
@@ -241,9 +242,9 @@ ingredients:
   term:
     id: CHEBI:35176
     label: zinc sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: ZnSO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: zinc sulfate
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
   term:
@@ -252,9 +253,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000213
-    label: KOH
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32035
+    label: potassium hydroxide
 media_term:
   preferred_term: TOGO Medium M2461
   term:
@@ -275,9 +276,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:53.844039'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: KOH'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:04:36.005367+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -291,10 +292,10 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009040'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:55.752493'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name; Added default solution
     name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:11.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -304,6 +305,31 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Methylophaga Medium 1403" to "methylophaga_medium_1403"
     for consistent matching
+- timestamp: '2026-05-16T09:04:23.121702+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:41:33.299492+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 21 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:58:23.855645+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:47:07.624017+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 6 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:45.019893+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 9ac00db19b99caec2a122f0d30dce97986d9e8e11ee6a8ceb49405be4d1e63b5
+  source: methylophaga_medium_1403.yaml
 solutions:
 - preferred_term: vitamin B12 solution
   term:
@@ -338,6 +364,6 @@ solutions:
     value: '10'
     unit: G_PER_L
   name: Unknown solution
-merge_fingerprint: 44c99d9ee45ed746c6af2b31493a9b384a30b1e8b104d668cc50dd916eb720b5
+merge_fingerprint: 9ac00db19b99caec2a122f0d30dce97986d9e8e11ee6a8ceb49405be4d1e63b5
 merged_from:
 - methylophaga_medium_1403

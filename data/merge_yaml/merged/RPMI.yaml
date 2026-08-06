@@ -1,6 +1,7 @@
 id: CultureMech:015731
 name: RPMI
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Glycine
@@ -221,8 +222,8 @@ ingredients:
     value: '1'
     unit: MG_PER_L
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: Pyridoxine HCl
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-56-0; MW: 205.64'
 - preferred_term: Riboflavin
   concentration:
@@ -325,7 +326,7 @@ ingredients:
     unit: MG_PER_L
 description: RPMI 1640 Medium
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: RPMI
@@ -339,8 +340,23 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015731'
+- timestamp: '2026-05-16T09:04:43.225056+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:54.012186+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:06:08.187447+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint c0b329f2ec32a486a1202672e77e65c7290c3c69b546576ff0111602155bf6bc
+  source: rpmi.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: 02db420625cbb2003072f9684736416fbe56b39f844f35635e881fdcf0d88f09
+merge_fingerprint: c0b329f2ec32a486a1202672e77e65c7290c3c69b546576ff0111602155bf6bc
 merged_from:
 - rpmi

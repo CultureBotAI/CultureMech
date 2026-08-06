@@ -3,6 +3,7 @@ name: modified_pygsw_agar
 original_name: Modified PYGSW Agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Yeast extract
@@ -24,9 +25,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -35,9 +36,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Peptone
   concentration:
     value: '1.25'
@@ -76,6 +77,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Modified PYGSW Agar" to "modified_pygsw_agar" for consistent
     matching
+- timestamp: '2026-06-05T07:41:37.658320+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:49.691116+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 50b115c2b68f501616b9b7d76fedc593a778e37e133b93e817bf7a222d1250c9
+  source: modified_pygsw_agar.yaml
 kg_microbe_match: mediadive.medium:7
 merge_fingerprint: 50b115c2b68f501616b9b7d76fedc593a778e37e133b93e817bf7a222d1250c9
 merged_from:

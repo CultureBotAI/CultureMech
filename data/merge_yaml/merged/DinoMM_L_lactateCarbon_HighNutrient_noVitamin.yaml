@@ -1,6 +1,7 @@
 id: CultureMech:015458
 name: DinoMM L lactateCarbon HighNutrient noVitamin
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sea salts
@@ -158,7 +159,7 @@ ingredients:
 description: Minimal media for marine bacteria with Sodium L-Lactate as the carbon
   source and no vitamins
 notes: 'Source: FEBA media definitions'
-category: BACTERIAL
+category: bacterial
 sources:
 - database: CultureBotHT
   database_id: DinoMM L lactateCarbon HighNutrient noVitamin
@@ -172,8 +173,17 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015458'
+- timestamp: '2026-05-16T09:03:30.819790+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:05:32.876850+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e273ff9b83991a762e7b42101ac5124b61058f5b6cc8bb1d47cf6965b3b0a59b
+  source: dinomm_l_lactatecarbon_highnutrient_novitamin.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: ad2641c6791638216229b04a1d2a2a55a215f4a54c9293913e2e965d18dc4b11
+merge_fingerprint: e273ff9b83991a762e7b42101ac5124b61058f5b6cc8bb1d47cf6965b3b0a59b
 merged_from:
 - dinomm_l_lactatecarbon_highnutrient_novitamin

@@ -1,8 +1,9 @@
-id: CultureMech:009638
+id: CultureMech:009639
 name: defined_minimal_medium
 original_name: Defined minimal medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,35 +15,35 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: KH2PO4
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NH4Cl
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
-    Inorganic compound'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:31206
     label: ammonium chloride
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: NaNO3
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
+  notes: 'Role: Nitrogen source; Properties: Simple component, Defined component,
     Inorganic compound'
   term:
     id: CHEBI:63005
@@ -50,11 +51,11 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000388
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
     label: NaNO3
 - preferred_term: Na2HPO4
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+  notes: 'Role: Buffer; Properties: Simple component, Defined component, Inorganic
     compound'
   term:
     id: CHEBI:34683
@@ -62,9 +63,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
-    label: Na2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
 - preferred_term: Sodium Succinate
   notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
     compound'
@@ -74,33 +75,41 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001088
-    label: Sodium Succinate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63675
+    label: sodium succinate (anhydrous)
 - preferred_term: MgSO4
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:32599
     label: magnesium sulfate
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4
-- preferred_term: CuSO4
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:23414
-    label: copper(II) sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: N2
+  notes: 'Properties: Gas'
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000855
-    label: CuSO4
+  term:
+    id: CHEBI:17997
+    label: ''
+- preferred_term: CaCl2
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:3312
+    label: calcium dichloride
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
 - preferred_term: CoCl2
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
@@ -110,11 +119,11 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
-    label: CoCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
 - preferred_term: FeSO4
-  notes: 'Role: Mineral source; Properties: Solution, Defined component, Inorganic
+  notes: 'Role: Mineral source; Properties: Defined component, Solution, Inorganic
     compound'
   term:
     id: CHEBI:75832
@@ -122,15 +131,18 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001045
-    label: FeSO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75832
+    label: iron(2+) sulfate (anhydrous)
 - preferred_term: MnCl2
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:63041
+    label: manganese(II) chloride
 - preferred_term: ZnSO4
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
@@ -140,15 +152,18 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: ZnSO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: zinc sulfate
 - preferred_term: (NH4)6Mo7O24
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:91249
+    label: ammonium molybdate
 - preferred_term: EDTA
   notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
@@ -157,68 +172,87 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000165
-    label: EDTA
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64755
+    label: EDTA(2-)
 media_term:
-  preferred_term: TOGO Medium M3197
+  preferred_term: TOGO Medium M3198
   term:
-    id: TOGO:M3197
+    id: TOGO:M3198
     label: Defined minimal medium
-notes: 'Source: https://togomedium.org/medium/M3197'
+notes: 'Source: https://togomedium.org/medium/M3198'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:57.586392Z'
+- timestamp: '2026-01-27T06:35:57.587920Z'
   curator: togo-import
   action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M3197'
-- timestamp: '2026-01-28T19:48:21.472208Z'
+  notes: 'Source: TOGO, ID: M3198'
+- timestamp: '2026-01-28T19:48:18.252699Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:57.853019'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: KH2PO4; Added default concentration
     for ingredient: NH4Cl; Added default concentration for ingredient: NaNO3; Added
     default concentration for ingredient: Na2HPO4; Added default concentration for
     ingredient: Sodium Succinate; Added default concentration for ingredient: MgSO4;
-    Added default concentration for ingredient: CuSO4; Added default concentration
-    for ingredient: CoCl2; Added default concentration for ingredient: FeSO4; Added
-    default concentration for ingredient: MnCl2; Added default concentration for ingredient:
-    ZnSO4; Added default concentration for ingredient: (NH4)6Mo7O24; Added default
-    concentration for ingredient: EDTA'
-- timestamp: '2026-02-06T05:10:29.869228Z'
+    Added default concentration for ingredient: N2; Added default concentration for
+    ingredient: CaCl2; Added default concentration for ingredient: CoCl2; Added default
+    concentration for ingredient: FeSO4; Added default concentration for ingredient:
+    MnCl2; Added default concentration for ingredient: ZnSO4; Added default concentration
+    for ingredient: (NH4)6Mo7O24; Added default concentration for ingredient: EDTA'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-02-06T05:10:25.939837Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
-- timestamp: '2026-03-09T08:04:35.902873+00:00'
+- timestamp: '2026-03-09T08:04:30.245083+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 1 solution(s) from ingredients
-- timestamp: '2026-03-13T03:09:05.256419Z'
+- timestamp: '2026-03-13T03:08:59.195881Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
-- timestamp: '2026-03-13T06:20:07.785248Z'
+- timestamp: '2026-03-13T06:20:07.796536Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:009638'
+  notes: 'Assigned stable identifier: CultureMech:009639'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:59.951671'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
-- timestamp: '2026-03-17T06:30:11.000000Z'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:30:04.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:26.796247+00:00'
+- timestamp: '2026-03-17T19:46:26.806955+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "Defined minimal medium" to "defined_minimal_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:03:16.981213+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:40.252418+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 12 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:50.258572+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 6 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:14.854049+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 5217efec54521c91c0e4752aabc28898d503b1737d52ca47ca7f522b2b68c7b6
+  source: TOGO_M3198_Defined_minimal_medium.yaml
 solutions:
 - preferred_term: Vishniac and Santer trace elements solution
   composition: []
@@ -226,6 +260,6 @@ solutions:
     value: '2'
     unit: G_PER_L
   name: Unknown solution
-merge_fingerprint: 98af9dc4bbba6f3242c5bb8cd75715faa3f71d6ca7ce850f35c040c6cfe58c31
+merge_fingerprint: 5217efec54521c91c0e4752aabc28898d503b1737d52ca47ca7f522b2b68c7b6
 merged_from:
-- defined_minimal_medium
+- TOGO_M3198_Defined_minimal_medium

@@ -1,0 +1,112 @@
+id: CultureMech:003047
+name: low_strength_artificial_seawater_medium
+original_name: LOW-STRENGTH ARTIFICIAL SEAWATER MEDIUM
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J701
+  term:
+    id: mediadive.medium:J701
+    label: LOW-STRENGTH ARTIFICIAL SEAWATER MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=701'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '24'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+  notes: Copied from referenced JCM Medium 701
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: KCl
+  notes: Copied from referenced JCM Medium 701
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '7'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  notes: Copied from referenced JCM Medium 701
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 701
+- preferred_term: Peptone
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 701
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.338968Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J701'
+- timestamp: '2026-03-13T06:19:17.403725Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003047'
+- timestamp: '2026-03-17T06:30:33.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:31.091428+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "LOW-STRENGTH ARTIFICIAL SEAWATER MEDIUM" to "low_strength_artificial_seawater_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:11.410657+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:24.040405+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: artificial_seawater_medium, low_strength_artificial_seawater_medium'
+- timestamp: '2026-08-06T03:05:24.040444+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 5cd782aea3560cf4ee6b6aa8a87499a074c2a1ae8717a162394cc25eb47bc837
+  source: artificial_seawater_medium.yaml, low_strength_artificial_seawater_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/artificial_seawater_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003321
+  name: artificial_seawater_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.
+synonyms:
+- name: artificial_seawater_medium
+  source: MediaDive
+  source_id: mediadive.medium:J972
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- artificial_seawater_medium
+- low_strength_artificial_seawater_medium
+merge_fingerprint: 5cd782aea3560cf4ee6b6aa8a87499a074c2a1ae8717a162394cc25eb47bc837

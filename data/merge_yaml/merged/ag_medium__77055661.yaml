@@ -1,0 +1,124 @@
+id: CultureMech:006898
+name: ag_medium
+original_name: AG medium
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+ph_value: 6.8
+media_term:
+  preferred_term: KOMODO Medium 955
+  term:
+    id: komodo.medium:955
+    label: AG medium
+notes: 'Source: KOMODO ModelSEED | ID: 955 | DSMZ Medium: 955 (mediadive.medium:955)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: Glucose
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
+    label: Glycerol
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Malt extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: CaCO3
+  term:
+    id: CHEBI:3311
+    label: CaCO3
+  concentration:
+    value: '7'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
+    label: CaCO3
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 955'
+- timestamp: '2026-02-03T11:19:17.827337'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 955
+- timestamp: '2026-03-13T06:19:44.743234Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006898'
+- timestamp: '2026-03-17T06:30:51.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:02.719161+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "AG medium" to "ag_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:28.149783+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:02.766065+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_955_AG_medium, ag_medium'
+- timestamp: '2026-08-06T03:05:02.766094+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 770556614c345d317cb79fcf7b5af9e6f2c39cdc94c7c437181516b11e3be2c7
+  source: KOMODO_955_AG_medium.yaml, ag_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/ag_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002133
+  name: ag_medium
+  notes: KOMODO record states DSMZ Medium 955 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
+categories:
+- bacterial
+merged_from:
+- KOMODO_955_AG_medium
+- ag_medium
+merge_fingerprint: 770556614c345d317cb79fcf7b5af9e6f2c39cdc94c7c437181516b11e3be2c7

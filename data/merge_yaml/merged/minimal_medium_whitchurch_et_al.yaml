@@ -3,6 +3,7 @@ name: minimal_medium_whitchurch_et_al
 original_name: Minimal medium; whitchurch et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Magnesium chloride
@@ -12,13 +13,16 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -26,17 +30,23 @@ ingredients:
   concentration:
     value: '8.086e-05'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Calcium sulfate
   concentration:
     value: '0.001469'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:31346
+    label: ''
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '3.37'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '4.856e-05'
@@ -48,6 +58,9 @@ ingredients:
   concentration:
     value: '3.557e-05'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:53470
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -55,13 +68,16 @@ ingredients:
   concentration:
     value: '179.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '2.2'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
@@ -69,13 +85,16 @@ ingredients:
   concentration:
     value: '0.0001325'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.0007194'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -83,9 +102,9 @@ ingredients:
   concentration:
     value: '6.955e-05'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
@@ -93,13 +112,16 @@ ingredients:
   concentration:
     value: '1.51'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.0001253'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258
@@ -107,8 +129,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
     label: Sodium citrate
 - preferred_term: '''Iron(III'
   concentration:
@@ -147,6 +169,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Minimal medium; whitchurch et al" to "minimal_medium_whitchurch_et_al"
     for consistent matching
+- timestamp: '2026-06-05T07:41:34.756148+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:46.454811+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 8838205e6374c00fcd501f1de0cf03e485d7751f84029650f765f8f566b390b3
+  source: minimal_medium_whitchurch_et_al.yaml
 media_term:
   preferred_term: MediaDB Medium 35
   term:
@@ -159,6 +192,6 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
-merge_fingerprint: a5cd9c26bd7a1672ef94b5ab7a6eb623e7f9af28a4fa9c4f0a1226b7838be2f1
+merge_fingerprint: 8838205e6374c00fcd501f1de0cf03e485d7751f84029650f765f8f566b390b3
 merged_from:
 - minimal_medium_whitchurch_et_al

@@ -3,6 +3,7 @@ name: fry_et_al
 original_name: Fry et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose
@@ -13,8 +14,8 @@ ingredients:
     value: '44.405'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Tryptophan
   term:
@@ -23,8 +24,8 @@ ingredients:
   concentration:
     value: '0.195858'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001025
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27897
     label: Tryptophan
 - preferred_term: Magnesium chloride
   concentration:
@@ -33,23 +34,29 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.100409'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '15.6142'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Sodium sulfate
   concentration:
     value: '1.99944'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Sodium sulfate
   term:
     id: CHEBI:32149
@@ -61,13 +68,16 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '7.34829'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -75,13 +85,16 @@ ingredients:
   concentration:
     value: '18.6947'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Manganese chloride
   concentration:
     value: '0.0672435'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.00799112'
@@ -93,8 +106,8 @@ ingredients:
   concentration:
     value: '2.00012'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000388
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
     label: Sodium nitrate
 preparation_steps:
 - step_number: 1
@@ -128,6 +141,17 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "Fry et al" to "fry_et_al" for consistent matching
+- timestamp: '2026-06-05T07:41:05.580883+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:35.750388+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint a17d899cc0b29ead708ce1362d58066f41c3938a4221f952d6996c60812e50df
+  source: fry_et_al.yaml
 media_term:
   preferred_term: MediaDB Medium 220
   term:
@@ -139,6 +163,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 9e51f830e43c6f650ffd2c4ff6153b9757268ad74dd0b50b6508d1405159f3e9
+merge_fingerprint: a17d899cc0b29ead708ce1362d58066f41c3938a4221f952d6996c60812e50df
 merged_from:
 - fry_et_al

@@ -3,6 +3,7 @@ name: liquid_ma_minimal_media_l_asparagine
 original_name: Liquid ma minimal media + l-asparagine
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: L-Asparagine
@@ -13,13 +14,16 @@ ingredients:
     value: '25.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:asn-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000282
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17196
     label: L-Asparagine
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.45'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -27,17 +31,23 @@ ingredients:
   concentration:
     value: '0.0003'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '25.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '31.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -45,13 +55,16 @@ ingredients:
   concentration:
     value: '0.041'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
     label: Nitrilotriacetic acid
 - preferred_term: Nickel chloride
   concentration:
     value: '0.0003'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34887
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.0003'
@@ -66,8 +79,8 @@ ingredients:
   concentration:
     value: '2.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
@@ -76,8 +89,8 @@ ingredients:
   concentration:
     value: '18.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Cobalt chloride
   concentration:
@@ -90,14 +103,23 @@ ingredients:
   concentration:
     value: '0.001'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: Cupric chloride
   concentration:
     value: '0.0003'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49553
+    label: ''
 - preferred_term: Sodium selenite
   concentration:
     value: '0.0003'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:48843
+    label: ''
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.003'
@@ -142,6 +164,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Liquid ma minimal media + l-asparagine" to "liquid_ma_minimal_media_l_asparagine"
     for consistent matching
+- timestamp: '2026-06-05T07:41:11.276012+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:40.374868+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 1f0c54c92a20dd0138f46706f8bb6411edcdf017738531d315da8edbfbd7aef1
+  source: liquid_ma_minimal_media_l_asparagine.yaml
 media_term:
   preferred_term: MediaDB Medium 19
   term:
@@ -153,6 +186,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 53b7fc45d99bda2f44a01ca81b6841e4270e91406f3d8307f05e66ec0224dddf
+merge_fingerprint: 1f0c54c92a20dd0138f46706f8bb6411edcdf017738531d315da8edbfbd7aef1
 merged_from:
 - liquid_ma_minimal_media_l_asparagine

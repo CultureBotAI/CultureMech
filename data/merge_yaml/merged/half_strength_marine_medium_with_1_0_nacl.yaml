@@ -1,51 +1,85 @@
-id: CultureMech:015420
+id: CultureMech:010197
 name: half_strength_marine_medium_with_1_0_nacl
-original_name: HALF STRENGTH MARINE MEDIUM WITH 1.0% NaCl
-category: specialized
+original_name: Half Strength Marine Medium With 1.0% NaCl
+category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-media_term:
-  preferred_term: JCM Medium J762
-  term:
-    id: mediadive.medium:J762
-    label: HALF STRENGTH MARINE MEDIUM WITH 1.0% NaCl
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=762'
 ingredients:
-- preferred_term: Marine broth 2216
+- preferred_term: Distilled water
   concentration:
-    value: '18.7'
+    value: '1'
     unit: G_PER_L
-- preferred_term: NaCl
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:26710
-    label: NaCl
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Marine broth 2216 (BD-Difco)
+  concentration:
+    value: '18.7'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M788
+  term:
+    id: TOGO:M788
+    label: Half Strength Marine Medium With 1.0% NaCl
+notes: 'Source: https://togomedium.org/medium/M788
+
+  Original source: JCM - JCM_M762
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=762'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:17.525161Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J762'
-- timestamp: '2026-03-13T06:20:42.574819Z'
+- timestamp: '2026-01-27T06:35:55.715766Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M788'
+- timestamp: '2026-01-28T19:48:14.435493Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:12.044181Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:015420'
-- timestamp: '2026-03-17T17:06:21.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:010197'
+- timestamp: '2026-03-17T06:29:56.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:34.232966+00:00'
+- timestamp: '2026-03-17T19:46:30.982793+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALF STRENGTH MARINE MEDIUM WITH 1.0% NaCl" to "half_strength_marine_medium_with_1_0_nacl"
+  notes: Normalized name from "Half Strength Marine Medium With 1.0% NaCl" to "half_strength_marine_medium_with_1_0_nacl"
     for consistent matching
-kg_microbe_match: mediadive.medium:74
-merge_fingerprint: 70db091ef6ebae7d5dfa3ba5485060678fc282c3509672fc20c7829e570e0fde
+- timestamp: '2026-06-05T07:41:07.177626+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:36.941004+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 9c7a498b629cda1c34b1f14392b9e5de8200611f299194e436551f9387a48ba9
+  source: half_strength_marine_medium_with_1_0_nacl.yaml
+merge_fingerprint: 9c7a498b629cda1c34b1f14392b9e5de8200611f299194e436551f9387a48ba9
 merged_from:
 - half_strength_marine_medium_with_1_0_nacl

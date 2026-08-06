@@ -3,6 +3,7 @@ name: lowenstein_jenson_medium
 original_name: Lowenstein Jenson medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Monopotassium Phosphate
@@ -14,9 +15,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: Monopotassium Phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
 - preferred_term: Glycerol
   concentration:
     value: '12'
@@ -24,10 +25,10 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
     component'
   term:
-    id: CHEBI:15978
-    label: sn-glycerol 3-phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000588
+    id: CHEBI:17754
+    label: Glycerol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: Magnesium Sulfate
   concentration:
@@ -38,9 +39,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: Magnesium Sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
 - preferred_term: Sodium Citrate
   concentration:
     value: '0.6'
@@ -49,9 +50,9 @@ ingredients:
   term:
     id: CHEBI:32142
     label: sodium citrate dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000719
-    label: Sodium Citrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32142
+    label: sodium citrate dihydrate
 - preferred_term: 'Whole Egg '
   concentration:
     value: '1000'
@@ -66,9 +67,9 @@ ingredients:
   term:
     id: CHEBI:17196
     label: L-asparagine
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000282
-    label: L-Asparagine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17196
+    label: L-asparagine
 - preferred_term: Malachite green
   concentration:
     value: '0.4'
@@ -78,8 +79,8 @@ ingredients:
   term:
     id: CHEBI:72449
     label: Malachite green
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000835
+  mediaingredientmech_chebi_term:
+    id: CHEBI:72449
     label: Malachite green
 - preferred_term: Potato Flour
   concentration:
@@ -118,6 +119,23 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Lowenstein Jenson medium" to "lowenstein_jenson_medium"
     for consistent matching
-merge_fingerprint: a3db3d71b977384e1cec2187153bc17dd4941af93ec34ae0ee58bfda654926d7
+- timestamp: '2026-06-05T07:41:11.415955+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:40.403661+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:05:40.556154+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2a220231ce818e977eeb6d1b3979d026014c29107807c72925448796f7e0ecdd
+  source: lowenstein_jenson_medium.yaml
+merge_fingerprint: 2a220231ce818e977eeb6d1b3979d026014c29107807c72925448796f7e0ecdd
 merged_from:
 - lowenstein_jenson_medium

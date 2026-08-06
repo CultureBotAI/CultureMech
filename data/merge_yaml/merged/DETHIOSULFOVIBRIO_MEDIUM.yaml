@@ -3,8 +3,11 @@ name: dethiosulfovibrio_medium
 original_name: DETHIOSULFOVIBRIO MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_range: 6.7-6.8
+ph_range:
+  min: 6.7
+  max: 6.8
 media_term:
   preferred_term: DSMZ Medium 906
   term:
@@ -19,8 +22,8 @@ ingredients:
   concentration:
     value: '19.98'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -29,18 +32,18 @@ ingredients:
   concentration:
     value: '2.997'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.999001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Na3-citrate x 5 H2O
   concentration:
@@ -58,6 +61,9 @@ ingredients:
   concentration:
     value: '0.0004995'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -65,8 +71,8 @@ ingredients:
   concentration:
     value: '0.1998'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: Na2S2O3 x 5 H2O
   term:
@@ -75,8 +81,8 @@ ingredients:
   concentration:
     value: '2.4975'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000492
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32150
     label: Na2S2O3 x 5 H2O
 - preferred_term: Na2S x 9 H2O
   term:
@@ -85,8 +91,8 @@ ingredients:
   concentration:
     value: '0.499501'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 - preferred_term: HCl
   term:
@@ -95,8 +101,8 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000150
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
     label: HCl
 - preferred_term: FeCl2 x 4 H2O
   term:
@@ -105,8 +111,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000329
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86249
     label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
@@ -115,8 +121,8 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
     label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -125,18 +131,18 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.006'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -145,8 +151,8 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
@@ -155,8 +161,8 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
     label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -165,8 +171,8 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -175,8 +181,8 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 preparation_steps:
 - step_number: 1
@@ -211,10 +217,38 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "DETHIOSULFOVIBRIO MEDIUM" to "dethiosulfovibrio_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:34.467439+00:00'
+- timestamp: '2026-05-20T06:01:15.482478+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.7-6.8'' -> {''min'': 6.7, ''max'': 6.8}'
+- timestamp: '2026-06-05T07:40:58.607174+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 15 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:56.344847+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:01.682404+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_906_DETHIOSULFOVIBRIO_II_medium, dethiosulfovibrio_medium'
+- timestamp: '2026-08-06T03:05:01.682446+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint a808c7967e9e51ef9b4ed398b3976c5d31e367d1059d22a5c10f07342e730aae
+  source: KOMODO_906_DETHIOSULFOVIBRIO_II_medium.yaml, dethiosulfovibrio_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_906_DETHIOSULFOVIBRIO_II_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006777
+  name: dethiosulfovibrio_ii_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.
 synonyms:
 - name: dethiosulfovibrio_ii_medium
   source: KOMODO
@@ -225,4 +259,4 @@ categories:
 merged_from:
 - KOMODO_906_DETHIOSULFOVIBRIO_II_medium
 - dethiosulfovibrio_medium
-merge_fingerprint: 7dbb14817d68889e4c0312729330bb9557d609c5eb0572888c50819272bb395e
+merge_fingerprint: a808c7967e9e51ef9b4ed398b3976c5d31e367d1059d22a5c10f07342e730aae

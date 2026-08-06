@@ -3,6 +3,7 @@ name: yeast_extract_malt_extract_agar_isp_medium_no_2_50_marine_water
 original_name: Yeast Extract-Malt Extract Agar (ISP medium No. 2, 50% marine water)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -37,9 +38,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Agar
   concentration:
     value: '20'
@@ -48,9 +49,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Malt extract
   concentration:
     value: '10'
@@ -91,6 +92,17 @@ curation_history:
   notes: Normalized name from "Yeast Extract-Malt Extract Agar (ISP medium No. 2,
     50% marine water)" to "yeast_extract_malt_extract_agar_isp_medium_no_2_50_marine_water"
     for consistent matching
+- timestamp: '2026-06-05T07:41:55.692796+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:03.074258+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 6b418ea9f0b091259ee75f840c5d1361dcd8f3c79b1e5e727e0e545aa4808b5e
+  source: yeast_extract_malt_extract_agar_isp_medium_no_2_50_marine_water.yaml
 merge_fingerprint: 6b418ea9f0b091259ee75f840c5d1361dcd8f3c79b1e5e727e0e545aa4808b5e
 merged_from:
 - yeast_extract_malt_extract_agar_isp_medium_no_2_50_marine_water

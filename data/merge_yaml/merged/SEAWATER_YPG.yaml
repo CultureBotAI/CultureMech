@@ -3,6 +3,7 @@ name: seawater_ypg
 original_name: SEAWATER YPG
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1169
@@ -19,8 +20,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Glucose
   term:
@@ -29,8 +30,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Peptone
   concentration:
@@ -47,8 +48,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -73,10 +74,33 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "SEAWATER YPG" to "seawater_ypg" for consistent matching
-- timestamp: '2026-04-17T06:29:10.705625+00:00'
+- timestamp: '2026-06-05T07:40:19.526876+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:34.053200+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: 2_nacl_ypg_agar, KOMODO_1169_SEAWATER_YPG, seawater_ypg'
+- timestamp: '2026-08-06T03:04:34.053239+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 113115784659727454409eef2b3c5b33965f721b295d8b7f54294e97616b47e0
+  source: 2_nacl_ypg_agar.yaml, KOMODO_1169_SEAWATER_YPG.yaml, seawater_ypg.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/seawater_ypg.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000611
+  name: seawater_ypg
+  notes: KOMODO record explicitly cites DSMZ Medium 1169; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 1169; local ingredient
+  and concentration signatures match.
 synonyms:
 - name: 2_nacl_ypg_agar
   source: MediaDive

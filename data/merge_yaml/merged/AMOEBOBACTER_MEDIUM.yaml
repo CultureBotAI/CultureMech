@@ -3,6 +3,7 @@ name: amoebobacter_medium
 original_name: AMOEBOBACTER MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 422
@@ -19,8 +20,8 @@ ingredients:
   concentration:
     value: '0.118088'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000944
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30089
     label: Acetate
 - preferred_term: Thiosulfate
   term:
@@ -29,8 +30,8 @@ ingredients:
   concentration:
     value: '1'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001096
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26977
     label: Thiosulfate
 - preferred_term: Na2S x 9 H2O
   term:
@@ -39,8 +40,8 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 applications:
 - Microbial cultivation
@@ -66,10 +67,32 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "AMOEBOBACTER MEDIUM" to "amoebobacter_medium" for consistent
     matching
-- timestamp: '2026-04-17T06:29:23.698584+00:00'
+- timestamp: '2026-06-05T07:40:23.178562+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:48.994112+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_422_AMOEBOBACTER_MEDIUM, amoebobacter_medium'
+- timestamp: '2026-08-06T03:04:48.994143+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 5d9c9aae98602a4ed0f41953d2f40ef6c2df072891988885e6919abca742efac
+  source: KOMODO_422_AMOEBOBACTER_MEDIUM.yaml, amoebobacter_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/amoebobacter_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001527
+  name: amoebobacter_medium
+  notes: KOMODO record states DSMZ Medium 422 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 categories:
 - bacterial
 merged_from:

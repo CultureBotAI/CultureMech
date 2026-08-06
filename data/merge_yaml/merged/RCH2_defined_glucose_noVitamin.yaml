@@ -1,6 +1,7 @@
 id: CultureMech:015707
 name: RCH2 defined glucose noVitamin
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Ammonium chloride
@@ -170,7 +171,7 @@ ingredients:
 description: Defined minimal media for soil and groundwater bacteria with glucose
   and no vitamins added
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: RCH2 defined glucose noVitamin
@@ -184,8 +185,17 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015707'
+- timestamp: '2026-05-16T09:04:42.919186+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:07.811863+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 8ecc900282c8f69b7134da74b9509b1e5c26a79d8265c3b939e711109671dad6
+  source: rch2_defined_glucose_novitamin.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: e2506f8d91e2c962e5fd74e98f5d0f44d5cb9cc2a63e506943a4e654d81e0ab0
+merge_fingerprint: 8ecc900282c8f69b7134da74b9509b1e5c26a79d8265c3b939e711109671dad6
 merged_from:
 - rch2_defined_glucose_novitamin

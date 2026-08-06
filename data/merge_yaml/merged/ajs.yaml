@@ -1,7 +1,8 @@
 id: CultureMech:000041
 name: ajs
-category: ALGAE
+category: algae
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater
   algae cultivation. Recipe available in PDF format.
@@ -15,13 +16,13 @@ applications:
 - Microalgae research
 curation_history:
 - curator: ccap-import
-  date: '2026-01-28'
   action: Imported from CCAP Culture Collection
   notes: 'Source ID: AJS, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_AJS.pdf'
+  timestamp: '2026-01-28T00:00:00+00:00'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:23:39.559740'
   action: Applied schema defaults and normalizations
   notes: Added placeholder ingredients for missing composition
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-02-03T11:26:43.447422'
   curator: quality-tagger-v1.0
   action: Added data quality flag
@@ -39,9 +40,23 @@ curation_history:
   action: EXPANDED_INGREDIENTS
   changes: Replaced placeholder with 6 curated ingredients from CCAP
   source: CCAP Medium MR_AJS.pdf
+- timestamp: '2026-05-16T08:57:02.060779+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(3 entries)
+- timestamp: '2026-05-16T09:02:56.200871+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
+    category->lowercase=1
+- timestamp: '2026-08-06T03:04:19.595523+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e5c2c1541a30a3044454cec0a1041c5e59f3a84864f2470a503de55a2c8dc936
+  source: ajs.yaml
 references:
-- reference_id: CCAP:AJS
-- reference_id: https://www.ccap.ac.uk/wp-content/uploads/MR_AJS.pdf
+- reference: CCAP:AJS
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_AJS.pdf
 ingredients:
 - preferred_term: EDTANa
   term:
@@ -114,11 +129,10 @@ ingredients:
     unit: G_PER_L
   source: CCAP Medium MR_AJS.pdf
 data_quality_flags:
-  incomplete_composition: false
-  has_ontology_mappings: true
-  ingredients_curated: true
-  curation_method: automated_expert_mapping
+- has_ontology_mappings
+- ingredients_curated
+- curation_method:automated_expert_mapping
 original_name: AJS
-merge_fingerprint: a0e482df5a3dbfe4e67ebb4a6f0c2ffe39dea002ecb5eda15658aefcd5e234cb
+merge_fingerprint: e5c2c1541a30a3044454cec0a1041c5e59f3a84864f2470a503de55a2c8dc936
 merged_from:
 - ajs

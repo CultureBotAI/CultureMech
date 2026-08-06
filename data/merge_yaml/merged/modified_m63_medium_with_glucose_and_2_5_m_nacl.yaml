@@ -3,6 +3,7 @@ name: modified_m63_medium_with_glucose_and_2_5_m_nacl
 original_name: Modified M63 medium with glucose and 2.5 M NaCl
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose
@@ -13,8 +14,8 @@ ingredients:
     value: '20.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Potassium hydroxide
   concentration:
@@ -27,6 +28,9 @@ ingredients:
   concentration:
     value: '100.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -34,9 +38,9 @@ ingredients:
   concentration:
     value: '600.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -44,13 +48,16 @@ ingredients:
   concentration:
     value: '0.16'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.0018'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
@@ -58,9 +65,9 @@ ingredients:
   concentration:
     value: '15.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -90,11 +97,23 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Modified M63 medium with glucose and 2.5 M NaCl" to
     "modified_m63_medium_with_glucose_and_2_5_m_nacl" for consistent matching
-- timestamp: '2026-04-17T06:30:16.190650+00:00'
+- timestamp: '2026-06-05T07:41:36.959693+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:48.664324+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: modified_m63_medium_with_glucose_and_0_6_m_nacl, modified_m63_medium_with_glucose_and_0_75_m_nacl,
     modified_m63_medium_with_glucose_and_1_5_m_nacl, modified_m63_medium_with_glucose_and_2_5_m_nacl'
+- timestamp: '2026-08-06T03:05:48.664373+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 4 source recipe(s) on fingerprint 7f96d449859a85c3cd5a5de055cd4b2bd14d1ada64de73dddc1e6bd4c0726175
+  source: modified_m63_medium_with_glucose_and_0_6_m_nacl.yaml, modified_m63_medium_with_glucose_and_0_75_m_nacl.yaml,
+    modified_m63_medium_with_glucose_and_1_5_m_nacl.yaml, modified_m63_medium_with_glucose_and_2_5_m_nacl.yaml
 media_term:
   preferred_term: MediaDB Medium 7
   term:
@@ -107,6 +126,14 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
+parent_media:
+  path: data/normalized_yaml/bacterial/modified_m63_medium_with_glucose_and_0_6_m_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:007395
+  name: modified_m63_medium_with_glucose_and_0_6_m_nacl
+variant_relationship: SALINITY_VARIANT
+variant_modifications:
+- Name suggests salt/salinity change; verify concentration delta against source.
 synonyms:
 - name: modified_m63_medium_with_glucose_and_0_6_m_nacl
   source: unknown
@@ -127,4 +154,4 @@ merged_from:
 - modified_m63_medium_with_glucose_and_0_75_m_nacl
 - modified_m63_medium_with_glucose_and_1_5_m_nacl
 - modified_m63_medium_with_glucose_and_2_5_m_nacl
-merge_fingerprint: 5270cfc45f37d6d3958b7f617b27ee77de65da4b876b401c00665188ab078fa1
+merge_fingerprint: 7f96d449859a85c3cd5a5de055cd4b2bd14d1ada64de73dddc1e6bd4c0726175

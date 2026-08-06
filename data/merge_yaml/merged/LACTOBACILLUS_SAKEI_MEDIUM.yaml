@@ -1,59 +1,94 @@
-id: CultureMech:002571
+id: CultureMech:007936
 name: lactobacillus_sakei_medium
-original_name: LACTOBACILLUS SAKEI MEDIUM
+original_name: Lactobacillus Sakei Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-media_term:
-  preferred_term: JCM Medium J20
-  term:
-    id: mediadive.medium:J20
-    label: LACTOBACILLUS SAKEI MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=20'
 ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Sake
   concentration:
     value: '700'
     unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '6.25'
-    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
 - preferred_term: Agar
+  concentration:
+    value: '13'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
   term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Yeast extract (BD-Difco)
   concentration:
-    value: '16.25'
+    value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
-- preferred_term: Liver extract concentrate
+  notes: 'Properties: Undefined component'
+- preferred_term: Liver extract concentrate (NBCo)
   concentration:
-    value: '0.25'
+    value: '0.2'
     unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M13
+  term:
+    id: TOGO:M13
+    label: Lactobacillus Sakei Medium
+notes: 'Source: https://togomedium.org/medium/M13
+
+  Original source: JCM - JCM_M20
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=20'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:15.595020Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J20'
-- timestamp: '2026-03-13T06:19:14.228670Z'
+- timestamp: '2026-01-27T06:35:54.314917Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M13'
+- timestamp: '2026-01-28T19:48:40.936180Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:52.613104Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002571'
-- timestamp: '2026-03-17T06:29:57.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:007936'
+- timestamp: '2026-03-17T06:30:52.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:27.448768+00:00'
+- timestamp: '2026-03-17T19:46:11.078480+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "LACTOBACILLUS SAKEI MEDIUM" to "lactobacillus_sakei_medium"
+  notes: Normalized name from "Lactobacillus Sakei Medium" to "lactobacillus_sakei_medium"
     for consistent matching
-kg_microbe_match: mediadive.medium:12
-merge_fingerprint: ed786d2fd2ca08475895fb56e222a365794185cba5eea0028c256c272f2848fc
+- timestamp: '2026-06-05T07:40:32.995060+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:08.666479+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint cb2046346a5b474468b63cd383adb6140b622b5e483d3fa4ed237806ba613af2
+  source: TOGO_M13_Lactobacillus_Sakei_Medium.yaml
+merge_fingerprint: cb2046346a5b474468b63cd383adb6140b622b5e483d3fa4ed237806ba613af2
 merged_from:
-- lactobacillus_sakei_medium
+- TOGO_M13_Lactobacillus_Sakei_Medium

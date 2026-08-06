@@ -1,396 +1,288 @@
-id: CultureMech:000839
+id: CultureMech:010301
 name: mo_cfxi_medium
-original_name: MO-CFXI MEDIUM
+original_name: MO-CFXI Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 7.0
-media_term:
-  preferred_term: DSMZ Medium 1378
-  term:
-    id: mediadive.medium:1378
-    label: MO-CFXI MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1378.pdf'
 ingredients:
-- preferred_term: NaCl
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
   term:
-    id: CHEBI:26710
-    label: NaCl
+    id: CHEBI:16526
+    label: ''
+- preferred_term: Nitrogen gas
+  notes: 'Properties: ガス'
   concentration:
-    value: '25'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: MgCl2 x 6 H2O
+    value: variable
+    unit: VARIABLE
   term:
-    id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    id: CHEBI:17997
+    label: ''
+- preferred_term: Distilled water
   concentration:
-    value: '4'
+    value: '1000.0'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: MgCl2 x 6 H2O
-- preferred_term: KCl
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound [Merged 2 duplicates: 900.0, 100.0]'
   term:
-    id: CHEBI:32588
-    label: KCl
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
-- preferred_term: NH4Cl
-  term:
-    id: CHEBI:31206
-    label: NH4Cl
-  concentration:
-    value: '0.535'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
-- preferred_term: Tryptone
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Glucose
-  term:
-    id: CHEBI:17234
-    label: Glucose
-  concentration:
-    value: '1.8'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
-    label: Glucose
-- preferred_term: Sodium pyruvate
-  term:
-    id: CHEBI:50144
-    label: Sodium pyruvate
-  concentration:
-    value: '0.55'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
-    label: Sodium pyruvate
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '1'
     unit: G_PER_L
-- preferred_term: NaHCO3
-  term:
-    id: CHEBI:32139
-    label: NaHCO3
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
   concentration:
-    value: '2'
+    value: '25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
-- preferred_term: Cysteine-HCl
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
-    id: CHEBI:91247
-    label: Cysteine-HCl
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: KH2PO4
   concentration:
-    value: '0.3'
+    value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000223
-    label: Cysteine-HCl
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.535'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: Resazurin
-  term:
-    id: CHEBI:8806
-    label: Resazurin
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Organic
+    compound, Simple component'
+  term:
+    id: CHEBI:8806
     label: Resazurin
-- preferred_term: Na2S
-  term:
-    id: CHEBI:76208
-    label: Na2S
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: NaHCO3
   concentration:
-    value: '0.3'
+    value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000783
-    label: Na2S
-- preferred_term: FeCl2 x 4 H2O
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
-    id: CHEBI:86249
-    label: FeCl2 x 4 H2O
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: Sodium pyruvate
   concentration:
-    value: '1.27'
+    value: '0.55'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000329
-    label: FeCl2 x 4 H2O
-- preferred_term: ZnCl2
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
   term:
-    id: CHEBI:49976
-    label: ZnCl2
+    id: CHEBI:50144
+    label: sodium pyruvate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+- preferred_term: Glucose
   concentration:
-    value: '0.14'
+    value: '1.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
-    label: ZnCl2
-- preferred_term: MnCl2 x 4 H2O
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
   term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Tryptone (BD-Difco)
   concentration:
-    value: '0.2'
+    value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
-    label: MnCl2 x 4 H2O
-- preferred_term: Na2SeO4
+  notes: 'Properties: Undefined component'
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
-    id: CHEBI:77775
-    label: Na2SeO4
+    id: CHEBI:86158
+    label: ''
+- preferred_term: MgCl2・6H2O
   concentration:
-    value: '0.002'
+    value: '4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000198
-    label: Na2SeO4
-- preferred_term: H3BO3
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
-    id: CHEBI:33118
-    label: H3BO3
+    id: CHEBI:86345
+    label: ''
+- preferred_term: N2
+  notes: 'Properties: ガス'
   concentration:
-    value: '0.006'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
-- preferred_term: Na2WO4 x 2 H2O
+    value: variable
+    unit: VARIABLE
   term:
-    id: CHEBI:63939
-    label: Na2WO4 x 2 H2O
-  concentration:
-    value: '0.003'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000309
-    label: Na2WO4 x 2 H2O
-- preferred_term: CuCl2 x 2 H2O
+    id: CHEBI:17997
+    label: ''
+media_term:
+  preferred_term: TOGO Medium M882
   term:
-    id: CHEBI:86318
-    label: CuCl2 x 2 H2O
-  concentration:
-    value: '0.001'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
-    label: CuCl2 x 2 H2O
-- preferred_term: CoCl2 x 6 H2O
-  term:
-    id: CHEBI:35696
-    label: CoCl2 x 6 H2O
-  concentration:
-    value: '0.13'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
-    label: CoCl2 x 6 H2O
-- preferred_term: AlCl3
-  term:
-    id: CHEBI:30114
-    label: AlCl3
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000292
-    label: AlCl3
-- preferred_term: NiCl2
-  term:
-    id: CHEBI:34887
-    label: NiCl2
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
-    label: NiCl2
-- preferred_term: Na2MoO4 x 2 H2O
-  term:
-    id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
-  concentration:
-    value: '0.02'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
-    label: Na2MoO4 x 2 H2O
-- preferred_term: Biotin
-  term:
-    id: CHEBI:15956
-    label: Biotin
-  concentration:
-    value: '0.0049'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
-    label: Biotin
-- preferred_term: Folic acid
-  term:
-    id: CHEBI:27470
-    label: Folic acid
-  concentration:
-    value: '0.0088'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
-    label: Folic acid
-- preferred_term: Pyridoxine hydrochloride
-  term:
-    id: CHEBI:30961
-    label: Pyridoxine hydrochloride
-  concentration:
-    value: '0.0041'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001016
-    label: Pyridoxine hydrochloride
-- preferred_term: Thiamine-HCl x 2 H2O
-  term:
-    id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
-  concentration:
-    value: '0.0067'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000160
-    label: Thiamine-HCl x 2 H2O
-- preferred_term: Riboflavin
-  term:
-    id: CHEBI:17015
-    label: Riboflavin
-  concentration:
-    value: '0.0075'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
-    label: Riboflavin
-- preferred_term: Nicotinic acid
-  term:
-    id: CHEBI:15940
-    label: Nicotinic acid
-  concentration:
-    value: '0.0024'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
-    label: Nicotinic acid
-- preferred_term: D-Calcium pantothenate
-  concentration:
-    value: '0.0095'
-    unit: G_PER_L
-  term:
-    id: CHEBI:31345
-    label: Calcium pantothenate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
-    label: D-Calcium pantothenate
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '0.0001'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
-    label: Vitamin B12
-- preferred_term: p-Aminobenzoic acid
-  term:
-    id: CHEBI:30753
-    label: p-Aminobenzoic acid
-  concentration:
-    value: '0.0027'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
-    label: p-Aminobenzoic acid
-- preferred_term: Lipoic acid
-  term:
-    id: CHEBI:16494
-    label: Lipoic acid
-  concentration:
-    value: '0.0041'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000166
-    label: Lipoic acid
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: pH 7.0
-- step_number: 2
-  action: MIX
-  description: Prepare under N2/CO2 (80/20) gas.
-- step_number: 3
-  action: AUTOCLAVE
-  description: 'Autoclave and add the following components after autoclaving from
-    stock solutions:'
-- step_number: 4
-  action: MIX
-  description: sterile Na2S solution end concentration 0.03%
-- step_number: 5
-  action: FILTER_STERILIZE
-  description: and filter-sterile Vitamin solution (see below) 0.2 ml / 100 ml.
+    id: TOGO:M882
+    label: MO-CFXI Medium
+notes: 'Source: https://togomedium.org/medium/M882
+
+  Original source: JCM - JCM_M846
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=846'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:14.250687Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1378'
-- timestamp: '2026-01-28T19:48:26.718566Z'
+- timestamp: '2026-01-27T06:35:55.892163Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M882'
+- timestamp: '2026-01-28T19:48:38.498220Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:18:58.796035Z'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
+    Carbon dioxide gas; Added default concentration for ingredient: Nitrogen gas;
+    Added default concentration for ingredient: N2'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-03-09T08:05:04.423053+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 7 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:36.382867Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:12.814665Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000839'
-- timestamp: '2026-03-17T06:30:22.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:010301'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name; Added default
+    solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:30:47.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:10.248870+00:00'
+- timestamp: '2026-03-17T19:46:31.762238+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MO-CFXI MEDIUM" to "mo_cfxi_medium" for consistent
+  notes: Normalized name from "MO-CFXI Medium" to "mo_cfxi_medium" for consistent
     matching
-merge_fingerprint: 997f2181a66207fbeecfbdb4977e3611e9c008703eba2087adbe5bc350f9ea12
+- timestamp: '2026-05-16T09:03:21.694671+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:45.333697+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:51.928120+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:20.167651+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 36d527ea9247abae702af9ced95c3d6cff8a2e90df1c31ca95c30cfc952ede19
+  source: TOGO_M882_MO-CFXI_Medium.yaml
+solutions:
+- preferred_term: Solution A
+  term:
+    id: mediadive.solution:5342
+    label: Solution A
+  concentration:
+    value: '900'
+    unit: G_PER_L
+  notes: See mediadive_5342_Solution_A.yaml for composition
+  name: Unknown solution
+- preferred_term: Solution B
+  term:
+    id: mediadive.solution:5343
+    label: Solution B
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: See mediadive_5343_Solution_B.yaml for composition
+  name: Unknown solution
+- preferred_term: Trace vitamins solution (see Medium [M278])
+  composition: []
+  notes: Cross-reference to Medium M278
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: Trace element solution (see Medium [M278])
+  composition: []
+  notes: Cross-reference to Medium M278
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: Se/W solution (see Medium [M278])
+  composition: []
+  notes: Cross-reference to Medium M278
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: 3% Na2S・9H2O solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
+    Solution'
+  name: Unknown solution
+- preferred_term: 3% L--Cysteine・HCl・H2O solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Solution'
+  name: Unknown solution
+merge_fingerprint: 36d527ea9247abae702af9ced95c3d6cff8a2e90df1c31ca95c30cfc952ede19
 merged_from:
-- mo_cfxi_medium
+- TOGO_M882_MO-CFXI_Medium

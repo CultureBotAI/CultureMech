@@ -1,6 +1,6 @@
 """Render CultureMech medium YAMLs to per-record HTML pages.
 
-Walks `data/merge_yaml/merged_2026/*.yaml` (configurable), applies the
+Walks `data/merge_yaml/merged/*.yaml` (configurable), applies the
 Jinja2 template at `src/culturemech/templates/media.html.j2`, writes
 output to `pages/media/{slug}.html`.
 
@@ -42,7 +42,7 @@ except ImportError:
 
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_YAML_DIR = REPO_ROOT / "data" / "merge_yaml" / "merged_2026"
+DEFAULT_YAML_DIR = REPO_ROOT / "data" / "merge_yaml" / "merged"
 DEFAULT_OUT_DIR = REPO_ROOT / "pages" / "media"
 DEFAULT_INDEX_DIR = REPO_ROOT / "pages"
 TEMPLATES_DIR = Path(__file__).resolve().parent / "templates"
@@ -242,7 +242,7 @@ def main() -> int:
     env = make_env()
     build_sig = build_signature()
     # ``rglob`` so the renderer works against both layouts: flat
-    # (``data/merge_yaml/merged_2026/*.yaml``) and category-nested
+    # (``data/merge_yaml/merged/*.yaml``) and category-nested
     # (``data/normalized_yaml/<category>/*.yaml``). The latter is the
     # unified raw-pages mode introduced by retiring the legacy
     # ``culturemech.render`` script.

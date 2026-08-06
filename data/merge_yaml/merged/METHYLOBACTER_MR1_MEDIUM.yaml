@@ -1,371 +1,357 @@
-id: CultureMech:003275
+id: CultureMech:010400
 name: methylobacter_mr1_medium
-original_name: METHYLOBACTER MR1 MEDIUM
+original_name: Methylobacter MR1 Medium
 category: bacterial
-medium_type: DEFINED
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 6.5
-media_term:
-  preferred_term: JCM Medium J928
-  term:
-    id: mediadive.medium:J928
-    label: METHYLOBACTER MR1 MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=928'
 ingredients:
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
+- preferred_term: Distilled water
   concentration:
-    value: '19.9005'
+    value: '2.0'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: KH2PO4
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component [Merged 2 duplicates: 1.0, 1.0]'
   term:
-    id: CHEBI:63036
-    label: KH2PO4
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
   concentration:
-    value: '0.0895522'
+    value: '3.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
-- preferred_term: Na2HPO4
-  term:
-    id: CHEBI:34683
-    label: Na2HPO4
-  concentration:
-    value: '0.258706'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
-    label: Na2HPO4
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.497512'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
-- preferred_term: MgSO4 x 7 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
+- preferred_term: NaCl
   concentration:
-    value: '3.38308'
+    value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: MgCl2 x 6 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
-    id: CHEBI:86345
-    label: MgCl2 x 6 H2O
-  concentration:
-    value: '4.1791'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: MgCl2 x 6 H2O
-- preferred_term: KCl
-  term:
-    id: CHEBI:32588
-    label: KCl
-  concentration:
-    value: '0.328358'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
-- preferred_term: NaNO3
-  term:
-    id: CHEBI:63005
-    label: NaNO3
-  concentration:
-    value: '0.248756'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000171
-    label: NaNO3
-- preferred_term: NH4Cl
-  term:
-    id: CHEBI:31206
-    label: NH4Cl
-  concentration:
-    value: '0.248756'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.11990050000000001'
-    unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 0.0199005, 0.1]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
-    label: FeSO4 x 7 H2O
-- preferred_term: CuSO4 x 5 H2O
-  term:
-    id: CHEBI:31440
-    label: CuSO4 x 5 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
-    label: CuSO4 x 5 H2O
-- preferred_term: NaHCO3
-  term:
-    id: CHEBI:32139
-    label: NaHCO3
-  concentration:
-    value: '1.25'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
-- preferred_term: Nitrilotriacetic acid
-  term:
-    id: CHEBI:44557
-    label: Nitrilotriacetic acid
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
-    label: Nitrilotriacetic acid
-- preferred_term: MnSO4 x n H2O
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2・2H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: CoSO4 x 7 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
-    id: CHEBI:53470
-    label: CoSO4 x 7 H2O
+    id: CHEBI:86158
+    label: ''
+- preferred_term: KH2PO4
   concentration:
-    value: '0.18'
+    value: '0.09'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000158
-    label: CoSO4 x 7 H2O
-- preferred_term: ZnSO4 x 7 H2O
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
   term:
-    id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: NH4Cl
   concentration:
-    value: '0.18'
+    value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
-    label: ZnSO4 x 7 H2O
-- preferred_term: Na2MoO4 x 2 H2O
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
-    id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: MgCl2・6H2O
+  concentration:
+    value: '4.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86345
+    label: ''
+- preferred_term: FeSO4・7H2O
+  concentration:
+    value: '0.12000000000000001'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component [Merged 2 duplicates: 0.02, 0.1]'
+  term:
+    id: CHEBI:75836
+    label: ''
+- preferred_term: KCl
+  concentration:
+    value: '0.33'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: NaNO3
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:63005
+    label: ''
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
+    label: NaNO3
+- preferred_term: Na2HPO4
+  concentration:
+    value: '0.26'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+- preferred_term: N2
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
+- preferred_term: O2
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Na2MoO4・2H2O
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
-    label: Na2MoO4 x 2 H2O
-- preferred_term: AlK(SO4)2 x 12 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
-    id: CHEBI:86465
-    label: AlK(SO4)2 x 12 H2O
-  concentration:
-    value: '0.02'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000293
-    label: AlK(SO4)2 x 12 H2O
+    id: CHEBI:75215
+    label: ''
 - preferred_term: H3BO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: NiCl2・6H2O
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
-- preferred_term: Na2WO4 x 2 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
-    id: CHEBI:63939
-    label: Na2WO4 x 2 H2O
+    id: CHEBI:34887
+    label: ''
+- preferred_term: ZnSO4・7H2O
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32312
+    label: ''
+- preferred_term: Na2SeO3・5H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:48843
+    label: ''
+- preferred_term: CoSO4・7H2O
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:53470
+    label: ''
+- preferred_term: AlK(SO4)2・12H2O
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000309
-    label: Na2WO4 x 2 H2O
-- preferred_term: NiCl2 x 6 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
-    id: CHEBI:34887
-    label: NiCl2 x 6 H2O
+    id: CHEBI:86465
+    label: ''
+- preferred_term: Nitrilotriacetic acid
   concentration:
-    value: '0.01'
+    value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
-    label: NiCl2 x 6 H2O
-- preferred_term: Na2SeO3 x 5 H2O
+  notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
+    component'
   term:
-    id: CHEBI:131361
-    label: Na2SeO3 x 5 H2O
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+- preferred_term: Na2WO4・2H2O
   concentration:
-    value: '0.005'
+    value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000144
-    label: Na2SeO3 x 5 H2O
-- preferred_term: Biotin
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
-    id: CHEBI:15956
-    label: Biotin
+    id: CHEBI:63939
+    label: ''
+- preferred_term: MnSO4・xH2O
   concentration:
-    value: '0.002'
+    value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
-    label: Biotin
-- preferred_term: Folic acid
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
-    id: CHEBI:27470
-    label: Folic acid
-  concentration:
-    value: '0.002'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
-    label: Folic acid
-- preferred_term: Pyridoxine hydrochloride
+    id: CHEBI:86360
+    label: ''
+- preferred_term: KOH
+  notes: 'Role: Mineral source; Properties: Defined component, Solution'
   term:
-    id: CHEBI:30961
-    label: Pyridoxine hydrochloride
+    id: CHEBI:32035
+    label: potassium hydroxide
   concentration:
-    value: '0.01'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001016
-    label: Pyridoxine hydrochloride
-- preferred_term: Thiamine HCl
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+media_term:
+  preferred_term: TOGO Medium M974
   term:
-    id: CHEBI:49105
-    label: Thiamine HCl
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
-    label: Thiamine HCl
-- preferred_term: Riboflavin
-  term:
-    id: CHEBI:17015
-    label: Riboflavin
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
-    label: Riboflavin
-- preferred_term: Nicotinic acid
-  term:
-    id: CHEBI:15940
-    label: Nicotinic acid
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
-    label: Nicotinic acid
-- preferred_term: Calcium pantothenate
-  term:
-    id: CHEBI:31345
-    label: Calcium pantothenate
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
-    label: Calcium pantothenate
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '0.0001'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
-    label: Vitamin B12
-- preferred_term: p-Aminobenzoic acid
-  term:
-    id: CHEBI:30753
-    label: p-Aminobenzoic acid
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
-    label: p-Aminobenzoic acid
-- preferred_term: Lipoic acid
-  term:
-    id: CHEBI:16494
-    label: Lipoic acid
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000166
-    label: Lipoic acid
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: 'Mix components, adjust pH to 6.6 - 6.8 and autoclave. After cooling,
-    add the following solutions (filter-sterilized) to the medium:'
-- step_number: 2
-  action: MIX
-  description: Distribute the medium into culture vessels (leave >80% volume gas phase),
-    purge air in the gas phase with N2 for 1 min and seal with butyl rubber stoppers.
-    Inject O2 gas into the gas phase (1.5% volume of the gas phase). Then, overpressure
-    the culture vessels with methane gas (50% volume of the gas phase).
-- step_number: 3
-  action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then,
-    proceed to add minerals. Adjust final pH to 7.0.
+    id: TOGO:M974
+    label: Methylobacter MR1 Medium
+notes: 'Source: https://togomedium.org/medium/M974
+
+  Original source: JCM - JCM_M928
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=928'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:18.030654Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J928'
-- timestamp: '2026-03-13T03:09:23.389309Z'
+- timestamp: '2026-01-27T06:35:56.064973Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M974'
+- timestamp: '2026-01-28T19:48:36.439984Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: N2; Added default concentration
+    for ingredient: O2; Added default concentration for ingredient: KOH'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-03-09T08:05:00.752441+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 4 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:32.573808Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
-  notes: Merged 1 duplicate ingredient(s)
-- timestamp: '2026-03-13T06:19:19.120682Z'
+  notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:13.575769Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:003275'
-- timestamp: '2026-03-17T06:30:31.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:010400'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:30:43.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:33.034015+00:00'
+- timestamp: '2026-03-17T19:46:32.547951+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHYLOBACTER MR1 MEDIUM" to "methylobacter_mr1_medium"
+  notes: Normalized name from "Methylobacter MR1 Medium" to "methylobacter_mr1_medium"
     for consistent matching
-merge_fingerprint: 288785d42fef22910df6fbc45296f4a9283332636346308751182a5098772bc8
+- timestamp: '2026-05-16T09:03:22.460363+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:46.185747+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:34.346025+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:46:52.201377+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:20.965207+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 6e8c0c5234821d3c13a33e68e684662f1a9374faede80bc99b1fcf638175a2e8
+  source: TOGO_M974_Methylobacter_MR1_Medium.yaml
+solutions:
+- preferred_term: 1 mM CuSO4・5H2O solution
+  composition: []
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Solution, Inorganic
+    compound'
+  name: Unknown solution
+- preferred_term: Trace mineral solution (see below)
+  composition: []
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: 8% NaHCO3 solution
+  composition: []
+  concentration:
+    value: '1.25'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+  name: Unknown solution
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: 6e8c0c5234821d3c13a33e68e684662f1a9374faede80bc99b1fcf638175a2e8
 merged_from:
-- methylobacter_mr1_medium
+- TOGO_M974_Methylobacter_MR1_Medium

@@ -3,6 +3,7 @@ name: 28_mh_medium
 original_name: 28% MH MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.5
 media_term:
@@ -19,8 +20,8 @@ ingredients:
   concentration:
     value: '195'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgCl2
   term:
@@ -29,18 +30,18 @@ ingredients:
   concentration:
     value: '32.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000663
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6636
     label: MgCl2
 - preferred_term: MgSO4
   term:
     id: CHEBI:32599
-    label: MgSO4
+    label: magnesium sulfate
   concentration:
     value: '50.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: MgSO4
 - preferred_term: CaCl2
   term:
@@ -49,8 +50,8 @@ ingredients:
   concentration:
     value: '0.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
     label: CaCl2
 - preferred_term: KCl
   term:
@@ -59,8 +60,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: NaHCO3
   term:
@@ -69,18 +70,18 @@ ingredients:
   concentration:
     value: '0.16'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: NaBr
   term:
     id: CHEBI:63004
-    label: NaBr
+    label: sodium bromide
   concentration:
     value: '0.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000189
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63004
     label: NaBr
 - preferred_term: Yeast extract
   concentration:
@@ -94,8 +95,8 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -125,6 +126,21 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "28% MH MEDIUM" to "28_mh_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:15.716446+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:42.527156+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:33.970988+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b14fb93a09558bf784acaa8ffdb75380a5593a80a73dc76aeecddb81e55c2dce
+  source: 28_mh_medium.yaml
 high_metal: true
 kg_microbe_match: mediadive.medium:1460
 merge_fingerprint: b14fb93a09558bf784acaa8ffdb75380a5593a80a73dc76aeecddb81e55c2dce

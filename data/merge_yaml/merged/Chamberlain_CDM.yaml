@@ -3,12 +3,16 @@ name: chamberlain_cdm
 original_name: Chamberlain CDM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '7.348'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: L-Arginine
   term:
     id: CHEBI:16467
@@ -17,13 +21,16 @@ ingredients:
     value: '2.296'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:arg-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000289
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16467
     label: L-Arginine
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '5.741'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -31,9 +38,9 @@ ingredients:
   concentration:
     value: '171.12'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -41,13 +48,16 @@ ingredients:
   concentration:
     value: '22.2'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.007194'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -55,8 +65,8 @@ ingredients:
   concentration:
     value: '0.5477'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Calcium pantothenate
   term:
@@ -65,8 +75,8 @@ ingredients:
   concentration:
     value: '0.004197'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium pantothenate
 - preferred_term: Thiamine HCl
   term:
@@ -75,8 +85,8 @@ ingredients:
   concentration:
     value: '0.01186'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Threonine
   concentration:
@@ -89,13 +99,16 @@ ingredients:
   concentration:
     value: '2.681'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000774
-    label: DL-methionine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16811
+    label: DL-Methionine
 - preferred_term: Isoleucine
   concentration:
     value: '3.049'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:17191
+    label: ''
 - preferred_term: Spermine phosphate
   concentration:
     value: '0.1004'
@@ -118,13 +131,16 @@ ingredients:
     value: '3.049'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:leu-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000278
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15603
     label: L-Leucine
 - preferred_term: Valine
   concentration:
     value: '3.414'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:16414
+    label: ''
 - preferred_term: L-Histidine
   term:
     id: CHEBI:15971
@@ -133,8 +149,8 @@ ingredients:
     value: '1.289'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:his-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000272
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15971
     label: L-Histidine
 - preferred_term: L-Proline
   term:
@@ -144,8 +160,8 @@ ingredients:
     value: '17.37'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pro-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000280
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17203
     label: L-Proline
 - preferred_term: L-Aspartate
   concentration:
@@ -160,8 +176,8 @@ ingredients:
     value: '2.736'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:lys-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000318
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18019
     label: L-Lysine
 - preferred_term: DL-Serine
   concentration:
@@ -175,8 +191,8 @@ ingredients:
     value: '2.208'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:tyr-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000316
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17895
     label: L-Tyrosine
 preparation_steps:
 - step_number: 1
@@ -207,6 +223,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Chamberlain CDM" to "chamberlain_cdm" for consistent
     matching
+- timestamp: '2026-06-05T07:40:53.049650+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 12 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:27.206496+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 7dc58d4d6ed3a97810baf76ede3d0968cbb8cf55e3714c0dabceaf63e7a803b7
+  source: chamberlain_cdm.yaml
 media_term:
   preferred_term: MediaDB Medium 313
   term:
@@ -219,6 +246,6 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
-merge_fingerprint: c20b0e81bc75f268b6c1ac84184d1acf53a9b799056253239b1e4c0dae333842
+merge_fingerprint: 7dc58d4d6ed3a97810baf76ede3d0968cbb8cf55e3714c0dabceaf63e7a803b7
 merged_from:
 - chamberlain_cdm

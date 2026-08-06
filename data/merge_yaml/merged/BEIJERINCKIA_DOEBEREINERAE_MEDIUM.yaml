@@ -3,6 +3,7 @@ name: beijerinckia_doebereinerae_medium
 original_name: BEIJERINCKIA DOEBEREINERAE MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ph_value: 6.5
 media_term:
@@ -16,22 +17,22 @@ ingredients:
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -40,8 +41,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: FeCl3 x 6 H2O
   term:
@@ -50,8 +51,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000218
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86254
     label: FeCl3 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -60,8 +61,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: Na2MoO4 x 7 H2O
   term:
@@ -70,8 +71,8 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000696
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86473
     label: Na2MoO4 x 7 H2O
 - preferred_term: Glucose
   term:
@@ -80,8 +81,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Agar
   term:
@@ -91,8 +92,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -118,10 +119,37 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "BEIJERINCKIA DOEBEREINERAE MEDIUM" to "beijerinckia_doebereinerae_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:17.220239+00:00'
+- timestamp: '2026-06-05T07:40:19.974654+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:43.838285+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:41.616825+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_1215_BEIJERINCKIA_DOEBEREINERAE_MEDIUM, beijerinckia_doebereinerae_medium'
+- timestamp: '2026-08-06T03:04:41.616875+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint de031d8f4f56beff5dcfa863c52273e92f7f7c9113757f3658d41c30b012eb1d
+  source: KOMODO_1215_BEIJERINCKIA_DOEBEREINERAE_MEDIUM.yaml, beijerinckia_doebereinerae_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/beijerinckia_doebereinerae_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000673
+  name: beijerinckia_doebereinerae_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 1215; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 1215; local ingredient
+  and concentration signatures match.
 categories:
 - bacterial
 merged_from:

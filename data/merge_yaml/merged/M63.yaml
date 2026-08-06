@@ -3,6 +3,7 @@ name: m63
 original_name: M63
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose
@@ -13,8 +14,8 @@ ingredients:
     value: '10.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Sodium hydroxide
   concentration:
@@ -30,23 +31,26 @@ ingredients:
   concentration:
     value: '0.16'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.0039'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Sodium dihydrogen phosphate
   concentration:
     value: '100.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: Sodium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
   term:
-    id: CHEBI:37583
-    label: ''
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
@@ -54,9 +58,9 @@ ingredients:
   concentration:
     value: '15.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -85,6 +89,23 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "M63" to "m63" for consistent matching
+- timestamp: '2026-06-05T07:41:11.877984+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-09T01:42:21.057484+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:05:40.971900+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 426c2bfa8c7371428d4157e5fb708d6bea20a2ec05b59b0ca269388d81936b6e
+  source: m63.yaml
 media_term:
   preferred_term: MediaDB Medium 133
   term:
@@ -97,6 +118,6 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
-merge_fingerprint: 065c17be408725fbd3b4eb9ffe6590ed7702c9d89b2628a72519099e3970b55e
+merge_fingerprint: 426c2bfa8c7371428d4157e5fb708d6bea20a2ec05b59b0ca269388d81936b6e
 merged_from:
 - m63

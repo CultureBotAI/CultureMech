@@ -3,6 +3,7 @@ name: z_medium
 original_name: Z medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 563
@@ -19,8 +20,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -29,8 +30,8 @@ ingredients:
   concentration:
     value: '0.367'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: NaCl
   term:
@@ -39,8 +40,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Casein hydrolysate
   concentration:
@@ -73,10 +74,32 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "Z medium" to "z_medium" for consistent matching
-- timestamp: '2026-04-17T06:29:29.115446+00:00'
+- timestamp: '2026-06-05T07:40:24.623191+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:55.530765+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_563_Z_medium, z_medium'
+- timestamp: '2026-08-06T03:04:55.530810+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 2fd656e5a42e385c07ae65556ca9878a5c7e9a4ea289c76dfc8161c7cd93d530
+  source: KOMODO_563_Z_medium.yaml, z_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/z_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001697
+  name: z_medium
+  notes: KOMODO record states DSMZ Medium 563 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 categories:
 - bacterial
 merged_from:

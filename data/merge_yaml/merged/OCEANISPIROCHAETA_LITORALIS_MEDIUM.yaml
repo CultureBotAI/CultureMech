@@ -3,6 +3,7 @@ name: oceanispirochaeta_litoralis_medium
 original_name: OCEANISPIROCHAETA LITORALIS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:
@@ -19,8 +20,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Trypticase peptone
   concentration:
@@ -34,6 +35,9 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
+  term:
+    id: CHEBI:9754
+    label: ''
 - preferred_term: Sea water
   concentration:
     value: '750'
@@ -42,6 +46,9 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -49,8 +56,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
     label: L-Cysteine HCl x H2O
 preparation_steps:
 - step_number: 1
@@ -79,10 +86,30 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "OCEANISPIROCHAETA LITORALIS MEDIUM" to "oceanispirochaeta_litoralis_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:30:18.627942+00:00'
+- timestamp: '2026-06-05T07:41:40.379858+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:51.912689+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: oceanispirochaeta_litoralis_medium, spirochaeta_litoralis_medium'
+- timestamp: '2026-08-06T03:05:51.912732+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 4efd972972fa2176093b4e8be0c07a877a787e20f8587f5d36608f541499bae6
+  source: oceanispirochaeta_litoralis_medium.yaml, spirochaeta_litoralis_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/spirochaeta_litoralis_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004202
+  name: spirochaeta_litoralis_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.
 synonyms:
 - name: spirochaeta_litoralis_medium
   source: KOMODO
@@ -93,4 +120,4 @@ categories:
 merged_from:
 - oceanispirochaeta_litoralis_medium
 - spirochaeta_litoralis_medium
-merge_fingerprint: dcadecaedd54e1bef4fc47ba413ae18fa80596f6fa6278e25f28fc00954d90d0
+merge_fingerprint: 4efd972972fa2176093b4e8be0c07a877a787e20f8587f5d36608f541499bae6

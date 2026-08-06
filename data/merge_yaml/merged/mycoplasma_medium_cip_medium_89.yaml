@@ -3,8 +3,11 @@ name: mycoplasma_medium_cip_medium_89
 original_name: MYCOPLASMA MEDIUM (CIP MEDIUM 89)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_range: 7-7.4
+ph_range:
+  min: 7.0
+  max: 7.4
 media_term:
   preferred_term: DSMZ Medium 1080
   term:
@@ -27,8 +30,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001075
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31991
     label: Phenol red
 - preferred_term: Horse serum
   concentration:
@@ -41,8 +44,8 @@ ingredients:
   concentration:
     value: '4.7619'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000826
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28971
     label: Ampicillin
 - preferred_term: L-Arginine x HCl
   concentration:
@@ -51,8 +54,8 @@ ingredients:
   term:
     id: CHEBI:31235
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000576
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31235
     label: L-Arginine x HCl
 preparation_steps:
 - step_number: 1
@@ -90,6 +93,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MYCOPLASMA MEDIUM (CIP MEDIUM 89)" to "mycoplasma_medium_cip_medium_89"
     for consistent matching
+- timestamp: '2026-05-20T06:02:00.570794+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7-7.4'' -> {''min'': 7.0, ''max'': 7.4}'
+- timestamp: '2026-06-05T07:41:39.040872+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:50.924135+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d3015f9dd36524303b6c4126660ed272420da6d76554e35dce3d36e3b27f8139
+  source: mycoplasma_medium_cip_medium_89.yaml
 merge_fingerprint: d3015f9dd36524303b6c4126660ed272420da6d76554e35dce3d36e3b27f8139
 merged_from:
 - mycoplasma_medium_cip_medium_89

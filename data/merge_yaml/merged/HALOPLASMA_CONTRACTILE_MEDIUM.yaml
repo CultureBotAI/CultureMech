@@ -3,8 +3,11 @@ name: haloplasma_contractile_medium
 original_name: HALOPLASMA CONTRACTILE medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_range: 6.5-7.0
+ph_range:
+  min: 6.5
+  max: 7.0
 media_term:
   preferred_term: KOMODO Medium 1231
   term:
@@ -21,18 +24,18 @@ ingredients:
     value: '107.7'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 80.0, 27.7]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Yeast extract
   concentration:
@@ -49,8 +52,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
     label: Starch
 - preferred_term: Na2S x 9 H2O
   term:
@@ -59,8 +62,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 - preferred_term: Resazurin
   term:
@@ -69,8 +72,8 @@ ingredients:
   concentration:
     value: 5e-07
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -79,8 +82,8 @@ ingredients:
   concentration:
     value: '7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -89,8 +92,8 @@ ingredients:
   concentration:
     value: '5.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: KCl
   term:
@@ -99,28 +102,28 @@ ingredients:
   concentration:
     value: '0.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: NaBr
   term:
     id: CHEBI:63004
-    label: NaBr
+    label: sodium bromide
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000189
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63004
     label: NaBr
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -129,8 +132,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: SrCl2 x 6 H2O
   term:
@@ -139,8 +142,8 @@ ingredients:
   concentration:
     value: '0.015'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000463
+  mediaingredientmech_chebi_term:
+    id: CHEBI:36385
     label: SrCl2 x 6 H2O
 - preferred_term: KI
   term:
@@ -159,8 +162,8 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Double distilled water
 applications:
 - Microbial cultivation
@@ -190,13 +193,44 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HALOPLASMA CONTRACTILE medium" to "haloplasma_contractile_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:17.473601+00:00'
+- timestamp: '2026-05-20T06:00:49.648792+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.5-7.0'' -> {''min'': 6.5, ''max'': 7.0}'
+- timestamp: '2026-06-05T07:40:20.161875+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 13 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:43.901027+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:41.949105+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_1231_HALOPLASMA_CONTRACTILE_medium, haloplasma_contractile_medium'
+- timestamp: '2026-08-06T03:04:41.949147+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 88a27197170fe3ad7fcf4264075cbdd0f11756bdb75acd523b7ea19fb5f20b61
+  source: KOMODO_1231_HALOPLASMA_CONTRACTILE_medium.yaml, haloplasma_contractile_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/haloplasma_contractile_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000690
+  name: haloplasma_contractile_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 1231; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 1231; local ingredient
+  and concentration signatures match.
 categories:
 - bacterial
 merged_from:
 - KOMODO_1231_HALOPLASMA_CONTRACTILE_medium
 - haloplasma_contractile_medium
-merge_fingerprint: 3609b199581abf9b7e1bf6c6c6cce0a3144c911b5d2054ddd2dc58a852dcda1c
+merge_fingerprint: 88a27197170fe3ad7fcf4264075cbdd0f11756bdb75acd523b7ea19fb5f20b61

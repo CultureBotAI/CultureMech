@@ -1,6 +1,7 @@
 id: CultureMech:015466
 name: LB_10mMNitrate
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Tryptone
@@ -32,7 +33,7 @@ ingredients:
     84.99'
 description: Luria-Bertani broth
 notes: 'Source: FEBA media definitions'
-category: BACTERIAL
+category: bacterial
 sources:
 - database: CultureBotHT
   database_id: LB_10mMNitrate
@@ -46,6 +47,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015466'
+- timestamp: '2026-05-16T09:03:38.752748+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:05:39.939574+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 8002f6bd6cb647c8797510176569bbb55fc2cd2e604f2c97e2858c01f64ce560
+  source: lb_10mmnitrate.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: 8002f6bd6cb647c8797510176569bbb55fc2cd2e604f2c97e2858c01f64ce560

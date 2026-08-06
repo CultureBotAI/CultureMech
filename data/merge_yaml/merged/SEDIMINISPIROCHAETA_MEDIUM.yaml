@@ -3,6 +3,7 @@ name: sediminispirochaeta_medium
 original_name: SEDIMINISPIROCHAETA MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:
@@ -24,15 +25,18 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: Na-thioglycolate
   term:
     id: CHEBI:86481
-    label: Na-thioglycolate
+    label: sodium thioglycolate
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000569
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86481
     label: Na-thioglycolate
 - preferred_term: Cellobiose
   term:
@@ -41,8 +45,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001069
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17057
     label: Cellobiose
 - preferred_term: Charcoal-filtered, natural seawater
   concentration:
@@ -81,11 +85,40 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "SEDIMINISPIROCHAETA MEDIUM" to "sediminispirochaeta_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:30:10.207947+00:00'
+- timestamp: '2026-06-05T07:41:45.598669+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:11.405197+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:42.506770+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: medium_1008_modified_for_dsm_19205, medium_1008_modified_for_dsm_19230,
     sediminispirochaeta_medium'
+- timestamp: '2026-08-06T03:05:42.506819+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 91642e3d67d42f4c35fa0e83b932b6d1e243af51385c0132f5913111f8d6fea2
+  source: medium_1008_modified_for_dsm_19205.yaml, medium_1008_modified_for_dsm_19230.yaml,
+    sediminispirochaeta_medium.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_1008_modified_for_dsm_19205.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003511
+  name: medium_1008_modified_for_dsm_19205
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_1008_modified_for_dsm_19230.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003512
+  name: medium_1008_modified_for_dsm_19230
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 synonyms:
 - name: medium_1008_modified_for_dsm_19205
   source: KOMODO
@@ -101,4 +134,4 @@ merged_from:
 - medium_1008_modified_for_dsm_19205
 - medium_1008_modified_for_dsm_19230
 - sediminispirochaeta_medium
-merge_fingerprint: 84b4a810fb86838d652b37694e7454dde0db5cd08ca7be283da0892bb5d3a395
+merge_fingerprint: 91642e3d67d42f4c35fa0e83b932b6d1e243af51385c0132f5913111f8d6fea2

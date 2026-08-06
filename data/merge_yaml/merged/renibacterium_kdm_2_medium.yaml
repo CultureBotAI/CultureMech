@@ -1,75 +1,115 @@
-id: CultureMech:002685
+id: CultureMech:008770
 name: renibacterium_kdm_2_medium
-original_name: RENIBACTERIUM KDM-2 MEDIUM
+original_name: Renibacterium KDM-2 medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_value: 6.5
-media_term:
-  preferred_term: JCM Medium J327
-  term:
-    id: mediadive.medium:J327
-    label: RENIBACTERIUM KDM-2 MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=327'
 ingredients:
-- preferred_term: Bacto peptone
+- preferred_term: Distilled water
   concentration:
-    value: '10'
+    value: '80'
     unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
-    value: '0.5'
+    value: '0.05'
     unit: G_PER_L
-- preferred_term: L-Cysteine HCl x H2O
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Agar
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
   term:
-    id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: L-Cysteine . HCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+- preferred_term: Peptone
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
-    label: L-Cysteine HCl x H2O
-- preferred_term: Agar
+- preferred_term: NaOH
+  notes: 'Properties: Defined component, Inorganic compound, Simple component'
   term:
-    id: CHEBI:2509
-    label: Agar
+    id: CHEBI:32145
+    label: sodium hydroxide
   concentration:
-    value: '15'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
-- preferred_term: Fetal bovine serum
-  concentration:
-    value: '200'
-    unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Dissolve peptone, yeast extract and cysteine in 800 ml of distilled
-    water. Adjust pH to 6.5 with NaOH. Add agar and dissolve by heating. After autoclaving,
-    cool to 45C and add serum.
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+media_term:
+  preferred_term: TOGO Medium M2176
+  term:
+    id: TOGO:M2176
+    label: Renibacterium KDM-2 medium
+notes: 'Source: https://togomedium.org/medium/M2176
+
+  Original URL: https://www.atcc.org/~/media/C5DA8BD389F44EC19C8D094B271B63B2.ashx'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:16.307591Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J327'
-- timestamp: '2026-03-13T06:19:15.026185Z'
+- timestamp: '2026-01-27T06:35:56.124549Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2176'
+- timestamp: '2026-01-28T19:48:31.443092Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-03-13T06:20:00.186474Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002685'
-- timestamp: '2026-03-17T06:30:45.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:008770'
+- timestamp: '2026-03-17T06:30:32.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:28.362818+00:00'
+- timestamp: '2026-03-17T19:46:18.850050+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "RENIBACTERIUM KDM-2 MEDIUM" to "renibacterium_kdm_2_medium"
+  notes: Normalized name from "Renibacterium KDM-2 medium" to "renibacterium_kdm_2_medium"
     for consistent matching
-merge_fingerprint: e65e829610d63e020714de84b101a8eb7a4a4afcfbb42af0d9423c524f3a0ba6
+- timestamp: '2026-05-16T09:03:12.471505+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:35.625565+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:10.597089+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d2393c3bde01e2c94d96db2022877f598a0dfb07f553256fcf9725e9ab0c3db3
+  source: TOGO_M2176_Renibacterium_KDM-2_medium.yaml
+merge_fingerprint: d2393c3bde01e2c94d96db2022877f598a0dfb07f553256fcf9725e9ab0c3db3
 merged_from:
-- renibacterium_kdm_2_medium
+- TOGO_M2176_Renibacterium_KDM-2_medium

@@ -3,6 +3,7 @@ name: 1_2_r2a_75_asw
 original_name: 1/2 R2A-75%ASW
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Agar  (if needed)
   concentration:
@@ -36,9 +37,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '1.1'
@@ -48,9 +49,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: H3BO3
   concentration:
     value: '26'
@@ -60,9 +61,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: KCl
   concentration:
     value: '0.66'
@@ -72,9 +73,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: NaHCO3
   concentration:
     value: '0.19'
@@ -84,9 +85,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: Na2SO4
   concentration:
     value: '3.9'
@@ -96,9 +97,9 @@ ingredients:
   term:
     id: CHEBI:32149
     label: sodium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
-    label: Na2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
 - preferred_term: NaF
   concentration:
     value: '3'
@@ -108,9 +109,9 @@ ingredients:
   term:
     id: CHEBI:28741
     label: sodium fluoride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000182
-    label: NaF
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28741
+    label: sodium fluoride
 - preferred_term: KBr
   concentration:
     value: '96'
@@ -120,9 +121,9 @@ ingredients:
   term:
     id: CHEBI:32030
     label: potassium bromide
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001123
-    label: KBr
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32030
+    label: potassium bromide
 - preferred_term: SrCl2
   concentration:
     value: '24'
@@ -132,9 +133,9 @@ ingredients:
   term:
     id: CHEBI:36383
     label: strontium dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000196
-    label: SrCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:36383
+    label: strontium dichloride
 - preferred_term: MgCl2
   concentration:
     value: '4.9'
@@ -144,9 +145,9 @@ ingredients:
   term:
     id: CHEBI:6636
     label: magnesium dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000663
-    label: MgCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
 media_term:
   preferred_term: TOGO Medium M1775
   term:
@@ -181,9 +182,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008341'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:51.127028'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:37.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -193,6 +194,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "1/2 R2A-75%ASW" to "1_2_r2a_75_asw" for consistent
     matching
+- timestamp: '2026-05-16T09:02:58.074471+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:15.506377+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 11 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:42.490389+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:33.712756+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 5375118ed6e82068432f9ce3f109eb7624bf23ffd243add86731ac14763fe726
+  source: 1_2_r2a_75_asw.yaml
 solutions:
 - preferred_term: Artificial sea water*
   term:

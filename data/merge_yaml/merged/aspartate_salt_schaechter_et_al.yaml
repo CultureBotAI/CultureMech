@@ -3,6 +3,7 @@ name: aspartate_salt_schaechter_et_al
 original_name: Aspartate salt; schaechter et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Citrate
@@ -10,6 +11,9 @@ ingredients:
     value: '5.20497'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: D-Aspartate
   concentration:
     value: '0.901578'
@@ -19,6 +23,9 @@ ingredients:
   concentration:
     value: '28.0899'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Potassium chloride
   concentration:
     value: '9.92605'
@@ -26,9 +33,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -36,8 +43,8 @@ ingredients:
   concentration:
     value: '0.405729'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Sodium ammonium phosphate
   concentration:
@@ -76,6 +83,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Aspartate salt; schaechter et al" to "aspartate_salt_schaechter_et_al"
     for consistent matching
+- timestamp: '2026-06-05T07:40:49.911507+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:24.270472+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 0e90e2808aa6542aeb223b64cbbe596ee9d8a3b4734f0b4a80779c1ffc51c0a7
+  source: aspartate_salt_schaechter_et_al.yaml
 media_term:
   preferred_term: MediaDB Medium 232
   term:
@@ -88,6 +106,6 @@ applications:
 - Metabolic modeling
 - Systems biology research
 kg_microbe_match: mediadive.medium:J526
-merge_fingerprint: bc324cffef4dfff7fcc242091464e964e29b0cdd666f562b483e8728bf63a49c
+merge_fingerprint: 0e90e2808aa6542aeb223b64cbbe596ee9d8a3b4734f0b4a80779c1ffc51c0a7
 merged_from:
 - aspartate_salt_schaechter_et_al

@@ -1,6 +1,7 @@
 id: CultureMech:015746
 name: ShewMM noNitrogen
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sodium Chloride
@@ -179,8 +180,8 @@ ingredients:
     value: '0.1'
     unit: MG_PER_L
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Wolfe''s vitamin
     mix'
 - preferred_term: 4-Aminobenzoic acid
@@ -266,7 +267,7 @@ ingredients:
     From Wolfe''s vitamin mix'
 description: Shewanella minimal media with no nitrogen
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: ShewMM noNitrogen
@@ -280,8 +281,27 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015746'
+- timestamp: '2026-05-16T09:04:43.503066+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:54.252624+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:47:15.840934+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:08.487772+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 55ec6a33a056f56ca523a25d54de375d9b771bae632543c7fce8680d608bd98d
+  source: shewmm_nonitrogen.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: 23686ceab300c76cc99ff45ecce28cd099026e852605875a2790a1730416f715
+merge_fingerprint: 55ec6a33a056f56ca523a25d54de375d9b771bae632543c7fce8680d608bd98d
 merged_from:
 - shewmm_nonitrogen

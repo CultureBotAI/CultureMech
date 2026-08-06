@@ -3,6 +3,7 @@ name: modified_m63_medium_with_ectoine_and_2_5_m_nacl
 original_name: Modified m63 medium with ectoine and 2.5 m nacl
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Ectoine
@@ -23,6 +24,9 @@ ingredients:
   concentration:
     value: '100.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -30,9 +34,9 @@ ingredients:
   concentration:
     value: '600.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -40,13 +44,16 @@ ingredients:
   concentration:
     value: '0.16'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.0018'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
@@ -54,9 +61,9 @@ ingredients:
   concentration:
     value: '15.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -86,11 +93,23 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Modified m63 medium with ectoine and 2.5 m nacl" to
     "modified_m63_medium_with_ectoine_and_2_5_m_nacl" for consistent matching
-- timestamp: '2026-04-17T06:30:16.175641+00:00'
+- timestamp: '2026-06-05T07:41:36.934605+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:48.641524+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: modified_m63_medium_with_ectoine_and_0_6_m_nacl, modified_m63_medium_with_ectoine_and_0_75_m_nacl,
     modified_m63_medium_with_ectoine_and_1_5_m_nacl, modified_m63_medium_with_ectoine_and_2_5_m_nacl'
+- timestamp: '2026-08-06T03:05:48.641590+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 4 source recipe(s) on fingerprint 45d242b52b11a53beaef734ea7584b00bec40f29c890b55b02c3648a3b3ec5dc
+  source: modified_m63_medium_with_ectoine_and_0_6_m_nacl.yaml, modified_m63_medium_with_ectoine_and_0_75_m_nacl.yaml,
+    modified_m63_medium_with_ectoine_and_1_5_m_nacl.yaml, modified_m63_medium_with_ectoine_and_2_5_m_nacl.yaml
 media_term:
   preferred_term: MediaDB Medium 11
   term:
@@ -103,6 +122,14 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
+parent_media:
+  path: data/normalized_yaml/bacterial/modified_m63_medium_with_ectoine_and_0_6_m_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:007437
+  name: modified_m63_medium_with_ectoine_and_0_6_m_nacl
+variant_relationship: SALINITY_VARIANT
+variant_modifications:
+- Name suggests salt/salinity change; verify concentration delta against source.
 synonyms:
 - name: modified_m63_medium_with_ectoine_and_0_6_m_nacl
   source: unknown
@@ -123,4 +150,4 @@ merged_from:
 - modified_m63_medium_with_ectoine_and_0_75_m_nacl
 - modified_m63_medium_with_ectoine_and_1_5_m_nacl
 - modified_m63_medium_with_ectoine_and_2_5_m_nacl
-merge_fingerprint: b353cda37801cee6f6de9edd002239992628944e9e0160cc39c3a6bfb7a879dc
+merge_fingerprint: 45d242b52b11a53beaef734ea7584b00bec40f29c890b55b02c3648a3b3ec5dc

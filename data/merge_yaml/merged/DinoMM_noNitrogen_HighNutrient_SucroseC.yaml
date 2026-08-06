@@ -1,6 +1,7 @@
 id: CultureMech:015463
 name: DinoMM noNitrogen HighNutrient SucroseC
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sea salts
@@ -151,8 +152,8 @@ ingredients:
     value: '0.1'
     unit: MG_PER_L
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Wolfe''s vitamin
     mix'
 - preferred_term: 4-Aminobenzoic acid
@@ -239,7 +240,7 @@ ingredients:
 description: Minimal media for marine bacteria with no nitrogen source, sucrose as
   a carbon source, and more vitamins and minerals
 notes: 'Source: FEBA media definitions'
-category: BACTERIAL
+category: bacterial
 sources:
 - database: CultureBotHT
   database_id: DinoMM noNitrogen HighNutrient SucroseC
@@ -253,8 +254,27 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015463'
+- timestamp: '2026-05-16T09:03:30.880571+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:37.890258+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:46:56.409877+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:32.968715+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 3f47867a92dca629b2efd905f95675bcda1f83c7e3980bcedbac4624a588f8ed
+  source: dinomm_nonitrogen_highnutrient_sucrosec.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: 41ef0f8ec580e3d1f9ce5ca1bbd20de612e71dafab9b81e5a55c5ad08dfa091c
+merge_fingerprint: 3f47867a92dca629b2efd905f95675bcda1f83c7e3980bcedbac4624a588f8ed
 merged_from:
 - dinomm_nonitrogen_highnutrient_sucrosec

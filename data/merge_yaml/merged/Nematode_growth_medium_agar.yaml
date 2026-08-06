@@ -1,6 +1,7 @@
 id: CultureMech:015646
 name: Nematode growth medium agar
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sodium Chloride
@@ -60,7 +61,7 @@ ingredients:
   notes: 'CAS: 7758-11-4; MW: 174.18'
 description: Used for growing C. elegans
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: Nematode growth medium agar
@@ -74,6 +75,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015646'
+- timestamp: '2026-05-16T09:04:42.046032+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:06.913938+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 040a17f5bfdfc858dfbddd0eb44550a71e18d79af926f62734dcfd0f09e847d2
+  source: nematode_growth_medium_agar.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: 040a17f5bfdfc858dfbddd0eb44550a71e18d79af926f62734dcfd0f09e847d2

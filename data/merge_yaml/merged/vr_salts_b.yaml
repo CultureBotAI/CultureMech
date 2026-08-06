@@ -3,6 +3,7 @@ name: vr_salts_b
 original_name: VR salts B
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 3133 | DSMZ Medium: 3133
@@ -20,8 +21,8 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
     label: NaOH
   term:
     id: CHEBI:32145
@@ -38,9 +39,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:004981'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:34.655409'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH'
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:09.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -49,7 +50,17 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "VR salts B" to "vr_salts_b" for consistent matching
-- timestamp: '2026-04-17T06:30:03.051068+00:00'
+- timestamp: '2026-05-16T09:04:38.676514+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:55.196395+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:33.899612+00:00'
   curator: recipe-merger
   action: Merged 9 duplicate recipes into canonical record
   notes: 'Sources: fe_iii_nta_solution_medium_1001, hutners_salts_medium_590, mineral_salt_solution_medium_289,
@@ -57,6 +68,15 @@ curation_history:
     trace_element_solution_sl_4_medium_457, trace_metal_solution_kelly_solution_t,
     trace_metal_solution_kelly_solution_t_replace_cacl2_x_2_h2o_with_cacl2_x_2_h2o,
     vr_salts_b'
+- timestamp: '2026-08-06T03:05:33.899666+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 9 source recipe(s) on fingerprint e97cce461170431dd3967233cce26e79fd110a94fda9faffa3f081834981a89c
+  source: fe_iii_nta_solution_medium_1001.yaml, hutners_salts_medium_590.yaml, mineral_salt_solution_medium_289.yaml,
+    solution_of_growth_stimulating_factors_medium_829.yaml, trace_element_solution_medium_939.yaml,
+    trace_element_solution_sl_4_medium_457.yaml, trace_metal_solution_kelly_solution_t.yaml,
+    trace_metal_solution_kelly_solution_t_replace_cacl2_x_2_h2o_with_cacl2_x_2_h2o.yaml,
+    vr_salts_b.yaml
 synonyms:
 - name: fe_iii_nta_solution_medium_1001
   source: KOMODO

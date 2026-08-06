@@ -3,6 +3,7 @@ name: rpmi_medium_supplemented_with_2_fetal_bovine_serum
 original_name: RPMI medium (supplemented with 2% fetal bovine serum)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: fetal bovine serum
@@ -37,6 +38,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "RPMI medium (supplemented with 2% fetal bovine serum)"
     to "rpmi_medium_supplemented_with_2_fetal_bovine_serum" for consistent matching
+- timestamp: '2026-08-06T03:05:54.881510+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 188494b646a8fef9472f90257540e2318fde17cfab6f8d43cdc03c7acdcac0e2
+  source: rpmi_medium_supplemented_with_2_fetal_bovine_serum.yaml
 merge_fingerprint: 188494b646a8fef9472f90257540e2318fde17cfab6f8d43cdc03c7acdcac0e2
 merged_from:
 - rpmi_medium_supplemented_with_2_fetal_bovine_serum

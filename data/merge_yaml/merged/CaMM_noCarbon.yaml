@@ -1,6 +1,7 @@
 id: CultureMech:015501
 name: CaMM noCarbon
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: K2HPO4
@@ -17,7 +18,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:63036
-    label: ''
+    label: potassium dihydrogen phosphate
 - preferred_term: Ammonium Sulfate
   concentration:
     value: '1.00E+00'
@@ -56,6 +57,9 @@ ingredients:
     value: '6.25E-02'
     unit: G_PER_L
   notes: 'CAS: 139-33-3; MW: 336.21'
+  term:
+    id: CHEBI:64758
+    label: ''
 - preferred_term: Zinc sulfate heptahydrate
   concentration:
     value: '2.25E-02'
@@ -101,9 +105,12 @@ ingredients:
     value: '1.40E-03'
     unit: G_PER_L
   notes: 'CAS: 12027-67-7; MW: 1235.86'
+  term:
+    id: CHEBI:91249
+    label: ''
 description: Used for growing Xanthomonas
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: CaMM noCarbon
@@ -117,8 +124,21 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015501'
+- timestamp: '2026-05-16T09:04:40.351001+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-10T07:47:15.057488+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:04.871250+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 0a045d7583781cfb2ff4c4b0cff5ac4232c4bd79cbff9eaba3f4fde9427bf03e
+  source: camm_nocarbon.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: d972f7297ede6c08e69068f22f6a79fa041ded655ac5ff0139ba7b0d59b73284
+merge_fingerprint: 0a045d7583781cfb2ff4c4b0cff5ac4232c4bd79cbff9eaba3f4fde9427bf03e
 merged_from:
 - camm_nocarbon

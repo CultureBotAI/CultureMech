@@ -3,6 +3,7 @@ name: medium_163_modified_for_dsm_10520
 original_name: MEDIUM 163 MODIFIED FOR DSM 10520
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 notes: 'pH buffer: sodium bicarbonate | Source: KOMODO ModelSEED | ID: 163_10520 |
@@ -20,38 +21,38 @@ ingredients:
   concentration:
     value: '25.5102'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.510204'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '1.02041'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
-    label: Na2SO4
+    label: sodium sulfate
   concentration:
     value: '1.02041'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Na2SO4
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -60,8 +61,8 @@ ingredients:
   concentration:
     value: '0.102041'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -70,8 +71,8 @@ ingredients:
   concentration:
     value: '2.04082'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Na-DL-lactate
   term:
@@ -80,8 +81,8 @@ ingredients:
   concentration:
     value: '2.04082'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001047
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75228
     label: Na-DL-lactate
 - preferred_term: Yeast extract
   concentration:
@@ -91,6 +92,9 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -98,18 +102,18 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: Na-thioglycolate
   term:
     id: CHEBI:86481
-    label: Na-thioglycolate
+    label: sodium thioglycolate
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000569
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86481
     label: Na-thioglycolate
 - preferred_term: Ascorbic acid
   term:
@@ -118,8 +122,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000326
+  mediaingredientmech_chebi_term:
+    id: CHEBI:22652
     label: Ascorbic acid
 - preferred_term: sodium
   notes: Extracted from recipe notes (pH buffer)
@@ -144,9 +148,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:004188'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:32.592092'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: sodium'
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:15.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -156,6 +160,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MEDIUM 163 MODIFIED FOR DSM 10520" to "medium_163_modified_for_dsm_10520"
     for consistent matching
-merge_fingerprint: b81a3af5daca0a3d7565adace509b16b34ae9d8651f0394c7606ed112fbd6d57
+- timestamp: '2026-05-16T09:04:11.553515+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:15.509133+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:01.720046+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:42.638041+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 1797dae10981d1cbb526d59688c076d07a9c30819f3dd17fc52be9bd23e536bf
+  source: medium_163_modified_for_dsm_10520.yaml
+merge_fingerprint: 1797dae10981d1cbb526d59688c076d07a9c30819f3dd17fc52be9bd23e536bf
 merged_from:
 - medium_163_modified_for_dsm_10520

@@ -1,169 +1,110 @@
-id: CultureMech:009114
+id: CultureMech:001823
 name: columbia_blood_agar
-original_name: Columbia Blood Agar
+original_name: COLUMBIA BLOOD AGAR
 category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: DSMZ Medium 687
+  term:
+    id: mediadive.medium:687
+    label: COLUMBIA BLOOD AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium687.pdf'
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Defibrinated Blood
   concentration:
-    value: '1000'
+    value: '50'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: Horse blood
+- preferred_term: Bacto Panton
   concentration:
-    value: '4'
-    unit: PERCENT_W_V
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Calf brains
-  term:
-    id: UBERON:0000955
-    label: brain
-  concentration:
-    value: variable
-    unit: VARIABLE
-  supplier_catalog:
-    supplier_name: Difco/BD Brain Heart Infusion
-    catalog_number: '237500'
-    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: infusion from 200 g/L; Tissue infusion - source material is calf brain tissue;
-    Constituent of Brain Heart Infusion commercial product
-- preferred_term: Beef heart
-  term:
-    id: UBERON:0000948
-    label: heart
-  concentration:
-    value: variable
-    unit: VARIABLE
-  supplier_catalog:
-    supplier_name: Difco/BD Brain Heart Infusion
-    catalog_number: '237500'
-    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: infusion from 250 g/L; Tissue infusion - source material is beef/ox heart
-    tissue; Constituent of Brain Heart Infusion commercial product
-- preferred_term: Proteose peptone
-  term:
-    id: MICRO:0000180
-    label: proteose peptone
-  concentration:
-    value: '10.0'
+    value: '10'
     unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Difco/BD Brain Heart Infusion
-    catalog_number: '237500'
-    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Enzymatic digest of animal protein providing amino acids and peptides; Constituent
-    of Brain Heart Infusion commercial product
-- preferred_term: Dextrose
-  term:
-    id: CHEBI:17234
-    label: D-glucose
+- preferred_term: Bacto Bitone
   concentration:
-    value: '2.0'
+    value: '10'
     unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Difco/BD Brain Heart Infusion
-    catalog_number: '237500'
-    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Carbon/energy source; Constituent of Brain Heart Infusion commercial product
-  synonyms:
-  - synonym_text: glucose
-    synonym_type: EXACT
-  - synonym_text: D-glucose
-    synonym_type: EXACT
-  - synonym_text: dextrose
-    synonym_type: EXACT
-- preferred_term: Sodium chloride
+- preferred_term: Tryptic Digest of beef heart
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Corn starch
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:28017
+    label: ''
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
+    label: Corn starch
+- preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: sodium chloride
+    label: NaCl
   concentration:
-    value: '5.0'
+    value: '5'
     unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Difco/BD Brain Heart Infusion
-    catalog_number: '237500'
-    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Maintains osmotic equilibrium; Constituent of Brain Heart Infusion commercial
-    product
-  synonyms:
-  - synonym_text: NaCl
-    synonym_type: EXACT
-  - synonym_text: table salt
-    synonym_type: EXACT
-- preferred_term: Disodium phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: Agar
   term:
-    id: CHEBI:34683
-    label: disodium hydrogen phosphate
+    id: CHEBI:2509
+    label: Agar
   concentration:
-    value: '2.5'
+    value: '15'
     unit: G_PER_L
-  supplier_catalog:
-    supplier_name: Difco/BD Brain Heart Infusion
-    catalog_number: '237500'
-    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial
-    product
-  synonyms:
-  - synonym_text: Na2HPO4
-    synonym_type: EXACT
-  - synonym_text: disodium hydrogen phosphate
-    synonym_type: EXACT
-  - synonym_text: sodium phosphate dibasic
-    synonym_type: EXACT
-media_term:
-  preferred_term: TOGO Medium M2545
-  term:
-    id: TOGO:M2545
-    label: Columbia Blood Agar
-notes: 'Source: https://togomedium.org/medium/M2545
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium429.pdf
-
-
-  Commercial Product: Brain Heart Infusion
-
-  Supplier: Difco/BD
-
-  Catalog: 237500
-
-  Source: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-
-  Accessed: 2026-03-28
-
-
-  Constituent composition researched from product specification.'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Suspend 44 g Columbia Blood Agar Base in 1l deionized water. Heat to
+    boiling to dissolve completely.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Sterilize in autoclave for 15 min at 121°C.
+- step_number: 3
+  action: HEAT
+  description: Cool to 45°C. Add 5% sterile defibrinated blood and mix well.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.674907Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2545'
-- timestamp: '2026-01-28T19:48:10.023135Z'
+- timestamp: '2026-01-26T17:53:11.927805Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 687'
+- timestamp: '2026-01-28T19:48:30.378147Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:20:02.767634Z'
+- timestamp: '2026-03-13T06:19:07.490434Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:009114'
-- timestamp: '2026-03-17T06:29:46.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:001823'
+- timestamp: '2026-03-17T06:30:29.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:21.514620+00:00'
+- timestamp: '2026-03-17T19:45:19.812289+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Columbia Blood Agar" to "columbia_blood_agar" for consistent
+  notes: Normalized name from "COLUMBIA BLOOD AGAR" to "columbia_blood_agar" for consistent
     matching
-merge_fingerprint: 06261cb5c8e609949373f921603a60fa7739b4bab1157901377a4a69beef3b12
+- timestamp: '2026-06-05T07:40:16.265409+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:34.819875+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint bdf37fcaa52fd4cf878f3be00061d43b857a4bd0895a051bd4527a2f73ce22c8
+  source: DSMZ_687_COLUMBIA_BLOOD_AGAR.yaml
+kg_microbe_match: mediadive.medium:687
+merge_fingerprint: bdf37fcaa52fd4cf878f3be00061d43b857a4bd0895a051bd4527a2f73ce22c8
 merged_from:
-- TOGO_M2545_Columbia_Blood_Agar
+- DSMZ_687_COLUMBIA_BLOOD_AGAR

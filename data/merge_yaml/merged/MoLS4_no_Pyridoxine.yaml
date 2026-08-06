@@ -1,6 +1,7 @@
 id: CultureMech:015624
 name: MoLS4 no Pyridoxine
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: MoLS4
@@ -12,12 +13,12 @@ ingredients:
     value: '-'
     unit: G_PER_L
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
 description: Lactate-sulfate media for sulfate-reducing bacteria with no pyridoxine
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: MoLS4 no Pyridoxine
@@ -31,8 +32,27 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015624'
+- timestamp: '2026-05-16T09:04:41.887967+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:53.117550+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:47:15.534407+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:06.726707+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 8d41d26693682f96b6e22928730754cf92b930c9dd2ccc0e145b999b1d12feaa
+  source: mols4_no_pyridoxine.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: 96fe7526fc141e42d28c19564778a77b939e266ff5a0a06e7a6a935ee879159a
+merge_fingerprint: 8d41d26693682f96b6e22928730754cf92b930c9dd2ccc0e145b999b1d12feaa
 merged_from:
 - mols4_no_pyridoxine

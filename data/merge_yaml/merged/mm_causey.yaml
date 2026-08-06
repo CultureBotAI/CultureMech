@@ -3,6 +3,7 @@ name: mm_causey
 original_name: MM; Causey
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose
@@ -13,8 +14,8 @@ ingredients:
     value: '111.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Thiamine
   term:
@@ -31,6 +32,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -38,13 +42,16 @@ ingredients:
   concentration:
     value: '0.00081'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '29.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.00097'
@@ -56,6 +63,9 @@ ingredients:
   concentration:
     value: '26.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -63,8 +73,8 @@ ingredients:
   concentration:
     value: '2.1'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Cobalt chloride
   concentration:
@@ -77,6 +87,9 @@ ingredients:
   concentration:
     value: '0.00074'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49553
+    label: ''
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.01'
@@ -120,6 +133,17 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "MM; Causey" to "mm_causey" for consistent matching
+- timestamp: '2026-06-05T07:41:35.255569+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:46.883333+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 3af6705d2f2c0ed82e1d0a370414ebdfcb0a5edfd96612a010b10cde258137b4
+  source: mm_causey.yaml
 media_term:
   preferred_term: MediaDB Medium 167
   term:
@@ -131,6 +155,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: af299d4068d3bdac9462fb9e88d95cab703a261e7d9f5704552c418113fd463a
+merge_fingerprint: 3af6705d2f2c0ed82e1d0a370414ebdfcb0a5edfd96612a010b10cde258137b4
 merged_from:
 - mm_causey

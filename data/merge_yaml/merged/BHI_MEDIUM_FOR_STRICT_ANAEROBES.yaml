@@ -3,8 +3,11 @@ name: bhi_medium_for_strict_anaerobes
 original_name: BHI MEDIUM FOR STRICT ANAEROBES
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_range: 7.2-7.6
+ph_range:
+  min: 7.2
+  max: 7.6
 media_term:
   preferred_term: DSMZ Medium 215c
   term:
@@ -129,8 +132,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
     label: L-Cysteine HCl x H2O
 - preferred_term: Na2S x 9 H2O
   term:
@@ -139,8 +142,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 preparation_steps:
 - step_number: 1
@@ -167,6 +170,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "BHI MEDIUM FOR STRICT ANAEROBES" to "bhi_medium_for_strict_anaerobes"
     for consistent matching
+- timestamp: '2026-05-20T06:01:09.871727+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.6'' -> {''min'': 7.2, ''max'': 7.6}'
+- timestamp: '2026-06-05T07:40:50.902142+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:25.143757+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint bc50d0b7f292df0e8d533ffc2710cdb64c4913457a0a9d8a8e5c040c1ce11c4c
+  source: bhi_medium_for_strict_anaerobes.yaml
 merge_fingerprint: bc50d0b7f292df0e8d533ffc2710cdb64c4913457a0a9d8a8e5c040c1ce11c4c
 merged_from:
 - bhi_medium_for_strict_anaerobes

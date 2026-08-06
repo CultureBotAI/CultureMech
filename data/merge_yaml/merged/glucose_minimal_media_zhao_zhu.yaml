@@ -3,6 +3,7 @@ name: glucose_minimal_media_zhao_zhu
 original_name: '''glucose minimal media (zhao/zhu'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: beta-D-Glucose
@@ -13,16 +14,22 @@ ingredients:
   concentration:
     value: '0.01163'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '41.9058'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Sodium sulfate
   concentration:
     value: '14.0449'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Sodium sulfate
   term:
     id: CHEBI:32149
@@ -34,8 +41,8 @@ ingredients:
   concentration:
     value: '3.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
@@ -44,9 +51,9 @@ ingredients:
   concentration:
     value: '0.001775'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -54,8 +61,8 @@ ingredients:
   concentration:
     value: '9.3474'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Cobalt chloride
   concentration:
@@ -71,19 +78,19 @@ ingredients:
   concentration:
     value: '0.001878'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Sodium dihydrogen phosphate
   concentration:
     value: '30.005'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: Sodium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
   term:
-    id: CHEBI:37583
-    label: ''
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
@@ -91,13 +98,16 @@ ingredients:
   concentration:
     value: '18.919'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.0019223'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.18535'
@@ -135,6 +145,23 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'glucose minimal media (zhao/zhu" to "glucose_minimal_media_zhao_zhu"
     for consistent matching
+- timestamp: '2026-06-05T07:41:06.469642+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-09T01:42:20.640295+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:05:36.277390+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 67ea0fcfc9d8501ca350bf7a6f9db572713c9ac99ab472fb2e05b24637dd80be
+  source: glucose_minimal_media_zhao_zhu.yaml
 media_term:
   preferred_term: MediaDB Medium 132
   term:
@@ -146,6 +173,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: dd8132256e8dfbf7eb78ef8fdcc85f13b848fb73934298aace04d3a50a08b94e
+merge_fingerprint: 67ea0fcfc9d8501ca350bf7a6f9db572713c9ac99ab472fb2e05b24637dd80be
 merged_from:
 - glucose_minimal_media_zhao_zhu

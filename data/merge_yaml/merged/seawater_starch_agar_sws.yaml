@@ -3,6 +3,7 @@ name: seawater_starch_agar_sws
 original_name: Seawater Starch Agar (SWS)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Soluble starch
@@ -10,6 +11,9 @@ ingredients:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Undefined component'
+  term:
+    id: CHEBI:28017
+    label: ''
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -18,17 +22,14 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Soytone
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-  term:
-    id: MICRO:0000181
-    label: ''
 media_term:
   preferred_term: TOGO Medium M1416
   term:
@@ -42,6 +43,11 @@ notes: 'Source: https://togomedium.org/medium/M1416
 applications:
 - Microbial cultivation
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI,
+    1 de-grounded (mixture or unverifiable).
 - timestamp: '2026-01-27T06:35:57.656903Z'
   curator: togo-import
   action: Imported from TOGO Medium
@@ -59,9 +65,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007953'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:48.761967'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:29:51.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -71,6 +77,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Seawater Starch Agar (SWS)" to "seawater_starch_agar_sws"
     for consistent matching
+- timestamp: '2026-05-16T09:04:31.472729+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:45.495400+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:55.502344+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e816199e5af1d5f3ea01e7305bd1804f242826117cdf5039c3bea8b9bdd6a1b7
+  source: seawater_starch_agar_sws.yaml
 solutions:
 - preferred_term: Seawater (2% Salinity)*
   composition: []
@@ -80,6 +101,6 @@ solutions:
   notes: 'Role: Solvating media, Mineral source; Properties: Complex component, Defined
     component, Solution'
   name: Unknown solution
-merge_fingerprint: aaae5343834ca4f43bcaec9b1836316b543a88a83d84539650804e1241c03111
+merge_fingerprint: e816199e5af1d5f3ea01e7305bd1804f242826117cdf5039c3bea8b9bdd6a1b7
 merged_from:
 - seawater_starch_agar_sws

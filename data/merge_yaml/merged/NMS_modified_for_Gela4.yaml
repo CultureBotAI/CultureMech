@@ -3,6 +3,7 @@ name: nms_modified_for_gela4
 original_name: NMS modified for Gela4
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: CaCl2·2H2O
@@ -14,9 +15,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: NH4Cl
   concentration:
     value: '1'
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: Methanol
   concentration:
     value: '5'
@@ -38,9 +39,9 @@ ingredients:
   term:
     id: CHEBI:17790
     label: methanol
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000618
-    label: Methanol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17790
+    label: methanol
 - preferred_term: MgSO4·6H2O
   concentration:
     value: '1'
@@ -49,7 +50,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:32599
-    label: ''
+    label: magnesium sulfate
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -69,8 +70,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: KH2PO4
   concentration:
@@ -80,9 +81,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Na2HPO4·12H2O
   concentration:
@@ -90,8 +91,8 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
     component'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4·12H2O
   term:
     id: CHEBI:34683
@@ -105,9 +106,9 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000183
-    label: Na2MoO4·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
 - preferred_term: H3BO3
   concentration:
     value: '0.075'
@@ -117,9 +118,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: FeSO4·7H2O
   concentration:
     value: '2.5'
@@ -156,9 +157,9 @@ ingredients:
   term:
     id: CHEBI:34887
     label: nickel dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
-    label: NiCl2·6H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
 - preferred_term: ZnSO4·7H2O
   concentration:
     value: '2'
@@ -168,9 +169,9 @@ ingredients:
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
-    label: ZnSO4·7H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
 - preferred_term: CuSO4·5H2O
   concentration:
     value: '1'
@@ -180,14 +181,17 @@ ingredients:
   term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
-    label: CuSO4·5H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
 - preferred_term: EDTA·2Na
   concentration:
     value: '1.25'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:64734
+    label: ''
 media_term:
   preferred_term: TOGO Medium M1984
   term:
@@ -222,10 +226,10 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008567'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:52.849712'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name; Added default solution
     name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:36.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -235,6 +239,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "NMS modified for Gela4" to "nms_modified_for_gela4"
     for consistent matching
+- timestamp: '2026-05-16T09:04:27.836037+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:40.040382+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 11 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:09.670033+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:51.600048+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint c7727433d5096b2ab33e5ef06b7deb20a38515b9c75bb0a4b17b33aa39ddbb9b
+  source: nms_modified_for_gela4.yaml
 solutions:
 - preferred_term: Seawater***
   term:
@@ -263,6 +286,6 @@ solutions:
     unit: G_PER_L
   notes: See mediadive_6187_Trace_element_solution.yaml for composition
   name: Unknown solution
-merge_fingerprint: 45664b35a20e16597f38a46cc578b99d3c6fb434f75598f515a87b350ea871f3
+merge_fingerprint: c7727433d5096b2ab33e5ef06b7deb20a38515b9c75bb0a4b17b33aa39ddbb9b
 merged_from:
 - nms_modified_for_gela4

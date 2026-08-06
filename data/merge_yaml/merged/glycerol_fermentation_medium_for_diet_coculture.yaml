@@ -2,6 +2,7 @@ name: glycerol_fermentation_medium_for_diet_coculture
 original_name: Glycerol Fermentation Medium for DIET Coculture
 category: specialized
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 id: CultureMech:015432
 ingredients:
@@ -9,8 +10,9 @@ ingredients:
   concentration:
     value: '10.0'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
+    label: glycerol
   term:
     id: CHEBI:17754
     label: glycerol
@@ -18,8 +20,9 @@ ingredients:
   concentration:
     value: '0.82'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000175
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
   term:
     id: CHEBI:32954
     label: sodium acetate
@@ -27,8 +30,9 @@ ingredients:
   concentration:
     value: '2.0'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000178
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -37,26 +41,28 @@ ingredients:
     value: '2.45'
     unit: G_PER_L
   term:
-    id: CHEBI:37583
-    label: sodium dihydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: Sodium dihydrogen phosphate
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
 - preferred_term: Disodium hydrogen phosphate
   concentration:
     value: '4.58'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000639
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
   term:
     id: CHEBI:34683
-    label: disodium hydrogen phosphate
+    label: disodium hydrogenphosphate
 - preferred_term: Sodium sulfate
   concentration:
     value: '0.28'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000988
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
   term:
     id: CHEBI:32149
     label: sodium sulfate
@@ -67,15 +73,16 @@ ingredients:
   term:
     id: CHEBI:6636
     label: magnesium dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000663
-    label: Magnesium chloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
 - preferred_term: Calcium chloride dihydrate
   concentration:
     value: '2.9'
     unit: MG_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
   term:
     id: CHEBI:3312
     label: calcium dichloride
@@ -83,8 +90,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000277
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35235
+    label: L-cysteine
   term:
     id: CHEBI:35235
     label: L-cysteine
@@ -141,6 +149,39 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Glycerol Fermentation Medium for DIET Coculture" to
     "glycerol_fermentation_medium_for_diet_coculture" for consistent matching
-merge_fingerprint: 2de822883112025e85d36f3cecdf18ef8d82932678aed222bb45120aa5b7afda
+- timestamp: '2026-05-24T04:38:33.263218+00:00'
+  curator: backfill_source_environment.py
+  action: BACKFILLED_SOURCE_ENVIRONMENT
+  notes: added=1 env(s) from CommunityMech
+  source: CommunityMech (environment_term + culturemech_id linkage)
+- timestamp: '2026-06-05T07:41:57.371680+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-09T01:42:26.531150+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:06:04.385742+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e7c32b9da6a4f270e605b779348bf4f57be5e6029b155e7efd37b796568c2885
+  source: Glycerol_Fermentation_Medium_for_DIET_Coculture.yaml
+source_environment:
+- preferred_term: laboratory culture
+  term:
+    id: ENVO:01001405
+    label: laboratory environment
+  notes: 'Laboratory synthetic coculture developed to optimize glycerol fermentation
+    toward 1,3-propanediol production. Cultured under strict anaerobic conditions
+    using Hungate techniques at 35°C with N2 gas phase. DIET occurs through physical
+    cell-to-cell contact mediated by conductive nanowires produced by G. sulfurreducens.
+
+    '
+merge_fingerprint: e7c32b9da6a4f270e605b779348bf4f57be5e6029b155e7efd37b796568c2885
 merged_from:
 - Glycerol_Fermentation_Medium_for_DIET_Coculture

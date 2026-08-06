@@ -3,6 +3,7 @@ name: nmm_with_malate
 original_name: Nmm with malate
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: '''(S'
@@ -17,13 +18,16 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.0005'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Potassium sulfate
   concentration:
     value: '0.276'
@@ -35,6 +39,9 @@ ingredients:
   concentration:
     value: '1.32'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -42,9 +49,9 @@ ingredients:
   concentration:
     value: '50.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -52,13 +59,16 @@ ingredients:
   concentration:
     value: '9.52'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: MOPS
   term:
     id: CHEBI:39074
@@ -66,8 +76,8 @@ ingredients:
   concentration:
     value: '40.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000285
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39074
     label: MOPS
 - preferred_term: Tricine
   concentration:
@@ -109,6 +119,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Nmm with malate" to "nmm_with_malate" for consistent
     matching
+- timestamp: '2026-06-05T07:41:39.985546+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:51.550911+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 01ae2b529a63492466dd7c919786c68a291a1ce8ea268dbf60b4380cb3834fe3
+  source: nmm_with_malate.yaml
 media_term:
   preferred_term: MediaDB Medium 158
   term:
@@ -120,6 +141,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 7feaa8ee59c3f98300d150dae8c470c661f11c4a8a2d62f10149c90e1a0b0849
+merge_fingerprint: 01ae2b529a63492466dd7c919786c68a291a1ce8ea268dbf60b4380cb3834fe3
 merged_from:
 - nmm_with_malate

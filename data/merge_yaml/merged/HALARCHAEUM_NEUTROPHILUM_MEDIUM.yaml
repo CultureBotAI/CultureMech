@@ -1,108 +1,148 @@
-id: CultureMech:003173
+id: CultureMech:010281
 name: halarchaeum_neutrophilum_medium
-original_name: HALARCHAEUM NEUTROPHILUM MEDIUM
-category: bacterial
+original_name: Halarchaeum Neutrophilum Medium
+category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 5.5
-media_term:
-  preferred_term: JCM Medium J829
-  term:
-    id: mediadive.medium:J829
-    label: HALARCHAEUM NEUTROPHILUM MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=829'
 ingredients:
-- preferred_term: Casamino acids
+- preferred_term: Distilled water
   concentration:
-    value: '2'
+    value: '1'
     unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
-- preferred_term: Tryptone
-  concentration:
-    value: '2'
-    unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '2'
-    unit: G_PER_L
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
   concentration:
     value: '180'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: MgCl2 x 6 H2O
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: MgCl2・6H2O
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: MgCl2 x 6 H2O
-- preferred_term: KCl
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:32588
-    label: KCl
+    id: CHEBI:86345
+    label: ''
+- preferred_term: KCl
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
-- preferred_term: Glucose
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
-    id: CHEBI:17234
-    label: Glucose
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Glucose
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
-    label: Glucose
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Add components to distilled water and bring volume to 1.0 L. Adjust
-    pH to 5.5 with KOH.
-- step_number: 2
-  action: MIX
-  description: For preparation of solid medium, add 20.0 g/L agar.
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Tryptone (BD-Difco)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Casamino acids (BD-Difco)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: KOH
+  notes: 'Role: Mineral source; Properties: Defined component, Solution'
+  term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+media_term:
+  preferred_term: TOGO Medium M864
+  term:
+    id: TOGO:M864
+    label: Halarchaeum Neutrophilum Medium
+notes: 'Source: https://togomedium.org/medium/M864
+
+  Original source: JCM - JCM_M829
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=829'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:17.730404Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J829'
-- timestamp: '2026-01-28T19:48:14.081820Z'
+- timestamp: '2026-01-27T06:35:55.860071Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M864'
+- timestamp: '2026-01-28T19:48:39.562240Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:19:18.345802Z'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: KOH'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-03-13T06:20:12.667926Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:003173'
-- timestamp: '2026-03-17T06:29:55.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:010281'
+- timestamp: '2026-03-17T06:30:49.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:32.188871+00:00'
+- timestamp: '2026-03-17T19:46:31.614843+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALARCHAEUM NEUTROPHILUM MEDIUM" to "halarchaeum_neutrophilum_medium"
+  notes: Normalized name from "Halarchaeum Neutrophilum Medium" to "halarchaeum_neutrophilum_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:03:21.532917+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:45.167465+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:27.836629+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 399dd057dc6867767af2bb2291f7b2d7103381a2bdc537f294048f6d2135046d
+  source: TOGO_M864_Halarchaeum_Neutrophilum_Medium.yaml
 high_metal: true
-merge_fingerprint: ea8c74bf4bc942318dd88bfdbad179bade448f1e12ec9694a489aa439e12e440
+merge_fingerprint: 399dd057dc6867767af2bb2291f7b2d7103381a2bdc537f294048f6d2135046d
 merged_from:
-- halarchaeum_neutrophilum_medium
+- TOGO_M864_Halarchaeum_Neutrophilum_Medium

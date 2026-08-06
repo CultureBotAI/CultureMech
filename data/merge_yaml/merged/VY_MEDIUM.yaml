@@ -3,6 +3,7 @@ name: vy_medium
 original_name: VY MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:
@@ -39,6 +40,11 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "VY MEDIUM" to "vy_medium" for consistent matching
+- timestamp: '2026-08-06T03:06:02.828521+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 9a8486e2440905fae2b4c2f0bc327770d838ef806df2101a06de55b43add60e2
+  source: vy_medium.yaml
 merge_fingerprint: 9a8486e2440905fae2b4c2f0bc327770d838ef806df2101a06de55b43add60e2
 merged_from:
 - vy_medium

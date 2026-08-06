@@ -1,0 +1,162 @@
+id: CultureMech:003176
+name: r2a_agar_with_artificial_seawater
+original_name: R2A AGAR WITH ARTIFICIAL SEAWATER
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J832
+  term:
+    id: mediadive.medium:J832
+    label: R2A AGAR WITH ARTIFICIAL SEAWATER
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=832'
+ingredients:
+- preferred_term: R2A agar
+  term:
+    id: CHEBI:2509
+    label: R2A agar
+  concentration:
+    value: '18.2'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: R2A agar
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '23.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '4.9'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+- preferred_term: Na2SO4
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+  concentration:
+    value: '3.9'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
+    label: Na2SO4
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1.1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.66'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: KCl
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.19'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: NaHCO3
+- preferred_term: KBr
+  term:
+    id: CHEBI:32030
+    label: potassium bromide
+  concentration:
+    value: '0.096'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32030
+    label: KBr
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  concentration:
+    value: '0.026'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: H3BO3
+- preferred_term: SrCl2 x 6 H2O
+  term:
+    id: CHEBI:36385
+    label: SrCl2 x 6 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:36385
+    label: SrCl2 x 6 H2O
+- preferred_term: NaF
+  term:
+    id: CHEBI:28741
+    label: sodium fluoride
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28741
+    label: NaF
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.740833Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J832'
+- timestamp: '2026-03-13T06:19:18.374442Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003176'
+- timestamp: '2026-03-17T06:30:02.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:32.221111+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "R2A AGAR WITH ARTIFICIAL SEAWATER" to "r2a_agar_with_artificial_seawater"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:43.585999+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 11 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:10.765927+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:54.087003+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint db9d0bb824c33ec523b902c636f03290dbcd83ae340720997eccd1d65a8149e4
+  source: r2a_agar_with_artificial_seawater.yaml
+merge_fingerprint: db9d0bb824c33ec523b902c636f03290dbcd83ae340720997eccd1d65a8149e4
+merged_from:
+- r2a_agar_with_artificial_seawater

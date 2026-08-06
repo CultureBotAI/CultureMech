@@ -1,8 +1,9 @@
 id: CultureMech:001167
 name: halorussus_varius_medium_msc_15_2
 original_name: HALORUSSUS VARIUS MEDIUM (MSC 15.2)
-category: bacterial
+category: archaea
 medium_type: COMPLEX
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
 ph_value: 6.9
 media_term:
@@ -19,8 +20,8 @@ ingredients:
   concentration:
     value: '210.21'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -29,8 +30,8 @@ ingredients:
   concentration:
     value: '23.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: CaCl2 x H2O
   term:
@@ -39,13 +40,13 @@ ingredients:
   concentration:
     value: '21.7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
     label: CaCl2 x H2O
 - preferred_term: KNO3
   term:
     id: CHEBI:63043
-    label: KNO3
+    label: potassium nitrate
   concentration:
     value: '18.7'
     unit: G_PER_L
@@ -55,12 +56,12 @@ ingredients:
 - preferred_term: MgSO4 x 6 H2O
   term:
     id: CHEBI:32599
-    label: MgSO4 x 6 H2O
+    label: magnesium sulfate
   concentration:
     value: '4.49'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: MgSO4 x 6 H2O
 - preferred_term: CaCO3
   term:
@@ -69,18 +70,18 @@ ingredients:
   concentration:
     value: '0.015'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001099
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
     label: CaCO3
 - preferred_term: KBr
   term:
     id: CHEBI:32030
-    label: KBr
+    label: potassium bromide
   concentration:
     value: '2.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001123
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32030
     label: KBr
 - preferred_term: NaNO3
   term:
@@ -99,28 +100,28 @@ ingredients:
   concentration:
     value: '0.63'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000463
+  mediaingredientmech_chebi_term:
+    id: CHEBI:36385
     label: SrCl2 x 6 H2O
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Glucose
   term:
@@ -129,8 +130,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Yeast extract
   concentration:
@@ -143,8 +144,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -153,8 +154,8 @@ ingredients:
   concentration:
     value: '1.54'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: Na-EDTA
   term:
@@ -163,8 +164,8 @@ ingredients:
   concentration:
     value: '2.06'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
     label: Na-EDTA
 - preferred_term: Nitrilotriacetic acid
   term:
@@ -173,8 +174,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
     label: Nitrilotriacetic acid
 - preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
   concentration:
@@ -183,16 +184,19 @@ ingredients:
   term:
     id: CHEBI:76181
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000429
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76181
     label: Fe(NH4)2(SO4)2 x 6 H2O
 - preferred_term: Na2SeO4 x 10 H2O
   concentration:
     value: '0.44'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000700
-    label: Na2SeO4 x 10 H2O
+  term:
+    id: CHEBI:77775
+    label: sodium selenate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:77775
+    label: sodium selenate
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -200,8 +204,8 @@ ingredients:
   concentration:
     value: '0.18'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: MnSO4 x H2O
   term:
@@ -210,8 +214,8 @@ ingredients:
   concentration:
     value: '0.12'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
     label: MnSO4 x H2O
 - preferred_term: Na2MoO4
   term:
@@ -220,18 +224,18 @@ ingredients:
   concentration:
     value: '0.16'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000183
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75215
     label: Na2MoO4
 - preferred_term: Na2WO4
   term:
     id: CHEBI:63940
-    label: Na2WO4
+    label: sodium tungstate
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000240
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63940
     label: Na2WO4
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -240,8 +244,8 @@ ingredients:
   concentration:
     value: '0.54'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: AlCl3
   term:
@@ -250,8 +254,8 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000292
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30114
     label: AlCl3
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -260,33 +264,36 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.11'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: CuSO4
   term:
     id: CHEBI:23414
-    label: CuSO4
+    label: copper(II) sulfate
   concentration:
     value: '0.21'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000855
+  mediaingredientmech_chebi_term:
+    id: CHEBI:23414
     label: CuSO4
 - preferred_term: MnCl2
   concentration:
     value: '0.19'
     unit: G_PER_L
+  term:
+    id: CHEBI:63041
+    label: manganese(II) chloride
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -331,10 +338,29 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HALORUSSUS VARIUS MEDIUM (MSC 15.2)" to "halorussus_varius_medium_msc_15_2"
     for consistent matching
+- timestamp: '2026-06-05T07:41:08.187549+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 25 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:37:34.969983+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:46:59.655311+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 10 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:28.947288+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 8dc5c04a75a507b80d51a08cacf9e240550acea34010b7ee861a4de1f8ae1aed
+  source: halorussus_varius_medium_msc_15_2.yaml
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: HALORUSSUS VARIUS
 high_metal: true
-merge_fingerprint: 71a828fe703e430bc7749950fe39d79d3898ad46513540ae37356a8cf8c87e52
+merge_fingerprint: 8dc5c04a75a507b80d51a08cacf9e240550acea34010b7ee861a4de1f8ae1aed
 merged_from:
 - halorussus_varius_medium_msc_15_2

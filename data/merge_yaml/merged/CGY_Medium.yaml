@@ -3,6 +3,7 @@ name: cgy_medium
 original_name: CGY Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Glycerol
   concentration:
@@ -24,10 +25,10 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
     compound'
   term:
-    id: CHEBI:15978
-    label: sn-glycerol 3-phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000588
+    id: CHEBI:17754
+    label: Glycerol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: Agar (if needed)
   concentration:
@@ -82,6 +83,23 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "CGY Medium" to "cgy_medium" for consistent matching
-merge_fingerprint: 262bf9f6d2810746f066bceb8fb3207a3078baeed0d1cfa5f9ff5f1753226d95
+- timestamp: '2026-06-05T07:40:53.027555+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:36.287001+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:05:27.186791+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 08651eb6d8a3288609eeec710c6e39cb2089b26ea47223b3107ee193915ebefe
+  source: cgy_medium.yaml
+merge_fingerprint: 08651eb6d8a3288609eeec710c6e39cb2089b26ea47223b3107ee193915ebefe
 merged_from:
 - cgy_medium

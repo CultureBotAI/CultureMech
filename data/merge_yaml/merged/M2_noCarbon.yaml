@@ -1,6 +1,7 @@
 id: CultureMech:015536
 name: M2 noCarbon
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Disodium phosphate
@@ -66,7 +67,7 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 60-00-4; MW: 292.24'
 description: Defined minimal media for Caulobacter with no carbon
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: M2 noCarbon
@@ -80,6 +81,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015536'
+- timestamp: '2026-05-16T09:04:40.753954+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:05.313591+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 4d556115474beaab66a50a71736f757109d89661caf4ca1742bd0b40d765b8d5
+  source: m2_nocarbon.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: 4d556115474beaab66a50a71736f757109d89661caf4ca1742bd0b40d765b8d5

@@ -3,6 +3,7 @@ name: m9zb_with_malate
 original_name: M9zb with malate
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: '''(S'
@@ -14,10 +15,16 @@ ingredients:
   concentration:
     value: '0.1'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '49.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -25,13 +32,16 @@ ingredients:
   concentration:
     value: '8.6'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '22.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -39,8 +49,8 @@ ingredients:
   concentration:
     value: '2.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
@@ -49,8 +59,8 @@ ingredients:
   concentration:
     value: '19.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 preparation_steps:
 - step_number: 1
@@ -81,11 +91,23 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "M9zb with malate" to "m9zb_with_malate" for consistent
     matching
-- timestamp: '2026-04-17T06:30:09.123301+00:00'
+- timestamp: '2026-06-05T07:41:12.318761+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:41.212890+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: m9_minimal_medium_with_l_lactate, m9_minimal_medium_with_l_malate,
     m9zb_with_malate'
+- timestamp: '2026-08-06T03:05:41.212927+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 961e1121871c6af92d26e8d1bfc09bebde173be4257790d8020e09402bd83807
+  source: m9_minimal_medium_with_l_lactate.yaml, m9_minimal_medium_with_l_malate.yaml,
+    m9zb_with_malate.yaml
 media_term:
   preferred_term: MediaDB Medium 113
   term:
@@ -112,4 +134,4 @@ merged_from:
 - m9_minimal_medium_with_l_lactate
 - m9_minimal_medium_with_l_malate
 - m9zb_with_malate
-merge_fingerprint: 1b78ab48f7f75c44680e265a58d903fb705215c09e094a63cf20bba825cc7656
+merge_fingerprint: 961e1121871c6af92d26e8d1bfc09bebde173be4257790d8020e09402bd83807

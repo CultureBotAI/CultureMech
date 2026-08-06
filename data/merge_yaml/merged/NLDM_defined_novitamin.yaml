@@ -1,6 +1,7 @@
 id: CultureMech:015665
 name: NLDM_defined_novitamin
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Ammonium Chloride
@@ -294,8 +295,8 @@ ingredients:
     value: '4.05'
     unit: MILLIMOLAR
   term:
-    id: CHEBI:37583
-    label: trisodium phosphate
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
 - preferred_term: Sodium phosphate monobasic
   concentration:
@@ -304,7 +305,7 @@ ingredients:
   notes: 'CAS: 558-80-7; MW: 119.98'
   term:
     id: CHEBI:37585
-    label: ''
+    label: sodium dihydrogenphosphate
 - preferred_term: Sucrose
   concentration:
     value: '875.0'
@@ -876,7 +877,7 @@ ingredients:
     label: ''
 description: Northen lab metabolite media
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: NLDM_defined_novitamin
@@ -890,20 +891,35 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015665'
-- timestamp: '2026-04-17T06:30:30.798546+00:00'
+- timestamp: '2026-05-16T09:04:42.351885+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-09T01:42:27.056650+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:06:07.077642+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: nldm_defined_no_iron, nldm_defined_novitamin'
+- timestamp: '2026-08-06T03:06:07.077733+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint c0ff9b59176ed719acfdf0445ee2f0cb818f46bb439a7440670e43bb24a2f7f7
+  source: nldm_defined_no_iron.yaml, nldm_defined_novitamin.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 original_name: NLDM_defined_novitamin
 synonyms:
 - name: NLDM_defined_no_iron
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 categories:
-- SPECIALIZED
+- specialized
 merged_from:
 - nldm_defined_no_iron
 - nldm_defined_novitamin
-merge_fingerprint: 95bb0c6203c396102ed1706112eb03144c40834254d4cf6fcf2da2587625d63f
+merge_fingerprint: c0ff9b59176ed719acfdf0445ee2f0cb818f46bb439a7440670e43bb24a2f7f7

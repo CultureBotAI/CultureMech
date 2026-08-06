@@ -3,6 +3,7 @@ name: gam_broth_gifu_anaerobic_medium_broth
 original_name: GAM Broth (Gifu Anaerobic Medium Broth)
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1713
@@ -36,6 +37,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "GAM Broth (Gifu Anaerobic Medium Broth)" to "gam_broth_gifu_anaerobic_medium_broth"
     for consistent matching
+- timestamp: '2026-08-06T03:06:05.134150+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 7925c898dc565a37ab284e1741822242c2294d80a76c28602bfb84712ad3f991
+  source: gam_broth_gifu_anaerobic_medium_broth.yaml
 merge_fingerprint: 7925c898dc565a37ab284e1741822242c2294d80a76c28602bfb84712ad3f991
 merged_from:
 - gam_broth_gifu_anaerobic_medium_broth

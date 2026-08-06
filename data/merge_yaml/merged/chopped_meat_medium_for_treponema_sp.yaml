@@ -3,6 +3,7 @@ name: chopped_meat_medium_for_treponema_sp
 original_name: CHOPPED MEAT medium FOR TREPONEMA SP
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 78a
@@ -19,8 +20,8 @@ ingredients:
   concentration:
     value: '12'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000272
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15971
     label: L-Histidine
 - preferred_term: L-Serine
   term:
@@ -29,8 +30,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000270
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17115
     label: L-Serine
 - preferred_term: L-Glutamine
   term:
@@ -39,8 +40,8 @@ ingredients:
   concentration:
     value: '14'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000220
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18050
     label: L-Glutamine
 - preferred_term: Vitamin B12
   term:
@@ -49,8 +50,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 - preferred_term: Pantothenic acid
   term:
@@ -59,8 +60,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000242
+  mediaingredientmech_chebi_term:
+    id: CHEBI:7916
     label: Pantothenic acid
 - preferred_term: Riboflavin
   term:
@@ -69,8 +70,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: Pyridoxamine hydrochloride
   term:
@@ -79,8 +80,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000703
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131531
     label: Pyridoxamine hydrochloride
 - preferred_term: Biotin
   term:
@@ -89,8 +90,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Folic acid
   term:
@@ -99,8 +100,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
     label: Folic acid
 - preferred_term: Nicotinic acid
   term:
@@ -109,13 +110,16 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
     label: Nicotinic acid
 - preferred_term: Nicotine amide
   concentration:
     value: '0.025'
     unit: G_PER_L
+  term:
+    id: CHEBI:17154
+    label: ''
 - preferred_term: alpha-lipoic acid
   term:
     id: CHEBI:16494
@@ -123,8 +127,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000166
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16494
     label: alpha-lipoic acid
 - preferred_term: p-Aminobenzoic acid
   term:
@@ -133,8 +137,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
     label: p-Aminobenzoic acid
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
@@ -143,8 +147,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000160
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132751
     label: Thiamine-HCl x 2 H2O
 - preferred_term: Ground beef
   concentration:
@@ -158,8 +162,8 @@ ingredients:
     value: '26.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 25.0, 1.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
     label: NaOH
 - preferred_term: Casitone
   concentration:
@@ -172,12 +176,12 @@ ingredients:
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '4.87805'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: Resazurin
   term:
@@ -186,8 +190,8 @@ ingredients:
   concentration:
     value: '0.00097561'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: L-Cysteine HCl
   term:
@@ -207,8 +211,8 @@ ingredients:
     value: '14.6341'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Haemin
   term:
@@ -217,13 +221,16 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
     label: Haemin
 - preferred_term: Vitamin K3
   concentration:
     value: '0.05'
     unit: G_PER_L
+  term:
+    id: CHEBI:28869
+    label: ''
 - preferred_term: Ethanol
   term:
     id: CHEBI:16236
@@ -232,8 +239,8 @@ ingredients:
     value: '959.5'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 9.5, 950.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000686
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16236
     label: Ethanol
 - preferred_term: Vitamin K1
   term:
@@ -242,8 +249,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000567
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18067
     label: Vitamin K1
 applications:
 - Microbial cultivation
@@ -273,7 +280,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CHOPPED MEAT medium FOR TREPONEMA SP" to "chopped_meat_medium_for_treponema_sp"
     for consistent matching
-- timestamp: '2026-04-17T06:29:32.289439+00:00'
+- timestamp: '2026-06-05T07:40:26.414768+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 20 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:45.878483+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:59.425980+00:00'
   curator: recipe-merger
   action: Merged 44 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_78_CHOPPED_MEAT_medium, KOMODO_78a_CHOPPED_MEAT_medium_FOR_TREPONEMA_SP,
@@ -291,6 +308,25 @@ curation_history:
     medium_78_modified_for_dsm_3979, medium_78_modified_for_dsm_3983, medium_78_modified_for_dsm_3989,
     medium_78_modified_for_dsm_3991, medium_78_modified_for_dsm_3992, medium_78_modified_for_dsm_6011,
     medium_78a_modified_for_dsm_12168'
+- timestamp: '2026-08-06T03:04:59.426370+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 44 source recipe(s) on fingerprint 03321266f74fc000d54844a0230e35fb94574211611911ba26204ff862ace5ce
+  source: KOMODO_78_CHOPPED_MEAT_medium.yaml, KOMODO_78a_CHOPPED_MEAT_medium_FOR_TREPONEMA_SP.yaml,
+    KOMODO_78b_medium_FOR_TREPONEMA_PARVUM.yaml, anoxic_version.yaml, chopped_meat_medium_for_treponema_sp.yaml,
+    for_dsm_16260.yaml, for_dsm_16369.yaml, for_dsm_5566.yaml, medium_78_modified_for_dsm_1396.yaml,
+    medium_78_modified_for_dsm_1447.yaml, medium_78_modified_for_dsm_14838.yaml, medium_78_modified_for_dsm_15896.yaml,
+    medium_78_modified_for_dsm_19291.yaml, medium_78_modified_for_dsm_19346.yaml,
+    medium_78_
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_78_CHOPPED_MEAT_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006491
+  name: chopped_meat_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.
 synonyms:
 - name: chopped_meat_medium
   source: KOMODO
@@ -507,4 +543,4 @@ merged_from:
 - medium_78_modified_for_dsm_3992
 - medium_78_modified_for_dsm_6011
 - medium_78a_modified_for_dsm_12168
-merge_fingerprint: 53ede9305db07d4bf34269c4e1c6bccd3e3f095352f2adb9788a23b8ec5167b3
+merge_fingerprint: 03321266f74fc000d54844a0230e35fb94574211611911ba26204ff862ace5ce

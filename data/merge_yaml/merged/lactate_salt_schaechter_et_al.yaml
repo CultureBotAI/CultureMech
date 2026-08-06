@@ -3,6 +3,7 @@ name: lactate_salt_schaechter_et_al
 original_name: Lactate salt; schaechter et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Citrate
@@ -10,6 +11,9 @@ ingredients:
     value: '5.20497'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: '''(R'
   concentration:
     value: '22.4543'
@@ -19,6 +23,9 @@ ingredients:
   concentration:
     value: '28.0899'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Potassium chloride
   concentration:
     value: '9.92605'
@@ -26,9 +33,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -36,8 +43,8 @@ ingredients:
   concentration:
     value: '0.405729'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Sodium ammonium phosphate
   concentration:
@@ -76,6 +83,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Lactate salt; schaechter et al" to "lactate_salt_schaechter_et_al"
     for consistent matching
+- timestamp: '2026-06-05T07:41:10.664664+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:39.843533+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint ab9a5e01e4a6b99e7d2cda5e4358a75f53ad009d5bac06d4698a90c25e62eac2
+  source: lactate_salt_schaechter_et_al.yaml
 media_term:
   preferred_term: MediaDB Medium 230
   term:
@@ -88,6 +106,6 @@ applications:
 - Metabolic modeling
 - Systems biology research
 kg_microbe_match: mediadive.medium:J526
-merge_fingerprint: 9d04bc171e6d1a555e53205c11bff49a8341f5d55374de1e375660758dd2e41f
+merge_fingerprint: ab9a5e01e4a6b99e7d2cda5e4358a75f53ad009d5bac06d4698a90c25e62eac2
 merged_from:
 - lactate_salt_schaechter_et_al

@@ -1,101 +1,96 @@
-id: CultureMech:000359
+id: CultureMech:000086
 name: mc
-original_name: MC
-category: bacterial
+category: algae
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 6.9
-media_term:
-  preferred_term: CCAP Medium C49
-  term:
-    id: mediadive.medium:C49
-    label: MC
-notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_MC.pdf'
-ingredients:
-- preferred_term: Casein
-  term:
-    id: FOODON:03420180
-    label: Casein
-  concentration:
-    value: '11.1111'
-    unit: G_PER_L
-- preferred_term: Na2HPO4 x 7 H2O
-  term:
-    id: CHEBI:34683
-    label: Na2HPO4 x 7 H2O
-  concentration:
-    value: '2.77778'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
-    label: Na2HPO4 x 7 H2O
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-  concentration:
-    value: '0.888889'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
-- preferred_term: Yeast extract
-  concentration:
-    value: '5.55556'
-    unit: G_PER_L
-- preferred_term: D-Glucose
-  term:
-    id: CHEBI:17634
-    label: D-Glucose
-  concentration:
-    value: '2.77778'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
-    label: D-Glucose
-- preferred_term: Liver digest
-  concentration:
-    value: '2.77778'
-    unit: G_PER_L
-- preferred_term: Calf serum
-  concentration:
-    value: '20'
-    unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: 'To be added later:'
-- step_number: 2
-  action: POUR_PLATES
-  description: "Add  the  first six  constituents  in the  order  shown to 900 ml\
-    \ of  deionised  water, \r\nallowing  each to dissolve  completely  before  adding\
-    \ the  next.  Adjust to pH 6.9. \r\nDispense into 5 x 180 ml aliquots and sterilise\
-    \ by pressure cooking at 10 psi for 15\r\nminutes."
-- step_number: 3
-  action: MIX
-  description: Aseptically add the foetal calf serum to a final concentration of 10%.
-- step_number: 4
-  action: HEAT
-  description: Store at 4°C.
+description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater
+  algae cultivation. Recipe available in PDF format.
+notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_MC.pdf
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
 applications:
-- Microbial cultivation
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
 curation_history:
-- timestamp: '2026-01-26T17:53:19.644606Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: CCAP, ID: C49'
-- timestamp: '2026-03-13T06:18:54.739432Z'
+- curator: ccap-import
+  action: Imported from CCAP Culture Collection
+  notes: 'Source ID: MC, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_MC.pdf'
+  timestamp: '2026-01-28T00:00:00+00:00'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-02-03T11:26:43.533304'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:18:53.122631Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000359'
-- timestamp: '2026-03-17T06:30:33.000000Z'
-  curator: mediaingredientmech-enrichment-v1.0
-  action: Added MediaIngredientMech links
-  notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:05.743010+00:00'
+  notes: 'Assigned stable identifier: CultureMech:000086'
+- timestamp: '2026-03-17T19:45:04.077462+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "MC" to "mc" for consistent matching
-merge_fingerprint: 217a73987f5a94598358bd15f44f52cdde00620a3b0a9c0daa89efd8b7a9b597
+- timestamp: '2026-04-04T12:54:55.149983'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 3 curated ingredients from CCAP
+  source: CCAP Medium MR_MC.pdf
+- timestamp: '2026-05-16T08:57:02.492495+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(3 entries)
+- timestamp: '2026-05-16T09:02:56.690052+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
+    category->lowercase=1; concentration.unit aliases=1
+- timestamp: '2026-08-06T03:04:20.079837+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 0b83bbad1f383d8e82e78372bc3a9421a0199cc132fb6a5844de8de6251a7643
+  source: mc.yaml
+references:
+- reference: CCAP:MC
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_MC.pdf
+ingredients:
+- preferred_term: Na HPO .7H O
+  notes: Ontology mapping not yet available; From CCAP Medium MR_MC.pdf; Curated from
+    CCAP Medium MR_MC.pdf specification
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  source: CCAP Medium MR_MC.pdf
+- preferred_term: KH PO
+  term:
+    id: CHEBI:63036
+    label: KH PO
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.149972'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+  source: CCAP Medium MR_MC.pdf
+  notes: From CCAP Medium MR_MC.pdf; Curated from CCAP Medium MR_MC.pdf specification
+- preferred_term: Aseptically add the foetal calf serum to a final concentration of
+  notes: Ontology mapping not yet available; From CCAP Medium MR_MC.pdf; Curated from
+    CCAP Medium MR_MC.pdf specification
+  concentration:
+    value: '10'
+    unit: PERCENT_W_V
+  source: CCAP Medium MR_MC.pdf
+data_quality_flags:
+- has_ontology_mappings
+- ingredients_curated
+- curation_method:automated_expert_mapping
+original_name: MC
+merge_fingerprint: 0b83bbad1f383d8e82e78372bc3a9421a0199cc132fb6a5844de8de6251a7643
 merged_from:
 - mc

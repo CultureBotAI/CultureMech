@@ -1,6 +1,7 @@
 id: CultureMech:015597
 name: MHII biocarbonate serum Chelated
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Pancreatic digest of casein
@@ -35,7 +36,7 @@ description: Mueller Hinton II Broth for cultivation and antimicrobial susceptib
   testing; with bicarbonate and serum; Chelated with a resin, and then the resin is
   removed
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: MHII biocarbonate serum Chelated
@@ -49,19 +50,28 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015597'
-- timestamp: '2026-04-17T06:30:30.299300+00:00'
+- timestamp: '2026-05-16T09:04:41.671848+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:06.395877+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: mhii_biocarbonate_serum, mhii_biocarbonate_serum_chelated'
+- timestamp: '2026-08-06T03:06:06.395916+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 1669eee88e41f7bbb5fd1d260e409dfccf0daeeb56705cf49694c8fda847932f
+  source: mhii_biocarbonate_serum.yaml, mhii_biocarbonate_serum_chelated.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 original_name: MHII biocarbonate serum Chelated
 synonyms:
 - name: MHII biocarbonate serum
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 categories:
-- SPECIALIZED
+- specialized
 merged_from:
 - mhii_biocarbonate_serum
 - mhii_biocarbonate_serum_chelated

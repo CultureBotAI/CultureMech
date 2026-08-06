@@ -1,180 +1,131 @@
-id: CultureMech:015392
+id: CultureMech:007807
 name: modified_marine_agar_2216_with_5_nacl_ph_9
-original_name: MODIFIED MARINE AGAR 2216 WITH 5% NaCl (pH 9)
-category: specialized
+original_name: Modified Marine Agar 2216 With 5% NaCl (pH 9)
+category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_value: 9.0
-media_term:
-  preferred_term: JCM Medium J1189
-  term:
-    id: mediadive.medium:J1189
-    label: MODIFIED MARINE AGAR 2216 WITH 5% NaCl (pH 9)
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1189'
 ingredients:
-- preferred_term: Marine agar 2216
+- preferred_term: Distilled water
+  concentration:
+    value: '990'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:2509
-    label: Marine agar 2216
-  concentration:
-    value: '55.1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Marine agar 2216
-- preferred_term: Casitone
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Soytone
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  term:
-    id: MICRO:0000181
-    label: ''
-- preferred_term: Malt extract
-  concentration:
-    value: '1'
-    unit: G_PER_L
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
   concentration:
     value: '50'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: Biotin
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:15956
-    label: Biotin
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Malt extract (BD-Difco)
   concentration:
-    value: '0.002'
+    value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
-    label: Biotin
-- preferred_term: Folic acid
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Casitone (BD-Difco)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Soytone (BD-Difco) or Phytone peptone (BD-BBL)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Marine agar 2216 (BD-Difco)
+  concentration:
+    value: '55.1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M1274
   term:
-    id: CHEBI:27470
-    label: Folic acid
-  concentration:
-    value: '0.002'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
-    label: Folic acid
-- preferred_term: Pyridoxine hydrochloride
-  term:
-    id: CHEBI:30961
-    label: Pyridoxine hydrochloride
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001016
-    label: Pyridoxine hydrochloride
-- preferred_term: Thiamine HCl
-  term:
-    id: CHEBI:49105
-    label: Thiamine HCl
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
-    label: Thiamine HCl
-- preferred_term: Riboflavin
-  term:
-    id: CHEBI:17015
-    label: Riboflavin
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
-    label: Riboflavin
-- preferred_term: Nicotinic acid
-  term:
-    id: CHEBI:15940
-    label: Nicotinic acid
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
-    label: Nicotinic acid
-- preferred_term: Calcium pantothenate
-  term:
-    id: CHEBI:31345
-    label: Calcium pantothenate
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
-    label: Calcium pantothenate
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '0.0001'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
-    label: Vitamin B12
-- preferred_term: p-Aminobenzoic acid
-  term:
-    id: CHEBI:30753
-    label: p-Aminobenzoic acid
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
-    label: p-Aminobenzoic acid
-- preferred_term: Lipoic acid
-  term:
-    id: CHEBI:16494
-    label: Lipoic acid
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000166
-    label: Lipoic acid
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 9.0 with sterilized 10% Na2CO3 solution.
+    id: TOGO:M1274
+    label: Modified Marine Agar 2216 With 5% NaCl (pH 9)
+notes: 'Source: https://togomedium.org/medium/M1274
+
+  Original source: JCM - JCM_M1189
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1189'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:18.953111Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J1189'
-- timestamp: '2026-01-28T19:48:43.576460Z'
+- timestamp: '2026-01-27T06:35:54.269694Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1274'
+- timestamp: '2026-01-28T19:48:11.534730Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:20:42.392981Z'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Na2CO3 solution'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-03-09T08:04:18.900862+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:51.623589Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:015392'
-- timestamp: '2026-03-17T17:06:21.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:007807'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:29:49.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:34.032934+00:00'
+- timestamp: '2026-03-17T19:46:10.055360+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MODIFIED MARINE AGAR 2216 WITH 5% NaCl (pH 9)" to "modified_marine_agar_2216_with_5_nacl_ph_9"
+  notes: Normalized name from "Modified Marine Agar 2216 With 5% NaCl (pH 9)" to "modified_marine_agar_2216_with_5_nacl_ph_9"
     for consistent matching
-merge_fingerprint: 6acba378481bd50e825c770e839ee4be5a64da4c1b3b91ef80821f7a5c24540d
+- timestamp: '2026-05-16T09:04:25.646089+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:41:37.029618+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:48.742485+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint fc07982eab48566c783fc24575f9d364b974013a0f44451a0910cb0ba3ac67e6
+  source: modified_marine_agar_2216_with_5_nacl_ph_9.yaml
+solutions:
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: Na2CO3 solution
+  composition: []
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+  name: Unknown solution
+merge_fingerprint: fc07982eab48566c783fc24575f9d364b974013a0f44451a0910cb0ba3ac67e6
 merged_from:
 - modified_marine_agar_2216_with_5_nacl_ph_9

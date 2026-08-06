@@ -1,406 +1,340 @@
-id: CultureMech:009596
+id: CultureMech:006545
 name: mineral_medium_for_chemolithotrophic_growth_h_3
-original_name: Mineral Medium For Chemolithotrophic Growth (H-3)
+original_name: MINERAL MEDIUM FOR CHEMOLITHOTROPHIC GROWTH (H-3)
 category: bacterial
-medium_type: COMPLEX
+medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
+ph_value: 6.8
+media_term:
+  preferred_term: KOMODO Medium 81
+  term:
+    id: komodo.medium:81
+    label: MINERAL MEDIUM FOR CHEMOLITHOTROPHIC GROWTH (H-3)
+notes: 'Source: KOMODO ModelSEED | ID: 81 | DSMZ Medium: 81 (mediadive.medium:81)
+  | Aerobic: No'
 ingredients:
-- preferred_term: Carbon dioxide gas
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
-  term:
-    id: CHEBI:16526
-    label: ''
-- preferred_term: Nitrogen gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-  term:
-    id: CHEBI:17997
-    label: ''
-- preferred_term: Oxygen gas
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Hydrogen gas
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
-  term:
-    id: CHEBI:18276
-    label: ''
-- preferred_term: Distilled water
-  concentration:
-    value: '2085.0'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component [Merged 5 duplicates: 50.0, 915.0, 20.0, 100.0, 1000.0]'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
 - preferred_term: KH2PO4
-  concentration:
-    value: '2.3'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  concentration:
+    value: '46'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Na2HPO4 x 2 H2O
-  concentration:
-    value: '2.9'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
   term:
     id: CHEBI:34683
-    label: disodium hydrogenphosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
     label: Na2HPO4 x 2 H2O
-- preferred_term: MgSO4 x 7 H2O
   concentration:
-    value: '0.5'
+    value: '58'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4 x 7 H2O
-- preferred_term: CaCl2 x 2 H2O
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
 - preferred_term: NH4Cl
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
-    Simple component'
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
-- preferred_term: MnCl2 x 4 H2O
   concentration:
-    value: '0.034999999999999996'
+    value: '1.08696'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component [Merged 2 duplicates: 0.005, 0.03]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
-    label: MnCl2 x 4 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.543478'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0108696'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
-    label: ''
-- preferred_term: NaVO3 x H2O
+    label: MnCl2 x 4 H2O
   concentration:
-    value: '0.005'
+    value: '0.03543478'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: ' [Merged 2 duplicates: 0.00543478, 0.03]'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+- preferred_term: NaVO3 x H2O
   term:
     id: CHEBI:132095
     label: NaVO3 x H2O
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000792
+  concentration:
+    value: '0.00543478'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132095
     label: NaVO3 x H2O
-- preferred_term: Agar (if necessary)
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
   concentration:
-    value: '20'
+    value: '21.7391'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  notes: ' (if required)'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
 - preferred_term: Ferric ammonium citrate
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
-    Simple component'
   term:
     id: CHEBI:31604
-    label: ferric ammonium citrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000541
     label: Ferric ammonium citrate
-- preferred_term: Biotin
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31604
+    label: Ferric ammonium citrate
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:15956
-    label: biotin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
-    label: Biotin
-- preferred_term: Ca-pantothenate
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:29032
-    label: (R)-pantothenate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000219
-    label: Ca-pantothenate
-- preferred_term: Pyridoxine-HCl
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000703
-    label: Pyridoxine-HCl
-- preferred_term: Folic acid
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:27470
-    label: folic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
-    label: Folic acid
-- preferred_term: Vitamin B12
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:176843
-    label: vitamin B12
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001027
-    label: Vitamin B12
-- preferred_term: Riboflavin
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:17015
-    label: riboflavin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
     label: Riboflavin
-- preferred_term: Nicotinic acid
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:15940
-    label: nicotinic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
-    label: Nicotinic acid
 - preferred_term: Thiamine-HCl x 2 H2O
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:132751
     label: Thiamine-HCl x 2 H2O
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000160
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132751
     label: Thiamine-HCl x 2 H2O
-- preferred_term: Na2MoO4 x 2 H2O
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: Nicotinic acid
   term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000183
-    label: Na2MoO4 x 2 H2O
-- preferred_term: H3BO3
+    id: CHEBI:15940
+    label: Nicotinic acid
   concentration:
-    value: '0.3'
+    value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+- preferred_term: Pyridoxine hydrochloride
   term:
-    id: CHEBI:33118
-    label: boric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
-- preferred_term: CoCl2 x 6 H2O
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
   concentration:
-    value: '0.2'
+    value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+- preferred_term: Calcium pantothenate
   term:
-    id: CHEBI:35696
-    label: cobalt dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
-    label: CoCl2 x 6 H2O
-- preferred_term: NiCl2 x 6 H2O
+    id: CHEBI:31345
+    label: Calcium pantothenate
   concentration:
-    value: '0.02'
+    value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+- preferred_term: Biotin
   term:
-    id: CHEBI:34887
-    label: nickel dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
-    label: NiCl2 x 6 H2O
-- preferred_term: ZnSO4 x 7 H2O
+    id: CHEBI:15956
+    label: Biotin
   concentration:
-    value: '0.1'
+    value: '0.001'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
+    label: Biotin
+- preferred_term: Folic acid
   term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
-    label: ZnSO4 x 7 H2O
-- preferred_term: CuCl2 x 2 H2O
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
+    label: Folic acid
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
   concentration:
     value: '0.01'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
+    label: Vitamin B12
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: H3BO3
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+- preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
-    label: copper(II) chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
     label: CuCl2 x 2 H2O
-media_term:
-  preferred_term: TOGO Medium M3126
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+- preferred_term: NiCl2 x 6 H2O
   term:
-    id: TOGO:M3126
-    label: Mineral Medium For Chemolithotrophic Growth (H-3)
-notes: 'Source: https://togomedium.org/medium/M3126
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium81.pdf'
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:57.472056Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M3126'
-- timestamp: '2026-01-28T19:48:18.013229Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:57.460800'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
-    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
-    Oxygen gas; Added default concentration for ingredient: Hydrogen gas'
-- timestamp: '2026-03-09T08:04:29.836954+00:00'
-  curator: solution-migrator-v1.0
-  action: Migrated solutions from ingredients to solutions array
-  notes: Moved 5 solution(s) from ingredients
-- timestamp: '2026-03-13T03:08:58.728110Z'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 81'
+- timestamp: '2026-02-03T11:19:08.698357'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 81
+- timestamp: '2026-03-13T03:09:14.921535Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
-  notes: Merged 5 duplicate ingredient(s)
-- timestamp: '2026-03-13T06:20:07.210121Z'
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:41.745746Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:009596'
-- curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:59.529051'
-  action: Applied schema defaults and normalizations
-  notes: Added default solution name; Added default solution name; Added default solution
-    name; Added default solution name; Added default solution name
-- timestamp: '2026-03-17T06:30:03.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:006545'
+- timestamp: '2026-03-17T06:30:22.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:26.236781+00:00'
+- timestamp: '2026-03-17T19:45:59.250881+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Mineral Medium For Chemolithotrophic Growth (H-3)"
+  notes: Normalized name from "MINERAL MEDIUM FOR CHEMOLITHOTROPHIC GROWTH (H-3)"
     to "mineral_medium_for_chemolithotrophic_growth_h_3" for consistent matching
-solutions:
-- preferred_term: Solution A
-  term:
-    id: mediadive.solution:5342
-    label: Solution A
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: See mediadive_5342_Solution_A.yaml for composition
-  name: Unknown solution
-- preferred_term: Solution B
-  term:
-    id: mediadive.solution:5343
-    label: Solution B
-  concentration:
-    value: '920'
-    unit: G_PER_L
-  notes: See mediadive_5343_Solution_B.yaml for composition
-  name: Unknown solution
-- preferred_term: Solution C
-  term:
-    id: mediadive.solution:5312
-    label: Solution C
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: See mediadive_5312_Solution_C.yaml for composition
-  name: Unknown solution
-- preferred_term: Standard vitamin solution
-  term:
-    id: mediadive.solution:864
-    label: Standard vitamin solution
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: See mediadive_864_Standard_vitamin_solution.yaml for composition
-  name: Unknown solution
-- preferred_term: Trace element sol. SL-6
-  composition: []
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  name: Unknown solution
-merge_fingerprint: c642606524eb61de8a1bc71b7e878858bc9512439c0d7493b2cdb8c2b72c79b5
+- timestamp: '2026-06-05T07:40:26.728774+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 23 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:45.988656+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:59.701021+00:00'
+  curator: recipe-merger
+  action: Merged 7 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_81-3_For_heterotrophic_growth, KOMODO_81_MINERAL_MEDIUM_FOR_CHEMOLITHOTROPHIC_GROWTH_H-3,
+    for_dsm_21436, for_growth_on_nitrogen_free_medium, for_heterotrophic_growth, medium_81_modified_for_dsm_21442,
+    mineral_medium_for_chemolithotrophic_growth_h_3'
+- timestamp: '2026-08-06T03:04:59.701118+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 7 source recipe(s) on fingerprint 1d329f4b25be39579d1a78f2195b99f408d0a0ea2ea597c278a1aa372b02a091
+  source: KOMODO_81-3_For_heterotrophic_growth.yaml, KOMODO_81_MINERAL_MEDIUM_FOR_CHEMOLITHOTROPHIC_GROWTH_H-3.yaml,
+    for_dsm_21436.yaml, for_growth_on_nitrogen_free_medium.yaml, for_heterotrophic_growth.yaml,
+    medium_81_modified_for_dsm_21442.yaml, mineral_medium_for_chemolithotrophic_growth_h_3.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_81-3_For_heterotrophic_growth.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006531
+  name: for_heterotrophic_growth
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.
+synonyms:
+- name: for_heterotrophic_growth
+  source: KOMODO
+  source_id: komodo.medium:81.3
+  original_category: bacterial
+- name: for_dsm_21436
+  source: KOMODO
+  source_id: komodo.medium:81.4
+  original_category: bacterial
+- name: for_growth_on_nitrogen_free_medium
+  source: KOMODO
+  source_id: komodo.medium:81.2
+  original_category: bacterial
+- name: for_heterotrophic_growth
+  source: KOMODO
+  source_id: komodo.medium:81.1
+  original_category: bacterial
+- name: medium_81_modified_for_dsm_21442
+  source: KOMODO
+  source_id: komodo.medium:81_21442
+  original_category: bacterial
+categories:
+- bacterial
 merged_from:
-- TOGO_M3126_Mineral_Medium_For_Chemolithotrophic_Growth_H-3
+- KOMODO_81-3_For_heterotrophic_growth
+- KOMODO_81_MINERAL_MEDIUM_FOR_CHEMOLITHOTROPHIC_GROWTH_H-3
+- for_dsm_21436
+- for_growth_on_nitrogen_free_medium
+- for_heterotrophic_growth
+- medium_81_modified_for_dsm_21442
+- mineral_medium_for_chemolithotrophic_growth_h_3
+merge_fingerprint: 1d329f4b25be39579d1a78f2195b99f408d0a0ea2ea597c278a1aa372b02a091

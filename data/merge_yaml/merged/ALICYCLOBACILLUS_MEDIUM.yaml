@@ -1,267 +1,433 @@
-id: CultureMech:008974
+id: CultureMech:005217
 name: alicyclobacillus_medium
-original_name: Alicyclobacillus Medium
+original_name: ALICYCLOBACILLUS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 4.0
+media_term:
+  preferred_term: KOMODO Medium 402
+  term:
+    id: komodo.medium:402
+    label: ALICYCLOBACILLUS medium
+notes: 'Source: KOMODO ModelSEED | ID: 402 | DSMZ Medium: 402 (mediadive.medium:402)
+  | Aerobic: No'
 ingredients:
-- preferred_term: Distilled water (for solid medium)
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
   concentration:
-    value: '500'
+    value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
 - preferred_term: Yeast extract
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: CaCl2 x 2 H2O
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
-- preferred_term: KH2PO4
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
-- preferred_term: (NH4)2SO4
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:62946
-    label: ammonium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: (NH4)2SO4
 - preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
-- preferred_term: Distilled water
-  concentration:
-    value: '1500.0'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component [Merged 2 duplicates: 500.0, 1000.0]'
+- preferred_term: KH2PO4
   term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: Agar
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
   concentration:
-    value: '15'
+    value: '3'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
     label: Agar
-- preferred_term: Na2MoO4 x 2 H2O
   concentration:
-    value: '0.03'
+    value: '30'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000183
-    label: Na2MoO4 x 2 H2O
-- preferred_term: H3BO3
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:33118
-    label: boric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
-- preferred_term: MnCl2 x 4 H2O
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
-    label: MnCl2 x 4 H2O
-  term:
-    id: CHEBI:86368
-    label: ''
-- preferred_term: CoCl2 x 6 H2O
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:35696
-    label: cobalt dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
-    label: CoCl2 x 6 H2O
-- preferred_term: NiCl2 x 6 H2O
-  concentration:
-    value: '0.02'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:34887
-    label: nickel dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
-    label: NiCl2 x 6 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
 - preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:32312
-    label: zinc sulfate heptahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
     label: ZnSO4 x 7 H2O
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: H3BO3
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
   concentration:
     value: '0.01'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
+  mediaingredientmech_chebi_term:
     id: CHEBI:86318
-    label: copper(II) chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
     label: CuCl2 x 2 H2O
-media_term:
-  preferred_term: TOGO Medium M2391
+- preferred_term: NiCl2 x 6 H2O
   term:
-    id: TOGO:M2391
-    label: Alicyclobacillus Medium
-notes: 'Source: https://togomedium.org/medium/M2391
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.445412Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2391'
-- timestamp: '2026-01-28T19:48:23.407444Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:53.587494'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Solution A:; Added default concentration
-    for ingredient: Solution B:; Added default concentration for ingredient: Solution
-    C:'
-- timestamp: '2026-03-09T08:04:38.914529+00:00'
-  curator: solution-migrator-v1.0
-  action: Migrated solutions from ingredients to solutions array
-  notes: Moved 4 solution(s) from ingredients
-- timestamp: '2026-03-13T03:09:08.761016Z'
-  curator: data-quality-cleanup-v1.0
-  action: Data quality fixes
-  notes: Merged 1 duplicate ingredient(s)
-- timestamp: '2026-03-13T06:20:01.723525Z'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 402'
+- timestamp: '2026-02-03T11:19:15.512897'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 402
+- timestamp: '2026-03-13T06:19:31.114225Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:008974'
-- curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:55.470844'
-  action: Applied schema defaults and normalizations
-  notes: Added default solution name; Added default solution name; Added default solution
-    name; Added default solution name
-- timestamp: '2026-03-17T06:30:15.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:005217'
+- timestamp: '2026-03-17T06:30:43.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:20.460357+00:00'
+- timestamp: '2026-03-17T19:45:46.965880+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Alicyclobacillus Medium" to "alicyclobacillus_medium"
+  notes: Normalized name from "ALICYCLOBACILLUS medium" to "alicyclobacillus_medium"
     for consistent matching
-solutions:
-- preferred_term: 'Solution A:'
-  composition: []
-  concentration:
-    value: variable
-    unit: VARIABLE
-  name: Unknown solution
-- preferred_term: 'Solution B:'
-  composition: []
-  concentration:
-    value: variable
-    unit: VARIABLE
-  name: Unknown solution
-- preferred_term: 'Solution C:'
-  composition: []
-  concentration:
-    value: variable
-    unit: VARIABLE
-  name: Unknown solution
-- preferred_term: Trace element solution SL-6
-  term:
-    id: mediadive.solution:25
-    label: Trace element solution SL-6
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: See mediadive_25_Trace_element_solution_SL-6.yaml for composition
-  name: Unknown solution
-merge_fingerprint: 9100b80cfaa5250c56b23dd6e13b63e0bb772cc04347eeebb1505d9c63bfbb1c
+- timestamp: '2026-06-05T07:40:23.066870+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 13 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:44.805116+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:48.737534+00:00'
+  curator: recipe-merger
+  action: Merged 22 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_402_ALICYCLOBACILLUS_medium, alicyclobacillus_medium, for_strains_of_a_cycloheptanicus,
+    medium_402_modified_for_dsm_11983, medium_402_modified_for_dsm_14558, medium_402_modified_for_dsm_14745,
+    medium_402_modified_for_dsm_14955, medium_402_modified_for_dsm_16176, medium_402_modified_for_dsm_17614,
+    medium_402_modified_for_dsm_18237, medium_402_modified_for_dsm_2498, medium_402_modified_for_dsm_3922,
+    medium_402_modified_for_dsm_3923, medium_402_modified_for_dsm_3924, medium_402_modified_for_dsm_446,
+    medium_402_modified_for_dsm_448, medium_402_modified_for_dsm_449, medium_402_modified_for_dsm_451,
+    medium_402_modified_for_dsm_452, medium_402_modified_for_dsm_453, medium_402_modified_for_dsm_454,
+    medium_402_modified_for_dsm_455'
+- timestamp: '2026-08-06T03:04:48.737685+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 22 source recipe(s) on fingerprint b875278279eabaf2d50958ba22876d4389b3969744a69b4ef48c2f14fa010fb8
+  source: KOMODO_402_ALICYCLOBACILLUS_medium.yaml, alicyclobacillus_medium.yaml, for_strains_of_a_cycloheptanicus.yaml,
+    medium_402_modified_for_dsm_11983.yaml, medium_402_modified_for_dsm_14558.yaml,
+    medium_402_modified_for_dsm_14745.yaml, medium_402_modified_for_dsm_14955.yaml,
+    medium_402_modified_for_dsm_16176.yaml, medium_402_modified_for_dsm_17614.yaml,
+    medium_402_modified_for_dsm_18237.yaml, medium_402_modified_for_dsm_2498.yaml,
+    medium_402_modified_for_dsm_3922.yaml, medium_402_modified_for_dsm_3923
+variant_children:
+- path: data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005204
+  name: for_strains_of_a_cycloheptanicus
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005197
+  name: medium_402_modified_for_dsm_11983
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005198
+  name: medium_402_modified_for_dsm_14558
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005199
+  name: medium_402_modified_for_dsm_14745
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005200
+  name: medium_402_modified_for_dsm_14955
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005201
+  name: medium_402_modified_for_dsm_16176
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005202
+  name: medium_402_modified_for_dsm_17614
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005203
+  name: medium_402_modified_for_dsm_18237
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005205
+  name: medium_402_modified_for_dsm_2498
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005206
+  name: medium_402_modified_for_dsm_3922
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005207
+  name: medium_402_modified_for_dsm_3923
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005208
+  name: medium_402_modified_for_dsm_3924
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005209
+  name: medium_402_modified_for_dsm_446
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005210
+  name: medium_402_modified_for_dsm_448
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005211
+  name: medium_402_modified_for_dsm_449
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005212
+  name: medium_402_modified_for_dsm_451
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005213
+  name: medium_402_modified_for_dsm_452
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005214
+  name: medium_402_modified_for_dsm_453
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005215
+  name: medium_402_modified_for_dsm_454
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005216
+  name: medium_402_modified_for_dsm_455
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+synonyms:
+- name: for_strains_of_a_cycloheptanicus
+  source: KOMODO
+  source_id: komodo.medium:402.1
+  original_category: bacterial
+- name: medium_402_modified_for_dsm_11983
+  source: KOMODO
+  source_id: komodo.medium:402_11983
+  original_category: bacterial
+- name: medium_402_modified_for_dsm_14558
+  source: KOMODO
+  source_id: komodo.medium:402_14558
+  original_category: bacterial
+- name: medium_402_modified_for_dsm_14745
+  source: KOMODO
+  source_id: komodo.medium:402_14745
+  original_category: bacterial
+- name: medium_402_modified_for_dsm_14955
+  source: KOMODO
+  source_id: komodo.medium:402_14955
+  original_category: bacterial
+- name: medium_402_modified_for_dsm_16176
+  source: KOMODO
+  source_id: komodo.medium:402_16176
+  original_category: bacterial
+- name: medium_402_modified_for_dsm_17614
+  source: KOMODO
+  source_id: komodo.medium:402_17614
+  original_category: bacterial
+- name: medium_402_modified_for_dsm_18237
+  source: KOMODO
+  source_id: komodo.medium:402_18237
+  original_category: bacterial
+- name: medium_402_modified_for_dsm_2498
+  source: KOMODO
+  source_id: komodo.medium:402_2498
+  original_category: bacterial
+- name: medium_402_modified_for_dsm_3922
+  source: KOMODO
+  source_id: komodo.medium:402_3922
+  original_category: bacterial
+- name: medium_402_modified_for_dsm_3923
+  source: KOMODO
+  source_id: komodo.medium:402_3923
+  original_category: bacterial
+- name: medium_402_modified_for_dsm_3924
+  source: KOMODO
+  source_id: komodo.medium:402_3924
+  original_category: bacterial
+- name: medium_402_modified_for_dsm_446
+  source: KOMODO
+  source_id: komodo.medium:402_446
+  original_category: bacterial
+- name: medium_402_modified_for_dsm_448
+  source: KOMODO
+  source_id: komodo.medium:402_448
+  original_category: bacterial
+- name: medium_402_modified_for_dsm_449
+  source: KOMODO
+  source_id: komodo.medium:402_449
+  original_category: bacterial
+- name: medium_402_modified_for_dsm_451
+  source: KOMODO
+  source_id: komodo.medium:402_451
+  original_category: bacterial
+- name: medium_402_modified_for_dsm_452
+  source: KOMODO
+  source_id: komodo.medium:402_452
+  original_category: bacterial
+- name: medium_402_modified_for_dsm_453
+  source: KOMODO
+  source_id: komodo.medium:402_453
+  original_category: bacterial
+- name: medium_402_modified_for_dsm_454
+  source: KOMODO
+  source_id: komodo.medium:402_454
+  original_category: bacterial
+- name: medium_402_modified_for_dsm_455
+  source: KOMODO
+  source_id: komodo.medium:402_455
+  original_category: bacterial
+categories:
+- bacterial
 merged_from:
-- TOGO_M2391_Alicyclobacillus_Medium
+- KOMODO_402_ALICYCLOBACILLUS_medium
+- alicyclobacillus_medium
+- for_strains_of_a_cycloheptanicus
+- medium_402_modified_for_dsm_11983
+- medium_402_modified_for_dsm_14558
+- medium_402_modified_for_dsm_14745
+- medium_402_modified_for_dsm_14955
+- medium_402_modified_for_dsm_16176
+- medium_402_modified_for_dsm_17614
+- medium_402_modified_for_dsm_18237
+- medium_402_modified_for_dsm_2498
+- medium_402_modified_for_dsm_3922
+- medium_402_modified_for_dsm_3923
+- medium_402_modified_for_dsm_3924
+- medium_402_modified_for_dsm_446
+- medium_402_modified_for_dsm_448
+- medium_402_modified_for_dsm_449
+- medium_402_modified_for_dsm_451
+- medium_402_modified_for_dsm_452
+- medium_402_modified_for_dsm_453
+- medium_402_modified_for_dsm_454
+- medium_402_modified_for_dsm_455
+merge_fingerprint: b875278279eabaf2d50958ba22876d4389b3969744a69b4ef48c2f14fa010fb8

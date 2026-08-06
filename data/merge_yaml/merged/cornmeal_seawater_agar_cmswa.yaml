@@ -3,6 +3,7 @@ name: cornmeal_seawater_agar_cmswa
 original_name: Cornmeal Seawater Agar (CMSWA)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Seawater (2% Salinity)
@@ -18,9 +19,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Cornmeal extract
   concentration:
     value: '2'
@@ -60,6 +61,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Cornmeal Seawater Agar (CMSWA)" to "cornmeal_seawater_agar_cmswa"
     for consistent matching
+- timestamp: '2026-06-05T07:40:54.878506+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:29.208752+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d5e5c10424660c911d6a3c05dbac31baa4c23e4285df3380cef452a7a1e0dcec
+  source: cornmeal_seawater_agar_cmswa.yaml
 kg_microbe_match: mediadive.medium:12
 merge_fingerprint: d5e5c10424660c911d6a3c05dbac31baa4c23e4285df3380cef452a7a1e0dcec
 merged_from:

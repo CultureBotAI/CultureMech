@@ -3,6 +3,7 @@ name: togo_medium_m1415
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
@@ -24,8 +25,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
   term:
-    id: CHEBI:32599
-    label: ''
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: K2HPO4
   concentration:
     value: '1'
@@ -35,9 +36,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: FeSO4・7H2O
   concentration:
     value: '10'
@@ -56,9 +57,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: NaNO3
   concentration:
     value: '3'
@@ -68,8 +69,8 @@ ingredients:
   term:
     id: CHEBI:63005
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000388
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
     label: NaNO3
 - preferred_term: Sucrose
   concentration:
@@ -80,9 +81,9 @@ ingredients:
   term:
     id: CHEBI:17992
     label: sucrose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000661
-    label: Sucrose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17992
+    label: sucrose
 - preferred_term: Agar
   concentration:
     value: '20'
@@ -91,9 +92,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 media_term:
   preferred_term: TOGO Medium M1415
   term:
@@ -128,12 +129,46 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TOGO Medium M1415" to "togo_medium_m1415" for consistent
     matching
-- timestamp: '2026-04-17T06:29:59.655123+00:00'
+- timestamp: '2026-06-05T07:41:52.147281+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:58:36.538713+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:47:13.745160+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:29.604034+00:00'
   curator: recipe-merger
   action: Merged 7 duplicate recipes into canonical record
   notes: 'Sources: czapek_solution_agar_a, czapek_solution_agar_b, czapeks_agar_for_the_genomic_modified_aspergillus,
     czapeks_solution_agar_with_200_g_sucrose, sucrose_nitrate_agar_czapek_dox_agar,
     togo_medium_m1414, togo_medium_m1415'
+- timestamp: '2026-08-06T03:05:29.604096+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 7 source recipe(s) on fingerprint bf3d6b4af826a7cd79fbbc900214ae9bf34accc2ce7125e6a985484bc48eed85
+  source: czapek_solution_agar_a.yaml, czapek_solution_agar_b.yaml, czapeks_agar_for_the_genomic_modified_aspergillus.yaml,
+    czapeks_solution_agar_with_200_g_sucrose.yaml, sucrose_nitrate_agar_czapek_dox_agar.yaml,
+    togo_medium_m1414.yaml, togo_medium_m1415.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/togo_medium_m1414.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:007951
+  name: togo_medium_m1414
+  notes: Reviewed TOGO M1414/M1415 pair; records are source-local unnamed media and
+    differ only in sucrose concentration.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Sucrose increased from 200 g/L to 400 g/L while the TOGO M1414/M1415 base formulation
+  remains unchanged.
 synonyms:
 - name: czapek_solution_agar_a
   source: TOGO
@@ -169,4 +204,4 @@ merged_from:
 - sucrose_nitrate_agar_czapek_dox_agar
 - togo_medium_m1414
 - togo_medium_m1415
-merge_fingerprint: 6782d946b01b16cc7b198b188e74476991a0c15ca506968c6fddd2636a91eda2
+merge_fingerprint: bf3d6b4af826a7cd79fbbc900214ae9bf34accc2ce7125e6a985484bc48eed85

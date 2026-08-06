@@ -3,6 +3,7 @@ name: togo_medium_m1527
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: NaCl
   concentration:
@@ -26,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Calf brains
   term:
     id: UBERON:0000955
@@ -169,9 +170,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008073'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:49.239362'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:29:57.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -181,11 +182,27 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TOGO Medium M1527" to "togo_medium_m1527" for consistent
     matching
-- timestamp: '2026-04-17T06:29:43.748572+00:00'
+- timestamp: '2026-05-16T09:04:36.368521+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:52.646647+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:11.528056+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M2360_BHI_Medium, TOGO_M63_Brain_Heart_Infusion_With_5_NaCl,
     togo_medium_m1527'
+- timestamp: '2026-08-06T03:05:11.528104+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 724c3a4c1c95b568bf237fd74eaca860cf32da2e5c13af64b323e28eb4f7badc
+  source: TOGO_M2360_BHI_Medium.yaml, TOGO_M63_Brain_Heart_Infusion_With_5_NaCl.yaml,
+    togo_medium_m1527.yaml
 solutions:
 - preferred_term: Horse serum*
   composition: []

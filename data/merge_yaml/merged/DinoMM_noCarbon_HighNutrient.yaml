@@ -1,6 +1,7 @@
 id: CultureMech:015459
 name: DinoMM noCarbon HighNutrient
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sea salts
@@ -152,8 +153,8 @@ ingredients:
     value: '0.1'
     unit: MG_PER_L
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Wolfe''s vitamin
     mix'
 - preferred_term: 4-Aminobenzoic acid
@@ -240,7 +241,7 @@ ingredients:
 description: Minimal media for marine bacteria with no carbon source and more vitamins
   and minerals
 notes: 'Source: FEBA media definitions'
-category: BACTERIAL
+category: bacterial
 sources:
 - database: CultureBotHT
   database_id: DinoMM noCarbon HighNutrient
@@ -254,21 +255,40 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015459'
-- timestamp: '2026-04-17T06:30:02.377287+00:00'
+- timestamp: '2026-05-16T09:03:30.831165+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:37.837969+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:46:56.394759+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:32.899086+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: dinomm_nocarbon_highnutrient, dinomm_nocarbon'
+- timestamp: '2026-08-06T03:05:32.899130+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint f71dee1045250697dc76e45e2a963b67fdd2cda53119115fd281c4f554c1add9
+  source: dinomm_nocarbon_highnutrient.yaml, dinomm_nocarbon.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 original_name: DinoMM noCarbon HighNutrient
 synonyms:
 - name: DinoMM noCarbon
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 categories:
-- BACTERIAL
-- SPECIALIZED
+- bacterial
+- specialized
 merged_from:
 - dinomm_nocarbon_highnutrient
 - dinomm_nocarbon
-merge_fingerprint: 209bf0db64577ae0d94fb78e489c1719f0ba6c0eb7801881a722204527feb416
+merge_fingerprint: f71dee1045250697dc76e45e2a963b67fdd2cda53119115fd281c4f554c1add9

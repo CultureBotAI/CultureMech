@@ -3,8 +3,11 @@ name: sabouraud_glucose_medium
 original_name: SABOURAUD GLUCOSE MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_range: 3-4
+ph_range:
+  min: 3.0
+  max: 4.0
 media_term:
   preferred_term: KOMODO Medium 1429
   term:
@@ -24,8 +27,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -51,10 +54,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "SABOURAUD GLUCOSE MEDIUM" to "sabouraud_glucose_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:30:21.484059+00:00'
+- timestamp: '2026-05-20T06:02:04.615645+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''3-4'' -> {''min'': 3.0, ''max'': 4.0}'
+- timestamp: '2026-06-05T07:41:44.992882+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:55.075599+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: sabouraud_glucose_medium, sabouraud_glucose_medium'
+- timestamp: '2026-08-06T03:05:55.075645+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint b28dff4cc8cab4f3e3593766d7f3c349044b6bb0cbbc67c664ec8b7741bc4bf6
+  source: sabouraud_glucose_medium.yaml, sabouraud_glucose_medium.yaml
 kg_microbe_match: mediadive.medium:12
 categories:
 - bacterial

@@ -3,6 +3,7 @@ name: togo_medium_m1969
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
@@ -24,11 +25,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
   term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4·7H2O
 - preferred_term: Yeast extract
   concentration:
     value: '2'
@@ -43,9 +44,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: MgCl2·6H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Sucrose
   concentration:
     value: '1'
@@ -55,9 +56,9 @@ ingredients:
   term:
     id: CHEBI:17992
     label: sucrose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000661
-    label: Sucrose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17992
+    label: sucrose
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -102,6 +103,23 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TOGO Medium M1969" to "togo_medium_m1969" for consistent
     matching
-merge_fingerprint: 85991dec77e9794a4cb63dfe169add20b96ca9ad733f170202b9de3b2bb15041
+- timestamp: '2026-06-05T07:41:53.280822+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:58:37.561934+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-08-06T03:06:00.966995+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e662f61409913a59d36f7fa6b8066d4db6ce6108aa7207bff94f9ff2c6385c8f
+  source: togo_medium_m1969.yaml
+merge_fingerprint: e662f61409913a59d36f7fa6b8066d4db6ce6108aa7207bff94f9ff2c6385c8f
 merged_from:
 - togo_medium_m1969

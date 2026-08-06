@@ -1,101 +1,161 @@
-id: CultureMech:003300
+id: CultureMech:010427
 name: alginate_medium
-original_name: ALGINATE MEDIUM
+original_name: Alginate Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 5.5
-media_term:
-  preferred_term: JCM Medium J952
-  term:
-    id: mediadive.medium:J952
-    label: ALGINATE MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=952'
 ingredients:
-- preferred_term: (NH4)2SO4
-  term:
-    id: CHEBI:62946
-    label: (NH4)2SO4
+- preferred_term: Distilled water
   concentration:
-    value: '2'
+    value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: (NH4)2SO4
-- preferred_term: MgSO4 x 7 H2O
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: Na2HPO4 x 2 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
-    id: CHEBI:34683
-    label: Na2HPO4 x 2 H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
-    label: Na2HPO4 x 2 H2O
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: CaCl2・2H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
-- preferred_term: K2HPO4
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
-    id: CHEBI:131527
-    label: K2HPO4
+    id: CHEBI:86158
+    label: ''
+- preferred_term: K2HPO4
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
-- preferred_term: Sodium alginate
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
   term:
-    id: CHEBI:53311
-    label: Sodium alginate
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+- preferred_term: Na2HPO4・2H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+  term:
+    id: CHEBI:34683
+    label: ''
+- preferred_term: Sodium alginate
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000721
+  notes: 'Role: Solidifying component; Properties: Simple component, Organic compound,
+    Defined component'
+  term:
+    id: CHEBI:53311
     label: Sodium alginate
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 5.5 with HCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53311
+    label: Sodium alginate
+- preferred_term: HCl
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Solution'
+  term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+media_term:
+  preferred_term: TOGO Medium M999
+  term:
+    id: TOGO:M999
+    label: Alginate Medium
+notes: 'Source: https://togomedium.org/medium/M999
+
+  Original source: JCM - JCM_M952
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=952'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:18.112943Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J952'
-- timestamp: '2026-03-13T06:19:19.314981Z'
+- timestamp: '2026-01-27T06:35:56.116531Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M999'
+- timestamp: '2026-01-28T19:48:14.813098Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: HCl'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-03-13T06:20:13.796948Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:003300'
-- timestamp: '2026-03-17T06:29:40.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:010427'
+- timestamp: '2026-03-17T06:29:57.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:33.252433+00:00'
+- timestamp: '2026-03-17T19:46:32.773665+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ALGINATE MEDIUM" to "alginate_medium" for consistent
+  notes: Normalized name from "Alginate Medium" to "alginate_medium" for consistent
     matching
-merge_fingerprint: 8987a8ad5f9ebb7717968b14a30521a0c62555d6b1b775c59439f2d30ad596ed
+- timestamp: '2026-05-16T09:03:22.674258+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:46.413806+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:34.504360+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:46:52.285214+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:21.096189+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint bdeda6fda4dc796b5c84e30f8dd4fc8a30bb946d93aa7a75f9602eee4754dca1
+  source: TOGO_M999_Alginate_Medium.yaml
+merge_fingerprint: bdeda6fda4dc796b5c84e30f8dd4fc8a30bb946d93aa7a75f9602eee4754dca1
 merged_from:
-- alginate_medium
+- TOGO_M999_Alginate_Medium

@@ -3,6 +3,7 @@ name: treponema_denticola_medium
 original_name: TREPONEMA DENTICOLA medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 909
@@ -153,12 +154,12 @@ ingredients:
 - preferred_term: Na-thioglycolate
   term:
     id: CHEBI:86481
-    label: Na-thioglycolate
+    label: sodium thioglycolate
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000569
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86481
     label: Na-thioglycolate
 - preferred_term: L-Cysteine HCl
   term:
@@ -177,8 +178,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000282
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17196
     label: L-Asparagine
 - preferred_term: Glucose
   term:
@@ -187,8 +188,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Agar
   term:
@@ -197,8 +198,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Thiamine pyrophosphate
   term:
@@ -207,8 +208,8 @@ ingredients:
   concentration:
     value: '0.133333'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000431
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18290
     label: Thiamine pyrophosphate
 - preferred_term: NaHCO3
   term:
@@ -217,8 +218,8 @@ ingredients:
   concentration:
     value: '44.4444'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: Rabbit serum
   concentration:
@@ -231,8 +232,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000213
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32035
     label: KOH
 - preferred_term: Isobutyric acid
   term:
@@ -241,8 +242,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000286
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16135
     label: Isobutyric acid
 - preferred_term: Tryptone
   term:
@@ -304,8 +305,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000305
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28484
     label: Isovaleric acid
 - preferred_term: Valeric acid
   term:
@@ -314,8 +315,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000303
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17418
     label: Valeric acid
 applications:
 - Microbial cultivation
@@ -341,11 +342,38 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TREPONEMA DENTICOLA medium" to "treponema_denticola_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:34.532383+00:00'
+- timestamp: '2026-06-05T07:40:27.703423+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:46.319873+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:01.760877+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_909_TREPONEMA_DENTICOLA_medium, medium_909_modified_for_dsm_14222,
     treponema_denticola_medium'
+- timestamp: '2026-08-06T03:05:01.760943+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint d05b31d8a252b68245cc0c9cb29719bbf110269f9cdd872fc3055105d95b1fea
+  source: KOMODO_909_TREPONEMA_DENTICOLA_medium.yaml, medium_909_modified_for_dsm_14222.yaml,
+    treponema_denticola_medium.yaml
+parent_media:
+  path: data/normalized_yaml/bacterial/treponema_denticola_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002077
+  name: treponema_denticola_medium
+  notes: KOMODO record states DSMZ Medium 909 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 synonyms:
 - name: medium_909_modified_for_dsm_14222
   source: KOMODO
@@ -357,4 +385,4 @@ merged_from:
 - KOMODO_909_TREPONEMA_DENTICOLA_medium
 - medium_909_modified_for_dsm_14222
 - treponema_denticola_medium
-merge_fingerprint: 6bfe4fc27c288937a7cee7e57f305844fd40f16cff86f39b1e9231dedae8fda6
+merge_fingerprint: d05b31d8a252b68245cc0c9cb29719bbf110269f9cdd872fc3055105d95b1fea

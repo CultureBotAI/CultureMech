@@ -1,6 +1,7 @@
 id: CultureMech:015749
 name: Soil Defined Media (SDM)
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: SDM_noCarbon
@@ -418,7 +419,7 @@ ingredients:
 description: Northen lab media based on carbon sources found in soil extracts,  precurser
   to NLDM
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: Soil Defined Media (SDM)
@@ -432,6 +433,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015749'
+- timestamp: '2026-05-16T09:04:43.531035+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:08.518791+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint da47d97f4c76380c1b1566cccc3efea9d9e43ccff1e548e63b011051a4b80bc3
+  source: soil_defined_media_sdm.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: da47d97f4c76380c1b1566cccc3efea9d9e43ccff1e548e63b011051a4b80bc3

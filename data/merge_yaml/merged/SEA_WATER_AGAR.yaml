@@ -3,6 +3,7 @@ name: sea_water_agar
 original_name: SEA WATER AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.3
 media_term:
@@ -28,8 +29,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Tap water
   term:
@@ -38,8 +39,8 @@ ingredients:
   concentration:
     value: '250'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Tap water
 - preferred_term: Sea water
   concentration:
@@ -52,8 +53,8 @@ ingredients:
   concentration:
     value: '28.13'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: KCl
   term:
@@ -62,8 +63,8 @@ ingredients:
   concentration:
     value: '0.77'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -72,8 +73,8 @@ ingredients:
   concentration:
     value: '1.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -82,8 +83,8 @@ ingredients:
   concentration:
     value: '4.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: NaHCO3
   term:
@@ -92,8 +93,8 @@ ingredients:
   concentration:
     value: '0.11'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -102,8 +103,8 @@ ingredients:
   concentration:
     value: '3.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 applications:
 - Microbial cultivation
@@ -129,11 +130,49 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "SEA WATER AGAR" to "sea_water_agar" for consistent
     matching
-- timestamp: '2026-04-17T06:29:21.000846+00:00'
+- timestamp: '2026-06-05T07:40:21.874193+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:46.150930+00:00'
   curator: recipe-merger
   action: Merged 5 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_246_SEA_WATER_AGAR, medium_246_modified_for_dsm_18675, medium_246_modified_for_dsm_2165,
     reactivation_with_liquid_medium_246, sea_water_agar'
+- timestamp: '2026-08-06T03:04:46.150978+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 5 source recipe(s) on fingerprint a0d2fda5cc698640d4a31e6fbd13785f937b0ad11c7a93e3b9775fdacc08be8c
+  source: KOMODO_246_SEA_WATER_AGAR.yaml, medium_246_modified_for_dsm_18675.yaml,
+    medium_246_modified_for_dsm_2165.yaml, reactivation_with_liquid_medium_246.yaml,
+    sea_water_agar.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_246_modified_for_dsm_18675.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004617
+  name: medium_246_modified_for_dsm_18675
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_246_modified_for_dsm_2165.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004618
+  name: medium_246_modified_for_dsm_2165
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/sea_water_agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001346
+  name: sea_water_agar
+  notes: KOMODO record explicitly cites DSMZ Medium 246; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 246; local ingredient
+  and concentration signatures match.
 synonyms:
 - name: medium_246_modified_for_dsm_18675
   source: KOMODO

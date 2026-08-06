@@ -3,6 +3,7 @@ name: tsb_0_2_w_v_na2co3
 original_name: TSB + 0.2%(w/v) Na2CO3
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Agar (if needed)
   concentration:
@@ -52,9 +53,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008236'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:50.345222'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:06.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -64,10 +65,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TSB + 0.2%(w/v) Na2CO3" to "tsb_0_2_w_v_na2co3" for
     consistent matching
-- timestamp: '2026-04-17T06:30:06.347186+00:00'
+- timestamp: '2026-05-16T09:04:38.207269+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:54.654095+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:37.545948+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: hgam, r2a_medium_daigo, tsb_0_2_w_v_na2co3'
+- timestamp: '2026-08-06T03:05:37.545992+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint ebfb3a526a43b07e060426e50b17a82f8ee2cac3763b3b1fbd48188fcdb97d0a
+  source: hgam.yaml, r2a_medium_daigo.yaml, tsb_0_2_w_v_na2co3.yaml
 solutions:
 - preferred_term: Na2CO3**
   composition: []
@@ -84,6 +100,15 @@ solutions:
     unit: G_PER_L
   notes: 'Properties: Undefined component, Complex component'
   name: Unknown solution
+parent_media:
+  path: data/normalized_yaml/bacterial/hgam.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:009551
+  name: hgam
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.
 synonyms:
 - name: hgam
   source: TOGO

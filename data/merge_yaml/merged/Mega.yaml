@@ -1,6 +1,7 @@
 id: CultureMech:015582
 name: Mega
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Potassium phosphate monobasic
@@ -149,7 +150,7 @@ ingredients:
 - preferred_term: Folic Acid
   concentration:
     value: '20.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:27470
     label: folic acid
@@ -158,16 +159,16 @@ ingredients:
 - preferred_term: Pyridoxine HCl
   concentration:
     value: '100.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: Pyridoxine HCl
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-56-0; MW: 205.64;
     From ATCC Wolfe''s vitamin mix'
 - preferred_term: Riboflavin
   concentration:
     value: '50.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:17015
     label: riboflavin
@@ -176,7 +177,7 @@ ingredients:
 - preferred_term: biotin
   concentration:
     value: '20.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:15956
     label: biotin
@@ -185,7 +186,7 @@ ingredients:
 - preferred_term: Thiamine HCl
   concentration:
     value: '50.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:49105
     label: thiamine hydrochloride
@@ -194,7 +195,7 @@ ingredients:
 - preferred_term: Nicotinic Acid
   concentration:
     value: '50.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:15940
     label: nicotinic acid
@@ -203,7 +204,7 @@ ingredients:
 - preferred_term: calcium pantothenate
   concentration:
     value: '50.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:31345
     label: Calcium pantothenate
@@ -212,7 +213,7 @@ ingredients:
 - preferred_term: Cyanocobalamin
   concentration:
     value: '1.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:17439
     label: cyanocob(III)alamin
@@ -221,7 +222,7 @@ ingredients:
 - preferred_term: 4-Aminobenzoic acid
   concentration:
     value: '50.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   notes: 'CAS: 150-13-0; MW: 137.14; From ATCC Wolfe''s vitamin mix; Ontology enriched
     via CAS-RN lookup'
   term:
@@ -230,7 +231,7 @@ ingredients:
 - preferred_term: Lipoic acid
   concentration:
     value: '50.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:16494
     label: lipoic acid
@@ -401,12 +402,17 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 503-74-2; MW: 102.13'
 description: Mega medium
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: Mega
   url: https://github.com/CultureBotAI/CultureBotHT
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI,
+    0 de-grounded (mixture or unverifiable).
 - timestamp: '2026-03-18T04:31:13.556421+00:00'
   curator: import_from_culturebotht.py
   action: IMPORTED
@@ -415,8 +421,23 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015582'
+- timestamp: '2026-05-16T09:04:41.558245+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1; concentration.unit aliases=10
+- timestamp: '2026-06-08T23:19:52.911357+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:06:06.240509+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2cb0bbb50c42b615c5100bc4ff2354cc0f6af1030004aa8ed1173e5e91e7ac1e
+  source: mega.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: f5634bc46752b256a6d5592cfebbe19181c9ad79102afccf43a72ebe7dd06232
+merge_fingerprint: 2cb0bbb50c42b615c5100bc4ff2354cc0f6af1030004aa8ed1173e5e91e7ac1e
 merged_from:
 - mega

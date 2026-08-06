@@ -3,6 +3,7 @@ name: pyes_medium
 original_name: PYES medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
@@ -28,8 +29,8 @@ ingredients:
   concentration:
     value: '2.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001088
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63675
     label: Sodium succinate
 - preferred_term: Agar
   term:
@@ -39,8 +40,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -65,11 +66,40 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "PYES medium" to "pyes_medium" for consistent matching
-- timestamp: '2026-04-17T06:29:35.091567+00:00'
+- timestamp: '2026-06-05T07:40:27.996075+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:02.392422+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_937_PYES_medium, KOMODO_937a_MODIFIED_PYES_medium, pyes_medium'
+- timestamp: '2026-08-06T03:05:02.392473+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint b3ed3e9a651c44d979410e9a7fadc89016c6cf8e89ff11b71c1787a4255b962d
+  source: KOMODO_937_PYES_medium.yaml, KOMODO_937a_MODIFIED_PYES_medium.yaml, pyes_medium.yaml
 kg_microbe_match: mediadive.medium:937
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_937a_MODIFIED_PYES_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006860
+  name: modified_pyes_medium
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/pyes_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002111
+  name: pyes_medium
+  notes: KOMODO record states DSMZ Medium 937 provenance and exactly matches the single
+    same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.
 synonyms:
 - name: modified_pyes_medium
   source: KOMODO

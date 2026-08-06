@@ -3,6 +3,7 @@ name: bm7_medium
 original_name: BM7 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 1556
@@ -28,8 +29,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000877
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16810
     label: Na2 alpha-ketoglutarate
 - preferred_term: KOH
   term:
@@ -38,8 +39,8 @@ ingredients:
   concentration:
     value: '3.75'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000213
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32035
     label: KOH
 - preferred_term: Agar
   term:
@@ -49,8 +50,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Fetal bovine serum
   concentration:
@@ -92,6 +93,21 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "BM7 MEDIUM" to "bm7_medium" for consistent matching
-merge_fingerprint: 38b3577689586142e1d81794d611fbcf4b8e329509ecb327c6c0d8121274e9e1
+- timestamp: '2026-06-05T07:40:51.175418+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:37:34.593224+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:25.632094+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 91d43aeaaa74fcda55ed630a46d42a03cf4bd4ef269396a4880aa2ceca4df944
+  source: bm7_medium.yaml
+merge_fingerprint: 91d43aeaaa74fcda55ed630a46d42a03cf4bd4ef269396a4880aa2ceca4df944
 merged_from:
 - bm7_medium

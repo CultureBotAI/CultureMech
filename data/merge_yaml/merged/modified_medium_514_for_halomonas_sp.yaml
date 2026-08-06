@@ -3,6 +3,7 @@ name: modified_medium_514_for_halomonas_sp
 original_name: MODIFIED MEDIUM 514 FOR HALOMONAS SP.
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.5
 media_term:
@@ -35,8 +36,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -62,6 +63,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MODIFIED MEDIUM 514 FOR HALOMONAS SP." to "modified_medium_514_for_halomonas_sp"
     for consistent matching
+- timestamp: '2026-06-05T07:41:37.146924+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:48.853718+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 9b58d3e936faf17b948dff8836b1fc01d4f0aee1fba402964112bd6f6fbc682c
+  source: modified_medium_514_for_halomonas_sp.yaml
 kg_microbe_match: mediadive.medium:12
 merge_fingerprint: 9b58d3e936faf17b948dff8836b1fc01d4f0aee1fba402964112bd6f6fbc682c
 merged_from:

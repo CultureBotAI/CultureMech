@@ -3,12 +3,16 @@ name: nitrogen_limited_mr_medium
 original_name: Nitrogen-limited MR medium
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '49.01'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: D-Fructose
   term:
     id: CHEBI:15824
@@ -17,13 +21,16 @@ ingredients:
     value: '111.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:fru'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000344
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15824
     label: D-Fructose
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.09011'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -31,9 +38,9 @@ ingredients:
   concentration:
     value: '0.03825'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -41,18 +48,24 @@ ingredients:
   concentration:
     value: '4.587'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Citrate
   concentration:
     value: '4.164'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.1798'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
@@ -60,13 +73,16 @@ ingredients:
   concentration:
     value: '0.01121'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.02002'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Sodium borate
   concentration:
     value: '0.0002622'
@@ -75,10 +91,16 @@ ingredients:
   concentration:
     value: '0.0004045'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '33.34'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -86,8 +108,8 @@ ingredients:
   concentration:
     value: '33.65'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 preparation_steps:
 - step_number: 1
@@ -118,6 +140,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Nitrogen-limited MR medium" to "nitrogen_limited_mr_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:41:39.803873+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:51.441303+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 237738ba598d6ec418f0521194da5cc02ec14ad6e7362c6682a4ed9043d6061a
+  source: nitrogen_limited_mr_medium.yaml
 media_term:
   preferred_term: MediaDB Medium 391
   term:
@@ -129,6 +162,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: cbaa93ea6b067e867b2bef8e39b0de4468d29d5539ac9afe064b19bb21bbd390
+merge_fingerprint: 237738ba598d6ec418f0521194da5cc02ec14ad6e7362c6682a4ed9043d6061a
 merged_from:
 - nitrogen_limited_mr_medium

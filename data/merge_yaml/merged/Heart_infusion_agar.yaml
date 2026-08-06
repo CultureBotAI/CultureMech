@@ -3,6 +3,7 @@ name: heart_infusion_agar
 original_name: Heart infusion agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Heart infusion agar (Eiken)
@@ -32,6 +33,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Heart infusion agar" to "heart_infusion_agar" for consistent
     matching
+- timestamp: '2026-08-06T03:05:37.426725+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint c0ed9a581df7ca54eecbfb7e66f2a754fc1894b6f4920fc6ae7f900b33297541
+  source: heart_infusion_agar.yaml
 merge_fingerprint: c0ed9a581df7ca54eecbfb7e66f2a754fc1894b6f4920fc6ae7f900b33297541
 merged_from:
 - heart_infusion_agar

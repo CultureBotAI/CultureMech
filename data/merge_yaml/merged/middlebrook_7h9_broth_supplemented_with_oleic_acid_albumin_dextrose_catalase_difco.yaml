@@ -4,6 +4,7 @@ original_name: Middlebrook 7H9 broth supplemented with oleic acid-albumin-dextro
   (Difco)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Glycerol
@@ -13,10 +14,10 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
     component'
   term:
-    id: CHEBI:15978
-    label: sn-glycerol 3-phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000588
+    id: CHEBI:17754
+    label: Glycerol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: DI Water
   concentration:
@@ -93,9 +94,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: Monopotassium Phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
 - preferred_term: Biotin
   concentration:
     value: '0.5'
@@ -104,9 +105,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
-    label: Biotin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
+    label: biotin
 - preferred_term: Ammonium Sulfate
   concentration:
     value: '0.5'
@@ -116,9 +117,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium Sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 - preferred_term: Calcium Chloride
   concentration:
     value: '0.5'
@@ -128,9 +129,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: Calcium Chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: Disodium Phosphate
   concentration:
     value: '2.5'
@@ -140,9 +141,9 @@ ingredients:
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
-    label: Disodium Phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
 - preferred_term: Magnesium Sulfate
   concentration:
     value: '0.05'
@@ -152,9 +153,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: Magnesium Sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
 - preferred_term: Copper Sulfate
   concentration:
     value: '1'
@@ -164,9 +165,9 @@ ingredients:
   term:
     id: CHEBI:23414
     label: copper(II) sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000855
-    label: Copper Sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:23414
+    label: copper(II) sulfate
 - preferred_term: Sodium Citrate
   concentration:
     value: '0.1'
@@ -175,9 +176,9 @@ ingredients:
   term:
     id: CHEBI:32142
     label: sodium citrate dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000719
-    label: Sodium Citrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32142
+    label: sodium citrate dihydrate
 - preferred_term: Ferric Ammonium Citrate
   concentration:
     value: '0.04'
@@ -187,9 +188,9 @@ ingredients:
   term:
     id: CHEBI:31604
     label: ferric ammonium citrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000541
-    label: Ferric Ammonium Citrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
 - preferred_term: L-Glutamic Acid
   concentration:
     value: '0.5'
@@ -199,9 +200,9 @@ ingredients:
   term:
     id: CHEBI:16015
     label: L-glutamic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000562
-    label: L-Glutamic Acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16015
+    label: L-glutamic acid
 - preferred_term: Pyridoxine
   concentration:
     value: '1'
@@ -210,9 +211,9 @@ ingredients:
   term:
     id: CHEBI:16709
     label: pyridoxine
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000317
-    label: Pyridoxine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16709
+    label: pyridoxine
 - preferred_term: Zinc Sulfate
   concentration:
     value: '1'
@@ -222,9 +223,9 @@ ingredients:
   term:
     id: CHEBI:35176
     label: zinc sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc Sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: zinc sulfate
 - preferred_term: NaCl
   concentration:
     value: '0.85'
@@ -234,9 +235,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Dextrose (BD 215530)
   concentration:
     value: '2'
@@ -307,6 +308,23 @@ curation_history:
   notes: Normalized name from "Middlebrook 7H9 broth supplemented with oleic acid-albumin-dextrose-catalase
     (Difco)" to "middlebrook_7h9_broth_supplemented_with_oleic_acid_albumin_dextrose_catalase_difco"
     for consistent matching
-merge_fingerprint: 73db7e8bddd356f98e97e4b16613cda7eee7390104db02173164ef42168084a6
+- timestamp: '2026-06-05T07:41:33.977162+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 14 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:48.243616+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:05:45.512351+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 025aef6221dffee6e8b246cd33c29160942617caa8a7ba504711154c0388fe92
+  source: middlebrook_7h9_broth_supplemented_with_oleic_acid_albumin_dextrose_catalase_difco.yaml
+merge_fingerprint: 025aef6221dffee6e8b246cd33c29160942617caa8a7ba504711154c0388fe92
 merged_from:
 - middlebrook_7h9_broth_supplemented_with_oleic_acid_albumin_dextrose_catalase_difco

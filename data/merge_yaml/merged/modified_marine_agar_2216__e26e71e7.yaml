@@ -1,0 +1,76 @@
+id: CultureMech:015396
+name: modified_marine_agar_2216
+original_name: MODIFIED MARINE AGAR 2216
+category: specialized
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+ph_value: 7.5
+media_term:
+  preferred_term: JCM Medium J1251
+  term:
+    id: mediadive.medium:J1251
+    label: MODIFIED MARINE AGAR 2216
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1251'
+ingredients:
+- preferred_term: Marine agar 2216
+  term:
+    id: CHEBI:2509
+    label: Marine agar 2216
+  concentration:
+    value: '55.1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Marine agar 2216
+- preferred_term: Casitone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Phytone peptone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Malt extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.5.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.176909Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1251'
+- timestamp: '2026-03-13T06:20:42.415975Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015396'
+- timestamp: '2026-03-17T17:06:21.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:34.058578+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MODIFIED MARINE AGAR 2216" to "modified_marine_agar_2216"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:58.141867+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:06:06.448689+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint e26e71e7e44ef7ccb069ef8e25eb2044117d3a3d93ed725145ec9b7d394f1254
+  source: modified_marine_agar_2216.yaml
+kg_microbe_match: mediadive.medium:12
+merge_fingerprint: e26e71e7e44ef7ccb069ef8e25eb2044117d3a3d93ed725145ec9b7d394f1254
+merged_from:
+- modified_marine_agar_2216

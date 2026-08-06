@@ -1,353 +1,233 @@
-id: CultureMech:002431
+id: CultureMech:007899
 name: gbs_salts_medium_for_thermanaeromonas_inyoensis
-original_name: GBS SALTS MEDIUM FOR THERMANAEROMONAS INYOENSIS
+original_name: GBS Salts Medium For Thermanaeromonas Inyoensis
 category: bacterial
-medium_type: DEFINED
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 7.0
-media_term:
-  preferred_term: JCM Medium J1265
-  term:
-    id: mediadive.medium:J1265
-    label: GBS SALTS MEDIUM FOR THERMANAEROMONAS INYOENSIS
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1265'
 ingredients:
-- preferred_term: NaH2PO4
-  term:
-    id: CHEBI:37585
-    label: NaH2PO4
+- preferred_term: Distilled water
   concentration:
-    value: '1.34241'
+    value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000393
-    label: NaH2PO4
-- preferred_term: NaCl
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
-    id: CHEBI:26710
-    label: NaCl
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
   concentration:
-    value: '2.91829'
+    value: '0.123'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: NH4Cl
-  term:
-    id: CHEBI:31206
-    label: NH4Cl
-  concentration:
-    value: '0.104086'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
-- preferred_term: MgSO4 x 7 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
+- preferred_term: NaCl
   concentration:
-    value: '0.11965'
+    value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: CaCl2 x 2 H2O
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.015'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: ''
+- preferred_term: NH4Cl
   concentration:
-    value: '0.0145914'
+    value: '0.107'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: KCl
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:32588
-    label: KCl
-  concentration:
-    value: '0.145914'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Na2SO4
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
     id: CHEBI:32149
-    label: Na2SO4
+    label: sodium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
+- preferred_term: NaH2PO4
   concentration:
-    value: '0.291829'
+    value: '1.38'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
-    label: Na2SO4
-- preferred_term: Sodium acetate
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
   term:
-    id: CHEBI:32954
-    label: Sodium acetate
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
+- preferred_term: N2
+  notes: 'Properties: Gas'
   concentration:
-    value: '2'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
-    label: Sodium acetate
-- preferred_term: Sodium Thiosulfate
+    value: variable
+    unit: VARIABLE
   term:
-    id: CHEBI:132112
-    label: Sodium Thiosulfate
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000669
-    label: Sodium Thiosulfate
-- preferred_term: Sodium lactate
+    id: CHEBI:17997
+    label: ''
+media_term:
+  preferred_term: TOGO Medium M1361
   term:
-    id: CHEBI:75228
-    label: Sodium lactate
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001047
-    label: Sodium lactate
-- preferred_term: NaHCO3
-  term:
-    id: CHEBI:32139
-    label: NaHCO3
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
-- preferred_term: Na2S x 9 H2O
-  term:
-    id: CHEBI:76209
-    label: Na2S x 9 H2O
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
-    label: Na2S x 9 H2O
-- preferred_term: EDTA
-  term:
-    id: CHEBI:64755
-    label: EDTA
-  concentration:
-    value: '3.7'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000165
-    label: EDTA
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '1.1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
-    label: FeSO4 x 7 H2O
-- preferred_term: MnCl2 x 4 H2O
-  term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
-  concentration:
-    value: '0.0984'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
-    label: MnCl2 x 4 H2O
-- preferred_term: ZnSO4 x 7 H2O
-  term:
-    id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
-  concentration:
-    value: '0.0288'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
-    label: ZnSO4 x 7 H2O
-- preferred_term: CoCl2 x 6 H2O
-  term:
-    id: CHEBI:35696
-    label: CoCl2 x 6 H2O
-  concentration:
-    value: '0.0238'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
-    label: CoCl2 x 6 H2O
-- preferred_term: CuCl2 x 2 H2O
-  term:
-    id: CHEBI:86318
-    label: CuCl2 x 2 H2O
-  concentration:
-    value: '0.0172'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
-    label: CuCl2 x 2 H2O
-- preferred_term: Na2MoO4 x 2 H2O
-  term:
-    id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
-  concentration:
-    value: '0.0242'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
-    label: Na2MoO4 x 2 H2O
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.031'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
-- preferred_term: Biotin
-  term:
-    id: CHEBI:15956
-    label: Biotin
-  concentration:
-    value: '0.002'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
-    label: Biotin
-- preferred_term: Folic acid
-  term:
-    id: CHEBI:27470
-    label: Folic acid
-  concentration:
-    value: '0.002'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
-    label: Folic acid
-- preferred_term: Pyridoxine hydrochloride
-  term:
-    id: CHEBI:30961
-    label: Pyridoxine hydrochloride
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001016
-    label: Pyridoxine hydrochloride
-- preferred_term: Thiamine HCl
-  term:
-    id: CHEBI:49105
-    label: Thiamine HCl
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
-    label: Thiamine HCl
-- preferred_term: Riboflavin
-  term:
-    id: CHEBI:17015
-    label: Riboflavin
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
-    label: Riboflavin
-- preferred_term: Nicotinic acid
-  term:
-    id: CHEBI:15940
-    label: Nicotinic acid
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
-    label: Nicotinic acid
-- preferred_term: Calcium pantothenate
-  term:
-    id: CHEBI:31345
-    label: Calcium pantothenate
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
-    label: Calcium pantothenate
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '0.0001'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
-    label: Vitamin B12
-- preferred_term: p-Aminobenzoic acid
-  term:
-    id: CHEBI:30753
-    label: p-Aminobenzoic acid
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
-    label: p-Aminobenzoic acid
-- preferred_term: Lipoic acid
-  term:
-    id: CHEBI:16494
-    label: Lipoic acid
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000166
-    label: Lipoic acid
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 7.0, distribute the medium
-    into culture vessels (e.g., 5.0 ml in 25 ml serum bottles/Balch tubes) under a
-    stream of N2, seal with butyl rubber stoppers and autoclave. After cooling, aseptically
-    and anaerobically add per liter the following solutions (autoclaved or *filter-sterilized
-    and stored anaerobically):'
-- step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH to 6.0 with KOH.
-- step_number: 3
-  action: HEAT
-  description: 'Comment: Consistent growth in serum tubes requires pretreatment of
-    butyl rubber stoppers by boiling in 1% sodium sulfide solution (1 hr) followed
-    by boiling in distilled H2O (1 hr, twice).'
+    id: TOGO:M1361
+    label: GBS Salts Medium For Thermanaeromonas Inyoensis
+notes: 'Source: https://togomedium.org/medium/M1361
+
+  Original source: JCM - JCM_M1265
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1265'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:19.224414Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J1265'
-- timestamp: '2026-03-13T06:19:13.262237Z'
+- timestamp: '2026-01-27T06:35:54.429382Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1361'
+- timestamp: '2026-01-28T19:48:26.580157Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: N2'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-03-09T08:04:44.134231+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 7 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:52.331555Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002431'
-- timestamp: '2026-03-17T06:30:53.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:007899'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name; Added default
+    solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:30:21.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:26.357624+00:00'
+- timestamp: '2026-03-17T19:46:10.787170+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "GBS SALTS MEDIUM FOR THERMANAEROMONAS INYOENSIS" to
+  notes: Normalized name from "GBS Salts Medium For Thermanaeromonas Inyoensis" to
     "gbs_salts_medium_for_thermanaeromonas_inyoensis" for consistent matching
-merge_fingerprint: 9a79b16974ae89c32b3d8abe332141ada5219044f34f4cd5f23b0f39bb26dbee
+- timestamp: '2026-05-16T09:03:09.682935+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:32.680039+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:22.973754+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:46:47.688585+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:08.315682+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 08a1bf78de068d7a5ed51d14c77fa8d06026c7ad87e4bf81bdcc851dd63dd7db
+  source: TOGO_M1361_GBS_Salts_Medium_For_Thermanaeromonas_Inyoensis.yaml
+solutions:
+- preferred_term: Mineral solution (see Medium [M1029])
+  composition: []
+  notes: Cross-reference to Medium M1029
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: 8.0% NaHCO3 solution*
+  composition: []
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Solution, Inorganic compound, Defined component'
+  name: Unknown solution
+- preferred_term: 1.0 M Sodium lactate solution
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Solution, Organic compound, Defined component'
+  name: Unknown solution
+- preferred_term: 1.0 M Sodium acetate solution
+  composition: []
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Solution, Organic compound'
+  name: Unknown solution
+- preferred_term: 5% Na2S・9H2O solution
+  composition: []
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Solution, Inorganic compound, Defined
+    component'
+  name: Unknown solution
+- preferred_term: 1.0 M Sodium thiosulfate solution
+  composition: []
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+  name: Unknown solution
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: 08a1bf78de068d7a5ed51d14c77fa8d06026c7ad87e4bf81bdcc851dd63dd7db
 merged_from:
-- gbs_salts_medium_for_thermanaeromonas_inyoensis
+- TOGO_M1361_GBS_Salts_Medium_For_Thermanaeromonas_Inyoensis

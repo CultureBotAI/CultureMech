@@ -1,0 +1,79 @@
+id: CultureMech:008092
+name: cytophaga_marine_medium
+original_name: Cytophaga (Marine) Medium
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Bacto Tryptone (Difco)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M1544
+  term:
+    id: TOGO:M1544
+    label: Cytophaga (Marine) Medium
+notes: 'Source: https://togomedium.org/medium/M1544
+
+  Original source: NBRC - NBRC_M336
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=336'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.819145Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1544'
+- timestamp: '2026-03-09T08:04:48.907567+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:53.453044Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008092'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T19:46:11.986440+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Cytophaga (Marine) Medium" to "cytophaga_marine_medium"
+    for consistent matching
+- timestamp: '2026-05-16T09:03:10.150151+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:05:08.904076+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2e80a7463d6e60dfa5444525fc44adfa09d7aa976f56e91051f75484adfa751d
+  source: TOGO_M1544_Cytophaga_Marine_Medium.yaml
+solutions:
+- preferred_term: Seawater*
+  term:
+    id: mediadive.solution:1801
+    label: Seawater
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_1801_Seawater.yaml for composition
+  name: Unknown solution
+merge_fingerprint: 2e80a7463d6e60dfa5444525fc44adfa09d7aa976f56e91051f75484adfa751d
+merged_from:
+- TOGO_M1544_Cytophaga_Marine_Medium

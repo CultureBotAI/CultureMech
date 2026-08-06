@@ -3,8 +3,11 @@ name: photobacterium_medium
 original_name: PHOTOBACTERIUM MEDIUM
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_range: 7.2-7.5
+ph_range:
+  min: 7.2
+  max: 7.5
 media_term:
   preferred_term: DSMZ Medium 32
   term:
@@ -31,8 +34,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: Tris
   term:
@@ -41,18 +44,18 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000880
+  mediaingredientmech_chebi_term:
+    id: CHEBI:9754
     label: Tris
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: CaCO3
   term:
@@ -62,8 +65,8 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: ' (if required)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001099
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
     label: CaCO3
 - preferred_term: Agar
   term:
@@ -73,8 +76,8 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: ' (if required)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -103,6 +106,25 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "PHOTOBACTERIUM MEDIUM" to "photobacterium_medium" for
     consistent matching
+- timestamp: '2026-05-20T06:02:15.079534+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.5'' -> {''min'': 7.2, ''max'': 7.5}'
+- timestamp: '2026-06-05T07:41:58.223807+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:15.572908+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:07.490505+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 41a27ce2fdde7043fe1eb187b97e669e1bb873545636d962a6610f56dca7baa2
+  source: photobacterium_medium.yaml
 merge_fingerprint: 41a27ce2fdde7043fe1eb187b97e669e1bb873545636d962a6610f56dca7baa2
 merged_from:
 - photobacterium_medium

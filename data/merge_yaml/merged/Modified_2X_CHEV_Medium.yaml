@@ -1,7 +1,8 @@
 id: CultureMech:000177
 name: modified_2x_chev_medium
-category: ALGAE
+category: algae
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
@@ -18,32 +19,41 @@ ingredients:
   notes: 'Original amount: Sterile dH2O'
 preparation_steps:
 - step_number: 1
-  instruction: Important Notes To Consider:The quality of water, including natural
-    seawater, is important.
+  action: MIX
+  description: 'Important Notes To Consider: The quality of water, including natural
+    seawater, is important.'
 - step_number: 2
-  instruction: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
+  action: MIX
+  description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
     water, Milli-Q water (Millipore Corp.), etc.
 - step_number: 3
-  instruction: Natural seawater and natural freshwater should be obtained from a non-polluted
-    source.When dissolving chemicals, wait for the first component to dissolve before
+  action: DISSOLVE
+  description: Natural seawater and natural freshwater should be obtained from a non-polluted
+    source. When dissolving chemicals, wait for the first component to dissolve before
     adding the second.
 - step_number: 4
-  instruction: Stirring, and sometimes the addition of heat, is often required to
+  action: DISSOLVE
+  description: Stirring, and sometimes the addition of heat, is often required to
     dissolve the chemicals efficiently.
 - step_number: 5
-  instruction: Preparation of stock solutions for frequently made algal culture media
+  action: MIX
+  description: Preparation of stock solutions for frequently made algal culture media
     make preparing media convenient but also necessary to avoid errors from weighing
-    very tiny amounts.Attention should be given to the pH of the final medium.
+    very tiny amounts. Attention should be given to the pH of the final medium.
 - step_number: 6
-  instruction: In most cases, if pH adjustment is required, this occurs before sterilization.
+  action: ADJUST_PH
+  description: In most cases, if pH adjustment is required, this occurs before sterilization.
 - step_number: 7
-  instruction: Please note that autoclaving removes carbon dioxide from media lacking
+  action: AUTOCLAVE
+  description: Please note that autoclaving removes carbon dioxide from media lacking
     carbonate stabilizing buffers.
 - step_number: 8
-  instruction: This would make the medium very alkaline soon after removal from the
+  action: AUTOCLAVE
+  description: This would make the medium very alkaline soon after removal from the
     autoclave.
 - step_number: 9
-  instruction: In these cases, you should wait approximately 24 hours for gaseous
+  action: MIX
+  description: In these cases, you should wait approximately 24 hours for gaseous
     equilibrium before inoculating the medium.
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
@@ -54,9 +64,9 @@ applications:
 - Microalgae research
 curation_history:
 - curator: utex-import
-  date: '2026-01-28'
   action: Imported from UTEX Culture Collection
   notes: 'Source ID: modified-2x-chev-medium, URL: https://utex.org/products/modified-2x-chev-medium'
+  timestamp: '2026-01-28T00:00:00+00:00'
 - timestamp: '2026-03-13T06:18:53.432648Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -66,9 +76,23 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Modified 2X CHEV Medium" to "modified_2x_chev_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:02:56.030512+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1; references.reference_id->reference=2;
+    category->lowercase=1
+- timestamp: '2026-05-16T09:11:01.235787+00:00'
+  curator: migrate_preparation_steps.py
+  action: MIGRATED_PREPARATION_STEPS
+  notes: instruction->action+description for 9 step(s)
+- timestamp: '2026-08-06T03:04:19.580016+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 6f49b6b637befada84f2c57f8afb5f0cc53b2a35e970431fd4348ff58d6cf348
+  source: Modified_2X_CHEV_Medium.yaml
 references:
-- reference_id: UTEX:modified-2x-chev-medium
-- reference_id: https://utex.org/products/modified-2x-chev-medium
+- reference: UTEX:modified-2x-chev-medium
+- reference: https://utex.org/products/modified-2x-chev-medium
 original_name: Modified 2X CHEV Medium
 merge_fingerprint: 6f49b6b637befada84f2c57f8afb5f0cc53b2a35e970431fd4348ff58d6cf348
 merged_from:

@@ -1,8 +1,9 @@
 id: CultureMech:000280
 name: medium_for_halophilic_bacilli
 original_name: MEDIUM FOR HALOPHILIC BACILLI
-category: ARCHAEA
+category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:
@@ -16,12 +17,6 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -33,8 +28,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 preparation_steps:
 - step_number: 1
@@ -64,15 +59,35 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MEDIUM FOR HALOPHILIC BACILLI" to "medium_for_halophilic_bacilli"
     for consistent matching
-- timestamp: '2026-04-17T06:29:08.830491+00:00'
+- timestamp: '2026-05-16T09:02:57.374845+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-05T07:40:14.653092+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:27.132176+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:04:34.827501+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: medium_for_halophilic_bacilli, medium_for_halophilic_bacilli'
+  notes: 'Sources: DSMZ_73_MEDIUM_FOR_HALOPHILIC_BACILLI, medium_for_halophilic_bacilli'
+- timestamp: '2026-08-06T03:04:34.827525+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint d651c28a3a47b78eda06ae06b8406762e73b78dbc5c591fa2b7674381a06f5b7
+  source: DSMZ_73_MEDIUM_FOR_HALOPHILIC_BACILLI.yaml, medium_for_halophilic_bacilli.yaml
 kg_microbe_match: mediadive.medium:73
 categories:
-- ARCHAEA
 - bacterial
 merged_from:
+- DSMZ_73_MEDIUM_FOR_HALOPHILIC_BACILLI
 - medium_for_halophilic_bacilli
-- medium_for_halophilic_bacilli
-merge_fingerprint: 2ebfe65243f39c18491047627e4e793b19079f2b0f423597f8baef8c60910efc
+merge_fingerprint: d651c28a3a47b78eda06ae06b8406762e73b78dbc5c591fa2b7674381a06f5b7

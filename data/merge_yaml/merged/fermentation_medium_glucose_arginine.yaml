@@ -3,6 +3,7 @@ name: fermentation_medium_glucose_arginine
 original_name: '''Fermentation Medium (Glucose+Arginine'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Glucose
@@ -12,8 +13,8 @@ ingredients:
   concentration:
     value: '111.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Biotin
   term:
@@ -23,8 +24,8 @@ ingredients:
     value: '0.0001228'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Riboflavin
   term:
@@ -34,13 +35,16 @@ ingredients:
     value: '0.0003986'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '36.74'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: L-Arginine
   term:
     id: CHEBI:16467
@@ -49,14 +53,17 @@ ingredients:
     value: '130.9'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:arg-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000289
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16467
     label: L-Arginine
 - preferred_term: Nicotinate
   concentration:
     value: '0.09747'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:nac'
+  term:
+    id: CHEBI:15940
+    label: ''
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -64,18 +71,18 @@ ingredients:
   concentration:
     value: '0.0001334'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Pyridoxine HCl
   concentration:
     value: '0.001459'
     unit: MILLIMOLAR
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000703
+    id: CHEBI:30961
+    label: Pyridoxine HCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
     label: Pyridoxine HCl
 - preferred_term: Magnesium sulfate
   term:
@@ -84,8 +91,8 @@ ingredients:
   concentration:
     value: '3.246'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 preparation_steps:
 - step_number: 1
@@ -125,6 +132,23 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'Fermentation Medium (Glucose+Arginine" to "fermentation_medium_glucose_arginine"
     for consistent matching
+- timestamp: '2026-06-05T07:40:59.941953+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:38.188613+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:05:33.991063+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 30f850777fd7e42c936a8d6495aefe5fb3cbcd630467a3e760a596efb3692bd8
+  source: fermentation_medium_glucose_arginine.yaml
 media_term:
   preferred_term: MediaDB Medium 369
   term:
@@ -136,6 +160,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 4de98a697db0d01b9ad199c5e0b15292786e4febac7d1dbce86f6c751529dd37
+merge_fingerprint: 30f850777fd7e42c936a8d6495aefe5fb3cbcd630467a3e760a596efb3692bd8
 merged_from:
 - fermentation_medium_glucose_arginine

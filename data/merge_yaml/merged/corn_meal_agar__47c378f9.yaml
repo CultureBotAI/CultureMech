@@ -1,0 +1,73 @@
+id: CultureMech:007957
+name: corn_meal_agar
+original_name: Corn Meal Agar
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Corn meal agar (BD-Difco)
+  concentration:
+    value: '17'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M141
+  term:
+    id: TOGO:M141
+    label: Corn Meal Agar
+notes: 'Source: https://togomedium.org/medium/M141
+
+  Original source: JCM - JCM_M150
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=150'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.507397Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M141'
+- timestamp: '2026-01-28T19:48:14.571610Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:52.719518Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007957'
+- timestamp: '2026-03-17T06:29:56.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:11.191864+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Corn Meal Agar" to "corn_meal_agar" for consistent
+    matching
+- timestamp: '2026-06-05T07:40:33.062342+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:08.742989+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 47c378f91fbd94b809b0b97f58a4b58ba6ca903d19605e2e5e86d14833f6d83b
+  source: TOGO_M141_Corn_Meal_Agar.yaml
+merge_fingerprint: 47c378f91fbd94b809b0b97f58a4b58ba6ca903d19605e2e5e86d14833f6d83b
+merged_from:
+- TOGO_M141_Corn_Meal_Agar

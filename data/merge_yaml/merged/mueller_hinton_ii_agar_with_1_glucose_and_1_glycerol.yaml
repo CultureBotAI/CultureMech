@@ -1,66 +1,103 @@
-id: CultureMech:002855
+id: CultureMech:009896
 name: mueller_hinton_ii_agar_with_1_glucose_and_1_glycerol
-original_name: MUELLER HINTON II AGAR WITH 1% GLUCOSE AND 1% GLYCEROL
+original_name: Mueller Hinton II Agar With 1% Glucose And 1% Glycerol
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-media_term:
-  preferred_term: JCM Medium J505
-  term:
-    id: mediadive.medium:J505
-    label: MUELLER HINTON II AGAR WITH 1% GLUCOSE AND 1% GLYCEROL
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=505'
 ingredients:
-- preferred_term: Mueller Hinton II agar
-  term:
-    id: CHEBI:2509
-    label: Mueller Hinton II agar
+- preferred_term: Distilled water
   concentration:
-    value: '38'
+    value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Mueller Hinton II agar
-- preferred_term: Glucose
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:17234
-    label: Glucose
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Glycerol
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
-    label: Glucose
-- preferred_term: Glycerol
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
   term:
     id: CHEBI:17754
     label: Glycerol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
+    label: Glycerol
+- preferred_term: Glucose
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
-    label: Glycerol
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Mueller Hinton II agar (BD-BBL)
+  concentration:
+    value: '38'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M506
+  term:
+    id: TOGO:M506
+    label: Mueller Hinton II Agar With 1% Glucose And 1% Glycerol
+notes: 'Source: https://togomedium.org/medium/M506
+
+  Original source: JCM - JCM_M505
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=505'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:16.782342Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J505'
-- timestamp: '2026-03-13T06:19:16.106387Z'
+- timestamp: '2026-01-27T06:35:55.188857Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M506'
+- timestamp: '2026-01-28T19:48:32.883571Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:09.751065Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002855'
-- timestamp: '2026-03-17T06:30:52.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:009896'
+- timestamp: '2026-03-17T06:30:35.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:29.605540+00:00'
+- timestamp: '2026-03-17T19:46:28.705828+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MUELLER HINTON II AGAR WITH 1% GLUCOSE AND 1% GLYCEROL"
+  notes: Normalized name from "Mueller Hinton II Agar With 1% Glucose And 1% Glycerol"
     to "mueller_hinton_ii_agar_with_1_glucose_and_1_glycerol" for consistent matching
-merge_fingerprint: 0bd7d96878ef9f9049a4bb8cc3cfdb5a2f8810e2e1e51dc16517b38ef7ac3c84
+- timestamp: '2026-06-05T07:40:41.992750+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:34.424718+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:05:16.750515+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 85ceab50e004b52560eb793be7185a7c09fc5fda41798ac5f8cbbd3d5071a519
+  source: TOGO_M506_Mueller_Hinton_II_Agar_With_1_Glucose_And_1_Glycerol.yaml
+merge_fingerprint: 85ceab50e004b52560eb793be7185a7c09fc5fda41798ac5f8cbbd3d5071a519
 merged_from:
-- mueller_hinton_ii_agar_with_1_glucose_and_1_glycerol
+- TOGO_M506_Mueller_Hinton_II_Agar_With_1_Glucose_And_1_Glycerol

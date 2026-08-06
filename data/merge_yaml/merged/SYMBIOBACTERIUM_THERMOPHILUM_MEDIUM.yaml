@@ -1,10 +1,13 @@
 id: CultureMech:000251
 name: symbiobacterium_thermophilum_medium
 original_name: SYMBIOBACTERIUM THERMOPHILUM MEDIUM
-category: ARCHAEA
+category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_range: 7.5-7.8
+ph_range:
+  min: 7.5
+  max: 7.8
 media_term:
   preferred_term: DSMZ Medium 1293
   term:
@@ -19,8 +22,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: NaNO3
   term:
@@ -47,8 +50,8 @@ ingredients:
   term:
     id: CHEBI:184335
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000412
+  mediaingredientmech_chebi_term:
+    id: CHEBI:184335
     label: NH4HCO3
 preparation_steps:
 - step_number: 1
@@ -87,20 +90,40 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "SYMBIOBACTERIUM THERMOPHILUM MEDIUM" to "symbiobacterium_thermophilum_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:09.781813+00:00'
+- timestamp: '2026-05-16T09:02:57.823056+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-05-20T06:00:46.460288+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.5-7.8'' -> {''min'': 7.5, ''max'': 7.8}'
+- timestamp: '2026-06-05T07:40:15.123330+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:04:34.442973+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: symbiobacterium_thermophilum_medium, symbiobacterium_medium, symbiobacterium_thermophilum_medium'
+  notes: 'Sources: DSMZ_1293_SYMBIOBACTERIUM_THERMOPHILUM_MEDIUM, symbiobacterium_medium,
+    symbiobacterium_thermophilum_medium'
+- timestamp: '2026-08-06T03:04:34.443010+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 744e453e16a1a94aac3f9bb52dacefae4a6755125fa3f4a98ece951dde944bb6
+  source: DSMZ_1293_SYMBIOBACTERIUM_THERMOPHILUM_MEDIUM.yaml, symbiobacterium_medium.yaml,
+    symbiobacterium_thermophilum_medium.yaml
 synonyms:
 - name: symbiobacterium_medium
   source: MediaDive
   source_id: mediadive.medium:J653
   original_category: bacterial
 categories:
-- ARCHAEA
 - bacterial
 merged_from:
-- symbiobacterium_thermophilum_medium
+- DSMZ_1293_SYMBIOBACTERIUM_THERMOPHILUM_MEDIUM
 - symbiobacterium_medium
 - symbiobacterium_thermophilum_medium
-merge_fingerprint: 535c352e68393d6262a635443ff2058251b8315fdd18388f0cd1e7611f9a492d
+merge_fingerprint: 744e453e16a1a94aac3f9bb52dacefae4a6755125fa3f4a98ece951dde944bb6

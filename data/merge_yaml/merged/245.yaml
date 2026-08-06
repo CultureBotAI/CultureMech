@@ -4,6 +4,7 @@ original_name: '245'
 category: bacterial
 description: 245. NBRC 244.
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Yeast extract4gMalt extract10gGlucose4gSeawater750mlDistilled water250mlAgar
@@ -40,10 +41,19 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007480'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:45.865621'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Yeast extract4gMalt extract10gGlucose4gSeawater750mlDistilled
     water250mlAgar (if needed)20gpH 7.6'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-05-16T09:03:06.665308+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-06T03:05:04.655390+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 5d8b92533f1590222899f3b195d6cf4a33d6031e0a9e3ec4d899da1fc9c2c52c
+  source: NBRC_245.yaml
 merge_fingerprint: 5d8b92533f1590222899f3b195d6cf4a33d6031e0a9e3ec4d899da1fc9c2c52c
 merged_from:
 - NBRC_245

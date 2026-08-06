@@ -3,6 +3,7 @@ name: gluconacetobacter_xylinus_medium
 original_name: Gluconacetobacter xylinus Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
@@ -14,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +32,9 @@ ingredients:
   term:
     id: CHEBI:3311
     label: calcium carbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001099
-    label: CaCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
+    label: calcium carbonate
 - preferred_term: Glucose
   concentration:
     value: '50'
@@ -43,9 +44,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -85,10 +86,29 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Gluconacetobacter xylinus Medium" to "gluconacetobacter_xylinus_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:52.727566+00:00'
+- timestamp: '2026-06-05T07:41:06.384628+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:21.452925+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: acetobacter_diazotrophicus_medium, gluconacetobacter_xylinus_medium'
+- timestamp: '2026-08-06T03:05:21.452960+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 8031745c743974566bf60c395de5501f2a1f7fc79df006dc6e013f735e4437d3
+  source: acetobacter_diazotrophicus_medium.yaml, gluconacetobacter_xylinus_medium.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/acetobacter_diazotrophicus_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:008638
+  name: acetobacter_diazotrophicus_medium
+  notes: Reviewed Gluconacetobacter xylinus/Acetobacter diazotrophicus pair; child
+    keeps water, yeast extract, and agar unchanged, lowers glucose from 100 to 50
+    g/L, and raises CaCO3 from 20 to 30 g/L.
 synonyms:
 - name: acetobacter_diazotrophicus_medium
   source: TOGO

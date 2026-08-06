@@ -3,6 +3,7 @@ name: dilute_filtered_malt_extract_agar
 original_name: DILUTE FILTERED MALT EXTRACT AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1427
@@ -23,8 +24,8 @@ ingredients:
   concentration:
     value: '150'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -50,10 +51,22 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "DILUTE FILTERED MALT EXTRACT AGAR" to "dilute_filtered_malt_extract_agar"
     for consistent matching
-- timestamp: '2026-04-17T06:30:02.317903+00:00'
+- timestamp: '2026-06-05T07:40:58.718003+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:32.821932+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: dilute_filtered_malt_extract_agar, 2_malt_agar, 4_malt_agar, dilute_filtered_malt_extract_agar'
+- timestamp: '2026-08-06T03:05:32.821963+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 4 source recipe(s) on fingerprint 4303d0b80f02dce7e30231f44cc046d30a0de11515fa2f05086b374396a014a9
+  source: dilute_filtered_malt_extract_agar.yaml, 2_malt_agar.yaml, 4_malt_agar.yaml,
+    dilute_filtered_malt_extract_agar.yaml
 kg_microbe_match: mediadive.medium:12
 synonyms:
 - name: 2_malt_agar

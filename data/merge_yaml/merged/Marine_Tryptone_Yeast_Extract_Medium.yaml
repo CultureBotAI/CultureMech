@@ -1,148 +1,205 @@
-id: CultureMech:010496
+id: CultureMech:007828
 name: marine_tryptone_yeast_extract_medium
-original_name: MARINE TRYPTONE YEAST EXTRACT MEDIUM
-category: fungal
+original_name: Marine Tryptone Yeast Extract Medium
+category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 7.0
-media_term:
-  preferred_term: JCM Medium J1208
-  term:
-    id: mediadive.medium:J1208
-    label: MARINE TRYPTONE YEAST EXTRACT MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1208'
 ingredients:
-- preferred_term: Tryptone
+- preferred_term: Distilled water
   concentration:
-    value: '1.92308'
+    value: '1'
     unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '0.961538'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
   concentration:
-    value: '0.961538'
+    value: '4.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '19.2308'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: MgCl2 x 6 H2O
-  term:
-    id: CHEBI:86345
-    label: MgCl2 x 6 H2O
-  concentration:
-    value: '3.46154'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: MgCl2 x 6 H2O
-- preferred_term: MgSO4 x 7 H2O
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
+- preferred_term: Yeast extract
   concentration:
-    value: '4.13462'
+    value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: KCl
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:32588
-    label: KCl
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2・2H2O
   concentration:
-    value: '0.480769'
+    value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
-- preferred_term: Sodium thioglycolate
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
-    id: CHEBI:86481
-    label: Sodium thioglycolate
-  concentration:
-    value: '0.0961538'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000569
-    label: Sodium thioglycolate
+    id: CHEBI:86158
+    label: ''
 - preferred_term: Resazurin
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic
+    compound, Defined component'
   term:
     id: CHEBI:8806
     label: Resazurin
-  concentration:
-    value: '0.000480769'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
-- preferred_term: Cellobiose
-  term:
-    id: CHEBI:17057
-    label: Cellobiose
+- preferred_term: MgCl2・6H2O
   concentration:
-    value: '30'
+    value: '3.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001069
-    label: Cellobiose
-- preferred_term: Na2S x 9 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
-    id: CHEBI:76209
-    label: Na2S x 9 H2O
+    id: CHEBI:86345
+    label: ''
+- preferred_term: KCl
   concentration:
-    value: '10'
+    value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
-    label: Na2S x 9 H2O
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 7.0. Bring to a boil and
-    cool down under a N2 gas atmosphere. Distribute the medium in culture vessels
-    (e.g., 10 ml in Balch tubes) under N2, seal with butyl rubber stoppers and autoclave.
-    After cooling, aseptically and anaerobically add per liter the following solutions
-    (autoclaved and stored under a N2 atmosphere):'
-- step_number: 2
-  action: AUTOCLAVE
-  description: 'Comment: For strains JCM 32481, JCM 32483, JCM 32614 and JCM 32615,
-    add separately autoclaved 1.0 M sodium pyruvate solution to the medium (20.0 ml
-    per liter) instead of 0.2 M cellobiose solution.'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Sodium thioglycolate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:86481
+    label: sodium thioglycolate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86481
+    label: sodium thioglycolate
+- preferred_term: Tryptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: N2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
+media_term:
+  preferred_term: TOGO Medium M1295
+  term:
+    id: TOGO:M1295
+    label: Marine Tryptone Yeast Extract Medium
+notes: 'Source: https://togomedium.org/medium/M1295
+
+  Original source: JCM - JCM_M1208-2
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1208'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:19.022809Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J1208'
-- timestamp: '2026-03-13T06:20:14.073643Z'
+- timestamp: '2026-01-27T06:35:54.302913Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1295'
+- timestamp: '2026-01-28T19:48:41.177455Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: N2'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-03-09T08:05:09.344132+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:51.783531Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:010496'
-- timestamp: '2026-03-17T17:06:08.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:007828'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:30:53.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:33.081254+00:00'
+- timestamp: '2026-03-17T19:46:10.219123+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MARINE TRYPTONE YEAST EXTRACT MEDIUM" to "marine_tryptone_yeast_extract_medium"
+  notes: Normalized name from "Marine Tryptone Yeast Extract Medium" to "marine_tryptone_yeast_extract_medium"
     for consistent matching
-merge_fingerprint: 796621c813b1ca2959947ad6146b69cdff4e0872758337e22a929433d1d32e93
+- timestamp: '2026-05-16T09:03:09.184006+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:32.117108+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:22.527517+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-08-06T03:05:07.637242+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M1295_Marine_Tryptone_Yeast_Extract_Medium, marine_tryptone_yeast_extract_medium'
+- timestamp: '2026-08-06T03:05:07.637291+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 8699658764f08426ce73968e6c21b49ca77e2c54295a9582540b4d633281ad55
+  source: TOGO_M1295_Marine_Tryptone_Yeast_Extract_Medium.yaml, marine_tryptone_yeast_extract_medium.yaml
+solutions:
+- preferred_term: sodium pyruvate solution
+  composition: []
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
+  name: Unknown solution
+- preferred_term: 5% Na2S・9H2O solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Inorganic compound, Solution, Defined
+    component'
+  name: Unknown solution
+categories:
+- bacterial
 merged_from:
+- TOGO_M1295_Marine_Tryptone_Yeast_Extract_Medium
 - marine_tryptone_yeast_extract_medium
+merge_fingerprint: 8699658764f08426ce73968e6c21b49ca77e2c54295a9582540b4d633281ad55

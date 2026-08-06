@@ -3,6 +3,7 @@ name: tryptic_soy_broth_with_5_sheep_blood_defibrinated
 original_name: Tryptic Soy Broth with 5% Sheep Blood (defibrinated)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sheep Blood (defibrinated)
@@ -169,10 +170,15 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Tryptic Soy Broth with 5% Sheep Blood (defibrinated)"
     to "tryptic_soy_broth_with_5_sheep_blood_defibrinated" for consistent matching
-- timestamp: '2026-04-17T06:30:27.130408+00:00'
+- timestamp: '2026-08-06T03:06:01.907086+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: tryptic_soy_agar_with_5_sheep_blood_defibrinated, tryptic_soy_broth_with_5_sheep_blood_defibrinated'
+- timestamp: '2026-08-06T03:06:01.907138+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 8489f6271a21deafa7add5cfcd9daa1921691151da422780503a84cb7541d9f8
+  source: tryptic_soy_agar_with_5_sheep_blood_defibrinated.yaml, tryptic_soy_broth_with_5_sheep_blood_defibrinated.yaml
 synonyms:
 - name: tryptic_soy_agar_with_5_sheep_blood_defibrinated
   source: TOGO

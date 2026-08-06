@@ -3,6 +3,7 @@ name: brain_heart_infusion_agar_with_soil_extract
 original_name: Brain Heart Infusion Agar With Soil Extract
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Calf brains
@@ -108,8 +109,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Agar
   term:
@@ -118,8 +119,8 @@ ingredients:
   concentration:
     value: '12'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 media_term:
   preferred_term: TOGO Medium M337
@@ -165,9 +166,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009715'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:00.316282'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:13.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -177,12 +178,29 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Brain Heart Infusion Agar With Soil Extract" to "brain_heart_infusion_agar_with_soil_extract"
     for consistent matching
-- timestamp: '2026-04-17T06:29:33.021645+00:00'
+- timestamp: '2026-05-16T09:03:17.229515+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:40.526883+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:00.065685+00:00'
   curator: recipe-merger
   action: Merged 6 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_82_BHI-GLUCOSE_medium, TOGO_M337_Brain_Heart_Infusion_Agar_With_Soil_Extract,
     bhi_glucose_medium, brain_heart_infusion_agar, brain_heart_infusion_agar_with_2_nacl,
     brain_heart_infusion_agar_with_soil_extract'
+- timestamp: '2026-08-06T03:05:00.065764+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 6 source recipe(s) on fingerprint a6b0678a3e68e60759e7d3c78e3f86ae7ab79094267d5658820bb396f7b6b3ae
+  source: KOMODO_82_BHI-GLUCOSE_medium.yaml, TOGO_M337_Brain_Heart_Infusion_Agar_With_Soil_Extract.yaml,
+    bhi_glucose_medium.yaml, brain_heart_infusion_agar.yaml, brain_heart_infusion_agar_with_2_nacl.yaml,
+    brain_heart_infusion_agar_with_soil_extract.yaml
 solutions:
 - preferred_term: Soil extract (see Medium [M94])
   composition: []

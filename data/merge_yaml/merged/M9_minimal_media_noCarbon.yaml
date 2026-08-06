@@ -1,6 +1,7 @@
 id: CultureMech:015548
 name: M9 minimal media noCarbon
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Magnesium sulfate
@@ -54,7 +55,7 @@ ingredients:
     53.49'
 description: E. coli defined media no carbon
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: M9 minimal media noCarbon
@@ -68,6 +69,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015548'
+- timestamp: '2026-05-16T09:04:40.809797+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:05.385335+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint a1d175c53faa904e23c1e2c80a5bc267ed4d013852b2c081b253ab52bcb51329
+  source: m9_minimal_media_nocarbon.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: a1d175c53faa904e23c1e2c80a5bc267ed4d013852b2c081b253ab52bcb51329

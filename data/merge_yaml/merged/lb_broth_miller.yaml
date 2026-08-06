@@ -3,6 +3,7 @@ name: lb_broth_miller
 original_name: LB Broth, Miller
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: DI Water
@@ -78,8 +79,8 @@ ingredients:
   term:
     id: CHEBI:26710
     label: Sodium Chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: Sodium Chloride
 - preferred_term: Tryptone
   concentration:
@@ -124,10 +125,15 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "LB Broth, Miller" to "lb_broth_miller" for consistent
     matching
-- timestamp: '2026-04-17T06:29:43.012987+00:00'
+- timestamp: '2026-08-06T03:05:10.685910+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M2199_LB_Agar_Broth_Miller, lb_agar_miller, lb_broth_miller'
+- timestamp: '2026-08-06T03:05:10.685947+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 458b8df63152ec78dc712ec4dab5e7f947d80209d5ac468f990874d0aa380b79
+  source: TOGO_M2199_LB_Agar_Broth_Miller.yaml, lb_agar_miller.yaml, lb_broth_miller.yaml
 kg_microbe_match: mediadive.medium:74
 synonyms:
 - name: lb_agar_broth_miller

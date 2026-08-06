@@ -3,6 +3,7 @@ name: enriched_artificial_seawater_medium_f_2
 original_name: Enriched Artificial Seawater Medium f/2
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1723
@@ -33,8 +34,8 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000393
+  mediaingredientmech_chebi_term:
+    id: CHEBI:37585
     label: NaH2PO4 x H2O
 - preferred_term: Na2-EDTA x 2 H2O
   term:
@@ -43,8 +44,8 @@ ingredients:
   concentration:
     value: '4.16'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
     label: Na2-EDTA x 2 H2O
 - preferred_term: FeCl3 x 6 H2O
   term:
@@ -53,8 +54,8 @@ ingredients:
   concentration:
     value: '3.15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000218
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86254
     label: FeCl3 x 6 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -63,8 +64,8 @@ ingredients:
   concentration:
     value: '45'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -73,8 +74,8 @@ ingredients:
   concentration:
     value: '0.02196'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -83,8 +84,8 @@ ingredients:
   concentration:
     value: '1.7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
@@ -93,8 +94,8 @@ ingredients:
   concentration:
     value: '0.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
     label: CuSO4 x 5 H2O
 - preferred_term: Na2 MoO4 x 2 H2O
   term:
@@ -103,8 +104,8 @@ ingredients:
   concentration:
     value: '2.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2 MoO4 x 2 H2O
 - preferred_term: Thiamine HCl
   term:
@@ -113,8 +114,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: D-Biotin
   term:
@@ -123,8 +124,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: D-Biotin
 - preferred_term: Vitamin B12
   term:
@@ -133,8 +134,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 preparation_steps:
 - step_number: 1
@@ -173,6 +174,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Enriched Artificial Seawater Medium f/2" to "enriched_artificial_seawater_medium_f_2"
     for consistent matching
-merge_fingerprint: 2a78dc3c9d7d2eb1458ded7367ded99ed8604d79fe391ea127b518a645ea1b1d
+- timestamp: '2026-06-05T07:40:59.589113+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 11 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:33.620554+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d60f153066dac94ced04e2de51946e4c6fe2cb5945da13b7b2dfbcc7301c1f67
+  source: enriched_artificial_seawater_medium_f_2.yaml
+merge_fingerprint: d60f153066dac94ced04e2de51946e4c6fe2cb5945da13b7b2dfbcc7301c1f67
 merged_from:
 - enriched_artificial_seawater_medium_f_2

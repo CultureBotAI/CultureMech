@@ -1,6 +1,7 @@
 id: CultureMech:015567
 name: McAA formate No pABA
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: NaHCO3
@@ -104,6 +105,9 @@ ingredients:
     value: '0.0001'
     unit: G_PER_L
   notes: 'CAS: 10125-13-0; MW: 170.48; From Mc_trace_minerals_SO4free'
+  term:
+    id: CHEBI:86318
+    label: ''
 - preferred_term: aluminum chloride hydrate
   concentration:
     value: '0.0001'
@@ -248,6 +252,9 @@ ingredients:
     value: '0.001'
     unit: G_PER_L
   notes: 'CAS: 62758-13-8; MW: 251.17'
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: 'sodium acetate '
   concentration:
     value: '0.84'
@@ -479,7 +486,7 @@ ingredients:
 description: Mc_formate with defined amino acid mix and no p-aminobenzoic acid in
   vit mix
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: McAA formate No pABA
@@ -493,49 +500,65 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015567'
-- timestamp: '2026-04-17T06:30:29.993724+00:00'
+- timestamp: '2026-05-16T09:04:41.285031+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-06-10T07:47:15.334103+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:06:05.917319+00:00'
   curator: recipe-merger
   action: Merged 11 duplicate recipes into canonical record
   notes: 'Sources: mcaa_formate, mcaa_formate_no_b12, mcaa_formate_no_biotin, mcaa_formate_no_capantothenate,
     mcaa_formate_no_folicacid, mcaa_formate_no_lipolicacid, mcaa_formate_no_nicotinicacid,
     mcaa_formate_no_paba, mcaa_formate_no_pyroxidine, mcaa_formate_no_riboflavin,
     mcaa_formate_no_thiamine'
+- timestamp: '2026-08-06T03:06:05.917480+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 11 source recipe(s) on fingerprint cbe1b6987a65a095c1f8210e3346c10ec3635ce480a74b7233465bc6858f9782
+  source: mcaa_formate.yaml, mcaa_formate_no_b12.yaml, mcaa_formate_no_biotin.yaml,
+    mcaa_formate_no_capantothenate.yaml, mcaa_formate_no_folicacid.yaml, mcaa_formate_no_lipolicacid.yaml,
+    mcaa_formate_no_nicotinicacid.yaml, mcaa_formate_no_paba.yaml, mcaa_formate_no_pyroxidine.yaml,
+    mcaa_formate_no_riboflavin.yaml, mcaa_formate_no_thiamine.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 original_name: McAA formate No pABA
 synonyms:
 - name: McAA formate
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 - name: McAA formate No B12
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 - name: McAA formate No biotin
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 - name: McAA formate No CaPantothenate
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 - name: McAA formate No FolicAcid
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 - name: McAA formate No lipolicAcid
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 - name: McAA formate No NicotinicAcid
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 - name: McAA formate No Pyroxidine
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 - name: McAA formate No Riboflavin
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 - name: McAA formate No Thiamine
   source: unknown
-  original_category: SPECIALIZED
+  original_category: specialized
 categories:
-- SPECIALIZED
+- specialized
 merged_from:
 - mcaa_formate
 - mcaa_formate_no_b12
@@ -548,4 +571,4 @@ merged_from:
 - mcaa_formate_no_pyroxidine
 - mcaa_formate_no_riboflavin
 - mcaa_formate_no_thiamine
-merge_fingerprint: 155489de2b5e43b9f5f4543fdaafc91aa141cdce2e24be31c9ce32a8307eabb1
+merge_fingerprint: cbe1b6987a65a095c1f8210e3346c10ec3635ce480a74b7233465bc6858f9782

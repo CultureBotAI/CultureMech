@@ -1,15 +1,22 @@
-id: CultureMech:007384
+id: CultureMech:007385
 name: ams1_pyruvate_serine
 original_name: '''AMS1 (Pyruvate+Serine'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: 4-Amino-5-hydroxymethyl-2-methylpyrimidine
+- preferred_term: Thiamine
+  term:
+    id: CHEBI:26948
+    label: Thiamine
   concentration:
-    value: 1e-05
+    value: '0.006'
     unit: MILLIMOLAR
-  notes: 'Cross-references: KEGG:4ahmmp'
+  notes: 'Cross-references: KEGG:thm'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000898
+    label: Thiamine
 - preferred_term: Pyruvate
   term:
     id: CHEBI:15361
@@ -18,8 +25,8 @@ ingredients:
     value: '1.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pyr'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000367
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15361
     label: Pyruvate
 - preferred_term: Biotin
   term:
@@ -29,13 +36,16 @@ ingredients:
     value: 4e-06
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Nickel chloride
   concentration:
     value: 1e-06
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34887
+    label: nickel dichloride
 - preferred_term: Magnesium chloride
   concentration:
     value: '27.0'
@@ -43,9 +53,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: L-Serine
   term:
     id: CHEBI:17115
@@ -54,8 +64,8 @@ ingredients:
     value: '0.05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ser-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000270
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17115
     label: L-Serine
 - preferred_term: Sodium bicarbonate
   concentration:
@@ -64,13 +74,16 @@ ingredients:
   term:
     id: CHEBI:32139
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: Sodium bicarbonate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '10.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: 3e-07
@@ -85,8 +98,8 @@ ingredients:
   concentration:
     value: '28.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: DL-methionine
   term:
@@ -95,13 +108,16 @@ ingredients:
   concentration:
     value: '0.05'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000774
-    label: DL-methionine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16811
+    label: DL-Methionine
 - preferred_term: Sodium selenite
   concentration:
     value: 1e-06
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:48843
+    label: ''
 - preferred_term: Potassium chloride
   concentration:
     value: '9.0'
@@ -109,9 +125,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Cobalt chloride
   concentration:
     value: 5e-07
@@ -126,19 +142,19 @@ ingredients:
   concentration:
     value: '481.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Sodium dihydrogen phosphate
   concentration:
     value: '0.05'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: Sodium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
   term:
-    id: CHEBI:37583
-    label: ''
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
@@ -146,13 +162,16 @@ ingredients:
   concentration:
     value: '0.4'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
 - preferred_term: Manganese chloride
   concentration:
     value: 9e-06
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -160,9 +179,9 @@ ingredients:
   concentration:
     value: 8e-07
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.000117'
@@ -178,32 +197,50 @@ preparation_steps:
   action: FILTER_STERILIZE
   description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
 curation_history:
-- timestamp: '2026-01-27T07:21:47.052816Z'
+- timestamp: '2026-01-27T07:21:47.061689Z'
   curator: mediadb-import
   action: Imported from MediaDB
-  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 477, Reference:
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 478, Reference:
     Mazumdar et al. (2014) PLOS One'
-- timestamp: '2026-01-28T19:48:11.150751Z'
+- timestamp: '2026-01-28T19:48:09.757328Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:19:48.569701Z'
+- timestamp: '2026-03-13T06:19:48.578947Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:007384'
-- timestamp: '2026-03-17T06:29:48.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:007385'
+- timestamp: '2026-03-17T06:29:45.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:06.913500+00:00'
+- timestamp: '2026-03-17T19:46:06.923408+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "'AMS1 (Pyruvate+Serine" to "ams1_pyruvate_serine" for
     consistent matching
+- timestamp: '2026-06-05T07:40:29.470584+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 12 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-09T01:42:16.570287+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (shared-id regrounding audit, G21/G22/G24)
+  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more
+    ingredient groundings on this record that had been collapsed onto a chemically
+    non-specific or shared CHEBI id were re-grounded to the correct chemically-specific
+    term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
+- timestamp: '2026-08-06T03:05:04.522489+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 6c93766bf239d2ebc11f8c16a1418e0df8776d6fafda557f9e706971e27886f3
+  source: MEDIADB_478_AMS1_Pyruvate_Serine.yaml
 media_term:
-  preferred_term: MediaDB Medium 477
+  preferred_term: MediaDB Medium 478
   term:
-    id: MEDIADB:477
+    id: MEDIADB:478
     label: '''AMS1 (Pyruvate+Serine'
 notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
   Reference: https://mediadb.systemsbiology.net/'
@@ -212,6 +249,6 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
-merge_fingerprint: 0138e4b77979a329ffc46841c22de8dfe88db90919e1ae3a900684269960ca42
+merge_fingerprint: 6c93766bf239d2ebc11f8c16a1418e0df8776d6fafda557f9e706971e27886f3
 merged_from:
-- ams1_pyruvate_serine
+- MEDIADB_478_AMS1_Pyruvate_Serine

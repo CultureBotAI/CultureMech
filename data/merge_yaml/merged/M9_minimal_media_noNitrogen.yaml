@@ -1,6 +1,7 @@
 id: CultureMech:015549
 name: M9 minimal media noNitrogen
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose
@@ -53,7 +54,7 @@ ingredients:
   notes: 'CAS: 7647-14-5; MW: 58.44'
 description: E. coli defined media no nitrogen
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: M9 minimal media noNitrogen
@@ -67,6 +68,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015549'
+- timestamp: '2026-05-16T09:04:40.813532+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:05.391314+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b294be868e1e632bd9f954b8707ff95c17f05fa9fb06a611667880b6beb3b857
+  source: m9_minimal_media_nonitrogen.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: b294be868e1e632bd9f954b8707ff95c17f05fa9fb06a611667880b6beb3b857

@@ -3,6 +3,7 @@ name: jcm_medium_no_223
 original_name: JCM MEDIUM No. 223
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.5
 media_term:
@@ -15,12 +16,12 @@ ingredients:
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '1.4985'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Na2HPO4 x 12 H2O
   term:
@@ -29,8 +30,8 @@ ingredients:
   concentration:
     value: '4.1958'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4 x 12 H2O
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -39,8 +40,8 @@ ingredients:
   concentration:
     value: '0.37962'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: Yeast extract
   concentration:
@@ -53,8 +54,8 @@ ingredients:
   concentration:
     value: '0.0999001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
     label: L-Cysteine HCl x H2O
 - preferred_term: Skim milk
   concentration:
@@ -67,8 +68,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: Agar
   term:
@@ -77,8 +78,8 @@ ingredients:
   concentration:
     value: '24.975'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -104,6 +105,21 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "JCM MEDIUM No. 223" to "jcm_medium_no_223" for consistent
     matching
+- timestamp: '2026-06-05T07:41:09.954692+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:00.236076+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:39.138351+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 54b2bf12300745a748e66dd713c747fad60249975843f58b1c4860062a0d1dc5
+  source: jcm_medium_no_223.yaml
 merge_fingerprint: 54b2bf12300745a748e66dd713c747fad60249975843f58b1c4860062a0d1dc5
 merged_from:
 - jcm_medium_no_223

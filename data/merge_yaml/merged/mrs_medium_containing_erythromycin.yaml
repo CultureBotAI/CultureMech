@@ -3,6 +3,7 @@ name: mrs_medium_containing_erythromycin
 original_name: MRS medium (containing erythromycin)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: erythromycin
@@ -13,9 +14,9 @@ ingredients:
   term:
     id: CHEBI:48923
     label: Erythromycin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000937
-    label: erythromycin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:48923
+    label: Erythromycin
 - preferred_term: MRS medium (Difco)
   concentration:
     value: '1'
@@ -51,6 +52,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MRS medium (containing erythromycin)" to "mrs_medium_containing_erythromycin"
     for consistent matching
+- timestamp: '2026-06-05T07:41:38.487183+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:50.483193+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 51f00c669824875eb32f8ee23d8dca1a24f02ff6f10848dc562ff7106a268a3d
+  source: mrs_medium_containing_erythromycin.yaml
 merge_fingerprint: 51f00c669824875eb32f8ee23d8dca1a24f02ff6f10848dc562ff7106a268a3d
 merged_from:
 - mrs_medium_containing_erythromycin

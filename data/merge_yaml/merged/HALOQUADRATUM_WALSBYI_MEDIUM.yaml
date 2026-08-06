@@ -1,191 +1,190 @@
-id: CultureMech:008959
+id: CultureMech:003742
 name: haloquadratum_walsbyi_medium
-original_name: Haloquadratum Walsbyi Medium
-category: bacterial
+original_name: HALOQUADRATUM WALSBYI medium
+category: archaea
 medium_type: COMPLEX
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+ph_value: 7.4
+media_term:
+  preferred_term: KOMODO Medium 1091
   term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
+    id: komodo.medium:1091
+    label: HALOQUADRATUM WALSBYI medium
+notes: 'Source: KOMODO ModelSEED | ID: 1091 | DSMZ Medium: 1091 (mediadive.medium:1091)
+  | Aerobic: No'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '195'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
 - preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
   concentration:
     value: '50'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '35'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: KCl
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: NaHCO3
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:63005
+    label: NaNO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000171
+    label: NaNO3
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+- preferred_term: Tris buffer
+  term:
+    id: CHEBI:9754
+    label: Tris buffer
+  concentration:
+    value: '2.4228'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:9754
+    label: Tris buffer
 - preferred_term: Yeast extract
   concentration:
     value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: NaCl
-  concentration:
-    value: '195'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: CaCl2 x 2 H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
-- preferred_term: KH2PO4
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
-    component'
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
-- preferred_term: NH4Cl
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
-    Inorganic compound'
-  term:
-    id: CHEBI:31206
-    label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
-- preferred_term: MgCl2 x 6 H2O
-  concentration:
-    value: '35'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:6636
-    label: magnesium dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000663
-    label: MgCl2 x 6 H2O
-- preferred_term: KCl
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
-- preferred_term: NaHCO3
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
-  term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
-- preferred_term: NaNO3
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:63005
-    label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000388
-    label: NaNO3
 - preferred_term: Sodium pyruvate
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
-    component'
   term:
     id: CHEBI:50144
-    label: sodium pyruvate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
     label: Sodium pyruvate
-- preferred_term: Tris buffer 1M
   concentration:
-    value: '20'
+    value: '1'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Complex component, Defined component, Solution'
-  term:
-    id: CHEBI:9754
-    label: tris
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000880
-    label: Tris buffer 1M
-media_term:
-  preferred_term: TOGO Medium M2375
-  term:
-    id: TOGO:M2375
-    label: Haloquadratum Walsbyi Medium
-notes: 'Source: https://togomedium.org/medium/M2375
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1091.pdf'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
+    label: Sodium pyruvate
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.417074Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2375'
-- timestamp: '2026-01-28T19:48:10.072500Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:20:01.586625Z'
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1091'
+- timestamp: '2026-02-03T11:18:58.957535'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1091
+- timestamp: '2026-03-13T06:19:21.820260Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:008959'
-- timestamp: '2026-03-17T06:29:46.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:003742'
+- timestamp: '2026-03-17T06:29:52.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:20.313079+00:00'
+- timestamp: '2026-03-17T19:45:36.107062+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Haloquadratum Walsbyi Medium" to "haloquadratum_walsbyi_medium"
+  notes: Normalized name from "HALOQUADRATUM WALSBYI medium" to "haloquadratum_walsbyi_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:40:18.850069+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:43.441632+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:21.482912+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_1091_HALOQUADRATUM_WALSBYI_medium, haloquadratum_walsbyi_medium'
+- timestamp: '2026-08-06T03:04:21.482953+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 06f251144a7178f62246d1eb4d6da983506b2e175f1abee1d221b042840b6c88
+  source: KOMODO_1091_HALOQUADRATUM_WALSBYI_medium.yaml, haloquadratum_walsbyi_medium.yaml
 high_metal: true
-merge_fingerprint: 1556e12e7048edb1ffda5d8757dac25026fba9a0ddc2ba29069fc5f7691a45ba
+parent_media:
+  path: data/normalized_yaml/bacterial/haloquadratum_walsbyi_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000523
+  name: haloquadratum_walsbyi_medium
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and concentration
+    signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.
+categories:
+- archaea
 merged_from:
-- TOGO_M2375_Haloquadratum_Walsbyi_Medium
+- KOMODO_1091_HALOQUADRATUM_WALSBYI_medium
+- haloquadratum_walsbyi_medium
+merge_fingerprint: 06f251144a7178f62246d1eb4d6da983506b2e175f1abee1d221b042840b6c88

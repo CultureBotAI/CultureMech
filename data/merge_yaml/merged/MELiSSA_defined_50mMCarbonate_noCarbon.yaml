@@ -1,6 +1,7 @@
 id: CultureMech:015583
 name: MELiSSA defined 50mMCarbonate noCarbon
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Manganese (II) chloride tetrahydrate
@@ -144,7 +145,7 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-85-5; MW: 244.31'
 description: Defined medium for R. rubrum
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: MELiSSA defined 50mMCarbonate noCarbon
@@ -158,8 +159,17 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015583'
+- timestamp: '2026-05-16T09:04:41.571108+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:06.258165+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 86c44605b26e4d8c65623918bd645db418e4412ee9c9603991e5ec1dd2b92153
+  source: melissa_defined_50mmcarbonate_nocarbon.yaml
 data_quality_flags:
 - has_unmapped_ingredients
-merge_fingerprint: 3cb961c9584bae65fbdbbe25bffb43c9c1e74329406c0332f7890a8fe2a84c3d
+merge_fingerprint: 86c44605b26e4d8c65623918bd645db418e4412ee9c9603991e5ec1dd2b92153
 merged_from:
 - melissa_defined_50mmcarbonate_nocarbon

@@ -1,10 +1,13 @@
 id: CultureMech:000243
 name: thioalkalivibrio_halophilus_medium
 original_name: THIOALKALIVIBRIO HALOPHILUS MEDIUM
-category: ARCHAEA
+category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
-ph_range: 8-8.5
+ph_range:
+  min: 8.0
+  max: 8.5
 media_term:
   preferred_term: DSMZ Medium 1014
   term:
@@ -19,28 +22,28 @@ ingredients:
   concentration:
     value: '174.825'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '1.4985'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '0.499501'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -49,8 +52,8 @@ ingredients:
   concentration:
     value: '0.1998'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -59,13 +62,13 @@ ingredients:
   concentration:
     value: '0.24975'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Na2S2O3
   term:
     id: CHEBI:132112
-    label: Na2S2O3
+    label: sodium thiosulfate
   concentration:
     value: '4.99501'
     unit: G_PER_L
@@ -79,8 +82,8 @@ ingredients:
   concentration:
     value: '3.996'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: EDTA
   term:
@@ -89,8 +92,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000165
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64755
     label: EDTA
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -99,8 +102,8 @@ ingredients:
   concentration:
     value: '2.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -109,8 +112,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -119,18 +122,18 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -139,8 +142,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
@@ -149,8 +152,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
     label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -159,8 +162,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -169,8 +172,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 preparation_steps:
 - step_number: 1
@@ -203,15 +206,41 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "THIOALKALIVIBRIO HALOPHILUS MEDIUM" to "thioalkalivibrio_halophilus_medium"
     for consistent matching
-- timestamp: '2026-04-17T06:29:09.837812+00:00'
+- timestamp: '2026-05-16T09:02:57.862094+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-05-20T06:00:46.489141+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''8-8.5'' -> {''min'': 8.0, ''max'': 8.5}'
+- timestamp: '2026-06-05T07:40:15.165156+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 15 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:37:34.038690+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:46:42.405106+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:34.291048+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: thioalkalivibrio_halophilus_medium, thioalkalivibrio_halophilus_medium'
+  notes: 'Sources: DSMZ_1014_THIOALKALIVIBRIO_HALOPHILUS_MEDIUM, thioalkalivibrio_halophilus_medium'
+- timestamp: '2026-08-06T03:04:34.291085+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint 6c78334fe15aa59f7ec7ccf4dc9b821d6a95fd9f10507b0ceb578c1c18a3b690
+  source: DSMZ_1014_THIOALKALIVIBRIO_HALOPHILUS_MEDIUM.yaml, thioalkalivibrio_halophilus_medium.yaml
 high_metal: true
 categories:
-- ARCHAEA
 - bacterial
 merged_from:
+- DSMZ_1014_THIOALKALIVIBRIO_HALOPHILUS_MEDIUM
 - thioalkalivibrio_halophilus_medium
-- thioalkalivibrio_halophilus_medium
-merge_fingerprint: ea4c0be4cc2886216313b213754ec060dc8bb35843689c1c492a6c96c8e56947
+merge_fingerprint: 6c78334fe15aa59f7ec7ccf4dc9b821d6a95fd9f10507b0ceb578c1c18a3b690

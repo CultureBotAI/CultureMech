@@ -1,6 +1,7 @@
 id: CultureMech:015804
 name: ZMB ALS noGlutamate
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: ZMB_ALS
@@ -14,7 +15,7 @@ ingredients:
   notes: 'CAS: 6382-01-0; MW: 203.24'
 description: Media for culturing Bifidobacterium minus glutamate
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: ZMB ALS noGlutamate
@@ -28,6 +29,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015804'
+- timestamp: '2026-05-16T09:04:44.121602+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:09.110425+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 9428086f78e6dde02597db3e9f6eccdc5dde3724ca988215dd413b5619e7d13b
+  source: zmb_als_noglutamate.yaml
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: 9428086f78e6dde02597db3e9f6eccdc5dde3724ca988215dd413b5619e7d13b

@@ -3,16 +3,23 @@ name: batch_cultivation_medium_for_ta1
 original_name: '''Batch Cultivation Medium (for TA1'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.08122'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Nickel chloride
   concentration:
     value: '0.002104'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34887
+    label: ''
 - preferred_term: Xylose
   term:
     id: CHEBI:18222
@@ -20,13 +27,16 @@ ingredients:
   concentration:
     value: '66.61'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000900
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18222
     label: Xylose
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '1.36'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -34,13 +44,16 @@ ingredients:
   concentration:
     value: '34.22'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.01001'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -48,9 +61,9 @@ ingredients:
   concentration:
     value: '0.07969'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -58,13 +71,16 @@ ingredients:
   concentration:
     value: '8.115'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '22.04'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
@@ -72,9 +88,9 @@ ingredients:
   concentration:
     value: '113.5'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -104,6 +120,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'Batch Cultivation Medium (for TA1" to "batch_cultivation_medium_for_ta1"
     for consistent matching
+- timestamp: '2026-06-05T07:40:50.619059+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:24.855024+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint dec340870e14b40ba27c1e1592a1fa001b7d3a33a938edc4e00a12a7a6b0df3b
+  source: batch_cultivation_medium_for_ta1.yaml
 media_term:
   preferred_term: MediaDB Medium 310
   term:
@@ -115,6 +142,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 24c25621cd26f4d26da7330fab088c29bf2ec99e7921ea924427f3450f52221d
+merge_fingerprint: dec340870e14b40ba27c1e1592a1fa001b7d3a33a938edc4e00a12a7a6b0df3b
 merged_from:
 - batch_cultivation_medium_for_ta1

@@ -1,143 +1,143 @@
-id: CultureMech:010067
+id: CultureMech:002995
 name: rhodovulum_kholense_medium
-original_name: Rhodovulum Kholense Medium
+original_name: RHODOVULUM KHOLENSE MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J649
+  term:
+    id: mediadive.medium:J649
+    label: RHODOVULUM KHOLENSE MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=649'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:32599
-    label: ''
-- preferred_term: Yeast extract
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: NaCl
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: CaCl2・2H2O
-  concentration:
-    value: '0.12'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:86158
-    label: ''
 - preferred_term: KH2PO4
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
-- preferred_term: NH4Cl
+    label: potassium dihydrogen phosphate
   concentration:
-    value: '0.64'
+    value: '0.499501'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.11988'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1.998'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: NH4Cl
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
-- preferred_term: Sodium pyruvate
   concentration:
-    value: '3'
+    value: '0.639361'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '19.98'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.499501'
+    unit: G_PER_L
+- preferred_term: Sodium pyruvate
   term:
     id: CHEBI:50144
-    label: sodium pyruvate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
     label: Sodium pyruvate
-media_term:
-  preferred_term: TOGO Medium M664
-  term:
-    id: TOGO:M664
-    label: Rhodovulum Kholense Medium
-notes: 'Source: https://togomedium.org/medium/M664
-
-  Original source: JCM - JCM_M649
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=649'
+  concentration:
+    value: '2.997'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
+    label: Sodium pyruvate
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.495458Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M664'
-- timestamp: '2026-01-28T19:48:19.270365Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-09T08:04:31.885333+00:00'
+- timestamp: '2026-01-26T17:53:17.186433Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J649'
+- timestamp: '2026-03-09T08:04:21.179306+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 1 solution(s) from ingredients
-- timestamp: '2026-03-13T06:20:11.094489Z'
+- timestamp: '2026-03-13T06:19:17.042949Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:010067'
+  notes: 'Assigned stable identifier: CultureMech:002995'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:02.346481'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
-- timestamp: '2026-03-17T06:30:06.000000Z'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:29:52.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:30.020680+00:00'
+- timestamp: '2026-03-17T19:45:30.680677+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Rhodovulum Kholense Medium" to "rhodovulum_kholense_medium"
+  notes: Normalized name from "RHODOVULUM KHOLENSE MEDIUM" to "rhodovulum_kholense_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:02:59.259014+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:17.551994+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:43.056867+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:37.057637+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d035aaa53834a751b53d6a1985320737765e3c1564e32c7786045d4a747882e5
+  source: JCM_J649_RHODOVULUM_KHOLENSE_MEDIUM.yaml
 solutions:
-- preferred_term: Trace element solution SL--12 (see Medium [M497])
-  composition: []
-  notes: Cross-reference to Medium M497
+- preferred_term: micronutrient solution
+  term:
+    id: mediadive.solution:6236
+    label: Micronutrient solution
   concentration:
     value: '1'
     unit: G_PER_L
+  notes: See mediadive_6236_Micronutrient_solution.yaml for composition
   name: Unknown solution
-merge_fingerprint: f9e65b8897d7ad6f3d88cb28f2c7d4fb861d729765c4138847b2e7423f666d21
+merge_fingerprint: d035aaa53834a751b53d6a1985320737765e3c1564e32c7786045d4a747882e5
 merged_from:
-- TOGO_M664_Rhodovulum_Kholense_Medium
+- JCM_J649_RHODOVULUM_KHOLENSE_MEDIUM

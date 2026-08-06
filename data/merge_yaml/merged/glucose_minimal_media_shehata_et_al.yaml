@@ -3,6 +3,7 @@ name: glucose_minimal_media_shehata_et_al
 original_name: Glucose minimal media; Shehata et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose
@@ -13,8 +14,8 @@ ingredients:
     value: '11.1012'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: L-Methionine
   term:
@@ -24,8 +25,8 @@ ingredients:
     value: '0.26807'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:met-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000274
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16643
     label: L-Methionine
 - preferred_term: Thymine
   term:
@@ -35,8 +36,8 @@ ingredients:
     value: '0.031717'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:thym'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000503
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17821
     label: Thymine
 - preferred_term: Magnesium chloride
   concentration:
@@ -45,23 +46,29 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.0901024'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '48.7944'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Sodium sulfate
   concentration:
     value: '1.40805'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Sodium sulfate
   term:
     id: CHEBI:32149
@@ -73,13 +80,16 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '30.8628'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -87,13 +97,16 @@ ingredients:
   concentration:
     value: '14.0211'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.0017982'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -127,6 +140,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Glucose minimal media; Shehata et al" to "glucose_minimal_media_shehata_et_al"
     for consistent matching
+- timestamp: '2026-06-05T07:41:06.461678+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:36.268458+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 1dba68b0eec95544ae9864d89877114a5ae48b60766aa5c7f1fcbdb049809de0
+  source: glucose_minimal_media_shehata_et_al.yaml
 media_term:
   preferred_term: MediaDB Medium 145
   term:
@@ -138,6 +162,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 3a2b09725d3d3e74984ff5e7c3dfb40e85615dcbc85c409b198978ebbdc5f656
+merge_fingerprint: 1dba68b0eec95544ae9864d89877114a5ae48b60766aa5c7f1fcbdb049809de0
 merged_from:
 - glucose_minimal_media_shehata_et_al

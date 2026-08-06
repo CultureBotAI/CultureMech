@@ -1,187 +1,263 @@
-id: CultureMech:003051
+id: CultureMech:010135
 name: selenomonas_wg_medium
-original_name: SELENOMONAS WG MEDIUM
+original_name: Selenomonas WG Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_value: 6.8
-media_term:
-  preferred_term: JCM Medium J705
-  term:
-    id: mediadive.medium:J705
-    label: SELENOMONAS WG MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=705'
 ingredients:
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
+- preferred_term: Distilled water
   concentration:
-    value: '0.490196'
+    value: '101.0'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
-- preferred_term: K2HPO4
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component [Merged 2 duplicates: 1.0, 100.0]'
   term:
-    id: CHEBI:131527
-    label: K2HPO4
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
   concentration:
-    value: '0.490196'
+    value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
-- preferred_term: (NH4)2SO4
-  term:
-    id: CHEBI:62946
-    label: (NH4)2SO4
-  concentration:
-    value: '0.980392'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: (NH4)2SO4
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '0.980392'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: MgSO4 x 7 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '0.0980392'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.0980392'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
-- preferred_term: Tryptone
-  concentration:
-    value: '4.90196'
-    unit: G_PER_L
+    label: magnesium sulfate heptahydrate
 - preferred_term: Yeast extract
   concentration:
-    value: '1.96078'
+    value: '2'
     unit: G_PER_L
-- preferred_term: Glucose
-  term:
-    id: CHEBI:17234
-    label: Glucose
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
   concentration:
-    value: '1.96078'
+    value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
-    label: Glucose
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Defined
+    component, Simple component'
   term:
     id: CHEBI:8806
     label: Resazurin
-  concentration:
-    value: '0.000980392'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
-- preferred_term: L-Cysteine HCl x H2O
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
-    id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    id: CHEBI:62946
+    label: ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+- preferred_term: Glucose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Tryptone (BD-Difco)
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
-    label: L-Cysteine HCl x H2O
-- preferred_term: Na2S x 9 H2O
+  notes: 'Properties: Undefined component'
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
   term:
-    id: CHEBI:76209
-    label: Na2S x 9 H2O
+    id: CHEBI:16526
+    label: ''
+- preferred_term: Nitrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
+- preferred_term: 5% Na2S・9H2O
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
-    label: Na2S x 9 H2O
+  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
+    Solution'
+- preferred_term: 5% L--Cysteine・HCl・H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Solution'
 - preferred_term: Butyric acid
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:30772
-    label: Butyric acid
+    label: butyric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30772
+    label: butyric acid
+- preferred_term: n--Valeric acid
   concentration:
     value: '1'
     unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   mediaingredientmech_term:
-    id: MediaIngredientMech:000471
-    label: Butyric acid
-- preferred_term: iso-Valeric acid
-  term:
-    id: CHEBI:28484
-    label: iso-Valeric acid
+    id: MediaIngredientMech:000353
+    label: n--Valeric acid
+- preferred_term: iso--Valeric acid
   concentration:
     value: '1'
     unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   mediaingredientmech_term:
     id: MediaIngredientMech:000378
-    label: iso-Valeric acid
-- preferred_term: n-Valeric acid
+    label: iso--Valeric acid
+media_term:
+  preferred_term: TOGO Medium M727
   term:
-    id: CHEBI:17418
-    label: n-Valeric acid
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000303
-    label: n-Valeric acid
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: 'Mix components and adjust pH to 7.0. Bring to a boil for several seconds
-    and cool down to room temperature under a stream of N2-CO2 (4:1, v/v). Distribute
-    the medium into culture vessels under the same gas mixture, seal with butyl rubber
-    stoppers and autoclave. Prior to use, add per liter the following sterile solutions
-    (autoclaved):'
-- step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH to 6.7 - 6.8, and store in a tightly stoppered bottle at
-    4C.
+    id: TOGO:M727
+    label: Selenomonas WG Medium
+notes: 'Source: https://togomedium.org/medium/M727
+
+  Original source: JCM - JCM_M705
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=705'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:17.350440Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J705'
-- timestamp: '2026-03-13T06:19:17.436041Z'
+- timestamp: '2026-01-27T06:35:55.609998Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M727'
+- timestamp: '2026-01-28T19:48:23.312901Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-03-09T08:04:38.745764+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:08.560954Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:11.595196Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:003051'
-- timestamp: '2026-03-17T06:29:46.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:010135'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:30:14.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:31.132103+00:00'
+- timestamp: '2026-03-17T19:46:30.526291+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SELENOMONAS WG MEDIUM" to "selenomonas_wg_medium" for
+  notes: Normalized name from "Selenomonas WG Medium" to "selenomonas_wg_medium" for
     consistent matching
-merge_fingerprint: 2fdc656698f78c42a47d339647e5aec52ec12c6b94cc92a2a90bfa2eba771dcb
+- timestamp: '2026-05-16T09:03:20.431094+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:43.950230+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:32.639151+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:46:51.482869+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:18.759830+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 64abca8b4e1f030a9613f09f03aa0e9e02ece041b25e78c61620645c6f0bedd1
+  source: TOGO_M727_Selenomonas_WG_Medium.yaml
+solutions:
+- preferred_term: VFA solution (see below)
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: 64abca8b4e1f030a9613f09f03aa0e9e02ece041b25e78c61620645c6f0bedd1
 merged_from:
-- selenomonas_wg_medium
+- TOGO_M727_Selenomonas_WG_Medium

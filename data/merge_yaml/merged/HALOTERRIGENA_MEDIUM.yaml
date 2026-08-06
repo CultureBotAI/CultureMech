@@ -1,133 +1,168 @@
-id: CultureMech:000853
+id: CultureMech:008432
 name: haloterrigena_medium
-original_name: HALOTERRIGENA MEDIUM
-category: bacterial
+original_name: Haloterrigena medium
+category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_value: 7.2
-media_term:
-  preferred_term: DSMZ Medium 1392
-  term:
-    id: mediadive.medium:1392
-    label: HALOTERRIGENA MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1392.pdf'
 ingredients:
-- preferred_term: Casamino acids
-  concentration:
-    value: '10.0'
-    unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  notes: ' [Merged 2 duplicates: 5.0, 5.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '240'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4 x 7 H2O
-- preferred_term: KCl
-  term:
-    id: CHEBI:32588
-    label: KCl
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
-- preferred_term: Trisodium citrate
-  term:
-    id: CHEBI:53258
-    label: Trisodium citrate
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
-    label: Trisodium citrate
-- preferred_term: KNO3
-  term:
-    id: CHEBI:63043
-    label: KNO3
+- preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000170
-    label: KNO3
-- preferred_term: CaCl2 x 2 H2O
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4·7H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
-- preferred_term: Agar
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
-    id: CHEBI:2509
-    label: Agar
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: NaCl
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: FeSO4·7H2O
+  concentration:
+    value: '0.036'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:75836
+    label: ''
+- preferred_term: KCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Na2CO3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+- preferred_term: Trisodium citrate
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
+  term:
+    id: CHEBI:53258
+    label: sodium citrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
+    label: sodium citrate
+- preferred_term: Agar (if necessary)
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: Adjust to pH 7.2 and sterilize by autoclaving. The medium may be solidified
-    by adding 20.0 g/l agar.
+  notes: 'Role: Solidifying component'
+- preferred_term: Bacto Yeast Extract (Difco)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Casamino acids
+  concentration:
+    value: '7.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M1858
+  term:
+    id: TOGO:M1858
+    label: Haloterrigena medium
+notes: 'Source: https://togomedium.org/medium/M1858
+
+  Original source: NBRC - NBRC_M1102
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1102'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:14.292949Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1392'
-- timestamp: '2026-01-28T19:48:07.257107Z'
+- timestamp: '2026-01-27T06:35:58.524149Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1858'
+- timestamp: '2026-01-28T19:48:26.338220Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T03:08:38.460629Z'
-  curator: data-quality-cleanup-v1.0
-  action: Data quality fixes
-  notes: Merged 1 duplicate ingredient(s)
-- timestamp: '2026-03-13T06:18:58.918418Z'
+- timestamp: '2026-03-13T06:19:56.819519Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000853'
-- timestamp: '2026-03-17T06:29:40.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:008432'
+- timestamp: '2026-03-17T06:30:21.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:10.382101+00:00'
+- timestamp: '2026-03-17T19:46:15.392390+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALOTERRIGENA MEDIUM" to "haloterrigena_medium" for
+  notes: Normalized name from "Haloterrigena medium" to "haloterrigena_medium" for
     consistent matching
+- timestamp: '2026-06-05T07:40:34.622971+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:31.207082+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T06:57:24.720734+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:46:48.299384+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:25.823039+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint fd2e5cf939f8baeb615f9e2ae362e6f8f0a2b071db2373325d2697b774dbc960
+  source: TOGO_M1858_Haloterrigena_medium.yaml
 high_metal: true
-merge_fingerprint: d0c311c7cadcd35e2e59dddc5062aa090e8bb726667c4761b289f7b2caf99f4c
+merge_fingerprint: fd2e5cf939f8baeb615f9e2ae362e6f8f0a2b071db2373325d2697b774dbc960
 merged_from:
-- haloterrigena_medium
+- TOGO_M1858_Haloterrigena_medium

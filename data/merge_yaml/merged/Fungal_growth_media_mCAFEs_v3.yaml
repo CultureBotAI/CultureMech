@@ -1,6 +1,7 @@
 id: CultureMech:015478
 name: Fungal growth media mCAFEs v3
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose
@@ -78,7 +79,7 @@ ingredients:
     label: ''
 description: Growth media for diverse fungi with 20 mM D-Glucose
 notes: 'Source: FEBA media definitions'
-category: FUNGAL
+category: fungal
 sources:
 - database: CultureBotHT
   database_id: Fungal growth media mCAFEs v3
@@ -92,22 +93,43 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015478'
-- timestamp: '2026-04-17T06:30:28.596683+00:00'
+- timestamp: '2026-05-16T09:04:39.645083+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-08-06T03:06:03.895939+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: fungal_growth_media_mcafes_v1, fungal_growth_media_mcafes_v2, fungal_growth_media_mcafes_v3'
+- timestamp: '2026-08-06T03:06:03.895994+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 7f957797d3d3cfb09b892feba3af49cc76b47cddffe664612645319196bdea90
+  source: fungal_growth_media_mcafes_v1.yaml, fungal_growth_media_mcafes_v2.yaml,
+    fungal_growth_media_mcafes_v3.yaml
 data_quality_flags:
 - has_unmapped_ingredients
+parent_media:
+  path: data/normalized_yaml/fungal/fungal_growth_media_mcafes_v1.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:015475
+  name: Fungal growth media mCAFEs v1
+  notes: CultureBotHT fungal mCAFEs glucose-dose family; reviewed as concentration
+    variants of v1.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- D-Glucose concentration changed from 20 g/L to 20 mM; all other parsed ingredient
+  concentrations match the parent.
 original_name: Fungal growth media mCAFEs v3
 synonyms:
 - name: Fungal growth media mCAFEs v1
   source: unknown
-  original_category: FUNGAL
+  original_category: fungal
 - name: Fungal growth media mCAFEs v2
   source: unknown
-  original_category: FUNGAL
+  original_category: fungal
 categories:
-- FUNGAL
+- fungal
 merged_from:
 - fungal_growth_media_mcafes_v1
 - fungal_growth_media_mcafes_v2

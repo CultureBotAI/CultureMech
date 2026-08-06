@@ -3,8 +3,11 @@ name: s_w_ca
 original_name: S/W + Ca
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
-ph_range: 7-8
+ph_range:
+  min: 7.0
+  max: 8.0
 media_term:
   preferred_term: CCAP Medium C101
   term:
@@ -23,8 +26,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001099
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
     label: CaCO3
 preparation_steps:
 - step_number: 1
@@ -50,9 +53,9 @@ curation_history:
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C101'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:16.841771'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Soil'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:18:54.343516Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -65,6 +68,25 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "S/W + Ca" to "s_w_ca" for consistent matching
+- timestamp: '2026-05-16T09:04:31.109287+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-05-20T06:02:04.599474+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7-8'' -> {''min'': 7.0, ''max'': 8.0}'
+- timestamp: '2026-06-05T07:41:44.971014+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:55.047786+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint f6a0f34f8f8aa9d81fdd6312a805820df0b3fda9cb2cfc8e9aafc0ad9934bdf7
+  source: s_w_ca.yaml
 kg_microbe_match: mediadive.medium:C101
 merge_fingerprint: f6a0f34f8f8aa9d81fdd6312a805820df0b3fda9cb2cfc8e9aafc0ad9934bdf7
 merged_from:

@@ -3,6 +3,7 @@ name: medium_with_met_asp_fang_et_al
 original_name: Medium with Met, Asp; Fang et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: L-Aspartate
@@ -18,8 +19,8 @@ ingredients:
     value: '2.68078'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:met-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000274
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16643
     label: L-Methionine
 - preferred_term: Glycerol
   term:
@@ -29,8 +30,8 @@ ingredients:
     value: '27.147'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glyc'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: Starch
   term:
@@ -39,23 +40,29 @@ ingredients:
   concentration:
     value: '154.32'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
     label: Starch
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.0090106'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '34.443'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Sodium sulfate
   concentration:
     value: '1.408'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Sodium sulfate
   term:
     id: CHEBI:32149
@@ -64,6 +71,9 @@ ingredients:
   concentration:
     value: '14.6965'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -71,8 +81,8 @@ ingredients:
   concentration:
     value: '0.16229'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
@@ -81,9 +91,9 @@ ingredients:
   concentration:
     value: '0.008965'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -91,13 +101,16 @@ ingredients:
   concentration:
     value: '18.6947'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.0071929'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Ammonium nitrate
   term:
     id: CHEBI:63038
@@ -105,8 +118,8 @@ ingredients:
   concentration:
     value: '2.49837'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000287
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63038
     label: Ammonium nitrate
 preparation_steps:
 - step_number: 1
@@ -137,6 +150,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Medium with Met, Asp; Fang et al" to "medium_with_met_asp_fang_et_al"
     for consistent matching
+- timestamp: '2026-06-05T07:41:30.371221+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-08-06T03:05:44.376151+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint b69b5c91390171d3d6c8bb192e14445103bf697a3fb63c59a1a5ded28ccb966a
+  source: medium_with_met_asp_fang_et_al.yaml
 media_term:
   preferred_term: MediaDB Medium 203
   term:
@@ -148,6 +172,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: ac1355c2db91599b3ade3ed47d3e506303e5f8b637f80f1cbae2d28127cb1126
+merge_fingerprint: b69b5c91390171d3d6c8bb192e14445103bf697a3fb63c59a1a5ded28ccb966a
 merged_from:
 - medium_with_met_asp_fang_et_al

@@ -1,85 +1,124 @@
-id: CultureMech:010540
+id: CultureMech:010013
 name: maltose_yeast_extract_medium
-original_name: MALTOSE-YEAST EXTRACT MEDIUM
-category: fungal
+original_name: Maltose-Yeast Extract Medium
+category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
-ph_value: 6.0
-media_term:
-  preferred_term: JCM Medium J606
-  term:
-    id: mediadive.medium:J606
-    label: MALTOSE-YEAST EXTRACT MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=606'
 ingredients:
-- preferred_term: Maltose
-  term:
-    id: CHEBI:17306
-    label: Maltose
+- preferred_term: Distilled water
   concentration:
-    value: '20'
+    value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000591
-    label: Maltose
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '10'
     unit: G_PER_L
-- preferred_term: K2HPO4
-  term:
-    id: CHEBI:131527
-    label: K2HPO4
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  notes: 'Role: Nutrient source; Properties: Undefined component'
 - preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
-- preferred_term: Agar
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
-    id: CHEBI:2509
-    label: Agar
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: K2HPO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: Maltose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:18167
+    label: alpha-maltose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18167
+    label: alpha-maltose
+- preferred_term: Agar
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 6.0.
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+media_term:
+  preferred_term: TOGO Medium M613
+  term:
+    id: TOGO:M613
+    label: Maltose-Yeast Extract Medium
+notes: 'Source: https://togomedium.org/medium/M613
+
+  Original source: JCM - JCM_M606
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=606'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:17.072360Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J606'
-- timestamp: '2026-03-13T06:20:14.280567Z'
+- timestamp: '2026-01-27T06:35:55.406616Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M613'
+- timestamp: '2026-01-28T19:48:16.054361Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:10.716600Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:010540'
-- timestamp: '2026-03-17T17:06:08.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:010013'
+- timestamp: '2026-03-17T06:29:59.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:33.313389+00:00'
+- timestamp: '2026-03-17T19:46:29.644057+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MALTOSE-YEAST EXTRACT MEDIUM" to "maltose_yeast_extract_medium"
+  notes: Normalized name from "Maltose-Yeast Extract Medium" to "maltose_yeast_extract_medium"
     for consistent matching
-merge_fingerprint: 004df9cbca854b8bdc0304fb127118db3cf857d70d28a26e13325bf53b287929
+- timestamp: '2026-06-05T07:40:43.006319+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:51.157546+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:17.812609+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d3a8b47a30a75125a43e894ee9d2bd47c1ec3cb600fc0b5569ab009caafcff98
+  source: TOGO_M613_Maltose-Yeast_Extract_Medium.yaml
+merge_fingerprint: d3a8b47a30a75125a43e894ee9d2bd47c1ec3cb600fc0b5569ab009caafcff98
 merged_from:
-- maltose_yeast_extract_medium
+- TOGO_M613_Maltose-Yeast_Extract_Medium

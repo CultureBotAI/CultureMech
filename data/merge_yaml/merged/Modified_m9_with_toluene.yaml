@@ -3,6 +3,7 @@ name: modified_m9_with_toluene
 original_name: Modified m9 with toluene
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Toluene
@@ -13,8 +14,8 @@ ingredients:
     value: '6.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:tol'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000511
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17578
     label: Toluene
 - preferred_term: Magnesium chloride
   concentration:
@@ -23,9 +24,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -33,17 +34,23 @@ ingredients:
   concentration:
     value: '0.013'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '220.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Nickel chloride
   concentration:
     value: '0.00021'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34887
+    label: nickel dichloride
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.00031'
@@ -58,9 +65,9 @@ ingredients:
   concentration:
     value: '86.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -68,8 +75,8 @@ ingredients:
   concentration:
     value: '4.3'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
@@ -78,8 +85,8 @@ ingredients:
   concentration:
     value: '187.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Cobalt chloride
   concentration:
@@ -92,16 +99,19 @@ ingredients:
   concentration:
     value: '194.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: Sodium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
   term:
-    id: CHEBI:37583
-    label: ''
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
 - preferred_term: Cupric chloride
   concentration:
     value: '0.00015'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49553
+    label: ''
 - preferred_term: Zinc Chloride
   concentration:
     value: '0.00092'
@@ -142,6 +152,24 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Modified m9 with toluene" to "modified_m9_with_toluene"
     for consistent matching
+- timestamp: '2026-06-05T07:41:37.010768+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-09T01:42:25.058299+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (shared-id regrounding audit, G21/G22/G24)
+  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more
+    ingredient groundings on this record that had been collapsed onto a chemically
+    non-specific or shared CHEBI id were re-grounded to the correct chemically-specific
+    term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
+- timestamp: '2026-08-06T03:05:48.718367+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint a44adf80310d57dba5ca9635b091e49bdae1542de2c0f63388fef8bdce4aac58
+  source: modified_m9_with_toluene.yaml
 media_term:
   preferred_term: MediaDB Medium 198
   term:
@@ -154,6 +182,6 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
-merge_fingerprint: 804d61a3a208bd35507c0423c1b7625f5ebce5112f691e0546d53cc76047ae1e
+merge_fingerprint: a44adf80310d57dba5ca9635b091e49bdae1542de2c0f63388fef8bdce4aac58
 merged_from:
 - modified_m9_with_toluene

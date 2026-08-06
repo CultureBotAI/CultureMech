@@ -3,6 +3,7 @@ name: lactobacilli_mrs_agar
 original_name: Lactobacilli MRS Agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: DI Water
@@ -39,6 +40,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Lactobacilli MRS Agar" to "lactobacilli_mrs_agar" for
     consistent matching
+- timestamp: '2026-08-06T03:05:39.879087+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint cd70160427da874f35ecd1367ef07a7a6868fcd3b80f0775bd3e3a37c07937c7
+  source: lactobacilli_mrs_agar.yaml
 merge_fingerprint: cd70160427da874f35ecd1367ef07a7a6868fcd3b80f0775bd3e3a37c07937c7
 merged_from:
 - lactobacilli_mrs_agar

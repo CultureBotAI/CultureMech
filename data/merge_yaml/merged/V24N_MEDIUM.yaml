@@ -1,36 +1,38 @@
-id: CultureMech:002051
+id: CultureMech:006741
 name: v24n_medium
-original_name: V24N MEDIUM
+original_name: V24N medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.0
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 88b | DSMZ Medium: 88b (mediadive.medium:88b)
+  | Aerobic: Yes'
 media_term:
-  preferred_term: DSMZ Medium 88b
+  preferred_term: KOMODO Medium 88b
   term:
-    id: mediadive.medium:88b
-    label: V24N MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium88b.pdf'
+    id: komodo.medium:88b
+    label: V24N medium
 ingredients:
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '1.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.28'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -39,8 +41,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -49,8 +51,8 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: FeCl3 x 6 H2O
   term:
@@ -59,45 +61,23 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000218
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86254
     label: FeCl3 x 6 H2O
 - preferred_term: Sulfur
   term:
     id: CHEBI:26833
     label: Sulfur
   concentration:
-    value: '1'
+    value: '10'
     unit: G_PER_L
-  notes: ' (powdered)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000927
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26833
     label: Sulfur
 - preferred_term: Yeast extract
   concentration:
-    value: '0.2'
+    value: '0.5'
     unit: G_PER_L
-- preferred_term: Starch
-  term:
-    id: CHEBI:28017
-    label: Starch
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: ' (soluble)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
-    label: Starch
-- preferred_term: Resazurin
-  term:
-    id: CHEBI:8806
-    label: Resazurin
-  concentration:
-    value: '0.0004'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
-    label: Resazurin
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -105,8 +85,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -115,13 +95,16 @@ ingredients:
   concentration:
     value: '0.18'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: Na2B4O7 x 10 H2O
   concentration:
     value: '0.45'
     unit: G_PER_L
+  term:
+    id: CHEBI:131366
+    label: ''
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -129,8 +112,8 @@ ingredients:
   concentration:
     value: '0.022'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
@@ -139,8 +122,8 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
     label: CuCl2 x 2 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -149,8 +132,8 @@ ingredients:
   concentration:
     value: '0.003'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: VOSO4 x 2 H2O
   term:
@@ -159,8 +142,8 @@ ingredients:
   concentration:
     value: '0.003'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000279
+  mediaingredientmech_chebi_term:
+    id: CHEBI:87009
     label: VOSO4 x 2 H2O
 - preferred_term: CoSO4 x 7 H2O
   term:
@@ -169,41 +152,88 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000158
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53470
     label: CoSO4 x 7 H2O
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: 'Prepare medium M.88, then add (per litre):'
-- step_number: 2
-  action: ADJUST_PH
-  description: Adjust the pH to 6.0 with H2SO4 (25% v/v). Prepare the medium under
-    100% N2 gas phase and distribute anaerobically into rubber stoppered tubes or
-    bottles (presterilized by autoclaving). The medium is sterilized by heating 2
-    hours at 85 °C on each of two following days.
-- step_number: 3
-  action: ADJUST_PH
-  description: Adjust pH of final solution to 2 with 1 N HCl.
+- preferred_term: H2SO4
+  term:
+    id: CHEBI:26836
+    label: sulfuric acid
+  notes: pH adjustment (extracted from notes)
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26836
+    label: sulfuric acid
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:10.149007Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 88b'
-- timestamp: '2026-03-13T06:19:09.804058Z'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 88b'
+- timestamp: '2026-02-03T11:19:07.791592'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 88
+- timestamp: '2026-03-13T03:09:12.816364Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Added pH buffer: H2SO4'
+- timestamp: '2026-03-13T06:19:43.514773Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:002051'
-- timestamp: '2026-03-17T06:30:03.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:006741'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: H2SO4'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:30:20.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:22.403791+00:00'
+- timestamp: '2026-03-17T19:46:01.290305+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "V24N MEDIUM" to "v24n_medium" for consistent matching
-merge_fingerprint: 023029ff62479a4ddc3db8b1e553d589ecc54c622bc4e7e1f2916147fb00e50b
+  notes: Normalized name from "V24N medium" to "v24n_medium" for consistent matching
+- timestamp: '2026-05-16T09:03:05.231419+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:27.459648+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 14 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:46.237654+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:24.158266+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_88_SULFOLOBUS_medium, KOMODO_88b_V24N_medium, for_dsm_14429_and_dsm_14430'
+- timestamp: '2026-08-06T03:04:24.158325+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 3 source recipe(s) on fingerprint 5a8817a6a0dc1f6697488b60c32233d088c01676b0229f8221c947a29e4096da
+  source: KOMODO_88_SULFOLOBUS_medium.yaml, KOMODO_88b_V24N_medium.yaml, for_dsm_14429_and_dsm_14430.yaml
+synonyms:
+- name: sulfolobus_medium
+  source: KOMODO
+  source_id: komodo.medium:88
+  original_category: archaea
+- name: for_dsm_14429_and_dsm_14430
+  source: KOMODO
+  source_id: komodo.medium:88.1
+  original_category: bacterial
+categories:
+- archaea
+- bacterial
 merged_from:
-- v24n_medium
+- KOMODO_88_SULFOLOBUS_medium
+- KOMODO_88b_V24N_medium
+- for_dsm_14429_and_dsm_14430
+merge_fingerprint: 5a8817a6a0dc1f6697488b60c32233d088c01676b0229f8221c947a29e4096da

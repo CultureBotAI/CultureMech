@@ -3,6 +3,7 @@ name: vibrio_seawater_medium
 original_name: VIBRIO SEAWATER MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J1232
@@ -55,6 +56,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "VIBRIO SEAWATER MEDIUM" to "vibrio_seawater_medium"
     for consistent matching
+- timestamp: '2026-08-06T03:06:02.555598+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 2a353e9cd464790a60a00858ba08179a5387a62eb42a2b32501d1d399e71b629
+  source: vibrio_seawater_medium.yaml
 merge_fingerprint: 2a353e9cd464790a60a00858ba08179a5387a62eb42a2b32501d1d399e71b629
 merged_from:
 - vibrio_seawater_medium

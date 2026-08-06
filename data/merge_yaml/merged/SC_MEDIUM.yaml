@@ -1,21 +1,86 @@
-id: CultureMech:008734
+id: CultureMech:002582
 name: sc_medium
-original_name: SC Medium
+original_name: SC MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
+ph_value: 6.6
+media_term:
+  preferred_term: JCM Medium J220
+  term:
+    id: mediadive.medium:J220
+    label: SC MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220
+
+
+  Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
+
+  Supplier: Multiple suppliers (Difco, Sigma, etc.)
+
+  Catalog: Multiple (L3522 Sigma, 244520 BD)
+
+  Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
 ingredients:
-- preferred_term: 50% Glucose
+- preferred_term: Corn meal agar
+  term:
+    id: CHEBI:2509
+    label: Corn meal agar
   concentration:
-    value: '1'
+    value: '16.4093'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
-- preferred_term: 10% Cysteine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Corn meal agar
+- preferred_term: Phytone peptone
   concentration:
-    value: '10'
+    value: '7.72201'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
-    Solution'
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  concentration:
+    value: '0.965251'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: K2HPO4
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  concentration:
+    value: '0.965251'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.19305'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: Hemin
+  term:
+    id: CHEBI:50385
+    label: Hemin
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
+    label: Hemin
 - preferred_term: Tryptone
   term:
     id: MICRO:0000182
@@ -69,113 +134,68 @@ ingredients:
     synonym_type: EXACT
   - synonym_text: table salt
     synonym_type: EXACT
-- preferred_term: Distilled water
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: Glucose
+- preferred_term: Cysteine
   term:
-    id: CHEBI:15377
-    label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
+    id: CHEBI:15356
+    label: Cysteine
   concentration:
-    value: '0.2'
+    value: '10'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:32599
-    label: ''
-- preferred_term: KH2PO4
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Defined component, Inorganic
-    compound'
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: KH2PO4
-- preferred_term: K2HPO4
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
-  term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
-- preferred_term: Hemin (0.1% in 0.05 N NaOH)
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Solution'
-- preferred_term: Corn meal agar (BD-Difco)
-  concentration:
-    value: '17'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
-- preferred_term: Phytone peptone (BD-BBL)
-  concentration:
-    value: '8'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M213
-  term:
-    id: TOGO:M213
-    label: SC Medium
-notes: 'Source: https://togomedium.org/medium/M213
-
-  Original source: JCM - JCM_M220
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220
-
-
-  Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
-
-  Supplier: Multiple suppliers (Difco, Sigma, etc.)
-
-  Catalog: Multiple (L3522 Sigma, 244520 BD)
-
-  Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-
-  Accessed: 2026-03-28
-
-
-  Constituent composition researched from product specification.'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15356
+    label: Cysteine
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 6.6.
+- step_number: 2
+  action: MIX
+  description: Separately sterilize bovine serum albumin, glucose and cysteine solutions
+    by filtration, and aseptically add to the medium.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.626929Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M213'
-- timestamp: '2026-01-28T19:48:23.035916Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:19:59.922965Z'
+- timestamp: '2026-01-26T17:53:15.997461Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J220'
+- timestamp: '2026-03-13T06:19:14.313039Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:008734'
-- timestamp: '2026-03-17T06:30:14.000000Z'
+  notes: 'Assigned stable identifier: CultureMech:002582'
+- timestamp: '2026-03-17T06:30:11.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:46:18.570379+00:00'
+- timestamp: '2026-03-17T19:45:27.542392+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SC Medium" to "sc_medium" for consistent matching
-merge_fingerprint: a3489e1e374988c5435803d09014d9cf66b54fa0927260fdcd2a025068408691
+  notes: Normalized name from "SC MEDIUM" to "sc_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:16.862479+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:42.844430+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:04:35.826668+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 3d6f0fb48f0ae595982fbd19697ef073edfea24b19e4364c69f4c24798115161
+  source: JCM_J220_SC_MEDIUM.yaml
+merge_fingerprint: 3d6f0fb48f0ae595982fbd19697ef073edfea24b19e4364c69f4c24798115161
 merged_from:
-- TOGO_M213_SC_Medium
+- JCM_J220_SC_MEDIUM

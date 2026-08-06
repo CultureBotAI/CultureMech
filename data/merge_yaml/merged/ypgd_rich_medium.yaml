@@ -3,6 +3,7 @@ name: ypgd_rich_medium
 original_name: YPGD (rich medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: yeast extract
@@ -17,10 +18,10 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
     compound'
   term:
-    id: CHEBI:15978
-    label: sn-glycerol 3-phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000588
+    id: CHEBI:17754
+    label: glycerol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: glycerol
 - preferred_term: glucose
   concentration:
@@ -31,9 +32,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: polypeptone
   concentration:
     value: '1'
@@ -69,7 +70,24 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "YPGD (rich medium)" to "ypgd_rich_medium" for consistent
     matching
+- timestamp: '2026-06-05T07:41:55.866114+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:51.994078+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:06:03.227897+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint d9d6f2e8a7487f353c0e4d3d6864e9274afc9ceaeb7b99e5c9d19fed94ad6e2f
+  source: ypgd_rich_medium.yaml
 kg_microbe_match: mediadive.medium:J505
-merge_fingerprint: 81d664d459cc19790683b5b91dd9963f86cb63b2163b64de1b6ea9c141e1b6cc
+merge_fingerprint: d9d6f2e8a7487f353c0e4d3d6864e9274afc9ceaeb7b99e5c9d19fed94ad6e2f
 merged_from:
 - ypgd_rich_medium

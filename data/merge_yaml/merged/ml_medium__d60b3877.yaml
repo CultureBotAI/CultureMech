@@ -1,0 +1,126 @@
+id: CultureMech:003210
+name: ml_medium
+original_name: ML MEDIUM
+category: bacterial
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_value: 9.5
+media_term:
+  preferred_term: JCM Medium J864
+  term:
+    id: mediadive.medium:J864
+    label: ML MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=864'
+ingredients:
+- preferred_term: Na2B4O7 x 10 H2O
+  concentration:
+    value: '3.72549'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131366
+    label: ''
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '6.66667'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: NaHCO3
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  concentration:
+    value: '31.3725'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: Na2CO3
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '68.6274'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  concentration:
+    value: '0.980392'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+- preferred_term: Yeast extract
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 9.5.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.831475Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J864'
+- timestamp: '2026-03-13T06:19:18.593752Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003210'
+- timestamp: '2026-03-17T06:30:26.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:32.479739+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ML MEDIUM" to "ml_medium" for consistent matching
+- timestamp: '2026-06-05T07:41:35.178763+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:08.213491+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T03:05:46.839653+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: ml_15_medium, ml_medium'
+- timestamp: '2026-08-06T03:05:46.839698+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 2 source recipe(s) on fingerprint d60b38771c2183b63ad8869af64d06d62b8a104ff8f5aedf697f173db6590c3d
+  source: ml_15_medium.yaml, ml_medium.yaml
+variant_children:
+- path: data/normalized_yaml/bacterial/ml_15_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:002228
+  name: ml_15_medium
+  notes: Reviewed ML/ML-15 pair; child keeps the same alkaline salt base with small
+    normalization-scale differences and increases yeast extract from 5 to 20 g/L.
+synonyms:
+- name: ml_15_medium
+  source: MediaDive
+  source_id: mediadive.medium:J1044
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- ml_15_medium
+- ml_medium
+merge_fingerprint: d60b38771c2183b63ad8869af64d06d62b8a104ff8f5aedf697f173db6590c3d

@@ -3,6 +3,7 @@ name: rcm_medium_with_casamino_acids
 original_name: RCM MEDIUM (with Casamino acids)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.8
 media_term:
@@ -20,16 +21,13 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.0005'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -63,7 +61,24 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "RCM MEDIUM (with Casamino acids)" to "rcm_medium_with_casamino_acids"
     for consistent matching
+- timestamp: '2026-06-05T07:41:43.917509+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:50.120026+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-06T03:05:54.369922+00:00'
+  curator: merge_recipes.py
+  action: MERGED_RECIPES
+  notes: merged 1 source recipe(s) on fingerprint 191df17ed429834c634fed5272074e4be82a5ae09c5f463484a02b213bbe2145
+  source: rcm_medium_with_casamino_acids.yaml
 kg_microbe_match: mediadive.medium:634a
-merge_fingerprint: 33d36415d8700c54e53430a96115694c8b0719aca4677e9c10aedeba789e242e
+merge_fingerprint: 191df17ed429834c634fed5272074e4be82a5ae09c5f463484a02b213bbe2145
 merged_from:
 - rcm_medium_with_casamino_acids
