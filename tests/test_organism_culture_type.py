@@ -76,6 +76,14 @@ def test_already_set_and_no_organisms_are_skipped(oct):
     assert oct.classify({"name": "no organisms here"})[0] is None
 
 
+def test_nameless_organism_entries_are_left_for_a_curator(oct):
+    """target_organisms present but no readable name is not evidence of an isolate;
+    `isolate` there would be a guess about an unreadable record."""
+    value, reason = oct.classify({"target_organisms": [{"strain": "x"}, {}]})
+    assert value is None
+    assert "no organism name" in reason
+
+
 def test_slot_is_placed_before_target_organisms(oct):
     doc = {"name": "x", "category": "bacterial",
            "target_organisms": [{"preferred_term": "E. coli"}],

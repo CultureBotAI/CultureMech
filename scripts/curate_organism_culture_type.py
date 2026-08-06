@@ -104,6 +104,10 @@ def classify(doc: dict[str, Any]) -> tuple[str | None, str]:
     if COMMUNITY_SIGNAL.search(blob):
         return None, "community/consortium signal — leave for a curator"
     n = len([x for x in names if x])
+    if n == 0:
+        # Entries present but none carry a name — `isolate` would be a guess about
+        # a record we cannot actually read. Leave it for a curator.
+        return None, "target_organisms present but no organism name — leave for a curator"
     return "isolate", f"{n} specific strain(s) named; no community signal"
 
 
