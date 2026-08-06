@@ -65,7 +65,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Important Notes To Consider: The quality of water, including natural seawater, is important.'
+  description: 'Important Notes To Consider: The quality of water, including natural
+    seawater, is important.'
 - step_number: 2
   action: MIX
   description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
@@ -121,21 +122,26 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Artificial Seawater Medium" to "artificial_seawater_medium"
     for consistent matching
+- timestamp: '2026-08-06T00:58:02.491431+00:00'
+  curator: curate_organism_culture_type.py
+  action: SET_ORGANISM_CULTURE_TYPE
+  notes: 'Inferred isolate: 3 specific strain(s) named, no community signal (#142)'
+  changes: Set organism_culture_type=isolate (was unset)
 references:
 - reference: UTEX:artificial-seawater-medium
 - reference: https://utex.org/products/artificial-seawater-medium
 original_name: Artificial Seawater Medium
 variants:
 - name: modified_artificial_seawater_hemiaulus_richelia_symbiosis
-  description: Modified artificial seawater medium used for growth of Hemiaulus
-    hauckii with its Richelia intracellularis endosymbiont.
+  description: Modified artificial seawater medium used for growth of Hemiaulus hauckii
+    with its Richelia intracellularis endosymbiont.
   modifications:
   - Use a modified artificial seawater medium.
   - Culture the Hemiaulus hauckii and Richelia intracellularis symbiotic unit.
-  - Use nitrogen-free medium with N2 as the sole nitrogen source for reported
-    maximum growth rates.
-  purpose: Capture growth of a diatom-cyanobacterium symbiosis under a modified
-    artificial seawater medium variant.
+  - Use nitrogen-free medium with N2 as the sole nitrogen source for reported maximum
+    growth rates.
+  purpose: Capture growth of a diatom-cyanobacterium symbiosis under a modified artificial
+    seawater medium variant.
   evidence:
   - reference: PMID:33083143
     supports: SUPPORT
@@ -151,23 +157,24 @@ variants:
   - Use artificial seawater medium as the base.
   - Supplement with nitrogen and phosphorus sources.
   - Add HEPES buffer when improved overall growth is needed.
-  purpose: Capture seawater-based cultivation of the freshwater cyanobacterium
-    Synechocystis sp. PCC 6803.
+  purpose: Capture seawater-based cultivation of the freshwater cyanobacterium Synechocystis
+    sp. PCC 6803.
   evidence:
   - reference: PMID:25954257
     supports: SUPPORT
     snippet: The Synechocystis wild-type strain grew well in an artificial seawater
       (ASW) medium supplemented with nitrogen and phosphorus sources.
-    explanation: Literature evidence supports an artificial-seawater variant for
-      Synechocystis sp. PCC 6803 growth.
+    explanation: Literature evidence supports an artificial-seawater variant for Synechocystis
+      sp. PCC 6803 growth.
+organism_culture_type: isolate
 target_organisms:
 - preferred_term: Hemiaulus hauckii
   term:
     id: NCBITaxon:426650
     label: Hemiaulus hauckii
   growth_metrics:
-  - measurement_conditions: Modified artificial seawater medium; nitrogen-free
-      medium with N2 as the sole nitrogen source.
+  - measurement_conditions: Modified artificial seawater medium; nitrogen-free medium
+      with N2 as the sole nitrogen source.
     evidence:
     - reference: PMID:33083143
       supports: SUPPORT
@@ -184,10 +191,10 @@ target_organisms:
   - reference: PMID:33083143
     supports: SUPPORT
     snippet: We document the influence of light and nutrients on nitrogen fixation
-      and growth rates of the host diatom Hemiaulus hauckii Grunow together with
-      its diazotrophic endosymbiont Richelia intracellularis Schmidt
-    explanation: Literature evidence identifies Richelia intracellularis as the
-      diazotrophic endosymbiont in the cultured Hemiaulus-Richelia symbiosis.
+      and growth rates of the host diatom Hemiaulus hauckii Grunow together with its
+      diazotrophic endosymbiont Richelia intracellularis Schmidt
+    explanation: Literature evidence identifies Richelia intracellularis as the diazotrophic
+      endosymbiont in the cultured Hemiaulus-Richelia symbiosis.
 - preferred_term: Synechocystis sp. PCC 6803
   term:
     id: NCBITaxon:1148
@@ -200,6 +207,6 @@ target_organisms:
       supports: SUPPORT
       snippet: The Synechocystis wild-type strain grew well in an artificial seawater
         (ASW) medium supplemented with nitrogen and phosphorus sources.
-      explanation: Literature evidence directly reports growth of Synechocystis
-        sp. PCC 6803 in supplemented artificial seawater medium.
+      explanation: Literature evidence directly reports growth of Synechocystis sp.
+        PCC 6803 in supplemented artificial seawater medium.
     is_max_attainment: false

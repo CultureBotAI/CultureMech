@@ -40,8 +40,8 @@ source_data:
   notes: 'database_id: nutrient broth; url: https://github.com/CultureBotAI/CultureBotHT'
 variants:
 - name: nutrient_broth_mycolicibacterium_cosmeticum_dm11_25c
-  description: Nutrient broth growth condition for Mycolicibacterium cosmeticum
-    strain DM-11 at 25 C.
+  description: Nutrient broth growth condition for Mycolicibacterium cosmeticum strain
+    DM-11 at 25 C.
   modifications:
   - Use Mycolicibacterium cosmeticum strain DM-11 as the target strain.
   - Incubate at 25 C.
@@ -50,10 +50,10 @@ variants:
   evidence:
   - reference: PMID:16461697
     supports: SUPPORT
-    snippet: The strain, designated strain DM-11, grew optimally at 25 degrees C
-      and had a doubling time of 29.2 h.
-    explanation: Literature evidence supports a strain-specific 25 C growth
-      condition variant under the parent Nutrient Broth record.
+    snippet: The strain, designated strain DM-11, grew optimally at 25 degrees C and
+      had a doubling time of 29.2 h.
+    explanation: Literature evidence supports a strain-specific 25 C growth condition
+      variant under the parent Nutrient Broth record.
 curation_history:
 - timestamp: '2026-03-18T04:31:15.467479+00:00'
   curator: import_from_culturebotht.py
@@ -67,8 +67,14 @@ curation_history:
   curator: literature_review_apply
   action: ADDED_GROWTH_EVIDENCE
   notes: organisms_added=1 metrics_added=1 genomes_added=0
+- timestamp: '2026-08-06T00:58:02.756697+00:00'
+  curator: curate_organism_culture_type.py
+  action: SET_ORGANISM_CULTURE_TYPE
+  notes: 'Inferred isolate: 1 specific strain(s) named, no community signal (#142)'
+  changes: Set organism_culture_type=isolate (was unset)
 data_quality_flags: []
 kg_microbe_match: mediadive.medium:681
+organism_culture_type: isolate
 target_organisms:
 - preferred_term: Mycolicibacterium cosmeticum
   term:

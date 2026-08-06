@@ -255,6 +255,11 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T00:58:02.647301+00:00'
+  curator: curate_organism_culture_type.py
+  action: SET_ORGANISM_CULTURE_TYPE
+  notes: 'Inferred isolate: 2 specific strain(s) named, no community signal (#142)'
+  changes: Set organism_culture_type=isolate (was unset)
 solutions:
 - preferred_term: Trace element solution (see Medium [M278])
   composition:
@@ -384,6 +389,7 @@ solutions:
     value: '2'
     unit: G_PER_L
   preparation_notes: 'Role: Mineral source'
+organism_culture_type: isolate
 target_organisms:
 - preferred_term: Methylosinus sp. Ce-a6
   term:

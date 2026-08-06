@@ -79,6 +79,12 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-08-06T00:58:02.661292+00:00'
+  curator: curate_organism_culture_type.py
+  action: SET_ORGANISM_CULTURE_TYPE
+  notes: 'Inferred isolate: 1 specific strain(s) named, no community signal (#142)'
+  changes: Set organism_culture_type=isolate (was unset)
+organism_culture_type: isolate
 target_organisms:
 - preferred_term: Sneathiella glossodoripedis
   term:

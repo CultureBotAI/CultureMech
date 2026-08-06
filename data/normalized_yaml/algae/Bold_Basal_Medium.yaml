@@ -129,6 +129,11 @@ curation_history:
   curator: migrate_preparation_steps.py
   action: MIGRATED_PREPARATION_STEPS
   notes: instruction->action+description for 9 step(s)
+- timestamp: '2026-08-06T00:58:02.497461+00:00'
+  curator: curate_organism_culture_type.py
+  action: SET_ORGANISM_CULTURE_TYPE
+  notes: 'Inferred isolate: 1 specific strain(s) named, no community signal (#142)'
+  changes: Set organism_culture_type=isolate (was unset)
 references:
 - reference: UTEX:bold-basal-medium
 - reference: https://utex.org/products/bold-basal-medium
@@ -159,6 +164,7 @@ variants:
       (BBM)'
     explanation: The paper explicitly used BBM as one of three media for the Scenedesmus
       quadricauda CPCC-158 growth experiment.
+organism_culture_type: isolate
 target_organisms:
 - preferred_term: Scenedesmus quadricauda
   term:

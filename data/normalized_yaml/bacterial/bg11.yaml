@@ -260,6 +260,12 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T00:58:02.702712+00:00'
+  curator: curate_organism_culture_type.py
+  action: SET_ORGANISM_CULTURE_TYPE
+  notes: 'Inferred isolate: 3 specific strain(s) named, no community signal (#142)'
+  changes: Set organism_culture_type=isolate (was unset)
+organism_culture_type: isolate
 target_organisms:
 - preferred_term: Synechocystis sp. PCC 6803
   term:

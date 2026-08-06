@@ -49,6 +49,11 @@ curation_history:
   curator: primary-term-regrounding-v1.0
   action: Re-grounded wrong primary term id (OAK-verified)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-06T00:58:02.481264+00:00'
+  curator: curate_organism_culture_type.py
+  action: SET_ORGANISM_CULTURE_TYPE
+  notes: 'Inferred isolate: 4 specific strain(s) named, no community signal (#142)'
+  changes: Set organism_culture_type=isolate (was unset)
 references:
 - reference: CCAP:2ASW
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_2ASW.pdf
@@ -218,6 +223,7 @@ variants:
     supports: SUPPORT
     explanation: Tsuji et al. report Chaetoceros gracilis UTEX LB2658 growth and carbon-concentrating-mechanism
       experiments in modified F/2ASW with defined sodium manipulations.
+organism_culture_type: isolate
 target_organisms:
 - preferred_term: Dunaliella salina
   term:

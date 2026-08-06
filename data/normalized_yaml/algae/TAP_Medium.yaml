@@ -30,7 +30,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Important Notes To Consider: The quality of water, including natural seawater, is important.'
+  description: 'Important Notes To Consider: The quality of water, including natural
+    seawater, is important.'
 - step_number: 2
   action: MIX
   description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
@@ -84,6 +85,11 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "TAP Medium" to "tap_medium" for consistent matching
+- timestamp: '2026-08-06T00:58:02.525354+00:00'
+  curator: curate_organism_culture_type.py
+  action: SET_ORGANISM_CULTURE_TYPE
+  notes: 'Inferred isolate: 2 specific strain(s) named, no community signal (#142)'
+  changes: Set organism_culture_type=isolate (was unset)
 references:
 - reference: UTEX:tap-medium
 - reference: https://utex.org/products/tap-medium
@@ -105,8 +111,8 @@ variants:
     explanation: Literature evidence supports a TAP medium co-culture variant for
       Chlorella vulgaris and Delftia sp.
 - name: ab_wsf_tap_derived_chlorella_sorokiniana
-  description: Acetate-based water-soluble fertilizer medium developed from TAP
-    for Chlorella sorokiniana cultivation.
+  description: Acetate-based water-soluble fertilizer medium developed from TAP for
+    Chlorella sorokiniana cultivation.
   modifications:
   - Replace TAP trace and macroelements with water-soluble fertilizer.
   - Replace Tris in TAP medium with HAc-NaAc for pH balance.
@@ -119,8 +125,9 @@ variants:
     snippet: To address these problems, a novel acetate-based water-soluble fertilizer
       (Ab-WSF) was developed on the basis of TAP media, where the trace and macroelements
       in TAP were replaced by water-soluble fertilizer (WSF).
-    explanation: Literature evidence describes a TAP-derived formulation variant
-      for Chlorella sorokiniana cultivation.
+    explanation: Literature evidence describes a TAP-derived formulation variant for
+      Chlorella sorokiniana cultivation.
+organism_culture_type: isolate
 target_organisms:
 - preferred_term: Chlorella vulgaris
   term:
@@ -152,14 +159,14 @@ target_organisms:
       explanation: Literature evidence uses TAP as the comparator medium for Chlorella
         sorokiniana cultivation.
     is_max_attainment: false
-  - measurement_conditions: TAP-derived Ab-WSF variant in twelve-liter Chlorella
-      sorokiniana culture.
+  - measurement_conditions: TAP-derived Ab-WSF variant in twelve-liter Chlorella sorokiniana
+      culture.
     evidence:
     - reference: PMID:40484141
       supports: SUPPORT
       snippet: The biomass concentration, volumetric productivity and areal productivity
-        were 4.5 g/L, 0.6 g/L/d, and 9.0 g/m2/d, which were 50.0 %, 36.0 % and
-        49.8 % greater than those obtained with TAP, respectively.
-      explanation: Literature evidence reports quantitative biomass/productivity
-        for a TAP-derived Ab-WSF variant and compares results with TAP.
+        were 4.5 g/L, 0.6 g/L/d, and 9.0 g/m2/d, which were 50.0 %, 36.0 % and 49.8
+        % greater than those obtained with TAP, respectively.
+      explanation: Literature evidence reports quantitative biomass/productivity for
+        a TAP-derived Ab-WSF variant and compares results with TAP.
     is_max_attainment: false

@@ -131,8 +131,8 @@ source_data:
   notes: 'database_id: BG11; url: https://github.com/CultureBotAI/CultureBotHT'
 variants:
 - name: nitrate_replete_bg11_nostoc_linckia
-  description: BG11 nitrate-replete condition used for Nostoc linckia growth and
-    biomass productivity comparison with nitrate-free BG110.
+  description: BG11 nitrate-replete condition used for Nostoc linckia growth and biomass
+    productivity comparison with nitrate-free BG110.
   modifications:
   - Use BG11 medium with nitrate present.
   - Compare with BG110 medium lacking nitrate.
@@ -141,18 +141,18 @@ variants:
   - reference: PMID:36550226
     supports: SUPPORT
     snippet: Cultures grown in BG11 accumulated more cell biomass reaching a dry weight
-      of 1.65 ± 0.06 g L-1, compared to 0.92 ± 0.01 g L-1 in BG110 after 240 h
-      of culture.
-    explanation: Literature evidence reports higher biomass and productivity of
-      Nostoc linckia in BG11 than nitrate-free BG110.
+      of 1.65 ± 0.06 g L-1, compared to 0.92 ± 0.01 g L-1 in BG110 after 240 h of
+      culture.
+    explanation: Literature evidence reports higher biomass and productivity of Nostoc
+      linckia in BG11 than nitrate-free BG110.
 - name: bg11_synechococcus_ucp002
-  description: BG-11 cultivation condition for unaxenic Synechococcus sp. UCP002
-    isolated from the Peruvian Amazon Basin.
+  description: BG-11 cultivation condition for unaxenic Synechococcus sp. UCP002 isolated
+    from the Peruvian Amazon Basin.
   modifications:
   - Culture Synechococcus sp. UCP002 in BG-11 medium.
   - Use standardized growth-parameter and biochemical-profile measurements.
-  purpose: Capture strain-specific BG-11 growth and genome-context evidence for
-    Synechococcus sp. UCP002.
+  purpose: Capture strain-specific BG-11 growth and genome-context evidence for Synechococcus
+    sp. UCP002.
   evidence:
   - reference: PMID:36437912
     supports: SUPPORT
@@ -166,15 +166,15 @@ variants:
   modifications:
   - Use BG-11 medium under photoautotrophic cultivation.
   - Compare air and 2% CO2 gas conditions.
-  purpose: Capture strain-level BG-11 growth evidence for Scenedesmus obliquus
-    ABC-009, currently mapped by NCBI to Tetradesmus obliquus.
+  purpose: Capture strain-level BG-11 growth evidence for Scenedesmus obliquus ABC-009,
+    currently mapped by NCBI to Tetradesmus obliquus.
   evidence:
   - reference: PMID:34584038
     supports: SUPPORT
     snippet: photoautotrophic mode using BG-11 medium with air or 2% CO2 and heterotrophic
       mode using YM medium.
-    explanation: Literature evidence directly states that strain ABC-009 was
-      evaluated under photoautotrophic BG-11 cultivation conditions.
+    explanation: Literature evidence directly states that strain ABC-009 was evaluated
+      under photoautotrophic BG-11 cultivation conditions.
 curation_history:
 - timestamp: '2026-03-18T04:31:12.439728+00:00'
   curator: import_from_culturebotht.py
@@ -184,24 +184,30 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015450'
+- timestamp: '2026-08-06T00:58:02.530976+00:00'
+  curator: curate_organism_culture_type.py
+  action: SET_ORGANISM_CULTURE_TYPE
+  notes: 'Inferred isolate: 3 specific strain(s) named, no community signal (#142)'
+  changes: Set organism_culture_type=isolate (was unset)
 data_quality_flags:
 - has_unmapped_ingredients
+organism_culture_type: isolate
 target_organisms:
 - preferred_term: Nostoc linckia
   term:
     id: NCBITaxon:92942
     label: Nostoc linckia
   growth_metrics:
-  - measurement_conditions: BG11 nitrate-replete medium after 240 h of culture;
-      compared with nitrate-free BG110.
+  - measurement_conditions: BG11 nitrate-replete medium after 240 h of culture; compared
+      with nitrate-free BG110.
     evidence:
     - reference: PMID:36550226
       supports: SUPPORT
-      snippet: Cultures grown in BG11 accumulated more cell biomass reaching a dry weight
-        of 1.65 ± 0.06 g L-1, compared to 0.92 ± 0.01 g L-1 in BG110 after 240 h
-        of culture.
-      explanation: Literature evidence reports biomass accumulation of Nostoc
-        linckia in BG11.
+      snippet: Cultures grown in BG11 accumulated more cell biomass reaching a dry
+        weight of 1.65 ± 0.06 g L-1, compared to 0.92 ± 0.01 g L-1 in BG110 after
+        240 h of culture.
+      explanation: Literature evidence reports biomass accumulation of Nostoc linckia
+        in BG11.
     is_max_attainment: false
 - preferred_term: Synechococcus sp. UCP002
   strain: UCP002
@@ -216,10 +222,10 @@ target_organisms:
     evidence:
     - reference: PMID:36437912
       supports: SUPPORT
-      snippet: Synechococcus sp. UCP002 had a specific growth rate of 0.086 ± 0.008 μ
-        and a doubling time of 8.08 ± 0.78 h.
-      explanation: Literature evidence reports growth rate and doubling time for
-        Synechococcus sp. UCP002 cultured in BG-11 medium.
+      snippet: Synechococcus sp. UCP002 had a specific growth rate of 0.086 ± 0.008
+        μ and a doubling time of 8.08 ± 0.78 h.
+      explanation: Literature evidence reports growth rate and doubling time for Synechococcus
+        sp. UCP002 cultured in BG-11 medium.
     is_max_attainment: false
   evidence:
   - reference: PMID:36437912
@@ -234,23 +240,22 @@ target_organisms:
     id: NCBITaxon:3088
     label: Tetradesmus obliquus
   growth_metrics:
-  - measurement_conditions: Photoautotrophic BG-11 medium cultivation with air
-      or 2% CO2 for the strain reported in the source as Scenedesmus obliquus
-      ABC-009.
+  - measurement_conditions: Photoautotrophic BG-11 medium cultivation with air or
+      2% CO2 for the strain reported in the source as Scenedesmus obliquus ABC-009.
     growth_mode: BATCH
     evidence:
     - reference: PMID:34584038
       supports: SUPPORT
-      snippet: Scenedesmus obliquus ABC-009 is a microalgal strain that accumulates large
-        amounts of lutein, particularly when subjected to growth-limiting conditions.
-      explanation: Literature evidence identifies the strain studied under BG-11
-        photoautotrophic cultivation; NCBI nuccore record MG971386.1 links strain
-        ABC-009 to the accepted taxonomy Tetradesmus obliquus, but it is a partial
-        marker sequence rather than a genome assembly.
+      snippet: Scenedesmus obliquus ABC-009 is a microalgal strain that accumulates
+        large amounts of lutein, particularly when subjected to growth-limiting conditions.
+      explanation: Literature evidence identifies the strain studied under BG-11 photoautotrophic
+        cultivation; NCBI nuccore record MG971386.1 links strain ABC-009 to the accepted
+        taxonomy Tetradesmus obliquus, but it is a partial marker sequence rather
+        than a genome assembly.
     - reference: PMID:34584038
       supports: SUPPORT
-      snippet: While the cell concentrations of the cultures grown under BG-11 and CO2
-        were largely similar to those grown in YM medium
-      explanation: Literature evidence reports cell concentrations for the BG-11
-        plus CO2 condition relative to YM medium.
+      snippet: While the cell concentrations of the cultures grown under BG-11 and
+        CO2 were largely similar to those grown in YM medium
+      explanation: Literature evidence reports cell concentrations for the BG-11 plus
+        CO2 condition relative to YM medium.
     is_max_attainment: false
