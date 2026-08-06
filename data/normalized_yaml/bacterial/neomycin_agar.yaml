@@ -39,6 +39,12 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
+- preferred_term: Neomycin
+  concentration:
+    value: '1.0'
+    unit: MG_PER_ML
+  notes: Selective agent; added aseptically to a final concentration of 1.0 mg/ml
+    per preparation step 2.
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -71,6 +77,12 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-08-06T05:34:58.042742+00:00'
+  curator: curate_selective_agent.py
+  action: ADDED_SELECTIVE_AGENT
+  notes: Added neomycin 1.0 mg/ml, recovered from the record's own preparation_steps
+    / source duplicate (#181)
+  changes: Added ingredient Neomycin (1.0 MG_PER_ML)
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_309_NEOMYCIN_AGAR.yaml
   relationship: SOURCE_DUPLICATE

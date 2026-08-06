@@ -40,6 +40,12 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
+- preferred_term: Neomycin
+  concentration:
+    value: '1.0'
+    unit: MG_PER_ML
+  notes: Selective agent; recovered from the DSMZ Medium 309 source duplicate (neomycin_agar),
+    which states 1.0 mg/ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -69,6 +75,12 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-08-06T05:34:58.048209+00:00'
+  curator: curate_selective_agent.py
+  action: ADDED_SELECTIVE_AGENT
+  notes: Added neomycin 1.0 mg/ml, recovered from the record's own preparation_steps
+    / source duplicate (#181)
+  changes: Added ingredient Neomycin (1.0 MG_PER_ML)
 parent_media:
   path: data/normalized_yaml/bacterial/neomycin_agar.yaml
   relationship: SOURCE_DUPLICATE

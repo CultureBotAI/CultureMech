@@ -145,10 +145,11 @@ def test_corpus_count_matches_the_documented_baseline(aud, corpus):
     """
     normalized = REPO_ROOT / "data" / "normalized_yaml"
     rows = aud.audit_parsed([(str(p.relative_to(normalized)), d) for p, d in corpus])
-    assert len(rows) <= 2, (
-        f"{len(rows)} records now mismatch, above the documented baseline of 2. "
-        "Either a new defect landed or the agent list grew — update both the gate "
-        "and #181.")
+    assert len(rows) == 0, (
+        f"{len(rows)} records name a listed selective agent absent from their "
+        "composition, above the baseline of 0 (the DSMZ 309 pair was repaired in "
+        "#181). A new import reintroduced the defect, or the agent list grew; add "
+        "the agent from the record's own name/preparation_steps, or file it.")
 
 
 # --- #188: the concentration must belong to ITS agent ----------------------
