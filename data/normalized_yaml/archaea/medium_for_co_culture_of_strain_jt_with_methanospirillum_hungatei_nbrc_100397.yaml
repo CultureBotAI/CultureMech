@@ -454,7 +454,10 @@ curation_history:
 - timestamp: '2026-06-08T23:19:46.921439+00:00'
   curator: chebi-regrounding-v1.0
   action: Corrected CHEBI ingredient grounding (shared-id regrounding audit, G21/G22/G24)
-  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more ingredient groundings on this record that had been collapsed onto a chemically non-specific or shared CHEBI id were re-grounded to the correct chemically-specific term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
+  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more
+    ingredient groundings on this record that had been collapsed onto a chemically
+    non-specific or shared CHEBI id were re-grounded to the correct chemically-specific
+    term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
 - timestamp: '2026-06-10T07:47:06.026168+00:00'
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
@@ -469,6 +472,13 @@ curation_history:
     Qiu 2004 (cited to Sekiguchi et al. 2000), and Qiu names the methanogen as DSM
     864 rather than NBRC 100397; treat both as evidence-backed but recipe-unverified.
     [added 2 organism(s), 0 variant(s)]'
+- timestamp: '2026-08-06T06:01:46.226804+00:00'
+  curator: coculture-community-curation-v1.0
+  action: SET_ORGANISM_CULTURE_TYPE
+  notes: 'Set community: syntrophic co-culture of Pelotomaculum sp. + Methanospirillum
+    hungatei grown together. Deferred from #142 (script does not guess community from
+    a keyword); resolved manually per #223.'
+  changes: Set organism_culture_type=community (was unset)
 solutions:
 - preferred_term: Vitamin solution*
   term:
@@ -506,6 +516,7 @@ solutions:
     unit: G_PER_L
   notes: See mediadive_30_Resazurin_solution.yaml for composition
   name: Unknown solution
+organism_culture_type: community
 target_organisms:
 - preferred_term: Pelotomaculum sp.
   term:
