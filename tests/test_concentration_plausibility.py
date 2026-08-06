@@ -284,7 +284,18 @@ def test_the_gate_baselines_match_the_current_corpus(acp, media_records):
     assert rows_baseline - len(rows) <= 200, (
         f"gate baseline {rows_baseline} is {rows_baseline - len(rows)} above the "
         "actual count — tighten it or it will never fire")
-    assert COCKTAIL_BASELINE > 0
+
+    # The COCKTAIL baseline is the sharper gate, so it needs the same anti-vacuous
+    # guard, not just `> 0` (#221): as the 579-record backlog is repaired the real
+    # count drops, and a baseline left far above it silently stops being able to
+    # fire. summarize_records re-reads only the flagged records, not the corpus.
+    summary = acp.summarize_records(rows, acp.NORMALIZED)
+    cocktails = sum(1 for s in summary if s["flattened_cocktail"] == "yes")
+    assert cocktails <= COCKTAIL_BASELINE, (
+        f"{cocktails} flattened cocktails exceeds the baseline {COCKTAIL_BASELINE}")
+    assert COCKTAIL_BASELINE - cocktails <= 50, (
+        f"cocktail baseline {COCKTAIL_BASELINE} is {COCKTAIL_BASELINE - cocktails} "
+        f"above the actual {cocktails} — tighten it or it will never fire")
 
 
 def test_the_gate_is_wired_into_ci():
