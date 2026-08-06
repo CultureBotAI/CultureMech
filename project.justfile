@@ -233,6 +233,13 @@ curate-organism-culture-type *args="":
 curate-placeholder-composition *args="":
     uv run --extra dev python scripts/curate_placeholder_composition.py {{args}}
 
+# Flag media with no ingredients and no solutions as incomplete_composition (#175),
+# so a silently-empty record is visible rather than reading as complete. Does not
+# decide the record's fate (re-import / accept / retire). Report-only without --apply.
+[group('Curation')]
+curate-flag-empty-composition *args="":
+    uv run --extra dev python scripts/curate_flag_empty_composition.py {{args}}
+
 [group('QC')]
 audit-selective-agent-mismatch *args="":
     uv run --extra dev python scripts/audit_selective_agent_mismatch.py {{args}}
