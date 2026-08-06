@@ -479,13 +479,26 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--yaml-root", type=Path, default=YAML_ROOT)
     parser.add_argument("--reports-dir", type=Path, default=REPORTS_DIR)
+    parser.add_argument("--out", type=Path, default=None,
+                        help="Write ONLY the manifest .tsv to this path and nothing "
+                             "else. Used by the derived-artifacts freshness check "
+                             "(#168): the .tsv is the one consumed output, so a check "
+                             "need not also regenerate the untracked json/groups/summary.")
     args = parser.parse_args()
 
-    args.reports_dir.mkdir(parents=True, exist_ok=True)
     units = schema_concentration_units(REPO_ROOT / "src/culturemech/schema/culturemech.yaml")
-
     paths = sorted(args.yaml_root.rglob("*.yaml"))
     rows = [summarize_record(path, units) for path in paths]
+
+    if args.out is not None:
+        args.out.parent.mkdir(parents=True, exist_ok=True)
+        with args.out.open("w", newline="") as handle:
+            writer = csv.DictWriter(handle, fieldnames=RECORD_COLUMNS, delimiter="\t")
+            writer.writeheader()
+            writer.writerows(rows)
+        return 0
+
+    args.reports_dir.mkdir(parents=True, exist_ok=True)
     groups = build_groups(rows)
 
     manifest_tsv = args.reports_dir / "media_content_review_manifest.tsv"
