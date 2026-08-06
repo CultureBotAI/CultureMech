@@ -258,6 +258,11 @@ def main(argv: list[str] | None = None) -> int:
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--normalized-dir", type=Path, default=NORMALIZED)
     ap.add_argument("--out", type=Path, default=DEFAULT_OUT)
+    ap.add_argument("--max-cocktails", type=int, default=None,
+                    help="Exit 1 if more than N records hold a FLATTENED STOCK "
+                         "COCKTAIL. The sharper gate: a raw row count drifts with "
+                         "corpus size, whereas a new cocktail is a specific defect "
+                         "shape a fresh import has reintroduced (#150).")
     ap.add_argument("--max-allowed", type=int, default=None,
                     help="Exit non-zero when flagged rows exceed this baseline. Gates "
                          "NEW defects without blocking on the existing backlog — the "
@@ -307,12 +312,18 @@ def main(argv: list[str] | None = None) -> int:
     print("\nRead-only. Repairing the trace-element case means nesting the cocktail "
           "under a stock `solution` object with an addition volume — per-record curation.")
 
+    failed = False
     if args.max_allowed is not None and len(rows) > args.max_allowed:
         print(f"\nFAIL: {len(rows)} implausible concentration rows > baseline "
               f"{args.max_allowed}. A new import or edit has introduced rows beyond the "
               f"known backlog; see the report for which records.", file=sys.stderr)
-        return 1
-    return 0
+        failed = True
+    if args.max_cocktails is not None and cocktails > args.max_cocktails:
+        print(f"\nFAIL: {cocktails} records hold a flattened stock cocktail > baseline "
+              f"{args.max_cocktails}. An import has landed a stock solution inline "
+              f"again; see `flattened_cocktail` in the by-record report.", file=sys.stderr)
+        failed = True
+    return 1 if failed else 0
 
 
 if __name__ == "__main__":
