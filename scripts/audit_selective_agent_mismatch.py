@@ -22,17 +22,21 @@ was not defective; the VIEW of it was partial, and this script reproduced the sa
 partial view before concluding the corpus was broken.
 
 `composition_terms()` therefore spans `ingredients`, `solutions`, and the nested
-`solutions[].composition`. Current baseline: **2** records, both DSMZ Medium 309
-reached via two sources. Neither has a `solutions` entry, and the local mediadive
-extraction of medium 309 lacks the neomycin too — so the gap is upstream, not in
-this import, and is not locally recoverable.
+`solutions[].composition`. Current baseline: **0** records. The last two were both
+DSMZ Medium 309 (neomycin agar); its concentration turned out to be locally
+recoverable after all — the record's own `preparation_steps` state "add neomycin to
+a final concentration of 1.0 mg/ml" — so neomycin was added as an ingredient and
+its source-duplicate matched (#181). `composition_terms()` intentionally does NOT
+scan `preparation_steps`: prose there is not a structured component, and the right
+fix is to lift the agent into `ingredients`, not to teach the audit to accept prose.
 
 ## REPORT ONLY
 
-Recovering a lost concentration needs the upstream record, and a plausible guess
-that round-trips and validates is still false chemistry (#166). Where the source
-kept a concentration in the NAME ("LB + 50 ug/ml Kanamycin medium"), it is
-surfaced in `named_conc` for a curator — surfaced, not applied.
+Recovering a lost concentration needs a value that is actually recorded — the
+record's own name or preparation steps — not a plausible guess, which even when it
+round-trips and validates is still false chemistry (#166). Where the source kept a
+concentration in the NAME ("LB + 50 ug/ml Kanamycin medium"), it is surfaced in
+`named_conc` for a curator — surfaced, not applied.
 
 ## Traps, each hit while building this
 
@@ -52,7 +56,7 @@ surfaced in `named_conc` for a curator — surfaced, not applied.
 Usage::
 
     just audit-selective-agent-mismatch
-    just audit-selective-agent-mismatch --max-allowed 2    # current baseline
+    just audit-selective-agent-mismatch --max-allowed 0    # current baseline (regression gate)
 """
 
 from __future__ import annotations
