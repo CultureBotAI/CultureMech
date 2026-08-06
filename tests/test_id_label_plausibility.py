@@ -78,12 +78,33 @@ def _classify(label: str, curie: str, **kw):
 @pytest.mark.parametrize("label,curie", [
     ("Distilled water", "CHEBI:15377"),   # shares the word "water"
     ("KH2PO4", "CHEBI:63036"),            # formula matches exactly
-    ("MnCl2 x 4 H2O", "CHEBI:86368"),     # formula matches exactly
-    ("NiCl2 x 6 H2O", "CHEBI:34887"),     # hydrate → anhydrous parent, tolerated
+    ("MnCl2 x 4 H2O", "CHEBI:86368"),     # formula matches exactly (right hydrate)
     ("H2O", "CHEBI:15377"),               # matches a synonym
 ])
 def test_curator_labels_still_pass(label, curie):
     assert _classify(label, curie) == "OK_ID_ONLY"
+
+
+@pytest.mark.parametrize("label,curie,verdict", [
+    # label has waters the term lacks — the case #242 set out to surface. The
+    # remedy is a hydrate-specific term or a cas: mint, NOT accepting it silently.
+    ("NiCl2 x 6 H2O", "CHEBI:34887", "HYDRATE_ON_ANHYDROUS_TERM"),
+    # term is a hydrate, the label is anhydrous — a DIFFERENT substance, whose
+    # remedy (the anhydrous term) is the opposite of the case above.
+    ("MnCl2", "CHEBI:86368", "ANHYDROUS_ON_HYDRATE_TERM"),
+    # both are hydrates, but of different states.
+    ("MnCl2 x 6 H2O", "CHEBI:86368", "HYDRATION_STATE_MISMATCH"),
+])
+def test_hydration_state_is_split_by_which_side_carries_water(label, curie, verdict):
+    """`compare_formulas` returns HYDRATE_RELAXED symmetrically; a single
+    "label has extra water" verdict is right only a third of the time (#242)."""
+    assert _classify(label, curie) == verdict
+
+
+def test_hydration_verdicts_are_non_blocking():
+    """All three are curation signals, never enforce failures."""
+    assert mod._HYDRATION_VERDICTS <= mod._WARN_VERDICTS
+    assert not (mod._HYDRATION_VERDICTS & mod._ERROR_VERDICTS)
 
 
 @pytest.mark.parametrize("label,curie", [
@@ -141,6 +162,33 @@ def test_default_waiver_mode_is_unchanged():
 ])
 def test_formula_comparison(label, formula, expected):
     assert chem.compare_formulas(label, formula) == expected
+
+
+@pytest.mark.parametrize("label,formula,expected", [
+    # (label_waters, term_waters). Term formula folded ("Cl2Ni") or spelled
+    # out (".4H2O") — the oxygen delta plus the label's own count recover both.
+    ("NiCl2 x 6 H2O", "Cl2Ni", (6, 0)),
+    ("MnCl2", "Cl2Mn.4H2O", (0, 4)),
+    ("MnCl2 x 6 H2O", "Cl2Mn.4H2O", (6, 4)),
+    ("MnCl2 x H2O", "Cl2Mn.4H2O", (1, 4)),          # implied monohydrate
+    # not a hydration question: exact match, and an element conflict.
+    ("MnCl2 x 4 H2O", "Cl2Mn.4H2O", None),          # MATCH, no water gap
+    ("KI", "Cl2Ni", None),                          # skeletons differ
+])
+def test_hydration_states_reads_water_on_each_side(label, formula, expected):
+    assert chem.hydration_states(label, formula) == expected
+
+
+@pytest.mark.parametrize("label,expected", [
+    ("NiCl2 x 6 H2O", 6),
+    ("CuSO4·5H2O", 5),
+    ("Na2MoO4. 2H2O", 2),
+    ("MnSO4 x H2O", 1),     # x is the separator, monohydrate
+    ("MgSO4", 0),           # anhydrous
+    ("glucose", 0),
+])
+def test_label_water_units(label, expected):
+    assert chem._label_water_units(label) == expected
 
 
 def test_roman_oxidation_state_parses():
