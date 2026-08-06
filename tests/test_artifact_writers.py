@@ -143,14 +143,10 @@ def test_the_manifest_separates_writes_from_mentions():
         "a reader is listed as a writer again (#209)")
 
 
-def test_shadowing_is_a_known_false_positive(aw):
-    """#211. Pinned as CURRENT behaviour, not as desired behaviour.
-
-    Without scope analysis a local rebinding of a module constant's name looks
-    like a write to the constant's path. No script here does this today. If a fix
-    lands, this test should flip to expecting "no" — it exists so the hole is
-    visible rather than forgotten.
-    """
+def test_a_shadowed_constant_is_not_a_write(aw):
+    """#211 fixed. A function that rebinds a module constant's name to a different
+    path and writes there is NOT writing the constant's artifact — per-scope
+    analysis with document-order shadowing catches it."""
     src = '''
 from pathlib import Path
 OUT = Path("data/report.tsv")
@@ -158,4 +154,33 @@ def unrelated():
     OUT = Path("/tmp/other.tsv")
     OUT.write_text("x")
 '''
+    assert aw.writes_artifact(src, "report.tsv") == "no"
+
+
+def test_a_write_before_the_shadow_still_counts(aw):
+    """Document order matters: a genuine write to the module constant, followed
+    later by a local rebinding, is still a write. The shadow only guards writes
+    after it, in its own scope."""
+    src = '''
+from pathlib import Path
+OUT = Path("data/report.tsv")
+def writer():
+    OUT.write_text("real")
+
+def unrelated():
+    OUT = Path("/tmp/other.tsv")
+    OUT.write_text("x")
+'''
     assert aw.writes_artifact(src, "report.tsv") == "yes"
+
+
+def test_a_parameter_can_shadow_an_inherited_binding(aw):
+    """A parameter reusing a constant's name, defaulting to something else, shadows
+    the module binding inside that function."""
+    src = '''
+from pathlib import Path
+OUT = Path("data/report.tsv")
+def helper(OUT=None):
+    OUT.write_text("x")
+'''
+    assert aw.writes_artifact(src, "report.tsv") == "no"
