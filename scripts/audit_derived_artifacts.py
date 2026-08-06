@@ -87,6 +87,11 @@ CHECKABLE: dict[str, list[str]] = {
         ["scripts/triage_missing_compositions.py"],
     "data/import_tracking/reports/unparsed_compositions.tsv":
         ["scripts/report_unparsed_compositions.py"],
+    # The one CONSUMED output of the content-review writer (read by
+    # propose_media_variant_links); its json/groups/summary siblings had no reader
+    # and were untracked (#168). --out writes just this .tsv, so the check is pure.
+    "reports/media_content_review_manifest.tsv":
+        ["scripts/build_media_content_review_manifest.py"],
 }
 
 

@@ -162,3 +162,10 @@ cache/
 # behind the corpus while the gate stayed green, because the gate compares against
 # --max-allowed rather than against the file.
 reports/chebi_consistency.tsv
+
+# Regenerable content-review outputs with no reader; only the .tsv is consumed (#168).
+# Regenerate with `just review-media-content`.
+reports/media_content_review_manifest.json
+reports/media_content_review_manifest_summary.md
+reports/media_variation_candidate_groups.tsv
+reports/media_variation_candidate_groups.json
