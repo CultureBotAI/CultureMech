@@ -12,12 +12,7 @@ media_term:
     id: mediadive.medium:P8
     label: M9-SNG medium
 notes: 'Source: public'
-ingredients:
-- preferred_term: See source for composition
-  concentration:
-    value: variable
-    unit: G_PER_L
-  notes: Full composition available at source database
+ingredients: []
 applications:
 - Microbial cultivation
 references:
@@ -39,5 +34,11 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "M9-SNG medium" to "m9_sng_medium" for consistent matching
+- timestamp: '2026-08-06T07:56:36.111580+00:00'
+  curator: curate_placeholder_composition.py
+  action: REMOVED_PLACEHOLDER_INGREDIENT
+  notes: Removed the 'See source for composition' placeholder ingredient; the record
+    carries no imported composition and is flagged incomplete (#175).
+  changes: Dropped placeholder ingredient 'See source for composition'
 data_quality_flags:
 - incomplete_composition

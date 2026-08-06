@@ -11,12 +11,7 @@ media_term:
     id: mediadive.medium:44
     label: RHODOCYCLUS PURPUREUS MEDIUM
 notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium44.pdf'
-ingredients:
-- preferred_term: See source for composition
-  concentration:
-    value: variable
-    unit: G_PER_L
-  notes: Full composition available at source database
+ingredients: []
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -41,5 +36,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "RHODOCYCLUS PURPUREUS MEDIUM" to "rhodocyclus_purpureus_medium"
     for consistent matching
+- timestamp: '2026-08-06T07:56:36.131067+00:00'
+  curator: curate_placeholder_composition.py
+  action: REMOVED_PLACEHOLDER_INGREDIENT
+  notes: Removed the 'See source for composition' placeholder ingredient; the record
+    carries no imported composition and is flagged incomplete (#175).
+  changes: Dropped placeholder ingredient 'See source for composition'
 data_quality_flags:
 - incomplete_composition
