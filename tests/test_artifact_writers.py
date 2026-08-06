@@ -103,6 +103,33 @@ def load():
     assert aw.writes_artifact(src, "reg.tsv") == "no"
 
 
+def test_a_write_inside_control_flow_is_detected(aw):
+    """Per-scope analysis must still descend into if/for/while/try within a scope —
+    the write is rarely at the top of the function body."""
+    src = '''
+from pathlib import Path
+OUT = Path("data/report.tsv")
+def main(items):
+    for x in items:
+        if x:
+            OUT.write_text(str(x))
+'''
+    assert aw.writes_artifact(src, "report.tsv") == "yes"
+
+
+def test_a_write_in_a_method_is_detected(aw):
+    """A class body is a scope and its methods are nested scopes; a module binding
+    must still reach a write in a method."""
+    src = '''
+from pathlib import Path
+OUT = Path("data/report.tsv")
+class Writer:
+    def run(self):
+        OUT.write_text("x")
+'''
+    assert aw.writes_artifact(src, "report.tsv") == "yes"
+
+
 def test_unparseable_source_is_unknown_not_a_guess(aw):
     """A wrong "yes" is worse than an honest "unknown" — the point is to stop
     asserting things that are not established."""
