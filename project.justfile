@@ -263,6 +263,14 @@ fetch-mediadive-volumes *args="":
 # stock by name AND value, so a bulk salt sharing a name (NaCl 39.97 vs the stock's
 # 10) is never moved. Refuses a record whose flagged rows do not all match rather
 # than half-repairing it. Report-only without --apply; needs fetch-mediadive-volumes.
+# Check every corpus medium id against the MediaDive catalogue by NAME (#244).
+# Established that the corpus's own mediadive.medium ids are sound (3,325/3,325) and
+# that the KOMODO->DSMZ mapping is what misleads (~72% land on another medium), so a
+# komodo id must never be used as a MediaDive id without a name check. Read-only.
+[group('QC')]
+audit-mediadive-ids *args="":
+    uv run --extra dev python scripts/audit_mediadive_ids.py {{args}}
+
 [group('Curation')]
 apply-cocktail-nesting *args="":
     uv run --extra dev python scripts/apply_cocktail_nesting.py {{args}}
