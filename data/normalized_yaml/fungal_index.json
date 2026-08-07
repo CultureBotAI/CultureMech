@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-06T22:51:48.312919+00:00",
+  "generated": "2026-08-07T07:15:56.757425+00:00",
   "category": "fungal",
   "count": 126,
   "recipes": {
@@ -771,10 +771,11 @@
     "CultureMech:010466": {
       "name": "oat_flakes_agar_with_yeast_extract",
       "filename": "oat_flakes_agar_with_yeast_extract.yaml",
-      "ingredient_count": 6,
+      "ingredient_count": 3,
       "id": "CultureMech:010466",
       "source_id": "mediadive.medium:248",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "fungal"
       ]

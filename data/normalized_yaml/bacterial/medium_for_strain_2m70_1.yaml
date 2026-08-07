@@ -123,36 +123,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:64734
     label: Na2-EDTA
-- preferred_term: MnSO4 x H2O
-  term:
-    id: CHEBI:86364
-    label: MnSO4 x H2O
-  concentration:
-    value: '3.26'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86364
-    label: MnSO4 x H2O
-- preferred_term: CoCl2 x 6 H2O
-  term:
-    id: CHEBI:35696
-    label: CoCl2 x 6 H2O
-  concentration:
-    value: '1.8'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:35696
-    label: CoCl2 x 6 H2O
-- preferred_term: ZnSO4 x 7 H2O
-  term:
-    id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
 - preferred_term: NiSO4 x 6 H2O
   term:
     id: CHEBI:53001
@@ -371,3 +341,48 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-07T07:05:22.545597+00:00'
+  curator: apply_cocktail_nesting.py
+  action: NESTED_FLATTENED_COCKTAIL
+  notes: 'Moved 3 stock-strength component(s) out of ingredients into 1 solution(s):
+    3 -> ''Trace Element Solution'' @ 1 ml/l. Each moved component matched the MediaDive
+    stock by name AND value; bulk ingredients sharing a name were left in place (#150).'
+  changes: Nested 3 ingredient(s) under 1 solution(s); ingredients 32 -> 29
+solutions:
+- preferred_term: Trace Element Solution
+  composition:
+  - preferred_term: MnSO4 x H2O
+    term:
+      id: CHEBI:86364
+      label: MnSO4 x H2O
+    concentration:
+      value: '3.26'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86364
+      label: MnSO4 x H2O
+  - preferred_term: CoCl2 x 6 H2O
+    term:
+      id: CHEBI:35696
+      label: CoCl2 x 6 H2O
+    concentration:
+      value: '1.8'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:35696
+      label: CoCl2 x 6 H2O
+  - preferred_term: ZnSO4 x 7 H2O
+    term:
+      id: CHEBI:32312
+      label: ZnSO4 x 7 H2O
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: ZnSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  preparation_notes: Stock prepared in 1000 ml; added at 1 ml per litre of medium.
+    Composition and volume from MediaDive (#150).

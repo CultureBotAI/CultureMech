@@ -138,16 +138,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:17883
     label: HCl
-- preferred_term: FeCl2 x 4 H2O
-  term:
-    id: CHEBI:86249
-    label: FeCl2 x 4 H2O
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86249
-    label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -248,16 +238,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:63939
     label: Na2WO4 x 2 H2O
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17439
-    label: Vitamin B12
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -278,16 +258,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
     label: D-(+)-biotin
-- preferred_term: Nicotinic acid
-  term:
-    id: CHEBI:15940
-    label: Nicotinic acid
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15940
-    label: Nicotinic acid
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -298,26 +268,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:31345
     label: Calcium pantothenate
-- preferred_term: Pyridoxine hydrochloride
-  term:
-    id: CHEBI:30961
-    label: Pyridoxine hydrochloride
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:30961
-    label: Pyridoxine hydrochloride
-- preferred_term: Thiamine-HCl x 2 H2O
-  term:
-    id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -372,11 +322,22 @@ curation_history:
 - timestamp: '2026-06-08T23:19:47.655993+00:00'
   curator: chebi-regrounding-v1.0
   action: Corrected CHEBI ingredient grounding (shared-id regrounding audit, G21/G22/G24)
-  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more ingredient groundings on this record that had been collapsed onto a chemically non-specific or shared CHEBI id were re-grounded to the correct chemically-specific term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
+  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more
+    ingredient groundings on this record that had been collapsed onto a chemically
+    non-specific or shared CHEBI id were re-grounded to the correct chemically-specific
+    term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
 - timestamp: '2026-06-10T07:47:06.730910+00:00'
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-07T07:05:21.442222+00:00'
+  curator: apply_cocktail_nesting.py
+  action: NESTED_FLATTENED_COCKTAIL
+  notes: 'Moved 5 stock-strength component(s) out of ingredients into 2 solution(s):
+    1 -> ''Trace element solution SL-10'' @ 1 ml/l; 4 -> ''Seven vitamins solution''
+    @ 1 ml/l. Each moved component matched the MediaDive stock by name AND value;
+    bulk ingredients sharing a name were left in place (#150).'
+  changes: Nested 5 ingredient(s) under 2 solution(s); ingredients 32 -> 27
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_734_METHANOBREVIBACTER_CURVATUS_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -386,3 +347,68 @@ variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
 - Same ingredient and concentration signature; review as possible duplicate source
   record.
+solutions:
+- preferred_term: Trace element solution SL-10
+  composition:
+  - preferred_term: FeCl2 x 4 H2O
+    term:
+      id: CHEBI:86249
+      label: FeCl2 x 4 H2O
+    concentration:
+      value: '1.5'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86249
+      label: FeCl2 x 4 H2O
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  preparation_notes: Stock prepared in 1000 ml; added at 1 ml per litre of medium.
+    Composition and volume from MediaDive (#150).
+- preferred_term: Seven vitamins solution
+  composition:
+  - preferred_term: Vitamin B12
+    term:
+      id: CHEBI:17439
+      label: Vitamin B12
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17439
+      label: Vitamin B12
+  - preferred_term: Nicotinic acid
+    term:
+      id: CHEBI:15940
+      label: Nicotinic acid
+    concentration:
+      value: '0.2'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15940
+      label: Nicotinic acid
+  - preferred_term: Pyridoxine hydrochloride
+    term:
+      id: CHEBI:30961
+      label: Pyridoxine hydrochloride
+    concentration:
+      value: '0.3'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30961
+      label: Pyridoxine hydrochloride
+  - preferred_term: Thiamine-HCl x 2 H2O
+    term:
+      id: CHEBI:132751
+      label: Thiamine-HCl x 2 H2O
+    concentration:
+      value: '0.2'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:132751
+      label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  preparation_notes: Stock prepared in 1000 ml; added at 1 ml per litre of medium.
+    Composition and volume from MediaDive (#150).

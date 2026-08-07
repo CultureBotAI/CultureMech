@@ -188,17 +188,18 @@ def test_stock_solution_records_are_excluded(corpus_findings):
         assert not is_solution_record(doc), f"solution record flagged: {file_path}"
 
 
-CONCENTRATION_BACKLOG_BASELINE = 11_540
+CONCENTRATION_BACKLOG_BASELINE = 10_913
 # The sharper baseline (#150): a raw row count drifts with corpus size, whereas a
 # new flattened cocktail is a specific defect shape an import has reintroduced.
-COCKTAIL_BASELINE = 579
+COCKTAIL_BASELINE = 444
 
 
 def test_implausible_row_count_does_not_exceed_the_known_backlog(corpus_findings):
     """Gate NEW implausible concentrations without blocking on the backlog (#150).
 
-    #135 shipped the audit; the repair never happened, so 11,540 rows across
-    3,914 records are known-bad today. A guard demanding zero would fail
+    #135 shipped the audit; the repair is now partly done — #150 nested 135
+    flattened cocktails from MediaDive data, taking the backlog from 11,540 rows
+    across 3,914 records to 10,913 across 3,782. A guard demanding zero would fail
     immediately and be switched off — the #129 lesson about wiring a gate to a red
     suite. So this baselines at the current count, exactly as
     `check-chebi-grounding --max-allowed 101` does for grounding.
@@ -272,7 +273,7 @@ def test_the_gate_baselines_match_the_current_corpus(acp, media_records):
     """#118 asked for an audit AND a repair; #135 shipped the audit, and nothing
     stopped the defect being reintroduced for another 15 issues.
 
-    These baselines hold the line while the 3,914-record backlog is worked
+    These baselines hold the line while the 3,782-record backlog is worked
     through. They must track the corpus: a baseline above the real count is a gate
     that cannot fail.
     """
@@ -286,7 +287,7 @@ def test_the_gate_baselines_match_the_current_corpus(acp, media_records):
         "actual count — tighten it or it will never fire")
 
     # The COCKTAIL baseline is the sharper gate, so it needs the same anti-vacuous
-    # guard, not just `> 0` (#221): as the 579-record backlog is repaired the real
+    # guard, not just `> 0` (#221): as the cocktail backlog is repaired the real
     # count drops, and a baseline left far above it silently stops being able to
     # fire. Counted in memory from `rows` + the fixture docs — calling
     # summarize_records re-reads the flagged files and blew the slow-test budget on
