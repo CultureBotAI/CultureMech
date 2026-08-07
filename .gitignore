@@ -186,3 +186,6 @@ data/import_tracking/reports/cocktail_nesting_proposals.json
 # MediaDive stock-solution volume cache for the #150 cocktail repair: a fetched
 # diagnostic, regenerable with `just fetch-mediadive-volumes`.
 data/import_tracking/reports/mediadive_solution_volumes.json
+
+# MediaDive id audit report: a regenerable diagnostic (#244), needs the live API.
+data/import_tracking/reports/mediadive_id_audit.tsv
