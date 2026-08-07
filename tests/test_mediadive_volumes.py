@@ -113,3 +113,36 @@ def test_mediadive_id_accepts_only_mediadive_numeric_ids(fsv):
     assert fsv.mediadive_id({"media_term": {"term": {"id": "komodo.medium:3136"}}}) is None
     assert fsv.mediadive_id({"media_term": {"term": {"id": "mediadive.medium:J390"}}}) is None
     assert fsv.mediadive_id({}) is None
+
+
+# --- KOMODO id resolution and the name guard (#150 second pass) --------------
+
+
+def test_komodo_id_resolves_through_the_dsmz_mapping(fsv):
+    """A komodo.medium id is not a MediaDive id, but DSMZ medium numbers are, and the
+    tracked KOMODO export maps between them. Without the map the id must stay
+    unresolved rather than be used directly (the #239 error)."""
+    doc = {"media_term": {"term": {"id": "komodo.medium:1083"}}}
+    assert fsv.mediadive_id(doc) is None                       # no map: refuse
+    assert fsv.mediadive_id(doc, {"1083": "1083"}) == "1083"   # mapped: resolve
+    assert fsv.mediadive_id(doc, {"1083": "J77"}) is None      # non-numeric DSMZ: refuse
+
+
+def test_names_agree_accepts_the_same_medium(fsv):
+    med = {"medium": {"name": "BACTO MARINE BROTH (DIFCO 2216)"}}
+    assert fsv.names_agree({"original_name": "Bacto Marine Broth"}, med)
+    assert fsv.names_agree({"name": "bacto_marine_broth_difco_2216"}, med)
+
+
+def test_names_agree_rejects_a_different_medium(fsv):
+    """THE guard that matters. MediaDive renumbered relative to the KOMODO snapshot,
+    so a resolved id often lands on an unrelated medium — KOMODO 294 "Pelobacter
+    acidigallici" resolves to MediaDive 294 "Syntrophus HQGo1". Importing that
+    medium's stocks would be silent corruption; 165 such cases were caught."""
+    med = {"medium": {"name": "SYNTROPHUS HQGo1 MEDIUM"}}
+    assert not fsv.names_agree({"original_name": "PELOBACTER ACIDIGALLICI MEDIUM"}, med)
+
+
+def test_names_agree_is_false_without_a_name(fsv):
+    assert not fsv.names_agree({"original_name": "X"}, {"medium": {}})
+    assert not fsv.names_agree({}, {"medium": {"name": "X"}})

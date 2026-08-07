@@ -59,36 +59,6 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: boric acid
-  concentration:
-    value: '2.85'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:33118
-    label: H3BO3
-- preferred_term: MnCl2 x 4 H2O
-  term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
-  concentration:
-    value: '1.8'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
-- preferred_term: FeSO4
-  term:
-    id: CHEBI:75832
-    label: FeSO4
-  concentration:
-    value: '1.36'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:75832
-    label: FeSO4
 - preferred_term: Na-tartrate
   term:
     id: CHEBI:63017
@@ -173,6 +143,13 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-07T20:44:33.517097+00:00'
+  curator: apply_cocktail_nesting.py
+  action: NESTED_FLATTENED_COCKTAIL
+  notes: 'Moved 3 stock-strength component(s) out of ingredients into 1 solution(s):
+    3 -> ''Trace elements'' @ 1 ml/l. Each moved component matched the MediaDive stock
+    by name AND value; bulk ingredients sharing a name were left in place (#150).'
+  changes: Nested 3 ingredient(s) under 1 solution(s); ingredients 15 -> 12
 parent_media:
   path: data/normalized_yaml/bacterial/DSMZ_668_FLEXIBACTER_MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
@@ -184,3 +161,41 @@ variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
 - Same ingredient and concentration signature; KOMODO record copied from the matching
   DSMZ medium source.
+solutions:
+- preferred_term: Trace elements
+  composition:
+  - preferred_term: H3BO3
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    concentration:
+      value: '2.85'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: H3BO3
+  - preferred_term: MnCl2 x 4 H2O
+    term:
+      id: CHEBI:86368
+      label: MnCl2 x 4 H2O
+    concentration:
+      value: '1.8'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: MnCl2 x 4 H2O
+  - preferred_term: FeSO4
+    term:
+      id: CHEBI:75832
+      label: FeSO4
+    concentration:
+      value: '1.36'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75832
+      label: FeSO4
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  preparation_notes: Stock prepared in 1000 ml; added at 1 ml per litre of medium.
+    Composition and volume from MediaDive (#150).
