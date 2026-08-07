@@ -249,6 +249,15 @@ curate-flag-empty-composition *args="":
 propose-cocktail-nesting *args="":
     uv run --extra dev python scripts/propose_cocktail_nesting.py {{args}}
 
+# Fetch authoritative stock-solution ADDITION volumes from MediaDive for the
+# flattened cocktails (#150). MediaDive states the volume as a structured
+# solution reference ("Wolfe's mineral elixir, 1 ml"), so it is read rather than
+# guessed from prose — 180 of 186 resolvable records get a real volume this way.
+# Read-only; run before `propose-cocktail-nesting` so the worklist carries them.
+[group('QC')]
+fetch-mediadive-volumes *args="":
+    uv run --extra dev python scripts/fetch_mediadive_solution_volumes.py {{args}}
+
 [group('QC')]
 audit-selective-agent-mismatch *args="":
     uv run --extra dev python scripts/audit_selective_agent_mismatch.py {{args}}
