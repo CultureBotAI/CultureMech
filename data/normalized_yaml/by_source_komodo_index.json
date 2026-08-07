@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-06T22:51:52.016931+00:00",
+  "generated": "2026-08-07T05:28:18.842233+00:00",
   "source": "KOMODO",
   "count": 3637,
   "recipes": {
@@ -6108,7 +6108,7 @@
     "CultureMech:004984": {
       "name": "fastidious_anaerobe_agar",
       "filename": "KOMODO_3136_Fastidious_Anaerobe_Agar.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 3,
       "id": "CultureMech:004984",
       "source_id": "komodo.medium:3136",
       "source": "KOMODO",
