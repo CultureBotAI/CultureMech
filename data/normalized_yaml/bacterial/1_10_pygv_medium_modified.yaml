@@ -57,16 +57,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:8806
     label: Resazurin
-- preferred_term: Biotin
-  term:
-    id: CHEBI:15956
-    label: Biotin
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15956
-    label: Biotin
 - preferred_term: Cobalamine
   term:
     id: CHEBI:30411
@@ -77,56 +67,6 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000754
     label: Cobalamine
-- preferred_term: Thiamine-HCl x 2 H2O
-  term:
-    id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
-- preferred_term: p-Aminobenzoic acid
-  term:
-    id: CHEBI:30753
-    label: p-Aminobenzoic acid
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:30753
-    label: p-Aminobenzoic acid
-- preferred_term: Pyridoxine
-  term:
-    id: CHEBI:16709
-    label: Pyridoxine
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:16709
-    label: Pyridoxine
-- preferred_term: Riboflavin
-  term:
-    id: CHEBI:17015
-    label: Riboflavin
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17015
-    label: Riboflavin
-- preferred_term: Folic acid
-  term:
-    id: CHEBI:27470
-    label: Folic acid
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:27470
-    label: Folic acid
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -234,6 +174,13 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-07T07:05:21.499935+00:00'
+  curator: apply_cocktail_nesting.py
+  action: NESTED_FLATTENED_COCKTAIL
+  notes: 'Moved 6 stock-strength component(s) out of ingredients into 1 solution(s):
+    6 -> ''100x Vitamin solution'' @ 10 ml/l. Each moved component matched the MediaDive
+    stock by name AND value; bulk ingredients sharing a name were left in place (#150).'
+  changes: Nested 6 ingredient(s) under 1 solution(s); ingredients 18 -> 12
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1398_1_10_PYGV_medium_modified.yaml
   relationship: SOURCE_DUPLICATE
@@ -241,3 +188,71 @@ variant_children:
   name: 1_10_pygv_medium_modified
   notes: KOMODO record is an exact source duplicate of DSMZ Medium 1398; local ingredient
     and concentration signatures match.
+solutions:
+- preferred_term: 100x Vitamin solution
+  composition:
+  - preferred_term: Biotin
+    term:
+      id: CHEBI:15956
+      label: Biotin
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: Biotin
+  - preferred_term: Thiamine-HCl x 2 H2O
+    term:
+      id: CHEBI:132751
+      label: Thiamine-HCl x 2 H2O
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:132751
+      label: Thiamine-HCl x 2 H2O
+  - preferred_term: p-Aminobenzoic acid
+    term:
+      id: CHEBI:30753
+      label: p-Aminobenzoic acid
+    concentration:
+      value: '0.3'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30753
+      label: p-Aminobenzoic acid
+  - preferred_term: Pyridoxine
+    term:
+      id: CHEBI:16709
+      label: Pyridoxine
+    concentration:
+      value: '1.5'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16709
+      label: Pyridoxine
+  - preferred_term: Riboflavin
+    term:
+      id: CHEBI:17015
+      label: Riboflavin
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17015
+      label: Riboflavin
+  - preferred_term: Folic acid
+    term:
+      id: CHEBI:27470
+      label: Folic acid
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:27470
+      label: Folic acid
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+  preparation_notes: Stock prepared in 1000 ml; added at 10 ml per litre of medium.
+    Composition and volume from MediaDive (#150).

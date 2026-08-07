@@ -84,16 +84,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
-- preferred_term: MnSO4 x H2O
-  term:
-    id: CHEBI:86364
-    label: MnSO4 x H2O
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86364
-    label: MnSO4 x H2O
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -104,26 +94,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: NaCl
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-- preferred_term: CoCl2 x 6 H2O
-  term:
-    id: CHEBI:35696
-    label: CoCl2 x 6 H2O
-  concentration:
-    value: '1.8'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:35696
-    label: CoCl2 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -134,16 +104,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
-- preferred_term: ZnSO4 x 7 H2O
-  term:
-    id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
-  concentration:
-    value: '1.8'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
@@ -234,16 +194,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:27470
     label: Folic acid
-- preferred_term: Pyridoxine hydrochloride
-  term:
-    id: CHEBI:30961
-    label: Pyridoxine hydrochloride
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:30961
-    label: Pyridoxine hydrochloride
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -369,3 +319,76 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-07T07:05:22.401311+00:00'
+  curator: apply_cocktail_nesting.py
+  action: NESTED_FLATTENED_COCKTAIL
+  notes: 'Moved 5 stock-strength component(s) out of ingredients into 2 solution(s):
+    4 -> "Wolfe''s mineral elixir" @ 1 ml/l; 1 -> "Wolin''s vitamin solution (10x)"
+    @ 1 ml/l. Each moved component matched the MediaDive stock by name AND value;
+    bulk ingredients sharing a name were left in place (#150).'
+  changes: Nested 5 ingredient(s) under 2 solution(s); ingredients 32 -> 27
+solutions:
+- preferred_term: Wolfe's mineral elixir
+  composition:
+  - preferred_term: MnSO4 x H2O
+    term:
+      id: CHEBI:86364
+      label: MnSO4 x H2O
+    concentration:
+      value: '5'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86364
+      label: MnSO4 x H2O
+  - preferred_term: FeSO4 x 7 H2O
+    term:
+      id: CHEBI:75836
+      label: FeSO4 x 7 H2O
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: FeSO4 x 7 H2O
+  - preferred_term: CoCl2 x 6 H2O
+    term:
+      id: CHEBI:35696
+      label: CoCl2 x 6 H2O
+    concentration:
+      value: '1.8'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:35696
+      label: CoCl2 x 6 H2O
+  - preferred_term: ZnSO4 x 7 H2O
+    term:
+      id: CHEBI:32312
+      label: ZnSO4 x 7 H2O
+    concentration:
+      value: '1.8'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: ZnSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  preparation_notes: Stock prepared in 1000 ml; added at 1 ml per litre of medium.
+    Composition and volume from MediaDive (#150).
+- preferred_term: Wolin's vitamin solution (10x)
+  composition:
+  - preferred_term: Pyridoxine hydrochloride
+    term:
+      id: CHEBI:30961
+      label: Pyridoxine hydrochloride
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30961
+      label: Pyridoxine hydrochloride
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  preparation_notes: Stock prepared in 1000 ml; added at 1 ml per litre of medium.
+    Composition and volume from MediaDive (#150).

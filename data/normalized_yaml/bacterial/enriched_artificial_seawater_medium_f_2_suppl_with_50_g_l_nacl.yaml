@@ -57,26 +57,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:64734
     label: Na2-EDTA x 2 H2O
-- preferred_term: FeCl3 x 6 H2O
-  term:
-    id: CHEBI:86254
-    label: FeCl3 x 6 H2O
-  concentration:
-    value: '3.15'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86254
-    label: FeCl3 x 6 H2O
-- preferred_term: MnCl2 x 4 H2O
-  term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
-  concentration:
-    value: '45'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -87,16 +67,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:32312
     label: ZnSO4 x 7 H2O
-- preferred_term: CoCl2 x 6 H2O
-  term:
-    id: CHEBI:35696
-    label: CoCl2 x 6 H2O
-  concentration:
-    value: '1.7'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:35696
-    label: CoCl2 x 6 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
@@ -117,16 +87,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:75213
     label: Na2 MoO4 x 2 H2O
-- preferred_term: Thiamine HCl
-  term:
-    id: CHEBI:49105
-    label: Thiamine HCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:49105
-    label: Thiamine HCl
 - preferred_term: D-Biotin
   term:
     id: CHEBI:15956
@@ -137,16 +97,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
     label: D-Biotin
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17439
-    label: Vitamin B12
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -188,3 +138,76 @@ curation_history:
   notes: 'Replaced 12 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-08-07T07:05:22.197477+00:00'
+  curator: apply_cocktail_nesting.py
+  action: NESTED_FLATTENED_COCKTAIL
+  notes: 'Moved 5 stock-strength component(s) out of ingredients into 2 solution(s):
+    3 -> ''f/2 Trace Metal Mix'' @ 1 ml/l; 2 -> ''Vitamin 3 Mix'' @ 1 ml/l. Each moved
+    component matched the MediaDive stock by name AND value; bulk ingredients sharing
+    a name were left in place (#150).'
+  changes: Nested 5 ingredient(s) under 2 solution(s); ingredients 14 -> 9
+solutions:
+- preferred_term: f/2 Trace Metal Mix
+  composition:
+  - preferred_term: FeCl3 x 6 H2O
+    term:
+      id: CHEBI:86254
+      label: FeCl3 x 6 H2O
+    concentration:
+      value: '3.15'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86254
+      label: FeCl3 x 6 H2O
+  - preferred_term: MnCl2 x 4 H2O
+    term:
+      id: CHEBI:86368
+      label: MnCl2 x 4 H2O
+    concentration:
+      value: '45'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: MnCl2 x 4 H2O
+  - preferred_term: CoCl2 x 6 H2O
+    term:
+      id: CHEBI:35696
+      label: CoCl2 x 6 H2O
+    concentration:
+      value: '1.7'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:35696
+      label: CoCl2 x 6 H2O
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  preparation_notes: Stock prepared in 1000 ml; added at 1 ml per litre of medium.
+    Composition and volume from MediaDive (#150).
+- preferred_term: Vitamin 3 Mix
+  composition:
+  - preferred_term: Thiamine HCl
+    term:
+      id: CHEBI:49105
+      label: Thiamine HCl
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49105
+      label: Thiamine HCl
+  - preferred_term: Vitamin B12
+    term:
+      id: CHEBI:17439
+      label: Vitamin B12
+    concentration:
+      value: '0.25'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17439
+      label: Vitamin B12
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  preparation_notes: Stock prepared in 100 ml; added at 1 ml per litre of medium.
+    Composition and volume from MediaDive (#150).

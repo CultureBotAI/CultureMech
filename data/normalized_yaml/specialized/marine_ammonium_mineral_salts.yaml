@@ -113,16 +113,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:17883
     label: HCl
-- preferred_term: FeCl2 x 4 H2O
-  term:
-    id: CHEBI:86249
-    label: FeCl2 x 4 H2O
-  concentration:
-    value: '1.49254'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86249
-    label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -203,16 +193,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
     label: Biotin
-- preferred_term: Nicotinic acid
-  term:
-    id: CHEBI:15940
-    label: Nicotinic acid
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15940
-    label: Nicotinic acid
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -223,16 +203,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:31345
     label: Calcium pantothenate
-- preferred_term: Pyridoxine hydrochloride
-  term:
-    id: CHEBI:30961
-    label: Pyridoxine hydrochloride
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:30961
-    label: Pyridoxine hydrochloride
 - preferred_term: Lipoic acid
   term:
     id: CHEBI:16494
@@ -253,36 +223,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:27470
     label: Folic acid
-- preferred_term: Cyanocobalamin
-  term:
-    id: CHEBI:17439
-    label: Cyanocobalamin
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17439
-    label: Cyanocobalamin
-- preferred_term: Thiamine
-  term:
-    id: CHEBI:26948
-    label: Thiamine
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000898
-    label: Thiamine
-- preferred_term: Riboflavin
-  term:
-    id: CHEBI:17015
-    label: Riboflavin
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17015
-    label: Riboflavin
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -328,3 +268,86 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-07T07:05:23.513767+00:00'
+  curator: apply_cocktail_nesting.py
+  action: NESTED_FLATTENED_COCKTAIL
+  notes: 'Moved 6 stock-strength component(s) out of ingredients into 2 solution(s):
+    5 -> ''Vitamin Solution V10'' @ 1 ml/l; 1 -> ''Trace element solution SL10'' @
+    1 ml/l. Each moved component matched the MediaDive stock by name AND value; bulk
+    ingredients sharing a name were left in place (#150).'
+  changes: Nested 6 ingredient(s) under 2 solution(s); ingredients 27 -> 21
+solutions:
+- preferred_term: Vitamin Solution V10
+  composition:
+  - preferred_term: Nicotinic acid
+    term:
+      id: CHEBI:15940
+      label: Nicotinic acid
+    concentration:
+      value: '0.2'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15940
+      label: Nicotinic acid
+  - preferred_term: Pyridoxine hydrochloride
+    term:
+      id: CHEBI:30961
+      label: Pyridoxine hydrochloride
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30961
+      label: Pyridoxine hydrochloride
+  - preferred_term: Cyanocobalamin
+    term:
+      id: CHEBI:17439
+      label: Cyanocobalamin
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17439
+      label: Cyanocobalamin
+  - preferred_term: Thiamine
+    term:
+      id: CHEBI:26948
+      label: Thiamine
+    concentration:
+      value: '0.2'
+      unit: G_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000898
+      label: Thiamine
+  - preferred_term: Riboflavin
+    term:
+      id: CHEBI:17015
+      label: Riboflavin
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17015
+      label: Riboflavin
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  preparation_notes: Stock prepared in 1000 ml; added at 1 ml per litre of medium.
+    Composition and volume from MediaDive (#150).
+- preferred_term: Trace element solution SL10
+  composition:
+  - preferred_term: FeCl2 x 4 H2O
+    term:
+      id: CHEBI:86249
+      label: FeCl2 x 4 H2O
+    concentration:
+      value: '1.49254'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86249
+      label: FeCl2 x 4 H2O
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  preparation_notes: Stock prepared in 1005 ml; added at 1 ml per litre of medium.
+    Composition and volume from MediaDive (#150).

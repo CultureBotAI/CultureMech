@@ -103,36 +103,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
-- preferred_term: Thiamine HCl
-  term:
-    id: CHEBI:49105
-    label: Thiamine HCl
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:49105
-    label: Thiamine HCl
-- preferred_term: Nicotinic acid
-  term:
-    id: CHEBI:15940
-    label: Nicotinic acid
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15940
-    label: Nicotinic acid
-- preferred_term: Pyridoxine hydrochloride
-  term:
-    id: CHEBI:30961
-    label: Pyridoxine hydrochloride
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:30961
-    label: Pyridoxine hydrochloride
 - preferred_term: Citric acid
   term:
     id: CHEBI:30769
@@ -173,26 +143,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:31440
     label: CuSO4 x 5 H2O
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: boric acid
-  concentration:
-    value: '28.6'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:33118
-    label: H3BO3
-- preferred_term: MnCl2 x 4 H2O
-  term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
-  concentration:
-    value: '18.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -203,16 +153,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
-- preferred_term: ZnSO4 x 7 H2O
-  term:
-    id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
-  concentration:
-    value: '2.2'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -251,3 +191,86 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-07T07:05:22.675733+00:00'
+  curator: apply_cocktail_nesting.py
+  action: NESTED_FLATTENED_COCKTAIL
+  notes: 'Moved 6 stock-strength component(s) out of ingredients into 2 solution(s):
+    3 -> ''Vitamine solution'' @ 1 ml/l; 3 -> ''Trace element solution'' @ 0.1 ml/l.
+    Each moved component matched the MediaDive stock by name AND value; bulk ingredients
+    sharing a name were left in place (#150).'
+  changes: Nested 6 ingredient(s) under 2 solution(s); ingredients 20 -> 14
+solutions:
+- preferred_term: Vitamine solution
+  composition:
+  - preferred_term: Thiamine HCl
+    term:
+      id: CHEBI:49105
+      label: Thiamine HCl
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49105
+      label: Thiamine HCl
+  - preferred_term: Nicotinic acid
+    term:
+      id: CHEBI:15940
+      label: Nicotinic acid
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15940
+      label: Nicotinic acid
+  - preferred_term: Pyridoxine hydrochloride
+    term:
+      id: CHEBI:30961
+      label: Pyridoxine hydrochloride
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30961
+      label: Pyridoxine hydrochloride
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  preparation_notes: Stock prepared in 100 ml; added at 1 ml per litre of medium.
+    Composition and volume from MediaDive (#150).
+- preferred_term: Trace element solution
+  composition:
+  - preferred_term: H3BO3
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    concentration:
+      value: '28.6'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: H3BO3
+  - preferred_term: MnCl2 x 4 H2O
+    term:
+      id: CHEBI:86368
+      label: MnCl2 x 4 H2O
+    concentration:
+      value: '18.1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: MnCl2 x 4 H2O
+  - preferred_term: ZnSO4 x 7 H2O
+    term:
+      id: CHEBI:32312
+      label: ZnSO4 x 7 H2O
+    concentration:
+      value: '2.2'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: ML_PER_L
+  preparation_notes: Stock prepared in 100 ml; added at 0.1 ml per litre of medium.
+    Composition and volume from MediaDive (#150).

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-06T22:50:03.851163+00:00",
+  "generated": "2026-08-07T07:14:20.878095+00:00",
   "category": "archaea",
   "count": 743,
   "recipes": {
@@ -4359,10 +4359,11 @@
     "CultureMech:000518": {
       "name": "aciduliprofundum_medium",
       "filename": "aciduliprofundum_medium.yaml",
-      "ingredient_count": 25,
+      "ingredient_count": 21,
       "id": "CultureMech:000518",
       "source_id": "mediadive.medium:1083",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "archaea"
       ],
@@ -4462,10 +4463,11 @@
     "CultureMech:000529": {
       "name": "archaeoglobus_infectus_medium",
       "filename": "archaeoglobus_infectus_medium.yaml",
-      "ingredient_count": 31,
+      "ingredient_count": 23,
       "id": "CultureMech:000529",
       "source_id": "mediadive.medium:1098",
       "source": "MediaDive",
+      "solution_count": 2,
       "categories": [
         "archaea"
       ],
@@ -4542,10 +4544,11 @@
     "CultureMech:001940": {
       "name": "archaeoglobus_veneficus_medium",
       "filename": "archaeoglobus_veneficus_medium.yaml",
-      "ingredient_count": 23,
+      "ingredient_count": 19,
       "id": "CultureMech:001940",
       "source_id": "mediadive.medium:796",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "archaea"
       ]
@@ -4931,10 +4934,11 @@
     "CultureMech:001716": {
       "name": "halobacterium_lacusprofundii_medium",
       "filename": "halobacterium_lacusprofundii_medium.yaml",
-      "ingredient_count": 12,
+      "ingredient_count": 9,
       "id": "CultureMech:001716",
       "source_id": "mediadive.medium:589",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "archaea"
       ]
@@ -5828,10 +5832,11 @@
     "CultureMech:001870": {
       "name": "methanobrevibacter_curvatus_medium",
       "filename": "methanobrevibacter_curvatus_medium.yaml",
-      "ingredient_count": 33,
+      "ingredient_count": 28,
       "id": "CultureMech:001870",
       "source_id": "mediadive.medium:734",
       "source": "MediaDive",
+      "solution_count": 2,
       "categories": [
         "archaea"
       ]
@@ -5839,10 +5844,11 @@
     "CultureMech:001871": {
       "name": "methanobrevibacter_cuticularis_medium",
       "filename": "methanobrevibacter_cuticularis_medium.yaml",
-      "ingredient_count": 32,
+      "ingredient_count": 27,
       "id": "CultureMech:001871",
       "source_id": "mediadive.medium:734a",
       "source": "MediaDive",
+      "solution_count": 2,
       "categories": [
         "archaea"
       ]
@@ -7388,10 +7394,11 @@
     "CultureMech:000994": {
       "name": "modified_methanobacterium_medium",
       "filename": "modified_methanobacterium_medium.yaml",
-      "ingredient_count": 35,
+      "ingredient_count": 30,
       "id": "CultureMech:000994",
       "source_id": "mediadive.medium:1523",
       "source": "MediaDive",
+      "solution_count": 2,
       "categories": [
         "archaea"
       ]
@@ -7941,10 +7948,11 @@
     "CultureMech:001932": {
       "name": "pyrolobus_fumarii_medium",
       "filename": "pyrolobus_fumarii_medium.yaml",
-      "ingredient_count": 31,
+      "ingredient_count": 23,
       "id": "CultureMech:001932",
       "source_id": "mediadive.medium:792",
       "source": "MediaDive",
+      "solution_count": 2,
       "categories": [
         "archaea"
       ],

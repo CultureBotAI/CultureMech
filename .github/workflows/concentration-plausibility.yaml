@@ -4,7 +4,8 @@ name: concentration-plausibility
 #
 # #118 asked for an audit AND a corpus repair; #135 shipped the audit only, and
 # nothing has since stopped the defect being reintroduced. The corpus backlog
-# (3,914 records, 579 flattened cocktails) is NOT fixed by this workflow — the
+# (3,782 records, 444 flattened cocktails after the #150 nesting pass) is NOT
+# fixed by this workflow — the
 # baselines hold the line while it is worked through, per the --max-allowed
 # convention already used by check-chebi-grounding.
 #

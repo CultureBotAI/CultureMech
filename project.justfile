@@ -258,6 +258,15 @@ propose-cocktail-nesting *args="":
 fetch-mediadive-volumes *args="":
     uv run --extra dev python scripts/fetch_mediadive_solution_volumes.py {{args}}
 
+# Nest flattened stock cocktails under their solution, using the MediaDive stock
+# composition + addition volume (#150). Moves an ingredient ONLY when it matches the
+# stock by name AND value, so a bulk salt sharing a name (NaCl 39.97 vs the stock's
+# 10) is never moved. Refuses a record whose flagged rows do not all match rather
+# than half-repairing it. Report-only without --apply; needs fetch-mediadive-volumes.
+[group('Curation')]
+apply-cocktail-nesting *args="":
+    uv run --extra dev python scripts/apply_cocktail_nesting.py {{args}}
+
 [group('QC')]
 audit-selective-agent-mismatch *args="":
     uv run --extra dev python scripts/audit_selective_agent_mismatch.py {{args}}
@@ -265,7 +274,7 @@ audit-selective-agent-mismatch *args="":
 [group('QC')]
 audit-concentration-plausibility *args="":
     uv run --extra dev python scripts/audit_concentration_plausibility.py \
-        --max-allowed 11540 --max-cocktails 579 {{args}}
+        --max-allowed 10913 --max-cocktails 444 {{args}}
 
 # Merge locally-completed Edison runs (research/media/*-meta.yaml, gitignored)
 # into the tracked researched-media manifest. This is the only step that reads

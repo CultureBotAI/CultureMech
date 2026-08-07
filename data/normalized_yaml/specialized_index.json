@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-06T22:51:48.819112+00:00",
+  "generated": "2026-08-07T07:15:57.265416+00:00",
   "category": "specialized",
   "count": 455,
   "recipes": {
@@ -323,10 +323,11 @@
     "CultureMech:015355": {
       "name": "anaerobic_freshwater_fwm_medium",
       "filename": "anaerobic_freshwater_fwm_medium.yaml",
-      "ingredient_count": 29,
+      "ingredient_count": 24,
       "id": "CultureMech:015355",
       "source_id": "mediadive.medium:503",
       "source": "MediaDive",
+      "solution_count": 2,
       "categories": [
         "specialized"
       ]
@@ -356,10 +357,11 @@
     "CultureMech:015356": {
       "name": "anaerobic_seawater_swm_medium",
       "filename": "anaerobic_seawater_swm_medium.yaml",
-      "ingredient_count": 29,
+      "ingredient_count": 24,
       "id": "CultureMech:015356",
       "source_id": "mediadive.medium:504",
       "source": "MediaDive",
+      "solution_count": 2,
       "categories": [
         "specialized"
       ]
@@ -1422,14 +1424,14 @@
     "CultureMech:015337": {
       "name": "marine_ammonium_mineral_salts",
       "filename": "marine_ammonium_mineral_salts.yaml",
-      "ingredient_count": 27,
+      "ingredient_count": 21,
       "id": "CultureMech:015337",
       "source_id": "mediadive.medium:1313",
       "source": "MediaDive",
+      "solution_count": 2,
       "categories": [
         "specialized"
-      ],
-      "has_hierarchy_enrichment": true
+      ]
     },
     "CultureMech:015376": {
       "name": "marine_aob_medium_a",

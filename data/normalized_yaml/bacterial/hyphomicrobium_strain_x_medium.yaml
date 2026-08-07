@@ -83,16 +83,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:64734
     label: Na2-EDTA
-- preferred_term: ZnSO4 x 7 H2O
-  term:
-    id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
-  concentration:
-    value: '22'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -103,26 +93,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
-- preferred_term: MnCl2 x 4 H2O
-  term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
-  concentration:
-    value: '5.06'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
 - preferred_term: (NH4)6Mo7O24 x 4 H2O
   concentration:
     value: '1.1'
@@ -130,26 +100,6 @@ ingredients:
   term:
     id: CHEBI:91249
     label: ammonium molybdate
-- preferred_term: CuSO4 x 5 H2O
-  term:
-    id: CHEBI:31440
-    label: CuSO4 x 5 H2O
-  concentration:
-    value: '1.57'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31440
-    label: CuSO4 x 5 H2O
-- preferred_term: CoCl2 x 6 H2O
-  term:
-    id: CHEBI:35696
-    label: CoCl2 x 6 H2O
-  concentration:
-    value: '1.61'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:35696
-    label: CoCl2 x 6 H2O
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -189,6 +139,14 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-07T07:05:22.352720+00:00'
+  curator: apply_cocktail_nesting.py
+  action: NESTED_FLATTENED_COCKTAIL
+  notes: 'Moved 5 stock-strength component(s) out of ingredients into 1 solution(s):
+    5 -> ''Trace element solution (Vishniac & Santer, 1957)'' @ 0.2 ml/l. Each moved
+    component matched the MediaDive stock by name AND value; bulk ingredients sharing
+    a name were left in place (#150).'
+  changes: Nested 5 ingredient(s) under 1 solution(s); ingredients 14 -> 9
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_166_HYPHOMICROBIUM_STRAIN_X_MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
@@ -209,3 +167,61 @@ variant_modifications:
 - Reviewed Hyphomicrobium/strain X pair; child shares the methylamine agar and trace-element
   formulation but changes phosphate/ammonium/methylamine and raises the trace-element
   stock concentrations, with pH 7.2 recorded in the child.
+solutions:
+- preferred_term: Trace element solution (Vishniac & Santer, 1957)
+  composition:
+  - preferred_term: ZnSO4 x 7 H2O
+    term:
+      id: CHEBI:32312
+      label: ZnSO4 x 7 H2O
+    concentration:
+      value: '22'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: ZnSO4 x 7 H2O
+  - preferred_term: MnCl2 x 4 H2O
+    term:
+      id: CHEBI:86368
+      label: MnCl2 x 4 H2O
+    concentration:
+      value: '5.06'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: MnCl2 x 4 H2O
+  - preferred_term: FeSO4 x 7 H2O
+    term:
+      id: CHEBI:75836
+      label: FeSO4 x 7 H2O
+    concentration:
+      value: '5'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: FeSO4 x 7 H2O
+  - preferred_term: CuSO4 x 5 H2O
+    term:
+      id: CHEBI:31440
+      label: CuSO4 x 5 H2O
+    concentration:
+      value: '1.57'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31440
+      label: CuSO4 x 5 H2O
+  - preferred_term: CoCl2 x 6 H2O
+    term:
+      id: CHEBI:35696
+      label: CoCl2 x 6 H2O
+    concentration:
+      value: '1.61'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:35696
+      label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: ML_PER_L
+  preparation_notes: Stock prepared in 1000 ml; added at 0.2 ml per litre of medium.
+    Composition and volume from MediaDive (#150).
