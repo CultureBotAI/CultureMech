@@ -14,8 +14,18 @@ media_term:
     id: komodo.medium:3136
     label: Fastidious Anaerobe Agar
 notes: 'Source: KOMODO ModelSEED | ID: 3136 | DSMZ Medium: 3136 (mediadive.medium:3136)
-  | Aerobic: No | SubMedium: Yes'
-ingredients: []
+  | Aerobic: No | SubMedium: Yes | MediaDive medium: 1203 (resolved; the ''3136''
+  above is the KOMODO id)'
+ingredients:
+- preferred_term: Horse blood
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Fastidious Anaerobe Agar
+  concentration:
+    value: '45.7'
+    unit: G_PER_L
+- preferred_term: Deionized water
 applications:
 - Microbial cultivation
 curation_history:
@@ -42,5 +52,12 @@ curation_history:
   notes: Media record has no ingredients and no solutions — no usable composition;
     flagged so the gap is not silent (#175).
   changes: 'Added data_quality_flags: incomplete_composition'
-data_quality_flags:
-- incomplete_composition
+- timestamp: '2026-08-07T05:25:54.947087+00:00'
+  curator: mediadive-composition-backfill-v1.0
+  action: BACKFILLED_COMPOSITION
+  notes: Backfilled 3 components from MediaDive medium 1203 (/rest/medium-composition/1203).
+    The record carried only the KOMODO id 3136; MediaDive 1203 is the same medium
+    — identical name and identical pH range 7.0-7.4. Cleared incomplete_composition
+    (#239).
+  changes: Added 3 ingredients from MediaDive 1203; removed incomplete_composition
+    flag
