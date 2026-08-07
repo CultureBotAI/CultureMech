@@ -188,10 +188,10 @@ def test_stock_solution_records_are_excluded(corpus_findings):
         assert not is_solution_record(doc), f"solution record flagged: {file_path}"
 
 
-CONCENTRATION_BACKLOG_BASELINE = 10_614
+CONCENTRATION_BACKLOG_BASELINE = 10_521
 # The sharper baseline (#150): a raw row count drifts with corpus size, whereas a
 # new flattened cocktail is a specific defect shape an import has reintroduced.
-COCKTAIL_BASELINE = 375
+COCKTAIL_BASELINE = 359
 
 
 def test_implausible_row_count_does_not_exceed_the_known_backlog(corpus_findings):
@@ -199,7 +199,7 @@ def test_implausible_row_count_does_not_exceed_the_known_backlog(corpus_findings
 
     #135 shipped the audit; the repair is now partly done — #150 nested 135
     flattened cocktails from MediaDive data, taking the backlog from 11,540 rows
-    across 3,914 records to 10,614 across 3,716. A guard demanding zero would fail
+    across 3,914 records to 10,521 across 3,700. A guard demanding zero would fail
     immediately and be switched off — the #129 lesson about wiring a gate to a red
     suite. So this baselines at the current count, exactly as
     `check-chebi-grounding --max-allowed 101` does for grounding.
@@ -273,7 +273,7 @@ def test_the_gate_baselines_match_the_current_corpus(acp, media_records):
     """#118 asked for an audit AND a repair; #135 shipped the audit, and nothing
     stopped the defect being reintroduced for another 15 issues.
 
-    These baselines hold the line while the 3,716-record backlog is worked
+    These baselines hold the line while the 3,700-record backlog is worked
     through. They must track the corpus: a baseline above the real count is a gate
     that cannot fail.
     """

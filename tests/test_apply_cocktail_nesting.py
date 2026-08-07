@@ -131,3 +131,64 @@ def test_an_ingredient_is_never_claimed_by_two_stocks(acn):
           "stock_prepared_in_ml": 1000}],
         {"mnso4 x h2o"})
     assert len(plan["groups"]) == 1 and plan["moved_total"] == 1
+
+
+# --- splitting values the flattening SUMMED across two stocks (#150) ---------
+
+
+VIT_A = [{"compound": "Pyridoxine hydrochloride", "g_l": 0.1},
+         {"compound": "Nicotinic acid", "g_l": 0.05}]
+VIT_B = [{"compound": "Pyridoxine hydrochloride", "g_l": 0.3},
+         {"compound": "Nicotinic acid", "g_l": 0.2}]
+
+
+def _two_vitamin_stocks():
+    return [{"stock_components": VIT_A, "solution_name": "Wolin's", "addition_volume_ml": 1,
+             "stock_prepared_in_ml": 1000},
+            {"stock_components": VIT_B, "solution_name": "Seven vitamins",
+             "addition_volume_ml": 1, "stock_prepared_in_ml": 1000}]
+
+
+def test_find_summed_recognises_an_exact_two_stock_sum(acn):
+    """pyridoxine 0.4 = Wolin's 0.1 + Seven vitamins 0.3."""
+    ings = [_ing("Pyridoxine hydrochloride", "0.4")]
+    got = acn.find_summed(ings, _two_vitamin_stocks(), ["pyridoxine hydrochloride"])
+    assert got == {"pyridoxine hydrochloride": [("Wolin's", 0.1), ("Seven vitamins", 0.3)]}
+
+
+def test_find_summed_refuses_a_value_that_does_not_reconcile(acn):
+    """Silence beats a guessed decomposition: 0.35 is not 0.1 + 0.3."""
+    ings = [_ing("Pyridoxine hydrochloride", "0.35")]
+    assert acn.find_summed(ings, _two_vitamin_stocks(), ["pyridoxine hydrochloride"]) == {}
+
+
+def test_split_is_opt_in(acn):
+    """Without --split-summed the record is refused, not silently reconstructed."""
+    doc = {"ingredients": [_ing("Pyridoxine hydrochloride", "0.4")]}
+    plan = acn.plan_record(Path("x.yaml"), doc, _two_vitamin_stocks(),
+                           {"pyridoxine hydrochloride"}, split_summed=False)
+    assert plan is None or plan["unmatched"] == ["pyridoxine hydrochloride"]
+
+
+def test_a_stock_contributing_only_summed_rows_still_gets_its_solution(acn):
+    """The bug the canary caught. Both stocks' components were merged into one
+    ingredient, so neither had a direct name+value match. Creating a group only for
+    directly-matched stocks dropped one stock's share entirely — the record would
+    silently lose Wolin's contribution."""
+    doc = {"ingredients": [_ing("Pyridoxine hydrochloride", "0.4"),
+                           _ing("Nicotinic acid", "0.25")]}
+    plan = acn.plan_record(Path("x.yaml"), doc, _two_vitamin_stocks(),
+                           {"pyridoxine hydrochloride", "nicotinic acid"}, split_summed=True)
+    acn.apply_plan(doc, plan)
+    names = [s["preferred_term"] for s in doc["solutions"]]
+    assert set(names) == {"Wolin's", "Seven vitamins"}, names
+
+    # mass conservation: each component's parts must re-sum to the flattened value
+    totals: dict[str, float] = {}
+    for s in doc["solutions"]:
+        for c in s["composition"]:
+            totals[c["preferred_term"]] = totals.get(c["preferred_term"], 0.0) + float(
+                c["concentration"]["value"])
+    assert abs(totals["Pyridoxine hydrochloride"] - 0.4) < 1e-9
+    assert abs(totals["Nicotinic acid"] - 0.25) < 1e-9
+    assert doc["ingredients"] == []
