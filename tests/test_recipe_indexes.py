@@ -126,7 +126,7 @@ def test_index_entries_match_freshly_extracted_metadata(corpus):
     never reached the index.
     """
     gen = _generator()
-    by_path = {path: doc for path, doc in corpus}
+    by_path = dict(corpus)
 
     stale: list[str] = []
     for index_path in CATEGORY_INDEXES:
