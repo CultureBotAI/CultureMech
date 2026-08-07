@@ -98,16 +98,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:113451
     label: Na-ascorbate
-- preferred_term: FeCl2 x 4 H2O
-  term:
-    id: CHEBI:86249
-    label: FeCl2 x 4 H2O
-  concentration:
-    value: '1.8'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86249
-    label: FeCl2 x 4 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -188,46 +178,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:131361
     label: Na2SeO3 x 5 H2O
-- preferred_term: Biotin
-  term:
-    id: CHEBI:15956
-    label: Biotin
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15956
-    label: Biotin
-- preferred_term: Nicotinic acid amide
-  term:
-    id: CHEBI:17154
-    label: Nicotinic acid amide
-  concentration:
-    value: '0.35'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17154
-    label: Nicotinic acid amide
-- preferred_term: Thiamine-HCl x 2 H2O
-  term:
-    id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
-- preferred_term: p-Aminobenzoic acid
-  term:
-    id: CHEBI:30753
-    label: p-Aminobenzoic acid
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:30753
-    label: p-Aminobenzoic acid
 - preferred_term: Pyridoxal hydrochloride
   term:
     id: CHEBI:131529
@@ -302,6 +252,14 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-07T20:44:33.360003+00:00'
+  curator: apply_cocktail_nesting.py
+  action: NESTED_FLATTENED_COCKTAIL
+  notes: 'Moved 5 stock-strength component(s) out of ingredients into 2 solution(s):
+    1 -> ''Trace element solution (SLA)'' @ 1 ml/l; 4 -> ''Vitamin solution (VA)''
+    @ 1 ml/l. Each moved component matched the MediaDive stock by name AND value;
+    bulk ingredients sharing a name were left in place (#150).'
+  changes: Nested 5 ingredient(s) under 2 solution(s); ingredients 26 -> 21
 parent_media:
   path: data/normalized_yaml/bacterial/rhodobacter_adriaticus_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -314,3 +272,68 @@ variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
 - KOMODO record is an exact source duplicate of DSMZ Medium 351; local ingredient
   and concentration signatures match.
+solutions:
+- preferred_term: Trace element solution (SLA)
+  composition:
+  - preferred_term: FeCl2 x 4 H2O
+    term:
+      id: CHEBI:86249
+      label: FeCl2 x 4 H2O
+    concentration:
+      value: '1.8'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86249
+      label: FeCl2 x 4 H2O
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  preparation_notes: Stock prepared in 1000 ml; added at 1 ml per litre of medium.
+    Composition and volume from MediaDive (#150).
+- preferred_term: Vitamin solution (VA)
+  composition:
+  - preferred_term: Biotin
+    term:
+      id: CHEBI:15956
+      label: Biotin
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: Biotin
+  - preferred_term: Nicotinic acid amide
+    term:
+      id: CHEBI:17154
+      label: Nicotinic acid amide
+    concentration:
+      value: '0.35'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17154
+      label: Nicotinic acid amide
+  - preferred_term: Thiamine-HCl x 2 H2O
+    term:
+      id: CHEBI:132751
+      label: Thiamine-HCl x 2 H2O
+    concentration:
+      value: '0.3'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:132751
+      label: Thiamine-HCl x 2 H2O
+  - preferred_term: p-Aminobenzoic acid
+    term:
+      id: CHEBI:30753
+      label: p-Aminobenzoic acid
+    concentration:
+      value: '0.2'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30753
+      label: p-Aminobenzoic acid
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  preparation_notes: Stock prepared in 100 ml; added at 1 ml per litre of medium.
+    Composition and volume from MediaDive (#150).

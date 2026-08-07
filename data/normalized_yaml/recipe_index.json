@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-07T07:16:00.349800+00:00",
+  "generated": "2026-08-07T20:49:10.633960+00:00",
   "description": "Master index of all CultureMech recipes",
   "total_recipes": 15877,
   "categories": {
@@ -3227,10 +3227,11 @@
     "CultureMech:003735": {
       "name": "aciduliprofundum_medium",
       "filename": "KOMODO_1083_ACIDULIPROFUNDUM_medium.yaml",
-      "ingredient_count": 25,
+      "ingredient_count": 21,
       "id": "CultureMech:003735",
       "source_id": "komodo.medium:1083",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "archaea"
       ],
@@ -3883,10 +3884,11 @@
     "CultureMech:006068": {
       "name": "halobacterium_lacusprofundii_medium",
       "filename": "KOMODO_589_HALOBACTERIUM_LACUSPROFUNDII_medium.yaml",
-      "ingredient_count": 12,
+      "ingredient_count": 9,
       "id": "CultureMech:006068",
       "source_id": "komodo.medium:589",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "archaea"
       ],
@@ -3957,10 +3959,11 @@
     "CultureMech:006381": {
       "name": "methanobrevibacter_curvatus_medium",
       "filename": "KOMODO_734_METHANOBREVIBACTER_CURVATUS_medium.yaml",
-      "ingredient_count": 32,
+      "ingredient_count": 27,
       "id": "CultureMech:006381",
       "source_id": "komodo.medium:734",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "archaea"
       ],
@@ -3994,10 +3997,11 @@
     "CultureMech:006501": {
       "name": "pyrolobus_fumarii_medium",
       "filename": "KOMODO_792_PYROLOBUS_FUMARII_MEDIUM.yaml",
-      "ingredient_count": 23,
+      "ingredient_count": 19,
       "id": "CultureMech:006501",
       "source_id": "komodo.medium:792",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "archaea"
       ],
@@ -16590,10 +16594,11 @@
     "CultureMech:003543": {
       "name": "smithella_medium",
       "filename": "KOMODO_1030_SMITHELLA_medium.yaml",
-      "ingredient_count": 35,
+      "ingredient_count": 30,
       "id": "CultureMech:003543",
       "source_id": "komodo.medium:1030",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -16615,10 +16620,11 @@
     "CultureMech:003545": {
       "name": "medium_for_methylobacterium_podarium",
       "filename": "KOMODO_1032_MEDIUM_FOR_METHYLOBACTERIUM_PODARIUM.yaml",
-      "ingredient_count": 14,
+      "ingredient_count": 11,
       "id": "CultureMech:003545",
       "source_id": "komodo.medium:1032",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -16934,10 +16940,11 @@
     "CultureMech:003645": {
       "name": "desulfitobacterium_pce_ii_medium",
       "filename": "KOMODO_1062_DESULFITOBACTERIUM_PCE_II_medium.yaml",
-      "ingredient_count": 31,
+      "ingredient_count": 27,
       "id": "CultureMech:003645",
       "source_id": "komodo.medium:1062",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -16946,10 +16953,11 @@
     "CultureMech:003646": {
       "name": "microcella_alkaliphila_medium",
       "filename": "KOMODO_1063_MICROCELLA_ALKALIPHILA_medium.yaml",
-      "ingredient_count": 31,
+      "ingredient_count": 26,
       "id": "CultureMech:003646",
       "source_id": "komodo.medium:1063",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -17151,10 +17159,11 @@
     "CultureMech:003743": {
       "name": "thermosulfidibacter_medium",
       "filename": "KOMODO_1092_THERMOSULFIDIBACTER_medium.yaml",
-      "ingredient_count": 30,
+      "ingredient_count": 25,
       "id": "CultureMech:003743",
       "source_id": "komodo.medium:1092",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -17901,10 +17910,11 @@
     "CultureMech:003878": {
       "name": "spirochaeta_americana_medium",
       "filename": "KOMODO_1165_SPIROCHAETA_AMERICANA_medium.yaml",
-      "ingredient_count": 32,
+      "ingredient_count": 28,
       "id": "CultureMech:003878",
       "source_id": "komodo.medium:1165",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -18157,10 +18167,11 @@
     "CultureMech:003928": {
       "name": "eggc",
       "filename": "KOMODO_1191_EGGC.yaml",
-      "ingredient_count": 21,
+      "ingredient_count": 17,
       "id": "CultureMech:003928",
       "source_id": "komodo.medium:1191",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -18656,10 +18667,11 @@
     "CultureMech:003998": {
       "name": "starch_mineral_salt_agar_10_nacl",
       "filename": "KOMODO_1240_STARCH-MINERAL_SALT-AGAR_10_NACL.yaml",
-      "ingredient_count": 10,
+      "ingredient_count": 7,
       "id": "CultureMech:003998",
       "source_id": "komodo.medium:1240",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -19280,10 +19292,11 @@
     "CultureMech:004095": {
       "name": "algoriphagus_aquaeductus_medium",
       "filename": "KOMODO_1332_ALGORIPHAGUS_AQUAEDUCTUS_medium.yaml",
-      "ingredient_count": 22,
+      "ingredient_count": 17,
       "id": "CultureMech:004095",
       "source_id": "komodo.medium:1332",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -19402,10 +19415,11 @@
     "CultureMech:004110": {
       "name": "mineral_lactate_medium_low_carbon_content",
       "filename": "KOMODO_137_MINERAL_LACTATE_MEDIUM_low_carbon_content.yaml",
-      "ingredient_count": 14,
+      "ingredient_count": 9,
       "id": "CultureMech:004110",
       "source_id": "komodo.medium:137",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -19438,10 +19452,11 @@
     "CultureMech:004115": {
       "name": "1_10_pygv_medium_modified",
       "filename": "KOMODO_1398_1_10_PYGV_medium_modified.yaml",
-      "ingredient_count": 18,
+      "ingredient_count": 12,
       "id": "CultureMech:004115",
       "source_id": "komodo.medium:1398",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -19512,10 +19527,11 @@
     "CultureMech:004155": {
       "name": "thiomicrospira_pelophila_medium",
       "filename": "KOMODO_142_THIOMICROSPIRA_PELOPHILA_MEDIUM.yaml",
-      "ingredient_count": 22,
+      "ingredient_count": 13,
       "id": "CultureMech:004155",
       "source_id": "komodo.medium:142",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -19669,10 +19685,11 @@
     "CultureMech:004193": {
       "name": "hyphomicrobium_strain_x_medium",
       "filename": "KOMODO_166_HYPHOMICROBIUM_STRAIN_X_MEDIUM.yaml",
-      "ingredient_count": 14,
+      "ingredient_count": 9,
       "id": "CultureMech:004193",
       "source_id": "komodo.medium:166",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -19939,10 +19956,11 @@
     "CultureMech:004403": {
       "name": "synthrophomonas_medium",
       "filename": "KOMODO_212_SYNTHROPHOMONAS_medium.yaml",
-      "ingredient_count": 49,
+      "ingredient_count": 44,
       "id": "CultureMech:004403",
       "source_id": "komodo.medium:212",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -19952,10 +19970,11 @@
     "CultureMech:004405": {
       "name": "synthrophomonas_medium_sulfate_free",
       "filename": "KOMODO_213_SYNTHROPHOMONAS_medium_-SULFATE_FREE.yaml",
-      "ingredient_count": 27,
+      "ingredient_count": 22,
       "id": "CultureMech:004405",
       "source_id": "komodo.medium:213",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -20313,10 +20332,11 @@
     "CultureMech:004654": {
       "name": "starch_mineral_salt_agar_stms",
       "filename": "KOMODO_252_STARCH_-_MINERAL_salt_-_AGAR_STMS.yaml",
-      "ingredient_count": 10,
+      "ingredient_count": 7,
       "id": "CultureMech:004654",
       "source_id": "komodo.medium:252",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -20325,10 +20345,11 @@
     "CultureMech:004655": {
       "name": "medium_for_ectothiorhodospira",
       "filename": "KOMODO_253_medium_FOR_ECTOTHIORHODOSPIRA.yaml",
-      "ingredient_count": 27,
+      "ingredient_count": 23,
       "id": "CultureMech:004655",
       "source_id": "komodo.medium:253",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -20969,10 +20990,11 @@
     "CultureMech:005030": {
       "name": "eubacterium_oxidoreducens_medium",
       "filename": "KOMODO_335_EUBACTERIUM_OXIDOREDUCENS_medium.yaml",
-      "ingredient_count": 27,
+      "ingredient_count": 22,
       "id": "CultureMech:005030",
       "source_id": "komodo.medium:335",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -20981,10 +21003,11 @@
     "CultureMech:005034": {
       "name": "syntrophococcus_sucromutans_medium",
       "filename": "KOMODO_337_SYNTROPHOCOCCUS_SUCROMUTANS_medium.yaml",
-      "ingredient_count": 28,
+      "ingredient_count": 23,
       "id": "CultureMech:005034",
       "source_id": "komodo.medium:337",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -21044,10 +21067,11 @@
     "CultureMech:005060": {
       "name": "syntrophomonas_zehnderi_medium",
       "filename": "KOMODO_347a_SYNTROPHOMONAS_ZEHNDERI_medium.yaml",
-      "ingredient_count": 28,
+      "ingredient_count": 23,
       "id": "CultureMech:005060",
       "source_id": "komodo.medium:347a",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -21081,10 +21105,11 @@
     "CultureMech:005067": {
       "name": "rhodobacter_adriaticus_medium",
       "filename": "KOMODO_351_RHODOBACTER_ADRIATICUS_MEDIUM.yaml",
-      "ingredient_count": 26,
+      "ingredient_count": 21,
       "id": "CultureMech:005067",
       "source_id": "komodo.medium:351",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -21445,10 +21470,11 @@
     "CultureMech:005184": {
       "name": "ferulate_medium",
       "filename": "KOMODO_397_FERULATE_medium.yaml",
-      "ingredient_count": 30,
+      "ingredient_count": 25,
       "id": "CultureMech:005184",
       "source_id": "komodo.medium:397",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -21664,10 +21690,11 @@
     "CultureMech:005254": {
       "name": "heterotrophic_medium_h3p",
       "filename": "KOMODO_428_HETEROTROPHIC_medium_H3P.yaml",
-      "ingredient_count": 31,
+      "ingredient_count": 27,
       "id": "CultureMech:005254",
       "source_id": "komodo.medium:428",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -21738,10 +21765,11 @@
     "CultureMech:005278": {
       "name": "ectothiorhodospira_abdelmalekii_medium",
       "filename": "KOMODO_430_ECTOTHIORHODOSPIRA_ABDELMALEKII_MEDIUM.yaml",
-      "ingredient_count": 27,
+      "ingredient_count": 22,
       "id": "CultureMech:005278",
       "source_id": "komodo.medium:430",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -21750,10 +21778,11 @@
     "CultureMech:005279": {
       "name": "ectothiorhodospira_vacuolata_medium",
       "filename": "KOMODO_431_ECTOTHIORHODOSPIRA_VACUOLATA_MEDIUM.yaml",
-      "ingredient_count": 26,
+      "ingredient_count": 21,
       "id": "CultureMech:005279",
       "source_id": "komodo.medium:431",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -21847,10 +21876,11 @@
     "CultureMech:005288": {
       "name": "diazotrophic_medium_rba",
       "filename": "KOMODO_441_DIAZOTROPHIC_medium_RBA.yaml",
-      "ingredient_count": 30,
+      "ingredient_count": 26,
       "id": "CultureMech:005288",
       "source_id": "komodo.medium:441",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -22824,10 +22854,11 @@
     "CultureMech:005991": {
       "name": "isp_medium_4",
       "filename": "KOMODO_547_ISP_medium_4.yaml",
-      "ingredient_count": 10,
+      "ingredient_count": 7,
       "id": "CultureMech:005991",
       "source_id": "komodo.medium:547",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -23127,10 +23158,11 @@
     "CultureMech:006074": {
       "name": "thermomicrobium_roseum_medium",
       "filename": "KOMODO_592_THERMOMICROBIUM_ROSEUM_medium.yaml",
-      "ingredient_count": 14,
+      "ingredient_count": 11,
       "id": "CultureMech:006074",
       "source_id": "komodo.medium:592",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -23163,10 +23195,11 @@
     "CultureMech:006077": {
       "name": "blastococcus_aggregatus_medium",
       "filename": "KOMODO_596_BLASTOCOCCUS_AGGREGATUS_MEDIUM.yaml",
-      "ingredient_count": 14,
+      "ingredient_count": 11,
       "id": "CultureMech:006077",
       "source_id": "komodo.medium:596",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -23636,10 +23669,11 @@
     "CultureMech:006196": {
       "name": "desulfuromonas_succinoxidans_medium",
       "filename": "KOMODO_649_DESULFUROMONAS_SUCCINOXIDANS_MEDIUM.yaml",
-      "ingredient_count": 27,
+      "ingredient_count": 22,
       "id": "CultureMech:006196",
       "source_id": "komodo.medium:649",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -23816,10 +23850,11 @@
     "CultureMech:006257": {
       "name": "flexibacter_medium",
       "filename": "KOMODO_668_FLEXIBACTER_medium.yaml",
-      "ingredient_count": 15,
+      "ingredient_count": 12,
       "id": "CultureMech:006257",
       "source_id": "komodo.medium:668",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -24264,10 +24299,11 @@
     "CultureMech:006370": {
       "name": "desulfobacca_medium",
       "filename": "KOMODO_728_DESULFOBACCA_MEDIUM.yaml",
-      "ingredient_count": 30,
+      "ingredient_count": 25,
       "id": "CultureMech:006370",
       "source_id": "komodo.medium:728",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -25108,10 +25144,11 @@
     "CultureMech:006545": {
       "name": "mineral_medium_for_chemolithotrophic_growth_h_3",
       "filename": "KOMODO_81_MINERAL_MEDIUM_FOR_CHEMOLITHOTROPHIC_GROWTH_H-3.yaml",
-      "ingredient_count": 23,
+      "ingredient_count": 19,
       "id": "CultureMech:006545",
       "source_id": "komodo.medium:81",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -25156,10 +25193,11 @@
     "CultureMech:006559": {
       "name": "nevskia_medium",
       "filename": "KOMODO_828_NEVSKIA_MEDIUM.yaml",
-      "ingredient_count": 22,
+      "ingredient_count": 17,
       "id": "CultureMech:006559",
       "source_id": "komodo.medium:828",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -25168,10 +25206,11 @@
     "CultureMech:006564": {
       "name": "desulfurobacterium_medium",
       "filename": "KOMODO_829_DESULFUROBACTERIUM_MEDIUM.yaml",
-      "ingredient_count": 37,
+      "ingredient_count": 32,
       "id": "CultureMech:006564",
       "source_id": "komodo.medium:829",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -25315,10 +25354,11 @@
     "CultureMech:006644": {
       "name": "msv_thiotrix_medium",
       "filename": "KOMODO_841_MSV-THIOTRIX-MEDIUM.yaml",
-      "ingredient_count": 20,
+      "ingredient_count": 16,
       "id": "CultureMech:006644",
       "source_id": "komodo.medium:841",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -25340,10 +25380,11 @@
     "CultureMech:006654": {
       "name": "macromonas_medium",
       "filename": "KOMODO_847_MACROMONAS_medium.yaml",
-      "ingredient_count": 23,
+      "ingredient_count": 18,
       "id": "CultureMech:006654",
       "source_id": "komodo.medium:847",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -25376,10 +25417,11 @@
     "CultureMech:006657": {
       "name": "rolled_oats_mineral_medium",
       "filename": "KOMODO_84_ROLLED_OATS_MINERAL_medium.yaml",
-      "ingredient_count": 5,
+      "ingredient_count": 2,
       "id": "CultureMech:006657",
       "source_id": "komodo.medium:84",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -25424,10 +25466,11 @@
     "CultureMech:006674": {
       "name": "starch_nitrate_medium",
       "filename": "KOMODO_856_STARCH_NITRATE_medium.yaml",
-      "ingredient_count": 10,
+      "ingredient_count": 7,
       "id": "CultureMech:006674",
       "source_id": "komodo.medium:856",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -25560,10 +25603,11 @@
     "CultureMech:006712": {
       "name": "desulfacinum_hydrothermale_medium",
       "filename": "KOMODO_875_DESULFACINUM_HYDROTHERMALE_MEDIUM.yaml",
-      "ingredient_count": 27,
+      "ingredient_count": 22,
       "id": "CultureMech:006712",
       "source_id": "komodo.medium:875",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -25633,10 +25677,11 @@
     "CultureMech:006721": {
       "name": "chloroflexus_aggregans_medium",
       "filename": "KOMODO_87a_CHLOROFLEXUS_AGGREGANS_medium.yaml",
-      "ingredient_count": 26,
+      "ingredient_count": 21,
       "id": "CultureMech:006721",
       "source_id": "komodo.medium:87a",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -25658,10 +25703,11 @@
     "CultureMech:006731": {
       "name": "denitrovibrio_medium",
       "filename": "KOMODO_881_DENITROVIBRIO_MEDIUM.yaml",
-      "ingredient_count": 31,
+      "ingredient_count": 26,
       "id": "CultureMech:006731",
       "source_id": "komodo.medium:881",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -25852,10 +25898,11 @@
     "CultureMech:006769": {
       "name": "acetobacterium_tundrae_medium",
       "filename": "KOMODO_900_ACETOBACTERIUM_TUNDRAE_MEDIUM.yaml",
-      "ingredient_count": 27,
+      "ingredient_count": 22,
       "id": "CultureMech:006769",
       "source_id": "komodo.medium:900",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -25998,10 +26045,11 @@
     "CultureMech:006795": {
       "name": "thauera_mechernichi_medium",
       "filename": "KOMODO_918_THAUERA_MECHERNICHI_MEDIUM.yaml",
-      "ingredient_count": 13,
+      "ingredient_count": 8,
       "id": "CultureMech:006795",
       "source_id": "komodo.medium:918",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -26244,10 +26292,11 @@
     "CultureMech:006866": {
       "name": "methylotrophic_arthrobacter_and_hyphomicrobium_medium",
       "filename": "KOMODO_939_METHYLOTROPHIC_ARTHROBACTER_AND_HYPHOMICROBIUM_MEDIUM.yaml",
-      "ingredient_count": 13,
+      "ingredient_count": 10,
       "id": "CultureMech:006866",
       "source_id": "komodo.medium:939",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -26355,14 +26404,14 @@
     "CultureMech:006894": {
       "name": "methylophaga_sulfidovorans_medium",
       "filename": "KOMODO_951_METHYLOPHAGA_SULFIDOVORANS_MEDIUM.yaml",
-      "ingredient_count": 27,
+      "ingredient_count": 22,
       "id": "CultureMech:006894",
       "source_id": "komodo.medium:951",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
-      "has_hierarchy_enrichment": true,
       "category_dir": "bacterial"
     },
     "CultureMech:006895": {
@@ -26637,10 +26686,11 @@
     "CultureMech:006936": {
       "name": "thermoactinomyces_medium",
       "filename": "KOMODO_978_THERMOACTINOMYCES_medium.yaml",
-      "ingredient_count": 16,
+      "ingredient_count": 13,
       "id": "CultureMech:006936",
       "source_id": "komodo.medium:978",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -26735,10 +26785,11 @@
     "CultureMech:006973": {
       "name": "isp_5_medium",
       "filename": "KOMODO_993_ISP_5_MEDIUM.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 6,
       "id": "CultureMech:006973",
       "source_id": "komodo.medium:993",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -26747,10 +26798,11 @@
     "CultureMech:006974": {
       "name": "nesterenkonia_modified_medium",
       "filename": "KOMODO_993a_NESTERENKONIA_MODIFIED_medium.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 6,
       "id": "CultureMech:006974",
       "source_id": "komodo.medium:993a",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -26759,10 +26811,11 @@
     "CultureMech:006975": {
       "name": "modified_isp5_medium",
       "filename": "KOMODO_993b_MODIFIED_ISP5_medium.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 6,
       "id": "CultureMech:006975",
       "source_id": "komodo.medium:993b",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -26771,10 +26824,11 @@
     "CultureMech:006976": {
       "name": "modified_isp5_medium_with_sodium_chloride",
       "filename": "KOMODO_993c_MODIFIED_ISP5_MEDIUM_WITH_SODIUM_CHLORIDE.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 6,
       "id": "CultureMech:006976",
       "source_id": "komodo.medium:993c",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -55640,10 +55694,11 @@
     "CultureMech:005893": {
       "name": "clostridium_kluyveri_medium_modified",
       "filename": "clostridium_kluyveri_medium_modified.yaml",
-      "ingredient_count": 30,
+      "ingredient_count": 25,
       "id": "CultureMech:005893",
       "source_id": "komodo.medium:52",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -67083,10 +67138,11 @@
     "CultureMech:005678": {
       "name": "fwm_medium",
       "filename": "fwm_medium.yaml",
-      "ingredient_count": 29,
+      "ingredient_count": 24,
       "id": "CultureMech:005678",
       "source_id": "komodo.medium:503",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -76568,14 +76624,14 @@
     "CultureMech:004069": {
       "name": "marine_ammonium_mineral_salts",
       "filename": "marine_ammonium_mineral_salts.yaml",
-      "ingredient_count": 28,
+      "ingredient_count": 22,
       "id": "CultureMech:004069",
       "source_id": "komodo.medium:1313",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
-      "has_hierarchy_enrichment": true,
       "category_dir": "bacterial"
     },
     "CultureMech:007643": {
@@ -151966,10 +152022,11 @@
     "CultureMech:006862": {
       "name": "methylotrophic_arthrobacter_and_hyphomicrobium_medium_replace_dimethysulfone_with_fructose",
       "filename": "methylotrophic_arthrobacter_and_hyphomicrobium_medium_replace_dimethysulfone_with_fructose.yaml",
-      "ingredient_count": 13,
+      "ingredient_count": 10,
       "id": "CultureMech:006862",
       "source_id": "komodo.medium:939_replace_dimethysulfone_with_Fructose",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -151978,10 +152035,11 @@
     "CultureMech:006863": {
       "name": "methylotrophic_arthrobacter_and_hyphomicrobium_medium_replace_dimethysulfone_with_glucose",
       "filename": "methylotrophic_arthrobacter_and_hyphomicrobium_medium_replace_dimethysulfone_with_glucose.yaml",
-      "ingredient_count": 13,
+      "ingredient_count": 10,
       "id": "CultureMech:006863",
       "source_id": "komodo.medium:939_replace_dimethysulfone_with_Glucose",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -151990,10 +152048,11 @@
     "CultureMech:006864": {
       "name": "methylotrophic_arthrobacter_and_hyphomicrobium_medium_replace_dimethysulfone_with_methanol",
       "filename": "methylotrophic_arthrobacter_and_hyphomicrobium_medium_replace_dimethysulfone_with_methanol.yaml",
-      "ingredient_count": 13,
+      "ingredient_count": 10,
       "id": "CultureMech:006864",
       "source_id": "komodo.medium:939_replace_dimethysulfone_with_Methanol",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -152002,10 +152061,11 @@
     "CultureMech:006865": {
       "name": "methylotrophic_arthrobacter_and_hyphomicrobium_medium_replace_dimethysulfone_with_methylamine",
       "filename": "methylotrophic_arthrobacter_and_hyphomicrobium_medium_replace_dimethysulfone_with_methylamine.yaml",
-      "ingredient_count": 13,
+      "ingredient_count": 10,
       "id": "CultureMech:006865",
       "source_id": "komodo.medium:939_replace_dimethysulfone_with_Methylamine",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -155342,10 +155402,11 @@
     "CultureMech:003661": {
       "name": "modified_desulfoglaeba_medium",
       "filename": "modified_desulfoglaeba_medium.yaml",
-      "ingredient_count": 35,
+      "ingredient_count": 30,
       "id": "CultureMech:003661",
       "source_id": "komodo.medium:1074",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -160236,10 +160297,11 @@
     "CultureMech:004620": {
       "name": "oat_flakes_agar_with_yeast_extract",
       "filename": "oat_flakes_agar_with_yeast_extract.yaml",
-      "ingredient_count": 6,
+      "ingredient_count": 3,
       "id": "CultureMech:004620",
       "source_id": "komodo.medium:248",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -169707,10 +169769,11 @@
     "CultureMech:005693": {
       "name": "swm_medium",
       "filename": "swm_medium.yaml",
-      "ingredient_count": 29,
+      "ingredient_count": 24,
       "id": "CultureMech:005693",
       "source_id": "komodo.medium:504",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -169986,10 +170049,11 @@
     "CultureMech:005033": {
       "name": "syntrophococcus_sucromutans_medium_replace_rumen_fluid_with_crude_egg_yolk_phosphatidylcholine_sigma_type_ix_e",
       "filename": "syntrophococcus_sucromutans_medium_replace_rumen_fluid_with_crude_egg_yolk_phosphatidylcholine_sigma_type_ix_e.yaml",
-      "ingredient_count": 28,
+      "ingredient_count": 23,
       "id": "CultureMech:005033",
       "source_id": "komodo.medium:337_replace_rumen fluid_with_crude egg yolk phosphatidylcholine (Sigma, type IX-E)",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -169998,10 +170062,11 @@
     "CultureMech:005032": {
       "name": "syntrophococcus_sucromutans_medium_replace_trypticase_bbl_with_casitone",
       "filename": "syntrophococcus_sucromutans_medium_replace_trypticase_bbl_with_casitone.yaml",
-      "ingredient_count": 28,
+      "ingredient_count": 23,
       "id": "CultureMech:005032",
       "source_id": "komodo.medium:337_replace_Trypticase (BBL)_with_Casitone",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -170962,10 +171027,11 @@
     "CultureMech:003540": {
       "name": "thermincola_medium",
       "filename": "thermincola_medium.yaml",
-      "ingredient_count": 35,
+      "ingredient_count": 30,
       "id": "CultureMech:003540",
       "source_id": "komodo.medium:1028",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],
@@ -172694,10 +172760,11 @@
     "CultureMech:003641": {
       "name": "thiohalophilus_medium",
       "filename": "thiohalophilus_medium.yaml",
-      "ingredient_count": 23,
+      "ingredient_count": 18,
       "id": "CultureMech:003641",
       "source_id": "komodo.medium:1058",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ],

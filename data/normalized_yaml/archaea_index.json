@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-07T07:14:20.878095+00:00",
+  "generated": "2026-08-07T20:47:30.870305+00:00",
   "category": "archaea",
   "count": 743,
   "recipes": {
@@ -415,10 +415,11 @@
     "CultureMech:003735": {
       "name": "aciduliprofundum_medium",
       "filename": "KOMODO_1083_ACIDULIPROFUNDUM_medium.yaml",
-      "ingredient_count": 25,
+      "ingredient_count": 21,
       "id": "CultureMech:003735",
       "source_id": "komodo.medium:1083",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "archaea"
       ],
@@ -1017,10 +1018,11 @@
     "CultureMech:006068": {
       "name": "halobacterium_lacusprofundii_medium",
       "filename": "KOMODO_589_HALOBACTERIUM_LACUSPROFUNDII_medium.yaml",
-      "ingredient_count": 12,
+      "ingredient_count": 9,
       "id": "CultureMech:006068",
       "source_id": "komodo.medium:589",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "archaea"
       ]
@@ -1085,10 +1087,11 @@
     "CultureMech:006381": {
       "name": "methanobrevibacter_curvatus_medium",
       "filename": "KOMODO_734_METHANOBREVIBACTER_CURVATUS_medium.yaml",
-      "ingredient_count": 32,
+      "ingredient_count": 27,
       "id": "CultureMech:006381",
       "source_id": "komodo.medium:734",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "archaea"
       ]
@@ -1119,10 +1122,11 @@
     "CultureMech:006501": {
       "name": "pyrolobus_fumarii_medium",
       "filename": "KOMODO_792_PYROLOBUS_FUMARII_MEDIUM.yaml",
-      "ingredient_count": 23,
+      "ingredient_count": 19,
       "id": "CultureMech:006501",
       "source_id": "komodo.medium:792",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "archaea"
       ],

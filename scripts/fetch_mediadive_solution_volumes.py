@@ -54,17 +54,72 @@ COCKTAIL_NAME = re.compile(
     r"trace|vitamin|elixir|mineral|selenite|tungstate|SL-?\d+|metal", re.I)
 
 
-def mediadive_id(doc: dict[str, Any]) -> str | None:
-    """The numeric MediaDive medium id this record resolves to, if any.
+KOMODO_DSMZ_MAP = REPO / "data" / "raw" / "komodo_web" / "komodo_dsmz_mappings.json"
 
-    Only `mediadive.medium:<digits>[letter]` is accepted. A `komodo.medium:` id is
-    NOT a MediaDive id (they collide numerically — the KOMODO 3136 / MediaDive 1203
-    case in #239), and the J*/C*-prefixed ids are JCM/other catalogues whose
-    composition MediaDive does not serve.
+
+def komodo_to_dsmz() -> dict[str, str]:
+    """KOMODO medium id -> DSMZ medium number, from the tracked KOMODO web export.
+
+    DSMZ medium numbers ARE MediaDive medium ids (MediaDive is DSMZ's database), so
+    this is what lets a KOMODO-sourced record reach its MediaDive composition. The
+    mapping is mostly identity with variant suffixes stripped (`1004.1` -> `1004`).
+
+    It is NOT authoritative on its own: KOMODO 3136 maps to DSMZ 3136, which does not
+    exist in MediaDive (that medium is really MediaDive 1203, see #239). So a
+    resolved id is always confirmed by fetching and name-checking before use.
+    """
+    if not KOMODO_DSMZ_MAP.is_file():
+        return {}
+    try:
+        data = json.loads(KOMODO_DSMZ_MAP.read_text())
+    except (json.JSONDecodeError, OSError):
+        return {}
+    return {str(m["komodo_id"]): str(m["dsmz_medium_number"])
+            for m in data.get("mappings", []) if m.get("dsmz_medium_number")}
+
+
+def mediadive_id(doc: dict[str, Any], komodo_map: dict[str, str] | None = None) -> str | None:
+    """The MediaDive medium id this record resolves to, if any.
+
+    `mediadive.medium:<digits>[letter]` is direct. A `komodo.medium:` id is NOT a
+    MediaDive id and must be translated through the KOMODO->DSMZ mapping first; using
+    it directly is the #239 error. The J*/C*-prefixed ids are JCM/other catalogues
+    whose composition MediaDive does not serve.
     """
     mid = str(((doc.get("media_term") or {}).get("term") or {}).get("id") or "")
     m = re.fullmatch(r"mediadive\.medium:(\d+[a-z]?)", mid)
-    return m.group(1) if m else None
+    if m:
+        return m.group(1)
+    k = re.fullmatch(r"komodo\.medium:(.+)", mid)
+    if k and komodo_map:
+        dsmz = komodo_map.get(k.group(1))
+        if dsmz and re.fullmatch(r"\d+[a-z]?", dsmz):
+            return dsmz
+    return None
+
+
+def _norm_name(s: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", str(s or "").lower())
+
+
+def names_agree(record: dict[str, Any], medium: dict[str, Any]) -> bool:
+    """Does the fetched MediaDive medium look like the same medium as the record?
+
+    Guards a mis-resolved id: a KOMODO number that happens to exist in MediaDive as a
+    DIFFERENT medium would otherwise import the wrong composition wholesale. Compares
+    the record's name/original_name against the MediaDive name, ignoring case and
+    punctuation, and accepts a containment either way (MediaDive names are often
+    longer, e.g. "BACTO MARINE BROTH (DIFCO 2216)").
+    """
+    md = _norm_name((medium.get("medium") or {}).get("name"))
+    if not md:
+        return False
+    for candidate in (record.get("original_name"), record.get("name"),
+                      ((record.get("media_term") or {}).get("term") or {}).get("label")):
+        c = _norm_name(candidate)
+        if c and (c == md or c in md or md in c):
+            return True
+    return False
 
 
 def fetch_medium(mid: str, timeout: int = 20) -> dict[str, Any] | None:
@@ -113,13 +168,14 @@ def extract_additions(medium: dict[str, Any]) -> list[dict[str, Any]]:
     return out
 
 
-def cocktail_records() -> list[tuple[str, str]]:
+def cocktail_records() -> list[tuple[str, str, dict[str, Any]]]:
     """(file_path, mediadive_id) for flattened cocktails that resolve to MediaDive."""
     if not PROPOSALS.is_file():
         print(f"Run `just propose-cocktail-nesting` first — {PROPOSALS.name} is missing.",
               file=sys.stderr)
         return []
     import csv
+    kmap = komodo_to_dsmz()
     out = []
     with PROPOSALS.open() as fh:
         for row in csv.DictReader(fh, delimiter="\t"):
@@ -128,9 +184,9 @@ def cocktail_records() -> list[tuple[str, str]]:
                 doc = yaml.safe_load(path.read_text(errors="replace"))
             except (yaml.YAMLError, OSError):
                 continue
-            mid = mediadive_id(doc) if isinstance(doc, dict) else None
+            mid = mediadive_id(doc, kmap) if isinstance(doc, dict) else None
             if mid:
-                out.append((row["file_path"], mid))
+                out.append((row["file_path"], mid, doc))
     return out
 
 
@@ -149,8 +205,20 @@ def main(argv: list[str] | None = None) -> int:
 
     results: dict[str, Any] = {}
     with_volume = 0
-    for i, (path, mid) in enumerate(records, 1):
+    mismatched = 0
+    for i, (path, mid, doc) in enumerate(records, 1):
         medium = fetch_medium(mid)
+        # A resolved id is only trusted when the fetched medium's NAME agrees with the
+        # record's. Without this a mis-resolved KOMODO number silently imports another
+        # medium's stock composition (#239).
+        if medium and not names_agree(doc, medium):
+            mismatched += 1
+            print(f"  [{i}/{len(records)}] {path[:46]:48s} mediadive:{mid:>6s} "
+                  f"-> NAME MISMATCH ({(medium.get('medium') or {}).get('name')!r}), skipped")
+            results[path] = {"mediadive_id": mid, "fetched": True,
+                             "name_mismatch": True, "additions": []}
+            time.sleep(args.delay)
+            continue
         additions = extract_additions(medium) if medium else []
         if additions:
             with_volume += 1
@@ -166,6 +234,9 @@ def main(argv: list[str] | None = None) -> int:
     args.out.write_text(json.dumps(results, indent=2) + "\n")
     print(f"\n{with_volume}/{len(records)} records have at least one authoritative "
           f"stock addition volume.")
+    if mismatched:
+        print(f"{mismatched} resolved id(s) fetched a medium whose name disagrees with "
+              f"the record — skipped rather than importing the wrong composition.")
     print(f"Wrote {args.out.relative_to(REPO)} — read-only; the corpus is untouched.")
     return 0
 
