@@ -47,6 +47,10 @@ import audit_concentration_plausibility as acp  # noqa: E402
 
 NORMALIZED = REPO / "data" / "normalized_yaml"
 DEFAULT_OUT = REPO / "data" / "import_tracking" / "reports" / "cocktail_nesting_proposals.tsv"
+# Authoritative addition volumes fetched from MediaDive (#150), when present. These
+# beat anything scraped from the record's prose: MediaDive states the volume as a
+# structured solution reference, so it is read rather than inferred.
+MEDIADIVE_VOLUMES = REPO / "data" / "import_tracking" / "reports" / "mediadive_solution_volumes.json"
 
 # A CANDIDATE addition volume: an amount in ml sitting next to a
 # trace/vitamin/element solution word, AND in an addition context — an "add"-type
@@ -88,10 +92,21 @@ def cocktail_components(rows: list[dict[str, str]], file_path: str) -> list[dict
             and r["finding"] in ("TRACE_SALT_AS_STOCK", "INDICATOR_UNIT_SLIP")]
 
 
+def load_mediadive_volumes() -> dict[str, Any]:
+    """Authoritative addition volumes, keyed by record path, if they were fetched."""
+    if not MEDIADIVE_VOLUMES.is_file():
+        return {}
+    try:
+        return json.loads(MEDIADIVE_VOLUMES.read_text())
+    except (json.JSONDecodeError, OSError):
+        return {}
+
+
 def build_proposals() -> list[dict[str, Any]]:
     rows = acp.audit(NORMALIZED)
     summary = acp.summarize_records(rows, NORMALIZED)
     cocktail_paths = [s["file_path"] for s in summary if s["flattened_cocktail"] == "yes"]
+    mediadive = load_mediadive_volumes()
     proposals = []
     for fp in sorted(cocktail_paths):
         try:
@@ -100,13 +115,25 @@ def build_proposals() -> list[dict[str, Any]]:
             doc = {}
         comps = cocktail_components(rows, fp)
         vol, evidence = recover_volume(doc)
+        # MediaDive states the volume structurally, so it supersedes a prose scrape.
+        additions = (mediadive.get(fp) or {}).get("additions") or []
+        if additions:
+            a = additions[0]
+            vol = str(a.get("addition_volume_ml") or vol)
+            evidence = (f"MediaDive {(mediadive[fp]).get('mediadive_id')}: "
+                        f"{a.get('solution_name')} added at {a.get('addition_volume_ml')} ml "
+                        f"(stock prepared in {a.get('stock_prepared_in_ml')} ml)")
         proposals.append({
             "file_path": fp,
             "record_id": str(doc.get("id") or ""),
             "n_components": len(comps),
             "components": "; ".join(f"{c['ingredient']}={c['value']}{c['unit']}" for c in comps),
             "candidate_volume_ml": vol,
-            "volume_source": "preparation_steps/notes" if vol else "MANUAL",
+            # MEDIADIVE = read from a structured solution reference (authoritative,
+            # applyable). preparation_steps/notes = scraped from prose (a candidate a
+            # curator must verify). MANUAL = nothing found.
+            "volume_source": ("MEDIADIVE" if additions
+                              else "preparation_steps/notes" if vol else "MANUAL"),
             "volume_evidence": evidence,
             # The proposed nested shape (curator applies): the flagged components move
             # under one solution added at candidate_volume_ml per litre.
