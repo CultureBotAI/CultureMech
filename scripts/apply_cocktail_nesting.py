@@ -107,8 +107,42 @@ def match_components(ingredients: list[dict[str, Any]],
     return indices, sorted(flagged_names - matched_names)
 
 
+def find_summed(ingredients: list[dict[str, Any]], additions: list[dict[str, Any]],
+                unmatched: list[str]) -> dict[str, list[tuple[str, float]]]:
+    """Unmatched rows whose value is the exact SUM of that component across stocks.
+
+    When a medium references two stocks that share a component, the flattening added
+    them together into one ingredient: `chrysiogenes_medium` carries pyridoxine 0.4,
+    which is Wolin's 0.1 + Seven vitamins 0.3. Neither stock matches 0.4, so the
+    plain name+value pass correctly refuses it — but the decomposition is recoverable,
+    because it is arithmetic over the specific stocks THIS medium references, checked
+    to exact equality.
+
+    Returns {ingredient_name: [(solution_name, stock_value), ...]} for the rows where
+    the sum reconciles, and nothing for any row where it does not.
+    """
+    by_name = {_key(i.get("preferred_term")): _num((i.get("concentration") or {}).get("value"))
+               for i in ingredients}
+    contributions: dict[str, list[tuple[str, float]]] = {}
+    for add in additions:
+        for c in add.get("stock_components") or []:
+            v = _num(c.get("g_l"))
+            if v is None:
+                continue
+            contributions.setdefault(_key(c.get("compound")), []).append(
+                (str(add.get("solution_name")), v))
+
+    out = {}
+    for name in unmatched:
+        parts = contributions.get(name, [])
+        got = by_name.get(name)
+        if len(parts) >= 2 and got is not None and abs(sum(v for _, v in parts) - got) < 1e-9:
+            out[name] = parts
+    return out
+
+
 def plan_record(path: Path, doc: dict[str, Any], additions: list[dict[str, Any]],
-                flagged_names: set[str]) -> dict[str, Any] | None:
+                flagged_names: set[str], split_summed: bool = False) -> dict[str, Any] | None:
     """What nesting this record would do, or None when it is not safely nestable.
 
     Handles EVERY stock the medium references, not just the first. A medium commonly
@@ -136,15 +170,53 @@ def plan_record(path: Path, doc: dict[str, Any], additions: list[dict[str, Any]]
             "stock_prepared_in_ml": addition.get("stock_prepared_in_ml"),
             "moved": [ingredients[i].get("preferred_term") for i in indices],
         })
-    if not groups:
-        return None
-
+    # NOTE: the "nothing to do" check happens AFTER the split pass below, not here.
+    # A record can have no direct name+value match at all and still be repairable —
+    # when every flagged row was summed across two stocks, which is exactly the case
+    # the split exists for. Returning early here refused those records outright.
     matched_names = {_key(ingredients[i].get("preferred_term")) for i in claimed}
+    unmatched = sorted(flagged_names - matched_names)
+
+    # Rows the flattening SUMMED across two stocks are recoverable by arithmetic.
+    splits: dict[str, list[tuple[str, float]]] = {}
+    if split_summed and unmatched:
+        splits = find_summed(ingredients, additions, unmatched)
+        if splits:
+            idx_by_name = {_key(i.get("preferred_term")): n for n, i in enumerate(ingredients)}
+            for name in splits:
+                claimed.add(idx_by_name[name])
+            unmatched = [u for u in unmatched if u not in splits]
+
+            # A stock may contribute ONLY summed rows — every one of its components
+            # was merged into another stock's entry, so the name+value pass created
+            # no group for it. Without a group its share of the split is dropped and
+            # the record silently loses that stock entirely, which is worse than not
+            # splitting at all. Give each contributing stock a group.
+            have = {g["solution_name"] for g in groups}
+            by_solution = {a.get("solution_name"): a for a in additions}
+            for parts in splits.values():
+                for solution_name, _value in parts:
+                    if solution_name in have:
+                        continue
+                    add = by_solution.get(solution_name) or {}
+                    groups.append({
+                        "indices": [],
+                        "solution_name": solution_name,
+                        "addition_volume_ml": add.get("addition_volume_ml"),
+                        "stock_prepared_in_ml": add.get("stock_prepared_in_ml"),
+                        "moved": [],
+                    })
+                    have.add(solution_name)
+
+    if not groups:
+        return None                        # nothing matched, and nothing reconciled
+
     return {
         "path": path,
         "groups": groups,
-        "unmatched": sorted(flagged_names - matched_names),
-        "moved_total": sum(len(g["moved"]) for g in groups),
+        "splits": splits,
+        "unmatched": unmatched,
+        "moved_total": sum(len(g["moved"]) for g in groups) + len(splits),
     }
 
 
@@ -152,13 +224,30 @@ def apply_plan(doc: dict[str, Any], plan: dict[str, Any]) -> None:
     """Move each stock's matched ingredients under its own solutions[] entry."""
     ingredients = [i for i in doc.get("ingredients") or [] if isinstance(i, dict)]
     all_moved = {i for g in plan["groups"] for i in g["indices"]}
+
+    splits = plan.get("splits") or {}
+    by_name_idx = {_key(i.get("preferred_term")): n for n, i in enumerate(ingredients)}
+    all_moved |= {by_name_idx[n] for n in splits}
     kept = [ing for i, ing in enumerate(ingredients) if i not in all_moved]
+
+    def split_parts(solution_name: str) -> list[dict[str, Any]]:
+        """Copies of summed ingredients belonging to this solution, each restored to
+        its own stock value rather than the summed one."""
+        out = []
+        for name, parts in splits.items():
+            for sol, value in parts:
+                if sol != solution_name:
+                    continue
+                src = dict(ingredients[by_name_idx[name]])
+                src["concentration"] = {"value": str(value), "unit": "G_PER_L"}
+                out.append(src)
+        return out
 
     solutions = []
     for g in plan["groups"]:
         solutions.append({
             "preferred_term": g["solution_name"],
-            "composition": [ingredients[i] for i in g["indices"]],
+            "composition": [ingredients[i] for i in g["indices"]] + split_parts(g["solution_name"]),
             "concentration": {"value": str(g["addition_volume_ml"]), "unit": "ML_PER_L"},
             "preparation_notes": (
                 f"Stock prepared in {g['stock_prepared_in_ml']} ml; added at "
@@ -173,14 +262,18 @@ def apply_plan(doc: dict[str, Any], plan: dict[str, Any]) -> None:
     record_curation_event(
         doc, curator="apply_cocktail_nesting.py", action="NESTED_FLATTENED_COCKTAIL",
         notes=(f"Moved {plan['moved_total']} stock-strength component(s) out of "
-               f"ingredients into {len(solutions)} solution(s): {detail}. Each moved "
-               f"component matched the MediaDive stock by name AND value; bulk "
-               f"ingredients sharing a name were left in place (#150)."),
+               f"ingredients into {len(solutions)} solution(s): {detail}."
+               + (f" {len(splits)} component(s) were SUMMED across stocks by the "
+                  f"flattening and are restored to each stock's own value, verified by "
+                  f"exact sum: {', '.join(sorted(splits))}." if splits else "")
+               + " Each moved "
+               "component matched the MediaDive stock by name AND value; bulk "
+               "ingredients sharing a name were left in place (#150)."),
         changes=(f"Nested {plan['moved_total']} ingredient(s) under {len(solutions)} "
                  f"solution(s); ingredients {len(ingredients)} -> {len(kept)}"))
 
 
-def build_plans() -> tuple[list[dict[str, Any]], list[tuple[str, list[str]]]]:
+def build_plans(split_summed: bool = False) -> tuple[list[dict[str, Any]], list[tuple[str, list[str]]]]:
     if not VOLUMES.is_file():
         print(f"Run `just fetch-mediadive-volumes` first — {VOLUMES.name} is missing.",
               file=sys.stderr)
@@ -207,7 +300,7 @@ def build_plans() -> tuple[list[dict[str, Any]], list[tuple[str, list[str]]]]:
         flagged = flagged_by_file.get(rel, set())
         if not flagged:
             continue
-        plan = plan_record(path, doc, additions, flagged)
+        plan = plan_record(path, doc, additions, flagged, split_summed)
         if plan is None:
             continue
         if plan["unmatched"]:
@@ -222,9 +315,14 @@ def main(argv: list[str] | None = None) -> int:
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--apply", action="store_true", help="Write. Default is report-only.")
     ap.add_argument("--limit", type=int, default=0, help="Only the first N records.")
+    ap.add_argument("--split-summed", action="store_true",
+                    help="Also repair rows the flattening SUMMED across two stocks, "
+                         "restoring each stock's own value. Opt-in: it reconstructs a "
+                         "decomposition rather than moving a value verbatim, and is "
+                         "accepted only on an exact sum match.")
     args = ap.parse_args(argv)
 
-    plans, skipped = build_plans()
+    plans, skipped = build_plans(args.split_summed)
     if args.limit:
         plans = plans[:args.limit]
 

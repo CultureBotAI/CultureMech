@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-07T20:47:30.870305+00:00",
+  "generated": "2026-08-07T23:45:06.738426+00:00",
   "category": "archaea",
   "count": 743,
   "recipes": {
@@ -595,10 +595,11 @@
     "CultureMech:004073": {
       "name": "methanocella_conradii_medium",
       "filename": "KOMODO_1318_METHANOCELLA_CONRADII_medium.yaml",
-      "ingredient_count": 36,
+      "ingredient_count": 30,
       "id": "CultureMech:004073",
       "source_id": "komodo.medium:1318",
       "source": "KOMODO",
+      "solution_count": 3,
       "categories": [
         "archaea"
       ]
@@ -6006,10 +6007,11 @@
     "CultureMech:000776": {
       "name": "methanocella_conradii_medium",
       "filename": "methanocella_conradii_medium.yaml",
-      "ingredient_count": 36,
+      "ingredient_count": 30,
       "id": "CultureMech:000776",
       "source_id": "mediadive.medium:1318",
       "source": "MediaDive",
+      "solution_count": 3,
       "categories": [
         "archaea"
       ]

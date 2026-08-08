@@ -41,7 +41,6 @@ archaea/KOMODO_120b_METHANOMICROCOCCUS_medium.yaml	CultureMech:003960	3	0	2	1	no
 archaea/KOMODO_1210_GEOGLOBUS_medium.yaml	CultureMech:003962	2	0	1	1	no	no
 archaea/KOMODO_1257_METHANOCELLA_medium.yaml	CultureMech:004017	2	0	1	1	no	no
 archaea/KOMODO_1273_METHANOSPIRILLUM_LACUNAE_MEDIUM.yaml	CultureMech:004027	1	0	0	1	no	no
-archaea/KOMODO_1318_METHANOCELLA_CONRADII_medium.yaml	CultureMech:004073	6	0	1	5	no	yes
 archaea/KOMODO_1329_METHANOSAETA_PELAGICA_medium.yaml	CultureMech:004085	2	0	1	1	no	no
 archaea/KOMODO_150_ACIDIANUS_BRIERLEYI_MEDIUM.yaml	CultureMech:004173	1	0	1	0	no	no
 archaea/KOMODO_158_THERMOPLASMA_ACIDOPHILUM_medium.yaml	CultureMech:004181	1	0	1	0	no	no
@@ -329,7 +328,6 @@ archaea/methanocalculus_pumilus_medium.yaml	CultureMech:002055	2	0	1	1	no	no
 archaea/methanocaldococcus_lauensis_medium.yaml	CultureMech:000881	1	0	0	1	no	no
 archaea/methanocaldococcus_medium.yaml	CultureMech:001378	1	0	0	1	no	no
 archaea/methanocaldococcus_villosus_medium.yaml	CultureMech:001379	1	0	0	1	no	no
-archaea/methanocella_conradii_medium.yaml	CultureMech:000776	6	0	1	5	no	yes
 archaea/methanocella_medium.yaml	CultureMech:000715	2	0	1	1	no	no
 archaea/methanococcoides_medium.yaml	CultureMech:000883	1	0	0	1	no	no
 archaea/methanococcoides_medium_2.yaml	CultureMech:009543	1	0	0	1	yes	no
@@ -624,7 +622,6 @@ bacterial/KOMODO_1275_GEORGFUCHSIA_MEDIUM.yaml	CultureMech:004029	2	0	1	1	no	no
 bacterial/KOMODO_1277_SULFURICELLA_MEDIUM.yaml	CultureMech:004030	2	0	1	1	no	no
 bacterial/KOMODO_1278_HYL_medium.yaml	CultureMech:004031	1	0	0	1	no	no
 bacterial/KOMODO_1282_SH_SEAWATER_medium.yaml	CultureMech:004034	3	1	2	0	no	no
-bacterial/KOMODO_1294_DESULFURISPIRILLUM_INDICUM_MEDIUM.yaml	CultureMech:004044	6	0	1	5	no	yes
 bacterial/KOMODO_1299_THERMOSIPHO_AFFECTUS_medium.yaml	CultureMech:004046	2	0	1	1	no	no
 bacterial/KOMODO_12_SOIL_EXTRACT_medium.yaml	CultureMech:004048	1	1	0	0	no	no
 bacterial/KOMODO_1301_TEPIDANAEROBACTER_ACETATOXYDANS_medium.yaml	CultureMech:004056	1	0	1	0	no	no
@@ -742,7 +739,6 @@ bacterial/KOMODO_710_KoKo_medium.yaml	CultureMech:006347	2	0	1	1	no	no
 bacterial/KOMODO_711_SPOROBACTER_medium.yaml	CultureMech:006348	1	0	1	0	no	no
 bacterial/KOMODO_711a_EUBACTERIUM_AGGREGANS_medium.yaml	CultureMech:006349	1	0	1	0	no	no
 bacterial/KOMODO_712_PSEUDOBUTYRIVIBRIO_medium.yaml	CultureMech:006350	1	0	0	1	no	no
-bacterial/KOMODO_717_DESULFITOBACTERIUM_PCE_MEDIUM.yaml	CultureMech:006354	5	0	0	5	no	yes
 bacterial/KOMODO_718_PETROTOGA_medium.yaml	CultureMech:006360	1	0	0	1	no	no
 bacterial/KOMODO_719_ANAEROFILUM_medium.yaml	CultureMech:006361	2	0	2	0	no	no
 bacterial/KOMODO_720_DESULFITOBACTERIUM_HAFNIENSE_medium.yaml	CultureMech:006363	2	0	1	1	no	no
@@ -770,7 +766,6 @@ bacterial/KOMODO_803_SPHAEROTILUS-LEPTOTHRIX_medium.yaml	CultureMech:006520	1	1	
 bacterial/KOMODO_807_HALOANAEROBIUM_ALCALIPHILUM_medium.yaml	CultureMech:006525	1	0	1	0	no	no
 bacterial/KOMODO_81-3_For_heterotrophic_growth.yaml	CultureMech:006531	4	0	0	4	no	yes
 bacterial/KOMODO_813_DESULFONATRONUM_medium.yaml	CultureMech:006536	2	0	1	1	no	no
-bacterial/KOMODO_818_CHRYSIOGENES_MEDIUM.yaml	CultureMech:006543	6	0	1	5	no	yes
 bacterial/KOMODO_826_GEOBACTER_MEDIUM.yaml	CultureMech:006556	1	0	0	1	no	no
 bacterial/KOMODO_827_THERMOANAEROBACTER_SULFUROPHILUS_medium.yaml	CultureMech:006558	2	0	1	1	no	no
 bacterial/KOMODO_829a_DESULFUROBACTERIUM_ATLANTICUM_MEDIUM.yaml	CultureMech:006565	5	0	1	4	no	yes
@@ -1782,7 +1777,6 @@ bacterial/caloramator_viterbiensis_medium.yaml	CultureMech:002126	2	0	1	1	no	no
 bacterial/carboxydocella_manganica_medium.yaml	CultureMech:001641	1	0	0	1	no	no
 bacterial/carboxydothermus_medium.yaml	CultureMech:001639	2	0	1	1	no	no
 bacterial/carboxydothermus_medium_for_dsm_22663.yaml	CultureMech:009229	18	1	8	9	yes	no
-bacterial/carboxydothermus_medium_heterotroph.yaml	CultureMech:001642	5	0	0	5	no	yes
 bacterial/carboxydothermus_siderophilus_medium.yaml	CultureMech:001640	1	0	0	1	no	no
 bacterial/carcboxydibrachium_medium.yaml	CultureMech:002069	2	0	1	1	no	no
 bacterial/carcboxydobrachium_pacificum_medium.yaml	CultureMech:006772	2	0	1	1	no	no
@@ -1817,7 +1811,6 @@ bacterial/chopped_meat_medium_add_vitamin_k3_and_agar.yaml	CultureMech:009095	2	
 bacterial/chopped_meat_medium_for_fretibacterium_sp.yaml	CultureMech:001929	1	0	0	1	no	no
 bacterial/chromatium_medium.yaml	CultureMech:009124	12	1	6	5	yes	no
 bacterial/chromatium_tepidum_medium.yaml	CultureMech:001482	1	0	1	0	no	no
-bacterial/chrysiogenes_medium.yaml	CultureMech:001965	6	0	1	5	no	yes
 bacterial/clostridium_acetate_1_medium.yaml	CultureMech:003124	1	0	1	0	no	no
 bacterial/clostridium_acidiurici_medium.yaml	CultureMech:006426	1	0	1	0	no	no
 bacterial/clostridium_aldrichii_medium.yaml	CultureMech:009273	9	0	0	9	yes	no
@@ -1886,8 +1879,6 @@ bacterial/deferrisoma_medium.yaml	CultureMech:000917	2	0	1	1	no	no
 bacterial/deferrisoma_paleochrorii_medium.yaml	CultureMech:002236	1	0	1	0	no	no
 bacterial/defined_medium_for_sulfate_reducing_bacteria_with_butyrate.yaml	CultureMech:003054	1	0	1	0	no	no
 bacterial/defluviitoga_medium.yaml	CultureMech:000785	1	0	1	0	no	no
-bacterial/dehalobacter_restrictus_medium.yaml	CultureMech:006377	6	0	1	5	no	yes
-bacterial/dehalobacter_restrictus_medium_tce.yaml	CultureMech:001867	6	0	1	5	no	yes
 bacterial/dehalococcoides_medium.yaml	CultureMech:003171	3	0	1	2	no	no
 bacterial/dehalogenimonas_medium.yaml	CultureMech:003024	1	0	1	0	yes	no
 bacterial/dehalospirillum_medium.yaml	CultureMech:001990	7	0	2	5	no	yes
@@ -1904,7 +1895,6 @@ bacterial/desulfitobacterium_dehalogenans_medium.yaml	CultureMech:009144	3	0	3	0
 bacterial/desulfitobacterium_frappieri_medium.yaml	CultureMech:006629	1	0	1	0	no	no
 bacterial/desulfitobacterium_hafniense_medium.yaml	CultureMech:001859	2	0	1	1	no	no
 bacterial/desulfitobacterium_medium.yaml	CultureMech:001801	1	0	0	1	no	no
-bacterial/desulfitobacterium_pce_medium.yaml	CultureMech:001855	5	0	0	5	no	yes
 bacterial/desulfitobacterium_pcp_1_medium.yaml	CultureMech:001993	1	0	1	0	no	no
 bacterial/desulfobacter_curvatus_medium.yaml	CultureMech:001291	2	0	1	1	no	no
 bacterial/desulfobacter_medium.yaml	CultureMech:001285	2	0	1	1	no	no
@@ -1957,9 +1947,7 @@ bacterial/desulfonauticus_medium.yaml	CultureMech:001491	2	0	1	1	no	no
 bacterial/desulfonema_ishimotoi_medium.yaml	CultureMech:001875	3	0	2	1	no	no
 bacterial/desulfonema_limicola_medium.yaml	CultureMech:001300	2	0	1	1	no	no
 bacterial/desulfonema_magnum_medium.yaml	CultureMech:001301	3	0	2	1	no	no
-bacterial/desulfopila_corrodens_medium.yaml	CultureMech:000426	6	0	1	5	no	yes
 bacterial/desulfopila_msl86_medium.yaml	CultureMech:000500	2	0	1	1	no	no
-bacterial/desulforhabdus_amnigena_medium.yaml	CultureMech:001845	6	0	1	5	no	yes
 bacterial/desulforhabdus_amnigenus_medium.yaml	CultureMech:006340	6	0	1	5	no	yes
 bacterial/desulfosalsimonas_medium.yaml	CultureMech:000485	2	0	1	1	no	no
 bacterial/desulfosarcina_cetonica_medium.yaml	CultureMech:001741	1	0	1	0	no	no
@@ -1976,7 +1964,6 @@ bacterial/desulfosudis_medium.yaml	CultureMech:001649	3	0	1	2	no	no
 bacterial/desulfotalea_psychrophila_medium.yaml	CultureMech:002021	2	0	1	1	no	no
 bacterial/desulfothermobacter_medium.yaml	CultureMech:001158	2	0	1	1	no	no
 bacterial/desulfothermus_mj_medium_h2_co2.yaml	CultureMech:000430	1	0	0	1	no	no
-bacterial/desulfothermus_naphthae_medium.yaml	CultureMech:002034	6	0	1	5	no	yes
 bacterial/desulfotignum_medium.yaml	CultureMech:001490	2	0	1	1	no	no
 bacterial/desulfotomaculum_14_5_medium.yaml	CultureMech:001774	1	0	1	0	no	no
 bacterial/desulfotomaculum_acetoxidans_medium.yaml	CultureMech:004007	2	0	1	1	no	no
@@ -2023,7 +2010,6 @@ bacterial/desulfurella_medium_brackish_water.yaml	CultureMech:001606	2	0	1	1	no	
 bacterial/desulfurella_multipotens_medium.yaml	CultureMech:005597	2	0	1	1	no	no
 bacterial/desulfurella_tr1_medium.yaml	CultureMech:002263	7	0	0	7	no	yes
 bacterial/desulfuribacillus_medium_arsenate.yaml	CultureMech:000608	2	0	1	1	no	no
-bacterial/desulfurispirillum_indicum_medium.yaml	CultureMech:000756	6	0	1	5	no	yes
 bacterial/desulfurispirillum_medium.yaml	CultureMech:000698	1	0	1	0	no	no
 bacterial/desulfurobacterium_crinifex_medium.yaml	CultureMech:001981	1	0	0	1	no	no
 bacterial/desulfurobacterium_hr11_medium.yaml	CultureMech:001380	1	0	0	1	no	no
@@ -2032,7 +2018,6 @@ bacterial/desulfuromonas_acetexigenes_medium.yaml	CultureMech:006194	5	0	1	4	no	
 bacterial/desulfuromonas_acetoxidans_medium.yaml	CultureMech:002139	1	0	1	0	no	no
 bacterial/desulfuromonas_carbonis_medium.yaml	CultureMech:001059	2	0	1	1	no	no
 bacterial/desulfuromonas_chloroethenica_medium.yaml	CultureMech:001992	2	0	1	1	no	no
-bacterial/desulfuromonas_medium_tce.yaml	CultureMech:001868	6	0	1	5	no	yes
 bacterial/desulfuromonas_palmitatis_medium.yaml	CultureMech:001994	1	0	0	1	no	no
 bacterial/desulfuromonas_sp_medium.yaml	CultureMech:004169	5	0	1	4	no	yes
 bacterial/desulfuromusa_medium.yaml	CultureMech:001292	2	0	1	1	no	no
@@ -3545,7 +3530,6 @@ bacterial/thiosocius_medium.yaml	CultureMech:001177	2	0	1	1	no	no
 bacterial/thiosphaera_pantotropha_medium.yaml	CultureMech:001455	1	0	1	0	no	no
 bacterial/tibi_medium.yaml	CultureMech:001362	1	1	0	0	no	no
 bacterial/tissierella_amo_1_medium.yaml	CultureMech:001820	2	0	1	1	no	no
-bacterial/tissierella_creatinophila_medium.yaml	CultureMech:001972	6	0	1	5	no	yes
 bacterial/tissierella_sp_medium_creatinine.yaml	CultureMech:001691	2	0	1	1	no	no
 bacterial/tissirella_creatinophila_medium.yaml	CultureMech:006551	6	0	1	5	no	yes
 bacterial/tm_broth_medium.yaml	CultureMech:002630	2	0	2	0	no	no

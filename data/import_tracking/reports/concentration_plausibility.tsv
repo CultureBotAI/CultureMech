@@ -272,12 +272,6 @@ INDICATOR_UNIT_SLIP	bacterial/KOMODO_1278_HYL_medium.yaml	CultureMech:004031	Pyr
 TRACE_SALT_AS_STOCK	bacterial/KOMODO_1282_SH_SEAWATER_medium.yaml	CultureMech:004034	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/KOMODO_1282_SH_SEAWATER_medium.yaml	CultureMech:004034	Na2MoO4 x 2 H2O	10	G_PER_L	10 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 WATER_AS_VOLUME	bacterial/KOMODO_1282_SH_SEAWATER_medium.yaml	CultureMech:004034	Double distilled water	1990.0	G_PER_L	1990 G_PER_L water — reads as a preparation volume, not a concentration
-TRACE_SALT_AS_STOCK	bacterial/KOMODO_1294_DESULFURISPIRILLUM_INDICUM_MEDIUM.yaml	CultureMech:004044	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/KOMODO_1294_DESULFURISPIRILLUM_INDICUM_MEDIUM.yaml	CultureMech:004044	Pyridoxine hydrochloride	0.4	G_PER_L	0.4 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/KOMODO_1294_DESULFURISPIRILLUM_INDICUM_MEDIUM.yaml	CultureMech:004044	Nicotinic acid	0.25	G_PER_L	0.25 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/KOMODO_1294_DESULFURISPIRILLUM_INDICUM_MEDIUM.yaml	CultureMech:004044	Vitamin B12	0.101	G_PER_L	0.101 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/KOMODO_1294_DESULFURISPIRILLUM_INDICUM_MEDIUM.yaml	CultureMech:004044	p-Aminobenzoic acid	0.13	G_PER_L	0.13 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/KOMODO_1294_DESULFURISPIRILLUM_INDICUM_MEDIUM.yaml	CultureMech:004044	Thiamine-HCl x 2 H2O	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/KOMODO_1299_THERMOSIPHO_AFFECTUS_medium.yaml	CultureMech:004046	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/KOMODO_1299_THERMOSIPHO_AFFECTUS_medium.yaml	CultureMech:004046	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 WATER_AS_VOLUME	bacterial/KOMODO_12_SOIL_EXTRACT_medium.yaml	CultureMech:004048	Tap water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
@@ -447,11 +441,6 @@ INDICATOR_UNIT_SLIP	bacterial/KOMODO_710_KoKo_medium.yaml	CultureMech:006347	Pyr
 TRACE_SALT_AS_STOCK	bacterial/KOMODO_711_SPOROBACTER_medium.yaml	CultureMech:006348	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/KOMODO_711a_EUBACTERIUM_AGGREGANS_medium.yaml	CultureMech:006349	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/KOMODO_712_PSEUDOBUTYRIVIBRIO_medium.yaml	CultureMech:006350	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/KOMODO_717_DESULFITOBACTERIUM_PCE_MEDIUM.yaml	CultureMech:006354	Pyridoxine hydrochloride	0.4	G_PER_L	0.4 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/KOMODO_717_DESULFITOBACTERIUM_PCE_MEDIUM.yaml	CultureMech:006354	Nicotinic acid	0.25	G_PER_L	0.25 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/KOMODO_717_DESULFITOBACTERIUM_PCE_MEDIUM.yaml	CultureMech:006354	Vitamin B12	0.101	G_PER_L	0.101 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/KOMODO_717_DESULFITOBACTERIUM_PCE_MEDIUM.yaml	CultureMech:006354	p-Aminobenzoic acid	0.13	G_PER_L	0.13 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/KOMODO_717_DESULFITOBACTERIUM_PCE_MEDIUM.yaml	CultureMech:006354	Thiamine-HCl x 2 H2O	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/KOMODO_718_PETROTOGA_medium.yaml	CultureMech:006360	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/KOMODO_719_ANAEROFILUM_medium.yaml	CultureMech:006361	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/KOMODO_719_ANAEROFILUM_medium.yaml	CultureMech:006361	FeSO4 x 7 H2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -500,12 +489,6 @@ INDICATOR_UNIT_SLIP	bacterial/KOMODO_81-3_For_heterotrophic_growth.yaml	CultureM
 INDICATOR_UNIT_SLIP	bacterial/KOMODO_81-3_For_heterotrophic_growth.yaml	CultureMech:006531	Pyridoxine hydrochloride	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/KOMODO_813_DESULFONATRONUM_medium.yaml	CultureMech:006536	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/KOMODO_813_DESULFONATRONUM_medium.yaml	CultureMech:006536	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/KOMODO_818_CHRYSIOGENES_MEDIUM.yaml	CultureMech:006543	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/KOMODO_818_CHRYSIOGENES_MEDIUM.yaml	CultureMech:006543	Pyridoxine hydrochloride	0.4	G_PER_L	0.4 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/KOMODO_818_CHRYSIOGENES_MEDIUM.yaml	CultureMech:006543	Nicotinic acid	0.25	G_PER_L	0.25 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/KOMODO_818_CHRYSIOGENES_MEDIUM.yaml	CultureMech:006543	Vitamin B12	0.101	G_PER_L	0.101 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/KOMODO_818_CHRYSIOGENES_MEDIUM.yaml	CultureMech:006543	p-Aminobenzoic acid	0.13	G_PER_L	0.13 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/KOMODO_818_CHRYSIOGENES_MEDIUM.yaml	CultureMech:006543	Thiamine-HCl x 2 H2O	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/KOMODO_826_GEOBACTER_MEDIUM.yaml	CultureMech:006556	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/KOMODO_827_THERMOANAEROBACTER_SULFUROPHILUS_medium.yaml	CultureMech:006558	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/KOMODO_827_THERMOANAEROBACTER_SULFUROPHILUS_medium.yaml	CultureMech:006558	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -3850,11 +3833,6 @@ INDICATOR_UNIT_SLIP	bacterial/carboxydothermus_medium_for_dsm_22663.yaml	Culture
 INDICATOR_UNIT_SLIP	bacterial/carboxydothermus_medium_for_dsm_22663.yaml	CultureMech:009229	Riboflavin	5	G_PER_L	5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/carboxydothermus_medium_for_dsm_22663.yaml	CultureMech:009229	Nicotinic acid	5	G_PER_L	5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/carboxydothermus_medium_for_dsm_22663.yaml	CultureMech:009229	Lipoic acid	5	G_PER_L	5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/carboxydothermus_medium_heterotroph.yaml	CultureMech:001642	Vitamin B12	0.101	G_PER_L	0.101 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/carboxydothermus_medium_heterotroph.yaml	CultureMech:001642	p-Aminobenzoic acid	0.13	G_PER_L	0.13 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/carboxydothermus_medium_heterotroph.yaml	CultureMech:001642	Nicotinic acid	0.25	G_PER_L	0.25 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/carboxydothermus_medium_heterotroph.yaml	CultureMech:001642	Pyridoxine hydrochloride	0.4	G_PER_L	0.4 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/carboxydothermus_medium_heterotroph.yaml	CultureMech:001642	Thiamine-HCl x 2 H2O	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/carboxydothermus_siderophilus_medium.yaml	CultureMech:001640	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/carcboxydibrachium_medium.yaml	CultureMech:002069	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/carcboxydibrachium_medium.yaml	CultureMech:002069	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -3960,12 +3938,6 @@ TRACE_SALT_AS_STOCK	bacterial/chromatium_medium.yaml	CultureMech:009124	CoCl2	1	
 TRACE_SALT_AS_STOCK	bacterial/chromatium_medium.yaml	CultureMech:009124	CuCl2	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/chromatium_medium.yaml	CultureMech:009124	NiCl2	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/chromatium_tepidum_medium.yaml	CultureMech:001482	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/chrysiogenes_medium.yaml	CultureMech:001965	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/chrysiogenes_medium.yaml	CultureMech:001965	Pyridoxine hydrochloride	0.4	G_PER_L	0.4 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/chrysiogenes_medium.yaml	CultureMech:001965	Nicotinic acid	0.25	G_PER_L	0.25 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/chrysiogenes_medium.yaml	CultureMech:001965	Vitamin B12	0.101	G_PER_L	0.101 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/chrysiogenes_medium.yaml	CultureMech:001965	p-Aminobenzoic acid	0.13	G_PER_L	0.13 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/chrysiogenes_medium.yaml	CultureMech:001965	Thiamine-HCl x 2 H2O	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/clostridium_acetate_1_medium.yaml	CultureMech:003124	FeSO4 x 7 H2O	2.1	G_PER_L	2.1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/clostridium_acidiurici_medium.yaml	CultureMech:006426	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/clostridium_aldrichii_medium.yaml	CultureMech:009273	Resazurin	0.5	G_PER_L	0.5 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -4124,18 +4096,6 @@ INDICATOR_UNIT_SLIP	bacterial/deferrisoma_medium.yaml	CultureMech:000917	Pyridox
 TRACE_SALT_AS_STOCK	bacterial/deferrisoma_paleochrorii_medium.yaml	CultureMech:002236	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/defined_medium_for_sulfate_reducing_bacteria_with_butyrate.yaml	CultureMech:003054	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/defluviitoga_medium.yaml	CultureMech:000785	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-TRACE_SALT_AS_STOCK	bacterial/dehalobacter_restrictus_medium.yaml	CultureMech:006377	FeCl2 x 4 H2O	2	G_PER_L	2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/dehalobacter_restrictus_medium.yaml	CultureMech:006377	Pyridoxine hydrochloride	0.4	G_PER_L	0.4 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/dehalobacter_restrictus_medium.yaml	CultureMech:006377	Nicotinic acid	0.25	G_PER_L	0.25 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/dehalobacter_restrictus_medium.yaml	CultureMech:006377	Vitamin B12	0.101	G_PER_L	0.101 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/dehalobacter_restrictus_medium.yaml	CultureMech:006377	p-Aminobenzoic acid	0.13	G_PER_L	0.13 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/dehalobacter_restrictus_medium.yaml	CultureMech:006377	Thiamine-HCl x 2 H2O	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/dehalobacter_restrictus_medium_tce.yaml	CultureMech:001867	FeCl2 x 4 H2O	2	G_PER_L	2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/dehalobacter_restrictus_medium_tce.yaml	CultureMech:001867	Pyridoxine hydrochloride	0.4	G_PER_L	0.4 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/dehalobacter_restrictus_medium_tce.yaml	CultureMech:001867	Nicotinic acid	0.25	G_PER_L	0.25 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/dehalobacter_restrictus_medium_tce.yaml	CultureMech:001867	Vitamin B12	0.101	G_PER_L	0.101 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/dehalobacter_restrictus_medium_tce.yaml	CultureMech:001867	p-Aminobenzoic acid	0.13	G_PER_L	0.13 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/dehalobacter_restrictus_medium_tce.yaml	CultureMech:001867	Thiamine-HCl x 2 H2O	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/dehalococcoides_medium.yaml	CultureMech:003171	Pyridoxine hydrochloride	0.25	G_PER_L	0.25 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/dehalococcoides_medium.yaml	CultureMech:003171	Nicotinic acid	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/dehalococcoides_medium.yaml	CultureMech:003171	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -4172,11 +4132,6 @@ TRACE_SALT_AS_STOCK	bacterial/desulfitobacterium_frappieri_medium.yaml	CultureMe
 TRACE_SALT_AS_STOCK	bacterial/desulfitobacterium_hafniense_medium.yaml	CultureMech:001859	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/desulfitobacterium_hafniense_medium.yaml	CultureMech:001859	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/desulfitobacterium_medium.yaml	CultureMech:001801	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/desulfitobacterium_pce_medium.yaml	CultureMech:001855	Pyridoxine hydrochloride	0.4	G_PER_L	0.4 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/desulfitobacterium_pce_medium.yaml	CultureMech:001855	Nicotinic acid	0.25	G_PER_L	0.25 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/desulfitobacterium_pce_medium.yaml	CultureMech:001855	Vitamin B12	0.101	G_PER_L	0.101 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/desulfitobacterium_pce_medium.yaml	CultureMech:001855	p-Aminobenzoic acid	0.13	G_PER_L	0.13 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/desulfitobacterium_pce_medium.yaml	CultureMech:001855	Thiamine-HCl x 2 H2O	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/desulfitobacterium_pcp_1_medium.yaml	CultureMech:001993	FeCl2 x 4 H2O	1.502	G_PER_L	1.502 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/desulfobacter_curvatus_medium.yaml	CultureMech:001291	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/desulfobacter_curvatus_medium.yaml	CultureMech:001291	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -4348,20 +4303,8 @@ INDICATOR_UNIT_SLIP	bacterial/desulfonema_limicola_medium.yaml	CultureMech:00130
 TRACE_SALT_AS_STOCK	bacterial/desulfonema_magnum_medium.yaml	CultureMech:001301	AlK(SO4)2 x 12 H2O	48	G_PER_L	48 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	bacterial/desulfonema_magnum_medium.yaml	CultureMech:001301	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/desulfonema_magnum_medium.yaml	CultureMech:001301	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/desulfopila_corrodens_medium.yaml	CultureMech:000426	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/desulfopila_corrodens_medium.yaml	CultureMech:000426	Pyridoxine hydrochloride	0.4	G_PER_L	0.4 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/desulfopila_corrodens_medium.yaml	CultureMech:000426	Nicotinic acid	0.25	G_PER_L	0.25 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/desulfopila_corrodens_medium.yaml	CultureMech:000426	Vitamin B12	0.101	G_PER_L	0.101 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/desulfopila_corrodens_medium.yaml	CultureMech:000426	p-Aminobenzoic acid	0.13	G_PER_L	0.13 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/desulfopila_corrodens_medium.yaml	CultureMech:000426	Thiamine-HCl x 2 H2O	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/desulfopila_msl86_medium.yaml	CultureMech:000500	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/desulfopila_msl86_medium.yaml	CultureMech:000500	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/desulforhabdus_amnigena_medium.yaml	CultureMech:001845	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/desulforhabdus_amnigena_medium.yaml	CultureMech:001845	Pyridoxine hydrochloride	0.4	G_PER_L	0.4 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/desulforhabdus_amnigena_medium.yaml	CultureMech:001845	Nicotinic acid	0.25	G_PER_L	0.25 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/desulforhabdus_amnigena_medium.yaml	CultureMech:001845	Vitamin B12	0.101	G_PER_L	0.101 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/desulforhabdus_amnigena_medium.yaml	CultureMech:001845	p-Aminobenzoic acid	0.13	G_PER_L	0.13 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/desulforhabdus_amnigena_medium.yaml	CultureMech:001845	Thiamine-HCl x 2 H2O	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/desulforhabdus_amnigenus_medium.yaml	CultureMech:006340	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/desulforhabdus_amnigenus_medium.yaml	CultureMech:006340	Pyridoxine hydrochloride	0.4	G_PER_L	0.4 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/desulforhabdus_amnigenus_medium.yaml	CultureMech:006340	Nicotinic acid	0.25	G_PER_L	0.25 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -4393,12 +4336,6 @@ INDICATOR_UNIT_SLIP	bacterial/desulfotalea_psychrophila_medium.yaml	CultureMech:
 TRACE_SALT_AS_STOCK	bacterial/desulfothermobacter_medium.yaml	CultureMech:001158	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/desulfothermobacter_medium.yaml	CultureMech:001158	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/desulfothermus_mj_medium_h2_co2.yaml	CultureMech:000430	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/desulfothermus_naphthae_medium.yaml	CultureMech:002034	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/desulfothermus_naphthae_medium.yaml	CultureMech:002034	Pyridoxine hydrochloride	0.4	G_PER_L	0.4 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/desulfothermus_naphthae_medium.yaml	CultureMech:002034	Nicotinic acid	0.25	G_PER_L	0.25 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/desulfothermus_naphthae_medium.yaml	CultureMech:002034	Vitamin B12	0.101	G_PER_L	0.101 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/desulfothermus_naphthae_medium.yaml	CultureMech:002034	p-Aminobenzoic acid	0.13	G_PER_L	0.13 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/desulfothermus_naphthae_medium.yaml	CultureMech:002034	Thiamine-HCl x 2 H2O	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/desulfotignum_medium.yaml	CultureMech:001490	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/desulfotignum_medium.yaml	CultureMech:001490	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/desulfotomaculum_14_5_medium.yaml	CultureMech:001774	FeSO4 x 7 H2O	50	G_PER_L	50 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -4513,12 +4450,6 @@ INDICATOR_UNIT_SLIP	bacterial/desulfurella_tr1_medium.yaml	CultureMech:002263	Vi
 INDICATOR_UNIT_SLIP	bacterial/desulfurella_tr1_medium.yaml	CultureMech:002263	Riboflavin	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/desulfuribacillus_medium_arsenate.yaml	CultureMech:000608	FeSO4 x 7 H2O	2.2	G_PER_L	2.2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/desulfuribacillus_medium_arsenate.yaml	CultureMech:000608	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/desulfurispirillum_indicum_medium.yaml	CultureMech:000756	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/desulfurispirillum_indicum_medium.yaml	CultureMech:000756	Pyridoxine hydrochloride	0.4	G_PER_L	0.4 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/desulfurispirillum_indicum_medium.yaml	CultureMech:000756	Nicotinic acid	0.25	G_PER_L	0.25 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/desulfurispirillum_indicum_medium.yaml	CultureMech:000756	Vitamin B12	0.101	G_PER_L	0.101 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/desulfurispirillum_indicum_medium.yaml	CultureMech:000756	p-Aminobenzoic acid	0.13	G_PER_L	0.13 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/desulfurispirillum_indicum_medium.yaml	CultureMech:000756	Thiamine-HCl x 2 H2O	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/desulfurispirillum_medium.yaml	CultureMech:000698	FeSO4 x 7 H2O	1.1	G_PER_L	1.1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/desulfurobacterium_crinifex_medium.yaml	CultureMech:001981	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/desulfurobacterium_hr11_medium.yaml	CultureMech:001380	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -4533,12 +4464,6 @@ TRACE_SALT_AS_STOCK	bacterial/desulfuromonas_carbonis_medium.yaml	CultureMech:00
 INDICATOR_UNIT_SLIP	bacterial/desulfuromonas_carbonis_medium.yaml	CultureMech:001059	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/desulfuromonas_chloroethenica_medium.yaml	CultureMech:001992	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/desulfuromonas_chloroethenica_medium.yaml	CultureMech:001992	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/desulfuromonas_medium_tce.yaml	CultureMech:001868	FeCl2 x 4 H2O	2	G_PER_L	2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/desulfuromonas_medium_tce.yaml	CultureMech:001868	Pyridoxine hydrochloride	0.4	G_PER_L	0.4 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/desulfuromonas_medium_tce.yaml	CultureMech:001868	Nicotinic acid	0.25	G_PER_L	0.25 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/desulfuromonas_medium_tce.yaml	CultureMech:001868	Vitamin B12	0.101	G_PER_L	0.101 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/desulfuromonas_medium_tce.yaml	CultureMech:001868	p-Aminobenzoic acid	0.13	G_PER_L	0.13 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/desulfuromonas_medium_tce.yaml	CultureMech:001868	Thiamine-HCl x 2 H2O	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/desulfuromonas_palmitatis_medium.yaml	CultureMech:001994	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/desulfuromonas_sp_medium.yaml	CultureMech:004169	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/desulfuromonas_sp_medium.yaml	CultureMech:004169	Vitamin B12	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -8489,12 +8414,6 @@ TRACE_SALT_AS_STOCK	bacterial/thiosphaera_pantotropha_medium.yaml	CultureMech:00
 WATER_AS_VOLUME	bacterial/tibi_medium.yaml	CultureMech:001362	Tap water	1000	G_PER_L	1000 G_PER_L water — reads as a preparation volume, not a concentration
 TRACE_SALT_AS_STOCK	bacterial/tissierella_amo_1_medium.yaml	CultureMech:001820	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/tissierella_amo_1_medium.yaml	CultureMech:001820	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	bacterial/tissierella_creatinophila_medium.yaml	CultureMech:001972	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	bacterial/tissierella_creatinophila_medium.yaml	CultureMech:001972	Pyridoxine hydrochloride	0.4	G_PER_L	0.4 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/tissierella_creatinophila_medium.yaml	CultureMech:001972	Nicotinic acid	0.25	G_PER_L	0.25 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/tissierella_creatinophila_medium.yaml	CultureMech:001972	Vitamin B12	0.101	G_PER_L	0.101 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/tissierella_creatinophila_medium.yaml	CultureMech:001972	p-Aminobenzoic acid	0.13	G_PER_L	0.13 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/tissierella_creatinophila_medium.yaml	CultureMech:001972	Thiamine-HCl x 2 H2O	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/tissierella_sp_medium_creatinine.yaml	CultureMech:001691	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/tissierella_sp_medium_creatinine.yaml	CultureMech:001691	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/tissirella_creatinophila_medium.yaml	CultureMech:006551	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -9025,12 +8944,6 @@ INDICATOR_UNIT_SLIP	archaea/KOMODO_1210_GEOGLOBUS_medium.yaml	CultureMech:003962
 TRACE_SALT_AS_STOCK	archaea/KOMODO_1257_METHANOCELLA_medium.yaml	CultureMech:004017	FeCl2 x 4 H2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	archaea/KOMODO_1257_METHANOCELLA_medium.yaml	CultureMech:004017	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	archaea/KOMODO_1273_METHANOSPIRILLUM_LACUNAE_MEDIUM.yaml	CultureMech:004027	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	archaea/KOMODO_1318_METHANOCELLA_CONRADII_medium.yaml	CultureMech:004073	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	archaea/KOMODO_1318_METHANOCELLA_CONRADII_medium.yaml	CultureMech:004073	Vitamin B12	0.101	G_PER_L	0.101 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	archaea/KOMODO_1318_METHANOCELLA_CONRADII_medium.yaml	CultureMech:004073	p-Aminobenzoic acid	0.13	G_PER_L	0.13 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	archaea/KOMODO_1318_METHANOCELLA_CONRADII_medium.yaml	CultureMech:004073	Nicotinic acid	0.25	G_PER_L	0.25 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	archaea/KOMODO_1318_METHANOCELLA_CONRADII_medium.yaml	CultureMech:004073	Pyridoxine hydrochloride	0.4	G_PER_L	0.4 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	archaea/KOMODO_1318_METHANOCELLA_CONRADII_medium.yaml	CultureMech:004073	Thiamine-HCl x 2 H2O	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	archaea/KOMODO_1329_METHANOSAETA_PELAGICA_medium.yaml	CultureMech:004085	FeCl2 x 4 H2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	archaea/KOMODO_1329_METHANOSAETA_PELAGICA_medium.yaml	CultureMech:004085	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	archaea/KOMODO_150_ACIDIANUS_BRIERLEYI_MEDIUM.yaml	CultureMech:004173	FeCl3 x 6 H2O	1.1	G_PER_L	1.1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -10116,12 +10029,6 @@ INDICATOR_UNIT_SLIP	archaea/methanocalculus_pumilus_medium.yaml	CultureMech:0020
 INDICATOR_UNIT_SLIP	archaea/methanocaldococcus_lauensis_medium.yaml	CultureMech:000881	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	archaea/methanocaldococcus_medium.yaml	CultureMech:001378	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	archaea/methanocaldococcus_villosus_medium.yaml	CultureMech:001379	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-TRACE_SALT_AS_STOCK	archaea/methanocella_conradii_medium.yaml	CultureMech:000776	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
-INDICATOR_UNIT_SLIP	archaea/methanocella_conradii_medium.yaml	CultureMech:000776	Vitamin B12	0.101	G_PER_L	0.101 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	archaea/methanocella_conradii_medium.yaml	CultureMech:000776	p-Aminobenzoic acid	0.13	G_PER_L	0.13 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	archaea/methanocella_conradii_medium.yaml	CultureMech:000776	Nicotinic acid	0.25	G_PER_L	0.25 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	archaea/methanocella_conradii_medium.yaml	CultureMech:000776	Pyridoxine hydrochloride	0.4	G_PER_L	0.4 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	archaea/methanocella_conradii_medium.yaml	CultureMech:000776	Thiamine-HCl x 2 H2O	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	archaea/methanocella_medium.yaml	CultureMech:000715	FeCl2 x 4 H2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	archaea/methanocella_medium.yaml	CultureMech:000715	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	archaea/methanococcoides_medium.yaml	CultureMech:000883	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
