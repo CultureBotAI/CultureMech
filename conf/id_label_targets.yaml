@@ -89,8 +89,20 @@ plausibility_severity: warn
 # above the ceiling is a foreign identifier wearing an OBO prefix (PubChem CIDs
 # reach 8 digits; CHEBI:10716816 was asserted for "Nicotinate") rather than a
 # retired accession — a different repair, so it gets its own verdict.
+#
+# The ceiling tracks the DIGIT COUNT of the foreign namespace it separates out,
+# not how far the ontology has minted. It moves when PubChem changes width, not
+# when ChEBI mints higher — so it must sit above ChEBI's real accession space.
+# CHEBI was 300000, an order of magnitude below every sibling here and below
+# ChEBI's own range (the local semsql build reaches 747618, and this corpus
+# already cites CHEBI:747199 = strontium sulfate). Any ChEBI term newer than the
+# local build would then fail to resolve AND clear the ceiling, and be reported
+# ID_OUT_OF_RANGE — "a foreign identifier wearing an OBO prefix" — which in MIM
+# demoted 17 real ChEBI terms to UNMAPPED (MIM #193/#197/#205). Raised to
+# 1000000 to match what MIM shipped and mediaingredientmech's curie.py
+# MAX_ACCESSION (#247).
 max_accession:
-  CHEBI: 300000
+  CHEBI: 1000000
   FOODON: 4000000
   UBERON: 9000000
   ENVO: 9000000
