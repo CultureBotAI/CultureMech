@@ -267,6 +267,13 @@ fetch-mediadive-volumes *args="":
 # Established that the corpus's own mediadive.medium ids are sound (3,325/3,325) and
 # that the KOMODO->DSMZ mapping is what misleads (~72% land on another medium), so a
 # komodo id must never be used as a MediaDive id without a name check. Read-only.
+# List flattened cocktails that MediaDive cannot supply a stock+volume for, with the
+# reason each is blocked (#150). Feeds Edison via
+# templates/media_stock_solution_research.md. Read-only.
+[group('QC')]
+list-cocktail-research-targets *args="":
+    uv run --extra dev python scripts/list_cocktail_research_targets.py {{args}}
+
 [group('QC')]
 audit-mediadive-ids *args="":
     uv run --extra dev python scripts/audit_mediadive_ids.py {{args}}
