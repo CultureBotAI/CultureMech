@@ -189,3 +189,6 @@ data/import_tracking/reports/mediadive_solution_volumes.json
 
 # MediaDive id audit report: a regenerable diagnostic (#244), needs the live API.
 data/import_tracking/reports/mediadive_id_audit.tsv
+
+# Cocktail research target list: regenerable from the corpus + volume cache (#150).
+data/import_tracking/reports/cocktail_research_targets.json
