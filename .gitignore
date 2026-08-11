@@ -192,3 +192,6 @@ data/import_tracking/reports/mediadive_id_audit.tsv
 
 # Cocktail research target list: regenerable from the corpus + volume cache (#150).
 data/import_tracking/reports/cocktail_research_targets.json
+
+# Cocktail stock identification report: regenerable diagnostic (#150).
+data/import_tracking/reports/cocktail_stock_identification.tsv

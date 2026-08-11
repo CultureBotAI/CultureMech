@@ -270,6 +270,14 @@ fetch-mediadive-volumes *args="":
 # List flattened cocktails that MediaDive cannot supply a stock+volume for, with the
 # reason each is blocked (#150). Feeds Edison via
 # templates/media_stock_solution_research.md. Read-only.
+# Name the stock a blocked flattened cocktail came from, by exact name+value match
+# against every stock MediaDive has returned (#150). Reports the stock's observed
+# volume distribution as EVIDENCE and deliberately does not fill the volume in —
+# see the script docstring for why the invariant-volume shortcut does not hold.
+[group('QC')]
+identify-cocktail-stocks *args="":
+    uv run --extra dev python scripts/identify_cocktail_stocks.py {{args}}
+
 [group('QC')]
 list-cocktail-research-targets *args="":
     uv run --extra dev python scripts/list_cocktail_research_targets.py {{args}}
