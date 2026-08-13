@@ -21,7 +21,15 @@
     "and found to state this volume. When present, a record is nested only if its",
     "medium is on the list \u2014 a stock's volume is a property of the citing medium, not",
     "of the stock, and MediaDive shows this one used at four different volumes across",
-    "the corpus. Records citing an unverified medium are left alone."
+    "the corpus. Records citing an unverified medium are left alone.",
+    "",
+    "`match_full_signature` (optional): match the record against this stock's WHOLE",
+    "composition rather than only the audit-flagged rows. Needed for stocks whose",
+    "components mostly sit below the flagging threshold (SL-10's ZnCl2 is 0.07 g/l):",
+    "flag-only matching would move the one flagged row and strand the rest, leaving the",
+    "stock in two places at once. The evidence bar rises rather than falls \u2014 four or",
+    "more components must match at EXACTLY the stock's concentrations, and at least one",
+    "must be flagged."
   ],
   "stocks": [
     {
@@ -149,6 +157,102 @@
       "researched_by": "claude-code-web-research",
       "researched_on": "2026-08-13",
       "notes": "All 40 media citing this stock among the blocked records were fetched; 26 state the volume in their own sheet and every one of them says 1.00 ml \u2014 none contradicted it. The other 14 are lettered variants (298b-i, 503b/c, 829a) whose PDFs 404 or omit the line, so they are excluded via applies_to_media rather than assumed. MediaDive observes this stock at four different volumes corpus-wide, which is why per-medium verification gates it."
+    },
+    {
+      "solution_name": "Trace element solution SL-10",
+      "addition_volume_ml": 1,
+      "stock_prepared_in_ml": 1000,
+      "match_full_signature": true,
+      "stock_components": [
+        {
+          "compound": "HCl",
+          "amount": 10,
+          "unit": "ml",
+          "g_l": 2.5
+        },
+        {
+          "compound": "FeCl2 x 4 H2O",
+          "amount": 1.5,
+          "unit": "g",
+          "g_l": 1.5
+        },
+        {
+          "compound": "ZnCl2",
+          "amount": 70,
+          "unit": "mg",
+          "g_l": 0.07
+        },
+        {
+          "compound": "MnCl2 x 4 H2O",
+          "amount": 100,
+          "unit": "mg",
+          "g_l": 0.1
+        },
+        {
+          "compound": "H3BO3",
+          "amount": 6,
+          "unit": "mg",
+          "g_l": 0.006
+        },
+        {
+          "compound": "CoCl2 x 6 H2O",
+          "amount": 190,
+          "unit": "mg",
+          "g_l": 0.19
+        },
+        {
+          "compound": "CuCl2 x 2 H2O",
+          "amount": 2,
+          "unit": "mg",
+          "g_l": 0.002
+        },
+        {
+          "compound": "NiCl2 x 6 H2O",
+          "amount": 24,
+          "unit": "mg",
+          "g_l": 0.024
+        },
+        {
+          "compound": "Na2MoO4 x 2 H2O",
+          "amount": 36,
+          "unit": "mg",
+          "g_l": 0.036
+        }
+      ],
+      "citation": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium503.pdf",
+      "snippet": "Each citing medium's own DSMZ sheet states the SL-10 addition, e.g. medium 503 'Trace element solution SL-10 1.00 ml'. The composition is DSMZ's standard SL-10 (FeCl2 x 4 H2O 1.5 g/l, ZnCl2 0.07, MnCl2 x 4 H2O 0.1, H3BO3 0.006, CoCl2 x 6 H2O 0.19, CuCl2 x 2 H2O 0.002, NiCl2 x 6 H2O 0.024, Na2MoO4 x 2 H2O 0.036, HCl 2.5) made up to 1000 ml.",
+      "applies_to_media": [
+        "148",
+        "194",
+        "213",
+        "294",
+        "336",
+        "347",
+        "386",
+        "407",
+        "503",
+        "504",
+        "647",
+        "708",
+        "734",
+        "788",
+        "824",
+        "829",
+        "843",
+        "876",
+        "903",
+        "943",
+        "1010",
+        "298a",
+        "298b",
+        "386a",
+        "503a",
+        "503c",
+        "503d"
+      ],
+      "researched_by": "claude-code-web-research",
+      "researched_on": "2026-08-13",
+      "notes": "All 54 media citing SL-10 among the blocked records were fetched; 27 state the volume in their own sheet and every one says 1.00 ml \u2014 none contradicted it. The other 27 are lettered variants or JCM copies whose PDFs 404 or omit the line, so they are excluded via applies_to_media. 98 blocked records reproduce 8 or 9 of SL-10's 9 quantified components at exact stock values, which is why this entry uses match_full_signature."
     }
   ]
 }

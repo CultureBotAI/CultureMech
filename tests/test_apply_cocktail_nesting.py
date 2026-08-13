@@ -197,11 +197,14 @@ def test_a_stock_contributing_only_summed_rows_still_gets_its_solution(acn):
 # --- researched stocks are gated to the media whose sheet was read (#150) ----
 
 
-def test_source_medium_prefers_the_dsmz_stamp(acn):
-    assert acn.source_medium({"notes": "Source: KOMODO | DSMZ Medium: 503 (mediadive.medium:503)"}) == "503"
-    assert acn.source_medium({"notes": "DSMZ Medium: 298a"}) == "298a"
-    # no stamp: fall back to the media_term id's local part
-    assert acn.source_medium({"media_term": {"term": {"id": "komodo.medium:1083"}}}) == "1083"
+def test_source_medium_trusts_only_a_mediadive_id(acn):
+    """Originally this read the notes' "DSMZ Medium: N" stamp. That was wrong: on a
+    KOMODO-sourced record N is the KOMODO id, and KOMODO 294 is not DSMZ 294 (#244).
+    Only a mediadive.medium id addresses the sheet that was actually verified."""
+    assert acn.source_medium({"media_term": {"term": {"id": "mediadive.medium:503"}}}) == "503"
+    assert acn.source_medium({"media_term": {"term": {"id": "mediadive.medium:298a"}}}) == "298a"
+    assert acn.source_medium({"notes": "DSMZ Medium: 503",
+                              "media_term": {"term": {"id": "komodo.medium:503"}}}) is None
     assert acn.source_medium({}) is None
 
 
@@ -211,9 +214,13 @@ def test_a_researched_stock_is_refused_for_an_unverified_medium(acn):
     whose medium's sheet was never read must not inherit the volume by association."""
     stock = {"solution_name": "Seven vitamins solution", "addition_volume_ml": 1,
              "applies_to_media": ["503", "194"]}
-    assert [s["solution_name"] for s in acn.stocks_for_record([stock], {"notes": "DSMZ Medium: 503"})] \
+    md = {"media_term": {"term": {"id": "mediadive.medium:503"}}}
+    assert [s["solution_name"] for s in acn.stocks_for_record([stock], md)] \
         == ["Seven vitamins solution"]
-    assert acn.stocks_for_record([stock], {"notes": "DSMZ Medium: 298b"}) == []
+    other = {"media_term": {"term": {"id": "mediadive.medium:298b"}}}
+    assert acn.stocks_for_record([stock], other) == []
+    # a KOMODO record cannot be verified at all, so a gated stock is refused
+    assert acn.stocks_for_record([stock], {"media_term": {"term": {"id": "komodo.medium:503"}}}) == []
     assert acn.stocks_for_record([stock], {}) == []
 
 
@@ -221,5 +228,57 @@ def test_a_stock_without_the_gate_stays_universal(acn):
     """`applies_to_media` is optional: a stock verified as medium-independent (or one
     whose citing media were all checked) applies wherever its composition matches."""
     stock = {"solution_name": "Trace salt solution", "addition_volume_ml": 1}
-    assert len(acn.stocks_for_record([stock], {"notes": "DSMZ Medium: anything"})) == 1
+    assert len(acn.stocks_for_record([stock], {"media_term": {"term": {"id": "komodo.medium:9"}}})) == 1
     assert len(acn.stocks_for_record([stock], {})) == 1
+
+
+# --- full-signature matching, and the id trap it must not fall into (#150) ---
+
+
+SL10 = [{"compound": "FeCl2 x 4 H2O", "g_l": 1.5}, {"compound": "ZnCl2", "g_l": 0.07},
+        {"compound": "MnCl2 x 4 H2O", "g_l": 0.1}, {"compound": "H3BO3", "g_l": 0.006},
+        {"compound": "CoCl2 x 6 H2O", "g_l": 0.19}]
+
+
+def test_signature_moves_sub_threshold_components_too(acn):
+    """The reason this matcher exists. Only FeCl2 (1.5) trips the audit; ZnCl2 0.07
+    and H3BO3 0.006 never will. Flag-only matching moves FeCl2 alone and strands the
+    rest, leaving the stock in two places at once."""
+    ings = [_ing("FeCl2 x 4 H2O", "1.5"), _ing("ZnCl2", "0.07"),
+            _ing("MnCl2 x 4 H2O", "0.1"), _ing("H3BO3", "0.006")]
+    idx, _ = acn.match_stock_signature(ings, SL10, {"fecl2 x 4 h2o"})
+    assert idx == [0, 1, 2, 3], "the whole stock must move, not just the flagged row"
+
+
+def test_signature_still_requires_a_flagged_row(acn):
+    """Only records the audit calls broken may be restructured."""
+    ings = [_ing("FeCl2 x 4 H2O", "1.5"), _ing("ZnCl2", "0.07"),
+            _ing("MnCl2 x 4 H2O", "0.1"), _ing("H3BO3", "0.006")]
+    assert acn.match_stock_signature(ings, SL10, flagged_names=set())[0] == []
+
+
+def test_signature_needs_enough_components(acn):
+    """Two coincidental value matches are not a stock. Four is the bar."""
+    ings = [_ing("FeCl2 x 4 H2O", "1.5"), _ing("ZnCl2", "0.07")]
+    assert acn.match_stock_signature(ings, SL10, {"fecl2 x 4 h2o"})[0] == []
+
+
+def test_signature_requires_exact_values(acn):
+    """A different trace stock sharing component NAMES must not match: halosimplex
+    carries H3BO3 at 3 where SL-10 has 0.006, a 500x difference."""
+    ings = [_ing("FeCl2 x 4 H2O", "1.5"), _ing("ZnCl2", "0.07"),
+            _ing("MnCl2 x 4 H2O", "0.3"), _ing("H3BO3", "3")]
+    idx, _ = acn.match_stock_signature(ings, SL10, {"fecl2 x 4 h2o"})
+    assert idx == [], "only 2 of 5 match at exact values — below the bar"
+
+
+def test_source_medium_refuses_a_komodo_number(acn):
+    """THE #244 trap, in this gate. KOMODO_294_PELOBACTER stamps "DSMZ Medium: 294"
+    in its notes, but DSMZ 294 is SYNTROPHUS HQGo1 — a different medium. Trusting the
+    stamp would cite one medium's sheet as verification for another's volume."""
+    komodo = {"notes": "Source: KOMODO ModelSEED | ID: 294 | DSMZ Medium: 294",
+              "media_term": {"term": {"id": "komodo.medium:294"}}}
+    assert acn.source_medium(komodo) is None
+
+    mediadive = {"media_term": {"term": {"id": "mediadive.medium:503"}}}
+    assert acn.source_medium(mediadive) == "503"
