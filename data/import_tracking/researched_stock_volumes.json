@@ -1,0 +1,43 @@
+{
+  "_README": [
+    "Stock solutions whose composition AND addition volume were recovered by reading a",
+    "primary source, for flattened cocktails MediaDive cannot serve (#150).",
+    "",
+    "TRACKED, unlike the other cocktail caches, because it is curated research with",
+    "citations rather than a regenerable diagnostic. Losing it would mean re-reading the",
+    "sources.",
+    "",
+    "This is NOT the rejected shortcut. PR #251 established that reusing a stock's usual",
+    "volume does not hold: the well-sampled stocks vary, the invariant-looking ones are",
+    "under-sampled. Every volume here is printed in the cited source and was read per",
+    "citing medium, not generalised from a population.",
+    "",
+    "An entry is usable by apply_cocktail_nesting only if a record's flagged ingredients",
+    "match its `stock_components` on NAME and VALUE — the same test used for",
+    "MediaDive-sourced stocks, so a wrong stock cannot be applied on the strength of this",
+    "file alone."
+  ],
+  "stocks": [
+    {
+      "solution_name": "Trace salt solution",
+      "addition_volume_ml": 1,
+      "stock_prepared_in_ml": 100,
+      "stock_components": [
+        {"compound": "FeSO4 x 7 H2O", "amount": 0.1, "unit": "g", "g_l": 1},
+        {"compound": "MnCl2 x 4 H2O", "amount": 0.1, "unit": "g", "g_l": 1},
+        {"compound": "ZnSO4 x 7 H2O", "amount": 0.1, "unit": "g", "g_l": 1}
+      ],
+      "citation": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium84.pdf",
+      "snippet": "Trace element solution: FeSO4 x 7 H2O 0.1 g / MnCl2 x 4 H2O 0.1 g / ZnSO4 x 7 H2O 0.1 g / Distilled water 100.0 ml; used in the medium as 'Trace element solution (see below) 1.0 ml' per 1000.0 ml distilled water.",
+      "volume_verified_per_medium": {
+        "84": "Trace element solution (see below) 1.0 ml",
+        "252": "Trace element solution (see medium 84) 1.0 ml",
+        "993": "Trace salts solution (see medium 84) 1",
+        "547": "Trace salt solution 1"
+      },
+      "researched_by": "claude-code-web-research",
+      "researched_on": "2026-08-12",
+      "notes": "Recovered via the native research path in .claude/skills/deep-research-medium/SKILL.md while the Edison account was returning 402. The MediaDive-derived library independently carries the same composition and 1 ml / 100 ml figures, which corroborates but is not the basis."
+    }
+  ]
+}
