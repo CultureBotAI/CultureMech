@@ -271,7 +271,6 @@ archaea/archaeoglobus_neptunius_medium.yaml	CultureMech:001509	2	0	1	1	no	no
 archaea/archaeoglobus_sulfaticallidus_medium.yaml	CultureMech:000741	1	0	0	1	no	no
 archaea/caldisphaera_medium.yaml	CultureMech:002173	1	0	0	1	no	no
 archaea/caldivirga_medium.yaml	CultureMech:002043	1	0	0	1	no	no
-archaea/caldococcus_medium.yaml	CultureMech:002864	3	0	3	0	no	yes
 archaea/cm1a_halorubrum_medium.yaml	CultureMech:001165	3	0	1	2	no	no
 archaea/conexivisphaera_medium.yaml	CultureMech:001193	1	0	0	1	no	no
 archaea/desulfurococcus_amylolyticus_medium.yaml	CultureMech:002548	1	0	1	0	no	no
@@ -296,12 +295,10 @@ archaea/halorhabdus_medium.yaml	CultureMech:002651	1	0	1	0	no	no
 archaea/halorhabdus_utahensis_medium.yaml	CultureMech:002099	2	0	2	0	no	no
 archaea/halorussus_varius_medium_msc_15_2.yaml	CultureMech:001167	1	0	1	0	no	no
 archaea/halorutilales_haloarchaeon_medium.yaml	CultureMech:001265	2	0	1	1	no	no
-archaea/halosimplex_medium.yaml	CultureMech:002655	3	0	3	0	no	yes
 archaea/hydrogen_using_marine_methanogen_medium.yaml	CultureMech:008597	9	0	1	8	yes	no
 archaea/hydrogen_using_methanogen_medium.yaml	CultureMech:008308	9	0	1	8	yes	no
 archaea/hydrogenotrophic_methanogen_medium.yaml	CultureMech:009523	1	0	0	1	yes	no
 archaea/ignicoccus_medium_for_dsm_18386.yaml	CultureMech:009166	2	1	1	0	yes	no
-archaea/liquid_basal_medium_for_methanosarcina.yaml	CultureMech:002284	7	0	7	0	no	yes
 archaea/marine_h2_using_methanogen_medium.yaml	CultureMech:008267	9	0	1	8	yes	no
 archaea/marine_methanobacterium_medium.yaml	CultureMech:007804	1	0	0	1	yes	no
 archaea/marine_methanosaeta_medium.yaml	CultureMech:008439	9	0	1	8	yes	no
@@ -406,7 +403,6 @@ archaea/modified_9k_medium_for_ferroplasma_aeolicum.yaml	CultureMech:002941	2	0	
 archaea/modified_cellulolytic_haloarchaea_medium.yaml	CultureMech:002353	1	0	1	0	no	no
 archaea/modified_methanobacterium_medium_for_dsm_1093.yaml	CultureMech:009215	14	1	8	5	yes	no
 archaea/modified_methanoculleus_medium.yaml	CultureMech:008672	17	0	7	10	yes	no
-archaea/modified_picrophilus_medium.yaml	CultureMech:002433	4	0	4	0	no	yes
 archaea/natranaeroarchaeum_medium.yaml	CultureMech:002261	1	0	1	0	no	no
 archaea/natranaeroarchaeum_medium_aarc1.yaml	CultureMech:000945	2	0	1	1	no	no
 archaea/natronorubrum_thiooxidans_medium.yaml	CultureMech:000885	1	0	1	0	no	no
@@ -424,7 +420,6 @@ archaea/pyrococcus_medium_2.yaml	CultureMech:008136	2	0	1	1	yes	no
 archaea/pyrodictium_abyssi_medium.yaml	CultureMech:005709	5	0	0	5	no	yes
 archaea/pyrodictium_delaneyi_medium.yaml	CultureMech:000667	3	0	2	1	no	no
 archaea/pyrodictium_occultum_medium.yaml	CultureMech:008187	2	0	1	1	yes	no
-archaea/pyrolobus_medium.yaml	CultureMech:003204	4	0	4	0	no	yes
 archaea/revised_sulfolobus_medium.yaml	CultureMech:008895	2	0	2	0	no	no
 archaea/saccharolobus_mt_4_medium.yaml	CultureMech:001258	1	0	1	0	no	no
 archaea/sulfolobus_medium_anaerobic.yaml	CultureMech:008970	7	1	6	0	yes	no
@@ -1691,7 +1686,6 @@ bacterial/artficial_freshwater_medium_i.yaml	CultureMech:002297	1	0	1	0	yes	no
 bacterial/artficial_freshwater_medium_ii.yaml	CultureMech:002298	1	0	1	0	yes	no
 bacterial/artficial_marine_water_medium.yaml	CultureMech:007728	1	0	0	1	yes	no
 bacterial/artificial_deep_lake_medium.yaml	CultureMech:008960	3	0	0	3	yes	no
-bacterial/artificial_deep_lake_vitamin_medium.yaml	CultureMech:002530	3	0	0	3	no	yes
 bacterial/artificial_pilot_plant_water_medium.yaml	CultureMech:002487	1	0	1	0	no	no
 bacterial/artificial_sea_water_tryptone_soy_broth_medium_asw_tsb_medium.yaml	CultureMech:001173	2	1	1	0	no	no
 bacterial/artificial_seawater_medium_for_strain_js_srb250lac.yaml	CultureMech:008354	21	1	10	10	yes	no
@@ -1709,13 +1703,11 @@ bacterial/asw_ses.yaml	CultureMech:000318	2	1	0	1	no	no
 bacterial/atalassotoga_azc2201_medium.yaml	CultureMech:002355	3	0	3	0	yes	no
 bacterial/athalassotoga_medium.yaml	CultureMech:001085	1	0	0	1	no	no
 bacterial/atribacterium_medium.yaml	CultureMech:002438	1	0	1	0	yes	no
-bacterial/atyp_medium.yaml	CultureMech:002717	5	0	1	4	no	yes
 bacterial/azc_1502_medium.yaml	CultureMech:002295	3	0	3	0	no	yes
 bacterial/azoarcus_taiwanensis_medium.yaml	CultureMech:001123	1	0	1	0	no	no
 bacterial/azospira_medium.yaml	CultureMech:009571	4	0	4	0	yes	no
 bacterial/bacillus_alkalidiazotrophicus_medium.yaml	CultureMech:000658	1	0	1	0	no	no
 bacterial/bacillus_filiformis_medium.yaml	CultureMech:002174	1	0	1	0	no	no
-bacterial/bacillus_macyae_medium.yaml	CultureMech:003163	5	0	1	4	no	yes
 bacterial/bacillus_medium.yaml	CultureMech:009007	1	1	0	0	no	no
 bacterial/bacillus_selenitireducens_medium.yaml	CultureMech:006925	2	0	1	1	no	no
 bacterial/bacillus_tusciae_medium_add_agar.yaml	CultureMech:008976	1	1	0	0	yes	no
@@ -1728,7 +1720,6 @@ bacterial/bb.yaml	CultureMech:000320	5	0	5	0	no	yes
 bacterial/bb_merds.yaml	CultureMech:000323	6	1	5	0	no	yes
 bacterial/bbm_v.yaml	CultureMech:001244	6	0	4	2	no	yes
 bacterial/belh1_medium.yaml	CultureMech:003221	1	0	1	0	no	no
-bacterial/betaine_bicarbonate_buffered_medium.yaml	CultureMech:003112	4	0	1	3	no	yes
 bacterial/bg11.yaml	CultureMech:000324	2	0	2	0	no	no
 bacterial/bg11_medium.yaml	CultureMech:009170	3	1	2	0	no	no
 bacterial/bg11_ph9_0.yaml	CultureMech:008730	5	0	5	0	yes	no
@@ -1850,7 +1841,6 @@ bacterial/cow_manure_agar.yaml	CultureMech:001794	1	1	0	0	no	no
 bacterial/creatinine_nmh_medium.yaml	CultureMech:006007	2	0	1	1	no	no
 bacterial/credm1_medium.yaml	CultureMech:001828	2	0	1	1	no	no
 bacterial/cryptoanaerobacter_medium.yaml	CultureMech:000444	2	0	1	1	no	no
-bacterial/ctm_medium.yaml	CultureMech:002279	12	0	2	10	no	yes
 bacterial/cy_h_liquid_medium_for_myxobacteria.yaml	CultureMech:001020	1	0	0	1	no	no
 bacterial/cyanobacteria_medium_1_2_swes_brackish_water_medium.yaml	CultureMech:001261	5	0	4	1	no	yes
 bacterial/cyanobacteria_medium_ba.yaml	CultureMech:001159	4	0	3	1	no	yes
@@ -1930,7 +1920,6 @@ bacterial/desulfohalobium_utahense_medium.yaml	CultureMech:003305	1	0	1	0	no	no
 bacterial/desulfohalotomaculum_medium.yaml	CultureMech:001962	1	0	1	0	no	no
 bacterial/desulfohalovibrio_l21_ls_medium.yaml	CultureMech:001000	1	0	0	1	no	no
 bacterial/desulfoluna_medium.yaml	CultureMech:000530	1	0	1	0	no	no
-bacterial/desulfomicrobium_medium.yaml	CultureMech:002963	5	0	1	4	no	yes
 bacterial/desulfomonile_medium.yaml	CultureMech:001654	1	0	1	0	no	no
 bacterial/desulfomusa_hansenii_medium.yaml	CultureMech:006793	2	0	1	1	no	no
 bacterial/desulfonatronospira_medium.yaml	CultureMech:000534	2	0	1	1	no	no
@@ -2420,7 +2409,6 @@ bacterial/hydrogenobacter_florentissimum_medium.yaml	CultureMech:002421	1	0	1	0	
 bacterial/hydrogenobacter_medium.yaml	CultureMech:008278	8	0	1	7	yes	no
 bacterial/hydrogenobacter_thermophilus_medium.yaml	CultureMech:008001	1	0	1	0	yes	no
 bacterial/hydroxybenzoate_medium.yaml	CultureMech:005630	2	0	1	1	no	no
-bacterial/hyl_medium.yaml	CultureMech:002968	3	0	3	0	no	yes
 bacterial/hylemonella_gracilis_medium.yaml	CultureMech:002458	1	1	0	0	no	no
 bacterial/hyphomicrobium_medium.yaml	CultureMech:000813	2	0	2	0	no	no
 bacterial/hyphomicrobium_medium_saf.yaml	CultureMech:000846	3	0	1	2	no	no
@@ -2442,7 +2430,6 @@ bacterial/isosphaera_pallida_medium.yaml	CultureMech:001898	2	0	0	2	no	no
 bacterial/isp2_modified_medium_for_methylibium.yaml	CultureMech:001062	1	0	1	0	no	no
 bacterial/jcm_medium_161.yaml	CultureMech:009223	3	0	2	1	no	no
 bacterial/jcm_medium_242.yaml	CultureMech:009605	10	0	1	9	no	yes
-bacterial/jcm_medium_no_1046.yaml	CultureMech:002230	4	0	3	1	no	yes
 bacterial/jcm_medium_no_216.yaml	CultureMech:002578	1	0	1	0	no	no
 bacterial/jcm_medium_no_223.yaml	CultureMech:002585	1	0	0	1	no	no
 bacterial/jcm_medium_no_272.yaml	CultureMech:002629	1	0	1	0	no	no
@@ -2510,7 +2497,6 @@ bacterial/m17_medium_oxoid_supplemented_with_0_5_wt_vol_glucose.yaml	CultureMech
 bacterial/m17_medium_oxoid_supplemented_with_1_wt_vol_glucose.yaml	CultureMech:009428	1	1	0	0	yes	no
 bacterial/m1_nocardiopsis_arabia_medium.yaml	CultureMech:000498	1	1	0	0	no	no
 bacterial/m1d_medium.yaml	CultureMech:008142	1	0	0	1	no	no
-bacterial/m25y_medium.yaml	CultureMech:002246	3	0	3	0	no	yes
 bacterial/m2_medium.yaml	CultureMech:000805	1	0	1	0	no	no
 bacterial/m2gsc_medium.yaml	CultureMech:009240	1	0	0	1	no	no
 bacterial/m2sgc_broth_containing_tetracycline_10_g_ml_or_rifampin_100_g_ml.yaml	CultureMech:009336	1	0	0	1	no	no
@@ -2525,7 +2511,6 @@ bacterial/mac.yaml	CultureMech:008582	7	0	4	3	yes	no
 bacterial/madctw_medium.yaml	CultureMech:008986	2	0	0	2	no	no
 bacterial/maf6_se.yaml	CultureMech:000356	2	0	0	2	no	no
 bacterial/magnetospirillum_medium.yaml	CultureMech:001484	5	0	1	4	no	yes
-bacterial/magnetospirillum_medium_a.yaml	CultureMech:002906	4	0	0	4	no	yes
 bacterial/magnetospirillum_medium_b.yaml	CultureMech:003013	1	0	1	0	no	no
 bacterial/magnetovibrio_medium.yaml	CultureMech:000954	2	0	1	1	no	no
 bacterial/maleate_liquid_medium.yaml	CultureMech:002496	17	0	9	8	no	yes
@@ -2893,7 +2878,6 @@ bacterial/methylotroph_medium.yaml	CultureMech:002387	2	0	2	0	no	no
 bacterial/methyloversatilis_thermotolerans_medium.yaml	CultureMech:000560	1	0	0	1	no	no
 bacterial/methylovirgula_ligni_medium.yaml	CultureMech:000677	1	0	1	0	no	no
 bacterial/mg_medium.yaml	CultureMech:005888	1	0	0	1	no	no
-bacterial/mga_agar.yaml	CultureMech:002888	3	0	3	0	no	yes
 bacterial/mgp_medium.yaml	CultureMech:002721	1	0	1	0	no	no
 bacterial/mh_ocm_medium.yaml	CultureMech:009202	2	1	0	1	yes	no
 bacterial/mhy.yaml	CultureMech:000366	2	0	0	2	no	no
@@ -2942,7 +2926,6 @@ bacterial/mo_sedi_medium.yaml	CultureMech:003201	1	0	1	0	no	no
 bacterial/mo_xq_medium.yaml	CultureMech:002251	1	0	1	0	no	no
 bacterial/mo_ys_medium.yaml	CultureMech:002252	1	0	1	0	no	no
 bacterial/modified_1161_medium.yaml	CultureMech:008694	18	1	10	7	yes	no
-bacterial/modified_1_10_pygv_medium.yaml	CultureMech:003193	6	0	0	6	no	yes
 bacterial/modified_1_5_sws_casein_starch_medium.yaml	CultureMech:008383	6	0	6	0	yes	no
 bacterial/modified_289_medium.yaml	CultureMech:008578	10	0	4	6	yes	no
 bacterial/modified_337a_agar_medium.yaml	CultureMech:009024	5	1	3	1	yes	no
@@ -3245,7 +3228,6 @@ bacterial/saltwater_medium_with_hydrogen.yaml	CultureMech:003114	1	0	1	0	yes	no
 bacterial/saltwater_medium_with_lactate.yaml	CultureMech:002811	5	0	1	4	no	yes
 bacterial/sbbm.yaml	CultureMech:000403	4	0	2	2	no	no
 bacterial/schlesneria_paludicola_medium.yaml	CultureMech:000703	1	0	1	0	no	no
-bacterial/sea_salts_tyg_medium.yaml	CultureMech:003306	4	0	4	0	no	yes
 bacterial/sea_salts_yeast_extract_glucose_medium.yaml	CultureMech:007654	1	0	0	1	no	no
 bacterial/sea_salts_ytg_medium.yaml	CultureMech:002466	1	0	1	0	no	no
 bacterial/sea_water_yeast_peptone_medium.yaml	CultureMech:006887	1	1	0	0	no	no
@@ -3262,7 +3244,6 @@ bacterial/sf1_medium.yaml	CultureMech:005061	1	0	1	0	no	no
 bacterial/sh_seawater_medium.yaml	CultureMech:000746	3	1	2	0	no	no
 bacterial/si_medium.yaml	CultureMech:002642	1	0	1	0	no	no
 bacterial/singulisphaera_medium.yaml	CultureMech:000582	1	0	1	0	no	no
-bacterial/sm_medium.yaml	CultureMech:003248	5	0	5	0	no	yes
 bacterial/sme_medium.yaml	CultureMech:000594	1	1	0	0	no	no
 bacterial/soil_extract_medium.yaml	CultureMech:000762	1	1	0	0	no	no
 bacterial/solidesulfovibrio_marrakechensis_medium.yaml	CultureMech:000652	2	0	1	1	no	no
@@ -3345,7 +3326,6 @@ bacterial/supplemented_middlebrook.yaml	CultureMech:008987	3	1	0	2	no	no
 bacterial/supplemented_tryptophan_m9_medium.yaml	CultureMech:001561	1	0	0	1	no	no
 bacterial/svo_medium.yaml	CultureMech:009126	10	1	0	9	yes	no
 bacterial/swmty_marine_medium.yaml	CultureMech:008800	7	0	7	0	yes	no
-bacterial/syfac_medium.yaml	CultureMech:003181	4	0	4	0	no	yes
 bacterial/sylc_medium.yaml	CultureMech:003598	5	0	4	1	no	yes
 bacterial/synthetic_dextrose_sd_minimal_medium.yaml	CultureMech:008682	1	1	0	0	no	no
 bacterial/syntrophobacter_mpob_medium.yaml	CultureMech:001821	2	0	1	1	no	no
@@ -3361,7 +3341,6 @@ bacterial/syntrophus_aciditrophicus_medium.yaml	CultureMech:003308	1	0	1	0	no	no
 bacterial/syntrophus_medium.yaml	CultureMech:004741	1	0	0	1	no	no
 bacterial/sypc_medium.yaml	CultureMech:003908	4	0	4	0	no	yes
 bacterial/sypg_medium.yaml	CultureMech:003816	8	0	4	4	no	yes
-bacterial/syphc_medium.yaml	CultureMech:003246	8	0	4	4	no	yes
 bacterial/t2_medium_for_thiobacillus.yaml	CultureMech:008823	7	1	6	0	yes	no
 bacterial/t49_medium.yaml	CultureMech:004041	5	0	1	4	no	yes
 bacterial/t_asw_medium.yaml	CultureMech:006021	5	0	5	0	no	yes
@@ -3399,7 +3378,6 @@ bacterial/thermithiobacillus_medium.yaml	CultureMech:001432	4	0	3	1	no	yes
 bacterial/thermoacetogenium_medium.yaml	CultureMech:002040	2	0	1	1	no	no
 bacterial/thermoacetogenium_phaeum_medium.yaml	CultureMech:006730	2	0	1	1	no	no
 bacterial/thermoanaerobacter_ba_medium.yaml	CultureMech:001812	1	0	0	1	no	no
-bacterial/thermoanaerobacter_ethanolicus_medium.yaml	CultureMech:002583	3	0	0	3	no	yes
 bacterial/thermoanaerobacter_kivui_medium.yaml	CultureMech:001198	1	0	1	0	no	no
 bacterial/thermoanaerobacter_koko_medium.yaml	CultureMech:001848	2	0	1	1	no	no
 bacterial/thermoanaerobacter_sulfurophilus_medium.yaml	CultureMech:001976	2	0	1	1	no	no
@@ -3589,7 +3567,6 @@ bacterial/ycfag_medium.yaml	CultureMech:009194	4	0	0	4	no	yes
 bacterial/yma_medium_modified.yaml	CultureMech:000454	1	0	1	0	no	no
 bacterial/ysg_medium_ph_4_5.yaml	CultureMech:008347	1	1	0	0	yes	no
 bacterial/ytbc_medium.yaml	CultureMech:000812	1	0	0	1	no	no
-bacterial/ytps_medium.yaml	CultureMech:002188	3	0	0	3	no	yes
 bacterial/z45_4_medium_for_cyanobacteria.yaml	CultureMech:001204	2	0	2	0	no	no
 bacterial/zavarzinella_formosa_medium.yaml	CultureMech:000639	1	0	1	0	no	no
 bacterial/zf2_medium.yaml	CultureMech:006874	5	0	1	4	no	yes
@@ -3601,7 +3578,6 @@ fungal/ferrous_sulfate_yeast_extract_medium.yaml	CultureMech:010443	1	0	1	0	no	n
 fungal/gyp_glucose_yeast_peptone_medium.yaml	CultureMech:010480	2	0	2	0	no	no
 fungal/halanaeroarchaea_medium_with_yeast_extract_and_formate.yaml	CultureMech:010500	1	0	1	0	no	no
 fungal/halanaeroarchaea_medium_with_yeast_extract_and_glucose.yaml	CultureMech:010502	1	0	1	0	no	no
-fungal/hepes_peptone_yeast_extract_medium.yaml	CultureMech:010548	3	0	3	0	no	yes
 fungal/natronoanaeroarchaea_medium_with_yeast_extract_and_formate.yaml	CultureMech:010504	1	0	1	0	no	no
 fungal/natronoanaeroarchaea_medium_with_yeast_extract_and_glucose.yaml	CultureMech:010503	1	0	1	0	no	no
 fungal/natronoarchaea_media_with_yeast_extract_and_lactate.yaml	CultureMech:010501	1	0	1	0	no	no
@@ -3640,7 +3616,7 @@ specialized/propionigenium_modestum_medium_marine.yaml	CultureMech:015351	1	0	1	
 specialized/pygv_marine_medium_a.yaml	CultureMech:015399	1	0	1	0	no	no
 specialized/pygv_marine_medium_b.yaml	CultureMech:015378	1	0	1	0	no	no
 specialized/sporomusa_medium_marine.yaml	CultureMech:015352	2	0	1	1	no	no
-specialized/swmty_marine_medium.yaml	CultureMech:015398	4	1	3	0	no	yes
+specialized/swmty_marine_medium.yaml	CultureMech:015398	1	1	0	0	yes	no
 specialized/varel_bryant_medium_glucose_nomet_dtt_nas_b12_nonitrogen.yaml	CultureMech:015780	1	0	0	1	no	no
 specialized/varel_bryant_medium_lowcys_lowmet.yaml	CultureMech:015784	1	0	0	1	no	no
 specialized/water.yaml	CultureMech:015786	1	1	0	0	no	no

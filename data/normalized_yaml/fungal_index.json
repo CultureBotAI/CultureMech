@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-07T07:15:56.757425+00:00",
+  "generated": "2026-08-13T23:35:42.932001+00:00",
   "category": "fungal",
   "count": 126,
   "recipes": {
@@ -529,10 +529,11 @@
     "CultureMech:010548": {
       "name": "hepes_peptone_yeast_extract_medium",
       "filename": "hepes_peptone_yeast_extract_medium.yaml",
-      "ingredient_count": 32,
+      "ingredient_count": 29,
       "id": "CultureMech:010548",
       "source_id": "mediadive.medium:J764",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "fungal"
       ]

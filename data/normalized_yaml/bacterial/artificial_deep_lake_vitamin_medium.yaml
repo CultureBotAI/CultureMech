@@ -77,36 +77,6 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-- preferred_term: Biotin
-  term:
-    id: CHEBI:15956
-    label: Biotin
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15956
-    label: Biotin
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17439
-    label: Vitamin B12
-- preferred_term: Thiamine HCl
-  term:
-    id: CHEBI:49105
-    label: Thiamine HCl
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:49105
-    label: Thiamine HCl
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -140,4 +110,49 @@ curation_history:
   notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-08-13T23:31:54.282053+00:00'
+  curator: apply_cocktail_nesting.py
+  action: NESTED_FLATTENED_COCKTAIL
+  notes: 'Moved 3 stock-strength component(s) out of ingredients into 1 solution(s):
+    3 -> ''Vitamin solution'' @ 10 ml/l. Each moved component matched the MediaDive
+    stock by name AND value; bulk ingredients sharing a name were left in place (#150).'
+  changes: Nested 3 ingredient(s) under 1 solution(s); ingredients 10 -> 7
 high_metal: true
+solutions:
+- preferred_term: Vitamin solution
+  composition:
+  - preferred_term: Biotin
+    term:
+      id: CHEBI:15956
+      label: Biotin
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: Biotin
+  - preferred_term: Vitamin B12
+    term:
+      id: CHEBI:17439
+      label: Vitamin B12
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17439
+      label: Vitamin B12
+  - preferred_term: Thiamine HCl
+    term:
+      id: CHEBI:49105
+      label: Thiamine HCl
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49105
+      label: Thiamine HCl
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+  preparation_notes: Stock prepared in 1000 ml; added at 10 ml per litre of medium.
+    Composition and volume from MediaDive (#150).

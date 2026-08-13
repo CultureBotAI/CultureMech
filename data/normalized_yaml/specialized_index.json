@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-07T07:15:57.265416+00:00",
+  "generated": "2026-08-13T23:35:43.426750+00:00",
   "category": "specialized",
   "count": 455,
   "recipes": {
@@ -3839,10 +3839,11 @@
     "CultureMech:015398": {
       "name": "swmty_marine_medium",
       "filename": "swmty_marine_medium.yaml",
-      "ingredient_count": 15,
+      "ingredient_count": 12,
       "id": "CultureMech:015398",
       "source_id": "mediadive.medium:J227",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "specialized"
       ],
