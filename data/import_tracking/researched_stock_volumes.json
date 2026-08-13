@@ -13,9 +13,15 @@
     "citing medium, not generalised from a population.",
     "",
     "An entry is usable by apply_cocktail_nesting only if a record's flagged ingredients",
-    "match its `stock_components` on NAME and VALUE — the same test used for",
+    "match its `stock_components` on NAME and VALUE \u2014 the same test used for",
     "MediaDive-sourced stocks, so a wrong stock cannot be applied on the strength of this",
-    "file alone."
+    "file alone.",
+    "",
+    "`applies_to_media` (optional): the source medium numbers whose OWN sheet was read",
+    "and found to state this volume. When present, a record is nested only if its",
+    "medium is on the list \u2014 a stock's volume is a property of the citing medium, not",
+    "of the stock, and MediaDive shows this one used at four different volumes across",
+    "the corpus. Records citing an unverified medium are left alone."
   ],
   "stocks": [
     {
@@ -23,9 +29,24 @@
       "addition_volume_ml": 1,
       "stock_prepared_in_ml": 100,
       "stock_components": [
-        {"compound": "FeSO4 x 7 H2O", "amount": 0.1, "unit": "g", "g_l": 1},
-        {"compound": "MnCl2 x 4 H2O", "amount": 0.1, "unit": "g", "g_l": 1},
-        {"compound": "ZnSO4 x 7 H2O", "amount": 0.1, "unit": "g", "g_l": 1}
+        {
+          "compound": "FeSO4 x 7 H2O",
+          "amount": 0.1,
+          "unit": "g",
+          "g_l": 1
+        },
+        {
+          "compound": "MnCl2 x 4 H2O",
+          "amount": 0.1,
+          "unit": "g",
+          "g_l": 1
+        },
+        {
+          "compound": "ZnSO4 x 7 H2O",
+          "amount": 0.1,
+          "unit": "g",
+          "g_l": 1
+        }
       ],
       "citation": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium84.pdf",
       "snippet": "Trace element solution: FeSO4 x 7 H2O 0.1 g / MnCl2 x 4 H2O 0.1 g / ZnSO4 x 7 H2O 0.1 g / Distilled water 100.0 ml; used in the medium as 'Trace element solution (see below) 1.0 ml' per 1000.0 ml distilled water.",
@@ -38,6 +59,96 @@
       "researched_by": "claude-code-web-research",
       "researched_on": "2026-08-12",
       "notes": "Recovered via the native research path in .claude/skills/deep-research-medium/SKILL.md while the Edison account was returning 402. The MediaDive-derived library independently carries the same composition and 1 ml / 100 ml figures, which corroborates but is not the basis."
+    },
+    {
+      "solution_name": "Seven vitamins solution",
+      "addition_volume_ml": 1,
+      "stock_prepared_in_ml": 1000,
+      "stock_components": [
+        {
+          "compound": "Vitamin B12",
+          "amount": 100,
+          "unit": "mg",
+          "g_l": 0.1
+        },
+        {
+          "compound": "p-Aminobenzoic acid",
+          "amount": 80,
+          "unit": "mg",
+          "g_l": 0.08
+        },
+        {
+          "compound": "D-(+)-biotin",
+          "amount": 20,
+          "unit": "mg",
+          "g_l": 0.02
+        },
+        {
+          "compound": "Nicotinic acid",
+          "amount": 200,
+          "unit": "mg",
+          "g_l": 0.2
+        },
+        {
+          "compound": "Calcium pantothenate",
+          "amount": 100,
+          "unit": "mg",
+          "g_l": 0.1
+        },
+        {
+          "compound": "Pyridoxine hydrochloride",
+          "amount": 300,
+          "unit": "mg",
+          "g_l": 0.3
+        },
+        {
+          "compound": "Thiamine-HCl x 2 H2O",
+          "amount": 200,
+          "unit": "mg",
+          "g_l": 0.2
+        }
+      ],
+      "citation": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium503.pdf",
+      "snippet": "Medium 503 (ANAEROBIC FRESHWATER (FWM) MEDIUM) lists 'Seven vitamins solution 1.00 ml'; medium 194 states 'Supplement medium with 1.00 ml/l seven vitamins solution (see medium 503)'; medium 504 reproduces the stock as 'Seven vitamins solution (from medium 503) Vitamin B12 100.00 mg ...' in 1000 ml.",
+      "volume_verified_per_medium": {
+        "503": "Seven vitamins solution 1.00 ml",
+        "194": "Supplement medium with 1.00 ml/l seven vitamins solution (see medium 503)",
+        "504": "Seven vitamins solution 1.00 ml",
+        "1058": "Seven vitamins solution 1.00 ml",
+        "829": "Seven vitamins solution 1.00 ml",
+        "843": "Seven vitamins solution 1.00 ml"
+      },
+      "applies_to_media": [
+        "148",
+        "149",
+        "194",
+        "213",
+        "294",
+        "336",
+        "347",
+        "386",
+        "407",
+        "503",
+        "504",
+        "647",
+        "722",
+        "734",
+        "788",
+        "829",
+        "843",
+        "845",
+        "903",
+        "943",
+        "1058",
+        "1291",
+        "298a",
+        "386a",
+        "503a",
+        "503d"
+      ],
+      "researched_by": "claude-code-web-research",
+      "researched_on": "2026-08-13",
+      "notes": "All 40 media citing this stock among the blocked records were fetched; 26 state the volume in their own sheet and every one of them says 1.00 ml \u2014 none contradicted it. The other 14 are lettered variants (298b-i, 503b/c, 829a) whose PDFs 404 or omit the line, so they are excluded via applies_to_media rather than assumed. MediaDive observes this stock at four different volumes corpus-wide, which is why per-medium verification gates it."
     }
   ]
 }

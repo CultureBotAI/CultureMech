@@ -4366,10 +4366,6 @@ INDICATOR_UNIT_SLIP	bacterial/desulfovibrio_gabonensis_medium.yaml	CultureMech:0
 INDICATOR_UNIT_SLIP	bacterial/desulfovibrio_gabonensis_medium.yaml	CultureMech:006365	Nicotinic acid	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/desulfovibrio_gabonensis_medium.yaml	CultureMech:006365	Pyridoxine hydrochloride	0.3	G_PER_L	0.3 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	bacterial/desulfovibrio_gabonensis_medium.yaml	CultureMech:006365	Thiamine-HCl x 2 H2O	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/desulfovibrio_gigas_medium.yaml	CultureMech:004170	Vitamin B12	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/desulfovibrio_gigas_medium.yaml	CultureMech:004170	Nicotinic acid	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/desulfovibrio_gigas_medium.yaml	CultureMech:004170	Pyridoxine hydrochloride	0.3	G_PER_L	0.3 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
-INDICATOR_UNIT_SLIP	bacterial/desulfovibrio_gigas_medium.yaml	CultureMech:004170	Thiamine-HCl x 2 H2O	0.2	G_PER_L	0.2 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/desulfovibrio_halophilus_medium.yaml	CultureMech:005626	FeCl2 x 4 H2O	1.5	G_PER_L	1.5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	bacterial/desulfovibrio_halophilus_medium.yaml	CultureMech:005626	Pyridoxine hydrochloride	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	bacterial/desulfovibrio_heb233_medium.yaml	CultureMech:002914	FeSO4 x 7 H2O	2.1	G_PER_L	2.1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below

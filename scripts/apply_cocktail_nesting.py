@@ -43,6 +43,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
 from typing import Any
@@ -284,6 +285,38 @@ def apply_plan(doc: dict[str, Any], plan: dict[str, Any]) -> None:
                  f"solution(s); ingredients {len(ingredients)} -> {len(kept)}"))
 
 
+def source_medium(doc: dict[str, Any]) -> str | None:
+    """The source catalogue medium number this record came from, e.g. "503" or "298a".
+
+    Read from the notes' "DSMZ Medium: N" stamp, else the media_term id's local part.
+    Used to gate a researched stock to the media whose own sheet was actually read.
+    """
+    m = re.search(r"DSMZ Medium:\s*(\w+)", str(doc.get("notes") or ""))
+    if m:
+        return m.group(1)
+    mid = str(((doc.get("media_term") or {}).get("term") or {}).get("id") or "")
+    return mid.split(":")[-1] or None
+
+
+def stocks_for_record(researched: list[dict[str, Any]],
+                      doc: dict[str, Any]) -> list[dict[str, Any]]:
+    """Researched stocks usable for THIS record.
+
+    A stock carrying `applies_to_media` is restricted to those media: the addition
+    volume is a property of the citing medium, not of the stock — MediaDive observes
+    "Seven vitamins solution" at four different volumes — so a record whose medium
+    was not read is left alone rather than given a volume by association.
+    """
+    med = source_medium(doc)
+    usable = []
+    for stock in researched:
+        allowed = stock.get("applies_to_media")
+        if allowed and med not in set(allowed):
+            continue
+        usable.append(stock)
+    return usable
+
+
 def load_researched_stocks() -> list[dict[str, Any]]:
     """Researched stocks, shaped like a MediaDive `addition` so the same code path
     and the same name+value safety test apply to both."""
@@ -322,16 +355,19 @@ def build_plans(split_summed: bool = False, use_researched: bool = False) -> tup
 
     for rel, mediadive_additions in sorted(candidates.items()):
         # A researched stock is only consulted when MediaDive gave nothing for this
-        # record — never to override the medium's own recipe.
-        additions = mediadive_additions or researched
-        if not additions:
-            continue
+        # record — never to override the medium's own recipe — and only if it is
+        # cleared for that record's source medium.
+        additions = mediadive_additions
         path = NORMALIZED / rel
         try:
             doc = yaml.safe_load(path.read_text(errors="replace"))
         except (yaml.YAMLError, OSError):
             continue
         if not isinstance(doc, dict):
+            continue
+        if not additions and researched:
+            additions = stocks_for_record(researched, doc)
+        if not additions:
             continue
         flagged = flagged_by_file.get(rel, set())
         if not flagged:

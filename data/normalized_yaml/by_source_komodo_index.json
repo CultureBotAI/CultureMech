@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-13T07:09:10.711187+00:00",
+  "generated": "2026-08-13T19:33:08.014481+00:00",
   "source": "KOMODO",
   "count": 3637,
   "recipes": {
@@ -13934,10 +13934,11 @@
     "CultureMech:004170": {
       "name": "desulfovibrio_gigas_medium",
       "filename": "desulfovibrio_gigas_medium.yaml",
-      "ingredient_count": 24,
+      "ingredient_count": 20,
       "id": "CultureMech:004170",
       "source_id": "komodo.medium:149",
       "source": "KOMODO",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
