@@ -1982,7 +1982,6 @@ bacterial/desulfovibrio_b0109p2_medium.yaml	CultureMech:003174	1	0	1	0	no	no
 bacterial/desulfovibrio_dechloracetivorans_medium.yaml	CultureMech:002338	3	0	1	2	no	no
 bacterial/desulfovibrio_fss_1_medium.yaml	CultureMech:002374	1	0	0	1	no	no
 bacterial/desulfovibrio_gabonensis_medium.yaml	CultureMech:006365	5	0	1	4	no	yes
-bacterial/desulfovibrio_gigas_medium.yaml	CultureMech:004170	4	0	0	4	no	yes
 bacterial/desulfovibrio_halophilus_medium.yaml	CultureMech:005626	2	0	1	1	no	no
 bacterial/desulfovibrio_heb233_medium.yaml	CultureMech:002914	1	0	1	0	no	no
 bacterial/desulfovibrio_magneticus_medium.yaml	CultureMech:002755	1	0	1	0	no	no

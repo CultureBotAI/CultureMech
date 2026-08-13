@@ -192,3 +192,34 @@ def test_a_stock_contributing_only_summed_rows_still_gets_its_solution(acn):
     assert abs(totals["Pyridoxine hydrochloride"] - 0.4) < 1e-9
     assert abs(totals["Nicotinic acid"] - 0.25) < 1e-9
     assert doc["ingredients"] == []
+
+
+# --- researched stocks are gated to the media whose sheet was read (#150) ----
+
+
+def test_source_medium_prefers_the_dsmz_stamp(acn):
+    assert acn.source_medium({"notes": "Source: KOMODO | DSMZ Medium: 503 (mediadive.medium:503)"}) == "503"
+    assert acn.source_medium({"notes": "DSMZ Medium: 298a"}) == "298a"
+    # no stamp: fall back to the media_term id's local part
+    assert acn.source_medium({"media_term": {"term": {"id": "komodo.medium:1083"}}}) == "1083"
+    assert acn.source_medium({}) is None
+
+
+def test_a_researched_stock_is_refused_for_an_unverified_medium(acn):
+    """THE gate. An addition volume belongs to the CITING MEDIUM, not to the stock —
+    MediaDive observes "Seven vitamins solution" at four different volumes. A record
+    whose medium's sheet was never read must not inherit the volume by association."""
+    stock = {"solution_name": "Seven vitamins solution", "addition_volume_ml": 1,
+             "applies_to_media": ["503", "194"]}
+    assert [s["solution_name"] for s in acn.stocks_for_record([stock], {"notes": "DSMZ Medium: 503"})] \
+        == ["Seven vitamins solution"]
+    assert acn.stocks_for_record([stock], {"notes": "DSMZ Medium: 298b"}) == []
+    assert acn.stocks_for_record([stock], {}) == []
+
+
+def test_a_stock_without_the_gate_stays_universal(acn):
+    """`applies_to_media` is optional: a stock verified as medium-independent (or one
+    whose citing media were all checked) applies wherever its composition matches."""
+    stock = {"solution_name": "Trace salt solution", "addition_volume_ml": 1}
+    assert len(acn.stocks_for_record([stock], {"notes": "DSMZ Medium: anything"})) == 1
+    assert len(acn.stocks_for_record([stock], {})) == 1
