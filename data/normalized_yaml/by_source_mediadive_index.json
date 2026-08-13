@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-07T23:46:50.483552+00:00",
+  "generated": "2026-08-13T07:09:10.740975+00:00",
   "source": "MediaDive",
   "count": 3325,
   "recipes": {
@@ -7265,10 +7265,11 @@
     "CultureMech:002775": {
       "name": "acidic_glycerol_asparagine_agar_ph_5_0",
       "filename": "acidic_glycerol_asparagine_agar_ph_5_0.yaml",
-      "ingredient_count": 7,
+      "ingredient_count": 4,
       "id": "CultureMech:002775",
       "source_id": "mediadive.medium:J422",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -7290,10 +7291,11 @@
     "CultureMech:002754": {
       "name": "acidic_oatmeal_agar_ph_5_0",
       "filename": "acidic_oatmeal_agar_ph_5_0.yaml",
-      "ingredient_count": 5,
+      "ingredient_count": 2,
       "id": "CultureMech:002754",
       "source_id": "mediadive.medium:J398",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -17173,10 +17175,11 @@
     "CultureMech:002957": {
       "name": "glycerol_asparagine_agar_isp_5",
       "filename": "glycerol_asparagine_agar_isp_5.yaml",
-      "ingredient_count": 7,
+      "ingredient_count": 4,
       "id": "CultureMech:002957",
       "source_id": "mediadive.medium:J60",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -19035,10 +19038,11 @@
     "CultureMech:002937": {
       "name": "inorganic_salts_starch_agar_isp_4",
       "filename": "inorganic_salts_starch_agar_isp_4.yaml",
-      "ingredient_count": 10,
+      "ingredient_count": 7,
       "id": "CultureMech:002937",
       "source_id": "mediadive.medium:J58",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -19654,10 +19658,11 @@
     "CultureMech:002599": {
       "name": "jcm_medium_no_239",
       "filename": "jcm_medium_no_239.yaml",
-      "ingredient_count": 16,
+      "ingredient_count": 13,
       "id": "CultureMech:002599",
       "source_id": "mediadive.medium:J239",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -27624,10 +27629,11 @@
     "CultureMech:002860": {
       "name": "oatmeal_agar_isp_3",
       "filename": "oatmeal_agar_isp_3.yaml",
-      "ingredient_count": 5,
+      "ingredient_count": 2,
       "id": "CultureMech:002860",
       "source_id": "mediadive.medium:J50",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],
@@ -27636,10 +27642,11 @@
     "CultureMech:003034": {
       "name": "oatmeal_agar_ph_6_0",
       "filename": "oatmeal_agar_ph_6_0.yaml",
-      "ingredient_count": 5,
+      "ingredient_count": 2,
       "id": "CultureMech:003034",
       "source_id": "mediadive.medium:J689",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "bacterial"
       ],

@@ -58,6 +58,12 @@ from culturemech.curate.curation_event import record_curation_event  # noqa: E40
 
 NORMALIZED = REPO / "data" / "normalized_yaml"
 VOLUMES = REPO / "data" / "import_tracking" / "reports" / "mediadive_solution_volumes.json"
+# Stocks whose composition AND volume were read from a primary source, for records
+# MediaDive cannot serve. Tracked curated research, not a regenerable cache.
+RESEARCHED = REPO / "data" / "import_tracking" / "researched_stock_volumes.json"
+# The full flattened-cocktail list, so --use-researched can reach records MediaDive
+# returned nothing for (those are absent from VOLUMES entirely).
+PROPOSALS = REPO / "data" / "import_tracking" / "reports" / "cocktail_nesting_proposals.tsv"
 
 
 def _num(value: Any) -> float | None:
@@ -169,6 +175,10 @@ def plan_record(path: Path, doc: dict[str, Any], additions: list[dict[str, Any]]
             "addition_volume_ml": addition.get("addition_volume_ml"),
             "stock_prepared_in_ml": addition.get("stock_prepared_in_ml"),
             "moved": [ingredients[i].get("preferred_term") for i in indices],
+            # Researched stocks carry a citation; MediaDive-sourced ones do not. The
+            # provenance note must say which, or the record claims MediaDive supplied
+            # a figure it never did.
+            "citation": addition.get("citation"),
         })
     # NOTE: the "nothing to do" check happens AFTER the split pass below, not here.
     # A record can have no direct name+value match at all and still be repairable —
@@ -252,7 +262,8 @@ def apply_plan(doc: dict[str, Any], plan: dict[str, Any]) -> None:
             "preparation_notes": (
                 f"Stock prepared in {g['stock_prepared_in_ml']} ml; added at "
                 f"{g['addition_volume_ml']} ml per litre of medium. Composition and "
-                f"volume from MediaDive (#150)."),
+                + (f"volume read from {g['citation']} (#150)."
+                   if g.get("citation") else "volume from MediaDive (#150).")),
         })
 
     doc["ingredients"] = kept
@@ -273,12 +284,25 @@ def apply_plan(doc: dict[str, Any], plan: dict[str, Any]) -> None:
                  f"solution(s); ingredients {len(ingredients)} -> {len(kept)}"))
 
 
-def build_plans(split_summed: bool = False) -> tuple[list[dict[str, Any]], list[tuple[str, list[str]]]]:
+def load_researched_stocks() -> list[dict[str, Any]]:
+    """Researched stocks, shaped like a MediaDive `addition` so the same code path
+    and the same name+value safety test apply to both."""
+    if not RESEARCHED.is_file():
+        return []
+    try:
+        data = json.loads(RESEARCHED.read_text())
+    except (json.JSONDecodeError, OSError):
+        return []
+    return [s for s in data.get("stocks", []) if s.get("addition_volume_ml") is not None]
+
+
+def build_plans(split_summed: bool = False, use_researched: bool = False) -> tuple[list[dict[str, Any]], list[tuple[str, list[str]]]]:
     if not VOLUMES.is_file():
         print(f"Run `just fetch-mediadive-volumes` first — {VOLUMES.name} is missing.",
               file=sys.stderr)
         return [], []
     volumes = json.loads(VOLUMES.read_text())
+    researched = load_researched_stocks() if use_researched else []
     rows = acp.audit(NORMALIZED)
     flagged_by_file: dict[str, set[str]] = {}
     for r in rows:
@@ -286,8 +310,20 @@ def build_plans(split_summed: bool = False) -> tuple[list[dict[str, Any]], list[
             flagged_by_file.setdefault(r["file_path"], set()).add(_key(r["ingredient"]))
 
     plans, skipped = [], []
-    for rel, info in sorted(volumes.items()):
-        additions = info.get("additions") or []
+    # Records MediaDive served, plus (when enabled) every other flattened cocktail,
+    # which the researched stocks may cover.
+    candidates: dict[str, list[dict[str, Any]]] = {
+        rel: (info.get("additions") or []) for rel, info in volumes.items()}
+    if researched:
+        import csv as _csv
+        with PROPOSALS.open() as fh:
+            for row in _csv.DictReader(fh, delimiter="\t"):
+                candidates.setdefault(row["file_path"], [])
+
+    for rel, mediadive_additions in sorted(candidates.items()):
+        # A researched stock is only consulted when MediaDive gave nothing for this
+        # record — never to override the medium's own recipe.
+        additions = mediadive_additions or researched
         if not additions:
             continue
         path = NORMALIZED / rel
@@ -315,6 +351,12 @@ def main(argv: list[str] | None = None) -> int:
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--apply", action="store_true", help="Write. Default is report-only.")
     ap.add_argument("--limit", type=int, default=0, help="Only the first N records.")
+    ap.add_argument("--use-researched", action="store_true",
+                    help="Also nest records whose stock is covered by "
+                         "data/import_tracking/researched_stock_volumes.json — stocks "
+                         "whose volume was read from a primary source for media "
+                         "MediaDive does not serve. The name+value match still gates "
+                         "every move.")
     ap.add_argument("--split-summed", action="store_true",
                     help="Also repair rows the flattening SUMMED across two stocks, "
                          "restoring each stock's own value. Opt-in: it reconstructs a "
@@ -322,7 +364,7 @@ def main(argv: list[str] | None = None) -> int:
                          "accepted only on an exact sum match.")
     args = ap.parse_args(argv)
 
-    plans, skipped = build_plans(args.split_summed)
+    plans, skipped = build_plans(args.split_summed, args.use_researched)
     if args.limit:
         plans = plans[:args.limit]
 

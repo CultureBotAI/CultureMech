@@ -40,6 +40,7 @@ data/import_tracking/reports/selective_agent_mismatch.tsv	CURRENT_VIEW	audit_sel
 data/import_tracking/reports/top5-curation-proposals.json	UNKNOWN	writer purity unestablished (apply_curation_proposals.py)		scripts/apply_curation_proposals.py	
 data/import_tracking/reports/unparsed_compositions.tsv	CURRENT_VIEW	report_unparsed_compositions.py	scripts/report_unparsed_compositions.py	scripts/report_unparsed_compositions.py	yes
 data/import_tracking/researched_media.json	CURRENT_VIEW	prioritize_deep_research_candidates.py		scripts/prioritize_deep_research_candidates.py; scripts/refresh_researched_manifest.py; scripts/researched_manifest.py	
+data/import_tracking/researched_stock_volumes.json	UNKNOWN	writer purity unestablished (apply_cocktail_nesting.py)		scripts/apply_cocktail_nesting.py	
 data/import_tracking/schemas/manifest_v1.schema.json	UNKNOWN	no writer found			
 data/merge_yaml/merge_stats.json	UNKNOWN	writer purity unestablished (merge_recipes.py)	src/culturemech/merge/merge_recipes.py	scripts/audit_merge_yaml_freshness.py; scripts/verify_merges.py; src/culturemech/merge/merge_recipes.py	
 data/merge_yaml/merge_stats_2026.json	UNKNOWN	no writer found			
