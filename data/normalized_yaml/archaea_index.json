@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-07T23:45:06.738426+00:00",
+  "generated": "2026-08-13T23:34:17.196949+00:00",
   "category": "archaea",
   "count": 743,
   "recipes": {
@@ -4595,10 +4595,11 @@
     "CultureMech:002864": {
       "name": "caldococcus_medium",
       "filename": "caldococcus_medium.yaml",
-      "ingredient_count": 25,
+      "ingredient_count": 22,
       "id": "CultureMech:002864",
       "source_id": "mediadive.medium:J513",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "archaea"
       ]
@@ -5344,10 +5345,11 @@
     "CultureMech:002655": {
       "name": "halosimplex_medium",
       "filename": "halosimplex_medium.yaml",
-      "ingredient_count": 14,
+      "ingredient_count": 11,
       "id": "CultureMech:002655",
       "source_id": "mediadive.medium:J298",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "archaea"
       ]
@@ -5465,10 +5467,11 @@
     "CultureMech:002284": {
       "name": "liquid_basal_medium_for_methanosarcina",
       "filename": "liquid_basal_medium_for_methanosarcina.yaml",
-      "ingredient_count": 32,
+      "ingredient_count": 25,
       "id": "CultureMech:002284",
       "source_id": "mediadive.medium:J1107",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "archaea"
       ]
@@ -7459,10 +7462,11 @@
     "CultureMech:002433": {
       "name": "modified_picrophilus_medium",
       "filename": "modified_picrophilus_medium.yaml",
-      "ingredient_count": 29,
+      "ingredient_count": 25,
       "id": "CultureMech:002433",
       "source_id": "mediadive.medium:J1267",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "archaea"
       ],
@@ -7967,10 +7971,11 @@
     "CultureMech:003204": {
       "name": "pyrolobus_medium",
       "filename": "pyrolobus_medium.yaml",
-      "ingredient_count": 25,
+      "ingredient_count": 21,
       "id": "CultureMech:003204",
       "source_id": "mediadive.medium:J859",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "archaea"
       ],

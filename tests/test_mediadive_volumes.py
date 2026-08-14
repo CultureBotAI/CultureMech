@@ -111,8 +111,19 @@ def test_mediadive_id_accepts_only_mediadive_numeric_ids(fsv):
     assert fsv.mediadive_id({"media_term": {"term": {"id": "mediadive.medium:1083"}}}) == "1083"
     assert fsv.mediadive_id({"media_term": {"term": {"id": "mediadive.medium:734a"}}}) == "734a"
     assert fsv.mediadive_id({"media_term": {"term": {"id": "komodo.medium:3136"}}}) is None
-    assert fsv.mediadive_id({"media_term": {"term": {"id": "mediadive.medium:J390"}}}) is None
     assert fsv.mediadive_id({}) is None
+
+
+def test_a_jcm_mirrored_id_is_accepted(fsv):
+    """MediaDive mirrors JCM media under a J prefix and serves them through the same
+    endpoints — rest/medium/J58 returns solutions[] with a "Trace salts solution ...
+    1 ml" reference. This assertion previously demanded J390 be REJECTED, generalising
+    from three ids that merely do not exist; 25 of 25 sampled J ids from this corpus
+    resolve. A nonexistent id is fetch_medium's problem, not the scheme's."""
+    assert fsv.mediadive_id({"media_term": {"term": {"id": "mediadive.medium:J58"}}}) == "J58"
+    assert fsv.mediadive_id({"media_term": {"term": {"id": "mediadive.medium:J1039"}}}) == "J1039"
+    # still not a MediaDive id
+    assert fsv.mediadive_id({"media_term": {"term": {"id": "komodo.medium:J58"}}}) is None
 
 
 # --- KOMODO id resolution and the name guard (#150 second pass) --------------

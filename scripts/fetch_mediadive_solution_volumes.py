@@ -81,13 +81,24 @@ def komodo_to_dsmz() -> dict[str, str]:
 def mediadive_id(doc: dict[str, Any], komodo_map: dict[str, str] | None = None) -> str | None:
     """The MediaDive medium id this record resolves to, if any.
 
-    `mediadive.medium:<digits>[letter]` is direct. A `komodo.medium:` id is NOT a
-    MediaDive id and must be translated through the KOMODO->DSMZ mapping first; using
-    it directly is the #239 error. The J*/C*-prefixed ids are JCM/other catalogues
-    whose composition MediaDive does not serve.
+    `mediadive.medium:<digits>[letter]` is direct, and so is the `J<digits>` form:
+    MediaDive mirrors JCM media under a J prefix and serves them through the SAME
+    endpoints, with the same nested solutions[] and solution-to-solution references
+    carrying the addition volume. `rest/medium/J58` returns "Main sol. J58" which
+    references "Trace salts solution" at 1 ml.
+
+    This function used to reject J ids, on the mistaken generalisation that MediaDive
+    does not serve JCM media. That came from sampling three ids (J390, J773, C96)
+    that simply do not exist; a random sample of 25 J ids from this corpus all
+    returned 200 with solutions[]. A nonexistent id is handled by fetch_medium
+    returning None, which is the right place for it — not by refusing the whole
+    scheme.
+
+    A `komodo.medium:` id is still NOT a MediaDive id and must be translated through
+    the KOMODO->DSMZ mapping first; using it directly is the #239 error.
     """
     mid = str(((doc.get("media_term") or {}).get("term") or {}).get("id") or "")
-    m = re.fullmatch(r"mediadive\.medium:(\d+[a-z]?)", mid)
+    m = re.fullmatch(r"mediadive\.medium:(J?\d+[a-z]?)", mid)
     if m:
         return m.group(1)
     k = re.fullmatch(r"komodo\.medium:(.+)", mid)

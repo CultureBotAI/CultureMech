@@ -114,6 +114,46 @@ def match_components(ingredients: list[dict[str, Any]],
     return indices, sorted(flagged_names - matched_names)
 
 
+def match_stock_signature(ingredients: list[dict[str, Any]],
+                          stock_components: list[dict[str, Any]],
+                          flagged_names: set[str],
+                          min_components: int = 4) -> tuple[list[int], list[str]]:
+    """Indices of ingredients that reproduce this stock's composition at stock values.
+
+    Unlike `match_components`, this does NOT require every moved row to be flagged.
+    A stock's sub-threshold components never trip the audit — SL-10 carries ZnCl2 at
+    0.07 g/l and H3BO3 at 0.006, far below the flagging cutoff — so requiring the
+    flag would move FeCl2 (1.5) alone and strand the other eight in `ingredients`.
+    That is a half-repair: the stock would exist in two places at once.
+
+    The evidence bar is raised instead of lowered. Reproducing four or more of a
+    stock's components at EXACTLY its concentrations is far stronger than three
+    flagged rows — 98 records match SL-10 on 8 or 9 of 9. At least one matched row
+    must still be flagged, so only records the audit calls broken are touched.
+
+    Returns (indices, unmatched_flagged_names) like `match_components`.
+    """
+    want: dict[str, float] = {}
+    for c in stock_components:
+        v = _num(c.get("g_l"))
+        if v is None:
+            v = _num(c.get("amount"))
+        if v is not None:
+            want[_key(c.get("compound"))] = v
+
+    indices, matched = [], set()
+    for i, ing in enumerate(ingredients):
+        name = _key(ing.get("preferred_term"))
+        got = _num((ing.get("concentration") or {}).get("value"))
+        if name in want and got is not None and abs(want[name] - got) < 1e-9:
+            indices.append(i)
+            matched.add(name)
+
+    if len(indices) < min_components or not (matched & flagged_names):
+        return [], sorted(flagged_names)
+    return indices, sorted(flagged_names - matched)
+
+
 def find_summed(ingredients: list[dict[str, Any]], additions: list[dict[str, Any]],
                 unmatched: list[str]) -> dict[str, list[tuple[str, float]]]:
     """Unmatched rows whose value is the exact SUM of that component across stocks.
@@ -164,7 +204,9 @@ def plan_record(path: Path, doc: dict[str, Any], additions: list[dict[str, Any]]
     groups: list[dict[str, Any]] = []
     claimed: set[int] = set()
     for addition in additions:
-        indices, _ = match_components(
+        matcher = (match_stock_signature if addition.get("match_full_signature")
+                   else match_components)
+        indices, _ = matcher(
             ingredients, addition.get("stock_components") or [], flagged_names)
         indices = [i for i in indices if i not in claimed]   # never move one twice
         if not indices:
@@ -286,16 +328,21 @@ def apply_plan(doc: dict[str, Any], plan: dict[str, Any]) -> None:
 
 
 def source_medium(doc: dict[str, Any]) -> str | None:
-    """The source catalogue medium number this record came from, e.g. "503" or "298a".
+    """The DSMZ medium number this record came from, or None when it cannot be trusted.
 
-    Read from the notes' "DSMZ Medium: N" stamp, else the media_term id's local part.
-    Used to gate a researched stock to the media whose own sheet was actually read.
+    `applies_to_media` gates a researched volume to media whose own DSMZ sheet was
+    read, so this number must actually address that sheet. For a KOMODO-sourced
+    record it does NOT: the notes stamp "DSMZ Medium: 294" on
+    KOMODO_294_PELOBACTER_ACIDIGALLICI_MEDIUM, but DSMZ 294 is SYNTROPHUS HQGo1 —
+    a different medium. That is the #244 collision, and trusting the stamp here would
+    cite one medium's sheet as verification for another's volume.
+
+    So only a `mediadive.medium:` id is accepted. KOMODO-sourced records are reported
+    as unverifiable and left to stocks that carry no `applies_to_media` gate.
     """
-    m = re.search(r"DSMZ Medium:\s*(\w+)", str(doc.get("notes") or ""))
-    if m:
-        return m.group(1)
     mid = str(((doc.get("media_term") or {}).get("term") or {}).get("id") or "")
-    return mid.split(":")[-1] or None
+    m = re.fullmatch(r"mediadive\.medium:(\w+)", mid)
+    return m.group(1) if m else None
 
 
 def stocks_for_record(researched: list[dict[str, Any]],
