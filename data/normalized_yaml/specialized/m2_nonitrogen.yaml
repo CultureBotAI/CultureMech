@@ -27,8 +27,8 @@ ingredients:
     value: '20'
     unit: MILLIMOLAR
   term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
+    id: CHEBI:17634
+    label: D-glucose
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-99-7; MW: 180.16'
 - preferred_term: Magnesium sulfate
   concentration:

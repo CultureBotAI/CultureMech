@@ -9,14 +9,14 @@ ingredients:
 - preferred_term: glucose
   notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
   term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
+    id: CHEBI:17234
+    label: glucose
   concentration:
     value: variable
     unit: VARIABLE
   mediaingredientmech_chebi_term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
+    id: CHEBI:17234
+    label: glucose
 - preferred_term: cellobiose
   notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
   term:
