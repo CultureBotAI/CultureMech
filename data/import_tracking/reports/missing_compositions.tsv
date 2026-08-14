@@ -1,4 +1,87 @@
 file_path	record_id	name	kind	source	looks_like_a_solution	name_cites_medium	cited_medium_in_local_dump
+algae/artificial_seawater.yaml	CultureMech:000189	Artificial_Seawater	no ingredients and no solutions				
+algae/bacillariophycean.yaml	CultureMech:000192	Bacillariophycean	no ingredients and no solutions				
+algae/basal.yaml	CultureMech:000191	Basal	no ingredients and no solutions				
+algae/beggiatoa.yaml	CultureMech:000193	Beggiatoa	no ingredients and no solutions				
+algae/bold_modified_basal.yaml	CultureMech:000194	Bold_Modified_Basal	no ingredients and no solutions				
+algae/bold_modified_basal_tom.yaml	CultureMech:000195	Bold_Modified_Basal&TOM	no ingredients and no solutions				
+algae/brackish_water_medium.yaml	CultureMech:000196	Brackish_water_medium	no ingredients and no solutions				
+algae/ch.yaml	CultureMech:000059	CH	no ingredients and no solutions				
+algae/chilomonas.yaml	CultureMech:000197	Chilomonas	no ingredients and no solutions				
+algae/cyanidium.yaml	CultureMech:000198	Cyanidium	no ingredients and no solutions				
+algae/desmidiacean.yaml	CultureMech:000199	Desmidiacean	no ingredients and no solutions				
+algae/dunaliella.yaml	CultureMech:000200	Dunaliella	no ingredients and no solutions				
+algae/dunaliella_acid.yaml	CultureMech:000201	Dunaliella_acid	no ingredients and no solutions				
+algae/enriched_seawater.yaml	CultureMech:000202	Enriched_Seawater	no ingredients and no solutions				
+algae/euglena.yaml	CultureMech:000203	Euglena	no ingredients and no solutions				
+algae/malt_peptone.yaml	CultureMech:000204	Malt_Peptone	no ingredients and no solutions				
+algae/merds.yaml	CultureMech:000089	MErds	no ingredients and no solutions				
+algae/mw.yaml	CultureMech:000093	MW	no ingredients and no solutions				
+algae/note_on_biphasic_soilwater_media_20081216.yaml	CultureMech:000205	Note_on_biphasic_soilwater_media_20081216	no ingredients and no solutions				
+algae/ochromonas.yaml	CultureMech:000206	Ochromonas	no ingredients and no solutions				
+algae/pes.yaml	CultureMech:000207	PES	no ingredients and no solutions				
+algae/polytoma.yaml	CultureMech:000208	Polytoma	no ingredients and no solutions				
+algae/polytomella.yaml	CultureMech:000209	Polytomella	no ingredients and no solutions				
+algae/porphyridium.yaml	CultureMech:000210	Porphyridium	no ingredients and no solutions				
+algae/s_w.yaml	CultureMech:000138	S/W	no ingredients and no solutions				
+algae/s_w_amp.yaml	CultureMech:000136	S/W + AMP	no ingredients and no solutions				
+algae/s_w_ca.yaml	CultureMech:000137	S/W + Ca	no ingredients and no solutions				
+algae/se1.yaml	CultureMech:000128	SE1	no ingredients and no solutions				
+algae/se2.yaml	CultureMech:000129	SE2	no ingredients and no solutions				
+algae/seawater.yaml	CultureMech:000211	Seawater	no ingredients and no solutions				
+algae/ses.yaml	CultureMech:000130	SES	no ingredients and no solutions				
+algae/soil_water_media.yaml	CultureMech:000212	Soil_Water_Media	no ingredients and no solutions				
+algae/spirulina.yaml	CultureMech:000213	Spirulina	no ingredients and no solutions				
+algae/unicellular_green_algae.yaml	CultureMech:000214	Unicellular_Green_Algae	no ingredients and no solutions				
+algae/volvox.yaml	CultureMech:000215	Volvox	no ingredients and no solutions				
+algae/wees.yaml	CultureMech:000216	WEES	no ingredients and no solutions				
+algae/woods_hole_mbl_medium.yaml	CultureMech:000217	Woods Hole MBL Medium	no ingredients and no solutions				
+algae/yel.yaml	CultureMech:000144	YEL	no ingredients and no solutions				
+algae/z_medium_for_cyanos.yaml	CultureMech:000218	Z-Medium_for_Cyanos	no ingredients and no solutions				
+bacterial/2sna.yaml	CultureMech:000411	2SNA	no ingredients and no solutions	CCAP			
+bacterial/nss_low.yaml	CultureMech:000383	NSS Low	no ingredients and no solutions	CCAP			
+fungal/wmalt_yeast_extract_medium_wmy.yaml	CultureMech:010440	wMalt Yeast Extract Medium (wMY)	no ingredients and no solutions	CCAP			
+bacterial/cultivation_medium_for_sf1ep_cells_for_treponema_pallidum.yaml	CultureMech:001271	Cultivation Medium for Sf1Ep cells for Treponema pallidum	no ingredients and no solutions	DSMZ			
+bacterial/l_15b_tick_cell_medium.yaml	CultureMech:001068	L-15B Tick Cell Medium	no ingredients and no solutions	DSMZ			
+bacterial/liver_broth_oxoid_cm_77.yaml	CultureMech:001915	LIVER BROTH (Oxoid CM 77)	no ingredients and no solutions	DSMZ			
+bacterial/rhodocyclus_purpureus_medium.yaml	CultureMech:001559	RHODOCYCLUS PURPUREUS MEDIUM	no ingredients and no solutions	DSMZ			
+archaea/archaeoglobus_mcr_medium.yaml	CultureMech:002362	ARCHAEOGLOBUS MCR MEDIUM	no ingredients and no solutions	JCM			
+archaea/methanobacterium_medium_ii_with_formae.yaml	CultureMech:003049	METHANOBACTERIUM MEDIUM (II) WITH FORMAE	no ingredients and no solutions	JCM			
+archaea/methanocaldococcus_indiensis_medium.yaml	CultureMech:002720	METHANOCALDOCOCCUS INDIENSIS MEDIUM	no ingredients and no solutions	JCM			
+archaea/modified_halosimplex_medium.yaml	CultureMech:003286	MODIFIED HALOSIMPLEX MEDIUM	no ingredients and no solutions	JCM			
+archaea/thermoproteus_medium_c.yaml	CultureMech:002977	THERMOPROTEUS MEDIUM (C)	no ingredients and no solutions	JCM			
+bacterial/JCM_J806_GS_MEDIUM.yaml	CultureMech:003151	GS MEDIUM	no ingredients and no solutions	JCM			
+bacterial/agc2_medium.yaml	CultureMech:002739	AGC2 MEDIUM	no ingredients and no solutions	JCM			
+bacterial/beer_medium.yaml	CultureMech:002778	BEER MEDIUM	no ingredients and no solutions	JCM			
+bacterial/bm_for_tepidanaerobacter_acetoxydans.yaml	CultureMech:003081	BM FOR TEPIDANAEROBACTER ACETOXYDANS	no ingredients and no solutions	JCM			
+bacterial/bs_107_medium.yaml	CultureMech:003213	Bs 107 MEDIUM	no ingredients and no solutions	JCM			
+bacterial/car_bacillus_medium.yaml	CultureMech:003345	CAR BACILLUS MEDIUM	no ingredients and no solutions	JCM			
+bacterial/clostridium_bovis_medium.yaml	CultureMech:002982	CLOSTRIDIUM BOVIS MEDIUM	no ingredients and no solutions	JCM			
+bacterial/desulfovibrio_piger_medium.yaml	CultureMech:002756	DESULFOVIBRIO PIGER MEDIUM	no ingredients and no solutions	JCM			
+bacterial/diluted_asm_medium.yaml	CultureMech:003160	DILUTED ASM MEDIUM	no ingredients and no solutions	JCM			
+bacterial/eg_medium_with_10_nacl.yaml	CultureMech:002618	EG MEDIUM WITH 10% NaCl	no ingredients and no solutions	JCM			
+bacterial/ferric_citrate_fwmedia.yaml	CultureMech:002821	FERRIC CITRATE FWMEDIA	no ingredients and no solutions	JCM			
+bacterial/fresh_water_media.yaml	CultureMech:002823	FRESH WATER MEDIA	no ingredients and no solutions	JCM			
+bacterial/jcm_medium_no_1324.yaml	CultureMech:002488	JCM MEDIUM No. 1324	no ingredients and no solutions	JCM			
+bacterial/jcm_medium_no_313.yaml	CultureMech:002671	JCM MEDIUM No. 313	no ingredients and no solutions	JCM			
+bacterial/ji_medium.yaml	CultureMech:002747	JI MEDIUM	no ingredients and no solutions	JCM			
+bacterial/lind_8a_medium.yaml	CultureMech:003136	LIND 8A MEDIUM	no ingredients and no solutions	JCM			
+bacterial/medium_10_broth.yaml	CultureMech:002539	MEDIUM 10 BROTH	no ingredients and no solutions	JCM		10	yes
+bacterial/methanosaeta_brevibacterium_medium.yaml	CultureMech:002826	METHANOSAETA BREVIBACTERIUM MEDIUM	no ingredients and no solutions	JCM			
+bacterial/mg50_medium.yaml	CultureMech:002841	Mg50 MEDIUM	no ingredients and no solutions	JCM			
+bacterial/modified_medium_10.yaml	CultureMech:002572	MODIFIED MEDIUM 10	no ingredients and no solutions	JCM		10	yes
+bacterial/modified_roseospira_medium.yaml	CultureMech:002318	MODIFIED ROSEOSPIRA MEDIUM	no ingredients and no solutions	JCM			
+bacterial/nb_fumarate_nbaf_medium.yaml	CultureMech:002822	NB FUMARATE (NBAF) MEDIUM	no ingredients and no solutions	JCM			
+bacterial/poremedia_b_cye_945_agar_medium.yaml	CultureMech:002267	POREMEDIA B-CYE&#945; AGAR MEDIUM	no ingredients and no solutions	JCM			
+bacterial/r2a_agar_ph_9_0.yaml	CultureMech:002475	R2A AGAR (pH 9.0)	no ingredients and no solutions	JCM			
+bacterial/rumen_fluid_medium.yaml	CultureMech:003115	RUMEN FLUID MEDIUM	no ingredients and no solutions	JCM			
+bacterial/smy_medium.yaml	CultureMech:003297	SMY MEDIUM	no ingredients and no solutions	JCM			
+bacterial/thermovenbulum_medium.yaml	CultureMech:003202	THERMOVENBULUM MEDIUM	no ingredients and no solutions	JCM			
+bacterial/widdel_freshwater_medium_with_glycerin.yaml	CultureMech:002391	WIDDEL FRESHWATER MEDIUM WITH GLYCERIN	no ingredients and no solutions	JCM			
+bacterial/widdel_freshwater_medium_with_pyruvate.yaml	CultureMech:002392	WIDDEL FRESHWATER MEDIUM WITH PYRUVATE	no ingredients and no solutions	JCM			
+bacterial/xylanobacter_medium.yaml	CultureMech:002873	XYLANOBACTER MEDIUM	no ingredients and no solutions	JCM			
+fungal/yeast_extract_medium_ye.yaml	CultureMech:010512	YEAST EXTRACT MEDIUM (YE)	no ingredients and no solutions	JCM			
+specialized/marine_medium_with_thiosulfate.yaml	CultureMech:015402	MARINE MEDIUM WITH THIOSULFATE	no ingredients and no solutions	JCM			
 archaea/KOMODO_131_METHANOBACTERIUM_THERMOAUTOTROPHICUM_MEDIUM.yaml	CultureMech:004074	METHANOBACTERIUM THERMOAUTOTROPHICUM MEDIUM	no ingredients and no solutions	KOMODO ModelSEED			
 archaea/KOMODO_304_METHANOSARCINA_ACETIVORANS_medium.yaml	CultureMech:004832	METHANOSARCINA ACETIVORANS medium	no ingredients and no solutions	KOMODO ModelSEED			
 archaea/KOMODO_510_STYGIOLOBUS_medium.yaml	CultureMech:005712	STYGIOLOBUS medium	no ingredients and no solutions	KOMODO ModelSEED			
@@ -15,7 +98,6 @@ archaea/thermophilic_methanosaeta_medium.yaml	CultureMech:005164	THERMOPHILIC ME
 bacterial/4_times_concentrated_sea_water_medium_821.yaml	CultureMech:004993	4 times concentrated sea water (medium 821)	no ingredients and no solutions	KOMODO ModelSEED		821	yes
 bacterial/KOMODO_1254_NAUTILIA_NITRATIREDUCENS_MEDIUM.yaml	CultureMech:004015	NAUTILIA NITRATIREDUCENS MEDIUM	no ingredients and no solutions	KOMODO ModelSEED			
 bacterial/KOMODO_272_DESULFOVIBRIO_medium_choline.yaml	CultureMech:004700	DESULFOVIBRIO medium (choline)	no ingredients and no solutions	KOMODO ModelSEED			
-bacterial/KOMODO_3136_Fastidious_Anaerobe_Agar.yaml	CultureMech:004984	Fastidious Anaerobe Agar	no ingredients and no solutions	KOMODO ModelSEED			
 bacterial/KOMODO_7001_Trace_elements_medium_596.yaml	CultureMech:006327	Trace elements (medium 596)	no ingredients and no solutions	KOMODO ModelSEED		596	yes
 bacterial/KOMODO_787_ACETOBACTERIUM_DEHALOGENANS_medium.yaml	CultureMech:006488	ACETOBACTERIUM DEHALOGENANS medium	no ingredients and no solutions	KOMODO ModelSEED			
 bacterial/acetobacterium_2_medium.yaml	CultureMech:005062	ACETOBACTERIUM 2 medium	no ingredients and no solutions	KOMODO ModelSEED			
@@ -125,103 +207,19 @@ bacterial/trace_elements_pfennig_medium_1264.yaml	CultureMech:004879	Trace eleme
 bacterial/true_blue_trace_elements_medium_748.yaml	CultureMech:004939	True Blue Trace Elements (medium 748)	no ingredients and no solutions	KOMODO ModelSEED		748	yes
 bacterial/vitox.yaml	CultureMech:005644	Vitox	no ingredients and no solutions	KOMODO ModelSEED			
 bacterial/xb45_xb90_pb90_2_medium.yaml	CultureMech:006693	XB45/XB90/PB90-2 MEDIUM	no ingredients and no solutions	KOMODO ModelSEED			
-algae/artificial_seawater.yaml	CultureMech:000189	Artificial_Seawater	placeholder ingredient only				
-algae/bacillariophycean.yaml	CultureMech:000192	Bacillariophycean	placeholder ingredient only				
-algae/basal.yaml	CultureMech:000191	Basal	placeholder ingredient only				
-algae/beggiatoa.yaml	CultureMech:000193	Beggiatoa	placeholder ingredient only				
-algae/bold_modified_basal.yaml	CultureMech:000194	Bold_Modified_Basal	placeholder ingredient only				
-algae/bold_modified_basal_tom.yaml	CultureMech:000195	Bold_Modified_Basal&TOM	placeholder ingredient only				
-algae/brackish_water_medium.yaml	CultureMech:000196	Brackish_water_medium	placeholder ingredient only				
-algae/ch.yaml	CultureMech:000059	CH	placeholder ingredient only				
-algae/chilomonas.yaml	CultureMech:000197	Chilomonas	placeholder ingredient only				
-algae/cyanidium.yaml	CultureMech:000198	Cyanidium	placeholder ingredient only				
-algae/desmidiacean.yaml	CultureMech:000199	Desmidiacean	placeholder ingredient only				
-algae/dunaliella.yaml	CultureMech:000200	Dunaliella	placeholder ingredient only				
-algae/dunaliella_acid.yaml	CultureMech:000201	Dunaliella_acid	placeholder ingredient only				
-algae/enriched_seawater.yaml	CultureMech:000202	Enriched_Seawater	placeholder ingredient only				
-algae/euglena.yaml	CultureMech:000203	Euglena	placeholder ingredient only				
-algae/malt_peptone.yaml	CultureMech:000204	Malt_Peptone	placeholder ingredient only				
-algae/merds.yaml	CultureMech:000089	MErds	placeholder ingredient only				
-algae/mw.yaml	CultureMech:000093	MW	placeholder ingredient only				
-algae/note_on_biphasic_soilwater_media_20081216.yaml	CultureMech:000205	Note_on_biphasic_soilwater_media_20081216	placeholder ingredient only				
-algae/ochromonas.yaml	CultureMech:000206	Ochromonas	placeholder ingredient only				
-algae/pes.yaml	CultureMech:000207	PES	placeholder ingredient only				
-algae/polytoma.yaml	CultureMech:000208	Polytoma	placeholder ingredient only				
-algae/polytomella.yaml	CultureMech:000209	Polytomella	placeholder ingredient only				
-algae/porphyridium.yaml	CultureMech:000210	Porphyridium	placeholder ingredient only				
-algae/s_w.yaml	CultureMech:000138	S/W	placeholder ingredient only				
-algae/s_w_amp.yaml	CultureMech:000136	S/W + AMP	placeholder ingredient only				
-algae/s_w_ca.yaml	CultureMech:000137	S/W + Ca	placeholder ingredient only				
-algae/se1.yaml	CultureMech:000128	SE1	placeholder ingredient only				
-algae/se2.yaml	CultureMech:000129	SE2	placeholder ingredient only				
-algae/seawater.yaml	CultureMech:000211	Seawater	placeholder ingredient only				
-algae/ses.yaml	CultureMech:000130	SES	placeholder ingredient only				
-algae/soil_water_media.yaml	CultureMech:000212	Soil_Water_Media	placeholder ingredient only				
-algae/spirulina.yaml	CultureMech:000213	Spirulina	placeholder ingredient only				
-algae/unicellular_green_algae.yaml	CultureMech:000214	Unicellular_Green_Algae	placeholder ingredient only				
-algae/volvox.yaml	CultureMech:000215	Volvox	placeholder ingredient only				
-algae/wees.yaml	CultureMech:000216	WEES	placeholder ingredient only				
-algae/woods_hole_mbl_medium.yaml	CultureMech:000217	Woods Hole MBL Medium	placeholder ingredient only				
-algae/yel.yaml	CultureMech:000144	YEL	placeholder ingredient only				
-algae/z_medium_for_cyanos.yaml	CultureMech:000218	Z-Medium_for_Cyanos	placeholder ingredient only				
-bacterial/test_medium_123.yaml	CultureMech:000306	Test Medium 123	placeholder ingredient only			123	yes
-bacterial/2sna.yaml	CultureMech:000411	2SNA	placeholder ingredient only	CCAP			
-bacterial/nss_low.yaml	CultureMech:000383	NSS Low	placeholder ingredient only	CCAP			
-fungal/wmalt_yeast_extract_medium_wmy.yaml	CultureMech:010440	wMalt Yeast Extract Medium (wMY)	placeholder ingredient only	CCAP			
-bacterial/cultivation_medium_for_sf1ep_cells_for_treponema_pallidum.yaml	CultureMech:001271	Cultivation Medium for Sf1Ep cells for Treponema pallidum	placeholder ingredient only	DSMZ			
-bacterial/l_15b_tick_cell_medium.yaml	CultureMech:001068	L-15B Tick Cell Medium	placeholder ingredient only	DSMZ			
-bacterial/liver_broth_oxoid_cm_77.yaml	CultureMech:001915	LIVER BROTH (Oxoid CM 77)	placeholder ingredient only	DSMZ			
-bacterial/rhodocyclus_purpureus_medium.yaml	CultureMech:001559	RHODOCYCLUS PURPUREUS MEDIUM	placeholder ingredient only	DSMZ			
-archaea/archaeoglobus_mcr_medium.yaml	CultureMech:002362	ARCHAEOGLOBUS MCR MEDIUM	placeholder ingredient only	JCM			
-archaea/methanobacterium_medium_ii_with_formae.yaml	CultureMech:003049	METHANOBACTERIUM MEDIUM (II) WITH FORMAE	placeholder ingredient only	JCM			
-archaea/methanocaldococcus_indiensis_medium.yaml	CultureMech:002720	METHANOCALDOCOCCUS INDIENSIS MEDIUM	placeholder ingredient only	JCM			
-archaea/modified_halosimplex_medium.yaml	CultureMech:003286	MODIFIED HALOSIMPLEX MEDIUM	placeholder ingredient only	JCM			
-archaea/thermoproteus_medium_c.yaml	CultureMech:002977	THERMOPROTEUS MEDIUM (C)	placeholder ingredient only	JCM			
-bacterial/JCM_J806_GS_MEDIUM.yaml	CultureMech:003151	GS MEDIUM	placeholder ingredient only	JCM			
-bacterial/agc2_medium.yaml	CultureMech:002739	AGC2 MEDIUM	placeholder ingredient only	JCM			
-bacterial/beer_medium.yaml	CultureMech:002778	BEER MEDIUM	placeholder ingredient only	JCM			
-bacterial/bm_for_tepidanaerobacter_acetoxydans.yaml	CultureMech:003081	BM FOR TEPIDANAEROBACTER ACETOXYDANS	placeholder ingredient only	JCM			
-bacterial/bs_107_medium.yaml	CultureMech:003213	Bs 107 MEDIUM	placeholder ingredient only	JCM			
-bacterial/car_bacillus_medium.yaml	CultureMech:003345	CAR BACILLUS MEDIUM	placeholder ingredient only	JCM			
-bacterial/clostridium_bovis_medium.yaml	CultureMech:002982	CLOSTRIDIUM BOVIS MEDIUM	placeholder ingredient only	JCM			
-bacterial/desulfovibrio_piger_medium.yaml	CultureMech:002756	DESULFOVIBRIO PIGER MEDIUM	placeholder ingredient only	JCM			
-bacterial/diluted_asm_medium.yaml	CultureMech:003160	DILUTED ASM MEDIUM	placeholder ingredient only	JCM			
-bacterial/eg_medium_with_10_nacl.yaml	CultureMech:002618	EG MEDIUM WITH 10% NaCl	placeholder ingredient only	JCM			
-bacterial/ferric_citrate_fwmedia.yaml	CultureMech:002821	FERRIC CITRATE FWMEDIA	placeholder ingredient only	JCM			
-bacterial/fresh_water_media.yaml	CultureMech:002823	FRESH WATER MEDIA	placeholder ingredient only	JCM			
-bacterial/jcm_medium_no_1324.yaml	CultureMech:002488	JCM MEDIUM No. 1324	placeholder ingredient only	JCM			
-bacterial/jcm_medium_no_313.yaml	CultureMech:002671	JCM MEDIUM No. 313	placeholder ingredient only	JCM			
-bacterial/ji_medium.yaml	CultureMech:002747	JI MEDIUM	placeholder ingredient only	JCM			
-bacterial/lind_8a_medium.yaml	CultureMech:003136	LIND 8A MEDIUM	placeholder ingredient only	JCM			
-bacterial/medium_10_broth.yaml	CultureMech:002539	MEDIUM 10 BROTH	placeholder ingredient only	JCM		10	yes
-bacterial/methanosaeta_brevibacterium_medium.yaml	CultureMech:002826	METHANOSAETA BREVIBACTERIUM MEDIUM	placeholder ingredient only	JCM			
-bacterial/mg50_medium.yaml	CultureMech:002841	Mg50 MEDIUM	placeholder ingredient only	JCM			
-bacterial/modified_medium_10.yaml	CultureMech:002572	MODIFIED MEDIUM 10	placeholder ingredient only	JCM		10	yes
-bacterial/modified_roseospira_medium.yaml	CultureMech:002318	MODIFIED ROSEOSPIRA MEDIUM	placeholder ingredient only	JCM			
-bacterial/nb_fumarate_nbaf_medium.yaml	CultureMech:002822	NB FUMARATE (NBAF) MEDIUM	placeholder ingredient only	JCM			
-bacterial/poremedia_b_cye_945_agar_medium.yaml	CultureMech:002267	POREMEDIA B-CYE&#945; AGAR MEDIUM	placeholder ingredient only	JCM			
-bacterial/r2a_agar_ph_9_0.yaml	CultureMech:002475	R2A AGAR (pH 9.0)	placeholder ingredient only	JCM			
-bacterial/rumen_fluid_medium.yaml	CultureMech:003115	RUMEN FLUID MEDIUM	placeholder ingredient only	JCM			
-bacterial/smy_medium.yaml	CultureMech:003297	SMY MEDIUM	placeholder ingredient only	JCM			
-bacterial/thermovenbulum_medium.yaml	CultureMech:003202	THERMOVENBULUM MEDIUM	placeholder ingredient only	JCM			
-bacterial/widdel_freshwater_medium_with_glycerin.yaml	CultureMech:002391	WIDDEL FRESHWATER MEDIUM WITH GLYCERIN	placeholder ingredient only	JCM			
-bacterial/widdel_freshwater_medium_with_pyruvate.yaml	CultureMech:002392	WIDDEL FRESHWATER MEDIUM WITH PYRUVATE	placeholder ingredient only	JCM			
-bacterial/xylanobacter_medium.yaml	CultureMech:002873	XYLANOBACTER MEDIUM	placeholder ingredient only	JCM			
-fungal/yeast_extract_medium_ye.yaml	CultureMech:010512	YEAST EXTRACT MEDIUM (YE)	placeholder ingredient only	JCM			
-specialized/marine_medium_with_thiosulfate.yaml	CultureMech:015402	MARINE MEDIUM WITH THIOSULFATE	placeholder ingredient only	JCM			
-bacterial/nissui_plate_sheep_blood_agar.yaml	CultureMech:008099	Nissui Plate Sheep Blood Agar*	placeholder ingredient only	https://togomedium.org/medium/M1550			
-bacterial/imk_with_porphyra.yaml	CultureMech:008334	IMK with Porphyra	placeholder ingredient only	https://togomedium.org/medium/M1769			
-bacterial/seawater_with_porphyra.yaml	CultureMech:008336	Seawater with Porphyra	placeholder ingredient only	https://togomedium.org/medium/M1770			
-bacterial/yeast_extract_medium_ye.yaml	CultureMech:009002	Yeast Extract Medium (YE)	placeholder ingredient only	https://togomedium.org/medium/M241			
-bacterial/TOGO_M904_Bs_107_Medium.yaml	CultureMech:010323	Bs 107 Medium	placeholder ingredient only	https://togomedium.org/medium/M904			
-bacterial/togo_medium_m967.yaml	CultureMech:010392	(Unnamed medium)	placeholder ingredient only	https://togomedium.org/medium/M967			
-bacterial/bekisolidmedium_hydrogenovibrio_crunogenus_quimiolitotrofo.yaml	CultureMech:010430	BekiSolidMedium (Hydrogenovibrio crunogenus QUIMIOLITOTROFO)	placeholder ingredient only	public			
-bacterial/haha_agar.yaml	CultureMech:010431	HaHa agar	placeholder ingredient only	public			
-bacterial/king_b.yaml	CultureMech:010433	King B	placeholder ingredient only	public			
-bacterial/m9_sng_medium.yaml	CultureMech:010438	M9-SNG medium	placeholder ingredient only	public			
-bacterial/mta10.yaml	CultureMech:010436	mTA10	placeholder ingredient only	public			
-bacterial/n27_rhodospirillaceae_medium_modified.yaml	CultureMech:010437	N27 RHODOSPIRILLACEAE MEDIUM (modified)	placeholder ingredient only	public			
-bacterial/pdb_sng_medium.yaml	CultureMech:010439	PDB-SNG medium	placeholder ingredient only	public			
-bacterial/rs_medium_non_nutrient_medium_nnm_component.yaml	CultureMech:010434	RS Medium - Non-Nutrient Medium (NNM) Component	placeholder ingredient only	public			
-bacterial/rs_medium_nutrient_medium_nm_component.yaml	CultureMech:010435	RS Medium - Nutrient Medium (NM) Component	placeholder ingredient only	public			
-bacterial/taiyang_medium_no_9_prototype.yaml	CultureMech:010432	Taiyang Medium No.9 (prototype)	placeholder ingredient only	public			
+bacterial/nissui_plate_sheep_blood_agar.yaml	CultureMech:008099	Nissui Plate Sheep Blood Agar*	no ingredients and no solutions	https://togomedium.org/medium/M1550			
+bacterial/imk_with_porphyra.yaml	CultureMech:008334	IMK with Porphyra	no ingredients and no solutions	https://togomedium.org/medium/M1769			
+bacterial/seawater_with_porphyra.yaml	CultureMech:008336	Seawater with Porphyra	no ingredients and no solutions	https://togomedium.org/medium/M1770			
+bacterial/yeast_extract_medium_ye.yaml	CultureMech:009002	Yeast Extract Medium (YE)	no ingredients and no solutions	https://togomedium.org/medium/M241			
+bacterial/TOGO_M904_Bs_107_Medium.yaml	CultureMech:010323	Bs 107 Medium	no ingredients and no solutions	https://togomedium.org/medium/M904			
+bacterial/togo_medium_m967.yaml	CultureMech:010392	(Unnamed medium)	no ingredients and no solutions	https://togomedium.org/medium/M967			
+bacterial/bekisolidmedium_hydrogenovibrio_crunogenus_quimiolitotrofo.yaml	CultureMech:010430	BekiSolidMedium (Hydrogenovibrio crunogenus QUIMIOLITOTROFO)	no ingredients and no solutions	public			
+bacterial/haha_agar.yaml	CultureMech:010431	HaHa agar	no ingredients and no solutions	public			
+bacterial/king_b.yaml	CultureMech:010433	King B	no ingredients and no solutions	public			
+bacterial/m9_sng_medium.yaml	CultureMech:010438	M9-SNG medium	no ingredients and no solutions	public			
+bacterial/mta10.yaml	CultureMech:010436	mTA10	no ingredients and no solutions	public			
+bacterial/n27_rhodospirillaceae_medium_modified.yaml	CultureMech:010437	N27 RHODOSPIRILLACEAE MEDIUM (modified)	no ingredients and no solutions	public			
+bacterial/pdb_sng_medium.yaml	CultureMech:010439	PDB-SNG medium	no ingredients and no solutions	public			
+bacterial/rs_medium_non_nutrient_medium_nnm_component.yaml	CultureMech:010434	RS Medium - Non-Nutrient Medium (NNM) Component	no ingredients and no solutions	public			
+bacterial/rs_medium_nutrient_medium_nm_component.yaml	CultureMech:010435	RS Medium - Nutrient Medium (NM) Component	no ingredients and no solutions	public			
+bacterial/taiyang_medium_no_9_prototype.yaml	CultureMech:010432	Taiyang Medium No.9 (prototype)	no ingredients and no solutions	public			

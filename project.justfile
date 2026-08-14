@@ -290,6 +290,11 @@ audit-mediadive-ids *args="":
 apply-cocktail-nesting *args="":
     uv run --extra dev python scripts/apply_cocktail_nesting.py {{args}}
 
+# Correct groundings that name the wrong chemical species (#256). Dry run by default.
+[group('Curation')]
+fix-wrong-groundings *args="":
+    uv run --extra dev python scripts/fix_wrong_compound_groundings.py {{args}}
+
 [group('QC')]
 audit-selective-agent-mismatch *args="":
     uv run --extra dev python scripts/audit_selective_agent_mismatch.py {{args}}

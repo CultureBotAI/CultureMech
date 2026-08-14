@@ -30,11 +30,11 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
     compound'
   term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
+    id: CHEBI:17234
+    label: glucose
   mediaingredientmech_chebi_term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
+    id: CHEBI:17234
+    label: glucose
 - preferred_term: Peptone
   concentration:
     value: '2'

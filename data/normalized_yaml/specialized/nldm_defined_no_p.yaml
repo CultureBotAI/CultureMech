@@ -51,7 +51,7 @@ ingredients:
     value: '3.0'
     unit: MG_PER_L
   term:
-    id: CHEBI:86463
+    id: CHEBI:31795
     label: magnesium sulfate heptahydrate
   notes: 'CAS: 10034-99-8; MW: 246.47; From ATCC Wolfe''s mineral mix'
 - preferred_term: Manganese (II) sulfate monohydrate
@@ -272,8 +272,8 @@ ingredients:
     value: '875.0'
     unit: MICROMOLAR
   term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
+    id: CHEBI:17634
+    label: D-glucose
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-99-7; MW: 180.16;
     From NLDM_metabolites'
 - preferred_term: D-Trehalose dihydrate

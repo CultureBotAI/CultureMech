@@ -24,106 +24,6 @@ score	file_path	record_id	name	n_ingredients	reasons
 80	bacterial/NBRC_915.yaml	CultureMech:007504	915	2	only 2 ingredient(s); ingredient name contains an unparsed recipe; no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
 80	bacterial/NBRC_948.yaml	CultureMech:007507	948	2	only 2 ingredient(s); ingredient name contains an unparsed recipe; no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
 80	bacterial/NBRC_960.yaml	CultureMech:007508	960	2	only 2 ingredient(s); ingredient name contains an unparsed recipe; no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-75	bacterial/test_medium_123.yaml	CultureMech:000306	Test Medium 123	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-70	algae/artificial_seawater.yaml	CultureMech:000189	Artificial_Seawater	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/bacillariophycean.yaml	CultureMech:000192	Bacillariophycean	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/basal.yaml	CultureMech:000191	Basal	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/beggiatoa.yaml	CultureMech:000193	Beggiatoa	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/bold_modified_basal.yaml	CultureMech:000194	Bold_Modified_Basal	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/bold_modified_basal_tom.yaml	CultureMech:000195	Bold_Modified_Basal&TOM	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/brackish_water_medium.yaml	CultureMech:000196	Brackish_water_medium	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/ch.yaml	CultureMech:000059	CH	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/chilomonas.yaml	CultureMech:000197	Chilomonas	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/cyanidium.yaml	CultureMech:000198	Cyanidium	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/desmidiacean.yaml	CultureMech:000199	Desmidiacean	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/dunaliella.yaml	CultureMech:000200	Dunaliella	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/dunaliella_acid.yaml	CultureMech:000201	Dunaliella_acid	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/enriched_seawater.yaml	CultureMech:000202	Enriched_Seawater	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/euglena.yaml	CultureMech:000203	Euglena	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/malt_peptone.yaml	CultureMech:000204	Malt_Peptone	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/merds.yaml	CultureMech:000089	MErds	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/mw.yaml	CultureMech:000093	MW	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/note_on_biphasic_soilwater_media_20081216.yaml	CultureMech:000205	Note_on_biphasic_soilwater_media_20081216	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/ochromonas.yaml	CultureMech:000206	Ochromonas	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/pes.yaml	CultureMech:000207	PES	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/polytoma.yaml	CultureMech:000208	Polytoma	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/polytomella.yaml	CultureMech:000209	Polytomella	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/porphyridium.yaml	CultureMech:000210	Porphyridium	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/s_w.yaml	CultureMech:000138	S/W	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/s_w_amp.yaml	CultureMech:000136	S/W + AMP	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/s_w_ca.yaml	CultureMech:000137	S/W + Ca	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/se1.yaml	CultureMech:000128	SE1	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/se2.yaml	CultureMech:000129	SE2	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/seawater.yaml	CultureMech:000211	Seawater	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/ses.yaml	CultureMech:000130	SES	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/soil_water_media.yaml	CultureMech:000212	Soil_Water_Media	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/spirulina.yaml	CultureMech:000213	Spirulina	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/unicellular_green_algae.yaml	CultureMech:000214	Unicellular_Green_Algae	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/volvox.yaml	CultureMech:000215	Volvox	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/wees.yaml	CultureMech:000216	WEES	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/woods_hole_mbl_medium.yaml	CultureMech:000217	Woods Hole MBL Medium	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/yel.yaml	CultureMech:000144	YEL	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-70	algae/z_medium_for_cyanos.yaml	CultureMech:000218	Z-Medium_for_Cyanos	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no media_term (untraceable to a source catalogue)
-65	archaea/archaeoglobus_mcr_medium.yaml	CultureMech:002362	ARCHAEOGLOBUS MCR MEDIUM	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	archaea/methanobacterium_medium_ii_with_formae.yaml	CultureMech:003049	METHANOBACTERIUM MEDIUM (II) WITH FORMAE	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	archaea/methanocaldococcus_indiensis_medium.yaml	CultureMech:002720	METHANOCALDOCOCCUS INDIENSIS MEDIUM	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	archaea/modified_halosimplex_medium.yaml	CultureMech:003286	MODIFIED HALOSIMPLEX MEDIUM	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/2sna.yaml	CultureMech:000411	2SNA	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/JCM_J806_GS_MEDIUM.yaml	CultureMech:003151	GS MEDIUM	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/TOGO_M904_Bs_107_Medium.yaml	CultureMech:010323	Bs 107 Medium	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/bm_for_tepidanaerobacter_acetoxydans.yaml	CultureMech:003081	BM FOR TEPIDANAEROBACTER ACETOXYDANS	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/bs_107_medium.yaml	CultureMech:003213	Bs 107 MEDIUM	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/car_bacillus_medium.yaml	CultureMech:003345	CAR BACILLUS MEDIUM	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/clostridium_bovis_medium.yaml	CultureMech:002982	CLOSTRIDIUM BOVIS MEDIUM	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/cultivation_medium_for_sf1ep_cells_for_treponema_pallidum.yaml	CultureMech:001271	Cultivation Medium for Sf1Ep cells for Treponema pallidum	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/desulfovibrio_piger_medium.yaml	CultureMech:002756	DESULFOVIBRIO PIGER MEDIUM	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/eg_medium_with_10_nacl.yaml	CultureMech:002618	EG MEDIUM WITH 10% NaCl	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/ferric_citrate_fwmedia.yaml	CultureMech:002821	FERRIC CITRATE FWMEDIA	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/fresh_water_media.yaml	CultureMech:002823	FRESH WATER MEDIA	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/imk_with_porphyra.yaml	CultureMech:008334	IMK with Porphyra	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/jcm_medium_no_1324.yaml	CultureMech:002488	JCM MEDIUM No. 1324	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/jcm_medium_no_313.yaml	CultureMech:002671	JCM MEDIUM No. 313	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/ji_medium.yaml	CultureMech:002747	JI MEDIUM	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/l_15b_tick_cell_medium.yaml	CultureMech:001068	L-15B Tick Cell Medium	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/lind_8a_medium.yaml	CultureMech:003136	LIND 8A MEDIUM	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/liver_broth_oxoid_cm_77.yaml	CultureMech:001915	LIVER BROTH (Oxoid CM 77)	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/medium_10_broth.yaml	CultureMech:002539	MEDIUM 10 BROTH	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/mg50_medium.yaml	CultureMech:002841	Mg50 MEDIUM	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/modified_medium_10.yaml	CultureMech:002572	MODIFIED MEDIUM 10	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/modified_roseospira_medium.yaml	CultureMech:002318	MODIFIED ROSEOSPIRA MEDIUM	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/nb_fumarate_nbaf_medium.yaml	CultureMech:002822	NB FUMARATE (NBAF) MEDIUM	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/nissui_plate_sheep_blood_agar.yaml	CultureMech:008099	Nissui Plate Sheep Blood Agar*	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/nss_low.yaml	CultureMech:000383	NSS Low	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/poremedia_b_cye_945_agar_medium.yaml	CultureMech:002267	POREMEDIA B-CYE&#945; AGAR MEDIUM	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/rhodocyclus_purpureus_medium.yaml	CultureMech:001559	RHODOCYCLUS PURPUREUS MEDIUM	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/rumen_fluid_medium.yaml	CultureMech:003115	RUMEN FLUID MEDIUM	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/seawater_with_porphyra.yaml	CultureMech:008336	Seawater with Porphyra	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/smy_medium.yaml	CultureMech:003297	SMY MEDIUM	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/taiyang_medium_no_9_prototype.yaml	CultureMech:010432	Taiyang Medium No.9 (prototype)	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/togo_medium_m967.yaml	CultureMech:010392	(Unnamed medium)	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/widdel_freshwater_medium_with_glycerin.yaml	CultureMech:002391	WIDDEL FRESHWATER MEDIUM WITH GLYCERIN	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	bacterial/yeast_extract_medium_ye.yaml	CultureMech:009002	Yeast Extract Medium (YE)	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	fungal/wmalt_yeast_extract_medium_wmy.yaml	CultureMech:010440	wMalt Yeast Extract Medium (wMY)	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	fungal/yeast_extract_medium_ye.yaml	CultureMech:010512	YEAST EXTRACT MEDIUM (YE)	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-65	specialized/marine_medium_with_thiosulfate.yaml	CultureMech:015402	MARINE MEDIUM WITH THIOSULFATE	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-60	archaea/thermoproteus_medium_c.yaml	CultureMech:002977	THERMOPROTEUS MEDIUM (C)	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded
-60	bacterial/agc2_medium.yaml	CultureMech:002739	AGC2 MEDIUM	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded
-60	bacterial/beer_medium.yaml	CultureMech:002778	BEER MEDIUM	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded
-60	bacterial/bekisolidmedium_hydrogenovibrio_crunogenus_quimiolitotrofo.yaml	CultureMech:010430	BekiSolidMedium (Hydrogenovibrio crunogenus QUIMIOLITOTROFO)	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded
-60	bacterial/diluted_asm_medium.yaml	CultureMech:003160	DILUTED ASM MEDIUM	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded
-60	bacterial/haha_agar.yaml	CultureMech:010431	HaHa agar	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded
-60	bacterial/king_b.yaml	CultureMech:010433	King B	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded
-60	bacterial/m9_sng_medium.yaml	CultureMech:010438	M9-SNG medium	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded
-60	bacterial/methanosaeta_brevibacterium_medium.yaml	CultureMech:002826	METHANOSAETA BREVIBACTERIUM MEDIUM	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded
-60	bacterial/mta10.yaml	CultureMech:010436	mTA10	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded
-60	bacterial/n27_rhodospirillaceae_medium_modified.yaml	CultureMech:010437	N27 RHODOSPIRILLACEAE MEDIUM (modified)	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded
-60	bacterial/pdb_sng_medium.yaml	CultureMech:010439	PDB-SNG medium	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded
-60	bacterial/r2a_agar_ph_9_0.yaml	CultureMech:002475	R2A AGAR (pH 9.0)	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded
-60	bacterial/rs_medium_non_nutrient_medium_nnm_component.yaml	CultureMech:010434	RS Medium - Non-Nutrient Medium (NNM) Component	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded
-60	bacterial/rs_medium_nutrient_medium_nm_component.yaml	CultureMech:010435	RS Medium - Nutrient Medium (NM) Component	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded
-60	bacterial/thermovenbulum_medium.yaml	CultureMech:003202	THERMOVENBULUM MEDIUM	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded
-60	bacterial/widdel_freshwater_medium_with_pyruvate.yaml	CultureMech:002392	WIDDEL FRESHWATER MEDIUM WITH PYRUVATE	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded
-60	bacterial/xylanobacter_medium.yaml	CultureMech:002873	XYLANOBACTER MEDIUM	1	only 1 ingredient(s); placeholder ingredient text; no ingredient is grounded
 55	bacterial/NBRC_1003.yaml	CultureMech:007449	1003	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
 55	bacterial/NBRC_1021.yaml	CultureMech:007450	1021	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
 55	bacterial/NBRC_1051.yaml	CultureMech:007452	1051	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
@@ -204,6 +104,45 @@ score	file_path	record_id	name	n_ingredients	reasons
 45	bacterial/for_dsm_2805.yaml	CultureMech:004855	For DSM 2805	0	no ingredients; name 'For DSM 2805' identifies a strain, not a medium; no pH and no temperature
 45	bacterial/for_dsm_3246.yaml	CultureMech:005056	For DSM 3246	0	no ingredients; name 'For DSM 3246' identifies a strain, not a medium; no pH and no temperature
 45	bacterial/for_dsm_3247.yaml	CultureMech:005055	For DSM 3247	0	no ingredients; name 'For DSM 3247' identifies a strain, not a medium; no pH and no temperature
+40	algae/artificial_seawater.yaml	CultureMech:000189	Artificial_Seawater	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/bacillariophycean.yaml	CultureMech:000192	Bacillariophycean	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/basal.yaml	CultureMech:000191	Basal	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/beggiatoa.yaml	CultureMech:000193	Beggiatoa	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/bold_modified_basal.yaml	CultureMech:000194	Bold_Modified_Basal	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/bold_modified_basal_tom.yaml	CultureMech:000195	Bold_Modified_Basal&TOM	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/brackish_water_medium.yaml	CultureMech:000196	Brackish_water_medium	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/ch.yaml	CultureMech:000059	CH	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/chilomonas.yaml	CultureMech:000197	Chilomonas	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/cyanidium.yaml	CultureMech:000198	Cyanidium	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/desmidiacean.yaml	CultureMech:000199	Desmidiacean	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/dunaliella.yaml	CultureMech:000200	Dunaliella	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/dunaliella_acid.yaml	CultureMech:000201	Dunaliella_acid	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/enriched_seawater.yaml	CultureMech:000202	Enriched_Seawater	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/euglena.yaml	CultureMech:000203	Euglena	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/malt_peptone.yaml	CultureMech:000204	Malt_Peptone	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/merds.yaml	CultureMech:000089	MErds	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/mw.yaml	CultureMech:000093	MW	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/note_on_biphasic_soilwater_media_20081216.yaml	CultureMech:000205	Note_on_biphasic_soilwater_media_20081216	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/ochromonas.yaml	CultureMech:000206	Ochromonas	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/pes.yaml	CultureMech:000207	PES	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/polytoma.yaml	CultureMech:000208	Polytoma	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/polytomella.yaml	CultureMech:000209	Polytomella	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/porphyridium.yaml	CultureMech:000210	Porphyridium	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/s_w.yaml	CultureMech:000138	S/W	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/s_w_amp.yaml	CultureMech:000136	S/W + AMP	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/s_w_ca.yaml	CultureMech:000137	S/W + Ca	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/se1.yaml	CultureMech:000128	SE1	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/se2.yaml	CultureMech:000129	SE2	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/seawater.yaml	CultureMech:000211	Seawater	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/ses.yaml	CultureMech:000130	SES	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/soil_water_media.yaml	CultureMech:000212	Soil_Water_Media	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/spirulina.yaml	CultureMech:000213	Spirulina	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/unicellular_green_algae.yaml	CultureMech:000214	Unicellular_Green_Algae	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/volvox.yaml	CultureMech:000215	Volvox	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/wees.yaml	CultureMech:000216	WEES	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/woods_hole_mbl_medium.yaml	CultureMech:000217	Woods Hole MBL Medium	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/yel.yaml	CultureMech:000144	YEL	0	no ingredients; no media_term (untraceable to a source catalogue)
+40	algae/z_medium_for_cyanos.yaml	CultureMech:000218	Z-Medium_for_Cyanos	0	no ingredients; no media_term (untraceable to a source catalogue)
 40	archaea/JCM_J1427_MODIFIED_METHANOBACTERIUM_MEDIUM.yaml	CultureMech:015863	MODIFIED METHANOBACTERIUM MEDIUM	19	placeholder ingredient text; only 9/19 ingredients grounded; no pH and no temperature
 40	archaea/TOGO_M713_Aerobic_Sulfolobales_Medium_Without_Sulfur.yaml	CultureMech:010120	Aerobic Sulfolobales Medium Without Sulfur	1	only 1 ingredient(s); no ingredient is grounded; no pH and no temperature
 40	bacterial/10_wt_wt_skim_milk_supplemented_with_1_mm_sodium_formate.yaml	CultureMech:009451	10% (wt/wt) skim milk supplemented with 1 mM sodium formate	2	only 2 ingredient(s); no ingredient is grounded; no pH and no temperature
@@ -377,11 +316,16 @@ score	file_path	record_id	name	n_ingredients	reasons
 35	archaea/TOGO_M1212_Halobacteria_Medium_pH_8.0.yaml	CultureMech:007740	Halobacteria Medium (pH 8.0)	0	no ingredients; no pH and no temperature
 35	archaea/TOGO_M583_Thermoproteus_Medium_B.yaml	CultureMech:009979	Thermoproteus Medium (B)	0	no ingredients; no pH and no temperature
 35	archaea/TOGO_M643_Thermoproteus_Medium_C.yaml	CultureMech:010044	Thermoproteus Medium (C)	0	no ingredients; no pH and no temperature
+35	archaea/archaeoglobus_mcr_medium.yaml	CultureMech:002362	ARCHAEOGLOBUS MCR MEDIUM	0	no ingredients; no pH and no temperature
 35	archaea/metallosphaera_medium.yaml	CultureMech:005608	METALLOSPHAERA medium	0	no ingredients; no pH and no temperature
+35	archaea/methanobacterium_medium_ii_with_formae.yaml	CultureMech:003049	METHANOBACTERIUM MEDIUM (II) WITH FORMAE	0	no ingredients; no pH and no temperature
+35	archaea/methanocaldococcus_indiensis_medium.yaml	CultureMech:002720	METHANOCALDOCOCCUS INDIENSIS MEDIUM	0	no ingredients; no pH and no temperature
 35	archaea/methanocorpusculum_medium.yaml	CultureMech:004706	METHANOCORPUSCULUM medium	0	no ingredients; no pH and no temperature
 35	archaea/methanogenium_sp_medium.yaml	CultureMech:005910	METHANOGENIUM SP. medium	0	no ingredients; no pH and no temperature
 35	archaea/methanosarcina_thermophilic_medium.yaml	CultureMech:004191	METHANOSARCINA (thermophilic) medium	0	no ingredients; no pH and no temperature
 35	archaea/methanosarcina_thermophilic_medium_replace_rumen_fluid_clarified_with_sludge_fluid_medium_119.yaml	CultureMech:004190	METHANOSARCINA (thermophilic) medium_replace_Rumen fluid, clarified_with_Sludge fluid (medium 119)	0	no ingredients; no pH and no temperature
+35	archaea/modified_halosimplex_medium.yaml	CultureMech:003286	MODIFIED HALOSIMPLEX MEDIUM	0	no ingredients; no pH and no temperature
+35	bacterial/2sna.yaml	CultureMech:000411	2SNA	0	no ingredients; no pH and no temperature
 35	bacterial/4_times_concentrated_sea_water_medium_821.yaml	CultureMech:004993	4 times concentrated sea water (medium 821)	0	no ingredients; no pH and no temperature
 35	bacterial/JCM_J1351_PELOSINUS_BKL1_MEDIUM.yaml	CultureMech:015835	PELOSINUS BKL1 MEDIUM	13	placeholder ingredient text; only 6/13 ingredients grounded
 35	bacterial/JCM_J1359_MINERAL_CARBONATE_MEDIUM_WITH_CASEIN_PEPTONE.yaml	CultureMech:015839	MINERAL CARBONATE MEDIUM WITH CASEIN PEPTONE	11	placeholder ingredient text; only 4/11 ingredients grounded
@@ -391,6 +335,7 @@ score	file_path	record_id	name	n_ingredients	reasons
 35	bacterial/JCM_J1429_M1H_NAG_ASW.yaml	CultureMech:015864	M1H NAG ASW	11	placeholder ingredient text; only 5/11 ingredients grounded
 35	bacterial/JCM_J1444_DESULFOSPOROSINUS_SB140_MEDIUM.yaml	CultureMech:015868	DESULFOSPOROSINUS SB140 MEDIUM	15	placeholder ingredient text; only 6/15 ingredients grounded
 35	bacterial/JCM_J1468_FRESHWATER_R2A_MEDIUM.yaml	CultureMech:015874	FRESHWATER R2A MEDIUM	19	placeholder ingredient text; only 7/19 ingredients grounded
+35	bacterial/JCM_J806_GS_MEDIUM.yaml	CultureMech:003151	GS MEDIUM	0	no ingredients; no pH and no temperature
 35	bacterial/KOMODO_272_DESULFOVIBRIO_medium_choline.yaml	CultureMech:004700	DESULFOVIBRIO medium (choline)	0	no ingredients; no pH and no temperature
 35	bacterial/KOMODO_7001_Trace_elements_medium_596.yaml	CultureMech:006327	Trace elements (medium 596)	0	no ingredients; no pH and no temperature
 35	bacterial/TOGO_M103_MRS_Medium_pH_5.5.yaml	CultureMech:007555	MRS Medium (pH 5.5)	0	no ingredients; no pH and no temperature
@@ -414,6 +359,7 @@ score	file_path	record_id	name	n_ingredients	reasons
 35	bacterial/TOGO_M73_Alkaline_Yeast_Extract-Malt_Extract_Agar.yaml	CultureMech:010146	Alkaline Yeast Extract-Malt Extract Agar	0	no ingredients; no pH and no temperature
 35	bacterial/TOGO_M804_Mineral_Medium_For_Thiomonas_Islandicum.yaml	CultureMech:010216	Mineral Medium For Thiomonas Islandicum	0	no ingredients; no pH and no temperature
 35	bacterial/TOGO_M851_Diluted_ASM_Medium.yaml	CultureMech:010267	Diluted ASM Medium	0	no ingredients; no pH and no temperature
+35	bacterial/TOGO_M904_Bs_107_Medium.yaml	CultureMech:010323	Bs 107 Medium	0	no ingredients; no pH and no temperature
 35	bacterial/TOGO_M996_Gauze_s_Synthetic_Medium_NO._1_pH_5.3.yaml	CultureMech:010424	Gauze's Synthetic Medium NO. 1 (pH 5.3)	0	no ingredients; no pH and no temperature
 35	bacterial/acetobacterium_2_medium.yaml	CultureMech:005062	ACETOBACTERIUM 2 medium	0	no ingredients; no pH and no temperature
 35	bacterial/acetobacterium_carbinolicum_medium.yaml	CultureMech:004988	ACETOBACTERIUM CARBINOLICUM medium	0	no ingredients; no pH and no temperature
@@ -434,10 +380,15 @@ score	file_path	record_id	name	n_ingredients	reasons
 35	bacterial/artificial_seawater_medium_1326.yaml	CultureMech:004787	Artificial seawater (medium 1326)	0	no ingredients; no pH and no temperature
 35	bacterial/bacto_middelbrook_oadc_enrichment_medium_911.yaml	CultureMech:004791	Bacto Middelbrook OADC enrichment (medium 911)	0	no ingredients; no pH and no temperature
 35	bacterial/bbl_actinomyces_broth_medium_1029.yaml	CultureMech:004983	BBL Actinomyces broth (medium 1029)	0	no ingredients; no pH and no temperature
+35	bacterial/bm_for_tepidanaerobacter_acetoxydans.yaml	CultureMech:003081	BM FOR TEPIDANAEROBACTER ACETOXYDANS	0	no ingredients; no pH and no temperature
 35	bacterial/bordet_gengou_agar_base.yaml	CultureMech:005645	Bordet-Gengou-Agar-Base	0	no ingredients; no pH and no temperature
+35	bacterial/bs_107_medium.yaml	CultureMech:003213	Bs 107 MEDIUM	0	no ingredients; no pH and no temperature
+35	bacterial/car_bacillus_medium.yaml	CultureMech:003345	CAR BACILLUS MEDIUM	0	no ingredients; no pH and no temperature
 35	bacterial/casman_agar_base.yaml	CultureMech:005647	Casman-Agar-Base	0	no ingredients; no pH and no temperature
 35	bacterial/chromagertm_malassezia_candida.yaml	CultureMech:008463	CHROMagerTM Malassezia/Candida*	0	no ingredients; no pH and no temperature
+35	bacterial/clostridium_bovis_medium.yaml	CultureMech:002982	CLOSTRIDIUM BOVIS MEDIUM	0	no ingredients; no pH and no temperature
 35	bacterial/cmrl_1066_medium_10x_concentrated_gibco.yaml	CultureMech:005648	CMRL-1066 medium (10x concentrated; GIBCO)	0	no ingredients; no pH and no temperature
+35	bacterial/cultivation_medium_for_sf1ep_cells_for_treponema_pallidum.yaml	CultureMech:001271	Cultivation Medium for Sf1Ep cells for Treponema pallidum	0	no ingredients; no pH and no temperature
 35	bacterial/desulfobacterium_anilini_medium.yaml	CultureMech:005590	DESULFOBACTERIUM ANILINI MEDIUM	0	no ingredients; no pH and no temperature
 35	bacterial/desulfococcus_medium.yaml	CultureMech:004258	DESULFOCOCCUS MEDIUM	0	no ingredients; no pH and no temperature
 35	bacterial/desulfomicrobium_whb_medium.yaml	CultureMech:006367	DESULFOMICROBIUM WHB MEDIUM	0	no ingredients; no pH and no temperature
@@ -449,49 +400,74 @@ score	file_path	record_id	name	n_ingredients	reasons
 35	bacterial/desulfovibrio_carbinolicus_medium.yaml	CultureMech:005160	DESULFOVIBRIO CARBINOLICUS medium	0	no ingredients; no pH and no temperature
 35	bacterial/desulfovibrio_inopinatus_medium.yaml	CultureMech:006511	DESULFOVIBRIO INOPINATUS MEDIUM	0	no ingredients; no pH and no temperature
 35	bacterial/desulfovibrio_inopinatus_medium_replace_na_pyruvate_with_1_2_4_trihydroxybenzene.yaml	CultureMech:006510	DESULFOVIBRIO INOPINATUS MEDIUM_replace_Na-pyruvate_with_1,2,4-trihydroxybenzene	0	no ingredients; no pH and no temperature
+35	bacterial/desulfovibrio_piger_medium.yaml	CultureMech:002756	DESULFOVIBRIO PIGER MEDIUM	0	no ingredients; no pH and no temperature
 35	bacterial/desulfovibrio_shv_medium.yaml	CultureMech:006368	DESULFOVIBRIO SHV MEDIUM	0	no ingredients; no pH and no temperature
 35	bacterial/dmj_synthetic_seawater_medium_997.yaml	CultureMech:004270	DMJ synthetic seawater (medium 997)	0	no ingredients; no pH and no temperature
 35	bacterial/dsm_4156_b_and_dsm_4156.yaml	CultureMech:005229	DSM 4156 B and DSM 4156	0	no ingredients; no pH and no temperature
+35	bacterial/eg_medium_with_10_nacl.yaml	CultureMech:002618	EG MEDIUM WITH 10% NaCl	0	no ingredients; no pH and no temperature
+35	bacterial/ferric_citrate_fwmedia.yaml	CultureMech:002821	FERRIC CITRATE FWMEDIA	0	no ingredients; no pH and no temperature
 35	bacterial/for_s_buswellii_dsm_2612m.yaml	CultureMech:006276	For S. buswellii DSM 2612M	0	no ingredients; no pH and no temperature
 35	bacterial/for_s_wolinii_dsm_2805m.yaml	CultureMech:006277	For S. wolinii DSM 2805M	0	no ingredients; no pH and no temperature
+35	bacterial/fresh_water_media.yaml	CultureMech:002823	FRESH WATER MEDIA	0	no ingredients; no pH and no temperature
 35	bacterial/glutarate_medium.yaml	CultureMech:006014	GLUTARATE medium	0	no ingredients; no pH and no temperature
 35	bacterial/ilyobacter_tartaricus_medium.yaml	CultureMech:004761	ILYOBACTER TARTARICUS MEDIUM	0	no ingredients; no pH and no temperature
+35	bacterial/imk_with_porphyra.yaml	CultureMech:008334	IMK with Porphyra	0	no ingredients; no pH and no temperature
 35	bacterial/isovitalex.yaml	CultureMech:005642	Isovitalex	0	no ingredients; no pH and no temperature
+35	bacterial/jcm_medium_no_1324.yaml	CultureMech:002488	JCM MEDIUM No. 1324	0	no ingredients; no pH and no temperature
+35	bacterial/jcm_medium_no_313.yaml	CultureMech:002671	JCM MEDIUM No. 313	0	no ingredients; no pH and no temperature
+35	bacterial/ji_medium.yaml	CultureMech:002747	JI MEDIUM	0	no ingredients; no pH and no temperature
+35	bacterial/l_15b_tick_cell_medium.yaml	CultureMech:001068	L-15B Tick Cell Medium	0	no ingredients; no pH and no temperature
 35	bacterial/lactic_acid_whey_medium_456.yaml	CultureMech:004985	Lactic acid whey (medium 456)	1	only 1 ingredient(s); no ingredient is grounded
+35	bacterial/lind_8a_medium.yaml	CultureMech:003136	LIND 8A MEDIUM	0	no ingredients; no pH and no temperature
+35	bacterial/liver_broth_oxoid_cm_77.yaml	CultureMech:001915	LIVER BROTH (Oxoid CM 77)	0	no ingredients; no pH and no temperature
 35	bacterial/marine_agar_2216_ph_8_5.yaml	CultureMech:007573	Marine Agar 2216 (pH 8.5)	0	no ingredients; no pH and no temperature
 35	bacterial/marine_agar_2216_ph_9_0.yaml	CultureMech:007592	Marine Agar 2216 (pH 9.0)	0	no ingredients; no pH and no temperature
 35	bacterial/marine_medium_synthetic_seawater_mix_medium_611.yaml	CultureMech:004803	Marine-Medium/Synthetic seawater-mix (medium 611)	0	no ingredients; no pH and no temperature
 35	bacterial/marine_trace_elements_medium_511.yaml	CultureMech:004274	Marine trace elements (medium 511)	0	no ingredients; no pH and no temperature
+35	bacterial/medium_10_broth.yaml	CultureMech:002539	MEDIUM 10 BROTH	0	no ingredients; no pH and no temperature
 35	bacterial/medium_131_modified_for_dsm_6216.yaml	CultureMech:004066	MEDIUM 131 MODIFIED FOR DSM 6216	0	no ingredients; no pH and no temperature
 35	bacterial/medium_777_modified_for_dsm_14980.yaml	CultureMech:006434	MEDIUM 777 MODIFIED FOR DSM 14980	0	no ingredients; no pH and no temperature
 35	bacterial/medium_md1_medium_9.yaml	CultureMech:004986	medium MD1 (medium 9)	0	no ingredients; no pH and no temperature
 35	bacterial/metals_44_medium_590.yaml	CultureMech:004393	Metals 44 (medium 590)	0	no ingredients; no pH and no temperature
 35	bacterial/methanol_utilizing_bacteria_medium_d.yaml	CultureMech:002435	METHANOL-UTILIZING BACTERIA MEDIUM D	1	only 1 ingredient(s); no ingredient is grounded
+35	bacterial/mg50_medium.yaml	CultureMech:002841	Mg50 MEDIUM	0	no ingredients; no pH and no temperature
 35	bacterial/mineral_mix_medium_1001.yaml	CultureMech:004277	Mineral Mix (medium 1001)	0	no ingredients; no pH and no temperature
+35	bacterial/modified_medium_10.yaml	CultureMech:002572	MODIFIED MEDIUM 10	0	no ingredients; no pH and no temperature
 35	bacterial/modified_mj_synthetic_sea_water_medium_1131.yaml	CultureMech:004284	Modified MJ synthetic sea water (medium 1131)	0	no ingredients; no pH and no temperature
+35	bacterial/modified_roseospira_medium.yaml	CultureMech:002318	MODIFIED ROSEOSPIRA MEDIUM	0	no ingredients; no pH and no temperature
 35	bacterial/mrs_medium_ph_5_5.yaml	CultureMech:002293	MRS MEDIUM (pH 5.5)	1	only 1 ingredient(s); no ingredient is grounded
 35	bacterial/mtp4_medium.yaml	CultureMech:006012	MTP4 MEDIUM	0	no ingredients; no pH and no temperature
+35	bacterial/nb_fumarate_nbaf_medium.yaml	CultureMech:002822	NB FUMARATE (NBAF) MEDIUM	0	no ingredients; no pH and no temperature
+35	bacterial/nissui_plate_sheep_blood_agar.yaml	CultureMech:008099	Nissui Plate Sheep Blood Agar*	0	no ingredients; no pH and no temperature
+35	bacterial/nss_low.yaml	CultureMech:000383	NSS Low	0	no ingredients; no pH and no temperature
 35	bacterial/nutrient_broth_difco.yaml	CultureMech:005652	Nutrient broth (Difco)	0	no ingredients; no pH and no temperature
 35	bacterial/pelobacter_acetylenicus_medium.yaml	CultureMech:005057	PELOBACTER ACETYLENICUS MEDIUM	0	no ingredients; no pH and no temperature
 35	bacterial/pelobacter_venetianus_fresh_water_medium.yaml	CultureMech:004774	PELOBACTER VENETIANUS (fresh water) MEDIUM	0	no ingredients; no pH and no temperature
 35	bacterial/pelobacter_venetianus_marine_medium.yaml	CultureMech:004760	PELOBACTER VENETIANUS (marine) MEDIUM	0	no ingredients; no pH and no temperature
 35	bacterial/pennassay_broth.yaml	CultureMech:005653	Pennassay Broth	0	no ingredients; no pH and no temperature
+35	bacterial/poremedia_b_cye_945_agar_medium.yaml	CultureMech:002267	POREMEDIA B-CYE&#945; AGAR MEDIUM	0	no ingredients; no pH and no temperature
 35	bacterial/propionigenium_maris_medium.yaml	CultureMech:006291	PROPIONIGENIUM MARIS medium	0	no ingredients; no pH and no temperature
+35	bacterial/rhodocyclus_purpureus_medium.yaml	CultureMech:001559	RHODOCYCLUS PURPUREUS MEDIUM	0	no ingredients; no pH and no temperature
 35	bacterial/rumen_fluid_clarified.yaml	CultureMech:006085	Rumen fluid, clarified	0	no ingredients; no pH and no temperature
+35	bacterial/rumen_fluid_medium.yaml	CultureMech:003115	RUMEN FLUID MEDIUM	0	no ingredients; no pH and no temperature
 35	bacterial/s_w.yaml	CultureMech:000414	S/W	1	only 1 ingredient(s); no ingredient is grounded
 35	bacterial/s_w_amp.yaml	CultureMech:000307	S/W + AMP	2	only 2 ingredient(s); no ingredient is grounded
 35	bacterial/sabouraud_2_glucose_bouillon_merck_108339.yaml	CultureMech:006517	SABOURAUD-2% Glucose-Bouillon (Merck 108339)	0	no ingredients; no pH and no temperature
 35	bacterial/salt_concentrate_medium_517.yaml	CultureMech:004288	Salt concentrate (medium 517)	0	no ingredients; no pH and no temperature
 35	bacterial/sb_sw_medium.yaml	CultureMech:006278	SB/SW MEDIUM	0	no ingredients; no pH and no temperature
+35	bacterial/seawater_with_porphyra.yaml	CultureMech:008336	Seawater with Porphyra	0	no ingredients; no pH and no temperature
 35	bacterial/sludge_fluid_medium_119.yaml	CultureMech:004990	Sludge fluid (medium 119)	0	no ingredients; no pH and no temperature
+35	bacterial/smy_medium.yaml	CultureMech:003297	SMY MEDIUM	0	no ingredients; no pH and no temperature
 35	bacterial/sse_double_concentrated_medium_1426.yaml	CultureMech:004838	SSE (double concentrated) (medium 1426)	0	no ingredients; no pH and no temperature
 35	bacterial/synthetic_seawater_2_x_conc_medium_795.yaml	CultureMech:004840	Synthetic seawater (2 x conc.) (medium 795)	0	no ingredients; no pH and no temperature
 35	bacterial/syntrophobacter_pfennigii_medium.yaml	CultureMech:006338	SYNTROPHOBACTER PFENNIGII MEDIUM	1	only 1 ingredient(s); no ingredient is grounded
 35	bacterial/syntrophobacter_wolinii_medium.yaml	CultureMech:004866	SYNTROPHOBACTER WOLINII medium	0	no ingredients; no pH and no temperature
 35	bacterial/syntrophus_buswellii_ii_medium.yaml	CultureMech:005230	SYNTROPHUS BUSWELLII II MEDIUM	0	no ingredients; no pH and no temperature
 35	bacterial/syntrophus_medium_sulfate_free.yaml	CultureMech:004742	SYNTROPHUS medium - SULFATE FREE	0	no ingredients; no pH and no temperature
+35	bacterial/taiyang_medium_no_9_prototype.yaml	CultureMech:010432	Taiyang Medium No.9 (prototype)	0	no ingredients; no pH and no temperature
 35	bacterial/thermodesulforhabdus_medium.yaml	CultureMech:006339	THERMODESULFORHABDUS MEDIUM	1	only 1 ingredient(s); no ingredient is grounded
 35	bacterial/thiobacillus_ferrooxidans_medium_with_tetrathionate.yaml	CultureMech:006372	THIOBACILLUS FERROOXIDANS MEDIUM WITH TETRATHIONATE	0	no ingredients; no pH and no temperature
+35	bacterial/togo_medium_m967.yaml	CultureMech:010392	(Unnamed medium)	0	no ingredients; no pH and no temperature
 35	bacterial/trace_elements_medium_1108a.yaml	CultureMech:006328	Trace elements (medium 1108a)	0	no ingredients; no pH and no temperature
 35	bacterial/trace_elements_medium_1147.yaml	CultureMech:004875	Trace elements (medium 1147)	0	no ingredients; no pH and no temperature
 35	bacterial/trace_elements_medium_596.yaml	CultureMech:004877	Trace elements (medium 596)	0	no ingredients; no pH and no temperature
@@ -500,10 +476,15 @@ score	file_path	record_id	name	n_ingredients	reasons
 35	bacterial/true_blue_trace_elements_medium_748.yaml	CultureMech:004939	True Blue Trace Elements (medium 748)	0	no ingredients; no pH and no temperature
 35	bacterial/vitox.yaml	CultureMech:005644	Vitox	0	no ingredients; no pH and no temperature
 35	bacterial/vy_medium.yaml	CultureMech:001704	VY MEDIUM	2	only 2 ingredient(s); no ingredient is grounded
+35	bacterial/widdel_freshwater_medium_with_glycerin.yaml	CultureMech:002391	WIDDEL FRESHWATER MEDIUM WITH GLYCERIN	0	no ingredients; no pH and no temperature
 35	bacterial/yeast_extract_malt_extract_agar_isp_2_ph_8_5.yaml	CultureMech:010358	Yeast Extract-Malt Extract Agar (ISP-2) (pH 8.5)	0	no ingredients; no pH and no temperature
 35	bacterial/yeast_extract_malt_extract_agar_ph_5_5.yaml	CultureMech:007789	Yeast Extract-Malt Extract Agar (pH 5.5)	0	no ingredients; no pH and no temperature
 35	bacterial/yeast_extract_malt_extract_agar_ph_6_0.yaml	CultureMech:010021	Yeast Extract-Malt Extract Agar (pH 6.0)	0	no ingredients; no pH and no temperature
 35	bacterial/yeast_extract_malt_extract_agar_ph_9_0.yaml	CultureMech:009921	Yeast Extract-Malt Extract Agar (pH 9.0)	0	no ingredients; no pH and no temperature
+35	bacterial/yeast_extract_medium_ye.yaml	CultureMech:009002	Yeast Extract Medium (YE)	0	no ingredients; no pH and no temperature
+35	fungal/wmalt_yeast_extract_medium_wmy.yaml	CultureMech:010440	wMalt Yeast Extract Medium (wMY)	0	no ingredients; no pH and no temperature
+35	fungal/yeast_extract_medium_ye.yaml	CultureMech:010512	YEAST EXTRACT MEDIUM (YE)	0	no ingredients; no pH and no temperature
+35	specialized/marine_medium_with_thiosulfate.yaml	CultureMech:015402	MARINE MEDIUM WITH THIOSULFATE	0	no ingredients; no pH and no temperature
 30	algae/a_medium.yaml	CultureMech:000022	A+ Medium	10	no ingredient is grounded; no media_term (untraceable to a source catalogue)
 30	algae/bg_11_medium.yaml	CultureMech:000029	BG-11 Medium	10	no ingredient is grounded; no media_term (untraceable to a source catalogue)
 30	algae/bg_11_n_medium.yaml	CultureMech:000028	BG-11(-N) Medium	9	no ingredient is grounded; no media_term (untraceable to a source catalogue)
@@ -521,19 +502,22 @@ score	file_path	record_id	name	n_ingredients	reasons
 30	archaea/natronolimnobius_aht32_medium_a.yaml	CultureMech:003235	NATRONOLIMNOBIUS AHT32 MEDIUM (A)	19	placeholder ingredient text; no pH and no temperature
 30	archaea/natronolimnobius_aht32_medium_b.yaml	CultureMech:002272	NATRONOLIMNOBIUS AHT32 MEDIUM (B)	11	placeholder ingredient text; no pH and no temperature
 30	archaea/thermophilic_methanosaeta_medium.yaml	CultureMech:005164	THERMOPHILIC METHANOSAETA MEDIUM	0	no ingredients
+30	archaea/thermoproteus_medium_c.yaml	CultureMech:002977	THERMOPROTEUS MEDIUM (C)	0	no ingredients
 30	bacterial/JCM_J1341_MODIFIED_PFENNIG_MEDIUM_WITH_ACETATE_AND_FUMARATE.yaml	CultureMech:015833	MODIFIED PFENNIG MEDIUM WITH ACETATE AND FUMARATE	14	placeholder ingredient text; no pH and no temperature
 30	bacterial/JCM_J1344_SEA_WATER_MEDIUM_WITH_ACETATE.yaml	CultureMech:015834	SEA WATER MEDIUM WITH ACETATE	14	placeholder ingredient text; no pH and no temperature
 30	bacterial/JCM_J1365_ACIDIC_LOW_SALT_MINERAL_MEDIUM.yaml	CultureMech:015843	ACIDIC LOW SALT MINERAL MEDIUM	17	placeholder ingredient text; no pH and no temperature
 30	bacterial/JCM_J1366_GBS_SALTS_MEDIUM_FOR_HYDROGENOBACTER.yaml	CultureMech:015844	GBS SALTS MEDIUM FOR HYDROGENOBACTER	11	placeholder ingredient text; no pH and no temperature
 30	bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml	CultureMech:003223	DESULFONEMA MAGNUM MEDIUM	25	placeholder ingredient text; no pH and no temperature
 30	bacterial/KOMODO_1254_NAUTILIA_NITRATIREDUCENS_MEDIUM.yaml	CultureMech:004015	NAUTILIA NITRATIREDUCENS MEDIUM	0	no ingredients
-30	bacterial/KOMODO_3136_Fastidious_Anaerobe_Agar.yaml	CultureMech:004984	Fastidious Anaerobe Agar	0	no ingredients
 30	bacterial/KOMODO_787_ACETOBACTERIUM_DEHALOGENANS_medium.yaml	CultureMech:006488	ACETOBACTERIUM DEHALOGENANS medium	0	no ingredients
+30	bacterial/agc2_medium.yaml	CultureMech:002739	AGC2 MEDIUM	0	no ingredients
 30	bacterial/anaerobic_oxalate_medium.yaml	CultureMech:005624	ANAEROBIC OXALATE MEDIUM	0	no ingredients
 30	bacterial/anaerovibrio_burkinabensis_medium.yaml	CultureMech:006022	ANAEROVIBRIO BURKINABENSIS medium	0	no ingredients
 30	bacterial/artificial_seawater_medium_1231.yaml	CultureMech:004786	Artificial seawater (medium 1231)	0	no ingredients
 30	bacterial/artificial_tap_water_medium_1167.yaml	CultureMech:004789	Artificial tap water (medium 1167)	0	no ingredients
 30	bacterial/bacto_middelbrook_7h11_agar_medium_911.yaml	CultureMech:004790	Bacto Middelbrook 7H11 agar (medium 911)	0	no ingredients
+30	bacterial/beer_medium.yaml	CultureMech:002778	BEER MEDIUM	0	no ingredients
+30	bacterial/bekisolidmedium_hydrogenovibrio_crunogenus_quimiolitotrofo.yaml	CultureMech:010430	BekiSolidMedium (Hydrogenovibrio crunogenus QUIMIOLITOTROFO)	0	no ingredients
 30	bacterial/blood_agar_base_from_difco_0045.yaml	CultureMech:006515	Blood Agar Base from Difco 0045	0	no ingredients
 30	bacterial/blood_agar_no_2_oxoid.yaml	CultureMech:006086	blood agar No 2 (Oxoid)	0	no ingredients
 30	bacterial/bm_for_syntrophicus_schinkii.yaml	CultureMech:003080	BM FOR SYNTROPHICUS SCHINKII	25	placeholder ingredient text; no pH and no temperature
@@ -550,25 +534,39 @@ score	file_path	record_id	name	n_ingredients	reasons
 30	bacterial/desulfovibrio_giganteus_medium.yaml	CultureMech:005196	DESULFOVIBRIO GIGANTEUS MEDIUM	0	no ingredients
 30	bacterial/desulfovibrio_sapovorans_medium.yaml	CultureMech:004260	DESULFOVIBRIO SAPOVORANS MEDIUM	0	no ingredients
 30	bacterial/desulfovibrio_sp_medium.yaml	CultureMech:004276	DESULFOVIBRIO SP. MEDIUM	0	no ingredients
+30	bacterial/diluted_asm_medium.yaml	CultureMech:003160	DILUTED ASM MEDIUM	0	no ingredients
 30	bacterial/fermentative_cellulolytic_anaerobes_medium.yaml	CultureMech:003166	FERMENTATIVE CELLULOLYTIC ANAEROBES MEDIUM	22	placeholder ingredient text; no pH and no temperature
+30	bacterial/haha_agar.yaml	CultureMech:010431	HaHa agar	0	no ingredients
+30	bacterial/king_b.yaml	CultureMech:010433	King B	0	no ingredients
 30	bacterial/lb_nosalt.yaml	CultureMech:015469	LB_noSalt	2	only 2 ingredient(s); no media_term (untraceable to a source catalogue); no pH and no temperature
+30	bacterial/m9_sng_medium.yaml	CultureMech:010438	M9-SNG medium	0	no ingredients
 30	bacterial/mab1_medium.yaml	CultureMech:006272	mAB1-MEDIUM	0	no ingredients
 30	bacterial/mb_medium_with_methanol.yaml	CultureMech:003032	MB MEDIUM WITH METHANOL	27	placeholder ingredient text; no pH and no temperature
 30	bacterial/medium_820_modified_for_dsm_16960.yaml	CultureMech:006546	MEDIUM 820 MODIFIED FOR DSM 16960	0	no ingredients
+30	bacterial/methanosaeta_brevibacterium_medium.yaml	CultureMech:002826	METHANOSAETA BREVIBACTERIUM MEDIUM	0	no ingredients
 30	bacterial/middlebrook_7h10_agar.yaml	CultureMech:004805	Middlebrook 7H10 agar	0	no ingredients
 30	bacterial/modified_am5_medium.yaml	CultureMech:003007	MODIFIED AM5 MEDIUM	27	placeholder ingredient text; no pH and no temperature
+30	bacterial/mta10.yaml	CultureMech:010436	mTA10	0	no ingredients
 30	bacterial/mueller_hinton_broth.yaml	CultureMech:005193	Mueller-Hinton broth	0	no ingredients
+30	bacterial/n27_rhodospirillaceae_medium_modified.yaml	CultureMech:010437	N27 RHODOSPIRILLACEAE MEDIUM (modified)	0	no ingredients
 30	bacterial/nutrient_broth_oxoid_medium_948.yaml	CultureMech:004822	Nutrient broth (Oxoid) (medium 948)	0	no ingredients
+30	bacterial/pdb_sng_medium.yaml	CultureMech:010439	PDB-SNG medium	0	no ingredients
 30	bacterial/pelobacter_medium.yaml	CultureMech:005242	PELOBACTER medium	0	no ingredients
 30	bacterial/pplo_broth.yaml	CultureMech:005654	PPLO broth	0	no ingredients
+30	bacterial/r2a_agar_ph_9_0.yaml	CultureMech:002475	R2A AGAR (pH 9.0)	0	no ingredients
+30	bacterial/rs_medium_non_nutrient_medium_nnm_component.yaml	CultureMech:010434	RS Medium - Non-Nutrient Medium (NNM) Component	0	no ingredients
+30	bacterial/rs_medium_nutrient_medium_nm_component.yaml	CultureMech:010435	RS Medium - Nutrient Medium (NM) Component	0	no ingredients
 30	bacterial/soil_extract_medium_98.yaml	CultureMech:004991	Soil extract (medium 98)	0	no ingredients
 30	bacterial/spirochaeta_aurantia_medium.yaml	CultureMech:004195	SPIROCHAETA AURANTIA medium	0	no ingredients
 30	bacterial/spirochaeta_isovalerica_medium.yaml	CultureMech:004701	SPIROCHAETA ISOVALERICA medium	0	no ingredients
 30	bacterial/sporomusa_silvacetica_medium.yaml	CultureMech:006435	SPOROMUSA SILVACETICA medium	0	no ingredients
-30	bacterial/syfac_medium.yaml	CultureMech:003181	SYFAC MEDIUM	22	placeholder ingredient text; no pH and no temperature
+30	bacterial/syfac_medium.yaml	CultureMech:003181	SYFAC MEDIUM	18	placeholder ingredient text; no pH and no temperature
 30	bacterial/synthetic_sea_water_medium_79.yaml	CultureMech:004839	Synthetic sea water (medium 79)	0	no ingredients
+30	bacterial/thermovenbulum_medium.yaml	CultureMech:003202	THERMOVENBULUM MEDIUM	0	no ingredients
 30	bacterial/varunavibrio_medium.yaml	CultureMech:002290	VARUNAVIBRIO MEDIUM	23	placeholder ingredient text; no pH and no temperature
+30	bacterial/widdel_freshwater_medium_with_pyruvate.yaml	CultureMech:002392	WIDDEL FRESHWATER MEDIUM WITH PYRUVATE	0	no ingredients
 30	bacterial/xb45_xb90_pb90_2_medium.yaml	CultureMech:006693	XB45/XB90/PB90-2 MEDIUM	0	no ingredients
+30	bacterial/xylanobacter_medium.yaml	CultureMech:002873	XYLANOBACTER MEDIUM	0	no ingredients
 30	specialized/dv_base_medium_no_mo.yaml	CultureMech:015517	Dv base medium no Mo	2	only 2 ingredient(s); no media_term (untraceable to a source catalogue); no pH and no temperature
 30	specialized/dv_base_medium_no_w.yaml	CultureMech:015519	Dv base medium no W	2	only 2 ingredient(s); no media_term (untraceable to a source catalogue); no pH and no temperature
 30	specialized/dv_base_y_medium_no_fe.yaml	CultureMech:015521	Dv base Y medium no Fe	2	only 2 ingredient(s); no media_term (untraceable to a source catalogue); no pH and no temperature
@@ -676,7 +674,7 @@ score	file_path	record_id	name	n_ingredients	reasons
 25	bacterial/freshwater_iron_oxidizing_bacteria_medium.yaml	CultureMech:002974	FRESHWATER IRON-OXIDIZING BACTERIA MEDIUM	10	placeholder ingredient text
 25	bacterial/hi_plus_medium_w_ye_3.yaml	CultureMech:008771	HI Plus Medium w/ YE #3	6	no ingredient is grounded; no pH and no temperature
 25	bacterial/lb_0_1x.yaml	CultureMech:015465	LB_0.1x	3	only 1/3 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-25	bacterial/m25y_medium.yaml	CultureMech:002246	M25Y MEDIUM	24	placeholder ingredient text
+25	bacterial/m25y_medium.yaml	CultureMech:002246	M25Y MEDIUM	21	placeholder ingredient text
 25	bacterial/modified_am5_medium_2.yaml	CultureMech:002477	MODIFIED AM5 MEDIUM 2	31	placeholder ingredient text
 25	bacterial/modified_desulfoglaeba_alkanexedens_medium.yaml	CultureMech:002872	MODIFIED DESULFOGLAEBA ALKANEXEDENS MEDIUM	11	placeholder ingredient text
 25	bacterial/modified_hb_1_medium.yaml	CultureMech:003087	MODIFIED HB-1 MEDIUM	18	placeholder ingredient text
@@ -713,6 +711,7 @@ score	file_path	record_id	name	n_ingredients	reasons
 20	bacterial/JCM_J150_CORN_MEAL_AGAR.yaml	CultureMech:002509	CORN MEAL AGAR	1	only 1 ingredient(s); no pH and no temperature
 20	bacterial/JCM_J345_HORIKOSHI-1_MEDIUM_WITH_10_NaCl.yaml	CultureMech:002705	HORIKOSHI-1 MEDIUM WITH 10% NaCl	2	only 2 ingredient(s); no pH and no temperature
 20	bacterial/JCM_J714_HEMIN_MEDIUM_FOR_MYCOBACTERIUM.yaml	CultureMech:003061	HEMIN MEDIUM FOR MYCOBACTERIUM	2	only 2 ingredient(s); no pH and no temperature
+20	bacterial/KOMODO_3136_Fastidious_Anaerobe_Agar.yaml	CultureMech:004984	Fastidious Anaerobe Agar	3	no ingredient is grounded
 20	bacterial/KOMODO_459_SUCROSE-Peptone-MEDIUM.yaml	CultureMech:005464	SUCROSE-Peptone-MEDIUM	2	only 2 ingredient(s); no pH and no temperature
 20	bacterial/TOGO_M105_R_Agar_With_3_NaCl.yaml	CultureMech:007576	R Agar With 3% NaCl	1	only 1 ingredient(s); no pH and no temperature
 20	bacterial/TOGO_M1092_Horikoshi-I_Medium_With_3.5_NaCl.yaml	CultureMech:007609	Horikoshi-I Medium With 3.5% NaCl	1	only 1 ingredient(s); no pH and no temperature
@@ -917,6 +916,7 @@ score	file_path	record_id	name	n_ingredients	reasons
 15	bacterial/KOMODO_438_BORDET-GENGOU-MEDIUM_DIFCO.yaml	CultureMech:005286	BORDET-GENGOU-MEDIUM (DIFCO)	8	only 2/8 ingredients grounded; no pH and no temperature
 15	bacterial/KOMODO_51_SPHAEROTILUS_medium.yaml	CultureMech:005878	SPHAEROTILUS medium	2	only 2 ingredient(s)
 15	bacterial/KOMODO_849_AE_medium.yaml	CultureMech:006656	AE medium	6	only 2/6 ingredients grounded; no pH and no temperature
+15	bacterial/KOMODO_84_ROLLED_OATS_MINERAL_medium.yaml	CultureMech:006657	ROLLED OATS MINERAL medium	2	only 2 ingredient(s)
 15	bacterial/NBRC_1038.yaml	CultureMech:007451	1038	7	no media_term (untraceable to a source catalogue); no pH and no temperature
 15	bacterial/NBRC_1245.yaml	CultureMech:007466	1245	7	no media_term (untraceable to a source catalogue); no pH and no temperature
 15	bacterial/NBRC_1298.yaml	CultureMech:007470	1298	9	no media_term (untraceable to a source catalogue); no pH and no temperature
@@ -1001,6 +1001,7 @@ score	file_path	record_id	name	n_ingredients	reasons
 15	bacterial/TOGO_M971_MRS_Medium_With_Soybean_Peptone.yaml	CultureMech:010397	MRS Medium With Soybean Peptone	4	only 1/4 ingredients grounded; no pH and no temperature
 15	bacterial/TOGO_M976_Leibovitz_s_L-15_Medium_With_10_FBS_And_1.5_NaCl.yaml	CultureMech:010402	Leibovitz's L-15 Medium With 10% FBS And 1.5% NaCl	3	only 1/3 ingredients grounded; no pH and no temperature
 15	bacterial/a1_medium.yaml	CultureMech:000483	A1-MEDIUM	5	only 2/5 ingredients grounded; no pH and no temperature
+15	bacterial/acidic_oatmeal_agar_ph_5_0.yaml	CultureMech:002754	ACIDIC OATMEAL AGAR (pH 5.0)	2	only 2 ingredient(s)
 15	bacterial/ae_medium.yaml	CultureMech:002006	AE MEDIUM	6	only 2/6 ingredients grounded; no pH and no temperature
 15	bacterial/agar_with_e_coli_as_feed.yaml	CultureMech:002118	AGAR WITH E. COLI AS FEED	2	only 2 ingredient(s)
 15	bacterial/alkali_reinforced_clostridial_agar.yaml	CultureMech:002805	ALKALI-REINFORCED CLOSTRIDIAL AGAR	1	only 1 ingredient(s)
@@ -1115,6 +1116,12 @@ score	file_path	record_id	name	n_ingredients	reasons
 15	bacterial/marinobacter_alkaliphilus_medium.yaml	CultureMech:002748	MARINOBACTER ALKALIPHILUS MEDIUM	3	only 1/3 ingredients grounded; no pH and no temperature
 15	bacterial/mda.yaml	CultureMech:001249	MDA	8	only 3/8 ingredients grounded; no pH and no temperature
 15	bacterial/medium_1_liquid_with_20_horse_serum.yaml	CultureMech:008794	Medium 1 liquid, with 20 % horse serum	5	only 2/5 ingredients grounded; no pH and no temperature
+15	bacterial/medium_84_modified_for_dsm_40886.yaml	CultureMech:006637	MEDIUM 84 MODIFIED FOR DSM 40886	2	only 2 ingredient(s)
+15	bacterial/medium_84_modified_for_dsm_40887.yaml	CultureMech:006638	MEDIUM 84 MODIFIED FOR DSM 40887	2	only 2 ingredient(s)
+15	bacterial/medium_84_modified_for_dsm_40888.yaml	CultureMech:006639	MEDIUM 84 MODIFIED FOR DSM 40888	2	only 2 ingredient(s)
+15	bacterial/medium_84_modified_for_dsm_40889.yaml	CultureMech:006640	MEDIUM 84 MODIFIED FOR DSM 40889	2	only 2 ingredient(s)
+15	bacterial/medium_84_modified_for_dsm_41697.yaml	CultureMech:006641	MEDIUM 84 MODIFIED FOR DSM 41697	2	only 2 ingredient(s)
+15	bacterial/medium_84_modified_for_dsm_44681.yaml	CultureMech:006642	MEDIUM 84 MODIFIED FOR DSM 44681	2	only 2 ingredient(s)
 15	bacterial/medium_containing_pplo_broth_calf_serum_glucose_penicillin_g_and_tris_hc1.yaml	CultureMech:008829	Medium containing PPLO broth, calf serum, glucose, penicillin G, and Tris-HC1	5	only 1/5 ingredients grounded; no pH and no temperature
 15	bacterial/medium_h.yaml	CultureMech:008311	medium-H	5	only 2/5 ingredients grounded; no pH and no temperature
 15	bacterial/mineral_salt_solution_medium_289.yaml	CultureMech:004807	Mineral salt solution (medium 289)	1	only 1 ingredient(s)
@@ -1153,6 +1160,9 @@ score	file_path	record_id	name	n_ingredients	reasons
 15	bacterial/nutrient_broth_no_2.yaml	CultureMech:008765	Nutrient broth No.2	5	only 2/5 ingredients grounded; no pH and no temperature
 15	bacterial/nutrient_rich_nr_medium.yaml	CultureMech:009647	Nutrient rich (NR) medium	4	only 1/4 ingredients grounded; no pH and no temperature
 15	bacterial/oat_flake_medium.yaml	CultureMech:001281	OAT FLAKE MEDIUM	2	only 2 ingredient(s)
+15	bacterial/oatmeal_agar_a_isp_3.yaml	CultureMech:001737	OATMEAL AGAR (A) (ISP-3)	2	only 2 ingredient(s)
+15	bacterial/oatmeal_agar_isp_3.yaml	CultureMech:002860	OATMEAL AGAR (ISP-3)	2	only 2 ingredient(s)
+15	bacterial/oatmeal_agar_ph_6_0.yaml	CultureMech:003034	OATMEAL AGAR (pH 6.0)	2	only 2 ingredient(s)
 15	bacterial/omy.yaml	CultureMech:001248	OMY	4	only 1/4 ingredients grounded; no pH and no temperature
 15	bacterial/ph_medium.yaml	CultureMech:000511	PH MEDIUM	4	only 1/4 ingredients grounded; no pH and no temperature
 15	bacterial/plate_count_agar_pca.yaml	CultureMech:008509	Plate Count Agar (PCA)	5	only 1/5 ingredients grounded; no pH and no temperature
@@ -1169,6 +1179,7 @@ score	file_path	record_id	name	n_ingredients	reasons
 15	bacterial/reinforced_clostridial_medium_with_3_sea_salt.yaml	CultureMech:002831	REINFORCED CLOSTRIDIAL MEDIUM WITH 3%  SEA SALT	3	only 1/3 ingredients grounded; no pH and no temperature
 15	bacterial/reinforced_clostridial_medium_with_4_sea_salt.yaml	CultureMech:002832	REINFORCED CLOSTRIDIAL MEDIUM WITH 4%  SEA SALT	3	only 1/3 ingredients grounded; no pH and no temperature
 15	bacterial/rm_medium.yaml	CultureMech:009036	RM Medium	5	only 2/5 ingredients grounded; no pH and no temperature
+15	bacterial/rolled_oats_mineral_medium.yaml	CultureMech:002007	ROLLED OATS MINERAL MEDIUM	2	only 2 ingredient(s)
 15	bacterial/rubitelea_medium.yaml	CultureMech:000619	RUBITELEA MEDIUM	5	only 2/5 ingredients grounded; no pH and no temperature
 15	bacterial/rust_fungi_medium.yaml	CultureMech:007960	Rust fungi Medium	5	only 1/5 ingredients grounded; no pH and no temperature
 15	bacterial/s_w_ca.yaml	CultureMech:000308	S/W + Ca	2	only 2 ingredient(s)
@@ -1665,7 +1676,7 @@ score	file_path	record_id	name	n_ingredients	reasons
 10	bacterial/KOMODO_281_HYPHOMONAS_medium.yaml	CultureMech:004734	HYPHOMONAS medium	3	only 1/3 ingredients grounded
 10	bacterial/KOMODO_302_NUTRIENT_BROTH_WITH_10_HORSE_SERUM.yaml	CultureMech:004809	NUTRIENT BROTH WITH 10% HORSE SERUM	4	only 1/4 ingredients grounded
 10	bacterial/KOMODO_306_NY-AGAR.yaml	CultureMech:004854	NY-AGAR	4	only 1/4 ingredients grounded
-10	bacterial/KOMODO_309_NEOMYCIN_AGAR.yaml	CultureMech:004886	NEOMYCIN AGAR	5	only 1/5 ingredients grounded
+10	bacterial/KOMODO_309_NEOMYCIN_AGAR.yaml	CultureMech:004886	NEOMYCIN AGAR	6	only 1/6 ingredients grounded
 10	bacterial/KOMODO_362_FLAVOBACTERIUM_TIRRENICUM_medium.yaml	CultureMech:005084	FLAVOBACTERIUM TIRRENICUM medium	5	only 2/5 ingredients grounded
 10	bacterial/KOMODO_368_KUNKEE_medium.yaml	CultureMech:005089	KUNKEE medium	6	only 2/6 ingredients grounded
 10	bacterial/KOMODO_381_LB_Luria-Bertani_medium.yaml	CultureMech:005128	LB (Luria-Bertani) medium	4	only 1/4 ingredients grounded
@@ -2045,7 +2056,7 @@ score	file_path	record_id	name	n_ingredients	reasons
 10	bacterial/mrs_medium_with_10_tomato_juice.yaml	CultureMech:003148	MRS MEDIUM WITH 10% TOMATO JUICE	3	only 1/3 ingredients grounded
 10	bacterial/mycoplasma_medium.yaml	CultureMech:003105	MYCOPLASMA MEDIUM	4	only 1/4 ingredients grounded
 10	bacterial/nbrc_274_medium.yaml	CultureMech:000832	NBRC 274 MEDIUM	5	only 2/5 ingredients grounded
-10	bacterial/neomycin_agar.yaml	CultureMech:001407	NEOMYCIN AGAR	5	only 1/5 ingredients grounded
+10	bacterial/neomycin_agar.yaml	CultureMech:001407	NEOMYCIN AGAR	6	only 1/6 ingredients grounded
 10	bacterial/nutrient_agar.yaml	CultureMech:001297	NUTRIENT AGAR	3	only 1/3 ingredients grounded
 10	bacterial/nutrient_broth_with_0_5_nacl.yaml	CultureMech:002463	NUTRIENT BROTH WITH 0.5% NaCl	3	only 1/3 ingredients grounded
 10	bacterial/nutrient_broth_with_10_horse_serum.yaml	CultureMech:001402	NUTRIENT BROTH WITH 10% HORSE SERUM	4	only 1/4 ingredients grounded
@@ -2053,6 +2064,7 @@ score	file_path	record_id	name	n_ingredients	reasons
 10	bacterial/nutriment_agar.yaml	CultureMech:000717	NUTRIMENT AGAR	5	only 2/5 ingredients grounded
 10	bacterial/nutriment_agar_with_150_g_l_nacl.yaml	CultureMech:000716	NUTRIMENT AGAR WITH 150 G/L NACL	5	only 2/5 ingredients grounded
 10	bacterial/ny_agar.yaml	CultureMech:001405	NY-AGAR	4	only 1/4 ingredients grounded
+10	bacterial/oat_flakes_agar_with_yeast_extract.yaml	CultureMech:004620	OAT FLAKES AGAR WITH Yeast extract	3	only 1/3 ingredients grounded
 10	bacterial/oatmeal_agar.yaml	CultureMech:001529	OATMEAL AGAR	3	only 1/3 ingredients grounded
 10	bacterial/ottow_medium.yaml	CultureMech:001596	OTTOW MEDIUM	7	only 3/7 ingredients grounded
 10	bacterial/oxoid_nutrient_broth.yaml	CultureMech:002127	OXOID NUTRIENT BROTH	5	only 1/5 ingredients grounded
@@ -2091,6 +2103,7 @@ score	file_path	record_id	name	n_ingredients	reasons
 10	bacterial/ytc_medium.yaml	CultureMech:000844	YTC MEDIUM	3	only 1/3 ingredients grounded
 10	fungal/malt_extract_peptone_agar.yaml	CultureMech:010481	MALT EXTRACT PEPTONE AGAR	3	only 1/3 ingredients grounded
 10	fungal/maltose_bennetts_agar.yaml	CultureMech:010530	MALTOSE-BENNETT'S AGAR	5	only 2/5 ingredients grounded
+10	fungal/oat_flakes_agar_with_yeast_extract.yaml	CultureMech:010466	OAT FLAKES AGAR WITH YEAST EXTRACT	3	only 1/3 ingredients grounded
 10	fungal/sea_salts_yeast_extract_peptone_medium.yaml	CultureMech:010492	SEA SALTS YEAST EXTRACT PEPTONE MEDIUM	5	only 2/5 ingredients grounded
 10	fungal/trypticase_soy_yeast_extract_medium.yaml	CultureMech:010482	TRYPTICASE SOY YEAST EXTRACT MEDIUM	3	only 1/3 ingredients grounded
 10	fungal/tryptone_yeast_extract_broth_isp_1_with_0_2_mgso_sub_4_sub_183_7h_sub_2_sub_o.yaml	CultureMech:010545	TRYPTONE-YEAST EXTRACT BROTH (ISP-1) WITH 0.2% MgSO<sub>4</sub>&#183;7H<sub>2</sub>O	3	only 1/3 ingredients grounded

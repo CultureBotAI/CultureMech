@@ -89,8 +89,8 @@ ingredients:
     value: '13.75'
     unit: MILLIMOLAR
   term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
+    id: CHEBI:17234
+    label: glucose
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From LCFM Carbon mix'
 - preferred_term: Sodium lactate
   concentration:

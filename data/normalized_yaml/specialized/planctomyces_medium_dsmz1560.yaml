@@ -422,8 +422,8 @@ ingredients:
     value: '1.39'
     unit: MILLIMOLAR
   term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
+    id: CHEBI:17634
+    label: D-glucose
   notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 50-99-7; MW: 180.16'
 description: Planctomyces medium AG Jogler; DSMZ 1560
 notes: 'Source: FEBA media definitions'
