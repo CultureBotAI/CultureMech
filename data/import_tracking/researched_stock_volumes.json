@@ -29,7 +29,14 @@
     "flag-only matching would move the one flagged row and strand the rest, leaving the",
     "stock in two places at once. The evidence bar rises rather than falls \u2014 four or",
     "more components must match at EXACTLY the stock's concentrations, and at least one",
-    "must be flagged."
+    "must be flagged.",
+    "",
+    "`volume_basis` (ConcentrationBasisEnum): what kind of claim the volume is.",
+    "READ_FROM_STOCK_DEFINITION and READ_FROM_THIS_MEDIUM are assertions and are written",
+    "to the solution's `concentration`. CROSS_MEDIUM_INFERENCE and TYPICAL_VALUE are",
+    "proposals: the applier writes them to `concentration_candidates` with their support",
+    "and counterevidence, and leaves `concentration` unset so nothing a tool concluded",
+    "can be mistaken for something a source said."
   ],
   "stocks": [
     {
@@ -66,7 +73,9 @@
       },
       "researched_by": "claude-code-web-research",
       "researched_on": "2026-08-12",
-      "notes": "Recovered via the native research path in .claude/skills/deep-research-medium/SKILL.md while the Edison account was returning 402. The MediaDive-derived library independently carries the same composition and 1 ml / 100 ml figures, which corroborates but is not the basis."
+      "notes": "Recovered via the native research path in .claude/skills/deep-research-medium/SKILL.md while the Edison account was returning 402. The MediaDive-derived library independently carries the same composition and 1 ml / 100 ml figures, which corroborates but is not the basis.",
+      "volume_basis": "READ_FROM_STOCK_DEFINITION",
+      "volume_support": "Read from the stock's DSMZ definition and confirmed in each citing medium's own sheet; see volume_verified_per_medium."
     },
     {
       "solution_name": "Seven vitamins solution",
@@ -156,7 +165,9 @@
       ],
       "researched_by": "claude-code-web-research",
       "researched_on": "2026-08-13",
-      "notes": "All 40 media citing this stock among the blocked records were fetched; 26 state the volume in their own sheet and every one of them says 1.00 ml \u2014 none contradicted it. The other 14 are lettered variants (298b-i, 503b/c, 829a) whose PDFs 404 or omit the line, so they are excluded via applies_to_media rather than assumed. MediaDive observes this stock at four different volumes corpus-wide, which is why per-medium verification gates it."
+      "notes": "All 40 media citing this stock among the blocked records were fetched; 26 state the volume in their own sheet and every one of them says 1.00 ml \u2014 none contradicted it. The other 14 are lettered variants (298b-i, 503b/c, 829a) whose PDFs 404 or omit the line, so they are excluded via applies_to_media rather than assumed. MediaDive observes this stock at four different volumes corpus-wide, which is why per-medium verification gates it.",
+      "volume_basis": "READ_FROM_STOCK_DEFINITION",
+      "volume_support": "Read from the stock's DSMZ definition and confirmed in each citing medium's own sheet; see volume_verified_per_medium."
     },
     {
       "solution_name": "Trace element solution SL-10",
@@ -221,38 +232,12 @@
       ],
       "citation": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium503.pdf",
       "snippet": "Each citing medium's own DSMZ sheet states the SL-10 addition, e.g. medium 503 'Trace element solution SL-10 1.00 ml'. The composition is DSMZ's standard SL-10 (FeCl2 x 4 H2O 1.5 g/l, ZnCl2 0.07, MnCl2 x 4 H2O 0.1, H3BO3 0.006, CoCl2 x 6 H2O 0.19, CuCl2 x 2 H2O 0.002, NiCl2 x 6 H2O 0.024, Na2MoO4 x 2 H2O 0.036, HCl 2.5) made up to 1000 ml.",
-      "applies_to_media": [
-        "148",
-        "194",
-        "213",
-        "294",
-        "336",
-        "347",
-        "386",
-        "407",
-        "503",
-        "504",
-        "647",
-        "708",
-        "734",
-        "788",
-        "824",
-        "829",
-        "843",
-        "876",
-        "903",
-        "943",
-        "1010",
-        "298a",
-        "298b",
-        "386a",
-        "503a",
-        "503c",
-        "503d"
-      ],
       "researched_by": "claude-code-web-research",
       "researched_on": "2026-08-13",
-      "notes": "All 54 media citing SL-10 among the blocked records were fetched; 27 state the volume in their own sheet and every one says 1.00 ml \u2014 none contradicted it. The other 27 are lettered variants or JCM copies whose PDFs 404 or omit the line, so they are excluded via applies_to_media. 98 blocked records reproduce 8 or 9 of SL-10's 9 quantified components at exact stock values, which is why this entry uses match_full_signature."
+      "notes": "All 54 media citing SL-10 among the blocked records were fetched; 27 state the volume in their own sheet and every one says 1.00 ml \u2014 none contradicted it. The other 27 are lettered variants or JCM copies whose PDFs 404 or omit the line, so they are excluded via applies_to_media. 98 blocked records reproduce 8 or 9 of SL-10's 9 quantified components at exact stock values, which is why this entry uses match_full_signature.",
+      "volume_basis": "CROSS_MEDIUM_INFERENCE",
+      "volume_support": "10 of 11 MediaDive media citing this stock add it at 1 ml/L, and 27 DSMZ sheets read for #150 all state 1.00 ml.",
+      "volume_counterevidence": "J537 TREPONEMA ISOPTEROCOLA MEDIUM adds SL-10 at 0.05 ml/L (rest/medium/J537) \u2014 20x lower. Roughly 1 in 11 observed media departs from 1 ml/L, so this must not be promoted without reading the record's own recipe."
     }
   ]
 }
