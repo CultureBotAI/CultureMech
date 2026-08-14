@@ -222,6 +222,10 @@ def plan_record(path: Path, doc: dict[str, Any], additions: list[dict[str, Any]]
             # provenance note must say which, or the record claims MediaDive supplied
             # a figure it never did.
             "citation": addition.get("citation"),
+            "volume_basis": addition.get("volume_basis"),
+            "volume_support": addition.get("volume_support"),
+            "volume_counterevidence": addition.get("volume_counterevidence"),
+            "researched_on": addition.get("researched_on"),
         })
     # NOTE: the "nothing to do" check happens AFTER the split pass below, not here.
     # A record can have no direct name+value match at all and still be repairable —
@@ -258,6 +262,11 @@ def plan_record(path: Path, doc: dict[str, Any], additions: list[dict[str, Any]]
                         "addition_volume_ml": add.get("addition_volume_ml"),
                         "stock_prepared_in_ml": add.get("stock_prepared_in_ml"),
                         "moved": [],
+                        "citation": add.get("citation"),
+                        "volume_basis": add.get("volume_basis"),
+                        "volume_support": add.get("volume_support"),
+                        "volume_counterevidence": add.get("volume_counterevidence"),
+                        "researched_on": add.get("researched_on"),
                     })
                     have.add(solution_name)
 
@@ -298,16 +307,42 @@ def apply_plan(doc: dict[str, Any], plan: dict[str, Any]) -> None:
 
     solutions = []
     for g in plan["groups"]:
-        solutions.append({
+        solution: dict[str, Any] = {
             "preferred_term": g["solution_name"],
             "composition": [ingredients[i] for i in g["indices"]] + split_parts(g["solution_name"]),
-            "concentration": {"value": str(g["addition_volume_ml"]), "unit": "ML_PER_L"},
-            "preparation_notes": (
-                f"Stock prepared in {g['stock_prepared_in_ml']} ml; added at "
-                f"{g['addition_volume_ml']} ml per litre of medium. Composition and "
-                + (f"volume read from {g['citation']} (#150)."
-                   if g.get("citation") else "volume from MediaDive (#150).")),
-        })
+        }
+        vol = {"value": str(g["addition_volume_ml"]), "unit": "ML_PER_L"}
+        basis = g.get("volume_basis") or "READ_FROM_THIS_MEDIUM"
+
+        if basis == "READ_FROM_THIS_MEDIUM":
+            # Printed in this medium's own recipe — an assertion, so it may be stated.
+            solution["concentration"] = vol
+            provenance = ("volume from this medium's own MediaDive recipe (#150)."
+                          if not g.get("citation")
+                          else f"volume read from {g['citation']} (#150).")
+        else:
+            # Everything weaker is a PROPOSAL. It goes in concentration_candidates and
+            # leaves `concentration` unset, so nothing a tool concluded can be mistaken
+            # for something a source said — and a later reading of the real recipe has
+            # nothing to overwrite.
+            candidate = {**vol, "basis": basis}
+            for key, field in (("volume_support", "support"),
+                               ("volume_counterevidence", "counterevidence"),
+                               ("citation", "source")):
+                if g.get(key):
+                    candidate[field] = g[key]
+            candidate["proposed_by"] = "apply_cocktail_nesting.py"
+            if g.get("researched_on"):
+                candidate["proposed_on"] = g["researched_on"]
+            solution["concentration_candidates"] = [candidate]
+            provenance = (f"addition volume NOT asserted: proposed as "
+                          f"{g['addition_volume_ml']} ml/l on basis {basis}; see "
+                          f"concentration_candidates (#150).")
+
+        solution["preparation_notes"] = (
+            f"Stock prepared in {g['stock_prepared_in_ml']} ml. Composition and "
+            + provenance)
+        solutions.append(solution)
 
     doc["ingredients"] = kept
     doc["solutions"] = solutions

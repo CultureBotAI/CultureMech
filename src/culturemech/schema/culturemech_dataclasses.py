@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-08-04T19:26:36
+# Generation date: 2026-08-13T20:11:24
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -837,6 +837,7 @@ class SolutionDescriptor(Descriptor):
     culturemech_term: Optional[Union[dict, "CultureMechTerm"]] = None
     composition: Optional[Union[Union[dict, IngredientDescriptor], list[Union[dict, IngredientDescriptor]]]] = empty_list()
     concentration: Optional[Union[dict, "ConcentrationValue"]] = None
+    concentration_candidates: Optional[Union[Union[dict, "ConcentrationCandidate"], list[Union[dict, "ConcentrationCandidate"]]]] = empty_list()
     preparation_notes: Optional[str] = None
     storage_conditions: Optional[Union[dict, "StorageConditions"]] = None
     shelf_life: Optional[str] = None
@@ -871,6 +872,10 @@ class SolutionDescriptor(Descriptor):
 
         if self.concentration is not None and not isinstance(self.concentration, ConcentrationValue):
             self.concentration = ConcentrationValue(**as_dict(self.concentration))
+
+        if not isinstance(self.concentration_candidates, list):
+            self.concentration_candidates = [self.concentration_candidates] if self.concentration_candidates is not None else []
+        self.concentration_candidates = [v if isinstance(v, ConcentrationCandidate) else ConcentrationCandidate(**as_dict(v)) for v in self.concentration_candidates]
 
         if self.preparation_notes is not None and not isinstance(self.preparation_notes, str):
             self.preparation_notes = str(self.preparation_notes)
@@ -1217,6 +1222,64 @@ class ConcentrationValue(YAMLRoot):
 
         if self.per_volume is not None and not isinstance(self.per_volume, str):
             self.per_volume = str(self.per_volume)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass(repr=False)
+class ConcentrationCandidate(YAMLRoot):
+    """
+    A concentration that has been PROPOSED but not asserted, carrying the basis it rests on and the evidence for it.
+    This exists so an inferred value can be recorded without being mistaken for one that was read from a source. A
+    candidate never overwrites an asserted `concentration`; promoting it is a curation decision, made after checking
+    the record's own source.
+    """
+    _inherited_slots: ClassVar[list[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = CULTUREMECH["ConcentrationCandidate"]
+    class_class_curie: ClassVar[str] = "culturemech:ConcentrationCandidate"
+    class_name: ClassVar[str] = "ConcentrationCandidate"
+    class_model_uri: ClassVar[URIRef] = CULTUREMECH.ConcentrationCandidate
+
+    value: str = None
+    unit: Union[str, "ConcentrationUnitEnum"] = None
+    basis: Union[str, "ConcentrationBasisEnum"] = None
+    support: Optional[str] = None
+    counterevidence: Optional[str] = None
+    source: Optional[str] = None
+    proposed_by: Optional[str] = None
+    proposed_on: Optional[str] = None
+
+    def __post_init__(self, *_: str, **kwargs: Any):
+        if self._is_empty(self.value):
+            self.MissingRequiredField("value")
+        if not isinstance(self.value, str):
+            self.value = str(self.value)
+
+        if self._is_empty(self.unit):
+            self.MissingRequiredField("unit")
+        if not isinstance(self.unit, ConcentrationUnitEnum):
+            self.unit = ConcentrationUnitEnum(self.unit)
+
+        if self._is_empty(self.basis):
+            self.MissingRequiredField("basis")
+        if not isinstance(self.basis, ConcentrationBasisEnum):
+            self.basis = ConcentrationBasisEnum(self.basis)
+
+        if self.support is not None and not isinstance(self.support, str):
+            self.support = str(self.support)
+
+        if self.counterevidence is not None and not isinstance(self.counterevidence, str):
+            self.counterevidence = str(self.counterevidence)
+
+        if self.source is not None and not isinstance(self.source, str):
+            self.source = str(self.source)
+
+        if self.proposed_by is not None and not isinstance(self.proposed_by, str):
+            self.proposed_by = str(self.proposed_by)
+
+        if self.proposed_on is not None and not isinstance(self.proposed_on, str):
+            self.proposed_on = str(self.proposed_on)
 
         super().__post_init__(**kwargs)
 
@@ -2739,6 +2802,29 @@ class PhysicalStateEnum(EnumDefinitionImpl):
     _defn = EnumDefinition(
         name="PhysicalStateEnum",
         description="Physical form of the medium",
+    )
+
+class ConcentrationBasisEnum(EnumDefinitionImpl):
+    """
+    How a proposed concentration was arrived at. Ordered from strongest to weakest, because the distinction is the
+    whole point of recording a candidate rather than an asserted value.
+    """
+    READ_FROM_THIS_MEDIUM = PermissibleValue(
+        text="READ_FROM_THIS_MEDIUM",
+        description="""Printed in this medium's own source. This is an asserted value and belongs in `concentration`, not here; the term exists so a promotion can record what it was promoted on.""")
+    READ_FROM_STOCK_DEFINITION = PermissibleValue(
+        text="READ_FROM_STOCK_DEFINITION",
+        description="""Read from the cited definition of the stock solution itself (e.g. DSMZ medium 84 defines its trace element solution and the volume it is added at), for a medium that references that stock by name.""")
+    CROSS_MEDIUM_INFERENCE = PermissibleValue(
+        text="CROSS_MEDIUM_INFERENCE",
+        description="""Taken from OTHER media that use the same named stock, not from this medium's own source. Defensible when the stock's volume is consistent across many media, and wrong whenever a medium departs from the norm — which does happen (SL-10 is 1 ml/L in ten media and 0.05 ml/L in J537).""")
+    TYPICAL_VALUE = PermissibleValue(
+        text="TYPICAL_VALUE",
+        description="""A conventional value for this class of stock, with no per-medium evidence at all. The weakest basis; recorded only to be checked.""")
+
+    _defn = EnumDefinition(
+        name="ConcentrationBasisEnum",
+        description="""How a proposed concentration was arrived at. Ordered from strongest to weakest, because the distinction is the whole point of recording a candidate rather than an asserted value.""",
     )
 
 class ConcentrationUnitEnum(EnumDefinitionImpl):
@@ -4285,6 +4371,9 @@ slots.solutionDescriptor__composition = Slot(uri=CULTUREMECH.composition, name="
 slots.solutionDescriptor__concentration = Slot(uri=CULTUREMECH.concentration, name="solutionDescriptor__concentration", curie=CULTUREMECH.curie('concentration'),
                    model_uri=CULTUREMECH.solutionDescriptor__concentration, domain=None, range=Optional[Union[dict, ConcentrationValue]])
 
+slots.solutionDescriptor__concentration_candidates = Slot(uri=CULTUREMECH.concentration_candidates, name="solutionDescriptor__concentration_candidates", curie=CULTUREMECH.curie('concentration_candidates'),
+                   model_uri=CULTUREMECH.solutionDescriptor__concentration_candidates, domain=None, range=Optional[Union[Union[dict, ConcentrationCandidate], list[Union[dict, ConcentrationCandidate]]]])
+
 slots.solutionDescriptor__preparation_notes = Slot(uri=CULTUREMECH.preparation_notes, name="solutionDescriptor__preparation_notes", curie=CULTUREMECH.curie('preparation_notes'),
                    model_uri=CULTUREMECH.solutionDescriptor__preparation_notes, domain=None, range=Optional[str])
 
@@ -4424,6 +4513,30 @@ slots.concentrationValue__unit = Slot(uri=CULTUREMECH.unit, name="concentrationV
 
 slots.concentrationValue__per_volume = Slot(uri=CULTUREMECH.per_volume, name="concentrationValue__per_volume", curie=CULTUREMECH.curie('per_volume'),
                    model_uri=CULTUREMECH.concentrationValue__per_volume, domain=None, range=Optional[str])
+
+slots.concentrationCandidate__value = Slot(uri=CULTUREMECH.value, name="concentrationCandidate__value", curie=CULTUREMECH.curie('value'),
+                   model_uri=CULTUREMECH.concentrationCandidate__value, domain=None, range=str)
+
+slots.concentrationCandidate__unit = Slot(uri=CULTUREMECH.unit, name="concentrationCandidate__unit", curie=CULTUREMECH.curie('unit'),
+                   model_uri=CULTUREMECH.concentrationCandidate__unit, domain=None, range=Union[str, "ConcentrationUnitEnum"])
+
+slots.concentrationCandidate__basis = Slot(uri=CULTUREMECH.basis, name="concentrationCandidate__basis", curie=CULTUREMECH.curie('basis'),
+                   model_uri=CULTUREMECH.concentrationCandidate__basis, domain=None, range=Union[str, "ConcentrationBasisEnum"])
+
+slots.concentrationCandidate__support = Slot(uri=CULTUREMECH.support, name="concentrationCandidate__support", curie=CULTUREMECH.curie('support'),
+                   model_uri=CULTUREMECH.concentrationCandidate__support, domain=None, range=Optional[str])
+
+slots.concentrationCandidate__counterevidence = Slot(uri=CULTUREMECH.counterevidence, name="concentrationCandidate__counterevidence", curie=CULTUREMECH.curie('counterevidence'),
+                   model_uri=CULTUREMECH.concentrationCandidate__counterevidence, domain=None, range=Optional[str])
+
+slots.concentrationCandidate__source = Slot(uri=CULTUREMECH.source, name="concentrationCandidate__source", curie=CULTUREMECH.curie('source'),
+                   model_uri=CULTUREMECH.concentrationCandidate__source, domain=None, range=Optional[str])
+
+slots.concentrationCandidate__proposed_by = Slot(uri=CULTUREMECH.proposed_by, name="concentrationCandidate__proposed_by", curie=CULTUREMECH.curie('proposed_by'),
+                   model_uri=CULTUREMECH.concentrationCandidate__proposed_by, domain=None, range=Optional[str])
+
+slots.concentrationCandidate__proposed_on = Slot(uri=CULTUREMECH.proposed_on, name="concentrationCandidate__proposed_on", curie=CULTUREMECH.curie('proposed_on'),
+                   model_uri=CULTUREMECH.concentrationCandidate__proposed_on, domain=None, range=Optional[str])
 
 slots.growthMetrics__max_od600 = Slot(uri=CULTUREMECH.max_od600, name="growthMetrics__max_od600", curie=CULTUREMECH.curie('max_od600'),
                    model_uri=CULTUREMECH.growthMetrics__max_od600, domain=None, range=Optional[float])

@@ -282,3 +282,78 @@ def test_source_medium_refuses_a_komodo_number(acn):
 
     mediadive = {"media_term": {"term": {"id": "mediadive.medium:503"}}}
     assert acn.source_medium(mediadive) == "503"
+
+
+# --- inferred volumes never overwrite an asserted one (#150) -----------------
+
+
+def _stock(basis=None, **extra):
+    s = {"stock_components": STOCK, "solution_name": "Wolfe's mineral elixir",
+         "addition_volume_ml": 1, "stock_prepared_in_ml": 1000}
+    if basis:
+        s["volume_basis"] = basis
+    s.update(extra)
+    return s
+
+
+def _doc():
+    return {"ingredients": [_ing("MnSO4 x H2O", "5"), _ing("FeSO4 x 7 H2O", "1")]}
+
+
+def test_a_read_volume_is_asserted_in_concentration(acn):
+    """A figure printed in this medium's own recipe is an assertion and may be stated."""
+    doc = _doc()
+    plan = acn.plan_record(Path("x.yaml"), doc, [_stock()], {"mnso4 x h2o", "feso4 x 7 h2o"})
+    acn.apply_plan(doc, plan)
+    sol = doc["solutions"][0]
+    assert sol["concentration"] == {"value": "1", "unit": "ML_PER_L"}
+    assert "concentration_candidates" not in sol
+
+
+def test_an_inferred_volume_never_touches_concentration(acn):
+    """THE guarantee. A cross-medium inference is a proposal: it goes to
+    concentration_candidates and leaves `concentration` UNSET, so nothing a tool
+    concluded can be read as something a source said — and a later reading of the
+    real recipe has nothing to overwrite."""
+    doc = _doc()
+    plan = acn.plan_record(
+        Path("x.yaml"), doc,
+        [_stock("CROSS_MEDIUM_INFERENCE",
+                volume_support="10 of 11 media add it at 1 ml/L",
+                volume_counterevidence="J537 adds it at 0.05 ml/L",
+                citation="https://mediadive.dsmz.de/rest/medium/J58")],
+        {"mnso4 x h2o", "feso4 x 7 h2o"})
+    acn.apply_plan(doc, plan)
+    sol = doc["solutions"][0]
+
+    assert "concentration" not in sol, "an inference must never be asserted"
+    [cand] = sol["concentration_candidates"]
+    assert cand["value"] == "1" and cand["unit"] == "ML_PER_L"
+    assert cand["basis"] == "CROSS_MEDIUM_INFERENCE"
+    assert cand["support"] and cand["source"]
+    assert cand["counterevidence"] == "J537 adds it at 0.05 ml/L", (
+        "known counterevidence must travel with the candidate, or it reads as "
+        "better supported than it is")
+    assert cand["proposed_by"] == "apply_cocktail_nesting.py"
+
+
+def test_the_note_says_the_volume_was_not_asserted(acn):
+    """The prose a curator reads must not claim a source supplied the figure."""
+    doc = _doc()
+    plan = acn.plan_record(Path("x.yaml"), doc, [_stock("CROSS_MEDIUM_INFERENCE")],
+                           {"mnso4 x h2o", "feso4 x 7 h2o"})
+    acn.apply_plan(doc, plan)
+    note = doc["solutions"][0]["preparation_notes"]
+    assert "NOT asserted" in note and "concentration_candidates" in note
+    assert "read from" not in note
+
+
+def test_a_typical_value_is_also_only_a_candidate(acn):
+    """The weakest basis must not get a stronger treatment than the inference."""
+    doc = _doc()
+    plan = acn.plan_record(Path("x.yaml"), doc, [_stock("TYPICAL_VALUE")],
+                           {"mnso4 x h2o", "feso4 x 7 h2o"})
+    acn.apply_plan(doc, plan)
+    sol = doc["solutions"][0]
+    assert "concentration" not in sol
+    assert sol["concentration_candidates"][0]["basis"] == "TYPICAL_VALUE"

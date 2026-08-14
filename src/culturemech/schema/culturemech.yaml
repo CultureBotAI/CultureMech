@@ -976,6 +976,33 @@ classes:
         description: Working concentration when added to medium
         range: ConcentrationValue
         inlined: true
+        comments:
+          - >-
+            ASSERTED values only — a figure read from this medium's own source.
+            A value inferred from other media goes in `concentration_candidates`
+            and must never be written here, so a reader can always tell what the
+            source said from what a tool concluded.
+
+      concentration_candidates:
+        description: >-
+          Proposed working concentrations that are NOT asserted — each carries the
+          basis it rests on and the evidence for it. Never overwrites
+          `concentration`; a curator promotes one by hand after checking it.
+        range: ConcentrationCandidate
+        multivalued: true
+        recommended: false
+        inlined_as_list: true
+        comments:
+          - >-
+            Multivalued because the evidence genuinely disagrees. The DSMZ stock
+            "Trace element solution SL-10" is added at 1 ml/L in ten MediaDive
+            media and at 0.05 ml/L in J537 (TREPONEMA ISOPTEROCOLA) — a 20x
+            spread. A single inferred-value slot would force a tool to pick one
+            and hide the other; an array lets both stand with their support until
+            someone reads that medium's own recipe.
+          - >-
+            Introduced for the #150 cocktail repair, where a flattened stock's
+            addition volume is often recoverable only by inference.
 
       preparation_notes:
         description: How to prepare the stock solution
@@ -1269,6 +1296,58 @@ classes:
 
       per_volume:
         description: Volume basis (e.g., "per liter", "per 100 mL")
+        range: string
+
+  ConcentrationCandidate:
+    description: >-
+      A concentration that has been PROPOSED but not asserted, carrying the basis
+      it rests on and the evidence for it.
+
+      This exists so an inferred value can be recorded without being mistaken for
+      one that was read from a source. A candidate never overwrites an asserted
+      `concentration`; promoting it is a curation decision, made after checking the
+      record's own source.
+    attributes:
+      value:
+        description: Numeric value or range, as the evidence gives it.
+        range: string
+        required: true
+
+      unit:
+        description: Concentration unit
+        range: ConcentrationUnitEnum
+        required: true
+
+      basis:
+        description: What kind of claim this is — how the value was arrived at.
+        range: ConcentrationBasisEnum
+        required: true
+
+      support:
+        description: >-
+          The evidence, stated so it can be re-checked, e.g. "10 of 11 MediaDive
+          media citing this stock add it at this volume".
+        range: string
+        recommended: true
+
+      counterevidence:
+        description: >-
+          Evidence AGAINST this candidate, where any is known. Recorded because a
+          candidate offered without its known counterexample invites the reader to
+          trust it more than the evidence allows.
+        range: string
+
+      source:
+        description: Citation or URL the support was read from.
+        range: string
+        recommended: true
+
+      proposed_by:
+        description: Script or curator that proposed the value.
+        range: string
+
+      proposed_on:
+        description: ISO-8601 date the proposal was made.
         range: string
 
   GrowthMetrics:
@@ -2253,6 +2332,38 @@ enums:
         description: Reduced agar concentration for motility testing
       BIPHASIC:
         description: Both liquid and solid phases
+
+  ConcentrationBasisEnum:
+    description: >-
+      How a proposed concentration was arrived at. Ordered from strongest to
+      weakest, because the distinction is the whole point of recording a candidate
+      rather than an asserted value.
+    permissible_values:
+      READ_FROM_THIS_MEDIUM:
+        description: >-
+          Printed in this medium's own source. This is an asserted value and
+          belongs in `concentration`, not here; the term exists so a promotion can
+          record what it was promoted on.
+      READ_FROM_STOCK_DEFINITION:
+        description: >-
+          Read from the cited definition of the stock solution itself (e.g. DSMZ
+          medium 84 defines its trace element solution and the volume it is added
+          at), for a medium that references that stock by name.
+      CROSS_MEDIUM_INFERENCE:
+        description: >-
+          Taken from OTHER media that use the same named stock, not from this
+          medium's own source. Defensible when the stock's volume is consistent
+          across many media, and wrong whenever a medium departs from the norm —
+          which does happen (SL-10 is 1 ml/L in ten media and 0.05 ml/L in J537).
+      TYPICAL_VALUE:
+        description: >-
+          A conventional value for this class of stock, with no per-medium
+          evidence at all. The weakest basis; recorded only to be checked.
+    comments:
+      - >-
+        A candidate whose basis is CROSS_MEDIUM_INFERENCE or TYPICAL_VALUE must
+        not be promoted into `concentration` without reading the record's own
+        source — that is the check the basis exists to prompt.
 
   ConcentrationUnitEnum:
     description: Units for concentration
