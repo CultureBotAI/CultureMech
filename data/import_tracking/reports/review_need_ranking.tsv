@@ -1048,14 +1048,14 @@ score	file_path	record_id	name	n_ingredients	reasons
 15	bacterial/for_dsm_10643.yaml	CultureMech:004422	For DSM 10643	6	name 'For DSM 10643' identifies a strain, not a medium; no pH and no temperature
 15	bacterial/for_dsm_12341.yaml	CultureMech:006689	For DSM 12341	35	name 'For DSM 12341' identifies a strain, not a medium; no pH and no temperature
 15	bacterial/for_dsm_12344.yaml	CultureMech:006691	For DSM 12344	35	name 'For DSM 12344' identifies a strain, not a medium; no pH and no temperature
-15	bacterial/for_dsm_12881.yaml	CultureMech:005690	For DSM 12881	29	name 'For DSM 12881' identifies a strain, not a medium; no pH and no temperature
+15	bacterial/for_dsm_12881.yaml	CultureMech:005690	For DSM 12881	24	name 'For DSM 12881' identifies a strain, not a medium; no pH and no temperature
 15	bacterial/for_dsm_13022.yaml	CultureMech:005458	For DSM 13022	28	name 'For DSM 13022' identifies a strain, not a medium; no pH and no temperature
-15	bacterial/for_dsm_13687.yaml	CultureMech:005691	For DSM 13687	29	name 'For DSM 13687' identifies a strain, not a medium; no pH and no temperature
+15	bacterial/for_dsm_13687.yaml	CultureMech:005691	For DSM 13687	24	name 'For DSM 13687' identifies a strain, not a medium; no pH and no temperature
 15	bacterial/for_dsm_14880.yaml	CultureMech:004231	For DSM 14880	33	name 'For DSM 14880' identifies a strain, not a medium; no pH and no temperature
 15	bacterial/for_dsm_16260.yaml	CultureMech:006494	For DSM 16260	26	name 'For DSM 16260' identifies a strain, not a medium; no pH and no temperature
 15	bacterial/for_dsm_16369.yaml	CultureMech:006495	For DSM 16369	26	name 'For DSM 16369' identifies a strain, not a medium; no pH and no temperature
 15	bacterial/for_dsm_1744.yaml	CultureMech:004230	For DSM 1744	33	name 'For DSM 1744' identifies a strain, not a medium; no pH and no temperature
-15	bacterial/for_dsm_19335.yaml	CultureMech:005692	For DSM 19335	29	name 'For DSM 19335' identifies a strain, not a medium; no pH and no temperature
+15	bacterial/for_dsm_19335.yaml	CultureMech:005692	For DSM 19335	24	name 'For DSM 19335' identifies a strain, not a medium; no pH and no temperature
 15	bacterial/for_dsm_19851.yaml	CultureMech:004424	For DSM 19851	6	name 'For DSM 19851' identifies a strain, not a medium; no pH and no temperature
 15	bacterial/for_dsm_2118.yaml	CultureMech:005085	For DSM 2118	17	name 'For DSM 2118' identifies a strain, not a medium; no pH and no temperature
 15	bacterial/for_dsm_21556.yaml	CultureMech:004232	For DSM 21556	33	name 'For DSM 21556' identifies a strain, not a medium; no pH and no temperature
@@ -1063,11 +1063,11 @@ score	file_path	record_id	name	n_ingredients	reasons
 15	bacterial/for_dsm_2373.yaml	CultureMech:004135	For DSM 2373	37	name 'For DSM 2373' identifies a strain, not a medium; no pH and no temperature
 15	bacterial/for_dsm_4254.yaml	CultureMech:004139	For DSM 4254	37	name 'For DSM 4254' identifies a strain, not a medium; no pH and no temperature
 15	bacterial/for_dsm_4661.yaml	CultureMech:004246	For DSM 4661	33	name 'For DSM 4661' identifies a strain, not a medium; no pH and no temperature
-15	bacterial/for_dsm_5848.yaml	CultureMech:005687	For DSM 5848	29	name 'For DSM 5848' identifies a strain, not a medium; no pH and no temperature
-15	bacterial/for_dsm_6233.yaml	CultureMech:005688	For DSM 6233	29	name 'For DSM 6233' identifies a strain, not a medium; no pH and no temperature
+15	bacterial/for_dsm_5848.yaml	CultureMech:005687	For DSM 5848	24	name 'For DSM 5848' identifies a strain, not a medium; no pH and no temperature
+15	bacterial/for_dsm_6233.yaml	CultureMech:005688	For DSM 6233	24	name 'For DSM 6233' identifies a strain, not a medium; no pH and no temperature
 15	bacterial/for_dsm_6813.yaml	CultureMech:005570	For DSM 6813	35	name 'For DSM 6813' identifies a strain, not a medium; no pH and no temperature
 15	bacterial/for_dsm_7526.yaml	CultureMech:005457	For DSM 7526	28	name 'For DSM 7526' identifies a strain, not a medium; no pH and no temperature
-15	bacterial/for_dsm_9705.yaml	CultureMech:005689	For DSM 9705	29	name 'For DSM 9705' identifies a strain, not a medium; no pH and no temperature
+15	bacterial/for_dsm_9705.yaml	CultureMech:005689	For DSM 9705	24	name 'For DSM 9705' identifies a strain, not a medium; no pH and no temperature
 15	bacterial/gam_broth_with_sodium_pyruvate.yaml	CultureMech:002478	GAM BROTH WITH SODIUM PYRUVATE	2	only 2 ingredient(s)
 15	bacterial/glucose_streptococcal_broth_medium.yaml	CultureMech:009419	Glucose streptococcal broth medium	7	only 2/7 ingredients grounded; no pH and no temperature
 15	bacterial/gpy_medium.yaml	CultureMech:008570	GPY medium	5	only 2/5 ingredients grounded; no pH and no temperature
@@ -1717,7 +1717,7 @@ score	file_path	record_id	name	n_ingredients	reasons
 10	bacterial/dsm_11106.yaml	CultureMech:006554	DSM 11106	36	name 'DSM 11106' identifies a strain, not a medium
 10	bacterial/dsm_13489.yaml	CultureMech:006889	DSM 13489	17	name 'DSM 13489' identifies a strain, not a medium
 10	bacterial/dsm_14919.yaml	CultureMech:006892	DSM 14919	17	name 'DSM 14919' identifies a strain, not a medium
-10	bacterial/dsm_16658.yaml	CultureMech:006500	DSM 16658	23	name 'DSM 16658' identifies a strain, not a medium
+10	bacterial/dsm_16658.yaml	CultureMech:006500	DSM 16658	19	name 'DSM 16658' identifies a strain, not a medium
 10	bacterial/dsm_24515.yaml	CultureMech:003961	DSM 24515	33	name 'DSM 24515' identifies a strain, not a medium
 10	bacterial/dsm_5262.yaml	CultureMech:006424	DSM 5262	20	name 'DSM 5262' identifies a strain, not a medium
 10	bacterial/enriched_cytophaga_agar.yaml	CultureMech:003082	ENRICHED CYTOPHAGA AGAR	5	only 2/5 ingredients grounded
@@ -1730,10 +1730,10 @@ score	file_path	record_id	name	n_ingredients	reasons
 10	bacterial/for_dsm12681.yaml	CultureMech:006704	For DSM12681	34	name 'For DSM12681' identifies a strain, not a medium
 10	bacterial/for_dsm_1083.yaml	CultureMech:004088	For DSM 1083	15	name 'For DSM 1083' identifies a strain, not a medium
 10	bacterial/for_dsm_1085.yaml	CultureMech:004090	For DSM 1085	15	name 'For DSM 1085' identifies a strain, not a medium
-10	bacterial/for_dsm_11046.yaml	CultureMech:005673	For DSM 11046	29	name 'For DSM 11046' identifies a strain, not a medium
+10	bacterial/for_dsm_11046.yaml	CultureMech:005673	For DSM 11046	24	name 'For DSM 11046' identifies a strain, not a medium
 10	bacterial/for_dsm_11116.yaml	CultureMech:006764	For DSM 11116	5	name 'For DSM 11116' identifies a strain, not a medium
-10	bacterial/for_dsm_11261.yaml	CultureMech:005674	For DSM 11261	29	name 'For DSM 11261' identifies a strain, not a medium
-10	bacterial/for_dsm_11262.yaml	CultureMech:005675	For DSM 11262	29	name 'For DSM 11262' identifies a strain, not a medium
+10	bacterial/for_dsm_11261.yaml	CultureMech:005674	For DSM 11261	24	name 'For DSM 11261' identifies a strain, not a medium
+10	bacterial/for_dsm_11262.yaml	CultureMech:005675	For DSM 11262	24	name 'For DSM 11262' identifies a strain, not a medium
 10	bacterial/for_dsm_11321.yaml	CultureMech:005595	For DSM 11321	31	name 'For DSM 11321' identifies a strain, not a medium
 10	bacterial/for_dsm_11763.yaml	CultureMech:006538	For DSM 11763	24	name 'For DSM 11763' identifies a strain, not a medium
 10	bacterial/for_dsm_12260.yaml	CultureMech:006652	For DSM 12260	35	name 'For DSM 12260' identifies a strain, not a medium
@@ -1749,26 +1749,26 @@ score	file_path	record_id	name	n_ingredients	reasons
 10	bacterial/for_dsm_13116.yaml	CultureMech:006686	For DSM 13116	22	name 'For DSM 13116' identifies a strain, not a medium
 10	bacterial/for_dsm_13181.yaml	CultureMech:003618	For DSM 13181	13	name 'For DSM 13181' identifies a strain, not a medium
 10	bacterial/for_dsm_13294.yaml	CultureMech:004092	For DSM 13294	15	name 'For DSM 13294' identifies a strain, not a medium
-10	bacterial/for_dsm_13326.yaml	CultureMech:005684	For DSM 13326	29	name 'For DSM 13326' identifies a strain, not a medium
-10	bacterial/for_dsm_13327.yaml	CultureMech:005685	For DSM 13327	29	name 'For DSM 13327' identifies a strain, not a medium
+10	bacterial/for_dsm_13326.yaml	CultureMech:005684	For DSM 13326	24	name 'For DSM 13326' identifies a strain, not a medium
+10	bacterial/for_dsm_13327.yaml	CultureMech:005685	For DSM 13327	24	name 'For DSM 13327' identifies a strain, not a medium
 10	bacterial/for_dsm_13380.yaml	CultureMech:005170	For DSM 13380	17	name 'For DSM 13380' identifies a strain, not a medium
 10	bacterial/for_dsm_13497.yaml	CultureMech:006881	For DSM 13497	38	name 'For DSM 13497' identifies a strain, not a medium
 10	bacterial/for_dsm_13514.yaml	CultureMech:005171	For DSM 13514	17	name 'For DSM 13514' identifies a strain, not a medium
-10	bacterial/for_dsm_13726.yaml	CultureMech:006375	For DSM 13726	38	name 'For DSM 13726' identifies a strain, not a medium
+10	bacterial/for_dsm_13726.yaml	CultureMech:006375	For DSM 13726	32	name 'For DSM 13726' identifies a strain, not a medium
 10	bacterial/for_dsm_13862.yaml	CultureMech:006647	For DSM 13862	47	name 'For DSM 13862' identifies a strain, not a medium
 10	bacterial/for_dsm_14005.yaml	CultureMech:006918	For DSM 14005	33	name 'For DSM 14005' identifies a strain, not a medium
 10	bacterial/for_dsm_14042.yaml	CultureMech:004140	For DSM 14042	37	name 'For DSM 14042' identifies a strain, not a medium
 10	bacterial/for_dsm_14174.yaml	CultureMech:004076	For DSM 14174	8	name 'For DSM 14174' identifies a strain, not a medium
 10	bacterial/for_dsm_14283.yaml	CultureMech:006878	For DSM 14283	16	name 'For DSM 14283' identifies a strain, not a medium
-10	bacterial/for_dsm_14290.yaml	CultureMech:006561	For DSM 14290	37	name 'For DSM 14290' identifies a strain, not a medium
+10	bacterial/for_dsm_14290.yaml	CultureMech:006561	For DSM 14290	32	name 'For DSM 14290' identifies a strain, not a medium
 10	bacterial/for_dsm_14366.yaml	CultureMech:006345	For DSM 14366	5	name 'For DSM 14366' identifies a strain, not a medium
 10	bacterial/for_dsm_14385.yaml	CultureMech:006246	For DSM 14385	27	name 'For DSM 14385' identifies a strain, not a medium
-10	bacterial/for_dsm_14424.yaml	CultureMech:005677	For DSM 14424	29	name 'For DSM 14424' identifies a strain, not a medium
+10	bacterial/for_dsm_14424.yaml	CultureMech:005677	For DSM 14424	24	name 'For DSM 14424' identifies a strain, not a medium
 10	bacterial/for_dsm_14428.yaml	CultureMech:005041	For DSM 14428	3	name 'For DSM 14428' identifies a strain, not a medium
 10	bacterial/for_dsm_14454.yaml	CultureMech:005142	For DSM 14454	32	name 'For DSM 14454' identifies a strain, not a medium
 10	bacterial/for_dsm_14469.yaml	CultureMech:006791	For DSM 14469	35	name 'For DSM 14469' identifies a strain, not a medium
 10	bacterial/for_dsm_14661.yaml	CultureMech:006830	For DSM 14661	37	name 'For DSM 14661' identifies a strain, not a medium
-10	bacterial/for_dsm_14691.yaml	CultureMech:005668	For DSM 14691	29	name 'For DSM 14691' identifies a strain, not a medium
+10	bacterial/for_dsm_14691.yaml	CultureMech:005668	For DSM 14691	24	name 'For DSM 14691' identifies a strain, not a medium
 10	bacterial/for_dsm_14708.yaml	CultureMech:006535	For DSM 14708	30	name 'For DSM 14708' identifies a strain, not a medium
 10	bacterial/for_dsm_14728.yaml	CultureMech:005134	For DSM 14728	32	name 'For DSM 14728' identifies a strain, not a medium
 10	bacterial/for_dsm_14795.yaml	CultureMech:006908	For DSM 14795	32	name 'For DSM 14795' identifies a strain, not a medium
@@ -1781,20 +1781,20 @@ score	file_path	record_id	name	n_ingredients	reasons
 10	bacterial/for_dsm_14956.yaml	CultureMech:004220	For DSM 14956	34	name 'For DSM 14956' identifies a strain, not a medium
 10	bacterial/for_dsm_14982.yaml	CultureMech:005135	For DSM 14982	32	name 'For DSM 14982' identifies a strain, not a medium
 10	bacterial/for_dsm_14994.yaml	CultureMech:004020	for DSM 14994	20	name 'for DSM 14994' identifies a strain, not a medium
-10	bacterial/for_dsm_15074.yaml	CultureMech:003637	For DSM 15074	23	name 'For DSM 15074' identifies a strain, not a medium
+10	bacterial/for_dsm_15074.yaml	CultureMech:003637	For DSM 15074	18	name 'For DSM 15074' identifies a strain, not a medium
 10	bacterial/for_dsm_15102.yaml	CultureMech:004223	For DSM 15102	34	name 'For DSM 15102' identifies a strain, not a medium
-10	bacterial/for_dsm_15206.yaml	CultureMech:005661	For DSM 15206	29	name 'For DSM 15206' identifies a strain, not a medium
+10	bacterial/for_dsm_15206.yaml	CultureMech:005661	For DSM 15206	24	name 'For DSM 15206' identifies a strain, not a medium
 10	bacterial/for_dsm_15249.yaml	CultureMech:004221	For DSM 15249	34	name 'For DSM 15249' identifies a strain, not a medium
 10	bacterial/for_dsm_15692.yaml	CultureMech:004423	For DSM 15692	7	name 'For DSM 15692' identifies a strain, not a medium
-10	bacterial/for_dsm_15699.yaml	CultureMech:003638	For DSM 15699	23	name 'For DSM 15699' identifies a strain, not a medium
-10	bacterial/for_dsm_15769.yaml	CultureMech:003515	For DSM 15769	37	name 'For DSM 15769' identifies a strain, not a medium
-10	bacterial/for_dsm_15941.yaml	CultureMech:006376	For DSM 15941	38	name 'For DSM 15941' identifies a strain, not a medium
-10	bacterial/for_dsm_15970.yaml	CultureMech:005663	For DSM 15970	29	name 'For DSM 15970' identifies a strain, not a medium
-10	bacterial/for_dsm_15978.yaml	CultureMech:005664	For DSM 15978	29	name 'For DSM 15978' identifies a strain, not a medium
-10	bacterial/for_dsm_16082.yaml	CultureMech:005665	For DSM 16082	30	name 'For DSM 16082' identifies a strain, not a medium
+10	bacterial/for_dsm_15699.yaml	CultureMech:003638	For DSM 15699	18	name 'For DSM 15699' identifies a strain, not a medium
+10	bacterial/for_dsm_15769.yaml	CultureMech:003515	For DSM 15769	31	name 'For DSM 15769' identifies a strain, not a medium
+10	bacterial/for_dsm_15941.yaml	CultureMech:006376	For DSM 15941	32	name 'For DSM 15941' identifies a strain, not a medium
+10	bacterial/for_dsm_15970.yaml	CultureMech:005663	For DSM 15970	24	name 'For DSM 15970' identifies a strain, not a medium
+10	bacterial/for_dsm_15978.yaml	CultureMech:005664	For DSM 15978	24	name 'For DSM 15978' identifies a strain, not a medium
+10	bacterial/for_dsm_16082.yaml	CultureMech:005665	For DSM 16082	25	name 'For DSM 16082' identifies a strain, not a medium
 10	bacterial/for_dsm_16121.yaml	CultureMech:006911	For DSM 16121	32	name 'For DSM 16121' identifies a strain, not a medium
 10	bacterial/for_dsm_16145.yaml	CultureMech:006912	For DSM 16145	32	name 'For DSM 16145' identifies a strain, not a medium
-10	bacterial/for_dsm_16346.yaml	CultureMech:006542	For DSM 16346	33	name 'For DSM 16346' identifies a strain, not a medium
+10	bacterial/for_dsm_16346.yaml	CultureMech:006542	For DSM 16346	27	name 'For DSM 16346' identifies a strain, not a medium
 10	bacterial/for_dsm_16401.yaml	CultureMech:006633	For DSM 16401	20	name 'For DSM 16401' identifies a strain, not a medium
 10	bacterial/for_dsm_16504.yaml	CultureMech:006754	For DSM 16504	32	name 'For DSM 16504' identifies a strain, not a medium
 10	bacterial/for_dsm_16529.yaml	CultureMech:006695	For DSM 16529	31	name 'For DSM 16529' identifies a strain, not a medium
@@ -1811,7 +1811,7 @@ score	file_path	record_id	name	n_ingredients	reasons
 10	bacterial/for_dsm_17373.yaml	CultureMech:006879	For DSM 17373	15	name 'For DSM 17373' identifies a strain, not a medium
 10	bacterial/for_dsm_17375.yaml	CultureMech:003517	For DSM 17375	32	name 'For DSM 17375' identifies a strain, not a medium
 10	bacterial/for_dsm_17477.yaml	CultureMech:005139	For DSM 17477	32	name 'For DSM 17477' identifies a strain, not a medium
-10	bacterial/for_dsm_17682.yaml	CultureMech:003597	For DSM 17682	30	name 'For DSM 17682' identifies a strain, not a medium
+10	bacterial/for_dsm_17682.yaml	CultureMech:003597	For DSM 17682	25	name 'For DSM 17682' identifies a strain, not a medium
 10	bacterial/for_dsm_17721.yaml	CultureMech:003631	For DSM 17721	33	name 'For DSM 17721' identifies a strain, not a medium
 10	bacterial/for_dsm_17722.yaml	CultureMech:006755	For DSM 17722	32	name 'For DSM 17722' identifies a strain, not a medium
 10	bacterial/for_dsm_17771.yaml	CultureMech:006915	For DSM 17771	32	name 'For DSM 17771' identifies a strain, not a medium
@@ -1853,13 +1853,13 @@ score	file_path	record_id	name	n_ingredients	reasons
 10	bacterial/for_dsm_19918.yaml	CultureMech:005112	For DSM 19918	29	name 'For DSM 19918' identifies a strain, not a medium
 10	bacterial/for_dsm_2095.yaml	CultureMech:004132	For DSM 2095	37	name 'For DSM 2095' identifies a strain, not a medium
 10	bacterial/for_dsm_21120.yaml	CultureMech:003621	For DSM 21120	13	name 'For DSM 21120' identifies a strain, not a medium
-10	bacterial/for_dsm_21152.yaml	CultureMech:003640	For DSM 21152	23	name 'For DSM 21152' identifies a strain, not a medium
-10	bacterial/for_dsm_21157.yaml	CultureMech:006563	For DSM 21157	37	name 'For DSM 21157' identifies a strain, not a medium
+10	bacterial/for_dsm_21152.yaml	CultureMech:003640	For DSM 21152	18	name 'For DSM 21152' identifies a strain, not a medium
+10	bacterial/for_dsm_21157.yaml	CultureMech:006563	For DSM 21157	32	name 'For DSM 21157' identifies a strain, not a medium
 10	bacterial/for_dsm_21278.yaml	CultureMech:005703	For DSM 21278	27	name 'For DSM 21278' identifies a strain, not a medium
-10	bacterial/for_dsm_21436.yaml	CultureMech:006532	For DSM 21436	23	name 'For DSM 21436' identifies a strain, not a medium
+10	bacterial/for_dsm_21436.yaml	CultureMech:006532	For DSM 21436	19	name 'For DSM 21436' identifies a strain, not a medium
 10	bacterial/for_dsm_21571.yaml	CultureMech:003946	For DSM 21571	34	name 'For DSM 21571' identifies a strain, not a medium
 10	bacterial/for_dsm_21650.yaml	CultureMech:003611	For DSM 21650	13	name 'For DSM 21650' identifies a strain, not a medium
-10	bacterial/for_dsm_21662.yaml	CultureMech:005667	For DSM 21662	29	name 'For DSM 21662' identifies a strain, not a medium
+10	bacterial/for_dsm_21662.yaml	CultureMech:005667	For DSM 21662	24	name 'For DSM 21662' identifies a strain, not a medium
 10	bacterial/for_dsm_21709.yaml	CultureMech:006903	For DSM 21709	14	name 'For DSM 21709' identifies a strain, not a medium
 10	bacterial/for_dsm_21761.yaml	CultureMech:003610	For DSM 21761	13	name 'For DSM 21761' identifies a strain, not a medium
 10	bacterial/for_dsm_21830.yaml	CultureMech:005704	For DSM 21830	27	name 'For DSM 21830' identifies a strain, not a medium
@@ -1905,16 +1905,16 @@ score	file_path	record_id	name	n_ingredients	reasons
 10	bacterial/for_dsm_5387.yaml	CultureMech:003616	For DSM 5387	13	name 'For DSM 5387' identifies a strain, not a medium
 10	bacterial/for_dsm_5388.yaml	CultureMech:005610	For DSM 5388	34	name 'For DSM 5388' identifies a strain, not a medium
 10	bacterial/for_dsm_5566.yaml	CultureMech:006471	For DSM 5566	26	name 'For DSM 5566' identifies a strain, not a medium
-10	bacterial/for_dsm_5651.yaml	CultureMech:005671	For DSM 5651	29	name 'For DSM 5651' identifies a strain, not a medium
-10	bacterial/for_dsm_5847.yaml	CultureMech:005669	For DSM 5847	29	name 'For DSM 5847' identifies a strain, not a medium
-10	bacterial/for_dsm_5849.yaml	CultureMech:005670	For DSM 5849	29	name 'For DSM 5849' identifies a strain, not a medium
+10	bacterial/for_dsm_5651.yaml	CultureMech:005671	For DSM 5651	24	name 'For DSM 5651' identifies a strain, not a medium
+10	bacterial/for_dsm_5847.yaml	CultureMech:005669	For DSM 5847	24	name 'For DSM 5847' identifies a strain, not a medium
+10	bacterial/for_dsm_5849.yaml	CultureMech:005670	For DSM 5849	24	name 'For DSM 5849' identifies a strain, not a medium
 10	bacterial/for_dsm_5885.yaml	CultureMech:005694	For DSM 5885	30	name 'For DSM 5885' identifies a strain, not a medium
 10	bacterial/for_dsm_612.yaml	CultureMech:005064	For DSM 612	7	name 'For DSM 612' identifies a strain, not a medium
 10	bacterial/for_dsm_6139.yaml	CultureMech:005695	For DSM 6139	30	name 'For DSM 6139' identifies a strain, not a medium
 10	bacterial/for_dsm_6150.yaml	CultureMech:005696	For DSM 6150	30	name 'For DSM 6150' identifies a strain, not a medium
 10	bacterial/for_dsm_6578.yaml	CultureMech:005710	For DSM 6578	33	name 'For DSM 6578' identifies a strain, not a medium
 10	bacterial/for_dsm_6724.yaml	CultureMech:005872	For DSM 6724	29	name 'For DSM 6724' identifies a strain, not a medium
-10	bacterial/for_dsm_6779.yaml	CultureMech:005672	For DSM 6779	29	name 'For DSM 6779' identifies a strain, not a medium
+10	bacterial/for_dsm_6779.yaml	CultureMech:005672	For DSM 6779	24	name 'For DSM 6779' identifies a strain, not a medium
 10	bacterial/for_dsm_6876.yaml	CultureMech:006005	For DSM 6876	34	name 'For DSM 6876' identifies a strain, not a medium
 10	bacterial/for_dsm_6877.yaml	CultureMech:006006	For DSM 6877	34	name 'For DSM 6877' identifies a strain, not a medium
 10	bacterial/for_dsm_6898.yaml	CultureMech:006063	For DSM 6898	27	name 'For DSM 6898' identifies a strain, not a medium
@@ -1924,7 +1924,7 @@ score	file_path	record_id	name	n_ingredients	reasons
 10	bacterial/for_dsm_8238.yaml	CultureMech:006104	For DSM 8238	34	name 'For DSM 8238' identifies a strain, not a medium
 10	bacterial/for_dsm_8271.yaml	CultureMech:004764	For DSM 8271	30	name 'For DSM 8271' identifies a strain, not a medium
 10	bacterial/for_dsm_8541.yaml	CultureMech:005147	For DSM 8541	32	name 'For DSM 8541' identifies a strain, not a medium
-10	bacterial/for_dsm_8988.yaml	CultureMech:006193	For DSM 8988	28	name 'For DSM 8988' identifies a strain, not a medium
+10	bacterial/for_dsm_8988.yaml	CultureMech:006193	For DSM 8988	23	name 'For DSM 8988' identifies a strain, not a medium
 10	bacterial/for_dsm_9195.yaml	CultureMech:003945	For DSM 9195	34	name 'For DSM 9195' identifies a strain, not a medium
 10	bacterial/for_dsm_9219.yaml	CultureMech:006274	For DSM 9219	24	name 'For DSM 9219' identifies a strain, not a medium
 10	bacterial/for_dsm_9463.yaml	CultureMech:006260	For DSM 9463	6	name 'For DSM 9463' identifies a strain, not a medium
