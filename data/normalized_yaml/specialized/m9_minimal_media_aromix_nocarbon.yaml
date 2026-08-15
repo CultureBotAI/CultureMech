@@ -75,8 +75,8 @@ ingredients:
     unit: MG_PER_L
   notes: 'CAS: 150-13-0; MW: 137.14; Ontology enriched via CAS-RN lookup'
   term:
-    id: CHEBI:194474
-    label: ''
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
 - preferred_term: 2,3-dihydroxybenzoic acid
   concentration:
     value: '10'

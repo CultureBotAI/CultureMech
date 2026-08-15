@@ -89,8 +89,8 @@ ingredients:
     value: '13.75'
     unit: MILLIMOLAR
   term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
+    id: CHEBI:17234
+    label: glucose
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From LCFM Carbon mix'
 - preferred_term: Sodium lactate
   concentration:
@@ -460,8 +460,8 @@ ingredients:
     unit: MG_PER_L
   notes: From DL vitamins; Ontology enriched via CAS-RN lookup
   term:
-    id: CHEBI:194474
-    label: ''
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
 - preferred_term: D,L-6,8-Thioctic Acid
   concentration:
     value: '0.0005'

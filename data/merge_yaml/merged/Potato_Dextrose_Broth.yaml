@@ -8,17 +8,16 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
-  term:
-    id: FOODON:03316428
-    label: potato extract
-  notes: 'Mapping: manual (confidence: 0.85)'
+  notes: 'Ungrounded (#260): the previous FOODON:03316428 mapping is ''sweets'', not
+    a potato infusion, and the stored label ''potato extract'' was never that term''s
+    label. MediaIngredientMech records this ingredient as UNMAPPED_0251.'
 - preferred_term: D-Glucose
   concentration:
     value: '20'
     unit: G_PER_L
   term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
+    id: CHEBI:17634
+    label: D-glucose
   notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 50-99-7; MW: 180.16'
 description: Growth media for for yeasts, for bacteria, for molds
 notes: 'Source: FEBA media definitions'

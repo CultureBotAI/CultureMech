@@ -129,11 +129,11 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
     component'
   term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
+    id: CHEBI:17234
+    label: glucose
   mediaingredientmech_chebi_term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
+    id: CHEBI:17234
+    label: glucose
 - preferred_term: Na2S・9H2O
   notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
     Solution'

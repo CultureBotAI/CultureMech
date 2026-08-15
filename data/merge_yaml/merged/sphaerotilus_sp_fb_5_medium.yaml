@@ -17,10 +17,10 @@ ingredients:
     value: '0.4'
     unit: G_PER_L
   term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
+    id: CHEBI:17234
+    label: glucose
   mediaingredientmech_chebi_term:
-    id: CHEBI:42758
+    id: CHEBI:17234
     label: glucose
 - preferred_term: Proteose peptone No. 3 (BD-Difco)
   concentration:

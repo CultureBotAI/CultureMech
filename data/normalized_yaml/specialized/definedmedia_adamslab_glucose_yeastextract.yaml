@@ -184,8 +184,8 @@ ingredients:
   notes: 'CAS: 150-13-0; MW: 137.14; From Wolfe''s vitamin mix; Ontology enriched
     via CAS-RN lookup'
   term:
-    id: CHEBI:194474
-    label: ''
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
 - preferred_term: Lipoic acid
   concentration:
     value: '0.05'

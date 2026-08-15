@@ -112,8 +112,8 @@ ingredients:
     id: MediaIngredientMech:000729
     label: p-amino benzoic acid
   term:
-    id: CHEBI:194474
-    label: ''
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
 - preferred_term: Folic acid
   concentration:
     value: '5'

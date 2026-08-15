@@ -8,10 +8,9 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
-  term:
-    id: FOODON:03316428
-    label: potato extract
-  notes: 'Mapping: manual (confidence: 0.85)'
+  notes: 'Ungrounded (#260): the previous FOODON:03316428 mapping is ''sweets'', not
+    a potato infusion, and the stored label ''potato extract'' was never that term''s
+    label. MediaIngredientMech records this ingredient as UNMAPPED_0251.'
 - preferred_term: D-Glucose
   concentration:
     value: '20'

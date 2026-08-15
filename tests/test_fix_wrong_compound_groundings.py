@@ -119,6 +119,25 @@ def test_quoted_preferred_term_is_matched():
     assert changes and "id: CHEBI:17634" in new
 
 
+def test_paba_zwitterion_is_corrected_and_the_empty_label_filled():
+    """#260: CHEBI:194474 is 4-ammoniobenzoate; every row carried CAS 150-13-0 (the
+    neutral acid) and an EMPTY label, so nothing on the record asserted the zwitterion."""
+    for name in ("4-Aminobenzoic acid", "p-Amino Benzoic Acid", "p-amino benzoic acid"):
+        text = (
+            "ingredients:\n"
+            f"- preferred_term: {name}\n"
+            "  notes: 'CAS: 150-13-0; MW: 137.14'\n"
+            "  term:\n"
+            "    id: CHEBI:194474\n"
+            "    label: ''\n"
+        )
+        new, changes = fix_text(text)
+        assert changes == [(name, "CHEBI:194474", "CHEBI:30753")]
+        assert "id: CHEBI:30753" in new
+        assert "label: 4-aminobenzoic acid" in new, "empty label must be filled"
+        assert yaml.safe_load(new)["ingredients"][0]["notes"].startswith("CAS: 150-13-0")
+
+
 def test_name_scope_does_not_leak_to_the_next_ingredient():
     """A correction must not carry over to a following, differently-named ingredient."""
     text = (

@@ -64,6 +64,15 @@ CORRECTIONS: dict[tuple[str, str], tuple[str, str]] = {
     ("CHEBI:42758", "D-glucose"):      ("CHEBI:17634", "D-glucose"),
     ("CHEBI:42758", "D(+)-Glucose"):   ("CHEBI:17634", "D-glucose"),
     ("CHEBI:42758", "Dextrose"):       ("CHEBI:17634", "D-glucose"),
+    # PABA (#260, reported from MediaIngredientMech#138). CHEBI:194474 is
+    # 4-ammoniobenzoate, the zwitterion. Every one of these rows carries
+    # `CAS: 150-13-0` in its own notes, which is the neutral acid = CHEBI:30753, and
+    # every one has an EMPTY term.label, so nothing on the record ever asserted the
+    # zwitterion. MIM independently grounds the name to the acid across 1,968
+    # occurrences.
+    ("CHEBI:194474", "4-Aminobenzoic acid"): ("CHEBI:30753", "4-aminobenzoic acid"),
+    ("CHEBI:194474", "p-Amino Benzoic Acid"): ("CHEBI:30753", "4-aminobenzoic acid"),
+    ("CHEBI:194474", "p-amino benzoic acid"): ("CHEBI:30753", "4-aminobenzoic acid"),
 }
 
 
@@ -131,7 +140,7 @@ def main(argv: list[str] | None = None) -> int:
 
     tally: Counter[tuple[str, str, str]] = Counter()
     touched = 0
-    for path in sorted(args.yaml_dir.rglob("*.yaml")):
+    for path in sorted(args.yaml_dir.resolve().rglob("*.yaml")):
         try:
             text = path.read_text(errors="replace")
         except OSError:
@@ -151,7 +160,10 @@ def main(argv: list[str] | None = None) -> int:
             continue
         touched += 1
         tally.update(changes)
-        rel = path.relative_to(REPO)
+        try:
+            rel = path.relative_to(REPO)
+        except ValueError:
+            rel = path            # --yaml-dir may be relative or outside the repo
         for name, old, new in changes:
             print(f"  {rel}: {name!r} {old} -> {new}")
         if args.apply:
