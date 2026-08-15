@@ -231,7 +231,7 @@ ingredients:
     value: '1'
     unit: G_PER_L
   term:
-    id: CHEBI:86463
+    id: CHEBI:31795
     label: magnesium sulfate heptahydrate
   notes: 'CAS: 10034-99-8; MW: 246.47'
 - preferred_term: Iron (II) sulfate heptahydrate
@@ -264,8 +264,8 @@ ingredients:
     unit: G_PER_L
   notes: 'CAS: 150-13-0; MW: 137.14; Ontology enriched via CAS-RN lookup'
   term:
-    id: CHEBI:194474
-    label: ''
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
 - preferred_term: Thiamine HCl
   concentration:
     value: '0.00056'

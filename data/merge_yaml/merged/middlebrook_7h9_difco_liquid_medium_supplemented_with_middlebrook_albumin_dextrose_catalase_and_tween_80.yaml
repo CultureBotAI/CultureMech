@@ -92,11 +92,11 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
     component'
   term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
+    id: CHEBI:17634
+    label: D-glucose
   mediaingredientmech_chebi_term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
+    id: CHEBI:17634
+    label: D-glucose
 - *id001
 - *id002
 - *id003

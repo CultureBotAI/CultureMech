@@ -78,11 +78,11 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
     component'
   term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
+    id: CHEBI:17234
+    label: glucose
   mediaingredientmech_chebi_term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
+    id: CHEBI:17234
+    label: glucose
 - preferred_term: Agar
   concentration:
     value: '13'

@@ -9,8 +9,8 @@ ingredients:
     value: '2'
     unit: G_PER_L
   term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
+    id: CHEBI:17634
+    label: D-glucose
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-99-7; MW: 180.16'
 - preferred_term: Magnesium sulfate
   concentration:
@@ -77,8 +77,8 @@ ingredients:
   notes: 'CAS: 150-13-0; MW: 137.14; From Thauer''s vitamin mix no Biotin; Ontology
     enriched via CAS-RN lookup'
   term:
-    id: CHEBI:194474
-    label: ''
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
 - preferred_term: Lipoic acid
   concentration:
     value: '0.01'

@@ -268,8 +268,8 @@ ingredients:
     unit: MG_PER_L
   notes: From DL vitamins; Ontology enriched via CAS-RN lookup
   term:
-    id: CHEBI:194474
-    label: ''
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
 - preferred_term: D,L-6,8-Thioctic Acid
   concentration:
     value: '0.0005'

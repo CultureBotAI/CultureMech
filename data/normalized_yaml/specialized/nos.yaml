@@ -134,8 +134,8 @@ ingredients:
     unit: G_PER_L
   notes: 'CAS: 150-13-0; MW: 137.14; Ontology enriched via CAS-RN lookup'
   term:
-    id: CHEBI:194474
-    label: ''
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
 description: Harwood UW defined media for growing RPal; same as PM except all sulfate
   salts replaced with chloride salts
 notes: 'Source: FEBA media definitions'

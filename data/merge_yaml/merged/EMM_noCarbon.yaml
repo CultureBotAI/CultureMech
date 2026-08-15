@@ -47,7 +47,7 @@ ingredients:
     value: '0.2'
     unit: G_PER_L
   term:
-    id: CHEBI:86463
+    id: CHEBI:31795
     label: magnesium sulfate heptahydrate
   notes: 'CAS: 10034-99-8; MW: 246.47'
 - preferred_term: Calcium chloride

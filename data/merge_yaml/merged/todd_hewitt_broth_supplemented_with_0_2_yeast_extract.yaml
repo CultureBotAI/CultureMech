@@ -42,11 +42,11 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
     compound'
   term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
+    id: CHEBI:17634
+    label: D-glucose
   mediaingredientmech_chebi_term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
+    id: CHEBI:17634
+    label: D-glucose
 - preferred_term: Sodium Carbonate
   concentration:
     value: '2.5'
