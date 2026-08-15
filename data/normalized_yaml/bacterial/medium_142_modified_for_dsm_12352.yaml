@@ -97,36 +97,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:64734
     label: Na2-EDTA
-- preferred_term: ZnSO4 x 7 H2O
-  term:
-    id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
-  concentration:
-    value: '22'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
-- preferred_term: MnCl2 x 4 H2O
-  term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
-  concentration:
-    value: '5.06'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
 - preferred_term: (NH4)6Mo7O24 x 4 H2O
   concentration:
     value: '1.1'
@@ -134,36 +104,6 @@ ingredients:
   term:
     id: CHEBI:91249
     label: ammonium molybdate
-- preferred_term: CuSO4 x 5 H2O
-  term:
-    id: CHEBI:31440
-    label: CuSO4 x 5 H2O
-  concentration:
-    value: '1.57'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31440
-    label: CuSO4 x 5 H2O
-- preferred_term: CoCl2 x 6 H2O
-  term:
-    id: CHEBI:35696
-    label: CoCl2 x 6 H2O
-  concentration:
-    value: '1.61'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:35696
-    label: CoCl2 x 6 H2O
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17439
-    label: Vitamin B12
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -184,16 +124,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
     label: D-(+)-biotin
-- preferred_term: Nicotinic acid
-  term:
-    id: CHEBI:15940
-    label: Nicotinic acid
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15940
-    label: Nicotinic acid
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -204,26 +134,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:31345
     label: Calcium pantothenate
-- preferred_term: Pyridoxine hydrochloride
-  term:
-    id: CHEBI:30961
-    label: Pyridoxine hydrochloride
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:30961
-    label: Pyridoxine hydrochloride
-- preferred_term: Thiamine-HCl x 2 H2O
-  term:
-    id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
 applications:
 - Microbial cultivation
 curation_history:
@@ -266,6 +176,14 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-15T00:17:31.272495+00:00'
+  curator: apply_cocktail_nesting.py
+  action: NESTED_FLATTENED_COCKTAIL
+  notes: 'Moved 9 stock-strength component(s) out of ingredients into 2 solution(s):
+    5 -> ''Trace element solution (Vishniac & Santer, 1957)'' @ 0.2 ml/l; 4 -> ''Seven
+    vitamins solution'' @ 1 ml/l. Each moved component matched the MediaDive stock
+    by name AND value; bulk ingredients sharing a name were left in place (#150).'
+  changes: Nested 9 ingredient(s) under 2 solution(s); ingredients 21 -> 12
 ph_value: 7.2
 parent_media:
   path: data/normalized_yaml/bacterial/thiomicrospira_pelophila_medium.yaml
@@ -276,3 +194,126 @@ variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
 - Same ingredient and concentration signature; review as possible duplicate source
   record.
+solutions:
+- preferred_term: Trace element solution (Vishniac & Santer, 1957)
+  composition:
+  - preferred_term: ZnSO4 x 7 H2O
+    term:
+      id: CHEBI:32312
+      label: ZnSO4 x 7 H2O
+    concentration:
+      value: '22'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: ZnSO4 x 7 H2O
+  - preferred_term: MnCl2 x 4 H2O
+    term:
+      id: CHEBI:86368
+      label: MnCl2 x 4 H2O
+    concentration:
+      value: '5.06'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: MnCl2 x 4 H2O
+  - preferred_term: FeSO4 x 7 H2O
+    term:
+      id: CHEBI:75836
+      label: FeSO4 x 7 H2O
+    concentration:
+      value: '5'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: FeSO4 x 7 H2O
+  - preferred_term: CuSO4 x 5 H2O
+    term:
+      id: CHEBI:31440
+      label: CuSO4 x 5 H2O
+    concentration:
+      value: '1.57'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31440
+      label: CuSO4 x 5 H2O
+  - preferred_term: CoCl2 x 6 H2O
+    term:
+      id: CHEBI:35696
+      label: CoCl2 x 6 H2O
+    concentration:
+      value: '1.61'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:35696
+      label: CoCl2 x 6 H2O
+  concentration_candidates:
+  - value: '0.2'
+    unit: ML_PER_L
+    basis: CROSS_MEDIUM_INFERENCE
+    support: This record is a variant of medium 142 (KOMODO key '142_12352'); volume
+      read from base medium 142 ('THIOMICROSPIRA PELOPHILA MEDIUM').
+    counterevidence: 'The variant''s own recipe was never read — only base medium
+      142''s — so the modification may change this volume. A stock''s addition volume
+      varies by citing medium: MediaDive medium 142 adds ''Trace element solution
+      (Vishniac & Santer)'' at 0.2 ml and medium 69 adds the same stock at 5 ml.'
+    proposed_by: apply_cocktail_nesting.py
+  preparation_notes: 'Stock prepared in 1000 ml. Composition and addition volume NOT
+    asserted: proposed as 0.2 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates
+    (#150).'
+- preferred_term: Seven vitamins solution
+  composition:
+  - preferred_term: Vitamin B12
+    term:
+      id: CHEBI:17439
+      label: Vitamin B12
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17439
+      label: Vitamin B12
+  - preferred_term: Nicotinic acid
+    term:
+      id: CHEBI:15940
+      label: Nicotinic acid
+    concentration:
+      value: '0.2'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15940
+      label: Nicotinic acid
+  - preferred_term: Pyridoxine hydrochloride
+    term:
+      id: CHEBI:30961
+      label: Pyridoxine hydrochloride
+    concentration:
+      value: '0.3'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30961
+      label: Pyridoxine hydrochloride
+  - preferred_term: Thiamine-HCl x 2 H2O
+    term:
+      id: CHEBI:132751
+      label: Thiamine-HCl x 2 H2O
+    concentration:
+      value: '0.2'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:132751
+      label: Thiamine-HCl x 2 H2O
+  concentration_candidates:
+  - value: '1'
+    unit: ML_PER_L
+    basis: CROSS_MEDIUM_INFERENCE
+    support: This record is a variant of medium 142 (KOMODO key '142_12352'); volume
+      read from base medium 142 ('THIOMICROSPIRA PELOPHILA MEDIUM').
+    counterevidence: 'The variant''s own recipe was never read — only base medium
+      142''s — so the modification may change this volume. A stock''s addition volume
+      varies by citing medium: MediaDive medium 142 adds ''Trace element solution
+      (Vishniac & Santer)'' at 0.2 ml and medium 69 adds the same stock at 5 ml.'
+    proposed_by: apply_cocktail_nesting.py
+  preparation_notes: 'Stock prepared in 1000 ml. Composition and addition volume NOT
+    asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates
+    (#150).'

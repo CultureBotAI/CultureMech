@@ -88,3 +88,33 @@ def test_the_negative_finding_is_recorded_in_the_docstring(ics):
     doc = ics.__doc__ or ""
     assert "SL-10" in doc and "0 blocked records" in doc
     assert "under-sampled" in doc or "under-sampled" in doc.lower()
+
+
+# --- invariance reporting (#264) -------------------------------------------------
+
+from collections import Counter as _Counter  # noqa: E402
+
+from identify_cocktail_stocks import (  # noqa: E402
+    MIN_SAMPLE_FOR_INVARIANCE, _invariance, _range,
+)
+
+
+def test_one_value_on_a_tiny_sample_is_not_invariance():
+    """n=2 with one distinct volume describes the sample, not the stock. Reporting it
+    as `yes` is what let the Vishniac row claim 5 ml while medium 142 uses 0.2 ml."""
+    assert _invariance(_Counter({"5": 2}), 2) == "insufficient-sample"
+
+
+def test_one_value_on_an_adequate_sample_is_invariance():
+    n = MIN_SAMPLE_FOR_INVARIANCE
+    assert _invariance(_Counter({"1": n}), n) == "yes"
+
+
+def test_more_than_one_value_is_always_a_no():
+    """Variation is a finding at any sample size — it takes one counterexample."""
+    assert _invariance(_Counter({"1": 1, "5": 1}), 2) == "no"
+
+
+def test_range_exposes_the_spread_a_mode_hides():
+    assert _range(_Counter({"0.2": 9, "5": 1})) == "0.2-5ml"
+    assert _range(_Counter({"1": 40})) == "1ml"

@@ -85,16 +85,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:64734
     label: Na2-EDTA
-- preferred_term: ZnSO4 x 7 H2O
-  term:
-    id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
-  concentration:
-    value: '11'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -105,16 +95,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
-- preferred_term: MnCl2 x 4 H2O
-  term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -132,16 +112,6 @@ ingredients:
   term:
     id: CHEBI:91249
     label: ammonium molybdate
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
@@ -196,6 +166,13 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-15T00:17:31.986921+00:00'
+  curator: apply_cocktail_nesting.py
+  action: NESTED_FLATTENED_COCKTAIL
+  notes: 'Moved 3 stock-strength component(s) out of ingredients into 1 solution(s):
+    3 -> ''Trace element solution'' @ 10 ml/l. Each moved component matched the MediaDive
+    stock by name AND value; bulk ingredients sharing a name were left in place (#150).'
+  changes: Nested 3 ingredient(s) under 1 solution(s); ingredients 15 -> 12
 parent_media:
   path: data/normalized_yaml/bacterial/annwoodia_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -205,3 +182,51 @@ variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
 - Same ingredient and concentration signature; review as possible duplicate source
   record.
+solutions:
+- preferred_term: Trace element solution
+  composition:
+  - preferred_term: ZnSO4 x 7 H2O
+    term:
+      id: CHEBI:32312
+      label: ZnSO4 x 7 H2O
+    concentration:
+      value: '11'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: ZnSO4 x 7 H2O
+  - preferred_term: MnCl2 x 4 H2O
+    term:
+      id: CHEBI:86368
+      label: MnCl2 x 4 H2O
+    concentration:
+      value: '2.5'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: MnCl2 x 4 H2O
+  - preferred_term: FeSO4 x 7 H2O
+    term:
+      id: CHEBI:75836
+      label: FeSO4 x 7 H2O
+    concentration:
+      value: '5'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: FeSO4 x 7 H2O
+  concentration_candidates:
+  - value: '10'
+    unit: ML_PER_L
+    basis: CROSS_MEDIUM_INFERENCE
+    support: KOMODO 389 resolves to DSMZ/MediaDive medium 389 both structurally and
+      via the KOMODO->DSMZ export; volume read from that medium's recipe.
+    counterevidence: 'The fetched medium is named ''ANNWOODIA MEDIUM'' but this record
+      is ''THIOBACILLUS AQUAESULIS MEDIUM''; the identification rests on the medium
+      number alone. A stock''s addition volume varies by citing medium: MediaDive
+      medium 142 adds ''Trace element solution (Vishniac & Santer)'' at 0.2 ml and
+      medium 69 adds the same stock at 5 ml.'
+    proposed_by: apply_cocktail_nesting.py
+  preparation_notes: 'Stock prepared in 1000 ml. Composition and addition volume NOT
+    asserted: proposed as 10 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates
+    (#150).'

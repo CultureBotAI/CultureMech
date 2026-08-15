@@ -71,16 +71,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
-- preferred_term: MnSO4 x H2O
-  term:
-    id: CHEBI:86364
-    label: MnSO4 x H2O
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86364
-    label: MnSO4 x H2O
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -91,26 +81,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: NaCl
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-- preferred_term: CoCl2 x 6 H2O
-  term:
-    id: CHEBI:35696
-    label: CoCl2 x 6 H2O
-  concentration:
-    value: '1.8'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:35696
-    label: CoCl2 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -121,16 +91,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
-- preferred_term: ZnSO4 x 7 H2O
-  term:
-    id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
-  concentration:
-    value: '1.8'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
@@ -221,16 +181,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:27470
     label: Folic acid
-- preferred_term: Pyridoxine hydrochloride
-  term:
-    id: CHEBI:30961
-    label: Pyridoxine hydrochloride
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:30961
-    label: Pyridoxine hydrochloride
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -344,6 +294,14 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-15T00:17:31.791658+00:00'
+  curator: apply_cocktail_nesting.py
+  action: NESTED_FLATTENED_COCKTAIL
+  notes: 'Moved 5 stock-strength component(s) out of ingredients into 2 solution(s):
+    4 -> "Wolfe''s mineral elixir" @ 1 ml/l; 1 -> "Wolin''s vitamin solution (10x)"
+    @ 1 ml/l. Each moved component matched the MediaDive stock by name AND value;
+    bulk ingredients sharing a name were left in place (#150).'
+  changes: Nested 5 ingredient(s) under 2 solution(s); ingredients 30 -> 25
 variant_children:
 - path: data/normalized_yaml/bacterial/for_dsm_17682.yaml
   relationship: SOURCE_DUPLICATE
@@ -357,3 +315,88 @@ variant_children:
   name: maridesulfovibrio_medium
   notes: Same ingredient and concentration signature; review as possible duplicate
     source record.
+solutions:
+- preferred_term: Wolfe's mineral elixir
+  composition:
+  - preferred_term: MnSO4 x H2O
+    term:
+      id: CHEBI:86364
+      label: MnSO4 x H2O
+    concentration:
+      value: '5'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86364
+      label: MnSO4 x H2O
+  - preferred_term: FeSO4 x 7 H2O
+    term:
+      id: CHEBI:75836
+      label: FeSO4 x 7 H2O
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: FeSO4 x 7 H2O
+  - preferred_term: CoCl2 x 6 H2O
+    term:
+      id: CHEBI:35696
+      label: CoCl2 x 6 H2O
+    concentration:
+      value: '1.8'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:35696
+      label: CoCl2 x 6 H2O
+  - preferred_term: ZnSO4 x 7 H2O
+    term:
+      id: CHEBI:32312
+      label: ZnSO4 x 7 H2O
+    concentration:
+      value: '1.8'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: ZnSO4 x 7 H2O
+  concentration_candidates:
+  - value: '1'
+    unit: ML_PER_L
+    basis: CROSS_MEDIUM_INFERENCE
+    support: KOMODO 1040 resolves to DSMZ/MediaDive medium 1040 both structurally
+      and via the KOMODO->DSMZ export; volume read from that medium's recipe.
+    counterevidence: 'The fetched medium is named ''MARIDESULFOVIBRIO MEDIUM'' but
+      this record is ''SYLC medium''; the identification rests on the medium number
+      alone. A stock''s addition volume varies by citing medium: MediaDive medium
+      142 adds ''Trace element solution (Vishniac & Santer)'' at 0.2 ml and medium
+      69 adds the same stock at 5 ml.'
+    proposed_by: apply_cocktail_nesting.py
+  preparation_notes: 'Stock prepared in 1000 ml. Composition and addition volume NOT
+    asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates
+    (#150).'
+- preferred_term: Wolin's vitamin solution (10x)
+  composition:
+  - preferred_term: Pyridoxine hydrochloride
+    term:
+      id: CHEBI:30961
+      label: Pyridoxine hydrochloride
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30961
+      label: Pyridoxine hydrochloride
+  concentration_candidates:
+  - value: '1'
+    unit: ML_PER_L
+    basis: CROSS_MEDIUM_INFERENCE
+    support: KOMODO 1040 resolves to DSMZ/MediaDive medium 1040 both structurally
+      and via the KOMODO->DSMZ export; volume read from that medium's recipe.
+    counterevidence: 'The fetched medium is named ''MARIDESULFOVIBRIO MEDIUM'' but
+      this record is ''SYLC medium''; the identification rests on the medium number
+      alone. A stock''s addition volume varies by citing medium: MediaDive medium
+      142 adds ''Trace element solution (Vishniac & Santer)'' at 0.2 ml and medium
+      69 adds the same stock at 5 ml.'
+    proposed_by: apply_cocktail_nesting.py
+  preparation_notes: 'Stock prepared in 1000 ml. Composition and addition volume NOT
+    asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates
+    (#150).'

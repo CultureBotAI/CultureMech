@@ -97,26 +97,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:144421
     label: Fe(III) citrate
-- preferred_term: Nicotinic acid
-  term:
-    id: CHEBI:15940
-    label: Nicotinic acid
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15940
-    label: Nicotinic acid
-- preferred_term: Thiamine-HCl x 2 H2O
-  term:
-    id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -127,16 +107,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
     label: Biotin
-- preferred_term: p-Aminobenzoic acid
-  term:
-    id: CHEBI:30753
-    label: p-Aminobenzoic acid
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:30753
-    label: p-Aminobenzoic acid
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
@@ -157,26 +127,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:31345
     label: Calcium pantothenate
-- preferred_term: Pyridoxine hydrochloride
-  term:
-    id: CHEBI:30961
-    label: Pyridoxine hydrochloride
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:30961
-    label: Pyridoxine hydrochloride
-- preferred_term: Folic acid
-  term:
-    id: CHEBI:27470
-    label: Folic acid
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:27470
-    label: Folic acid
 - preferred_term: Na3-EDTA
   term:
     id: CHEBI:63125
@@ -305,6 +255,13 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-15T00:17:31.652854+00:00'
+  curator: apply_cocktail_nesting.py
+  action: NESTED_FLATTENED_COCKTAIL
+  notes: 'Moved 5 stock-strength component(s) out of ingredients into 1 solution(s):
+    5 -> ''Vitamin solution CA'' @ 1 ml/l. Each moved component matched the MediaDive
+    stock by name AND value; bulk ingredients sharing a name were left in place (#150).'
+  changes: Nested 5 ingredient(s) under 1 solution(s); ingredients 26 -> 21
 ph_value: 8.2
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_87_CHLOROFLEXUS_medium_modified.yaml
@@ -315,3 +272,70 @@ variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
 - Same ingredient and concentration signature; review as possible duplicate source
   record.
+solutions:
+- preferred_term: Vitamin solution CA
+  composition:
+  - preferred_term: Nicotinic acid
+    term:
+      id: CHEBI:15940
+      label: Nicotinic acid
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15940
+      label: Nicotinic acid
+  - preferred_term: Thiamine-HCl x 2 H2O
+    term:
+      id: CHEBI:132751
+      label: Thiamine-HCl x 2 H2O
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:132751
+      label: Thiamine-HCl x 2 H2O
+  - preferred_term: p-Aminobenzoic acid
+    term:
+      id: CHEBI:30753
+      label: p-Aminobenzoic acid
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30753
+      label: p-Aminobenzoic acid
+  - preferred_term: Pyridoxine hydrochloride
+    term:
+      id: CHEBI:30961
+      label: Pyridoxine hydrochloride
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30961
+      label: Pyridoxine hydrochloride
+  - preferred_term: Folic acid
+    term:
+      id: CHEBI:27470
+      label: Folic acid
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:27470
+      label: Folic acid
+  concentration_candidates:
+  - value: '1'
+    unit: ML_PER_L
+    basis: CROSS_MEDIUM_INFERENCE
+    support: This record is a variant of medium 87a (KOMODO key '87a_13941'); volume
+      read from base medium 87a ('CHLOROFLEXUS AGGREGANS MEDIUM').
+    counterevidence: 'The variant''s own recipe was never read — only base medium
+      87a''s — so the modification may change this volume. A stock''s addition volume
+      varies by citing medium: MediaDive medium 142 adds ''Trace element solution
+      (Vishniac & Santer)'' at 0.2 ml and medium 69 adds the same stock at 5 ml.'
+    proposed_by: apply_cocktail_nesting.py
+  preparation_notes: 'Stock prepared in 100 ml. Composition and addition volume NOT
+    asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates
+    (#150).'

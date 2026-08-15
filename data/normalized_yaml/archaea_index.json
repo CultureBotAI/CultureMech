@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-13T23:34:17.196949+00:00",
+  "generated": "2026-08-15T01:12:19.072773+00:00",
   "category": "archaea",
   "count": 743,
   "recipes": {
@@ -7887,10 +7887,11 @@
     "CultureMech:005709": {
       "name": "pyrodictium_abyssi_medium",
       "filename": "pyrodictium_abyssi_medium.yaml",
-      "ingredient_count": 32,
+      "ingredient_count": 27,
       "id": "CultureMech:005709",
       "source_id": "komodo.medium:508",
       "source": "KOMODO",
+      "solution_count": 2,
       "categories": [
         "archaea"
       ]
