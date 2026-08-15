@@ -65,7 +65,7 @@ import yaml
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from fetch_mediadive_solution_volumes import (  # noqa: E402
-    extract_additions, fetch_medium, komodo_to_dsmz, names_agree,
+    COCKTAIL_NAME, extract_additions, fetch_medium, komodo_to_dsmz, names_agree,
 )
 
 REPO = Path(__file__).resolve().parent.parent
@@ -85,6 +85,12 @@ BASE_OF = re.compile(r"^(\d+[a-z]?)")
 
 
 MIN_SHARED_COMPOUNDS = 8
+# ...of which at least this many must come from the medium's MAIN solution (#269).
+# A medium's identity lives in its main solution: two unrelated media that both add
+# SL-10 and Seven vitamins share ~14 stock compounds at identical values for free,
+# because a stock's composition is the same wherever it is used. Counting only the
+# total would let a record be identified on stocks alone.
+MIN_MAIN_SOLUTION_COMPOUNDS = 5
 
 
 def _norm_compound(s: str) -> str:
@@ -98,10 +104,17 @@ def _num(v):
         return None
 
 
-def medium_composition(medium: dict[str, Any]) -> dict[str, float]:
-    """Every compound MediaDive lists for this medium, at its g/l."""
+def medium_composition(medium: dict[str, Any],
+                       main_only: bool = False) -> dict[str, float]:
+    """Every compound MediaDive lists for this medium, at its g/l.
+
+    `main_only` drops the referenced trace/vitamin stocks, leaving the salts that
+    actually distinguish one medium from another.
+    """
     out: dict[str, float] = {}
     for sol in medium.get("solutions") or []:
+        if main_only and COCKTAIL_NAME.search(str(sol.get("name") or "")):
+            continue
         for r in sol.get("recipe") or []:
             v = _num(r.get("g_l"))
             if r.get("compound") and v is not None:
@@ -125,8 +138,9 @@ def record_composition(doc: dict[str, Any]) -> dict[str, float]:
 
 
 def composition_agreement(doc: dict[str, Any],
-                          medium: dict[str, Any]) -> tuple[float, int]:
-    """(fraction of shared compounds whose VALUES agree, number shared).
+                          medium: dict[str, Any]) -> tuple[float, int, int]:
+    """(fraction of shared compounds whose VALUES agree, number shared, number of
+    those that come from the medium's MAIN solution).
 
     This is the evidence that settles what a name comparison cannot. Most anaerobic
     DSMZ media share a backbone -- salts, trace elements, vitamins, bicarbonate,
@@ -142,10 +156,17 @@ def composition_agreement(doc: dict[str, Any],
     a, b = record_composition(doc), medium_composition(medium)
     shared = set(a) & set(b)
     if not shared:
-        return 0.0, 0
+        return 0.0, 0, 0
     agree = sum(1 for k in shared
                 if abs(a[k] - b[k]) <= max(1e-9, 0.001 * abs(b[k])))
-    return agree / len(shared), len(shared)
+    main = len(shared & set(medium_composition(medium, main_only=True)))
+    return agree / len(shared), len(shared), main
+
+
+def composition_confirms(ratio: float, shared: int, main: int) -> bool:
+    """Does the composition identify this medium well enough to assert its volume?"""
+    return (ratio == 1.0 and shared >= MIN_SHARED_COMPOUNDS
+            and main >= MIN_MAIN_SOLUTION_COMPOUNDS)
 
 
 def komodo_key(doc: dict[str, Any]) -> str | None:
@@ -180,13 +201,14 @@ def classify(key: str, doc: dict[str, Any], medium: dict[str, Any],
     bare = bool(BARE_ID.fullmatch(key))
     agree = names_agree(doc, medium)
 
-    ratio, shared = composition_agreement(doc, medium)
-    composition_confirms = ratio == 1.0 and shared >= MIN_SHARED_COMPOUNDS
+    ratio, shared, main = composition_agreement(doc, medium)
+    confirmed = composition_confirms(ratio, shared, main)
 
-    if bare and (agree or composition_confirms):
+    if bare and (agree or confirmed):
         how = (f"whose name ({md_name!r}) agrees with this record's" if agree else
                f"whose composition this record reproduces EXACTLY -- all {shared} "
-               f"shared compounds at identical values, while unrelated media score 0")
+               f"shared compounds at identical values ({main} of them from the main "
+               f"solution), while unrelated media score 0")
         return ("READ_FROM_THIS_MEDIUM",
                 f"KOMODO {key} resolves to DSMZ/MediaDive medium {base}, {how}; the "
                 f"volume is printed in that medium's own recipe.", "")

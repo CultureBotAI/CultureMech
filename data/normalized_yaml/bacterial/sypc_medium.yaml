@@ -180,14 +180,14 @@ curation_history:
     4 -> "Wolfe''s mineral elixir" @ 1 ml/l. Each moved component matched the MediaDive
     stock by name AND value; bulk ingredients sharing a name were left in place (#150).'
   changes: Nested 4 ingredient(s) under 1 solution(s); ingredients 18 -> 14
-- timestamp: '2026-08-15T05:35:02.134948+00:00'
+- timestamp: '2026-08-15T05:57:33.814589+00:00'
   curator: promote_komodo_volume_candidates.py
-  action: ASSERTED_VOLUME_FROM_COMPOSITION_MATCH
+  action: SHARPENED_VOLUME_COUNTEREVIDENCE
   notes: This record reproduces MediaDive medium 1188 ('SPIROCHAETA CELLOBIOSIPHILA
-    MEDIUM') across 18 shared compounds at 100% identical values. That identifies
-    the medium despite the name difference, so its stated addition volume is now asserted
-    rather than proposed (#262).
-  changes: 1 volume(s) promoted to concentration; 0 candidate(s) re-evidenced
+    MEDIUM') across 18 shared compounds at 100% identical values, 4 of them from that
+    medium's main solution. That is short of the exact agreement required to assert
+    the volume, so it stays a candidate (#262).
+  changes: 0 volume(s) promoted to concentration; 1 candidate(s) re-evidenced
 variant_children:
 - path: data/normalized_yaml/bacterial/spirochaeta_cellobiosiphila_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -238,10 +238,19 @@ solutions:
     mediaingredientmech_chebi_term:
       id: CHEBI:32312
       label: ZnSO4 x 7 H2O
-  preparation_notes: Stock prepared in 1000 ml. Composition and volume from medium
-    1188's own MediaDive recipe, identified by this record reproducing that medium's
-    composition exactly (18/18 shared compounds at identical values) despite the upstream
-    rename to 'SPIROCHAETA CELLOBIOSIPHILA MEDIUM' (#262).
-  concentration:
-    value: '1'
+  concentration_candidates:
+  - value: '1'
     unit: ML_PER_L
+    basis: CROSS_MEDIUM_INFERENCE
+    support: KOMODO 1188 resolves to DSMZ/MediaDive medium 1188 both structurally
+      and via the KOMODO->DSMZ export; volume read from that medium's recipe.
+    counterevidence: 'Not confirmed as medium 1188: 100% of the 18 shared compounds
+      carry the same value (4 shared with that medium''s main solution). A record
+      that IS the medium scores 100%, with at least 5 main-solution compounds. A stock''s
+      addition volume varies by citing medium: MediaDive medium 142 adds ''Trace element
+      solution (Vishniac & Santer)'' at 0.2 ml and medium 69 adds the same stock at
+      5 ml.'
+    proposed_by: apply_cocktail_nesting.py
+  preparation_notes: 'Stock prepared in 1000 ml. Composition and addition volume NOT
+    asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates
+    (#150).'

@@ -375,6 +375,14 @@ curation_history:
     across 36 shared compounds at 89% identical values. That is short of the exact
     agreement required to assert the volume, so it stays a candidate (#262).
   changes: 0 volume(s) promoted to concentration; 3 candidate(s) re-evidenced
+- timestamp: '2026-08-15T05:57:24.147240+00:00'
+  curator: promote_komodo_volume_candidates.py
+  action: SHARPENED_VOLUME_COUNTEREVIDENCE
+  notes: This record reproduces MediaDive medium 708 ('DESULFORHABDUS AMNIGENA MEDIUM')
+    across 36 shared compounds at 89% identical values, 11 of them from that medium's
+    main solution. That is short of the exact agreement required to assert the volume,
+    so it stays a candidate (#262).
+  changes: 0 volume(s) promoted to concentration; 3 candidate(s) re-evidenced
 parent_media:
   path: data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -403,11 +411,12 @@ solutions:
     basis: CROSS_MEDIUM_INFERENCE
     support: KOMODO 708 resolves to DSMZ/MediaDive medium 708 both structurally and
       via the KOMODO->DSMZ export; volume read from that medium's recipe.
-    counterevidence: 'Not confirmed as medium 708: the compositions differ, with only
-      89% of the 36 shared compounds carrying the same value (a record that IS the
-      medium scores 100%). A stock''s addition volume varies by citing medium: MediaDive
-      medium 142 adds ''Trace element solution (Vishniac & Santer)'' at 0.2 ml and
-      medium 69 adds the same stock at 5 ml.'
+    counterevidence: 'Not confirmed as medium 708: 89% of the 36 shared compounds
+      carry the same value (11 shared with that medium''s main solution). A record
+      that IS the medium scores 100%, with at least 5 main-solution compounds. A stock''s
+      addition volume varies by citing medium: MediaDive medium 142 adds ''Trace element
+      solution (Vishniac & Santer)'' at 0.2 ml and medium 69 adds the same stock at
+      5 ml.'
     proposed_by: apply_cocktail_nesting.py
   preparation_notes: 'Stock prepared in 1000 ml. Composition and addition volume NOT
     asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates
@@ -474,11 +483,12 @@ solutions:
     basis: CROSS_MEDIUM_INFERENCE
     support: KOMODO 708 resolves to DSMZ/MediaDive medium 708 both structurally and
       via the KOMODO->DSMZ export; volume read from that medium's recipe.
-    counterevidence: 'Not confirmed as medium 708: the compositions differ, with only
-      89% of the 36 shared compounds carrying the same value (a record that IS the
-      medium scores 100%). A stock''s addition volume varies by citing medium: MediaDive
-      medium 142 adds ''Trace element solution (Vishniac & Santer)'' at 0.2 ml and
-      medium 69 adds the same stock at 5 ml.'
+    counterevidence: 'Not confirmed as medium 708: 89% of the 36 shared compounds
+      carry the same value (11 shared with that medium''s main solution). A record
+      that IS the medium scores 100%, with at least 5 main-solution compounds. A stock''s
+      addition volume varies by citing medium: MediaDive medium 142 adds ''Trace element
+      solution (Vishniac & Santer)'' at 0.2 ml and medium 69 adds the same stock at
+      5 ml.'
     proposed_by: apply_cocktail_nesting.py
   preparation_notes: 'Stock prepared in 1000 ml. Composition and addition volume NOT
     asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates
@@ -535,11 +545,12 @@ solutions:
     basis: CROSS_MEDIUM_INFERENCE
     support: KOMODO 708 resolves to DSMZ/MediaDive medium 708 both structurally and
       via the KOMODO->DSMZ export; volume read from that medium's recipe.
-    counterevidence: 'Not confirmed as medium 708: the compositions differ, with only
-      89% of the 36 shared compounds carrying the same value (a record that IS the
-      medium scores 100%). A stock''s addition volume varies by citing medium: MediaDive
-      medium 142 adds ''Trace element solution (Vishniac & Santer)'' at 0.2 ml and
-      medium 69 adds the same stock at 5 ml.'
+    counterevidence: 'Not confirmed as medium 708: 89% of the 36 shared compounds
+      carry the same value (11 shared with that medium''s main solution). A record
+      that IS the medium scores 100%, with at least 5 main-solution compounds. A stock''s
+      addition volume varies by citing medium: MediaDive medium 142 adds ''Trace element
+      solution (Vishniac & Santer)'' at 0.2 ml and medium 69 adds the same stock at
+      5 ml.'
     proposed_by: apply_cocktail_nesting.py
   preparation_notes: 'Stock prepared in 1000 ml. Composition and addition volume NOT
     asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates

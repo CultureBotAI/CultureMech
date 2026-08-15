@@ -61,7 +61,7 @@ REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO / "scripts"))
 
 from fetch_komodo_base_volumes import (  # noqa: E402
-    MIN_SHARED_COMPOUNDS, SPREAD_NOTE, composition_agreement,
+    SPREAD_NOTE, composition_agreement, composition_confirms,
 )
 from fetch_mediadive_solution_volumes import fetch_medium  # noqa: E402
 from record_io import write_record  # noqa: E402
@@ -74,9 +74,9 @@ BARE_ID = re.compile(r"^\d+[a-z]?$")
 
 
 def promote_doc(doc: dict[str, Any], base: str, ratio: float, shared: int,
-                md_name: str) -> tuple[int, int]:
+                md_name: str, main: int = 0) -> tuple[int, int]:
     """Update this record in place. Returns (promoted, sharpened) solution counts."""
-    confirmed = ratio == 1.0 and shared >= MIN_SHARED_COMPOUNDS
+    confirmed = composition_confirms(ratio, shared, main)
     promoted = sharpened = 0
     for sol in doc.get("solutions") or []:
         if not isinstance(sol, dict):
@@ -98,15 +98,17 @@ def promote_doc(doc: dict[str, Any], base: str, ratio: float, shared: int,
                 r"addition volume NOT asserted.*",
                 f"volume from medium {base}'s own MediaDive recipe, identified by this "
                 f"record reproducing that medium's composition exactly ({shared}/{shared} "
-                f"shared compounds at identical values) despite the upstream rename to "
+                f"shared compounds at identical values, {main} of them from the main "
+                f"solution) despite the upstream rename to "
                 f"{md_name!r} (#262).",
                 str(sol.get("preparation_notes") or ""))
             promoted += 1
         else:
             cand["counterevidence"] = (
-                f"Not confirmed as medium {base}: the compositions differ, with only "
-                f"{ratio:.0%} of the {shared} shared compounds carrying the same value "
-                f"(a record that IS the medium scores 100%). " + SPREAD_NOTE)
+                f"Not confirmed as medium {base}: {ratio:.0%} of the {shared} shared "
+                f"compounds carry the same value ({main} shared with that medium's main "
+                f"solution). A record that IS the medium scores 100%, with at least 5 "
+                f"main-solution compounds. " + SPREAD_NOTE)
             sharpened += 1
     return promoted, sharpened
 
@@ -149,9 +151,9 @@ def main(argv: list[str] | None = None) -> int:
         medium = cache[base]
         if not medium:
             continue
-        ratio, shared = composition_agreement(doc, medium)
+        ratio, shared, main = composition_agreement(doc, medium)
         md_name = str((medium.get("medium") or {}).get("name") or "")
-        p, s = promote_doc(doc, base, ratio, shared, md_name)
+        p, s = promote_doc(doc, base, ratio, shared, md_name, main)
         if not (p or s):
             continue
         changed += 1
@@ -159,7 +161,7 @@ def main(argv: list[str] | None = None) -> int:
         sharpened_recs += bool(s)
         verdict = "PROMOTE" if p else "sharpen"
         print(f"  {verdict} {rel[:44]:46s} medium {base:>5s} "
-              f"{ratio:5.0%} of {shared:2d} shared compounds")
+              f"{ratio:5.0%} of {shared:2d} shared ({main:2d} main-solution)")
         if args.apply:
             record_curation_event(
                 doc, curator="promote_komodo_volume_candidates.py",
@@ -167,7 +169,8 @@ def main(argv: list[str] | None = None) -> int:
                         else "SHARPENED_VOLUME_COUNTEREVIDENCE"),
                 notes=(f"This record reproduces MediaDive medium {base} "
                        f"({md_name!r}) across {shared} shared compounds at "
-                       f"{ratio:.0%} identical values."
+                       f"{ratio:.0%} identical values, {main} of them from that "
+                       f"medium's main solution."
                        + (f" That identifies the medium despite the name difference, so "
                           f"its stated addition volume is now asserted rather than "
                           f"proposed (#262)." if p else
