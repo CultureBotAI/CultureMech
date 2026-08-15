@@ -111,8 +111,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:75215
-    label: ''
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
 - preferred_term: H3BO3
   concentration:
     value: '0.5'
@@ -150,8 +150,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:53470
-    label: ''
+    id: CHEBI:91244
+    label: cobalt(2+) sulfate heptahydrate
 - preferred_term: MnSO4・xH2O
   concentration:
     value: '2.2'

@@ -60,8 +60,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
   term:
-    id: CHEBI:75215
-    label: ''
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
 - preferred_term: Na2S・9H2O
   concentration:
     value: '0.5'

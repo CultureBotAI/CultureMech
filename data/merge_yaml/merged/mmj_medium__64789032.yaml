@@ -182,14 +182,14 @@ ingredients:
     label: manganese(II) sulfate
 - preferred_term: CoSO4 x 7 H2O
   term:
-    id: CHEBI:53470
-    label: CoSO4 x 7 H2O
+    id: CHEBI:91244
+    label: cobalt(2+) sulfate heptahydrate
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:53470
-    label: CoSO4 x 7 H2O
+    id: CHEBI:91244
+    label: cobalt(2+) sulfate heptahydrate
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312

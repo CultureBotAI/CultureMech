@@ -139,8 +139,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component [Merged 2 duplicates: 1.0, 0.3]'
   term:
-    id: CHEBI:48843
-    label: ''
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
 media_term:
   preferred_term: TOGO Medium M933
   term:

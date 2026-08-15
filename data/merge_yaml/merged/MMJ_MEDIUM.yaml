@@ -130,8 +130,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:48843
-    label: ''
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
 - preferred_term: NaNO3
   concentration:
     value: '0.8'

@@ -70,8 +70,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
   term:
-    id: CHEBI:17632
-    label: nitrate
+    id: CHEBI:63043
+    label: potassium nitrate
   mediaingredientmech_term:
     id: MediaIngredientMech:000170
     label: KNO3

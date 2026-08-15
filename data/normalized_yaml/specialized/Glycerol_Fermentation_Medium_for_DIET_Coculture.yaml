@@ -91,10 +91,10 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:35235
+    id: CHEBI:17561
     label: L-cysteine
   term:
-    id: CHEBI:35235
+    id: CHEBI:17561
     label: L-cysteine
 ph_value: 6.9
 temperature_value: 35.0

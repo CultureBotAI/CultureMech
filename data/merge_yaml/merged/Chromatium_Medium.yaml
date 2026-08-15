@@ -56,11 +56,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: KCl
   concentration:
     value: '1'
@@ -123,11 +123,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:75832
-    label: iron(2+) sulfate (anhydrous)
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:75832
-    label: iron(2+) sulfate (anhydrous)
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: MnCl2 x 4H2O
   concentration:
     value: '7.02'

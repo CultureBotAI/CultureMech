@@ -17,8 +17,8 @@ ingredients:
     value: '10'
     unit: G_PER_L
   term:
-    id: FOODON:03420180
-    label: Casein
+    id: MICRO:0000182
+    label: tryptone
   notes: 'Mapping: curated_dict (confidence: 0.98)'
 - preferred_term: Yeast Extract
   concentration:

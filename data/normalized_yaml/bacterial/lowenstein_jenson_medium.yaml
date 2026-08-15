@@ -48,11 +48,11 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'
   term:
-    id: CHEBI:32142
-    label: sodium citrate dihydrate
+    id: CHEBI:53258
+    label: sodium citrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:32142
-    label: sodium citrate dihydrate
+    id: CHEBI:53258
+    label: sodium citrate
 - preferred_term: 'Whole Egg '
   concentration:
     value: '1000'

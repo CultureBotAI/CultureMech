@@ -23,14 +23,14 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Dextrose
   term:
-    id: CHEBI:4167
-    label: Dextrose
+    id: CHEBI:17634
+    label: D-glucose
   concentration:
     value: '2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:4167
-    label: Dextrose
+    id: CHEBI:17634
+    label: D-glucose
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139

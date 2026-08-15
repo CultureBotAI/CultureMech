@@ -28,8 +28,8 @@ ingredients:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: NaCl
   concentration:
     value: '20'
@@ -149,11 +149,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
   term:
-    id: CHEBI:48843
-    label: disodium selenite
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:48843
-    label: disodium selenite
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
 - preferred_term: Na2WO4·2H2O
   concentration:
     value: '4'

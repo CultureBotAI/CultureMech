@@ -73,6 +73,63 @@ CORRECTIONS: dict[tuple[str, str], tuple[str, str]] = {
     ("CHEBI:194474", "4-Aminobenzoic acid"): ("CHEBI:30753", "4-aminobenzoic acid"),
     ("CHEBI:194474", "p-Amino Benzoic Acid"): ("CHEBI:30753", "4-aminobenzoic acid"),
     ("CHEBI:194474", "p-amino benzoic acid"): ("CHEBI:30753", "4-aminobenzoic acid"),
+    # --- #258: one ingredient name, several ids ---------------------------------
+    # 63 names in the corpus are grounded more than one way (13,657 rows). The ones
+    # below are those where the NAME ITSELF settles it: it spells out a hydrate the id
+    # does not have, or names a salt where the id is the bare ion. Names that do NOT
+    # specify a hydrate keep the anhydrous id -- `Na2MoO4` and `Sodium molybdate` stay
+    # on CHEBI:75215, only the `2 H2O` spellings move -- so this is keyed on the exact
+    # string, never on the id alone.
+    # Deliberately excluded: `Vitamin B12` (cyanocobalamin vs the vitamer class, the
+    # judgement call #256 defers), `Maltose` (generic vs alpha anomer), and the CaCl2 /
+    # MgSO4 / MgCl2 rows naming hydrates that do not exist (`MgCl2 x 7 H2O`).
+
+    # sodium molybdate DIhydrate
+    ("CHEBI:75215", "Na2MoO4\u00b72H2O"): ("CHEBI:75213", "sodium molybdate dihydrate"),
+    ("CHEBI:75215", "Na2MoO4 x 2 H2O"): ("CHEBI:75213", "sodium molybdate dihydrate"),
+    ("CHEBI:75215", "Na2MoO4\u30fb2H2O"): ("CHEBI:75213", "sodium molybdate dihydrate"),
+    ("CHEBI:75215", "Na2MoO4 . 2H2O"): ("CHEBI:75213", "sodium molybdate dihydrate"),
+    # cobalt(2+) sulfate HEPTAhydrate -- here the MAJORITY was wrong: 1,161 rows named
+    # `CoSO4 x 7 H2O` sat on the anhydrous id and only 5 on the heptahydrate.
+    ("CHEBI:53470", "CoSO4 x 7 H2O"): ("CHEBI:91244", "cobalt(2+) sulfate heptahydrate"),
+    ("CHEBI:53470", "CoSO4\u00b77H2O"): ("CHEBI:91244", "cobalt(2+) sulfate heptahydrate"),
+    ("CHEBI:53470", "CoSO4\u30fb7H2O"): ("CHEBI:91244", "cobalt(2+) sulfate heptahydrate"),
+    ("CHEBI:53470", "CoSO4 . 7H2O"): ("CHEBI:91244", "cobalt(2+) sulfate heptahydrate"),
+    # magnesium sulfate HEPTAhydrate
+    ("CHEBI:32599", "MgSO4\u00b77H2O"): ("CHEBI:31795", "magnesium sulfate heptahydrate"),
+    # disodium selenite PENTAhydrate
+    ("CHEBI:48843", "Na2SeO3 x 5 H2O"): ("CHEBI:131361", "disodium selenite pentahydrate"),
+    ("CHEBI:48843", "Na2SeO3\u30fb5H2O"): ("CHEBI:131361", "disodium selenite pentahydrate"),
+    ("CHEBI:48843", "Na2SeO3\u00b75H2O"): ("CHEBI:131361", "disodium selenite pentahydrate"),
+    ("CHEBI:48843", "Na2SeO3.5H2O"): ("CHEBI:131361", "disodium selenite pentahydrate"),
+    # iron(2+) sulfate HEPTAhydrate
+    ("CHEBI:75832", "FeSO4 x 7H2O"): ("CHEBI:75836", "iron(2+) sulfate heptahydrate"),
+    ("CHEBI:75832", "Iron (II) sulfate heptahydrate"): (
+        "CHEBI:75836", "iron(2+) sulfate heptahydrate"),
+    # magnesium dichloride HEXAhydrate
+    ("CHEBI:6636", "MgCl2 x 6 H2O"): ("CHEBI:86345", "magnesium dichloride hexahydrate"),
+    ("CHEBI:6636", "MgCl2x 6 H2O"): ("CHEBI:86345", "magnesium dichloride hexahydrate"),
+    ("CHEBI:6636", "MgCl2 x 6H2O"): ("CHEBI:86345", "magnesium dichloride hexahydrate"),
+    # `Starch` grounded to gellan gum -- a different polysaccharide entirely. The rows
+    # actually named `Gelrite` / `Gellan Gum` stay on CHEBI:85248, correctly.
+    ("CHEBI:85248", "Starch"): ("CHEBI:28017", "starch"),
+    # KNO3 is the salt, CHEBI:17632 is the bare nitrate ION.
+    ("CHEBI:17632", "KNO3"): ("CHEBI:63043", "potassium nitrate"),
+    # zwitterion ids for names that state the neutral compound
+    ("CHEBI:57305", "Glycine"): ("CHEBI:15428", "glycine"),
+    ("CHEBI:35235", "L-Cysteine"): ("CHEBI:17561", "L-cysteine"),
+    # the tri-anion vs the neutral salt
+    ("CHEBI:4991", "Fe(III) citrate"): ("CHEBI:144421", "iron(III) citrate"),
+    # Dextrose IS D-glucose, by definition. It was split three ways.
+    ("CHEBI:17234", "Dextrose"): ("CHEBI:17634", "D-glucose"),
+    ("CHEBI:4167", "Dextrose"): ("CHEBI:17634", "D-glucose"),
+    # `Sodium citrate` with no hydrate marker, sitting on the dihydrate. The rows that
+    # DO say dihydrate stay on CHEBI:32142.
+    ("CHEBI:32142", "Sodium citrate"): ("CHEBI:53258", "sodium citrate"),
+    ("CHEBI:32142", "Sodium Citrate"): ("CHEBI:53258", "sodium citrate"),
+    ("CHEBI:32142", "sodium citrate"): ("CHEBI:53258", "sodium citrate"),
+    # one stray row against the 470-row majority
+    ("FOODON:03420180", "Pancreatic digest of casein"): ("MICRO:0000182", "tryptone"),
 }
 
 

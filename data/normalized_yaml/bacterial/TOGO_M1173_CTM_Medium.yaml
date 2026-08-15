@@ -77,8 +77,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:75215
-    label: ''
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
 - preferred_term: H3BO3
   concentration:
     value: '2.86'
@@ -209,8 +209,8 @@ ingredients:
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:57305
-    label: glycine zwitterion
+    id: CHEBI:15428
+    label: glycine
   mediaingredientmech_term:
     id: MediaIngredientMech:000244
     label: Glycine

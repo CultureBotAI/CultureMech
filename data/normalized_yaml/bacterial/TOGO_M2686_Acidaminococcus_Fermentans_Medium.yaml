@@ -90,8 +90,8 @@ ingredients:
   notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
     Organic compound'
   term:
-    id: CHEBI:57305
-    label: glycine zwitterion
+    id: CHEBI:15428
+    label: glycine
   mediaingredientmech_term:
     id: MediaIngredientMech:000244
     label: Glycine

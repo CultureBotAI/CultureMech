@@ -305,6 +305,11 @@ apply-cocktail-nesting *args="":
 fix-wrong-groundings *args="":
     uv run --extra dev python scripts/fix_wrong_compound_groundings.py {{args}}
 
+# Ingredient names the corpus grounds more than one way (#258). Read-only.
+[group('QC')]
+audit-grounding-consistency *args="":
+    uv run --extra dev python scripts/audit_grounding_consistency.py {{args}}
+
 [group('QC')]
 audit-selective-agent-mismatch *args="":
     uv run --extra dev python scripts/audit_selective_agent_mismatch.py {{args}}
