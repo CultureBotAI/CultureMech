@@ -113,11 +113,11 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Simple component, Organic compound, Defined component'
   term:
-    id: CHEBI:17561
-    label: L-cysteine
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:17561
-    label: L-cysteine
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:

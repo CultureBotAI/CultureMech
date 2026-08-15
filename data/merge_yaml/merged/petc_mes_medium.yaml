@@ -146,8 +146,8 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
-    id: CHEBI:17561
-    label: ''
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
 - preferred_term: NaMoO4·2H2O
   concentration:
     value: '0.02'
