@@ -103,6 +103,34 @@ def blocked_records(volumes: dict[str, Any]) -> list[tuple[str, list]]:
     return out
 
 
+# Below this many observations, one distinct volume says nothing about the stock — it
+# says the sample was small. Reporting `invariant: yes` at n=2 is how the Vishniac row
+# came to claim 5 ml across the board while MediaDive medium 142 uses 0.2 ml (#264).
+MIN_SAMPLE_FOR_INVARIANCE = 5
+
+
+def _range(dist) -> str:
+    """The observed spread, so a single number is never mistaken for the whole story."""
+    vals = sorted(float(v) for v in dist)
+    if not vals:
+        return ""
+    lo, hi = vals[0], vals[-1]
+    return f"{lo:g}ml" if lo == hi else f"{lo:g}-{hi:g}ml"
+
+
+def _invariance(dist, total: int) -> str:
+    """yes / no / insufficient-sample.
+
+    `no` is a finding. `yes` is a finding only when the sample can support it. One
+    distinct value over too few observations is neither, and calling it `yes` reads as
+    licence to generalise a volume across media — exactly the shortcut PR #251
+    established does not hold.
+    """
+    if len(dist) > 1:
+        return "no"
+    return "yes" if total >= MIN_SAMPLE_FOR_INVARIANCE else "insufficient-sample"
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -146,7 +174,8 @@ def main(argv: list[str] | None = None) -> int:
             "volume_distribution": "; ".join(f"{v}ml x{c}" for v, c in dist.most_common()),
             "modal_volume_ml": top_vol,
             "modal_share": f"{top_n / total * 100:.0f}%",
-            "volume_is_invariant": "yes" if len(dist) == 1 else "no",
+            "volume_range_ml": _range(dist),
+            "volume_is_invariant": _invariance(dist, total),
         })
 
     rows.sort(key=lambda r: (-int(r["matched_components"]), r["file_path"]))
@@ -162,12 +191,13 @@ def main(argv: list[str] | None = None) -> int:
     print(f"Stock identified by exact name+value match (>={MIN_COMPONENTS} components): "
           f"{len(rows)}\n")
     by_stock = Counter(r["identified_stock"] for r in rows)
-    print(f"  {'stock':42s} {'records':>7s} {'obs n':>6s} {'modal':>8s} {'invariant':>10s}")
+    print(f"  {'stock':42s} {'records':>7s} {'obs n':>6s} {'modal':>8s} "
+          f"{'range':>12s} {'invariant':>20s}")
     for name, n in by_stock.most_common(10):
         ex = next(r for r in rows if r["identified_stock"] == name)
         print(f"  {name[:40]:42s} {n:7d} {ex['observed_n']:>6s} "
               f"{ex['modal_volume_ml'] + 'ml ' + ex['modal_share']:>8s} "
-              f"{ex['volume_is_invariant']:>10s}")
+              f"{ex['volume_range_ml']:>12s} {ex['volume_is_invariant']:>20s}")
 
     print("\nThe volume is NOT filled in. The one stock with a genuinely invariant")
     print("volume across a large sample (SL-10, n=36) matches none of these records —")
