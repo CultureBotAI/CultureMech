@@ -185,6 +185,14 @@ curation_history:
     component matched the MediaDive stock by name AND value; bulk ingredients sharing
     a name were left in place (#150).'
   changes: Nested 5 ingredient(s) under 1 solution(s); ingredients 17 -> 12
+- timestamp: '2026-08-15T05:35:06.360869+00:00'
+  curator: promote_komodo_volume_candidates.py
+  action: ASSERTED_VOLUME_FROM_COMPOSITION_MATCH
+  notes: This record reproduces MediaDive medium 69 ('STARKEYA NOVELLA MEDIUM') across
+    16 shared compounds at 100% identical values. That identifies the medium despite
+    the name difference, so its stated addition volume is now asserted rather than
+    proposed (#262).
+  changes: 1 volume(s) promoted to concentration; 0 candidate(s) re-evidenced
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: THIOBACILLUS NOVELLUS
@@ -241,18 +249,10 @@ solutions:
     mediaingredientmech_chebi_term:
       id: CHEBI:35696
       label: CoCl2 x 6 H2O
-  concentration_candidates:
-  - value: '5'
+  preparation_notes: Stock prepared in 1000 ml. Composition and volume from medium
+    69's own MediaDive recipe, identified by this record reproducing that medium's
+    composition exactly (16/16 shared compounds at identical values) despite the upstream
+    rename to 'STARKEYA NOVELLA MEDIUM' (#262).
+  concentration:
+    value: '5'
     unit: ML_PER_L
-    basis: CROSS_MEDIUM_INFERENCE
-    support: KOMODO 69 resolves to DSMZ/MediaDive medium 69 both structurally and
-      via the KOMODO->DSMZ export; volume read from that medium's recipe.
-    counterevidence: 'The fetched medium is named ''STARKEYA NOVELLA MEDIUM'' but
-      this record is ''THIOBACILLUS NOVELLUS medium''; the identification rests on
-      the medium number alone. A stock''s addition volume varies by citing medium:
-      MediaDive medium 142 adds ''Trace element solution (Vishniac & Santer)'' at
-      0.2 ml and medium 69 adds the same stock at 5 ml.'
-    proposed_by: apply_cocktail_nesting.py
-  preparation_notes: 'Stock prepared in 1000 ml. Composition and addition volume NOT
-    asserted: proposed as 5 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates
-    (#150).'

@@ -281,6 +281,13 @@ curation_history:
     @ 1 ml/l. Each moved component matched the MediaDive stock by name AND value;
     bulk ingredients sharing a name were left in place (#150).'
   changes: Nested 5 ingredient(s) under 2 solution(s); ingredients 28 -> 23
+- timestamp: '2026-08-15T05:35:00.311671+00:00'
+  curator: promote_komodo_volume_candidates.py
+  action: SHARPENED_VOLUME_COUNTEREVIDENCE
+  notes: This record reproduces MediaDive medium 347 ('SYNTROPHOMONAS SAPOVORANS MEDIUM')
+    across 28 shared compounds at 96% identical values. That is short of the exact
+    agreement required to assert the volume, so it stays a candidate (#262).
+  changes: 0 volume(s) promoted to concentration; 2 candidate(s) re-evidenced
 ph_value: 7.2
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_347a_SYNTROPHOMONAS_ZEHNDERI_medium.yaml
@@ -310,11 +317,11 @@ solutions:
     basis: CROSS_MEDIUM_INFERENCE
     support: KOMODO 347 resolves to DSMZ/MediaDive medium 347 both structurally and
       via the KOMODO->DSMZ export; volume read from that medium's recipe.
-    counterevidence: 'The fetched medium is named ''SYNTROPHOMONAS SAPOVORANS MEDIUM''
-      but this record is ''SYNTROPHOMONAS BRYANTII medium''; the identification rests
-      on the medium number alone. A stock''s addition volume varies by citing medium:
-      MediaDive medium 142 adds ''Trace element solution (Vishniac & Santer)'' at
-      0.2 ml and medium 69 adds the same stock at 5 ml.'
+    counterevidence: 'Not confirmed as medium 347: the compositions differ, with only
+      96% of the 28 shared compounds carrying the same value (a record that IS the
+      medium scores 100%). A stock''s addition volume varies by citing medium: MediaDive
+      medium 142 adds ''Trace element solution (Vishniac & Santer)'' at 0.2 ml and
+      medium 69 adds the same stock at 5 ml.'
     proposed_by: apply_cocktail_nesting.py
   preparation_notes: 'Stock prepared in 1000 ml. Composition and addition volume NOT
     asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates
@@ -367,11 +374,11 @@ solutions:
     basis: CROSS_MEDIUM_INFERENCE
     support: KOMODO 347 resolves to DSMZ/MediaDive medium 347 both structurally and
       via the KOMODO->DSMZ export; volume read from that medium's recipe.
-    counterevidence: 'The fetched medium is named ''SYNTROPHOMONAS SAPOVORANS MEDIUM''
-      but this record is ''SYNTROPHOMONAS BRYANTII medium''; the identification rests
-      on the medium number alone. A stock''s addition volume varies by citing medium:
-      MediaDive medium 142 adds ''Trace element solution (Vishniac & Santer)'' at
-      0.2 ml and medium 69 adds the same stock at 5 ml.'
+    counterevidence: 'Not confirmed as medium 347: the compositions differ, with only
+      96% of the 28 shared compounds carrying the same value (a record that IS the
+      medium scores 100%). A stock''s addition volume varies by citing medium: MediaDive
+      medium 142 adds ''Trace element solution (Vishniac & Santer)'' at 0.2 ml and
+      medium 69 adds the same stock at 5 ml.'
     proposed_by: apply_cocktail_nesting.py
   preparation_notes: 'Stock prepared in 1000 ml. Composition and addition volume NOT
     asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates

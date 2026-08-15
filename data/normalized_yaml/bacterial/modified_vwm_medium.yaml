@@ -292,6 +292,13 @@ curation_history:
     @ 1 ml/l. Each moved component matched the MediaDive stock by name AND value;
     bulk ingredients sharing a name were left in place (#150).'
   changes: Nested 5 ingredient(s) under 2 solution(s); ingredients 29 -> 24
+- timestamp: '2026-08-15T05:34:57.724298+00:00'
+  curator: promote_komodo_volume_candidates.py
+  action: SHARPENED_VOLUME_COUNTEREVIDENCE
+  notes: This record reproduces MediaDive medium 503a ('SPOROMUSA TMAO3 MEDIUM') across
+    27 shared compounds at 70% identical values. That is short of the exact agreement
+    required to assert the volume, so it stays a candidate (#262).
+  changes: 0 volume(s) promoted to concentration; 2 candidate(s) re-evidenced
 solutions:
 - preferred_term: Trace element solution SL-10
   composition:
@@ -311,11 +318,11 @@ solutions:
     basis: CROSS_MEDIUM_INFERENCE
     support: KOMODO 503a resolves to DSMZ/MediaDive medium 503a both structurally
       and via the KOMODO->DSMZ export; volume read from that medium's recipe.
-    counterevidence: 'The fetched medium is named ''SPOROMUSA TMAO3 MEDIUM'' but this
-      record is ''MODIFIED VWM MEDIUM''; the identification rests on the medium number
-      alone. A stock''s addition volume varies by citing medium: MediaDive medium
-      142 adds ''Trace element solution (Vishniac & Santer)'' at 0.2 ml and medium
-      69 adds the same stock at 5 ml.'
+    counterevidence: 'Not confirmed as medium 503a: the compositions differ, with
+      only 70% of the 27 shared compounds carrying the same value (a record that IS
+      the medium scores 100%). A stock''s addition volume varies by citing medium:
+      MediaDive medium 142 adds ''Trace element solution (Vishniac & Santer)'' at
+      0.2 ml and medium 69 adds the same stock at 5 ml.'
     proposed_by: apply_cocktail_nesting.py
   preparation_notes: 'Stock prepared in 1000 ml. Composition and addition volume NOT
     asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates
@@ -368,11 +375,11 @@ solutions:
     basis: CROSS_MEDIUM_INFERENCE
     support: KOMODO 503a resolves to DSMZ/MediaDive medium 503a both structurally
       and via the KOMODO->DSMZ export; volume read from that medium's recipe.
-    counterevidence: 'The fetched medium is named ''SPOROMUSA TMAO3 MEDIUM'' but this
-      record is ''MODIFIED VWM MEDIUM''; the identification rests on the medium number
-      alone. A stock''s addition volume varies by citing medium: MediaDive medium
-      142 adds ''Trace element solution (Vishniac & Santer)'' at 0.2 ml and medium
-      69 adds the same stock at 5 ml.'
+    counterevidence: 'Not confirmed as medium 503a: the compositions differ, with
+      only 70% of the 27 shared compounds carrying the same value (a record that IS
+      the medium scores 100%). A stock''s addition volume varies by citing medium:
+      MediaDive medium 142 adds ''Trace element solution (Vishniac & Santer)'' at
+      0.2 ml and medium 69 adds the same stock at 5 ml.'
     proposed_by: apply_cocktail_nesting.py
   preparation_notes: 'Stock prepared in 1000 ml. Composition and addition volume NOT
     asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates
