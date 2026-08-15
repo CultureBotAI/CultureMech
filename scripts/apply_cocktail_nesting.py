@@ -42,6 +42,7 @@ Usage::
 from __future__ import annotations
 
 import argparse
+import copy
 import json
 import re
 import sys
@@ -59,6 +60,7 @@ from culturemech.curate.curation_event import record_curation_event  # noqa: E40
 
 NORMALIZED = REPO / "data" / "normalized_yaml"
 VOLUMES = REPO / "data" / "import_tracking" / "reports" / "mediadive_solution_volumes.json"
+KOMODO_VOLUMES = REPO / "data" / "import_tracking" / "reports" / "komodo_base_volumes.json"
 # Stocks whose composition AND volume were read from a primary source, for records
 # MediaDive cannot serve. Tracked curated research, not a regenerable cache.
 RESEARCHED = REPO / "data" / "import_tracking" / "researched_stock_volumes.json"
@@ -300,7 +302,12 @@ def apply_plan(doc: dict[str, Any], plan: dict[str, Any]) -> None:
             for sol, value in parts:
                 if sol != solution_name:
                     continue
-                src = dict(ingredients[by_name_idx[name]])
+                # deepcopy, not dict(): a shallow copy shares the nested `term` and
+                # `mediaingredientmech_chebi_term` dicts with the ingredient this row
+                # was split from, and both end up in DIFFERENT solutions. yaml.dump
+                # then emits them as anchors/aliases (&id001 / *id001), so the two
+                # solutions alias one object — mutating one silently changes the other.
+                src = copy.deepcopy(ingredients[by_name_idx[name]])
                 src["concentration"] = {"value": str(value), "unit": "G_PER_L"}
                 out.append(src)
         return out
@@ -411,13 +418,37 @@ def load_researched_stocks() -> list[dict[str, Any]]:
     return [s for s in data.get("stocks", []) if s.get("addition_volume_ml") is not None]
 
 
-def build_plans(split_summed: bool = False, use_researched: bool = False) -> tuple[list[dict[str, Any]], list[tuple[str, list[str]]]]:
+def load_komodo_volumes() -> dict[str, list[dict[str, Any]]]:
+    """Addition volumes recovered for KOMODO-sourced records via their base medium.
+
+    Written by `fetch_komodo_base_volumes.py`, which resolves a `komodo.medium:` key to
+    a DSMZ medium number only when the structural derivation and the tracked
+    KOMODO->DSMZ export agree, and marks each entry READ_FROM_THIS_MEDIUM or
+    CROSS_MEDIUM_INFERENCE. `apply_plan` already routes those two differently, so a
+    number inferred from a base medium lands in `concentration_candidates` and never in
+    `concentration`.
+    """
+    if not KOMODO_VOLUMES.is_file():
+        print(f"Run `just fetch-komodo-volumes` first — {KOMODO_VOLUMES.name} is missing.",
+              file=sys.stderr)
+        return {}
+    try:
+        data = json.loads(KOMODO_VOLUMES.read_text())
+    except (json.JSONDecodeError, OSError):
+        return {}
+    return {rel: info.get("additions") or []
+            for rel, info in data.items() if info.get("additions")}
+
+
+def build_plans(split_summed: bool = False, use_researched: bool = False,
+                use_komodo: bool = False) -> tuple[list[dict[str, Any]], list[tuple[str, list[str]]]]:
     if not VOLUMES.is_file():
         print(f"Run `just fetch-mediadive-volumes` first — {VOLUMES.name} is missing.",
               file=sys.stderr)
         return [], []
     volumes = json.loads(VOLUMES.read_text())
     researched = load_researched_stocks() if use_researched else []
+    komodo = load_komodo_volumes() if use_komodo else {}
     rows = acp.audit(NORMALIZED)
     flagged_by_file: dict[str, set[str]] = {}
     for r in rows:
@@ -429,6 +460,11 @@ def build_plans(split_summed: bool = False, use_researched: bool = False) -> tup
     # which the researched stocks may cover.
     candidates: dict[str, list[dict[str, Any]]] = {
         rel: (info.get("additions") or []) for rel, info in volumes.items()}
+    # KOMODO-sourced records MediaDive could not be asked about directly, resolved
+    # through their base medium number. Never overrides a direct MediaDive answer.
+    for rel, adds in komodo.items():
+        if not candidates.get(rel):
+            candidates[rel] = adds
     if researched:
         import csv as _csv
         with PROPOSALS.open() as fh:
@@ -475,6 +511,12 @@ def main(argv: list[str] | None = None) -> int:
                          "whose volume was read from a primary source for media "
                          "MediaDive does not serve. The name+value match still gates "
                          "every move.")
+    ap.add_argument("--use-komodo", action="store_true",
+                    help="Also nest KOMODO-sourced records whose medium number was "
+                         "resolved to a MediaDive base medium by "
+                         "`just fetch-komodo-volumes`. Volumes read from a medium "
+                         "whose name agrees are asserted; everything else is written "
+                         "as a concentration_candidate, never as a concentration.")
     ap.add_argument("--split-summed", action="store_true",
                     help="Also repair rows the flattening SUMMED across two stocks, "
                          "restoring each stock's own value. Opt-in: it reconstructs a "
@@ -482,7 +524,7 @@ def main(argv: list[str] | None = None) -> int:
                          "accepted only on an exact sum match.")
     args = ap.parse_args(argv)
 
-    plans, skipped = build_plans(args.split_summed, args.use_researched)
+    plans, skipped = build_plans(args.split_summed, args.use_researched, args.use_komodo)
     if args.limit:
         plans = plans[:args.limit]
 

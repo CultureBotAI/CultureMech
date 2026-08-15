@@ -286,6 +286,11 @@ list-cocktail-research-targets *args="":
 audit-mediadive-ids *args="":
     uv run --extra dev python scripts/audit_mediadive_ids.py {{args}}
 
+# Resolve KOMODO-sourced cocktails to their base MediaDive medium (#150). Read-only.
+[group('Curation')]
+fetch-komodo-volumes *args="":
+    uv run --extra dev python scripts/fetch_komodo_base_volumes.py {{args}}
+
 [group('Curation')]
 apply-cocktail-nesting *args="":
     uv run --extra dev python scripts/apply_cocktail_nesting.py {{args}}
@@ -302,7 +307,7 @@ audit-selective-agent-mismatch *args="":
 [group('QC')]
 audit-concentration-plausibility *args="":
     uv run --extra dev python scripts/audit_concentration_plausibility.py \
-        --max-allowed 10244 --max-cocktails 279 {{args}}
+        --max-allowed 9750 --max-cocktails 185 {{args}}
 
 # Merge locally-completed Edison runs (research/media/*-meta.yaml, gitignored)
 # into the tracked researched-media manifest. This is the only step that reads

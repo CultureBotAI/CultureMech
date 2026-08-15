@@ -133,16 +133,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:17883
     label: HCl
-- preferred_term: FeCl2 x 4 H2O
-  term:
-    id: CHEBI:86249
-    label: FeCl2 x 4 H2O
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86249
-    label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -263,17 +253,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:27470
     label: Folic acid
-- preferred_term: Pyridoxine hydrochloride
-  term:
-    id: CHEBI:30961
-    label: Pyridoxine hydrochloride
-  concentration:
-    value: '0.4'
-    unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 0.1, 0.3]'
-  mediaingredientmech_chebi_term:
-    id: CHEBI:30961
-    label: Pyridoxine hydrochloride
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -294,17 +273,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:17015
     label: Riboflavin
-- preferred_term: Nicotinic acid
-  term:
-    id: CHEBI:15940
-    label: Nicotinic acid
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 0.05, 0.2]'
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15940
-    label: Nicotinic acid
 - preferred_term: Calcium D-(+)-pantothenate
   concentration:
     value: '0.05'
@@ -312,28 +280,6 @@ ingredients:
   term:
     id: CHEBI:31345
     label: ''
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '0.101'
-    unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 0.001, 0.1]'
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17439
-    label: Vitamin B12
-- preferred_term: p-Aminobenzoic acid
-  term:
-    id: CHEBI:30753
-    label: p-Aminobenzoic acid
-  concentration:
-    value: '0.13'
-    unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 0.05, 0.08]'
-  mediaingredientmech_chebi_term:
-    id: CHEBI:30753
-    label: p-Aminobenzoic acid
 - preferred_term: (DL)-alpha-Lipoic acid
   term:
     id: CHEBI:16494
@@ -364,16 +310,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:31345
     label: Calcium pantothenate
-- preferred_term: Thiamine-HCl x 2 H2O
-  term:
-    id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
 applications:
 - Microbial cultivation
 curation_history:
@@ -421,6 +357,17 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 6 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-15T00:17:28.810242+00:00'
+  curator: apply_cocktail_nesting.py
+  action: NESTED_FLATTENED_COCKTAIL
+  notes: 'Moved 6 stock-strength component(s) out of ingredients into 3 solution(s):
+    1 -> ''Trace element solution SL-10'' @ 1 ml/l; 1 -> ''Seven vitamins solution''
+    @ 1 ml/l; 0 -> "Wolin''s vitamin solution (10x)" @ 1 ml/l. 4 component(s) were
+    SUMMED across stocks by the flattening and are restored to each stock''s own value,
+    verified by exact sum: nicotinic acid, p-aminobenzoic acid, pyridoxine hydrochloride,
+    vitamin b12. Each moved component matched the MediaDive stock by name AND value;
+    bulk ingredients sharing a name were left in place (#150).'
+  changes: Nested 6 ingredient(s) under 3 solution(s); ingredients 36 -> 30
 parent_media:
   path: data/normalized_yaml/bacterial/desulforhabdus_amnigena_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -430,3 +377,163 @@ variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
 - Same ingredient and concentration signature; review as possible duplicate source
   record.
+solutions:
+- preferred_term: Trace element solution SL-10
+  composition:
+  - preferred_term: FeCl2 x 4 H2O
+    term:
+      id: CHEBI:86249
+      label: FeCl2 x 4 H2O
+    concentration:
+      value: '1.5'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86249
+      label: FeCl2 x 4 H2O
+  concentration_candidates:
+  - value: '1'
+    unit: ML_PER_L
+    basis: CROSS_MEDIUM_INFERENCE
+    support: KOMODO 708 resolves to DSMZ/MediaDive medium 708 both structurally and
+      via the KOMODO->DSMZ export; volume read from that medium's recipe.
+    counterevidence: 'The fetched medium is named ''DESULFORHABDUS AMNIGENA MEDIUM''
+      but this record is ''DESULFORHABDUS AMNIGENUS MEDIUM''; the identification rests
+      on the medium number alone. A stock''s addition volume varies by citing medium:
+      MediaDive medium 142 adds ''Trace element solution (Vishniac & Santer)'' at
+      0.2 ml and medium 69 adds the same stock at 5 ml.'
+    proposed_by: apply_cocktail_nesting.py
+  preparation_notes: 'Stock prepared in 1000 ml. Composition and addition volume NOT
+    asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates
+    (#150).'
+- preferred_term: Seven vitamins solution
+  composition:
+  - preferred_term: Thiamine-HCl x 2 H2O
+    term:
+      id: CHEBI:132751
+      label: Thiamine-HCl x 2 H2O
+    concentration:
+      value: '0.2'
+      unit: G_PER_L
+    mediaingredientmech_chebi_term:
+      id: CHEBI:132751
+      label: Thiamine-HCl x 2 H2O
+  - preferred_term: Nicotinic acid
+    term:
+      id: CHEBI:15940
+      label: Nicotinic acid
+    concentration:
+      value: '0.2'
+      unit: G_PER_L
+    notes: ' [Merged 2 duplicates: 0.05, 0.2]'
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15940
+      label: Nicotinic acid
+  - preferred_term: p-Aminobenzoic acid
+    term:
+      id: CHEBI:30753
+      label: p-Aminobenzoic acid
+    concentration:
+      value: '0.08'
+      unit: G_PER_L
+    notes: ' [Merged 2 duplicates: 0.05, 0.08]'
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30753
+      label: p-Aminobenzoic acid
+  - preferred_term: Pyridoxine hydrochloride
+    term:
+      id: CHEBI:30961
+      label: Pyridoxine hydrochloride
+    concentration:
+      value: '0.3'
+      unit: G_PER_L
+    notes: ' [Merged 2 duplicates: 0.1, 0.3]'
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30961
+      label: Pyridoxine hydrochloride
+  - preferred_term: Vitamin B12
+    term:
+      id: CHEBI:17439
+      label: Vitamin B12
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    notes: ' [Merged 2 duplicates: 0.001, 0.1]'
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17439
+      label: Vitamin B12
+  concentration_candidates:
+  - value: '1'
+    unit: ML_PER_L
+    basis: CROSS_MEDIUM_INFERENCE
+    support: KOMODO 708 resolves to DSMZ/MediaDive medium 708 both structurally and
+      via the KOMODO->DSMZ export; volume read from that medium's recipe.
+    counterevidence: 'The fetched medium is named ''DESULFORHABDUS AMNIGENA MEDIUM''
+      but this record is ''DESULFORHABDUS AMNIGENUS MEDIUM''; the identification rests
+      on the medium number alone. A stock''s addition volume varies by citing medium:
+      MediaDive medium 142 adds ''Trace element solution (Vishniac & Santer)'' at
+      0.2 ml and medium 69 adds the same stock at 5 ml.'
+    proposed_by: apply_cocktail_nesting.py
+  preparation_notes: 'Stock prepared in 1000 ml. Composition and addition volume NOT
+    asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates
+    (#150).'
+- preferred_term: Wolin's vitamin solution (10x)
+  composition:
+  - preferred_term: Nicotinic acid
+    term:
+      id: CHEBI:15940
+      label: Nicotinic acid
+    concentration:
+      value: '0.05'
+      unit: G_PER_L
+    notes: ' [Merged 2 duplicates: 0.05, 0.2]'
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15940
+      label: Nicotinic acid
+  - preferred_term: p-Aminobenzoic acid
+    term:
+      id: CHEBI:30753
+      label: p-Aminobenzoic acid
+    concentration:
+      value: '0.05'
+      unit: G_PER_L
+    notes: ' [Merged 2 duplicates: 0.05, 0.08]'
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30753
+      label: p-Aminobenzoic acid
+  - preferred_term: Pyridoxine hydrochloride
+    term:
+      id: CHEBI:30961
+      label: Pyridoxine hydrochloride
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    notes: ' [Merged 2 duplicates: 0.1, 0.3]'
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30961
+      label: Pyridoxine hydrochloride
+  - preferred_term: Vitamin B12
+    term:
+      id: CHEBI:17439
+      label: Vitamin B12
+    concentration:
+      value: '0.001'
+      unit: G_PER_L
+    notes: ' [Merged 2 duplicates: 0.001, 0.1]'
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17439
+      label: Vitamin B12
+  concentration_candidates:
+  - value: '1'
+    unit: ML_PER_L
+    basis: CROSS_MEDIUM_INFERENCE
+    support: KOMODO 708 resolves to DSMZ/MediaDive medium 708 both structurally and
+      via the KOMODO->DSMZ export; volume read from that medium's recipe.
+    counterevidence: 'The fetched medium is named ''DESULFORHABDUS AMNIGENA MEDIUM''
+      but this record is ''DESULFORHABDUS AMNIGENUS MEDIUM''; the identification rests
+      on the medium number alone. A stock''s addition volume varies by citing medium:
+      MediaDive medium 142 adds ''Trace element solution (Vishniac & Santer)'' at
+      0.2 ml and medium 69 adds the same stock at 5 ml.'
+    proposed_by: apply_cocktail_nesting.py
+  preparation_notes: 'Stock prepared in 1000 ml. Composition and addition volume NOT
+    asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates
+    (#150).'
