@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-15T05:58:35.676226+00:00",
+  "generated": "2026-08-15T20:11:56.146094+00:00",
   "category": "algae",
   "count": 249,
   "recipes": {
@@ -2186,7 +2186,7 @@
     "CultureMech:000127": {
       "name": "sbbm",
       "filename": "sbbm.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 8,
       "id": "CultureMech:000127",
       "source": "unknown",
       "categories": [

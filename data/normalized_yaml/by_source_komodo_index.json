@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-15T06:00:02.564383+00:00",
+  "generated": "2026-08-15T20:13:26.811758+00:00",
   "source": "KOMODO",
   "count": 3637,
   "recipes": {
@@ -10478,7 +10478,7 @@
     "CultureMech:006564": {
       "name": "desulfurobacterium_medium",
       "filename": "KOMODO_829_DESULFUROBACTERIUM_MEDIUM.yaml",
-      "ingredient_count": 32,
+      "ingredient_count": 29,
       "id": "CultureMech:006564",
       "source_id": "komodo.medium:829",
       "source": "KOMODO",
@@ -10491,7 +10491,7 @@
     "CultureMech:006565": {
       "name": "desulfurobacterium_atlanticum_medium",
       "filename": "KOMODO_829a_DESULFUROBACTERIUM_ATLANTICUM_MEDIUM.yaml",
-      "ingredient_count": 37,
+      "ingredient_count": 34,
       "id": "CultureMech:006565",
       "source_id": "komodo.medium:829a",
       "source": "KOMODO",
@@ -15405,7 +15405,7 @@
     "CultureMech:006561": {
       "name": "for_dsm_14290",
       "filename": "for_dsm_14290.yaml",
-      "ingredient_count": 32,
+      "ingredient_count": 29,
       "id": "CultureMech:006561",
       "source_id": "komodo.medium:829.1",
       "source": "KOMODO",
@@ -15845,7 +15845,7 @@
     "CultureMech:006562": {
       "name": "for_dsm_15218_dsm_15521_dsm_15522_dsm_16304",
       "filename": "for_dsm_15218_dsm_15521_dsm_15522_dsm_16304.yaml",
-      "ingredient_count": 32,
+      "ingredient_count": 29,
       "id": "CultureMech:006562",
       "source_id": "komodo.medium:829.2",
       "source": "KOMODO",
@@ -17058,7 +17058,7 @@
     "CultureMech:006563": {
       "name": "for_dsm_21157",
       "filename": "for_dsm_21157.yaml",
-      "ingredient_count": 32,
+      "ingredient_count": 29,
       "id": "CultureMech:006563",
       "source_id": "komodo.medium:829.3",
       "source": "KOMODO",
@@ -37302,7 +37302,7 @@
     "CultureMech:006560": {
       "name": "medium_829_modified_for_dsm_16661",
       "filename": "medium_829_modified_for_dsm_16661.yaml",
-      "ingredient_count": 32,
+      "ingredient_count": 29,
       "id": "CultureMech:006560",
       "source_id": "komodo.medium:829_16661",
       "source": "KOMODO",

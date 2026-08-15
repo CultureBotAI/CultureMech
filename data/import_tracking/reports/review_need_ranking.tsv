@@ -505,7 +505,7 @@ score	file_path	record_id	name	n_ingredients	reasons
 30	archaea/thermoproteus_medium_c.yaml	CultureMech:002977	THERMOPROTEUS MEDIUM (C)	0	no ingredients
 30	bacterial/JCM_J1341_MODIFIED_PFENNIG_MEDIUM_WITH_ACETATE_AND_FUMARATE.yaml	CultureMech:015833	MODIFIED PFENNIG MEDIUM WITH ACETATE AND FUMARATE	14	placeholder ingredient text; no pH and no temperature
 30	bacterial/JCM_J1344_SEA_WATER_MEDIUM_WITH_ACETATE.yaml	CultureMech:015834	SEA WATER MEDIUM WITH ACETATE	14	placeholder ingredient text; no pH and no temperature
-30	bacterial/JCM_J1365_ACIDIC_LOW_SALT_MINERAL_MEDIUM.yaml	CultureMech:015843	ACIDIC LOW SALT MINERAL MEDIUM	17	placeholder ingredient text; no pH and no temperature
+30	bacterial/JCM_J1365_ACIDIC_LOW_SALT_MINERAL_MEDIUM.yaml	CultureMech:015843	ACIDIC LOW SALT MINERAL MEDIUM	16	placeholder ingredient text; no pH and no temperature
 30	bacterial/JCM_J1366_GBS_SALTS_MEDIUM_FOR_HYDROGENOBACTER.yaml	CultureMech:015844	GBS SALTS MEDIUM FOR HYDROGENOBACTER	11	placeholder ingredient text; no pH and no temperature
 30	bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml	CultureMech:003223	DESULFONEMA MAGNUM MEDIUM	25	placeholder ingredient text; no pH and no temperature
 30	bacterial/KOMODO_1254_NAUTILIA_NITRATIREDUCENS_MEDIUM.yaml	CultureMech:004015	NAUTILIA NITRATIREDUCENS MEDIUM	0	no ingredients
@@ -643,7 +643,7 @@ score	file_path	record_id	name	n_ingredients	reasons
 25	archaea/JCM_J1462_METHANOSARCINA_T3_MEDIUM.yaml	CultureMech:015871	METHANOSARCINA T3 MEDIUM	21	placeholder ingredient text
 25	bacterial/10_marine_r2a_medium.yaml	CultureMech:008637	10% marine R2A medium	3	no ingredient is grounded; no pH and no temperature
 25	bacterial/1_5_lbm_medium.yaml	CultureMech:008247	1/5 LBM medium	3	no ingredient is grounded; no pH and no temperature
-25	bacterial/JCM_J1353_GBS_SALTS_MEDIUM_FOR_FERVIDIBACTER.yaml	CultureMech:015836	GBS SALTS MEDIUM FOR FERVIDIBACTER	29	placeholder ingredient text
+25	bacterial/JCM_J1353_GBS_SALTS_MEDIUM_FOR_FERVIDIBACTER.yaml	CultureMech:015836	GBS SALTS MEDIUM FOR FERVIDIBACTER	27	placeholder ingredient text
 25	bacterial/JCM_J1354_RFODOSPIRILLACEAE_MEDIUM_MODIFIED.yaml	CultureMech:015837	RFODOSPIRILLACEAE MEDIUM (MODIFIED)	14	placeholder ingredient text
 25	bacterial/JCM_J1363_WIDDEL_FRESHWATER_MEDIUM_WITH_SPERMIDINE.yaml	CultureMech:015841	WIDDEL FRESHWATER MEDIUM WITH SPERMIDINE	25	placeholder ingredient text
 25	bacterial/JCM_J1364_WIDDEL_FRESHWATER_MEDIUM_WITH_FORMATE_AND_ACETATE.yaml	CultureMech:015842	WIDDEL FRESHWATER MEDIUM WITH FORMATE AND ACETATE	15	placeholder ingredient text
@@ -657,7 +657,7 @@ score	file_path	record_id	name	n_ingredients	reasons
 25	bacterial/JCM_J1425_SPOROMUSA_MEDIUM_2.yaml	CultureMech:015862	SPOROMUSA MEDIUM-2	18	placeholder ingredient text
 25	bacterial/JCM_J1430_SEMI_SOLID_HETEROTROPHIC_GROWTH_MEDIUM_FOR_ALPHAPROTEOBACTERIA.yaml	CultureMech:015865	SEMI-SOLID HETEROTROPHIC GROWTH MEDIUM FOR ALPHAPROTEOBACTERIA	18	placeholder ingredient text
 25	bacterial/JCM_J1431_SEMI_SOLID_AUTOTROPHIC_GROWTH_MEDIUM_FOR_GAMMAPROTEOBACTERIA.yaml	CultureMech:015866	SEMI-SOLID AUTOTROPHIC GROWTH MEDIUM FOR GAMMAPROTEOBACTERIA	16	placeholder ingredient text
-25	bacterial/JCM_J1435_LIMNOCHORDIA_LN_MEDIUM.yaml	CultureMech:015867	LIMNOCHORDIA LN MEDIUM	30	placeholder ingredient text
+25	bacterial/JCM_J1435_LIMNOCHORDIA_LN_MEDIUM.yaml	CultureMech:015867	LIMNOCHORDIA LN MEDIUM	29	placeholder ingredient text
 25	bacterial/JCM_J1475_DESULFOBACTER_MEDIUM_WITH_HORSE_SERUM.yaml	CultureMech:015875	DESULFOBACTER MEDIUM WITH HORSE SERUM	16	placeholder ingredient text
 25	bacterial/JCM_J1479_SOLIDESULFOVIBRIO_MEDIUM.yaml	CultureMech:015877	SOLIDESULFOVIBRIO MEDIUM	9	placeholder ingredient text
 25	bacterial/JCM_J753_DEHALOSPIRILLUM_MEDIUM.yaml	CultureMech:003096	DEHALOSPIRILLUM MEDIUM	28	placeholder ingredient text
@@ -1638,7 +1638,7 @@ score	file_path	record_id	name	n_ingredients	reasons
 10	algae/ppg.yaml	CultureMech:000116	PPG	5	no media_term (untraceable to a source catalogue)
 10	algae/s77_vitamins.yaml	CultureMech:000125	S77 + vitamins	12	no media_term (untraceable to a source catalogue)
 10	algae/s88_vitamins.yaml	CultureMech:000126	S88 + vitamins	23	no media_term (untraceable to a source catalogue)
-10	algae/sbbm.yaml	CultureMech:000127	SBBM	9	no media_term (untraceable to a source catalogue)
+10	algae/sbbm.yaml	CultureMech:000127	SBBM	8	no media_term (untraceable to a source catalogue)
 10	algae/sna.yaml	CultureMech:000133	SNA	5	no media_term (untraceable to a source catalogue)
 10	algae/sna_5.yaml	CultureMech:000134	SNA/5	5	no media_term (untraceable to a source catalogue)
 10	algae/sp.yaml	CultureMech:000135	SP	24	no media_term (untraceable to a source catalogue)
@@ -1760,7 +1760,7 @@ score	file_path	record_id	name	n_ingredients	reasons
 10	bacterial/for_dsm_14042.yaml	CultureMech:004140	For DSM 14042	37	name 'For DSM 14042' identifies a strain, not a medium
 10	bacterial/for_dsm_14174.yaml	CultureMech:004076	For DSM 14174	8	name 'For DSM 14174' identifies a strain, not a medium
 10	bacterial/for_dsm_14283.yaml	CultureMech:006878	For DSM 14283	16	name 'For DSM 14283' identifies a strain, not a medium
-10	bacterial/for_dsm_14290.yaml	CultureMech:006561	For DSM 14290	32	name 'For DSM 14290' identifies a strain, not a medium
+10	bacterial/for_dsm_14290.yaml	CultureMech:006561	For DSM 14290	29	name 'For DSM 14290' identifies a strain, not a medium
 10	bacterial/for_dsm_14366.yaml	CultureMech:006345	For DSM 14366	5	name 'For DSM 14366' identifies a strain, not a medium
 10	bacterial/for_dsm_14385.yaml	CultureMech:006246	For DSM 14385	27	name 'For DSM 14385' identifies a strain, not a medium
 10	bacterial/for_dsm_14424.yaml	CultureMech:005677	For DSM 14424	24	name 'For DSM 14424' identifies a strain, not a medium
@@ -1854,7 +1854,7 @@ score	file_path	record_id	name	n_ingredients	reasons
 10	bacterial/for_dsm_2095.yaml	CultureMech:004132	For DSM 2095	37	name 'For DSM 2095' identifies a strain, not a medium
 10	bacterial/for_dsm_21120.yaml	CultureMech:003621	For DSM 21120	13	name 'For DSM 21120' identifies a strain, not a medium
 10	bacterial/for_dsm_21152.yaml	CultureMech:003640	For DSM 21152	18	name 'For DSM 21152' identifies a strain, not a medium
-10	bacterial/for_dsm_21157.yaml	CultureMech:006563	For DSM 21157	32	name 'For DSM 21157' identifies a strain, not a medium
+10	bacterial/for_dsm_21157.yaml	CultureMech:006563	For DSM 21157	29	name 'For DSM 21157' identifies a strain, not a medium
 10	bacterial/for_dsm_21278.yaml	CultureMech:005703	For DSM 21278	27	name 'For DSM 21278' identifies a strain, not a medium
 10	bacterial/for_dsm_21436.yaml	CultureMech:006532	For DSM 21436	19	name 'For DSM 21436' identifies a strain, not a medium
 10	bacterial/for_dsm_21571.yaml	CultureMech:003946	For DSM 21571	34	name 'For DSM 21571' identifies a strain, not a medium

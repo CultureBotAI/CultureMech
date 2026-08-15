@@ -272,8 +272,7 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:17418
     label: Valeric acid
-- &id001
-  preferred_term: Tryptone
+- preferred_term: Tryptone
   term:
     id: MICRO:0000182
     label: tryptone
@@ -292,8 +291,7 @@ ingredients:
     synonym_type: EXACT
   - synonym_text: casein peptone
     synonym_type: EXACT
-- &id002
-  preferred_term: Yeast extract
+- preferred_term: Yeast extract
   term:
     id: FOODON:03315426
     label: yeast extract
@@ -308,8 +306,7 @@ ingredients:
   notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
     trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
     product
-- &id003
-  preferred_term: Sodium chloride
+- preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -328,9 +325,6 @@ ingredients:
     synonym_type: EXACT
   - synonym_text: table salt
     synonym_type: EXACT
-- *id001
-- *id002
-- *id003
 - preferred_term: Caproic acid
   term:
     id: CHEBI:30776
@@ -497,3 +491,10 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-15T20:08:48.671540+00:00'
+  curator: dedupe_identical_ingredients.py
+  action: REMOVED_DUPLICATE_INGREDIENT_ROWS
+  notes: 'Removed 3 ingredient row(s) that were identical in every field to another
+    row in this record, which made the recipe read as double-strength in those components
+    (#263): Sodium chloride, Tryptone, Yeast extract.'
+  changes: ingredients 42 -> 39

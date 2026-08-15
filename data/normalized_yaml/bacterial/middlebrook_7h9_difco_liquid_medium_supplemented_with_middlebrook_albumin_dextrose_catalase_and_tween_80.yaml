@@ -29,8 +29,7 @@ ingredients:
     value: '2.35'
     unit: G_PER_L
   notes: 'Properties: Complex component'
-- &id001
-  preferred_term: Tryptone
+- preferred_term: Tryptone
   term:
     id: MICRO:0000182
     label: tryptone
@@ -49,8 +48,7 @@ ingredients:
     synonym_type: EXACT
   - synonym_text: casein peptone
     synonym_type: EXACT
-- &id002
-  preferred_term: Yeast extract
+- preferred_term: Yeast extract
   term:
     id: FOODON:03315426
     label: yeast extract
@@ -65,8 +63,7 @@ ingredients:
   notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
     trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
     product
-- &id003
-  preferred_term: Sodium chloride
+- preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -97,9 +94,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:17634
     label: D-glucose
-- *id001
-- *id002
-- *id003
 - preferred_term: Catalase
   concentration:
     value: '0.0015'
@@ -132,7 +126,8 @@ curation_history:
 - timestamp: '2026-06-14T05:58:58.561437+00:00'
   curator: idnf-grounding-fix-v1.0
   action: Fixed ID_NOT_FOUND term groundings
-  notes: 'Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI, 1 de-grounded (mixture or unverifiable).'
+  notes: Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI,
+    1 de-grounded (mixture or unverifiable).
 - timestamp: '2026-01-27T06:35:57.374710Z'
   curator: togo-import
   action: Imported from TOGO Medium
@@ -165,3 +160,10 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-08-15T20:08:38.760585+00:00'
+  curator: dedupe_identical_ingredients.py
+  action: REMOVED_DUPLICATE_INGREDIENT_ROWS
+  notes: 'Removed 3 ingredient row(s) that were identical in every field to another
+    row in this record, which made the recipe read as double-strength in those components
+    (#263): Sodium chloride, Tryptone, Yeast extract.'
+  changes: ingredients 11 -> 8

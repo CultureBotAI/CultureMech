@@ -223,7 +223,7 @@ s_w_amp.yaml	bacterial,algae	DIFFERENT	0/2 ingredient rows shared; sizes [0, 2]	
 s_w_ca.yaml	bacterial,algae	DIFFERENT	0/2 ingredient rows shared; sizes [0, 2]	CultureMech:000308,CultureMech:000137	2,0
 sabouraud_glucose_medium.yaml	bacterial,fungal	IDENTICAL	verbatim same ingredients, groundings, concentrations and units	CultureMech:004154,CultureMech:010453	2,2
 saline_tryptone_yeast_extract_broth.yaml	bacterial,fungal	DIFFERENT	2/6 ingredient rows shared; sizes [4, 4]	CultureMech:010091,CultureMech:010546	5,4
-sbbm.yaml	bacterial,algae	DIFFERENT	3/29 ingredient rows shared; sizes [8, 24]	CultureMech:000403,CultureMech:000127	24,9
+sbbm.yaml	bacterial,algae	DIFFERENT	3/29 ingredient rows shared; sizes [8, 24]	CultureMech:000403,CultureMech:000127	24,8
 se1.yaml	bacterial,algae	DIFFERENT	0/1 ingredient rows shared; sizes [0, 1]	CultureMech:000405,CultureMech:000128	1,0
 se2.yaml	bacterial,algae	DIFFERENT	0/1 ingredient rows shared; sizes [0, 1]	CultureMech:000406,CultureMech:000129	1,0
 sea_salts_yeast_extract_glucose_medium.yaml	bacterial,fungal	DIFFERENT	6/14 ingredient rows shared; sizes [9, 11]	CultureMech:007654,CultureMech:010485	12,9
