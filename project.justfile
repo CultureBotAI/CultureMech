@@ -291,6 +291,11 @@ audit-mediadive-ids *args="":
 fetch-komodo-volumes *args="":
     uv run --extra dev python scripts/fetch_komodo_base_volumes.py {{args}}
 
+# Promote KOMODO volume candidates the composition confirms (#262). Read-only by default.
+[group('Curation')]
+promote-komodo-candidates *args="":
+    uv run --extra dev python scripts/promote_komodo_volume_candidates.py {{args}}
+
 [group('Curation')]
 apply-cocktail-nesting *args="":
     uv run --extra dev python scripts/apply_cocktail_nesting.py {{args}}

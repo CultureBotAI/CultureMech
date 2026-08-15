@@ -65,7 +65,7 @@ import yaml
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from fetch_mediadive_solution_volumes import (  # noqa: E402
-    extract_additions, fetch_medium, komodo_to_dsmz, names_agree,
+    COCKTAIL_NAME, extract_additions, fetch_medium, komodo_to_dsmz, names_agree,
 )
 
 REPO = Path(__file__).resolve().parent.parent
@@ -81,6 +81,92 @@ SPREAD_NOTE = ("A stock's addition volume varies by citing medium: MediaDive med
 
 BARE_ID = re.compile(r"^\d+[a-z]?$")
 BASE_OF = re.compile(r"^(\d+[a-z]?)")
+
+
+
+MIN_SHARED_COMPOUNDS = 8
+# ...of which at least this many must come from the medium's MAIN solution (#269).
+# A medium's identity lives in its main solution: two unrelated media that both add
+# SL-10 and Seven vitamins share ~14 stock compounds at identical values for free,
+# because a stock's composition is the same wherever it is used. Counting only the
+# total would let a record be identified on stocks alone.
+MIN_MAIN_SOLUTION_COMPOUNDS = 5
+
+
+def _norm_compound(s: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", str(s or "").lower())
+
+
+def _num(v):
+    try:
+        return float(str(v).strip())
+    except (TypeError, ValueError):
+        return None
+
+
+def medium_composition(medium: dict[str, Any],
+                       main_only: bool = False) -> dict[str, float]:
+    """Every compound MediaDive lists for this medium, at its g/l.
+
+    `main_only` drops the referenced trace/vitamin stocks, leaving the salts that
+    actually distinguish one medium from another.
+    """
+    out: dict[str, float] = {}
+    for sol in medium.get("solutions") or []:
+        if main_only and COCKTAIL_NAME.search(str(sol.get("name") or "")):
+            continue
+        for r in sol.get("recipe") or []:
+            v = _num(r.get("g_l"))
+            if r.get("compound") and v is not None:
+                out.setdefault(_norm_compound(r["compound"]), v)
+    return out
+
+
+def record_composition(doc: dict[str, Any]) -> dict[str, float]:
+    """Every compound this record lists, at its value, wherever it sits."""
+    out: dict[str, float] = {}
+    groups = [doc.get("ingredients")] + [
+        s.get("composition") for s in (doc.get("solutions") or []) if isinstance(s, dict)]
+    for items in groups:
+        for i in items or []:
+            if not isinstance(i, dict) or not i.get("preferred_term"):
+                continue
+            v = _num((i.get("concentration") or {}).get("value"))
+            if v is not None:
+                out.setdefault(_norm_compound(i["preferred_term"]), v)
+    return out
+
+
+def composition_agreement(doc: dict[str, Any],
+                          medium: dict[str, Any]) -> tuple[float, int, int]:
+    """(fraction of shared compounds whose VALUES agree, number shared, number of
+    those that come from the medium's MAIN solution).
+
+    This is the evidence that settles what a name comparison cannot. Most anaerobic
+    DSMZ media share a backbone -- salts, trace elements, vitamins, bicarbonate,
+    sulfide -- so comparing compound NAMES scores ~0.97 even between unrelated media
+    and discriminates nothing. Comparing VALUES separates them cleanly: measured
+    against its own resolved medium a record scores 1.00 over 15-47 shared compounds,
+    and against three unrelated media it scores 0.00.
+
+    Perfect agreement over MIN_SHARED_COMPOUNDS or more means the fetched medium is
+    where this record's numbers came from, whatever either side calls it -- which is a
+    stronger identification than the name match this used to require.
+    """
+    a, b = record_composition(doc), medium_composition(medium)
+    shared = set(a) & set(b)
+    if not shared:
+        return 0.0, 0, 0
+    agree = sum(1 for k in shared
+                if abs(a[k] - b[k]) <= max(1e-9, 0.001 * abs(b[k])))
+    main = len(shared & set(medium_composition(medium, main_only=True)))
+    return agree / len(shared), len(shared), main
+
+
+def composition_confirms(ratio: float, shared: int, main: int) -> bool:
+    """Does the composition identify this medium well enough to assert its volume?"""
+    return (ratio == 1.0 and shared >= MIN_SHARED_COMPOUNDS
+            and main >= MIN_MAIN_SOLUTION_COMPOUNDS)
 
 
 def komodo_key(doc: dict[str, Any]) -> str | None:
@@ -115,11 +201,17 @@ def classify(key: str, doc: dict[str, Any], medium: dict[str, Any],
     bare = bool(BARE_ID.fullmatch(key))
     agree = names_agree(doc, medium)
 
-    if bare and agree:
+    ratio, shared, main = composition_agreement(doc, medium)
+    confirmed = composition_confirms(ratio, shared, main)
+
+    if bare and (agree or confirmed):
+        how = (f"whose name ({md_name!r}) agrees with this record's" if agree else
+               f"whose composition this record reproduces EXACTLY -- all {shared} "
+               f"shared compounds at identical values ({main} of them from the main "
+               f"solution), while unrelated media score 0")
         return ("READ_FROM_THIS_MEDIUM",
-                f"KOMODO {key} resolves to DSMZ/MediaDive medium {base}, whose name "
-                f"({md_name!r}) agrees with this record's; the volume is printed in "
-                f"that medium's own recipe.", "")
+                f"KOMODO {key} resolves to DSMZ/MediaDive medium {base}, {how}; the "
+                f"volume is printed in that medium's own recipe.", "")
 
     if bare:
         return ("CROSS_MEDIUM_INFERENCE",
@@ -127,8 +219,9 @@ def classify(key: str, doc: dict[str, Any], medium: dict[str, Any],
                 f"structurally and via the KOMODO->DSMZ export; volume read from that "
                 f"medium's recipe.",
                 f"The fetched medium is named {md_name!r} but this record is "
-                f"{rec_name!r}; the identification rests on the medium number alone. "
-                + SPREAD_NOTE)
+                f"{rec_name!r}, AND the compositions differ: only {ratio:.0%} of the "
+                f"{shared} shared compounds carry the same value, so this record is not "
+                f"simply medium {base} under another name. " + SPREAD_NOTE)
 
     return ("CROSS_MEDIUM_INFERENCE",
             f"This record is a variant of medium {base} (KOMODO key {key!r}); volume "

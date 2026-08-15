@@ -273,6 +273,14 @@ curation_history:
     @ 1 ml/l. Each moved component matched the MediaDive stock by name AND value;
     bulk ingredients sharing a name were left in place (#150).'
   changes: Nested 5 ingredient(s) under 2 solution(s); ingredients 27 -> 22
+- timestamp: '2026-08-15T05:34:51.066664+00:00'
+  curator: promote_komodo_volume_candidates.py
+  action: ASSERTED_VOLUME_FROM_COMPOSITION_MATCH
+  notes: This record reproduces MediaDive medium 336 ('OXOBACTER PFENNIGII MEDIUM')
+    across 27 shared compounds at 100% identical values. That identifies the medium
+    despite the name difference, so its stated addition volume is now asserted rather
+    than proposed (#262).
+  changes: 2 volume(s) promoted to concentration; 0 candidate(s) re-evidenced
 parent_media:
   path: data/normalized_yaml/bacterial/oxobacter_pfennigii_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -295,21 +303,13 @@ solutions:
     mediaingredientmech_chebi_term:
       id: CHEBI:86249
       label: FeCl2 x 4 H2O
-  concentration_candidates:
-  - value: '1'
+  preparation_notes: Stock prepared in 1000 ml. Composition and volume from medium
+    336's own MediaDive recipe, identified by this record reproducing that medium's
+    composition exactly (27/27 shared compounds at identical values) despite the upstream
+    rename to 'OXOBACTER PFENNIGII MEDIUM' (#262).
+  concentration:
+    value: '1'
     unit: ML_PER_L
-    basis: CROSS_MEDIUM_INFERENCE
-    support: KOMODO 336 resolves to DSMZ/MediaDive medium 336 both structurally and
-      via the KOMODO->DSMZ export; volume read from that medium's recipe.
-    counterevidence: 'The fetched medium is named ''OXOBACTER PFENNIGII MEDIUM'' but
-      this record is ''CLOSTRIDIUM PFENNIGII medium''; the identification rests on
-      the medium number alone. A stock''s addition volume varies by citing medium:
-      MediaDive medium 142 adds ''Trace element solution (Vishniac & Santer)'' at
-      0.2 ml and medium 69 adds the same stock at 5 ml.'
-    proposed_by: apply_cocktail_nesting.py
-  preparation_notes: 'Stock prepared in 1000 ml. Composition and addition volume NOT
-    asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates
-    (#150).'
 - preferred_term: Seven vitamins solution
   composition:
   - preferred_term: Vitamin B12
@@ -352,18 +352,10 @@ solutions:
     mediaingredientmech_chebi_term:
       id: CHEBI:132751
       label: Thiamine-HCl x 2 H2O
-  concentration_candidates:
-  - value: '1'
+  preparation_notes: Stock prepared in 1000 ml. Composition and volume from medium
+    336's own MediaDive recipe, identified by this record reproducing that medium's
+    composition exactly (27/27 shared compounds at identical values) despite the upstream
+    rename to 'OXOBACTER PFENNIGII MEDIUM' (#262).
+  concentration:
+    value: '1'
     unit: ML_PER_L
-    basis: CROSS_MEDIUM_INFERENCE
-    support: KOMODO 336 resolves to DSMZ/MediaDive medium 336 both structurally and
-      via the KOMODO->DSMZ export; volume read from that medium's recipe.
-    counterevidence: 'The fetched medium is named ''OXOBACTER PFENNIGII MEDIUM'' but
-      this record is ''CLOSTRIDIUM PFENNIGII medium''; the identification rests on
-      the medium number alone. A stock''s addition volume varies by citing medium:
-      MediaDive medium 142 adds ''Trace element solution (Vishniac & Santer)'' at
-      0.2 ml and medium 69 adds the same stock at 5 ml.'
-    proposed_by: apply_cocktail_nesting.py
-  preparation_notes: 'Stock prepared in 1000 ml. Composition and addition volume NOT
-    asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates
-    (#150).'

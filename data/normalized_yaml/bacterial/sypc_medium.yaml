@@ -180,6 +180,14 @@ curation_history:
     4 -> "Wolfe''s mineral elixir" @ 1 ml/l. Each moved component matched the MediaDive
     stock by name AND value; bulk ingredients sharing a name were left in place (#150).'
   changes: Nested 4 ingredient(s) under 1 solution(s); ingredients 18 -> 14
+- timestamp: '2026-08-15T05:57:33.814589+00:00'
+  curator: promote_komodo_volume_candidates.py
+  action: SHARPENED_VOLUME_COUNTEREVIDENCE
+  notes: This record reproduces MediaDive medium 1188 ('SPIROCHAETA CELLOBIOSIPHILA
+    MEDIUM') across 18 shared compounds at 100% identical values, 4 of them from that
+    medium's main solution. That is short of the exact agreement required to assert
+    the volume, so it stays a candidate (#262).
+  changes: 0 volume(s) promoted to concentration; 1 candidate(s) re-evidenced
 variant_children:
 - path: data/normalized_yaml/bacterial/spirochaeta_cellobiosiphila_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -236,11 +244,12 @@ solutions:
     basis: CROSS_MEDIUM_INFERENCE
     support: KOMODO 1188 resolves to DSMZ/MediaDive medium 1188 both structurally
       and via the KOMODO->DSMZ export; volume read from that medium's recipe.
-    counterevidence: 'The fetched medium is named ''SPIROCHAETA CELLOBIOSIPHILA MEDIUM''
-      but this record is ''SYPC medium''; the identification rests on the medium number
-      alone. A stock''s addition volume varies by citing medium: MediaDive medium
-      142 adds ''Trace element solution (Vishniac & Santer)'' at 0.2 ml and medium
-      69 adds the same stock at 5 ml.'
+    counterevidence: 'Not confirmed as medium 1188: 100% of the 18 shared compounds
+      carry the same value (4 shared with that medium''s main solution). A record
+      that IS the medium scores 100%, with at least 5 main-solution compounds. A stock''s
+      addition volume varies by citing medium: MediaDive medium 142 adds ''Trace element
+      solution (Vishniac & Santer)'' at 0.2 ml and medium 69 adds the same stock at
+      5 ml.'
     proposed_by: apply_cocktail_nesting.py
   preparation_notes: 'Stock prepared in 1000 ml. Composition and addition volume NOT
     asserted: proposed as 1 ml/l on basis CROSS_MEDIUM_INFERENCE; see concentration_candidates
