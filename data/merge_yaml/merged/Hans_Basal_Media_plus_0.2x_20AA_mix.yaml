@@ -369,8 +369,8 @@ ingredients:
     value: '0.1'
     unit: MILLIMOLAR
   term:
-    id: CHEBI:57305
-    label: glycine zwitterion
+    id: CHEBI:15428
+    label: glycine
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-40-6; MW: 75.07;
     From 20AA_mix'
 - preferred_term: L-Proline

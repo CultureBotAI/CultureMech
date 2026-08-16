@@ -170,14 +170,14 @@ ingredients:
   notes: Copied from referenced JCM Medium 183 | Copied from JCM Medium 297
 - preferred_term: CoSO4 x 7 H2O
   term:
-    id: CHEBI:53470
-    label: CoSO4 x 7 H2O
+    id: CHEBI:91244
+    label: cobalt(2+) sulfate heptahydrate
   concentration:
     value: 1e-05
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:53470
-    label: CoSO4 x 7 H2O
+    id: CHEBI:91244
+    label: cobalt(2+) sulfate heptahydrate
   notes: Copied from referenced JCM Medium 183 | Copied from JCM Medium 297
 preparation_steps:
 - step_number: 1

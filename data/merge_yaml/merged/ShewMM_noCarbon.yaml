@@ -119,8 +119,8 @@ ingredients:
     value: '0.001'
     unit: G_PER_L
   term:
-    id: CHEBI:75832
-    label: iron(2+) sulfate (anhydrous)
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
   notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7782-63-0; MW: 278.01; From
     Wolfe''s mineral mix'
 - preferred_term: Nickel (II) chloride hexahydrate

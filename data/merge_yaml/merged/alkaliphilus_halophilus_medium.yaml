@@ -116,14 +116,14 @@ ingredients:
     label: FeSO4 x 7 H2O
 - preferred_term: CoSO4 x 7 H2O
   term:
-    id: CHEBI:53470
-    label: CoSO4 x 7 H2O
+    id: CHEBI:91244
+    label: cobalt(2+) sulfate heptahydrate
   concentration:
     value: '0.18'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:53470
-    label: CoSO4 x 7 H2O
+    id: CHEBI:91244
+    label: cobalt(2+) sulfate heptahydrate
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158

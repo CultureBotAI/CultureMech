@@ -77,8 +77,8 @@ ingredients:
     value: '1.0'
     unit: MG_PER_L
   term:
-    id: CHEBI:75832
-    label: iron(2+) sulfate (anhydrous)
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
   notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7782-63-0; MW: 278.01; From
     ATCC Wolfe''s mineral mix'
 - preferred_term: Cobalt(II) nitrate hexahydrate
@@ -466,8 +466,8 @@ ingredients:
     value: '175.0'
     unit: MICROMOLAR
   term:
-    id: CHEBI:57305
-    label: glycine zwitterion
+    id: CHEBI:15428
+    label: glycine
   notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 56-40-6; MW: 75.07; From
     NLDM_metabolites'
 - preferred_term: L-Histidine

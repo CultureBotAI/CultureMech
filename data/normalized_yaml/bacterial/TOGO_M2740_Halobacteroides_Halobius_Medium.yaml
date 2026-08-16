@@ -66,11 +66,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
   term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: KCl
   concentration:
     value: '3.7'
@@ -112,11 +112,11 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
-    id: CHEBI:17561
-    label: L-cysteine
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:17561
-    label: L-cysteine
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:

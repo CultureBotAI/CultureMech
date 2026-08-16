@@ -64,7 +64,7 @@ ingredients:
     of Brain Heart Infusion commercial product
 - preferred_term: Dextrose
   term:
-    id: CHEBI:17234
+    id: CHEBI:17634
     label: D-glucose
   concentration:
     value: '2.0'

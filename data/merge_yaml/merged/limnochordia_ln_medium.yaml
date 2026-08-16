@@ -49,11 +49,11 @@ ingredients:
     value: '0.25'
     unit: G_PER_L
   term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:32599
-    label: MgSO4 x 6 H2O
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.1'
@@ -188,11 +188,11 @@ ingredients:
     value: '0.03'
     unit: G_PER_L
   term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:75215
-    label: Na2MoO4·2H2O
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
 - preferred_term: NiCl2·6H2O
   concentration:
     value: '0.1'

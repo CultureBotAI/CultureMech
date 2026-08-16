@@ -109,8 +109,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:53470
-    label: ''
+    id: CHEBI:91244
+    label: cobalt(2+) sulfate heptahydrate
 - preferred_term: Sulfur (powder)
   concentration:
     value: '10'

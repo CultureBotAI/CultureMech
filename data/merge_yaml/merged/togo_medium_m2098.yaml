@@ -28,8 +28,8 @@ ingredients:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -142,8 +142,8 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
   term:
-    id: CHEBI:17561
-    label: ''
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:

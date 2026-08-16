@@ -31,8 +31,8 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   term:
-    id: CHEBI:85248
-    label: gellan gum
+    id: CHEBI:28017
+    label: starch
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 9005-25-8'
 - preferred_term: Potassium phosphate dibasic
   concentration:

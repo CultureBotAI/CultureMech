@@ -165,7 +165,7 @@ ingredients:
     of Brain Heart Infusion commercial product
 - preferred_term: Dextrose
   term:
-    id: CHEBI:17234
+    id: CHEBI:17634
     label: D-glucose
   concentration:
     value: '2.0'
@@ -226,11 +226,11 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Organic compound, Simple component, Defined component'
   term:
-    id: CHEBI:17561
-    label: L-cysteine
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:17561
-    label: L-cysteine
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
 - preferred_term: Proteose peptone (BD Difco)
   concentration:
     value: '6'
@@ -269,11 +269,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
 - preferred_term: H3BO3
   concentration:
     value: '6'

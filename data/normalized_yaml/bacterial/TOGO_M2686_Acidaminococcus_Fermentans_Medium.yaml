@@ -90,8 +90,8 @@ ingredients:
   notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
     Organic compound'
   term:
-    id: CHEBI:57305
-    label: glycine zwitterion
+    id: CHEBI:15428
+    label: glycine
   mediaingredientmech_term:
     id: MediaIngredientMech:000244
     label: Glycine
@@ -123,11 +123,11 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
   term:
-    id: CHEBI:17561
-    label: L-cysteine
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:17561
-    label: L-cysteine
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
 media_term:
   preferred_term: TOGO Medium M2686
   term:

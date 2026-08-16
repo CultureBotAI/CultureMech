@@ -136,11 +136,11 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
   term:
-    id: CHEBI:17561
-    label: L-cysteine
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:17561
-    label: L-cysteine
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
 - preferred_term: 10 N H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
@@ -170,11 +170,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
 - preferred_term: H3BO3
   concentration:
     value: '0.01'
@@ -242,11 +242,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:48843
-    label: disodium selenite
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:48843
-    label: disodium selenite
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
 - preferred_term: Nitrilotriacetic acid (NTA)
   concentration:
     value: '12.8'

@@ -16,8 +16,8 @@ ingredients:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: NaCl
   concentration:
     value: '0.5'
@@ -58,8 +58,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
   term:
-    id: CHEBI:17632
-    label: nitrate
+    id: CHEBI:63043
+    label: potassium nitrate
   mediaingredientmech_term:
     id: MediaIngredientMech:000170
     label: KNO3

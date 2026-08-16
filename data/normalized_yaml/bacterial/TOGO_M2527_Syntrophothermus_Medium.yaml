@@ -61,11 +61,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Na2S x 9 H2O
   concentration:
     value: '0.3'
@@ -96,11 +96,11 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
-    id: CHEBI:17561
-    label: L-cysteine
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:17561
-    label: L-cysteine
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
@@ -148,11 +148,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
 - preferred_term: H3BO3
   concentration:
     value: '0.01'
@@ -220,11 +220,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:48843
-    label: disodium selenite
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:48843
-    label: disodium selenite
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
 - preferred_term: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
@@ -232,11 +232,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:53470
-    label: cobalt(2+) sulfate
+    id: CHEBI:91244
+    label: cobalt(2+) sulfate heptahydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:53470
-    label: cobalt(2+) sulfate
+    id: CHEBI:91244
+    label: cobalt(2+) sulfate heptahydrate
 - preferred_term: KAl(SO4)2 x 12 H2O
   concentration:
     value: '0.02'

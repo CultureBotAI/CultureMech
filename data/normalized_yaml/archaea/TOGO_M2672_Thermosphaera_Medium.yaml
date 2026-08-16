@@ -49,11 +49,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Na2S x 9 H2O
   concentration:
     value: '0.5'

@@ -149,8 +149,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
     component'
   term:
-    id: CHEBI:4991
-    label: iron(III) dicitrate(3-)
+    id: CHEBI:144421
+    label: iron(III) citrate
   mediaingredientmech_term:
     id: MediaIngredientMech:000186
     label: Fe(III) citrate

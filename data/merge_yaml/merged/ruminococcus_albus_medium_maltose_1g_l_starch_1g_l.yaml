@@ -91,11 +91,11 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Complex
     component'
   term:
-    id: CHEBI:85248
-    label: gellan gum
+    id: CHEBI:28017
+    label: starch
   mediaingredientmech_chebi_term:
-    id: CHEBI:85248
-    label: gellan gum
+    id: CHEBI:28017
+    label: starch
 - preferred_term: Maltose
   concentration:
     value: '1'
@@ -114,11 +114,11 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
-    id: CHEBI:17561
-    label: L-cysteine
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:17561
-    label: L-cysteine
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
 - preferred_term: Fatty acid mixture
   concentration:
     value: '1'

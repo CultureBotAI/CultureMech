@@ -28,8 +28,8 @@ ingredients:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -103,8 +103,8 @@ ingredients:
     id: MediaIngredientMech:000389
     label: Cysteine-HCl
   term:
-    id: CHEBI:52891
-    label: ''
+    id: CHEBI:91247
+    label: L-cysteine hydrochloride
 - preferred_term: Casein peptone, tryptic digest
   concentration:
     value: '10'

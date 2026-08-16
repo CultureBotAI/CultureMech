@@ -9,8 +9,8 @@ ingredients:
     value: '0.25'
     unit: G_PER_L
   term:
-    id: CHEBI:17632
-    label: nitrate
+    id: CHEBI:63043
+    label: potassium nitrate
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
 - preferred_term: Magnesium Sulfate Heptahydrate
   concentration:

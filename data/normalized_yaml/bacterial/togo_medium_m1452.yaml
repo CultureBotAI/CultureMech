@@ -54,11 +54,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
   term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
 - preferred_term: MgCl2·6H2O
   concentration:
     value: '0.5'
@@ -99,8 +99,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
   term:
-    id: CHEBI:17632
-    label: nitrate
+    id: CHEBI:63043
+    label: potassium nitrate
   mediaingredientmech_term:
     id: MediaIngredientMech:000170
     label: KNO3

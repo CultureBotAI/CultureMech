@@ -69,11 +69,11 @@ ingredients:
     value: '0.05'
     unit: G_PER_L
   term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:32599
-    label: MgSO4 x 6 H2O
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: Agar
   concentration:
     value: '15.0'

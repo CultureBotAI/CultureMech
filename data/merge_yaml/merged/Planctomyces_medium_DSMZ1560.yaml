@@ -69,8 +69,8 @@ ingredients:
     value: '1.98'
     unit: MG_PER_L
   term:
-    id: CHEBI:75832
-    label: iron(2+) sulfate (anhydrous)
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
   notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7782-63-0; MW: 278.01; From
     Planctomyces_mineral_salts'
 - preferred_term: EDTA (disodium salt)
@@ -96,8 +96,8 @@ ingredients:
     value: '0.5'
     unit: MG_PER_L
   term:
-    id: CHEBI:75832
-    label: iron(2+) sulfate (anhydrous)
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
   notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7782-63-0; MW: 278.01; From
     Planctomyces_mineral_salts'
 - preferred_term: Manganese (II) sulfate monohydrate
@@ -158,8 +158,8 @@ ingredients:
     value: '0.0001'
     unit: G_PER_L
   term:
-    id: CHEBI:75832
-    label: iron(2+) sulfate (anhydrous)
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
   notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7782-63-0; MW: 278.01; From
     Planctomyces_trace_element_solution'
 - preferred_term: Cobalt(II) nitrate hexahydrate
