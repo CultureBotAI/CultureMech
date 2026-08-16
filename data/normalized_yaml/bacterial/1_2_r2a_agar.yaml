@@ -15,23 +15,23 @@ ingredients:
 - preferred_term: R2A agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '9.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '7.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 applications:
 - Microbial cultivation
 curation_history:

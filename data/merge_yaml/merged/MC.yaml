@@ -68,7 +68,7 @@ ingredients:
 - preferred_term: KH PO
   term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0

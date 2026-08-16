@@ -9,7 +9,7 @@ ingredients:
 - preferred_term: Thiamine
   term:
     id: CHEBI:26948
-    label: "vitamin B1"
+    label: vitamin B1
   concentration:
     value: '0.06'
     unit: MILLIMOLAR
@@ -20,32 +20,32 @@ ingredients:
 - preferred_term: Pyruvate
   term:
     id: CHEBI:15361
-    label: "pyruvate"
+    label: pyruvate
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pyr'
   mediaingredientmech_chebi_term:
     id: CHEBI:15361
-    label: "pyruvate"
+    label: pyruvate
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
-    label: "biotin"
+    label: biotin
   concentration:
     value: 4e-06
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
-    label: "biotin"
+    label: biotin
 - preferred_term: Nickel chloride
   concentration:
     value: 1e-06
     unit: MILLIMOLAR
   term:
     id: CHEBI:34887
-    label: "nickel dichloride"
+    label: nickel dichloride
 - preferred_term: Magnesium chloride
   concentration:
     value: '27.0'
@@ -59,48 +59,48 @@ ingredients:
 - preferred_term: Glycine
   term:
     id: CHEBI:15428
-    label: "glycine"
+    label: glycine
   concentration:
     value: '0.05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gly'
   mediaingredientmech_chebi_term:
     id: CHEBI:15428
-    label: "glycine"
+    label: glycine
 - preferred_term: Sodium bicarbonate
   concentration:
     value: '6.0'
     unit: MILLIMOLAR
   term:
     id: CHEBI:32139
-    label: "sodium hydrogencarbonate"
+    label: sodium hydrogencarbonate
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: "sodium hydrogencarbonate"
+    label: sodium hydrogencarbonate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '10.0'
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: "calcium dichloride"
+    label: calcium dichloride
 - preferred_term: Sodium molybdate
   concentration:
     value: 3e-07
     unit: MILLIMOLAR
   term:
     id: CHEBI:75215
-    label: "sodium molybdate (anhydrous)"
+    label: sodium molybdate (anhydrous)
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: "magnesium sulfate"
+    label: magnesium sulfate
   concentration:
     value: '28.0'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: "magnesium sulfate"
+    label: magnesium sulfate
 - preferred_term: Methylphosphonic acid
   concentration:
     value: '0.001'
@@ -125,61 +125,61 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:35696
-    label: "cobalt dichloride"
+    label: cobalt dichloride
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '481.0'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
-    label: "ammonium sulfate"
+    label: ammonium sulfate
   concentration:
     value: '0.4'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: "ammonium sulfate"
+    label: ammonium sulfate
 - preferred_term: Manganese chloride
   concentration:
     value: 9e-06
     unit: MILLIMOLAR
   term:
     id: CHEBI:63041
-    label: "manganese(II) chloride"
+    label: manganese(II) chloride
 - preferred_term: Sodium selenite
   concentration:
     value: 1e-06
     unit: MILLIMOLAR
   term:
     id: CHEBI:48843
-    label: "disodium selenite"
+    label: disodium selenite
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
-    label: "zinc sulfate"
+    label: zinc sulfate
   concentration:
     value: 8e-07
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:35176
-    label: "zinc sulfate"
+    label: zinc sulfate
 - preferred_term: DL-methionine
   term:
     id: CHEBI:16811
-    label: "methionine"
+    label: methionine
   concentration:
     value: '0.05'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:16811
-    label: "methionine"
+    label: methionine
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

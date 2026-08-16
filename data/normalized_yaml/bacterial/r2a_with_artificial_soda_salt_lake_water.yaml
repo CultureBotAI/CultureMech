@@ -16,13 +16,13 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '46.94'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
@@ -32,37 +32,37 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32149
-    label: "sodium sulfate"
+    label: sodium sulfate
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
   concentration:
     value: '0.24'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
   concentration:
     value: '0.17'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 - preferred_term: KCl
   term:
     id: CHEBI:32588
-    label: "potassium chloride"
+    label: potassium chloride
   concentration:
     value: '1.38'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: "potassium chloride"
+    label: potassium chloride
 - preferred_term: KBr
   term:
     id: CHEBI:32030
@@ -72,7 +72,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32030
-    label: "potassium bromide"
+    label: potassium bromide
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -82,17 +82,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: "boric acid"
+    label: boric acid
 - preferred_term: SrCl2 x 6 H2O
   term:
     id: CHEBI:36385
-    label: "strontium dichloride hexahydrate"
+    label: strontium dichloride hexahydrate
   concentration:
     value: '0.08'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:36385
-    label: "strontium dichloride hexahydrate"
+    label: strontium dichloride hexahydrate
 - preferred_term: NaF
   term:
     id: CHEBI:28741
@@ -102,7 +102,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:28741
-    label: "sodium fluoride"
+    label: sodium fluoride
 - preferred_term: Yeast extract
   concentration:
     value: '0.5'
@@ -118,23 +118,23 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
 - preferred_term: Starch
   term:
     id: CHEBI:28017
-    label: "starch"
+    label: starch
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:28017
-    label: "starch"
+    label: starch
 - preferred_term: Na-pyruvate
   term:
     id: CHEBI:50144
@@ -144,7 +144,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:50144
-    label: "sodium pyruvate"
+    label: sodium pyruvate
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -154,27 +154,27 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '0.05'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 preparation_steps:
 - step_number: 1
   action: MIX

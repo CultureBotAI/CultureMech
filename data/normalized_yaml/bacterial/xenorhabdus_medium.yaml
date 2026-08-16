@@ -24,24 +24,24 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   notes: ' (if required)'
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

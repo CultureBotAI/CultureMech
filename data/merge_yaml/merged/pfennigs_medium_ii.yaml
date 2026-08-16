@@ -23,7 +23,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: "carbon dioxide"
+    label: carbon dioxide
 - preferred_term: Distilled water
   concentration:
     value: '2270.0'
@@ -33,10 +33,10 @@ ingredients:
     100.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: Yeast extrakt
   concentration:
     value: '0.25'
@@ -61,7 +61,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: "carbon dioxide"
+    label: carbon dioxide
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -69,7 +69,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 - preferred_term: Na2S x 9 H2O
   concentration:
     value: '5.0'
@@ -89,7 +89,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 - preferred_term: H2O
   concentration:
     value: '50'
@@ -142,7 +142,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: Ammonium chloride
   concentration:
     value: '0.35'
@@ -187,7 +187,7 @@ ingredients:
     component'
   term:
     id: CHEBI:50144
-    label: "sodium pyruvate"
+    label: sodium pyruvate
   mediaingredientmech_term:
     id: MediaIngredientMech:000399
     label: Pyruvic acid sodium salt
@@ -252,10 +252,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: MnCl2 x 4 H2O
   concentration:
     value: '100'
@@ -264,10 +264,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
   term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '190'

@@ -14,7 +14,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:76209
-    label: "sodium sulfide nonahydrate"
+    label: sodium sulfide nonahydrate
 - preferred_term: L--cysteine・HCl・H2O
   notes: 'Properties: Defined component, Organic compound, Solution'
   concentration:
@@ -22,7 +22,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:91248
-    label: "L-cysteine hydrochloride hydrate"
+    label: L-cysteine hydrochloride hydrate
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -30,7 +30,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: "carbon dioxide"
+    label: carbon dioxide
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
@@ -38,7 +38,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -46,7 +46,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: "dihydrogen"
+    label: dihydrogen
 - preferred_term: Distilled water
   concentration:
     value: '960.0'
@@ -55,10 +55,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 860.0, 100.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: KH2PO4
   concentration:
     value: '0.54'
@@ -70,7 +70,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -125,7 +125,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 - preferred_term: NH4Cl
   concentration:
     value: '0.19'
@@ -146,7 +146,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
 media_term:
   preferred_term: TOGO Medium M651
   term:

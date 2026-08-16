@@ -26,63 +26,63 @@ ingredients:
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
   concentration:
     value: '0.02'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
   concentration:
     value: '0.23'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
 - preferred_term: NaH2PO4
   term:
     id: CHEBI:37585
-    label: "sodium dihydrogenphosphate"
+    label: sodium dihydrogenphosphate
   concentration:
     value: '0.07'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:37585
-    label: "sodium dihydrogenphosphate"
+    label: sodium dihydrogenphosphate
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
   concentration:
     value: '0.001'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
-    label: "copper(II) sulfate pentahydrate"
+    label: copper(II) sulfate pentahydrate
   concentration:
     value: 5e-06
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31440
-    label: "copper(II) sulfate pentahydrate"
+    label: copper(II) sulfate pentahydrate
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -92,47 +92,47 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: "boric acid"
+    label: boric acid
 - preferred_term: MnSO4 x 5 H2O
   term:
     id: CHEBI:131524
-    label: "manganese(II) sulfate pentahydrate"
+    label: manganese(II) sulfate pentahydrate
   concentration:
     value: 1e-05
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131524
-    label: "manganese(II) sulfate pentahydrate"
+    label: manganese(II) sulfate pentahydrate
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
-    label: "zinc sulfate heptahydrate"
+    label: zinc sulfate heptahydrate
   concentration:
     value: 7e-05
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32312
-    label: "zinc sulfate heptahydrate"
+    label: zinc sulfate heptahydrate
 - preferred_term: MoO3
   term:
     id: CHEBI:30627
-    label: "molybdenum trioxide"
+    label: molybdenum trioxide
   concentration:
     value: 1e-05
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30627
-    label: "molybdenum trioxide"
+    label: molybdenum trioxide
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '12'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 applications:
 - Microbial cultivation
 curation_history:

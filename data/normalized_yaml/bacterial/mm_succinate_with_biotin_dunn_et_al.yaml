@@ -9,59 +9,59 @@ ingredients:
 - preferred_term: Succinate
   term:
     id: CHEBI:26806
-    label: "succinate"
+    label: succinate
   concentration:
     value: '30.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:succ'
   mediaingredientmech_chebi_term:
     id: CHEBI:26806
-    label: "succinate"
+    label: succinate
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
-    label: "biotin"
+    label: biotin
   concentration:
     value: '0.00409316'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
-    label: "biotin"
+    label: biotin
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.360425'
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: "calcium dichloride"
+    label: calcium dichloride
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '1.2629'
     unit: MILLIMOLAR
   term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
-    label: "thiamine hydrochloride"
+    label: thiamine hydrochloride
   concentration:
     value: '0.000331323'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:49105
-    label: "thiamine hydrochloride"
+    label: thiamine hydrochloride
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: "magnesium sulfate"
+    label: magnesium sulfate
   concentration:
     value: '0.40572'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: "magnesium sulfate"
+    label: magnesium sulfate
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.123304'

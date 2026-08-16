@@ -29,17 +29,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 applications:
 - Microbial cultivation
 curation_history:

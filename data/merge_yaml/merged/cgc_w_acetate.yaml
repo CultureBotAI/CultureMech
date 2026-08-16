@@ -9,111 +9,111 @@ ingredients:
 - preferred_term: Acetate
   term:
     id: CHEBI:30089
-    label: "acetate"
+    label: acetate
   concentration:
     value: '120.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ac'
   mediaingredientmech_chebi_term:
     id: CHEBI:30089
-    label: "acetate"
+    label: acetate
 - preferred_term: Urea
   term:
     id: CHEBI:16199
-    label: "urea"
+    label: urea
   concentration:
     value: '83.3'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:urea'
   mediaingredientmech_chebi_term:
     id: CHEBI:16199
-    label: "urea"
+    label: urea
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
-    label: "biotin"
+    label: biotin
   concentration:
     value: '0.000819'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
-    label: "biotin"
+    label: biotin
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.0775'
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: "calcium dichloride"
+    label: calcium dichloride
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '2.87'
     unit: MILLIMOLAR
   term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '3.67'
     unit: MILLIMOLAR
   term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: "magnesium sulfate"
+    label: magnesium sulfate
   concentration:
     value: '1.01'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: "magnesium sulfate"
+    label: magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
-    label: "manganese(II) sulfate monohydrate"
+    label: manganese(II) sulfate monohydrate
   concentration:
     value: '0.0592'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
-    label: "manganese(II) sulfate monohydrate"
+    label: manganese(II) sulfate monohydrate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.036'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75832
-    label: "iron(2+) sulfate (anhydrous)"
+    label: iron(2+) sulfate (anhydrous)
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
-    label: "zinc sulfate"
+    label: zinc sulfate
   concentration:
     value: '0.00348'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:35176
-    label: "zinc sulfate"
+    label: zinc sulfate
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
-    label: "ammonium sulfate"
+    label: ammonium sulfate
   concentration:
     value: '37.8'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: "ammonium sulfate"
+    label: ammonium sulfate
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.00125'
     unit: MILLIMOLAR
   term:
     id: CHEBI:23414
-    label: "copper(II) sulfate"
+    label: copper(II) sulfate
 - preferred_term: MOPS
   term:
     id: CHEBI:39074

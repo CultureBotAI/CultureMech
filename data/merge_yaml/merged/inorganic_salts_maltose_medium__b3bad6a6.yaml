@@ -24,43 +24,43 @@ ingredients:
 - preferred_term: Maltose
   term:
     id: CHEBI:17306
-    label: "maltose"
+    label: maltose
   concentration:
     value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17306
-    label: "maltose"
+    label: maltose
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
   concentration:
     value: '1.29'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '43.8'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '49.37'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

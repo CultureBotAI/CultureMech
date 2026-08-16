@@ -27,23 +27,23 @@ ingredients:
 - preferred_term: Tween 40
   term:
     id: CHEBI:53423
-    label: "polysorbate 40"
+    label: polysorbate 40
   concentration:
     value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:53423
-    label: "polysorbate 40"
+    label: polysorbate 40
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
 - preferred_term: Olive oil
   concentration:
     value: '1'
@@ -55,13 +55,13 @@ ingredients:
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '7.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 applications:
 - Microbial cultivation
 curation_history:

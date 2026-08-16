@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: Sucrose
   concentration:
     value: '1'
@@ -50,10 +50,10 @@ ingredients:
     component'
   term:
     id: CHEBI:31991
-    label: "phenol red"
+    label: phenol red
   mediaingredientmech_chebi_term:
     id: CHEBI:31991
-    label: "phenol red"
+    label: phenol red
 - preferred_term: Sorbitol
   concentration:
     value: '7.5'

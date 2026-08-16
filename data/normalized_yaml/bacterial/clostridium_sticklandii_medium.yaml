@@ -31,7 +31,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -41,24 +41,24 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.0005'
     unit: G_PER_L
   term:
     id: CHEBI:8806
-    label: "Resazurin"
+    label: Resazurin
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
-    label: "sodium sulfide nonahydrate"
+    label: sodium sulfide nonahydrate
   concentration:
     value: '0.15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:76209
-    label: "sodium sulfide nonahydrate"
+    label: sodium sulfide nonahydrate
 applications:
 - Microbial cultivation
 curation_history:

@@ -16,13 +16,13 @@ ingredients:
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
   concentration:
     value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
 - preferred_term: Corn steep powder
   concentration:
     value: '5'
@@ -42,23 +42,23 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '3'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '12'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 preparation_steps:
 - step_number: 1
   action: MIX

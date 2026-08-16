@@ -53,10 +53,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '5.4'
@@ -86,7 +86,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '10.8'
@@ -95,7 +95,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
 - preferred_term: KCl
   concentration:
     value: '0.7'

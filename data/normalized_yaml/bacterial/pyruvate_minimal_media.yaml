@@ -9,103 +9,103 @@ ingredients:
 - preferred_term: Pyruvate
   term:
     id: CHEBI:15361
-    label: "pyruvate"
+    label: pyruvate
   concentration:
     value: '56.779'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pyr'
   mediaingredientmech_chebi_term:
     id: CHEBI:15361
-    label: "pyruvate"
+    label: pyruvate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.04966'
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: "calcium dichloride"
+    label: calcium dichloride
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '48.0'
     unit: MILLIMOLAR
   term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.00248'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75215
-    label: "sodium molybdate (anhydrous)"
+    label: sodium molybdate (anhydrous)
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '10.0'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
-    label: "thiamine hydrochloride"
+    label: thiamine hydrochloride
   concentration:
     value: '3.32e-06'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:49105
-    label: "thiamine hydrochloride"
+    label: thiamine hydrochloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '22.0'
     unit: MILLIMOLAR
   term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: "magnesium sulfate"
+    label: magnesium sulfate
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: "magnesium sulfate"
+    label: magnesium sulfate
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.00252'
     unit: MILLIMOLAR
   term:
     id: CHEBI:35696
-    label: "cobalt dichloride"
+    label: cobalt dichloride
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
-    label: "ammonium sulfate"
+    label: ammonium sulfate
   concentration:
     value: '30.0'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: "ammonium sulfate"
+    label: ammonium sulfate
 - preferred_term: Manganese chloride
   concentration:
     value: '0.00448'
     unit: MILLIMOLAR
   term:
     id: CHEBI:63041
-    label: "manganese(II) chloride"
+    label: manganese(II) chloride
 - preferred_term: Cupric chloride
   concentration:
     value: '0.00252'
     unit: MILLIMOLAR
   term:
     id: CHEBI:49553
-    label: "copper(II) chloride"
+    label: copper(II) chloride
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.06165'
@@ -116,7 +116,7 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:49976
-    label: "zinc dichloride"
+    label: zinc dichloride
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

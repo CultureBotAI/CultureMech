@@ -71,10 +71,10 @@ ingredients:
     Defined component [Merged 2 duplicates: 1.0, 100.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: N NaOH
   concentration:
     value: '26.0'
@@ -131,7 +131,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: "carbon dioxide"
+    label: carbon dioxide
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -139,7 +139,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -147,7 +147,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: "dihydrogen"
+    label: dihydrogen
 - preferred_term: L-Cysteine . HCl
   concentration:
     value: '0.5'
@@ -166,10 +166,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Simple component, Defined component'
   term:
     id: CHEBI:18067
-    label: "phylloquinone"
+    label: phylloquinone
   mediaingredientmech_chebi_term:
     id: CHEBI:18067
-    label: "phylloquinone"
+    label: phylloquinone
 - preferred_term: Hemin
   concentration:
     value: '50'

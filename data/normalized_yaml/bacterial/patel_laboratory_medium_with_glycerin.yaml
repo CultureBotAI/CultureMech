@@ -21,7 +21,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: "ammonium chloride"
+    label: ammonium chloride
 applications:
 - Microbial cultivation
 curation_history:

@@ -24,13 +24,13 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
 - preferred_term: HEPES
   term:
     id: CHEBI:46756
@@ -44,140 +44,140 @@ ingredients:
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '0.37'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
 - preferred_term: CaSO4 x 2 H2O
   term:
     id: CHEBI:32583
-    label: "calcium sulfate dihydrate"
+    label: calcium sulfate dihydrate
   concentration:
     value: '0.43'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32583
-    label: "calcium sulfate dihydrate"
+    label: calcium sulfate dihydrate
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '14'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
-    label: "cyanocob(III)alamin"
+    label: cyanocob(III)alamin
   concentration:
     value: '0.05'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17439
-    label: "cyanocob(III)alamin"
+    label: cyanocob(III)alamin
 - preferred_term: Pantothenic acid
   term:
     id: CHEBI:7916
-    label: "pantothenic acid"
+    label: pantothenic acid
   concentration:
     value: '0.05'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:7916
-    label: "pantothenic acid"
+    label: pantothenic acid
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
-    label: "riboflavin"
+    label: riboflavin
   concentration:
     value: '0.05'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17015
-    label: "riboflavin"
+    label: riboflavin
 - preferred_term: Pyridoxamine hydrochloride
   term:
     id: CHEBI:131531
-    label: "pyridoxamine hydrochloride"
+    label: pyridoxamine hydrochloride
   concentration:
     value: '0.01'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131531
-    label: "pyridoxamine hydrochloride"
+    label: pyridoxamine hydrochloride
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
-    label: "biotin"
+    label: biotin
   concentration:
     value: '0.02'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
-    label: "biotin"
+    label: biotin
 - preferred_term: Folic acid
   term:
     id: CHEBI:27470
-    label: "folic acid"
+    label: folic acid
   concentration:
     value: '0.02'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:27470
-    label: "folic acid"
+    label: folic acid
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
-    label: "nicotinic acid"
+    label: nicotinic acid
   concentration:
     value: '0.025'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15940
-    label: "nicotinic acid"
+    label: nicotinic acid
 - preferred_term: Nicotine amide
   concentration:
     value: '0.025'
     unit: G_PER_L
   term:
     id: CHEBI:17154
-    label: "nicotinamide"
+    label: nicotinamide
 - preferred_term: alpha-lipoic acid
   term:
     id: CHEBI:16494
-    label: "lipoic acid"
+    label: lipoic acid
   concentration:
     value: '0.05'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16494
-    label: "lipoic acid"
+    label: lipoic acid
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
-    label: "4-aminobenzoic acid"
+    label: 4-aminobenzoic acid
   concentration:
     value: '0.05'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30753
-    label: "4-aminobenzoic acid"
+    label: 4-aminobenzoic acid
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
     id: CHEBI:132751
-    label: "thiamine hydrochloride dihydrate"
+    label: thiamine hydrochloride dihydrate
   concentration:
     value: '0.05'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:132751
-    label: "thiamine hydrochloride dihydrate"
+    label: thiamine hydrochloride dihydrate
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

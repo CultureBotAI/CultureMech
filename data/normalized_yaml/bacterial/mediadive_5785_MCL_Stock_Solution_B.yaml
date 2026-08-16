@@ -13,7 +13,7 @@ composition:
     label: FeCl3
   chebi_term:
     id: CHEBI:30808
-    label: "iron trichloride"
+    label: iron trichloride
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: H3BO3

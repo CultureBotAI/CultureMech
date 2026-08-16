@@ -25,7 +25,7 @@ composition:
     label: L-Tryptophan
   chebi_term:
     id: CHEBI:16828
-    label: "L-tryptophan"
+    label: L-tryptophan
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Leucine
@@ -37,7 +37,7 @@ composition:
     label: L-Leucine
   chebi_term:
     id: CHEBI:15603
-    label: "L-leucine"
+    label: L-leucine
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Valine
@@ -49,7 +49,7 @@ composition:
     label: L-Valine
   chebi_term:
     id: CHEBI:16414
-    label: "L-valine"
+    label: L-valine
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Proline
@@ -61,7 +61,7 @@ composition:
     label: L-Proline
   chebi_term:
     id: CHEBI:17203
-    label: "L-proline"
+    label: L-proline
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Isoleucine
@@ -73,7 +73,7 @@ composition:
     label: L-Isoleucine
   chebi_term:
     id: CHEBI:17191
-    label: "L-isoleucine"
+    label: L-isoleucine
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Methionine
@@ -85,7 +85,7 @@ composition:
     label: L-Methionine
   chebi_term:
     id: CHEBI:16643
-    label: "L-methionine"
+    label: L-methionine
     confidence: 0.9
     match_type: corpus_consensus
 preparation_notes: 'Adjust pH to 6.0-7.0.

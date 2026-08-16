@@ -16,13 +16,13 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '3333.33'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   notes: Copied from referenced JCM Medium 462
 - preferred_term: Na2SO4
   term:
@@ -33,29 +33,29 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32149
-    label: "sodium sulfate"
+    label: sodium sulfate
   notes: Copied from referenced JCM Medium 462
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
   concentration:
     value: '500'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
   notes: Copied from referenced JCM Medium 462
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
   concentration:
     value: '25'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
   notes: Copied from referenced JCM Medium 462
 - preferred_term: NH4Cl
   term:
@@ -66,7 +66,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: "ammonium chloride"
+    label: ammonium chloride
   notes: Copied from referenced JCM Medium 462
 - preferred_term: KH2PO4
   term:
@@ -77,7 +77,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
   notes: Copied from referenced JCM Medium 462
 - preferred_term: KBr
   term:
@@ -88,51 +88,51 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32030
-    label: "potassium bromide"
+    label: potassium bromide
   notes: Copied from referenced JCM Medium 462
 - preferred_term: KCl
   term:
     id: CHEBI:32588
-    label: "potassium chloride"
+    label: potassium chloride
   concentration:
     value: '83.3333'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: "potassium chloride"
+    label: potassium chloride
   notes: Copied from referenced JCM Medium 462
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
-    label: "sodium hydrogencarbonate"
+    label: sodium hydrogencarbonate
   concentration:
     value: '416.667'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: "sodium hydrogencarbonate"
+    label: sodium hydrogencarbonate
   notes: Copied from referenced JCM Medium 462
 - preferred_term: Sodium lactate
   term:
     id: CHEBI:75228
-    label: "sodium lactate"
+    label: sodium lactate
   concentration:
     value: '375'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75228
-    label: "sodium lactate"
+    label: sodium lactate
   notes: Copied from referenced JCM Medium 462
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
-    label: "sodium sulfide nonahydrate"
+    label: sodium sulfide nonahydrate
   concentration:
     value: '50'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:76209
-    label: "sodium sulfide nonahydrate"
+    label: sodium sulfide nonahydrate
   notes: Copied from referenced JCM Medium 462
 - preferred_term: Resazurin
   term:
@@ -148,35 +148,35 @@ ingredients:
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
-    label: "riboflavin"
+    label: riboflavin
   concentration:
     value: '0.025'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17015
-    label: "riboflavin"
+    label: riboflavin
   notes: Copied from referenced JCM Medium 462
 - preferred_term: HCl
   term:
     id: CHEBI:17883
-    label: "hydrogen chloride"
+    label: hydrogen chloride
   concentration:
     value: '12.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17883
-    label: "hydrogen chloride"
+    label: hydrogen chloride
   notes: Copied from referenced JCM Medium 462
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
   concentration:
     value: '2.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
   notes: Copied from referenced JCM Medium 462
 - preferred_term: H3BO3
   term:
@@ -187,128 +187,128 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: "boric acid"
+    label: boric acid
   notes: Copied from referenced JCM Medium 462
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
   notes: Copied from referenced JCM Medium 462
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
-    label: "cobalt dichloride"
+    label: cobalt dichloride
   concentration:
     value: '0.19'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:35696
-    label: "cobalt dichloride"
+    label: cobalt dichloride
   notes: Copied from referenced JCM Medium 462
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
-    label: "nickel dichloride"
+    label: nickel dichloride
   concentration:
     value: '0.024'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34887
-    label: "nickel dichloride"
+    label: nickel dichloride
   notes: Copied from referenced JCM Medium 462
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
-    label: "copper(II) chloride dihydrate"
+    label: copper(II) chloride dihydrate
   concentration:
     value: '0.002'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86318
-    label: "copper(II) chloride dihydrate"
+    label: copper(II) chloride dihydrate
   notes: Copied from referenced JCM Medium 462
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
-    label: "zinc sulfate heptahydrate"
+    label: zinc sulfate heptahydrate
   concentration:
     value: '0.144'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32312
-    label: "zinc sulfate heptahydrate"
+    label: zinc sulfate heptahydrate
   notes: Copied from referenced JCM Medium 462
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
-    label: "sodium molybdate dihydrate"
+    label: sodium molybdate dihydrate
   concentration:
     value: '0.036'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75213
-    label: "sodium molybdate dihydrate"
+    label: sodium molybdate dihydrate
   notes: Copied from referenced JCM Medium 462
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
-    label: "4-aminobenzoic acid"
+    label: 4-aminobenzoic acid
   concentration:
     value: '0.04'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30753
-    label: "4-aminobenzoic acid"
+    label: 4-aminobenzoic acid
   notes: Copied from referenced JCM Medium 462
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
-    label: "biotin"
+    label: biotin
   concentration:
     value: '0.01'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
-    label: "biotin"
+    label: biotin
   notes: Copied from referenced JCM Medium 462
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
-    label: "nicotinic acid"
+    label: nicotinic acid
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15940
-    label: "nicotinic acid"
+    label: nicotinic acid
   notes: Copied from referenced JCM Medium 462
 - preferred_term: DL-Calcium pantothenate
   term:
     id: CHEBI:31345
-    label: "Calcium pantothenate"
+    label: Calcium pantothenate
   concentration:
     value: '0.05'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31345
-    label: "Calcium pantothenate"
+    label: Calcium pantothenate
   notes: Copied from referenced JCM Medium 462
 - preferred_term: Pyridoxine hydrochloride
   term:
     id: CHEBI:30961
-    label: "pyridoxine hydrochloride"
+    label: pyridoxine hydrochloride
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30961
-    label: "pyridoxine hydrochloride"
+    label: pyridoxine hydrochloride
   notes: Copied from referenced JCM Medium 462
 - preferred_term: Sodium phosphate buffer
   concentration:
@@ -319,57 +319,57 @@ ingredients:
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
-    label: "thiamine hydrochloride"
+    label: thiamine hydrochloride
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:49105
-    label: "thiamine hydrochloride"
+    label: thiamine hydrochloride
   notes: Copied from referenced JCM Medium 462
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
-    label: "cyanocob(III)alamin"
+    label: cyanocob(III)alamin
   concentration:
     value: '0.05'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17439
-    label: "cyanocob(III)alamin"
+    label: cyanocob(III)alamin
   notes: Copied from referenced JCM Medium 462
 - preferred_term: NaOH
   term:
     id: CHEBI:32145
-    label: "sodium hydroxide"
+    label: sodium hydroxide
   concentration:
     value: '0.4'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32145
-    label: "sodium hydroxide"
+    label: sodium hydroxide
   notes: Copied from referenced JCM Medium 462
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
-    label: "disodium selenite pentahydrate"
+    label: disodium selenite pentahydrate
   concentration:
     value: '0.006'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131361
-    label: "disodium selenite pentahydrate"
+    label: disodium selenite pentahydrate
   notes: Copied from referenced JCM Medium 462
 - preferred_term: Na2WO4 x 2 H2O
   term:
     id: CHEBI:63939
-    label: "sodium tungstate dihydrate"
+    label: sodium tungstate dihydrate
   concentration:
     value: '0.008'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63939
-    label: "sodium tungstate dihydrate"
+    label: sodium tungstate dihydrate
   notes: Copied from referenced JCM Medium 462
 preparation_steps:
 - step_number: 1

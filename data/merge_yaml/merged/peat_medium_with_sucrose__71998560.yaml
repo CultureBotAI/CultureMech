@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -58,7 +58,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: "carbon dioxide"
+    label: carbon dioxide
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -66,7 +66,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 media_term:
   preferred_term: TOGO Medium M1156
   term:

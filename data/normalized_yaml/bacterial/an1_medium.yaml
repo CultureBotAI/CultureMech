@@ -32,17 +32,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '2.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: Na-thioglycolate
   term:
     id: CHEBI:86481
@@ -52,17 +52,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86481
-    label: "sodium thioglycolate"
+    label: sodium thioglycolate
 - preferred_term: Sulfur
   term:
     id: CHEBI:26833
-    label: "sulfur atom"
+    label: sulfur atom
   concentration:
     value: '8'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26833
-    label: "sulfur atom"
+    label: sulfur atom
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806

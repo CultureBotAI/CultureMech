@@ -15,7 +15,7 @@ ingredients:
 - preferred_term: Thioglycolate
   term:
     id: CHEBI:30066
-    label: "thioglycolate(1-)"
+    label: thioglycolate(1-)
   concentration:
     value: '29.8'
     unit: G_PER_L

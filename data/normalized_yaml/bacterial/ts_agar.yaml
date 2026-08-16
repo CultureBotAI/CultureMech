@@ -24,33 +24,33 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
 - preferred_term: Sucrose
   term:
     id: CHEBI:17992
-    label: "sucrose"
+    label: sucrose
   concentration:
     value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17992
-    label: "sucrose"
+    label: sucrose
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

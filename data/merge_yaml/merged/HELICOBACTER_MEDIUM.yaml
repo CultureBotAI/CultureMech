@@ -31,13 +31,13 @@ ingredients:
 - preferred_term: Amphotericin B
   term:
     id: CHEBI:2682
-    label: "amphotericin B"
+    label: amphotericin B
   concentration:
     value: '100'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2682
-    label: "amphotericin B"
+    label: amphotericin B
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

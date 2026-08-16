@@ -9,44 +9,44 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
   concentration:
     value: '55.51'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
 - preferred_term: Tromethamine
   concentration:
     value: '49.7'
     unit: MILLIMOLAR
   term:
     id: CHEBI:9754
-    label: "tris"
+    label: tris
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
-    label: "ammonium chloride"
+    label: ammonium chloride
   concentration:
     value: '138.3'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: "ammonium chloride"
+    label: ammonium chloride
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.006199'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75215
-    label: "sodium molybdate (anhydrous)"
+    label: sodium molybdate (anhydrous)
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.006408'
     unit: MILLIMOLAR
   term:
     id: CHEBI:23414
-    label: "copper(II) sulfate"
+    label: copper(II) sulfate
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -68,24 +68,24 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:35696
-    label: "cobalt dichloride"
+    label: cobalt dichloride
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.01798'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75832
-    label: "iron(2+) sulfate (anhydrous)"
+    label: iron(2+) sulfate (anhydrous)
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: "magnesium sulfate"
+    label: magnesium sulfate
   concentration:
     value: '2.16'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: "magnesium sulfate"
+    label: magnesium sulfate
 - preferred_term: Potassium chloride
   concentration:
     value: '6.975'
@@ -102,34 +102,34 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:63041
-    label: "manganese(II) chloride"
+    label: manganese(II) chloride
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
-    label: "boric acid"
+    label: boric acid
   concentration:
     value: '0.1779'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: "boric acid"
+    label: boric acid
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
-    label: "zinc sulfate"
+    label: zinc sulfate
   concentration:
     value: '0.07651'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:35176
-    label: "zinc sulfate"
+    label: zinc sulfate
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '11.17'
     unit: MILLIMOLAR
   term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

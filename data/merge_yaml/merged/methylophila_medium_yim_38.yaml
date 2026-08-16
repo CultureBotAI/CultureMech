@@ -24,83 +24,83 @@ ingredients:
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
   concentration:
     value: '4'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
     id: CHEBI:132751
-    label: "thiamine hydrochloride dihydrate"
+    label: thiamine hydrochloride dihydrate
   concentration:
     value: '0.0002'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:132751
-    label: "thiamine hydrochloride dihydrate"
+    label: thiamine hydrochloride dihydrate
 - preferred_term: Pyridoxine hydrochloride
   term:
     id: CHEBI:30961
-    label: "pyridoxine hydrochloride"
+    label: pyridoxine hydrochloride
   concentration:
     value: '0.0002'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30961
-    label: "pyridoxine hydrochloride"
+    label: pyridoxine hydrochloride
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
-    label: "riboflavin"
+    label: riboflavin
   concentration:
     value: '0.0002'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17015
-    label: "riboflavin"
+    label: riboflavin
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
-    label: "nicotinic acid"
+    label: nicotinic acid
   concentration:
     value: '0.0002'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15940
-    label: "nicotinic acid"
+    label: nicotinic acid
 - preferred_term: L-Phenylalanine
   term:
     id: CHEBI:17295
-    label: "L-phenylalanine"
+    label: L-phenylalanine
   concentration:
     value: '0.0002'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17295
-    label: "L-phenylalanine"
+    label: L-phenylalanine
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
-    label: "biotin"
+    label: biotin
   concentration:
     value: '0.0002'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
-    label: "biotin"
+    label: biotin
 preparation_steps:
 - step_number: 1
   action: HEAT

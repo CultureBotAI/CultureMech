@@ -23,7 +23,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -33,7 +33,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: "ammonium chloride"
+    label: ammonium chloride
 - preferred_term: Yeast extract
   concentration:
     value: '0.1'
@@ -47,27 +47,27 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32954
-    label: "sodium acetate"
+    label: sodium acetate
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '17.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: Na2B4O7
   concentration:
     value: '4'
     unit: G_PER_L
   term:
     id: CHEBI:38892
-    label: "disodium tetraborate"
+    label: disodium tetraborate
   mediaingredientmech_chebi_term:
     id: CHEBI:38892
-    label: "disodium tetraborate"
+    label: disodium tetraborate
 - preferred_term: NaOH
   term:
     id: CHEBI:32145

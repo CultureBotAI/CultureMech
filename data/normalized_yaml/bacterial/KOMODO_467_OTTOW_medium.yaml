@@ -17,13 +17,13 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
 - preferred_term: Peptone
   concentration:
     value: '7.5'
@@ -43,23 +43,23 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: Tap water
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   concentration:
     value: '1000'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 applications:
 - Microbial cultivation
 curation_history:

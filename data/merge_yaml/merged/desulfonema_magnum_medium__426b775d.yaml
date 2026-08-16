@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '6.8'
@@ -47,7 +47,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 - preferred_term: KH2PO4
   concentration:
     value: '0.14'
@@ -59,7 +59,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: NH4Cl
   concentration:
     value: '0.25'
@@ -92,7 +92,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
 - preferred_term: KCl
   concentration:
     value: '0.72'
@@ -112,7 +112,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: "carbon dioxide"
+    label: carbon dioxide
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -120,7 +120,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 - preferred_term: sodium dithionate
   notes: 'Properties: Simple component, Defined component'
   concentration:
@@ -133,7 +133,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 media_term:
   preferred_term: TOGO Medium M915
   term:

@@ -37,7 +37,7 @@ composition:
     label: Na2S x 9 H2O
   chebi_term:
     id: CHEBI:76209
-    label: "sodium sulfide nonahydrate"
+    label: sodium sulfide nonahydrate
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Use Medium No. 744. Before autoclaving, adjust pH of the medium

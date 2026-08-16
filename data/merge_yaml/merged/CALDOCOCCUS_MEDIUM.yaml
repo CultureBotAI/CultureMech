@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: NaCl
   concentration:
     value: '0.1'
@@ -38,7 +38,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -59,7 +59,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:76209
-    label: "sodium sulfide nonahydrate"
+    label: sodium sulfide nonahydrate
 - preferred_term: FeSO4・7H2O
   concentration:
     value: '0.05'
@@ -68,7 +68,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: Sulfur
   concentration:
     value: '2'
@@ -114,7 +114,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: "carbon dioxide"
+    label: carbon dioxide
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
@@ -122,7 +122,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -130,7 +130,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: "dihydrogen"
+    label: dihydrogen
 - preferred_term: Na2MoO4・2H2O
   concentration:
     value: '0.1'
@@ -160,7 +160,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:32312
-    label: "zinc sulfate heptahydrate"
+    label: zinc sulfate heptahydrate
 - preferred_term: CuSO4・5H2O
   concentration:
     value: '0.1'
@@ -169,7 +169,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:31440
-    label: "copper(II) sulfate pentahydrate"
+    label: copper(II) sulfate pentahydrate
 - preferred_term: CoSO4 x 7 H2O
   concentration:
     value: '1'
@@ -184,7 +184,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86360
-    label: "manganese(II) sulfate"
+    label: manganese(II) sulfate
 media_term:
   preferred_term: TOGO Medium M514
   term:

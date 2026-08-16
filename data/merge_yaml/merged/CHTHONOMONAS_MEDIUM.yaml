@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 3 duplicates: 1000.0, 1000.0, 1000.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: Yeast extract
   concentration:
     value: '0.01'
@@ -96,10 +96,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
   term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '190'
@@ -244,10 +244,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:132751
-    label: "thiamine hydrochloride dihydrate"
+    label: thiamine hydrochloride dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:132751
-    label: "thiamine hydrochloride dihydrate"
+    label: thiamine hydrochloride dihydrate
 - preferred_term: D(+)-Biotin
   concentration:
     value: '20'

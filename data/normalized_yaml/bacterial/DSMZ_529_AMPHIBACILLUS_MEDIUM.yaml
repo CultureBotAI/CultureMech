@@ -16,13 +16,13 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -32,7 +32,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: NH4NO3
   concentration:
     value: '2'
@@ -42,17 +42,17 @@ ingredients:
     label: ammonium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63038
-    label: "ammonium nitrate"
+    label: ammonium nitrate
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
 - preferred_term: MnSO4 x 7 H2O
   term:
     id: CHEBI:86360
@@ -62,27 +62,27 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86360
-    label: "manganese(II) sulfate"
+    label: manganese(II) sulfate
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
   concentration:
     value: '0.005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 - preferred_term: Yeast extract
   concentration:
     value: '3'
@@ -94,33 +94,33 @@ ingredients:
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
-    label: "sodium hydrogencarbonate"
+    label: sodium hydrogencarbonate
   concentration:
     value: '42'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: "sodium hydrogencarbonate"
+    label: sodium hydrogencarbonate
 - preferred_term: Na2CO3 anhydrous
   term:
     id: CHEBI:29377
-    label: "sodium carbonate"
+    label: sodium carbonate
   concentration:
     value: '53'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:29377
-    label: "sodium carbonate"
+    label: sodium carbonate
 preparation_steps:
 - step_number: 1
   action: MIX

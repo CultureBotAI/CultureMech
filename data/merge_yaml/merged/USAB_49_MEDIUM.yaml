@@ -22,7 +22,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: "ammonium chloride"
+    label: ammonium chloride
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -32,7 +32,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -42,39 +42,39 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '1.986193'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.986193, 1.0]'
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
   concentration:
     value: '0.1986193'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.0986193, 0.1]'
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 - preferred_term: KCl
   term:
     id: CHEBI:32588
-    label: "potassium chloride"
+    label: potassium chloride
   concentration:
     value: '0.0986193'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: "potassium chloride"
+    label: potassium chloride
 - preferred_term: Yeast extract
   concentration:
     value: '0.986193'
@@ -82,13 +82,13 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
   concentration:
     value: '3.5503'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
 - preferred_term: Peptone
   concentration:
     value: '0.986193'
@@ -96,13 +96,13 @@ ingredients:
 - preferred_term: Tween 80
   term:
     id: CHEBI:53426
-    label: "polysorbate 80"
+    label: polysorbate 80
   concentration:
     value: '12.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:53426
-    label: "polysorbate 80"
+    label: polysorbate 80
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -116,53 +116,53 @@ ingredients:
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
-    label: "nitrilotriacetic acid"
+    label: nitrilotriacetic acid
   concentration:
     value: '12.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:44557
-    label: "nitrilotriacetic acid"
+    label: nitrilotriacetic acid
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
-    label: "iron dichloride tetrahydrate"
+    label: iron dichloride tetrahydrate
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86249
-    label: "iron dichloride tetrahydrate"
+    label: iron dichloride tetrahydrate
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
-    label: "cobalt dichloride"
+    label: cobalt dichloride
   concentration:
     value: '0.02'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:35696
-    label: "cobalt dichloride"
+    label: cobalt dichloride
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
-    label: "zinc dichloride"
+    label: zinc dichloride
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:49976
-    label: "zinc dichloride"
+    label: zinc dichloride
 - preferred_term: CuCl2
   term:
     id: CHEBI:49553
@@ -172,7 +172,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:49553
-    label: "copper(II) chloride"
+    label: copper(II) chloride
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -182,27 +182,27 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: "boric acid"
+    label: boric acid
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
-    label: "sodium molybdate dihydrate"
+    label: sodium molybdate dihydrate
   concentration:
     value: '0.01'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75213
-    label: "sodium molybdate dihydrate"
+    label: sodium molybdate dihydrate
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
-    label: "disodium selenite pentahydrate"
+    label: disodium selenite pentahydrate
   concentration:
     value: '0.02'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131361
-    label: "disodium selenite pentahydrate"
+    label: disodium selenite pentahydrate
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

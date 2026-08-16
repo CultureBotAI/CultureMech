@@ -30,53 +30,53 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
   concentration:
     value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
 - preferred_term: Na glutamate
   term:
     id: CHEBI:64220
-    label: "monosodium glutamate"
+    label: monosodium glutamate
   concentration:
     value: '4'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:64220
-    label: "monosodium glutamate"
+    label: monosodium glutamate
 - preferred_term: Arginine
   term:
     id: CHEBI:29016
-    label: "arginine"
+    label: arginine
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:29016
-    label: "arginine"
+    label: arginine
 - preferred_term: Glycine
   term:
     id: CHEBI:15428
-    label: "glycine"
+    label: glycine
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15428
-    label: "glycine"
+    label: glycine
 - preferred_term: DL-Tryptophan
   term:
     id: CHEBI:27897
-    label: "tryptophan"
+    label: tryptophan
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:27897
-    label: "tryptophan"
+    label: tryptophan
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -86,27 +86,27 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: Tween 80
   term:
     id: CHEBI:53426
-    label: "polysorbate 80"
+    label: polysorbate 80
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:53426
-    label: "polysorbate 80"
+    label: polysorbate 80
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
-    label: "L-cysteine hydrochloride hydrate"
+    label: L-cysteine hydrochloride hydrate
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:91248
-    label: "L-cysteine hydrochloride hydrate"
+    label: L-cysteine hydrochloride hydrate
 preparation_steps:
 - step_number: 1
   action: MIX

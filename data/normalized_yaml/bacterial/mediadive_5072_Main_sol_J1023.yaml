@@ -41,7 +41,7 @@ composition:
     label: L-Lysine
   chebi_term:
     id: CHEBI:18019
-    label: "L-lysine"
+    label: L-lysine
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Sodium resazurin
@@ -77,7 +77,7 @@ composition:
     label: L-Cysteine HCl x H2O
   chebi_term:
     id: CHEBI:91248
-    label: "L-cysteine hydrochloride hydrate"
+    label: L-cysteine hydrochloride hydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -89,7 +89,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Adjust pH to 7.3. Prepare medium anaerobically and pour into rubber

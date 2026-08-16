@@ -9,58 +9,58 @@ ingredients:
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
-    label: "D-glucose"
+    label: D-glucose
   concentration:
     value: '11.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
   mediaingredientmech_chebi_term:
     id: CHEBI:17634
-    label: "D-glucose"
+    label: D-glucose
 - preferred_term: L-Tryptophan
   term:
     id: CHEBI:16828
-    label: "L-tryptophan"
+    label: L-tryptophan
   concentration:
     value: '0.2'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:trp-L'
   mediaingredientmech_chebi_term:
     id: CHEBI:16828
-    label: "L-tryptophan"
+    label: L-tryptophan
 - preferred_term: L-Phenylalanine
   term:
     id: CHEBI:17295
-    label: "L-phenylalanine"
+    label: L-phenylalanine
   concentration:
     value: '0.2'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:phe-L'
   mediaingredientmech_chebi_term:
     id: CHEBI:17295
-    label: "L-phenylalanine"
+    label: L-phenylalanine
 - preferred_term: L-Tyrosine
   term:
     id: CHEBI:17895
-    label: "L-tyrosine"
+    label: L-tyrosine
   concentration:
     value: '0.2'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:tyr-L'
   mediaingredientmech_chebi_term:
     id: CHEBI:17895
-    label: "L-tyrosine"
+    label: L-tyrosine
 - preferred_term: L-Proline
   term:
     id: CHEBI:17203
-    label: "L-proline"
+    label: L-proline
   concentration:
     value: '0.22'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pro-L'
   mediaingredientmech_chebi_term:
     id: CHEBI:17203
-    label: "L-proline"
+    label: L-proline
 - preferred_term: Citrate
   concentration:
     value: '9.5'
@@ -68,34 +68,34 @@ ingredients:
   notes: 'Cross-references: KEGG:cit'
   term:
     id: CHEBI:30769
-    label: "citric acid"
+    label: citric acid
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '57.0'
     unit: MILLIMOLAR
   term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
-    label: "thiamine hydrochloride"
+    label: thiamine hydrochloride
   concentration:
     value: '0.33'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:49105
-    label: "thiamine hydrochloride"
+    label: thiamine hydrochloride
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: "magnesium sulfate"
+    label: magnesium sulfate
   concentration:
     value: '0.81'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: "magnesium sulfate"
+    label: magnesium sulfate
 - preferred_term: Sodium ammonium phosphate
   concentration:
     value: '26.0'

@@ -25,46 +25,46 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
   concentration:
     value: '0.249004'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
   notes: Copied from referenced JCM Medium 363
 - preferred_term: Cellobiose
   term:
     id: CHEBI:17057
-    label: "cellobiose"
+    label: cellobiose
   concentration:
     value: '0.249004'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17057
-    label: "cellobiose"
+    label: cellobiose
   notes: Copied from referenced JCM Medium 363
 - preferred_term: Maltose
   term:
     id: CHEBI:17306
-    label: "maltose"
+    label: maltose
   concentration:
     value: '0.249004'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17306
-    label: "maltose"
+    label: maltose
   notes: Copied from referenced JCM Medium 363
 - preferred_term: Starch
   term:
     id: CHEBI:28017
-    label: "starch"
+    label: starch
   concentration:
     value: '0.249004'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:28017
-    label: "starch"
+    label: starch
   notes: Copied from referenced JCM Medium 363
 - preferred_term: Sodium resazurin
   concentration:
@@ -73,7 +73,7 @@ ingredients:
   notes: Copied from referenced JCM Medium 363
   term:
     id: CHEBI:8806
-    label: "Resazurin"
+    label: Resazurin
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -83,29 +83,29 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:29377
-    label: "sodium carbonate"
+    label: sodium carbonate
   notes: Copied from referenced JCM Medium 363
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
-    label: "L-cysteine hydrochloride hydrate"
+    label: L-cysteine hydrochloride hydrate
   concentration:
     value: '0.298805'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:91248
-    label: "L-cysteine hydrochloride hydrate"
+    label: L-cysteine hydrochloride hydrate
   notes: Copied from referenced JCM Medium 363
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '14.9402'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   notes: Copied from referenced JCM Medium 363
 preparation_steps:
 - step_number: 1

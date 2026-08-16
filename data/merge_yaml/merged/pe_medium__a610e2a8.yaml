@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 3 duplicates: 1.0, 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.12'
@@ -70,7 +70,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: K2HPO4
   concentration:
     value: '0.39'
@@ -183,7 +183,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: CoCl2·6H2O
   concentration:
     value: '0.024'
@@ -192,7 +192,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:35696
-    label: "cobalt dichloride"
+    label: cobalt dichloride
 - preferred_term: NiCl2·6H2O
   concentration:
     value: '0.12'
@@ -327,10 +327,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:30961
-    label: "pyridoxine hydrochloride"
+    label: pyridoxine hydrochloride
   mediaingredientmech_chebi_term:
     id: CHEBI:30961
-    label: "pyridoxine hydrochloride"
+    label: pyridoxine hydrochloride
 - preferred_term: Folic acid
   concentration:
     value: '50'

@@ -20,33 +20,33 @@ ingredients:
 - preferred_term: Maltose
   term:
     id: CHEBI:17306
-    label: "maltose"
+    label: maltose
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17306
-    label: "maltose"
+    label: maltose
 - preferred_term: Calcium Chloride
   term:
     id: CHEBI:3312
-    label: "calcium dichloride"
+    label: calcium dichloride
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:3312
-    label: "calcium dichloride"
+    label: calcium dichloride
 - preferred_term: Magnesium sulfate heptahydrate
   term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
 - preferred_term: HEPES
   term:
     id: CHEBI:46756

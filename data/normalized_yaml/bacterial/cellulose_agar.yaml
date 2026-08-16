@@ -21,17 +21,17 @@ ingredients:
     label: ammonium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63038
-    label: "ammonium nitrate"
+    label: ammonium nitrate
 - preferred_term: Urea
   term:
     id: CHEBI:16199
-    label: "urea"
+    label: urea
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16199
-    label: "urea"
+    label: urea
 - preferred_term: Casein
   concentration:
     value: '0.2'
@@ -39,13 +39,13 @@ ingredients:
 - preferred_term: L-Asparagine
   term:
     id: CHEBI:17196
-    label: "L-asparagine"
+    label: L-asparagine
   concentration:
     value: '0.25'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17196
-    label: "L-asparagine"
+    label: L-asparagine
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -55,37 +55,37 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '0.3'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
 - preferred_term: CaCO3
   term:
     id: CHEBI:3311
-    label: "calcium carbonate"
+    label: calcium carbonate
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:3311
-    label: "calcium carbonate"
+    label: calcium carbonate
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
   concentration:
     value: '0.005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: Yeast extract
   concentration:
     value: '0.1'
@@ -97,23 +97,23 @@ ingredients:
 - preferred_term: Cellulose
   term:
     id: CHEBI:18246
-    label: "(1->4)-beta-D-glucan"
+    label: (1->4)-beta-D-glucan
   concentration:
     value: '20'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:18246
-    label: "(1->4)-beta-D-glucan"
+    label: (1->4)-beta-D-glucan
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 preparation_steps:
 - step_number: 1
   action: MIX

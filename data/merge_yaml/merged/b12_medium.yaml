@@ -26,67 +26,67 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
   concentration:
     value: '0'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
   concentration:
     value: '2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
 - preferred_term: Asparagine
   term:
     id: CHEBI:22653
-    label: "asparagine"
+    label: asparagine
   concentration:
     value: '0.15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:22653
-    label: "asparagine"
+    label: asparagine
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
-    label: "cyanocob(III)alamin"
+    label: cyanocob(III)alamin
   concentration:
     value: 4e-05
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17439
-    label: "cyanocob(III)alamin"
+    label: cyanocob(III)alamin
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

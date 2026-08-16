@@ -13,7 +13,7 @@ composition:
     label: L-Rhamnose
   chebi_term:
     id: CHEBI:62345
-    label: "L-rhamnose"
+    label: L-rhamnose
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -25,7 +25,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Original volume: 10 mL'

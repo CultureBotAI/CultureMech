@@ -27,7 +27,7 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
 - preferred_term: Calcium chloride dihydrate
   concentration:
     value: '0.1'
@@ -86,7 +86,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: Cobalt(II) nitrate hexahydrate
   concentration:
     value: '1.0'
@@ -95,7 +95,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:86214
-    label: "cobalt dinitrate hexahydrate"
+    label: cobalt dinitrate hexahydrate
 - preferred_term: Calcium Chloride Dihydrate
   concentration:
     value: '1.0'
@@ -113,7 +113,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:32312
-    label: "zinc sulfate heptahydrate"
+    label: zinc sulfate heptahydrate
 - preferred_term: Copper (II) sulfate pentahydrate
   concentration:
     value: '0.1'
@@ -122,7 +122,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:31440
-    label: "copper(II) sulfate pentahydrate"
+    label: copper(II) sulfate pentahydrate
 - preferred_term: Aluminum potassium sulfate dodecahydrate
   concentration:
     value: '0.1'
@@ -131,7 +131,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:86465
-    label: "potassium aluminium sulfate dodecahydrate"
+    label: potassium aluminium sulfate dodecahydrate
 - preferred_term: Boric Acid
   concentration:
     value: '0.1'
@@ -148,7 +148,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:75213
-    label: "sodium molybdate dihydrate"
+    label: sodium molybdate dihydrate
 - preferred_term: Sodium selenite pentahydrate
   concentration:
     value: '0.01'
@@ -157,7 +157,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:131361
-    label: "disodium selenite pentahydrate"
+    label: disodium selenite pentahydrate
 - preferred_term: Sodium tungstate dihydrate
   concentration:
     value: '0.1'
@@ -166,7 +166,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:63939
-    label: "sodium tungstate dihydrate"
+    label: sodium tungstate dihydrate
 - preferred_term: Nickel (II) chloride hexahydrate
   concentration:
     value: '0.2'
@@ -175,7 +175,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:53542
-    label: "nickel chloride hexahydrate"
+    label: nickel chloride hexahydrate
 - preferred_term: Folic Acid
   concentration:
     value: '20.0'
@@ -191,7 +191,7 @@ ingredients:
     unit: MICROG_PER_L
   term:
     id: CHEBI:30961
-    label: "pyridoxine hydrochloride"
+    label: pyridoxine hydrochloride
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-56-0; MW: 205.64;
     From ATCC Wolfe''s vitamin mix'
 - preferred_term: Riboflavin
@@ -281,7 +281,7 @@ ingredients:
   notes: 'CAS: 1132-61-2; MW: 209.2633; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:44115
-    label: "3-(N-morpholino)propanesulfonic acid"
+    label: 3-(N-morpholino)propanesulfonic acid
 - preferred_term: Sodium nitrate
   concentration:
     value: '10'

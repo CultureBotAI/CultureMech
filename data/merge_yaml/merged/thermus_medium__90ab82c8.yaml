@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '2'
@@ -56,13 +56,13 @@ ingredients:
   notes: 'Role: Solidifying component; Properties: Organic compound, Undefined component'
   term:
     id: CHEBI:85248
-    label: "gellan gum"
+    label: gellan gum
   concentration:
     value: variable
     unit: VARIABLE
   mediaingredientmech_chebi_term:
     id: CHEBI:85248
-    label: "gellan gum"
+    label: gellan gum
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:

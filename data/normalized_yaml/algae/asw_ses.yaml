@@ -61,7 +61,7 @@ ingredients:
 - preferred_term: NaNO
   term:
     id: CHEBI:34545
-    label: "Azimilide"
+    label: Azimilide
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -76,7 +76,7 @@ ingredients:
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -91,7 +91,7 @@ ingredients:
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -106,7 +106,7 @@ ingredients:
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
-    label: "biotin"
+    label: biotin
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -136,7 +136,7 @@ ingredients:
 - preferred_term: Cyanocobalamin
   term:
     id: CHEBI:17439
-    label: "cyanocob(III)alamin"
+    label: cyanocob(III)alamin
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -151,7 +151,7 @@ ingredients:
 - preferred_term: Folic Acid
   term:
     id: CHEBI:27470
-    label: "folic acid"
+    label: folic acid
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -166,7 +166,7 @@ ingredients:
 - preferred_term: Inositol
   term:
     id: CHEBI:17268
-    label: "myo-inositol"
+    label: myo-inositol
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 0.95
@@ -181,7 +181,7 @@ ingredients:
 - preferred_term: Nicotinic Acid
   term:
     id: CHEBI:15940
-    label: "nicotinic acid"
+    label: nicotinic acid
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -196,7 +196,7 @@ ingredients:
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
-    label: "thiamine hydrochloride"
+    label: thiamine hydrochloride
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -211,7 +211,7 @@ ingredients:
 - preferred_term: Thymine
   term:
     id: CHEBI:17821
-    label: "thymine"
+    label: thymine
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -226,7 +226,7 @@ ingredients:
 - preferred_term: Tricine
   term:
     id: CHEBI:46760
-    label: "tricine"
+    label: tricine
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0

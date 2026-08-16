@@ -27,7 +27,7 @@ composition:
     label: Na-pyruvate
   chebi_term:
     id: CHEBI:50144
-    label: "sodium pyruvate"
+    label: sodium pyruvate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: (NH4)2SO4
@@ -75,7 +75,7 @@ composition:
     label: Co(NO3)2 x 6 H2O
   chebi_term:
     id: CHEBI:86214
-    label: "cobalt dinitrate hexahydrate"
+    label: cobalt dinitrate hexahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na2WO4 x 2 H2O
@@ -87,7 +87,7 @@ composition:
     label: Na2WO4 x 2 H2O
   chebi_term:
     id: CHEBI:63939
-    label: "sodium tungstate dihydrate"
+    label: sodium tungstate dihydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na2MoO4 x 2 H2O
@@ -134,7 +134,7 @@ composition:
     label: NiCl2 x 6 H2O
   chebi_term:
     id: CHEBI:34887
-    label: "nickel dichloride"
+    label: nickel dichloride
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Sodium resazurin
@@ -158,7 +158,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Original volume: 608 mL'

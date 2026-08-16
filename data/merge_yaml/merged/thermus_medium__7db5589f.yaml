@@ -14,10 +14,10 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '2'
@@ -50,10 +50,10 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:63005
-    label: "sodium nitrate"
+    label: sodium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63005
-    label: "sodium nitrate"
+    label: sodium nitrate
 - preferred_term: KNO3
   concentration:
     value: '0.1'
@@ -98,10 +98,10 @@ ingredients:
     Organic compound'
   term:
     id: CHEBI:64243
-    label: "monosodium L-glutamate"
+    label: monosodium L-glutamate
   mediaingredientmech_chebi_term:
     id: CHEBI:64243
-    label: "monosodium L-glutamate"
+    label: monosodium L-glutamate
 - preferred_term: Gelrite (if needed)
   concentration:
     value: '8'

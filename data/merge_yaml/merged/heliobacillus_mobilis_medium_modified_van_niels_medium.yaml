@@ -22,17 +22,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: "magnesium sulfate"
+    label: magnesium sulfate
 - preferred_term: EDTA
   term:
     id: CHEBI:64755
-    label: "EDTA(2-)"
+    label: EDTA(2-)
   concentration:
     value: '0.002'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:64755
-    label: "EDTA(2-)"
+    label: EDTA(2-)
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -46,7 +46,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: Na-pyruvate
   term:
     id: CHEBI:50144
@@ -56,7 +56,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:50144
-    label: "sodium pyruvate"
+    label: sodium pyruvate
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -66,77 +66,77 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: "boric acid"
+    label: boric acid
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
   concentration:
     value: '1.81'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
-    label: "zinc sulfate heptahydrate"
+    label: zinc sulfate heptahydrate
   concentration:
     value: '0.222'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32312
-    label: "zinc sulfate heptahydrate"
+    label: zinc sulfate heptahydrate
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
-    label: "sodium molybdate dihydrate"
+    label: sodium molybdate dihydrate
   concentration:
     value: '0.39'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75213
-    label: "sodium molybdate dihydrate"
+    label: sodium molybdate dihydrate
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
-    label: "copper(II) sulfate pentahydrate"
+    label: copper(II) sulfate pentahydrate
   concentration:
     value: '0.079'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31440
-    label: "copper(II) sulfate pentahydrate"
+    label: copper(II) sulfate pentahydrate
 - preferred_term: Co(NO3)2 x 6 H2O
   term:
     id: CHEBI:86214
-    label: "cobalt dinitrate hexahydrate"
+    label: cobalt dinitrate hexahydrate
   concentration:
     value: '0.0494'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86214
-    label: "cobalt dinitrate hexahydrate"
+    label: cobalt dinitrate hexahydrate
 - preferred_term: Ferric ammonium citrate
   term:
     id: CHEBI:31604
-    label: "ferric ammonium citrate"
+    label: ferric ammonium citrate
   concentration:
     value: '2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31604
-    label: "ferric ammonium citrate"
+    label: ferric ammonium citrate
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
   concentration:
     value: '3'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE

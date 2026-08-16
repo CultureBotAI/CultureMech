@@ -25,35 +25,35 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
   concentration:
     value: '70'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 - preferred_term: HCl
   term:
     id: CHEBI:17883
-    label: "hydrogen chloride"
+    label: hydrogen chloride
   notes: pH adjustment (extracted from notes)
   concentration:
     value: variable
     unit: VARIABLE
   mediaingredientmech_chebi_term:
     id: CHEBI:17883
-    label: "hydrogen chloride"
+    label: hydrogen chloride
 applications:
 - Microbial cultivation
 curation_history:

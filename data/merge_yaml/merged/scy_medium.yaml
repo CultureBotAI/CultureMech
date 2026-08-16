@@ -31,13 +31,13 @@ ingredients:
 - preferred_term: Sucrose
   term:
     id: CHEBI:17992
-    label: "sucrose"
+    label: sucrose
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17992
-    label: "sucrose"
+    label: sucrose
 - preferred_term: Casitone
   concentration:
     value: '0.75'
@@ -70,7 +70,7 @@ ingredients:
 - preferred_term: Peptic digest of soybean meal
   term:
     id: FOODON:03315720
-    label: "vegetable protein, hydrolyzed"
+    label: vegetable protein, hydrolyzed
   concentration:
     value: '3.0'
     unit: G_PER_L
@@ -91,7 +91,7 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
   concentration:
     value: '2.5'
     unit: G_PER_L
@@ -164,23 +164,23 @@ ingredients:
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
     id: CHEBI:132751
-    label: "thiamine hydrochloride dihydrate"
+    label: thiamine hydrochloride dihydrate
   concentration:
     value: '0.0004'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:132751
-    label: "thiamine hydrochloride dihydrate"
+    label: thiamine hydrochloride dihydrate
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
-    label: "cyanocob(III)alamin"
+    label: cyanocob(III)alamin
   concentration:
     value: 1e-05
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17439
-    label: "cyanocob(III)alamin"
+    label: cyanocob(III)alamin
 applications:
 - Microbial cultivation
 curation_history:

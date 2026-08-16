@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: CaCl2 × 2 H2O
   concentration:
     value: '0.14'
@@ -26,7 +26,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 - preferred_term: MgSO4 × 7 H2O
   concentration:
     value: '0.8'
@@ -56,7 +56,7 @@ ingredients:
     component'
   term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
 - preferred_term: Fe(III)NH4-Citrate
   concentration:
     value: '4.6'

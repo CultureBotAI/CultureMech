@@ -16,13 +16,13 @@ ingredients:
 - preferred_term: Marine agar 2216
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '55.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 - preferred_term: Casitone
   concentration:
     value: '1'

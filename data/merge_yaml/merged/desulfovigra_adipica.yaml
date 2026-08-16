@@ -25,7 +25,7 @@ ingredients:
     unit: VARIABLE
   mediaingredientmech_chebi_term:
     id: CHEBI:29377
-    label: "sodium carbonate"
+    label: sodium carbonate
   term:
     id: CHEBI:29377
     label: sodium carbonate

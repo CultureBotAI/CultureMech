@@ -17,13 +17,13 @@ ingredients:
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
-    label: "D-glucose"
+    label: D-glucose
   concentration:
     value: '2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17634
-    label: "D-glucose"
+    label: D-glucose
 - preferred_term: Trypticase peptone
   concentration:
     value: '1'
@@ -38,7 +38,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:9754
-    label: "tris"
+    label: tris
 - preferred_term: Sea water
   concentration:
     value: '750'
@@ -49,17 +49,17 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:8806
-    label: "Resazurin"
+    label: Resazurin
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
-    label: "L-cysteine hydrochloride hydrate"
+    label: L-cysteine hydrochloride hydrate
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:91248
-    label: "L-cysteine hydrochloride hydrate"
+    label: L-cysteine hydrochloride hydrate
 applications:
 - Microbial cultivation
 curation_history:

@@ -23,13 +23,13 @@ ingredients:
 - preferred_term: Starch
   term:
     id: CHEBI:28017
-    label: "starch"
+    label: starch
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:28017
-    label: "starch"
+    label: starch
 - preferred_term: Sea water
   concentration:
     value: '1000'
@@ -37,13 +37,13 @@ ingredients:
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '20'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 applications:
 - Microbial cultivation
 curation_history:

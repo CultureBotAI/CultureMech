@@ -24,33 +24,33 @@ ingredients:
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '24'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
   concentration:
     value: '11'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
@@ -60,27 +60,27 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32149
-    label: "sodium sulfate"
+    label: sodium sulfate
 - preferred_term: CaCl2 x 6 H2O
   term:
     id: CHEBI:91243
-    label: "calcium chloride hexahydrate"
+    label: calcium chloride hexahydrate
   concentration:
     value: '2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:91243
-    label: "calcium chloride hexahydrate"
+    label: calcium chloride hexahydrate
 - preferred_term: KCl
   term:
     id: CHEBI:32588
-    label: "potassium chloride"
+    label: potassium chloride
   concentration:
     value: '0.7'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: "potassium chloride"
+    label: potassium chloride
 - preferred_term: KBr
   term:
     id: CHEBI:32030
@@ -90,7 +90,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32030
-    label: "potassium bromide"
+    label: potassium bromide
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -100,27 +100,27 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: "boric acid"
+    label: boric acid
 - preferred_term: NaSiO3 x 9 H2O
   concentration:
     value: '0.005'
     unit: G_PER_L
   term:
     id: CHEBI:132108
-    label: "sodium silicate nonahydrate"
+    label: sodium silicate nonahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:132108
-    label: "sodium silicate nonahydrate"
+    label: sodium silicate nonahydrate
 - preferred_term: SrCl2 x 6 H2O
   term:
     id: CHEBI:36385
-    label: "strontium dichloride hexahydrate"
+    label: strontium dichloride hexahydrate
   concentration:
     value: '0.04'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:36385
-    label: "strontium dichloride hexahydrate"
+    label: strontium dichloride hexahydrate
 - preferred_term: NaF
   term:
     id: CHEBI:28741
@@ -130,7 +130,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:28741
-    label: "sodium fluoride"
+    label: sodium fluoride
 - preferred_term: NH4NO3
   concentration:
     value: '0.002'
@@ -140,17 +140,17 @@ ingredients:
     label: ammonium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63038
-    label: "ammonium nitrate"
+    label: ammonium nitrate
 - preferred_term: Fe(III)PO4 x 4 H2O
   term:
     id: CHEBI:131372
-    label: "iron(3+) phosphate tetrahydrate"
+    label: iron(3+) phosphate tetrahydrate
   concentration:
     value: '0.001'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131372
-    label: "iron(3+) phosphate tetrahydrate"
+    label: iron(3+) phosphate tetrahydrate
 applications:
 - Microbial cultivation
 curation_history:

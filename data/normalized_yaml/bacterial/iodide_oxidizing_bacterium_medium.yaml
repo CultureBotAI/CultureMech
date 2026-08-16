@@ -15,33 +15,33 @@ ingredients:
 - preferred_term: Marine agar 2216
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '55.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 - preferred_term: Potassium iodide
   term:
     id: CHEBI:8346
-    label: "potassium iodide"
+    label: potassium iodide
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:8346
-    label: "potassium iodide"
+    label: potassium iodide
 - preferred_term: Starch
   term:
     id: CHEBI:28017
-    label: "starch"
+    label: starch
   concentration:
     value: '1.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:28017
-    label: "starch"
+    label: starch
 applications:
 - Microbial cultivation
 curation_history:

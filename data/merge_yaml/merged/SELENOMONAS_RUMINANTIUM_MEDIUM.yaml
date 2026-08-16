@@ -17,13 +17,13 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
 - preferred_term: Trypticase
   concentration:
     value: '5'
@@ -43,7 +43,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: Na-acetate
   term:
     id: CHEBI:32954
@@ -53,7 +53,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32954
-    label: "sodium acetate"
+    label: sodium acetate
 - preferred_term: Yeast extract
   concentration:
     value: '2'
@@ -61,13 +61,13 @@ ingredients:
 - preferred_term: n-Valeric acid
   term:
     id: CHEBI:17418
-    label: "valeric acid"
+    label: valeric acid
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17418
-    label: "valeric acid"
+    label: valeric acid
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -87,17 +87,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:29377
-    label: "sodium carbonate"
+    label: sodium carbonate
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
-    label: "L-cysteine hydrochloride hydrate"
+    label: L-cysteine hydrochloride hydrate
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:91248
-    label: "L-cysteine hydrochloride hydrate"
+    label: L-cysteine hydrochloride hydrate
 applications:
 - Microbial cultivation
 curation_history:

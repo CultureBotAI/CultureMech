@@ -14,10 +14,10 @@ ingredients:
     Inorganic compound [Merged 2 duplicates: 500.0, 500.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.2'

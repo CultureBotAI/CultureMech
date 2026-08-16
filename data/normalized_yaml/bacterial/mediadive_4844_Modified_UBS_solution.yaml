@@ -61,7 +61,7 @@ composition:
     label: Ca(NO3)2 x 4 H2O
   chebi_term:
     id: CHEBI:86159
-    label: "calcium nitrate tetrahydrate"
+    label: calcium nitrate tetrahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -73,7 +73,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Comment: For cultivation of JCM 30830, adjust pH of the medium

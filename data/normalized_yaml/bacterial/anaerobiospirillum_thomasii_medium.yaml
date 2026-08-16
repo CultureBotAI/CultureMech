@@ -20,13 +20,13 @@ ingredients:
 - preferred_term: 5-Aminovaleric acid
   term:
     id: CHEBI:15887
-    label: "5-aminopentanoic acid"
+    label: 5-aminopentanoic acid
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15887
-    label: "5-aminopentanoic acid"
+    label: 5-aminopentanoic acid
 - preferred_term: Fildes Enrichment
   concentration:
     value: '1'
@@ -34,14 +34,14 @@ ingredients:
 - preferred_term: 3-Hydroxybenzoic acid
   term:
     id: CHEBI:30764
-    label: "3-hydroxybenzoic acid"
+    label: 3-hydroxybenzoic acid
   concentration:
     value: '0.2'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.1, 0.1]'
   mediaingredientmech_chebi_term:
     id: CHEBI:30764
-    label: "3-hydroxybenzoic acid"
+    label: 3-hydroxybenzoic acid
 preparation_steps:
 - step_number: 1
   action: COOL

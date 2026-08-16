@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '100'
@@ -26,7 +26,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
 - preferred_term: Agar
   concentration:
     value: '20'
@@ -62,7 +62,7 @@ ingredients:
 - preferred_term: Peptic digest of soybean meal
   term:
     id: FOODON:03315720
-    label: "vegetable protein, hydrolyzed"
+    label: vegetable protein, hydrolyzed
   concentration:
     value: '3.0'
     unit: G_PER_L
@@ -83,7 +83,7 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
   concentration:
     value: '2.5'
     unit: G_PER_L

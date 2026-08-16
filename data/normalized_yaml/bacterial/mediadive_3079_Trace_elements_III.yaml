@@ -13,7 +13,7 @@ composition:
     label: NiSO4 x 6 H2O
   chebi_term:
     id: CHEBI:53001
-    label: "nickel sulfate"
+    label: nickel sulfate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: SnCl2 x 2 H2O
@@ -25,7 +25,7 @@ composition:
     label: SnCl2 x 2 H2O
   chebi_term:
     id: CHEBI:78074
-    label: "tin(II) chloride dihydrate"
+    label: tin(II) chloride dihydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: NaVO3

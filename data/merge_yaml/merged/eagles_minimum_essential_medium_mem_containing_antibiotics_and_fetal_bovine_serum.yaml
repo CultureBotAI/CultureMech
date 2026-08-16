@@ -24,7 +24,7 @@ ingredients:
   notes: 'Role: Antimicrobial agent'
   mediaingredientmech_chebi_term:
     id: CHEBI:2682
-    label: "amphotericin B"
+    label: amphotericin B
   term:
     id: CHEBI:2682
     label: amphotericin B
@@ -37,13 +37,13 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:17334
-    label: "penicillin"
+    label: penicillin
   concentration:
     value: variable
     unit: VARIABLE
   mediaingredientmech_chebi_term:
     id: CHEBI:17334
-    label: "penicillin"
+    label: penicillin
 media_term:
   preferred_term: TOGO Medium M2847
   term:

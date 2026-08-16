@@ -13,7 +13,7 @@ ingredients:
   notes: 'Properties: Defined component, Organic compound, Solution'
   term:
     id: CHEBI:91248
-    label: "L-cysteine hydrochloride hydrate"
+    label: L-cysteine hydrochloride hydrate
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
@@ -21,7 +21,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 - preferred_term: Distilled water
   concentration:
     value: '1003.0'
@@ -30,10 +30,10 @@ ingredients:
     Simple component [Merged 5 duplicates: 900.0, 100.0, 1.0, 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.25'
@@ -42,7 +42,7 @@ ingredients:
     Simple component [Merged 2 duplicates: 0.15, 0.1]'
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 - preferred_term: KH2PO4
   concentration:
     value: '0.14'
@@ -54,7 +54,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: NH4Cl
   concentration:
     value: '0.54'
@@ -87,7 +87,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
 - preferred_term: NaHCO3
   concentration:
     value: '2.5'
@@ -112,7 +112,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: "carbon dioxide"
+    label: carbon dioxide
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -120,7 +120,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 - preferred_term: Sodium pyruvate
   concentration:
     value: '2.2'
@@ -151,10 +151,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:30753
-    label: "4-aminobenzoic acid"
+    label: 4-aminobenzoic acid
   term:
     id: CHEBI:30753
-    label: "4-aminobenzoic acid"
+    label: 4-aminobenzoic acid
 - preferred_term: Thiamine・HCl
   concentration:
     value: '6.7'
@@ -162,7 +162,7 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:49105
-    label: "thiamine hydrochloride"
+    label: thiamine hydrochloride
 - preferred_term: Pyridoxine・HCl
   concentration:
     value: '4.1'
@@ -170,7 +170,7 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:30961
-    label: "pyridoxine hydrochloride"
+    label: pyridoxine hydrochloride
 - preferred_term: Folic acid
   concentration:
     value: '8.8'
@@ -264,7 +264,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: CoCl2・6H2O
   concentration:
     value: '0.024'
@@ -273,7 +273,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:35696
-    label: "cobalt dichloride"
+    label: cobalt dichloride
 - preferred_term: NiCl2・6H2O
   concentration:
     value: '0.12'
@@ -282,7 +282,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:34887
-    label: "nickel dichloride"
+    label: nickel dichloride
 - preferred_term: CuCl2・2H2O
   concentration:
     value: '0.025'
@@ -291,7 +291,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86318
-    label: "copper(II) chloride dihydrate"
+    label: copper(II) chloride dihydrate
 - preferred_term: ZnCl2
   concentration:
     value: '0.1'
@@ -312,7 +312,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86254
-    label: "iron trichloride hexahydrate"
+    label: iron trichloride hexahydrate
 - preferred_term: Nitrilotriacetic acid
   concentration:
     value: '12.8'
@@ -353,7 +353,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63939
-    label: "sodium tungstate dihydrate"
+    label: sodium tungstate dihydrate
 media_term:
   preferred_term: TOGO Medium M278
   term:

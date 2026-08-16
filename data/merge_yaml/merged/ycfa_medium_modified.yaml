@@ -26,33 +26,33 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
   concentration:
     value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '0.045'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
   concentration:
     value: '0.09'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -62,7 +62,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -72,17 +72,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '0.9'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -96,17 +96,17 @@ ingredients:
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
-    label: "sodium hydrogencarbonate"
+    label: sodium hydrogencarbonate
   concentration:
     value: '4'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: "sodium hydrogencarbonate"
+    label: sodium hydrogencarbonate
 - preferred_term: L-Cysteine HCl
   term:
     id: CHEBI:91247
-    label: "L-cysteine hydrochloride"
+    label: L-cysteine hydrochloride
   concentration:
     value: '1'
     unit: G_PER_L
@@ -116,57 +116,57 @@ ingredients:
 - preferred_term: Hemin
   term:
     id: CHEBI:50385
-    label: "hemin"
+    label: hemin
   concentration:
     value: '0.01'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:50385
-    label: "hemin"
+    label: hemin
 - preferred_term: Acetic acid
   term:
     id: CHEBI:15366
-    label: "acetic acid"
+    label: acetic acid
   concentration:
     value: '661.833'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15366
-    label: "acetic acid"
+    label: acetic acid
 - preferred_term: Propionic acid
   term:
     id: CHEBI:30768
-    label: "propionic acid"
+    label: propionic acid
   concentration:
     value: '231.7'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30768
-    label: "propionic acid"
+    label: propionic acid
 - preferred_term: iso-Butyric acid
   term:
     id: CHEBI:16135
-    label: "isobutyric acid"
+    label: isobutyric acid
   concentration:
     value: '28.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16135
-    label: "isobutyric acid"
+    label: isobutyric acid
 - preferred_term: n-Valeric acid
   term:
     id: CHEBI:17418
-    label: "valeric acid"
+    label: valeric acid
   concentration:
     value: '31.3'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17418
-    label: "valeric acid"
+    label: valeric acid
 - preferred_term: iso-Valeric acid
   term:
     id: CHEBI:28484
-    label: "isovaleric acid"
+    label: isovaleric acid
   concentration:
     value: '31.0333'
     unit: G_PER_L
@@ -176,63 +176,63 @@ ingredients:
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
-    label: "biotin"
+    label: biotin
   concentration:
     value: '0.002'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
-    label: "biotin"
+    label: biotin
 - preferred_term: Folic acid
   term:
     id: CHEBI:27470
-    label: "folic acid"
+    label: folic acid
   concentration:
     value: '0.002'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:27470
-    label: "folic acid"
+    label: folic acid
 - preferred_term: Pyridoxine hydrochloride
   term:
     id: CHEBI:30961
-    label: "pyridoxine hydrochloride"
+    label: pyridoxine hydrochloride
   concentration:
     value: '0.01'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30961
-    label: "pyridoxine hydrochloride"
+    label: pyridoxine hydrochloride
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
     id: CHEBI:132751
-    label: "thiamine hydrochloride dihydrate"
+    label: thiamine hydrochloride dihydrate
   concentration:
     value: '0.005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:132751
-    label: "thiamine hydrochloride dihydrate"
+    label: thiamine hydrochloride dihydrate
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
-    label: "riboflavin"
+    label: riboflavin
   concentration:
     value: '0.005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17015
-    label: "riboflavin"
+    label: riboflavin
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
-    label: "nicotinic acid"
+    label: nicotinic acid
   concentration:
     value: '0.005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15940
-    label: "nicotinic acid"
+    label: nicotinic acid
 - preferred_term: D-Calcium pantothenate
   concentration:
     value: '0.005'
@@ -246,33 +246,33 @@ ingredients:
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
-    label: "cyanocob(III)alamin"
+    label: cyanocob(III)alamin
   concentration:
     value: '0.0001'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17439
-    label: "cyanocob(III)alamin"
+    label: cyanocob(III)alamin
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
-    label: "4-aminobenzoic acid"
+    label: 4-aminobenzoic acid
   concentration:
     value: '0.005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30753
-    label: "4-aminobenzoic acid"
+    label: 4-aminobenzoic acid
 - preferred_term: Lipoic acid
   term:
     id: CHEBI:16494
-    label: "lipoic acid"
+    label: lipoic acid
   concentration:
     value: '0.005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16494
-    label: "lipoic acid"
+    label: lipoic acid
 preparation_steps:
 - step_number: 1
   action: MIX

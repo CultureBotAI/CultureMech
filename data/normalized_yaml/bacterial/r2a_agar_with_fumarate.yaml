@@ -15,23 +15,23 @@ ingredients:
 - preferred_term: R2A agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '18.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 - preferred_term: Disodium fumarate
   term:
     id: CHEBI:115156
-    label: "disodium fumarate"
+    label: disodium fumarate
   concentration:
     value: '3.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:115156
-    label: "disodium fumarate"
+    label: disodium fumarate
 preparation_steps:
 - step_number: 1
   action: MIX

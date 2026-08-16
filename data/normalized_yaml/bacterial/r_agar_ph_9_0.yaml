@@ -41,46 +41,46 @@ ingredients:
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
   concentration:
     value: '2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
   notes: Copied from referenced JCM Medium 26
 - preferred_term: Tween 80
   term:
     id: CHEBI:53426
-    label: "polysorbate 80"
+    label: polysorbate 80
   concentration:
     value: '0.05'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:53426
-    label: "polysorbate 80"
+    label: polysorbate 80
   notes: Copied from referenced JCM Medium 26
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
   notes: Copied from referenced JCM Medium 26
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   notes: Copied from referenced JCM Medium 26
 preparation_steps:
 - step_number: 1

@@ -30,23 +30,23 @@ ingredients:
 - preferred_term: Bacto Middlebrook 7H10 agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '20.9945'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
   concentration:
     value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -56,7 +56,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: "ammonium sulfate"
+    label: ammonium sulfate
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -66,27 +66,27 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
   concentration:
     value: '1.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258
-    label: "sodium citrate"
+    label: sodium citrate
   concentration:
     value: '0.4'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:53258
-    label: "sodium citrate"
+    label: sodium citrate
 - preferred_term: MgSO4
   term:
     id: CHEBI:32599
@@ -96,17 +96,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: "magnesium sulfate"
+    label: magnesium sulfate
 - preferred_term: CaCl2
   term:
     id: CHEBI:3312
-    label: "calcium dichloride"
+    label: calcium dichloride
   concentration:
     value: '0.0005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:3312
-    label: "calcium dichloride"
+    label: calcium dichloride
 - preferred_term: ZnSO4
   term:
     id: CHEBI:35176
@@ -116,7 +116,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:35176
-    label: "zinc sulfate"
+    label: zinc sulfate
 - preferred_term: CuSO4
   term:
     id: CHEBI:23414
@@ -126,77 +126,77 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:23414
-    label: "copper(II) sulfate"
+    label: copper(II) sulfate
 - preferred_term: L-Glutamic acid
   term:
     id: CHEBI:16015
-    label: "L-glutamic acid"
+    label: L-glutamic acid
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16015
-    label: "L-glutamic acid"
+    label: L-glutamic acid
 - preferred_term: Ferric ammonium citrate
   term:
     id: CHEBI:31604
-    label: "ferric ammonium citrate"
+    label: ferric ammonium citrate
   concentration:
     value: '0.04'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31604
-    label: "ferric ammonium citrate"
+    label: ferric ammonium citrate
 - preferred_term: Pyridoxine
   term:
     id: CHEBI:16709
-    label: "pyridoxine"
+    label: pyridoxine
   concentration:
     value: '0.001'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16709
-    label: "pyridoxine"
+    label: pyridoxine
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
-    label: "biotin"
+    label: biotin
   concentration:
     value: '0.0005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
-    label: "biotin"
+    label: biotin
 - preferred_term: Malachite green
   term:
     id: CHEBI:72449
-    label: "malachite green"
+    label: malachite green
   concentration:
     value: '0.00025'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:72449
-    label: "malachite green"
+    label: malachite green
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 - preferred_term: Oleic acid
   term:
     id: CHEBI:16196
-    label: "oleic acid"
+    label: oleic acid
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16196
-    label: "oleic acid"
+    label: oleic acid
 - preferred_term: Tryptone
   term:
     id: MICRO:0000182
@@ -267,13 +267,13 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '8.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 applications:
 - Microbial cultivation
 curation_history:

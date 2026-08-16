@@ -9,106 +9,106 @@ ingredients:
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
-    label: "ammonium chloride"
+    label: ammonium chloride
   concentration:
     value: '23.5'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: "ammonium chloride"
+    label: ammonium chloride
 - preferred_term: Cupric sulfate
   concentration:
     value: 8e-05
     unit: MILLIMOLAR
   term:
     id: CHEBI:23414
-    label: "copper(II) sulfate"
+    label: copper(II) sulfate
 - preferred_term: Cobalt chloride
   concentration:
     value: 8e-05
     unit: MILLIMOLAR
   term:
     id: CHEBI:35696
-    label: "cobalt dichloride"
+    label: cobalt dichloride
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
-    label: "zinc sulfate"
+    label: zinc sulfate
   concentration:
     value: '0.00034'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:35176
-    label: "zinc sulfate"
+    label: zinc sulfate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.136'
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: "calcium dichloride"
+    label: calcium dichloride
 - preferred_term: Manganese chloride
   concentration:
     value: '0.0008'
     unit: MILLIMOLAR
   term:
     id: CHEBI:63041
-    label: "manganese(II) chloride"
+    label: manganese(II) chloride
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.00016'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75215
-    label: "sodium molybdate (anhydrous)"
+    label: sodium molybdate (anhydrous)
 - preferred_term: Sodium thiosulfate
   term:
     id: CHEBI:132112
-    label: "sodium thiosulfate"
+    label: sodium thiosulfate
   concentration:
     value: '0.38'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:132112
-    label: "sodium thiosulfate"
+    label: sodium thiosulfate
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
-    label: "D-glucose"
+    label: D-glucose
   concentration:
     value: '31.1'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
   mediaingredientmech_chebi_term:
     id: CHEBI:17634
-    label: "D-glucose"
+    label: D-glucose
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '12.5'
     unit: MILLIMOLAR
   term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: "magnesium sulfate"
+    label: magnesium sulfate
   concentration:
     value: '2.43'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: "magnesium sulfate"
+    label: magnesium sulfate
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '102.0'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.3'
@@ -119,7 +119,7 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

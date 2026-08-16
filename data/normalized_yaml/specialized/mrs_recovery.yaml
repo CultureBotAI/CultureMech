@@ -100,7 +100,7 @@ ingredients:
   notes: 'CAS: 7782-63-0; MW: 278.01; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 description: Media for culturing lactobacilli with some different additives relative
   to MRS
 notes: 'Source: FEBA media definitions'

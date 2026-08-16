@@ -14,124 +14,124 @@ ingredients:
   notes: 'Cross-references: KEGG:glu-L'
   term:
     id: CHEBI:16015
-    label: "L-glutamic acid"
+    label: L-glutamic acid
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
-    label: "D-glucose"
+    label: D-glucose
   concentration:
     value: '83.2593'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
   mediaingredientmech_chebi_term:
     id: CHEBI:17634
-    label: "D-glucose"
+    label: D-glucose
 - preferred_term: Tryptophan
   term:
     id: CHEBI:27897
-    label: "tryptophan"
+    label: tryptophan
   concentration:
     value: '0.244822'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:27897
-    label: "tryptophan"
+    label: tryptophan
 - preferred_term: Phenylalanine
   concentration:
     value: '0.302682'
     unit: MILLIMOLAR
   term:
     id: CHEBI:17295
-    label: "L-phenylalanine"
+    label: L-phenylalanine
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.049556'
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: "calcium dichloride"
+    label: calcium dichloride
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '80.3673'
     unit: MILLIMOLAR
   term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.00247985'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75215
-    label: "sodium molybdate (anhydrous)"
+    label: sodium molybdate (anhydrous)
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '44.0898'
     unit: MILLIMOLAR
   term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: "magnesium sulfate"
+    label: magnesium sulfate
   concentration:
     value: '0.811458'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: "magnesium sulfate"
+    label: magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
-    label: "manganese(II) sulfate monohydrate"
+    label: manganese(II) sulfate monohydrate
   concentration:
     value: '0.0044828'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
-    label: "manganese(II) sulfate monohydrate"
+    label: manganese(II) sulfate monohydrate
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.0046211'
     unit: MILLIMOLAR
   term:
     id: CHEBI:35696
-    label: "cobalt dichloride"
+    label: cobalt dichloride
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
-    label: "ammonium sulfate"
+    label: ammonium sulfate
   concentration:
     value: '15.1355'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: "ammonium sulfate"
+    label: ammonium sulfate
 - preferred_term: Cupric chloride
   concentration:
     value: '0.0025222'
     unit: MILLIMOLAR
   term:
     id: CHEBI:49553
-    label: "copper(II) chloride"
+    label: copper(II) chloride
 - preferred_term: Sodium selenate
   concentration:
     value: '0.00248756'
     unit: MILLIMOLAR
   term:
     id: CHEBI:77775
-    label: "sodium selenate"
+    label: sodium selenate
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258
-    label: "sodium citrate"
+    label: sodium citrate
   concentration:
     value: '3.4002'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:53258
-    label: "sodium citrate"
+    label: sodium citrate
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.04994'
@@ -142,7 +142,7 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:49976
-    label: "zinc dichloride"
+    label: zinc dichloride
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

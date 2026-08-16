@@ -23,7 +23,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -33,47 +33,47 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: "ammonium sulfate"
+    label: ammonium sulfate
 - preferred_term: MgCl2
   term:
     id: CHEBI:6636
-    label: "magnesium dichloride"
+    label: magnesium dichloride
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:6636
-    label: "magnesium dichloride"
+    label: magnesium dichloride
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258
-    label: "sodium citrate"
+    label: sodium citrate
   concentration:
     value: '0.25'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:53258
-    label: "sodium citrate"
+    label: sodium citrate
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
   concentration:
     value: '0.025'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: MnSO4 x 4 H2O
   term:
     id: CHEBI:86358
-    label: "manganese(II) sulfate tetrahydrate"
+    label: manganese(II) sulfate tetrahydrate
   concentration:
     value: '0.025'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86358
-    label: "manganese(II) sulfate tetrahydrate"
+    label: manganese(II) sulfate tetrahydrate
 - preferred_term: Yeast extract
   concentration:
     value: '3'
@@ -85,23 +85,23 @@ ingredients:
 - preferred_term: Tween 80
   term:
     id: CHEBI:53426
-    label: "polysorbate 80"
+    label: polysorbate 80
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:53426
-    label: "polysorbate 80"
+    label: polysorbate 80
 - preferred_term: Cyclomaltoheptaose
   term:
     id: CHEBI:495055
-    label: "beta-cyclodextrin"
+    label: beta-cyclodextrin
   concentration:
     value: '7'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:495055
-    label: "beta-cyclodextrin"
+    label: beta-cyclodextrin
 applications:
 - Microbial cultivation
 curation_history:

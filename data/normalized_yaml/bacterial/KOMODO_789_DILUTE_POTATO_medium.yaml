@@ -21,33 +21,33 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
 - preferred_term: Ca(NO3)2 x 4 H2O
   term:
     id: CHEBI:86159
-    label: "calcium nitrate tetrahydrate"
+    label: calcium nitrate tetrahydrate
   concentration:
     value: '0.05'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86159
-    label: "calcium nitrate tetrahydrate"
+    label: calcium nitrate tetrahydrate
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
   concentration:
     value: '0.12'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
 - preferred_term: Diced potato
   concentration:
     value: '20'

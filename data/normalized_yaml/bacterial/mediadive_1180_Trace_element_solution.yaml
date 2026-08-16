@@ -13,7 +13,7 @@ composition:
     label: (NH4)2Ni(SO4)2
   chebi_term:
     id: CHEBI:86149
-    label: "ammonium nickel sulfate hexahydrate"
+    label: ammonium nickel sulfate hexahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na2WO4

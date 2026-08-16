@@ -25,7 +25,7 @@ composition:
     label: L-Arginine
   chebi_term:
     id: CHEBI:16467
-    label: "L-arginine"
+    label: L-arginine
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Asparagine
@@ -37,7 +37,7 @@ composition:
     label: L-Asparagine
   chebi_term:
     id: CHEBI:17196
-    label: "L-asparagine"
+    label: L-asparagine
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Aspartic acid
@@ -73,7 +73,7 @@ composition:
     label: L-Glutamine
   chebi_term:
     id: CHEBI:18050
-    label: "L-glutamine"
+    label: L-glutamine
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Glutamic acid
@@ -85,7 +85,7 @@ composition:
     label: L-Glutamic acid
   chebi_term:
     id: CHEBI:16015
-    label: "L-glutamic acid"
+    label: L-glutamic acid
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Glycine
@@ -109,7 +109,7 @@ composition:
     label: L-Histidine
   chebi_term:
     id: CHEBI:15971
-    label: "L-histidine"
+    label: L-histidine
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Isoleucine
@@ -121,7 +121,7 @@ composition:
     label: L-Isoleucine
   chebi_term:
     id: CHEBI:17191
-    label: "L-isoleucine"
+    label: L-isoleucine
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Leucine
@@ -133,7 +133,7 @@ composition:
     label: L-Leucine
   chebi_term:
     id: CHEBI:15603
-    label: "L-leucine"
+    label: L-leucine
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Lysine HCl
@@ -157,7 +157,7 @@ composition:
     label: L-Methionine
   chebi_term:
     id: CHEBI:16643
-    label: "L-methionine"
+    label: L-methionine
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Ornithine HCl
@@ -180,7 +180,7 @@ composition:
     label: L-Phenylalanine
   chebi_term:
     id: CHEBI:17295
-    label: "L-phenylalanine"
+    label: L-phenylalanine
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Proline
@@ -192,7 +192,7 @@ composition:
     label: L-Proline
   chebi_term:
     id: CHEBI:17203
-    label: "L-proline"
+    label: L-proline
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Serine
@@ -204,7 +204,7 @@ composition:
     label: L-Serine
   chebi_term:
     id: CHEBI:17115
-    label: "L-serine"
+    label: L-serine
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Threonine
@@ -216,7 +216,7 @@ composition:
     label: L-Threonine
   chebi_term:
     id: CHEBI:16857
-    label: "L-threonine"
+    label: L-threonine
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Tryptophan
@@ -228,7 +228,7 @@ composition:
     label: L-Tryptophan
   chebi_term:
     id: CHEBI:16828
-    label: "L-tryptophan"
+    label: L-tryptophan
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Tyrosine
@@ -240,7 +240,7 @@ composition:
     label: L-Tyrosine
   chebi_term:
     id: CHEBI:17895
-    label: "L-tyrosine"
+    label: L-tyrosine
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Valine
@@ -252,7 +252,7 @@ composition:
     label: L-Valine
   chebi_term:
     id: CHEBI:16414
-    label: "L-valine"
+    label: L-valine
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -264,7 +264,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Prepare Solutions A, flush with nitrogen to make them anoxic,

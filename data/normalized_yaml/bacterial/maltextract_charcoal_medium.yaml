@@ -20,23 +20,23 @@ ingredients:
 - preferred_term: Charcoal
   term:
     id: CHEBI:91090
-    label: "charcoal"
+    label: charcoal
   concentration:
     value: '3'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:91090
-    label: "charcoal"
+    label: charcoal
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 applications:
 - Microbial cultivation
 curation_history:

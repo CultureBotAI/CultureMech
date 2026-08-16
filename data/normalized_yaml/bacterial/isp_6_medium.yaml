@@ -24,33 +24,33 @@ ingredients:
 - preferred_term: Ferric ammonium citrate
   term:
     id: CHEBI:31604
-    label: "ferric ammonium citrate"
+    label: ferric ammonium citrate
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31604
-    label: "ferric ammonium citrate"
+    label: ferric ammonium citrate
 - preferred_term: Dipotassium Phosphate
   term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: Sodium Thiosulfate
   term:
     id: CHEBI:132112
-    label: "sodium thiosulfate"
+    label: sodium thiosulfate
   concentration:
     value: '0.08'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:132112
-    label: "sodium thiosulfate"
+    label: sodium thiosulfate
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -58,13 +58,13 @@ ingredients:
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '20'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 preparation_steps:
 - step_number: 1
   action: MIX

@@ -34,7 +34,7 @@ composition:
     label: Glucose
   chebi_term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
     confidence: 0.9
     match_type: manual_curated
 - preferred_term: Maltose
@@ -82,7 +82,7 @@ composition:
     label: K2HPO4 x 3 H2O
   chebi_term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: MgSO4 x 7 H2O
@@ -117,7 +117,7 @@ composition:
     label: L-Cysteine HCl x H2O
   chebi_term:
     id: CHEBI:91248
-    label: "L-cysteine hydrochloride hydrate"
+    label: L-cysteine hydrochloride hydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Tween 80
@@ -129,7 +129,7 @@ composition:
     label: Tween 80
   chebi_term:
     id: CHEBI:53426
-    label: "polysorbate 80"
+    label: polysorbate 80
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Distilled water
@@ -141,7 +141,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Adjust pH to 6.3 and fill up into screw-capped Wheaton tubes.

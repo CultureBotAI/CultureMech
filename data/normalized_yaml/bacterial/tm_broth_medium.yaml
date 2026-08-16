@@ -24,44 +24,44 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '1.0685304'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.990099, 0.0784314]'
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
-    label: "nitrilotriacetic acid"
+    label: nitrilotriacetic acid
   concentration:
     value: '0.980392'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:44557
-    label: "nitrilotriacetic acid"
+    label: nitrilotriacetic acid
 - preferred_term: CaSO4 x 2 H2O
   term:
     id: CHEBI:32583
-    label: "calcium sulfate dihydrate"
+    label: calcium sulfate dihydrate
   concentration:
     value: '0.588235'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32583
-    label: "calcium sulfate dihydrate"
+    label: calcium sulfate dihydrate
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '0.980392'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
 - preferred_term: KNO3
   term:
     id: CHEBI:63043
@@ -75,7 +75,7 @@ ingredients:
 - preferred_term: NaNO3
   term:
     id: CHEBI:63005
-    label: "sodium nitrate"
+    label: sodium nitrate
   concentration:
     value: '6.7549'
     unit: G_PER_L
@@ -85,33 +85,33 @@ ingredients:
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
   concentration:
     value: '1.08824'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
 - preferred_term: FeCl3 x 6 H2O
   term:
     id: CHEBI:86254
-    label: "iron trichloride hexahydrate"
+    label: iron trichloride hexahydrate
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86254
-    label: "iron trichloride hexahydrate"
+    label: iron trichloride hexahydrate
 - preferred_term: H2SO4
   term:
     id: CHEBI:26836
-    label: "sulfuric acid"
+    label: sulfuric acid
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26836
-    label: "sulfuric acid"
+    label: sulfuric acid
 - preferred_term: MnSO4 x n H2O
   concentration:
     value: '2.2'
@@ -122,13 +122,13 @@ ingredients:
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
-    label: "zinc sulfate heptahydrate"
+    label: zinc sulfate heptahydrate
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32312
-    label: "zinc sulfate heptahydrate"
+    label: zinc sulfate heptahydrate
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -138,37 +138,37 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: "boric acid"
+    label: boric acid
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
-    label: "copper(II) sulfate pentahydrate"
+    label: copper(II) sulfate pentahydrate
   concentration:
     value: '0.016'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31440
-    label: "copper(II) sulfate pentahydrate"
+    label: copper(II) sulfate pentahydrate
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
-    label: "sodium molybdate dihydrate"
+    label: sodium molybdate dihydrate
   concentration:
     value: '0.025'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75213
-    label: "sodium molybdate dihydrate"
+    label: sodium molybdate dihydrate
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
-    label: "cobalt dichloride"
+    label: cobalt dichloride
   concentration:
     value: '0.046'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:35696
-    label: "cobalt dichloride"
+    label: cobalt dichloride
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

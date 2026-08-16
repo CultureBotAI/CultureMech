@@ -15,13 +15,13 @@ ingredients:
 - preferred_term: Sodium lactate
   term:
     id: CHEBI:75228
-    label: "sodium lactate"
+    label: sodium lactate
   concentration:
     value: '44'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75228
-    label: "sodium lactate"
+    label: sodium lactate
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
@@ -31,7 +31,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32149
-    label: "sodium sulfate"
+    label: sodium sulfate
 preparation_steps:
 - step_number: 1
   action: MIX

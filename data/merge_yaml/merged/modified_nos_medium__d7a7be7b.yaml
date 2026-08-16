@@ -41,43 +41,43 @@ ingredients:
 - preferred_term: Sodium thioglycolate
   term:
     id: CHEBI:86481
-    label: "sodium thioglycolate"
+    label: sodium thioglycolate
   concentration:
     value: '0.49505'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86481
-    label: "sodium thioglycolate"
+    label: sodium thioglycolate
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
-    label: "L-cysteine hydrochloride hydrate"
+    label: L-cysteine hydrochloride hydrate
   concentration:
     value: '0.990099'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:91248
-    label: "L-cysteine hydrochloride hydrate"
+    label: L-cysteine hydrochloride hydrate
 - preferred_term: L-Asparagine
   term:
     id: CHEBI:17196
-    label: "L-asparagine"
+    label: L-asparagine
   concentration:
     value: '2.47525'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17196
-    label: "L-asparagine"
+    label: L-asparagine
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
   concentration:
     value: '1.9802'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -91,13 +91,13 @@ ingredients:
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
-    label: "sodium hydrogencarbonate"
+    label: sodium hydrogencarbonate
   concentration:
     value: '2.67'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: "sodium hydrogencarbonate"
+    label: sodium hydrogencarbonate
 - preferred_term: Rabbit serum
   concentration:
     value: '2'
@@ -105,23 +105,23 @@ ingredients:
 - preferred_term: Thiamine pyrophosphate
   term:
     id: CHEBI:18290
-    label: "thiamine(1+) diphosphate chloride"
+    label: thiamine(1+) diphosphate chloride
   concentration:
     value: '1.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:18290
-    label: "thiamine(1+) diphosphate chloride"
+    label: thiamine(1+) diphosphate chloride
 - preferred_term: Isobutyric acid
   term:
     id: CHEBI:16135
-    label: "isobutyric acid"
+    label: isobutyric acid
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16135
-    label: "isobutyric acid"
+    label: isobutyric acid
 - preferred_term: Tryptone
   term:
     id: MICRO:0000182
@@ -178,33 +178,33 @@ ingredients:
 - preferred_term: Isovaleric acid
   term:
     id: CHEBI:28484
-    label: "isovaleric acid"
+    label: isovaleric acid
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:28484
-    label: "isovaleric acid"
+    label: isovaleric acid
 - preferred_term: Valeric acid
   term:
     id: CHEBI:17418
-    label: "valeric acid"
+    label: valeric acid
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17418
-    label: "valeric acid"
+    label: valeric acid
 - preferred_term: NaOH
   term:
     id: CHEBI:32145
-    label: "sodium hydroxide"
+    label: sodium hydroxide
   concentration:
     value: '100'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32145
-    label: "sodium hydroxide"
+    label: sodium hydroxide
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

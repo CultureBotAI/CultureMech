@@ -26,10 +26,10 @@ ingredients:
     compound'
   term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
 - preferred_term: MgSO4
   concentration:
     value: '0.5'
@@ -49,10 +49,10 @@ ingredients:
   notes: 'Role: Solvating media; Properties: Undefined component'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: Ferric Ammonium Citrate
   concentration:
     value: '0.5'

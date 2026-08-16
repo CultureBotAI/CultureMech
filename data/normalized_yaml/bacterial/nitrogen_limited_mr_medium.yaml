@@ -12,45 +12,45 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: D-Fructose
   term:
     id: CHEBI:15824
-    label: "D-fructose"
+    label: D-fructose
   concentration:
     value: '111.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:fru'
   mediaingredientmech_chebi_term:
     id: CHEBI:15824
-    label: "D-fructose"
+    label: D-fructose
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.09011'
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: "calcium dichloride"
+    label: calcium dichloride
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
-    label: "zinc sulfate"
+    label: zinc sulfate
   concentration:
     value: '0.03825'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:35176
-    label: "zinc sulfate"
+    label: zinc sulfate
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: "magnesium sulfate"
+    label: magnesium sulfate
   concentration:
     value: '4.587'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: "magnesium sulfate"
+    label: magnesium sulfate
 - preferred_term: Citrate
   concentration:
     value: '4.164'
@@ -58,31 +58,31 @@ ingredients:
   notes: 'Cross-references: KEGG:cit'
   term:
     id: CHEBI:30769
-    label: "citric acid"
+    label: citric acid
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.1798'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75832
-    label: "iron(2+) sulfate (anhydrous)"
+    label: iron(2+) sulfate (anhydrous)
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
-    label: "manganese(II) sulfate monohydrate"
+    label: manganese(II) sulfate monohydrate
   concentration:
     value: '0.01121'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
-    label: "manganese(II) sulfate monohydrate"
+    label: manganese(II) sulfate monohydrate
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.02002'
     unit: MILLIMOLAR
   term:
     id: CHEBI:23414
-    label: "copper(II) sulfate"
+    label: copper(II) sulfate
 - preferred_term: Sodium borate
   concentration:
     value: '0.0002622'
@@ -93,24 +93,24 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:91249
-    label: "ammonium molybdate"
+    label: ammonium molybdate
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '33.34'
     unit: MILLIMOLAR
   term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
-    label: "ammonium chloride"
+    label: ammonium chloride
   concentration:
     value: '33.65'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: "ammonium chloride"
+    label: ammonium chloride
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

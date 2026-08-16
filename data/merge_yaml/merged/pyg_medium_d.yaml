@@ -13,7 +13,7 @@ ingredients:
   notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:91248
-    label: "L-cysteine hydrochloride hydrate"
+    label: L-cysteine hydrochloride hydrate
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
@@ -21,7 +21,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 media_term:
   preferred_term: TOGO Medium M568
   term:

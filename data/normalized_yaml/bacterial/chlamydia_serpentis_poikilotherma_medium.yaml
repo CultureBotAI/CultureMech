@@ -23,34 +23,34 @@ ingredients:
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
-    label: "D-glucose"
+    label: D-glucose
   concentration:
     value: '60'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17634
-    label: "D-glucose"
+    label: D-glucose
 - preferred_term: Demineralized water
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   concentration:
     value: '60.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 50.0, 10.0]'
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: Cycloheximid
   term:
     id: CHEBI:27641
-    label: "cycloheximide"
+    label: cycloheximide
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:27641
-    label: "cycloheximide"
+    label: cycloheximide
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE

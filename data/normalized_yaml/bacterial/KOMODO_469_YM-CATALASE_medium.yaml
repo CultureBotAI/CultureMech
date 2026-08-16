@@ -31,27 +31,27 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
 - preferred_term: NH4H2PO4
   term:
     id: CHEBI:62982
-    label: "ammonium dihydrogen phosphate"
+    label: ammonium dihydrogen phosphate
   concentration:
     value: '1.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62982
-    label: "ammonium dihydrogen phosphate"
+    label: ammonium dihydrogen phosphate
 - preferred_term: Catalase
   concentration:
     value: '0.06'

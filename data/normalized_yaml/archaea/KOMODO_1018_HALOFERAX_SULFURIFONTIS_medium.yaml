@@ -21,23 +21,23 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '150'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: MgCl2
   term:
     id: CHEBI:6636
-    label: "magnesium dichloride"
+    label: magnesium dichloride
   concentration:
     value: '20'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:6636
-    label: "magnesium dichloride"
+    label: magnesium dichloride
 - preferred_term: K2SO4
   term:
     id: CHEBI:32036
@@ -47,28 +47,28 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32036
-    label: "potassium sulfate"
+    label: potassium sulfate
 - preferred_term: CaCl2
   term:
     id: CHEBI:3312
-    label: "calcium dichloride"
+    label: calcium dichloride
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:3312
-    label: "calcium dichloride"
+    label: calcium dichloride
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '20'
     unit: G_PER_L
   notes: ' (for solid medium)'
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 applications:
 - Microbial cultivation
 curation_history:

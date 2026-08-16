@@ -18,7 +18,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:32954
-    label: "sodium acetate"
+    label: sodium acetate
 - preferred_term: Lab Lemco powder
   concentration:
     value: '1'
@@ -34,34 +34,34 @@ ingredients:
 - preferred_term: CaCl2
   term:
     id: CHEBI:3312
-    label: "calcium dichloride"
+    label: calcium dichloride
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:3312
-    label: "calcium dichloride"
+    label: calcium dichloride
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '30.0'
     unit: G_PER_L
   notes: ' (for solid medium) [Merged 2 duplicates: 15.0, 15.0]'
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 - preferred_term: Ca(NO3)2 x 4 H2O
   term:
     id: CHEBI:86159
-    label: "calcium nitrate tetrahydrate"
+    label: calcium nitrate tetrahydrate
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86159
-    label: "calcium nitrate tetrahydrate"
+    label: calcium nitrate tetrahydrate
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -71,31 +71,31 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
-    label: "sodium hydrogencarbonate"
+    label: sodium hydrogencarbonate
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: "sodium hydrogencarbonate"
+    label: sodium hydrogencarbonate
 - preferred_term: NaNO3
   term:
     id: CHEBI:63005
-    label: "sodium nitrate"
+    label: sodium nitrate
   concentration:
     value: '1'
     unit: G_PER_L
@@ -105,13 +105,13 @@ ingredients:
 - preferred_term: Na2HPO4 x 12 H2O
   term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
 - preferred_term: FeNa-EDTA
   concentration:
     value: '2.25'
@@ -119,13 +119,13 @@ ingredients:
 - preferred_term: Na2-EDTA
   term:
     id: CHEBI:64734
-    label: "EDTA disodium salt (anhydrous)"
+    label: EDTA disodium salt (anhydrous)
   concentration:
     value: '2.25'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:64734
-    label: "EDTA disodium salt (anhydrous)"
+    label: EDTA disodium salt (anhydrous)
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -135,17 +135,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: "boric acid"
+    label: boric acid
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
   concentration:
     value: '1.39'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: (NH4)6Mo7O24 x 4 H2O
   concentration:
     value: '1'
@@ -159,30 +159,30 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17439
-    label: "cyanocob(III)alamin"
+    label: cyanocob(III)alamin
   term:
     id: CHEBI:17439
-    label: "cyanocob(III)alamin"
+    label: cyanocob(III)alamin
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
-    label: "thiamine hydrochloride"
+    label: thiamine hydrochloride
   concentration:
     value: '0.04'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:49105
-    label: "thiamine hydrochloride"
+    label: thiamine hydrochloride
 - preferred_term: Biotine
   term:
     id: CHEBI:15956
-    label: "biotin"
+    label: biotin
   concentration:
     value: '0.04'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
-    label: "biotin"
+    label: biotin
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

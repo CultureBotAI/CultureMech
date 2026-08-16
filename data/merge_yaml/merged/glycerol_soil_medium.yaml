@@ -24,13 +24,13 @@ ingredients:
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
   concentration:
     value: '20'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
 - preferred_term: Soil extract
   concentration:
     value: '150'
@@ -38,23 +38,23 @@ ingredients:
 - preferred_term: Tap water
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   concentration:
     value: '850'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

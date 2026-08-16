@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:28971
-    label: "ampicillin"
+    label: ampicillin
   mediaingredientmech_chebi_term:
     id: CHEBI:28971
-    label: "ampicillin"
+    label: ampicillin
 - preferred_term: Tryptone
   term:
     id: MICRO:0000182

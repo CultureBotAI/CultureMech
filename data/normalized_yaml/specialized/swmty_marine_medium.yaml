@@ -30,13 +30,13 @@ ingredients:
 - preferred_term: Tris base
   term:
     id: CHEBI:9754
-    label: "tris"
+    label: tris
   concentration:
     value: '0.999001'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:9754
-    label: "tris"
+    label: tris
 - preferred_term: Tryptone
   concentration:
     value: '1.998'
@@ -48,13 +48,13 @@ ingredients:
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '14.985'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 - preferred_term: Sea water
   concentration:
     value: '1000'
@@ -62,53 +62,53 @@ ingredients:
 - preferred_term: Sodium tartrate
   term:
     id: CHEBI:63017
-    label: "sodium L-tartrate"
+    label: sodium L-tartrate
   concentration:
     value: '1.77'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63017
-    label: "sodium L-tartrate"
+    label: sodium L-tartrate
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
-    label: "copper(II) chloride dihydrate"
+    label: copper(II) chloride dihydrate
   concentration:
     value: '0.0269'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86318
-    label: "copper(II) chloride dihydrate"
+    label: copper(II) chloride dihydrate
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
-    label: "zinc dichloride"
+    label: zinc dichloride
   concentration:
     value: '0.0208'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:49976
-    label: "zinc dichloride"
+    label: zinc dichloride
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
-    label: "cobalt dichloride"
+    label: cobalt dichloride
   concentration:
     value: '0.0404'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:35696
-    label: "cobalt dichloride"
+    label: cobalt dichloride
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
-    label: "sodium molybdate dihydrate"
+    label: sodium molybdate dihydrate
   concentration:
     value: '0.0252'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75213
-    label: "sodium molybdate dihydrate"
+    label: sodium molybdate dihydrate
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -166,27 +166,27 @@ solutions:
       unit: G_PER_L
     mediaingredientmech_chebi_term:
       id: CHEBI:33118
-      label: "boric acid"
+      label: boric acid
   - preferred_term: MnCl2 x 4 H2O
     term:
       id: CHEBI:86368
-      label: "manganese(II) chloride tetrahydrate"
+      label: manganese(II) chloride tetrahydrate
     concentration:
       value: '1.8'
       unit: G_PER_L
     mediaingredientmech_chebi_term:
       id: CHEBI:86368
-      label: "manganese(II) chloride tetrahydrate"
+      label: manganese(II) chloride tetrahydrate
   - preferred_term: FeSO4 x 7 H2O
     term:
       id: CHEBI:75836
-      label: "iron(2+) sulfate heptahydrate"
+      label: iron(2+) sulfate heptahydrate
     concentration:
       value: '1.36'
       unit: G_PER_L
     mediaingredientmech_chebi_term:
       id: CHEBI:75836
-      label: "iron(2+) sulfate heptahydrate"
+      label: iron(2+) sulfate heptahydrate
   concentration:
     value: '1'
     unit: ML_PER_L

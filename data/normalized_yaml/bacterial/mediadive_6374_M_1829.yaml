@@ -37,7 +37,7 @@ composition:
     label: Glucose
   chebi_term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
     confidence: 0.9
     match_type: manual_curated
 - preferred_term: Pyruvate
@@ -49,7 +49,7 @@ composition:
     label: Pyruvate
   chebi_term:
     id: CHEBI:15361
-    label: "pyruvate"
+    label: pyruvate
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: N-Acetylglucosamine
@@ -61,7 +61,7 @@ composition:
     label: N-Acetylglucosamine
   chebi_term:
     id: CHEBI:59640
-    label: "N-acetylglucosamine"
+    label: N-acetylglucosamine
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Sodium bicarbonate

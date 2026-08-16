@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: FeSO4·7H2O
   concentration:
     value: '44.2'
@@ -26,7 +26,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: KCl
   concentration:
     value: '1'
@@ -62,7 +62,7 @@ ingredients:
     label: calcium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:64205
-    label: "calcium nitrate"
+    label: calcium nitrate
 - preferred_term: 0.1 M H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'

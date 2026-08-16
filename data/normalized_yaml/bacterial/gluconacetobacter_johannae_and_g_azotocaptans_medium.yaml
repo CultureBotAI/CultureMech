@@ -20,23 +20,23 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
   concentration:
     value: '2.7'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
 - preferred_term: Mannitol
   term:
     id: CHEBI:29864
-    label: "mannitol"
+    label: mannitol
   concentration:
     value: '1.8'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:29864
-    label: "mannitol"
+    label: mannitol
 - preferred_term: MES buffer
   concentration:
     value: '4.4'
@@ -50,7 +50,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -60,18 +60,18 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '18'
     unit: G_PER_L
   notes: ' (for solid medium)'
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 preparation_steps:
 - step_number: 1
   action: MIX

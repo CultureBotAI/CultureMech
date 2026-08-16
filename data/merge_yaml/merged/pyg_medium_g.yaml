@@ -14,10 +14,10 @@ ingredients:
     Inorganic compound [Merged 2 duplicates: 940.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -88,7 +88,7 @@ ingredients:
   notes: 'Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:91248
-    label: "L-cysteine hydrochloride hydrate"
+    label: L-cysteine hydrochloride hydrate
 - preferred_term: Peptone
   concentration:
     value: '5'
@@ -122,7 +122,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 - preferred_term: KH2PO4
   concentration:
     value: '1'
@@ -134,7 +134,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: NaHCO3
   concentration:
     value: '10'

@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: NaCl
   concentration:
     value: '200'
@@ -41,7 +41,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: NH4Cl
   concentration:
     value: '0.6'
@@ -62,7 +62,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
 - preferred_term: MnCl2・4H2O
   concentration:
     value: '0.36'
@@ -71,7 +71,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: K2SO4
   concentration:
     value: '20'
@@ -92,7 +92,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86249
-    label: "iron dichloride tetrahydrate"
+    label: iron dichloride tetrahydrate
 - preferred_term: Trisodium citrate・2H2O
   concentration:
     value: '1'
@@ -100,10 +100,10 @@ ingredients:
   notes: 'Role: Buffer; Properties: Defined component, Simple component, Organic compound'
   mediaingredientmech_chebi_term:
     id: CHEBI:53258
-    label: "sodium citrate"
+    label: sodium citrate
   term:
     id: CHEBI:53258
-    label: "sodium citrate"
+    label: sodium citrate
 - preferred_term: Bacto agar(BD-Difco)
   concentration:
     value: '20'

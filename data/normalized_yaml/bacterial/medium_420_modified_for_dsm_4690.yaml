@@ -46,14 +46,14 @@ ingredients:
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '30.0'
     unit: G_PER_L
   notes: ' (for solid medium) [Merged 2 duplicates: 15.0, 15.0]'
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 - preferred_term: Calf brains
   term:
     id: UBERON:0000955
@@ -133,7 +133,7 @@ ingredients:
 - preferred_term: Disodium phosphate
   term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
   concentration:
     value: '2.5'
     unit: G_PER_L
@@ -161,13 +161,13 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 applications:
 - Microbial cultivation
 curation_history:

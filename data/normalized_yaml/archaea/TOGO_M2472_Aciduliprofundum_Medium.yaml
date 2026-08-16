@@ -58,7 +58,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: Resazurin
   concentration:
     value: '0.5'
@@ -144,10 +144,10 @@ ingredients:
   notes: 'Role: Buffer; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:53258
-    label: "sodium citrate"
+    label: sodium citrate
   mediaingredientmech_chebi_term:
     id: CHEBI:53258
-    label: "sodium citrate"
+    label: sodium citrate
 - preferred_term: DI Water
   concentration:
     value: '1000'
@@ -171,7 +171,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: "carbon dioxide"
+    label: carbon dioxide
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -179,7 +179,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 media_term:
   preferred_term: TOGO Medium M2472
   term:

@@ -23,7 +23,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 - preferred_term: Na2HPO4 x 12 H2O
   concentration:
     value: '0.076'
@@ -32,7 +32,7 @@ ingredients:
     component'
   term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
 - preferred_term: HEPES
   concentration:
     value: '2.38'
@@ -52,7 +52,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:132108
-    label: "sodium silicate nonahydrate"
+    label: sodium silicate nonahydrate
 - preferred_term: KH2PO4 x 2 H2O
   concentration:
     value: '0.02'

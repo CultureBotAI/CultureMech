@@ -9,38 +9,38 @@ ingredients:
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
-    label: "D-glucose"
+    label: D-glucose
   concentration:
     value: '10.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
   mediaingredientmech_chebi_term:
     id: CHEBI:17634
-    label: "D-glucose"
+    label: D-glucose
 - preferred_term: Sodium hydroxide
   concentration:
     value: '75.0'
     unit: MILLIMOLAR
   term:
     id: CHEBI:32145
-    label: "sodium hydroxide"
+    label: sodium hydroxide
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: "magnesium sulfate"
+    label: magnesium sulfate
   concentration:
     value: '0.16'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: "magnesium sulfate"
+    label: magnesium sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.0039'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75832
-    label: "iron(2+) sulfate (anhydrous)"
+    label: iron(2+) sulfate (anhydrous)
 - preferred_term: Sodium dihydrogen phosphate
   concentration:
     value: '100.0'
@@ -54,13 +54,13 @@ ingredients:
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
-    label: "ammonium sulfate"
+    label: ammonium sulfate
   concentration:
     value: '15.0'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: "ammonium sulfate"
+    label: ammonium sulfate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

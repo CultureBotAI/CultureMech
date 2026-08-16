@@ -26,7 +26,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -36,21 +36,21 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '0.246476'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
 - preferred_term: Thiamine
   term:
     id: CHEBI:26948
-    label: "vitamin B1"
+    label: vitamin B1
   concentration:
     value: '0.01'
     unit: G_PER_L
@@ -60,13 +60,13 @@ ingredients:
 - preferred_term: Tap water
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   concentration:
     value: '1000'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

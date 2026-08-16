@@ -31,10 +31,10 @@ ingredients:
     compound'
   term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
 - preferred_term: Glycine betaine
   concentration:
     value: '1.25'
@@ -43,7 +43,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:17750
-    label: "glycine betaine"
+    label: glycine betaine
 - preferred_term: Agar
   concentration:
     value: '15'

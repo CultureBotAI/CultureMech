@@ -9,14 +9,14 @@ ingredients:
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
-    label: "riboflavin"
+    label: riboflavin
   concentration:
     value: '0.002657'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
   mediaingredientmech_chebi_term:
     id: CHEBI:17015
-    label: "riboflavin"
+    label: riboflavin
 - preferred_term: Nicotinate
   concentration:
     value: '0.008123'
@@ -24,7 +24,7 @@ ingredients:
   notes: 'Cross-references: KEGG:nac'
   term:
     id: CHEBI:15940
-    label: "nicotinic acid"
+    label: nicotinic acid
 - preferred_term: DL-Serine
   concentration:
     value: '3.235'
@@ -32,35 +32,35 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
   concentration:
     value: '55.51'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
-    label: "biotin"
+    label: biotin
   concentration:
     value: '0.04093'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
-    label: "biotin"
+    label: biotin
 - preferred_term: Pyridoxamine
   term:
     id: CHEBI:16410
-    label: "pyridoxamine"
+    label: pyridoxamine
   concentration:
     value: '0.02973'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pydam'
   mediaingredientmech_chebi_term:
     id: CHEBI:16410
-    label: "pyridoxamine"
+    label: pyridoxamine
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -74,13 +74,13 @@ ingredients:
 - preferred_term: DL-methionine
   term:
     id: CHEBI:16811
-    label: "methionine"
+    label: methionine
   concentration:
     value: '0.8042'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:16811
-    label: "methionine"
+    label: methionine
 - preferred_term: L-Glutamate
   concentration:
     value: '0.6797'
@@ -88,21 +88,21 @@ ingredients:
   notes: 'Cross-references: KEGG:glu-L'
   term:
     id: CHEBI:16015
-    label: "L-glutamic acid"
+    label: L-glutamic acid
 - preferred_term: Valine
   concentration:
     value: '2.817'
     unit: MILLIMOLAR
   term:
     id: CHEBI:16414
-    label: "L-valine"
+    label: L-valine
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '42.92'
     unit: MILLIMOLAR
   term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: Magnesium chloride
   concentration:
     value: '0.9838'
@@ -119,21 +119,21 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:17191
-    label: "L-isoleucine"
+    label: L-isoleucine
 - preferred_term: Leucine
   concentration:
     value: '3.583'
     unit: MILLIMOLAR
   term:
     id: CHEBI:15603
-    label: "L-leucine"
+    label: L-leucine
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '66.13'
     unit: MILLIMOLAR
   term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

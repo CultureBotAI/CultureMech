@@ -9,35 +9,35 @@ ingredients:
 - preferred_term: Acetate
   term:
     id: CHEBI:30089
-    label: "acetate"
+    label: acetate
   concentration:
     value: '40.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ac'
   mediaingredientmech_chebi_term:
     id: CHEBI:30089
-    label: "acetate"
+    label: acetate
 - preferred_term: Methanol
   term:
     id: CHEBI:17790
-    label: "methanol"
+    label: methanol
   concentration:
     value: '125.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:meoh'
   mediaingredientmech_chebi_term:
     id: CHEBI:17790
-    label: "methanol"
+    label: methanol
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '400.0'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -54,7 +54,7 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: "calcium dichloride"
+    label: calcium dichloride
 - preferred_term: Sodium sulfide
   concentration:
     value: '0.4'
@@ -64,11 +64,11 @@ ingredients:
     label: Sodium sulfide
   term:
     id: CHEBI:85357
-    label: "3-[(1E,4R)-4-hydroxycyclohex-2-en-1-ylidene]pyruvic acid"
+    label: 3-[(1E,4R)-4-hydroxycyclohex-2-en-1-ylidene]pyruvic acid
 - preferred_term: Cysteine-HCl
   term:
     id: CHEBI:91247
-    label: "L-cysteine hydrochloride"
+    label: L-cysteine hydrochloride
   concentration:
     value: '2.8'
     unit: MILLIMOLAR
@@ -81,7 +81,7 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: Potassium chloride
   concentration:
     value: '13.0'
@@ -95,23 +95,23 @@ ingredients:
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
-    label: "ammonium chloride"
+    label: ammonium chloride
   concentration:
     value: '19.0'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: "ammonium chloride"
+    label: ammonium chloride
 - preferred_term: Sodium bicarbonate
   concentration:
     value: '45.0'
     unit: MILLIMOLAR
   term:
     id: CHEBI:32139
-    label: "sodium hydrogencarbonate"
+    label: sodium hydrogencarbonate
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: "sodium hydrogencarbonate"
+    label: sodium hydrogencarbonate
 - preferred_term: Magnesium chloride
   concentration:
     value: '54.0'

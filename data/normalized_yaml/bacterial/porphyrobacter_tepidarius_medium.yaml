@@ -16,33 +16,33 @@ ingredients:
 - preferred_term: Na glutamate
   term:
     id: CHEBI:64220
-    label: "monosodium glutamate"
+    label: monosodium glutamate
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:64220
-    label: "monosodium glutamate"
+    label: monosodium glutamate
 - preferred_term: Sodium succinate
   term:
     id: CHEBI:63675
-    label: "sodium succinate (anhydrous)"
+    label: sodium succinate (anhydrous)
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63675
-    label: "sodium succinate (anhydrous)"
+    label: sodium succinate (anhydrous)
 - preferred_term: Sodium acetate
   term:
     id: CHEBI:32954
-    label: "sodium acetate"
+    label: sodium acetate
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32954
-    label: "sodium acetate"
+    label: sodium acetate
 - preferred_term: Yeast extract
   concentration:
     value: '0.5'
@@ -60,118 +60,118 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: "ammonium sulfate"
+    label: ammonium sulfate
 - preferred_term: Sodium thiosulphate
   term:
     id: CHEBI:132112
-    label: "sodium thiosulfate"
+    label: sodium thiosulfate
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:132112
-    label: "sodium thiosulfate"
+    label: sodium thiosulfate
 - preferred_term: Na3-EDTA
   term:
     id: CHEBI:63125
-    label: "EDTA trisodium salt"
+    label: EDTA trisodium salt
   concentration:
     value: '6.53'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 4.53, 2.0]'
   mediaingredientmech_chebi_term:
     id: CHEBI:63125
-    label: "EDTA trisodium salt"
+    label: EDTA trisodium salt
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
   concentration:
     value: '1.11'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '24.65'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
   concentration:
     value: '2.94'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '23.4'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: MnSO4 x 4 H2O
   term:
     id: CHEBI:86358
-    label: "manganese(II) sulfate tetrahydrate"
+    label: manganese(II) sulfate tetrahydrate
   concentration:
     value: '0.112'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86358
-    label: "manganese(II) sulfate tetrahydrate"
+    label: manganese(II) sulfate tetrahydrate
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
-    label: "zinc sulfate heptahydrate"
+    label: zinc sulfate heptahydrate
   concentration:
     value: '0.029'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32312
-    label: "zinc sulfate heptahydrate"
+    label: zinc sulfate heptahydrate
 - preferred_term: Co(NO3)2 x 6 H2O
   term:
     id: CHEBI:86214
-    label: "cobalt dinitrate hexahydrate"
+    label: cobalt dinitrate hexahydrate
   concentration:
     value: '0.029'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86214
-    label: "cobalt dinitrate hexahydrate"
+    label: cobalt dinitrate hexahydrate
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
-    label: "copper(II) sulfate pentahydrate"
+    label: copper(II) sulfate pentahydrate
   concentration:
     value: '0.025'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31440
-    label: "copper(II) sulfate pentahydrate"
+    label: copper(II) sulfate pentahydrate
 - preferred_term: Na2Mo4 x 2 H2O
   concentration:
     value: '0.024'
     unit: G_PER_L
   term:
     id: CHEBI:75213
-    label: "sodium molybdate dihydrate"
+    label: sodium molybdate dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:75213
-    label: "sodium molybdate dihydrate"
+    label: sodium molybdate dihydrate
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -181,7 +181,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: "boric acid"
+    label: boric acid
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -191,7 +191,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -201,21 +201,21 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
-    label: "nicotinic acid"
+    label: nicotinic acid
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15940
-    label: "nicotinic acid"
+    label: nicotinic acid
 - preferred_term: Thiamine
   term:
     id: CHEBI:26948
-    label: "vitamin B1"
+    label: vitamin B1
   concentration:
     value: '1'
     unit: G_PER_L
@@ -225,33 +225,33 @@ ingredients:
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
-    label: "biotin"
+    label: biotin
   concentration:
     value: '0.05'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
-    label: "biotin"
+    label: biotin
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
-    label: "4-aminobenzoic acid"
+    label: 4-aminobenzoic acid
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30753
-    label: "4-aminobenzoic acid"
+    label: 4-aminobenzoic acid
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
-    label: "cyanocob(III)alamin"
+    label: cyanocob(III)alamin
   concentration:
     value: '0.01'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17439
-    label: "cyanocob(III)alamin"
+    label: cyanocob(III)alamin
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -265,23 +265,23 @@ ingredients:
 - preferred_term: Pyridoxine hydrochloride
   term:
     id: CHEBI:30961
-    label: "pyridoxine hydrochloride"
+    label: pyridoxine hydrochloride
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30961
-    label: "pyridoxine hydrochloride"
+    label: pyridoxine hydrochloride
 - preferred_term: Folic acid
   term:
     id: CHEBI:27470
-    label: "folic acid"
+    label: folic acid
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:27470
-    label: "folic acid"
+    label: folic acid
 preparation_steps:
 - step_number: 1
   action: MIX

@@ -13,7 +13,7 @@ composition:
     label: L-Histidine
   chebi_term:
     id: CHEBI:15971
-    label: "L-histidine"
+    label: L-histidine
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Serine
@@ -25,7 +25,7 @@ composition:
     label: L-Serine
   chebi_term:
     id: CHEBI:17115
-    label: "L-serine"
+    label: L-serine
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Glutamine
@@ -37,7 +37,7 @@ composition:
     label: L-Glutamine
   chebi_term:
     id: CHEBI:18050
-    label: "L-glutamine"
+    label: L-glutamine
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -49,7 +49,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Original volume: 50 mL'

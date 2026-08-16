@@ -88,6 +88,25 @@ class Labels:
         return self._cache[term_id]
 
 
+def _label_line(indent: str, value: str) -> str:
+    """`<indent>label: <value>` emitted the way record_io would have emitted it.
+
+    Two wrong answers were tried first. `yaml.dump("water")` returns "water\n...\n" --
+    the trailing document-end marker corrupts the file, and the run silently rewrites
+    nothing because every write fails its own re-parse. `json.dumps` is always valid
+    YAML but double-quotes EVERY label, which diverges from the corpus convention and
+    breaks test_record_io's byte-identical round-trip check.
+
+    Dumping a one-key mapping with the corpus's own DUMP_KWARGS gets PyYAML to decide
+    quoting exactly as `write_record` would: bare when the scalar is plain, quoted only
+    when it has to be.
+    """
+    from record_io import DUMP_KWARGS
+    kwargs = {k: v for k, v in DUMP_KWARGS.items() if k != "sort_keys"}
+    body = yaml.dump({"label": value}, sort_keys=False, **kwargs).rstrip("\n")
+    return "".join(f"{indent}{line}\n" for line in body.splitlines())
+
+
 def refill_text(text: str, labels: Labels) -> tuple[str, Counter]:
     """Rewrite `label:` lines that follow an `id:` line at the same indent.
 
@@ -112,14 +131,17 @@ def refill_text(text: str, labels: Labels) -> tuple[str, Counter]:
             if ml and ml.group(1) == pending[0]:
                 current = ml.group(2).strip().strip("'\"")
                 new = pending[1]
-                if current == new:
+                want = _label_line(pending[0], new)
+                # Compare the rendered LINE, not just the value: a correct label that
+                # is quoted differently from the corpus convention still needs
+                # rewriting, and comparing stripped values would call it "already
+                # correct" and leave the divergence in place.
+                if line == want:
                     stats["already correct"] += 1
                 else:
-                    stats["empty -> filled" if not current else "corrected"] += 1
-                    # json.dumps, NOT yaml.dump: yaml.dump("water") returns
-                    # "water\n...\n" and that trailing document-end marker corrupts
-                    # the file. A JSON double-quoted scalar is always valid YAML.
-                    out[n] = f"{pending[0]}label: {json.dumps(new)}\n"
+                    stats["empty -> filled" if not current
+                          else ("requoted" if current == new else "corrected")] += 1
+                    out[n] = want
             pending = None
     return "".join(out), stats
 

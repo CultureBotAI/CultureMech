@@ -70,10 +70,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: Na2MoO4・2H2O
   concentration:
     value: '25.2'
@@ -103,7 +103,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: MnCl2・4H2O
   concentration:
     value: '1.8'
@@ -112,7 +112,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: CoCl2・6H2O
   concentration:
     value: '40.4'
@@ -121,7 +121,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:35696
-    label: "cobalt dichloride"
+    label: cobalt dichloride
 - preferred_term: CuCl2・2H2O
   concentration:
     value: '26.9'
@@ -130,7 +130,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86318
-    label: "copper(II) chloride dihydrate"
+    label: copper(II) chloride dihydrate
 - preferred_term: ZnCl2
   concentration:
     value: '20.8'

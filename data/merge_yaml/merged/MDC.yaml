@@ -26,7 +26,7 @@ ingredients:
   notes: 'CAS: 7772-98-7; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:132112
-    label: "sodium thiosulfate"
+    label: sodium thiosulfate
 - preferred_term: 4-Aminobenzoic acid
   concentration:
     value: '0.0146'
@@ -75,7 +75,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: EDTA
   concentration:
     value: '0.00025'
@@ -93,7 +93,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:32312
-    label: "zinc sulfate heptahydrate"
+    label: zinc sulfate heptahydrate
 - preferred_term: Manganese (II) sulfate monohydrate
   concentration:
     value: '0.000154'
@@ -110,7 +110,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:31440
-    label: "copper(II) sulfate pentahydrate"
+    label: copper(II) sulfate pentahydrate
 - preferred_term: Cobalt(II) nitrate hexahydrate
   concentration:
     value: '2.5e-05'
@@ -119,7 +119,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:86214
-    label: "cobalt dinitrate hexahydrate"
+    label: cobalt dinitrate hexahydrate
 - preferred_term: sodium tetraborate decahydrate
   concentration:
     value: '1.77e-05'
@@ -127,7 +127,7 @@ ingredients:
   notes: 'CAS: 1303-96-4; From UW concentrated base'
   term:
     id: CHEBI:86222
-    label: "borax"
+    label: borax
 - preferred_term: Magnesium sulfate
   concentration:
     value: '1'

@@ -18,7 +18,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: FOODON:03315426
-    label: "yeast extract"
+    label: yeast extract
   notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 232-387-9'
 description: Luria-Bertani broth without salt
 notes: 'Source: FEBA media definitions'

@@ -43,7 +43,7 @@ composition:
     label: Thiamine
   chebi_term:
     id: CHEBI:26948
-    label: "vitamin B1"
+    label: vitamin B1
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Biotin
@@ -55,7 +55,7 @@ composition:
     label: Biotin
   chebi_term:
     id: CHEBI:15956
-    label: "biotin"
+    label: biotin
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Deionized water
@@ -79,7 +79,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: "Prepare the following primary stocks solutions first.\nTo prepare\

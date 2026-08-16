@@ -26,10 +26,10 @@ ingredients:
     compound'
   term:
     id: CHEBI:30089
-    label: "acetate"
+    label: acetate
   mediaingredientmech_chebi_term:
     id: CHEBI:30089
-    label: "acetate"
+    label: acetate
 - preferred_term: HS medium
   concentration:
     value: '1'
@@ -42,10 +42,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: NaCl
   concentration:
     value: '0.4'
@@ -69,7 +69,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: NH4Cl
   concentration:
     value: '19'
@@ -102,7 +102,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
 - preferred_term: Na2S . 9H2O
   concentration:
     value: '0.4'
@@ -111,7 +111,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:76209
-    label: "sodium sulfide nonahydrate"
+    label: sodium sulfide nonahydrate
 - preferred_term: KCl
   concentration:
     value: '13'

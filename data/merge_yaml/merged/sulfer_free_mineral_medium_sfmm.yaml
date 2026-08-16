@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 3 duplicates: 975.0, 950.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '13.3'
@@ -41,7 +41,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: MgCl2·6H2O
   concentration:
     value: '26.0'
@@ -89,7 +89,7 @@ ingredients:
     label: ammonium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63038
-    label: "ammonium nitrate"
+    label: ammonium nitrate
 - preferred_term: Agarose (Electrophoresis grade,  if needed)
   concentration:
     value: '5'
@@ -149,7 +149,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: CuCl2·2H2O
   concentration:
     value: '0.267'
@@ -194,7 +194,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:30812
-    label: "iron dichloride"
+    label: iron dichloride
 - preferred_term: Na2B4O7·10H2O
   concentration:
     value: '0.177'
@@ -203,7 +203,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:131366
-    label: "disodium tetraborate decahydrate"
+    label: disodium tetraborate decahydrate
 - preferred_term: Na-EDTA
   concentration:
     value: '2.5'

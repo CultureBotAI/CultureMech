@@ -35,10 +35,10 @@ ingredients:
     Simple component [Merged 3 duplicates: 100.0, 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: x5 M9 salt (Sigma)
   concentration:
     value: '20'
@@ -66,7 +66,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: NH4Cl
   concentration:
     value: '5'
@@ -123,7 +123,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86318
-    label: "copper(II) chloride dihydrate"
+    label: copper(II) chloride dihydrate
 - preferred_term: ZnCl2
   concentration:
     value: '0.25'
@@ -144,7 +144,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86364
-    label: "manganese(II) sulfate monohydrate"
+    label: manganese(II) sulfate monohydrate
 - preferred_term: Co(NO3)2.6H2O
   concentration:
     value: '0.25'
@@ -168,7 +168,7 @@ ingredients:
     label: calcium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:64205
-    label: "calcium nitrate"
+    label: calcium nitrate
 - preferred_term: (NH4)6Mo7O24.4H2O
   concentration:
     value: '0.25'

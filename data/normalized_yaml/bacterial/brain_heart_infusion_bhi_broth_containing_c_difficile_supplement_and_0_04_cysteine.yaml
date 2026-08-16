@@ -15,10 +15,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15356
-    label: "cysteine"
+    label: cysteine
   mediaingredientmech_chebi_term:
     id: CHEBI:15356
-    label: "cysteine"
+    label: cysteine
 - preferred_term: Calf brains
   term:
     id: UBERON:0000955
@@ -98,7 +98,7 @@ ingredients:
 - preferred_term: Disodium phosphate
   term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
   concentration:
     value: '2.5'
     unit: G_PER_L
@@ -122,7 +122,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: "carbon dioxide"
+    label: carbon dioxide
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -130,7 +130,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -138,7 +138,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: "dihydrogen"
+    label: dihydrogen
 - preferred_term: C. difficile supplement
   concentration:
     value: variable

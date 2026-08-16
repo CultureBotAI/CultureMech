@@ -19,10 +19,10 @@ ingredients:
     compound'
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: DI Water
   concentration:
     value: '1000'

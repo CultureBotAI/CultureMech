@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '6.4'
@@ -47,7 +47,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 - preferred_term: NH4Cl
   concentration:
     value: '0.5'
@@ -92,7 +92,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
 - preferred_term: FeSO4・7H2O
   concentration:
     value: '9.5'
@@ -101,7 +101,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: KCl
   concentration:
     value: '0.33'
@@ -144,7 +144,7 @@ ingredients:
   notes: 'Role: Buffer; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:32954
-    label: "sodium acetate"
+    label: sodium acetate
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -152,7 +152,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: "carbon dioxide"
+    label: carbon dioxide
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
@@ -160,7 +160,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -168,7 +168,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: "dihydrogen"
+    label: dihydrogen
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -176,7 +176,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 - preferred_term: Na2MoO4・2H2O
   concentration:
     value: '0.1'
@@ -206,7 +206,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:34887
-    label: "nickel dichloride"
+    label: nickel dichloride
 - preferred_term: ZnSO4・7H2O
   concentration:
     value: '0.1'
@@ -215,7 +215,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:32312
-    label: "zinc sulfate heptahydrate"
+    label: zinc sulfate heptahydrate
 - preferred_term: CuSO4・5H2O
   concentration:
     value: '0.01'
@@ -224,7 +224,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:31440
-    label: "copper(II) sulfate pentahydrate"
+    label: copper(II) sulfate pentahydrate
 - preferred_term: CoSO4・7H2O
   concentration:
     value: '0.1'
@@ -242,7 +242,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63939
-    label: "sodium tungstate dihydrate"
+    label: sodium tungstate dihydrate
 - preferred_term: MnSO4・xH2O
   concentration:
     value: '0.5'
@@ -251,7 +251,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86360
-    label: "manganese(II) sulfate"
+    label: manganese(II) sulfate
 - preferred_term: AlK(SO4)2
   concentration:
     value: '0.01'
@@ -289,10 +289,10 @@ ingredients:
   notes: 'Role: Buffer; Properties: Organic compound, Defined component, Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:53258
-    label: "sodium citrate"
+    label: sodium citrate
   term:
     id: CHEBI:53258
-    label: "sodium citrate"
+    label: sodium citrate
 media_term:
   preferred_term: TOGO Medium M1298
   term:

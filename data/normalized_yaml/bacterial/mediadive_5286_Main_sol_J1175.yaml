@@ -13,7 +13,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: K2HPO4
@@ -49,7 +49,7 @@ composition:
     label: NaCl
   chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
     confidence: 1.0
     match_type: exact_match
 - preferred_term: MgCl2 x 6 H2O
@@ -61,7 +61,7 @@ composition:
     label: MgCl2 x 6 H2O
   chebi_term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
     match_type: corpus_consensus
 - preferred_term: CaCl2 x 2 H2O
   concentration:
@@ -72,7 +72,7 @@ composition:
     label: CaCl2 x 2 H2O
   chebi_term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: KCl
@@ -129,7 +129,7 @@ composition:
     label: L-Arginine
   chebi_term:
     id: CHEBI:16467
-    label: "L-arginine"
+    label: L-arginine
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Histidine
@@ -141,7 +141,7 @@ composition:
     label: L-Histidine
   chebi_term:
     id: CHEBI:15971
-    label: "L-histidine"
+    label: L-histidine
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Resazurin
@@ -153,7 +153,7 @@ composition:
     label: Resazurin
   chebi_term:
     id: CHEBI:8806
-    label: "Resazurin"
+    label: Resazurin
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Distilled water
@@ -165,7 +165,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: NaHCO3
@@ -189,7 +189,7 @@ composition:
     label: Na2S x 9 H2O
   chebi_term:
     id: CHEBI:76209
-    label: "sodium sulfide nonahydrate"
+    label: sodium sulfide nonahydrate
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: "Mix components thoroughly, adjust pH to 7.5 with KOH and autoclave\

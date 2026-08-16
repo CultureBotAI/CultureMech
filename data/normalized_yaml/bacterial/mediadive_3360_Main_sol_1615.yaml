@@ -37,7 +37,7 @@ composition:
     label: CaCl2 x 2 H2O
   chebi_term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na-aspartate
@@ -56,7 +56,7 @@ composition:
     label: L-Methionine
   chebi_term:
     id: CHEBI:16643
-    label: "L-methionine"
+    label: L-methionine
     confidence: 0.9
     match_type: corpus_consensus
 preparation_notes: "pH 7.0-7.2\nAfter sterilization add from sterile stock solutions:\n\

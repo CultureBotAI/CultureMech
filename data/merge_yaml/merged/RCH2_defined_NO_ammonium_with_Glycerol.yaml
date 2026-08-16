@@ -20,7 +20,7 @@ ingredients:
   notes: 'CAS: 10049-21-5; MW: 137.99; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:114249
-    label: "sodium dihydrogenphosphate monohydrate"
+    label: sodium dihydrogenphosphate monohydrate
 - preferred_term: PIPES sesquisodium salt
   concentration:
     value: '30'
@@ -28,7 +28,7 @@ ingredients:
   notes: 'CAS: 100037-69-2; MW: 335.34'
   term:
     id: CHEBI:63055
-    label: "disodium PIPES"
+    label: disodium PIPES
 - preferred_term: Magnesium Sulfate Heptahydrate
   concentration:
     value: '0.03'
@@ -70,7 +70,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:53503
-    label: "cobalt chloride hexahydrate"
+    label: cobalt chloride hexahydrate
 - preferred_term: Zinc sulfate heptahydrate
   concentration:
     value: '0.001'
@@ -79,7 +79,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:32312
-    label: "zinc sulfate heptahydrate"
+    label: zinc sulfate heptahydrate
 - preferred_term: Calcium Chloride Dihydrate
   concentration:
     value: '0.001'
@@ -97,7 +97,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: Nickel (II) chloride hexahydrate
   concentration:
     value: '0.00025'
@@ -106,7 +106,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:53542
-    label: "nickel chloride hexahydrate"
+    label: nickel chloride hexahydrate
 - preferred_term: Aluminum potassium sulfate dodecahydrate
   concentration:
     value: '0.0002'
@@ -115,7 +115,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:86465
-    label: "potassium aluminium sulfate dodecahydrate"
+    label: potassium aluminium sulfate dodecahydrate
 - preferred_term: Copper (II) sulfate pentahydrate
   concentration:
     value: '0.0001'
@@ -124,7 +124,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:31440
-    label: "copper(II) sulfate pentahydrate"
+    label: copper(II) sulfate pentahydrate
 - preferred_term: Boric Acid
   concentration:
     value: '0.0001'
@@ -141,7 +141,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:75213
-    label: "sodium molybdate dihydrate"
+    label: sodium molybdate dihydrate
 - preferred_term: Sodium selenite pentahydrate
   concentration:
     value: '0.003'
@@ -150,7 +150,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:131361
-    label: "disodium selenite pentahydrate"
+    label: disodium selenite pentahydrate
 - preferred_term: pyridoxine HCl
   concentration:
     value: '0.1'
@@ -247,7 +247,7 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-81-5; MW: 92.09'
 description: Defined minimal media for soil and groundwater bacteria with glycerol
   and no salts - used by Peter Kim for chemotaxis assays

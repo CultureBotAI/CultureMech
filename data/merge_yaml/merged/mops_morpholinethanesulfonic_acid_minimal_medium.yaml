@@ -96,7 +96,7 @@ ingredients:
   notes: 'Properties: Buffer'
   term:
     id: CHEBI:46760
-    label: "tricine"
+    label: tricine
 - preferred_term: CaCl2
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'

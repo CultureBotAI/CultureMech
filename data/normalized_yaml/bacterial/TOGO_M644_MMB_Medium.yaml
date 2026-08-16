@@ -14,10 +14,10 @@ ingredients:
     Defined component [Merged 2 duplicates: 1.0, 950.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: Yeast extract
   concentration:
     value: '0.1'
@@ -72,7 +72,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 - preferred_term: FeSO4・7H2O
   concentration:
     value: '99'
@@ -81,7 +81,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: Biotin
   concentration:
     value: '0.5'
@@ -101,7 +101,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:49105
-    label: "thiamine hydrochloride"
+    label: thiamine hydrochloride
 - preferred_term: Nicotinic acid
   concentration:
     value: '50'

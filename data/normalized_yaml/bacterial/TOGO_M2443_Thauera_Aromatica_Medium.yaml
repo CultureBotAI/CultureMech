@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 4 duplicates: 500.0, 500.0, 990.0, 1000.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: KH2PO4
   concentration:
     value: '0.816'
@@ -29,7 +29,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: K2HPO4
   concentration:
     value: '5.92'
@@ -100,7 +100,7 @@ ingredients:
     label: sodium benzoate
   mediaingredientmech_chebi_term:
     id: CHEBI:113455
-    label: "sodium benzoate"
+    label: sodium benzoate
 - preferred_term: HCl
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Solution'
@@ -145,10 +145,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
   term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '190'
@@ -289,7 +289,7 @@ ingredients:
     component'
   term:
     id: CHEBI:17154
-    label: "nicotinamide"
+    label: nicotinamide
 - preferred_term: Thiamine-HCl x 2 H2O
   concentration:
     value: '50'
@@ -297,10 +297,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:132751
-    label: "thiamine hydrochloride dihydrate"
+    label: thiamine hydrochloride dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:132751
-    label: "thiamine hydrochloride dihydrate"
+    label: thiamine hydrochloride dihydrate
 - preferred_term: Pantothenic acid
   concentration:
     value: '50'

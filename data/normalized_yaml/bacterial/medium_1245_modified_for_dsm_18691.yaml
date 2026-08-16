@@ -42,94 +42,94 @@ ingredients:
 - preferred_term: Potassium Phosphate
   term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
   concentration:
     value: '2'
     unit: G_PER_L
   notes: ' (dibasic)'
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: Sodium Chloride
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: "magnesium sulfate"
+    label: magnesium sulfate
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: "magnesium sulfate"
+    label: magnesium sulfate
 - preferred_term: Acetic acid
   term:
     id: CHEBI:15366
-    label: "acetic acid"
+    label: acetic acid
   concentration:
     value: '1.6'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15366
-    label: "acetic acid"
+    label: acetic acid
 - preferred_term: Propionic acid
   term:
     id: CHEBI:30768
-    label: "propionic acid"
+    label: propionic acid
   concentration:
     value: '0.6'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30768
-    label: "propionic acid"
+    label: propionic acid
 - preferred_term: n-Butyric acid
   term:
     id: CHEBI:30772
-    label: "butyric acid"
+    label: butyric acid
   concentration:
     value: '0.4'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30772
-    label: "butyric acid"
+    label: butyric acid
 - preferred_term: n-Valeric acid
   term:
     id: CHEBI:17418
-    label: "valeric acid"
+    label: valeric acid
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17418
-    label: "valeric acid"
+    label: valeric acid
 - preferred_term: Isovaleric acid
   term:
     id: CHEBI:28484
-    label: "isovaleric acid"
+    label: isovaleric acid
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:28484
-    label: "isovaleric acid"
+    label: isovaleric acid
 - preferred_term: Isobutyric acid
   term:
     id: CHEBI:16135
-    label: "isobutyric acid"
+    label: isobutyric acid
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16135
-    label: "isobutyric acid"
+    label: isobutyric acid
 - preferred_term: Tryptone
   term:
     id: MICRO:0000182
@@ -186,23 +186,23 @@ ingredients:
 - preferred_term: Vitamin K1
   term:
     id: CHEBI:18067
-    label: "phylloquinone"
+    label: phylloquinone
   concentration:
     value: '0.001'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:18067
-    label: "phylloquinone"
+    label: phylloquinone
 - preferred_term: L-Cysteine
   term:
     id: CHEBI:17561
-    label: "L-cysteine"
+    label: L-cysteine
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17561
-    label: "L-cysteine"
+    label: L-cysteine
 - preferred_term: Fetal bovine serum
   concentration:
     value: '100'
@@ -211,104 +211,104 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
   concentration:
     value: '8'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
 - preferred_term: Fructose
   term:
     id: CHEBI:28757
-    label: "fructose"
+    label: fructose
   concentration:
     value: '8'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:28757
-    label: "fructose"
+    label: fructose
 - preferred_term: Sucrose
   term:
     id: CHEBI:17992
-    label: "sucrose"
+    label: sucrose
   concentration:
     value: '8'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17992
-    label: "sucrose"
+    label: sucrose
 - preferred_term: Maltose
   term:
     id: CHEBI:17306
-    label: "maltose"
+    label: maltose
   concentration:
     value: '16.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 8.0, 8.0]'
   mediaingredientmech_chebi_term:
     id: CHEBI:17306
-    label: "maltose"
+    label: maltose
 - preferred_term: Ribose
   term:
     id: CHEBI:33942
-    label: "ribose"
+    label: ribose
   concentration:
     value: '8'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:33942
-    label: "ribose"
+    label: ribose
 - preferred_term: Xylose
   term:
     id: CHEBI:18222
-    label: "xylose"
+    label: xylose
   concentration:
     value: '8'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:18222
-    label: "xylose"
+    label: xylose
 - preferred_term: Pectin
   term:
     id: CHEBI:17309
-    label: "pectin"
+    label: pectin
   concentration:
     value: '8'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17309
-    label: "pectin"
+    label: pectin
 - preferred_term: Starch
   term:
     id: CHEBI:28017
-    label: "starch"
+    label: starch
   concentration:
     value: '8'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:28017
-    label: "starch"
+    label: starch
 - preferred_term: Sodium pyruvate
   term:
     id: CHEBI:50144
-    label: "sodium pyruvate"
+    label: sodium pyruvate
   concentration:
     value: '8'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:50144
-    label: "sodium pyruvate"
+    label: sodium pyruvate
 - preferred_term: Thiamine pyrophosphate
   term:
     id: CHEBI:18290
-    label: "thiamine(1+) diphosphate chloride"
+    label: thiamine(1+) diphosphate chloride
   concentration:
     value: '0.00075'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:18290
-    label: "thiamine(1+) diphosphate chloride"
+    label: thiamine(1+) diphosphate chloride
 applications:
 - Microbial cultivation
 curation_history:

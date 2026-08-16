@@ -24,23 +24,23 @@ ingredients:
 - preferred_term: CaCO3
   term:
     id: CHEBI:3311
-    label: "calcium carbonate"
+    label: calcium carbonate
   concentration:
     value: '2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:3311
-    label: "calcium carbonate"
+    label: calcium carbonate
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '12'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 preparation_steps:
 - step_number: 1
   action: MIX

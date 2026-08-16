@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: NaCl
   concentration:
     value: '2.5'
@@ -44,10 +44,10 @@ ingredients:
     Organic compound'
   term:
     id: CHEBI:28971
-    label: "ampicillin"
+    label: ampicillin
   mediaingredientmech_chebi_term:
     id: CHEBI:28971
-    label: "ampicillin"
+    label: ampicillin
 - preferred_term: Tetracycline
   concentration:
     value: '2'

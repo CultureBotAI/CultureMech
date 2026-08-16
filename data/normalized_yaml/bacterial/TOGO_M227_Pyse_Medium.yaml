@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '2.65'
@@ -52,7 +52,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
 - preferred_term: KCl
   concentration:
     value: '0.35'
@@ -73,7 +73,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:32583
-    label: "calcium sulfate dihydrate"
+    label: calcium sulfate dihydrate
 - preferred_term: Peptone
   concentration:
     value: '8'

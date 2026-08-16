@@ -15,10 +15,10 @@ ingredients:
     20.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: KH2PO4
   concentration:
     value: '0.41'
@@ -30,7 +30,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: Resazurin
   concentration:
     value: '0.5'
@@ -63,10 +63,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:65242
-    label: "sodium chlorate"
+    label: sodium chlorate
   mediaingredientmech_chebi_term:
     id: CHEBI:65242
-    label: "sodium chlorate"
+    label: sodium chlorate
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -74,7 +74,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: "carbon dioxide"
+    label: carbon dioxide
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -82,7 +82,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 - preferred_term: CaCl2
   concentration:
     value: '0.11'
@@ -139,10 +139,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:184335
-    label: "Ammonium bicarbonate"
+    label: Ammonium bicarbonate
   mediaingredientmech_chebi_term:
     id: CHEBI:184335
-    label: "Ammonium bicarbonate"
+    label: Ammonium bicarbonate
 - preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '36'
@@ -175,10 +175,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
   term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '190'
@@ -265,10 +265,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63939
-    label: "sodium tungstate dihydrate"
+    label: sodium tungstate dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63939
-    label: "sodium tungstate dihydrate"
+    label: sodium tungstate dihydrate
 - preferred_term: NaOH
   concentration:
     value: '500'
@@ -354,7 +354,7 @@ ingredients:
     component'
   term:
     id: CHEBI:17154
-    label: "nicotinamide"
+    label: nicotinamide
 - preferred_term: Thiamine-HCl x 2 H2O
   concentration:
     value: '50'
@@ -362,10 +362,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:132751
-    label: "thiamine hydrochloride dihydrate"
+    label: thiamine hydrochloride dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:132751
-    label: "thiamine hydrochloride dihydrate"
+    label: thiamine hydrochloride dihydrate
 - preferred_term: Pantothenic acid
   concentration:
     value: '50'

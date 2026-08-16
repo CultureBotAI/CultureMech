@@ -56,7 +56,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:32139
-    label: "sodium hydrogencarbonate"
+    label: sodium hydrogencarbonate
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 144-55-8; MW: 84.007'
 - preferred_term: Hemin
   concentration:
@@ -74,7 +74,7 @@ ingredients:
   notes: 'CAS: 58-27-5; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:28869
-    label: "menadione"
+    label: menadione
 description: Brain heart infusion salt broth with vitamin K3
 notes: 'Source: FEBA media definitions'
 category: specialized

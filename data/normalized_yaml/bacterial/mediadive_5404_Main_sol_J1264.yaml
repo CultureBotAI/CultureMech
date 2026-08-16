@@ -87,7 +87,7 @@ composition:
     label: DL-Malic acid
   chebi_term:
     id: CHEBI:6650
-    label: "malic acid"
+    label: malic acid
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Fumaric acid
@@ -147,7 +147,7 @@ composition:
     label: CaCl2 x 2 H2O
   chebi_term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: NaNO3
@@ -170,7 +170,7 @@ composition:
     label: MgCl2 x 6 H2O
   chebi_term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
     match_type: corpus_consensus
 - preferred_term: Na2CO3
   concentration:
@@ -193,7 +193,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: After autoclaving, adjust pH to 10.0 with sterilized 10% Na2CO3

@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 900.0, 100.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '1'

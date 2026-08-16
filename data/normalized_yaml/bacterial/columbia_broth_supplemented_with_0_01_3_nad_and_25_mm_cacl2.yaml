@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: CaCl2
   concentration:
     value: '25'
@@ -53,10 +53,10 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: Dextrose
   concentration:
     value: '2.5'
@@ -97,7 +97,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75832
-    label: "iron(2+) sulfate (anhydrous)"
+    label: iron(2+) sulfate (anhydrous)
 - preferred_term: Magnesium Sulfate (anhydrous)
   concentration:
     value: '0.1'
@@ -126,10 +126,10 @@ ingredients:
   notes: 'Properties: Organic compound, Simple component, Defined component'
   mediaingredientmech_chebi_term:
     id: CHEBI:91247
-    label: "L-cysteine hydrochloride"
+    label: L-cysteine hydrochloride
   term:
     id: CHEBI:91247
-    label: "L-cysteine hydrochloride"
+    label: L-cysteine hydrochloride
 - preferred_term: Tryptic Digest of Beef Heart
   concentration:
     value: '3'

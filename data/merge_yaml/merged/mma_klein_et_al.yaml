@@ -13,14 +13,14 @@ ingredients:
 - preferred_term: Glutathione
   term:
     id: CHEBI:16856
-    label: "glutathione"
+    label: glutathione
   concentration:
     value: '0.65079'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gthrd'
   mediaingredientmech_chebi_term:
     id: CHEBI:16856
-    label: "glutathione"
+    label: glutathione
 - preferred_term: D-Glutamate
   concentration:
     value: '8.83572'
@@ -33,7 +33,7 @@ ingredients:
   notes: 'Cross-references: KEGG:ins'
   term:
     id: CHEBI:17596
-    label: "inosine"
+    label: inosine
 - preferred_term: L-Citrulline
   concentration:
     value: '1.71243'
@@ -41,7 +41,7 @@ ingredients:
   notes: 'Cross-references: KEGG:citr-L'
   term:
     id: CHEBI:16349
-    label: "L-citrulline"
+    label: L-citrulline
 - preferred_term: Magnesium chloride
   concentration:
     value: '4.51628'
@@ -58,51 +58,51 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: "calcium dichloride"
+    label: calcium dichloride
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '25.719'
     unit: MILLIMOLAR
   term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '99.2471'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
-    label: "thiamine hydrochloride"
+    label: thiamine hydrochloride
   concentration:
     value: '0.0133'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:49105
-    label: "thiamine hydrochloride"
+    label: thiamine hydrochloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '15.4994'
     unit: MILLIMOLAR
   term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: Hemin
   term:
     id: CHEBI:50385
-    label: "hemin"
+    label: hemin
   concentration:
     value: '0.01534'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:50385
-    label: "hemin"
+    label: hemin
 - preferred_term: Sodium Pantothenate
   concentration:
     value: '0.01825'

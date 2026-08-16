@@ -25,7 +25,7 @@ composition:
     label: Thiamine
   chebi_term:
     id: CHEBI:26948
-    label: "vitamin B1"
+    label: vitamin B1
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Biotine
@@ -61,7 +61,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Filtersterilized

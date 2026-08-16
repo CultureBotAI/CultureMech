@@ -25,34 +25,34 @@ ingredients:
 - preferred_term: Na2 alpha-ketoglutarate
   term:
     id: CHEBI:16810
-    label: "2-oxoglutarate(2-)"
+    label: 2-oxoglutarate(2-)
   concentration:
     value: '2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16810
-    label: "2-oxoglutarate(2-)"
+    label: 2-oxoglutarate(2-)
 - preferred_term: KOH
   term:
     id: CHEBI:32035
-    label: "potassium hydroxide"
+    label: potassium hydroxide
   concentration:
     value: '3.75'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32035
-    label: "potassium hydroxide"
+    label: potassium hydroxide
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 - preferred_term: Fetal bovine serum
   concentration:
     value: '150'

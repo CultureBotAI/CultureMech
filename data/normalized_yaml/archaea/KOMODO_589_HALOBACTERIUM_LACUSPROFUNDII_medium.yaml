@@ -17,53 +17,53 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '181'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
   concentration:
     value: '75'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '7.4'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
 - preferred_term: KCl
   term:
     id: CHEBI:32588
-    label: "potassium chloride"
+    label: potassium chloride
   concentration:
     value: '7.4'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: "potassium chloride"
+    label: potassium chloride
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -71,13 +71,13 @@ ingredients:
 - preferred_term: Sodium succinate
   term:
     id: CHEBI:63675
-    label: "sodium succinate (anhydrous)"
+    label: sodium succinate (anhydrous)
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63675
-    label: "sodium succinate (anhydrous)"
+    label: sodium succinate (anhydrous)
 - preferred_term: water (distilled or tapwater)
   concentration:
     value: '1000'
@@ -85,14 +85,14 @@ ingredients:
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 applications:
 - Microbial cultivation
 curation_history:
@@ -148,33 +148,33 @@ solutions:
   - preferred_term: Biotin
     term:
       id: CHEBI:15956
-      label: "biotin"
+      label: biotin
     concentration:
       value: '0.1'
       unit: G_PER_L
     mediaingredientmech_chebi_term:
       id: CHEBI:15956
-      label: "biotin"
+      label: biotin
   - preferred_term: Vitamin B12
     term:
       id: CHEBI:17439
-      label: "cyanocob(III)alamin"
+      label: cyanocob(III)alamin
     concentration:
       value: '0.1'
       unit: G_PER_L
     mediaingredientmech_chebi_term:
       id: CHEBI:17439
-      label: "cyanocob(III)alamin"
+      label: cyanocob(III)alamin
   - preferred_term: Thiamine-HCl x 2 H2O
     term:
       id: CHEBI:132751
-      label: "thiamine hydrochloride dihydrate"
+      label: thiamine hydrochloride dihydrate
     concentration:
       value: '0.1'
       unit: G_PER_L
     mediaingredientmech_chebi_term:
       id: CHEBI:132751
-      label: "thiamine hydrochloride dihydrate"
+      label: thiamine hydrochloride dihydrate
   concentration:
     value: '1'
     unit: ML_PER_L

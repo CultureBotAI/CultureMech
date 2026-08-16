@@ -14,10 +14,10 @@ ingredients:
     Inorganic compound [Merged 2 duplicates: 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: MgCl2 x 6 H2O
   concentration:
     value: '0.01'
@@ -26,7 +26,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
 - preferred_term: CH3COONa
   concentration:
     value: '0.0683'
@@ -40,10 +40,10 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:63005
-    label: "sodium nitrate"
+    label: sodium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63005
-    label: "sodium nitrate"
+    label: sodium nitrate
 - preferred_term: CaCl2
   concentration:
     value: '0.01'
@@ -73,7 +73,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '0.05'
@@ -82,7 +82,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:35696
-    label: "cobalt dichloride"
+    label: cobalt dichloride
 - preferred_term: CuSO4 x 5 H2O
   concentration:
     value: '0.1'
@@ -91,7 +91,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:31440
-    label: "copper(II) sulfate pentahydrate"
+    label: copper(II) sulfate pentahydrate
 - preferred_term: ZnSO4
   concentration:
     value: '0.1'

@@ -14,10 +14,10 @@ ingredients:
     Inorganic compound'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: Magnesium sulphate 7H2O
   concentration:
     value: '0.2'
@@ -61,7 +61,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63037
-    label: "triammonium citrate"
+    label: triammonium citrate
 - preferred_term: Sodium acetate 3H2O
   concentration:
     value: '5'

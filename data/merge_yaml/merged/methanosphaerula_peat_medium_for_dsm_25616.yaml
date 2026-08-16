@@ -18,7 +18,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: "carbon dioxide"
+    label: carbon dioxide
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -26,7 +26,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: "dihydrogen"
+    label: dihydrogen
 - preferred_term: Distilled water
   concentration:
     value: '2940.0'
@@ -36,10 +36,10 @@ ingredients:
     10.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: Nitrogen gas
   notes: 'Properties: Gas'
   concentration:
@@ -47,7 +47,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '1.56'
@@ -80,10 +80,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75213
-    label: "sodium molybdate dihydrate"
+    label: sodium molybdate dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:75213
-    label: "sodium molybdate dihydrate"
+    label: sodium molybdate dihydrate
 - preferred_term: H3BO3
   concentration:
     value: '19'
@@ -152,10 +152,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86465
-    label: "potassium aluminium sulfate dodecahydrate"
+    label: potassium aluminium sulfate dodecahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86465
-    label: "potassium aluminium sulfate dodecahydrate"
+    label: potassium aluminium sulfate dodecahydrate
 - preferred_term: MnSO4 x 4 H2O
   concentration:
     value: '26'
@@ -203,7 +203,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 - preferred_term: 2-(N-Morpholino)ethanesulfonic acid (MES)
   concentration:
     value: '1.95'
@@ -260,10 +260,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:30961
-    label: "pyridoxine hydrochloride"
+    label: pyridoxine hydrochloride
   mediaingredientmech_chebi_term:
     id: CHEBI:30961
-    label: "pyridoxine hydrochloride"
+    label: pyridoxine hydrochloride
 - preferred_term: Folic acid
   concentration:
     value: '2'
@@ -327,7 +327,7 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Defined component'
   term:
     id: CHEBI:31345
-    label: "Calcium pantothenate"
+    label: Calcium pantothenate
 - preferred_term: 2-Mercaptoethanesulfonic acid (Coenzyme M)
   concentration:
     value: '0.08'
@@ -344,7 +344,7 @@ ingredients:
     label: sodium acetate
   mediaingredientmech_chebi_term:
     id: CHEBI:32954
-    label: "sodium acetate"
+    label: sodium acetate
 - preferred_term: Na2S x 9 H2O
   concentration:
     value: '9.6'

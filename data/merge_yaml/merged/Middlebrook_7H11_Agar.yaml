@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 895.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: Monopotassium phosphate
   concentration:
     value: '1.5'
@@ -85,10 +85,10 @@ ingredients:
     component'
   term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
 - preferred_term: Monosodium glutamate
   concentration:
     value: '0.5'
@@ -179,10 +179,10 @@ ingredients:
     component, Simple component'
   term:
     id: CHEBI:72449
-    label: "malachite green"
+    label: malachite green
   mediaingredientmech_chebi_term:
     id: CHEBI:72449
-    label: "malachite green"
+    label: malachite green
 - preferred_term: Agar
   concentration:
     value: '13.5'
@@ -207,10 +207,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: Dextrose
   concentration:
     value: '20'
@@ -284,10 +284,10 @@ ingredients:
     component'
   term:
     id: CHEBI:16196
-    label: "oleic acid"
+    label: oleic acid
   mediaingredientmech_chebi_term:
     id: CHEBI:16196
-    label: "oleic acid"
+    label: oleic acid
 - preferred_term: Catalase
   concentration:
     value: '0.03'

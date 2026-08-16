@@ -67,7 +67,7 @@ composition:
     label: FeCl3
   chebi_term:
     id: CHEBI:30808
-    label: "iron trichloride"
+    label: iron trichloride
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: NaCl
@@ -79,7 +79,7 @@ composition:
     label: NaCl
   chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Calcium pantothenate
@@ -103,7 +103,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: H2O

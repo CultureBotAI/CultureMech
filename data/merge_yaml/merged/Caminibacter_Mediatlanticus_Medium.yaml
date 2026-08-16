@@ -13,7 +13,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: "carbon dioxide"
+    label: carbon dioxide
 - preferred_term: Hydrogen gas
   notes: 'Properties: Gas'
   concentration:
@@ -21,7 +21,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: "dihydrogen"
+    label: dihydrogen
 - preferred_term: Sodium resazurin (0.1% w/v)
   concentration:
     value: '0.5'
@@ -52,10 +52,10 @@ ingredients:
     Simple component [Merged 4 duplicates: 980.0, 10.0, 10.0, 1000.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '33.5'
@@ -155,7 +155,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: KNO3
   concentration:
     value: '1'
@@ -175,7 +175,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 - preferred_term: Na2S x 9 H2O
   concentration:
     value: '0.15'
@@ -195,7 +195,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 - preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '0.1'
@@ -216,10 +216,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '1.8'
@@ -264,10 +264,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86465
-    label: "potassium aluminium sulfate dodecahydrate"
+    label: potassium aluminium sulfate dodecahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86465
-    label: "potassium aluminium sulfate dodecahydrate"
+    label: potassium aluminium sulfate dodecahydrate
 - preferred_term: Na2WO4 x 2 H2O
   concentration:
     value: '0.1'
@@ -276,10 +276,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63939
-    label: "sodium tungstate dihydrate"
+    label: sodium tungstate dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63939
-    label: "sodium tungstate dihydrate"
+    label: sodium tungstate dihydrate
 - preferred_term: MnSO4 x H2O
   concentration:
     value: '5'
@@ -288,10 +288,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86364
-    label: "manganese(II) sulfate monohydrate"
+    label: manganese(II) sulfate monohydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
-    label: "manganese(II) sulfate monohydrate"
+    label: manganese(II) sulfate monohydrate
 - preferred_term: (NH4)2Ni(SO4)2 x 6 H2O
   concentration:
     value: '2.8'
@@ -300,10 +300,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86149
-    label: "ammonium nickel sulfate hexahydrate"
+    label: ammonium nickel sulfate hexahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86149
-    label: "ammonium nickel sulfate hexahydrate"
+    label: ammonium nickel sulfate hexahydrate
 - preferred_term: Na2SeO4
   concentration:
     value: '0.1'
@@ -315,7 +315,7 @@ ingredients:
     label: sodium selenate
   mediaingredientmech_chebi_term:
     id: CHEBI:77775
-    label: "sodium selenate"
+    label: sodium selenate
 media_term:
   preferred_term: TOGO Medium M3122
   term:

@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 3 duplicates: 1.0, 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '3.4'
@@ -146,10 +146,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63005
-    label: "sodium nitrate"
+    label: sodium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63005
-    label: "sodium nitrate"
+    label: sodium nitrate
 - preferred_term: Sulfur (powder)
   concentration:
     value: '30'
@@ -170,10 +170,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:76181
-    label: "ferrous ammonium sulfate hexahydrate"
+    label: ferrous ammonium sulfate hexahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:76181
-    label: "ferrous ammonium sulfate hexahydrate"
+    label: ferrous ammonium sulfate hexahydrate
 - preferred_term: Bacto Yeast Extract (Difco)
   concentration:
     value: '1'
@@ -186,7 +186,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: "carbon dioxide"
+    label: carbon dioxide
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
@@ -194,7 +194,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 - preferred_term: Hydrogen gas
   notes: 'Properties: Gas'
   concentration:
@@ -202,7 +202,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: "dihydrogen"
+    label: dihydrogen
 - preferred_term: Na2MoO4·2H2O
   concentration:
     value: '0.024'
@@ -235,7 +235,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: CoCl2·6H2O
   concentration:
     value: '0.024'
@@ -244,7 +244,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:35696
-    label: "cobalt dichloride"
+    label: cobalt dichloride
 - preferred_term: NiCl2·6H2O
   concentration:
     value: '0.12'
@@ -340,7 +340,7 @@ ingredients:
     label: sodium selenate
   mediaingredientmech_chebi_term:
     id: CHEBI:77775
-    label: "sodium selenate"
+    label: sodium selenate
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
@@ -403,10 +403,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:30961
-    label: "pyridoxine hydrochloride"
+    label: pyridoxine hydrochloride
   mediaingredientmech_chebi_term:
     id: CHEBI:30961
-    label: "pyridoxine hydrochloride"
+    label: pyridoxine hydrochloride
 - preferred_term: Folic acid
   concentration:
     value: '2'

@@ -13,7 +13,7 @@ composition:
     label: Tween 80
   chebi_term:
     id: CHEBI:53426
-    label: "polysorbate 80"
+    label: polysorbate 80
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Distilled water
@@ -25,7 +25,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Original volume: 100 mL'

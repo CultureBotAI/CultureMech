@@ -17,13 +17,13 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '45.58'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
@@ -33,17 +33,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32149
-    label: "sodium sulfate"
+    label: sodium sulfate
 - preferred_term: KCl
   term:
     id: CHEBI:32588
-    label: "potassium chloride"
+    label: potassium chloride
   concentration:
     value: '1.44'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: "potassium chloride"
+    label: potassium chloride
 - preferred_term: NaBr
   term:
     id: CHEBI:63004
@@ -53,17 +53,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63004
-    label: "sodium bromide"
+    label: sodium bromide
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
-    label: "sodium hydrogencarbonate"
+    label: sodium hydrogencarbonate
   concentration:
     value: '0.062'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: "sodium hydrogencarbonate"
+    label: sodium hydrogencarbonate
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -73,7 +73,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: "boric acid"
+    label: boric acid
 - preferred_term: NaF
   term:
     id: CHEBI:28741
@@ -83,7 +83,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:28741
-    label: "sodium fluoride"
+    label: sodium fluoride
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -93,21 +93,21 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: "ammonium chloride"
+    label: ammonium chloride
 - preferred_term: Na2HPO4 x 7 H2O
   term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
   concentration:
     value: '0.178'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
 - preferred_term: TAPSO
   term:
     id: CHEBI:84015
-    label: "(1R,2R)-diclocymet"
+    label: (1R,2R)-diclocymet
   concentration:
     value: '2.6'
     unit: G_PER_L
@@ -117,65 +117,65 @@ ingredients:
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '30'
     unit: G_PER_L
   notes: ' (for solid medium, alternative)'
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 - preferred_term: Agarose
   term:
     id: CHEBI:2511
-    label: "agarose"
+    label: agarose
   concentration:
     value: '24'
     unit: G_PER_L
   notes: ' (for solid medium, alternative)'
   mediaingredientmech_chebi_term:
     id: CHEBI:2511
-    label: "agarose"
+    label: agarose
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
   concentration:
     value: '24.8444'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
   concentration:
     value: '3.24444'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 - preferred_term: SrCl2 x 6 H2O
   term:
     id: CHEBI:36385
-    label: "strontium dichloride hexahydrate"
+    label: strontium dichloride hexahydrate
   concentration:
     value: '0.0533333'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:36385
-    label: "strontium dichloride hexahydrate"
+    label: strontium dichloride hexahydrate
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
-    label: "iron dichloride tetrahydrate"
+    label: iron dichloride tetrahydrate
   concentration:
     value: '0.04'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86249
-    label: "iron dichloride tetrahydrate"
+    label: iron dichloride tetrahydrate
 - preferred_term: NaOH
   term:
     id: CHEBI:32145

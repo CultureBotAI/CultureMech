@@ -14,7 +14,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 - preferred_term: MgSO4
   concentration:
     value: '0.145'
@@ -75,7 +75,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: CoCl2 · 6H2O
   concentration:
     value: '0.5'
@@ -84,7 +84,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:35696
-    label: "cobalt dichloride"
+    label: cobalt dichloride
 - preferred_term: CuCl2 · 2H2O
   concentration:
     value: '0.5'
@@ -93,7 +93,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:86318
-    label: "copper(II) chloride dihydrate"
+    label: copper(II) chloride dihydrate
 - preferred_term: ZnCl2
   concentration:
     value: '0.5'

@@ -15,13 +15,13 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   concentration:
     value: variable
     unit: VARIABLE
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: rice straw
   notes: 'Role: Nutrient source'
   concentration:

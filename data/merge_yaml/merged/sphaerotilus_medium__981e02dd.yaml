@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: Glycerol
   concentration:
     value: '1'
@@ -26,10 +26,10 @@ ingredients:
     compound'
   term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
 - preferred_term: Agar (if needed)
   concentration:
     value: '10'

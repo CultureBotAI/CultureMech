@@ -21,7 +21,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
   notes: Copied from referenced JCM Medium 193
 - preferred_term: (NH4)2SO4
   term:
@@ -32,40 +32,40 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: "ammonium sulfate"
+    label: ammonium sulfate
   notes: Copied from referenced JCM Medium 193
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '30.1698'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   notes: Copied from referenced JCM Medium 193
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
   concentration:
     value: '0.1998'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
   notes: Copied from referenced JCM Medium 193
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
   concentration:
     value: '0.04995'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
   notes: Copied from referenced JCM Medium 193
 - preferred_term: Sodium DL-malate
   term:
@@ -86,57 +86,57 @@ ingredients:
 - preferred_term: Na2S2O3 x 5 H2O
   term:
     id: CHEBI:32150
-    label: "sodium thiosulfate pentahydrate"
+    label: sodium thiosulfate pentahydrate
   concentration:
     value: '0.499501'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32150
-    label: "sodium thiosulfate pentahydrate"
+    label: sodium thiosulfate pentahydrate
   notes: Copied from referenced JCM Medium 193
 - preferred_term: Na2-EDTA
   term:
     id: CHEBI:64734
-    label: "EDTA disodium salt (anhydrous)"
+    label: EDTA disodium salt (anhydrous)
   concentration:
     value: '5.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:64734
-    label: "EDTA disodium salt (anhydrous)"
+    label: EDTA disodium salt (anhydrous)
   notes: Copied from referenced JCM Medium 193
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
-    label: "iron dichloride tetrahydrate"
+    label: iron dichloride tetrahydrate
   concentration:
     value: '1.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86249
-    label: "iron dichloride tetrahydrate"
+    label: iron dichloride tetrahydrate
   notes: Copied from referenced JCM Medium 193
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
-    label: "zinc dichloride"
+    label: zinc dichloride
   concentration:
     value: '0.07'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:49976
-    label: "zinc dichloride"
+    label: zinc dichloride
   notes: Copied from referenced JCM Medium 193
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
   notes: Copied from referenced JCM Medium 193
 - preferred_term: H3BO3
   term:
@@ -147,51 +147,51 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: "boric acid"
+    label: boric acid
   notes: Copied from referenced JCM Medium 193
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
-    label: "cobalt dichloride"
+    label: cobalt dichloride
   concentration:
     value: '0.19'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:35696
-    label: "cobalt dichloride"
+    label: cobalt dichloride
   notes: Copied from referenced JCM Medium 193
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
-    label: "copper(II) chloride dihydrate"
+    label: copper(II) chloride dihydrate
   concentration:
     value: '0.017'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86318
-    label: "copper(II) chloride dihydrate"
+    label: copper(II) chloride dihydrate
   notes: Copied from referenced JCM Medium 193
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
-    label: "nickel dichloride"
+    label: nickel dichloride
   concentration:
     value: '0.024'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34887
-    label: "nickel dichloride"
+    label: nickel dichloride
   notes: Copied from referenced JCM Medium 193
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
-    label: "sodium molybdate dihydrate"
+    label: sodium molybdate dihydrate
   concentration:
     value: '0.036'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75213
-    label: "sodium molybdate dihydrate"
+    label: sodium molybdate dihydrate
   notes: Copied from referenced JCM Medium 193
 preparation_steps:
 - step_number: 1

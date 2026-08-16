@@ -37,7 +37,7 @@ composition:
     label: NaCl
   chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
     confidence: 1.0
     match_type: exact_match
 - preferred_term: K2HPO4
@@ -73,7 +73,7 @@ composition:
     label: MgCl2 x 6 H2O
   chebi_term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
     match_type: corpus_consensus
 - preferred_term: Yeast extract
   concentration:
@@ -91,7 +91,7 @@ composition:
     label: Glycerol
   chebi_term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
     match_type: corpus_consensus
 - preferred_term: Sulfur
   concentration:
@@ -102,7 +102,7 @@ composition:
     label: Sulfur
   chebi_term:
     id: CHEBI:26833
-    label: "sulfur atom"
+    label: sulfur atom
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Na2S x 9 H2O
@@ -114,7 +114,7 @@ composition:
     label: Na2S x 9 H2O
   chebi_term:
     id: CHEBI:76209
-    label: "sodium sulfide nonahydrate"
+    label: sodium sulfide nonahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -126,7 +126,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Dissolve hydrogen carbonate, carbonate, sodium chloride, and hydrogen

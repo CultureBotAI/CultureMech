@@ -26,23 +26,23 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '19.45'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: MgCl2
   term:
     id: CHEBI:6636
-    label: "magnesium dichloride"
+    label: magnesium dichloride
   concentration:
     value: '5.9'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:6636
-    label: "magnesium dichloride"
+    label: magnesium dichloride
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
@@ -52,27 +52,27 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32149
-    label: "sodium sulfate"
+    label: sodium sulfate
 - preferred_term: KCl
   term:
     id: CHEBI:32588
-    label: "potassium chloride"
+    label: potassium chloride
   concentration:
     value: '0.55'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: "potassium chloride"
+    label: potassium chloride
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
-    label: "sodium hydrogencarbonate"
+    label: sodium hydrogencarbonate
   concentration:
     value: '0.16'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: "sodium hydrogencarbonate"
+    label: sodium hydrogencarbonate
 - preferred_term: KBr
   term:
     id: CHEBI:32030
@@ -82,17 +82,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32030
-    label: "potassium bromide"
+    label: potassium bromide
 - preferred_term: SrCl2
   term:
     id: CHEBI:36383
-    label: "strontium dichloride"
+    label: strontium dichloride
   concentration:
     value: '0.034'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:36383
-    label: "strontium dichloride"
+    label: strontium dichloride
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -102,7 +102,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: "boric acid"
+    label: boric acid
 - preferred_term: Na-silicate
   term:
     id: CHEBI:60720
@@ -112,7 +112,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:60720
-    label: "sodium silicate"
+    label: sodium silicate
 - preferred_term: NaF
   term:
     id: CHEBI:28741
@@ -122,54 +122,54 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:28741
-    label: "sodium fluoride"
+    label: sodium fluoride
 - preferred_term: (NH4)NO3
   term:
     id: CHEBI:63038
-    label: "ammonium nitrate"
+    label: ammonium nitrate
   concentration:
     value: '0.0016'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63038
-    label: "ammonium nitrate"
+    label: ammonium nitrate
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
   concentration:
     value: '0.008'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.0005'
     unit: G_PER_L
   term:
     id: CHEBI:8806
-    label: "Resazurin"
+    label: Resazurin
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
-    label: "L-cysteine hydrochloride hydrate"
+    label: L-cysteine hydrochloride hydrate
   concentration:
     value: '0.3'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:91248
-    label: "L-cysteine hydrochloride hydrate"
+    label: L-cysteine hydrochloride hydrate
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
-    label: "sodium sulfide nonahydrate"
+    label: sodium sulfide nonahydrate
   concentration:
     value: '0.3'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:76209
-    label: "sodium sulfide nonahydrate"
+    label: sodium sulfide nonahydrate
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

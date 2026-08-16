@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 3 duplicates: 950.0, 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.7'
@@ -91,7 +91,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86364
-    label: "manganese(II) sulfate monohydrate"
+    label: manganese(II) sulfate monohydrate
 - preferred_term: Glucose
   concentration:
     value: '10'
@@ -111,10 +111,10 @@ ingredients:
   notes: 'Role: Carbon source'
   term:
     id: CHEBI:15443
-    label: "inulin"
+    label: inulin
   mediaingredientmech_chebi_term:
     id: CHEBI:15443
-    label: "inulin"
+    label: inulin
 - preferred_term: Meat extract
   concentration:
     value: '5'
@@ -156,7 +156,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: "carbon dioxide"
+    label: carbon dioxide
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -164,7 +164,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.25'
@@ -188,7 +188,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: NaHCO3
   concentration:
     value: '10'
@@ -230,10 +230,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:30961
-    label: "pyridoxine hydrochloride"
+    label: pyridoxine hydrochloride
   mediaingredientmech_chebi_term:
     id: CHEBI:30961
-    label: "pyridoxine hydrochloride"
+    label: pyridoxine hydrochloride
 - preferred_term: Folic acid
   concentration:
     value: '2'
@@ -285,7 +285,7 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:132751
-    label: "thiamine hydrochloride dihydrate"
+    label: thiamine hydrochloride dihydrate
 - preferred_term: Lipoic acid
   concentration:
     value: '5'
@@ -305,7 +305,7 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Defined component'
   term:
     id: CHEBI:31345
-    label: "Calcium pantothenate"
+    label: Calcium pantothenate
 media_term:
   preferred_term: TOGO Medium M2059
   term:

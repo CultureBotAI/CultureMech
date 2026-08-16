@@ -24,17 +24,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: N-Acetylglucosamine
   term:
     id: CHEBI:59640
-    label: "N-acetylglucosamine"
+    label: N-acetylglucosamine
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:59640
-    label: "N-acetylglucosamine"
+    label: N-acetylglucosamine
 - preferred_term: Peptone
   concentration:
     value: '0.1'
@@ -50,54 +50,54 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
-    label: "nitrilotriacetic acid"
+    label: nitrilotriacetic acid
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:44557
-    label: "nitrilotriacetic acid"
+    label: nitrilotriacetic acid
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '29.7'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
   concentration:
     value: '3.335'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 - preferred_term: (NH4)6Mo7O24 x 4 H2O
   concentration:
     value: '0.00925'
@@ -108,69 +108,69 @@ ingredients:
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
   concentration:
     value: '1.099'
     unit: G_PER_L
   notes: ' [Merged 3 duplicates: 0.099, 0.5, 0.5]'
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: Na-EDTA
   term:
     id: CHEBI:64734
-    label: "EDTA disodium salt (anhydrous)"
+    label: EDTA disodium salt (anhydrous)
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.25, 0.25]'
   mediaingredientmech_chebi_term:
     id: CHEBI:64734
-    label: "EDTA disodium salt (anhydrous)"
+    label: EDTA disodium salt (anhydrous)
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
-    label: "zinc sulfate heptahydrate"
+    label: zinc sulfate heptahydrate
   concentration:
     value: '2.19'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 1.095, 1.095]'
   mediaingredientmech_chebi_term:
     id: CHEBI:32312
-    label: "zinc sulfate heptahydrate"
+    label: zinc sulfate heptahydrate
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
-    label: "manganese(II) sulfate monohydrate"
+    label: manganese(II) sulfate monohydrate
   concentration:
     value: '0.308'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.154, 0.154]'
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
-    label: "manganese(II) sulfate monohydrate"
+    label: manganese(II) sulfate monohydrate
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
-    label: "copper(II) sulfate pentahydrate"
+    label: copper(II) sulfate pentahydrate
   concentration:
     value: '0.0784'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.0392, 0.0392]'
   mediaingredientmech_chebi_term:
     id: CHEBI:31440
-    label: "copper(II) sulfate pentahydrate"
+    label: copper(II) sulfate pentahydrate
 - preferred_term: Co(NO3)2 x 6 H2O
   term:
     id: CHEBI:86214
-    label: "cobalt dinitrate hexahydrate"
+    label: cobalt dinitrate hexahydrate
   concentration:
     value: '0.0496'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.0248, 0.0248]'
   mediaingredientmech_chebi_term:
     id: CHEBI:86214
-    label: "cobalt dinitrate hexahydrate"
+    label: cobalt dinitrate hexahydrate
 - preferred_term: Na2B4O7 x 10 H2O
   concentration:
     value: '0.0354'
@@ -178,7 +178,7 @@ ingredients:
   notes: ' [Merged 2 duplicates: 0.0177, 0.0177]'
   term:
     id: CHEBI:131366
-    label: "disodium tetraborate decahydrate"
+    label: disodium tetraborate decahydrate
 preparation_steps:
 - step_number: 1
   action: MIX

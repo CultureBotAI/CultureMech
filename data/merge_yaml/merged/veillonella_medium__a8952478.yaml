@@ -14,10 +14,10 @@ ingredients:
     Inorganic compound'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: Yeast extract
   concentration:
     value: '3'
@@ -67,10 +67,10 @@ ingredients:
     component'
   term:
     id: CHEBI:75228
-    label: "sodium lactate"
+    label: sodium lactate
   mediaingredientmech_chebi_term:
     id: CHEBI:75228
-    label: "sodium lactate"
+    label: sodium lactate
 - preferred_term: Glucose
   concentration:
     value: '1'

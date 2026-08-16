@@ -28,7 +28,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: L-Glutamine
@@ -40,7 +40,7 @@ composition:
     label: L-Glutamine
   chebi_term:
     id: CHEBI:18050
-    label: "L-glutamine"
+    label: L-glutamine
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Tryptophan
@@ -52,7 +52,7 @@ composition:
     label: Tryptophan
   chebi_term:
     id: CHEBI:27897
-    label: "tryptophan"
+    label: tryptophan
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -64,7 +64,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Adjust pH to 7.0. For Bacillus strains the addition of 10.0 mg

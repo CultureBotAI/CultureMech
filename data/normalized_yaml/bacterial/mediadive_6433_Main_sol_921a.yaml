@@ -13,7 +13,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Agar
@@ -26,7 +26,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Combine Solutions 1-3 with Trace Elements and distilled water.

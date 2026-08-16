@@ -16,13 +16,13 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '25'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   notes: Copied from referenced JCM Medium 160
 - preferred_term: Yeast extract
   concentration:
@@ -37,13 +37,13 @@ ingredients:
 - preferred_term: Sulfur
   term:
     id: CHEBI:26833
-    label: "sulfur atom"
+    label: sulfur atom
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26833
-    label: "sulfur atom"
+    label: sulfur atom
   notes: Copied from referenced JCM Medium 160
 - preferred_term: Resazurin
   term:
@@ -65,7 +65,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: "ammonium sulfate"
+    label: ammonium sulfate
   notes: Copied from referenced JCM Medium 160
 - preferred_term: KH2PO4
   term:
@@ -76,51 +76,51 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
   notes: Copied from referenced JCM Medium 160
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '0.25'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
   notes: Copied from referenced JCM Medium 160
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
   concentration:
     value: '0.07'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
   notes: Copied from referenced JCM Medium 160
 - preferred_term: FeCl3 x 6 H2O
   term:
     id: CHEBI:86254
-    label: "iron trichloride hexahydrate"
+    label: iron trichloride hexahydrate
   concentration:
     value: '0.002'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86254
-    label: "iron trichloride hexahydrate"
+    label: iron trichloride hexahydrate
   notes: Copied from referenced JCM Medium 160
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
   concentration:
     value: '0.0018'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
   notes: Copied from referenced JCM Medium 160
 - preferred_term: Na2B4O7 x 10 H2O
   concentration:
@@ -129,50 +129,50 @@ ingredients:
   notes: Copied from referenced JCM Medium 160
   term:
     id: CHEBI:131366
-    label: "disodium tetraborate decahydrate"
+    label: disodium tetraborate decahydrate
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
-    label: "zinc sulfate heptahydrate"
+    label: zinc sulfate heptahydrate
   concentration:
     value: '0.00022'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32312
-    label: "zinc sulfate heptahydrate"
+    label: zinc sulfate heptahydrate
   notes: Copied from referenced JCM Medium 160
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
-    label: "copper(II) chloride dihydrate"
+    label: copper(II) chloride dihydrate
   concentration:
     value: 5e-05
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86318
-    label: "copper(II) chloride dihydrate"
+    label: copper(II) chloride dihydrate
   notes: Copied from referenced JCM Medium 160
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
-    label: "sodium molybdate dihydrate"
+    label: sodium molybdate dihydrate
   concentration:
     value: 3e-05
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75213
-    label: "sodium molybdate dihydrate"
+    label: sodium molybdate dihydrate
   notes: Copied from referenced JCM Medium 160
 - preferred_term: VOSO4 x n H2O
   term:
     id: CHEBI:87020
-    label: "vanadyl sulfate hydrate"
+    label: vanadyl sulfate hydrate
   concentration:
     value: 3e-05
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:87020
-    label: "vanadyl sulfate hydrate"
+    label: vanadyl sulfate hydrate
   notes: Copied from referenced JCM Medium 160
 - preferred_term: CoSO4 x 7 H2O
   term:

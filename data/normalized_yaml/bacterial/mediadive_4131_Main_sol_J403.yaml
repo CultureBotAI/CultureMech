@@ -27,7 +27,7 @@ composition:
     label: Na2WO4 x 2 H2O
   chebi_term:
     id: CHEBI:63939
-    label: "sodium tungstate dihydrate"
+    label: sodium tungstate dihydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na2SeO4
@@ -63,7 +63,7 @@ composition:
     label: Methylamine
   chebi_term:
     id: CHEBI:16830
-    label: "methylamine"
+    label: methylamine
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Sodium formate
@@ -87,7 +87,7 @@ composition:
     label: Methanol
   chebi_term:
     id: CHEBI:17790
-    label: "methanol"
+    label: methanol
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: KH2PO4
@@ -99,7 +99,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: NH4Cl
@@ -123,7 +123,7 @@ composition:
     label: Resazurin
   chebi_term:
     id: CHEBI:8806
-    label: "Resazurin"
+    label: Resazurin
     confidence: 1.0
     match_type: exact_match
 - preferred_term: NaHCO3
@@ -147,7 +147,7 @@ composition:
     label: Na2S x 9 H2O
   chebi_term:
     id: CHEBI:76209
-    label: "sodium sulfide nonahydrate"
+    label: sodium sulfide nonahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -159,7 +159,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Mix ingredients except methanol, NaHCO3 and Na2S x 9H2O, bring

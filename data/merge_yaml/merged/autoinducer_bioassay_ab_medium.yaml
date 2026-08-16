@@ -70,10 +70,10 @@ ingredients:
     component'
   term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
 media_term:
   preferred_term: TOGO Medium M2267
   term:

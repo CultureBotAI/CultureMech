@@ -9,62 +9,62 @@ ingredients:
 - preferred_term: L-Methionine
   term:
     id: CHEBI:16643
-    label: "L-methionine"
+    label: L-methionine
   concentration:
     value: '0.201'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:met-L'
   mediaingredientmech_chebi_term:
     id: CHEBI:16643
-    label: "L-methionine"
+    label: L-methionine
 - preferred_term: L-Leucine
   term:
     id: CHEBI:15603
-    label: "L-leucine"
+    label: L-leucine
   concentration:
     value: '0.23'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:leu-L'
   mediaingredientmech_chebi_term:
     id: CHEBI:15603
-    label: "L-leucine"
+    label: L-leucine
 - preferred_term: L-Proline
   term:
     id: CHEBI:17203
-    label: "L-proline"
+    label: L-proline
   concentration:
     value: '0.26'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pro-L'
   mediaingredientmech_chebi_term:
     id: CHEBI:17203
-    label: "L-proline"
+    label: L-proline
 - preferred_term: L-Valine
   term:
     id: CHEBI:16414
-    label: "L-valine"
+    label: L-valine
   concentration:
     value: '0.26'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:val-L'
   mediaingredientmech_chebi_term:
     id: CHEBI:16414
-    label: "L-valine"
+    label: L-valine
 - preferred_term: L-Threonine
   term:
     id: CHEBI:16857
-    label: "L-threonine"
+    label: L-threonine
   concentration:
     value: '0.25'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:thr-L'
   mediaingredientmech_chebi_term:
     id: CHEBI:16857
-    label: "L-threonine"
+    label: L-threonine
 - preferred_term: Thiamine
   term:
     id: CHEBI:26948
-    label: "vitamin B1"
+    label: vitamin B1
   concentration:
     value: '0.1'
     unit: MILLIMOLAR
@@ -75,14 +75,14 @@ ingredients:
 - preferred_term: L-Isoleucine
   term:
     id: CHEBI:17191
-    label: "L-isoleucine"
+    label: L-isoleucine
   concentration:
     value: '0.23'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ile-L'
   mediaingredientmech_chebi_term:
     id: CHEBI:17191
-    label: "L-isoleucine"
+    label: L-isoleucine
 - preferred_term: Magnesium chloride
   concentration:
     value: '0.523'
@@ -99,48 +99,48 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: "calcium dichloride"
+    label: calcium dichloride
 - preferred_term: Potassium sulfate
   concentration:
     value: '0.276'
     unit: MILLIMOLAR
   term:
     id: CHEBI:32036
-    label: "potassium sulfate"
+    label: potassium sulfate
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '1.32'
     unit: MILLIMOLAR
   term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '50.0'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
-    label: "ammonium chloride"
+    label: ammonium chloride
   concentration:
     value: '9.52'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: "ammonium chloride"
+    label: ammonium chloride
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75832
-    label: "iron(2+) sulfate (anhydrous)"
+    label: iron(2+) sulfate (anhydrous)
 - preferred_term: MOPS
   term:
     id: CHEBI:39074
@@ -157,7 +157,7 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:46760
-    label: "tricine"
+    label: tricine
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

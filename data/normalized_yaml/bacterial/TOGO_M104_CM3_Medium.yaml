@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.5'
@@ -35,7 +35,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 - preferred_term: K2HPO4
   concentration:
     value: '4.4'
@@ -56,7 +56,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: (NH4)2SO4
   concentration:
     value: '0.4'
@@ -109,7 +109,7 @@ ingredients:
   notes: 'Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:91248
-    label: "L-cysteine hydrochloride hydrate"
+    label: L-cysteine hydrochloride hydrate
 media_term:
   preferred_term: TOGO Medium M104
   term:

@@ -67,7 +67,7 @@ ingredients:
   source: CCAP Medium MR_CHM.pdf
   term:
     id: CHEBI:32138
-    label: "sodium acetate trihydrate"
+    label: sodium acetate trihydrate
 - preferred_term: Lab-Lemco powder
   notes: Ontology mapping not yet available; From CCAP Medium MR_CHM.pdf; Curated
     from CCAP Medium MR_CHM.pdf specification

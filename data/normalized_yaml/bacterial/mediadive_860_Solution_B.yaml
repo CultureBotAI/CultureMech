@@ -37,7 +37,7 @@ composition:
     label: CaCl2 x 2 H2O
   chebi_term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: MnCl2 x 4 H2O
@@ -49,7 +49,7 @@ composition:
     label: MnCl2 x 4 H2O
   chebi_term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: NaVO3 x H2O
@@ -61,7 +61,7 @@ composition:
     label: NaVO3 x H2O
   chebi_term:
     id: CHEBI:132095
-    label: "sodium metavanadate hydrate"
+    label: sodium metavanadate hydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -73,7 +73,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Agar
@@ -86,7 +86,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Original volume: 855 mL'

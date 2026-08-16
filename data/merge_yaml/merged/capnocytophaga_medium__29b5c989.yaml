@@ -31,23 +31,23 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
   concentration:
     value: '3'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '3'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: KNO3
   term:
     id: CHEBI:63043
@@ -61,13 +61,13 @@ ingredients:
 - preferred_term: Haemin
   term:
     id: CHEBI:50385
-    label: "hemin"
+    label: hemin
   concentration:
     value: '0.003'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:50385
-    label: "hemin"
+    label: hemin
 applications:
 - Microbial cultivation
 curation_history:

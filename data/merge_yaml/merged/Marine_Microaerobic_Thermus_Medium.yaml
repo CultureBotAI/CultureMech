@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '9.6'
@@ -110,10 +110,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:76181
-    label: "ferrous ammonium sulfate hexahydrate"
+    label: ferrous ammonium sulfate hexahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:76181
-    label: "ferrous ammonium sulfate hexahydrate"
+    label: ferrous ammonium sulfate hexahydrate
 - preferred_term: Bacto Yeast Extract (Difco)
   concentration:
     value: '1'
@@ -131,7 +131,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: "carbon dioxide"
+    label: carbon dioxide
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -139,7 +139,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 - preferred_term: Na2MoO4·2H2O
   concentration:
     value: '0.011'
@@ -172,7 +172,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: CoCl2·6H2O
   concentration:
     value: '0.17'
@@ -181,7 +181,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:35696
-    label: "cobalt dichloride"
+    label: cobalt dichloride
 - preferred_term: NiCl2·6H2O
   concentration:
     value: '0.05'
@@ -214,10 +214,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:48843
-    label: "disodium selenite"
+    label: disodium selenite
   mediaingredientmech_chebi_term:
     id: CHEBI:48843
-    label: "disodium selenite"
+    label: disodium selenite
 - preferred_term: KAl(SO4)2·12H2O
   concentration:
     value: '0.018'
@@ -238,7 +238,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86358
-    label: "manganese(II) sulfate tetrahydrate"
+    label: manganese(II) sulfate tetrahydrate
 - preferred_term: CuSO4
   concentration:
     value: '0.05'

@@ -54,7 +54,7 @@ ingredients:
   notes: 'CAS: 1185-53-1; MW: 157.6'
   term:
     id: CHEBI:9754
-    label: "tris"
+    label: tris
 description: Luria-Bertani broth with SM buffer (for phage work)
 notes: 'Source: FEBA media definitions'
 category: bacterial

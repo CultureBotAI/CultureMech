@@ -25,7 +25,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na2SO4
@@ -49,7 +49,7 @@ composition:
     label: CaCl2 x 2 H2O
   chebi_term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: MgSO4 x 7 H2O
@@ -73,7 +73,7 @@ composition:
     label: Glycerol
   chebi_term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
     match_type: corpus_consensus
 - preferred_term: Yeast extract
   concentration:
@@ -115,7 +115,7 @@ composition:
     label: FeSO4 x 7 H2O
   chebi_term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na-thioglycolate
@@ -139,7 +139,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Dissolve ingredients, adjust pH to 7.5 and sparge medium with

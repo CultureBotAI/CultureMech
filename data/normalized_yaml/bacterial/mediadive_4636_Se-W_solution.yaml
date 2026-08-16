@@ -25,7 +25,7 @@ composition:
     label: Na2WO4 x 2 H2O
   chebi_term:
     id: CHEBI:63939
-    label: "sodium tungstate dihydrate"
+    label: sodium tungstate dihydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na2SeO3 x 5 H2O
@@ -48,7 +48,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Dissolve Na2WO4 x 2H2O and Na2SeO3 x 5H2O in 10 mM NaOH solution

@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.2'
@@ -35,7 +35,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 - preferred_term: K2HPO4
   concentration:
     value: '0.5'
@@ -68,7 +68,7 @@ ingredients:
     component'
   term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
 - preferred_term: Sodium alginate
   concentration:
     value: '10'
@@ -77,10 +77,10 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:53311
-    label: "sodium alginate"
+    label: sodium alginate
   mediaingredientmech_chebi_term:
     id: CHEBI:53311
-    label: "sodium alginate"
+    label: sodium alginate
 - preferred_term: HCl
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Solution'

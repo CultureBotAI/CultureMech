@@ -24,43 +24,43 @@ ingredients:
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
   concentration:
     value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
   concentration:
     value: '1.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
 - preferred_term: Urea
   term:
     id: CHEBI:16199
-    label: "urea"
+    label: urea
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16199
-    label: "urea"
+    label: urea
 - preferred_term: Sodium thioglycolate
   term:
     id: CHEBI:86481
-    label: "sodium thioglycolate"
+    label: sodium thioglycolate
   concentration:
     value: '0.75'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86481
-    label: "sodium thioglycolate"
+    label: sodium thioglycolate
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806

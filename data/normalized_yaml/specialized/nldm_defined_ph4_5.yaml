@@ -27,7 +27,7 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
 - preferred_term: Calcium chloride dihydrate
   concentration:
     value: '0.68'
@@ -78,7 +78,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: Cobalt(II) nitrate hexahydrate
   concentration:
     value: '1.0'
@@ -87,7 +87,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:86214
-    label: "cobalt dinitrate hexahydrate"
+    label: cobalt dinitrate hexahydrate
 - preferred_term: Calcium Chloride Dihydrate
   concentration:
     value: '1.0'
@@ -105,7 +105,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:32312
-    label: "zinc sulfate heptahydrate"
+    label: zinc sulfate heptahydrate
 - preferred_term: Copper (II) sulfate pentahydrate
   concentration:
     value: '0.1'
@@ -114,7 +114,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:31440
-    label: "copper(II) sulfate pentahydrate"
+    label: copper(II) sulfate pentahydrate
 - preferred_term: Aluminum potassium sulfate dodecahydrate
   concentration:
     value: '0.1'
@@ -123,7 +123,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:86465
-    label: "potassium aluminium sulfate dodecahydrate"
+    label: potassium aluminium sulfate dodecahydrate
 - preferred_term: Boric Acid
   concentration:
     value: '0.1'
@@ -140,7 +140,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:75213
-    label: "sodium molybdate dihydrate"
+    label: sodium molybdate dihydrate
 - preferred_term: Sodium selenite pentahydrate
   concentration:
     value: '0.01'
@@ -149,7 +149,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:131361
-    label: "disodium selenite pentahydrate"
+    label: disodium selenite pentahydrate
 - preferred_term: Sodium tungstate dihydrate
   concentration:
     value: '0.1'
@@ -158,7 +158,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:63939
-    label: "sodium tungstate dihydrate"
+    label: sodium tungstate dihydrate
 - preferred_term: Nickel (II) chloride hexahydrate
   concentration:
     value: '0.2'
@@ -167,7 +167,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:53542
-    label: "nickel chloride hexahydrate"
+    label: nickel chloride hexahydrate
 - preferred_term: Folic Acid
   concentration:
     value: '20.0'
@@ -183,7 +183,7 @@ ingredients:
     unit: MICROG_PER_L
   term:
     id: CHEBI:30961
-    label: "pyridoxine hydrochloride"
+    label: pyridoxine hydrochloride
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-56-0; MW: 205.64;
     From ATCC Wolfe''s vitamin mix'
 - preferred_term: Riboflavin
@@ -273,7 +273,7 @@ ingredients:
   notes: 'CAS: 558-80-7; MW: 119.98'
   term:
     id: CHEBI:37585
-    label: "sodium dihydrogenphosphate"
+    label: sodium dihydrogenphosphate
 - preferred_term: Sucrose
   concentration:
     value: '875.0'
@@ -300,7 +300,7 @@ ingredients:
     CAS-RN lookup'
   term:
     id: CHEBI:232797
-    label: "trehalose dihydrate"
+    label: trehalose dihydrate
 - preferred_term: m-Inositol
   concentration:
     value: '875.0'
@@ -309,7 +309,7 @@ ingredients:
     lookup'
   term:
     id: CHEBI:10642
-    label: "scyllo-inositol"
+    label: scyllo-inositol
 - preferred_term: D-Xylose
   concentration:
     value: '875.0'
@@ -372,7 +372,7 @@ ingredients:
     CAS-RN lookup'
   term:
     id: CHEBI:63686
-    label: "sodium succinate hexahydrate"
+    label: sodium succinate hexahydrate
 - preferred_term: Sodium pyruvate
   concentration:
     value: '525.0'
@@ -389,7 +389,7 @@ ingredients:
   notes: 'CAS: 305-72-6; MW: 190.06; From NLDM_metabolites'
   term:
     id: CHEBI:16810
-    label: "2-oxoglutarate(2-)"
+    label: 2-oxoglutarate(2-)
 - preferred_term: L-Citrulline
   concentration:
     value: '525.0'
@@ -398,7 +398,7 @@ ingredients:
     CAS-RN lookup'
   term:
     id: CHEBI:16349
-    label: "L-citrulline"
+    label: L-citrulline
 - preferred_term: L-Alanine
   concentration:
     value: '175.0'
@@ -586,7 +586,7 @@ ingredients:
     CAS-RN lookup'
   term:
     id: CHEBI:45996
-    label: "ribothymidine"
+    label: ribothymidine
 - preferred_term: Adenine hydrochloride hydrate
   concentration:
     value: '17.5'
@@ -594,7 +594,7 @@ ingredients:
   notes: 'CAS: 2922-28-3; MW: 171.59; From NLDM_metabolites'
   term:
     id: CHEBI:64139
-    label: "(2R,3S)-EHNA hydrochloride"
+    label: (2R,3S)-EHNA hydrochloride
 - preferred_term: Adenosine
   concentration:
     value: '17.5'
@@ -603,7 +603,7 @@ ingredients:
     CAS-RN lookup'
   term:
     id: CHEBI:16335
-    label: "adenosine"
+    label: adenosine
 - preferred_term: Cytidine
   concentration:
     value: '17.5'
@@ -612,7 +612,7 @@ ingredients:
     lookup'
   term:
     id: CHEBI:17562
-    label: "cytidine"
+    label: cytidine
 - preferred_term: Cytosine
   concentration:
     value: '17.5'
@@ -621,7 +621,7 @@ ingredients:
     lookup'
   term:
     id: CHEBI:16040
-    label: "cytosine"
+    label: cytosine
 - preferred_term: Guanine
   concentration:
     value: '17.5'
@@ -630,7 +630,7 @@ ingredients:
     lookup'
   term:
     id: CHEBI:16235
-    label: "guanine"
+    label: guanine
 - preferred_term: Guanosine
   concentration:
     value: '17.5'
@@ -639,7 +639,7 @@ ingredients:
     CAS-RN lookup'
   term:
     id: CHEBI:16750
-    label: "guanosine"
+    label: guanosine
 - preferred_term: Hypoxanthine
   concentration:
     value: '17.5'
@@ -648,7 +648,7 @@ ingredients:
     lookup'
   term:
     id: CHEBI:17368
-    label: "hypoxanthine"
+    label: hypoxanthine
 - preferred_term: Inosine
   concentration:
     value: '17.5'
@@ -657,7 +657,7 @@ ingredients:
     lookup'
   term:
     id: CHEBI:17596
-    label: "inosine"
+    label: inosine
 - preferred_term: Thymine
   concentration:
     value: '17.5'
@@ -666,7 +666,7 @@ ingredients:
     lookup'
   term:
     id: CHEBI:17821
-    label: "thymine"
+    label: thymine
 - preferred_term: Uracil
   concentration:
     value: '17.5'
@@ -684,7 +684,7 @@ ingredients:
     lookup'
   term:
     id: CHEBI:16704
-    label: "uridine"
+    label: uridine
 - preferred_term: Xanthine
   concentration:
     value: '17.5'
@@ -693,7 +693,7 @@ ingredients:
     lookup'
   term:
     id: CHEBI:17712
-    label: "9H-xanthine"
+    label: 9H-xanthine
 - preferred_term: Xanthosine
   concentration:
     value: '17.5'
@@ -702,7 +702,7 @@ ingredients:
     CAS-RN lookup'
   term:
     id: CHEBI:18107
-    label: "xanthosine"
+    label: xanthosine
 - preferred_term: Gamma-Aminobutyric Acid Hydrochloride
   concentration:
     value: '17.5'
@@ -710,7 +710,7 @@ ingredients:
   notes: 'CAS: 5959-35-3; MW: 139.58; From NLDM_metabolites'
   term:
     id: CHEBI:16865
-    label: "gamma-aminobutyric acid"
+    label: gamma-aminobutyric acid
 - preferred_term: Ectoine
   concentration:
     value: '17.5'
@@ -719,7 +719,7 @@ ingredients:
     CAS-RN lookup'
   term:
     id: CHEBI:27592
-    label: "ectoine"
+    label: ectoine
 - preferred_term: Trimethylglycine
   concentration:
     value: '17.5'
@@ -727,7 +727,7 @@ ingredients:
   notes: From NLDM_metabolites; Ontology enriched via CAS-RN lookup
   term:
     id: CHEBI:17750
-    label: "glycine betaine"
+    label: glycine betaine
 - preferred_term: N-Acetyl-glutamic acid
   concentration:
     value: '17.5'
@@ -736,7 +736,7 @@ ingredients:
     CAS-RN lookup'
   term:
     id: CHEBI:172431
-    label: "Acetyl-Glu"
+    label: Acetyl-Glu
 - preferred_term: Nicotinamide
   concentration:
     value: '17.5'
@@ -754,7 +754,7 @@ ingredients:
     lookup'
   term:
     id: CHEBI:15729
-    label: "L-ornithine"
+    label: L-ornithine
 - preferred_term: Shikimic Acid
   concentration:
     value: '17.5'
@@ -762,7 +762,7 @@ ingredients:
   notes: 'CAS: 138-59-0; From NLDM_metabolites; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:16119
-    label: "shikimic acid"
+    label: shikimic acid
 - preferred_term: spermidine
   concentration:
     value: '17.5'
@@ -771,7 +771,7 @@ ingredients:
     CAS-RN lookup'
   term:
     id: CHEBI:16610
-    label: "spermidine"
+    label: spermidine
 - preferred_term: Taurine
   concentration:
     value: '17.5'
@@ -780,7 +780,7 @@ ingredients:
     CAS-RN lookup'
   term:
     id: CHEBI:15891
-    label: "taurine"
+    label: taurine
 - preferred_term: Trigonelline HCl
   concentration:
     value: '17.5'
@@ -789,7 +789,7 @@ ingredients:
     CAS-RN lookup'
   term:
     id: CHEBI:229203
-    label: "Trigonelline HCl"
+    label: Trigonelline HCl
 - preferred_term: Carnitine Hydrochloride
   concentration:
     value: '17.5'
@@ -797,7 +797,7 @@ ingredients:
   notes: 'CAS: 461-05-2; MW: 197.66; From NLDM_metabolites'
   term:
     id: CHEBI:91318
-    label: "(R)-oleoylcarnitine hydrochloride"
+    label: (R)-oleoylcarnitine hydrochloride
 - preferred_term: Choline chloride
   concentration:
     value: '17.5'
@@ -815,7 +815,7 @@ ingredients:
     CAS-RN lookup'
   term:
     id: CHEBI:73685
-    label: "N(2)-acetylglutamine"
+    label: N(2)-acetylglutamine
 - preferred_term: n-Acetyl-lysine
   concentration:
     value: '17.5'
@@ -824,7 +824,7 @@ ingredients:
     CAS-RN lookup'
   term:
     id: CHEBI:35704
-    label: "N(2)-acetyl-L-lysine"
+    label: N(2)-acetyl-L-lysine
 - preferred_term: n-Acetyl-muramic acid
   concentration:
     value: '17.5'
@@ -833,7 +833,7 @@ ingredients:
     CAS-RN lookup'
   term:
     id: CHEBI:47966
-    label: "aldehydo-N-acetylmuramic acid"
+    label: aldehydo-N-acetylmuramic acid
 - preferred_term: sn-glycero-3-phosphocholine
   concentration:
     value: '17.5'
@@ -842,7 +842,7 @@ ingredients:
     CAS-RN lookup'
   term:
     id: CHEBI:16870
-    label: "choline alfoscerate"
+    label: choline alfoscerate
 description: Northen lab metabolite media
 notes: 'Source: FEBA media definitions'
 category: specialized

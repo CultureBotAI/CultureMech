@@ -13,7 +13,7 @@ composition:
     label: DL-6,8-thioctic acid
   chebi_term:
     id: CHEBI:16494
-    label: "lipoic acid"
+    label: lipoic acid
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Riboflavin
@@ -25,7 +25,7 @@ composition:
     label: Riboflavin
   chebi_term:
     id: CHEBI:17015
-    label: "riboflavin"
+    label: riboflavin
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Folic acid

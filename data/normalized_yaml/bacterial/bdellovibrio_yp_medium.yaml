@@ -27,7 +27,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:9754
-    label: "tris"
+    label: tris
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

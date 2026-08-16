@@ -57,7 +57,7 @@ ingredients:
 - preferred_term: Malt extract
   term:
     id: FOODON:03301056
-    label: "malt extract"
+    label: malt extract
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -71,7 +71,7 @@ ingredients:
 - preferred_term: Yeast extract
   term:
     id: FOODON:03315426
-    label: "yeast extract"
+    label: yeast extract
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -85,7 +85,7 @@ ingredients:
 - preferred_term: Bacteriological agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 0.95

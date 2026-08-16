@@ -18,7 +18,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:32954
-    label: "sodium acetate"
+    label: sodium acetate
 - preferred_term: Lab Lemco powder
   concentration:
     value: '1'

@@ -15,7 +15,7 @@ ingredients:
   notes: 'CAS: 7631-95-0; MW: 205.92; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:75215
-    label: "sodium molybdate (anhydrous)"
+    label: sodium molybdate (anhydrous)
 - preferred_term: Sodium tungstate dihydrate
   concentration:
     value: '-'
@@ -23,7 +23,7 @@ ingredients:
   notes: 'CAS: 10213-10-2; MW: 329.85; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:63939
-    label: "sodium tungstate dihydrate"
+    label: sodium tungstate dihydrate
 description: Lactate-sulfate media for sulfate-reducing bacteria with no Mo or W
 notes: 'Source: FEBA media definitions'
 category: specialized

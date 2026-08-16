@@ -20,13 +20,13 @@ ingredients:
 - preferred_term: Maltose
   term:
     id: CHEBI:17306
-    label: "maltose"
+    label: maltose
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17306
-    label: "maltose"
+    label: maltose
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

@@ -52,7 +52,7 @@ ingredients:
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: Glucose
   concentration:
     value: '0.25'
@@ -69,7 +69,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:8006
-    label: "Peptidoglycan(N-acetyl-D-glucosamine)"
+    label: Peptidoglycan(N-acetyl-D-glucosamine)
 - preferred_term: Trace vitamins (see Medium No. 197 )
   concentration:
     value: '1.0'
@@ -83,7 +83,7 @@ ingredients:
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 preparation_steps:
 - step_number: 1
   action: MIX

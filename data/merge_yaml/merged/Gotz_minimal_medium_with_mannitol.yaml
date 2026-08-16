@@ -9,47 +9,47 @@ ingredients:
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
-    label: "biotin"
+    label: biotin
   concentration:
     value: '8.2e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
-    label: "biotin"
+    label: biotin
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
-    label: "riboflavin"
+    label: riboflavin
   concentration:
     value: '5.3e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
   mediaingredientmech_chebi_term:
     id: CHEBI:17015
-    label: "riboflavin"
+    label: riboflavin
 - preferred_term: Pyridoxine
   term:
     id: CHEBI:16709
-    label: "pyridoxine"
+    label: pyridoxine
   concentration:
     value: '0.00012'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pydxn'
   mediaingredientmech_chebi_term:
     id: CHEBI:16709
-    label: "pyridoxine"
+    label: pyridoxine
 - preferred_term: Mannitol
   term:
     id: CHEBI:29864
-    label: "mannitol"
+    label: mannitol
   concentration:
     value: '27.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:mnl'
   mediaingredientmech_chebi_term:
     id: CHEBI:29864
-    label: "mannitol"
+    label: mannitol
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -67,75 +67,75 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: "calcium dichloride"
+    label: calcium dichloride
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '6.1'
     unit: MILLIMOLAR
   term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75215
-    label: "sodium molybdate (anhydrous)"
+    label: sodium molybdate (anhydrous)
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '0.1'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
-    label: "thiamine hydrochloride"
+    label: thiamine hydrochloride
   concentration:
     value: '6.6e-05'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:49105
-    label: "thiamine hydrochloride"
+    label: thiamine hydrochloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '3.9'
     unit: MILLIMOLAR
   term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: "magnesium sulfate"
+    label: magnesium sulfate
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: "magnesium sulfate"
+    label: magnesium sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.001'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75832
-    label: "iron(2+) sulfate (anhydrous)"
+    label: iron(2+) sulfate (anhydrous)
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
-    label: "ammonium sulfate"
+    label: ammonium sulfate
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: "ammonium sulfate"
+    label: ammonium sulfate
 - preferred_term: MOPS
   term:
     id: CHEBI:39074

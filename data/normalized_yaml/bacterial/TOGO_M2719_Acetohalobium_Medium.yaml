@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 3 duplicates: 1000.0, 1000.0, 1000.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: Yeast extract
   concentration:
     value: '0.05'
@@ -58,7 +58,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: NH4Cl
   concentration:
     value: '0.33'
@@ -127,10 +127,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:64700
-    label: "trimethylamine hydrochloride"
+    label: trimethylamine hydrochloride
   mediaingredientmech_chebi_term:
     id: CHEBI:64700
-    label: "trimethylamine hydrochloride"
+    label: trimethylamine hydrochloride
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -138,7 +138,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: "carbon dioxide"
+    label: carbon dioxide
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -146,7 +146,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '3'
@@ -191,10 +191,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: NiCl2 x 6 H2O
   concentration:
     value: '0.03'
@@ -287,10 +287,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63939
-    label: "sodium tungstate dihydrate"
+    label: sodium tungstate dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63939
-    label: "sodium tungstate dihydrate"
+    label: sodium tungstate dihydrate
 - preferred_term: MnSO4 x H2O
   concentration:
     value: '0.5'
@@ -299,10 +299,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86364
-    label: "manganese(II) sulfate monohydrate"
+    label: manganese(II) sulfate monohydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
-    label: "manganese(II) sulfate monohydrate"
+    label: manganese(II) sulfate monohydrate
 - preferred_term: Biotin
   concentration:
     value: '2'
@@ -343,10 +343,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:30961
-    label: "pyridoxine hydrochloride"
+    label: pyridoxine hydrochloride
   mediaingredientmech_chebi_term:
     id: CHEBI:30961
-    label: "pyridoxine hydrochloride"
+    label: pyridoxine hydrochloride
 - preferred_term: Folic acid
   concentration:
     value: '2'
@@ -410,7 +410,7 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Defined component'
   term:
     id: CHEBI:31345
-    label: "Calcium pantothenate"
+    label: Calcium pantothenate
 - preferred_term: N2 gas
   notes: 'Properties: Gas'
   concentration:

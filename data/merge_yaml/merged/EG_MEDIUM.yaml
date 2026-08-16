@@ -14,10 +14,10 @@ ingredients:
     Inorganic compound'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: Na2HPO4
   concentration:
     value: '4'
@@ -60,7 +60,7 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Undefined component'
   term:
     id: CHEBI:28017
-    label: "starch"
+    label: starch
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -89,7 +89,7 @@ ingredients:
   notes: 'Properties: Organic compound, Simple component, Defined component'
   term:
     id: CHEBI:91248
-    label: "L-cysteine hydrochloride hydrate"
+    label: L-cysteine hydrochloride hydrate
 - preferred_term: Lab--Lemco powder (Oxoid)
   concentration:
     value: '2.4'

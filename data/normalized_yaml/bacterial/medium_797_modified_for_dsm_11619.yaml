@@ -20,14 +20,14 @@ ingredients:
 - preferred_term: NaOH
   term:
     id: CHEBI:32145
-    label: "sodium hydroxide"
+    label: sodium hydroxide
   concentration:
     value: '26.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 25.0, 1.0]'
   mediaingredientmech_chebi_term:
     id: CHEBI:32145
-    label: "sodium hydroxide"
+    label: sodium hydroxide
 - preferred_term: Trypticase
   concentration:
     value: '30'
@@ -51,7 +51,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -65,54 +65,54 @@ ingredients:
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '20'
     unit: G_PER_L
   notes: ' (if required)'
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
-    label: "L-cysteine hydrochloride hydrate"
+    label: L-cysteine hydrochloride hydrate
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:91248
-    label: "L-cysteine hydrochloride hydrate"
+    label: L-cysteine hydrochloride hydrate
 - preferred_term: Vitamin K1
   term:
     id: CHEBI:18067
-    label: "phylloquinone"
+    label: phylloquinone
   concentration:
     value: '0.15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:18067
-    label: "phylloquinone"
+    label: phylloquinone
 - preferred_term: Ethanol
   term:
     id: CHEBI:16236
-    label: "ethanol"
+    label: ethanol
   concentration:
     value: '28.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16236
-    label: "ethanol"
+    label: ethanol
 - preferred_term: Haemin
   term:
     id: CHEBI:50385
-    label: "hemin"
+    label: hemin
   concentration:
     value: '0.49505'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:50385
-    label: "hemin"
+    label: hemin
 applications:
 - Microbial cultivation
 curation_history:

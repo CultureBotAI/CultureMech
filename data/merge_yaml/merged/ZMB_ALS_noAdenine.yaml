@@ -15,7 +15,7 @@ ingredients:
   notes: 'CAS: 2922-28-3; MW: 171.59'
   term:
     id: CHEBI:64139
-    label: "(2R,3S)-EHNA hydrochloride"
+    label: (2R,3S)-EHNA hydrochloride
 description: Media for culturing Bifidobacterium minus adenine
 notes: 'Source: FEBA media definitions'
 category: specialized

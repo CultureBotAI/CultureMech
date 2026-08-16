@@ -15,23 +15,23 @@ ingredients:
 - preferred_term: Marine agar 2216
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '1000'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 applications:
 - Microbial cultivation
 curation_history:

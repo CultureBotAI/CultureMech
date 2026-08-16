@@ -36,7 +36,7 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Simple component, Defined component'
   term:
     id: CHEBI:49105
-    label: "thiamine hydrochloride"
+    label: thiamine hydrochloride
 - preferred_term: Vitamin B12
   concentration:
     value: '1'
@@ -56,10 +56,10 @@ ingredients:
     Inorganic compound'
   term:
     id: CHEBI:63005
-    label: "sodium nitrate"
+    label: sodium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63005
-    label: "sodium nitrate"
+    label: sodium nitrate
 - preferred_term: Seawater
   concentration:
     value: '1'

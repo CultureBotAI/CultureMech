@@ -17,7 +17,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: "carbon dioxide"
+    label: carbon dioxide
 - preferred_term: chocolate agar plates
   concentration:
     value: variable

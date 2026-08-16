@@ -18,7 +18,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: FOODON:03315426
-    label: "yeast extract"
+    label: yeast extract
   notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 232-387-9'
 - preferred_term: Malt extract
   concentration:
@@ -26,7 +26,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: FOODON:03301056
-    label: "malt extract"
+    label: malt extract
   notes: 'Mapping: curated_dict (confidence: 0.98)'
 description: GYM STREPTOMYCES MEDIUM; DSMZ media 65
 notes: 'Source: FEBA media definitions'

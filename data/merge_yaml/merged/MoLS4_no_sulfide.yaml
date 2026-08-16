@@ -15,7 +15,7 @@ ingredients:
   notes: 'CAS: 1313-82-2; MW: 240.18'
   term:
     id: CHEBI:85357
-    label: "3-[(1E,4R)-4-hydroxycyclohex-2-en-1-ylidene]pyruvic acid"
+    label: 3-[(1E,4R)-4-hydroxycyclohex-2-en-1-ylidene]pyruvic acid
 description: Lactate-sulfate media for sulfate-reducing bacteria with no sulfide
 notes: 'Source: FEBA media definitions'
 category: specialized

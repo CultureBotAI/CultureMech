@@ -29,10 +29,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: Sodium Pyruvate
   concentration:
     value: '1'
@@ -53,10 +53,10 @@ ingredients:
     component'
   term:
     id: CHEBI:50385
-    label: "hemin"
+    label: hemin
   mediaingredientmech_chebi_term:
     id: CHEBI:50385
-    label: "hemin"
+    label: hemin
 - preferred_term: L-Arginine
   concentration:
     value: '1'
@@ -89,10 +89,10 @@ ingredients:
     compound'
   term:
     id: CHEBI:28869
-    label: "menadione"
+    label: menadione
   mediaingredientmech_chebi_term:
     id: CHEBI:28869
-    label: "menadione"
+    label: menadione
 - preferred_term: Gelatin Peptone
   concentration:
     value: '10'

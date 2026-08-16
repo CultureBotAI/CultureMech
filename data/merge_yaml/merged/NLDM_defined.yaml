@@ -301,7 +301,7 @@ ingredients:
     unit: MICROMOLAR
   term:
     id: CHEBI:83760
-    label: "EC 2.4.1.64 (alpha,alpha-trehalose phosphorylase) inhibitor"
+    label: EC 2.4.1.64 (alpha,alpha-trehalose phosphorylase) inhibitor
   notes: 'Mapping: base_compound (confidence: 0.85); CAS: 6138-23-4; MW: 378.33; From
     NLDM_metabolites'
 - preferred_term: m-Inositol
@@ -389,7 +389,7 @@ ingredients:
     unit: MICROMOLAR
   term:
     id: CHEBI:16810
-    label: "2-oxoglutarate(2-)"
+    label: 2-oxoglutarate(2-)
   notes: 'Mapping: manual (confidence: 0.90); CAS: 305-72-6; MW: 190.06; From NLDM_metabolites'
 - preferred_term: L-Citrulline
   concentration:
@@ -593,7 +593,7 @@ ingredients:
     unit: MICROMOLAR
   term:
     id: CHEBI:64139
-    label: "(2R,3S)-EHNA hydrochloride"
+    label: (2R,3S)-EHNA hydrochloride
   notes: 'Mapping: base_compound (confidence: 0.85); CAS: 2922-28-3; MW: 171.59; From
     NLDM_metabolites'
 - preferred_term: Adenosine

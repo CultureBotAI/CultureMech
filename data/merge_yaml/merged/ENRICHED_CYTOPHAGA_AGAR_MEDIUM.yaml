@@ -31,24 +31,24 @@ ingredients:
 - preferred_term: Sodium acetate
   term:
     id: CHEBI:32954
-    label: "sodium acetate"
+    label: sodium acetate
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32954
-    label: "sodium acetate"
+    label: sodium acetate
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '19.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 15.0, 4.0]'
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 applications:
 - Microbial cultivation
 curation_history:

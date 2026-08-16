@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 4 duplicates: 1.0, 1.0, 1.0, 990.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -66,7 +66,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '40'
@@ -99,7 +99,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: MnSO4·4H2O
   concentration:
     value: '2'
@@ -108,7 +108,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86358
-    label: "manganese(II) sulfate tetrahydrate"
+    label: manganese(II) sulfate tetrahydrate
 - preferred_term: Biotin
   concentration:
     value: '2'
@@ -160,10 +160,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:30961
-    label: "pyridoxine hydrochloride"
+    label: pyridoxine hydrochloride
   mediaingredientmech_chebi_term:
     id: CHEBI:30961
-    label: "pyridoxine hydrochloride"
+    label: pyridoxine hydrochloride
 - preferred_term: Folic acid
   concentration:
     value: '2'
@@ -252,7 +252,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: CoCl2·6H2O
   concentration:
     value: '190'
@@ -261,7 +261,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:35696
-    label: "cobalt dichloride"
+    label: cobalt dichloride
 - preferred_term: NiCl2·6H2O
   concentration:
     value: '24'

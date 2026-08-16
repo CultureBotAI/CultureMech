@@ -14,10 +14,10 @@ ingredients:
     Inorganic compound'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: Yeast Extract
   concentration:
     value: '10'
@@ -31,7 +31,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: Glucose
   concentration:
     value: '10'

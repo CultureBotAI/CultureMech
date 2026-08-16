@@ -37,7 +37,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Dissolve 50 mg hemin in 1 ml 1N NaOH; make to 100 ml with distilled

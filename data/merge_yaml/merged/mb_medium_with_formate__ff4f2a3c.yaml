@@ -15,13 +15,13 @@ ingredients:
 - preferred_term: Sodium formate
   term:
     id: CHEBI:62965
-    label: "sodium formate"
+    label: sodium formate
   concentration:
     value: '136'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62965
-    label: "sodium formate"
+    label: sodium formate
 preparation_steps:
 - step_number: 1
   action: MIX

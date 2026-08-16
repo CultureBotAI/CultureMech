@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 3 duplicates: 790.0, 1.0, 100.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: NH4Cl
   concentration:
     value: '0.027'
@@ -86,7 +86,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86254
-    label: "iron trichloride hexahydrate"
+    label: iron trichloride hexahydrate
 - preferred_term: NaNO3
   concentration:
     value: '6.89'
@@ -95,10 +95,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63005
-    label: "sodium nitrate"
+    label: sodium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63005
-    label: "sodium nitrate"
+    label: sodium nitrate
 - preferred_term: Nitrilotriacetic acid
   concentration:
     value: '1'
@@ -131,7 +131,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:32583
-    label: "calcium sulfate dihydrate"
+    label: calcium sulfate dihydrate
 - preferred_term: NaH2PO4
   concentration:
     value: '1.11'
@@ -173,7 +173,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:35696
-    label: "cobalt dichloride"
+    label: cobalt dichloride
 - preferred_term: ZnSO4・7H2O
   concentration:
     value: '0.25'
@@ -182,7 +182,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:32312
-    label: "zinc sulfate heptahydrate"
+    label: zinc sulfate heptahydrate
 - preferred_term: CuCl2・2H2O
   concentration:
     value: '8.5'
@@ -191,7 +191,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86318
-    label: "copper(II) chloride dihydrate"
+    label: copper(II) chloride dihydrate
 - preferred_term: MnSO4・xH2O
   concentration:
     value: '1.14'
@@ -200,7 +200,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86360
-    label: "manganese(II) sulfate"
+    label: manganese(II) sulfate
 media_term:
   preferred_term: TOGO Medium M1030
   term:

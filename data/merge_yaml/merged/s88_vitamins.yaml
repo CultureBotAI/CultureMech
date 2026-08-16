@@ -80,7 +80,7 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -94,7 +94,7 @@ ingredients:
 - preferred_term: CaSO4 x 2 H2O
   term:
     id: CHEBI:32583
-    label: "calcium sulfate dihydrate"
+    label: calcium sulfate dihydrate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -122,7 +122,7 @@ ingredients:
 - preferred_term: KCl
   term:
     id: CHEBI:32588
-    label: "potassium chloride"
+    label: potassium chloride
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -136,7 +136,7 @@ ingredients:
 - preferred_term: Glycylglycine
   term:
     id: CHEBI:17201
-    label: "glycylglycine"
+    label: glycylglycine
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -150,7 +150,7 @@ ingredients:
 - preferred_term: Glycine
   term:
     id: CHEBI:15428
-    label: "glycine"
+    label: glycine
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -164,7 +164,7 @@ ingredients:
 - preferred_term: KNO
   term:
     id: CHEBI:63043
-    label: "potassium nitrate"
+    label: potassium nitrate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -178,7 +178,7 @@ ingredients:
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -206,7 +206,7 @@ ingredients:
 - preferred_term: SrCl2 x 6 H2O
   term:
     id: CHEBI:36385
-    label: "strontium dichloride hexahydrate"
+    label: strontium dichloride hexahydrate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -220,7 +220,7 @@ ingredients:
 - preferred_term: AlCl3 x 6 H2O
   term:
     id: CHEBI:30115
-    label: "aluminium trichloride hexahydrate"
+    label: aluminium trichloride hexahydrate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -234,7 +234,7 @@ ingredients:
 - preferred_term: RbCl
   term:
     id: CHEBI:78672
-    label: "rubidium chloride"
+    label: rubidium chloride
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -248,7 +248,7 @@ ingredients:
 - preferred_term: LiCl.H O
   term:
     id: CHEBI:48607
-    label: "lithium chloride"
+    label: lithium chloride
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -262,7 +262,7 @@ ingredients:
 - preferred_term: KI
   term:
     id: CHEBI:8346
-    label: "potassium iodide"
+    label: potassium iodide
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -276,7 +276,7 @@ ingredients:
 - preferred_term: Na EDTA
   term:
     id: CHEBI:64734
-    label: "EDTA disodium salt (anhydrous)"
+    label: EDTA disodium salt (anhydrous)
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -304,7 +304,7 @@ ingredients:
 - preferred_term: MnSO4 x 4 H2O
   term:
     id: CHEBI:86358
-    label: "manganese(II) sulfate tetrahydrate"
+    label: manganese(II) sulfate tetrahydrate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -318,7 +318,7 @@ ingredients:
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
-    label: "zinc sulfate heptahydrate"
+    label: zinc sulfate heptahydrate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -332,7 +332,7 @@ ingredients:
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
-    label: "copper(II) sulfate pentahydrate"
+    label: copper(II) sulfate pentahydrate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -346,7 +346,7 @@ ingredients:
 - preferred_term: CoSO4 x 7 H2O
   term:
     id: CHEBI:91244
-    label: "cobalt(2+) sulfate heptahydrate"
+    label: cobalt(2+) sulfate heptahydrate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -360,7 +360,7 @@ ingredients:
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
-    label: "sodium molybdate dihydrate"
+    label: sodium molybdate dihydrate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -374,7 +374,7 @@ ingredients:
 - preferred_term: Cyanocobalamin (vitamin B )
   term:
     id: CHEBI:17439
-    label: "cyanocob(III)alamin"
+    label: cyanocob(III)alamin
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -388,7 +388,7 @@ ingredients:
 - preferred_term: Thiamine HCl (vitamin B )
   term:
     id: CHEBI:49105
-    label: "thiamine hydrochloride"
+    label: thiamine hydrochloride
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0

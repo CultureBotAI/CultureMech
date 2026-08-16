@@ -20,10 +20,10 @@ ingredients:
     component'
   term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
 - preferred_term: Press yeast
   concentration:
     value: '30'

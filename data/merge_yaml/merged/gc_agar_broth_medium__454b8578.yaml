@@ -28,10 +28,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: Monopotassium Phosphate
   concentration:
     value: '1'
@@ -74,10 +74,10 @@ ingredients:
   notes: 'Role: Carbon source'
   term:
     id: CHEBI:28017
-    label: "starch"
+    label: starch
   mediaingredientmech_chebi_term:
     id: CHEBI:28017
-    label: "starch"
+    label: starch
 - preferred_term: Proteose Peptone No. 3
   concentration:
     value: '15'

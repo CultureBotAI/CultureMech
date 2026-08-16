@@ -18,10 +18,10 @@ ingredients:
     Simple component [Merged 5 duplicates: 900.0, 100.0, 1.0, 10.0, 10.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: NaCl
   concentration:
     value: '0.4'
@@ -42,7 +42,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 - preferred_term: KH2PO4
   concentration:
     value: '0.5'
@@ -54,7 +54,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: NH4Cl
   concentration:
     value: '0.4'
@@ -87,7 +87,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
 - preferred_term: NaHCO3
   concentration:
     value: '3.5'
@@ -117,7 +117,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: "carbon dioxide"
+    label: carbon dioxide
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
@@ -125,7 +125,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 - preferred_term: Crotonic acid
   concentration:
     value: '0.86'
@@ -155,7 +155,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:35696
-    label: "cobalt dichloride"
+    label: cobalt dichloride
 - preferred_term: NiCl2・6H2O
   concentration:
     value: '0.02'
@@ -164,7 +164,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:34887
-    label: "nickel dichloride"
+    label: nickel dichloride
 - preferred_term: ZnSO4・7H2O
   concentration:
     value: '0.2'
@@ -173,7 +173,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:32312
-    label: "zinc sulfate heptahydrate"
+    label: zinc sulfate heptahydrate
 - preferred_term: CuCl2・2H2O
   concentration:
     value: '0.02'
@@ -182,7 +182,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86318
-    label: "copper(II) chloride dihydrate"
+    label: copper(II) chloride dihydrate
 - preferred_term: Nitrilotriacetic acid
   concentration:
     value: '2'
@@ -203,7 +203,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86360
-    label: "manganese(II) sulfate"
+    label: manganese(II) sulfate
 - preferred_term: Fe(NH4)2(SO4)2・6H2O
   concentration:
     value: '0.8'
@@ -212,7 +212,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:76181
-    label: "ferrous ammonium sulfate hexahydrate"
+    label: ferrous ammonium sulfate hexahydrate
 - preferred_term: Na2WO4
   concentration:
     value: '0.02'
@@ -236,7 +236,7 @@ ingredients:
     label: sodium selenate
   mediaingredientmech_chebi_term:
     id: CHEBI:77775
-    label: "sodium selenate"
+    label: sodium selenate
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
   term:
@@ -255,7 +255,7 @@ ingredients:
   notes: 'Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:91248
-    label: "L-cysteine hydrochloride hydrate"
+    label: L-cysteine hydrochloride hydrate
 - preferred_term: Na2S・9H2O
   concentration:
     value: '0.5'
@@ -264,7 +264,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:76209
-    label: "sodium sulfide nonahydrate"
+    label: sodium sulfide nonahydrate
 media_term:
   preferred_term: TOGO Medium M373
   term:

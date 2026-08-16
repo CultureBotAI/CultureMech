@@ -34,7 +34,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: UBERON:0001977
-    label: "blood serum"
+    label: blood serum
   notes: 'Mapping: curated_dict (confidence: 0.98)'
 - preferred_term: Yeast Extract
   concentration:
@@ -42,7 +42,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: FOODON:03315426
-    label: "yeast extract"
+    label: yeast extract
   notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 232-387-9'
 - preferred_term: Meat extract
   concentration:
@@ -50,7 +50,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: FOODON:03315424
-    label: "meat extract"
+    label: meat extract
   notes: 'Mapping: curated_dict (confidence: 0.98)'
 - preferred_term: Liver extract
   concentration:
@@ -87,7 +87,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:28017
-    label: "starch"
+    label: starch
   notes: 'Mapping: curated_dict (confidence: 0.98)'
 - preferred_term: L-Cysteine HCL
   concentration:

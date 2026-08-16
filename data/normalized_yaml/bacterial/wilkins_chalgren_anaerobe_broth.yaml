@@ -25,11 +25,11 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:8806
-    label: "Resazurin"
+    label: Resazurin
 - preferred_term: L-Cysteine HCl
   term:
     id: CHEBI:91247
-    label: "L-cysteine hydrochloride"
+    label: L-cysteine hydrochloride
   concentration:
     value: '0.3'
     unit: G_PER_L

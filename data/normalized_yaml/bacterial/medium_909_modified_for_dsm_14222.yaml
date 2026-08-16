@@ -120,7 +120,7 @@ ingredients:
 - preferred_term: Disodium phosphate
   term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
   concentration:
     value: '2.5'
     unit: G_PER_L
@@ -160,11 +160,11 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86481
-    label: "sodium thioglycolate"
+    label: sodium thioglycolate
 - preferred_term: L-Cysteine HCl
   term:
     id: CHEBI:91247
-    label: "L-cysteine hydrochloride"
+    label: L-cysteine hydrochloride
   concentration:
     value: '1'
     unit: G_PER_L
@@ -174,53 +174,53 @@ ingredients:
 - preferred_term: L-Asparagine
   term:
     id: CHEBI:17196
-    label: "L-asparagine"
+    label: L-asparagine
   concentration:
     value: '0.25'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17196
-    label: "L-asparagine"
+    label: L-asparagine
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
   concentration:
     value: '2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '3'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 - preferred_term: Thiamine pyrophosphate
   term:
     id: CHEBI:18290
-    label: "thiamine(1+) diphosphate chloride"
+    label: thiamine(1+) diphosphate chloride
   concentration:
     value: '0.133333'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:18290
-    label: "thiamine(1+) diphosphate chloride"
+    label: thiamine(1+) diphosphate chloride
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
-    label: "sodium hydrogencarbonate"
+    label: sodium hydrogencarbonate
   concentration:
     value: '44.4444'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: "sodium hydrogencarbonate"
+    label: sodium hydrogencarbonate
 - preferred_term: Rabbit serum
   concentration:
     value: '20'
@@ -228,23 +228,23 @@ ingredients:
 - preferred_term: KOH
   term:
     id: CHEBI:32035
-    label: "potassium hydroxide"
+    label: potassium hydroxide
   concentration:
     value: '100'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32035
-    label: "potassium hydroxide"
+    label: potassium hydroxide
 - preferred_term: Isobutyric acid
   term:
     id: CHEBI:16135
-    label: "isobutyric acid"
+    label: isobutyric acid
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16135
-    label: "isobutyric acid"
+    label: isobutyric acid
 - preferred_term: Tryptone
   term:
     id: MICRO:0000182
@@ -301,23 +301,23 @@ ingredients:
 - preferred_term: Isovaleric acid
   term:
     id: CHEBI:28484
-    label: "isovaleric acid"
+    label: isovaleric acid
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:28484
-    label: "isovaleric acid"
+    label: isovaleric acid
 - preferred_term: Valeric acid
   term:
     id: CHEBI:17418
-    label: "valeric acid"
+    label: valeric acid
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17418
-    label: "valeric acid"
+    label: valeric acid
 applications:
 - Microbial cultivation
 curation_history:

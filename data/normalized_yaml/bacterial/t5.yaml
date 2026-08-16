@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: Yeast extract
   concentration:
     value: '2'
@@ -31,10 +31,10 @@ ingredients:
     compound, Defined component'
   term:
     id: CHEBI:3311
-    label: "calcium carbonate"
+    label: calcium carbonate
   mediaingredientmech_chebi_term:
     id: CHEBI:3311
-    label: "calcium carbonate"
+    label: calcium carbonate
 - preferred_term: Glucose
   concentration:
     value: '1'

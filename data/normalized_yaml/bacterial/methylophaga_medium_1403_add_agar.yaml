@@ -26,10 +26,10 @@ ingredients:
     Simple component [Merged 3 duplicates: 1000.0, 100.0, 100.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '2'
@@ -108,10 +108,10 @@ ingredients:
   notes: 'Role: Buffer [Merged 2 duplicates: 0.5, 10.0]'
   term:
     id: CHEBI:41250
-    label: "bis-tris"
+    label: bis-tris
   mediaingredientmech_chebi_term:
     id: CHEBI:41250
-    label: "bis-tris"
+    label: bis-tris
 - preferred_term: KH2PO4
   concentration:
     value: '0.7'
@@ -123,7 +123,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: NH4Cl
   concentration:
     value: '10'

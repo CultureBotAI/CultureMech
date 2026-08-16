@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: NH4Cl
   concentration:
     value: '1'
@@ -64,7 +64,7 @@ ingredients:
     label: sodium acetate
   mediaingredientmech_chebi_term:
     id: CHEBI:32954
-    label: "sodium acetate"
+    label: sodium acetate
 - preferred_term: Na2CO3
   concentration:
     value: '1.5'
@@ -104,7 +104,7 @@ ingredients:
     label: sodium formate
   mediaingredientmech_chebi_term:
     id: CHEBI:62965
-    label: "sodium formate"
+    label: sodium formate
 - preferred_term: L-Cysteine-HCl x H2O
   concentration:
     value: '0.5'
@@ -128,7 +128,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: "carbon dioxide"
+    label: carbon dioxide
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -136,7 +136,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: "dihydrogen"
+    label: dihydrogen
 media_term:
   preferred_term: TOGO Medium M2652
   term:

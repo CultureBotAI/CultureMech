@@ -22,7 +22,7 @@ ingredients:
     label: sodium carbonate
   mediaingredientmech_chebi_term:
     id: CHEBI:29377
-    label: "sodium carbonate"
+    label: sodium carbonate
 - preferred_term: NaHCO3
   concentration:
     value: '46.0'
@@ -32,7 +32,7 @@ ingredients:
     label: sodium hydrogencarbonate
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: "sodium hydrogencarbonate"
+    label: sodium hydrogencarbonate
 - preferred_term: NaCl
   concentration:
     value: '18.0'
@@ -42,7 +42,7 @@ ingredients:
     label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: K2HPO4
   concentration:
     value: '1.0'
@@ -52,7 +52,7 @@ ingredients:
     label: dipotassium hydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: Yeast extract
   concentration:
     value: '0.2'

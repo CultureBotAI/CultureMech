@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.2'
@@ -78,7 +78,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86358
-    label: "manganese(II) sulfate tetrahydrate"
+    label: manganese(II) sulfate tetrahydrate
 - preferred_term: Sorbitan mono-oleate
   concentration:
     value: '1'
@@ -93,7 +93,7 @@ ingredients:
     component'
   term:
     id: CHEBI:63037
-    label: "triammonium citrate"
+    label: triammonium citrate
 - preferred_term: Glucose
   concentration:
     value: '20'

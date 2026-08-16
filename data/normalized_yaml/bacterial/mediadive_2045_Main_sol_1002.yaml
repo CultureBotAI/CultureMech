@@ -13,7 +13,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: NH4Cl
@@ -37,7 +37,7 @@ composition:
     label: NaCl
   chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
     confidence: 1.0
     match_type: exact_match
 - preferred_term: MgCl2 x 6 H2O
@@ -49,7 +49,7 @@ composition:
     label: MgCl2 x 6 H2O
   chebi_term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
     match_type: corpus_consensus
 - preferred_term: CaCl2
   concentration:
@@ -115,7 +115,7 @@ composition:
     label: Na2S2O3 x 5 H2O
   chebi_term:
     id: CHEBI:32150
-    label: "sodium thiosulfate pentahydrate"
+    label: sodium thiosulfate pentahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na2S x 9 H2O
@@ -127,7 +127,7 @@ composition:
     label: Na2S x 9 H2O
   chebi_term:
     id: CHEBI:76209
-    label: "sodium sulfide nonahydrate"
+    label: sodium sulfide nonahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Vitamin B12
@@ -151,7 +151,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Prepare the NH4Cl, CaCl2, carbonate, bicarbonate and sulfide as

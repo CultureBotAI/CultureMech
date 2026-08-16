@@ -14,10 +14,10 @@ ingredients:
     Defined component [Merged 2 duplicates: 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: KH2PO4
   concentration:
     value: '3'
@@ -29,7 +29,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: K2HPO4
   concentration:
     value: '3'
@@ -105,7 +105,7 @@ ingredients:
   notes: 'Properties: Organic compound, Simple component, Defined component'
   term:
     id: CHEBI:91248
-    label: "L-cysteine hydrochloride hydrate"
+    label: L-cysteine hydrochloride hydrate
 - preferred_term: Tryptose (BD-Difco)
   concentration:
     value: '3'
@@ -128,7 +128,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: MnSO4・xH2O
   concentration:
     value: '2.4'
@@ -137,7 +137,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:86360
-    label: "manganese(II) sulfate"
+    label: manganese(II) sulfate
 media_term:
   preferred_term: TOGO Medium M9
   term:

@@ -15,13 +15,13 @@ ingredients:
 - preferred_term: Brucella agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '40.1869'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 - preferred_term: Horse blood
   concentration:
     value: '50'

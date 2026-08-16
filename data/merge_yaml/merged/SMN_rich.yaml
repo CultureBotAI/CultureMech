@@ -45,7 +45,7 @@ ingredients:
   notes: 'CAS: 7782-63-0; MW: 278.01; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: EDTA
   concentration:
     value: '0.02'
@@ -104,7 +104,7 @@ ingredients:
   notes: 'CAS: 10101-68-5; MW: 223.06; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:86358
-    label: "manganese(II) sulfate tetrahydrate"
+    label: manganese(II) sulfate tetrahydrate
 - preferred_term: Sodium Molybdate Dihydrate
   concentration:
     value: '0.00075'
@@ -112,7 +112,7 @@ ingredients:
   notes: 'CAS: 10102-40-6; MW: 241.95; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:75213
-    label: "sodium molybdate dihydrate"
+    label: sodium molybdate dihydrate
 - preferred_term: Zinc sulfate heptahydrate
   concentration:
     value: '0.00024'
@@ -120,7 +120,7 @@ ingredients:
   notes: 'CAS: 7446-20-0; MW: 287.56; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:32312
-    label: "zinc sulfate heptahydrate"
+    label: zinc sulfate heptahydrate
 - preferred_term: Copper(II) Nitrate Trihydrate
   concentration:
     value: '0.00004'

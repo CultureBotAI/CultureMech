@@ -13,7 +13,7 @@ composition:
     label: Glycerol
   chebi_term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
     match_type: corpus_consensus
 - preferred_term: Sodium pyruvate
   concentration:
@@ -72,7 +72,7 @@ composition:
     label: NaCl
   chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
     confidence: 1.0
     match_type: exact_match
 - preferred_term: MgSO4 x 7 H2O

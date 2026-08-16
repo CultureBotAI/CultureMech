@@ -34,7 +34,7 @@ composition:
     label: Glycerol
   chebi_term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
     match_type: corpus_consensus
 - preferred_term: Tris
   concentration:
@@ -45,7 +45,7 @@ composition:
     label: Tris
   chebi_term:
     id: CHEBI:9754
-    label: "tris"
+    label: tris
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: NH4Cl
@@ -69,7 +69,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: CaCO3
@@ -95,7 +95,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: "For solid medium add: \nAdjust pH to 7.2 - 7.5."

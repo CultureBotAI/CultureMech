@@ -20,7 +20,7 @@ composition:
     label: D-Galactose
   chebi_term:
     id: CHEBI:12936
-    label: "D-galactose"
+    label: D-galactose
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: CaCO3
@@ -44,7 +44,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -56,7 +56,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Ferric ammonium citrate

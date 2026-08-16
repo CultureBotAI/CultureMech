@@ -34,7 +34,7 @@ composition:
     label: L-Glutamine
   chebi_term:
     id: CHEBI:18050
-    label: "L-glutamine"
+    label: L-glutamine
     confidence: 0.9
     match_type: corpus_consensus
 preparation_notes: "Cultivation of Occidentia massiliensis has to be carried out inBME/CTVM2\

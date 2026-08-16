@@ -13,7 +13,7 @@ composition:
     label: Urea
   chebi_term:
     id: CHEBI:16199
-    label: "urea"
+    label: urea
     confidence: 0.9
     match_type: corpus_consensus
 preparation_notes: 'To medium 1 add 20 g/l urea before autoclaving. Do not adjust

@@ -43,10 +43,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 - preferred_term: NH4Cl
   concentration:
     value: '0.25'
@@ -91,10 +91,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:76209
-    label: "sodium sulfide nonahydrate"
+    label: sodium sulfide nonahydrate
   term:
     id: CHEBI:76209
-    label: "sodium sulfide nonahydrate"
+    label: sodium sulfide nonahydrate
 - preferred_term: KCl
   concentration:
     value: '0.335'
@@ -126,10 +126,10 @@ ingredients:
   notes: 'Role: Buffer; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:32954
-    label: "sodium acetate"
+    label: sodium acetate
   mediaingredientmech_chebi_term:
     id: CHEBI:32954
-    label: "sodium acetate"
+    label: sodium acetate
 - preferred_term: Fe(NH4)2(SO4)2 x 7H2O
   concentration:
     value: '2'
@@ -138,10 +138,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:131378
-    label: "ferrous ammonium sulfate heptahydrate"
+    label: ferrous ammonium sulfate heptahydrate
   term:
     id: CHEBI:131378
-    label: "ferrous ammonium sulfate heptahydrate"
+    label: ferrous ammonium sulfate heptahydrate
 - preferred_term: MgCl2 x 7H2O
   concentration:
     value: '2.75'
@@ -150,10 +150,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:6636
-    label: "magnesium dichloride"
+    label: magnesium dichloride
   term:
     id: CHEBI:6636
-    label: "magnesium dichloride"
+    label: magnesium dichloride
 - preferred_term: DI Water
   concentration:
     value: '3000.0'
@@ -183,7 +183,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: "carbon dioxide"
+    label: carbon dioxide
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -191,7 +191,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 - preferred_term: Biotin
   concentration:
     value: '2'
@@ -317,10 +317,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
   term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: CoCl2 x 6H2O
   concentration:
     value: '0.2'
@@ -329,10 +329,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:35696
-    label: "cobalt dichloride"
+    label: cobalt dichloride
   term:
     id: CHEBI:35696
-    label: "cobalt dichloride"
+    label: cobalt dichloride
 - preferred_term: NiCl2 x 6H2O
   concentration:
     value: '0.02'
@@ -341,10 +341,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:34887
-    label: "nickel dichloride"
+    label: nickel dichloride
   term:
     id: CHEBI:34887
-    label: "nickel dichloride"
+    label: nickel dichloride
 - preferred_term: ZnSO4 x 7H2O
   concentration:
     value: '0.1'
@@ -353,10 +353,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:32312
-    label: "zinc sulfate heptahydrate"
+    label: zinc sulfate heptahydrate
   term:
     id: CHEBI:32312
-    label: "zinc sulfate heptahydrate"
+    label: zinc sulfate heptahydrate
 - preferred_term: CuCl2 x 2H2O
   concentration:
     value: '0.01'
@@ -365,10 +365,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:86318
-    label: "copper(II) chloride dihydrate"
+    label: copper(II) chloride dihydrate
   term:
     id: CHEBI:86318
-    label: "copper(II) chloride dihydrate"
+    label: copper(II) chloride dihydrate
 media_term:
   preferred_term: TOGO Medium M2598
   term:

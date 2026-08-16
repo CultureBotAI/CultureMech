@@ -17,7 +17,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: NH4NO3
   concentration:
     value: '0.1'
@@ -29,7 +29,7 @@ ingredients:
     label: ammonium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63038
-    label: "ammonium nitrate"
+    label: ammonium nitrate
 - preferred_term: Fe(III)・EDTA
   concentration:
     value: '2.5'

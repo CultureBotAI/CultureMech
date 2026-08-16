@@ -26,10 +26,10 @@ ingredients:
     unit: PERCENT_W_V
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 ph_value: 5.7
 temperature_value: 22.0
 notes: 'Vessel type: square petri plates (vertical orientation)

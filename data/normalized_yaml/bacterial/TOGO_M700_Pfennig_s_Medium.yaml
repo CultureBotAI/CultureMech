@@ -14,10 +14,10 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.5'
@@ -35,7 +35,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 - preferred_term: NH4Cl
   concentration:
     value: '0.34'
@@ -80,7 +80,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:76209
-    label: "sodium sulfide nonahydrate"
+    label: sodium sulfide nonahydrate
 - preferred_term: NaHCO3
   concentration:
     value: '1.5'

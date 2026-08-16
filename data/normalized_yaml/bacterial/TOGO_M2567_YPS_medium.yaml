@@ -26,7 +26,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:76209
-    label: "sodium sulfide nonahydrate"
+    label: sodium sulfide nonahydrate
 - preferred_term: Sulfur
   concentration:
     value: '0.5'
@@ -46,10 +46,10 @@ ingredients:
   notes: 'Role: Solidifying component; Properties: Organic compound, Undefined component'
   term:
     id: CHEBI:85248
-    label: "gellan gum"
+    label: gellan gum
   mediaingredientmech_chebi_term:
     id: CHEBI:85248
-    label: "gellan gum"
+    label: gellan gum
 - preferred_term: Bacto yeast extract
   concentration:
     value: '0.1'
@@ -88,7 +88,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: "carbon dioxide"
+    label: carbon dioxide
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -96,7 +96,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -104,7 +104,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: "dihydrogen"
+    label: dihydrogen
 - preferred_term: Distilled water
   concentration:
     value: '2.0'
@@ -113,10 +113,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: NaCl
   concentration:
     value: '24.4'
@@ -137,7 +137,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 - preferred_term: MgCl2 . 6H2O
   concentration:
     value: '10.8'
@@ -146,7 +146,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
 - preferred_term: H3BO3
   concentration:
     value: '0.035'
@@ -197,7 +197,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:36385
-    label: "strontium dichloride hexahydrate"
+    label: strontium dichloride hexahydrate
 - preferred_term: NaF
   concentration:
     value: '0.003'
@@ -242,7 +242,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 - preferred_term: Na2MoO4.2H2O
   concentration:
     value: '0.01'
@@ -299,7 +299,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86356
-    label: "manganese(II) sulfate dihydrate"
+    label: manganese(II) sulfate dihydrate
 - preferred_term: AIK(SO4)2
   concentration:
     value: '0.01'

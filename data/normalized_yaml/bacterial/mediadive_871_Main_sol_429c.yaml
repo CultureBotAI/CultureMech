@@ -27,7 +27,7 @@ composition:
     label: Glucose
   chebi_term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
     confidence: 0.9
     match_type: manual_curated
 - preferred_term: Cysteine
@@ -39,7 +39,7 @@ composition:
     label: Cysteine
   chebi_term:
     id: CHEBI:15356
-    label: "cysteine"
+    label: cysteine
     confidence: 0.9
     match_type: corpus_consensus
 preparation_notes: Mix autoclaved Columbia agar base solution with 4% horse or sheep

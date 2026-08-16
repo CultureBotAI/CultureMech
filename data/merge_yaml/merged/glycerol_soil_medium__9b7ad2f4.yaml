@@ -14,10 +14,10 @@ ingredients:
     component'
   term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
 - preferred_term: Tap water
   concentration:
     value: '1810.0'
@@ -26,10 +26,10 @@ ingredients:
     850.0, 960.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: Agar
   concentration:
     value: '15'

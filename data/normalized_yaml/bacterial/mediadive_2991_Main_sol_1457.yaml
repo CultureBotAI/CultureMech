@@ -14,7 +14,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Autoclave solution A without the vitamin solution. Autoclave solution

@@ -13,7 +13,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: KCl
@@ -61,7 +61,7 @@ composition:
     label: CaSO4 x 2 H2O
   chebi_term:
     id: CHEBI:32583
-    label: "calcium sulfate dihydrate"
+    label: calcium sulfate dihydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Agar
@@ -74,7 +74,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: NaCl
@@ -86,7 +86,7 @@ composition:
     label: NaCl
   chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Na2-glutamate
@@ -98,7 +98,7 @@ composition:
     label: Na2-glutamate
   chebi_term:
     id: CHEBI:64220
-    label: "monosodium glutamate"
+    label: monosodium glutamate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Yeast extract
@@ -136,7 +136,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Add distilled water to give a final volume of 1000 ml.

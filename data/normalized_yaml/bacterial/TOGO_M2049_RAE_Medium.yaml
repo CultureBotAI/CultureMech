@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -65,7 +65,7 @@ ingredients:
   notes: 'Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:31404
-    label: "Citric acid monohydrate"
+    label: Citric acid monohydrate
 - preferred_term: Peptone
   concentration:
     value: '10'

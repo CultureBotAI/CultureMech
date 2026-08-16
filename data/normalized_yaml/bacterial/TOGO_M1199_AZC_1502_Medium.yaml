@@ -14,10 +14,10 @@ ingredients:
     Defined component [Merged 2 duplicates: 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.05'
@@ -26,7 +26,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 - preferred_term: KH2PO4
   concentration:
     value: '0.1'
@@ -38,7 +38,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: NH4Cl
   concentration:
     value: '0.1'
@@ -59,7 +59,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
 - preferred_term: KCl
   concentration:
     value: '0.05'
@@ -79,7 +79,7 @@ ingredients:
   notes: 'Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:32150
-    label: "sodium thiosulfate pentahydrate"
+    label: sodium thiosulfate pentahydrate
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -87,7 +87,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: "carbon dioxide"
+    label: carbon dioxide
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
@@ -95,7 +95,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -103,7 +103,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: "dihydrogen"
+    label: dihydrogen
 - preferred_term: FeSO4・7H2O
   concentration:
     value: '1.42'
@@ -112,7 +112,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: Na2SeO3・5H2O
   concentration:
     value: '3'
@@ -130,7 +130,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63939
-    label: "sodium tungstate dihydrate"
+    label: sodium tungstate dihydrate
 - preferred_term: NiSO4・7H2O
   concentration:
     value: '1.6'
@@ -139,7 +139,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:53001
-    label: "nickel sulfate"
+    label: nickel sulfate
 media_term:
   preferred_term: TOGO Medium M1199
   term:

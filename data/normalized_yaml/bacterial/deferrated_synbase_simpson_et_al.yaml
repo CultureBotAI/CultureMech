@@ -9,14 +9,14 @@ ingredients:
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
   concentration:
     value: '410.79'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glyc'
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
 - preferred_term: Cl-
   concentration:
     value: '0.141'
@@ -38,24 +38,24 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: Sodium sulfate
   concentration:
     value: '0.6265'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32149
-    label: "sodium sulfate"
+    label: sodium sulfate
   term:
     id: CHEBI:32149
-    label: "sodium sulfate"
+    label: sodium sulfate
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '35.22'
     unit: MILLIMOLAR
   term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
 - preferred_term: Fe3+
   concentration:
     value: '0.0006'
@@ -64,30 +64,30 @@ ingredients:
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
-    label: "ammonium chloride"
+    label: ammonium chloride
   concentration:
     value: '22.059'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: "ammonium chloride"
+    label: ammonium chloride
 - preferred_term: Manganese chloride
   concentration:
     value: '0.0202'
     unit: MILLIMOLAR
   term:
     id: CHEBI:63041
-    label: "manganese(II) chloride"
+    label: manganese(II) chloride
 - preferred_term: Sodium Succinate
   term:
     id: CHEBI:63675
-    label: "sodium succinate (anhydrous)"
+    label: sodium succinate (anhydrous)
   concentration:
     value: '35.69'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:63675
-    label: "sodium succinate (anhydrous)"
+    label: sodium succinate (anhydrous)
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

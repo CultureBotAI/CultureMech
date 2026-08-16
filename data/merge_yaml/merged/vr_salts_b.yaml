@@ -23,10 +23,10 @@ ingredients:
     unit: VARIABLE
   mediaingredientmech_chebi_term:
     id: CHEBI:32145
-    label: "sodium hydroxide"
+    label: sodium hydroxide
   term:
     id: CHEBI:32145
-    label: "sodium hydroxide"
+    label: sodium hydroxide
 applications:
 - Microbial cultivation
 curation_history:

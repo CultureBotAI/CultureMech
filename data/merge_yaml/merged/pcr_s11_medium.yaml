@@ -58,10 +58,10 @@ ingredients:
     Simple component [Merged 5 duplicates: 500.0, 1.0, 1.0, 500.0, 2.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: Hepes
   concentration:
     value: '119.15'
@@ -93,7 +93,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:34887
-    label: "nickel dichloride"
+    label: nickel dichloride
 - preferred_term: ZnSO4.7H2O
   concentration:
     value: '6'
@@ -132,7 +132,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63939
-    label: "sodium tungstate dihydrate"
+    label: sodium tungstate dihydrate
 - preferred_term: MnSO4.H2O
   concentration:
     value: '60'
@@ -141,7 +141,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86364
-    label: "manganese(II) sulfate monohydrate"
+    label: manganese(II) sulfate monohydrate
 - preferred_term: KI
   concentration:
     value: '3'

@@ -25,7 +25,7 @@ composition:
     label: Double distilled water
   chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Fill 50 ml in 100 ml serum bottles, bubble for 15 min with CO2

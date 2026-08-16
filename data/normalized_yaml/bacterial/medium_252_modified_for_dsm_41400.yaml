@@ -17,13 +17,13 @@ ingredients:
 - preferred_term: Starch
   term:
     id: CHEBI:28017
-    label: "starch"
+    label: starch
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:28017
-    label: "starch"
+    label: starch
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -33,7 +33,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: "ammonium sulfate"
+    label: ammonium sulfate
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -43,47 +43,47 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: CaCO3
   term:
     id: CHEBI:3311
-    label: "calcium carbonate"
+    label: calcium carbonate
   concentration:
     value: '2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:3311
-    label: "calcium carbonate"
+    label: calcium carbonate
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '20'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 applications:
 - Microbial cultivation
 curation_history:
@@ -131,33 +131,33 @@ solutions:
   - preferred_term: FeSO4 x 7 H2O
     term:
       id: CHEBI:75836
-      label: "iron(2+) sulfate heptahydrate"
+      label: iron(2+) sulfate heptahydrate
     concentration:
       value: '1'
       unit: G_PER_L
     mediaingredientmech_chebi_term:
       id: CHEBI:75836
-      label: "iron(2+) sulfate heptahydrate"
+      label: iron(2+) sulfate heptahydrate
   - preferred_term: MnCl2 x 4 H2O
     term:
       id: CHEBI:86368
-      label: "manganese(II) chloride tetrahydrate"
+      label: manganese(II) chloride tetrahydrate
     concentration:
       value: '1'
       unit: G_PER_L
     mediaingredientmech_chebi_term:
       id: CHEBI:86368
-      label: "manganese(II) chloride tetrahydrate"
+      label: manganese(II) chloride tetrahydrate
   - preferred_term: ZnSO4 x 7 H2O
     term:
       id: CHEBI:32312
-      label: "zinc sulfate heptahydrate"
+      label: zinc sulfate heptahydrate
     concentration:
       value: '1'
       unit: G_PER_L
     mediaingredientmech_chebi_term:
       id: CHEBI:32312
-      label: "zinc sulfate heptahydrate"
+      label: zinc sulfate heptahydrate
   concentration:
     value: '1'
     unit: ML_PER_L

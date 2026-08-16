@@ -9,24 +9,24 @@ ingredients:
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
-    label: "D-glucose"
+    label: D-glucose
   concentration:
     value: '44.405'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
   mediaingredientmech_chebi_term:
     id: CHEBI:17634
-    label: "D-glucose"
+    label: D-glucose
 - preferred_term: Tryptophan
   term:
     id: CHEBI:27897
-    label: "tryptophan"
+    label: tryptophan
   concentration:
     value: '0.195858'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:27897
-    label: "tryptophan"
+    label: tryptophan
 - preferred_term: Magnesium chloride
   concentration:
     value: '0.122965'
@@ -43,24 +43,24 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: "calcium dichloride"
+    label: calcium dichloride
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '15.6142'
     unit: MILLIMOLAR
   term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: Sodium sulfate
   concentration:
     value: '1.99944'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32149
-    label: "sodium sulfate"
+    label: sodium sulfate
   term:
     id: CHEBI:32149
-    label: "sodium sulfate"
+    label: sodium sulfate
 - preferred_term: Potassium chloride
   concentration:
     value: '2.01204'
@@ -77,24 +77,24 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
-    label: "ammonium chloride"
+    label: ammonium chloride
   concentration:
     value: '18.6947'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: "ammonium chloride"
+    label: ammonium chloride
 - preferred_term: Manganese chloride
   concentration:
     value: '0.0672435'
     unit: MILLIMOLAR
   term:
     id: CHEBI:63041
-    label: "manganese(II) chloride"
+    label: manganese(II) chloride
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.00799112'
@@ -102,13 +102,13 @@ ingredients:
 - preferred_term: Sodium nitrate
   term:
     id: CHEBI:63005
-    label: "sodium nitrate"
+    label: sodium nitrate
   concentration:
     value: '2.00012'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:63005
-    label: "sodium nitrate"
+    label: sodium nitrate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

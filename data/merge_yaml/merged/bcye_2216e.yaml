@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: L-Cysteine
   concentration:
     value: '1'
@@ -66,7 +66,7 @@ ingredients:
   notes: 'Role: Mineral source'
   term:
     id: CHEBI:132767
-    label: "ferric pyrophosphate"
+    label: ferric pyrophosphate
 - preferred_term: α-Ketoglutarate
   concentration:
     value: '1'

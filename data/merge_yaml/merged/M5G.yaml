@@ -11,7 +11,7 @@ ingredients:
   notes: 'CAS: 100037-69-2; MW: 335.34'
   term:
     id: CHEBI:63055
-    label: "disodium PIPES"
+    label: disodium PIPES
 - preferred_term: Sodium Chloride
   concentration:
     value: '1'
@@ -81,7 +81,7 @@ ingredients:
   notes: 'CAS: 15275-07-7; MW: 344.057; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:30729
-    label: "ethylenediaminetetraacetatoferrate(1-)"
+    label: ethylenediaminetetraacetatoferrate(1-)
 - preferred_term: D-Glucose
   concentration:
     value: '11.1'

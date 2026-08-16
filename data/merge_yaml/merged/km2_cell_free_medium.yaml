@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 5 duplicates: 365.0, 1.0, 1.0, 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: Calf brains
   term:
     id: UBERON:0000955
@@ -97,7 +97,7 @@ ingredients:
 - preferred_term: Disodium phosphate
   term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
   concentration:
     value: '2.5'
     unit: G_PER_L
@@ -213,7 +213,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: Na2HPO4·12H2O
   concentration:
     value: '3'
@@ -222,10 +222,10 @@ ingredients:
     component'
   mediaingredientmech_chebi_term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
   term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
 - preferred_term: 0.1 M NaOH
   concentration:
     value: '10'
@@ -239,10 +239,10 @@ ingredients:
     component'
   term:
     id: CHEBI:31991
-    label: "phenol red"
+    label: phenol red
   mediaingredientmech_chebi_term:
     id: CHEBI:31991
-    label: "phenol red"
+    label: phenol red
 - preferred_term: azlocillin
   concentration:
     value: '100'

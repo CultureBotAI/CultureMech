@@ -23,13 +23,13 @@ ingredients:
 - preferred_term: Sucrose
   term:
     id: CHEBI:17992
-    label: "sucrose"
+    label: sucrose
   concentration:
     value: '75'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17992
-    label: "sucrose"
+    label: sucrose
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -39,27 +39,27 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: Na2HPO4 x 2 H2O
   term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
   concentration:
     value: '1.53'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
 - preferred_term: Glutamic acid
   term:
     id: CHEBI:18237
-    label: "glutamic acid"
+    label: glutamic acid
   concentration:
     value: '0.75'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:18237
-    label: "glutamic acid"
+    label: glutamic acid
 preparation_steps:
 - step_number: 1
   action: MIX

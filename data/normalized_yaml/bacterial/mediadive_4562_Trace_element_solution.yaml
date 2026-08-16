@@ -25,7 +25,7 @@ composition:
     label: FeCl2 x 4 H2O
   chebi_term:
     id: CHEBI:86249
-    label: "iron dichloride tetrahydrate"
+    label: iron dichloride tetrahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: MnCl2 x 4 H2O
@@ -37,7 +37,7 @@ composition:
     label: MnCl2 x 4 H2O
   chebi_term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: CoCl2 x 6 H2O
@@ -49,7 +49,7 @@ composition:
     label: CoCl2 x 6 H2O
   chebi_term:
     id: CHEBI:35696
-    label: "cobalt dichloride"
+    label: cobalt dichloride
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: CaCl2 x 2 H2O
@@ -61,7 +61,7 @@ composition:
     label: CaCl2 x 2 H2O
   chebi_term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: ZnCl2
@@ -85,7 +85,7 @@ composition:
     label: CuCl2 x 2 H2O
   chebi_term:
     id: CHEBI:86318
-    label: "copper(II) chloride dihydrate"
+    label: copper(II) chloride dihydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: H3BO3
@@ -121,7 +121,7 @@ composition:
     label: NiCl2 x 6 H2O
   chebi_term:
     id: CHEBI:34887
-    label: "nickel dichloride"
+    label: nickel dichloride
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: NaCl
@@ -133,7 +133,7 @@ composition:
     label: NaCl
   chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Na2SeO3
@@ -157,7 +157,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Dissolve nitrilotriacetic acid first in 200 ml of distilled water,

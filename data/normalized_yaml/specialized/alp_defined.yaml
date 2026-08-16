@@ -11,7 +11,7 @@ ingredients:
   notes: 'CAS: 10049-21-5; MW: 137.99; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:114249
-    label: "sodium dihydrogenphosphate monohydrate"
+    label: sodium dihydrogenphosphate monohydrate
 - preferred_term: Potassium phosphate dibasic
   concentration:
     value: '0.97'
@@ -103,7 +103,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:53503
-    label: "cobalt chloride hexahydrate"
+    label: cobalt chloride hexahydrate
 - preferred_term: Zinc sulfate heptahydrate
   concentration:
     value: '0.001'
@@ -112,7 +112,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:32312
-    label: "zinc sulfate heptahydrate"
+    label: zinc sulfate heptahydrate
 - preferred_term: Calcium Chloride Dihydrate
   concentration:
     value: '0.001'
@@ -130,7 +130,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: Nickel (II) chloride hexahydrate
   concentration:
     value: '0.00025'
@@ -139,7 +139,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:53542
-    label: "nickel chloride hexahydrate"
+    label: nickel chloride hexahydrate
 - preferred_term: Aluminum potassium sulfate dodecahydrate
   concentration:
     value: '0.0002'
@@ -148,7 +148,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:86465
-    label: "potassium aluminium sulfate dodecahydrate"
+    label: potassium aluminium sulfate dodecahydrate
 - preferred_term: Copper (II) sulfate pentahydrate
   concentration:
     value: '0.0001'
@@ -157,7 +157,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:31440
-    label: "copper(II) sulfate pentahydrate"
+    label: copper(II) sulfate pentahydrate
 - preferred_term: Boric Acid
   concentration:
     value: '0.0001'
@@ -174,7 +174,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:75213
-    label: "sodium molybdate dihydrate"
+    label: sodium molybdate dihydrate
 - preferred_term: Sodium selenite pentahydrate
   concentration:
     value: '0.003'
@@ -183,7 +183,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:131361
-    label: "disodium selenite pentahydrate"
+    label: disodium selenite pentahydrate
 - preferred_term: pyridoxine HCl
   concentration:
     value: '0.1'

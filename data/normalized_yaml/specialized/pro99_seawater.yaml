@@ -11,7 +11,7 @@ ingredients:
   notes: 'CAS: 10049-21-5; MW: 137.99; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:114249
-    label: "sodium dihydrogenphosphate monohydrate"
+    label: sodium dihydrogenphosphate monohydrate
 - preferred_term: Ammonium chloride
   concentration:
     value: '800'
@@ -28,7 +28,7 @@ ingredients:
   notes: 'CAS: 6381-92-6; MW: 336.206'
   term:
     id: CHEBI:64734
-    label: "EDTA disodium salt (anhydrous)"
+    label: EDTA disodium salt (anhydrous)
 - preferred_term: Iron (III) chloride hexahydrate
   concentration:
     value: '1.18'
@@ -40,7 +40,7 @@ ingredients:
   notes: 'CAS: 7446-20-0; MW: 287.56; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:32312
-    label: "zinc sulfate heptahydrate"
+    label: zinc sulfate heptahydrate
 - preferred_term: Cobalt chloride hexahydrate
   concentration:
     value: '0.005'
@@ -48,7 +48,7 @@ ingredients:
   notes: 'CAS: 7791-13-1; MW: 237.93; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:53503
-    label: "cobalt chloride hexahydrate"
+    label: cobalt chloride hexahydrate
 - preferred_term: Manganese (II) chloride tetrahydrate
   concentration:
     value: '0.09'
@@ -56,7 +56,7 @@ ingredients:
   notes: 'CAS: 13446-34-9; MW: 197.91; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:86368
-    label: "manganese(II) chloride tetrahydrate"
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: Sodium Molybdate Dihydrate
   concentration:
     value: '0.003'
@@ -64,7 +64,7 @@ ingredients:
   notes: 'CAS: 10102-40-6; MW: 241.95; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:75213
-    label: "sodium molybdate dihydrate"
+    label: sodium molybdate dihydrate
 - preferred_term: Sodium selenite pentahydrate
   concentration:
     value: '0.01'
@@ -72,7 +72,7 @@ ingredients:
   notes: 'CAS: 26970-82-1; MW: 263.01; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:131361
-    label: "disodium selenite pentahydrate"
+    label: disodium selenite pentahydrate
 - preferred_term: Nickel (II) chloride hexahydrate
   concentration:
     value: '0.01'
@@ -80,7 +80,7 @@ ingredients:
   notes: 'CAS: 7791-20-0; MW: 237.69; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:53542
-    label: "nickel chloride hexahydrate"
+    label: nickel chloride hexahydrate
 - preferred_term: Filtered Seawater
   concentration:
     value: '1'

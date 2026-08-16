@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: Phenol red
   concentration:
     value: '0.02'
@@ -26,10 +26,10 @@ ingredients:
     compound'
   term:
     id: CHEBI:31991
-    label: "phenol red"
+    label: phenol red
   mediaingredientmech_chebi_term:
     id: CHEBI:31991
-    label: "phenol red"
+    label: phenol red
 - preferred_term: L-Arginine
   concentration:
     value: '3'

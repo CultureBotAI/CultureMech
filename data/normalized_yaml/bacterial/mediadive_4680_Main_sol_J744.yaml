@@ -13,7 +13,7 @@ composition:
     label: NaCl
   chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
     confidence: 1.0
     match_type: exact_match
 - preferred_term: MgSO4 x 7 H2O
@@ -37,7 +37,7 @@ composition:
     label: MgCl2 x 6 H2O
   chebi_term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
     match_type: corpus_consensus
 - preferred_term: KCl
   concentration:
@@ -60,7 +60,7 @@ composition:
     label: NaBr
   chebi_term:
     id: CHEBI:63004
-    label: "sodium bromide"
+    label: sodium bromide
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: H3BO3
@@ -84,7 +84,7 @@ composition:
     label: SrCl2 x 6 H2O
   chebi_term:
     id: CHEBI:36385
-    label: "strontium dichloride hexahydrate"
+    label: strontium dichloride hexahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: (NH4)2SO4
@@ -130,7 +130,7 @@ composition:
     label: CaCl2 x 2 H2O
   chebi_term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: KH2PO4
@@ -142,7 +142,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: NiCl2 x 6 H2O
@@ -154,7 +154,7 @@ composition:
     label: NiCl2 x 6 H2O
   chebi_term:
     id: CHEBI:34887
-    label: "nickel dichloride"
+    label: nickel dichloride
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Trace minerals (see Medium No. 151
@@ -173,7 +173,7 @@ composition:
     label: Resazurin
   chebi_term:
     id: CHEBI:8806
-    label: "Resazurin"
+    label: Resazurin
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Distilled water
@@ -185,7 +185,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: KNO3
@@ -221,7 +221,7 @@ composition:
     label: Na2S x 9 H2O
   chebi_term:
     id: CHEBI:76209
-    label: "sodium sulfide nonahydrate"
+    label: sodium sulfide nonahydrate
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: "Mix ingredients, bring to a boil and cool under a H2-CO2 (4:1,\

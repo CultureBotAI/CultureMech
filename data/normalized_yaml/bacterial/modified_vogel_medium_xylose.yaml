@@ -9,20 +9,20 @@ ingredients:
 - preferred_term: Xylose
   term:
     id: CHEBI:18222
-    label: "xylose"
+    label: xylose
   concentration:
     value: '133.2'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:18222
-    label: "xylose"
+    label: xylose
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.0002066'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75215
-    label: "sodium molybdate (anhydrous)"
+    label: sodium molybdate (anhydrous)
 - preferred_term: Uridine
   concentration:
     value: '9.992'
@@ -30,14 +30,14 @@ ingredients:
   notes: 'Cross-references: KEGG:uri'
   term:
     id: CHEBI:16704
-    label: "uridine"
+    label: uridine
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.001002'
     unit: MILLIMOLAR
   term:
     id: CHEBI:23414
-    label: "copper(II) sulfate"
+    label: copper(II) sulfate
 - preferred_term: Ferrous ammonium sulfate
   concentration:
     value: '0.00255'
@@ -45,33 +45,33 @@ ingredients:
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
-    label: "boric acid"
+    label: boric acid
   concentration:
     value: '0.0008087'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: "boric acid"
+    label: boric acid
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
-    label: "manganese(II) sulfate monohydrate"
+    label: manganese(II) sulfate monohydrate
   concentration:
     value: '0.0002189'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
-    label: "manganese(II) sulfate monohydrate"
+    label: manganese(II) sulfate monohydrate
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
-    label: "zinc sulfate"
+    label: zinc sulfate
   concentration:
     value: '0.01739'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:35176
-    label: "zinc sulfate"
+    label: zinc sulfate
 - preferred_term: Citrate
   concentration:
     value: '0.02379'
@@ -79,51 +79,51 @@ ingredients:
   notes: 'Cross-references: KEGG:cit'
   term:
     id: CHEBI:30769
-    label: "citric acid"
+    label: citric acid
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258
-    label: "sodium citrate"
+    label: sodium citrate
   concentration:
     value: '9.691'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:53258
-    label: "sodium citrate"
+    label: sodium citrate
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: "magnesium sulfate"
+    label: magnesium sulfate
   concentration:
     value: '0.8115'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: "magnesium sulfate"
+    label: magnesium sulfate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.68'
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: "calcium dichloride"
+    label: calcium dichloride
 - preferred_term: Ammonium nitrate
   term:
     id: CHEBI:63038
-    label: "ammonium nitrate"
+    label: ammonium nitrate
   concentration:
     value: '24.99'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:63038
-    label: "ammonium nitrate"
+    label: ammonium nitrate
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '36.74'
     unit: MILLIMOLAR
   term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

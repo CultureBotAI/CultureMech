@@ -13,7 +13,7 @@ composition:
     label: NaCl
   chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Na2CO3
@@ -104,7 +104,7 @@ composition:
     label: Cellobiose
   chebi_term:
     id: CHEBI:17057
-    label: "cellobiose"
+    label: cellobiose
     confidence: 0.9
     match_type: corpus_consensus
 preparation_notes: "Add components to distilled water and bring volume to 1.0 L. After\

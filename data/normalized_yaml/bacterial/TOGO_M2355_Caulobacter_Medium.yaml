@@ -30,10 +30,10 @@ ingredients:
   notes: 'Role: Solvating media; Properties: Undefined component'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: Bacto peptone
   concentration:
     value: '2'

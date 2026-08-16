@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 1.0, 50.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: MgSO4 . 7H2O
   concentration:
     value: '0.2'
@@ -40,7 +40,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 - preferred_term: K2HPO4
   concentration:
     value: '1'
@@ -73,7 +73,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: NH4NO3
   concentration:
     value: '2'
@@ -85,7 +85,7 @@ ingredients:
     label: ammonium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63038
-    label: "ammonium nitrate"
+    label: ammonium nitrate
 - preferred_term: MnSO4 . 7H2O
   concentration:
     value: '5'
@@ -122,7 +122,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 - preferred_term: Trisodium citrate
   concentration:
     value: '2.58'

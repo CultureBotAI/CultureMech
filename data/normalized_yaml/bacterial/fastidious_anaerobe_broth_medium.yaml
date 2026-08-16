@@ -20,103 +20,103 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '4.98008'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: Starch
   term:
     id: CHEBI:28017
-    label: "starch"
+    label: starch
   concentration:
     value: '0.996016'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:28017
-    label: "starch"
+    label: starch
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
-    label: "sodium hydrogencarbonate"
+    label: sodium hydrogencarbonate
   concentration:
     value: '0.398406'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: "sodium hydrogencarbonate"
+    label: sodium hydrogencarbonate
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
   concentration:
     value: '0.996016'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
 - preferred_term: Sodium pyruvate
   term:
     id: CHEBI:50144
-    label: "sodium pyruvate"
+    label: sodium pyruvate
   concentration:
     value: '0.996016'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:50144
-    label: "sodium pyruvate"
+    label: sodium pyruvate
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
-    label: "L-cysteine hydrochloride hydrate"
+    label: L-cysteine hydrochloride hydrate
   concentration:
     value: '0.498008'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:91248
-    label: "L-cysteine hydrochloride hydrate"
+    label: L-cysteine hydrochloride hydrate
 - preferred_term: Sodium pyrophosphate
   term:
     id: CHEBI:71240
-    label: "sodium diphosphate"
+    label: sodium diphosphate
   concentration:
     value: '0.249004'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:71240
-    label: "sodium diphosphate"
+    label: sodium diphosphate
 - preferred_term: L-Arginine
   term:
     id: CHEBI:16467
-    label: "L-arginine"
+    label: L-arginine
   concentration:
     value: '0.996016'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16467
-    label: "L-arginine"
+    label: L-arginine
 - preferred_term: Hemin
   term:
     id: CHEBI:50385
-    label: "hemin"
+    label: hemin
   concentration:
     value: '0.00996016'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:50385
-    label: "hemin"
+    label: hemin
 - preferred_term: Dithiothreitol
   term:
     id: CHEBI:18320
-    label: "1,4-dithiothreitol"
+    label: 1,4-dithiothreitol
   concentration:
     value: '4'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:18320
-    label: "1,4-dithiothreitol"
+    label: 1,4-dithiothreitol
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: MES
   concentration:
     value: '1.95'
@@ -36,10 +36,10 @@ ingredients:
   notes: 'Role: Solidifying component; Properties: Undefined component, Organic compound'
   term:
     id: CHEBI:85248
-    label: "gellan gum"
+    label: gellan gum
   mediaingredientmech_chebi_term:
     id: CHEBI:85248
-    label: "gellan gum"
+    label: gellan gum
 - preferred_term: Xylan
   concentration:
     value: '0.5'

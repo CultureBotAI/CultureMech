@@ -18,7 +18,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: "carbon dioxide"
+    label: carbon dioxide
 - preferred_term: Heart Infusion Agar (Difco)
   notes: 'Properties: Undefined component, Complex component'
   concentration:

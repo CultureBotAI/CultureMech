@@ -16,13 +16,13 @@ ingredients:
 - preferred_term: Sodium succinate
   term:
     id: CHEBI:63675
-    label: "sodium succinate (anhydrous)"
+    label: sodium succinate (anhydrous)
   concentration:
     value: '2.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63675
-    label: "sodium succinate (anhydrous)"
+    label: sodium succinate (anhydrous)
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -32,7 +32,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -42,17 +42,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: "magnesium sulfate heptahydrate"
+    label: magnesium sulfate heptahydrate
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -62,37 +62,37 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: "ammonium sulfate"
+    label: ammonium sulfate
 - preferred_term: CaCl2
   term:
     id: CHEBI:3312
-    label: "calcium dichloride"
+    label: calcium dichloride
   concentration:
     value: '0.07'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:3312
-    label: "calcium dichloride"
+    label: calcium dichloride
 - preferred_term: Ferric citrate
   term:
     id: CHEBI:144421
-    label: "iron(III) citrate"
+    label: iron(III) citrate
   concentration:
     value: '0.003'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:144421
-    label: "iron(III) citrate"
+    label: iron(III) citrate
 - preferred_term: EDTA
   term:
     id: CHEBI:64755
-    label: "EDTA(2-)"
+    label: EDTA(2-)
   concentration:
     value: '0.003'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:64755
-    label: "EDTA(2-)"
+    label: EDTA(2-)
 - preferred_term: Yeast extract
   concentration:
     value: '0.5'

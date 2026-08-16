@@ -13,7 +13,7 @@ composition:
     label: Thiamine
   chebi_term:
     id: CHEBI:26948
-    label: "vitamin B1"
+    label: vitamin B1
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Biotine
@@ -37,7 +37,7 @@ composition:
     label: Vitamine B12
   chebi_term:
     id: CHEBI:176843
-    label: "vitamin B12"
+    label: vitamin B12
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Make up to <span class=''amount'' data-volume=''30''>30</span>

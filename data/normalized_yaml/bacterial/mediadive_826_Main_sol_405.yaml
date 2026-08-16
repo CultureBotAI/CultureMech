@@ -27,7 +27,7 @@ composition:
     label: Na-acetate
   chebi_term:
     id: CHEBI:32954
-    label: "sodium acetate"
+    label: sodium acetate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Agar
@@ -40,7 +40,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Adjust pH to 7.2.

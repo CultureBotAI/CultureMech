@@ -24,10 +24,10 @@ ingredients:
     component'
   term:
     id: CHEBI:31991
-    label: "phenol red"
+    label: phenol red
   mediaingredientmech_chebi_term:
     id: CHEBI:31991
-    label: "phenol red"
+    label: phenol red
 - preferred_term: DI Water
   concentration:
     value: '843'

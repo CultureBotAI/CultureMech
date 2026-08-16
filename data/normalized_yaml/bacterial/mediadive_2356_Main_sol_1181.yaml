@@ -25,7 +25,7 @@ composition:
     label: CaCl2 x 6 H2O
   chebi_term:
     id: CHEBI:91243
-    label: "calcium chloride hexahydrate"
+    label: calcium chloride hexahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Fe(III)NH4-EDTA
@@ -55,7 +55,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na2HPO4 x 12 H2O
@@ -67,7 +67,7 @@ composition:
     label: Na2HPO4 x 12 H2O
   chebi_term:
     id: CHEBI:34683
-    label: "disodium hydrogenphosphate"
+    label: disodium hydrogenphosphate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -79,7 +79,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: "Dispense the medium into the culture vessels. For small volumes\

@@ -67,7 +67,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:32139
-    label: "sodium hydrogencarbonate"
+    label: sodium hydrogencarbonate
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 144-55-8; MW: 84.007'
 - preferred_term: L-Cysteine HCL
   concentration:
@@ -75,7 +75,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:91247
-    label: "L-cysteine hydrochloride"
+    label: L-cysteine hydrochloride
 - preferred_term: Ferric pyrophosphate
   concentration:
     value: '0.5'
@@ -83,7 +83,7 @@ ingredients:
   notes: 'CAS: 10058-44-3; MW: 745.21; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:132767
-    label: "ferric pyrophosphate"
+    label: ferric pyrophosphate
 - preferred_term: Hemin
   concentration:
     value: '0.005'
@@ -100,14 +100,14 @@ ingredients:
   notes: 'CAS: 58-27-5; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:28869
-    label: "menadione"
+    label: menadione
 - preferred_term: dithiothreitol
   concentration:
     value: '1'
     unit: G_PER_L
   term:
     id: CHEBI:42106
-    label: "L-1,4-dithiothreitol"
+    label: L-1,4-dithiothreitol
   notes: Ontology enriched via CAS-RN lookup
 - preferred_term: Sodium thioglycolate
   concentration:

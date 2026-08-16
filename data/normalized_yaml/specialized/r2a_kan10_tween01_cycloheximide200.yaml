@@ -15,7 +15,7 @@ ingredients:
   notes: 'CAS: 25839-94-0; MW: 582.58'
   term:
     id: CHEBI:6109
-    label: "kanamycin A sulfate"
+    label: kanamycin A sulfate
 - preferred_term: Tween 80
   concentration:
     value: '0.01'
@@ -32,7 +32,7 @@ ingredients:
   notes: 'CAS: 66-81-9; MW: 281.35; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:27641
-    label: "cycloheximide"
+    label: cycloheximide
 description: R2A media for outgrowth of bacteria after plant experiments
 notes: 'Source: FEBA media definitions'
 category: specialized

@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: KH2PO4
   concentration:
     value: '5'
@@ -29,7 +29,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: K2HPO4
   concentration:
     value: '1'
@@ -154,10 +154,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:22653
-    label: "asparagine"
+    label: asparagine
   mediaingredientmech_chebi_term:
     id: CHEBI:22653
-    label: "asparagine"
+    label: asparagine
 - preferred_term: Arginine
   concentration:
     value: '0.125'
@@ -184,10 +184,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:27897
-    label: "tryptophan"
+    label: tryptophan
   mediaingredientmech_chebi_term:
     id: CHEBI:27897
-    label: "tryptophan"
+    label: tryptophan
 - preferred_term: Thiamine
   concentration:
     value: '1'
@@ -219,10 +219,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15356
-    label: "cysteine"
+    label: cysteine
   mediaingredientmech_chebi_term:
     id: CHEBI:15356
-    label: "cysteine"
+    label: cysteine
 - preferred_term: Methionine
   concentration:
     value: '0.125'
@@ -243,7 +243,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15603
-    label: "L-leucine"
+    label: L-leucine
 - preferred_term: Glycine
   concentration:
     value: '0.175'
@@ -272,10 +272,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:16454
-    label: "pantothenate"
+    label: pantothenate
   mediaingredientmech_chebi_term:
     id: CHEBI:16454
-    label: "pantothenate"
+    label: pantothenate
 - preferred_term: pyridoxamine-HCl
   concentration:
     value: '5'
@@ -366,7 +366,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:17191
-    label: "L-isoleucine"
+    label: L-isoleucine
 - preferred_term: Lysine
   concentration:
     value: '0.44'
@@ -381,7 +381,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:17295
-    label: "L-phenylalanine"
+    label: L-phenylalanine
 - preferred_term: Serine
   concentration:
     value: '0.34'
@@ -408,7 +408,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:16414
-    label: "L-valine"
+    label: L-valine
 - preferred_term: L-ascorbic acid
   concentration:
     value: '0.5'
@@ -440,10 +440,10 @@ ingredients:
     component'
   term:
     id: CHEBI:17748
-    label: "thymidine"
+    label: thymidine
   mediaingredientmech_chebi_term:
     id: CHEBI:17748
-    label: "thymidine"
+    label: thymidine
 - preferred_term: Acetate
   concentration:
     value: '1'
@@ -452,10 +452,10 @@ ingredients:
     component'
   term:
     id: CHEBI:30089
-    label: "acetate"
+    label: acetate
   mediaingredientmech_chebi_term:
     id: CHEBI:30089
-    label: "acetate"
+    label: acetate
 - preferred_term: CoSO4
   concentration:
     value: '2.5'
@@ -496,7 +496,7 @@ ingredients:
     component'
   term:
     id: CHEBI:16235
-    label: "guanine"
+    label: guanine
 - preferred_term: Xanthine
   concentration:
     value: '50'
@@ -505,7 +505,7 @@ ingredients:
     component'
   term:
     id: CHEBI:15318
-    label: "xanthine"
+    label: xanthine
 - preferred_term: Inosine
   concentration:
     value: '5'
@@ -514,7 +514,7 @@ ingredients:
     component'
   term:
     id: CHEBI:17596
-    label: "inosine"
+    label: inosine
 - preferred_term: Orotic acid
   concentration:
     value: '5'
@@ -523,7 +523,7 @@ ingredients:
     component'
   term:
     id: CHEBI:16742
-    label: "orotic acid"
+    label: orotic acid
 - preferred_term: Cystine
   concentration:
     value: '50'
@@ -537,7 +537,7 @@ ingredients:
   notes: 'Role: Nitrogen source'
   term:
     id: CHEBI:16977
-    label: "L-alanine"
+    label: L-alanine
 - preferred_term: Proline
   concentration:
     value: '0.675'
@@ -545,10 +545,10 @@ ingredients:
   notes: 'Role: Nitrogen source'
   term:
     id: CHEBI:26271
-    label: "proline"
+    label: proline
   mediaingredientmech_chebi_term:
     id: CHEBI:26271
-    label: "proline"
+    label: proline
 - preferred_term: MOPS buffer
   notes: 'Role: Buffer; Properties: Defined component, Organic compound, Solution'
   term:
@@ -559,7 +559,7 @@ ingredients:
     unit: VARIABLE
   mediaingredientmech_chebi_term:
     id: CHEBI:44115
-    label: "3-(N-morpholino)propanesulfonic acid"
+    label: 3-(N-morpholino)propanesulfonic acid
 media_term:
   preferred_term: TOGO Medium M2239
   term:

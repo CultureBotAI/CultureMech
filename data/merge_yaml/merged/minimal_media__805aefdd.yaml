@@ -102,10 +102,10 @@ ingredients:
     component'
   term:
     id: CHEBI:62345
-    label: "L-rhamnose"
+    label: L-rhamnose
   mediaingredientmech_chebi_term:
     id: CHEBI:62345
-    label: "L-rhamnose"
+    label: L-rhamnose
 - preferred_term: D-mannose
   concentration:
     value: '0.2'
@@ -114,10 +114,10 @@ ingredients:
     component'
   term:
     id: CHEBI:16024
-    label: "D-mannose"
+    label: D-mannose
   mediaingredientmech_chebi_term:
     id: CHEBI:16024
-    label: "D-mannose"
+    label: D-mannose
 - preferred_term: D-trehalose
   concentration:
     value: '0.2'
@@ -126,10 +126,10 @@ ingredients:
     component'
   term:
     id: CHEBI:27082
-    label: "trehalose"
+    label: trehalose
   mediaingredientmech_chebi_term:
     id: CHEBI:27082
-    label: "trehalose"
+    label: trehalose
 - preferred_term: xylan (oat spelts)
   concentration:
     value: '0.2'

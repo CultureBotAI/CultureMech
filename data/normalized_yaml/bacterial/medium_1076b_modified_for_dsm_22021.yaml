@@ -41,23 +41,23 @@ ingredients:
 - preferred_term: Phenol red
   term:
     id: CHEBI:31991
-    label: "phenol red"
+    label: phenol red
   concentration:
     value: '0.01'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31991
-    label: "phenol red"
+    label: phenol red
 - preferred_term: L-Glutamine
   term:
     id: CHEBI:18050
-    label: "L-glutamine"
+    label: L-glutamine
   concentration:
     value: '0.0496876'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:18050
-    label: "L-glutamine"
+    label: L-glutamine
 applications:
 - Microbial cultivation
 curation_history:

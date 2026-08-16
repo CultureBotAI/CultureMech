@@ -25,7 +25,7 @@ composition:
     label: MgCl2 x 6 H2O
   chebi_term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
     match_type: corpus_consensus
 - preferred_term: CaCl2 x 2 H2O
   concentration:
@@ -36,7 +36,7 @@ composition:
     label: CaCl2 x 2 H2O
   chebi_term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: KH2PO4
@@ -48,7 +48,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Yeast extract
@@ -98,7 +98,7 @@ composition:
     label: 2-Mercaptoethanesulfonate
   chebi_term:
     id: CHEBI:17905
-    label: "coenzyme M"
+    label: coenzyme M
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Na2S x 9 H2O
@@ -110,7 +110,7 @@ composition:
     label: Na2S x 9 H2O
   chebi_term:
     id: CHEBI:76209
-    label: "sodium sulfide nonahydrate"
+    label: sodium sulfide nonahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -122,7 +122,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Dissolve ingredients (except carbonate, crotonate, coenzyme M,

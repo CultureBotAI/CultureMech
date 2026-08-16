@@ -24,10 +24,10 @@ ingredients:
     Defined component [Merged 3 duplicates: 980.0, 10.0, 10.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '2'
@@ -101,10 +101,10 @@ ingredients:
     component'
   term:
     id: CHEBI:75228
-    label: "sodium lactate"
+    label: sodium lactate
   mediaingredientmech_chebi_term:
     id: CHEBI:75228
-    label: "sodium lactate"
+    label: sodium lactate
 - preferred_term: FeSO4 x 7 H2O
   concentration:
     value: '0.5'
@@ -113,10 +113,10 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: Ascorbic acid
   concentration:
     value: '0.1'

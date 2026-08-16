@@ -25,7 +25,7 @@ composition:
     label: Eisencitrat
   chebi_term:
     id: CHEBI:144434
-    label: "iron(III) citrate monohydrate"
+    label: iron(III) citrate monohydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -37,7 +37,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Original volume: 100 mL'

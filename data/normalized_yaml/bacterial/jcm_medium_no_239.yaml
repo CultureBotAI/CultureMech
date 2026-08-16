@@ -16,23 +16,23 @@ ingredients:
 - preferred_term: L-Asparagine
   term:
     id: CHEBI:17196
-    label: "L-asparagine"
+    label: L-asparagine
   concentration:
     value: '90.9091'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17196
-    label: "L-asparagine"
+    label: L-asparagine
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
   concentration:
     value: '181.818'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: "glycerol"
+    label: glycerol
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -42,7 +42,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: Polypeptone
   concentration:
     value: '2727.27'
@@ -50,60 +50,60 @@ ingredients:
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '1363.64'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
-    label: "thiamine hydrochloride"
+    label: thiamine hydrochloride
   concentration:
     value: '0.05'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:49105
-    label: "thiamine hydrochloride"
+    label: thiamine hydrochloride
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
-    label: "riboflavin"
+    label: riboflavin
   concentration:
     value: '0.05'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17015
-    label: "riboflavin"
+    label: riboflavin
 - preferred_term: Nicotinate
   concentration:
     value: '0.05'
     unit: G_PER_L
   term:
     id: CHEBI:15940
-    label: "nicotinic acid"
+    label: nicotinic acid
 - preferred_term: Pyridoxine hydrochloride
   term:
     id: CHEBI:30961
-    label: "pyridoxine hydrochloride"
+    label: pyridoxine hydrochloride
   concentration:
     value: '0.05'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30961
-    label: "pyridoxine hydrochloride"
+    label: pyridoxine hydrochloride
 - preferred_term: Myo-inositol
   term:
     id: CHEBI:17268
-    label: "myo-inositol"
+    label: myo-inositol
   concentration:
     value: '0.05'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17268
-    label: "myo-inositol"
+    label: myo-inositol
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -117,23 +117,23 @@ ingredients:
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
-    label: "4-aminobenzoic acid"
+    label: 4-aminobenzoic acid
   concentration:
     value: '0.05'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30753
-    label: "4-aminobenzoic acid"
+    label: 4-aminobenzoic acid
 - preferred_term: D-Biotin
   term:
     id: CHEBI:15956
-    label: "biotin"
+    label: biotin
   concentration:
     value: '0.025'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
-    label: "biotin"
+    label: biotin
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
@@ -188,33 +188,33 @@ solutions:
   - preferred_term: FeSO4 x 7 H2O
     term:
       id: CHEBI:75836
-      label: "iron(2+) sulfate heptahydrate"
+      label: iron(2+) sulfate heptahydrate
     concentration:
       value: '1'
       unit: G_PER_L
     mediaingredientmech_chebi_term:
       id: CHEBI:75836
-      label: "iron(2+) sulfate heptahydrate"
+      label: iron(2+) sulfate heptahydrate
   - preferred_term: MnCl2 x 4 H2O
     term:
       id: CHEBI:86368
-      label: "manganese(II) chloride tetrahydrate"
+      label: manganese(II) chloride tetrahydrate
     concentration:
       value: '1'
       unit: G_PER_L
     mediaingredientmech_chebi_term:
       id: CHEBI:86368
-      label: "manganese(II) chloride tetrahydrate"
+      label: manganese(II) chloride tetrahydrate
   - preferred_term: ZnSO4 x 7 H2O
     term:
       id: CHEBI:32312
-      label: "zinc sulfate heptahydrate"
+      label: zinc sulfate heptahydrate
     concentration:
       value: '1'
       unit: G_PER_L
     mediaingredientmech_chebi_term:
       id: CHEBI:32312
-      label: "zinc sulfate heptahydrate"
+      label: zinc sulfate heptahydrate
   concentration:
     value: '1'
     unit: ML_PER_L

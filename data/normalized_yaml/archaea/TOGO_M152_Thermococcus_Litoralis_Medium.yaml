@@ -71,7 +71,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 media_term:
   preferred_term: TOGO Medium M152
   term:

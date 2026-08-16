@@ -23,10 +23,10 @@ ingredients:
     unit: VARIABLE
   mediaingredientmech_chebi_term:
     id: CHEBI:26836
-    label: "sulfuric acid"
+    label: sulfuric acid
   term:
     id: CHEBI:26836
-    label: "sulfuric acid"
+    label: sulfuric acid
 applications:
 - Microbial cultivation
 curation_history:

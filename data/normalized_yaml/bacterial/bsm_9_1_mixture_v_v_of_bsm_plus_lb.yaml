@@ -71,10 +71,10 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: MgSO4 . 7H2O
   concentration:
     value: '0.25'
@@ -107,7 +107,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: FeSO4 . 7H2O
   concentration:
     value: '0.28'
@@ -116,7 +116,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: (NH4)SO4
   concentration:
     value: '2.38'
@@ -143,7 +143,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:3312
-    label: "calcium dichloride"
+    label: calcium dichloride
 - preferred_term: Agar
   concentration:
     value: '1.5'

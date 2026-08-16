@@ -11,7 +11,7 @@ ingredients:
   notes: 'CAS: 1132-61-2; MW: 209.2633; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:44115
-    label: "3-(N-morpholino)propanesulfonic acid"
+    label: 3-(N-morpholino)propanesulfonic acid
 - preferred_term: Sodium Chloride
   concentration:
     value: '43'

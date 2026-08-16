@@ -25,7 +25,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Combine 16.04 ml of 0.5 M K2HPO4 with 3.96 ml of 0.5 M KH2PO4

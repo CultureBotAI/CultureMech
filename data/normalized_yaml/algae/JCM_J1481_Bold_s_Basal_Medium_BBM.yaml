@@ -21,7 +21,7 @@ ingredients:
     label: agar
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 - preferred_term: Distilled water
   concentration:
     value: '980'
@@ -31,7 +31,7 @@ ingredients:
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 applications:
 - Microbial cultivation
 curation_history:

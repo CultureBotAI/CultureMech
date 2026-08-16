@@ -23,24 +23,24 @@ ingredients:
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 - preferred_term: Bromothymol blue
   term:
     id: CHEBI:86155
-    label: "bromothymol blue"
+    label: bromothymol blue
   concentration:
     value: '25'
     unit: MG_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86155
-    label: "bromothymol blue"
+    label: bromothymol blue
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

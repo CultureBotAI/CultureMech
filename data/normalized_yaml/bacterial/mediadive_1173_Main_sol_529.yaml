@@ -13,7 +13,7 @@ composition:
     label: Glucose
   chebi_term:
     id: CHEBI:17234
-    label: "glucose"
+    label: glucose
     confidence: 0.9
     match_type: manual_curated
 - preferred_term: K2HPO4
@@ -61,7 +61,7 @@ composition:
     label: MnSO4 x 7 H2O
   chebi_term:
     id: CHEBI:86360
-    label: "manganese(II) sulfate"
+    label: manganese(II) sulfate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: FeSO4 x 7 H2O
@@ -73,7 +73,7 @@ composition:
     label: FeSO4 x 7 H2O
   chebi_term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: CaCl2 x 2 H2O
@@ -85,7 +85,7 @@ composition:
     label: CaCl2 x 2 H2O
   chebi_term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Yeast extract
@@ -111,7 +111,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -123,7 +123,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: After sterilization add sterile 1 M Na-sesquicarbonate solution

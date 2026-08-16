@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 3 duplicates: 835.0, 1.0, 100.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: NaCl
   concentration:
     value: '21.0'
@@ -85,7 +85,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: "dinitrogen"
+    label: dinitrogen
 - preferred_term: Modified trace minerals (see below)
   concentration:
     value: '5'
@@ -193,7 +193,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:35696
-    label: "cobalt dichloride"
+    label: cobalt dichloride
 - preferred_term: CuCl2·2H2O
   concentration:
     value: '0.01'
@@ -238,7 +238,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:131395
-    label: "manganese(II) chloride dihydrate"
+    label: manganese(II) chloride dihydrate
 - preferred_term: AlCl3
   concentration:
     value: '0.01'

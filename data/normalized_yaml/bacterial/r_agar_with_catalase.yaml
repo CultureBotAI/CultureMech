@@ -15,13 +15,13 @@ ingredients:
 - preferred_term: R agar
   term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
   concentration:
     value: '1000'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: "agar"
+    label: agar
 - preferred_term: Catalase
   concentration:
     value: '0.06'

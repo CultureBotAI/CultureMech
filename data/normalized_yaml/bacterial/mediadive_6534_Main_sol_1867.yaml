@@ -49,7 +49,7 @@ composition:
     label: CaCl2 x 2 H2O
   chebi_term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: NaCl
@@ -61,7 +61,7 @@ composition:
     label: NaCl
   chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Acetate
@@ -73,7 +73,7 @@ composition:
     label: Acetate
   chebi_term:
     id: CHEBI:30089
-    label: "acetate"
+    label: acetate
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: NaNO3

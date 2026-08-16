@@ -56,7 +56,7 @@ composition:
     label: Urea
   chebi_term:
     id: CHEBI:16199
-    label: "urea"
+    label: urea
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Water

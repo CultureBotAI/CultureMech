@@ -13,46 +13,46 @@ ingredients:
   notes: 'Cross-references: KEGG:glu-L'
   term:
     id: CHEBI:16015
-    label: "L-glutamic acid"
+    label: L-glutamic acid
 - preferred_term: Alanine
   concentration:
     value: '1.1224'
     unit: MILLIMOLAR
   term:
     id: CHEBI:16977
-    label: "L-alanine"
+    label: L-alanine
 - preferred_term: Phenylalanine
   concentration:
     value: '0.6054'
     unit: MILLIMOLAR
   term:
     id: CHEBI:17295
-    label: "L-phenylalanine"
+    label: L-phenylalanine
 - preferred_term: Menadione
   term:
     id: CHEBI:28869
-    label: "menadione"
+    label: menadione
   concentration:
     value: '0.002904'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:mndn'
   mediaingredientmech_chebi_term:
     id: CHEBI:28869
-    label: "menadione"
+    label: menadione
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.9011'
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: "calcium dichloride"
+    label: calcium dichloride
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '1.1481'
     unit: MILLIMOLAR
   term:
     id: CHEBI:131527
-    label: "dipotassium hydrogen phosphate"
+    label: dipotassium hydrogen phosphate
 - preferred_term: Aspartate
   concentration:
     value: '0.7513'
@@ -60,17 +60,17 @@ ingredients:
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
   concentration:
     value: '1.7112'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: "sodium chloride"
+    label: sodium chloride
 - preferred_term: Cysteine-HCl
   term:
     id: CHEBI:91247
-    label: "L-cysteine hydrochloride"
+    label: L-cysteine hydrochloride
   concentration:
     value: '0.4758'
     unit: MILLIMOLAR
@@ -83,27 +83,27 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: "magnesium sulfate"
+    label: magnesium sulfate
   concentration:
     value: '2.8401'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: "magnesium sulfate"
+    label: magnesium sulfate
 - preferred_term: Hemin
   term:
     id: CHEBI:50385
-    label: "hemin"
+    label: hemin
   concentration:
     value: '0.007669'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:50385
-    label: "hemin"
+    label: hemin
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

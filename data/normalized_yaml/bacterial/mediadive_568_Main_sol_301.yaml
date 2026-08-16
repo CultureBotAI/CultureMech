@@ -32,7 +32,7 @@ composition:
     label: Resazurin
   chebi_term:
     id: CHEBI:8806
-    label: "Resazurin"
+    label: Resazurin
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Sterile serum

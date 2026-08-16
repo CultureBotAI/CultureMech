@@ -14,10 +14,10 @@ ingredients:
     Defined component [Merged 2 duplicates: 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: KH2PO4
   notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
     component'
@@ -29,7 +29,7 @@ ingredients:
     unit: VARIABLE
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: NH4Cl
   notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
     Inorganic compound'
@@ -47,13 +47,13 @@ ingredients:
     Inorganic compound'
   term:
     id: CHEBI:63005
-    label: "sodium nitrate"
+    label: sodium nitrate
   concentration:
     value: variable
     unit: VARIABLE
   mediaingredientmech_chebi_term:
     id: CHEBI:63005
-    label: "sodium nitrate"
+    label: sodium nitrate
 - preferred_term: Na2HPO4
   notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
     compound'

@@ -38,10 +38,10 @@ ingredients:
     Simple component [Merged 4 duplicates: 500.0, 460.0, 40.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: "water"
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: "water"
+    label: water
 - preferred_term: KH2PO4
   concentration:
     value: '1'
@@ -53,7 +53,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: "potassium dihydrogen phosphate"
+    label: potassium dihydrogen phosphate
 - preferred_term: NH4Cl
   concentration:
     value: '1'
@@ -85,7 +85,7 @@ ingredients:
   notes: 'Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:32150
-    label: "sodium thiosulfate pentahydrate"
+    label: sodium thiosulfate pentahydrate
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '7.3999999999999995'
@@ -94,7 +94,7 @@ ingredients:
     Simple component [Merged 2 duplicates: 0.1, 7.3]'
   term:
     id: CHEBI:86158
-    label: "calcium chloride dihydrate"
+    label: calcium chloride dihydrate
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '2.7'
@@ -103,7 +103,7 @@ ingredients:
     Simple component [Merged 2 duplicates: 0.2, 2.5]'
   term:
     id: CHEBI:86345
-    label: "magnesium dichloride hexahydrate"
+    label: magnesium dichloride hexahydrate
 - preferred_term: NaHCO3
   concentration:
     value: '2'
@@ -124,7 +124,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: "iron(2+) sulfate heptahydrate"
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: CoCl2・6H2O
   concentration:
     value: '0.5'
@@ -133,7 +133,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:35696
-    label: "cobalt dichloride"
+    label: cobalt dichloride
 - preferred_term: ZnSO4・7H2O
   concentration:
     value: '2.2'
@@ -142,7 +142,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:32312
-    label: "zinc sulfate heptahydrate"
+    label: zinc sulfate heptahydrate
 - preferred_term: CuSO4・5H2O
   concentration:
     value: '0.2'
@@ -151,7 +151,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:31440
-    label: "copper(II) sulfate pentahydrate"
+    label: copper(II) sulfate pentahydrate
 - preferred_term: (NH4)Mo7O24・4H2O
   concentration:
     value: '0.5'
@@ -165,7 +165,7 @@ ingredients:
   notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:64734
-    label: "EDTA disodium salt (anhydrous)"
+    label: EDTA disodium salt (anhydrous)
 - preferred_term: NaOH
   concentration:
     value: '11'
