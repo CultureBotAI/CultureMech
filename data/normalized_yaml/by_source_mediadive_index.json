@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-16T00:26:40.120861+00:00",
+  "generated": "2026-08-16T01:15:11.129057+00:00",
   "source": "MediaDive",
   "count": 3325,
   "recipes": {
@@ -14860,7 +14860,7 @@
     "CultureMech:001978": {
       "name": "desulfurobacterium_medium",
       "filename": "desulfurobacterium_medium.yaml",
-      "ingredient_count": 32,
+      "ingredient_count": 29,
       "id": "CultureMech:001978",
       "source_id": "mediadive.medium:829",
       "source": "MediaDive",
@@ -34996,7 +34996,7 @@
     "CultureMech:001980": {
       "name": "thermodesulfobacterium_hydrogeniphilum_medium",
       "filename": "thermodesulfobacterium_hydrogeniphilum_medium.yaml",
-      "ingredient_count": 32,
+      "ingredient_count": 29,
       "id": "CultureMech:001980",
       "source_id": "mediadive.medium:829b",
       "source": "MediaDive",
@@ -35009,7 +35009,7 @@
     "CultureMech:002659": {
       "name": "thermodesulfobacterium_hydrogenophilum_medium",
       "filename": "thermodesulfobacterium_hydrogenophilum_medium.yaml",
-      "ingredient_count": 42,
+      "ingredient_count": 39,
       "id": "CultureMech:002659",
       "source_id": "mediadive.medium:J301",
       "source": "MediaDive",

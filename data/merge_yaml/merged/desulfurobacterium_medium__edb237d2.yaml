@@ -114,8 +114,7 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:17418
     label: valeric acid
-- &id001
-  preferred_term: Tryptone
+- preferred_term: Tryptone
   term:
     id: MICRO:0000182
     label: tryptone
@@ -134,8 +133,7 @@ ingredients:
     synonym_type: EXACT
   - synonym_text: casein peptone
     synonym_type: EXACT
-- &id002
-  preferred_term: Yeast extract
+- preferred_term: Yeast extract
   term:
     id: FOODON:03315426
     label: yeast extract
@@ -150,8 +148,7 @@ ingredients:
   notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
     trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
     product
-- &id003
-  preferred_term: Sodium chloride
+- preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -182,9 +179,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:16135
     label: isobutyric acid
-- *id001
-- *id002
-- *id003
 - preferred_term: Caproic acid
   concentration:
     value: '2'
@@ -537,6 +531,13 @@ curation_history:
   action: MERGED_RECIPES
   notes: merged 1 source recipe(s) on fingerprint edb237d223bf336ffee92b9a4b59c5323f58d646bcb218d73335c8a1788a0ba9
   source: TOGO_M2587_Desulfurobacterium_Medium.yaml
+- timestamp: '2026-08-15T20:09:23.657587+00:00'
+  curator: dedupe_identical_ingredients.py
+  action: REMOVED_DUPLICATE_INGREDIENT_ROWS
+  notes: 'Removed 3 ingredient row(s) that were identical in every field to another
+    row in this record, which made the recipe read as double-strength in those components
+    (#263): Sodium chloride, Tryptone, Yeast extract.'
+  changes: ingredients 43 -> 40
 high_metal: true
 solutions:
 - preferred_term: Na-dithionite solution (5% w/v)

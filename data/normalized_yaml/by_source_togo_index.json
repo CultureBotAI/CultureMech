@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-16T00:26:40.144280+00:00",
+  "generated": "2026-08-16T01:15:11.152736+00:00",
   "source": "TOGO",
   "count": 2917,
   "recipes": {
@@ -12571,7 +12571,7 @@
     "CultureMech:009155": {
       "name": "desulfurobacterium_medium",
       "filename": "TOGO_M2587_Desulfurobacterium_Medium.yaml",
-      "ingredient_count": 43,
+      "ingredient_count": 40,
       "id": "CultureMech:009155",
       "source_id": "TOGO:M2587",
       "source": "TOGO",
@@ -29089,7 +29089,7 @@
     "CultureMech:009413": {
       "name": "middlebrook_7h10_plates_difco_supplemented_with_middlebrook_albumin_dextrose_catalase_and_tween_80",
       "filename": "middlebrook_7h10_plates_difco_supplemented_with_middlebrook_albumin_dextrose_catalase_and_tween_80.yaml",
-      "ingredient_count": 11,
+      "ingredient_count": 8,
       "id": "CultureMech:009413",
       "source_id": "TOGO:M2879",
       "source": "TOGO",
@@ -29101,7 +29101,7 @@
     "CultureMech:008980": {
       "name": "middlebrook_7h10_with_oadc",
       "filename": "middlebrook_7h10_with_oadc.yaml",
-      "ingredient_count": 13,
+      "ingredient_count": 10,
       "id": "CultureMech:008980",
       "source_id": "TOGO:M2399",
       "source": "TOGO",
@@ -29162,7 +29162,7 @@
     "CultureMech:008985": {
       "name": "middlebrook_7h9_broth_supplemented_with_oleic_acid_albumin_dextrose_catalase_difco",
       "filename": "middlebrook_7h9_broth_supplemented_with_oleic_acid_albumin_dextrose_catalase_difco.yaml",
-      "ingredient_count": 25,
+      "ingredient_count": 22,
       "id": "CultureMech:008985",
       "source_id": "TOGO:M2402",
       "source": "TOGO",
@@ -29186,7 +29186,7 @@
     "CultureMech:009415": {
       "name": "middlebrook_7h9_difco_liquid_medium_supplemented_with_middlebrook_albumin_dextrose_catalase_and_tween_80",
       "filename": "middlebrook_7h9_difco_liquid_medium_supplemented_with_middlebrook_albumin_dextrose_catalase_and_tween_80.yaml",
-      "ingredient_count": 11,
+      "ingredient_count": 8,
       "id": "CultureMech:009415",
       "source_id": "TOGO:M2880",
       "source": "TOGO",
@@ -32792,7 +32792,7 @@
     "CultureMech:008987": {
       "name": "supplemented_middlebrook",
       "filename": "supplemented_middlebrook.yaml",
-      "ingredient_count": 26,
+      "ingredient_count": 23,
       "id": "CultureMech:008987",
       "source_id": "TOGO:M2404",
       "source": "TOGO",

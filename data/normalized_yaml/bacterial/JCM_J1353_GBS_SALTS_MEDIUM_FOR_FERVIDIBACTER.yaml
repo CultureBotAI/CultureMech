@@ -187,16 +187,6 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
     label: H3BO3
-- preferred_term: Distilled water
-  concentration:
-    value: '1.0'
-    unit: ML_PER_L
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Trace vitamins (see Medium No. 197 )
   concentration:
     value: '1.0'
@@ -239,16 +229,6 @@ ingredients:
   concentration:
     value: '0.82'
     unit: MG_PER_L
-- preferred_term: Distilled water
-  concentration:
-    value: '1.0'
-    unit: ML_PER_L
-  term:
-    id: CHEBI:15377
-    label: water
-  mediaingredientmech_chebi_term:
-    id: CHEBI:15377
-    label: Distilled water
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -282,3 +262,10 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-08-15T20:07:34.008346+00:00'
+  curator: dedupe_identical_ingredients.py
+  action: REMOVED_DUPLICATE_INGREDIENT_ROWS
+  notes: 'Removed 2 ingredient row(s) that were identical in every field to another
+    row in this record, which made the recipe read as double-strength in those components
+    (#263): Distilled water.'
+  changes: ingredients 29 -> 27
