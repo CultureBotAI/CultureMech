@@ -9,11 +9,11 @@ composition:
     value: '4.4'
     unit: G_PER_L
   term:
-    id: CHEBI:64734
-    label: EDTA disodium salt (anhydrous)
+    id: CHEBI:64758
+    label: EDTA disodium salt dihydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:64734
-    label: EDTA disodium salt (anhydrous)
+    id: CHEBI:64758
+    label: EDTA disodium salt dihydrate
 - preferred_term: Magnesium sulfate heptahydrate
   concentration:
     value: '10.0'

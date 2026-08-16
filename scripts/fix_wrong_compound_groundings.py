@@ -153,6 +153,10 @@ CORRECTIONS: dict[tuple[str, str], tuple[str, str]] = {
     ("CHEBI:64734", "Na2-EDTA x 2 H2O"): ("CHEBI:64758", "EDTA disodium salt dihydrate"),
     ("CHEBI:64734", "Na-EDTA x 2 H2O"): ("CHEBI:64758", "EDTA disodium salt dihydrate"),
     ("CHEBI:64734", "Na2-EDTA\u00b72H2O"): ("CHEBI:64758", "EDTA disodium salt dihydrate"),
+    # Found by the standing hydration check added for #278 -- it lives in a solution
+    # record's top-level `composition:`, which the one-off scan for #275 never reached.
+    ("CHEBI:64734", "Disodium EDTA dihydrate"): (
+        "CHEBI:64758", "EDTA disodium salt dihydrate"),
     ("CHEBI:87014", "VOSO4 x 2 H2O"): ("CHEBI:87009", "vanadyl sulfate dihydrate"),
     ("CHEBI:75215", "Na2MoO4 \u00b7 2H2O"): ("CHEBI:75213", "sodium molybdate dihydrate"),
     ("CHEBI:75215", "Na2MoO4 x 2H2O"): ("CHEBI:75213", "sodium molybdate dihydrate"),
