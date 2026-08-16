@@ -68,7 +68,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: (NH4)2SO4
   concentration:
     value: '3'

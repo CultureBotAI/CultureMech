@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: K2HPO4
   concentration:
     value: '0.5'
@@ -82,7 +82,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: "calcium chloride dihydrate"
 - preferred_term: Na2MoO4・2H2O
   concentration:
     value: '5'
@@ -100,7 +100,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:35696
-    label: ''
+    label: "cobalt dichloride"
 - preferred_term: ZnSO4・7H2O
   concentration:
     value: '0.01'
@@ -109,7 +109,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:32312
-    label: ''
+    label: "zinc sulfate heptahydrate"
 - preferred_term: CuSO4・5H2O
   concentration:
     value: '0.01'
@@ -118,7 +118,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:31440
-    label: ''
+    label: "copper(II) sulfate pentahydrate"
 - preferred_term: MnSO4・xH2O
   concentration:
     value: '0.2'
@@ -127,7 +127,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:86360
-    label: ''
+    label: "manganese(II) sulfate"
 - preferred_term: EDTA・Fe(III)
   concentration:
     value: '0.5'

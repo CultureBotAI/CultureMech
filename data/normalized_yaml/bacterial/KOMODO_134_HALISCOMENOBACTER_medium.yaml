@@ -37,7 +37,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -47,67 +47,67 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: "dipotassium hydrogen phosphate"
 - preferred_term: Na2HPO4 x 2 H2O
   term:
     id: CHEBI:34683
-    label: Na2HPO4 x 2 H2O
+    label: "disodium hydrogenphosphate"
   concentration:
     value: '0.04'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34683
-    label: Na2HPO4 x 2 H2O
+    label: "disodium hydrogenphosphate"
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: "calcium chloride dihydrate"
   concentration:
     value: '0.05'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: "calcium chloride dihydrate"
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: "magnesium sulfate heptahydrate"
   concentration:
     value: '0.075'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: "magnesium sulfate heptahydrate"
 - preferred_term: FeCl3 x 6 H2O
   term:
     id: CHEBI:86254
-    label: FeCl3 x 6 H2O
+    label: "iron trichloride hexahydrate"
   concentration:
     value: '0.005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86254
-    label: FeCl3 x 6 H2O
+    label: "iron trichloride hexahydrate"
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
-    label: MnSO4 x H2O
+    label: "manganese(II) sulfate monohydrate"
   concentration:
     value: '0.003'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
-    label: MnSO4 x H2O
+    label: "manganese(II) sulfate monohydrate"
 - preferred_term: Glutamic acid
   term:
     id: CHEBI:18237
-    label: Glutamic acid
+    label: "glutamic acid"
   concentration:
     value: '1.31'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:18237
-    label: Glutamic acid
+    label: "glutamic acid"
 - preferred_term: Pancreatic digest of casein
   term:
     id: MICRO:0000182
@@ -132,7 +132,7 @@ ingredients:
 - preferred_term: Peptic digest of soybean meal
   term:
     id: FOODON:03315720
-    label: soy peptone
+    label: "vegetable protein, hydrolyzed"
   concentration:
     value: '3.0'
     unit: G_PER_L
@@ -153,7 +153,7 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: D-glucose
+    label: "glucose"
   concentration:
     value: '2.5'
     unit: G_PER_L
@@ -226,53 +226,53 @@ ingredients:
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
     id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
+    label: "thiamine hydrochloride dihydrate"
   concentration:
     value: '0.0004'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
+    label: "thiamine hydrochloride dihydrate"
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
-    label: Vitamin B12
+    label: "cyanocob(III)alamin"
   concentration:
     value: 1e-05
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17439
-    label: Vitamin B12
+    label: "cyanocob(III)alamin"
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
   concentration:
     value: '2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
+    label: "zinc sulfate heptahydrate"
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
+    label: "zinc sulfate heptahydrate"
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
-    label: MnCl2 x 4 H2O
+    label: "manganese(II) chloride tetrahydrate"
   concentration:
     value: '0.03'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
-    label: MnCl2 x 4 H2O
+    label: "manganese(II) chloride tetrahydrate"
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -282,47 +282,47 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: H3BO3
+    label: "boric acid"
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
-    label: CoCl2 x 6 H2O
+    label: "cobalt dichloride"
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:35696
-    label: CoCl2 x 6 H2O
+    label: "cobalt dichloride"
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
-    label: CuCl2 x 2 H2O
+    label: "copper(II) chloride dihydrate"
   concentration:
     value: '0.01'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86318
-    label: CuCl2 x 2 H2O
+    label: "copper(II) chloride dihydrate"
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
-    label: NiCl2 x 6 H2O
+    label: "nickel dichloride"
   concentration:
     value: '0.02'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34887
-    label: NiCl2 x 6 H2O
+    label: "nickel dichloride"
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
+    label: "sodium molybdate dihydrate"
   concentration:
     value: '0.03'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
+    label: "sodium molybdate dihydrate"
 applications:
 - Microbial cultivation
 curation_history:

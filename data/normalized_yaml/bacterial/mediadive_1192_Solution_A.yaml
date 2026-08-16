@@ -13,7 +13,7 @@ composition:
     label: Na-malate
   chebi_term:
     id: CHEBI:91261
-    label: Na-malate
+    label: "disodium (S)-malate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: H2O

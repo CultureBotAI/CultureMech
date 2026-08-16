@@ -9,82 +9,82 @@ ingredients:
 - preferred_term: D-Galactose
   term:
     id: CHEBI:12936
-    label: D-Galactose
+    label: "D-galactose"
   concentration:
     value: '10.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gal'
   mediaingredientmech_chebi_term:
     id: CHEBI:12936
-    label: D-Galactose
+    label: "D-galactose"
 - preferred_term: Ethylene glycol
   term:
     id: CHEBI:30742
-    label: Ethylene glycol
+    label: "ethylene glycol"
   concentration:
     value: '80.5542'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:30742
-    label: Ethylene glycol
+    label: "ethylene glycol"
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.00901024'
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: ''
+    label: "calcium dichloride"
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '0.015'
     unit: MILLIMOLAR
   term:
     id: CHEBI:131527
-    label: ''
+    label: "dipotassium hydrogen phosphate"
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: "magnesium sulfate"
   concentration:
     value: '2.43437'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: "magnesium sulfate"
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.00359648'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75832
-    label: ''
+    label: "iron(2+) sulfate (anhydrous)"
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
-    label: Zinc Sulfate
+    label: "zinc sulfate"
   concentration:
     value: '0.0034779'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:35176
-    label: Zinc Sulfate
+    label: "zinc sulfate"
 - preferred_term: Manganese chloride
   concentration:
     value: '0.0044829'
     unit: MILLIMOLAR
   term:
     id: CHEBI:63041
-    label: ''
+    label: "manganese(II) chloride"
 - preferred_term: Ammonium nitrate
   term:
     id: CHEBI:63038
-    label: Ammonium nitrate
+    label: "ammonium nitrate"
   concentration:
     value: '24.9838'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:63038
-    label: Ammonium nitrate
+    label: "ammonium nitrate"
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

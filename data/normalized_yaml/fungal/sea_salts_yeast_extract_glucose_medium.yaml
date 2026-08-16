@@ -26,7 +26,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -36,7 +36,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: "dipotassium hydrogen phosphate"
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -46,7 +46,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: "ammonium chloride"
 - preferred_term: Yeast extract
   concentration:
     value: '2'
@@ -54,33 +54,33 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
   concentration:
     value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    label: "L-cysteine hydrochloride hydrate"
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    label: "L-cysteine hydrochloride hydrate"
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
-    label: NaHCO3
+    label: "sodium hydrogencarbonate"
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: NaHCO3
+    label: "sodium hydrogencarbonate"
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806

@@ -24,24 +24,24 @@ ingredients:
 - preferred_term: Fructose
   term:
     id: CHEBI:28757
-    label: Fructose
+    label: "fructose"
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:28757
-    label: Fructose
+    label: "fructose"
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
   concentration:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
 preparation_steps:
 - step_number: 1
   action: MIX

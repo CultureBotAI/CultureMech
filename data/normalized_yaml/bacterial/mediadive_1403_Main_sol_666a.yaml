@@ -25,7 +25,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: NaCl
@@ -37,7 +37,7 @@ composition:
     label: NaCl
   chebi_term:
     id: CHEBI:26710
-    label: 1% sodium chloride
+    label: "sodium chloride"
     confidence: 1.0
     match_type: exact_match
 - preferred_term: (NH4)2SO4
@@ -61,7 +61,7 @@ composition:
     label: CaCl2 x 2 H2O
   chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: "calcium chloride dihydrate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: MgSO4 x 7 H2O
@@ -85,7 +85,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Indigocarmine
@@ -97,7 +97,7 @@ composition:
     label: Indigocarmine
   chebi_term:
     id: CHEBI:31695
-    label: Indigocarmine
+    label: "indigo carmine"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: NaHCO3
@@ -121,7 +121,7 @@ composition:
     label: Cellobiose
   chebi_term:
     id: CHEBI:17057
-    label: Cellobiose
+    label: "cellobiose"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Yeast extract
@@ -140,7 +140,7 @@ composition:
     label: L-Cysteine HCl x H2O
   chebi_term:
     id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    label: "L-cysteine hydrochloride hydrate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: DL-Dithiothreitol
@@ -164,7 +164,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Dissolve ingredients (except bicarbonate, cellobiose, yeast extract,

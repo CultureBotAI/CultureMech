@@ -20,13 +20,13 @@ ingredients:
 - preferred_term: L-Cysteine
   term:
     id: CHEBI:17561
-    label: L-Cysteine
+    label: "L-cysteine"
   concentration:
     value: '0.3'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17561
-    label: L-Cysteine
+    label: "L-cysteine"
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806

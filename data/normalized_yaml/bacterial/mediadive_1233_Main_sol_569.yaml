@@ -13,7 +13,7 @@ composition:
     label: Methanol
   chebi_term:
     id: CHEBI:17790
-    label: Methanol
+    label: "methanol"
     confidence: 0.9
     match_type: corpus_consensus
 preparation_notes: To 1 l of medium 125 pH adjusted to 4.0-5.4 add 10 ml CH3OH.

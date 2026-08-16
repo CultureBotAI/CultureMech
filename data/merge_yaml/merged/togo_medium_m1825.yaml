@@ -14,10 +14,10 @@ ingredients:
     Inorganic compound'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -43,7 +43,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:75836
-    label: ''
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: KCl
   concentration:
     value: '2'

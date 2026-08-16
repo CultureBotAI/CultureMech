@@ -41,7 +41,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: K2HPO4
   concentration:
     value: '0.1'
@@ -74,10 +74,10 @@ ingredients:
     compound'
   term:
     id: CHEBI:16454
-    label: Pantothenate
+    label: "pantothenate"
   mediaingredientmech_chebi_term:
     id: CHEBI:16454
-    label: Pantothenate
+    label: "pantothenate"
 - preferred_term: Glucose
   concentration:
     value: '2'
@@ -95,13 +95,13 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   concentration:
     value: variable
     unit: VARIABLE
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 media_term:
   preferred_term: TOGO Medium M2902
   term:

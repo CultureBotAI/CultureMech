@@ -25,7 +25,7 @@ composition:
     label: L-Arginine
   chebi_term:
     id: CHEBI:16467
-    label: L-Arginine
+    label: "L-arginine"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Asparagine
@@ -37,7 +37,7 @@ composition:
     label: L-Asparagine
   chebi_term:
     id: CHEBI:17196
-    label: L-Asparagine
+    label: "L-asparagine"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Aspartic acid
@@ -73,7 +73,7 @@ composition:
     label: L-Glutamic acid
   chebi_term:
     id: CHEBI:16015
-    label: L-Glutamic acid
+    label: "L-glutamic acid"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Glutamine
@@ -85,7 +85,7 @@ composition:
     label: L-Glutamine
   chebi_term:
     id: CHEBI:18050
-    label: L-Glutamine
+    label: "L-glutamine"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Glycine
@@ -109,7 +109,7 @@ composition:
     label: L-Histidine
   chebi_term:
     id: CHEBI:15971
-    label: L-Histidine
+    label: "L-histidine"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Isoleucine
@@ -121,7 +121,7 @@ composition:
     label: L-Isoleucine
   chebi_term:
     id: CHEBI:17191
-    label: L-Isoleucine
+    label: "L-isoleucine"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Leucine
@@ -133,7 +133,7 @@ composition:
     label: L-Leucine
   chebi_term:
     id: CHEBI:15603
-    label: L-Leucine
+    label: "L-leucine"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Lysine
@@ -145,7 +145,7 @@ composition:
     label: L-Lysine
   chebi_term:
     id: CHEBI:18019
-    label: L-Lysine
+    label: "L-lysine"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Methionine
@@ -157,7 +157,7 @@ composition:
     label: L-Methionine
   chebi_term:
     id: CHEBI:16643
-    label: L-Methionine
+    label: "L-methionine"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Phenylalanine
@@ -169,7 +169,7 @@ composition:
     label: L-Phenylalanine
   chebi_term:
     id: CHEBI:17295
-    label: L-Phenylalanine
+    label: "L-phenylalanine"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Proline
@@ -181,7 +181,7 @@ composition:
     label: L-Proline
   chebi_term:
     id: CHEBI:17203
-    label: L-Proline
+    label: "L-proline"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Serine
@@ -193,7 +193,7 @@ composition:
     label: L-Serine
   chebi_term:
     id: CHEBI:17115
-    label: L-Serine
+    label: "L-serine"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Threonine
@@ -205,7 +205,7 @@ composition:
     label: L-Threonine
   chebi_term:
     id: CHEBI:16857
-    label: L-Threonine
+    label: "L-threonine"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Tryptophan
@@ -217,7 +217,7 @@ composition:
     label: L-Tryptophan
   chebi_term:
     id: CHEBI:16828
-    label: L-Tryptophan
+    label: "L-tryptophan"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Tyrosine
@@ -229,7 +229,7 @@ composition:
     label: L-Tyrosine
   chebi_term:
     id: CHEBI:17895
-    label: L-Tyrosine
+    label: "L-tyrosine"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Valine
@@ -241,7 +241,7 @@ composition:
     label: L-Valine
   chebi_term:
     id: CHEBI:16414
-    label: L-Valine
+    label: "L-valine"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -253,7 +253,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Original volume: 400 mL'

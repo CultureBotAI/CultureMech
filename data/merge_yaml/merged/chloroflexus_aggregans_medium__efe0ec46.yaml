@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 3 duplicates: 1050.0, 100.0, 100.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.1'
@@ -62,10 +62,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63005
-    label: ''
+    label: "sodium nitrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:63005
-    label: NaNO3
+    label: "sodium nitrate"
 - preferred_term: KNO3
   concentration:
     value: '0.1'
@@ -98,10 +98,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:17201
-    label: Glycyl-glycine
+    label: "glycylglycine"
   mediaingredientmech_chebi_term:
     id: CHEBI:17201
-    label: Glycyl-glycine
+    label: "glycylglycine"
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '1'
@@ -114,7 +114,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: "dinitrogen"
 - preferred_term: Na2S·9H2O
   concentration:
     value: '3'
@@ -173,10 +173,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:30961
-    label: Pyridoxine-HCl
+    label: "pyridoxine hydrochloride"
   mediaingredientmech_chebi_term:
     id: CHEBI:30961
-    label: Pyridoxine-HCl
+    label: "pyridoxine hydrochloride"
 - preferred_term: Folic acid
   concentration:
     value: '50'
@@ -217,7 +217,7 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:132751
-    label: ''
+    label: "thiamine hydrochloride dihydrate"
 - preferred_term: Na3-EDTA
   concentration:
     value: '200'

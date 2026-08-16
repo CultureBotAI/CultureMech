@@ -9,23 +9,23 @@ ingredients:
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
-    label: Sodium Chloride
+    label: "sodium chloride"
   concentration:
     value: '308.0'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: Sodium Chloride
+    label: "sodium chloride"
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: "magnesium sulfate"
   concentration:
     value: '20.3'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: "magnesium sulfate"
 - preferred_term: Potassium chloride
   concentration:
     value: '8.05'
@@ -42,51 +42,51 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: ''
+    label: "calcium dichloride"
 - preferred_term: Sodium nitrate
   term:
     id: CHEBI:63005
-    label: Sodium nitrate
+    label: "sodium nitrate"
   concentration:
     value: '0.588'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:63005
-    label: Sodium nitrate
+    label: "sodium nitrate"
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '0.0287'
     unit: MILLIMOLAR
   term:
     id: CHEBI:131527
-    label: ''
+    label: "dipotassium hydrogen phosphate"
 - preferred_term: Tromethamine
   concentration:
     value: '8.25'
     unit: MILLIMOLAR
   term:
     id: CHEBI:9754
-    label: ''
+    label: "tris"
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
-    label: Vitamin B12
+    label: "cyanocob(III)alamin"
   concentration:
     value: '1.48e-06'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:17439
-    label: Vitamin B12
+    label: "cyanocob(III)alamin"
 - preferred_term: EDTA
   term:
     id: CHEBI:64755
-    label: EDTA
+    label: "EDTA(2-)"
   concentration:
     value: '0.131'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:64755
-    label: EDTA
+    label: "EDTA(2-)"
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.00493'
@@ -97,48 +97,48 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:49976
-    label: ''
+    label: "zinc dichloride"
 - preferred_term: Manganese chloride
   concentration:
     value: '9.54e-06'
     unit: MILLIMOLAR
   term:
     id: CHEBI:63041
-    label: ''
+    label: "manganese(II) chloride"
 - preferred_term: Cobalt chloride
   concentration:
     value: '2.31e-05'
     unit: MILLIMOLAR
   term:
     id: CHEBI:35696
-    label: ''
+    label: "cobalt dichloride"
 - preferred_term: Cupric chloride
   concentration:
     value: '8.93e-06'
     unit: MILLIMOLAR
   term:
     id: CHEBI:49553
-    label: ''
+    label: "copper(II) chloride"
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
-    label: Boric acid
+    label: "boric acid"
   concentration:
     value: '9.7e-05'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: Boric acid
+    label: "boric acid"
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
-    label: Thiamine HCl
+    label: "thiamine hydrochloride"
   concentration:
     value: '0.00166'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:49105
-    label: Thiamine HCl
+    label: "thiamine hydrochloride"
 - preferred_term: Nicotinate
   concentration:
     value: '0.000812'
@@ -146,7 +146,7 @@ ingredients:
   notes: 'Cross-references: KEGG:nac'
   term:
     id: CHEBI:15940
-    label: ''
+    label: "nicotinic acid"
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -171,14 +171,14 @@ ingredients:
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
-    label: Biotin
+    label: "biotin"
   concentration:
     value: '4.09e-06'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
-    label: Biotin
+    label: "biotin"
 - preferred_term: L-Inositol
   concentration:
     value: '0.0278'
@@ -190,28 +190,28 @@ ingredients:
   notes: 'Cross-references: KEGG:fol'
   term:
     id: CHEBI:27470
-    label: ''
+    label: "folic acid"
 - preferred_term: Thymine
   term:
     id: CHEBI:17821
-    label: Thymine
+    label: "thymine"
   concentration:
     value: '0.0238'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:thym'
   mediaingredientmech_chebi_term:
     id: CHEBI:17821
-    label: Thymine
+    label: "thymine"
 - preferred_term: sodium silicate
   term:
     id: CHEBI:60720
-    label: Sodium silicate
+    label: "sodium silicate"
   concentration:
     value: '1.23'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:60720
-    label: Sodium silicate
+    label: "sodium silicate"
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

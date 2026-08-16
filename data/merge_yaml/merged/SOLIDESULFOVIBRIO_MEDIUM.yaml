@@ -22,7 +22,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: NH4Cl
   concentration:
     value: '0.06'
@@ -32,7 +32,7 @@ ingredients:
     label: ammonium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: "ammonium chloride"
 - preferred_term: Fe(III)·EDTA
   concentration:
     value: '1.0'
@@ -42,7 +42,7 @@ ingredients:
     label: ethylenediaminetetraacetatoferrate(1-)
   mediaingredientmech_chebi_term:
     id: CHEBI:30729
-    label: Fe(III)-EDTA
+    label: "ethylenediaminetetraacetatoferrate(1-)"
 - preferred_term: Modified Wolfe’s mineral solution (see Medium No. 915 )
   concentration:
     value: '4.0'
@@ -56,7 +56,7 @@ ingredients:
     label: disodium fumarate
   mediaingredientmech_chebi_term:
     id: CHEBI:115156
-    label: Na2-fumarate
+    label: "disodium fumarate"
 - preferred_term: Sodium pyruvate
   concentration:
     value: '0.44'
@@ -66,7 +66,7 @@ ingredients:
     label: sodium pyruvate
   mediaingredientmech_chebi_term:
     id: CHEBI:50144
-    label: Na-pyruvate
+    label: "sodium pyruvate"
 - preferred_term: Distilled water
   concentration:
     value: '985.0'
@@ -76,7 +76,7 @@ ingredients:
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: Vitamin solution* (see Medium No. 915 )
   concentration:
     value: '10.0'

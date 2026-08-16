@@ -26,24 +26,24 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
   concentration:
     value: '4'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
   notes: Copied from referenced JCM Medium 43
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
   concentration:
     value: '20'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
   notes: Copied from referenced JCM Medium 43
 preparation_steps:
 - step_number: 1

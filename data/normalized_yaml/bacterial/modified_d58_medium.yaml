@@ -13,7 +13,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: "carbon dioxide"
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -21,7 +21,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: "dinitrogen"
 - preferred_term: Distilled water
   concentration:
     value: '1000.0'
@@ -30,10 +30,10 @@ ingredients:
     Simple component [Merged 5 duplicates: 440.0, 200.0, 300.0, 50.0, 10.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: Yeast extract
   concentration:
     value: '4.5'
@@ -50,7 +50,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -71,7 +71,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: ''
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: (NH4)2SO4
   concentration:
     value: '1.3'

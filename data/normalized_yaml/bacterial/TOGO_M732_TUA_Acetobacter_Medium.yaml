@@ -14,10 +14,10 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: D--Glucose
   concentration:
     value: '10'
@@ -32,10 +32,10 @@ ingredients:
     component'
   term:
     id: CHEBI:17754
-    label: Glycerol
+    label: "glycerol"
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: Glycerol
+    label: "glycerol"
 - preferred_term: Ethanol
   concentration:
     value: '10'

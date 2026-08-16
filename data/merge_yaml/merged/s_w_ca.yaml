@@ -22,13 +22,13 @@ ingredients:
 - preferred_term: CaCO3
   term:
     id: CHEBI:3311
-    label: CaCO3
+    label: "calcium carbonate"
   concentration:
     value: '0.01'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:3311
-    label: CaCO3
+    label: "calcium carbonate"
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

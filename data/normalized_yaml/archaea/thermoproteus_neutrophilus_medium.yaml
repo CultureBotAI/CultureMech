@@ -16,13 +16,13 @@ ingredients:
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
-    label: NaHCO3
+    label: "sodium hydrogencarbonate"
   concentration:
     value: '0.85'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: NaHCO3
+    label: "sodium hydrogencarbonate"
 - preferred_term: Yeast extract
   concentration:
     value: '0.2'
@@ -30,23 +30,23 @@ ingredients:
 - preferred_term: Sodium dithionite
   term:
     id: CHEBI:66870
-    label: Sodium dithionite
+    label: "sodium dithionite"
   concentration:
     value: '0.025'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:66870
-    label: Sodium dithionite
+    label: "sodium dithionite"
 - preferred_term: Sulfur
   term:
     id: CHEBI:26833
-    label: Sulfur
+    label: "sulfur atom"
   concentration:
     value: '8'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26833
-    label: Sulfur
+    label: "sulfur atom"
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -66,7 +66,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: "ammonium sulfate"
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -76,94 +76,94 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: "magnesium sulfate heptahydrate"
   concentration:
     value: '0.25'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: "magnesium sulfate heptahydrate"
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: "calcium chloride dihydrate"
   concentration:
     value: '0.07'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: "calcium chloride dihydrate"
 - preferred_term: FeCl3 x 6 H2O
   term:
     id: CHEBI:86254
-    label: FeCl3 x 6 H2O
+    label: "iron trichloride hexahydrate"
   concentration:
     value: '0.002'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86254
-    label: FeCl3 x 6 H2O
+    label: "iron trichloride hexahydrate"
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
-    label: MnCl2 x 4 H2O
+    label: "manganese(II) chloride tetrahydrate"
   concentration:
     value: '0.0018'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
-    label: MnCl2 x 4 H2O
+    label: "manganese(II) chloride tetrahydrate"
 - preferred_term: Na2B4O7 x 10 H2O
   concentration:
     value: '0.0045'
     unit: G_PER_L
   term:
     id: CHEBI:131366
-    label: ''
+    label: "disodium tetraborate decahydrate"
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
+    label: "zinc sulfate heptahydrate"
   concentration:
     value: '0.00022'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
+    label: "zinc sulfate heptahydrate"
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
-    label: CuCl2 x 2 H2O
+    label: "copper(II) chloride dihydrate"
   concentration:
     value: 5e-05
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86318
-    label: CuCl2 x 2 H2O
+    label: "copper(II) chloride dihydrate"
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
+    label: "sodium molybdate dihydrate"
   concentration:
     value: 3e-05
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
+    label: "sodium molybdate dihydrate"
 - preferred_term: VOSO4 x n H2O
   term:
     id: CHEBI:87020
-    label: VOSO4 x n H2O
+    label: "vanadyl sulfate hydrate"
   concentration:
     value: 3e-05
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:87020
-    label: VOSO4 x n H2O
+    label: "vanadyl sulfate hydrate"
 - preferred_term: CoSO4 x 7 H2O
   term:
     id: CHEBI:91244

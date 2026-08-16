@@ -20,7 +20,7 @@ composition:
     label: Na-acetate
   chebi_term:
     id: CHEBI:32954
-    label: Na-acetate
+    label: "sodium acetate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Vitamin B12

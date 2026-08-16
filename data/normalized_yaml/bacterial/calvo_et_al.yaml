@@ -9,58 +9,58 @@ ingredients:
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
-    label: D-Glucose
+    label: "D-glucose"
   concentration:
     value: '11.1012'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
   mediaingredientmech_chebi_term:
     id: CHEBI:17634
-    label: D-Glucose
+    label: "D-glucose"
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '60.2755'
     unit: MILLIMOLAR
   term:
     id: CHEBI:131527
-    label: ''
+    label: "dipotassium hydrogen phosphate"
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '31.5976'
     unit: MILLIMOLAR
   term:
     id: CHEBI:63036
-    label: ''
+    label: "potassium dihydrogen phosphate"
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: "magnesium sulfate"
   concentration:
     value: '0.405729'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: "magnesium sulfate"
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
-    label: Ammonium Sulfate
+    label: "ammonium sulfate"
   concentration:
     value: '7.56773'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: Ammonium Sulfate
+    label: "ammonium sulfate"
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258
-    label: Sodium citrate
+    label: "sodium citrate"
   concentration:
     value: '1.50583'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:53258
-    label: Sodium citrate
+    label: "sodium citrate"
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

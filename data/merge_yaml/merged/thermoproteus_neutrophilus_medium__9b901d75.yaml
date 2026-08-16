@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.25'
@@ -53,7 +53,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: Na2MoO4·2H2O
   concentration:
     value: '0.03'
@@ -98,7 +98,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86368
-    label: ''
+    label: "manganese(II) chloride tetrahydrate"
 - preferred_term: ZnSO4·7H2O
   concentration:
     value: '0.22'
@@ -188,7 +188,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:131366
-    label: ''
+    label: "disodium tetraborate decahydrate"
 - preferred_term: Bacto Yeast Extract (Difco)
   concentration:
     value: '0.2'
@@ -201,10 +201,10 @@ ingredients:
   notes: 'Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:66870
-    label: Na2S2O4
+    label: "sodium dithionite"
   mediaingredientmech_chebi_term:
     id: CHEBI:66870
-    label: Na2S2O4
+    label: "sodium dithionite"
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -212,7 +212,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: "carbon dioxide"
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
@@ -220,7 +220,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: "dinitrogen"
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -228,7 +228,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: ''
+    label: "dihydrogen"
 media_term:
   preferred_term: TOGO Medium M1633
   term:

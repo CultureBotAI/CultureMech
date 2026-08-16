@@ -26,7 +26,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: "calcium chloride dihydrate"
 - preferred_term: Na2CO3
   concentration:
     value: '0.02'
@@ -47,10 +47,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63005
-    label: ''
+    label: "sodium nitrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:63005
-    label: NaNO3
+    label: "sodium nitrate"
 - preferred_term: K2HPO4.3H2O
   concentration:
     value: '0.04'
@@ -102,10 +102,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: Na2MoO4.2H2O
   concentration:
     value: '0.39'

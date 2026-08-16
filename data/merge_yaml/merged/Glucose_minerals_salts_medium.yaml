@@ -16,7 +16,7 @@ ingredients:
 - preferred_term: NaNO3
   term:
     id: CHEBI:63005
-    label: NaNO3
+    label: "sodium nitrate"
   concentration:
     value: '2'
     unit: G_PER_L
@@ -32,68 +32,68 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: "dipotassium hydrogen phosphate"
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: "magnesium sulfate heptahydrate"
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: "magnesium sulfate heptahydrate"
 - preferred_term: MnSO4 x 5 H2O
   term:
     id: CHEBI:131524
-    label: MnSO4 x 5 H2O
+    label: "manganese(II) sulfate pentahydrate"
   concentration:
     value: '0.02'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131524
-    label: MnSO4 x 5 H2O
+    label: "manganese(II) sulfate pentahydrate"
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: "iron(2+) sulfate heptahydrate"
   concentration:
     value: '0.02'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: CaCl2 x 7 H2O
   term:
     id: CHEBI:3312
-    label: CaCl2 x 7 H2O
+    label: "calcium dichloride"
   concentration:
     value: '0.02'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:3312
-    label: CaCl2 x 7 H2O
+    label: "calcium dichloride"
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
   concentration:
     value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
   concentration:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

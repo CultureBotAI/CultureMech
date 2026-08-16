@@ -13,7 +13,7 @@ composition:
     label: L-Histidin
   chebi_term:
     id: CHEBI:15971
-    label: L-Histidin
+    label: "L-histidine"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Serin
@@ -25,7 +25,7 @@ composition:
     label: L-Serin
   chebi_term:
     id: CHEBI:17115
-    label: L-Serin
+    label: "L-serine"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: L-Glutamine
@@ -37,7 +37,7 @@ composition:
     label: L-Glutamine
   chebi_term:
     id: CHEBI:18050
-    label: L-Glutamine
+    label: "L-glutamine"
     confidence: 0.9
     match_type: corpus_consensus
 preparation_notes: "Amino acid solution per 50 ml: \n\nOriginal volume: 50 mL"

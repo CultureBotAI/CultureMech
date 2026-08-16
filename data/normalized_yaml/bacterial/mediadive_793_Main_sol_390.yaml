@@ -25,7 +25,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: MgSO4 x 7 H2O
@@ -49,7 +49,7 @@ composition:
     label: CaCl2 x 2 H2O
   chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: "calcium chloride dihydrate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: FeCl3 x 6 H2O
@@ -61,7 +61,7 @@ composition:
     label: FeCl3 x 6 H2O
   chebi_term:
     id: CHEBI:86254
-    label: FeCl3 x 6 H2O
+    label: "iron trichloride hexahydrate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Sodium resazurin
@@ -99,7 +99,7 @@ composition:
     label: Na2S2O3 x 5 H2O
   chebi_term:
     id: CHEBI:32150
-    label: Na2S2O3 x 5 H2O
+    label: "sodium thiosulfate pentahydrate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na2S x 9 H2O
@@ -111,7 +111,7 @@ composition:
     label: Na2S x 9 H2O
   chebi_term:
     id: CHEBI:76209
-    label: Na2S x 9 H2O
+    label: "sodium sulfide nonahydrate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -123,7 +123,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Dissolve ingredients (except Trypticase peptone, yeast extract,

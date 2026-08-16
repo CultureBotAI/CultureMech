@@ -24,27 +24,27 @@ ingredients:
 - preferred_term: Sodium tartrate
   term:
     id: CHEBI:63017
-    label: Sodium tartrate
+    label: "sodium L-tartrate"
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63017
-    label: Sodium tartrate
+    label: "sodium L-tartrate"
 - preferred_term: Trisodium citrate
   term:
     id: CHEBI:53258
-    label: Trisodium citrate
+    label: "sodium citrate"
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:53258
-    label: Trisodium citrate
+    label: "sodium citrate"
 - preferred_term: NaNO3
   term:
     id: CHEBI:63005
-    label: NaNO3
+    label: "sodium nitrate"
   concentration:
     value: '0.25'
     unit: G_PER_L
@@ -60,17 +60,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: "ammonium sulfate"
 - preferred_term: Ferric citrate
   term:
     id: CHEBI:144421
-    label: Ferric citrate
+    label: "iron(III) citrate"
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:144421
-    label: Ferric citrate
+    label: "iron(III) citrate"
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
@@ -80,17 +80,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32149
-    label: Na2SO4
+    label: "sodium sulfate"
 - preferred_term: Na2S2O3 x 5 H2O
   term:
     id: CHEBI:32150
-    label: Na2S2O3 x 5 H2O
+    label: "sodium thiosulfate pentahydrate"
   concentration:
     value: '2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32150
-    label: Na2S2O3 x 5 H2O
+    label: "sodium thiosulfate pentahydrate"
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -100,17 +100,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: "sodium carbonate"
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
   concentration:
     value: '29.703'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -120,77 +120,77 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: "dipotassium hydrogen phosphate"
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: "calcium chloride dihydrate"
   concentration:
     value: '0.138614'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: "calcium chloride dihydrate"
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: "magnesium sulfate heptahydrate"
   concentration:
     value: '3.36634'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: "magnesium sulfate heptahydrate"
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: "magnesium dichloride hexahydrate"
   concentration:
     value: '4.13861'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: "magnesium dichloride hexahydrate"
 - preferred_term: KCl
   term:
     id: CHEBI:32588
-    label: KCl
+    label: "potassium chloride"
   concentration:
     value: '0.326733'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: KCl
+    label: "potassium chloride"
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
-    label: NiCl2 x 6 H2O
+    label: "nickel dichloride"
   concentration:
     value: '0.00049505'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34887
-    label: NiCl2 x 6 H2O
+    label: "nickel dichloride"
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
-    label: Na2SeO3 x 5 H2O
+    label: "disodium selenite pentahydrate"
   concentration:
     value: '0.00049505'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131361
-    label: Na2SeO3 x 5 H2O
+    label: "disodium selenite pentahydrate"
 - preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
   concentration:
     value: '0.00990099'
     unit: G_PER_L
   term:
     id: CHEBI:76181
-    label: ''
+    label: "ferrous ammonium sulfate hexahydrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:76181
-    label: Fe(NH4)2(SO4)2 x 6 H2O
+    label: "ferrous ammonium sulfate hexahydrate"
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

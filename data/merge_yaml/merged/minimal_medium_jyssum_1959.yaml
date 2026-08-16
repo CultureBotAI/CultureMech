@@ -9,81 +9,81 @@ ingredients:
 - preferred_term: Sodium thiosulfate
   term:
     id: CHEBI:132112
-    label: Sodium Thiosulfate
+    label: "sodium thiosulfate"
   concentration:
     value: '0.1581'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:132112
-    label: Sodium Thiosulfate
+    label: "sodium thiosulfate"
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.7752'
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: ''
+    label: "calcium dichloride"
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '40.05'
     unit: MILLIMOLAR
   term:
     id: CHEBI:131527
-    label: ''
+    label: "dipotassium hydrogen phosphate"
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.006583'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75832
-    label: ''
+    label: "iron(2+) sulfate (anhydrous)"
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
-    label: Ammonium chloride
+    label: "ammonium chloride"
   concentration:
     value: '28.04'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: Ammonium chloride
+    label: "ammonium chloride"
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
   concentration:
     value: '5.551'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
-    label: Manganese Sulfate
+    label: "manganese(II) sulfate monohydrate"
   concentration:
     value: '0.006623'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
-    label: Manganese Sulfate
+    label: "manganese(II) sulfate monohydrate"
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: "magnesium sulfate"
   concentration:
     value: '0.4057'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: "magnesium sulfate"
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '14.7'
     unit: MILLIMOLAR
   term:
     id: CHEBI:63036
-    label: ''
+    label: "potassium dihydrogen phosphate"
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

@@ -28,23 +28,23 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
   concentration:
     value: '20'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
 - preferred_term: Tween 80
   term:
     id: CHEBI:53426
-    label: Tween 80
+    label: "polysorbate 80"
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:53426
-    label: Tween 80
+    label: "polysorbate 80"
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -54,7 +54,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: "dipotassium hydrogen phosphate"
 - preferred_term: Na-acetate
   term:
     id: CHEBI:32954
@@ -64,37 +64,37 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32954
-    label: Na-acetate
+    label: "sodium acetate"
 - preferred_term: (NH4)2 citrate
   concentration:
     value: '2'
     unit: G_PER_L
   term:
     id: CHEBI:63076
-    label: ''
+    label: "diammonium citrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:63076
-    label: (NH4)2 citrate
+    label: "diammonium citrate"
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: "magnesium sulfate heptahydrate"
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: "magnesium sulfate heptahydrate"
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
-    label: MnSO4 x H2O
+    label: "manganese(II) sulfate monohydrate"
   concentration:
     value: '0.05'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
-    label: MnSO4 x H2O
+    label: "manganese(II) sulfate monohydrate"
 applications:
 - Microbial cultivation
 curation_history:

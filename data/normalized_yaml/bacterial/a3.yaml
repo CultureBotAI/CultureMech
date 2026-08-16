@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 3 duplicates: 1.0, 500.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '75'
@@ -53,7 +53,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: K2HPO4
   concentration:
     value: '75'
@@ -86,7 +86,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:3312
-    label: ''
+    label: "calcium dichloride"
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -100,7 +100,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: ''
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'

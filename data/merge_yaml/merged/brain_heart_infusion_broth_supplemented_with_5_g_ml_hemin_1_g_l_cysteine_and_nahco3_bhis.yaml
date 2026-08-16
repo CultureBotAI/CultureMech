@@ -39,10 +39,10 @@ ingredients:
     component'
   term:
     id: CHEBI:15356
-    label: Cysteine
+    label: "cysteine"
   mediaingredientmech_chebi_term:
     id: CHEBI:15356
-    label: Cysteine
+    label: "cysteine"
 - preferred_term: Calf brains
   term:
     id: UBERON:0000955
@@ -122,7 +122,7 @@ ingredients:
 - preferred_term: Disodium phosphate
   term:
     id: CHEBI:34683
-    label: disodium hydrogen phosphate
+    label: "disodium hydrogenphosphate"
   concentration:
     value: '2.5'
     unit: G_PER_L

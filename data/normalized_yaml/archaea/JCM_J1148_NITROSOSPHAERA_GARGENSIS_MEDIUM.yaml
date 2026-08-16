@@ -21,47 +21,47 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: KCl
   term:
     id: CHEBI:32588
-    label: KCl
+    label: "potassium chloride"
   concentration:
     value: '0.0733855'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: KCl
+    label: "potassium chloride"
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: "magnesium sulfate heptahydrate"
   concentration:
     value: '0.0489237'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: "magnesium sulfate heptahydrate"
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
   concentration:
     value: '0.571429'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
 - preferred_term: CaCO3
   term:
     id: CHEBI:3311
-    label: CaCO3
+    label: "calcium carbonate"
   concentration:
     value: '3.91389'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:3311
-    label: CaCO3
+    label: "calcium carbonate"
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -71,27 +71,27 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: "ammonium chloride"
 - preferred_term: HCl
   term:
     id: CHEBI:17883
-    label: HCl
+    label: "hydrogen chloride"
   concentration:
     value: '2.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17883
-    label: HCl
+    label: "hydrogen chloride"
 - preferred_term: MnSO4 x 5 H2O
   term:
     id: CHEBI:131524
-    label: MnSO4 x 5 H2O
+    label: "manganese(II) sulfate pentahydrate"
   concentration:
     value: '0.0479042'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131524
-    label: MnSO4 x 5 H2O
+    label: "manganese(II) sulfate pentahydrate"
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -101,97 +101,97 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: H3BO3
+    label: "boric acid"
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
-    label: ZnCl2
+    label: "zinc dichloride"
   concentration:
     value: '0.0698603'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:49976
-    label: ZnCl2
+    label: "zinc dichloride"
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
+    label: "sodium molybdate dihydrate"
   concentration:
     value: '0.0728543'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
+    label: "sodium molybdate dihydrate"
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
-    label: CuCl2 x 2 H2O
+    label: "copper(II) chloride dihydrate"
   concentration:
     value: '0.0199601'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86318
-    label: CuCl2 x 2 H2O
+    label: "copper(II) chloride dihydrate"
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
-    label: NiCl2 x 6 H2O
+    label: "nickel dichloride"
   concentration:
     value: '0.0239521'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34887
-    label: NiCl2 x 6 H2O
+    label: "nickel dichloride"
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
-    label: CoCl2 x 6 H2O
+    label: "cobalt dichloride"
   concentration:
     value: '0.0798403'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:35696
-    label: CoCl2 x 6 H2O
+    label: "cobalt dichloride"
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: "iron(2+) sulfate heptahydrate"
   concentration:
     value: '0.998004'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: NaOH
   term:
     id: CHEBI:32145
-    label: NaOH
+    label: "sodium hydroxide"
   concentration:
     value: '0.4'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32145
-    label: NaOH
+    label: "sodium hydroxide"
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
-    label: Na2SeO3 x 5 H2O
+    label: "disodium selenite pentahydrate"
   concentration:
     value: '0.006'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131361
-    label: Na2SeO3 x 5 H2O
+    label: "disodium selenite pentahydrate"
 - preferred_term: Na2WO4 x 2 H2O
   term:
     id: CHEBI:63939
-    label: Na2WO4 x 2 H2O
+    label: "sodium tungstate dihydrate"
   concentration:
     value: '0.008'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63939
-    label: Na2WO4 x 2 H2O
+    label: "sodium tungstate dihydrate"
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

@@ -49,7 +49,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:75836
-    label: ''
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: KCl
   concentration:
     value: '2'

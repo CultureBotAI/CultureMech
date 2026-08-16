@@ -20,43 +20,43 @@ ingredients:
 - preferred_term: Maltose
   term:
     id: CHEBI:17306
-    label: Maltose
+    label: "maltose"
   concentration:
     value: '100'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17306
-    label: Maltose
+    label: "maltose"
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    label: "L-cysteine hydrochloride hydrate"
   concentration:
     value: '33.3333'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    label: "L-cysteine hydrochloride hydrate"
 - preferred_term: Hemin chloride
   term:
     id: CHEBI:50385
-    label: Hemin chloride
+    label: "hemin"
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:50385
-    label: Hemin chloride
+    label: "hemin"
 - preferred_term: Triethanolamine
   term:
     id: CHEBI:28621
-    label: Triethanolamine
+    label: "triethanolamine"
   concentration:
     value: '4'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:28621
-    label: Triethanolamine
+    label: "triethanolamine"
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

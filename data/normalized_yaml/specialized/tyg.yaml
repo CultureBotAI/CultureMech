@@ -70,7 +70,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:32139
-    label: null
+    label: "sodium hydrogencarbonate"
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 144-55-8; MW: 84.007;
     From TYG salts solution'
 - preferred_term: Sodium Chloride
@@ -104,7 +104,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:75832
-    label: ''
+    label: "iron(2+) sulfate (anhydrous)"
   notes: Ontology enriched via CAS-RN lookup
 - preferred_term: Hemin
   concentration:
@@ -122,7 +122,7 @@ ingredients:
   notes: 'CAS: 58-27-5; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:28869
-    label: ''
+    label: "menadione"
 description: Tryptone Yeast Extract Glucose medium
 notes: 'Source: FEBA media definitions'
 category: specialized

@@ -9,109 +9,109 @@ ingredients:
 - preferred_term: Succinate
   term:
     id: CHEBI:26806
-    label: Succinate
+    label: "succinate"
   concentration:
     value: '10.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:succ'
   mediaingredientmech_chebi_term:
     id: CHEBI:26806
-    label: Succinate
+    label: "succinate"
 - preferred_term: EDTA
   term:
     id: CHEBI:64755
-    label: EDTA
+    label: "EDTA(2-)"
   concentration:
     value: '0.008554'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:64755
-    label: EDTA
+    label: "EDTA(2-)"
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.603712'
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: ''
+    label: "calcium dichloride"
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '50.0'
     unit: MILLIMOLAR
   term:
     id: CHEBI:131527
-    label: ''
+    label: "dipotassium hydrogen phosphate"
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '50.0'
     unit: MILLIMOLAR
   term:
     id: CHEBI:34683
-    label: ''
+    label: "disodium hydrogenphosphate"
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
-    label: Nitrilotriacetic acid
+    label: "nitrilotriacetic acid"
   concentration:
     value: '1.151'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:44557
-    label: Nitrilotriacetic acid
+    label: "nitrilotriacetic acid"
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: "magnesium sulfate"
   concentration:
     value: '4.8186'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: "magnesium sulfate"
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
-    label: Manganese Sulfate
+    label: "manganese(II) sulfate monohydrate"
   concentration:
     value: '0.009111'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
-    label: Manganese Sulfate
+    label: "manganese(II) sulfate monohydrate"
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.03114'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75832
-    label: ''
+    label: "iron(2+) sulfate (anhydrous)"
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
-    label: Zinc Sulfate
+    label: "zinc sulfate"
   concentration:
     value: '0.038082'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:35176
-    label: Zinc Sulfate
+    label: "zinc sulfate"
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
-    label: Ammonium Sulfate
+    label: "ammonium sulfate"
   concentration:
     value: '7.5677'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: Ammonium Sulfate
+    label: "ammonium sulfate"
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.0015698'
     unit: MILLIMOLAR
   term:
     id: CHEBI:23414
-    label: ''
+    label: "copper(II) sulfate"
 - preferred_term: Sodium borate
   concentration:
     value: '0.0004641'
@@ -122,14 +122,14 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:91249
-    label: ''
+    label: "ammonium molybdate"
 - preferred_term: Cobalt nitrate
   concentration:
     value: '0.000852146'
     unit: MILLIMOLAR
   term:
     id: CHEBI:86209
-    label: ''
+    label: "cobalt dinitrate"
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

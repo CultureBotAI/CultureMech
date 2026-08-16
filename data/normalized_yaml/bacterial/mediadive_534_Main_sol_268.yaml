@@ -37,7 +37,7 @@ composition:
     label: Tap water
   chebi_term:
     id: CHEBI:15377
-    label: Tap water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Add tea and sucrose to a 1 l flask, pour on freshly boiled tap

@@ -71,11 +71,11 @@ ingredients:
   source: CCAP Medium MR_PM.pdf
   term:
     id: CHEBI:32138
-    label: ''
+    label: "sodium acetate trihydrate"
 - preferred_term: Yeast extract
   term:
     id: FOODON:03315426
-    label: Yeast extract
+    label: "yeast extract"
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0

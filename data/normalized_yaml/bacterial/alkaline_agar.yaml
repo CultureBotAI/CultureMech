@@ -15,13 +15,13 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
 - preferred_term: Bacto peptone
   concentration:
     value: '5'
@@ -39,7 +39,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: MgSO4 x H2O
   term:
     id: CHEBI:32599
@@ -49,17 +49,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: MgSO4 x H2O
+    label: "magnesium sulfate"
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
   concentration:
     value: '200'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -69,17 +69,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: "sodium carbonate"
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
   concentration:
     value: '15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

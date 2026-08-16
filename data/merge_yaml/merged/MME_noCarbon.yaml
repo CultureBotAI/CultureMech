@@ -63,7 +63,7 @@ ingredients:
   notes: 'CAS: 10025-77-1; MW: 270.3; From MME Trace Minerals'
   term:
     id: CHEBI:30808
-    label: ''
+    label: "iron trichloride"
 - preferred_term: Boric Acid
   concentration:
     value: '0.05'
@@ -79,7 +79,7 @@ ingredients:
   notes: 'CAS: 7646-85-7; MW: 136.3; From MME Trace Minerals'
   term:
     id: CHEBI:49976
-    label: ''
+    label: "zinc dichloride"
 - preferred_term: copper (II) chloride dihydrate
   concentration:
     value: '0.03'
@@ -87,7 +87,7 @@ ingredients:
   notes: 'CAS: 10125-13-0; MW: 170.48; From MME Trace Minerals'
   term:
     id: CHEBI:86318
-    label: ''
+    label: "copper(II) chloride dihydrate"
 - preferred_term: Manganese (II) chloride tetrahydrate
   concentration:
     value: '0.05'
@@ -96,7 +96,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:86368
-    label: ''
+    label: "manganese(II) chloride tetrahydrate"
 - preferred_term: Diammonium molybdate
   concentration:
     value: '0.05'
@@ -105,7 +105,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:91249
-    label: ''
+    label: "ammonium molybdate"
 - preferred_term: Cobalt chloride hexahydrate
   concentration:
     value: '0.05'
@@ -114,7 +114,7 @@ ingredients:
     CAS-RN lookup'
   term:
     id: CHEBI:53503
-    label: ''
+    label: "cobalt chloride hexahydrate"
 - preferred_term: Nickel (II) chloride hexahydrate
   concentration:
     value: '0.05'
@@ -123,7 +123,7 @@ ingredients:
     CAS-RN lookup'
   term:
     id: CHEBI:53542
-    label: ''
+    label: "nickel chloride hexahydrate"
 description: Defined media without C from PNNL with MOPS
 notes: 'Source: FEBA media definitions'
 category: specialized

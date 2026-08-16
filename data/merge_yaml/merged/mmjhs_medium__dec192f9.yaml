@@ -26,10 +26,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63005
-    label: ''
+    label: "sodium nitrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:63005
-    label: NaNO3
+    label: "sodium nitrate"
 - preferred_term: Sulfur (powder)
   concentration:
     value: '3'
@@ -49,7 +49,7 @@ ingredients:
   notes: 'Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:32150
-    label: ''
+    label: "sodium thiosulfate pentahydrate"
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
@@ -68,7 +68,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: "carbon dioxide"
 - preferred_term: Hydrogen gas
   notes: 'Properties: Gas'
   concentration:
@@ -76,7 +76,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: ''
+    label: "dihydrogen"
 media_term:
   preferred_term: TOGO Medium M419
   term:

@@ -30,7 +30,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -40,7 +40,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: "dipotassium hydrogen phosphate"
 - preferred_term: Na-orotate
   term:
     id: CHEBI:132101
@@ -50,17 +50,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:132101
-    label: Na-orotate
+    label: "sodium orotate"
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
-    label: Riboflavin
+    label: "riboflavin"
   concentration:
     value: '0.015'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17015
-    label: Riboflavin
+    label: "riboflavin"
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -80,7 +80,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86481
-    label: Na-thioglycolate
+    label: "sodium thioglycolate"
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

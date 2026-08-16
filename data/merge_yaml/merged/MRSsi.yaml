@@ -29,10 +29,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4 · 7H2O
   concentration:
     value: '0.2'
@@ -55,7 +55,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:35696
-    label: ''
+    label: "cobalt dichloride"
 - preferred_term: sodium acetate
   concentration:
     value: '5'
@@ -87,7 +87,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86358
-    label: ''
+    label: "manganese(II) sulfate tetrahydrate"
 - preferred_term: casamino acids
   concentration:
     value: '5'

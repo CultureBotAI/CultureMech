@@ -24,50 +24,50 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
   concentration:
     value: '0.249004'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
 - preferred_term: Cellobiose
   term:
     id: CHEBI:17057
-    label: Cellobiose
+    label: "cellobiose"
   concentration:
     value: '0.249004'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17057
-    label: Cellobiose
+    label: "cellobiose"
 - preferred_term: Maltose
   term:
     id: CHEBI:17306
-    label: Maltose
+    label: "maltose"
   concentration:
     value: '0.249004'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17306
-    label: Maltose
+    label: "maltose"
 - preferred_term: Starch
   term:
     id: CHEBI:28017
-    label: Starch
+    label: "starch"
   concentration:
     value: '0.249004'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:28017
-    label: Starch
+    label: "starch"
 - preferred_term: Sodium resazurin
   concentration:
     value: '1'
     unit: G_PER_L
   term:
     id: CHEBI:8806
-    label: ''
+    label: "Resazurin"
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -77,27 +77,27 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: "sodium carbonate"
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    label: "L-cysteine hydrochloride hydrate"
   concentration:
     value: '0.298805'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    label: "L-cysteine hydrochloride hydrate"
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
   concentration:
     value: '14.9402'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

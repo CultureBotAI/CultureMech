@@ -61,7 +61,7 @@ ingredients:
 - preferred_term: H BO
   term:
     id: CHEBI:33118
-    label: H BO
+    label: "boric acid"
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -75,7 +75,7 @@ ingredients:
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
-    label: MnCl2 x 4 H2O
+    label: "manganese(II) chloride tetrahydrate"
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -89,7 +89,7 @@ ingredients:
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
+    label: "zinc sulfate heptahydrate"
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -103,7 +103,7 @@ ingredients:
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
+    label: "sodium molybdate dihydrate"
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -117,7 +117,7 @@ ingredients:
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
-    label: CuSO4 x 5 H2O
+    label: "copper(II) sulfate pentahydrate"
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0

@@ -11,7 +11,7 @@ ingredients:
   notes: 'CAS: 100037-69-2; MW: 335.34'
   term:
     id: CHEBI:63055
-    label: ''
+    label: "disodium PIPES"
 - preferred_term: Potassium Chloride
   concentration:
     value: '0.10'
@@ -45,7 +45,7 @@ ingredients:
   notes: 'CAS: 7791-18-6; MW: 203.3; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:86345
-    label: ''
+    label: "magnesium dichloride hexahydrate"
 - preferred_term: Sodium sulfate
   concentration:
     value: '0.10'
@@ -53,7 +53,7 @@ ingredients:
   notes: 'CAS: 7757-82-6; MW: 142.04; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:32149
-    label: ''
+    label: "sodium sulfate"
 - preferred_term: Ammonium chloride
   concentration:
     value: '0.25'
@@ -79,7 +79,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:86345
-    label: ''
+    label: "magnesium dichloride hexahydrate"
 - preferred_term: Nitrilotriacetic acid disodium salt
   concentration:
     value: '0.00015'
@@ -101,7 +101,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:86368
-    label: ''
+    label: "manganese(II) chloride tetrahydrate"
 - preferred_term: Cobalt chloride hexahydrate
   concentration:
     value: 1e-05
@@ -110,7 +110,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:53503
-    label: ''
+    label: "cobalt chloride hexahydrate"
 - preferred_term: Zinc chloride
   concentration:
     value: '1.3e-05'
@@ -118,7 +118,7 @@ ingredients:
   notes: 'CAS: 7646-85-7; MW: 136.3; From Sulfur-free DL minerals'
   term:
     id: CHEBI:49976
-    label: ''
+    label: "zinc dichloride"
 - preferred_term: Calcium Chloride Dihydrate
   concentration:
     value: 1e-05
@@ -136,7 +136,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:86249
-    label: ''
+    label: "iron dichloride tetrahydrate"
 - preferred_term: Nickel (II) chloride hexahydrate
   concentration:
     value: '2.5e-06'
@@ -145,7 +145,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:53542
-    label: ''
+    label: "nickel chloride hexahydrate"
 - preferred_term: Aluminum chloride hydrate
   concentration:
     value: '2.0000000000000003e-06'
@@ -158,7 +158,7 @@ ingredients:
   notes: 'CAS: 10125-13-0; MW: 170.48; From Sulfur-free DL minerals'
   term:
     id: CHEBI:86318
-    label: ''
+    label: "copper(II) chloride dihydrate"
 - preferred_term: Boric Acid
   concentration:
     value: '1.0000000000000002e-06'
@@ -175,7 +175,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:75213
-    label: ''
+    label: "sodium molybdate dihydrate"
 - preferred_term: Sodium selenite pentahydrate
   concentration:
     value: 3e-05
@@ -184,7 +184,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:131361
-    label: ''
+    label: "disodium selenite pentahydrate"
 - preferred_term: Sodium tungstate dihydrate
   concentration:
     value: '2.5e-05'
@@ -193,7 +193,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:63939
-    label: ''
+    label: "sodium tungstate dihydrate"
 - preferred_term: d-Biotin
   concentration:
     value: '0.0002'
@@ -217,7 +217,7 @@ ingredients:
     unit: MG_PER_L
   term:
     id: CHEBI:30961
-    label: Pyridoxine HCl
+    label: "pyridoxine hydrochloride"
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-56-0; MW: 205.64;
     From DL vitamins'
 - preferred_term: Riboflavin
@@ -363,7 +363,7 @@ ingredients:
     lookup'
   term:
     id: CHEBI:91248
-    label: ''
+    label: "L-cysteine hydrochloride hydrate"
 - preferred_term: Glycine
   concentration:
     value: '0.1'
@@ -444,7 +444,7 @@ ingredients:
     lookup'
   term:
     id: CHEBI:53696
-    label: ''
+    label: "disodium L-tyrosinate"
 - preferred_term: L-Tryptophan
   concentration:
     value: '0.1'

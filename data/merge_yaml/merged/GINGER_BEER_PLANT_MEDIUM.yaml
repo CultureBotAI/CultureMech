@@ -24,23 +24,23 @@ ingredients:
 - preferred_term: Citric acid
   term:
     id: CHEBI:30769
-    label: Citric acid
+    label: "citric acid"
   concentration:
     value: '1.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30769
-    label: Citric acid
+    label: "citric acid"
 - preferred_term: Tap water
   term:
     id: CHEBI:15377
-    label: Tap water
+    label: "water"
   concentration:
     value: '900'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Tap water
+    label: "water"
 applications:
 - Microbial cultivation
 curation_history:

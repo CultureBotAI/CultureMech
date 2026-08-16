@@ -17,33 +17,33 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
   concentration:
     value: '13.5417'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: "magnesium sulfate heptahydrate"
   concentration:
     value: '3.47222'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: "magnesium sulfate heptahydrate"
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: "magnesium dichloride hexahydrate"
   concentration:
     value: '2.72817'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: "magnesium dichloride hexahydrate"
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -53,7 +53,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -63,27 +63,27 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: "ammonium sulfate"
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: "calcium chloride dihydrate"
   concentration:
     value: '0.376984'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: "calcium chloride dihydrate"
 - preferred_term: KCl
   term:
     id: CHEBI:32588
-    label: KCl
+    label: "potassium chloride"
   concentration:
     value: '0.327381'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: KCl
+    label: "potassium chloride"
 - preferred_term: NaBr
   term:
     id: CHEBI:63004
@@ -93,7 +93,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63004
-    label: NaBr
+    label: "sodium bromide"
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -103,21 +103,21 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: H3BO3
+    label: "boric acid"
 - preferred_term: SrCl2 x 6 H2O
   term:
     id: CHEBI:36385
-    label: SrCl2 x 6 H2O
+    label: "strontium dichloride hexahydrate"
   concentration:
     value: '0.00694444'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:36385
-    label: SrCl2 x 6 H2O
+    label: "strontium dichloride hexahydrate"
 - preferred_term: KI
   term:
     id: CHEBI:8346
-    label: KI
+    label: "potassium iodide"
   concentration:
     value: '4.96032e-05'
     unit: G_PER_L
@@ -130,17 +130,17 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:8806
-    label: ''
+    label: "Resazurin"
 - preferred_term: Sulfur
   term:
     id: CHEBI:26833
-    label: Sulfur
+    label: "sulfur atom"
   concentration:
     value: '4.96032'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26833
-    label: Sulfur
+    label: "sulfur atom"
 - preferred_term: Meat extract
   concentration:
     value: '0.992063'
@@ -148,13 +148,13 @@ ingredients:
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
-    label: Na2S x 9 H2O
+    label: "sodium sulfide nonahydrate"
   concentration:
     value: '0.198413'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:76209
-    label: Na2S x 9 H2O
+    label: "sodium sulfide nonahydrate"
 - preferred_term: H2SO4
   term:
     id: CHEBI:26836

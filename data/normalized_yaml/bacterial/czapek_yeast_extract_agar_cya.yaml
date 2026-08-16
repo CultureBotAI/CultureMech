@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 1.0, 100.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -79,7 +79,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:75836
-    label: ''
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: KCl
   concentration:
     value: '5'
@@ -100,7 +100,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:32312
-    label: ''
+    label: "zinc sulfate heptahydrate"
 - preferred_term: CuSO4・5H2O
   concentration:
     value: '0.05'
@@ -109,7 +109,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:31440
-    label: ''
+    label: "copper(II) sulfate pentahydrate"
 - preferred_term: NaNO3
   concentration:
     value: '30'
@@ -118,10 +118,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63005
-    label: ''
+    label: "sodium nitrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:63005
-    label: NaNO3
+    label: "sodium nitrate"
 media_term:
   preferred_term: TOGO Medium M219
   term:

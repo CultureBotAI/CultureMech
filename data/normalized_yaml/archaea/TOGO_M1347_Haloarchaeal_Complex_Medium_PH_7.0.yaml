@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '26.8'
@@ -76,7 +76,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86345
-    label: ''
+    label: "magnesium dichloride hexahydrate"
 - preferred_term: KCl
   concentration:
     value: '5.4'
@@ -155,7 +155,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:3312
-    label: ''
+    label: "calcium dichloride"
 - preferred_term: Fish peptone (Fluka)
   concentration:
     value: '0.25'

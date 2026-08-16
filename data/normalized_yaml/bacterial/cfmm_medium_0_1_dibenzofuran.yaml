@@ -14,10 +14,10 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.2'
@@ -58,7 +58,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: FeCl3·6H2O
   concentration:
     value: '50'
@@ -82,7 +82,7 @@ ingredients:
     label: ammonium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63038
-    label: NH4NO3
+    label: "ammonium nitrate"
 - preferred_term: Na2HPO4·12H2O
   concentration:
     value: '5.55'
@@ -91,10 +91,10 @@ ingredients:
     component'
   mediaingredientmech_chebi_term:
     id: CHEBI:34683
-    label: Na2HPO4·12H2O
+    label: "disodium hydrogenphosphate"
   term:
     id: CHEBI:34683
-    label: ''
+    label: "disodium hydrogenphosphate"
 - preferred_term: Dibenzofuran
   concentration:
     value: '1'
@@ -103,7 +103,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:28145
-    label: ''
+    label: "dibenzofuran"
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'

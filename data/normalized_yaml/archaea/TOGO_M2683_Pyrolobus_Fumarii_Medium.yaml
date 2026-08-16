@@ -24,7 +24,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: "carbon dioxide"
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -32,7 +32,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: ''
+    label: "dihydrogen"
 - preferred_term: Distilled water
   concentration:
     value: '3000.0'
@@ -41,10 +41,10 @@ ingredients:
     Simple component [Merged 5 duplicates: 980.0, 10.0, 10.0, 1000.0, 1000.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '33.5'
@@ -144,7 +144,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: KNO3
   concentration:
     value: '1'
@@ -164,7 +164,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: "dinitrogen"
 - preferred_term: Na2S x 9 H2O
   concentration:
     value: '0.15'
@@ -197,10 +197,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: "iron(2+) sulfate heptahydrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '1.8'
@@ -257,10 +257,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63939
-    label: sodium tungstate
+    label: "sodium tungstate dihydrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:63939
-    label: sodium tungstate
+    label: "sodium tungstate dihydrate"
 - preferred_term: MnSO4 x H2O
   concentration:
     value: '5'
@@ -269,10 +269,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86364
-    label: MnSO4 x H2O
+    label: "manganese(II) sulfate monohydrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
-    label: MnSO4 x H2O
+    label: "manganese(II) sulfate monohydrate"
 - preferred_term: (NH4)2Ni(SO4)2 x 6 H2O
   concentration:
     value: '2.8'
@@ -281,10 +281,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86149
-    label: (NH4)2Ni(SO4)2 x 6 H2O
+    label: "ammonium nickel sulfate hexahydrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:86149
-    label: (NH4)2Ni(SO4)2 x 6 H2O
+    label: "ammonium nickel sulfate hexahydrate"
 - preferred_term: Na2SeO4
   concentration:
     value: '0.1'
@@ -296,7 +296,7 @@ ingredients:
     label: sodium selenate
   mediaingredientmech_chebi_term:
     id: CHEBI:77775
-    label: Na2SeO4
+    label: "sodium selenate"
 - preferred_term: H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
@@ -371,10 +371,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
+    label: "thiamine hydrochloride dihydrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
+    label: "thiamine hydrochloride dihydrate"
 - preferred_term: D(+)-Biotin
   concentration:
     value: '20'

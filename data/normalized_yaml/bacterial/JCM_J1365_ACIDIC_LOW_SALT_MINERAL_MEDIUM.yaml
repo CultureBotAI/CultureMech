@@ -31,7 +31,7 @@ ingredients:
     label: calcium chloride dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: "calcium chloride dihydrate"
 - preferred_term: K2SO4
   concentration:
     value: '34.9'
@@ -41,7 +41,7 @@ ingredients:
     label: potassium sulfate
   mediaingredientmech_chebi_term:
     id: CHEBI:32036
-    label: K2SO4 x 7 H2O
+    label: "potassium sulfate"
 - preferred_term: (NH4)2SO4
   concentration:
     value: '0.264'
@@ -51,7 +51,7 @@ ingredients:
     label: ammonium sulfate
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: "ammonium sulfate"
 - preferred_term: FeCl2 solution (see Medium No. 187 )
   concentration:
     value: '1.0'
@@ -73,7 +73,7 @@ ingredients:
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: 0.1 M KH2PO4 solution
   concentration:
     value: '1.0'
@@ -103,7 +103,7 @@ ingredients:
     label: sodium hydroxide
   mediaingredientmech_chebi_term:
     id: CHEBI:32145
-    label: NaOH
+    label: "sodium hydroxide"
 - preferred_term: Na2SeO3·5H2O
   concentration:
     value: '0.06'
@@ -123,7 +123,7 @@ ingredients:
     label: sodium tungstate dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63939
-    label: Na2WO4 x 2 H2O
+    label: "sodium tungstate dihydrate"
 preparation_steps:
 - step_number: 1
   action: MIX

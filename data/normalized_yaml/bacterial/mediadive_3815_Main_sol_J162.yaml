@@ -34,7 +34,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Sodium acetate
@@ -94,7 +94,7 @@ composition:
     label: Tween 80
   chebi_term:
     id: CHEBI:53426
-    label: tween 80
+    label: "polysorbate 80"
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Cheese whey

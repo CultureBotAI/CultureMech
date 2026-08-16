@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 920.0, 50.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: Yeast extract
   concentration:
     value: '2'
@@ -43,7 +43,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: "calcium chloride dihydrate"
 - preferred_term: NH4Cl
   concentration:
     value: '1'
@@ -88,7 +88,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:86345
-    label: ''
+    label: "magnesium dichloride hexahydrate"
 - preferred_term: KCl
   concentration:
     value: '0.5'
@@ -125,7 +125,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: "carbon dioxide"
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -133,7 +133,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: "dinitrogen"
 - preferred_term: 5% L--Cysteine・HCl・H2O
   concentration:
     value: '5'

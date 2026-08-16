@@ -58,7 +58,7 @@ composition:
     label: Glucose
   chebi_term:
     id: CHEBI:17234
-    label: D-glucose
+    label: "glucose"
     confidence: 0.9
     match_type: manual_curated
 - preferred_term: Betaine Hydrochloride
@@ -108,7 +108,7 @@ composition:
     label: Manganese Sulfate
   chebi_term:
     id: CHEBI:86364
-    label: Manganese Sulfate
+    label: "manganese(II) sulfate monohydrate"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Dipotassium Phosphate
@@ -132,7 +132,7 @@ composition:
     label: N-Acetylglucosamine
   chebi_term:
     id: CHEBI:59640
-    label: N-Acetylglucosamine
+    label: "N-acetylglucosamine"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Potassium Glutamate
@@ -151,7 +151,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -163,7 +163,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 curation_history:

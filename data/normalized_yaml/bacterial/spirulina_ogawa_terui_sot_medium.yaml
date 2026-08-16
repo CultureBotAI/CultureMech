@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4 . 7H2O
   concentration:
     value: '200'
@@ -47,7 +47,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: "calcium chloride dihydrate"
 - preferred_term: K2HPO4
   concentration:
     value: '500'
@@ -92,7 +92,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: ''
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: NaHCO3
   concentration:
     value: '16800'
@@ -113,7 +113,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:32312
-    label: ''
+    label: "zinc sulfate heptahydrate"
 - preferred_term: CuSO4 . 5H2O
   concentration:
     value: '0.08'
@@ -134,10 +134,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63005
-    label: ''
+    label: "sodium nitrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:63005
-    label: NaNO3
+    label: "sodium nitrate"
 - preferred_term: MnSO4 . 5H2O
   concentration:
     value: '2.5'
@@ -146,7 +146,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:131524
-    label: ''
+    label: "manganese(II) sulfate pentahydrate"
 - preferred_term: K2SO4
   concentration:
     value: '1000'
@@ -166,7 +166,7 @@ ingredients:
   notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:64758
-    label: ''
+    label: "EDTA disodium salt dihydrate"
 media_term:
   preferred_term: TOGO Medium M2202
   term:

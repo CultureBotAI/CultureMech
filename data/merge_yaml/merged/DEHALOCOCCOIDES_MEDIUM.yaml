@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: NaCl
   concentration:
     value: '1'
@@ -38,7 +38,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: "calcium chloride dihydrate"
 - preferred_term: KH2PO4
   concentration:
     value: '0.2'
@@ -50,7 +50,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: NH4Cl
   concentration:
     value: '0.27'
@@ -83,7 +83,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86345
-    label: ''
+    label: "magnesium dichloride hexahydrate"
 - preferred_term: KCl
   concentration:
     value: '0.52'
@@ -114,7 +114,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: "dinitrogen"
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: Gas'
   concentration:
@@ -122,7 +122,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: "carbon dioxide"
 - preferred_term: Nitrogen gas
   notes: 'Properties: Gas'
   concentration:
@@ -130,7 +130,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: "dinitrogen"
 - preferred_term: Hydrogen gas
   notes: 'Properties: Gas'
   concentration:
@@ -138,7 +138,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: ''
+    label: "dihydrogen"
 - preferred_term: Trichloroethylene (10 mg/ml in methanol)
   concentration:
     value: '0.7'
@@ -163,10 +163,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:30753
-    label: p--Aminobenzoic acid
+    label: "4-aminobenzoic acid"
   term:
     id: CHEBI:30753
-    label: ''
+    label: "4-aminobenzoic acid"
 - preferred_term: Thiamine・HCl
   concentration:
     value: '20'
@@ -174,7 +174,7 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:49105
-    label: ''
+    label: "thiamine hydrochloride"
 - preferred_term: Pyridoxine・HCl
   concentration:
     value: '250'
@@ -182,7 +182,7 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:30961
-    label: Pyridoxine・HCl
+    label: "pyridoxine hydrochloride"
 - preferred_term: Folic acid
   concentration:
     value: '2'

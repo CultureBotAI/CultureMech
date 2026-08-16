@@ -23,37 +23,37 @@ ingredients:
     label: sodium L-lactate
   mediaingredientmech_chebi_term:
     id: CHEBI:232798
-    label: Na-L-lactate
+    label: "sodium L-lactate"
 - preferred_term: Haemin
   term:
     id: CHEBI:50385
-    label: Haemin
+    label: "hemin"
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:50385
-    label: Haemin
+    label: "hemin"
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
-    label: NaHCO3
+    label: "sodium hydrogencarbonate"
   concentration:
     value: '0.01'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: NaHCO3
+    label: "sodium hydrogencarbonate"
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
   concentration:
     value: '0.04'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
 - preferred_term: Cystein-HCl x 2 H2O
   concentration:
     value: '0.0025'
@@ -61,13 +61,13 @@ ingredients:
 - preferred_term: DTT
   term:
     id: CHEBI:18320
-    label: DTT
+    label: "1,4-dithiothreitol"
   concentration:
     value: '0.000771255'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:18320
-    label: DTT
+    label: "1,4-dithiothreitol"
 - preferred_term: Na-formate
   term:
     id: CHEBI:62965
@@ -77,17 +77,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62965
-    label: Na-formate
+    label: "sodium formate"
 - preferred_term: Na-fumarate
   term:
     id: CHEBI:115156
-    label: Na-fumarate
+    label: "disodium fumarate"
   concentration:
     value: '0.03'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:115156
-    label: Na-fumarate
+    label: "disodium fumarate"
 - preferred_term: Horse blood
   concentration:
     value: '0.5'
@@ -109,13 +109,13 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
   concentration:
     value: '3'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
 - preferred_term: KNO3
   term:
     id: CHEBI:63043
@@ -129,23 +129,23 @@ ingredients:
 - preferred_term: Vitamin K1
   term:
     id: CHEBI:18067
-    label: Vitamin K1
+    label: "phylloquinone"
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:18067
-    label: Vitamin K1
+    label: "phylloquinone"
 - preferred_term: Ethanol
   term:
     id: CHEBI:16236
-    label: Ethanol
+    label: "ethanol"
   concentration:
     value: '19'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16236
-    label: Ethanol
+    label: "ethanol"
 applications:
 - Microbial cultivation
 curation_history:

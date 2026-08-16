@@ -21,7 +21,7 @@ ingredients:
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '10'
@@ -49,7 +49,7 @@ ingredients:
     label: agar
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
 applications:
 - Microbial cultivation
 curation_history:

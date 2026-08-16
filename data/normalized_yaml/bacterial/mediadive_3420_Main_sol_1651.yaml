@@ -39,7 +39,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Double distilled water
@@ -51,7 +51,7 @@ composition:
     label: Double distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Double distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: N-Acetylglucosamine
@@ -63,7 +63,7 @@ composition:
     label: N-Acetylglucosamine
   chebi_term:
     id: CHEBI:59640
-    label: N-Acetylglucosamine
+    label: "N-acetylglucosamine"
     confidence: 0.9
     match_type: corpus_consensus
 preparation_notes: "Sterilize 20 min./121°C. After cooling to 60°C add: \nAdjust pH\

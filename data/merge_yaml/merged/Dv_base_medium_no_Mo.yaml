@@ -15,7 +15,7 @@ ingredients:
   notes: 'CAS: 7631-95-0; MW: 205.92; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:75215
-    label: ''
+    label: "sodium molybdate (anhydrous)"
 description: Base medium for cultivating Desulfovibrio with no Mo
 notes: 'Source: FEBA media definitions'
 category: specialized

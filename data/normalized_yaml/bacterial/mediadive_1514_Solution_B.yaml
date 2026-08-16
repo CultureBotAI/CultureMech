@@ -25,7 +25,7 @@ composition:
     label: Disodium succinate
   chebi_term:
     id: CHEBI:63675
-    label: sodium succinate
+    label: "sodium succinate (anhydrous)"
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Isobutyric acid
@@ -49,7 +49,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Adjust to pH 7.0 with 1 N NaOH.

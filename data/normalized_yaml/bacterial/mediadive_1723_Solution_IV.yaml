@@ -25,7 +25,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: "10% inositol (1g/10 ml distilled water)\nFilter sterilize solution\

@@ -20,7 +20,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: NaOH
@@ -70,7 +70,7 @@ composition:
     label: Resazurin
   chebi_term:
     id: CHEBI:8806
-    label: resazurin
+    label: "Resazurin"
     confidence: 1.0
     match_type: exact_match
 - preferred_term: L-Cysteine HCl
@@ -95,7 +95,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: "To make medium anoxic bring it to a boil, cool under 100% N2 gas\

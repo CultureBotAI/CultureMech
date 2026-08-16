@@ -13,7 +13,7 @@ composition:
     label: NaCl
   chebi_term:
     id: CHEBI:26710
-    label: 1% sodium chloride
+    label: "sodium chloride"
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Yeast extract
@@ -39,7 +39,7 @@ composition:
     label: Sulfur
   chebi_term:
     id: CHEBI:26833
-    label: Sulfur
+    label: "sulfur atom"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Resazurin
@@ -51,7 +51,7 @@ composition:
     label: Resazurin
   chebi_term:
     id: CHEBI:8806
-    label: resazurin
+    label: "Resazurin"
     confidence: 1.0
     match_type: exact_match
 preparation_notes: Mix ingredients, except yeast extract, sulfur and Na2S x 9H2O,

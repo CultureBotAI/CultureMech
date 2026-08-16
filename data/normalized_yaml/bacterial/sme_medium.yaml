@@ -16,33 +16,33 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
   concentration:
     value: '27.7'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: "magnesium sulfate heptahydrate"
   concentration:
     value: '7'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: "magnesium sulfate heptahydrate"
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: "magnesium dichloride hexahydrate"
   concentration:
     value: '5.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: "magnesium dichloride hexahydrate"
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -52,27 +52,27 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: "calcium chloride dihydrate"
   concentration:
     value: '0.75'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: "calcium chloride dihydrate"
 - preferred_term: KCl
   term:
     id: CHEBI:32588
-    label: KCl
+    label: "potassium chloride"
   concentration:
     value: '0.66'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: KCl
+    label: "potassium chloride"
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -82,7 +82,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: "ammonium sulfate"
 - preferred_term: NaBr
   term:
     id: CHEBI:63004
@@ -92,7 +92,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63004
-    label: NaBr
+    label: "sodium bromide"
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -102,17 +102,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: H3BO3
+    label: "boric acid"
 - preferred_term: SrCl2 x 6 H2O
   term:
     id: CHEBI:36385
-    label: SrCl2 x 6 H2O
+    label: "strontium dichloride hexahydrate"
   concentration:
     value: '0.015'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:36385
-    label: SrCl2 x 6 H2O
+    label: "strontium dichloride hexahydrate"
 - preferred_term: KJ
   concentration:
     value: '50'
@@ -120,34 +120,34 @@ ingredients:
 - preferred_term: Elemental sulfur
   term:
     id: CHEBI:33403
-    label: Elemental sulfur
+    label: "elemental sulfur"
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:33403
-    label: Elemental sulfur
+    label: "elemental sulfur"
 - preferred_term: Double distilled water
   term:
     id: CHEBI:15377
-    label: Double distilled water
+    label: "water"
   concentration:
     value: '1000'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Double distilled water
+    label: "water"
 - preferred_term: Na2S
   term:
     id: CHEBI:76208
-    label: Na2S
+    label: "sodium sulfide (anhydrous)"
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: ' (used for reduction of the medium)'
   mediaingredientmech_chebi_term:
     id: CHEBI:76208
-    label: Na2S
+    label: "sodium sulfide (anhydrous)"
 - preferred_term: Yeast extract
   concentration:
     value: '0.4'

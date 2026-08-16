@@ -22,7 +22,7 @@ ingredients:
     label: ammonium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: "ammonium chloride"
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.5'
@@ -42,7 +42,7 @@ ingredients:
     label: calcium chloride dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: "calcium chloride dihydrate"
 - preferred_term: NaCl
   concentration:
     value: '2.25'
@@ -52,7 +52,7 @@ ingredients:
     label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
 - preferred_term: FeCl2 solution (see Medium No. 187 )
   concentration:
     value: '1.0'
@@ -96,7 +96,7 @@ ingredients:
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: K2HPO4
   concentration:
     value: '0.35'
@@ -106,7 +106,7 @@ ingredients:
     label: dipotassium hydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4 x 3 H2O
+    label: "dipotassium hydrogen phosphate"
 - preferred_term: KH2PO4
   concentration:
     value: '0.23'
@@ -116,7 +116,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: Distilled water
   concentration:
     value: '100.0'
@@ -126,7 +126,7 @@ ingredients:
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: Trace vitamins (see Medium No. 197 )
   concentration:
     value: '10.0'

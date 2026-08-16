@@ -23,7 +23,7 @@ ingredients:
   notes: 'Properties: Inorganic compound, Simple component, Defined component'
   term:
     id: CHEBI:32150
-    label: ''
+    label: "sodium thiosulfate pentahydrate"
 - preferred_term: Trypticase peptone (BD-BBL)
   concentration:
     value: '1'

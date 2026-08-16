@@ -13,7 +13,7 @@ composition:
     label: DL-alpha-lipoic acid
   chebi_term:
     id: CHEBI:16494
-    label: DL-alpha-lipoic acid
+    label: "lipoic acid"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: 2-Mercaptoethanol
@@ -37,7 +37,7 @@ composition:
     label: Ethanol
   chebi_term:
     id: CHEBI:16236
-    label: Ethanol
+    label: "ethanol"
     confidence: 0.9
     match_type: corpus_consensus
 preparation_notes: 'D,L-alpha-lipoic acid (1 mg/ml); in 2-mercaptoethanol-ethanol

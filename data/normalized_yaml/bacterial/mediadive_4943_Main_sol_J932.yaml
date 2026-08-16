@@ -27,7 +27,7 @@ composition:
     label: Tween 80
   chebi_term:
     id: CHEBI:53426
-    label: tween 80
+    label: "polysorbate 80"
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Distilled water
@@ -39,7 +39,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Mix components thoroughly and adjust pH to 6.0. Distribute the

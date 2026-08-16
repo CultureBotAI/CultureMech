@@ -24,7 +24,7 @@ composition:
     label: (NH4)Cl
   chebi_term:
     id: CHEBI:31206
-    label: (NH4)Cl
+    label: "ammonium chloride"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Sodium beta-glycerophosphate

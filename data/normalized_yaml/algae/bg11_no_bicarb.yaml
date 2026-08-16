@@ -61,7 +61,7 @@ ingredients:
   notes: 'CAS: 6381-92-6; MW: 336.206'
   term:
     id: CHEBI:64734
-    label: ''
+    label: "EDTA disodium salt (anhydrous)"
 - preferred_term: Boric Acid
   concentration:
     value: '0.00286'
@@ -78,7 +78,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:86368
-    label: ''
+    label: "manganese(II) chloride tetrahydrate"
 - preferred_term: Zinc sulfate heptahydrate
   concentration:
     value: '0.000222'
@@ -87,7 +87,7 @@ ingredients:
     CAS-RN lookup'
   term:
     id: CHEBI:32312
-    label: ''
+    label: "zinc sulfate heptahydrate"
 - preferred_term: Sodium Molybdate Dihydrate
   concentration:
     value: '0.00039000000000000005'
@@ -96,7 +96,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:75213
-    label: ''
+    label: "sodium molybdate dihydrate"
 - preferred_term: Copper (II) sulfate pentahydrate
   concentration:
     value: '7.9e-05'
@@ -105,7 +105,7 @@ ingredients:
     CAS-RN lookup'
   term:
     id: CHEBI:31440
-    label: ''
+    label: "copper(II) sulfate pentahydrate"
 - preferred_term: Cobalt(II) nitrate hexahydrate
   concentration:
     value: '0.0494'
@@ -114,7 +114,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:86214
-    label: ''
+    label: "cobalt dinitrate hexahydrate"
 description: For growing cyanobacteria, from Luis; no sodium bicarbonate
 notes: 'Source: FEBA media definitions'
 category: algae

@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.1'
@@ -50,7 +50,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: NH4Cl
   concentration:
     value: '1'
@@ -83,7 +83,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:76209
-    label: ''
+    label: "sodium sulfide nonahydrate"
 - preferred_term: KCl
   concentration:
     value: '0.3'
@@ -116,7 +116,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:32583
-    label: ''
+    label: "calcium sulfate dihydrate"
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '0.2'
@@ -134,7 +134,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: "dinitrogen"
 media_term:
   preferred_term: TOGO Medium M375
   term:

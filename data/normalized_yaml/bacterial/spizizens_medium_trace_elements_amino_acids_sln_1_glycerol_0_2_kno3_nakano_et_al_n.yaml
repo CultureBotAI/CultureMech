@@ -14,40 +14,40 @@ ingredients:
   notes: 'Cross-references: KEGG:glu-L'
   term:
     id: CHEBI:16015
-    label: ''
+    label: "L-glutamic acid"
 - preferred_term: Glycine
   term:
     id: CHEBI:15428
-    label: Glycine
+    label: "glycine"
   concentration:
     value: '0.666045'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gly'
   mediaingredientmech_chebi_term:
     id: CHEBI:15428
-    label: Glycine
+    label: "glycine"
 - preferred_term: L-Methionine
   term:
     id: CHEBI:16643
-    label: L-Methionine
+    label: "L-methionine"
   concentration:
     value: '0.335098'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:met-L'
   mediaingredientmech_chebi_term:
     id: CHEBI:16643
-    label: L-Methionine
+    label: "L-methionine"
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
-    label: Glycerol
+    label: "glycerol"
   concentration:
     value: '108.589'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glyc'
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: Glycerol
+    label: "glycerol"
 - preferred_term: Glutamine
   concentration:
     value: '0.342138'
@@ -59,88 +59,88 @@ ingredients:
 - preferred_term: Cysteine
   term:
     id: CHEBI:15356
-    label: Cysteine
+    label: "cysteine"
   concentration:
     value: '0.412677'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:15356
-    label: Cysteine
+    label: "cysteine"
 - preferred_term: Histidine
   term:
     id: CHEBI:27570
-    label: Histidine
+    label: "histidine"
   concentration:
     value: '0.322269'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:27570
-    label: Histidine
+    label: "histidine"
 - preferred_term: Tryptophan
   term:
     id: CHEBI:27897
-    label: Tryptophan
+    label: "tryptophan"
   concentration:
     value: '0.244822'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:27897
-    label: Tryptophan
+    label: "tryptophan"
 - preferred_term: Alanine
   concentration:
     value: '0.56123'
     unit: MILLIMOLAR
   term:
     id: CHEBI:16977
-    label: ''
+    label: "L-alanine"
 - preferred_term: DL-Tyrosine
   concentration:
     value: '0.275953'
     unit: MILLIMOLAR
   term:
     id: CHEBI:17895
-    label: L-Tyrosine
+    label: "L-tyrosine"
   mediaingredientmech_chebi_term:
     id: CHEBI:17895
-    label: DL-Tyrosine
+    label: "L-tyrosine"
 - preferred_term: Phenylalanine
   concentration:
     value: '0.302682'
     unit: MILLIMOLAR
   term:
     id: CHEBI:17295
-    label: ''
+    label: "L-phenylalanine"
 - preferred_term: Arginine
   term:
     id: CHEBI:29016
-    label: Arginine
+    label: "arginine"
   concentration:
     value: '0.287026'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:29016
-    label: Arginine
+    label: "arginine"
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.049556'
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: ''
+    label: "calcium dichloride"
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '80.3673'
     unit: MILLIMOLAR
   term:
     id: CHEBI:131527
-    label: ''
+    label: "dipotassium hydrogen phosphate"
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.00247985'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75215
-    label: ''
+    label: "sodium molybdate (anhydrous)"
 - preferred_term: Aspartate
   concentration:
     value: '0.375657'
@@ -151,41 +151,41 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:17191
-    label: ''
+    label: "L-isoleucine"
 - preferred_term: Proline
   term:
     id: CHEBI:26271
-    label: Proline
+    label: "proline"
   concentration:
     value: '0.434292'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:26271
-    label: Proline
+    label: "proline"
 - preferred_term: Valine
   concentration:
     value: '0.426803'
     unit: MILLIMOLAR
   term:
     id: CHEBI:16414
-    label: ''
+    label: "L-valine"
 - preferred_term: Asparagine
   term:
     id: CHEBI:22653
-    label: Asparagine
+    label: "asparagine"
   concentration:
     value: '0.378444'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:22653
-    label: Asparagine
+    label: "asparagine"
 - preferred_term: Leucine
   concentration:
     value: '0.381185'
     unit: MILLIMOLAR
   term:
     id: CHEBI:15603
-    label: ''
+    label: "L-leucine"
 - preferred_term: Lysine
   concentration:
     value: '0.342021'
@@ -196,68 +196,68 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:63036
-    label: ''
+    label: "potassium dihydrogen phosphate"
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: "magnesium sulfate"
   concentration:
     value: '0.811458'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: "magnesium sulfate"
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
-    label: Manganese Sulfate
+    label: "manganese(II) sulfate monohydrate"
   concentration:
     value: '0.0044828'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
-    label: Manganese Sulfate
+    label: "manganese(II) sulfate monohydrate"
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.0046211'
     unit: MILLIMOLAR
   term:
     id: CHEBI:35696
-    label: ''
+    label: "cobalt dichloride"
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
-    label: Ammonium Sulfate
+    label: "ammonium sulfate"
   concentration:
     value: '15.1355'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: Ammonium Sulfate
+    label: "ammonium sulfate"
 - preferred_term: Cupric chloride
   concentration:
     value: '0.0025222'
     unit: MILLIMOLAR
   term:
     id: CHEBI:49553
-    label: ''
+    label: "copper(II) chloride"
 - preferred_term: Sodium selenate
   concentration:
     value: '0.00248756'
     unit: MILLIMOLAR
   term:
     id: CHEBI:77775
-    label: ''
+    label: "sodium selenate"
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258
-    label: Sodium citrate
+    label: "sodium citrate"
   concentration:
     value: '3.4002'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:53258
-    label: Sodium citrate
+    label: "sodium citrate"
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.04994'
@@ -268,7 +268,7 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:49976
-    label: ''
+    label: "zinc dichloride"
 - preferred_term: Threonine
   concentration:
     value: '0.419745'
@@ -279,7 +279,7 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:63043
-    label: ''
+    label: "potassium nitrate"
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

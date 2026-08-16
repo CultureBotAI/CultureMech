@@ -15,13 +15,13 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
   concentration:
     value: '240'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -31,7 +31,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: "dipotassium hydrogen phosphate"
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -41,7 +41,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: "ammonium sulfate"
 - preferred_term: HEPES
   term:
     id: CHEBI:46756
@@ -55,7 +55,7 @@ ingredients:
 - preferred_term: Sulfur powder
   term:
     id: CHEBI:33403
-    label: Sulfur powder
+    label: "elemental sulfur"
   concentration:
     value: '2'
     unit: G_PER_L
@@ -65,33 +65,33 @@ ingredients:
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: "magnesium dichloride hexahydrate"
   concentration:
     value: '0.609909'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: "magnesium dichloride hexahydrate"
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
-    label: NaHCO3
+    label: "sodium hydrogencarbonate"
   concentration:
     value: '0.420035'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: NaHCO3
+    label: "sodium hydrogencarbonate"
 - preferred_term: Sodium formate
   term:
     id: CHEBI:62965
-    label: Sodium formate
+    label: "sodium formate"
   concentration:
     value: '3.40035'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62965
-    label: Sodium formate
+    label: "sodium formate"
 - preferred_term: Yeast extract
   concentration:
     value: '0.2'
@@ -102,27 +102,27 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:76208
-    label: ''
+    label: "sodium sulfide (anhydrous)"
 - preferred_term: EDTA
   term:
     id: CHEBI:64755
-    label: EDTA
+    label: "EDTA(2-)"
   concentration:
     value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:64755
-    label: EDTA
+    label: "EDTA(2-)"
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: "iron(2+) sulfate heptahydrate"
   concentration:
     value: '2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: ZnSO4
   term:
     id: CHEBI:35176
@@ -132,7 +132,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:35176
-    label: ZnSO4
+    label: "zinc sulfate"
 - preferred_term: MnCl2
   concentration:
     value: '0.03'
@@ -149,57 +149,57 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: H3BO3
+    label: "boric acid"
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
-    label: CoCl2 x 6 H2O
+    label: "cobalt dichloride"
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:35696
-    label: CoCl2 x 6 H2O
+    label: "cobalt dichloride"
 - preferred_term: CuCl2 x 5 H2O
   term:
     id: CHEBI:91245
-    label: CuCl2 x 5 H2O
+    label: "copper(II) chloride pentahydrate"
   concentration:
     value: '0.01'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:91245
-    label: CuCl2 x 5 H2O
+    label: "copper(II) chloride pentahydrate"
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
-    label: NiCl2 x 6 H2O
+    label: "nickel dichloride"
   concentration:
     value: '0.02'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34887
-    label: NiCl2 x 6 H2O
+    label: "nickel dichloride"
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
+    label: "sodium molybdate dihydrate"
   concentration:
     value: '0.02'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
+    label: "sodium molybdate dihydrate"
 - preferred_term: Thiamin
   term:
     id: CHEBI:18385
-    label: Thiamin
+    label: "thiamine(1+)"
   concentration:
     value: '0.0125'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:18385
-    label: Thiamin
+    label: "thiamine(1+)"
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -213,63 +213,63 @@ ingredients:
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
-    label: Biotin
+    label: "biotin"
   concentration:
     value: '0.005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
-    label: Biotin
+    label: "biotin"
 - preferred_term: PABA
   term:
     id: CHEBI:30753
-    label: PABA
+    label: "4-aminobenzoic acid"
   concentration:
     value: '0.0125'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30753
-    label: PABA
+    label: "4-aminobenzoic acid"
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
-    label: Nicotinic acid
+    label: "nicotinic acid"
   concentration:
     value: '0.0125'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15940
-    label: Nicotinic acid
+    label: "nicotinic acid"
 - preferred_term: Pyridoxine
   term:
     id: CHEBI:16709
-    label: Pyridoxine
+    label: "pyridoxine"
   concentration:
     value: '0.025'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16709
-    label: Pyridoxine
+    label: "pyridoxine"
 - preferred_term: Folic acid
   term:
     id: CHEBI:27470
-    label: Folic acid
+    label: "folic acid"
   concentration:
     value: '0.005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:27470
-    label: Folic acid
+    label: "folic acid"
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
-    label: Riboflavin
+    label: "riboflavin"
   concentration:
     value: '0.0125'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17015
-    label: Riboflavin
+    label: "riboflavin"
 - preferred_term: B12
   concentration:
     value: '0.00125'

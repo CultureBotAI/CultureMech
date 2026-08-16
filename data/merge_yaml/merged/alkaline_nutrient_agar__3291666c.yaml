@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 1000.0, 100.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: Agar, if necessary
   concentration:
     value: '15'
@@ -52,10 +52,10 @@ ingredients:
     component'
   term:
     id: CHEBI:29377
-    label: Na2CO3 anhydrous
+    label: "sodium carbonate"
   mediaingredientmech_chebi_term:
     id: CHEBI:29377
-    label: Na2CO3 anhydrous
+    label: "sodium carbonate"
 media_term:
   preferred_term: TOGO Medium M2420
   term:

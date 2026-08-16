@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 4 duplicates: 940.0, 1.0, 99.0, 99.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: K2HPO4
   concentration:
     value: '3.0'
@@ -146,7 +146,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: NaHCO3
   concentration:
     value: '10'
@@ -201,10 +201,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:28869
-    label: Menadione
+    label: "menadione"
   mediaingredientmech_chebi_term:
     id: CHEBI:28869
-    label: Menadione
+    label: "menadione"
 media_term:
   preferred_term: TOGO Medium M2061
   term:

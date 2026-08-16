@@ -13,7 +13,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: "carbon dioxide"
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -21,7 +21,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: "dinitrogen"
 - preferred_term: Distilled water
   concentration:
     value: '975.0'
@@ -30,10 +30,10 @@ ingredients:
     Inorganic compound [Merged 5 duplicates: 845.0, 10.0, 100.0, 10.0, 10.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -110,7 +110,7 @@ ingredients:
   notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:91248
-    label: ''
+    label: "L-cysteine hydrochloride hydrate"
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
@@ -118,7 +118,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: "dinitrogen"
 - preferred_term: Na2S・9H2O
   concentration:
     value: '0.3'
@@ -127,7 +127,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:76209
-    label: ''
+    label: "sodium sulfide nonahydrate"
 media_term:
   preferred_term: TOGO Medium M541
   term:

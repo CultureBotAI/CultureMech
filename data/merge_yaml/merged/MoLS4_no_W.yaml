@@ -15,7 +15,7 @@ ingredients:
   notes: 'CAS: 10213-10-2; MW: 329.85; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:63939
-    label: ''
+    label: "sodium tungstate dihydrate"
 description: Lactate-sulfate media for sulfate-reducing bacteria with no W
 notes: 'Source: FEBA media definitions'
 category: specialized

@@ -27,7 +27,7 @@ composition:
     label: Mannitol
   chebi_term:
     id: CHEBI:29864
-    label: Mannitol
+    label: "mannitol"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -39,7 +39,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Agar
@@ -52,7 +52,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'For solid media add agar at a concentration of 12.0 g/l

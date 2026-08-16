@@ -19,7 +19,7 @@ ingredients:
   notes: 'CAS: 1132-61-2; MW: 209.2633; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:44115
-    label: ''
+    label: "3-(N-morpholino)propanesulfonic acid"
 - preferred_term: Tricine
   concentration:
     value: '4'
@@ -27,7 +27,7 @@ ingredients:
   notes: 'CAS: 5704-04-1; MW: 179.17; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:39063
-    label: ''
+    label: "N-tris(hydroxymethyl)methylglycine"
 - preferred_term: Potassium phosphate dibasic
   concentration:
     value: '1.32'
@@ -43,7 +43,7 @@ ingredients:
   notes: 'CAS: 7782-63-0; MW: 278.01; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:75836
-    label: ''
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: Aluminum potassium sulfate dodecahydrate
   concentration:
     value: '0.276'
@@ -51,7 +51,7 @@ ingredients:
   notes: 'CAS: 7784-24-9; MW: 474.39; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:86465
-    label: ''
+    label: "potassium aluminium sulfate dodecahydrate"
 - preferred_term: Calcium chloride
   concentration:
     value: '0.0005'
@@ -68,7 +68,7 @@ ingredients:
   notes: 'CAS: 7791-18-6; MW: 203.3; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:86345
-    label: ''
+    label: "magnesium dichloride hexahydrate"
 - preferred_term: Sodium Chloride
   concentration:
     value: '50'
@@ -84,7 +84,7 @@ ingredients:
   notes: 'CAS: 12027-67-7; MW: 1235.86'
   term:
     id: CHEBI:91249
-    label: ''
+    label: "ammonium molybdate"
 - preferred_term: Boric Acid
   concentration:
     value: '4.00E-07'
@@ -100,7 +100,7 @@ ingredients:
   notes: 'CAS: 7791-13-1; MW: 237.93; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:53503
-    label: ''
+    label: "cobalt chloride hexahydrate"
 - preferred_term: Copper (II) sulfate pentahydrate
   concentration:
     value: '1.00E-08'
@@ -108,7 +108,7 @@ ingredients:
   notes: 'CAS: 7758-99-8; MW: 249.69; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:31440
-    label: ''
+    label: "copper(II) sulfate pentahydrate"
 - preferred_term: Manganese (II) chloride tetrahydrate
   concentration:
     value: '8.00E-08'
@@ -116,7 +116,7 @@ ingredients:
   notes: 'CAS: 13446-34-9; MW: 197.91; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:86368
-    label: ''
+    label: "manganese(II) chloride tetrahydrate"
 - preferred_term: Zinc sulfate heptahydrate
   concentration:
     value: '1.00E-08'
@@ -124,7 +124,7 @@ ingredients:
   notes: 'CAS: 7446-20-0; MW: 287.56; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:32312
-    label: ''
+    label: "zinc sulfate heptahydrate"
 description: MOPS minimal media with Glucose and no nitrogen source
 notes: 'Source: FEBA media definitions'
 category: specialized

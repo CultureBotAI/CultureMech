@@ -24,33 +24,33 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
   concentration:
     value: '2.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
-    label: D-Glucose
+    label: "D-glucose"
   concentration:
     value: '3.6'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17634
-    label: D-Glucose
+    label: "D-glucose"
 - preferred_term: DL-Dithiothreitol
   term:
     id: CHEBI:18320
-    label: DL-Dithiothreitol
+    label: "1,4-dithiothreitol"
   concentration:
     value: '0.15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:18320
-    label: DL-Dithiothreitol
+    label: "1,4-dithiothreitol"
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

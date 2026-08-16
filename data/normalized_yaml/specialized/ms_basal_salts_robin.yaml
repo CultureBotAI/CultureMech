@@ -11,7 +11,7 @@ ingredients:
   notes: 'CAS: 6484-52-2; MW: 80.04; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:63038
-    label: ''
+    label: "ammonium nitrate"
 - preferred_term: Boric Acid
   concentration:
     value: '6.2'
@@ -36,7 +36,7 @@ ingredients:
   notes: 'CAS: 7791-13-1; MW: 237.93; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:53503
-    label: ''
+    label: "cobalt chloride hexahydrate"
 - preferred_term: Copper (II) sulfate pentahydrate
   concentration:
     value: '0.025'
@@ -44,7 +44,7 @@ ingredients:
   notes: 'CAS: 7758-99-8; MW: 249.69; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:31440
-    label: ''
+    label: "copper(II) sulfate pentahydrate"
 - preferred_term: EDTA (disodium salt)
   concentration:
     value: '37.26'
@@ -52,7 +52,7 @@ ingredients:
   notes: 'CAS: 6381-92-6; MW: 336.206'
   term:
     id: CHEBI:64734
-    label: ''
+    label: "EDTA disodium salt (anhydrous)"
 - preferred_term: Iron (II) sulfate heptahydrate
   concentration:
     value: '27.8'
@@ -60,7 +60,7 @@ ingredients:
   notes: 'CAS: 7782-63-0; MW: 278.01; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:75836
-    label: ''
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: Magnesium sulfate
   concentration:
     value: '180.7'
@@ -85,7 +85,7 @@ ingredients:
   notes: 'CAS: 7681-11-0; MW: 166.0; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:8346
-    label: ''
+    label: "potassium iodide"
 - preferred_term: Potassium nitrate
   concentration:
     value: '1900'
@@ -93,7 +93,7 @@ ingredients:
   notes: 'CAS: 7757-79-1; MW: 101.1032; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:63043
-    label: ''
+    label: "potassium nitrate"
 - preferred_term: Potassium phosphate monobasic
   concentration:
     value: '1250'
@@ -110,7 +110,7 @@ ingredients:
   notes: 'CAS: 7446-20-0; MW: 287.56; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:32312
-    label: ''
+    label: "zinc sulfate heptahydrate"
 description: Murashige and Skoog Basal Salts Medium from Robin
 notes: 'Source: FEBA media definitions'
 category: specialized

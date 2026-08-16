@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 3 duplicates: 850.0, 100.0, 100.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: Cellobiose
   concentration:
     value: '0.5'
@@ -49,7 +49,7 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Undefined component'
   term:
     id: CHEBI:28017
-    label: ''
+    label: "starch"
 - preferred_term: Agar
   concentration:
     value: '18'
@@ -172,7 +172,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: (NH4)2SO4
   concentration:
     value: '1.2'

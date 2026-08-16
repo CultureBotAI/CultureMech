@@ -13,7 +13,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: "carbon dioxide"
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -21,7 +21,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: "dinitrogen"
 - preferred_term: Distilled water
   concentration:
     value: '1000.0'
@@ -30,10 +30,10 @@ ingredients:
     Inorganic compound [Merged 2 duplicates: 900.0, 100.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -62,7 +62,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: NH4Cl
   concentration:
     value: '0.535'
@@ -136,7 +136,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86158
-    label: ''
+    label: "calcium chloride dihydrate"
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '4'
@@ -145,7 +145,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:86345
-    label: ''
+    label: "magnesium dichloride hexahydrate"
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
@@ -153,7 +153,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: "dinitrogen"
 media_term:
   preferred_term: TOGO Medium M882
   term:

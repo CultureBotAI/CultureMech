@@ -56,7 +56,7 @@ composition:
     label: Tap water
   chebi_term:
     id: CHEBI:15377
-    label: Tap water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Pyruvate
@@ -68,7 +68,7 @@ composition:
     label: Pyruvate
   chebi_term:
     id: CHEBI:15361
-    label: Pyruvate
+    label: "pyruvate"
     confidence: 0.9
     match_type: corpus_consensus
 preparation_notes: 'Adjust pH to 7.0.

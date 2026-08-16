@@ -20,7 +20,7 @@ composition:
     label: MgCl2 x 6 H2O
   chebi_term:
     id: CHEBI:86345
-    label: magnesium chloride hexahydrate
+    label: "magnesium dichloride hexahydrate"
     match_type: corpus_consensus
 preparation_notes: Use medium 993 supplemented with Yeast extract (0.5%) and MgCl2
   x 6 H20 (10%).

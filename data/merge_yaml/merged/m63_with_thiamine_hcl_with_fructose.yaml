@@ -9,48 +9,48 @@ ingredients:
 - preferred_term: D-Fructose
   term:
     id: CHEBI:15824
-    label: D-Fructose
+    label: "D-fructose"
   concentration:
     value: '22.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:fru'
   mediaingredientmech_chebi_term:
     id: CHEBI:15824
-    label: D-Fructose
+    label: "D-fructose"
 - preferred_term: Sodium hydroxide
   concentration:
     value: '75.0'
     unit: MILLIMOLAR
   term:
     id: CHEBI:32145
-    label: ''
+    label: "sodium hydroxide"
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
-    label: Thiamine HCl
+    label: "thiamine hydrochloride"
   concentration:
     value: '0.0033'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:49105
-    label: Thiamine HCl
+    label: "thiamine hydrochloride"
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: "magnesium sulfate"
   concentration:
     value: '0.16'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: "magnesium sulfate"
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.0039'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75832
-    label: ''
+    label: "iron(2+) sulfate (anhydrous)"
 - preferred_term: Sodium dihydrogen phosphate
   concentration:
     value: '11.0'
@@ -64,13 +64,13 @@ ingredients:
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
-    label: Ammonium Sulfate
+    label: "ammonium sulfate"
   concentration:
     value: '15.0'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: Ammonium Sulfate
+    label: "ammonium sulfate"
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

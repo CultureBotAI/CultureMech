@@ -9,18 +9,18 @@ ingredients:
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
-    label: D-Glucose
+    label: "D-glucose"
   concentration:
     value: '11.1012'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
   mediaingredientmech_chebi_term:
     id: CHEBI:17634
-    label: D-Glucose
+    label: "D-glucose"
 - preferred_term: Thiamine
   term:
     id: CHEBI:26948
-    label: Thiamine
+    label: "vitamin B1"
   concentration:
     value: '0.0037684'
     unit: MILLIMOLAR
@@ -44,51 +44,51 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: ''
+    label: "calcium dichloride"
 - preferred_term: Sodium sulfate
   concentration:
     value: '0.0774429'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32149
-    label: Sodium sulfate
+    label: "sodium sulfate"
   term:
     id: CHEBI:32149
-    label: ''
+    label: "sodium sulfate"
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '42.2654'
     unit: MILLIMOLAR
   term:
     id: CHEBI:34683
-    label: ''
+    label: "disodium hydrogenphosphate"
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
-    label: Sodium Chloride
+    label: "sodium chloride"
   concentration:
     value: '51.3347'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: Sodium Chloride
+    label: "sodium chloride"
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '22.0449'
     unit: MILLIMOLAR
   term:
     id: CHEBI:63036
-    label: ''
+    label: "potassium dihydrogen phosphate"
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
-    label: Ammonium Sulfate
+    label: "ammonium sulfate"
   concentration:
     value: '15.1355'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: Ammonium Sulfate
+    label: "ammonium sulfate"
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.00184979'

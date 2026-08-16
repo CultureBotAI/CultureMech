@@ -49,7 +49,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: FeSO4 x 7 H2O
@@ -61,7 +61,7 @@ composition:
     label: FeSO4 x 7 H2O
   chebi_term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: "iron(2+) sulfate heptahydrate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Yeast extract
@@ -80,7 +80,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Mix ingredients except FeSO4 x 7H2O, adjust pH to 1.2 with H2SO4

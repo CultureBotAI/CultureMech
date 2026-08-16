@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 3 duplicates: 900.0, 1000.0, 1000.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '3.15'
@@ -70,7 +70,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: NH4Cl
   concentration:
     value: '1'
@@ -141,7 +141,7 @@ ingredients:
     label: sodium acetate
   mediaingredientmech_chebi_term:
     id: CHEBI:32954
-    label: Na-acetate
+    label: "sodium acetate"
 - preferred_term: Methanol
   concentration:
     value: '5'
@@ -174,7 +174,7 @@ ingredients:
     label: sodium formate
   mediaingredientmech_chebi_term:
     id: CHEBI:62965
-    label: Na-formate
+    label: "sodium formate"
 - preferred_term: L-Cysteine-HCl x H2O
   concentration:
     value: '0.5'
@@ -193,7 +193,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: "carbon dioxide"
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -201,7 +201,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: ''
+    label: "dihydrogen"
 - preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '0.01'
@@ -234,10 +234,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: "iron(2+) sulfate heptahydrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: NiCl2 x 6 H2O
   concentration:
     value: '0.03'
@@ -330,10 +330,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63939
-    label: sodium tungstate
+    label: "sodium tungstate dihydrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:63939
-    label: sodium tungstate
+    label: "sodium tungstate dihydrate"
 - preferred_term: MnSO4 x H2O
   concentration:
     value: '0.5'
@@ -342,10 +342,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86364
-    label: MnSO4 x H2O
+    label: "manganese(II) sulfate monohydrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
-    label: MnSO4 x H2O
+    label: "manganese(II) sulfate monohydrate"
 - preferred_term: Biotin
   concentration:
     value: '2'
@@ -386,10 +386,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:30961
-    label: Pyridoxine-HCl
+    label: "pyridoxine hydrochloride"
   mediaingredientmech_chebi_term:
     id: CHEBI:30961
-    label: Pyridoxine-HCl
+    label: "pyridoxine hydrochloride"
 - preferred_term: Folic acid
   concentration:
     value: '2'
@@ -453,7 +453,7 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Defined component'
   term:
     id: CHEBI:31345
-    label: ''
+    label: "Calcium pantothenate"
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
@@ -461,7 +461,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: "dinitrogen"
 media_term:
   preferred_term: TOGO Medium M2658
   term:

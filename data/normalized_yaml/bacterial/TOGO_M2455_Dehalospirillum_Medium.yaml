@@ -15,10 +15,10 @@ ingredients:
     20.0, 40.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: Yeast extract
   concentration:
     value: '2'
@@ -59,7 +59,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: NH4Cl
   concentration:
     value: '0.25'
@@ -115,7 +115,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: "dinitrogen"
 - preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '36'
@@ -148,10 +148,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
-    label: MnCl2 x 4 H2O
+    label: "manganese(II) chloride tetrahydrate"
   term:
     id: CHEBI:86368
-    label: ''
+    label: "manganese(II) chloride tetrahydrate"
 - preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '190'
@@ -238,10 +238,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63939
-    label: sodium tungstate
+    label: "sodium tungstate dihydrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:63939
-    label: sodium tungstate
+    label: "sodium tungstate dihydrate"
 - preferred_term: NaOH
   concentration:
     value: '0.5'
@@ -300,10 +300,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:30961
-    label: Pyridoxine-HCl
+    label: "pyridoxine hydrochloride"
   mediaingredientmech_chebi_term:
     id: CHEBI:30961
-    label: Pyridoxine-HCl
+    label: "pyridoxine hydrochloride"
 - preferred_term: Folic acid
   concentration:
     value: '2'
@@ -369,7 +369,7 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Defined component'
   term:
     id: CHEBI:31345
-    label: ''
+    label: "Calcium pantothenate"
 - preferred_term: Calcium pantothenate
   concentration:
     value: '100'
@@ -399,10 +399,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
+    label: "thiamine hydrochloride dihydrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
+    label: "thiamine hydrochloride dihydrate"
 - preferred_term: D(+)-Biotin
   concentration:
     value: '20'
@@ -433,7 +433,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: "carbon dioxide"
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -441,7 +441,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: "dinitrogen"
 - preferred_term: Na-pyruvate
   concentration:
     value: '4.5'
@@ -453,7 +453,7 @@ ingredients:
     label: sodium pyruvate
   mediaingredientmech_chebi_term:
     id: CHEBI:50144
-    label: Na-pyruvate
+    label: "sodium pyruvate"
 - preferred_term: Na2-fumarate
   concentration:
     value: '6.4'
@@ -464,7 +464,7 @@ ingredients:
     label: disodium fumarate
   mediaingredientmech_chebi_term:
     id: CHEBI:115156
-    label: Na2-fumarate
+    label: "disodium fumarate"
 - preferred_term: 0.1 N H2SO4
   concentration:
     value: '1'
@@ -479,10 +479,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: "iron(2+) sulfate heptahydrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: L-Cysteine-HCl x H2O
   concentration:
     value: '50'

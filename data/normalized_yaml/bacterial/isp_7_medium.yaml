@@ -19,13 +19,13 @@ ingredients:
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
-    label: Glycerol
+    label: "glycerol"
   concentration:
     value: '15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: Glycerol
+    label: "glycerol"
 applications:
 - Microbial cultivation
 curation_history:

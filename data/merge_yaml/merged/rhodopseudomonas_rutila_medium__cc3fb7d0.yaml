@@ -14,10 +14,10 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.2'
@@ -40,7 +40,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86158
-    label: ''
+    label: "calcium chloride dihydrate"
 - preferred_term: KH2PO4
   concentration:
     value: '1'
@@ -52,7 +52,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: FeSO4・7H2O
   concentration:
     value: '0.5'
@@ -61,7 +61,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:75836
-    label: ''
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: NaHCO3
   concentration:
     value: '0.5'
@@ -82,7 +82,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:35696
-    label: ''
+    label: "cobalt dichloride"
 - preferred_term: Biotin
   concentration:
     value: '0.01'
@@ -103,7 +103,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:49105
-    label: ''
+    label: "thiamine hydrochloride"
 - preferred_term: Nicotinic acid
   concentration:
     value: '1'
@@ -123,7 +123,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86360
-    label: ''
+    label: "manganese(II) sulfate"
 - preferred_term: Sodium glutamate
   concentration:
     value: '2'

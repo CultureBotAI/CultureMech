@@ -19,10 +19,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 260.0, 40.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: gelrite (Gellan Gum)
   concentration:
     value: '5'
@@ -47,7 +47,7 @@ ingredients:
     component'
   term:
     id: CHEBI:34683
-    label: ''
+    label: "disodium hydrogenphosphate"
 - preferred_term: N--Acetyl--D--glucosamine (Sigma)
   concentration:
     value: '2'

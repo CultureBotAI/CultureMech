@@ -20,7 +20,7 @@ composition:
     label: K2HPO4 x 3 H2O
   chebi_term:
     id: CHEBI:131527
-    label: K2HPO4 x 3 H2O
+    label: "dipotassium hydrogen phosphate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: KH2PO4
@@ -32,7 +32,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: MgSO4 x 7 H2O
@@ -56,7 +56,7 @@ composition:
     label: Thiamine
   chebi_term:
     id: CHEBI:26948
-    label: Thiamine
+    label: "vitamin B1"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Tap water
@@ -68,7 +68,7 @@ composition:
     label: Tap water
   chebi_term:
     id: CHEBI:15377
-    label: Tap water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Adjust pH to 7.0. n-Octane is evaporated in a desiccator as sole

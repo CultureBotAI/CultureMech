@@ -24,23 +24,23 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
 - preferred_term: (NH4) citrate
   concentration:
     value: '1'
     unit: G_PER_L
   term:
     id: CHEBI:63037
-    label: ''
+    label: "triammonium citrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:63037
-    label: (NH4) citrate
+    label: "triammonium citrate"
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -50,27 +50,27 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: "dipotassium hydrogen phosphate"
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: "magnesium sulfate heptahydrate"
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: "magnesium sulfate heptahydrate"
 - preferred_term: FeCl3 x 6 H2O
   term:
     id: CHEBI:86254
-    label: FeCl3 x 6 H2O
+    label: "iron trichloride hexahydrate"
   concentration:
     value: '0.01'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86254
-    label: FeCl3 x 6 H2O
+    label: "iron trichloride hexahydrate"
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

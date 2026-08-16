@@ -59,7 +59,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: pH 7.0. Sterilize by autoclaving. Medium may be solidified by adding

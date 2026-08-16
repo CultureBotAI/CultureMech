@@ -15,13 +15,13 @@ ingredients:
 - preferred_term: Columbia blood agar base
   term:
     id: CHEBI:2509
-    label: Columbia blood agar base
+    label: "agar"
   concentration:
     value: '44'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Columbia blood agar base
+    label: "agar"
 - preferred_term: Sheep blood
   concentration:
     value: '100'

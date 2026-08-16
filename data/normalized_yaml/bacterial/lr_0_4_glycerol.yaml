@@ -9,55 +9,55 @@ ingredients:
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
-    label: Glycerol
+    label: "glycerol"
   concentration:
     value: '43.436'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glyc'
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: Glycerol
+    label: "glycerol"
 - preferred_term: Sodium hydroxide
   concentration:
     value: '2.5006'
     unit: MILLIMOLAR
   term:
     id: CHEBI:32145
-    label: ''
+    label: "sodium hydroxide"
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '17.6359'
     unit: MILLIMOLAR
   term:
     id: CHEBI:63036
-    label: ''
+    label: "potassium dihydrogen phosphate"
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: "magnesium sulfate"
   concentration:
     value: '0.02168'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: "magnesium sulfate"
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.000108'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75832
-    label: ''
+    label: "iron(2+) sulfate (anhydrous)"
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
-    label: Ammonium Sulfate
+    label: "ammonium sulfate"
   concentration:
     value: '0.12676'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: Ammonium Sulfate
+    label: "ammonium sulfate"
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

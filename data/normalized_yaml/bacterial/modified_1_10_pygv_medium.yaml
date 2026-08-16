@@ -24,13 +24,13 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
   concentration:
     value: '8.6881'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -40,7 +40,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: "dipotassium hydrogen phosphate"
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -50,7 +50,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -60,47 +60,47 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: "ammonium chloride"
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
   concentration:
     value: '12'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: "magnesium dichloride hexahydrate"
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: "magnesium dichloride hexahydrate"
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: "calcium chloride dihydrate"
   concentration:
     value: '1.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: "calcium chloride dihydrate"
 - preferred_term: Vitamine B12
   concentration:
     value: '0.1'
     unit: G_PER_L
   term:
     id: CHEBI:176843
-    label: Vitamin B12
+    label: "vitamin B12"
   mediaingredientmech_chebi_term:
     id: CHEBI:176843
-    label: Vitamine B12
+    label: "vitamin B12"
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -148,63 +148,63 @@ solutions:
   - preferred_term: Biotin
     term:
       id: CHEBI:15956
-      label: Biotin
+      label: "biotin"
     concentration:
       value: '0.1'
       unit: G_PER_L
     mediaingredientmech_chebi_term:
       id: CHEBI:15956
-      label: Biotin
+      label: "biotin"
   - preferred_term: p-Aminobenzoic acid
     term:
       id: CHEBI:30753
-      label: p-Aminobenzoic acid
+      label: "4-aminobenzoic acid"
     concentration:
       value: '0.3'
       unit: G_PER_L
     mediaingredientmech_chebi_term:
       id: CHEBI:30753
-      label: p-Aminobenzoic acid
+      label: "4-aminobenzoic acid"
   - preferred_term: Folic acid
     term:
       id: CHEBI:27470
-      label: Folic acid
+      label: "folic acid"
     concentration:
       value: '0.5'
       unit: G_PER_L
     mediaingredientmech_chebi_term:
       id: CHEBI:27470
-      label: Folic acid
+      label: "folic acid"
   - preferred_term: Thiamine HCl
     term:
       id: CHEBI:49105
-      label: Thiamine HCl
+      label: "thiamine hydrochloride"
     concentration:
       value: '0.5'
       unit: G_PER_L
     mediaingredientmech_chebi_term:
       id: CHEBI:49105
-      label: Thiamine HCl
+      label: "thiamine hydrochloride"
   - preferred_term: Riboflavin
     term:
       id: CHEBI:17015
-      label: Riboflavin
+      label: "riboflavin"
     concentration:
       value: '0.5'
       unit: G_PER_L
     mediaingredientmech_chebi_term:
       id: CHEBI:17015
-      label: Riboflavin
+      label: "riboflavin"
   - preferred_term: Pyridoxine hydrochloride
     term:
       id: CHEBI:30961
-      label: Pyridoxine hydrochloride
+      label: "pyridoxine hydrochloride"
     concentration:
       value: '1.5'
       unit: G_PER_L
     mediaingredientmech_chebi_term:
       id: CHEBI:30961
-      label: Pyridoxine hydrochloride
+      label: "pyridoxine hydrochloride"
   concentration:
     value: '1'
     unit: ML_PER_L

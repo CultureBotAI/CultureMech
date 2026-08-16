@@ -15,23 +15,23 @@ ingredients:
 - preferred_term: Brewer anaerobic agar
   term:
     id: CHEBI:2509
-    label: Brewer anaerobic agar
+    label: "agar"
   concentration:
     value: '58'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Brewer anaerobic agar
+    label: "agar"
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
   concentration:
     value: '20'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
 applications:
 - Microbial cultivation
 curation_history:

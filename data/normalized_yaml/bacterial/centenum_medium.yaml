@@ -22,7 +22,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: "dipotassium hydrogen phosphate"
 - preferred_term: MgSO4
   term:
     id: CHEBI:32599
@@ -32,7 +32,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: MgSO4
+    label: "magnesium sulfate"
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -40,33 +40,33 @@ ingredients:
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
-    label: Vitamin B12
+    label: "cyanocob(III)alamin"
   concentration:
     value: 2e-05
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17439
-    label: Vitamin B12
+    label: "cyanocob(III)alamin"
 - preferred_term: Tap water
   term:
     id: CHEBI:15377
-    label: Tap water
+    label: "water"
   concentration:
     value: '1000'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Tap water
+    label: "water"
 - preferred_term: Pyruvate
   term:
     id: CHEBI:15361
-    label: Pyruvate
+    label: "pyruvate"
   concentration:
     value: '1.741'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15361
-    label: Pyruvate
+    label: "pyruvate"
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

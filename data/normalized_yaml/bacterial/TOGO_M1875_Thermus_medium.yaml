@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.1'
@@ -50,10 +50,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63005
-    label: ''
+    label: "sodium nitrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:63005
-    label: NaNO3
+    label: "sodium nitrate"
 - preferred_term: KNO3
   concentration:
     value: '0.1'
@@ -98,10 +98,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:64243
-    label: Sodium glutamate monohydrate
+    label: "monosodium L-glutamate"
   mediaingredientmech_chebi_term:
     id: CHEBI:64243
-    label: Sodium glutamate monohydrate
+    label: "monosodium L-glutamate"
 - preferred_term: Bacto Yeast Extract (Difco)
   concentration:
     value: '1'
@@ -167,7 +167,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86368
-    label: ''
+    label: "manganese(II) chloride tetrahydrate"
 - preferred_term: CoCl2·6H2O
   concentration:
     value: '0.024'
@@ -176,7 +176,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:35696
-    label: ''
+    label: "cobalt dichloride"
 - preferred_term: NiCl2·6H2O
   concentration:
     value: '0.12'
@@ -260,7 +260,7 @@ ingredients:
     label: sodium selenate
   mediaingredientmech_chebi_term:
     id: CHEBI:77775
-    label: Na2SeO4
+    label: "sodium selenate"
 media_term:
   preferred_term: TOGO Medium M1875
   term:

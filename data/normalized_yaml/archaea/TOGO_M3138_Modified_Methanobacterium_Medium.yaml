@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 3 duplicates: 1000.0, 990.0, 1000.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.4'
@@ -65,7 +65,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: NH4Cl
   concentration:
     value: '0.4'
@@ -112,7 +112,7 @@ ingredients:
     label: sodium acetate
   mediaingredientmech_chebi_term:
     id: CHEBI:32954
-    label: Na-acetate
+    label: "sodium acetate"
 - preferred_term: Na-formate
   concentration:
     value: '2'
@@ -123,7 +123,7 @@ ingredients:
     label: sodium formate
   mediaingredientmech_chebi_term:
     id: CHEBI:62965
-    label: Na-formate
+    label: "sodium formate"
 - preferred_term: Calf brains
   term:
     id: UBERON:0000955
@@ -203,7 +203,7 @@ ingredients:
 - preferred_term: Disodium phosphate
   term:
     id: CHEBI:34683
-    label: disodium hydrogen phosphate
+    label: "disodium hydrogenphosphate"
   concentration:
     value: '2.5'
     unit: G_PER_L
@@ -248,7 +248,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: "carbon dioxide"
 - preferred_term: N2 gas
   notes: 'Properties: ガス'
   concentration:
@@ -261,7 +261,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: ''
+    label: "dihydrogen"
 - preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '36'
@@ -294,10 +294,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
-    label: MnCl2 x 4 H2O
+    label: "manganese(II) chloride tetrahydrate"
   term:
     id: CHEBI:86368
-    label: ''
+    label: "manganese(II) chloride tetrahydrate"
 - preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '190'
@@ -426,10 +426,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
+    label: "thiamine hydrochloride dihydrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
+    label: "thiamine hydrochloride dihydrate"
 - preferred_term: D(+)-Biotin
   concentration:
     value: '20'

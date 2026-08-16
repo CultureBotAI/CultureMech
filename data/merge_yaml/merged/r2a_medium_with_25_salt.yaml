@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 167.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '61.05'
@@ -70,7 +70,7 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Undefined component'
   term:
     id: CHEBI:28017
-    label: ''
+    label: "starch"
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '0.5'
@@ -106,7 +106,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: "calcium chloride dihydrate"
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '39'
@@ -115,7 +115,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86345
-    label: ''
+    label: "magnesium dichloride hexahydrate"
 - preferred_term: KCl
   concentration:
     value: '6'

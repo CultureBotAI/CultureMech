@@ -26,10 +26,10 @@ ingredients:
     component'
   term:
     id: CHEBI:17754
-    label: Glycerol
+    label: "glycerol"
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: Glycerol
+    label: "glycerol"
 - preferred_term: Magnesium Sulfate
   concentration:
     value: '0.24'
@@ -78,10 +78,10 @@ ingredients:
     component, Organic compound'
   term:
     id: CHEBI:72449
-    label: Malachite green
+    label: "malachite green"
   mediaingredientmech_chebi_term:
     id: CHEBI:72449
-    label: Malachite green
+    label: "malachite green"
 - preferred_term: Potato Flour
   concentration:
     value: '30'

@@ -20,7 +20,7 @@ composition:
     label: Glucose
   chebi_term:
     id: CHEBI:17234
-    label: D-glucose
+    label: "glucose"
     confidence: 0.9
     match_type: manual_curated
 - preferred_term: Yeast extract
@@ -46,7 +46,7 @@ composition:
     label: Glycerol
   chebi_term:
     id: CHEBI:17754
-    label: Glycerol
+    label: "glycerol"
     match_type: corpus_consensus
 - preferred_term: Glycerol monostearate
   concentration:
@@ -69,7 +69,7 @@ composition:
     label: Tween 60
   chebi_term:
     id: CHEBI:53425
-    label: tween 60
+    label: "polysorbate 60"
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Cow's milk
@@ -88,7 +88,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -100,7 +100,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Autoclave at 110C for 15 min.

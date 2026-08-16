@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.5'
@@ -75,10 +75,10 @@ ingredients:
   notes: 'Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:86466
-    label: ''
+    label: "potassium tetrathionate"
   mediaingredientmech_chebi_term:
     id: CHEBI:86466
-    label: K2S4O6
+    label: "potassium tetrathionate"
 - preferred_term: H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
@@ -99,7 +99,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:75836
-    label: ''
+    label: "iron(2+) sulfate heptahydrate"
 media_term:
   preferred_term: TOGO Medium M704
   term:

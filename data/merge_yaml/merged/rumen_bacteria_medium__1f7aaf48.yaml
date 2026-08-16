@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 960.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: Yeast extract
   concentration:
     value: '0.5'
@@ -55,7 +55,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:76209
-    label: ''
+    label: "sodium sulfide nonahydrate"
 - preferred_term: Na2CO3
   concentration:
     value: '4'
@@ -76,10 +76,10 @@ ingredients:
     component'
   term:
     id: CHEBI:17754
-    label: Glycerol
+    label: "glycerol"
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: Glycerol
+    label: "glycerol"
 - preferred_term: Cellobiose
   concentration:
     value: '0.5'
@@ -145,7 +145,7 @@ ingredients:
   notes: 'Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:91248
-    label: ''
+    label: "L-cysteine hydrochloride hydrate"
 - preferred_term: CO2
   notes: 'Properties: Gas'
   concentration:
@@ -153,7 +153,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: "carbon dioxide"
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '2.5'
@@ -183,7 +183,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: "calcium chloride dihydrate"
 - preferred_term: KH2PO4
   concentration:
     value: '6'
@@ -195,7 +195,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: (NH4)2SO4
   concentration:
     value: '6'

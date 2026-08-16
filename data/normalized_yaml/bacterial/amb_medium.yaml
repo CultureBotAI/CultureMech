@@ -24,13 +24,13 @@ ingredients:
 - preferred_term: Starch
   term:
     id: CHEBI:28017
-    label: Starch
+    label: "starch"
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:28017
-    label: Starch
+    label: "starch"
 - preferred_term: Meat infusion
   concentration:
     value: '25'
@@ -38,33 +38,33 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
   concentration:
     value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
 - preferred_term: Cysteine
   term:
     id: CHEBI:15356
-    label: Cysteine
+    label: "cysteine"
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15356
-    label: Cysteine
+    label: "cysteine"
 - preferred_term: CaCl2
   term:
     id: CHEBI:3312
-    label: CaCl2
+    label: "calcium dichloride"
   concentration:
     value: '0.01'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:3312
-    label: CaCl2
+    label: "calcium dichloride"
 - preferred_term: MgSO4
   term:
     id: CHEBI:32599
@@ -74,7 +74,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: MgSO4
+    label: "magnesium sulfate"
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -84,7 +84,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: "ammonium sulfate"
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -94,7 +94,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: "dipotassium hydrogen phosphate"
 preparation_steps:
 - step_number: 1
   action: MIX

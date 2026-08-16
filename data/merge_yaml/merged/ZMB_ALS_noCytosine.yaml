@@ -15,7 +15,7 @@ ingredients:
   notes: 'CAS: 71-30-7; MW: 111.1; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:16040
-    label: ''
+    label: "cytosine"
 description: Media for culturing Bifidobacterium minus cytosine
 notes: 'Source: FEBA media definitions'
 category: specialized

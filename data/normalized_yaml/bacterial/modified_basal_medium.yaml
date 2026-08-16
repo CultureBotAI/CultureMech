@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 4 duplicates: 1.0, 1.0, 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -62,7 +62,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: "dinitrogen"
 - preferred_term: Nitrilotriacetic acid
   concentration:
     value: '2'
@@ -83,7 +83,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63940
-    label: ''
+    label: "sodium tungstate"
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.2'
@@ -92,7 +92,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:35696
-    label: ''
+    label: "cobalt dichloride"
 - preferred_term: Cupric chloride
   concentration:
     value: '20'
@@ -101,7 +101,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:49553
-    label: ''
+    label: "copper(II) chloride"
 - preferred_term: Sodium selenate
   concentration:
     value: '20'
@@ -110,7 +110,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:77775
-    label: ''
+    label: "sodium selenate"
 - preferred_term: Nickel chloride
   concentration:
     value: '20'
@@ -119,7 +119,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:34887
-    label: ''
+    label: "nickel dichloride"
 - preferred_term: Sodium molybdate
   concentration:
     value: '20'
@@ -128,7 +128,7 @@ ingredients:
     component'
   term:
     id: CHEBI:75215
-    label: ''
+    label: "sodium molybdate (anhydrous)"
 - preferred_term: Manganese sulfate
   concentration:
     value: '1'
@@ -167,7 +167,7 @@ ingredients:
     component'
   term:
     id: CHEBI:131527
-    label: ''
+    label: "dipotassium hydrogen phosphate"
 - preferred_term: Ammonium chloride
   concentration:
     value: '100'
@@ -287,10 +287,10 @@ ingredients:
     component'
   term:
     id: CHEBI:17905
-    label: 2-Mercaptoethanesulfonic acid
+    label: "coenzyme M"
   mediaingredientmech_chebi_term:
     id: CHEBI:17905
-    label: 2-Mercaptoethanesulfonic acid
+    label: "coenzyme M"
 - preferred_term: Thiamine
   concentration:
     value: '5'

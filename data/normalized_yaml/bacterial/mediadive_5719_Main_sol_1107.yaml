@@ -49,7 +49,7 @@ composition:
     label: Glucose
   chebi_term:
     id: CHEBI:17234
-    label: D-glucose
+    label: "glucose"
     confidence: 0.9
     match_type: manual_curated
 - preferred_term: Cystein-HCl x 2 H2O
@@ -72,7 +72,7 @@ composition:
     label: DTT
   chebi_term:
     id: CHEBI:18320
-    label: DTT
+    label: "1,4-dithiothreitol"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Na-formate
@@ -84,7 +84,7 @@ composition:
     label: Na-formate
   chebi_term:
     id: CHEBI:62965
-    label: Na-formate
+    label: "sodium formate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na-fumarate
@@ -96,7 +96,7 @@ composition:
     label: Na-fumarate
   chebi_term:
     id: CHEBI:115156
-    label: Na-fumarate
+    label: "disodium fumarate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Horse blood

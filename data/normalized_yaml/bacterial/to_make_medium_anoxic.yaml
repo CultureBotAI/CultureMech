@@ -21,14 +21,14 @@ ingredients:
 - preferred_term: NaOH
   term:
     id: CHEBI:32145
-    label: NaOH
+    label: "sodium hydroxide"
   concentration:
     value: '26.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 25.0, 1.0]'
   mediaingredientmech_chebi_term:
     id: CHEBI:32145
-    label: NaOH
+    label: "sodium hydroxide"
 - preferred_term: Casitone
   concentration:
     value: '30'
@@ -46,58 +46,58 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: "dipotassium hydrogen phosphate"
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.0005'
     unit: G_PER_L
   term:
     id: CHEBI:8806
-    label: ''
+    label: "Resazurin"
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
-    label: D-Glucose
+    label: "D-glucose"
   concentration:
     value: '4'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17634
-    label: D-Glucose
+    label: "D-glucose"
 - preferred_term: Cellobiose
   term:
     id: CHEBI:17057
-    label: Cellobiose
+    label: "cellobiose"
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17057
-    label: Cellobiose
+    label: "cellobiose"
 - preferred_term: Maltose
   term:
     id: CHEBI:17306
-    label: Maltose
+    label: "maltose"
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17306
-    label: Maltose
+    label: "maltose"
 - preferred_term: Starch
   term:
     id: CHEBI:28017
-    label: Starch
+    label: "starch"
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:28017
-    label: Starch
+    label: "starch"
 - preferred_term: L-Cysteine HCl
   term:
     id: CHEBI:91247
-    label: L-Cysteine HCl
+    label: "L-cysteine hydrochloride"
   concentration:
     value: '0.5'
     unit: G_PER_L
@@ -108,52 +108,52 @@ ingredients:
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
   concentration:
     value: '15'
     unit: G_PER_L
   notes: ' (if required)'
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
 - preferred_term: Haemin
   term:
     id: CHEBI:50385
-    label: Haemin
+    label: "hemin"
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:50385
-    label: Haemin
+    label: "hemin"
 - preferred_term: Vitamin K1
   term:
     id: CHEBI:18067
-    label: Vitamin K1
+    label: "phylloquinone"
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:18067
-    label: Vitamin K1
+    label: "phylloquinone"
 - preferred_term: Ethanol
   term:
     id: CHEBI:16236
-    label: Ethanol
+    label: "ethanol"
   concentration:
     value: '959.5'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 950.0, 9.5]'
   mediaingredientmech_chebi_term:
     id: CHEBI:16236
-    label: Ethanol
+    label: "ethanol"
 - preferred_term: Vitamin K3
   concentration:
     value: '0.05'
     unit: G_PER_L
   term:
     id: CHEBI:28869
-    label: ''
+    label: "menadione"
 applications:
 - Microbial cultivation
 curation_history:

@@ -13,7 +13,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: MgSO4
@@ -37,7 +37,7 @@ composition:
     label: Mg-citrate
   chebi_term:
     id: CHEBI:131389
-    label: Mg-citrate
+    label: "magnesium citrate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: L-Asparagin
@@ -49,7 +49,7 @@ composition:
     label: L-Asparagin
   chebi_term:
     id: CHEBI:17196
-    label: L-Asparagin
+    label: "L-asparagine"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Potato flour
@@ -80,7 +80,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Glycerol
@@ -92,7 +92,7 @@ composition:
     label: Glycerol
   chebi_term:
     id: CHEBI:17754
-    label: Glycerol
+    label: "glycerol"
     match_type: corpus_consensus
 - preferred_term: Fresh egg mixture
   concentration:

@@ -31,13 +31,13 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:17334
-    label: Penicillin
+    label: "penicillin"
   concentration:
     value: variable
     unit: VARIABLE
   mediaingredientmech_chebi_term:
     id: CHEBI:17334
-    label: Penicillin
+    label: "penicillin"
 media_term:
   preferred_term: TOGO Medium M2887
   term:

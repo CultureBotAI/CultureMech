@@ -27,7 +27,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: To 1000 ml "Synthetic sea water" (see medium 79) add 5 g Bacto

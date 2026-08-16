@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.1'
@@ -38,7 +38,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: NH4Cl
   concentration:
     value: '0.3'
@@ -86,7 +86,7 @@ ingredients:
   notes: 'Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:32150
-    label: ''
+    label: "sodium thiosulfate pentahydrate"
 media_term:
   preferred_term: TOGO Medium M624
   term:

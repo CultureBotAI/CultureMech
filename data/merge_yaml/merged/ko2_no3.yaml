@@ -14,10 +14,10 @@ ingredients:
     Defined component [Merged 2 duplicates: 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.25'
@@ -41,7 +41,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: FeSO4·7H2O
   concentration:
     value: '0.02'
@@ -50,7 +50,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:75836
-    label: ''
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: NaNO3
   concentration:
     value: '1.7'
@@ -59,10 +59,10 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:63005
-    label: ''
+    label: "sodium nitrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:63005
-    label: NaNO3
+    label: "sodium nitrate"
 - preferred_term: CaCl2·6H2O
   concentration:
     value: '0.11'
@@ -71,7 +71,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:91243
-    label: ''
+    label: "calcium chloride hexahydrate"
 - preferred_term: Agar (if needed)
   concentration:
     value: '20'
@@ -84,7 +84,7 @@ ingredients:
   notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:64734
-    label: ''
+    label: "EDTA disodium salt (anhydrous)"
 - preferred_term: H3BO3
   concentration:
     value: '2.86'
@@ -105,7 +105,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86368
-    label: ''
+    label: "manganese(II) chloride tetrahydrate"
 - preferred_term: ZnSO4·7H2O
   concentration:
     value: '0.22'

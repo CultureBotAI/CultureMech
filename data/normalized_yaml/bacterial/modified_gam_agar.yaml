@@ -15,14 +15,14 @@ ingredients:
 - preferred_term: GAM agar
   term:
     id: CHEBI:2509
-    label: GAM agar
+    label: "agar"
   concentration:
     value: '56.7'
     unit: G_PER_L
   notes: ' ( modified)'
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: GAM agar
+    label: "agar"
 applications:
 - Microbial cultivation
 curation_history:

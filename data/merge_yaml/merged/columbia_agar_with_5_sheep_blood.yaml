@@ -32,31 +32,31 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:28017
-    label: ''
+    label: "starch"
   mediaingredientmech_chebi_term:
     id: CHEBI:28017
-    label: Corn starch
+    label: "starch"
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
   concentration:
     value: '9.7619'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 4.7619, 5.0]'
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
   concentration:
     value: '14.2857'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
 - preferred_term: Casein peptone
   concentration:
     value: '15'

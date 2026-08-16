@@ -13,7 +13,7 @@ composition:
     label: Na2HPO4 x 12 H2O
   chebi_term:
     id: CHEBI:34683
-    label: Na2HPO4 x 12 H2O
+    label: "disodium hydrogenphosphate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: KH2PO4
@@ -25,7 +25,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: NH4Cl
@@ -61,7 +61,7 @@ composition:
     label: CaCl2 x 2 H2O
   chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: "calcium chloride dihydrate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Ferric ammonium citrate
@@ -86,7 +86,7 @@ composition:
     label: Na-acetate
   chebi_term:
     id: CHEBI:32954
-    label: Na-acetate
+    label: "sodium acetate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Agar
@@ -99,7 +99,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -111,7 +111,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Dissolve ingredients, adjust pH to 7.0 and autoclave.

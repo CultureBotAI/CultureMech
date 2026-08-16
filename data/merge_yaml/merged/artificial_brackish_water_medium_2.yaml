@@ -21,7 +21,7 @@ ingredients:
     label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
 - preferred_term: KH2PO4
   concentration:
     value: '0.2'
@@ -31,7 +31,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: NH4Cl
   concentration:
     value: '0.25'
@@ -41,7 +41,7 @@ ingredients:
     label: ammonium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: "ammonium chloride"
 - preferred_term: KCl
   concentration:
     value: '0.5'
@@ -51,7 +51,7 @@ ingredients:
     label: potassium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: KCl
+    label: "potassium chloride"
 - preferred_term: Na2SO4
   concentration:
     value: '4.0'
@@ -61,7 +61,7 @@ ingredients:
     label: sodium sulfate
   mediaingredientmech_chebi_term:
     id: CHEBI:32149
-    label: Na2SO4
+    label: "sodium sulfate"
 - preferred_term: Trace element solution (see Medium No. 439 )
   concentration:
     value: '1.0'
@@ -89,7 +89,7 @@ ingredients:
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: 8% NaHCO3 solution*
   concentration:
     value: '30.0'

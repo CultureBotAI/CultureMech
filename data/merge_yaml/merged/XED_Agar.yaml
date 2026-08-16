@@ -16,13 +16,13 @@ ingredients:
 - preferred_term: Xylan
   term:
     id: CHEBI:37166
-    label: Xylan
+    label: "xylan"
   concentration:
     value: '7'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:37166
-    label: Xylan
+    label: "xylan"
 - preferred_term: Yeast extract
   concentration:
     value: '3'
@@ -30,13 +30,13 @@ ingredients:
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
   concentration:
     value: '20'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

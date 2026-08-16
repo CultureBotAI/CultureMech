@@ -9,25 +9,25 @@ ingredients:
 - preferred_term: Acetate
   term:
     id: CHEBI:30089
-    label: Acetate
+    label: "acetate"
   concentration:
     value: '45.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ac'
   mediaingredientmech_chebi_term:
     id: CHEBI:30089
-    label: Acetate
+    label: "acetate"
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
-    label: Biotin
+    label: "biotin"
   concentration:
     value: '8.1863e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
-    label: Biotin
+    label: "biotin"
 - preferred_term: Nicotinate
   concentration:
     value: '0.00040614'
@@ -35,22 +35,22 @@ ingredients:
   notes: 'Cross-references: KEGG:nac'
   term:
     id: CHEBI:15940
-    label: ''
+    label: "nicotinic acid"
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
-    label: Riboflavin
+    label: "riboflavin"
   concentration:
     value: '0.00013285'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
   mediaingredientmech_chebi_term:
     id: CHEBI:17015
-    label: Riboflavin
+    label: "riboflavin"
 - preferred_term: Thiamine
   term:
     id: CHEBI:26948
-    label: Thiamine
+    label: "vitamin B1"
   concentration:
     value: '0.00016622'
     unit: MILLIMOLAR
@@ -65,7 +65,7 @@ ingredients:
   notes: 'Cross-references: KEGG:fol'
   term:
     id: CHEBI:27470
-    label: ''
+    label: "folic acid"
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -84,28 +84,28 @@ ingredients:
   notes: 'Cross-references: KEGG:lipoate'
   term:
     id: CHEBI:16494
-    label: ''
+    label: "lipoic acid"
 - preferred_term: Pantothenate
   term:
     id: CHEBI:16454
-    label: Pantothenate
+    label: "pantothenate"
   concentration:
     value: '0.00022807'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pnto-R'
   mediaingredientmech_chebi_term:
     id: CHEBI:16454
-    label: Pantothenate
+    label: "pantothenate"
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
-    label: Vitamin B12
+    label: "cyanocob(III)alamin"
   concentration:
     value: '7.3781e-07'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:17439
-    label: Vitamin B12
+    label: "cyanocob(III)alamin"
 - preferred_term: Magnesium chloride
   concentration:
     value: '3.0'
@@ -122,51 +122,51 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: ''
+    label: "calcium dichloride"
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
-    label: Boric acid
+    label: "boric acid"
   concentration:
     value: '0.000808669'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: Boric acid
+    label: "boric acid"
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '4.35'
     unit: MILLIMOLAR
   term:
     id: CHEBI:34683
-    label: ''
+    label: "disodium hydrogenphosphate"
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
-    label: Nitrilotriacetic acid
+    label: "nitrilotriacetic acid"
   concentration:
     value: '0.11196'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:44557
-    label: Nitrilotriacetic acid
+    label: "nitrilotriacetic acid"
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.00437084'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75215
-    label: ''
+    label: "sodium molybdate (anhydrous)"
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
-    label: Sodium Chloride
+    label: "sodium chloride"
   concentration:
     value: '30.0'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: Sodium Chloride
+    label: "sodium chloride"
 - preferred_term: Potassium chloride
   concentration:
     value: '1.34'
@@ -183,82 +183,82 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:30961
-    label: Pyridoxine HCl
+    label: "pyridoxine hydrochloride"
   mediaingredientmech_chebi_term:
     id: CHEBI:30961
-    label: Pyridoxine HCl
+    label: "pyridoxine hydrochloride"
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
-    label: Ammonium chloride
+    label: "ammonium chloride"
   concentration:
     value: '28.0'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: Ammonium chloride
+    label: "ammonium chloride"
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.0107894'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75832
-    label: ''
+    label: "iron(2+) sulfate (anhydrous)"
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.0114981'
     unit: MILLIMOLAR
   term:
     id: CHEBI:35696
-    label: ''
+    label: "cobalt dichloride"
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
-    label: Zinc Sulfate
+    label: "zinc sulfate"
   concentration:
     value: '0.0069558'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:35176
-    label: Zinc Sulfate
+    label: "zinc sulfate"
 - preferred_term: Manganese chloride
   concentration:
     value: '0.0044829'
     unit: MILLIMOLAR
   term:
     id: CHEBI:63041
-    label: ''
+    label: "manganese(II) chloride"
 - preferred_term: Cupric chloride
   concentration:
     value: '0.00175974'
     unit: MILLIMOLAR
   term:
     id: CHEBI:49553
-    label: ''
+    label: "copper(II) chloride"
 - preferred_term: Sodium selenate
   concentration:
     value: '0.001'
     unit: MILLIMOLAR
   term:
     id: CHEBI:77775
-    label: ''
+    label: "sodium selenate"
 - preferred_term: Aluminum potassium sulfate
   concentration:
     value: '0.000105399'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:86463
-    label: Aluminum potassium sulfate
+    label: "potassium aluminium sulfate"
   term:
     id: CHEBI:86463
-    label: ''
+    label: "potassium aluminium sulfate"
 - preferred_term: Sodium tungstate
   concentration:
     value: '0.000606318'
     unit: MILLIMOLAR
   term:
     id: CHEBI:63940
-    label: ''
+    label: "sodium tungstate"
 - preferred_term: Nickel Sulfate
   concentration:
     value: '0.0041849'

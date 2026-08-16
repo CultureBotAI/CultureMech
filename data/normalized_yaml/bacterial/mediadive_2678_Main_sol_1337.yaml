@@ -13,7 +13,7 @@ composition:
     label: NaCl
   chebi_term:
     id: CHEBI:26710
-    label: 1% sodium chloride
+    label: "sodium chloride"
     confidence: 1.0
     match_type: exact_match
 - preferred_term: MgCl2 x 6 H2O
@@ -25,7 +25,7 @@ composition:
     label: MgCl2 x 6 H2O
   chebi_term:
     id: CHEBI:86345
-    label: magnesium chloride hexahydrate
+    label: "magnesium dichloride hexahydrate"
     match_type: corpus_consensus
 - preferred_term: MgSO4 x 7 H2O
   concentration:
@@ -72,7 +72,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Agar
@@ -85,7 +85,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Methanol
@@ -97,7 +97,7 @@ composition:
     label: Methanol
   chebi_term:
     id: CHEBI:17790
-    label: Methanol
+    label: "methanol"
     confidence: 0.9
     match_type: corpus_consensus
 preparation_notes: 'Adjust to pH 8.0 and sterilize by autoclaving. The medium may

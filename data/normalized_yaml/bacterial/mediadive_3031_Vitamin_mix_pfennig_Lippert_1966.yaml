@@ -13,7 +13,7 @@ composition:
     label: Thiamin
   chebi_term:
     id: CHEBI:18385
-    label: Thiamin
+    label: "thiamine(1+)"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Calcium pantothenate
@@ -37,7 +37,7 @@ composition:
     label: Biotin
   chebi_term:
     id: CHEBI:15956
-    label: Biotin
+    label: "biotin"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: PABA
@@ -49,7 +49,7 @@ composition:
     label: PABA
   chebi_term:
     id: CHEBI:30753
-    label: PABA
+    label: "4-aminobenzoic acid"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Nicotinic acid
@@ -97,7 +97,7 @@ composition:
     label: Riboflavin
   chebi_term:
     id: CHEBI:17015
-    label: Riboflavin
+    label: "riboflavin"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: B12

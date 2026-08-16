@@ -13,7 +13,7 @@ composition:
     label: Glucose
   chebi_term:
     id: CHEBI:17234
-    label: D-glucose
+    label: "glucose"
     confidence: 0.9
     match_type: manual_curated
 - preferred_term: Yeast extract
@@ -32,7 +32,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: FeSO4
@@ -44,7 +44,7 @@ composition:
     label: FeSO4
   chebi_term:
     id: CHEBI:75832
-    label: ferrous sulfate
+    label: "iron(2+) sulfate (anhydrous)"
     confidence: 1.0
     match_type: exact_match
 preparation_notes: "Mix components thoroughly, adjust pH 2.5 with H2SO4 and autoclave.\

@@ -25,7 +25,7 @@ composition:
     label: FeSO4
   chebi_term:
     id: CHEBI:75832
-    label: ferrous sulfate
+    label: "iron(2+) sulfate (anhydrous)"
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Acetate
@@ -37,7 +37,7 @@ composition:
     label: Acetate
   chebi_term:
     id: CHEBI:30089
-    label: Acetate
+    label: "acetate"
     confidence: 0.9
     match_type: corpus_consensus
 preparation_notes: 'Mix solution D, C and E. Bubble with CO2 in an ice bath under

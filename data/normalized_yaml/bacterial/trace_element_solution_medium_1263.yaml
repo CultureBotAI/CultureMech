@@ -23,10 +23,10 @@ ingredients:
     unit: VARIABLE
   mediaingredientmech_chebi_term:
     id: CHEBI:32035
-    label: KOH
+    label: "potassium hydroxide"
   term:
     id: CHEBI:32035
-    label: ''
+    label: "potassium hydroxide"
 applications:
 - Microbial cultivation
 curation_history:

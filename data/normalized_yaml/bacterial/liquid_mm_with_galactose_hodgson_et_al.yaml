@@ -9,66 +9,66 @@ ingredients:
 - preferred_term: D-Galactose
   term:
     id: CHEBI:12936
-    label: D-Galactose
+    label: "D-galactose"
   concentration:
     value: '10.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gal'
   mediaingredientmech_chebi_term:
     id: CHEBI:12936
-    label: D-Galactose
+    label: "D-galactose"
 - preferred_term: L-Asparagine
   term:
     id: CHEBI:17196
-    label: L-Asparagine
+    label: "L-asparagine"
   concentration:
     value: '3.78444'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:asn-L'
   mediaingredientmech_chebi_term:
     id: CHEBI:17196
-    label: L-Asparagine
+    label: "L-asparagine"
 - preferred_term: Ethylene glycol
   term:
     id: CHEBI:30742
-    label: Ethylene glycol
+    label: "ethylene glycol"
   concentration:
     value: '0.134257'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:30742
-    label: Ethylene glycol
+    label: "ethylene glycol"
 - preferred_term: Potassium hydroxide
   concentration:
     value: '5.34706'
     unit: MILLIMOLAR
   term:
     id: CHEBI:32035
-    label: ''
+    label: "potassium hydroxide"
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '2.87026'
     unit: MILLIMOLAR
   term:
     id: CHEBI:131527
-    label: ''
+    label: "dipotassium hydrogen phosphate"
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: "magnesium sulfate"
   concentration:
     value: '0.811458'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: "magnesium sulfate"
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.0359648'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75832
-    label: ''
+    label: "iron(2+) sulfate (anhydrous)"
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

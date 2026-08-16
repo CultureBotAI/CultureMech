@@ -32,7 +32,7 @@ composition:
     label: Cellobiose
   chebi_term:
     id: CHEBI:17057
-    label: Cellobiose
+    label: "cellobiose"
     confidence: 0.9
     match_type: corpus_consensus
 preparation_notes: "Add components and bring volume to 958 ml with distilled water.\

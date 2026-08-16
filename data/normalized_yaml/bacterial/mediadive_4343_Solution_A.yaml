@@ -13,7 +13,7 @@ composition:
     label: Glucose
   chebi_term:
     id: CHEBI:17234
-    label: D-glucose
+    label: "glucose"
     confidence: 0.9
     match_type: manual_curated
 - preferred_term: Yeast extract
@@ -51,7 +51,7 @@ composition:
     label: Resazurin
   chebi_term:
     id: CHEBI:8806
-    label: resazurin
+    label: "Resazurin"
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Distilled water
@@ -63,7 +63,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Mix components, adjust pH to 7.2, bring to a boil for a few seconds

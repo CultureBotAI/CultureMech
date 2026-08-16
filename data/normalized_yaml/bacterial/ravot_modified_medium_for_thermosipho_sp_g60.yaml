@@ -22,40 +22,40 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: "ammonium chloride"
   notes: Copied from referenced JCM Medium 725
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: "magnesium dichloride hexahydrate"
   concentration:
     value: '0.196271'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: "magnesium dichloride hexahydrate"
   notes: Copied from referenced JCM Medium 725
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: "calcium chloride dihydrate"
   concentration:
     value: '0.0981354'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: "calcium chloride dihydrate"
   notes: Copied from referenced JCM Medium 725
 - preferred_term: KCl
   term:
     id: CHEBI:32588
-    label: KCl
+    label: "potassium chloride"
   concentration:
     value: '0.0981354'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: KCl
+    label: "potassium chloride"
   notes: Copied from referenced JCM Medium 725
 - preferred_term: Sodium acetate x 3 H2O
   concentration:
@@ -64,7 +64,7 @@ ingredients:
   notes: Copied from referenced JCM Medium 725
   term:
     id: CHEBI:32954
-    label: ''
+    label: "sodium acetate"
 - preferred_term: Yeast extract
   concentration:
     value: '4.90677'
@@ -89,13 +89,13 @@ ingredients:
 - preferred_term: Sulfur
   term:
     id: CHEBI:26833
-    label: Sulfur
+    label: "sulfur atom"
   concentration:
     value: '4.90677'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26833
-    label: Sulfur
+    label: "sulfur atom"
   notes: Copied from referenced JCM Medium 725
 - preferred_term: Resazurin
   term:
@@ -117,7 +117,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
   notes: Copied from referenced JCM Medium 725
 - preferred_term: K2HPO4
   term:
@@ -128,18 +128,18 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: "dipotassium hydrogen phosphate"
   notes: Copied from referenced JCM Medium 725
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
-    label: Na2S x 9 H2O
+    label: "sodium sulfide nonahydrate"
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:76209
-    label: Na2S x 9 H2O
+    label: "sodium sulfide nonahydrate"
   notes: Copied from referenced JCM Medium 725
 preparation_steps:
 - step_number: 1

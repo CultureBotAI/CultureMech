@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 750.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: NaCl
   concentration:
     value: '47.7'
@@ -41,7 +41,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -62,7 +62,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:76209
-    label: ''
+    label: "sodium sulfide nonahydrate"
 - preferred_term: NiCl2・6H2O
   concentration:
     value: '2'
@@ -71,7 +71,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:34887
-    label: ''
+    label: "nickel dichloride"
 - preferred_term: Soluble starch
   concentration:
     value: '5'
@@ -79,7 +79,7 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Undefined component'
   term:
     id: CHEBI:28017
-    label: ''
+    label: "starch"
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '0.5'
@@ -96,7 +96,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: "dinitrogen"
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '7'
@@ -114,7 +114,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: "calcium chloride dihydrate"
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '5.5'
@@ -123,7 +123,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86345
-    label: ''
+    label: "magnesium dichloride hexahydrate"
 - preferred_term: H3BO3
   concentration:
     value: '30'
@@ -168,7 +168,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:36385
-    label: ''
+    label: "strontium dichloride hexahydrate"
 - preferred_term: KI
   concentration:
     value: '0.05'

@@ -30,7 +30,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: "carbon dioxide"
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -38,21 +38,21 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: ''
+    label: "dihydrogen"
 - preferred_term: Vitamin B7
   concentration:
     value: variable
     unit: VARIABLE
   term:
     id: CHEBI:15956
-    label: ''
+    label: "biotin"
 - preferred_term: Vitamin B6
   concentration:
     value: variable
     unit: VARIABLE
   term:
     id: CHEBI:16709
-    label: ''
+    label: "pyridoxine"
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:176843
@@ -66,13 +66,13 @@ ingredients:
 - preferred_term: Tryptophan
   term:
     id: CHEBI:27897
-    label: Tryptophan
+    label: "tryptophan"
   concentration:
     value: variable
     unit: VARIABLE
   mediaingredientmech_chebi_term:
     id: CHEBI:27897
-    label: Tryptophan
+    label: "tryptophan"
 - preferred_term: biotin (Sigma Aldrich, St Louis, MO, USA)
   notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Simple component'
   concentration:

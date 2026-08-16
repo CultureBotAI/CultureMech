@@ -13,7 +13,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: "carbon dioxide"
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
@@ -21,7 +21,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: "dinitrogen"
 - preferred_term: Distilled water
   concentration:
     value: '1000.0'
@@ -30,10 +30,10 @@ ingredients:
     Inorganic compound [Merged 3 duplicates: 900.0, 50.0, 50.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: KH2PO4
   concentration:
     value: '0.41'
@@ -45,7 +45,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: Na2HPO4・2H2O
   concentration:
     value: '0.53'
@@ -54,7 +54,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:34683
-    label: ''
+    label: "disodium hydrogenphosphate"
 - preferred_term: Sodium acetate・3H2O
   concentration:
     value: '0.136'
@@ -62,7 +62,7 @@ ingredients:
   notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'
   term:
     id: CHEBI:32954
-    label: ''
+    label: "sodium acetate"
 - preferred_term: NaClO3
   concentration:
     value: '1.06'
@@ -71,10 +71,10 @@ ingredients:
     compound'
   term:
     id: CHEBI:65242
-    label: ''
+    label: "sodium chlorate"
   mediaingredientmech_chebi_term:
     id: CHEBI:65242
-    label: NaClO3
+    label: "sodium chlorate"
 - preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.11'
@@ -95,7 +95,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86345
-    label: ''
+    label: "magnesium dichloride hexahydrate"
 - preferred_term: NaHCO3
   concentration:
     value: '3.73'
@@ -128,10 +128,10 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:184335
-    label: ''
+    label: "Ammonium bicarbonate"
   mediaingredientmech_chebi_term:
     id: CHEBI:184335
-    label: NH4HCO3
+    label: "Ammonium bicarbonate"
 - preferred_term: benzene (water-saturated, autoclaved)
   concentration:
     value: '25'

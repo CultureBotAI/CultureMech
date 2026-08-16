@@ -37,7 +37,7 @@ composition:
     label: CaCl2 x 6 H2O
   chebi_term:
     id: CHEBI:91243
-    label: CaCl2 x 6 H2O
+    label: "calcium chloride hexahydrate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na2HPO4
@@ -61,7 +61,7 @@ composition:
     label: Sodium succinate
   chebi_term:
     id: CHEBI:63675
-    label: sodium succinate
+    label: "sodium succinate (anhydrous)"
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Casamino acids
@@ -80,7 +80,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -92,7 +92,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na2S2O3 x 5 H2O
@@ -104,7 +104,7 @@ composition:
     label: Na2S2O3 x 5 H2O
   chebi_term:
     id: CHEBI:32150
-    label: Na2S2O3 x 5 H2O
+    label: "sodium thiosulfate pentahydrate"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'pH 7.5

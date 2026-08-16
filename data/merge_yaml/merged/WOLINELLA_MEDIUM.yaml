@@ -19,10 +19,10 @@ ingredients:
     Inorganic compound'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -72,10 +72,10 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: "iron(2+) sulfate heptahydrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: (NH4)2SO4
   concentration:
     value: '1'
@@ -98,7 +98,7 @@ ingredients:
     label: sodium formate
   mediaingredientmech_chebi_term:
     id: CHEBI:62965
-    label: Na-formate
+    label: "sodium formate"
 - preferred_term: L-Cysteine-HCl x H2O
   concentration:
     value: '0.3'
@@ -120,7 +120,7 @@ ingredients:
     label: disodium fumarate
   mediaingredientmech_chebi_term:
     id: CHEBI:115156
-    label: Na2-fumarate
+    label: "disodium fumarate"
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
@@ -128,7 +128,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: "dinitrogen"
 media_term:
   preferred_term: TOGO Medium M2617
   term:

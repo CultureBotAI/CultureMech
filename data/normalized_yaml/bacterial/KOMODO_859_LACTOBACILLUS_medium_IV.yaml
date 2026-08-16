@@ -29,40 +29,40 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
   concentration:
     value: '4'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
 - preferred_term: Maltose
   term:
     id: CHEBI:17306
-    label: Maltose
+    label: "maltose"
   concentration:
     value: '4'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17306
-    label: Maltose
+    label: "maltose"
 - preferred_term: Na-acetate x 3 H2O
   concentration:
     value: '5'
     unit: G_PER_L
   term:
     id: CHEBI:32138
-    label: ''
+    label: "sodium acetate trihydrate"
 - preferred_term: (NH4)2 citrate
   concentration:
     value: '2'
     unit: G_PER_L
   term:
     id: CHEBI:63076
-    label: ''
+    label: "diammonium citrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:63076
-    label: (NH4)2 citrate
+    label: "diammonium citrate"
 - preferred_term: K2HPO4 x 3 H2O
   term:
     id: CHEBI:131527
@@ -72,47 +72,47 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4 x 3 H2O
+    label: "dipotassium hydrogen phosphate"
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: "magnesium sulfate heptahydrate"
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: "magnesium sulfate heptahydrate"
 - preferred_term: MnSO4 x 4 H2O
   term:
     id: CHEBI:86358
-    label: MnSO4 x 4 H2O
+    label: "manganese(II) sulfate tetrahydrate"
   concentration:
     value: '0.05'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86358
-    label: MnSO4 x 4 H2O
+    label: "manganese(II) sulfate tetrahydrate"
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    label: "L-cysteine hydrochloride hydrate"
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    label: "L-cysteine hydrochloride hydrate"
 - preferred_term: Tween 80
   term:
     id: CHEBI:53426
-    label: Tween 80
+    label: "polysorbate 80"
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:53426
-    label: Tween 80
+    label: "polysorbate 80"
 applications:
 - Microbial cultivation
 curation_history:

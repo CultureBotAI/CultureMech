@@ -13,7 +13,7 @@ composition:
     label: Glucose
   chebi_term:
     id: CHEBI:17234
-    label: D-glucose
+    label: "glucose"
     confidence: 0.9
     match_type: manual_curated
 - preferred_term: Yeast extract
@@ -39,7 +39,7 @@ composition:
     label: Resazurin
   chebi_term:
     id: CHEBI:8806
-    label: resazurin
+    label: "Resazurin"
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Thioglycolate
@@ -51,7 +51,7 @@ composition:
     label: Thioglycolate
   chebi_term:
     id: CHEBI:47869
-    label: thioglycolate
+    label: "thioglycolate(2-)"
     confidence: 0.9
     match_type: manual_curated
 - preferred_term: Distilled water
@@ -63,7 +63,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Adjust pH to 7.6 with KOH before autoclaving. Add 1% agar for stabs.

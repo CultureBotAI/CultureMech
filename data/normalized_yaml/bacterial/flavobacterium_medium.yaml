@@ -30,7 +30,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32149
-    label: Na2SO4
+    label: "sodium sulfate"
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

@@ -21,10 +21,10 @@ composition:
     unit: G_PER_L
   term:
     id: CHEBI:18385
-    label: thiamine
+    label: "thiamine(1+)"
   mediaingredientmech_chebi_term:
     id: CHEBI:18385
-    label: thiamine
+    label: "thiamine(1+)"
 - preferred_term: Biotin
   concentration:
     value: '0.01'
@@ -62,10 +62,10 @@ composition:
     unit: G_PER_L
   term:
     id: CHEBI:17836
-    label: 4-aminobenzoic acid
+    label: "4-aminobenzoate"
   mediaingredientmech_chebi_term:
     id: CHEBI:17836
-    label: 4-aminobenzoic acid
+    label: "4-aminobenzoate"
 notes: 'DAS Vitamin Cocktail for Dasycladales Seawater Medium.
 
   Provides essential vitamins for marine algae culture.

@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 990.0, 1000.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '6.4'
@@ -127,10 +127,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:76181
-    label: ''
+    label: "ferrous ammonium sulfate hexahydrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:76181
-    label: Fe(NH4)2(SO4)2 x 6 H2O
+    label: "ferrous ammonium sulfate hexahydrate"
 - preferred_term: Na2Se3 x 5 H2O
   concentration:
     value: '0.5'
@@ -139,10 +139,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:131361
-    label: Na2SeO3 x 5 H2O
+    label: "disodium selenite pentahydrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:131361
-    label: Na2Se3 x 5 H2O
+    label: "disodium selenite pentahydrate"
 - preferred_term: Tryptone
   concentration:
     value: '1'
@@ -180,10 +180,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: "iron(2+) sulfate heptahydrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: ZnSO4 x 7 H2O
   concentration:
     value: '0.18'
@@ -264,10 +264,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63939
-    label: sodium tungstate
+    label: "sodium tungstate dihydrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:63939
-    label: sodium tungstate
+    label: "sodium tungstate dihydrate"
 - preferred_term: MnSO4 x H2O
   concentration:
     value: '0.5'
@@ -276,10 +276,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86364
-    label: MnSO4 x H2O
+    label: "manganese(II) sulfate monohydrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
-    label: MnSO4 x H2O
+    label: "manganese(II) sulfate monohydrate"
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
   term:

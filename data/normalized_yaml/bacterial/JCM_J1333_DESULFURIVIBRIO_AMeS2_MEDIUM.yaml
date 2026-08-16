@@ -21,7 +21,7 @@ ingredients:
     label: sodium carbonate
   mediaingredientmech_chebi_term:
     id: CHEBI:29377
-    label: Sodium carbonate solution
+    label: "sodium carbonate"
 - preferred_term: NaHCO3
   concentration:
     value: '8.0'
@@ -31,7 +31,7 @@ ingredients:
     label: sodium hydrogencarbonate
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: NaHCO3
+    label: "sodium hydrogencarbonate"
 - preferred_term: NaCl
   concentration:
     value: '6.0'
@@ -41,7 +41,7 @@ ingredients:
     label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
 - preferred_term: K2HPO4
   concentration:
     value: '1.0'
@@ -51,7 +51,7 @@ ingredients:
     label: dipotassium hydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4 x 3 H2O
+    label: "dipotassium hydrogen phosphate"
 - preferred_term: Sulfur
   concentration:
     value: '5.0'
@@ -61,7 +61,7 @@ ingredients:
     label: sulfur atom
   mediaingredientmech_chebi_term:
     id: CHEBI:26833
-    label: Sulfur
+    label: "sulfur atom"
 - preferred_term: 1 M MgCl2 solution
   concentration:
     value: '1.0'

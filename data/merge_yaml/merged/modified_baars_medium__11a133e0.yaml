@@ -26,13 +26,13 @@ ingredients:
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: "magnesium sulfate heptahydrate"
   concentration:
     value: '2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: "magnesium sulfate heptahydrate"
 - preferred_term: CaSO4
   term:
     id: CHEBI:31346
@@ -42,7 +42,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31346
-    label: CaSO4
+    label: "calcium sulfate"
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -52,7 +52,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: "ammonium chloride"
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -60,23 +60,23 @@ ingredients:
 - preferred_term: (NH4)2Ni(SO4)2 x 6 H2O
   term:
     id: CHEBI:86149
-    label: (NH4)2Ni(SO4)2 x 6 H2O
+    label: "ammonium nickel sulfate hexahydrate"
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86149
-    label: (NH4)2Ni(SO4)2 x 6 H2O
+    label: "ammonium nickel sulfate hexahydrate"
 - preferred_term: Sodium lactate
   term:
     id: CHEBI:75228
-    label: Sodium lactate
+    label: "sodium lactate"
   concentration:
     value: '3.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75228
-    label: Sodium lactate
+    label: "sodium lactate"
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

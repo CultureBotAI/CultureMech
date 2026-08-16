@@ -13,7 +13,7 @@ composition:
     label: Sodium succinate
   chebi_term:
     id: CHEBI:63675
-    label: sodium succinate
+    label: "sodium succinate (anhydrous)"
     confidence: 1.0
     match_type: exact_match
 - preferred_term: K2HPO4
@@ -37,7 +37,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: MgSO4 x 7 H2O
@@ -85,7 +85,7 @@ composition:
     label: Ferric citrate
   chebi_term:
     id: CHEBI:144421
-    label: Ferric citrate
+    label: "iron(III) citrate"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: EDTA
@@ -97,7 +97,7 @@ composition:
     label: EDTA
   chebi_term:
     id: CHEBI:64755
-    label: EDTA
+    label: "EDTA(2-)"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Yeast extract
@@ -116,7 +116,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Adjust pH to 7.0.

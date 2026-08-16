@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '3.4'
@@ -47,7 +47,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: "calcium chloride dihydrate"
 - preferred_term: KH2PO4
   concentration:
     value: '0.09'
@@ -59,7 +59,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: NH4Cl
   concentration:
     value: '0.25'
@@ -80,7 +80,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86345
-    label: ''
+    label: "magnesium dichloride hexahydrate"
 - preferred_term: FeSO4・7H2O
   concentration:
     value: '0.12000000000000001'
@@ -89,7 +89,7 @@ ingredients:
     Simple component [Merged 2 duplicates: 0.02, 0.1]'
   term:
     id: CHEBI:75836
-    label: ''
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: KCl
   concentration:
     value: '0.33'
@@ -110,10 +110,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63005
-    label: ''
+    label: "sodium nitrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:63005
-    label: NaNO3
+    label: "sodium nitrate"
 - preferred_term: Na2HPO4
   concentration:
     value: '0.26'
@@ -133,7 +133,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: "dinitrogen"
 - preferred_term: O2
   notes: 'Properties: ガス'
   concentration:
@@ -168,7 +168,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:34887
-    label: ''
+    label: "nickel dichloride"
 - preferred_term: ZnSO4・7H2O
   concentration:
     value: '0.18'
@@ -177,7 +177,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:32312
-    label: ''
+    label: "zinc sulfate heptahydrate"
 - preferred_term: Na2SeO3・5H2O
   concentration:
     value: '5'
@@ -204,7 +204,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86465
-    label: ''
+    label: "potassium aluminium sulfate dodecahydrate"
 - preferred_term: Nitrilotriacetic acid
   concentration:
     value: '1.5'
@@ -225,7 +225,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63939
-    label: ''
+    label: "sodium tungstate dihydrate"
 - preferred_term: MnSO4・xH2O
   concentration:
     value: '0.5'
@@ -234,7 +234,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86360
-    label: ''
+    label: "manganese(II) sulfate"
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
   term:

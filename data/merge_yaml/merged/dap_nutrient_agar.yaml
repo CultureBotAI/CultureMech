@@ -24,24 +24,24 @@ ingredients:
 - preferred_term: Diaminopimelic acid
   term:
     id: CHEBI:23673
-    label: Diaminopimelic acid
+    label: "2,6-diaminopimelic acid"
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:23673
-    label: Diaminopimelic acid
+    label: "2,6-diaminopimelic acid"
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
   concentration:
     value: '15'
     unit: G_PER_L
   notes: ' (if necessary)'
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
 applications:
 - Microbial cultivation
 curation_history:

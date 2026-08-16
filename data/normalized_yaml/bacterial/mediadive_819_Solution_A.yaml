@@ -41,7 +41,7 @@ composition:
     label: HEPES buffer
   chebi_term:
     id: CHEBI:46756
-    label: HEPES buffer
+    label: "HEPES"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Sodium citrate
@@ -65,7 +65,7 @@ composition:
     label: Glucose
   chebi_term:
     id: CHEBI:17234
-    label: D-glucose
+    label: "glucose"
     confidence: 0.9
     match_type: manual_curated
 - preferred_term: Na-pyruvate
@@ -77,7 +77,7 @@ composition:
     label: Na-pyruvate
   chebi_term:
     id: CHEBI:50144
-    label: Na-pyruvate
+    label: "sodium pyruvate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: N-Acetylglucosamine
@@ -89,7 +89,7 @@ composition:
     label: N-Acetylglucosamine
   chebi_term:
     id: CHEBI:59640
-    label: N-Acetylglucosamine
+    label: "N-acetylglucosamine"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: MgCl2 x 6 H2O
@@ -101,7 +101,7 @@ composition:
     label: MgCl2 x 6 H2O
   chebi_term:
     id: CHEBI:86345
-    label: magnesium chloride hexahydrate
+    label: "magnesium dichloride hexahydrate"
     match_type: corpus_consensus
 - preferred_term: L-Glutamine
   concentration:
@@ -112,7 +112,7 @@ composition:
     label: L-Glutamine
   chebi_term:
     id: CHEBI:18050
-    label: L-Glutamine
+    label: "L-glutamine"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Double distilled water
@@ -124,7 +124,7 @@ composition:
     label: Double distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Double distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Stir slowly at 4 - 10°C for 3 hours, adjust pH to 7.6 with 5 M

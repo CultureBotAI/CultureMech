@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 1.0, 100.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.12'
@@ -47,7 +47,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: "calcium chloride dihydrate"
 - preferred_term: NH4Cl
   concentration:
     value: '0.85'
@@ -80,7 +80,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: ''
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: NaHCO3
   concentration:
     value: '4.2'
@@ -162,7 +162,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:35696
-    label: ''
+    label: "cobalt dichloride"
 - preferred_term: ZnSO4・7H2O
   concentration:
     value: '100'
@@ -171,7 +171,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:32312
-    label: ''
+    label: "zinc sulfate heptahydrate"
 - preferred_term: Thiamine・HCl
   concentration:
     value: '5'
@@ -179,7 +179,7 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:49105
-    label: ''
+    label: "thiamine hydrochloride"
 - preferred_term: Pyridoxine・HCl
   concentration:
     value: '10'
@@ -187,7 +187,7 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:30961
-    label: Pyridoxine・HCl
+    label: "pyridoxine hydrochloride"
 - preferred_term: CuSO4・5H2O
   concentration:
     value: '10'
@@ -196,7 +196,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:31440
-    label: ''
+    label: "copper(II) sulfate pentahydrate"
 - preferred_term: KAl(SO4)2・12H2O
   concentration:
     value: '10'
@@ -205,7 +205,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86465
-    label: ''
+    label: "potassium aluminium sulfate dodecahydrate"
 - preferred_term: MnSO4・xH2O
   concentration:
     value: '500'
@@ -214,7 +214,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86360
-    label: ''
+    label: "manganese(II) sulfate"
 media_term:
   preferred_term: TOGO Medium M1111
   term:

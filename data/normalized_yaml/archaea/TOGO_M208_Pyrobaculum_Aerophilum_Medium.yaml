@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 865.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: KH2PO4
   concentration:
     value: '0.07'
@@ -29,7 +29,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: NH4Cl
   concentration:
     value: '0.25'
@@ -62,7 +62,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63939
-    label: ''
+    label: "sodium tungstate dihydrate"
 - preferred_term: Fe(NH4)2(SO4)2・6H2O
   concentration:
     value: '2'
@@ -71,7 +71,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:76181
-    label: ''
+    label: "ferrous ammonium sulfate hexahydrate"
 - preferred_term: (NH4)2Ni(SO4)2・6H2O
   concentration:
     value: '2'
@@ -80,7 +80,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86149
-    label: ''
+    label: "ammonium nickel sulfate hexahydrate"
 - preferred_term: Na2SeO4
   concentration:
     value: '0.1'
@@ -92,7 +92,7 @@ ingredients:
     label: sodium selenate
   mediaingredientmech_chebi_term:
     id: CHEBI:77775
-    label: Na2SeO4
+    label: "sodium selenate"
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '0.5'
@@ -105,7 +105,7 @@ ingredients:
   notes: 'Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:32150
-    label: ''
+    label: "sodium thiosulfate pentahydrate"
 - preferred_term: H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
@@ -125,7 +125,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: "carbon dioxide"
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -133,7 +133,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: "dinitrogen"
 - preferred_term: Oxygen gas
   notes: 'Properties: ガス'
   concentration:
@@ -168,7 +168,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: "calcium chloride dihydrate"
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '18.1'
@@ -177,7 +177,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86345
-    label: ''
+    label: "magnesium dichloride hexahydrate"
 - preferred_term: H3BO3
   concentration:
     value: '52'
@@ -246,7 +246,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:36385
-    label: ''
+    label: "strontium dichloride hexahydrate"
 - preferred_term: KI
   concentration:
     value: '0.05'

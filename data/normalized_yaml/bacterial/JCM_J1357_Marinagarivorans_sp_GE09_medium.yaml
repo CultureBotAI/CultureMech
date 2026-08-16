@@ -21,7 +21,7 @@ ingredients:
     label: ammonium sulfate
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: "ammonium sulfate"
 - preferred_term: Cellobiose
   concentration:
     value: '1.0'
@@ -31,7 +31,7 @@ ingredients:
     label: cellobiose
   mediaingredientmech_chebi_term:
     id: CHEBI:17057
-    label: Cellobiose
+    label: "cellobiose"
 - preferred_term: Urea
   concentration:
     value: '0.06'
@@ -41,7 +41,7 @@ ingredients:
     label: urea
   mediaingredientmech_chebi_term:
     id: CHEBI:16199
-    label: Urea
+    label: "urea"
 - preferred_term: Trace mineral solution (see below)
   concentration:
     value: '50.0'
@@ -59,7 +59,7 @@ ingredients:
     label: sodium carbonate
   mediaingredientmech_chebi_term:
     id: CHEBI:29377
-    label: Sodium carbonate solution
+    label: "sodium carbonate"
 - preferred_term: Trace Metal Mix A5 (see below)
   concentration:
     value: '20.0'
@@ -77,7 +77,7 @@ ingredients:
     label: ferric ammonium citrate
   mediaingredientmech_chebi_term:
     id: CHEBI:31604
-    label: Ferric ammonium citrate
+    label: "ferric ammonium citrate"
 - preferred_term: K2HPO4
   concentration:
     value: '0.4'
@@ -87,7 +87,7 @@ ingredients:
     label: dipotassium hydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4 x 3 H2O
+    label: "dipotassium hydrogen phosphate"
 - preferred_term: Distilled water
   concentration:
     value: '1.0'
@@ -97,7 +97,7 @@ ingredients:
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: KNO3
   concentration:
     value: '2.86'
@@ -107,7 +107,7 @@ ingredients:
     label: potassium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63043
-    label: KNO3
+    label: "potassium nitrate"
 - preferred_term: MnCl2·4H2O
   concentration:
     value: '1.81'
@@ -121,7 +121,7 @@ ingredients:
     label: zinc sulfate heptahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
+    label: "zinc sulfate heptahydrate"
 - preferred_term: Na2MnO4·2H2O
   concentration:
     value: '0.39'
@@ -135,7 +135,7 @@ ingredients:
     label: copper(II) sulfate pentahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:31440
-    label: CuSO4 x 5 H2O
+    label: "copper(II) sulfate pentahydrate"
 - preferred_term: Co(NO3)2·6H2O
   concentration:
     value: '49.4'
@@ -145,7 +145,7 @@ ingredients:
     label: cobalt dinitrate hexahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86214
-    label: Co(NO3)2 x 6 H2O
+    label: "cobalt dinitrate hexahydrate"
 preparation_steps:
 - step_number: 1
   action: MIX

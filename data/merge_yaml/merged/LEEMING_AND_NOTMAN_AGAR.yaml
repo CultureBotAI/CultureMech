@@ -14,10 +14,10 @@ ingredients:
     Inorganic compound'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: Glycerol
   concentration:
     value: '1'
@@ -26,10 +26,10 @@ ingredients:
     compound'
   term:
     id: CHEBI:17754
-    label: Glycerol
+    label: "glycerol"
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: Glycerol
+    label: "glycerol"
 - preferred_term: Cow's milk (whole fat)
   concentration:
     value: '10'

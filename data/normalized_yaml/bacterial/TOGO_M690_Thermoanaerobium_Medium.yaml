@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 950.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: Yeast extract
   concentration:
     value: '3'
@@ -46,7 +46,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: NH4Cl
   concentration:
     value: '0.9'
@@ -91,7 +91,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86345
-    label: ''
+    label: "magnesium dichloride hexahydrate"
 - preferred_term: FeSO4・7H2O
   concentration:
     value: '3'
@@ -100,7 +100,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: ''
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: Tryptone (BD-Difco)
   concentration:
     value: '10'
@@ -113,7 +113,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: "dinitrogen"
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
@@ -133,7 +133,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: "calcium chloride dihydrate"
 - preferred_term: Na2MoO4・2H2O
   concentration:
     value: '0.01'
@@ -163,7 +163,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86368
-    label: ''
+    label: "manganese(II) chloride tetrahydrate"
 - preferred_term: CoCl2・6H2O
   concentration:
     value: '0.17'
@@ -172,7 +172,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:35696
-    label: ''
+    label: "cobalt dichloride"
 - preferred_term: NiCl2・6H2O
   concentration:
     value: '0.026'
@@ -181,7 +181,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:34887
-    label: ''
+    label: "nickel dichloride"
 - preferred_term: CuCl2・2H2O
   concentration:
     value: '0.02'
@@ -190,7 +190,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86318
-    label: ''
+    label: "copper(II) chloride dihydrate"
 - preferred_term: ZnCl2
   concentration:
     value: '0.1'
@@ -235,7 +235,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86249
-    label: ''
+    label: "iron dichloride tetrahydrate"
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
   term:

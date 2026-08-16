@@ -23,7 +23,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:8806
-    label: ''
+    label: "Resazurin"
 - preferred_term: Sodium carbonate
   concentration:
     value: '1'

@@ -78,10 +78,10 @@ ingredients:
     compound'
   term:
     id: CHEBI:26710
-    label: Sodium Chloride
+    label: "sodium chloride"
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: Sodium Chloride
+    label: "sodium chloride"
 - preferred_term: Agar
   concentration:
     value: '15'

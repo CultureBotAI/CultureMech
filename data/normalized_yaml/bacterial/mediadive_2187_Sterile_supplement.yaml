@@ -20,7 +20,7 @@ composition:
     label: Ampicillin
   chebi_term:
     id: CHEBI:28971
-    label: Ampicillin
+    label: "ampicillin"
     confidence: 0.9
     match_type: corpus_consensus
 preparation_notes: 'Autoclave at 121°C for 15 minutes.

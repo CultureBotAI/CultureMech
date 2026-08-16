@@ -33,23 +33,23 @@ ingredients:
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: "calcium chloride dihydrate"
   concentration:
     value: '0.11976'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: "calcium chloride dihydrate"
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: "magnesium sulfate heptahydrate"
   concentration:
     value: '0.189621'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: "magnesium sulfate heptahydrate"
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -59,7 +59,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -69,17 +69,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: "dipotassium hydrogen phosphate"
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
   concentration:
     value: '0.898204'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -89,7 +89,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: "ammonium sulfate"
 - preferred_term: Yeast extract
   concentration:
     value: '1.99601'
@@ -104,17 +104,17 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:8806
-    label: ''
+    label: "Resazurin"
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    label: "L-cysteine hydrochloride hydrate"
   concentration:
     value: '0.998004'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    label: "L-cysteine hydrochloride hydrate"
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -124,48 +124,48 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: "sodium carbonate"
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
-    label: D-Glucose
+    label: "D-glucose"
   concentration:
     value: '1.99601'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17634
-    label: D-Glucose
+    label: "D-glucose"
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
   concentration:
     value: '11.976'
     unit: G_PER_L
   notes: ' (for solid medium)'
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
 - preferred_term: n-Butyric acid
   term:
     id: CHEBI:30772
-    label: n-Butyric acid
+    label: "butyric acid"
   concentration:
     value: '5.8'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30772
-    label: n-Butyric acid
+    label: "butyric acid"
 - preferred_term: iso-Butyric acid
   term:
     id: CHEBI:16135
-    label: iso-Butyric acid
+    label: "isobutyric acid"
   concentration:
     value: '275.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16135
-    label: iso-Butyric acid
+    label: "isobutyric acid"
 - preferred_term: Tryptone
   term:
     id: MICRO:0000182
@@ -222,17 +222,17 @@ ingredients:
 - preferred_term: n-Valeric acid
   term:
     id: CHEBI:17418
-    label: n-Valeric acid
+    label: "valeric acid"
   concentration:
     value: '131.46'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17418
-    label: n-Valeric acid
+    label: "valeric acid"
 - preferred_term: iso-Valeric acid
   term:
     id: CHEBI:28484
-    label: iso-Valeric acid
+    label: "isovaleric acid"
   concentration:
     value: '130.34'
     unit: G_PER_L

@@ -35,7 +35,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:32139
-    label: null
+    label: "sodium hydrogencarbonate"
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 144-55-8; MW: 84.007;
     From TYG salts solution'
 - preferred_term: Sodium Chloride
@@ -52,7 +52,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:91247
-    label: ''
+    label: "L-cysteine hydrochloride"
 - preferred_term: Tween 80
   concentration:
     value: '1'
@@ -77,7 +77,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:75832
-    label: ''
+    label: "iron(2+) sulfate (anhydrous)"
   notes: Ontology enriched via CAS-RN lookup
 - preferred_term: Tryptone
   concentration:
@@ -108,7 +108,7 @@ ingredients:
   notes: 'CAS: 528-50-7; MW: 342.3; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:17057
-    label: ''
+    label: "cellobiose"
 - preferred_term: D-Maltose monohydrate
   concentration:
     value: '1'
@@ -146,7 +146,7 @@ ingredients:
   notes: 'CAS: 58-27-5; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:28869
-    label: ''
+    label: "menadione"
 - preferred_term: Folic Acid
   concentration:
     value: '20.0'
@@ -162,7 +162,7 @@ ingredients:
     unit: MICROG_PER_L
   term:
     id: CHEBI:30961
-    label: Pyridoxine HCl
+    label: "pyridoxine hydrochloride"
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-56-0; MW: 205.64;
     From ATCC Wolfe''s vitamin mix'
 - preferred_term: Riboflavin
@@ -278,7 +278,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:75836
-    label: ''
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: Cobalt(II) nitrate hexahydrate
   concentration:
     value: '1.0'
@@ -287,7 +287,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:86214
-    label: ''
+    label: "cobalt dinitrate hexahydrate"
 - preferred_term: Calcium Chloride Dihydrate
   concentration:
     value: '1.0'
@@ -305,7 +305,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:32312
-    label: ''
+    label: "zinc sulfate heptahydrate"
 - preferred_term: Copper (II) sulfate pentahydrate
   concentration:
     value: '0.1'
@@ -314,7 +314,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:31440
-    label: ''
+    label: "copper(II) sulfate pentahydrate"
 - preferred_term: Aluminum potassium sulfate dodecahydrate
   concentration:
     value: '0.1'
@@ -323,7 +323,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:86465
-    label: ''
+    label: "potassium aluminium sulfate dodecahydrate"
 - preferred_term: Boric Acid
   concentration:
     value: '0.1'
@@ -340,7 +340,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:75213
-    label: ''
+    label: "sodium molybdate dihydrate"
 - preferred_term: Sodium selenite pentahydrate
   concentration:
     value: '0.01'
@@ -349,7 +349,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:131361
-    label: ''
+    label: "disodium selenite pentahydrate"
 - preferred_term: Sodium tungstate dihydrate
   concentration:
     value: '0.1'
@@ -358,7 +358,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:63939
-    label: ''
+    label: "sodium tungstate dihydrate"
 - preferred_term: Nickel (II) chloride hexahydrate
   concentration:
     value: '0.2'
@@ -367,7 +367,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:53542
-    label: ''
+    label: "nickel chloride hexahydrate"
 - preferred_term: Acetic Acid
   concentration:
     value: '1.7'
@@ -398,7 +398,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:28484
-    label: null
+    label: "isovaleric acid"
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 503-74-2; MW: 102.13'
 description: Mega medium
 notes: 'Source: FEBA media definitions'

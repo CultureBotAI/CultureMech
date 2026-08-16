@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 980.0, 1000.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '6.32'
@@ -47,7 +47,7 @@ ingredients:
     Simple component [Merged 2 duplicates: 0.08, 0.13]'
   term:
     id: CHEBI:86158
-    label: ''
+    label: "calcium chloride dihydrate"
 - preferred_term: KH2PO4
   concentration:
     value: '0.3'
@@ -59,7 +59,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: K2HPO4
   concentration:
     value: '0.15'
@@ -92,7 +92,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:76209
-    label: ''
+    label: "sodium sulfide nonahydrate"
 - preferred_term: FeSO4・7H2O
   concentration:
     value: '4.1'
@@ -101,7 +101,7 @@ ingredients:
     Simple component [Merged 2 duplicates: 4.0, 0.1]'
   term:
     id: CHEBI:75836
-    label: ''
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: (NH4)2SO4
   concentration:
     value: '1.5'
@@ -133,7 +133,7 @@ ingredients:
   notes: 'Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:91248
-    label: ''
+    label: "L-cysteine hydrochloride hydrate"
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -141,7 +141,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: "carbon dioxide"
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
@@ -149,7 +149,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: "dinitrogen"
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -157,7 +157,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: ''
+    label: "dihydrogen"
 - preferred_term: Na2MoO4・2H2O
   concentration:
     value: '0.011'
@@ -187,7 +187,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:35696
-    label: ''
+    label: "cobalt dichloride"
 - preferred_term: NiCl2・6H2O
   concentration:
     value: '0.025'
@@ -196,7 +196,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:34887
-    label: ''
+    label: "nickel dichloride"
 - preferred_term: ZnSO4・7H2O
   concentration:
     value: '0.18'
@@ -205,7 +205,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:32312
-    label: ''
+    label: "zinc sulfate heptahydrate"
 - preferred_term: CuSO4・5H2O
   concentration:
     value: '0.05'
@@ -214,7 +214,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:31440
-    label: ''
+    label: "copper(II) sulfate pentahydrate"
 - preferred_term: KAl(SO4)2・12H2O
   concentration:
     value: '0.018'
@@ -223,7 +223,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86465
-    label: ''
+    label: "potassium aluminium sulfate dodecahydrate"
 - preferred_term: MnSO4・xH2O
   concentration:
     value: '0.55'
@@ -232,7 +232,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86360
-    label: ''
+    label: "manganese(II) sulfate"
 - preferred_term: EDTA・2Na
   concentration:
     value: '0.64'
@@ -240,7 +240,7 @@ ingredients:
   notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:64734
-    label: ''
+    label: "EDTA disodium salt (anhydrous)"
 media_term:
   preferred_term: TOGO Medium M224
   term:

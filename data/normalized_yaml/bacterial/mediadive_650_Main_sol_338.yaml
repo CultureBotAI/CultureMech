@@ -39,7 +39,7 @@ composition:
     label: NaCl
   chebi_term:
     id: CHEBI:26710
-    label: 1% sodium chloride
+    label: "sodium chloride"
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Na2HPO4
@@ -87,7 +87,7 @@ composition:
     label: Na-formate
   chebi_term:
     id: CHEBI:62965
-    label: Na-formate
+    label: "sodium formate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na-fumarate
@@ -99,7 +99,7 @@ composition:
     label: Na-fumarate
   chebi_term:
     id: CHEBI:115156
-    label: Na-fumarate
+    label: "disodium fumarate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Resazurin
@@ -111,7 +111,7 @@ composition:
     label: Resazurin
   chebi_term:
     id: CHEBI:8806
-    label: resazurin
+    label: "Resazurin"
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Distilled water
@@ -123,7 +123,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Adjust pH to 7.5. Prepare the medium anaerobically under 100%

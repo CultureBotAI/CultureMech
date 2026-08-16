@@ -15,10 +15,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: Horse serum (Oxoid)
   concentration:
     value: '2'
@@ -31,7 +31,7 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Undefined component'
   term:
     id: CHEBI:28017
-    label: ''
+    label: "starch"
 - preferred_term: Tryptone soya broth (Oxoid)
   concentration:
     value: '30'
@@ -44,7 +44,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: "carbon dioxide"
 media_term:
   preferred_term: TOGO Medium M2563
   term:

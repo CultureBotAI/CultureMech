@@ -15,13 +15,13 @@ ingredients:
 - preferred_term: Oatmeal agar
   term:
     id: CHEBI:2509
-    label: Oatmeal agar
+    label: "agar"
   concentration:
     value: '1000'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Oatmeal agar
+    label: "agar"
 - preferred_term: Yeast extract
   concentration:
     value: '1'

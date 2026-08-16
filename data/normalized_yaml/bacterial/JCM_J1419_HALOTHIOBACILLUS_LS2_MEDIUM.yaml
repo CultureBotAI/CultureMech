@@ -22,7 +22,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: NaCl
   concentration:
     value: '1.0'
@@ -32,7 +32,7 @@ ingredients:
     label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
 - preferred_term: MgCl2·6H2O
   concentration:
     value: '0.12'
@@ -42,7 +42,7 @@ ingredients:
     label: magnesium dichloride hexahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: "magnesium dichloride hexahydrate"
 - preferred_term: Modified A5 solution (see below)
   concentration:
     value: '1.0'
@@ -56,7 +56,7 @@ ingredients:
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: 8% NaHCO3 solution
   concentration:
     value: '2.5'
@@ -82,7 +82,7 @@ ingredients:
     label: boric acid
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: H3BO3
+    label: "boric acid"
 - preferred_term: ZnSO4·7H2O
   concentration:
     value: '0.222'
@@ -92,7 +92,7 @@ ingredients:
     label: zinc sulfate heptahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
+    label: "zinc sulfate heptahydrate"
 - preferred_term: Na2MoO4·2H2O
   concentration:
     value: '0.39'
@@ -116,14 +116,14 @@ ingredients:
     label: copper(II) sulfate pentahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:31440
-    label: CuSO4 x 5 H2O
+    label: "copper(II) sulfate pentahydrate"
 - preferred_term: CoCl2·6H2O
   concentration:
     value: '0.04'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:35696
-    label: CoCl2 x 2 H2O
+    label: "cobalt dichloride"
 preparation_steps:
 - step_number: 1
   action: MIX

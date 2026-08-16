@@ -14,10 +14,10 @@ ingredients:
     Inorganic compound'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '3.45'
@@ -47,7 +47,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86158
-    label: ''
+    label: "calcium chloride dihydrate"
 - preferred_term: KH2PO4
   concentration:
     value: '0.14'
@@ -59,7 +59,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: NH4Cl
   concentration:
     value: '0.25'
@@ -80,7 +80,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86345
-    label: ''
+    label: "magnesium dichloride hexahydrate"
 - preferred_term: NaHCO3
   concentration:
     value: '1'
@@ -101,7 +101,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:32583
-    label: ''
+    label: "calcium sulfate dihydrate"
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '0.1'

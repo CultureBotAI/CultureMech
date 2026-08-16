@@ -46,23 +46,23 @@ ingredients:
 - preferred_term: D(+)-Glucose
   term:
     id: CHEBI:17634
-    label: D(+)-Glucose
+    label: "D-glucose"
   concentration:
     value: '2.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17634
-    label: D(+)-Glucose
+    label: "D-glucose"
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
   concentration:
     value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -72,7 +72,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: "dipotassium hydrogen phosphate"
 - preferred_term: Calf brains
   term:
     id: UBERON:0000955
@@ -152,7 +152,7 @@ ingredients:
 - preferred_term: Disodium phosphate
   term:
     id: CHEBI:34683
-    label: disodium hydrogen phosphate
+    label: "disodium hydrogenphosphate"
   concentration:
     value: '2.5'
     unit: G_PER_L

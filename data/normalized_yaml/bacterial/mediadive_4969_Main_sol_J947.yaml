@@ -25,7 +25,7 @@ composition:
     label: NaCl
   chebi_term:
     id: CHEBI:26710
-    label: 1% sodium chloride
+    label: "sodium chloride"
     confidence: 1.0
     match_type: exact_match
 - preferred_term: MgCl2 x 6 H2O
@@ -37,7 +37,7 @@ composition:
     label: MgCl2 x 6 H2O
   chebi_term:
     id: CHEBI:86345
-    label: magnesium chloride hexahydrate
+    label: "magnesium dichloride hexahydrate"
     match_type: corpus_consensus
 - preferred_term: KH2PO4
   concentration:
@@ -48,7 +48,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: K2HPO4
@@ -86,7 +86,7 @@ composition:
     label: FeCl3 x 6 H2O
   chebi_term:
     id: CHEBI:86254
-    label: FeCl3 x 6 H2O
+    label: "iron trichloride hexahydrate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Cellobiose
@@ -98,7 +98,7 @@ composition:
     label: Cellobiose
   chebi_term:
     id: CHEBI:17057
-    label: Cellobiose
+    label: "cellobiose"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Glucose
@@ -110,7 +110,7 @@ composition:
     label: Glucose
   chebi_term:
     id: CHEBI:17234
-    label: D-glucose
+    label: "glucose"
     confidence: 0.9
     match_type: manual_curated
 - preferred_term: L-Cysteine HCl x H2O
@@ -122,7 +122,7 @@ composition:
     label: L-Cysteine HCl x H2O
   chebi_term:
     id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    label: "L-cysteine hydrochloride hydrate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Resazurin
@@ -134,7 +134,7 @@ composition:
     label: Resazurin
   chebi_term:
     id: CHEBI:8806
-    label: resazurin
+    label: "Resazurin"
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Distilled water
@@ -146,7 +146,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Adjust pH to 7.5.

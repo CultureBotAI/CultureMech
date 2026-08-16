@@ -20,23 +20,23 @@ ingredients:
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258
-    label: Sodium citrate
+    label: "sodium citrate"
   concentration:
     value: '2.99401'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:53258
-    label: Sodium citrate
+    label: "sodium citrate"
 - preferred_term: KCl
   term:
     id: CHEBI:32588
-    label: KCl
+    label: "potassium chloride"
   concentration:
     value: '1.99601'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: KCl
+    label: "potassium chloride"
 - preferred_term: MgSO4 x H2O
   term:
     id: CHEBI:32599
@@ -46,7 +46,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: MgSO4 x H2O
+    label: "magnesium sulfate"
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -56,37 +56,37 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: "sodium carbonate"
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
   concentration:
     value: '99.8004'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
-    label: MnCl2 x 4 H2O
+    label: "manganese(II) chloride tetrahydrate"
   concentration:
     value: '0.36'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
-    label: MnCl2 x 4 H2O
+    label: "manganese(II) chloride tetrahydrate"
 - preferred_term: FeSO4 x H2O
   term:
     id: CHEBI:75834
-    label: FeSO4 x H2O
+    label: "iron(2+) sulfate monohydrate"
   concentration:
     value: '50'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75834
-    label: FeSO4 x H2O
+    label: "iron(2+) sulfate monohydrate"
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

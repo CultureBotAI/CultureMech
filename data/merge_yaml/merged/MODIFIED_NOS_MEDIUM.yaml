@@ -14,10 +14,10 @@ ingredients:
     Defined component [Merged 2 duplicates: 94.0, 8.4]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: Glucose
   concentration:
     value: '0.2'
@@ -38,10 +38,10 @@ ingredients:
     component'
   term:
     id: CHEBI:17196
-    label: L-Asparagine
+    label: "L-asparagine"
   mediaingredientmech_chebi_term:
     id: CHEBI:17196
-    label: L--Asparagine
+    label: "L-asparagine"
 - preferred_term: Yeast extract (BD-BBL)
   concentration:
     value: '0.25'
@@ -75,7 +75,7 @@ ingredients:
   notes: 'Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:91248
-    label: ''
+    label: "L-cysteine hydrochloride hydrate"
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -83,7 +83,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: "carbon dioxide"
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -91,7 +91,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: "dinitrogen"
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -99,7 +99,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: ''
+    label: "dihydrogen"
 - preferred_term: Rabbit serum heat--inactivated at 56C for 1 hr
   concentration:
     value: '2'

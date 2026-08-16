@@ -28,43 +28,43 @@ ingredients:
 - preferred_term: MgCl2
   term:
     id: CHEBI:6636
-    label: MgCl2
+    label: "magnesium dichloride"
   concentration:
     value: '0.47605'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:6636
-    label: MgCl2
+    label: "magnesium dichloride"
 - preferred_term: Diaminopimelic acid
   term:
     id: CHEBI:23673
-    label: Diaminopimelic acid
+    label: "2,6-diaminopimelic acid"
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:23673
-    label: Diaminopimelic acid
+    label: "2,6-diaminopimelic acid"
 - preferred_term: Thymidine
   term:
     id: CHEBI:17748
-    label: Thymidine
+    label: "thymidine"
   concentration:
     value: '0.04'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17748
-    label: Thymidine
+    label: "thymidine"
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
   concentration:
     value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
 applications:
 - Microbial cultivation
 curation_history:

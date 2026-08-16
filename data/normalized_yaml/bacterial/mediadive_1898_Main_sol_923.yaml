@@ -13,7 +13,7 @@ composition:
     label: Na glutamate
   chebi_term:
     id: CHEBI:64220
-    label: Na glutamate
+    label: "monosodium glutamate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Yeast extract
@@ -80,7 +80,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Agar
@@ -93,7 +93,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: We recommend that liquid media be made by autoclaving the Na2CO3

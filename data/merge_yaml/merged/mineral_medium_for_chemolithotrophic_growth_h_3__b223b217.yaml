@@ -13,7 +13,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: "carbon dioxide"
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -21,7 +21,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: "dinitrogen"
 - preferred_term: Oxygen gas
   notes: 'Properties: Gas'
   concentration:
@@ -34,7 +34,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: ''
+    label: "dihydrogen"
 - preferred_term: Distilled water
   concentration:
     value: '2085.0'
@@ -43,10 +43,10 @@ ingredients:
     Simple component [Merged 5 duplicates: 50.0, 915.0, 20.0, 100.0, 1000.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: KH2PO4
   concentration:
     value: '2.3'
@@ -58,7 +58,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: Na2HPO4 x 2 H2O
   concentration:
     value: '2.9'
@@ -115,10 +115,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 0.005, 0.03]'
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
-    label: MnCl2 x 4 H2O
+    label: "manganese(II) chloride tetrahydrate"
   term:
     id: CHEBI:86368
-    label: ''
+    label: "manganese(II) chloride tetrahydrate"
 - preferred_term: NaVO3 x H2O
   concentration:
     value: '0.005'
@@ -127,10 +127,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:132095
-    label: NaVO3 x H2O
+    label: "sodium metavanadate hydrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:132095
-    label: NaVO3 x H2O
+    label: "sodium metavanadate hydrate"
 - preferred_term: Agar (if necessary)
   concentration:
     value: '20'
@@ -177,10 +177,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:30961
-    label: Pyridoxine-HCl
+    label: "pyridoxine hydrochloride"
   mediaingredientmech_chebi_term:
     id: CHEBI:30961
-    label: Pyridoxine-HCl
+    label: "pyridoxine hydrochloride"
 - preferred_term: Folic acid
   concentration:
     value: '0.2'
@@ -232,10 +232,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
+    label: "thiamine hydrochloride dihydrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
+    label: "thiamine hydrochloride dihydrate"
 - preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '0.03'

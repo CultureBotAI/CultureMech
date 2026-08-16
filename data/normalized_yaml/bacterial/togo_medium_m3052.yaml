@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4 7H2O
   concentration:
     value: '0.09'
@@ -52,7 +52,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: K2HPO4
   concentration:
     value: '0.5'
@@ -73,10 +73,10 @@ ingredients:
     component'
   term:
     id: CHEBI:29377
-    label: ''
+    label: "sodium carbonate"
   mediaingredientmech_chebi_term:
     id: CHEBI:29377
-    label: NaCO3
+    label: "sodium carbonate"
 - preferred_term: CaCl2
   concentration:
     value: '0.09'
@@ -97,10 +97,10 @@ ingredients:
     component'
   term:
     id: CHEBI:50385
-    label: Haemin
+    label: "hemin"
   mediaingredientmech_chebi_term:
     id: CHEBI:50385
-    label: Haemin
+    label: "hemin"
 - preferred_term: Cysteine
   concentration:
     value: '1'
@@ -109,10 +109,10 @@ ingredients:
     Organic compound'
   term:
     id: CHEBI:15356
-    label: Cysteine
+    label: "cysteine"
   mediaingredientmech_chebi_term:
     id: CHEBI:15356
-    label: Cysteine
+    label: "cysteine"
 - preferred_term: Agar
   concentration:
     value: '15'

@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 3 duplicates: 1.0, 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.2'
@@ -46,7 +46,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: NH4Cl
   concentration:
     value: '1'
@@ -156,10 +156,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:75213
-    label: NaMoO4·2H2O
+    label: "sodium molybdate dihydrate"
   term:
     id: CHEBI:75213
-    label: ''
+    label: "sodium molybdate dihydrate"
 - preferred_term: CoCl2·6H2O
   concentration:
     value: '0.2'
@@ -168,7 +168,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:35696
-    label: ''
+    label: "cobalt dichloride"
 - preferred_term: NiCl2·6H2O
   concentration:
     value: '0.02'
@@ -237,7 +237,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86364
-    label: ''
+    label: "manganese(II) sulfate monohydrate"
 - preferred_term: Biotin
   concentration:
     value: '2'
@@ -256,10 +256,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:30753
-    label: 4-Aminobenzoic Acid
+    label: "4-aminobenzoic acid"
   mediaingredientmech_chebi_term:
     id: CHEBI:30753
-    label: 4-Aminobenzoic Acid
+    label: "4-aminobenzoic acid"
 - preferred_term: Thiamine-HCl
   concentration:
     value: '5'

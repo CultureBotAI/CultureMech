@@ -27,7 +27,7 @@ composition:
     label: HEPES buffer
   chebi_term:
     id: CHEBI:46756
-    label: HEPES buffer
+    label: "HEPES"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Ferric ammonium citrate
@@ -52,7 +52,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: After autoclaving add 20ml 1M HEPES sterile buffer (pH 7.8) and

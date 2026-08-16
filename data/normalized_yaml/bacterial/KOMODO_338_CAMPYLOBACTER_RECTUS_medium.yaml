@@ -35,23 +35,23 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
   concentration:
     value: '2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
-    label: Na2HPO4
+    label: "disodium hydrogenphosphate"
   concentration:
     value: '0.4'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34683
-    label: Na2HPO4
+    label: "disodium hydrogenphosphate"
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -61,17 +61,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: "sodium carbonate"
 - preferred_term: Haemin
   term:
     id: CHEBI:50385
-    label: Haemin
+    label: "hemin"
   concentration:
     value: '0.005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:50385
-    label: Haemin
+    label: "hemin"
 - preferred_term: Na-formate
   term:
     id: CHEBI:62965
@@ -81,17 +81,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62965
-    label: Na-formate
+    label: "sodium formate"
 - preferred_term: Na-fumarate
   term:
     id: CHEBI:115156
-    label: Na-fumarate
+    label: "disodium fumarate"
   concentration:
     value: '3'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:115156
-    label: Na-fumarate
+    label: "disodium fumarate"
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806

@@ -20,7 +20,7 @@ composition:
     label: Na-acetate
   chebi_term:
     id: CHEBI:32954
-    label: Na-acetate
+    label: "sodium acetate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Disodium succinate
@@ -32,7 +32,7 @@ composition:
     label: Disodium succinate
   chebi_term:
     id: CHEBI:63675
-    label: sodium succinate
+    label: "sodium succinate (anhydrous)"
     confidence: 1.0
     match_type: exact_match
 - preferred_term: DL-Malate
@@ -44,7 +44,7 @@ composition:
     label: DL-Malate
   chebi_term:
     id: CHEBI:15595
-    label: DL-Malate
+    label: "malate(2-)"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -56,7 +56,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'pH 7.0

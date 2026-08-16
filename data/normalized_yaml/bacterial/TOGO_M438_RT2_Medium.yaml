@@ -18,10 +18,10 @@ ingredients:
     Simple component [Merged 3 duplicates: 900.0, 100.0, 10.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: Yeast extract
   concentration:
     value: '0.5'
@@ -47,7 +47,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: "calcium chloride dihydrate"
 - preferred_term: KH2PO4
   concentration:
     value: '0.1'
@@ -59,7 +59,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: NH4Cl
   concentration:
     value: '0.25'
@@ -92,7 +92,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86345
-    label: ''
+    label: "magnesium dichloride hexahydrate"
 - preferred_term: KCl
   concentration:
     value: '0.5'
@@ -124,10 +124,10 @@ ingredients:
   notes: 'Role: Buffer; Properties: Simple component, Defined component'
   term:
     id: CHEBI:183882
-    label: ''
+    label: "3-(cyclohexylamino)-2-hydroxy-1-propanesulfonic acid"
   mediaingredientmech_chebi_term:
     id: CHEBI:183882
-    label: CAPSO
+    label: "3-(cyclohexylamino)-2-hydroxy-1-propanesulfonic acid"
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
@@ -146,7 +146,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: "dinitrogen"
 - preferred_term: Sodium lactate
   concentration:
     value: '2.24'

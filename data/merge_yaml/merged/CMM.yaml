@@ -9,14 +9,14 @@ ingredients:
 - preferred_term: Pyruvate
   term:
     id: CHEBI:15361
-    label: Pyruvate
+    label: "pyruvate"
   concentration:
     value: '9.09'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pyr'
   mediaingredientmech_chebi_term:
     id: CHEBI:15361
-    label: Pyruvate
+    label: "pyruvate"
 - preferred_term: L-Glutamate
   concentration:
     value: '0.68'
@@ -24,29 +24,29 @@ ingredients:
   notes: 'Cross-references: KEGG:glu-L'
   term:
     id: CHEBI:16015
-    label: ''
+    label: "L-glutamic acid"
 - preferred_term: Glycine
   term:
     id: CHEBI:15428
-    label: Glycine
+    label: "glycine"
   concentration:
     value: '1.33'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gly'
   mediaingredientmech_chebi_term:
     id: CHEBI:15428
-    label: Glycine
+    label: "glycine"
 - preferred_term: L-Alanine
   term:
     id: CHEBI:16977
-    label: L-Alanine
+    label: "L-alanine"
   concentration:
     value: '1.12'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ala-L'
   mediaingredientmech_chebi_term:
     id: CHEBI:16977
-    label: L-Alanine
+    label: "L-alanine"
 - preferred_term: L-Aspartate
   concentration:
     value: '0.751'
@@ -55,180 +55,180 @@ ingredients:
 - preferred_term: L-Arginine
   term:
     id: CHEBI:16467
-    label: L-Arginine
+    label: "L-arginine"
   concentration:
     value: '0.574'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:arg-L'
   mediaingredientmech_chebi_term:
     id: CHEBI:16467
-    label: L-Arginine
+    label: "L-arginine"
 - preferred_term: L-Serine
   term:
     id: CHEBI:17115
-    label: L-Serine
+    label: "L-serine"
   concentration:
     value: '0.952'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ser-L'
   mediaingredientmech_chebi_term:
     id: CHEBI:17115
-    label: L-Serine
+    label: "L-serine"
 - preferred_term: L-Phenylalanine
   term:
     id: CHEBI:17295
-    label: L-Phenylalanine
+    label: "L-phenylalanine"
   concentration:
     value: '0.605'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:phe-L'
   mediaingredientmech_chebi_term:
     id: CHEBI:17295
-    label: L-Phenylalanine
+    label: "L-phenylalanine"
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
-    label: Glycerol
+    label: "glycerol"
   concentration:
     value: '27.4'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glyc'
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: Glycerol
+    label: "glycerol"
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
-    label: Biotin
+    label: "biotin"
   concentration:
     value: '0.000409'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
-    label: Biotin
+    label: "biotin"
 - preferred_term: L-Leucine
   term:
     id: CHEBI:15603
-    label: L-Leucine
+    label: "L-leucine"
   concentration:
     value: '0.762'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:leu-L'
   mediaingredientmech_chebi_term:
     id: CHEBI:15603
-    label: L-Leucine
+    label: "L-leucine"
 - preferred_term: L-Asparagine
   term:
     id: CHEBI:17196
-    label: L-Asparagine
+    label: "L-asparagine"
   concentration:
     value: '15.1'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:asn-L'
   mediaingredientmech_chebi_term:
     id: CHEBI:17196
-    label: L-Asparagine
+    label: "L-asparagine"
 - preferred_term: L-Isoleucine
   term:
     id: CHEBI:17191
-    label: L-Isoleucine
+    label: "L-isoleucine"
   concentration:
     value: '0.762'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ile-L'
   mediaingredientmech_chebi_term:
     id: CHEBI:17191
-    label: L-Isoleucine
+    label: "L-isoleucine"
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.00374'
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: ''
+    label: "calcium dichloride"
 - preferred_term: Tween 80
   term:
     id: CHEBI:53426
-    label: Tween 80
+    label: "polysorbate 80"
   concentration:
     value: '1.53'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:53426
-    label: Tween 80
+    label: "polysorbate 80"
 - preferred_term: Potassium hydroxide
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
   term:
     id: CHEBI:32035
-    label: ''
+    label: "potassium hydroxide"
 - preferred_term: Sodium bicarbonate
   concentration:
     value: '0.5'
     unit: MILLIMOLAR
   term:
     id: CHEBI:32139
-    label: ''
+    label: "sodium hydrogencarbonate"
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: Sodium bicarbonate
+    label: "sodium hydrogencarbonate"
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '1.63'
     unit: MILLIMOLAR
   term:
     id: CHEBI:63036
-    label: ''
+    label: "potassium dihydrogen phosphate"
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: "magnesium sulfate"
   concentration:
     value: '0.8869'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: "magnesium sulfate"
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.367'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75832
-    label: ''
+    label: "iron(2+) sulfate (anhydrous)"
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.00202'
     unit: MILLIMOLAR
   term:
     id: CHEBI:35696
-    label: ''
+    label: "cobalt dichloride"
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
-    label: Zinc Sulfate
+    label: "zinc sulfate"
   concentration:
     value: '0.00141'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:35176
-    label: Zinc Sulfate
+    label: "zinc sulfate"
 - preferred_term: Manganese chloride
   concentration:
     value: '0.000101'
     unit: MILLIMOLAR
   term:
     id: CHEBI:63041
-    label: ''
+    label: "manganese(II) chloride"
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.0001'
     unit: MILLIMOLAR
   term:
     id: CHEBI:23414
-    label: ''
+    label: "copper(II) sulfate"
 - preferred_term: ACES
   term:
     id: CHEBI:39061

@@ -26,7 +26,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:76209
-    label: ''
+    label: "sodium sulfide nonahydrate"
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '2'
@@ -39,7 +39,7 @@ ingredients:
   notes: 'Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:32150
-    label: ''
+    label: "sodium thiosulfate pentahydrate"
 - preferred_term: Bacto peptone (BD-Difco)
   concentration:
     value: '2'
@@ -75,7 +75,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: "dinitrogen"
 media_term:
   preferred_term: TOGO Medium M253
   term:

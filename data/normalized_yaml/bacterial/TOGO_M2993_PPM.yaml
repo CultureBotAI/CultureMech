@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '1'
@@ -49,10 +49,10 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:62982
-    label: ''
+    label: "ammonium dihydrogen phosphate"
   mediaingredientmech_chebi_term:
     id: CHEBI:62982
-    label: NH4H2PO4
+    label: "ammonium dihydrogen phosphate"
 - preferred_term: Gelrite (if needed)
   concentration:
     value: '8'
@@ -66,10 +66,10 @@ ingredients:
     Defined component'
   mediaingredientmech_chebi_term:
     id: CHEBI:27641
-    label: Cycloheximide
+    label: "cycloheximide"
   term:
     id: CHEBI:27641
-    label: ''
+    label: "cycloheximide"
 - preferred_term: Pectin
   concentration:
     value: '0.05'
@@ -78,10 +78,10 @@ ingredients:
     component'
   term:
     id: CHEBI:17309
-    label: Pectin
+    label: "pectin"
   mediaingredientmech_chebi_term:
     id: CHEBI:17309
-    label: Pectin
+    label: "pectin"
 - preferred_term: Xylan from Beechwood
   concentration:
     value: '0.05'

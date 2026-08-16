@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 3 duplicates: 1.0, 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -73,7 +73,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: "dinitrogen"
 - preferred_term: Tween 80
   concentration:
     value: '50'
@@ -118,7 +118,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:75836
-    label: ''
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: MnSO4·4H2O
   concentration:
     value: '2'
@@ -127,7 +127,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86358
-    label: ''
+    label: "manganese(II) sulfate tetrahydrate"
 - preferred_term: HCl
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Solution'

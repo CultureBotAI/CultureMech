@@ -13,10 +13,10 @@ ingredients:
   notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:91248
-    label: Cysteine hydrochloride
+    label: "L-cysteine hydrochloride hydrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:91248
-    label: Cysteine hydrochloride
+    label: "L-cysteine hydrochloride hydrate"
 - preferred_term: MRS broth (Oxoid)
   concentration:
     value: '1'
@@ -29,10 +29,10 @@ ingredients:
     Inorganic compound'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: Magnesium sulphate 7H2O
   concentration:
     value: '0.2'
@@ -76,7 +76,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63037
-    label: ''
+    label: "triammonium citrate"
 - preferred_term: Sodium acetate 3H2O
   concentration:
     value: '5'

@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '7'
@@ -47,7 +47,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: "calcium chloride dihydrate"
 - preferred_term: NH4Cl
   concentration:
     value: '0.15'
@@ -80,7 +80,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86345
-    label: ''
+    label: "magnesium dichloride hexahydrate"
 - preferred_term: KCl
   concentration:
     value: '0.65'
@@ -113,7 +113,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63939
-    label: ''
+    label: "sodium tungstate dihydrate"
 - preferred_term: sulfur (powder)
   concentration:
     value: '0.5'
@@ -146,7 +146,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86149
-    label: ''
+    label: "ammonium nickel sulfate hexahydrate"
 - preferred_term: Na2SeO4
   concentration:
     value: '0.1'
@@ -158,7 +158,7 @@ ingredients:
     label: sodium selenate
   mediaingredientmech_chebi_term:
     id: CHEBI:77775
-    label: Na2SeO4
+    label: "sodium selenate"
 - preferred_term: yeast extract (BD-Difco)
   concentration:
     value: '0.2'
@@ -183,7 +183,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: "carbon dioxide"
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -191,7 +191,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: ''
+    label: "dihydrogen"
 - preferred_term: air
   notes: 'Properties: ガス'
   concentration:

@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 3 duplicates: 1.0, 1000.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: KH2PO4
   concentration:
     value: '0.33'
@@ -29,7 +29,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: NH4Cl
   concentration:
     value: '0.33'
@@ -62,7 +62,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:76209
-    label: ''
+    label: "sodium sulfide nonahydrate"
 - preferred_term: KCl
   concentration:
     value: '0.33'
@@ -95,7 +95,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:91243
-    label: ''
+    label: "calcium chloride hexahydrate"
 - preferred_term: MgCl2.2H2O
   concentration:
     value: '0.33'
@@ -104,7 +104,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:131394
-    label: ''
+    label: "magnesium dichloride dihydrate"
 - preferred_term: 3 M HCl
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Solution'
@@ -118,7 +118,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: "carbon dioxide"
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -126,7 +126,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: ''
+    label: "dihydrogen"
 - preferred_term: Na2MoO4 × H2O
   concentration:
     value: '24'
@@ -135,7 +135,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75215
-    label: ''
+    label: "sodium molybdate (anhydrous)"
 - preferred_term: H3BO3
   concentration:
     value: '6'
@@ -156,7 +156,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86368
-    label: ''
+    label: "manganese(II) chloride tetrahydrate"
 - preferred_term: CoCl2 × 6H2O
   concentration:
     value: '238'
@@ -165,7 +165,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:35696
-    label: ''
+    label: "cobalt dichloride"
 - preferred_term: ZnSO4 × 7H2O
   concentration:
     value: '144'
@@ -174,7 +174,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:32312
-    label: ''
+    label: "zinc sulfate heptahydrate"
 - preferred_term: Na2WO4 × 2H2O
   concentration:
     value: '33'
@@ -183,7 +183,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63939
-    label: ''
+    label: "sodium tungstate dihydrate"
 - preferred_term: (NH4)2SO4FeSO4 × 6H2O
   concentration:
     value: '748'

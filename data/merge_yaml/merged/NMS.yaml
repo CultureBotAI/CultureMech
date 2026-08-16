@@ -36,7 +36,7 @@ ingredients:
   notes: 'CAS: 6381-92-6; MW: 336.206'
   term:
     id: CHEBI:64734
-    label: ''
+    label: "EDTA disodium salt (anhydrous)"
 - preferred_term: Sodium Molybdate Dihydrate
   concentration:
     value: '0.025'
@@ -44,7 +44,7 @@ ingredients:
   notes: 'CAS: 10102-40-6; MW: 241.95; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:75213
-    label: ''
+    label: "sodium molybdate dihydrate"
 - preferred_term: Iron (II) sulfate heptahydrate
   concentration:
     value: '0.5'
@@ -52,7 +52,7 @@ ingredients:
   notes: 'CAS: 7782-63-0; MW: 278.01; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:75836
-    label: ''
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: Zinc sulfate heptahydrate
   concentration:
     value: '0.4'
@@ -60,7 +60,7 @@ ingredients:
   notes: 'CAS: 7446-20-0; MW: 287.56; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:32312
-    label: ''
+    label: "zinc sulfate heptahydrate"
 - preferred_term: Manganese(II) sulfate tetrahydrate
   concentration:
     value: '0.02'
@@ -68,7 +68,7 @@ ingredients:
   notes: 'CAS: 10101-68-5; MW: 223.06; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:86358
-    label: ''
+    label: "manganese(II) sulfate tetrahydrate"
 - preferred_term: Cobalt chloride hexahydrate
   concentration:
     value: '0.05'
@@ -76,7 +76,7 @@ ingredients:
   notes: 'CAS: 7791-13-1; MW: 237.93; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:53503
-    label: ''
+    label: "cobalt chloride hexahydrate"
 - preferred_term: Nickel (II) chloride hexahydrate
   concentration:
     value: '0.01'
@@ -84,7 +84,7 @@ ingredients:
   notes: 'CAS: 7791-20-0; MW: 237.69; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:53542
-    label: ''
+    label: "nickel chloride hexahydrate"
 - preferred_term: Boric Acid
   concentration:
     value: '0.015'

@@ -28,13 +28,13 @@ ingredients:
 - preferred_term: DNA
   term:
     id: CHEBI:16991
-    label: DNA
+    label: "deoxyribonucleic acid"
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16991
-    label: DNA
+    label: "deoxyribonucleic acid"
 - preferred_term: CMRL 1066
   concentration:
     value: '10'
@@ -54,34 +54,34 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
 - preferred_term: Urea
   term:
     id: CHEBI:16199
-    label: Urea
+    label: "urea"
   concentration:
     value: '2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16199
-    label: Urea
+    label: "urea"
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
   concentration:
     value: '10'
     unit: G_PER_L
   notes: ' (for solid medium)'
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
 preparation_steps:
 - step_number: 1
   action: MIX

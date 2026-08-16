@@ -67,7 +67,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:75836
-    label: ''
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: Cobalt(II) nitrate hexahydrate
   concentration:
     value: '1.0'
@@ -76,7 +76,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:86214
-    label: ''
+    label: "cobalt dinitrate hexahydrate"
 - preferred_term: Calcium Chloride Dihydrate
   concentration:
     value: '1.0'
@@ -94,7 +94,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:32312
-    label: ''
+    label: "zinc sulfate heptahydrate"
 - preferred_term: Copper (II) sulfate pentahydrate
   concentration:
     value: '0.1'
@@ -103,7 +103,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:31440
-    label: ''
+    label: "copper(II) sulfate pentahydrate"
 - preferred_term: Aluminum potassium sulfate dodecahydrate
   concentration:
     value: '0.1'
@@ -112,7 +112,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:86465
-    label: ''
+    label: "potassium aluminium sulfate dodecahydrate"
 - preferred_term: Boric Acid
   concentration:
     value: '0.1'
@@ -129,7 +129,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:75213
-    label: ''
+    label: "sodium molybdate dihydrate"
 - preferred_term: Sodium selenite pentahydrate
   concentration:
     value: '0.01'
@@ -138,7 +138,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:131361
-    label: ''
+    label: "disodium selenite pentahydrate"
 - preferred_term: Sodium tungstate dihydrate
   concentration:
     value: '0.1'
@@ -147,7 +147,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:63939
-    label: ''
+    label: "sodium tungstate dihydrate"
 - preferred_term: Nickel (II) chloride hexahydrate
   concentration:
     value: '0.2'
@@ -156,7 +156,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:53542
-    label: ''
+    label: "nickel chloride hexahydrate"
 - preferred_term: Folic Acid
   concentration:
     value: '20.0'
@@ -172,7 +172,7 @@ ingredients:
     unit: MICROG_PER_L
   term:
     id: CHEBI:30961
-    label: Pyridoxine HCl
+    label: "pyridoxine hydrochloride"
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-56-0; MW: 205.64;
     From ATCC Wolfe''s vitamin mix'
 - preferred_term: Riboflavin

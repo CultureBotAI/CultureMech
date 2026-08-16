@@ -197,3 +197,49 @@ def test_name_scope_does_not_leak_to_the_next_ingredient():
     assert len(changes) == 1
     assert "id: CHEBI:86463" in new
     assert "label: potassium aluminium sulfate" in new
+
+def test_hydrate_names_move_but_anhydrous_names_do_not():
+    """#258's core rule. The SAME wrong id is correct for the unmarked name, so this
+    can only be keyed on name+id — `Na2MoO4` must stay anhydrous while
+    `Na2MoO4 x 2 H2O` moves to the dihydrate."""
+    moves = ("Na2MoO4 x 2 H2O", "CHEBI:75215", "CHEBI:75213")
+    stays = ("Na2MoO4", "CHEBI:75215")
+    text = ("ingredients:\n"
+            f"- preferred_term: {moves[0]}\n  term:\n    id: {moves[1]}\n    label: x\n"
+            f"- preferred_term: {stays[0]}\n  term:\n    id: {stays[1]}\n    label: y\n")
+    new, changes = fix_text(text)
+    assert changes == [(moves[0], moves[1], moves[2])]
+    assert f"id: {stays[1]}" in new, "the anhydrous row must survive"
+
+def test_the_majority_reading_is_not_assumed_correct():
+    """1,161 rows had `CoSO4 x 7 H2O` on the anhydrous id and 5 on the heptahydrate.
+    The 5 were right; a majority-wins rule would have entrenched the error."""
+    text = ("ingredients:\n- preferred_term: CoSO4 x 7 H2O\n  term:\n"
+            "    id: CHEBI:53470\n    label: cobalt(2+) sulfate\n")
+    new, changes = fix_text(text)
+    assert changes == [("CoSO4 x 7 H2O", "CHEBI:53470", "CHEBI:91244")]
+    assert "label: cobalt(2+) sulfate heptahydrate" in new
+
+def test_starch_moves_off_gellan_gum_but_gellan_gum_does_not():
+    for name, expect in (("Starch", "CHEBI:28017"), ("Gelrite", None)):
+        text = ("ingredients:\n"
+                f"- preferred_term: {name}\n  term:\n    id: CHEBI:85248\n    label: g\n")
+        new, changes = fix_text(text)
+        if expect:
+            assert changes and f"id: {expect}" in new, name
+        else:
+            assert changes == [] and new == text, name
+
+def test_bare_ion_ids_move_to_the_named_salt():
+    text = ("ingredients:\n- preferred_term: KNO3\n  term:\n"
+            "    id: CHEBI:17632\n    label: nitrate\n")
+    new, changes = fix_text(text)
+    assert changes == [("KNO3", "CHEBI:17632", "CHEBI:63043")]
+    assert "label: potassium nitrate" in new
+
+def test_dextrose_collapses_onto_d_glucose_from_both_wrong_ids():
+    for wrong in ("CHEBI:17234", "CHEBI:4167"):
+        text = ("ingredients:\n"
+                f"- preferred_term: Dextrose\n  term:\n    id: {wrong}\n    label: g\n")
+        new, changes = fix_text(text)
+        assert changes == [("Dextrose", wrong, "CHEBI:17634")], wrong

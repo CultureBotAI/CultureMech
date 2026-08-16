@@ -27,7 +27,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:9754
-    label: ''
+    label: "tris"
 applications:
 - Microbial cultivation
 curation_history:

@@ -21,7 +21,7 @@ ingredients:
     label: potassium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63043
-    label: KNO3
+    label: "potassium nitrate"
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '1.0'
@@ -41,7 +41,7 @@ ingredients:
     label: calcium chloride dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: "calcium chloride dihydrate"
 - preferred_term: Fe(III)-EDTA
   concentration:
     value: '3.8'
@@ -51,7 +51,7 @@ ingredients:
     label: ethylenediaminetetraacetatoferrate(1-)
   mediaingredientmech_chebi_term:
     id: CHEBI:30729
-    label: Fe(III)-EDTA
+    label: "ethylenediaminetetraacetatoferrate(1-)"
 - preferred_term: Na2MoO4·2H2O
   concentration:
     value: '0.26'
@@ -68,7 +68,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34683
-    label: Na2HPO4
+    label: "disodium hydrogenphosphate"
 - preferred_term: KH2PO4
   concentration:
     value: '0.26'
@@ -78,7 +78,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: Trace element solution (see below)
   concentration:
     value: '1.0'
@@ -92,7 +92,7 @@ ingredients:
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: CuSO4·5H2O
   concentration:
     value: '0.2'
@@ -102,14 +102,14 @@ ingredients:
     label: copper(II) sulfate pentahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:31440
-    label: CuSO4 x 5 H2O
+    label: "copper(II) sulfate pentahydrate"
 - preferred_term: FeSO4·7H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: ZnSO4·7H2O
   concentration:
     value: '0.4'
@@ -119,7 +119,7 @@ ingredients:
     label: zinc sulfate heptahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
+    label: "zinc sulfate heptahydrate"
 - preferred_term: H3BO2
   concentration:
     value: '0.02'
@@ -136,14 +136,14 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:35696
-    label: CoCl2 x 2 H2O
+    label: "cobalt dichloride"
 - preferred_term: EDTA·2Na
   concentration:
     value: '0.25'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:64734
-    label: Na2-EDTA
+    label: "EDTA disodium salt (anhydrous)"
 - preferred_term: MnCl2·4H2O
   concentration:
     value: '0.02'
@@ -157,7 +157,7 @@ ingredients:
     label: nickel dichloride
   mediaingredientmech_chebi_term:
     id: CHEBI:34887
-    label: NiCl2 x 6 H2O
+    label: "nickel dichloride"
 preparation_steps:
 - step_number: 1
   action: MIX

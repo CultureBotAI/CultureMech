@@ -32,7 +32,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:76209
-    label: ''
+    label: "sodium sulfide nonahydrate"
 - preferred_term: NaHCO3
   concentration:
     value: '20'
@@ -53,7 +53,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:48843
-    label: ''
+    label: "disodium selenite"
 - preferred_term: MJ synthetic seawater
   concentration:
     value: '1'
@@ -67,10 +67,10 @@ ingredients:
   notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:91248
-    label: Cysteine hydrochloride
+    label: "L-cysteine hydrochloride hydrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:91248
-    label: Cysteine hydrochloride
+    label: "L-cysteine hydrochloride hydrate"
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Simple component'
   term:
@@ -89,7 +89,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: "carbon dioxide"
 - preferred_term: Hydrogen gas
   notes: 'Properties: Gas'
   concentration:
@@ -97,7 +97,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: ''
+    label: "dihydrogen"
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -106,10 +106,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: Biotin
   concentration:
     value: '2'
@@ -139,10 +139,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:49105
-    label: Thiamine hydrochloride
+    label: "thiamine hydrochloride"
   mediaingredientmech_chebi_term:
     id: CHEBI:49105
-    label: Thiamine hydrochloride
+    label: "thiamine hydrochloride"
 - preferred_term: Pyridoxine hydrochloride
   concentration:
     value: '10'
@@ -172,10 +172,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:176843
-    label: Vitamin B12
+    label: "vitamin B12"
   mediaingredientmech_chebi_term:
     id: CHEBI:176843
-    label: Vitamine B12
+    label: "vitamin B12"
 - preferred_term: Riboflavin
   concentration:
     value: '5'

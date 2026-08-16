@@ -9,14 +9,14 @@ ingredients:
 - preferred_term: Succinate
   term:
     id: CHEBI:26806
-    label: Succinate
+    label: "succinate"
   concentration:
     value: '17.231'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:succ'
   mediaingredientmech_chebi_term:
     id: CHEBI:26806
-    label: Succinate
+    label: "succinate"
 - preferred_term: Citrate
   concentration:
     value: '5.20497'
@@ -24,14 +24,14 @@ ingredients:
   notes: 'Cross-references: KEGG:cit'
   term:
     id: CHEBI:30769
-    label: ''
+    label: "citric acid"
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '28.0899'
     unit: MILLIMOLAR
   term:
     id: CHEBI:34683
-    label: ''
+    label: "disodium hydrogenphosphate"
 - preferred_term: Potassium chloride
   concentration:
     value: '9.92605'
@@ -45,13 +45,13 @@ ingredients:
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: "magnesium sulfate"
   concentration:
     value: '0.405729'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: "magnesium sulfate"
 - preferred_term: Sodium ammonium phosphate
   concentration:
     value: '8.32187'

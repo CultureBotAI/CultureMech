@@ -50,43 +50,43 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
   concentration:
     value: '4.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
 - preferred_term: Pyruvate
   term:
     id: CHEBI:15361
-    label: Pyruvate
+    label: "pyruvate"
   concentration:
     value: '0.6'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15361
-    label: Pyruvate
+    label: "pyruvate"
 - preferred_term: N-Acetylglucosamine
   term:
     id: CHEBI:59640
-    label: N-Acetylglucosamine
+    label: "N-acetylglucosamine"
   concentration:
     value: '0.3'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:59640
-    label: N-Acetylglucosamine
+    label: "N-acetylglucosamine"
 - preferred_term: Sodium bicarbonate
   concentration:
     value: '1.8'
     unit: G_PER_L
   term:
     id: CHEBI:32139
-    label: ''
+    label: "sodium hydrogencarbonate"
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: Sodium bicarbonate
+    label: "sodium hydrogencarbonate"
 - preferred_term: Yeast extract
   concentration:
     value: '1.7'

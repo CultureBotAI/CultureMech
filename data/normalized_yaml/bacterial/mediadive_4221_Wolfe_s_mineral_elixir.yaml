@@ -37,7 +37,7 @@ composition:
     label: NaCl
   chebi_term:
     id: CHEBI:26710
-    label: 1% sodium chloride
+    label: "sodium chloride"
     confidence: 1.0
     match_type: exact_match
 - preferred_term: FeSO4 x 7 H2O
@@ -49,7 +49,7 @@ composition:
     label: FeSO4 x 7 H2O
   chebi_term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: "iron(2+) sulfate heptahydrate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: CoCl2 x 6 H2O
@@ -61,7 +61,7 @@ composition:
     label: CoCl2 x 6 H2O
   chebi_term:
     id: CHEBI:35696
-    label: CoCl2 x 6 H2O
+    label: "cobalt dichloride"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: CaCl2 x 2 H2O
@@ -73,7 +73,7 @@ composition:
     label: CaCl2 x 2 H2O
   chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: "calcium chloride dihydrate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: ZnSO4 x 7 H2O
@@ -85,7 +85,7 @@ composition:
     label: ZnSO4 x 7 H2O
   chebi_term:
     id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
+    label: "zinc sulfate heptahydrate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: CuSO4 x 5 H2O
@@ -97,7 +97,7 @@ composition:
     label: CuSO4 x 5 H2O
   chebi_term:
     id: CHEBI:31440
-    label: CuSO4 x 5 H2O
+    label: "copper(II) sulfate pentahydrate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: AlK(SO4)2 x 12 H2O
@@ -109,7 +109,7 @@ composition:
     label: AlK(SO4)2 x 12 H2O
   chebi_term:
     id: CHEBI:86465
-    label: AlK(SO4)2 x 12 H2O
+    label: "potassium aluminium sulfate dodecahydrate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: H3BO3
@@ -145,7 +145,7 @@ composition:
     label: (NH4)2Ni(SO4)2 x 6 H2O
   chebi_term:
     id: CHEBI:86149
-    label: (NH4)2Ni(SO4)2 x 6 H2O
+    label: "ammonium nickel sulfate hexahydrate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na2WO4 x 2 H2O
@@ -157,7 +157,7 @@ composition:
     label: Na2WO4 x 2 H2O
   chebi_term:
     id: CHEBI:63939
-    label: Na2WO4 x 2 H2O
+    label: "sodium tungstate dihydrate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na2SeO4
@@ -181,7 +181,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: First adjust pH to 1.0 with diluted H2SO4, then dissolve the salts.

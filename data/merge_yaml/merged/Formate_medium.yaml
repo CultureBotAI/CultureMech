@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: (NH4)2SO4
   concentration:
     value: '0.943'
@@ -108,7 +108,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: ''
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: ZnSO4 x 7 H2O
   concentration:
     value: '2.4'
@@ -117,7 +117,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:32312
-    label: ''
+    label: "zinc sulfate heptahydrate"
 - preferred_term: CuSO4 x 5 H2O
   concentration:
     value: '0.48'
@@ -126,7 +126,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:31440
-    label: ''
+    label: "copper(II) sulfate pentahydrate"
 - preferred_term: CoSO4 x 7 H2O
   concentration:
     value: '4.02'
@@ -144,7 +144,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86364
-    label: ''
+    label: "manganese(II) sulfate monohydrate"
 - preferred_term: Ni2SO4 ⋅ 6H2O
   concentration:
     value: '1.5'

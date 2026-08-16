@@ -13,7 +13,7 @@ composition:
     label: Thioglycolate
   chebi_term:
     id: CHEBI:47869
-    label: thioglycolate
+    label: "thioglycolate(2-)"
     confidence: 0.9
     match_type: manual_curated
 - preferred_term: Distilled water
@@ -25,7 +25,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Comment: The medium is semisolid. For strain JCM 13596, prepare

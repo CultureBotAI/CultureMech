@@ -24,53 +24,53 @@ ingredients:
 - preferred_term: Sodium formate
   term:
     id: CHEBI:62965
-    label: Sodium formate
+    label: "sodium formate"
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62965
-    label: Sodium formate
+    label: "sodium formate"
 - preferred_term: Sodium acetate
   term:
     id: CHEBI:32954
-    label: Sodium acetate
+    label: "sodium acetate"
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32954
-    label: Sodium acetate
+    label: "sodium acetate"
 - preferred_term: Sodium lactate
   term:
     id: CHEBI:75228
-    label: Sodium lactate
+    label: "sodium lactate"
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75228
-    label: Sodium lactate
+    label: "sodium lactate"
 - preferred_term: Sodium pyruvate
   term:
     id: CHEBI:50144
-    label: Sodium pyruvate
+    label: "sodium pyruvate"
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:50144
-    label: Sodium pyruvate
+    label: "sodium pyruvate"
 - preferred_term: Sodium succinate
   term:
     id: CHEBI:63675
-    label: Sodium succinate
+    label: "sodium succinate (anhydrous)"
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63675
-    label: Sodium succinate
+    label: "sodium succinate (anhydrous)"
 - preferred_term: Sodium malate
   term:
     id: CHEBI:91260
@@ -84,33 +84,33 @@ ingredients:
 - preferred_term: Sodium fumarate
   term:
     id: CHEBI:115156
-    label: Sodium fumarate
+    label: "disodium fumarate"
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:115156
-    label: Sodium fumarate
+    label: "disodium fumarate"
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258
-    label: Sodium citrate
+    label: "sodium citrate"
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:53258
-    label: Sodium citrate
+    label: "sodium citrate"
 - preferred_term: KCl
   term:
     id: CHEBI:32588
-    label: KCl
+    label: "potassium chloride"
   concentration:
     value: '5.4'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: KCl
+    label: "potassium chloride"
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -120,21 +120,21 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: "dipotassium hydrogen phosphate"
 - preferred_term: CaCl2 x H2O
   term:
     id: CHEBI:3312
-    label: CaCl2 x H2O
+    label: "calcium dichloride"
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:3312
-    label: CaCl2 x H2O
+    label: "calcium dichloride"
 - preferred_term: NaNO3
   term:
     id: CHEBI:63005
-    label: NaNO3
+    label: "sodium nitrate"
   concentration:
     value: '0.5'
     unit: G_PER_L
@@ -144,23 +144,23 @@ ingredients:
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: "magnesium dichloride hexahydrate"
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: "magnesium dichloride hexahydrate"
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
   concentration:
     value: '184'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

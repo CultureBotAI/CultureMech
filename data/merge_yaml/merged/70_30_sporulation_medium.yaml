@@ -37,23 +37,23 @@ ingredients:
 - preferred_term: Ammonium Sulfate
   term:
     id: CHEBI:62946
-    label: Ammonium Sulfate
+    label: "ammonium sulfate"
   concentration:
     value: '0.7'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: Ammonium Sulfate
+    label: "ammonium sulfate"
 - preferred_term: Tris base
   term:
     id: CHEBI:9754
-    label: Tris base
+    label: "tris"
   concentration:
     value: '1.06'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:9754
-    label: Tris base
+    label: "tris"
 - preferred_term: Calf brains
   term:
     id: UBERON:0000955
@@ -133,7 +133,7 @@ ingredients:
 - preferred_term: Disodium phosphate
   term:
     id: CHEBI:34683
-    label: disodium hydrogen phosphate
+    label: "disodium hydrogenphosphate"
   concentration:
     value: '2.5'
     unit: G_PER_L
@@ -157,23 +157,23 @@ ingredients:
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
   concentration:
     value: '15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
 - preferred_term: L-Cysteine
   term:
     id: CHEBI:17561
-    label: L-Cysteine
+    label: "L-cysteine"
   concentration:
     value: '100'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17561
-    label: L-Cysteine
+    label: "L-cysteine"
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

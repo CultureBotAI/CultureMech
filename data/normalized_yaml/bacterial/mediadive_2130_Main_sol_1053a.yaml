@@ -13,7 +13,7 @@ composition:
     label: NaCl
   chebi_term:
     id: CHEBI:26710
-    label: 1% sodium chloride
+    label: "sodium chloride"
     confidence: 1.0
     match_type: exact_match
 - preferred_term: K2HPO4
@@ -37,7 +37,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: CaCl2
@@ -96,7 +96,7 @@ composition:
     label: MgCl2 x 6 H2O
   chebi_term:
     id: CHEBI:86345
-    label: magnesium chloride hexahydrate
+    label: "magnesium dichloride hexahydrate"
     match_type: corpus_consensus
 - preferred_term: KCl
   concentration:
@@ -142,7 +142,7 @@ composition:
     label: Na2S2O3 x 5 H2O
   chebi_term:
     id: CHEBI:32150
-    label: Na2S2O3 x 5 H2O
+    label: "sodium thiosulfate pentahydrate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: NaHCO3
@@ -166,7 +166,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Dissolve ingredients (except thiosulfate, bicarbonate and vitamins),

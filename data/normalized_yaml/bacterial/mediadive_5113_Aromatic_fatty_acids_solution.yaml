@@ -25,7 +25,7 @@ composition:
     label: Phenyl propionic acid
   chebi_term:
     id: CHEBI:28631
-    label: Phenyl propionic acid
+    label: "3-phenylpropionic acid"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: 4-Hydroxyphenyl acetic acid
@@ -49,7 +49,7 @@ composition:
     label: 3-Indolyl acetic acid
   chebi_term:
     id: CHEBI:16411
-    label: 3-Indolyl acetic acid
+    label: "indole-3-acetic acid"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: NaOH

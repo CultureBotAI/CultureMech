@@ -20,13 +20,13 @@ ingredients:
 - preferred_term: Hexachlorocyclo-hexane
   term:
     id: CHEBI:24536
-    label: Hexachlorocyclo-hexane
+    label: "hexachlorocyclohexane"
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:24536
-    label: Hexachlorocyclo-hexane
+    label: "hexachlorocyclohexane"
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

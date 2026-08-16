@@ -25,79 +25,79 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: "dipotassium hydrogen phosphate"
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: "magnesium sulfate heptahydrate"
   concentration:
     value: '2.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 1.0, 1.0]'
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: "magnesium sulfate heptahydrate"
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: "calcium chloride dihydrate"
   concentration:
     value: '4.3'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: "calcium chloride dihydrate"
 - preferred_term: KCl
   term:
     id: CHEBI:32588
-    label: KCl
+    label: "potassium chloride"
   concentration:
     value: '2.6'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 1.6, 1.0]'
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: KCl
+    label: "potassium chloride"
 - preferred_term: Ca(NO3)2 x 4 H2O
   term:
     id: CHEBI:86159
-    label: Ca(NO3)2 x 4 H2O
+    label: "calcium nitrate tetrahydrate"
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86159
-    label: Ca(NO3)2 x 4 H2O
+    label: "calcium nitrate tetrahydrate"
 - preferred_term: Na2HPO4 x 2 H2O
   term:
     id: CHEBI:34683
-    label: Na2HPO4 x 2 H2O
+    label: "disodium hydrogenphosphate"
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34683
-    label: Na2HPO4 x 2 H2O
+    label: "disodium hydrogenphosphate"
 - preferred_term: Fe SO4 x 7 H2O
   term:
     id: CHEBI:75836
-    label: Fe SO4 x 7 H2O
+    label: "iron(2+) sulfate heptahydrate"
   concentration:
     value: '2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
-    label: Fe SO4 x 7 H2O
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: H2SO4
   term:
     id: CHEBI:26836
-    label: H2SO4
+    label: "sulfuric acid"
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26836
-    label: H2SO4
+    label: "sulfuric acid"
 preparation_steps:
 - step_number: 1
   action: MIX

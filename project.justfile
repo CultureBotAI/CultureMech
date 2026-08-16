@@ -306,6 +306,11 @@ fix-wrong-groundings *args="":
     uv run --extra dev python scripts/fix_wrong_compound_groundings.py {{args}}
 
 # Ingredient names the corpus grounds more than one way (#258). Read-only.
+# Set term.label from the ontology (#259). Run AFTER fixing groundings, not before.
+[group('Curation')]
+refill-term-labels *args="":
+    uv run --extra dev python scripts/refill_term_labels.py {{args}}
+
 [group('QC')]
 audit-grounding-consistency *args="":
     uv run --extra dev python scripts/audit_grounding_consistency.py {{args}}

@@ -24,10 +24,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: Horse serum
   concentration:
     value: '200'
@@ -41,10 +41,10 @@ ingredients:
     Organic compound'
   term:
     id: CHEBI:28971
-    label: Ampicillin
+    label: "ampicillin"
   mediaingredientmech_chebi_term:
     id: CHEBI:28971
-    label: Ampicillin
+    label: "ampicillin"
 - preferred_term: Salmon sperm DNA (Sigma)
   concentration:
     value: '0.2'

@@ -35,7 +35,7 @@ ingredients:
   notes: From Mc_general_salts; Ontology enriched via CAS-RN lookup
   term:
     id: CHEBI:86345
-    label: ''
+    label: "magnesium dichloride hexahydrate"
 - preferred_term: magnesium sulfate heptahydrate
   concentration:
     value: '3.45'
@@ -43,7 +43,7 @@ ingredients:
   notes: From Mc_general_salts; Ontology enriched via CAS-RN lookup
   term:
     id: CHEBI:31795
-    label: ''
+    label: "magnesium sulfate heptahydrate"
 - preferred_term: calcium chloride
   concentration:
     value: '0.105'
@@ -74,7 +74,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:86249
-    label: ''
+    label: "iron dichloride tetrahydrate"
   notes: Ontology enriched via CAS-RN lookup
 - preferred_term: sodium citrate dihydrate
   concentration:
@@ -83,7 +83,7 @@ ingredients:
   notes: From Mc_trace_minerals; Ontology enriched via CAS-RN lookup
   term:
     id: CHEBI:32142
-    label: ''
+    label: "sodium citrate dihydrate"
 - preferred_term: manganese(II) sulfate dihydrate
   concentration:
     value: '0.005'
@@ -91,7 +91,7 @@ ingredients:
   notes: From Mc_trace_minerals
   term:
     id: CHEBI:86356
-    label: ''
+    label: "manganese(II) sulfate dihydrate"
 - preferred_term: cobalt chloride
   concentration:
     value: '0.001'
@@ -99,7 +99,7 @@ ingredients:
   notes: From Mc_trace_minerals; Ontology enriched via CAS-RN lookup
   term:
     id: CHEBI:35696
-    label: ''
+    label: "cobalt dichloride"
 - preferred_term: zinc sulfate heptahydrate
   concentration:
     value: '0.001'
@@ -107,7 +107,7 @@ ingredients:
   notes: From Mc_trace_minerals; Ontology enriched via CAS-RN lookup
   term:
     id: CHEBI:32312
-    label: ''
+    label: "zinc sulfate heptahydrate"
 - preferred_term: copper sulfate pentahydrate
   concentration:
     value: '0.0001'
@@ -115,7 +115,7 @@ ingredients:
   notes: From Mc_trace_minerals; Ontology enriched via CAS-RN lookup
   term:
     id: CHEBI:31440
-    label: ''
+    label: "copper(II) sulfate pentahydrate"
 - preferred_term: AlK(SO4)2 x 12 H2O
   concentration:
     value: '0.0001'
@@ -123,7 +123,7 @@ ingredients:
   notes: From Mc_trace_minerals; Ontology enriched via CAS-RN lookup
   term:
     id: CHEBI:86465
-    label: ''
+    label: "potassium aluminium sulfate dodecahydrate"
 - preferred_term: H3BO3
   concentration:
     value: '0.0001'
@@ -139,7 +139,7 @@ ingredients:
   notes: From Mc_trace_minerals; Ontology enriched via CAS-RN lookup
   term:
     id: CHEBI:75213
-    label: ''
+    label: "sodium molybdate dihydrate"
 - preferred_term: nickel (II) chloride hexahydrate
   concentration:
     value: '0.00025'
@@ -147,7 +147,7 @@ ingredients:
   notes: From Mc_trace_minerals
   term:
     id: CHEBI:53542
-    label: ''
+    label: "nickel chloride hexahydrate"
 - preferred_term: sodium selenate
   concentration:
     value: '0.002'
@@ -155,7 +155,7 @@ ingredients:
   notes: From Mc_trace_minerals; Ontology enriched via CAS-RN lookup
   term:
     id: CHEBI:77775
-    label: ''
+    label: "sodium selenate"
 - preferred_term: vanadium chloride
   concentration:
     value: '0.0001'
@@ -168,7 +168,7 @@ ingredients:
   notes: From Mc_trace_minerals; Ontology enriched via CAS-RN lookup
   term:
     id: CHEBI:63939
-    label: ''
+    label: "sodium tungstate dihydrate"
 - preferred_term: biotin
   concentration:
     value: 2e-05
@@ -225,7 +225,7 @@ ingredients:
   notes: From Mc_vitamins; Ontology enriched via CAS-RN lookup
   term:
     id: CHEBI:31345
-    label: ''
+    label: "Calcium pantothenate"
 - preferred_term: vitamin B12
   concentration:
     value: '1.0000000000000002e-06'
@@ -257,7 +257,7 @@ ingredients:
   notes: 'CAS: 62758-13-8; MW: 251.17'
   term:
     id: CHEBI:8806
-    label: ''
+    label: "Resazurin"
 - preferred_term: 'sodium acetate '
   concentration:
     value: '0.84'
@@ -282,7 +282,7 @@ ingredients:
     lookup'
   term:
     id: CHEBI:44115
-    label: ''
+    label: "3-(N-morpholino)propanesulfonic acid"
 - preferred_term: NaOH
   concentration:
     value: '0.0005'
@@ -302,7 +302,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:42106
-    label: ''
+    label: "L-1,4-dithiothreitol"
   notes: Ontology enriched via CAS-RN lookup
 - preferred_term: Sodium sulfide nonahydrate
   concentration:
@@ -311,7 +311,7 @@ ingredients:
   notes: 'CAS: 1313-82-2; MW: 240.18'
   term:
     id: CHEBI:85357
-    label: ''
+    label: "3-[(1E,4R)-4-hydroxycyclohex-2-en-1-ylidene]pyruvic acid"
 description: McCas_formate
 notes: 'Source: FEBA media definitions'
 category: specialized

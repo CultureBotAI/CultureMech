@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: NaCl
   concentration:
     value: '19.45'
@@ -110,10 +110,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63038
-    label: ''
+    label: "ammonium nitrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:63038
-    label: (NH4)NO3
+    label: "ammonium nitrate"
 - preferred_term: NaF
   concentration:
     value: '2.4'
@@ -173,7 +173,7 @@ ingredients:
     label: sodium silicate
   mediaingredientmech_chebi_term:
     id: CHEBI:60720
-    label: Na-silicate
+    label: "sodium silicate"
 - preferred_term: MgCl2 (anhydrous)
   concentration:
     value: '5.9'

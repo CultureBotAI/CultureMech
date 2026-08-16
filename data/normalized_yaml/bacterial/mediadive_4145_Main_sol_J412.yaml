@@ -13,7 +13,7 @@ composition:
     label: MgCl2 x 6 H2O
   chebi_term:
     id: CHEBI:86345
-    label: magnesium chloride hexahydrate
+    label: "magnesium dichloride hexahydrate"
     match_type: corpus_consensus
 - preferred_term: CaCl2 x 2 H2O
   concentration:
@@ -24,7 +24,7 @@ composition:
     label: CaCl2 x 2 H2O
   chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: "calcium chloride dihydrate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: KCl
@@ -48,7 +48,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: NH4Cl
@@ -96,7 +96,7 @@ composition:
     label: L-Cysteine HCl x H2O
   chebi_term:
     id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    label: "L-cysteine hydrochloride hydrate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: FeCl2 x 4 H2O
@@ -108,7 +108,7 @@ composition:
     label: FeCl2 x 4 H2O
   chebi_term:
     id: CHEBI:86249
-    label: FeCl2 x 4 H2O
+    label: "iron dichloride tetrahydrate"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Add components except L-cysteine x HCl x H2O and FeCl2 x 4H2O

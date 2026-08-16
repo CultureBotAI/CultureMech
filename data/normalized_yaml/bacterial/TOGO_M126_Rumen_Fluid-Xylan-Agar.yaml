@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '90'
@@ -50,7 +50,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: K2HPO4
   concentration:
     value: '225'
@@ -71,7 +71,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:76209
-    label: ''
+    label: "sodium sulfide nonahydrate"
 - preferred_term: NaHCO3
   concentration:
     value: '6.37'
@@ -127,10 +127,10 @@ ingredients:
     component'
   term:
     id: CHEBI:31695
-    label: Indigo carmine
+    label: "indigo carmine"
   mediaingredientmech_chebi_term:
     id: CHEBI:31695
-    label: Indigo carmine
+    label: "indigo carmine"
 - preferred_term: Rumen fluid
   concentration:
     value: '400'
@@ -154,7 +154,7 @@ ingredients:
   notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:91248
-    label: ''
+    label: "L-cysteine hydrochloride hydrate"
 media_term:
   preferred_term: TOGO Medium M126
   term:

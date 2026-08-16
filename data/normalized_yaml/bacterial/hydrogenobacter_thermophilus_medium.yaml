@@ -14,10 +14,10 @@ ingredients:
     Inorganic compound'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.2'
@@ -50,7 +50,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: FeSO4・7H2O
   concentration:
     value: '10'
@@ -59,7 +59,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:75836
-    label: ''
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: CaCl2
   concentration:
     value: '10'
@@ -95,7 +95,7 @@ ingredients:
     label: ammonium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63038
-    label: NH4NO3
+    label: "ammonium nitrate"
 - preferred_term: NiSO4・7H2O
   concentration:
     value: '0.06'
@@ -104,7 +104,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:53001
-    label: ''
+    label: "nickel sulfate"
 media_term:
   preferred_term: TOGO Medium M145
   term:

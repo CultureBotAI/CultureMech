@@ -31,7 +31,7 @@ ingredients:
     label: sodium hydrogencarbonate
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: NaHCO3
+    label: "sodium hydrogencarbonate"
 - preferred_term: Glucose
   concentration:
     value: '2.0'
@@ -51,7 +51,7 @@ ingredients:
     label: alpha-maltose
   mediaingredientmech_chebi_term:
     id: CHEBI:18167
-    label: maltose
+    label: "alpha-maltose"
 - preferred_term: Cellobiose
   concentration:
     value: '2.0'
@@ -61,7 +61,7 @@ ingredients:
     label: cellobiose
   mediaingredientmech_chebi_term:
     id: CHEBI:17057
-    label: Cellobiose
+    label: "cellobiose"
 - preferred_term: L-Cysteine·HCl·H2O
   concentration:
     value: '1.0'
@@ -105,7 +105,7 @@ ingredients:
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: K2HPO4
   concentration:
     value: '3.0'
@@ -115,7 +115,7 @@ ingredients:
     label: dipotassium hydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4 x 3 H2O
+    label: "dipotassium hydrogen phosphate"
 - preferred_term: Distilled water
   concentration:
     value: '1.0'
@@ -125,7 +125,7 @@ ingredients:
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: KH2PO4
   concentration:
     value: '3.0'
@@ -135,7 +135,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: (NH4)2SO4
   concentration:
     value: '6.0'
@@ -145,7 +145,7 @@ ingredients:
     label: ammonium sulfate
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: "ammonium sulfate"
 - preferred_term: NaCl
   concentration:
     value: '6.0'
@@ -155,7 +155,7 @@ ingredients:
     label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.6'
@@ -175,7 +175,7 @@ ingredients:
     label: calcium chloride dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: "calcium chloride dihydrate"
 - preferred_term: Acetic acid
   concentration:
     value: '17.0'
@@ -185,7 +185,7 @@ ingredients:
     label: acetic acid
   mediaingredientmech_chebi_term:
     id: CHEBI:15366
-    label: Acetic acid
+    label: "acetic acid"
 - preferred_term: Propionic acid
   concentration:
     value: '6.0'
@@ -195,7 +195,7 @@ ingredients:
     label: propionic acid
   mediaingredientmech_chebi_term:
     id: CHEBI:30768
-    label: Propionic acid
+    label: "propionic acid"
 - preferred_term: n -Valeric acid
   concentration:
     value: '1.0'
@@ -221,7 +221,7 @@ ingredients:
     label: potassium hydroxide
   mediaingredientmech_chebi_term:
     id: CHEBI:32035
-    label: KOH
+    label: "potassium hydroxide"
 - preferred_term: Ethanol
   concentration:
     value: '25.0'
@@ -231,7 +231,7 @@ ingredients:
     label: ethanol
   mediaingredientmech_chebi_term:
     id: CHEBI:16236
-    label: Ethanol
+    label: "ethanol"
 - preferred_term: Hemin
   concentration:
     value: '0.1'
@@ -241,7 +241,7 @@ ingredients:
     label: hemin
   mediaingredientmech_chebi_term:
     id: CHEBI:50385
-    label: Haemin
+    label: "hemin"
 - preferred_term: Biotin
   concentration:
     value: '5.0'
@@ -251,7 +251,7 @@ ingredients:
     label: biotin
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
-    label: Biotin
+    label: "biotin"
 - preferred_term: Vitamin B12
   concentration:
     value: '5.0'
@@ -261,14 +261,14 @@ ingredients:
     label: vitamin B12
   mediaingredientmech_chebi_term:
     id: CHEBI:176843
-    label: Vitamin B12
+    label: "vitamin B12"
 - preferred_term: p -Aminobenzoic acid
   concentration:
     value: '15.0'
     unit: MG_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30753
-    label: p-Aminobenzoic acid
+    label: "4-aminobenzoic acid"
 - preferred_term: Folic acid
   concentration:
     value: '25.0'
@@ -278,17 +278,17 @@ ingredients:
     label: folic acid
   mediaingredientmech_chebi_term:
     id: CHEBI:27470
-    label: Folic acid
+    label: "folic acid"
 - preferred_term: Pyridoxine·HCl
   concentration:
     value: '75.0'
     unit: MG_PER_L
   term:
     id: CHEBI:30961
-    label: Pyridoxine·HCl
+    label: "pyridoxine hydrochloride"
   mediaingredientmech_chebi_term:
     id: CHEBI:30961
-    label: Pyridoxine·HCl
+    label: "pyridoxine hydrochloride"
 - preferred_term: Distilled water
   concentration:
     value: '500.0'
@@ -298,7 +298,7 @@ ingredients:
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: Thiamine·HCl
   concentration:
     value: '25.0'
@@ -308,7 +308,7 @@ ingredients:
     label: thiamine hydrochloride
   mediaingredientmech_chebi_term:
     id: CHEBI:49105
-    label: Thiamine HCl
+    label: "thiamine hydrochloride"
 - preferred_term: Riboflavin
   concentration:
     value: '25.0'
@@ -318,7 +318,7 @@ ingredients:
     label: riboflavin
   mediaingredientmech_chebi_term:
     id: CHEBI:17015
-    label: Riboflavin
+    label: "riboflavin"
 preparation_steps:
 - step_number: 1
   action: MIX

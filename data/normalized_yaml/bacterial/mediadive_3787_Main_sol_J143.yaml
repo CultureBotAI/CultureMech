@@ -28,7 +28,7 @@ composition:
     label: Glucose
   chebi_term:
     id: CHEBI:17234
-    label: D-glucose
+    label: "glucose"
     confidence: 0.9
     match_type: manual_curated
 - preferred_term: Fructose
@@ -88,7 +88,7 @@ composition:
     label: Tween 80
   chebi_term:
     id: CHEBI:53426
-    label: tween 80
+    label: "polysorbate 80"
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Tomato juice
@@ -108,7 +108,7 @@ composition:
     label: L-Cysteine HCl x H2O
   chebi_term:
     id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    label: "L-cysteine hydrochloride hydrate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -120,7 +120,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Adjust pH to 4.8.

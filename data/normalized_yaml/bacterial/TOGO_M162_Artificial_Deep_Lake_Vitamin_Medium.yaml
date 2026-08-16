@@ -14,10 +14,10 @@ ingredients:
     Inorganic compound [Merged 2 duplicates: 990.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '7.4'
@@ -47,7 +47,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86158
-    label: ''
+    label: "calcium chloride dihydrate"
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '75'
@@ -56,7 +56,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:86345
-    label: ''
+    label: "magnesium dichloride hexahydrate"
 - preferred_term: KCl
   concentration:
     value: '7.4'
@@ -105,7 +105,7 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Simple component, Organic compound, Defined component'
   term:
     id: CHEBI:49105
-    label: ''
+    label: "thiamine hydrochloride"
 - preferred_term: Vitamin B12
   concentration:
     value: '0.1'

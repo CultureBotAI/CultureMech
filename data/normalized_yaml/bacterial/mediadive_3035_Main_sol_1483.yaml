@@ -13,7 +13,7 @@ composition:
     label: NaCl
   chebi_term:
     id: CHEBI:26710
-    label: 1% sodium chloride
+    label: "sodium chloride"
     confidence: 1.0
     match_type: exact_match
 - preferred_term: MgCl2 x 6 H2O
@@ -25,7 +25,7 @@ composition:
     label: MgCl2 x 6 H2O
   chebi_term:
     id: CHEBI:86345
-    label: magnesium chloride hexahydrate
+    label: "magnesium dichloride hexahydrate"
     match_type: corpus_consensus
 - preferred_term: K2SO4
   concentration:
@@ -48,7 +48,7 @@ composition:
     label: CaCl2 x 2 H2O
   chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: "calcium chloride dihydrate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: NaH2PO4 x 2 H2O
@@ -60,7 +60,7 @@ composition:
     label: NaH2PO4 x 2 H2O
   chebi_term:
     id: CHEBI:37585
-    label: NaH2PO4 x 2 H2O
+    label: "sodium dihydrogenphosphate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na2HPO4 x 12 H2O
@@ -72,7 +72,7 @@ composition:
     label: Na2HPO4 x 12 H2O
   chebi_term:
     id: CHEBI:34683
-    label: Na2HPO4 x 12 H2O
+    label: "disodium hydrogenphosphate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na pyruvate
@@ -84,7 +84,7 @@ composition:
     label: Na pyruvate
   chebi_term:
     id: CHEBI:50144
-    label: Na pyruvate
+    label: "sodium pyruvate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na acetate
@@ -96,7 +96,7 @@ composition:
     label: Na acetate
   chebi_term:
     id: CHEBI:32954
-    label: Na acetate
+    label: "sodium acetate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na malate
@@ -108,7 +108,7 @@ composition:
     label: Na malate
   chebi_term:
     id: CHEBI:91261
-    label: Na malate
+    label: "disodium (S)-malate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Casein hydrolysate
@@ -141,7 +141,7 @@ composition:
     label: Glucose
   chebi_term:
     id: CHEBI:17234
-    label: D-glucose
+    label: "glucose"
     confidence: 0.9
     match_type: manual_curated
 - preferred_term: Agar
@@ -153,7 +153,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -165,7 +165,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Adjust to pH 7.1

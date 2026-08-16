@@ -14,10 +14,10 @@ ingredients:
     750.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Tap water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Tap water
+    label: "water"
 - preferred_term: Agar
   concentration:
     value: '15'

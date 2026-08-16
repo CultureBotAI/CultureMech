@@ -20,23 +20,23 @@ ingredients:
 - preferred_term: Mannitol
   term:
     id: CHEBI:29864
-    label: Mannitol
+    label: "mannitol"
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:29864
-    label: Mannitol
+    label: "mannitol"
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
   concentration:
     value: '15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
 - preferred_term: air-dried garden soil
   concentration:
     value: '400'
@@ -50,7 +50,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: "sodium carbonate"
 applications:
 - Microbial cultivation
 curation_history:

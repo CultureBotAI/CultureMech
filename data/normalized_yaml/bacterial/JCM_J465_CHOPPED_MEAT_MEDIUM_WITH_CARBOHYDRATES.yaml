@@ -20,13 +20,13 @@ ingredients:
 - preferred_term: NaOH
   term:
     id: CHEBI:32145
-    label: NaOH
+    label: "sodium hydroxide"
   concentration:
     value: '25'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32145
-    label: NaOH
+    label: "sodium hydroxide"
   notes: Copied from referenced JCM Medium 461
 - preferred_term: Casitone
   concentration:
@@ -47,7 +47,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: "dipotassium hydrogen phosphate"
   notes: Copied from referenced JCM Medium 461
 - preferred_term: Resazurin
   term:

@@ -34,7 +34,7 @@ composition:
     label: (NH4)2HPO4
   chebi_term:
     id: CHEBI:63051
-    label: (NH4)2HPO4
+    label: "diammonium hydrogen phosphate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: MgSO4 x 7 H2O
@@ -58,7 +58,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Agar
@@ -71,7 +71,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'pH 7.2

@@ -20,7 +20,7 @@ composition:
     label: Na-acetate
   chebi_term:
     id: CHEBI:32954
-    label: Na-acetate
+    label: "sodium acetate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: (NH4)2SO4
@@ -68,7 +68,7 @@ composition:
     label: Thiamine-HCl x 2 H2O
   chebi_term:
     id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
+    label: "thiamine hydrochloride dihydrate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Haemin
@@ -92,7 +92,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -104,7 +104,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Adjust pH to 8.0.

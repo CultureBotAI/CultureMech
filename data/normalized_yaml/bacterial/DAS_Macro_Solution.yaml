@@ -20,7 +20,7 @@ composition:
     unit: PERCENT_V_V
   term:
     id: CHEBI:34683
-    label: disodium hydrogen phosphate heptahydrate
+    label: "disodium hydrogenphosphate"
   notes: Add 30 mL of 0.02 M Na2HPO4·7H2O stock solution
   mediaingredientmech_term:
     id: MediaIngredientMech:001114

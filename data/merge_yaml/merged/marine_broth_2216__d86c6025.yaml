@@ -18,7 +18,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: FOODON:03315426
-    label: Yeast extract
+    label: "yeast extract"
   notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 232-387-9'
 - preferred_term: Ferric citrate
   concentration:
@@ -74,7 +74,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:32139
-    label: null
+    label: "sodium hydrogencarbonate"
   notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 144-55-8; MW: 84.007'
 - preferred_term: Potassium bromide
   concentration:

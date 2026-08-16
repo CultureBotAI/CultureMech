@@ -29,10 +29,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:26710
-    label: Sodium Chloride
+    label: "sodium chloride"
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: Sodium Chloride
+    label: "sodium chloride"
 - preferred_term: Boric Acid
   concentration:
     value: '0.022'
@@ -41,10 +41,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:33118
-    label: Boric acid
+    label: "boric acid"
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: Boric acid
+    label: "boric acid"
 - preferred_term: Potassium Chloride
   concentration:
     value: '0.55'
@@ -65,10 +65,10 @@ ingredients:
     component'
   term:
     id: CHEBI:32139
-    label: ''
+    label: "sodium hydrogencarbonate"
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: Sodium Bicarbonate
+    label: "sodium hydrogencarbonate"
 - preferred_term: Sodium Sulfate
   concentration:
     value: '3.24'
@@ -77,10 +77,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:32149
-    label: Sodium Sulfate
+    label: "sodium sulfate"
   term:
     id: CHEBI:32149
-    label: ''
+    label: "sodium sulfate"
 - preferred_term: Calcium Chloride
   concentration:
     value: '1.8'
@@ -113,10 +113,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63038
-    label: Ammonium nitrate
+    label: "ammonium nitrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:63038
-    label: Ammonium nitrate
+    label: "ammonium nitrate"
 - preferred_term: Sodium Fluoride
   concentration:
     value: '0.0024'
@@ -125,7 +125,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:28741
-    label: ''
+    label: "sodium fluoride"
 - preferred_term: Potassium Bromide
   concentration:
     value: '0.08'
@@ -134,10 +134,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:32030
-    label: Potassium Bromide
+    label: "potassium bromide"
   term:
     id: CHEBI:32030
-    label: ''
+    label: "potassium bromide"
 - preferred_term: Ferric Citrate
   concentration:
     value: '0.1'
@@ -146,10 +146,10 @@ ingredients:
     component'
   mediaingredientmech_chebi_term:
     id: CHEBI:144421
-    label: Ferric Citrate
+    label: "iron(III) citrate"
   term:
     id: CHEBI:144421
-    label: ''
+    label: "iron(III) citrate"
 - preferred_term: Strontium Chloride
   concentration:
     value: '0.034'
@@ -158,7 +158,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:36383
-    label: ''
+    label: "strontium dichloride"
 - preferred_term: Magnesium Chloride
   concentration:
     value: '8.8'

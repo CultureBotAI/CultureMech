@@ -42,7 +42,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: "carbon dioxide"
 media_term:
   preferred_term: TOGO Medium M178
   term:

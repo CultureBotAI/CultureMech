@@ -14,10 +14,10 @@ ingredients:
     Inorganic compound [Merged 2 duplicates: 1.0, 100.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '20'
@@ -58,10 +58,10 @@ ingredients:
   notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
   mediaingredientmech_chebi_term:
     id: CHEBI:53258
-    label: Trisodium citrate・2H2O
+    label: "sodium citrate"
   term:
     id: CHEBI:53258
-    label: ''
+    label: "sodium citrate"
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -91,7 +91,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:75836
-    label: ''
+    label: "iron(2+) sulfate heptahydrate"
 media_term:
   preferred_term: TOGO Medium M268
   term:

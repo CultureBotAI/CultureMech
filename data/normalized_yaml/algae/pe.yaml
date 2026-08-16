@@ -77,7 +77,7 @@ ingredients:
 - preferred_term: Disodium hydrogen phosphate dodecahydrate
   term:
     id: CHEBI:86416
-    label: sodium phosphate dibasic dodecahydrate
+    label: "1-eicosanoyl-2-[(11Z,14Z,17Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine"
   concentration:
     value: '0.02'
     unit: G_PER_L

@@ -34,10 +34,10 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:75228
-    label: ''
+    label: "sodium lactate"
   mediaingredientmech_chebi_term:
     id: CHEBI:75228
-    label: Na-(DL)-lactate
+    label: "sodium lactate"
 - preferred_term: Na-thioglycolate
   term:
     id: CHEBI:86481
@@ -47,37 +47,37 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86481
-    label: Na-thioglycolate
+    label: "sodium thioglycolate"
 - preferred_term: Tween 80
   term:
     id: CHEBI:53426
-    label: Tween 80
+    label: "polysorbate 80"
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:53426
-    label: Tween 80
+    label: "polysorbate 80"
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
 - preferred_term: Putrescine
   term:
     id: CHEBI:17148
-    label: Putrescine
+    label: "putrescine"
   concentration:
     value: '0.003'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17148
-    label: Putrescine
+    label: "putrescine"
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -97,7 +97,7 @@ ingredients:
     unit: VARIABLE
   mediaingredientmech_chebi_term:
     id: CHEBI:131526
-    label: K2CO3
+    label: "potassium carbonate"
   term:
     id: CHEBI:131526
     label: potassium carbonate

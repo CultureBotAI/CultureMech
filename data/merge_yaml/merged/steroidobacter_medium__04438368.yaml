@@ -17,7 +17,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: "carbon dioxide"
 - preferred_term: Nitrogen gas
   notes: 'Properties: Gas'
   concentration:
@@ -25,7 +25,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: "dinitrogen"
 - preferred_term: Distilled water
   concentration:
     value: '4.0'
@@ -34,10 +34,10 @@ ingredients:
     Simple component [Merged 4 duplicates: 1.0, 1.0, 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: NaCl
   concentration:
     value: '1'
@@ -58,7 +58,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: "calcium chloride dihydrate"
 - preferred_term: KH2PO4
   concentration:
     value: '0.2'
@@ -70,7 +70,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: NH4Cl
   concentration:
     value: '0.25'
@@ -91,7 +91,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86345
-    label: ''
+    label: "magnesium dichloride hexahydrate"
 - preferred_term: KCl
   concentration:
     value: '0.5'
@@ -112,10 +112,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63005
-    label: ''
+    label: "sodium nitrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:63005
-    label: NaNO3
+    label: "sodium nitrate"
 - preferred_term: Na2SO4
   concentration:
     value: '0.07'
@@ -146,7 +146,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: "carbon dioxide"
 - preferred_term: Na2SeO3・5H2O
   concentration:
     value: '3'
@@ -164,7 +164,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63939
-    label: ''
+    label: "sodium tungstate dihydrate"
 - preferred_term: NaOH
   concentration:
     value: '0.5'
@@ -194,10 +194,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:30753
-    label: p--Aminobenzoic acid
+    label: "4-aminobenzoic acid"
   term:
     id: CHEBI:30753
-    label: ''
+    label: "4-aminobenzoic acid"
 - preferred_term: Folic acid
   concentration:
     value: '20'
@@ -283,10 +283,10 @@ ingredients:
     component'
   term:
     id: CHEBI:43796
-    label: α-lipoic acid
+    label: "(S)-lipoic acid"
   mediaingredientmech_chebi_term:
     id: CHEBI:43796
-    label: α--Lipoic acid
+    label: "(S)-lipoic acid"
 media_term:
   preferred_term: TOGO Medium M899
   term:

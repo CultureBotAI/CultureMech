@@ -15,13 +15,13 @@ ingredients:
 - preferred_term: Inorganic salts-starch agar
   term:
     id: CHEBI:2509
-    label: Inorganic salts-starch agar
+    label: "agar"
   concentration:
     value: '1000'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Inorganic salts-starch agar
+    label: "agar"
 - preferred_term: Yeast extract
   concentration:
     value: '0.5'

@@ -84,7 +84,7 @@ ingredients:
   notes: 'CAS: 303-38-8; MW: 154.12; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:18026
-    label: ''
+    label: "2,3-dihydroxybenzoic acid"
 description: E. coli defined media no carbon
 notes: 'Source: FEBA media definitions'
 category: specialized

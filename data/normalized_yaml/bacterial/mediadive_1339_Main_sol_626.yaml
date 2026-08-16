@@ -13,7 +13,7 @@ composition:
     label: D-Sorbitol
   chebi_term:
     id: CHEBI:17924
-    label: D-Sorbitol
+    label: "D-glucitol"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Yeast extract
@@ -39,7 +39,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -51,7 +51,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Adjust medium for final pH 6.0 with HCl.

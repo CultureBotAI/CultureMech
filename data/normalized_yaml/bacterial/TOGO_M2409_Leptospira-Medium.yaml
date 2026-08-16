@@ -24,10 +24,10 @@ ingredients:
   notes: 'Role: Solvating media'
   term:
     id: CHEBI:15377
-    label: Water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Water
+    label: "water"
 - preferred_term: Leptospira Medium Base EMJH (Difco)
   concentration:
     value: '2.3'

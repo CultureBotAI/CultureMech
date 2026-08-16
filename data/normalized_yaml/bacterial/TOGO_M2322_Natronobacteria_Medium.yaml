@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 1000.0, 990.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.24'
@@ -58,7 +58,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: NH4Cl
   concentration:
     value: '1'
@@ -115,10 +115,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:64220
-    label: Na2-glutamate
+    label: "monosodium glutamate"
   mediaingredientmech_chebi_term:
     id: CHEBI:64220
-    label: Na2-glutamate
+    label: "monosodium glutamate"
 - preferred_term: Agar, if necessary
   concentration:
     value: '20'
@@ -161,10 +161,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
-    label: MnCl2 x 4 H2O
+    label: "manganese(II) chloride tetrahydrate"
   term:
     id: CHEBI:86368
-    label: ''
+    label: "manganese(II) chloride tetrahydrate"
 - preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '190'

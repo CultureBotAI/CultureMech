@@ -43,7 +43,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:232797
-    label: ''
+    label: "trehalose dihydrate"
 - preferred_term: D-Arabinose
   concentration:
     value: '31.200000000000003'
@@ -52,7 +52,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:46983
-    label: ''
+    label: "aldehydo-D-arabinose"
 - preferred_term: D-Maltose monohydrate
   concentration:
     value: '56.6'
@@ -66,7 +66,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:18403
-    label: ''
+    label: "L-arabinitol"
 - preferred_term: L-Leucine
   concentration:
     value: '7.9'
@@ -147,7 +147,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:37675
-    label: ''
+    label: "aldehydo-D-mannose"
 - preferred_term: Uridine
   concentration:
     value: '5.2'
@@ -156,7 +156,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:16704
-    label: ''
+    label: "uridine"
 - preferred_term: Carnitine Hydrochloride
   concentration:
     value: '3.2'
@@ -164,7 +164,7 @@ ingredients:
   notes: 'CAS: 461-05-2; MW: 197.66; From Soil Defined Carbon Mix'
   term:
     id: CHEBI:91318
-    label: ''
+    label: "(R)-oleoylcarnitine hydrochloride"
 - preferred_term: L-Asparagine
   concentration:
     value: '2.6'
@@ -236,7 +236,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:16349
-    label: ''
+    label: "L-citrulline"
 - preferred_term: L-Aspartic acid
   concentration:
     value: '2.7'
@@ -281,7 +281,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:15728
-    label: ''
+    label: "4-guanidinobutanoic acid"
 - preferred_term: Hypoxanthine
   concentration:
     value: '0.6000000000000001'
@@ -290,7 +290,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:17368
-    label: ''
+    label: "hypoxanthine"
 - preferred_term: Uracil
   concentration:
     value: '0.4'
@@ -308,7 +308,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:17821
-    label: ''
+    label: "thymine"
 - preferred_term: Guanine
   concentration:
     value: '0.5'
@@ -317,7 +317,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:16235
-    label: ''
+    label: "guanine"
 - preferred_term: Cytosine
   concentration:
     value: '0.4'
@@ -326,7 +326,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:16040
-    label: ''
+    label: "cytosine"
 - preferred_term: Adenine hydrochloride hydrate
   concentration:
     value: '0.4'
@@ -334,7 +334,7 @@ ingredients:
   notes: 'CAS: 2922-28-3; MW: 171.59; From Soil Defined Carbon Mix'
   term:
     id: CHEBI:64139
-    label: ''
+    label: "(2R,3S)-EHNA hydrochloride"
 - preferred_term: Thymidine
   concentration:
     value: '0.6000000000000001'
@@ -343,7 +343,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:17748
-    label: ''
+    label: "thymidine"
 - preferred_term: spermidine
   concentration:
     value: '0.4'
@@ -352,7 +352,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:16610
-    label: ''
+    label: "spermidine"
 - preferred_term: Orotic acid
   concentration:
     value: '0.4'
@@ -361,7 +361,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:16742
-    label: ''
+    label: "orotic acid"
 - preferred_term: Inosine
   concentration:
     value: '0.7000000000000001'
@@ -370,7 +370,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:17596
-    label: ''
+    label: "inosine"
 - preferred_term: 2'-Deoxyinosine
   concentration:
     value: '0.7000000000000001'
@@ -379,7 +379,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:28997
-    label: ''
+    label: "2'-deoxyinosine"
 - preferred_term: Cytidine
   concentration:
     value: '0.6000000000000001'
@@ -388,7 +388,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:17562
-    label: ''
+    label: "cytidine"
 - preferred_term: Choline chloride
   concentration:
     value: '0.30000000000000004'
@@ -406,7 +406,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:16335
-    label: ''
+    label: "adenosine"
 - preferred_term: 2'-Deoxyuridine
   concentration:
     value: '0.6000000000000001'
@@ -415,7 +415,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:16450
-    label: ''
+    label: "2'-deoxyuridine"
 description: Northen lab media based on carbon sources found in soil extracts,  precurser
   to NLDM
 notes: 'Source: FEBA media definitions'

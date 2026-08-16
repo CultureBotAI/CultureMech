@@ -13,7 +13,7 @@ composition:
     label: Corn meal agar
   chebi_term:
     id: CHEBI:2509
-    label: Corn meal agar
+    label: "agar"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Soy peptone
@@ -44,7 +44,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: MgSO4 x 7 H2O
@@ -80,7 +80,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Bovine serum albumin
@@ -100,7 +100,7 @@ composition:
     label: Glucose
   chebi_term:
     id: CHEBI:17234
-    label: D-glucose
+    label: "glucose"
     confidence: 0.9
     match_type: manual_curated
 - preferred_term: Cysteine
@@ -112,7 +112,7 @@ composition:
     label: Cysteine
   chebi_term:
     id: CHEBI:15356
-    label: Cysteine
+    label: "cysteine"
     confidence: 0.9
     match_type: corpus_consensus
 preparation_notes: "Adjust pH to 6.6. Autoclave, cool to 50°C and add the following\

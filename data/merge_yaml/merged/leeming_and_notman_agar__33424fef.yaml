@@ -19,13 +19,13 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
   concentration:
     value: '4.94071'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: Glucose
+    label: "glucose"
 - preferred_term: Yeast extract
   concentration:
     value: '0.0988142'
@@ -37,33 +37,33 @@ ingredients:
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
-    label: Glycerol
+    label: "glycerol"
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: Glycerol
+    label: "glycerol"
 - preferred_term: Glycerol monostearate
   term:
     id: CHEBI:75456
-    label: Glycerol monostearate
+    label: "2-stearoylglycerol"
   concentration:
     value: '0.494071'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75456
-    label: Glycerol monostearate
+    label: "2-stearoylglycerol"
 - preferred_term: Tween 60
   term:
     id: CHEBI:53425
-    label: Tween 60
+    label: "polysorbate 60"
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:53425
-    label: Tween 60
+    label: "polysorbate 60"
 - preferred_term: Cow's milk
   concentration:
     value: '10'
@@ -71,13 +71,13 @@ ingredients:
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
   concentration:
     value: '11.8577'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

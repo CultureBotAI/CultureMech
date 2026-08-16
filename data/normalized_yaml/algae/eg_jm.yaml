@@ -62,7 +62,7 @@ ingredients:
   source: CCAP Medium MR_EG_JM.pdf
   term:
     id: CHEBI:32138
-    label: ''
+    label: "sodium acetate trihydrate"
 - preferred_term: Lab-Lemco powder
   notes: Ontology mapping not yet available; From CCAP Medium MR_EG_JM.pdf; Curated
     from CCAP Medium MR_EG_JM.pdf specification
@@ -87,7 +87,7 @@ ingredients:
 - preferred_term: Yeast extract
   term:
     id: FOODON:03315426
-    label: Yeast extract
+    label: "yeast extract"
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -109,7 +109,7 @@ ingredients:
 - preferred_term: Na EDTA
   term:
     id: CHEBI:64734
-    label: Na EDTA
+    label: "EDTA disodium salt (anhydrous)"
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -123,7 +123,7 @@ ingredients:
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
-    label: MnCl2 x 4 H2O
+    label: "manganese(II) chloride tetrahydrate"
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -137,7 +137,7 @@ ingredients:
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
-    label: Thiamine HCl
+    label: "thiamine hydrochloride"
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -151,7 +151,7 @@ ingredients:
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
-    label: Biotin
+    label: "biotin"
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0

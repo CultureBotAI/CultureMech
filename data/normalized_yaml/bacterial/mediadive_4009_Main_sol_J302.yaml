@@ -13,7 +13,7 @@ composition:
     label: Tween 80
   chebi_term:
     id: CHEBI:53426
-    label: tween 80
+    label: "polysorbate 80"
     confidence: 1.0
     match_type: exact_match
 curation_history:

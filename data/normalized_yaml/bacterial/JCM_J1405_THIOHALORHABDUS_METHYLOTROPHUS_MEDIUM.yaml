@@ -22,7 +22,7 @@ ingredients:
     label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: "sodium chloride"
 - preferred_term: KCl
   concentration:
     value: '5.0'
@@ -32,7 +32,7 @@ ingredients:
     label: potassium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: KCl
+    label: "potassium chloride"
 - preferred_term: K2HPO4
   concentration:
     value: '2.5'
@@ -42,7 +42,7 @@ ingredients:
     label: dipotassium hydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4 x 3 H2O
+    label: "dipotassium hydrogen phosphate"
 - preferred_term: NH4Cl
   concentration:
     value: '0.2'
@@ -52,7 +52,7 @@ ingredients:
     label: ammonium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: "ammonium chloride"
 - preferred_term: 1 M MgSO4 solution
   concentration:
     value: '1.0'

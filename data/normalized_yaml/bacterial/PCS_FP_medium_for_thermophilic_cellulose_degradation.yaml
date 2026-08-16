@@ -12,10 +12,10 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:18246
-    label: cellulose
+    label: "(1->4)-beta-D-glucan"
   mediaingredientmech_chebi_term:
     id: CHEBI:18246
-    label: cellulose
+    label: "(1->4)-beta-D-glucan"
 - preferred_term: Calcium carbonate
   concentration:
     value: '2.0'

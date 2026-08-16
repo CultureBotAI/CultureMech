@@ -11,7 +11,7 @@ ingredients:
   notes: 'CAS: 7757-82-6; MW: 142.04; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:32149
-    label: ''
+    label: "sodium sulfate"
 - preferred_term: Sodium D,L-Lactate
   concentration:
     value: '60'
@@ -36,7 +36,7 @@ ingredients:
   notes: 'CAS: 1185-53-1; MW: 157.6'
   term:
     id: CHEBI:9754
-    label: ''
+    label: "tris"
 - preferred_term: EDTA
   concentration:
     value: '0.12'
@@ -52,7 +52,7 @@ ingredients:
   notes: 'CAS: 1313-82-2; MW: 240.18'
   term:
     id: CHEBI:85357
-    label: ''
+    label: "3-[(1E,4R)-4-hydroxycyclohex-2-en-1-ylidene]pyruvic acid"
 - preferred_term: Magnesium chloride hexahydrate
   concentration:
     value: '8'
@@ -60,7 +60,7 @@ ingredients:
   notes: 'CAS: 7791-18-6; MW: 203.3; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:86345
-    label: ''
+    label: "magnesium dichloride hexahydrate"
 - preferred_term: Calcium chloride
   concentration:
     value: '0.6'
@@ -85,7 +85,7 @@ ingredients:
   notes: 'CAS: 13478-10-9; MW: 198.81; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:86249
-    label: ''
+    label: "iron dichloride tetrahydrate"
 - preferred_term: Manganese (II) chloride tetrahydrate
   concentration:
     value: '15.0'
@@ -94,7 +94,7 @@ ingredients:
     enriched via CAS-RN lookup'
   term:
     id: CHEBI:86368
-    label: ''
+    label: "manganese(II) chloride tetrahydrate"
 - preferred_term: Cobalt chloride hexahydrate
   concentration:
     value: '7.8'
@@ -103,7 +103,7 @@ ingredients:
     enriched via CAS-RN lookup'
   term:
     id: CHEBI:53503
-    label: ''
+    label: "cobalt chloride hexahydrate"
 - preferred_term: Zinc chloride
   concentration:
     value: '9.0'
@@ -111,7 +111,7 @@ ingredients:
   notes: 'CAS: 7646-85-7; MW: 136.3; From Desulfovibrio trace elements'
   term:
     id: CHEBI:49976
-    label: ''
+    label: "zinc dichloride"
 - preferred_term: Sodium molybdate
   concentration:
     value: '1.26'
@@ -120,7 +120,7 @@ ingredients:
     enriched via CAS-RN lookup'
   term:
     id: CHEBI:75215
-    label: ''
+    label: "sodium molybdate (anhydrous)"
 - preferred_term: Boric Acid
   concentration:
     value: '1.92'
@@ -137,7 +137,7 @@ ingredients:
     enriched via CAS-RN lookup'
   term:
     id: CHEBI:53437
-    label: ''
+    label: "nickel sulfate hexahydrate"
 - preferred_term: copper (II) chloride dihydrate
   concentration:
     value: '0.06'
@@ -145,7 +145,7 @@ ingredients:
   notes: 'CAS: 10125-13-0; MW: 170.48; From Desulfovibrio trace elements'
   term:
     id: CHEBI:86318
-    label: ''
+    label: "copper(II) chloride dihydrate"
 - preferred_term: Sodium selenite pentahydrate
   concentration:
     value: '0.21'
@@ -154,7 +154,7 @@ ingredients:
     enriched via CAS-RN lookup'
   term:
     id: CHEBI:131361
-    label: ''
+    label: "disodium selenite pentahydrate"
 - preferred_term: Sodium tungstate dihydrate
   concentration:
     value: '0.144'
@@ -163,7 +163,7 @@ ingredients:
     enriched via CAS-RN lookup'
   term:
     id: CHEBI:63939
-    label: ''
+    label: "sodium tungstate dihydrate"
 - preferred_term: pyridoxine HCl
   concentration:
     value: '0.01'

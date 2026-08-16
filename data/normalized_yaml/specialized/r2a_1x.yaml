@@ -23,7 +23,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: FOODON:03315426
-    label: Yeast extract
+    label: "yeast extract"
   notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 232-387-9'
 - preferred_term: D-Glucose
   concentration:
@@ -39,7 +39,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:28017
-    label: Starch
+    label: "starch"
   notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 9005-25-8'
 - preferred_term: Potassium phosphate dibasic
   concentration:

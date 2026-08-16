@@ -301,7 +301,7 @@ ingredients:
     unit: MICROMOLAR
   term:
     id: CHEBI:83760
-    label: EC 2.4.1.64 (alpha,alpha-trehalose phosphorylase) inhibitor (base)
+    label: "EC 2.4.1.64 (alpha,alpha-trehalose phosphorylase) inhibitor"
   notes: 'Mapping: base_compound (confidence: 0.85); CAS: 6138-23-4; MW: 378.33; From
     NLDM_metabolites'
 - preferred_term: m-Inositol
@@ -371,8 +371,8 @@ ingredients:
     value: '525.0'
     unit: MICROMOLAR
   term:
-    id: CHEBI:63675
-    label: sodium succinate
+    id: CHEBI:63686
+    label: sodium succinate hexahydrate
   notes: 'Mapping: manual (confidence: 0.90); CAS: 6106-21-4; MW: 270.14; From NLDM_metabolites'
 - preferred_term: Sodium pyruvate
   concentration:
@@ -389,7 +389,7 @@ ingredients:
     unit: MICROMOLAR
   term:
     id: CHEBI:16810
-    label: 2-oxoglutaric acid
+    label: "2-oxoglutarate(2-)"
   notes: 'Mapping: manual (confidence: 0.90); CAS: 305-72-6; MW: 190.06; From NLDM_metabolites'
 - preferred_term: L-Citrulline
   concentration:
@@ -593,7 +593,7 @@ ingredients:
     unit: MICROMOLAR
   term:
     id: CHEBI:64139
-    label: (2R,3S)-EHNA hydrochloride (base)
+    label: "(2R,3S)-EHNA hydrochloride"
   notes: 'Mapping: base_compound (confidence: 0.85); CAS: 2922-28-3; MW: 171.59; From
     NLDM_metabolites'
 - preferred_term: Adenosine

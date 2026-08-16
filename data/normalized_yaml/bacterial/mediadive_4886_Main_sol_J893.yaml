@@ -32,7 +32,7 @@ composition:
     label: Sulfur
   chebi_term:
     id: CHEBI:26833
-    label: Sulfur
+    label: "sulfur atom"
     confidence: 0.9
     match_type: corpus_consensus
 preparation_notes: 'Autoclave the base solution and the yeast extract solution separately.

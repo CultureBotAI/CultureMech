@@ -19,10 +19,10 @@ ingredients:
     Simple component [Merged 5 duplicates: 180.0, 950.0, 1.0, 40.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgCl2 x 6 H2O
   concentration:
     value: '0.5'
@@ -31,7 +31,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86345
-    label: ''
+    label: "magnesium dichloride hexahydrate"
 - preferred_term: Artificial seawater
   concentration:
     value: '700'
@@ -78,7 +78,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: ''
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: Nitrilotriacetic acid (NTA)
   concentration:
     value: '22.8'
@@ -104,7 +104,7 @@ ingredients:
   notes: 'Role: Mineral source'
   term:
     id: CHEBI:3312
-    label: ''
+    label: "calcium dichloride"
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
   term:
@@ -147,7 +147,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: "calcium chloride dihydrate"
 - preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '0.024'
@@ -177,7 +177,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86368
-    label: ''
+    label: "manganese(II) chloride tetrahydrate"
 - preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '0.024'
@@ -186,7 +186,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:35696
-    label: ''
+    label: "cobalt dichloride"
 - preferred_term: NiCl2 x 6 H2O
   concentration:
     value: '0.12'
@@ -195,7 +195,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:34887
-    label: ''
+    label: "nickel dichloride"
 - preferred_term: ZnSO4 x 7 H2O
   concentration:
     value: '1.1'
@@ -204,7 +204,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:32312
-    label: ''
+    label: "zinc sulfate heptahydrate"
 - preferred_term: ZnCl2
   concentration:
     value: '0.1'
@@ -225,7 +225,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:30812
-    label: ''
+    label: "iron dichloride"
 - preferred_term: Na2B4O7 x 10 H2O
   concentration:
     value: '0.018'
@@ -234,7 +234,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:131366
-    label: ''
+    label: "disodium tetraborate decahydrate"
 - preferred_term: CuCl2⋅4H2O
   concentration:
     value: '0.025'
@@ -249,7 +249,7 @@ ingredients:
     component'
   term:
     id: CHEBI:34683
-    label: ''
+    label: "disodium hydrogenphosphate"
 - preferred_term: N-acetylglucosamine
   concentration:
     value: '2'
@@ -351,7 +351,7 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Defined component'
   term:
     id: CHEBI:31345
-    label: ''
+    label: "Calcium pantothenate"
 media_term:
   preferred_term: TOGO Medium M2152
   term:

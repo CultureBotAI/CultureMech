@@ -63,7 +63,7 @@ ingredients:
 - preferred_term: KNO
   term:
     id: CHEBI:63043
-    label: KNO
+    label: "potassium nitrate"
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -78,7 +78,7 @@ ingredients:
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: "dipotassium hydrogen phosphate"
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -108,7 +108,7 @@ ingredients:
 - preferred_term: Thiamine HCl (Vitamin B )
   term:
     id: CHEBI:49105
-    label: Thiamine HCl (vitamin B )
+    label: "thiamine hydrochloride"
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0

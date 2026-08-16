@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: FeSO4·7H2O
   concentration:
     value: '2'
@@ -26,7 +26,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: ''
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: ZnSO4·7H2O
   concentration:
     value: '1'
@@ -71,7 +71,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:131395
-    label: ''
+    label: "manganese(II) chloride dihydrate"
 - preferred_term: Glucose
   concentration:
     value: '1'

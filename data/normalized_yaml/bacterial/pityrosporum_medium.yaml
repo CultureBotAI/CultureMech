@@ -23,33 +23,33 @@ ingredients:
 - preferred_term: Tween 40
   term:
     id: CHEBI:53423
-    label: Tween 40
+    label: "polysorbate 40"
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:53423
-    label: Tween 40
+    label: "polysorbate 40"
 - preferred_term: Glycerol mono-oleate
   term:
     id: CHEBI:75937
-    label: Glycerol mono-oleate
+    label: "monooleoylglycerol"
   concentration:
     value: '2.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75937
-    label: Glycerol mono-oleate
+    label: "monooleoylglycerol"
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
   concentration:
     value: '15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

@@ -32,7 +32,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na2CO3
@@ -56,7 +56,7 @@ composition:
     label: Na2S x 9 H2O
   chebi_term:
     id: CHEBI:76209
-    label: Na2S x 9 H2O
+    label: "sodium sulfide nonahydrate"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: "Mix components thoroughly, adjust pH to 9.5 with NaOH and autoclave\

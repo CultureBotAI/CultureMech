@@ -15,10 +15,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: Magnesium sulfate heptahydrate
   concentration:
     value: '20'
@@ -27,10 +27,10 @@ ingredients:
     compound'
   term:
     id: CHEBI:31795
-    label: Magnesium sulfate heptahydrate
+    label: "magnesium sulfate heptahydrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: Magnesium sulfate heptahydrate
+    label: "magnesium sulfate heptahydrate"
 - preferred_term: Yeast extract
   concentration:
     value: '50'
@@ -56,7 +56,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: ''
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: Zinc sulfate heptahydrate
   concentration:
     value: '0.3'
@@ -65,7 +65,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:32312
-    label: ''
+    label: "zinc sulfate heptahydrate"
 - preferred_term: Cobalt sulfate heptahydrate
   concentration:
     value: '0.1'
@@ -80,10 +80,10 @@ ingredients:
     compound'
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
-    label: Manganese sulfate monohydrate
+    label: "manganese(II) sulfate monohydrate"
   term:
     id: CHEBI:86364
-    label: ''
+    label: "manganese(II) sulfate monohydrate"
 - preferred_term: di‐Potassium hydrogen orthophosphate trihydrate
   concentration:
     value: '85'

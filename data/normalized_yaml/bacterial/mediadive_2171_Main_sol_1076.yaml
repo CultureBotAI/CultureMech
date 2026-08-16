@@ -34,7 +34,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Fetal bovine serum
@@ -86,7 +86,7 @@ composition:
     label: L-Glutamine
   chebi_term:
     id: CHEBI:18050
-    label: L-Glutamine
+    label: "L-glutamine"
     confidence: 0.9
     match_type: corpus_consensus
 preparation_notes: "Adjust pH to 7.4; autoclave at 121°C for 15 minutes.\nAdd aseptically:\

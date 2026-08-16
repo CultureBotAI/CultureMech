@@ -15,17 +15,17 @@ ingredients:
 - preferred_term: Marine agar 2216
   term:
     id: CHEBI:2509
-    label: Marine agar 2216
+    label: "agar"
   concentration:
     value: '1000'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Marine agar 2216
+    label: "agar"
 - preferred_term: Tween 20
   term:
     id: CHEBI:53424
-    label: Tween 20
+    label: "polysorbate 20"
   concentration:
     value: '10'
     unit: G_PER_L

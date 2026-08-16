@@ -25,7 +25,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na2HPO4
@@ -109,7 +109,7 @@ composition:
     label: L-Glutamic acid
   chebi_term:
     id: CHEBI:16015
-    label: L-Glutamic acid
+    label: "L-glutamic acid"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Ferric ammonium citrate
@@ -145,7 +145,7 @@ composition:
     label: Biotin
   chebi_term:
     id: CHEBI:15956
-    label: Biotin
+    label: "biotin"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Malachite green
@@ -169,7 +169,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -181,7 +181,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Final pH at 25°C 6.6 ± 0.2.

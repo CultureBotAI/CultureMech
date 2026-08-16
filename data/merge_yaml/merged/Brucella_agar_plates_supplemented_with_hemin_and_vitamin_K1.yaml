@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: Yeast Extract
   concentration:
     value: '2'
@@ -31,10 +31,10 @@ ingredients:
     compound'
   term:
     id: CHEBI:26710
-    label: Sodium Chloride
+    label: "sodium chloride"
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: Sodium Chloride
+    label: "sodium chloride"
 - preferred_term: Hemin
   concentration:
     value: '0.005'
@@ -71,10 +71,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:18067
-    label: Vitamin K1
+    label: "phylloquinone"
   mediaingredientmech_chebi_term:
     id: CHEBI:18067
-    label: Vitamin K1
+    label: "phylloquinone"
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -93,7 +93,7 @@ ingredients:
   notes: 'Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:26709
-    label: ''
+    label: "sodium hydrogensulfite"
 - preferred_term: Pancreatic Digest of Casein
   concentration:
     value: '10'

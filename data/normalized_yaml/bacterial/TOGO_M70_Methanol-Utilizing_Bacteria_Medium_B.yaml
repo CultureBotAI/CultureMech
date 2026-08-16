@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.2'
@@ -35,7 +35,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: "calcium chloride dihydrate"
 - preferred_term: KH2PO4
   concentration:
     value: '1.4'
@@ -47,7 +47,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: MnCl2・4H2O
   concentration:
     value: '5'
@@ -56,7 +56,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:86368
-    label: ''
+    label: "manganese(II) chloride tetrahydrate"
 - preferred_term: ZnSO4・7H2O
   concentration:
     value: '5'
@@ -65,7 +65,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:32312
-    label: ''
+    label: "zinc sulfate heptahydrate"
 - preferred_term: Thiamine・HCl (see below)
   concentration:
     value: '0.4'
@@ -91,7 +91,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:31440
-    label: ''
+    label: "copper(II) sulfate pentahydrate"
 - preferred_term: Na2HPO4
   concentration:
     value: '3'
@@ -124,10 +124,10 @@ ingredients:
     compound'
   mediaingredientmech_chebi_term:
     id: CHEBI:144421
-    label: Ferric citrate
+    label: "iron(III) citrate"
   term:
     id: CHEBI:144421
-    label: ''
+    label: "iron(III) citrate"
 media_term:
   preferred_term: TOGO Medium M70
   term:

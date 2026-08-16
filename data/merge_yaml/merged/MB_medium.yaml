@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 3 duplicates: 1.0, 1000.0, 1000.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4.7H2O
   concentration:
     value: '0.12'
@@ -50,7 +50,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: "calcium chloride dihydrate"
 - preferred_term: KH2PO4
   concentration:
     value: '0.18'
@@ -62,7 +62,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: K2HPO4
   concentration:
     value: '0.29'
@@ -95,7 +95,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:76209
-    label: ''
+    label: "sodium sulfide nonahydrate"
 - preferred_term: (NH4)2SO4
   concentration:
     value: '0.45'
@@ -131,7 +131,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: "carbon dioxide"
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -139,7 +139,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: ''
+    label: "dihydrogen"
 - preferred_term: Biotin
   concentration:
     value: '2'
@@ -236,10 +236,10 @@ ingredients:
     component'
   term:
     id: CHEBI:16494
-    label: (DL)-alpha-Lipoic acid
+    label: "lipoic acid"
   mediaingredientmech_chebi_term:
     id: CHEBI:16494
-    label: (DL)-alpha-Lipoic acid
+    label: "lipoic acid"
 - preferred_term: Calcium D-(+)-pantothenate
   concentration:
     value: '5'
@@ -247,7 +247,7 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Defined component'
   term:
     id: CHEBI:31345
-    label: ''
+    label: "Calcium pantothenate"
 - preferred_term: N2 gas
   notes: 'Properties: Gas'
   concentration:
@@ -309,10 +309,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: "iron(2+) sulfate heptahydrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: "iron(2+) sulfate heptahydrate"
 - preferred_term: NiCl2 x 6 H2O
   concentration:
     value: '0.03'
@@ -381,10 +381,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86465
-    label: AlK(SO4)2 x 12 H2O
+    label: "potassium aluminium sulfate dodecahydrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:86465
-    label: AlK(SO4)2 x 12 H2O
+    label: "potassium aluminium sulfate dodecahydrate"
 - preferred_term: Nitrilotriacetic acid
   concentration:
     value: '1.5'
@@ -405,10 +405,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63939
-    label: sodium tungstate
+    label: "sodium tungstate dihydrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:63939
-    label: sodium tungstate
+    label: "sodium tungstate dihydrate"
 - preferred_term: MnSO4 x H2O
   concentration:
     value: '0.5'
@@ -417,10 +417,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86364
-    label: MnSO4 x H2O
+    label: "manganese(II) sulfate monohydrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
-    label: MnSO4 x H2O
+    label: "manganese(II) sulfate monohydrate"
 media_term:
   preferred_term: TOGO Medium M3254
   term:

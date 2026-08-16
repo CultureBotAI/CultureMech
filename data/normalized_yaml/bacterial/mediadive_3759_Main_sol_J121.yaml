@@ -13,7 +13,7 @@ composition:
     label: (NH4)2HPO4
   chebi_term:
     id: CHEBI:63051
-    label: (NH4)2HPO4
+    label: "diammonium hydrogen phosphate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: KH2PO4
@@ -25,7 +25,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: NaCl
@@ -37,7 +37,7 @@ composition:
     label: NaCl
   chebi_term:
     id: CHEBI:26710
-    label: 1% sodium chloride
+    label: "sodium chloride"
     confidence: 1.0
     match_type: exact_match
 - preferred_term: MgSO4 x 7 H2O
@@ -81,7 +81,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -93,7 +93,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Separately sterilize a solution of sodium benzoate by filtration,

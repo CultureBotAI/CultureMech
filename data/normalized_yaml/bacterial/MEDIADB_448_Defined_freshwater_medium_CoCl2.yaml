@@ -12,7 +12,7 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: ''
+    label: "calcium dichloride"
 - preferred_term: Nicotinate
   concentration:
     value: '0.0004061'
@@ -20,18 +20,18 @@ ingredients:
   notes: 'Cross-references: KEGG:nac'
   term:
     id: CHEBI:15940
-    label: ''
+    label: "nicotinic acid"
 - preferred_term: Acetate
   term:
     id: CHEBI:30089
-    label: Acetate
+    label: "acetate"
   concentration:
     value: '113.2'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ac'
   mediaingredientmech_chebi_term:
     id: CHEBI:30089
-    label: Acetate
+    label: "acetate"
 - preferred_term: Nitrate
   concentration:
     value: '20.0'
@@ -44,29 +44,29 @@ ingredients:
   notes: 'Cross-references: KEGG:lipoate'
   term:
     id: CHEBI:16494
-    label: ''
+    label: "lipoic acid"
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
-    label: Riboflavin
+    label: "riboflavin"
   concentration:
     value: '0.0001329'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
   mediaingredientmech_chebi_term:
     id: CHEBI:17015
-    label: Riboflavin
+    label: "riboflavin"
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
-    label: Biotin
+    label: "biotin"
   concentration:
     value: '8.186e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
-    label: Biotin
+    label: "biotin"
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -85,74 +85,74 @@ ingredients:
   notes: 'Cross-references: KEGG:fol'
   term:
     id: CHEBI:27470
-    label: ''
+    label: "folic acid"
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
-    label: Vitamin B12
+    label: "cyanocob(III)alamin"
   concentration:
     value: '7.378e-07'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:17439
-    label: Vitamin B12
+    label: "cyanocob(III)alamin"
 - preferred_term: Aluminum potassium sulfate
   concentration:
     value: '0.0003873'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:86463
-    label: Aluminum potassium sulfate
+    label: "potassium aluminium sulfate"
   term:
     id: CHEBI:86463
-    label: ''
+    label: "potassium aluminium sulfate"
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
-    label: Ammonium chloride
+    label: "ammonium chloride"
   concentration:
     value: '28.04'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: Ammonium chloride
+    label: "ammonium chloride"
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
-    label: Manganese Sulfate
+    label: "manganese(II) sulfate monohydrate"
   concentration:
     value: '0.02673'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
-    label: Manganese Sulfate
+    label: "manganese(II) sulfate monohydrate"
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
-    label: Zinc Sulfate
+    label: "zinc sulfate"
   concentration:
     value: '0.006194'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:35176
-    label: Zinc Sulfate
+    label: "zinc sulfate"
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.003597'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75832
-    label: ''
+    label: "iron(2+) sulfate (anhydrous)"
 - preferred_term: Pyridoxine HCl
   concentration:
     value: '0.0004863'
     unit: MILLIMOLAR
   term:
     id: CHEBI:30961
-    label: Pyridoxine HCl
+    label: "pyridoxine hydrochloride"
   mediaingredientmech_chebi_term:
     id: CHEBI:30961
-    label: Pyridoxine HCl
+    label: "pyridoxine hydrochloride"
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -166,27 +166,27 @@ ingredients:
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: "magnesium sulfate"
   concentration:
     value: '0.1217'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: "magnesium sulfate"
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.007702'
     unit: MILLIMOLAR
   term:
     id: CHEBI:35696
-    label: ''
+    label: "cobalt dichloride"
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.001627'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75215
-    label: ''
+    label: "sodium molybdate (anhydrous)"
 - preferred_term: Potassium chloride
   concentration:
     value: '1.341'
@@ -200,33 +200,33 @@ ingredients:
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
-    label: Sodium Chloride
+    label: "sodium chloride"
   concentration:
     value: '0.1711'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: Sodium Chloride
+    label: "sodium chloride"
 - preferred_term: Sodium bicarbonate
   concentration:
     value: '29.76'
     unit: MILLIMOLAR
   term:
     id: CHEBI:32139
-    label: ''
+    label: "sodium hydrogencarbonate"
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: Sodium bicarbonate
+    label: "sodium hydrogencarbonate"
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
-    label: Boric acid
+    label: "boric acid"
   concentration:
     value: '0.001617'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: Boric acid
+    label: "boric acid"
 - preferred_term: Nickel chloride
   concentration:
     value: '0.00101'
@@ -237,30 +237,30 @@ ingredients:
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
-    label: Nitrilotriacetic acid
+    label: "nitrilotriacetic acid"
   concentration:
     value: '0.07848'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:44557
-    label: Nitrilotriacetic acid
+    label: "nitrilotriacetic acid"
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
-    label: Thiamine HCl
+    label: "thiamine hydrochloride"
   concentration:
     value: '0.0001482'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:49105
-    label: Thiamine HCl
+    label: "thiamine hydrochloride"
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.0004005'
     unit: MILLIMOLAR
   term:
     id: CHEBI:23414
-    label: ''
+    label: "copper(II) sulfate"
 - preferred_term: Sodium dihydrogen phosphate
   concentration:
     value: '4.348'

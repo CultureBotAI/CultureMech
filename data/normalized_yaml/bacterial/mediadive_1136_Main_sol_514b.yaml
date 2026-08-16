@@ -14,7 +14,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Use medium 514 to which is added NaCl at the concentration indicated

@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.5'
@@ -35,7 +35,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: "calcium chloride dihydrate"
 - preferred_term: KH2PO4
   concentration:
     value: '4.6'
@@ -47,7 +47,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: "potassium dihydrogen phosphate"
 - preferred_term: NH4Cl
   concentration:
     value: '1'
@@ -68,7 +68,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86254
-    label: ''
+    label: "iron trichloride hexahydrate"
 - preferred_term: Na2HPO4・12H2O
   concentration:
     value: '11.6'
@@ -77,7 +77,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:34683
-    label: ''
+    label: "disodium hydrogenphosphate"
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -96,10 +96,10 @@ ingredients:
   notes: 'Role: Carbon source'
   term:
     id: CHEBI:53389
-    label: Poly(3-hydroxybutyrate)
+    label: "poly(3-hydroxybutyrate)"
   mediaingredientmech_chebi_term:
     id: CHEBI:53389
-    label: Poly(3-hydroxybutyrate)
+    label: "poly(3-hydroxybutyrate)"
 media_term:
   preferred_term: TOGO Medium M1367
   term:

@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MRS broth (Sigma)
   concentration:
     value: '51'
@@ -30,10 +30,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:31795
-    label: Magnesium sulfate heptahydrate
+    label: "magnesium sulfate heptahydrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: Magnesium sulfate heptahydrate
+    label: "magnesium sulfate heptahydrate"
 - preferred_term: Yeast extract
   concentration:
     value: '4'
@@ -65,7 +65,7 @@ ingredients:
     component'
   term:
     id: CHEBI:63037
-    label: ''
+    label: "triammonium citrate"
 - preferred_term: Sodium acetate trihydrate
   concentration:
     value: '5'

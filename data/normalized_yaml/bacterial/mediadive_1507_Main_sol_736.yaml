@@ -48,7 +48,7 @@ composition:
     label: Glycerol
   chebi_term:
     id: CHEBI:17754
-    label: Glycerol
+    label: "glycerol"
     match_type: corpus_consensus
 - preferred_term: MgSO4 x 7 H2O
   concentration:
@@ -71,7 +71,7 @@ composition:
     label: Tween 80
   chebi_term:
     id: CHEBI:53426
-    label: tween 80
+    label: "polysorbate 80"
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Agar
@@ -83,7 +83,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -95,7 +95,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Final pH is 7.2.

@@ -24,10 +24,10 @@ ingredients:
     Defined component [Merged 2 duplicates: 850.0, 100.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: L--Lysine
   concentration:
     value: '5'
@@ -51,7 +51,7 @@ ingredients:
   notes: 'Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:91248
-    label: ''
+    label: "L-cysteine hydrochloride hydrate"
 - preferred_term: Vitamin mixture (see below)
   concentration:
     value: '1'
@@ -63,7 +63,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: "carbon dioxide"
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -71,7 +71,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: "dinitrogen"
 - preferred_term: Biotin
   concentration:
     value: '1'
@@ -90,10 +90,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:30753
-    label: p--Aminobenzoic acid
+    label: "4-aminobenzoic acid"
   term:
     id: CHEBI:30753
-    label: ''
+    label: "4-aminobenzoic acid"
 - preferred_term: Thiamine・HCl
   concentration:
     value: '5'
@@ -101,7 +101,7 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:49105
-    label: ''
+    label: "thiamine hydrochloride"
 - preferred_term: Folic acid
   concentration:
     value: '5'

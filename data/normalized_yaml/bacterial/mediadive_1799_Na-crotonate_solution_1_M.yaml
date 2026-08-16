@@ -13,7 +13,7 @@ composition:
     label: Crotonic acid
   chebi_term:
     id: CHEBI:41131
-    label: Crotonic acid
+    label: "crotonic acid"
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: NaOH
@@ -37,7 +37,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Dissolve crotonic acid in 800 ml distilled water, add around 100

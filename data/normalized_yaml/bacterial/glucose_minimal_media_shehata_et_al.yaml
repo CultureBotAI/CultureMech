@@ -9,36 +9,36 @@ ingredients:
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
-    label: D-Glucose
+    label: "D-glucose"
   concentration:
     value: '11.1012'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
   mediaingredientmech_chebi_term:
     id: CHEBI:17634
-    label: D-Glucose
+    label: "D-glucose"
 - preferred_term: L-Methionine
   term:
     id: CHEBI:16643
-    label: L-Methionine
+    label: "L-methionine"
   concentration:
     value: '0.26807'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:met-L'
   mediaingredientmech_chebi_term:
     id: CHEBI:16643
-    label: L-Methionine
+    label: "L-methionine"
 - preferred_term: Thymine
   term:
     id: CHEBI:17821
-    label: Thymine
+    label: "thymine"
   concentration:
     value: '0.031717'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:thym'
   mediaingredientmech_chebi_term:
     id: CHEBI:17821
-    label: Thymine
+    label: "thymine"
 - preferred_term: Magnesium chloride
   concentration:
     value: '0.983719'
@@ -55,24 +55,24 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: ''
+    label: "calcium dichloride"
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '48.7944'
     unit: MILLIMOLAR
   term:
     id: CHEBI:131527
-    label: ''
+    label: "dipotassium hydrogen phosphate"
 - preferred_term: Sodium sulfate
   concentration:
     value: '1.40805'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32149
-    label: Sodium sulfate
+    label: "sodium sulfate"
   term:
     id: CHEBI:32149
-    label: ''
+    label: "sodium sulfate"
 - preferred_term: Potassium chloride
   concentration:
     value: '13.4136'
@@ -89,24 +89,24 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:63036
-    label: ''
+    label: "potassium dihydrogen phosphate"
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
-    label: Ammonium chloride
+    label: "ammonium chloride"
   concentration:
     value: '14.0211'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: Ammonium chloride
+    label: "ammonium chloride"
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.0017982'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75832
-    label: ''
+    label: "iron(2+) sulfate (anhydrous)"
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

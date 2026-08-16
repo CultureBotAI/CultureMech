@@ -61,7 +61,7 @@ ingredients:
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
-    label: Na2HPO4
+    label: "disodium hydrogenphosphate"
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0

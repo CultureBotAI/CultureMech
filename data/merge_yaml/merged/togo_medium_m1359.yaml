@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: "water"
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.2'
@@ -70,10 +70,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63005
-    label: ''
+    label: "sodium nitrate"
   mediaingredientmech_chebi_term:
     id: CHEBI:63005
-    label: NaNO3
+    label: "sodium nitrate"
 - preferred_term: Sodium pyruvate
   concentration:
     value: '0.22'
@@ -105,7 +105,7 @@ ingredients:
   notes: 'Role: Growth factor'
   term:
     id: CHEBI:63686
-    label: ''
+    label: "sodium succinate hexahydrate"
 - preferred_term: Disodium oxalate
   concentration:
     value: '0.268'

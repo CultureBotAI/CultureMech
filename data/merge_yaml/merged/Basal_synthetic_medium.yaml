@@ -9,14 +9,14 @@ ingredients:
 - preferred_term: Lactose
   term:
     id: CHEBI:17716
-    label: Lactose
+    label: "lactose"
   concentration:
     value: '233.7'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:lcts'
   mediaingredientmech_chebi_term:
     id: CHEBI:17716
-    label: Lactose
+    label: "lactose"
 - preferred_term: Ammonium phosphate
   concentration:
     value: '121.2'
@@ -27,38 +27,38 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:63036
-    label: ''
+    label: "potassium dihydrogen phosphate"
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: "magnesium sulfate"
   concentration:
     value: '0.0812'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: "magnesium sulfate"
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.072'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75832
-    label: ''
+    label: "iron(2+) sulfate (anhydrous)"
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.00827'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75215
-    label: ''
+    label: "sodium molybdate (anhydrous)"
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.0401'
     unit: MILLIMOLAR
   term:
     id: CHEBI:23414
-    label: ''
+    label: "copper(II) sulfate"
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

@@ -17,13 +17,13 @@ ingredients:
 - preferred_term: D-Sorbitol
   term:
     id: CHEBI:17924
-    label: D-Sorbitol
+    label: "D-glucitol"
   concentration:
     value: '50'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17924
-    label: D-Sorbitol
+    label: "D-glucitol"
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -35,24 +35,24 @@ ingredients:
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
   concentration:
     value: '15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: "agar"
 - preferred_term: HCl
   term:
     id: CHEBI:17883
-    label: hydrochloric acid
+    label: "hydrogen chloride"
   notes: pH adjustment (extracted from notes)
   concentration:
     value: variable
     unit: VARIABLE
   mediaingredientmech_chebi_term:
     id: CHEBI:17883
-    label: hydrochloric acid
+    label: "hydrogen chloride"
 applications:
 - Microbial cultivation
 curation_history:
