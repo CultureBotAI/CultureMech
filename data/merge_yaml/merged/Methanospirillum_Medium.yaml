@@ -154,8 +154,8 @@ ingredients:
     id: MediaIngredientMech:000389
     label: Cysteine-HCl
   term:
-    id: CHEBI:52891
-    label: ''
+    id: CHEBI:91247
+    label: L-cysteine hydrochloride
 - preferred_term: Trypticase peptone (BBL)
   concentration:
     value: '2'
