@@ -17,14 +17,14 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: Glucose
+    label: glucose
   concentration:
     value: '45.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 40.0, 5.0]'
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: Glucose
+    label: glucose
 - preferred_term: Peptone
   concentration:
     value: '13.0'
@@ -38,23 +38,23 @@ ingredients:
 - preferred_term: Citric acid x H2O
   term:
     id: CHEBI:31404
-    label: Citric acid x H2O
+    label: Citric acid monohydrate
   concentration:
     value: '1.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31404
-    label: Citric acid x H2O
+    label: Citric acid monohydrate
 - preferred_term: Na2HPO4 x 2 H2O
   term:
     id: CHEBI:34683
-    label: Na2HPO4 x 2 H2O
+    label: disodium hydrogenphosphate
   concentration:
     value: '3.38'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34683
-    label: Na2HPO4 x 2 H2O
+    label: disodium hydrogenphosphate
 - preferred_term: Glacial acetic acid
   concentration:
     value: '10'
@@ -66,23 +66,23 @@ ingredients:
 - preferred_term: Acetic acid
   term:
     id: CHEBI:15366
-    label: Acetic acid
+    label: acetic acid
   concentration:
     value: '40'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15366
-    label: Acetic acid
+    label: acetic acid
 - preferred_term: Ethanol
   term:
     id: CHEBI:16236
-    label: Ethanol
+    label: ethanol
   concentration:
     value: '30'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16236
-    label: Ethanol
+    label: ethanol
 applications:
 - Microbial cultivation
 curation_history:

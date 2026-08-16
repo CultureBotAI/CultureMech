@@ -23,10 +23,10 @@ ingredients:
     Simple component [Merged 5 duplicates: 1050.0, 100.0, 1000.0, 100.0, 100.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.1'
@@ -76,10 +76,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63005
-    label: ''
+    label: sodium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63005
-    label: NaNO3
+    label: sodium nitrate
 - preferred_term: KNO3
   concentration:
     value: '0.1'
@@ -112,10 +112,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:17201
-    label: Glycyl-glycine
+    label: glycylglycine
   mediaingredientmech_chebi_term:
     id: CHEBI:17201
-    label: Glycyl-glycine
+    label: glycylglycine
 - preferred_term: Fe(III) citrate
   concentration:
     value: '0.1'
@@ -160,10 +160,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
-    label: MnCl2 x 4 H2O
+    label: manganese(II) chloride tetrahydrate
   term:
     id: CHEBI:86368
-    label: ''
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '0.2'
@@ -264,10 +264,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:30961
-    label: Pyridoxine-HCl
+    label: pyridoxine hydrochloride
   mediaingredientmech_chebi_term:
     id: CHEBI:30961
-    label: Pyridoxine-HCl
+    label: pyridoxine hydrochloride
 - preferred_term: Folic acid
   concentration:
     value: '50'
@@ -308,10 +308,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
+    label: thiamine hydrochloride dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
+    label: thiamine hydrochloride dihydrate
 - preferred_term: Na3-EDTA
   concentration:
     value: '200'

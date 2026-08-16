@@ -29,7 +29,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: NH4Cl
   concentration:
     value: '2'
@@ -50,7 +50,7 @@ ingredients:
     component'
   term:
     id: CHEBI:34683
-    label: ''
+    label: disodium hydrogenphosphate
 - preferred_term: Deionized water
   concentration:
     value: '11.0'
@@ -71,7 +71,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:35696
-    label: ''
+    label: cobalt dichloride
 - preferred_term: NiCl3.6H2O
   concentration:
     value: '0.118'

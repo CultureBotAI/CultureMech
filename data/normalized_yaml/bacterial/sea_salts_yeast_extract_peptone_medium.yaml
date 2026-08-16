@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -43,10 +43,10 @@ ingredients:
     component'
   mediaingredientmech_chebi_term:
     id: CHEBI:144421
-    label: Ferric citrate
+    label: iron(III) citrate
   term:
     id: CHEBI:144421
-    label: ''
+    label: iron(III) citrate
 - preferred_term: Sea salts (Sigma)
   concentration:
     value: '40'

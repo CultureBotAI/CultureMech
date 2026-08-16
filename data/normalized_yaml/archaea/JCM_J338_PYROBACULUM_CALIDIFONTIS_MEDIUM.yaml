@@ -24,13 +24,13 @@ ingredients:
 - preferred_term: Na2S2O3 x 5 H2O
   term:
     id: CHEBI:32150
-    label: Na2S2O3 x 5 H2O
+    label: sodium thiosulfate pentahydrate
   concentration:
     value: '3'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32150
-    label: Na2S2O3 x 5 H2O
+    label: sodium thiosulfate pentahydrate
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

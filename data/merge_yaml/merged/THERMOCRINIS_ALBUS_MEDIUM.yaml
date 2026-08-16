@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: NaCl
   concentration:
     value: '256'
@@ -38,7 +38,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: calcium chloride dihydrate
 - preferred_term: KH2PO4
   concentration:
     value: '1.7'
@@ -50,7 +50,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: H3BO3
   concentration:
     value: '10.3'
@@ -95,7 +95,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86254
-    label: ''
+    label: iron trichloride hexahydrate
 - preferred_term: NaNO3
   concentration:
     value: '0.3'
@@ -104,10 +104,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63005
-    label: ''
+    label: sodium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63005
-    label: NaNO3
+    label: sodium nitrate
 - preferred_term: Na2SO4
   concentration:
     value: '23'
@@ -128,7 +128,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63939
-    label: ''
+    label: sodium tungstate dihydrate
 - preferred_term: MnSO4・xH2O
   concentration:
     value: '0.006'
@@ -137,7 +137,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86360
-    label: ''
+    label: manganese(II) sulfate
 - preferred_term: (NH4)2Ni(SO4)2・6H2O
   concentration:
     value: '2'
@@ -146,7 +146,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86149
-    label: ''
+    label: ammonium nickel sulfate hexahydrate
 - preferred_term: Na2SeO4
   concentration:
     value: '0.1'
@@ -158,7 +158,7 @@ ingredients:
     label: sodium selenate
   mediaingredientmech_chebi_term:
     id: CHEBI:77775
-    label: Na2SeO4
+    label: sodium selenate
 - preferred_term: Na2S2O3・5H2O
   concentration:
     value: '1'
@@ -166,7 +166,7 @@ ingredients:
   notes: 'Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:32150
-    label: ''
+    label: sodium thiosulfate pentahydrate
 - preferred_term: H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
@@ -186,7 +186,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: carbon dioxide
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -194,7 +194,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: dinitrogen
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -202,7 +202,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: ''
+    label: dihydrogen
 media_term:
   preferred_term: TOGO Medium M311
   term:

@@ -30,17 +30,17 @@ ingredients:
 - preferred_term: Na3-citrate
   term:
     id: CHEBI:53258
-    label: Na3-citrate
+    label: sodium citrate
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:53258
-    label: Na3-citrate
+    label: sodium citrate
 - preferred_term: NaNO3
   term:
     id: CHEBI:63005
-    label: NaNO3
+    label: sodium nitrate
   concentration:
     value: '0.25'
     unit: G_PER_L
@@ -56,17 +56,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
 - preferred_term: Ferric citrate monohydrate
   concentration:
     value: '0.2'
     unit: G_PER_L
   term:
     id: CHEBI:144434
-    label: Ferric citrate monohydrate
+    label: iron(III) citrate monohydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:144434
-    label: Ferric citrate monohydrate
+    label: iron(III) citrate monohydrate
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
@@ -76,7 +76,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32149
-    label: Na2SO4
+    label: sodium sulfate
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -86,38 +86,38 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
-    label: NaHCO3
+    label: sodium hydrogencarbonate
   concentration:
     value: '2.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: NaHCO3
+    label: sodium hydrogencarbonate
 - preferred_term: Na2S2O3 x 5 H2O
   term:
     id: CHEBI:32150
-    label: Na2S2O3 x 5 H2O
+    label: sodium thiosulfate pentahydrate
   concentration:
     value: '2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32150
-    label: Na2S2O3 x 5 H2O
+    label: sodium thiosulfate pentahydrate
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
   concentration:
     value: '30.703'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 29.703, 1.0]'
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -127,111 +127,111 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
   concentration:
     value: '0.238614'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.138614, 0.1]'
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '6.36634'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 3.36634, 3.0]'
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: magnesium dichloride hexahydrate
   concentration:
     value: '4.13861'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: magnesium dichloride hexahydrate
 - preferred_term: KCl
   term:
     id: CHEBI:32588
-    label: KCl
+    label: potassium chloride
   concentration:
     value: '0.326733'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: KCl
+    label: potassium chloride
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
-    label: NiCl2 x 6 H2O
+    label: nickel dichloride
   concentration:
     value: '0.03049505'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.00049505, 0.03]'
   mediaingredientmech_chebi_term:
     id: CHEBI:34887
-    label: NiCl2 x 6 H2O
+    label: nickel dichloride
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
-    label: Na2SeO3 x 5 H2O
+    label: disodium selenite pentahydrate
   concentration:
     value: '0.00079505'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.00049505, 0.0003]'
   mediaingredientmech_chebi_term:
     id: CHEBI:131361
-    label: Na2SeO3 x 5 H2O
+    label: disodium selenite pentahydrate
 - preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
   concentration:
     value: '0.00990099'
     unit: G_PER_L
   term:
     id: CHEBI:76181
-    label: ''
+    label: ferrous ammonium sulfate hexahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:76181
-    label: Fe(NH4)2(SO4)2 x 6 H2O
+    label: ferrous ammonium sulfate hexahydrate
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
-    label: Nitrilotriacetic acid
+    label: nitrilotriacetic acid
   concentration:
     value: '1.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:44557
-    label: Nitrilotriacetic acid
+    label: nitrilotriacetic acid
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
-    label: MnSO4 x H2O
+    label: manganese(II) sulfate monohydrate
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
-    label: MnSO4 x H2O
+    label: manganese(II) sulfate monohydrate
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: iron(2+) sulfate heptahydrate
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: CoSO4 x 7 H2O
   term:
     id: CHEBI:91244
@@ -245,33 +245,33 @@ ingredients:
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
+    label: zinc sulfate heptahydrate
   concentration:
     value: '0.18'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
+    label: zinc sulfate heptahydrate
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
-    label: CuSO4 x 5 H2O
+    label: copper(II) sulfate pentahydrate
   concentration:
     value: '0.01'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31440
-    label: CuSO4 x 5 H2O
+    label: copper(II) sulfate pentahydrate
 - preferred_term: AlK(SO4)2 x 12 H2O
   term:
     id: CHEBI:86465
-    label: AlK(SO4)2 x 12 H2O
+    label: potassium aluminium sulfate dodecahydrate
   concentration:
     value: '0.02'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86465
-    label: AlK(SO4)2 x 12 H2O
+    label: potassium aluminium sulfate dodecahydrate
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -281,27 +281,27 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
+    label: sodium molybdate dihydrate
   concentration:
     value: '0.01'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
+    label: sodium molybdate dihydrate
 - preferred_term: Na2WO4 x 2 H2O
   term:
     id: CHEBI:63939
-    label: Na2WO4 x 2 H2O
+    label: sodium tungstate dihydrate
   concentration:
     value: '0.0004'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63939
-    label: Na2WO4 x 2 H2O
+    label: sodium tungstate dihydrate
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

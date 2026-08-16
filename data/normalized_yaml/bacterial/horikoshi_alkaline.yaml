@@ -16,13 +16,13 @@ ingredients:
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
-    label: D-Glucose
+    label: D-glucose
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17634
-    label: D-Glucose
+    label: D-glucose
 - preferred_term: Peptone
   concentration:
     value: '5'
@@ -40,17 +40,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -60,17 +60,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
 preparation_steps:
 - step_number: 1
   action: MIX

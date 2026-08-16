@@ -22,7 +22,7 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: ''
+    label: calcium dichloride
 - preferred_term: Ethyl octanoate
   concentration:
     value: '10.0'
@@ -33,55 +33,55 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:131527
-    label: ''
+    label: dipotassium hydrogen phosphate
 - preferred_term: Cobaltous sulfate
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
   term:
     id: CHEBI:53470
-    label: ''
+    label: cobalt(2+) sulfate
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '27.0'
     unit: MILLIMOLAR
   term:
     id: CHEBI:63036
-    label: ''
+    label: potassium dihydrogen phosphate
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: magnesium sulfate
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: magnesium sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75832
-    label: ''
+    label: iron(2+) sulfate (anhydrous)
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
-    label: Zinc Sulfate
+    label: zinc sulfate
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:35176
-    label: Zinc Sulfate
+    label: zinc sulfate
 - preferred_term: Cupric chloride
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
   term:
     id: CHEBI:49553
-    label: ''
+    label: copper(II) chloride
 - preferred_term: Sodium ammonium phosphate
   concentration:
     value: '0.47'

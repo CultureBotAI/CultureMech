@@ -58,7 +58,7 @@ ingredients:
   notes: 'CAS: 10102-40-6; MW: 241.95; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:75213
-    label: ''
+    label: sodium molybdate dihydrate
 - preferred_term: EDTA (disodium salt)
   concentration:
     value: '0.028'
@@ -66,7 +66,7 @@ ingredients:
   notes: 'CAS: 6381-92-6; MW: 336.206'
   term:
     id: CHEBI:64734
-    label: ''
+    label: EDTA disodium salt (anhydrous)
 - preferred_term: Magnesium Sulfate Heptahydrate
   concentration:
     value: '0.2'

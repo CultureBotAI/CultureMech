@@ -27,7 +27,7 @@ composition:
     label: Glucose
   chebi_term:
     id: CHEBI:17234
-    label: D-glucose
+    label: glucose
     confidence: 0.9
     match_type: manual_curated
 - preferred_term: Sea water
@@ -46,7 +46,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Artifical seawater (ASW, eg., Instant Ocean) = 32 g seasalt disolved

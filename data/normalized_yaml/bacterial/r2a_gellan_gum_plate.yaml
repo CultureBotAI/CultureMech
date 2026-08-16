@@ -20,10 +20,10 @@ ingredients:
     Inorganic compound'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.05'
@@ -67,10 +67,10 @@ ingredients:
   notes: 'Role: Solidifying component; Properties: Undefined component, Organic compound'
   term:
     id: CHEBI:85248
-    label: Gellan Gum
+    label: gellan gum
   mediaingredientmech_chebi_term:
     id: CHEBI:85248
-    label: Gellan Gum
+    label: gellan gum
 - preferred_term: Glucose
   concentration:
     value: '0.5'
@@ -90,7 +90,7 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Undefined component'
   term:
     id: CHEBI:28017
-    label: ''
+    label: starch
 - preferred_term: Bacto Yeast Extract (Difco)
   concentration:
     value: '0.5'

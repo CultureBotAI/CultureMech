@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 3 duplicates: 1.0, 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.277'
@@ -41,7 +41,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: NH4Cl
   concentration:
     value: '0.54'
@@ -125,7 +125,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: carbon dioxide
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
@@ -133,7 +133,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: dinitrogen
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -141,7 +141,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: ''
+    label: dihydrogen
 - preferred_term: Biotin
   concentration:
     value: '2'
@@ -193,10 +193,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:30961
-    label: Pyridoxine-HCl
+    label: pyridoxine hydrochloride
   mediaingredientmech_chebi_term:
     id: CHEBI:30961
-    label: Pyridoxine-HCl
+    label: pyridoxine hydrochloride
 - preferred_term: Folic acid
   concentration:
     value: '2'
@@ -297,7 +297,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: ''
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: CoCl2·6H2O
   concentration:
     value: '0.17'
@@ -306,7 +306,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:35696
-    label: ''
+    label: cobalt dichloride
 - preferred_term: NiCl2·6H2O
   concentration:
     value: '0.025'
@@ -351,7 +351,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86358
-    label: ''
+    label: manganese(II) sulfate tetrahydrate
 - preferred_term: CuSO4
   concentration:
     value: '0.05'

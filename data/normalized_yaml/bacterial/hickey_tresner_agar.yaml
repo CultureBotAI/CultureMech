@@ -16,13 +16,13 @@ ingredients:
 - preferred_term: Dextrin
   term:
     id: CHEBI:28675
-    label: Dextrin
+    label: dextrin
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:28675
-    label: Dextrin
+    label: dextrin
 - preferred_term: Enzymatic digest of casein
   concentration:
     value: '2'
@@ -38,23 +38,23 @@ ingredients:
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
-    label: CoCl2 x 6 H2O
+    label: cobalt dichloride
   concentration:
     value: '0.002'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:35696
-    label: CoCl2 x 6 H2O
+    label: cobalt dichloride
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

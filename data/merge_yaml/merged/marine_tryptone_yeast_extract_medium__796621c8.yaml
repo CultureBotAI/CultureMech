@@ -24,63 +24,63 @@ ingredients:
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
   concentration:
     value: '0.961538'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
   concentration:
     value: '19.2308'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: magnesium dichloride hexahydrate
   concentration:
     value: '3.46154'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: magnesium dichloride hexahydrate
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '4.13462'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
 - preferred_term: KCl
   term:
     id: CHEBI:32588
-    label: KCl
+    label: potassium chloride
   concentration:
     value: '0.480769'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: KCl
+    label: potassium chloride
 - preferred_term: Sodium thioglycolate
   term:
     id: CHEBI:86481
-    label: Sodium thioglycolate
+    label: sodium thioglycolate
   concentration:
     value: '0.0961538'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86481
-    label: Sodium thioglycolate
+    label: sodium thioglycolate
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -94,23 +94,23 @@ ingredients:
 - preferred_term: Cellobiose
   term:
     id: CHEBI:17057
-    label: Cellobiose
+    label: cellobiose
   concentration:
     value: '30'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17057
-    label: Cellobiose
+    label: cellobiose
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
-    label: Na2S x 9 H2O
+    label: sodium sulfide nonahydrate
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:76209
-    label: Na2S x 9 H2O
+    label: sodium sulfide nonahydrate
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

@@ -16,13 +16,13 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
   concentration:
     value: '15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -33,10 +33,10 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:29377
-    label: ''
+    label: sodium carbonate
   mediaingredientmech_chebi_term:
     id: CHEBI:29377
-    label: NaCO3
+    label: sodium carbonate
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES

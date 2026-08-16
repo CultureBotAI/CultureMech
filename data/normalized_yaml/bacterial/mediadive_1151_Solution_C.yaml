@@ -13,7 +13,7 @@ composition:
     label: Stearic acid
   chebi_term:
     id: CHEBI:28842
-    label: Stearic acid
+    label: octadecanoic acid
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: NaOH
@@ -37,7 +37,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Heat the suspension in a closed bottle (with 100% N2 gas atmosphere

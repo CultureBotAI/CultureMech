@@ -27,7 +27,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -39,7 +39,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Ethanol
@@ -51,7 +51,7 @@ composition:
     label: Ethanol
   chebi_term:
     id: CHEBI:16236
-    label: Ethanol
+    label: ethanol
     confidence: 0.9
     match_type: corpus_consensus
 preparation_notes: After sterilization add 60 ml ethanol (50% v/v), sterilized by

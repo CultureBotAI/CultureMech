@@ -9,35 +9,35 @@ ingredients:
 - preferred_term: Urea
   term:
     id: CHEBI:16199
-    label: Urea
+    label: urea
   concentration:
     value: '34.965'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:urea'
   mediaingredientmech_chebi_term:
     id: CHEBI:16199
-    label: Urea
+    label: urea
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
-    label: Biotin
+    label: biotin
   concentration:
     value: '0.000819'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
-    label: Biotin
+    label: biotin
 - preferred_term: Cellobiose
   term:
     id: CHEBI:17057
-    label: Cellobiose
+    label: cellobiose
   concentration:
     value: '14.6071'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:17057
-    label: Cellobiose
+    label: cellobiose
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -52,13 +52,13 @@ ingredients:
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
-    label: Vitamin B12
+    label: cyanocob(III)alamin
   concentration:
     value: '0.0001476'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:17439
-    label: Vitamin B12
+    label: cyanocob(III)alamin
 - preferred_term: Magnesium chloride
   concentration:
     value: '4.9186'
@@ -75,7 +75,7 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: ''
+    label: calcium dichloride
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -92,18 +92,18 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:131527
-    label: ''
+    label: dipotassium hydrogen phosphate
 - preferred_term: Pyridoxamine HCl
   concentration:
     value: '0.00977'
     unit: MILLIMOLAR
   term:
     id: CHEBI:131531
-    label: ''
+    label: pyridoxamine hydrochloride
 - preferred_term: Cysteine-HCl
   term:
     id: CHEBI:91247
-    label: Cysteine-HCl
+    label: L-cysteine hydrochloride
   concentration:
     value: '6.34437'
     unit: MILLIMOLAR
@@ -116,24 +116,24 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:63036
-    label: ''
+    label: potassium dihydrogen phosphate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.00481'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75832
-    label: ''
+    label: iron(2+) sulfate (anhydrous)
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258
-    label: Sodium citrate
+    label: sodium citrate
   concentration:
     value: '10.2006'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:53258
-    label: Sodium citrate
+    label: sodium citrate
 - preferred_term: MOPS
   term:
     id: CHEBI:39074

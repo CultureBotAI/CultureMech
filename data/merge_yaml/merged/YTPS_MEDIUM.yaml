@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.15'
@@ -47,7 +47,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: calcium chloride dihydrate
 - preferred_term: KH2PO4
   concentration:
     value: '0.42'
@@ -59,7 +59,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -80,7 +80,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86345
-    label: ''
+    label: magnesium dichloride hexahydrate
 - preferred_term: KCl
   concentration:
     value: '0.5'
@@ -137,7 +137,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:36385
-    label: ''
+    label: strontium dichloride hexahydrate
 - preferred_term: PIPES
   concentration:
     value: '6.05'
@@ -160,7 +160,7 @@ ingredients:
     label: sodium selenate
   mediaingredientmech_chebi_term:
     id: CHEBI:77775
-    label: Na2SeO4
+    label: sodium selenate
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '5'
@@ -178,7 +178,7 @@ ingredients:
   notes: 'Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:91248
-    label: ''
+    label: L-cysteine hydrochloride hydrate
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -186,7 +186,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: dinitrogen
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -194,7 +194,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: ''
+    label: dihydrogen
 media_term:
   preferred_term: TOGO Medium M1058
   term:

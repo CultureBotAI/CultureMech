@@ -15,23 +15,23 @@ ingredients:
 - preferred_term: BL Agar
   term:
     id: CHEBI:2509
-    label: BL Agar
+    label: agar
   concentration:
     value: '1000'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: BL Agar
+    label: agar
 - preferred_term: Maltose
   term:
     id: CHEBI:17306
-    label: Maltose
+    label: maltose
   concentration:
     value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17306
-    label: Maltose
+    label: maltose
 applications:
 - Microbial cultivation
 curation_history:

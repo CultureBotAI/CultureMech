@@ -69,7 +69,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:32139
-    label: null
+    label: sodium hydrogencarbonate
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 144-55-8; MW: 84.007'
 - preferred_term: L-Cysteine
   concentration:
@@ -215,7 +215,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:28484
-    label: null
+    label: isovaleric acid
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 503-74-2; MW: 102.13'
 description: Yeast Casitone Fatty Acids broth
 notes: 'Source: FEBA media definitions'

@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: (NH4)2SO4
   concentration:
     value: '0.5'
@@ -54,7 +54,7 @@ ingredients:
   notes: 'Properties: Inorganic compound, Simple component, Defined component'
   term:
     id: CHEBI:32150
-    label: ''
+    label: sodium thiosulfate pentahydrate
 - preferred_term: Casamino acids (BD-Difco)
   concentration:
     value: '2'

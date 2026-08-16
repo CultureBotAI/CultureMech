@@ -20,10 +20,10 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: Ascorbic acid (Sigma)
   concentration:
     value: '0.5'

@@ -22,20 +22,20 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: magnesium sulfate heptahydrate
+    label: magnesium sulfate
   term:
     id: CHEBI:32599
-    label: magnesium sulfate heptahydrate
+    label: magnesium sulfate
 - preferred_term: Monopotassium phosphate
   concentration:
     value: '0.05'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: potassium dihydrogenphosphate
+    label: potassium dihydrogen phosphate
   term:
     id: CHEBI:63036
-    label: potassium dihydrogenphosphate
+    label: potassium dihydrogen phosphate
 ph_value: 1.7
 temperature_value: 33.0
 incubation_atmosphere: AEROBIC

@@ -29,43 +29,43 @@ ingredients:
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
-    label: MnSO4 x H2O
+    label: manganese(II) sulfate monohydrate
   concentration:
     value: '100'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
-    label: MnSO4 x H2O
+    label: manganese(II) sulfate monohydrate
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
+    label: zinc sulfate heptahydrate
   concentration:
     value: '100'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
+    label: zinc sulfate heptahydrate
 - preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
   concentration:
     value: '100'
     unit: G_PER_L
   term:
     id: CHEBI:76181
-    label: ''
+    label: ferrous ammonium sulfate hexahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:76181
-    label: Fe(NH4)2(SO4)2 x 6 H2O
+    label: ferrous ammonium sulfate hexahydrate
 - preferred_term: FeCl3
   term:
     id: CHEBI:30808
-    label: FeCl3
+    label: iron trichloride
   concentration:
     value: '100'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30808
-    label: FeCl3
+    label: iron trichloride
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -75,11 +75,11 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
 - preferred_term: NaNO3
   term:
     id: CHEBI:63005
-    label: NaNO3
+    label: sodium nitrate
   concentration:
     value: '100'
     unit: G_PER_L
@@ -88,48 +88,48 @@ ingredients:
     label: NaNO3
 - preferred_term: Na2-EDTA x 2 H2O
   term:
-    id: CHEBI:64734
-    label: Na2-EDTA x 2 H2O
+    id: CHEBI:64758
+    label: EDTA disodium salt dihydrate
   concentration:
     value: '100'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:64734
-    label: Na2-EDTA x 2 H2O
+    id: CHEBI:64758
+    label: EDTA disodium salt dihydrate
 - preferred_term: Sodium beta-glycerophosphate
   term:
     id: CHEBI:132089
-    label: Sodium beta-glycerophosphate
+    label: sodium glycerol 2-phosphate
   concentration:
     value: '100'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:132089
-    label: Sodium beta-glycerophosphate
+    label: sodium glycerol 2-phosphate
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
-    label: Vitamin B12
+    label: cyanocob(III)alamin
   concentration:
     value: '160'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17439
-    label: Vitamin B12
+    label: cyanocob(III)alamin
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
-    label: Biotin
+    label: biotin
   concentration:
     value: '160'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
-    label: Biotin
+    label: biotin
 - preferred_term: Thiamine
   term:
     id: CHEBI:26948
-    label: Thiamine
+    label: vitamin B1
   concentration:
     value: '800'
     unit: G_PER_L

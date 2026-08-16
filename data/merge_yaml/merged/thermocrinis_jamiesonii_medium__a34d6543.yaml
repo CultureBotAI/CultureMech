@@ -16,23 +16,23 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
   concentration:
     value: '2.89855'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
 - preferred_term: KCl
   term:
     id: CHEBI:32588
-    label: KCl
+    label: potassium chloride
   concentration:
     value: '0.144928'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: KCl
+    label: potassium chloride
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
@@ -42,27 +42,27 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32149
-    label: Na2SO4
+    label: sodium sulfate
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '0.118841'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
   concentration:
     value: '0.0144928'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -72,47 +72,47 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
 - preferred_term: NaH2PO4
   term:
     id: CHEBI:37585
-    label: NaH2PO4
+    label: sodium dihydrogenphosphate
   concentration:
     value: '1.33333'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:37585
-    label: NaH2PO4
+    label: sodium dihydrogenphosphate
 - preferred_term: Sodium acetate
   term:
     id: CHEBI:32954
-    label: Sodium acetate
+    label: sodium acetate
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32954
-    label: Sodium acetate
+    label: sodium acetate
 - preferred_term: Sodium Thiosulfate
   term:
     id: CHEBI:132112
-    label: Sodium Thiosulfate
+    label: sodium thiosulfate
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:132112
-    label: Sodium Thiosulfate
+    label: sodium thiosulfate
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
-    label: NaHCO3
+    label: sodium hydrogencarbonate
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: NaHCO3
+    label: sodium hydrogencarbonate
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

@@ -64,7 +64,7 @@ ingredients:
 - preferred_term: Peptic digest of soybean meal
   term:
     id: FOODON:03315720
-    label: soy peptone
+    label: vegetable protein, hydrolyzed
   concentration:
     value: '3.0'
     unit: G_PER_L
@@ -85,7 +85,7 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: D-glucose
+    label: glucose
   concentration:
     value: '2.5'
     unit: G_PER_L
@@ -234,7 +234,7 @@ ingredients:
 - preferred_term: Disodium phosphate
   term:
     id: CHEBI:34683
-    label: disodium hydrogen phosphate
+    label: disodium hydrogenphosphate
   concentration:
     value: '2.5'
     unit: G_PER_L

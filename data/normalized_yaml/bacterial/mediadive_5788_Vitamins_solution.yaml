@@ -13,7 +13,7 @@ composition:
     label: Biotin
   chebi_term:
     id: CHEBI:15956
-    label: Biotin
+    label: biotin
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Folic acid
@@ -61,7 +61,7 @@ composition:
     label: Thiamine
   chebi_term:
     id: CHEBI:26948
-    label: Thiamine
+    label: vitamin B1
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Nicotinic acid
@@ -85,7 +85,7 @@ composition:
     label: Pantothenic acid
   chebi_term:
     id: CHEBI:7916
-    label: Pantothenic acid
+    label: pantothenic acid
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Cobalamin
@@ -121,7 +121,7 @@ composition:
     label: Lipoic acid
   chebi_term:
     id: CHEBI:16494
-    label: Lipoic acid
+    label: lipoic acid
     confidence: 0.9
     match_type: corpus_consensus
 curation_history:

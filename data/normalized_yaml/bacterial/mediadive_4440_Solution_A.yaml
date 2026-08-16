@@ -13,7 +13,7 @@ composition:
     label: Na2HPO4 x 2 H2O
   chebi_term:
     id: CHEBI:34683
-    label: Na2HPO4 x 2 H2O
+    label: disodium hydrogenphosphate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: KH2PO4
@@ -25,7 +25,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: NaNO3
@@ -60,7 +60,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Original volume: 903 mL'

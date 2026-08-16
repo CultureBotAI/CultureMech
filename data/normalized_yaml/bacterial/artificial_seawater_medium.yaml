@@ -16,35 +16,35 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
   concentration:
     value: '24'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
   notes: Copied from referenced JCM Medium 701
 - preferred_term: KCl
   term:
     id: CHEBI:32588
-    label: KCl
+    label: potassium chloride
   concentration:
     value: '0.7'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: KCl
+    label: potassium chloride
   notes: Copied from referenced JCM Medium 701
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: magnesium dichloride hexahydrate
   concentration:
     value: '7'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: magnesium dichloride hexahydrate
   notes: Copied from referenced JCM Medium 701
 - preferred_term: Yeast extract
   concentration:

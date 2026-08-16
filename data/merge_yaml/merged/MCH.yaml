@@ -15,53 +15,53 @@ ingredients:
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
-    label: NaHCO3
+    label: sodium hydrogencarbonate
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: NaHCO3
+    label: sodium hydrogencarbonate
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
   concentration:
     value: '80'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
 - preferred_term: KCl
   term:
     id: CHEBI:32588
-    label: KCl
+    label: potassium chloride
   concentration:
     value: '2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: KCl
+    label: potassium chloride
 - preferred_term: Na2HPO4 x 12 H2O
   term:
     id: CHEBI:34683
-    label: Na2HPO4 x 12 H2O
+    label: disodium hydrogenphosphate
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34683
-    label: Na2HPO4 x 12 H2O
+    label: disodium hydrogenphosphate
 - preferred_term: CaHPO4
   term:
     id: CHEBI:32596
-    label: CaHPO4
+    label: calcium hydrogenphosphate
   concentration:
     value: '0'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32596
-    label: CaHPO4
+    label: calcium hydrogenphosphate
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

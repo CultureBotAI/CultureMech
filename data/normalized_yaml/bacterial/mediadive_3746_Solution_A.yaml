@@ -13,7 +13,7 @@ composition:
     label: Cellulose
   chebi_term:
     id: CHEBI:18246
-    label: Cellulose
+    label: (1->4)-beta-D-glucan
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: NH4NO3
@@ -87,7 +87,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -99,7 +99,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Adjust pH to 7.0 with 1 N HCl.

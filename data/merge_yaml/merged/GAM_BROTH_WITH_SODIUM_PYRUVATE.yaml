@@ -20,13 +20,13 @@ ingredients:
 - preferred_term: Sodium pyruvate
   term:
     id: CHEBI:50144
-    label: Sodium pyruvate
+    label: sodium pyruvate
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:50144
-    label: Sodium pyruvate
+    label: sodium pyruvate
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

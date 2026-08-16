@@ -28,23 +28,23 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: Glucose
+    label: glucose
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: Glucose
+    label: glucose
 - preferred_term: Sodium pyruvate
   term:
     id: CHEBI:50144
-    label: Sodium pyruvate
+    label: sodium pyruvate
   concentration:
     value: '0.05'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:50144
-    label: Sodium pyruvate
+    label: sodium pyruvate
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -54,17 +54,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
   concentration:
     value: '132'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
 - preferred_term: Sea water
   concentration:
     value: '1000'
@@ -72,14 +72,14 @@ ingredients:
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
   concentration:
     value: '20'
     unit: G_PER_L
   notes: ' (for solid medium)'
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
 preparation_steps:
 - step_number: 1
   action: MIX

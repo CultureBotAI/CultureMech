@@ -13,7 +13,7 @@ composition:
     label: R2A agar
   chebi_term:
     id: CHEBI:2509
-    label: R2A agar
+    label: agar
     confidence: 0.7
     match_type: corpus_consensus
 curation_history:

@@ -26,7 +26,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:76209
-    label: ''
+    label: sodium sulfide nonahydrate
 - preferred_term: Sulfur (powder)
   concentration:
     value: '6'
@@ -74,7 +74,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: carbon dioxide
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
@@ -82,7 +82,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: dinitrogen
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -90,7 +90,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: ''
+    label: dihydrogen
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -99,10 +99,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '3.5'
@@ -135,7 +135,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '2.75'
@@ -144,7 +144,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86345
-    label: ''
+    label: magnesium dichloride hexahydrate
 - preferred_term: H3BO3
   concentration:
     value: '15'
@@ -201,7 +201,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:36385
-    label: ''
+    label: strontium dichloride hexahydrate
 - preferred_term: KI
   concentration:
     value: '2.5'
@@ -222,7 +222,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86149
-    label: ''
+    label: ammonium nickel sulfate hexahydrate
 media_term:
   preferred_term: TOGO Medium M199
   term:

@@ -39,7 +39,7 @@ composition:
     label: Tap water
   chebi_term:
     id: CHEBI:15377
-    label: Tap water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Autoclave, cool to room temperature, and inoculate with about

@@ -14,10 +14,10 @@ ingredients:
     Inorganic compound [Merged 2 duplicates: 900.0, 100.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.4'
@@ -67,7 +67,7 @@ ingredients:
     label: ammonium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63038
-    label: NH4NO3
+    label: ammonium nitrate
 - preferred_term: Peptone
   term:
     id: MICRO:0000178

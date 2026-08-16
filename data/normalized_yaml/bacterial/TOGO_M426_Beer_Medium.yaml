@@ -58,7 +58,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86360
-    label: ''
+    label: manganese(II) sulfate
 - preferred_term: Diammonium citrate
   concentration:
     value: '2'

@@ -24,54 +24,54 @@ ingredients:
 - preferred_term: Sodium glutamate monohydrate
   term:
     id: CHEBI:64243
-    label: Sodium glutamate monohydrate
+    label: monosodium L-glutamate
   concentration:
     value: '0.990099'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:64243
-    label: Sodium glutamate monohydrate
+    label: monosodium L-glutamate
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
   concentration:
     value: '29.7814314'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 29.703, 0.0784314]'
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
-    label: Nitrilotriacetic acid
+    label: nitrilotriacetic acid
   concentration:
     value: '0.980392'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:44557
-    label: Nitrilotriacetic acid
+    label: nitrilotriacetic acid
 - preferred_term: CaSO4 x 2 H2O
   term:
     id: CHEBI:32583
-    label: CaSO4 x 2 H2O
+    label: calcium sulfate dihydrate
   concentration:
     value: '0.588235'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32583
-    label: CaSO4 x 2 H2O
+    label: calcium sulfate dihydrate
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '0.980392'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
 - preferred_term: KNO3
   term:
     id: CHEBI:63043
@@ -85,7 +85,7 @@ ingredients:
 - preferred_term: NaNO3
   term:
     id: CHEBI:63005
-    label: NaNO3
+    label: sodium nitrate
   concentration:
     value: '6.7549'
     unit: G_PER_L
@@ -95,23 +95,23 @@ ingredients:
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
-    label: Na2HPO4
+    label: disodium hydrogenphosphate
   concentration:
     value: '1.08824'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34683
-    label: Na2HPO4
+    label: disodium hydrogenphosphate
 - preferred_term: FeCl3 x 6 H2O
   term:
     id: CHEBI:86254
-    label: FeCl3 x 6 H2O
+    label: iron trichloride hexahydrate
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86254
-    label: FeCl3 x 6 H2O
+    label: iron trichloride hexahydrate
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

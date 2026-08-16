@@ -21,21 +21,21 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:46760
-    label: ''
+    label: tricine
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
   concentration:
     value: '35'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
 - preferred_term: NaNO3
   term:
     id: CHEBI:63005
-    label: NaNO3
+    label: sodium nitrate
   concentration:
     value: '30'
     unit: G_PER_L
@@ -45,13 +45,13 @@ ingredients:
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
-    label: Na2HPO4
+    label: disodium hydrogenphosphate
   concentration:
     value: '1.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34683
-    label: Na2HPO4
+    label: disodium hydrogenphosphate
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -61,17 +61,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
-    label: Biotin
+    label: biotin
   concentration:
     value: '0.0002'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
-    label: Biotin
+    label: biotin
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -88,60 +88,60 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17439
-    label: Cyanocobalamine
+    label: cyanocob(III)alamin
   term:
     id: CHEBI:17439
-    label: ''
+    label: cyanocob(III)alamin
 - preferred_term: Folic acid
   term:
     id: CHEBI:27470
-    label: Folic acid
+    label: folic acid
   concentration:
     value: '0.0004'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:27470
-    label: Folic acid
+    label: folic acid
 - preferred_term: Inositol
   term:
     id: CHEBI:24848
-    label: Inositol
+    label: inositol
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:24848
-    label: Inositol
+    label: inositol
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
-    label: Nicotinic acid
+    label: nicotinic acid
   concentration:
     value: '0.02'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15940
-    label: Nicotinic acid
+    label: nicotinic acid
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
-    label: Thiamine HCl
+    label: thiamine hydrochloride
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:49105
-    label: Thiamine HCl
+    label: thiamine hydrochloride
 - preferred_term: Thymine
   term:
     id: CHEBI:17821
-    label: Thymine
+    label: thymine
   concentration:
     value: '0.6'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17821
-    label: Thymine
+    label: thymine
 - preferred_term: Soil
   concentration:
     value: variable

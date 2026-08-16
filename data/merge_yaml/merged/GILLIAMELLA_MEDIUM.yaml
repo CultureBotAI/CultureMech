@@ -52,24 +52,24 @@ ingredients:
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
   concentration:
     value: '14'
     unit: G_PER_L
   notes: ' (for solid medium)'
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
 - preferred_term: Charcoal
   term:
     id: CHEBI:91090
-    label: Charcoal
+    label: charcoal
   concentration:
     value: '2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:91090
-    label: Charcoal
+    label: charcoal
 - preferred_term: Na-ascorbate
   term:
     id: CHEBI:113451
@@ -79,7 +79,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:113451
-    label: Na-ascorbate
+    label: sodium ascorbate
 preparation_steps:
 - step_number: 1
   action: COOL

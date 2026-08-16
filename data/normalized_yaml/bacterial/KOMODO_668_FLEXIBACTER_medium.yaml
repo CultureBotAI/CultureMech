@@ -24,13 +24,13 @@ ingredients:
 - preferred_term: Na glutamate
   term:
     id: CHEBI:64220
-    label: Na glutamate
+    label: monosodium glutamate
   concentration:
     value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:64220
-    label: Na glutamate
+    label: monosodium glutamate
 - preferred_term: Sodium glycerophosphate
   concentration:
     value: '0.1'
@@ -38,23 +38,23 @@ ingredients:
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
-    label: Vitamin B12
+    label: cyanocob(III)alamin
   concentration:
     value: 1e-06
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17439
-    label: Vitamin B12
+    label: cyanocob(III)alamin
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
 - preferred_term: Sea water
   concentration:
     value: '1000'
@@ -62,53 +62,53 @@ ingredients:
 - preferred_term: Na-tartrate
   term:
     id: CHEBI:63017
-    label: Na-tartrate
+    label: sodium L-tartrate
   concentration:
     value: '1.77'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63017
-    label: Na-tartrate
+    label: sodium L-tartrate
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
-    label: CuCl2 x 2 H2O
+    label: copper(II) chloride dihydrate
   concentration:
     value: '0.0269'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86318
-    label: CuCl2 x 2 H2O
+    label: copper(II) chloride dihydrate
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
-    label: ZnCl2
+    label: zinc dichloride
   concentration:
     value: '0.0208'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:49976
-    label: ZnCl2
+    label: zinc dichloride
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
-    label: CoCl2 x 6 H2O
+    label: cobalt dichloride
   concentration:
     value: '0.0404'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:35696
-    label: CoCl2 x 6 H2O
+    label: cobalt dichloride
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
+    label: sodium molybdate dihydrate
   concentration:
     value: '0.0252'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
+    label: sodium molybdate dihydrate
 applications:
 - Microbial cultivation
 curation_history:
@@ -173,27 +173,27 @@ solutions:
       unit: G_PER_L
     mediaingredientmech_chebi_term:
       id: CHEBI:33118
-      label: H3BO3
+      label: boric acid
   - preferred_term: MnCl2 x 4 H2O
     term:
       id: CHEBI:86368
-      label: MnCl2 x 4 H2O
+      label: manganese(II) chloride tetrahydrate
     concentration:
       value: '1.8'
       unit: G_PER_L
     mediaingredientmech_chebi_term:
       id: CHEBI:86368
-      label: MnCl2 x 4 H2O
+      label: manganese(II) chloride tetrahydrate
   - preferred_term: FeSO4
     term:
       id: CHEBI:75832
-      label: FeSO4
+      label: iron(2+) sulfate (anhydrous)
     concentration:
       value: '1.36'
       unit: G_PER_L
     mediaingredientmech_chebi_term:
       id: CHEBI:75832
-      label: FeSO4
+      label: iron(2+) sulfate (anhydrous)
   concentration:
     value: '1'
     unit: ML_PER_L

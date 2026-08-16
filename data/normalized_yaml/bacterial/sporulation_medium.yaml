@@ -33,13 +33,13 @@ ingredients:
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
-    label: MnSO4 x H2O
+    label: manganese(II) sulfate monohydrate
   concentration:
     value: '0.0005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
-    label: MnSO4 x H2O
+    label: manganese(II) sulfate monohydrate
 - preferred_term: Marine Broth
   concentration:
     value: '0.5'
@@ -47,23 +47,23 @@ ingredients:
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
 - preferred_term: Inosin
   term:
     id: CHEBI:17596
-    label: Inosin
+    label: inosine
   concentration:
     value: '0.00134113'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17596
-    label: Inosin
+    label: inosine
 applications:
 - Microbial cultivation
 curation_history:

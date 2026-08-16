@@ -21,7 +21,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   notes: Copied from referenced JCM Medium 389
 - preferred_term: NH4Cl
   term:
@@ -32,7 +32,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   notes: Copied from referenced JCM Medium 389
 - preferred_term: Na2SO4
   term:
@@ -43,40 +43,40 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32149
-    label: Na2SO4
+    label: sodium sulfate
   notes: Copied from referenced JCM Medium 389
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
   notes: Copied from referenced JCM Medium 389
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
   notes: Copied from referenced JCM Medium 389
 - preferred_term: Sodium lactate
   term:
     id: CHEBI:75228
-    label: Sodium lactate
+    label: sodium lactate
   concentration:
     value: '2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75228
-    label: Sodium lactate
+    label: sodium lactate
   notes: Copied from referenced JCM Medium 389
 - preferred_term: Yeast extract
   concentration:
@@ -86,35 +86,35 @@ ingredients:
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: iron(2+) sulfate heptahydrate
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: iron(2+) sulfate heptahydrate
   notes: Copied from referenced JCM Medium 389
 - preferred_term: Sodium thioglycolate
   term:
     id: CHEBI:86481
-    label: Sodium thioglycolate
+    label: sodium thioglycolate
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86481
-    label: Sodium thioglycolate
+    label: sodium thioglycolate
   notes: Copied from referenced JCM Medium 389
 - preferred_term: Ascorbic acid
   term:
     id: CHEBI:22652
-    label: Ascorbic acid
+    label: ascorbic acid
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:22652
-    label: Ascorbic acid
+    label: ascorbic acid
   notes: Copied from referenced JCM Medium 389
 - preferred_term: Resazurin
   term:

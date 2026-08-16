@@ -16,73 +16,73 @@ ingredients:
 - preferred_term: L-Aspartic acid
   term:
     id: CHEBI:17053
-    label: L-Aspartic acid
+    label: L-aspartic acid
   concentration:
     value: '0.4485'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17053
-    label: L-Aspartic acid
+    label: L-aspartic acid
 - preferred_term: L-Glutamine
   term:
     id: CHEBI:18050
-    label: L-Glutamine
+    label: L-glutamine
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:18050
-    label: L-Glutamine
+    label: L-glutamine
 - preferred_term: L-Proline
   term:
     id: CHEBI:17203
-    label: L-Proline
+    label: L-proline
   concentration:
     value: '0.45'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17203
-    label: L-Proline
+    label: L-proline
 - preferred_term: L-Glutamic acid
   term:
     id: CHEBI:16015
-    label: L-Glutamic acid
+    label: L-glutamic acid
   concentration:
     value: '0.25'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16015
-    label: L-Glutamic acid
+    label: L-glutamic acid
 - preferred_term: alpha-ketoglutaric acid
   term:
     id: CHEBI:30915
-    label: alpha-ketoglutaric acid
+    label: 2-oxoglutaric acid
   concentration:
     value: '0.4485'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30915
-    label: alpha-ketoglutaric acid
+    label: 2-oxoglutaric acid
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
-    label: D-Glucose
+    label: D-glucose
   concentration:
     value: '18.018'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17634
-    label: D-Glucose
+    label: D-glucose
 - preferred_term: NaOH
   term:
     id: CHEBI:32145
-    label: NaOH
+    label: sodium hydroxide
   concentration:
     value: '0.199985'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32145
-    label: NaOH
+    label: sodium hydroxide
 - preferred_term: Fetal bovine serum
   concentration:
     value: '100'
@@ -108,13 +108,13 @@ ingredients:
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
-    label: NaHCO3
+    label: sodium hydrogencarbonate
   concentration:
     value: '2.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: NaHCO3
+    label: sodium hydrogencarbonate
 preparation_steps:
 - step_number: 1
   action: MIX

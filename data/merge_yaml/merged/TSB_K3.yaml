@@ -52,7 +52,7 @@ ingredients:
   notes: 'CAS: 58-27-5; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:28869
-    label: ''
+    label: menadione
 description: Tryptic Soy Broth
 notes: 'Source: FEBA media definitions'
 category: bacterial

@@ -10,7 +10,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: UBERON:0000955
-    label: Calf brains
+    label: brain
   notes: 'Mapping: curated_dict (confidence: 0.98)'
 - preferred_term: Beef heart
   concentration:
@@ -18,7 +18,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: UBERON:0000948
-    label: Beef heart
+    label: heart
   notes: 'Mapping: curated_dict (confidence: 0.98)'
 - preferred_term: Proteose Peptone
   concentration:

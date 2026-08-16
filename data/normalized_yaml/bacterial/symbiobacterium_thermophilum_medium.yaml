@@ -19,17 +19,17 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
   concentration:
     value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
 - preferred_term: NaNO3
   term:
     id: CHEBI:63005
-    label: NaNO3
+    label: sodium nitrate
   concentration:
     value: '1.7'
     unit: G_PER_L
@@ -50,10 +50,10 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:184335
-    label: ''
+    label: Ammonium bicarbonate
   mediaingredientmech_chebi_term:
     id: CHEBI:184335
-    label: NH4HCO3
+    label: Ammonium bicarbonate
 applications:
 - Microbial cultivation
 curation_history:

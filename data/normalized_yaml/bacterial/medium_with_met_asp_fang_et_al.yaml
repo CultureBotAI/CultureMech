@@ -14,113 +14,113 @@ ingredients:
 - preferred_term: L-Methionine
   term:
     id: CHEBI:16643
-    label: L-Methionine
+    label: L-methionine
   concentration:
     value: '2.68078'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:met-L'
   mediaingredientmech_chebi_term:
     id: CHEBI:16643
-    label: L-Methionine
+    label: L-methionine
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
-    label: Glycerol
+    label: glycerol
   concentration:
     value: '27.147'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glyc'
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: Glycerol
+    label: glycerol
 - preferred_term: Starch
   term:
     id: CHEBI:28017
-    label: Starch
+    label: starch
   concentration:
     value: '154.32'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:28017
-    label: Starch
+    label: starch
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.0090106'
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: ''
+    label: calcium dichloride
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '34.443'
     unit: MILLIMOLAR
   term:
     id: CHEBI:131527
-    label: ''
+    label: dipotassium hydrogen phosphate
 - preferred_term: Sodium sulfate
   concentration:
     value: '1.408'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32149
-    label: Sodium sulfate
+    label: sodium sulfate
   term:
     id: CHEBI:32149
-    label: ''
+    label: sodium sulfate
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '14.6965'
     unit: MILLIMOLAR
   term:
     id: CHEBI:63036
-    label: ''
+    label: potassium dihydrogen phosphate
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: magnesium sulfate
   concentration:
     value: '0.16229'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
-    label: Manganese Sulfate
+    label: manganese(II) sulfate monohydrate
   concentration:
     value: '0.008965'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
-    label: Manganese Sulfate
+    label: manganese(II) sulfate monohydrate
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
-    label: Ammonium chloride
+    label: ammonium chloride
   concentration:
     value: '18.6947'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: Ammonium chloride
+    label: ammonium chloride
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.0071929'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75832
-    label: ''
+    label: iron(2+) sulfate (anhydrous)
 - preferred_term: Ammonium nitrate
   term:
     id: CHEBI:63038
-    label: Ammonium nitrate
+    label: ammonium nitrate
   concentration:
     value: '2.49837'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:63038
-    label: Ammonium nitrate
+    label: ammonium nitrate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

@@ -13,7 +13,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: dinitrogen
 - preferred_term: Distilled water
   concentration:
     value: '881.0'
@@ -22,10 +22,10 @@ ingredients:
     Defined component [Merged 3 duplicates: 500.0, 380.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: NaCl
   concentration:
     value: '70'
@@ -94,7 +94,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:75836
-    label: ''
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: MnSO4·xH2O
   concentration:
     value: '4.5'
@@ -112,7 +112,7 @@ ingredients:
     label: ammonium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63038
-    label: NH4NO3
+    label: ammonium nitrate
 - preferred_term: SiO2
   concentration:
     value: '7.5'

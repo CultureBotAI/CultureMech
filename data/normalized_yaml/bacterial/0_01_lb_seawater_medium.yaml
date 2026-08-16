@@ -30,7 +30,7 @@ ingredients:
 - preferred_term: NaNO3
   term:
     id: CHEBI:63005
-    label: NaNO3
+    label: sodium nitrate
   concentration:
     value: '0.12'
     unit: G_PER_L
@@ -46,47 +46,47 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
-    label: Vitamin B12
+    label: cyanocob(III)alamin
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17439
-    label: Vitamin B12
+    label: cyanocob(III)alamin
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
-    label: Biotin
+    label: biotin
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
-    label: Biotin
+    label: biotin
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
-    label: Thiamine HCl
+    label: thiamine hydrochloride
   concentration:
     value: '100'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:49105
-    label: Thiamine HCl
+    label: thiamine hydrochloride
 - preferred_term: Fe(III)-EDTA
   term:
     id: CHEBI:30729
-    label: Fe(III)-EDTA
+    label: ethylenediaminetetraacetatoferrate(1-)
   concentration:
     value: '259'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30729
-    label: Fe(III)-EDTA
+    label: ethylenediaminetetraacetatoferrate(1-)
 - preferred_term: Mn(II) x EDTA
   concentration:
     value: '332'
@@ -94,13 +94,13 @@ ingredients:
 - preferred_term: Tris(hydroxymethyl)aminomethane
   term:
     id: CHEBI:9754
-    label: Tris(hydroxymethyl)aminomethane
+    label: tris
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:9754
-    label: Tris(hydroxymethyl)aminomethane
+    label: tris
 - preferred_term: Tryptone
   term:
     id: MICRO:0000182

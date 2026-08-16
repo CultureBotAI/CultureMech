@@ -13,7 +13,7 @@ ingredients:
   notes: 'Properties: Gas'
   term:
     id: CHEBI:16526
-    label: ''
+    label: carbon dioxide
 - preferred_term: sheep blood agar
   notes: 'Properties: Undefined component, Complex component'
   concentration:

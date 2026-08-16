@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 1000.0, 1000.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '3.09'
@@ -65,7 +65,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: Na2S x 9 H2O
   concentration:
     value: '0.3'
@@ -133,7 +133,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: carbon dioxide
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -141,7 +141,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: ''
+    label: dihydrogen
 - preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '0.01'
@@ -174,10 +174,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: iron(2+) sulfate heptahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: NiCl2 x 6 H2O
   concentration:
     value: '0.03'
@@ -270,10 +270,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63939
-    label: sodium tungstate
+    label: sodium tungstate dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63939
-    label: sodium tungstate
+    label: sodium tungstate dihydrate
 - preferred_term: MnSO4 x H2O
   concentration:
     value: '0.5'
@@ -282,10 +282,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86364
-    label: MnSO4 x H2O
+    label: manganese(II) sulfate monohydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
-    label: MnSO4 x H2O
+    label: manganese(II) sulfate monohydrate
 media_term:
   preferred_term: TOGO Medium M2714
   term:

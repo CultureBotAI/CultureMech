@@ -32,7 +32,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
 - preferred_term: MgSO4
   term:
     id: CHEBI:32599
@@ -42,27 +42,27 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: MgSO4
+    label: magnesium sulfate
 - preferred_term: FeCl2
   term:
     id: CHEBI:30812
-    label: FeCl2
+    label: iron dichloride
   concentration:
     value: '0.01'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30812
-    label: FeCl2
+    label: iron dichloride
 - preferred_term: CaCO3
   term:
     id: CHEBI:3311
-    label: CaCO3
+    label: calcium carbonate
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:3311
-    label: CaCO3
+    label: calcium carbonate
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -72,7 +72,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: Na-glycerol phosphate
   concentration:
     value: '23.5'
@@ -80,13 +80,13 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
   concentration:
     value: '30'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 900.0, 100.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: Glycerol
   concentration:
     value: '5'
@@ -26,10 +26,10 @@ ingredients:
     component'
   term:
     id: CHEBI:17754
-    label: Glycerol
+    label: glycerol
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: Glycerol
+    label: glycerol
 - preferred_term: Bacto Middlebrook 7H10 agar (Difco 262710)
   concentration:
     value: '19'
@@ -124,10 +124,10 @@ ingredients:
     component'
   term:
     id: CHEBI:16196
-    label: Oleic acid
+    label: oleic acid
   mediaingredientmech_chebi_term:
     id: CHEBI:16196
-    label: Oleic acid
+    label: oleic acid
 - preferred_term: Catalase (beef)
   concentration:
     value: '4'

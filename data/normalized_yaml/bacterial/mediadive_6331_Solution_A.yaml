@@ -39,7 +39,7 @@ composition:
     label: Na2 alpha-ketoglutarate
   chebi_term:
     id: CHEBI:16810
-    label: Na2 alpha-ketoglutarate
+    label: 2-oxoglutarate(2-)
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -51,7 +51,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Dissolve ACES and bring to pH 6.9 by slowly adding 1 N KOH. Add

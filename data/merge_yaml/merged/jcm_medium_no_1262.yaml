@@ -16,7 +16,7 @@ ingredients:
 - preferred_term: NaNO3
   term:
     id: CHEBI:63005
-    label: NaNO3
+    label: sodium nitrate
   concentration:
     value: '0.425'
     unit: G_PER_L
@@ -26,23 +26,23 @@ ingredients:
 - preferred_term: NaNO2
   term:
     id: CHEBI:78870
-    label: NaNO2
+    label: sodium nitrite
   concentration:
     value: '0.345'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:78870
-    label: NaNO2
+    label: sodium nitrite
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -52,7 +52,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -62,44 +62,44 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
 - preferred_term: Disodium succinate x 6 H2O
   concentration:
     value: '0.54'
     unit: G_PER_L
   term:
     id: CHEBI:63686
-    label: ''
+    label: sodium succinate hexahydrate
 - preferred_term: Sodium acetate
   term:
     id: CHEBI:32954
-    label: Sodium acetate
+    label: sodium acetate
   concentration:
     value: '0.164'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32954
-    label: Sodium acetate
+    label: sodium acetate
 - preferred_term: Disodium oxalate
   term:
     id: CHEBI:132764
-    label: Disodium oxalate
+    label: sodium oxalate
   concentration:
     value: '0.268'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:132764
-    label: Disodium oxalate
+    label: sodium oxalate
 - preferred_term: Sodium pyruvate
   term:
     id: CHEBI:50144
-    label: Sodium pyruvate
+    label: sodium pyruvate
   concentration:
     value: '0.22'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:50144
-    label: Sodium pyruvate
+    label: sodium pyruvate
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

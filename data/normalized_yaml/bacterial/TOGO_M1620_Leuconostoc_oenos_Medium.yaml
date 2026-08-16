@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.2'
@@ -55,7 +55,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86364
-    label: ''
+    label: manganese(II) sulfate monohydrate
 - preferred_term: Diammonium hydrogencitrate
   concentration:
     value: '3.5'

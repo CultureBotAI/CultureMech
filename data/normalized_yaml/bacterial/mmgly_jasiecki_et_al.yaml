@@ -9,18 +9,18 @@ ingredients:
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
-    label: Glycerol
+    label: glycerol
   concentration:
     value: '21.7179'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glyc'
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: Glycerol
+    label: glycerol
 - preferred_term: Thiamine
   term:
     id: CHEBI:26948
-    label: Thiamine
+    label: vitamin B1
   concentration:
     value: '0.037684'
     unit: MILLIMOLAR
@@ -35,17 +35,17 @@ ingredients:
   notes: 'Cross-references: KEGG:male'
   term:
     id: CHEBI:18300
-    label: Maleic acid
+    label: maleic acid
   mediaingredientmech_chebi_term:
     id: CHEBI:18300
-    label: Maleic acid
+    label: maleic acid
 - preferred_term: Tromethamine
   concentration:
     value: '49.5295'
     unit: MILLIMOLAR
   term:
     id: CHEBI:9754
-    label: ''
+    label: tris
 - preferred_term: Magnesium chloride
   concentration:
     value: '4.91859'
@@ -62,27 +62,27 @@ ingredients:
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32149
-    label: Sodium sulfate
+    label: sodium sulfate
   term:
     id: CHEBI:32149
-    label: ''
+    label: sodium sulfate
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '0.898939'
     unit: MILLIMOLAR
   term:
     id: CHEBI:34683
-    label: ''
+    label: disodium hydrogenphosphate
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
-    label: Sodium Chloride
+    label: sodium chloride
   concentration:
     value: '42.7789'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: Sodium Chloride
+    label: sodium chloride
 - preferred_term: Potassium chloride
   concentration:
     value: '26.8272'
@@ -96,13 +96,13 @@ ingredients:
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
-    label: Ammonium chloride
+    label: ammonium chloride
   concentration:
     value: '18.6947'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: Ammonium chloride
+    label: ammonium chloride
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

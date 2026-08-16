@@ -20,23 +20,23 @@ ingredients:
 - preferred_term: Sucrose
   term:
     id: CHEBI:17992
-    label: Sucrose
+    label: sucrose
   concentration:
     value: '50'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17992
-    label: Sucrose
+    label: sucrose
 - preferred_term: Tap water
   term:
     id: CHEBI:15377
-    label: Tap water
+    label: water
   concentration:
     value: '1000'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Tap water
+    label: water
 applications:
 - Microbial cultivation
 curation_history:

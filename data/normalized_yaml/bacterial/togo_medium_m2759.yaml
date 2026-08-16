@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: Yeast extract
   concentration:
     value: '0.025'
@@ -80,10 +80,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:38892
-    label: ''
+    label: disodium tetraborate
   mediaingredientmech_chebi_term:
     id: CHEBI:38892
-    label: Na2B4O7
+    label: disodium tetraborate
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -91,7 +91,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: carbon dioxide
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -99,7 +99,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: dinitrogen
 - preferred_term: H3BO3
   concentration:
     value: '0.01'
@@ -120,7 +120,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:34887
-    label: ''
+    label: nickel dichloride
 - preferred_term: ZnCl2
   concentration:
     value: '0.13'
@@ -129,7 +129,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:49976
-    label: ''
+    label: zinc dichloride
 - preferred_term: Nitrilotriacetic acid
   concentration:
     value: '1.5'

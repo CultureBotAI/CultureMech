@@ -13,7 +13,7 @@ composition:
     label: Na-propionate
   chebi_term:
     id: CHEBI:132106
-    label: Na-propionate
+    label: sodium propionate
     match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
@@ -24,7 +24,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Original volume: 10 mL'

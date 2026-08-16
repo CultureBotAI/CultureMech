@@ -58,10 +58,10 @@ ingredients:
   notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:86481
-    label: Sodium thioglycollate
+    label: sodium thioglycolate
   mediaingredientmech_chebi_term:
     id: CHEBI:86481
-    label: Sodium thioglycollate
+    label: sodium thioglycolate
 - preferred_term: Heart Infusion Broth (BD 238400)
   concentration:
     value: '1.25'
@@ -79,7 +79,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: carbon dioxide
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -87,7 +87,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: dinitrogen
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -95,7 +95,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: ''
+    label: dihydrogen
 - preferred_term: NaHCO3 (7.5% w/v in water)
   concentration:
     value: '2.67'

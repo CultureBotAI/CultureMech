@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 3 duplicates: 1000.0, 990.0, 1000.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.25'
@@ -79,10 +79,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:27226
-    label: Uric acid
+    label: uric acid
   mediaingredientmech_chebi_term:
     id: CHEBI:27226
-    label: Uric acid
+    label: uric acid
 - preferred_term: KOH
   concentration:
     value: '0.67'
@@ -113,7 +113,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: dinitrogen
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -121,7 +121,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: carbon dioxide
 - preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '36'
@@ -154,10 +154,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
-    label: MnCl2 x 4 H2O
+    label: manganese(II) chloride tetrahydrate
   term:
     id: CHEBI:86368
-    label: ''
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '190'
@@ -244,10 +244,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63939
-    label: sodium tungstate
+    label: sodium tungstate dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63939
-    label: sodium tungstate
+    label: sodium tungstate dihydrate
 - preferred_term: NaOH
   concentration:
     value: '0.5'

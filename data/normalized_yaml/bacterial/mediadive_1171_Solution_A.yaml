@@ -13,7 +13,7 @@ composition:
     label: Glucose
   chebi_term:
     id: CHEBI:17234
-    label: D-glucose
+    label: glucose
     confidence: 0.9
     match_type: manual_curated
 - preferred_term: Sodium succinate
@@ -25,7 +25,7 @@ composition:
     label: Sodium succinate
   chebi_term:
     id: CHEBI:63675
-    label: sodium succinate
+    label: sodium succinate (anhydrous)
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Glycerol
@@ -37,7 +37,7 @@ composition:
     label: Glycerol
   chebi_term:
     id: CHEBI:17754
-    label: Glycerol
+    label: glycerol
     match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
@@ -48,7 +48,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Sterilize by filtration.

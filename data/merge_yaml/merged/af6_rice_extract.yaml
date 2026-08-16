@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 1.0, 100.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '30'
@@ -53,7 +53,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: K2HPO4
   concentration:
     value: '5'
@@ -107,10 +107,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63005
-    label: ''
+    label: sodium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63005
-    label: NaNO3
+    label: sodium nitrate
 - preferred_term: CaCO3
   concentration:
     value: '10'
@@ -134,7 +134,7 @@ ingredients:
     label: ammonium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63038
-    label: NH4NO3
+    label: ammonium nitrate
 - preferred_term: Fe-citrate
   concentration:
     value: '2'
@@ -164,7 +164,7 @@ ingredients:
   notes: 'Role: Vitamin'
   term:
     id: CHEBI:16709
-    label: ''
+    label: pyridoxine
 - preferred_term: Citric acid
   concentration:
     value: '2'
@@ -201,7 +201,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86368
-    label: ''
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: CoCl2·6H2O
   concentration:
     value: '0.4'
@@ -210,7 +210,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:35696
-    label: ''
+    label: cobalt dichloride
 - preferred_term: ZnSO4·7H2O
   concentration:
     value: '2.2'

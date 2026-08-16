@@ -34,7 +34,7 @@ composition:
     label: Glucose
   chebi_term:
     id: CHEBI:17234
-    label: D-glucose
+    label: glucose
     confidence: 0.9
     match_type: manual_curated
 - preferred_term: NaCl
@@ -46,7 +46,7 @@ composition:
     label: NaCl
   chebi_term:
     id: CHEBI:26710
-    label: 1% sodium chloride
+    label: sodium chloride
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Na pyruvate
@@ -58,7 +58,7 @@ composition:
     label: Na pyruvate
   chebi_term:
     id: CHEBI:50144
-    label: Na pyruvate
+    label: sodium pyruvate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: MgSO4 x 7 H2O
@@ -94,7 +94,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Final pH 7.2.

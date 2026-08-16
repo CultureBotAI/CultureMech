@@ -34,7 +34,7 @@ composition:
     label: Tween 40
   chebi_term:
     id: CHEBI:53423
-    label: tween 40
+    label: polysorbate 40
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Glycerol
@@ -46,7 +46,7 @@ composition:
     label: Glycerol
   chebi_term:
     id: CHEBI:17754
-    label: Glycerol
+    label: glycerol
     match_type: corpus_consensus
 - preferred_term: Olive oil
   concentration:
@@ -75,7 +75,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -87,7 +87,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Original volume: 500 mL'

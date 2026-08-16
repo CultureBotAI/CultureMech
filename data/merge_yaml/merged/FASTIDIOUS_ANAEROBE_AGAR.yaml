@@ -19,13 +19,13 @@ ingredients:
 - preferred_term: Fastidious Anaerobe Agar
   term:
     id: CHEBI:2509
-    label: Fastidious Anaerobe Agar
+    label: agar
   concentration:
     value: '45.7'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Fastidious Anaerobe Agar
+    label: agar
 - preferred_term: Horse blood
   concentration:
     value: '100'

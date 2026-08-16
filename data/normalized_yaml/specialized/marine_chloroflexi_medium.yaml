@@ -29,7 +29,7 @@ ingredients:
 - preferred_term: MgCl2·6H2O
   term:
     id: CHEBI:86345
-    label: MgCl2·6H2O
+    label: magnesium dichloride hexahydrate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -43,7 +43,7 @@ ingredients:
 - preferred_term: CaCl2·2H2O
   term:
     id: CHEBI:86158
-    label: CaCl2·2H2O
+    label: calcium chloride dihydrate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -71,7 +71,7 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -85,7 +85,7 @@ ingredients:
 - preferred_term: Yeast extract
   term:
     id: FOODON:03315426
-    label: Yeast extract
+    label: yeast extract
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -140,7 +140,7 @@ ingredients:
   source: JCM Medium 1188
   term:
     id: CHEBI:50144
-    label: ''
+    label: sodium pyruvate
 - preferred_term: 8% NaHCO3solution*
   notes: Ontology mapping not yet available; From JCM Medium 1188; Curated from JCM
     Medium 1188 specification

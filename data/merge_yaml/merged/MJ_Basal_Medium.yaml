@@ -37,7 +37,7 @@ ingredients:
   notes: 'Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:32150
-    label: ''
+    label: sodium thiosulfate pentahydrate
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -45,7 +45,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: carbon dioxide
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -53,7 +53,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: dinitrogen
 - preferred_term: Oxygen gas
   notes: 'Properties: ガス'
   concentration:

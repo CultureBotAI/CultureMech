@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 5 duplicates: 1.0, 1.0, 1.0, 100.0, 500.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: (NH4)2SO4
   concentration:
     value: '0.5'
@@ -115,7 +115,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: calcium chloride dihydrate
 - preferred_term: FeSO4・H2O
   concentration:
     value: '1.11'
@@ -124,7 +124,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75834
-    label: ''
+    label: iron(2+) sulfate monohydrate
 - preferred_term: EDTA・3Na
   concentration:
     value: '224.72'
@@ -133,7 +133,7 @@ ingredients:
     3 duplicates: 4.12, 200.0, 20.6]'
   term:
     id: CHEBI:63125
-    label: ''
+    label: EDTA trisodium salt
 - preferred_term: KH2PO4
   concentration:
     value: '75'
@@ -145,7 +145,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: K2HPO4
   concentration:
     value: '78'
@@ -176,10 +176,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:30753
-    label: p--Aminobenzoic acid
+    label: 4-aminobenzoic acid
   term:
     id: CHEBI:30753
-    label: ''
+    label: 4-aminobenzoic acid
 - preferred_term: Thiamine・HCl
   concentration:
     value: '100'
@@ -187,7 +187,7 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:49105
-    label: ''
+    label: thiamine hydrochloride
 - preferred_term: Calcium pantothenate
   concentration:
     value: '50'
@@ -206,7 +206,7 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:30961
-    label: Pyridoxine・HCl
+    label: pyridoxine hydrochloride
 - preferred_term: Folic acid
   concentration:
     value: '50'
@@ -269,7 +269,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:32312
-    label: ''
+    label: zinc sulfate heptahydrate
 - preferred_term: CuSO4・5H2O
   concentration:
     value: '1.26'
@@ -278,7 +278,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:31440
-    label: ''
+    label: copper(II) sulfate pentahydrate
 - preferred_term: MnSO4・xH2O
   concentration:
     value: '5.58'
@@ -287,7 +287,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86360
-    label: ''
+    label: manganese(II) sulfate
 - preferred_term: Co(NO3)2・6H2O
   concentration:
     value: '1.46'
@@ -296,7 +296,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86214
-    label: ''
+    label: cobalt dinitrate hexahydrate
 media_term:
   preferred_term: TOGO Medium M298
   term:

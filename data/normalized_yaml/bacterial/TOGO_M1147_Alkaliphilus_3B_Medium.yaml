@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: NaCl
   concentration:
     value: '1'
@@ -41,7 +41,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: NH4Cl
   concentration:
     value: '1'
@@ -86,7 +86,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86345
-    label: ''
+    label: magnesium dichloride hexahydrate
 - preferred_term: KCl
   concentration:
     value: '0.1'
@@ -117,7 +117,7 @@ ingredients:
   notes: 'Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:32150
-    label: ''
+    label: sodium thiosulfate pentahydrate
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
@@ -136,7 +136,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: carbon dioxide
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
@@ -144,7 +144,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: dinitrogen
 - preferred_term: 0.5 M Crotonic acid (pH 7.0)
   concentration:
     value: '20'

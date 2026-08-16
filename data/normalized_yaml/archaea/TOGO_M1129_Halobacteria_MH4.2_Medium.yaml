@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.5'
@@ -71,7 +71,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86368
-    label: ''
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: Sodium pyruvate
   concentration:
     value: '1'
@@ -104,7 +104,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:86249
-    label: ''
+    label: iron dichloride tetrahydrate
 - preferred_term: Trisodium citrate・2H2O
   concentration:
     value: '1'
@@ -112,10 +112,10 @@ ingredients:
   notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
   mediaingredientmech_chebi_term:
     id: CHEBI:53258
-    label: Trisodium citrate・2H2O
+    label: sodium citrate
   term:
     id: CHEBI:53258
-    label: ''
+    label: sodium citrate
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '2'

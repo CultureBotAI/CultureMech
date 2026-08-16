@@ -67,7 +67,7 @@ ingredients:
 - preferred_term: Na EDTA
   term:
     id: CHEBI:64734
-    label: Na EDTA
+    label: EDTA disodium salt (anhydrous)
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -81,7 +81,7 @@ ingredients:
 - preferred_term: FeCl3 x 6 H2O
   term:
     id: CHEBI:86254
-    label: FeCl3 x 6 H2O
+    label: iron trichloride hexahydrate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 0.95
@@ -95,7 +95,7 @@ ingredients:
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
-    label: CuSO4 x 5 H2O
+    label: copper(II) sulfate pentahydrate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -109,7 +109,7 @@ ingredients:
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
+    label: zinc sulfate heptahydrate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -123,7 +123,7 @@ ingredients:
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
-    label: CoCl2 x 6 H2O
+    label: cobalt dichloride
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -137,7 +137,7 @@ ingredients:
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
-    label: MnCl2 x 4 H2O
+    label: manganese(II) chloride tetrahydrate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -151,7 +151,7 @@ ingredients:
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
+    label: sodium molybdate dihydrate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -165,7 +165,7 @@ ingredients:
 - preferred_term: Cyanocobalamin (Vitamin B )
   term:
     id: CHEBI:17439
-    label: Cyanocobalamin (vitamin B )
+    label: cyanocob(III)alamin
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -179,7 +179,7 @@ ingredients:
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
-    label: Biotin
+    label: biotin
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -193,7 +193,7 @@ ingredients:
 - preferred_term: Thiamine HCl (Vitamin B )
   term:
     id: CHEBI:49105
-    label: Thiamine HCl (vitamin B )
+    label: thiamine hydrochloride
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -207,7 +207,7 @@ ingredients:
 - preferred_term: Thiamine HCl (B ) -
   term:
     id: CHEBI:49105
-    label: Thiamine HCl (B ) -
+    label: thiamine hydrochloride
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -221,7 +221,7 @@ ingredients:
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
-    label: Biotin
+    label: biotin
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -235,7 +235,7 @@ ingredients:
 - preferred_term: Cyanocobalamin (B )
   term:
     id: CHEBI:17439
-    label: Cyanocobalamin (B )
+    label: cyanocob(III)alamin
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0

@@ -13,7 +13,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: HEPES
@@ -73,7 +73,7 @@ composition:
     label: Arabinose
   chebi_term:
     id: CHEBI:22599
-    label: Arabinose
+    label: arabinose
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Yeast extract
@@ -92,7 +92,7 @@ composition:
     label: Gluconic acid
   chebi_term:
     id: CHEBI:24266
-    label: Gluconic acid
+    label: gluconic acid
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: MES
@@ -116,7 +116,7 @@ composition:
     label: FeCl3
   chebi_term:
     id: CHEBI:30808
-    label: FeCl3
+    label: iron trichloride
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: CaCl2
@@ -164,7 +164,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Adjust pH to pH 7.2

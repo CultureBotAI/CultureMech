@@ -25,7 +25,7 @@ composition:
     label: ZnSO4 x 7 H2O
   chebi_term:
     id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
+    label: zinc sulfate heptahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: MnCl2 x 4 H2O
@@ -37,7 +37,7 @@ composition:
     label: MnCl2 x 4 H2O
   chebi_term:
     id: CHEBI:86368
-    label: MnCl2 x 4 H2O
+    label: manganese(II) chloride tetrahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na2SeO4
@@ -73,7 +73,7 @@ composition:
     label: Na2WO4 x 2 H2O
   chebi_term:
     id: CHEBI:63939
-    label: Na2WO4 x 2 H2O
+    label: sodium tungstate dihydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: CuCl2 x 2 H2O
@@ -85,7 +85,7 @@ composition:
     label: CuCl2 x 2 H2O
   chebi_term:
     id: CHEBI:86318
-    label: CuCl2 x 2 H2O
+    label: copper(II) chloride dihydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: CoCl2 x 6 H2O
@@ -97,7 +97,7 @@ composition:
     label: CoCl2 x 6 H2O
   chebi_term:
     id: CHEBI:35696
-    label: CoCl2 x 6 H2O
+    label: cobalt dichloride
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: (NH4)2Ni(SO4)2 x 6 H2O
@@ -109,7 +109,7 @@ composition:
     label: (NH4)2Ni(SO4)2 x 6 H2O
   chebi_term:
     id: CHEBI:86149
-    label: (NH4)2Ni(SO4)2 x 6 H2O
+    label: ammonium nickel sulfate hexahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na2MoO4 x 2 H2O
@@ -145,7 +145,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 curation_history:

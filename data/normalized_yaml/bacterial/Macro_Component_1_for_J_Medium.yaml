@@ -19,20 +19,20 @@ composition:
     unit: G_PER_L
   term:
     id: CHEBI:34683
-    label: disodium hydrogen phosphate
+    label: disodium hydrogenphosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:34683
-    label: disodium hydrogen phosphate
+    label: disodium hydrogenphosphate
 - preferred_term: Dipotassium phosphate
   concentration:
     value: '3.8'
     unit: G_PER_L
   term:
     id: CHEBI:63036
-    label: dipotassium hydrogen phosphate
+    label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: dipotassium hydrogen phosphate
+    label: potassium dihydrogen phosphate
 - preferred_term: Tricine
   concentration:
     value: '25.0'

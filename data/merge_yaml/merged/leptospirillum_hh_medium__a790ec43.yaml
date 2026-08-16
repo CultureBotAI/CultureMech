@@ -14,10 +14,10 @@ ingredients:
     Defined component [Merged 2 duplicates: 950.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '147'
@@ -41,7 +41,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: MgCl2·6H2O
   concentration:
     value: '53'
@@ -86,7 +86,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:75836
-    label: ''
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: H3BO3
   concentration:
     value: '31'
@@ -107,7 +107,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:35696
-    label: ''
+    label: cobalt dichloride
 - preferred_term: CuCl2·2H2O
   concentration:
     value: '67'
@@ -140,7 +140,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:131395
-    label: ''
+    label: manganese(II) chloride dihydrate
 - preferred_term: Na2MoO4
   concentration:
     value: '10'

@@ -22,7 +22,7 @@ ingredients:
     label: dipotassium hydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4 x 3 H2O
+    label: dipotassium hydrogen phosphate
 - preferred_term: KH2PO4
   concentration:
     value: '0.7'
@@ -32,7 +32,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: EDTA•2Na
   concentration:
     value: '0.04'
@@ -43,7 +43,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.25'
@@ -63,7 +63,7 @@ ingredients:
     label: calcium chloride dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
 - preferred_term: NaCl
   concentration:
     value: '0.2'
@@ -73,7 +73,7 @@ ingredients:
     label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
 - preferred_term: Trace element solution (see below)
   concentration:
     value: '10.0'
@@ -97,7 +97,7 @@ ingredients:
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: 8% NaHCO3 solution*
   concentration:
     value: '25.0'
@@ -131,7 +131,7 @@ ingredients:
     label: nitrilotriacetic acid
   mediaingredientmech_chebi_term:
     id: CHEBI:44557
-    label: Nitrilotriacetic acid disodium salt
+    label: nitrilotriacetic acid
 - preferred_term: FeCl2·4H2O
   concentration:
     value: '1.0'
@@ -141,7 +141,7 @@ ingredients:
     label: iron dichloride tetrahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86249
-    label: FeCl2 x 4 H2O
+    label: iron dichloride tetrahydrate
 - preferred_term: MnCl2·4H2O
   concentration:
     value: '0.1'
@@ -152,7 +152,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:35696
-    label: CoCl2 x 2 H2O
+    label: cobalt dichloride
 - preferred_term: ZnCl2
   concentration:
     value: '0.1'
@@ -162,7 +162,7 @@ ingredients:
     label: zinc dichloride
   mediaingredientmech_chebi_term:
     id: CHEBI:49976
-    label: ZnCl2
+    label: zinc dichloride
 - preferred_term: CuCl2·2H2O
   concentration:
     value: '0.02'
@@ -172,7 +172,7 @@ ingredients:
     label: copper(II) chloride dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86318
-    label: CuCl2 x 2 H2O
+    label: copper(II) chloride dihydrate
 - preferred_term: H3BO3
   concentration:
     value: '0.01'
@@ -182,7 +182,7 @@ ingredients:
     label: boric acid
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
 - preferred_term: Na2MoO4·2H2O
   concentration:
     value: '0.03'
@@ -202,7 +202,7 @@ ingredients:
     label: nickel dichloride
   mediaingredientmech_chebi_term:
     id: CHEBI:34887
-    label: NiCl2 x 6 H2O
+    label: nickel dichloride
 - preferred_term: NaCl
   concentration:
     value: '1.0'
@@ -212,7 +212,7 @@ ingredients:
     label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
 - preferred_term: Na2SeO3
   concentration:
     value: '0.02'
@@ -222,7 +222,7 @@ ingredients:
     label: disodium selenite
   mediaingredientmech_chebi_term:
     id: CHEBI:48843
-    label: Na2SeO3·5H2O
+    label: disodium selenite
 - preferred_term: Na2WO4·2H2O
   concentration:
     value: '0.04'
@@ -232,7 +232,7 @@ ingredients:
     label: sodium tungstate dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63939
-    label: Na2WO4 x 2 H2O
+    label: sodium tungstate dihydrate
 - preferred_term: Distilled water
   concentration:
     value: '1.0'
@@ -242,7 +242,7 @@ ingredients:
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 preparation_steps:
 - step_number: 1
   action: MIX

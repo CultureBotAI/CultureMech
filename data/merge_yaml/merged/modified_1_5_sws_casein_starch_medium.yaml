@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '1.6'
@@ -115,10 +115,10 @@ ingredients:
     component'
   mediaingredientmech_chebi_term:
     id: CHEBI:144421
-    label: Ferric citrate
+    label: iron(III) citrate
   term:
     id: CHEBI:144421
-    label: ''
+    label: iron(III) citrate
 - preferred_term: HEPES
   concentration:
     value: '2'
@@ -184,7 +184,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86368
-    label: ''
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: ZnCl2
   concentration:
     value: '20'

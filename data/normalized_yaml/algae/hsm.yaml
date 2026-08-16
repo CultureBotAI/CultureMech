@@ -63,7 +63,7 @@ ingredients:
 - preferred_term: KH PO
   term:
     id: CHEBI:63036
-    label: KH PO
+    label: potassium dihydrogen phosphate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -77,7 +77,7 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -97,7 +97,7 @@ ingredients:
   source: CCAP Medium MR_HSM.pdf
   term:
     id: CHEBI:28017
-    label: ''
+    label: starch
 - preferred_term: Sterile
   notes: Ontology mapping not yet available; From CCAP Medium MR_HSM.pdf; Curated
     from CCAP Medium MR_HSM.pdf specification

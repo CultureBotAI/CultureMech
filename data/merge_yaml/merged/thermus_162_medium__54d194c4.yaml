@@ -19,10 +19,10 @@ ingredients:
     Simple component [Merged 3 duplicates: 900.0, 1000.0, 1000.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -163,10 +163,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86364
-    label: MnSO4 x H2O
+    label: manganese(II) sulfate monohydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
-    label: MnSO4 x H2O
+    label: manganese(II) sulfate monohydrate
 - preferred_term: H2SO4
   concentration:
     value: '0.5'
@@ -190,7 +190,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: Na2HPO4 x 12 H2O
   concentration:
     value: '43'

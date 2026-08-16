@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 3 duplicates: 1.0, 250.0, 900.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: MgSO4 . 7H2O
   concentration:
     value: '0.2'
@@ -35,7 +35,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: calcium chloride dihydrate
 - preferred_term: KH2PO4
   concentration:
     value: '0.6'
@@ -47,7 +47,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: NH4Cl
   concentration:
     value: '1'
@@ -113,7 +113,7 @@ ingredients:
   notes: 'Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:32150
-    label: ''
+    label: sodium thiosulfate pentahydrate
 - preferred_term: Soytone (BD 243620)
   concentration:
     value: '4'
@@ -160,7 +160,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86368
-    label: ''
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: CoCl2 . 6H2O
   concentration:
     value: '20'
@@ -169,7 +169,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:35696
-    label: ''
+    label: cobalt dichloride
 - preferred_term: NiCl2 . 6H2O
   concentration:
     value: '50'
@@ -178,7 +178,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:34887
-    label: ''
+    label: nickel dichloride
 - preferred_term: CuCl2 . 2H2O
   concentration:
     value: '10'
@@ -187,7 +187,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86318
-    label: ''
+    label: copper(II) chloride dihydrate
 - preferred_term: ZnCl2
   concentration:
     value: '50'
@@ -226,7 +226,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86249
-    label: ''
+    label: iron dichloride tetrahydrate
 - preferred_term: Concentrated HCl
   concentration:
     value: '3'

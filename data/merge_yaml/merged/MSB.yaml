@@ -62,7 +62,7 @@ ingredients:
   notes: 'CAS: 12027-67-7; MW: 1235.86'
   term:
     id: CHEBI:91249
-    label: ''
+    label: ammonium molybdate
 - preferred_term: Iron (II) sulfate heptahydrate
   concentration:
     value: '1.98E-03'
@@ -70,7 +70,7 @@ ingredients:
   notes: 'CAS: 7782-63-0; MW: 278.01; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:75836
-    label: ''
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: EDTA
   concentration:
     value: '2.50E-03'
@@ -86,7 +86,7 @@ ingredients:
   notes: 'CAS: 7446-20-0; MW: 287.56; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:32312
-    label: ''
+    label: zinc sulfate heptahydrate
 - preferred_term: Manganese (II) sulfate monohydrate
   concentration:
     value: '1.54E-03'
@@ -102,7 +102,7 @@ ingredients:
   notes: 'CAS: 7758-99-8; MW: 249.69; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:31440
-    label: ''
+    label: copper(II) sulfate pentahydrate
 - preferred_term: Cobalt(II) nitrate hexahydrate
   concentration:
     value: '2.50E-04'
@@ -110,7 +110,7 @@ ingredients:
   notes: 'CAS: 10026-22-9; MW: 291.03; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:86214
-    label: ''
+    label: cobalt dinitrate hexahydrate
 - preferred_term: sodium tetraborate decahydrate
   concentration:
     value: '1.77E-04'
@@ -118,7 +118,7 @@ ingredients:
   notes: 'CAS: 1303-96-4'
   term:
     id: CHEBI:86222
-    label: ''
+    label: borax
 description: A defined Ralstonia growth medium from Tiffany Lowe-Power lab (note,
   no carbon is added)
 notes: 'Source: FEBA media definitions'

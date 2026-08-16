@@ -32,7 +32,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Glycerol
@@ -44,7 +44,7 @@ composition:
     label: Glycerol
   chebi_term:
     id: CHEBI:17754
-    label: Glycerol
+    label: glycerol
     match_type: corpus_consensus
 - preferred_term: FeSO4
   concentration:
@@ -55,7 +55,7 @@ composition:
     label: FeSO4
   chebi_term:
     id: CHEBI:75832
-    label: ferrous sulfate
+    label: iron(2+) sulfate (anhydrous)
     confidence: 1.0
     match_type: exact_match
 - preferred_term: ZnSO4

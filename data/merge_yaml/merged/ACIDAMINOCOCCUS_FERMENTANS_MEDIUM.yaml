@@ -31,53 +31,53 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: Glucose
+    label: glucose
   concentration:
     value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: Glucose
+    label: glucose
 - preferred_term: Na glutamate
   term:
     id: CHEBI:64220
-    label: Na glutamate
+    label: monosodium glutamate
   concentration:
     value: '4'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:64220
-    label: Na glutamate
+    label: monosodium glutamate
 - preferred_term: Arginine
   term:
     id: CHEBI:29016
-    label: Arginine
+    label: arginine
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:29016
-    label: Arginine
+    label: arginine
 - preferred_term: Glycine
   term:
     id: CHEBI:15428
-    label: Glycine
+    label: glycine
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15428
-    label: Glycine
+    label: glycine
 - preferred_term: DL-Tryptophan
   term:
     id: CHEBI:27897
-    label: DL-Tryptophan
+    label: tryptophan
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:27897
-    label: DL-Tryptophan
+    label: tryptophan
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -87,27 +87,27 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: Tween 80
   term:
     id: CHEBI:53426
-    label: Tween 80
+    label: polysorbate 80
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:53426
-    label: Tween 80
+    label: polysorbate 80
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    label: L-cysteine hydrochloride hydrate
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    label: L-cysteine hydrochloride hydrate
 applications:
 - Microbial cultivation
 curation_history:

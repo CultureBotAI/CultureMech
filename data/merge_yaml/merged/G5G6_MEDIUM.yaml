@@ -13,7 +13,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: carbon dioxide
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
@@ -21,7 +21,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: dinitrogen
 - preferred_term: Distilled water
   concentration:
     value: '980.0'
@@ -30,10 +30,10 @@ ingredients:
     Simple component [Merged 3 duplicates: 880.0, 50.0, 50.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: KH2PO4
   concentration:
     value: '0.65'
@@ -45,7 +45,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: Resazurin
   concentration:
     value: '0.5'
@@ -66,7 +66,7 @@ ingredients:
     component'
   term:
     id: CHEBI:34683
-    label: ''
+    label: disodium hydrogenphosphate
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.11'
@@ -75,7 +75,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: calcium chloride dihydrate
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '0.1'
@@ -84,7 +84,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86345
-    label: ''
+    label: magnesium dichloride hexahydrate
 - preferred_term: NaHCO3
   concentration:
     value: '3.73'
@@ -105,10 +105,10 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:184335
-    label: ''
+    label: Ammonium bicarbonate
   mediaingredientmech_chebi_term:
     id: CHEBI:184335
-    label: NH4HCO3
+    label: Ammonium bicarbonate
 - preferred_term: L--Cysteine・HCl・H2O
   concentration:
     value: '0.175'
@@ -116,7 +116,7 @@ ingredients:
   notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:91248
-    label: ''
+    label: L-cysteine hydrochloride hydrate
 - preferred_term: 5.0 mM Toluene (water--saturated)
   concentration:
     value: '40'
@@ -130,7 +130,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:30115
-    label: ''
+    label: aluminium trichloride hexahydrate
 media_term:
   preferred_term: TOGO Medium M607
   term:

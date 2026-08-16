@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 3 duplicates: 1.0, 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: MgSO4 . 7H2O
   concentration:
     value: '3.1'
@@ -43,7 +43,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: NH4Cl
   concentration:
     value: '1'
@@ -88,7 +88,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:76209
-    label: ''
+    label: sodium sulfide nonahydrate
 - preferred_term: NaHCO3
   concentration:
     value: '10'
@@ -125,7 +125,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: carbon dioxide
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -133,7 +133,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: dinitrogen
 - preferred_term: 5% Na2CO3
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
   concentration:
@@ -173,7 +173,7 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:31345
-    label: ''
+    label: Calcium pantothenate
 - preferred_term: Pyridoxine hydrochloride
   concentration:
     value: '10'
@@ -282,7 +282,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: ''
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: CoCl2 . 6H2O
   concentration:
     value: '0.1'
@@ -291,7 +291,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:35696
-    label: ''
+    label: cobalt dichloride
 - preferred_term: ZnSO4 . 7H2O
   concentration:
     value: '0.1'
@@ -300,7 +300,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:32312
-    label: ''
+    label: zinc sulfate heptahydrate
 - preferred_term: CuSO4 . 5H2O
   concentration:
     value: '0.01'
@@ -321,7 +321,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86465
-    label: ''
+    label: potassium aluminium sulfate dodecahydrate
 - preferred_term: Nitrilotriacetic acid
   concentration:
     value: '1.5'
@@ -354,7 +354,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86364
-    label: ''
+    label: manganese(II) sulfate monohydrate
 media_term:
   preferred_term: TOGO Medium M2749
   term:

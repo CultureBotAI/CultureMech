@@ -40,7 +40,7 @@ ingredients:
   notes: 'CAS: 7631-90-5; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:26709
-    label: ''
+    label: sodium hydrogensulfite
 - preferred_term: Hemin
   concentration:
     value: '0.005'
@@ -57,7 +57,7 @@ ingredients:
   notes: 'CAS: 58-27-5; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:28869
-    label: ''
+    label: menadione
 description: Brucella broth
 notes: 'Source: FEBA media definitions'
 category: specialized

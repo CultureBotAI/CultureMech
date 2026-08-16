@@ -15,13 +15,13 @@ ingredients:
 - preferred_term: Marine agar 2216
   term:
     id: CHEBI:2509
-    label: Marine agar 2216
+    label: agar
   concentration:
     value: '1000'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Marine agar 2216
+    label: agar
 preparation_steps:
 - step_number: 1
   action: MIX

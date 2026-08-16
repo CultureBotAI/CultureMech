@@ -24,10 +24,10 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: Cellobiose
   concentration:
     value: '0.25'
@@ -71,7 +71,7 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Undefined component'
   term:
     id: CHEBI:28017
-    label: ''
+    label: starch
 - preferred_term: Bacto agar (BD-Difco)
   concentration:
     value: '15'
@@ -94,7 +94,7 @@ ingredients:
   notes: 'Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:91248
-    label: ''
+    label: L-cysteine hydrochloride hydrate
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -102,7 +102,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: carbon dioxide
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -110,7 +110,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: dinitrogen
 media_term:
   preferred_term: TOGO Medium M357
   term:

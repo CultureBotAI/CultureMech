@@ -18,33 +18,33 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
   concentration:
     value: '0.496524'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
 - preferred_term: KCl
   term:
     id: CHEBI:32588
-    label: KCl
+    label: potassium chloride
   concentration:
     value: '0.19861'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: KCl
+    label: potassium chloride
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: magnesium dichloride hexahydrate
   concentration:
     value: '0.178749'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: magnesium dichloride hexahydrate
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -54,7 +54,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
 - preferred_term: HEPES
   term:
     id: CHEBI:46756
@@ -68,43 +68,43 @@ ingredients:
 - preferred_term: Na2HPO4 x 7 H2O
   term:
     id: CHEBI:34683
-    label: Na2HPO4 x 7 H2O
+    label: disodium hydrogenphosphate
   concentration:
     value: '0.0536246'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34683
-    label: Na2HPO4 x 7 H2O
+    label: disodium hydrogenphosphate
 - preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
   concentration:
     value: '0.00397219'
     unit: G_PER_L
   term:
     id: CHEBI:76181
-    label: ''
+    label: ferrous ammonium sulfate hexahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:76181
-    label: Fe(NH4)2(SO4)2 x 6 H2O
+    label: ferrous ammonium sulfate hexahydrate
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
   concentration:
     value: '0.0019861'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
-    label: MnCl2 x 4 H2O
+    label: manganese(II) chloride tetrahydrate
   concentration:
     value: '0.000993049'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
-    label: MnCl2 x 4 H2O
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: Yeast extract
   concentration:
     value: '4.96524'
@@ -119,27 +119,27 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:8806
-    label: ''
+    label: Resazurin
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    label: L-cysteine hydrochloride hydrate
   concentration:
     value: '0.993049'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    label: L-cysteine hydrochloride hydrate
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
-    label: D-Glucose
+    label: D-glucose
   concentration:
     value: '4.96524'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17634
-    label: D-Glucose
+    label: D-glucose
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

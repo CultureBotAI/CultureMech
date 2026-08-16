@@ -25,7 +25,7 @@ composition:
     label: Double distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Double distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'The solution was filter-sterilized and stored at room temperature.

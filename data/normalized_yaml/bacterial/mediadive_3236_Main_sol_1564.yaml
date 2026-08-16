@@ -36,7 +36,7 @@ composition:
     label: Cellobiose
   chebi_term:
     id: CHEBI:17057
-    label: Cellobiose
+    label: cellobiose
     confidence: 0.9
     match_type: corpus_consensus
 preparation_notes: "Autoclave at 121 °C for 20 min.\nBefore inoculation add from sterile\

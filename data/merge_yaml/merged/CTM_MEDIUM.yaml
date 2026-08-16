@@ -15,10 +15,10 @@ ingredients:
     400.0, 100.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: HEPES
   concentration:
     value: '2.4'
@@ -58,7 +58,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: calcium chloride dihydrate
 - preferred_term: Citric acid
   concentration:
     value: '0.3'
@@ -99,7 +99,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86368
-    label: ''
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: ZnSO4・7H2O
   concentration:
     value: '0.222'
@@ -108,7 +108,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:32312
-    label: ''
+    label: zinc sulfate heptahydrate
 - preferred_term: CuSO4・5H2O
   concentration:
     value: '0.079'
@@ -117,7 +117,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:31440
-    label: ''
+    label: copper(II) sulfate pentahydrate
 - preferred_term: Co(NO3)2・6H2O
   concentration:
     value: '0.049'
@@ -126,7 +126,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86214
-    label: ''
+    label: cobalt dinitrate hexahydrate
 - preferred_term: K2HPO4
   concentration:
     value: '15.3'
@@ -198,10 +198,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:17561
-    label: L-Cysteine
+    label: L-cysteine
   mediaingredientmech_chebi_term:
     id: CHEBI:17561
-    label: L--Cysteine
+    label: L-cysteine
 - preferred_term: Glycine
   concentration:
     value: '100'
@@ -222,10 +222,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:16015
-    label: L-Glutamic acid
+    label: L-glutamic acid
   mediaingredientmech_chebi_term:
     id: CHEBI:16015
-    label: L--Glutamic acid
+    label: L-glutamic acid
 - preferred_term: L--Alanine
   concentration:
     value: '100'
@@ -240,10 +240,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:16467
-    label: L-Arginine
+    label: L-arginine
   mediaingredientmech_chebi_term:
     id: CHEBI:16467
-    label: L--Arginine
+    label: L-arginine
 - preferred_term: L--Aspartic acid
   concentration:
     value: '100'
@@ -252,10 +252,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:17053
-    label: L-Aspartic acid
+    label: L-aspartic acid
   mediaingredientmech_chebi_term:
     id: CHEBI:17053
-    label: L--Aspartic acid
+    label: L-aspartic acid
 - preferred_term: L--Glutamine
   concentration:
     value: '100'
@@ -264,10 +264,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:18050
-    label: L-Glutamine
+    label: L-glutamine
   mediaingredientmech_chebi_term:
     id: CHEBI:18050
-    label: L--Glutamine
+    label: L-glutamine
 - preferred_term: L--Isoleucine
   concentration:
     value: '100'
@@ -276,10 +276,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:17191
-    label: L-Isoleucine
+    label: L-isoleucine
   mediaingredientmech_chebi_term:
     id: CHEBI:17191
-    label: L--Isoleucine
+    label: L-isoleucine
 - preferred_term: L--Leucine
   concentration:
     value: '100'
@@ -300,10 +300,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:17295
-    label: L-Phenylalanine
+    label: L-phenylalanine
   mediaingredientmech_chebi_term:
     id: CHEBI:17295
-    label: L--Phenylalanine
+    label: L-phenylalanine
 - preferred_term: L--Proline
   concentration:
     value: '100'
@@ -324,10 +324,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:16857
-    label: L-Threonine
+    label: L-threonine
   mediaingredientmech_chebi_term:
     id: CHEBI:16857
-    label: L--Threonine
+    label: L-threonine
 - preferred_term: L--Tryptophan
   concentration:
     value: '100'
@@ -336,10 +336,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:16828
-    label: L-Tryptophan
+    label: L-tryptophan
   mediaingredientmech_chebi_term:
     id: CHEBI:16828
-    label: L--Tryptophan
+    label: L-tryptophan
 - preferred_term: L--Tyrosine
   concentration:
     value: '100'
@@ -348,10 +348,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:17895
-    label: L-Tyrosine
+    label: L-tyrosine
   mediaingredientmech_chebi_term:
     id: CHEBI:17895
-    label: L--Tyrosine
+    label: L-tyrosine
 - preferred_term: L--Valine
   concentration:
     value: '100'
@@ -366,10 +366,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:17196
-    label: L-Asparagine
+    label: L-asparagine
   mediaingredientmech_chebi_term:
     id: CHEBI:17196
-    label: L--Asparagine
+    label: L-asparagine
 - preferred_term: L--Histidine
   concentration:
     value: '100'
@@ -378,10 +378,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15971
-    label: L-Histidine
+    label: L-histidine
   mediaingredientmech_chebi_term:
     id: CHEBI:15971
-    label: L--Histidine
+    label: L-histidine
 - preferred_term: L--Methionine
   concentration:
     value: '100'
@@ -389,10 +389,10 @@ ingredients:
   notes: 'Role: Nitrogen source'
   term:
     id: CHEBI:16643
-    label: L-Methionine
+    label: L-methionine
   mediaingredientmech_chebi_term:
     id: CHEBI:16643
-    label: L--Methionine
+    label: L-methionine
 - preferred_term: 10 mM Potassium phosphate buffer (pH 7.2)
   concentration:
     value: '100'
@@ -428,7 +428,7 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:49105
-    label: ''
+    label: thiamine hydrochloride
 - preferred_term: Calcium pantothenate
   concentration:
     value: '100'
@@ -447,7 +447,7 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:30961
-    label: Pyridoxine・HCl
+    label: pyridoxine hydrochloride
 - preferred_term: Folic acid
   concentration:
     value: '100'
@@ -529,10 +529,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:29073
-    label: L-Ascorbic acid
+    label: L-ascorbic acid
   mediaingredientmech_chebi_term:
     id: CHEBI:29073
-    label: L--Ascorbic acid
+    label: L-ascorbic acid
 - preferred_term: Vitamin B12
   concentration:
     value: '100'

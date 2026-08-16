@@ -26,7 +26,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63939
-    label: ''
+    label: sodium tungstate dihydrate
 - preferred_term: Sulfur (powder)
   concentration:
     value: '30'
@@ -63,7 +63,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: carbon dioxide
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
@@ -71,7 +71,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: dinitrogen
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -79,7 +79,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: ''
+    label: dihydrogen
 media_term:
   preferred_term: TOGO Medium M198
   term:

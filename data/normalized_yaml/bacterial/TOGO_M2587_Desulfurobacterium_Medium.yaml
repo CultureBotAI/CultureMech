@@ -20,10 +20,10 @@ ingredients:
     1000.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: KH2PO4
   concentration:
     value: '0.35'
@@ -35,7 +35,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: NH4Cl
   concentration:
     value: '1'
@@ -93,7 +93,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: carbon dioxide
 - preferred_term: Hydrogen gas
   notes: 'Properties: Gas'
   concentration:
@@ -101,7 +101,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: ''
+    label: dihydrogen
 - preferred_term: Valeric acid
   concentration:
     value: '5'
@@ -240,10 +240,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
-    label: MnCl2 x 4 H2O
+    label: manganese(II) chloride tetrahydrate
   term:
     id: CHEBI:86368
-    label: ''
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '190'
@@ -330,10 +330,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63939
-    label: sodium tungstate
+    label: sodium tungstate dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63939
-    label: sodium tungstate
+    label: sodium tungstate dihydrate
 - preferred_term: NaOH
   concentration:
     value: '0.5'
@@ -407,10 +407,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
+    label: thiamine hydrochloride dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
+    label: thiamine hydrochloride dihydrate
 - preferred_term: D(+)-Biotin
   concentration:
     value: '20'
@@ -441,10 +441,10 @@ ingredients:
   notes: 'Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:66870
-    label: Na2S2O4
+    label: sodium dithionite
   mediaingredientmech_chebi_term:
     id: CHEBI:66870
-    label: Na2S2O4
+    label: sodium dithionite
 media_term:
   preferred_term: TOGO Medium M2587
   term:

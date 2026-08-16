@@ -13,7 +13,7 @@ composition:
     label: NaCl
   chebi_term:
     id: CHEBI:26710
-    label: 1% sodium chloride
+    label: sodium chloride
     confidence: 1.0
     match_type: exact_match
 - preferred_term: NaBr
@@ -25,7 +25,7 @@ composition:
     label: NaBr
   chebi_term:
     id: CHEBI:63004
-    label: NaBr
+    label: sodium bromide
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: MgSO4 x 7 H2O
@@ -92,7 +92,7 @@ composition:
     label: Glucose
   chebi_term:
     id: CHEBI:17234
-    label: D-glucose
+    label: glucose
     confidence: 0.9
     match_type: manual_curated
 - preferred_term: KH2PO4
@@ -104,7 +104,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: CaCl2 x 2 H2O
@@ -116,7 +116,7 @@ composition:
     label: CaCl2 x 2 H2O
   chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: FeCl2 x 4 H2O
@@ -128,7 +128,7 @@ composition:
     label: FeCl2 x 4 H2O
   chebi_term:
     id: CHEBI:86249
-    label: FeCl2 x 4 H2O
+    label: iron dichloride tetrahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: MnCl2 x 4 H2O
@@ -140,7 +140,7 @@ composition:
     label: MnCl2 x 4 H2O
   chebi_term:
     id: CHEBI:86368
-    label: MnCl2 x 4 H2O
+    label: manganese(II) chloride tetrahydrate
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Add components except yeast extract to distilled water and bring

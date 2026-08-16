@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: NaCl
   concentration:
     value: '125'
@@ -38,7 +38,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: calcium chloride dihydrate
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '160'
@@ -47,7 +47,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86345
-    label: ''
+    label: magnesium dichloride hexahydrate
 - preferred_term: K2SO4
   concentration:
     value: '5'
@@ -67,7 +67,7 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Undefined component'
   term:
     id: CHEBI:28017
-    label: ''
+    label: starch
 - preferred_term: Agar
   concentration:
     value: '20'

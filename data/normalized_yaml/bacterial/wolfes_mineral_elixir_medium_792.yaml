@@ -23,10 +23,10 @@ ingredients:
     unit: VARIABLE
   mediaingredientmech_chebi_term:
     id: CHEBI:26836
-    label: H2SO4
+    label: sulfuric acid
   term:
     id: CHEBI:26836
-    label: ''
+    label: sulfuric acid
 applications:
 - Microbial cultivation
 curation_history:

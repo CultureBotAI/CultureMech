@@ -13,10 +13,10 @@ ingredients:
   notes: 'Role: Solvating media; Properties: Undefined component'
   term:
     id: CHEBI:15377
-    label: Tap water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Tap water
+    label: water
 - preferred_term: Glucose
   concentration:
     value: '20'

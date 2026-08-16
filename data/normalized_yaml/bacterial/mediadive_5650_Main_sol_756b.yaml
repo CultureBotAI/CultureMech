@@ -27,7 +27,7 @@ composition:
     label: Na-pyruvate
   chebi_term:
     id: CHEBI:50144
-    label: Na-pyruvate
+    label: sodium pyruvate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: NaNO2
@@ -51,7 +51,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Adjust the pH to 8.6 with NaOH or KOH.

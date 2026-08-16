@@ -17,13 +17,13 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: Glucose
+    label: glucose
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: Glucose
+    label: glucose
 - preferred_term: Polypeptone
   concentration:
     value: '2'
@@ -41,7 +41,7 @@ ingredients:
     label: ammonium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63038
-    label: NH4NO3
+    label: ammonium nitrate
 applications:
 - Microbial cultivation
 curation_history:

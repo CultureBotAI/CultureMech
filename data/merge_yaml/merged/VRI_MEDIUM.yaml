@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: Yeast extract
   concentration:
     value: '2'
@@ -46,7 +46,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: NH4Cl
   concentration:
     value: '1'
@@ -79,7 +79,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86345
-    label: ''
+    label: magnesium dichloride hexahydrate
 - preferred_term: Na2S・9H2O
   concentration:
     value: '0.5'
@@ -88,7 +88,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:76209
-    label: ''
+    label: sodium sulfide nonahydrate
 - preferred_term: KCl
   concentration:
     value: '1'
@@ -109,7 +109,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:76181
-    label: ''
+    label: ferrous ammonium sulfate hexahydrate
 - preferred_term: Trypticase peptone (BD-BBL)
   concentration:
     value: '2'
@@ -122,7 +122,7 @@ ingredients:
   notes: 'Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:91248
-    label: ''
+    label: L-cysteine hydrochloride hydrate
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -130,7 +130,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: carbon dioxide
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -138,7 +138,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: ''
+    label: dihydrogen
 - preferred_term: Na2MoO4・2H2O
   concentration:
     value: '0.1'
@@ -168,7 +168,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86368
-    label: ''
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: CoCl2・6H2O
   concentration:
     value: '0.1'
@@ -177,7 +177,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:35696
-    label: ''
+    label: cobalt dichloride
 - preferred_term: CuCl2・2H2O
   concentration:
     value: '0.2'
@@ -186,7 +186,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86318
-    label: ''
+    label: copper(II) chloride dihydrate
 - preferred_term: ZnCl2
   concentration:
     value: '0.1'
@@ -216,7 +216,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63939
-    label: ''
+    label: sodium tungstate dihydrate
 - preferred_term: NiSO4・6H2O
   concentration:
     value: '0.2'
@@ -225,7 +225,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:53001
-    label: ''
+    label: nickel sulfate
 - preferred_term: AlCl3・6H2O
   concentration:
     value: '0.4'
@@ -234,7 +234,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:30115
-    label: ''
+    label: aluminium trichloride hexahydrate
 - preferred_term: FeSO4・6H2O
   concentration:
     value: '0.1'
@@ -243,7 +243,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75832
-    label: ''
+    label: iron(2+) sulfate (anhydrous)
 - preferred_term: EDTA・2Na・2H2O
   concentration:
     value: '0.5'

@@ -39,7 +39,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Agar
@@ -52,7 +52,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Tween 80
@@ -64,7 +64,7 @@ composition:
     label: Tween 80
   chebi_term:
     id: CHEBI:53426
-    label: tween 80
+    label: polysorbate 80
     confidence: 1.0
     match_type: exact_match
 preparation_notes: For solid media add 15.0 g agar. Dissolve ingredients and adjust

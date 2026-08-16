@@ -13,7 +13,7 @@ composition:
     label: NaCl
   chebi_term:
     id: CHEBI:26710
-    label: 1% sodium chloride
+    label: sodium chloride
     confidence: 1.0
     match_type: exact_match
 - preferred_term: K2HPO4
@@ -61,7 +61,7 @@ composition:
     label: Sulfur powder
   chebi_term:
     id: CHEBI:33403
-    label: Sulfur powder
+    label: elemental sulfur
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -73,7 +73,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: MgCl2 x 6 H2O
@@ -85,7 +85,7 @@ composition:
     label: MgCl2 x 6 H2O
   chebi_term:
     id: CHEBI:86345
-    label: magnesium chloride hexahydrate
+    label: magnesium dichloride hexahydrate
     match_type: corpus_consensus
 - preferred_term: NaHCO3
   concentration:

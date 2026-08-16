@@ -46,7 +46,7 @@ composition:
     label: Fe(III)-EDTA
   chebi_term:
     id: CHEBI:30729
-    label: Fe(III)-EDTA
+    label: ethylenediaminetetraacetatoferrate(1-)
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Agar
@@ -58,7 +58,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Adjust pH to 7.8.

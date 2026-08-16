@@ -19,10 +19,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: MgSO4 · 7H2O
   concentration:
     value: '0.2'
@@ -40,7 +40,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: calcium chloride dihydrate
 - preferred_term: KH2PO4
   concentration:
     value: '0.6'
@@ -52,7 +52,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: K2HPO4
   concentration:
     value: '0.2'
@@ -72,8 +72,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
   term:
-    id: CHEBI:75215
-    label: ''
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
 - preferred_term: FeCl3·6H2O
   concentration:
     value: '0.01'
@@ -104,10 +104,10 @@ ingredients:
   notes: 'Role: pH indicator'
   term:
     id: CHEBI:86155
-    label: Bromothymol blue
+    label: bromothymol blue
   mediaingredientmech_chebi_term:
     id: CHEBI:86155
-    label: Bromothymol blue
+    label: bromothymol blue
 - preferred_term: crystallized cane sugar
   concentration:
     value: '100'

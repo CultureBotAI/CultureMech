@@ -9,85 +9,85 @@ ingredients:
 - preferred_term: Succinate
   term:
     id: CHEBI:26806
-    label: Succinate
+    label: succinate
   concentration:
     value: '15.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:succ'
   mediaingredientmech_chebi_term:
     id: CHEBI:26806
-    label: Succinate
+    label: succinate
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '18.6'
     unit: MILLIMOLAR
   term:
     id: CHEBI:131527
-    label: ''
+    label: dipotassium hydrogen phosphate
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
-    label: Nitrilotriacetic acid
+    label: nitrilotriacetic acid
   concentration:
     value: '0.5'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:44557
-    label: Nitrilotriacetic acid
+    label: nitrilotriacetic acid
 - preferred_term: Cobaltous sulfate
   concentration:
     value: '0.004'
     unit: MILLIMOLAR
   term:
     id: CHEBI:53470
-    label: ''
+    label: cobalt(2+) sulfate
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: magnesium sulfate
   concentration:
     value: '0.811'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
-    label: Manganese Sulfate
+    label: manganese(II) sulfate monohydrate
   concentration:
     value: '0.017'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
-    label: Manganese Sulfate
+    label: manganese(II) sulfate monohydrate
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
-    label: Ammonium chloride
+    label: ammonium chloride
   concentration:
     value: '37.4'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: Ammonium chloride
+    label: ammonium chloride
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.043'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75832
-    label: ''
+    label: iron(2+) sulfate (anhydrous)
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
-    label: Zinc Sulfate
+    label: zinc sulfate
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:35176
-    label: Zinc Sulfate
+    label: zinc sulfate
 - preferred_term: Sodium dihydrogen phosphate
   concentration:
     value: '7.25'

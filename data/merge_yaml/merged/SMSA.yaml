@@ -20,7 +20,7 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:17754
-    label: Glycerol
+    label: glycerol
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-81-5; MW: 92.09'
 description: Selective Media of South Africa; for growing Ralstonia
 notes: 'Source: FEBA media definitions'

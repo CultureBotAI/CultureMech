@@ -33,14 +33,14 @@ ingredients:
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
   concentration:
     value: '17.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 2.0, 15.0]'
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
 - preferred_term: Horse blood
   concentration:
     value: '40'
@@ -48,33 +48,33 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: Glucose
+    label: glucose
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: Glucose
+    label: glucose
 - preferred_term: FeCl3
   term:
     id: CHEBI:30808
-    label: FeCl3
+    label: iron trichloride
   concentration:
     value: '0.3244'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30808
-    label: FeCl3
+    label: iron trichloride
 - preferred_term: Cysteine
   term:
     id: CHEBI:15356
-    label: Cysteine
+    label: cysteine
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15356
-    label: Cysteine
+    label: cysteine
 - preferred_term: Casein peptone
   concentration:
     value: '15'
@@ -86,13 +86,13 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
   concentration:
     value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
 - preferred_term: Calf brains
   term:
     id: UBERON:0000955
@@ -172,7 +172,7 @@ ingredients:
 - preferred_term: Disodium phosphate
   term:
     id: CHEBI:34683
-    label: disodium hydrogen phosphate
+    label: disodium hydrogenphosphate
   concentration:
     value: '2.5'
     unit: G_PER_L

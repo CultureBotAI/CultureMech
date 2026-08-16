@@ -16,7 +16,7 @@ ingredients:
 - preferred_term: NaNO3
   term:
     id: CHEBI:63005
-    label: NaNO3
+    label: sodium nitrate
   concentration:
     value: '1'
     unit: G_PER_L
@@ -26,13 +26,13 @@ ingredients:
 - preferred_term: NaH2PO4 x 2 H2O
   term:
     id: CHEBI:37585
-    label: NaH2PO4 x 2 H2O
+    label: sodium dihydrogenphosphate
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:37585
-    label: NaH2PO4 x 2 H2O
+    label: sodium dihydrogenphosphate
 - preferred_term: Natural sea water
   concentration:
     value: '1000'
@@ -40,154 +40,154 @@ ingredients:
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
 - preferred_term: Na2-EDTA x 2 H2O
   term:
-    id: CHEBI:64734
-    label: Na2-EDTA x 2 H2O
+    id: CHEBI:64758
+    label: EDTA disodium salt dihydrate
   concentration:
     value: '4.36'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:64734
-    label: Na2-EDTA x 2 H2O
+    id: CHEBI:64758
+    label: EDTA disodium salt dihydrate
 - preferred_term: FeCl3 x 6 H2O
   term:
     id: CHEBI:86254
-    label: FeCl3 x 6 H2O
+    label: iron trichloride hexahydrate
   concentration:
     value: '3.14'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86254
-    label: FeCl3 x 6 H2O
+    label: iron trichloride hexahydrate
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
-    label: CuSO4 x 5 H2O
+    label: copper(II) sulfate pentahydrate
   concentration:
     value: '0.125'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31440
-    label: CuSO4 x 5 H2O
+    label: copper(II) sulfate pentahydrate
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
+    label: sodium molybdate dihydrate
   concentration:
     value: '1.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
+    label: sodium molybdate dihydrate
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
+    label: zinc sulfate heptahydrate
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
+    label: zinc sulfate heptahydrate
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
-    label: CoCl2 x 6 H2O
+    label: cobalt dichloride
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:35696
-    label: CoCl2 x 6 H2O
+    label: cobalt dichloride
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
-    label: MnCl2 x 4 H2O
+    label: manganese(II) chloride tetrahydrate
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
-    label: MnCl2 x 4 H2O
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: H2SeO3
   term:
     id: CHEBI:26642
-    label: H2SeO3
+    label: selenous acid
   concentration:
     value: '3.004'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26642
-    label: H2SeO3
+    label: selenous acid
 - preferred_term: NiSO4 x 6 H2O
   term:
     id: CHEBI:53001
-    label: NiSO4 x 6 H2O
+    label: nickel sulfate
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:53001
-    label: NiSO4 x 6 H2O
+    label: nickel sulfate
 - preferred_term: Na3VO4
   term:
     id: CHEBI:35607
-    label: Na3VO4
+    label: trisodium vanadate
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:35607
-    label: Na3VO4
+    label: trisodium vanadate
 - preferred_term: K2CrO4
   concentration:
     value: '0.5'
     unit: G_PER_L
   term:
     id: CHEBI:75249
-    label: ''
+    label: potassium chromate
   mediaingredientmech_chebi_term:
     id: CHEBI:75249
-    label: K2CrO4
+    label: potassium chromate
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
-    label: Thiamine HCl
+    label: thiamine hydrochloride
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:49105
-    label: Thiamine HCl
+    label: thiamine hydrochloride
 - preferred_term: Cyanocobalamin
   term:
     id: CHEBI:17439
-    label: Cyanocobalamin
+    label: cyanocob(III)alamin
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17439
-    label: Cyanocobalamin
+    label: cyanocob(III)alamin
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
-    label: Biotin
+    label: biotin
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
-    label: Biotin
+    label: biotin
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

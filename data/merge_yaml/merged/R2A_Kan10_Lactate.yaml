@@ -15,7 +15,7 @@ ingredients:
   notes: 'CAS: 25839-94-0; MW: 582.58'
   term:
     id: CHEBI:6109
-    label: ''
+    label: kanamycin A sulfate
 - preferred_term: Sodium D,L-Lactate
   concentration:
     value: '10'

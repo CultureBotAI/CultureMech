@@ -19,13 +19,13 @@ ingredients:
 - preferred_term: Fructose
   term:
     id: CHEBI:28757
-    label: Fructose
+    label: fructose
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:28757
-    label: Fructose
+    label: fructose
 applications:
 - Microbial cultivation
 curation_history:

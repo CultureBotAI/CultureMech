@@ -39,7 +39,7 @@ composition:
     label: NaCl
   chebi_term:
     id: CHEBI:26710
-    label: 1% sodium chloride
+    label: sodium chloride
     confidence: 1.0
     match_type: exact_match
 - preferred_term: MgCl2 x 6 H2O
@@ -51,7 +51,7 @@ composition:
     label: MgCl2 x 6 H2O
   chebi_term:
     id: CHEBI:86345
-    label: magnesium chloride hexahydrate
+    label: magnesium dichloride hexahydrate
     match_type: corpus_consensus
 - preferred_term: CaCl2 x 2 H2O
   concentration:
@@ -62,7 +62,7 @@ composition:
     label: CaCl2 x 2 H2O
   chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: FeSO4 x 7 H2O
@@ -74,7 +74,7 @@ composition:
     label: FeSO4 x 7 H2O
   chebi_term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: iron(2+) sulfate heptahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -86,7 +86,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na2MoO4 x 2 H2O
@@ -110,7 +110,7 @@ composition:
     label: VOSO4 x n H2O
   chebi_term:
     id: CHEBI:87020
-    label: VOSO4 x n H2O
+    label: vanadyl sulfate hydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: MnCl2 x 4 H2O
@@ -122,7 +122,7 @@ composition:
     label: MnCl2 x 4 H2O
   chebi_term:
     id: CHEBI:86368
-    label: MnCl2 x 4 H2O
+    label: manganese(II) chloride tetrahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: ZnSO4 x 7 H2O
@@ -134,7 +134,7 @@ composition:
     label: ZnSO4 x 7 H2O
   chebi_term:
     id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
+    label: zinc sulfate heptahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: CuSO4 x 5 H2O
@@ -146,7 +146,7 @@ composition:
     label: CuSO4 x 5 H2O
   chebi_term:
     id: CHEBI:31440
-    label: CuSO4 x 5 H2O
+    label: copper(II) sulfate pentahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: CoCl2 x 6 H2O
@@ -158,7 +158,7 @@ composition:
     label: CoCl2 x 6 H2O
   chebi_term:
     id: CHEBI:35696
-    label: CoCl2 x 6 H2O
+    label: cobalt dichloride
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: NiCl2 x 6 H2O
@@ -170,7 +170,7 @@ composition:
     label: NiCl2 x 6 H2O
   chebi_term:
     id: CHEBI:34887
-    label: NiCl2 x 6 H2O
+    label: nickel dichloride
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: "Add components to distilled water and mix thoroughly. Then, add\

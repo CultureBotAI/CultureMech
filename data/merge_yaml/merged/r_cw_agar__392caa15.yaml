@@ -33,37 +33,37 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: Sodium acetate
   term:
     id: CHEBI:32954
-    label: Sodium acetate
+    label: sodium acetate
   concentration:
     value: '4.99501'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32954
-    label: Sodium acetate
+    label: sodium acetate
 - preferred_term: Diammonium hydrogen citrate
   term:
     id: CHEBI:63076
-    label: Diammonium hydrogen citrate
+    label: diammonium citrate
   concentration:
     value: '1.998'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63076
-    label: Diammonium hydrogen citrate
+    label: diammonium citrate
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '0.499501'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
 - preferred_term: MnSO4 x n H2O
   concentration:
     value: '0.499501'
@@ -74,13 +74,13 @@ ingredients:
 - preferred_term: Tween 80
   term:
     id: CHEBI:53426
-    label: Tween 80
+    label: polysorbate 80
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:53426
-    label: Tween 80
+    label: polysorbate 80
 - preferred_term: Cheese whey
   concentration:
     value: '1000'

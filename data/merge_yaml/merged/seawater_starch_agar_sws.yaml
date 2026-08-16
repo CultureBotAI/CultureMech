@@ -13,7 +13,7 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Undefined component'
   term:
     id: CHEBI:28017
-    label: ''
+    label: starch
 - preferred_term: Agar
   concentration:
     value: '15'

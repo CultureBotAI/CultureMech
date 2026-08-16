@@ -14,10 +14,10 @@ ingredients:
     Inorganic compound [Merged 3 duplicates: 400.0, 450.0, 50.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: Rabbit serum heat--inactivated at 56&#8451; for 30 min
   concentration:
     value: '50'
@@ -50,7 +50,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: KCl
   concentration:
     value: '0.2'
@@ -100,7 +100,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: calcium chloride dihydrate
 media_term:
   preferred_term: TOGO Medium M993
   term:

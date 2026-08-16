@@ -13,7 +13,7 @@ composition:
     label: Glucose
   chebi_term:
     id: CHEBI:17234
-    label: D-glucose
+    label: glucose
     confidence: 0.9
     match_type: manual_curated
 - preferred_term: Glycerol
@@ -25,7 +25,7 @@ composition:
     label: Glycerol
   chebi_term:
     id: CHEBI:17754
-    label: Glycerol
+    label: glycerol
     match_type: corpus_consensus
 - preferred_term: Peptone
   concentration:
@@ -69,7 +69,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Agar
@@ -82,7 +82,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: pH 6.8. Agar may be added to solidify media at a final concentration

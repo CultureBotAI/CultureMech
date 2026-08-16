@@ -25,7 +25,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
 - preferred_term: K2HPO4 x 3 H2O
   term:
     id: CHEBI:131527
@@ -35,17 +35,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4 x 3 H2O
+    label: dipotassium hydrogen phosphate
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: magnesium dichloride hexahydrate
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: magnesium dichloride hexahydrate
 - preferred_term: Na-formate
   term:
     id: CHEBI:62965
@@ -55,7 +55,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62965
-    label: Na-formate
+    label: sodium formate
 - preferred_term: Na-acetate
   term:
     id: CHEBI:32954
@@ -65,7 +65,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32954
-    label: Na-acetate
+    label: sodium acetate
 - preferred_term: Trypticase peptone
   concentration:
     value: '1'
@@ -80,17 +80,17 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:8806
-    label: ''
+    label: Resazurin
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    label: L-cysteine hydrochloride hydrate
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    label: L-cysteine hydrochloride hydrate
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -100,17 +100,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
-    label: Na2S x 9 H2O
+    label: sodium sulfide nonahydrate
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:76209
-    label: Na2S x 9 H2O
+    label: sodium sulfide nonahydrate
 applications:
 - Microbial cultivation
 curation_history:

@@ -27,17 +27,17 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:9754
-    label: ''
+    label: tris
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
   concentration:
     value: '0.3'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

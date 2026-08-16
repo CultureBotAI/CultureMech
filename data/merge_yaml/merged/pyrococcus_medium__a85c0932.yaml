@@ -26,7 +26,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:76209
-    label: ''
+    label: sodium sulfide nonahydrate
 - preferred_term: Sulfur (powder)
   concentration:
     value: '30'
@@ -83,7 +83,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: dinitrogen
 - preferred_term: Distilled water
   concentration:
     value: '2.0'
@@ -92,10 +92,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '6.5'
@@ -128,7 +128,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '2.75'
@@ -137,7 +137,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86345
-    label: ''
+    label: magnesium dichloride hexahydrate
 - preferred_term: H3BO3
   concentration:
     value: '15.01'
@@ -194,7 +194,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:36385
-    label: ''
+    label: strontium dichloride hexahydrate
 - preferred_term: KI
   concentration:
     value: '0.05'
@@ -215,7 +215,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86149
-    label: ''
+    label: ammonium nickel sulfate hexahydrate
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.1'
@@ -224,7 +224,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: calcium chloride dihydrate
 - preferred_term: Na2MoO4・2H2O
   concentration:
     value: '0.01'
@@ -242,7 +242,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: ''
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: ZnSO4・7H2O
   concentration:
     value: '0.1'
@@ -251,7 +251,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:32312
-    label: ''
+    label: zinc sulfate heptahydrate
 - preferred_term: CuSO4・5H2O
   concentration:
     value: '0.01'
@@ -260,7 +260,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:31440
-    label: ''
+    label: copper(II) sulfate pentahydrate
 - preferred_term: CoSO4・7H2O
   concentration:
     value: '0.1'
@@ -290,7 +290,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86360
-    label: ''
+    label: manganese(II) sulfate
 - preferred_term: AlK(SO4)2
   concentration:
     value: '0.01'

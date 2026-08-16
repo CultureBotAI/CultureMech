@@ -13,7 +13,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: K2S4O6
@@ -37,7 +37,7 @@ composition:
     label: FeSO4
   chebi_term:
     id: CHEBI:75832
-    label: ferrous sulfate
+    label: iron(2+) sulfate (anhydrous)
     confidence: 1.0
     match_type: exact_match
 preparation_notes: 'Mix thoroughly, adjust pH to 2.5 with H2SO4 and autoclave. After

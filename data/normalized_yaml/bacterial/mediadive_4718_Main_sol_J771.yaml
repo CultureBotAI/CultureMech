@@ -27,7 +27,7 @@ composition:
     label: Na glutamate
   chebi_term:
     id: CHEBI:64220
-    label: Na glutamate
+    label: monosodium glutamate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Trisodium citrate
@@ -39,7 +39,7 @@ composition:
     label: Trisodium citrate
   chebi_term:
     id: CHEBI:53258
-    label: citric acid
+    label: sodium citrate
     confidence: 1.0
     match_type: exact_match
 - preferred_term: MgSO4 x 7 H2O
@@ -75,7 +75,7 @@ composition:
     label: NaCl
   chebi_term:
     id: CHEBI:26710
-    label: 1% sodium chloride
+    label: sodium chloride
     confidence: 1.0
     match_type: exact_match
 preparation_notes: 'Add components to distilled water and bring volume to 1.0 L.

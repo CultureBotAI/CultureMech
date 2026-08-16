@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -71,10 +71,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15971
-    label: L-Histidine
+    label: L-histidine
   mediaingredientmech_chebi_term:
     id: CHEBI:15971
-    label: L--Histidine
+    label: L-histidine
 - preferred_term: L--Cysteine・HCl・H2O
   concentration:
     value: '0.04'
@@ -82,7 +82,7 @@ ingredients:
   notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:91248
-    label: ''
+    label: L-cysteine hydrochloride hydrate
 - preferred_term: Biotin
   concentration:
     value: '20'
@@ -101,10 +101,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:30753
-    label: p--Aminobenzoic acid
+    label: 4-aminobenzoic acid
   term:
     id: CHEBI:30753
-    label: ''
+    label: 4-aminobenzoic acid
 - preferred_term: Thiamine・HCl
   concentration:
     value: '200'
@@ -112,7 +112,7 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:49105
-    label: ''
+    label: thiamine hydrochloride
 - preferred_term: Pyridoxine・HCl
   concentration:
     value: '300'
@@ -120,7 +120,7 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:30961
-    label: Pyridoxine・HCl
+    label: pyridoxine hydrochloride
 - preferred_term: Vitamin B12
   concentration:
     value: '100'

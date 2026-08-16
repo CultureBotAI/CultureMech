@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.5'
@@ -38,7 +38,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: KCl
   concentration:
     value: '0.05'
@@ -83,7 +83,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86159
-    label: ''
+    label: calcium nitrate tetrahydrate
 - preferred_term: H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
@@ -131,7 +131,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:32312
-    label: ''
+    label: zinc sulfate heptahydrate
 - preferred_term: CuSO4・5H2O
   concentration:
     value: '1'
@@ -140,7 +140,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:31440
-    label: ''
+    label: copper(II) sulfate pentahydrate
 - preferred_term: CoSO4・7H2O
   concentration:
     value: '1'
@@ -158,7 +158,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63939
-    label: ''
+    label: sodium tungstate dihydrate
 - preferred_term: MnSO4・xH2O
   concentration:
     value: '1'
@@ -167,7 +167,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86360
-    label: ''
+    label: manganese(II) sulfate
 - preferred_term: NiSO4・6H2O
   concentration:
     value: '1'
@@ -176,7 +176,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:53001
-    label: ''
+    label: nickel sulfate
 - preferred_term: Na2SeO4
   concentration:
     value: '1'
@@ -188,7 +188,7 @@ ingredients:
     label: sodium selenate
   mediaingredientmech_chebi_term:
     id: CHEBI:77775
-    label: Na2SeO4
+    label: sodium selenate
 - preferred_term: NaVO3
   concentration:
     value: '0.1'

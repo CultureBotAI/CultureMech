@@ -13,10 +13,10 @@ ingredients:
   notes: 'Properties: Undefined component, Complex component'
   term:
     id: CHEBI:2509
-    label: BCYE agar
+    label: agar
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: BCYE agar
+    label: agar
 media_term:
   preferred_term: TOGO Medium M2859
   term:

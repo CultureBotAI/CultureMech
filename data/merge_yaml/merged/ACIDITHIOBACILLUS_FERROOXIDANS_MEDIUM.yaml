@@ -68,10 +68,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 20.0, 0.1]'
   term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: iron(2+) sulfate heptahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: NaCl
   concentration:
     value: '1'
@@ -188,10 +188,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86364
-    label: MnSO4 x H2O
+    label: manganese(II) sulfate monohydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
-    label: MnSO4 x H2O
+    label: manganese(II) sulfate monohydrate
 media_term:
   preferred_term: TOGO Medium M2297
   term:

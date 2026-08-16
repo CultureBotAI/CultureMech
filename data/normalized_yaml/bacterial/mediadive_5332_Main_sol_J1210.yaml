@@ -46,7 +46,7 @@ composition:
     label: Resazurin
   chebi_term:
     id: CHEBI:8806
-    label: resazurin
+    label: Resazurin
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Distilled water
@@ -58,7 +58,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Glucose
@@ -70,7 +70,7 @@ composition:
     label: Glucose
   chebi_term:
     id: CHEBI:17234
-    label: D-glucose
+    label: glucose
     confidence: 0.9
     match_type: manual_curated
 - preferred_term: Na2S x 9 H2O
@@ -82,7 +82,7 @@ composition:
     label: Na2S x 9 H2O
   chebi_term:
     id: CHEBI:76209
-    label: Na2S x 9 H2O
+    label: sodium sulfide nonahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: L-Cysteine HCl x H2O
@@ -94,7 +94,7 @@ composition:
     label: L-Cysteine HCl x H2O
   chebi_term:
     id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    label: L-cysteine hydrochloride hydrate
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: "Mix components and adjust pH to 6.0. Bubble the medium with N2\

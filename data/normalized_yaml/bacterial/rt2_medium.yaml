@@ -16,33 +16,33 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
   concentration:
     value: '500'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: magnesium dichloride hexahydrate
   concentration:
     value: '50'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: magnesium dichloride hexahydrate
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
   concentration:
     value: '25'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -52,7 +52,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -62,17 +62,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: KCl
   term:
     id: CHEBI:32588
-    label: KCl
+    label: potassium chloride
   concentration:
     value: '250'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: KCl
+    label: potassium chloride
 - preferred_term: Yeast extract
   concentration:
     value: '250'
@@ -83,10 +83,10 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:183882
-    label: ''
+    label: 3-(cyclohexylamino)-2-hydroxy-1-propanesulfonic acid
   mediaingredientmech_chebi_term:
     id: CHEBI:183882
-    label: CAPSO
+    label: 3-(cyclohexylamino)-2-hydroxy-1-propanesulfonic acid
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
@@ -96,17 +96,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32149
-    label: Na2SO4
+    label: sodium sulfate
 - preferred_term: Sodium lactate
   term:
     id: CHEBI:75228
-    label: Sodium lactate
+    label: sodium lactate
   concentration:
     value: '1120'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75228
-    label: Sodium lactate
+    label: sodium lactate
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -120,43 +120,43 @@ ingredients:
 - preferred_term: Sodium dithionite
   term:
     id: CHEBI:66870
-    label: Sodium dithionite
+    label: sodium dithionite
   concentration:
     value: '50'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:66870
-    label: Sodium dithionite
+    label: sodium dithionite
 - preferred_term: NaOH
   term:
     id: CHEBI:32145
-    label: NaOH
+    label: sodium hydroxide
   concentration:
     value: '0.4'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32145
-    label: NaOH
+    label: sodium hydroxide
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
-    label: Na2SeO3 x 5 H2O
+    label: disodium selenite pentahydrate
   concentration:
     value: '0.006'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131361
-    label: Na2SeO3 x 5 H2O
+    label: disodium selenite pentahydrate
 - preferred_term: Na2WO4 x 2 H2O
   term:
     id: CHEBI:63939
-    label: Na2WO4 x 2 H2O
+    label: sodium tungstate dihydrate
   concentration:
     value: '0.008'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63939
-    label: Na2WO4 x 2 H2O
+    label: sodium tungstate dihydrate
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

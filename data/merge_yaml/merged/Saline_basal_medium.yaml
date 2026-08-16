@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: Magnesium sulfate heptahydrate
   concentration:
     value: '0.5'
@@ -26,10 +26,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:31795
-    label: Magnesium sulfate heptahydrate
+    label: magnesium sulfate heptahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: Magnesium sulfate heptahydrate
+    label: magnesium sulfate heptahydrate
 - preferred_term: Ammonium sulfate
   concentration:
     value: '1.5'
@@ -68,7 +68,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63036
-    label: ''
+    label: potassium dihydrogen phosphate
 - preferred_term: 1 N HCl
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Solution'
@@ -94,7 +94,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: calcium chloride dihydrate
 - preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '0.03'
@@ -124,7 +124,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86368
-    label: ''
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: NiCl2 x 6 H2O
   concentration:
     value: '0.02'
@@ -133,7 +133,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:34887
-    label: ''
+    label: nickel dichloride
 - preferred_term: ZnSO4 x 7 H2O
   concentration:
     value: '0.1'
@@ -142,7 +142,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:32312
-    label: ''
+    label: zinc sulfate heptahydrate
 - preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '0.2'
@@ -151,7 +151,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:35696
-    label: ''
+    label: cobalt dichloride
 - preferred_term: FeSO4
   concentration:
     value: '2'

@@ -15,10 +15,10 @@ ingredients:
     1000.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: K2HPO4
   concentration:
     value: '0.65'
@@ -41,7 +41,7 @@ ingredients:
     label: sodium acetate
   mediaingredientmech_chebi_term:
     id: CHEBI:32954
-    label: Na-acetate
+    label: sodium acetate
 - preferred_term: NaH2PO4 x H2O
   concentration:
     value: '0.17'
@@ -50,10 +50,10 @@ ingredients:
     component'
   term:
     id: CHEBI:37585
-    label: NaH2PO4 x H2O
+    label: sodium dihydrogenphosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:37585
-    label: NaH2PO4 x H2O
+    label: sodium dihydrogenphosphate
 - preferred_term: Peptone (BD Bacto)
   concentration:
     value: '0.1'
@@ -66,7 +66,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: carbon dioxide
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -74,7 +74,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: dinitrogen
 - preferred_term: NaHCO3
   concentration:
     value: '3.73'
@@ -153,10 +153,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
-    label: MnCl2 x 4 H2O
+    label: manganese(II) chloride tetrahydrate
   term:
     id: CHEBI:86368
-    label: ''
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '190'
@@ -319,10 +319,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:30961
-    label: Pyridoxine-HCl
+    label: pyridoxine hydrochloride
   mediaingredientmech_chebi_term:
     id: CHEBI:30961
-    label: Pyridoxine-HCl
+    label: pyridoxine hydrochloride
 - preferred_term: Folic acid
   concentration:
     value: '2'
@@ -388,7 +388,7 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Defined component'
   term:
     id: CHEBI:31345
-    label: ''
+    label: Calcium pantothenate
 - preferred_term: Calcium pantothenate
   concentration:
     value: '100'
@@ -418,10 +418,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
+    label: thiamine hydrochloride dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
+    label: thiamine hydrochloride dihydrate
 - preferred_term: D(+)-Biotin
   concentration:
     value: '20'

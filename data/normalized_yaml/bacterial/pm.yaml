@@ -15,13 +15,13 @@ ingredients:
 - preferred_term: Sodium acetate trihydrate
   term:
     id: CHEBI:32138
-    label: Sodium acetate trihydrate
+    label: sodium acetate trihydrate
   concentration:
     value: '2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32138
-    label: Sodium acetate trihydrate
+    label: sodium acetate trihydrate
 - preferred_term: Yeast extract
   concentration:
     value: '1'

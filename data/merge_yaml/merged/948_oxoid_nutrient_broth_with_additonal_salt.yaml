@@ -15,14 +15,14 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
   concentration:
     value: '22.5'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 17.5, 5.0]'
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
 - preferred_term: Lab-Lemco beef extract
   concentration:
     value: '1'

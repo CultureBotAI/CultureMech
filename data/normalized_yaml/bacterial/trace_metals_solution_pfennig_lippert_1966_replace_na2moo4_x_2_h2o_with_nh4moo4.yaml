@@ -26,10 +26,10 @@ ingredients:
     unit: VARIABLE
   mediaingredientmech_chebi_term:
     id: CHEBI:17883
-    label: HCl
+    label: hydrogen chloride
   term:
     id: CHEBI:17883
-    label: ''
+    label: hydrogen chloride
 applications:
 - Microbial cultivation
 curation_history:

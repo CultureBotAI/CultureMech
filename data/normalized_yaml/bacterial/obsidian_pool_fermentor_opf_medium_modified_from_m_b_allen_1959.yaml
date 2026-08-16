@@ -62,7 +62,7 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: MgSO4 x7H2O
+    label: magnesium sulfate
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
@@ -94,7 +94,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: Na2Sx6H2O
   concentration:
     value: '0.13'
@@ -121,7 +121,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86254
-    label: ''
+    label: iron trichloride hexahydrate
 - preferred_term: Na2SO4
   concentration:
     value: '0.07'
@@ -154,7 +154,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:32583
-    label: ''
+    label: calcium sulfate dihydrate
 - preferred_term: Na2S2O3
   concentration:
     value: '0.78'
@@ -181,7 +181,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: carbon dioxide
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -189,7 +189,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: dinitrogen
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -198,10 +198,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: Na2WO4
   concentration:
     value: '1'

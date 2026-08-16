@@ -64,7 +64,7 @@ ingredients:
     id: MediaIngredientMech:000988
   term:
     id: CHEBI:76208
-    label: sodium sulfide
+    label: sodium sulfide (anhydrous)
 temperature_value: 37.0
 incubation_atmosphere: ANAEROBIC
 notes: 'Headspace gas: N2/CO2 (80:20)

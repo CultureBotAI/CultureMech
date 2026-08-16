@@ -31,8 +31,8 @@ ingredients:
     value: '0.5'
     unit: MILLIMOLAR
   term:
-    id: CHEBI:76208
-    label: sodium sulfide
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
   mediaingredientmech_term:
     id: MediaIngredientMech:000120
     label: Sodium sulfide nonahydrate

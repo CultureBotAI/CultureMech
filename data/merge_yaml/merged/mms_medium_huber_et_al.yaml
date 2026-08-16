@@ -9,13 +9,13 @@ ingredients:
 - preferred_term: Starch
   term:
     id: CHEBI:28017
-    label: Starch
+    label: starch
   concentration:
     value: '27.7531'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:28017
-    label: Starch
+    label: starch
 - preferred_term: Magnesium chloride
   concentration:
     value: '6.78766'
@@ -32,17 +32,17 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: ''
+    label: calcium dichloride
 - preferred_term: Potassium iodide
   term:
     id: CHEBI:8346
-    label: Potassium iodide
+    label: potassium iodide
   concentration:
     value: '0.000150599'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:8346
-    label: Potassium iodide
+    label: potassium iodide
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -56,40 +56,40 @@ ingredients:
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
-    label: Boric acid
+    label: boric acid
   concentration:
     value: '0.123726'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: Boric acid
+    label: boric acid
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
-    label: Nitrilotriacetic acid
+    label: nitrilotriacetic acid
   concentration:
     value: '0.117715'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:44557
-    label: Nitrilotriacetic acid
+    label: nitrilotriacetic acid
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.000619963'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75215
-    label: ''
+    label: sodium molybdate (anhydrous)
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
-    label: Sodium Chloride
+    label: sodium chloride
   concentration:
     value: '118.84'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: Sodium Chloride
+    label: sodium chloride
 - preferred_term: Potassium chloride
   concentration:
     value: '2.14617'
@@ -106,75 +106,75 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:63036
-    label: ''
+    label: potassium dihydrogen phosphate
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: magnesium sulfate
   concentration:
     value: '7.28283'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
-    label: Manganese Sulfate
+    label: manganese(II) sulfate monohydrate
   concentration:
     value: '0.040098'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
-    label: Manganese Sulfate
+    label: manganese(II) sulfate monohydrate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.00539471'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75832
-    label: ''
+    label: iron(2+) sulfate (anhydrous)
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.0115527'
     unit: MILLIMOLAR
   term:
     id: CHEBI:35696
-    label: ''
+    label: cobalt dichloride
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
-    label: Zinc Sulfate
+    label: zinc sulfate
   concentration:
     value: '0.009289'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:35176
-    label: Zinc Sulfate
+    label: zinc sulfate
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.00060072'
     unit: MILLIMOLAR
   term:
     id: CHEBI:23414
-    label: ''
+    label: copper(II) sulfate
 - preferred_term: Aluminum potassium sulfate
   concentration:
     value: '0.000581057'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:86463
-    label: Aluminum potassium sulfate
+    label: potassium aluminium sulfate
   term:
     id: CHEBI:86463
-    label: ''
+    label: potassium aluminium sulfate
 - preferred_term: Sodium bromide
   concentration:
     value: '0.242968'
     unit: MILLIMOLAR
   term:
     id: CHEBI:63004
-    label: ''
+    label: sodium bromide
 - preferred_term: Sodium sulfide
   concentration:
     value: '6.40654'
@@ -184,7 +184,7 @@ ingredients:
     label: Sodium sulfide
   term:
     id: CHEBI:85357
-    label: ''
+    label: 3-[(1E,4R)-4-hydroxycyclohex-2-en-1-ylidene]pyruvic acid
 - preferred_term: '''Nickel(II'
   concentration:
     value: '0.00697114'
@@ -195,7 +195,7 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:36383
-    label: ''
+    label: strontium dichloride
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

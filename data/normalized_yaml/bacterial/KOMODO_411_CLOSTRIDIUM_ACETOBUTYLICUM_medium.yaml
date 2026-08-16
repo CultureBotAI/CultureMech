@@ -21,13 +21,13 @@ ingredients:
 - preferred_term: CaCO3
   term:
     id: CHEBI:3311
-    label: CaCO3
+    label: calcium carbonate
   concentration:
     value: '2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:3311
-    label: CaCO3
+    label: calcium carbonate
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.0006000000000000001'
@@ -35,27 +35,27 @@ ingredients:
   notes: ' [Merged 2 duplicates: 0.0005, 0.0001]'
   term:
     id: CHEBI:8806
-    label: ''
+    label: Resazurin
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
-    label: D-Glucose
+    label: D-glucose
   concentration:
     value: '6'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17634
-    label: D-Glucose
+    label: D-glucose
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    label: L-cysteine hydrochloride hydrate
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    label: L-cysteine hydrochloride hydrate
 - preferred_term: Milk
   concentration:
     value: '100'

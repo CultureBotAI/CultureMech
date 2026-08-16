@@ -45,7 +45,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: "Thoroughly  disperse  the agar  in cold  75% seawater.  Bring\

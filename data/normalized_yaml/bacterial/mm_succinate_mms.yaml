@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.1'
@@ -41,7 +41,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: NH4Cl
   concentration:
     value: '1'
@@ -86,10 +86,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:28971
-    label: Ampicillin
+    label: ampicillin
   mediaingredientmech_chebi_term:
     id: CHEBI:28971
-    label: Ampicillin
+    label: ampicillin
 - preferred_term: Kanamycin
   concentration:
     value: '10'
@@ -152,7 +152,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:53470
-    label: ''
+    label: cobalt(2+) sulfate
 - preferred_term: CaCO3
   concentration:
     value: '2'

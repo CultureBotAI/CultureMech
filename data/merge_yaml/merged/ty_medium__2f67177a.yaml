@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: CaCl2・6 H2O
   concentration:
     value: '1.3'
@@ -26,7 +26,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:91243
-    label: ''
+    label: calcium chloride hexahydrate
 - preferred_term: Difco Bacto-yeast extract
   concentration:
     value: '3'

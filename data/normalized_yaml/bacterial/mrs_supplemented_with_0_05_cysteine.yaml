@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15356
-    label: Cysteine
+    label: cysteine
   mediaingredientmech_chebi_term:
     id: CHEBI:15356
-    label: Cysteine
+    label: cysteine
 - preferred_term: MRS broth
   concentration:
     value: '1'

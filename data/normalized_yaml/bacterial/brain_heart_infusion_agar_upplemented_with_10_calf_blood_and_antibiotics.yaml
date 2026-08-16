@@ -13,10 +13,10 @@ ingredients:
   notes: 'Role: Antimicrobial agent'
   term:
     id: CHEBI:2682
-    label: Amphotericin B
+    label: amphotericin B
   mediaingredientmech_chebi_term:
     id: CHEBI:2682
-    label: Amphotericin B
+    label: amphotericin B
 - preferred_term: calf blood
   concentration:
     value: '10'
@@ -43,7 +43,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: carbon dioxide
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -51,7 +51,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: dinitrogen
 - preferred_term: Oxygen gas
   notes: 'Properties: ガス'
   concentration:

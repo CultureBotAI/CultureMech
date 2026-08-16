@@ -28,7 +28,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: NH4Cl
   concentration:
     value: '0.5'
@@ -49,7 +49,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86345
-    label: ''
+    label: magnesium dichloride hexahydrate
 - preferred_term: Na2HPO4 . 12H2O
   concentration:
     value: '4.2'
@@ -58,7 +58,7 @@ ingredients:
     component'
   term:
     id: CHEBI:34683
-    label: ''
+    label: disodium hydrogenphosphate
 - preferred_term: Yeast Extract (BD 212750)
   concentration:
     value: '2'
@@ -79,7 +79,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: dinitrogen
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -87,7 +87,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: ''
+    label: dihydrogen
 - preferred_term: 0.2 N NaOH
   concentration:
     value: '200'
@@ -101,7 +101,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:76209
-    label: ''
+    label: sodium sulfide nonahydrate
 - preferred_term: L-Cysteine . HCl
   concentration:
     value: '2.5'
@@ -115,10 +115,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 500.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: Biotin
   concentration:
     value: '20'
@@ -256,10 +256,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:33118
-    label: Boric acid
+    label: boric acid
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: Boric acid
+    label: boric acid
 - preferred_term: FeSO4 . 7H2O
   concentration:
     value: '100'
@@ -268,7 +268,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: ''
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: ZnSO4 . 7H2O
   concentration:
     value: '100'
@@ -277,7 +277,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:32312
-    label: ''
+    label: zinc sulfate heptahydrate
 - preferred_term: CuSO4 . 5H2O
   concentration:
     value: '10'
@@ -316,7 +316,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86364
-    label: ''
+    label: manganese(II) sulfate monohydrate
 - preferred_term: AlK(SO4)2 (anhydrous)
   concentration:
     value: '10'
@@ -337,7 +337,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86214
-    label: ''
+    label: cobalt dinitrate hexahydrate
 - preferred_term: 2-3 N KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
   concentration:

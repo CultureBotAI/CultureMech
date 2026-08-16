@@ -16,33 +16,33 @@ ingredients:
 - preferred_term: Acetate
   term:
     id: CHEBI:30089
-    label: Acetate
+    label: acetate
   concentration:
     value: '0.118088'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30089
-    label: Acetate
+    label: acetate
 - preferred_term: Thiosulfate
   term:
     id: CHEBI:26977
-    label: Thiosulfate
+    label: thiosulfate
   concentration:
     value: '1'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:26977
-    label: Thiosulfate
+    label: thiosulfate
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
-    label: Na2S x 9 H2O
+    label: sodium sulfide nonahydrate
   concentration:
     value: '30'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:76209
-    label: Na2S x 9 H2O
+    label: sodium sulfide nonahydrate
 applications:
 - Microbial cultivation
 curation_history:

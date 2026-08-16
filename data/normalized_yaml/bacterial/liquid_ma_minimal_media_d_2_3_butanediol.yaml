@@ -16,103 +16,103 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: ''
+    label: calcium dichloride
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
-    label: Boric acid
+    label: boric acid
   concentration:
     value: '0.0003'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: Boric acid
+    label: boric acid
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '25.0'
     unit: MILLIMOLAR
   term:
     id: CHEBI:131527
-    label: ''
+    label: dipotassium hydrogen phosphate
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '31.0'
     unit: MILLIMOLAR
   term:
     id: CHEBI:34683
-    label: ''
+    label: disodium hydrogenphosphate
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
-    label: Nitrilotriacetic acid
+    label: nitrilotriacetic acid
   concentration:
     value: '0.041'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:44557
-    label: Nitrilotriacetic acid
+    label: nitrilotriacetic acid
 - preferred_term: Nickel chloride
   concentration:
     value: '0.0003'
     unit: MILLIMOLAR
   term:
     id: CHEBI:34887
-    label: ''
+    label: nickel dichloride
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.0003'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75215
-    label: ''
+    label: sodium molybdate (anhydrous)
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: magnesium sulfate
   concentration:
     value: '2.0'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
-    label: Ammonium chloride
+    label: ammonium chloride
   concentration:
     value: '18.0'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: Ammonium chloride
+    label: ammonium chloride
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.0003'
     unit: MILLIMOLAR
   term:
     id: CHEBI:35696
-    label: ''
+    label: cobalt dichloride
 - preferred_term: Manganese chloride
   concentration:
     value: '0.001'
     unit: MILLIMOLAR
   term:
     id: CHEBI:63041
-    label: ''
+    label: manganese(II) chloride
 - preferred_term: Cupric chloride
   concentration:
     value: '0.0003'
     unit: MILLIMOLAR
   term:
     id: CHEBI:49553
-    label: ''
+    label: copper(II) chloride
 - preferred_term: Sodium selenite
   concentration:
     value: '0.0003'
     unit: MILLIMOLAR
   term:
     id: CHEBI:48843
-    label: ''
+    label: disodium selenite
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.003'
@@ -123,7 +123,7 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:49976
-    label: ''
+    label: zinc dichloride
 - preferred_term: '''Chromium(III'
   concentration:
     value: '0.0003'

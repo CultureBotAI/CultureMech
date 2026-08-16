@@ -20,23 +20,23 @@ ingredients:
 - preferred_term: Succinic acid
   term:
     id: CHEBI:15741
-    label: Succinic acid
+    label: succinic acid
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15741
-    label: Succinic acid
+    label: succinic acid
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

@@ -26,7 +26,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: FOODON:03315426
-    label: Yeast extract
+    label: yeast extract
   notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 232-387-9'
 - preferred_term: 'Beef Heart Infusion '
   concentration:
@@ -34,7 +34,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: UBERON:0000948
-    label: Beef heart
+    label: heart
   notes: 'Mapping: curated_dict (confidence: 0.98)'
 - preferred_term: D-Glucose
   concentration:

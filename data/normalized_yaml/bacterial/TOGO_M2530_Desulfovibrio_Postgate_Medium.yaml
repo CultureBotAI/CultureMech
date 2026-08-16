@@ -14,10 +14,10 @@ ingredients:
     Defined component [Merged 3 duplicates: 980.0, 10.0, 10.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '2'
@@ -91,10 +91,10 @@ ingredients:
     component'
   term:
     id: CHEBI:75228
-    label: ''
+    label: sodium lactate
   mediaingredientmech_chebi_term:
     id: CHEBI:75228
-    label: Na-DL-lactate
+    label: sodium lactate
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
@@ -102,7 +102,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: dinitrogen
 - preferred_term: FeSO4 x 7 H2O
   concentration:
     value: '0.5'
@@ -111,10 +111,10 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: iron(2+) sulfate heptahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: NaOH
   notes: 'Properties: Inorganic compound, Solution, Defined component'
   term:

@@ -28,23 +28,23 @@ ingredients:
 - preferred_term: Ferric ammonium citrate
   term:
     id: CHEBI:31604
-    label: Ferric ammonium citrate
+    label: ferric ammonium citrate
   concentration:
     value: '0.4'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31604
-    label: Ferric ammonium citrate
+    label: ferric ammonium citrate
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
 - preferred_term: Sea water
   concentration:
     value: '1000'

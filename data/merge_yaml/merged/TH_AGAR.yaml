@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: Yeast extract
   concentration:
     value: '3'
@@ -55,7 +55,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:75836
-    label: ''
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: ZnSO4・7H2O
   concentration:
     value: '3'
@@ -64,7 +64,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:32312
-    label: ''
+    label: zinc sulfate heptahydrate
 - preferred_term: CuSO4・5H2O
   concentration:
     value: '1'
@@ -73,7 +73,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:31440
-    label: ''
+    label: copper(II) sulfate pentahydrate
 - preferred_term: MnSO4・xH2O
   concentration:
     value: '2'
@@ -82,7 +82,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86360
-    label: ''
+    label: manganese(II) sulfate
 - preferred_term: Co(NO3)2・6H2O
   concentration:
     value: '2'
@@ -91,7 +91,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86214
-    label: ''
+    label: cobalt dinitrate hexahydrate
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -110,7 +110,7 @@ ingredients:
   notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:64734
-    label: ''
+    label: EDTA disodium salt (anhydrous)
 - preferred_term: Peptone
   concentration:
     value: '5'

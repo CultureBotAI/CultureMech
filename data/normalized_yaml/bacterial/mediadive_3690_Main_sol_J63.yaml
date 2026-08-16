@@ -13,7 +13,7 @@ composition:
     label: L-Asparagine
   chebi_term:
     id: CHEBI:17196
-    label: L-Asparagine
+    label: L-asparagine
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Citric acid
@@ -73,7 +73,7 @@ composition:
     label: Glycerol
   chebi_term:
     id: CHEBI:17754
-    label: Glycerol
+    label: glycerol
     match_type: corpus_consensus
 - preferred_term: Agar
   concentration:
@@ -84,7 +84,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -96,7 +96,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Adjust pH to 7.2 with NH4OH.

@@ -22,7 +22,7 @@ ingredients:
     label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
 - preferred_term: MgCl2·6H2O
   concentration:
     value: '0.4'
@@ -32,7 +32,7 @@ ingredients:
     label: magnesium dichloride hexahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: magnesium dichloride hexahydrate
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.1'
@@ -42,7 +42,7 @@ ingredients:
     label: calcium chloride dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
 - preferred_term: NH4Cl
   concentration:
     value: '0.25'
@@ -52,7 +52,7 @@ ingredients:
     label: ammonium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
 - preferred_term: KH2PO4
   concentration:
     value: '0.2'
@@ -62,7 +62,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: KCl
   concentration:
     value: '0.5'
@@ -72,7 +72,7 @@ ingredients:
     label: potassium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: KCl
+    label: potassium chloride
 - preferred_term: Na2SO4
   concentration:
     value: '4.0'
@@ -82,7 +82,7 @@ ingredients:
     label: sodium sulfate
   mediaingredientmech_chebi_term:
     id: CHEBI:32149
-    label: Na2SO4
+    label: sodium sulfate
 - preferred_term: Resazurin
   concentration:
     value: '0.5'
@@ -102,7 +102,7 @@ ingredients:
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: Trace element solution (see Medium No. 439 )
   concentration:
     value: '1.0'
@@ -140,7 +140,7 @@ ingredients:
     label: 4-aminobenzoic acid
   mediaingredientmech_chebi_term:
     id: CHEBI:30753
-    label: p-Aminobenzoic acid
+    label: 4-aminobenzoic acid
 - preferred_term: Biotin
   concentration:
     value: '1.0'
@@ -150,7 +150,7 @@ ingredients:
     label: biotin
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
-    label: Biotin
+    label: biotin
 - preferred_term: Nicotinic acid
   concentration:
     value: '2.5'
@@ -160,7 +160,7 @@ ingredients:
     label: nicotinic acid
   mediaingredientmech_chebi_term:
     id: CHEBI:15940
-    label: Nicotinic acid
+    label: nicotinic acid
 - preferred_term: DL-Calcium pantothenate
   concentration:
     value: '1.0'
@@ -177,10 +177,10 @@ ingredients:
     unit: MG_PER_L
   term:
     id: CHEBI:30961
-    label: Pyridoxine·HCl
+    label: pyridoxine hydrochloride
   mediaingredientmech_chebi_term:
     id: CHEBI:30961
-    label: Pyridoxine·HCl
+    label: pyridoxine hydrochloride
 - preferred_term: Vitamin B12
   concentration:
     value: '5.0'
@@ -190,7 +190,7 @@ ingredients:
     label: vitamin B12
   mediaingredientmech_chebi_term:
     id: CHEBI:176843
-    label: Vitamin B12
+    label: vitamin B12
 - preferred_term: Thiamine·HCl
   concentration:
     value: '10.0'
@@ -200,7 +200,7 @@ ingredients:
     label: thiamine hydrochloride
   mediaingredientmech_chebi_term:
     id: CHEBI:49105
-    label: Thiamine HCl
+    label: thiamine hydrochloride
 - preferred_term: Riboflavin
   concentration:
     value: '0.5'
@@ -210,7 +210,7 @@ ingredients:
     label: riboflavin
   mediaingredientmech_chebi_term:
     id: CHEBI:17015
-    label: Riboflavin
+    label: riboflavin
 - preferred_term: Sodium phosphate buffer (10 mM, pH 7.1)
   concentration:
     value: '100.0'

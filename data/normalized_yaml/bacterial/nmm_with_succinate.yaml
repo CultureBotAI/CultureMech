@@ -9,14 +9,14 @@ ingredients:
 - preferred_term: Succinate
   term:
     id: CHEBI:26806
-    label: Succinate
+    label: succinate
   concentration:
     value: '43.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:succ'
   mediaingredientmech_chebi_term:
     id: CHEBI:26806
-    label: Succinate
+    label: succinate
 - preferred_term: Magnesium chloride
   concentration:
     value: '0.523'
@@ -33,48 +33,48 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: ''
+    label: calcium dichloride
 - preferred_term: Potassium sulfate
   concentration:
     value: '0.276'
     unit: MILLIMOLAR
   term:
     id: CHEBI:32036
-    label: ''
+    label: potassium sulfate
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '1.32'
     unit: MILLIMOLAR
   term:
     id: CHEBI:131527
-    label: ''
+    label: dipotassium hydrogen phosphate
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
-    label: Sodium Chloride
+    label: sodium chloride
   concentration:
     value: '50.0'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: Sodium Chloride
+    label: sodium chloride
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
-    label: Ammonium chloride
+    label: ammonium chloride
   concentration:
     value: '9.52'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: Ammonium chloride
+    label: ammonium chloride
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75832
-    label: ''
+    label: iron(2+) sulfate (anhydrous)
 - preferred_term: MOPS
   term:
     id: CHEBI:39074
@@ -91,7 +91,7 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:46760
-    label: ''
+    label: tricine
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

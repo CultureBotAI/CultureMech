@@ -26,10 +26,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2H2O
+    label: calcium chloride dihydrate
   term:
     id: CHEBI:86158
-    label: ''
+    label: calcium chloride dihydrate
 - preferred_term: K2HPO4
   concentration:
     value: '0.04'
@@ -62,10 +62,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63005
-    label: ''
+    label: sodium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63005
-    label: NaNO3
+    label: sodium nitrate
 - preferred_term: Ferric ammonium citrate
   concentration:
     value: '6'
@@ -128,11 +128,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
 - preferred_term: H3BO3
   concentration:
     value: '2.86'
@@ -153,10 +153,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
-    label: MnCl2 x 4H2O
+    label: manganese(II) chloride tetrahydrate
   term:
     id: CHEBI:86368
-    label: ''
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: ZnSO4 x 7H2O
   concentration:
     value: '0.222'
@@ -165,10 +165,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:32312
-    label: ZnSO4 x 7H2O
+    label: zinc sulfate heptahydrate
   term:
     id: CHEBI:32312
-    label: ''
+    label: zinc sulfate heptahydrate
 - preferred_term: CuSO4 x 5H2O
   concentration:
     value: '0.079'
@@ -177,10 +177,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:31440
-    label: CuSO4 x 5H2O
+    label: copper(II) sulfate pentahydrate
   term:
     id: CHEBI:31440
-    label: ''
+    label: copper(II) sulfate pentahydrate
 - preferred_term: Co(NO3)2 x 6H2O
   concentration:
     value: '49.4'

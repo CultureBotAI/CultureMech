@@ -14,25 +14,25 @@ ingredients:
 - preferred_term: Pyruvate
   term:
     id: CHEBI:15361
-    label: Pyruvate
+    label: pyruvate
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pyr'
   mediaingredientmech_chebi_term:
     id: CHEBI:15361
-    label: Pyruvate
+    label: pyruvate
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
-    label: Biotin
+    label: biotin
   concentration:
     value: 4e-06
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
-    label: Biotin
+    label: biotin
 - preferred_term: Nickel chloride
   concentration:
     value: 1e-06
@@ -53,65 +53,65 @@ ingredients:
 - preferred_term: L-Serine
   term:
     id: CHEBI:17115
-    label: L-Serine
+    label: L-serine
   concentration:
     value: '0.05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ser-L'
   mediaingredientmech_chebi_term:
     id: CHEBI:17115
-    label: L-Serine
+    label: L-serine
 - preferred_term: Sodium bicarbonate
   concentration:
     value: '6.0'
     unit: MILLIMOLAR
   term:
     id: CHEBI:32139
-    label: ''
+    label: sodium hydrogencarbonate
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: Sodium bicarbonate
+    label: sodium hydrogencarbonate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '10.0'
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: ''
+    label: calcium dichloride
 - preferred_term: Sodium molybdate
   concentration:
     value: 3e-07
     unit: MILLIMOLAR
   term:
     id: CHEBI:75215
-    label: ''
+    label: sodium molybdate (anhydrous)
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: magnesium sulfate
   concentration:
     value: '28.0'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: magnesium sulfate
 - preferred_term: DL-methionine
   term:
     id: CHEBI:16811
-    label: DL-Methionine
+    label: methionine
   concentration:
     value: '0.05'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:16811
-    label: DL-Methionine
+    label: methionine
 - preferred_term: Sodium selenite
   concentration:
     value: 1e-06
     unit: MILLIMOLAR
   term:
     id: CHEBI:48843
-    label: ''
+    label: disodium selenite
 - preferred_term: Potassium chloride
   concentration:
     value: '9.0'
@@ -128,17 +128,17 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:35696
-    label: ''
+    label: cobalt dichloride
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
-    label: Sodium Chloride
+    label: sodium chloride
   concentration:
     value: '481.0'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: Sodium Chloride
+    label: sodium chloride
 - preferred_term: Sodium dihydrogen phosphate
   concentration:
     value: '0.05'
@@ -152,30 +152,30 @@ ingredients:
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
-    label: Ammonium Sulfate
+    label: ammonium sulfate
   concentration:
     value: '0.4'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: Ammonium Sulfate
+    label: ammonium sulfate
 - preferred_term: Manganese chloride
   concentration:
     value: 9e-06
     unit: MILLIMOLAR
   term:
     id: CHEBI:63041
-    label: ''
+    label: manganese(II) chloride
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
-    label: Zinc Sulfate
+    label: zinc sulfate
   concentration:
     value: 8e-07
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:35176
-    label: Zinc Sulfate
+    label: zinc sulfate
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.000117'

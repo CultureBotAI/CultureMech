@@ -15,13 +15,13 @@ ingredients:
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
-    label: Glycerol
+    label: glycerol
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: Glycerol
+    label: glycerol
 - preferred_term: Calcium malate
   concentration:
     value: '10'
@@ -35,7 +35,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -45,17 +45,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
 preparation_steps:
 - step_number: 1
   action: MIX

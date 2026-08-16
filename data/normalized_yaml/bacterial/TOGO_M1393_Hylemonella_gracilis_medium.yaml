@@ -17,7 +17,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: Tween 80
   concentration:
     value: '0.02'
@@ -37,10 +37,10 @@ ingredients:
   notes: 'Role: Solvating media; Properties: Undefined component'
   term:
     id: CHEBI:15377
-    label: Tap water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Tap water
+    label: water
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'

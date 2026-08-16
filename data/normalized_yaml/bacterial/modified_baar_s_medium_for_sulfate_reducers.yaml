@@ -25,7 +25,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: dinitrogen
 - preferred_term: H2
   notes: 'Properties: ガス'
   concentration:
@@ -33,7 +33,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: ''
+    label: dihydrogen
 - preferred_term: NH4Cl
   concentration:
     value: '1'
@@ -54,10 +54,10 @@ ingredients:
     compound'
   mediaingredientmech_chebi_term:
     id: CHEBI:32583
-    label: CaSO4 x 2H2O
+    label: calcium sulfate dihydrate
   term:
     id: CHEBI:32583
-    label: ''
+    label: calcium sulfate dihydrate
 - preferred_term: MgSO4
   concentration:
     value: '2'

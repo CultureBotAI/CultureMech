@@ -9,24 +9,24 @@ ingredients:
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
-    label: Thiamine HCl
+    label: thiamine hydrochloride
   concentration:
     value: '0.002965'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:49105
-    label: Thiamine HCl
+    label: thiamine hydrochloride
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
-    label: Riboflavin
+    label: riboflavin
   concentration:
     value: '0.002657'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
   mediaingredientmech_chebi_term:
     id: CHEBI:17015
-    label: Riboflavin
+    label: riboflavin
 - preferred_term: Magnesium chloride
   concentration:
     value: '0.9838'
@@ -40,30 +40,30 @@ ingredients:
 - preferred_term: DL-methionine
   term:
     id: CHEBI:16811
-    label: DL-Methionine
+    label: methionine
   concentration:
     value: '0.8713'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:16811
-    label: DL-Methionine
+    label: methionine
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '22.04'
     unit: MILLIMOLAR
   term:
     id: CHEBI:63036
-    label: ''
+    label: potassium dihydrogen phosphate
 - preferred_term: Cysteine
   term:
     id: CHEBI:15356
-    label: Cysteine
+    label: cysteine
   concentration:
     value: '2.063'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:15356
-    label: Cysteine
+    label: cysteine
 - preferred_term: Ammonium citrate
   concentration:
     value: '28.69'
@@ -71,40 +71,40 @@ ingredients:
 - preferred_term: Sodium acetate
   term:
     id: CHEBI:32954
-    label: Sodium acetate
+    label: sodium acetate
   concentration:
     value: '12.19'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32954
-    label: Sodium acetate
+    label: sodium acetate
 - preferred_term: Proline
   term:
     id: CHEBI:26271
-    label: Proline
+    label: proline
   concentration:
     value: '5.906'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:26271
-    label: Proline
+    label: proline
 - preferred_term: Valine
   concentration:
     value: '2.817'
     unit: MILLIMOLAR
   term:
     id: CHEBI:16414
-    label: ''
+    label: L-valine
 - preferred_term: Histidine
   term:
     id: CHEBI:27570
-    label: Histidine
+    label: histidine
   concentration:
     value: '0.9667'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:27570
-    label: Histidine
+    label: histidine
 - preferred_term: Nicotinate
   concentration:
     value: '0.008123'
@@ -112,14 +112,14 @@ ingredients:
   notes: 'Cross-references: KEGG:nac'
   term:
     id: CHEBI:15940
-    label: ''
+    label: nicotinic acid
 - preferred_term: Pyridoxamine HCl
   concentration:
     value: '0.02443'
     unit: MILLIMOLAR
   term:
     id: CHEBI:131531
-    label: ''
+    label: pyridoxamine hydrochloride
 - preferred_term: Ascorbate
   concentration:
     value: '2.839'
@@ -131,21 +131,21 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: ''
+    label: calcium dichloride
 - preferred_term: Isoleucine
   concentration:
     value: '1.677'
     unit: MILLIMOLAR
   term:
     id: CHEBI:17191
-    label: ''
+    label: L-isoleucine
 - preferred_term: Leucine
   concentration:
     value: '3.659'
     unit: MILLIMOLAR
   term:
     id: CHEBI:15603
-    label: ''
+    label: L-leucine
 - preferred_term: L-Glutamate
   concentration:
     value: '2.719'
@@ -153,7 +153,7 @@ ingredients:
   notes: 'Cross-references: KEGG:glu-L'
   term:
     id: CHEBI:16015
-    label: ''
+    label: L-glutamic acid
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -170,18 +170,18 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:131527
-    label: ''
+    label: dipotassium hydrogen phosphate
 - preferred_term: Lactose
   term:
     id: CHEBI:17716
-    label: Lactose
+    label: lactose
   concentration:
     value: '29.21'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:lcts'
   mediaingredientmech_chebi_term:
     id: CHEBI:17716
-    label: Lactose
+    label: lactose
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

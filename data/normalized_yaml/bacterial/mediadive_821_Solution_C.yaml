@@ -20,7 +20,7 @@ composition:
     label: Double distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Double distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: "Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma\

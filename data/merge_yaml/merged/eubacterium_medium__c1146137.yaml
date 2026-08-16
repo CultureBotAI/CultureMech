@@ -19,13 +19,13 @@ ingredients:
 - preferred_term: Sodium thioglycolate
   term:
     id: CHEBI:86481
-    label: Sodium thioglycolate
+    label: sodium thioglycolate
   concentration:
     value: '1.3'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86481
-    label: Sodium thioglycolate
+    label: sodium thioglycolate
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -33,7 +33,7 @@ ingredients:
 - preferred_term: Thioglycolate
   term:
     id: CHEBI:30066
-    label: Thioglycolate
+    label: thioglycolate(1-)
   concentration:
     value: '29.5'
     unit: G_PER_L

@@ -19,13 +19,13 @@ ingredients:
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
-    label: Na2HPO4
+    label: disodium hydrogenphosphate
   concentration:
     value: '4'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34683
-    label: Na2HPO4
+    label: disodium hydrogenphosphate
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -35,27 +35,27 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: MgCl2
   term:
     id: CHEBI:6636
-    label: MgCl2
+    label: magnesium dichloride
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:6636
-    label: MgCl2
+    label: magnesium dichloride
 - preferred_term: Na glutamate
   term:
     id: CHEBI:64220
-    label: Na glutamate
+    label: monosodium glutamate
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:64220
-    label: Na glutamate
+    label: monosodium glutamate
 - preferred_term: Yeast extract
   concentration:
     value: '0.1'
@@ -63,23 +63,23 @@ ingredients:
 - preferred_term: Na2S2O3 x 5 H2O
   term:
     id: CHEBI:32150
-    label: Na2S2O3 x 5 H2O
+    label: sodium thiosulfate pentahydrate
   concentration:
     value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32150
-    label: Na2S2O3 x 5 H2O
+    label: sodium thiosulfate pentahydrate
 - preferred_term: Sodium succinate
   term:
     id: CHEBI:63675
-    label: Sodium succinate
+    label: sodium succinate (anhydrous)
   concentration:
     value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63675
-    label: Sodium succinate
+    label: sodium succinate (anhydrous)
 applications:
 - Microbial cultivation
 curation_history:

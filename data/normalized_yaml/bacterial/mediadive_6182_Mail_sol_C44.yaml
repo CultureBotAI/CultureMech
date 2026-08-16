@@ -31,7 +31,7 @@ composition:
     label: (NH4)Cl
   chebi_term:
     id: CHEBI:31206
-    label: (NH4)Cl
+    label: ammonium chloride
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Sodium beta-glycerophosphate
@@ -90,7 +90,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: "Note for Tris base: First add to 50ml of DIW and pH. Then slowly\

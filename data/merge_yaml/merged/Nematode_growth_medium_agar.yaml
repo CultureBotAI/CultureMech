@@ -32,7 +32,7 @@ ingredients:
   notes: 'CAS: 57-88-5; MW: 386.65; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:140435
-    label: ''
+    label: cholesterol-2,2,3,4,4,6-d6
 - preferred_term: Calcium chloride
   concentration:
     value: '1'

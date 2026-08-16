@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 5 duplicates: 960.0, 1.0, 1.0, 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '39.2'
@@ -137,7 +137,7 @@ ingredients:
     Simple component [Merged 2 duplicates: 99.0, 5.0]'
   term:
     id: CHEBI:75836
-    label: ''
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: Nitrilotriacetic acid
   concentration:
     value: '10'
@@ -172,7 +172,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: K2HPO4
   concentration:
     value: '2.5'
@@ -236,10 +236,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:30961
-    label: Pyridoxine-HCl
+    label: pyridoxine hydrochloride
   mediaingredientmech_chebi_term:
     id: CHEBI:30961
-    label: Pyridoxine-HCl
+    label: pyridoxine hydrochloride
 - preferred_term: Folic acid
   concentration:
     value: '0.2'
@@ -316,7 +316,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:35696
-    label: ''
+    label: cobalt dichloride
 - preferred_term: ZnSO4·7H2O
   concentration:
     value: '10.95'
@@ -358,7 +358,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:131366
-    label: ''
+    label: disodium tetraborate decahydrate
 - preferred_term: 2Na-EDTA
   concentration:
     value: '2.5'

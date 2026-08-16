@@ -10,7 +10,7 @@ composition:
     unit: G_PER_L
   term:
     id: CHEBI:42191
-    label: edetic acid
+    label: EDTA(4-)
   mediaingredientmech_term:
     id: MediaIngredientMech:001115
 - preferred_term: Potassium hydroxide

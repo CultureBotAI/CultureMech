@@ -37,7 +37,7 @@ composition:
     label: Thiamine-HCl x 2 H2O
   chebi_term:
     id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
+    label: thiamine hydrochloride dihydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Glucose
@@ -49,7 +49,7 @@ composition:
     label: Glucose
   chebi_term:
     id: CHEBI:17234
-    label: D-glucose
+    label: glucose
     confidence: 0.9
     match_type: manual_curated
 - preferred_term: Proline
@@ -61,7 +61,7 @@ composition:
     label: Proline
   chebi_term:
     id: CHEBI:26271
-    label: Proline
+    label: proline
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Tryptophan
@@ -73,7 +73,7 @@ composition:
     label: Tryptophan
   chebi_term:
     id: CHEBI:27897
-    label: Tryptophan
+    label: tryptophan
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -85,7 +85,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Adjust pH to 7.4.

@@ -19,13 +19,13 @@ ingredients:
 - preferred_term: Sucrose
   term:
     id: CHEBI:17992
-    label: Sucrose
+    label: sucrose
   concentration:
     value: '20'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17992
-    label: Sucrose
+    label: sucrose
 applications:
 - Microbial cultivation
 curation_history:

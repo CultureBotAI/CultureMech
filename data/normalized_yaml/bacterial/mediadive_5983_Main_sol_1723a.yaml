@@ -32,7 +32,7 @@ composition:
     label: NaH2PO4 x H2O
   chebi_term:
     id: CHEBI:37585
-    label: NaH2PO4 x H2O
+    label: sodium dihydrogenphosphate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Wheat Grains

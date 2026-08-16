@@ -35,7 +35,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:28017
-    label: ''
+    label: starch
 - preferred_term: maltose
   notes: 'Role: Carbon source'
   term:

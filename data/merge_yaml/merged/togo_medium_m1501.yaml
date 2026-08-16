@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.2'
@@ -79,7 +79,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:75836
-    label: ''
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: NH4NO3
   concentration:
     value: '2'
@@ -91,7 +91,7 @@ ingredients:
     label: ammonium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63038
-    label: NH4NO3
+    label: ammonium nitrate
 - preferred_term: MnSO4·7H2O
   concentration:
     value: '0.005'

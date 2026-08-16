@@ -61,7 +61,7 @@ composition:
     label: Thiamin pyrophosphate
   chebi_term:
     id: CHEBI:45931
-    label: Thiamin pyrophosphate
+    label: thiamine(1+) diphosphate(1-)
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Coenzym A
@@ -86,7 +86,7 @@ composition:
     label: Flavin adenine dinucleotide
   chebi_term:
     id: CHEBI:24040
-    label: Flavin adenine dinucleotide
+    label: flavin adenine dinucleotide
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: ß-nicotinamide adenine dinucleotide
@@ -134,7 +134,7 @@ composition:
     label: N-Acetylglucosamine
   chebi_term:
     id: CHEBI:59640
-    label: N-Acetylglucosamine
+    label: N-acetylglucosamine
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: D-glucuronic acid
@@ -172,7 +172,7 @@ composition:
     label: Pyruvic acid
   chebi_term:
     id: CHEBI:32816
-    label: Pyruvic acid
+    label: pyruvic acid
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Fumaric acid
@@ -198,7 +198,7 @@ composition:
     label: Formic acid
   chebi_term:
     id: CHEBI:30751
-    label: Formic acid
+    label: formic acid
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -210,7 +210,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Prepare Solutions C, flush with nitrogen to make them anoxic,

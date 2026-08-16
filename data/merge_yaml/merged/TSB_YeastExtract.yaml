@@ -47,7 +47,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: FOODON:03315426
-    label: Yeast extract
+    label: yeast extract
   notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 232-387-9'
 description: DSMZ media 92; Tryptic soy broth with yeast extract
 notes: 'Source: FEBA media definitions'

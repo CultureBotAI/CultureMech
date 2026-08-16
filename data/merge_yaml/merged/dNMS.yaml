@@ -44,7 +44,7 @@ ingredients:
   notes: 'CAS: 7646-85-7; MW: 136.3'
   term:
     id: CHEBI:49976
-    label: ''
+    label: zinc dichloride
 - preferred_term: Manganese (II) chloride tetrahydrate
   concentration:
     value: '0.152'
@@ -52,7 +52,7 @@ ingredients:
   notes: 'CAS: 13446-34-9; MW: 197.91; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:86368
-    label: ''
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: Sodium Molybdate Dihydrate
   concentration:
     value: '0.036'
@@ -60,7 +60,7 @@ ingredients:
   notes: 'CAS: 10102-40-6; MW: 241.95; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:75213
-    label: ''
+    label: sodium molybdate dihydrate
 - preferred_term: copper (II) chloride dihydrate
   concentration:
     value: '0.017'
@@ -68,7 +68,7 @@ ingredients:
   notes: 'CAS: 10125-13-0; MW: 170.48'
   term:
     id: CHEBI:86318
-    label: ''
+    label: copper(II) chloride dihydrate
 - preferred_term: Iron (II) chloride tetrahydrate
   concentration:
     value: '1.5'
@@ -76,7 +76,7 @@ ingredients:
   notes: 'CAS: 13478-10-9; MW: 198.81; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:86249
-    label: ''
+    label: iron dichloride tetrahydrate
 - preferred_term: Cobalt chloride hexahydrate
   concentration:
     value: '0.19'
@@ -84,7 +84,7 @@ ingredients:
   notes: 'CAS: 7791-13-1; MW: 237.93; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:53503
-    label: ''
+    label: cobalt chloride hexahydrate
 - preferred_term: Boric Acid
   concentration:
     value: '0.062'
@@ -100,7 +100,7 @@ ingredients:
   notes: 'CAS: 7791-20-0; MW: 237.69; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:53542
-    label: ''
+    label: nickel chloride hexahydrate
 - preferred_term: HEPES
   concentration:
     value: '476.6'

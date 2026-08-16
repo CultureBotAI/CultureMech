@@ -15,7 +15,7 @@ ingredients:
   notes: 'CAS: 13478-10-9; MW: 198.81; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:86249
-    label: ''
+    label: iron dichloride tetrahydrate
 description: Rich lactate-sulfate media for sulfate-reducing bacteria with no Fe
 notes: 'Source: FEBA media definitions'
 category: specialized

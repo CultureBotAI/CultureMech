@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 3 duplicates: 981.0, 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: KH2PO4
   concentration:
     value: '0.75'
@@ -29,7 +29,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: NH4Cl
   concentration:
     value: '1'
@@ -74,7 +74,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86345
-    label: ''
+    label: magnesium dichloride hexahydrate
 - preferred_term: NaS2・9H2O
   concentration:
     value: '0.5'
@@ -122,7 +122,7 @@ ingredients:
   notes: 'Properties: Organic compound, Simple component, Defined component'
   term:
     id: CHEBI:91248
-    label: ''
+    label: L-cysteine hydrochloride hydrate
 - preferred_term: Polypepton (Nihon Pharm. Co.)
   concentration:
     value: '0.1'
@@ -139,7 +139,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: carbon dioxide
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -147,7 +147,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: dinitrogen
 - preferred_term: Biotin
   concentration:
     value: '2'
@@ -166,10 +166,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:30753
-    label: p--Aminobenzoic acid
+    label: 4-aminobenzoic acid
   term:
     id: CHEBI:30753
-    label: ''
+    label: 4-aminobenzoic acid
 - preferred_term: Thiamine・HCl
   concentration:
     value: '5'
@@ -177,7 +177,7 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:49105
-    label: ''
+    label: thiamine hydrochloride
 - preferred_term: Calcium pantothenate
   concentration:
     value: '5'
@@ -196,7 +196,7 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:30961
-    label: Pyridoxine・HCl
+    label: pyridoxine hydrochloride
 - preferred_term: Folic acid
   concentration:
     value: '2'
@@ -261,7 +261,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: calcium chloride dihydrate
 - preferred_term: Na2MoO4・2H2O
   concentration:
     value: '0.01'
@@ -291,7 +291,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86368
-    label: ''
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: CoCl2・6H2O
   concentration:
     value: '0.17'
@@ -300,7 +300,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:35696
-    label: ''
+    label: cobalt dichloride
 - preferred_term: NiCl2・6H2O
   concentration:
     value: '0.03'
@@ -309,7 +309,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:34887
-    label: ''
+    label: nickel dichloride
 - preferred_term: ZnCl2
   concentration:
     value: '0.1'
@@ -342,7 +342,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86249
-    label: ''
+    label: iron dichloride tetrahydrate
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
   term:

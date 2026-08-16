@@ -15,13 +15,13 @@ ingredients:
 - preferred_term: Middlebrook 7H10 agar
   term:
     id: CHEBI:2509
-    label: Middlebrook 7H10 agar
+    label: agar
   concentration:
     value: '900'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Middlebrook 7H10 agar
+    label: agar
 - preferred_term: OADC Enrichment
   concentration:
     value: '100'
@@ -29,13 +29,13 @@ ingredients:
 - preferred_term: Haemin
   term:
     id: CHEBI:50385
-    label: Haemin
+    label: hemin
   concentration:
     value: '60'
     unit: MICROMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:50385
-    label: Haemin
+    label: hemin
 preparation_steps:
 - step_number: 1
   action: MIX

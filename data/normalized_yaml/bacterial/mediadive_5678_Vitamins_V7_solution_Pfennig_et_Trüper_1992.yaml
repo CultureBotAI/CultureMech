@@ -13,7 +13,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Biotine
@@ -49,7 +49,7 @@ composition:
     label: Thiamine
   chebi_term:
     id: CHEBI:26948
-    label: Thiamine
+    label: vitamin B1
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Pantothenate
@@ -61,7 +61,7 @@ composition:
     label: Pantothenate
   chebi_term:
     id: CHEBI:16454
-    label: Pantothenate
+    label: pantothenate
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Pyridoxamine
@@ -73,7 +73,7 @@ composition:
     label: Pyridoxamine
   chebi_term:
     id: CHEBI:16410
-    label: Pyridoxamine
+    label: pyridoxamine
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Vitamine B12
@@ -85,7 +85,7 @@ composition:
     label: Vitamine B12
   chebi_term:
     id: CHEBI:176843
-    label: Vitamin B12
+    label: vitamin B12
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Nicotinate

@@ -34,17 +34,17 @@ ingredients:
     label: polysorbate 40
   mediaingredientmech_chebi_term:
     id: CHEBI:53423
-    label: Tween 40
+    label: polysorbate 40
 - preferred_term: Glycerol
   concentration:
     value: '2'
     unit: ML_PER_L
   term:
     id: CHEBI:17754
-    label: Glycerol
+    label: glycerol
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: Glycerol
+    label: glycerol
 - preferred_term: Oleic acid
   concentration:
     value: '2'
@@ -54,7 +54,7 @@ ingredients:
     label: oleic acid
   mediaingredientmech_chebi_term:
     id: CHEBI:16196
-    label: Oleic acid
+    label: oleic acid
 - preferred_term: Agar
   concentration:
     value: '12'
@@ -64,7 +64,7 @@ ingredients:
     label: agar
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -74,7 +74,7 @@ ingredients:
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 preparation_steps:
 - step_number: 1
   action: MIX

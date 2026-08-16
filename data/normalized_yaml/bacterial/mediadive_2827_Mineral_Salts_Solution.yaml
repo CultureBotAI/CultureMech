@@ -34,7 +34,7 @@ composition:
     label: Glucose
   chebi_term:
     id: CHEBI:17234
-    label: D-glucose
+    label: glucose
     confidence: 0.9
     match_type: manual_curated
 - preferred_term: Starch
@@ -58,7 +58,7 @@ composition:
     label: Na-pyruvate
   chebi_term:
     id: CHEBI:50144
-    label: Na-pyruvate
+    label: sodium pyruvate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: K2HPO4
@@ -94,7 +94,7 @@ composition:
     label: FeSO4
   chebi_term:
     id: CHEBI:75832
-    label: ferrous sulfate
+    label: iron(2+) sulfate (anhydrous)
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Sea water
@@ -113,7 +113,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Agar
@@ -126,7 +126,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Adjust to pH 7.0 and sterilize by autoclaving. The medium may be

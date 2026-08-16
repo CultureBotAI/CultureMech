@@ -21,13 +21,13 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: Glucose
+    label: glucose
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: Glucose
+    label: glucose
 - preferred_term: Yeast extract
   concentration:
     value: '0.25'
@@ -45,24 +45,24 @@ ingredients:
 - preferred_term: Double distilled water
   term:
     id: CHEBI:15377
-    label: Double distilled water
+    label: water
   concentration:
     value: '2000.0'
     unit: G_PER_L
   notes: ' [Merged 3 duplicates: 1000.0, 500.0, 500.0]'
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Double distilled water
+    label: water
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
 - preferred_term: NaOH
   term:
     id: CHEBI:32145

@@ -14,10 +14,10 @@ ingredients:
     Defined component [Merged 2 duplicates: 1.0, 100.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: KH2PO4
   concentration:
     value: '0.28'
@@ -29,7 +29,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: Sodium acetate
   concentration:
     value: '0.05'
@@ -49,10 +49,10 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:63005
-    label: ''
+    label: sodium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63005
-    label: NaNO3
+    label: sodium nitrate
 - preferred_term: Sodium succinate
   concentration:
     value: '0.37'
@@ -107,7 +107,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86254
-    label: ''
+    label: iron trichloride hexahydrate
 - preferred_term: Quinic acid
   concentration:
     value: '0.19'

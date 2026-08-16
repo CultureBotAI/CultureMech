@@ -13,7 +13,7 @@ composition:
     label: NaCl
   chebi_term:
     id: CHEBI:26710
-    label: 1% sodium chloride
+    label: sodium chloride
     confidence: 1.0
     match_type: exact_match
 - preferred_term: KCl
@@ -37,7 +37,7 @@ composition:
     label: NaBr
   chebi_term:
     id: CHEBI:63004
-    label: NaBr
+    label: sodium bromide
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: MgCl2 x 6 H2O
@@ -49,7 +49,7 @@ composition:
     label: MgCl2 x 6 H2O
   chebi_term:
     id: CHEBI:86345
-    label: magnesium chloride hexahydrate
+    label: magnesium dichloride hexahydrate
     match_type: corpus_consensus
 - preferred_term: MgSO4 x 7 H2O
   concentration:
@@ -84,7 +84,7 @@ composition:
     label: CaCl2 x 2 H2O
   chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Yeast extract
@@ -103,7 +103,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Agar
@@ -116,7 +116,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Final pH should be 7.4. For solid media add 15.0 g/l agar.

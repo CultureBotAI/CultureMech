@@ -11,7 +11,7 @@ ingredients:
   notes: 'CAS: 7789-20-0; MW: 20.03; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:41981
-    label: ''
+    label: dideuterium oxide
 - preferred_term: D-Glucose
   concentration:
     value: '4'

@@ -13,7 +13,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na2CO3
@@ -85,7 +85,7 @@ composition:
     label: Cellulose
   chebi_term:
     id: CHEBI:18246
-    label: Cellulose
+    label: (1->4)-beta-D-glucan
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: NH4Cl
@@ -116,7 +116,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: As carbon source Sigmacell 101 or Whatman filter paper "1" can

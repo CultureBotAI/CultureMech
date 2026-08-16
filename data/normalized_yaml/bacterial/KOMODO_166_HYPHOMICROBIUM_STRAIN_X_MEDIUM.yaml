@@ -23,27 +23,27 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
 - preferred_term: NaH2PO4 x H2O
   term:
     id: CHEBI:37585
-    label: NaH2PO4 x H2O
+    label: sodium dihydrogenphosphate
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:37585
-    label: NaH2PO4 x H2O
+    label: sodium dihydrogenphosphate
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -53,47 +53,47 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
 - preferred_term: Methylamine hydrochloride
   term:
     id: CHEBI:59337
-    label: Methylamine hydrochloride
+    label: methylamine hydrochloride
   concentration:
     value: '3.4'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:59337
-    label: Methylamine hydrochloride
+    label: methylamine hydrochloride
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
 - preferred_term: Na2-EDTA
   term:
     id: CHEBI:64734
-    label: Na2-EDTA
+    label: EDTA disodium salt (anhydrous)
   concentration:
     value: '50'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:64734
-    label: Na2-EDTA
+    label: EDTA disodium salt (anhydrous)
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
   concentration:
     value: '5.54'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
 - preferred_term: (NH4)6Mo7O24 x 4 H2O
   concentration:
     value: '1.1'
@@ -161,53 +161,53 @@ solutions:
   - preferred_term: ZnSO4 x 7 H2O
     term:
       id: CHEBI:32312
-      label: ZnSO4 x 7 H2O
+      label: zinc sulfate heptahydrate
     concentration:
       value: '22'
       unit: G_PER_L
     mediaingredientmech_chebi_term:
       id: CHEBI:32312
-      label: ZnSO4 x 7 H2O
+      label: zinc sulfate heptahydrate
   - preferred_term: MnCl2 x 4 H2O
     term:
       id: CHEBI:86368
-      label: MnCl2 x 4 H2O
+      label: manganese(II) chloride tetrahydrate
     concentration:
       value: '5.06'
       unit: G_PER_L
     mediaingredientmech_chebi_term:
       id: CHEBI:86368
-      label: MnCl2 x 4 H2O
+      label: manganese(II) chloride tetrahydrate
   - preferred_term: FeSO4 x 7 H2O
     term:
       id: CHEBI:75836
-      label: FeSO4 x 7 H2O
+      label: iron(2+) sulfate heptahydrate
     concentration:
       value: '5'
       unit: G_PER_L
     mediaingredientmech_chebi_term:
       id: CHEBI:75836
-      label: FeSO4 x 7 H2O
+      label: iron(2+) sulfate heptahydrate
   - preferred_term: CuSO4 x 5 H2O
     term:
       id: CHEBI:31440
-      label: CuSO4 x 5 H2O
+      label: copper(II) sulfate pentahydrate
     concentration:
       value: '1.57'
       unit: G_PER_L
     mediaingredientmech_chebi_term:
       id: CHEBI:31440
-      label: CuSO4 x 5 H2O
+      label: copper(II) sulfate pentahydrate
   - preferred_term: CoCl2 x 6 H2O
     term:
       id: CHEBI:35696
-      label: CoCl2 x 6 H2O
+      label: cobalt dichloride
     concentration:
       value: '1.61'
       unit: G_PER_L
     mediaingredientmech_chebi_term:
       id: CHEBI:35696
-      label: CoCl2 x 6 H2O
+      label: cobalt dichloride
   concentration:
     value: '0.2'
     unit: ML_PER_L

@@ -26,100 +26,100 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
   concentration:
     value: '4.90196'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    label: L-cysteine hydrochloride hydrate
   concentration:
     value: '0.490196'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    label: L-cysteine hydrochloride hydrate
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
-    label: NaHCO3
+    label: sodium hydrogencarbonate
   concentration:
     value: '0.490196'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: NaHCO3
+    label: sodium hydrogencarbonate
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.000490196'
     unit: G_PER_L
   term:
     id: CHEBI:8806
-    label: ''
+    label: Resazurin
 - preferred_term: Methanol
   term:
     id: CHEBI:17790
-    label: Methanol
+    label: methanol
   concentration:
     value: '7.76471'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17790
-    label: Methanol
+    label: methanol
 - preferred_term: DL-Dithiothreitol
   term:
     id: CHEBI:18320
-    label: DL-Dithiothreitol
+    label: 1,4-dithiothreitol
   concentration:
     value: '0.980392'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:18320
-    label: DL-Dithiothreitol
+    label: 1,4-dithiothreitol
 - preferred_term: Haemin
   term:
     id: CHEBI:50385
-    label: Haemin
+    label: hemin
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:50385
-    label: Haemin
+    label: hemin
 - preferred_term: NaOH
   term:
     id: CHEBI:32145
-    label: NaOH
+    label: sodium hydroxide
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32145
-    label: NaOH
+    label: sodium hydroxide
 - preferred_term: Vitamin K1
   term:
     id: CHEBI:18067
-    label: Vitamin K1
+    label: phylloquinone
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:18067
-    label: Vitamin K1
+    label: phylloquinone
 - preferred_term: Ethanol
   term:
     id: CHEBI:16236
-    label: Ethanol
+    label: ethanol
   concentration:
     value: '950'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16236
-    label: Ethanol
+    label: ethanol
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

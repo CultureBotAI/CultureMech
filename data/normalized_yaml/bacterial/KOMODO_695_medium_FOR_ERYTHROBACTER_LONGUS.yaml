@@ -33,13 +33,13 @@ ingredients:
 - preferred_term: Fe(III) citrate
   term:
     id: CHEBI:144421
-    label: Fe(III) citrate
+    label: iron(III) citrate
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:144421
-    label: Fe(III) citrate
+    label: iron(III) citrate
 - preferred_term: Sea water
   concentration:
     value: '700'

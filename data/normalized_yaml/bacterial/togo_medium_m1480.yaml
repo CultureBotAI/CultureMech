@@ -14,10 +14,10 @@ ingredients:
     Inorganic compound'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: Yeast extract
   concentration:
     value: '1.5'
@@ -55,10 +55,10 @@ ingredients:
     component'
   mediaingredientmech_chebi_term:
     id: CHEBI:34683
-    label: Na2HPO4·12H2O
+    label: disodium hydrogenphosphate
   term:
     id: CHEBI:34683
-    label: ''
+    label: disodium hydrogenphosphate
 - preferred_term: Glucose
   concentration:
     value: '5'

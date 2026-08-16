@@ -13,7 +13,7 @@ composition:
     label: Glucose
   chebi_term:
     id: CHEBI:17234
-    label: D-glucose
+    label: glucose
     confidence: 0.9
     match_type: manual_curated
 - preferred_term: K2HPO4
@@ -37,7 +37,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: MgSO4 x 7 H2O
@@ -61,7 +61,7 @@ composition:
     label: FeSO4 x 7 H2O
   chebi_term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: iron(2+) sulfate heptahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: MnSO4 x 6 H2O
@@ -73,7 +73,7 @@ composition:
     label: MnSO4 x 6 H2O
   chebi_term:
     id: CHEBI:131523
-    label: MnSO4 x 6 H2O
+    label: manganese(II) sulfate hexahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: ZnSO4 x 6 H2O
@@ -85,7 +85,7 @@ composition:
     label: ZnSO4 x 6 H2O
   chebi_term:
     id: CHEBI:132762
-    label: ZnSO4 x 6 H2O
+    label: zinc sulfate hexahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: CuSO4 x 6 H2O
@@ -97,7 +97,7 @@ composition:
     label: CuSO4 x 6 H2O
   chebi_term:
     id: CHEBI:91246
-    label: CuSO4 x 6 H2O
+    label: copper(II) sulfate hexahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na2MoO4 x 2 H2O
@@ -121,7 +121,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -133,7 +133,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Adjust pH to 6.5. Sterilize glucose separately (10 g in 50 ml

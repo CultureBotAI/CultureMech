@@ -16,13 +16,13 @@ ingredients:
 - preferred_term: Sodium succinate
   term:
     id: CHEBI:63675
-    label: Sodium succinate
+    label: sodium succinate (anhydrous)
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63675
-    label: Sodium succinate
+    label: sodium succinate (anhydrous)
 - preferred_term: Bacto peptone
   concentration:
     value: '10'
@@ -36,17 +36,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
 - preferred_term: MnSO4 x n H2O
   concentration:
     value: '0.002'
@@ -57,23 +57,23 @@ ingredients:
 - preferred_term: FeCl3 x 6 H2O
   term:
     id: CHEBI:86254
-    label: FeCl3 x 6 H2O
+    label: iron trichloride hexahydrate
   concentration:
     value: '0.002'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86254
-    label: FeCl3 x 6 H2O
+    label: iron trichloride hexahydrate
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

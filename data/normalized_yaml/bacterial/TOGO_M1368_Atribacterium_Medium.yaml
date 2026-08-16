@@ -14,10 +14,10 @@ ingredients:
     Defined component [Merged 2 duplicates: 1.0, 10.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: NaCl
   concentration:
     value: '3'
@@ -96,7 +96,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: dinitrogen
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.123'
@@ -114,7 +114,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86158
-    label: ''
+    label: calcium chloride dihydrate
 media_term:
   preferred_term: TOGO Medium M1368
   term:

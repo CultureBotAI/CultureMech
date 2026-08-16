@@ -27,13 +27,13 @@ ingredients:
 - preferred_term: L-Glutamine
   term:
     id: CHEBI:18050
-    label: L-Glutamine
+    label: L-glutamine
   concentration:
     value: '0.029228'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:18050
-    label: L-Glutamine
+    label: L-glutamine
 preparation_steps:
 - step_number: 1
   action: MIX

@@ -13,7 +13,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'The pH should be between 7.0 and 7.4. Do not adjust if it is within

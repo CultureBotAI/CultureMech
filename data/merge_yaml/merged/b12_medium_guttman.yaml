@@ -25,7 +25,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -35,7 +35,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
 - preferred_term: Trisodium citrate x 2 H2O
   concentration:
     value: '1'
@@ -49,83 +49,83 @@ ingredients:
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
 - preferred_term: DL-Asparagine x H2O
   term:
     id: CHEBI:22653
-    label: DL-Asparagine x H2O
+    label: asparagine
   concentration:
     value: '0.8'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:22653
-    label: DL-Asparagine x H2O
+    label: asparagine
 - preferred_term: L-Arginine x HCl
   concentration:
     value: '0.2'
     unit: G_PER_L
   term:
     id: CHEBI:31235
-    label: ''
+    label: Arginine hydrochloride
   mediaingredientmech_chebi_term:
     id: CHEBI:31235
-    label: L-Arginine x HCl
+    label: Arginine hydrochloride
 - preferred_term: L-Glutamic acid
   term:
     id: CHEBI:16015
-    label: L-Glutamic acid
+    label: L-glutamic acid
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16015
-    label: L-Glutamic acid
+    label: L-glutamic acid
 - preferred_term: Glycine
   term:
     id: CHEBI:15428
-    label: Glycine
+    label: glycine
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15428
-    label: Glycine
+    label: glycine
 - preferred_term: L-Histidine
   term:
     id: CHEBI:15971
-    label: L-Histidine
+    label: L-histidine
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15971
-    label: L-Histidine
+    label: L-histidine
 - preferred_term: L-Tryptophan
   term:
     id: CHEBI:16828
-    label: L-Tryptophan
+    label: L-tryptophan
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16828
-    label: L-Tryptophan
+    label: L-tryptophan
 - preferred_term: L-Proline
   term:
     id: CHEBI:17203
-    label: L-Proline
+    label: L-proline
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17203
-    label: L-Proline
+    label: L-proline
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -135,27 +135,27 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: Glucose
+    label: glucose
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: Glucose
+    label: glucose
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
-    label: Vitamin B12
+    label: cyanocob(III)alamin
   concentration:
     value: 4e-05
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17439
-    label: Vitamin B12
+    label: cyanocob(III)alamin
 applications:
 - Microbial cultivation
 curation_history:

@@ -38,7 +38,7 @@ composition:
     label: D
   chebi_term:
     id: CHEBI:29958
-    label: D
+    label: L-aspartic acid residue
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Hypoxanthine
@@ -74,7 +74,7 @@ composition:
     label: Thymidine
   chebi_term:
     id: CHEBI:17748
-    label: Thymidine
+    label: thymidine
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: N-(2-acetamido)-2-aminoethanesulfonic acid
@@ -98,7 +98,7 @@ composition:
     label: DL-carnitine
   chebi_term:
     id: CHEBI:17126
-    label: DL-carnitine
+    label: carnitine
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Putrescine 2 HCl
@@ -134,7 +134,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Prepare Solutions D, flush with nitrogen to make them anoxic,

@@ -20,7 +20,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Fetal bovine serum
@@ -53,7 +53,7 @@ composition:
     label: Amphotericin B
   chebi_term:
     id: CHEBI:2682
-    label: amphotericin b
+    label: amphotericin B
     confidence: 1.0
     match_type: exact_match
 preparation_notes: "Autoclave. After cooling to 50C and add aseptically 135 ï¿½l of\

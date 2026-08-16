@@ -13,7 +13,7 @@ composition:
     label: NH4H2PO4
   chebi_term:
     id: CHEBI:62982
-    label: NH4H2PO4
+    label: ammonium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: MgSO4 x 7 H2O
@@ -37,7 +37,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Original volume: 969 mL'

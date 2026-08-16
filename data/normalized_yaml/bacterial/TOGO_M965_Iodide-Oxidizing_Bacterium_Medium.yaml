@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: Potassium iodide
   concentration:
     value: '1'
@@ -26,10 +26,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:8346
-    label: Potassium iodide
+    label: potassium iodide
   mediaingredientmech_chebi_term:
     id: CHEBI:8346
-    label: Potassium iodide
+    label: potassium iodide
 - preferred_term: Soluble starch
   concentration:
     value: '1.2'
@@ -37,7 +37,7 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Undefined component'
   term:
     id: CHEBI:28017
-    label: ''
+    label: starch
 - preferred_term: Marine agar 2216 (BD-Difco)
   concentration:
     value: '55.1'

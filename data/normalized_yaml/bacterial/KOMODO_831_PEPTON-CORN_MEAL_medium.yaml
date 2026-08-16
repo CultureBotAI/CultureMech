@@ -17,33 +17,33 @@ ingredients:
 - preferred_term: Starch
   term:
     id: CHEBI:28017
-    label: Starch
+    label: starch
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:28017
-    label: Starch
+    label: starch
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
   concentration:
     value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
 - preferred_term: CaCl2
   term:
     id: CHEBI:3312
-    label: CaCl2
+    label: calcium dichloride
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:3312
-    label: CaCl2
+    label: calcium dichloride
 - preferred_term: Peptone
   concentration:
     value: '5'
@@ -51,13 +51,13 @@ ingredients:
 - preferred_term: Corn meal agar
   term:
     id: CHEBI:2509
-    label: Corn meal agar
+    label: agar
   concentration:
     value: '17'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Corn meal agar
+    label: agar
 applications:
 - Microbial cultivation
 curation_history:

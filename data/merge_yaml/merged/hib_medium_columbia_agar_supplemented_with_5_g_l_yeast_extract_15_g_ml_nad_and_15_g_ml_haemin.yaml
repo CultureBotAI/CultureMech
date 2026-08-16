@@ -20,10 +20,10 @@ ingredients:
     compound'
   term:
     id: CHEBI:50385
-    label: Haemin
+    label: hemin
   mediaingredientmech_chebi_term:
     id: CHEBI:50385
-    label: Haemin
+    label: hemin
 - preferred_term: NAD
   concentration:
     value: '15'

@@ -39,7 +39,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Bovine calf serum
@@ -58,7 +58,7 @@ composition:
     label: Urea
   chebi_term:
     id: CHEBI:16199
-    label: Urea
+    label: urea
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Urea
@@ -70,7 +70,7 @@ composition:
     label: Urea
   chebi_term:
     id: CHEBI:16199
-    label: Urea
+    label: urea
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Yeast extract
@@ -89,7 +89,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: "Mix components, adjust pH to 6.0-6.2. After autoclaving and then\

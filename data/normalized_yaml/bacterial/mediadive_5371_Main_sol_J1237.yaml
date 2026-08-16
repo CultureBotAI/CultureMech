@@ -34,7 +34,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: NaCl
@@ -46,7 +46,7 @@ composition:
     label: NaCl
   chebi_term:
     id: CHEBI:26710
-    label: 1% sodium chloride
+    label: sodium chloride
     confidence: 1.0
     match_type: exact_match
 - preferred_term: MgCl2 x 6 H2O
@@ -58,7 +58,7 @@ composition:
     label: MgCl2 x 6 H2O
   chebi_term:
     id: CHEBI:86345
-    label: magnesium chloride hexahydrate
+    label: magnesium dichloride hexahydrate
     match_type: corpus_consensus
 - preferred_term: CaCl2 x 2 H2O
   concentration:
@@ -69,7 +69,7 @@ composition:
     label: CaCl2 x 2 H2O
   chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Sodium resazurin
@@ -93,7 +93,7 @@ composition:
     label: L-Cysteine HCl x H2O
   chebi_term:
     id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    label: L-cysteine hydrochloride hydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Xylan
@@ -117,7 +117,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Dissolve ingredients (except cysteine), boil medium for 1 min,

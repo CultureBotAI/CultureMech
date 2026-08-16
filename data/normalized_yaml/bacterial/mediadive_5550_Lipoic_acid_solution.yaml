@@ -13,7 +13,7 @@ composition:
     label: Lipoic acid
   chebi_term:
     id: CHEBI:16494
-    label: Lipoic acid
+    label: lipoic acid
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: NaOH

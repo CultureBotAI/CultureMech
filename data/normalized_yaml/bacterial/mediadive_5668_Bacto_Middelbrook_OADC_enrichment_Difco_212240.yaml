@@ -13,7 +13,7 @@ composition:
     label: Oleic acid
   chebi_term:
     id: CHEBI:16196
-    label: Oleic acid
+    label: oleic acid
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Bovine albumin
@@ -51,7 +51,7 @@ composition:
     label: NaCl
   chebi_term:
     id: CHEBI:26710
-    label: 1% sodium chloride
+    label: sodium chloride
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Distilled water
@@ -63,7 +63,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Original volume: 100 mL'

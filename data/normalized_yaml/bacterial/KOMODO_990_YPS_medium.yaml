@@ -39,13 +39,13 @@ ingredients:
 - preferred_term: Elemental sulphur
   term:
     id: CHEBI:33403
-    label: Elemental sulphur
+    label: elemental sulfur
   concentration:
     value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:33403
-    label: Elemental sulphur
+    label: elemental sulfur
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -55,7 +55,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -65,27 +65,27 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: CaCl2
   term:
     id: CHEBI:3312
-    label: CaCl2
+    label: calcium dichloride
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:3312
-    label: CaCl2
+    label: calcium dichloride
 - preferred_term: FeCl3
   term:
     id: CHEBI:30808
-    label: FeCl3
+    label: iron trichloride
   concentration:
     value: '0.0067'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30808
-    label: FeCl3
+    label: iron trichloride
 - preferred_term: Na2WO4
   term:
     id: CHEBI:63940
@@ -95,7 +95,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63940
-    label: Na2WO4
+    label: sodium tungstate
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -109,13 +109,13 @@ ingredients:
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
-    label: Na2S x 9 H2O
+    label: sodium sulfide nonahydrate
   concentration:
     value: '0.25'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:76209
-    label: Na2S x 9 H2O
+    label: sodium sulfide nonahydrate
 applications:
 - Microbial cultivation
 curation_history:

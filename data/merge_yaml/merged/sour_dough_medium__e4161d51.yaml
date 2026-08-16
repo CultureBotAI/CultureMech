@@ -16,13 +16,13 @@ ingredients:
 - preferred_term: Maltose
   term:
     id: CHEBI:17306
-    label: Maltose
+    label: maltose
   concentration:
     value: '20'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17306
-    label: Maltose
+    label: maltose
 - preferred_term: Yeast extract
   concentration:
     value: '18.0'
@@ -31,13 +31,13 @@ ingredients:
 - preferred_term: Tween 80
   term:
     id: CHEBI:53426
-    label: Tween 80
+    label: polysorbate 80
   concentration:
     value: '0.3'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:53426
-    label: Tween 80
+    label: polysorbate 80
 - preferred_term: Casein peptone
   concentration:
     value: '6'

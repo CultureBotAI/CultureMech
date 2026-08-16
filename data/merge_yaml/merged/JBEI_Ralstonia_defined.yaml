@@ -29,7 +29,7 @@ ingredients:
   notes: 'CAS: 558-80-7; MW: 119.98'
   term:
     id: CHEBI:37585
-    label: ''
+    label: sodium dihydrogenphosphate
 - preferred_term: Disodium phosphate
   concentration:
     value: '32.25'
@@ -46,7 +46,7 @@ ingredients:
   notes: 'CAS: 7778-80-5; MW: 174.259; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:32036
-    label: ''
+    label: potassium sulfate
 - preferred_term: Sodium Hydroxide
   concentration:
     value: '1.00'
@@ -54,7 +54,7 @@ ingredients:
   notes: 'CAS: 1310-73-2; MW: 40.0; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:32145
-    label: ''
+    label: sodium hydroxide
 - preferred_term: Ammonium chloride
   concentration:
     value: '1.87'
@@ -71,7 +71,7 @@ ingredients:
   notes: 'CAS: 7758-99-8; MW: 249.69; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:31440
-    label: ''
+    label: copper(II) sulfate pentahydrate
 - preferred_term: Zinc sulfate heptahydrate
   concentration:
     value: '0.0024'
@@ -79,7 +79,7 @@ ingredients:
   notes: 'CAS: 7446-20-0; MW: 287.56; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:32312
-    label: ''
+    label: zinc sulfate heptahydrate
 - preferred_term: Manganese (II) sulfate monohydrate
   concentration:
     value: '0.0024'
@@ -95,7 +95,7 @@ ingredients:
   notes: 'CAS: 7782-63-0; MW: 278.01; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:75836
-    label: ''
+    label: iron(2+) sulfate heptahydrate
 description: JBEI media for growing Ralstonia
 notes: 'Source: FEBA media definitions'
 category: specialized

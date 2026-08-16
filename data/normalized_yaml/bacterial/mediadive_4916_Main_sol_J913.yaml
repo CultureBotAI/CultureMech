@@ -13,7 +13,7 @@ composition:
     label: Marine agar 2216
   chebi_term:
     id: CHEBI:2509
-    label: Marine agar 2216
+    label: agar
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Casitone

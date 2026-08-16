@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.5'
@@ -47,10 +47,10 @@ ingredients:
     component'
   term:
     id: CHEBI:17754
-    label: Glycerol
+    label: glycerol
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: Glycerol
+    label: glycerol
 - preferred_term: Ferric ammonium citrate
   concentration:
     value: '50'
@@ -71,10 +71,10 @@ ingredients:
     Organic compound'
   term:
     id: CHEBI:17196
-    label: L-Asparagine
+    label: L-asparagine
   mediaingredientmech_chebi_term:
     id: CHEBI:17196
-    label: L--Asparagine
+    label: L-asparagine
 - preferred_term: Agar
   concentration:
     value: '15'

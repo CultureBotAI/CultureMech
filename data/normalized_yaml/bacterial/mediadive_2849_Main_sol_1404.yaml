@@ -25,7 +25,7 @@ composition:
     label: NaCl
   chebi_term:
     id: CHEBI:26710
-    label: 1% sodium chloride
+    label: sodium chloride
     confidence: 1.0
     match_type: exact_match
 - preferred_term: MgSO4 x 7 H2O
@@ -49,7 +49,7 @@ composition:
     label: MgCl2 x 6 H2O
   chebi_term:
     id: CHEBI:86345
-    label: magnesium chloride hexahydrate
+    label: magnesium dichloride hexahydrate
     match_type: corpus_consensus
 - preferred_term: NH4Cl
   concentration:
@@ -84,7 +84,7 @@ composition:
     label: CaCl2 x 2 H2O
   chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: K2HPO4 x 3 H2O
@@ -96,7 +96,7 @@ composition:
     label: K2HPO4 x 3 H2O
   chebi_term:
     id: CHEBI:131527
-    label: K2HPO4 x 3 H2O
+    label: dipotassium hydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Peptone
@@ -134,7 +134,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Prepare the medium without the vitamin solution. Adjust to pH 7.25.

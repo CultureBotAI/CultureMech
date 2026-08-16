@@ -65,7 +65,7 @@ ingredients:
     label: calcium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:64205
-    label: Ca(NO3)2
+    label: calcium nitrate
 - preferred_term: Deionized water
   concentration:
     value: '1'

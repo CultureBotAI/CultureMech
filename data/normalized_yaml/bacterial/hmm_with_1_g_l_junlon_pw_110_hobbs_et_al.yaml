@@ -9,14 +9,14 @@ ingredients:
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
-    label: D-Glucose
+    label: D-glucose
   concentration:
     value: '11.1012'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
   mediaingredientmech_chebi_term:
     id: CHEBI:17634
-    label: D-Glucose
+    label: D-glucose
 - preferred_term: Propenoate
   concentration:
     value: '13.8773'
@@ -28,92 +28,92 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:9754
-    label: ''
+    label: tris
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.00108626'
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: ''
+    label: calcium dichloride
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
-    label: Boric acid
+    label: boric acid
   concentration:
     value: '0.00501375'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: Boric acid
+    label: boric acid
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '11.4811'
     unit: MILLIMOLAR
   term:
     id: CHEBI:131527
-    label: ''
+    label: dipotassium hydrogen phosphate
 - preferred_term: Sodium sulfate
   concentration:
     value: '35.2014'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32149
-    label: Sodium sulfate
+    label: sodium sulfate
   term:
     id: CHEBI:32149
-    label: ''
+    label: sodium sulfate
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.0010002'
     unit: MILLIMOLAR
   term:
     id: CHEBI:75215
-    label: ''
+    label: sodium molybdate (anhydrous)
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
-    label: Sodium Chloride
+    label: sodium chloride
   concentration:
     value: '85.5578'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: Sodium Chloride
+    label: sodium chloride
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: magnesium sulfate
   concentration:
     value: '4.05729'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: magnesium sulfate
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
-    label: Zinc Sulfate
+    label: zinc sulfate
   concentration:
     value: '0.061931'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:35176
-    label: Zinc Sulfate
+    label: zinc sulfate
 - preferred_term: Manganese chloride
   concentration:
     value: '0.00455014'
     unit: MILLIMOLAR
   term:
     id: CHEBI:63041
-    label: ''
+    label: manganese(II) chloride
 - preferred_term: Cupric chloride
   concentration:
     value: '0.00249296'
     unit: MILLIMOLAR
   term:
     id: CHEBI:49553
-    label: ''
+    label: copper(II) chloride
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.0540999'
@@ -124,7 +124,7 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:49976
-    label: ''
+    label: zinc dichloride
 - preferred_term: Sodium iodide
   concentration:
     value: '0.0027687'
@@ -132,13 +132,13 @@ ingredients:
 - preferred_term: Sodium nitrate
   term:
     id: CHEBI:63005
-    label: Sodium nitrate
+    label: sodium nitrate
   concentration:
     value: '52.9445'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:63005
-    label: Sodium nitrate
+    label: sodium nitrate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

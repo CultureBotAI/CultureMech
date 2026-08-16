@@ -15,23 +15,23 @@ ingredients:
 - preferred_term: BCYE agar
   term:
     id: CHEBI:2509
-    label: BCYE agar
+    label: agar
   concentration:
     value: '37'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: BCYE agar
+    label: agar
 - preferred_term: Legionella agar enrichment
   term:
     id: CHEBI:2509
-    label: Legionella agar enrichment
+    label: agar
   concentration:
     value: '100'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Legionella agar enrichment
+    label: agar
 applications:
 - Microbial cultivation
 curation_history:

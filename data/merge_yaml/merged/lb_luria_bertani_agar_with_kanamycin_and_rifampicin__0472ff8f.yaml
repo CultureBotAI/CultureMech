@@ -24,43 +24,43 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
 - preferred_term: Kanamycin sulfate
   term:
     id: CHEBI:6109
-    label: Kanamycin sulfate
+    label: kanamycin A sulfate
   concentration:
     value: '0.05'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:6109
-    label: Kanamycin sulfate
+    label: kanamycin A sulfate
 - preferred_term: Rifampicin
   term:
     id: CHEBI:28077
-    label: Rifampicin
+    label: rifampicin
   concentration:
     value: '0.025'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:28077
-    label: Rifampicin
+    label: rifampicin
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

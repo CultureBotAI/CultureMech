@@ -33,7 +33,7 @@ composition:
     label: D-(+)-biotin
   chebi_term:
     id: CHEBI:15956
-    label: D-(+)-biotin
+    label: biotin
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Nicotinic acid
@@ -81,7 +81,7 @@ composition:
     label: DL-alpha-lipoic acid
   chebi_term:
     id: CHEBI:16494
-    label: DL-alpha-lipoic acid
+    label: lipoic acid
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Folic acid

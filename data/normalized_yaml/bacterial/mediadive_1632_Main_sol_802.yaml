@@ -13,7 +13,7 @@ composition:
     label: NaCl
   chebi_term:
     id: CHEBI:26710
-    label: 1% sodium chloride
+    label: sodium chloride
     confidence: 1.0
     match_type: exact_match
 - preferred_term: MgSO4 x 7 H2O
@@ -49,7 +49,7 @@ composition:
     label: NaBr
   chebi_term:
     id: CHEBI:63004
-    label: NaBr
+    label: sodium bromide
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Yeast extract
@@ -86,7 +86,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: KH2PO4
@@ -98,7 +98,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: CaCl2
@@ -122,7 +122,7 @@ composition:
     label: Glucose
   chebi_term:
     id: CHEBI:17234
-    label: D-glucose
+    label: glucose
     confidence: 0.9
     match_type: manual_curated
 preparation_notes: Adjust pH to 7.8 (with NaOH) before autoclaving. To the sterile

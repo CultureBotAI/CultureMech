@@ -14,10 +14,10 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '1'
@@ -47,7 +47,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86254
-    label: ''
+    label: iron trichloride hexahydrate
 - preferred_term: MnSO4・xH2O
   concentration:
     value: '2'
@@ -56,7 +56,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:86360
-    label: ''
+    label: manganese(II) sulfate
 - preferred_term: Sodium succinate
   concentration:
     value: '1'

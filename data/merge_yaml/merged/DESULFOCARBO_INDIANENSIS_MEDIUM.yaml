@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: NaCl
   concentration:
     value: '8.8'
@@ -38,7 +38,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86158
-    label: ''
+    label: calcium chloride dihydrate
 - preferred_term: KH2PO4
   concentration:
     value: '0.14'
@@ -50,7 +50,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: NH4Cl
   concentration:
     value: '0.25'
@@ -83,7 +83,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:86345
-    label: ''
+    label: magnesium dichloride hexahydrate
 - preferred_term: KCl
   concentration:
     value: '0.34'
@@ -104,7 +104,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:34887
-    label: ''
+    label: nickel dichloride
 - preferred_term: Na2SeO3・5H2O
   concentration:
     value: '0.26'
@@ -134,7 +134,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:63939
-    label: ''
+    label: sodium tungstate dihydrate
 - preferred_term: Fe(NH4)2(SO4)2・6H2O
   concentration:
     value: '2.7'
@@ -143,7 +143,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:76181
-    label: ''
+    label: ferrous ammonium sulfate hexahydrate
 - preferred_term: Sodium benzoate
   concentration:
     value: '0.36'
@@ -162,7 +162,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: carbon dioxide
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -170,7 +170,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: dinitrogen
 - preferred_term: 5% Na2S・9H2O (autoclaved)
   concentration:
     value: '5'

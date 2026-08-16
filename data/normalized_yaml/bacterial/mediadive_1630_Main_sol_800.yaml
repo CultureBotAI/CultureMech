@@ -20,7 +20,7 @@ composition:
     label: 5-Aminovaleric acid
   chebi_term:
     id: CHEBI:86394
-    label: 5-aminovalerate
+    label: 5-aminopentanoate
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Fildes Enrichment

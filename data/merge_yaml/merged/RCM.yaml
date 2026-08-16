@@ -40,14 +40,14 @@ ingredients:
   notes: 'CAS: 9005-84-9; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:18167
-    label: ''
+    label: alpha-maltose
 - preferred_term: L-Cysteine HCL
   concentration:
     value: '0.5'
     unit: G_PER_L
   term:
     id: CHEBI:91247
-    label: ''
+    label: L-cysteine hydrochloride
 - preferred_term: Sodium acetate
   concentration:
     value: '3'

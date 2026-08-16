@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 3 duplicates: 85.0, 100.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: PPLO broth w/o Crystal Violet (BD-Difco 255420)
   concentration:
     value: '2.1'
@@ -41,10 +41,10 @@ ingredients:
     compound'
   term:
     id: CHEBI:31991
-    label: Phenol red
+    label: phenol red
   mediaingredientmech_chebi_term:
     id: CHEBI:31991
-    label: Phenol red
+    label: phenol red
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:

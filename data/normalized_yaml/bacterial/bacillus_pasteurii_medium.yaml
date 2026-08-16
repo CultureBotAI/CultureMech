@@ -15,13 +15,13 @@ ingredients:
 - preferred_term: Urea
   term:
     id: CHEBI:16199
-    label: Urea
+    label: urea
   concentration:
     value: '20'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16199
-    label: Urea
+    label: urea
 - preferred_term: Peptone
   concentration:
     value: '5'
@@ -33,14 +33,14 @@ ingredients:
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

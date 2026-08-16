@@ -101,37 +101,37 @@ ingredients:
 - preferred_term: Trisodium citrate
   term:
     id: CHEBI:53258
-    label: Trisodium citrate
+    label: sodium citrate
   concentration:
     value: '0.7'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:53258
-    label: Trisodium citrate
+    label: sodium citrate
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: Glucose
+    label: glucose
   concentration:
     value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: Glucose
+    label: glucose
 - preferred_term: Sodium pyruvate
   term:
     id: CHEBI:50144
-    label: Sodium pyruvate
+    label: sodium pyruvate
   concentration:
     value: '0.8'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:50144
-    label: Sodium pyruvate
+    label: sodium pyruvate
 - preferred_term: N-Acetyl-D-glucosamine
   term:
     id: CHEBI:506227
-    label: N-Acetyl-D-glucosamine
+    label: N-acetyl-D-glucosamine
   concentration:
     value: '0.4'
     unit: G_PER_L
@@ -141,13 +141,13 @@ ingredients:
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
-    label: NaHCO3
+    label: sodium hydrogencarbonate
   concentration:
     value: '2.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: NaHCO3
+    label: sodium hydrogencarbonate
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE

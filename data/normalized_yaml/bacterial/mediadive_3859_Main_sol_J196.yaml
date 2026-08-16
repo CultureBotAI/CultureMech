@@ -25,7 +25,7 @@ composition:
     label: FeSO4 x 7 H2O
   chebi_term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: iron(2+) sulfate heptahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: MgSO4 x 7 H2O
@@ -49,7 +49,7 @@ composition:
     label: CaSO4 x 2 H2O
   chebi_term:
     id: CHEBI:32583
-    label: CaSO4 x 2 H2O
+    label: calcium sulfate dihydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: KH2PO3
@@ -80,7 +80,7 @@ composition:
     label: MnCl2 x 4 H2O
   chebi_term:
     id: CHEBI:86368
-    label: MnCl2 x 4 H2O
+    label: manganese(II) chloride tetrahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na2B4O7 x 10 H2O
@@ -104,7 +104,7 @@ composition:
     label: ZnSO4 x 7 H2O
   chebi_term:
     id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
+    label: zinc sulfate heptahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: CuCl2 x 2 H2O
@@ -116,7 +116,7 @@ composition:
     label: CuCl2 x 2 H2O
   chebi_term:
     id: CHEBI:86318
-    label: CuCl2 x 2 H2O
+    label: copper(II) chloride dihydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na2MoO7 x 2 H2O
@@ -170,7 +170,7 @@ composition:
     label: Sulfur
   chebi_term:
     id: CHEBI:26833
-    label: Sulfur
+    label: sulfur atom
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Na2S x 9 H2O
@@ -182,7 +182,7 @@ composition:
     label: Na2S x 9 H2O
   chebi_term:
     id: CHEBI:76209
-    label: Na2S x 9 H2O
+    label: sodium sulfide nonahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Resazurin
@@ -194,7 +194,7 @@ composition:
     label: Resazurin
   chebi_term:
     id: CHEBI:8806
-    label: resazurin
+    label: Resazurin
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Distilled water
@@ -206,7 +206,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Mix ingredients, except yeast extract, starch, sulfur and Na2S

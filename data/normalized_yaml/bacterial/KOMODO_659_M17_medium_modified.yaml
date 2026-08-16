@@ -35,53 +35,53 @@ ingredients:
 - preferred_term: Ascorbic acid
   term:
     id: CHEBI:22652
-    label: Ascorbic acid
+    label: ascorbic acid
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:22652
-    label: Ascorbic acid
+    label: ascorbic acid
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '0.25'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
 - preferred_term: Na2-ß-glycerolphosphate
   term:
     id: CHEBI:132089
-    label: Na2-ß-glycerolphosphate
+    label: sodium glycerol 2-phosphate
   concentration:
     value: '9.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:132089
-    label: Na2-ß-glycerolphosphate
+    label: sodium glycerol 2-phosphate
 - preferred_term: Lactose
   term:
     id: CHEBI:17716
-    label: Lactose
+    label: lactose
   concentration:
     value: '8'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17716
-    label: Lactose
+    label: lactose
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
   concentration:
     value: '1.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
 applications:
 - Microbial cultivation
 curation_history:

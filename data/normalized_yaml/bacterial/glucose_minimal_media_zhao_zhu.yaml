@@ -16,71 +16,71 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:3312
-    label: ''
+    label: calcium dichloride
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '41.9058'
     unit: MILLIMOLAR
   term:
     id: CHEBI:131527
-    label: ''
+    label: dipotassium hydrogen phosphate
 - preferred_term: Sodium sulfate
   concentration:
     value: '14.0449'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32149
-    label: Sodium sulfate
+    label: sodium sulfate
   term:
     id: CHEBI:32149
-    label: ''
+    label: sodium sulfate
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: magnesium sulfate
   concentration:
     value: '3.0'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:32599
-    label: Magnesium sulfate
+    label: magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
-    label: Manganese Sulfate
+    label: manganese(II) sulfate monohydrate
   concentration:
     value: '0.001775'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:86364
-    label: Manganese Sulfate
+    label: manganese(II) sulfate monohydrate
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
-    label: Ammonium chloride
+    label: ammonium chloride
   concentration:
     value: '9.3474'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: Ammonium chloride
+    label: ammonium chloride
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.00227'
     unit: MILLIMOLAR
   term:
     id: CHEBI:35696
-    label: ''
+    label: cobalt dichloride
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
-    label: Zinc Sulfate
+    label: zinc sulfate
   concentration:
     value: '0.001878'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:35176
-    label: Zinc Sulfate
+    label: zinc sulfate
 - preferred_term: Sodium dihydrogen phosphate
   concentration:
     value: '30.005'
@@ -94,20 +94,20 @@ ingredients:
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
-    label: Ammonium Sulfate
+    label: ammonium sulfate
   concentration:
     value: '18.919'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:62946
-    label: Ammonium Sulfate
+    label: ammonium sulfate
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.0019223'
     unit: MILLIMOLAR
   term:
     id: CHEBI:23414
-    label: ''
+    label: copper(II) sulfate
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.18535'

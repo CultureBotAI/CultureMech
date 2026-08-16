@@ -22,7 +22,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: HEPES
   term:
     id: CHEBI:46756
@@ -42,17 +42,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '0.18'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
@@ -62,17 +62,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32149
-    label: Na2SO4
+    label: sodium sulfate
 - preferred_term: Arabinose
   term:
     id: CHEBI:22599
-    label: Arabinose
+    label: arabinose
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:22599
-    label: Arabinose
+    label: arabinose
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -80,13 +80,13 @@ ingredients:
 - preferred_term: Gluconic acid
   term:
     id: CHEBI:24266
-    label: Gluconic acid
+    label: gluconic acid
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:24266
-    label: Gluconic acid
+    label: gluconic acid
 - preferred_term: MES
   term:
     id: CHEBI:39010
@@ -100,43 +100,43 @@ ingredients:
 - preferred_term: FeCl3
   term:
     id: CHEBI:30808
-    label: FeCl3
+    label: iron trichloride
   concentration:
     value: '0.0067'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30808
-    label: FeCl3
+    label: iron trichloride
 - preferred_term: CaCl2
   term:
     id: CHEBI:3312
-    label: CaCl2
+    label: calcium dichloride
   concentration:
     value: '0.015'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:3312
-    label: CaCl2
+    label: calcium dichloride
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
+    label: sodium molybdate dihydrate
   concentration:
     value: '0.01'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
+    label: sodium molybdate dihydrate
 - preferred_term: NiCl2
   term:
     id: CHEBI:34887
-    label: NiCl2
+    label: nickel dichloride
   concentration:
     value: '0.0012'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34887
-    label: NiCl2
+    label: nickel dichloride
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

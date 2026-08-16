@@ -57,7 +57,7 @@ ingredients:
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
-    label: ZnCl2
+    label: zinc dichloride
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -71,7 +71,7 @@ ingredients:
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
-    label: CoCl2 x 6 H2O
+    label: cobalt dichloride
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -85,7 +85,7 @@ ingredients:
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
-    label: CuSO4 x 5 H2O
+    label: copper(II) sulfate pentahydrate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -127,7 +127,7 @@ ingredients:
 - preferred_term: H BO
   term:
     id: CHEBI:33118
-    label: H BO
+    label: boric acid
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -148,7 +148,7 @@ ingredients:
 - preferred_term: NaH2PO4 x 2 H2O
   term:
     id: CHEBI:37585
-    label: NaH2PO4 x 2 H2O
+    label: sodium dihydrogenphosphate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -162,7 +162,7 @@ ingredients:
 - preferred_term: NaNO
   term:
     id: CHEBI:34545
-    label: NaNO
+    label: Azimilide
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0

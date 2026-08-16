@@ -13,7 +13,7 @@ composition:
     label: Glucose
   chebi_term:
     id: CHEBI:17234
-    label: D-glucose
+    label: glucose
     confidence: 0.9
     match_type: manual_curated
 - preferred_term: Galactose
@@ -25,7 +25,7 @@ composition:
     label: Galactose
   chebi_term:
     id: CHEBI:28260
-    label: Galactose
+    label: galactose
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Tween 80
@@ -37,7 +37,7 @@ composition:
     label: Tween 80
   chebi_term:
     id: CHEBI:53426
-    label: tween 80
+    label: polysorbate 80
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Agar
@@ -49,7 +49,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Combine components, except white table wine. Adjust pH to 5.5.

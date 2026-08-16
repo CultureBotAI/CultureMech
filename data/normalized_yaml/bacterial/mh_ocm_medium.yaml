@@ -15,10 +15,10 @@ ingredients:
     100.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: Sodium bicarbonate
   concentration:
     value: '8.4'
@@ -27,10 +27,10 @@ ingredients:
     component'
   term:
     id: CHEBI:32139
-    label: ''
+    label: sodium hydrogencarbonate
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: Sodium bicarbonate
+    label: sodium hydrogencarbonate
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -38,7 +38,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: carbon dioxide
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -46,7 +46,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: dinitrogen
 - preferred_term: Yeast extract
   concentration:
     value: '2'
@@ -84,10 +84,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:6636
-    label: MgCl2 x 7H2O
+    label: magnesium dichloride
   term:
     id: CHEBI:6636
-    label: ''
+    label: magnesium dichloride
 - preferred_term: Trypticase peptone
   concentration:
     value: '2'
@@ -117,10 +117,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
-    label: Magnesium chloride hexahydrate
+    label: magnesium dichloride hexahydrate
   term:
     id: CHEBI:86345
-    label: ''
+    label: magnesium dichloride hexahydrate
 - preferred_term: Calcium chloride dehydrate
   concentration:
     value: '40'
@@ -186,7 +186,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: ''
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: NiCl2 . 6H2O
   concentration:
     value: '0.02'
@@ -195,7 +195,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:34887
-    label: ''
+    label: nickel dichloride
 - preferred_term: ZnSO4 . 7H2O
   concentration:
     value: '0.1'
@@ -204,7 +204,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:32312
-    label: ''
+    label: zinc sulfate heptahydrate
 - preferred_term: CuSO4 . 5H2O
   concentration:
     value: '0.01'
@@ -225,7 +225,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63939
-    label: ''
+    label: sodium tungstate dihydrate
 - preferred_term: CaCl2 (anhydrous)
   concentration:
     value: '0.1'
@@ -240,7 +240,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86364
-    label: ''
+    label: manganese(II) sulfate monohydrate
 - preferred_term: AlK(SO4)2 (anhydrous)
   concentration:
     value: '0.01'
@@ -261,7 +261,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86214
-    label: ''
+    label: cobalt dinitrate hexahydrate
 - preferred_term: EDTA
   concentration:
     value: '0.5'
@@ -295,7 +295,7 @@ ingredients:
     label: Sodium sulfide
   term:
     id: CHEBI:85357
-    label: ''
+    label: 3-[(1E,4R)-4-hydroxycyclohex-2-en-1-ylidene]pyruvic acid
 - preferred_term: Cysteine
   concentration:
     value: '3'
@@ -304,10 +304,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15356
-    label: Cysteine
+    label: cysteine
   mediaingredientmech_chebi_term:
     id: CHEBI:15356
-    label: Cysteine
+    label: cysteine
 media_term:
   preferred_term: TOGO Medium M2646
   term:

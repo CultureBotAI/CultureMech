@@ -20,7 +20,7 @@ composition:
     unit: G_PER_L
   term:
     id: CHEBI:86374
-    label: manganese(II) sulfate monohydrate
+    label: ninhydrin
   mediaingredientmech_term:
     id: MediaIngredientMech:001118
 - preferred_term: Zinc sulfate heptahydrate
@@ -36,7 +36,7 @@ composition:
     unit: G_PER_L
   term:
     id: CHEBI:86244
-    label: ammonium heptamolybdate tetrahydrate
+    label: hexaammonium heptamolybdate tetrahydrate
   mediaingredientmech_term:
     id: MediaIngredientMech:001110
 - preferred_term: Copper sulfate pentahydrate

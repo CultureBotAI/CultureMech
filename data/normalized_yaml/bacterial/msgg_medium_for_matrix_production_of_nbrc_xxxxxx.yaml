@@ -14,10 +14,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.7'
@@ -41,7 +41,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: MgCl2·6H2O
   concentration:
     value: '2'
@@ -67,10 +67,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:49105
-    label: Thiamine hydrochloride
+    label: thiamine hydrochloride
   mediaingredientmech_chebi_term:
     id: CHEBI:49105
-    label: Thiamine hydrochloride
+    label: thiamine hydrochloride
 - preferred_term: ZnCl2
   concentration:
     value: '1'
@@ -103,10 +103,10 @@ ingredients:
     component'
   term:
     id: CHEBI:17754
-    label: Glycerol
+    label: glycerol
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: Glycerol
+    label: glycerol
 - preferred_term: L-glutamic acid monosodium salt monohydrate
   concentration:
     value: '5'
@@ -132,10 +132,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:27897
-    label: Tryptophan
+    label: tryptophan
   mediaingredientmech_chebi_term:
     id: CHEBI:27897
-    label: Tryptophan
+    label: tryptophan
 - preferred_term: Phenylalanine
   concentration:
     value: '50'
@@ -144,7 +144,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:17295
-    label: ''
+    label: L-phenylalanine
 - preferred_term: Threonine
   concentration:
     value: '50'

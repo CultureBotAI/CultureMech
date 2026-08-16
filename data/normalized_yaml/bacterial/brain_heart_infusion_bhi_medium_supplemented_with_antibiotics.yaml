@@ -20,10 +20,10 @@ ingredients:
     component'
   term:
     id: CHEBI:28971
-    label: Ampicillin
+    label: ampicillin
   mediaingredientmech_chebi_term:
     id: CHEBI:28971
-    label: Ampicillin
+    label: ampicillin
 - preferred_term: erythromycin
   concentration:
     value: '30'
@@ -32,10 +32,10 @@ ingredients:
     component'
   term:
     id: CHEBI:48923
-    label: Erythromycin
+    label: erythromycin
   mediaingredientmech_chebi_term:
     id: CHEBI:48923
-    label: Erythromycin
+    label: erythromycin
 - preferred_term: chloramphenicol
   concentration:
     value: '50'
@@ -120,7 +120,7 @@ ingredients:
 - preferred_term: Disodium phosphate
   term:
     id: CHEBI:34683
-    label: disodium hydrogen phosphate
+    label: disodium hydrogenphosphate
   concentration:
     value: '2.5'
     unit: G_PER_L

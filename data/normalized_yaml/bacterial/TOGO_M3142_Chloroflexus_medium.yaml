@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 3 duplicates: 1.0, 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: MgSO4 . 7H2O
   concentration:
     value: '0.1'
@@ -64,10 +64,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63005
-    label: ''
+    label: sodium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63005
-    label: NaNO3
+    label: sodium nitrate
 - preferred_term: Nitrilotriacetic acid
   concentration:
     value: '0.1'
@@ -112,7 +112,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:32583
-    label: ''
+    label: calcium sulfate dihydrate
 - preferred_term: Sodium sulfide
   concentration:
     value: '0.5'
@@ -124,7 +124,7 @@ ingredients:
     label: Sodium sulfide
   term:
     id: CHEBI:85357
-    label: ''
+    label: 3-[(1E,4R)-4-hydroxycyclohex-2-en-1-ylidene]pyruvic acid
 - preferred_term: Glycyl-glycine
   concentration:
     value: '0.5'
@@ -133,10 +133,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:17201
-    label: Glycyl-glycine
+    label: glycylglycine
   mediaingredientmech_chebi_term:
     id: CHEBI:17201
-    label: Glycyl-glycine
+    label: glycylglycine
 - preferred_term: FeCl3
   concentration:
     value: '0.2905'
@@ -178,7 +178,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:35696
-    label: ''
+    label: cobalt dichloride
 - preferred_term: ZnSO4 . 7H2O
   concentration:
     value: '0.5'
@@ -187,7 +187,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:32312
-    label: ''
+    label: zinc sulfate heptahydrate
 - preferred_term: CuSO4 . 2H2O
   concentration:
     value: '0.025'

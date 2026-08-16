@@ -61,7 +61,7 @@ ingredients:
 - preferred_term: Na EDTA
   term:
     id: CHEBI:64734
-    label: Na EDTA
+    label: EDTA disodium salt (anhydrous)
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -75,7 +75,7 @@ ingredients:
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
-    label: MnCl2 x 4 H2O
+    label: manganese(II) chloride tetrahydrate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -89,7 +89,7 @@ ingredients:
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
-    label: Thiamine HCl
+    label: thiamine hydrochloride
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -103,7 +103,7 @@ ingredients:
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
-    label: Biotin
+    label: biotin
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0

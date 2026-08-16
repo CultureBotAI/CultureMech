@@ -20,23 +20,23 @@ ingredients:
 - preferred_term: Sodium formate
   term:
     id: CHEBI:62965
-    label: Sodium formate
+    label: sodium formate
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62965
-    label: Sodium formate
+    label: sodium formate
 - preferred_term: Sodium acetate
   term:
     id: CHEBI:32954
-    label: Sodium acetate
+    label: sodium acetate
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32954
-    label: Sodium acetate
+    label: sodium acetate
 - preferred_term: Bacto peptone
   concentration:
     value: '0.25'
@@ -44,50 +44,50 @@ ingredients:
 - preferred_term: Sodium lactate
   term:
     id: CHEBI:75228
-    label: Sodium lactate
+    label: sodium lactate
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75228
-    label: Sodium lactate
+    label: sodium lactate
 - preferred_term: Sodium pyruvate
   term:
     id: CHEBI:50144
-    label: Sodium pyruvate
+    label: sodium pyruvate
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:50144
-    label: Sodium pyruvate
+    label: sodium pyruvate
 - preferred_term: Disodium succinate x 6 H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
   term:
     id: CHEBI:63686
-    label: ''
+    label: sodium succinate hexahydrate
 - preferred_term: DL-Malic acid
   term:
     id: CHEBI:6650
-    label: DL-Malic acid
+    label: malic acid
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:6650
-    label: DL-Malic acid
+    label: malic acid
 - preferred_term: Fumaric acid
   term:
     id: CHEBI:18012
-    label: Fumaric acid
+    label: fumaric acid
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:18012
-    label: Fumaric acid
+    label: fumaric acid
 - preferred_term: Trisodium citrate x 2 H2O
   concentration:
     value: '0.2'
@@ -101,13 +101,13 @@ ingredients:
 - preferred_term: KCl
   term:
     id: CHEBI:32588
-    label: KCl
+    label: potassium chloride
   concentration:
     value: '5.4'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: KCl
+    label: potassium chloride
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -117,21 +117,21 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
   concentration:
     value: '0.29'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
 - preferred_term: NaNO3
   term:
     id: CHEBI:63005
-    label: NaNO3
+    label: sodium nitrate
   concentration:
     value: '0.27'
     unit: G_PER_L
@@ -141,13 +141,13 @@ ingredients:
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: magnesium dichloride hexahydrate
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: magnesium dichloride hexahydrate
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -157,7 +157,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

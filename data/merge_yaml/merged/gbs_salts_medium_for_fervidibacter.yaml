@@ -22,7 +22,7 @@ ingredients:
     label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
 - preferred_term: KCl
   concentration:
     value: '0.15'
@@ -32,7 +32,7 @@ ingredients:
     label: potassium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: KCl
+    label: potassium chloride
 - preferred_term: Na2SO4
   concentration:
     value: '0.3'
@@ -42,7 +42,7 @@ ingredients:
     label: sodium sulfate
   mediaingredientmech_chebi_term:
     id: CHEBI:32149
-    label: Na2SO4
+    label: sodium sulfate
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.123'
@@ -62,7 +62,7 @@ ingredients:
     label: calcium chloride dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
 - preferred_term: NH4Cl
   concentration:
     value: '21.4'
@@ -72,7 +72,7 @@ ingredients:
     label: ammonium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
 - preferred_term: HEPES
   concentration:
     value: '0.477'
@@ -96,7 +96,7 @@ ingredients:
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: Trace vitamins solution* (see below)
   concentration:
     value: '10.0'
@@ -118,7 +118,7 @@ ingredients:
     label: EDTA(2-)
   mediaingredientmech_chebi_term:
     id: CHEBI:64755
-    label: EDTA
+    label: EDTA(2-)
 - preferred_term: KOH
   concentration:
     value: '2.2'
@@ -128,14 +128,14 @@ ingredients:
     label: potassium hydroxide
   mediaingredientmech_chebi_term:
     id: CHEBI:32035
-    label: KOH
+    label: potassium hydroxide
 - preferred_term: FeSO4·7H2O
   concentration:
     value: '1.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: MnCl2·4H2O
   concentration:
     value: '98.4'
@@ -149,14 +149,14 @@ ingredients:
     label: zinc sulfate heptahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
+    label: zinc sulfate heptahydrate
 - preferred_term: CoCl2·6H2O
   concentration:
     value: '23.8'
     unit: MG_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:35696
-    label: CoCl2 x 2 H2O
+    label: cobalt dichloride
 - preferred_term: CuCl2·2H2O
   concentration:
     value: '17.2'
@@ -166,7 +166,7 @@ ingredients:
     label: copper(II) chloride dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86318
-    label: CuCl2 x 2 H2O
+    label: copper(II) chloride dihydrate
 - preferred_term: Na2MoO4·2H2O
   concentration:
     value: '24.2'
@@ -186,7 +186,7 @@ ingredients:
     label: boric acid
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
 - preferred_term: Trace vitamins (see Medium No. 197 )
   concentration:
     value: '1.0'
@@ -200,7 +200,7 @@ ingredients:
     label: sodium dihydrogenphosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:37585
-    label: NaH2PO4 x 2 H2O
+    label: sodium dihydrogenphosphate
 - preferred_term: Na2HPO4
   concentration:
     value: '0.866'
@@ -210,7 +210,7 @@ ingredients:
     label: disodium hydrogenphosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:34683
-    label: Na2HPO4 x 7 H2O
+    label: disodium hydrogenphosphate
 - preferred_term: Na2WO4·2H2O
   concentration:
     value: '1.65'
@@ -220,7 +220,7 @@ ingredients:
     label: sodium tungstate dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63939
-    label: Na2WO4 x 2 H2O
+    label: sodium tungstate dihydrate
 - preferred_term: Ni(NH4)2(SO4)2·6H2O
   concentration:
     value: '19.8'

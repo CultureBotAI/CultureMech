@@ -13,7 +13,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: NaNO3
@@ -48,7 +48,7 @@ composition:
     label: Succinic acid
   chebi_term:
     id: CHEBI:15741
-    label: Succinic acid
+    label: succinic acid
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Na-acetate
@@ -60,7 +60,7 @@ composition:
     label: Na-acetate
   chebi_term:
     id: CHEBI:32954
-    label: Na-acetate
+    label: sodium acetate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Sodium resazurin
@@ -84,7 +84,7 @@ composition:
     label: D-Xylose
   chebi_term:
     id: CHEBI:65327
-    label: D-Xylose
+    label: D-xylose
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Na-thioglycolate
@@ -108,7 +108,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Dissolve ingredients (except xylose, vitamins and thioglycolate)

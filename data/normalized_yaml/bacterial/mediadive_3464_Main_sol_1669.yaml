@@ -41,7 +41,7 @@ composition:
     label: Glucose
   chebi_term:
     id: CHEBI:17234
-    label: D-glucose
+    label: glucose
     confidence: 0.9
     match_type: manual_curated
 - preferred_term: K2HPO4
@@ -65,7 +65,7 @@ composition:
     label: NaCl
   chebi_term:
     id: CHEBI:26710
-    label: 1% sodium chloride
+    label: sodium chloride
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Tris
@@ -77,7 +77,7 @@ composition:
     label: Tris
   chebi_term:
     id: CHEBI:9754
-    label: Tris
+    label: tris
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Resazurin
@@ -89,7 +89,7 @@ composition:
     label: Resazurin
   chebi_term:
     id: CHEBI:8806
-    label: resazurin
+    label: Resazurin
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Hemin
@@ -113,7 +113,7 @@ composition:
     label: L-Cysteine HCl x H2O
   chebi_term:
     id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    label: L-cysteine hydrochloride hydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -125,7 +125,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Boil medium under CO2 until the resazurin indicator changes from

@@ -13,7 +13,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: K2HPO4
@@ -68,7 +68,7 @@ composition:
     label: Sodium succinate
   chebi_term:
     id: CHEBI:63675
-    label: sodium succinate
+    label: sodium succinate (anhydrous)
     confidence: 1.0
     match_type: exact_match
 - preferred_term: KNO3
@@ -92,7 +92,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Adjust pH 7.0, anaerobic with N2.

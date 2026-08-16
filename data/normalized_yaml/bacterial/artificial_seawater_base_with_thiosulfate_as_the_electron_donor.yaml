@@ -20,10 +20,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:26977
-    label: Thiosulfate
+    label: thiosulfate
   mediaingredientmech_chebi_term:
     id: CHEBI:26977
-    label: Thiosulfate
+    label: thiosulfate
 - preferred_term: O2
   notes: 'Properties: Gas'
   concentration:

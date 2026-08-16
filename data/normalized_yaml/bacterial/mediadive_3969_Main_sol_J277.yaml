@@ -38,7 +38,7 @@ composition:
     label: FeSO4 x 7 H2O
   chebi_term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: iron(2+) sulfate heptahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na2S x 9 H2O
@@ -50,7 +50,7 @@ composition:
     label: Na2S x 9 H2O
   chebi_term:
     id: CHEBI:76209
-    label: Na2S x 9 H2O
+    label: sodium sulfide nonahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Resazurin
@@ -62,7 +62,7 @@ composition:
     label: Resazurin
   chebi_term:
     id: CHEBI:8806
-    label: resazurin
+    label: Resazurin
     confidence: 1.0
     match_type: exact_match
 preparation_notes: Mix ingredients, except NaNO3, FeSO4 x 7H2O and Na2S x 9H2O, and

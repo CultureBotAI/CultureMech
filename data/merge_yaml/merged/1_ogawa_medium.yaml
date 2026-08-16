@@ -15,13 +15,13 @@ ingredients:
 - preferred_term: Na glutamate
   term:
     id: CHEBI:64220
-    label: Na glutamate
+    label: monosodium glutamate
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:64220
-    label: Na glutamate
+    label: monosodium glutamate
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -31,27 +31,27 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
-    label: Glycerol
+    label: glycerol
   concentration:
     value: '6'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: Glycerol
+    label: glycerol
 - preferred_term: Malachite green
   term:
     id: CHEBI:72449
-    label: Malachite green
+    label: malachite green
   concentration:
     value: '6'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:72449
-    label: Malachite green
+    label: malachite green
 - preferred_term: Whole egg
   concentration:
     value: '200'

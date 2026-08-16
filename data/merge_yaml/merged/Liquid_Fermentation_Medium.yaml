@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.4'
@@ -41,7 +41,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: (NH4)2SO4
   concentration:
     value: '1.5'
@@ -62,10 +62,10 @@ ingredients:
     component'
   mediaingredientmech_chebi_term:
     id: CHEBI:34683
-    label: Na2HPO4·12H2O
+    label: disodium hydrogenphosphate
   term:
     id: CHEBI:34683
-    label: ''
+    label: disodium hydrogenphosphate
 - preferred_term: Fructose
   concentration:
     value: '20'
@@ -116,7 +116,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: ''
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: ZnSO4·7H2O
   concentration:
     value: '2.25'

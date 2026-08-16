@@ -13,10 +13,10 @@ ingredients:
   notes: 'Role: Antimicrobial agent; Properties: Defined component, Simple component'
   term:
     id: CHEBI:48923
-    label: Erythromycin
+    label: erythromycin
   mediaingredientmech_chebi_term:
     id: CHEBI:48923
-    label: Erythromycin
+    label: erythromycin
 - preferred_term: MRS medium (Difco)
   concentration:
     value: '1'

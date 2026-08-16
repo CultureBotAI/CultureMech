@@ -25,7 +25,7 @@ composition:
     label: Ammonium acetate
   chebi_term:
     id: CHEBI:62947
-    label: Ammonium acetate
+    label: ammonium acetate
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Pyruvic acid sodium salt
@@ -37,7 +37,7 @@ composition:
     label: Pyruvic acid sodium salt
   chebi_term:
     id: CHEBI:50144
-    label: Pyruvic acid sodium salt
+    label: sodium pyruvate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Dextrose
@@ -85,7 +85,7 @@ composition:
     label: KH2PO4
   chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -97,7 +97,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Filter sterilize into sterile, gas-tight, 100 ml screw-cap bottle.

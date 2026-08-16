@@ -61,7 +61,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:86368
-    label: ''
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: Trisodium citrate
   concentration:
     value: '3'
@@ -81,7 +81,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:30808
-    label: ''
+    label: iron trichloride
 - preferred_term: Agar* (if needed)
   concentration:
     value: '20'

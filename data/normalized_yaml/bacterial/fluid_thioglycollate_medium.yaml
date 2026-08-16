@@ -20,23 +20,23 @@ ingredients:
 - preferred_term: L-Cystine
   term:
     id: CHEBI:16283
-    label: L-Cystine
+    label: L-cystine
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16283
-    label: L-Cystine
+    label: L-cystine
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: Glucose
+    label: glucose
   concentration:
     value: '2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: Glucose
+    label: glucose
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -44,23 +44,23 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
   concentration:
     value: '2.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
 - preferred_term: Sodium thioglycollate
   term:
     id: CHEBI:86481
-    label: Sodium thioglycollate
+    label: sodium thioglycolate
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86481
-    label: Sodium thioglycollate
+    label: sodium thioglycolate
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -74,14 +74,14 @@ ingredients:
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

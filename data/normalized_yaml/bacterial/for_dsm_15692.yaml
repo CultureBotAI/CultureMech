@@ -107,7 +107,7 @@ ingredients:
 - preferred_term: Disodium phosphate
   term:
     id: CHEBI:34683
-    label: disodium hydrogen phosphate
+    label: disodium hydrogenphosphate
   concentration:
     value: '2.5'
     unit: G_PER_L
@@ -127,14 +127,14 @@ ingredients:
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
-    label: sodium hydrogen carbonate
+    label: sodium hydrogencarbonate
   notes: pH adjustment (extracted from notes)
   concentration:
     value: variable
     unit: VARIABLE
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: sodium hydrogen carbonate
+    label: sodium hydrogencarbonate
 applications:
 - Microbial cultivation
 curation_history:

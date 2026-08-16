@@ -21,7 +21,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.4'
@@ -41,7 +41,7 @@ ingredients:
     label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
 - preferred_term: NH4Cl
   concentration:
     value: '0.4'
@@ -51,7 +51,7 @@ ingredients:
     label: ammonium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.05'
@@ -61,7 +61,7 @@ ingredients:
     label: calcium chloride dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
 - preferred_term: FeCl2 solution (see Medium No. 187 )
   concentration:
     value: '1.0'
@@ -91,7 +91,7 @@ ingredients:
     label: sodium acetate
   mediaingredientmech_chebi_term:
     id: CHEBI:32954
-    label: Sodium acetate·3H2O
+    label: sodium acetate
 - preferred_term: Sodium formate
   concentration:
     value: '2.0'
@@ -101,7 +101,7 @@ ingredients:
     label: sodium formate
   mediaingredientmech_chebi_term:
     id: CHEBI:62965
-    label: Na-formate
+    label: sodium formate
 - preferred_term: Rumen fluid, clarified (see Medium No. 266 )
   concentration:
     value: '10.0'
@@ -125,7 +125,7 @@ ingredients:
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: Vitamin solution (see Medium No. 898 )
   concentration:
     value: '1.0'

@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 1.0, 1.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '6.45'
@@ -169,7 +169,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:131378
-    label: ''
+    label: ferrous ammonium sulfate heptahydrate
 - preferred_term: Bacto Yeast Extract (Difco)
   concentration:
     value: '0.5'
@@ -179,13 +179,13 @@ ingredients:
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
   term:
     id: CHEBI:32139
-    label: ''
+    label: sodium hydrogencarbonate
   concentration:
     value: variable
     unit: VARIABLE
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: sodium bicarbonate
+    label: sodium hydrogencarbonate
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -193,7 +193,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: carbon dioxide
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -201,7 +201,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:18276
-    label: ''
+    label: dihydrogen
 - preferred_term: Na2MoO4·2H2O
   concentration:
     value: '0.01'
@@ -234,7 +234,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
-    label: ''
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: NiCl2·6H2O
   concentration:
     value: '0.025'
@@ -324,7 +324,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86356
-    label: ''
+    label: manganese(II) sulfate dihydrate
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
   term:

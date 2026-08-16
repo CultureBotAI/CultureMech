@@ -20,13 +20,13 @@ ingredients:
 - preferred_term: Agarose
   term:
     id: CHEBI:2511
-    label: Agarose
+    label: agarose
   concentration:
     value: '1.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2511
-    label: Agarose
+    label: agarose
 - preferred_term: Leptospira Enrichment EMJH
   concentration:
     value: '100'

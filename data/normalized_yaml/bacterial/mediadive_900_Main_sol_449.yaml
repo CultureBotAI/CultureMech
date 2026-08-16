@@ -41,7 +41,7 @@ composition:
     label: Ascorbic acid
   chebi_term:
     id: CHEBI:22652
-    label: Ascorbic acid
+    label: ascorbic acid
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: MgSO4 x 7 H2O
@@ -89,7 +89,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Adjust pH to 6.9 ± 0.2.

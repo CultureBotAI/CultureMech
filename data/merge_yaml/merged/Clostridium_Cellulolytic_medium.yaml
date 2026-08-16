@@ -19,10 +19,10 @@ ingredients:
     Defined component'
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2H2O
+    label: calcium chloride dihydrate
   term:
     id: CHEBI:86158
-    label: ''
+    label: calcium chloride dihydrate
 - preferred_term: KH2PO4
   concentration:
     value: '1.5'
@@ -34,7 +34,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: Resazurin
   concentration:
     value: '2'
@@ -79,7 +79,7 @@ ingredients:
     compound'
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4 x 3H2O
+    label: dipotassium hydrogen phosphate
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -91,10 +91,10 @@ ingredients:
     component'
   term:
     id: CHEBI:18246
-    label: Cellulose
+    label: (1->4)-beta-D-glucan
   mediaingredientmech_chebi_term:
     id: CHEBI:18246
-    label: Cellulose
+    label: (1->4)-beta-D-glucan
 - preferred_term: FeSO4
   concentration:
     value: '1.25'
@@ -125,7 +125,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: dinitrogen
 media_term:
   preferred_term: TOGO Medium M2711
   term:

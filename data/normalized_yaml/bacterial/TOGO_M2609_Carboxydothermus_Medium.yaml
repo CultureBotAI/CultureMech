@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 4 duplicates: 1000.0, 1000.0, 1000.0, 100.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: Yeast extract
   concentration:
     value: '0.05'
@@ -46,7 +46,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: NH4Cl
   concentration:
     value: '0.33'
@@ -102,7 +102,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: dinitrogen
 - preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '36'
@@ -135,10 +135,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
-    label: MnCl2 x 4 H2O
+    label: manganese(II) chloride tetrahydrate
   term:
     id: CHEBI:86368
-    label: ''
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '190'
@@ -205,11 +205,11 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
-    id: CHEBI:64734
-    label: Na2-EDTA x 2 H2O
+    id: CHEBI:64758
+    label: EDTA disodium salt dihydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:64734
-    label: Na2-EDTA x 2 H2O
+    id: CHEBI:64758
+    label: EDTA disodium salt dihydrate
 - preferred_term: 2 N NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   concentration:
@@ -311,10 +311,10 @@ ingredients:
     component'
   term:
     id: CHEBI:16494
-    label: (DL)-alpha-Lipoic acid
+    label: lipoic acid
   mediaingredientmech_chebi_term:
     id: CHEBI:16494
-    label: (DL)-alpha-Lipoic acid
+    label: lipoic acid
 - preferred_term: Calcium D-(+)-pantothenate
   concentration:
     value: '50'
@@ -322,7 +322,7 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Defined component'
   term:
     id: CHEBI:31345
-    label: ''
+    label: Calcium pantothenate
 - preferred_term: Na2S x 9 H2O
   concentration:
     value: '3'

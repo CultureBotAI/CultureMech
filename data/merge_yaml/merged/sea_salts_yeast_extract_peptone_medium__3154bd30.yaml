@@ -20,13 +20,13 @@ ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
   concentration:
     value: '50'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -38,13 +38,13 @@ ingredients:
 - preferred_term: Ferric citrate
   term:
     id: CHEBI:144421
-    label: Ferric citrate
+    label: iron(III) citrate
   concentration:
     value: '0.1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:144421
-    label: Ferric citrate
+    label: iron(III) citrate
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

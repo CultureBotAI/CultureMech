@@ -63,7 +63,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:6637
-    label: magnesium citrate
+    label: magnesium dihydroxide
   curation_metadata:
     mapping_quality: MANUAL
     confidence_score: 1.0
@@ -120,7 +120,7 @@ ingredients:
   source: BD 220908
   term:
     id: FOODON:03316061
-    label: hen egg
+    label: chicken egg
   curation_metadata:
     mapping_quality: MANUAL
     confidence_score: 1.0

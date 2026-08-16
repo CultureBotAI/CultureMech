@@ -61,14 +61,14 @@ ingredients:
   notes: 'CAS: 6381-92-6; MW: 336.206'
   term:
     id: CHEBI:64734
-    label: ''
+    label: EDTA disodium salt (anhydrous)
 - preferred_term: Sodium bicarbonate
   concentration:
     value: '0.2'
     unit: MILLIMOLAR
   term:
     id: CHEBI:32139
-    label: null
+    label: sodium hydrogencarbonate
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 144-55-8; MW: 84.007'
 - preferred_term: Boric Acid
   concentration:
@@ -86,7 +86,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:86368
-    label: ''
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: Zinc sulfate heptahydrate
   concentration:
     value: '0.000222'
@@ -95,7 +95,7 @@ ingredients:
     CAS-RN lookup'
   term:
     id: CHEBI:32312
-    label: ''
+    label: zinc sulfate heptahydrate
 - preferred_term: Sodium Molybdate Dihydrate
   concentration:
     value: '0.00039000000000000005'
@@ -104,7 +104,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:75213
-    label: ''
+    label: sodium molybdate dihydrate
 - preferred_term: Copper (II) sulfate pentahydrate
   concentration:
     value: '7.9e-05'
@@ -113,7 +113,7 @@ ingredients:
     CAS-RN lookup'
   term:
     id: CHEBI:31440
-    label: ''
+    label: copper(II) sulfate pentahydrate
 - preferred_term: Cobalt(II) nitrate hexahydrate
   concentration:
     value: '0.0494'
@@ -122,7 +122,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:86214
-    label: ''
+    label: cobalt dinitrate hexahydrate
 - preferred_term: TES
   concentration:
     value: '20'

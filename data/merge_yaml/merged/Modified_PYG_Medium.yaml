@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 3 duplicates: 950.0, 1.0, 100.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: K2HPO4
   concentration:
     value: '3.0'
@@ -103,7 +103,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: dinitrogen
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.25'
@@ -151,7 +151,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: NaHCO3
   concentration:
     value: '10'
@@ -183,10 +183,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Solution'
   term:
     id: CHEBI:18067
-    label: Vitamin K1
+    label: phylloquinone
   mediaingredientmech_chebi_term:
     id: CHEBI:18067
-    label: Vitamin K1
+    label: phylloquinone
 - preferred_term: NaOH
   concentration:
     value: '1'

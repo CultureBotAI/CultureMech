@@ -27,7 +27,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:8806
-    label: ''
+    label: Resazurin
 - preferred_term: Na-thioglycolate
   term:
     id: CHEBI:86481
@@ -37,17 +37,17 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86481
-    label: Na-thioglycolate
+    label: sodium thioglycolate
 - preferred_term: Cellobiose
   term:
     id: CHEBI:17057
-    label: Cellobiose
+    label: cellobiose
   concentration:
     value: '2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17057
-    label: Cellobiose
+    label: cellobiose
 - preferred_term: Charcoal-filtered, natural seawater
   concentration:
     value: '800'

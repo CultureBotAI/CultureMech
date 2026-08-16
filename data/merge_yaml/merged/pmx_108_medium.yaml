@@ -21,7 +21,7 @@ ingredients:
     label: ammonium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
 - preferred_term: KH2PO4
   concentration:
     value: '0.14'
@@ -31,7 +31,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: MgCl2•6H2O
   concentration:
     value: '0.2'
@@ -42,7 +42,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
 - preferred_term: Sodium aceate•3H2O
   concentration:
     value: '1.36'
@@ -90,7 +90,7 @@ ingredients:
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: 8% NaHCO3 solution*
   concentration:
     value: '30.0'
@@ -112,7 +112,7 @@ ingredients:
     label: disodium selenite
   mediaingredientmech_chebi_term:
     id: CHEBI:48843
-    label: Na2SeO3·5H2O
+    label: disodium selenite
 - preferred_term: Na2WO4•2H2O
   concentration:
     value: '1.0'
@@ -126,7 +126,7 @@ ingredients:
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 preparation_steps:
 - step_number: 1
   action: MIX

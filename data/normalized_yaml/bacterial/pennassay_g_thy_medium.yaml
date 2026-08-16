@@ -19,23 +19,23 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: Glucose
+    label: glucose
   concentration:
     value: '20'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: Glucose
+    label: glucose
 - preferred_term: Thymine
   term:
     id: CHEBI:17821
-    label: Thymine
+    label: thymine
   concentration:
     value: '0.05'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17821
-    label: Thymine
+    label: thymine
 applications:
 - Microbial cultivation
 curation_history:

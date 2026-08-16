@@ -35,7 +35,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: dinitrogen
 - preferred_term: Oxygen gas
   notes: 'Properties: ガス'
   concentration:

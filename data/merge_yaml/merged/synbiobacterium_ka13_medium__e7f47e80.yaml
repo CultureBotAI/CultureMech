@@ -30,21 +30,21 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
   concentration:
     value: '4.99501'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
 - preferred_term: NaNO3
   term:
     id: CHEBI:63005
-    label: NaNO3
+    label: sodium nitrate
   concentration:
     value: '1.6983'
     unit: G_PER_L
@@ -54,13 +54,13 @@ ingredients:
 - preferred_term: Dimethyl sulfoxide
   term:
     id: CHEBI:28262
-    label: Dimethyl sulfoxide
+    label: dimethyl sulfoxide
   concentration:
     value: '1.4'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:28262
-    label: Dimethyl sulfoxide
+    label: dimethyl sulfoxide
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

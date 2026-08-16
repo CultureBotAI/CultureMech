@@ -64,7 +64,7 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Undefined component'
   term:
     id: CHEBI:28017
-    label: ''
+    label: starch
 - preferred_term: Beef Extract
   concentration:
     value: '10'
@@ -82,10 +82,10 @@ ingredients:
   notes: 'Properties: Defined component, Simple component, Organic compound'
   mediaingredientmech_chebi_term:
     id: CHEBI:91247
-    label: L-Cysteine HCl
+    label: L-cysteine hydrochloride
   term:
     id: CHEBI:91247
-    label: ''
+    label: L-cysteine hydrochloride
 media_term:
   preferred_term: TOGO Medium M2571
   term:

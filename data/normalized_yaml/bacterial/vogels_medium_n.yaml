@@ -19,25 +19,25 @@ ingredients:
 - preferred_term: Sucrose
   term:
     id: CHEBI:17992
-    label: Sucrose
+    label: sucrose
   concentration:
     value: '29.21'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:sucr'
   mediaingredientmech_chebi_term:
     id: CHEBI:17992
-    label: Sucrose
+    label: sucrose
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
-    label: Biotin
+    label: biotin
   concentration:
     value: '0.00103'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
-    label: Biotin
+    label: biotin
 - preferred_term: Citrate
   concentration:
     value: '660.0'
@@ -45,7 +45,7 @@ ingredients:
   notes: 'Cross-references: KEGG:cit'
   term:
     id: CHEBI:30769
-    label: ''
+    label: citric acid
 - preferred_term: Potassium
   concentration:
     value: '6390.0'

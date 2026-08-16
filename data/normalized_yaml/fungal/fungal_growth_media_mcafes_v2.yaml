@@ -44,7 +44,7 @@ ingredients:
   notes: 'CAS: 6484-52-2; MW: 80.04; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:63038
-    label: ''
+    label: ammonium nitrate
 - preferred_term: Iron (II) sulfate heptahydrate
   concentration:
     value: '0.002'
@@ -52,7 +52,7 @@ ingredients:
   notes: 'CAS: 7782-63-0; MW: 278.01; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:75836
-    label: ''
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: Zinc sulfate heptahydrate
   concentration:
     value: '0.002'
@@ -60,7 +60,7 @@ ingredients:
   notes: 'CAS: 7446-20-0; MW: 287.56; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:32312
-    label: ''
+    label: zinc sulfate heptahydrate
 - preferred_term: Manganese (II) chloride tetrahydrate
   concentration:
     value: '0.002'
@@ -68,7 +68,7 @@ ingredients:
   notes: 'CAS: 13446-34-9; MW: 197.91; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:86368
-    label: ''
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: Cobalt chloride hexahydrate
   concentration:
     value: '0.002'
@@ -76,7 +76,7 @@ ingredients:
   notes: 'CAS: 7791-13-1; MW: 237.93; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:53503
-    label: ''
+    label: cobalt chloride hexahydrate
 description: Growth media for diverse fungi with 5 g/L D-Glucose
 notes: 'Source: FEBA media definitions'
 category: fungal

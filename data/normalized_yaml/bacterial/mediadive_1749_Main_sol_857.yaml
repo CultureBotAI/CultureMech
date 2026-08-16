@@ -85,7 +85,7 @@ composition:
     label: Zinc Sulfate
   chebi_term:
     id: CHEBI:35176
-    label: Zinc Sulfate
+    label: zinc sulfate
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Copper Sulfate
@@ -109,7 +109,7 @@ composition:
     label: L-Glutamic acid
   chebi_term:
     id: CHEBI:16015
-    label: L-Glutamic acid
+    label: L-glutamic acid
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Ferric ammonium citrate
@@ -145,7 +145,7 @@ composition:
     label: Biotin
   chebi_term:
     id: CHEBI:15956
-    label: Biotin
+    label: biotin
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Distilled water
@@ -157,7 +157,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Solution g/liter (final solution) 4.7 g/l. Final pH at 25°C 6.6

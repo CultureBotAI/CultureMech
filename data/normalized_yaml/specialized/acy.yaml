@@ -67,7 +67,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:32139
-    label: null
+    label: sodium hydrogencarbonate
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 144-55-8; MW: 84.007'
 - preferred_term: L-Cysteine HCL
   concentration:
@@ -75,7 +75,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:91247
-    label: ''
+    label: L-cysteine hydrochloride
 - preferred_term: Ferric pyrophosphate
   concentration:
     value: '0.5'
@@ -83,7 +83,7 @@ ingredients:
   notes: 'CAS: 10058-44-3; MW: 745.21; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:132767
-    label: ''
+    label: ferric pyrophosphate
 - preferred_term: Hemin
   concentration:
     value: '0.005'
@@ -100,14 +100,14 @@ ingredients:
   notes: 'CAS: 58-27-5; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:28869
-    label: ''
+    label: menadione
 - preferred_term: dithiothreitol
   concentration:
     value: '0.5'
     unit: G_PER_L
   term:
     id: CHEBI:42106
-    label: ''
+    label: L-1,4-dithiothreitol
   notes: Ontology enriched via CAS-RN lookup
 - preferred_term: Sodium thioglycolate
   concentration:
@@ -283,7 +283,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:28484
-    label: null
+    label: isovaleric acid
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 503-74-2; MW: 102.13'
 - preferred_term: Proteose Peptone
   concentration:
@@ -312,7 +312,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:75832
-    label: ''
+    label: iron(2+) sulfate (anhydrous)
   notes: Ontology enriched via CAS-RN lookup
 - preferred_term: Tris(hydroxymethyl)aminomethane
   concentration:
@@ -329,7 +329,7 @@ ingredients:
   notes: 'CAS: 1185-53-1; MW: 157.6'
   term:
     id: CHEBI:9754
-    label: ''
+    label: tris
 description: 50% ABB, 25% Columbia, 25% YCFA
 notes: 'Source: FEBA media definitions'
 category: specialized

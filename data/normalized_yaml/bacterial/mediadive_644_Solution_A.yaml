@@ -20,7 +20,7 @@ composition:
     label: Na-formate
   chebi_term:
     id: CHEBI:62965
-    label: Na-formate
+    label: sodium formate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Sodium resazurin
@@ -44,7 +44,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Original volume: 921 mL'

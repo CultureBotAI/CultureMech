@@ -16,23 +16,23 @@ ingredients:
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
-    label: Glucose
+    label: glucose
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: Glucose
+    label: glucose
 - preferred_term: Starch
   term:
     id: CHEBI:28017
-    label: Starch
+    label: starch
   concentration:
     value: '20'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:28017
-    label: Starch
+    label: starch
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -44,13 +44,13 @@ ingredients:
 - preferred_term: CaCO3
   term:
     id: CHEBI:3311
-    label: CaCO3
+    label: calcium carbonate
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:3311
-    label: CaCO3
+    label: calcium carbonate
 preparation_steps:
 - step_number: 1
   action: MIX

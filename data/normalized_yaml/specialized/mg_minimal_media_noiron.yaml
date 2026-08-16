@@ -27,7 +27,7 @@ ingredients:
   notes: 'CAS: 7772-98-7; Ontology enriched via CAS-RN lookup'
   term:
     id: CHEBI:132112
-    label: ''
+    label: sodium thiosulfate
 - preferred_term: Sodium nitrate
   concentration:
     value: '0.12'
@@ -51,7 +51,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:15671
-    label: ''
+    label: L-tartaric acid
   notes: Ontology enriched via CAS-RN lookup
 - preferred_term: Potassium phosphate monobasic
   concentration:
@@ -104,7 +104,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:53503
-    label: ''
+    label: cobalt chloride hexahydrate
 - preferred_term: Calcium Chloride Dihydrate
   concentration:
     value: '0.0005'
@@ -122,7 +122,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:32312
-    label: ''
+    label: zinc sulfate heptahydrate
 - preferred_term: Aluminum potassium sulfate dodecahydrate
   concentration:
     value: '0.0001'
@@ -131,7 +131,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:86465
-    label: ''
+    label: potassium aluminium sulfate dodecahydrate
 - preferred_term: Boric Acid
   concentration:
     value: 5e-05
@@ -148,7 +148,7 @@ ingredients:
     via CAS-RN lookup'
   term:
     id: CHEBI:75213
-    label: ''
+    label: sodium molybdate dihydrate
 - preferred_term: pyridoxine HCl
   concentration:
     value: '0.1'

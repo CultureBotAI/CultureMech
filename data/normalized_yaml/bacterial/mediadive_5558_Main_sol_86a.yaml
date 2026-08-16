@@ -25,7 +25,7 @@ composition:
     label: CaSO4 x 2 H2O
   chebi_term:
     id: CHEBI:32583
-    label: CaSO4 x 2 H2O
+    label: calcium sulfate dihydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: MgSO4 x 7 H2O
@@ -49,7 +49,7 @@ composition:
     label: NaCl
   chebi_term:
     id: CHEBI:26710
-    label: 1% sodium chloride
+    label: sodium chloride
     confidence: 1.0
     match_type: exact_match
 - preferred_term: KNO3
@@ -84,7 +84,7 @@ composition:
     label: Na2HPO4 x 2 H2O
   chebi_term:
     id: CHEBI:34683
-    label: Na2HPO4 x 2 H2O
+    label: disodium hydrogenphosphate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: FeCl3 x 6 H2O
@@ -96,7 +96,7 @@ composition:
     label: FeCl3 x 6 H2O
   chebi_term:
     id: CHEBI:86254
-    label: FeCl3 x 6 H2O
+    label: iron trichloride hexahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: MnSO4 x H2O
@@ -108,7 +108,7 @@ composition:
     label: MnSO4 x H2O
   chebi_term:
     id: CHEBI:86364
-    label: MnSO4 x H2O
+    label: manganese(II) sulfate monohydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: ZnSO4 x 7 H2O
@@ -120,7 +120,7 @@ composition:
     label: ZnSO4 x 7 H2O
   chebi_term:
     id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
+    label: zinc sulfate heptahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: H3BO3
@@ -144,7 +144,7 @@ composition:
     label: CuSO4 x 5 H2O
   chebi_term:
     id: CHEBI:31440
-    label: CuSO4 x 5 H2O
+    label: copper(II) sulfate pentahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na2MoO4 x 2 H2O
@@ -168,7 +168,7 @@ composition:
     label: CoCl2 x 6 H2O
   chebi_term:
     id: CHEBI:35696
-    label: CoCl2 x 6 H2O
+    label: cobalt dichloride
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Peptone
@@ -194,7 +194,7 @@ composition:
     label: Monosodium glutamate
   chebi_term:
     id: CHEBI:64243
-    label: sodium L-glutamate
+    label: monosodium L-glutamate
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Distilled water
@@ -206,7 +206,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Agar
@@ -219,7 +219,7 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Adjust pH to 7.8 with NaOH.

@@ -32,27 +32,27 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:50144
-    label: Na-pyruvate
+    label: sodium pyruvate
 - preferred_term: L-Glutamine
   term:
     id: CHEBI:18050
-    label: L-Glutamine
+    label: L-glutamine
   concentration:
     value: '0.555556'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:18050
-    label: L-Glutamine
+    label: L-glutamine
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '0.333333'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
 - preferred_term: MOPS
   term:
     id: CHEBI:39074
@@ -72,7 +72,7 @@ ingredients:
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

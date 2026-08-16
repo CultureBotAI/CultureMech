@@ -85,7 +85,7 @@ ingredients:
 - preferred_term: CaCl .6H O
   term:
     id: CHEBI:3312
-    label: CaCl .6H O
+    label: calcium dichloride
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -99,7 +99,7 @@ ingredients:
 - preferred_term: KH PO
   term:
     id: CHEBI:63036
-    label: KH PO
+    label: potassium dihydrogen phosphate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0

@@ -37,7 +37,7 @@ composition:
     label: Ca-folinate
   chebi_term:
     id: CHEBI:31340
-    label: Ca-folinate
+    label: Calcium folinate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: beta-NAD
@@ -61,7 +61,7 @@ composition:
     label: Coenzyme A
   chebi_term:
     id: CHEBI:15346
-    label: Coenzyme A
+    label: coenzyme A
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: FAD
@@ -109,7 +109,7 @@ composition:
     label: Riboflavin
   chebi_term:
     id: CHEBI:17015
-    label: Riboflavin
+    label: riboflavin
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Hemin
@@ -145,7 +145,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Adjust pH to 7.0 with 1 N NaOH and filter-sterilize.

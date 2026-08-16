@@ -14,10 +14,10 @@ ingredients:
     Simple component [Merged 5 duplicates: 1000.0, 10.0, 1000.0, 990.0, 1000.0]'
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: NH4Cl
   concentration:
     value: '0.25'
@@ -61,10 +61,10 @@ ingredients:
   notes: 'Role: Buffer; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:32954
-    label: Na-acetate
+    label: sodium acetate
   mediaingredientmech_chebi_term:
     id: CHEBI:32954
-    label: Na-acetate
+    label: sodium acetate
 - preferred_term: NaH2PO4
   concentration:
     value: '0.6'
@@ -85,10 +85,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:65242
-    label: ''
+    label: sodium chlorate
   mediaingredientmech_chebi_term:
     id: CHEBI:65242
-    label: NaClO3
+    label: sodium chlorate
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -96,7 +96,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:16526
-    label: ''
+    label: carbon dioxide
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -104,7 +104,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: dinitrogen
 - preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '10'
@@ -137,10 +137,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63939
-    label: sodium tungstate
+    label: sodium tungstate dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63939
-    label: sodium tungstate
+    label: sodium tungstate dihydrate
 - preferred_term: Na2MoO4
   concentration:
     value: '25'
@@ -185,10 +185,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
-    label: MnCl2 x 4 H2O
+    label: manganese(II) chloride tetrahydrate
   term:
     id: CHEBI:86368
-    label: ''
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '190'
@@ -329,7 +329,7 @@ ingredients:
     component'
   term:
     id: CHEBI:17154
-    label: ''
+    label: nicotinamide
 - preferred_term: Thiamine-HCl x 2 H2O
   concentration:
     value: '50'
@@ -337,10 +337,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
+    label: thiamine hydrochloride dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
+    label: thiamine hydrochloride dihydrate
 - preferred_term: Pantothenic acid
   concentration:
     value: '50'

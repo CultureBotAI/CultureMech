@@ -15,13 +15,13 @@ ingredients:
 - preferred_term: D-Mannitol
   term:
     id: CHEBI:16899
-    label: D-Mannitol
+    label: D-mannitol
   concentration:
     value: '25'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16899
-    label: D-Mannitol
+    label: D-mannitol
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -33,13 +33,13 @@ ingredients:
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
 applications:
 - Microbial cultivation
 curation_history:

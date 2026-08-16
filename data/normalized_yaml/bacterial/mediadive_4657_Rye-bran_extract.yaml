@@ -27,7 +27,7 @@ composition:
     label: Trypsin
   chebi_term:
     id: CHEBI:9765
-    label: trypsin
+    label: Trypsin
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Distilled water
@@ -39,7 +39,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Mix components and incubate at 50C for 24 hr. Clarify the resulting

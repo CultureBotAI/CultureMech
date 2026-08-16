@@ -22,7 +22,7 @@ ingredients:
     label: dipotassium hydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
-    label: K2HPO4 x 3 H2O
+    label: dipotassium hydrogen phosphate
 - preferred_term: KCl
   concentration:
     value: '0.34'
@@ -32,7 +32,7 @@ ingredients:
     label: potassium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:32588
-    label: KCl
+    label: potassium chloride
 - preferred_term: MgCl2·6H2O
   concentration:
     value: '0.4'
@@ -42,7 +42,7 @@ ingredients:
     label: magnesium dichloride hexahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: magnesium dichloride hexahydrate
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.35'
@@ -62,7 +62,7 @@ ingredients:
     label: ammonium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.14'
@@ -72,7 +72,7 @@ ingredients:
     label: calcium chloride dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
 - preferred_term: NaCl
   concentration:
     value: '4.4'
@@ -82,7 +82,7 @@ ingredients:
     label: sodium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: NaCl
+    label: sodium chloride
 - preferred_term: Wolfe's mineral solution (see Medium No. 265 )
   concentration:
     value: '10.0'
@@ -100,7 +100,7 @@ ingredients:
     label: sodium hydrogencarbonate
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
-    label: NaHCO3
+    label: sodium hydrogencarbonate
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '1.0'
@@ -128,7 +128,7 @@ ingredients:
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: 5% L-Cysteine·HCl·H2O solution
   concentration:
     value: '10.0'

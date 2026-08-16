@@ -8,8 +8,15 @@ on:
     # from normalized_yaml — an inconsistency introduced *only* in merge_yaml
     # would not be caught by this gate. If merge_yaml ever becomes hand-edited,
     # add 'data/merge_yaml/**' here and extend the probe to scan it.
+      # data/merge_yaml/** is listed too, NOT because this gate reads it, but
+      # because GitHub evaluates these path filters against only the FIRST 300
+      # changed files. A corpus-wide PR changes ~20k files, merge_yaml sorts
+      # first, and a filter naming only normalized_yaml never matches — the
+      # workflow is then silently ABSENT from the checks rather than reported
+      # as skipped, and the PR reads as green. See #277.
     paths:
       - 'data/normalized_yaml/**'
+      - 'data/merge_yaml/**'
       - 'scripts/audit_chebi_consistency.py'
       - 'project.justfile'
       - '.github/workflows/chebi-consistency.yaml'

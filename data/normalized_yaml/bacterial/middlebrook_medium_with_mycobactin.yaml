@@ -23,23 +23,23 @@ ingredients:
 - preferred_term: Bacto Middlebrook 7H10 agar
   term:
     id: CHEBI:2509
-    label: Bacto Middlebrook 7H10 agar
+    label: agar
   concentration:
     value: '20.9945'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Bacto Middlebrook 7H10 agar
+    label: agar
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
-    label: Glycerol
+    label: glycerol
   concentration:
     value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17754
-    label: Glycerol
+    label: glycerol
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

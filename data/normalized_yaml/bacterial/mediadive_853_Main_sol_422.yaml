@@ -13,7 +13,7 @@ composition:
     label: Acetate
   chebi_term:
     id: CHEBI:30089
-    label: Acetate
+    label: acetate
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Thiosulfate
@@ -25,7 +25,7 @@ composition:
     label: Thiosulfate
   chebi_term:
     id: CHEBI:26977
-    label: Thiosulfate
+    label: thiosulfate
     confidence: 0.9
     match_type: corpus_consensus
 preparation_notes: Supplement medium 28 with 2 mmol acetate and 1 mmol thiosulfate.

@@ -23,24 +23,24 @@ ingredients:
 - preferred_term: Mannitol
   term:
     id: CHEBI:29864
-    label: Mannitol
+    label: mannitol
   concentration:
     value: '25'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:29864
-    label: Mannitol
+    label: mannitol
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
   concentration:
     value: '12'
     unit: G_PER_L
   notes: ' (for solid medium)'
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
 preparation_steps:
 - step_number: 1
   action: ADD_AGAR

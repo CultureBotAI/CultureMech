@@ -19,13 +19,13 @@ ingredients:
 - preferred_term: Lactose
   term:
     id: CHEBI:17716
-    label: Lactose
+    label: lactose
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17716
-    label: Lactose
+    label: lactose
 applications:
 - Microbial cultivation
 curation_history:

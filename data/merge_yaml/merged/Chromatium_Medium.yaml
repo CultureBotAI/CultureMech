@@ -36,7 +36,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: NH4Cl
   concentration:
     value: '0.8'
@@ -104,10 +104,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:76209
-    label: Na2S x 9H2O
+    label: sodium sulfide nonahydrate
   term:
     id: CHEBI:76209
-    label: ''
+    label: sodium sulfide nonahydrate
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
@@ -115,7 +115,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:17997
-    label: ''
+    label: dinitrogen
 - preferred_term: FeSO4 x 7H2O
   concentration:
     value: '0.2'
@@ -136,10 +136,10 @@ ingredients:
     Simple component [Merged 2 duplicates: 0.02, 7.0]'
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
-    label: MnCl2 x 4H2O
+    label: manganese(II) chloride tetrahydrate
   term:
     id: CHEBI:86368
-    label: ''
+    label: manganese(II) chloride tetrahydrate
 - preferred_term: ZnSO4 x 7H2O
   concentration:
     value: '0.1'
@@ -148,10 +148,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:32312
-    label: ZnSO4 x 7H2O
+    label: zinc sulfate heptahydrate
   term:
     id: CHEBI:32312
-    label: ''
+    label: zinc sulfate heptahydrate
 - preferred_term: Ethlyene Diamine Tetraacetate
   concentration:
     value: '1.5'
@@ -208,10 +208,10 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:18385
-    label: Thiamin
+    label: thiamine(1+)
   mediaingredientmech_chebi_term:
     id: CHEBI:18385
-    label: Thiamin
+    label: thiamine(1+)
 - preferred_term: Pantothenic acid
   concentration:
     value: '0.5'
@@ -314,10 +314,10 @@ ingredients:
     Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:78074
-    label: SnCl2 x 2H2O
+    label: tin(II) chloride dihydrate
   term:
     id: CHEBI:78074
-    label: ''
+    label: tin(II) chloride dihydrate
 - preferred_term: LiCl
   concentration:
     value: '0.5'
@@ -362,10 +362,10 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:132095
-    label: NaVO3 x H2O
+    label: sodium metavanadate hydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:132095
-    label: NaVO3 x H2O
+    label: sodium metavanadate hydrate
 - preferred_term: NiCl2
   concentration:
     value: '1'

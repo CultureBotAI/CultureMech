@@ -40,7 +40,7 @@ composition:
     label: Trisodium citrate
   chebi_term:
     id: CHEBI:53258
-    label: citric acid
+    label: sodium citrate
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Glucose
@@ -52,7 +52,7 @@ composition:
     label: Glucose
   chebi_term:
     id: CHEBI:17234
-    label: D-glucose
+    label: glucose
     confidence: 0.9
     match_type: manual_curated
 - preferred_term: Sodium pyruvate
@@ -107,7 +107,7 @@ composition:
     label: Distilled water
   chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: 'Original volume: 500 mL'

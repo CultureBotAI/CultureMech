@@ -22,7 +22,7 @@ ingredients:
     label: ammonium chloride
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.16'
@@ -32,7 +32,7 @@ ingredients:
     label: calcium chloride dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
-    label: CaCl2 x 2 H2O
+    label: calcium chloride dihydrate
 - preferred_term: KH2PO4
   concentration:
     value: '0.33'
@@ -42,7 +42,7 @@ ingredients:
     label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
 - preferred_term: MgCl2·6H2O
   concentration:
     value: '0.33'
@@ -52,7 +52,7 @@ ingredients:
     label: magnesium dichloride hexahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
-    label: MgCl2 x 6 H2O
+    label: magnesium dichloride hexahydrate
 - preferred_term: Sodium acetate
   concentration:
     value: '0.2'
@@ -62,7 +62,7 @@ ingredients:
     label: sodium acetate
   mediaingredientmech_chebi_term:
     id: CHEBI:32954
-    label: Sodium acetate·3H2O
+    label: sodium acetate
 - preferred_term: Trace element solution (see Medium No. 899 )
   concentration:
     value: '1.0'
@@ -86,7 +86,7 @@ ingredients:
     label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
 - preferred_term: 8% NaHCO3 soluiton*
   concentration:
     value: '25.0'
