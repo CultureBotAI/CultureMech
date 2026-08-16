@@ -73,6 +73,21 @@ CORRECTIONS: dict[tuple[str, str], tuple[str, str]] = {
     ("CHEBI:194474", "4-Aminobenzoic acid"): ("CHEBI:30753", "4-aminobenzoic acid"),
     ("CHEBI:194474", "p-Amino Benzoic Acid"): ("CHEBI:30753", "4-aminobenzoic acid"),
     ("CHEBI:194474", "p-amino benzoic acid"): ("CHEBI:30753", "4-aminobenzoic acid"),
+    # Cysteine-HCl -> CHEBI:52891, which is `QSY9 succinimidyl ester(1+)` -- a
+    # fluorescence quencher dye, not an amino acid at all. The same string is already
+    # grounded to CHEBI:91247 (L-cysteine hydrochloride) in 40 other rows, and the name
+    # carries no hydrate marker, so the anhydrous HCl salt is the target.
+    ("CHEBI:52891", "Cysteine-HCl"): ("CHEBI:91247", "L-cysteine hydrochloride"),
+    ("CHEBI:52891", "cysteine-HCl"): ("CHEBI:91247", "L-cysteine hydrochloride"),
+    # Names that spell out HCl AND a hydrate, grounded to CHEBI:17561 (plain
+    # L-cysteine) -- neither the salt nor the hydrate. The corpus already uses
+    # CHEBI:91248 (L-cysteine hydrochloride hydrate) for this substance in 1,901 rows,
+    # so this is the corpus disagreeing with itself, not a judgement call.
+    ("CHEBI:17561", "L-Cysteine-HCl x H2O"): ("CHEBI:91248", "L-cysteine hydrochloride hydrate"),
+    ("CHEBI:17561", "Cysteine-HCl x H2O"): ("CHEBI:91248", "L-cysteine hydrochloride hydrate"),
+    ("CHEBI:17561", "Cysteine-HCl\u00b7H2O"): ("CHEBI:91248", "L-cysteine hydrochloride hydrate"),
+    ("CHEBI:17561", "L-cysteine-HCL x H2O"): ("CHEBI:91248", "L-cysteine hydrochloride hydrate"),
+    ("CHEBI:17561", "L-Cysteine-HCl\u00b7H2O"): ("CHEBI:91248", "L-cysteine hydrochloride hydrate"),
 }
 
 

@@ -138,6 +138,48 @@ def test_paba_zwitterion_is_corrected_and_the_empty_label_filled():
         assert yaml.safe_load(new)["ingredients"][0]["notes"].startswith("CAS: 150-13-0")
 
 
+def test_cysteine_hcl_is_moved_off_a_fluorescent_dye():
+    """CHEBI:52891 is `QSY9 succinimidyl ester(1+)` — a quencher dye, not an amino
+    acid. The same string is already grounded to CHEBI:91247 in 40 other rows."""
+    for name in ("Cysteine-HCl", "cysteine-HCl"):
+        text = ("ingredients:\n"
+                f"- preferred_term: {name}\n"
+                "  term:\n"
+                "    id: CHEBI:52891\n"
+                "    label: ''\n")
+        new, changes = fix_text(text)
+        assert changes == [(name, "CHEBI:52891", "CHEBI:91247")]
+        assert "label: L-cysteine hydrochloride" in new
+
+
+def test_hydrated_hcl_names_move_off_plain_l_cysteine():
+    """A name spelling out both HCl and a hydrate must not sit on CHEBI:17561, which
+    is neither. The corpus already uses CHEBI:91248 for this substance 1,901 times."""
+    for name in ("L-Cysteine-HCl x H2O", "Cysteine-HCl x H2O", "L-cysteine-HCL x H2O"):
+        text = ("ingredients:\n"
+                f"- preferred_term: {name}\n"
+                "  term:\n"
+                "    id: CHEBI:17561\n"
+                "    label: L-cysteine\n")
+        new, changes = fix_text(text)
+        assert changes == [(name, "CHEBI:17561", "CHEBI:91248")], name
+        assert "label: L-cysteine hydrochloride hydrate" in new
+
+
+def test_plain_cysteine_names_keep_chebi_17561():
+    """Only HCl-and-hydrate names move. The free amino acid is correctly 17561, and
+    keying on the id alone would have wrecked 169 legitimate rows."""
+    for name in ("L-Cysteine", "Cysteine", "L-cysteine"):
+        text = ("ingredients:\n"
+                f"- preferred_term: {name}\n"
+                "  term:\n"
+                "    id: CHEBI:17561\n"
+                "    label: L-cysteine\n")
+        new, changes = fix_text(text)
+        assert changes == [], name
+        assert new == text
+
+
 def test_name_scope_does_not_leak_to_the_next_ingredient():
     """A correction must not carry over to a following, differently-named ingredient."""
     text = (
