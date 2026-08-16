@@ -18,8 +18,15 @@ on:
     # Scoped to normalized_yaml: the detectors read only that tree. merge_yaml is
     # derived from it, so a defect introduced *only* in merge_yaml would not be
     # caught here — same caveat as chebi-consistency.
+      # data/merge_yaml/** is listed too, NOT because this gate reads it, but
+      # because GitHub evaluates these path filters against only the FIRST 300
+      # changed files. A corpus-wide PR changes ~20k files, merge_yaml sorts
+      # first, and a filter naming only normalized_yaml never matches — the
+      # workflow is then silently ABSENT from the checks rather than reported
+      # as skipped, and the PR reads as green. See #277.
     paths:
       - 'data/normalized_yaml/**'
+      - 'data/merge_yaml/**'
       - 'scripts/audit_concentration_plausibility.py'
       - 'project.justfile'
       - '.github/workflows/concentration-plausibility.yaml'
