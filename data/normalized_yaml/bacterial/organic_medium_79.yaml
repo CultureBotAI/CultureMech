@@ -15,14 +15,14 @@ notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_
 ingredients:
 - preferred_term: Dextrose
   term:
-    id: CHEBI:4167
-    label: Dextrose
+    id: CHEBI:17634
+    label: D-glucose
   concentration:
     value: '10'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:4167
-    label: Dextrose
+    id: CHEBI:17634
+    label: D-glucose
 - preferred_term: Peptone
   concentration:
     value: '10'

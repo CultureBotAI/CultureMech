@@ -96,15 +96,15 @@ ingredients:
     label: Pyruvic acid sodium salt
 - preferred_term: Dextrose
   term:
-    id: CHEBI:4167
-    label: Dextrose
+    id: CHEBI:17634
+    label: D-glucose
   concentration:
     value: '19.615389999999998'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 10.0, 9.61539]'
   mediaingredientmech_chebi_term:
-    id: CHEBI:4167
-    label: Dextrose
+    id: CHEBI:17634
+    label: D-glucose
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795

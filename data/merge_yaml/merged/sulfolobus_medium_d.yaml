@@ -130,14 +130,14 @@ ingredients:
     label: VOSO4 x n H2O
 - preferred_term: CoSO4 x 7 H2O
   term:
-    id: CHEBI:53470
-    label: CoSO4 x 7 H2O
+    id: CHEBI:91244
+    label: cobalt(2+) sulfate heptahydrate
   concentration:
     value: 1e-05
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:53470
-    label: CoSO4 x 7 H2O
+    id: CHEBI:91244
+    label: cobalt(2+) sulfate heptahydrate
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

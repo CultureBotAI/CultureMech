@@ -21,10 +21,10 @@ ingredients:
     value: '1.0'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
-    id: CHEBI:35235
+    id: CHEBI:17561
     label: L-cysteine
   term:
-    id: CHEBI:35235
+    id: CHEBI:17561
     label: L-cysteine
 - preferred_term: Sodium sulfide nonahydrate
   concentration:

@@ -214,8 +214,8 @@ ingredients:
   notes: From CCAP Medium MR_S77.pdf; Curated from CCAP Medium MR_S77.pdf specification
 - preferred_term: FeSO4 x 7H2O
   term:
-    id: CHEBI:75832
-    label: FeSO4 x 7H2O
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0

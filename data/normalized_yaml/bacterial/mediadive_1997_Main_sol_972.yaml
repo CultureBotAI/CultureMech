@@ -48,8 +48,8 @@ composition:
     id: mediadive.compound:792
     label: Sodium citrate
   chebi_term:
-    id: CHEBI:32142
-    label: sodium citrate dihydrate
+    id: CHEBI:53258
+    label: sodium citrate
     confidence: 1.0
     match_type: exact_match
 - preferred_term: FeSO4 x 7 H2O

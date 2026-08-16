@@ -216,14 +216,14 @@ ingredients:
     synonym_type: EXACT
 - preferred_term: Dextrose
   term:
-    id: CHEBI:4167
-    label: Dextrose
+    id: CHEBI:17634
+    label: D-glucose
   concentration:
     value: '20'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:4167
-    label: Dextrose
+    id: CHEBI:17634
+    label: D-glucose
 - preferred_term: Catalase
   concentration:
     value: '0.04'

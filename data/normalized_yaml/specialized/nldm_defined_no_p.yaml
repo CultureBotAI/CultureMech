@@ -450,8 +450,8 @@ ingredients:
     value: '175.0'
     unit: MICROMOLAR
   term:
-    id: CHEBI:57305
-    label: glycine zwitterion
+    id: CHEBI:15428
+    label: glycine
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-40-6; MW: 75.07;
     From NLDM_metabolites'
 - preferred_term: L-Histidine

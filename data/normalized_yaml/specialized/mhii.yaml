@@ -17,8 +17,8 @@ ingredients:
     value: '1.5'
     unit: G_PER_L
   term:
-    id: CHEBI:85248
-    label: gellan gum
+    id: CHEBI:28017
+    label: starch
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 9005-25-8'
 description: Mueller Hinton II Broth for cultivation and antimicrobial susceptibility
   testing

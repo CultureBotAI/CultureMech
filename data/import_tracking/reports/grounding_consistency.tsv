@@ -1,0 +1,51 @@
+ingredient	rows	distinct_ids	kind	distribution
+Vitamin B12	2344	2	OTHER	CHEBI:17439 (cyanocob(III)alamin) x2013; CHEBI:176843 (vitamin B12) x331
+Starch	450	2	OTHER	CHEBI:28017 (starch) x448; CHEBI:85248 (gellan gum) x2
+Maltose	132	2	OTHER	CHEBI:17306 (maltose) x94; CHEBI:18167 (alpha-maltose) x38
+Cysteine-HCl	103	2	ION	CHEBI:52891 (QSY9 succinimidyl ester(1+)) x81; CHEBI:91247 (L-cysteine hydrochloride) x22
+Calcium chloride dihydrate	96	2	OTHER	CHEBI:86158 (calcium chloride dihydrate) x94; CHEBI:3312 (calcium dichloride) x2
+Na-thioglycolate	74	2	ION	CHEBI:86481 (sodium thioglycolate) x70; CHEBI:30066 (thioglycolate(1-)) x4
+Citric acid	72	2	OTHER	CHEBI:30769 (citric acid) x42; CHEBI:53258 (sodium citrate) x30
+VOSO4 x 2 H2O	65	2	HYDRATE	CHEBI:87009 (vanadyl sulfate dihydrate) x54; CHEBI:87014 (vanadyl sulfate hexahydrate) x11
+Fructose	60	2	OTHER	CHEBI:28757 (fructose) x39; CHEBI:28645 (beta-D-fructofuranose) x21
+Calcium chloride	57	2	OTHER	CHEBI:86158 (calcium chloride dihydrate) x55; CHEBI:3312 (calcium dichloride) x2
+MnSO4 x 4 H2O	57	2	HYDRATE	CHEBI:86358 (manganese(II) sulfate tetrahydrate) x51; CHEBI:86360 (manganese(II) sulfate) x6
+Magnesium chloride hexahydrate	50	2	HYDRATE	CHEBI:86345 (magnesium dichloride hexahydrate) x49; CHEBI:6636 (magnesium dichloride) x1
+Na2S2O3	43	2	HYDRATE	CHEBI:132112 (sodium thiosulfate) x24; CHEBI:32150 (sodium thiosulfate pentahydrate) x19
+D-Fructose	42	2	OTHER	CHEBI:15824 (D-fructose) x33; CHEBI:48095 (keto-D-fructose) x9
+DL-Dithiothreitol	41	2	OTHER	CHEBI:18320 (1,4-dithiothreitol) x40; CHEBI:42106 (L-1,4-dithiothreitol) x1
+Lactose	38	2	OTHER	CHEBI:17716 (lactose) x30; CHEBI:36218 (beta-lactose) x8
+Arginine	37	2	ION	CHEBI:29016 (arginine) x31; CHEBI:32696 (argininium(1+)) x6
+Sodium sulfide nonahydrate	36	2	OTHER	CHEBI:85357 (3-[(1E,4R)-4-hydroxycyclohex-2-en-1-ylidene]pyruvic acid) x35; CHEBI:76208 (sodium sulfide (anhydrous)) x1
+Tricine	34	2	OTHER	CHEBI:46760 (tricine) x29; CHEBI:39063 (N-tris(hydroxymethyl)methylglycine) x5
+Inositol	25	2	OTHER	CHEBI:24848 (inositol) x18; CHEBI:17268 (myo-inositol) x7
+MnSO4 x 5 H2O	23	2	HYDRATE	CHEBI:131524 (manganese(II) sulfate pentahydrate) x22; CHEBI:86360 (manganese(II) sulfate) x1
+Xanthine	21	2	OTHER	CHEBI:17712 (9H-xanthine) x15; CHEBI:15318 (xanthine) x6
+m-Inositol	21	2	ION	CHEBI:10642 (scyllo-inositol) x20; CHEBI:166917 (Ins-1-P-Man-alpha-1->6-Ins-1-P-Cer(d18:0)(2-)) x1
+Na3-EDTA	17	2	OTHER	CHEBI:63125 (EDTA trisodium salt) x15; CHEBI:64734 (EDTA disodium salt (anhydrous)) x2
+Dithiothreitol	16	2	OTHER	CHEBI:18320 (1,4-dithiothreitol) x13; CHEBI:42106 (L-1,4-dithiothreitol) x3
+H2SeO3	16	2	OTHER	CHEBI:26642 (selenous acid) x14; CHEBI:48854 (sulfurous acid) x2
+Thiamine pyrophosphate	16	2	ION	CHEBI:18290 (thiamine(1+) diphosphate chloride) x14; CHEBI:9532 (thiamine(1+) diphosphate) x2
+D-Trehalose dihydrate	15	2	OTHER	CHEBI:232797 (trehalose dihydrate) x14; CHEBI:83760 (EC 2.4.1.64 (alpha,alpha-trehalose phosphorylase) inhibitor) x1
+Calcium Chloride	12	2	OTHER	CHEBI:86158 (calcium chloride dihydrate) x8; CHEBI:3312 (calcium dichloride) x4
+Na-butyrate	12	2	OTHER	CHEBI:64103 (sodium butyrate) x11; CHEBI:17968 (butyrate) x1
+VOSO4 x 5 H2O	12	2	HYDRATE	CHEBI:132758 (vanadyl sulfate pentahydrate) x11; CHEBI:87014 (vanadyl sulfate hexahydrate) x1
+Sodium succinate dibasic hexahydrate	11	2	OTHER	CHEBI:63686 (sodium succinate hexahydrate) x10; CHEBI:63675 (sodium succinate (anhydrous)) x1
+D-Mannose	10	2	OTHER	CHEBI:16024 (D-mannose) x6; CHEBI:37675 (aldehydo-D-mannose) x4
+N-Acetyl-glutamic acid	10	2	OTHER	CHEBI:172431 (Acetyl-Glu) x9; CHEBI:17533 (N-acetyl-L-glutamic acid) x1
+Nitrilotriacetate	10	2	ION	CHEBI:25548 (nitrilotriacetate(3-)) x8; CHEBI:44557 (nitrilotriacetic acid) x2
+n-Acetyl-glutamine	10	2	OTHER	CHEBI:73685 (N(2)-acetylglutamine) x9; CHEBI:133362 (N-acetyl-L-methionyl-L-glutaminyl residue) x1
+n-Acetyl-lysine	10	2	OTHER	CHEBI:35704 (N(2)-acetyl-L-lysine) x9; CHEBI:61930 (N(6)-acetyl-L-lysine residue) x1
+n-Acetyl-muramic acid	10	2	OTHER	CHEBI:47966 (aldehydo-N-acetylmuramic acid) x9; CHEBI:40666 (1,6-anhydro-N-acetyl-beta-muramic acid) x1
+sn-glycero-3-phosphocholine	10	2	OTHER	CHEBI:16870 (choline alfoscerate) x9; CHEBI:36702 (2-acyl-1-alkyl-sn-glycero-3-phosphocholine) x1
+Sodium sulfide	9	2	OTHER	CHEBI:85357 (3-[(1E,4R)-4-hydroxycyclohex-2-en-1-ylidene]pyruvic acid) x8; CHEBI:76208 (sodium sulfide (anhydrous)) x1
+N-Acetyl-D-glucosamine	8	2	OTHER	CHEBI:506227 (N-acetyl-D-glucosamine) x6; CHEBI:8006 (Peptidoglycan(N-acetyl-D-glucosamine)) x2
+Putrescine	6	2	OTHER	CHEBI:17148 (putrescine) x4; CHEBI:326268 (1,4-butanediammonium) x2
+D-Arabinose	5	2	OTHER	CHEBI:46983 (aldehydo-D-arabinose) x4; CHEBI:17108 (D-arabinose) x1
+Na-tartrate	5	2	ION	CHEBI:63017 (sodium L-tartrate) x4; CHEBI:30924 (L-tartrate(2-)) x1
+DL-Tryptophan	4	2	ION	CHEBI:57912 (L-tryptophan zwitterion) x2; CHEBI:27897 (tryptophan) x2
+KF	4	2	OTHER	CHEBI:66872 (potassium fluoride) x3; CHEBI:73605 (Lys-Phe) x1
+Thioglycolate	4	2	ION	CHEBI:30066 (thioglycolate(1-)) x3; CHEBI:47869 (thioglycolate(2-)) x1
+Cobalamine	3	2	OTHER	CHEBI:30411 (cobalamin) x2; CHEBI:28911 (cob(III)alamin) x1
+H3BO2	3	2	OTHER	CHEBI:38267 (boronic acid) x2; CHEBI:33118 (boric acid) x1
+Sodium DL-lactate	3	2	OTHER	CHEBI:75228 (sodium lactate) x2; CHEBI:232798 (sodium L-lactate) x1

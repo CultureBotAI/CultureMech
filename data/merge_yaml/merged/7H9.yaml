@@ -26,8 +26,8 @@ ingredients:
     value: '1.00E-01'
     unit: G_PER_L
   term:
-    id: CHEBI:32142
-    label: sodium citrate dihydrate
+    id: CHEBI:53258
+    label: sodium citrate
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
 - preferred_term: Pyridoxine HCl
   concentration:

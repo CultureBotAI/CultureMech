@@ -24,8 +24,8 @@ composition:
     id: mediadive.compound:792
     label: Sodium citrate
   chebi_term:
-    id: CHEBI:32142
-    label: sodium citrate dihydrate
+    id: CHEBI:53258
+    label: sodium citrate
     confidence: 1.0
     match_type: exact_match
 preparation_notes: 'Neutralize pH with a saturated sodium carbonate solution and store

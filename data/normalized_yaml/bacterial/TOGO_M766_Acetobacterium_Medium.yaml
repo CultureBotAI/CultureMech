@@ -165,8 +165,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:75215
-    label: ''
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
 - preferred_term: H3BO3
   concentration:
     value: '10'
@@ -222,8 +222,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:48843
-    label: ''
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
 - preferred_term: CoSO4・7H2
   concentration:
     value: '0.18'
