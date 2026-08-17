@@ -52,6 +52,19 @@ fetch-raw-data:
 #     just research-entity claude_code ko2_no3 growth_evidence --dry-run
 # Omitting the focus and passing a flag third would bind the flag to `focus`.
 # `research-media` below takes no positional focus for exactly that reason.
+#
+# Provider choice, measured on one shared question (#284). "Available" in
+# `deep-research-client providers` means only that the env var is set — falcon
+# lists as available and returns HTTP 402, so it is billing-blocked.
+#
+#   provider        time   chars   URLs  PMIDs  notes
+#   openscientist   490s  21,518      6      2  best analysis; async job + polling
+#   claude_code     295s  20,876     22      5  widest source coverage; no credentials
+#   codex          439s  10,813     27      -  via `just research-media-codex`
+#   falcon            6s       -      -      -  HTTP 402 Payment Required
+#
+# Pick claude_code when you need MANY citable sources (#150, #279); openscientist
+# when reasoning quality matters more than breadth; codex for cheap sweeps.
 [group('Research')]
 research-entity provider target focus="growth_evidence" *args="":
     uv run --extra dev python scripts/research_media.py \
