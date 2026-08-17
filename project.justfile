@@ -63,8 +63,10 @@ fetch-raw-data:
 #   codex          439s  10,813     27      -  via `just research-media-codex`
 #   falcon            6s       -      -      -  HTTP 402 Payment Required
 #
-# Pick claude_code when you need MANY citable sources (#150, #279); openscientist
-# when reasoning quality matters more than breadth; codex for cheap sweeps.
+# Pick claude_code for MANY citable sources (#150, #279); openscientist when
+# reasoning quality matters more than breadth; codex for cheap sweeps.
+#
+# Deep research for one medium via deep-research-client (see table above).
 [group('Research')]
 research-entity provider target focus="growth_evidence" *args="":
     uv run --extra dev python scripts/research_media.py \
@@ -101,13 +103,13 @@ research-provider provider:
 # job is LITERATURE (PaperQA3). Pass `--job literature-high` etc. via
 # *args. Requires EDISON_PLATFORM_API_KEY (or EDISON_API_KEY) in env
 # or .env. See scripts/research_media_edison.py for details.
-[group('Research')]
 # Media research via the local Codex CLI (#284). Needs `codex` on PATH and
 # web_search enabled in ~/.codex/config.toml; both are checked before it runs.
 [group('Research')]
 research-media-codex target *args="":
     uv run --extra dev python scripts/research_media_codex.py --target {{target}} {{args}}
 
+[group('Research')]
 research-media-edison target *args="":
     uv run --extra dev python scripts/research_media_edison.py \
       --target {{target}} \
