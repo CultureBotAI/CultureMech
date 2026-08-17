@@ -34,6 +34,7 @@ data/import_tracking/reports/kg_fallback_phase2_curator_review.tsv	SNAPSHOT	one-
 data/import_tracking/reports/kg_fallback_phase3_changes.tsv	SNAPSHOT	one-time migration (migrate_kg_fallback_phase3_curation.py)		scripts/migrate_kg_fallback_phase3_curation.py	
 data/import_tracking/reports/mim_grounding_divergences.tsv	SNAPSHOT	one-time migration (migrate_legacy_mim_to_chebi.py)		scripts/migrate_legacy_mim_to_chebi.py	
 data/import_tracking/reports/missing_compositions.tsv	CURRENT_VIEW	triage_missing_compositions.py	scripts/triage_missing_compositions.py	scripts/triage_missing_compositions.py	yes
+data/import_tracking/reports/name_term_element_mismatch.tsv	CURRENT_VIEW	audit_name_term_elements.py	scripts/audit_name_term_elements.py	scripts/audit_name_term_elements.py	
 data/import_tracking/reports/primary_term_canonicalize_changes.tsv	UNKNOWN	no writer found			
 data/import_tracking/reports/primary_term_reground_changes.tsv	UNKNOWN	no writer found			
 data/import_tracking/reports/review_need_ranking.tsv	CURRENT_VIEW	score_review_need.py	scripts/score_review_need.py	scripts/score_review_need.py	yes
