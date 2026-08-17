@@ -2,9 +2,24 @@
 """Run Edison Scientific deep research against CultureMech media records.
 
 Uses the `edison-client` SDK directly. The companion `research_media.py`
-wraps `deep-research-client`, but as of DRC 0.2.4 only `cyberian` and
-`openai` are registered providers — Edison/PaperQA is not exposed
-there, so we drive the SDK directly.
+wraps `deep-research-client`.
+
+The original reason for this second path is GONE: DRC 0.2.4 did not
+register Edison at all, so the SDK was the only way to reach it. As of
+DRC 0.2.10 it does — `deep-research-client providers` lists `falcon`
+once `EDISON_API_KEY` is set (#284).
+
+The path survives for a different and still-current reason: DRC's
+`falcon` provider exposes only `system_prompt`, `allowed_domains`,
+`temperature`, `max_tokens` and `max_embedded_images`. It does NOT
+expose Edison's JOB selection, and job choice is the whole point of
+this script — LITERATURE vs LITERATURE_HIGH vs precedent vs phoenix are
+different agents at different costs. Routing through DRC today would
+silently pin us to one job.
+
+So: use `research_media.py --provider falcon` when the default job is
+what you want and you would like the shared cache and output handling;
+use this script when the job matters.
 
 The default job is LITERATURE (== `job-futurehouse-paperqa3`), the
 PaperQA agent — the best fit for "what organisms grow on this medium,

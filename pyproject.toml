@@ -60,7 +60,7 @@ dev = [
     "black>=23.0.0",
     "ruff>=0.1.0",
     "mypy>=1.5.0",
-    "deep-research-client[cyberian]>=0.2.4; python_version >= '3.12'",
+    "deep-research-client[cyberian]>=0.2.10; python_version >= '3.12'",
     # Used by scripts/research_media_edison.py — both arrive transitively
     # via deep-research-client today, but declare them explicitly so
     # fresh `uv run --extra dev ...` doesn't break if those transitives
