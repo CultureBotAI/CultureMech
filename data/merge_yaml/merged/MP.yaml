@@ -54,13 +54,22 @@ curation_history:
   action: MERGED_RECIPES
   notes: merged 1 source recipe(s) on fingerprint 5c82bc810493e1cefd9ae6891db79bf5d611c1b9226df50e7acd5f2f2c5d57a5
   source: mp.yaml
+- timestamp: '2026-08-17T17:31:56.813919+00:00'
+  curator: repair_subscript_stripped_names.py
+  action: REPAIRED_SUBSCRIPT_STRIPPED_NAME
+  notes: 'Restored digits lost from formula ingredient name(s) by an upstream encoding
+    step (#276): Fe(NH ) (SO ) .6H O -> Fe(NH4)2(SO4)2.6H2O; H BO -> H3BO3; MnSO .H
+    O -> MnSO4.H2O. The corrupted original is preserved in each ingredient''s notes.'
+  changes: 3 preferred_term(s) repaired
 references:
 - reference: CCAP:MP_Modified_Provasoli
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_MP_Modified_Provasoli.pdf
 ingredients:
-- preferred_term: Fe(NH ) (SO ) .6H O
-  notes: Ontology mapping not yet available; From CCAP Medium MR_MP_Modified_Provasoli.pdf;
-    Curated from CCAP Medium MR_MP_Modified_Provasoli.pdf specification
+- preferred_term: Fe(NH4)2(SO4)2.6H2O
+  notes: 'Ontology mapping not yet available; From CCAP Medium MR_MP_Modified_Provasoli.pdf;
+    Curated from CCAP Medium MR_MP_Modified_Provasoli.pdf specification Name repaired
+    (#276): the source string `Fe(NH ) (SO ) .6H O` had lost its subscript digits;
+    restored to `Fe(NH4)2(SO4)2.6H2O` — ferrous ammonium sulfate hexahydrate.'
   concentration:
     value: '0.7'
     unit: G_PER_L
@@ -95,7 +104,7 @@ ingredients:
   source: CCAP Medium MR_MP_Modified_Provasoli.pdf
   notes: From CCAP Medium MR_MP_Modified_Provasoli.pdf; Curated from CCAP Medium MR_MP_Modified_Provasoli.pdf
     specification
-- preferred_term: H BO
+- preferred_term: H3BO3
   term:
     id: CHEBI:33118
     label: boric acid
@@ -108,11 +117,15 @@ ingredients:
     value: '1.12'
     unit: G_PER_L
   source: CCAP Medium MR_MP_Modified_Provasoli.pdf
-  notes: From CCAP Medium MR_MP_Modified_Provasoli.pdf; Curated from CCAP Medium MR_MP_Modified_Provasoli.pdf
-    specification
-- preferred_term: MnSO .H O
-  notes: Ontology mapping not yet available; From CCAP Medium MR_MP_Modified_Provasoli.pdf;
-    Curated from CCAP Medium MR_MP_Modified_Provasoli.pdf specification
+  notes: 'From CCAP Medium MR_MP_Modified_Provasoli.pdf; Curated from CCAP Medium
+    MR_MP_Modified_Provasoli.pdf specification Name repaired (#276): the source string
+    `H BO` had lost its subscript digits; restored to `H3BO3` — grounded to boric
+    acid (CHEBI:33118).'
+- preferred_term: MnSO4.H2O
+  notes: 'Ontology mapping not yet available; From CCAP Medium MR_MP_Modified_Provasoli.pdf;
+    Curated from CCAP Medium MR_MP_Modified_Provasoli.pdf specification Name repaired
+    (#276): the source string `MnSO .H O` had lost its subscript digits; restored
+    to `MnSO4.H2O` — manganese(II) sulfate monohydrate.'
   concentration:
     value: '0.12'
     unit: G_PER_L

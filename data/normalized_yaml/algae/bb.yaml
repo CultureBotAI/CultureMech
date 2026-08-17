@@ -49,6 +49,13 @@ curation_history:
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
     category->lowercase=1
+- timestamp: '2026-08-17T17:31:48.103716+00:00'
+  curator: repair_subscript_stripped_names.py
+  action: REPAIRED_SUBSCRIPT_STRIPPED_NAME
+  notes: 'Restored digits lost from formula ingredient name(s) by an upstream encoding
+    step (#276): Co(NO ) .6H O -> Co(NO3)2.6H2O. The corrupted original is preserved
+    in each ingredient''s notes.'
+  changes: 1 preferred_term(s) repaired
 references:
 - reference: CCAP:BB
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_BB.pdf
@@ -102,7 +109,7 @@ ingredients:
     unit: G_PER_L
   source: CCAP Medium MR_BB.pdf
   notes: From CCAP Medium MR_BB.pdf; Curated from CCAP Medium MR_BB.pdf specification
-- preferred_term: Co(NO ) .6H O
+- preferred_term: Co(NO3)2.6H2O
   term:
     id: CHEBI:86214
     label: cobalt dinitrate hexahydrate
@@ -115,7 +122,9 @@ ingredients:
     value: '0.49'
     unit: G_PER_L
   source: CCAP Medium MR_BB.pdf
-  notes: From CCAP Medium MR_BB.pdf; Curated from CCAP Medium MR_BB.pdf specification
+  notes: 'From CCAP Medium MR_BB.pdf; Curated from CCAP Medium MR_BB.pdf specification
+    Name repaired (#276): the source string `Co(NO ) .6H O` had lost its subscript
+    digits; restored to `Co(NO3)2.6H2O` — grounded to cobalt dinitrate hexahydrate.'
 - preferred_term: KOH
   term:
     id: CHEBI:32035

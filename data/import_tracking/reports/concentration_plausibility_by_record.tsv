@@ -1,13 +1,13 @@
 file_path	record_id	flagged_rows	water_as_volume	trace_salt_as_stock	indicator_unit_slip	has_solutions_block	flattened_cocktail
 algae/2asw.yaml	CultureMech:000038	1	0	0	1	no	no
-algae/CCAP_TAP Medium.yaml	CultureMech:000139	5	0	5	0	no	yes
+algae/CCAP_TAP Medium.yaml	CultureMech:000139	6	0	6	0	no	yes
 algae/ant.yaml	CultureMech:000042	1	0	1	0	no	no
 algae/asw.yaml	CultureMech:000050	1	0	0	1	no	no
 algae/asw_barley.yaml	CultureMech:000043	1	0	0	1	no	no
 algae/asw_ses.yaml	CultureMech:000052	1	0	0	1	no	no
 algae/bb.yaml	CultureMech:000053	3	0	3	0	no	yes
 algae/bb_merds.yaml	CultureMech:000054	3	0	3	0	no	yes
-algae/bg.yaml	CultureMech:000055	1	0	1	0	no	no
+algae/bg.yaml	CultureMech:000055	2	0	2	0	no	no
 algae/e26_biotin_ant.yaml	CultureMech:000065	1	0	1	0	no	no
 algae/e31_ant.yaml	CultureMech:000068	1	0	1	0	no	no
 algae/f_2.yaml	CultureMech:000149	5	0	1	4	no	yes
@@ -19,13 +19,14 @@ algae/k_medium.yaml	CultureMech:000076	5	0	1	4	no	yes
 algae/k_minimum.yaml	CultureMech:000077	5	0	1	4	no	yes
 algae/l1.yaml	CultureMech:000079	4	0	0	4	no	yes
 algae/met_44.yaml	CultureMech:000096	4	0	0	4	no	yes
-algae/mwc.yaml	CultureMech:000094	5	0	1	4	no	yes
+algae/mp.yaml	CultureMech:000092	1	0	1	0	no	no
+algae/mwc.yaml	CultureMech:000094	6	0	2	4	no	yes
 algae/nss_low.yaml	CultureMech:000107	1	0	0	1	no	no
 algae/s88_vitamins.yaml	CultureMech:000126	1	0	0	1	no	no
 algae/sp.yaml	CultureMech:000135	1	0	0	1	no	no
-algae/ucm.yaml	CultureMech:000140	3	0	2	1	no	no
-algae/walnes.yaml	CultureMech:000142	3	0	3	0	no	yes
-algae/waris_h.yaml	CultureMech:000143	1	0	1	0	no	no
+algae/ucm.yaml	CultureMech:000140	4	0	3	1	no	yes
+algae/walnes.yaml	CultureMech:000142	4	0	4	0	no	yes
+algae/waris_h.yaml	CultureMech:000143	2	0	2	0	no	no
 algae/zm_10.yaml	CultureMech:000146	1	0	1	0	no	no
 archaea/DSMZ_1399_HALOPHILIC_MEDIUM.yaml	CultureMech:000252	1	0	1	0	no	no
 archaea/JCM_J1149_METHANOMASSILIICOCCUS_ALVUS_MEDIUM.yaml	CultureMech:002322	1	0	1	0	no	no

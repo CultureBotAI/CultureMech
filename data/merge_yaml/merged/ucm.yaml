@@ -59,6 +59,14 @@ curation_history:
   action: MERGED_RECIPES
   notes: merged 1 source recipe(s) on fingerprint 4b215eab4ca112ea3f35cff28ff24a8825d854535f71d32c8a715a34e1733546
   source: ucm.yaml
+- timestamp: '2026-08-17T17:32:00.006938+00:00'
+  curator: repair_subscript_stripped_names.py
+  action: REPAIRED_SUBSCRIPT_STRIPPED_NAME
+  notes: 'Restored digits lost from formula ingredient name(s) by an upstream encoding
+    step (#276): H BO -> H3BO3; Co(NO ) .6H O -> Co(NO3)2.6H2O; As O -> As2O3; Na
+    WO .2H O -> Na2WO4.2H2O; As O -> As2O3; Na WO .2H O -> Na2WO4.2H2O; Na SO .10H
+    O -> Na2SO4.10H2O. The corrupted original is preserved in each ingredient''s notes.'
+  changes: 7 preferred_term(s) repaired
 references:
 - reference: CCAP:UCM
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_UCM.pdf
@@ -122,7 +130,7 @@ ingredients:
     unit: G_PER_L
   source: CCAP Medium MR_UCM.pdf
   notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
-- preferred_term: H BO
+- preferred_term: H3BO3
   term:
     id: CHEBI:33118
     label: boric acid
@@ -135,7 +143,9 @@ ingredients:
     value: '11.4'
     unit: G_PER_L
   source: CCAP Medium MR_UCM.pdf
-  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+  notes: 'From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+    Name repaired (#276): the source string `H BO` had lost its subscript digits;
+    restored to `H3BO3` — grounded to boric acid (CHEBI:33118).'
 - preferred_term: FeSO4 x 7H2O
   term:
     id: CHEBI:75836
@@ -206,7 +216,7 @@ ingredients:
     unit: G_PER_L
   source: CCAP Medium MR_UCM.pdf
   notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
-- preferred_term: Co(NO ) .6H O
+- preferred_term: Co(NO3)2.6H2O
   term:
     id: CHEBI:86214
     label: cobalt dinitrate hexahydrate
@@ -219,7 +229,9 @@ ingredients:
     value: '0.033'
     unit: G_PER_L
   source: CCAP Medium MR_UCM.pdf
-  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+  notes: 'From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+    Name repaired (#276): the source string `Co(NO ) .6H O` had lost its subscript
+    digits; restored to `Co(NO3)2.6H2O` — grounded to cobalt dinitrate hexahydrate.'
 - preferred_term: NH VO
   notes: Ontology mapping not yet available; From CCAP Medium MR_UCM.pdf; Curated
     from CCAP Medium MR_UCM.pdf specification
@@ -255,7 +267,7 @@ ingredients:
     unit: G_PER_L
   source: CCAP Medium MR_UCM.pdf
   notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
-- preferred_term: As O
+- preferred_term: As2O3
   term:
     id: CHEBI:30621
     label: diarsenic trioxide
@@ -268,8 +280,10 @@ ingredients:
     value: '0.000093'
     unit: G_PER_L
   source: CCAP Medium MR_UCM.pdf
-  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
-- preferred_term: Na WO .2H O
+  notes: 'From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+    Name repaired (#276): the source string `As O` had lost its subscript digits;
+    restored to `As2O3` — grounded to diarsenic trioxide (CHEBI:30621).'
+- preferred_term: Na2WO4.2H2O
   term:
     id: CHEBI:63939
     label: sodium tungstate dihydrate
@@ -282,7 +296,9 @@ ingredients:
     value: '0.000066'
     unit: G_PER_L
   source: CCAP Medium MR_UCM.pdf
-  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+  notes: 'From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+    Name repaired (#276): the source string `Na WO .2H O` had lost its subscript digits;
+    restored to `Na2WO4.2H2O` — grounded to sodium tungstate dihydrate.'
 - preferred_term: TeO
   term:
     id: CHEBI:30452
@@ -325,7 +341,7 @@ ingredients:
     unit: G_PER_L
   source: CCAP Medium MR_UCM.pdf
   notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
-- preferred_term: As O
+- preferred_term: As2O3
   term:
     id: CHEBI:30621
     label: diarsenic trioxide
@@ -338,8 +354,10 @@ ingredients:
     value: '0.093'
     unit: G_PER_L
   source: CCAP Medium MR_UCM.pdf
-  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
-- preferred_term: Na WO .2H O
+  notes: 'From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+    Name repaired (#276): the source string `As O` had lost its subscript digits;
+    restored to `As2O3` — grounded to diarsenic trioxide (CHEBI:30621).'
+- preferred_term: Na2WO4.2H2O
   term:
     id: CHEBI:63939
     label: sodium tungstate dihydrate
@@ -352,7 +370,9 @@ ingredients:
     value: '0.066'
     unit: G_PER_L
   source: CCAP Medium MR_UCM.pdf
-  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+  notes: 'From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+    Name repaired (#276): the source string `Na WO .2H O` had lost its subscript digits;
+    restored to `Na2WO4.2H2O` — grounded to sodium tungstate dihydrate.'
 - preferred_term: NaOH
   term:
     id: CHEBI:32145
@@ -625,9 +645,11 @@ ingredients:
     unit: G_PER_L
   source: CCAP Medium MR_UCM.pdf
   notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
-- preferred_term: Na SO .10H O
-  notes: Ontology mapping not yet available; From CCAP Medium MR_UCM.pdf; Curated
-    from CCAP Medium MR_UCM.pdf specification
+- preferred_term: Na2SO4.10H2O
+  notes: 'Ontology mapping not yet available; From CCAP Medium MR_UCM.pdf; Curated
+    from CCAP Medium MR_UCM.pdf specification Name repaired (#276): the source string
+    `Na SO .10H O` had lost its subscript digits; restored to `Na2SO4.10H2O` — sodium
+    sulfate decahydrate.'
   concentration:
     value: '7.28'
     unit: G_PER_L

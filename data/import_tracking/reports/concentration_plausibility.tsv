@@ -9604,6 +9604,7 @@ INDICATOR_UNIT_SLIP	archaea/thermosphaera_medium.yaml	CultureMech:001964	Pyridox
 TRACE_SALT_AS_STOCK	archaea/wr_medium_for_methanobacteriaceae.yaml	CultureMech:003152	FeCl3 x 6 H2O	1.35	G_PER_L	1.35 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	algae/2asw.yaml	CultureMech:000038	Thiamine HCl	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	algae/CCAP_TAP Medium.yaml	CultureMech:000139	ZnSO4 x 7 H2O	22	G_PER_L	22 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
+TRACE_SALT_AS_STOCK	algae/CCAP_TAP Medium.yaml	CultureMech:000139	H3BO3	11.4	G_PER_L	11.4 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	algae/CCAP_TAP Medium.yaml	CultureMech:000139	MnCl2 x 4 H2O	5.1	G_PER_L	5.1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	algae/CCAP_TAP Medium.yaml	CultureMech:000139	FeSO4 x 7H2O	5	G_PER_L	5 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	algae/CCAP_TAP Medium.yaml	CultureMech:000139	CoCl2 x 6 H2O	1.6	G_PER_L	1.6 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -9618,6 +9619,7 @@ TRACE_SALT_AS_STOCK	algae/bb.yaml	CultureMech:000053	CuSO4 x 5 H2O	1.57	G_PER_L	
 TRACE_SALT_AS_STOCK	algae/bb_merds.yaml	CultureMech:000054	ZnSO4 x 7 H2O	8.82	G_PER_L	8.82 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	algae/bb_merds.yaml	CultureMech:000054	MnCl2 x 4 H2O	1.44	G_PER_L	1.44 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	algae/bb_merds.yaml	CultureMech:000054	CuSO4 x 5 H2O	1.57	G_PER_L	1.57 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
+TRACE_SALT_AS_STOCK	algae/bg.yaml	CultureMech:000055	H3BO3	2.86	G_PER_L	2.86 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	algae/bg.yaml	CultureMech:000055	MnCl2 x 4 H2O	1.81	G_PER_L	1.81 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	algae/e26_biotin_ant.yaml	CultureMech:000065	FeCl3 x 6 H2O	1.08	G_PER_L	1.08 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	algae/e31_ant.yaml	CultureMech:000068	FeCl3 x 6 H2O	1.08	G_PER_L	1.08 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
@@ -9657,7 +9659,9 @@ INDICATOR_UNIT_SLIP	algae/met_44.yaml	CultureMech:000096	Thiamine HCl (Vitamin B
 INDICATOR_UNIT_SLIP	algae/met_44.yaml	CultureMech:000096	Thiamine HCl (B ) -	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	algae/met_44.yaml	CultureMech:000096	Biotin	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	algae/met_44.yaml	CultureMech:000096	Cyanocobalamin (B )	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
+TRACE_SALT_AS_STOCK	algae/mp.yaml	CultureMech:000092	H3BO3	1.12	G_PER_L	1.12 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	algae/mwc.yaml	CultureMech:000094	FeCl3 x 6 H2O	3.15	G_PER_L	3.15 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
+TRACE_SALT_AS_STOCK	algae/mwc.yaml	CultureMech:000094	H3BO3	1.00	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	algae/mwc.yaml	CultureMech:000094	Thiamine HCl (Vitamin B )	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	algae/mwc.yaml	CultureMech:000094	Thiamine HCl (B ) -	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	algae/mwc.yaml	CultureMech:000094	Biotin	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
@@ -9665,13 +9669,16 @@ INDICATOR_UNIT_SLIP	algae/mwc.yaml	CultureMech:000094	Cyanocobalamin (B )	0.1	G_
 INDICATOR_UNIT_SLIP	algae/nss_low.yaml	CultureMech:000107	Thiamine HCl	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	algae/s88_vitamins.yaml	CultureMech:000126	Cyanocobalamin (vitamin B )	0.1	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 INDICATOR_UNIT_SLIP	algae/sp.yaml	CultureMech:000135	Thiamine HCl	0.10	G_PER_L	0.1 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
+TRACE_SALT_AS_STOCK	algae/ucm.yaml	CultureMech:000140	H3BO3	11.4	G_PER_L	11.4 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	algae/ucm.yaml	CultureMech:000140	FeSO4 x 7H2O	1.99	G_PER_L	1.99 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	algae/ucm.yaml	CultureMech:000140	Na2SeO3 x 5 H2O	2.63	G_PER_L	2.63 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 INDICATOR_UNIT_SLIP	algae/ucm.yaml	CultureMech:000140	Thiamine HCL	0.4	G_PER_L	0.4 G_PER_L indicator/vitamin — normally mg/L; likely a 1000x unit slip
 TRACE_SALT_AS_STOCK	algae/walnes.yaml	CultureMech:000142	ZnCl2	2.1	G_PER_L	2.1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	algae/walnes.yaml	CultureMech:000142	CoCl2 x 6 H2O	2.0	G_PER_L	2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	algae/walnes.yaml	CultureMech:000142	CuSO4 x 5 H2O	2.0	G_PER_L	2 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
+TRACE_SALT_AS_STOCK	algae/walnes.yaml	CultureMech:000142	H3BO3	33.6	G_PER_L	33.6 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	algae/waris_h.yaml	CultureMech:000143	FeSO4 x 7H2O	2.74	G_PER_L	2.74 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
+TRACE_SALT_AS_STOCK	algae/waris_h.yaml	CultureMech:000143	H3BO3	1.12	G_PER_L	1.12 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	algae/zm_10.yaml	CultureMech:000146	FeCl3 x 6 H2O	6.30	G_PER_L	6.3 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	fungal/anaerobic_mineral_medium_with_yeast_extract.yaml	CultureMech:010491	Na2WO4 x 2 H2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below
 TRACE_SALT_AS_STOCK	fungal/czapek_yeast_extract_agar_cya.yaml	CultureMech:010511	FeSO4 x 7 H2O	1	G_PER_L	1 G_PER_L trace-element salt — stock-solution magnitude, final medium is normally mg/L or below

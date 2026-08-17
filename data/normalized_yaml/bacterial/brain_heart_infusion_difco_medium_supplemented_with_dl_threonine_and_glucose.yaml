@@ -14,11 +14,11 @@ ingredients:
   notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
     Simple component'
   term:
-    id: CHEBI:16857
-    label: L-threonine
+    id: CHEBI:26986
+    label: threonine
   mediaingredientmech_chebi_term:
-    id: CHEBI:16857
-    label: L-threonine
+    id: CHEBI:26986
+    label: threonine
 - preferred_term: Glucose
   concentration:
     value: '10'
