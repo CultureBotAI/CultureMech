@@ -202,8 +202,8 @@ ingredients:
   notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
 - preferred_term: Co(NO ) .6H O
   term:
-    id: CHEBI:78038
-    label: 3-nitroso-2-phenylimidazo[1,2-a]pyridine
+    id: CHEBI:86214
+    label: cobalt dinitrate hexahydrate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -265,8 +265,8 @@ ingredients:
   notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
 - preferred_term: Na WO .2H O
   term:
-    id: CHEBI:86311
-    label: KGKGKGKGKGENPVVAFFKNIVTPRTP
+    id: CHEBI:63939
+    label: sodium tungstate dihydrate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -335,8 +335,8 @@ ingredients:
   notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
 - preferred_term: Na WO .2H O
   term:
-    id: CHEBI:86311
-    label: KGKGKGKGKGENPVVAFFKNIVTPRTP
+    id: CHEBI:63939
+    label: sodium tungstate dihydrate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0

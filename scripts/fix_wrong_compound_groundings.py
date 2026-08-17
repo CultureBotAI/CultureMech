@@ -167,6 +167,19 @@ CORRECTIONS: dict[tuple[str, str], tuple[str, str]] = {
     # NOT fixed: `FeSO4 x 6 H2O` / `x 5 H2O` (18 rows) and `VOSO4 x 5 H2O` -- CHEBI has
     # no term for those hydrates, and they are likelier transcription errors for the
     # heptahydrate than real formulations. Left for curation.
+    # --- #276/#278: found by the element-mismatch detector -----------------------
+    # Each of these is grounded to a term whose ChEBI FORMULA lacks an element the
+    # ingredient's own name demands. Four name a completely different substance --
+    # ninhydrin for manganese sulfate, a peptide for sodium tungstate, organics for
+    # sodium sulfide and cobalt nitrate -- which is the class that keeps recurring
+    # (CHEBI:52891 the dye, CHEBI:86463 potassium aluminium sulfate).
+    ('CHEBI:85357', 'Sodium sulfide nonahydrate'): ('CHEBI:76209', 'sodium sulfide nonahydrate'),
+    ('CHEBI:85357', 'Sodium sulfide'): ('CHEBI:76208', 'sodium sulfide (anhydrous)'),
+    ('CHEBI:78038', 'Co(NO ) .6H O'): ('CHEBI:86214', 'cobalt dinitrate hexahydrate'),
+    ('CHEBI:86374', 'Manganese sulfate monohydrate'): ('CHEBI:86364', 'manganese(II) sulfate monohydrate'),
+    ('CHEBI:48854', 'H2SeO3'): ('CHEBI:26642', 'selenous acid'),
+    ('CHEBI:86311', 'Na WO .2H O'): ('CHEBI:63939', 'sodium tungstate dihydrate'),
+    ('CHEBI:29033', 'Iron(II) sulfate'): ('CHEBI:75832', 'iron(2+) sulfate (anhydrous)'),
 }
 
 

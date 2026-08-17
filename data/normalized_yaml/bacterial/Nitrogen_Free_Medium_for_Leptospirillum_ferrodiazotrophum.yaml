@@ -11,8 +11,8 @@ ingredients:
     value: '30.0'
     unit: G_PER_L
   term:
-    id: CHEBI:29033
-    label: iron(2+)
+    id: CHEBI:75832
+    label: iron(2+) sulfate (anhydrous)
   mediaingredientmech_term:
     id: MediaIngredientMech:000115
     label: Iron(II) sulfate

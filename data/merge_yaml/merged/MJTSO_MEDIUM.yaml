@@ -281,8 +281,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:48854
-    label: sulfurous acid
+    id: CHEBI:26642
+    label: selenous acid
   mediaingredientmech_term:
     id: MediaIngredientMech:000434
     label: H2SeO3
