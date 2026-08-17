@@ -89,6 +89,12 @@ research-provider provider:
 # *args. Requires EDISON_PLATFORM_API_KEY (or EDISON_API_KEY) in env
 # or .env. See scripts/research_media_edison.py for details.
 [group('Research')]
+# Media research via the local Codex CLI (#284). Needs `codex` on PATH and
+# web_search enabled in ~/.codex/config.toml; both are checked before it runs.
+[group('Research')]
+research-media-codex target *args="":
+    uv run --extra dev python scripts/research_media_codex.py --target {{target}} {{args}}
+
 research-media-edison target *args="":
     uv run --extra dev python scripts/research_media_edison.py \
       --target {{target}} \
