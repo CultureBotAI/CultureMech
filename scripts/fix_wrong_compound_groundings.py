@@ -167,6 +167,12 @@ CORRECTIONS: dict[tuple[str, str], tuple[str, str]] = {
     # NOT fixed: `FeSO4 x 6 H2O` / `x 5 H2O` (18 rows) and `VOSO4 x 5 H2O` -- CHEBI has
     # no term for those hydrates, and they are likelier transcription errors for the
     # heptahydrate than real formulations. Left for curation.
+    # --- #276 item 2: a racemate is not its L-enantiomer -------------------------
+    # A DL- name grounded to the single-enantiomer term. Most DL- names in the corpus
+    # are already correct -- `DL-methionine` -> `methionine`, `DL-Malic acid` ->
+    # `malic acid` are stereo-UNSPECIFIED and fine -- so only these two move.
+    ("CHEBI:17895", "DL-Tyrosine"): ("CHEBI:18186", "tyrosine"),
+    ("CHEBI:16857", "DL-threonine"): ("CHEBI:26986", "threonine"),
 }
 
 

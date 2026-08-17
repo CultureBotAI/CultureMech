@@ -54,11 +54,18 @@ curation_history:
   action: MERGED_RECIPES
   notes: merged 1 source recipe(s) on fingerprint 8abe1bd74107b93cb476915ceff174290bb33dc9df691de35b93018aba520133
   source: bg.yaml
+- timestamp: '2026-08-17T17:31:57.564770+00:00'
+  curator: repair_subscript_stripped_names.py
+  action: REPAIRED_SUBSCRIPT_STRIPPED_NAME
+  notes: 'Restored digits lost from formula ingredient name(s) by an upstream encoding
+    step (#276): H BO -> H3BO3. The corrupted original is preserved in each ingredient''s
+    notes.'
+  changes: 1 preferred_term(s) repaired
 references:
 - reference: CCAP:BG11
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_BG11.pdf
 ingredients:
-- preferred_term: H BO
+- preferred_term: H3BO3
   term:
     id: CHEBI:33118
     label: boric acid
@@ -71,7 +78,9 @@ ingredients:
     value: '2.86'
     unit: G_PER_L
   source: CCAP Medium MR_BG11.pdf
-  notes: From CCAP Medium MR_BG11.pdf; Curated from CCAP Medium MR_BG11.pdf specification
+  notes: 'From CCAP Medium MR_BG11.pdf; Curated from CCAP Medium MR_BG11.pdf specification
+    Name repaired (#276): the source string `H BO` had lost its subscript digits;
+    restored to `H3BO3` — grounded to boric acid (CHEBI:33118).'
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368

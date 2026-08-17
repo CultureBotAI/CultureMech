@@ -73,6 +73,13 @@ curation_history:
   action: MERGED_RECIPES
   notes: merged 2 source recipe(s) on fingerprint 2f675f7d9255dd382f9c8bdbb87b2e8cff0762aaed7db2921e2d9ec19f370687
   source: s88_vitamins.yaml, s88_vitamins.yaml
+- timestamp: '2026-08-17T17:31:59.199424+00:00'
+  curator: repair_subscript_stripped_names.py
+  action: REPAIRED_SUBSCRIPT_STRIPPED_NAME
+  notes: 'Restored digits lost from formula ingredient name(s) by an upstream encoding
+    step (#276): LiCl.H O -> LiCl.H2O. The corrupted original is preserved in each
+    ingredient''s notes.'
+  changes: 1 preferred_term(s) repaired
 references:
 - reference: CCAP:S88
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_S88.pdf
@@ -245,7 +252,7 @@ ingredients:
     unit: G_PER_L
   source: CCAP Medium MR_S88.pdf
   notes: From CCAP Medium MR_S88.pdf; Curated from CCAP Medium MR_S88.pdf specification
-- preferred_term: LiCl.H O
+- preferred_term: LiCl.H2O
   term:
     id: CHEBI:48607
     label: lithium chloride
@@ -258,7 +265,9 @@ ingredients:
     value: '0.05'
     unit: G_PER_L
   source: CCAP Medium MR_S88.pdf
-  notes: From CCAP Medium MR_S88.pdf; Curated from CCAP Medium MR_S88.pdf specification
+  notes: 'From CCAP Medium MR_S88.pdf; Curated from CCAP Medium MR_S88.pdf specification
+    Name repaired (#276): the source string `LiCl.H O` had lost its subscript digits;
+    restored to `LiCl.H2O` — grounded to lithium chloride (CHEBI:48607).'
 - preferred_term: KI
   term:
     id: CHEBI:8346

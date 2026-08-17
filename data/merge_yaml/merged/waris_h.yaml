@@ -54,6 +54,13 @@ curation_history:
   action: MERGED_RECIPES
   notes: merged 1 source recipe(s) on fingerprint fa04bcf9277f55284556b2d583a9a95130dcb89673f3c2fedcf1af8e7125f108
   source: waris_h.yaml
+- timestamp: '2026-08-17T17:32:00.189565+00:00'
+  curator: repair_subscript_stripped_names.py
+  action: REPAIRED_SUBSCRIPT_STRIPPED_NAME
+  notes: 'Restored digits lost from formula ingredient name(s) by an upstream encoding
+    step (#276): H BO -> H3BO3; MnSO .H O -> MnSO4.H2O. The corrupted original is
+    preserved in each ingredient''s notes.'
+  changes: 2 preferred_term(s) repaired
 references:
 - reference: CCAP:Waris_H
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_Waris_H.pdf
@@ -124,7 +131,7 @@ ingredients:
   source: CCAP Medium MR_Waris_H.pdf
   notes: From CCAP Medium MR_Waris_H.pdf; Curated from CCAP Medium MR_Waris_H.pdf
     specification
-- preferred_term: H BO
+- preferred_term: H3BO3
   term:
     id: CHEBI:33118
     label: boric acid
@@ -137,11 +144,14 @@ ingredients:
     value: '1.12'
     unit: G_PER_L
   source: CCAP Medium MR_Waris_H.pdf
-  notes: From CCAP Medium MR_Waris_H.pdf; Curated from CCAP Medium MR_Waris_H.pdf
-    specification
-- preferred_term: MnSO .H O
-  notes: Ontology mapping not yet available; From CCAP Medium MR_Waris_H.pdf; Curated
-    from CCAP Medium MR_Waris_H.pdf specification
+  notes: 'From CCAP Medium MR_Waris_H.pdf; Curated from CCAP Medium MR_Waris_H.pdf
+    specification Name repaired (#276): the source string `H BO` had lost its subscript
+    digits; restored to `H3BO3` — grounded to boric acid (CHEBI:33118).'
+- preferred_term: MnSO4.H2O
+  notes: 'Ontology mapping not yet available; From CCAP Medium MR_Waris_H.pdf; Curated
+    from CCAP Medium MR_Waris_H.pdf specification Name repaired (#276): the source
+    string `MnSO .H O` had lost its subscript digits; restored to `MnSO4.H2O` — manganese(II)
+    sulfate monohydrate.'
   concentration:
     value: '0.12'
     unit: G_PER_L

@@ -159,11 +159,11 @@ ingredients:
     value: '1.601'
     unit: MILLIMOLAR
   term:
-    id: CHEBI:17895
-    label: L-tyrosine
+    id: CHEBI:18186
+    label: tyrosine
   mediaingredientmech_chebi_term:
-    id: CHEBI:17895
-    label: L-tyrosine
+    id: CHEBI:18186
+    label: tyrosine
 - preferred_term: Alanine
   concentration:
     value: '2.694'

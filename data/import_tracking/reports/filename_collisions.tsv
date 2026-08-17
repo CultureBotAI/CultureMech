@@ -42,8 +42,8 @@ asw_ses.yaml	bacterial,algae	DIFFERENT	6/22 ingredient rows shared; sizes [12, 1
 aswp.yaml	bacterial,algae	DIFFERENT	1/10 ingredient rows shared; sizes [5, 6]	CultureMech:000319,CultureMech:000051	6,5
 bacto_marine_agar.yaml	bacterial,specialized	IDENTICAL	verbatim same ingredients, groundings, concentrations and units	CultureMech:006092,CultureMech:015364	1,1
 bacto_marine_broth_difco_2216.yaml	bacterial,specialized	DIFFERENT	0/34 ingredient rows shared; sizes [16, 18]	CultureMech:005850,CultureMech:015357	18,16
-bb.yaml	bacterial,algae	DIFFERENT	3/19 ingredient rows shared; sizes [6, 16]	CultureMech:000320,CultureMech:000053	16,6
-bb_merds.yaml	bacterial,algae	DIFFERENT	3/25 ingredient rows shared; sizes [8, 20]	CultureMech:000323,CultureMech:000054	20,8
+bb.yaml	bacterial,algae	DIFFERENT	4/18 ingredient rows shared; sizes [6, 16]	CultureMech:000320,CultureMech:000053	16,6
+bb_merds.yaml	bacterial,algae	DIFFERENT	4/24 ingredient rows shared; sizes [8, 20]	CultureMech:000323,CultureMech:000054	20,8
 bg11.yaml	bacterial,algae	DIFFERENT	0/29 ingredient rows shared; sizes [14, 15]	CultureMech:000324,CultureMech:015450	15,14
 bhis.yaml	bacterial,specialized	DIFFERENT	1/15 ingredient rows shared; sizes [8, 8]	CultureMech:009362,CultureMech:015493	8,8
 bl_with_0_5_maltose.yaml	bacterial,fungal	DIFFERENT	1/2 ingredient rows shared; sizes [1, 2]	CultureMech:009801,CultureMech:010526	1,2
@@ -161,7 +161,7 @@ medium_for_marine_methylotrophs.yaml	bacterial,specialized	IDENTICAL	verbatim sa
 medium_for_marine_spirochaetes.yaml	bacterial,specialized	DIFFERENT	0/42 ingredient rows shared; sizes [10, 32]	CultureMech:007761,CultureMech:015386	11,32
 merds.yaml	bacterial,algae	DIFFERENT	0/7 ingredient rows shared; sizes [0, 7]	CultureMech:000364,CultureMech:000089	7,0
 merds_my75s.yaml	bacterial,algae	DIFFERENT	0/13 ingredient rows shared; sizes [2, 11]	CultureMech:000365,CultureMech:000090	11,2
-mhy.yaml	bacterial,algae	DIFFERENT	5/21 ingredient rows shared; sizes [12, 14]	CultureMech:000366,CultureMech:000091	14,12
+mhy.yaml	bacterial,algae	DIFFERENT	6/20 ingredient rows shared; sizes [12, 14]	CultureMech:000366,CultureMech:000091	14,12
 moderate_halophile_medium_2.yaml	bacterial,archaea	EQUIVALENT	same after normalizing ingredient labels and ignoring water	CultureMech:007846,CultureMech:000290	12,11
 modified_bacto_marine_broth.yaml	bacterial,specialized	DIFFERENT	1/22 ingredient rows shared; sizes [5, 18]	CultureMech:005870,CultureMech:015359	18,5
 modified_brocks_basal_salts_yeast_extract_medeium_b.yaml	bacterial,fungal	DIFFERENT	4/22 ingredient rows shared; sizes [13, 13]	CultureMech:009987,CultureMech:010539	14,13
@@ -235,7 +235,7 @@ ses_mp.yaml	bacterial,algae	DIFFERENT	0/10 ingredient rows shared; sizes [1, 9]	
 ses_pj.yaml	bacterial,algae	DIFFERENT	0/8 ingredient rows shared; sizes [2, 6]	CultureMech:000409,CultureMech:000131	6,2
 sna.yaml	bacterial,algae	DIFFERENT	5/6 ingredient rows shared; sizes [5, 6]	CultureMech:000410,CultureMech:000133	6,5
 sna_5.yaml	bacterial,algae	DIFFERENT	5/6 ingredient rows shared; sizes [5, 6]	CultureMech:000412,CultureMech:000134	6,5
-sp.yaml	bacterial,algae	DIFFERENT	7/41 ingredient rows shared; sizes [24, 24]	CultureMech:000413,CultureMech:000135	24,24
+sp.yaml	bacterial,algae	DIFFERENT	8/40 ingredient rows shared; sizes [24, 24]	CultureMech:000413,CultureMech:000135	24,24
 standard_i_malt_agar.yaml	bacterial,fungal	IDENTICAL	verbatim same ingredients, groundings, concentrations and units	CultureMech:006156,CultureMech:010472	4,4
 sucrose_nitrate_agar_czapek_dox_agar.yaml	bacterial,fungal	DIFFERENT	6/8 ingredient rows shared; sizes [7, 7]	CultureMech:009827,CultureMech:010529	8,7
 sulfolobus_medium_anaerobic.yaml	archaea,specialized	DIFFERENT	6/27 ingredient rows shared; sizes [15, 18]	CultureMech:008970,CultureMech:015370	19,15
@@ -250,7 +250,7 @@ tryptone_yeast_extract_mineral_medium.yaml	bacterial,fungal	IDENTICAL	verbatim s
 um.yaml	bacterial,algae	DIFFERENT	1/12 ingredient rows shared; sizes [6, 7]	CultureMech:000311,CultureMech:000141	7,6
 universal_medium_for_yeasts_ym.yaml	bacterial,fungal	IDENTICAL	verbatim same ingredients, groundings, concentrations and units	CultureMech:004210,CultureMech:010463	5,5
 van_niels_yeast_agar.yaml	bacterial,fungal	EQUIVALENT	same after normalizing ingredient labels and ignoring water	CultureMech:007688,CultureMech:010488	5,4
-walnes.yaml	bacterial,algae	DIFFERENT	0/25 ingredient rows shared; sizes [11, 14]	CultureMech:000312,CultureMech:000142	14,11
+walnes.yaml	bacterial,algae	DIFFERENT	1/24 ingredient rows shared; sizes [11, 14]	CultureMech:000312,CultureMech:000142	14,11
 waris_h.yaml	bacterial,algae	DIFFERENT	0/36 ingredient rows shared; sizes [18, 18]	CultureMech:000313,CultureMech:000143	18,18
 yeast_extract_malt_extract_agar_isp_2.yaml	bacterial,fungal	DIFFERENT	2/6 ingredient rows shared; sizes [4, 4]	CultureMech:009740,CultureMech:010528	5,4
 yeast_extract_malt_extract_agar_isp_2_ph_8_5.yaml	bacterial,fungal	DIFFERENT	0/4 ingredient rows shared; sizes [0, 4]	CultureMech:010358,CultureMech:010553	0,4

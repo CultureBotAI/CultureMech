@@ -62,6 +62,13 @@ curation_history:
   action: SET_ORGANISM_CULTURE_TYPE
   notes: 'Inferred isolate: 1 specific strain(s) named, no community signal (#142)'
   changes: Set organism_culture_type=isolate (was unset)
+- timestamp: '2026-08-17T17:31:47.888710+00:00'
+  curator: repair_subscript_stripped_names.py
+  action: REPAIRED_SUBSCRIPT_STRIPPED_NAME
+  notes: 'Restored digits lost from formula ingredient name(s) by an upstream encoding
+    step (#276): H BO -> H3BO3. The corrupted original is preserved in each ingredient''s
+    notes.'
+  changes: 1 preferred_term(s) repaired
 references:
 - reference: CCAP:TAP
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_TAP.pdf
@@ -131,7 +138,7 @@ ingredients:
     unit: G_PER_L
   source: CCAP Medium MR_TAP.pdf
   notes: From CCAP Medium MR_TAP.pdf; Curated from CCAP Medium MR_TAP.pdf specification
-- preferred_term: H BO
+- preferred_term: H3BO3
   term:
     id: CHEBI:33118
     label: boric acid
@@ -144,7 +151,9 @@ ingredients:
     value: '11.4'
     unit: G_PER_L
   source: CCAP Medium MR_TAP.pdf
-  notes: From CCAP Medium MR_TAP.pdf; Curated from CCAP Medium MR_TAP.pdf specification
+  notes: 'From CCAP Medium MR_TAP.pdf; Curated from CCAP Medium MR_TAP.pdf specification
+    Name repaired (#276): the source string `H BO` had lost its subscript digits;
+    restored to `H3BO3` — grounded to boric acid (CHEBI:33118).'
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368

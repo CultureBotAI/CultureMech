@@ -18,7 +18,8 @@ curation_history:
 - timestamp: '2026-06-14T05:58:58.561437+00:00'
   curator: idnf-grounding-fix-v1.0
   action: Fixed ID_NOT_FOUND term groundings
-  notes: 'Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI, 0 de-grounded (mixture or unverifiable).'
+  notes: Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI,
+    0 de-grounded (mixture or unverifiable).
 - curator: ccap-import
   action: Imported from CCAP Culture Collection
   notes: 'Source ID: S88, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_S88.pdf'
@@ -63,6 +64,13 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-17T17:31:48.808083+00:00'
+  curator: repair_subscript_stripped_names.py
+  action: REPAIRED_SUBSCRIPT_STRIPPED_NAME
+  notes: 'Restored digits lost from formula ingredient name(s) by an upstream encoding
+    step (#276): LiCl.H O -> LiCl.H2O. The corrupted original is preserved in each
+    ingredient''s notes.'
+  changes: 1 preferred_term(s) repaired
 references:
 - reference: CCAP:S88
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_S88.pdf
@@ -235,7 +243,7 @@ ingredients:
     unit: G_PER_L
   source: CCAP Medium MR_S88.pdf
   notes: From CCAP Medium MR_S88.pdf; Curated from CCAP Medium MR_S88.pdf specification
-- preferred_term: LiCl.H O
+- preferred_term: LiCl.H2O
   term:
     id: CHEBI:48607
     label: lithium chloride
@@ -248,7 +256,9 @@ ingredients:
     value: '0.05'
     unit: G_PER_L
   source: CCAP Medium MR_S88.pdf
-  notes: From CCAP Medium MR_S88.pdf; Curated from CCAP Medium MR_S88.pdf specification
+  notes: 'From CCAP Medium MR_S88.pdf; Curated from CCAP Medium MR_S88.pdf specification
+    Name repaired (#276): the source string `LiCl.H O` had lost its subscript digits;
+    restored to `LiCl.H2O` — grounded to lithium chloride (CHEBI:48607).'
 - preferred_term: KI
   term:
     id: CHEBI:8346

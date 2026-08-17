@@ -49,6 +49,13 @@ curation_history:
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
     category->lowercase=1
+- timestamp: '2026-08-17T17:31:48.515179+00:00'
+  curator: repair_subscript_stripped_names.py
+  action: REPAIRED_SUBSCRIPT_STRIPPED_NAME
+  notes: 'Restored digits lost from formula ingredient name(s) by an upstream encoding
+    step (#276): H BO -> H3BO3. The corrupted original is preserved in each ingredient''s
+    notes.'
+  changes: 1 preferred_term(s) repaired
 references:
 - reference: CCAP:MWC
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_MWC.pdf
@@ -151,7 +158,7 @@ ingredients:
     unit: G_PER_L
   source: CCAP Medium MR_MWC.pdf
   notes: From CCAP Medium MR_MWC.pdf; Curated from CCAP Medium MR_MWC.pdf specification
-- preferred_term: H BO
+- preferred_term: H3BO3
   term:
     id: CHEBI:33118
     label: boric acid
@@ -164,7 +171,9 @@ ingredients:
     value: '1.00'
     unit: G_PER_L
   source: CCAP Medium MR_MWC.pdf
-  notes: From CCAP Medium MR_MWC.pdf; Curated from CCAP Medium MR_MWC.pdf specification
+  notes: 'From CCAP Medium MR_MWC.pdf; Curated from CCAP Medium MR_MWC.pdf specification
+    Name repaired (#276): the source string `H BO` had lost its subscript digits;
+    restored to `H3BO3` — grounded to boric acid (CHEBI:33118).'
 - preferred_term: Cyanocobalamin (Vitamin B )
   term:
     id: CHEBI:17439
