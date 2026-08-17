@@ -311,6 +311,11 @@ fix-wrong-groundings *args="":
 refill-term-labels *args="":
     uv run --extra dev python scripts/refill_term_labels.py {{args}}
 
+# Groundings whose term formula lacks an element the name demands (#276/#278).
+[group('QC')]
+audit-name-term-elements *args="":
+    uv run --extra dev python scripts/audit_name_term_elements.py {{args}}
+
 [group('QC')]
 audit-grounding-consistency *args="":
     uv run --extra dev python scripts/audit_grounding_consistency.py {{args}}

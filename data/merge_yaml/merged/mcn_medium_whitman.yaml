@@ -67,8 +67,8 @@ ingredients:
     id: MediaIngredientMech:000119
     label: Sodium sulfide
   term:
-    id: CHEBI:85357
-    label: 3-[(1E,4R)-4-hydroxycyclohex-2-en-1-ylidene]pyruvic acid
+    id: CHEBI:76208
+    label: sodium sulfide (anhydrous)
 - preferred_term: Cysteine-HCl
   term:
     id: CHEBI:91247

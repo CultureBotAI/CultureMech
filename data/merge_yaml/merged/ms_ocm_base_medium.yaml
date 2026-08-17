@@ -279,8 +279,8 @@ ingredients:
     id: MediaIngredientMech:000120
     label: Sodium sulfide nonahydrate
   term:
-    id: CHEBI:85357
-    label: 3-[(1E,4R)-4-hydroxycyclohex-2-en-1-ylidene]pyruvic acid
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
 - preferred_term: Cysteine
   concentration:
     value: '3'

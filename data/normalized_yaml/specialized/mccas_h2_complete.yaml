@@ -180,8 +180,8 @@ ingredients:
     unit: G_PER_L
   notes: 'CAS: 1313-82-2; MW: 240.18'
   term:
-    id: CHEBI:85357
-    label: 3-[(1E,4R)-4-hydroxycyclohex-2-en-1-ylidene]pyruvic acid
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
 - preferred_term: CASamino acids
   concentration:
     value: '2.00'
