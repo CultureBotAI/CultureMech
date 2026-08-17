@@ -19,8 +19,8 @@ composition:
     value: '0.184'
     unit: G_PER_L
   term:
-    id: CHEBI:86374
-    label: ninhydrin
+    id: CHEBI:86364
+    label: manganese(II) sulfate monohydrate
   mediaingredientmech_term:
     id: MediaIngredientMech:001118
 - preferred_term: Zinc sulfate heptahydrate
