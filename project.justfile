@@ -38,14 +38,32 @@ fetch-raw-data:
 # DEEP RESEARCH
 # ================================================================
 
+# The fleet entity-runner contract (#289): `research-entity <provider> <target>
+# [focus]`. Same shape in every Mech; only target resolution and the focus table
+# are domain-specific. `just research-focuses` lists the focuses and the prompt
+# each one renders.
+#
+# The focus picks the template — it is no longer pinned to the growth prompt
+# here, which is what let `--focus formulation` rank providers for formulation
+# work and then research growth evidence anyway.
 [group('Research')]
-research-media provider target *args="":
+research-entity provider target focus="growth_evidence" *args="":
     uv run --extra dev python scripts/research_media.py \
       --provider {{provider}} \
       --target {{target}} \
-      --template {{templates_dir}}/media_growth_research.md \
+      --focus {{focus}} \
       --research-dir {{research_dir}} \
       {{args}}
+
+# Compatibility alias, kept because scripts, batch files and the skills call it.
+# Identical behaviour; `research-entity` is the name shared across Mechs.
+[group('Research')]
+research-media provider target focus="growth_evidence" *args="":
+    @just research-entity {{provider}} {{target}} {{focus}} {{args}}
+
+[group('Research')]
+research-focuses:
+    uv run --extra dev python scripts/research_media.py --list-focuses
 
 [group('Research')]
 research-providers:

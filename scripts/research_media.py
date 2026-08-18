@@ -1,5 +1,20 @@
 #!/usr/bin/env python3
-"""Run deep research for CultureMech media records via deep-research-client."""
+"""Run deep research for CultureMech media records via deep-research-client.
+
+Entity-runner contract (#289). One conceptual command,
+``research-entity <provider> <target> [focus]``, resolves a domain target and
+dispatches it. The Mech-specific part is target resolution and the focus table
+below; everything else is meant to read the same across Mechs.
+
+Citation artifacts. The report's own References section is the **authoritative**
+citation record. Two other artifacts exist and neither is authoritative:
+
+- ``deep-research-client --separate-citations`` — **disabled**, see
+  ``build_command``.
+- ``{stem}-citations.md`` on the Edison path (``scripts/_edison_capture.py``) —
+  **derived**, a local best-effort parse of the report. Useful for skimming; not
+  evidence. It is regenerated from the report and never the source of a claim.
+"""
 from __future__ import annotations
 
 import argparse
@@ -15,8 +30,50 @@ import yaml
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 MEDIA_DIR = REPO_ROOT / "data" / "normalized_yaml"
-DEFAULT_TEMPLATE = REPO_ROOT / "templates" / "media_growth_research.md"
 DEFAULT_RESEARCH_DIR = REPO_ROOT / "research"
+
+TEMPLATES_DIR = REPO_ROOT / "templates"
+
+# Focus -> template. The names match the focuses in
+# conf/deep_research_provider.yaml, which ranks providers per focus but has no
+# say in which prompt gets rendered; #289 called that split out. Keeping one
+# table here means `--focus formulation` can no longer rank providers for
+# formulation work and then research growth evidence.
+#
+# The special-purpose prompts (media_stock_solution_research.md for the #150
+# cocktail repair, media_axis_classification.md, medium_organism_recipe_
+# extraction.md for phase 2) are deliberately absent: they are steps in named
+# workflows, not standing research focuses, and `--template` still reaches them.
+FOCUS_TEMPLATES: dict[str, Path] = {
+    "growth_evidence": TEMPLATES_DIR / "media_growth_research.md",
+    "formulation": TEMPLATES_DIR / "media_recipe_validation.md",
+}
+DEFAULT_FOCUS = "growth_evidence"
+DEFAULT_TEMPLATE = FOCUS_TEMPLATES[DEFAULT_FOCUS]
+
+
+def resolve_focus(focus: str | None) -> str:
+    """Validate a focus name, defaulting when unset."""
+    name = (focus or DEFAULT_FOCUS).strip()
+    if name not in FOCUS_TEMPLATES:
+        choices = ", ".join(sorted(FOCUS_TEMPLATES))
+        raise ValueError(f"Unknown focus {focus!r}; choose one of: {choices}")
+    return name
+
+
+def focus_template(focus: str) -> Path:
+    """The template that a focus renders. Raises on an unknown focus."""
+    return FOCUS_TEMPLATES[resolve_focus(focus)]
+
+
+def output_name(*, media_slug: str, focus: str, provider: str) -> str:
+    """The report filename for one (record, focus, provider) triple.
+
+    The focus is always present, including for the default, so a caller can
+    predict the path from the triple alone without also knowing which focus is
+    default. That is the point of the contract.
+    """
+    return f"{media_slug}-deep-research-{resolve_focus(focus)}-{provider}.md"
 
 
 def load_media(path: Path) -> dict[str, Any]:
@@ -397,7 +454,6 @@ def build_command(
     provider: str,
     template: Path,
     output_file: Path,
-    citations_file: Path,
     variables: dict[str, str],
     passthrough_args: list[str],
     client_command: str = "deep-research-client",
@@ -415,8 +471,24 @@ def build_command(
         [
             "--output",
             str(output_file),
-            "--separate-citations",
-            str(citations_file),
+            # NO --separate-citations. The client builds that sidecar with a
+            # regex over the report prose, and the one CultureMech ever produced
+            # (research/media/algae/2asw-deep-research-falcon.md.citations.md)
+            # shows why it cannot be evidence:
+            #
+            #   - it re-emits the entire ~55-line rendered prompt as "Query",
+            #     which the report already carries as template variables;
+            #   - entry 12 of 27 is the bare string "Na+";
+            #   - 10.1101/2024.06.09.598106 is listed three times over as
+            #     entries 16, 17 and 24, differing only in a trailing "." or ",".
+            #
+            # TraitMech reached the same conclusion across a far larger sample
+            # (#249 there: 353 sidecars, 194 broken markdown-link tails, 2,770
+            # stray trailing commas, 332 of 353 duplicating a reference).
+            #
+            # The report's own References section maps keys to DOIs and is what a
+            # curator reads, so this drops a broken duplicate rather than a
+            # source. See the module docstring for the artifact contract.
         ]
     )
     command.extend(passthrough_args)
@@ -438,10 +510,22 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--provider", help="deep-research-client provider, e.g. falcon")
     parser.add_argument("--target", help="Media YAML path, slug, ID, or name")
-    parser.add_argument("--template", type=Path, default=DEFAULT_TEMPLATE)
+    parser.add_argument(
+        "--focus",
+        default=DEFAULT_FOCUS,
+        choices=sorted(FOCUS_TEMPLATES),
+        help=f"Research focus; selects the template (default: {DEFAULT_FOCUS})",
+    )
+    parser.add_argument(
+        "--template",
+        type=Path,
+        default=None,
+        help="Override the focus's template with an explicit prompt file",
+    )
     parser.add_argument("--research-dir", type=Path, default=DEFAULT_RESEARCH_DIR)
     parser.add_argument("--client-command", default="deep-research-client")
     parser.add_argument("--list-providers", action="store_true")
+    parser.add_argument("--list-focuses", action="store_true")
     parser.add_argument("--provider-info", action="store_true")
     parser.add_argument(
         "--dry-run",
@@ -454,6 +538,11 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
 
 def main(argv: list[str] | None = None) -> int:
     args = parse_args(argv or sys.argv[1:])
+    if args.list_focuses:
+        for name, template in sorted(FOCUS_TEMPLATES.items()):
+            marker = " (default)" if name == DEFAULT_FOCUS else ""
+            print(f"{name}{marker}: {template.relative_to(REPO_ROOT)}")
+        return 0
     if args.list_providers or args.provider_info:
         command = build_provider_command(
             provider=args.provider if args.provider_info else None,
@@ -467,27 +556,36 @@ def main(argv: list[str] | None = None) -> int:
     if not args.target:
         raise ValueError("--target is required for media research")
 
+    focus = resolve_focus(args.focus)
+    # An explicit --template still wins, so the special-purpose prompts stay
+    # reachable without inventing a focus for each one.
+    template = args.template if args.template is not None else focus_template(focus)
+
     media_file = resolve_media_file(args.target)
     doc = load_media(media_file)
     category_slug = str(doc.get("category") or media_file.parent.name).lower()
     media_slug = media_file.stem
 
     output_dir = args.research_dir / "media" / category_slug
-    output_file = output_dir / f"{media_slug}-deep-research-{args.provider}.md"
-    citations_file = output_file.with_suffix(output_file.suffix + ".citations.md")
+    output_file = output_dir / output_name(
+        media_slug=media_slug, focus=focus, provider=args.provider
+    )
     variables = template_vars(doc, media_file)
     command = build_command(
         provider=args.provider,
-        template=args.template,
+        template=template,
         output_file=output_file,
-        citations_file=citations_file,
         variables=variables,
         passthrough_args=args.passthrough_args,
         client_command=args.client_command,
     )
 
-    print(f"Researching: {variables['media_name']} ({args.provider}) -> {output_file}")
-    print(f"Citations: {citations_file}")
+    print(
+        f"Researching: {variables['media_name']} "
+        f"({args.provider}, focus={focus}) -> {output_file}"
+    )
+    print(f"Template: {template}")
+    print("Citations: in-report References section (no separate sidecar)")
     if args.dry_run:
         print(shlex.join(command))
         return 0
