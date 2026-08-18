@@ -168,6 +168,26 @@ def test_cli_rejects_an_unknown_focus():
         parse_args(["--provider", "falcon", "--target", "x", "--focus", "nope"])
 
 
+def test_the_research_media_alias_takes_no_positional_focus():
+    """Pins the signature that keeps existing callers working.
+
+    Adding a positional `focus` to `research-media` silently broke the
+    documented form ``just research-media claude_code ko2_no3 --dry-run``:
+    `--dry-run` bound to `focus`, so the runner received `--focus --dry-run`,
+    failed argparse, and never ran the dry run. Flags may follow the target
+    directly here; `research-entity` is the recipe that takes a positional
+    focus.
+    """
+    recipes = [
+        line.strip().rstrip(":")
+        for line in (REPO_ROOT / "project.justfile").read_text().splitlines()
+        if line.startswith(("research-media ", "research-entity "))
+    ]
+    assert len(recipes) == 2, f"expected both recipes, found {recipes}"
+    assert 'research-media provider target *args=""' in recipes
+    assert 'research-entity provider target focus="growth_evidence" *args=""' in recipes
+
+
 def test_explicit_template_still_overrides_the_focus():
     """Special-purpose prompts (the #150 stock-solution repair, axis
     classification, phase-2 extraction) stay reachable without inventing a

@@ -18,7 +18,19 @@ just research-entity <provider> <target> [focus] [-- extra args]
 - **focus** — one of the focuses below. Selects the prompt template *and* the
   output label. Defaults to `growth_evidence`.
 
-`just research-media` is a compatibility alias with identical behaviour.
+`focus` is positional here, so **flags must come after it**:
+
+```
+just research-entity claude_code ko2_no3 formulation --dry-run
+```
+
+`just research-media <provider> <target> [flags]` is the compatibility alias.
+Its signature is deliberately *not* the same: it takes **no positional focus**,
+because adding one would bind `--dry-run` in
+`just research-media claude_code ko2_no3 --dry-run` to the focus. Existing
+callers keep working; pass `--focus formulation` through its flags if you need a
+non-default focus, or use `research-entity`.
+
 `just research-focuses` prints the table below from the code.
 
 ### Focuses

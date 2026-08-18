@@ -46,20 +46,31 @@ fetch-raw-data:
 # The focus picks the template — it is no longer pinned to the growth prompt
 # here, which is what let `--focus formulation` rank providers for formulation
 # work and then research growth evidence anyway.
+#
+# `focus` is POSITIONAL, so flags must come after it:
+#     just research-entity claude_code ko2_no3 formulation --dry-run
+#     just research-entity claude_code ko2_no3 growth_evidence --dry-run
+# Omitting the focus and passing a flag third would bind the flag to `focus`.
+# `research-media` below takes no positional focus for exactly that reason.
 [group('Research')]
 research-entity provider target focus="growth_evidence" *args="":
     uv run --extra dev python scripts/research_media.py \
       --provider {{provider}} \
       --target {{target}} \
-      --focus {{focus}} \
+      --focus={{focus}} \
       --research-dir {{research_dir}} \
       {{args}}
 
 # Compatibility alias, kept because scripts, batch files and the skills call it.
-# Identical behaviour; `research-entity` is the name shared across Mechs.
+#
+# Its signature is deliberately UNCHANGED — `provider target *args`, no
+# positional focus. Adding one silently broke the documented form
+# `just research-media claude_code ko2_no3 --dry-run`, because `--dry-run` bound
+# to `focus` and the runner then saw `--focus --dry-run`. Existing callers keep
+# working; pass `--focus formulation` through args, or use `research-entity`.
 [group('Research')]
-research-media provider target focus="growth_evidence" *args="":
-    @just research-entity {{provider}} {{target}} {{focus}} {{args}}
+research-media provider target *args="":
+    @just research-entity {{provider}} {{target}} growth_evidence {{args}}
 
 [group('Research')]
 research-focuses:
