@@ -38,14 +38,15 @@ if a second data point disagrees, update the table rather than defending it.
 ## Overview
 
 **Purpose**: For one CultureMech medium record, run a two-phase
-Scientific deep-research workflow:
+deep-research workflow through the provider chosen above:
 
 1. **Phase 1 — medium-level literature search.** Submit the medium's
-   YAML context to the Edison `LITERATURE` (PaperQA3) job and ask the
-   API to find candidate organisms reported to grow on this medium or
-   a recognizable formulation variant.
+   YAML context and ask the provider to find candidate organisms
+   reported to grow on this medium or a recognizable formulation
+   variant. (On Edison this is the `LITERATURE`/PaperQA3 job; on
+   `claude_code` and `openscientist` the job is implicit.)
 2. **Phase 2 — per-organism follow-up.** For each candidate organism
-   returned in phase 1, submit a focused follow-up that asks the API
+   returned in phase 1, submit a focused follow-up that asks the provider
    to extract the recipe (ingredients + concentrations), culture
    conditions, growth metrics, organism identifiers, and citation
    metadata from the primary publication(s).
