@@ -1,17 +1,43 @@
 ---
 name: deep-research-medium
-description: Run Edison Scientific deep research for a CultureMech medium record, then for each candidate organism returned by phase 1 run a per-organism follow-up that extracts the recipe, culture conditions, identifiers, and citation metadata from the primary publication. Produces a curation-focused report with proposed YAML changes.
+description: Run deep research for a CultureMech medium record through whichever provider fits the question (claude_code, openscientist, codex), then for each candidate organism returned by phase 1 run a per-organism follow-up that extracts the recipe, culture conditions, identifiers, and citation metadata from the primary publication. Produces a curation-focused report with proposed YAML changes. Start at 'Choosing a provider' — Edison/falcon is billing-blocked.
 category: research
 requires_database: false
 requires_internet: true
-version: 1.0.0
+version: 2.0.0
 ---
 
-# Deep Research for a Medium (Edison API)
+# Deep Research for a Medium
+
+## Choosing a provider — read this first
+
+Measured on one shared question, at deep-research-client 0.2.10 (#284):
+
+| provider | time | chars | URLs | PMIDs | reach for it when |
+|---|---:|---:|---:|---:|---|
+| `claude_code` | 295s | 20,876 | **22** | 5 | you need MANY citable sources. No credentials. **Default.** |
+| `openscientist` | 490s | 21,518 | 6 | **2** | reasoning depth matters more than breadth; PMID-anchored |
+| `codex` | 439s | 10,813 | **27** | – | cheap sweeps over many records (`just research-media-codex`) |
+| `falcon` (Edison) | 6s | – | – | – | **DO NOT** — returns HTTP 402 Payment Required |
+
+For corpus work where a grounding has to be *settled* — #150's cocktails, #279's
+compounds — prefer `claude_code`: breadth of citable sources is the deliverable.
+
+**Two traps, both of which have cost time already:**
+
+1. **"Available" ≠ working.** `deep-research-client providers` lists a provider once its
+   env var is set, and says nothing about whether the account can run a job. `falcon`
+   lists as available and 402s on every call.
+2. **Depth is prompt-bound, not tool-bound.** A bare one-line question made `codex` look
+   shallow (3 sources); the same tool through the real template returned 27. Always run
+   through the filled template, never an ad-hoc question.
+
+These numbers are one question in one domain. Treat them as measured guidance, not law —
+if a second data point disagrees, update the table rather than defending it.
 
 ## Overview
 
-**Purpose**: For one CultureMech medium record, run a two-phase Edison
+**Purpose**: For one CultureMech medium record, run a two-phase
 Scientific deep-research workflow:
 
 1. **Phase 1 — medium-level literature search.** Submit the medium's
@@ -50,11 +76,18 @@ formulation** of one medium and **each of its modeled variants** against
 authoritative sources, returning curator-ready corrections rather than new
 organisms.
 
-### Native Claude Code path (default — no Edison credits)
+### Default path — `claude_code` provider (no credentials, no credits)
 
-Run the validation with this harness's own web tools (or the `deep-research`
-skill) instead of the Edison API. Render the filled prompt, then research
-it yourself:
+This used to be a hand-rolled instruction to do the searching yourself, written
+when Edison started returning 402. That is now redundant: `deep-research-client`
+ships `claude_code` as a first-class provider, so prefer
+
+```bash
+just research-media claude_code <SLUG-OR-PATH>
+```
+
+Render-only remains useful when you want to inspect or hand-edit the brief before
+spending time on it:
 
 ```bash
 # print the validation prompt for one medium + its variant set:
@@ -70,7 +103,14 @@ against a cited source line, and write the report to
 `research/media/<slug>-recipe-validation.md` in the output format the
 template specifies (verdict table → findings → proposed YAML → gaps).
 
-### Edison API path (spends credits)
+### Edison API path (spends credits) — CURRENTLY BLOCKED
+
+Edison returns **HTTP 402 Payment Required** on every call, through both
+`--provider falcon` and the `edison-client` SDK in `research_media_edison.py`
+(#284). The commands below are retained because the job selection they document
+(`literature`, `literature-high`, `precedent`, `phoenix`) is real and is NOT
+exposed by DRC's falcon provider — so this path becomes the right one again the
+moment billing is resolved. Until then it will fail in about six seconds.
 
 Reuses the phase-1 wrapper with the validation template — swap `--template`:
 

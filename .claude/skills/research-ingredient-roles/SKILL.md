@@ -1,6 +1,6 @@
 ---
 name: research-ingredient-roles
-description: Run the Step 7b Edison + DRC literature backfill lane end-to-end for ingredient role facets (nutritional / physicochemical / cellular-metabolic). Prioritize gaps, dispatch Edison, extract structured YAML, apply to both MIM ingredient records (rich, evidence-bearing) and CultureMech recipes (scalar tokens per descriptor).
+description: Run the Step 7b literature backfill lane end-to-end (Edison is billing-blocked — use the claude_code or openscientist provider; see the deep-research-medium skill for provider choice) for ingredient role facets (nutritional / physicochemical / cellular-metabolic). Prioritize gaps, dispatch Edison, extract structured YAML, apply to both MIM ingredient records (rich, evidence-bearing) and CultureMech recipes (scalar tokens per descriptor).
 version: 1.0.0
 tags: [edison, deep-research, ingredients, roles, facets, literature]
 author: CultureMech Team
