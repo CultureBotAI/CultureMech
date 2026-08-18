@@ -19,6 +19,7 @@ Measured on one shared question, at deep-research-client 0.2.10 (#284):
 | `openscientist` | 490s | 21,518 | 6 | **2** | reasoning depth matters more than breadth; PMID-anchored |
 | `codex` | 439s | 10,813 | **27** | – | cheap sweeps over many records (`just research-media-codex`) |
 | `falcon` (Edison) | 6s | – | – | – | **DO NOT** — returns HTTP 402 Payment Required |
+| `cyberian` | 21s | – | – | – | **DO NOT** — HTTP 500; wraps an `agentapi` service on `localhost:3284` that is not running, and supplies no model access itself |
 
 For corpus work where a grounding has to be *settled* — #150's cocktails, #279's
 compounds — prefer `claude_code`: breadth of citable sources is the deliverable.

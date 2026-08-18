@@ -62,6 +62,9 @@ fetch-raw-data:
 #   claude_code     295s  20,876     22      5  widest source coverage; no credentials
 #   codex          439s  10,813     27      -  via `just research-media-codex`
 #   falcon            6s       -      -      -  HTTP 402 Payment Required
+#   cyberian         21s       -      -      -  HTTP 500 — wraps an agentapi service
+#                                               on localhost:3284 that is not running;
+#                                               brings no LLM access of its own
 #
 # Pick claude_code for MANY citable sources (#150, #279); openscientist when
 # reasoning quality matters more than breadth; codex for cheap sweeps.
@@ -98,6 +101,20 @@ research-providers:
 [group('Research')]
 research-provider provider:
     uv run --extra dev python scripts/research_media.py --provider {{provider}} --provider-info
+
+# Rank deep-research providers for a CultureMech-specific focus. The profile
+# separates source discovery, synthesis, and independent verification.
+[group('Research')]
+deep-research-providers focus="growth_evidence" *args="":
+    uv run --extra dev python scripts/deep_research_provider.py \
+      --config conf/deep_research_provider.yaml --focus {{focus}} {{args}}
+
+# Show one provider's fit, capabilities, limitations, and local availability.
+[group('Research')]
+deep-research-provider provider focus="growth_evidence" *args="":
+    uv run --extra dev python scripts/deep_research_provider.py \
+      --config conf/deep_research_provider.yaml --provider {{provider}} \
+      --focus {{focus}} {{args}}
 
 # Edison Scientific deep research via the `edison-client` SDK. Default
 # job is LITERATURE (PaperQA3). Pass `--job literature-high` etc. via

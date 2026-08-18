@@ -1,11 +1,10 @@
 from __future__ import annotations
 
 import importlib.util
-from pathlib import Path
 import sys
+from pathlib import Path
 
 import pytest
-
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 MODULE_PATH = REPO_ROOT / "scripts" / "deep_research_provider.py"
@@ -39,6 +38,12 @@ def test_falcon_platform_key_is_recognized_without_exposing_it():
     assert status == "available"
     assert reason == "credential configured"
     assert "secret" not in reason
+
+
+def test_explicit_empty_environment_does_not_fall_back_to_process_credentials():
+    status, reason = drp.provider_status("asta", {})
+    assert status == "unavailable"
+    assert reason == "set ASTA_API_KEY"
 
 
 def test_every_focus_ranks_all_real_and_stub_providers(monkeypatch):

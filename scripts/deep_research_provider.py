@@ -14,9 +14,10 @@ import json
 import os
 import shutil
 import sys
-from dataclasses import asdict, dataclass
+from collections.abc import Mapping
+from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Mapping
+from typing import Any
 
 import yaml
 
@@ -241,7 +242,7 @@ def provider_status(
     provider: str, environ: Mapping[str, str] | None = None
 ) -> tuple[str, str]:
     """Return status and a safe explanation without exposing credential values."""
-    env = environ or os.environ
+    env = os.environ if environ is None else environ
     if provider == "deeper_med":
         return "stub", "no public API"
     if provider == "mock":
