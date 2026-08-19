@@ -1552,16 +1552,34 @@ generate-all-indexes:
 # EXPORT
 # ================================================================
 
+# Export the recipe corpus as a KGX node/edge TSV pair (#294).
+#
+# Driven by scripts/export_kgx.py rather than a bare `koza transform` because
+# koza's CLI takes a config YAML (not a .py), does no glob expansion, and the
+# 15,878-file corpus overflows ARG_MAX. The script also clears the run-scoped
+# node-dedup set and fails loudly on an empty or missing output file.
+#
+# `--extra koza` is required: koza is an optional dependency and is in neither
+# the default nor the `dev` environment.
 [group('Export')]
-kgx-export:
+kgx-export *args="":
+    uv run --extra koza python scripts/export_kgx.py \
+      --records-dir {{normalized_yaml_dir}} \
+      --output-dir {{output_dir}}/kgx \
+      {{args}}
+
+# Canary the export on one category before committing to the full corpus.
+# Example: just kgx-export-sample algae
+[group('Export')]
+kgx-export-sample category="algae":
     #!/usr/bin/env bash
-    mkdir -p {{output_dir}}/kgx
-    echo "Exporting recipes to KGX format..."
-    uv run koza transform src/culturemech/export/kgx_export.py -i '{{normalized_yaml_dir}}/**/*.yaml' -o {{output_dir}}/kgx -f jsonl
-    echo ""
-    echo "✓ KGX edges exported to {{output_dir}}/kgx/"
-    echo "Stats:"
-    wc -l {{output_dir}}/kgx/*.jsonl || echo "No output files generated"
+    set -euo pipefail
+    tmp="$(mktemp -d)"
+    trap 'rm -rf "$tmp"' EXIT
+    cp -r "{{normalized_yaml_dir}}/{{category}}" "$tmp/"
+    uv run --extra koza python scripts/export_kgx.py \
+      --records-dir "$tmp" \
+      --output-dir {{output_dir}}/kgx-sample
 
 # ================================================================
 # BROWSER
