@@ -73,9 +73,18 @@ NORMALIZED = REPO_ROOT / "data" / "normalized_yaml"
 DEFAULT_OUT = (REPO_ROOT / "data" / "import_tracking" / "reports"
                / "unparsed_composition.tsv")
 
-# A concentration value we accept as a number: plain, ranged, or bounded, plus
-# the explicit VARIABLE placeholder the schema allows.
-_NUMERIC_VALUE = re.compile(r"^\s*[<>~]?\s*[\d.]+\s*(?:-\s*[\d.]+)?\s*$")
+# Placeholders that stand in for a missing concentration. None is a reagent name,
+# so none is evidence of a swapped field.
+_PLACEHOLDERS = {"variable", "-", "--", "n/a", "na", "?", "unknown", "none"}
+
+# Comparators that may lead a value: "<0.1", "≥2".
+_COMPARATORS = "<>~≤≥="
+
+# Splits a range on the hyphen that separates two numbers, NOT on the hyphen of a
+# negative exponent. `5e-05` is one number; `1.5-2.0` is two. Without the
+# lookbehind, every scientific-notation value in the corpus would be read as a
+# malformed range.
+_RANGE_SPLIT = re.compile(r"(?<=[\d.])\s*-\s*(?=[\d.])")
 
 # Verbs and phrases that only appear in preparation prose, never in a reagent
 # name. Deliberately not a general English-verb test: `Add` is the signal, and a
@@ -109,14 +118,33 @@ _MIN_TABLE_LEN = 60
 _PROSE_MIN_LEN = 80
 
 
+def _is_number(token: str) -> bool:
+    """Anything Python reads as a float, which is the honest definition here.
+
+    Hand-rolled numeric regexes keep missing a form: the first one here rejected
+    `5e-05`, and the corpus holds 1,781 scientific-notation concentrations. A row
+    with one of those AND an empty name would have been reported as a swapped
+    reagent name.
+    """
+    try:
+        float(token)
+    except (TypeError, ValueError):
+        return False
+    return True
+
+
 def _holds_a_name(value: Any) -> bool:
     """True when a concentration value is text that cannot be a concentration.
 
+    Deliberately biased toward saying no. A false negative here loses one finding
+    from a backlog a curator is already working through; a false positive accuses
+    a valid concentration of being a reagent name and, because this audit is a
+    ratchet, gets baked into the baseline.
+
     Absence is NOT evidence of a swap. An ingredient with an empty name and no
-    concentration block at all has simply lost its name; reporting
-    NAME_IN_CONCENTRATION for it would point a curator at a field that does not
-    exist. Nothing in the corpus is shaped that way today, which is exactly why
-    the distinction has to be pinned rather than left to chance.
+    concentration block has simply lost its name; reporting NAME_IN_CONCENTRATION
+    for it would point a curator at a field that does not exist. Nor is a
+    placeholder such as `-`, which stands in for a missing value on 72 rows.
 
     A non-string is already a number, or malformed in a way this audit does not
     claim to diagnose; either way it is not a reagent name.
@@ -124,9 +152,16 @@ def _holds_a_name(value: Any) -> bool:
     if value is None or not isinstance(value, str):
         return False
     text = value.strip()
-    if not text or text.casefold() == "variable":
+    if not text or text.casefold() in _PLACEHOLDERS:
         return False
-    return not _NUMERIC_VALUE.match(text)
+
+    core = text.lstrip(_COMPARATORS).strip()
+    if _is_number(core):
+        return False
+    parts = _RANGE_SPLIT.split(core, maxsplit=1)
+    if len(parts) == 2 and all(_is_number(p.strip()) for p in parts):
+        return False
+    return True
 
 
 def _looks_like_prose(name: str) -> bool:

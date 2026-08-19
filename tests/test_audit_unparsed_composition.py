@@ -54,11 +54,30 @@ def test_an_empty_name_with_a_real_number_is_a_different_finding(aud):
     assert _findings(aud, doc) == {"EMPTY_INGREDIENT_NAME"}
 
 
-@pytest.mark.parametrize("value", ["10", "0.5", "1.5-2.0", "<0.1", "~5", "variable", 10, 2.5])
+@pytest.mark.parametrize("value", [
+    "10", "0.5", "1.5-2.0", "<0.1", "~5", "≥2", " 0.5 ", "variable", 10, 2.5,
+    # Scientific notation. The first regex rejected these, and the corpus holds
+    # 1,781 of them — 254 rows of `5e-05` alone. A row with one of these AND an
+    # empty name would have been accused of holding a reagent name.
+    "5e-05", "1e-05", "4.531e-05", "1.0000000000000002e-06", "2.5e-05 - 5e-05",
+    # Placeholders standing in for a missing value; 72 rows carry a bare "-".
+    "-", "--", "n/a", "unknown",
+])
 def test_legitimate_concentration_values_are_not_names(aud, value):
     doc = {"ingredients": [
         {"preferred_term": "", "concentration": {"value": value, "unit": "G_PER_L"}}]}
     assert _findings(aud, doc) == {"EMPTY_INGREDIENT_NAME"}
+
+
+@pytest.mark.parametrize("value", [
+    "MgSO4·7H2O", "Ethanol", "NaCl", "Tryptone",
+    "Bacto Tryptic Soy Broth w/o Dextrose (Difco)",
+])
+def test_real_reagent_names_in_the_concentration_are_still_caught(aud, value):
+    """The bias toward "not a name" must not go so far that it misses the defect."""
+    doc = {"ingredients": [
+        {"preferred_term": "", "concentration": {"value": value, "unit": "G_PER_L"}}]}
+    assert _findings(aud, doc) == {"NAME_IN_CONCENTRATION"}
 
 
 @pytest.mark.parametrize("ingredient", [
