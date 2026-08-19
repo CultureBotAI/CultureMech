@@ -392,14 +392,19 @@ def capture_full_response(
     answer_reasoning = _get_attr(response, "answer_reasoning")
     body = formatted_answer or answer or "(no answer field on this job's response type)"
     md_path.write_text(body)
+    # Track what THIS invocation wrote, so the meta reports its own provenance
+    # rather than whatever a previous run of the same stem left on disk.
+    written: set[str] = {"answer_md"}
 
     # Full raw response dump (every SDK field, future-proof)
     response_dump = _safe_model_dump(response)
     response_json_path.write_text(json.dumps(response_dump, indent=2, default=str))
+    written.add("response_json")
 
     # Citations sidecar
     citations = parse_citations(formatted_answer or answer)
     citations_md_path.write_text(render_citations_md(citations, query=query))
+    written.add("citations_md")
 
     # Verbose + files via secondary fetches (no extra billing)
     task_id = str(_get_attr(response, "task_id") or "")
@@ -415,12 +420,14 @@ def capture_full_response(
                 "environment_frame": environment_frame,
                 "metadata": verbose_metadata,
             }, indent=2, default=str))
+            written.add("agent_state_json")
 
     files_listing = _try_list_files(client, task_id) if task_id else None
     artifacts_manifest: list[dict[str, Any]] = []
     if files_listing is not None:
         files_path.write_text(json.dumps(_safe_model_dump(files_listing),
                                          indent=2, default=str))
+        written.add("files_json")
         # Pull the actual content of named curation artifacts (small,
         # not internal PaperQA pickles) into a sibling artifacts/ dir.
         artifacts_manifest = fetch_named_artifacts(
@@ -453,7 +460,7 @@ def capture_full_response(
         "answer_reasoning_chars": len(answer_reasoning or ""),
         "citations_parsed": len(citations),
         "query_sha256": query_sha256(query),
-        "sidecar_files": _existing_sidecars(out_dir, stem),
+        "sidecar_files": _existing_sidecars(out_dir, stem, written),
         "artifacts_fetched": [a for a in artifacts_manifest if a.get("status") == "fetched"],
         "artifacts_skipped": [a for a in artifacts_manifest if a.get("status") != "fetched"],
     })
@@ -483,15 +490,34 @@ def capture_dry_run(
     return meta
 
 
-def _existing_sidecars(out_dir: Path, stem: str) -> dict[str, bool]:
-    """Snapshot which sidecar files exist for this stem — for the meta."""
-    return {
+def _existing_sidecars(
+    out_dir: Path, stem: str, written: set[str] | None = None
+) -> dict[str, bool]:
+    """Which sidecars this invocation produced for this stem.
+
+    The stem is deterministic (``{slug}-edison-{job}``), so a re-run of the same
+    record and job finds the previous run's files already on disk. Reporting a
+    plain ``.exists()`` snapshot therefore attributed a prior task's trace to the
+    new ``task_id`` whenever the new run failed to fetch it — for a feature whose
+    whole point is provenance, an auditor following the meta would read the wrong
+    trajectory.
+
+    Pass ``written`` (the keys this run actually wrote) to report truthfully. It
+    is optional so the call sites that genuinely want a disk snapshot keep
+    working — ``enrich_edison_response`` backfills sidecars for the *same*
+    ``task_id`` already recorded in the meta, so for it "what is on disk now" is
+    the honest answer.
+    """
+    on_disk = {
         "answer_md": (out_dir / f"{stem}.md").exists(),
         "response_json": (out_dir / f"{stem}-response.json").exists(),
         "citations_md": (out_dir / f"{stem}-citations.md").exists(),
         "agent_state_json": (out_dir / f"{stem}-agent-state.json").exists(),
         "files_json": (out_dir / f"{stem}-files.json").exists(),
     }
+    if written is None:
+        return on_disk
+    return {key: (key in written and value) for key, value in on_disk.items()}
 
 
 def _to_iso(dt: Any) -> str | None:
