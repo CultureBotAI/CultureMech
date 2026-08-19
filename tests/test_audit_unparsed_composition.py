@@ -61,6 +61,23 @@ def test_legitimate_concentration_values_are_not_names(aud, value):
     assert _findings(aud, doc) == {"EMPTY_INGREDIENT_NAME"}
 
 
+@pytest.mark.parametrize("ingredient", [
+    {"preferred_term": ""},                                  # no concentration block
+    {"preferred_term": "", "concentration": {}},             # block, no value
+    {"preferred_term": "", "concentration": {"value": None}},
+    {"preferred_term": "", "concentration": {"value": ""}},
+])
+def test_a_missing_concentration_is_not_evidence_of_a_swap(aud, ingredient):
+    """Absence must not be read as a name.
+
+    These reported NAME_IN_CONCENTRATION, which points a curator at a field that
+    does not exist. Nothing in the corpus is shaped this way today — which is
+    precisely why it needs pinning rather than leaving to chance, since the
+    counts would not have moved to reveal it.
+    """
+    assert _findings(aud, {"ingredients": [ingredient]}) == {"EMPTY_INGREDIENT_NAME"}
+
+
 def test_a_named_ingredient_is_never_flagged_whatever_its_concentration(aud):
     doc = {"ingredients": [
         {"preferred_term": "Glucose", "concentration": {"value": "10", "unit": "G_PER_L"}}]}

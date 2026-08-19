@@ -105,15 +105,24 @@ _MIN_TABLE_LEN = 60
 _PROSE_MIN_LEN = 80
 
 
-def _is_numeric_value(value: Any) -> bool:
-    if value is None:
+def _holds_a_name(value: Any) -> bool:
+    """True when a concentration value is text that cannot be a concentration.
+
+    Absence is NOT evidence of a swap. An ingredient with an empty name and no
+    concentration block at all has simply lost its name; reporting
+    NAME_IN_CONCENTRATION for it would point a curator at a field that does not
+    exist. Nothing in the corpus is shaped that way today, which is exactly why
+    the distinction has to be pinned rather than left to chance.
+
+    A non-string is already a number, or malformed in a way this audit does not
+    claim to diagnose; either way it is not a reagent name.
+    """
+    if value is None or not isinstance(value, str):
         return False
-    if not isinstance(value, str):
-        return True  # already a number
     text = value.strip()
     if not text or text.casefold() == "variable":
-        return True
-    return bool(_NUMERIC_VALUE.match(text))
+        return False
+    return not _NUMERIC_VALUE.match(text)
 
 
 def _looks_like_prose(name: str) -> bool:
@@ -149,7 +158,7 @@ def audit_record(doc: dict[str, Any], path: Path) -> Iterator[dict[str, str]]:
         }
 
         if isinstance(name, str) and not name.strip():
-            if not _is_numeric_value(value):
+            if _holds_a_name(value):
                 yield {
                     **base, "finding": "NAME_IN_CONCENTRATION", "name": "",
                     "detail": "preferred_term is empty and the concentration "
