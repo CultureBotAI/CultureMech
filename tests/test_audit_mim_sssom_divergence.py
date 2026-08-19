@@ -81,7 +81,7 @@ def test_a_mediadive_term_id_does_not_hide_the_chebi_grounding(aud, tmp_path):
         "chebi_term": {"id": "CHEBI:17234", "label": "glucose"},
     }]}])
 
-    rows, version = aud.audit(corpus, sssom)
+    rows, version, _ = aud.audit(corpus, sssom)
     assert rows == []
     assert version == "2026-08-18"
 
@@ -91,7 +91,7 @@ def test_a_chebi_in_the_term_slot_is_still_found(aud, tmp_path):
     sssom = _sssom(tmp_path, [("Glucose", "skos:exactMatch", "CHEBI:17234", "glucose")])
     corpus = _corpus(tmp_path, [{"ingredients": [
         {"preferred_term": "Glucose", "term": {"id": "CHEBI:17234", "label": "glucose"}}]}])
-    rows, _ = aud.audit(corpus, sssom)
+    rows, _, _ = aud.audit(corpus, sssom)
     assert rows == []
 
 
@@ -100,7 +100,7 @@ def test_a_real_divergence_is_reported(aud, tmp_path):
                                "ethylenediaminetetraacetic acid")])
     corpus = _corpus(tmp_path, [{"ingredients": [
         {"preferred_term": "EDTA", "chebi_term": {"id": "CHEBI:64755", "label": "EDTA(2-)"}}]}])
-    rows, _ = aud.audit(corpus, sssom)
+    rows, _, _ = aud.audit(corpus, sssom)
     finding = _by_finding(rows)["DIVERGENT"]
     assert finding["mim_id"] == "CHEBI:4735"
     assert "CHEBI:64755" in finding["our_ids"]
@@ -213,7 +213,7 @@ def test_every_reagent_location_is_compared(aud, tmp_path, doc):
     """Stock-solution records keep reagents in a top-level `composition:`, so an
     ingredients-only comparison would silently exempt them from the gate."""
     sssom = _sssom(tmp_path, [("EDTA", "skos:exactMatch", "CHEBI:4735", "EDTA acid")])
-    rows, _ = aud.audit(_corpus(tmp_path, [doc]), sssom)
+    rows, _, _ = aud.audit(_corpus(tmp_path, [doc]), sssom)
     assert _by_finding(rows)["DIVERGENT"]["mim_id"] == "CHEBI:4735"
 
 

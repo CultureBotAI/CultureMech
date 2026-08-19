@@ -186,9 +186,24 @@ def collect(normalized_dir: Path) -> dict[str, Counter]:
     return by_name, display, labels
 
 
-def audit(normalized_dir: Path, sssom_path: Path) -> tuple[list[dict[str, str]], str]:
+def audit(normalized_dir: Path, sssom_path: Path
+          ) -> tuple[list[dict[str, str]], str, dict[str, int]]:
+    """Findings, the SSSOM version, and how much of the corpus was comparable."""
     mim, version = load_sssom(sssom_path)
     by_name, display, labels = collect(normalized_dir)
+
+    # Coverage is part of the result, not a footnote. MIM's exactMatch labels
+    # reach 517 of our 3,519 distinct names -- 14.7% -- though those are the
+    # common reagents and carry 60.6% of rows. A gate that sees a seventh of the
+    # names must say so, or a green run reads as "we agree with MIM" when it
+    # mostly means "MIM has not looked at these".
+    coverage = {
+        "our_names": len(by_name),
+        "matched_names": sum(1 for name in by_name if name in mim),
+        "our_rows": sum(sum(counts.values()) for counts in by_name.values()),
+        "matched_rows": sum(sum(counts.values())
+                            for name, counts in by_name.items() if name in mim),
+    }
 
     def described(chebi_ids) -> str:
         return "|".join(f"{cid}={labels.get(cid, '?')}" for cid in chebi_ids)
@@ -232,7 +247,7 @@ def audit(normalized_dir: Path, sssom_path: Path) -> tuple[list[dict[str, str]],
                 "rows": str(ungrounded),
                 "detail": "MIM grounds this name and we do not",
             })
-    return rows, version
+    return rows, version, coverage
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -256,7 +271,7 @@ def main(argv: list[str] | None = None) -> int:
     )
     args = parser.parse_args(argv if argv is not None else sys.argv[1:])
 
-    rows, version = audit(args.normalized_dir, args.sssom)
+    rows, version, coverage = audit(args.normalized_dir, args.sssom)
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     with args.out.open("w", newline="", encoding="utf-8") as handle:
@@ -277,6 +292,15 @@ def main(argv: list[str] | None = None) -> int:
     for finding in FINDINGS:
         print(f"  {finding:18s} {tally.get(finding, 0):4d} names "
               f"({affected.get(finding, 0):,} rows)")
+
+    name_pct = 100 * coverage["matched_names"] / max(coverage["our_names"], 1)
+    row_pct = 100 * coverage["matched_rows"] / max(coverage["our_rows"], 1)
+    print(f"\n  comparable: {coverage['matched_names']:,} of "
+          f"{coverage['our_names']:,} names ({name_pct:.1f}%), "
+          f"{coverage['matched_rows']:,} of {coverage['our_rows']:,} rows "
+          f"({row_pct:.1f}%)")
+    print("  the rest are names MIM's exactMatch labels do not cover, so this "
+          "gate cannot see them")
 
     relative = (args.out.relative_to(REPO_ROOT)
                 if args.out.is_relative_to(REPO_ROOT) else args.out)
