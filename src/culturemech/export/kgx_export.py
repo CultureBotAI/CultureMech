@@ -787,14 +787,24 @@ def _format_evidence(evidence_items: Optional[List[Dict]]) -> tuple:
 _ID_DROP_CHARS = '()\\"*'
 _ID_SEPARATOR_CHARS = " /"
 
+# The colon is separate because it is the one character that is not merely ugly:
+# it is the CURIE delimiter. Names like `Solution A:` produced
+# `culturemech:solution_Solution_A:`, a two-colon id that any consumer splitting
+# on `:` reads wrongly — and this export exists to be consumed. 19 ids in the
+# corpus were affected. Mapped to an underscore rather than dropped so
+# `Autotrophic growth on ferrous sulfate:Add 13.9 g/l` does not weld two words
+# together.
+_ID_COLON_REPLACEMENT = "_"
+
 
 def _sanitize_id(text: str) -> str:
-    """Convert text to a valid ID component.
+    """Convert text to a valid CURIE local id.
 
-    Separators (space, slash) become underscores; quotes, backslashes, asterisks
-    and parentheses are dropped. Runs of underscores collapse so that dropping a
-    character does not leave `__` behind.
+    Separators (space, slash, colon) become underscores; quotes, backslashes,
+    asterisks and parentheses are dropped. Runs of underscores collapse so that
+    dropping a character does not leave `__` behind.
     """
+    text = text.replace(":", _ID_COLON_REPLACEMENT)
     for char in _ID_SEPARATOR_CHARS:
         text = text.replace(char, "_")
     for char in _ID_DROP_CHARS:

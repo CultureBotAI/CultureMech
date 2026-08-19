@@ -191,6 +191,14 @@ def test_ids_survive_kozas_asymmetric_sanitization():
     assert _sanitize_id("Test (variant)") == "Test_variant"
     assert _sanitize_id("A  /  B") == "A_B"
 
+    # The colon is the CURIE delimiter, so a name carrying one produced a
+    # two-colon id that any consumer splitting on `:` reads wrongly. 19 in the
+    # corpus, e.g. `Solution A:` -> `culturemech:solution_Solution_A:`.
+    assert _create_solution_id("Solution A:") == "culturemech:solution_Solution_A"
+    assert _create_solution_id("Solution A:").count(":") == 1
+    # Mapped to `_`, not dropped, so two words are not welded together.
+    assert _sanitize_id("growth on sulfate:Add 13.9 g") == "growth_on_sulfate_Add_13.9_g"
+
     # And the medium id goes through the same sanitizer as the solution id --
     # before the fix it only replaced spaces, so a quoted medium name would drift
     # exactly the same way.
