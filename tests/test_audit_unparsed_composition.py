@@ -84,6 +84,49 @@ def test_a_named_ingredient_is_never_flagged_whatever_its_concentration(aud):
     assert _findings(aud, doc) == set()
 
 
+# --- coverage: reagents do not all live in `ingredients` ------------------
+
+
+BAD_ROW = {"preferred_term": "",
+           "concentration": {"value": "MgSO4·7H2O", "unit": "G_PER_L"}}
+
+
+@pytest.mark.parametrize("doc,location", [
+    ({"ingredients": [BAD_ROW]}, "ingredients"),
+    ({"composition": [BAD_ROW]}, "composition"),
+    ({"solutions": [{"preferred_term": "Trace elements",
+                     "composition": [BAD_ROW]}]}, "solutions[].composition"),
+])
+def test_every_reagent_location_is_scanned(aud, doc, location):
+    """An ingredients-only scan looks like full coverage and is not.
+
+    The 4,784 standalone stock-solution records keep their reagents in a
+    top-level `composition:`, not `ingredients:` — 35,009 rows. Skipping them
+    would leave the gate porous exactly where a stock-solution import lands, and
+    the miss would be invisible because the totals would not move.
+    """
+    findings = list(aud.audit_record(doc, REPO_ROOT / "x.yaml"))
+    assert [f["finding"] for f in findings] == ["NAME_IN_CONCENTRATION"]
+    assert findings[0]["location"] == location
+
+
+def test_the_location_column_is_always_populated(aud):
+    """A curator triaging the report needs to know which field to open."""
+    doc = {
+        "ingredients": [BAD_ROW],
+        "composition": [BAD_ROW],
+        "solutions": [{
+            "preferred_term": "MgSO4·7H2O0.5g(NH4)2SO40.4gK2HPO40.2gKCl0.1g"
+                              "Distilled water1L",
+            "composition": []}],
+    }
+    findings = list(aud.audit_record(doc, REPO_ROOT / "x.yaml"))
+    assert len(findings) == 3
+    assert all(f.get("location") for f in findings)
+    assert {f["location"] for f in findings} == {
+        "ingredients", "composition", "solutions[].preferred_term"}
+
+
 # --- UNPARSED_SOLUTION_TABLE ----------------------------------------------
 
 

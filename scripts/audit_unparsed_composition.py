@@ -44,8 +44,12 @@ Scope and honesty about it:
     test. Either alone is far noisier: on the current corpus the loose filters
     flag 1,192 ingredient values, the conjunction flags 44, and spot-checking
     says the 44 are all real.
-  - Solution RECORDS are not excluded. Unlike a concentration-plausibility check,
-    a name in a concentration field is wrong wherever it appears.
+  - Solution RECORDS are not excluded, and their reagents are genuinely scanned:
+    the 4,784 standalone stock-solution records keep their rows in a top-level
+    `composition:` rather than `ingredients:`, so an ingredients-only scan would
+    silently skip 35,009 rows while appearing to cover the corpus. A name in a
+    concentration field is wrong wherever it appears. The `location` column says
+    which of the three places each finding came from.
 
 Usage::
 
@@ -138,14 +142,39 @@ def _looks_like_table(name: str) -> bool:
     return len(_GLUED_AMOUNT.findall(name)) >= _MIN_GLUED_RUNS
 
 
+def _reagent_rows(doc: dict[str, Any]) -> Iterator[tuple[str, dict[str, Any]]]:
+    """Every reagent-shaped row in a record, wherever it lives.
+
+    Three locations, and missing any of them leaves the gate porous:
+
+      ``ingredients[]``            media records.
+      ``composition[]``            top level, on the 4,784 standalone stock-
+                                   solution records — 35,009 rows that an
+                                   ingredients-only scan never sees.
+      ``solutions[].composition[]``  reagents nested inside an inline solution.
+
+    The rows are the same shape in all three, so they get the same detectors.
+    """
+    for row in doc.get("ingredients") or []:
+        if isinstance(row, dict):
+            yield "ingredients", row
+    for row in doc.get("composition") or []:
+        if isinstance(row, dict):
+            yield "composition", row
+    for solution in doc.get("solutions") or []:
+        if not isinstance(solution, dict):
+            continue
+        for row in solution.get("composition") or []:
+            if isinstance(row, dict):
+                yield "solutions[].composition", row
+
+
 def audit_record(doc: dict[str, Any], path: Path) -> Iterator[dict[str, str]]:
     """Every finding in one record."""
     record_id = str(doc.get("id") or "")
     rel = str(path.relative_to(REPO_ROOT)) if path.is_relative_to(REPO_ROOT) else str(path)
 
-    for ingredient in doc.get("ingredients") or []:
-        if not isinstance(ingredient, dict):
-            continue
+    for location, ingredient in _reagent_rows(doc):
         name = ingredient.get("preferred_term")
         concentration = ingredient.get("concentration") or {}
         value = concentration.get("value")
@@ -153,6 +182,7 @@ def audit_record(doc: dict[str, Any], path: Path) -> Iterator[dict[str, str]]:
         base = {
             "file_path": rel,
             "record_id": record_id,
+            "location": location,
             "value": "" if value is None else str(value),
             "unit": "" if unit is None else str(unit),
         }
@@ -190,6 +220,7 @@ def audit_record(doc: dict[str, Any], path: Path) -> Iterator[dict[str, str]]:
         if _looks_like_table(name):
             yield {
                 "file_path": rel, "record_id": record_id,
+                "location": "solutions[].preferred_term",
                 "finding": "UNPARSED_SOLUTION_TABLE", "name": name,
                 "value": "", "unit": "",
                 "detail": "composition is empty and the name is a concatenated "
@@ -243,8 +274,8 @@ def main(argv: list[str] | None = None) -> int:
     with args.out.open("w", newline="", encoding="utf-8") as fh:
         writer = csv.DictWriter(
             fh, delimiter="\t",
-            fieldnames=["finding", "file_path", "record_id", "name", "value",
-                        "unit", "detail"],
+            fieldnames=["finding", "location", "file_path", "record_id", "name",
+                        "value", "unit", "detail"],
         )
         writer.writeheader()
         writer.writerows(rows)
