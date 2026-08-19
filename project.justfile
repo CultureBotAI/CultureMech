@@ -372,6 +372,23 @@ audit-unparsed-composition *args="":
     uv run --extra dev python scripts/audit_unparsed_composition.py \
         --max-allowed 169 --max-exported 31 {{args}}
 
+# Compare our ingredient groundings against MIM's published SSSOM (#256).
+#
+# This has to live here rather than in MIM: kg-microbe resolves an ingredient
+# with `best_primary([chebi_id, culturemech_term_id, mim_id, ...])`, so OUR
+# `term.id` outranks MIM's. When MIM corrects a mapping the consumer still picks
+# ours, and MIM can only fix rows we hold no opinion on.
+#
+# Baselines are names, not rows -- one regrounding decision fixes every row of a
+# name. Today: 12 divergent, 75 internally split. Lower them as the backlog is
+# curated; never raise one to make a run pass.
+#
+# Needs MediaIngredientMech checked out beside this repo; pass --sssom otherwise.
+[group('QC')]
+audit-mim-sssom *args="":
+    uv run --extra dev python scripts/audit_mim_sssom_divergence.py \
+        --max-divergent 12 --max-split 75 {{args}}
+
 # Merge locally-completed Edison runs (research/media/*-meta.yaml, gitignored)
 # into the tracked researched-media manifest. This is the only step that reads
 # untracked research state; review and commit the resulting diff. Entries are
