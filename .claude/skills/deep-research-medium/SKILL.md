@@ -177,8 +177,11 @@ Outputs (per task; `<stem>` is `<slug>-edison-literature`):
 - `<stem>-response.json` — full
   `response.model_dump(mode="json")` plus the verbose-fetch dump.
   Every SDK-exposed field, future-proof against new ones.
-- `<stem>-citations.md` — parsed reference list from the answer
-  (numbered entries with PMID / DOI / URL extracted).
+- `<stem>-citations.md` — **derived, not authoritative.** A local
+  best-effort parse of the answer (numbered entries with PMID /
+  DOI / URL extracted), for skimming only. The authoritative
+  citation record is the References section inside `<stem>.md`;
+  cite from there. See `docs/RESEARCH_ARTIFACT_CONTRACT.md`.
 - `<stem>-agent-state.json` — PaperQA's `agent_state` (tool-call
   trace), `environment_frame`, and verbose `metadata`. Only
   written when the verbose fetch returns any of those.
