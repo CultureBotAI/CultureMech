@@ -188,6 +188,29 @@ def test_the_research_media_alias_takes_no_positional_focus():
     assert 'research-entity provider target focus="growth_evidence" *args=""' in recipes
 
 
+def test_the_recipes_quote_the_values_that_can_contain_spaces():
+    """Record `name:` values contain spaces, and a target may be one.
+
+    `just research-media claude_code "LB Broth"` expands `{{target}}` unquoted,
+    so the shell split it into two words. The alias made that worse by expanding
+    it a second time through the recursive `just` call: `LB` became the target
+    and `Broth` became the focus. Quoted, the resolver receives `LB Broth` whole
+    and answers properly — here, that it is ambiguous between
+    `lb_broth.yaml` and `TOGO_M3227_LB_broth.yaml`, which is the useful answer.
+
+    `{{args}}` is deliberately NOT quoted: it is a word list, and quoting it
+    would collapse `--max-cost 1` into a single argument.
+    """
+    body = (REPO_ROOT / "project.justfile").read_text()
+    for fragment in (
+        '--provider "{{provider}}"',
+        '--target "{{target}}"',
+        '--focus="{{focus}}"',
+        '@just research-entity "{{provider}}" "{{target}}" growth_evidence {{args}}',
+    ):
+        assert fragment in body, f"unquoted expansion, expected: {fragment}"
+
+
 def test_explicit_template_still_overrides_the_focus():
     """Special-purpose prompts (the #150 stock-solution repair, axis
     classification, phase-2 extraction) stay reachable without inventing a

@@ -55,9 +55,9 @@ fetch-raw-data:
 [group('Research')]
 research-entity provider target focus="growth_evidence" *args="":
     uv run --extra dev python scripts/research_media.py \
-      --provider {{provider}} \
-      --target {{target}} \
-      --focus={{focus}} \
+      --provider "{{provider}}" \
+      --target "{{target}}" \
+      --focus="{{focus}}" \
       --research-dir {{research_dir}} \
       {{args}}
 
@@ -70,7 +70,7 @@ research-entity provider target focus="growth_evidence" *args="":
 # working; pass `--focus formulation` through args, or use `research-entity`.
 [group('Research')]
 research-media provider target *args="":
-    @just research-entity {{provider}} {{target}} growth_evidence {{args}}
+    @just research-entity "{{provider}}" "{{target}}" growth_evidence {{args}}
 
 [group('Research')]
 research-focuses:
