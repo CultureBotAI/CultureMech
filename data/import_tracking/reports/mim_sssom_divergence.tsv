@@ -1,0 +1,150 @@
+finding	ingredient	our_ids	our_label_asserted	mim_id	mim_label	rows	detail
+INTERNAL_SPLIT	(NH4)3 citrate	CHEBI:63037=40|CHEBI:72699=4	CHEBI:63037=triammonium citrate|CHEBI:72699=(2R)-trihomocitrate(3-)	CHEBI:63037	triammonium citrate	44	2 CHEBI ids for one name; MIM matches one of them
+INTERNAL_SPLIT	(NH4)H2PO4	CHEBI:62982=3|CHEBI:39745=1	CHEBI:62982=ammonium dihydrogen phosphate|CHEBI:39745=dihydrogenphosphate			4	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	(NH4)HCO3	CHEBI:184335=2|CHEBI:17544=1	CHEBI:184335=Ammonium bicarbonate|CHEBI:17544=hydrogencarbonate			3	2 CHEBI ids for one name; MIM has no opinion
+DIVERGENT	1,2-Dichloropropane	CHEBI:142468=2	CHEBI:142468=1,2-dichloropropane	CHEBI:82163	rac-1,2-dichloropropane	2	we and MIM both ground this name, to different ids
+MISSING_GROUNDING	4-Hydroxy-L-proline			CHEBI:18240	4-hydroxy-L-proline	2	MIM grounds this name and we do not
+MISSING_GROUNDING	4-Hydroxybenzaldehyde			CHEBI:17597	4-hydroxybenzaldehyde	2	MIM grounds this name and we do not
+INTERNAL_SPLIT	5-Aminovaleric acid	CHEBI:15887=3|CHEBI:86394=2	CHEBI:15887=5-aminopentanoic acid|CHEBI:86394=5-aminopentanoate	CHEBI:15887	5-aminopentanoic acid	5	2 CHEBI ids for one name; MIM matches one of them
+MISSING_GROUNDING	5-fluorouracil			CHEBI:46345	5-fluorouracil	1	MIM grounds this name and we do not
+MISSING_GROUNDING	Acetoin			CHEBI:15688	acetoin	1	MIM grounds this name and we do not
+MISSING_GROUNDING	acetone			CHEBI:15347	acetone	1	MIM grounds this name and we do not
+MISSING_GROUNDING	Adenine			CHEBI:16708	adenine	3	MIM grounds this name and we do not
+INTERNAL_SPLIT	Arginine	CHEBI:29016=31|CHEBI:32696=6|CHEBI:16467=6	CHEBI:29016=arginine|CHEBI:32696=argininium(1+)|CHEBI:16467=L-arginine	CHEBI:29016	arginine	43	3 CHEBI ids for one name; MIM matches one of them
+MISSING_GROUNDING	Ascorbate			CHEBI:22651	ascorbate	7	MIM grounds this name and we do not
+MISSING_GROUNDING	Aspartate			CHEBI:29995	aspartate(2-)	12	MIM grounds this name and we do not
+MISSING_GROUNDING	Bacitracin			CHEBI:28669	bacitracin	1	MIM grounds this name and we do not
+MISSING_GROUNDING	benzene			CHEBI:16716	benzene	1	MIM grounds this name and we do not
+MISSING_GROUNDING	Benzoate			CHEBI:16150	benzoate	2	MIM grounds this name and we do not
+MISSING_GROUNDING	Benzyl alcohol			CHEBI:17987	benzyl alcohol	2	MIM grounds this name and we do not
+MISSING_GROUNDING	beta-D-Glucose			CHEBI:15903	beta-D-glucose	16	MIM grounds this name and we do not
+INTERNAL_SPLIT	Bicine	CHEBI:39065=3|CHEBI:40957=1	CHEBI:39065=bicine|CHEBI:40957=N,N-bis(2-hydroxyethyl)glycine			4	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	Calcium Chloride	CHEBI:86158=91|CHEBI:3312=6	CHEBI:86158=calcium chloride dihydrate|CHEBI:3312=calcium dichloride			97	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	Calcium chloride dihydrate	CHEBI:86158=227|CHEBI:3312=2	CHEBI:86158=calcium chloride dihydrate|CHEBI:3312=calcium dichloride			229	2 CHEBI ids for one name; MIM has no opinion
+MISSING_GROUNDING	Carbon monoxide			CHEBI:17245	carbon monoxide	2	MIM grounds this name and we do not
+DIVERGENT	Carboxymethyl cellulose	CHEBI:85146=5	CHEBI:85146=carboxymethylcellulose	CHEBI:234035	carboxymethylcellulose sodium salt	5	we and MIM both ground this name, to different ids
+MISSING_GROUNDING	Cefoxitin			CHEBI:209807	cefoxitin	1	MIM grounds this name and we do not
+MISSING_GROUNDING	Chloramphenicol			CHEBI:17698	chloramphenicol	8	MIM grounds this name and we do not
+DIVERGENT	Cholesterol	CHEBI:140435=4	CHEBI:140435=cholesterol-2,2,3,4,4,6-d6	CHEBI:16113	cholesterol	4	we and MIM both ground this name, to different ids
+DIVERGENT	Citrate	CHEBI:30769=63	CHEBI:30769=citric acid	CHEBI:16947	citrate(3-)	63	we and MIM both ground this name, to different ids
+INTERNAL_SPLIT	Citric Acid	CHEBI:30769=63|CHEBI:53258=50	CHEBI:30769=citric acid|CHEBI:53258=sodium citrate	CHEBI:30769	citric acid	113	2 CHEBI ids for one name; MIM matches one of them
+INTERNAL_SPLIT	Co Carboxylase	CHEBI:18290=2|CHEBI:9532=1	CHEBI:18290=thiamine(1+) diphosphate chloride|CHEBI:9532=thiamine(1+) diphosphate			3	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	Cobalamine	CHEBI:30411=3|CHEBI:28911=1	CHEBI:30411=cobalamin|CHEBI:28911=cob(III)alamin	CHEBI:30411	cobalamin	4	2 CHEBI ids for one name; MIM matches one of them
+MISSING_GROUNDING	Cystine			CHEBI:17376	cystine	1	MIM grounds this name and we do not
+MISSING_GROUNDING	D-Alanine			CHEBI:15570	D-alanine	2	MIM grounds this name and we do not
+INTERNAL_SPLIT	D-Arabinose	CHEBI:46983=4|CHEBI:17108=2	CHEBI:46983=aldehydo-D-arabinose|CHEBI:17108=D-arabinose	CHEBI:17108	D-arabinose	6	2 CHEBI ids for one name; MIM matches one of them
+MISSING_GROUNDING	D-Aspartate			CHEBI:29994	D-aspartate(2-)	1	MIM grounds this name and we do not
+MISSING_GROUNDING	D-cycloserine			CHEBI:40009	D-cycloserine	1	MIM grounds this name and we do not
+INTERNAL_SPLIT	D-Fructose	CHEBI:15824=44|CHEBI:48095=9	CHEBI:15824=D-fructose|CHEBI:48095=keto-D-fructose	CHEBI:15824	D-fructose	53	2 CHEBI ids for one name; MIM matches one of them
+MISSING_GROUNDING	D-Glucarate			CHEBI:30612	D-glucarate(2-)	1	MIM grounds this name and we do not
+INTERNAL_SPLIT	D-glucose	CHEBI:17634=597|CHEBI:17234=130	CHEBI:17634=D-glucose|CHEBI:17234=glucose			727	2 CHEBI ids for one name; MIM has no opinion
+MISSING_GROUNDING	D-Glucose 6-phosphate			CHEBI:14314	D-glucose 6-phosphate	1	MIM grounds this name and we do not
+INTERNAL_SPLIT	D-Mannose	CHEBI:16024=8|CHEBI:37675=4	CHEBI:16024=D-mannose|CHEBI:37675=aldehydo-D-mannose	CHEBI:16024	D-mannose	12	2 CHEBI ids for one name; MIM matches one of them
+MISSING_GROUNDING	D-Ribose			CHEBI:16988	D-ribose	1	MIM grounds this name and we do not
+INTERNAL_SPLIT	D-Trehalose	CHEBI:27082=2|CHEBI:16551=1	CHEBI:27082=trehalose|CHEBI:16551=alpha,alpha-trehalose			3	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	D-Trehalose dihydrate	CHEBI:232797=14|CHEBI:83760=1	CHEBI:232797=trehalose dihydrate|CHEBI:83760=EC 2.4.1.64 (alpha,alpha-trehalose phosphorylase) inhibitor			15	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	D(+)-Glucose	CHEBI:17634=227|CHEBI:15824=13	CHEBI:17634=D-glucose|CHEBI:15824=D-fructose			240	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	Dextrose	CHEBI:17634=258|CHEBI:15824=16	CHEBI:17634=D-glucose|CHEBI:15824=D-fructose			274	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	Dipotassium phosphate	CHEBI:131527=475|CHEBI:63036=1	CHEBI:131527=dipotassium hydrogen phosphate|CHEBI:63036=potassium dihydrogen phosphate			476	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	Dithiothreitol	CHEBI:42106=30|CHEBI:18320=22	CHEBI:42106=L-1,4-dithiothreitol|CHEBI:18320=1,4-dithiothreitol			52	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	DL-Dithiothreitol	CHEBI:18320=64|CHEBI:42106=1	CHEBI:18320=1,4-dithiothreitol|CHEBI:42106=L-1,4-dithiothreitol	CHEBI:18320	1,4-dithiothreitol	65	2 CHEBI ids for one name; MIM matches one of them
+INTERNAL_SPLIT	DL-mevalonic acid	CHEBI:150970=5|CHEBI:25351=1	CHEBI:150970=(2R,4S,5R,6R)-5-Acetamido-2-[(2R,3S,4R,5S)-5-acetamido-4-[(2R,3R,4R,5S,6R)-3-acetamido-6-(hydroxymethyl)-5-[(2S,3R,4S,5R,6R)-3,4,5-trihydroxy-6-(hydroxymethyl)oxan-2-yl]oxy-4-[(2S,3S,4R,5S,6S)-3,4,5-trihydroxy-6-methyloxan-2-yl]oxyoxan-2-yl]oxy-2,3,6-trihydroxyhexoxy]-4-hydroxy-6-[(1R,2R)-1,2,3-trihydroxypropyl]oxane-2-carboxylic acid acid acid|CHEBI:25351=mevalonic acid	CHEBI:25351	mevalonic acid	6	2 CHEBI ids for one name; MIM matches one of them
+INTERNAL_SPLIT	DL-Na-malate	CHEBI:91260=3|CHEBI:91261=1	CHEBI:91260=disodium malate|CHEBI:91261=disodium (S)-malate			4	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	DL-Tryptophan	CHEBI:27897=3|CHEBI:57912=2	CHEBI:27897=tryptophan|CHEBI:57912=L-tryptophan zwitterion			5	2 CHEBI ids for one name; MIM has no opinion
+DIVERGENT	EDTA	CHEBI:64755=568	CHEBI:64755=EDTA(2-)	CHEBI:4735	ethylenediaminetetraacetic acid	568	we and MIM both ground this name, to different ids
+INTERNAL_SPLIT	Fe(NH4)citrate	CHEBI:31604=19|CHEBI:144421=16	CHEBI:31604=ferric ammonium citrate|CHEBI:144421=iron(III) citrate			35	2 CHEBI ids for one name; MIM has no opinion
+MISSING_GROUNDING	Folinic acid			CHEBI:15640	5-formyltetrahydrofolic acid	2	MIM grounds this name and we do not
+INTERNAL_SPLIT	Fructose	CHEBI:28757=39|CHEBI:15824=26|CHEBI:28645=21	CHEBI:28757=fructose|CHEBI:15824=D-fructose|CHEBI:28645=beta-D-fructofuranose	CHEBI:28757	fructose	86	3 CHEBI ids for one name; MIM matches one of them
+MISSING_GROUNDING	Fumarate			CHEBI:29806	fumarate(2-)	2	MIM grounds this name and we do not
+MISSING_GROUNDING	Galactitol			CHEBI:16813	galactitol	1	MIM grounds this name and we do not
+MISSING_GROUNDING	Gentamicin			CHEBI:17833	gentamycin	2	MIM grounds this name and we do not
+MISSING_GROUNDING	Glycolate			CHEBI:29805	glycolate	2	MIM grounds this name and we do not
+MISSING_GROUNDING	Guaiacol			CHEBI:28591	guaiacol	1	MIM grounds this name and we do not
+INTERNAL_SPLIT	H3BO2	CHEBI:38267=3|CHEBI:33118=1	CHEBI:38267=boronic acid|CHEBI:33118=boric acid	CHEBI:38267	boronic acid	4	2 CHEBI ids for one name; MIM matches one of them
+INTERNAL_SPLIT	HEPES	CHEBI:46756=157|CHEBI:42334=65	CHEBI:46756=HEPES|CHEBI:42334=2-[4-(2-hydroxyethyl)piperazin-1-yl]ethanesulfonic acid	CHEBI:42334	2-[4-(2-hydroxyethyl)piperazin-1-yl]ethanesulfonic acid	222	2 CHEBI ids for one name; MIM matches one of them
+INTERNAL_SPLIT	Inositol	CHEBI:17268=18|CHEBI:24848=18	CHEBI:17268=myo-inositol|CHEBI:24848=inositol	CHEBI:24848	inositol	36	2 CHEBI ids for one name; MIM matches one of them
+MISSING_GROUNDING	kanamycin			CHEBI:6104	kanamycin	5	MIM grounds this name and we do not
+INTERNAL_SPLIT	KF	CHEBI:66872=3|CHEBI:73605=2	CHEBI:66872=potassium fluoride|CHEBI:73605=Lys-Phe			5	2 CHEBI ids for one name; MIM has no opinion
+MISSING_GROUNDING	KNO2			CHEBI:232610	potassium nitrite	2	MIM grounds this name and we do not
+MISSING_GROUNDING	L-Arabinose			CHEBI:30849	L-arabinose	3	MIM grounds this name and we do not
+MISSING_GROUNDING	L-Aspartate			CHEBI:29991	L-aspartate(1-)	21	MIM grounds this name and we do not
+INTERNAL_SPLIT	L-Cysteine	CHEBI:17561=115|CHEBI:15356=14	CHEBI:17561=L-cysteine|CHEBI:15356=cysteine	CHEBI:17561	L-cysteine	129	2 CHEBI ids for one name; MIM matches one of them
+MISSING_GROUNDING	L-Inositol			CHEBI:27374	1L-chiro-inositol	1	MIM grounds this name and we do not
+INTERNAL_SPLIT	L-Lysine HCl	CHEBI:53633=3|CHEBI:53558=2	CHEBI:53633=L-lysine hydrochloride|CHEBI:53558=D-lysine hydrochloride	CHEBI:53633	L-lysine hydrochloride	5	2 CHEBI ids for one name; MIM matches one of them
+INTERNAL_SPLIT	L-Sodium lactate	CHEBI:232798=21|CHEBI:75228=13	CHEBI:232798=sodium L-lactate|CHEBI:75228=sodium lactate			34	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	Lactose	CHEBI:17716=41|CHEBI:36218=9	CHEBI:17716=lactose|CHEBI:36218=beta-lactose	CHEBI:17716	lactose	50	2 CHEBI ids for one name; MIM matches one of them
+MISSING_GROUNDING	Levulinic acid			CHEBI:45630	4-oxopentanoic acid	1	MIM grounds this name and we do not
+MISSING_GROUNDING	Lipopolysaccharide			CHEBI:16412	lipopolysaccharide	3	MIM grounds this name and we do not
+MISSING_GROUNDING	Lysine			CHEBI:25094	lysine	11	MIM grounds this name and we do not
+INTERNAL_SPLIT	m-Inositol	CHEBI:10642=20|CHEBI:166917=1	CHEBI:10642=scyllo-inositol|CHEBI:166917=Ins-1-P-Man-alpha-1->6-Ins-1-P-Cer(d18:0)(2-)			21	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	Magnesium chloride hexahydrate	CHEBI:86345=74|CHEBI:6636=2	CHEBI:86345=magnesium dichloride hexahydrate|CHEBI:6636=magnesium dichloride			76	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	Magnesium Sulfate Heptahydrate	CHEBI:31795=218|CHEBI:32599=2	CHEBI:31795=magnesium sulfate heptahydrate|CHEBI:32599=magnesium sulfate			220	2 CHEBI ids for one name; MIM has no opinion
+MISSING_GROUNDING	maltodextrin			CHEBI:25140	maltodextrin	1	MIM grounds this name and we do not
+INTERNAL_SPLIT	maltose	CHEBI:17306=137|CHEBI:18167=40	CHEBI:17306=maltose|CHEBI:18167=alpha-maltose	CHEBI:17306	maltose	177	2 CHEBI ids for one name; MIM matches one of them
+INTERNAL_SPLIT	MES	CHEBI:39010=76|CHEBI:39005=34	CHEBI:39010=MES|CHEBI:39005=2-(N-morpholino)ethanesulfonic acid	CHEBI:39010	MES	110	2 CHEBI ids for one name; MIM matches one of them
+MISSING_GROUNDING	methane			CHEBI:16183	methane	8	MIM grounds this name and we do not
+DIVERGENT	Mg-citrate	CHEBI:131389=5	CHEBI:131389=magnesium citrate	CHEBI:131391	trimagnesium dicitrate	5	we and MIM both ground this name, to different ids
+DIVERGENT	MgCl2x 6 H2O	CHEBI:86345=4	CHEBI:86345=magnesium dichloride hexahydrate	CHEBI:6636	magnesium dichloride	4	we and MIM both ground this name, to different ids
+INTERNAL_SPLIT	MnSO4 x 4 H2O	CHEBI:86358=69|CHEBI:86360=6	CHEBI:86358=manganese(II) sulfate tetrahydrate|CHEBI:86360=manganese(II) sulfate			75	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	MnSO4 x 5 H2O	CHEBI:131524=31|CHEBI:86360=1	CHEBI:131524=manganese(II) sulfate pentahydrate|CHEBI:86360=manganese(II) sulfate			32	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	Monosodium glutamate	CHEBI:64220=8|CHEBI:64243=2	CHEBI:64220=monosodium glutamate|CHEBI:64243=monosodium L-glutamate			10	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	MOPS	CHEBI:39074=74|CHEBI:44115=17	CHEBI:39074=MOPS|CHEBI:44115=3-(N-morpholino)propanesulfonic acid	CHEBI:39074	MOPS	91	2 CHEBI ids for one name; MIM matches one of them
+INTERNAL_SPLIT	N -Acetyl-D-glucosamine	CHEBI:8006=15|CHEBI:506227=6|CHEBI:59640=6	CHEBI:8006=Peptidoglycan(N-acetyl-D-glucosamine)|CHEBI:506227=N-acetyl-D-glucosamine|CHEBI:59640=N-acetylglucosamine			27	3 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	N-Acetyl-glutamic acid	CHEBI:172431=9|CHEBI:17533=1	CHEBI:172431=Acetyl-Glu|CHEBI:17533=N-acetyl-L-glutamic acid			10	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	n-Acetyl-glutamine	CHEBI:73685=9|CHEBI:133362=1	CHEBI:73685=N(2)-acetylglutamine|CHEBI:133362=N-acetyl-L-methionyl-L-glutaminyl residue			10	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	n-Acetyl-lysine	CHEBI:35704=9|CHEBI:61930=1	CHEBI:35704=N(2)-acetyl-L-lysine|CHEBI:61930=N(6)-acetyl-L-lysine residue			10	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	n-Acetyl-muramic acid	CHEBI:47966=9|CHEBI:40666=1	CHEBI:47966=aldehydo-N-acetylmuramic acid|CHEBI:40666=1,6-anhydro-N-acetyl-beta-muramic acid			10	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	Na-butyrate	CHEBI:64103=17|CHEBI:17968=1	CHEBI:64103=sodium butyrate|CHEBI:17968=butyrate			18	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	Na-DL-malate	CHEBI:91260=4|CHEBI:91261=2	CHEBI:91260=disodium malate|CHEBI:91261=disodium (S)-malate			6	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	Na glutamate	CHEBI:64220=82|CHEBI:29988=2	CHEBI:64220=monosodium glutamate|CHEBI:29988=L-glutamate(2-)	CHEBI:64220	monosodium glutamate	84	2 CHEBI ids for one name; MIM matches one of them
+INTERNAL_SPLIT	Na malate	CHEBI:91260=9|CHEBI:91261=6	CHEBI:91260=disodium malate|CHEBI:91261=disodium (S)-malate			15	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	Na-tartrate	CHEBI:63017=4|CHEBI:30924=1	CHEBI:63017=sodium L-tartrate|CHEBI:30924=L-tartrate(2-)			5	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	Na-thioglycolate	CHEBI:86481=97|CHEBI:30066=4	CHEBI:86481=sodium thioglycolate|CHEBI:30066=thioglycolate(1-)			101	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	Na2S2O3	CHEBI:132112=42|CHEBI:32150=19	CHEBI:132112=sodium thiosulfate|CHEBI:32150=sodium thiosulfate pentahydrate	CHEBI:132112	sodium thiosulfate	61	2 CHEBI ids for one name; MIM matches one of them
+INTERNAL_SPLIT	Na2SeO4 x 10 H2O	CHEBI:77775=2|CHEBI:32586=1	CHEBI:77775=sodium selenate|CHEBI:32586=sodium sulfate decahydrate			3	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	Na2SiO3 x 5 H2O	CHEBI:60720=2|CHEBI:86477=2	CHEBI:60720=sodium silicate|CHEBI:86477=sodium sulfite			4	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	Na3-EDTA	CHEBI:63125=15|CHEBI:64734=2	CHEBI:63125=EDTA trisodium salt|CHEBI:64734=EDTA disodium salt (anhydrous)			17	2 CHEBI ids for one name; MIM has no opinion
+MISSING_GROUNDING	Neomycin			CHEBI:7507	neomycin	2	MIM grounds this name and we do not
+INTERNAL_SPLIT	Nicotinate	CHEBI:15940=139|CHEBI:32544=4	CHEBI:15940=nicotinic acid|CHEBI:32544=nicotinate			143	2 CHEBI ids for one name; MIM has no opinion
+DIVERGENT	NiSO4 x 7 H2O	CHEBI:53001=9	CHEBI:53001=nickel sulfate	CHEBI:53504	nickel sulfate heptahydrate	9	we and MIM both ground this name, to different ids
+MISSING_GROUNDING	Nitrate			CHEBI:17632	nitrate	7	MIM grounds this name and we do not
+INTERNAL_SPLIT	Nitrilotriacetate	CHEBI:25548=12|CHEBI:44557=2	CHEBI:25548=nitrilotriacetate(3-)|CHEBI:44557=nitrilotriacetic acid	CHEBI:25548	nitrilotriacetate(3-)	14	2 CHEBI ids for one name; MIM matches one of them
+MISSING_GROUNDING	Penicillin G			CHEBI:51765	benzylpenicillin sodium	3	MIM grounds this name and we do not
+MISSING_GROUNDING	Polymyxin B sulfate			CHEBI:8310	Polymyxin B sulfate	1	MIM grounds this name and we do not
+MISSING_GROUNDING	Potassium Gluconate			CHEBI:32032	Potassium gluconate	31	MIM grounds this name and we do not
+INTERNAL_SPLIT	Potassium Phosphate	CHEBI:63036=5|CHEBI:131527=4	CHEBI:63036=potassium dihydrogen phosphate|CHEBI:131527=dipotassium hydrogen phosphate			9	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	Putrescine	CHEBI:17148=6|CHEBI:326268=2	CHEBI:17148=putrescine|CHEBI:326268=1,4-butanediammonium	CHEBI:17148	putrescine	8	2 CHEBI ids for one name; MIM matches one of them
+MISSING_GROUNDING	Pyromelitic acid			CHEBI:45165	pyromellitic acid	3	MIM grounds this name and we do not
+MISSING_GROUNDING	Quinate			CHEBI:26490	quinate	2	MIM grounds this name and we do not
+MISSING_GROUNDING	Rhamnose			CHEBI:26546	rhamnose	1	MIM grounds this name and we do not
+MISSING_GROUNDING	Serine			CHEBI:17822	serine	1	MIM grounds this name and we do not
+INTERNAL_SPLIT	sn-glycero-3-phosphocholine	CHEBI:16870=9|CHEBI:36702=1	CHEBI:16870=choline alfoscerate|CHEBI:36702=2-acyl-1-alkyl-sn-glycero-3-phosphocholine			10	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	Sodium DL-lactate	CHEBI:75228=4|CHEBI:232798=1	CHEBI:75228=sodium lactate|CHEBI:232798=sodium L-lactate			5	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	Sodium DL--malate	CHEBI:91260=11|CHEBI:91261=3	CHEBI:91260=disodium malate|CHEBI:91261=disodium (S)-malate			14	2 CHEBI ids for one name; MIM has no opinion
+MISSING_GROUNDING	Sodium ferric EDTA			CHEBI:78292	sodium feredetate	2	MIM grounds this name and we do not
+DIVERGENT	Sodium glutamate monohydrate	CHEBI:64243=16	CHEBI:64243=monosodium L-glutamate	CHEBI:232425	monosodium L-glutamate hydrate	16	we and MIM both ground this name, to different ids
+MISSING_GROUNDING	Sodium iodide			CHEBI:33167	sodium iodide	6	MIM grounds this name and we do not
+DIVERGENT	Sodium malate	CHEBI:91260=19	CHEBI:91260=disodium malate	CHEBI:91261	disodium (S)-malate	19	we and MIM both ground this name, to different ids
+DIVERGENT	Sodium phosphate dibasic	CHEBI:34683=33	CHEBI:34683=disodium hydrogenphosphate	CHEBI:37583	trisodium phosphate	33	we and MIM both ground this name, to different ids
+MISSING_GROUNDING	Spectinomycin			CHEBI:9215	spectinomycin	1	MIM grounds this name and we do not
+INTERNAL_SPLIT	Starch	CHEBI:28017=604|CHEBI:85248=2	CHEBI:28017=starch|CHEBI:85248=gellan gum	CHEBI:28017	starch	606	2 CHEBI ids for one name; MIM matches one of them
+MISSING_GROUNDING	streptomycin			CHEBI:17076	streptomycin	2	MIM grounds this name and we do not
+MISSING_GROUNDING	Sulfate			CHEBI:16189	sulfate	4	MIM grounds this name and we do not
+MISSING_GROUNDING	Tetracycline			CHEBI:27902	tetracycline	3	MIM grounds this name and we do not
+MISSING_GROUNDING	Tetrathionate			CHEBI:15226	tetrathionate(2-)	1	MIM grounds this name and we do not
+DIVERGENT	Thiamine	CHEBI:26948=151	CHEBI:26948=vitamin B1	CHEBI:18385	thiamine(1+)	151	we and MIM both ground this name, to different ids
+INTERNAL_SPLIT	Thiamine pyrophosphate	CHEBI:18290=21|CHEBI:9532=2	CHEBI:18290=thiamine(1+) diphosphate chloride|CHEBI:9532=thiamine(1+) diphosphate	CHEBI:9532	thiamine(1+) diphosphate	23	2 CHEBI ids for one name; MIM matches one of them
+INTERNAL_SPLIT	Thioglycolate	CHEBI:47869=4|CHEBI:30066=3	CHEBI:47869=thioglycolate(2-)|CHEBI:30066=thioglycolate(1-)			7	2 CHEBI ids for one name; MIM has no opinion
+MISSING_GROUNDING	Thioglycollic acid			CHEBI:30065	thioglycolic acid	3	MIM grounds this name and we do not
+MISSING_GROUNDING	Threonine			CHEBI:26986	threonine	21	MIM grounds this name and we do not
+INTERNAL_SPLIT	Trehalose	CHEBI:27082=8|CHEBI:16551=2	CHEBI:27082=trehalose|CHEBI:16551=alpha,alpha-trehalose	CHEBI:27082	trehalose	10	2 CHEBI ids for one name; MIM matches one of them
+MISSING_GROUNDING	Tricalcium phosphate			CHEBI:9679	tricalcium bis(phosphate)	1	MIM grounds this name and we do not
+INTERNAL_SPLIT	Tricine	CHEBI:46760=30|CHEBI:39063=12	CHEBI:46760=tricine|CHEBI:39063=N-tris(hydroxymethyl)methylglycine	CHEBI:46760	tricine	42	2 CHEBI ids for one name; MIM matches one of them
+MISSING_GROUNDING	trimethoprim			CHEBI:45924	trimethoprim	1	MIM grounds this name and we do not
+MISSING_GROUNDING	Tyloxapol			CHEBI:141517	tyloxapol	2	MIM grounds this name and we do not
+MISSING_GROUNDING	vancomycin			CHEBI:28001	vancomycin	1	MIM grounds this name and we do not
+INTERNAL_SPLIT	Vitamin B12	CHEBI:17439=2013|CHEBI:176843=588	CHEBI:17439=cyanocob(III)alamin|CHEBI:176843=vitamin B12	CHEBI:176843	vitamin B12	2601	2 CHEBI ids for one name; MIM matches one of them
+INTERNAL_SPLIT	VOSO4 x 2 H2O	CHEBI:87009=65|CHEBI:33146=9	CHEBI:87009=vanadyl sulfate dihydrate|CHEBI:33146=vanadyl sulfate			74	2 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	VOSO4 x 5 H2O	CHEBI:132758=11|CHEBI:33146=3|CHEBI:87014=1	CHEBI:132758=vanadyl sulfate pentahydrate|CHEBI:33146=vanadyl sulfate|CHEBI:87014=vanadyl sulfate hexahydrate			15	3 CHEBI ids for one name; MIM has no opinion
+INTERNAL_SPLIT	Xanthine	CHEBI:17712=15|CHEBI:15318=6	CHEBI:17712=9H-xanthine|CHEBI:15318=xanthine			21	2 CHEBI ids for one name; MIM has no opinion
+MISSING_GROUNDING	Xylan from Beechwood			CHEBI:15447	(1->4)-beta-D-xylan	2	MIM grounds this name and we do not
