@@ -855,9 +855,16 @@ _EMITTED_NODE_IDS: set = set()
 def reset_node_dedup() -> None:
     """Clear the run-scoped node-id set.
 
-    Koza builds one runner per invocation but the module is imported once, so a
-    second run in the same process would silently emit no nodes at all. Call this
-    at the start of a run; ``scripts/export_kgx.py`` and the tests both do.
+    Not needed by ``scripts/export_kgx.py`` today: koza loads this file with
+    ``importlib.util.spec_from_file_location`` "without touching sys.modules",
+    so each run gets a fresh module object and a fresh, empty set. Calling this
+    from the driver would clear a *different* copy of the module — the one
+    imported as ``culturemech.export.kgx_export`` — and protect nothing.
+
+    Kept for callers that import this module directly and drive ``nodes()`` in a
+    loop, and as the ready-made fix if koza ever starts caching transform
+    modules. ``test_a_second_run_in_the_same_process_repeats_the_output`` is what
+    would catch that change.
     """
     _EMITTED_NODE_IDS.clear()
 

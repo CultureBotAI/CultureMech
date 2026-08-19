@@ -283,6 +283,34 @@ def test_shared_nodes_are_written_once(exported):
     assert "culturemech:state_liquid" in ids
 
 
+def test_a_second_run_in_the_same_process_repeats_the_output(tmp_path):
+    """The node-dedup set is run-scoped, so a second run must not come up empty.
+
+    This pins the *invariant*, not the mechanism. Today it holds because koza
+    loads the transform with `spec_from_file_location` "without touching
+    sys.modules", giving each run a fresh module and a fresh set — so the
+    driver's old `reset_node_dedup()` call was clearing an unrelated copy of the
+    module and protecting nothing. If koza ever caches transform modules, this
+    test fails and `reset_node_dedup()` becomes the fix.
+    """
+    import yaml
+
+    import export_kgx
+
+    records_dir = tmp_path / "records" / "canary"
+    records_dir.mkdir(parents=True)
+    (records_dir / "a.yaml").write_text(yaml.safe_dump(RECORD))
+
+    first = export_kgx.run(tmp_path / "records", tmp_path / "out1")
+    second = export_kgx.run(tmp_path / "records", tmp_path / "out2")
+
+    assert first == second
+    assert first[0] > 0
+    assert (tmp_path / "out1" / "culturemech_nodes.tsv").read_text() == (
+        tmp_path / "out2" / "culturemech_nodes.tsv"
+    ).read_text()
+
+
 def test_an_empty_corpus_fails_loudly(tmp_path):
     """A silent empty export is the failure mode #294 was about."""
     import export_kgx

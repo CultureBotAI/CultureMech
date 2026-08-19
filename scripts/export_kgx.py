@@ -43,15 +43,24 @@ def run(records_dir: Path, output_dir: Path, limit: int = 0) -> tuple[int, int]:
     from koza.runner import KozaRunner
 
     sys.path.insert(0, str(REPO_ROOT / "src"))
-    from culturemech.export.kgx_export import reset_node_dedup
 
     files = find_records(records_dir)
     if not files:
         raise SystemExit(f"No record YAMLs found under {records_dir}")
 
-    # Koza imports the transform module itself, so the dedup set has to be
-    # cleared through the same module object koza will use, not a fresh import.
-    reset_node_dedup()
+    # No dedup reset here, and deliberately so. Koza loads the transform with
+    # `importlib.util.spec_from_file_location` and, in its own words, "without
+    # touching sys.modules" — so every run gets a brand-new module object with a
+    # brand-new (empty) `_EMITTED_NODE_IDS`. Clearing the set through
+    # `culturemech.export.kgx_export` would touch a different object entirely and
+    # protect nothing.
+    #
+    # What matters is the invariant, not the mechanism: two runs in one process
+    # must produce identical output. That is pinned by
+    # `test_a_second_run_in_the_same_process_repeats_the_output`, which keeps
+    # holding if koza ever starts caching modules — at which point
+    # `reset_node_dedup()` becomes the fix, called from inside the transform
+    # module rather than from here.
 
     print(f"Reading {len(files)} records from {records_dir}")
     output_dir.mkdir(parents=True, exist_ok=True)
