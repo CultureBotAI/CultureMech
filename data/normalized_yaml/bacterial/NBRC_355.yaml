@@ -7,16 +7,30 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Hipolypepton*10gYeast extract2gMethanol**5mlMgSO4·7H2O1gAgar (if
-    needed)15gDistilled water1LpH 7.0*Wako Pure Chemical Ind., Ltd., Osaka, Japan.**Sterilize
-    separately by filtration.
+- preferred_term: Hipolypepton*
   concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: ''
-  concentration:
-    value: Hipolypepton*
+    value: '10'
     unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Methanol**
+  concentration:
+    value: '5'
+    unit: ML_PER_L
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: L
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -51,3 +65,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-19T21:54:22.905395+00:00'
+  curator: recover_nbrc_composition.py
+  action: Recovered composition from source HTML
+  notes: Re-parsed the NBRC medium 352 composition table from the preserved scrape;
+    6 ingredient(s) restored, 0 stock solution(s) nested rather than flattened, 0
+    unparsed solution blob(s) removed (#299).
+notes: pH 7.0 Wako Pure Chemical Ind., Ltd., Osaka, Japan. Sterilize separately by
+  filtration.

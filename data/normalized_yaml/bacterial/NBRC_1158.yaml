@@ -3,18 +3,26 @@ name: '1158'
 original_name: '1158'
 category: bacterial
 description: 1158. NBRC 1155.
-medium_type: DEFINED
-composition_type: DEFINED
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Tryptone (Diffico)10gGlucose3gAgar10gDistilled water1L
+- preferred_term: Tryptone (Diffico)
   concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: ''
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Glucose
   concentration:
-    value: variable
-    unit: VARIABLE
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Agar
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: L
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -48,3 +56,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-19T21:54:22.617114+00:00'
+  curator: recover_nbrc_composition.py
+  action: Recovered composition from source HTML
+  notes: Re-parsed the NBRC medium 1155 composition table from the preserved scrape;
+    4 ingredient(s) restored, 0 stock solution(s) nested rather than flattened, 0
+    unparsed solution blob(s) removed (#299).
+notes: Tryptone (Diffico) 10 g Glucose 3 g Agar 10 g Distilled water 1 L Tryptone
+  (Diffico) 10 g Glucose 3 g Agar 10 g Distilled water 1 L

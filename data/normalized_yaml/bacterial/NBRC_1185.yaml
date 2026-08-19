@@ -7,10 +7,34 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: ''
+- preferred_term: KNO3
   concentration:
-    value: KNO3
+    value: '0.5'
     unit: G_PER_L
+- preferred_term: Na-glycerophosphate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Tris HCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Tryptone (Difco 0123)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Trace elements (see below)
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+- preferred_term: Artificial sea water
+  concentration:
+    value: '999'
+    unit: ML_PER_L
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -47,10 +71,50 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-19T21:54:22.648276+00:00'
+  curator: recover_nbrc_composition.py
+  action: Recovered composition from source HTML
+  notes: Re-parsed the NBRC medium 1183 composition table from the preserved scrape;
+    7 ingredient(s) restored, 1 stock solution(s) nested rather than flattened, 1
+    unparsed solution blob(s) removed (#299).
 solutions:
-- preferred_term: KNO30.50gNa-glycerophosphate0.10gTris HCl1.00gTryptone (Difco 0123)2.00gYeast
-    extract2.00gTrace elements (see below)1.00mlArtificial sea water999.00mlpH 7.0Artificial
-    sea water is prepared from a marine aquarium salts mixture.Trace elements:H3BO32.85gMnCl2·4H2O1.80gFeSO41.36gNa-tartrate1.77gCuCl2·2H2O26.90mgZnCl220.80mgCoCl2·6H2O40.40mgNa2MoO4·2H2O25.20mgDistilled
-    water1000.00ml
-  composition: []
-  name: Unknown solution
+- preferred_term: Trace elements
+  composition:
+  - preferred_term: H3BO3
+    concentration:
+      value: '2.85'
+      unit: G_PER_L
+  - preferred_term: MnCl2·4H2O
+    concentration:
+      value: '1.8'
+      unit: G_PER_L
+  - preferred_term: FeSO4
+    concentration:
+      value: '1.36'
+      unit: G_PER_L
+  - preferred_term: Na-tartrate
+    concentration:
+      value: '1.77'
+      unit: G_PER_L
+  - preferred_term: CuCl2·2H2O
+    concentration:
+      value: '26.9'
+      unit: MG_PER_L
+  - preferred_term: ZnCl2
+    concentration:
+      value: '20.8'
+      unit: MG_PER_L
+  - preferred_term: CoCl2·6H2O
+    concentration:
+      value: '40.4'
+      unit: MG_PER_L
+  - preferred_term: Na2MoO4·2H2O
+    concentration:
+      value: '25.2'
+      unit: MG_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+  name: Trace elements
+notes: pH 7.0 Artificial sea water is prepared from a marine aquarium salts mixture.

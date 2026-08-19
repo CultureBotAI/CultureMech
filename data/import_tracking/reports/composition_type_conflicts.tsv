@@ -6,7 +6,7 @@ archaea/halorhabdus_utahensis_medium.yaml	CultureMech:002099	halorhabdus_utahens
 archaea/methanococcus_sp_medium.yaml	CultureMech:004145	methanococcus_sp_medium	Yeast extract; Trypticase peptone	2	3.94866	CURATOR: SEMI_DEFINED?
 archaea/methanogenium_medium_h2_co2.yaml	CultureMech:000254	methanogenium_medium_h2_co2	Yeast extract; Trypticase peptone	2	3.94866	CURATOR: SEMI_DEFINED?
 archaea/pyrobaculum_medium.yaml	CultureMech:001497	pyrobaculum_medium	Trypticase peptone; Yeast extract	2	0.69307	CURATOR: SEMI_DEFINED?
-bacterial/NBRC_1158.yaml	CultureMech:007459	1158	Tryptone (Diffico)10gGlucose3gAgar10gDistilled water1L	1		CURATOR: unquantified
+bacterial/NBRC_14.yaml	CultureMech:007476	14	Soytone	1	1	CURATOR: SEMI_DEFINED?
 bacterial/for_dsm_13380.yaml	CultureMech:005170	for_dsm_13380	Trypticase peptone; Yeast extract	2	0.69307	CURATOR: SEMI_DEFINED?
 bacterial/for_dsm_13514.yaml	CultureMech:005171	for_dsm_13514	Trypticase peptone; Yeast extract	2	0.69307	CURATOR: SEMI_DEFINED?
 bacterial/for_dsm_14042.yaml	CultureMech:004140	for_dsm_14042	Yeast extract; Trypticase peptone	2	3.94866	CURATOR: SEMI_DEFINED?

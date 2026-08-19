@@ -7,9 +7,53 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: ''
+- preferred_term: Mineral base 1*
   concentration:
-    value: Mineral base 1*
+    value: '500'
+    unit: ML_PER_L
+- preferred_term: Mineral base 2**
+  concentration:
+    value: '500'
+    unit: ML_PER_L
+- preferred_term: MgCl2·6H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Bacto Yeast Extract (Difco)
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Coenzyme M
+  concentration:
+    value: '0.014'
+    unit: G_PER_L
+- preferred_term: Vitamin solution***
+  concentration:
+    value: '5'
+    unit: ML_PER_L
+- preferred_term: Trace element solution****
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+- preferred_term: Methanol
+  concentration:
+    value: '2'
+    unit: ML_PER_L
+- preferred_term: Sodium formate
+  concentration:
+    value: '3.4'
+    unit: G_PER_L
+- preferred_term: Sodium acetate
+  concentration:
+    value: '0.16'
+    unit: G_PER_L
+- preferred_term: FeS slurry solution*****
+  concentration:
+    value: '2'
+    unit: ML_PER_L
+- preferred_term: Na2S·9H2O
+  concentration:
+    value: '0.12'
     unit: G_PER_L
 preparation_steps:
 - step_number: 1
@@ -47,28 +91,173 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-19T21:54:22.788070+00:00'
+  curator: recover_nbrc_composition.py
+  action: Recovered composition from source HTML
+  notes: Re-parsed the NBRC medium 1356 composition table from the preserved scrape;
+    12 ingredient(s) restored, 4 stock solution(s) nested rather than flattened, 1
+    unparsed solution blob(s) removed (#299).
 solutions:
-- preferred_term: Mineral base 1*500mlMineral base 2**500mlMgCl2·6H2O0.2gBacto Yeast
-    Extract (Difco)0.02gCoenzyme M0.014gVitamin solution***5mlTrace element solution****10mlMethanol2mlSodium
-    formate3.4gSodium acetate0.16gFeS slurry solution*****2mlNa2S·9H2O0.12gMix mineral
-    base 1 with mineral base 2 in 1:1 proportion in tightly closed vessels under a
-    N2atmosphere. Separately autoclave concentrated Bacto Yeast Extract, coenzyme
-    M, sodium acetate, Na2S·9H2O and FeS solution under a N2atmosphere in tightly
-    closed vessels. Add the autoclaved concentrated solutions, and filter-sterile
-    concentrated MgCl2·6H2O, vitamin solution, trace element solution, methanol and
-    sodium formate solution. After re-exchanging with N2, add 1 drop of filter-sterile
-    10% sodium dithionaite solution in 1 M NaHCO3by syringe. Final pH of the complete
-    medium should be 9.*Mineral base 1Na2CO3185gNaHCO335gNaCl16gK2HPO41gDistilled
-    water1LMix ingredients and autoclave under a N2atmosphere. Because some precipitate
-    appears on the bottom for 1 day after autoclaving, use only supernatant for making
-    the medium. Final pH should be 10.**Mineral base 2NaCl240gNH4Cl0.5gK2HPO42.5gKCl5gDistilled
-    water1LMix ingredients and autoclave under a N2atmosphere. Final pH should be
-    7.3.***Vitamin solutionBiotin2mgFolic acid2mgPyridoxine-HCl10mgThiamine-HCl5mgRiboflavin5mgNicotinic
-    acid5mgCa-pantothenate5mgp-Aminobenzoic acid1mgVitamin B120.01mgDistilled water1L****Trace
-    elements solutionNitrilotriacetic acid (NTA)12.8gFeCl3·6H2O1.35gMnCl2·4H2O0.1gCoCl2·6H2O0.024gCaCl2·2H2O0.1gZnCl20.1gCuCl2·2H2O0.025gH3BO30.01gNa2MoO4·2H2O0.024gNaCl1gNiCl2·6H2O0.12gNa2SeO40.004gNa2WO40.004gDistilled
-    water1LFirst dissolve nitrilotriacetic acid and adjust pH to 6.5 with NaOH, and
-    then add minerals. Final pH 7.0.*****FeS slurry solutionMix 0.5 M FeSO4·7H2O and
-    0.5 M Na2S·9H2O solutions, wash with pure water several times, finally resuspend
-    the FeS precipitate as 20% solution and autoclave (110°C, 30 min) under a N2atmosphere.
-  composition: []
-  name: Unknown solution
+- preferred_term: Mineral base 1
+  composition:
+  - preferred_term: Na2CO3
+    concentration:
+      value: '185'
+      unit: G_PER_L
+  - preferred_term: NaHCO3
+    concentration:
+      value: '35'
+      unit: G_PER_L
+  - preferred_term: NaCl
+    concentration:
+      value: '16'
+      unit: G_PER_L
+  - preferred_term: K2HPO4
+    concentration:
+      value: '1'
+      unit: G_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+  name: Mineral base 1
+- preferred_term: Mineral base 2
+  composition:
+  - preferred_term: NaCl
+    concentration:
+      value: '240'
+      unit: G_PER_L
+  - preferred_term: NH4Cl
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+  - preferred_term: K2HPO4
+    concentration:
+      value: '2.5'
+      unit: G_PER_L
+  - preferred_term: KCl
+    concentration:
+      value: '5'
+      unit: G_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+  name: Mineral base 2
+- preferred_term: Vitamin solution
+  composition:
+  - preferred_term: Biotin
+    concentration:
+      value: '2'
+      unit: MG_PER_L
+  - preferred_term: Folic acid
+    concentration:
+      value: '2'
+      unit: MG_PER_L
+  - preferred_term: Pyridoxine-HCl
+    concentration:
+      value: '10'
+      unit: MG_PER_L
+  - preferred_term: Thiamine-HCl
+    concentration:
+      value: '5'
+      unit: MG_PER_L
+  - preferred_term: Riboflavin
+    concentration:
+      value: '5'
+      unit: MG_PER_L
+  - preferred_term: Nicotinic acid
+    concentration:
+      value: '5'
+      unit: MG_PER_L
+  - preferred_term: Ca-pantothenate
+    concentration:
+      value: '5'
+      unit: MG_PER_L
+  - preferred_term: p-Aminobenzoic acid
+    concentration:
+      value: '1'
+      unit: MG_PER_L
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.01'
+      unit: MG_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+  name: Vitamin solution
+- preferred_term: Trace elements solution
+  composition:
+  - preferred_term: Nitrilotriacetic acid (NTA)
+    concentration:
+      value: '12.8'
+      unit: G_PER_L
+  - preferred_term: FeCl3·6H2O
+    concentration:
+      value: '1.35'
+      unit: G_PER_L
+  - preferred_term: MnCl2·4H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+  - preferred_term: CoCl2·6H2O
+    concentration:
+      value: '0.024'
+      unit: G_PER_L
+  - preferred_term: CaCl2·2H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+  - preferred_term: ZnCl2
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+  - preferred_term: CuCl2·2H2O
+    concentration:
+      value: '0.025'
+      unit: G_PER_L
+  - preferred_term: H3BO3
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+  - preferred_term: Na2MoO4·2H2O
+    concentration:
+      value: '0.024'
+      unit: G_PER_L
+  - preferred_term: NaCl
+    concentration:
+      value: '1'
+      unit: G_PER_L
+  - preferred_term: NiCl2·6H2O
+    concentration:
+      value: '0.12'
+      unit: G_PER_L
+  - preferred_term: Na2SeO4
+    concentration:
+      value: '0.004'
+      unit: G_PER_L
+  - preferred_term: Na2WO4
+    concentration:
+      value: '0.004'
+      unit: G_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+  name: Trace elements solution
+notes: Mix mineral base 1 with mineral base 2 in 1:1 proportion in tightly closed
+  vessels under a N2 atmosphere. Separately autoclave concentrated Bacto Yeast Extract,
+  coenzyme M, sodium acetate, Na2S·9H2O and FeS solution under a N2 atmosphere in
+  tightly closed vessels. Add the autoclaved concentrated solutions, and filter-sterile
+  concentrated MgCl2·6H2O, vitamin solution, trace element solution, methanol and
+  sodium formate solution. After re-exchanging with N2, add 1 drop of filter-sterile
+  10% sodium dithionaite solution in 1 M NaHCO3 by syringe. Final pH of the complete
+  medium should be 9. Mix ingredients and autoclave under a N2 atmosphere. Because
+  some precipitate appears on the bottom for 1 day after autoclaving, use only supernatant
+  for making the medium. Final pH should be 10. Mix ingredients and autoclave under
+  a N2 atmosphere. Final pH should be 7.3. First dissolve nitrilotriacetic acid and
+  adjust pH to 6.5 with NaOH, and then add minerals. Final pH 7.0. FeS slurry solution
+  Mix 0.5 M FeSO4·7H2O and 0.5 M Na2S·9H2O solutions, wash with pure water several
+  times, finally resuspend the FeS precipitate as 20% solution and autoclave (110°C,
+  30 min) under a N2 atmosphere.

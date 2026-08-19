@@ -359,18 +359,32 @@ audit-concentration-plausibility *args="":
         --max-allowed 9757 --max-cocktails 186 {{args}}
 
 # Composition tables that were never parsed, plus prose sitting in name slots
-# (#299, #273). Baselines are today's counts: 169 findings, of which 31 are
-# unparsed solution tables. Lower them as the backlog is repaired; never raise
-# one to make a run pass.
+# (#299, #273). Baselines are today's counts: 64 findings, none of which reach
+# the KGX export. Lower them as the backlog is repaired; never raise one to make
+# a run pass.
+#
+# Was 169/31 before `just recover-nbrc-composition` restored 58 composition
+# tables from the preserved scrape and repaired 4 more surgically.
+# `--max-exported 0` is now an absolute gate rather than a ratchet: no unparsed
+# composition may reach the graph at all.
 #
 # `--max-exported` is the sharper of the two. Only UNPARSED_SOLUTION_TABLE
 # reaches the KGX export -- solution ids are minted from `preferred_term` and
 # need no grounding, whereas the ingredient findings are ungrounded and emit no
 # edge -- so a rise there means new garbage nodes in the graph.
+# Recover NBRC composition tables from the preserved source HTML (#299).
+#
+# Dry-run by default; `--limit 1` canaries a single record. Needs
+# `data/raw/nbrc/scraped/`, which is gitignored, so this only runs on a machine
+# that has the scrape -- the recovered YAML is what gets committed.
+[group('Curation')]
+recover-nbrc-composition *args="":
+    uv run --extra dev python scripts/recover_nbrc_composition.py {{args}}
+
 [group('QC')]
 audit-unparsed-composition *args="":
     uv run --extra dev python scripts/audit_unparsed_composition.py \
-        --max-allowed 169 --max-exported 31 {{args}}
+        --max-allowed 64 --max-exported 0 {{args}}
 
 # Compare our ingredient groundings against MIM's published SSSOM (#256).
 #

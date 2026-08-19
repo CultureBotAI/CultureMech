@@ -7,9 +7,53 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: ''
+- preferred_term: Yeast extract
   concentration:
-    value: Yeast extract
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Bacto Casamino Acids (Difco)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: KCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '0.24'
+    unit: G_PER_L
+- preferred_term: CaSO4·2H2O
+  concentration:
+    value: '0.17'
+    unit: G_PER_L
+- preferred_term: Sodium glutamate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  concentration:
+    value: '250'
+    unit: G_PER_L
+- preferred_term: Distilled water, make up to
+  concentration:
+    value: '1'
+    unit: L
+- preferred_term: Agar (if needed)*
+  concentration:
+    value: '20'
     unit: G_PER_L
 preparation_steps:
 - step_number: 1
@@ -47,11 +91,12 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
-solutions:
-- preferred_term: Yeast extract5gBacto Casamino Acids (Difco)5gKH2PO41gKCl1gNH4Cl1gMgSO4·7H2O0.24gCaSO4·2H2O0.17gSodium
-    glutamate1gNa2CO35gNaCl250gDistilled water, make up to1LAgar (if needed)*20gAdjust
-    pH to 6.5 before autoclaving. Sterilize Na2CO3in solution separately, and add
-    to other autoclaved ingredients. Check the final pH is between 9.0 - 9.5.*Dissolve
-    agar by heating before adding NaCl.
-  composition: []
-  name: Unknown solution
+- timestamp: '2026-08-19T21:54:22.839834+00:00'
+  curator: recover_nbrc_composition.py
+  action: Recovered composition from source HTML
+  notes: Re-parsed the NBRC medium 256 composition table from the preserved scrape;
+    12 ingredient(s) restored, 0 stock solution(s) nested rather than flattened, 1
+    unparsed solution blob(s) removed (#299).
+notes: Adjust pH to 6.5 before autoclaving. Sterilize Na2CO3 in solution separately,
+  and add to other autoclaved ingredients. Check the final pH is between 9.0 - 9.5.
+  Dissolve agar by heating before adding NaCl.

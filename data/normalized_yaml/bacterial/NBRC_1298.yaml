@@ -123,10 +123,6 @@ ingredients:
     catalog_number: BD 212123, Sigma 05465
     product_url: https://microbenotes.com/macconkey-agar/
   notes: Solidifying agent; Constituent of MacConkey Agar commercial product
-- preferred_term: ''
-  concentration:
-    value: Nutrient Broth Powder (Kyokuto*)
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -165,6 +161,12 @@ curation_history:
   curator: cleanup_residual_errors.py
   action: CLEANUP_RESIDUAL_ERRORS
   notes: R01_flatten_synonym_text=2
+- timestamp: '2026-08-19T21:54:22.732836+00:00'
+  curator: recover_nbrc_composition.py
+  action: Removed corrupt rows, kept curated composition
+  notes: Record already held a grounded ingredient list, so the NBRC medium 1296 page
+    was NOT used — it lists only the commercial premix. Dropped the empty-name row
+    and 0 unparsed solution blob(s) (#299).
 notes: 'Commercial Product: MacConkey Agar
 
   Supplier: Multiple suppliers (BD, Sigma-Aldrich, HiMedia, Thermo)

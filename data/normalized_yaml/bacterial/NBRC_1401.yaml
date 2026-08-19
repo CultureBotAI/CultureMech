@@ -7,14 +7,29 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Maltose20gYeast extract3gTween 800.3gTrypticase peptone6gDistilled
-    water1LAgar (if needed)15gpH 5.6
+- preferred_term: Maltose
   concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: ''
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Yeast extract
   concentration:
-    value: Maltose
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Tween 80
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: L
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
     unit: G_PER_L
 preparation_steps:
 - step_number: 1
@@ -49,3 +64,10 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-19T21:54:22.811847+00:00'
+  curator: recover_nbrc_composition.py
+  action: Recovered composition from source HTML
+  notes: Re-parsed the NBRC medium 1396 composition table from the preserved scrape;
+    6 ingredient(s) restored, 0 stock solution(s) nested rather than flattened, 0
+    unparsed solution blob(s) removed (#299).
+notes: pH 5.6

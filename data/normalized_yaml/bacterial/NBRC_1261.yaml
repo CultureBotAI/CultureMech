@@ -7,10 +7,66 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: ''
+- preferred_term: KH2PO4
   concentration:
-    value: KH2PO4
+    value: '0.2'
     unit: G_PER_L
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MgCl2·6H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: KCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+- preferred_term: Na2SO4
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: MG_PER_L
+- preferred_term: Sodium acetate
+  concentration:
+    value: '2.73'
+    unit: G_PER_L
+- preferred_term: Trace element mixture*
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+- preferred_term: Selenite-tungstate solution**
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+- preferred_term: Bicarbonate solution***
+  concentration:
+    value: '30'
+    unit: ML_PER_L
+- preferred_term: Sulfide solution****
+  concentration:
+    value: '1.5'
+    unit: ML_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '970'
+    unit: ML_PER_L
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -47,20 +103,102 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-19T21:54:22.698945+00:00'
+  curator: recover_nbrc_composition.py
+  action: Recovered composition from source HTML
+  notes: Re-parsed the NBRC medium 1257 composition table from the preserved scrape;
+    15 ingredient(s) restored, 4 stock solution(s) nested rather than flattened, 1
+    unparsed solution blob(s) removed (#299).
 solutions:
-- preferred_term: KH2PO40.2gNH4Cl0.25gNaCl1gMgCl2·6H2O0.4gKCl0.5gCaCl2·2H2O0.15gNa2SO44gYeast
-    extract1gResazurin1mgSodium acetate2.73gTrace element mixture*1mlSelenite-tungstate
-    solution**1mlBicarbonate solution***30mlSulfide solution****1.5mlDistilled water970mlpH
-    6.8-7.0Mix ingredients except for bicarbonate and sulfide solutions. Dispense
-    the medium into suitable culture vessels under a stream of  nitrogen gas, seal
-    with butyl rubber stoppers, and autoclave at 121°C for 15 min. Aseptically and
-    anaerobically add other ingredients using sterile syringes, and the N2/CO2(80/20)
-    mixed gas is enclosed with the vessels. Adjust pH to 6.8-7.0 using compact pH
-    meter.*Trace element mixtureHCl (25%; 7.7 M)12.5mlFeSO4·7H2O2100mgH3BO330mgMnCl2·4H2O100mgCoCl2·6H2O190mgNiCl2·6H2O24mgCuCl2·2H2O2mgZnSO4·7H2O144mgNa2MoO4·2H2O36mgDistilled
-    water987mlSterilized by autoclaving.**Selenite-tungstate solutionNaOH0.4gNa2SeO3·5H2O6mgNa2WO4·2H2O8mgDistilled
-    water1LSterilized by autoclaving.***Bicarbonate solution (1.0 M)NaHCO38.4gDistilled
-    water100mlSaturated with CO2gas. Tightly sealed in bottles filled with CO2gas
-    and then sterilized by autoclaving.****Sulfide solution (1.0 M)Na2S·9H2O12gDistilled
-    water50mlSterilized by filtration and stored under N2gas.
-  composition: []
-  name: Unknown solution
+- preferred_term: Trace element mixture
+  composition:
+  - preferred_term: HCl (25%; 7.7 M)
+    concentration:
+      value: '12.5'
+      unit: ML_PER_L
+  - preferred_term: FeSO4·7H2O
+    concentration:
+      value: '2100'
+      unit: MG_PER_L
+  - preferred_term: H3BO3
+    concentration:
+      value: '30'
+      unit: MG_PER_L
+  - preferred_term: MnCl2·4H2O
+    concentration:
+      value: '100'
+      unit: MG_PER_L
+  - preferred_term: CoCl2·6H2O
+    concentration:
+      value: '190'
+      unit: MG_PER_L
+  - preferred_term: NiCl2·6H2O
+    concentration:
+      value: '24'
+      unit: MG_PER_L
+  - preferred_term: CuCl2·2H2O
+    concentration:
+      value: '2'
+      unit: MG_PER_L
+  - preferred_term: ZnSO4·7H2O
+    concentration:
+      value: '144'
+      unit: MG_PER_L
+  - preferred_term: Na2MoO4·2H2O
+    concentration:
+      value: '36'
+      unit: MG_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '987'
+      unit: ML_PER_L
+  name: Trace element mixture
+- preferred_term: Selenite-tungstate solution
+  composition:
+  - preferred_term: NaOH
+    concentration:
+      value: '0.4'
+      unit: G_PER_L
+  - preferred_term: Na2SeO3·5H2O
+    concentration:
+      value: '6'
+      unit: MG_PER_L
+  - preferred_term: Na2WO4·2H2O
+    concentration:
+      value: '8'
+      unit: MG_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+  name: Selenite-tungstate solution
+- preferred_term: Bicarbonate solution (1.0 M)
+  composition:
+  - preferred_term: NaHCO3
+    concentration:
+      value: '8.4'
+      unit: G_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '100'
+      unit: ML_PER_L
+  name: Bicarbonate solution (1.0 M)
+- preferred_term: Sulfide solution (1.0 M)
+  composition:
+  - preferred_term: Na2S·9H2O
+    concentration:
+      value: '12'
+      unit: G_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '50'
+      unit: ML_PER_L
+  name: Sulfide solution (1.0 M)
+notes: pH 6.8-7.0 Mix ingredients except for bicarbonate and sulfide solutions. Dispense
+  the medium into suitable culture vessels under a stream of nitrogen gas, seal with
+  butyl rubber stoppers, and autoclave at 121°C for 15 min. Aseptically and anaerobically
+  add other ingredients using sterile syringes, and the N2/CO2 (80/20) mixed gas is
+  enclosed with the vessels. Adjust pH to 6.8-7.0 using compact pH meter. Sterilized
+  by autoclaving. Sterilized by autoclaving. Saturated with CO2 gas. Tightly sealed
+  in bottles filled with CO2 gas and then sterilized by autoclaving. Sterilized by
+  filtration and stored under N2 gas.

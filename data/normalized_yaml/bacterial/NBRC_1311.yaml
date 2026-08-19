@@ -7,10 +7,58 @@ medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: ''
+- preferred_term: KH2PO4
   concentration:
-    value: KH2PO4
+    value: '0.136'
     unit: G_PER_L
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.54'
+    unit: G_PER_L
+- preferred_term: MgCl2·6H2O
+  concentration:
+    value: '3.05'
+    unit: G_PER_L
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '0.147'
+    unit: G_PER_L
+- preferred_term: NaCl
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Trimethylamine-HCl
+  concentration:
+    value: '1.2'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  concentration:
+    value: '2.52'
+    unit: G_PER_L
+- preferred_term: Vitamin solution*
+  concentration:
+    value: '2'
+    unit: ML_PER_L
+- preferred_term: Trace element solution**
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: MG_PER_L
+- preferred_term: Cysteine-HCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na2S·9H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: L
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -47,17 +95,118 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-19T21:54:22.745173+00:00'
+  curator: recover_nbrc_composition.py
+  action: Recovered composition from source HTML
+  notes: Re-parsed the NBRC medium 1308 composition table from the preserved scrape;
+    13 ingredient(s) restored, 2 stock solution(s) nested rather than flattened, 1
+    unparsed solution blob(s) removed (#299).
 solutions:
-- preferred_term: KH2PO40.136gNH4Cl0.54gMgCl2·6H2O3.05gCaCl2·2H2O0.147gNaCl20gTrimethylamine-HCl1.2gNaHCO32.52gVitamin
-    solution*2mlTrace element solution**1mlResazurin1mgCysteine-HCl0.5gNa2S·9H2O0.5gDistilled
-    water1LMix ingredients except for vitamin solution, cysteine-HCl and Na2S·9H2O,
-    and autoclave under a N2/CO2atmosphere (80/20).  Separately autoclave cysteine-HCl
-    and Na2S·9H2O solutions as 5% solutions under a N2atmosphere.  Sterilize vitamin
-    solution by filtration. Prior to inoculation, add vitamin solution, cysteine-HCl
-    and Na2S·9H2O.*Vitamin solutionBiotin2mgFolic acid2mgPyridoxine-HCl10mgThiamine-HCl5mgRiboflavin5mgNicotinic
-    acid5mgCa-pantothenate5mgp-Aminobenzoic acid1mgVitamin B120.01mgDistilled water1L**Trace
-    elements solutionNitrilotriacetic acid (NTA)12.8gFeCl3·6H2O1.35gMnCl2·4H2O0.1gCoCl2·6H2O0.024gCaCl2·2H2O0.1gZnCl20.1gCuCl2·2H2O0.025gH3BO30.01gNa2MoO4·2H2O0.024gNaCl1gNiCl2·6H2O0.12gNa2SeO40.004gNa2WO40.004gDistilled
-    water1LFirst dissolve nitrilotriacetic acid and adjust pH to 6.5 with NaOH, and
-    then add minerals. Final pH 7.0.
-  composition: []
-  name: Unknown solution
+- preferred_term: Vitamin solution
+  composition:
+  - preferred_term: Biotin
+    concentration:
+      value: '2'
+      unit: MG_PER_L
+  - preferred_term: Folic acid
+    concentration:
+      value: '2'
+      unit: MG_PER_L
+  - preferred_term: Pyridoxine-HCl
+    concentration:
+      value: '10'
+      unit: MG_PER_L
+  - preferred_term: Thiamine-HCl
+    concentration:
+      value: '5'
+      unit: MG_PER_L
+  - preferred_term: Riboflavin
+    concentration:
+      value: '5'
+      unit: MG_PER_L
+  - preferred_term: Nicotinic acid
+    concentration:
+      value: '5'
+      unit: MG_PER_L
+  - preferred_term: Ca-pantothenate
+    concentration:
+      value: '5'
+      unit: MG_PER_L
+  - preferred_term: p-Aminobenzoic acid
+    concentration:
+      value: '1'
+      unit: MG_PER_L
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.01'
+      unit: MG_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+  name: Vitamin solution
+- preferred_term: Trace elements solution
+  composition:
+  - preferred_term: Nitrilotriacetic acid (NTA)
+    concentration:
+      value: '12.8'
+      unit: G_PER_L
+  - preferred_term: FeCl3·6H2O
+    concentration:
+      value: '1.35'
+      unit: G_PER_L
+  - preferred_term: MnCl2·4H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+  - preferred_term: CoCl2·6H2O
+    concentration:
+      value: '0.024'
+      unit: G_PER_L
+  - preferred_term: CaCl2·2H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+  - preferred_term: ZnCl2
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+  - preferred_term: CuCl2·2H2O
+    concentration:
+      value: '0.025'
+      unit: G_PER_L
+  - preferred_term: H3BO3
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+  - preferred_term: Na2MoO4·2H2O
+    concentration:
+      value: '0.024'
+      unit: G_PER_L
+  - preferred_term: NaCl
+    concentration:
+      value: '1'
+      unit: G_PER_L
+  - preferred_term: NiCl2·6H2O
+    concentration:
+      value: '0.12'
+      unit: G_PER_L
+  - preferred_term: Na2SeO4
+    concentration:
+      value: '0.004'
+      unit: G_PER_L
+  - preferred_term: Na2WO4
+    concentration:
+      value: '0.004'
+      unit: G_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+  name: Trace elements solution
+notes: Mix ingredients except for vitamin solution, cysteine-HCl and Na2S·9H2O, and
+  autoclave under a N2/CO2 atmosphere (80/20). Separately autoclave cysteine-HCl and
+  Na2S·9H2O solutions as 5% solutions under a N2 atmosphere. Sterilize vitamin solution
+  by filtration. Prior to inoculation, add vitamin solution, cysteine-HCl and Na2S·9H2O.
+  First dissolve nitrilotriacetic acid and adjust pH to 6.5 with NaOH, and then add
+  minerals. Final pH 7.0.

@@ -7,10 +7,26 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: ''
+- preferred_term: MgSO4·7H2O
   concentration:
-    value: MgSO4·7H2O
+    value: '0.5'
     unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: KCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: L
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -47,12 +63,14 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
-solutions:
-- preferred_term: MgSO4·7H2O0.5g(NH4)2SO40.4gK2HPO40.2gKCl0.1gDistilled water1LAdjust
-    pH to 2.0 with H2SO4.Heterotrophic growth on yeast extract:Add 10 mg/l of FeSO4·7H2O
-    to the medium. After autoclaving, add yeast extract from sterile stock solution
-    to final concentration of 0.25 g/l.Autotrophic growth on ferrous sulfate:Add 13.9
-    g/l of FeSO4·7H2O to the medium, and adjust medium pH to 1.7 with H2SO4prior to
-    autoclaving.
-  composition: []
-  name: Unknown solution
+- timestamp: '2026-08-19T21:54:22.511329+00:00'
+  curator: recover_nbrc_composition.py
+  action: Recovered composition from source HTML
+  notes: Re-parsed the NBRC medium 1002 composition table from the preserved scrape;
+    5 ingredient(s) restored, 0 stock solution(s) nested rather than flattened, 1
+    unparsed solution blob(s) removed (#299).
+notes: Adjust pH to 2.0 with H2SO4. Heterotrophic growth on yeast extract Add 10 mg/l
+  of FeSO4·7H2O to the medium. After autoclaving, add yeast extract from sterile stock
+  solution to final concentration of 0.25 g/l. Autotrophic growth on ferrous sulfate
+  Add 13.9 g/l of FeSO4·7H2O to the medium, and adjust medium pH to 1.7 with H2SO4
+  prior to autoclaving.

@@ -103,10 +103,6 @@ ingredients:
     synonym_type: EXACT
   - synonym_text: sodium phosphate dibasic
     synonym_type: EXACT
-- preferred_term: ''
-  concentration:
-    value: Bacto Brain Heart Infusion (Difco)
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -140,6 +136,12 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-19T21:54:22.686970+00:00'
+  curator: recover_nbrc_composition.py
+  action: Removed corrupt rows, kept curated composition
+  notes: Record already held a grounded ingredient list, so the NBRC medium 1243 page
+    was NOT used — it lists only the commercial premix. Dropped the empty-name row
+    and 0 unparsed solution blob(s) (#299).
 notes: 'Commercial Product: Brain Heart Infusion
 
   Supplier: Difco/BD

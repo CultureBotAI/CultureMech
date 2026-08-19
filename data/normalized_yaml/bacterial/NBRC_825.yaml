@@ -7,10 +7,62 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: ''
+- preferred_term: Na-terephthalate
   concentration:
-    value: Na-terephthalate
+    value: '0.42'
     unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.14'
+    unit: G_PER_L
+- preferred_term: MgCl2·H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.54'
+    unit: G_PER_L
+- preferred_term: Vitamin solution*
+  concentration:
+    value: '3'
+    unit: ML_PER_L
+- preferred_term: Trace element solution**
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+- preferred_term: Se/W solution***
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+- preferred_term: Resazurin solution****
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+- preferred_term: NaHCO3
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Na2S·9H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: Cysteine-HCl
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: L
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -47,20 +99,135 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-19T21:54:22.971616+00:00'
+  curator: recover_nbrc_composition.py
+  action: Recovered composition from source HTML
+  notes: Re-parsed the NBRC medium 824 composition table from the preserved scrape;
+    14 ingredient(s) restored, 4 stock solution(s) nested rather than flattened, 1
+    unparsed solution blob(s) removed (#299).
 solutions:
-- preferred_term: Na-terephthalate0.42gYeast extract0.2gKH2PO40.14gMgCl2·H2O0.2gCaCl2·2H2O0.15gNH4Cl0.54gVitamin
-    solution*3mlTrace element solution**1mlSe/W solution***1mlResazurin solution****1mlNaHCO32.5gNa2S·9H2O0.3gCysteine-HCl0.3gDistilled
-    water1LThis medium is for co-culture of strain JT withMethanospirillum hungateistrain
-    NBRC 100397.For vial cultures, dissolve all ingredients except for Na-terephthalate,
-    Na2S·9H2O and cysteine-HCl (up to 900ml), flush N2/CO2(80/20), and autoclave.  Add
-    0.5 ml of each of filter-sterilized Na2S·9H2O solution (0.6g Na2S·9H2O/50 ml)
-    and cysteine-HCl solution (0.6g cysteine-HCl/ 50ml) per each vial separately.  Add
-    0.2 ml of neutralized and filter-sterilized 0.2 M Na-terephthalate solution. Yeast
-    extract is also added at final concentration about 0.02%.  Inoculum size 10-20%.  Growth
-    was observed after 3-4 weeks of incubation.*Vitamin solutionBiotin0.5mgFolic acid0.9mgPyridoxine-HCl0.4mgThiamine-HCl0.7mgRiboflavin0.8mgNicotinic
-    acid0.2mgCa-pantothenate0.5mgVitamin B122.7mgp-Aminobenzoic acid0.3mgLipoic acid0.4mgDistilled
-    water1L**Trace element solutionNitrilotriacetic acid (NTA)12.8gFeCl3·6H2O1.35gMnCl2·4H2O0.1gCoCl2·6H2O24mgCaCl2·2H2O0.1gZnCl20.1gCuCl2·2H2O25mgH3BO310mgNa2MoO4·2H2O24mgNiCl2·6H2O0.12gDistilled
-    water1LFirst dissolve NTA in 200 ml of water and adjust the pH to 6.5 with KOH.***Se/W
-    solutionNa2SeO34mgNa2WO44mg****Resazurin solutionResazurin1gDistilled water1L
-  composition: []
-  name: Unknown solution
+- preferred_term: Vitamin solution
+  composition:
+  - preferred_term: Biotin
+    concentration:
+      value: '0.5'
+      unit: MG_PER_L
+  - preferred_term: Folic acid
+    concentration:
+      value: '0.9'
+      unit: MG_PER_L
+  - preferred_term: Pyridoxine-HCl
+    concentration:
+      value: '0.4'
+      unit: MG_PER_L
+  - preferred_term: Thiamine-HCl
+    concentration:
+      value: '0.7'
+      unit: MG_PER_L
+  - preferred_term: Riboflavin
+    concentration:
+      value: '0.8'
+      unit: MG_PER_L
+  - preferred_term: Nicotinic acid
+    concentration:
+      value: '0.2'
+      unit: MG_PER_L
+  - preferred_term: Ca-pantothenate
+    concentration:
+      value: '0.5'
+      unit: MG_PER_L
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '2.7'
+      unit: MG_PER_L
+  - preferred_term: p-Aminobenzoic acid
+    concentration:
+      value: '0.3'
+      unit: MG_PER_L
+  - preferred_term: Lipoic acid
+    concentration:
+      value: '0.4'
+      unit: MG_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+  name: Vitamin solution
+- preferred_term: Trace element solution
+  composition:
+  - preferred_term: Nitrilotriacetic acid (NTA)
+    concentration:
+      value: '12.8'
+      unit: G_PER_L
+  - preferred_term: FeCl3·6H2O
+    concentration:
+      value: '1.35'
+      unit: G_PER_L
+  - preferred_term: MnCl2·4H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+  - preferred_term: CoCl2·6H2O
+    concentration:
+      value: '24'
+      unit: MG_PER_L
+  - preferred_term: CaCl2·2H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+  - preferred_term: ZnCl2
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+  - preferred_term: CuCl2·2H2O
+    concentration:
+      value: '25'
+      unit: MG_PER_L
+  - preferred_term: H3BO3
+    concentration:
+      value: '10'
+      unit: MG_PER_L
+  - preferred_term: Na2MoO4·2H2O
+    concentration:
+      value: '24'
+      unit: MG_PER_L
+  - preferred_term: NiCl2·6H2O
+    concentration:
+      value: '0.12'
+      unit: G_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+  name: Trace element solution
+- preferred_term: Se/W solution
+  composition:
+  - preferred_term: Na2SeO3
+    concentration:
+      value: '4'
+      unit: MG_PER_L
+  - preferred_term: Na2WO4
+    concentration:
+      value: '4'
+      unit: MG_PER_L
+  name: Se/W solution
+- preferred_term: Resazurin solution
+  composition:
+  - preferred_term: Resazurin
+    concentration:
+      value: '1'
+      unit: G_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+  name: Resazurin solution
+notes: This medium is for co-culture of strain JT with Methanospirillum hungatei strain
+  NBRC 100397. For vial cultures, dissolve all ingredients except for Na-terephthalate,
+  Na2S·9H2O and cysteine-HCl (up to 900ml), flush N2/CO2 (80/20), and autoclave. Add
+  0.5 ml of each of filter-sterilized Na2S·9H2O solution (0.6g Na2S·9H2O/50 ml) and
+  cysteine-HCl solution (0.6g cysteine-HCl/ 50ml) per each vial separately. Add 0.2
+  ml of neutralized and filter-sterilized 0.2 M Na-terephthalate solution. Yeast extract
+  is also added at final concentration about 0.02%. Inoculum size 10-20%. Growth was
+  observed after 3-4 weeks of incubation. First dissolve NTA in 200 ml of water and
+  adjust the pH to 6.5 with KOH.

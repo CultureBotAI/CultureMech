@@ -7,15 +7,46 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: K2HPO40.5gKH2PO40.6gMgSO4·7H2O0.2gNaCl0.1gCaCO33gYeast extract0.6gArabinose4gSodium
-    glutamate6gAgar (if needed)15gDistilled water1LpH 6.7±0.2
+- preferred_term: K2HPO4
   concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: ''
-  concentration:
-    value: K2HPO4
+    value: '0.5'
     unit: G_PER_L
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: NaCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CaCO3
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+- preferred_term: Arabinose
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Sodium glutamate
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: L
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -50,3 +81,10 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-19T21:54:22.939384+00:00'
+  curator: recover_nbrc_composition.py
+  action: Recovered composition from source HTML
+  notes: Re-parsed the NBRC medium 403 composition table from the preserved scrape;
+    10 ingredient(s) restored, 0 stock solution(s) nested rather than flattened, 0
+    unparsed solution blob(s) removed (#299).
+notes: pH 6.7±0.2

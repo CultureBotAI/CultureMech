@@ -143,17 +143,28 @@ def _rank(srn, corpus):
     return srn.score_parsed([(str(p.relative_to(normalized)), d) for p, d in corpus])
 
 
-def test_known_bad_records_rank_near_the_top(srn, corpus):
-    """Validation against a record independently confirmed broken.
+def test_the_worst_ranked_records_all_carry_a_severe_reason(srn, corpus):
+    """The corpus-level check that the ranking means something.
 
-    NBRC_1197 carries an unparsed recipe (#166). (The former second example,
-    test_medium_123, was a literal test fixture in the production corpus; it was
-    retired in #175, so it is no longer available to assert against.)
+    This used to anchor on NBRC_1197, which #166 confirmed carried an unparsed
+    recipe. That record was repaired in #299 — its composition was recovered from
+    the preserved NBRC HTML — so it now scores 35 (rank ~302) for the accurate and
+    much milder reason "no ingredient is grounded". The anchor was retired rather
+    than swapped for another record: no remaining record is independently
+    confirmed broken AND ranked in the worst 60, so naming one would assert a
+    claim nothing backs. `test_unparsed_recipe_in_an_ingredient_name_is_flagged`
+    still covers the detector itself against a synthetic case.
+
+    What survives is the property that actually matters: every top-ranked record
+    must have earned it.
     """
     rows = _rank(srn, corpus)
     assert rows, "scorer returned nothing"
-    top = [r["file_path"] for r in rows[:60]]
-    assert "bacterial/NBRC_1197.yaml" in top, "NBRC_1197 (unparsed recipe) not in the worst 60"
+    for row in rows[:60]:
+        # 40 is the floor the top 60 actually reach today (rank 1 scores 55).
+        # The point is that ranking high is earned, not that the cut-off is 40.
+        assert row["score"] >= 40, f"{row['file_path']} ranks top-60 at only {row['score']}"
+        assert row["reasons"], f"{row['file_path']} ranks top-60 with no reason given"
 
 
 def test_most_of_the_corpus_is_not_flagged_as_severe(srn, corpus):

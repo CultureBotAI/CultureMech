@@ -7,10 +7,42 @@ medium_type: DEFINED
 composition_type: DEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: ''
+- preferred_term: Soluble starch
   concentration:
-    value: Soluble starch
+    value: '10'
     unit: G_PER_L
+- preferred_term: K2HPO4 (anhydrous base)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: CaCO3
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Trace salts solution*
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+- preferred_term: Bacto Agar (Difco)
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: L
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -47,10 +79,30 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-19T21:54:22.855780+00:00'
+  curator: recover_nbrc_composition.py
+  action: Recovered composition from source HTML
+  notes: Re-parsed the NBRC medium 268 composition table from the preserved scrape;
+    9 ingredient(s) restored, 1 stock solution(s) nested rather than flattened, 1
+    unparsed solution blob(s) removed (#299).
 solutions:
-- preferred_term: Soluble starch10gK2HPO4(anhydrous base)1gMgSO4·7H2O1gNaCl1g(NH4)2SO42gCaCO32gTrace
-    salts solution*1mlBacto Agar (Difco)20gDistilled water1LThe unadjusted pH should
-    be 7.0 - 7.4*Trace salts solutionFeSO4·7H2O0.1gMnCl2·4H2O0.1gZnSO4·7H2O0.1gDistilled
-    water100ml
-  composition: []
-  name: Unknown solution
+- preferred_term: Trace salts solution
+  composition:
+  - preferred_term: FeSO4·7H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+  - preferred_term: MnCl2·4H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+  - preferred_term: ZnSO4·7H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '100'
+      unit: ML_PER_L
+  name: Trace salts solution
+notes: The unadjusted pH should be 7.0 - 7.4
