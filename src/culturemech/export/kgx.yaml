@@ -1,0 +1,50 @@
+# Koza configuration for the CultureMech KGX export (#294).
+#
+# koza 2.x's `transform` subcommand takes a configuration YAML, not a Python
+# file — `just kgx-export` used to pass `kgx_export.py` here, which is why it had
+# never run against this koza version.
+#
+# `reader.files` is intentionally empty: the corpus is 15,878 separate YAML
+# records, koza does no glob expansion, and the expanded list overflows ARG_MAX
+# (`ls data/normalized_yaml/*/*.yaml` already fails). `scripts/export_kgx.py`
+# globs the corpus and passes the list through koza's Python API instead.
+name: culturemech
+
+reader:
+  format: yaml
+  files: []
+
+transform:
+  code: kgx_export.py
+
+writer:
+  format: tsv
+  # TSVWriter only creates a file when the matching property list is set --
+  # both default to None, so omitting either silently produces no file:
+  #     if node_properties:  # Make node file
+  #     if edge_properties:  # Make edge file
+  # Column order is koza's, not this list's (see TSVWriter._order_columns).
+  node_properties:
+    - id
+    - category
+    - name
+    - provided_by
+  # Qualifiers are flattened into named columns (see `_QUALIFIER_COLUMNS`):
+  # biolink's `Association.qualifiers` is `list[str]`, and a nested dict is not
+  # representable in a TSV cell in any case.
+  edge_properties:
+    - id
+    - subject
+    - predicate
+    - object
+    - category
+    - primary_knowledge_source
+    - knowledge_level
+    - agent_type
+    - publications
+    - concentration
+    - role
+    - strain
+    - growth_phase
+    - attribute_type
+    - relationship_type

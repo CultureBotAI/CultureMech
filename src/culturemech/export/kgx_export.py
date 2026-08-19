@@ -49,6 +49,7 @@ Legacy Edges (for backward compatibility):
 """
 
 import uuid
+from dataclasses import asdict, dataclass
 from typing import Any, Dict, Iterator, List, Optional
 
 try:
@@ -59,16 +60,12 @@ except ImportError:
     KOZA_AVAILABLE = False
     print("Warning: Koza not installed. Install with: pip install koza")
 
-try:
-    from biolink_model.datamodel.pydanticmodel_v2 import (
-        AgentTypeEnum,
-        Association,
-        KnowledgeLevelEnum,
-    )
-    BIOLINK_AVAILABLE = True
-except ImportError:
-    BIOLINK_AVAILABLE = False
-    print("Warning: biolink-model not installed. Install with: pip install biolink-model")
+# No biolink import. The export used to route every edge through
+# `biolink_model`'s `Association`, which is exactly what broke it: that class
+# declares `qualifiers: list[str] | None`, so each of our qualifier dicts raised
+# and the edge was dropped. Rows are plain dataclasses now (see `Node` and
+# `Edge`), the biolink vocabulary lives in the category and predicate strings,
+# and the module no longer needs the package at import time.
 
 KNOWLEDGE_SOURCE = "infores:culturemech"
 NAMESPACE_UUID = uuid.uuid5(uuid.NAMESPACE_URL, "https://w3id.org/culturemech")
@@ -99,7 +96,10 @@ def transform(record: Dict[str, Any]) -> Iterator[Dict[str, Any]]:
     9. Medium → has_database_reference → Database ID (legacy)
     10. Variant → variant_of → Base Medium (legacy)
     """
-    medium_id = f"culturemech:{record.get('name', '').replace(' ', '_')}"
+    # Sanitized, not just space-replaced: a name carrying a quote would
+    # otherwise be spelled differently in the nodes and edges files (see
+    # `_sanitize_id`).
+    medium_id = f"culturemech:{_sanitize_id(str(record.get('name') or ''))}"
 
     # NEW: Edge Type 1: Organism → Medium (grows_in_medium)
     for organism in record.get("target_organisms", []):
@@ -165,6 +165,195 @@ def transform(record: Dict[str, Any]) -> Iterator[Dict[str, Any]]:
         edge = variant_to_edge(medium_id, variant)
         if edge:
             yield edge
+
+
+# ================================================================
+# NODE EXTRACTION (#294)
+# ================================================================
+#
+# The transform used to yield edges only, so every id CultureMech mints itself
+# was a dangling reference in any nodes.tsv — four of the five distinct ids in a
+# single lb_broth record.
+#
+# We declare nodes for the six id shapes we mint and NOTHING else. CHEBI,
+# NCBITaxon, MICRO, FOODON and TOGO objects are supplied by KG-Microbe's ontology
+# ingests, which carry the authoritative labels; minting half-populated rows for
+# them here would put a competing, name-less node into the merge.
+#
+# Categories are taken from the consumer rather than invented. kg-microbe fixes
+# them in kg_microbe/transform_utils/constants.py, and a medium node that does
+# not match what the loader expects is worse than no node at all.
+
+GROWTH_MEDIUM = "biolink:GrowthMedium"
+CHEMICAL_MIXTURE = "biolink:ChemicalMixture"
+COMPLEX_MOLECULAR_MIXTURE = "biolink:ComplexMolecularMixture"
+ATTRIBUTE = "biolink:Attribute"
+
+# medium_type -> (medium node category, medium-type node category), mirroring
+# kg-microbe's MEDIUM_DEFINED_CATEGORY / MEDIUM_COMPLEX_CATEGORY pair. Values
+# outside this table (BUFFER, NEGATIVE_CONTROL, and the functional-role values
+# MediumTypeEnum still permits) fall back to the generic categories rather than
+# guessing at a composition they do not assert.
+_MEDIUM_TYPE_CATEGORIES = {
+    "DEFINED": ([GROWTH_MEDIUM, CHEMICAL_MIXTURE], [CHEMICAL_MIXTURE]),
+    "COMPLEX": ([GROWTH_MEDIUM, COMPLEX_MOLECULAR_MIXTURE], [COMPLEX_MOLECULAR_MIXTURE]),
+}
+_DEFAULT_MEDIUM_CATEGORY = [GROWTH_MEDIUM]
+_DEFAULT_MEDIUM_TYPE_CATEGORY = [CHEMICAL_MIXTURE]
+
+
+@dataclass
+class Node:
+    """A KGX node row.
+
+    Deliberately a plain dataclass rather than a biolink pydantic model. The
+    installed biolink_model has no ``GrowthMedium`` class, and its classes pin
+    ``category`` to a per-class literal, so ``NamedThing(category=[...])`` raises
+    for every value we need. Koza supports this: ``KGXConverter.convert_node``
+    falls back to ``asdict()`` for non-BaseModel entities, and ``split_entities``
+    classifies anything carrying ``id`` and ``name`` (and no
+    subject/predicate/object) as a node.
+    """
+
+    id: str
+    category: List[str]
+    name: str
+    provided_by: str = KNOWLEDGE_SOURCE
+
+
+# Qualifier CURIE -> KGX column. The transform models qualifiers as
+# `{"qualifier_type_id": ..., "qualifier_value": ...}` dicts, which is the
+# in-memory shape the unit tests assert on, but biolink's `Association.qualifiers`
+# is `list[str] | None` — so `Association(**edge_dict)` raised for every qualified
+# edge and the wrapper swallowed it with a print. The koza path had never run, so
+# nobody saw it: a 249-record canary produced 10 edges out of ~1,500.
+#
+# Flattening into named columns rather than stuffing `key=value` strings into
+# `qualifiers` keeps the values usable from a TSV, which is the point of the
+# export.
+_QUALIFIER_COLUMNS = {
+    "biolink:concentration": "concentration",
+    "biolink:role": "role",
+    "biolink:strain": "strain",
+    "biolink:growth_phase": "growth_phase",
+    "biolink:attribute_type": "attribute_type",
+    "biolink:relationship_type": "relationship_type",
+}
+
+
+@dataclass
+class Edge:
+    """A KGX edge row, with qualifiers flattened into columns.
+
+    A plain dataclass for the same reason as ``Node``: koza's
+    ``convert_association`` falls back to ``asdict()`` for non-BaseModel
+    entities, and ``split_entities`` classifies anything with
+    subject/object/predicate as an edge. Going through biolink's ``Association``
+    would drop every qualified edge.
+    """
+
+    id: str
+    subject: str
+    predicate: str
+    object: str
+    category: str = "biolink:Association"
+    primary_knowledge_source: str = KNOWLEDGE_SOURCE
+    knowledge_level: str = "knowledge_assertion"
+    agent_type: str = "manual_validation_of_automated_agent"
+    publications: Optional[List[str]] = None
+    concentration: Optional[str] = None
+    role: Optional[str] = None
+    strain: Optional[str] = None
+    growth_phase: Optional[str] = None
+    attribute_type: Optional[str] = None
+    relationship_type: Optional[str] = None
+
+
+def to_edge(edge_dict: Dict[str, Any]) -> Edge:
+    """Turn one ``transform`` dict into a writable KGX edge row.
+
+    Unknown qualifier types are dropped rather than silently mangled into an
+    existing column; ``_QUALIFIER_COLUMNS`` is the declared contract and
+    ``test_every_qualifier_type_has_a_column`` fails if the transform grows a
+    type this does not cover.
+    """
+    columns: Dict[str, Any] = {}
+    for qualifier in edge_dict.get("qualifiers") or []:
+        column = _QUALIFIER_COLUMNS.get(qualifier.get("qualifier_type_id", ""))
+        if column:
+            columns[column] = qualifier.get("qualifier_value")
+    return Edge(
+        id=edge_dict["id"],
+        subject=edge_dict["subject"],
+        predicate=edge_dict["predicate"],
+        object=edge_dict["object"],
+        publications=edge_dict.get("publications") or None,
+        **columns,
+    )
+
+
+def nodes(record: Dict[str, Any]) -> Iterator[Dict[str, Any]]:
+    """Every node this record mints, as dicts. Companion to ``transform``.
+
+    Yields duplicates across records by design — ``culturemech:medium_type_COMPLEX``
+    belongs to all 8,850 COMPLEX media. Deduplication is the writer's job (see
+    ``koza_transform``), because it is a property of the run, not of the record.
+    """
+    name = str(record.get("name") or "")
+    if not name:
+        return
+    medium_id = f"culturemech:{_sanitize_id(name)}"
+    medium_type = record.get("medium_type")
+
+    medium_category, type_category = _MEDIUM_TYPE_CATEGORIES.get(
+        str(medium_type or ""),
+        (_DEFAULT_MEDIUM_CATEGORY, _DEFAULT_MEDIUM_TYPE_CATEGORY),
+    )
+
+    yield asdict(Node(id=medium_id, category=medium_category, name=name))
+
+    if medium_type:
+        yield asdict(Node(
+            id=f"culturemech:medium_type_{medium_type}",
+            category=type_category,
+            name=str(medium_type),
+        ))
+
+    for solution in record.get("solutions", []) or []:
+        preferred_term = solution.get("preferred_term")
+        if preferred_term:
+            yield asdict(Node(
+                id=_create_solution_id(preferred_term),
+                category=[CHEMICAL_MIXTURE],
+                name=str(preferred_term),
+            ))
+
+    for application in record.get("applications", []) or []:
+        if application:
+            yield asdict(Node(
+                id=f"culturemech:application_{_sanitize_id(str(application))}",
+                category=[ATTRIBUTE],
+                name=str(application),
+            ))
+
+    physical_state = record.get("physical_state")
+    if physical_state:
+        yield asdict(Node(
+            id=f"culturemech:state_{str(physical_state).lower()}",
+            category=[ATTRIBUTE],
+            name=str(physical_state),
+        ))
+
+    # A variant is itself a medium, so it takes the generic medium category — the
+    # variant entry carries no medium_type of its own to refine it with.
+    for variant in record.get("variants", []) or []:
+        variant_name = variant.get("name")
+        if variant_name:
+            yield asdict(Node(
+                id=f"culturemech:{_sanitize_id(str(variant_name))}",
+                category=_DEFAULT_MEDIUM_CATEGORY,
+                name=str(variant_name),
+            ))
 
 
 # ================================================================
@@ -583,9 +772,36 @@ def _format_evidence(evidence_items: Optional[List[Dict]]) -> tuple:
     return pubs, []  # Supporting text deferred
 
 
+# Characters dropped outright rather than turned into separators. The backslash
+# and quote are load-bearing: koza's `trim()` strips the two-character sequence
+# `\"` from every edge column, but `TSVWriter.write_row` restores a node's `id`
+# from the raw record and so bypasses that. An id containing `\"` therefore came
+# out spelled one way in the nodes file and another in the edges file, which is
+# how the full-corpus run produced 2 dangling references and 2 orphan nodes:
+#
+#   node: culturemech:solution_Mineral_salt_solution*_\"Hutner_Cohen-Bazire\"
+#   edge: culturemech:solution_Mineral_salt_solution*_Hutner_Cohen-Bazire
+#
+# Stripping them here makes both sides agree regardless of koza's asymmetry, and
+# a CURIE has no business carrying a quote or an asterisk in the first place.
+_ID_DROP_CHARS = '()\\"*'
+_ID_SEPARATOR_CHARS = " /"
+
+
 def _sanitize_id(text: str) -> str:
-    """Convert text to valid ID component."""
-    return text.replace(" ", "_").replace("/", "_").replace("(", "").replace(")", "")
+    """Convert text to a valid ID component.
+
+    Separators (space, slash) become underscores; quotes, backslashes, asterisks
+    and parentheses are dropped. Runs of underscores collapse so that dropping a
+    character does not leave `__` behind.
+    """
+    for char in _ID_SEPARATOR_CHARS:
+        text = text.replace(char, "_")
+    for char in _ID_DROP_CHARS:
+        text = text.replace(char, "")
+    while "__" in text:
+        text = text.replace("__", "_")
+    return text.strip("_")
 
 
 def _create_solution_id(solution_name: str) -> str:
@@ -619,18 +835,39 @@ def _make_association(
 # KOZA WRAPPER (handles I/O)
 # ================================================================
 
-if KOZA_AVAILABLE and BIOLINK_AVAILABLE:
+# Node ids already written in this run. A medium-type or solution node is shared
+# by thousands of records, so without this the nodes file would carry ~8,850 rows
+# for `culturemech:medium_type_COMPLEX` alone. Run-scoped rather than per-record,
+# which is why it cannot live in `nodes()`.
+_EMITTED_NODE_IDS: set = set()
+
+
+def reset_node_dedup() -> None:
+    """Clear the run-scoped node-id set.
+
+    Koza builds one runner per invocation but the module is imported once, so a
+    second run in the same process would silently emit no nodes at all. Call this
+    at the start of a run; ``scripts/export_kgx.py`` and the tests both do.
+    """
+    _EMITTED_NODE_IDS.clear()
+
+
+if KOZA_AVAILABLE:
     @koza.transform_record()
     def koza_transform(koza_ctx: KozaTransform, record: Dict[str, Any]) -> None:
         """Koza wrapper - handles I/O."""
+        for node_dict in nodes(record):
+            node_id = node_dict["id"]
+            if node_id in _EMITTED_NODE_IDS:
+                continue
+            _EMITTED_NODE_IDS.add(node_id)
+            koza_ctx.write(Node(**node_dict))
+
         for edge_dict in transform(record):
-            # Convert dict to Biolink Association
-            try:
-                edge = Association(**edge_dict)
-                koza_ctx.write(edge)
-            except Exception as e:
-                print(f"Error creating association: {e}")
-                print(f"Edge data: {edge_dict}")
+            # Deliberately NOT wrapped in biolink's Association: its `qualifiers`
+            # slot is `list[str]`, so every qualified edge raised here and was
+            # swallowed by the old except-and-print. Failures now stop the run.
+            koza_ctx.write(to_edge(edge_dict))
 
 
 # ================================================================
