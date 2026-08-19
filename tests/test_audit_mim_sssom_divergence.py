@@ -185,6 +185,25 @@ def test_a_name_mim_grounds_and_we_do_not_is_reported(aud, tmp_path):
     assert finding["our_ids"] == ""
 
 
+def test_a_partly_grounded_name_still_reports_its_bare_rows(aud, tmp_path):
+    """The gap: requiring the name to be WHOLLY ungrounded hid 96 rows.
+
+    184 names carry some grounded rows and some bare ones; MIM has an opinion on
+    48 of them. `Pyrrole-2-carboxylic acid` is grounded on 1 row and bare on 18 —
+    the cheapest possible fix, since MIM has decided and most rows already agree.
+    """
+    sssom = _sssom(tmp_path, [("Biotin", "skos:exactMatch", "CHEBI:15956", "biotin")])
+    corpus = _corpus(tmp_path, [
+        {"ingredients": [{"preferred_term": "Biotin",
+                          "chebi_term": {"id": "CHEBI:15956", "label": "biotin"}}]},
+        {"ingredients": [{"preferred_term": "biotin"}]},
+        {"ingredients": [{"preferred_term": "Biotin"}]},
+    ])
+    finding = _by_finding(aud.audit(corpus, sssom)[0])["MISSING_GROUNDING"]
+    assert finding["rows"] == "2"
+    assert "1 are grounded" in finding["detail"]
+
+
 def test_hydrates_are_not_folded_into_their_anhydrous_form(aud, tmp_path):
     """Normalization folds whitespace and hyphens only.
 

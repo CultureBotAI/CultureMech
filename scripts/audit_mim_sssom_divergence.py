@@ -241,11 +241,19 @@ def audit(normalized_dir: Path, sssom_path: Path
                     "detail": "we and MIM both ground this name, to different ids",
                 })
 
-        if mim_id and ungrounded and not grounded:
+        if mim_id and ungrounded:
+            # Deliberately NOT `and not grounded`. 184 names carry some grounded
+            # rows and some bare ones, and for 48 of them MIM has an opinion —
+            # `Pyrrole-2-carboxylic acid` is grounded on 1 row and bare on 18.
+            # Requiring the name to be wholly ungrounded hid 96 rows that are the
+            # cheapest possible fix: MIM has already decided, and most rows of the
+            # name already agree.
             rows.append({
                 **base, "finding": "MISSING_GROUNDING", "our_ids": "",
                 "rows": str(ungrounded),
-                "detail": "MIM grounds this name and we do not",
+                "detail": ("MIM grounds this name and we do not" if not grounded
+                           else f"MIM grounds this name; {ungrounded} row(s) of it "
+                                f"are bare while {sum(grounded.values())} are grounded"),
             })
     return rows, version, coverage
 
