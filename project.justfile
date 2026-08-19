@@ -358,6 +358,20 @@ audit-concentration-plausibility *args="":
     uv run --extra dev python scripts/audit_concentration_plausibility.py \
         --max-allowed 9757 --max-cocktails 186 {{args}}
 
+# Composition tables that were never parsed, plus prose sitting in name slots
+# (#299, #273). Baselines are today's counts: 169 findings, of which 31 are
+# unparsed solution tables. Lower them as the backlog is repaired; never raise
+# one to make a run pass.
+#
+# `--max-exported` is the sharper of the two. Only UNPARSED_SOLUTION_TABLE
+# reaches the KGX export -- solution ids are minted from `preferred_term` and
+# need no grounding, whereas the ingredient findings are ungrounded and emit no
+# edge -- so a rise there means new garbage nodes in the graph.
+[group('QC')]
+audit-unparsed-composition *args="":
+    uv run --extra dev python scripts/audit_unparsed_composition.py \
+        --max-allowed 169 --max-exported 31 {{args}}
+
 # Merge locally-completed Edison runs (research/media/*-meta.yaml, gitignored)
 # into the tracked researched-media manifest. This is the only step that reads
 # untracked research state; review and commit the resulting diff. Entries are
