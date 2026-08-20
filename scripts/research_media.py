@@ -532,8 +532,34 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
         action="store_true",
         help="Print the deep-research-client command without running it.",
     )
-    parser.add_argument("passthrough_args", nargs=argparse.REMAINDER)
-    return parser.parse_args(argv)
+    parser.add_argument(
+        "passthrough_args",
+        nargs=argparse.REMAINDER,
+        help="Arguments for deep-research-client, after a `--` separator: "
+             "`... --target ko2_no3 -- --max-cost 1`",
+    )
+    args = parser.parse_args(argv)
+    args.passthrough_args = strip_separator(args.passthrough_args)
+    return args
+
+
+def strip_separator(passthrough: list[str]) -> list[str]:
+    """Drop the `--` that hands the rest of the line to deep-research-client.
+
+    `argparse.REMAINDER` on a positional does not capture a leading-`--` token
+    that appears before any positional — argparse claims it as an unknown option
+    first — so the documented `--max-cost 1` was simply rejected (#297):
+
+        research_media.py: error: unrecognized arguments: --max-cost
+
+    A `--` separator fixes that, but REMAINDER then captures the separator TOO,
+    and forwarding a bare `--` to the client makes it an argument of the child.
+    Stripping it here is what makes the conventional shape actually work.
+
+    Only a LEADING separator is removed. A later `--` belongs to the child (some
+    CLIs use it to mark their own positionals) and passing it on is correct.
+    """
+    return passthrough[1:] if passthrough and passthrough[0] == "--" else passthrough
 
 
 def main(argv: list[str] | None = None) -> int:

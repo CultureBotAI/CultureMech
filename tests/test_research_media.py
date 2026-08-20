@@ -188,6 +188,45 @@ def test_the_research_media_alias_takes_no_positional_focus():
     assert 'research-entity provider target focus="growth_evidence" *args=""' in recipes
 
 
+def test_client_flags_reach_the_client_after_a_separator():
+    """#297: every deep-research-client flag was unreachable through the runner.
+
+    `argparse.REMAINDER` on a positional does not capture a leading-`--` token
+    appearing before any positional — argparse claims it as an unknown option
+    first — so the documented form was simply rejected:
+
+        research_media.py: error: unrecognized arguments: --max-cost
+
+    The unit tests missed it because they call `build_command` directly, where
+    passthrough always worked. The break was purely in CLI argument routing.
+    """
+    args = parse_args(["--provider", "claude_code", "--target", "ko2_no3",
+                       "--dry-run", "--", "--max-cost", "1"])
+    assert args.passthrough_args == ["--max-cost", "1"]
+    assert args.dry_run is True
+
+    command = build_command(
+        provider="claude_code",
+        template=Path("templates/media_growth_research.md"),
+        output_file=Path("out.md"),
+        variables={},
+        passthrough_args=args.passthrough_args,
+    )
+    assert command[-2:] == ["--max-cost", "1"]
+    assert "--" not in command, "the separator must not be forwarded to the client"
+
+
+def test_only_the_leading_separator_is_stripped():
+    """A later `--` belongs to the child — some CLIs use it to mark their own
+    positionals — so passing it on is correct."""
+    from research_media import strip_separator
+
+    assert strip_separator(["--", "--max-cost", "1"]) == ["--max-cost", "1"]
+    assert strip_separator(["--", "-a", "--", "-b"]) == ["-a", "--", "-b"]
+    assert strip_separator(["--max-cost", "1"]) == ["--max-cost", "1"]
+    assert strip_separator([]) == []
+
+
 def test_the_recipes_quote_the_values_that_can_contain_spaces():
     """Record `name:` values contain spaces, and a target may be one.
 
