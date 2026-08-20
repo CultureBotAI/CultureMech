@@ -7,14 +7,37 @@ medium_type: DEFINED
 composition_type: DEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Bacto-Yeast Nitrogen Base w/o Amino acids (Difco)6.7gGlucose20gL-Leucine60mgL-Histidine20mgL-Tryptophan20mgL-Methionine20mgDistilled
-    water1LAgar15g
+- preferred_term: Bacto-Yeast Nitrogen Base w/o Amino acids (Difco)
   concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: ''
+    value: '6.7'
+    unit: G_PER_L
+- preferred_term: Glucose
   concentration:
-    value: Bacto-Yeast Nitrogen Base w/o Amino acids (Difco)
+    value: '20'
+    unit: G_PER_L
+- preferred_term: L-Leucine
+  concentration:
+    value: '60'
+    unit: MG_PER_L
+- preferred_term: L-Histidine
+  concentration:
+    value: '20'
+    unit: MG_PER_L
+- preferred_term: L-Tryptophan
+  concentration:
+    value: '20'
+    unit: MG_PER_L
+- preferred_term: L-Methionine
+  concentration:
+    value: '20'
+    unit: MG_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: L
+- preferred_term: Agar
+  concentration:
+    value: '15'
     unit: G_PER_L
 preparation_steps:
 - step_number: 1
@@ -50,3 +73,9 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-19T21:54:22.624405+00:00'
+  curator: recover_nbrc_composition.py
+  action: Recovered composition from source HTML
+  notes: Re-parsed the NBRC medium 114 composition table from the preserved scrape;
+    8 ingredient(s) restored, 0 stock solution(s) nested rather than flattened, 0
+    unparsed solution blob(s) removed (#299).

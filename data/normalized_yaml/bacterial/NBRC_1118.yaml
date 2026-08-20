@@ -7,10 +7,70 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: ''
+- preferred_term: KH2PO4
   concentration:
-    value: KH2PO4
+    value: '0.5'
     unit: G_PER_L
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.68'
+    unit: G_PER_L
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Sodium succinate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Sodium acetate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Ferric citrate solution* (0.1%)
+  concentration:
+    value: '5'
+    unit: ML_PER_L
+- preferred_term: Trace element solution SL7**
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+- preferred_term: NaHCO3 (10% (w/v))
+  concentration:
+    value: '15'
+    unit: ML_PER_L
+- preferred_term: Vitamin B12 (0.002% (w/v))
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+- preferred_term: Na2S·9H2O
+  concentration:
+    value: '0.24'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: MG_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: L
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -47,17 +107,58 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-19T21:54:22.601758+00:00'
+  curator: recover_nbrc_composition.py
+  action: Recovered composition from source HTML
+  notes: Re-parsed the NBRC medium 1117 composition table from the preserved scrape;
+    16 ingredient(s) restored, 1 stock solution(s) nested rather than flattened, 1
+    unparsed solution blob(s) removed (#299).
 solutions:
-- preferred_term: KH2PO40.5gMgSO4·7H2O0.5gNaCl0.4gNH4Cl0.68gCaCl2·2H2O0.25gSodium
-    pyruvate0.5gSodium succinate0.5gSodium acetate0.5gYeast extract0.5gFerric citrate
-    solution* (0.1%)5mlTrace element solution SL7**1mlNaHCO3(10% (w/v))15mlVitamin
-    B12(0.002% (w/v))1mlNa2S·9H2O0.24gResazurin1mgDistilled water1LpH 6.6 - 7.4Mix
-    ingredients except for vitamin B12, NaHCO3and Na2S·9H2O, and autoclave under a
-    N2atmosphere. Separately autoclave Na2S·9H2O solution under a N2atmosphere. Sterilize
-    vitamin B12and NaHCO3solutions by filtration. Prior to inoculation, aseptically
-    and anaerobically add them.*Soluble in hot water.**Trace element solution SL7HCl
-    (25%; 7.7 M)10mlFeCl2·4H2O1.5gZnCl270mgMnCl2·4H2O100mgH3BO360mgCoCl2·6H2O200mgCuCl2·2H2O20mgNiCl2·6H2O20mgNa2MoO4·2H2O40mgDistilled
-    water990mlInitially, dissolve FeCl2·4H2O in 25% HCl, then add distilled water
-    followed by the other components.
-  composition: []
-  name: Unknown solution
+- preferred_term: Trace element solution SL7
+  composition:
+  - preferred_term: HCl (25%; 7.7 M)
+    concentration:
+      value: '10'
+      unit: ML_PER_L
+  - preferred_term: FeCl2·4H2O
+    concentration:
+      value: '1.5'
+      unit: G_PER_L
+  - preferred_term: ZnCl2
+    concentration:
+      value: '70'
+      unit: MG_PER_L
+  - preferred_term: MnCl2·4H2O
+    concentration:
+      value: '100'
+      unit: MG_PER_L
+  - preferred_term: H3BO3
+    concentration:
+      value: '60'
+      unit: MG_PER_L
+  - preferred_term: CoCl2·6H2O
+    concentration:
+      value: '200'
+      unit: MG_PER_L
+  - preferred_term: CuCl2·2H2O
+    concentration:
+      value: '20'
+      unit: MG_PER_L
+  - preferred_term: NiCl2·6H2O
+    concentration:
+      value: '20'
+      unit: MG_PER_L
+  - preferred_term: Na2MoO4·2H2O
+    concentration:
+      value: '40'
+      unit: MG_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '990'
+      unit: ML_PER_L
+  name: Trace element solution SL7
+notes: pH 6.6 - 7.4 Mix ingredients except for vitamin B12, NaHCO3 and Na2S·9H2O,
+  and autoclave under a N2 atmosphere. Separately autoclave Na2S·9H2O solution under
+  a N2 atmosphere. Sterilize vitamin B12 and NaHCO3 solutions by filtration. Prior
+  to inoculation, aseptically and anaerobically add them. Soluble in hot water. Initially,
+  dissolve FeCl2·4H2O in 25% HCl, then add distilled water followed by the other components.

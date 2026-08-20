@@ -7,10 +7,78 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: ''
+- preferred_term: NaCl
   concentration:
-    value: NaCl
+    value: '20'
     unit: G_PER_L
+- preferred_term: MgCl2·6H2O
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+- preferred_term: Na2SO4
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: KCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Sodium formate
+  concentration:
+    value: '0.68'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: MG_PER_L
+- preferred_term: Trace element mixture*
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+- preferred_term: Selenite-tungstate solution**
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+- preferred_term: Bicarbonate solution (1.0 M)***
+  concentration:
+    value: '30'
+    unit: ML_PER_L
+- preferred_term: Vitamin solution****
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+- preferred_term: Thiamine solution*****
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+- preferred_term: Vitamin B12 solution******
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+- preferred_term: Sulfide solution (1.0 M)*******
+  concentration:
+    value: '1.5'
+    unit: ML_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '963.5'
+    unit: ML_PER_L
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -47,25 +115,152 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-19T21:54:22.760044+00:00'
+  curator: recover_nbrc_composition.py
+  action: Recovered composition from source HTML
+  notes: Re-parsed the NBRC medium 1321 composition table from the preserved scrape;
+    18 ingredient(s) restored, 7 stock solution(s) nested rather than flattened, 1
+    unparsed solution blob(s) removed (#299).
 solutions:
-- preferred_term: NaCl20gMgCl2·6H2O3gCaCl2·2H2O0.15gNa2SO44gNH4Cl0.25gKH2PO40.2gKCl0.5gSodium
-    formate0.68gYeast extract0.5gResazurin1mgTrace element mixture*1mlSelenite-tungstate
-    solution**1mlBicarbonate solution (1.0 M)***30mlVitamin solution****1mlThiamine
-    solution*****1mlVitamin B12solution******1mlSulfide solution (1.0 M)*******1.5mlDistilled
-    water963.5mlpH 7.0-7.3Mix ingredients except for yeast extract, bicarbonate, vitamin,
-    thiamine, cyanocobalamin and sulfide solutions. Dispense the medium into suitable
-    culture vessels under a stream of the N2/CO2(80/20) mixed gas, seal with butyl
-    rubber stoppers, and autoclave at 121°C for 15 min. Aseptically and anaerobically
-    add other ingredients using sterile syringes. Adjust pH to 7.0-7.3 using compact
-    pH meter.*Trace element mixtureHCl (25%; 7.7 M)12.5mlFeSO4·7H2O2100mgH3BO330mgMnCl2·4H2O100mgCoCl2·6H2O190mgNiCl2·6H2O24mgCuCl2·2H2O2mgZnSO4·7H2O144mgNa2MoO4·2H2O36mgDistilled
-    water987mlSterilized by autoclaving.**Selenite-tungstate solutionNaOH0.4gNa2SeO3·5H2O6mgNa2WO4·2H2O8mgDistilled
-    water1LSterilized by autoclaving.***Bicarbonate solution (1.0 M)NaHCO38.4gDistilled
-    water100mlSaturated with CO2gas. Tightly sealed in bottles filled with CO2gas
-    and then sterilized by autoclaving.****Vitamine solutionp-Aminobenzoic acid4mgBiotin1mgNicotinic
-    acid10mgCa-pantothenate5mgPyridoxine-HCl15mgSodium phosphate buffer (10 mM; pH7.1)100mlSterilized
-    by filtration.*****Thiamine solutionThiamine-HCl10mgSodium phosphate buffer (25
-    mM; pH 3.4)100mlSterilized by filtration.******Vitamin B12solutionCyanocobalamin5mgDistilled
-    water100mlSterilized by filtration.*******Sulfide solution (1.0 M)Na2S·9H2O24gDistilled
-    water100mlSterilized by filtration and stored under N2gas.
-  composition: []
-  name: Unknown solution
+- preferred_term: Trace element mixture
+  composition:
+  - preferred_term: HCl (25%; 7.7 M)
+    concentration:
+      value: '12.5'
+      unit: ML_PER_L
+  - preferred_term: FeSO4·7H2O
+    concentration:
+      value: '2100'
+      unit: MG_PER_L
+  - preferred_term: H3BO3
+    concentration:
+      value: '30'
+      unit: MG_PER_L
+  - preferred_term: MnCl2·4H2O
+    concentration:
+      value: '100'
+      unit: MG_PER_L
+  - preferred_term: CoCl2·6H2O
+    concentration:
+      value: '190'
+      unit: MG_PER_L
+  - preferred_term: NiCl2·6H2O
+    concentration:
+      value: '24'
+      unit: MG_PER_L
+  - preferred_term: CuCl2·2H2O
+    concentration:
+      value: '2'
+      unit: MG_PER_L
+  - preferred_term: ZnSO4·7H2O
+    concentration:
+      value: '144'
+      unit: MG_PER_L
+  - preferred_term: Na2MoO4·2H2O
+    concentration:
+      value: '36'
+      unit: MG_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '987'
+      unit: ML_PER_L
+  name: Trace element mixture
+- preferred_term: Selenite-tungstate solution
+  composition:
+  - preferred_term: NaOH
+    concentration:
+      value: '0.4'
+      unit: G_PER_L
+  - preferred_term: Na2SeO3·5H2O
+    concentration:
+      value: '6'
+      unit: MG_PER_L
+  - preferred_term: Na2WO4·2H2O
+    concentration:
+      value: '8'
+      unit: MG_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+  name: Selenite-tungstate solution
+- preferred_term: Bicarbonate solution (1.0 M)
+  composition:
+  - preferred_term: NaHCO3
+    concentration:
+      value: '8.4'
+      unit: G_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '100'
+      unit: ML_PER_L
+  name: Bicarbonate solution (1.0 M)
+- preferred_term: Vitamine solution
+  composition:
+  - preferred_term: p-Aminobenzoic acid
+    concentration:
+      value: '4'
+      unit: MG_PER_L
+  - preferred_term: Biotin
+    concentration:
+      value: '1'
+      unit: MG_PER_L
+  - preferred_term: Nicotinic acid
+    concentration:
+      value: '10'
+      unit: MG_PER_L
+  - preferred_term: Ca-pantothenate
+    concentration:
+      value: '5'
+      unit: MG_PER_L
+  - preferred_term: Pyridoxine-HCl
+    concentration:
+      value: '15'
+      unit: MG_PER_L
+  - preferred_term: Sodium phosphate buffer (10 mM; pH7.1)
+    concentration:
+      value: '100'
+      unit: ML_PER_L
+  name: Vitamine solution
+- preferred_term: Thiamine solution
+  composition:
+  - preferred_term: Thiamine-HCl
+    concentration:
+      value: '10'
+      unit: MG_PER_L
+  - preferred_term: Sodium phosphate buffer (25 mM; pH 3.4)
+    concentration:
+      value: '100'
+      unit: ML_PER_L
+  name: Thiamine solution
+- preferred_term: Vitamin B12 solution
+  composition:
+  - preferred_term: Cyanocobalamin
+    concentration:
+      value: '5'
+      unit: MG_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '100'
+      unit: ML_PER_L
+  name: Vitamin B12 solution
+- preferred_term: Sulfide solution (1.0 M)
+  composition:
+  - preferred_term: Na2S·9H2O
+    concentration:
+      value: '24'
+      unit: G_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '100'
+      unit: ML_PER_L
+  name: Sulfide solution (1.0 M)
+notes: pH 7.0-7.3 Mix ingredients except for yeast extract, bicarbonate, vitamin,
+  thiamine, cyanocobalamin and sulfide solutions. Dispense the medium into suitable
+  culture vessels under a stream of the N2/CO2 (80/20) mixed gas, seal with butyl
+  rubber stoppers, and autoclave at 121°C for 15 min. Aseptically and anaerobically
+  add other ingredients using sterile syringes. Adjust pH to 7.0-7.3 using compact
+  pH meter. Sterilized by autoclaving. Sterilized by autoclaving. Saturated with CO2
+  gas. Tightly sealed in bottles filled with CO2 gas and then sterilized by autoclaving.
+  Sterilized by filtration. Sterilized by filtration. Sterilized by filtration. Sterilized
+  by filtration and stored under N2 gas.

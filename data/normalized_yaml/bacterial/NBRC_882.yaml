@@ -7,10 +7,34 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: ''
+- preferred_term: Glucose
   concentration:
-    value: Glucose
+    value: '10'
     unit: G_PER_L
+- preferred_term: Bacto Yeast Extract (Difco)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Hipolypepton*
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Sodium acetate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Tween 80 solution**
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+- preferred_term: Salts solution***
+  concentration:
+    value: '5'
+    unit: ML_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: L
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -47,12 +71,47 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-19T21:54:23.029047+00:00'
+  curator: recover_nbrc_composition.py
+  action: Recovered composition from source HTML
+  notes: Re-parsed the NBRC medium 881 composition table from the preserved scrape;
+    7 ingredient(s) restored, 2 stock solution(s) nested rather than flattened, 1
+    unparsed solution blob(s) removed (#299).
 solutions:
-- preferred_term: Glucose10gBacto Yeast Extract (Difco)10gHipolypepton*5gSodium acetate2gTween
-    80 solution**10mlSalts solution***5mlDistilled water1LpH 6.0Add 5 g/L CaCO3and
-    15 g/L agar after the pH is adjusted for the solid medium.*Wako Pure Chemical
-    Ind., Ltd., Osaka, Japan.**Tween 80 solutionTween 8050gDistilled water1L***Salts
-    solutionMgSO4·7H2O40gMnSO4·4H2O2gFeSO4·7H2O2gNaCl2gDistilled water1LAdd a drop
-    of 12 N HCl to 500 ml of the salts solution.
-  composition: []
-  name: Unknown solution
+- preferred_term: Tween 80 solution
+  composition:
+  - preferred_term: Tween 80
+    concentration:
+      value: '50'
+      unit: G_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+  name: Tween 80 solution
+- preferred_term: Salts solution
+  composition:
+  - preferred_term: MgSO4·7H2O
+    concentration:
+      value: '40'
+      unit: G_PER_L
+  - preferred_term: MnSO4·4H2O
+    concentration:
+      value: '2'
+      unit: G_PER_L
+  - preferred_term: FeSO4·7H2O
+    concentration:
+      value: '2'
+      unit: G_PER_L
+  - preferred_term: NaCl
+    concentration:
+      value: '2'
+      unit: G_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+  name: Salts solution
+notes: pH 6.0 Add 5 g/L CaCO3 and 15 g/L agar after the pH is adjusted for the solid
+  medium. Wako Pure Chemical Ind., Ltd., Osaka, Japan. Add a drop of 12 N HCl to 500
+  ml of the salts solution.

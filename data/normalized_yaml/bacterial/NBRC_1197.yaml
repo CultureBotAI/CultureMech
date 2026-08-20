@@ -7,15 +7,69 @@ medium_type: DEFINED
 composition_type: DEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Substrates*10mMKH2PO40.85gNa2HPO4·7H2O4.9g(NH4)2SO40.5gMgSO4·7H2O0.1gFeSO4·7H2O9.5mgMgO10.75mgCaCO32mgZnSO4·7H2O1.44mgMnSO4·4H2O1.12mgCuSO4·5H2O0.25mgCoSO4·7H2O0.28mgH3BO40.06mgConcentrated
-    HCl51.3μlDistilled water1LAgar (if needed)15g*Vanillic acid and syringic acid
-    etc.
+- preferred_term: Substrates*
   concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: ''
+    value: '10'
+    unit: MILLIMOLAR
+- preferred_term: KH2PO4
   concentration:
-    value: Substrates*
+    value: '0.85'
+    unit: G_PER_L
+- preferred_term: Na2HPO4·7H2O
+  concentration:
+    value: '4.9'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: FeSO4·7H2O
+  concentration:
+    value: '9.5'
+    unit: MG_PER_L
+- preferred_term: MgO
+  concentration:
+    value: '10.75'
+    unit: MG_PER_L
+- preferred_term: CaCO3
+  concentration:
+    value: '2'
+    unit: MG_PER_L
+- preferred_term: ZnSO4·7H2O
+  concentration:
+    value: '1.44'
+    unit: MG_PER_L
+- preferred_term: MnSO4·4H2O
+  concentration:
+    value: '1.12'
+    unit: MG_PER_L
+- preferred_term: CuSO4·5H2O
+  concentration:
+    value: '0.25'
+    unit: MG_PER_L
+- preferred_term: CoSO4·7H2O
+  concentration:
+    value: '0.28'
+    unit: MG_PER_L
+- preferred_term: H3BO4
+  concentration:
+    value: '0.06'
+    unit: MG_PER_L
+- preferred_term: Concentrated HCl
+  concentration:
+    value: '0.0513'
+    unit: ML_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: L
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
     unit: G_PER_L
 preparation_steps:
 - step_number: 1
@@ -51,3 +105,10 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-19T21:54:22.656698+00:00'
+  curator: recover_nbrc_composition.py
+  action: Recovered composition from source HTML
+  notes: Re-parsed the NBRC medium 1196 composition table from the preserved scrape;
+    16 ingredient(s) restored, 0 stock solution(s) nested rather than flattened, 0
+    unparsed solution blob(s) removed (#299).
+notes: Vanillic acid and syringic acid etc.

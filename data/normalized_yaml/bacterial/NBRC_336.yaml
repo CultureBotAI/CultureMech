@@ -7,10 +7,38 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: ''
+- preferred_term: KNO3
   concentration:
-    value: KNO3
+    value: '0.5'
     unit: G_PER_L
+- preferred_term: Sodium glycerophosphate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Trace element solution*
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+- preferred_term: Tris (hydroxymethyl) aminomethane
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Bacto Tryptone (Difco)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Seawater**
+  concentration:
+    value: '1'
+    unit: L
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -47,11 +75,51 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-19T21:54:22.895233+00:00'
+  curator: recover_nbrc_composition.py
+  action: Recovered composition from source HTML
+  notes: Re-parsed the NBRC medium 335 composition table from the preserved scrape;
+    8 ingredient(s) restored, 1 stock solution(s) nested rather than flattened, 1
+    unparsed solution blob(s) removed (#299).
 solutions:
-- preferred_term: KNO30.5gSodium glycerophosphate0.1gTrace element solution*1mlTris
-    (hydroxymethyl) aminomethane1gBacto Tryptone (Difco)5gYeast extract5gAgar (if
-    needed)15gSeawater**1LpH 7.0*Trace element solutionH3BO42.85gMnCl2·4H2O1.8gFeSO4·7H2O1.36gCuCl2·2H2O26.9mgZnCl220.8mgCoCl2·6H2O40.4mgNa2MoO4·2H2O25.2mgSodium
-    tartrate1.77gDistilled water1L**Filtered, aged seawater or artificial seawater
-    (Daigo's Artificial Seawater SP***).***Wako Pure Chemical Ind., Ltd., Osaka, Japan.
-  composition: []
-  name: Unknown solution
+- preferred_term: Trace element solution
+  composition:
+  - preferred_term: H3BO4
+    concentration:
+      value: '2.85'
+      unit: G_PER_L
+  - preferred_term: MnCl2·4H2O
+    concentration:
+      value: '1.8'
+      unit: G_PER_L
+  - preferred_term: FeSO4·7H2O
+    concentration:
+      value: '1.36'
+      unit: G_PER_L
+  - preferred_term: CuCl2·2H2O
+    concentration:
+      value: '26.9'
+      unit: MG_PER_L
+  - preferred_term: ZnCl2
+    concentration:
+      value: '20.8'
+      unit: MG_PER_L
+  - preferred_term: CoCl2·6H2O
+    concentration:
+      value: '40.4'
+      unit: MG_PER_L
+  - preferred_term: Na2MoO4·2H2O
+    concentration:
+      value: '25.2'
+      unit: MG_PER_L
+  - preferred_term: Sodium tartrate
+    concentration:
+      value: '1.77'
+      unit: G_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+  name: Trace element solution
+notes: pH 7.0 Filtered, aged seawater or artificial seawater (Daigo's Artificial Seawater
+  SP***). Wako Pure Chemical Ind., Ltd., Osaka, Japan.

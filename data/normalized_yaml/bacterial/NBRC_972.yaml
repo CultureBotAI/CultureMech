@@ -7,9 +7,37 @@ medium_type: DEFINED
 composition_type: DEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: ''
+- preferred_term: KH2PO4
   concentration:
-    value: KH2PO4
+    value: '4.4'
+    unit: G_PER_L
+- preferred_term: Na2HPO4
+  concentration:
+    value: '4.8'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Solution A*
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+- preferred_term: Solution B**
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '980'
+    unit: ML_PER_L
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '20'
     unit: G_PER_L
 preparation_steps:
 - step_number: 1
@@ -47,11 +75,38 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-19T21:54:23.105580+00:00'
+  curator: recover_nbrc_composition.py
+  action: Recovered composition from source HTML
+  notes: Re-parsed the NBRC medium 971 composition table from the preserved scrape;
+    8 ingredient(s) restored, 2 stock solution(s) nested rather than flattened, 1
+    unparsed solution blob(s) removed (#299).
 solutions:
-- preferred_term: KH2PO44.4gNa2HPO44.8gNH4Cl1gMgSO4·7H2O0.5gSolution A*10mlSolution
-    B**10mlDistilled water980mlAgar (if needed)20gpH unadjustedSolution A and B are
-    autoclaved separately and add to other autoclaved ingredients after cooling.*Solution
-    A.Ferric ammonium citrate5gCaCl20.5gDistilled water1L**Solution B.Sucrose100gDistilled
-    water1L
-  composition: []
-  name: Unknown solution
+- preferred_term: Solution A.
+  composition:
+  - preferred_term: Ferric ammonium citrate
+    concentration:
+      value: '5'
+      unit: G_PER_L
+  - preferred_term: CaCl2
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+  name: Solution A.
+- preferred_term: Solution B.
+  composition:
+  - preferred_term: Sucrose
+    concentration:
+      value: '100'
+      unit: G_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+  name: Solution B.
+notes: pH unadjusted Solution A and B are autoclaved separately and add to other autoclaved
+  ingredients after cooling.

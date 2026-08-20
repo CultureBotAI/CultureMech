@@ -7,10 +7,14 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: ''
+- preferred_term: Solution A*
   concentration:
-    value: Solution A*
-    unit: G_PER_L
+    value: '500'
+    unit: ML_PER_L
+- preferred_term: Solution B**
+  concentration:
+    value: '500'
+    unit: ML_PER_L
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -47,9 +51,54 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-19T21:54:22.886040+00:00'
+  curator: recover_nbrc_composition.py
+  action: Recovered composition from source HTML
+  notes: Re-parsed the NBRC medium 323 composition table from the preserved scrape;
+    2 ingredient(s) restored, 2 stock solution(s) nested rather than flattened, 1
+    unparsed solution blob(s) removed (#299).
 solutions:
-- preferred_term: Solution A*500mlSolution B**500ml*Solution AYeast extract1g(NH4)2SO40.2gMgSO4·7H2O0.5gCaCl2·2H2O0.25gKH2PO40.6gDistilled
-    water500mlpH 3.0 - 4.0**Solution BGlucose1gAgar (if needed)20gDistilled water500mlSolutions
-    A and B are separately sterilized by autoclaving and mixed.
-  composition: []
-  name: Unknown solution
+- preferred_term: Solution A
+  composition:
+  - preferred_term: Yeast extract
+    concentration:
+      value: '1'
+      unit: G_PER_L
+  - preferred_term: (NH4)2SO4
+    concentration:
+      value: '0.2'
+      unit: G_PER_L
+  - preferred_term: MgSO4·7H2O
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+  - preferred_term: CaCl2·2H2O
+    concentration:
+      value: '0.25'
+      unit: G_PER_L
+  - preferred_term: KH2PO4
+    concentration:
+      value: '0.6'
+      unit: G_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '500'
+      unit: ML_PER_L
+  name: Solution A
+- preferred_term: Solution B
+  composition:
+  - preferred_term: Glucose
+    concentration:
+      value: '1'
+      unit: G_PER_L
+  - preferred_term: Agar (if needed)
+    concentration:
+      value: '20'
+      unit: G_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '500'
+      unit: ML_PER_L
+  name: Solution B
+notes: pH 3.0 - 4.0 Solutions A and B are separately sterilized by autoclaving and
+  mixed.

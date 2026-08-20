@@ -7,10 +7,66 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: ''
+- preferred_term: Sodium acetate
   concentration:
-    value: Sodium acetate
+    value: '1.7'
     unit: G_PER_L
+- preferred_term: NH4Cl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: NaCl
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+- preferred_term: MgCl2·6H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+- preferred_term: Trace elements solution*
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+- preferred_term: Vitamin solution**
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+- preferred_term: Bacto Yeast Extract (Difco)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Hipolypepton (Nihon seiyaku)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: MG_PER_L
+- preferred_term: KHCO3
+  concentration:
+    value: '4.5'
+    unit: G_PER_L
+- preferred_term: Cysteine-HCl
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: Na2S·9H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: L
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -47,17 +103,110 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-19T21:54:23.068427+00:00'
+  curator: recover_nbrc_composition.py
+  action: Recovered composition from source HTML
+  notes: Re-parsed the NBRC medium 925 composition table from the preserved scrape;
+    15 ingredient(s) restored, 2 stock solution(s) nested rather than flattened, 1
+    unparsed solution blob(s) removed (#299).
 solutions:
-- preferred_term: Sodium acetate1.7gNH4Cl1gKH2PO40.3gNaCl0.6gMgCl2·6H2O0.1gCaCl2·2H2O0.08gTrace
-    elements solution*10mlVitamin solution**10mlBacto Yeast Extract (Difco)0.5gHipolypepton
-    (Nihon seiyaku)0.5gResazurin1mgKHCO34.5gCysteine-HCl0.3gNa2S·9H2O0.3gDistilled
-    water1LMix ingredients except for vitamin solution, cysteine-HCl and Na2S·9H2O,
-    and autoclave under N2/CO2(80/20) condition. Separately autoclave cysteine-HCl
-    and Na2S·9H2O as a 3% solution under a N2atmosphere. Aseptically and anaerobically
-    add filter-sterile vitamin, cysteine-HCl and Na2S·9H2O solutions. Final pH is
-    7.2-7.5.*Trace elements solutionNitrilotriacetic acid (NTA)4.1gFeCl3·6H2O0.36gMnCl2·4H2O0.09gCoCl2·6H2O0.15gCaCl2·2H2O0.018gZnCl20.09gH3BO30.017gNa2MoO4·2H2O0.009gNiCl2·6H2O0.018gNa2SeO31.6mgNa2WO41.6mgDistilled
-    water1LFirst dissolve nitrilotriacetic acid and adjust pH to 6.5 with NaOH, and
-    then add other minerals. Final pH 7.0.**Vitamin solutionBiotin2mgFolic acid2mgPyridoxine-HCl10mgThiamine-HCl5mgRiboflavin5mgNicotinic
-    acid5mgCa-pantothenate5mgp-Aminobenzoic acid1mgVitamin B120.01mgDistilled water1L
-  composition: []
-  name: Unknown solution
+- preferred_term: Trace elements solution
+  composition:
+  - preferred_term: Nitrilotriacetic acid (NTA)
+    concentration:
+      value: '4.1'
+      unit: G_PER_L
+  - preferred_term: FeCl3·6H2O
+    concentration:
+      value: '0.36'
+      unit: G_PER_L
+  - preferred_term: MnCl2·4H2O
+    concentration:
+      value: '0.09'
+      unit: G_PER_L
+  - preferred_term: CoCl2·6H2O
+    concentration:
+      value: '0.15'
+      unit: G_PER_L
+  - preferred_term: CaCl2·2H2O
+    concentration:
+      value: '0.018'
+      unit: G_PER_L
+  - preferred_term: ZnCl2
+    concentration:
+      value: '0.09'
+      unit: G_PER_L
+  - preferred_term: H3BO3
+    concentration:
+      value: '0.017'
+      unit: G_PER_L
+  - preferred_term: Na2MoO4·2H2O
+    concentration:
+      value: '0.009'
+      unit: G_PER_L
+  - preferred_term: NiCl2·6H2O
+    concentration:
+      value: '0.018'
+      unit: G_PER_L
+  - preferred_term: Na2SeO3
+    concentration:
+      value: '1.6'
+      unit: MG_PER_L
+  - preferred_term: Na2WO4
+    concentration:
+      value: '1.6'
+      unit: MG_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+  name: Trace elements solution
+- preferred_term: Vitamin solution
+  composition:
+  - preferred_term: Biotin
+    concentration:
+      value: '2'
+      unit: MG_PER_L
+  - preferred_term: Folic acid
+    concentration:
+      value: '2'
+      unit: MG_PER_L
+  - preferred_term: Pyridoxine-HCl
+    concentration:
+      value: '10'
+      unit: MG_PER_L
+  - preferred_term: Thiamine-HCl
+    concentration:
+      value: '5'
+      unit: MG_PER_L
+  - preferred_term: Riboflavin
+    concentration:
+      value: '5'
+      unit: MG_PER_L
+  - preferred_term: Nicotinic acid
+    concentration:
+      value: '5'
+      unit: MG_PER_L
+  - preferred_term: Ca-pantothenate
+    concentration:
+      value: '5'
+      unit: MG_PER_L
+  - preferred_term: p-Aminobenzoic acid
+    concentration:
+      value: '1'
+      unit: MG_PER_L
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.01'
+      unit: MG_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+  name: Vitamin solution
+notes: Mix ingredients except for vitamin solution, cysteine-HCl and Na2S·9H2O, and
+  autoclave under N2/CO2 (80/20) condition. Separately autoclave cysteine-HCl and
+  Na2S·9H2O as a 3% solution under a N2 atmosphere. Aseptically and anaerobically
+  add filter-sterile vitamin, cysteine-HCl and Na2S·9H2O solutions. Final pH is 7.2-7.5.
+  First dissolve nitrilotriacetic acid and adjust pH to 6.5 with NaOH, and then add
+  other minerals. Final pH 7.0.

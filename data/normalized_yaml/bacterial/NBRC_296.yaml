@@ -7,15 +7,14 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: Bacto Yeast Extract (Difco)5gDistilled water1LAdjust pH to 5.0 with
-    1 N HCl
+- preferred_term: Bacto Yeast Extract (Difco)
   concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: ''
-  concentration:
-    value: Bacto Yeast Extract (Difco)
+    value: '5'
     unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: L
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -49,3 +48,10 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-19T21:54:22.870672+00:00'
+  curator: recover_nbrc_composition.py
+  action: Recovered composition from source HTML
+  notes: Re-parsed the NBRC medium 294 composition table from the preserved scrape;
+    2 ingredient(s) restored, 0 stock solution(s) nested rather than flattened, 0
+    unparsed solution blob(s) removed (#299).
+notes: Adjust pH to 5.0 with 1 N HCl

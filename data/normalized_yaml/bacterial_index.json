@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-17T19:26:12.041250+00:00",
+  "generated": "2026-08-19T22:20:37.120286+00:00",
   "category": "bacterial",
   "count": 14304,
   "recipes": {
@@ -14380,10 +14380,9 @@
     "CultureMech:007449": {
       "name": "1003",
       "filename": "NBRC_1003.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 5,
       "id": "CultureMech:007449",
       "source": "unknown",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ]
@@ -14391,10 +14390,10 @@
     "CultureMech:007450": {
       "name": "1021",
       "filename": "NBRC_1021.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 15,
       "id": "CultureMech:007450",
       "source": "unknown",
-      "solution_count": 1,
+      "solution_count": 4,
       "categories": [
         "bacterial"
       ]
@@ -14402,7 +14401,7 @@
     "CultureMech:007451": {
       "name": "1038",
       "filename": "NBRC_1038.yaml",
-      "ingredient_count": 7,
+      "ingredient_count": 6,
       "id": "CultureMech:007451",
       "source": "unknown",
       "categories": [
@@ -14412,10 +14411,10 @@
     "CultureMech:007452": {
       "name": "1051",
       "filename": "NBRC_1051.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 18,
       "id": "CultureMech:007452",
       "source": "unknown",
-      "solution_count": 1,
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ]
@@ -14423,7 +14422,7 @@
     "CultureMech:007453": {
       "name": "1063",
       "filename": "NBRC_1063.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 6,
       "id": "CultureMech:007453",
       "source": "unknown",
       "categories": [
@@ -14433,10 +14432,9 @@
     "CultureMech:007454": {
       "name": "1075",
       "filename": "NBRC_1075.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 9,
       "id": "CultureMech:007454",
       "source": "unknown",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ]
@@ -14444,10 +14442,10 @@
     "CultureMech:007455": {
       "name": "1091",
       "filename": "NBRC_1091.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 15,
       "id": "CultureMech:007455",
       "source": "unknown",
-      "solution_count": 1,
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ]
@@ -14455,7 +14453,7 @@
     "CultureMech:007456": {
       "name": "1107",
       "filename": "NBRC_1107.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 8,
       "id": "CultureMech:007456",
       "source": "unknown",
       "solution_count": 1,
@@ -14466,7 +14464,7 @@
     "CultureMech:007457": {
       "name": "1118",
       "filename": "NBRC_1118.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 16,
       "id": "CultureMech:007457",
       "source": "unknown",
       "solution_count": 1,
@@ -14477,7 +14475,7 @@
     "CultureMech:007458": {
       "name": "1135",
       "filename": "NBRC_1135.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 4,
       "id": "CultureMech:007458",
       "source": "unknown",
       "categories": [
@@ -14487,7 +14485,7 @@
     "CultureMech:007459": {
       "name": "1158",
       "filename": "NBRC_1158.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 4,
       "id": "CultureMech:007459",
       "source": "unknown",
       "categories": [
@@ -14497,7 +14495,7 @@
     "CultureMech:007460": {
       "name": "116",
       "filename": "NBRC_116.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 8,
       "id": "CultureMech:007460",
       "source": "unknown",
       "categories": [
@@ -14507,10 +14505,10 @@
     "CultureMech:007461": {
       "name": "1170",
       "filename": "NBRC_1170.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 16,
       "id": "CultureMech:007461",
       "source": "unknown",
-      "solution_count": 1,
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ]
@@ -14518,7 +14516,7 @@
     "CultureMech:007462": {
       "name": "1185",
       "filename": "NBRC_1185.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 7,
       "id": "CultureMech:007462",
       "source": "unknown",
       "solution_count": 1,
@@ -14529,7 +14527,7 @@
     "CultureMech:007463": {
       "name": "1197",
       "filename": "NBRC_1197.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 16,
       "id": "CultureMech:007463",
       "source": "unknown",
       "categories": [
@@ -14539,7 +14537,7 @@
     "CultureMech:007464": {
       "name": "1210",
       "filename": "NBRC_1210.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 10,
       "id": "CultureMech:007464",
       "source": "unknown",
       "categories": [
@@ -14549,10 +14547,10 @@
     "CultureMech:007465": {
       "name": "1227",
       "filename": "NBRC_1227.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 13,
       "id": "CultureMech:007465",
       "source": "unknown",
-      "solution_count": 1,
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ]
@@ -14560,7 +14558,7 @@
     "CultureMech:007466": {
       "name": "1245",
       "filename": "NBRC_1245.yaml",
-      "ingredient_count": 7,
+      "ingredient_count": 6,
       "id": "CultureMech:007466",
       "source": "unknown",
       "categories": [
@@ -14570,10 +14568,10 @@
     "CultureMech:007467": {
       "name": "1261",
       "filename": "NBRC_1261.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 15,
       "id": "CultureMech:007467",
       "source": "unknown",
-      "solution_count": 1,
+      "solution_count": 4,
       "categories": [
         "bacterial"
       ]
@@ -14581,10 +14579,10 @@
     "CultureMech:007468": {
       "name": "1275",
       "filename": "NBRC_1275.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 16,
       "id": "CultureMech:007468",
       "source": "unknown",
-      "solution_count": 1,
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ]
@@ -14592,7 +14590,7 @@
     "CultureMech:007469": {
       "name": "1287",
       "filename": "NBRC_1287.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 5,
       "id": "CultureMech:007469",
       "source": "unknown",
       "categories": [
@@ -14602,7 +14600,7 @@
     "CultureMech:007470": {
       "name": "1298",
       "filename": "NBRC_1298.yaml",
-      "ingredient_count": 9,
+      "ingredient_count": 8,
       "id": "CultureMech:007470",
       "source": "unknown",
       "categories": [
@@ -14612,10 +14610,10 @@
     "CultureMech:007471": {
       "name": "1311",
       "filename": "NBRC_1311.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 13,
       "id": "CultureMech:007471",
       "source": "unknown",
-      "solution_count": 1,
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ]
@@ -14623,10 +14621,10 @@
     "CultureMech:007472": {
       "name": "1323",
       "filename": "NBRC_1323.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 18,
       "id": "CultureMech:007472",
       "source": "unknown",
-      "solution_count": 1,
+      "solution_count": 7,
       "categories": [
         "bacterial"
       ]
@@ -14634,7 +14632,7 @@
     "CultureMech:007473": {
       "name": "1340",
       "filename": "NBRC_1340.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 5,
       "id": "CultureMech:007473",
       "source": "unknown",
       "solution_count": 1,
@@ -14645,10 +14643,10 @@
     "CultureMech:007474": {
       "name": "1358",
       "filename": "NBRC_1358.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 12,
       "id": "CultureMech:007474",
       "source": "unknown",
-      "solution_count": 1,
+      "solution_count": 4,
       "categories": [
         "bacterial"
       ]
@@ -14656,7 +14654,7 @@
     "CultureMech:007475": {
       "name": "1379",
       "filename": "NBRC_1379.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 5,
       "id": "CultureMech:007475",
       "source": "unknown",
       "categories": [
@@ -14666,7 +14664,7 @@
     "CultureMech:007476": {
       "name": "14",
       "filename": "NBRC_14.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 4,
       "id": "CultureMech:007476",
       "source": "unknown",
       "categories": [
@@ -14676,7 +14674,7 @@
     "CultureMech:007477": {
       "name": "1401",
       "filename": "NBRC_1401.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 6,
       "id": "CultureMech:007477",
       "source": "unknown",
       "categories": [
@@ -14696,7 +14694,7 @@
     "CultureMech:007479": {
       "name": "229",
       "filename": "NBRC_229.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 6,
       "id": "CultureMech:007479",
       "source": "unknown",
       "categories": [
@@ -14706,7 +14704,7 @@
     "CultureMech:007480": {
       "name": "245",
       "filename": "NBRC_245.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 6,
       "id": "CultureMech:007480",
       "source": "unknown",
       "categories": [
@@ -14716,10 +14714,9 @@
     "CultureMech:007481": {
       "name": "257",
       "filename": "NBRC_257.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 12,
       "id": "CultureMech:007481",
       "source": "unknown",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ]
@@ -14727,7 +14724,7 @@
     "CultureMech:007482": {
       "name": "26",
       "filename": "NBRC_26.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 5,
       "id": "CultureMech:007482",
       "source": "unknown",
       "categories": [
@@ -14737,7 +14734,7 @@
     "CultureMech:007483": {
       "name": "270",
       "filename": "NBRC_270.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 9,
       "id": "CultureMech:007483",
       "source": "unknown",
       "solution_count": 1,
@@ -14748,7 +14745,7 @@
     "CultureMech:007484": {
       "name": "280",
       "filename": "NBRC_280.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 5,
       "id": "CultureMech:007484",
       "source": "unknown",
       "categories": [
@@ -14768,7 +14765,7 @@
     "CultureMech:007486": {
       "name": "310",
       "filename": "NBRC_310.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 10,
       "id": "CultureMech:007486",
       "source": "unknown",
       "categories": [
@@ -14778,10 +14775,10 @@
     "CultureMech:007487": {
       "name": "324",
       "filename": "NBRC_324.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 2,
       "id": "CultureMech:007487",
       "source": "unknown",
-      "solution_count": 1,
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ]
@@ -14789,7 +14786,7 @@
     "CultureMech:007488": {
       "name": "336",
       "filename": "NBRC_336.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 8,
       "id": "CultureMech:007488",
       "source": "unknown",
       "solution_count": 1,
@@ -14800,7 +14797,7 @@
     "CultureMech:007489": {
       "name": "355",
       "filename": "NBRC_355.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 6,
       "id": "CultureMech:007489",
       "source": "unknown",
       "categories": [
@@ -14810,7 +14807,7 @@
     "CultureMech:007490": {
       "name": "367",
       "filename": "NBRC_367.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 12,
       "id": "CultureMech:007490",
       "source": "unknown",
       "categories": [
@@ -14820,7 +14817,7 @@
     "CultureMech:007491": {
       "name": "382",
       "filename": "NBRC_382.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 6,
       "id": "CultureMech:007491",
       "source": "unknown",
       "categories": [
@@ -14830,7 +14827,7 @@
     "CultureMech:007492": {
       "name": "393",
       "filename": "NBRC_393.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 15,
       "id": "CultureMech:007492",
       "source": "unknown",
       "solution_count": 1,
@@ -14841,7 +14838,7 @@
     "CultureMech:007493": {
       "name": "404",
       "filename": "NBRC_404.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 10,
       "id": "CultureMech:007493",
       "source": "unknown",
       "categories": [
@@ -14851,7 +14848,7 @@
     "CultureMech:007494": {
       "name": "804",
       "filename": "NBRC_804.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 8,
       "id": "CultureMech:007494",
       "source": "unknown",
       "categories": [
@@ -14861,7 +14858,7 @@
     "CultureMech:007495": {
       "name": "815",
       "filename": "NBRC_815.yaml",
-      "ingredient_count": 7,
+      "ingredient_count": 6,
       "id": "CultureMech:007495",
       "source": "unknown",
       "categories": [
@@ -14871,10 +14868,10 @@
     "CultureMech:007496": {
       "name": "825",
       "filename": "NBRC_825.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 14,
       "id": "CultureMech:007496",
       "source": "unknown",
-      "solution_count": 1,
+      "solution_count": 4,
       "categories": [
         "bacterial"
       ]
@@ -14882,10 +14879,10 @@
     "CultureMech:007497": {
       "name": "838",
       "filename": "NBRC_838.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 15,
       "id": "CultureMech:007497",
       "source": "unknown",
-      "solution_count": 1,
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ]
@@ -14893,10 +14890,9 @@
     "CultureMech:007498": {
       "name": "848",
       "filename": "NBRC_848.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 17,
       "id": "CultureMech:007498",
       "source": "unknown",
-      "solution_count": 1,
       "categories": [
         "bacterial"
       ]
@@ -14904,10 +14900,10 @@
     "CultureMech:007499": {
       "name": "859",
       "filename": "NBRC_859.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 12,
       "id": "CultureMech:007499",
       "source": "unknown",
-      "solution_count": 1,
+      "solution_count": 3,
       "categories": [
         "bacterial"
       ]
@@ -14915,7 +14911,7 @@
     "CultureMech:007500": {
       "name": "869",
       "filename": "NBRC_869.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 5,
       "id": "CultureMech:007500",
       "source": "unknown",
       "categories": [
@@ -14925,10 +14921,10 @@
     "CultureMech:007501": {
       "name": "882",
       "filename": "NBRC_882.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 7,
       "id": "CultureMech:007501",
       "source": "unknown",
-      "solution_count": 1,
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ]
@@ -14936,7 +14932,7 @@
     "CultureMech:007502": {
       "name": "892",
       "filename": "NBRC_892.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 5,
       "id": "CultureMech:007502",
       "source": "unknown",
       "categories": [
@@ -14946,10 +14942,10 @@
     "CultureMech:007503": {
       "name": "904",
       "filename": "NBRC_904.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 17,
       "id": "CultureMech:007503",
       "source": "unknown",
-      "solution_count": 1,
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ]
@@ -14957,7 +14953,7 @@
     "CultureMech:007504": {
       "name": "915",
       "filename": "NBRC_915.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 9,
       "id": "CultureMech:007504",
       "source": "unknown",
       "categories": [
@@ -14967,10 +14963,10 @@
     "CultureMech:007505": {
       "name": "927",
       "filename": "NBRC_927.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 15,
       "id": "CultureMech:007505",
       "source": "unknown",
-      "solution_count": 1,
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ]
@@ -14978,10 +14974,10 @@
     "CultureMech:007506": {
       "name": "937",
       "filename": "NBRC_937.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 9,
       "id": "CultureMech:007506",
       "source": "unknown",
-      "solution_count": 1,
+      "solution_count": 3,
       "categories": [
         "bacterial"
       ]
@@ -14989,7 +14985,7 @@
     "CultureMech:007507": {
       "name": "948",
       "filename": "NBRC_948.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 4,
       "id": "CultureMech:007507",
       "source": "unknown",
       "categories": [
@@ -14999,7 +14995,7 @@
     "CultureMech:007508": {
       "name": "960",
       "filename": "NBRC_960.yaml",
-      "ingredient_count": 2,
+      "ingredient_count": 5,
       "id": "CultureMech:007508",
       "source": "unknown",
       "categories": [
@@ -15009,10 +15005,10 @@
     "CultureMech:007509": {
       "name": "972",
       "filename": "NBRC_972.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 8,
       "id": "CultureMech:007509",
       "source": "unknown",
-      "solution_count": 1,
+      "solution_count": 2,
       "categories": [
         "bacterial"
       ]
@@ -15020,10 +15016,10 @@
     "CultureMech:007510": {
       "name": "990",
       "filename": "NBRC_990.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 11,
       "id": "CultureMech:007510",
       "source": "unknown",
-      "solution_count": 1,
+      "solution_count": 4,
       "categories": [
         "bacterial"
       ]

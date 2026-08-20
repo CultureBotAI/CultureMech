@@ -7,10 +7,38 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: ''
+- preferred_term: NaNO3
   concentration:
-    value: NaNO3
+    value: '1'
     unit: G_PER_L
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Na2HPO4·2H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.22'
+    unit: G_PER_L
+- preferred_term: CaCl2·6H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: FeSO4·7H2O
+  concentration:
+    value: '2'
+    unit: MG_PER_L
+- preferred_term: Trace metal solution*
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: L
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -47,14 +75,47 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-19T21:54:22.591441+00:00'
+  curator: recover_nbrc_composition.py
+  action: Recovered composition from source HTML
+  notes: Re-parsed the NBRC medium 1106 composition table from the preserved scrape;
+    8 ingredient(s) restored, 1 stock solution(s) nested rather than flattened, 1
+    unparsed solution blob(s) removed (#299).
 solutions:
-- preferred_term: NaNO31gMgSO4·7H2O0.1gNa2HPO4·2H2O0.5gKH2PO40.22gCaCl2·6H2O0.03gFeSO4·7H2O2mgTrace
-    metal solution*1mlDistilled water1LpH 7Dispense the medium into suitable culture
-    vessels, seal with butyl rubber stoppers, and autoclave at 121°C for 15 min. After
-    cooling to room temperature, the pH is adjusted to pH 7 by adding of sterile pH-adjusting
-    agent with a syringe without opening the vessel. Prior to inoculation, aseptically
-    add the filter-sterilized methane gas to the vessel. The methane and air ratio
-    in the headspace is about 1:4. Methane should be of high purity.*Trace metal solutionZnSO4·7H2O0.44gCuSO4·5H2O0.2gMnSO4·2H2O0.17gNa2MoO4·2H2O0.06gH3BO30.1gCoCl2·6H2O0.08gDistilled
-    water1L
-  composition: []
-  name: Unknown solution
+- preferred_term: Trace metal solution
+  composition:
+  - preferred_term: ZnSO4·7H2O
+    concentration:
+      value: '0.44'
+      unit: G_PER_L
+  - preferred_term: CuSO4·5H2O
+    concentration:
+      value: '0.2'
+      unit: G_PER_L
+  - preferred_term: MnSO4·2H2O
+    concentration:
+      value: '0.17'
+      unit: G_PER_L
+  - preferred_term: Na2MoO4·2H2O
+    concentration:
+      value: '0.06'
+      unit: G_PER_L
+  - preferred_term: H3BO3
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+  - preferred_term: CoCl2·6H2O
+    concentration:
+      value: '0.08'
+      unit: G_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+  name: Trace metal solution
+notes: pH 7 Dispense the medium into suitable culture vessels, seal with butyl rubber
+  stoppers, and autoclave at 121°C for 15 min. After cooling to room temperature,
+  the pH is adjusted to pH 7 by adding of sterile pH-adjusting agent with a syringe
+  without opening the vessel. Prior to inoculation, aseptically add the filter-sterilized
+  methane gas to the vessel. The methane and air ratio in the headspace is about 1:4.
+  Methane should be of high purity.

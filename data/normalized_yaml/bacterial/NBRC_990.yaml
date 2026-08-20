@@ -7,11 +7,50 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: ''
+- preferred_term: Trypticase Peptone (BBL)
   concentration:
-    value: '12.0'
+    value: '2'
     unit: G_PER_L
-  notes: ' [Merged 63 duplicates: 5.0, 1.0, 5.0, 1.0]'
+- preferred_term: Bacto Yeast Extract (Difco)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: 50% Sodium lactate
+  concentration:
+    value: '25'
+    unit: ML_PER_L
+- preferred_term: Biotin solution*
+  concentration:
+    value: '2'
+    unit: ML_PER_L
+- preferred_term: K solution**
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+- preferred_term: M solution***
+  concentration:
+    value: '2.5'
+    unit: ML_PER_L
+- preferred_term: C solution****
+  concentration:
+    value: '2.5'
+    unit: ML_PER_L
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: MG_PER_L
+- preferred_term: 15% Na2CO3 solution
+  concentration:
+    value: '20'
+    unit: ML_PER_L
+- preferred_term: Cysteine-HCl
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: L
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -48,15 +87,71 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-19T21:54:23.115528+00:00'
+  curator: recover_nbrc_composition.py
+  action: Recovered composition from source HTML
+  notes: Re-parsed the NBRC medium 989 composition table from the preserved scrape;
+    11 ingredient(s) restored, 4 stock solution(s) nested rather than flattened, 1
+    unparsed solution blob(s) removed (#299).
 solutions:
-- preferred_term: Trypticase Peptone (BBL)2gBacto Yeast Extract (Difco)2g50% Sodium
-    lactate25mlBiotin solution*2mlK solution**10mlM solution***2.5mlC solution****2.5mlResazurin1mg15%
-    Na2CO3solution20mlCysteine-HCl0.75gDistilled water1LpH 7Mix ingredients except
-    for Na2CO3and cysteine-HCl, dispense the medium into suitable culture vessels
-    under a stream of N2/CO2(80/20), seal with butyl rubber stoppers, and autoclave
-    at 115℃ for 25 min. Aseptically and anaerobically add filter-sterile Na2CO3and
-    cysteine-HCl solutions, and adjust pH to 7.0 with 3 N HCl.*Biotin solutionBiotin5mgEthanol100ml**K
-    solutionKH2PO490gNaCl90g(NH4)2SO490gDistilled water1L***M solutionMnCl2·4H2O4gCoCl2·6H2O4gDistilled
-    water1L****C solutionCaCl2·2H2O10.6gDistilled water1L
-  composition: []
-  name: Unknown solution
+- preferred_term: Biotin solution
+  composition:
+  - preferred_term: Biotin
+    concentration:
+      value: '5'
+      unit: MG_PER_L
+  - preferred_term: Ethanol
+    concentration:
+      value: '100'
+      unit: ML_PER_L
+  name: Biotin solution
+- preferred_term: K solution
+  composition:
+  - preferred_term: KH2PO4
+    concentration:
+      value: '90'
+      unit: G_PER_L
+  - preferred_term: NaCl
+    concentration:
+      value: '90'
+      unit: G_PER_L
+  - preferred_term: (NH4)2SO4
+    concentration:
+      value: '90'
+      unit: G_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+  name: K solution
+- preferred_term: M solution
+  composition:
+  - preferred_term: MnCl2·4H2O
+    concentration:
+      value: '4'
+      unit: G_PER_L
+  - preferred_term: CoCl2·6H2O
+    concentration:
+      value: '4'
+      unit: G_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+  name: M solution
+- preferred_term: C solution
+  composition:
+  - preferred_term: CaCl2·2H2O
+    concentration:
+      value: '10.6'
+      unit: G_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+  name: C solution
+notes: pH 7 Mix ingredients except for Na2CO3 and cysteine-HCl, dispense the medium
+  into suitable culture vessels under a stream of N2/CO2 (80/20), seal with butyl
+  rubber stoppers, and autoclave at 115℃ for 25 min. Aseptically and anaerobically
+  add filter-sterile Na2CO3 and cysteine-HCl solutions, and adjust pH to 7.0 with
+  3 N HCl.

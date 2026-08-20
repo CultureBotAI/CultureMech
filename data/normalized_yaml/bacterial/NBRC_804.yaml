@@ -7,14 +7,37 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Hipolypepton*5gYeast extract5gGlucose5gLactose5gTween 800.5gMgSO4·7H2O1gDistilled
-    water1LAgar (if needed)15gpH 6.5 - 6.8*Wako Pure Chemical Ind., Ltd., Osaka, Japan.
+- preferred_term: Hipolypepton*
   concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: ''
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
   concentration:
-    value: Hipolypepton*
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Lactose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Tween 80
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: L
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
     unit: G_PER_L
 preparation_steps:
 - step_number: 1
@@ -50,3 +73,10 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-19T21:54:22.947150+00:00'
+  curator: recover_nbrc_composition.py
+  action: Recovered composition from source HTML
+  notes: Re-parsed the NBRC medium 803 composition table from the preserved scrape;
+    8 ingredient(s) restored, 0 stock solution(s) nested rather than flattened, 0
+    unparsed solution blob(s) removed (#299).
+notes: pH 6.5 - 6.8 Wako Pure Chemical Ind., Ltd., Osaka, Japan.

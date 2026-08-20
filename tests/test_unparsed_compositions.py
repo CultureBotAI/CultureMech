@@ -143,7 +143,20 @@ def test_every_crammed_record_gets_a_verdict(ruc, media_records):
             seen += 1
             assert verdict["verdict"].startswith(("PROPOSED", "HOLD")), verdict
             assert verdict["detail"], f"{path.name} has no reason recorded"
-    assert seen == 25, f"expected 25 crammed records, found {seen}"
+    # Was 25. All were repaired in #299 by re-parsing the preserved NBRC HTML —
+    # the source this tool deliberately could not reach. It works from the
+    # crammed STRING, and its own docstring records why that can never be written
+    # from: `KH2PO40.85g` splits equally well into `KH2PO` + `40.85g`, both
+    # round-trip, and one is a non-existent compound at 47x the real
+    # concentration. The HTML never lost the delimiters, so the ambiguity does
+    # not arise there at all.
+    #
+    # The tool is kept as a detector: if an import crams a composition again,
+    # this count rises and the worklist comes back.
+    assert seen == 0, (
+        f"expected the crammed-composition backlog to be empty after #299, "
+        f"found {seen} — a new import has crammed a composition again"
+    )
 
 
 def test_the_docstring_does_not_advertise_commands_that_do_not_exist(ruc):

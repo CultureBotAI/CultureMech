@@ -122,10 +122,6 @@ ingredients:
     product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
   notes: Solidifying agent (for TSA only, not in TSB); Constituent of Tryptic Soy
     Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
-- preferred_term: ''
-  concentration:
-    value: Bacto Tryptic Soy Broth w/o Dextrose (Difco)
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -159,6 +155,12 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-19T21:54:22.537307+00:00'
+  curator: recover_nbrc_composition.py
+  action: Removed corrupt rows, kept curated composition
+  notes: Record already held a grounded ingredient list, so the NBRC medium 1035 page
+    was NOT used — it lists only the commercial premix. Dropped the empty-name row
+    and 0 unparsed solution blob(s) (#299).
 notes: 'Commercial Product: Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)
 
   Supplier: Multiple suppliers (BD, Sigma, Neogen)

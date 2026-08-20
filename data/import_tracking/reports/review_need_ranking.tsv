@@ -1,62 +1,5 @@
 score	file_path	record_id	name	n_ingredients	reasons
-80	bacterial/NBRC_1063.yaml	CultureMech:007453	1063	2	only 2 ingredient(s); ingredient name contains an unparsed recipe; no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-80	bacterial/NBRC_1135.yaml	CultureMech:007458	1135	2	only 2 ingredient(s); ingredient name contains an unparsed recipe; no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-80	bacterial/NBRC_1158.yaml	CultureMech:007459	1158	2	only 2 ingredient(s); ingredient name contains an unparsed recipe; no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-80	bacterial/NBRC_116.yaml	CultureMech:007460	116	2	only 2 ingredient(s); ingredient name contains an unparsed recipe; no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-80	bacterial/NBRC_1197.yaml	CultureMech:007463	1197	2	only 2 ingredient(s); ingredient name contains an unparsed recipe; no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-80	bacterial/NBRC_1210.yaml	CultureMech:007464	1210	2	only 2 ingredient(s); ingredient name contains an unparsed recipe; no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-80	bacterial/NBRC_1287.yaml	CultureMech:007469	1287	2	only 2 ingredient(s); ingredient name contains an unparsed recipe; no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-80	bacterial/NBRC_1379.yaml	CultureMech:007475	1379	2	only 2 ingredient(s); ingredient name contains an unparsed recipe; no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-80	bacterial/NBRC_14.yaml	CultureMech:007476	14	2	only 2 ingredient(s); ingredient name contains an unparsed recipe; no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-80	bacterial/NBRC_1401.yaml	CultureMech:007477	1401	2	only 2 ingredient(s); ingredient name contains an unparsed recipe; no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-80	bacterial/NBRC_229.yaml	CultureMech:007479	229	2	only 2 ingredient(s); ingredient name contains an unparsed recipe; no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-80	bacterial/NBRC_245.yaml	CultureMech:007480	245	2	only 2 ingredient(s); ingredient name contains an unparsed recipe; no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-80	bacterial/NBRC_26.yaml	CultureMech:007482	26	2	only 2 ingredient(s); ingredient name contains an unparsed recipe; no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-80	bacterial/NBRC_280.yaml	CultureMech:007484	280	2	only 2 ingredient(s); ingredient name contains an unparsed recipe; no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-80	bacterial/NBRC_310.yaml	CultureMech:007486	310	2	only 2 ingredient(s); ingredient name contains an unparsed recipe; no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-80	bacterial/NBRC_355.yaml	CultureMech:007489	355	2	only 2 ingredient(s); ingredient name contains an unparsed recipe; no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-80	bacterial/NBRC_367.yaml	CultureMech:007490	367	2	only 2 ingredient(s); ingredient name contains an unparsed recipe; no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-80	bacterial/NBRC_382.yaml	CultureMech:007491	382	2	only 2 ingredient(s); ingredient name contains an unparsed recipe; no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-80	bacterial/NBRC_404.yaml	CultureMech:007493	404	2	only 2 ingredient(s); ingredient name contains an unparsed recipe; no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-80	bacterial/NBRC_804.yaml	CultureMech:007494	804	2	only 2 ingredient(s); ingredient name contains an unparsed recipe; no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-80	bacterial/NBRC_869.yaml	CultureMech:007500	869	2	only 2 ingredient(s); ingredient name contains an unparsed recipe; no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-80	bacterial/NBRC_892.yaml	CultureMech:007502	892	2	only 2 ingredient(s); ingredient name contains an unparsed recipe; no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-80	bacterial/NBRC_915.yaml	CultureMech:007504	915	2	only 2 ingredient(s); ingredient name contains an unparsed recipe; no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-80	bacterial/NBRC_948.yaml	CultureMech:007507	948	2	only 2 ingredient(s); ingredient name contains an unparsed recipe; no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-80	bacterial/NBRC_960.yaml	CultureMech:007508	960	2	only 2 ingredient(s); ingredient name contains an unparsed recipe; no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_1003.yaml	CultureMech:007449	1003	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_1021.yaml	CultureMech:007450	1021	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_1051.yaml	CultureMech:007452	1051	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_1075.yaml	CultureMech:007454	1075	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_1091.yaml	CultureMech:007455	1091	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_1107.yaml	CultureMech:007456	1107	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_1118.yaml	CultureMech:007457	1118	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_1170.yaml	CultureMech:007461	1170	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_1185.yaml	CultureMech:007462	1185	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_1227.yaml	CultureMech:007465	1227	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_1261.yaml	CultureMech:007467	1261	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_1275.yaml	CultureMech:007468	1275	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_1311.yaml	CultureMech:007471	1311	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_1323.yaml	CultureMech:007472	1323	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_1340.yaml	CultureMech:007473	1340	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_1358.yaml	CultureMech:007474	1358	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
 55	bacterial/NBRC_219.yaml	CultureMech:007478	219	2	only 2 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_257.yaml	CultureMech:007481	257	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_270.yaml	CultureMech:007483	270	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_296.yaml	CultureMech:007485	296	2	only 2 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_324.yaml	CultureMech:007487	324	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_336.yaml	CultureMech:007488	336	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_393.yaml	CultureMech:007492	393	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_825.yaml	CultureMech:007496	825	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_838.yaml	CultureMech:007497	838	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_848.yaml	CultureMech:007498	848	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_859.yaml	CultureMech:007499	859	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_882.yaml	CultureMech:007501	882	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_904.yaml	CultureMech:007503	904	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_927.yaml	CultureMech:007505	927	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_937.yaml	CultureMech:007506	937	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_972.yaml	CultureMech:007509	972	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-55	bacterial/NBRC_990.yaml	CultureMech:007510	990	1	only 1 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
 50	algae/1_2_Enriched_Seawater.yaml	CultureMech:000003	1/2 Enriched Seawater	2	only 2 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance
 50	algae/1_2_Erdschreiber_Medium.yaml	CultureMech:000004	1/2 Erdschreiber Medium	2	only 2 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance
 50	algae/1_4_erdschreibers_medium.yaml	CultureMech:000008	1/4 Erdschreiber's Medium	2	only 2 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance
@@ -86,6 +29,8 @@ score	file_path	record_id	name	n_ingredients	reasons
 50	algae/soilwater_gr_nh4_medium.yaml	CultureMech:000226	Soilwater: GR+/NH4 Medium	2	only 2 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance
 50	algae/waris_soil_extract_medium.yaml	CultureMech:000241	Waris + Soil Extract Medium	2	only 2 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance
 50	bacterial/JCM_J1380_EUGON_AGAR_WITH_5_SHEEP_BLOOD_AND_ARTIFICIAL_SEAWATER.yaml	CultureMech:015847	EUGON AGAR WITH 5% SHEEP BLOOD AND ARTIFICIAL SEAWATER	3	placeholder ingredient text; no ingredient is grounded; no pH and no temperature
+50	bacterial/NBRC_296.yaml	CultureMech:007485	296	2	only 2 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+50	bacterial/NBRC_324.yaml	CultureMech:007487	324	2	only 2 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
 50	specialized/dv_base_y_medium.yaml	CultureMech:015520	Dv base Y medium	2	only 2 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
 50	specialized/filteredgw_cell_lysate_1_250.yaml	CultureMech:015524	FilteredGW Cell lysate 1/250	2	only 2 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
 50	specialized/filteredgw_cell_lysate_1_2500.yaml	CultureMech:015525	FilteredGW Cell lysate 1/2500	2	only 2 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
@@ -154,6 +99,11 @@ score	file_path	record_id	name	n_ingredients	reasons
 40	bacterial/KOMODO_439_CASMAN-MEDIUM.yaml	CultureMech:005287	CASMAN-MEDIUM	2	only 2 ingredient(s); no ingredient is grounded; no pH and no temperature
 40	bacterial/KOMODO_646_RABBIT_BLOOD_AGAR.yaml	CultureMech:006192	RABBIT BLOOD AGAR	2	only 2 ingredient(s); no ingredient is grounded; no pH and no temperature
 40	bacterial/KOMODO_672_HALF_STRENGTH_NUTRIENT_BROTH_OR_AGAR.yaml	CultureMech:006268	HALF STRENGTH NUTRIENT BROTH OR AGAR	1	only 1 ingredient(s); no ingredient is grounded; no pH and no temperature
+40	bacterial/NBRC_116.yaml	CultureMech:007460	116	8	no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
+40	bacterial/NBRC_1379.yaml	CultureMech:007475	1379	5	no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
+40	bacterial/NBRC_26.yaml	CultureMech:007482	26	5	no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
+40	bacterial/NBRC_915.yaml	CultureMech:007504	915	9	no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
+40	bacterial/NBRC_960.yaml	CultureMech:007508	960	5	no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
 40	bacterial/TOGO_M109_R_Agar_With_Catalase.yaml	CultureMech:007617	R Agar With Catalase	1	only 1 ingredient(s); no ingredient is grounded; no pH and no temperature
 40	bacterial/TOGO_M1125_DB_Characterization_Medium_NO.2_With_1_Sea_Salts.yaml	CultureMech:007646	DB Characterization Medium NO.2 With 1% Sea Salts	1	only 1 ingredient(s); no ingredient is grounded; no pH and no temperature
 40	bacterial/TOGO_M211_Columbia_Blood_Agar_With_10_Horse_Blood.yaml	CultureMech:008712	Columbia Blood Agar With 10% Horse Blood	2	only 2 ingredient(s); no ingredient is grounded; no pH and no temperature
@@ -338,6 +288,56 @@ score	file_path	record_id	name	n_ingredients	reasons
 35	bacterial/JCM_J806_GS_MEDIUM.yaml	CultureMech:003151	GS MEDIUM	0	no ingredients; no pH and no temperature
 35	bacterial/KOMODO_272_DESULFOVIBRIO_medium_choline.yaml	CultureMech:004700	DESULFOVIBRIO medium (choline)	0	no ingredients; no pH and no temperature
 35	bacterial/KOMODO_7001_Trace_elements_medium_596.yaml	CultureMech:006327	Trace elements (medium 596)	0	no ingredients; no pH and no temperature
+35	bacterial/NBRC_1003.yaml	CultureMech:007449	1003	5	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_1021.yaml	CultureMech:007450	1021	15	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_1051.yaml	CultureMech:007452	1051	18	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_1063.yaml	CultureMech:007453	1063	6	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_1075.yaml	CultureMech:007454	1075	9	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_1091.yaml	CultureMech:007455	1091	15	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_1107.yaml	CultureMech:007456	1107	8	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_1118.yaml	CultureMech:007457	1118	16	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_1135.yaml	CultureMech:007458	1135	4	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_1158.yaml	CultureMech:007459	1158	4	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_1170.yaml	CultureMech:007461	1170	16	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_1185.yaml	CultureMech:007462	1185	7	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_1197.yaml	CultureMech:007463	1197	16	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_1210.yaml	CultureMech:007464	1210	10	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_1227.yaml	CultureMech:007465	1227	13	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_1261.yaml	CultureMech:007467	1261	15	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_1275.yaml	CultureMech:007468	1275	16	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_1287.yaml	CultureMech:007469	1287	5	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_1311.yaml	CultureMech:007471	1311	13	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_1323.yaml	CultureMech:007472	1323	18	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_1340.yaml	CultureMech:007473	1340	5	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_1358.yaml	CultureMech:007474	1358	12	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_14.yaml	CultureMech:007476	14	4	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_1401.yaml	CultureMech:007477	1401	6	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_229.yaml	CultureMech:007479	229	6	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_245.yaml	CultureMech:007480	245	6	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_257.yaml	CultureMech:007481	257	12	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_270.yaml	CultureMech:007483	270	9	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_280.yaml	CultureMech:007484	280	5	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_310.yaml	CultureMech:007486	310	10	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_336.yaml	CultureMech:007488	336	8	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_355.yaml	CultureMech:007489	355	6	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_367.yaml	CultureMech:007490	367	12	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_382.yaml	CultureMech:007491	382	6	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_393.yaml	CultureMech:007492	393	15	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_404.yaml	CultureMech:007493	404	10	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_804.yaml	CultureMech:007494	804	8	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_825.yaml	CultureMech:007496	825	14	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_838.yaml	CultureMech:007497	838	15	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_848.yaml	CultureMech:007498	848	17	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_859.yaml	CultureMech:007499	859	12	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_869.yaml	CultureMech:007500	869	5	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_882.yaml	CultureMech:007501	882	7	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_892.yaml	CultureMech:007502	892	5	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_904.yaml	CultureMech:007503	904	17	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_927.yaml	CultureMech:007505	927	15	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_937.yaml	CultureMech:007506	937	9	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_948.yaml	CultureMech:007507	948	4	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_972.yaml	CultureMech:007509	972	8	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_990.yaml	CultureMech:007510	990	11	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
 35	bacterial/TOGO_M103_MRS_Medium_pH_5.5.yaml	CultureMech:007555	MRS Medium (pH 5.5)	0	no ingredients; no pH and no temperature
 35	bacterial/TOGO_M1059_Acidic_HB-1_Medium.yaml	CultureMech:007575	Acidic HB-1 Medium	0	no ingredients; no pH and no temperature
 35	bacterial/TOGO_M1159_R_Agar_pH_9.0.yaml	CultureMech:007682	R Agar (pH 9.0)	0	no ingredients; no pH and no temperature
@@ -917,10 +917,10 @@ score	file_path	record_id	name	n_ingredients	reasons
 15	bacterial/KOMODO_51_SPHAEROTILUS_medium.yaml	CultureMech:005878	SPHAEROTILUS medium	2	only 2 ingredient(s)
 15	bacterial/KOMODO_849_AE_medium.yaml	CultureMech:006656	AE medium	6	only 2/6 ingredients grounded; no pH and no temperature
 15	bacterial/KOMODO_84_ROLLED_OATS_MINERAL_medium.yaml	CultureMech:006657	ROLLED OATS MINERAL medium	2	only 2 ingredient(s)
-15	bacterial/NBRC_1038.yaml	CultureMech:007451	1038	7	no media_term (untraceable to a source catalogue); no pH and no temperature
-15	bacterial/NBRC_1245.yaml	CultureMech:007466	1245	7	no media_term (untraceable to a source catalogue); no pH and no temperature
-15	bacterial/NBRC_1298.yaml	CultureMech:007470	1298	9	no media_term (untraceable to a source catalogue); no pH and no temperature
-15	bacterial/NBRC_815.yaml	CultureMech:007495	815	7	no media_term (untraceable to a source catalogue); no pH and no temperature
+15	bacterial/NBRC_1038.yaml	CultureMech:007451	1038	6	no media_term (untraceable to a source catalogue); no pH and no temperature
+15	bacterial/NBRC_1245.yaml	CultureMech:007466	1245	6	no media_term (untraceable to a source catalogue); no pH and no temperature
+15	bacterial/NBRC_1298.yaml	CultureMech:007470	1298	8	no media_term (untraceable to a source catalogue); no pH and no temperature
+15	bacterial/NBRC_815.yaml	CultureMech:007495	815	6	no media_term (untraceable to a source catalogue); no pH and no temperature
 15	bacterial/NBRC_YPG_MEDIUM.yaml	CultureMech:007512	YPG Medium	4	no media_term (untraceable to a source catalogue); no pH and no temperature
 15	bacterial/TOGO_M1004_Modified_Growth_Medium_With_23_Total_Salt_Concentration.yaml	CultureMech:007517	Modified Growth Medium With 23% Total Salt Concentration	3	only 1/3 ingredients grounded; no pH and no temperature
 15	bacterial/TOGO_M1050_M30.yaml	CultureMech:007567	M30	7	only 2/7 ingredients grounded; no pH and no temperature

@@ -7,10 +7,66 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: ''
+- preferred_term: KCl
   concentration:
-    value: KCl
+    value: '0.34'
     unit: G_PER_L
+- preferred_term: MgCl2·6H2O
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '3.45'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '0.14'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.14'
+    unit: G_PER_L
+- preferred_term: NaCl
+  concentration:
+    value: '18'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Bacto Yeast Extract (Difco)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Sodium lactate
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Fe(NH4)2(SO4)2·7H2O
+  concentration:
+    value: '2'
+    unit: MG_PER_L
+- preferred_term: Trace element solution*
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: MG_PER_L
+- preferred_term: Na2S·9H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: L
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -47,17 +103,84 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-08-19T21:54:22.929998+00:00'
+  curator: recover_nbrc_composition.py
+  action: Recovered composition from source HTML
+  notes: Re-parsed the NBRC medium 392 composition table from the preserved scrape;
+    15 ingredient(s) restored, 1 stock solution(s) nested rather than flattened, 1
+    unparsed solution blob(s) removed (#299).
 solutions:
-- preferred_term: KCl0.34gMgCl2·6H2O4gMgSO4·7H2O3.45gNH4Cl0.25gCaCl2·2H2O0.14gK2HPO40.14gNaCl18gNaHCO33gBacto
-    Yeast Extract (Difco)0.5gSodium lactate1.5gFe(NH4)2(SO4)2·7H2O2mgTrace element
-    solution*10mlResazurin1mgNa2S·9H2O0.5gDistilled water1LDissolve ingredients except
-    bicarbonate and sulfide, bring to boil for few minutes, then cool quickly to room
-    temperature while gassing with N2/CO2(80/20), add sodium bicarbonate and adjust
-    pH to 6.9. Distribute in serum bottles (20 ml per 100 ml bottle) under N2/CO2,
-    seal, pressurize bottles up to 2 bar overpressure, then autoclave. Before use,
-    reduce the medium with sodium sulfide from anaerobic sterile neutral stock solution.*Trace
-    element solutionNitrilotriacetic acid1.5gMgSO4·7H2O3gMnSO4·2H2O0.5gNaCl1gFeSO4·7H2O0.1gCoSO4·7H2O0.18gCaCl2·2H2O0.1gZnSO4·7H2O0.18gCuSO4·5H2O0.01gKAl(SO4)2·12H2O4mgH3BO30.01gNa2MoO4·2H2O0.01gNiCl2·6H2O0.025gNa2SeO3·5H2O0.8mgNa2WO4·H2O0.8mgDistilled
-    water1LFirst dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then
-    add minerals. Final pH 7.0 (with KOH).
-  composition: []
-  name: Unknown solution
+- preferred_term: Trace element solution
+  composition:
+  - preferred_term: Nitrilotriacetic acid
+    concentration:
+      value: '1.5'
+      unit: G_PER_L
+  - preferred_term: MgSO4·7H2O
+    concentration:
+      value: '3'
+      unit: G_PER_L
+  - preferred_term: MnSO4·2H2O
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+  - preferred_term: NaCl
+    concentration:
+      value: '1'
+      unit: G_PER_L
+  - preferred_term: FeSO4·7H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+  - preferred_term: CoSO4·7H2O
+    concentration:
+      value: '0.18'
+      unit: G_PER_L
+  - preferred_term: CaCl2·2H2O
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+  - preferred_term: ZnSO4·7H2O
+    concentration:
+      value: '0.18'
+      unit: G_PER_L
+  - preferred_term: CuSO4·5H2O
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+  - preferred_term: KAl(SO4)2·12H2O
+    concentration:
+      value: '4'
+      unit: MG_PER_L
+  - preferred_term: H3BO3
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+  - preferred_term: Na2MoO4·2H2O
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+  - preferred_term: NiCl2·6H2O
+    concentration:
+      value: '0.025'
+      unit: G_PER_L
+  - preferred_term: Na2SeO3·5H2O
+    concentration:
+      value: '0.8'
+      unit: MG_PER_L
+  - preferred_term: Na2WO4·H2O
+    concentration:
+      value: '0.8'
+      unit: MG_PER_L
+  - preferred_term: Distilled water
+    concentration:
+      value: '1'
+      unit: L
+  name: Trace element solution
+notes: Dissolve ingredients except bicarbonate and sulfide, bring to boil for few
+  minutes, then cool quickly to room temperature while gassing with N2/CO2 (80/20),
+  add sodium bicarbonate and adjust pH to 6.9. Distribute in serum bottles (20 ml
+  per 100 ml bottle) under N2/CO2, seal, pressurize bottles up to 2 bar overpressure,
+  then autoclave. Before use, reduce the medium with sodium sulfide from anaerobic
+  sterile neutral stock solution. First dissolve nitrilotriacetic acid and adjust
+  pH to 6.5 with KOH, then add minerals. Final pH 7.0 (with KOH).
