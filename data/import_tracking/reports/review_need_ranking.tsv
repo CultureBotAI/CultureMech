@@ -1,5 +1,4 @@
 score	file_path	record_id	name	n_ingredients	reasons
-55	bacterial/NBRC_219.yaml	CultureMech:007478	219	2	only 2 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
 50	algae/1_2_Enriched_Seawater.yaml	CultureMech:000003	1/2 Enriched Seawater	2	only 2 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance
 50	algae/1_2_Erdschreiber_Medium.yaml	CultureMech:000004	1/2 Erdschreiber Medium	2	only 2 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance
 50	algae/1_4_erdschreibers_medium.yaml	CultureMech:000008	1/4 Erdschreiber's Medium	2	only 2 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance
@@ -29,7 +28,6 @@ score	file_path	record_id	name	n_ingredients	reasons
 50	algae/soilwater_gr_nh4_medium.yaml	CultureMech:000226	Soilwater: GR+/NH4 Medium	2	only 2 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance
 50	algae/waris_soil_extract_medium.yaml	CultureMech:000241	Waris + Soil Extract Medium	2	only 2 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance
 50	bacterial/JCM_J1380_EUGON_AGAR_WITH_5_SHEEP_BLOOD_AND_ARTIFICIAL_SEAWATER.yaml	CultureMech:015847	EUGON AGAR WITH 5% SHEEP BLOOD AND ARTIFICIAL SEAWATER	3	placeholder ingredient text; no ingredient is grounded; no pH and no temperature
-50	bacterial/NBRC_296.yaml	CultureMech:007485	296	2	only 2 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
 50	bacterial/NBRC_324.yaml	CultureMech:007487	324	2	only 2 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
 50	specialized/dv_base_y_medium.yaml	CultureMech:015520	Dv base Y medium	2	only 2 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
 50	specialized/filteredgw_cell_lysate_1_250.yaml	CultureMech:015524	FilteredGW Cell lysate 1/250	2	only 2 ingredient(s); no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
@@ -99,11 +97,6 @@ score	file_path	record_id	name	n_ingredients	reasons
 40	bacterial/KOMODO_439_CASMAN-MEDIUM.yaml	CultureMech:005287	CASMAN-MEDIUM	2	only 2 ingredient(s); no ingredient is grounded; no pH and no temperature
 40	bacterial/KOMODO_646_RABBIT_BLOOD_AGAR.yaml	CultureMech:006192	RABBIT BLOOD AGAR	2	only 2 ingredient(s); no ingredient is grounded; no pH and no temperature
 40	bacterial/KOMODO_672_HALF_STRENGTH_NUTRIENT_BROTH_OR_AGAR.yaml	CultureMech:006268	HALF STRENGTH NUTRIENT BROTH OR AGAR	1	only 1 ingredient(s); no ingredient is grounded; no pH and no temperature
-40	bacterial/NBRC_116.yaml	CultureMech:007460	116	8	no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-40	bacterial/NBRC_1379.yaml	CultureMech:007475	1379	5	no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-40	bacterial/NBRC_26.yaml	CultureMech:007482	26	5	no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-40	bacterial/NBRC_915.yaml	CultureMech:007504	915	9	no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
-40	bacterial/NBRC_960.yaml	CultureMech:007508	960	5	no ingredient is grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
 40	bacterial/TOGO_M109_R_Agar_With_Catalase.yaml	CultureMech:007617	R Agar With Catalase	1	only 1 ingredient(s); no ingredient is grounded; no pH and no temperature
 40	bacterial/TOGO_M1125_DB_Characterization_Medium_NO.2_With_1_Sea_Salts.yaml	CultureMech:007646	DB Characterization Medium NO.2 With 1% Sea Salts	1	only 1 ingredient(s); no ingredient is grounded; no pH and no temperature
 40	bacterial/TOGO_M211_Columbia_Blood_Agar_With_10_Horse_Blood.yaml	CultureMech:008712	Columbia Blood Agar With 10% Horse Blood	2	only 2 ingredient(s); no ingredient is grounded; no pH and no temperature
@@ -123,7 +116,6 @@ score	file_path	record_id	name	n_ingredients	reasons
 40	bacterial/TOGO_M2977_chocolate_agar.yaml	CultureMech:009500	chocolate agar	1	only 1 ingredient(s); no ingredient is grounded; no pH and no temperature
 40	bacterial/TOGO_M591_Columbia_Blood_Agar_With_5_Rabbit_Blood.yaml	CultureMech:009988	Columbia Blood Agar With 5% Rabbit Blood	2	only 2 ingredient(s); no ingredient is grounded; no pH and no temperature
 40	bacterial/TOGO_M62_Blood_Agar.yaml	CultureMech:010030	Blood Agar	2	only 2 ingredient(s); no ingredient is grounded; no pH and no temperature
-40	bacterial/TOGO_M636_Modified_Thermus_SV_Medium.yaml	CultureMech:010036	Modified Thermus SV Medium	1	only 1 ingredient(s); no ingredient is grounded; no pH and no temperature
 40	bacterial/TOGO_M735_Lowenstein-Jensen_Medium.yaml	CultureMech:010144	Lowenstein-Jensen Medium	1	only 1 ingredient(s); no ingredient is grounded; no pH and no temperature
 40	bacterial/TOGO_M868_R2A_Agar_With_Artificial_Seawater.yaml	CultureMech:010285	R2A Agar With Artificial Seawater	1	only 1 ingredient(s); no ingredient is grounded; no pH and no temperature
 40	bacterial/TOGO_M870_Modified_Desulfovibrio_Medium.yaml	CultureMech:010288	Modified Desulfovibrio Medium	1	only 1 ingredient(s); no ingredient is grounded; no pH and no temperature
@@ -288,56 +280,8 @@ score	file_path	record_id	name	n_ingredients	reasons
 35	bacterial/JCM_J806_GS_MEDIUM.yaml	CultureMech:003151	GS MEDIUM	0	no ingredients; no pH and no temperature
 35	bacterial/KOMODO_272_DESULFOVIBRIO_medium_choline.yaml	CultureMech:004700	DESULFOVIBRIO medium (choline)	0	no ingredients; no pH and no temperature
 35	bacterial/KOMODO_7001_Trace_elements_medium_596.yaml	CultureMech:006327	Trace elements (medium 596)	0	no ingredients; no pH and no temperature
-35	bacterial/NBRC_1003.yaml	CultureMech:007449	1003	5	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_1021.yaml	CultureMech:007450	1021	15	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_1051.yaml	CultureMech:007452	1051	18	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_1063.yaml	CultureMech:007453	1063	6	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_1075.yaml	CultureMech:007454	1075	9	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_1091.yaml	CultureMech:007455	1091	15	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_1107.yaml	CultureMech:007456	1107	8	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_1118.yaml	CultureMech:007457	1118	16	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_1135.yaml	CultureMech:007458	1135	4	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_1158.yaml	CultureMech:007459	1158	4	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_1170.yaml	CultureMech:007461	1170	16	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_1185.yaml	CultureMech:007462	1185	7	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_1197.yaml	CultureMech:007463	1197	16	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_1210.yaml	CultureMech:007464	1210	10	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_1227.yaml	CultureMech:007465	1227	13	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_1261.yaml	CultureMech:007467	1261	15	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_1275.yaml	CultureMech:007468	1275	16	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_1287.yaml	CultureMech:007469	1287	5	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_1311.yaml	CultureMech:007471	1311	13	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_1323.yaml	CultureMech:007472	1323	18	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
 35	bacterial/NBRC_1340.yaml	CultureMech:007473	1340	5	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_1358.yaml	CultureMech:007474	1358	12	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_14.yaml	CultureMech:007476	14	4	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_1401.yaml	CultureMech:007477	1401	6	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_229.yaml	CultureMech:007479	229	6	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_245.yaml	CultureMech:007480	245	6	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_257.yaml	CultureMech:007481	257	12	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_270.yaml	CultureMech:007483	270	9	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_280.yaml	CultureMech:007484	280	5	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_310.yaml	CultureMech:007486	310	10	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_336.yaml	CultureMech:007488	336	8	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_355.yaml	CultureMech:007489	355	6	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_367.yaml	CultureMech:007490	367	12	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_382.yaml	CultureMech:007491	382	6	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_393.yaml	CultureMech:007492	393	15	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_404.yaml	CultureMech:007493	404	10	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_804.yaml	CultureMech:007494	804	8	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_825.yaml	CultureMech:007496	825	14	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_838.yaml	CultureMech:007497	838	15	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_848.yaml	CultureMech:007498	848	17	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_859.yaml	CultureMech:007499	859	12	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_869.yaml	CultureMech:007500	869	5	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_882.yaml	CultureMech:007501	882	7	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_892.yaml	CultureMech:007502	892	5	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_904.yaml	CultureMech:007503	904	17	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_927.yaml	CultureMech:007505	927	15	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_937.yaml	CultureMech:007506	937	9	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_948.yaml	CultureMech:007507	948	4	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_972.yaml	CultureMech:007509	972	8	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
-35	bacterial/NBRC_990.yaml	CultureMech:007510	990	11	no ingredient is grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+35	bacterial/NBRC_219.yaml	CultureMech:007478	219	2	only 2 ingredient(s); no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
 35	bacterial/TOGO_M103_MRS_Medium_pH_5.5.yaml	CultureMech:007555	MRS Medium (pH 5.5)	0	no ingredients; no pH and no temperature
 35	bacterial/TOGO_M1059_Acidic_HB-1_Medium.yaml	CultureMech:007575	Acidic HB-1 Medium	0	no ingredients; no pH and no temperature
 35	bacterial/TOGO_M1159_R_Agar_pH_9.0.yaml	CultureMech:007682	R Agar (pH 9.0)	0	no ingredients; no pH and no temperature
@@ -510,6 +454,8 @@ score	file_path	record_id	name	n_ingredients	reasons
 30	bacterial/JCM_J876_DESULFONEMA_MAGNUM_MEDIUM.yaml	CultureMech:003223	DESULFONEMA MAGNUM MEDIUM	25	placeholder ingredient text; no pH and no temperature
 30	bacterial/KOMODO_1254_NAUTILIA_NITRATIREDUCENS_MEDIUM.yaml	CultureMech:004015	NAUTILIA NITRATIREDUCENS MEDIUM	0	no ingredients
 30	bacterial/KOMODO_787_ACETOBACTERIUM_DEHALOGENANS_medium.yaml	CultureMech:006488	ACETOBACTERIUM DEHALOGENANS medium	0	no ingredients
+30	bacterial/NBRC_296.yaml	CultureMech:007485	296	2	only 2 ingredient(s); no media_term (untraceable to a source catalogue); no pH and no temperature
+30	bacterial/NBRC_960.yaml	CultureMech:007508	960	5	only 1/5 ingredients grounded; no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
 30	bacterial/agc2_medium.yaml	CultureMech:002739	AGC2 MEDIUM	0	no ingredients
 30	bacterial/anaerobic_oxalate_medium.yaml	CultureMech:005624	ANAEROBIC OXALATE MEDIUM	0	no ingredients
 30	bacterial/anaerovibrio_burkinabensis_medium.yaml	CultureMech:006022	ANAEROVIBRIO BURKINABENSIS medium	0	no ingredients
@@ -662,6 +608,38 @@ score	file_path	record_id	name	n_ingredients	reasons
 25	bacterial/JCM_J1479_SOLIDESULFOVIBRIO_MEDIUM.yaml	CultureMech:015877	SOLIDESULFOVIBRIO MEDIUM	9	placeholder ingredient text
 25	bacterial/JCM_J753_DEHALOSPIRILLUM_MEDIUM.yaml	CultureMech:003096	DEHALOSPIRILLUM MEDIUM	28	placeholder ingredient text
 25	bacterial/JCM_J784_DESULFOSPOROSINUS_ACIDOPHILUS_MEDIUM.yaml	CultureMech:003127	DESULFOSPOROSINUS ACIDOPHILUS MEDIUM	22	placeholder ingredient text
+25	bacterial/NBRC_1021.yaml	CultureMech:007450	1021	15	only 6/15 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+25	bacterial/NBRC_1051.yaml	CultureMech:007452	1051	18	only 8/18 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+25	bacterial/NBRC_1075.yaml	CultureMech:007454	1075	9	only 4/9 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+25	bacterial/NBRC_1107.yaml	CultureMech:007456	1107	8	only 3/8 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+25	bacterial/NBRC_1118.yaml	CultureMech:007457	1118	16	only 7/16 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+25	bacterial/NBRC_1185.yaml	CultureMech:007462	1185	7	only 1/7 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+25	bacterial/NBRC_1197.yaml	CultureMech:007463	1197	16	only 4/16 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+25	bacterial/NBRC_1210.yaml	CultureMech:007464	1210	10	only 3/10 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+25	bacterial/NBRC_1227.yaml	CultureMech:007465	1227	13	only 6/13 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+25	bacterial/NBRC_1275.yaml	CultureMech:007468	1275	16	only 7/16 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+25	bacterial/NBRC_1323.yaml	CultureMech:007472	1323	18	only 7/18 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+25	bacterial/NBRC_1358.yaml	CultureMech:007474	1358	12	only 2/12 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+25	bacterial/NBRC_14.yaml	CultureMech:007476	14	4	only 1/4 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+25	bacterial/NBRC_1401.yaml	CultureMech:007477	1401	6	only 2/6 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+25	bacterial/NBRC_245.yaml	CultureMech:007480	245	6	only 2/6 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+25	bacterial/NBRC_257.yaml	CultureMech:007481	257	12	only 5/12 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+25	bacterial/NBRC_270.yaml	CultureMech:007483	270	9	only 4/9 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+25	bacterial/NBRC_336.yaml	CultureMech:007488	336	8	only 1/8 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+25	bacterial/NBRC_355.yaml	CultureMech:007489	355	6	only 1/6 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+25	bacterial/NBRC_367.yaml	CultureMech:007490	367	12	only 5/12 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+25	bacterial/NBRC_382.yaml	CultureMech:007491	382	6	only 2/6 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+25	bacterial/NBRC_804.yaml	CultureMech:007494	804	8	only 3/8 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+25	bacterial/NBRC_825.yaml	CultureMech:007496	825	14	only 4/14 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+25	bacterial/NBRC_848.yaml	CultureMech:007498	848	17	only 4/17 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+25	bacterial/NBRC_859.yaml	CultureMech:007499	859	12	only 5/12 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+25	bacterial/NBRC_869.yaml	CultureMech:007500	869	5	only 1/5 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+25	bacterial/NBRC_882.yaml	CultureMech:007501	882	7	only 3/7 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+25	bacterial/NBRC_904.yaml	CultureMech:007503	904	17	only 8/17 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+25	bacterial/NBRC_927.yaml	CultureMech:007505	927	15	only 7/15 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+25	bacterial/NBRC_937.yaml	CultureMech:007506	937	9	only 3/9 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+25	bacterial/NBRC_948.yaml	CultureMech:007507	948	4	only 1/4 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
+25	bacterial/NBRC_990.yaml	CultureMech:007510	990	11	only 2/11 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
 25	bacterial/NBRC_NUTRIENT_AGAR.yaml	CultureMech:007511	Nutrient Agar	3	only 1/3 ingredients grounded; no media_term (untraceable to a source catalogue); no pH and no temperature
 25	bacterial/TOGO_M1544_Cytophaga_Marine_Medium.yaml	CultureMech:008092	Cytophaga (Marine) Medium	3	no ingredient is grounded; no pH and no temperature
 25	bacterial/TOGO_M2193_Nutrient_Agar_Broth.yaml	CultureMech:008786	Nutrient Agar/Broth	4	no ingredient is grounded; no pH and no temperature
@@ -713,6 +691,10 @@ score	file_path	record_id	name	n_ingredients	reasons
 20	bacterial/JCM_J714_HEMIN_MEDIUM_FOR_MYCOBACTERIUM.yaml	CultureMech:003061	HEMIN MEDIUM FOR MYCOBACTERIUM	2	only 2 ingredient(s); no pH and no temperature
 20	bacterial/KOMODO_3136_Fastidious_Anaerobe_Agar.yaml	CultureMech:004984	Fastidious Anaerobe Agar	3	no ingredient is grounded
 20	bacterial/KOMODO_459_SUCROSE-Peptone-MEDIUM.yaml	CultureMech:005464	SUCROSE-Peptone-MEDIUM	2	only 2 ingredient(s); no pH and no temperature
+20	bacterial/NBRC_116.yaml	CultureMech:007460	116	8	no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
+20	bacterial/NBRC_1379.yaml	CultureMech:007475	1379	5	no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
+20	bacterial/NBRC_26.yaml	CultureMech:007482	26	5	no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
+20	bacterial/NBRC_915.yaml	CultureMech:007504	915	9	no media_term (untraceable to a source catalogue); no notes/provenance; no pH and no temperature
 20	bacterial/TOGO_M105_R_Agar_With_3_NaCl.yaml	CultureMech:007576	R Agar With 3% NaCl	1	only 1 ingredient(s); no pH and no temperature
 20	bacterial/TOGO_M1092_Horikoshi-I_Medium_With_3.5_NaCl.yaml	CultureMech:007609	Horikoshi-I Medium With 3.5% NaCl	1	only 1 ingredient(s); no pH and no temperature
 20	bacterial/TOGO_M119_Methanol-Utilizing_Bacteria_Medium_E.yaml	CultureMech:007725	Methanol-Utilizing Bacteria Medium E	2	only 2 ingredient(s); no pH and no temperature
@@ -742,6 +724,7 @@ score	file_path	record_id	name	n_ingredients	reasons
 20	bacterial/TOGO_M568_PYG_Medium_D.yaml	CultureMech:009963	PYG Medium (D)	2	only 2 ingredient(s); no pH and no temperature
 20	bacterial/TOGO_M59_Trypticase_Soy_Agar_With_1_Glucose.yaml	CultureMech:009997	Trypticase Soy Agar With 1% Glucose	1	only 1 ingredient(s); no pH and no temperature
 20	bacterial/TOGO_M626_Modified_PY4S_Agar.yaml	CultureMech:010026	Modified PY4S Agar	2	only 2 ingredient(s); no pH and no temperature
+20	bacterial/TOGO_M636_Modified_Thermus_SV_Medium.yaml	CultureMech:010036	Modified Thermus SV Medium	1	only 1 ingredient(s); no pH and no temperature
 20	bacterial/TOGO_M671_Modified_GAM_Agar.yaml	CultureMech:010075	Modified GAM Agar	2	only 2 ingredient(s); no pH and no temperature
 20	bacterial/TOGO_M67_R_Agar_With_5_NaCl.yaml	CultureMech:010084	R Agar With 5% NaCl	1	only 1 ingredient(s); no pH and no temperature
 20	bacterial/TOGO_M682_Distilled_Water.yaml	CultureMech:010087	Distilled Water	1	only 1 ingredient(s); no pH and no temperature
@@ -917,10 +900,27 @@ score	file_path	record_id	name	n_ingredients	reasons
 15	bacterial/KOMODO_51_SPHAEROTILUS_medium.yaml	CultureMech:005878	SPHAEROTILUS medium	2	only 2 ingredient(s)
 15	bacterial/KOMODO_849_AE_medium.yaml	CultureMech:006656	AE medium	6	only 2/6 ingredients grounded; no pH and no temperature
 15	bacterial/KOMODO_84_ROLLED_OATS_MINERAL_medium.yaml	CultureMech:006657	ROLLED OATS MINERAL medium	2	only 2 ingredient(s)
+15	bacterial/NBRC_1003.yaml	CultureMech:007449	1003	5	no media_term (untraceable to a source catalogue); no pH and no temperature
 15	bacterial/NBRC_1038.yaml	CultureMech:007451	1038	6	no media_term (untraceable to a source catalogue); no pH and no temperature
+15	bacterial/NBRC_1063.yaml	CultureMech:007453	1063	6	no media_term (untraceable to a source catalogue); no pH and no temperature
+15	bacterial/NBRC_1091.yaml	CultureMech:007455	1091	15	no media_term (untraceable to a source catalogue); no pH and no temperature
+15	bacterial/NBRC_1135.yaml	CultureMech:007458	1135	4	no media_term (untraceable to a source catalogue); no pH and no temperature
+15	bacterial/NBRC_1158.yaml	CultureMech:007459	1158	4	no media_term (untraceable to a source catalogue); no pH and no temperature
+15	bacterial/NBRC_1170.yaml	CultureMech:007461	1170	16	no media_term (untraceable to a source catalogue); no pH and no temperature
 15	bacterial/NBRC_1245.yaml	CultureMech:007466	1245	6	no media_term (untraceable to a source catalogue); no pH and no temperature
+15	bacterial/NBRC_1261.yaml	CultureMech:007467	1261	15	no media_term (untraceable to a source catalogue); no pH and no temperature
+15	bacterial/NBRC_1287.yaml	CultureMech:007469	1287	5	no media_term (untraceable to a source catalogue); no pH and no temperature
 15	bacterial/NBRC_1298.yaml	CultureMech:007470	1298	8	no media_term (untraceable to a source catalogue); no pH and no temperature
+15	bacterial/NBRC_1311.yaml	CultureMech:007471	1311	13	no media_term (untraceable to a source catalogue); no pH and no temperature
+15	bacterial/NBRC_229.yaml	CultureMech:007479	229	6	no media_term (untraceable to a source catalogue); no pH and no temperature
+15	bacterial/NBRC_280.yaml	CultureMech:007484	280	5	no media_term (untraceable to a source catalogue); no pH and no temperature
+15	bacterial/NBRC_310.yaml	CultureMech:007486	310	10	no media_term (untraceable to a source catalogue); no pH and no temperature
+15	bacterial/NBRC_393.yaml	CultureMech:007492	393	15	no media_term (untraceable to a source catalogue); no pH and no temperature
+15	bacterial/NBRC_404.yaml	CultureMech:007493	404	10	no media_term (untraceable to a source catalogue); no pH and no temperature
 15	bacterial/NBRC_815.yaml	CultureMech:007495	815	6	no media_term (untraceable to a source catalogue); no pH and no temperature
+15	bacterial/NBRC_838.yaml	CultureMech:007497	838	15	no media_term (untraceable to a source catalogue); no pH and no temperature
+15	bacterial/NBRC_892.yaml	CultureMech:007502	892	5	no media_term (untraceable to a source catalogue); no pH and no temperature
+15	bacterial/NBRC_972.yaml	CultureMech:007509	972	8	no media_term (untraceable to a source catalogue); no pH and no temperature
 15	bacterial/NBRC_YPG_MEDIUM.yaml	CultureMech:007512	YPG Medium	4	no media_term (untraceable to a source catalogue); no pH and no temperature
 15	bacterial/TOGO_M1004_Modified_Growth_Medium_With_23_Total_Salt_Concentration.yaml	CultureMech:007517	Modified Growth Medium With 23% Total Salt Concentration	3	only 1/3 ingredients grounded; no pH and no temperature
 15	bacterial/TOGO_M1050_M30.yaml	CultureMech:007567	M30	7	only 2/7 ingredients grounded; no pH and no temperature
@@ -1014,9 +1014,7 @@ score	file_path	record_id	name	n_ingredients	reasons
 15	bacterial/bordet_gengou_agar_medium.yaml	CultureMech:008893	Bordet Gengou Agar Medium	5	only 1/5 ingredients grounded; no pH and no temperature
 15	bacterial/bordet_gengou_broth_medium.yaml	CultureMech:008894	Bordet Gengou Broth Medium	7	only 2/7 ingredients grounded; no pH and no temperature
 15	bacterial/bordet_gengou_medium_difco.yaml	CultureMech:001546	BORDET-GENGOU-MEDIUM (DIFCO)	8	only 2/8 ingredients grounded; no pH and no temperature
-15	bacterial/brain_heart_infusion_agar_upplemented_with_10_calf_blood_and_antibiotics.yaml	CultureMech:009396	brain–heart infusion agar (upplemented with 10% calf blood and antibiotics)	8	only 3/8 ingredients grounded; no pH and no temperature
 15	bacterial/brain_heart_infusion_broth_supplemented_with_0_1_tris_base_and_0_001_thiamine_monophosphate.yaml	CultureMech:009497	brain-heart infusion broth (supplemented with 0.1% Tris base and 0.001% thiamine monophosphate)	3	only 1/3 ingredients grounded; no pH and no temperature
-15	bacterial/cgy_medium.yaml	CultureMech:008763	CGY Medium	6	only 2/6 ingredients grounded; no pH and no temperature
 15	bacterial/cherry_agar_cbs_formula.yaml	CultureMech:001374	CHERRY AGAR (CBS formula)	2	only 2 ingredient(s)
 15	bacterial/chitin_stock_solution_medium_766.yaml	CultureMech:004269	Chitin stock solution (medium 766)	1	only 1 ingredient(s)
 15	bacterial/chocolate_agar_plates_supplemented_with_1_isovitalex.yaml	CultureMech:009498	chocolate agar plates (supplemented with 1% isovitalex)	3	only 1/3 ingredients grounded; no pH and no temperature
@@ -1039,7 +1037,6 @@ score	file_path	record_id	name	n_ingredients	reasons
 15	bacterial/dinomm_nonitrogen_highnutrient_sucrosec.yaml	CultureMech:015463	DinoMM noNitrogen HighNutrient SucroseC	27	no media_term (untraceable to a source catalogue); no pH and no temperature
 15	bacterial/dsm_15672.yaml	CultureMech:003507	DSM 15672	12	name 'DSM 15672' identifies a strain, not a medium; no pH and no temperature
 15	bacterial/dsm_15673.yaml	CultureMech:003508	DSM 15673	12	name 'DSM 15673' identifies a strain, not a medium; no pH and no temperature
-15	bacterial/eagles_minimum_essential_medium_mem_containing_antibiotics_and_fetal_bovine_serum.yaml	CultureMech:009389	Eagle's  minimum  essential  medium  (MEM) (containing antibiotics and fetal  bovine  serum)	5	only 2/5 ingredients grounded; no pH and no temperature
 15	bacterial/ex_lm_medium.yaml	CultureMech:001028	EX-LM MEDIUM	3	only 1/3 ingredients grounded; no pH and no temperature
 15	bacterial/fastidious_anaerobe_agar.yaml	CultureMech:000653	FASTIDIOUS ANAEROBE AGAR	2	only 2 ingredient(s)
 15	bacterial/fe_iii_nta_solution_medium_1001.yaml	CultureMech:004271	Fe(III)NTA solution (medium 1001)	1	only 1 ingredient(s)
@@ -1071,7 +1068,6 @@ score	file_path	record_id	name	n_ingredients	reasons
 15	bacterial/gam_broth_with_sodium_pyruvate.yaml	CultureMech:002478	GAM BROTH WITH SODIUM PYRUVATE	2	only 2 ingredient(s)
 15	bacterial/glucose_streptococcal_broth_medium.yaml	CultureMech:009419	Glucose streptococcal broth medium	7	only 2/7 ingredients grounded; no pH and no temperature
 15	bacterial/gpy_medium.yaml	CultureMech:008570	GPY medium	5	only 2/5 ingredients grounded; no pH and no temperature
-15	bacterial/guaiacol_cmc_agar.yaml	CultureMech:008241	Guaiacol-CMC Agar	6	only 2/6 ingredients grounded; no pH and no temperature
 15	bacterial/half_strength_skim_milk_agar.yaml	CultureMech:002250	HALF STRENGTH SKIM MILK AGAR	2	only 2 ingredient(s)
 15	bacterial/hayflick_medium.yaml	CultureMech:009333	Hayflick medium	6	only 1/6 ingredients grounded; no pH and no temperature
 15	bacterial/heart_infusion_agar_supplemented_with_5_sheep_blood.yaml	CultureMech:008877	Heart Infusion Agar (supplemented with 5% sheep blood)	3	only 1/3 ingredients grounded; no pH and no temperature
@@ -1104,7 +1100,6 @@ score	file_path	record_id	name	n_ingredients	reasons
 15	bacterial/lb_streptomycin_rifampicin_medium.yaml	CultureMech:008554	LB + Streptomycin, Rifampicin medium	5	only 2/5 ingredients grounded; no pH and no temperature
 15	bacterial/lbs_medium.yaml	CultureMech:009458	LBS medium	5	only 2/5 ingredients grounded; no pH and no temperature
 15	bacterial/leibovitzs_l_15_medium_with_10_fbs_and_1_5_nacl.yaml	CultureMech:003278	LEIBOVITZ'S L-15 MEDIUM WITH 10% FBS AND 1.5% NaCl	3	only 1/3 ingredients grounded; no pH and no temperature
-15	bacterial/levulinic_acid_medium.yaml	CultureMech:008697	Levulinic acid medium	5	only 2/5 ingredients grounded; no pH and no temperature
 15	bacterial/lindane_medium.yaml	CultureMech:000850	LINDANE MEDIUM	2	only 2 ingredient(s)
 15	bacterial/lmg_157_medium.yaml	CultureMech:008429	LMG 157 medium	6	only 2/6 ingredients grounded; no pH and no temperature
 15	bacterial/low_salt_luria_broth_lslb.yaml	CultureMech:009438	Low-Salt Luria-Broth (LSLB)	4	only 1/4 ingredients grounded; no pH and no temperature
@@ -1122,17 +1117,17 @@ score	file_path	record_id	name	n_ingredients	reasons
 15	bacterial/medium_84_modified_for_dsm_40889.yaml	CultureMech:006640	MEDIUM 84 MODIFIED FOR DSM 40889	2	only 2 ingredient(s)
 15	bacterial/medium_84_modified_for_dsm_41697.yaml	CultureMech:006641	MEDIUM 84 MODIFIED FOR DSM 41697	2	only 2 ingredient(s)
 15	bacterial/medium_84_modified_for_dsm_44681.yaml	CultureMech:006642	MEDIUM 84 MODIFIED FOR DSM 44681	2	only 2 ingredient(s)
-15	bacterial/medium_containing_pplo_broth_calf_serum_glucose_penicillin_g_and_tris_hc1.yaml	CultureMech:008829	Medium containing PPLO broth, calf serum, glucose, penicillin G, and Tris-HC1	5	only 1/5 ingredients grounded; no pH and no temperature
+15	bacterial/medium_containing_pplo_broth_calf_serum_glucose_penicillin_g_and_tris_hc1.yaml	CultureMech:008829	Medium containing PPLO broth, calf serum, glucose, penicillin G, and Tris-HC1	5	only 2/5 ingredients grounded; no pH and no temperature
 15	bacterial/medium_h.yaml	CultureMech:008311	medium-H	5	only 2/5 ingredients grounded; no pH and no temperature
 15	bacterial/mineral_salt_solution_medium_289.yaml	CultureMech:004807	Mineral salt solution (medium 289)	1	only 1 ingredient(s)
 15	bacterial/mineral_salt_solution_medium_621.yaml	CultureMech:004808	Mineral salt solution (medium 621)	1	only 1 ingredient(s)
 15	bacterial/mineral_solution_1_medium_1033.yaml	CultureMech:004814	Mineral solution 1 (medium 1033)	1	only 1 ingredient(s)
-15	bacterial/minimal_media.yaml	CultureMech:008900	minimal media	23	only 9/23 ingredients grounded; no pH and no temperature
+15	bacterial/minimal_media.yaml	CultureMech:008900	minimal media	23	only 10/23 ingredients grounded; no pH and no temperature
 15	bacterial/mn_ii_oxidation_medium.yaml	CultureMech:008735	Mn(II) oxidation medium	5	only 2/5 ingredients grounded; no pH and no temperature
 15	bacterial/modified_edwards_medium.yaml	CultureMech:008797	Modified Edward's medium	7	only 3/7 ingredients grounded; no pH and no temperature
 15	bacterial/modified_gam_agar_with_5_horse_blood.yaml	CultureMech:009536	Modified GAM Agar With 5% Horse Blood	3	only 1/3 ingredients grounded; no pH and no temperature
 15	bacterial/modified_hayflick_broth_medium_containing_20_fetal_bovine_serum.yaml	CultureMech:009423	Modified Hayflick broth medium containing 20% fetal bovine serum	7	only 2/7 ingredients grounded; no pH and no temperature
-15	bacterial/modified_hayflick_medium.yaml	CultureMech:008029	Modified Hayflick Medium	8	only 1/8 ingredients grounded; no pH and no temperature
+15	bacterial/modified_hayflick_medium.yaml	CultureMech:008029	Modified Hayflick Medium	8	only 2/8 ingredients grounded; no pH and no temperature
 15	bacterial/modified_hayflick_medium_containing_20_v_v_heat_inactivated_horse_serum.yaml	CultureMech:008811	Modified Hayflick medium containing 20% (v/v) heat-inactivated horse serum	7	only 2/7 ingredients grounded; no pH and no temperature
 15	bacterial/modified_luria_broth.yaml	CultureMech:009490	modified Luria broth	5	only 2/5 ingredients grounded; no pH and no temperature
 15	bacterial/modified_m17_medium.yaml	CultureMech:008804	Modified M17 medium	9	only 2/9 ingredients grounded; no pH and no temperature
@@ -1196,8 +1191,8 @@ score	file_path	record_id	name	n_ingredients	reasons
 15	bacterial/sphaerotilus_medium.yaml	CultureMech:001652	SPHAEROTILUS MEDIUM	2	only 2 ingredient(s)
 15	bacterial/spiroplasma_medium.yaml	CultureMech:009147	Spiroplasma Medium	12	only 3/12 ingredients grounded; no pH and no temperature
 15	bacterial/strength_marine_medium.yaml	CultureMech:008842	½ Strength Marine Medium	3	only 1/3 ingredients grounded; no pH and no temperature
-15	bacterial/tap_auto.yaml	CultureMech:007283	'TAP (auto	17	only 2/17 ingredients grounded; no pH and no temperature
-15	bacterial/tap_hetero_mixo.yaml	CultureMech:007272	'TAP (hetero/mixo	18	only 3/18 ingredients grounded; no pH and no temperature
+15	bacterial/tap_auto.yaml	CultureMech:007283	'TAP (auto	17	only 3/17 ingredients grounded; no pH and no temperature
+15	bacterial/tap_hetero_mixo.yaml	CultureMech:007272	'TAP (hetero/mixo	18	only 4/18 ingredients grounded; no pH and no temperature
 15	bacterial/tcg_medium.yaml	CultureMech:000425	TCG MEDIUM	5	only 2/5 ingredients grounded; no pH and no temperature
 15	bacterial/todd_hewitt_broth_supplemented_with_1_wt_vol_yeast_extract.yaml	CultureMech:009488	Todd Hewitt broth (supplemented with 1% (wt/vol) yeast extract)	3	only 1/3 ingredients grounded; no pH and no temperature
 15	bacterial/todd_hewitt_th_broth_difco_containing_1_5_wt_vol_agar_and_6_vol_vol_sheep_blood.yaml	CultureMech:009445	Todd–Hewitt (TH) broth (Difco) containing 1.5% (wt/vol) agar and 6% (vol/vol) sheep blood	3	only 1/3 ingredients grounded; no pH and no temperature
@@ -1215,7 +1210,6 @@ score	file_path	record_id	name	n_ingredients	reasons
 15	bacterial/togo_medium_m1491.yaml	CultureMech:008036	(Unnamed medium)	6	only 2/6 ingredients grounded; no pH and no temperature
 15	bacterial/togo_medium_m1494.yaml	CultureMech:008039	(Unnamed medium)	5	only 2/5 ingredients grounded; no pH and no temperature
 15	bacterial/togo_medium_m1512.yaml	CultureMech:008057	(Unnamed medium)	6	only 2/6 ingredients grounded; no pH and no temperature
-15	bacterial/togo_medium_m1556.yaml	CultureMech:008104	(Unnamed medium)	5	only 2/5 ingredients grounded; no pH and no temperature
 15	bacterial/togo_medium_m1570.yaml	CultureMech:008119	(Unnamed medium)	3	only 1/3 ingredients grounded; no pH and no temperature
 15	bacterial/togo_medium_m1708.yaml	CultureMech:008270	(Unnamed medium)	5	only 2/5 ingredients grounded; no pH and no temperature
 15	bacterial/togo_medium_m1709.yaml	CultureMech:008271	(Unnamed medium)	5	only 2/5 ingredients grounded; no pH and no temperature
@@ -1262,7 +1256,7 @@ score	file_path	record_id	name	n_ingredients	reasons
 15	bacterial/tsb_yeastextract.yaml	CultureMech:015474	TSB_YeastExtract	6	no media_term (untraceable to a source catalogue); no pH and no temperature
 15	bacterial/universal_medium_for_yeasts_ym.yaml	CultureMech:004210	UNIVERSAL medium FOR YEASTS (YM)	5	only 2/5 ingredients grounded; no pH and no temperature
 15	bacterial/ureaplasma_medium_special_modified_formulation.yaml	CultureMech:008773	Ureaplasma Medium – Special Modified Formulation	13	only 1/13 ingredients grounded; no pH and no temperature
-15	bacterial/vogels_medium_n.yaml	CultureMech:007187	Vogels Medium N	12	only 3/12 ingredients grounded; no pH and no temperature
+15	bacterial/vogels_medium_n.yaml	CultureMech:007187	Vogels Medium N	12	only 5/12 ingredients grounded; no pH and no temperature
 15	bacterial/vr_salts_b.yaml	CultureMech:004981	VR salts B	1	only 1 ingredient(s)
 15	bacterial/wilkins_chalgren_agar_plates_supplemented_with_10_human_blood_and_antibiotics.yaml	CultureMech:009395	Wilkins-Chalgren agar plates (supplemented with 10% human blood and antibiotics)	9	only 2/9 ingredients grounded; no pH and no temperature
 15	bacterial/wolfes_mineral_elixir_medium_792.yaml	CultureMech:004386	Wolfes Mineral Elixir (medium 792)	1	only 1 ingredient(s)
@@ -1676,8 +1670,7 @@ score	file_path	record_id	name	n_ingredients	reasons
 10	bacterial/KOMODO_281_HYPHOMONAS_medium.yaml	CultureMech:004734	HYPHOMONAS medium	3	only 1/3 ingredients grounded
 10	bacterial/KOMODO_302_NUTRIENT_BROTH_WITH_10_HORSE_SERUM.yaml	CultureMech:004809	NUTRIENT BROTH WITH 10% HORSE SERUM	4	only 1/4 ingredients grounded
 10	bacterial/KOMODO_306_NY-AGAR.yaml	CultureMech:004854	NY-AGAR	4	only 1/4 ingredients grounded
-10	bacterial/KOMODO_309_NEOMYCIN_AGAR.yaml	CultureMech:004886	NEOMYCIN AGAR	6	only 1/6 ingredients grounded
-10	bacterial/KOMODO_362_FLAVOBACTERIUM_TIRRENICUM_medium.yaml	CultureMech:005084	FLAVOBACTERIUM TIRRENICUM medium	5	only 2/5 ingredients grounded
+10	bacterial/KOMODO_309_NEOMYCIN_AGAR.yaml	CultureMech:004886	NEOMYCIN AGAR	6	only 2/6 ingredients grounded
 10	bacterial/KOMODO_368_KUNKEE_medium.yaml	CultureMech:005089	KUNKEE medium	6	only 2/6 ingredients grounded
 10	bacterial/KOMODO_381_LB_Luria-Bertani_medium.yaml	CultureMech:005128	LB (Luria-Bertani) medium	4	only 1/4 ingredients grounded
 10	bacterial/KOMODO_391-1_For_DSM_4254.yaml	CultureMech:005173	For DSM 4254	30	name 'For DSM 4254' identifies a strain, not a medium
@@ -1726,7 +1719,6 @@ score	file_path	record_id	name	n_ingredients	reasons
 10	bacterial/flavobacterium_aquatile_medium.yaml	CultureMech:000451	FLAVOBACTERIUM AQUATILE MEDIUM	5	only 2/5 ingredients grounded
 10	bacterial/flavobacterium_m1_agar.yaml	CultureMech:002882	FLAVOBACTERIUM M1 AGAR	5	only 2/5 ingredients grounded
 10	bacterial/flavobacterium_medium.yaml	CultureMech:002378	FLAVOBACTERIUM MEDIUM	3	only 1/3 ingredients grounded
-10	bacterial/flavobacterium_tirrenicum_medium.yaml	CultureMech:001463	FLAVOBACTERIUM TIRRENICUM MEDIUM	5	only 2/5 ingredients grounded
 10	bacterial/for_dsm12681.yaml	CultureMech:006704	For DSM12681	34	name 'For DSM12681' identifies a strain, not a medium
 10	bacterial/for_dsm_1083.yaml	CultureMech:004088	For DSM 1083	15	name 'For DSM 1083' identifies a strain, not a medium
 10	bacterial/for_dsm_1085.yaml	CultureMech:004090	For DSM 1085	15	name 'For DSM 1085' identifies a strain, not a medium
@@ -2056,7 +2048,7 @@ score	file_path	record_id	name	n_ingredients	reasons
 10	bacterial/mrs_medium_with_10_tomato_juice.yaml	CultureMech:003148	MRS MEDIUM WITH 10% TOMATO JUICE	3	only 1/3 ingredients grounded
 10	bacterial/mycoplasma_medium.yaml	CultureMech:003105	MYCOPLASMA MEDIUM	4	only 1/4 ingredients grounded
 10	bacterial/nbrc_274_medium.yaml	CultureMech:000832	NBRC 274 MEDIUM	5	only 2/5 ingredients grounded
-10	bacterial/neomycin_agar.yaml	CultureMech:001407	NEOMYCIN AGAR	6	only 1/6 ingredients grounded
+10	bacterial/neomycin_agar.yaml	CultureMech:001407	NEOMYCIN AGAR	6	only 2/6 ingredients grounded
 10	bacterial/nutrient_agar.yaml	CultureMech:001297	NUTRIENT AGAR	3	only 1/3 ingredients grounded
 10	bacterial/nutrient_broth_with_0_5_nacl.yaml	CultureMech:002463	NUTRIENT BROTH WITH 0.5% NaCl	3	only 1/3 ingredients grounded
 10	bacterial/nutrient_broth_with_10_horse_serum.yaml	CultureMech:001402	NUTRIENT BROTH WITH 10% HORSE SERUM	4	only 1/4 ingredients grounded

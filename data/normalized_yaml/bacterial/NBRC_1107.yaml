@@ -11,6 +11,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: CHEBI:63005
+    label: sodium nitrate
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.1'
@@ -23,6 +26,9 @@ ingredients:
   concentration:
     value: '0.22'
     unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
 - preferred_term: CaCl2·6H2O
   concentration:
     value: '0.03'
@@ -39,6 +45,9 @@ ingredients:
   concentration:
     value: '1'
     unit: L
+  term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -81,6 +90,11 @@ curation_history:
   notes: Re-parsed the NBRC medium 1106 composition table from the preserved scrape;
     8 ingredient(s) restored, 1 stock solution(s) nested rather than flattened, 1
     unparsed solution blob(s) removed (#299).
+- timestamp: '2026-08-20T19:01:15.757466+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 5 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 solutions:
 - preferred_term: Trace metal solution
   composition:
@@ -104,6 +118,9 @@ solutions:
     concentration:
       value: '0.1'
       unit: G_PER_L
+    term:
+      id: CHEBI:33118
+      label: boric acid
   - preferred_term: CoCl2·6H2O
     concentration:
       value: '0.08'
@@ -112,6 +129,9 @@ solutions:
     concentration:
       value: '1'
       unit: L
+    term:
+      id: CHEBI:15377
+      label: water
   name: Trace metal solution
 notes: pH 7 Dispense the medium into suitable culture vessels, seal with butyl rubber
   stoppers, and autoclave at 121°C for 15 min. After cooling to room temperature,

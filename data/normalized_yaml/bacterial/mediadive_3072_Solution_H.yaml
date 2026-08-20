@@ -48,6 +48,9 @@ composition:
   term:
     id: mediadive.compound:1360
     label: Folinic acid
+  chebi_term:
+    id: CHEBI:15640
+    label: 5-formyltetrahydrofolic acid
 - preferred_term: Nicotinamide
   concentration:
     value: '0.05'
@@ -105,7 +108,8 @@ curation_history:
 - timestamp: '2026-06-14T05:58:58.561437+00:00'
   curator: idnf-grounding-fix-v1.0
   action: Fixed ID_NOT_FOUND term groundings
-  notes: 'Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI, 1 de-grounded (mixture or unverifiable).'
+  notes: Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI,
+    1 de-grounded (mixture or unverifiable).
 - timestamp: '2026-03-13T06:20:25.072987Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -133,6 +137,11 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 4 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-08-20T19:02:10.588590+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 ingredients:
 - preferred_term: See source for composition
   concentration:

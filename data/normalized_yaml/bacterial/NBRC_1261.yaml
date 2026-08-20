@@ -11,14 +11,23 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
 - preferred_term: NH4Cl
   concentration:
     value: '0.25'
     unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: NaCl
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: MgCl2·6H2O
   concentration:
     value: '0.4'
@@ -27,6 +36,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.15'
@@ -35,6 +47,9 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -43,10 +58,16 @@ ingredients:
   concentration:
     value: '1'
     unit: MG_PER_L
+  term:
+    id: CHEBI:8806
+    label: Resazurin
 - preferred_term: Sodium acetate
   concentration:
     value: '2.73'
     unit: G_PER_L
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: Trace element mixture*
   concentration:
     value: '1'
@@ -67,6 +88,9 @@ ingredients:
   concentration:
     value: '970'
     unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -109,6 +133,11 @@ curation_history:
   notes: Re-parsed the NBRC medium 1257 composition table from the preserved scrape;
     15 ingredient(s) restored, 4 stock solution(s) nested rather than flattened, 1
     unparsed solution blob(s) removed (#299).
+- timestamp: '2026-08-20T19:01:15.841315+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 15 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 solutions:
 - preferred_term: Trace element mixture
   composition:
@@ -124,6 +153,9 @@ solutions:
     concentration:
       value: '30'
       unit: MG_PER_L
+    term:
+      id: CHEBI:33118
+      label: boric acid
   - preferred_term: MnCl2·4H2O
     concentration:
       value: '100'
@@ -152,6 +184,9 @@ solutions:
     concentration:
       value: '987'
       unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
   name: Trace element mixture
 - preferred_term: Selenite-tungstate solution
   composition:
@@ -159,6 +194,9 @@ solutions:
     concentration:
       value: '0.4'
       unit: G_PER_L
+    term:
+      id: CHEBI:32145
+      label: sodium hydroxide
   - preferred_term: Na2SeO3·5H2O
     concentration:
       value: '6'
@@ -171,6 +209,9 @@ solutions:
     concentration:
       value: '1'
       unit: L
+    term:
+      id: CHEBI:15377
+      label: water
   name: Selenite-tungstate solution
 - preferred_term: Bicarbonate solution (1.0 M)
   composition:
@@ -178,10 +219,16 @@ solutions:
     concentration:
       value: '8.4'
       unit: G_PER_L
+    term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
   - preferred_term: Distilled water
     concentration:
       value: '100'
       unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
   name: Bicarbonate solution (1.0 M)
 - preferred_term: Sulfide solution (1.0 M)
   composition:
@@ -193,6 +240,9 @@ solutions:
     concentration:
       value: '50'
       unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
   name: Sulfide solution (1.0 M)
 notes: pH 6.8-7.0 Mix ingredients except for bicarbonate and sulfide solutions. Dispense
   the medium into suitable culture vessels under a stream of nitrogen gas, seal with

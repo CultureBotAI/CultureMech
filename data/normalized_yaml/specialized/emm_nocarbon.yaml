@@ -42,6 +42,9 @@ ingredients:
     value: '0.028'
     unit: G_PER_L
   notes: 'CAS: 15708-41-5; MW: 367.05'
+  term:
+    id: CHEBI:78292
+    label: sodium feredetate
 - preferred_term: Magnesium Sulfate Heptahydrate
   concentration:
     value: '0.2'
@@ -80,5 +83,10 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
+- timestamp: '2026-08-20T19:03:21.239950+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 data_quality_flags:
 - has_unmapped_ingredients

@@ -66,6 +66,11 @@ curation_history:
     step (#276): H BO -> H3BO3; Co(NO ) .6H O -> Co(NO3)2.6H2O; K SO -> K2SO4. The
     corrupted original is preserved in each ingredient''s notes.'
   changes: 3 preferred_term(s) repaired
+- timestamp: '2026-08-20T19:00:48.453731+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 references:
 - reference: CCAP:SP
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_SP.pdf
@@ -334,13 +339,16 @@ ingredients:
   source: CCAP Medium MR_SP.pdf
   notes: From CCAP Medium MR_SP.pdf; Curated from CCAP Medium MR_SP.pdf specification
 - preferred_term: K2SO4
-  notes: 'Ontology mapping not yet available; From CCAP Medium MR_SP.pdf; Curated
-    from CCAP Medium MR_SP.pdf specification Name repaired (#276): the source string
-    `K SO` had lost its subscript digits; restored to `K2SO4` — potassium sulfate.'
+  notes: 'From CCAP Medium MR_SP.pdf; Curated from CCAP Medium MR_SP.pdf specification
+    Name repaired (#276): the source string `K SO` had lost its subscript digits;
+    restored to `K2SO4` — potassium sulfate.'
   concentration:
     value: '2.00'
     unit: G_PER_L
   source: CCAP Medium MR_SP.pdf
+  term:
+    id: CHEBI:32036
+    label: potassium sulfate
 - preferred_term: NaCl
   term:
     id: CHEBI:26710

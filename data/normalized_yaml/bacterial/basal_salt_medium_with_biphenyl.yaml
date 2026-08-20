@@ -24,6 +24,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:17097
+    label: biphenyl
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -204,6 +207,11 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-20T19:01:33.764138+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 solutions:
 - preferred_term: 20 x PO4*
   composition: []

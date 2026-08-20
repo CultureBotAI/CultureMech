@@ -15,30 +15,51 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  term:
+    id: CHEBI:17234
+    label: glucose
 - preferred_term: L-Leucine
   concentration:
     value: '60'
     unit: MG_PER_L
+  term:
+    id: CHEBI:15603
+    label: L-leucine
 - preferred_term: L-Histidine
   concentration:
     value: '20'
     unit: MG_PER_L
+  term:
+    id: CHEBI:15971
+    label: L-histidine
 - preferred_term: L-Tryptophan
   concentration:
     value: '20'
     unit: MG_PER_L
+  term:
+    id: CHEBI:16828
+    label: L-tryptophan
 - preferred_term: L-Methionine
   concentration:
     value: '20'
     unit: MG_PER_L
+  term:
+    id: CHEBI:16643
+    label: L-methionine
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: L
+  term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Agar
   concentration:
     value: '15'
     unit: G_PER_L
+  term:
+    id: CHEBI:2509
+    label: agar
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -79,3 +100,8 @@ curation_history:
   notes: Re-parsed the NBRC medium 114 composition table from the preserved scrape;
     8 ingredient(s) restored, 0 stock solution(s) nested rather than flattened, 0
     unparsed solution blob(s) removed (#299).
+- timestamp: '2026-08-20T19:01:15.782198+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 7 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).

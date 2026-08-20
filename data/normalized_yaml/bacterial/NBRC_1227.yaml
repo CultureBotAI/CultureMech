@@ -11,10 +11,16 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: KH2PO4
   concentration:
     value: '0.27'
     unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.25'
@@ -27,10 +33,16 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: Glucose
   concentration:
     value: '10'
     unit: G_PER_L
+  term:
+    id: CHEBI:17234
+    label: glucose
 - preferred_term: Yeast extract
   concentration:
     value: '3'
@@ -47,6 +59,9 @@ ingredients:
   concentration:
     value: '1'
     unit: MG_PER_L
+  term:
+    id: CHEBI:8806
+    label: Resazurin
 - preferred_term: Trace element solution*
   concentration:
     value: '1'
@@ -59,6 +74,9 @@ ingredients:
   concentration:
     value: '1'
     unit: L
+  term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -101,6 +119,11 @@ curation_history:
   notes: Re-parsed the NBRC medium 1226 composition table from the preserved scrape;
     13 ingredient(s) restored, 2 stock solution(s) nested rather than flattened, 1
     unparsed solution blob(s) removed (#299).
+- timestamp: '2026-08-20T19:01:15.823919+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 17 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 solutions:
 - preferred_term: Trace element solution
   composition:
@@ -128,6 +151,9 @@ solutions:
     concentration:
       value: '0.1'
       unit: G_PER_L
+    term:
+      id: CHEBI:49976
+      label: zinc dichloride
   - preferred_term: CuCl2·2H2O
     concentration:
       value: '25'
@@ -136,6 +162,9 @@ solutions:
     concentration:
       value: '10'
       unit: MG_PER_L
+    term:
+      id: CHEBI:33118
+      label: boric acid
   - preferred_term: Na2MoO4·2H2O
     concentration:
       value: '24'
@@ -152,10 +181,16 @@ solutions:
     concentration:
       value: '26'
       unit: MG_PER_L
+    term:
+      id: CHEBI:48843
+      label: disodium selenite
   - preferred_term: Distilled water
     concentration:
       value: '1'
       unit: L
+    term:
+      id: CHEBI:15377
+      label: water
   name: Trace element solution
 - preferred_term: Vitamin solution
   composition:
@@ -163,10 +198,16 @@ solutions:
     concentration:
       value: '2'
       unit: MG_PER_L
+    term:
+      id: CHEBI:15956
+      label: biotin
   - preferred_term: Folic acid
     concentration:
       value: '2'
       unit: MG_PER_L
+    term:
+      id: CHEBI:27470
+      label: folic acid
   - preferred_term: Pyridoxine-HCl
     concentration:
       value: '10'
@@ -175,14 +216,23 @@ solutions:
     concentration:
       value: '5'
       unit: MG_PER_L
+    term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
   - preferred_term: Riboflavin
     concentration:
       value: '5'
       unit: MG_PER_L
+    term:
+      id: CHEBI:17015
+      label: riboflavin
   - preferred_term: Nicotinic acid
     concentration:
       value: '5'
       unit: MG_PER_L
+    term:
+      id: CHEBI:15940
+      label: nicotinic acid
   - preferred_term: Ca-pantothenate
     concentration:
       value: '5'
@@ -191,6 +241,9 @@ solutions:
     concentration:
       value: '1'
       unit: MG_PER_L
+    term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
   - preferred_term: Vitamin B12
     concentration:
       value: '5'
@@ -203,6 +256,9 @@ solutions:
     concentration:
       value: '1'
       unit: L
+    term:
+      id: CHEBI:15377
+      label: water
   name: Vitamin solution
 notes: pH unajusted Mix ingredients except vitamin, bicarbonate, cysteine and sulfide,
   and dispense the medium into suitable culture vessels under a stream of N2/CO2 (80/20)

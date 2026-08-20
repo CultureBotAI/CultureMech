@@ -148,11 +148,17 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:40009
+    label: D-cycloserine
 - preferred_term: Cefoxitin
   notes: 'Role: Antimicrobial agent'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:209807
+    label: cefoxitin
 media_term:
   preferred_term: TOGO Medium M2811
   term:
@@ -217,3 +223,8 @@ curation_history:
   notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-08-20T19:01:35.947214+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 2 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).

@@ -11,6 +11,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  term:
+    id: CHEBI:63043
+    label: potassium nitrate
 - preferred_term: Na-glycerophosphate
   concentration:
     value: '0.1'
@@ -77,6 +80,11 @@ curation_history:
   notes: Re-parsed the NBRC medium 1183 composition table from the preserved scrape;
     7 ingredient(s) restored, 1 stock solution(s) nested rather than flattened, 1
     unparsed solution blob(s) removed (#299).
+- timestamp: '2026-08-20T19:01:15.801785+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 4 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 solutions:
 - preferred_term: Trace elements
   composition:
@@ -84,6 +92,9 @@ solutions:
     concentration:
       value: '2.85'
       unit: G_PER_L
+    term:
+      id: CHEBI:33118
+      label: boric acid
   - preferred_term: MnCl2·4H2O
     concentration:
       value: '1.8'
@@ -104,6 +115,9 @@ solutions:
     concentration:
       value: '20.8'
       unit: MG_PER_L
+    term:
+      id: CHEBI:49976
+      label: zinc dichloride
   - preferred_term: CoCl2·6H2O
     concentration:
       value: '40.4'
@@ -116,5 +130,8 @@ solutions:
     concentration:
       value: '1000'
       unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
   name: Trace elements
 notes: pH 7.0 Artificial sea water is prepared from a marine aquarium salts mixture.

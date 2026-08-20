@@ -85,6 +85,9 @@ ingredients:
     value: '5.00E-02'
     unit: G_PER_L
   notes: 'CAS: 25301-02-4'
+  term:
+    id: CHEBI:141517
+    label: tyloxapol
 description: Minimal media for Mycobacterium tuberculosis (H37Rv) with no carbon source
 notes: 'Source: FEBA media definitions'
 category: specialized
@@ -105,5 +108,10 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
+- timestamp: '2026-08-20T19:03:24.208209+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 data_quality_flags:
 - has_unmapped_ingredients

@@ -15,18 +15,30 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 - preferred_term: K2HPO4
   concentration:
     value: '0.2'
     unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: KCl
   concentration:
     value: '0.1'
     unit: G_PER_L
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: L
+  term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -69,6 +81,11 @@ curation_history:
   notes: Re-parsed the NBRC medium 1002 composition table from the preserved scrape;
     5 ingredient(s) restored, 0 stock solution(s) nested rather than flattened, 1
     unparsed solution blob(s) removed (#299).
+- timestamp: '2026-08-20T19:01:15.691661+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 4 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 notes: Adjust pH to 2.0 with H2SO4. Heterotrophic growth on yeast extract Add 10 mg/l
   of FeSO4·7H2O to the medium. After autoclaving, add yeast extract from sterile stock
   solution to final concentration of 0.25 g/l. Autotrophic growth on ferrous sulfate

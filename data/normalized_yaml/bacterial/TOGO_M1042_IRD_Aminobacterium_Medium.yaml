@@ -105,6 +105,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
     Organic compound'
+  term:
+    id: CHEBI:17115
+    label: L-serine
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '2'
@@ -196,6 +199,11 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-20T19:01:16.471639+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 solutions:
 - preferred_term: Trace element solution (see Medium [M439])
   composition: []

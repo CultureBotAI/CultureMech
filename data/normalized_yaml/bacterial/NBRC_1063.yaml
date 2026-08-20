@@ -19,14 +19,23 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Urea
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: CHEBI:16199
+    label: urea
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: L
+  term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -70,4 +79,9 @@ curation_history:
   notes: Re-parsed the NBRC medium 1062 composition table from the preserved scrape;
     6 ingredient(s) restored, 0 stock solution(s) nested rather than flattened, 0
     unparsed solution blob(s) removed (#299).
+- timestamp: '2026-08-20T19:01:15.731395+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 3 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 notes: Adjust pH to 8.5 with 50 mM Tris-HCl buffer.

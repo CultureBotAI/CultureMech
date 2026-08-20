@@ -84,6 +84,9 @@ ingredients:
     value: '0.074'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ade'
+  term:
+    id: CHEBI:16708
+    label: adenine
 - preferred_term: Inosine
   concentration:
     value: '0.01864'
@@ -96,6 +99,9 @@ ingredients:
   concentration:
     value: '3.456'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:29995
+    label: aspartate(2-)
 - preferred_term: Glycine
   term:
     id: CHEBI:15428
@@ -250,6 +256,9 @@ ingredients:
   concentration:
     value: '3.01'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:25094
+    label: lysine
 - preferred_term: Proline
   term:
     id: CHEBI:26271
@@ -308,6 +317,9 @@ ingredients:
     value: '2.839'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ascb-L'
+  term:
+    id: CHEBI:22651
+    label: ascorbate
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '14.31'
@@ -412,6 +424,9 @@ ingredients:
   concentration:
     value: '1.931'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:26986
+    label: threonine
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -472,6 +487,11 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-20T19:01:38.247600+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 5 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 media_term:
   preferred_term: MediaDB Medium 322
   term:

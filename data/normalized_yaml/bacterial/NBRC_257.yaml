@@ -19,14 +19,23 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
 - preferred_term: KCl
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: NH4Cl
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.24'
@@ -43,10 +52,16 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
 - preferred_term: NaCl
   concentration:
     value: '250'
     unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Distilled water, make up to
   concentration:
     value: '1'
@@ -97,6 +112,11 @@ curation_history:
   notes: Re-parsed the NBRC medium 256 composition table from the preserved scrape;
     12 ingredient(s) restored, 0 stock solution(s) nested rather than flattened, 1
     unparsed solution blob(s) removed (#299).
+- timestamp: '2026-08-20T19:01:15.953066+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 5 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 notes: Adjust pH to 6.5 before autoclaving. Sterilize Na2CO3 in solution separately,
   and add to other autoclaved ingredients. Check the final pH is between 9.0 - 9.5.
   Dissolve agar by heating before adding NaCl.

@@ -45,6 +45,9 @@ ingredients:
     unit: MG_PER_ML
   notes: Selective agent; added aseptically to a final concentration of 1.0 mg/ml
     per preparation step 2.
+  term:
+    id: CHEBI:7507
+    label: neomycin
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -83,6 +86,11 @@ curation_history:
   notes: Added neomycin 1.0 mg/ml, recovered from the record's own preparation_steps
     / source duplicate (#181)
   changes: Added ingredient Neomycin (1.0 MG_PER_ML)
+- timestamp: '2026-08-20T19:02:59.978214+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_309_NEOMYCIN_AGAR.yaml
   relationship: SOURCE_DUPLICATE

@@ -56,6 +56,11 @@ curation_history:
     step (#276): Ca(NO ) .4H O -> Ca(NO3)2.4H2O; K CO -> K2CO3. The corrupted original
     is preserved in each ingredient''s notes.'
   changes: 2 preferred_term(s) repaired
+- timestamp: '2026-08-20T19:00:48.242777+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 references:
 - reference: CCAP:MHY
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_MHY.pdf
@@ -98,13 +103,16 @@ ingredients:
   source: CCAP Medium MR_MHY.pdf
   notes: From CCAP Medium MR_MHY.pdf; Curated from CCAP Medium MR_MHY.pdf specification
 - preferred_term: K2CO3
-  notes: 'Ontology mapping not yet available; From CCAP Medium MR_MHY.pdf; Curated
-    from CCAP Medium MR_MHY.pdf specification Name repaired (#276): the source string
-    `K CO` had lost its subscript digits; restored to `K2CO3` — potassium carbonate.'
+  notes: 'From CCAP Medium MR_MHY.pdf; Curated from CCAP Medium MR_MHY.pdf specification
+    Name repaired (#276): the source string `K CO` had lost its subscript digits;
+    restored to `K2CO3` — potassium carbonate.'
   concentration:
     value: '0.345'
     unit: G_PER_L
   source: CCAP Medium MR_MHY.pdf
+  term:
+    id: CHEBI:131526
+    label: potassium carbonate
 - preferred_term: MgSO .7H2O
   notes: Ontology mapping not yet available; From CCAP Medium MR_MHY.pdf; Curated
     from CCAP Medium MR_MHY.pdf specification

@@ -102,6 +102,9 @@ composition:
   term:
     id: mediadive.compound:1814
     label: Thioglycollic acid
+  chebi_term:
+    id: CHEBI:30065
+    label: thioglycolic acid
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -159,6 +162,11 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-08-20T19:02:19.428170+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 ingredients:
 - preferred_term: See source for composition
   concentration:

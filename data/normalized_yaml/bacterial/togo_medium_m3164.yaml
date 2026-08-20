@@ -339,6 +339,9 @@ ingredients:
     value: '4'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
+  term:
+    id: CHEBI:91247
+    label: L-cysteine hydrochloride
 media_term:
   preferred_term: TOGO Medium M3164
   term:
@@ -400,7 +403,10 @@ curation_history:
 - timestamp: '2026-06-08T23:19:51.780434+00:00'
   curator: chebi-regrounding-v1.0
   action: Corrected CHEBI ingredient grounding (shared-id regrounding audit, G21/G22/G24)
-  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more ingredient groundings on this record that had been collapsed onto a chemically non-specific or shared CHEBI id were re-grounded to the correct chemically-specific term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
+  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more
+    ingredient groundings on this record that had been collapsed onto a chemically
+    non-specific or shared CHEBI id were re-grounded to the correct chemically-specific
+    term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
 - timestamp: '2026-06-10T06:58:37.988328+00:00'
   curator: mgso4-heptahydrate-term-fix-v1.0
   action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
@@ -411,6 +417,11 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-20T19:03:15.198842+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 high_metal: true
 solutions:
 - preferred_term: Trace Elements Solution

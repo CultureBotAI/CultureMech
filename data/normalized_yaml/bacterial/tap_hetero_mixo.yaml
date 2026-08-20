@@ -37,6 +37,9 @@ ingredients:
     value: '0.51'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:so4'
+  term:
+    id: CHEBI:16189
+    label: sulfate
 - preferred_term: Copper
   concentration:
     value: '0.0063'
@@ -141,6 +144,11 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-08-20T19:03:09.890865+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 media_term:
   preferred_term: MediaDB Medium 36
   term:

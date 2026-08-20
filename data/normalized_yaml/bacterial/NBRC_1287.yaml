@@ -19,14 +19,23 @@ ingredients:
   concentration:
     value: '3.3'
     unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: L
+  term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Agar
   concentration:
     value: '15'
     unit: G_PER_L
+  term:
+    id: CHEBI:2509
+    label: agar
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -67,4 +76,9 @@ curation_history:
   notes: Re-parsed the NBRC medium 1286 composition table from the preserved scrape;
     5 ingredient(s) restored, 0 stock solution(s) nested rather than flattened, 0
     unparsed solution blob(s) removed (#299).
+- timestamp: '2026-08-20T19:01:15.862429+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 3 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 notes: pH 7.0 Biphenyl crystal is supplied on a lid of petri dish as vapor phase.

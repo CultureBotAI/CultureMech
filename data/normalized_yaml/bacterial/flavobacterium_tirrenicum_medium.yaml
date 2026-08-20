@@ -36,6 +36,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  term:
+    id: CHEBI:16000
+    label: ethanolamine
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -80,6 +83,11 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-08-20T19:01:44.271028+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 kg_microbe_match: mediadive.medium:101
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_362_FLAVOBACTERIUM_TIRRENICUM_medium.yaml
