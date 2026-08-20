@@ -1,0 +1,49 @@
+mech: CultureMech
+target: culturing media and explicit organism-medium growth claims
+default_focus: growth_evidence
+evidence_policy: Curate only explicit source-backed growth; keep strain, formulation, and condition uncertainty visible.
+focuses:
+  growth_evidence:
+    label: organism growth on an exact medium or defensible MediaVariant
+    objective: Find strain-specific growth observations, identifiers, formulation matches, and culture conditions.
+    source_priorities:
+      - primary cultivation studies and PubMed/PMC
+      - DSMZ, JCM, ATCC, NBRC, CCAP, and other culture collections
+      - MediaDive and NCBI strain/genome records
+    provider_adjustments: {falcon: 4, asta: 3, openscientist: 3, claude_code: 2, consensus: 1}
+    stages:
+      discovery:
+        objective: Retrieve papers, passages, collection pages, and strain records broadly.
+        capabilities: {academic_search: 4, scientific_literature: 4, citation_tracking: 3, web_search: 2, structured_databases: 2, snippets: 2}
+        speed_weight: 1
+        cost_weight: 1
+      synthesis:
+        objective: Reconcile the exact formulation, MediaVariant boundary, strain identity, and conditions.
+        capabilities: {scientific_literature: 4, citation_tracking: 4, synthesis: 4, structured_databases: 2}
+        synthesis_weight: 2
+      verification:
+        objective: Cross-check every organism-medium claim and identifier against a second source/provider.
+        capabilities: {citation_tracking: 5, scientific_literature: 3, academic_search: 3, snippets: 2}
+        speed_weight: 1
+        cost_weight: 1
+  formulation:
+    label: recipe formulation, stock solutions, and preparation conditions
+    objective: Resolve exact ingredient amounts, stock compositions, pH, sterilization, atmosphere, and provenance.
+    source_priorities:
+      - culture collection recipe pages and archived manuals
+      - primary methods sections and supplements
+      - authoritative institutional protocol pages
+    provider_adjustments: {claude_code: 4, perplexity: 3, falcon: 2, asta: 1}
+    stages:
+      discovery:
+        objective: Search web manuals, institutional pages, literature, and supplements.
+        capabilities: {web_search: 5, structured_databases: 3, academic_search: 2, citation_tracking: 3}
+        speed_weight: 1
+      synthesis:
+        objective: Reconcile recipe variants without collapsing materially distinct parent media.
+        capabilities: {synthesis: 5, citation_tracking: 4, web_search: 3, scientific_literature: 2}
+        synthesis_weight: 2
+      verification:
+        objective: Verify quantities, units, solution references, and source lineage.
+        capabilities: {citation_tracking: 5, web_search: 3, snippets: 2}
+        cost_weight: 1

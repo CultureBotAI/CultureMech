@@ -60,7 +60,12 @@ dev = [
     "black>=23.0.0",
     "ruff>=0.1.0",
     "mypy>=1.5.0",
-    "deep-research-client[cyberian]>=0.2.4; python_version >= '3.12'",
+    # No [cyberian] extra: `cyberian` is a BASE dependency of deep-research-client
+    # anyway, so the extra added nothing but the appearance of a deliberate
+    # choice. Cyberian is a wrapper around an `agentapi` service on
+    # localhost:3284 that we do not run, and it brings no LLM access of its own
+    # (zero model deps). See #284.
+    "deep-research-client>=0.2.10; python_version >= '3.12'",
     # Used by scripts/research_media_edison.py — both arrive transitively
     # via deep-research-client today, but declare them explicitly so
     # fresh `uv run --extra dev ...` doesn't break if those transitives

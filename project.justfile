@@ -52,6 +52,24 @@ fetch-raw-data:
 #     just research-entity claude_code ko2_no3 growth_evidence --dry-run
 # Omitting the focus and passing a flag third would bind the flag to `focus`.
 # `research-media` below takes no positional focus for exactly that reason.
+#
+# Provider choice, measured on one shared question (#284). "Available" in
+# `deep-research-client providers` means only that the env var is set — falcon
+# lists as available and returns HTTP 402, so it is billing-blocked.
+#
+#   provider        time   chars   URLs  PMIDs  notes
+#   openscientist   490s  21,518      6      2  best analysis; async job + polling
+#   claude_code     295s  20,876     22      5  widest source coverage; no credentials
+#   codex          439s  10,813     27      -  via `just research-media-codex`
+#   falcon            6s       -      -      -  HTTP 402 Payment Required
+#   cyberian         21s       -      -      -  HTTP 500 — wraps an agentapi service
+#                                               on localhost:3284 that is not running;
+#                                               brings no LLM access of its own
+#
+# Pick claude_code for MANY citable sources (#150, #279); openscientist when
+# reasoning quality matters more than breadth; codex for cheap sweeps.
+#
+# Deep research for one medium via deep-research-client (see table above).
 [group('Research')]
 research-entity provider target focus="growth_evidence" *args="":
     uv run --extra dev python scripts/research_media.py \
@@ -84,10 +102,30 @@ research-providers:
 research-provider provider:
     uv run --extra dev python scripts/research_media.py --provider {{provider}} --provider-info
 
+# Rank deep-research providers for a CultureMech-specific focus. The profile
+# separates source discovery, synthesis, and independent verification.
+[group('Research')]
+deep-research-providers focus="growth_evidence" *args="":
+    uv run --extra dev python scripts/deep_research_provider.py \
+      --config conf/deep_research_provider.yaml --focus {{focus}} {{args}}
+
+# Show one provider's fit, capabilities, limitations, and local availability.
+[group('Research')]
+deep-research-provider provider focus="growth_evidence" *args="":
+    uv run --extra dev python scripts/deep_research_provider.py \
+      --config conf/deep_research_provider.yaml --provider {{provider}} \
+      --focus {{focus}} {{args}}
+
 # Edison Scientific deep research via the `edison-client` SDK. Default
 # job is LITERATURE (PaperQA3). Pass `--job literature-high` etc. via
 # *args. Requires EDISON_PLATFORM_API_KEY (or EDISON_API_KEY) in env
 # or .env. See scripts/research_media_edison.py for details.
+# Media research via the local Codex CLI (#284). Needs `codex` on PATH and
+# web_search enabled in ~/.codex/config.toml; both are checked before it runs.
+[group('Research')]
+research-media-codex target *args="":
+    uv run --extra dev python scripts/research_media_codex.py --target {{target}} {{args}}
+
 [group('Research')]
 research-media-edison target *args="":
     uv run --extra dev python scripts/research_media_edison.py \

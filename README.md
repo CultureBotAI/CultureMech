@@ -701,6 +701,24 @@ See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for detailed guidelines.
 - **LinkML**: https://linkml.io/
 - **Biolink Model**: https://biolink.github.io/biolink-model/
 
+## Deep Research Provider Triage
+
+CultureMech uses the same multi-provider pattern as public DisMech, with a
+media-specific evidence target. Rank providers for organism-growth evidence or
+recipe formulation before starting a paid run:
+
+```bash
+just deep-research-providers
+just deep-research-providers formulation
+just deep-research-provider asta growth_evidence
+just research-media falcon <media-id-or-path> --dry-run
+```
+
+The triage separates discovery, synthesis, and verification and reports local
+availability without printing credentials. Provider output remains candidate
+evidence: curate a growth claim only after confirming the exact strain, medium
+or `MediaVariant`, conditions, and source.
+
 ## 📄 License
 
 <a href="http://creativecommons.org/publicdomain/zero/1.0/">
