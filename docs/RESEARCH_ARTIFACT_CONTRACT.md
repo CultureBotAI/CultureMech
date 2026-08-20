@@ -33,6 +33,22 @@ non-default focus, or use `research-entity`.
 
 `just research-focuses` prints the table below from the code.
 
+### Passing options to deep-research-client
+
+Client flags go after a `--` separator:
+
+```
+just research-entity claude_code ko2_no3 formulation --dry-run -- --max-cost 1
+just research-media  claude_code ko2_no3 --dry-run -- --max-cost 1
+```
+
+Without the separator, argparse claims the flag as one of the runner's own and
+rejects it (`unrecognized arguments: --max-cost`). That is #297, and until it was
+fixed no client flag was reachable through the runner at all — the unit tests
+missed it because they call `build_command` directly, where passthrough always
+worked. The separator itself is stripped before the command is built, so the
+child never sees a bare `--`.
+
 ### Focuses
 
 | focus | template | question it asks |

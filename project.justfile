@@ -47,6 +47,10 @@ fetch-raw-data:
 # here, which is what let `--focus formulation` rank providers for formulation
 # work and then research growth evidence anyway.
 #
+# Options for deep-research-client go after a `--` separator:
+#     just research-entity claude_code ko2_no3 formulation --dry-run -- --max-cost 1
+# Without it argparse claims the flag as the runner's own and rejects it (#297).
+#
 # `focus` is POSITIONAL, so flags must come after it:
 #     just research-entity claude_code ko2_no3 formulation --dry-run
 #     just research-entity claude_code ko2_no3 growth_evidence --dry-run
