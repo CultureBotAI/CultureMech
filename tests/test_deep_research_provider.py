@@ -136,6 +136,26 @@ def test_provider_adjustments_explicit_null_is_rejected(tmp_path):
         drp.load_config(profile)
 
 
+def test_provider_adjustments_null_value_is_rejected(tmp_path):
+    """The key-shape validation above (unknown/duplicate keys) never checked
+    that the VALUE is numeric — a profile with provider_adjustments:
+    {asta: null} loaded cleanly and crashed later in _score's
+    float(adjustments.get(...)) with an uncaught TypeError instead of this
+    ValueError."""
+    profile = tmp_path / "nulladjvalue.yaml"
+    profile.write_text(
+        "default_focus: f\n"
+        "focuses:\n"
+        "  f:\n"
+        "    stages:\n"
+        "      discovery: {}\n"
+        "    provider_adjustments:\n"
+        "      asta: null\n"
+    )
+    with pytest.raises(ValueError, match="must be a number"):
+        drp.load_config(profile)
+
+
 def test_provider_adjustments_unknown_key_is_rejected(tmp_path):
     profile = tmp_path / "typo.yaml"
     profile.write_text(
@@ -357,6 +377,58 @@ def test_stage_weight_scalar_null_is_rejected(tmp_path):
         "        synthesis_weight: null\n"
     )
     with pytest.raises(ValueError, match="synthesis_weight must be a number"):
+        drp.load_config(profile)
+
+
+def test_stage_capability_bool_weight_is_rejected(tmp_path):
+    """bool is a subclass of int, so isinstance(cap_weight, (int, float))
+    alone would silently accept a YAML boolean (e.g. an unquoted `yes`) as a
+    1.0/0.0 weight. The explicit `or isinstance(cap_weight, bool)` exclusion
+    guards against that; this pins it down so the exclusion clause can't be
+    silently dropped or inverted without a test failing."""
+    profile = tmp_path / "boolcap.yaml"
+    profile.write_text(
+        "default_focus: f\n"
+        "focuses:\n"
+        "  f:\n"
+        "    stages:\n"
+        "      discovery:\n"
+        "        capabilities:\n"
+        "          academic_search: true\n"
+    )
+    with pytest.raises(ValueError, match="must be a number"):
+        drp.load_config(profile)
+
+
+def test_stage_weight_scalar_bool_is_rejected(tmp_path):
+    """Same bool-vs-int gap as the capability weight above, for the
+    stage-level weight scalars."""
+    profile = tmp_path / "boolweight.yaml"
+    profile.write_text(
+        "default_focus: f\n"
+        "focuses:\n"
+        "  f:\n"
+        "    stages:\n"
+        "      discovery:\n"
+        "        speed_weight: true\n"
+    )
+    with pytest.raises(ValueError, match="speed_weight must be a number"):
+        drp.load_config(profile)
+
+
+def test_provider_adjustments_bool_value_is_rejected(tmp_path):
+    """Same bool-vs-int gap, for provider_adjustments values."""
+    profile = tmp_path / "booladj.yaml"
+    profile.write_text(
+        "default_focus: f\n"
+        "focuses:\n"
+        "  f:\n"
+        "    stages:\n"
+        "      discovery: {}\n"
+        "    provider_adjustments:\n"
+        "      asta: true\n"
+    )
+    with pytest.raises(ValueError, match="must be a number"):
         drp.load_config(profile)
 
 

@@ -402,6 +402,11 @@ def load_config(path: Path) -> dict[str, Any]:
                         f"keys resolving to provider {name!r} (e.g. {raw_name!r}); "
                         f"use a single canonical key per provider"
                     )
+                if not isinstance(value, (int, float)) or isinstance(value, bool):
+                    raise ValueError(
+                        f"Focus {focus_name!r}.provider_adjustments[{raw_name!r}] "
+                        f"must be a number, got {value!r}"
+                    )
                 canonical[name] = value
             focus["provider_adjustments"] = canonical
     return data
