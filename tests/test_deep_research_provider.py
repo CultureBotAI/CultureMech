@@ -28,6 +28,17 @@ def _run_json(extra):
     return json.loads(buf.getvalue())
 
 
+def _run_text(extra):
+    """Run main() without --json and return the printed text."""
+    import contextlib
+    import io
+
+    buf = io.StringIO()
+    with contextlib.redirect_stdout(buf):
+        drp.main(["--config", str(CONFIG_PATH), *extra])
+    return buf.getvalue()
+
+
 def test_profile_has_domain_specific_default_and_three_stage_triage():
     config = drp.load_config(CONFIG_PATH)
     focus = config["focuses"][config["default_focus"]]
@@ -263,3 +274,41 @@ def test_an_allowlist_confines_the_recommendation(monkeypatch):
 def test_an_unknown_provider_in_the_allowlist_is_rejected():
     with pytest.raises(ValueError, match="Unknown provider"):
         drp.main(["--config", str(CONFIG_PATH), "--allow", "not_a_provider"])
+
+
+def test_recommendable_no_paid_actually_excludes_a_high_cost_row():
+    """test_no_paid_keeps_the_medium_cost_provider above can pass even with
+    no_paid filtering fully removed, if the ambient environment never makes a
+    genuinely paid provider available. This exercises recommendable()
+    directly against a hand-built row set that guarantees a high-cost
+    candidate is in contention, so the filter has something real to
+    exclude."""
+    rows = [
+        {"provider": "cheap", "status": "available", "cost": "low"},
+        {"provider": "pricey", "status": "available", "cost": "very_high"},
+    ]
+    with_paid = drp.recommendable(rows, no_paid=False)
+    without_paid = drp.recommendable(rows, no_paid=True)
+    assert {r["provider"] for r in with_paid} == {"cheap", "pricey"}
+    assert {r["provider"] for r in without_paid} == {"cheap"}
+
+
+def test_an_empty_allowlist_string_is_rejected():
+    """--allow "" (an explicitly empty string, distinct from omitting the flag
+    entirely) used to be indistinguishable from "not passed" because Python
+    treats "" as falsy — `if args.allow` silently fell through to allow=None,
+    bypassing the "did not contain any provider names" check below it and
+    recommending with no filtering at all."""
+    with pytest.raises(ValueError, match="did not contain any provider names"):
+        drp.main(["--config", str(CONFIG_PATH), "--allow", ""])
+
+
+def test_policy_filtered_empty_recommendation_names_the_actual_cause(monkeypatch):
+    """The fallback "no real provider is currently available; configure a
+    listed credential or CLI" message predates --allow/--no-paid and is wrong
+    when one of those, not missing credentials, emptied the recommendation:
+    real, working providers exist but were excluded by policy, not absence."""
+    monkeypatch.setenv("ASTA_API_KEY", "test-only")
+    out = _run_text(["--allow", "openai"])
+    assert "no provider passes the current --allow/--no-paid filters" in out
+    assert "configure a listed credential or CLI" not in out

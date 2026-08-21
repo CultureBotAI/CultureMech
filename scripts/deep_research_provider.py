@@ -548,6 +548,12 @@ def print_report(report: Mapping[str, Any], provider_name: str | None = None) ->
             if fallback:
                 message += f"; cross-check/fallback: {fallback['provider']}"
             print(message)
+        elif any(row["status"] == "available" and row["provider"] != "mock"
+                 for row in stage["ranking"]):
+            print(
+                "Route now: no provider passes the current --allow/--no-paid "
+                "filters, though at least one is otherwise available."
+            )
         else:
             print(
                 "Route now: no real provider is currently available; configure a listed credential or CLI."
@@ -601,8 +607,12 @@ def main(argv: list[str] | None = None) -> int:
             f"Unknown provider {args.provider!r}; choose one of: {', '.join(PROVIDERS)}"
         )
     allow = (frozenset(canonical_provider(p) for p in args.allow.split(",") if p.strip())
-             if args.allow else None)
+             if args.allow is not None else None)
     if allow is not None:
+        if not allow:
+            raise ValueError(
+                f"--allow {args.allow!r} did not contain any provider names"
+            )
         unknown = allow - set(PROVIDERS)
         if unknown:
             raise ValueError(
