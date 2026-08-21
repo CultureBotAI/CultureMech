@@ -107,14 +107,11 @@ EOF
 - Ingredients must have `term.id: CHEBI:XXXXX` populated for matching to work
 - Media without any CHEBI-annotated ingredients cannot be matched
 
-## Coverage Expectations
+## Coverage expectations
 
-As of 2026-04-09 (last full run):
-- **15,827** total CultureMech media files
-- **10,207** have at least one CHEBI-annotated ingredient
-- **489** exactly matched to KG-Microbe media nodes
-- **9,718** have CHEBI annotations but no exact KG match (subset overlap, different formulation, or not yet in KG)
-- **5,620** have no CHEBI annotations (cannot match without ontology enrichment)
+Derive coverage from the current run; never reuse counts from this skill. Report
+the current corpus total, records with at least one CHEBI ingredient, exact
+matches, annotated-but-unmatched records, and records without CHEBI grounding.
 
 To increase coverage: run FEBA ontology enrichment (`just feba-enrich-ontology` in culturebotai-claw) to add more CHEBI IDs, then re-run this skill.
 
@@ -161,7 +158,9 @@ The value is always a `mediadive.medium:XXX` node ID. When multiple KG-Microbe m
 
 **Match seems wrong**: Use Option C to inspect the specific recipe. The match is purely by CHEBI set equality — verify both the CultureMech and KG-Microbe recipes actually represent the same medium.
 
-**Many media unmatched**: The KG-Microbe mediadive graph contains ~3,317 media (DSMZ-derived). CultureMech has 15,827. Most CultureMech media are not in the KG; low match rate is expected.
+**Many media unmatched**: KG-Microbe's MediaDive-derived graph covers only a
+subset of CultureMech. Report both current counts; a low exact-match rate can be
+expected when sources or formulations differ.
 
 ## Related
 

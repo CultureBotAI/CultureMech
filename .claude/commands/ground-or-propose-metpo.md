@@ -5,7 +5,7 @@ argument-hint: "[atmosphere|ph|temperature|salinity|aeration|light|all] [min-fre
 
 # Ground-or-propose residual growth-condition terms (METPO-first)
 
-Goal: shrink the ungrounded residual of **growth-condition** terms across the 10,657 media
+Goal: shrink the ungrounded residual of **growth-condition** terms across the current media corpus
 recipes. These fields are free-text/enum strings today — `incubation_atmosphere`,
 `ph_value`/`ph_range`, `temperature_value`/`temperature_range`, `salinity`, `aeration`,
 `light_intensity`/`light_cycle`/`light_quality`, `culture_vessel` — and are exactly the

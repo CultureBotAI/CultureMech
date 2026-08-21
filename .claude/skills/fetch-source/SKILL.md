@@ -1,6 +1,7 @@
 ---
 name: fetch-source
 description: Robust curl pattern for `fetch-<source>` justfile recipes that download an external data release into data/raw/. Use whenever writing a new fetch-* recipe, or auditing/fixing an existing one that fails intermittently in CI — a bare `curl -o` with no retry or timeout turns one flaky network blip into a red PR.
+version: 1.0.0
 ---
 
 # Fetch a source release

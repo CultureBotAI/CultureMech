@@ -113,7 +113,9 @@ Run them yourself if an item claims they do.
   three `tests/test_id_label_*.py` files are vendored **byte-identical** across the
   four Mech repos. The old self-generated sha256 pin was retired (it compared a copy
   to a hash from the *same* repo, so all four could pass while diverged). Drift is now
-  caught by a **shared-reference check**: each spoke runs `scripts/check_vendored_sync.sh`
+  caught by a **shared-reference check**: each spoke runs its local
+  `spoke-repo/scripts/check_vendored_sync.sh`; CultureMech is the hub and therefore does
+  not contain that spoke-only script
   against `CultureBotAI/CultureMech@<scripts/.vendored_canon_ref>`; this hub is covered
   by culturebotai-claw's nightly `fleet-audit` job (scripts/audit_idlabel_fleet.sh),
   which audits all four Mechs and claw's mirror in one pass. To propagate a change: PR into this hub →
