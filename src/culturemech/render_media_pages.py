@@ -38,11 +38,15 @@ if CLAW_SRC.is_dir():
 try:
     from kg_microbe_browser import build_ingredient_composition_graph
 except ImportError:
+    COMPOSITION_GRAPHS_AVAILABLE = False
 
     def build_ingredient_composition_graph(
         medium: dict, max_ingredients: int = 30  # type: ignore
     ) -> str:
         return ""
+
+else:
+    COMPOSITION_GRAPHS_AVAILABLE = True
 
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -220,6 +224,7 @@ def write_index(
     html = env.get_template("index.html.j2").render(
         count=sum(len(items) for _, items in groups),
         groups=groups,
+        composition_graphs_available=COMPOSITION_GRAPHS_AVAILABLE,
     )
     index_dir.mkdir(parents=True, exist_ok=True)
     (index_dir / "index.html").write_text(html)
@@ -274,6 +279,11 @@ def render_pages(
     env = make_env(templates_dir)
     build_sig = build_signature(templates_dir)
     print(f"Rendering up to {len(files)} medium pages → {out_dir}")
+    if not COMPOSITION_GRAPHS_AVAILABLE:
+        print(
+            "warning: culturebotai-claw is unavailable; publishing without composition graphs",
+            file=sys.stderr,
+        )
 
     rendered = skipped = errors = 0
     successful: list[dict] = []

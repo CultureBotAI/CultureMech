@@ -17,6 +17,24 @@ This structure provides:
 - **Provenance** - track data from source to knowledge base
 - **Quality gates** - validation enforced at layer boundaries
 
+## Source and generated web artifacts
+
+`data/normalized_yaml/` is the source for the browser and normalized record
+pages. `data/merge_yaml/merged/` is the source for the canonical merged pages.
+The following outputs are reproducible and must not be edited or committed:
+
+- `app/data.js`
+- `pages/normalized/`
+- `pages/media/`
+- `pages/index.html`, `pages/style.css`, and `pages/mermaid-init.js`
+
+`just build-browser`, `just gen-pages`, and `just gen-media-pages` regenerate
+them locally. The Pages workflow rebuilds all published derived assets from a
+clean checkout with `uv.lock`, then runs `python -m culturemech.web_artifacts`
+to require exact source, browser-record, and page coverage. The tracked
+`app/*.html`, JavaScript application code, root `index.html`, and
+`pages/media_growth_review.html` remain publication inputs.
+
 ---
 
 ## Layer 1: Raw Data (`raw/`)

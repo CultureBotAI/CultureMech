@@ -1707,7 +1707,7 @@ build-browser: gen-browser-data
 # Generate per-medium HTML pages from the normalized YAML layer.
 # Wraps the unified `render_media_pages` renderer (the modern Phase 2
 # dismech-pattern pipeline) and points it at the raw `normalized_yaml/`
-# dataset (15,827 records, pre-merge per-source view).
+# dataset (the pre-merge per-source view; count derived at build time).
 #
 # Companion to `gen-media-pages` (in `justfile`) which targets
 # `data/merge_yaml/merged/` (6,286 canonical merged records →
@@ -2419,15 +2419,7 @@ import-pfas-all: import-pfas-roles import-pfas-cofactors
 
 [group('Utils')]
 clean:
-    #!/usr/bin/env bash
-    echo "Cleaning generated files..."
-    rm -rf {{output_dir}}/*
-    rm -rf {{pages_dir}}/*
-    rm -rf htmlcov/
-    rm -rf .pytest_cache/
-    rm -rf **/__pycache__/
-    rm -f {{app_dir}}/data.js
-    echo "✓ Clean complete"
+    uv run python scripts/clean_generated.py --root {{justfile_directory()}}
 
 [group('Stats')]
 stats-report output_dir="output/stats":

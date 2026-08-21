@@ -4,10 +4,17 @@ on:
   push:
     branches: [main]
     paths:
+      - "app/**"
+      - "index.html"
+      - "data/normalized_yaml/**.yaml"
       - "data/merge_yaml/merged/**.yaml"
+      - "src/culturemech/export/browser_export.py"
       - "src/culturemech/templates/**"
       - "src/culturemech/render_media_pages.py"
+      - "src/culturemech/web_artifacts.py"
       - "conf/qc_config.yaml"
+      - "pyproject.toml"
+      - "uv.lock"
       - ".github/workflows/generate-pages.yaml"
   workflow_dispatch:
 
@@ -41,17 +48,50 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Install deps
-        run: |
-          python -m pip install --upgrade pip
-          python -m pip install pyyaml jinja2 markupsafe matplotlib
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
 
-      - name: Render per-medium pages
+      - name: Install locked dependencies
+        working-directory: CultureMech
+        run: uv sync --frozen
+
+      - name: Build browser data and normalized pages
         env:
           PYTHONPATH: ${{ github.workspace }}/culturebotai-claw/src
+        working-directory: CultureMech
         run: |
-          cd CultureMech
-          python src/culturemech/render_media_pages.py
+          uv run python -m culturemech.export.browser_export \
+            --input data/normalized_yaml \
+            --output app/data.js
+          uv run python -m culturemech.render_media_pages \
+            --yaml-dir data/normalized_yaml \
+            --out-dir pages/normalized \
+            --index-dir pages/normalized
+
+      - name: Render canonical merged pages
+        env:
+          PYTHONPATH: ${{ github.workspace }}/culturebotai-claw/src
+        working-directory: CultureMech
+        run: |
+          uv run python -m culturemech.render_media_pages \
+            --yaml-dir data/merge_yaml/merged \
+            --out-dir pages/media \
+            --index-dir pages
+
+      - name: Report degraded composition rendering
+        if: steps.checkout-claw.outcome != 'success'
+        run: |
+          echo "::warning::culturebotai-claw unavailable; generated indexes carry a degraded-build notice"
+          echo "### Pages build degraded" >> "$GITHUB_STEP_SUMMARY"
+          echo "Ingredient composition graphs were omitted because culturebotai-claw was unavailable." >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Verify complete web coverage
+        working-directory: CultureMech
+        run: |
+          uv run python -m culturemech.web_artifacts \
+            --corpus-dir data/normalized_yaml \
+            --data-file app/data.js \
+            --pages-dir pages
 
       - name: Render QC dashboard
         if: steps.checkout-claw.outcome == 'success'
@@ -59,7 +99,7 @@ jobs:
           PYTHONPATH: ${{ github.workspace }}/culturebotai-claw/src
         run: |
           cd CultureMech
-          python -m kg_microbe_qc \
+          uv run python -m kg_microbe_qc \
             --config conf/qc_config.yaml \
             --output dashboard
 
