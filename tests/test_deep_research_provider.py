@@ -302,15 +302,18 @@ def test_recommendable_no_paid_actually_excludes_a_high_cost_row():
     genuinely paid provider available. This exercises recommendable()
     directly against a hand-built row set that guarantees a high-cost
     candidate is in contention, so the filter has something real to
-    exclude."""
+    exclude. Also guards PAID_COSTS itself: mutation-verified that without a
+    medium-cost row in contention, nothing catches PAID_COSTS silently
+    growing to include "medium"."""
     rows = [
         {"provider": "cheap", "status": "available", "cost": "low"},
+        {"provider": "midpriced", "status": "available", "cost": "medium"},
         {"provider": "pricey", "status": "available", "cost": "very_high"},
     ]
     with_paid = drp.recommendable(rows, no_paid=False)
     without_paid = drp.recommendable(rows, no_paid=True)
-    assert {r["provider"] for r in with_paid} == {"cheap", "pricey"}
-    assert {r["provider"] for r in without_paid} == {"cheap"}
+    assert {r["provider"] for r in with_paid} == {"cheap", "midpriced", "pricey"}
+    assert {r["provider"] for r in without_paid} == {"cheap", "midpriced"}
 
 
 def test_an_empty_allowlist_string_is_rejected():

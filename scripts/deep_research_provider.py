@@ -548,8 +548,7 @@ def print_report(report: Mapping[str, Any], provider_name: str | None = None) ->
             if fallback:
                 message += f"; cross-check/fallback: {fallback['provider']}"
             print(message)
-        elif any(row["status"] == "available" and row["provider"] != "mock"
-                 for row in stage["ranking"]):
+        elif recommendable(stage["ranking"]):
             print(
                 "Route now: no provider passes the current --allow/--no-paid "
                 "filters, though at least one is otherwise available."
