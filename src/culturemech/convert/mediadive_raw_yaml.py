@@ -14,7 +14,7 @@ from pathlib import Path
 
 import yaml
 
-from culturemech.convert.base import RawYAMLConverter
+from culturemech.convert.base import RawYAMLConverter, add_batch_arguments, batch_options
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -36,8 +36,8 @@ class MediaDiveRawYAMLConverter(RawYAMLConverter):
             data = json.load(f)
 
         # Handle both direct array and wrapped in 'data' key
-        if isinstance(data, dict) and 'data' in data:
-            records = data['data']
+        if isinstance(data, dict) and "data" in data:
+            records = data["data"]
         elif isinstance(data, list):
             records = data
         else:
@@ -50,16 +50,16 @@ class MediaDiveRawYAMLConverter(RawYAMLConverter):
             record = self.add_source_metadata(record, input_file)
 
             # Determine output filename
-            if '_id' in record:
+            if "_id" in record:
                 # MongoDB ObjectId format
-                if isinstance(record['_id'], dict) and '$oid' in record['_id']:
-                    record_id = record['_id']['$oid']
+                if isinstance(record["_id"], dict) and "$oid" in record["_id"]:
+                    record_id = record["_id"]["$oid"]
                 else:
-                    record_id = str(record['_id'])
+                    record_id = str(record["_id"])
                 filename = f"{record_id}.yaml"
-            elif 'id' in record:
+            elif "id" in record:
                 filename = f"{record['id']}.yaml"
-            elif 'medium_id' in record:
+            elif "medium_id" in record:
                 filename = f"{record['medium_id']}.yaml"
             else:
                 filename = f"{input_file.stem}_{i:04d}.yaml"
@@ -67,7 +67,7 @@ class MediaDiveRawYAMLConverter(RawYAMLConverter):
             output_file = output_dir / filename
 
             # Write YAML preserving structure
-            with open(output_file, 'w') as f:
+            with open(output_file, "w") as f:
                 yaml.dump(record, f, sort_keys=False, allow_unicode=True, default_flow_style=False)
 
         self.log(f"  Wrote {len(records)} raw YAML file(s)")
@@ -79,31 +79,30 @@ def main():
         description="Convert MediaDive JSON to raw YAML format (no normalization)"
     )
     parser.add_argument(
-        "-i", "--input",
+        "-i",
+        "--input",
         type=Path,
         default="data/raw/mediadive",
-        help="Input directory with MediaDive JSON files (default: raw/mediadive)"
+        help="Input directory with MediaDive JSON files (default: raw/mediadive)",
     )
     parser.add_argument(
-        "-o", "--output",
+        "-o",
+        "--output",
         type=Path,
         default="data/raw_yaml/mediadive",
-        help="Output directory for raw YAML files (default: raw_yaml/mediadive)"
+        help="Output directory for raw YAML files (default: raw_yaml/mediadive)",
     )
-    parser.add_argument(
-        "-v", "--verbose",
-        action="store_true",
-        help="Enable verbose logging"
-    )
+    parser.add_argument("-v", "--verbose", action="store_true", help="Enable verbose logging")
 
+    add_batch_arguments(parser)
     args = parser.parse_args()
 
-    logger.info(f"Converting MediaDive JSON to raw YAML")
+    logger.info("Converting MediaDive JSON to raw YAML")
     logger.info(f"  Input: {args.input}")
     logger.info(f"  Output: {args.output}")
 
     converter = MediaDiveRawYAMLConverter(verbose=args.verbose)
-    converter.convert_directory(args.input, args.output, pattern="*.json")
+    converter.convert_directory(args.input, args.output, pattern="*.json", **batch_options(args))
 
     logger.info("Conversion complete")
 
