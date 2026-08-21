@@ -85,6 +85,119 @@ def test_unknown_default_focus_is_rejected(tmp_path):
         drp.load_config(profile)
 
 
+# --- provider_adjustments / capabilities validation -------------------------
+
+
+def test_provider_adjustments_alias_key_is_canonicalized(tmp_path):
+    profile = tmp_path / "aliased.yaml"
+    profile.write_text(
+        "default_focus: f\n"
+        "focuses:\n"
+        "  f:\n"
+        "    stages:\n"
+        "      discovery: {}\n"
+        "    provider_adjustments:\n"
+        "      edison: 3\n"
+        "      Claude Code: 2\n"
+    )
+    config = drp.load_config(profile)
+    adjustments = config["focuses"]["f"]["provider_adjustments"]
+    assert adjustments == {"falcon": 3, "claude_code": 2}
+
+
+def test_provider_adjustments_unknown_key_is_rejected(tmp_path):
+    profile = tmp_path / "typo.yaml"
+    profile.write_text(
+        "default_focus: f\n"
+        "focuses:\n"
+        "  f:\n"
+        "    stages:\n"
+        "      discovery: {}\n"
+        "    provider_adjustments:\n"
+        "      flacon: 3\n"  # typo of "falcon"
+    )
+    with pytest.raises(ValueError, match="unknown provider"):
+        drp.load_config(profile)
+
+
+def test_provider_adjustments_colliding_aliases_are_rejected(tmp_path):
+    """Two raw keys that canonicalize to the same provider (edison/falcon)
+    must not silently let the second overwrite the first."""
+    profile = tmp_path / "collision.yaml"
+    profile.write_text(
+        "default_focus: f\n"
+        "focuses:\n"
+        "  f:\n"
+        "    stages:\n"
+        "      discovery: {}\n"
+        "    provider_adjustments:\n"
+        "      edison: 3\n"
+        "      falcon: 5\n"
+    )
+    with pytest.raises(ValueError, match="multiple"):
+        drp.load_config(profile)
+
+
+def test_stage_capabilities_unknown_key_is_rejected(tmp_path):
+    profile = tmp_path / "badcap.yaml"
+    profile.write_text(
+        "default_focus: f\n"
+        "focuses:\n"
+        "  f:\n"
+        "    stages:\n"
+        "      discovery:\n"
+        "        capabilities:\n"
+        "          acadmic_search: 5\n"  # typo of "academic_search"
+    )
+    with pytest.raises(ValueError, match="unknown capability"):
+        drp.load_config(profile)
+
+
+def test_provider_adjustment_actually_changes_rank_order(monkeypatch):
+    """Config-loading validation alone doesn't prove the bonus reaches the
+    ranking — this proves it does."""
+    monkeypatch.setenv("ASTA_API_KEY", "test-only")
+    config = drp.load_config(CONFIG_PATH)
+    focus_name = config["default_focus"]
+    stage_name = next(iter(config["focuses"][focus_name]["stages"]))
+
+    baseline = drp.rank_stage(config, focus_name, stage_name)
+    target = min(baseline, key=lambda row: row["fit"])["provider"]
+    baseline_fit = {row["provider"]: row["fit"] for row in baseline}
+
+    config["focuses"][focus_name]["provider_adjustments"] = {target: 1000}
+    boosted = drp.rank_stage(config, focus_name, stage_name)
+    boosted_fit = {row["provider"]: row["fit"] for row in boosted}
+
+    assert boosted_fit[target] > baseline_fit[target]
+    assert boosted[0]["provider"] == target
+
+
+def test_exact_zero_max_score_does_not_divide_by_zero(monkeypatch):
+    """`high = max(raw.values()); if high <= 0: high = 1.0` exists to guard
+    an exact-zero max (every raw score landing at 0, e.g. through cancelling
+    adjustments) from a ZeroDivisionError. It does NOT make the ranking
+    meaningful when every score is negative — that's CultureMech#315, a
+    separate, harder problem (0.0 divided by any nonzero number, positive or
+    negative, is still 0.0, so this guard is a no-op for the negative case).
+    This test covers only what the guard actually does."""
+    monkeypatch.setenv("ASTA_API_KEY", "test-only")
+    config = drp.load_config(CONFIG_PATH)
+    focus_name = config["default_focus"]
+    stage_name = next(iter(config["focuses"][focus_name]["stages"]))
+    # Zero out every capability weight and adjustment so every raw score is
+    # exactly 0.0 — the precise edge case `or 1.0` was written for.
+    stage = config["focuses"][focus_name]["stages"][stage_name]
+    stage["capabilities"] = {}
+    stage["synthesis_weight"] = 0
+    stage["speed_weight"] = 0
+    stage["cost_weight"] = 0
+    config["focuses"][focus_name]["provider_adjustments"] = {}
+
+    rows = drp.rank_stage(config, focus_name, stage_name)  # must not raise ZeroDivisionError
+    assert all(row["fit"] == 0 for row in rows)
+
+
 # --- policy and machine-readable consistency (#290) ------------------------
 
 
