@@ -93,7 +93,14 @@ build-backend = "setuptools.build_meta"
 where = ["src"]
 
 [tool.setuptools.package-data]
-culturemech = ["schema/*.yaml", "templates/*.j2", "templates/*.html"]
+culturemech = [
+    "schema/*.yaml",
+    "templates/*.j2",
+    "templates/*.html",
+    "templates/*.css",
+    "templates/*.js",
+    "templates/_partials/*.j2",
+]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

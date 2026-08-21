@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self'; img-src 'self' data: https:; font-src 'self'; object-src 'none'; base-uri 'none'">
+<title>CultureMech — Media index</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>CultureMech — Media index</h1>
+<p class="muted">{{ "{:,}".format(count) }} media records.</p>
+<p><a href="media_growth_review.html">Media growth evidence review</a></p>
+</header>
+{% for category, items in groups %}
+<section>
+<h2>{{ category }} <small class="muted">({{ items|length }})</small></h2>
+<ul class="medium-index">
+{% for item in items %}
+<li><a href="{{ item.href }}"><code>{{ item.id }}</code></a>
+<span class="muted">—</span> {{ item.name }}</li>
+{% endfor %}
+</ul>
+</section>
+{% endfor %}
+</body>
+</html>

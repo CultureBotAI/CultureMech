@@ -440,8 +440,11 @@
 
     <script>
         // Embed JSON data via Jinja2
-        const derivedData = {{ derived_data_json | safe }};
-        const directData = {{ direct_data_json | safe }};
+        const derivedData = {{ derived_data | tojson }};
+        const directData = {{ direct_data | tojson }};
+        const escapeHtml = value => String(value == null ? "" : value)
+            .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+            .replace(/\"/g, "&quot;").replace(/'/g, "&#39;");
 
         // Color scheme by entity_type
         const entityTypeColors = {
@@ -518,15 +521,15 @@
                     tooltip
                         .style("opacity", 1)
                         .html(`
-                            <strong>${d.name}</strong><br/>
-                            Entity Type: ${d.entity_type}<br/>
-                            Category: ${d.category}<br/>
-                            Type: ${d.medium_type}<br/>
-                            State: ${d.physical_state}<br/>
-                            Ingredients: ${d.num_ingredients}<br/>
-                            Organisms: ${d.num_organisms}<br/>
+                            <strong>${escapeHtml(d.name)}</strong><br/>
+                            Entity Type: ${escapeHtml(d.entity_type)}<br/>
+                            Category: ${escapeHtml(d.category)}<br/>
+                            Type: ${escapeHtml(d.medium_type)}<br/>
+                            State: ${escapeHtml(d.physical_state)}<br/>
+                            Ingredients: ${escapeHtml(d.num_ingredients)}<br/>
+                            Organisms: ${escapeHtml(d.num_organisms)}<br/>
                             Coverage: ${(d.coverage * 100).toFixed(0)}%<br/>
-                            Source: ${d.source_database}
+                            Source: ${escapeHtml(d.source_database)}
                         `)
                         .style("left", (event.pageX + 15) + "px")
                         .style("top", (event.pageY - 15) + "px");
@@ -651,8 +654,16 @@
             Object.keys(counts).sort().forEach(v => {
                 const lab = document.createElement("label");
                 lab.className = "facet-opt";
-                lab.innerHTML = `<input type="checkbox" checked><span>${v}</span><span class="cnt">${counts[v].toLocaleString()}</span>`;
-                lab.querySelector("input").addEventListener("change", (e) => {
+                const input = document.createElement("input");
+                input.type = "checkbox";
+                input.checked = true;
+                const value = document.createElement("span");
+                value.textContent = v;
+                const count = document.createElement("span");
+                count.className = "cnt";
+                count.textContent = counts[v].toLocaleString();
+                lab.append(input, value, count);
+                input.addEventListener("change", (e) => {
                     if (e.target.checked) activeCategories.add(v); else activeCategories.delete(v);
                     applyAllFilters();
                 });

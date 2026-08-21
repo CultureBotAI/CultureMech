@@ -1731,10 +1731,10 @@ gen-page file:
     #!/usr/bin/env bash
     echo "Generating HTML page for {{file}}..."
     uv run python src/culturemech/render_media_pages.py \
-        --yaml-dir {{justfile_directory()}}/$(dirname {{file}}) \
+        --file "{{justfile_directory()}}/{{file}}" \
         --out-dir {{justfile_directory()}}/{{pages_dir}}/single \
         --index-dir {{justfile_directory()}}/{{pages_dir}}/single \
-        --limit 1 --force
+        --force
     echo "✓ HTML page generated → {{pages_dir}}/single/"
 
 # ================================================================
