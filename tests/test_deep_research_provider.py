@@ -269,6 +269,38 @@ def test_exact_zero_max_score_does_not_divide_by_zero(monkeypatch):
     assert all(row["fit"] == 0 for row in rows)
 
 
+def test_negative_nonzero_max_score_does_not_divide_by_zero_either(monkeypatch):
+    """Distinct code path from the exact-zero test above (max(raw.values())
+    is a genuinely negative number here, not exactly 0, so this exercises
+    the `high <= 0` half of the guard's condition rather than only the
+    `high == 0` half). The *outcome* is unavoidably identical either way —
+    `fit = round(100 * max(0.0, raw[name]) / high)` clamps any negative raw
+    score to 0.0 in the numerator before the division even happens, so no
+    test can make the divisor's value (old `or 1.0`'s actual-negative-number
+    vs. this guard's 1.0 fallback) produce a different result. That's
+    exactly the CultureMech#315 problem: for negative scores, `high`'s value
+    is provably irrelevant. This test only pins down "doesn't crash and
+    yields 0" for a non-uniform negative distribution, which the exact-zero
+    test's uniform-zero input doesn't exercise."""
+    monkeypatch.setenv("ASTA_API_KEY", "test-only")
+    config = drp.load_config(CONFIG_PATH)
+    focus_name = config["default_focus"]
+    stage_name = next(iter(config["focuses"][focus_name]["stages"]))
+    stage = config["focuses"][focus_name]["stages"][stage_name]
+    stage["capabilities"] = {}
+    stage["synthesis_weight"] = 0
+    stage["speed_weight"] = 0
+    stage["cost_weight"] = 0
+    # Every provider negative, but not uniformly so — max(raw.values()) is a
+    # genuinely negative number rather than exactly 0.
+    config["focuses"][focus_name]["provider_adjustments"] = {
+        name: (-2 if name == "asta" else -1) for name in drp.PROVIDERS
+    }
+
+    rows = drp.rank_stage(config, focus_name, stage_name)  # must not raise ZeroDivisionError
+    assert all(row["fit"] == 0 for row in rows)
+
+
 # --- policy and machine-readable consistency (#290) ------------------------
 
 
