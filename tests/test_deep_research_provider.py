@@ -329,6 +329,11 @@ def test_policy_filtered_empty_recommendation_names_the_actual_cause(monkeypatch
     when one of those, not missing credentials, emptied the recommendation:
     real, working providers exist but were excluded by policy, not absence."""
     monkeypatch.setenv("ASTA_API_KEY", "test-only")
+    # An ambient OPENAI_API_KEY would make the --allow'd openai itself
+    # "available", taking the pre-existing recommended-provider branch instead
+    # of the one this test exercises — this test asserts an exact message, so
+    # unlike its permissive siblings it cannot tolerate that.
+    monkeypatch.delenv("OPENAI_API_KEY", raising=False)
     out = _run_text(["--allow", "openai"])
     assert "no provider passes the current --allow/--no-paid filters" in out
     assert "configure a listed credential or CLI" not in out
