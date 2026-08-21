@@ -116,6 +116,26 @@ def test_provider_adjustments_alias_key_is_canonicalized(tmp_path):
     assert adjustments == {"falcon": 3, "claude_code": 2}
 
 
+def test_provider_adjustments_explicit_null_is_rejected(tmp_path):
+    """focus.get("provider_adjustments", {}) only supplies the {} default
+    when the key is absent — an explicit YAML `provider_adjustments: null`
+    still returns None, which used to skip validation entirely (guarded
+    behind `if adjustments is not None:`) and crash later in
+    rank_stage/_score with AttributeError instead of this clean
+    ValueError."""
+    profile = tmp_path / "nulladj.yaml"
+    profile.write_text(
+        "default_focus: f\n"
+        "focuses:\n"
+        "  f:\n"
+        "    stages:\n"
+        "      discovery: {}\n"
+        "    provider_adjustments: null\n"
+    )
+    with pytest.raises(ValueError, match="provider_adjustments must be a mapping"):
+        drp.load_config(profile)
+
+
 def test_provider_adjustments_unknown_key_is_rejected(tmp_path):
     profile = tmp_path / "typo.yaml"
     profile.write_text(

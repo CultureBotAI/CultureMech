@@ -356,12 +356,19 @@ def load_config(path: Path) -> dict[str, Any]:
                     f"them, so they would silently score 0. Choose one of: "
                     f"{', '.join(sorted(_ALL_CAPABILITIES))}"
                 )
-        adjustments = focus.get("provider_adjustments")
-        if adjustments is not None:
-            if not isinstance(adjustments, dict):
-                raise ValueError(
-                    f"Focus {focus_name!r}.provider_adjustments must be a mapping"
-                )
+        # .get(key, {}) only supplies the default when the key is ABSENT — an
+        # explicit YAML `provider_adjustments: null` still returns None here,
+        # so the isinstance check below (unconditional, like the sibling
+        # `capabilities` check above) must run either way. It used to be
+        # guarded behind `if adjustments is not None:`, silently skipping
+        # validation for a null block and crashing later in
+        # rank_stage/_score with AttributeError instead of this ValueError.
+        adjustments = focus.get("provider_adjustments", {})
+        if not isinstance(adjustments, dict):
+            raise ValueError(
+                f"Focus {focus_name!r}.provider_adjustments must be a mapping"
+            )
+        if adjustments:
             canonical: dict[str, Any] = {}
             for raw_name, value in adjustments.items():
                 name = canonical_provider(str(raw_name))
