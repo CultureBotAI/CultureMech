@@ -15,7 +15,11 @@ def _repository(path: Path) -> Path:
     path.mkdir()
     subprocess.run(["git", "init", "-q"], cwd=path, check=True)
     (path / ".gitignore").write_text(
-        "\n".join(f"/{target}" for target in clean_generated.GENERATED_PATHS) + "\n"
+        "\n".join(
+            [f"/{target}/" for target in clean_generated.GENERATED_DIRECTORIES]
+            + [f"/{target}" for target in clean_generated.GENERATED_FILES]
+        )
+        + "\n"
     )
     return path
 

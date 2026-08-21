@@ -9,18 +9,21 @@ import subprocess
 from collections.abc import Sequence
 from pathlib import Path
 
-GENERATED_PATHS = (
+GENERATED_DIRECTORIES = (
     "output",
     "pages/media",
     "pages/normalized",
     "pages/single",
+    "htmlcov",
+    ".pytest_cache",
+)
+GENERATED_FILES = (
     "pages/index.html",
     "pages/style.css",
     "pages/mermaid-init.js",
     "app/data.js",
-    "htmlcov",
-    ".pytest_cache",
 )
+GENERATED_PATHS = GENERATED_DIRECTORIES + GENERATED_FILES
 
 
 def git_output(root: Path, *args: str) -> str:
@@ -43,8 +46,13 @@ def validate_targets(root: Path) -> None:
         tracked = git_output(root, "ls-files", "--", relative)
         if tracked:
             problems.append(f"tracked path: {relative}")
+        ignore_probe = (
+            f"{relative}/.culturemech-clean-check"
+            if relative in GENERATED_DIRECTORIES
+            else relative
+        )
         ignored = subprocess.run(
-            ["git", "check-ignore", "--no-index", "-q", "--", relative],
+            ["git", "check-ignore", "--no-index", "-q", "--", ignore_probe],
             cwd=root,
             check=False,
         )
