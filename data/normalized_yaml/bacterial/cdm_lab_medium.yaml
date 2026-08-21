@@ -373,6 +373,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:25094
+    label: lysine
 - preferred_term: Phenylalanine
   concentration:
     value: '0.275'
@@ -388,12 +391,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:17822
+    label: serine
 - preferred_term: Threonine
   concentration:
     value: '0.225'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:26986
+    label: threonine
 - preferred_term: Tyrosine
   concentration:
     value: '0.25'
@@ -530,6 +539,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:17376
+    label: cystine
 - preferred_term: Alanine
   concentration:
     value: '0.24'
@@ -613,4 +625,9 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 8 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-20T19:01:36.806598+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 4 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 high_metal: true

@@ -11,6 +11,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.5'
@@ -19,10 +22,16 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: NH4Cl
   concentration:
     value: '0.68'
     unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.25'
@@ -35,10 +44,16 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  term:
+    id: CHEBI:63675
+    label: sodium succinate (anhydrous)
 - preferred_term: Sodium acetate
   concentration:
     value: '0.5'
     unit: G_PER_L
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: Yeast extract
   concentration:
     value: '0.5'
@@ -67,10 +82,16 @@ ingredients:
   concentration:
     value: '1'
     unit: MG_PER_L
+  term:
+    id: CHEBI:8806
+    label: Resazurin
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: L
+  term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -113,6 +134,11 @@ curation_history:
   notes: Re-parsed the NBRC medium 1117 composition table from the preserved scrape;
     16 ingredient(s) restored, 1 stock solution(s) nested rather than flattened, 1
     unparsed solution blob(s) removed (#299).
+- timestamp: '2026-08-20T19:01:15.766271+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 10 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 solutions:
 - preferred_term: Trace element solution SL7
   composition:
@@ -128,6 +154,9 @@ solutions:
     concentration:
       value: '70'
       unit: MG_PER_L
+    term:
+      id: CHEBI:49976
+      label: zinc dichloride
   - preferred_term: MnCl2·4H2O
     concentration:
       value: '100'
@@ -136,6 +165,9 @@ solutions:
     concentration:
       value: '60'
       unit: MG_PER_L
+    term:
+      id: CHEBI:33118
+      label: boric acid
   - preferred_term: CoCl2·6H2O
     concentration:
       value: '200'
@@ -156,6 +188,9 @@ solutions:
     concentration:
       value: '990'
       unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
   name: Trace element solution SL7
 notes: pH 6.6 - 7.4 Mix ingredients except for vitamin B12, NaHCO3 and Na2S·9H2O,
   and autoclave under a N2 atmosphere. Separately autoclave Na2S·9H2O solution under

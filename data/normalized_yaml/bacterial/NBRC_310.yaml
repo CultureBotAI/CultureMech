@@ -11,14 +11,23 @@ ingredients:
   concentration:
     value: '2.9'
     unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: KH2PO4
   concentration:
     value: '2.1'
     unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
 - preferred_term: NH4Cl
   concentration:
     value: '2'
     unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.4'
@@ -27,6 +36,9 @@ ingredients:
   concentration:
     value: '30'
     unit: MG_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '3'
@@ -43,10 +55,16 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  term:
+    id: CHEBI:26546
+    label: rhamnose
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: L
+  term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -86,4 +104,9 @@ curation_history:
   notes: Re-parsed the NBRC medium 309 composition table from the preserved scrape;
     10 ingredient(s) restored, 0 stock solution(s) nested rather than flattened, 0
     unparsed solution blob(s) removed (#299).
+- timestamp: '2026-08-20T19:01:15.980273+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 6 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 notes: pH 7.0

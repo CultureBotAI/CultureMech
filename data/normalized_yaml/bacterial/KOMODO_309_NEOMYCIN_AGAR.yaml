@@ -46,6 +46,9 @@ ingredients:
     unit: MG_PER_ML
   notes: Selective agent; recovered from the DSMZ Medium 309 source duplicate (neomycin_agar),
     which states 1.0 mg/ml.
+  term:
+    id: CHEBI:7507
+    label: neomycin
 applications:
 - Microbial cultivation
 curation_history:
@@ -81,6 +84,11 @@ curation_history:
   notes: Added neomycin 1.0 mg/ml, recovered from the record's own preparation_steps
     / source duplicate (#181)
   changes: Added ingredient Neomycin (1.0 MG_PER_ML)
+- timestamp: '2026-08-20T19:01:06.531167+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 parent_media:
   path: data/normalized_yaml/bacterial/neomycin_agar.yaml
   relationship: SOURCE_DUPLICATE

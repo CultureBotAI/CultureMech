@@ -87,6 +87,9 @@ ingredients:
   concentration:
     value: '1111'
     unit: G_PER_L
+  term:
+    id: CHEBI:36751
+    label: pyrrole-2-carboxylic acid
 - preferred_term: Potassium phosphate buffer
   concentration:
     value: '1000'
@@ -125,6 +128,11 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-20T19:02:42.617562+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 high_metal: true
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_461a_MINERAL_MEDIUM_WITH_QUINOLINE.yaml

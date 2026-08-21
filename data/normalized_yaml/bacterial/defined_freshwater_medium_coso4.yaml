@@ -56,6 +56,9 @@ ingredients:
     value: '30.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:fum'
+  term:
+    id: CHEBI:29806
+    label: fumarate(2-)
 - preferred_term: Sucrose
   term:
     id: CHEBI:17992
@@ -72,6 +75,9 @@ ingredients:
     value: '20.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:no3'
+  term:
+    id: CHEBI:17632
+    label: nitrate
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -91,6 +97,9 @@ ingredients:
     value: '10.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glyclt'
+  term:
+    id: CHEBI:29805
+    label: glycolate
 - preferred_term: Lactate
   term:
     id: CHEBI:24996
@@ -397,11 +406,22 @@ curation_history:
 - timestamp: '2026-06-08T23:19:36.543806+00:00'
   curator: chebi-regrounding-v1.0
   action: Corrected CHEBI ingredient grounding (shared-id regrounding audit, G21/G22/G24)
-  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more ingredient groundings on this record that had been collapsed onto a chemically non-specific or shared CHEBI id were re-grounded to the correct chemically-specific term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
+  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more
+    ingredient groundings on this record that had been collapsed onto a chemically
+    non-specific or shared CHEBI id were re-grounded to the correct chemically-specific
+    term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
 - timestamp: '2026-06-09T01:42:18.587818+00:00'
   curator: chebi-regrounding-v1.0
   action: Corrected CHEBI ingredient grounding (shared-id regrounding audit, G21/G22/G24)
-  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more ingredient groundings on this record that had been collapsed onto a chemically non-specific or shared CHEBI id were re-grounded to the correct chemically-specific term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
+  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more
+    ingredient groundings on this record that had been collapsed onto a chemically
+    non-specific or shared CHEBI id were re-grounded to the correct chemically-specific
+    term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
+- timestamp: '2026-08-20T19:01:38.800040+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 3 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 media_term:
   preferred_term: MediaDB Medium 389
   term:

@@ -19,6 +19,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
 - preferred_term: Trypticase peptone
   concentration:
     value: '6'
@@ -27,6 +30,9 @@ ingredients:
   concentration:
     value: '1'
     unit: L
+  term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -70,4 +76,9 @@ curation_history:
   notes: Re-parsed the NBRC medium 1396 composition table from the preserved scrape;
     6 ingredient(s) restored, 0 stock solution(s) nested rather than flattened, 0
     unparsed solution blob(s) removed (#299).
+- timestamp: '2026-08-20T19:01:15.933565+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 2 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 notes: pH 5.6

@@ -39,6 +39,9 @@ ingredients:
   concentration:
     value: '1'
     unit: MG_PER_L
+  term:
+    id: CHEBI:8806
+    label: Resazurin
 - preferred_term: 15% Na2CO3 solution
   concentration:
     value: '20'
@@ -51,6 +54,9 @@ ingredients:
   concentration:
     value: '1'
     unit: L
+  term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -93,6 +99,11 @@ curation_history:
   notes: Re-parsed the NBRC medium 989 composition table from the preserved scrape;
     11 ingredient(s) restored, 4 stock solution(s) nested rather than flattened, 1
     unparsed solution blob(s) removed (#299).
+- timestamp: '2026-08-20T19:01:16.194144+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 10 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 solutions:
 - preferred_term: Biotin solution
   composition:
@@ -100,10 +111,16 @@ solutions:
     concentration:
       value: '5'
       unit: MG_PER_L
+    term:
+      id: CHEBI:15956
+      label: biotin
   - preferred_term: Ethanol
     concentration:
       value: '100'
       unit: ML_PER_L
+    term:
+      id: CHEBI:16236
+      label: ethanol
   name: Biotin solution
 - preferred_term: K solution
   composition:
@@ -111,18 +128,30 @@ solutions:
     concentration:
       value: '90'
       unit: G_PER_L
+    term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
   - preferred_term: NaCl
     concentration:
       value: '90'
       unit: G_PER_L
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
   - preferred_term: (NH4)2SO4
     concentration:
       value: '90'
       unit: G_PER_L
+    term:
+      id: CHEBI:62946
+      label: ammonium sulfate
   - preferred_term: Distilled water
     concentration:
       value: '1'
       unit: L
+    term:
+      id: CHEBI:15377
+      label: water
   name: K solution
 - preferred_term: M solution
   composition:
@@ -138,6 +167,9 @@ solutions:
     concentration:
       value: '1'
       unit: L
+    term:
+      id: CHEBI:15377
+      label: water
   name: M solution
 - preferred_term: C solution
   composition:
@@ -149,6 +181,9 @@ solutions:
     concentration:
       value: '1'
       unit: L
+    term:
+      id: CHEBI:15377
+      label: water
   name: C solution
 notes: pH 7 Mix ingredients except for Na2CO3 and cysteine-HCl, dispense the medium
   into suitable culture vessels under a stream of N2/CO2 (80/20), seal with butyl

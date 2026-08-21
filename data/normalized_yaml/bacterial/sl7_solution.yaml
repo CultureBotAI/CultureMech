@@ -69,6 +69,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Antimicrobial agent; Properties: Simple component, Organic compound,
     Defined component'
+  term:
+    id: CHEBI:17698
+    label: chloramphenicol
 - preferred_term: Sodium gluconate
   concentration:
     value: '0.4'
@@ -125,3 +128,8 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-20T19:03:06.623732+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).

@@ -11,14 +11,23 @@ ingredients:
   concentration:
     value: '4.4'
     unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
 - preferred_term: Na2HPO4
   concentration:
     value: '4.8'
     unit: G_PER_L
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
 - preferred_term: NH4Cl
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.5'
@@ -35,6 +44,9 @@ ingredients:
   concentration:
     value: '980'
     unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Agar (if needed)
   concentration:
     value: '20'
@@ -81,6 +93,11 @@ curation_history:
   notes: Re-parsed the NBRC medium 971 composition table from the preserved scrape;
     8 ingredient(s) restored, 2 stock solution(s) nested rather than flattened, 1
     unparsed solution blob(s) removed (#299).
+- timestamp: '2026-08-20T19:01:16.185601+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 8 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 solutions:
 - preferred_term: Solution A.
   composition:
@@ -88,6 +105,9 @@ solutions:
     concentration:
       value: '5'
       unit: G_PER_L
+    term:
+      id: CHEBI:31604
+      label: ferric ammonium citrate
   - preferred_term: CaCl2
     concentration:
       value: '0.5'
@@ -96,6 +116,9 @@ solutions:
     concentration:
       value: '1'
       unit: L
+    term:
+      id: CHEBI:15377
+      label: water
   name: Solution A.
 - preferred_term: Solution B.
   composition:
@@ -103,10 +126,16 @@ solutions:
     concentration:
       value: '100'
       unit: G_PER_L
+    term:
+      id: CHEBI:17992
+      label: sucrose
   - preferred_term: Distilled water
     concentration:
       value: '1'
       unit: L
+    term:
+      id: CHEBI:15377
+      label: water
   name: Solution B.
 notes: pH unadjusted Solution A and B are autoclaved separately and add to other autoclaved
   ingredients after cooling.

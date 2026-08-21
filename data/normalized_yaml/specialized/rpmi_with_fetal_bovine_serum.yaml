@@ -328,6 +328,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: MG_PER_L
+  term:
+    id: CHEBI:16412
+    label: lipopolysaccharide
 description: RPMI 1640 Medium was originally developed to culture human leukemic cells
   in suspension
 notes: 'Source: FEBA media definitions'
@@ -355,5 +358,10 @@ curation_history:
   notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-20T19:03:24.157175+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 data_quality_flags:
 - has_unmapped_ingredients

@@ -269,6 +269,9 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:30753
     label: 4-aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
 - preferred_term: Folic acid
   concentration:
     value: '25.0'
@@ -356,3 +359,8 @@ curation_history:
     row in this record, which made the recipe read as double-strength in those components
     (#263): Distilled water.'
   changes: ingredients 40 -> 38
+- timestamp: '2026-08-20T19:01:00.937391+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).

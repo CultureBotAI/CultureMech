@@ -16,6 +16,9 @@ ingredients:
   concentration:
     value: '10'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:114954
+    label: sodium ferulate
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -321,6 +324,11 @@ curation_history:
     @ 1 ml/l. Each moved component matched the MediaDive stock by name AND value;
     bulk ingredients sharing a name were left in place (#150).'
   changes: Nested 5 ingredient(s) under 2 solution(s); ingredients 30 -> 25
+- timestamp: '2026-08-20T19:01:44.187356+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_397_FERULATE_medium.yaml
   relationship: SOURCE_DUPLICATE

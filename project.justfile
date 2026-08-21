@@ -440,6 +440,15 @@ audit-unparsed-composition *args="":
 # curated; never raise one to make a run pass.
 #
 # Needs MediaIngredientMech checked out beside this repo; pass --sssom otherwise.
+# Adopt MIM's published grounding where we hold none (#308).
+#
+# Applies only the audit's MISSING_GROUNDING finding. DIVERGENT runs both ways
+# and INTERNAL_SPLIT needs someone to pick a side, so neither is applied here.
+# Dry-run by default; `--limit 1` canaries one record.
+[group('Curation')]
+apply-mim-groundings *args="":
+    uv run --extra dev python scripts/apply_mim_groundings.py {{args}}
+
 [group('QC')]
 audit-mim-sssom *args="":
     uv run --extra dev python scripts/audit_mim_sssom_divergence.py \

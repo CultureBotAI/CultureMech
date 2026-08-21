@@ -69,6 +69,11 @@ curation_history:
   notes: Re-parsed the NBRC medium 1339 composition table from the preserved scrape;
     5 ingredient(s) restored, 1 stock solution(s) nested rather than flattened, 1
     unparsed solution blob(s) removed (#299).
+- timestamp: '2026-08-20T19:01:15.904473+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 5 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 solutions:
 - preferred_term: 10xM9 solution
   composition:
@@ -76,22 +81,37 @@ solutions:
     concentration:
       value: '30'
       unit: G_PER_L
+    term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
   - preferred_term: Na2HPO4
     concentration:
       value: '60'
       unit: G_PER_L
+    term:
+      id: CHEBI:34683
+      label: disodium hydrogenphosphate
   - preferred_term: NH4Cl
     concentration:
       value: '10'
       unit: G_PER_L
+    term:
+      id: CHEBI:31206
+      label: ammonium chloride
   - preferred_term: NaCl
     concentration:
       value: '5'
       unit: G_PER_L
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
   - preferred_term: Distilled water
     concentration:
       value: '1'
       unit: L
+    term:
+      id: CHEBI:15377
+      label: water
   name: 10xM9 solution
 notes: After autoclaving of agar solution, aseptically mix 10xM9, MgSO4 and CaCl2
   solutions. After cooling to 65°C, aseptically add phenanthrene solution, mix by

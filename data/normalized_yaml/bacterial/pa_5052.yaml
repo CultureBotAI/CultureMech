@@ -52,6 +52,9 @@ ingredients:
     value: '1.5026'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:asp-L'
+  term:
+    id: CHEBI:29991
+    label: L-aspartate(1-)
 - preferred_term: L-Arginine
   term:
     id: CHEBI:16467
@@ -199,6 +202,9 @@ ingredients:
   concentration:
     value: '2.775'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:15903
+    label: beta-D-glucose
 - preferred_term: Lactose
   term:
     id: CHEBI:17716
@@ -359,6 +365,11 @@ curation_history:
   notes: 'Replaced 21 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-08-20T19:03:00.803456+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 2 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 media_term:
   preferred_term: MediaDB Medium 189
   term:

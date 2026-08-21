@@ -57,6 +57,11 @@ curation_history:
   notes: Re-parsed the NBRC medium 323 composition table from the preserved scrape;
     2 ingredient(s) restored, 2 stock solution(s) nested rather than flattened, 1
     unparsed solution blob(s) removed (#299).
+- timestamp: '2026-08-20T19:01:15.987856+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 5 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 solutions:
 - preferred_term: Solution A
   composition:
@@ -68,6 +73,9 @@ solutions:
     concentration:
       value: '0.2'
       unit: G_PER_L
+    term:
+      id: CHEBI:62946
+      label: ammonium sulfate
   - preferred_term: MgSO4·7H2O
     concentration:
       value: '0.5'
@@ -80,10 +88,16 @@ solutions:
     concentration:
       value: '0.6'
       unit: G_PER_L
+    term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
   - preferred_term: Distilled water
     concentration:
       value: '500'
       unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
   name: Solution A
 - preferred_term: Solution B
   composition:
@@ -91,6 +105,9 @@ solutions:
     concentration:
       value: '1'
       unit: G_PER_L
+    term:
+      id: CHEBI:17234
+      label: glucose
   - preferred_term: Agar (if needed)
     concentration:
       value: '20'
@@ -99,6 +116,9 @@ solutions:
     concentration:
       value: '500'
       unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
   name: Solution B
 notes: pH 3.0 - 4.0 Solutions A and B are separately sterilized by autoclaving and
   mixed.

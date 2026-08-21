@@ -27,6 +27,9 @@ ingredients:
   concentration:
     value: '200'
     unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -68,5 +71,10 @@ curation_history:
   notes: Re-parsed the NBRC medium 868 composition table from the preserved scrape;
     5 ingredient(s) restored, 0 stock solution(s) nested rather than flattened, 0
     unparsed solution blob(s) removed (#299).
+- timestamp: '2026-08-20T19:01:16.102776+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 notes: pH 7.6 Filtered, aged seawater or artificial seawater (Daigo's Artificial Seawater
   SP**) Wako Pure Chemical Ind., Ltd., Osaka, Japan.

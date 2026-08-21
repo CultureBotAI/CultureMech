@@ -125,6 +125,9 @@ ingredients:
     value: '2.839'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ascb-L'
+  term:
+    id: CHEBI:22651
+    label: ascorbate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.3401'
@@ -227,6 +230,11 @@ curation_history:
   notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-08-20T19:02:54.559370+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 media_term:
   preferred_term: MediaDB Medium 393
   term:

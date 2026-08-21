@@ -11,10 +11,16 @@ ingredients:
   concentration:
     value: '0.75'
     unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
 - preferred_term: K2HPO4
   concentration:
     value: '0.75'
     unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: MgCl2·6H2O
   concentration:
     value: '0.36'
@@ -23,6 +29,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: Bacto Yeast Extract (Difco)
   concentration:
     value: '0.1'
@@ -35,10 +44,16 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: Trimethylamine-HCl
   concentration:
     value: '8'
     unit: G_PER_L
+  term:
+    id: CHEBI:64700
+    label: trimethylamine hydrochloride
 - preferred_term: Trace mineral solution**
   concentration:
     value: '9'
@@ -51,6 +66,9 @@ ingredients:
   concentration:
     value: '0.8'
     unit: G_PER_L
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: Na2S·9H2O
   concentration:
     value: '0.5'
@@ -63,10 +81,16 @@ ingredients:
   concentration:
     value: '1'
     unit: MG_PER_L
+  term:
+    id: CHEBI:8806
+    label: Resazurin
 - preferred_term: Distilled water
   concentration:
     value: '981'
     unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -109,6 +133,11 @@ curation_history:
   notes: Re-parsed the NBRC medium 837 composition table from the preserved scrape;
     15 ingredient(s) restored, 2 stock solution(s) nested rather than flattened, 1
     unparsed solution blob(s) removed (#299).
+- timestamp: '2026-08-20T19:01:16.073675+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 19 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 solutions:
 - preferred_term: Trace mineral solution
   composition:
@@ -116,6 +145,9 @@ solutions:
     concentration:
       value: '4.5'
       unit: G_PER_L
+    term:
+      id: CHEBI:44557
+      label: nitrilotriacetic acid
   - preferred_term: FeCl2·4H2O
     concentration:
       value: '0.4'
@@ -132,6 +164,9 @@ solutions:
     concentration:
       value: '0.1'
       unit: G_PER_L
+    term:
+      id: CHEBI:49976
+      label: zinc dichloride
   - preferred_term: CaCl2·2H2O
     concentration:
       value: '0.02'
@@ -140,6 +175,9 @@ solutions:
     concentration:
       value: '0.019'
       unit: G_PER_L
+    term:
+      id: CHEBI:33118
+      label: boric acid
   - preferred_term: Na2MoO4·2H2O
     concentration:
       value: '0.01'
@@ -152,6 +190,9 @@ solutions:
     concentration:
       value: '1'
       unit: L
+    term:
+      id: CHEBI:15377
+      label: water
   name: Trace mineral solution
 - preferred_term: Trace vitamins
   composition:
@@ -159,10 +200,16 @@ solutions:
     concentration:
       value: '2'
       unit: MG_PER_L
+    term:
+      id: CHEBI:15956
+      label: biotin
   - preferred_term: Folic acid
     concentration:
       value: '2'
       unit: MG_PER_L
+    term:
+      id: CHEBI:27470
+      label: folic acid
   - preferred_term: Pyridoxine-HCl
     concentration:
       value: '10'
@@ -171,14 +218,23 @@ solutions:
     concentration:
       value: '5'
       unit: MG_PER_L
+    term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
   - preferred_term: Riboflavin
     concentration:
       value: '5'
       unit: MG_PER_L
+    term:
+      id: CHEBI:17015
+      label: riboflavin
   - preferred_term: Nicotinic acid
     concentration:
       value: '5'
       unit: MG_PER_L
+    term:
+      id: CHEBI:15940
+      label: nicotinic acid
   - preferred_term: Ca-pantothenate
     concentration:
       value: '5'
@@ -191,6 +247,9 @@ solutions:
     concentration:
       value: '5'
       unit: MG_PER_L
+    term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
   - preferred_term: Lipoic acid
     concentration:
       value: '5'
@@ -199,6 +258,9 @@ solutions:
     concentration:
       value: '1'
       unit: L
+    term:
+      id: CHEBI:15377
+      label: water
   name: Trace vitamins
 notes: Mix ingredients except trace vitamins, Na2S·9H2O and cysteine-HCl, and autoclave
   under a N2/CO2 (80/20) atmosphere. Separately autoclave Na2S·9H2O and cysteine-HCl

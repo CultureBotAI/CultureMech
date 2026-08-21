@@ -11,6 +11,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  term:
+    id: CHEBI:17234
+    label: glucose
 - preferred_term: Bacto Yeast Extract (Difco)
   concentration:
     value: '10'
@@ -23,6 +26,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: Tween 80 solution**
   concentration:
     value: '10'
@@ -35,6 +41,9 @@ ingredients:
   concentration:
     value: '1'
     unit: L
+  term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -77,6 +86,11 @@ curation_history:
   notes: Re-parsed the NBRC medium 881 composition table from the preserved scrape;
     7 ingredient(s) restored, 2 stock solution(s) nested rather than flattened, 1
     unparsed solution blob(s) removed (#299).
+- timestamp: '2026-08-20T19:01:16.109953+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 7 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 solutions:
 - preferred_term: Tween 80 solution
   composition:
@@ -84,10 +98,16 @@ solutions:
     concentration:
       value: '50'
       unit: G_PER_L
+    term:
+      id: CHEBI:53426
+      label: polysorbate 80
   - preferred_term: Distilled water
     concentration:
       value: '1'
       unit: L
+    term:
+      id: CHEBI:15377
+      label: water
   name: Tween 80 solution
 - preferred_term: Salts solution
   composition:
@@ -107,10 +127,16 @@ solutions:
     concentration:
       value: '2'
       unit: G_PER_L
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
   - preferred_term: Distilled water
     concentration:
       value: '1'
       unit: L
+    term:
+      id: CHEBI:15377
+      label: water
   name: Salts solution
 notes: pH 6.0 Add 5 g/L CaCO3 and 15 g/L agar after the pH is adjusted for the solid
   medium. Wako Pure Chemical Ind., Ltd., Osaka, Japan. Add a drop of 12 N HCl to 500

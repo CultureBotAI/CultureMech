@@ -23,18 +23,30 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  term:
+    id: CHEBI:17234
+    label: glucose
 - preferred_term: Tween 80
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
 - preferred_term: K2HPO4
   concentration:
     value: '2'
     unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Sodium acetate
   concentration:
     value: '5'
     unit: G_PER_L
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: Diammonium hydrogencitrate
   concentration:
     value: '2'
@@ -51,6 +63,9 @@ ingredients:
   concentration:
     value: '1'
     unit: L
+  term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -95,4 +110,9 @@ curation_history:
   notes: Re-parsed the NBRC medium 366 composition table from the preserved scrape;
     12 ingredient(s) restored, 0 stock solution(s) nested rather than flattened, 0
     unparsed solution blob(s) removed (#299).
+- timestamp: '2026-08-20T19:01:16.015082+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 5 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 notes: pH 5.5

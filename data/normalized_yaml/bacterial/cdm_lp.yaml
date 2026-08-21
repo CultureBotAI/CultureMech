@@ -45,6 +45,9 @@ ingredients:
     value: '0.26'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:asp-L'
+  term:
+    id: CHEBI:29991
+    label: L-aspartate(1-)
 - preferred_term: Glutathione
   term:
     id: CHEBI:16856
@@ -83,6 +86,9 @@ ingredients:
     value: 6e-05
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ascb-L'
+  term:
+    id: CHEBI:22651
+    label: ascorbate
 - preferred_term: L-Methionine
   term:
     id: CHEBI:16643
@@ -176,6 +182,9 @@ ingredients:
     value: '0.66'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:rib-D'
+  term:
+    id: CHEBI:16988
+    label: D-ribose
 - preferred_term: L-Leucine
   term:
     id: CHEBI:15603
@@ -192,6 +201,9 @@ ingredients:
     value: '0.11'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ala-D'
+  term:
+    id: CHEBI:15570
+    label: D-alanine
 - preferred_term: myo-Inositol
   term:
     id: CHEBI:17268
@@ -354,6 +366,9 @@ ingredients:
   concentration:
     value: '0.17'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:18240
+    label: 4-hydroxy-L-proline
 - preferred_term: Deoxyribose
   concentration:
     value: '0.74'
@@ -605,6 +620,11 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-20T19:01:36.836700+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 5 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 media_term:
   preferred_term: MediaDB Medium 33
   term:

@@ -10,6 +10,9 @@ ingredients:
   concentration:
     value: '55.506'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:15903
+    label: beta-D-glucose
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.01163'
@@ -157,6 +160,11 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-20T19:01:50.565139+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 media_term:
   preferred_term: MediaDB Medium 132
   term:

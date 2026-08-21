@@ -24,6 +24,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Antimicrobial agent; Properties: Organic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:6104
+    label: kanamycin
 - preferred_term: Rifampicin
   concentration:
     value: '50'
@@ -41,12 +44,18 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: 'Role: Antimicrobial agent; Properties: Simple component, Defined component'
+  term:
+    id: CHEBI:27902
+    label: tetracycline
 - preferred_term: Gentamicin
   concentration:
     value: '50'
     unit: G_PER_L
   notes: 'Role: Antimicrobial agent; Properties: Simple component, Defined component,
     Organic compound'
+  term:
+    id: CHEBI:17833
+    label: gentamycin
 - preferred_term: Tryptone
   term:
     id: MICRO:0000182
@@ -150,3 +159,8 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-08-20T19:01:55.913645+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 3 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).

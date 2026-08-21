@@ -25,6 +25,9 @@ composition:
   term:
     id: mediadive.compound:1148
     label: Pyromelitic acid
+  chebi_term:
+    id: CHEBI:45165
+    label: pyromellitic acid
 - preferred_term: (NH4)2HPO4
   concentration:
     value: '0.264'
@@ -115,6 +118,11 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-08-20T19:02:07.946358+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 ingredients:
 - preferred_term: See source for composition
   concentration:

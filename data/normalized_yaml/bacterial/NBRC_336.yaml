@@ -11,6 +11,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  term:
+    id: CHEBI:63043
+    label: potassium nitrate
 - preferred_term: Sodium glycerophosphate
   concentration:
     value: '0.1'
@@ -81,6 +84,11 @@ curation_history:
   notes: Re-parsed the NBRC medium 335 composition table from the preserved scrape;
     8 ingredient(s) restored, 1 stock solution(s) nested rather than flattened, 1
     unparsed solution blob(s) removed (#299).
+- timestamp: '2026-08-20T19:01:15.995663+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 4 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 solutions:
 - preferred_term: Trace element solution
   composition:
@@ -104,6 +112,9 @@ solutions:
     concentration:
       value: '20.8'
       unit: MG_PER_L
+    term:
+      id: CHEBI:49976
+      label: zinc dichloride
   - preferred_term: CoCl2·6H2O
     concentration:
       value: '40.4'
@@ -116,10 +127,16 @@ solutions:
     concentration:
       value: '1.77'
       unit: G_PER_L
+    term:
+      id: CHEBI:63017
+      label: sodium L-tartrate
   - preferred_term: Distilled water
     concentration:
       value: '1'
       unit: L
+    term:
+      id: CHEBI:15377
+      label: water
   name: Trace element solution
 notes: pH 7.0 Filtered, aged seawater or artificial seawater (Daigo's Artificial Seawater
   SP***). Wako Pure Chemical Ind., Ltd., Osaka, Japan.

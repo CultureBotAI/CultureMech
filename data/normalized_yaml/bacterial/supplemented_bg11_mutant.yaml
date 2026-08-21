@@ -78,11 +78,17 @@ ingredients:
   concentration:
     value: '1.032e-05'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:6104
+    label: kanamycin
 - preferred_term: Streptomycin
   concentration:
     value: '1.719e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:Stmyn'
+  term:
+    id: CHEBI:17076
+    label: streptomycin
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -158,11 +164,17 @@ ingredients:
   concentration:
     value: '3.095e-05'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:17698
+    label: chloramphenicol
 - preferred_term: Spectinomycin
   concentration:
     value: '6.018e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:Sptmyn'
+  term:
+    id: CHEBI:9215
+    label: spectinomycin
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -202,6 +214,11 @@ curation_history:
   notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-08-20T19:03:08.102081+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 4 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 media_term:
   preferred_term: MediaDB Medium 388
   term:

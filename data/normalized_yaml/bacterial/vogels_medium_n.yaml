@@ -16,6 +16,9 @@ ingredients:
     value: '104.1'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:so4'
+  term:
+    id: CHEBI:16189
+    label: sulfate
 - preferred_term: Sucrose
   term:
     id: CHEBI:17992
@@ -56,6 +59,9 @@ ingredients:
     value: '1610.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:no3'
+  term:
+    id: CHEBI:17632
+    label: nitrate
 - preferred_term: Magnesium
   concentration:
     value: '411.44'
@@ -115,6 +121,11 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-08-20T19:03:17.720489+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 2 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 media_term:
   preferred_term: MediaDB Medium 287
   term:

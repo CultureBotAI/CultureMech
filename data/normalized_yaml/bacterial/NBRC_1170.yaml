@@ -11,14 +11,23 @@ ingredients:
   concentration:
     value: '0.33'
     unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: KH2PO4
   concentration:
     value: '0.33'
     unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
 - preferred_term: KCl
   concentration:
     value: '0.33'
     unit: G_PER_L
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.33'
@@ -35,6 +44,9 @@ ingredients:
   concentration:
     value: '250'
     unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Coenzyme M
   concentration:
     value: '0.142'
@@ -55,14 +67,23 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  term:
+    id: CHEBI:64700
+    label: trimethylamine hydrochloride
 - preferred_term: Resazurin
   concentration:
     value: '1'
     unit: MG_PER_L
+  term:
+    id: CHEBI:8806
+    label: Resazurin
 - preferred_term: NaHCO3
   concentration:
     value: '5'
     unit: G_PER_L
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: Na2S·9H2O
   concentration:
     value: '0.5'
@@ -71,6 +92,9 @@ ingredients:
   concentration:
     value: '1'
     unit: L
+  term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -113,6 +137,11 @@ curation_history:
   notes: Re-parsed the NBRC medium 1169 composition table from the preserved scrape;
     16 ingredient(s) restored, 2 stock solution(s) nested rather than flattened, 1
     unparsed solution blob(s) removed (#299).
+- timestamp: '2026-08-20T19:01:15.792114+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 19 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 solutions:
 - preferred_term: Vitamin solution
   composition:
@@ -120,10 +149,16 @@ solutions:
     concentration:
       value: '2'
       unit: MG_PER_L
+    term:
+      id: CHEBI:15956
+      label: biotin
   - preferred_term: Folic acid
     concentration:
       value: '2'
       unit: MG_PER_L
+    term:
+      id: CHEBI:27470
+      label: folic acid
   - preferred_term: Pyridoxine-HCl
     concentration:
       value: '10'
@@ -132,14 +167,23 @@ solutions:
     concentration:
       value: '5'
       unit: MG_PER_L
+    term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
   - preferred_term: Riboflavin
     concentration:
       value: '5'
       unit: MG_PER_L
+    term:
+      id: CHEBI:17015
+      label: riboflavin
   - preferred_term: Nicotinic acid
     concentration:
       value: '5'
       unit: MG_PER_L
+    term:
+      id: CHEBI:15940
+      label: nicotinic acid
   - preferred_term: Ca-pantothenate
     concentration:
       value: '5'
@@ -148,6 +192,9 @@ solutions:
     concentration:
       value: '1'
       unit: MG_PER_L
+    term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
   - preferred_term: Vitamin B12
     concentration:
       value: '0.01'
@@ -156,6 +203,9 @@ solutions:
     concentration:
       value: '1'
       unit: L
+    term:
+      id: CHEBI:15377
+      label: water
   name: Vitamin solution
 - preferred_term: Trace elements solution
   composition:
@@ -183,6 +233,9 @@ solutions:
     concentration:
       value: '0.1'
       unit: G_PER_L
+    term:
+      id: CHEBI:49976
+      label: zinc dichloride
   - preferred_term: CuCl2·2H2O
     concentration:
       value: '0.025'
@@ -191,6 +244,9 @@ solutions:
     concentration:
       value: '0.01'
       unit: G_PER_L
+    term:
+      id: CHEBI:33118
+      label: boric acid
   - preferred_term: Na2MoO4·2H2O
     concentration:
       value: '0.024'
@@ -199,6 +255,9 @@ solutions:
     concentration:
       value: '1'
       unit: G_PER_L
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
   - preferred_term: NiCl2·6H2O
     concentration:
       value: '0.12'
@@ -207,6 +266,9 @@ solutions:
     concentration:
       value: '1'
       unit: L
+    term:
+      id: CHEBI:15377
+      label: water
   name: Trace elements solution
 notes: Mix ingredients except for vitamin solution, trimethylamine-HCl, NaHCO3 and
   Na2S·9H2O, and autoclave under a N2/CO2 atmosphere (80/20). Separately autoclave
