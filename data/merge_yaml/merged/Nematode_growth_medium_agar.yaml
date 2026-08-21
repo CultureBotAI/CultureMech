@@ -31,8 +31,8 @@ ingredients:
     unit: G_PER_L
   notes: 'CAS: 57-88-5; MW: 386.65; Ontology enriched via CAS-RN lookup'
   term:
-    id: CHEBI:140435
-    label: cholesterol-2,2,3,4,4,6-d6
+    id: CHEBI:16113
+    label: cholesterol
 - preferred_term: Calcium chloride
   concentration:
     value: '1'
@@ -84,6 +84,11 @@ curation_history:
   action: MERGED_RECIPES
   notes: merged 1 source recipe(s) on fingerprint 040a17f5bfdfc858dfbddd0eb44550a71e18d79af926f62734dcfd0f09e847d2
   source: nematode_growth_medium_agar.yaml
+- timestamp: '2026-08-21T01:39:54.036162+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22/G24)
+  notes: 'Re-grounded 1 term reference(s) to the correct CHEBI (audit G21/G22/G24;
+    see reports/chebi_grounding_audit.md): CHEBI:140435→CHEBI:16113 ×1.'
 data_quality_flags:
 - has_unmapped_ingredients
 merge_fingerprint: 040a17f5bfdfc858dfbddd0eb44550a71e18d79af926f62734dcfd0f09e847d2

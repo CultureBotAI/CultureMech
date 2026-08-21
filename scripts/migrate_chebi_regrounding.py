@@ -74,6 +74,13 @@ REMAP_RULES = [
     ("CHEBI:32149",  re.compile(r"\blactate\b", re.I), None,                     "CHEBI:75228"),   # sodium lactate (was sodium sulfate)
     ("CHEBI:32149",  re.compile(r"propionate", re.I), None,                      "CHEBI:132106"),  # sodium propionate
     ("CHEBI:32149",  re.compile(r"nicl2|nickel", re.I), None,                    "CHEBI:34887"),   # nickel(II) chloride
+    # #305 / #279 — grounded to the wrong SUBSTANCE, not merely the wrong salt.
+    # All three are label-conditional because each id is ALSO used correctly:
+    # CHEBI:32586 legitimately carries `Na2SO4 x 10 H2O` (5 rows) and CHEBI:86477
+    # carries `Na2SO3` / `Sodium sulfite` (26 rows). Only the Se/Si labels move.
+    ("CHEBI:140435", re.compile(r"cholesterol", re.I), None,                     "CHEBI:16113"),   # was cholesterol-2,2,3,4,4,6-d6, a deuterated MS internal standard (#305)
+    ("CHEBI:32586",  re.compile(r"na2seo4|selenate|seo4", re.I), None,           "CHEBI:77775"),   # was sodium SULFATE decahydrate; same Se->S collapse as the CHEBI:32149 selenate rule (#279)
+    ("CHEBI:86477",  re.compile(r"na2sio3|silicate|sio3", re.I), None,           "CHEBI:60720"),   # was sodium SULFITE; the Si->S half of the same collapse (#279)
     # Racemic DL-malate -> stereo-neutral disodium malate (NOT the (S)-specific
     # CHEBI:91261). Must precede the generic malate rule so the DL match fires
     # first (after it remaps the id off CHEBI:32149, the generic rule no longer

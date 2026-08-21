@@ -57,6 +57,34 @@ ADAPTERS = {"CHEBI": "sqlite:obo:chebi", "FOODON": "sqlite:obo:foodon",
 
 ID_LINE = re.compile(r"^(\s*)id:\s*(\S+)\s*$")
 LABEL_LINE = re.compile(r"^(\s*)label:\s*(.*)$")
+# A YAML key line, used to tell a folded continuation from the next field.
+KEY_LINE = re.compile(r"^\s*(?:-\s+)?[\w.-]+:")
+
+
+def _continuation_span(lines: list[str], start: int, indent: str) -> int:
+    """How many lines after `start` belong to the folded scalar opened there.
+
+    PyYAML writes a long label as a folded plain scalar:
+
+        label: (2R,4S,5R,6R)-5-Acetamido-2-[...]oxane-2-carboxylic
+          acid
+
+    Replacing only the `label:` line orphaned the continuation, which YAML then
+    folded into whatever value preceded it on the next read — so the label gained
+    a trailing ` acid`, and every run added another. One record had reached
+    `...carboxylic acid acid acid` before this was found (#314). 67 records carry
+    a multi-line label and were all corruptible.
+    """
+    count = 0
+    for line in lines[start + 1:]:
+        if not line.strip():
+            break
+        if KEY_LINE.match(line):
+            break
+        if len(line) - len(line.lstrip()) <= len(indent):
+            break
+        count += 1
+    return count
 
 
 class Labels:
@@ -132,16 +160,26 @@ def refill_text(text: str, labels: Labels) -> tuple[str, Counter]:
                 current = ml.group(2).strip().strip("'\"")
                 new = pending[1]
                 want = _label_line(pending[0], new)
-                # Compare the rendered LINE, not just the value: a correct label that
-                # is quoted differently from the corpus convention still needs
-                # rewriting, and comparing stripped values would call it "already
-                # correct" and leave the divergence in place.
-                if line == want:
+                # Compare the whole rendered BLOCK, not just the first line: a
+                # folded label spans several lines, and comparing one of them to a
+                # multi-line `want` never matches, so an already-correct corpus
+                # reported every folded label as "corrected" and rewrote it. The
+                # output was stable, but the summary a human reads before running
+                # --apply was not.
+                span = _continuation_span(lines, n, ml.group(1))
+                block = "".join(lines[n:n + span + 1])
+                # Rendered LINE not stripped VALUE: a correct label quoted
+                # differently from the corpus convention still needs rewriting.
+                if block == want:
                     stats["already correct"] += 1
                 else:
                     stats["empty -> filled" if not current
                           else ("requoted" if current == new else "corrected")] += 1
                     out[n] = want
+                    # Blank the folded continuation this label opened; `want`
+                    # already carries the full value, correctly re-folded.
+                    for extra in range(1, span + 1):
+                        out[n + extra] = ""
             pending = None
     return "".join(out), stats
 

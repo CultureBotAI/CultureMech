@@ -979,8 +979,8 @@ ingredients:
     value: '1'
     unit: G_PER_L
   term:
-    id: CHEBI:140435
-    label: cholesterol-2,2,3,4,4,6-d6
+    id: CHEBI:16113
+    label: cholesterol
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -1139,3 +1139,8 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-08-21T01:26:37.850725+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22/G24)
+  notes: 'Re-grounded 1 term reference(s) to the correct CHEBI (audit G21/G22/G24;
+    see reports/chebi_grounding_audit.md): CHEBI:140435→CHEBI:16113 ×1.'

@@ -976,8 +976,8 @@ ingredients:
     value: '1'
     unit: G_PER_L
   term:
-    id: CHEBI:140435
-    label: cholesterol-2,2,3,4,4,6-d6
+    id: CHEBI:16113
+    label: cholesterol
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -1136,6 +1136,11 @@ curation_history:
   action: MERGED_RECIPES
   notes: merged 1 source recipe(s) on fingerprint 3a4ef1908983923b31fdc81f7f120afdc8c8f18681fda5ed81856e196791784a
   source: omiz_pat_medium_modified.yaml
+- timestamp: '2026-08-21T01:39:57.455286+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22/G24)
+  notes: 'Re-grounded 1 term reference(s) to the correct CHEBI (audit G21/G22/G24;
+    see reports/chebi_grounding_audit.md): CHEBI:140435→CHEBI:16113 ×1.'
 merge_fingerprint: 3a4ef1908983923b31fdc81f7f120afdc8c8f18681fda5ed81856e196791784a
 merged_from:
 - omiz_pat_medium_modified

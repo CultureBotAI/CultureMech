@@ -63,3 +63,80 @@ def test_a_label_not_under_an_id_is_untouched():
     text = "solutions:\n- preferred_term: S\n  label: some solution label\n"
     new, _ = refill_text(text, FakeLabels({"CHEBI:1": "widget"}))
     assert new == text
+
+
+# --- folded multi-line labels (#314) ---------------------------------------
+
+LONG = ("(2R,4S,5R,6R)-5-Acetamido-2-[(2R,3S,4R,5S)-5-acetamido-4-"
+        "[(2R,3R,4R,5S,6R)-3-acetamido-6-(hydroxymethyl)oxan-2-yl]oxy-"
+        "2,3,6-trihydroxyhexoxy]-4-hydroxy-6-[(1R,2R)-1,2,3-trihydroxypropyl]"
+        "oxane-2-carboxylic acid")
+
+
+def _round_trip(text):
+    import yaml
+    return yaml.safe_load(text)
+
+
+def test_a_folded_label_is_replaced_whole_not_line_by_line():
+    """The corruption: only the first line was replaced.
+
+    PyYAML writes a long label as a folded plain scalar. Replacing just the
+    `label:` line orphaned the continuation, which YAML folded back into the new
+    value on the next read — so the label gained a trailing ` acid`, and every
+    run added another. One record reached `...carboxylic acid acid acid`.
+    """
+    text = ("ingredients:\n"
+            "- preferred_term: x\n"
+            "  term:\n"
+            "    id: CHEBI:1\n"
+            "    label: something short\n")
+    new, _ = refill_text(text, FakeLabels({"CHEBI:1": LONG}))
+    assert _round_trip(new)["ingredients"][0]["term"]["label"] == LONG
+
+
+def test_refilling_a_folded_label_is_idempotent():
+    """Idempotency is the property that actually failed, so it is pinned directly.
+
+    Three consecutive runs must agree; before the fix each one grew the value.
+    """
+    labels = FakeLabels({"CHEBI:1": LONG})
+    text = ("ingredients:\n"
+            "- preferred_term: x\n"
+            "  term:\n"
+            "    id: CHEBI:1\n"
+            "    label: seed\n")
+    first, _ = refill_text(text, labels)
+    second, stats = refill_text(first, labels)
+    third, _ = refill_text(second, labels)
+    assert first == second == third
+    assert stats["already correct"] == 1
+    assert _round_trip(third)["ingredients"][0]["term"]["label"] == LONG
+
+
+def test_an_accumulated_tail_is_repaired_not_merely_stopped():
+    """The 5 records already carrying a repeated tail must be fixed, not frozen."""
+    damaged = ("ingredients:\n"
+               "- preferred_term: x\n"
+               "  term:\n"
+               "    id: CHEBI:1\n"
+               "    label: " + LONG[:60] + "\n"
+               "      acid\n"
+               "      acid\n")
+    new, _ = refill_text(damaged, FakeLabels({"CHEBI:1": LONG}))
+    assert _round_trip(new)["ingredients"][0]["term"]["label"] == LONG
+
+
+def test_the_field_after_a_folded_label_survives():
+    """The continuation scan must stop at the next key, not eat it."""
+    text = ("ingredients:\n"
+            "- preferred_term: x\n"
+            "  term:\n"
+            "    id: CHEBI:1\n"
+            "    label: seed\n"
+            "  concentration:\n"
+            "    value: '10'\n")
+    new, _ = refill_text(text, FakeLabels({"CHEBI:1": LONG}))
+    doc = _round_trip(new)["ingredients"][0]
+    assert doc["term"]["label"] == LONG
+    assert doc["concentration"] == {"value": "10"}

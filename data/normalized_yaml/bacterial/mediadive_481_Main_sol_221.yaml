@@ -164,8 +164,8 @@ composition:
     id: mediadive.compound:1316
     label: Na malate
   chebi_term:
-    id: CHEBI:91261
-    label: disodium (S)-malate
+    id: CHEBI:91260
+    label: disodium malate
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: Adjust pH of the medium to 7.1. Add 1.5% agar if needed. Autoclave
@@ -209,6 +209,11 @@ curation_history:
   action: LLM-curated low-confidence chebi_term (G25 Phase 3)
   notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
     as a mixture, or confirmed correct.'
+- timestamp: '2026-08-21T01:26:34.800603+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22/G24)
+  notes: 'Re-grounded 1 term reference(s) to the correct CHEBI (audit G21/G22/G24;
+    see reports/chebi_grounding_audit.md): CHEBI:91261→CHEBI:91260 ×1.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

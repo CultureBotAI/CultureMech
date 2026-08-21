@@ -253,8 +253,8 @@ ingredients:
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:chsterol'
   term:
-    id: CHEBI:140435
-    label: cholesterol-2,2,3,4,4,6-d6
+    id: CHEBI:16113
+    label: cholesterol
 - preferred_term: L-Threonine
   term:
     id: CHEBI:16857
@@ -610,6 +610,11 @@ curation_history:
   action: MERGED_RECIPES
   notes: merged 1 source recipe(s) on fingerprint aee07a9289ff579754c7a409fdc01994add7357d19739c4ce3c4696c8ac38147
   source: cdm_lp.yaml
+- timestamp: '2026-08-21T01:39:51.992536+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22/G24)
+  notes: 'Re-grounded 1 term reference(s) to the correct CHEBI (audit G21/G22/G24;
+    see reports/chebi_grounding_audit.md): CHEBI:140435→CHEBI:16113 ×1.'
 media_term:
   preferred_term: MediaDB Medium 33
   term:

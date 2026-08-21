@@ -31,8 +31,8 @@ ingredients:
     unit: G_PER_L
   notes: 'CAS: 57-88-5; MW: 386.65; Ontology enriched via CAS-RN lookup'
   term:
-    id: CHEBI:140435
-    label: cholesterol-2,2,3,4,4,6-d6
+    id: CHEBI:16113
+    label: cholesterol
 - preferred_term: Calcium chloride
   concentration:
     value: '1'
@@ -79,5 +79,10 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
+- timestamp: '2026-08-21T01:26:39.583958+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22/G24)
+  notes: 'Re-grounded 1 term reference(s) to the correct CHEBI (audit G21/G22/G24;
+    see reports/chebi_grounding_audit.md): CHEBI:140435→CHEBI:16113 ×1.'
 data_quality_flags:
 - has_unmapped_ingredients
