@@ -348,7 +348,7 @@ def load_config(path: Path) -> dict[str, Any]:
                 raise ValueError(
                     f"Stage {focus_name}.{stage_name}.capabilities must be a mapping"
                 )
-            unknown_caps = set(capabilities) - _ALL_CAPABILITIES
+            unknown_caps = {str(cap) for cap in capabilities} - _ALL_CAPABILITIES
             if unknown_caps:
                 raise ValueError(
                     f"Stage {focus_name}.{stage_name}.capabilities names unknown "
