@@ -353,7 +353,8 @@ def load_config(path: Path) -> dict[str, Any]:
                 raise ValueError(
                     f"Stage {focus_name}.{stage_name}.capabilities names unknown "
                     f"capability/ies {sorted(unknown_caps)}; no provider declares "
-                    f"them, so they would silently score 0"
+                    f"them, so they would silently score 0. Known capabilities: "
+                    f"{', '.join(sorted(_ALL_CAPABILITIES))}"
                 )
         adjustments = focus.get("provider_adjustments")
         if adjustments is not None:
