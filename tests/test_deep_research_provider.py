@@ -316,6 +316,50 @@ def test_an_unknown_provider_in_the_allowlist_is_rejected():
         drp.main(["--config", str(CONFIG_PATH), "--allow", "not_a_provider"])
 
 
+def test_allow_mock_is_rejected_rather_than_silently_unrecommendable():
+    """mock passes the "is it a known provider" check in --allow (it's a real
+    PROVIDERS key), but recommendable() unconditionally excludes it — so
+    --allow mock used to run without error and silently never recommend
+    anything, with no diagnostic explaining why."""
+    with pytest.raises(ValueError, match="mock"):
+        drp.main(["--config", str(CONFIG_PATH), "--allow", "mock"])
+
+
+def test_stage_capability_null_weight_is_rejected(tmp_path):
+    """Same null-vs-absent gap as provider_adjustments, for the values
+    _score() calls float() on: an explicit `capabilities: {x: null}` used to
+    load successfully and crash later in _score with an uncaught TypeError
+    instead of this clean ValueError."""
+    profile = tmp_path / "nullcap.yaml"
+    profile.write_text(
+        "default_focus: f\n"
+        "focuses:\n"
+        "  f:\n"
+        "    stages:\n"
+        "      discovery:\n"
+        "        capabilities:\n"
+        "          academic_search: null\n"
+    )
+    with pytest.raises(ValueError, match="must be a number"):
+        drp.load_config(profile)
+
+
+def test_stage_weight_scalar_null_is_rejected(tmp_path):
+    """Same gap as above, for the stage-level synthesis_weight/speed_weight/
+    cost_weight scalars."""
+    profile = tmp_path / "nullweight.yaml"
+    profile.write_text(
+        "default_focus: f\n"
+        "focuses:\n"
+        "  f:\n"
+        "    stages:\n"
+        "      discovery:\n"
+        "        synthesis_weight: null\n"
+    )
+    with pytest.raises(ValueError, match="synthesis_weight must be a number"):
+        drp.load_config(profile)
+
+
 def test_recommendable_no_paid_actually_excludes_a_high_cost_row():
     """test_no_paid_keeps_the_medium_cost_provider above can pass even with
     no_paid filtering fully removed, if the ambient environment never makes a

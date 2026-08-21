@@ -356,6 +356,24 @@ def load_config(path: Path) -> dict[str, Any]:
                     f"them, so they would silently score 0. Choose one of: "
                     f"{', '.join(sorted(_ALL_CAPABILITIES))}"
                 )
+            # Same null-vs-absent gap as provider_adjustments below, for the
+            # values _score() calls float() on: an explicit
+            # `capabilities: {academic_search: null}` or `synthesis_weight:
+            # null` loaded successfully and crashed later in _score with an
+            # uncaught TypeError instead of a clean ValueError here.
+            for cap_name, cap_weight in capabilities.items():
+                if not isinstance(cap_weight, (int, float)) or isinstance(cap_weight, bool):
+                    raise ValueError(
+                        f"Stage {focus_name}.{stage_name}.capabilities[{cap_name!r}] "
+                        f"must be a number, got {cap_weight!r}"
+                    )
+            for weight_key in ("synthesis_weight", "speed_weight", "cost_weight"):
+                weight = stage.get(weight_key, 0)
+                if not isinstance(weight, (int, float)) or isinstance(weight, bool):
+                    raise ValueError(
+                        f"Stage {focus_name}.{stage_name}.{weight_key} must be a "
+                        f"number, got {weight!r}"
+                    )
         # .get(key, {}) only supplies the default when the key is ABSENT — an
         # explicit YAML `provider_adjustments: null` still returns None here,
         # so the isinstance check below (unconditional, like the sibling
@@ -623,6 +641,11 @@ def main(argv: list[str] | None = None) -> int:
         if unknown:
             raise ValueError(
                 f"Unknown provider(s) in --allow: {', '.join(sorted(unknown))}"
+            )
+        if "mock" in allow:
+            raise ValueError(
+                "--allow may not include 'mock': recommendable() always excludes "
+                "it, so it can never be recommended regardless of --allow"
             )
     report = build_report(config, focus_name, allow=allow, no_paid=args.no_paid)
     if args.json:
