@@ -38,6 +38,7 @@ Usage::
     # See what would happen without making any API calls
     python scripts/enrich_edison_response.py --dry-run
 """
+
 from __future__ import annotations
 
 import argparse
@@ -65,14 +66,41 @@ def _strip_meta_suffix(name: str) -> str:
     return name
 
 
-def needs_enrichment(out_dir: Path, stem: str, *, force: bool) -> dict[str, bool]:
-    """Return a dict of which sidecars are missing for this stem."""
+def _agent_state_matches_task(out_dir: Path, stem: str, task_id: str) -> bool:
+    """Whether the saved trace is readable and belongs to the task."""
+    path = out_dir / f"{stem}-agent-state.json"
+    try:
+        payload = json.loads(path.read_text())
+    except (OSError, json.JSONDecodeError):
+        return False
+    return isinstance(payload, dict) and str(payload.get("task_id") or "") == task_id
+
+
+def _attributable_sidecars(out_dir: Path, stem: str, task_id: str) -> dict[str, bool]:
+    """Return on-disk sidecars this task's metadata may truthfully claim."""
+    sidecars = ec._existing_sidecars(out_dir, stem)  # pylint: disable=protected-access
+    if sidecars["agent_state_json"]:
+        sidecars["agent_state_json"] = _agent_state_matches_task(out_dir, stem, task_id)
+    return sidecars
+
+
+def needs_enrichment(
+    out_dir: Path, stem: str, *, force: bool, task_id: str | None = None
+) -> dict[str, bool]:
+    """Return which sidecars are absent or cannot be attributed to this task."""
+    task_set_unverified = bool(task_id) and not _agent_state_matches_task(out_dir, stem, task_id)
     return {
-        "response_json": force or not (out_dir / f"{stem}-response.json").exists(),
-        "citations_md": force or not (out_dir / f"{stem}-citations.md").exists(),
-        "agent_state_json": force or not (out_dir / f"{stem}-agent-state.json").exists(),
-        "files_json": force or not (out_dir / f"{stem}-files.json").exists(),
-        "answer_md": force or not (out_dir / f"{stem}.md").exists(),
+        "response_json": force
+        or task_set_unverified
+        or not (out_dir / f"{stem}-response.json").exists(),
+        "citations_md": force
+        or task_set_unverified
+        or not (out_dir / f"{stem}-citations.md").exists(),
+        "agent_state_json": force
+        or task_set_unverified
+        or not (out_dir / f"{stem}-agent-state.json").exists(),
+        "files_json": force or task_set_unverified or not (out_dir / f"{stem}-files.json").exists(),
+        "answer_md": force or task_set_unverified or not (out_dir / f"{stem}.md").exists(),
     }
 
 
@@ -89,16 +117,19 @@ def enrich_one(client: Any, meta_path: Path, *, force: bool, dry_run: bool) -> d
 
     stem = _strip_meta_suffix(meta_path.name)
     out_dir = meta_path.parent
-    missing = needs_enrichment(out_dir, stem, force=force)
+    prior_task_set_verified = _agent_state_matches_task(out_dir, stem, task_id)
+    missing = needs_enrichment(out_dir, stem, force=force, task_id=task_id)
     if not any(missing.values()):
         return {"path": str(meta_path), "status": "already-complete", "wrote": []}
 
-    print(f"  + enriching {stem}  (missing: "
-          f"{[k for k, v in missing.items() if v]})", flush=True)
+    print(f"  + enriching {stem}  (missing: {[k for k, v in missing.items() if v]})", flush=True)
 
     if dry_run:
-        return {"path": str(meta_path), "status": "dry-run",
-                "would_write": [k for k, v in missing.items() if v]}
+        return {
+            "path": str(meta_path),
+            "status": "dry-run",
+            "would_write": [k for k, v in missing.items() if v],
+        }
 
     wrote: list[str] = []
 
@@ -137,15 +168,15 @@ def enrich_one(client: Any, meta_path: Path, *, force: bool, dry_run: bool) -> d
             merged["response"] = ec._safe_model_dump(normal)  # pylint: disable=protected-access
         if verbose is not None:
             merged["verbose"] = ec._safe_model_dump(verbose)  # pylint: disable=protected-access
-        (out_dir / f"{stem}-response.json").write_text(
-            json.dumps(merged, indent=2, default=str))
+        (out_dir / f"{stem}-response.json").write_text(json.dumps(merged, indent=2, default=str))
         wrote.append("response_json")
 
     if missing["citations_md"]:
         citations = ec.parse_citations(formatted_answer or answer)
         query = str(meta.get("query") or "")
         (out_dir / f"{stem}-citations.md").write_text(
-            ec.render_citations_md(citations, query=query))
+            ec.render_citations_md(citations, query=query)
+        )
         wrote.append("citations_md")
 
     if missing["agent_state_json"] and verbose is not None:
@@ -153,12 +184,18 @@ def enrich_one(client: Any, meta_path: Path, *, force: bool, dry_run: bool) -> d
         environment_frame = ec._safe_model_dump(getattr(verbose, "environment_frame", None))  # pylint: disable=protected-access
         verbose_metadata = ec._safe_model_dump(getattr(verbose, "metadata", None))  # pylint: disable=protected-access
         if any(x is not None for x in (agent_state, environment_frame, verbose_metadata)):
-            (out_dir / f"{stem}-agent-state.json").write_text(json.dumps({
-                "task_id": task_id,
-                "agent_state": agent_state,
-                "environment_frame": environment_frame,
-                "metadata": verbose_metadata,
-            }, indent=2, default=str))
+            (out_dir / f"{stem}-agent-state.json").write_text(
+                json.dumps(
+                    {
+                        "task_id": task_id,
+                        "agent_state": agent_state,
+                        "environment_frame": environment_frame,
+                        "metadata": verbose_metadata,
+                    },
+                    indent=2,
+                    default=str,
+                )
+            )
             wrote.append("agent_state_json")
 
     files_listing = None
@@ -170,17 +207,24 @@ def enrich_one(client: Any, meta_path: Path, *, force: bool, dry_run: bool) -> d
             files_listing = None
         if files_listing is not None:
             (out_dir / f"{stem}-files.json").write_text(
-                json.dumps(ec._safe_model_dump(files_listing),  # pylint: disable=protected-access
-                           indent=2, default=str))
+                json.dumps(
+                    ec._safe_model_dump(files_listing),  # pylint: disable=protected-access
+                    indent=2,
+                    default=str,
+                )
+            )
             wrote.append("files_json")
     # Pull named curation artifacts (separate from the files.json
     # inventory). Always attempt, even when files.json already exists,
     # so re-running picks up artifacts that were missed before.
     artifacts_manifest: list[dict[str, Any]] = []
-    if files_listing is None and (out_dir / f"{stem}-files.json").exists():
+    if (
+        files_listing is None
+        and prior_task_set_verified
+        and (out_dir / f"{stem}-files.json").exists()
+    ):
         try:
-            files_listing = json.loads(
-                (out_dir / f"{stem}-files.json").read_text())
+            files_listing = json.loads((out_dir / f"{stem}-files.json").read_text())
         except (OSError, json.JSONDecodeError):
             files_listing = None
     if files_listing is not None:
@@ -194,24 +238,44 @@ def enrich_one(client: Any, meta_path: Path, *, force: bool, dry_run: bool) -> d
             wrote.append("artifacts")
 
     # Refresh the meta yaml with the now-richer field set
+    if prior_task_set_verified:
+        attributable_sidecars = _attributable_sidecars(out_dir, stem, task_id)
+    else:
+        attributable_sidecars = ec._existing_sidecars(  # pylint: disable=protected-access
+            out_dir, stem, set(wrote)
+        )
+        if attributable_sidecars["agent_state_json"]:
+            attributable_sidecars["agent_state_json"] = _agent_state_matches_task(
+                out_dir, stem, task_id
+            )
+
     updates: dict[str, Any] = {
         "answer_chars": len(answer or ""),
         "formatted_answer_chars": len(formatted_answer or ""),
         "has_answer_reasoning": bool(getattr(primary, "answer_reasoning", None)),
         "answer_reasoning_chars": len(getattr(primary, "answer_reasoning", "") or ""),
         "citations_parsed": len(ec.parse_citations(formatted_answer or answer)),
-        "sidecar_files": ec._existing_sidecars(out_dir, stem),  # pylint: disable=protected-access
+        "sidecar_files": attributable_sidecars,
         "artifacts_fetched": [a for a in artifacts_manifest if a.get("status") == "fetched"],
         "artifacts_skipped": [a for a in artifacts_manifest if a.get("status") != "fetched"],
-        "enriched_at": ec._to_iso(__import__("datetime").datetime.now(  # pylint: disable=protected-access
-            __import__("datetime").timezone.utc)),
+        "enriched_at": ec._to_iso(
+            __import__("datetime").datetime.now(  # pylint: disable=protected-access
+                __import__("datetime").timezone.utc
+            )
+        ),
     }
     # Preserve existing query_sha256, but stamp it in if missing.
     if not meta.get("query_sha256") and meta.get("query"):
         updates["query_sha256"] = ec.query_sha256(str(meta["query"]))
     # Pull through fields we may not have captured originally.
-    for field in ("job_name", "user", "agent_name", "build_owner",
-                  "environment_name", "share_status"):
+    for field in (
+        "job_name",
+        "user",
+        "agent_name",
+        "build_owner",
+        "environment_name",
+        "share_status",
+    ):
         val = getattr(primary, field, None)
         if val is not None and meta.get(field) is None:
             updates[field] = val
@@ -220,22 +284,30 @@ def enrich_one(client: Any, meta_path: Path, *, force: bool, dry_run: bool) -> d
         updates["created_at"] = ec._to_iso(created_at)  # pylint: disable=protected-access
 
     meta.update(updates)
-    meta_path.write_text(yaml.safe_dump(meta, sort_keys=False,
-                                        allow_unicode=True, width=100))
+    meta_path.write_text(yaml.safe_dump(meta, sort_keys=False, allow_unicode=True, width=100))
 
     return {"path": str(meta_path), "status": "enriched", "wrote": wrote}
 
 
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--research-dir", type=Path, default=DEFAULT_RESEARCH_DIR,
-                    help="Directory containing *-edison-*-meta.yaml files.")
-    ap.add_argument("--pattern", default="*-edison-*-meta.yaml",
-                    help="Glob pattern for meta yamls to consider.")
-    ap.add_argument("--force", action="store_true",
-                    help="Re-write sidecars even if they already exist.")
-    ap.add_argument("--dry-run", action="store_true",
-                    help="Show what would be enriched without making API calls.")
+    ap.add_argument(
+        "--research-dir",
+        type=Path,
+        default=DEFAULT_RESEARCH_DIR,
+        help="Directory containing *-edison-*-meta.yaml files.",
+    )
+    ap.add_argument(
+        "--pattern", default="*-edison-*-meta.yaml", help="Glob pattern for meta yamls to consider."
+    )
+    ap.add_argument(
+        "--force", action="store_true", help="Re-write sidecars even if they already exist."
+    )
+    ap.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Show what would be enriched without making API calls.",
+    )
     args = ap.parse_args(argv)
 
     if not args.research_dir.is_dir():
@@ -247,20 +319,21 @@ def main(argv: list[str] | None = None) -> int:
         print(f"No metas matched {args.pattern} under {args.research_dir}")
         return 0
 
-    print(f"Considering {len(meta_paths)} meta yamls in "
-          f"{args.research_dir.relative_to(REPO_ROOT)}/")
+    print(
+        f"Considering {len(meta_paths)} meta yamls in {args.research_dir.relative_to(REPO_ROOT)}/"
+    )
 
     client = None
     if not args.dry_run:
         api_key = rme.load_api_key()
         from edison_client import EdisonClient
+
         client = EdisonClient(api_key=api_key)
 
     results: list[dict[str, Any]] = []
     try:
         for meta_path in meta_paths:
-            results.append(enrich_one(client, meta_path,
-                                      force=args.force, dry_run=args.dry_run))
+            results.append(enrich_one(client, meta_path, force=args.force, dry_run=args.dry_run))
     finally:
         if client is not None:
             client.close()
