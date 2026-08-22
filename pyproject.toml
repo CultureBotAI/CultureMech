@@ -61,6 +61,7 @@ dev = [
     "black>=23.0.0",
     "ruff>=0.1.0",
     "mypy>=1.5.0",
+    "tomli>=2.0.0; python_version < '3.11'",
     # No [cyberian] extra: `cyberian` is a BASE dependency of deep-research-client
     # anyway, so the extra added nothing but the appearance of a deliberate
     # choice. Cyberian is a wrapper around an `agentapi` service on

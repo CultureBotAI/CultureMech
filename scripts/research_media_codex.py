@@ -52,14 +52,22 @@ import re
 import shutil
 import subprocess
 import sys
-import tomllib
+
+try:
+    import tomllib
+except ModuleNotFoundError:  # Python 3.10
+    import tomli as tomllib
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 
 from research_media import (  # noqa: E402
-    DEFAULT_RESEARCH_DIR, DEFAULT_TEMPLATE, load_media, resolve_media_file, template_vars,
+    DEFAULT_RESEARCH_DIR,
+    DEFAULT_TEMPLATE,
+    load_media,
+    resolve_media_file,
+    template_vars,
 )
 
 CODEX_CONFIG = Path.home() / ".codex" / "config.toml"
@@ -92,7 +100,8 @@ def preflight() -> list[str]:
         if str(cfg.get("web_search", "")).lower() not in {"live", "true", "on"}:
             problems.append(
                 f"`web_search` is not enabled in {CODEX_CONFIG} — Codex would answer "
-                "from memory and cite nothing")
+                "from memory and cite nothing"
+            )
     else:
         problems.append(f"{CODEX_CONFIG} not found — cannot confirm web search is on")
     return problems
@@ -111,7 +120,8 @@ def build_prompt(doc: dict, media_file: Path, template: Path) -> str:
     if missing:
         raise ValueError(
             f"template placeholders not filled: {missing}. research_media.template_vars "
-            "no longer covers this template — fix rather than send a prompt with holes.")
+            "no longer covers this template — fix rather than send a prompt with holes."
+        )
     return PREAMBLE + body
 
 
@@ -119,7 +129,10 @@ def run_codex(prompt: str, out_file: Path, timeout: int) -> tuple[int, str]:
     out_file.parent.mkdir(parents=True, exist_ok=True)
     proc = subprocess.run(
         ["codex", "exec", "--output-last-message", str(out_file), prompt],
-        capture_output=True, text=True, timeout=timeout)
+        capture_output=True,
+        text=True,
+        timeout=timeout,
+    )
     return proc.returncode, (proc.stderr or "")[-800:]
 
 
@@ -128,17 +141,25 @@ def source_count(text: str) -> int:
 
 
 def main(argv: list[str] | None = None) -> int:
-    ap = argparse.ArgumentParser(description=__doc__,
-                                 formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
     ap.add_argument("--target", required=True, help="Media YAML path, slug, ID, or name")
     ap.add_argument("--template", type=Path, default=DEFAULT_TEMPLATE)
     ap.add_argument("--research-dir", type=Path, default=DEFAULT_RESEARCH_DIR)
     ap.add_argument("--timeout", type=int, default=1800)
-    ap.add_argument("--min-sources", type=int, default=3,
-                    help="Fail if the report cites fewer distinct URLs than this. A run "
-                         "that found nothing should not look like a result.")
-    ap.add_argument("--dry-run", action="store_true",
-                    help="Print the prompt and destination without calling Codex.")
+    ap.add_argument(
+        "--min-sources",
+        type=int,
+        default=3,
+        help="Fail if the report cites fewer distinct URLs than this. A run "
+        "that found nothing should not look like a result.",
+    )
+    ap.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Print the prompt and destination without calling Codex.",
+    )
     args = ap.parse_args(argv)
 
     problems = preflight()
@@ -168,17 +189,19 @@ def main(argv: list[str] | None = None) -> int:
         print(f"codex exec failed (exit {code}):\n{err}", file=sys.stderr)
         return 1
     if not out_file.exists() or not out_file.stat().st_size:
-        print(f"codex exec reported success but wrote nothing to {out_file}",
-              file=sys.stderr)
+        print(f"codex exec reported success but wrote nothing to {out_file}", file=sys.stderr)
         return 1
 
     text = out_file.read_text()
     n = source_count(text)
     print(f"Wrote {out_file.relative_to(REPO_ROOT)} — {len(text)} chars, {n} distinct source(s).")
     if n < args.min_sources:
-        print(f"  WARNING: only {n} source(s), below --min-sources {args.min_sources}. "
-              f"Treat this as a lead, not evidence; `claude_code` cites far more "
-              f"(22 vs 3 on the same query).", file=sys.stderr)
+        print(
+            f"  WARNING: only {n} source(s), below --min-sources {args.min_sources}. "
+            f"Treat this as a lead, not evidence; `claude_code` cites far more "
+            f"(22 vs 3 on the same query).",
+            file=sys.stderr,
+        )
         return 1
     return 0
 
