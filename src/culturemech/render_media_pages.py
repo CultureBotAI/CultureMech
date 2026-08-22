@@ -40,9 +40,7 @@ try:
 except ImportError:
     COMPOSITION_GRAPHS_AVAILABLE = False
 
-    def build_ingredient_composition_graph(
-        medium: dict, max_ingredients: int = 30  # type: ignore
-    ) -> str:
+    def build_ingredient_composition_graph(medium: dict, max_ingredients: int = 30) -> str:
         return ""
 
 else:

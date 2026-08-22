@@ -6,8 +6,8 @@ authors = [
     {name = "CultureMech Contributors"}
 ]
 readme = "README.md"
-license = {text = "CC0-1.0"}
-requires-python = ">=3.10"
+license = "CC0-1.0"
+requires-python = ">=3.10,<3.15"
 keywords = [
     "microbiology",
     "growth media",
@@ -20,10 +20,11 @@ classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Science/Research",
     "Topic :: Scientific/Engineering :: Bio-Informatics",
-    "License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
 ]
 
 dependencies = [
@@ -42,7 +43,7 @@ dependencies = [
     "bacdive>=1.0.0",
     "sqlparse>=0.4.0",  # For parsing KOMODO and MediaDB SQL dumps
     "openpyxl>=3.1.0",  # For parsing KOMODO Excel supplementary files
-    "PyPDF2>=3.0.0",  # For PDF text extraction in literature verification
+    "pypdf>=6.0.0",  # For PDF text extraction in literature verification
     "numpy>=1.24.0",  # Array operations for embeddings
     "pandas>=2.0.0",  # DataFrame for UMAP coordinates
     "umap-learn>=0.5.0",  # UMAP dimensionality reduction (selectable via --method umap)
@@ -78,9 +79,9 @@ koza = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/KG-Hub/CultureMech"
-Repository = "https://github.com/KG-Hub/CultureMech"
-Documentation = "https://kg-hub.github.io/CultureMech"
+Homepage = "https://github.com/CultureBotAI/CultureMech"
+Repository = "https://github.com/CultureBotAI/CultureMech"
+Documentation = "https://culturebotai.github.io/CultureMech"
 
 [project.scripts]
 culturemech = "culturemech.cli:cli"
@@ -111,10 +112,32 @@ addopts = [
     "--cov-report=term-missing",
     "--cov-report=html",
 ]
+markers = [
+    "fast: isolated tests that do not parse the repository corpus or require external systems",
+    "corpus: tests that inspect tracked normalized/merged repository data",
+    "integration: tests that exercise optional checkouts, services, or installed-package boundaries",
+]
+filterwarnings = [
+    "error::ResourceWarning",
+    "error::SyntaxWarning",
+    "error::DeprecationWarning:culturemech(\\.|$)",
+    # Narrow third-party warnings; remove each filter when its upstream fixes it.
+    "ignore:The LinkML dataclass extension patch is deprecated.*:DeprecationWarning:sssom_schema\\.datamodel\\.sssom_schema",
+    "ignore:Accessing the 'model_fields' attribute.*:pydantic.warnings.PydanticDeprecatedSince211:linkml\\.generators\\.pydanticgen\\.template",
+    "ignore:The 'mode.copy_on_write' option is deprecated.*:pandas.errors.Pandas4Warning:sssom\\.util",
+    "ignore:Failing to pass a value to the 'type_params'.*:DeprecationWarning:funowl\\.terminals\\.TypingHelper",
+]
+
+[tool.coverage.run]
+omit = ["src/culturemech/schema/culturemech_dataclasses.py"]
+
+[tool.coverage.report]
+fail_under = 17
+precision = 1
 
 [tool.black]
 line-length = 100
-target-version = ["py310", "py311", "py312"]
+target-version = ["py310"]
 include = '\.pyi?$'
 exclude = '''
 /(
@@ -133,6 +156,9 @@ exclude = '''
 [tool.ruff]
 line-length = 100
 target-version = "py310"
+extend-exclude = ["src/culturemech/schema/culturemech_dataclasses.py"]
+
+[tool.ruff.lint]
 select = [
     "E",   # pycodestyle errors
     "W",   # pycodestyle warnings
@@ -159,3 +185,7 @@ no_implicit_optional = true
 warn_redundant_casts = true
 warn_unused_ignores = true
 strict_equality = true
+
+[[tool.mypy.overrides]]
+module = ["yaml", "kg_microbe_browser"]
+ignore_missing_imports = true

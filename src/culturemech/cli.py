@@ -16,7 +16,7 @@ def cli():
 @cli.command()
 @click.option(
     "--input-dir",
-    type=click.Path(exists=True, path_type=Path),
+    type=click.Path(path_type=Path),
     default="data/normalized_yaml",
     help="Input directory with normalized YAML files",
 )

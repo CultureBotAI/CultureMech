@@ -1760,6 +1760,24 @@ test:
     uv run --extra dev pytest tests/ -v
 
 [group('Test')]
+test-fast:
+    uv run --extra dev pytest tests/ -m fast --no-cov -q
+
+[group('Test')]
+test-corpus:
+    uv run --extra dev pytest tests/ -m corpus --no-cov -q
+
+[group('Test')]
+test-integration:
+    uv run --extra dev pytest tests/ -m integration --no-cov -q
+
+[group('Test')]
+typecheck-renderer:
+    uv run --extra dev mypy \
+        src/culturemech/render_media_pages.py \
+        src/culturemech/web_artifacts.py
+
+[group('Test')]
 test-kgx:
     #!/usr/bin/env bash
     echo "Running KGX export tests..."
@@ -2482,15 +2500,11 @@ stats-terminal:
 
 [group('Stats')]
 update-readme-stats:
-    #!/usr/bin/env bash
-    echo "Generating fresh statistics for README update..."
-    echo ""
-    just stats-report output/stats
-    echo ""
-    echo "Statistics generated! To update README.md:"
-    echo "  1. Review output/stats/stats.md"
-    echo "  2. Copy relevant sections to README.md"
-    echo "  3. Update lines 56-61 with current metrics"
+    uv run python scripts/update_readme_stats.py
+
+[group('Stats')]
+check-readme-stats:
+    uv run python scripts/update_readme_stats.py --check
 
 [group('Utils')]
 count-recipes:

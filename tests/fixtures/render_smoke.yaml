@@ -1,0 +1,6 @@
+id: CultureMech:999999
+name: Wheel smoke recipe
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients: []
