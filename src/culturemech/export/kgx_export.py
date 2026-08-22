@@ -852,6 +852,22 @@ def _make_association(
 _EMITTED_NODE_IDS: set = set()
 
 
+# Edge ids already written in this run. `_make_edge_id` is a deterministic UUID5
+# over subject|predicate|object, so an identical triple emitted twice gets the
+# same id — and `transform()` walks each record's `solutions[]`, re-emitting a
+# shared stock solution's whole composition once per referencing medium.
+# `Seven vitamins solution` is referenced by 178 media, so each of its
+# `has_part` edges appeared 178 times: 45,464 surplus rows, 23% of the file
+# (#312). Every collision was an exact duplicate triple, so nothing is lost by
+# keeping the first.
+_EMITTED_EDGE_IDS: set = set()
+
+
+def reset_edge_dedup() -> None:
+    """Clear the run-scoped edge-id set. See `reset_node_dedup`."""
+    _EMITTED_EDGE_IDS.clear()
+
+
 def reset_node_dedup() -> None:
     """Clear the run-scoped node-id set.
 
@@ -884,6 +900,10 @@ if KOZA_AVAILABLE:
             # Deliberately NOT wrapped in biolink's Association: its `qualifiers`
             # slot is `list[str]`, so every qualified edge raised here and was
             # swallowed by the old except-and-print. Failures now stop the run.
+            edge_id = edge_dict["id"]
+            if edge_id in _EMITTED_EDGE_IDS:
+                continue
+            _EMITTED_EDGE_IDS.add(edge_id)
             koza_ctx.write(to_edge(edge_dict))
 
 

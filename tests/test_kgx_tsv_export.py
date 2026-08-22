@@ -238,6 +238,42 @@ def exported(tmp_path: Path) -> tuple[list[dict], list[dict]]:
     return read("nodes"), read("edges")
 
 
+# Two media referencing ONE stock solution — the #312 shape. On the real corpus
+# `Seven vitamins solution` is referenced by 178 media.
+SHARED_SOLUTION = {
+    "preferred_term": "Seven vitamins solution",
+    "concentration": {"value": "1", "unit": "ML_PER_L"},
+    "composition": [
+        {"preferred_term": "Biotin", "term": {"id": "CHEBI:15956"}},
+        {"preferred_term": "Nicotinic acid", "term": {"id": "CHEBI:15940"}},
+    ],
+}
+
+
+@pytest.fixture
+def exported_shared(tmp_path: Path) -> tuple[list[dict], list[dict]]:
+    """Two media that reference the same stock solution."""
+    import export_kgx
+    import yaml
+
+    records_dir = tmp_path / "records" / "canary"
+    records_dir.mkdir(parents=True)
+    for i, name in enumerate(("Medium One", "Medium Two")):
+        (records_dir / f"record_{i}.yaml").write_text(yaml.safe_dump({
+            "name": name, "medium_type": "COMPLEX",
+            "solutions": [SHARED_SOLUTION],
+        }))
+
+    out = tmp_path / "out"
+    export_kgx.run(tmp_path / "records", out)
+
+    def read(kind: str) -> list[dict]:
+        with (out / f"culturemech_{kind}.tsv").open() as fh:
+            return list(csv.DictReader(fh, delimiter="\t"))
+
+    return read("nodes"), read("edges")
+
+
 def test_the_export_writes_a_node_and_edge_tsv_pair(exported):
     node_rows, edge_rows = exported
     assert node_rows and edge_rows
@@ -272,6 +308,49 @@ def test_qualified_edges_reach_the_tsv(exported):
     assert any(e["concentration"] for e in edge_rows)
     assert any(e["role"] for e in edge_rows)
     assert any(e["strain"] for e in edge_rows)
+
+
+def test_shared_edges_are_written_once(exported_shared):
+    """A stock solution's composition belongs to the solution, not to each medium.
+
+    `transform()` walks every record's `solutions[]`, so a shared solution
+    re-emitted its whole composition once per referencing medium. `Seven vitamins
+    solution` is referenced by 178 media, so each of its `has_part` edges appeared
+    178 times — 45,464 surplus rows, 23% of the file (#312).
+
+    Every collision was an exact duplicate triple, so keeping the first loses
+    nothing: on the real corpus, distinct edges before and after are both 153,372.
+
+    Uses `exported_shared` deliberately. Against the plain `exported` fixture this
+    assertion is vacuous — those two records share no solution, so no duplicate
+    can arise and the test passes with the dedup removed. Verified by reverting
+    the fix: only the shared-solution fixtures fail.
+    """
+    _node_rows, edge_rows = exported_shared
+    ids = [e["id"] for e in edge_rows]
+    assert len(ids) == len(set(ids)), "duplicate edge id in the edges file"
+
+    triples = [(e["subject"], e["predicate"], e["object"]) for e in edge_rows]
+    assert len(triples) == len(set(triples))
+    # ...and the id really is a function of the triple, which is what makes
+    # deduplicating on the id safe.
+    assert len(set(ids)) == len(set(triples))
+
+
+def test_a_solution_shared_by_two_media_emits_its_composition_once(exported_shared):
+    """The #312 shape itself, not just the absence of duplicates."""
+    _node_rows, edge_rows = exported_shared
+    composition = [e for e in edge_rows
+                   if e["subject"].startswith("culturemech:solution_")
+                   and e["predicate"] == "biolink:has_part"]
+    assert composition, "fixture must reference a shared solution"
+    assert len(composition) == len({e["id"] for e in composition})
+    # Both media still get their own medium -> solution edge: that one IS
+    # per-medium and must not be collapsed.
+    to_solution = [e for e in edge_rows
+                   if e["object"].startswith("culturemech:solution_")
+                   and e["predicate"] == "biolink:has_part"]
+    assert len(to_solution) == 2, to_solution
 
 
 def test_shared_nodes_are_written_once(exported):
