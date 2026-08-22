@@ -124,7 +124,7 @@ filterwarnings = [
     # Narrow third-party warnings; remove each filter when its upstream fixes it.
     "ignore:The LinkML dataclass extension patch is deprecated.*:DeprecationWarning:sssom_schema\\.datamodel\\.sssom_schema",
     "ignore:Accessing the 'model_fields' attribute.*:pydantic.warnings.PydanticDeprecatedSince211:linkml\\.generators\\.pydanticgen\\.template",
-    "ignore:The 'mode.copy_on_write' option is deprecated.*:pandas.errors.Pandas4Warning:sssom\\.util",
+    "ignore:The 'mode.copy_on_write' option is deprecated.*::sssom\\.util",
     "ignore:Failing to pass a value to the 'type_params'.*:DeprecationWarning:funowl\\.terminals\\.TypingHelper",
 ]
 
