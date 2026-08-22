@@ -520,3 +520,25 @@ def test_policy_filtered_empty_recommendation_names_the_actual_cause(monkeypatch
     out = _run_text(["--allow", "openai"])
     assert "no provider passes the current --allow/--no-paid filters" in out
     assert "configure a listed credential or CLI" not in out
+
+def test_all_negative_scores_keep_their_relative_order():
+    """Fit may floor at zero, but routing must still prefer the least-bad score."""
+    config = drp.load_config(CONFIG_PATH)
+    focus_name = config["default_focus"]
+    stage_name = next(iter(config["focuses"][focus_name]["stages"]))
+    stage = config["focuses"][focus_name]["stages"][stage_name]
+    stage["capabilities"] = {}
+    stage["synthesis_weight"] = 0
+    stage["speed_weight"] = 0
+    stage["cost_weight"] = 0
+
+    # Deliberately make reverse-alphabetical order the raw-score order.  The
+    # old fit-only sort returned alphabetical order once every fit floored to 0.
+    expected = sorted(drp.PROVIDERS, reverse=True)
+    config["focuses"][focus_name]["provider_adjustments"] = {
+        provider: -(index + 1) for index, provider in enumerate(expected)
+    }
+
+    rows = drp.rank_stage(config, focus_name, stage_name)
+    assert all(row["fit"] == 0 for row in rows)
+    assert [row["provider"] for row in rows] == expected

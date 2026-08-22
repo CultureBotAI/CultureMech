@@ -17,8 +17,10 @@ Files written per task (under ``out_dir``):
                                Every SDK-exposed field, future-proof
                                against new ones.
     {stem}-citations.md        Parsed reference list from
-                               ``formatted_answer`` (PaperQA convention,
-                               matches the falcon citations.md sidecar).
+                               ``formatted_answer`` (PaperQA convention).
+                               Unrelated to falcon's removed
+                               --separate-citations sidecar; Edison's own
+                               extractor here is not affected.
     {stem}-agent-state.json    ``agent_state`` (tool-call trace) +
                                ``environment_frame`` + verbose
                                ``metadata``. Only written when verbose
@@ -37,6 +39,7 @@ returns the meta dict the caller should also yaml-dump as
 ``{stem}-meta.yaml``. Idempotent: re-invoking overwrites; existing
 sibling files are not read.
 """
+
 from __future__ import annotations
 
 import hashlib
@@ -46,14 +49,12 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-
 # -- citation extraction --------------------------------------------------
 
 _NUMBERED_REF_RE = re.compile(r"^\s*(\d+)\.\s+(.+?)\s*$", re.MULTILINE)
 _URL_RE = re.compile(r"https?://[^\s<>)\]]+", re.IGNORECASE)
 _PMID_RE = re.compile(r"\bPMID[:\s]+(\d+)", re.IGNORECASE)
-_DOI_RE = re.compile(r"\b(?:doi[:\s]+|https?://(?:dx\.)?doi\.org/)(10\.[^\s<>)\]]+)",
-                     re.IGNORECASE)
+_DOI_RE = re.compile(r"\b(?:doi[:\s]+|https?://(?:dx\.)?doi\.org/)(10\.[^\s<>)\]]+)", re.IGNORECASE)
 
 
 def parse_citations(formatted_answer: str | None) -> list[dict[str, Any]]:
@@ -80,7 +81,7 @@ def parse_citations(formatted_answer: str | None) -> list[dict[str, Any]]:
     # it as the reference block; fall back to scanning the full text.
     text = formatted_answer
     m = re.search(r"\n\s*references\s*\n", text, re.IGNORECASE)
-    block = text[m.end():] if m else text
+    block = text[m.end() :] if m else text
 
     out: list[dict[str, Any]] = []
     seen_keys: set[str] = set()
@@ -117,8 +118,7 @@ def parse_citations(formatted_answer: str | None) -> list[dict[str, Any]]:
     return out
 
 
-def render_citations_md(citations: list[dict[str, Any]],
-                        query: str | None = None) -> str:
+def render_citations_md(citations: list[dict[str, Any]], query: str | None = None) -> str:
     """Render the parsed citations as a human-readable markdown sidecar."""
     lines: list[str] = ["# Citations", ""]
     if query:
@@ -147,6 +147,7 @@ def render_citations_md(citations: list[dict[str, Any]],
 
 # -- helpers --------------------------------------------------------------
 
+
 def query_sha256(query: str) -> str:
     """Stable hash of the rendered query — useful for dedup / cache keys."""
     return hashlib.sha256(query.encode("utf-8")).hexdigest()
@@ -169,8 +170,7 @@ def _safe_model_dump(obj: Any) -> Any:
             except Exception:
                 pass
     if hasattr(obj, "__dict__"):
-        return {k: _safe_model_dump(v) for k, v in obj.__dict__.items()
-                if not k.startswith("_")}
+        return {k: _safe_model_dump(v) for k, v in obj.__dict__.items() if not k.startswith("_")}
     if isinstance(obj, (list, tuple)):
         return [_safe_model_dump(v) for v in obj]
     if isinstance(obj, dict):
@@ -222,8 +222,7 @@ _DEFAULT_ARTIFACT_MAX_BYTES = 2_000_000
 
 def _safe_artifact_name(raw_name: str) -> str:
     """Sanitize an Edison data-storage name for use as a filename."""
-    safe = "".join(c if c.isalnum() or c in "._- " else "_"
-                   for c in raw_name).strip().rstrip(".")
+    safe = "".join(c if c.isalnum() or c in "._- " else "_" for c in raw_name).strip().rstrip(".")
     safe = "_".join(safe.split())  # collapse whitespace
     return safe[:120] or "artifact"
 
@@ -244,7 +243,7 @@ def _fetch_artifact_content(client: Any, data_storage_id: str) -> tuple[str, str
         return None
     # RawFetchResponse-ish: has .content
     if hasattr(result, "content"):
-        content = getattr(result, "content")
+        content = result.content
         if isinstance(content, bytes):
             try:
                 return ("txt", content.decode("utf-8"))
@@ -266,8 +265,9 @@ def _fetch_artifact_content(client: Any, data_storage_id: str) -> tuple[str, str
         for i, p in enumerate(result):
             if hasattr(p, "read_text"):
                 try:
-                    parts.append(f"# file {i}: {p.name if hasattr(p, 'name') else p}\n"
-                                 + p.read_text())
+                    parts.append(
+                        f"# file {i}: {p.name if hasattr(p, 'name') else p}\n" + p.read_text()
+                    )
                 except Exception:  # pylint: disable=broad-except
                     parts.append(f"# file {i}: <binary, not inlined>")
         return ("txt", "\n\n".join(parts))
@@ -326,8 +326,9 @@ def fetch_named_artifacts(
             continue
         size = (ds.get("metadata") or {}).get("size")
         if isinstance(size, int) and size > max_bytes:
-            manifest.append({"name": name, "id": str(ds_id),
-                             "status": "skipped-too-large", "size": size})
+            manifest.append(
+                {"name": name, "id": str(ds_id), "status": "skipped-too-large", "size": size}
+            )
             continue
         fetched = _fetch_artifact_content(client, str(ds_id))
         if fetched is None:
@@ -343,13 +344,20 @@ def fetch_named_artifacts(
             out_path.write_bytes(content)
         else:
             out_path.write_text(content)
-        manifest.append({"name": name, "id": str(ds_id), "status": "fetched",
-                         "path": str(out_path.relative_to(out_dir)),
-                         "chars": len(content) if isinstance(content, str) else None})
+        manifest.append(
+            {
+                "name": name,
+                "id": str(ds_id),
+                "status": "fetched",
+                "path": str(out_path.relative_to(out_dir)),
+                "chars": len(content) if isinstance(content, str) else None,
+            }
+        )
     return manifest
 
 
 # -- main entry point -----------------------------------------------------
+
 
 def capture_full_response(
     *,
@@ -414,19 +422,24 @@ def capture_full_response(
         environment_frame = _safe_model_dump(_get_attr(verbose, "environment_frame"))
         verbose_metadata = _safe_model_dump(_get_attr(verbose, "metadata"))
         if any(x is not None for x in (agent_state, environment_frame, verbose_metadata)):
-            agent_state_path.write_text(json.dumps({
-                "task_id": task_id,
-                "agent_state": agent_state,
-                "environment_frame": environment_frame,
-                "metadata": verbose_metadata,
-            }, indent=2, default=str))
+            agent_state_path.write_text(
+                json.dumps(
+                    {
+                        "task_id": task_id,
+                        "agent_state": agent_state,
+                        "environment_frame": environment_frame,
+                        "metadata": verbose_metadata,
+                    },
+                    indent=2,
+                    default=str,
+                )
+            )
             written.add("agent_state_json")
 
     files_listing = _try_list_files(client, task_id) if task_id else None
     artifacts_manifest: list[dict[str, Any]] = []
     if files_listing is not None:
-        files_path.write_text(json.dumps(_safe_model_dump(files_listing),
-                                         indent=2, default=str))
+        files_path.write_text(json.dumps(_safe_model_dump(files_listing), indent=2, default=str))
         written.add("files_json")
         # Pull the actual content of named curation artifacts (small,
         # not internal PaperQA pickles) into a sibling artifacts/ dir.
@@ -439,31 +452,33 @@ def capture_full_response(
 
     # Build the meta dict the caller will yaml-dump
     meta: dict[str, Any] = dict(base_meta)
-    meta.update({
-        "task_id": task_id,
-        "status": _get_attr(response, "status"),
-        "job_name": _get_attr(response, "job_name"),
-        "user": _get_attr(response, "user"),
-        "agent_name": _get_attr(response, "agent_name"),
-        "build_owner": _get_attr(response, "build_owner"),
-        "environment_name": _get_attr(response, "environment_name"),
-        "project_id": str(_get_attr(response, "project_id") or "") or None,
-        "share_status": _get_attr(response, "share_status"),
-        "created_at": _to_iso(_get_attr(response, "created_at")),
-        "answer_received_at": datetime.now(timezone.utc).isoformat(),
-        "total_cost": _get_attr(response, "total_cost"),
-        "total_queries": _get_attr(response, "total_queries"),
-        "has_successful_answer": _get_attr(response, "has_successful_answer"),
-        "has_answer_reasoning": bool(answer_reasoning),
-        "answer_chars": len(answer or ""),
-        "formatted_answer_chars": len(formatted_answer or ""),
-        "answer_reasoning_chars": len(answer_reasoning or ""),
-        "citations_parsed": len(citations),
-        "query_sha256": query_sha256(query),
-        "sidecar_files": _existing_sidecars(out_dir, stem, written),
-        "artifacts_fetched": [a for a in artifacts_manifest if a.get("status") == "fetched"],
-        "artifacts_skipped": [a for a in artifacts_manifest if a.get("status") != "fetched"],
-    })
+    meta.update(
+        {
+            "task_id": task_id,
+            "status": _get_attr(response, "status"),
+            "job_name": _get_attr(response, "job_name"),
+            "user": _get_attr(response, "user"),
+            "agent_name": _get_attr(response, "agent_name"),
+            "build_owner": _get_attr(response, "build_owner"),
+            "environment_name": _get_attr(response, "environment_name"),
+            "project_id": str(_get_attr(response, "project_id") or "") or None,
+            "share_status": _get_attr(response, "share_status"),
+            "created_at": _to_iso(_get_attr(response, "created_at")),
+            "answer_received_at": datetime.now(timezone.utc).isoformat(),
+            "total_cost": _get_attr(response, "total_cost"),
+            "total_queries": _get_attr(response, "total_queries"),
+            "has_successful_answer": _get_attr(response, "has_successful_answer"),
+            "has_answer_reasoning": bool(answer_reasoning),
+            "answer_chars": len(answer or ""),
+            "formatted_answer_chars": len(formatted_answer or ""),
+            "answer_reasoning_chars": len(answer_reasoning or ""),
+            "citations_parsed": len(citations),
+            "query_sha256": query_sha256(query),
+            "sidecar_files": _existing_sidecars(out_dir, stem, written),
+            "artifacts_fetched": [a for a in artifacts_manifest if a.get("status") == "fetched"],
+            "artifacts_skipped": [a for a in artifacts_manifest if a.get("status") != "fetched"],
+        }
+    )
     return meta
 
 
@@ -481,12 +496,14 @@ def capture_dry_run(
     """
     out_dir.mkdir(parents=True, exist_ok=True)
     meta: dict[str, Any] = dict(base_meta)
-    meta.update({
-        "status": "dry-run",
-        "query_chars": len(query),
-        "query": query,
-        "query_sha256": query_sha256(query),
-    })
+    meta.update(
+        {
+            "status": "dry-run",
+            "query_chars": len(query),
+            "query": query,
+            "query_sha256": query_sha256(query),
+        }
+    )
     return meta
 
 
@@ -502,11 +519,9 @@ def _existing_sidecars(
     whole point is provenance, an auditor following the meta would read the wrong
     trajectory.
 
-    Pass ``written`` (the keys this run actually wrote) to report truthfully. It
-    is optional so the call sites that genuinely want a disk snapshot keep
-    working — ``enrich_edison_response`` backfills sidecars for the *same*
-    ``task_id`` already recorded in the meta, so for it "what is on disk now" is
-    the honest answer.
+    Pass ``written`` (the keys this run actually wrote) to report truthfully.
+    With ``written=None``, this returns a disk snapshot only; callers must
+    separately validate that task-specific artifacts belong to their task id.
     """
     on_disk = {
         "answer_md": (out_dir / f"{stem}.md").exists(),
