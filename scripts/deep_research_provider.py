@@ -228,6 +228,9 @@ PROVIDERS: dict[str, Provider] = {
 }
 
 ALIASES = {"edison": "falcon", "futurehouse": "falcon", "claude-code": "claude_code"}
+_ALL_CAPABILITIES = frozenset(
+    cap for provider in PROVIDERS.values() for cap in provider.capabilities
+)
 COST_VALUE = {"low": 1, "medium": 2, "high": 3, "very_high": 4}
 TIME_VALUE = {"fast": 1, "medium": 2, "slow": 3, "very_slow": 4}
 SYNTHESIS_VALUE = {"none": 0, "summary": 1, "deep": 2, "agentic": 3}
@@ -345,6 +348,67 @@ def load_config(path: Path) -> dict[str, Any]:
                 raise ValueError(
                     f"Stage {focus_name}.{stage_name}.capabilities must be a mapping"
                 )
+            unknown_caps = {str(cap) for cap in capabilities} - _ALL_CAPABILITIES
+            if unknown_caps:
+                raise ValueError(
+                    f"Stage {focus_name}.{stage_name}.capabilities names unknown "
+                    f"capability/ies {sorted(unknown_caps)}; no provider declares "
+                    f"them, so they would silently score 0. Choose one of: "
+                    f"{', '.join(sorted(_ALL_CAPABILITIES))}"
+                )
+            # Same null-vs-absent gap as provider_adjustments below, for the
+            # values _score() calls float() on: an explicit
+            # `capabilities: {academic_search: null}` or `synthesis_weight:
+            # null` loaded successfully and crashed later in _score with an
+            # uncaught TypeError instead of a clean ValueError here.
+            for cap_name, cap_weight in capabilities.items():
+                if not isinstance(cap_weight, (int, float)) or isinstance(cap_weight, bool):
+                    raise ValueError(
+                        f"Stage {focus_name}.{stage_name}.capabilities[{cap_name!r}] "
+                        f"must be a number, got {cap_weight!r}"
+                    )
+            for weight_key in ("synthesis_weight", "speed_weight", "cost_weight"):
+                weight = stage.get(weight_key, 0)
+                if not isinstance(weight, (int, float)) or isinstance(weight, bool):
+                    raise ValueError(
+                        f"Stage {focus_name}.{stage_name}.{weight_key} must be a "
+                        f"number, got {weight!r}"
+                    )
+        # .get(key, {}) only supplies the default when the key is ABSENT — an
+        # explicit YAML `provider_adjustments: null` still returns None here,
+        # so the isinstance check below (unconditional, like the sibling
+        # `capabilities` check above) must run either way. It used to be
+        # guarded behind `if adjustments is not None:`, silently skipping
+        # validation for a null block and crashing later in
+        # rank_stage/_score with AttributeError instead of this ValueError.
+        adjustments = focus.get("provider_adjustments", {})
+        if not isinstance(adjustments, dict):
+            raise ValueError(
+                f"Focus {focus_name!r}.provider_adjustments must be a mapping"
+            )
+        if adjustments:
+            canonical: dict[str, Any] = {}
+            for raw_name, value in adjustments.items():
+                name = canonical_provider(str(raw_name))
+                if name not in PROVIDERS:
+                    raise ValueError(
+                        f"Focus {focus_name!r}.provider_adjustments names unknown "
+                        f"provider {raw_name!r} (resolved to {name!r}); "
+                        f"choose one of: {', '.join(sorted(PROVIDERS))}"
+                    )
+                if name in canonical:
+                    raise ValueError(
+                        f"Focus {focus_name!r}.provider_adjustments has multiple "
+                        f"keys resolving to provider {name!r} (e.g. {raw_name!r}); "
+                        f"use a single canonical key per provider"
+                    )
+                if not isinstance(value, (int, float)) or isinstance(value, bool):
+                    raise ValueError(
+                        f"Focus {focus_name!r}.provider_adjustments[{raw_name!r}] "
+                        f"must be a number, got {value!r}"
+                    )
+                canonical[name] = value
+            focus["provider_adjustments"] = canonical
     return data
 
 
@@ -376,7 +440,18 @@ def rank_stage(
         name: _score(provider, stage, adjustments)
         for name, provider in PROVIDERS.items()
     }
-    high = max(raw.values()) or 1.0
+    # `or 1.0` only replaces an exact-zero max (e.g. every raw score landing
+    # at precisely 0 through cancelling adjustments) — a real, if rare, case
+    # this guards. It does NOT fix the harder case where every score is
+    # negative: fit is 0/high either way there (0.0 divided by any nonzero
+    # number is 0.0), so the ranking still collapses to alphabetical order
+    # once every candidate is "actively bad" rather than merely "not the
+    # best." That needs a different normalization (e.g. min-max instead of
+    # max-only) and is a real design decision, not a one-line fix — see
+    # CultureMech#315.
+    high = max(raw.values())
+    if high <= 0:
+        high = 1.0
     rows = []
     for name, provider in PROVIDERS.items():
         status, reason = provider_status(name)
@@ -503,6 +578,11 @@ def print_report(report: Mapping[str, Any], provider_name: str | None = None) ->
             if fallback:
                 message += f"; cross-check/fallback: {fallback['provider']}"
             print(message)
+        elif recommendable(stage["ranking"]):
+            print(
+                "Route now: no provider passes the current --allow/--no-paid "
+                "filters, though at least one is otherwise available."
+            )
         else:
             print(
                 "Route now: no real provider is currently available; configure a listed credential or CLI."
@@ -556,12 +636,21 @@ def main(argv: list[str] | None = None) -> int:
             f"Unknown provider {args.provider!r}; choose one of: {', '.join(PROVIDERS)}"
         )
     allow = (frozenset(canonical_provider(p) for p in args.allow.split(",") if p.strip())
-             if args.allow else None)
+             if args.allow is not None else None)
     if allow is not None:
+        if not allow:
+            raise ValueError(
+                f"--allow {args.allow!r} did not contain any provider names"
+            )
         unknown = allow - set(PROVIDERS)
         if unknown:
             raise ValueError(
                 f"Unknown provider(s) in --allow: {', '.join(sorted(unknown))}"
+            )
+        if "mock" in allow:
+            raise ValueError(
+                "--allow may not include 'mock': recommendable() always excludes "
+                "it, so it can never be recommended regardless of --allow"
             )
     report = build_report(config, focus_name, allow=allow, no_paid=args.no_paid)
     if args.json:
