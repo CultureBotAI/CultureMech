@@ -68,9 +68,12 @@ want to close duplicates deliberately, not have them hidden).
 
 For each issue (or each group's representative), spot-check:
 
-- **Already fixed?** `git log --oneline --all --grep "#<N>"` and `gh pr list
-  --state merged --search "<N>"` — an issue whose fix already merged should be
-  flagged STALE/CLOSE, not re-surfaced as open work.
+- **Already fixed?** `git log --oneline --all --perl-regexp --grep "#<N>\b"`
+  and `gh pr list --state merged --search "<N>"` — an issue whose fix already
+  merged should be flagged STALE/CLOSE, not re-surfaced as open work. Plain
+  `--grep "#<N>"` substring-matches unrelated numbers (`#48` also matches
+  `#480`, `#4823`, ...) — the `\b` word-boundary anchor above is required, not
+  optional.
 - **Still reproducible?** If the issue names a specific file/line/function,
   confirm it still exists in that shape (`grep`/`git log -p` the cited
   location) — code moves, and a stale issue pointing at a renamed/removed
