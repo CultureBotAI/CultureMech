@@ -221,6 +221,14 @@ is **older than `main` by design, not stale**: the pin is bumped only when a
 vendored file actually changes, and the green nightly audit is the evidence that
 none has since.
 
+Update (2026-08-22, claw #66): the private-repository premise above is obsolete;
+claw is public. The fleet deliberately retains CultureMech as the one canonical
+hub and claw as a passive mirror, with one claw-side audit checking the hub,
+mirror, and all five Mechs. `check_vendored_sync.sh` is now itself canonical here
+and byte-identical across the fleet. This explicit mirror topology (option 3 in
+claw #66) avoids a risky source migration while making drift detectable; the
+checker no longer claims claw is private.
+
 ## Adopt DisMech knowledge-gaps + datasets + QC dashboard (claw#7)
 
 Coordinated cross-Mech adoption of DisMech's domain-general features. Full plan,

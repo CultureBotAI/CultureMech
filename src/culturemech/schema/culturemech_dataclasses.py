@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-08-13T20:11:24
+# Generation date: 2026-08-22T12:35:06
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -4775,7 +4775,8 @@ slots.evidenceItem__explanation = Slot(uri=CULTUREMECH.explanation, name="eviden
                    model_uri=CULTUREMECH.evidenceItem__explanation, domain=None, range=str)
 
 slots.curationEvent__timestamp = Slot(uri=CULTUREMECH.timestamp, name="curationEvent__timestamp", curie=CULTUREMECH.curie('timestamp'),
-                   model_uri=CULTUREMECH.curationEvent__timestamp, domain=None, range=str)
+                   model_uri=CULTUREMECH.curationEvent__timestamp, domain=None, range=str,
+                   pattern=re.compile(r'^20[0-9]{2}-'))
 
 slots.curationEvent__curator = Slot(uri=CULTUREMECH.curator, name="curationEvent__curator", curie=CULTUREMECH.curie('curator'),
                    model_uri=CULTUREMECH.curationEvent__curator, domain=None, range=str)

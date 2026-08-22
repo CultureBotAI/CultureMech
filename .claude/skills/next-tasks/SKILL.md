@@ -113,14 +113,13 @@ Run them yourself if an item claims they do.
   three `tests/test_id_label_*.py` files are vendored **byte-identical** across the
   four Mech repos. The old self-generated sha256 pin was retired (it compared a copy
   to a hash from the *same* repo, so all four could pass while diverged). Drift is now
-  caught by a **shared-reference check**: each spoke runs its local
-  `spoke-repo/scripts/check_vendored_sync.sh`; CultureMech is the hub and therefore does
-  not contain that spoke-only script
-  against `CultureBotAI/CultureMech@<scripts/.vendored_canon_ref>`; this hub is covered
-  by culturebotai-claw's nightly `fleet-audit` job (scripts/audit_idlabel_fleet.sh),
-  which audits all four Mechs and claw's mirror in one pass. To propagate a change: PR into this hub →
-  merge → bump `.vendored_canon_ref` in the spokes. (`schema-pin` / `mim-roles-pin` are
-  a separate scheme, still self-pinned — no drift-check replacement yet.)
+  caught by a **shared-reference check**: every Mech carries the same
+  `scripts/check_vendored_sync.sh`, while CultureMech remains the canonical hub.
+  culturebotai-claw is public and keeps passive mirrors plus the nightly
+  `fleet-audit` job in claw, which compares all five
+  Mechs, the canonical hub, and claw's mirrors in one pass. To propagate a
+  change: PR into this hub, merge, copy byte-exact, then bump
+  `.vendored_canon_ref` in the other Mechs.
 - Without `gh` or a network, reconcile from `git log` alone and say so.
 
 ## Related

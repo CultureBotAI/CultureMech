@@ -1,4 +1,5 @@
 """Static contract tests for the public hub's vendored-sync checker."""
+
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -11,6 +12,14 @@ def test_checker_governs_itself_and_shared_edison_capture():
     assert "scripts/check_vendored_sync.sh" in files_block
     assert "scripts/_edison_capture.py" in text
     assert "existence-based" in text
+
+
+def test_checker_governs_agent_frontmatter_and_backlog_prompt():
+    text = SCRIPT.read_text()
+    files_block = text.split("FILES=(", 1)[1].split(")", 1)[0]
+    assert "tests/test_skill_frontmatter.py" in files_block
+    assert "tests/test_curation_timestamp_schema.py" in files_block
+    assert "prompts/backlog-loop-goal.md" in files_block
 
 
 def test_checker_covers_both_shared_schemas():

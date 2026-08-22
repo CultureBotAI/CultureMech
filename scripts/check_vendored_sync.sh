@@ -6,13 +6,13 @@
 # copy from the canonical hub at a pinned commit and diffs. A repo that edits
 # its vendored copy now fails CI, because the reference lives elsewhere.
 #
-# The hub is the PUBLIC CultureBotAI/CultureMech (culturebotai-claw is private,
-# so public Mech CI cannot fetch raw content from it). Dependency-free: bash +
-# curl + diff only (no uv/OAK), so it runs as a fast blocking CI job before any
-# heavy setup. The pinned canonical commit lives in scripts/.vendored_canon_ref;
-# the file list is embedded (this script is itself vendored byte-identical across
-# the spokes). Bump .vendored_canon_ref in the same PR that syncs a changed file
-# from the hub — that bump is the deliberate propagation act.
+# CultureMech is the canonical hub by an explicit governance decision; public
+# culturebotai-claw keeps a byte-identical, fleet-audited mirror for discovery
+# and orchestration. Dependency-free: bash + curl + diff only (no uv/OAK), so
+# it runs as a fast blocking CI job before any heavy setup. The pinned canonical
+# commit lives in scripts/.vendored_canon_ref; the file list is embedded (this
+# script is itself vendored byte-identical across the spokes). Bump the ref in
+# the same PR that syncs a changed file from the hub.
 set -euo pipefail
 
 CANON_REPO="CultureBotAI/CultureMech"
@@ -22,6 +22,9 @@ REF_FILE="scripts/.vendored_canon_ref"
 FILES=(
   scripts/check_vendored_sync.sh
   tests/test_provider_triage_contract.py
+  tests/test_skill_frontmatter.py
+  tests/test_curation_timestamp_schema.py
+  prompts/backlog-loop-goal.md
   scripts/validate_id_label_correspondence.py
   scripts/chem_formula.py
   tests/test_id_label_empty_adapter.py
