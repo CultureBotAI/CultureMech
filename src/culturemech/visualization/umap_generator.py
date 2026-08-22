@@ -4,12 +4,10 @@ UMAP visualization generator for culture media embeddings.
 Orchestrates the full pipeline: loading, aggregation, reduction, and HTML generation.
 """
 
-import json
 from pathlib import Path
-from typing import Dict, List
 
 import yaml
-from jinja2 import Environment, FileSystemLoader
+from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from culturemech.embedding.aggregator import MediaEmbedding
 from culturemech.embedding.aggregator_yaml_source import MediaVectorAggregatorYAML
@@ -54,7 +52,15 @@ class UMAPVisualizationGenerator:
         print("\n[1/6] Loading embeddings...")
         embeddings = EmbeddingLoader.load_embeddings(
             embeddings_path=embeddings_path,
-            node_prefixes=["CHEBI", "NCBITaxon", "mediadive.medium", "mediadive.solution", "FOODON", "mediadive.ingredient", "mediadive.compound"],
+            node_prefixes=[
+                "CHEBI",
+                "NCBITaxon",
+                "mediadive.medium",
+                "mediadive.solution",
+                "FOODON",
+                "mediadive.ingredient",
+                "mediadive.compound",
+            ],
             cache_dir=cache_dir,
             force_reload=force_reload,
         )
@@ -69,7 +75,7 @@ class UMAPVisualizationGenerator:
         aggregator = MediaVectorAggregatorYAML(
             embeddings,
             solution_mapping_path=Path("data/solution_to_chebi_mapping.json"),
-            name_mapping_path=Path("data/chemical_name_to_chebi_mapping_enhanced.json")
+            name_mapping_path=Path("data/chemical_name_to_chebi_mapping_enhanced.json"),
         )
         derived_embeddings = aggregator.aggregate_derived_embeddings(
             media_yamls, min_coverage=min_coverage
@@ -105,7 +111,7 @@ class UMAPVisualizationGenerator:
         print(f"  - Direct embeddings: {len(direct_embeddings):,} media")
         print("=" * 70)
 
-    def _collect_media_yamls(self, media_dir: Path) -> List[Path]:
+    def _collect_media_yamls(self, media_dir: Path) -> list[Path]:
         """
         Collect all media and solution YAML files from directory tree.
 
@@ -134,8 +140,8 @@ class UMAPVisualizationGenerator:
         self,
         derived_df,
         direct_df,
-        derived_embeddings: Dict[str, MediaEmbedding],
-        direct_embeddings: Dict[str, MediaEmbedding],
+        derived_embeddings: dict[str, MediaEmbedding],
+        direct_embeddings: dict[str, MediaEmbedding],
         media_dir: Path,
         output_html: Path,
     ) -> None:
@@ -146,7 +152,10 @@ class UMAPVisualizationGenerator:
 
         # Load template
         template_dir = Path(__file__).parent.parent / "templates"
-        env = Environment(loader=FileSystemLoader(template_dir))
+        env = Environment(
+            loader=FileSystemLoader(template_dir),
+            autoescape=select_autoescape(["html"]),
+        )
         template = env.get_template("media_umap.html")
 
         # Unique media count: IDs present in either panel (no double-counting)
@@ -156,8 +165,8 @@ class UMAPVisualizationGenerator:
 
         # Render template
         html_content = template.render(
-            derived_data_json=json.dumps(derived_data),
-            direct_data_json=json.dumps(direct_data),
+            derived_data=derived_data,
+            direct_data=direct_data,
             derived_count=len(derived_data),
             direct_count=len(direct_data),
             unique_count=unique_count,
@@ -171,8 +180,8 @@ class UMAPVisualizationGenerator:
         print(f"✓ HTML generated: {output_html} ({len(html_content):,} bytes)")
 
     def _build_plot_data(
-        self, df, embeddings: Dict[str, MediaEmbedding], media_dir: Path
-    ) -> List[dict]:
+        self, df, embeddings: dict[str, MediaEmbedding], media_dir: Path
+    ) -> list[dict]:
         """Build plot data structure with metadata for each medium/solution."""
         plot_data = []
 
@@ -228,7 +237,7 @@ class UMAPVisualizationGenerator:
             if not yaml_path.exists():
                 continue
             try:
-                with open(yaml_path, "r") as f:
+                with open(yaml_path) as f:
                     data = yaml.safe_load(f) or {}
             except Exception:
                 continue

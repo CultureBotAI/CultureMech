@@ -12,7 +12,11 @@ developer may legitimately be ahead.
 from __future__ import annotations
 
 import re
-import tomllib
+
+try:
+    import tomllib
+except ModuleNotFoundError:  # Python 3.10
+    import tomli as tomllib
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
@@ -29,11 +33,14 @@ def _dev_deps() -> list[str]:
 def test_the_pin_floor_registers_edison_and_claude_code():
     spec = next(d for d in _dev_deps() if d.startswith("deep-research-client"))
     m = re.search(r">=\s*(\d+)\.(\d+)\.(\d+)", spec)
-    assert m, f"no lower bound in {spec!r} — an unpinned shared dependency is how two "\
-              "repos drift to 0.1.3 and 0.2.4 without anyone noticing"
+    assert m, (
+        f"no lower bound in {spec!r} — an unpinned shared dependency is how two "
+        "repos drift to 0.1.3 and 0.2.4 without anyone noticing"
+    )
     assert tuple(int(g) for g in m.groups()) >= MIN_DRC, (
         f"{spec!r} is below {'.'.join(map(str, MIN_DRC))}, where `falcon` (Edison) and "
-        "`claude_code` are not registered providers")
+        "`claude_code` are not registered providers"
+    )
 
 
 def test_the_lockfile_agrees_with_the_floor():
@@ -51,4 +58,5 @@ def test_the_edison_sdk_path_still_documents_why_it_exists():
     doc = (REPO / "scripts" / "research_media_edison.py").read_text()
     assert "job" in doc.lower() and "0.2.10" in doc, (
         "research_media_edison.py must say why it bypasses deep-research-client; the "
-        "pre-0.2.10 reason is obsolete (#284)")
+        "pre-0.2.10 reason is obsolete (#284)"
+    )

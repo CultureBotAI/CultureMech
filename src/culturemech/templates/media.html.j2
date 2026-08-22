@@ -2,20 +2,17 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self'; img-src 'self' data: https:; font-src 'self'; object-src 'none'; base-uri 'none'">
 <title>{{ medium.name }} ({{ medium.id }}) — CultureMech</title>
-<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="{{ style_href }}">
 {% if composition_graph %}
-<script type="module">
-  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
-  mermaid.initialize({ startOnLoad: true, theme: "neutral" });
-</script>
+<script type="module" src="{{ mermaid_init_href }}"></script>
 {% endif %}
 </head>
 <body>
 
 <nav class="breadcrumb">
-  <a href="../index.html">CultureMech</a> &rsaquo;
-  <a href="index.html">media</a> &rsaquo;
+  <a href="{{ index_href }}">CultureMech</a> &rsaquo;
   <span>{{ medium.id }}</span>
 </nav>
 

@@ -14,6 +14,7 @@ Implementation note: `Path.exists()` is useless here. On macOS it returns True
 for a wrong-case path, so the check compares the filename against an actual
 directory listing instead.
 """
+
 from __future__ import annotations
 
 import re
@@ -28,12 +29,17 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 # accurate rather than broken — the same call the SKILL.md rename made.
 ROOTS = (".claude/skills", "docs")
 EXCLUDED = ("docs/archive",)
+ALL_LOCAL_TARGETS = {
+    "README.md",
+    "docs/CONTRIBUTING.md",
+    "docs/QUICK_START.md",
+}
 
 LINK_RE = re.compile(r"\]\(([^)]+)\)")
 
 
 def _markdown_files() -> list[Path]:
-    out: list[Path] = []
+    out: list[Path] = [REPO_ROOT / "README.md"]
     for root in ROOTS:
         base = REPO_ROOT / root
         if not base.is_dir():
@@ -63,7 +69,8 @@ def _relative_link_targets(md: Path) -> list[str]:
         if not target or target.startswith(("http://", "https://", "mailto:", "#", "<")):
             continue
         target = target.split("#", 1)[0].split(" ", 1)[0]
-        if not target or not target.endswith(".md"):
+        rel = md.relative_to(REPO_ROOT).as_posix()
+        if not target or (not target.endswith(".md") and rel not in ALL_LOCAL_TARGETS):
             continue
         targets.append(target)
     return targets
@@ -92,8 +99,7 @@ def test_relative_markdown_links_resolve_case_sensitively(md: Path):
 
     problems = []
     if wrong_case:
-        problems.append(
-            f"wrong case (opens on macOS, 404s on Linux CI): {wrong_case}")
+        problems.append(f"wrong case (opens on macOS, 404s on Linux CI): {wrong_case}")
     if missing:
         problems.append(f"target does not exist at all: {missing}")
     assert not problems, f"{md.relative_to(REPO_ROOT)} — " + "; ".join(problems)

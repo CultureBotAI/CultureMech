@@ -14,12 +14,12 @@ class TestLiteratureVerifier:
     def test_scihub_disabled_by_default(self):
         """Test that Sci-Hub fallback is disabled by default."""
         verifier = LiteratureVerifier()
-        assert verifier.use_fallback_pdf == False
+        assert not verifier.use_fallback_pdf
 
     def test_scihub_enabled_with_flag(self):
         """Test that Sci-Hub fallback can be enabled explicitly."""
         verifier = LiteratureVerifier(use_fallback_pdf=True)
-        assert verifier.use_fallback_pdf == True
+        assert verifier.use_fallback_pdf
 
     def test_fallback_mirrors_from_env(self):
         """Test that Sci-Hub mirrors can be configured via environment."""
@@ -59,13 +59,13 @@ class TestLiteratureVerifier:
         """Test extracting PDF from Sci-Hub HTML using object tag."""
         verifier = LiteratureVerifier(use_fallback_pdf=True)
 
-        html = '''
+        html = """
         <html>
         <body>
         <object type="application/pdf" data="/download/12345.pdf"></object>
         </body>
         </html>
-        '''
+        """
 
         pdf_url = verifier._extract_pdf_from_fallback_html(html, "https://sci-hub.se")
         assert pdf_url == "https://sci-hub.se/download/12345.pdf"
@@ -74,13 +74,13 @@ class TestLiteratureVerifier:
         """Test extracting PDF from Sci-Hub HTML using download link."""
         verifier = LiteratureVerifier(use_fallback_pdf=True)
 
-        html = '''
+        html = """
         <html>
         <body>
         <a href="/dl/paper.pdf">Download PDF</a>
         </body>
         </html>
-        '''
+        """
 
         pdf_url = verifier._extract_pdf_from_fallback_html(html, "https://sci-hub.st")
         assert pdf_url == "https://sci-hub.st/dl/paper.pdf"
@@ -89,13 +89,13 @@ class TestLiteratureVerifier:
         """Test extracting PDF from Sci-Hub HTML using embed tag."""
         verifier = LiteratureVerifier(use_fallback_pdf=True)
 
-        html = '''
+        html = """
         <html>
         <body>
         <embed src="//cdn.scihub.org/paper123.pdf" type="application/pdf">
         </body>
         </html>
-        '''
+        """
 
         pdf_url = verifier._extract_pdf_from_fallback_html(html, "https://sci-hub.ru")
         assert pdf_url == "https://cdn.scihub.org/paper123.pdf"
@@ -104,13 +104,13 @@ class TestLiteratureVerifier:
         """Test extracting PDF from Sci-Hub HTML using direct URL."""
         verifier = LiteratureVerifier(use_fallback_pdf=True)
 
-        html = '''
+        html = """
         <html>
         <body>
         <p>PDF available at: https://direct.cdn.com/files/paper.pdf</p>
         </body>
         </html>
-        '''
+        """
 
         pdf_url = verifier._extract_pdf_from_fallback_html(html, "https://sci-hub.ren")
         assert pdf_url == "https://direct.cdn.com/files/paper.pdf"
@@ -119,20 +119,20 @@ class TestLiteratureVerifier:
         """Test that None is returned when no PDF found in HTML."""
         verifier = LiteratureVerifier(use_fallback_pdf=True)
 
-        html = '''
+        html = """
         <html>
         <body>
         <p>No PDF here</p>
         </body>
         </html>
-        '''
+        """
 
         pdf_url = verifier._extract_pdf_from_fallback_html(html, "https://sci-hub.se")
         assert pdf_url is None
 
     def test_strip_jats_html(self):
         """Test stripping JATS XML tags from CrossRef abstracts."""
-        raw = '<jats:title>Abstract</jats:title><jats:p>This is the abstract text.</jats:p>'
+        raw = "<jats:title>Abstract</jats:title><jats:p>This is the abstract text.</jats:p>"
         clean = LiteratureVerifier._strip_jats_html(raw)
 
         assert clean == "This is the abstract text."
@@ -140,7 +140,7 @@ class TestLiteratureVerifier:
 
     def test_extract_abstract_body_from_pubmed(self):
         """Test extracting abstract from PubMed text format."""
-        raw_text = '''
+        raw_text = """
 1. J Bacteriol. 2020 Aug 10;202(17):e00123-20. doi: 10.1128/JB.00123-20.
 
 Title of the paper goes here.
@@ -154,7 +154,7 @@ for several lines and contains the main content.
 
 PMID: 12345678
 DOI: 10.1128/JB.00123-20
-        '''
+        """
 
         abstract = LiteratureVerifier._extract_abstract_body_from_pubmed(raw_text)
 
@@ -170,7 +170,7 @@ DOI: 10.1128/JB.00123-20
         snippet = "ATCC 1306 and DSMZ 632 are equivalent media"
         text = "In our study, we found that ATCC 1306 and DSMZ 632 are equivalent media for growing this organism."
 
-        assert verifier.validate_evidence_snippet(snippet, text) == True
+        assert verifier.validate_evidence_snippet(snippet, text)
 
     def test_validate_evidence_snippet_case_insensitive(self):
         """Test evidence validation is case-insensitive."""
@@ -179,7 +179,7 @@ DOI: 10.1128/JB.00123-20
         snippet = "atcc 1306 and dsmz 632 are equivalent media"
         text = "ATCC 1306 AND DSMZ 632 ARE EQUIVALENT MEDIA"
 
-        assert verifier.validate_evidence_snippet(snippet, text) == True
+        assert verifier.validate_evidence_snippet(snippet, text)
 
     def test_validate_evidence_snippet_whitespace_normalized(self):
         """Test evidence validation normalizes whitespace."""
@@ -188,7 +188,7 @@ DOI: 10.1128/JB.00123-20
         snippet = "ATCC  1306   and   DSMZ   632"
         text = "ATCC 1306 and DSMZ 632 are used"
 
-        assert verifier.validate_evidence_snippet(snippet, text) == True
+        assert verifier.validate_evidence_snippet(snippet, text)
 
     def test_validate_evidence_snippet_no_match(self):
         """Test evidence validation returns False when no match."""
@@ -197,17 +197,17 @@ DOI: 10.1128/JB.00123-20
         snippet = "ATCC 1306 and DSMZ 999"
         text = "ATCC 1306 and DSMZ 632 are equivalent"
 
-        assert verifier.validate_evidence_snippet(snippet, text) == False
+        assert not verifier.validate_evidence_snippet(snippet, text)
 
     def test_validate_evidence_snippet_empty_inputs(self):
         """Test evidence validation handles empty inputs."""
         verifier = LiteratureVerifier()
 
-        assert verifier.validate_evidence_snippet("", "some text") == False
-        assert verifier.validate_evidence_snippet("snippet", "") == False
-        assert verifier.validate_evidence_snippet("", "") == False
+        assert not verifier.validate_evidence_snippet("", "some text")
+        assert not verifier.validate_evidence_snippet("snippet", "")
+        assert not verifier.validate_evidence_snippet("", "")
 
-    @patch('culturemech.enrich.literature_verifier.requests.Session.get')
+    @patch("culturemech.enrich.literature_verifier.requests.Session.get")
     def test_fetch_pubmed_abstract_caching(self, mock_get):
         """Test that PubMed abstracts are cached."""
         with tempfile.TemporaryDirectory() as tmpdir:
@@ -229,7 +229,7 @@ DOI: 10.1128/JB.00123-20
 
             assert abstract1 == abstract2
 
-    @patch('culturemech.enrich.literature_verifier.requests.Session.get')
+    @patch("culturemech.enrich.literature_verifier.requests.Session.get")
     def test_fetch_doi_metadata_caching(self, mock_get):
         """Test that DOI metadata is cached."""
         with tempfile.TemporaryDirectory() as tmpdir:
@@ -255,7 +255,7 @@ DOI: 10.1128/JB.00123-20
         """Test ASM publisher PDF URL patterns."""
         verifier = LiteratureVerifier()
 
-        with patch('culturemech.enrich.literature_verifier.requests.head') as mock_head:
+        with patch("culturemech.enrich.literature_verifier.requests.head") as mock_head:
             mock_response = Mock()
             mock_response.status_code = 200
             mock_response.headers = {"Content-Type": "application/pdf"}
@@ -270,12 +270,14 @@ DOI: 10.1128/JB.00123-20
         """Test that Sci-Hub is skipped when disabled."""
         verifier = LiteratureVerifier(use_fallback_pdf=False)
 
-        with patch.object(verifier, '_get_pdf_url_from_publisher', return_value=None), \
-             patch.object(verifier, '_get_pdf_url_from_pmc', return_value=None), \
-             patch.object(verifier, '_get_pdf_url_from_unpaywall', return_value=None), \
-             patch.object(verifier, '_get_pdf_url_from_semantic_scholar', return_value=None), \
-             patch.object(verifier, '_get_pdf_url_from_fallback_mirrors') as mock_fallback, \
-             patch.object(verifier, '_get_pdf_url_from_web_search', return_value=None):
+        with (
+            patch.object(verifier, "_get_pdf_url_from_publisher", return_value=None),
+            patch.object(verifier, "_get_pdf_url_from_pmc", return_value=None),
+            patch.object(verifier, "_get_pdf_url_from_unpaywall", return_value=None),
+            patch.object(verifier, "_get_pdf_url_from_semantic_scholar", return_value=None),
+            patch.object(verifier, "_get_pdf_url_from_fallback_mirrors") as mock_fallback,
+            patch.object(verifier, "_get_pdf_url_from_web_search", return_value=None),
+        ):
 
             verifier.fetch_pdf_url("10.1234/test")
 
@@ -286,12 +288,16 @@ DOI: 10.1128/JB.00123-20
         """Test that Sci-Hub is tried when enabled."""
         verifier = LiteratureVerifier(use_fallback_pdf=True)
 
-        with patch.object(verifier, '_get_pdf_url_from_publisher', return_value=None), \
-             patch.object(verifier, '_get_pdf_url_from_pmc', return_value=None), \
-             patch.object(verifier, '_get_pdf_url_from_unpaywall', return_value=None), \
-             patch.object(verifier, '_get_pdf_url_from_semantic_scholar', return_value=None), \
-             patch.object(verifier, '_get_pdf_url_from_fallback_mirrors', return_value=None) as mock_fallback, \
-             patch.object(verifier, '_get_pdf_url_from_web_search', return_value=None):
+        with (
+            patch.object(verifier, "_get_pdf_url_from_publisher", return_value=None),
+            patch.object(verifier, "_get_pdf_url_from_pmc", return_value=None),
+            patch.object(verifier, "_get_pdf_url_from_unpaywall", return_value=None),
+            patch.object(verifier, "_get_pdf_url_from_semantic_scholar", return_value=None),
+            patch.object(
+                verifier, "_get_pdf_url_from_fallback_mirrors", return_value=None
+            ) as mock_fallback,
+            patch.object(verifier, "_get_pdf_url_from_web_search", return_value=None),
+        ):
 
             verifier.fetch_pdf_url("10.1234/test")
 
@@ -302,10 +308,14 @@ DOI: 10.1128/JB.00123-20
         """Test that cascading stops at first successful tier."""
         verifier = LiteratureVerifier()
 
-        with patch.object(verifier, '_get_pdf_url_from_publisher', return_value=None), \
-             patch.object(verifier, '_get_pdf_url_from_pmc', return_value="http://pmc.test/paper.pdf") as mock_pmc, \
-             patch.object(verifier, '_get_pdf_url_from_unpaywall') as mock_unpaywall, \
-             patch.object(verifier, '_get_pdf_url_from_semantic_scholar') as mock_s2:
+        with (
+            patch.object(verifier, "_get_pdf_url_from_publisher", return_value=None),
+            patch.object(
+                verifier, "_get_pdf_url_from_pmc", return_value="http://pmc.test/paper.pdf"
+            ) as mock_pmc,
+            patch.object(verifier, "_get_pdf_url_from_unpaywall") as mock_unpaywall,
+            patch.object(verifier, "_get_pdf_url_from_semantic_scholar") as mock_s2,
+        ):
 
             result = verifier.fetch_pdf_url("10.1234/test")
 
@@ -320,11 +330,23 @@ DOI: 10.1128/JB.00123-20
 class TestPDFTextExtraction:
     """Tests for PDF text extraction."""
 
-    def test_extract_text_from_pdf_missing_pypdf2(self):
-        """Test graceful handling when PyPDF2 is not installed."""
+    def test_extract_text_from_pdf_missing_pypdf(self):
+        """Test graceful handling when pypdf is not installed."""
         verifier = LiteratureVerifier()
 
-        with patch('culturemech.enrich.literature_verifier.PyPDF2', None):
-            with tempfile.NamedTemporaryFile(suffix='.pdf') as f:
+        with patch("culturemech.enrich.literature_verifier.pypdf", None):
+            with tempfile.NamedTemporaryFile(suffix=".pdf") as f:
                 text = verifier.extract_text_from_pdf(Path(f.name))
                 assert text is None
+
+    def test_extract_text_from_pdf_with_pypdf(self, tmp_path):
+        from pypdf import PdfWriter
+
+        pdf_path = tmp_path / "blank.pdf"
+        writer = PdfWriter()
+        writer.add_blank_page(width=72, height=72)
+        with pdf_path.open("wb") as stream:
+            writer.write(stream)
+
+        verifier = LiteratureVerifier()
+        assert verifier.extract_text_from_pdf(pdf_path) == "\n"

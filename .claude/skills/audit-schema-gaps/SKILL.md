@@ -11,7 +11,11 @@ created: 2026-05-16
 
 ## Why this skill exists
 
-CultureMech's default `just validate-all` target silently lets failures through — it runs `linkml-validate` in open-schema mode and swallows non-zero exit codes from the loop. A single use of this skill on 2026-05-16 surfaced **59,401 ERROR rows across 8,669 of 15,827 records** that nobody knew were broken. After the cleanup that the skill drives, the corpus dropped to **93 errors across 57 records** and CI gates were put in place so the regressions can't recur.
+This skill was created after a 2026-05-16 audit exposed extensive errors that
+the then-current open-schema validation workflow did not gate. That is
+historical context, not current repository status: `just validate-all` now
+aggregates failures, while `just validate-strict` is the closed-schema CI gate.
+Always derive current record and error counts from a fresh run.
 
 The skill is built around three orthogonal lenses:
 
@@ -59,7 +63,7 @@ The skill is a five-step pipeline. Each step produces an artifact; later steps r
 **File:** `scripts/validate_strict.py`  
 **Just target:** `just validate-strict` (defined in `project.justfile`)
 
-Critical implementation requirements (these are what `just validate-all` got wrong):
+Critical implementation requirements for the closed-schema gate:
 
 - Use `linkml.validator.Validator` in-process (much faster than subprocess per-file), not the CLI.
 - Configure with `JsonschemaValidationPlugin(closed=True)` so unknown fields are flagged. **This is the central correctness requirement.** Without `closed=True`, ~19,400 unexpected_field errors hide.
@@ -68,7 +72,7 @@ Critical implementation requirements (these are what `just validate-all` got wro
   - `unexpected_field`, `missing_required`, `enum_mismatch`, `type_mismatch`, `pattern_mismatch`, `format_mismatch`, `range_violation`, and a catch-all `other`.
 - **Route records to the right target class**: `MediaRecipe` vs `SolutionRecipe` by inspecting `term.id` prefix. Solution records have prefix `mediadive.solution:` or `MediaIngredientMech:`; everything else is `MediaRecipe`. Mis-routing produces ~4,800 false-positive errors on standalone solutions.
 - Output TSV with columns `file`, `category`, `detail`, `path`, `message`. Use `lineterminator="\n"` to avoid CRLF on macOS.
-- Exit code 1 if any ERROR rows; 0 if clean. Don't ever exit 0 on errors — that's the bug `just validate-all` has.
+- Exit code 1 if any ERROR rows; 0 if clean.
 - Flags: `--sample N`, `--out PATH`, `--workers N`, `--quiet`, `--fail-on=error|never`.
 
 Smoke-test on `--sample 5` before any full-corpus run.
@@ -79,7 +83,8 @@ Smoke-test on `--sample 5` before any full-corpus run.
 just validate-strict
 ```
 
-Walks every `data/normalized_yaml/{algae,bacterial,fungal,archaea,specialized}/**/*.yaml`. ~3 min on 9 workers for 15,827 files.
+Walks every `data/normalized_yaml/{algae,bacterial,fungal,archaea,specialized}/**/*.yaml`.
+Report the file count and duration from the current run.
 
 **Outputs:**
 - `reports/instance_validation_failures.tsv` — one row per ERROR.
@@ -174,7 +179,9 @@ The audit *finds* drift; cleanup fixes it. Typical post-audit work, in dependenc
 
 ## Anti-patterns (don't do these)
 
-- **Don't use the existing `just validate-all` to decide if the corpus is clean.** It runs in open mode and swallows exit codes; it will report success even when 50%+ of records are broken. Use `just validate-strict`.
+- **Don't use `just validate-all` as the closed-schema corpus gate.** It now
+  aggregates failures correctly, but remains open-schema. Use
+  `just validate-strict` to reject unknown fields.
 - **Don't add `# noqa` / try/except blocks around validator results.** If a record fails, the right move is to fix the schema or migrate the data, not silence the failure.
 - **Don't pile findings into a single dump.** The five-report split (instance / schema / pipeline / backlog + summary) is so a reader can scan one section at a time.
 - **Don't run a full corpus pass when investigating a single regression.** Use `just validate-strict --sample 50` or pass the specific file path.

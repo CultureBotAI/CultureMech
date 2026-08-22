@@ -14,6 +14,7 @@ So the corpus assertion below is one-directional. The 1,894 UNDEFINED records wi
 no recognised undefined component are not evidence of anything and are not
 asserted on.
 """
+
 from __future__ import annotations
 
 import importlib.util
@@ -49,19 +50,40 @@ def _ing(name, value=None, unit="G_PER_L"):
 # --- component detection --------------------------------------------------
 
 
-@pytest.mark.parametrize("name", [
-    "Yeast extract", "yeast extract", "Peptone", "Tryptone", "Casamino acids",
-    "Beef extract", "Meat extract", "Malt extract", "Proteose peptone",
-    "Brain-heart infusion", "Casein hydrolysate", "Soytone", "Trypticase peptone",
-])
+@pytest.mark.parametrize(
+    "name",
+    [
+        "Yeast extract",
+        "yeast extract",
+        "Peptone",
+        "Tryptone",
+        "Casamino acids",
+        "Beef extract",
+        "Meat extract",
+        "Malt extract",
+        "Proteose peptone",
+        "Brain-heart infusion",
+        "Casein hydrolysate",
+        "Soytone",
+        "Trypticase peptone",
+    ],
+)
 def test_undefined_components_are_detected(act, name):
     assert act.undefined_components({"ingredients": [_ing(name, "5")]}), name
 
 
-@pytest.mark.parametrize("name", [
-    "Glucose", "NaCl", "Agar", "MgSO4 x 7 H2O", "Distilled water",
-    "Ammonium sulfate", "Sodium molybdate",
-])
+@pytest.mark.parametrize(
+    "name",
+    [
+        "Glucose",
+        "NaCl",
+        "Agar",
+        "MgSO4 x 7 H2O",
+        "Distilled water",
+        "Ammonium sulfate",
+        "Sodium molybdate",
+    ],
+)
 def test_defined_chemicals_are_not_flagged(act, name):
     """False positives here would restamp correctly-DEFINED media."""
     assert not act.undefined_components({"ingredients": [_ing(name, "5")]})
@@ -99,8 +121,10 @@ def test_unparseable_value_yields_none(act):
 
 def test_restamp_changes_only_the_composition_type_line(act, tmp_path):
     p = tmp_path / "r.yaml"
-    p.write_text("id: CultureMech:1\ncomposition_type: DEFINED\nname: x\n"
-                 "notes: 'mentions composition_type: DEFINED in prose'\n")
+    p.write_text(
+        "id: CultureMech:1\ncomposition_type: DEFINED\nname: x\n"
+        "notes: 'mentions composition_type: DEFINED in prose'\n"
+    )
     assert act.restamp(p, "UNDEFINED")
     lines = p.read_text().splitlines()
     assert lines[1] == "composition_type: UNDEFINED"
@@ -179,14 +203,22 @@ def test_medium_type_and_composition_type_do_not_contradict(media_records):
 
 
 def _grounded(name, value):
-    return {"preferred_term": name, "term": {"id": "CHEBI:12345"},
-            "concentration": {"value": value, "unit": "G_PER_L"}}
+    return {
+        "preferred_term": name,
+        "term": {"id": "CHEBI:12345"},
+        "concentration": {"value": value, "unit": "G_PER_L"},
+    }
 
 
 def test_semi_defined_accepts_a_defined_base_with_a_trace_of_yeast_extract(act):
     """The enum's own example, and the real shape: mineral salts + trace extract."""
-    doc = {"ingredients": [_grounded("NaCl", "5"), _grounded("MgSO4", "1"),
-                           _ing("Yeast extract", "0.1")]}
+    doc = {
+        "ingredients": [
+            _grounded("NaCl", "5"),
+            _grounded("MgSO4", "1"),
+            _ing("Yeast extract", "0.1"),
+        ]
+    }
     ok, why = act.semi_defined_candidate(doc)
     assert ok, why
 
@@ -198,10 +230,16 @@ def test_semi_defined_rejects_an_ungrounded_other_ingredient(act):
     extract. Requiring CHEBI grounding on the others is positive evidence; treating
     'nothing else matched' as proof would run the #158 asymmetry backwards.
     """
-    doc = {"ingredients": [_grounded("NaCl", "5"),
-                           {"preferred_term": "Mystery infusion", "concentration":
-                            {"value": "10", "unit": "G_PER_L"}},
-                           _ing("Yeast extract", "0.1")]}
+    doc = {
+        "ingredients": [
+            _grounded("NaCl", "5"),
+            {
+                "preferred_term": "Mystery infusion",
+                "concentration": {"value": "10", "unit": "G_PER_L"},
+            },
+            _ing("Yeast extract", "0.1"),
+        ]
+    }
     ok, why = act.semi_defined_candidate(doc)
     assert not ok and "not CHEBI-grounded" in why
 
@@ -213,8 +251,13 @@ def test_semi_defined_rejects_a_bulk_undefined_component(act):
 
 
 def test_semi_defined_rejects_two_undefined_components(act):
-    doc = {"ingredients": [_grounded("NaCl", "5"),
-                           _ing("Yeast extract", "0.1"), _ing("Peptone", "0.1")]}
+    doc = {
+        "ingredients": [
+            _grounded("NaCl", "5"),
+            _ing("Yeast extract", "0.1"),
+            _ing("Peptone", "0.1"),
+        ]
+    }
     ok, why = act.semi_defined_candidate(doc)
     assert not ok and "exactly one" in why
 
@@ -259,15 +302,17 @@ def test_semi_defined_report_is_idempotent_and_covers_both_verdicts():
     """
     import csv
 
-    report = (REPO_ROOT / "data" / "import_tracking" / "reports"
-              / "composition_type_semi_defined.tsv")
+    report = (
+        REPO_ROOT / "data" / "import_tracking" / "reports" / "composition_type_semi_defined.tsv"
+    )
     assert report.is_file(), "run `just audit-composition-type --promote-semi-defined`"
-    rows = list(csv.DictReader(report.open(), delimiter="\t"))
+    with report.open() as stream:
+        rows = list(csv.DictReader(stream, delimiter="\t"))
     verdicts = {r["verdict"].split(":")[0] for r in rows}
     assert "PROMOTED" in verdicts, "no promoted rows — the report is not idempotent"
     assert "CURATOR" in verdicts, "no near-miss rows — the actionable subset is missing"
 
     near = [r for r in rows if r["verdict"].startswith("CURATOR")]
-    assert all(r["ungrounded_siblings"] for r in near), (
-        "a near-miss row names no ungrounded sibling, which is the thing a curator acts on"
-    )
+    assert all(
+        r["ungrounded_siblings"] for r in near
+    ), "a near-miss row names no ungrounded sibling, which is the thing a curator acts on"

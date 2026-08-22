@@ -11,7 +11,7 @@ import argparse
 import logging
 from pathlib import Path
 
-from culturemech.convert.base import JSONToRawYAMLConverter
+from culturemech.convert.base import JSONToRawYAMLConverter, add_batch_arguments, batch_options
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -23,31 +23,30 @@ def main():
         description="Convert KOMODO JSON to raw YAML format (no normalization)"
     )
     parser.add_argument(
-        "-i", "--input",
+        "-i",
+        "--input",
         type=Path,
         default="data/raw/komodo",
-        help="Input directory with KOMODO JSON files (default: raw/komodo)"
+        help="Input directory with KOMODO JSON files (default: raw/komodo)",
     )
     parser.add_argument(
-        "-o", "--output",
+        "-o",
+        "--output",
         type=Path,
         default="data/raw_yaml/komodo",
-        help="Output directory for raw YAML files (default: raw_yaml/komodo)"
+        help="Output directory for raw YAML files (default: raw_yaml/komodo)",
     )
-    parser.add_argument(
-        "-v", "--verbose",
-        action="store_true",
-        help="Enable verbose logging"
-    )
+    parser.add_argument("-v", "--verbose", action="store_true", help="Enable verbose logging")
 
+    add_batch_arguments(parser)
     args = parser.parse_args()
 
-    logger.info(f"Converting KOMODO JSON to raw YAML")
+    logger.info("Converting KOMODO JSON to raw YAML")
     logger.info(f"  Input: {args.input}")
     logger.info(f"  Output: {args.output}")
 
     converter = JSONToRawYAMLConverter(verbose=args.verbose)
-    converter.convert_directory(args.input, args.output, pattern="*.json")
+    converter.convert_directory(args.input, args.output, pattern="*.json", **batch_options(args))
 
     logger.info("Conversion complete")
 

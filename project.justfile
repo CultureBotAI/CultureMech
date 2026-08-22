@@ -14,8 +14,8 @@ raw_yaml_dir := "data/raw_yaml"
 normalized_yaml_dir := "data/normalized_yaml"
 merge_yaml_dir := "data/merge_yaml"
 processed_data_dir := "data/processed"
-cmm_automation_dir := "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/cmm-ai-automation/data"
-microbe_media_param_dir := "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/MicrobeMediaParam/MicroMediaParam/pipeline_output/merge_mappings"
+cmm_automation_dir := env_var_or_default("CMM_AUTOMATION_DATA_DIR", "")
+microbe_media_param_dir := env_var_or_default("MICROBE_MEDIA_PARAM_DIR", "")
 research_dir := "research"
 templates_dir := "templates"
 
@@ -515,34 +515,46 @@ research-organism-recipe-edison-batch batch *args="":
       {{args}}
 
 [group('Data')]
-fetch-mediadive-raw:
+fetch-mediadive-raw source_dir=cmm_automation_dir:
     #!/usr/bin/env bash
     echo "Fetching MediaDive raw data from cmm-ai-automation..."
     mkdir -p {{raw_dir}}/mediadive
 
-    if [ -d "{{cmm_automation_dir}}" ]; then
-        cp {{cmm_automation_dir}}/mediadive_media.json {{raw_dir}}/mediadive/ 2>/dev/null || echo "⚠ mediadive_media.json not found"
-        cp {{cmm_automation_dir}}/mediadive_ingredients.json {{raw_dir}}/mediadive/ 2>/dev/null || echo "⚠ mediadive_ingredients.json not found"
+    if [ -d "{{source_dir}}" ]; then
+        if [ ! -f "{{source_dir}}/mediadive_media.json" ] || [ ! -f "{{source_dir}}/mediadive_ingredients.json" ]; then
+            echo "✗ Expected mediadive_media.json and mediadive_ingredients.json in {{source_dir}}"
+            exit 1
+        fi
+        cp "{{source_dir}}/mediadive_media.json" {{raw_dir}}/mediadive/
+        cp "{{source_dir}}/mediadive_ingredients.json" {{raw_dir}}/mediadive/
         echo "✓ MediaDive raw data copied to {{raw_dir}}/mediadive/"
         ls -lh {{raw_dir}}/mediadive/*.json 2>/dev/null || echo "No JSON files found"
     else
-        echo "✗ cmm-ai-automation directory not found at {{cmm_automation_dir}}"
-        echo "  Update the path in project.justfile or download manually"
+        echo "✗ cmm-ai-automation data directory not found: {{source_dir}}"
+        echo "  Pass it as: just fetch-mediadive-raw /path/to/cmm-ai-automation/data"
+        echo "  Or set CMM_AUTOMATION_DATA_DIR."
+        exit 1
     fi
 
 [group('Data')]
-fetch-microbe-media-param-raw:
+fetch-microbe-media-param-raw source_dir=microbe_media_param_dir:
     #!/usr/bin/env bash
     echo "Fetching MicrobeMediaParam raw data..."
     mkdir -p {{raw_dir}}/microbe-media-param
 
-    if [ -d "{{microbe_media_param_dir}}" ]; then
-        cp {{microbe_media_param_dir}}/*.tsv {{raw_dir}}/microbe-media-param/ 2>/dev/null || echo "⚠ TSV files not found"
+    if [ -d "{{source_dir}}" ]; then
+        if ! compgen -G "{{source_dir}}/*.tsv" > /dev/null; then
+            echo "✗ No TSV mappings found in {{source_dir}}"
+            exit 1
+        fi
+        cp "{{source_dir}}"/*.tsv {{raw_dir}}/microbe-media-param/
         echo "✓ MicrobeMediaParam mappings copied to {{raw_dir}}/microbe-media-param/"
         ls -lh {{raw_dir}}/microbe-media-param/*.tsv 2>/dev/null || echo "No TSV files found"
     else
-        echo "✗ MicrobeMediaParam directory not found at {{microbe_media_param_dir}}"
-        echo "  Update the path in project.justfile or download manually"
+        echo "✗ MicrobeMediaParam mapping directory not found: {{source_dir}}"
+        echo "  Pass it as: just fetch-microbe-media-param-raw /path/to/merge_mappings"
+        echo "  Or set MICROBE_MEDIA_PARAM_DIR."
+        exit 1
     fi
 
 [group('Data')]
@@ -1707,7 +1719,7 @@ build-browser: gen-browser-data
 # Generate per-medium HTML pages from the normalized YAML layer.
 # Wraps the unified `render_media_pages` renderer (the modern Phase 2
 # dismech-pattern pipeline) and points it at the raw `normalized_yaml/`
-# dataset (15,827 records, pre-merge per-source view).
+# dataset (the pre-merge per-source view; count derived at build time).
 #
 # Companion to `gen-media-pages` (in `justfile`) which targets
 # `data/merge_yaml/merged/` (6,286 canonical merged records →
@@ -1731,10 +1743,10 @@ gen-page file:
     #!/usr/bin/env bash
     echo "Generating HTML page for {{file}}..."
     uv run python src/culturemech/render_media_pages.py \
-        --yaml-dir {{justfile_directory()}}/$(dirname {{file}}) \
+        --file "{{justfile_directory()}}/{{file}}" \
         --out-dir {{justfile_directory()}}/{{pages_dir}}/single \
         --index-dir {{justfile_directory()}}/{{pages_dir}}/single \
-        --limit 1 --force
+        --force
     echo "✓ HTML page generated → {{pages_dir}}/single/"
 
 # ================================================================
@@ -1746,6 +1758,24 @@ test:
     #!/usr/bin/env bash
     echo "Running test suite..."
     uv run --extra dev pytest tests/ -v
+
+[group('Test')]
+test-fast:
+    uv run --extra dev pytest tests/ -m fast --no-cov -q
+
+[group('Test')]
+test-corpus:
+    uv run --extra dev pytest tests/ -m corpus --no-cov -q
+
+[group('Test')]
+test-integration:
+    uv run --extra dev pytest tests/ -m integration --no-cov -q
+
+[group('Test')]
+typecheck-renderer:
+    uv run --extra dev mypy \
+        src/culturemech/render_media_pages.py \
+        src/culturemech/web_artifacts.py
 
 [group('Test')]
 test-kgx:
@@ -1984,7 +2014,7 @@ import-mediadive limit="":
     else
         echo "✗ Cannot import: raw data not available at {{raw_dir}}/mediadive/"
         echo "  Run: just fetch-mediadive-raw"
-        echo "  Or update cmm_automation_dir in project.justfile"
+        echo "  Set CMM_AUTOMATION_DATA_DIR or pass a source path to fetch-mediadive-raw"
         exit 1
     fi
 
@@ -2419,15 +2449,7 @@ import-pfas-all: import-pfas-roles import-pfas-cofactors
 
 [group('Utils')]
 clean:
-    #!/usr/bin/env bash
-    echo "Cleaning generated files..."
-    rm -rf {{output_dir}}/*
-    rm -rf {{pages_dir}}/*
-    rm -rf htmlcov/
-    rm -rf .pytest_cache/
-    rm -rf **/__pycache__/
-    rm -f {{app_dir}}/data.js
-    echo "✓ Clean complete"
+    uv run python scripts/clean_generated.py --root {{justfile_directory()}}
 
 [group('Stats')]
 stats-report output_dir="output/stats":
@@ -2478,15 +2500,11 @@ stats-terminal:
 
 [group('Stats')]
 update-readme-stats:
-    #!/usr/bin/env bash
-    echo "Generating fresh statistics for README update..."
-    echo ""
-    just stats-report output/stats
-    echo ""
-    echo "Statistics generated! To update README.md:"
-    echo "  1. Review output/stats/stats.md"
-    echo "  2. Copy relevant sections to README.md"
-    echo "  3. Update lines 56-61 with current metrics"
+    uv run python scripts/update_readme_stats.py
+
+[group('Stats')]
+check-readme-stats:
+    uv run python scripts/update_readme_stats.py --check
 
 [group('Utils')]
 count-recipes:
@@ -2536,11 +2554,21 @@ help:
 # ================================================================
 
 # Default path to KG-Microbe embeddings (local copy in data/embeddings/)
-kg_microbe_embeddings := "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/CommunityMech/CommunityMech/data/embeddings/DeepWalkSkipGramEnsmallen_degreenorm_embedding_512_v3_2026-06-26_12_55_27.tsv.gz"
+kg_microbe_embeddings := env_var_or_default("KG_MICROBE_EMBEDDINGS", "")
+
+[private]
+require-embeddings path:
+    #!/usr/bin/env bash
+    if [ ! -f "{{path}}" ]; then
+        echo "✗ KG-Microbe embeddings file not found: {{path}}"
+        echo "  Pass the file as the recipe argument or set KG_MICROBE_EMBEDDINGS."
+        exit 1
+    fi
 
 [group('Visualization')]
 gen-media-umap embeddings_path=kg_microbe_embeddings:
     #!/usr/bin/env bash
+    just require-embeddings "{{embeddings_path}}"
     echo "Generating UMAP visualization of media embeddings..."
     echo ""
     uv run culturemech umap generate \
@@ -2577,6 +2605,7 @@ gen-media-umap-custom embeddings_path n_neighbors="15" min_dist="0.1" min_covera
 [group('Visualization')]
 gen-media-umap-force-reload embeddings_path=kg_microbe_embeddings:
     #!/usr/bin/env bash
+    just require-embeddings "{{embeddings_path}}"
     echo "Generating UMAP (forcing cache reload)..."
     echo ""
     uv run culturemech umap generate \
@@ -2630,6 +2659,7 @@ aggregate-all-ingredients: (aggregate-mapped-ingredients) (aggregate-unmapped-in
 [group('Visualization')]
 gen-ingredient-umap embeddings_path=kg_microbe_embeddings:
     #!/usr/bin/env bash
+    just require-embeddings "{{embeddings_path}}"
     echo "Generating ingredient UMAP visualization..."
     echo "  Embeddings: {{embeddings_path}}"
     echo ""
@@ -2646,6 +2676,7 @@ gen-ingredient-umap embeddings_path=kg_microbe_embeddings:
 [group('Visualization')]
 gen-ingredient-umap-dry embeddings_path=kg_microbe_embeddings:
     #!/usr/bin/env bash
+    just require-embeddings "{{embeddings_path}}"
     echo "Ingredient UMAP dry-run (counts only)..."
     echo ""
     uv run python scripts/generate_ingredient_umap.py \
@@ -2657,6 +2688,7 @@ gen-ingredient-umap-dry embeddings_path=kg_microbe_embeddings:
 [group('Visualization')]
 gen-ingredient-umap-force-reload embeddings_path=kg_microbe_embeddings:
     #!/usr/bin/env bash
+    just require-embeddings "{{embeddings_path}}"
     echo "Generating ingredient UMAP (forcing cache reload)..."
     echo ""
     uv run python scripts/generate_ingredient_umap.py \

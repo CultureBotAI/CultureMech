@@ -16,15 +16,21 @@ def cli():
 @cli.command()
 @click.option(
     "--input-dir",
-    type=click.Path(exists=True, path_type=Path),
+    type=click.Path(path_type=Path),
     default="data/normalized_yaml",
     help="Input directory with normalized YAML files",
 )
 @click.option(
     "--output-dir",
     type=click.Path(path_type=Path),
-    default="docs",
-    help="Output directory for HTML pages",
+    default="pages/media",
+    help="Directory for per-medium HTML pages",
+)
+@click.option(
+    "--index-dir",
+    type=click.Path(path_type=Path),
+    default="pages",
+    help="Directory for the generated index and static assets",
 )
 @click.option(
     "--template-dir",
@@ -32,25 +38,28 @@ def cli():
     default=None,
     help="Custom template directory",
 )
-def render(input_dir, output_dir, template_dir):
+@click.option(
+    "--file",
+    "source_files",
+    type=click.Path(exists=True, dir_okay=False, path_type=Path),
+    multiple=True,
+    help="Render exactly this YAML file; repeat to render multiple files",
+)
+@click.option("--force", is_flag=True, help="Regenerate pages even when fresh")
+def render(input_dir, output_dir, index_dir, template_dir, source_files, force):
     """Generate HTML pages from YAML media files."""
-    from culturemech.render import main as render_main
-    import sys
+    from culturemech.render_media_pages import TEMPLATES_DIR, render_pages
 
-    # Set up arguments for render module
-    original_argv = sys.argv
-    sys.argv = [
-        "render",
-        "--input-dir", str(input_dir),
-        "--output-dir", str(output_dir),
-    ]
-    if template_dir:
-        sys.argv.extend(["--template-dir", str(template_dir)])
-
-    try:
-        render_main()
-    finally:
-        sys.argv = original_argv
+    result = render_pages(
+        yaml_dir=input_dir,
+        source_files=source_files or None,
+        out_dir=output_dir,
+        index_dir=index_dir,
+        templates_dir=template_dir or TEMPLATES_DIR,
+        force=force,
+    )
+    if result:
+        raise click.ClickException("Rendering failed; see diagnostics above")
 
 
 @cli.group()
@@ -141,11 +150,11 @@ def generate(
             method=method,
         )
         click.echo(f"\n✓ Success! Visualization saved to: {output}")
-        click.echo(f"\nTo view, open in browser or deploy to GitHub Pages")
+        click.echo("\nTo view, open in browser or deploy to GitHub Pages")
 
     except Exception as e:
         click.echo(f"\n✗ Error: {e}", err=True)
-        raise click.Abort()
+        raise click.Abort() from e
 
 
 if __name__ == "__main__":

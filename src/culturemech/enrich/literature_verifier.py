@@ -18,18 +18,18 @@ Cascading PDF fetch strategy:
 6. Web search (arXiv, bioRxiv, Europe PMC)
 """
 
-import re
-import requests
-import os
-import time
 import json
+import os
+import re
+import time
 from pathlib import Path
-from typing import Optional, Tuple, Dict, List, Any
+
+import requests
 
 try:
-    import PyPDF2
+    import pypdf
 except ImportError:  # pragma: no cover - exercised by tests via monkeypatch
-    PyPDF2 = None
+    pypdf = None
 
 
 class LiteratureVerifier:
@@ -50,7 +50,7 @@ class LiteratureVerifier:
         cache_dir: str = "references_cache",
         pdf_cache_dir: str = "pdf_cache",
         email: str = "noreply@example.com",
-        use_fallback_pdf: bool = False  # Opt-in for Sci-Hub
+        use_fallback_pdf: bool = False,  # Opt-in for Sci-Hub
     ):
         """
         Initialize literature verifier.
@@ -72,11 +72,11 @@ class LiteratureVerifier:
         self.fallback_pdf_urls = self._get_fallback_pdf_urls()
 
         self.session = requests.Session()
-        self.session.headers.update({
-            "User-Agent": "CultureMech/0.1.0 (https://github.com/Knowledge-Graph-Hub/kg-microbe)"
-        })
+        self.session.headers.update(
+            {"User-Agent": "CultureMech/0.1.0 (https://github.com/Knowledge-Graph-Hub/kg-microbe)"}
+        )
 
-    def _get_fallback_pdf_urls(self) -> List[str]:
+    def _get_fallback_pdf_urls(self) -> list[str]:
         """
         Get list of Sci-Hub mirror URLs.
 
@@ -122,53 +122,55 @@ class LiteratureVerifier:
 
         # Strategy: find the blank line after "Author information:" block
         # then take everything until "PMID:" at the end
-        lines = raw_text.split('\n')
+        lines = raw_text.split("\n")
         abstract_lines = []
         in_author_section = False
         past_authors = False
 
-        for i, line in enumerate(lines):
+        for _i, line in enumerate(lines):
             stripped = line.strip()
 
-            if stripped.startswith('Author information:'):
+            if stripped.startswith("Author information:"):
                 in_author_section = True
                 continue
 
             if in_author_section:
                 # End of author section = blank line or new section
-                if stripped == '':
+                if stripped == "":
                     in_author_section = False
                     past_authors = True
                 continue
 
             if past_authors:
                 # Stop at trailing metadata (PMID, DOI lines at end)
-                if re.match(r'^PMID:\s*\d+', stripped):
+                if re.match(r"^PMID:\s*\d+", stripped):
                     break
-                if re.match(r'^DOI:\s*10\.', stripped):
+                if re.match(r"^DOI:\s*10\.", stripped):
                     break
                 abstract_lines.append(line)
 
-        abstract = '\n'.join(abstract_lines).strip()
+        abstract = "\n".join(abstract_lines).strip()
 
         # Fallback: if no author section found, try splitting on double-newline
         # The abstract is usually the last large block before PMID
         if not abstract:
-            blocks = re.split(r'\n\n+', raw_text)
+            blocks = re.split(r"\n\n+", raw_text)
             # Find the longest block that doesn't look like a citation or author list
             for block in reversed(blocks):
                 block = block.strip()
-                if (len(block) > 100
-                        and not re.search(r'PMID:\s*\d+', block)
-                        and not re.search(r'\(\d+\)', block[:50])):
+                if (
+                    len(block) > 100
+                    and not re.search(r"PMID:\s*\d+", block)
+                    and not re.search(r"\(\d+\)", block[:50])
+                ):
                     abstract = block
                     break
 
         # Normalize whitespace
-        abstract = re.sub(r'\s+', ' ', abstract).strip()
+        abstract = re.sub(r"\s+", " ", abstract).strip()
         return abstract
 
-    def fetch_pubmed_abstract(self, pmid: str) -> Optional[str]:
+    def fetch_pubmed_abstract(self, pmid: str) -> str | None:
         """
         Fetch abstract from PubMed for a given PMID.
 
@@ -213,7 +215,7 @@ class LiteratureVerifier:
             print(f"Error fetching PMID {pmid}: {e}")
             return None
 
-    def fetch_doi_metadata(self, doi: str) -> Optional[dict]:
+    def fetch_doi_metadata(self, doi: str) -> dict | None:
         """
         Fetch metadata for a DOI from CrossRef.
 
@@ -268,14 +270,14 @@ class LiteratureVerifier:
         if not text:
             return text
         # Remove all XML/HTML tags (JATS and regular)
-        clean = re.sub(r'<[^>]+>', ' ', text)
+        clean = re.sub(r"<[^>]+>", " ", text)
         # Collapse whitespace
-        clean = re.sub(r'\s+', ' ', clean).strip()
+        clean = re.sub(r"\s+", " ", clean).strip()
         # Remove "Abstract" heading that often remains
-        clean = re.sub(r'^Abstract\s*', '', clean, flags=re.IGNORECASE)
+        clean = re.sub(r"^Abstract\s*", "", clean, flags=re.IGNORECASE)
         return clean
 
-    def fetch_abstract_from_europepmc(self, doi: str) -> Optional[str]:
+    def fetch_abstract_from_europepmc(self, doi: str) -> str | None:
         """
         Fetch abstract from Europe PMC by DOI.
 
@@ -324,7 +326,7 @@ class LiteratureVerifier:
         except requests.exceptions.RequestException:
             return None
 
-    def fetch_abstract_from_semantic_scholar(self, doi: str) -> Optional[str]:
+    def fetch_abstract_from_semantic_scholar(self, doi: str) -> str | None:
         """
         Fetch abstract from Semantic Scholar Graph API v1.
 
@@ -363,7 +365,7 @@ class LiteratureVerifier:
         except requests.exceptions.RequestException:
             return None
 
-    def fetch_pmid_from_doi(self, doi: str) -> Optional[str]:
+    def fetch_pmid_from_doi(self, doi: str) -> str | None:
         """
         Look up PubMed ID from DOI using PubMed E-utilities esearch.
 
@@ -407,7 +409,7 @@ class LiteratureVerifier:
         except requests.exceptions.RequestException:
             return None
 
-    def fetch_abstract_for_doi(self, doi: str) -> Optional[str]:
+    def fetch_abstract_for_doi(self, doi: str) -> str | None:
         """
         Fetch abstract for a DOI using cascading strategy.
 
@@ -468,7 +470,7 @@ class LiteratureVerifier:
     # PDF FETCHING (cascading strategy)
     # ========================================================================
 
-    def fetch_pdf_url(self, doi: str) -> Optional[Tuple[str, str]]:
+    def fetch_pdf_url(self, doi: str) -> tuple[str, str] | None:
         """
         Fetch PDF URL using cascading strategy.
 
@@ -492,28 +494,28 @@ class LiteratureVerifier:
         print(f"Trying direct publisher access for {doi}...")
         pdf_url = self._get_pdf_url_from_publisher(doi)
         if pdf_url:
-            print(f"✓ Found PDF via publisher")
+            print("✓ Found PDF via publisher")
             return (pdf_url, "publisher")
 
         # Try 2: PubMed Central (PMC)
         print(f"Trying PubMed Central for {doi}...")
         pdf_url = self._get_pdf_url_from_pmc(doi)
         if pdf_url:
-            print(f"✓ Found PDF via PubMed Central")
+            print("✓ Found PDF via PubMed Central")
             return (pdf_url, "pmc")
 
         # Try 3: Unpaywall API
         print(f"Trying Unpaywall API for {doi}...")
         pdf_url = self._get_pdf_url_from_unpaywall(doi)
         if pdf_url:
-            print(f"✓ Found PDF via Unpaywall")
+            print("✓ Found PDF via Unpaywall")
             return (pdf_url, "unpaywall")
 
         # Try 4: Semantic Scholar
         print(f"Trying Semantic Scholar for {doi}...")
         pdf_url = self._get_pdf_url_from_semantic_scholar(doi)
         if pdf_url:
-            print(f"✓ Found PDF via Semantic Scholar")
+            print("✓ Found PDF via Semantic Scholar")
             return (pdf_url, "semantic_scholar")
 
         # Try 5: Fallback PDF mirrors (Sci-Hub)
@@ -527,22 +529,24 @@ class LiteratureVerifier:
         print(f"Trying web search for {doi}...")
         pdf_url = self._get_pdf_url_from_web_search(doi)
         if pdf_url:
-            print(f"✓ Found PDF via web search")
+            print("✓ Found PDF via web search")
             return (pdf_url, "web_search")
 
         print(f"✗ Could not find PDF for {doi}")
         return None
 
-    def _get_pdf_url_from_publisher(self, doi: str) -> Optional[str]:
+    def _get_pdf_url_from_publisher(self, doi: str) -> str | None:
         """Try to get PDF directly from publisher website."""
         publisher_patterns = []
 
         # Publisher-specific patterns
         if doi.startswith("10.1128"):  # ASM
-            publisher_patterns.extend([
-                f"https://journals.asm.org/doi/pdf/{doi}",
-                f"https://journals.asm.org/doi/pdfdirect/{doi}",
-            ])
+            publisher_patterns.extend(
+                [
+                    f"https://journals.asm.org/doi/pdf/{doi}",
+                    f"https://journals.asm.org/doi/pdfdirect/{doi}",
+                ]
+            )
         elif doi.startswith("10.1371"):  # PLOS
             publisher_patterns.append(
                 f"https://journals.plos.org/plosone/article/file?id={doi}&type=printable"
@@ -556,13 +560,17 @@ class LiteratureVerifier:
         elif doi.startswith("10.1126"):  # Science
             publisher_patterns.append(f"https://www.science.org/doi/pdf/{doi}")
         elif doi.startswith("10.1016"):  # Elsevier
-            publisher_patterns.append(f"https://www.sciencedirect.com/science/article/pii/{doi}/pdfft")
+            publisher_patterns.append(
+                f"https://www.sciencedirect.com/science/article/pii/{doi}/pdfft"
+            )
 
         # Generic patterns
-        publisher_patterns.extend([
-            f"https://doi.org/{doi}.pdf",
-            f"https://doi.org/{doi}/pdf",
-        ])
+        publisher_patterns.extend(
+            [
+                f"https://doi.org/{doi}.pdf",
+                f"https://doi.org/{doi}/pdf",
+            ]
+        )
 
         # Try each pattern
         for url in publisher_patterns:
@@ -577,7 +585,7 @@ class LiteratureVerifier:
 
         return None
 
-    def _get_pdf_url_from_pmc(self, doi: str) -> Optional[str]:
+    def _get_pdf_url_from_pmc(self, doi: str) -> str | None:
         """Get PDF URL from PubMed Central."""
         try:
             # Search for PMC ID using DOI
@@ -613,7 +621,7 @@ class LiteratureVerifier:
         except Exception:
             return None
 
-    def _get_pdf_url_from_unpaywall(self, doi: str) -> Optional[str]:
+    def _get_pdf_url_from_unpaywall(self, doi: str) -> str | None:
         """Get PDF URL from Unpaywall API."""
         url = f"https://api.unpaywall.org/v2/{doi}"
         params = {"email": self.email}
@@ -634,7 +642,7 @@ class LiteratureVerifier:
         except Exception:
             return None
 
-    def _get_pdf_url_from_semantic_scholar(self, doi: str) -> Optional[str]:
+    def _get_pdf_url_from_semantic_scholar(self, doi: str) -> str | None:
         """Get PDF URL from Semantic Scholar API."""
         try:
             url = f"https://api.semanticscholar.org/v1/paper/{doi}"
@@ -653,7 +661,7 @@ class LiteratureVerifier:
         except Exception:
             return None
 
-    def _get_pdf_url_from_fallback_mirrors(self, doi: str) -> Optional[str]:
+    def _get_pdf_url_from_fallback_mirrors(self, doi: str) -> str | None:
         """
         Try Sci-Hub mirrors sequentially.
 
@@ -672,7 +680,7 @@ class LiteratureVerifier:
                         print(f"  ✓ Found PDF via fallback: {pdf_url}")
                         return pdf_url
                     else:
-                        print(f"  ✗ Fallback page loaded but no PDF found")
+                        print("  ✗ Fallback page loaded but no PDF found")
                 else:
                     print(f"  ✗ Fallback returned status {response.status_code}")
             except Exception as e:
@@ -681,7 +689,7 @@ class LiteratureVerifier:
 
         return None
 
-    def _get_pdf_url_from_web_search(self, doi: str) -> Optional[str]:
+    def _get_pdf_url_from_web_search(self, doi: str) -> str | None:
         """
         Search for PDF in open repositories.
 
@@ -706,7 +714,7 @@ class LiteratureVerifier:
 
         return None
 
-    def _extract_pdf_from_fallback_html(self, html: str, base_url: str) -> Optional[str]:
+    def _extract_pdf_from_fallback_html(self, html: str, base_url: str) -> str | None:
         """
         Extract actual PDF URL from Sci-Hub HTML page using 4 strategies.
 
@@ -719,7 +727,9 @@ class LiteratureVerifier:
         """
         try:
             # Strategy 1: <object type="application/pdf" data="...">
-            object_pattern = r'<object[^>]+type\s*=\s*["\']application/pdf["\'][^>]+data\s*=\s*["\']([^"\'#]+)'
+            object_pattern = (
+                r'<object[^>]+type\s*=\s*["\']application/pdf["\'][^>]+data\s*=\s*["\']([^"\'#]+)'
+            )
             matches = re.findall(object_pattern, html, re.IGNORECASE)
             if matches:
                 pdf_path = matches[0]
@@ -758,10 +768,10 @@ class LiteratureVerifier:
 
     def _normalize_pdf_url(self, pdf_path: str, base_url: str) -> str:
         """Normalize relative PDF paths to absolute URLs."""
-        if pdf_path.startswith('http'):
+        if pdf_path.startswith("http"):
             return pdf_path
-        elif pdf_path.startswith('//'):
-            return 'https:' + pdf_path
+        elif pdf_path.startswith("//"):
+            return "https:" + pdf_path
         else:
             return base_url + pdf_path
 
@@ -769,7 +779,7 @@ class LiteratureVerifier:
     # PDF DOWNLOAD & TEXT EXTRACTION
     # ========================================================================
 
-    def download_pdf(self, doi: str) -> Optional[Path]:
+    def download_pdf(self, doi: str) -> Path | None:
         """
         Download PDF for a given DOI.
 
@@ -801,7 +811,7 @@ class LiteratureVerifier:
             response.raise_for_status()
 
             # Write to cache
-            with open(cache_file, 'wb') as f:
+            with open(cache_file, "wb") as f:
                 for chunk in response.iter_content(chunk_size=8192):
                     f.write(chunk)
 
@@ -812,7 +822,7 @@ class LiteratureVerifier:
             print(f"✗ Error downloading PDF: {e}")
             return None
 
-    def extract_text_from_pdf(self, pdf_path: Path) -> Optional[str]:
+    def extract_text_from_pdf(self, pdf_path: Path) -> str | None:
         """
         Extract text from PDF file.
 
@@ -822,16 +832,16 @@ class LiteratureVerifier:
         Returns:
             Extracted text or None
         """
-        if PyPDF2 is None:
-            print("✗ PyPDF2 not installed. Install with: pip install PyPDF2")
+        if pypdf is None:
+            print("✗ pypdf not installed. Install with: pip install pypdf")
             return None
 
         try:
-            with open(pdf_path, 'rb') as f:
-                reader = PyPDF2.PdfReader(f)
+            with open(pdf_path, "rb") as f:
+                reader = pypdf.PdfReader(f)
                 text = ""
                 for page in reader.pages:
-                    text += page.extract_text() + "\n"
+                    text += (page.extract_text() or "") + "\n"
 
             return text
 
@@ -867,6 +877,7 @@ class LiteratureVerifier:
 
         # Check for fuzzy match (allow minor differences)
         from difflib import SequenceMatcher
+
         ratio = SequenceMatcher(None, snippet_normalized.lower(), text_normalized.lower()).ratio()
         if ratio > 0.95:
             return True

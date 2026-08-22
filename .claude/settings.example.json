@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(just --list:*)",
+      "Bash(just validate:*)",
+      "Bash(just validate-strict:*)",
+      "Bash(uv run pytest:*)",
+      "Bash(uv run ruff check:*)"
+    ],
+    "deny": [
+      "Bash(sudo:*)",
+      "Bash(rm -rf:*)",
+      "Bash(gh repo create:*)",
+      "Bash(brew uninstall:*)"
+    ]
+  }
+}

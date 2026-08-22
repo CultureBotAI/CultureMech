@@ -145,8 +145,9 @@ Both lanes write into the same per-facet assignment classes. Merge order:
 3. **On agreement**: literature assignment reinforces mechanistic — same facet-role tuple, evidence list is unioned, confidence lifts to literature tier.
 4. **On disagreement**: literature-cited primary evidence beats ChEBI hierarchy inference. Curator review item opens (never silently overwritten).
 
-The extractor detects overlap by facet+role tuple. `apply_role_research_results.py`
-and `apply_ingredient_roles.py` both enforce the "never mutate a populated slot"
+The extractor detects overlap by facet+role tuple. The MediaIngredientMech
+`apply_role_research_results.py` and CultureMech `apply_ingredient_roles.py`
+both enforce the "never mutate a populated slot"
 guard, so the merge decision happens BEFORE the applier — either at extraction
 time or in a curator's manual review pass.
 
@@ -155,9 +156,9 @@ time or in a curator's manual review pass.
 - `scripts/prioritize_role_research_candidates.py` — this skill's step 1
 - `scripts/extract_roles_from_edison.py` — step 3
 - `scripts/apply_ingredient_roles.py` — step 5
-- MIM `scripts/research_ingredient_roles_edison.py` — step 2
-- MIM `scripts/apply_role_research_results.py` — step 4
-- MIM `templates/ingredient_role_research.md` — the Edison template
+- MIM `MediaIngredientMech/scripts/research_ingredient_roles_edison.py` — step 2
+- MIM `MediaIngredientMech/scripts/apply_role_research_results.py` — step 4
+- MIM `MediaIngredientMech/templates/ingredient_role_research.md` — the template
 - Step 7 mechanistic backfill: `scripts/backfill_ingredient_roles.py`
 
 ## Related Skills

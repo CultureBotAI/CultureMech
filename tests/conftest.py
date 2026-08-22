@@ -12,6 +12,7 @@ Use `corpus` (every record) or `media_records` (media only, stock solutions
 excluded) instead of writing another `rglob`. The dicts are shared, so **treat
 them as read-only** — mutating one would leak into every later test.
 """
+
 from __future__ import annotations
 
 import sys
@@ -25,6 +26,54 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 NORMALIZED = REPO_ROOT / "data" / "normalized_yaml"
 
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
+
+CORPUS_TEST_FILES = {
+    "test_composition_type.py",
+    "test_concentration_plausibility.py",
+    "test_corpus_grounding_agreement.py",
+    "test_dataclasses_current.py",
+    "test_derived_artifacts.py",
+    "test_grounding_hydration_agreement.py",
+    "test_id_registry.py",
+    "test_media_variant_links.py",
+    "test_medium_type_consistency.py",
+    "test_merge_yaml_freshness.py",
+    "test_name_term_elements.py",
+    "test_recipe_indexes.py",
+    "test_record_io.py",
+    "test_record_kinds.py",
+    "test_ranking_duplicates.py",
+    "test_researched_manifest.py",
+    "test_sssom_generation.py",
+}
+INTEGRATION_TEST_FILES = {"test_kg_microbe_integration.py"}
+
+
+def pytest_collection_modifyitems(items) -> None:
+    """Assign every test to exactly one documented execution tier."""
+    corpus_source_cache: dict[Path, bool] = {}
+    for item in items:
+        if item.path not in corpus_source_cache:
+            corpus_source_cache[item.path] = any(
+                token in item.path.read_text(errors="replace")
+                for token in ("data/normalized_yaml", "data/merge_yaml")
+            )
+        module_uses_corpus = corpus_source_cache[item.path]
+        if (
+            item.get_closest_marker("integration")
+            or item.path.name in INTEGRATION_TEST_FILES
+            or "Integration" in item.nodeid
+        ):
+            item.add_marker(pytest.mark.integration)
+        elif (
+            item.get_closest_marker("corpus")
+            or item.path.name in CORPUS_TEST_FILES
+            or module_uses_corpus
+            or {"corpus", "media_records"}.intersection(item.fixturenames)
+        ):
+            item.add_marker(pytest.mark.corpus)
+        else:
+            item.add_marker(pytest.mark.fast)
 
 
 @pytest.fixture(scope="session")
@@ -96,10 +145,13 @@ def pytest_sessionfinish(session, exitstatus) -> None:  # noqa: ARG001
     # class it exists to prevent. Fail loudly instead (#213).
     if hasattr(session.config, "workerinput"):
         return  # a worker; the controller does the reporting
-    if session.config.pluginmanager.hasplugin("xdist") and \
-            getattr(session.config.option, "numprocesses", None):
-        print("\nSLOW-TEST BUDGET DISABLED: running under pytest-xdist, where "
-              "per-worker durations never reach the controller. See #213.")
+    if session.config.pluginmanager.hasplugin("xdist") and getattr(
+        session.config.option, "numprocesses", None
+    ):
+        print(
+            "\nSLOW-TEST BUDGET DISABLED: running under pytest-xdist, where "
+            "per-worker durations never reach the controller. See #213."
+        )
         session.exitstatus = 1
         return
     over = {

@@ -22,10 +22,67 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  pytest:
+  changed-python-quality:
+    name: Changed Python quality + wheel smoke
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - uses: astral-sh/setup-uv@v6
+      - uses: extractions/setup-just@v2
+      - name: Sync dependencies
+        run: uv sync --frozen --extra dev
+      - name: Ruff and Black on changed Python
+        env:
+          GITHUB_EVENT_BEFORE: ${{ github.event.before }}
+        run: uv run python scripts/check_changed_python.py
+      - name: Validate Claude skills
+        run: uv run python scripts/validate_claude_skills.py
+      - name: Verify generated README statistics
+        run: just check-readme-stats
+      - name: Type-check renderer boundary
+        run: just typecheck-renderer
+      - name: Build and install wheel
+        run: |
+          uv build --wheel
+          uv pip install --python .venv/bin/python --force-reinstall --no-deps dist/*.whl
+      - name: Smoke test installed CLI and renderer
+        run: |
+          cd /tmp
+          "$GITHUB_WORKSPACE/.venv/bin/culturemech" --help
+          "$GITHUB_WORKSPACE/.venv/bin/culturemech" render \
+            --file "$GITHUB_WORKSPACE/tests/fixtures/render_smoke.yaml" \
+            --output-dir /tmp/culturemech-wheel-smoke/media \
+            --index-dir /tmp/culturemech-wheel-smoke
+
+  fast:
+    name: Fast tests (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.14"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - uses: astral-sh/setup-uv@v6
+      - uses: extractions/setup-just@v2
+      - name: Sync dependencies
+        run: uv sync --frozen --extra dev
+      - name: Run fast tier
+        run: just test-fast
+
+  corpus-and-integration:
+    name: Full corpus and integration suite
     runs-on: ubuntu-latest
     # Higher than the data-integrity workflows' 20. Several tests walk the whole
-    # ~11,000-record corpus (record kinds, ranking duplicates, index freshness,
+    # full tracked corpus (record kinds, ranking duplicates, index freshness,
     # concentration plausibility), and parsing that much YAML is markedly slower
     # on a runner than locally — a 3-minute local suite has taken >20 minutes
     # here. Coverage is not the cost; it accounts for ~7s of that.
@@ -33,8 +90,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
       - name: Install uv
-        uses: astral-sh/setup-uv@v3
+        uses: astral-sh/setup-uv@v6
         with:
           enable-cache: true
 
@@ -47,5 +108,5 @@ jobs:
       - name: Sync dependencies
         run: uv sync --frozen --extra dev
 
-      - name: Run test suite
+      - name: Run full suite with coverage floor
         run: just test

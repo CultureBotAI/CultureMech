@@ -9,6 +9,7 @@ Halobacteriales.
 These tests use synthetic lineages so they run without kg-microbe or the 13 GB
 NCBITaxon build; the corpus-level check is skipped when those are absent.
 """
+
 from __future__ import annotations
 
 import importlib.util
@@ -53,7 +54,8 @@ def resolver(dge):
         ("NCBITaxon:999999", "rdfs:subClassOf", "NCBITaxon:888888"),
     ]
     con.executemany("INSERT INTO edge VALUES (?,?,?)", edges)
-    return dge.DomainResolver(con)
+    yield dge.DomainResolver(con)
+    con.close()
 
 
 ARCH_A, ARCH_B = "NCBITaxon:1051914", "NCBITaxon:1179627"
@@ -90,11 +92,17 @@ def test_cyclic_lineage_terminates(dge):
     """A malformed ontology must not hang the audit."""
     con = sqlite3.connect(":memory:")
     con.execute("CREATE TABLE edge (subject TEXT, predicate TEXT, object TEXT)")
-    con.executemany("INSERT INTO edge VALUES (?,?,?)", [
-        ("NCBITaxon:1", "rdfs:subClassOf", "NCBITaxon:2000"),
-        ("NCBITaxon:2000", "rdfs:subClassOf", "NCBITaxon:1"),
-    ])
-    assert dge.DomainResolver(con).domain_of("NCBITaxon:1") is None
+    con.executemany(
+        "INSERT INTO edge VALUES (?,?,?)",
+        [
+            ("NCBITaxon:1", "rdfs:subClassOf", "NCBITaxon:2000"),
+            ("NCBITaxon:2000", "rdfs:subClassOf", "NCBITaxon:1"),
+        ],
+    )
+    try:
+        assert dge.DomainResolver(con).domain_of("NCBITaxon:1") is None
+    finally:
+        con.close()
 
 
 # --- verdicts -------------------------------------------------------------
@@ -159,8 +167,8 @@ def test_load_growth_edges_filters_predicate_and_subject(dge, tmp_path):
     md.mkdir(parents=True)
     (md / "edges.tsv").write_text(
         "subject\tpredicate\tobject\n"
-        "NCBITaxon:1\tMETPO:2000517\tmediadive.medium:9\n"       # keep
-        "NCBITaxon:2\tbiolink:has_phenotype\tMETPO:1\n"          # wrong predicate
+        "NCBITaxon:1\tMETPO:2000517\tmediadive.medium:9\n"  # keep
+        "NCBITaxon:2\tbiolink:has_phenotype\tMETPO:1\n"  # wrong predicate
         "mediadive.solution:5\tMETPO:2000517\tmediadive.medium:9\n"  # not a taxon
     )
     edges = dge.load_growth_edges(tmp_path)
@@ -170,6 +178,7 @@ def test_load_growth_edges_filters_predicate_and_subject(dge, tmp_path):
 # --- against the real corpus ----------------------------------------------
 
 
+@pytest.mark.integration
 def test_growth_evidence_contradicts_the_halophile_naming(dge):
     """The finding that motivates this: names read archaeal, organisms are not.
 
@@ -181,12 +190,16 @@ def test_growth_evidence_contradicts_the_halophile_naming(dge):
         pytest.skip("kg-microbe checkout and/or NCBITaxon sqlite not available")
 
     growth = dge.load_growth_edges(kg)
-    resolver = dge.DomainResolver(sqlite3.connect(db))
+    con = sqlite3.connect(db)
+    resolver = dge.DomainResolver(con)
 
     # JCM_J464_HP_101_HALOPHILE_MEDIUM — Halobacillus/Virgibacillus, i.e. bacteria
-    dom, detail = dge.domain_from_growth("mediadive.medium:J464", growth, resolver)
-    assert dom == "bacterial", detail
+    try:
+        dom, detail = dge.domain_from_growth("mediadive.medium:J464", growth, resolver)
+        assert dom == "bacterial", detail
 
-    # DSMZ_1399_HALOPHILIC_MEDIUM — Halogeometricum/Halomicrobium, i.e. archaea
-    dom, detail = dge.domain_from_growth("mediadive.medium:1399", growth, resolver)
-    assert dom == "archaea", detail
+        # DSMZ_1399_HALOPHILIC_MEDIUM — Halogeometricum/Halomicrobium, i.e. archaea
+        dom, detail = dge.domain_from_growth("mediadive.medium:1399", growth, resolver)
+        assert dom == "archaea", detail
+    finally:
+        con.close()

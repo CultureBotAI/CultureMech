@@ -1,31 +1,28 @@
-#!/bin/bash
-#
-# Claude Code Pre-Commit Hook
-# Checks if repo is locked before allowing commits
-#
-# This hook is called before Claude creates a commit.
-# If it exits with non-zero, the commit is blocked.
-#
+#!/usr/bin/env bash
+# Block commits when the configured fleet lock checker says this repo is locked.
 
-# Configuration
-ORCHESTRATION_ROOT="/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/kg-microbe-orchestration"
-REPO_NAME="culturemech"  # Will be replaced during installation
-
-# Check lock
-python3 "$ORCHESTRATION_ROOT/scripts/check_lock.py" "$REPO_NAME" "commit changes"
-EXIT_CODE=$?
-
-if [ $EXIT_CODE -eq 0 ]; then
-    # No lock, proceed with commit
-    exit 0
-elif [ $EXIT_CODE -eq 1 ]; then
-    # Locked, block commit
-    echo ""
-    echo "✋ Commit blocked by lock system"
-    echo ""
-    exit 1
-else
-    # Error
-    echo "⚠️  Lock check failed, allowing commit (fail-open)"
+orchestration_root="${KG_MICROBE_ORCHESTRATION_ROOT:-}"
+if [ -z "$orchestration_root" ]; then
+    echo "CultureMech lock hook disabled: KG_MICROBE_ORCHESTRATION_ROOT is unset" >&2
     exit 0
 fi
+
+checker="$orchestration_root/scripts/check_lock.py"
+if [ ! -f "$checker" ]; then
+    echo "CultureMech lock hook error: checker not found at $checker" >&2
+    exit 2
+fi
+
+python3 "$checker" culturemech "commit changes"
+result=$?
+case "$result" in
+    0) exit 0 ;;
+    1)
+        echo "Commit blocked by the CultureMech orchestration lock" >&2
+        exit 1
+        ;;
+    *)
+        echo "CultureMech lock check failed with exit $result; blocking commit" >&2
+        exit 2
+        ;;
+esac

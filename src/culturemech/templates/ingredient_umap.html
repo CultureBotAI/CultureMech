@@ -417,7 +417,10 @@
 
     <script>
         // ---- Data (injected by Jinja2) ----
-        const ingredientData = {{ ingredient_data_json | safe }};
+        const ingredientData = {{ ingredient_data | tojson }};
+        const escapeHtml = value => String(value == null ? "" : value)
+            .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+            .replace(/\"/g, "&quot;").replace(/'/g, "&#39;");
 
         // ---- Color by tier ----
         const tierColors = {
@@ -471,12 +474,12 @@
             tooltip
                 .style("opacity", 1)
                 .html(`
-                    <strong>${d.name}</strong><br/>
-                    <span class="chebi-id">${d.chebi_id}</span><br/>
-                    ${d.cas_rn ? `<span class="cas-rn">CAS-RN: ${d.cas_rn}</span><br/>` : ""}
-                    ${d.kg_node_id ? `KG node: <code style="font-size:11px">${d.kg_node_id}</code><br/>` : ""}
-                    Occurrences: <strong style="color:white">${d.count}</strong> &nbsp; Tier: ${d.tier}<br/>
-                    <span class="example-media">e.g. ${mediaStr}</span>
+                    <strong>${escapeHtml(d.name)}</strong><br/>
+                    <span class="chebi-id">${escapeHtml(d.chebi_id)}</span><br/>
+                    ${d.cas_rn ? `<span class="cas-rn">CAS-RN: ${escapeHtml(d.cas_rn)}</span><br/>` : ""}
+                    ${d.kg_node_id ? `KG node: <code style="font-size:11px">${escapeHtml(d.kg_node_id)}</code><br/>` : ""}
+                    Occurrences: <strong style="color:white">${escapeHtml(d.count)}</strong> &nbsp; Tier: ${escapeHtml(d.tier)}<br/>
+                    <span class="example-media">e.g. ${escapeHtml(mediaStr)}</span>
                 `)
                 .style("left", (event.clientX + 16) + "px")
                 .style("top",  (event.clientY - 10) + "px");

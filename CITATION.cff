@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: If you use CultureMech, please cite this software.
+title: "CultureMech: a microbial culture-media knowledge base"
+type: software
+authors:
+  - name: CultureBotAI contributors
+repository-code: https://github.com/CultureBotAI/CultureMech
+url: https://github.com/CultureBotAI/CultureMech
+license: CC0-1.0

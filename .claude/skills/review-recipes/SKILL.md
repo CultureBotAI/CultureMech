@@ -56,40 +56,36 @@ IF duplicate detection    → recipe fingerprinting
 
 ## Review Workflows
 
-### 1. Interactive Review (single recipe)
+### 1. Focused review (single recipe)
 
 ```bash
-PYTHONPATH=src python scripts/review_recipe.py "LB_Broth"                                  # by name
-PYTHONPATH=src python scripts/review_recipe.py data/normalized_yaml/bacterial/LB_Broth.yaml # by path
-PYTHONPATH=src python scripts/review_recipe.py --id CultureMech:015432                      # by ID
-PYTHONPATH=src python scripts/review_recipe.py "TAP_Medium" --suggest-fixes                 # with fixes
+just validate data/normalized_yaml/bacterial/LB_Broth.yaml
+just assign-ids-check
 ```
 
-Output: Rich panel with recipe structure, P1–P4 results, suggested corrections, ingredient
-linkage % (MediaIngredientMech coverage), and solution-reference validation.
+Inspect the recipe directly using this skill's validation rules and run any
+domain-specific checks relevant to the changed fields. Apply corrections only
+after showing the proposed YAML diff, then append `curation_history`.
 
 ### 2. Batch Review (category or all)
 
 ```bash
 PYTHONPATH=src python scripts/batch_review_recipes.py \
-  --category bacterial --output reports/validation_bacterial_$(date +%Y%m%d) --format md,json,html
+  --category bacterial --output reports/validation_bacterial
 
 PYTHONPATH=src python scripts/batch_review_recipes.py --category solutions --priority P1,P2
-PYTHONPATH=src python scripts/batch_review_recipes.py --output reports/validation_all --threads 8
-PYTHONPATH=src python scripts/batch_review_recipes.py --medium-type DEFINED --limit 100 --dry-run
+PYTHONPATH=src python scripts/batch_review_recipes.py --output reports/validation_all
+PYTHONPATH=src python scripts/batch_review_recipes.py --limit 100
 ```
 
 Output: `validation_report.md`, `validation_data.json`, `dashboard.html`, plus category-level
 statistics.
 
-### 3. Automated Data Quality Fixes
+### 3. Data quality fixes
 
 ```bash
-PYTHONPATH=src python scripts/fix_data_quality.py --dry-run                         # preview
-PYTHONPATH=src python scripts/fix_data_quality.py --apply                           # all safe (P3/P4)
-PYTHONPATH=src python scripts/fix_data_quality.py --apply --types concentration_units
-PYTHONPATH=src python scripts/fix_data_quality.py --apply --types placeholders
-PYTHONPATH=src python scripts/fix_data_quality.py --apply --types ingredient_names
+just fix-all-data-quality true  # preview
+# Review the preview before applying the individual scoped recipes.
 ```
 
 **Safe (auto-applied):** standardize concentration units (g/L → G_PER_L), remove placeholder
@@ -160,10 +156,9 @@ Issues are graded by priority. Full definitions (checks, impact, fixes) are in
 
 ## Script Support
 
-`scripts/review_recipe.py` (interactive), `batch_review_recipes.py` (batch + reports),
-`fix_data_quality.py` (auto-fix), `detect_duplicate_recipes.py` (fingerprinting),
-`generate_coverage_report.py` (MIM coverage), `validate_ingredients.py` (linkage),
-`enrich_with_mediaingredientmech.py` (add MIM IDs).
+`scripts/batch_review_recipes.py` (batch + reports),
+`scripts/enrich_with_mediaingredientmech.py` (add MIM IDs), and the scoped
+validation/migration recipes in `project.justfile`.
 
 ---
 
@@ -173,9 +168,8 @@ Issues are graded by priority. Full definitions (checks, impact, fixes) are in
 /review-recipes "recipe_name"                                              # single review
 PYTHONPATH=src python scripts/batch_review_recipes.py --category {category} # batch
 just fix-all-data-quality                                                  # auto-fix
-PYTHONPATH=src python scripts/generate_coverage_report.py                  # coverage
-PYTHONPATH=src python scripts/detect_duplicate_recipes.py                  # duplicates
-just validate-recipes && just validate-schema && just generate-indexes     # full workflow
+just validate-recipes                                                      # corpus review
+just validate-strict && just assign-ids-check                              # corpus gates
 ```
 
 > **Remember:** validate before committing, keep solution MediaIngredientMech coverage

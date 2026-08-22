@@ -5,6 +5,7 @@ its `writer` column listed readers. `research_media.py` reads the id registry to
 build a resolution index and writes nothing, yet appeared among its writers — and
 that column is what a curator reads to judge current-view versus snapshot.
 """
+
 from __future__ import annotations
 
 import importlib.util
@@ -34,23 +35,23 @@ def aw():
 
 
 def test_a_direct_write_text_is_detected(aw):
-    src = '''
+    src = """
 from pathlib import Path
 OUT = Path("data/x/report.tsv")
 def main():
     OUT.write_text("hi")
-'''
+"""
     assert aw.writes_artifact(src, "report.tsv") == "yes"
 
 
 def test_a_read_only_module_is_not_a_writer(aw):
     """The #209 case: a module binds the path and only reads it."""
-    src = '''
+    src = """
 from pathlib import Path
 REG = Path("data/culturemech_id_registry.tsv")
 def load():
     return REG.read_text()
-'''
+"""
     assert aw.writes_artifact(src, "culturemech_id_registry.tsv") == "no"
 
 
@@ -58,7 +59,7 @@ def test_the_argparse_default_pattern_is_followed(aw):
     """The dominant shape here: a module constant used as an --out default, with
     the write going through `args.out`. Tracing only direct assignments scored
     1/6 on real scripts."""
-    src = '''
+    src = """
 from pathlib import Path
 import argparse
 DEFAULT_OUT = Path("data/x/report.tsv")
@@ -67,7 +68,7 @@ def main():
     ap.add_argument("--out", type=Path, default=DEFAULT_OUT)
     args = ap.parse_args()
     args.out.write_text("hi")
-'''
+"""
     assert aw.writes_artifact(src, "report.tsv") == "yes"
 
 
@@ -75,7 +76,7 @@ def test_the_handle_to_csv_writer_chain_is_followed(aw):
     """The write goes through the DictWriter, not the handle. Missing this link
     left every DictWriter-based report looking unwritten — 2/8 before, 10/10
     after."""
-    src = '''
+    src = """
 from pathlib import Path
 import argparse, csv
 DEFAULT_OUT = Path("data/x/report.tsv")
@@ -87,46 +88,46 @@ def main():
         w = csv.DictWriter(fh, delimiter="\\t", fieldnames=["a"])
         w.writeheader()
         w.writerows([])
-'''
+"""
     assert aw.writes_artifact(src, "report.tsv") == "yes"
 
 
 def test_a_read_handle_is_not_a_write(aw):
-    src = '''
+    src = """
 from pathlib import Path
 import csv
 REG = Path("data/reg.tsv")
 def load():
     with REG.open() as fh:
         return list(csv.DictReader(fh))
-'''
+"""
     assert aw.writes_artifact(src, "reg.tsv") == "no"
 
 
 def test_a_write_inside_control_flow_is_detected(aw):
     """Per-scope analysis must still descend into if/for/while/try within a scope —
     the write is rarely at the top of the function body."""
-    src = '''
+    src = """
 from pathlib import Path
 OUT = Path("data/report.tsv")
 def main(items):
     for x in items:
         if x:
             OUT.write_text(str(x))
-'''
+"""
     assert aw.writes_artifact(src, "report.tsv") == "yes"
 
 
 def test_a_write_in_a_method_is_detected(aw):
     """A class body is a scope and its methods are nested scopes; a module binding
     must still reach a write in a method."""
-    src = '''
+    src = """
 from pathlib import Path
 OUT = Path("data/report.tsv")
 class Writer:
     def run(self):
         OUT.write_text("x")
-'''
+"""
     assert aw.writes_artifact(src, "report.tsv") == "yes"
 
 
@@ -139,17 +140,20 @@ def test_unparseable_source_is_unknown_not_a_guess(aw):
 # --- against the real repo --------------------------------------------------
 
 
-@pytest.mark.parametrize("script,artifact,expected", [
-    ("research_media.py", "culturemech_id_registry.tsv", "no"),
-    ("refresh_id_registry.py", "culturemech_id_registry.tsv", "yes"),
-    ("triage_missing_compositions.py", "missing_compositions.tsv", "yes"),
-    ("audit_selective_agent_mismatch.py", "selective_agent_mismatch.tsv", "yes"),
-    ("score_review_need.py", "review_need_ranking.tsv", "yes"),
-    ("report_unparsed_compositions.py", "unparsed_compositions.tsv", "yes"),
-    ("audit_filename_collisions.py", "filename_collisions.tsv", "yes"),
-    ("audit_composition_type.py", "composition_type_conflicts.tsv", "yes"),
-    ("prioritize_deep_research_candidates.py", "deep_research_priority.json", "yes"),
-])
+@pytest.mark.parametrize(
+    "script,artifact,expected",
+    [
+        ("research_media.py", "culturemech_id_registry.tsv", "no"),
+        ("refresh_id_registry.py", "culturemech_id_registry.tsv", "yes"),
+        ("triage_missing_compositions.py", "missing_compositions.tsv", "yes"),
+        ("audit_selective_agent_mismatch.py", "selective_agent_mismatch.tsv", "yes"),
+        ("score_review_need.py", "review_need_ranking.tsv", "yes"),
+        ("report_unparsed_compositions.py", "unparsed_compositions.tsv", "yes"),
+        ("audit_filename_collisions.py", "filename_collisions.tsv", "yes"),
+        ("audit_composition_type.py", "composition_type_conflicts.tsv", "yes"),
+        ("prioritize_deep_research_candidates.py", "deep_research_priority.json", "yes"),
+    ],
+)
 def test_known_cases_in_this_repo(aw, script, artifact, expected):
     path = REPO_ROOT / "scripts" / script
     if not path.is_file():
@@ -160,27 +164,30 @@ def test_known_cases_in_this_repo(aw, script, artifact, expected):
 def test_the_manifest_separates_writes_from_mentions():
     """The columns must not be conflated again."""
     import csv
+
     manifest = REPO_ROOT / "data" / "import_tracking" / "derived_artifacts.tsv"
-    rows = list(csv.DictReader(manifest.open(), delimiter="\t"))
+    with manifest.open() as stream:
+        rows = list(csv.DictReader(stream, delimiter="\t"))
     assert "writes" in rows[0] and "mentioned_by" in rows[0]
     assert "writer" not in rows[0], "the ambiguous `writer` column is back"
     registry = next(r for r in rows if r["artifact"] == "data/culturemech_id_registry.tsv")
     assert "research_media.py" in registry["mentioned_by"]
-    assert "research_media.py" not in registry["writes"], (
-        "a reader is listed as a writer again (#209)")
+    assert (
+        "research_media.py" not in registry["writes"]
+    ), "a reader is listed as a writer again (#209)"
 
 
 def test_a_shadowed_constant_is_not_a_write(aw):
     """#211 fixed. A function that rebinds a module constant's name to a different
     path and writes there is NOT writing the constant's artifact — per-scope
     analysis with document-order shadowing catches it."""
-    src = '''
+    src = """
 from pathlib import Path
 OUT = Path("data/report.tsv")
 def unrelated():
     OUT = Path("/tmp/other.tsv")
     OUT.write_text("x")
-'''
+"""
     assert aw.writes_artifact(src, "report.tsv") == "no"
 
 
@@ -188,7 +195,7 @@ def test_a_write_before_the_shadow_still_counts(aw):
     """Document order matters: a genuine write to the module constant, followed
     later by a local rebinding, is still a write. The shadow only guards writes
     after it, in its own scope."""
-    src = '''
+    src = """
 from pathlib import Path
 OUT = Path("data/report.tsv")
 def writer():
@@ -197,17 +204,17 @@ def writer():
 def unrelated():
     OUT = Path("/tmp/other.tsv")
     OUT.write_text("x")
-'''
+"""
     assert aw.writes_artifact(src, "report.tsv") == "yes"
 
 
 def test_a_parameter_can_shadow_an_inherited_binding(aw):
     """A parameter reusing a constant's name, defaulting to something else, shadows
     the module binding inside that function."""
-    src = '''
+    src = """
 from pathlib import Path
 OUT = Path("data/report.tsv")
 def helper(OUT=None):
     OUT.write_text("x")
-'''
+"""
     assert aw.writes_artifact(src, "report.tsv") == "no"

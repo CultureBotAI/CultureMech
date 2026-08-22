@@ -62,9 +62,7 @@ ARCHAEAL_WORDS = re.compile(
     r"\b(?:archaea|archaeal|archaeon|[a-z]*archaeote|haloarchaea[a-z]*"
     r"|methanogen|methanogens|methanogenic)\b"
 )
-BACTERIAL_WORDS = re.compile(
-    r"\b(?:bacteri(?:um|a|al)|eubacteri[a-z]*|cyanobacteri[a-z]*)\b"
-)
+BACTERIAL_WORDS = re.compile(r"\b(?:bacteri(?:um|a|al)|eubacteri[a-z]*|cyanobacteri[a-z]*)\b")
 
 NON_WORD = re.compile(r"[^a-z0-9]+")
 # Taxon names shorter than this are too collision-prone to match on.
@@ -212,12 +210,10 @@ def classify(rec: Recipe, archaea: Evidence, bacteria: Evidence) -> None:
     # filename `methanogen_high_salt_medium`, only on a spaced `original_name`.
     blob = NON_WORD.sub(
         " ",
-        " ".join(
-            [rec.path.stem, rec.name, rec.original_name, rec.preferred_term]
-        ).lower(),
+        " ".join([rec.path.stem, rec.name, rec.original_name, rec.preferred_term]).lower(),
     )
     tokens = [t for t in blob.split() if t]
-    pairs = {f"{a} {b}" for a, b in zip(tokens, tokens[1:])}
+    pairs = {f"{a} {b}" for a, b in zip(tokens, tokens[1:], strict=False)}
     unique = set(tokens)
 
     def hits(ev: Evidence) -> tuple[list[str], set[str]]:
@@ -315,11 +311,14 @@ def main() -> int:
         return 2
 
     con = sqlite3.connect(args.db)
-    arch_all = taxon_names(con, ARCHAEA)
-    bact_all = taxon_names(con, BACTERIA)
-    euk_all = taxon_names(con, EUKARYOTA)
-    arch_bi = binomial_names(con, ARCHAEA)
-    bact_bi = binomial_names(con, BACTERIA)
+    try:
+        arch_all = taxon_names(con, ARCHAEA)
+        bact_all = taxon_names(con, BACTERIA)
+        euk_all = taxon_names(con, EUKARYOTA)
+        arch_bi = binomial_names(con, ARCHAEA)
+        bact_bi = binomial_names(con, BACTERIA)
+    finally:
+        con.close()
     # only names unique to one domain are usable as evidence
     archaea = Evidence(
         taxa=arch_all - bact_all - euk_all,
@@ -365,8 +364,11 @@ def main() -> int:
                 # no taxonomic support is an unsubstantiated claim worth surfacing.
                 if not own and src_dir != DEFAULT_DOMAIN_DIR:
                     findings["unresolved"].append(
-                        {"file": f"{src_dir}/{path.name}", "id": rec.identifier,
-                         "name": rec.display_name}
+                        {
+                            "file": f"{src_dir}/{path.name}",
+                            "id": rec.identifier,
+                            "name": rec.display_name,
+                        }
                     )
                 continue
             entry = {

@@ -6,11 +6,10 @@ Converts TOGO Medium JSON data to CultureMech LinkML YAML format.
 
 import argparse
 import json
-import re
-import yaml
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+
+import yaml
 
 
 class TogoImporter:
@@ -43,16 +42,16 @@ class TogoImporter:
             "total": 0,
             "success": 0,
             "failed": 0,
-            "by_category": {cat: 0 for cat in self.categories.keys()},
+            "by_category": dict.fromkeys(self.categories.keys(), 0),
             "by_source": {},
         }
 
-    def load_media_data(self) -> List[Dict]:
+    def load_media_data(self) -> list[dict]:
         """Load TOGO media JSON."""
         media_file = self.raw_data_dir / "togo_media.json"
         if not media_file.exists():
             print(f"✗ Media file not found: {media_file}")
-            print(f"  Run: just fetch-togo-raw")
+            print("  Run: just fetch-togo-raw")
             return []
 
         with open(media_file) as f:
@@ -65,7 +64,7 @@ class TogoImporter:
         return []
 
     def _sanitize_filename(self, name: str) -> str:
-        """
+        r"""
         Sanitize filename for filesystem compatibility.
 
         Replaces ALL non-alphanumeric characters (except dash and dot) with underscore.
@@ -84,23 +83,23 @@ class TogoImporter:
 
         Allowed characters: a-z A-Z 0-9 _ - .
         """
-        clean_name = ''
+        clean_name = ""
         for char in name:
-            if char.isalnum() or char in ['-', '.']:
+            if char.isalnum() or char in ["-", "."]:
                 clean_name += char
             else:
-                clean_name += '_'
+                clean_name += "_"
 
         # Collapse multiple consecutive underscores
-        while '__' in clean_name:
-            clean_name = clean_name.replace('__', '_')
+        while "__" in clean_name:
+            clean_name = clean_name.replace("__", "_")
 
         # Remove leading/trailing underscores
-        clean_name = clean_name.strip('_')
+        clean_name = clean_name.strip("_")
 
         return clean_name
 
-    def _infer_category(self, medium: Dict) -> str:
+    def _infer_category(self, medium: dict) -> str:
         """
         Infer category from medium name or metadata.
 
@@ -129,15 +128,12 @@ class TogoImporter:
 
         # Archaea keywords
         if any(
-            kw in name
-            for kw in ["halophil", "methanogen", "archae", "thermophil", "sulfolobus"]
+            kw in name for kw in ["halophil", "methanogen", "archae", "thermophil", "sulfolobus"]
         ):
             return "archaea"
 
         # Algae keywords
-        if any(
-            kw in name for kw in ["algae", "algal", "phyto", "chlorella", "spirulina"]
-        ):
+        if any(kw in name for kw in ["algae", "algal", "phyto", "chlorella", "spirulina"]):
             return "algae"
 
         # Specialized keywords
@@ -157,7 +153,7 @@ class TogoImporter:
         # Default to bacterial
         return "bacterial"
 
-    def _extract_source_info(self, medium: Dict) -> Dict[str, str]:
+    def _extract_source_info(self, medium: dict) -> dict[str, str]:
         """
         Extract source information from medium.
 
@@ -192,7 +188,7 @@ class TogoImporter:
             "src_url": src_url,
         }
 
-    def _extract_ingredients(self, medium: Dict) -> List[Dict]:
+    def _extract_ingredients(self, medium: dict) -> list[dict]:
         """
         Extract ingredients from medium.
 
@@ -235,8 +231,8 @@ class TogoImporter:
                     }
 
                 # GMO component ID (could potentially map to ChEBI)
-                gmo_id = item.get("gmo_id")
-                label = item.get("label")
+                item.get("gmo_id")
+                item.get("label")
 
                 # For now, we don't have direct ChEBI mappings in TOGO data
                 # But we have GMO IDs which are ontology terms
@@ -261,13 +257,17 @@ class TogoImporter:
 
                 ingredients.append(ingredient)
 
-        return ingredients if ingredients else [
-            {
-                "preferred_term": "See source for composition",
-                "concentration": {"value": "variable", "unit": "G_PER_L"},
-                "notes": "Full composition available at source database",
-            }
-        ]
+        return (
+            ingredients
+            if ingredients
+            else [
+                {
+                    "preferred_term": "See source for composition",
+                    "concentration": {"value": "variable", "unit": "G_PER_L"},
+                    "notes": "Full composition available at source database",
+                }
+            ]
+        )
 
     def _parse_unit(self, unit_str: str) -> str:
         """
@@ -299,7 +299,7 @@ class TogoImporter:
 
         return unit_map.get(unit_lower, "G_PER_L")
 
-    def _extract_ph(self, medium: Dict) -> Dict:
+    def _extract_ph(self, medium: dict) -> dict:
         """
         Extract pH information.
 
@@ -328,7 +328,7 @@ class TogoImporter:
 
         return ph_info
 
-    def _convert_to_culturemech(self, medium: Dict) -> Optional[Dict]:
+    def _convert_to_culturemech(self, medium: dict) -> dict | None:
         """
         Convert TOGO medium to CultureMech schema.
 
@@ -402,7 +402,7 @@ class TogoImporter:
 
         return recipe
 
-    def import_all(self, limit: Optional[int] = None) -> Dict:
+    def import_all(self, limit: int | None = None) -> dict:
         """
         Import all TOGO media.
 
@@ -474,9 +474,7 @@ class TogoImporter:
 
                 # Track by source
                 source = self._extract_source_info(medium)["source"]
-                self.stats["by_source"][source] = (
-                    self.stats["by_source"].get(source, 0) + 1
-                )
+                self.stats["by_source"][source] = self.stats["by_source"].get(source, 0) + 1
 
                 print(f" ✓ ({category})")
 
@@ -508,9 +506,7 @@ class TogoImporter:
 
 def main():
     """CLI entry point."""
-    parser = argparse.ArgumentParser(
-        description="Import TOGO Medium data to CultureMech"
-    )
+    parser = argparse.ArgumentParser(description="Import TOGO Medium data to CultureMech")
     parser.add_argument(
         "-i",
         "--input",

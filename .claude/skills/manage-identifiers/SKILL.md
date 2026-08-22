@@ -92,7 +92,8 @@ ingredients:  # <-- Collection key
 
 **Files**:
 - Data: `data/curated/unmapped_ingredients.yaml`
-- ID script: `scripts/add_mediaingredientmech_ids.py`
+- ID script in the MediaIngredientMech checkout:
+  `MediaIngredientMech/scripts/add_mediaingredientmech_ids.py`
 
 ### Type 2: Multi-File Collection
 

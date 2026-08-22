@@ -12,16 +12,14 @@ from __future__ import annotations
 import csv
 import json
 import math
-import re
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Dict, List, Optional
 
 import numpy as np
 import pandas as pd
 import umap
 import yaml
-from jinja2 import Environment, FileSystemLoader
+from jinja2 import Environment, FileSystemLoader, select_autoescape
 from tqdm import tqdm
 
 from culturemech.embedding.loader import EmbeddingLoader
@@ -36,7 +34,7 @@ class IngredientInfo:
     cas_rn: str = ""
     kg_node_id: str = ""
     occurrence_count: int = 0
-    example_media: List[str] = field(default_factory=list)
+    example_media: list[str] = field(default_factory=list)
     tier: str = "other"  # top100 / top500 / other
 
 
@@ -45,11 +43,11 @@ class IngredientUMAPGenerator:
 
     def __init__(
         self,
-        name_to_chebi_path: Optional[Path] = None,
-        unified_mapping_path: Optional[Path] = None,
+        name_to_chebi_path: Path | None = None,
+        unified_mapping_path: Path | None = None,
     ):
         # Optional: name-based CHEBI fallback
-        self.name_to_chebi: Dict[str, str] = {}
+        self.name_to_chebi: dict[str, str] = {}
         if name_to_chebi_path and name_to_chebi_path.exists():
             with open(name_to_chebi_path) as f:
                 raw = json.load(f)
@@ -57,23 +55,23 @@ class IngredientUMAPGenerator:
             print(f"  Loaded {len(self.name_to_chebi)} name→CHEBI fallback entries")
 
         # Optional: unified mapping for CAS-RN and KG node annotation
-        self.cas_rn_index: Dict[str, str] = {}
-        self.kg_node_index: Dict[str, str] = {}
+        self.cas_rn_index: dict[str, str] = {}
+        self.kg_node_index: dict[str, str] = {}
         if unified_mapping_path and unified_mapping_path.exists():
             with open(unified_mapping_path) as f:
-                reader = csv.DictReader(f, delimiter='\t')
+                reader = csv.DictReader(f, delimiter="\t")
                 for row in reader:
-                    chebi = row.get('chebi_id', '').strip()
-                    if chebi.startswith('CHEBI:'):
-                        self.cas_rn_index[chebi] = row.get('cas_rn', '').strip()
-                        self.kg_node_index[chebi] = row.get('kg_microbe_node_id', '').strip()
+                    chebi = row.get("chebi_id", "").strip()
+                    if chebi.startswith("CHEBI:"):
+                        self.cas_rn_index[chebi] = row.get("cas_rn", "").strip()
+                        self.kg_node_index[chebi] = row.get("kg_microbe_node_id", "").strip()
             print(f"  Loaded CAS-RN/KG annotations for {len(self.cas_rn_index)} CHEBI IDs")
 
     # ------------------------------------------------------------------
     # Step 1: Collect ingredients from CultureMech YAML files
     # ------------------------------------------------------------------
 
-    def collect_ingredients(self, media_dir: Path) -> Dict[str, IngredientInfo]:
+    def collect_ingredients(self, media_dir: Path) -> dict[str, IngredientInfo]:
         """
         Scan all CultureMech normalized_yaml files and collect unique CHEBI ingredients.
 
@@ -84,7 +82,7 @@ class IngredientUMAPGenerator:
 
         Returns: chebi_id → IngredientInfo
         """
-        ingredients: Dict[str, IngredientInfo] = {}
+        ingredients: dict[str, IngredientInfo] = {}
         yaml_files = list(media_dir.rglob("*.yaml"))
         print(f"  Collecting ingredients from {len(yaml_files)} YAML files...")
 
@@ -96,9 +94,9 @@ class IngredientUMAPGenerator:
             if not data or not isinstance(data, dict):
                 continue
 
-            media_id = data.get('id', yaml_file.stem)
+            media_id = data.get("id", yaml_file.stem)
 
-            for ing in (data.get('ingredients', []) or []):
+            for ing in data.get("ingredients", []) or []:
                 if not isinstance(ing, dict):
                     continue
 
@@ -106,14 +104,14 @@ class IngredientUMAPGenerator:
                 if not chebi_id:
                     continue
 
-                name = ing.get('preferred_term', '').strip() or chebi_id
+                name = ing.get("preferred_term", "").strip() or chebi_id
 
                 if chebi_id not in ingredients:
                     ingredients[chebi_id] = IngredientInfo(
                         chebi_id=chebi_id,
                         preferred_term=name,
-                        cas_rn=self.cas_rn_index.get(chebi_id, ''),
-                        kg_node_id=self.kg_node_index.get(chebi_id, ''),
+                        cas_rn=self.cas_rn_index.get(chebi_id, ""),
+                        kg_node_id=self.kg_node_index.get(chebi_id, ""),
                     )
                 info = ingredients[chebi_id]
                 info.occurrence_count += 1
@@ -133,30 +131,30 @@ class IngredientUMAPGenerator:
         print(f"  Found {len(ingredients)} unique CHEBI ingredients")
         return ingredients
 
-    def _extract_chebi(self, ing: dict) -> Optional[str]:
+    def _extract_chebi(self, ing: dict) -> str | None:
         """Extract CHEBI ID from ingredient dict using priority order."""
         # 1. term.id (CHEBI)
-        term = ing.get('term') or {}
+        term = ing.get("term") or {}
         if isinstance(term, dict):
-            tid = term.get('id', '')
-            if tid.startswith('CHEBI:'):
+            tid = term.get("id", "")
+            if tid.startswith("CHEBI:"):
                 return tid
 
         # 2. chebi_term.id (enriched)
-        chebi_term = ing.get('chebi_term') or {}
+        chebi_term = ing.get("chebi_term") or {}
         if isinstance(chebi_term, dict):
-            cid = chebi_term.get('id', '')
-            if cid.startswith('CHEBI:'):
+            cid = chebi_term.get("id", "")
+            if cid.startswith("CHEBI:"):
                 return cid
 
         # 3. Name fallback
-        name = ing.get('preferred_term', '').lower().strip()
+        name = ing.get("preferred_term", "").lower().strip()
         if name and name in self.name_to_chebi:
             val = self.name_to_chebi[name]
             # JSON values may be a list of CHEBI IDs; take the first
             if isinstance(val, list):
                 val = val[0] if val else None
-            if val and isinstance(val, str) and val.startswith('CHEBI:'):
+            if val and isinstance(val, str) and val.startswith("CHEBI:"):
                 return val
 
         return None
@@ -167,11 +165,11 @@ class IngredientUMAPGenerator:
 
     def embed(
         self,
-        ingredients: Dict[str, IngredientInfo],
+        ingredients: dict[str, IngredientInfo],
         embeddings_path: Path,
         cache_dir: Path = Path(".umap_cache"),
         force_reload: bool = False,
-    ) -> Dict[str, np.ndarray]:
+    ) -> dict[str, np.ndarray]:
         """
         Load KG-Microbe embeddings and look up each CHEBI ingredient.
 
@@ -185,7 +183,7 @@ class IngredientUMAPGenerator:
             force_reload=force_reload,
         )
 
-        found: Dict[str, np.ndarray] = {}
+        found: dict[str, np.ndarray] = {}
         missing = []
         for chebi_id in ingredients:
             if chebi_id in embeddings_dict:
@@ -206,7 +204,7 @@ class IngredientUMAPGenerator:
 
     def reduce(
         self,
-        embedded: Dict[str, np.ndarray],
+        embedded: dict[str, np.ndarray],
         n_neighbors: int = 15,
         min_dist: float = 0.1,
         random_state: int = 42,
@@ -229,11 +227,13 @@ class IngredientUMAPGenerator:
         )
         coords = reducer.fit_transform(matrix)
 
-        df = pd.DataFrame({
-            "chebi_id": chebi_ids,
-            "umap_x": coords[:, 0],
-            "umap_y": coords[:, 1],
-        })
+        df = pd.DataFrame(
+            {
+                "chebi_id": chebi_ids,
+                "umap_x": coords[:, 0],
+                "umap_y": coords[:, 1],
+            }
+        )
         print("  UMAP reduction complete")
         return df
 
@@ -244,9 +244,9 @@ class IngredientUMAPGenerator:
     def render_html(
         self,
         df: pd.DataFrame,
-        ingredients: Dict[str, IngredientInfo],
+        ingredients: dict[str, IngredientInfo],
         output_path: Path,
-        templates_dir: Optional[Path] = None,
+        templates_dir: Path | None = None,
     ) -> None:
         """
         Render interactive ingredient UMAP as self-contained HTML.
@@ -264,18 +264,20 @@ class IngredientUMAPGenerator:
             count = info.occurrence_count
             # Log-scale radius: min 5, max 14 (floor raised to 5px for legibility, dataviz #8/#9)
             radius = max(5, min(14, 3 + 3 * math.log10(max(count, 1))))
-            points.append({
-                "x": float(row["umap_x"]),
-                "y": float(row["umap_y"]),
-                "chebi_id": chebi_id,
-                "name": info.preferred_term,
-                "cas_rn": info.cas_rn,
-                "kg_node_id": info.kg_node_id,
-                "count": count,
-                "tier": info.tier,
-                "radius": round(radius, 1),
-                "example_media": info.example_media[:3],
-            })
+            points.append(
+                {
+                    "x": float(row["umap_x"]),
+                    "y": float(row["umap_y"]),
+                    "chebi_id": chebi_id,
+                    "name": info.preferred_term,
+                    "cas_rn": info.cas_rn,
+                    "kg_node_id": info.kg_node_id,
+                    "count": count,
+                    "tier": info.tier,
+                    "radius": round(radius, 1),
+                    "example_media": info.example_media[:3],
+                }
+            )
 
         # Sort: most frequent last so they render on top
         points.sort(key=lambda p: p["count"])
@@ -286,11 +288,14 @@ class IngredientUMAPGenerator:
             "other": sum(1 for p in points if p["tier"] == "other"),
         }
 
-        env = Environment(loader=FileSystemLoader(str(templates_dir)))
+        env = Environment(
+            loader=FileSystemLoader(str(templates_dir)),
+            autoescape=select_autoescape(["html"]),
+        )
         template = env.get_template("ingredient_umap.html")
 
         html = template.render(
-            ingredient_data_json=json.dumps(points),
+            ingredient_data=points,
             total_count=len(points),
             tier_counts=tier_counts,
         )
@@ -323,9 +328,10 @@ class IngredientUMAPGenerator:
 
         if min_count > 1:
             before = len(ingredients)
-            ingredients = {k: v for k, v in ingredients.items()
-                          if v.occurrence_count >= min_count}
-            print(f"  Filtered to {len(ingredients)} ingredients (≥{min_count} occurrences, was {before})")
+            ingredients = {k: v for k, v in ingredients.items() if v.occurrence_count >= min_count}
+            print(
+                f"  Filtered to {len(ingredients)} ingredients (≥{min_count} occurrences, was {before})"
+            )
 
         if dry_run:
             print(f"\nDRY RUN — would embed {len(ingredients)} ingredients")

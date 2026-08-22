@@ -140,17 +140,16 @@ curation_history:
 **Your Task**: Get next available CultureMech ID
 
 **Actions**:
-1. Use `manage-identifiers` skill to find highest ID
-2. Mint next sequential ID
-3. Add to YAML: `id: CultureMech:NNNNNN`
+1. Use the `manage-identifiers` skill and run the collision check.
+2. Preview the repository ID assigner.
+3. Apply only after reviewing the preview.
 
 **Example**:
 ```bash
-# Find highest ID
-python scripts/find_highest_id.py --prefix CultureMech
-
-# Output: CultureMech:015431
-# Next ID: CultureMech:015432
+just assign-ids-check
+just assign-ids --dry-run
+# After reviewing the proposed assignment:
+just assign-ids
 ```
 
 ### Step 4: Determine File Location
@@ -441,7 +440,7 @@ pH 7.3, autoclave 121°C for 15 min
 ## Script Support
 
 Helper scripts available:
-- `scripts/find_highest_id.py` - Get next CultureMech ID
+- `scripts/assign_culturemech_ids.py` - Check and assign CultureMech IDs
 - `scripts/cleanup_recipe_ingredients.py` - Clean duplicates
 - `scripts/generate_recipe_indexes.py` - Regenerate indexes
 

@@ -13,32 +13,38 @@ regenerate everything unconditionally.
 Phase 2 of the dismech-pattern port; see
 ../culturebotai-claw/docs/proposals/phase2_culturemech_html_pages_and_qc_dashboard.md
 """
+
 from __future__ import annotations
 
 import argparse
 import hashlib
+import os
 import re
 import sys
+from collections.abc import Sequence
 from pathlib import Path
 
 import yaml
 from jinja2 import Environment, FileSystemLoader, select_autoescape
-from markupsafe import Markup
+from markupsafe import Markup, escape
 
 # Make the shared kg_microbe_browser package importable. PYTHONPATH may
 # already provide it; sibling-dir fallback covers default `python -m` runs.
 # parents[2] is CultureMech repo root; sibling is culturebotai-claw.
-CLAW_SRC = (Path(__file__).resolve().parents[2].parent
-            / "culturebotai-claw" / "src")
+CLAW_SRC = Path(__file__).resolve().parents[2].parent / "culturebotai-claw" / "src"
 if CLAW_SRC.is_dir():
     sys.path.insert(0, str(CLAW_SRC))
 
 try:
     from kg_microbe_browser import build_ingredient_composition_graph
 except ImportError:
-    def build_ingredient_composition_graph(medium: dict,  # type: ignore
-                                           max_ingredients: int = 30) -> str:
+    COMPOSITION_GRAPHS_AVAILABLE = False
+
+    def build_ingredient_composition_graph(medium: dict, max_ingredients: int = 30) -> str:
         return ""
+
+else:
+    COMPOSITION_GRAPHS_AVAILABLE = True
 
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -76,30 +82,33 @@ _SLUG_RE = re.compile(r"[^A-Za-z0-9._-]+")
 
 
 def slug_for(medium: dict, source_path: Path) -> str:
-    """Use CURIE local part if present (CultureMech:008339 → 008339);
-    otherwise the YAML stem."""
-    cid = medium.get("id") or ""
-    if ":" in cid:
-        return cid.split(":", 1)[1]
-    return _SLUG_RE.sub("_", source_path.stem)
+    """Return a filesystem-safe CURIE local part or YAML stem."""
+    cid = str(medium.get("id") or "")
+    candidate = cid.split(":", 1)[1] if ":" in cid else source_path.stem
+    slug = _SLUG_RE.sub("_", candidate).strip("._")
+    return slug or "recipe"
 
 
 def safe_mermaid(value: str) -> Markup:
     """Strip the ```mermaid fence from the graph builder's output and
-    wrap in <pre class="mermaid"> for the Mermaid JS init."""
+    wrap escaped source in <pre class="mermaid"> for the Mermaid JS init.
+
+    Graph text is derived from imported recipe data.  It must remain text: a
+    closing ``</pre>`` in an ingredient label must not become page markup.
+    """
     if not value:
         return Markup("")
     s = value.strip()
     if s.startswith("```mermaid"):
-        s = s[len("```mermaid"):].lstrip()
+        s = s[len("```mermaid") :].lstrip()
     if s.endswith("```"):
         s = s[:-3].rstrip()
-    return Markup(f'<pre class="mermaid">\n{s}\n</pre>')
+    return Markup('<pre class="mermaid">\n') + escape(s) + Markup("\n</pre>")
 
 
-def make_env() -> Environment:
+def make_env(templates_dir: Path = TEMPLATES_DIR) -> Environment:
     env = Environment(
-        loader=FileSystemLoader(str(TEMPLATES_DIR)),
+        loader=FileSystemLoader(str(templates_dir)),
         autoescape=select_autoescape(["html", "j2"]),
         trim_blocks=True,
         lstrip_blocks=True,
@@ -115,20 +124,33 @@ def make_env() -> Environment:
 _SIG_MARKER = "<!-- culturemech-build-sig: {} -->"
 
 
-def build_signature() -> str:
-    """sha256 of the page template + this renderer's source (12 hex chars).
+def build_signature(templates_dir: Path = TEMPLATES_DIR) -> str:
+    """sha256 of renderer templates/assets + this source (12 hex chars).
 
     Folded into the skip decision: if either the Jinja template or the renderer
     changes, the signature changes and stale pages are regenerated.
     """
     h = hashlib.sha256()
-    h.update((TEMPLATES_DIR / "media.html.j2").read_bytes())
+    for path in sorted(p for p in templates_dir.rglob("*") if p.is_file()):
+        h.update(path.relative_to(templates_dir).as_posix().encode())
+        h.update(path.read_bytes())
     h.update(Path(__file__).resolve().read_bytes())
     return h.hexdigest()[:12]
 
 
-def render_one(env: Environment, source_path: Path, out_dir: Path,
-               build_sig: str, force: bool = False) -> tuple[str, dict | None, str]:
+def relative_href(from_dir: Path, target: Path) -> str:
+    """Return a browser-friendly relative path from a directory to a target."""
+    return Path(os.path.relpath(target, start=from_dir)).as_posix()
+
+
+def render_one(
+    env: Environment,
+    source_path: Path,
+    out_dir: Path,
+    index_dir: Path,
+    build_sig: str,
+    force: bool = False,
+) -> tuple[str, dict | None, str]:
     """Returns (status, parsed_medium, slug). status is rendered/skipped/error:reason."""
     try:
         with open(source_path) as f:
@@ -164,6 +186,9 @@ def render_one(env: Environment, source_path: Path, out_dir: Path,
         medium=medium,
         composition_graph=build_ingredient_composition_graph(medium),
         source_path=src_display,
+        index_href=relative_href(out_path.parent, index_dir / "index.html"),
+        style_href=relative_href(out_path.parent, index_dir / "style.css"),
+        mermaid_init_href=relative_href(out_path.parent, index_dir / "mermaid-init.js"),
     )
     out_path.write_text(html + f"\n{_SIG_MARKER.format(build_sig)}\n")
     return "rendered", medium, slug
@@ -171,91 +196,97 @@ def render_one(env: Environment, source_path: Path, out_dir: Path,
 
 # ---------- index page ----------
 
-INDEX_TEMPLATE = """<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>CultureMech — Media index</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header>
-<h1>CultureMech — Media index</h1>
-<p class="muted">{count:,} media records.</p>
-<p><a href="media_growth_review.html">Media growth evidence review</a></p>
-</header>
-{by_category}
-</body>
-</html>
-"""
 
-
-def _category_section(category: str, items: list[tuple[str, str, str]]) -> str:
-    rows = "".join(
-        f'<li><a href="media/{slug}.html"><code>{cid}</code></a> '
-        f'<span class="muted">—</span> {name}</li>'
-        for (cid, slug, name) in sorted(items, key=lambda x: x[2].lower())
-    )
-    return (f'<section><h2>{category} '
-            f'<small class="muted">({len(items)})</small></h2>'
-            f'<ul class="medium-index">{rows}</ul></section>')
-
-
-def write_index(out_dir: Path, all_records: list[dict]) -> None:
-    by_cat: dict[str, list[tuple[str, str, str]]] = {}
+def write_index(
+    env: Environment,
+    index_dir: Path,
+    page_dir: Path,
+    all_records: list[dict],
+) -> None:
+    """Write an autoescaped index with links relative to its actual layout."""
+    by_cat: dict[str, list[dict[str, str]]] = {}
     for r in all_records:
-        cat = (r["medium"].get("category") or "uncategorized")
+        cat = r["medium"].get("category") or "uncategorized"
+        slug = r["slug"]
         by_cat.setdefault(cat, []).append(
-            (r["medium"].get("id") or "", r["slug"],
-             r["medium"].get("name") or r["slug"]))
-    sections = "\n".join(
-        _category_section(cat, items)
-        for cat, items in sorted(by_cat.items())
+            {
+                "id": r["medium"].get("id") or "",
+                "name": r["medium"].get("name") or slug,
+                "href": relative_href(index_dir, page_dir / f"{slug}.html"),
+            }
+        )
+    groups = [
+        (category, sorted(items, key=lambda item: item["name"].lower()))
+        for category, items in sorted(by_cat.items())
+    ]
+    html = env.get_template("index.html.j2").render(
+        count=sum(len(items) for _, items in groups),
+        groups=groups,
+        composition_graphs_available=COMPOSITION_GRAPHS_AVAILABLE,
     )
-    rows_total = sum(len(v) for v in by_cat.values())
-    html = INDEX_TEMPLATE.format(
-        count=rows_total,
-        by_category=sections,
-    )
+    index_dir.mkdir(parents=True, exist_ok=True)
+    (index_dir / "index.html").write_text(html)
+
+
+def copy_assets(templates_dir: Path, index_dir: Path) -> None:
+    """Copy renderer-owned static assets beside the generated index."""
+    for name in ("style.css", "mermaid-init.js"):
+        source = templates_dir / name
+        if source.is_file():
+            (index_dir / name).write_bytes(source.read_bytes())
+
+
+def render_pages(
+    *,
+    yaml_dir: Path | None = None,
+    source_files: Sequence[Path] | None = None,
+    out_dir: Path = DEFAULT_OUT_DIR,
+    index_dir: Path = DEFAULT_INDEX_DIR,
+    templates_dir: Path = TEMPLATES_DIR,
+    limit: int | None = None,
+    force: bool = False,
+) -> int:
+    """Render a directory or an explicit set of recipe files.
+
+    Returns a process-style exit code so Click, argparse, just, and tests share
+    exactly the same implementation.
+    """
+    if source_files:
+        files = [Path(path) for path in source_files]
+        missing = [path for path in files if not path.is_file()]
+        if missing:
+            for path in missing[:5]:
+                print(f"file not found: {path}", file=sys.stderr)
+            return 2
+    else:
+        yaml_dir = Path(yaml_dir or DEFAULT_YAML_DIR)
+        if not yaml_dir.is_dir():
+            print(f"yaml-dir not found: {yaml_dir}", file=sys.stderr)
+            return 2
+        files = sorted(yaml_dir.rglob("*.yaml"))
+
+    if limit is not None:
+        files = files[:limit]
+
+    out_dir = Path(out_dir)
+    index_dir = Path(index_dir)
+    templates_dir = Path(templates_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
-    (out_dir / "index.html").write_text(html)
+    index_dir.mkdir(parents=True, exist_ok=True)
 
-
-# ---------- CLI ----------
-
-def main() -> int:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--yaml-dir", type=Path, default=DEFAULT_YAML_DIR)
-    ap.add_argument("--out-dir", type=Path, default=DEFAULT_OUT_DIR)
-    ap.add_argument("--index-dir", type=Path, default=DEFAULT_INDEX_DIR)
-    ap.add_argument("--limit", type=int, default=None,
-                    help="render at most N records (smoke testing)")
-    ap.add_argument("--force", action="store_true",
-                    help="regenerate even when HTML is fresher than YAML")
-    args = ap.parse_args()
-
-    if not args.yaml_dir.is_dir():
-        print(f"yaml-dir not found: {args.yaml_dir}", file=sys.stderr)
-        return 2
-    args.out_dir.mkdir(parents=True, exist_ok=True)
-
-    env = make_env()
-    build_sig = build_signature()
-    # ``rglob`` so the renderer works against both layouts: flat
-    # (``data/merge_yaml/merged/*.yaml``) and category-nested
-    # (``data/normalized_yaml/<category>/*.yaml``). The latter is the
-    # unified raw-pages mode introduced by retiring the legacy
-    # ``culturemech.render`` script.
-    files = sorted(args.yaml_dir.rglob("*.yaml"))
-    if args.limit:
-        files = files[: args.limit]
-    print(f"Rendering up to {len(files)} medium pages → {args.out_dir}")
+    env = make_env(templates_dir)
+    build_sig = build_signature(templates_dir)
+    print(f"Rendering up to {len(files)} medium pages → {out_dir}")
+    if not COMPOSITION_GRAPHS_AVAILABLE:
+        print(
+            "warning: culturebotai-claw is unavailable; publishing without composition graphs",
+            file=sys.stderr,
+        )
 
     rendered = skipped = errors = 0
     successful: list[dict] = []
     for path in files:
-        status, medium, slug = render_one(env, path, args.out_dir,
-                                          build_sig, force=args.force)
+        status, medium, slug = render_one(env, path, out_dir, index_dir, build_sig, force=force)
         if status == "rendered":
             rendered += 1
         elif status == "skipped":
@@ -270,17 +301,46 @@ def main() -> int:
     print(f"  rendered: {rendered}")
     print(f"  skipped:  {skipped}")
     print(f"  errors:   {errors}")
-
     print("Writing index...")
-    write_index(args.index_dir, successful)
-    print(f"  → {args.index_dir / 'index.html'}")
-
-    # Copy stylesheet so the pages have something to look at.
-    style_src = TEMPLATES_DIR / "style.css"
-    if style_src.exists():
-        (args.index_dir / "style.css").write_bytes(style_src.read_bytes())
-
+    write_index(env, index_dir, out_dir, successful)
+    copy_assets(templates_dir, index_dir)
+    print(f"  → {index_dir / 'index.html'}")
     return 0 if errors == 0 else 1
+
+
+# ---------- CLI ----------
+
+
+def main(argv: Sequence[str] | None = None) -> int:
+    ap = argparse.ArgumentParser()
+    source = ap.add_mutually_exclusive_group()
+    source.add_argument("--yaml-dir", type=Path)
+    source.add_argument(
+        "--file",
+        dest="source_files",
+        type=Path,
+        action="append",
+        help="render exactly this YAML file; repeat to render multiple files",
+    )
+    ap.add_argument("--out-dir", type=Path, default=DEFAULT_OUT_DIR)
+    ap.add_argument("--index-dir", type=Path, default=DEFAULT_INDEX_DIR)
+    ap.add_argument("--template-dir", type=Path, default=TEMPLATES_DIR)
+    ap.add_argument(
+        "--limit", type=int, default=None, help="render at most N records (smoke testing)"
+    )
+    ap.add_argument(
+        "--force", action="store_true", help="regenerate even when HTML is fresher than YAML"
+    )
+    args = ap.parse_args(argv)
+    return render_pages(
+        yaml_dir=args.yaml_dir or DEFAULT_YAML_DIR,
+        source_files=args.source_files,
+        out_dir=args.out_dir,
+        index_dir=args.index_dir,
+        templates_dir=args.template_dir,
+        limit=args.limit,
+        force=args.force,
+    )
 
 
 if __name__ == "__main__":
