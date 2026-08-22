@@ -44,11 +44,14 @@ gh issue list --state open --limit 300 --json number,title,body,labels,createdAt
   -q '.[] | "\(.number)\t\(.createdAt[:10])\t\(.title)"'
 ```
 
-Do not truncate silently. If the queue exceeds 300, say so explicitly and
-paginate (`gh issue list ... --json ... -q ...` supports `--limit` up to
-GitHub's cap; beyond that, note the true count via `gh issue list --state open
---limit 1000 --json number | jq length` — omitting `--limit` silently caps at
-gh's default of 30 — and sample rather than claim full coverage).
+Do not truncate silently. `gh issue list --limit` has no hard cap near 300 —
+`gh` auto-paginates through GitHub's API, so a repo with thousands of open
+issues still returns the full set from a single call with a high enough
+`--limit`. If the 300-item fetch above turns out to be short, first confirm
+the true count (`gh issue list --state open --limit 5000 --json number | jq
+length` — omitting `--limit` silently caps at gh's default of 30), then
+re-run Step 1 with `--limit` comfortably above that count rather than
+sampling.
 
 ### Step 2 — Group and dedupe
 
@@ -135,9 +138,12 @@ the queue.
 
 ## Notes & limitations
 
-- `gh issue list` json mode does not include issue *comments* — a "fixed
-  already" claim in a later comment thread won't surface automatically; check
-  `gh issue view <N> --comments` for issues that look ambiguous.
+- `gh issue list --json` doesn't include `comments` unless explicitly
+  requested (add `comments` to the `--json` field list) — Step 1's query
+  above doesn't request it, so a "fixed already" claim buried in a later
+  comment thread won't surface from that fetch alone; either widen the
+  `--json` fields or check `gh issue view <N> --comments` for issues that
+  look ambiguous.
 - Cross-repo issues (a defect described once but relevant to multiple Mechs)
   are common in this org — note if an issue's fix should propagate elsewhere,
   but do not open issues in sibling repos without being asked.
