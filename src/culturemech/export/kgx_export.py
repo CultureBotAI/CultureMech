@@ -49,12 +49,14 @@ Legacy Edges (for backward compatibility):
 """
 
 import uuid
+from collections.abc import Iterator
 from dataclasses import asdict, dataclass
-from typing import Any, Dict, Iterator, List, Optional
+from typing import Any
 
 try:
     import koza
     from koza import KozaTransform
+
     KOZA_AVAILABLE = True
 except ImportError:
     KOZA_AVAILABLE = False
@@ -80,7 +82,8 @@ HAS_SOLUTION_COMPONENT = "biolink:has_part"  # For medium→solution (also uses 
 # PURE TRANSFORM FUNCTION (testable without Koza)
 # ================================================================
 
-def transform(record: Dict[str, Any]) -> Iterator[Dict[str, Any]]:
+
+def transform(record: dict[str, Any]) -> Iterator[dict[str, Any]]:
     """
     Pure transform function - testable without Koza.
 
@@ -216,7 +219,7 @@ class Node:
     """
 
     id: str
-    category: List[str]
+    category: list[str]
     name: str
     provided_by: str = KNOWLEDGE_SOURCE
 
@@ -260,16 +263,16 @@ class Edge:
     primary_knowledge_source: str = KNOWLEDGE_SOURCE
     knowledge_level: str = "knowledge_assertion"
     agent_type: str = "manual_validation_of_automated_agent"
-    publications: Optional[List[str]] = None
-    concentration: Optional[str] = None
-    role: Optional[str] = None
-    strain: Optional[str] = None
-    growth_phase: Optional[str] = None
-    attribute_type: Optional[str] = None
-    relationship_type: Optional[str] = None
+    publications: list[str] | None = None
+    concentration: str | None = None
+    role: str | None = None
+    strain: str | None = None
+    growth_phase: str | None = None
+    attribute_type: str | None = None
+    relationship_type: str | None = None
 
 
-def to_edge(edge_dict: Dict[str, Any]) -> Edge:
+def to_edge(edge_dict: dict[str, Any]) -> Edge:
     """Turn one ``transform`` dict into a writable KGX edge row.
 
     Unknown qualifier types are dropped rather than silently mangled into an
@@ -277,7 +280,7 @@ def to_edge(edge_dict: Dict[str, Any]) -> Edge:
     ``test_every_qualifier_type_has_a_column`` fails if the transform grows a
     type this does not cover.
     """
-    columns: Dict[str, Any] = {}
+    columns: dict[str, Any] = {}
     for qualifier in edge_dict.get("qualifiers") or []:
         column = _QUALIFIER_COLUMNS.get(qualifier.get("qualifier_type_id", ""))
         if column:
@@ -292,7 +295,7 @@ def to_edge(edge_dict: Dict[str, Any]) -> Edge:
     )
 
 
-def nodes(record: Dict[str, Any]) -> Iterator[Dict[str, Any]]:
+def nodes(record: dict[str, Any]) -> Iterator[dict[str, Any]]:
     """Every node this record mints, as dicts. Companion to ``transform``.
 
     Yields duplicates across records by design — ``culturemech:medium_type_COMPLEX``
@@ -313,54 +316,65 @@ def nodes(record: Dict[str, Any]) -> Iterator[Dict[str, Any]]:
     yield asdict(Node(id=medium_id, category=medium_category, name=name))
 
     if medium_type:
-        yield asdict(Node(
-            id=f"culturemech:medium_type_{medium_type}",
-            category=type_category,
-            name=str(medium_type),
-        ))
+        yield asdict(
+            Node(
+                id=f"culturemech:medium_type_{medium_type}",
+                category=type_category,
+                name=str(medium_type),
+            )
+        )
 
     for solution in record.get("solutions", []) or []:
         preferred_term = solution.get("preferred_term")
         if preferred_term:
-            yield asdict(Node(
-                id=_create_solution_id(preferred_term),
-                category=[CHEMICAL_MIXTURE],
-                name=str(preferred_term),
-            ))
+            yield asdict(
+                Node(
+                    id=_create_solution_id(preferred_term),
+                    category=[CHEMICAL_MIXTURE],
+                    name=str(preferred_term),
+                )
+            )
 
     for application in record.get("applications", []) or []:
         if application:
-            yield asdict(Node(
-                id=f"culturemech:application_{_sanitize_id(str(application))}",
-                category=[ATTRIBUTE],
-                name=str(application),
-            ))
+            yield asdict(
+                Node(
+                    id=f"culturemech:application_{_sanitize_id(str(application))}",
+                    category=[ATTRIBUTE],
+                    name=str(application),
+                )
+            )
 
     physical_state = record.get("physical_state")
     if physical_state:
-        yield asdict(Node(
-            id=f"culturemech:state_{str(physical_state).lower()}",
-            category=[ATTRIBUTE],
-            name=str(physical_state),
-        ))
+        yield asdict(
+            Node(
+                id=f"culturemech:state_{str(physical_state).lower()}",
+                category=[ATTRIBUTE],
+                name=str(physical_state),
+            )
+        )
 
     # A variant is itself a medium, so it takes the generic medium category — the
     # variant entry carries no medium_type of its own to refine it with.
     for variant in record.get("variants", []) or []:
         variant_name = variant.get("name")
         if variant_name:
-            yield asdict(Node(
-                id=f"culturemech:{_sanitize_id(str(variant_name))}",
-                category=_DEFAULT_MEDIUM_CATEGORY,
-                name=str(variant_name),
-            ))
+            yield asdict(
+                Node(
+                    id=f"culturemech:{_sanitize_id(str(variant_name))}",
+                    category=_DEFAULT_MEDIUM_CATEGORY,
+                    name=str(variant_name),
+                )
+            )
 
 
 # ================================================================
 # EDGE EXTRACTION FUNCTIONS (following cmm-ai-automation semantic model)
 # ================================================================
 
-def organism_grows_in_medium_edge(organism: Dict, medium_id: str) -> Optional[dict]:
+
+def organism_grows_in_medium_edge(organism: dict, medium_id: str) -> dict | None:
     """
     Organism (NCBITaxon) → grows_in_medium (METPO:2000517) → Medium
 
@@ -380,18 +394,14 @@ def organism_grows_in_medium_edge(organism: Dict, medium_id: str) -> Optional[di
     # Add strain as qualifier if present
     strain = organism.get("strain")
     if strain:
-        qualifiers.append({
-            "qualifier_type_id": "biolink:strain",
-            "qualifier_value": strain
-        })
+        qualifiers.append({"qualifier_type_id": "biolink:strain", "qualifier_value": strain})
 
     # Add growth phase as qualifier if present
     growth_phase = organism.get("growth_phase")
     if growth_phase:
-        qualifiers.append({
-            "qualifier_type_id": "biolink:growth_phase",
-            "qualifier_value": growth_phase
-        })
+        qualifiers.append(
+            {"qualifier_type_id": "biolink:growth_phase", "qualifier_value": growth_phase}
+        )
 
     pubs, _ = _format_evidence(organism.get("evidence"))
 
@@ -404,7 +414,7 @@ def organism_grows_in_medium_edge(organism: Dict, medium_id: str) -> Optional[di
     )
 
 
-def medium_to_solution_edge(medium_id: str, solution: Dict) -> Optional[dict]:
+def medium_to_solution_edge(medium_id: str, solution: dict) -> dict | None:
     """
     Medium → has_solution_component (biolink:has_part) → Solution
 
@@ -430,10 +440,9 @@ def medium_to_solution_edge(medium_id: str, solution: Dict) -> Optional[dict]:
         val = concentration.get("value")
         unit = concentration.get("unit")
         if val and unit:
-            qualifiers.append({
-                "qualifier_type_id": "biolink:concentration",
-                "qualifier_value": f"{val} {unit}"
-            })
+            qualifiers.append(
+                {"qualifier_type_id": "biolink:concentration", "qualifier_value": f"{val} {unit}"}
+            )
 
     return _make_association(
         subject=medium_id,
@@ -443,7 +452,7 @@ def medium_to_solution_edge(medium_id: str, solution: Dict) -> Optional[dict]:
     )
 
 
-def solution_to_ingredient_edge(solution_id: str, ingredient: Dict) -> Optional[dict]:
+def solution_to_ingredient_edge(solution_id: str, ingredient: dict) -> dict | None:
     """
     Solution → has_part (biolink:has_part) → Ingredient (CHEBI)
 
@@ -468,10 +477,9 @@ def solution_to_ingredient_edge(solution_id: str, ingredient: Dict) -> Optional[
         val = concentration.get("value")
         unit = concentration.get("unit")
         if val and unit:
-            qualifiers.append({
-                "qualifier_type_id": "biolink:concentration",
-                "qualifier_value": f"{val} {unit}"
-            })
+            qualifiers.append(
+                {"qualifier_type_id": "biolink:concentration", "qualifier_value": f"{val} {unit}"}
+            )
 
     # Combine role tokens across the three facet slots (facet vocabulary
     # replaced the retired flat `role: IngredientRoleEnum` slot). Preserves
@@ -484,10 +492,9 @@ def solution_to_ingredient_edge(solution_id: str, ingredient: Dict) -> Optional[
         else:
             roles.append(slot_values)
     if roles:
-        qualifiers.append({
-            "qualifier_type_id": "biolink:role",
-            "qualifier_value": ", ".join(roles)
-        })
+        qualifiers.append(
+            {"qualifier_type_id": "biolink:role", "qualifier_value": ", ".join(roles)}
+        )
 
     return _make_association(
         subject=solution_id,
@@ -497,7 +504,7 @@ def solution_to_ingredient_edge(solution_id: str, ingredient: Dict) -> Optional[
     )
 
 
-def medium_to_ingredient_edge(medium_id: str, ingredient: Dict) -> Optional[dict]:
+def medium_to_ingredient_edge(medium_id: str, ingredient: dict) -> dict | None:
     """
     Medium → has_part (biolink:has_part) → Ingredient (CHEBI)
 
@@ -523,10 +530,9 @@ def medium_to_ingredient_edge(medium_id: str, ingredient: Dict) -> Optional[dict
         val = concentration.get("value")
         unit = concentration.get("unit")
         if val and unit:
-            qualifiers.append({
-                "qualifier_type_id": "biolink:concentration",
-                "qualifier_value": f"{val} {unit}"
-            })
+            qualifiers.append(
+                {"qualifier_type_id": "biolink:concentration", "qualifier_value": f"{val} {unit}"}
+            )
 
     # Combine role tokens across the three facet slots (facet vocabulary
     # replaced the retired flat `role: IngredientRoleEnum` slot). Preserves
@@ -539,10 +545,9 @@ def medium_to_ingredient_edge(medium_id: str, ingredient: Dict) -> Optional[dict
         else:
             roles.append(slot_values)
     if roles:
-        qualifiers.append({
-            "qualifier_type_id": "biolink:role",
-            "qualifier_value": ", ".join(roles)
-        })
+        qualifiers.append(
+            {"qualifier_type_id": "biolink:role", "qualifier_value": ", ".join(roles)}
+        )
 
     pubs, _ = _format_evidence(ingredient.get("evidence"))
 
@@ -555,7 +560,7 @@ def medium_to_ingredient_edge(medium_id: str, ingredient: Dict) -> Optional[dict
     )
 
 
-def medium_to_type_edge(medium_id: str, medium_type: str) -> Optional[dict]:
+def medium_to_type_edge(medium_id: str, medium_type: str) -> dict | None:
     """
     Medium → has_attribute → Medium Type
 
@@ -572,14 +577,13 @@ def medium_to_type_edge(medium_id: str, medium_type: str) -> Optional[dict]:
         subject=medium_id,
         predicate="biolink:has_attribute",
         obj=type_id,
-        qualifiers=[{
-            "qualifier_type_id": "biolink:attribute_type",
-            "qualifier_value": "medium_type"
-        }],
+        qualifiers=[
+            {"qualifier_type_id": "biolink:attribute_type", "qualifier_value": "medium_type"}
+        ],
     )
 
 
-def ingredient_to_edge(medium_id: str, ingredient: Dict) -> Optional[dict]:
+def ingredient_to_edge(medium_id: str, ingredient: dict) -> dict | None:
     """
     Medium (culturemech:LB_Broth) → has_part → Glucose (CHEBI:17234)
 
@@ -599,10 +603,9 @@ def ingredient_to_edge(medium_id: str, ingredient: Dict) -> Optional[dict]:
         val = concentration.get("value")
         unit = concentration.get("unit")
         if val and unit:
-            qualifiers.append({
-                "qualifier_type_id": "biolink:concentration",
-                "qualifier_value": f"{val} {unit}"
-            })
+            qualifiers.append(
+                {"qualifier_type_id": "biolink:concentration", "qualifier_value": f"{val} {unit}"}
+            )
 
     pubs, _ = _format_evidence(ingredient.get("evidence"))
 
@@ -615,7 +618,7 @@ def ingredient_to_edge(medium_id: str, ingredient: Dict) -> Optional[dict]:
     )
 
 
-def organism_to_edge(medium_id: str, organism: Dict) -> Optional[dict]:
+def organism_to_edge(medium_id: str, organism: dict) -> dict | None:
     """
     LEGACY: Medium → supports_growth_of → Organism (NCBITaxon)
 
@@ -640,7 +643,7 @@ def organism_to_edge(medium_id: str, organism: Dict) -> Optional[dict]:
     )
 
 
-def application_to_edge(medium_id: str, application: str) -> Optional[dict]:
+def application_to_edge(medium_id: str, application: str) -> dict | None:
     """
     Medium → has_application → Use case
 
@@ -653,14 +656,13 @@ def application_to_edge(medium_id: str, application: str) -> Optional[dict]:
         subject=medium_id,
         predicate="biolink:has_attribute",
         obj=app_id,
-        qualifiers=[{
-            "qualifier_type_id": "biolink:attribute_type",
-            "qualifier_value": "application"
-        }],
+        qualifiers=[
+            {"qualifier_type_id": "biolink:attribute_type", "qualifier_value": "application"}
+        ],
     )
 
 
-def physical_state_to_edge(medium_id: str, physical_state: str) -> Optional[dict]:
+def physical_state_to_edge(medium_id: str, physical_state: str) -> dict | None:
     """
     Medium → has_physical_state → State
 
@@ -672,14 +674,13 @@ def physical_state_to_edge(medium_id: str, physical_state: str) -> Optional[dict
         subject=medium_id,
         predicate="biolink:has_attribute",
         obj=state_id,
-        qualifiers=[{
-            "qualifier_type_id": "biolink:attribute_type",
-            "qualifier_value": "physical_state"
-        }],
+        qualifiers=[
+            {"qualifier_type_id": "biolink:attribute_type", "qualifier_value": "physical_state"}
+        ],
     )
 
 
-def dataset_to_edge(medium_id: str, dataset: Dict) -> Optional[dict]:
+def dataset_to_edge(medium_id: str, dataset: dict) -> dict | None:
     """
     Dataset → uses_medium → Medium
 
@@ -693,14 +694,13 @@ def dataset_to_edge(medium_id: str, dataset: Dict) -> Optional[dict]:
         subject=dataset_id,
         predicate="biolink:related_to",
         obj=medium_id,
-        qualifiers=[{
-            "qualifier_type_id": "biolink:relationship_type",
-            "qualifier_value": "uses_medium"
-        }],
+        qualifiers=[
+            {"qualifier_type_id": "biolink:relationship_type", "qualifier_value": "uses_medium"}
+        ],
     )
 
 
-def database_reference_to_edge(medium_id: str, term: Dict) -> Optional[dict]:
+def database_reference_to_edge(medium_id: str, term: dict) -> dict | None:
     """
     Medium → has_database_reference → Database ID
 
@@ -717,7 +717,7 @@ def database_reference_to_edge(medium_id: str, term: Dict) -> Optional[dict]:
     )
 
 
-def variant_to_edge(medium_id: str, variant: Dict) -> Optional[dict]:
+def variant_to_edge(medium_id: str, variant: dict) -> dict | None:
     """
     Variant → variant_of → Base Medium
 
@@ -733,10 +733,9 @@ def variant_to_edge(medium_id: str, variant: Dict) -> Optional[dict]:
         subject=variant_id,
         predicate="biolink:subclass_of",
         obj=medium_id,
-        qualifiers=[{
-            "qualifier_type_id": "biolink:relationship_type",
-            "qualifier_value": "variant_of"
-        }],
+        qualifiers=[
+            {"qualifier_type_id": "biolink:relationship_type", "qualifier_value": "variant_of"}
+        ],
     )
 
 
@@ -744,13 +743,14 @@ def variant_to_edge(medium_id: str, variant: Dict) -> Optional[dict]:
 # HELPER FUNCTIONS
 # ================================================================
 
+
 def _make_edge_id(subject: str, predicate: str, obj: str) -> str:
     """Generate deterministic UUID5-based edge ID."""
     edge_string = f"{subject}|{predicate}|{obj}"
     return f"urn:uuid:{uuid.uuid5(NAMESPACE_UUID, edge_string)}"
 
 
-def _get_term_id(data: Dict, path: List[str]) -> Optional[str]:
+def _get_term_id(data: dict, path: list[str]) -> str | None:
     """Safely extract nested term ID."""
     current = data
     for key in path:
@@ -762,7 +762,7 @@ def _get_term_id(data: Dict, path: List[str]) -> Optional[str]:
     return current
 
 
-def _format_evidence(evidence_items: Optional[List[Dict]]) -> tuple:
+def _format_evidence(evidence_items: list[dict] | None) -> tuple:
     """Format evidence into publications list and supporting text."""
     pubs = []
     for e in evidence_items or []:
@@ -824,9 +824,9 @@ def _make_association(
     subject: str,
     predicate: str,
     obj: str,
-    qualifiers: Optional[List[Dict]] = None,
-    publications: Optional[List[str]] = None,
-) -> Dict:
+    qualifiers: list[dict] | None = None,
+    publications: list[str] | None = None,
+) -> dict:
     """Create an Association dictionary."""
     return {
         "id": _make_edge_id(subject, predicate, obj),
@@ -886,8 +886,9 @@ def reset_node_dedup() -> None:
 
 
 if KOZA_AVAILABLE:
+
     @koza.transform_record()
-    def koza_transform(koza_ctx: KozaTransform, record: Dict[str, Any]) -> None:
+    def koza_transform(koza_ctx: KozaTransform, record: dict[str, Any]) -> None:
         """Koza wrapper - handles I/O."""
         for node_dict in nodes(record):
             node_id = node_dict["id"]
@@ -912,9 +913,10 @@ if KOZA_AVAILABLE:
 # ================================================================
 
 if __name__ == "__main__":
-    import sys
-    import yaml
     import json
+    import sys
+
+    import yaml
 
     if len(sys.argv) < 2:
         print("Usage: python kgx_export.py <recipe.yaml>")

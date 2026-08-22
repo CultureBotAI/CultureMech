@@ -17,6 +17,7 @@ raised for every qualified edge and the wrapper swallowed it with a `print`. A
 These tests therefore drive the real koza runner over fixture records and assert
 on the files on disk. They are the only coverage of the path that actually ships.
 """
+
 from __future__ import annotations
 
 import csv
@@ -52,19 +53,19 @@ RECORD = {
         }
     ],
     "target_organisms": [
-        {"preferred_term": "Escherichia coli", "term": {"id": "NCBITaxon:562"},
-         "strain": "K-12"}
+        {"preferred_term": "Escherichia coli", "term": {"id": "NCBITaxon:562"}, "strain": "K-12"}
     ],
     "solutions": [
-        {"preferred_term": "Trace Elements",
-         "concentration": {"value": "1", "unit": "ML_PER_L"},
-         "composition": [{"preferred_term": "ZnSO4", "term": {"id": "CHEBI:32312"}}]}
+        {
+            "preferred_term": "Trace Elements",
+            "concentration": {"value": "1", "unit": "ML_PER_L"},
+            "composition": [{"preferred_term": "ZnSO4", "term": {"id": "CHEBI:32312"}}],
+        }
     ],
     "variants": [{"name": "Canary Medium agar"}],
 }
 
-DEFINED_RECORD = {"name": "Defined Canary", "medium_type": "DEFINED",
-                  "physical_state": "LIQUID"}
+DEFINED_RECORD = {"name": "Defined Canary", "medium_type": "DEFINED", "physical_state": "LIQUID"}
 
 
 # --- qualifier flattening -------------------------------------------------
@@ -84,14 +85,15 @@ def test_every_qualifier_type_the_transform_emits_has_a_column():
         for q in edge.get("qualifiers") or []
     }
     assert emitted, "fixture must exercise qualifiers or this test proves nothing"
-    assert emitted <= set(_QUALIFIER_COLUMNS), (
-        f"no TSV column for {emitted - set(_QUALIFIER_COLUMNS)}"
-    )
+    assert emitted <= set(
+        _QUALIFIER_COLUMNS
+    ), f"no TSV column for {emitted - set(_QUALIFIER_COLUMNS)}"
 
 
 def test_qualifier_values_survive_the_conversion_to_a_row():
     edge = next(
-        e for e in transform(RECORD)
+        e
+        for e in transform(RECORD)
         if e["object"] == "CHEBI:17234" and e["predicate"] == "biolink:has_part"
     )
     row = to_edge(edge)
@@ -100,11 +102,15 @@ def test_qualifier_values_survive_the_conversion_to_a_row():
 
 
 def test_an_unknown_qualifier_type_is_dropped_not_misfiled():
-    row = to_edge({
-        "id": "urn:uuid:x", "subject": "a", "predicate": "p", "object": "b",
-        "qualifiers": [{"qualifier_type_id": "biolink:invented",
-                        "qualifier_value": "v"}],
-    })
+    row = to_edge(
+        {
+            "id": "urn:uuid:x",
+            "subject": "a",
+            "predicate": "p",
+            "object": "b",
+            "qualifiers": [{"qualifier_type_id": "biolink:invented", "qualifier_value": "v"}],
+        }
+    )
     assert row.concentration is None and row.role is None
 
 
@@ -113,12 +119,20 @@ def test_edge_is_not_a_biolink_association():
     dicts through it raises and — with the old except-and-print — dropped the
     edge silently."""
     from biolink_model.datamodel.pydanticmodel_v2 import Association
+    from pydantic import ValidationError
 
-    with pytest.raises(Exception):
+    # ValidationError specifically, not a blind Exception: the point is that the
+    # QUALIFIER shape is rejected, and a bare `Exception` would pass just as
+    # happily on a typo in the field names below.
+    with pytest.raises(ValidationError, match="qualifiers"):
         Association(
-            id="urn:uuid:x", subject="a", predicate="p", object="b",
-            qualifiers=[{"qualifier_type_id": "biolink:concentration",
-                         "qualifier_value": "10 G_PER_L"}],
+            id="urn:uuid:x",
+            subject="a",
+            predicate="p",
+            object="b",
+            qualifiers=[
+                {"qualifier_type_id": "biolink:concentration", "qualifier_value": "10 G_PER_L"}
+            ],
         )
     assert isinstance(to_edge(next(iter(transform(RECORD)))), Edge)
 
@@ -131,7 +145,8 @@ def test_medium_and_type_categories_follow_the_consumer():
     loader does not recognise is worse than no node."""
     by_id = {n["id"]: n for n in nodes(RECORD)}
     assert by_id["culturemech:Canary_Medium"]["category"] == [
-        "biolink:GrowthMedium", "biolink:ComplexMolecularMixture"
+        "biolink:GrowthMedium",
+        "biolink:ComplexMolecularMixture",
     ]
     assert by_id["culturemech:medium_type_COMPLEX"]["category"] == [
         "biolink:ComplexMolecularMixture"
@@ -139,20 +154,17 @@ def test_medium_and_type_categories_follow_the_consumer():
 
     defined = {n["id"]: n for n in nodes(DEFINED_RECORD)}
     assert defined["culturemech:Defined_Canary"]["category"] == [
-        "biolink:GrowthMedium", "biolink:ChemicalMixture"
+        "biolink:GrowthMedium",
+        "biolink:ChemicalMixture",
     ]
-    assert defined["culturemech:medium_type_DEFINED"]["category"] == [
-        "biolink:ChemicalMixture"
-    ]
+    assert defined["culturemech:medium_type_DEFINED"]["category"] == ["biolink:ChemicalMixture"]
 
 
 def test_a_medium_type_outside_the_table_falls_back_rather_than_guessing():
     """BUFFER and NEGATIVE_CONTROL assert nothing about composition."""
     buffer_nodes = {n["id"]: n for n in nodes({"name": "B", "medium_type": "BUFFER"})}
     assert buffer_nodes["culturemech:B"]["category"] == ["biolink:GrowthMedium"]
-    assert buffer_nodes["culturemech:medium_type_BUFFER"]["category"] == [
-        "biolink:ChemicalMixture"
-    ]
+    assert buffer_nodes["culturemech:medium_type_BUFFER"]["category"] == ["biolink:ChemicalMixture"]
 
 
 def test_only_minted_ids_get_nodes():
@@ -165,7 +177,7 @@ def test_only_minted_ids_get_nodes():
 
 
 def test_ids_survive_kozas_asymmetric_sanitization():
-    r'''The two dangling references the full-corpus run produced.
+    r"""The two dangling references the full-corpus run produced.
 
     `TOGO_M1572_Ekho_Lake_Strains_Medium.yaml` carries the solution name
     `Mineral salt solution* (\"Hutner/Cohen-Bazire\")` — the backslash-quotes are
@@ -178,14 +190,14 @@ def test_ids_survive_kozas_asymmetric_sanitization():
 
     Stripping the characters at the source makes both sides agree no matter what
     koza does downstream.
-    '''
+    """
     from culturemech.export.kgx_export import _create_solution_id, _sanitize_id
 
-    assert _sanitize_id(r'Mineral salt solution* (\"Hutner/Cohen-Bazire\")') == (
+    assert _sanitize_id(r"Mineral salt solution* (\"Hutner/Cohen-Bazire\")") == (
         "Mineral_salt_solution_Hutner_Cohen-Bazire"
     )
     for char in '\\"*()':
-        assert char not in _create_solution_id(f'R2A Broth {char}DAIGO{char}')
+        assert char not in _create_solution_id(f"R2A Broth {char}DAIGO{char}")
 
     # Dropping a character must not leave a doubled or trailing separator behind.
     assert _sanitize_id("Test (variant)") == "Test_variant"
@@ -202,9 +214,9 @@ def test_ids_survive_kozas_asymmetric_sanitization():
     # And the medium id goes through the same sanitizer as the solution id --
     # before the fix it only replaced spaces, so a quoted medium name would drift
     # exactly the same way.
-    quoted = {n["id"] for n in nodes({'name': r'Foo \"Bar\"', "medium_type": "COMPLEX"})}
+    quoted = {n["id"] for n in nodes({"name": r"Foo \"Bar\"", "medium_type": "COMPLEX"})}
     edge_subjects = {
-        e["subject"] for e in transform({'name': r'Foo \"Bar\"', "medium_type": "COMPLEX"})
+        e["subject"] for e in transform({"name": r"Foo \"Bar\"", "medium_type": "COMPLEX"})
     }
     assert edge_subjects <= quoted
 
@@ -259,10 +271,15 @@ def exported_shared(tmp_path: Path) -> tuple[list[dict], list[dict]]:
     records_dir = tmp_path / "records" / "canary"
     records_dir.mkdir(parents=True)
     for i, name in enumerate(("Medium One", "Medium Two")):
-        (records_dir / f"record_{i}.yaml").write_text(yaml.safe_dump({
-            "name": name, "medium_type": "COMPLEX",
-            "solutions": [SHARED_SOLUTION],
-        }))
+        (records_dir / f"record_{i}.yaml").write_text(
+            yaml.safe_dump(
+                {
+                    "name": name,
+                    "medium_type": "COMPLEX",
+                    "solutions": [SHARED_SOLUTION],
+                }
+            )
+        )
 
     out = tmp_path / "out"
     export_kgx.run(tmp_path / "records", out)
@@ -286,7 +303,9 @@ def test_no_culturemech_id_in_the_edges_dangles(exported):
     node_rows, edge_rows = exported
     declared = {n["id"] for n in node_rows}
     referenced = {
-        end for e in edge_rows for end in (e["subject"], e["object"])
+        end
+        for e in edge_rows
+        for end in (e["subject"], e["object"])
         if end.startswith("culturemech:")
     }
     assert referenced - declared == set()
@@ -340,16 +359,20 @@ def test_shared_edges_are_written_once(exported_shared):
 def test_a_solution_shared_by_two_media_emits_its_composition_once(exported_shared):
     """The #312 shape itself, not just the absence of duplicates."""
     _node_rows, edge_rows = exported_shared
-    composition = [e for e in edge_rows
-                   if e["subject"].startswith("culturemech:solution_")
-                   and e["predicate"] == "biolink:has_part"]
+    composition = [
+        e
+        for e in edge_rows
+        if e["subject"].startswith("culturemech:solution_") and e["predicate"] == "biolink:has_part"
+    ]
     assert composition, "fixture must reference a shared solution"
     assert len(composition) == len({e["id"] for e in composition})
     # Both media still get their own medium -> solution edge: that one IS
     # per-medium and must not be collapsed.
-    to_solution = [e for e in edge_rows
-                   if e["object"].startswith("culturemech:solution_")
-                   and e["predicate"] == "biolink:has_part"]
+    to_solution = [
+        e
+        for e in edge_rows
+        if e["object"].startswith("culturemech:solution_") and e["predicate"] == "biolink:has_part"
+    ]
     assert len(to_solution) == 2, to_solution
 
 
@@ -372,9 +395,8 @@ def test_a_second_run_in_the_same_process_repeats_the_output(tmp_path):
     module and protecting nothing. If koza ever caches transform modules, this
     test fails and `reset_node_dedup()` becomes the fix.
     """
-    import yaml
-
     import export_kgx
+    import yaml
 
     records_dir = tmp_path / "records" / "canary"
     records_dir.mkdir(parents=True)
