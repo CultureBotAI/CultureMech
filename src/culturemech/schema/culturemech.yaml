@@ -1842,9 +1842,10 @@ classes:
     description: Audit trail entry for curation
     attributes:
       timestamp:
-        description: ISO 8601 timestamp
+        description: ISO 8601 timestamp with a plausible 21st-century curation year
         range: string
         required: true
+        pattern: "^20[0-9]{2}-"
 
       curator:
         description: Name or identifier of curator
