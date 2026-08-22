@@ -40,15 +40,12 @@ KNOWN_NO_SALT_TERM = {
     ("Sodium crotonate", "CHEBI:35899"),
 }
 
-# NOT the same thing, and NOT tolerated as correct. These two are grounded to the wrong
-# SUBSTANCE — selenate read as sulfate, silicate as sulfite — the same Se/Si -> S collapse
-# that put `H2SeO3` on sulfurous acid. ChEBI has no term for either correct compound, so
-# they cannot simply be regrounded; see #279. They are listed here so the gate stays
-# green on a known, recorded defect rather than being silently weakened.
-KNOWN_WRONG_PENDING_279 = {
-    ("Na2SeO4 x 10 H2O", "CHEBI:32586"),      # sodium SULFATE decahydrate
-    ("Na2SiO3 x 5 H2O", "CHEBI:86477"),       # sodium SULFITE
-}
+# #279 is CLOSED. These two were grounded to the wrong SUBSTANCE -- selenate read as
+# sulfate, silicate as sulfite -- the same Se/Si -> S collapse that put `H2SeO3` on
+# sulfurous acid. The issue recorded that ChEBI had no term for either correct compound;
+# it does: `sodium selenate` (CHEBI:77775) and `sodium silicate` (CHEBI:60720), the
+# anhydrous parents. Both were re-grounded there, so the wrong-pending set is gone rather
+# than emptied -- which is what its own test asked for.
 
 
 @pytest.fixture(scope="module")
@@ -93,7 +90,7 @@ def mismatches():
                     name = ""
     bad = []
     for name, tid in pairs:
-        if (name, tid) in KNOWN_NO_SALT_TERM | KNOWN_WRONG_PENDING_279:
+        if (name, tid) in KNOWN_NO_SALT_TERM:
             continue
         want = name_elements(name)
         if not want:
@@ -135,7 +132,48 @@ def test_the_allowlist_stays_small():
     assert len(KNOWN_NO_SALT_TERM) <= 6, "allowlist growing — investigate before adding"
 
 
-def test_known_wrong_groundings_are_tracked_not_forgotten():
-    """These are defects, not tolerances. If the set empties, delete it; if it grows,
-    something is being swept under it."""
-    assert len(KNOWN_WRONG_PENDING_279) == 2, "update #279 before changing this"
+def test_the_se_si_collapse_is_gone_from_the_corpus():
+    """#279's two wrong SUBSTANCE groundings, pinned by id rather than by a set.
+
+    `KNOWN_WRONG_PENDING_279` used to hold them, with a test asserting it stayed at
+    exactly 2 and a docstring saying to delete it if it emptied. It did: the issue
+    recorded that ChEBI had no term for either correct compound, and it does --
+    `sodium selenate` (CHEBI:77775) and `sodium silicate` (CHEBI:60720), the
+    anhydrous parents, the same tolerance `KNOWN_NO_SALT_TERM` grants elsewhere.
+
+    Asserting the wrong ids are ABSENT, rather than deleting the coverage along
+    with the set, is what stops a future import quietly reintroducing them.
+
+    Same line scan as the fixture above, and for the same reason: parsing both
+    corpora costs ~4 minutes.
+    """
+    import re as _re
+
+    PREF = _re.compile(r"^\s*-?\s*preferred_term:\s*(.+?)\s*$")
+    IDL = _re.compile(r"^\s*id:\s*(CHEBI:\d+)\s*$")
+    wrong = {
+        "CHEBI:32586": _re.compile(r"na2seo4|selenate|seo4", _re.I),   # sodium sulfate decahydrate
+        "CHEBI:86477": _re.compile(r"na2sio3|silicate|sio3", _re.I),   # sodium sulfite
+        "CHEBI:140435": _re.compile(r"cholesterol", _re.I),            # deuterated standard (#305)
+    }
+    offenders = []
+    for root in ROOTS:
+        if not root.is_dir():
+            continue
+        for path in root.rglob("*.yaml"):
+            text = path.read_text(errors="replace")
+            if "CHEBI:" not in text:
+                continue
+            name = ""
+            for line in text.splitlines():
+                m = PREF.match(line)
+                if m:
+                    name = m.group(1).strip().strip("'\"")
+                    continue
+                mi = IDL.match(line)
+                if mi and name:
+                    pattern = wrong.get(mi.group(1))
+                    if pattern and pattern.search(name):
+                        offenders.append((path.name, name, mi.group(1)))
+                    name = ""
+    assert not offenders, f"the Se/Si -> S collapse is back: {offenders[:5]}"

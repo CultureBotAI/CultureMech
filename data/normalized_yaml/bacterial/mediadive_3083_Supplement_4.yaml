@@ -12,8 +12,8 @@ composition:
     id: mediadive.compound:2151
     label: Cholesterol
   chebi_term:
-    id: CHEBI:140435
-    label: cholesterol-2,2,3,4,4,6-d6
+    id: CHEBI:16113
+    label: cholesterol
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Ethanol
@@ -60,6 +60,11 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-08-21T01:26:34.105554+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22/G24)
+  notes: 'Re-grounded 1 term reference(s) to the correct CHEBI (audit G21/G22/G24;
+    see reports/chebi_grounding_audit.md): CHEBI:140435→CHEBI:16113 ×1.'
 ingredients:
 - preferred_term: See source for composition
   concentration:
