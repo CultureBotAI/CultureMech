@@ -44,6 +44,12 @@ gh issue list --state open --limit 300 --json number,title,body,labels,createdAt
   -q '.[] | "\(.number)\t\(.createdAt[:10])\t\(.title)"'
 ```
 
+The `-q` filter above only prints `number`/`createdAt`/`title` for a scannable
+overview — `body` and `labels` are still fetched (Step 2's grouping and Step 3's
+staleness checks need them) but not shown by this line. Use `gh issue view <N>`
+to read an individual issue's body, or widen the `-q` expression if scanning
+bodies in bulk.
+
 Do not truncate silently. `gh issue list --limit` has no hard cap near 300 —
 `gh` auto-paginates through GitHub's API, so a repo with thousands of open
 issues still returns the full set from a single call with a high enough
@@ -73,7 +79,11 @@ For each issue (or each group's representative), spot-check:
   merged should be flagged STALE/CLOSE, not re-surfaced as open work. Plain
   `--grep "#<N>"` substring-matches unrelated numbers (`#48` also matches
   `#480`, `#4823`, ...) — the `\b` word-boundary anchor above is required, not
-  optional.
+  optional. Treat the `gh pr list --search` result as a lead, not proof:
+  GitHub's search matches the number anywhere in the indexed text, not
+  anchored to an issue reference (`--search "248"` also returns unrelated
+  PRs like #14006 that never mention issue 248) — open and read each
+  candidate PR before citing it as evidence.
 - **Still reproducible?** If the issue names a specific file/line/function,
   confirm it still exists in that shape (`grep`/`git log -p` the cited
   location) — code moves, and a stale issue pointing at a renamed/removed
