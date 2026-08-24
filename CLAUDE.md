@@ -4,6 +4,36 @@ Use this file as the repository-level contract. Detailed workflows live in
 `.claude/skills/*/SKILL.md`; follow the relevant skill rather than duplicating
 its procedure here.
 
+## Fact-based answers only
+
+Never state a comparison, count, status, or historical claim without having
+verified it in the current conversation via a tool call (`gh`, `git`, `grep`,
+`Read`, etc.). "I recall," "this is typically the case," or a prior summary
+are not verification -- recipe data and repository state change between turns
+and across concurrent sessions.
+
+- Prefer a live check over memory: `gh api`/`gh pr view`/`gh issue view` over
+  a remembered issue list; `git log`/`git blame` over a recalled commit; a
+  fresh `Read` over trusting an earlier read of the same file.
+- Derived artifacts (`data/merge_yaml/merged/`, `app/data.js`,
+  `pages/normalized/`, `pages/media/`) can lag the authoritative
+  `data/normalized_yaml/` corpus they were generated from -- see "Data
+  authority" below. Do not quote a count or a record's current state from a
+  derived file without confirming it against the normalized source or
+  regenerating.
+- This repo's own local checkout can lag its `origin/main`; verify against
+  `gh api` or a fresh `git fetch`, not the working tree on disk alone, before
+  asserting what the repository currently contains.
+- "Do not invent ontology IDs, labels, citations, or evidence" (see "Recipe
+  and schema editing rules" below) is a special case of this same rule --
+  verify before asserting, and say "unresolved" rather than force a plausible
+  guess.
+- If a claim can't be verified this session, say so ("I did not check X" /
+  "I don't know") instead of presenting a plausible guess as fact.
+- Re-verify rather than repeat: restating an earlier claim in this same
+  conversation without re-checking it is exactly the failure mode this rule
+  exists to prevent.
+
 ## Data authority
 
 - `data/raw/`: immutable upstream captures. Large payloads are ignored; source
