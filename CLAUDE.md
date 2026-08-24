@@ -15,13 +15,16 @@ and across concurrent sessions.
 - Prefer a live check over memory: `gh api`/`gh pr view`/`gh issue view` over
   a remembered issue list; `git log`/`git blame` over a recalled commit; a
   fresh `Read` over trusting an earlier read of the same file.
-- `data/merge_yaml/merged/`, `app/data.js`, `pages/normalized/`, and
-  `pages/media/` (see "Data authority" below) are generated from the
-  authoritative `data/normalized_yaml/` corpus and can lag it. `data/raw_yaml/`
-  is a different case — it precedes `normalized_yaml` in the pipeline, not
-  generated from it (see "Data authority"). Do not quote a count or a
-  record's current state from any derived file without confirming it against
-  its actual source or regenerating.
+- `app/data.js` and `pages/normalized/` (see "Data authority" below) are
+  generated directly from the authoritative `data/normalized_yaml/` corpus
+  and can lag it. `pages/media/` is one hop further downstream: it's
+  generated from `data/merge_yaml/merged/`, not `normalized_yaml/` directly
+  (per `docs/DATA_LAYERS.md`) — verify it against `merge_yaml/merged/`, which
+  can itself lag `normalized_yaml/` even when `pages/media/` is freshly
+  regenerated. `data/raw_yaml/` is a different case again — it precedes
+  `normalized_yaml` in the pipeline, not generated from it. Do not quote a
+  count or a record's current state from any derived file without confirming
+  it against its actual immediate source or regenerating.
 - This repo's own local checkout can lag its `origin/main`; verify against
   `gh api` or a fresh `git fetch`, not the working tree on disk alone, before
   asserting what the repository currently contains.
