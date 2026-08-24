@@ -48,10 +48,12 @@ and across concurrent sessions.
 - `pages/media/`: ignored CI output, generated from `data/merge_yaml/merged/`
   (not `data/normalized_yaml/` directly) — see `docs/DATA_LAYERS.md`. Never
   hand-edit or commit it.
-- Other generated page assets (`pages/index.html`, `pages/style.css`,
-  `pages/mermaid-init.js`, and per-domain page directories): ignored CI
-  outputs. Never hand-edit or commit them; see `docs/DATA_LAYERS.md` for the
-  full list.
+- Other generated page assets (`pages/index.html`, `pages/style.css`, and
+  `pages/mermaid-init.js`): ignored CI outputs. Never hand-edit or commit
+  them; see `docs/DATA_LAYERS.md` for the full list. `pages/bacterial/`,
+  `pages/algae/`, `pages/archaea/`, `pages/fungal/`, and `pages/specialized/`
+  are legacy per-category output the renderer no longer writes (see
+  `.gitignore`) — blocked from re-add, not actively regenerated.
 
 ## Required validation
 
