@@ -15,12 +15,10 @@ and across concurrent sessions.
 - Prefer a live check over memory: `gh api`/`gh pr view`/`gh issue view` over
   a remembered issue list; `git log`/`git blame` over a recalled commit; a
   fresh `Read` over trusting an earlier read of the same file.
-- Derived artifacts (`data/merge_yaml/merged/`, `app/data.js`,
-  `pages/normalized/`, `pages/media/`) can lag the authoritative
-  `data/normalized_yaml/` corpus they were generated from -- see "Data
-  authority" below. Do not quote a count or a record's current state from a
-  derived file without confirming it against the normalized source or
-  regenerating.
+- Derived artifacts (see "Data authority" below for the current list) can lag
+  the authoritative `data/normalized_yaml/` corpus they were generated from.
+  Do not quote a count or a record's current state from a derived file
+  without confirming it against the normalized source or regenerating.
 - This repo's own local checkout can lag its `origin/main`; verify against
   `gh api` or a fresh `git fetch`, not the working tree on disk alone, before
   asserting what the repository currently contains.
