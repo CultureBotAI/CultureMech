@@ -15,13 +15,11 @@ and across concurrent sessions.
 - Prefer a live check over memory: `gh api`/`gh pr view`/`gh issue view` over
   a remembered issue list; `git log`/`git blame` over a recalled commit; a
   fresh `Read` over trusting an earlier read of the same file.
-- Derived artifacts can lag the source they were generated from, and that
-  source is not always `data/normalized_yaml/` directly (`pages/media/`, for
-  example, is generated from `data/merge_yaml/merged/`, not from
-  `normalized_yaml/`) — see "Data authority" below for the exact source of
-  each file. Do not quote a count or a record's current state from a derived
-  file without confirming it against its actual immediate source or
-  regenerating.
+- Derived artifacts can lag the source they were generated from — see "Data
+  authority" below for the exact source of each file; it is not always
+  `data/normalized_yaml/` directly. Do not quote a count or a record's
+  current state from a derived file without confirming it against its
+  actual immediate source or regenerating.
 - This repo's own local checkout can lag its `origin/main`; verify against
   `gh api` or a fresh `git fetch`, not the working tree on disk alone, before
   asserting what the repository currently contains.
@@ -30,7 +28,7 @@ and across concurrent sessions.
   verify before asserting, and say "unresolved" rather than force a plausible
   guess.
 - If a claim cannot be verified this session, say so ("I did not check X" /
-  "I don't know") instead of presenting a plausible guess as fact.
+  "I do not know") instead of presenting a plausible guess as fact.
 - Re-verify rather than repeat: restating an earlier claim in this same
   conversation without re-checking it is exactly the failure mode this rule
   exists to prevent.
@@ -50,6 +48,10 @@ and across concurrent sessions.
 - `pages/media/`: ignored CI output, generated from `data/merge_yaml/merged/`
   (not `data/normalized_yaml/` directly) — see `docs/DATA_LAYERS.md`. Never
   hand-edit or commit it.
+- Other generated page assets (`pages/index.html`, `pages/style.css`,
+  `pages/mermaid-init.js`, and per-domain page directories): ignored CI
+  outputs. Never hand-edit or commit them; see `docs/DATA_LAYERS.md` for the
+  full list.
 
 ## Required validation
 
