@@ -9,21 +9,24 @@ its procedure here.
 Never state a comparison, count, status, or historical claim without having
 verified it in the current conversation via a tool call (`gh`, `git`, `grep`,
 `Read`, etc.). "I recall," "this is typically the case," or a prior summary
-are not verification -- recipe data and repository state change between turns
+are not verification — recipe data and repository state change between turns
 and across concurrent sessions.
 
 - Prefer a live check over memory: `gh api`/`gh pr view`/`gh issue view` over
   a remembered issue list; `git log`/`git blame` over a recalled commit; a
   fresh `Read` over trusting an earlier read of the same file.
-- Derived artifacts (see "Data authority" below for the current list) can lag
-  the authoritative `data/normalized_yaml/` corpus they were generated from.
-  Do not quote a count or a record's current state from a derived file
-  without confirming it against the normalized source or regenerating.
+- `data/merge_yaml/merged/`, `app/data.js`, `pages/normalized/`, and
+  `pages/media/` (see "Data authority" below) are generated from the
+  authoritative `data/normalized_yaml/` corpus and can lag it. `data/raw_yaml/`
+  is a different case — it precedes `normalized_yaml` in the pipeline, not
+  generated from it (see "Data authority"). Do not quote a count or a
+  record's current state from any derived file without confirming it against
+  its actual source or regenerating.
 - This repo's own local checkout can lag its `origin/main`; verify against
   `gh api` or a fresh `git fetch`, not the working tree on disk alone, before
   asserting what the repository currently contains.
 - "Do not invent ontology IDs, labels, citations, or evidence" (see "Recipe
-  and schema editing rules" below) is a special case of this same rule --
+  and schema editing rules" below) is a special case of this same rule —
   verify before asserting, and say "unresolved" rather than force a plausible
   guess.
 - If a claim can't be verified this session, say so ("I did not check X" /
