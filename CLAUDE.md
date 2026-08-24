@@ -4,6 +4,35 @@ Use this file as the repository-level contract. Detailed workflows live in
 `.claude/skills/*/SKILL.md`; follow the relevant skill rather than duplicating
 its procedure here.
 
+## Fact-based answers only
+
+Never state a comparison, count, status, or historical claim without having
+verified it in the current conversation via a tool call (`gh`, `git`, `grep`,
+`Read`, etc.). "I recall," "this is typically the case," or a prior summary
+are not verification — recipe data and repository state change between turns
+and across concurrent sessions.
+
+- Prefer a live check over memory: `gh api`/`gh pr view`/`gh issue view` over
+  a remembered issue list; `git log`/`git blame` over a recalled commit; a
+  fresh `Read` over trusting an earlier read of the same file.
+- Derived artifacts can lag the source they were generated from — see "Data
+  authority" below for the exact source of each file; it is not always
+  `data/normalized_yaml/` directly. Do not quote a count or a record's
+  current state from a derived file without confirming it against its
+  actual immediate source or regenerating.
+- This repo's own local checkout can lag its `origin/main`; verify against
+  `gh api` or a fresh `git fetch`, not the working tree on disk alone, before
+  asserting what the repository currently contains.
+- "Do not invent ontology IDs, labels, citations, or evidence" (see "Recipe
+  and schema editing rules" below) is a special case of this same rule —
+  verify before asserting, and say "unresolved" rather than force a plausible
+  guess.
+- If a claim cannot be verified this session, say so ("I did not check X" /
+  "I do not know") instead of presenting a plausible guess as fact.
+- Re-verify rather than repeat: restating an earlier claim in this same
+  conversation without re-checking it is exactly the failure mode this rule
+  exists to prevent.
+
 ## Data authority
 
 - `data/raw/`: immutable upstream captures. Large payloads are ignored; source
@@ -14,9 +43,17 @@ its procedure here.
   instead of fixing normalized inputs or merge rules.
 - `src/culturemech/schema/culturemech.yaml`: authoritative schema. Generated
   dataclasses and schema documentation must change in the same commit.
-- `app/data.js`, `pages/normalized/`, `pages/media/`, and generated page assets
-  are ignored CI outputs. Never hand-edit or commit them; see
-  `docs/DATA_LAYERS.md`.
+- `app/data.js`, `pages/normalized/`: ignored CI outputs, generated directly
+  from `data/normalized_yaml/`. Never hand-edit or commit them.
+- `pages/media/`: ignored CI output, generated from `data/merge_yaml/merged/`
+  (not `data/normalized_yaml/` directly) — see `docs/DATA_LAYERS.md`. Never
+  hand-edit or commit it.
+- Other generated page assets (`pages/index.html`, `pages/style.css`, and
+  `pages/mermaid-init.js`): ignored CI outputs. Never hand-edit or commit
+  them; see `docs/DATA_LAYERS.md` for the full list. `pages/bacterial/`,
+  `pages/algae/`, `pages/archaea/`, `pages/fungal/`, and `pages/specialized/`
+  are legacy per-category output the renderer no longer writes (see
+  `.gitignore`) — blocked from re-add, not actively regenerated.
 
 ## Required validation
 
