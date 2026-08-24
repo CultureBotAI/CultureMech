@@ -15,16 +15,13 @@ and across concurrent sessions.
 - Prefer a live check over memory: `gh api`/`gh pr view`/`gh issue view` over
   a remembered issue list; `git log`/`git blame` over a recalled commit; a
   fresh `Read` over trusting an earlier read of the same file.
-- `app/data.js` and `pages/normalized/` (see "Data authority" below) are
-  generated directly from the authoritative `data/normalized_yaml/` corpus
-  and can lag it. `pages/media/` is one hop further downstream: it's
-  generated from `data/merge_yaml/merged/`, not `normalized_yaml/` directly
-  (per `docs/DATA_LAYERS.md`) — verify it against `merge_yaml/merged/`, which
-  can itself lag `normalized_yaml/` even when `pages/media/` is freshly
-  regenerated. `data/raw_yaml/` is a different case again — it precedes
-  `normalized_yaml` in the pipeline, not generated from it. Do not quote a
-  count or a record's current state from any derived file without confirming
-  it against its actual immediate source or regenerating.
+- Derived artifacts can lag the source they were generated from, and that
+  source is not always `data/normalized_yaml/` directly (`pages/media/`, for
+  example, is generated from `data/merge_yaml/merged/`, not from
+  `normalized_yaml/`) — see "Data authority" below for the exact source of
+  each file. Do not quote a count or a record's current state from a derived
+  file without confirming it against its actual immediate source or
+  regenerating.
 - This repo's own local checkout can lag its `origin/main`; verify against
   `gh api` or a fresh `git fetch`, not the working tree on disk alone, before
   asserting what the repository currently contains.
@@ -32,7 +29,7 @@ and across concurrent sessions.
   and schema editing rules" below) is a special case of this same rule —
   verify before asserting, and say "unresolved" rather than force a plausible
   guess.
-- If a claim can't be verified this session, say so ("I did not check X" /
+- If a claim cannot be verified this session, say so ("I did not check X" /
   "I don't know") instead of presenting a plausible guess as fact.
 - Re-verify rather than repeat: restating an earlier claim in this same
   conversation without re-checking it is exactly the failure mode this rule
@@ -48,9 +45,11 @@ and across concurrent sessions.
   instead of fixing normalized inputs or merge rules.
 - `src/culturemech/schema/culturemech.yaml`: authoritative schema. Generated
   dataclasses and schema documentation must change in the same commit.
-- `app/data.js`, `pages/normalized/`, `pages/media/`, and generated page assets
-  are ignored CI outputs. Never hand-edit or commit them; see
-  `docs/DATA_LAYERS.md`.
+- `app/data.js`, `pages/normalized/`: ignored CI outputs, generated directly
+  from `data/normalized_yaml/`. Never hand-edit or commit them.
+- `pages/media/`: ignored CI output, generated from `data/merge_yaml/merged/`
+  (not `data/normalized_yaml/` directly) — see `docs/DATA_LAYERS.md`. Never
+  hand-edit or commit it.
 
 ## Required validation
 
