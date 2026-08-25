@@ -82,12 +82,68 @@ def normalize_name(value: str) -> str:
     return re.sub(r"[\s\-_]+", " ", value.strip().casefold())
 
 
-def load_sssom(path: Path) -> tuple[dict[str, tuple[str, str]], str]:
+# Tokens in MIM's `other` column that are not synonyms of the ingredient. The
+# column mixes three things: CAS registry numbers, genuine aliases, and organism
+# trait annotations that leaked in (`carbon source: acetate`, `produces:
+# alanosine`, `electron acceptor: ...`). Only the middle group is a name.
+_CAS_TOKEN = re.compile(r"^cas\s*:", re.IGNORECASE)
+_TRAIT_TOKEN = re.compile(
+    r"^(?:produces|degradation|hydrolysis|reduction|oxidation|utilizes"
+    r"|electron\s+(?:acceptor|donor)|(?:carbon|nitrogen|sulfur|energy)\s+source"
+    r"|aerobic\s+catabolization|anaerobic\s*\w*|fermentation|assimilation"
+    r"|respiration)\s*:",
+    re.IGNORECASE,
+)
+
+
+def _synonyms(row: dict[str, str]) -> list[str]:
+    """The pipe-separated aliases in `other`, minus identifiers and annotations."""
+    out = []
+    for token in (row.get("other") or "").split("|"):
+        token = token.strip()
+        if not token or _CAS_TOKEN.match(token) or _TRAIT_TOKEN.match(token):
+            continue
+        out.append(token)
+    return out
+
+
+def load_sssom(path: Path, *, match_synonyms: bool = False
+               ) -> tuple[dict[str, tuple[str, str]], str]:
     """Return ``({normalized_name: (chebi_id, chebi_label)}, mapping_set_version)``.
 
     Names that exactMatch more than one CHEBI id are dropped: MIM has not settled
     them, so we have nothing to compare against and guessing would invent a
     verdict.
+
+    ``match_synonyms`` also indexes MIM's ``other`` aliases, which roughly doubles
+    the share of our ingredient names the audit can see (#304). Two rules keep it
+    honest, and both matter:
+
+      * an alias mapping to more than one CHEBI id is dropped, exactly as an
+        ambiguous label is — 351 of them;
+      * a LABEL always wins over an alias. 56 aliases contradict some row's
+        label, e.g. `threonine` is MIM's label for CHEBI:26986 and an alias of
+        CHEBI:16857. A label is MIM's primary assertion for that row; an alias is
+        secondary, so preferring the label resolves those without guessing.
+
+    It is OPT-IN and should stay that way. Coverage rises from 14.5% to 29.5% of
+    names, but the 74 extra DIVERGENT names it produces are almost all noise:
+
+        47 names (3,227 rows)  differ only in hydration state
+         3 names   (709 rows)  differ only in stereochemistry
+        24 names   (924 rows)  substantive -- and on inspection we are right in
+                               nearly all of them, e.g. `Calcium chloride
+                               anhydrous` where MIM's alias points at the
+                               hexahydrate
+
+    One is a contaminated alias rather than a disagreement: `Potassium dihydrogen
+    phosphate` appears in the `other` column of MIM's `CaSO4 x 2 H2O` row and on
+    no other, so it is unambiguous and wrong, and 233 of our rows would be told
+    they should be calcium sulfate dihydrate. The ambiguity rule cannot catch a
+    bad alias that occurs only once.
+
+    So this widens what the audit can SEE, which is useful for investigation, and
+    is deliberately not wired into the gate baselines.
     """
     if not path.exists():
         raise SystemExit(
@@ -97,6 +153,7 @@ def load_sssom(path: Path) -> tuple[dict[str, tuple[str, str]], str]:
 
     version = "unknown"
     candidates: dict[str, set[tuple[str, str]]] = defaultdict(set)
+    aliases: dict[str, set[tuple[str, str]]] = defaultdict(set)
     with path.open(encoding="utf-8") as handle:
         header_lines = []
         for line in handle:
@@ -120,10 +177,19 @@ def load_sssom(path: Path) -> tuple[dict[str, tuple[str, str]], str]:
             label = row.get("subject_label") or ""
             if not object_id.startswith("CHEBI:") or not label:
                 continue
-            candidates[normalize_name(label)].add((object_id, row.get("object_label") or ""))
+            entry = (object_id, row.get("object_label") or "")
+            candidates[normalize_name(label)].add(entry)
+            if match_synonyms:
+                for alias in _synonyms(row):
+                    aliases[normalize_name(alias)].add(entry)
 
-    return ({name: next(iter(ids)) for name, ids in candidates.items() if len(ids) == 1},
-            version)
+    resolved = {name: next(iter(ids)) for name, ids in candidates.items()
+                if len(ids) == 1}
+    for name, ids in aliases.items():
+        # Label wins, and an ambiguous alias is no verdict at all.
+        if name not in candidates and len(ids) == 1:
+            resolved[name] = next(iter(ids))
+    return resolved, version
 
 
 def our_chebi(row: dict[str, Any]) -> tuple[str | None, str]:
@@ -186,10 +252,10 @@ def collect(normalized_dir: Path) -> dict[str, Counter]:
     return by_name, display, labels
 
 
-def audit(normalized_dir: Path, sssom_path: Path
+def audit(normalized_dir: Path, sssom_path: Path, *, match_synonyms: bool = False
           ) -> tuple[list[dict[str, str]], str, dict[str, int]]:
     """Findings, the SSSOM version, and how much of the corpus was comparable."""
-    mim, version = load_sssom(sssom_path)
+    mim, version = load_sssom(sssom_path, match_synonyms=match_synonyms)
     by_name, display, labels = collect(normalized_dir)
 
     # Coverage is part of the result, not a footnote. MIM's exactMatch labels
@@ -266,6 +332,12 @@ def main(argv: list[str] | None = None) -> int:
                         help="MIM's published ingredient SSSOM")
     parser.add_argument("--out", type=Path, default=DEFAULT_OUT)
     parser.add_argument(
+        "--match-synonyms",
+        action="store_true",
+        help="Also match MIM's `other` aliases, not just subject_label. Roughly "
+             "doubles the share of our names the audit can see (#304).",
+    )
+    parser.add_argument(
         "--max-divergent", type=int, default=None,
         help="Exit non-zero when more than N ingredient NAMES diverge from MIM. "
              "Counted in names, not rows: one regrounding decision fixes every "
@@ -279,7 +351,8 @@ def main(argv: list[str] | None = None) -> int:
     )
     args = parser.parse_args(argv if argv is not None else sys.argv[1:])
 
-    rows, version, coverage = audit(args.normalized_dir, args.sssom)
+    rows, version, coverage = audit(args.normalized_dir, args.sssom,
+                                    match_synonyms=args.match_synonyms)
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     with args.out.open("w", newline="", encoding="utf-8") as handle:

@@ -252,3 +252,70 @@ def test_the_gate_fails_when_a_baseline_is_exceeded(aud, tmp_path):
 def test_a_missing_sssom_fails_with_a_usable_message(aud, tmp_path):
     with pytest.raises(SystemExit, match="MIM SSSOM not found"):
         aud.audit(tmp_path, tmp_path / "absent.tsv")
+
+
+# --- synonym matching, opt-in (#304) --------------------------------------
+
+
+def _sssom_with_other(tmp_path: Path, rows):
+    """SSSOM fixture carrying the `other` alias column."""
+    path = tmp_path / "ingredient_mappings.sssom.tsv"
+    header = SSSOM_HEADER + (
+        "subject_id\tsubject_label\tpredicate_id\tobject_id\tobject_label\tother\n"
+    )
+    body = "".join(
+        f"MIM:{label.replace(' ', '_')}\t{label}\tskos:exactMatch\t{obj}\t{obj_label}\t{other}\n"
+        for label, obj, obj_label, other in rows
+    )
+    path.write_text(header + body)
+    return path
+
+
+def test_synonyms_are_ignored_unless_asked_for(aud, tmp_path):
+    sssom = _sssom_with_other(tmp_path, [("KH2PO4", "CHEBI:63036", "potassium dihydrogen phosphate", "MKP")])
+    index, _ = aud.load_sssom(sssom)
+    assert "mkp" not in index
+    index, _ = aud.load_sssom(sssom, match_synonyms=True)
+    assert index["mkp"][0] == "CHEBI:63036"
+
+
+def test_cas_numbers_are_not_synonyms(aud, tmp_path):
+    """`other` mixes aliases with CAS registry ids; an id is not a name."""
+    sssom = _sssom_with_other(tmp_path, [("D-lyxose", "CHEBI:62318", "D-lyxose", "CAS:1114-34-7|D-Lyx")])
+    index, _ = aud.load_sssom(sssom, match_synonyms=True)
+    assert "d lyx" in index
+    assert not any(k.startswith("cas") for k in index)
+
+
+def test_trait_annotations_in_other_are_not_synonyms(aud, tmp_path):
+    """MIM's `other` also carries organism traits that leaked in — `carbon
+    source: acetate` is not another name for the ingredient."""
+    sssom = _sssom_with_other(
+        tmp_path,
+        [("Acetate", "CHEBI:30089", "acetate", "carbon source: acetate|produces: alanosine|AcOH")],
+    )
+    index, _ = aud.load_sssom(sssom, match_synonyms=True)
+    assert "acoh" in index
+    assert not any("carbon source" in k or "produces" in k for k in index)
+
+
+def test_an_alias_mapping_two_ways_is_dropped(aud, tmp_path):
+    """Same rule as an ambiguous label: MIM has not settled it."""
+    sssom = _sssom_with_other(
+        tmp_path,
+        [("A", "CHEBI:1", "a", "shared"), ("B", "CHEBI:2", "b", "shared")],
+    )
+    index, _ = aud.load_sssom(sssom, match_synonyms=True)
+    assert "shared" not in index
+
+
+def test_a_label_beats_an_alias(aud, tmp_path):
+    """56 aliases contradict some row's label — `threonine` is MIM's label for
+    CHEBI:26986 and an alias of CHEBI:16857. The label is the primary assertion."""
+    sssom = _sssom_with_other(
+        tmp_path,
+        [("threonine", "CHEBI:26986", "threonine", ""),
+         ("L-threonine", "CHEBI:16857", "L-threonine", "threonine")],
+    )
+    index, _ = aud.load_sssom(sssom, match_synonyms=True)
+    assert index["threonine"][0] == "CHEBI:26986"
