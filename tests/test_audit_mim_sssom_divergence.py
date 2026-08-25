@@ -6,6 +6,7 @@ and because this is a ratchet, a manufactured disagreement gets baked into the
 baseline. So the tests concentrate on the two places the join can lie: which slot
 holds our CHEBI, and which SSSOM predicates count as a grounding verdict.
 """
+
 from __future__ import annotations
 
 import importlib.util
@@ -75,11 +76,20 @@ def test_a_mediadive_term_id_does_not_hide_the_chebi_grounding(aud, tmp_path):
     does not exist.
     """
     sssom = _sssom(tmp_path, [("Glucose", "skos:exactMatch", "CHEBI:17234", "glucose")])
-    corpus = _corpus(tmp_path, [{"ingredients": [{
-        "preferred_term": "Glucose",
-        "term": {"id": "mediadive.compound:5", "label": "Glucose"},
-        "chebi_term": {"id": "CHEBI:17234", "label": "glucose"},
-    }]}])
+    corpus = _corpus(
+        tmp_path,
+        [
+            {
+                "ingredients": [
+                    {
+                        "preferred_term": "Glucose",
+                        "term": {"id": "mediadive.compound:5", "label": "Glucose"},
+                        "chebi_term": {"id": "CHEBI:17234", "label": "glucose"},
+                    }
+                ]
+            }
+        ],
+    )
 
     rows, version, _ = aud.audit(corpus, sssom)
     assert rows == []
@@ -89,17 +99,37 @@ def test_a_mediadive_term_id_does_not_hide_the_chebi_grounding(aud, tmp_path):
 def test_a_chebi_in_the_term_slot_is_still_found(aud, tmp_path):
     """Records without a MediaDive lineage put CHEBI directly in `term`."""
     sssom = _sssom(tmp_path, [("Glucose", "skos:exactMatch", "CHEBI:17234", "glucose")])
-    corpus = _corpus(tmp_path, [{"ingredients": [
-        {"preferred_term": "Glucose", "term": {"id": "CHEBI:17234", "label": "glucose"}}]}])
+    corpus = _corpus(
+        tmp_path,
+        [
+            {
+                "ingredients": [
+                    {"preferred_term": "Glucose", "term": {"id": "CHEBI:17234", "label": "glucose"}}
+                ]
+            }
+        ],
+    )
     rows, _, _ = aud.audit(corpus, sssom)
     assert rows == []
 
 
 def test_a_real_divergence_is_reported(aud, tmp_path):
-    sssom = _sssom(tmp_path, [("EDTA", "skos:exactMatch", "CHEBI:4735",
-                               "ethylenediaminetetraacetic acid")])
-    corpus = _corpus(tmp_path, [{"ingredients": [
-        {"preferred_term": "EDTA", "chebi_term": {"id": "CHEBI:64755", "label": "EDTA(2-)"}}]}])
+    sssom = _sssom(
+        tmp_path, [("EDTA", "skos:exactMatch", "CHEBI:4735", "ethylenediaminetetraacetic acid")]
+    )
+    corpus = _corpus(
+        tmp_path,
+        [
+            {
+                "ingredients": [
+                    {
+                        "preferred_term": "EDTA",
+                        "chebi_term": {"id": "CHEBI:64755", "label": "EDTA(2-)"},
+                    }
+                ]
+            }
+        ],
+    )
     rows, _, _ = aud.audit(corpus, sssom)
     finding = _by_finding(rows)["DIVERGENT"]
     assert finding["mim_id"] == "CHEBI:4735"
@@ -110,8 +140,7 @@ def test_a_real_divergence_is_reported(aud, tmp_path):
 # --- which SSSOM predicates count -----------------------------------------
 
 
-@pytest.mark.parametrize("predicate",
-                         ["skos:narrowMatch", "skos:broadMatch", "skos:closeMatch"])
+@pytest.mark.parametrize("predicate", ["skos:narrowMatch", "skos:broadMatch", "skos:closeMatch"])
 def test_only_exact_matches_are_treated_as_a_grounding_verdict(aud, tmp_path, predicate):
     """A narrowMatch asserts a relationship, not an identity.
 
@@ -120,28 +149,69 @@ def test_only_exact_matches_are_treated_as_a_grounding_verdict(aud, tmp_path, pr
     sensible CHEBI we hold.
     """
     sssom = _sssom(tmp_path, [("EDTA", predicate, "CHEBI:4735", "EDTA acid")])
-    corpus = _corpus(tmp_path, [{"ingredients": [
-        {"preferred_term": "EDTA", "chebi_term": {"id": "CHEBI:64755", "label": "EDTA(2-)"}}]}])
+    corpus = _corpus(
+        tmp_path,
+        [
+            {
+                "ingredients": [
+                    {
+                        "preferred_term": "EDTA",
+                        "chebi_term": {"id": "CHEBI:64755", "label": "EDTA(2-)"},
+                    }
+                ]
+            }
+        ],
+    )
     assert aud.audit(corpus, sssom)[0] == []
 
 
 def test_a_name_mim_maps_two_ways_is_skipped_not_guessed(aud, tmp_path):
     """MIM has not settled it, so there is no verdict to compare against."""
-    sssom = _sssom(tmp_path, [
-        ("Citrate", "skos:exactMatch", "CHEBI:16947", "citrate(3-)"),
-        ("Citrate", "skos:exactMatch", "CHEBI:30769", "citric acid"),
-    ])
-    corpus = _corpus(tmp_path, [{"ingredients": [
-        {"preferred_term": "Citrate", "chebi_term": {"id": "CHEBI:99999", "label": "x"}}]}])
+    sssom = _sssom(
+        tmp_path,
+        [
+            ("Citrate", "skos:exactMatch", "CHEBI:16947", "citrate(3-)"),
+            ("Citrate", "skos:exactMatch", "CHEBI:30769", "citric acid"),
+        ],
+    )
+    corpus = _corpus(
+        tmp_path,
+        [
+            {
+                "ingredients": [
+                    {"preferred_term": "Citrate", "chebi_term": {"id": "CHEBI:99999", "label": "x"}}
+                ]
+            }
+        ],
+    )
     assert aud.audit(corpus, sssom)[0] == []
 
 
 def test_a_non_chebi_object_is_not_a_chebi_verdict(aud, tmp_path):
-    sssom = _sssom(tmp_path, [("Dry cow-manure", "skos:exactMatch",
-                               "kgmicrobe.ingredient:dry_cow-manure", "Dry cow-manure")])
-    corpus = _corpus(tmp_path, [{"ingredients": [
-        {"preferred_term": "Dry cow-manure",
-         "chebi_term": {"id": "CHEBI:12345", "label": "x"}}]}])
+    sssom = _sssom(
+        tmp_path,
+        [
+            (
+                "Dry cow-manure",
+                "skos:exactMatch",
+                "kgmicrobe.ingredient:dry_cow-manure",
+                "Dry cow-manure",
+            )
+        ],
+    )
+    corpus = _corpus(
+        tmp_path,
+        [
+            {
+                "ingredients": [
+                    {
+                        "preferred_term": "Dry cow-manure",
+                        "chebi_term": {"id": "CHEBI:12345", "label": "x"},
+                    }
+                ]
+            }
+        ],
+    )
     assert aud.audit(corpus, sssom)[0] == []
 
 
@@ -152,12 +222,27 @@ def test_one_name_grounded_two_ways_is_an_internal_split(aud, tmp_path):
     """Independent of MIM, and the class most often a plain mistake:
     `dipotassium phosphate` is CHEBI:131527 on 475 rows and CHEBI:63036 on 1."""
     sssom = _sssom(tmp_path, [])
-    corpus = _corpus(tmp_path, [
-        {"ingredients": [{"preferred_term": "Vitamin B12",
-                          "chebi_term": {"id": "CHEBI:17439", "label": "a"}}]},
-        {"ingredients": [{"preferred_term": "vitamin b12",
-                          "chebi_term": {"id": "CHEBI:176843", "label": "b"}}]},
-    ])
+    corpus = _corpus(
+        tmp_path,
+        [
+            {
+                "ingredients": [
+                    {
+                        "preferred_term": "Vitamin B12",
+                        "chebi_term": {"id": "CHEBI:17439", "label": "a"},
+                    }
+                ]
+            },
+            {
+                "ingredients": [
+                    {
+                        "preferred_term": "vitamin b12",
+                        "chebi_term": {"id": "CHEBI:176843", "label": "b"},
+                    }
+                ]
+            },
+        ],
+    )
     finding = _by_finding(aud.audit(corpus, sssom)[0])["INTERNAL_SPLIT"]
     assert finding["rows"] == "2"
     assert "CHEBI:17439" in finding["our_ids"] and "CHEBI:176843" in finding["our_ids"]
@@ -165,14 +250,28 @@ def test_one_name_grounded_two_ways_is_an_internal_split(aud, tmp_path):
 
 
 def test_a_split_says_whether_mim_adjudicates_it(aud, tmp_path):
-    sssom = _sssom(tmp_path, [("Citric Acid", "skos:exactMatch", "CHEBI:30769",
-                               "citric acid")])
-    corpus = _corpus(tmp_path, [
-        {"ingredients": [{"preferred_term": "Citric Acid",
-                          "chebi_term": {"id": "CHEBI:30769", "label": "citric acid"}}]},
-        {"ingredients": [{"preferred_term": "Citric acid",
-                          "chebi_term": {"id": "CHEBI:53258", "label": "other"}}]},
-    ])
+    sssom = _sssom(tmp_path, [("Citric Acid", "skos:exactMatch", "CHEBI:30769", "citric acid")])
+    corpus = _corpus(
+        tmp_path,
+        [
+            {
+                "ingredients": [
+                    {
+                        "preferred_term": "Citric Acid",
+                        "chebi_term": {"id": "CHEBI:30769", "label": "citric acid"},
+                    }
+                ]
+            },
+            {
+                "ingredients": [
+                    {
+                        "preferred_term": "Citric acid",
+                        "chebi_term": {"id": "CHEBI:53258", "label": "other"},
+                    }
+                ]
+            },
+        ],
+    )
     finding = _by_finding(aud.audit(corpus, sssom)[0])["INTERNAL_SPLIT"]
     assert "MIM matches one of them" in finding["detail"]
 
@@ -193,12 +292,21 @@ def test_a_partly_grounded_name_still_reports_its_bare_rows(aud, tmp_path):
     the cheapest possible fix, since MIM has decided and most rows already agree.
     """
     sssom = _sssom(tmp_path, [("Biotin", "skos:exactMatch", "CHEBI:15956", "biotin")])
-    corpus = _corpus(tmp_path, [
-        {"ingredients": [{"preferred_term": "Biotin",
-                          "chebi_term": {"id": "CHEBI:15956", "label": "biotin"}}]},
-        {"ingredients": [{"preferred_term": "biotin"}]},
-        {"ingredients": [{"preferred_term": "Biotin"}]},
-    ])
+    corpus = _corpus(
+        tmp_path,
+        [
+            {
+                "ingredients": [
+                    {
+                        "preferred_term": "Biotin",
+                        "chebi_term": {"id": "CHEBI:15956", "label": "biotin"},
+                    }
+                ]
+            },
+            {"ingredients": [{"preferred_term": "biotin"}]},
+            {"ingredients": [{"preferred_term": "Biotin"}]},
+        ],
+    )
     finding = _by_finding(aud.audit(corpus, sssom)[0])["MISSING_GROUNDING"]
     assert finding["rows"] == "2"
     assert "1 are grounded" in finding["detail"]
@@ -219,15 +327,34 @@ def test_hydrates_are_not_folded_into_their_anhydrous_form(aud, tmp_path):
 # --- reagents live in three places ----------------------------------------
 
 
-@pytest.mark.parametrize("doc", [
-    {"ingredients": [{"preferred_term": "EDTA",
-                      "chebi_term": {"id": "CHEBI:64755", "label": "EDTA(2-)"}}]},
-    {"composition": [{"preferred_term": "EDTA",
-                      "chebi_term": {"id": "CHEBI:64755", "label": "EDTA(2-)"}}]},
-    {"solutions": [{"preferred_term": "S", "composition": [
-        {"preferred_term": "EDTA",
-         "chebi_term": {"id": "CHEBI:64755", "label": "EDTA(2-)"}}]}]},
-])
+@pytest.mark.parametrize(
+    "doc",
+    [
+        {
+            "ingredients": [
+                {"preferred_term": "EDTA", "chebi_term": {"id": "CHEBI:64755", "label": "EDTA(2-)"}}
+            ]
+        },
+        {
+            "composition": [
+                {"preferred_term": "EDTA", "chebi_term": {"id": "CHEBI:64755", "label": "EDTA(2-)"}}
+            ]
+        },
+        {
+            "solutions": [
+                {
+                    "preferred_term": "S",
+                    "composition": [
+                        {
+                            "preferred_term": "EDTA",
+                            "chebi_term": {"id": "CHEBI:64755", "label": "EDTA(2-)"},
+                        }
+                    ],
+                }
+            ]
+        },
+    ],
+)
 def test_every_reagent_location_is_compared(aud, tmp_path, doc):
     """Stock-solution records keep reagents in a top-level `composition:`, so an
     ingredients-only comparison would silently exempt them from the gate."""
@@ -241,10 +368,24 @@ def test_every_reagent_location_is_compared(aud, tmp_path, doc):
 
 def test_the_gate_fails_when_a_baseline_is_exceeded(aud, tmp_path):
     sssom = _sssom(tmp_path, [("EDTA", "skos:exactMatch", "CHEBI:4735", "EDTA acid")])
-    corpus = _corpus(tmp_path, [{"ingredients": [
-        {"preferred_term": "EDTA", "chebi_term": {"id": "CHEBI:64755", "label": "x"}}]}])
-    argv = ["--normalized-dir", str(corpus), "--sssom", str(sssom),
-            "--out", str(tmp_path / "r.tsv")]
+    corpus = _corpus(
+        tmp_path,
+        [
+            {
+                "ingredients": [
+                    {"preferred_term": "EDTA", "chebi_term": {"id": "CHEBI:64755", "label": "x"}}
+                ]
+            }
+        ],
+    )
+    argv = [
+        "--normalized-dir",
+        str(corpus),
+        "--sssom",
+        str(sssom),
+        "--out",
+        str(tmp_path / "r.tsv"),
+    ]
     assert aud.main([*argv, "--max-divergent", "1"]) == 0
     assert aud.main([*argv, "--max-divergent", "0"]) == 1
 
@@ -272,7 +413,9 @@ def _sssom_with_other(tmp_path: Path, rows):
 
 
 def test_synonyms_are_ignored_unless_asked_for(aud, tmp_path):
-    sssom = _sssom_with_other(tmp_path, [("KH2PO4", "CHEBI:63036", "potassium dihydrogen phosphate", "MKP")])
+    sssom = _sssom_with_other(
+        tmp_path, [("KH2PO4", "CHEBI:63036", "potassium dihydrogen phosphate", "MKP")]
+    )
     index, _ = aud.load_sssom(sssom)
     assert "mkp" not in index
     index, _ = aud.load_sssom(sssom, match_synonyms=True)
@@ -281,7 +424,9 @@ def test_synonyms_are_ignored_unless_asked_for(aud, tmp_path):
 
 def test_cas_numbers_are_not_synonyms(aud, tmp_path):
     """`other` mixes aliases with CAS registry ids; an id is not a name."""
-    sssom = _sssom_with_other(tmp_path, [("D-lyxose", "CHEBI:62318", "D-lyxose", "CAS:1114-34-7|D-Lyx")])
+    sssom = _sssom_with_other(
+        tmp_path, [("D-lyxose", "CHEBI:62318", "D-lyxose", "CAS:1114-34-7|D-Lyx")]
+    )
     index, _ = aud.load_sssom(sssom, match_synonyms=True)
     assert "d lyx" in index
     assert not any(k.startswith("cas") for k in index)
@@ -314,8 +459,10 @@ def test_a_label_beats_an_alias(aud, tmp_path):
     CHEBI:26986 and an alias of CHEBI:16857. The label is the primary assertion."""
     sssom = _sssom_with_other(
         tmp_path,
-        [("threonine", "CHEBI:26986", "threonine", ""),
-         ("L-threonine", "CHEBI:16857", "L-threonine", "threonine")],
+        [
+            ("threonine", "CHEBI:26986", "threonine", ""),
+            ("L-threonine", "CHEBI:16857", "L-threonine", "threonine"),
+        ],
     )
     index, _ = aud.load_sssom(sssom, match_synonyms=True)
     assert index["threonine"][0] == "CHEBI:26986"

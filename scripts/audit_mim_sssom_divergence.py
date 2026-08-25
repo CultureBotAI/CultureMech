@@ -49,6 +49,7 @@ Read-only. Usage::
 
     just audit-mim-sssom
 """
+
 from __future__ import annotations
 
 import argparse
@@ -63,9 +64,10 @@ import yaml
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 NORMALIZED = REPO_ROOT / "data" / "normalized_yaml"
-DEFAULT_SSSOM = REPO_ROOT.parent / "MediaIngredientMech" / "mappings" / "ingredient_mappings.sssom.tsv"
-DEFAULT_OUT = (REPO_ROOT / "data" / "import_tracking" / "reports"
-               / "mim_sssom_divergence.tsv")
+DEFAULT_SSSOM = (
+    REPO_ROOT.parent / "MediaIngredientMech" / "mappings" / "ingredient_mappings.sssom.tsv"
+)
+DEFAULT_OUT = REPO_ROOT / "data" / "import_tracking" / "reports" / "mim_sssom_divergence.tsv"
 
 EXACT_MATCH = "skos:exactMatch"
 FINDINGS = ("DIVERGENT", "INTERNAL_SPLIT", "MISSING_GROUNDING")
@@ -107,8 +109,9 @@ def _synonyms(row: dict[str, str]) -> list[str]:
     return out
 
 
-def load_sssom(path: Path, *, match_synonyms: bool = False
-               ) -> tuple[dict[str, tuple[str, str]], str]:
+def load_sssom(
+    path: Path, *, match_synonyms: bool = False
+) -> tuple[dict[str, tuple[str, str]], str]:
     """Return ``({normalized_name: (chebi_id, chebi_label)}, mapping_set_version)``.
 
     Names that exactMatch more than one CHEBI id are dropped: MIM has not settled
@@ -183,8 +186,7 @@ def load_sssom(path: Path, *, match_synonyms: bool = False
                 for alias in _synonyms(row):
                     aliases[normalize_name(alias)].add(entry)
 
-    resolved = {name: next(iter(ids)) for name, ids in candidates.items()
-                if len(ids) == 1}
+    resolved = {name: next(iter(ids)) for name, ids in candidates.items() if len(ids) == 1}
     for name, ids in aliases.items():
         # Label wins, and an ambiguous alias is no verdict at all.
         if name not in candidates and len(ids) == 1:
@@ -252,8 +254,9 @@ def collect(normalized_dir: Path) -> dict[str, Counter]:
     return by_name, display, labels
 
 
-def audit(normalized_dir: Path, sssom_path: Path, *, match_synonyms: bool = False
-          ) -> tuple[list[dict[str, str]], str, dict[str, int]]:
+def audit(
+    normalized_dir: Path, sssom_path: Path, *, match_synonyms: bool = False
+) -> tuple[list[dict[str, str]], str, dict[str, int]]:
     """Findings, the SSSOM version, and how much of the corpus was comparable."""
     mim, version = load_sssom(sssom_path, match_synonyms=match_synonyms)
     by_name, display, labels = collect(normalized_dir)
@@ -267,8 +270,9 @@ def audit(normalized_dir: Path, sssom_path: Path, *, match_synonyms: bool = Fals
         "our_names": len(by_name),
         "matched_names": sum(1 for name in by_name if name in mim),
         "our_rows": sum(sum(counts.values()) for counts in by_name.values()),
-        "matched_rows": sum(sum(counts.values())
-                            for name, counts in by_name.items() if name in mim),
+        "matched_rows": sum(
+            sum(counts.values()) for name, counts in by_name.items() if name in mim
+        ),
     }
 
     def described(chebi_ids) -> str:
@@ -280,32 +284,48 @@ def audit(normalized_dir: Path, sssom_path: Path, *, match_synonyms: bool = Fals
         ungrounded = counts.get(None, 0)
         mim_entry = mim.get(key)
         mim_id, mim_label = mim_entry if mim_entry else ("", "")
-        base = {"ingredient": display[key], "mim_id": mim_id, "mim_label": mim_label,
-                "our_label_asserted": described(
-                    sorted(grounded, key=lambda c: -grounded[c]))}
+        base = {
+            "ingredient": display[key],
+            "mim_id": mim_id,
+            "mim_label": mim_label,
+            "our_label_asserted": described(sorted(grounded, key=lambda c: -grounded[c])),
+        }
 
         if len(grounded) > 1:
-            ours = "|".join(f"{cid}={n}" for cid, n in
-                            sorted(grounded.items(), key=lambda kv: -kv[1]))
+            ours = "|".join(
+                f"{cid}={n}" for cid, n in sorted(grounded.items(), key=lambda kv: -kv[1])
+            )
             agrees = mim_id in grounded if mim_id else False
-            rows.append({
-                **base, "finding": "INTERNAL_SPLIT", "our_ids": ours,
-                "rows": str(sum(grounded.values())),
-                "detail": (f"{len(grounded)} CHEBI ids for one name; "
-                           + ("MIM matches one of them" if agrees
-                              else "MIM has no opinion" if not mim_id
-                              else "MIM matches none of them")),
-            })
+            rows.append(
+                {
+                    **base,
+                    "finding": "INTERNAL_SPLIT",
+                    "our_ids": ours,
+                    "rows": str(sum(grounded.values())),
+                    "detail": (
+                        f"{len(grounded)} CHEBI ids for one name; "
+                        + (
+                            "MIM matches one of them"
+                            if agrees
+                            else "MIM has no opinion" if not mim_id else "MIM matches none of them"
+                        )
+                    ),
+                }
+            )
 
         if mim_id and grounded:
             divergent = {cid: n for cid, n in grounded.items() if cid != mim_id}
             if divergent and len(grounded) == 1:
                 cid, n = next(iter(divergent.items()))
-                rows.append({
-                    **base, "finding": "DIVERGENT", "our_ids": f"{cid}={n}",
-                    "rows": str(n),
-                    "detail": "we and MIM both ground this name, to different ids",
-                })
+                rows.append(
+                    {
+                        **base,
+                        "finding": "DIVERGENT",
+                        "our_ids": f"{cid}={n}",
+                        "rows": str(n),
+                        "detail": "we and MIM both ground this name, to different ids",
+                    }
+                )
 
         if mim_id and ungrounded:
             # Deliberately NOT `and not grounded`. 184 names carry some grounded
@@ -314,52 +334,76 @@ def audit(normalized_dir: Path, sssom_path: Path, *, match_synonyms: bool = Fals
             # Requiring the name to be wholly ungrounded hid 96 rows that are the
             # cheapest possible fix: MIM has already decided, and most rows of the
             # name already agree.
-            rows.append({
-                **base, "finding": "MISSING_GROUNDING", "our_ids": "",
-                "rows": str(ungrounded),
-                "detail": ("MIM grounds this name and we do not" if not grounded
-                           else f"MIM grounds this name; {ungrounded} row(s) of it "
-                                f"are bare while {sum(grounded.values())} are grounded"),
-            })
+            rows.append(
+                {
+                    **base,
+                    "finding": "MISSING_GROUNDING",
+                    "our_ids": "",
+                    "rows": str(ungrounded),
+                    "detail": (
+                        "MIM grounds this name and we do not"
+                        if not grounded
+                        else f"MIM grounds this name; {ungrounded} row(s) of it "
+                        f"are bare while {sum(grounded.values())} are grounded"
+                    ),
+                }
+            )
     return rows, version, coverage
 
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
-        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
     parser.add_argument("--normalized-dir", type=Path, default=NORMALIZED)
-    parser.add_argument("--sssom", type=Path, default=DEFAULT_SSSOM,
-                        help="MIM's published ingredient SSSOM")
+    parser.add_argument(
+        "--sssom", type=Path, default=DEFAULT_SSSOM, help="MIM's published ingredient SSSOM"
+    )
     parser.add_argument("--out", type=Path, default=DEFAULT_OUT)
     parser.add_argument(
         "--match-synonyms",
         action="store_true",
         help="Also match MIM's `other` aliases, not just subject_label. Roughly "
-             "doubles the share of our names the audit can see (#304).",
+        "doubles the share of our names the audit can see (#304).",
     )
     parser.add_argument(
-        "--max-divergent", type=int, default=None,
+        "--max-divergent",
+        type=int,
+        default=None,
         help="Exit non-zero when more than N ingredient NAMES diverge from MIM. "
-             "Counted in names, not rows: one regrounding decision fixes every "
-             "row of a name, so names are what a curator actually works through.",
+        "Counted in names, not rows: one regrounding decision fixes every "
+        "row of a name, so names are what a curator actually works through.",
     )
     parser.add_argument(
-        "--max-split", type=int, default=None,
+        "--max-split",
+        type=int,
+        default=None,
         help="Exit non-zero when more than N names carry several CHEBI ids in our "
-             "own corpus. Independent of MIM, and the class most often a plain "
-             "mistake.",
+        "own corpus. Independent of MIM, and the class most often a plain "
+        "mistake.",
     )
     args = parser.parse_args(argv if argv is not None else sys.argv[1:])
 
-    rows, version, coverage = audit(args.normalized_dir, args.sssom,
-                                    match_synonyms=args.match_synonyms)
+    rows, version, coverage = audit(
+        args.normalized_dir, args.sssom, match_synonyms=args.match_synonyms
+    )
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     with args.out.open("w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(
-            handle, delimiter="\t",
-            fieldnames=["finding", "ingredient", "our_ids", "our_label_asserted", "mim_id", "mim_label",
-                        "rows", "detail"])
+            handle,
+            delimiter="\t",
+            fieldnames=[
+                "finding",
+                "ingredient",
+                "our_ids",
+                "our_label_asserted",
+                "mim_id",
+                "mim_label",
+                "rows",
+                "detail",
+            ],
+        )
         writer.writeheader()
         writer.writerows(rows)
 
@@ -371,36 +415,47 @@ def main(argv: list[str] | None = None) -> int:
     print(f"MIM SSSOM: {args.sssom}")
     print(f"  mapping_set_version: {version}\n")
     for finding in FINDINGS:
-        print(f"  {finding:18s} {tally.get(finding, 0):4d} names "
-              f"({affected.get(finding, 0):,} rows)")
+        print(
+            f"  {finding:18s} {tally.get(finding, 0):4d} names "
+            f"({affected.get(finding, 0):,} rows)"
+        )
 
     name_pct = 100 * coverage["matched_names"] / max(coverage["our_names"], 1)
     row_pct = 100 * coverage["matched_rows"] / max(coverage["our_rows"], 1)
-    print(f"\n  comparable: {coverage['matched_names']:,} of "
-          f"{coverage['our_names']:,} names ({name_pct:.1f}%), "
-          f"{coverage['matched_rows']:,} of {coverage['our_rows']:,} rows "
-          f"({row_pct:.1f}%)")
-    print("  the rest are names MIM's exactMatch labels do not cover, so this "
-          "gate cannot see them")
+    print(
+        f"\n  comparable: {coverage['matched_names']:,} of "
+        f"{coverage['our_names']:,} names ({name_pct:.1f}%), "
+        f"{coverage['matched_rows']:,} of {coverage['our_rows']:,} rows "
+        f"({row_pct:.1f}%)"
+    )
+    print(
+        "  the rest are names MIM's exactMatch labels do not cover, so this " "gate cannot see them"
+    )
 
-    relative = (args.out.relative_to(REPO_ROOT)
-                if args.out.is_relative_to(REPO_ROOT) else args.out)
+    relative = args.out.relative_to(REPO_ROOT) if args.out.is_relative_to(REPO_ROOT) else args.out
     print(f"\nWrote {relative}")
-    print("\nRead-only. Divergence runs BOTH ways — #256 records cases where our "
-          "hydrate is the better term and cases where MIM's neutral acid is — so "
-          "this reports rather than rewrites.")
+    print(
+        "\nRead-only. Divergence runs BOTH ways — #256 records cases where our "
+        "hydrate is the better term and cases where MIM's neutral acid is — so "
+        "this reports rather than rewrites."
+    )
 
     failed = False
     if args.max_divergent is not None and tally.get("DIVERGENT", 0) > args.max_divergent:
-        print(f"\nFAIL: {tally['DIVERGENT']} divergent names > baseline "
-              f"{args.max_divergent}. A new grounding disagrees with MIM's "
-              f"published SSSOM; reconcile it or agree the change with MIM.",
-              file=sys.stderr)
+        print(
+            f"\nFAIL: {tally['DIVERGENT']} divergent names > baseline "
+            f"{args.max_divergent}. A new grounding disagrees with MIM's "
+            f"published SSSOM; reconcile it or agree the change with MIM.",
+            file=sys.stderr,
+        )
         failed = True
     if args.max_split is not None and tally.get("INTERNAL_SPLIT", 0) > args.max_split:
-        print(f"\nFAIL: {tally['INTERNAL_SPLIT']} names carry several CHEBI ids > "
-              f"baseline {args.max_split}. One name has been grounded two ways "
-              f"within our own corpus.", file=sys.stderr)
+        print(
+            f"\nFAIL: {tally['INTERNAL_SPLIT']} names carry several CHEBI ids > "
+            f"baseline {args.max_split}. One name has been grounded two ways "
+            f"within our own corpus.",
+            file=sys.stderr,
+        )
         failed = True
     return 1 if failed else 0
 
