@@ -1,0 +1,69 @@
+name: vendored-sync
+
+# Claw-authoritative cross-repository durability guard. The immutable commit in
+# scripts/.vendored_canon_ref identifies CultureBotAI/culturebotai-claw's single
+# artifact manifest. The dependency-free checker validates the manifest's
+# checksums, then compares every CultureMech-governed path byte-for-byte and
+# verifies its safe executable mode.
+#
+# DELIBERATELY NO `paths:` FILTER. The canonical artifact list is data in the
+# pinned claw manifest, while GitHub evaluates path filters before checkout.
+# A second hand-maintained list here could omit a governed file and let its PR
+# merge without this gate. The checker uses only the Python standard library;
+# no provider, model, credential, or paid API is involved.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  # PR runs share a ref group and may supersede one another. Every non-PR run
+  # gets a unique group so GitHub cannot replace a pending main-commit verdict.
+  group: vendored-sync-${{ github.event_name == 'pull_request' && github.ref || github.run_id }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  vendored-sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify governed files against pinned claw manifest
+        run: |
+          set -uo pipefail
+          for attempt in 1 2 3; do
+            status=0
+            bash scripts/check_vendored_sync.sh || status=$?
+            case "$status" in
+              0)
+                exit 0
+                ;;
+              2)
+                # Local authority, identity, pin, or manifest preconditions are
+                # deterministic. Retrying cannot make them valid.
+                echo "::error::vendored-sync precondition failed; inspect the checker error above" >&2
+                exit 2
+                ;;
+              1)
+                # Exit 1 covers canonical fetch failures and observed drift.
+                # A retry tolerates a transient fetch failure; persistent drift
+                # remains blocking after the third attempt.
+                ;;
+              *)
+                echo "::error::vendored-sync returned unexpected exit $status" >&2
+                exit "$status"
+                ;;
+            esac
+            if [ "$attempt" -lt 3 ]; then
+              echo "::warning::vendored-sync attempt $attempt failed (exit 1); retrying in 5s" >&2
+              sleep 5
+            fi
+          done
+          echo "::error::governed files drifted from the pinned claw manifest, or claw could not be reached after 3 attempts" >&2
+          exit 1
