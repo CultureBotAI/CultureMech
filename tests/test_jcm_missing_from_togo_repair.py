@@ -62,9 +62,7 @@ def target_for(repair_module, payload: dict):
         togo_id="M1",
         relative_path="bacterial/example.yaml",
         raw_sha256=repair_module.canonical_hash(repair_module.raw_projection(payload)),
-        output_sha256=repair_module.canonical_hash(
-            repair_module.output_projection(output)
-        ),
+        output_sha256=repair_module.canonical_hash(repair_module.output_projection(output)),
         ingredient_count=len(output["ingredients"]),
         solution_count=len(output["solutions"]),
         preparation_step_count=len(output["preparation_steps"]),
@@ -77,9 +75,7 @@ def empty_record() -> dict:
         "media_term": {"term": {"id": "mediadive.medium:J2"}},
         "notes": "Source: JCM",
         "ingredients": [],
-        "preparation_steps": [
-            {"step_number": 1, "action": "MIX", "description": "See source."}
-        ],
+        "preparation_steps": [{"step_number": 1, "action": "MIX", "description": "See source."}],
         "curation_history": [],
         "data_quality_flags": [
             "resolved_reference",

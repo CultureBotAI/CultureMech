@@ -58,11 +58,9 @@ NORMALIZED = REPO / "data" / "normalized_yaml"
 # validate_mim_reconciliations() checks every asserted target id AND ontology label
 # against that SSSOM before main() scans or writes the corpus.
 MIM_EXACT_CORRECTIONS: dict[tuple[str, str], tuple[str, str]] = {
-    ("CHEBI:72699", "(NH4)3 citrate"): (
-        "CHEBI:63037", "triammonium citrate"),
+    ("CHEBI:72699", "(NH4)3 citrate"): ("CHEBI:63037", "triammonium citrate"),
     ("CHEBI:17439", "Vitamin B12"): ("CHEBI:176843", "vitamin B12"),
-    ("CHEBI:64755", "EDTA"): (
-        "CHEBI:4735", "ethylenediaminetetraacetic acid"),
+    ("CHEBI:64755", "EDTA"): ("CHEBI:4735", "ethylenediaminetetraacetic acid"),
     ("CHEBI:26948", "Thiamine"): ("CHEBI:18385", "thiamine(1+)"),
     ("CHEBI:26948", "thiamine"): ("CHEBI:18385", "thiamine(1+)"),
     ("CHEBI:30769", "Citrate"): ("CHEBI:16947", "citrate(3-)"),
@@ -70,23 +68,19 @@ MIM_EXACT_CORRECTIONS: dict[tuple[str, str], tuple[str, str]] = {
     ("CHEBI:46983", "D-Arabinose"): ("CHEBI:17108", "D-arabinose"),
     ("CHEBI:48095", "D-Fructose"): ("CHEBI:15824", "D-fructose"),
     ("CHEBI:37675", "D-Mannose"): ("CHEBI:16024", "D-mannose"),
-    ("CHEBI:42106", "DL-Dithiothreitol"): (
-        "CHEBI:18320", "1,4-dithiothreitol"),
-    ("CHEBI:53001", "NiSO4 x 7 H2O"): (
-        "CHEBI:53504", "nickel sulfate heptahydrate"),
+    ("CHEBI:42106", "DL-Dithiothreitol"): ("CHEBI:18320", "1,4-dithiothreitol"),
+    ("CHEBI:53001", "NiSO4 x 7 H2O"): ("CHEBI:53504", "nickel sulfate heptahydrate"),
     ("CHEBI:64243", "Sodium glutamate monohydrate"): (
-        "CHEBI:232425", "monosodium L-glutamate hydrate"),
+        "CHEBI:232425",
+        "monosodium L-glutamate hydrate",
+    ),
     ("CHEBI:85248", "Starch"): ("CHEBI:28017", "starch"),
     ("CHEBI:85248", "Starch "): ("CHEBI:28017", "starch"),
-    ("CHEBI:150970", "DL-mevalonic acid"): (
-        "CHEBI:25351", "mevalonic acid"),
+    ("CHEBI:150970", "DL-mevalonic acid"): ("CHEBI:25351", "mevalonic acid"),
     ("CHEBI:15356", "L-Cysteine"): ("CHEBI:17561", "L-cysteine"),
-    ("CHEBI:53558", "L-Lysine HCl"): (
-        "CHEBI:53633", "L-lysine hydrochloride"),
-    ("CHEBI:29988", "Na glutamate"): (
-        "CHEBI:64220", "monosodium glutamate"),
-    ("CHEBI:29988", "Na-glutamate"): (
-        "CHEBI:64220", "monosodium glutamate"),
+    ("CHEBI:53558", "L-Lysine HCl"): ("CHEBI:53633", "L-lysine hydrochloride"),
+    ("CHEBI:29988", "Na glutamate"): ("CHEBI:64220", "monosodium glutamate"),
+    ("CHEBI:29988", "Na-glutamate"): ("CHEBI:64220", "monosodium glutamate"),
 }
 
 # Exact names/formulas that settle hydration, salt identity, or stereochemistry even
@@ -94,35 +88,30 @@ MIM_EXACT_CORRECTIONS: dict[tuple[str, str], tuple[str, str]] = {
 # below was checked against OAK sqlite:obo:chebi on 2026-08-25. These remain keyed on
 # both source id and preferred_term; an anhydrous name on the same id never moves.
 NAME_SETTLED_CORRECTIONS: dict[tuple[str, str], tuple[str, str]] = {
-    ("CHEBI:35696", "CoCl2 x 6 H2O"): (
-        "CHEBI:53503", "cobalt chloride hexahydrate"),
-    ("CHEBI:34683", "Na2HPO4 x 2 H2O"): (
-        "CHEBI:91258", "disodium hydrogenphosphate dihydrate"),
-    ("CHEBI:3312", "Calcium chloride dihydrate"): (
-        "CHEBI:86158", "calcium chloride dihydrate"),
+    ("CHEBI:35696", "CoCl2 x 6 H2O"): ("CHEBI:53503", "cobalt chloride hexahydrate"),
+    ("CHEBI:34683", "Na2HPO4 x 2 H2O"): ("CHEBI:91258", "disodium hydrogenphosphate dihydrate"),
+    ("CHEBI:3312", "Calcium chloride dihydrate"): ("CHEBI:86158", "calcium chloride dihydrate"),
     ("CHEBI:6636", "Magnesium chloride hexahydrate"): (
-        "CHEBI:86345", "magnesium dichloride hexahydrate"),
+        "CHEBI:86345",
+        "magnesium dichloride hexahydrate",
+    ),
     ("CHEBI:32599", "Magnesium Sulfate Heptahydrate"): (
-        "CHEBI:31795", "magnesium sulfate heptahydrate"),
+        "CHEBI:31795",
+        "magnesium sulfate heptahydrate",
+    ),
     ("CHEBI:32599", "Magnesium sulfate heptahydrate"): (
-        "CHEBI:31795", "magnesium sulfate heptahydrate"),
-    ("CHEBI:86360", "MnSO4 x 4 H2O"): (
-        "CHEBI:86358", "manganese(II) sulfate tetrahydrate"),
-    ("CHEBI:86360", "MnSO4 x 5 H2O"): (
-        "CHEBI:131524", "manganese(II) sulfate pentahydrate"),
-    ("CHEBI:33146", "VOSO4 x 2 H2O"): (
-        "CHEBI:87009", "vanadyl sulfate dihydrate"),
-    ("CHEBI:33146", "VOSO4 x 5 H2O"): (
-        "CHEBI:132758", "vanadyl sulfate pentahydrate"),
-    ("CHEBI:87014", "VOSO4 x 5 H2O"): (
-        "CHEBI:132758", "vanadyl sulfate pentahydrate"),
-    ("CHEBI:30066", "Na-thioglycolate"): (
-        "CHEBI:86481", "sodium thioglycolate"),
+        "CHEBI:31795",
+        "magnesium sulfate heptahydrate",
+    ),
+    ("CHEBI:86360", "MnSO4 x 4 H2O"): ("CHEBI:86358", "manganese(II) sulfate tetrahydrate"),
+    ("CHEBI:86360", "MnSO4 x 5 H2O"): ("CHEBI:131524", "manganese(II) sulfate pentahydrate"),
+    ("CHEBI:33146", "VOSO4 x 2 H2O"): ("CHEBI:87009", "vanadyl sulfate dihydrate"),
+    ("CHEBI:33146", "VOSO4 x 5 H2O"): ("CHEBI:132758", "vanadyl sulfate pentahydrate"),
+    ("CHEBI:87014", "VOSO4 x 5 H2O"): ("CHEBI:132758", "vanadyl sulfate pentahydrate"),
+    ("CHEBI:30066", "Na-thioglycolate"): ("CHEBI:86481", "sodium thioglycolate"),
     ("CHEBI:17968", "Na-butyrate"): ("CHEBI:64103", "sodium butyrate"),
-    ("CHEBI:30924", "Na-tartrate"): (
-        "CHEBI:63017", "sodium L-tartrate"),
-    ("CHEBI:63036", "Dipotassium phosphate"): (
-        "CHEBI:131527", "dipotassium hydrogen phosphate"),
+    ("CHEBI:30924", "Na-tartrate"): ("CHEBI:63017", "sodium L-tartrate"),
+    ("CHEBI:63036", "Dipotassium phosphate"): ("CHEBI:131527", "dipotassium hydrogen phosphate"),
 }
 
 # (current wrong id, exact preferred_term) -> (correct id, correct label)
@@ -132,17 +121,19 @@ CORRECTIONS: dict[tuple[str, str], tuple[str, str]] = {
     **MIM_EXACT_CORRECTIONS,
     **NAME_SETTLED_CORRECTIONS,
     ("CHEBI:86463", "Magnesium Sulfate Heptahydrate"): (
-        "CHEBI:31795", "magnesium sulfate heptahydrate"),
-    ("CHEBI:42758", "Glucose"):        ("CHEBI:17234", "glucose"),
-    ("CHEBI:42758", "glucose"):        ("CHEBI:17234", "glucose"),
-    ("CHEBI:42758", "D-Glucose"):      ("CHEBI:17634", "D-glucose"),
-    ("CHEBI:42758", "D-glucose"):      ("CHEBI:17634", "D-glucose"),
-    ("CHEBI:42758", "D(+)-Glucose"):   ("CHEBI:17634", "D-glucose"),
-    ("CHEBI:42758", "Dextrose"):       ("CHEBI:17634", "D-glucose"),
+        "CHEBI:31795",
+        "magnesium sulfate heptahydrate",
+    ),
+    ("CHEBI:42758", "Glucose"): ("CHEBI:17234", "glucose"),
+    ("CHEBI:42758", "glucose"): ("CHEBI:17234", "glucose"),
+    ("CHEBI:42758", "D-Glucose"): ("CHEBI:17634", "D-glucose"),
+    ("CHEBI:42758", "D-glucose"): ("CHEBI:17634", "D-glucose"),
+    ("CHEBI:42758", "D(+)-Glucose"): ("CHEBI:17634", "D-glucose"),
+    ("CHEBI:42758", "Dextrose"): ("CHEBI:17634", "D-glucose"),
     # Fructose is an unrelated sugar. MIM's reviewed D-glucose mapping carries both
     # spellings as synonyms, and ChEBI identifies CHEBI:17634 as D-glucose.
-    ("CHEBI:15824", "D(+)-Glucose"):   ("CHEBI:17634", "D-glucose"),
-    ("CHEBI:15824", "Dextrose"):       ("CHEBI:17634", "D-glucose"),
+    ("CHEBI:15824", "D(+)-Glucose"): ("CHEBI:17634", "D-glucose"),
+    ("CHEBI:15824", "Dextrose"): ("CHEBI:17634", "D-glucose"),
     # PABA (#260, reported from MediaIngredientMech#138). CHEBI:194474 is
     # 4-ammoniobenzoate, the zwitterion. Every one of these rows carries
     # `CAS: 150-13-0` in its own notes, which is the neutral acid = CHEBI:30753, and
@@ -177,7 +168,6 @@ CORRECTIONS: dict[tuple[str, str], tuple[str, str]] = {
     # Deliberately excluded: `Vitamin B12` (cyanocobalamin vs the vitamer class, the
     # judgement call #256 defers), `Maltose` (generic vs alpha anomer), and the CaCl2 /
     # MgSO4 / MgCl2 rows naming hydrates that do not exist (`MgCl2 x 7 H2O`).
-
     # sodium molybdate DIhydrate
     ("CHEBI:75215", "Na2MoO4\u00b72H2O"): ("CHEBI:75213", "sodium molybdate dihydrate"),
     ("CHEBI:75215", "Na2MoO4 x 2 H2O"): ("CHEBI:75213", "sodium molybdate dihydrate"),
@@ -199,7 +189,9 @@ CORRECTIONS: dict[tuple[str, str], tuple[str, str]] = {
     # iron(2+) sulfate HEPTAhydrate
     ("CHEBI:75832", "FeSO4 x 7H2O"): ("CHEBI:75836", "iron(2+) sulfate heptahydrate"),
     ("CHEBI:75832", "Iron (II) sulfate heptahydrate"): (
-        "CHEBI:75836", "iron(2+) sulfate heptahydrate"),
+        "CHEBI:75836",
+        "iron(2+) sulfate heptahydrate",
+    ),
     # magnesium dichloride HEXAhydrate
     ("CHEBI:6636", "MgCl2 x 6 H2O"): ("CHEBI:86345", "magnesium dichloride hexahydrate"),
     ("CHEBI:6636", "MgCl2x 6 H2O"): ("CHEBI:86345", "magnesium dichloride hexahydrate"),
@@ -233,15 +225,16 @@ CORRECTIONS: dict[tuple[str, str], tuple[str, str]] = {
     ("CHEBI:64734", "Na2-EDTA\u00b72H2O"): ("CHEBI:64758", "EDTA disodium salt dihydrate"),
     # Found by the standing hydration check added for #278 -- it lives in a solution
     # record's top-level `composition:`, which the one-off scan for #275 never reached.
-    ("CHEBI:64734", "Disodium EDTA dihydrate"): (
-        "CHEBI:64758", "EDTA disodium salt dihydrate"),
+    ("CHEBI:64734", "Disodium EDTA dihydrate"): ("CHEBI:64758", "EDTA disodium salt dihydrate"),
     ("CHEBI:87014", "VOSO4 x 2 H2O"): ("CHEBI:87009", "vanadyl sulfate dihydrate"),
     ("CHEBI:75215", "Na2MoO4 \u00b7 2H2O"): ("CHEBI:75213", "sodium molybdate dihydrate"),
     ("CHEBI:75215", "Na2MoO4 x 2H2O"): ("CHEBI:75213", "sodium molybdate dihydrate"),
     ("CHEBI:75215", "Na2MoO4. 2H2O"): ("CHEBI:75213", "sodium molybdate dihydrate"),
     ("CHEBI:76208", "Sodium sulfide nonahydrate"): ("CHEBI:76209", "sodium sulfide nonahydrate"),
     ("CHEBI:63675", "Sodium succinate dibasic hexahydrate"): (
-        "CHEBI:63686", "sodium succinate hexahydrate"),
+        "CHEBI:63686",
+        "sodium succinate hexahydrate",
+    ),
     # NOT fixed: `FeSO4 x 6 H2O` / `x 5 H2O` (18 rows) and `VOSO4 x 5 H2O` -- CHEBI has
     # no term for those hydrates, and they are likelier transcription errors for the
     # heptahydrate than real formulations. Left for curation.
@@ -257,18 +250,20 @@ CORRECTIONS: dict[tuple[str, str], tuple[str, str]] = {
     # ninhydrin for manganese sulfate, a peptide for sodium tungstate, organics for
     # sodium sulfide and cobalt nitrate -- which is the class that keeps recurring
     # (CHEBI:52891 the dye, CHEBI:86463 potassium aluminium sulfate).
-    ('CHEBI:85357', 'Sodium sulfide nonahydrate'): ('CHEBI:76209', 'sodium sulfide nonahydrate'),
-    ('CHEBI:85357', 'Sodium sulfide'): ('CHEBI:76208', 'sodium sulfide (anhydrous)'),
-    ('CHEBI:78038', 'Co(NO ) .6H O'): ('CHEBI:86214', 'cobalt dinitrate hexahydrate'),
-    ('CHEBI:86374', 'Manganese sulfate monohydrate'): ('CHEBI:86364', 'manganese(II) sulfate monohydrate'),
-    ('CHEBI:48854', 'H2SeO3'): ('CHEBI:26642', 'selenous acid'),
-    ('CHEBI:86311', 'Na WO .2H O'): ('CHEBI:63939', 'sodium tungstate dihydrate'),
-    ('CHEBI:29033', 'Iron(II) sulfate'): ('CHEBI:75832', 'iron(2+) sulfate (anhydrous)'),
+    ("CHEBI:85357", "Sodium sulfide nonahydrate"): ("CHEBI:76209", "sodium sulfide nonahydrate"),
+    ("CHEBI:85357", "Sodium sulfide"): ("CHEBI:76208", "sodium sulfide (anhydrous)"),
+    ("CHEBI:78038", "Co(NO ) .6H O"): ("CHEBI:86214", "cobalt dinitrate hexahydrate"),
+    ("CHEBI:86374", "Manganese sulfate monohydrate"): (
+        "CHEBI:86364",
+        "manganese(II) sulfate monohydrate",
+    ),
+    ("CHEBI:48854", "H2SeO3"): ("CHEBI:26642", "selenous acid"),
+    ("CHEBI:86311", "Na WO .2H O"): ("CHEBI:63939", "sodium tungstate dihydrate"),
+    ("CHEBI:29033", "Iron(II) sulfate"): ("CHEBI:75832", "iron(2+) sulfate (anhydrous)"),
     # Remaining internal splits whose minority id names an unrelated entity. These
     # targets are independently supported by real ChEBI labels and MIM reviewed rows
     # (direct mappings or asserted synonyms/CAS evidence), never by majority vote.
-    ("CHEBI:83760", "D-Trehalose dihydrate"): (
-        "CHEBI:232797", "trehalose dihydrate"),
+    ("CHEBI:83760", "D-Trehalose dihydrate"): ("CHEBI:232797", "trehalose dihydrate"),
     ("CHEBI:73605", "KF"): ("CHEBI:66872", "potassium fluoride"),
     ("CHEBI:10642", "m-Inositol"): ("CHEBI:17268", "myo-inositol"),
     ("CHEBI:166917", "m-Inositol"): ("CHEBI:17268", "myo-inositol"),
@@ -357,8 +352,7 @@ def validate_reference_counts(tally: Counter[tuple[str, str, str]]) -> None:
         observed = tally.get(key, 0)
         if observed not in {0, expected}:
             errors.append(
-                f"{key[0]!r} {key[1]} -> {key[2]}: "
-                f"expected 0 or {expected}, found {observed}"
+                f"{key[0]!r} {key[1]} -> {key[2]}: " f"expected 0 or {expected}, found {observed}"
             )
     if errors:
         raise ValueError(
@@ -383,7 +377,7 @@ def fix_text(text: str) -> tuple[str, list[tuple[str, str, str]]]:
     out = list(lines)
     changes: list[tuple[str, str, str]] = []
     name = ""
-    pending: tuple[str, str] | None = None   # (indent, new_label) for the next label line
+    pending: tuple[str, str] | None = None  # (indent, new_label) for the next label line
     for n, line in enumerate(lines):
         m = PREFERRED.match(line)
         if m:
@@ -410,16 +404,22 @@ def fix_text(text: str) -> tuple[str, list[tuple[str, str, str]]]:
 
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(
-        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--apply", action="store_true",
-                    help="Write the corpus. Default is a dry run.")
-    ap.add_argument("--limit", type=int, default=0,
-                    help="Stop after N changed records (canary).")
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
+    ap.add_argument("--apply", action="store_true", help="Write the corpus. Default is a dry run.")
+    ap.add_argument("--limit", type=int, default=0, help="Stop after N changed records (canary).")
     ap.add_argument("--yaml-dir", type=Path, default=NORMALIZED)
-    ap.add_argument("--sssom", type=Path, default=DEFAULT_SSSOM,
-                    help="MIM ingredient SSSOM used to verify exact reconciliations.")
-    ap.add_argument("--summary-only", action="store_true",
-                    help="Suppress per-reference output; retain validation and totals.")
+    ap.add_argument(
+        "--sssom",
+        type=Path,
+        default=DEFAULT_SSSOM,
+        help="MIM ingredient SSSOM used to verify exact reconciliations.",
+    )
+    ap.add_argument(
+        "--summary-only",
+        action="store_true",
+        help="Suppress per-reference output; retain validation and totals.",
+    )
     args = ap.parse_args(argv)
 
     try:
@@ -427,8 +427,10 @@ def main(argv: list[str] | None = None) -> int:
     except (OSError, ValueError) as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 2
-    print(f"Verified {len(MIM_EXACT_CORRECTIONS)} approved corrections against "
-          f"MIM SSSOM {mim_version}.")
+    print(
+        f"Verified {len(MIM_EXACT_CORRECTIONS)} approved corrections against "
+        f"MIM SSSOM {mim_version}."
+    )
 
     tally: Counter[tuple[str, str, str]] = Counter()
     pending: list[tuple[Path, str, list[tuple[str, str, str]]]] = []
@@ -447,14 +449,14 @@ def main(argv: list[str] | None = None) -> int:
         try:
             yaml.safe_load(new_text)
         except yaml.YAMLError as exc:
-            print(f"  SKIP {path.relative_to(REPO)} — edit would break YAML: {exc}",
-                  file=sys.stderr)
+            print(
+                f"  SKIP {path.relative_to(REPO)} — edit would break YAML: {exc}", file=sys.stderr
+            )
             continue
         pending.append((path, new_text, changes))
         tally.update(changes)
         if args.limit and len(pending) >= args.limit:
             break
-
 
     if not args.limit and args.yaml_dir.resolve() == NORMALIZED.resolve():
         try:
@@ -469,15 +471,17 @@ def main(argv: list[str] | None = None) -> int:
         try:
             rel = path.relative_to(REPO)
         except ValueError:
-            rel = path            # --yaml-dir may be relative or outside the repo
+            rel = path  # --yaml-dir may be relative or outside the repo
         if not args.summary_only:
             for name, old, new in changes:
                 print(f"  {rel}: {name!r} {old} -> {new}")
         if args.apply:
             path.write_text(new_text)
 
-    print(f"\n{'Corrected' if args.apply else 'Would correct'} "
-          f"{sum(tally.values())} term reference(s) in {len(pending)} record(s):")
+    print(
+        f"\n{'Corrected' if args.apply else 'Would correct'} "
+        f"{sum(tally.values())} term reference(s) in {len(pending)} record(s):"
+    )
     for (name, old, new), n in tally.most_common():
         print(f"  {n:5d}x  {name!r}  {old} -> {new}")
     if not args.apply:

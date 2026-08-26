@@ -381,9 +381,7 @@ def _component_signature(doc: dict[str, Any]) -> tuple[str, str]:
 
 def plan_repair(doc: dict[str, Any], target: Target, text: str) -> tuple[str, bool]:
     if str(doc.get("id") or "") != target.record_id:
-        raise ValueError(
-            f"{target.path}: expected {target.record_id}, found {doc.get('id')!r}"
-        )
+        raise ValueError(f"{target.path}: expected {target.record_id}, found {doc.get('id')!r}")
     if _component_signature(doc) != (
         target.undefined_names,
         target.undefined_g_per_l,

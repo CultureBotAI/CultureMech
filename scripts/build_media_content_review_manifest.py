@@ -567,7 +567,9 @@ def build_groups(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
         physical_states = {m["physical_state"] for m in members if m.get("physical_state")}
         categories = {m["category_dir"] for m in members if m.get("category_dir")}
         name_keys = {norm_text(m.get("name") or m.get("original_name")) for m in members}
-        embedded_variant_records = sum(1 for m in members if int(m.get("embedded_variant_count") or 0) > 0)
+        embedded_variant_records = sum(
+            1 for m in members if int(m.get("embedded_variant_count") or 0) > 0
+        )
         reasons = []
         if len(concentration_sigs) > 1:
             reasons.append("same ingredient set with different concentrations")
@@ -681,8 +683,12 @@ def write_summary(rows: list[dict[str, Any]], groups: list[dict[str, Any]], out:
     lines.append(f"- Standalone solution records: {len(solutions):,}")
     lines.append(f"- Direct media ingredient entries: {total_direct_ingredients:,}")
     lines.append(f"- Media stock-solution descriptor entries: {total_solution_descriptors:,}")
-    lines.append(f"- Inline media solution-composition entries: {total_nested_solution_components:,}")
-    lines.append(f"- Standalone solution composition entries: {total_top_level_solution_components:,}")
+    lines.append(
+        f"- Inline media solution-composition entries: {total_nested_solution_components:,}"
+    )
+    lines.append(
+        f"- Standalone solution composition entries: {total_top_level_solution_components:,}"
+    )
     lines.append(f"- Total authoritative ingredient/component entries: {total_components:,}")
     lines.append(
         f"- Media with fully resolved concentration coverage: "
@@ -695,13 +701,19 @@ def write_summary(rows: list[dict[str, Any]], groups: list[dict[str, Any]], out:
     )
     lines.append(f"- Records with embedded `variants`: {records_with_embedded_variants:,}")
     lines.append(f"- Embedded variant entries: {embedded_variant_total:,}")
-    lines.append(f"- Records using `culturemech_term` component links: {records_with_component_refs:,}")
+    lines.append(
+        f"- Records using `culturemech_term` component links: {records_with_component_refs:,}"
+    )
     lines.append(f"- Candidate ingredient-identity variation groups: {len(groups):,}\n")
 
     lines.append("## Required Content Checks\n")
     lines.append(f"- Media missing `name`: {int_sum(media, 'missing_name'):,}")
-    lines.append(f"- Media with no usable ingredients or solutions: {int_sum(media, 'missing_composition'):,}")
-    lines.append(f"- Media components missing `preferred_term`: {int_sum(media, 'missing_component_name_count'):,}")
+    lines.append(
+        f"- Media with no usable ingredients or solutions: {int_sum(media, 'missing_composition'):,}"
+    )
+    lines.append(
+        f"- Media components missing `preferred_term`: {int_sum(media, 'missing_component_name_count'):,}"
+    )
     missing_concentrations = int_sum(media, "missing_concentration_count")
     missing_solution_concentrations = int_sum(media, "missing_solution_concentration_count")
     missing_solution_with_candidates = int_sum(
@@ -712,7 +724,9 @@ def write_summary(rows: list[dict[str, Any]], groups: list[dict[str, Any]], out:
     )
     variable_concentrations = int_sum(media, "variable_concentration_count")
     variable_solution_concentrations = int_sum(media, "variable_solution_concentration_count")
-    lines.append(f"- Media component entries missing concentration object: {missing_concentrations:,}")
+    lines.append(
+        f"- Media component entries missing concentration object: {missing_concentrations:,}"
+    )
     lines.append(
         f"  - Chemical ingredient descriptors: "
         f"{missing_concentrations - missing_solution_concentrations:,}"
@@ -725,16 +739,26 @@ def write_summary(rows: list[dict[str, Any]], groups: list[dict[str, Any]], out:
     lines.append(
         f"    - Without a concentration candidate: {missing_solution_without_candidates:,}"
     )
-    lines.append(f"- Media components with malformed concentration object: {int_sum(media, 'malformed_concentration_count'):,}")
-    lines.append(f"- Media components missing concentration value: {int_sum(media, 'missing_concentration_value_count'):,}")
-    lines.append(f"- Media components missing concentration unit: {int_sum(media, 'missing_concentration_unit_count'):,}")
-    lines.append(f"- Media component entries with `VARIABLE`/unspecified concentration: {variable_concentrations:,}")
+    lines.append(
+        f"- Media components with malformed concentration object: {int_sum(media, 'malformed_concentration_count'):,}"
+    )
+    lines.append(
+        f"- Media components missing concentration value: {int_sum(media, 'missing_concentration_value_count'):,}"
+    )
+    lines.append(
+        f"- Media components missing concentration unit: {int_sum(media, 'missing_concentration_unit_count'):,}"
+    )
+    lines.append(
+        f"- Media component entries with `VARIABLE`/unspecified concentration: {variable_concentrations:,}"
+    )
     lines.append(
         f"  - Chemical ingredient descriptors: "
         f"{variable_concentrations - variable_solution_concentrations:,}"
     )
     lines.append(f"  - Stock-solution descriptors: {variable_solution_concentrations:,}")
-    lines.append(f"- Media components with non-schema concentration units: {int_sum(media, 'non_schema_concentration_unit_count'):,}\n")
+    lines.append(
+        f"- Media components with non-schema concentration units: {int_sum(media, 'non_schema_concentration_unit_count'):,}\n"
+    )
 
     lines.append("## Review Outcome\n")
     lines.append("| Status | All records | Media only |")
@@ -755,14 +779,26 @@ def write_summary(rows: list[dict[str, Any]], groups: list[dict[str, Any]], out:
 
     lines.append("## Ontology/Ingredient Issues\n")
     lines.append(f"- Components with any `term.id`: {int_sum(valid, 'ingredient_term_count'):,}")
-    lines.append(f"- Components with CHEBI `term.id`: {int_sum(valid, 'ingredient_chebi_term_count'):,}")
-    lines.append(f"- Components with non-CHEBI `term.id`: {int_sum(valid, 'ingredient_non_chebi_term_count'):,}")
-    lines.append(f"- Components with MediaIngredientMech terms: {int_sum(valid, 'mediaingredientmech_count'):,}")
-    lines.append(f"- Components with parent ingredient links: {int_sum(valid, 'parent_ingredient_count'):,}")
-    lines.append(f"- Components with variant type labels: {int_sum(valid, 'variant_type_count'):,}\n")
+    lines.append(
+        f"- Components with CHEBI `term.id`: {int_sum(valid, 'ingredient_chebi_term_count'):,}"
+    )
+    lines.append(
+        f"- Components with non-CHEBI `term.id`: {int_sum(valid, 'ingredient_non_chebi_term_count'):,}"
+    )
+    lines.append(
+        f"- Components with MediaIngredientMech terms: {int_sum(valid, 'mediaingredientmech_count'):,}"
+    )
+    lines.append(
+        f"- Components with parent ingredient links: {int_sum(valid, 'parent_ingredient_count'):,}"
+    )
+    lines.append(
+        f"- Components with variant type labels: {int_sum(valid, 'variant_type_count'):,}\n"
+    )
 
     lines.append("## Records By Directory\n")
-    lines.append("| Directory | Records | Media | Solutions | Components | Unresolved concentrations | Embedded variants |")
+    lines.append(
+        "| Directory | Records | Media | Solutions | Components | Unresolved concentrations | Embedded variants |"
+    )
     lines.append("|---|---:|---:|---:|---:|---:|---:|")
     for category, stats in sorted(by_category.items()):
         lines.append(
@@ -802,7 +838,9 @@ def write_summary(rows: list[dict[str, Any]], groups: list[dict[str, Any]], out:
     lines.append("- Record manifest: `reports/media_content_review_manifest.tsv`")
     lines.append("- Record JSON: `reports/media_content_review_manifest.json`")
     lines.append("- Candidate variation groups: `reports/media_variation_candidate_groups.tsv`")
-    lines.append("- Candidate variation groups JSON: `reports/media_variation_candidate_groups.json`")
+    lines.append(
+        "- Candidate variation groups JSON: `reports/media_variation_candidate_groups.json`"
+    )
     lines.append("")
     lines.append(
         "This assessment does not assert true parent/child relationships. It only "
@@ -815,11 +853,15 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--yaml-root", type=Path, default=YAML_ROOT)
     parser.add_argument("--reports-dir", type=Path, default=REPORTS_DIR)
-    parser.add_argument("--out", type=Path, default=None,
-                        help="Write ONLY the manifest .tsv to this path and nothing "
-                             "else. Used by the derived-artifacts freshness check "
-                             "(#168): the .tsv is the one consumed output, so a check "
-                             "need not also regenerate the untracked json/groups/summary.")
+    parser.add_argument(
+        "--out",
+        type=Path,
+        default=None,
+        help="Write ONLY the manifest .tsv to this path and nothing "
+        "else. Used by the derived-artifacts freshness check "
+        "(#168): the .tsv is the one consumed output, so a check "
+        "need not also regenerate the untracked json/groups/summary.",
+    )
     args = parser.parse_args()
 
     units, ingredient_keys, solution_keys = schema_review_config(

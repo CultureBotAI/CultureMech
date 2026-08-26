@@ -159,8 +159,12 @@ def choose_parent(rows: list[dict[str, str]]) -> dict[str, str]:
 
 
 def infer_relationship(parent: dict[str, str], child: dict[str, str]) -> str:
-    child_name = norm_name(child.get("name") or child.get("original_name") or child.get("yaml_path"))
-    parent_name = norm_name(parent.get("name") or parent.get("original_name") or parent.get("yaml_path"))
+    child_name = norm_name(
+        child.get("name") or child.get("original_name") or child.get("yaml_path")
+    )
+    parent_name = norm_name(
+        parent.get("name") or parent.get("original_name") or parent.get("yaml_path")
+    )
     if child.get("physical_state") != parent.get("physical_state"):
         return "PHYSICAL_STATE_VARIANT"
     if "nacl" in child_name or "salt" in child_name or "salinity" in child_name:
@@ -173,7 +177,9 @@ def infer_relationship(parent: dict[str, str], child: dict[str, str]) -> str:
         return "SUBSTITUTED_COMPONENT_VARIANT"
     if any(pattern in child_name for pattern in SUPPLEMENT_PATTERNS):
         return "SUPPLEMENTED_VARIANT"
-    if child.get("ingredient_concentration_signature") != parent.get("ingredient_concentration_signature"):
+    if child.get("ingredient_concentration_signature") != parent.get(
+        "ingredient_concentration_signature"
+    ):
         return "CONCENTRATION_VARIANT"
     if child_name != parent_name:
         return "SOURCE_DUPLICATE"
@@ -185,7 +191,9 @@ def confidence_for_group(rows: list[dict[str, str]], parent: dict[str, str]) -> 
     total_components = {int_value(row, "total_component_count") for row in rows}
     non_schema_units = sum(int_value(row, "non_schema_concentration_unit_count") for row in rows)
     missing_conc = sum(int_value(row, "missing_concentration_count") for row in rows)
-    variable_records = sum(1 for row in rows if "VARIABLE" in (row.get("concentration_units") or ""))
+    variable_records = sum(
+        1 for row in rows if "VARIABLE" in (row.get("concentration_units") or "")
+    )
     categories = {row.get("category_dir") for row in rows if row.get("category_dir")}
 
     reasons = []
@@ -232,11 +240,16 @@ def is_algae_source_duplicate_group(rows: list[dict[str, str]], parent: dict[str
     categories = {row.get("category_dir") for row in rows if row.get("category_dir")}
     if categories != {"algae"}:
         return False
-    parent_name = norm_name(parent.get("name") or parent.get("original_name") or parent.get("yaml_path"))
+    parent_name = norm_name(
+        parent.get("name") or parent.get("original_name") or parent.get("yaml_path")
+    )
     parent_concentration = parent.get("ingredient_concentration_signature")
     for row in rows:
         row_name = norm_name(row.get("name") or row.get("original_name") or row.get("yaml_path"))
-        if row_name != parent_name and row.get("ingredient_concentration_signature") == parent_concentration:
+        if (
+            row_name != parent_name
+            and row.get("ingredient_concentration_signature") == parent_concentration
+        ):
             return True
     return False
 
@@ -267,7 +280,9 @@ def read_manifest(path: Path) -> list[dict[str, str]]:
         return [row for row in reader if not row.get("load_error")]
 
 
-def build_proposals(rows: list[dict[str, str]]) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+def build_proposals(
+    rows: list[dict[str, str]],
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     grouped: dict[str, list[dict[str, str]]] = defaultdict(list)
     for row in rows:
         # The content manifest also covers standalone stock-solution records.

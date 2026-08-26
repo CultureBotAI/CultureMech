@@ -98,9 +98,7 @@ def test_missing_media_name_and_composition_are_blocking(manifest, tmp_path):
     }
 
 
-def test_absent_and_variable_concentrations_are_separate_review_signals(
-    manifest, tmp_path
-):
+def test_absent_and_variable_concentrations_are_separate_review_signals(manifest, tmp_path):
     doc = _healthy_media()
     doc["ingredients"] = [
         {"preferred_term": "HCl"},
@@ -138,14 +136,10 @@ def test_component_without_required_name_is_blocking(manifest, tmp_path):
     assert row["missing_component_name_count"] == 1
     assert row["review_status"] == "BLOCKING"
     assert "MISSING_COMPONENT_NAME" in row["issue_codes"]
-    assert row["issue_locations"] == (
-        "MISSING_COMPONENT_NAME@ingredients[0].preferred_term"
-    )
+    assert row["issue_locations"] == ("MISSING_COMPONENT_NAME@ingredients[0].preferred_term")
 
 
-def test_media_solution_is_a_component_with_its_own_working_concentration(
-    manifest, tmp_path
-):
+def test_media_solution_is_a_component_with_its_own_working_concentration(manifest, tmp_path):
     doc = _healthy_media()
     doc["solutions"] = [
         {
@@ -168,9 +162,7 @@ def test_media_solution_is_a_component_with_its_own_working_concentration(
     assert row["missing_solution_concentration_with_candidates_count"] == 0
     assert row["missing_solution_concentration_without_candidates_count"] == 1
     assert row["issue_codes"] == "MISSING_SOLUTION_CONCENTRATION"
-    assert row["issue_locations"] == (
-        "MISSING_SOLUTION_CONCENTRATION@solutions[0].concentration"
-    )
+    assert row["issue_locations"] == ("MISSING_SOLUTION_CONCENTRATION@solutions[0].concentration")
     assert row["review_status"] == "NEEDS_REVIEW"
 
 
@@ -189,9 +181,7 @@ def test_missing_solution_concentration_tracks_non_asserted_candidates(manifest,
     assert row["missing_solution_concentration_without_candidates_count"] == 0
 
 
-def test_native_solution_uses_composition_and_ignores_placeholder_ingredients(
-    manifest, tmp_path
-):
+def test_native_solution_uses_composition_and_ignores_placeholder_ingredients(manifest, tmp_path):
     doc = {
         "id": "CultureMech:000002",
         "preferred_term": "Trace element stock",
@@ -259,9 +249,7 @@ def test_malformed_component_is_counted_and_located(manifest, tmp_path):
     }
 
 
-def test_curated_solution_stub_is_not_called_a_medium_without_ingredients(
-    manifest, tmp_path
-):
+def test_curated_solution_stub_is_not_called_a_medium_without_ingredients(manifest, tmp_path):
     row = _summarize(
         manifest,
         tmp_path,

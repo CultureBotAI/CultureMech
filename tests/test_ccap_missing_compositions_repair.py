@@ -13,9 +13,7 @@ SCRIPT = REPO / "scripts" / "repair_ccap_missing_compositions.py"
 
 
 def load_script():
-    spec = importlib.util.spec_from_file_location(
-        "repair_ccap_missing_compositions", SCRIPT
-    )
+    spec = importlib.util.spec_from_file_location("repair_ccap_missing_compositions", SCRIPT)
     module = importlib.util.module_from_spec(spec)
     sys.modules[spec.name] = module
     spec.loader.exec_module(module)
@@ -48,9 +46,7 @@ def test_nss_recipe_preserves_stock_boundaries_and_mim_identity(repair_module) -
     assert salts[0]["preferred_term"] == "NaNO3"
     assert salts[0]["term"] == {"id": "CHEBI:63005", "label": "sodium nitrate"}
     inositol = next(
-        row
-        for row in recipe["solutions"][1]["composition"]
-        if row["preferred_term"] == "Inositol"
+        row for row in recipe["solutions"][1]["composition"] if row["preferred_term"] == "Inositol"
     )
     assert inositol["term"] == {"id": "CHEBI:24848", "label": "inositol"}
     assert recipe["ph_range"] == {"min": 7.6, "max": 7.8}
@@ -58,9 +54,7 @@ def test_nss_recipe_preserves_stock_boundaries_and_mim_identity(repair_module) -
 
 def test_wmy_and_2sna_values_match_reviewed_sources(repair_module) -> None:
     wmy = repair_module.RECIPES["wmy"]
-    concentrations = {
-        row["preferred_term"]: row["concentration"] for row in wmy["ingredients"]
-    }
+    concentrations = {row["preferred_term"]: row["concentration"] for row in wmy["ingredients"]}
     assert concentrations["Yeast extract"] == {"value": "0.002", "unit": "G_PER_L"}
     assert concentrations["Malt extract"] == {"value": "0.002", "unit": "G_PER_L"}
     assert wmy["ph_range"] == {"min": 6.0, "max": 7.0}
@@ -80,9 +74,7 @@ def test_empty_record_repair_removes_incomplete_flag(repair_module) -> None:
         "id": target.record_id,
         "notes": "Source: CCAP",
         "ingredients": [],
-        "preparation_steps": [
-            {"step_number": 1, "action": "MIX", "description": "Coming soon"}
-        ],
+        "preparation_steps": [{"step_number": 1, "action": "MIX", "description": "Coming soon"}],
         "curation_history": [],
         "data_quality_flags": ["incomplete_composition"],
     }
@@ -114,9 +106,7 @@ def test_flattened_nss_guard_and_idempotence(repair_module) -> None:
     }
 
     repaired, changed = repair_module.repair_document(doc, target)
-    repaired["solutions"][0]["composition"][0]["curation_metadata"] = {
-        "mapping_quality": "MANUAL"
-    }
+    repaired["solutions"][0]["composition"][0]["curation_metadata"] = {"mapping_quality": "MANUAL"}
     second, changed_again = repair_module.repair_document(repaired, target)
 
     assert changed

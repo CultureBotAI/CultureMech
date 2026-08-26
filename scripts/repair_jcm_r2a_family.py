@@ -348,7 +348,9 @@ def _source_note(target: Target) -> str:
 
 def _validate_precondition(doc: dict[str, Any], target: Target) -> None:
     if str(doc.get("id") or "") != target.record_id:
-        raise ValueError(f"{target.relative_path}: id {doc.get('id')!r}, expected {target.record_id}")
+        raise ValueError(
+            f"{target.relative_path}: id {doc.get('id')!r}, expected {target.record_id}"
+        )
     if target.precondition == "parsed":
         if _short_signature(doc) != PARSED_SIGNATURES[target.recipe_key]:
             raise ValueError(f"{target.relative_path}: parsed R2A pre-state drifted")
@@ -459,7 +461,9 @@ def main(argv: list[str] | None = None) -> int:
             raise ValueError(f"{path}: expected a YAML mapping")
         repaired, changed = repair_document(doc, target)
         pending.append((path, repaired, changed, target))
-        print(f"{'fix' if changed else 'skip':4s}  {target.relative_path}: JCM {target.source_number}")
+        print(
+            f"{'fix' if changed else 'skip':4s}  {target.relative_path}: JCM {target.source_number}"
+        )
 
     changed_count = sum(changed for _, _, changed, _ in pending)
     if args.apply:

@@ -51,19 +51,60 @@ def pre_repair_document(migration) -> dict:
     }
 
 
+def reviewed_payload(migration) -> dict:
+    """Build a hermetic fixture from the source signatures frozen by the migration."""
+    components = []
+    for index, (section_name, raw_items) in enumerate(migration.RAW_SIGNATURE):
+        items = []
+        for name, volume, unit, conc_value, conc_unit, reference_id in raw_items:
+            item = {"component_name": name, "properties": [], "roles": []}
+            for key, value in (
+                ("volume", volume),
+                ("unit", unit),
+                ("conc_value", conc_value),
+                ("conc_unit", conc_unit),
+                ("reference_media_id", reference_id),
+            ):
+                if value:
+                    item[key] = value
+            items.append(item)
+        components.append(
+            {
+                "paragraph_index": 1 + 2 * index,
+                "subcomponent_name": section_name,
+                "items": items,
+            }
+        )
+
+    comment_indices = (4, 6, 8, 10, 11)
+    return {
+        "meta": {"gm": f"http://togomedium.org/medium/{migration.SOURCE_ID}"},
+        "components": components,
+        "comments": [
+            {"paragraph_index": index, "comment": comment}
+            for index, comment in zip(comment_indices, migration.SOURCE_COMMENTS, strict=True)
+        ],
+    }
+
+
 def test_checked_in_payload_has_reviewed_signature() -> None:
     migration = load_migration()
+    if not migration.RAW_FILE.is_file():
+        pytest.skip("ignored TOGO source payload is unavailable in a standalone checkout")
     payload = migration.load_payload(migration.RAW_FILE)
 
     migration.validate_payload(payload)
-    assert migration.structured_solution_signature(
-        migration._importer()._extract_assembled_solutions(payload)
-    ) == migration.EXPECTED_SOLUTIONS
+    assert (
+        migration.structured_solution_signature(
+            migration._importer()._extract_assembled_solutions(payload)
+        )
+        == migration.EXPECTED_SOLUTIONS
+    )
 
 
 def test_migration_restores_bsk_structure_and_is_idempotent() -> None:
     migration = load_migration()
-    payload = migration.load_payload(migration.RAW_FILE)
+    payload = reviewed_payload(migration)
     repaired, changed = migration.repair_document(pre_repair_document(migration), payload)
 
     assert changed is True
@@ -90,7 +131,7 @@ def test_migration_restores_bsk_structure_and_is_idempotent() -> None:
 
 def test_migration_refuses_normalized_or_raw_drift() -> None:
     migration = load_migration()
-    payload = migration.load_payload(migration.RAW_FILE)
+    payload = reviewed_payload(migration)
     doc = pre_repair_document(migration)
     doc["ingredients"][0]["concentration"]["value"] = "901"
     with pytest.raises(ValueError, match="ingredient signature drifted"):

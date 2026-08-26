@@ -27,15 +27,19 @@ def repair_module():
 
 def test_inventory_and_selected_identities(repair_module) -> None:
     repair_module._validate_inventory()
-    repair_module.validate_mim_terms(repair_module.MIM_SSSOM)
     assert len(repair_module.TARGETS) == 3
     assert len(repair_module.MIM_TERMS) == 11
+    if not repair_module.MIM_SSSOM.is_file():
+        pytest.skip("authoritative MIM SSSOM sibling is unavailable")
+    repair_module.validate_mim_terms(repair_module.MIM_SSSOM)
 
 
 def test_jcm_346_and_1091_include_printed_water(repair_module) -> None:
     for target in repair_module.TARGETS[:2]:
         recipe = repair_module.recipe_for(target)
-        water = next(row for row in recipe["ingredients"] if row["preferred_term"] == "Distilled water")
+        water = next(
+            row for row in recipe["ingredients"] if row["preferred_term"] == "Distilled water"
+        )
         assert water["concentration"] == {"value": "1.0", "unit": "L"}
         assert recipe["sterilization"] == {"method": "AUTOCLAVE"}
         assert recipe["physical_state"] == "SOLID_AGAR"
@@ -43,9 +47,7 @@ def test_jcm_346_and_1091_include_printed_water(repair_module) -> None:
 
 def test_five_x_source_values_are_consistent(repair_module) -> None:
     recipe = repair_module.recipe_for(repair_module.TARGETS[1])
-    values = {
-        row["preferred_term"]: row["concentration"]["value"] for row in recipe["ingredients"]
-    }
+    values = {row["preferred_term"]: row["concentration"]["value"] for row in recipe["ingredients"]}
     assert values["Yeast extract"] == "2.5"
     assert values["Sodium pyruvate"] == "1.5"
     assert values["MgSO4 x 7 H2O"] == "0.25"
@@ -69,7 +71,9 @@ def test_ph9_variant_preserves_unspecified_carbonate_volume(repair_module) -> No
 
 
 def test_variant_relationships_are_reciprocal(repair_module) -> None:
-    recipes = {target.relative_path: repair_module.recipe_for(target) for target in repair_module.TARGETS}
+    recipes = {
+        target.relative_path: repair_module.recipe_for(target) for target in repair_module.TARGETS
+    }
     children = recipes[repair_module.BASE_PATH]["variant_children"]
     assert {(row["id"], row["relationship"]) for row in children} == {
         ("CultureMech:002271", "CONCENTRATION_VARIANT"),

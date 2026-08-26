@@ -33,9 +33,7 @@ def test_reviewed_target_inventory_is_complete_and_unique() -> None:
 
 def test_repair_is_surgical_and_idempotent() -> None:
     migration = load_migration()
-    target = next(
-        row for row in migration.TARGETS if row.path == "bacterial/petrotoga_medium.yaml"
-    )
+    target = next(row for row in migration.TARGETS if row.path == "bacterial/petrotoga_medium.yaml")
     text = (
         f"id: {target.record_id}\n"
         "name: petrotoga\n"
@@ -61,9 +59,7 @@ def test_repair_is_surgical_and_idempotent() -> None:
 
 def test_repair_refuses_identity_component_or_axis_drift() -> None:
     migration = load_migration()
-    target = next(
-        row for row in migration.TARGETS if row.path == "bacterial/petrotoga_medium.yaml"
-    )
+    target = next(row for row in migration.TARGETS if row.path == "bacterial/petrotoga_medium.yaml")
     base = {
         "id": target.record_id,
         "medium_type": "DEFINED",

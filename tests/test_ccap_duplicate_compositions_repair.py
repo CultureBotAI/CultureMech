@@ -13,9 +13,7 @@ SCRIPT = REPO / "scripts" / "repair_ccap_duplicate_compositions.py"
 
 
 def load_script():
-    spec = importlib.util.spec_from_file_location(
-        "repair_ccap_duplicate_compositions", SCRIPT
-    )
+    spec = importlib.util.spec_from_file_location("repair_ccap_duplicate_compositions", SCRIPT)
     module = importlib.util.module_from_spec(spec)
     sys.modules[spec.name] = module
     spec.loader.exec_module(module)
@@ -30,18 +28,13 @@ def repair_module():
 def test_ch_uses_three_calculated_stock_recipes(repair_module) -> None:
     recipe = repair_module.RECIPES["ch"]
 
-    assert [row["preferred_term"] for row in recipe["ingredients"]] == [
-        "Deionized water"
-    ]
+    assert [row["preferred_term"] for row in recipe["ingredients"]] == ["Deionized water"]
     assert [row["concentration"] for row in recipe["solutions"]] == [
         {"value": "5.0", "unit": "ML_PER_L"},
         {"value": "5.0", "unit": "ML_PER_L"},
         {"value": "5.0", "unit": "ML_PER_L"},
     ]
-    assert [
-        solution["composition"][0]["concentration"]
-        for solution in recipe["solutions"]
-    ] == [
+    assert [solution["composition"][0]["concentration"] for solution in recipe["solutions"]] == [
         {"value": "20", "unit": "G_PER_L"},
         {"value": "0.8", "unit": "G_PER_L"},
         {"value": "1.2", "unit": "G_PER_L"},
@@ -137,17 +130,15 @@ def test_empty_and_existing_guards_repair_to_same_recipe(repair_module) -> None:
         "curation_history": [],
     }
 
-    repaired_empty, changed_empty = repair_module.repair_document(
-        empty_doc, empty_target
-    )
+    repaired_empty, changed_empty = repair_module.repair_document(empty_doc, empty_target)
     repaired_existing, changed_existing = repair_module.repair_document(
         existing_doc, existing_target
     )
 
     assert changed_empty and changed_existing
-    assert repair_module.recipe_projection(
-        repaired_empty
-    ) == repair_module.recipe_projection(repaired_existing)
+    assert repair_module.recipe_projection(repaired_empty) == repair_module.recipe_projection(
+        repaired_existing
+    )
     second, changed_again = repair_module.repair_document(
         copy.deepcopy(repaired_existing), existing_target
     )

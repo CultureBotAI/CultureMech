@@ -31,9 +31,7 @@ from record_io import write_record  # noqa: E402
 TogoImporter = import_module("culturemech.import.togo_importer").TogoImporter
 
 RAW_FILE = REPO / "data" / "raw" / "togo" / "togo_media.json"
-NORMALIZED_FILE = (
-    REPO / "data" / "normalized_yaml" / "bacterial" / "TOGO_M2366_BSK-Medium.yaml"
-)
+NORMALIZED_FILE = REPO / "data" / "normalized_yaml" / "bacterial" / "TOGO_M2366_BSK-Medium.yaml"
 SOURCE_ID = "M2366"
 MEDIA_TERM_ID = "TOGO:M2366"
 ACTION = "RESTORED_TOGO_STOCK_SOLUTION_BOUNDARIES"
@@ -166,8 +164,7 @@ EXPECTED_SOLUTIONS = (
 )
 
 SOURCE_COMMENTS = (
-    "Stir slowly at 4 -10\u00b0C for 3 hours, adjust pH to 7.6 with 5 M NaOH. "
-    "Filter sterilize.",
+    "Stir slowly at 4 -10\u00b0C for 3 hours, adjust pH to 7.6 with 5 M NaOH. " "Filter sterilize.",
     "Dissolve 14.0 g gelatine in 200 ml bidest. water, autoclave 15 minutes at 115\u00b0C.",
     "Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma No A9647) "
     "in 143 ml bidest. water, or use BSA-solution Sigma A7409.",
@@ -286,9 +283,7 @@ def _history_has_action(doc: dict[str, Any]) -> bool:
 def _apply_identity_links(
     solutions: list[dict[str, Any]], current_ingredients: list[dict[str, Any]]
 ) -> None:
-    current_by_name = {
-        _value(row.get("preferred_term")): row for row in current_ingredients
-    }
+    current_by_name = {_value(row.get("preferred_term")): row for row in current_ingredients}
     for solution in solutions:
         for ingredient in solution.get("composition", []):
             name = _value(ingredient.get("preferred_term"))
@@ -300,9 +295,7 @@ def _apply_identity_links(
                 ingredient.update(copy.deepcopy(WATER_IDENTITY))
 
 
-def repair_document(
-    doc: dict[str, Any], payload: dict[str, Any]
-) -> tuple[dict[str, Any], bool]:
+def repair_document(doc: dict[str, Any], payload: dict[str, Any]) -> tuple[dict[str, Any], bool]:
     """Return a guarded repaired copy and whether it differs from an applied record."""
     validate_payload(payload)
     if media_term_id(doc) != MEDIA_TERM_ID:
@@ -315,7 +308,10 @@ def repair_document(
     current_ingredients = [row for row in doc.get("ingredients", []) if isinstance(row, dict)]
     current_solutions = [row for row in doc.get("solutions", []) if isinstance(row, dict)]
     if _history_has_action(doc):
-        if current_ingredients or structured_solution_signature(current_solutions) != EXPECTED_SOLUTIONS:
+        if (
+            current_ingredients
+            or structured_solution_signature(current_solutions) != EXPECTED_SOLUTIONS
+        ):
             raise ValueError("applied BSK repair no longer has the reviewed solution structure")
         return doc, False
 

@@ -109,12 +109,12 @@ def test_unrelated_lines_are_untouched():
     new, _ = fix_text(text)
     before, after = text.splitlines(), new.splitlines()
     assert len(before) == len(after)
-    differing = [
-        i for i, (a, b) in enumerate(zip(before, after, strict=True)) if a != b
-    ]
+    differing = [i for i, (a, b) in enumerate(zip(before, after, strict=True)) if a != b]
     assert differing == [6], "only the id line should differ"
-    assert yaml.safe_load(new)["ingredients"][0]["notes"] == \
-        yaml.safe_load(text)["ingredients"][0]["notes"]
+    assert (
+        yaml.safe_load(new)["ingredients"][0]["notes"]
+        == yaml.safe_load(text)["ingredients"][0]["notes"]
+    )
 
 
 def test_quoted_preferred_term_is_matched():
@@ -152,11 +152,13 @@ def test_cysteine_hcl_is_moved_off_a_fluorescent_dye():
     """CHEBI:52891 is `QSY9 succinimidyl ester(1+)` — a quencher dye, not an amino
     acid. The same string is already grounded to CHEBI:91247 in 40 other rows."""
     for name in ("Cysteine-HCl", "cysteine-HCl"):
-        text = ("ingredients:\n"
-                f"- preferred_term: {name}\n"
-                "  term:\n"
-                "    id: CHEBI:52891\n"
-                "    label: ''\n")
+        text = (
+            "ingredients:\n"
+            f"- preferred_term: {name}\n"
+            "  term:\n"
+            "    id: CHEBI:52891\n"
+            "    label: ''\n"
+        )
         new, changes = fix_text(text)
         assert changes == [(name, "CHEBI:52891", "CHEBI:91247")]
         assert "label: L-cysteine hydrochloride" in new
@@ -166,11 +168,13 @@ def test_hydrated_hcl_names_move_off_plain_l_cysteine():
     """A name spelling out both HCl and a hydrate must not sit on CHEBI:17561, which
     is neither. The corpus already uses CHEBI:91248 for this substance 1,901 times."""
     for name in ("L-Cysteine-HCl x H2O", "Cysteine-HCl x H2O", "L-cysteine-HCL x H2O"):
-        text = ("ingredients:\n"
-                f"- preferred_term: {name}\n"
-                "  term:\n"
-                "    id: CHEBI:17561\n"
-                "    label: L-cysteine\n")
+        text = (
+            "ingredients:\n"
+            f"- preferred_term: {name}\n"
+            "  term:\n"
+            "    id: CHEBI:17561\n"
+            "    label: L-cysteine\n"
+        )
         new, changes = fix_text(text)
         assert changes == [(name, "CHEBI:17561", "CHEBI:91248")], name
         assert "label: L-cysteine hydrochloride hydrate" in new
@@ -180,11 +184,13 @@ def test_plain_cysteine_names_keep_chebi_17561():
     """Only HCl-and-hydrate names move. The free amino acid is correctly 17561, and
     keying on the id alone would have wrecked 169 legitimate rows."""
     for name in ("L-Cysteine", "Cysteine", "L-cysteine"):
-        text = ("ingredients:\n"
-                f"- preferred_term: {name}\n"
-                "  term:\n"
-                "    id: CHEBI:17561\n"
-                "    label: L-cysteine\n")
+        text = (
+            "ingredients:\n"
+            f"- preferred_term: {name}\n"
+            "  term:\n"
+            "    id: CHEBI:17561\n"
+            "    label: L-cysteine\n"
+        )
         new, changes = fix_text(text)
         assert changes == [], name
         assert new == text
@@ -208,49 +214,63 @@ def test_name_scope_does_not_leak_to_the_next_ingredient():
     assert "id: CHEBI:86463" in new
     assert "label: potassium aluminium sulfate" in new
 
+
 def test_hydrate_names_move_but_anhydrous_names_do_not():
     """#258's core rule. The SAME wrong id is correct for the unmarked name, so this
     can only be keyed on name+id — `Na2MoO4` must stay anhydrous while
     `Na2MoO4 x 2 H2O` moves to the dihydrate."""
     moves = ("Na2MoO4 x 2 H2O", "CHEBI:75215", "CHEBI:75213")
     stays = ("Na2MoO4", "CHEBI:75215")
-    text = ("ingredients:\n"
-            f"- preferred_term: {moves[0]}\n  term:\n    id: {moves[1]}\n    label: x\n"
-            f"- preferred_term: {stays[0]}\n  term:\n    id: {stays[1]}\n    label: y\n")
+    text = (
+        "ingredients:\n"
+        f"- preferred_term: {moves[0]}\n  term:\n    id: {moves[1]}\n    label: x\n"
+        f"- preferred_term: {stays[0]}\n  term:\n    id: {stays[1]}\n    label: y\n"
+    )
     new, changes = fix_text(text)
     assert changes == [(moves[0], moves[1], moves[2])]
     assert f"id: {stays[1]}" in new, "the anhydrous row must survive"
 
+
 def test_the_majority_reading_is_not_assumed_correct():
     """1,161 rows had `CoSO4 x 7 H2O` on the anhydrous id and 5 on the heptahydrate.
     The 5 were right; a majority-wins rule would have entrenched the error."""
-    text = ("ingredients:\n- preferred_term: CoSO4 x 7 H2O\n  term:\n"
-            "    id: CHEBI:53470\n    label: cobalt(2+) sulfate\n")
+    text = (
+        "ingredients:\n- preferred_term: CoSO4 x 7 H2O\n  term:\n"
+        "    id: CHEBI:53470\n    label: cobalt(2+) sulfate\n"
+    )
     new, changes = fix_text(text)
     assert changes == [("CoSO4 x 7 H2O", "CHEBI:53470", "CHEBI:91244")]
     assert "label: cobalt(2+) sulfate heptahydrate" in new
 
+
 def test_starch_moves_off_gellan_gum_but_gellan_gum_does_not():
     for name, expect in (("Starch", "CHEBI:28017"), ("Gelrite", None)):
-        text = ("ingredients:\n"
-                f"- preferred_term: {name}\n  term:\n    id: CHEBI:85248\n    label: g\n")
+        text = (
+            "ingredients:\n"
+            f"- preferred_term: {name}\n  term:\n    id: CHEBI:85248\n    label: g\n"
+        )
         new, changes = fix_text(text)
         if expect:
             assert changes and f"id: {expect}" in new, name
         else:
             assert changes == [] and new == text, name
 
+
 def test_bare_ion_ids_move_to_the_named_salt():
-    text = ("ingredients:\n- preferred_term: KNO3\n  term:\n"
-            "    id: CHEBI:17632\n    label: nitrate\n")
+    text = (
+        "ingredients:\n- preferred_term: KNO3\n  term:\n"
+        "    id: CHEBI:17632\n    label: nitrate\n"
+    )
     new, changes = fix_text(text)
     assert changes == [("KNO3", "CHEBI:17632", "CHEBI:63043")]
     assert "label: potassium nitrate" in new
 
+
 def test_dextrose_collapses_onto_d_glucose_from_both_wrong_ids():
     for wrong in ("CHEBI:17234", "CHEBI:4167"):
-        text = ("ingredients:\n"
-                f"- preferred_term: Dextrose\n  term:\n    id: {wrong}\n    label: g\n")
+        text = (
+            "ingredients:\n" f"- preferred_term: Dextrose\n  term:\n    id: {wrong}\n    label: g\n"
+        )
         new, changes = fix_text(text)
         assert changes == [("Dextrose", wrong, "CHEBI:17634")], wrong
 
@@ -326,9 +346,7 @@ def _write_sssom(path: Path, overrides: dict[str, tuple[str, str]] | None = None
     ]
     for index, ((_old, name), target) in enumerate(MIM_EXACT_CORRECTIONS.items()):
         object_id, object_label = overrides.get(name, target)
-        lines.append(
-            f"MIM:test{index}\t{name}\tskos:exactMatch\t{object_id}\t{object_label}"
-        )
+        lines.append(f"MIM:test{index}\t{name}\tskos:exactMatch\t{object_id}\t{object_label}")
     path.write_text("\n".join(lines) + "\n")
 
 
@@ -352,9 +370,7 @@ def test_reference_count_guard_allows_pre_and_post_state_but_not_partial():
     validate_reference_counts(Counter())
 
     key, expected = next(
-        (key, count)
-        for key, count in EXPECTED_REFERENCE_COUNTS.items()
-        if count > 1
+        (key, count) for key, count in EXPECTED_REFERENCE_COUNTS.items() if count > 1
     )
     partial = Counter({key: expected - 1})
     try:

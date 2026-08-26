@@ -278,8 +278,7 @@ RECIPE: dict[str, Any] = {
             "step_number": 3,
             "action": "MIX",
             "description": (
-                "Stir slowly for 1.5 hours, no longer, while protecting the medium "
-                "from light."
+                "Stir slowly for 1.5 hours, no longer, while protecting the medium " "from light."
             ),
         },
         {

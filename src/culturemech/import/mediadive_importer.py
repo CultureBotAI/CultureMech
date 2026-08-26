@@ -21,12 +21,12 @@ Integration with cmm-ai-automation:
 """
 
 import json
-import re
-import yaml
-from pathlib import Path
-from typing import Any, Optional
-from datetime import datetime
 import logging
+import re
+from datetime import datetime
+from pathlib import Path
+
+import yaml
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -47,7 +47,7 @@ class MediaDiveImporter:
         mediadive_data_dir: Path,
         output_dir: Path,
         curator: str = "mediadive-import",
-        composition_dir: Optional[Path] = None
+        composition_dir: Path | None = None,
     ):
         """
         Initialize importer.
@@ -120,7 +120,7 @@ class MediaDiveImporter:
             except Exception as e:
                 logger.warning(f"Could not load composition file {comp_file}: {e}")
 
-    def import_all(self, limit: Optional[int] = None) -> list[Path]:
+    def import_all(self, limit: int | None = None) -> list[Path]:
         """
         Import all MediaDive recipes to CultureMech format.
 
@@ -161,35 +161,31 @@ class MediaDiveImporter:
             return
 
         # Find all duplicates
-        duplicates = {
-            fname: ids
-            for fname, ids in self.generated_filenames.items()
-            if len(ids) > 1
-        }
+        duplicates = {fname: ids for fname, ids in self.generated_filenames.items() if len(ids) > 1}
 
-        logger.warning(f"\n⚠️  DUPLICATE FILENAME SUMMARY")
-        logger.warning(f"═══════════════════════════════════════════════════════")
+        logger.warning("\n⚠️  DUPLICATE FILENAME SUMMARY")
+        logger.warning("═══════════════════════════════════════════════════════")
         logger.warning(f"Total duplicate events: {self.duplicate_count}")
         logger.warning(f"Unique filenames with duplicates: {len(duplicates)}")
-        logger.warning(f"")
-        logger.warning(f"Files that were OVERWRITTEN:")
-        logger.warning(f"───────────────────────────────────────────────────────")
+        logger.warning("")
+        logger.warning("Files that were OVERWRITTEN:")
+        logger.warning("───────────────────────────────────────────────────────")
 
         for filename, medium_ids in sorted(duplicates.items()):
-            logger.warning(f"")
+            logger.warning("")
             logger.warning(f"Filename: {filename}")
             logger.warning(f"  Conflicts: {len(medium_ids)} media mapped to same file")
             for idx, mid in enumerate(medium_ids, 1):
                 logger.warning(f"    {idx}. {mid}")
             logger.warning(f"  → Only the LAST one ({medium_ids[-1]}) was saved!")
 
-        logger.warning(f"")
-        logger.warning(f"═══════════════════════════════════════════════════════")
+        logger.warning("")
+        logger.warning("═══════════════════════════════════════════════════════")
         logger.warning(f"⚠️  {len(duplicates)} file(s) were overwritten!")
         logger.warning(f"⚠️  Data loss: {self.duplicate_count} media lost")
-        logger.warning(f"═══════════════════════════════════════════════════════")
+        logger.warning("═══════════════════════════════════════════════════════")
 
-    def import_medium(self, medium: dict) -> Optional[Path]:
+    def import_medium(self, medium: dict) -> Path | None:
         """
         Convert a single MediaDive medium to CultureMech YAML.
 
@@ -209,8 +205,8 @@ class MediaDiveImporter:
 
         # Generate unique filename with source and ID
         name = recipe["name"]
-        medium_id = medium.get('id', 'unknown')
-        source = medium.get('source', 'unknown')
+        medium_id = medium.get("id", "unknown")
+        source = medium.get("source", "unknown")
 
         # Sanitize filename: Replace ALL problematic characters with underscore
         # See _sanitize_filename() docstring for complete list
@@ -250,12 +246,12 @@ class MediaDiveImporter:
             logger.debug(f"Overwriting existing file: {filename}")
 
         # Write YAML
-        with open(output_path, 'w') as f:
+        with open(output_path, "w") as f:
             yaml.dump(recipe, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
 
         return output_path
 
-    def _convert_to_culturemech(self, medium: dict) -> Optional[dict]:
+    def _convert_to_culturemech(self, medium: dict) -> dict | None:
         """
         Convert MediaDive medium to CultureMech schema.
 
@@ -281,13 +277,10 @@ class MediaDiveImporter:
             "name": medium["name"],
             "original_name": original_name,  # Store original name with all special characters
             "category": "imported",  # Will be updated by _infer_category
-
             # Media type
             "medium_type": "COMPLEX" if medium.get("complex_medium") else "DEFINED",
-
             # Default to liquid (MediaDive doesn't specify)
             "physical_state": "LIQUID",
-
             # pH
         }
 
@@ -305,10 +298,7 @@ class MediaDiveImporter:
             medium_id = medium["id"]
             recipe["media_term"] = {
                 "preferred_term": f"{source} Medium {medium_id}",
-                "term": {
-                    "id": f"mediadive.medium:{medium_id}",
-                    "label": medium["name"]
-                }
+                "term": {"id": f"mediadive.medium:{medium_id}", "label": medium["name"]},
             }
 
         # Description and link
@@ -333,11 +323,8 @@ class MediaDiveImporter:
             recipe["ingredients"] = [
                 {
                     "preferred_term": "See source for composition",
-                    "concentration": {
-                        "value": "variable",
-                        "unit": "G_PER_L"
-                    },
-                    "notes": "Full composition available at source database"
+                    "concentration": {"value": "variable", "unit": "G_PER_L"},
+                    "notes": "Full composition available at source database",
                 }
             ]
 
@@ -346,23 +333,19 @@ class MediaDiveImporter:
             recipe["solutions"] = stock_solutions
 
         # Preparation steps - try to load from API data
-        prep_steps = self._parse_preparation_steps(str(medium.get('id')))
+        prep_steps = self._parse_preparation_steps(str(medium.get("id")))
         if prep_steps:
             recipe["preparation_steps"] = prep_steps
-            logger.debug(f"Loaded {len(prep_steps)} preparation steps for medium {medium.get('id')}")
+            logger.debug(
+                f"Loaded {len(prep_steps)} preparation steps for medium {medium.get('id')}"
+            )
 
         # Applications (generic for now)
-        recipe["applications"] = [
-            "Microbial cultivation"
-        ]
+        recipe["applications"] = ["Microbial cultivation"]
 
         # References
         if medium.get("reference"):
-            recipe["references"] = [
-                {
-                    "reference": medium["reference"]
-                }
-            ]
+            recipe["references"] = [{"reference": medium["reference"]}]
 
         # Curation history
         recipe["curation_history"] = [
@@ -370,13 +353,13 @@ class MediaDiveImporter:
                 "timestamp": datetime.utcnow().isoformat() + "Z",
                 "curator": self.curator,
                 "action": "Imported from MediaDive",
-                "notes": f"Source: {medium.get('source', 'MediaDive')}, ID: {medium.get('id')}"
+                "notes": f"Source: {medium.get('source', 'MediaDive')}, ID: {medium.get('id')}",
             }
         ]
 
         return recipe
 
-    def _parse_composition_ingredients(self, medium_id: str) -> Optional[list]:
+    def _parse_composition_ingredients(self, medium_id: str) -> list | None:
         """
         Parse composition data into CultureMech ingredient format.
 
@@ -391,7 +374,7 @@ class MediaDiveImporter:
             List of IngredientDescriptor dicts, or None if no composition found
         """
         # Extract numeric ID from medium_id (e.g., "medium_1" -> "1")
-        numeric_id = medium_id.replace('medium_', '')
+        numeric_id = medium_id.replace("medium_", "")
 
         # Try API data first (higher priority - more complete)
         api_ingredients = self._parse_api_composition(numeric_id)
@@ -417,20 +400,19 @@ class MediaDiveImporter:
 
             # Skip conditional ingredients like "if necessary"
             if "if necessary" in ingredient_name.lower():
-                ingredient_name = ingredient_name.replace(", if necessary", "").replace(" if necessary", "").strip()
+                ingredient_name = (
+                    ingredient_name.replace(", if necessary", "")
+                    .replace(" if necessary", "")
+                    .strip()
+                )
 
             # Build ingredient descriptor
-            ing_desc = {
-                "preferred_term": ingredient_name
-            }
+            ing_desc = {"preferred_term": ingredient_name}
 
             # Look up ChEBI ID from ingredients database
             ing_data = self.ingredients_by_name.get(ingredient_name.lower())
             if ing_data and ing_data.get("ChEBI"):
-                ing_desc["term"] = {
-                    "id": f"CHEBI:{ing_data['ChEBI']}",
-                    "label": ing_data["name"]
-                }
+                ing_desc["term"] = {"id": f"CHEBI:{ing_data['ChEBI']}", "label": ing_data["name"]}
 
             # Add concentration if available
             if comp_item.get("concentration") and comp_item.get("unit"):
@@ -460,10 +442,7 @@ class MediaDiveImporter:
                 }
                 standard_unit = unit_map.get(unit, "G_PER_L")
 
-                ing_desc["concentration"] = {
-                    "value": conc_value,
-                    "unit": standard_unit
-                }
+                ing_desc["concentration"] = {"value": conc_value, "unit": standard_unit}
 
             # Add role as notes if available (from medium_* files)
             if comp_item.get("role"):
@@ -473,7 +452,7 @@ class MediaDiveImporter:
 
         return ingredients if ingredients else None
 
-    def _parse_api_composition(self, medium_id: str) -> Optional[list]:
+    def _parse_api_composition(self, medium_id: str) -> list | None:
         """
         Parse composition from API-fetched data.
 
@@ -530,26 +509,21 @@ class MediaDiveImporter:
             if compound_name.lower() in ["water", "distilled water", "deionized water", "h2o"]:
                 continue
 
-            ingredient = {
-                "preferred_term": compound_name
-            }
+            ingredient = {"preferred_term": compound_name}
 
             ing_data = self.ingredients_by_name.get(compound_name.lower())
             if ing_data and ing_data.get("ChEBI"):
                 ingredient["term"] = {
                     "id": f"CHEBI:{ing_data['ChEBI']}",
-                    "label": ing_data.get("name", compound_name)
+                    "label": ing_data.get("name", compound_name),
                 }
 
             if item.get("g_l") is not None:
-                ingredient["concentration"] = {
-                    "value": str(item["g_l"]),
-                    "unit": "G_PER_L"
-                }
+                ingredient["concentration"] = {"value": str(item["g_l"]), "unit": "G_PER_L"}
             elif item.get("amount") is not None:
                 ingredient["concentration"] = {
                     "value": str(item["amount"]),
-                    "unit": self._normalize_unit(item.get("unit", "g"))
+                    "unit": self._normalize_unit(item.get("unit", "g")),
                 }
 
             if item.get("optional", 0) == 1:
@@ -562,14 +536,13 @@ class MediaDiveImporter:
 
         return ingredients if ingredients else None
 
-    def _get_api_medium_data(self, medium_id: str) -> Optional[dict]:
+    def _get_api_medium_data(self, medium_id: str) -> dict | None:
         """Return one cached MediaDive API medium payload by source identifier."""
         api_data_file = self.mediadive_dir.parent / "mediadive_api" / "mediadive_api_media.json"
-        if not api_data_file.exists():
-            return None
-
         # Load API data (cache it for performance)
-        if not hasattr(self, '_api_data_cache'):
+        if not hasattr(self, "_api_data_cache"):
+            if not api_data_file.exists():
+                return None
             try:
                 with open(api_data_file) as f:
                     self._api_data_cache = json.load(f)
@@ -617,7 +590,7 @@ class MediaDiveImporter:
             return f"{percent.group(1)}%{basis} {compound_name} solution"
         return compound_name or "Unnamed stock solution"
 
-    def _parse_api_solutions(self, medium_id: str) -> Optional[list]:
+    def _parse_api_solutions(self, medium_id: str) -> list | None:
         """Preserve stocks referenced by a medium's primary MediaDive solution."""
         medium_data = self._get_api_medium_data(medium_id)
         primary_solutions = (medium_data or {}).get("solutions") or []
@@ -677,7 +650,7 @@ class MediaDiveImporter:
         }
         return unit_map.get(unit, "G_PER_L")
 
-    def _parse_preparation_steps(self, medium_id: str) -> Optional[list]:
+    def _parse_preparation_steps(self, medium_id: str) -> list | None:
         """
         Parse preparation steps from API-fetched data.
 
@@ -705,7 +678,7 @@ class MediaDiveImporter:
             return None
 
         # Load API data (use cache if available)
-        if not hasattr(self, '_api_data_cache'):
+        if not hasattr(self, "_api_data_cache"):
             try:
                 with open(api_data_file) as f:
                     self._api_data_cache = json.load(f)
@@ -742,11 +715,7 @@ class MediaDiveImporter:
         prep_steps = []
         for i, step_text in enumerate(all_steps, 1):
             action = self._classify_preparation_action(step_text)
-            prep_step = {
-                "step_number": i,
-                "action": action,
-                "description": step_text
-            }
+            prep_step = {"step_number": i, "action": action, "description": step_text}
             prep_steps.append(prep_step)
 
         return prep_steps
@@ -862,19 +831,19 @@ class MediaDiveImporter:
             Sanitized filename-safe string (no extension)
         """
         # Replace ALL non-alphanumeric except dash and dot with underscore
-        clean_name = ''
+        clean_name = ""
         for char in name:
-            if char.isalnum() or char in ['-', '.']:
+            if char.isalnum() or char in ["-", "."]:
                 clean_name += char
             else:
-                clean_name += '_'
+                clean_name += "_"
 
         # Collapse multiple consecutive underscores
-        while '__' in clean_name:
-            clean_name = clean_name.replace('__', '_')
+        while "__" in clean_name:
+            clean_name = clean_name.replace("__", "_")
 
         # Remove leading/trailing underscores
-        clean_name = clean_name.strip('_')
+        clean_name = clean_name.strip("_")
 
         return clean_name
 
@@ -909,9 +878,9 @@ class MediaDiveImporter:
             "total_solutions": self.solutions["count"],
             "media_by_type": {
                 "defined": sum(1 for m in self.media["data"] if not m.get("complex_medium")),
-                "complex": sum(1 for m in self.media["data"] if m.get("complex_medium"))
+                "complex": sum(1 for m in self.media["data"] if m.get("complex_medium")),
             },
-            "media_by_source": {}
+            "media_by_source": {},
         }
 
         # Count by source
@@ -926,43 +895,36 @@ def main():
     """CLI entry point."""
     import argparse
 
-    parser = argparse.ArgumentParser(
-        description="Import MediaDive recipes into CultureMech"
-    )
+    parser = argparse.ArgumentParser(description="Import MediaDive recipes into CultureMech")
     parser.add_argument(
-        "-i", "--input",
+        "-i",
+        "--input",
         type=Path,
         required=True,
-        help="MediaDive raw data directory (Layer 1: data/raw/mediadive/)"
+        help="MediaDive raw data directory (Layer 1: data/raw/mediadive/)",
     )
     parser.add_argument(
-        "-o", "--output",
+        "-o",
+        "--output",
         type=Path,
         default="data/normalized_yaml",
-        help="Output directory for normalized YAML files (Layer 3: data/normalized_yaml/)"
+        help="Output directory for normalized YAML files (Layer 3: data/normalized_yaml/)",
     )
     parser.add_argument(
-        "-c", "--compositions",
+        "-c",
+        "--compositions",
         type=Path,
-        help="Optional directory containing composition JSON files"
+        help="Optional directory containing composition JSON files",
     )
     parser.add_argument(
-        "-l", "--limit",
-        type=int,
-        help="Limit number of recipes to import (for testing)"
+        "-l", "--limit", type=int, help="Limit number of recipes to import (for testing)"
     )
-    parser.add_argument(
-        "--stats",
-        action="store_true",
-        help="Show statistics and exit"
-    )
+    parser.add_argument("--stats", action="store_true", help="Show statistics and exit")
 
     args = parser.parse_args()
 
     importer = MediaDiveImporter(
-        mediadive_data_dir=args.input,
-        output_dir=args.output,
-        composition_dir=args.compositions
+        mediadive_data_dir=args.input, output_dir=args.output, composition_dir=args.compositions
     )
 
     if args.stats:

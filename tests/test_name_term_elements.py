@@ -51,6 +51,7 @@ KNOWN_NO_SALT_TERM = {
 @pytest.fixture(scope="module")
 def mismatches():
     from oaklib import get_adapter
+
     adapter = get_adapter("sqlite:obo:chebi")
     formulas: dict[str, str] = {}
 
@@ -60,7 +61,7 @@ def mismatches():
                 meta = adapter.entity_metadata_map(tid) or {}
                 vals = meta.get("chemrof:generalized_empirical_formula") or [""]
                 formulas[tid] = vals[0] if vals else ""
-            except Exception:                                     # noqa: BLE001
+            except Exception:  # noqa: BLE001
                 formulas[tid] = ""
         return formulas[tid]
 
@@ -68,6 +69,7 @@ def mismatches():
     # suite's budget. Only preferred_term and the CHEBI id under it are needed, and
     # distinct (name, id) pairs are checked once rather than per row.
     import re as _re
+
     PREF = _re.compile(r"^\s*-?\s*preferred_term:\s*(.+?)\s*$")
     IDL = _re.compile(r"^\s*id:\s*(CHEBI:\d+)\s*$")
     pairs = set()
@@ -107,7 +109,8 @@ def mismatches():
 def test_no_grounding_lacks_an_element_its_name_demands(mismatches):
     assert not mismatches, (
         f"{len(mismatches)} grounding(s) name an element the term's ChEBI formula lacks "
-        f"(#276/#278):\n  " + "\n  ".join(f"{n!r} -> {t} lacks {m}" for n, t, m in mismatches[:15]))
+        f"(#276/#278):\n  " + "\n  ".join(f"{n!r} -> {t} lacks {m}" for n, t, m in mismatches[:15])
+    )
 
 
 def test_the_detector_actually_detects():
@@ -119,8 +122,9 @@ def test_the_detector_actually_detects():
     # correct groundings it must NOT flag
     assert not name_elements("MgSO4 x 7 H2O") - formula_elements("7H2O.Mg.O4S")
     assert not name_elements("KNO3") - formula_elements("K.NO3")
-    assert not name_elements("VOSO4 x 2 H2O") - formula_elements("2H2O.O4S.OV"), \
-        "V inside the token OV must be found"
+    assert not name_elements("VOSO4 x 2 H2O") - formula_elements(
+        "2H2O.O4S.OV"
+    ), "V inside the token OV must be found"
     # designations that are not formulae
     assert name_elements("Vitamin B12") == set()
     assert name_elements("Thiamine (Vitamin B1)") == set()
@@ -152,9 +156,9 @@ def test_the_se_si_collapse_is_gone_from_the_corpus():
     PREF = _re.compile(r"^\s*-?\s*preferred_term:\s*(.+?)\s*$")
     IDL = _re.compile(r"^\s*id:\s*(CHEBI:\d+)\s*$")
     wrong = {
-        "CHEBI:32586": _re.compile(r"na2seo4|selenate|seo4", _re.I),   # sodium sulfate decahydrate
-        "CHEBI:86477": _re.compile(r"na2sio3|silicate|sio3", _re.I),   # sodium sulfite
-        "CHEBI:140435": _re.compile(r"cholesterol", _re.I),            # deuterated standard (#305)
+        "CHEBI:32586": _re.compile(r"na2seo4|selenate|seo4", _re.I),  # sodium sulfate decahydrate
+        "CHEBI:86477": _re.compile(r"na2sio3|silicate|sio3", _re.I),  # sodium sulfite
+        "CHEBI:140435": _re.compile(r"cholesterol", _re.I),  # deuterated standard (#305)
     }
     offenders = []
     for root in ROOTS:

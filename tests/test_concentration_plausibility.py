@@ -6,6 +6,7 @@ curator in false positives on legitimately concentrated media. These tests pin
 the three confirmed real-world cases from #118 as must-detect, and pin ordinary
 final-medium concentrations as must-not-detect.
 """
+
 from __future__ import annotations
 
 import importlib.util
@@ -43,8 +44,11 @@ def corpus_findings(acp, media_records):
 
 
 def _ing(name, value, unit="G_PER_L", ident=None):
-    return {"preferred_term": name, "term": ({"id": ident} if ident else None),
-            "concentration": {"value": value, "unit": unit}}
+    return {
+        "preferred_term": name,
+        "term": ({"id": ident} if ident else None),
+        "concentration": {"value": value, "unit": unit},
+    }
 
 
 # --- must detect: the confirmed cases from #118 ---------------------------
@@ -56,13 +60,16 @@ def test_water_at_preparation_volume(acp):
     assert hit and hit[0] == "WATER_AS_VOLUME"
 
 
-@pytest.mark.parametrize("name,value", [
-    ("MnCl2 x 4 H2O", "180"),
-    ("Na2B4O7 x 10 H2O", "450"),
-    ("ZnSO4 x 7 H2O", "22"),
-    ("CuCl2 x 2 H2O", "5"),
-    ("Na2MoO4 x 2 H2O", "3"),
-])
+@pytest.mark.parametrize(
+    "name,value",
+    [
+        ("MnCl2 x 4 H2O", "180"),
+        ("Na2B4O7 x 10 H2O", "450"),
+        ("ZnSO4 x 7 H2O", "22"),
+        ("CuCl2 x 2 H2O", "5"),
+        ("Na2MoO4 x 2 H2O", "3"),
+    ],
+)
 def test_trace_salts_at_stock_magnitude(acp, name, value):
     hit = acp.check_ingredient(_ing(name, value))
     assert hit and hit[0] == "TRACE_SALT_AS_STOCK", f"{name} {value} not flagged"
@@ -77,14 +84,17 @@ def test_resazurin_unit_slip(acp):
 # --- must NOT detect: ordinary final-medium values ------------------------
 
 
-@pytest.mark.parametrize("name,value", [
-    ("NaCl", "10"),               # bulk salt, ordinary
-    ("Glucose", "20"),            # carbon source
-    ("Yeast extract", "5"),
-    ("Agar", "15"),
-    ("Distilled water", "1"),     # implausible in another way, but not a volume
-    ("MgSO4 x 7 H2O", "0.5"),     # not a trace element
-])
+@pytest.mark.parametrize(
+    "name,value",
+    [
+        ("NaCl", "10"),  # bulk salt, ordinary
+        ("Glucose", "20"),  # carbon source
+        ("Yeast extract", "5"),
+        ("Agar", "15"),
+        ("Distilled water", "1"),  # implausible in another way, but not a volume
+        ("MgSO4 x 7 H2O", "0.5"),  # not a trace element
+    ],
+)
 def test_ordinary_concentrations_are_not_flagged(acp, name, value):
     assert acp.check_ingredient(_ing(name, value)) is None
 
@@ -125,12 +135,24 @@ def test_flattened_cocktail_requires_no_solutions_block(acp, tmp_path):
     rec = tmp_path / "bacterial"
     rec.mkdir()
     import yaml
-    (rec / "x.yaml").write_text(yaml.dump({
-        "id": "CultureMech:1", "solutions": [{"preferred_term": "vitamins"}],
-        "ingredients": [],
-    }))
-    rows = [{"finding": "INDICATOR_UNIT_SLIP", "file_path": "bacterial/x.yaml",
-             "record_id": "CultureMech:1"} for _ in range(5)]
+
+    (rec / "x.yaml").write_text(
+        yaml.dump(
+            {
+                "id": "CultureMech:1",
+                "solutions": [{"preferred_term": "vitamins"}],
+                "ingredients": [],
+            }
+        )
+    )
+    rows = [
+        {
+            "finding": "INDICATOR_UNIT_SLIP",
+            "file_path": "bacterial/x.yaml",
+            "record_id": "CultureMech:1",
+        }
+        for _ in range(5)
+    ]
     [summary] = acp.summarize_records(rows, tmp_path)
     assert summary["has_solutions_block"] == "yes"
     assert summary["flattened_cocktail"] == "no"
@@ -140,9 +162,16 @@ def test_flattened_cocktail_detected_without_solutions_block(acp, tmp_path):
     rec = tmp_path / "bacterial"
     rec.mkdir()
     import yaml
+
     (rec / "y.yaml").write_text(yaml.dump({"id": "CultureMech:2", "ingredients": []}))
-    rows = [{"finding": "INDICATOR_UNIT_SLIP", "file_path": "bacterial/y.yaml",
-             "record_id": "CultureMech:2"} for _ in range(3)]
+    rows = [
+        {
+            "finding": "INDICATOR_UNIT_SLIP",
+            "file_path": "bacterial/y.yaml",
+            "record_id": "CultureMech:2",
+        }
+        for _ in range(3)
+    ]
     [summary] = acp.summarize_records(rows, tmp_path)
     assert summary["flattened_cocktail"] == "yes"
 
@@ -151,9 +180,15 @@ def test_single_flagged_row_is_not_a_cocktail(acp, tmp_path):
     rec = tmp_path / "bacterial"
     rec.mkdir()
     import yaml
+
     (rec / "z.yaml").write_text(yaml.dump({"id": "CultureMech:3", "ingredients": []}))
-    rows = [{"finding": "INDICATOR_UNIT_SLIP", "file_path": "bacterial/z.yaml",
-             "record_id": "CultureMech:3"}]
+    rows = [
+        {
+            "finding": "INDICATOR_UNIT_SLIP",
+            "file_path": "bacterial/z.yaml",
+            "record_id": "CultureMech:3",
+        }
+    ]
     [summary] = acp.summarize_records(rows, tmp_path)
     assert summary["flattened_cocktail"] == "no"
 
@@ -268,13 +303,15 @@ def test_the_cocktail_baseline_matches_the_justfile(acp):
     """Same drift guard as the row baseline: two copies of a number meant to
     change must be lowered together (#170)."""
     import re
+
     justfile = (REPO_ROOT / "project.justfile").read_text()
     block = justfile.split("audit-concentration-plausibility", 1)[1][:400]
     match = re.search(r"--max-cocktails\s+(\d+)", block)
     assert match, "the recipe no longer passes --max-cocktails; the sharper gate is off"
     assert int(match.group(1)) == COCKTAIL_BASELINE, (
         f"justfile gates cocktails at {match.group(1)} but this file baselines at "
-        f"{COCKTAIL_BASELINE}; lower both together")
+        f"{COCKTAIL_BASELINE}; lower both together"
+    )
 
 
 def test_the_gate_baselines_match_the_current_corpus(acp, media_records):
@@ -287,12 +324,12 @@ def test_the_gate_baselines_match_the_current_corpus(acp, media_records):
     """
     rows = acp.audit_parsed(media_records)
     rows_baseline = CONCENTRATION_BACKLOG_BASELINE
-    assert len(rows) <= rows_baseline, (
-        f"{len(rows)} rows exceeds the gate baseline {rows_baseline}")
+    assert len(rows) <= rows_baseline, f"{len(rows)} rows exceeds the gate baseline {rows_baseline}"
     # A baseline far above the real count cannot fail, which is worse than no gate.
     assert rows_baseline - len(rows) <= 200, (
         f"gate baseline {rows_baseline} is {rows_baseline - len(rows)} above the "
-        "actual count — tighten it or it will never fire")
+        "actual count — tighten it or it will never fire"
+    )
 
     # The COCKTAIL baseline is the sharper gate, so it needs the same anti-vacuous
     # guard, not just `> 0` (#221): as the cocktail backlog is repaired the real
@@ -302,21 +339,29 @@ def test_the_gate_baselines_match_the_current_corpus(acp, media_records):
     # CI (193s). The cocktail rule mirrors summarize_records: no `solutions:` block
     # and >= COCKTAIL_MIN_ROWS indicator OR trace rows.
     from collections import Counter
-    has_solutions = {str(p.relative_to(acp.NORMALIZED)): bool(d.get("solutions"))
-                     for p, d in media_records}
+
+    has_solutions = {
+        str(p.relative_to(acp.NORMALIZED)): bool(d.get("solutions")) for p, d in media_records
+    }
     per_record: dict[str, Counter] = {}
     for r in rows:
         per_record.setdefault(r["file_path"], Counter())[r["finding"]] += 1
     cocktails = sum(
-        1 for fp, c in per_record.items()
+        1
+        for fp, c in per_record.items()
         if not has_solutions.get(fp, False)
-        and (c["INDICATOR_UNIT_SLIP"] >= acp.COCKTAIL_MIN_ROWS
-             or c["TRACE_SALT_AS_STOCK"] >= acp.COCKTAIL_MIN_ROWS))
-    assert cocktails <= COCKTAIL_BASELINE, (
-        f"{cocktails} flattened cocktails exceeds the baseline {COCKTAIL_BASELINE}")
+        and (
+            c["INDICATOR_UNIT_SLIP"] >= acp.COCKTAIL_MIN_ROWS
+            or c["TRACE_SALT_AS_STOCK"] >= acp.COCKTAIL_MIN_ROWS
+        )
+    )
+    assert (
+        cocktails <= COCKTAIL_BASELINE
+    ), f"{cocktails} flattened cocktails exceeds the baseline {COCKTAIL_BASELINE}"
     assert COCKTAIL_BASELINE - cocktails <= 50, (
         f"cocktail baseline {COCKTAIL_BASELINE} is {COCKTAIL_BASELINE - cocktails} "
-        f"above the actual {cocktails} — tighten it or it will never fire")
+        f"above the actual {cocktails} — tighten it or it will never fire"
+    )
 
 
 def test_the_gate_is_wired_into_ci():

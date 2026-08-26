@@ -313,12 +313,18 @@ class TogoImporter:
         exactly equals the sum of millilitre components in its matching section. That
         evidence makes both the stock-batch basis and final mixed-batch volume explicit.
         """
-        components = [section for section in medium.get("components", []) if isinstance(section, dict)]
+        components = [
+            section for section in medium.get("components", []) if isinstance(section, dict)
+        ]
         primary_sections = [
-            section for section in components if not self._solution_name(section.get("subcomponent_name"))
+            section
+            for section in components
+            if not self._solution_name(section.get("subcomponent_name"))
         ]
         nested_sections = [
-            section for section in components if self._solution_name(section.get("subcomponent_name"))
+            section
+            for section in components
+            if self._solution_name(section.get("subcomponent_name"))
         ]
         if not primary_sections or not nested_sections:
             return []
@@ -382,8 +388,7 @@ class TogoImporter:
             if isinstance(row, dict) and str(row.get("comment") or "").strip()
         ]
         section_indices = sorted(
-            int(section.get("paragraph_index") or 0)
-            for _, section, _ in matches
+            int(section.get("paragraph_index") or 0) for _, section, _ in matches
         )
         solutions = []
         for reference, section, batch_volume_ml in matches:
@@ -491,9 +496,7 @@ class TogoImporter:
                 composition.append(ingredient)
         return composition, nested_references
 
-    def _solution_from_item(
-        self, item: dict, local_sections: dict[str, dict]
-    ) -> dict | None:
+    def _solution_from_item(self, item: dict, local_sections: dict[str, dict]) -> dict | None:
         """Convert a primary-recipe stock addition without flattening its contents."""
         # A concentration-only reagent such as 5 M NaOH is normally an adjustment
         # reagent named in preparation prose, not a quantified stock addition.
@@ -509,9 +512,7 @@ class TogoImporter:
             composition: list[dict] = []
             nested_references: list[str] = []
         else:
-            composition, nested_references = self._local_solution_composition(
-                item, local_section
-            )
+            composition, nested_references = self._local_solution_composition(item, local_section)
         solution: dict[str, Any] = {
             "preferred_term": name,
             "composition": composition,
@@ -549,9 +550,7 @@ class TogoImporter:
             solution["notes"] = " ".join(notes)
         return solution
 
-    def _extract_primary_components(
-        self, medium: dict
-    ) -> tuple[list[dict], list[dict]] | None:
+    def _extract_primary_components(self, medium: dict) -> tuple[list[dict], list[dict]] | None:
         """Extract final ingredients and stock additions from TOGO's primary layers.
 
         TOGO calls each final-recipe paragraph ``main solution N``. Other named
@@ -597,9 +596,10 @@ class TogoImporter:
                 )
                 if ingredient is not None:
                     if self._is_gas_item(item):
-                        gas_key = str(item.get("gmo_id") or "").strip() or str(
-                            ingredient.get("preferred_term") or ""
-                        ).casefold()
+                        gas_key = (
+                            str(item.get("gmo_id") or "").strip()
+                            or str(ingredient.get("preferred_term") or "").casefold()
+                        )
                         if gas_key in gas_keys:
                             continue
                         gas_keys.add(gas_key)

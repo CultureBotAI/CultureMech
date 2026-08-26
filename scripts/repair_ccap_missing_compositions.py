@@ -153,13 +153,9 @@ def nss_recipe() -> dict[str, Any]:
             "CHEBI:17439",
             "cyanocob(III)alamin",
         ),
-        mapped_ingredient(
-            "Folic acid", "0.0004", "G_PER_L", "CHEBI:27470", "folic acid"
-        ),
+        mapped_ingredient("Folic acid", "0.0004", "G_PER_L", "CHEBI:27470", "folic acid"),
         mapped_ingredient("Inositol", "1.0", "G_PER_L", "CHEBI:24848", "inositol"),
-        mapped_ingredient(
-            "Nicotinic acid", "0.02", "G_PER_L", "CHEBI:15940", "nicotinic acid"
-        ),
+        mapped_ingredient("Nicotinic acid", "0.02", "G_PER_L", "CHEBI:15940", "nicotinic acid"),
         mapped_ingredient(
             "Thiamine HCl",
             "0.1",
@@ -171,9 +167,7 @@ def nss_recipe() -> dict[str, Any]:
     ]
     return {
         "ingredients": [
-            mapped_ingredient(
-                "Tricine", "0.50", "G_PER_L", "CHEBI:46760", "tricine"
-            ),
+            mapped_ingredient("Tricine", "0.50", "G_PER_L", "CHEBI:46760", "tricine"),
             mapped_ingredient(
                 "Filtered natural seawater",
                 "1",
@@ -243,9 +237,7 @@ def wmy_recipe() -> dict[str, Any]:
                 "FOODON:03301056",
                 "malt extract",
             ),
-            mapped_ingredient(
-                "Distilled water", "1", "L", "CHEBI:15377", "water"
-            ),
+            mapped_ingredient("Distilled water", "1", "L", "CHEBI:15377", "water"),
         ],
         "solutions": [],
         "preparation_steps": [
@@ -264,9 +256,7 @@ def sna_recipe() -> dict[str, Any]:
     return {
         "ingredients": [
             mapped_ingredient("Nutrient agar (Oxoid CM3)", "28.0", "G_PER_L"),
-            mapped_ingredient(
-                "NaCl", "35.0", "G_PER_L", "CHEBI:26710", "sodium chloride"
-            ),
+            mapped_ingredient("NaCl", "35.0", "G_PER_L", "CHEBI:26710", "sodium chloride"),
             mapped_ingredient(
                 "Filtered natural seawater",
                 "1",
@@ -319,9 +309,7 @@ def descriptor_projection(row: dict[str, Any]) -> dict[str, Any]:
 
 def recipe_projection(doc: dict[str, Any]) -> dict[str, Any]:
     return {
-        "ingredients": [
-            descriptor_projection(row) for row in doc.get("ingredients") or []
-        ],
+        "ingredients": [descriptor_projection(row) for row in doc.get("ingredients") or []],
         "solutions": [descriptor_projection(row) for row in doc.get("solutions") or []],
         "preparation_steps": copy.deepcopy(doc.get("preparation_steps") or []),
         "ph_range": copy.deepcopy(doc.get("ph_range")),
@@ -348,9 +336,7 @@ def validate_source_files(source_dir: Path) -> None:
             raise ValueError(f"missing reviewed source file: {path}")
         actual_hash = hashlib.sha256(path.read_bytes()).hexdigest()
         if actual_hash != expected_hash:
-            raise ValueError(
-                f"{path}: SHA-256 {actual_hash}, expected reviewed {expected_hash}"
-            )
+            raise ValueError(f"{path}: SHA-256 {actual_hash}, expected reviewed {expected_hash}")
 
 
 def _validate_precondition(doc: dict[str, Any], target: Target) -> None:
@@ -381,9 +367,7 @@ def _assert_applied(doc: dict[str, Any], target: Target) -> None:
         raise ValueError(f"{target.relative_path}: source verification note is missing")
 
 
-def repair_document(
-    doc: dict[str, Any], target: Target
-) -> tuple[dict[str, Any], bool]:
+def repair_document(doc: dict[str, Any], target: Target) -> tuple[dict[str, Any], bool]:
     if history_has_action(doc):
         _assert_applied(doc, target)
         return doc, False

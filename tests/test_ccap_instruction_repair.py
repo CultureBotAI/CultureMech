@@ -37,17 +37,21 @@ def test_simple_repair_is_guarded_and_idempotent(migration):
         record_id="CultureMech:000001",
         source="MR_example.pdf",
         rows=(migration.row("For agar, add", "15", "G_PER_L"),),
-        replacements=(migration.IngredientSpec(
-            "Water", "1", "L", "Source component.", "CHEBI:15377", "water", True
-        ),),
+        replacements=(
+            migration.IngredientSpec(
+                "Water", "1", "L", "Source component.", "CHEBI:15377", "water", True
+            ),
+        ),
         steps=(migration.add_agar(),),
     )
     doc = {
         "id": "CultureMech:000001",
-        "ingredients": [{
-            "preferred_term": "For agar, add",
-            "concentration": {"value": "15", "unit": "G_PER_L"},
-        }],
+        "ingredients": [
+            {
+                "preferred_term": "For agar, add",
+                "concentration": {"value": "15", "unit": "G_PER_L"},
+            }
+        ],
         "curation_history": [],
     }
 
@@ -72,18 +76,26 @@ def test_composite_repair_restores_constituent_media(migration):
         source="MR_mix.pdf",
         current_rows=(migration.row("Soil is prepared as above.", "105", "G_PER_L"),),
         ingredients=(),
-        solutions=(migration.SolutionSpec(
-            "Base medium", "500", "ML_PER_L", "CultureMech:000003", "Base",
-            "One half of the mixture.",
-        ),),
+        solutions=(
+            migration.SolutionSpec(
+                "Base medium",
+                "500",
+                "ML_PER_L",
+                "CultureMech:000003",
+                "Base",
+                "One half of the mixture.",
+            ),
+        ),
         steps=(migration.step("MIX", "Mix constituent media."),),
     )
     doc = {
         "id": "CultureMech:000002",
-        "ingredients": [{
-            "preferred_term": "Soil is prepared as above.",
-            "concentration": {"value": "105", "unit": "G_PER_L"},
-        }],
+        "ingredients": [
+            {
+                "preferred_term": "Soil is prepared as above.",
+                "concentration": {"value": "105", "unit": "G_PER_L"},
+            }
+        ],
         "curation_history": [],
     }
 

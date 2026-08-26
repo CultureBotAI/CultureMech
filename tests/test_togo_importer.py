@@ -82,9 +82,7 @@ def test_complete_local_batches_are_not_flattened() -> None:
             "concentration": {"value": "100", "unit": "G_PER_L"},
         },
     ]
-    assert "NaOH" not in {
-        row["preferred_term"] for row in recipe["solutions"][0]["composition"]
-    }
+    assert "NaOH" not in {row["preferred_term"] for row in recipe["solutions"][0]["composition"]}
     assert len(recipe["preparation_steps"]) == 2
 
 

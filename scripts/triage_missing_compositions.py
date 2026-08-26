@@ -100,7 +100,9 @@ DEFAULT_OUT = REPO / "data" / "import_tracking" / "reports" / "missing_compositi
 
 PLACEHOLDER = re.compile(
     r"see\s+source|refer\s+to|not\s+specified|composition\s+not\s+available|"
-    r"contact\s+source|proprietary", re.I)
+    r"contact\s+source|proprietary",
+    re.I,
+)
 
 # "Trace element solution (medium 929)", "Solution C, medium 1275", "10 x M9 salts",
 # "Phosphate buffer (10x) (medium 1341)".
@@ -114,7 +116,9 @@ PLACEHOLDER = re.compile(
 # "Vitamin mixture (medium 1001)", "Trace elements SL-12".
 SOLUTION_NAMED = re.compile(
     r"\bsolutions?\b|\bbuffer\b|\bstock\b|\bmixture\b|\bSL-?\d+\b|"
-    r"^\s*\d+\s*x\b|\(\s*\d+\s*x\s*\)", re.I)
+    r"^\s*\d+\s*x\b|\(\s*\d+\s*x\s*\)",
+    re.I,
+)
 NAME_CITES_MEDIUM = re.compile(r"\bmedium\s+(\d+)\b", re.I)
 
 
@@ -160,8 +164,9 @@ def _mediadive_ids() -> set[str]:
     return {str(i) for i in (doc.get("composition_ids") or [])}
 
 
-def triage_parsed(records: list[tuple[str, dict[str, Any]]],
-                  mediadive_ids: set[str] | None = None) -> list[dict[str, str]]:
+def triage_parsed(
+    records: list[tuple[str, dict[str, Any]]], mediadive_ids: set[str] | None = None
+) -> list[dict[str, str]]:
     """Pure function over parsed records, so tests need no fixture files."""
     if mediadive_ids is None:
         mediadive_ids = _mediadive_ids()
@@ -174,23 +179,24 @@ def triage_parsed(records: list[tuple[str, dict[str, Any]]],
             continue
         name = str(doc.get("original_name") or doc.get("name") or "")
         notes = str(doc.get("notes") or "")
-        source = (m.group(1).strip() if (m := re.search(r"Source:\s*([^|\n]+)", notes))
-                  else "")
+        source = m.group(1).strip() if (m := re.search(r"Source:\s*([^|\n]+)", notes)) else ""
         looks_like_solution = bool(SOLUTION_NAMED.search(name))
         cited = NAME_CITES_MEDIUM.search(name)
         # Recorded, NOT proposed as a fix: the cited medium is the one the solution
         # is defined INSIDE, so its composition is the whole medium (see docstring).
         cites = cited.group(1) if cited else ""
-        rows.append({
-            "file_path": rel,
-            "record_id": str(doc.get("id") or ""),
-            "name": name,
-            "kind": kind,
-            "source": source[:40],
-            "looks_like_a_solution": "yes" if looks_like_solution else "",
-            "name_cites_medium": cites,
-            "cited_medium_in_local_dump": "yes" if cites in mediadive_ids and cites else "",
-        })
+        rows.append(
+            {
+                "file_path": rel,
+                "record_id": str(doc.get("id") or ""),
+                "name": name,
+                "kind": kind,
+                "source": source[:40],
+                "looks_like_a_solution": "yes" if looks_like_solution else "",
+                "name_cites_medium": cites,
+                "cited_medium_in_local_dump": "yes" if cites in mediadive_ids and cites else "",
+            }
+        )
     rows.sort(key=lambda r: (r["kind"], r["source"], r["file_path"]))
     return rows
 
@@ -207,43 +213,68 @@ def collect(normalized: Path = NORMALIZED) -> list[dict[str, str]]:
 
 
 def main(argv: list[str] | None = None) -> int:
-    ap = argparse.ArgumentParser(description=__doc__,
-                                 formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
     ap.add_argument("--normalized-dir", type=Path, default=NORMALIZED)
     ap.add_argument("--out", type=Path, default=DEFAULT_OUT)
-    ap.add_argument("--max-allowed", type=int, default=None,
-                    help="Exit 1 if more than N records lack a composition.")
-    ap.add_argument("--refresh-mediadive-index", action="store_true",
-                    help="Rebuild the tracked index from the local gitignored dump. "
-                         "The one step that reads untracked state; commit the diff.")
+    ap.add_argument(
+        "--max-allowed",
+        type=int,
+        default=None,
+        help="Exit 1 if more than N records lack a composition.",
+    )
+    ap.add_argument(
+        "--refresh-mediadive-index",
+        action="store_true",
+        help="Rebuild the tracked index from the local gitignored dump. "
+        "The one step that reads untracked state; commit the diff.",
+    )
     args = ap.parse_args(argv)
 
     if args.refresh_mediadive_index:
         ids = sorted(_scan_untracked_dump(), key=lambda s: (len(s), s))
         if not ids:
-            print(f"No local dump at {MEDIADIVE_COMPOSITIONS}; index not written.",
-                  file=sys.stderr)
+            print(f"No local dump at {MEDIADIVE_COMPOSITIONS}; index not written.", file=sys.stderr)
             return 1
         MEDIADIVE_INDEX.parent.mkdir(parents=True, exist_ok=True)
-        MEDIADIVE_INDEX.write_text(json.dumps({
-            "description": "Mediadive composition ids available upstream. Tracked so "
-                           "triage_missing_compositions.py is reproducible from git "
-                           "alone (#196). Refresh with --refresh-mediadive-index.",
-            "composition_ids": ids}, indent=2) + "\n")
+        MEDIADIVE_INDEX.write_text(
+            json.dumps(
+                {
+                    "description": "Mediadive composition ids available upstream. Tracked so "
+                    "triage_missing_compositions.py is reproducible from git "
+                    "alone (#196). Refresh with --refresh-mediadive-index.",
+                    "composition_ids": ids,
+                },
+                indent=2,
+            )
+            + "\n"
+        )
         print(f"Wrote {len(ids)} ids -> {MEDIADIVE_INDEX.relative_to(REPO)}")
         return 0
 
     rows = collect(args.normalized_dir)
     args.out.parent.mkdir(parents=True, exist_ok=True)
     with args.out.open("w", newline="", encoding="utf-8") as fh:
-        w = csv.DictWriter(fh, delimiter="\t", fieldnames=[
-            "file_path", "record_id", "name", "kind", "source",
-            "looks_like_a_solution", "name_cites_medium",
-            "cited_medium_in_local_dump"])
+        w = csv.DictWriter(
+            fh,
+            delimiter="\t",
+            fieldnames=[
+                "file_path",
+                "record_id",
+                "name",
+                "kind",
+                "source",
+                "looks_like_a_solution",
+                "name_cites_medium",
+                "cited_medium_in_local_dump",
+            ],
+        )
         w.writeheader()
         w.writerows(rows)
 
     from collections import Counter
+
     print(f"Records with no usable composition: {len(rows)}\n")
     for k, v in Counter(r["kind"] for r in rows).most_common():
         print(f"  {v:5d}  {k}")
@@ -251,8 +282,10 @@ def main(argv: list[str] | None = None) -> int:
     for k, v in Counter(r["source"] or "(none)" for r in rows).most_common(6):
         print(f"  {v:5d}  {k}")
     sol = [r for r in rows if r["looks_like_a_solution"]]
-    print(f"\n  {len(sol)} are named like a stock SOLUTION, not a medium — these are "
-          f"mis-typed\n      records rather than media with a missing recipe.")
+    print(
+        f"\n  {len(sol)} are named like a stock SOLUTION, not a medium — these are "
+        f"mis-typed\n      records rather than media with a missing recipe."
+    )
     cited = [r for r in rows if r["cited_medium_in_local_dump"]]
     print(f"  {len(cited)} cite a medium number present in the local mediadive dump.")
     print("      NOT auto-repairable: the cited medium is the one the solution is")
@@ -261,8 +294,7 @@ def main(argv: list[str] | None = None) -> int:
     print(f"\nWrote {args.out.relative_to(REPO) if args.out.is_relative_to(REPO) else args.out}")
 
     if args.max_allowed is not None and len(rows) > args.max_allowed:
-        print(f"\nFAIL: {len(rows)} exceeds --max-allowed {args.max_allowed}",
-              file=sys.stderr)
+        print(f"\nFAIL: {len(rows)} exceeds --max-allowed {args.max_allowed}", file=sys.stderr)
         return 1
     return 0
 

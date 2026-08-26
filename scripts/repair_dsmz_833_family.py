@@ -168,6 +168,7 @@ def solution(
 def water(value: str = "1000") -> dict[str, Any]:
     return ingredient("Distilled water", value, "ML_PER_L")
 
+
 DIRECT_INGREDIENTS = [
     ingredient("Na2SO4", "0.697906", "G_PER_L"),
     ingredient("KH2PO4", "0.199402", "G_PER_L"),
@@ -543,7 +544,9 @@ def _source_note() -> str:
 
 def _validate_precondition(doc: dict[str, Any], target: Target) -> None:
     if str(doc.get("id") or "") != target.record_id:
-        raise ValueError(f"{target.relative_path}: id {doc.get('id')!r}, expected {target.record_id}")
+        raise ValueError(
+            f"{target.relative_path}: id {doc.get('id')!r}, expected {target.record_id}"
+        )
     actual_hash = composition_hash(doc)
     if actual_hash != target.expected_pre_hash:
         raise ValueError(

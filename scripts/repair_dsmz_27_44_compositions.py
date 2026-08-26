@@ -380,15 +380,14 @@ def _source_note(target: Target) -> str:
             f"(SHA-256 {hash44}); that source delegates to {SOURCE_URLS['27']} "
             f"(SHA-256 {hash27})."
         )
-    return (
-        f"Composition verified against {SOURCE_URLS['27']} on 2026-08-25 "
-        f"(SHA-256 {hash27})."
-    )
+    return f"Composition verified against {SOURCE_URLS['27']} on 2026-08-25 " f"(SHA-256 {hash27})."
 
 
 def _validate_precondition(doc: dict[str, Any], target: Target) -> None:
     if str(doc.get("id") or "") != target.record_id:
-        raise ValueError(f"{target.relative_path}: id {doc.get('id')!r}, expected {target.record_id}")
+        raise ValueError(
+            f"{target.relative_path}: id {doc.get('id')!r}, expected {target.record_id}"
+        )
     if target.precondition == "flattened":
         if _signature(doc.get("ingredients") or []) != FLATTENED_SIGNATURE:
             raise ValueError(f"{target.relative_path}: flattened ingredient pre-state drifted")
@@ -493,7 +492,9 @@ def main(argv: list[str] | None = None) -> int:
             raise ValueError(f"{path}: expected a YAML mapping")
         repaired, changed = repair_document(doc, target)
         pending.append((path, repaired, changed, target))
-        print(f"{'fix' if changed else 'skip':4s}  {target.relative_path}: DSMZ {target.source_key}")
+        print(
+            f"{'fix' if changed else 'skip':4s}  {target.relative_path}: DSMZ {target.source_key}"
+        )
 
     changed_count = sum(changed for _, _, changed, _ in pending)
     if args.apply:

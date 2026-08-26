@@ -150,9 +150,7 @@ def stock(
 
 
 def water(value: str = "1", unit: str = "L") -> dict[str, Any]:
-    return mapped_ingredient(
-        "Deionized water", value, unit, "CHEBI:15377", "water"
-    )
+    return mapped_ingredient("Deionized water", value, unit, "CHEBI:15377", "water")
 
 
 def variable_material(name: str, notes: str) -> dict[str, Any]:
@@ -166,21 +164,13 @@ def ch_recipe() -> dict[str, Any]:
             stock(
                 "NaCl stock solution",
                 "5.0",
-                [
-                    mapped_ingredient(
-                        "NaCl", "20", "G_PER_L", "CHEBI:26710", "sodium chloride"
-                    )
-                ],
+                [mapped_ingredient("NaCl", "20", "G_PER_L", "CHEBI:26710", "sodium chloride")],
                 "Prepare with 2.0 g NaCl per 100 ml; add 5 ml/L.",
             ),
             stock(
                 "KCl stock solution",
                 "5.0",
-                [
-                    mapped_ingredient(
-                        "KCl", "0.8", "G_PER_L", "CHEBI:32588", "potassium chloride"
-                    )
-                ],
+                [mapped_ingredient("KCl", "0.8", "G_PER_L", "CHEBI:32588", "potassium chloride")],
                 "Prepare with 0.08 g KCl per 100 ml; add 5 ml/L.",
             ),
             stock(
@@ -199,7 +189,9 @@ def ch_recipe() -> dict[str, Any]:
             ),
         ],
         "preparation_steps": [
-            step(1, "MIX", "Add 5 ml of each stock solution and make up to 1 L with deionized water."),
+            step(
+                1, "MIX", "Add 5 ml of each stock solution and make up to 1 L with deionized water."
+            ),
             step(2, "AUTOCLAVE", "Autoclave at 15 psi for 15 minutes."),
         ],
         "medium_type": "DEFINED",
@@ -229,11 +221,7 @@ def merds_recipe() -> dict[str, Any]:
             stock(
                 "NaNO3 stock solution",
                 "2.65",
-                [
-                    mapped_ingredient(
-                        "NaNO3", "75", "G_PER_L", "CHEBI:63005", "sodium nitrate"
-                    )
-                ],
+                [mapped_ingredient("NaNO3", "75", "G_PER_L", "CHEBI:63005", "sodium nitrate")],
                 "Prepare with 7.5 g NaNO3 per 100 ml; add 2.65 ml/L.",
             ),
             stock(
@@ -252,7 +240,11 @@ def merds_recipe() -> dict[str, Any]:
             ),
         ],
         "preparation_steps": [
-            step(1, "MIX", "Add SES medium and both salt stocks, then make up to 1 L with filtered natural seawater."),
+            step(
+                1,
+                "MIX",
+                "Add SES medium and both salt stocks, then make up to 1 L with filtered natural seawater.",
+            ),
             step(2, "AUTOCLAVE", "Autoclave at 15 psi for 15 minutes."),
             step(3, "FILTER_STERILIZE", "Filter the final medium if precipitation is problematic."),
         ],
@@ -300,9 +292,13 @@ def sw_base_ingredients() -> list[dict[str, Any]]:
 
 def sw_steps() -> list[dict[str, Any]]:
     return [
-        step(1, "ALIQUOT", "Place a 1 cm layer of air-dried, sieved calcareous soil in each vessel."),
+        step(
+            1, "ALIQUOT", "Place a 1 cm layer of air-dried, sieved calcareous soil in each vessel."
+        ),
         step(2, "MIX", "Optionally add one grain for organisms that benefit from it."),
-        step(3, "ALIQUOT", "Add deionized water carefully to a depth of 7-10 cm, then plug or cover."),
+        step(
+            3, "ALIQUOT", "Add deionized water carefully to a depth of 7-10 cm, then plug or cover."
+        ),
         step(4, "AUTOCLAVE", "Autoclave at 15 psi for 15 minutes on each of two consecutive days."),
         step(5, "STORE", "Let stand for at least one further day before inoculation."),
     ]
@@ -378,12 +374,30 @@ def soil_extract_recipe(kind: str) -> dict[str, Any]:
         ],
         "solutions": [],
         "preparation_steps": [
-            step(1, "MIX", "Remove stones, roots, and large invertebrates; air-dry and sieve the soil."),
-            step(2, "MIX", "Combine dried soil with twice its volume of supernatant deionized water."),
-            step(3, "AUTOCLAVE", "Autoclave at 15 psi and 126 C for 20 minutes; cool and repeat once."),
+            step(
+                1,
+                "MIX",
+                "Remove stones, roots, and large invertebrates; air-dry and sieve the soil.",
+            ),
+            step(
+                2, "MIX", "Combine dried soil with twice its volume of supernatant deionized water."
+            ),
+            step(
+                3,
+                "AUTOCLAVE",
+                "Autoclave at 15 psi and 126 C for 20 minutes; cool and repeat once.",
+            ),
             step(4, "STORE", "Seal and leave undisturbed for 2-3 weeks so sediment settles."),
-            step(5, "ALIQUOT", "Aseptically decant the supernatant into sterile containers without disturbing sediment."),
-            step(6, "AUTOCLAVE", "Autoclave the final soil extract at 15 psi and 121 C for 15 minutes."),
+            step(
+                5,
+                "ALIQUOT",
+                "Aseptically decant the supernatant into sterile containers without disturbing sediment.",
+            ),
+            step(
+                6,
+                "AUTOCLAVE",
+                "Autoclave the final soil extract at 15 psi and 121 C for 15 minutes.",
+            ),
             step(7, "STORE", "Cool, seal, and store refrigerated."),
         ],
         "medium_type": "COMPLEX",
@@ -431,11 +445,7 @@ def ses_recipe() -> dict[str, Any]:
             stock(
                 "KNO3 stock solution",
                 "20.0",
-                [
-                    mapped_ingredient(
-                        "KNO3", "10.0", "G_PER_L", "CHEBI:63043", "potassium nitrate"
-                    )
-                ],
+                [mapped_ingredient("KNO3", "10.0", "G_PER_L", "CHEBI:63043", "potassium nitrate")],
                 "CCAP SES stock solution 3; add 20 ml/L.",
             ),
             stock(
@@ -503,9 +513,7 @@ RECIPES = {
 
 def recipe_projection(doc: dict[str, Any]) -> dict[str, Any]:
     return {
-        "ingredients": [
-            descriptor_projection(row) for row in doc.get("ingredients") or []
-        ],
+        "ingredients": [descriptor_projection(row) for row in doc.get("ingredients") or []],
         "solutions": [descriptor_projection(row) for row in doc.get("solutions") or []],
         "preparation_steps": copy.deepcopy(doc.get("preparation_steps") or []),
         "ph_value": doc.get("ph_value"),
@@ -535,9 +543,7 @@ def validate_source_files(source_dir: Path) -> None:
             raise ValueError(f"missing reviewed source file: {path}")
         actual_hash = hashlib.sha256(path.read_bytes()).hexdigest()
         if actual_hash != expected_hash:
-            raise ValueError(
-                f"{path}: SHA-256 {actual_hash}, expected reviewed {expected_hash}"
-            )
+            raise ValueError(f"{path}: SHA-256 {actual_hash}, expected reviewed {expected_hash}")
 
 
 def _validate_precondition(doc: dict[str, Any], target: Target) -> None:
@@ -568,9 +574,7 @@ def _assert_applied(doc: dict[str, Any], target: Target) -> None:
         raise ValueError(f"{target.relative_path}: source verification note is missing")
 
 
-def repair_document(
-    doc: dict[str, Any], target: Target
-) -> tuple[dict[str, Any], bool]:
+def repair_document(doc: dict[str, Any], target: Target) -> tuple[dict[str, Any], bool]:
     if history_has_action(doc):
         _assert_applied(doc, target)
         return doc, False

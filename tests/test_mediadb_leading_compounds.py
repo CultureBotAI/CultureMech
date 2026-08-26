@@ -36,7 +36,7 @@ def test_importer_restores_corrupt_atp_and_nad_rows(importer_module, tmp_path):
         '{"data": ['
         '{"id": "2", "name": "4-di-O-methyl-alpha-L-fucoside", "chebi_id": ""},'
         '{"id": "3", "name": "4-dimethoxyphenyl", "chebi_id": ""}'
-        ']}'
+        "]}"
     )
     (data / "mediadb_organisms.json").write_text('{"data": []}')
     importer = importer_module.MediaDBImporter(data, tmp_path / "out")

@@ -30,15 +30,15 @@ def _solution(rows: list[dict], name: str) -> dict:
 
 
 def test_selected_identities_exist_in_actual_mim_sssom(repair_module) -> None:
-    repair_module.validate_mim_terms(repair_module.MIM_SSSOM)
     assert len(repair_module.MIM_TERMS) == 20
+    if not repair_module.MIM_SSSOM.is_file():
+        pytest.skip("authoritative MIM SSSOM sibling is unavailable")
+    repair_module.validate_mim_terms(repair_module.MIM_SSSOM)
 
 
 def test_basal_l15b_formula_and_unmapped_powder(repair_module) -> None:
     recipe = repair_module.RECIPE
-    values = {
-        row["preferred_term"]: row["concentration"] for row in recipe["ingredients"]
-    }
+    values = {row["preferred_term"]: row["concentration"] for row in recipe["ingredients"]}
     assert values["L-aspartic acid"] == {"value": "0.299", "unit": "G_PER_L"}
     assert values["D-glucose"] == {"value": "14.4105", "unit": "G_PER_L"}
     assert values["Cell culture grade water"] == {"value": "1", "unit": "L"}
@@ -54,9 +54,7 @@ def test_basal_l15b_formula_and_unmapped_powder(repair_module) -> None:
 def test_mineral_stock_materializes_source_substocks_within_d(repair_module) -> None:
     mineral_d = _solution(repair_module.RECIPE["solutions"], "L-15B mineral stock solution D")
     assert mineral_d["concentration"] == {"value": "1", "unit": "ML_PER_L"}
-    values = {
-        row["preferred_term"]: row["concentration"] for row in mineral_d["composition"]
-    }
+    values = {row["preferred_term"]: row["concentration"] for row in mineral_d["composition"]}
     assert values["CoCl2 x 6 H2O"] == {"value": "0.002", "unit": "G_PER_L"}
     assert values["MnSO4 x H2O"] == {"value": "0.016", "unit": "G_PER_L"}
     assert values["ZnSO4 x 7 H2O"] == {"value": "0.020", "unit": "G_PER_L"}

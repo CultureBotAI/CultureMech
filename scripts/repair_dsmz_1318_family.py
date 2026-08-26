@@ -457,7 +457,9 @@ def _source_note() -> str:
 
 def _validate_precondition(doc: dict[str, Any], target: Target) -> None:
     if str(doc.get("id") or "") != target.record_id:
-        raise ValueError(f"{target.relative_path}: id {doc.get('id')!r}, expected {target.record_id}")
+        raise ValueError(
+            f"{target.relative_path}: id {doc.get('id')!r}, expected {target.record_id}"
+        )
     actual_hash = composition_hash(doc)
     if actual_hash != target.expected_pre_hash:
         raise ValueError(

@@ -26,7 +26,7 @@ def load_migration():
 
 def importer_for(payload: dict) -> MediaDiveImporter:
     importer = MediaDiveImporter.__new__(MediaDiveImporter)
-    importer.mediadive_dir = REPO / "data" / "raw" / "mediadive"
+    importer.mediadive_dir = REPO / "tests" / "fixtures" / "missing" / "mediadive"
     importer.ingredients_by_name = {}
     importer._api_data_cache = {"data": [payload]}
     return importer

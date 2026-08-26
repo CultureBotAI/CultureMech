@@ -5,6 +5,7 @@ false positive raises the baseline and permanently weakens the gate, and a false
 negative lets an importer reintroduce the defect. So each detector is tested on
 the real shapes from the corpus, and the near-miss cases that must NOT trip it.
 """
+
 from __future__ import annotations
 
 import importlib.util
@@ -40,52 +41,92 @@ def _findings(aud, doc):
 
 def test_name_landing_in_the_concentration_is_caught(aud):
     """The NBRC_1003 shape: the two fields were swapped on import."""
-    doc = {"id": "CultureMech:007449", "ingredients": [
-        {"preferred_term": "", "concentration": {"value": "MgSO4·7H2O",
-                                                 "unit": "G_PER_L"}}]}
+    doc = {
+        "id": "CultureMech:007449",
+        "ingredients": [
+            {"preferred_term": "", "concentration": {"value": "MgSO4·7H2O", "unit": "G_PER_L"}}
+        ],
+    }
     assert _findings(aud, doc) == {"NAME_IN_CONCENTRATION"}
 
 
 def test_an_empty_name_with_a_real_number_is_a_different_finding(aud):
     """Reported apart from the swap because the name is NOT recoverable here —
     there is nothing to restore it from."""
-    doc = {"ingredients": [
-        {"preferred_term": "", "concentration": {"value": "0.5", "unit": "G_PER_L"}}]}
+    doc = {
+        "ingredients": [
+            {"preferred_term": "", "concentration": {"value": "0.5", "unit": "G_PER_L"}}
+        ]
+    }
     assert _findings(aud, doc) == {"EMPTY_INGREDIENT_NAME"}
 
 
-@pytest.mark.parametrize("value", [
-    "10", "0.5", "1.5-2.0", "<0.1", "~5", "≥2", " 0.5 ", "variable", 10, 2.5,
-    # Scientific notation. The first regex rejected these, and the corpus holds
-    # 1,781 of them — 254 rows of `5e-05` alone. A row with one of these AND an
-    # empty name would have been accused of holding a reagent name.
-    "5e-05", "1e-05", "4.531e-05", "1.0000000000000002e-06", "2.5e-05 - 5e-05",
-    # Placeholders standing in for a missing value; 72 rows carry a bare "-".
-    "-", "--", "n/a", "unknown",
-])
+@pytest.mark.parametrize(
+    "value",
+    [
+        "10",
+        "0.5",
+        "1.5-2.0",
+        "<0.1",
+        "~5",
+        "≥2",
+        " 0.5 ",
+        "variable",
+        10,
+        2.5,
+        # Scientific notation. The first regex rejected these, and the corpus holds
+        # 1,781 of them — 254 rows of `5e-05` alone. A row with one of these AND an
+        # empty name would have been accused of holding a reagent name.
+        "5e-05",
+        "1e-05",
+        "4.531e-05",
+        "1.0000000000000002e-06",
+        "2.5e-05 - 5e-05",
+        # Placeholders standing in for a missing value; 72 rows carry a bare "-".
+        "-",
+        "--",
+        "n/a",
+        "unknown",
+    ],
+)
 def test_legitimate_concentration_values_are_not_names(aud, value):
-    doc = {"ingredients": [
-        {"preferred_term": "", "concentration": {"value": value, "unit": "G_PER_L"}}]}
+    doc = {
+        "ingredients": [
+            {"preferred_term": "", "concentration": {"value": value, "unit": "G_PER_L"}}
+        ]
+    }
     assert _findings(aud, doc) == {"EMPTY_INGREDIENT_NAME"}
 
 
-@pytest.mark.parametrize("value", [
-    "MgSO4·7H2O", "Ethanol", "NaCl", "Tryptone",
-    "Bacto Tryptic Soy Broth w/o Dextrose (Difco)",
-])
+@pytest.mark.parametrize(
+    "value",
+    [
+        "MgSO4·7H2O",
+        "Ethanol",
+        "NaCl",
+        "Tryptone",
+        "Bacto Tryptic Soy Broth w/o Dextrose (Difco)",
+    ],
+)
 def test_real_reagent_names_in_the_concentration_are_still_caught(aud, value):
     """The bias toward "not a name" must not go so far that it misses the defect."""
-    doc = {"ingredients": [
-        {"preferred_term": "", "concentration": {"value": value, "unit": "G_PER_L"}}]}
+    doc = {
+        "ingredients": [
+            {"preferred_term": "", "concentration": {"value": value, "unit": "G_PER_L"}}
+        ]
+    }
     assert _findings(aud, doc) == {"NAME_IN_CONCENTRATION"}
 
 
-@pytest.mark.parametrize("ingredient", [
-    {"preferred_term": ""},                                  # no concentration block
-    {"preferred_term": "", "concentration": {}},             # block, no value
-    {"preferred_term": "", "concentration": {"value": None}},
-    {"preferred_term": "", "concentration": {"value": ""}},
-])
+@pytest.mark.parametrize(
+    "ingredient",
+    [
+        {"preferred_term": ""},  # no concentration block
+        {"preferred_term": "", "concentration": {}},  # block, no value
+        {"preferred_term": "", "concentration": {"value": None}},
+        {"preferred_term": "", "concentration": {"value": ""}},
+    ],
+)
 def test_a_missing_concentration_is_not_evidence_of_a_swap(aud, ingredient):
     """Absence must not be read as a name.
 
@@ -98,24 +139,31 @@ def test_a_missing_concentration_is_not_evidence_of_a_swap(aud, ingredient):
 
 
 def test_a_named_ingredient_is_never_flagged_whatever_its_concentration(aud):
-    doc = {"ingredients": [
-        {"preferred_term": "Glucose", "concentration": {"value": "10", "unit": "G_PER_L"}}]}
+    doc = {
+        "ingredients": [
+            {"preferred_term": "Glucose", "concentration": {"value": "10", "unit": "G_PER_L"}}
+        ]
+    }
     assert _findings(aud, doc) == set()
 
 
 # --- coverage: reagents do not all live in `ingredients` ------------------
 
 
-BAD_ROW = {"preferred_term": "",
-           "concentration": {"value": "MgSO4·7H2O", "unit": "G_PER_L"}}
+BAD_ROW = {"preferred_term": "", "concentration": {"value": "MgSO4·7H2O", "unit": "G_PER_L"}}
 
 
-@pytest.mark.parametrize("doc,location", [
-    ({"ingredients": [BAD_ROW]}, "ingredients"),
-    ({"composition": [BAD_ROW]}, "composition"),
-    ({"solutions": [{"preferred_term": "Trace elements",
-                     "composition": [BAD_ROW]}]}, "solutions[].composition"),
-])
+@pytest.mark.parametrize(
+    "doc,location",
+    [
+        ({"ingredients": [BAD_ROW]}, "ingredients"),
+        ({"composition": [BAD_ROW]}, "composition"),
+        (
+            {"solutions": [{"preferred_term": "Trace elements", "composition": [BAD_ROW]}]},
+            "solutions[].composition",
+        ),
+    ],
+)
 def test_every_reagent_location_is_scanned(aud, doc, location):
     """An ingredients-only scan looks like full coverage and is not.
 
@@ -134,26 +182,37 @@ def test_the_location_column_is_always_populated(aud):
     doc = {
         "ingredients": [BAD_ROW],
         "composition": [BAD_ROW],
-        "solutions": [{
-            "preferred_term": "MgSO4·7H2O0.5g(NH4)2SO40.4gK2HPO40.2gKCl0.1g"
-                              "Distilled water1L",
-            "composition": []}],
+        "solutions": [
+            {
+                "preferred_term": "MgSO4·7H2O0.5g(NH4)2SO40.4gK2HPO40.2gKCl0.1g"
+                "Distilled water1L",
+                "composition": [],
+            }
+        ],
     }
     findings = list(aud.audit_record(doc, REPO_ROOT / "x.yaml"))
     assert len(findings) == 3
     assert all(f.get("location") for f in findings)
     assert {f["location"] for f in findings} == {
-        "ingredients", "composition", "solutions[].preferred_term"}
+        "ingredients",
+        "composition",
+        "solutions[].preferred_term",
+    }
 
 
 # --- UNPARSED_SOLUTION_TABLE ----------------------------------------------
 
 
 def test_a_concatenated_composition_table_is_caught(aud):
-    doc = {"solutions": [{
-        "preferred_term": "MgSO4·7H2O0.5g(NH4)2SO40.4gK2HPO40.2gKCl0.1g"
-                          "Distilled water1LAdjust pH to 2.0 with H2SO4.",
-        "composition": []}]}
+    doc = {
+        "solutions": [
+            {
+                "preferred_term": "MgSO4·7H2O0.5g(NH4)2SO40.4gK2HPO40.2gKCl0.1g"
+                "Distilled water1LAdjust pH to 2.0 with H2SO4.",
+                "composition": [],
+            }
+        ]
+    }
     assert _findings(aud, doc) == {"UNPARSED_SOLUTION_TABLE"}
 
 
@@ -169,76 +228,109 @@ def test_a_catalogue_cross_reference_is_not_a_corrupt_table(aud):
         "Yeast extract--malt extract agar (ISP--2) (see Medium [M35])",
         "Trace element solution (filter--sterilized) (see Medium [M773])",
     ):
-        assert _findings(aud, {"solutions": [
-            {"preferred_term": name, "composition": []}]}) == set(), name
+        assert (
+            _findings(aud, {"solutions": [{"preferred_term": name, "composition": []}]}) == set()
+        ), name
 
 
 def test_a_solution_that_parsed_correctly_is_not_flagged(aud):
     """A populated `composition` means the table was read, whatever the name."""
-    doc = {"solutions": [{
-        "preferred_term": "MgSO4·7H2O0.5g(NH4)2SO40.4gK2HPO40.2gKCl0.1gDistilled water1L",
-        "composition": [{"preferred_term": "MgSO4·7H2O"}]}]}
+    doc = {
+        "solutions": [
+            {
+                "preferred_term": "MgSO4·7H2O0.5g(NH4)2SO40.4gK2HPO40.2gKCl0.1gDistilled water1L",
+                "composition": [{"preferred_term": "MgSO4·7H2O"}],
+            }
+        ]
+    }
     assert _findings(aud, doc) == set()
 
 
 def test_a_short_solution_name_is_never_a_table(aud):
-    assert _findings(aud, {"solutions": [
-        {"preferred_term": "Trace Elements SL-10", "composition": []}]}) == set()
+    assert (
+        _findings(
+            aud, {"solutions": [{"preferred_term": "Trace Elements SL-10", "composition": []}]}
+        )
+        == set()
+    )
 
 
 # --- PROSE_AS_INGREDIENT --------------------------------------------------
 
 
 def test_a_preparation_instruction_parsed_as_an_ingredient_is_caught(aud):
-    doc = {"ingredients": [{
-        "preferred_term": "Make up to 1 litre with deionised water. For agar, add",
-        "concentration": {"value": "15", "unit": "G_PER_L"}}]}
+    doc = {
+        "ingredients": [
+            {
+                "preferred_term": "Make up to 1 litre with deionised water. For agar, add",
+                "concentration": {"value": "15", "unit": "G_PER_L"},
+            }
+        ]
+    }
     assert _findings(aud, doc) == {"PROSE_AS_INGREDIENT"}
 
 
-@pytest.mark.parametrize("name", [
-    "For agar, add",
-    "Make up to",
-    "Add to 1000 ml of distilled water",
-    "Soil is prepared as above.",
-    "To make this medium, omit stock 5 and instead add",
-])
+@pytest.mark.parametrize(
+    "name",
+    [
+        "For agar, add",
+        "Make up to",
+        "Add to 1000 ml of distilled water",
+        "Soil is prepared as above.",
+        "To make this medium, omit stock 5 and instead add",
+    ],
+)
 def test_truncated_ccap_instruction_signatures_are_caught(aud, name):
-    doc = {"ingredients": [{
-        "preferred_term": name,
-        "concentration": {"value": "1", "unit": "G_PER_L"},
-    }]}
+    doc = {
+        "ingredients": [
+            {
+                "preferred_term": name,
+                "concentration": {"value": "1", "unit": "G_PER_L"},
+            }
+        ]
+    }
     assert _findings(aud, doc) == {"PROSE_AS_INGREDIENT"}
 
 
-@pytest.mark.parametrize("name", [
-    "Sodium acetate",           # contains no instruction verb
-    "Yeast extract",
-    "Bacto Tryptic Soy Broth w/o Dextrose (Difco)",
-    "Adenine",                  # starts with the letters of "Add" but is not one
-    "C. difficile supplement",
-    "Trace Mineral Supplement, Catalog No. MD-TMS",
-    "Aqua bidest. filter-sterilized",
-])
+@pytest.mark.parametrize(
+    "name",
+    [
+        "Sodium acetate",  # contains no instruction verb
+        "Yeast extract",
+        "Bacto Tryptic Soy Broth w/o Dextrose (Difco)",
+        "Adenine",  # starts with the letters of "Add" but is not one
+        "C. difficile supplement",
+        "Trace Mineral Supplement, Catalog No. MD-TMS",
+        "Aqua bidest. filter-sterilized",
+    ],
+)
 def test_real_reagent_names_do_not_trip_the_prose_detector(aud, name):
-    doc = {"ingredients": [
-        {"preferred_term": name, "concentration": {"value": "1", "unit": "G_PER_L"}}]}
+    doc = {
+        "ingredients": [
+            {"preferred_term": name, "concentration": {"value": "1", "unit": "G_PER_L"}}
+        ]
+    }
     assert _findings(aud, doc) == set()
 
 
 def test_supplement_used_as_a_verb_is_still_instruction_prose(aud):
-    doc = {"ingredients": [{
-        "preferred_term": "Supplement the medium with sterile serum before inoculation.",
-        "concentration": {"value": "1", "unit": "ML_PER_L"},
-    }]}
+    doc = {
+        "ingredients": [
+            {
+                "preferred_term": "Supplement the medium with sterile serum before inoculation.",
+                "concentration": {"value": "1", "unit": "ML_PER_L"},
+            }
+        ]
+    }
     assert _findings(aud, doc) == {"PROSE_AS_INGREDIENT"}
 
 
 def test_an_instruction_verb_alone_is_not_enough(aud):
     """The conjunction is what keeps this usable: on the real corpus the loose
     filters flag 1,192 ingredient values and the conjunction flags 44."""
-    doc = {"ingredients": [
-        {"preferred_term": "Agar (if needed)", "concentration": {"value": "15"}}]}
+    doc = {
+        "ingredients": [{"preferred_term": "Agar (if needed)", "concentration": {"value": "15"}}]
+    }
     assert _findings(aud, doc) == set()
 
 
@@ -250,11 +342,16 @@ def test_the_audit_exits_non_zero_when_a_baseline_is_exceeded(aud, tmp_path):
 
     corpus = tmp_path / "bacterial"
     corpus.mkdir()
-    (corpus / "bad.yaml").write_text(yaml.safe_dump({
-        "id": "CultureMech:000001",
-        "ingredients": [{"preferred_term": "",
-                         "concentration": {"value": "NaCl", "unit": "G_PER_L"}}],
-    }))
+    (corpus / "bad.yaml").write_text(
+        yaml.safe_dump(
+            {
+                "id": "CultureMech:000001",
+                "ingredients": [
+                    {"preferred_term": "", "concentration": {"value": "NaCl", "unit": "G_PER_L"}}
+                ],
+            }
+        )
+    )
     out = tmp_path / "report.tsv"
     argv = ["--normalized-dir", str(tmp_path), "--out", str(out)]
 
@@ -270,15 +367,30 @@ def test_the_export_gate_counts_only_findings_that_reach_the_graph(aud, tmp_path
 
     corpus = tmp_path / "bacterial"
     corpus.mkdir()
-    (corpus / "ing.yaml").write_text(yaml.safe_dump({
-        "ingredients": [{"preferred_term": "",
-                         "concentration": {"value": "NaCl", "unit": "G_PER_L"}}]}))
+    (corpus / "ing.yaml").write_text(
+        yaml.safe_dump(
+            {
+                "ingredients": [
+                    {"preferred_term": "", "concentration": {"value": "NaCl", "unit": "G_PER_L"}}
+                ]
+            }
+        )
+    )
     argv = ["--normalized-dir", str(tmp_path), "--out", str(tmp_path / "r.tsv")]
 
     # One finding, but nothing exported -> the export gate stays quiet at 0.
     assert aud.main([*argv, "--max-exported", "0"]) == 0
 
-    (corpus / "sol.yaml").write_text(yaml.safe_dump({"solutions": [{
-        "preferred_term": "MgSO4·7H2O0.5g(NH4)2SO40.4gK2HPO40.2gKCl0.1gDistilled water1L",
-        "composition": []}]}))
+    (corpus / "sol.yaml").write_text(
+        yaml.safe_dump(
+            {
+                "solutions": [
+                    {
+                        "preferred_term": "MgSO4·7H2O0.5g(NH4)2SO40.4gK2HPO40.2gKCl0.1gDistilled water1L",
+                        "composition": [],
+                    }
+                ]
+            }
+        )
+    )
     assert aud.main([*argv, "--max-exported", "0"]) == 1

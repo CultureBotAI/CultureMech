@@ -171,10 +171,7 @@ def validate_mim_term(sssom_path: Path) -> None:
 
 
 def _source_note() -> str:
-    return (
-        f"Composition verified against {SOURCE_URL} on 2026-08-25 "
-        f"(SHA-256 {SOURCE_HASH})."
-    )
+    return f"Composition verified against {SOURCE_URL} on 2026-08-25 " f"(SHA-256 {SOURCE_HASH})."
 
 
 def _validate_precondition(doc: dict[str, Any]) -> None:

@@ -67,7 +67,9 @@ DEFAULT_OUT = REPO / "data" / "import_tracking" / "reports" / "review_need_ranki
 
 PLACEHOLDER = re.compile(
     r"see\s+source|refer\s+to|available\s+at|contact\s+source|not\s+specified|"
-    r"\bunknown\b|medium\s+no\.|composition\s+not\s+available|proprietary", re.I)
+    r"\bunknown\b|medium\s+no\.|composition\s+not\s+available|proprietary",
+    re.I,
+)
 # Two or more embedded quantity+unit pairs means a composition block was flattened
 # into one name field rather than parsed (#166).
 #
@@ -119,7 +121,9 @@ def composition_components(doc: dict[str, Any]) -> list[dict[str, Any]]:
         composition = solution.get("composition")
         legacy_ingredients = solution.get("ingredients")
         nested = composition or legacy_ingredients or []
-        nested_components = [i for i in nested if isinstance(i, dict)] if isinstance(nested, list) else []
+        nested_components = (
+            [i for i in nested if isinstance(i, dict)] if isinstance(nested, list) else []
+        )
         components.extend(nested_components or [solution])
     return components
 
@@ -187,14 +191,16 @@ def score_parsed(records: list[tuple[str, dict[str, Any]]]) -> list[dict[str, An
         # A record qualifies only on a signal that is not merely the corpus norm.
         if not any(r not in NORM_LEVEL_SIGNALS for r in reasons):
             continue
-        rows.append({
-            "score": score,
-            "file_path": rel,
-            "record_id": str(doc.get("id") or ""),
-            "name": str(doc.get("original_name") or doc.get("name") or ""),
-            "n_components": str(len(composition_components(doc))),
-            "reasons": "; ".join(reasons),
-        })
+        rows.append(
+            {
+                "score": score,
+                "file_path": rel,
+                "record_id": str(doc.get("id") or ""),
+                "name": str(doc.get("original_name") or doc.get("name") or ""),
+                "n_components": str(len(composition_components(doc))),
+                "reasons": "; ".join(reasons),
+            }
+        )
     rows.sort(key=lambda r: (-r["score"], r["file_path"]))
     return rows
 
@@ -212,8 +218,9 @@ def collect(normalized: Path = NORMALIZED) -> list[dict[str, Any]]:
 
 
 def main(argv: list[str] | None = None) -> int:
-    ap = argparse.ArgumentParser(description=__doc__,
-                                 formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
     ap.add_argument("--normalized-dir", type=Path, default=NORMALIZED)
     ap.add_argument("--out", type=Path, default=DEFAULT_OUT)
     ap.add_argument("--top", type=int, default=0, help="also print the worst N")
@@ -222,16 +229,22 @@ def main(argv: list[str] | None = None) -> int:
     rows = collect(args.normalized_dir)
     args.out.parent.mkdir(parents=True, exist_ok=True)
     with args.out.open("w", newline="", encoding="utf-8") as fh:
-        w = csv.DictWriter(fh, delimiter="\t", fieldnames=[
-            "score", "file_path", "record_id", "name", "n_components", "reasons"])
+        w = csv.DictWriter(
+            fh,
+            delimiter="\t",
+            fieldnames=["score", "file_path", "record_id", "name", "n_components", "reasons"],
+        )
         w.writeheader()
         w.writerows(rows)
 
     buckets = {"70+": 0, "50-69": 0, "30-49": 0, "15-29": 0, "1-14": 0}
     for r in rows:
         s = r["score"]
-        key = ("70+" if s >= 70 else "50-69" if s >= 50 else "30-49" if s >= 30
-               else "15-29" if s >= 15 else "1-14")
+        key = (
+            "70+"
+            if s >= 70
+            else "50-69" if s >= 50 else "30-49" if s >= 30 else "15-29" if s >= 15 else "1-14"
+        )
         buckets[key] += 1
 
     print(f"Records with at least one review signal: {len(rows)}")

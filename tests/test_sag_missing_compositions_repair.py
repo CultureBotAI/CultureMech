@@ -42,8 +42,6 @@ def test_inventory_covers_all_29_sag_sources(repair_module) -> None:
 
 
 def test_selected_identities_exist_in_actual_mim_sssom(repair_module) -> None:
-    repair_module.validate_mim_terms(repair_module.MIM_SSSOM)
-
     def walk(rows: list[dict]):
         for row in rows:
             yield row
@@ -57,6 +55,10 @@ def test_selected_identities_exist_in_actual_mim_sssom(repair_module) -> None:
                 assert chebi == term
             else:
                 assert chebi is None
+
+    if not repair_module.MIM_SSSOM.is_file():
+        pytest.skip("authoritative MIM SSSOM sibling is unavailable")
+    repair_module.validate_mim_terms(repair_module.MIM_SSSOM)
 
 
 def test_shared_sag_stock_math_preserves_stock_boundary(repair_module) -> None:
@@ -110,9 +112,8 @@ def test_soil_water_note_is_typed_source_duplicate(repair_module) -> None:
     assert medium["variant_children"][0]["id"] == "CultureMech:000205"
     assert note["parent_media"]["id"] == "CultureMech:000212"
     assert note["variant_relationship"] == "SOURCE_DUPLICATE"
-    assert (
-        repair_module.recipe_projection(note)["ingredients"]
-        == (repair_module.recipe_projection(medium)["ingredients"])
+    assert repair_module.recipe_projection(note)["ingredients"] == (
+        repair_module.recipe_projection(medium)["ingredients"]
     )
 
 

@@ -343,9 +343,9 @@ TARGETS = (
 
 
 def canonical_hash(value: Any) -> str:
-    encoded = json.dumps(
-        value, sort_keys=True, separators=(",", ":"), ensure_ascii=False
-    ).encode("utf-8")
+    encoded = json.dumps(value, sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode(
+        "utf-8"
+    )
     return hashlib.sha256(encoded).hexdigest()
 
 
@@ -375,12 +375,8 @@ def descriptor_projection(row: dict[str, Any]) -> dict[str, Any]:
 
 def output_projection(output: dict[str, Any]) -> dict[str, Any]:
     return {
-        "ingredients": [
-            descriptor_projection(row) for row in output.get("ingredients") or []
-        ],
-        "solutions": [
-            descriptor_projection(row) for row in output.get("solutions") or []
-        ],
+        "ingredients": [descriptor_projection(row) for row in output.get("ingredients") or []],
+        "solutions": [descriptor_projection(row) for row in output.get("solutions") or []],
         "preparation_steps": copy.deepcopy(output.get("preparation_steps") or []),
     }
 
@@ -413,9 +409,7 @@ def _all_descriptors(output: dict[str, Any]) -> list[dict[str, Any]]:
     return rows + nested
 
 
-def validate_payload(
-    payload: dict[str, Any], target: Target
-) -> dict[str, Any]:
+def validate_payload(payload: dict[str, Any], target: Target) -> dict[str, Any]:
     projection = raw_projection(payload)
     if projection["gm_id"] != target.togo_id:
         raise ValueError(
@@ -442,14 +436,11 @@ def validate_payload(
         target.preparation_step_count,
     )
     if counts != expected_counts:
-        raise ValueError(
-            f"{target.jcm_id}: extracted counts {counts}, expected {expected_counts}"
-        )
+        raise ValueError(f"{target.jcm_id}: extracted counts {counts}, expected {expected_counts}")
     if not output["ingredients"] and not output["solutions"]:
         raise ValueError(f"{target.jcm_id}: source has no usable composition")
     if any(
-        PLACEHOLDER.search(str(row.get("preferred_term") or ""))
-        for row in _all_descriptors(output)
+        PLACEHOLDER.search(str(row.get("preferred_term") or "")) for row in _all_descriptors(output)
     ):
         raise ValueError(f"{target.jcm_id}: source extraction contains a placeholder")
     if any(not row.get("concentration") for row in output["solutions"]):

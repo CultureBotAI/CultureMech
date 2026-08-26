@@ -49,9 +49,7 @@ class Correction:
 CORRECTIONS: dict[str, Correction] = {
     "MEDIADB:33": Correction("ATP", "CHEBI:15422", "ATP", "0.00036", "C00002"),
     **{
-        f"MEDIADB:{medium_id}": Correction(
-            "ATP", "CHEBI:15422", "ATP", expected, "C00002"
-        )
+        f"MEDIADB:{medium_id}": Correction("ATP", "CHEBI:15422", "ATP", expected, "C00002")
         for medium_id, expected in (
             *((str(i), "1.25") for i in range(46, 51)),
             *((str(i), "2.5") for i in range(51, 56)),
@@ -61,9 +59,7 @@ CORRECTIONS: dict[str, Correction] = {
         )
     },
     **{
-        f"MEDIADB:{medium_id}": Correction(
-            "NAD+", "CHEBI:15846", "NAD(+)", "0.00603", "C00003"
-        )
+        f"MEDIADB:{medium_id}": Correction("NAD+", "CHEBI:15846", "NAD(+)", "0.00603", "C00003")
         for medium_id in range(279, 283)
     },
 }

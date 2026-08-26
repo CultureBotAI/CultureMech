@@ -32,9 +32,11 @@ def _solution(recipe: dict, name: str) -> dict:
 
 def test_inventory_and_selected_identities(repair_module) -> None:
     repair_module._validate_inventory()
-    repair_module.validate_mim_terms(repair_module.MIM_SSSOM)
     assert len(repair_module.TARGETS) == 3
     assert len(repair_module.MIM_TERMS) == 37
+    if not repair_module.MIM_SSSOM.is_file():
+        pytest.skip("authoritative MIM SSSOM sibling is unavailable")
+    repair_module.validate_mim_terms(repair_module.MIM_SSSOM)
 
 
 def test_final_volume_scaling_uses_1004_ml_batch(repair_module) -> None:
@@ -77,7 +79,9 @@ def test_unspecified_addition_stock_strengths_are_not_invented(repair_module) ->
 
 
 def test_source_duplicates_are_reciprocal(repair_module) -> None:
-    recipes = {target.relative_path: repair_module.recipe_for(target) for target in repair_module.TARGETS}
+    recipes = {
+        target.relative_path: repair_module.recipe_for(target) for target in repair_module.TARGETS
+    }
     assert {row["id"] for row in recipes[repair_module.CANONICAL_PATH]["variant_children"]} == {
         "CultureMech:004073",
         "CultureMech:009130",

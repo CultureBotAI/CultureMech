@@ -33,9 +33,7 @@ REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO / "scripts"))
 from record_io import write_record  # noqa: E402
 
-MediaDiveImporter = import_module(
-    "culturemech.import.mediadive_importer"
-).MediaDiveImporter
+MediaDiveImporter = import_module("culturemech.import.mediadive_importer").MediaDiveImporter
 
 NORMALIZED = REPO / "data" / "normalized_yaml"
 API_FILE = REPO / "data" / "raw" / "mediadive_api" / "mediadive_api_media.json"
@@ -136,30 +134,28 @@ def repair_document(
     parsed_names = tuple(str(row.get("preferred_term") or "") for row in parsed_ingredients)
     parsed_solution_signatures = tuple(solution_signature(row) for row in parsed_solutions)
     if parsed_names != target.direct_ingredients:
-        raise ValueError(
-            f"{target.path}: direct-ingredient signature drifted: {parsed_names!r}"
-        )
+        raise ValueError(f"{target.path}: direct-ingredient signature drifted: {parsed_names!r}")
     if parsed_solution_signatures != target.solutions:
         raise ValueError(
-            f"{target.path}: stock-solution signature drifted: "
-            f"{parsed_solution_signatures!r}"
+            f"{target.path}: stock-solution signature drifted: " f"{parsed_solution_signatures!r}"
         )
 
-    current_ingredients = [
-        row for row in (doc.get("ingredients") or []) if isinstance(row, dict)
-    ]
+    current_ingredients = [row for row in (doc.get("ingredients") or []) if isinstance(row, dict)]
     current_names = tuple(str(row.get("preferred_term") or "") for row in current_ingredients)
     current_solution_signatures = tuple(
-        solution_signature(row)
-        for row in (doc.get("solutions") or [])
-        if isinstance(row, dict)
+        solution_signature(row) for row in (doc.get("solutions") or []) if isinstance(row, dict)
     )
-    if current_names == target.direct_ingredients and current_solution_signatures == target.solutions:
+    if (
+        current_names == target.direct_ingredients
+        and current_solution_signatures == target.solutions
+    ):
         return doc, False
     if doc.get("solutions"):
         raise ValueError(f"{target.path}: unexpected pre-existing solutions block")
 
-    blank_rows = [row for row in current_ingredients if not str(row.get("preferred_term") or "").strip()]
+    blank_rows = [
+        row for row in current_ingredients if not str(row.get("preferred_term") or "").strip()
+    ]
     if len(blank_rows) != 1:
         raise ValueError(f"{target.path}: expected exactly one merged blank row")
     blank_value = str((blank_rows[0].get("concentration") or {}).get("value") or "")
@@ -176,7 +172,9 @@ def repair_document(
     for name in target.direct_ingredients:
         matches = rows_by_name.get(name, [])
         if len(matches) != 1:
-            raise ValueError(f"{target.path}: expected one existing {name!r} row, found {len(matches)}")
+            raise ValueError(
+                f"{target.path}: expected one existing {name!r} row, found {len(matches)}"
+            )
         kept.append(copy.deepcopy(matches[0]))
 
     repaired = copy.deepcopy(doc)
@@ -214,8 +212,7 @@ def main(argv: list[str] | None = None) -> int:
 
     api = json.loads(args.api_file.read_text(encoding="utf-8"))
     payloads = {
-        str((row.get("medium") or {}).get("id") or ""): row
-        for row in (api.get("data") or [])
+        str((row.get("medium") or {}).get("id") or ""): row for row in (api.get("data") or [])
     }
 
     plans: list[tuple[Path, dict[str, Any]]] = []

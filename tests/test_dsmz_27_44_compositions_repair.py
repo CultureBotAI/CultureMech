@@ -31,9 +31,11 @@ def _solution(recipe: dict, name: str) -> dict:
 
 def test_inventory_and_selected_identities(repair_module) -> None:
     repair_module._validate_inventory()
-    repair_module.validate_mim_terms(repair_module.MIM_SSSOM)
     assert len(repair_module.TARGETS) == 3
     assert len(repair_module.MIM_TERMS) == 20
+    if not repair_module.MIM_SSSOM.is_file():
+        pytest.skip("authoritative MIM SSSOM sibling is unavailable")
+    repair_module.validate_mim_terms(repair_module.MIM_SSSOM)
 
 
 def test_stock_boundaries_and_effective_concentrations(repair_module) -> None:
@@ -67,7 +69,9 @@ def test_vitamin_b12_is_not_narrowed_to_cyanocobalamin(repair_module) -> None:
 
 
 def test_explicit_duplicate_relationships_are_reciprocal(repair_module) -> None:
-    recipes = {target.relative_path: repair_module.recipe_for(target) for target in repair_module.TARGETS}
+    recipes = {
+        target.relative_path: repair_module.recipe_for(target) for target in repair_module.TARGETS
+    }
     canonical = recipes[repair_module.CANONICAL_PATH]
     assert {row["id"] for row in canonical["variant_children"]} == {
         "CultureMech:004707",
