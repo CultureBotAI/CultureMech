@@ -1325,6 +1325,16 @@ check-chebi-grounding *args:
 refresh-id-registry *args="":
     uv run --extra dev python scripts/refresh_id_registry.py {{args}}
 
+# Rebuild or verify the external, versioned recipe-ID lifecycle catalog. Unlike
+# the active compatibility registry, this includes every retired ID forever.
+[group('QC')]
+refresh-id-catalog *args="":
+    uv run python scripts/build_recipe_id_catalog.py {{args}}
+
+[group('QC')]
+check-id-catalog:
+    uv run python scripts/build_recipe_id_catalog.py --check
+
 # Scan-only collision check for CultureMech:NNNNNN IDs. Exits non-zero if any
 # cross-file duplicates are detected. Use as a pre-commit / CI safety net.
 [group('QC')]
@@ -1810,6 +1820,14 @@ gen-dataclasses:
     echo "Generating Python dataclasses from schema..."
     uv run gen-python {{schema_path}} > src/culturemech/schema/culturemech_dataclasses.py
     echo "✓ Dataclasses regenerated at src/culturemech/schema/culturemech_dataclasses.py"
+
+[group('Schema')]
+gen-json-schema:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    echo "Generating JSON Schema from LinkML..."
+    uv run gen-json-schema {{schema_path}} > src/culturemech/schema/culturemech.schema.json
+    echo "✓ JSON Schema regenerated at src/culturemech/schema/culturemech.schema.json"
 
 [group('Schema')]
 validate-schema-file:

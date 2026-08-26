@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """Rebuild data/culturemech_id_registry.tsv from the corpus (#144).
 
-The registry maps every CultureMech id to the file holding it. A category move
+The registry maps every active CultureMech id to the file holding it. A category move
 changes the path but not the id, so every bulk recategorization silently rots it:
 #115 moved 629 records, #120 another 73, #137 more, #143 three — none updated the
-registry, leaving 5,511 rows pointing at files that no longer exist.
+registry, leaving 5,511 rows pointing at files that no longer exist. This active
+lookup remains a compatibility artifact; the external lifecycle catalog retains
+every issued ID, including tombstones.
 
 Deliberately separate from `assign_culturemech_ids.py`. That script *mints* ids,
 so pointing it at a stale registry to fix paths risks renumbering records as a
@@ -17,6 +19,9 @@ Safety rails, all fatal rather than silently papered over:
     `assign-ids`' job, not this script's.
   * the same id in two files — the map would be ambiguous, and picking a winner
     would hide a real collision that `assign-ids-check` exists to surface.
+  * a registry ID removed from the corpus without a lifecycle tombstone — an
+    issued ID may disappear from this active lookup only after its retirement is
+    recorded explicitly.
 
 Usage::
 
@@ -32,6 +37,8 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
+from build_recipe_id_catalog import DEFAULT_TOMBSTONES, read_tombstones
+
 REPO = Path(__file__).resolve().parent.parent
 DEFAULT_CORPUS = REPO / "data" / "normalized_yaml"
 DEFAULT_REGISTRY = REPO / "data" / "culturemech_id_registry.tsv"
@@ -39,7 +46,10 @@ HEADER = "culturemech_id\tfile_path"
 
 # The record id is a top-level key, so it is anchored at column 0. Ingredient and
 # curation blocks further down also contain `id:` at an indent and must not win.
-ID_RE = re.compile(r"^id:\s*(CultureMech:\d+)\s*$", re.M)
+ID_RE = re.compile(
+    r"^id:\s*(?P<quote>['\"]?)(?P<id>CultureMech:(?!000000)\d{6})(?P=quote)\s*$",
+    re.M,
+)
 
 
 def scan_corpus(corpus: Path) -> tuple[dict[str, Path], list[Path], dict[str, list[Path]]]:
@@ -54,7 +64,7 @@ def scan_corpus(corpus: Path) -> tuple[dict[str, Path], list[Path], dict[str, li
             continue
         match = ID_RE.search(text)
         if match:
-            found[match.group(1)].append(path)
+            found[match.group("id")].append(path)
         else:
             missing.append(path)
     duplicates = {cid: paths for cid, paths in found.items() if len(paths) > 1}
@@ -81,29 +91,33 @@ def render(mapping: dict[str, Path]) -> str:
 
 
 def main(argv: list[str] | None = None) -> int:
-    ap = argparse.ArgumentParser(description=__doc__,
-                                 formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
     ap.add_argument("--corpus", type=Path, default=DEFAULT_CORPUS)
     ap.add_argument("--registry", type=Path, default=DEFAULT_REGISTRY)
-    ap.add_argument("--dry-run", action="store_true",
-                    help="report drift without writing")
+    ap.add_argument("--tombstones", type=Path, default=DEFAULT_TOMBSTONES)
+    ap.add_argument("--dry-run", action="store_true", help="report drift without writing")
     args = ap.parse_args(argv)
 
     resolved, missing, duplicates = scan_corpus(args.corpus)
 
     if duplicates:
-        print(f"ERROR: {len(duplicates)} id(s) appear in more than one file; the "
-              f"registry would be ambiguous. Run `just assign-ids-check`.",
-              file=sys.stderr)
+        print(
+            f"ERROR: {len(duplicates)} id(s) appear in more than one file; the "
+            f"registry would be ambiguous. Run `just assign-ids-check`.",
+            file=sys.stderr,
+        )
         for cid, paths in sorted(duplicates.items())[:10]:
-            print(f"  {cid}: {', '.join(str(p.relative_to(REPO)) for p in paths)}",
-                  file=sys.stderr)
+            print(f"  {cid}: {', '.join(str(p.relative_to(REPO)) for p in paths)}", file=sys.stderr)
         return 2
 
     if missing:
-        print(f"ERROR: {len(missing)} record(s) carry no top-level `id:`. Mint them "
-              f"with `just assign-ids` first — this script never invents ids.",
-              file=sys.stderr)
+        print(
+            f"ERROR: {len(missing)} record(s) carry no top-level `id:`. Mint them "
+            f"with `just assign-ids` first — this script never invents ids.",
+            file=sys.stderr,
+        )
         for p in missing[:10]:
             print(f"  {p.relative_to(REPO)}", file=sys.stderr)
         return 2
@@ -123,12 +137,27 @@ def main(argv: list[str] | None = None) -> int:
     print(f"  ids dropped       : {len(dropped)}")
     print(f"  rows that pointed at a missing file: {len(stale_now)}")
 
-    if dropped:
-        print("\nNOTE: ids in the registry with no record in the corpus. This script "
-              "drops them; if that is wrong, they were deleted records and the "
-              "deletion is the thing to review:", file=sys.stderr)
-        for cid in sorted(dropped)[:10]:
+    tombstones, tombstone_errors = read_tombstones(args.tombstones)
+    if tombstone_errors:
+        print(f"ERROR: invalid tombstone ledger {args.tombstones}:", file=sys.stderr)
+        for error in tombstone_errors[:10]:
+            print(f"  {error}", file=sys.stderr)
+        return 2
+    unrecorded_retirements = dropped - set(tombstones)
+    if unrecorded_retirements:
+        print(
+            "\nERROR: issued IDs disappeared from the corpus without lifecycle "
+            "tombstones. Record each retirement in "
+            "data/culturemech_id_tombstones.tsv before refreshing:",
+            file=sys.stderr,
+        )
+        for cid in sorted(unrecorded_retirements)[:10]:
             print(f"  {cid} -> {current[cid]}", file=sys.stderr)
+        return 2
+    if dropped:
+        print("\nRetired ids removed from the active compatibility registry:")
+        for cid in sorted(dropped)[:10]:
+            print(f"  {cid} ({tombstones[cid].lifecycle_status})")
 
     if args.dry_run:
         print("\nDRY RUN — nothing written.")

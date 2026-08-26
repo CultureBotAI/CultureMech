@@ -5,6 +5,8 @@ data/chemical_name_to_chebi_mapping_enhanced.json	UNKNOWN	writer purity unestabl
 data/compound_to_chebi_mapping.json	UNKNOWN	writer purity unestablished (build_compound_to_chebi_mapping.py)	scripts/build_compound_to_chebi_mapping.py	scripts/build_compound_to_chebi_mapping.py	
 data/compound_to_chebi_mapping_enhanced.json	UNKNOWN	writer purity unestablished (build_enhanced_compound_mapping.py)	scripts/build_enhanced_compound_mapping.py; scripts/build_fast_compound_mapping.py	scripts/build_enhanced_compound_mapping.py; scripts/build_fast_compound_mapping.py; scripts/enrich_solutions_with_chebi.py	
 data/culturemech_id_registry.tsv	CURRENT_VIEW	refresh_id_registry.py	scripts/refresh_id_registry.py; src/culturemech/utils/id_utils.py	scripts/artifact_writers.py; scripts/assign_culturemech_ids.py; scripts/refresh_id_registry.py; scripts/research_media.py; src/culturemech/utils/id_utils.py	
+data/culturemech_id_tombstones.tsv	AUTHORITATIVE	curator-owned append-only lifecycle ledger		scripts/build_recipe_id_catalog.py; scripts/refresh_id_registry.py	
+data/culturemech_recipe_catalog.tsv	CURRENT_VIEW	build_recipe_id_catalog.py	scripts/build_recipe_id_catalog.py	scripts/build_recipe_id_catalog.py	yes
 data/curation/atcc_crossref_candidates.json	UNKNOWN	no writer found			
 data/curation/multi_db_crossref_candidates.json	UNKNOWN	writer purity unestablished (multi_database_crossref.py)		src/culturemech/enrich/multi_database_crossref.py	
 data/curation/organism_candidates.json	UNKNOWN	writer purity unestablished (curation_validator.py)		src/culturemech/curate/curation_validator.py; src/culturemech/curate/organism_extractor.py; src/culturemech/enrich/backfill_pipeline.py	

@@ -31,6 +31,9 @@ UNKNOWN        No writer found, or a writer whose purity is unestablished. NOT a
                classified yet, and listing them is the point. Silence here would
                imply coverage that does not exist.
 
+AUTHORITATIVE  Curator-owned source data. It may be read by generators but must
+               never be presented as their refreshable output.
+
 ## What "checkable" means
 
 An artifact is freshness-checkable only if its writer takes `--out` and does not
@@ -73,33 +76,46 @@ DATED = re.compile(r"\d{4}-\d{2}-\d{2}|_\d{8}")
 # "has --out" is not the same as "is safe to run": audit_composition_type also
 # has --promote-semi-defined, and is only pure without it.
 CHECKABLE: dict[str, list[str]] = {
-    "data/import_tracking/reports/composition_type_conflicts.tsv":
-        ["scripts/audit_composition_type.py"],
-    "data/import_tracking/reports/concentration_plausibility.tsv":
-        ["scripts/audit_concentration_plausibility.py"],
-    "data/import_tracking/reports/filename_collisions.tsv":
-        ["scripts/audit_filename_collisions.py"],
-    "data/import_tracking/reports/selective_agent_mismatch.tsv":
-        ["scripts/audit_selective_agent_mismatch.py"],
-    "data/import_tracking/reports/review_need_ranking.tsv":
-        ["scripts/score_review_need.py"],
-    "data/import_tracking/reports/missing_compositions.tsv":
-        ["scripts/triage_missing_compositions.py"],
-    "data/import_tracking/reports/unparsed_compositions.tsv":
-        ["scripts/report_unparsed_compositions.py"],
+    "data/culturemech_recipe_catalog.tsv": ["scripts/build_recipe_id_catalog.py"],
+    "data/import_tracking/reports/composition_type_conflicts.tsv": [
+        "scripts/audit_composition_type.py"
+    ],
+    "data/import_tracking/reports/concentration_plausibility.tsv": [
+        "scripts/audit_concentration_plausibility.py"
+    ],
+    "data/import_tracking/reports/filename_collisions.tsv": [
+        "scripts/audit_filename_collisions.py"
+    ],
+    "data/import_tracking/reports/selective_agent_mismatch.tsv": [
+        "scripts/audit_selective_agent_mismatch.py"
+    ],
+    "data/import_tracking/reports/review_need_ranking.tsv": ["scripts/score_review_need.py"],
+    "data/import_tracking/reports/missing_compositions.tsv": [
+        "scripts/triage_missing_compositions.py"
+    ],
+    "data/import_tracking/reports/unparsed_compositions.tsv": [
+        "scripts/report_unparsed_compositions.py"
+    ],
     # The one CONSUMED output of the content-review writer (read by
     # propose_media_variant_links); its json/groups/summary siblings had no reader
     # and were untracked (#168). --out writes just this .tsv, so the check is pure.
-    "reports/media_content_review_manifest.tsv":
-        ["scripts/build_media_content_review_manifest.py"],
+    "reports/media_content_review_manifest.tsv": ["scripts/build_media_content_review_manifest.py"],
+}
+
+AUTHORITATIVE_INPUTS: dict[str, str] = {
+    "data/culturemech_id_tombstones.tsv": "curator-owned append-only lifecycle ledger",
 }
 
 
 def tracked_artifacts() -> list[str]:
-    out = subprocess.run(["git", "ls-files"], capture_output=True, text=True,
-                         cwd=REPO).stdout.split()
-    return sorted(f for f in out if ARTIFACT_SUFFIX.search(f)
-                  and (f.startswith("reports/") or f.startswith("data/")))
+    out = subprocess.run(
+        ["git", "ls-files"], capture_output=True, text=True, cwd=REPO
+    ).stdout.split()
+    return sorted(
+        f
+        for f in out
+        if ARTIFACT_SUFFIX.search(f) and (f.startswith("reports/") or f.startswith("data/"))
+    )
 
 
 SELF = "scripts/audit_derived_artifacts.py"
@@ -121,12 +137,18 @@ def find_writers(artifact: str) -> list[str]:
     artifacts to itself.
     """
     base = os.path.basename(artifact)
-    res = subprocess.run(["grep", "-rl", "--include=*.py", "--", base, "scripts", "src"],
-                         capture_output=True, text=True, cwd=REPO)
+    res = subprocess.run(
+        ["grep", "-rl", "--include=*.py", "--", base, "scripts", "src"],
+        capture_output=True,
+        text=True,
+        cwd=REPO,
+    )
     return sorted(f for f in res.stdout.split() if f and f != SELF)
 
 
 def classify(artifact: str, writer: str | None) -> tuple[str, str]:
+    if artifact in AUTHORITATIVE_INPUTS:
+        return "AUTHORITATIVE", AUTHORITATIVE_INPUTS[artifact]
     if artifact.startswith("reports/archive/"):
         return "SNAPSHOT", "archived"
     if DATED.search(os.path.basename(artifact)):
@@ -151,8 +173,7 @@ def inventory() -> list[dict[str, str]]:
         # Grep cannot tell a reader from a writer: research_media.py READS the id
         # registry to build an index and appeared among its "writers" (#209). This
         # traces the binding through the module instead.
-        writers = [m for m in mentions
-                   if classify_file(REPO / m, base) == "yes"] or mentions
+        writers = [m for m in mentions if classify_file(REPO / m, base) == "yes"] or mentions
         # A declared checkable artifact's writer is known exactly; re-deriving it
         # by grep would be guessing at something already stated.
         declared = CHECKABLE.get(art)
@@ -163,18 +184,22 @@ def inventory() -> list[dict[str, str]]:
         # MINTS ids), refresh_id_registry (which rebuilds it) and id_utils. Taking
         # the alphabetically first made it UNKNOWN and lost a correct answer; the
         # refresher is the one that determines whether the file is current.
-        primary = next((w for w in writers if GENERATOR.match(os.path.basename(w))),
-                       writers[0] if writers else None)
+        primary = next(
+            (w for w in writers if GENERATOR.match(os.path.basename(w))),
+            writers[0] if writers else None,
+        )
         kind, why = classify(art, primary)
         confirmed = [m for m in mentions if classify_file(REPO / m, base) == "yes"]
-        rows.append({
-            "artifact": art,
-            "kind": kind,
-            "reason": why,
-            "writes": "; ".join(confirmed),
-            "mentioned_by": "; ".join(mentions),
-            "freshness_checked": "yes" if art in CHECKABLE else "",
-        })
+        rows.append(
+            {
+                "artifact": art,
+                "kind": kind,
+                "reason": why,
+                "writes": "; ".join(confirmed),
+                "mentioned_by": "; ".join(mentions),
+                "freshness_checked": "yes" if art in CHECKABLE else "",
+            }
+        )
     return rows
 
 
@@ -190,7 +215,10 @@ def check_freshness(rows: list[dict[str, str]]) -> list[str]:
             tmp = Path(td) / os.path.basename(art)
             res = subprocess.run(
                 ["uv", "run", "python", *cmd, "--out", str(tmp)],
-                capture_output=True, text=True, cwd=REPO)
+                capture_output=True,
+                text=True,
+                cwd=REPO,
+            )
             if res.returncode != 0 or not tmp.is_file():
                 stale.append(f"{art}: regeneration failed ({res.stderr.strip()[:120]})")
                 continue
@@ -200,34 +228,53 @@ def check_freshness(rows: list[dict[str, str]]) -> list[str]:
 
 
 def main(argv: list[str] | None = None) -> int:
-    ap = argparse.ArgumentParser(description=__doc__,
-                                 formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
     ap.add_argument("--out", type=Path, default=DEFAULT_OUT)
-    ap.add_argument("--check", action="store_true",
-                    help="Also regenerate every CURRENT_VIEW artifact and compare.")
-    ap.add_argument("--refresh", action="store_true",
-                    help="Regenerate the freshness-checked artifacts in place. This is "
-                         "the one follow-up step after a bulk record move (#145), "
-                         "instead of a checklist held in someone's head.")
+    ap.add_argument(
+        "--check",
+        action="store_true",
+        help="Also regenerate every CURRENT_VIEW artifact and compare.",
+    )
+    ap.add_argument(
+        "--refresh",
+        action="store_true",
+        help="Regenerate the freshness-checked artifacts in place. This is "
+        "the one follow-up step after a bulk record move (#145), "
+        "instead of a checklist held in someone's head.",
+    )
     args = ap.parse_args(argv)
 
     rows = inventory()
     args.out.parent.mkdir(parents=True, exist_ok=True)
     with args.out.open("w", newline="", encoding="utf-8") as fh:
-        w = csv.DictWriter(fh, delimiter="\t", fieldnames=[
-            "artifact", "kind", "reason", "writes", "mentioned_by",
-            "freshness_checked"])
+        w = csv.DictWriter(
+            fh,
+            delimiter="\t",
+            fieldnames=[
+                "artifact",
+                "kind",
+                "reason",
+                "writes",
+                "mentioned_by",
+                "freshness_checked",
+            ],
+        )
         w.writeheader()
         w.writerows(rows)
 
     from collections import Counter
+
     counts = Counter(r["kind"] for r in rows)
     print(f"Tracked derived artifacts: {len(rows)}")
-    for k in ("CURRENT_VIEW", "SNAPSHOT", "UNKNOWN"):
+    for k in ("AUTHORITATIVE", "CURRENT_VIEW", "SNAPSHOT", "UNKNOWN"):
         print(f"  {counts.get(k, 0):4d}  {k}")
     checked = sum(1 for r in rows if r["freshness_checked"])
-    print(f"\n  {checked} of {counts.get('CURRENT_VIEW', 0)} CURRENT_VIEW artifacts are "
-          f"freshness-checked.")
+    print(
+        f"\n  {checked} of {counts.get('CURRENT_VIEW', 0)} CURRENT_VIEW artifacts are "
+        f"freshness-checked."
+    )
     print("  The rest have a writer that is not safe to run for a check (it mutates")
     print("  records, proposes links, or builds HTML) — see CHECKABLE in this script.")
     print(f"\nWrote {args.out.relative_to(REPO) if args.out.is_relative_to(REPO) else args.out}")
@@ -236,8 +283,12 @@ def main(argv: list[str] | None = None) -> int:
         print("\nRegenerating freshness-checked artifacts in place...")
         failed = []
         for art, cmd in CHECKABLE.items():
-            res = subprocess.run(["uv", "run", "python", *cmd, "--out", str(REPO / art)],
-                                 capture_output=True, text=True, cwd=REPO)
+            res = subprocess.run(
+                ["uv", "run", "python", *cmd, "--out", str(REPO / art)],
+                capture_output=True,
+                text=True,
+                cwd=REPO,
+            )
             status = "ok" if res.returncode == 0 else "FAILED"
             if res.returncode != 0:
                 failed.append(art)

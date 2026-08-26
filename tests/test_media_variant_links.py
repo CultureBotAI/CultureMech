@@ -17,13 +17,7 @@ from scripts.propose_media_variant_links import (
 )
 from scripts.validate_media_variant_links import RecipeIndex, validate_links
 
-SCHEMA_PATH = (
-    Path(__file__).parent.parent
-    / "src"
-    / "culturemech"
-    / "schema"
-    / "culturemech.yaml"
-)
+SCHEMA_PATH = Path(__file__).parent.parent / "src" / "culturemech" / "schema" / "culturemech.yaml"
 
 
 def test_schema_has_parent_child_variant_slots():
@@ -56,6 +50,7 @@ def test_dataclasses_accept_parent_child_variant_links():
     }
 
     child = MediaRecipe(
+        id="CultureMech:000002",
         name="lb_low_salt_variant",
         medium_type="COMPLEX",
         physical_state="LIQUID",
@@ -71,6 +66,7 @@ def test_dataclasses_accept_parent_child_variant_links():
     )
 
     parent = MediaRecipe(
+        id="CultureMech:000001",
         name="lb_medium",
         medium_type="COMPLEX",
         physical_state="LIQUID",
@@ -123,9 +119,7 @@ def test_variant_link_validator_checks_bidirectional_links():
 
     assert validate_links(index) == []
 
-    index.path_to_recipe["data/normalized_yaml/bacterial/lb_medium.yaml"][
-        "variant_children"
-    ] = []
+    index.path_to_recipe["data/normalized_yaml/bacterial/lb_medium.yaml"]["variant_children"] = []
     findings = validate_links(index)
     assert len(findings) == 1
     assert findings[0].field == "parent_media"

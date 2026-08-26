@@ -5,6 +5,7 @@ medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 id: CultureMech:015439
+id_lineage_token: legacy:0e9dba867538cf41dd100061402d12341a3ba0b3eaea289257fe322fa0b25cc0
 ingredients:
 - preferred_term: Filter paper (cellulose substrate)
   concentration:

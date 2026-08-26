@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-08-22T12:35:06
+# Generation date: 2026-08-25T21:48:02
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -108,11 +108,11 @@ DEFAULT_ = CULTUREMECH
 # Types
 
 # Class references
-class MediaRecipeName(extended_str):
+class MediaRecipeId(extended_str):
     pass
 
 
-class SolutionRecipePreferredTerm(extended_str):
+class SolutionRecipeId(extended_str):
     pass
 
 
@@ -180,10 +180,11 @@ class MediaRecipe(YAMLRoot):
     class_name: ClassVar[str] = "MediaRecipe"
     class_model_uri: ClassVar[URIRef] = CULTUREMECH.MediaRecipe
 
-    name: Union[str, MediaRecipeName] = None
+    id: Union[str, MediaRecipeId] = None
+    name: str = None
     physical_state: Union[str, "PhysicalStateEnum"] = None
     ingredients: Union[Union[dict, "IngredientDescriptor"], list[Union[dict, "IngredientDescriptor"]]] = None
-    id: Optional[str] = None
+    id_lineage_token: Optional[str] = None
     original_name: Optional[str] = None
     category: Optional[Union[str, "CategoryEnum"]] = None
     categories: Optional[Union[Union[str, "CategoryEnum"], list[Union[str, "CategoryEnum"]]]] = empty_list()
@@ -240,10 +241,15 @@ class MediaRecipe(YAMLRoot):
     source_data: Optional[Union[dict, "SourceData"]] = None
 
     def __post_init__(self, *_: str, **kwargs: Any):
+        if self._is_empty(self.id):
+            self.MissingRequiredField("id")
+        if not isinstance(self.id, MediaRecipeId):
+            self.id = MediaRecipeId(self.id)
+
         if self._is_empty(self.name):
             self.MissingRequiredField("name")
-        if not isinstance(self.name, MediaRecipeName):
-            self.name = MediaRecipeName(self.name)
+        if not isinstance(self.name, str):
+            self.name = str(self.name)
 
         if self._is_empty(self.physical_state):
             self.MissingRequiredField("physical_state")
@@ -256,8 +262,8 @@ class MediaRecipe(YAMLRoot):
             self.ingredients = [self.ingredients] if self.ingredients is not None else []
         self.ingredients = [v if isinstance(v, IngredientDescriptor) else IngredientDescriptor(**as_dict(v)) for v in self.ingredients]
 
-        if self.id is not None and not isinstance(self.id, str):
-            self.id = str(self.id)
+        if self.id_lineage_token is not None and not isinstance(self.id_lineage_token, str):
+            self.id_lineage_token = str(self.id_lineage_token)
 
         if self.original_name is not None and not isinstance(self.original_name, str):
             self.original_name = str(self.original_name)
@@ -451,9 +457,10 @@ class SolutionRecipe(YAMLRoot):
     class_name: ClassVar[str] = "SolutionRecipe"
     class_model_uri: ClassVar[URIRef] = CULTUREMECH.SolutionRecipe
 
-    preferred_term: Union[str, SolutionRecipePreferredTerm] = None
+    id: Union[str, SolutionRecipeId] = None
+    preferred_term: str = None
     composition: Union[Union[dict, "IngredientDescriptor"], list[Union[dict, "IngredientDescriptor"]]] = None
-    id: Optional[str] = None
+    id_lineage_token: Optional[str] = None
     term: Optional[Union[dict, "Term"]] = None
     mediaingredientmech_term: Optional[Union[dict, "MediaIngredientMechTerm"]] = None
     mediaingredientmech_chebi_term: Optional[Union[dict, "MediaIngredientMechChebiTerm"]] = None
@@ -472,10 +479,15 @@ class SolutionRecipe(YAMLRoot):
     notes: Optional[str] = None
 
     def __post_init__(self, *_: str, **kwargs: Any):
+        if self._is_empty(self.id):
+            self.MissingRequiredField("id")
+        if not isinstance(self.id, SolutionRecipeId):
+            self.id = SolutionRecipeId(self.id)
+
         if self._is_empty(self.preferred_term):
             self.MissingRequiredField("preferred_term")
-        if not isinstance(self.preferred_term, SolutionRecipePreferredTerm):
-            self.preferred_term = SolutionRecipePreferredTerm(self.preferred_term)
+        if not isinstance(self.preferred_term, str):
+            self.preferred_term = str(self.preferred_term)
 
         if self._is_empty(self.composition):
             self.MissingRequiredField("composition")
@@ -483,8 +495,8 @@ class SolutionRecipe(YAMLRoot):
             self.composition = [self.composition] if self.composition is not None else []
         self.composition = [v if isinstance(v, IngredientDescriptor) else IngredientDescriptor(**as_dict(v)) for v in self.composition]
 
-        if self.id is not None and not isinstance(self.id, str):
-            self.id = str(self.id)
+        if self.id_lineage_token is not None and not isinstance(self.id_lineage_token, str):
+            self.id_lineage_token = str(self.id_lineage_token)
 
         if self.term is not None and not isinstance(self.term, Term):
             self.term = Term(**as_dict(self.term))
@@ -3991,11 +4003,15 @@ class slots:
     pass
 
 slots.mediaRecipe__id = Slot(uri=CULTUREMECH.id, name="mediaRecipe__id", curie=CULTUREMECH.curie('id'),
-                   model_uri=CULTUREMECH.mediaRecipe__id, domain=None, range=Optional[str],
-                   pattern=re.compile(r'^CultureMech:\d{6}$'))
+                   model_uri=CULTUREMECH.mediaRecipe__id, domain=None, range=URIRef,
+                   pattern=re.compile(r'^CultureMech:(?!000000)\d{6}$'))
+
+slots.mediaRecipe__id_lineage_token = Slot(uri=CULTUREMECH.id_lineage_token, name="mediaRecipe__id_lineage_token", curie=CULTUREMECH.curie('id_lineage_token'),
+                   model_uri=CULTUREMECH.mediaRecipe__id_lineage_token, domain=None, range=Optional[str],
+                   pattern=re.compile(r'^legacy:[0-9a-f]{64}$'))
 
 slots.mediaRecipe__name = Slot(uri=CULTUREMECH.name, name="mediaRecipe__name", curie=CULTUREMECH.curie('name'),
-                   model_uri=CULTUREMECH.mediaRecipe__name, domain=None, range=URIRef)
+                   model_uri=CULTUREMECH.mediaRecipe__name, domain=None, range=str)
 
 slots.mediaRecipe__original_name = Slot(uri=CULTUREMECH.original_name, name="mediaRecipe__original_name", curie=CULTUREMECH.curie('original_name'),
                    model_uri=CULTUREMECH.mediaRecipe__original_name, domain=None, range=Optional[str])
@@ -4167,11 +4183,15 @@ slots.mediaRecipe__source_data = Slot(uri=CULTUREMECH.source_data, name="mediaRe
                    model_uri=CULTUREMECH.mediaRecipe__source_data, domain=None, range=Optional[Union[dict, SourceData]])
 
 slots.solutionRecipe__id = Slot(uri=CULTUREMECH.id, name="solutionRecipe__id", curie=CULTUREMECH.curie('id'),
-                   model_uri=CULTUREMECH.solutionRecipe__id, domain=None, range=Optional[str],
-                   pattern=re.compile(r'^CultureMech:\d{6}$'))
+                   model_uri=CULTUREMECH.solutionRecipe__id, domain=None, range=URIRef,
+                   pattern=re.compile(r'^CultureMech:(?!000000)\d{6}$'))
+
+slots.solutionRecipe__id_lineage_token = Slot(uri=CULTUREMECH.id_lineage_token, name="solutionRecipe__id_lineage_token", curie=CULTUREMECH.curie('id_lineage_token'),
+                   model_uri=CULTUREMECH.solutionRecipe__id_lineage_token, domain=None, range=Optional[str],
+                   pattern=re.compile(r'^legacy:[0-9a-f]{64}$'))
 
 slots.solutionRecipe__preferred_term = Slot(uri=CULTUREMECH.preferred_term, name="solutionRecipe__preferred_term", curie=CULTUREMECH.curie('preferred_term'),
-                   model_uri=CULTUREMECH.solutionRecipe__preferred_term, domain=None, range=URIRef)
+                   model_uri=CULTUREMECH.solutionRecipe__preferred_term, domain=None, range=str)
 
 slots.solutionRecipe__term = Slot(uri=CULTUREMECH.term, name="solutionRecipe__term", curie=CULTUREMECH.curie('term'),
                    model_uri=CULTUREMECH.solutionRecipe__term, domain=None, range=Optional[Union[dict, Term]])

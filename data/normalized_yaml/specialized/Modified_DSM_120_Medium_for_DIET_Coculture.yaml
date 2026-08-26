@@ -5,6 +5,7 @@ medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
 id: CultureMech:015434
+id_lineage_token: legacy:09ed6560135b1a0633e6af8bc466d21b33a376adeef57a18ed73d8c04d65cb07
 ingredients:
 - preferred_term: Ethanol
   concentration:

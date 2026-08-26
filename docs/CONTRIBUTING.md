@@ -100,6 +100,7 @@ For a recipe edit:
 just validate-schema data/normalized_yaml/bacterial/example_medium.yaml
 just validate-strict
 just assign-ids-check
+just check-id-catalog
 just test-corpus
 ```
 
@@ -114,6 +115,9 @@ just validate-references data/normalized_yaml/bacterial/example_medium.yaml
 For code or schema changes:
 
 ```bash
+just gen-dataclasses   # after editing the LinkML schema
+just gen-json-schema   # after editing the LinkML schema
+just gen-docs          # after editing the LinkML schema
 just test-fast
 just test-corpus
 just test-integration
@@ -131,6 +135,8 @@ smoke-tests the installed CLI and renderer.
   curator judgment.
 - The three current classification axes and compatibility `medium_type` agree.
 - IDs came from the allocator and `just assign-ids-check` passes.
+- Recipe renames, moves, mergers, splits, and deletions follow the
+  [recipe ID lifecycle contract](RECIPE_ID_LIFECYCLE.md); the catalog is current.
 - YAML round-trips cleanly and curation history was appended.
 - Relevant validations and test tiers pass.
 - Documentation links and commands are repository-relative and work from the root.

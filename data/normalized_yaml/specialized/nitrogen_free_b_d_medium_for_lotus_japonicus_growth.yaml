@@ -5,6 +5,7 @@ medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
 id: CultureMech:015437
+id_lineage_token: legacy:c93b345d8f4e1055d96f0d5b03c469ebcc96fda40f03fe91439e081e64600e14
 ingredients:
 - preferred_term: Calcium chloride
   concentration:
