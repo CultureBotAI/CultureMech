@@ -2650,39 +2650,61 @@ gen-media-umap-force-reload embeddings_path=kg_microbe_embeddings:
     echo ""
     echo "✓ UMAP visualization regenerated!"
 
-# Generate mapped ingredients file (ingredients with CHEBI/ontology IDs)
+# Generate mapped ingredients compatibility view through the shared occurrence scanner
 [group('Ingredients')]
 aggregate-mapped-ingredients output="output/mapped_ingredients.yaml" min_occurrences="1":
     #!/usr/bin/env bash
+    set -euo pipefail
     echo "Aggregating mapped ingredients from media YAML files..."
-    mkdir -p $(dirname {{output}})
+    mkdir -p -- "$(dirname -- "{{output}}")"
     uv run python scripts/aggregate_mapped_ingredients.py \
-        --output {{output}} \
-        --input-dir {{normalized_yaml_dir}} \
-        --min-occurrences {{min_occurrences}} \
+        --output "{{output}}" \
+        --input-dir "{{normalized_yaml_dir}}" \
+        --min-occurrences "{{min_occurrences}}" \
+        --occurrences-output "output/ingredient_occurrences.tsv" \
+        --errors-output "output/ingredient_aggregation_errors.tsv" \
         --verbose
     echo "✓ Mapped ingredients saved to {{output}}"
 
-# Generate unmapped ingredients file (ingredients without ontology mappings)
+# Generate unmapped ingredients compatibility view through the shared occurrence scanner
 [group('Ingredients')]
 aggregate-unmapped-ingredients output="output/unmapped_ingredients.yaml" min_occurrences="1":
     #!/usr/bin/env bash
+    set -euo pipefail
     echo "Aggregating unmapped ingredients from media YAML files..."
-    mkdir -p $(dirname {{output}})
+    mkdir -p -- "$(dirname -- "{{output}}")"
     uv run python scripts/aggregate_unmapped_ingredients.py \
-        --output {{output}} \
-        --input-dir {{normalized_yaml_dir}} \
-        --min-occurrences {{min_occurrences}} \
+        --output "{{output}}" \
+        --input-dir "{{normalized_yaml_dir}}" \
+        --min-occurrences "{{min_occurrences}}" \
+        --occurrences-output "output/ingredient_occurrences.tsv" \
+        --errors-output "output/ingredient_aggregation_errors.tsv" \
         --verbose
     echo "✓ Unmapped ingredients saved to {{output}}"
 
-# Generate both mapped and unmapped ingredient files
+# Scan once and generate the canonical occurrence table plus both compatibility views
 [group('Ingredients')]
-aggregate-all-ingredients: (aggregate-mapped-ingredients) (aggregate-unmapped-ingredients)
-    @echo ""
-    @echo "✓ Ingredient aggregation complete!"
-    @echo "  Mapped:   output/mapped_ingredients.yaml"
-    @echo "  Unmapped: output/unmapped_ingredients.yaml"
+aggregate-all-ingredients mapped_output="output/mapped_ingredients.yaml" unmapped_output="output/unmapped_ingredients.yaml" occurrences_output="output/ingredient_occurrences.tsv" errors_output="output/ingredient_aggregation_errors.tsv" min_occurrences="1":
+    #!/usr/bin/env bash
+    set -euo pipefail
+    mkdir -p -- \
+        "$(dirname -- "{{mapped_output}}")" \
+        "$(dirname -- "{{unmapped_output}}")" \
+        "$(dirname -- "{{occurrences_output}}")" \
+        "$(dirname -- "{{errors_output}}")"
+    uv run python scripts/aggregate_ingredients.py \
+        --input-dir "{{normalized_yaml_dir}}" \
+        --mapped-output "{{mapped_output}}" \
+        --unmapped-output "{{unmapped_output}}" \
+        --occurrences-output "{{occurrences_output}}" \
+        --errors-output "{{errors_output}}" \
+        --min-occurrences "{{min_occurrences}}" \
+        --verbose
+    echo "✓ Ingredient aggregation complete!"
+    echo "  Occurrences: {{occurrences_output}}"
+    echo "  Mapped:      {{mapped_output}}"
+    echo "  Unmapped:    {{unmapped_output}}"
+    echo "  Errors:      {{errors_output}}"
 
 # =============================================================================
 # INGREDIENT UMAP VISUALIZATION
