@@ -44,8 +44,8 @@ ingredients:
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
   term:
-    id: CHEBI:30769
-    label: citric acid
+    id: CHEBI:16947
+    label: citrate(3-)
 - preferred_term: Potassium
   concentration:
     value: '6390.0'

@@ -6,10 +6,15 @@ medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: ''
+- preferred_term: NAD+
   concentration:
     value: '0.00603'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:15846
+    label: NAD(+)
+  notes: Restored from MediaDB compound row C00003; the archived leading compound
+    labels are corrupt, while the row sequence preserves the KEGG identity.
 - preferred_term: Glutathione
   term:
     id: CHEBI:16856
@@ -146,6 +151,11 @@ curation_history:
   notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: fix_mediadb_leading_compounds.py
+  action: RESTORED_CORRUPT_SOURCE_COMPOUND
+  notes: Restored C00003 as NAD+ (CHEBI:15846) from the MediaDB row sequence; resolves
+    the 2026-08-24 EMPTY_INGREDIENT_NAME review finding.
 media_term:
   preferred_term: MediaDB Medium 280
   term:

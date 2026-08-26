@@ -10,13 +10,126 @@ media_term:
   term:
     id: mediadive.medium:J635
     label: CLOSTRIDIUM BOVIS MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=635'
-ingredients: []
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=635
+
+  Composition recovery source: https://togomedium.org/medium/M649 (TOGO snapshot of
+  JCM medium J635).'
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: MgSO4・7H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: MG_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Organic
+    compound, Simple component'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Na2S・9H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+- preferred_term: L--Cysteine・HCl・H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+- preferred_term: peptone
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Carbon dioxide gas
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Properties: ガス'
+  term:
+    id: CHEBI:16526
+    label: carbon dioxide
+- preferred_term: Nitrogen gas
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Properties: ガス'
+  term:
+    id: CHEBI:17997
+    label: dinitrogen
 preparation_steps:
 - step_number: 1
+  action: AUTOCLAVE
+  description: Mix components except L--cysteine・HCl・H2O and Na2S・9H2O and adjust
+    pH to 7.2. Bring to a boil for 5--10 sec and cool down under a stream of N2--CO2
+    (80:20, v/v). Distribute into culture vessels under the same gasmixture, seal
+    with butyl rubber stoppers and autoclave. Separately autoclave L--cysteine・HCl・H2O
+    and Na2S・9H2O as 5% solutions under a N2 atmosphere. Prior to inoculation, add
+    L--cysteine・HCl・H2O and Na2S・9H2O solutions anaerobically.
+- step_number: 2
   action: MIX
-  description: Use Medium No. 634 supplemented with 0.5 g/L (final conc.) yeast extract
-    and 0.2 g/L peptone instead of sodium succinate.
+  description: Use Medium No. [634] supplemented with 0.5 g/L (final conc.) yeast
+    extract and 0.2 g/L peptone instead of sodium succinate.
 applications:
 - Microbial cultivation
 curation_history:
@@ -53,6 +166,15 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
-data_quality_flags:
-- incomplete_composition
-- source_information_unavailable
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_jcm_missing_from_togo.py
+  action: RECOVERED_JCM_COMPOSITION_FROM_TOGO
+  changes: ingredients 0 -> 14; solutions 0 -> 0; preparation_steps 1 -> 2; removed
+    obsolete composition/source flags
+  notes: Recovered JCM J635 from source-equivalent TOGO M649. Preserved final ingredients
+    and stock-solution boundaries; did not flatten referenced media or stocks.
+- timestamp: '2026-08-26T02:12:50.759192+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 8 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).

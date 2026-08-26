@@ -10,12 +10,69 @@ media_term:
   term:
     id: mediadive.medium:J94
     label: SMY MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=94'
-ingredients: []
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=94
+
+  Composition recovery source: https://togomedium.org/medium/M86 (TOGO snapshot of
+  JCM medium J94).'
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '900'
+    unit: ML_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: MgSO4・7H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: KH2PO4
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: Na2HPO4
+  concentration:
+    value: '4.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
 preparation_steps:
 - step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.5.
+- step_number: 2
   action: MIX
-  description: Use SM medium (see Medium No. 89) with 50.0 ml/L (final) of 10% Na2S2O3
+  description: Separately sterilize Na2S2O3 solution by filtration. Aseptically add
+    sterile Na2S2O3 solution to the medium.
+- step_number: 3
+  action: MIX
+  description: Use SM medium (see Medium No. [89]) with 50.0 ml/L (final) of 10% Na2S2O3
     solution and 1.0 g/L yeast extract.
 applications:
 - Microbial cultivation
@@ -52,6 +109,28 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
-data_quality_flags:
-- incomplete_composition
-- source_information_unavailable
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_jcm_missing_from_togo.py
+  action: RECOVERED_JCM_COMPOSITION_FROM_TOGO
+  changes: ingredients 0 -> 6; solutions 0 -> 2; preparation_steps 1 -> 3; removed
+    obsolete composition/source flags
+  notes: Recovered JCM J94 from source-equivalent TOGO M86. Preserved final ingredients
+    and stock-solution boundaries; did not flatten referenced media or stocks.
+- timestamp: '2026-08-26T02:14:11.035781+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 4 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
+solutions:
+- preferred_term: 10% Na2S2O3 solution
+  composition: []
+  concentration:
+    value: '50'
+    unit: ML_PER_L
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: Trace metal solution (see Medium [M80])
+  composition: []
+  concentration:
+    value: '5'
+    unit: ML_PER_L
+  notes: Defined in TOGO medium M80.

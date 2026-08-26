@@ -10,18 +10,46 @@ media_term:
   term:
     id: mediadive.medium:J390
     label: JI MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=390'
-ingredients: []
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=390
+
+  Composition recovery source: https://togomedium.org/medium/M385 (TOGO snapshot of
+  JCM medium J390).'
+ingredients:
+- preferred_term: N2
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Properties: ガス'
 preparation_steps:
 - step_number: 1
-  action: MIX
-  description: Use Medium No. 284 supplemented with final 0.2 g yeast extract in Solution
-    A (per 900 ml), and with 0.332 g/L <I>o</I>-phthalic acid in Solution B (per 100
-    ml) instead of sodium pyruvate. Otherwise, prepare the medium as described in
-    the recipe of Medium No. 284.
+  action: ADJUST_PH
+  description: Mix components except NaHCO3 and adjust pH to 6.5. Bring to a boilfor
+    5--10 sec, then, cool down under a stream of N2--CO2 (80:20, v/v) and add NaHCO3
+    to the solution. Dispense 0.9 volume of the medium into culturevessels (e.g.,
+    18 ml of the medium in 50 ml serum bottle) under a stream of N2--CO2 (80:20, v/v)
+    and seal with butyl rubber stoppers. After autoclaving, stand the medium overnight.
 - step_number: 2
+  action: FILTER_STERILIZE
+  description: Adjust pH to 7.0 and filter--sterilize. Keep the solution under a N2
+    atmosphere.
+- step_number: 3
+  action: AUTOCLAVE
+  description: To complete the medium, add 0.1 volume of Solution B to the culture
+    vesselscontaining Solution A. Prior to inoculation, aseptically and anaerobically
+    add 0.01 volume of L--cysteine・HCl・H2O and Na2S・9H2O solutions to the medium (3%
+    solutions, autoclaved and stored under a N2 atmosphere).
+- step_number: 4
   action: MIX
-  description: 'Comment: For strain JCM 12282, incubate with a 15 - 20% inoculum.'
+  description: 'Comment: For strain JCM 10971, incubate with a 10% inoculum.'
+- step_number: 5
+  action: MIX
+  description: Use Medium No. [284] supplemented with final 0.2 g yeast extract in
+    Solution A (per 900 ml), and with 0.332 g/L o--phthalic acid in Solution B (per
+    100 ml) instead of sodium pyruvate. Otherwise, prepare the medium as described
+    in therecipe of Medium No. [284].
+- step_number: 6
+  action: MIX
+  description: 'Comment: For strain JCM 12282, incubate with a 15 -- 20% inoculum.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -57,6 +85,144 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
-data_quality_flags:
-- incomplete_composition
-- source_information_unavailable
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_jcm_missing_from_togo.py
+  action: RECOVERED_JCM_COMPOSITION_FROM_TOGO
+  changes: ingredients 0 -> 1; solutions 0 -> 4; preparation_steps 2 -> 6; removed
+    obsolete composition/source flags
+  notes: Recovered JCM J390 from source-equivalent TOGO M385. Preserved final ingredients
+    and stock-solution boundaries; did not flatten referenced media or stocks.
+- timestamp: '2026-08-26T02:13:02.238555+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 8 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
+solutions:
+- preferred_term: Na2S・9H2O solutions
+  composition: []
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
+    Solution'
+- preferred_term: L--cysteine・HCl・H2O
+  composition: []
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+  notes: 'Properties: Defined component, Organic compound, Solution'
+- preferred_term: Solution A
+  composition:
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+      Defined component'
+    term:
+      id: CHEBI:15377
+      label: water
+  - preferred_term: CaCl2・2H2O
+    concentration:
+      value: '0.166666667'
+      unit: G_PER_L
+    notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+      Simple component'
+  - preferred_term: KH2PO4
+    concentration:
+      value: '0.155555556'
+      unit: G_PER_L
+    notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+      component'
+    term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+  - preferred_term: NH4Cl
+    concentration:
+      value: '0.6'
+      unit: G_PER_L
+    notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
+      Defined component'
+    term:
+      id: CHEBI:31206
+      label: ammonium chloride
+  - preferred_term: Resazurin
+    concentration:
+      value: '1.111111111'
+      unit: MG_PER_L
+    notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic
+      compound, Defined component'
+    term:
+      id: CHEBI:8806
+      label: Resazurin
+  - preferred_term: MgCl2・6H2O
+    concentration:
+      value: '0.222222222'
+      unit: G_PER_L
+    notes: 'Role: Mineral source; Properties: Defined component, Simple component,
+      Inorganic compound'
+  - preferred_term: NaHCO3
+    concentration:
+      value: '2.777777778'
+      unit: G_PER_L
+    notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+      compound'
+    term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+  - preferred_term: Yeast extract (BD-Difco)
+    concentration:
+      value: '0.222222222'
+      unit: G_PER_L
+    notes: 'Properties: Undefined component'
+  - preferred_term: Carbon dioxide gas
+    concentration:
+      value: variable
+      unit: VARIABLE
+    notes: 'Properties: Gas'
+    term:
+      id: CHEBI:16526
+      label: carbon dioxide
+  - preferred_term: Nitrogen gas
+    concentration:
+      value: variable
+      unit: VARIABLE
+    notes: 'Properties: ガス'
+    term:
+      id: CHEBI:17997
+      label: dinitrogen
+  concentration:
+    value: '900'
+    unit: ML_PER_L
+  preparation_notes: 'The source stock also adds these referenced stocks, retained
+    without flattening: Trace vitamins solution (see Medium [M278]), Trace element
+    solution (see Medium [M278]), Se/W solution (see Medium [M278]).'
+  notes: Defined in TOGO medium M385. Local TOGO stock formulation is represented
+    as an inline composition; it is not flattened into final-medium ingredients.
+- preferred_term: Solution B
+  composition:
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+      Simple component'
+    term:
+      id: CHEBI:15377
+      label: water
+  - preferred_term: o--phthalic acid
+    concentration:
+      value: '0.332'
+      unit: G_PER_L
+    notes: 'Role: Carbon source; Properties: Defined component, Simple component,
+      Organic compound'
+  - preferred_term: N2
+    concentration:
+      value: variable
+      unit: VARIABLE
+    notes: 'Properties: ガス'
+  concentration:
+    value: '100'
+    unit: ML_PER_L
+  notes: Defined in TOGO medium M385. Local TOGO stock formulation is represented
+    as an inline composition; it is not flattened into final-medium ingredients.

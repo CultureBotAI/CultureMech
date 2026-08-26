@@ -11,84 +11,112 @@ media_term:
   term:
     id: mediadive.medium:J1091
     label: 5 x R2A AGAR
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1091'
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1091
+
+  Composition verified against https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1091
+  on 2026-08-25 (SHA-256 3335c9e28273375ce3f454927ff1ed7d233af7b50869fb9f758d0e5451a944f5).'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
     value: '2.5'
     unit: G_PER_L
-- preferred_term: Proteose peptone no. 3
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Proteose peptone No. 3
   concentration:
     value: '2.5'
     unit: G_PER_L
+  term:
+    id: MICRO:0000180
+    label: proteose peptone
 - preferred_term: Casamino acids
   concentration:
     value: '2.5'
     unit: G_PER_L
-- preferred_term: Glucose
   term:
-    id: CHEBI:17234
-    label: glucose
+    id: FOODON:03315719
+    label: mammalian milk protein (hydrolyzed)
+- preferred_term: Glucose
   concentration:
     value: '2.5'
     unit: G_PER_L
+  term:
+    id: CHEBI:17234
+    label: glucose
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
     label: glucose
-- preferred_term: Starch
-  term:
-    id: CHEBI:28017
-    label: starch
+- preferred_term: Soluble starch
   concentration:
     value: '2.5'
     unit: G_PER_L
+  term:
+    id: CHEBI:28017
+    label: starch
   mediaingredientmech_chebi_term:
     id: CHEBI:28017
     label: starch
 - preferred_term: Sodium pyruvate
-  term:
-    id: CHEBI:50144
-    label: sodium pyruvate
   concentration:
     value: '1.5'
     unit: G_PER_L
+  term:
+    id: CHEBI:50144
+    label: sodium pyruvate
   mediaingredientmech_chebi_term:
     id: CHEBI:50144
     label: sodium pyruvate
 - preferred_term: K2HPO4
-  term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
   concentration:
     value: '1.5'
     unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
 - preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: magnesium sulfate heptahydrate
   concentration:
     value: '0.25'
     unit: G_PER_L
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
 - preferred_term: Agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
   term:
     id: CHEBI:2509
     label: agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
+  action: MIX
+  description: Combine the printed components with 1.0 L distilled water.
+- step_number: 2
   action: ADJUST_PH
-  description: Adjust pH to 7.2.
+  description: Adjust the R2A base to pH 7.2.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 minutes.
 applications:
 - Microbial cultivation
 curation_history:
@@ -128,14 +156,21 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_jcm_r2a_family.py
+  action: RESTORED_JCM_R2A_FAMILY
+  changes: ingredients 9 -> 10; solutions 0 -> 0
+  notes: Restored the reviewed JCM R2A formulation, printed water, default sterilization,
+    and reciprocal variant semantics. Identity objects were verified against the MIM
+    SSSOM; unspecified carbonate volume remains explicitly variable.
 parent_media:
   path: data/normalized_yaml/bacterial/r2a_agar.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:002706
   name: r2a_agar
-  notes: Both records are MediaDive/JCM R2A Agar formulations; the child is explicitly
-    labeled 5 x R2A Agar and keeps the agar concentration unchanged.
+  notes: JCM 346 is the canonical R2A Agar formulation for this family.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- 5 x R2A Agar increases all parsed R2A nutrient and salt components five-fold while
-  agar remains 15 g/L.
+- Increase the eight non-agar solids five-fold; retain agar at 15 g/L.
+sterilization:
+  method: AUTOCLAVE

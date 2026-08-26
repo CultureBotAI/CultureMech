@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-19T22:22:07.288446+00:00",
+  "generated": "2026-08-26T06:20:03.361292+00:00",
   "source": "TOGO",
   "count": 2917,
   "recipes": {
@@ -1819,7 +1819,7 @@
     "CultureMech:009130": {
       "name": "methanocella_conradii_medium",
       "filename": "TOGO_M2561_Methanocella_Conradii_Medium.yaml",
-      "ingredient_count": 39,
+      "ingredient_count": 11,
       "id": "CultureMech:009130",
       "source_id": "TOGO:M2561",
       "source": "TOGO",
@@ -11531,7 +11531,7 @@
     "CultureMech:008950": {
       "name": "bsk_medium",
       "filename": "TOGO_M2366_BSK-Medium.yaml",
-      "ingredient_count": 19,
+      "ingredient_count": 0,
       "id": "CultureMech:008950",
       "source_id": "TOGO:M2366",
       "source": "TOGO",
@@ -11539,7 +11539,6 @@
       "categories": [
         "bacterial"
       ],
-      "has_hierarchy_enrichment": true,
       "category_dir": "bacterial"
     },
     "CultureMech:008955": {
@@ -11844,11 +11843,11 @@
     "CultureMech:009034": {
       "name": "dehalospirillum_medium",
       "filename": "TOGO_M2455_Dehalospirillum_Medium.yaml",
-      "ingredient_count": 45,
+      "ingredient_count": 9,
       "id": "CultureMech:009034",
       "source_id": "TOGO:M2455",
       "source": "TOGO",
-      "solution_count": 13,
+      "solution_count": 11,
       "categories": [
         "bacterial"
       ],

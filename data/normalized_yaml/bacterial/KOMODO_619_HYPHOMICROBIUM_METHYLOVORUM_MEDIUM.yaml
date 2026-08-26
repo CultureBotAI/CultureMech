@@ -195,14 +195,14 @@ ingredients:
     label: choline
 - preferred_term: Vitamin B12
   term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
   concentration:
     value: 2e-06
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
 applications:
 - Microbial cultivation
 curation_history:

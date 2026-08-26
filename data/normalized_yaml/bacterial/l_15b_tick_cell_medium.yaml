@@ -10,16 +10,113 @@ media_term:
   term:
     id: mediadive.medium:1591
     label: L-15B Tick Cell Medium
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1591.pdf'
-ingredients: []
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1591.pdf
+
+  DSMZ Medium 1591 delegation verified against https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1591.pdf
+  on 2026-08-25 (SHA-256 b4957b2953812ba39cb48d28097fe979b097355a3cc664c47462aac73902cf75);
+  basal L-15B composition verified against https://www.dsmz.de/fileadmin/Bereiche/Microbiology/Dateien/Kultivierungshinweise/TickCellCultureMethods-4.pdf
+  (SHA-256 be6881f2290a4d364b6de79d1aaa9f88378ca82e54394b055d0ea5b1e5df477a). Recipe
+  encodes undiluted basal L-15B. L-15B300 dilution and optional FBS, TPB, lipoprotein,
+  HEPES, and NaHCO3 supplements remain documented source variants, not base ingredients.'
+ingredients:
+- preferred_term: Cell culture grade water
+  concentration:
+    value: '1'
+    unit: L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: Bring the basal medium to a final volume of 1 litre.
+- preferred_term: Leibovitz's L-15 medium powder
+  concentration:
+    value: 1 package
+    unit: VARIABLE
+  notes: One package of GIBCO Leibovitz L-15 powder, Cat. No. 41300039. No defensible
+    identity object is present in the reviewed MIM SSSOM.
+- preferred_term: L-aspartic acid
+  concentration:
+    value: '0.299'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17053
+    label: L-aspartic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17053
+    label: L-aspartic acid
+- preferred_term: L-glutamine
+  concentration:
+    value: '0.292'
+    unit: G_PER_L
+  term:
+    id: CHEBI:18050
+    label: L-glutamine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18050
+    label: L-glutamine
+- preferred_term: L-proline
+  concentration:
+    value: '0.300'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17203
+    label: L-proline
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17203
+    label: L-proline
+- preferred_term: L-glutamic acid
+  concentration:
+    value: '0.490'
+    unit: G_PER_L
+  term:
+    id: CHEBI:16015
+    label: L-glutamic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16015
+    label: L-glutamic acid
+- preferred_term: alpha-ketoglutaric acid
+  concentration:
+    value: '0.299'
+    unit: G_PER_L
+  term:
+    id: CHEBI:30915
+    label: 2-oxoglutaric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30915
+    label: 2-oxoglutaric acid
+- preferred_term: D-glucose
+  concentration:
+    value: '14.4105'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17634
+    label: D-glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
+    label: D-glucose
 preparation_steps:
 - step_number: 1
-  action: MIX
-  description: For medium and tick cell cultivation please see 'Tick Cell Culture
-    Methods'
+  action: HEAT
+  description: Use a volumetric flask dry-heat treated at 180 C or above for at least
+    2 hours to remove endotoxins.
 - step_number: 2
   action: MIX
-  description: https://www.dsmz.de/fileadmin/Bereiche/Microbiology/Dateien/Kultivierungshinweise/TickCellCultureMethods-4.pdf
+  description: Preload 500-700 ml sterile cell-culture-grade water, add components
+    in the printed order, and bring the final volume to 1 litre.
+- step_number: 3
+  action: MIX
+  description: Stir slowly for 1.5 hours, no longer, while protecting the medium from
+    light.
+- step_number: 4
+  action: FILTER_STERILIZE
+  description: Filter through a 0.22 micrometre filter into storage bottles.
+- step_number: 5
+  action: STORE
+  description: Check a 4-5 ml aliquot from each bottle for sterility at 37 C. Confirm
+    pH 5.5-6.5 and, if possible, 415 +/- 10 mOsm/L. Store protected from light at
+    4 C; the source states it keeps for months.
 applications:
 - Microbial cultivation
 references:
@@ -48,5 +145,184 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
-data_quality_flags:
-- incomplete_composition
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_dsmz_l15b.py
+  action: RESTORED_DSMZ_1591_L15B
+  changes: ingredients 0 -> 8; solutions 0 -> 3
+  notes: Restored basal undiluted L-15B with mineral stock D, vitamin stock, NaOH
+    stock, filtration, and source pH range. Stock masses printed per 100 ml were converted
+    to per-litre concentrations; stocks A-C were materialized within D because the
+    schema permits only one stock-composition level. identity objects were verified
+    against the MIM SSSOM.
+ph_range:
+  min: 5.5
+  max: 6.5
+solutions:
+- preferred_term: L-15B mineral stock solution D
+  composition:
+  - preferred_term: Ascorbic acid
+    concentration:
+      value: '10.0'
+      unit: G_PER_L
+    term:
+      id: CHEBI:22652
+      label: ascorbic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:22652
+      label: ascorbic acid
+  - preferred_term: Glutathione (reduced)
+    concentration:
+      value: '10.0'
+      unit: G_PER_L
+    term:
+      id: CHEBI:16856
+      label: glutathione
+    mediaingredientmech_chebi_term:
+      id: CHEBI:16856
+      label: glutathione
+  - preferred_term: FeSO4 x 7 H2O
+    concentration:
+      value: '0.50'
+      unit: G_PER_L
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+  - preferred_term: CoCl2 x 6 H2O
+    concentration:
+      value: '0.002'
+      unit: G_PER_L
+    term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    notes: 'Effective concentration in stock D: stock A contains 0.20 g/L and is added
+      at 1 ml per 100 ml (10 ml/L). MIM maps the hydrated source label to cobalt dichloride.'
+  - preferred_term: CuSO4 x 5 H2O
+    concentration:
+      value: '0.002'
+      unit: G_PER_L
+    term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    notes: 'Effective concentration in stock D: stock A contains 0.20 g/L and is added
+      at 10 ml/L.'
+  - preferred_term: MnSO4 x H2O
+    concentration:
+      value: '0.016'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86364
+      label: manganese(II) sulfate monohydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86364
+      label: manganese(II) sulfate monohydrate
+    notes: 'Effective concentration in stock D: stock A contains 1.60 g/L and is added
+      at 10 ml/L.'
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '0.020'
+      unit: G_PER_L
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    notes: 'Effective concentration in stock D: stock A contains 2.00 g/L and is added
+      at 10 ml/L.'
+  - preferred_term: Na2MoO4 x 2 H2O
+    concentration:
+      value: '0.002'
+      unit: G_PER_L
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    notes: 'Effective concentration in stock D: stock B contains 0.20 g/L and is added
+      at 10 ml/L.'
+  - preferred_term: Na2SeO3
+    concentration:
+      value: '0.002'
+      unit: G_PER_L
+    term:
+      id: CHEBI:48843
+      label: disodium selenite
+    mediaingredientmech_chebi_term:
+      id: CHEBI:48843
+      label: disodium selenite
+    notes: 'Effective concentration in stock D: stock C contains 0.20 g/L and is added
+      at 10 ml/L.'
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  notes: The source prints 1000 mg ascorbic acid, 1000 mg reduced glutathione, and
+    50 mg FeSO4.7H2O per 100 ml, plus 1 ml each of stocks A-C. Because the schema
+    does not support a stock nested inside another stock, A-C are represented above
+    at their exact effective concentrations within D. Add 1 ml stock D per litre basal
+    L-15B.
+- preferred_term: L-15B vitamin stock
+  composition:
+  - preferred_term: p-Aminobenzoic acid
+    concentration:
+      value: '1.00'
+      unit: G_PER_L
+    term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30753
+      label: 4-aminobenzoic acid
+  - preferred_term: Cyanocobalamin
+    concentration:
+      value: '0.50'
+      unit: G_PER_L
+    term:
+      id: CHEBI:17439
+      label: cyanocob(III)alamin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17439
+      label: cyanocob(III)alamin
+  - preferred_term: Biotin
+    concentration:
+      value: '0.10'
+      unit: G_PER_L
+    term:
+      id: CHEBI:15956
+      label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  notes: The source prints 100, 50, and 10 mg per 100 ml, respectively. Add 1 ml vitamin
+    stock per litre basal L-15B.
+- preferred_term: 10 N NaOH solution
+  composition:
+  - preferred_term: NaOH
+    concentration:
+      value: '10'
+      unit: MOLAR
+    term:
+      id: CHEBI:32145
+      label: sodium hydroxide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32145
+      label: sodium hydroxide
+    notes: For monovalent NaOH, the source's 10 N concentration is 10 M.
+  concentration:
+    value: '0.5'
+    unit: ML_PER_L
+  notes: Add 0.5 ml per litre basal L-15B.
+sterilization:
+  method: FILTER

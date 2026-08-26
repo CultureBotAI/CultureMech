@@ -10,13 +10,32 @@ media_term:
   term:
     id: mediadive.medium:J490
     label: Mg50 MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=490'
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=490
+
+  Composition recovery source: https://togomedium.org/medium/M491 (TOGO snapshot of
+  JCM medium J490).'
 ingredients: []
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Use Medium No. 480 with 3.6 g/L D-glucose instead of mannitol. Autoclave
+  description: Dissolve components, except NaHCO3, dithiothreitol and mannitol,in
+    900 ml distilled water and autoclave under a N2--CO2 (4:1, v/v) atmosphere. Separately
+    autoclave 3% (w/v) dithiothreitol solution and 1 M mannitol solution under a N2
+    atmosphere. Add filter--sterilized 5% NaHCO3 [storedunder a N2--CO2 (4:1, v/v)
+    atmosphere] to the medium. Prior to inoculation,add the sterile dithiothreitol
+    and mannitol solutions.
+- step_number: 2
+  action: MIX
+  description: Use Trace element solution of Medium No. [243] without Na2SeO3・5H2O.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Use Medium No. [480] with 3.6 g/L D--glucose instead of mannitol. Autoclave
     1 M glucose solution separately under a N2 atmosphere, and add to the medium.
+- step_number: 4
+  action: ADJUST_PH
+  description: Dissolve nitrilotriacetic acid first in 200 ml of distilled water,and
+    adjust pH to 6.5 with KOH. Then add the remaining salts and adjust volume to 1.0
+    L. Readjust pH to 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -52,6 +71,191 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
-data_quality_flags:
-- incomplete_composition
-- source_information_unavailable
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_jcm_missing_from_togo.py
+  action: RECOVERED_JCM_COMPOSITION_FROM_TOGO
+  changes: ingredients 0 -> 0; solutions 0 -> 4; preparation_steps 1 -> 4; removed
+    obsolete composition/source flags
+  notes: Recovered JCM J490 from source-equivalent TOGO M491. Preserved final ingredients
+    and stock-solution boundaries; did not flatten referenced media or stocks.
+- timestamp: '2026-08-26T02:13:58.230678+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 12 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
+solutions:
+- preferred_term: Sol. 1
+  composition:
+  - preferred_term: distilled water
+    concentration:
+      value: '986.842105263'
+      unit: ML_PER_L
+    notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+      Simple component'
+    term:
+      id: CHEBI:15377
+      label: water
+  - preferred_term: MgSO4・7H2O
+    concentration:
+      value: '0.548245614'
+      unit: G_PER_L
+    notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+      Simple component'
+  - preferred_term: Yeast extract
+    concentration:
+      value: '0.548245614'
+      unit: G_PER_L
+    notes: 'Role: Nutrient source; Properties: Undefined component'
+  - preferred_term: NaCl
+    concentration:
+      value: '2.467105263'
+      unit: G_PER_L
+    notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+      Simple component'
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: CaCl2・2H2O
+    concentration:
+      value: '0.274122807'
+      unit: G_PER_L
+    notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+      Simple component'
+  - preferred_term: KH2PO4
+    concentration:
+      value: '0.248903509'
+      unit: G_PER_L
+    notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+      component'
+    term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+  - preferred_term: NH4Cl
+    concentration:
+      value: '0.548245614'
+      unit: G_PER_L
+    notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+      Simple component'
+    term:
+      id: CHEBI:31206
+      label: ammonium chloride
+  - preferred_term: K2HPO4
+    concentration:
+      value: '0.381578947'
+      unit: G_PER_L
+    notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+      component'
+    term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+  - preferred_term: Resazurin
+    concentration:
+      value: '1.096491228'
+      unit: MG_PER_L
+    notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Defined
+      component, Simple component'
+    term:
+      id: CHEBI:8806
+      label: Resazurin
+  - preferred_term: Casitone (BD-Difco)
+    concentration:
+      value: '0.548245614'
+      unit: G_PER_L
+    notes: 'Properties: Undefined component'
+  - preferred_term: Carbon dioxide gas
+    concentration:
+      value: variable
+      unit: VARIABLE
+    notes: 'Properties: ガス'
+    term:
+      id: CHEBI:16526
+      label: carbon dioxide
+  - preferred_term: Nitrogen gas
+    concentration:
+      value: variable
+      unit: VARIABLE
+    notes: 'Properties: ガス'
+    term:
+      id: CHEBI:17997
+      label: dinitrogen
+  concentration:
+    value: '912'
+    unit: ML_PER_L
+  preparation_notes: 'The source stock also adds these referenced stocks, retained
+    without flattening: Trace vitamins (see Medium [M190]), Trace element solution
+    (see Medium No. [480]), Se/W solution (see Medium [M312]).'
+  notes: Defined in TOGO medium M491. Local TOGO stock formulation is represented
+    as an inline composition; it is not flattened into final-medium ingredients.
+- preferred_term: dithiothreitol solution
+  composition:
+  - preferred_term: Dithiothreitol
+    concentration:
+      value: '30'
+      unit: G_PER_L
+    notes: 'Properties: Defined component, Inorganic compound, Simple component'
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+      Simple component'
+    term:
+      id: CHEBI:15377
+      label: water
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+  notes: Defined in TOGO medium M491. Local TOGO stock formulation is represented
+    as an inline composition; it is not flattened into final-medium ingredients.
+- preferred_term: glucose solution
+  composition:
+  - preferred_term: D--glucose
+    concentration:
+      value: '180.18018018'
+      unit: G_PER_L
+    notes: 'Role: Carbon source; Properties: Defined component, Organic compound,
+      Simple component'
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+      Simple component'
+    term:
+      id: CHEBI:15377
+      label: water
+  - preferred_term: N2
+    concentration:
+      value: variable
+      unit: VARIABLE
+    notes: 'Properties: ガス'
+  concentration:
+    value: '19.98'
+    unit: ML_PER_L
+  notes: Defined in TOGO medium M491. Local TOGO stock formulation is represented
+    as an inline composition; it is not flattened into final-medium ingredients.
+- preferred_term: NaHCO3 solution
+  composition:
+  - preferred_term: NaHCO3
+    concentration:
+      value: '50'
+      unit: G_PER_L
+    notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+      component'
+    term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+      Simple component'
+    term:
+      id: CHEBI:15377
+      label: water
+  concentration:
+    value: '80'
+    unit: ML_PER_L
+  notes: Defined in TOGO medium M491. Local TOGO stock formulation is represented
+    as an inline composition; it is not flattened into final-medium ingredients.

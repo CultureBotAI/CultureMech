@@ -6,7 +6,10 @@ composition_type: UNDEFINED
 physical_state: LIQUID
 description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater
   algae cultivation. Recipe available in PDF format.
-notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_NSS_low.pdf
+notes: 'Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_NSS_low.pdf
+
+  Composition verified against https://www.ccap.ac.uk/wp-content/uploads/MR_NSS_low.pdf
+  on 2026-08-25.'
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -53,190 +56,32 @@ curation_history:
   curator: primary-term-regrounding-v1.0
   action: Re-grounded wrong primary term id (OAK-verified)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_ccap_missing_compositions.py
+  action: RESTORED_CCAP_SOURCE_COMPOSITION
+  changes: ingredients 12 -> 2; solutions 0 -> 3
+  notes: Restored nss from the reviewed authoritative source. Preserved stock boundaries
+    and source alternatives; removed the incomplete flag where present. Ingredient
+    identities follow the MediaIngredientMech SSSOM.
 references:
 - reference: CCAP:NSS_low
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_NSS_low.pdf
 ingredients:
-- preferred_term: NaNO
-  term:
-    id: CHEBI:34545
-    label: Azimilide
-  curation_metadata:
-    mapping_quality: LLM_ASSISTED
-    confidence_score: 1.0
-    curation_date: '2026-04-04T12:54:55.239702'
-    ontology_source: CHEBI
-  concentration:
-    value: '15.00'
-    unit: G_PER_L
-  source: CCAP Medium MR_NSS_low.pdf
-  notes: From CCAP Medium MR_NSS_low.pdf; Curated from CCAP Medium MR_NSS_low.pdf
-    specification
-- preferred_term: Na2HPO4
-  term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
-  curation_metadata:
-    mapping_quality: LLM_ASSISTED
-    confidence_score: 1.0
-    curation_date: '2026-04-04T12:54:55.239712'
-    ontology_source: CHEBI
-  concentration:
-    value: '0.60'
-    unit: G_PER_L
-  source: CCAP Medium MR_NSS_low.pdf
-  notes: From CCAP Medium MR_NSS_low.pdf; Curated from CCAP Medium MR_NSS_low.pdf
-    specification
-- preferred_term: K2HPO4
-  term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-  curation_metadata:
-    mapping_quality: LLM_ASSISTED
-    confidence_score: 1.0
-    curation_date: '2026-04-04T12:54:55.239714'
-    ontology_source: CHEBI
+- preferred_term: Tricine
   concentration:
     value: '0.50'
     unit: G_PER_L
-  source: CCAP Medium MR_NSS_low.pdf
-  notes: From CCAP Medium MR_NSS_low.pdf; Curated from CCAP Medium MR_NSS_low.pdf
-    specification
-- preferred_term: Biotin
-  term:
-    id: CHEBI:15956
-    label: biotin
-  curation_metadata:
-    mapping_quality: LLM_ASSISTED
-    confidence_score: 1.0
-    curation_date: '2026-04-04T12:54:55.239716'
-    ontology_source: CHEBI
-  concentration:
-    value: '0.0002'
-    unit: G_PER_L
-  source: CCAP Medium MR_NSS_low.pdf
-  notes: From CCAP Medium MR_NSS_low.pdf; Curated from CCAP Medium MR_NSS_low.pdf
-    specification
-- preferred_term: Calcium pantothenate
-  term:
-    id: CHEBI:31345
-    label: Calcium pantothenate
-  curation_metadata:
-    mapping_quality: LLM_ASSISTED
-    confidence_score: 1.0
-    curation_date: '2026-04-04T12:54:55.239719'
-    ontology_source: CHEBI
-  concentration:
-    value: '0.02'
-    unit: G_PER_L
-  source: CCAP Medium MR_NSS_low.pdf
-  notes: From CCAP Medium MR_NSS_low.pdf; Curated from CCAP Medium MR_NSS_low.pdf
-    specification
-- preferred_term: Cyanocobalamin
-  term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
-  curation_metadata:
-    mapping_quality: LLM_ASSISTED
-    confidence_score: 1.0
-    curation_date: '2026-04-04T12:54:55.239722'
-    ontology_source: CHEBI
-  concentration:
-    value: '0.004'
-    unit: G_PER_L
-  source: CCAP Medium MR_NSS_low.pdf
-  notes: From CCAP Medium MR_NSS_low.pdf; Curated from CCAP Medium MR_NSS_low.pdf
-    specification
-- preferred_term: Folic acid
-  term:
-    id: CHEBI:27470
-    label: folic acid
-  curation_metadata:
-    mapping_quality: LLM_ASSISTED
-    confidence_score: 1.0
-    curation_date: '2026-04-04T12:54:55.239724'
-    ontology_source: CHEBI
-  concentration:
-    value: '0.0004'
-    unit: G_PER_L
-  source: CCAP Medium MR_NSS_low.pdf
-  notes: From CCAP Medium MR_NSS_low.pdf; Curated from CCAP Medium MR_NSS_low.pdf
-    specification
-- preferred_term: Inositol
-  term:
-    id: CHEBI:17268
-    label: myo-inositol
-  curation_metadata:
-    mapping_quality: LLM_ASSISTED
-    confidence_score: 0.95
-    curation_date: '2026-04-04T12:54:55.239726'
-    ontology_source: CHEBI
-  concentration:
-    value: '1.0'
-    unit: G_PER_L
-  source: CCAP Medium MR_NSS_low.pdf
-  notes: From CCAP Medium MR_NSS_low.pdf; Curated from CCAP Medium MR_NSS_low.pdf
-    specification
-- preferred_term: Nicotinic acid
-  term:
-    id: CHEBI:15940
-    label: nicotinic acid
-  curation_metadata:
-    mapping_quality: LLM_ASSISTED
-    confidence_score: 1.0
-    curation_date: '2026-04-04T12:54:55.239728'
-    ontology_source: CHEBI
-  concentration:
-    value: '0.02'
-    unit: G_PER_L
-  source: CCAP Medium MR_NSS_low.pdf
-  notes: From CCAP Medium MR_NSS_low.pdf; Curated from CCAP Medium MR_NSS_low.pdf
-    specification
-- preferred_term: Thiamine HCl
-  term:
-    id: CHEBI:49105
-    label: thiamine hydrochloride
-  curation_metadata:
-    mapping_quality: LLM_ASSISTED
-    confidence_score: 1.0
-    curation_date: '2026-04-04T12:54:55.239730'
-    ontology_source: CHEBI
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  source: CCAP Medium MR_NSS_low.pdf
-  notes: From CCAP Medium MR_NSS_low.pdf; Curated from CCAP Medium MR_NSS_low.pdf
-    specification
-- preferred_term: Thymine
-  term:
-    id: CHEBI:17821
-    label: thymine
-  curation_metadata:
-    mapping_quality: LLM_ASSISTED
-    confidence_score: 1.0
-    curation_date: '2026-04-04T12:54:55.239732'
-    ontology_source: CHEBI
-  concentration:
-    value: '0.6'
-    unit: G_PER_L
-  source: CCAP Medium MR_NSS_low.pdf
-  notes: From CCAP Medium MR_NSS_low.pdf; Curated from CCAP Medium MR_NSS_low.pdf
-    specification
-- preferred_term: Tricine
   term:
     id: CHEBI:46760
     label: tricine
-  curation_metadata:
-    mapping_quality: LLM_ASSISTED
-    confidence_score: 1.0
-    curation_date: '2026-04-04T12:54:55.239734'
-    ontology_source: CHEBI
+  mediaingredientmech_chebi_term:
+    id: CHEBI:46760
+    label: tricine
+- preferred_term: Filtered natural seawater
   concentration:
-    value: '0.50'
-    unit: G_PER_L
-  source: CCAP Medium MR_NSS_low.pdf
-  notes: From CCAP Medium MR_NSS_low.pdf; Curated from CCAP Medium MR_NSS_low.pdf
-    specification
+    value: '1'
+    unit: L
+  notes: Make the medium up to 1 L after adding Tricine and stocks.
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated
@@ -253,3 +98,154 @@ variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
 - Reviewed ASW:SES/NSS Low pair; child keeps vitamins, inositol, thymine, and tricine
   unchanged but halves NaNO, Na HPO, and K HPO concentrations.
+solutions:
+- preferred_term: Extra salts (ASW stock 1)
+  composition:
+  - preferred_term: NaNO3
+    concentration:
+      value: '15.00'
+      unit: G_PER_L
+    term:
+      id: CHEBI:63005
+      label: sodium nitrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63005
+      label: sodium nitrate
+  - preferred_term: Na2HPO4
+    concentration:
+      value: '0.60'
+      unit: G_PER_L
+    term:
+      id: CHEBI:34683
+      label: disodium hydrogenphosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:34683
+      label: disodium hydrogenphosphate
+  - preferred_term: K2HPO4
+    concentration:
+      value: '0.50'
+      unit: G_PER_L
+    term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+  concentration:
+    value: '7.50'
+    unit: ML_PER_L
+  notes: CCAP NSS Low stock solution 1; stock composition is per litre.
+- preferred_term: Vitamin solution
+  composition:
+  - preferred_term: Biotin
+    concentration:
+      value: '0.0002'
+      unit: G_PER_L
+    term:
+      id: CHEBI:15956
+      label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
+  - preferred_term: Calcium pantothenate
+    concentration:
+      value: '0.02'
+      unit: G_PER_L
+    term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31345
+      label: Calcium pantothenate
+  - preferred_term: Cyanocobalamin
+    concentration:
+      value: '0.004'
+      unit: G_PER_L
+    term:
+      id: CHEBI:17439
+      label: cyanocob(III)alamin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17439
+      label: cyanocob(III)alamin
+  - preferred_term: Folic acid
+    concentration:
+      value: '0.0004'
+      unit: G_PER_L
+    term:
+      id: CHEBI:27470
+      label: folic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:27470
+      label: folic acid
+  - preferred_term: Inositol
+    concentration:
+      value: '1.0'
+      unit: G_PER_L
+    term:
+      id: CHEBI:24848
+      label: inositol
+    mediaingredientmech_chebi_term:
+      id: CHEBI:24848
+      label: inositol
+  - preferred_term: Nicotinic acid
+    concentration:
+      value: '0.02'
+      unit: G_PER_L
+    term:
+      id: CHEBI:15940
+      label: nicotinic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15940
+      label: nicotinic acid
+  - preferred_term: Thiamine HCl
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+  - preferred_term: Thymine
+    concentration:
+      value: '0.6'
+      unit: G_PER_L
+    term:
+      id: CHEBI:17821
+      label: thymine
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17821
+      label: thymine
+  concentration:
+    value: '5.00'
+    unit: ML_PER_L
+  notes: CCAP NSS Low stock solution 2; stock composition is per litre.
+- preferred_term: Soil Extract 1 (SE1)
+  composition: []
+  concentration:
+    value: '12.50'
+    unit: ML_PER_L
+  notes: Use the separately defined CCAP SE1 recipe.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Add Tricine and the three stock solutions at the stated amounts.
+- step_number: 2
+  action: MIX
+  description: Make up to 1 L with filtered natural seawater.
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust to pH 7.6-7.8 with 1 M NaOH or 1 M HCl.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Autoclave at 15 psi for 15 minutes.
+- step_number: 5
+  action: MIX
+  description: 'Alternative seawater basis: make up to 1 L with deionized water and
+    33.6 g Instant Ocean sea salts.'
+ph_range:
+  min: 7.6
+  max: 7.8
+sterilization:
+  method: AUTOCLAVE

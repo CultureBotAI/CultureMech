@@ -96,8 +96,8 @@ composition:
     id: mediadive.compound:1634
     label: NiSO4 x 7 H2O
   chebi_term:
-    id: CHEBI:53001
-    label: nickel sulfate
+    id: CHEBI:53504
+    label: nickel sulfate heptahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water

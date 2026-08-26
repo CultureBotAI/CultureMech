@@ -2,8 +2,8 @@ id: CultureMech:005169
 name: for_dsm_4185
 original_name: For DSM 4185
 category: bacterial
-medium_type: DEFINED
-composition_type: DEFINED
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.0
 media_term:

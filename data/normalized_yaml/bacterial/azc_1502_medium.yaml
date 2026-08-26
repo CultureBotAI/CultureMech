@@ -109,14 +109,14 @@ ingredients:
     label: iron(2+) sulfate heptahydrate
 - preferred_term: NiSO4 x 7 H2O
   term:
-    id: CHEBI:53001
-    label: nickel sulfate
+    id: CHEBI:53504
+    label: nickel sulfate heptahydrate
   concentration:
     value: '1.6'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:53001
-    label: nickel sulfate
+    id: CHEBI:53504
+    label: nickel sulfate heptahydrate
 - preferred_term: Na2WO4 x 2 H2O
   term:
     id: CHEBI:63939
@@ -189,14 +189,14 @@ ingredients:
     label: boric acid
 - preferred_term: CoCl2 x 6 H2O
   term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
   concentration:
     value: '0.19'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318

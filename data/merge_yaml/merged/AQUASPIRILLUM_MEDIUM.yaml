@@ -90,14 +90,14 @@ ingredients:
     label: sodium thiosulfate pentahydrate
 - preferred_term: EDTA
   term:
-    id: CHEBI:64755
-    label: EDTA(2-)
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
   concentration:
     value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:64755
-    label: EDTA(2-)
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -140,14 +140,14 @@ ingredients:
     label: boric acid
 - preferred_term: CoCl2 x 6 H2O
   term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -180,8 +180,8 @@ ingredients:
     label: sodium molybdate dihydrate
 - preferred_term: Thiamine
   term:
-    id: CHEBI:26948
-    label: vitamin B1
+    id: CHEBI:18385
+    label: thiamine(1+)
   concentration:
     value: '0.05'
     unit: G_PER_L

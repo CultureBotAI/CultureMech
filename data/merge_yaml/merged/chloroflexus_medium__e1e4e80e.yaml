@@ -159,14 +159,14 @@ ingredients:
     label: Calcium pantothenate
 - preferred_term: Vitamin B12
   term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
   concentration:
     value: '0.005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -179,14 +179,14 @@ ingredients:
     label: 4-aminobenzoic acid
 - preferred_term: EDTA
   term:
-    id: CHEBI:64755
-    label: EDTA(2-)
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
   concentration:
     value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:64755
-    label: EDTA(2-)
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -219,14 +219,14 @@ ingredients:
     label: manganese(II) chloride tetrahydrate
 - preferred_term: CoCl2 x 6 H2O
   term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887

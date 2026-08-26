@@ -94,14 +94,14 @@ ingredients:
     label: Calcium pantothenate
 - preferred_term: Vitamin B12
   term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
   concentration:
     value: '0.0001'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
@@ -165,14 +165,14 @@ ingredients:
     label: iron(2+) sulfate heptahydrate
 - preferred_term: EDTA
   term:
-    id: CHEBI:64755
-    label: EDTA(2-)
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
   concentration:
     value: '0.25'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:64755
-    label: EDTA(2-)
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312

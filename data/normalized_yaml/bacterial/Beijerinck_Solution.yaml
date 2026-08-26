@@ -30,11 +30,11 @@ composition:
     value: '2.0'
     unit: G_PER_L
   term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 notes: 'Stock solution for TAP Medium (Tris-Acetate-Phosphate) and related algae culture
   media.
 

@@ -6,6 +6,7 @@ damaged tail is invisible to it. These tests pin the signals that surface that
 tail, and — more importantly — pin that ordinary records score low, since a
 ranking that flags everything ranks nothing.
 """
+
 from __future__ import annotations
 
 import importlib.util
@@ -75,8 +76,9 @@ def test_placeholder_ingredient_text_is_flagged(srn):
 
 def test_unparsed_recipe_in_an_ingredient_name_is_flagged(srn):
     """The NBRC_1197 shape (#166): a whole composition block in one field."""
-    doc = _healthy() | {"ingredients": [
-        _ing("Substrates*10mMKH2PO40.85gNa2HPO4x7H2O4.9g(NH4)2SO40.5gMgSO4")]}
+    doc = _healthy() | {
+        "ingredients": [_ing("Substrates*10mMKH2PO40.85gNa2HPO4x7H2O4.9g(NH4)2SO40.5gMgSO4")]
+    }
     _, reasons = srn.score_record(doc)
     assert "unparsed recipe" in "; ".join(reasons)
 
@@ -84,15 +86,51 @@ def test_unparsed_recipe_in_an_ingredient_name_is_flagged(srn):
 def test_ungrounded_ingredients_are_flagged(srn):
     doc = _healthy() | {"ingredients": [_ing("A", False), _ing("B", False), _ing("C", False)]}
     _, reasons = srn.score_record(doc)
-    assert "no ingredient is grounded" in "; ".join(reasons)
+    assert "no composition component is grounded" in "; ".join(reasons)
 
 
 def test_partial_grounding_scores_less_than_none(srn):
-    none_g = _healthy() | {"ingredients": [_ing("A", False), _ing("B", False),
-                                           _ing("C", False), _ing("D", False)]}
-    half_g = _healthy() | {"ingredients": [_ing("A", True), _ing("B", False),
-                                           _ing("C", False), _ing("D", False)]}
+    none_g = _healthy() | {
+        "ingredients": [_ing("A", False), _ing("B", False), _ing("C", False), _ing("D", False)]
+    }
+    half_g = _healthy() | {
+        "ingredients": [_ing("A", True), _ing("B", False), _ing("C", False), _ing("D", False)]
+    }
     assert srn.score_record(none_g)[0] > srn.score_record(half_g)[0]
+
+
+def test_solution_only_medium_is_not_treated_as_empty(srn):
+    doc = _healthy() | {
+        "ingredients": [],
+        "solutions": [
+            {
+                "preferred_term": "Vitamin stock",
+                "term": {"id": "mediadive.solution:7"},
+            }
+        ],
+    }
+
+    score, reasons = srn.score_record(doc)
+
+    assert "no ingredients or solutions" not in reasons
+    assert "no composition component is grounded" not in reasons
+    assert score == 15
+
+
+def test_inline_solution_composition_is_the_grounding_surface(srn):
+    doc = _healthy() | {
+        "ingredients": [],
+        "solutions": [
+            {
+                "preferred_term": "Trace stock",
+                "composition": [_ing("ZnSO4"), _ing("MnCl2"), _ing("CoCl2")],
+            }
+        ],
+    }
+
+    score, reasons = srn.score_record(doc)
+
+    assert score == 0, reasons
 
 
 def test_a_bare_strain_pointer_name_is_flagged(srn):
@@ -149,7 +187,7 @@ def test_the_worst_ranked_records_all_carry_a_severe_reason(srn, corpus):
     This used to anchor on NBRC_1197, which #166 confirmed carried an unparsed
     recipe. That record was repaired in #299 — its composition was recovered from
     the preserved NBRC HTML — so it now scores 35 (rank ~302) for the accurate and
-    much milder reason "no ingredient is grounded". The anchor was retired rather
+    much milder reason "no composition component is grounded". The anchor was retired rather
     than swapped for another record: no remaining record is independently
     confirmed broken AND ranked in the worst 60, so naming one would assert a
     claim nothing backs. `test_unparsed_recipe_in_an_ingredient_name_is_flagged`
@@ -188,12 +226,17 @@ def test_a_norm_level_signal_alone_does_not_qualify_a_record(srn, tmp_path):
     d = tmp_path / "bacterial"
     d.mkdir()
     healthy_but_no_conditions = {
-        "id": "CultureMech:1", "name": "x", "original_name": "Nutrient Agar",
-        "media_term": {"preferred_term": "DSMZ 1"}, "notes": "Source: DSMZ",
-        # 3 ingredients: fewer would also trip the "only 1-2 ingredients" signal
+        "id": "CultureMech:1",
+        "name": "x",
+        "original_name": "Nutrient Agar",
+        "media_term": {"preferred_term": "DSMZ 1"},
+        "notes": "Source: DSMZ",
+        # 3 components: fewer would also trip the small-composition signal
         # and the record would no longer be conditions-only.
-        "ingredients": [{"preferred_term": n, "term": {"id": "CHEBI:1"}}
-                        for n in ("Peptone", "Yeast extract", "NaCl")],
+        "ingredients": [
+            {"preferred_term": n, "term": {"id": "CHEBI:1"}}
+            for n in ("Peptone", "Yeast extract", "NaCl")
+        ],
     }
     (d / "a.yaml").write_text(_yaml.dump(healthy_but_no_conditions))
 
@@ -209,8 +252,14 @@ def test_conditions_still_contribute_when_something_else_is_wrong(srn, tmp_path)
 
     d = tmp_path / "bacterial"
     d.mkdir()
-    broken = {"id": "CultureMech:2", "name": "y", "original_name": "Y",
-              "media_term": {"preferred_term": "z"}, "notes": "n", "ingredients": []}
+    broken = {
+        "id": "CultureMech:2",
+        "name": "y",
+        "original_name": "Y",
+        "media_term": {"preferred_term": "z"},
+        "notes": "n",
+        "ingredients": [],
+    }
     (d / "b.yaml").write_text(_yaml.dump(broken))
     rows = srn.collect(tmp_path)
     assert len(rows) == 1

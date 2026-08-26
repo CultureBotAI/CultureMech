@@ -6,8 +6,11 @@ composition_type: UNDEFINED
 physical_state: LIQUID
 description: Algae culture medium from SAG Culture Collection (Göttingen). Suitable
   for freshwater algae cultivation. Recipe available in PDF format.
-notes: Full recipe available at http://sagdb.uni-goettingen.de/culture_media/21 Chilomonas
+notes: 'Full recipe available at http://sagdb.uni-goettingen.de/culture_media/21 Chilomonas
   Medium.pdf
+
+  Composition verified against https://sagdb.uni-goettingen.de/culture_media/21%20Chilomonas%20Medium.pdf
+  on 2026-08-25 (SHA-256 6e03572f3f96ac2ed3138740d7966469494281243d4e95e9b6493077a0668c1a).'
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -48,10 +51,52 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_sag_missing_compositions.py
+  action: RESTORED_SAG_SOURCE_COMPOSITION
+  changes: ingredients 0 -> 3; solutions 0 -> 0
+  notes: Restored the formulation from the reviewed SAG PDF, preserving final-medium
+    and stock-solution boundaries. Calculated stock concentrations are documented
+    in-place. Ingredient identities were selected from the MediaIngredientMech SSSOM.
 references:
 - reference: SAG:Chilomonas
 - reference: http://sagdb.uni-goettingen.de/culture_media/21 Chilomonas Medium.pdf
-ingredients: []
-data_quality_flags:
-- incomplete_composition
+ingredients:
+- preferred_term: Na-acetate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
+- preferred_term: Beef extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: FOODON:03302088
+    label: beef extract
+- preferred_term: Deionized or distilled water
+  concentration:
+    value: '1'
+    unit: L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 original_name: Chilomonas
+solutions: []
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Dissolve sodium acetate and beef extract in 1 L water.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave following the SAG general preparation guidance.
+sterilization:
+  method: AUTOCLAVE

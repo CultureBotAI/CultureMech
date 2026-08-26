@@ -3,8 +3,8 @@ name: for_dsm_1497_dsm_1537_dsm_2067_dsm_2279_dsm_2373_dsm_17251_and_dsm17508
 original_name: For DSM 1497, DSM 1537, DSM 2067, DSM 2279, DSM 2373, DSM 17251 and
   DSM17508
 category: bacterial
-medium_type: DEFINED
-composition_type: DEFINED
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:
@@ -342,14 +342,14 @@ ingredients:
     label: Calcium pantothenate
 - preferred_term: Vitamin B12
   term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
   concentration:
     value: '0.0001'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753

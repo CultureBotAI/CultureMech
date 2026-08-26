@@ -72,8 +72,8 @@ composition:
     id: mediadive.compound:197
     label: VOSO4 x 2 H2O
   chebi_term:
-    id: CHEBI:33146
-    label: vanadyl sulfate
+    id: CHEBI:87009
+    label: vanadyl sulfate dihydrate
     match_type: manual_curated
 - preferred_term: Distilled water
   concentration:

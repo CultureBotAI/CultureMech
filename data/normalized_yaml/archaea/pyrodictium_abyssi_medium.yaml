@@ -159,14 +159,14 @@ ingredients:
     label: boric acid
 - preferred_term: CoCl2 x 6 H2O
   term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -395,15 +395,15 @@ solutions:
       label: pyridoxine hydrochloride
   - preferred_term: Vitamin B12
     term:
-      id: CHEBI:17439
-      label: cyanocob(III)alamin
+      id: CHEBI:176843
+      label: vitamin B12
     concentration:
       value: '0.1'
       unit: G_PER_L
     notes: ' [Merged 2 duplicates: 0.1, 0.001]'
     mediaingredientmech_chebi_term:
-      id: CHEBI:17439
-      label: cyanocob(III)alamin
+      id: CHEBI:176843
+      label: vitamin B12
   preparation_notes: Stock prepared in 1000 ml. Composition and volume from medium
     508's own MediaDive recipe, identified by this record reproducing that medium's
     composition exactly (32/32 shared compounds at identical values) despite the upstream
@@ -448,15 +448,15 @@ solutions:
       label: pyridoxine hydrochloride
   - preferred_term: Vitamin B12
     term:
-      id: CHEBI:17439
-      label: cyanocob(III)alamin
+      id: CHEBI:176843
+      label: vitamin B12
     concentration:
       value: '0.001'
       unit: G_PER_L
     notes: ' [Merged 2 duplicates: 0.1, 0.001]'
     mediaingredientmech_chebi_term:
-      id: CHEBI:17439
-      label: cyanocob(III)alamin
+      id: CHEBI:176843
+      label: vitamin B12
   preparation_notes: Stock prepared in 1000 ml. Composition and volume from medium
     508's own MediaDive recipe, identified by this record reproducing that medium's
     composition exactly (32/32 shared compounds at identical values) despite the upstream

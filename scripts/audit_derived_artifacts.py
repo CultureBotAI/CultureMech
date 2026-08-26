@@ -93,6 +93,9 @@ CHECKABLE: dict[str, list[str]] = {
     "data/import_tracking/reports/missing_compositions.tsv": [
         "scripts/triage_missing_compositions.py"
     ],
+    "data/import_tracking/reports/unparsed_composition.tsv": [
+        "scripts/audit_unparsed_composition.py"
+    ],
     "data/import_tracking/reports/unparsed_compositions.tsv": [
         "scripts/report_unparsed_compositions.py"
     ],

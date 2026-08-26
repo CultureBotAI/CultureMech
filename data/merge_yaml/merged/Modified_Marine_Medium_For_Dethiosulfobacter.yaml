@@ -132,11 +132,11 @@ ingredients:
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:64243
-    label: monosodium L-glutamate
+    id: CHEBI:232425
+    label: monosodium L-glutamate hydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:64243
-    label: monosodium L-glutamate
+    id: CHEBI:232425
+    label: monosodium L-glutamate hydrate
 - preferred_term: Na2S2O3・5H2O
   concentration:
     value: '5'

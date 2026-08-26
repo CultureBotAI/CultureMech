@@ -200,8 +200,8 @@ ingredients:
     label: riboflavin
 - preferred_term: Thiamine
   term:
-    id: CHEBI:26948
-    label: vitamin B1
+    id: CHEBI:18385
+    label: thiamine(1+)
   concentration:
     value: 1e-07
     unit: G_PER_L

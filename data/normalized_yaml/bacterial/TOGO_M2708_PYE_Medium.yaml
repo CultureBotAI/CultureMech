@@ -201,11 +201,11 @@ ingredients:
   notes: 'Properties: Simple component, Defined component, Organic compound [Merged
     2 duplicates: 2.5, 1.0]'
   term:
-    id: CHEBI:64755
-    label: EDTA(2-)
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
   mediaingredientmech_chebi_term:
-    id: CHEBI:64755
-    label: EDTA(2-)
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
 - preferred_term: FeCl3 . 6H2O
   concentration:
     value: '0.5'

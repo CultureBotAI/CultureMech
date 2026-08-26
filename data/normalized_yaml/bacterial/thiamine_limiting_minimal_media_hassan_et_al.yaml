@@ -23,12 +23,12 @@ ingredients:
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
   term:
-    id: CHEBI:30769
-    label: citric acid
+    id: CHEBI:16947
+    label: citrate(3-)
 - preferred_term: Thiamine
   term:
-    id: CHEBI:26948
-    label: vitamin B1
+    id: CHEBI:18385
+    label: thiamine(1+)
   concentration:
     value: '0.000188423'
     unit: MILLIMOLAR

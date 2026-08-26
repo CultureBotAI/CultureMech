@@ -2,8 +2,8 @@ id: CultureMech:004128
 name: for_dsm_15219_dsm_16458_and_dsm_18860
 original_name: For DSM 15219, DSM 16458 and DSM 18860
 category: bacterial
-medium_type: DEFINED
-composition_type: DEFINED
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 141.1 | DSMZ Medium: 141 (mediadive.medium:141)
@@ -341,14 +341,14 @@ ingredients:
     label: Calcium pantothenate
 - preferred_term: Vitamin B12
   term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
   concentration:
     value: '0.0001'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753

@@ -108,8 +108,8 @@ composition:
     id: mediadive.compound:666
     label: Thiamine
   chebi_term:
-    id: CHEBI:26948
-    label: vitamin B1
+    id: CHEBI:18385
+    label: thiamine(1+)
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Riboflavin

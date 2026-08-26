@@ -6,10 +6,15 @@ medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: ''
+- preferred_term: ATP
   concentration:
     value: '0.00036'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:15422
+    label: ATP
+  notes: Restored from MediaDB compound row C00002; the archived leading compound
+    labels are corrupt, while the row sequence preserves the KEGG identity.
 - preferred_term: L-Glutamate
   concentration:
     value: '0.34'
@@ -630,6 +635,11 @@ curation_history:
   action: Corrected CHEBI ingredient grounding (audit G21/G22/G24)
   notes: 'Re-grounded 1 term reference(s) to the correct CHEBI (audit G21/G22/G24;
     see reports/chebi_grounding_audit.md): CHEBI:140435→CHEBI:16113 ×1.'
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: fix_mediadb_leading_compounds.py
+  action: RESTORED_CORRUPT_SOURCE_COMPOUND
+  notes: Restored C00002 as ATP (CHEBI:15422) from the MediaDB row sequence; resolves
+    the 2026-08-24 EMPTY_INGREDIENT_NAME review finding.
 media_term:
   preferred_term: MediaDB Medium 33
   term:

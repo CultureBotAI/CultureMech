@@ -65,11 +65,11 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Simple component, Defined component, Organic compound'
   term:
-    id: CHEBI:53258
-    label: sodium citrate
+    id: CHEBI:30769
+    label: citric acid
   mediaingredientmech_chebi_term:
-    id: CHEBI:53258
-    label: sodium citrate
+    id: CHEBI:30769
+    label: citric acid
 - preferred_term: Na2MoO4・2H2O
   concentration:
     value: '0.39'

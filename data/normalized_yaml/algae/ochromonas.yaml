@@ -6,8 +6,11 @@ composition_type: UNDEFINED
 physical_state: LIQUID
 description: Algae culture medium from SAG Culture Collection (Göttingen). Suitable
   for freshwater algae cultivation. Recipe available in PDF format.
-notes: Full recipe available at http://sagdb.uni-goettingen.de/culture_media/10 Ochromonas
+notes: 'Full recipe available at http://sagdb.uni-goettingen.de/culture_media/10 Ochromonas
   Medium.pdf
+
+  Composition verified against https://sagdb.uni-goettingen.de/culture_media/10%20Ochromonas%20Medium.pdf
+  on 2026-08-25 (SHA-256 8b15d4c6303bc0e583d73e8d1e861c6a63ab5374bcadc58fa57af1bf3e83d63e).'
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -48,10 +51,87 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_sag_missing_compositions.py
+  action: RESTORED_SAG_SOURCE_COMPOSITION
+  changes: ingredients 0 -> 1; solutions 0 -> 4
+  notes: Restored the formulation from the reviewed SAG PDF, preserving final-medium
+    and stock-solution boundaries. Calculated stock concentrations are documented
+    in-place. Ingredient identities were selected from the MediaIngredientMech SSSOM.
 references:
 - reference: SAG:Ochromonas
 - reference: http://sagdb.uni-goettingen.de/culture_media/10 Ochromonas Medium.pdf
-ingredients: []
-data_quality_flags:
-- incomplete_composition
+ingredients:
+- preferred_term: Deionized or distilled water
+  concentration:
+    value: '960'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 original_name: Ochromonas
+solutions:
+- preferred_term: Glucose stock solution
+  composition:
+  - preferred_term: Glucose
+    concentration:
+      value: '100'
+      unit: G_PER_L
+    term:
+      id: CHEBI:17234
+      label: glucose
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17234
+      label: glucose
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+- preferred_term: Bacto-tryptone stock solution
+  composition:
+  - preferred_term: Bacto-tryptone
+    concentration:
+      value: '100'
+      unit: G_PER_L
+    term:
+      id: MICRO:0000182
+      label: tryptone
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+- preferred_term: Liver extract stock solution
+  composition:
+  - preferred_term: Liver extract
+    concentration:
+      value: '100'
+      unit: G_PER_L
+    term:
+      id: MICRO:0001363
+      label: liver extract
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+- preferred_term: Yeast extract stock solution
+  composition:
+  - preferred_term: Yeast extract
+    concentration:
+      value: '100'
+      unit: G_PER_L
+    term:
+      id: FOODON:03315426
+      label: yeast extract
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare the stock solutions and combine them at the stated amounts.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 minutes following the SAG general preparation
+    guidance.
+sterilization:
+  method: AUTOCLAVE

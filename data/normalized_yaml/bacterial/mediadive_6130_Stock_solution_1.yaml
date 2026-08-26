@@ -12,8 +12,8 @@ composition:
     id: mediadive.compound:271
     label: EDTA
   chebi_term:
-    id: CHEBI:64755
-    label: EDTA(2-)
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: KOH

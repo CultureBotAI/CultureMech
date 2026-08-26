@@ -40,12 +40,12 @@ Scope and honesty about it:
     delimiters (`MgSO4·7H2O0.5g` has no separator between name and amount), so
     re-splitting it here would be guesswork on hydrate dots and multi-digit
     numbers.
-  - PROSE_AS_INGREDIENT uses an instruction-verb list AND a length-or-sentence
-    test. Either alone is far noisier: on the current corpus the loose filters
-    flag 1,192 ingredient values, the conjunction flags 44, and spot-checking
-    says the 44 are all real.
+  - PROSE_AS_INGREDIENT normally uses an instruction-verb list AND a
+    length-or-sentence test. A small set of high-confidence starts (for example,
+    ``For agar, add`` and ``Make up to``) bypasses the length test because the
+    CCAP parser truncated real instructions to just those fragments.
   - Solution RECORDS are not excluded, and their reagents are genuinely scanned:
-    the 4,784 standalone stock-solution records keep their rows in a top-level
+    the 4,986 standalone solution records keep their rows in a top-level
     `composition:` rather than `ingredients:`, so an ingredients-only scan would
     silently skip 35,009 rows while appearing to cover the corpus. A name in a
     concentration field is wrong wherever it appears. The `location` column says
@@ -55,6 +55,7 @@ Usage::
 
     just audit-unparsed-composition
 """
+
 from __future__ import annotations
 
 import argparse
@@ -70,8 +71,7 @@ import yaml
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 NORMALIZED = REPO_ROOT / "data" / "normalized_yaml"
-DEFAULT_OUT = (REPO_ROOT / "data" / "import_tracking" / "reports"
-               / "unparsed_composition.tsv")
+DEFAULT_OUT = REPO_ROOT / "data" / "import_tracking" / "reports" / "unparsed_composition.tsv"
 
 # Placeholders that stand in for a missing concentration. None is a reagent name,
 # so none is evidence of a swapped field.
@@ -90,9 +90,26 @@ _RANGE_SPLIT = re.compile(r"(?<=[\d.])\s*-\s*(?=[\d.])")
 # name. Deliberately not a general English-verb test: `Add` is the signal, and a
 # reagent called "Sodium acetate" must not trip anything here.
 _INSTRUCTION = re.compile(
-    r"\b(add|adjust|make up|dissolve|autoclav|steriliz|mix|store|prepare"
-    r"|bring to|filter|boil|incubat|dispense|supplement|final concentration"
+    r"\b(add|adjust|make up|dissolve|autoclav|steriliz|mix|store"
+    r"|prepar(?:e|ed|ing|ation)"
+    r"|bring to|filter(?!-sterilized\b)|boil|incubat|dispense|final concentration"
     r"|per litre|per liter|after|before|if needed|as needed)\b",
+    re.IGNORECASE,
+)
+
+# `supplement` is also a common product noun ("C. difficile supplement",
+# "Trace Mineral Supplement, Catalog No. MD-TMS"). Only verbal constructions
+# requiring `with` are preparation instructions.
+_SUPPLEMENT_INSTRUCTION = re.compile(
+    r"\bsupplement(?:ed|ing)?(?:\s+(?:the\s+)?(?:medium|broth|solution))?\s+with\b",
+    re.IGNORECASE,
+)
+
+# These are complete parser-failure signatures even when the PDF extraction cut
+# them off before punctuation or the general prose-length threshold.
+_HIGH_CONFIDENCE_PROSE = re.compile(
+    r"^(?:make up(?:\s+to|\s+the)|for agar\b|add the above\b|add to \d+\b"
+    r"|soil is prepared\b|to make this medium\b)",
     re.IGNORECASE,
 )
 
@@ -166,7 +183,9 @@ def _holds_a_name(value: Any) -> bool:
 
 def _looks_like_prose(name: str) -> bool:
     """Instruction verb AND (long or sentence-shaped). See module docstring."""
-    if not _INSTRUCTION.search(name):
+    if _HIGH_CONFIDENCE_PROSE.search(name):
+        return True
+    if not (_INSTRUCTION.search(name) or _SUPPLEMENT_INSTRUCTION.search(name)):
         return False
     return len(name) > _PROSE_MIN_LEN or ". " in name or name.rstrip().endswith(".")
 
@@ -225,23 +244,29 @@ def audit_record(doc: dict[str, Any], path: Path) -> Iterator[dict[str, str]]:
         if isinstance(name, str) and not name.strip():
             if _holds_a_name(value):
                 yield {
-                    **base, "finding": "NAME_IN_CONCENTRATION", "name": "",
+                    **base,
+                    "finding": "NAME_IN_CONCENTRATION",
+                    "name": "",
                     "detail": "preferred_term is empty and the concentration "
-                              "value holds what looks like a reagent name",
+                    "value holds what looks like a reagent name",
                 }
             else:
                 yield {
-                    **base, "finding": "EMPTY_INGREDIENT_NAME", "name": "",
+                    **base,
+                    "finding": "EMPTY_INGREDIENT_NAME",
+                    "name": "",
                     "detail": "preferred_term is empty; the name is not "
-                              "recoverable from this record",
+                    "recoverable from this record",
                 }
             continue
 
         if isinstance(name, str) and _looks_like_prose(name):
             yield {
-                **base, "finding": "PROSE_AS_INGREDIENT", "name": name,
+                **base,
+                "finding": "PROSE_AS_INGREDIENT",
+                "name": name,
                 "detail": "preparation instruction parsed as an ingredient; its "
-                          "concentration belongs to the reagent that followed it",
+                "concentration belongs to the reagent that followed it",
             }
 
     for solution in doc.get("solutions") or []:
@@ -250,16 +275,19 @@ def audit_record(doc: dict[str, Any], path: Path) -> Iterator[dict[str, str]]:
         name = solution.get("preferred_term")
         if not isinstance(name, str) or not name:
             continue
-        if (solution.get("composition") or []):
+        if solution.get("composition") or []:
             continue
         if _looks_like_table(name):
             yield {
-                "file_path": rel, "record_id": record_id,
+                "file_path": rel,
+                "record_id": record_id,
                 "location": "solutions[].preferred_term",
-                "finding": "UNPARSED_SOLUTION_TABLE", "name": name,
-                "value": "", "unit": "",
+                "finding": "UNPARSED_SOLUTION_TABLE",
+                "name": name,
+                "value": "",
+                "unit": "",
                 "detail": "composition is empty and the name is a concatenated "
-                          "composition table; reaches the KGX export as a node",
+                "composition table; reaches the KGX export as a node",
             }
 
 
@@ -284,22 +312,27 @@ FINDINGS = (
 
 
 def main(argv: list[str] | None = None) -> int:
-    ap = argparse.ArgumentParser(description=__doc__,
-                                 formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
     ap.add_argument("--normalized-dir", type=Path, default=NORMALIZED)
     ap.add_argument("--out", type=Path, default=DEFAULT_OUT)
     ap.add_argument(
-        "--max-allowed", type=int, default=None,
+        "--max-allowed",
+        type=int,
+        default=None,
         help="Exit non-zero when total findings exceed this baseline. Gates NEW "
-             "defects without blocking on the existing backlog, the same "
-             "convention as audit-concentration-plausibility. Lower it as the "
-             "backlog is repaired; never raise it to make a run pass.",
+        "defects without blocking on the existing backlog, the same "
+        "convention as audit-concentration-plausibility. Lower it as the "
+        "backlog is repaired; never raise it to make a run pass.",
     )
     ap.add_argument(
-        "--max-exported", type=int, default=None,
+        "--max-exported",
+        type=int,
+        default=None,
         help="Exit non-zero when more than N UNPARSED_SOLUTION_TABLE findings "
-             "exist. The sharper gate: these are the only ones that reach the "
-             "KGX export, so a rise means new garbage nodes in the graph.",
+        "exist. The sharper gate: these are the only ones that reach the "
+        "KGX export, so a rise means new garbage nodes in the graph.",
     )
     args = ap.parse_args(argv if argv is not None else sys.argv[1:])
 
@@ -308,9 +341,18 @@ def main(argv: list[str] | None = None) -> int:
     args.out.parent.mkdir(parents=True, exist_ok=True)
     with args.out.open("w", newline="", encoding="utf-8") as fh:
         writer = csv.DictWriter(
-            fh, delimiter="\t",
-            fieldnames=["finding", "location", "file_path", "record_id", "name",
-                        "value", "unit", "detail"],
+            fh,
+            delimiter="\t",
+            fieldnames=[
+                "finding",
+                "location",
+                "file_path",
+                "record_id",
+                "name",
+                "value",
+                "unit",
+                "detail",
+            ],
         )
         writer.writeheader()
         writer.writerows(rows)
@@ -323,27 +365,36 @@ def main(argv: list[str] | None = None) -> int:
         print(f"  {finding:24s} {tally.get(finding, 0)}")
 
     exported = tally.get("UNPARSED_SOLUTION_TABLE", 0)
-    print(f"\nReaching the KGX export: {exported} "
-          "(UNPARSED_SOLUTION_TABLE only — the ingredient findings are "
-          "ungrounded, so they emit no edge)")
+    print(
+        f"\nReaching the KGX export: {exported} "
+        "(UNPARSED_SOLUTION_TABLE only — the ingredient findings are "
+        "ungrounded, so they emit no edge)"
+    )
 
-    rel = (args.out.relative_to(REPO_ROOT)
-           if args.out.is_relative_to(REPO_ROOT) else args.out)
+    rel = args.out.relative_to(REPO_ROOT) if args.out.is_relative_to(REPO_ROOT) else args.out
     print(f"\nWrote {rel}")
-    print("\nRead-only. Recovery means returning to the pre-normalization "
-          "payload: the concatenated string has lost the delimiters between "
-          "reagent and amount, so re-splitting it here would be guesswork.")
+    print(
+        "\nRead-only. Recovery means returning to the pre-normalization "
+        "payload: the concatenated string has lost the delimiters between "
+        "reagent and amount, so re-splitting it here would be guesswork."
+    )
 
     failed = False
     if args.max_allowed is not None and len(rows) > args.max_allowed:
-        print(f"\nFAIL: {len(rows)} findings > baseline {args.max_allowed}. An "
-              f"import or edit has introduced unparsed composition beyond the "
-              f"known backlog; see the report for which records.", file=sys.stderr)
+        print(
+            f"\nFAIL: {len(rows)} findings > baseline {args.max_allowed}. An "
+            f"import or edit has introduced unparsed composition beyond the "
+            f"known backlog; see the report for which records.",
+            file=sys.stderr,
+        )
         failed = True
     if args.max_exported is not None and exported > args.max_exported:
-        print(f"\nFAIL: {exported} unparsed solution tables > baseline "
-              f"{args.max_exported}. These become garbage nodes in the KGX "
-              f"export.", file=sys.stderr)
+        print(
+            f"\nFAIL: {exported} unparsed solution tables > baseline "
+            f"{args.max_exported}. These become garbage nodes in the KGX "
+            f"export.",
+            file=sys.stderr,
+        )
         failed = True
     return 1 if failed else 0
 

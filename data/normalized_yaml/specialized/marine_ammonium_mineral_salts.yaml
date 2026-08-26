@@ -145,14 +145,14 @@ ingredients:
     label: boric acid
 - preferred_term: CoCl2 x 6 H2O
   term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
   concentration:
     value: '0.189055'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -311,8 +311,8 @@ solutions:
       label: cyanocob(III)alamin
   - preferred_term: Thiamine
     term:
-      id: CHEBI:26948
-      label: vitamin B1
+      id: CHEBI:18385
+      label: thiamine(1+)
     concentration:
       value: '0.2'
       unit: G_PER_L

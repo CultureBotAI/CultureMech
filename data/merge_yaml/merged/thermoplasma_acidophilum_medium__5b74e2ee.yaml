@@ -183,8 +183,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:87014
-    label: vanadyl sulfate hexahydrate
+    id: CHEBI:132758
+    label: vanadyl sulfate pentahydrate
   mediaingredientmech_term:
     id: MediaIngredientMech:000479
     label: VOSO4 x 5 H2O

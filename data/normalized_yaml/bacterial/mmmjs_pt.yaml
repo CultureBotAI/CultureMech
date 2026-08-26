@@ -272,14 +272,14 @@ ingredients:
   notes: Copied from referenced JCM Medium 592
 - preferred_term: Vitamin B12
   term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
   concentration:
     value: '0.0001'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
   notes: Copied from referenced JCM Medium 592
 - preferred_term: p-Aminobenzoic acid
   term:

@@ -132,8 +132,8 @@ ingredients:
     label: L-arginine
 - preferred_term: Thiamine
   term:
-    id: CHEBI:26948
-    label: vitamin B1
+    id: CHEBI:18385
+    label: thiamine(1+)
   concentration:
     value: '0.00153'
     unit: MILLIMOLAR
@@ -176,14 +176,14 @@ ingredients:
     label: riboflavin
 - preferred_term: Vitamin B12
   term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
   concentration:
     value: '8.85e-05'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
 - preferred_term: Pyridoxine
   term:
     id: CHEBI:16709

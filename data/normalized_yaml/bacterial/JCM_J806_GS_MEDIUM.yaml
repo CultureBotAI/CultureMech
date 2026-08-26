@@ -10,13 +10,155 @@ media_term:
   term:
     id: mediadive.medium:J806
     label: GS MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=806'
-ingredients: []
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=806
+
+  Composition recovery source: https://togomedium.org/medium/M841 (TOGO snapshot of
+  JCM medium J806).'
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '980'
+    unit: ML_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: MgSO4・7H2O
+  concentration:
+    value: '3.45'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: NaCl
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.14'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.14'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: MG_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic
+    compound, Defined component'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: MgCl2・6H2O
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: KCl
+  concentration:
+    value: '0.355'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: NaHCO3
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Defined component, Inorganic
+    compound'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: Fe(NH4)2(SO4)2・6H2O
+  concentration:
+    value: '2'
+    unit: MG_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
+    compound'
+  term:
+    id: CHEBI:17234
+    label: glucose
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Trypticase peptone (BD-BBL)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Carbon dioxide gas
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Properties: ガス'
+  term:
+    id: CHEBI:16526
+    label: carbon dioxide
+- preferred_term: N2
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Properties: ガス'
+- preferred_term: Hydrogen gas
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Properties: ガス'
+  term:
+    id: CHEBI:18276
+    label: dihydrogen
 preparation_steps:
 - step_number: 1
+  action: AUTOCLAVE
+  description: 'Mix components thoroughly, except NaHCO3, and adjust pH to 6.5. Bring
+    to a boil for 5-10 sec, then, cool down under a stream of H2--CO2 (80:20, v/v)
+    and add NaHCO3 to the medium. Dispense the medium into suitable culture vessels
+    (e.g., 5 ml medium in Hungate tubes) under the same gas mixture and seal with
+    butyl rubber stoppers. After autoclaving, stand the medium overnight. Aseptically
+    and anaerobically add per liter the following solutions (autoclaved and stored
+    under a N2 atmosphere):'
+- step_number: 2
   action: MIX
-  description: Use Medium No. 262, replacing sodium acetate with 1.8 g/L glucose.
-    Cultivate under a N2-CO2 (80:20, v/v) gas mixture.
+  description: Pressurize the inoculated bottles to 200 kPa H2:CO2 (80:20, v/v).
+- step_number: 3
+  action: MIX
+  description: Use Medium No. [262], replacing sodium acetate with 1.8 g/L glucose.
+    Cultivate under a N2--CO2 (80:20, v/v) gas mixture.
 applications:
 - Microbial cultivation
 curation_history:
@@ -53,6 +195,43 @@ curation_history:
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'; added incomplete_composition
     flag
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_jcm_missing_from_togo.py
+  action: RECOVERED_JCM_COMPOSITION_FROM_TOGO
+  changes: ingredients 0 -> 17; solutions 0 -> 4; preparation_steps 1 -> 3; removed
+    obsolete composition/source flags
+  notes: Recovered JCM J806 from source-equivalent TOGO M841. Preserved final ingredients
+    and stock-solution boundaries; did not flatten referenced media or stocks.
+- timestamp: '2026-08-26T02:12:25.124196+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 10 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 data_quality_flags:
 - resolved_reference
-- incomplete_composition
+solutions:
+- preferred_term: Wolfe's mineral solution (see Medium [M257])
+  composition: []
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+  notes: Defined in TOGO medium M257.
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+  notes: Defined in TOGO medium M190.
+- preferred_term: 5% Na2S・9H2O solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
+    Solution'
+- preferred_term: 5% L-Cysteine・HCl・H2O solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+  notes: 'Properties: Defined component, Organic compound, Solution'

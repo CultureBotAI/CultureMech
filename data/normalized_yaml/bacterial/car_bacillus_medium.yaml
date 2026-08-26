@@ -10,22 +10,30 @@ media_term:
   term:
     id: mediadive.medium:J996
     label: CAR BACILLUS MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=996'
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=996
+
+  Composition verified against https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=996
+  on 2026-08-25 (SHA-256 f34523ccdcd09c53e60a2ebc7b2ab2bde7ded8af0626f0d2b052aaf654e233e2).'
 ingredients: []
 preparation_steps:
 - step_number: 1
-  action: MIX
-  description: 'Use the Vero E6 cell culture supernatant fluid (see below). Incubate
-    the microorganism in the supernatant fluid in a polystyrene culture flask (75
-    cm2 flask, canted neck, vent cap, coated with Ultra-Low Attachment Surface, Corning:
-    Cat. No. 3814) at 37C under 5% CO2.'
+  action: HEAT
+  description: Heat-inactivate fetal bovine serum at 56 C for 30 minutes.
 - step_number: 2
   action: MIX
-  description: 'Incubate Vero E6 cells (ATCC CRL-1586) in Iscove''s Modified Dulbecco''s
-    Medium (IMDM, GlutaMAXTM) (Life Technologies: Cat. No. 31980030) supplemented
-    with 10% fetal bovine serum (FBS; inactivated at 56C for 30 min) at 37C under
-    5% CO2. After cultivation, centrifuge the culture medium. Use the supernatant
-    fluid for cultivation of the microorganism as described above.'
+  description: Supplement IMDM (GlutaMAX) with 10% heat-inactivated FBS.
+- step_number: 3
+  action: MIX
+  description: Incubate Vero E6 cells (ATCC CRL-1586) in the supplemented medium at
+    37 C under 5% CO2.
+- step_number: 4
+  action: MIX
+  description: After cell cultivation, centrifuge the culture medium and retain the
+    clarified supernatant fluid.
+- step_number: 5
+  action: MIX
+  description: Cultivate the microorganism in the supernatant in the specified ultra-low-attachment
+    75 cm2 flask at 37 C under 5% CO2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -62,6 +70,32 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
-data_quality_flags:
-- incomplete_composition
-- source_information_unavailable
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_jcm_car_bacillus.py
+  action: RESTORED_JCM_996_CONDITIONED_MEDIUM
+  changes: ingredients 0 -> 0; solutions 0 -> 1
+  notes: Represented the final medium as clarified Vero E6-conditioned IMDM plus 10%
+    FBS. Vero cells remain preparation agents, not final ingredients; the NCIT-backed
+    FBS identity was verified in the MIM SSSOM and retained in notes because the schema
+    does not admit it.
+solutions:
+- preferred_term: Clarified Vero E6 cell culture supernatant fluid
+  composition:
+  - preferred_term: Iscove's Modified Dulbecco's Medium (IMDM, GlutaMAX)
+    concentration:
+      value: '90'
+      unit: PERCENT_V_V
+    notes: Life Technologies Cat. No. 31980030. No defensible identity object is present
+      in the reviewed MIM SSSOM.
+  - preferred_term: Fetal bovine serum
+    concentration:
+      value: '10'
+      unit: PERCENT_V_V
+    notes: Heat-inactivate at 56 C for 30 minutes before use. MIM maps this label
+      to NCIT:C113696 (Fetal Bovine Serum), but the current ingredient-term schema
+      does not admit NCIT CURIEs.
+  concentration:
+    value: '100'
+    unit: PERCENT_V_V
+  notes: The final CAR bacillus medium consists entirely of the clarified supernatant
+    after Vero E6 conditioning.

@@ -90,11 +90,11 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
-    id: CHEBI:53258
-    label: sodium citrate
+    id: CHEBI:30769
+    label: citric acid
   mediaingredientmech_chebi_term:
-    id: CHEBI:53258
-    label: sodium citrate
+    id: CHEBI:30769
+    label: citric acid
 - preferred_term: EDTA (disodium magnesium salt)
   concentration:
     value: '0.001'

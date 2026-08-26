@@ -2,8 +2,8 @@ id: CultureMech:001856
 name: petrotoga_medium
 original_name: PETROTOGA MEDIUM
 category: bacterial
-medium_type: DEFINED
-composition_type: DEFINED
+medium_type: COMPLEX
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.5
@@ -328,14 +328,14 @@ ingredients:
     label: Calcium pantothenate
 - preferred_term: Vitamin B12
   term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
   concentration:
     value: '0.001'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753

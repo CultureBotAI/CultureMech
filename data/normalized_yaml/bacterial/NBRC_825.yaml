@@ -122,6 +122,11 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 17 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-08-26T02:12:33.044197+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 solutions:
 - preferred_term: Vitamin solution
   composition:
@@ -172,6 +177,9 @@ solutions:
     concentration:
       value: '2.7'
       unit: MG_PER_L
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
   - preferred_term: p-Aminobenzoic acid
     concentration:
       value: '0.3'

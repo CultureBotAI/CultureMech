@@ -10,13 +10,101 @@ media_term:
   term:
     id: mediadive.medium:J1145
     label: MODIFIED ROSEOSPIRA MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1145'
-ingredients: []
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1145
+
+  Composition recovery source: https://togomedium.org/medium/M1227 (TOGO snapshot
+  of JCM medium J1145).'
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: MgSO4・7H2O
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+- preferred_term: NaHCO3
+  concentration:
+    value: '0.1'
+    unit: PERCENT_W_V
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: Na2S・9H2O
+  concentration:
+    value: '1'
+    unit: MILLIMOLAR
+  notes: 'Role: Reducing agent; Properties: Defined component, Solution, Inorganic
+    compound'
+- preferred_term: Na2S2O3
+  concentration:
+    value: '2'
+    unit: MILLIMOLAR
+  notes: 'Properties: Defined component, Inorganic compound, Simple component'
 preparation_steps:
 - step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 6.8.
+- step_number: 2
   action: MIX
-  description: Use Medium No. 568 with 1.0 mM (final) Na2S x 9H2O instead of 2.0 mM
-    (final) Na2S2O3 x 5H2O.
+  description: After autoclaving, add 1.0 ml of vitamin B12 solution (2 mg/ml), 0.1%
+    (final) of NaHCO3 and 2.0 mM (final) of Na2S2O3.
+- step_number: 3
+  action: MIX
+  description: Use Medium No. [568] with 1.0 mM (final) Na2S・9H2O instead of 2.0 mM
+    (final) Na2S2O3・5H2O.
 applications:
 - Microbial cultivation
 curation_history:
@@ -53,6 +141,34 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
-data_quality_flags:
-- incomplete_composition
-- source_information_unavailable
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_jcm_missing_from_togo.py
+  action: RECOVERED_JCM_COMPOSITION_FROM_TOGO
+  changes: ingredients 0 -> 11; solutions 0 -> 3; preparation_steps 1 -> 3; removed
+    obsolete composition/source flags
+  notes: Recovered JCM J1145 from source-equivalent TOGO M1227. Preserved final ingredients
+    and stock-solution boundaries; did not flatten referenced media or stocks.
+- timestamp: '2026-08-26T02:14:02.118951+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 5 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
+solutions:
+- preferred_term: Ferric citrate (0.1%, w/v)
+  composition: []
+  concentration:
+    value: '5'
+    unit: ML_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Organic compound, Solution'
+- preferred_term: vitamin B12 solution
+  composition: []
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  notes: 'Role: Vitamin; Properties: Defined component, Solution, Organic compound'
+- preferred_term: Micronutrient solution (SL7) (see Medium [M572])
+  composition: []
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  notes: Defined in TOGO medium M572.

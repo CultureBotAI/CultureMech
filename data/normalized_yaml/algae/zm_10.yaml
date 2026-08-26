@@ -3,7 +3,7 @@ name: zm_10
 category: algae
 medium_type: COMPLEX
 composition_type: UNDEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 description: Algae culture medium from CCAP Culture Collection. Suitable for saltwater
   algae cultivation. Recipe available in PDF format.
 notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_ZM10.pdf
@@ -54,6 +54,13 @@ curation_history:
   curator: primary-term-regrounding-v1.0
   action: Re-grounded wrong primary term id (OAK-verified)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_ccap_instruction_rows.py
+  action: REPAIRED_CCAP_INSTRUCTION_ROWS
+  changes: ingredients 18 -> 19
+  notes: Repaired preparation text and nested-recipe flattening against CCAP MR_ZM10.pdf.
+    Moved process statements to preparation_steps and restored source-asserted components
+    or constituent-medium references where applicable.
 references:
 - reference: CCAP:ZM10
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ZM10.pdf
@@ -116,8 +123,8 @@ ingredients:
   notes: From CCAP Medium MR_ZM10.pdf; Curated from CCAP Medium MR_ZM10.pdf specification
 - preferred_term: CoCl2 x 6 H2O
   term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -282,15 +289,37 @@ ingredients:
     value: '15.0'
     unit: G_PER_L
   source: CCAP Medium MR_ZM10.pdf
-- preferred_term: Make up to 1 litre with
-  notes: Ontology mapping not yet available; From CCAP Medium MR_ZM10.pdf; Curated
-    from CCAP Medium MR_ZM10.pdf specification
+- preferred_term: Filtered natural seawater
   concentration:
-    value: '75'
-    unit: PERCENT_W_V
+    value: '750'
+    unit: ML_PER_L
   source: CCAP Medium MR_ZM10.pdf
+  notes: Source-asserted 75% volume fraction in the final medium.
+- preferred_term: Deionised water
+  concentration:
+    value: '250'
+    unit: ML_PER_L
+  source: CCAP Medium MR_ZM10.pdf
+  notes: Source-asserted 25% volume fraction in the final medium.
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated
 - curation_method:automated_expert_mapping
 original_name: ZM/10
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Bring to 1 L with 75% filtered natural seawater and 25% deionised water.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 15 psi for 15 minutes.
+- step_number: 3
+  action: COOL
+  description: Cool to approximately 55 deg C before adding sterile marine supplement
+    stock.
