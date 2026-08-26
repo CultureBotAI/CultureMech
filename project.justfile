@@ -428,19 +428,21 @@ audit-unparsed-composition *args="":
     uv run --extra dev python scripts/audit_unparsed_composition.py \
         --max-allowed 64 --max-exported 0 {{args}}
 
-# Compare our ingredient groundings against MIM's published SSSOM (#256).
+# Historical CHEBI-only diagnostic against a sibling MIM SSSOM (#256).
+# KGX identity now comes from the pinned label-index resolver (#260); this report
+# remains useful for recipe-local curation but does not decide publication.
 #
-# This has to live here rather than in MIM: kg-microbe resolves an ingredient
-# with `best_primary([chebi_id, culturemech_term_id, mim_id, ...])`, so OUR
-# `term.id` outranks MIM's. When MIM corrects a mapping the consumer still picks
-# ours, and MIM can only fix rows we hold no opinion on.
+# Before #260, kg-microbe's priority path let our stale `term.id` outrank MIM.
+# The resolver retires that publication defect; this audit still finds local
+# drift worth curating.
 #
 # Baselines are names, not rows -- one regrounding decision fixes every row of a
 # name. Today: 12 divergent, 75 internally split. Lower them as the backlog is
 # curated; never raise one to make a run pass.
 #
 # Needs MediaIngredientMech checked out beside this repo; pass --sssom otherwise.
-# Adopt MIM's published grounding where we hold none (#308).
+# Legacy recipe-local migration where we hold no CHEBI grounding (#308).
+# KGX publication no longer requires materializing this into recipe YAML.
 #
 # Applies only the audit's MISSING_GROUNDING finding. DIVERGENT runs both ways
 # and INTERNAL_SPLIT needs someone to pick a side, so neither is applied here.
@@ -453,6 +455,19 @@ apply-mim-groundings *args="":
 audit-mim-sssom *args="":
     uv run --extra dev python scripts/audit_mim_sssom_divergence.py \
         --max-divergent 12 --max-split 75 {{args}}
+
+# Verify the immutable MediaIngredientMech label-index dependency used by KGX.
+# Entirely offline: hash, source pin, header, enums, row count, and label-group
+# contiguity all have to agree with the checked-in metadata.
+[group('QC')]
+check-mim-label-index:
+    uv run python scripts/check_mim_label_index.py
+
+# Explicit dependency bump. A moving branch or short SHA is rejected; review
+# the printed label-resolution delta in the default preview, then pass --apply.
+[group('Curation')]
+refresh-mim-label-index commit *args="":
+    uv run python scripts/refresh_mim_label_index.py "{{commit}}" {{args}}
 
 # Merge locally-completed Edison runs (research/media/*-meta.yaml, gitignored)
 # into the tracked researched-media manifest. This is the only step that reads

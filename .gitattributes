@@ -1,0 +1,4 @@
+# The MIM pin is verified byte-for-byte against its immutable upstream artifact.
+# Preserve its CRLF bytes on every platform and keep review focused on metadata
+# and the semantic delta printed by scripts/refresh_mim_label_index.py.
+src/culturemech/data/mediaingredientmech/label_index.csv binary

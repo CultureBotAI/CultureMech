@@ -39,14 +39,19 @@ class TestIngredientToEdge:
         assert edge["qualifiers"] is not None
         assert any("10 G_PER_L" in str(q) for q in edge["qualifiers"])
 
-    def test_without_term_returns_none(self):
-        """Test ingredient without term is skipped."""
+    def test_mim_resolves_ingredient_without_local_term(self):
+        """The pinned MIM index supplies identities absent from recipe YAML."""
         ingredient = {
             "preferred_term": "Yeast Extract",
             "concentration": {"value": "5", "unit": "G_PER_L"},
         }
         edge = ingredient_to_edge("culturemech:LB", ingredient)
-        assert edge is None
+        assert edge is not None
+        assert edge["object"] == "FOODON:03315426"
+
+    def test_unknown_ingredient_without_term_returns_none(self):
+        ingredient = {"preferred_term": "CultureMech test-only missing ingredient 260"}
+        assert ingredient_to_edge("culturemech:LB", ingredient) is None
 
     def test_with_evidence(self):
         """Test ingredient with evidence includes publications."""
@@ -59,9 +64,9 @@ class TestIngredientToEdge:
                 {
                     "reference": "PMID:12345678",
                     "supports": "SUPPORT",
-                    "explanation": "Test evidence"
+                    "explanation": "Test evidence",
                 }
-            ]
+            ],
         }
         edge = ingredient_to_edge(medium_id, ingredient)
 
@@ -88,10 +93,7 @@ class TestOrganismToEdge:
 
     def test_without_term_returns_none(self):
         """Test organism without term is skipped."""
-        organism = {
-            "preferred_term": "Escherichia coli",
-            "strain": "K-12"
-        }
+        organism = {"preferred_term": "Escherichia coli", "strain": "K-12"}
         edge = organism_to_edge("culturemech:LB", organism)
         assert edge is None
 
@@ -155,10 +157,7 @@ class TestVariantToEdge:
 
     def test_creates_variant_edge(self):
         """Test variant creates subclass_of edge."""
-        variant = {
-            "name": "LB Agar",
-            "description": "Solidified LB"
-        }
+        variant = {"name": "LB Agar", "description": "Solidified LB"}
         edge = variant_to_edge("culturemech:LB_Broth", variant)
 
         assert edge is not None
@@ -250,7 +249,7 @@ class TestHelperFunctions:
         """Test formatting evidence with references."""
         evidence = [
             {"reference": "PMID:12345", "explanation": "Test"},
-            {"reference": "DOI:10.1234/test", "explanation": "Test 2"}
+            {"reference": "DOI:10.1234/test", "explanation": "Test 2"},
         ]
         pubs, _ = _format_evidence(evidence)
         assert len(pubs) == 2

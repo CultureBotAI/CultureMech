@@ -50,7 +50,10 @@ RECORD = {
             "term": {"id": "CHEBI:17234"},
             "concentration": {"value": "10", "unit": "G_PER_L"},
             "nutritional_roles": ["CARBON_SOURCE"],
-        }
+        },
+        {"preferred_term": "EDTA", "term": {"id": "CHEBI:64755"}},
+        {"preferred_term": "Beef heart", "term": {"id": "UBERON:0000948"}},
+        {"preferred_term": "Calf brains", "term": {"id": "UBERON:0000955"}},
     ],
     "target_organisms": [
         {"preferred_term": "Escherichia coli", "term": {"id": "NCBITaxon:562"}, "strain": "K-12"}
@@ -318,6 +321,18 @@ def test_ontology_ids_are_referenced_but_not_declared(exported):
     external = {r for r in referenced if not r.startswith("culturemech:")}
     assert external, "fixture must reference ontology terms"
     assert external & declared == set()
+
+
+def test_tsv_export_uses_mim_identity_decisions(exported):
+    """The real Koza path must override, retain non-CHEBI, and suppress unmapped."""
+
+    _node_rows, edge_rows = exported
+    objects = {row["object"] for row in edge_rows}
+    assert "CHEBI:4735" in objects  # EDTA: MIM overrides local EDTA(2-)
+    assert "FOODON:00004410" in objects  # Beef heart is a food product
+    assert "CHEBI:64755" not in objects
+    assert "UBERON:0000948" not in objects
+    assert "UBERON:0000955" not in objects  # Calf brains is authoritatively unmapped
 
 
 def test_qualified_edges_reach_the_tsv(exported):

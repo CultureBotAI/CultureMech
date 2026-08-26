@@ -21,16 +21,16 @@ Primary Edges:
    - Object: Solution
    - Qualifiers: concentration (volume added)
 
-3. Solution → has_part (biolink:has_part) → Ingredient (CHEBI)
+3. Solution → has_part (biolink:has_part) → Ingredient (MIM-resolved identity)
    - Subject: Solution
    - Predicate: biolink:has_part
-   - Object: Ingredient (CHEBI ID)
+   - Object: Ingredient (MIM-resolved ontology or registry CURIE)
    - Qualifiers: concentration, role
 
-4. Medium → has_part (biolink:has_part) → Ingredient (CHEBI)
+4. Medium → has_part (biolink:has_part) → Ingredient (MIM-resolved identity)
    - Subject: Medium
    - Predicate: biolink:has_part
-   - Object: Ingredient (CHEBI ID)
+   - Object: Ingredient (MIM-resolved ontology or registry CURIE)
    - Qualifiers: concentration, role
 
 5. Medium → has_attribute (biolink:has_attribute) → Medium Type
@@ -49,9 +49,11 @@ Legacy Edges (for backward compatibility):
 """
 
 import uuid
-from collections.abc import Iterator
+from collections.abc import Callable, Iterator, Mapping
 from dataclasses import asdict, dataclass
 from typing import Any
+
+from culturemech.ingredients.mim_label_index import GroundingDecision, resolve_ingredient
 
 try:
     import koza
@@ -83,7 +85,13 @@ HAS_SOLUTION_COMPONENT = "biolink:has_part"  # For medium→solution (also uses 
 # ================================================================
 
 
-def transform(record: dict[str, Any]) -> Iterator[dict[str, Any]]:
+IngredientResolver = Callable[[Mapping[str, Any]], GroundingDecision]
+
+
+def transform(
+    record: dict[str, Any],
+    ingredient_resolver: IngredientResolver = resolve_ingredient,
+) -> Iterator[dict[str, Any]]:
     """
     Pure transform function - testable without Koza.
 
@@ -120,13 +128,17 @@ def transform(record: dict[str, Any]) -> Iterator[dict[str, Any]]:
         # Extract ingredients from solution composition
         solution_id = _create_solution_id(solution.get("preferred_term", ""))
         for ingredient in solution.get("composition", []):
-            edge = solution_to_ingredient_edge(solution_id, ingredient)
+            edge = solution_to_ingredient_edge(
+                solution_id, ingredient, ingredient_resolver=ingredient_resolver
+            )
             if edge:
                 yield edge
 
     # Edge Type 4: Medium → Ingredient (has_part)
     for ingredient in record.get("ingredients", []):
-        edge = medium_to_ingredient_edge(medium_id, ingredient)
+        edge = medium_to_ingredient_edge(
+            medium_id, ingredient, ingredient_resolver=ingredient_resolver
+        )
         if edge:
             yield edge
 
@@ -452,14 +464,18 @@ def medium_to_solution_edge(medium_id: str, solution: dict) -> dict | None:
     )
 
 
-def solution_to_ingredient_edge(solution_id: str, ingredient: dict) -> dict | None:
+def solution_to_ingredient_edge(
+    solution_id: str,
+    ingredient: dict,
+    ingredient_resolver: IngredientResolver = resolve_ingredient,
+) -> dict | None:
     """
-    Solution → has_part (biolink:has_part) → Ingredient (CHEBI)
+    Solution → has_part (biolink:has_part) → Ingredient (MIM-resolved identity)
 
     Following cmm-ai-automation pattern:
     - subject: solution
     - predicate: biolink:has_part
-    - object: ingredient (CHEBI ID)
+    - object: ingredient (ontology, registry, or curated identity)
 
     Qualifiers:
     - concentration: amount in solution
@@ -467,7 +483,7 @@ def solution_to_ingredient_edge(solution_id: str, ingredient: dict) -> dict | No
 
     Data preserved: Chemical ID, concentration, role
     """
-    chem_id = _get_term_id(ingredient, ["term", "id"])
+    chem_id = _resolved_ingredient_id(ingredient, ingredient_resolver)
     if not chem_id:
         return None
 
@@ -504,14 +520,18 @@ def solution_to_ingredient_edge(solution_id: str, ingredient: dict) -> dict | No
     )
 
 
-def medium_to_ingredient_edge(medium_id: str, ingredient: dict) -> dict | None:
+def medium_to_ingredient_edge(
+    medium_id: str,
+    ingredient: dict,
+    ingredient_resolver: IngredientResolver = resolve_ingredient,
+) -> dict | None:
     """
-    Medium → has_part (biolink:has_part) → Ingredient (CHEBI)
+    Medium → has_part (biolink:has_part) → Ingredient (MIM-resolved identity)
 
     Following cmm-ai-automation pattern (renamed from ingredient_to_edge):
     - subject: medium
     - predicate: biolink:has_part
-    - object: ingredient (CHEBI ID)
+    - object: ingredient (ontology, registry, or curated identity)
 
     Qualifiers:
     - concentration: amount
@@ -520,7 +540,7 @@ def medium_to_ingredient_edge(medium_id: str, ingredient: dict) -> dict | None:
     Data preserved: Chemical ID, concentration, role
     Data lost: Supplier info, preparation notes, chemical formula
     """
-    chem_id = _get_term_id(ingredient, ["term", "id"])
+    chem_id = _resolved_ingredient_id(ingredient, ingredient_resolver)
     if not chem_id:
         return None
 
@@ -583,7 +603,11 @@ def medium_to_type_edge(medium_id: str, medium_type: str) -> dict | None:
     )
 
 
-def ingredient_to_edge(medium_id: str, ingredient: dict) -> dict | None:
+def ingredient_to_edge(
+    medium_id: str,
+    ingredient: dict,
+    ingredient_resolver: IngredientResolver = resolve_ingredient,
+) -> dict | None:
     """
     Medium (culturemech:LB_Broth) → has_part → Glucose (CHEBI:17234)
 
@@ -593,7 +617,7 @@ def ingredient_to_edge(medium_id: str, ingredient: dict) -> dict | None:
     Data preserved: Chemical ID, concentration
     Data lost: Supplier info, preparation notes, chemical formula
     """
-    chem_id = _get_term_id(ingredient, ["term", "id"])
+    chem_id = _resolved_ingredient_id(ingredient, ingredient_resolver)
     if not chem_id:
         return None
 
@@ -760,6 +784,14 @@ def _get_term_id(data: dict, path: list[str]) -> str | None:
         if current is None:
             return None
     return current
+
+
+def _resolved_ingredient_id(
+    ingredient: Mapping[str, Any], ingredient_resolver: IngredientResolver
+) -> str | None:
+    """Resolve an ingredient through MIM, retaining local identity only as fallback."""
+
+    return ingredient_resolver(ingredient).identifier
 
 
 def _format_evidence(evidence_items: list[dict] | None) -> tuple:
