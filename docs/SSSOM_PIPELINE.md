@@ -10,6 +10,15 @@ The SSSOM pipeline consists of three main components:
 2. **SSSOM Generation** - Create SSSOM mapping file from existing CHEBI term assignments
 3. **OLS Enrichment** - Verify and expand mappings using the EBI Ontology Lookup Service API
 
+This pipeline describes CultureMech's local CHEBI mapping products and remains
+useful for diagnostics and curation. It is not the identity authority used by
+KGX publication. KGX resolves recipe labels through the immutable packaged MIM
+`label_index.csv`, whose `identifier` can be CHEBI or another ontology,
+registry, or curated local CURIE. See
+[`mediaingredientmech_enrichment.md`](mediaingredientmech_enrichment.md). The
+older `audit-mim-sssom` command is likewise an exactMatch/CHEBI-only divergence
+report, not a substitute for that resolver.
+
 ## Quick Start
 
 Run the complete pipeline:

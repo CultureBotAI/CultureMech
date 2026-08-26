@@ -43,6 +43,11 @@ and across concurrent sessions.
   instead of fixing normalized inputs or merge rules.
 - `src/culturemech/schema/culturemech.yaml`: authoritative schema. Generated
   dataclasses and schema documentation must change in the same commit.
+- `src/culturemech/data/mediaingredientmech/label_index.csv`: immutable,
+  packaged MIM ingredient-resolution snapshot. The adjacent metadata pins the
+  full source commit, hash, row count, and contract. Verify offline with
+  `just check-mim-label-index`; refreshes are preview-only unless `--apply` is
+  explicit and must use a full 40-character MIM SHA.
 - `app/data.js`, `pages/normalized/`: ignored CI outputs, generated directly
   from `data/normalized_yaml/`. Never hand-edit or commit them.
 - `pages/media/`: ignored CI output, generated from `data/merge_yaml/merged/`
@@ -64,6 +69,8 @@ Choose checks by changed surface:
 - One recipe: `just validate path/to/recipe.yaml` plus relevant semantic checks.
 - Corpus or schema: `just validate-strict`, `just assign-ids-check`, and
   `just validate-products`. Regenerate schema-derived files after schema edits.
+- MIM resolver or KGX ingredient identity: `just check-mim-label-index`, focused
+  resolver/KGX tests, and the installed-wheel resource smoke.
 - Merge inputs/rules: `just verify-merges` and `just audit-merge-freshness`.
 - Renderer/browser: renderer tests plus `python -m culturemech.web_artifacts`
   after generating browser data and normalized pages.
@@ -86,6 +93,10 @@ is the closed-schema corpus gate and rejects unknown fields.
 - Do not invent ontology IDs, labels, citations, or evidence. Verify ID/label
   correspondence and preserve primary-source provenance. Keep unresolved
   values explicit rather than forcing a plausible grounding.
+- For publication-time ingredient identity, use
+  `culturemech.ingredients.mim_label_index`; do not add a second fuzzy or
+  sibling-checkout resolver. Hydrate counts, digits, and formula punctuation
+  are identity-significant.
 
 ## External dependencies
 

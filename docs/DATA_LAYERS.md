@@ -35,6 +35,21 @@ to require exact source, browser-record, and page coverage. The tracked
 `app/*.html`, JavaScript application code, root `index.html`, and
 `pages/media_growth_review.html` remain publication inputs.
 
+## Pinned external reference data
+
+`data/normalized_yaml/` remains authoritative for recipe content: labels,
+amounts, containment, preparation, and provenance. Published ingredient
+identity is resolved separately through the packaged MIM snapshot at
+`src/culturemech/data/mediaingredientmech/label_index.csv`, with its immutable
+source commit and SHA-256 recorded in adjacent metadata. This split lets MIM
+curation reach exports without rewriting 15,877 recipe records while keeping
+normal builds offline and reproducible.
+
+Use `just check-mim-label-index` for the offline integrity gate. A dependency
+bump is preview-only by default and requires a full MIM commit plus an explicit
+`--apply`; see
+[`mediaingredientmech_enrichment.md`](mediaingredientmech_enrichment.md).
+
 ---
 
 ## Layer 1: Raw Data (`raw/`)
