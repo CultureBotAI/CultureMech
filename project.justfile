@@ -1231,23 +1231,22 @@ validate-products:
 report-label-drift:
     uv run python scripts/validate_id_label_correspondence.py -c conf/id_label_targets.yaml --report reports/label_drift.tsv
 
-# NOTE: the id↔label validator + its shared tests are vendored byte-identical
+# NOTE: the id↔label validator + its shared tests are governed byte-identically
 # across the Mech repos. The old self-generated sha256 pin (verify-/refresh-
 # validator-pin) was retired — it could only compare a copy to a hash from the
-# SAME repo, so all four could pass while holding three different versions. Drift
-# is now caught by the shared-reference check in the spokes (scripts/
-# check_vendored_sync.sh, against CultureBotAI/CultureMech@<.vendored_canon_ref>)
-# plus the nightly fleet audit in culturebotai-claw (fleet-audit job).
-# See culturebotai-claw vendored_sync_action_plan (Phase 2).
+# SAME repo, so every repo could pass while holding different versions. Drift is
+# now caught by this repo's unfiltered scripts/check_vendored_sync.sh gate against
+# CultureBotAI/culturebotai-claw@<scripts/.vendored_canon_ref>; claw's manifest
+# selects the full applicable artifact set and its fleet audit checks all five
+# pinned consumers.
 
 # NOTE: the shared LinkML module (mech_shared.yaml) is vendored byte-identical
 # across the Mech repos (package-namespaced path per repo). Its self-generated
 # sha256 pin (verify-/refresh-schema-pin) was retired — same self-referential
-# flaw as the id-label pin. mech_shared.yaml is now covered by the shared-
-# reference drift check (spokes' scripts/check_vendored_sync.sh diffs their
-# src/<pkg>/schema/mech_shared.yaml against this hub's copy) and the nightly
-# claw's fleet-audit job. Propagation: change it in this hub → sync the
-# spokes → bump their .vendored_canon_ref.
+# flaw as the id-label pin. mech_shared.yaml is now selected by claw's canonical
+# manifest and verified by every Mech's scripts/check_vendored_sync.sh. Propagate
+# a change through a reviewed claw commit, then coordinate that immutable pin
+# across all five Mechs.
 #
 # The former mim-roles-pin was also retired: mim_roles.yaml is NOT a shared set —
 # it is empty in MIM/CommunityMech/TraitMech (the real role facets live in MIM's

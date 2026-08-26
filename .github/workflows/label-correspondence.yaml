@@ -55,13 +55,9 @@ jobs:
           path: ~/.data/oaklib
           key: oaklib-${{ runner.os }}-v1
 
-      # Vendored-file drift is no longer guarded by a self-generated sha256 pin
-      # (retired — it compared this copy to a hash from this same repo). As the
-      # canonical hub, CultureMech is covered by the nightly fleet audit
-      # (culturebotai-claw's fleet-audit job, which compares all four
-      # repos) and by validate-products below, which exercises the validator on
-      # the full corpus. The spokes fail their own CI on drift via
-      # scripts/check_vendored_sync.sh (shared-reference check against this hub).
+      # The unfiltered vendored-sync workflow independently checks every governed
+      # artifact against the immutable culturebotai-claw manifest pin. This job
+      # remains focused on the validator's corpus behavior.
 
       # Build the SSSOM product so the `required: true` sssom target is satisfied
       # (output/ is gitignored, so it is never checked in). The generator resolves
