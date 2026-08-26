@@ -19,8 +19,8 @@ ingredients:
     label: succinate
 - preferred_term: Thiamine
   term:
-    id: CHEBI:26948
-    label: vitamin B1
+    id: CHEBI:18385
+    label: thiamine(1+)
   concentration:
     value: '0.033243'
     unit: MILLIMOLAR

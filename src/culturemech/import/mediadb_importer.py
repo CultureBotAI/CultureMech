@@ -35,6 +35,39 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
+# The first four rows in the archived MediaDB compound export are corrupted
+# fragments rather than their KEGG identities. Rows 5 onward resume the expected
+# sequence (row 5 is C00005/NADPH, row 6 is C00006/NADP+, etc.). Keep the raw
+# snapshot immutable and restore the identities at the normalization boundary.
+# ChEBI labels/identifiers were verified with OAK sqlite:obo:chebi on 2026-08-25.
+MEDIADB_COMPOUND_CORRECTIONS = {
+    "1": {
+        "preferred_term": "Water",
+        "kegg_compound": "C00001",
+        "chebi_id": "CHEBI:15377",
+        "chebi_label": "water",
+    },
+    "2": {
+        "preferred_term": "ATP",
+        "kegg_compound": "C00002",
+        "chebi_id": "CHEBI:15422",
+        "chebi_label": "ATP",
+    },
+    "3": {
+        "preferred_term": "NAD+",
+        "kegg_compound": "C00003",
+        "chebi_id": "CHEBI:15846",
+        "chebi_label": "NAD(+)",
+    },
+    "4": {
+        "preferred_term": "NADH",
+        "kegg_compound": "C00004",
+        "chebi_id": "CHEBI:16908",
+        "chebi_label": "NADH",
+    },
+}
+
+
 class MediaDBImporter:
     """Import MediaDB media data into CultureMech format."""
 
@@ -255,7 +288,7 @@ class MediaDBImporter:
         ingredients = []
 
         for comp in medium.get('composition', []):
-            compound_id = comp.get('compound_id')
+            compound_id = str(comp.get('compound_id') or '')
             if not compound_id:
                 continue
 
@@ -265,18 +298,26 @@ class MediaDBImporter:
                 logger.debug(f"Compound not found for ID: {compound_id}")
                 continue
 
-            # MediaDB uses KEGG IDs as 'name' field
-            kegg_name = str(compound.get('name', compound_id))
-            # The 'chebi_id' field actually contains compound common names, not numeric IDs
-            common_name = str(compound.get('chebi_id', kegg_name))
+            correction = MEDIADB_COMPOUND_CORRECTIONS.get(compound_id)
+            if correction:
+                common_name = correction["preferred_term"]
+                ingredient = {
+                    'preferred_term': common_name,
+                    'term': {
+                        'id': correction["chebi_id"],
+                        'label': correction["chebi_label"],
+                    },
+                }
+            else:
+                # MediaDB uses KEGG IDs as 'name' field. Its misleadingly named
+                # 'chebi_id' field actually contains common names, not identifiers.
+                kegg_name = str(compound.get('name', compound_id))
+                common_name = str(compound.get('chebi_id', kegg_name))
+                ingredient = {'preferred_term': common_name}
 
-            # Use common name as preferred term
-            ingredient = {
-                'preferred_term': common_name
-            }
-
-            # Try to get ChEBI ID from chemical mapper
-            if self.chemical_mapper:
+            # Try to get ChEBI ID from the general mapper for ordinary rows. The
+            # four corrected rows above already carry an evidence-backed identity.
+            if self.chemical_mapper and not correction:
                 mapping = self.chemical_mapper.lookup(common_name)
                 if mapping and mapping.get('chebi_id'):
                     chebi_id = str(mapping['chebi_id'])
@@ -318,6 +359,8 @@ class MediaDBImporter:
 
             # Add cross-references as notes
             xrefs = []
+            if correction:
+                xrefs.append(f"KEGG.COMPOUND:{correction['kegg_compound']}")
             if compound.get('kegg_id'):
                 xrefs.append(f"KEGG:{compound['kegg_id']}")
             if compound.get('bigg_id'):

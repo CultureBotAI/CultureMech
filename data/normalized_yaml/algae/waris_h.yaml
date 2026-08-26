@@ -56,6 +56,13 @@ curation_history:
     step (#276): H BO -> H3BO3; MnSO .H O -> MnSO4.H2O. The corrupted original is
     preserved in each ingredient''s notes.'
   changes: 2 preferred_term(s) repaired
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_ccap_instruction_rows.py
+  action: REPAIRED_CCAP_INSTRUCTION_ROWS
+  changes: ingredients 18 -> 17
+  notes: Repaired preparation text and nested-recipe flattening against CCAP MR_Waris_H.pdf.
+    Moved process statements to preparation_steps and restored source-asserted components
+    or constituent-medium references where applicable.
 references:
 - reference: CCAP:Waris_H
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_Waris_H.pdf
@@ -273,15 +280,18 @@ ingredients:
   source: CCAP Medium MR_Waris_H.pdf
   notes: From CCAP Medium MR_Waris_H.pdf; Curated from CCAP Medium MR_Waris_H.pdf
     specification
-- preferred_term: Make up to 1 litre with deionised water and adjust pH to 7.0 with
-  notes: Ontology mapping not yet available; From CCAP Medium MR_Waris_H.pdf; Curated
-    from CCAP Medium MR_Waris_H.pdf specification
-  concentration:
-    value: '1'
-    unit: MOLAR
-  source: CCAP Medium MR_Waris_H.pdf
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated
 - curation_method:automated_expert_mapping
 original_name: Waris-H
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Bring to 1 L with deionised water.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.0 with 1 M NaOH or 1 M HCl before autoclaving.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave at 15 psi for 15 minutes.

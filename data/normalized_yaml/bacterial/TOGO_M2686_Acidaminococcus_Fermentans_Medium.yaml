@@ -54,11 +54,11 @@ ingredients:
   notes: 'Role: Nitrogen source; Properties: Simple component, Organic compound, Defined
     component'
   term:
-    id: CHEBI:29988
-    label: L-glutamate(2-)
+    id: CHEBI:64220
+    label: monosodium glutamate
   mediaingredientmech_chebi_term:
-    id: CHEBI:29988
-    label: L-glutamate(2-)
+    id: CHEBI:64220
+    label: monosodium glutamate
 - preferred_term: Arginine
   concentration:
     value: '1'

@@ -89,24 +89,24 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Vitamin B12
   term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
 - preferred_term: Sodium glutamate monohydrate
   term:
-    id: CHEBI:64243
-    label: monosodium L-glutamate
+    id: CHEBI:232425
+    label: monosodium L-glutamate hydrate
   concentration:
     value: '18.7'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:64243
-    label: monosodium L-glutamate
+    id: CHEBI:232425
+    label: monosodium L-glutamate hydrate
 - preferred_term: Na2S2O3 x 5 H2O
   term:
     id: CHEBI:32150
@@ -189,14 +189,14 @@ ingredients:
     label: boric acid
 - preferred_term: CoCl2 x 6 H2O
   term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
   concentration:
     value: '0.19'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318

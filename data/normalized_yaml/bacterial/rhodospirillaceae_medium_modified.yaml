@@ -11,202 +11,118 @@ media_term:
   term:
     id: mediadive.medium:27
     label: RHODOSPIRILLACEAE MEDIUM (modified)
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf'
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf
+
+  Composition verified against https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf
+  on 2026-08-25 (SHA-256 e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9).'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
-    value: '0.3'
+    value: '0.30'
     unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: yeast extract
 - preferred_term: Disodium succinate
+  concentration:
+    value: '1.00'
+    unit: G_PER_L
   term:
     id: CHEBI:63675
     label: sodium succinate (anhydrous)
-  concentration:
-    value: '1'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63675
     label: sodium succinate (anhydrous)
 - preferred_term: Ammonium acetate
+  concentration:
+    value: '0.50'
+    unit: G_PER_L
   term:
     id: CHEBI:62947
     label: ammonium acetate
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:62947
     label: ammonium acetate
-- preferred_term: Fe(III) citrate
-  term:
-    id: CHEBI:144421
-    label: iron(III) citrate
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:144421
-    label: iron(III) citrate
 - preferred_term: KH2PO4
+  concentration:
+    value: '0.50'
+    unit: G_PER_L
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
 - preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.40'
+    unit: G_PER_L
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
-  concentration:
-    value: '0.4'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
 - preferred_term: NaCl
+  concentration:
+    value: '0.40'
+    unit: G_PER_L
   term:
     id: CHEBI:26710
     label: sodium chloride
-  concentration:
-    value: '0.4'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
 - preferred_term: NH4Cl
+  concentration:
+    value: '0.40'
+    unit: G_PER_L
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  concentration:
-    value: '0.4'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
     label: ammonium chloride
 - preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
   concentration:
     value: '0.05'
     unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
-  concentration:
-    value: '0.4'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
 - preferred_term: L-Cysteine HCl
+  concentration:
+    value: '0.30'
+    unit: G_PER_L
   term:
     id: CHEBI:91247
     label: L-cysteine hydrochloride
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000223
-    label: L-Cysteine HCl
-- preferred_term: Resazurin
-  term:
-    id: CHEBI:8806
-    label: Resazurin
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:8806
-    label: Resazurin
-- preferred_term: ZnSO4 x 7 H2O
-  term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
+    id: CHEBI:91247
+    label: L-cysteine hydrochloride
+- preferred_term: Distilled water
   concentration:
-    value: '0.1'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
-- preferred_term: MnCl2 x 4 H2O
+    value: '1000.00'
+    unit: ML_PER_L
   term:
-    id: CHEBI:86368
-    label: manganese(II) chloride tetrahydrate
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
+    id: CHEBI:15377
+    label: water
   mediaingredientmech_chebi_term:
-    id: CHEBI:86368
-    label: manganese(II) chloride tetrahydrate
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: boric acid
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:33118
-    label: boric acid
-- preferred_term: CoCl2 x 6 H2O
-  term:
-    id: CHEBI:35696
-    label: cobalt dichloride
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:35696
-    label: cobalt dichloride
-- preferred_term: CuCl2 x 2 H2O
-  term:
-    id: CHEBI:86318
-    label: copper(II) chloride dihydrate
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86318
-    label: copper(II) chloride dihydrate
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: nickel dichloride
-  concentration:
-    value: '0.02'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:34887
-    label: nickel dichloride
-- preferred_term: Na2MoO4 x 2 H2O
-  term:
-    id: CHEBI:75213
-    label: sodium molybdate dihydrate
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:75213
-    label: sodium molybdate dihydrate
+    id: CHEBI:15377
+    label: water
+  notes: Amount printed for the final-medium batch in DSMZ Medium 27.
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
   description: Adjust pH to 6.8.
 - step_number: 2
   action: AUTOCLAVE
-  description: Boil the medium for a few minute. Bubble the medium with nitrogen gas
-    and fill 10 ml in 15 ml tubes with a rubber septum under a stream of nitrogen
-    gas. Autoclave at 121°C for 15 min. Sterile syringes are used to inoculate and
-    remove samples.
+  description: Boil for a few minutes. Bubble with nitrogen, dispense 10 ml into 15
+    ml tubes with rubber septa under nitrogen, and autoclave at 121 C for 15 minutes.
+    Use sterile syringes for inoculation and sampling.
 - step_number: 3
   action: MIX
   description: Incubate in the light using a tungsten lamp.
@@ -240,10 +156,191 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_dsmz_27_44_compositions.py
+  action: CORRECTED_DSMZ_27_44_STOCK_STRUCTURE
+  changes: ingredients 19 -> 10; solutions 0 -> 4
+  notes: Restored the reviewed DSMZ Medium 27 formulation while preserving four stock-solution
+    boundaries. Corrected vitamin B12, SL-6, and resazurin concentration semantics;
+    selected identities were verified in the MIM SSSOM.
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_27_RHODOSPIRILLACEAE_medium_modified.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004707
   name: rhodospirillaceae_medium_modified
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 27; local ingredient
-    and concentration signatures match.
+  notes: KOMODO Medium 27 explicitly cites DSMZ Medium 27.
+- path: data/normalized_yaml/bacterial/rhodocyclus_purpureus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001559
+  name: rhodocyclus_purpureus_medium
+  notes: DSMZ Medium 44 states that it is the same as modified medium 27.
+solutions:
+- preferred_term: Fe(III) citrate solution (0.1% in water)
+  composition:
+  - preferred_term: Fe(III) citrate
+    concentration:
+      value: '1.00'
+      unit: G_PER_L
+    term:
+      id: CHEBI:144421
+      label: iron(III) citrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:144421
+      label: iron(III) citrate
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000.00'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  concentration:
+    value: '5.00'
+    unit: ML_PER_L
+  notes: 0.1% (w/v) stock; add 5.00 ml per printed final-medium batch.
+- preferred_term: Vitamin B12 solution (10 mg in 100 ml water)
+  composition:
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.10'
+      unit: G_PER_L
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: vitamin B12
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000.00'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  concentration:
+    value: '0.40'
+    unit: ML_PER_L
+  notes: 10 mg per 100 ml stock; add 0.40 ml per printed final-medium batch. This
+    is 0.04 mg vitamin B12 per litre before any volume correction.
+- preferred_term: Trace element solution SL-6
+  composition:
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '0.10'
+      unit: G_PER_L
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+  - preferred_term: MnCl2 x 4 H2O
+    concentration:
+      value: '0.03'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+  - preferred_term: H3BO3
+    concentration:
+      value: '0.30'
+      unit: G_PER_L
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+  - preferred_term: CoCl2 x 6 H2O
+    concentration:
+      value: '0.20'
+      unit: G_PER_L
+    term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    notes: MIM SSSOM maps this hydrated source label to cobalt dichloride.
+  - preferred_term: CuCl2 x 2 H2O
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86318
+      label: copper(II) chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86318
+      label: copper(II) chloride dihydrate
+  - preferred_term: NiCl2 x 6 H2O
+    concentration:
+      value: '0.02'
+      unit: G_PER_L
+    term:
+      id: CHEBI:34887
+      label: nickel dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:34887
+      label: nickel dichloride
+    notes: MIM SSSOM maps this hydrated source label to nickel dichloride.
+  - preferred_term: Na2MoO4 x 2 H2O
+    concentration:
+      value: '0.03'
+      unit: G_PER_L
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000.00'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  concentration:
+    value: '1.00'
+    unit: ML_PER_L
+  notes: DSMZ SL-6 stock composition is printed per litre; add 1.00 ml.
+- preferred_term: Resazurin solution (0.1%)
+  composition:
+  - preferred_term: Resazurin
+    concentration:
+      value: '1.00'
+      unit: G_PER_L
+    term:
+      id: CHEBI:8806
+      label: Resazurin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:8806
+      label: Resazurin
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000.00'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  concentration:
+    value: '0.50'
+    unit: ML_PER_L
+  notes: 0.1% (w/v) stock; add 0.50 ml per printed final-medium batch.
+sterilization:
+  method: AUTOCLAVE

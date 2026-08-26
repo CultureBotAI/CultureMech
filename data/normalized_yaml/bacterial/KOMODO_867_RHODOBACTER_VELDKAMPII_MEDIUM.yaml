@@ -30,15 +30,15 @@ ingredients:
     label: sodium acetate
 - preferred_term: Vitamin B12
   term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
   concentration:
     value: '0.112'
     unit: G_PER_L
   notes: ' [Merged 3 duplicates: 0.002, 0.1, 0.01]'
   mediaingredientmech_chebi_term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158

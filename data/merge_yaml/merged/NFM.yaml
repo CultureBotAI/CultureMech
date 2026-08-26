@@ -65,8 +65,8 @@ ingredients:
     value: '0.00025'
     unit: G_PER_L
   term:
-    id: CHEBI:64755
-    label: EDTA(2-)
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 60-00-4; MW: 292.24;
     From UW concentrated base'
 - preferred_term: Zinc sulfate heptahydrate

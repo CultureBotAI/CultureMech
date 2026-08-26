@@ -194,12 +194,12 @@ def test_stock_solution_records_are_excluded(corpus_findings):
 # visible to it. `H BO` matched no trace-element pattern and was flagged 0 times on main;
 # `H3BO3` matches and is flagged. The concentrations were always wrong -- the corrupted
 # name was hiding them.
-CONCENTRATION_BACKLOG_BASELINE = 9_757
+CONCENTRATION_BACKLOG_BASELINE = 9_688
 # The sharper baseline (#150): a raw row count drifts with corpus size, whereas a
 # new flattened cocktail is a specific defect shape an import has reintroduced.
 # 185 -> 186 for the same reason as the row baseline above: a record whose repaired
 # name now matches the cocktail signature, not a newly flattened cocktail.
-COCKTAIL_BASELINE = 186
+COCKTAIL_BASELINE = 183
 
 
 def test_implausible_row_count_does_not_exceed_the_known_backlog(corpus_findings):

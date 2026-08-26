@@ -241,14 +241,14 @@ solutions:
       label: copper(II) sulfate pentahydrate
   - preferred_term: CoCl2 x 6 H2O
     term:
-      id: CHEBI:35696
-      label: cobalt dichloride
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
     concentration:
       value: '1.61'
       unit: G_PER_L
     mediaingredientmech_chebi_term:
-      id: CHEBI:35696
-      label: cobalt dichloride
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
   preparation_notes: Stock prepared in 1000 ml. Composition and volume from medium
     69's own MediaDive recipe, identified by this record reproducing that medium's
     composition exactly (16/16 shared compounds at identical values) despite the upstream

@@ -432,15 +432,15 @@ solutions:
       label: pyridoxine hydrochloride
   - preferred_term: Vitamin B12
     term: &id007
-      id: CHEBI:17439
-      label: cyanocob(III)alamin
+      id: CHEBI:176843
+      label: vitamin B12
     concentration:
       value: '0.1'
       unit: G_PER_L
     notes: ' [Merged 2 duplicates: 0.001, 0.1]'
     mediaingredientmech_chebi_term: &id008
-      id: CHEBI:17439
-      label: cyanocob(III)alamin
+      id: CHEBI:176843
+      label: vitamin B12
   concentration:
     value: '1'
     unit: ML_PER_L

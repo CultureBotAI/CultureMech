@@ -6,8 +6,11 @@ composition_type: UNDEFINED
 physical_state: LIQUID
 description: Algae culture medium from SAG Culture Collection (Göttingen). Suitable
   for freshwater algae cultivation. Recipe available in PDF format.
-notes: Full recipe available at http://sagdb.uni-goettingen.de/culture_media/28 WEES
+notes: 'Full recipe available at http://sagdb.uni-goettingen.de/culture_media/28 WEES
   Medium.pdf
+
+  Composition verified against https://sagdb.uni-goettingen.de/culture_media/28%20WEES%20Medium.pdf
+  on 2026-08-25 (SHA-256 2ac8f35dfedff05a1d56b0b5e8d48a56e64c681ad47efb4aabe11b2b547ea898).'
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -48,10 +51,295 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_sag_missing_compositions.py
+  action: RESTORED_SAG_SOURCE_COMPOSITION
+  changes: ingredients 0 -> 1; solutions 0 -> 8
+  notes: Restored the formulation from the reviewed SAG PDF, preserving final-medium
+    and stock-solution boundaries. Calculated stock concentrations are documented
+    in-place. Ingredient identities were selected from the MediaIngredientMech SSSOM.
 references:
 - reference: SAG:WEES
 - reference: http://sagdb.uni-goettingen.de/culture_media/28 WEES Medium.pdf
-ingredients: []
-data_quality_flags:
-- incomplete_composition
+ingredients:
+- preferred_term: Deionized or distilled water
+  concentration:
+    value: '1'
+    unit: L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: Prepare the final formulation per litre of water as printed.
 original_name: WEES
+solutions:
+- preferred_term: KNO3 stock solution
+  composition:
+  - preferred_term: KNO3
+    concentration:
+      value: '100'
+      unit: G_PER_L
+    term:
+      id: CHEBI:63043
+      label: potassium nitrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63043
+      label: potassium nitrate
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+- preferred_term: MgSO4 x 7 H2O stock solution
+  composition:
+  - preferred_term: MgSO4 x 7 H2O
+    concentration:
+      value: '20'
+      unit: G_PER_L
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+- preferred_term: (NH4)2HPO4 stock solution
+  composition:
+  - preferred_term: (NH4)2HPO4
+    concentration:
+      value: '20'
+      unit: G_PER_L
+    term:
+      id: CHEBI:63051
+      label: diammonium hydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63051
+      label: diammonium hydrogen phosphate
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+- preferred_term: Saturated CaSO4 solution
+  composition:
+  - preferred_term: CaSO4
+    concentration:
+      value: '1'
+      unit: VARIABLE
+    term:
+      id: CHEBI:31346
+      label: calcium sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31346
+      label: calcium sulfate
+    notes: Prepare a saturated solution; the source gives no mass concentration.
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+- preferred_term: WEES PII metal mix without Fe
+  composition:
+  - preferred_term: EDTA
+    concentration:
+      value: '3'
+      unit: G_PER_L
+    term:
+      id: CHEBI:4735
+      label: ethylenediaminetetraacetic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:4735
+      label: ethylenediaminetetraacetic acid
+  - preferred_term: H3BO3
+    concentration:
+      value: '1.14'
+      unit: G_PER_L
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+  - preferred_term: MnCl2 x 4 H2O
+    concentration:
+      value: '144'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '21'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+  - preferred_term: CoCl2 x 6 H2O
+    concentration:
+      value: '4'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+  - preferred_term: Deionized or distilled water
+    concentration:
+      value: '1'
+      unit: L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  notes: Source amounts per 100 mL were normalized to concentrations per litre.
+- preferred_term: WEES Fe-EDTA solution
+  composition:
+  - preferred_term: EDTA
+    concentration:
+      value: '5.2'
+      unit: G_PER_L
+    term:
+      id: CHEBI:4735
+      label: ethylenediaminetetraacetic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:4735
+      label: ethylenediaminetetraacetic acid
+  - preferred_term: FeSO4 x 7 H2O
+    concentration:
+      value: '5'
+      unit: G_PER_L
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+  - preferred_term: 1 N KOH
+    concentration:
+      value: '54'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:32035
+      label: potassium hydroxide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32035
+      label: potassium hydroxide
+    notes: Equivalent to 5.4 mL per source 100 mL stock batch.
+  - preferred_term: Deionized or distilled water
+    concentration:
+      value: '1'
+      unit: L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+- preferred_term: WEES vitamin stock solution
+  composition:
+  - preferred_term: Vitamin B12
+    concentration:
+      value: '0.2'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
+    mediaingredientmech_chebi_term:
+      id: CHEBI:176843
+      label: vitamin B12
+  - preferred_term: Biotin
+    concentration:
+      value: '1.0'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:15956
+      label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
+  - preferred_term: Thiamine HCl
+    concentration:
+      value: '100'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+  - preferred_term: Nicotinamide
+    concentration:
+      value: '0.1'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:17154
+      label: nicotinamide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:17154
+      label: nicotinamide
+  - preferred_term: Deionized or distilled water
+    concentration:
+      value: '1'
+      unit: L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+- preferred_term: WEES soil extract
+  composition:
+  - preferred_term: Garden soil
+    concentration:
+      value: '100'
+      unit: G_PER_L
+    term:
+      id: ENVO:00002263
+      label: garden soil
+  - preferred_term: Deionized or distilled water
+    concentration:
+      value: '1'
+      unit: L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  concentration:
+    value: '100'
+    unit: ML_PER_L
+  notes: Boil 10 g soil with 125 mL water for 5 minutes, filter and centrifuge, then
+    make the extract to 100 mL.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Add each stock and the soil extract at the stated amount.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust to pH 5.4-6.0 with 0.1 N HCl.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 30 minutes.
+ph_range:
+  min: 5.4
+  max: 6.0
+sterilization:
+  method: AUTOCLAVE
+  duration: 30 minutes

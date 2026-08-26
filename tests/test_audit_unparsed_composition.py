@@ -197,15 +197,41 @@ def test_a_preparation_instruction_parsed_as_an_ingredient_is_caught(aud):
 
 
 @pytest.mark.parametrize("name", [
+    "For agar, add",
+    "Make up to",
+    "Add to 1000 ml of distilled water",
+    "Soil is prepared as above.",
+    "To make this medium, omit stock 5 and instead add",
+])
+def test_truncated_ccap_instruction_signatures_are_caught(aud, name):
+    doc = {"ingredients": [{
+        "preferred_term": name,
+        "concentration": {"value": "1", "unit": "G_PER_L"},
+    }]}
+    assert _findings(aud, doc) == {"PROSE_AS_INGREDIENT"}
+
+
+@pytest.mark.parametrize("name", [
     "Sodium acetate",           # contains no instruction verb
     "Yeast extract",
     "Bacto Tryptic Soy Broth w/o Dextrose (Difco)",
     "Adenine",                  # starts with the letters of "Add" but is not one
+    "C. difficile supplement",
+    "Trace Mineral Supplement, Catalog No. MD-TMS",
+    "Aqua bidest. filter-sterilized",
 ])
 def test_real_reagent_names_do_not_trip_the_prose_detector(aud, name):
     doc = {"ingredients": [
         {"preferred_term": name, "concentration": {"value": "1", "unit": "G_PER_L"}}]}
     assert _findings(aud, doc) == set()
+
+
+def test_supplement_used_as_a_verb_is_still_instruction_prose(aud):
+    doc = {"ingredients": [{
+        "preferred_term": "Supplement the medium with sterile serum before inoculation.",
+        "concentration": {"value": "1", "unit": "ML_PER_L"},
+    }]}
+    assert _findings(aud, doc) == {"PROSE_AS_INGREDIENT"}
 
 
 def test_an_instruction_verb_alone_is_not_enough(aud):

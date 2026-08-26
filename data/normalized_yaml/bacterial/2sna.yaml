@@ -4,18 +4,53 @@ original_name: 2SNA
 category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: CCAP Medium C96
   term:
     id: mediadive.medium:C96
     label: 2SNA
-notes: 'Source: CCAP | Link: https://www-cyanosite.bio.purdue.edu/media/table/SNA.html'
-ingredients: []
+notes: 'Source: CCAP | Link: https://www-cyanosite.bio.purdue.edu/media/table/SNA.html
+
+  Composition verified against https://www-cyanosite.bio.purdue.edu/media/table/SNA.html
+  on 2026-08-25.'
+ingredients:
+- preferred_term: Nutrient agar (Oxoid CM3)
+  concentration:
+    value: '28.0'
+    unit: G_PER_L
+- preferred_term: NaCl
+  concentration:
+    value: '35.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Filtered natural seawater
+  concentration:
+    value: '1'
+    unit: L
+  notes: Natural-seawater formulation. The source also permits 35 g/L synthetic sea
+    salts in distilled water.
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: This medium recipe is coming very soon!
+  description: Mix the constituents and ensure homogeneity.
+- step_number: 2
+  action: HEAT
+  description: Steam for 30 minutes.
+- step_number: 3
+  action: ALIQUOT
+  description: Dispense as required.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Autoclave at 15 psi.
+- step_number: 5
+  action: COOL
+  description: For tubes, slope before the medium cools and solidifies.
 applications:
 - Microbial cultivation
 curation_history:
@@ -41,5 +76,12 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
-data_quality_flags:
-- incomplete_composition
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_ccap_missing_compositions.py
+  action: RESTORED_CCAP_SOURCE_COMPOSITION
+  changes: ingredients 0 -> 3; solutions 0 -> 0
+  notes: Restored 2sna from the reviewed authoritative source. Preserved stock boundaries
+    and source alternatives; removed the incomplete flag where present. Ingredient
+    identities follow the MediaIngredientMech SSSOM.
+sterilization:
+  method: AUTOCLAVE

@@ -10,14 +10,67 @@ media_term:
   term:
     id: mediadive.medium:J313
     label: JCM MEDIUM No. 313
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=313'
-ingredients: []
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=313
+
+  Composition recovery source: https://togomedium.org/medium/M308 (TOGO snapshot of
+  JCM medium J313).'
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: NaHCO3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: Na2CO3
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
 preparation_steps:
 - step_number: 1
+  action: AUTOCLAVE
+  description: Filter--sterilize KSCN solution and separately autoclave Trace elements
+    solution and MgCl2・6H2O solution. Aseptically add KSCN solution, Trace elements
+    solution and MgCl2・6H2O solution to the medium.
+- step_number: 2
   action: FILTER_STERILIZE
-  description: Use the Medium No. 310 without KSCN solution. Aseptically add 40.0
-    ml of 2 M Na2S2O3 solution (filter-sterilized) and 5.0 ml of 1 M KNO3 solution
-    (filter-sterilized) to the medium (1.0 L).
+  description: Use the Medium No. [310] without KSCN solution. Aseptically add 40.0ml
+    of 2 M Na2S2O3 solution (filter--sterilized) and 5.0 ml of 1 M KNO3 solution (filter--sterilized)
+    to the medium (1.0 L).
 applications:
 - Microbial cultivation
 curation_history:
@@ -54,6 +107,42 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
-data_quality_flags:
-- incomplete_composition
-- source_information_unavailable
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_jcm_missing_from_togo.py
+  action: RECOVERED_JCM_COMPOSITION_FROM_TOGO
+  changes: ingredients 0 -> 5; solutions 0 -> 4; preparation_steps 1 -> 2; removed
+    obsolete composition/source flags
+  notes: Recovered JCM J313 from source-equivalent TOGO M308. Preserved final ingredients
+    and stock-solution boundaries; did not flatten referenced media or stocks.
+- timestamp: '2026-08-26T02:13:02.142742+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 5 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
+solutions:
+- preferred_term: 20% MgCl2・6H2O solution
+  composition: []
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
+- preferred_term: KNO3 solution
+  composition: []
+  concentration:
+    value: '5'
+    unit: ML_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Solution, Inorganic
+    compound'
+- preferred_term: Na2S2O3 solution
+  composition: []
+  concentration:
+    value: '40'
+    unit: ML_PER_L
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: Trace elements solution (see Medium [M305])
+  composition: []
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  notes: Defined in TOGO medium M305.

@@ -140,14 +140,14 @@ ingredients:
     label: uracil
 - preferred_term: Vitamin B12
   term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
   concentration:
     value: '0.0007378'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
 - preferred_term: Xanthine
   concentration:
     value: '0.03287'
@@ -384,8 +384,8 @@ ingredients:
     label: riboflavin
 - preferred_term: Thiamine
   term:
-    id: CHEBI:26948
-    label: vitamin B1
+    id: CHEBI:18385
+    label: thiamine(1+)
   concentration:
     value: '0.003769'
     unit: MILLIMOLAR

@@ -6,10 +6,15 @@ medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: ''
+- preferred_term: NAD+
   concentration:
     value: '0.00603'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:15846
+    label: NAD(+)
+  notes: Restored from MediaDB compound row C00003; the archived leading compound
+    labels are corrupt, while the row sequence preserves the KEGG identity.
 - preferred_term: L-Glutamate
   concentration:
     value: '8.83572'
@@ -138,14 +143,14 @@ ingredients:
     label: hypoxanthine
 - preferred_term: EDTA
   term:
-    id: CHEBI:64755
-    label: EDTA(2-)
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
   concentration:
     value: '0.01369'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
-    id: CHEBI:64755
-    label: EDTA(2-)
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
 - preferred_term: Inosine
   concentration:
     value: '7.45434'
@@ -164,8 +169,8 @@ ingredients:
     label: L-citrulline
 - preferred_term: Thiamine
   term:
-    id: CHEBI:26948
-    label: vitamin B1
+    id: CHEBI:18385
+    label: thiamine(1+)
   concentration:
     value: '0.0133'
     unit: MILLIMOLAR
@@ -324,6 +329,11 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: fix_mediadb_leading_compounds.py
+  action: RESTORED_CORRUPT_SOURCE_COMPOUND
+  notes: Restored C00003 as NAD+ (CHEBI:15846) from the MediaDB row sequence; resolves
+    the 2026-08-24 EMPTY_INGREDIENT_NAME review finding.
 media_term:
   preferred_term: MediaDB Medium 282
   term:

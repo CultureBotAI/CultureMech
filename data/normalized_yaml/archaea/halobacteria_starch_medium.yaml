@@ -25,14 +25,14 @@ ingredients:
     label: starch
 - preferred_term: Sodium glutamate monohydrate
   term:
-    id: CHEBI:64243
-    label: monosodium L-glutamate
+    id: CHEBI:232425
+    label: monosodium L-glutamate hydrate
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:64243
-    label: monosodium L-glutamate
+    id: CHEBI:232425
+    label: monosodium L-glutamate hydrate
 - preferred_term: Trisodium citrate x 2 H2O
   concentration:
     value: '3'

@@ -10,13 +10,129 @@ media_term:
   term:
     id: mediadive.medium:J792
     label: LIND 8A MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=792'
-ingredients: []
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=792
+
+  Composition recovery source: https://togomedium.org/medium/M824 (TOGO snapshot of
+  JCM medium J792).'
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+- preferred_term: NH4Cl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: MG_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Simple
+    component, Organic compound'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: MgCl2・6H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: KCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: L--Cysteine・HCl・H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+- preferred_term: Carbon dioxide gas
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Properties: ガス'
+  term:
+    id: CHEBI:16526
+    label: carbon dioxide
+- preferred_term: Nitrogen gas
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Properties: ガス'
+  term:
+    id: CHEBI:17997
+    label: dinitrogen
+- preferred_term: sodium pyruvate
+  concentration:
+    value: '20'
+    unit: MILLIMOLAR
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
 preparation_steps:
 - step_number: 1
+  action: AUTOCLAVE
+  description: 'Mix components thoroughly, adjust pH to 7.0 with KOH, distribute the
+    medium into culture vessels (e.g., 5 ml of the medium in the Hungate tubes) under
+    a N2--CO2 (4:1, v/v) gas mixture, seal with butyl rubber stoppers and autoclave.
+    After cooling, add per liter the following solutions from anaerobic stocks (autoclaved
+    or *filter--sterilized):'
+- step_number: 2
   action: MIX
-  description: Use Medium No. 786, replacing glucose with sodium pyruvate (final 20
-    mM).
+  description: Use Medium No. [786], replacing glucose with sodium pyruvate (final
+    20 mM).
 applications:
 - Microbial cultivation
 curation_history:
@@ -53,6 +169,35 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
-data_quality_flags:
-- incomplete_composition
-- source_information_unavailable
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_jcm_missing_from_togo.py
+  action: RECOVERED_JCM_COMPOSITION_FROM_TOGO
+  changes: ingredients 0 -> 14; solutions 0 -> 3; preparation_steps 1 -> 2; removed
+    obsolete composition/source flags
+  notes: Recovered JCM J792 from source-equivalent TOGO M824. Preserved final ingredients
+    and stock-solution boundaries; did not flatten referenced media or stocks.
+- timestamp: '2026-08-26T02:13:03.001390+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 9 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
+solutions:
+- preferred_term: Trace minerals (see Medium [M142])
+  composition: []
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+  notes: Defined in TOGO medium M142.
+- preferred_term: 8% NaHCO3 solution*
+  composition: []
+  concentration:
+    value: '25'
+    unit: ML_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: 5% Na2S・9H2O solution
+  composition: []
+  concentration:
+    value: '8'
+    unit: ML_PER_L
+  notes: 'Role: Reducing agent; Properties: Defined component, Solution, Inorganic
+    compound'

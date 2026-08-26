@@ -2,8 +2,8 @@ id: CultureMech:000935
 name: thermochromatium_allochromatium_medium
 original_name: THERMOCHROMATIUM/ALLOCHROMATIUM MEDIUM
 category: bacterial
-medium_type: DEFINED
-composition_type: DEFINED
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:
@@ -60,15 +60,15 @@ ingredients:
     label: water
 - preferred_term: EDTA
   term:
-    id: CHEBI:64755
-    label: EDTA(2-)
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
   concentration:
     value: '5.2166667'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.0166667, 5.2]'
   mediaingredientmech_chebi_term:
-    id: CHEBI:64755
-    label: EDTA(2-)
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -151,14 +151,14 @@ ingredients:
     label: sodium hydrogencarbonate
 - preferred_term: CoCl2 x 6 H2O
   term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
   concentration:
     value: '0.19'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368

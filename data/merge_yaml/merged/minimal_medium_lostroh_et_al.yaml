@@ -19,14 +19,14 @@ ingredients:
     label: succinate
 - preferred_term: EDTA
   term:
-    id: CHEBI:64755
-    label: EDTA(2-)
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
   concentration:
     value: '0.008554'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
-    id: CHEBI:64755
-    label: EDTA(2-)
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.603712'

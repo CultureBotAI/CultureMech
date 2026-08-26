@@ -101,22 +101,22 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
-    id: CHEBI:53258
-    label: sodium citrate
+    id: CHEBI:30769
+    label: citric acid
   mediaingredientmech_chebi_term:
-    id: CHEBI:53258
-    label: sodium citrate
+    id: CHEBI:30769
+    label: citric acid
 - preferred_term: EDTA
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
   term:
-    id: CHEBI:64755
-    label: EDTA(2-)
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
   mediaingredientmech_chebi_term:
-    id: CHEBI:64755
-    label: EDTA(2-)
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
 - preferred_term: Trace Metal Mix A5
   concentration:
     value: '1'

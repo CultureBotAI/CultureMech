@@ -270,6 +270,12 @@ def read_manifest(path: Path) -> list[dict[str, str]]:
 def build_proposals(rows: list[dict[str, str]]) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     grouped: dict[str, list[dict[str, str]]] = defaultdict(list)
     for row in rows:
+        # The content manifest also covers standalone stock-solution records.
+        # They are not MediaRecipe variants and must never enter parent/child
+        # medium grouping. Missing `record_kind` means an older media-only
+        # fixture/manifest and remains backward compatible.
+        if row.get("record_kind") == "SOLUTION":
+            continue
         if int_value(row, "total_component_count") == 0:
             continue
         grouped[row["ingredient_identity_signature"]].append(row)

@@ -150,6 +150,7 @@ def test_unparseable_source_is_unknown_not_a_guess(aw):
         ("audit_selective_agent_mismatch.py", "selective_agent_mismatch.tsv", "yes"),
         ("score_review_need.py", "review_need_ranking.tsv", "yes"),
         ("report_unparsed_compositions.py", "unparsed_compositions.tsv", "yes"),
+        ("audit_unparsed_composition.py", "unparsed_composition.tsv", "yes"),
         ("audit_filename_collisions.py", "filename_collisions.tsv", "yes"),
         ("audit_composition_type.py", "composition_type_conflicts.tsv", "yes"),
         ("prioritize_deep_research_candidates.py", "deep_research_priority.json", "yes"),

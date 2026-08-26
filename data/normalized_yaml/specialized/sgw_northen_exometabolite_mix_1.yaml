@@ -257,8 +257,8 @@ ingredients:
     value: '806.5'
     unit: MICROMOLAR
   term:
-    id: CHEBI:48095
-    label: keto-D-fructose
+    id: CHEBI:15824
+    label: D-fructose
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 57-48-7; MW: 180.16;
     From Northen_Exometabolite_mix_1'
 - preferred_term: D-Trehalose dihydrate
@@ -277,8 +277,8 @@ ingredients:
   notes: 'CAS: 10323-20-3; MW: 150.13; From Northen_Exometabolite_mix_1; Ontology
     enriched via CAS-RN lookup'
   term:
-    id: CHEBI:46983
-    label: aldehydo-D-arabinose
+    id: CHEBI:17108
+    label: D-arabinose
 - preferred_term: D-Maltose monohydrate
   concentration:
     value: '165.4'
@@ -372,8 +372,8 @@ ingredients:
   notes: 'CAS: 3458-28-4; MW: 180.16; From Northen_Exometabolite_mix_1; Ontology enriched
     via CAS-RN lookup'
   term:
-    id: CHEBI:37675
-    label: aldehydo-D-mannose
+    id: CHEBI:16024
+    label: D-mannose
 - preferred_term: Uridine
   concentration:
     value: '22.5'

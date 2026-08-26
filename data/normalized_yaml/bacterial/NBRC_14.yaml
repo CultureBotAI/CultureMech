@@ -3,8 +3,8 @@ name: '14'
 original_name: '14'
 category: bacterial
 description: 14. NBRC 13.
-medium_type: DEFINED
-composition_type: DEFINED
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Soytone

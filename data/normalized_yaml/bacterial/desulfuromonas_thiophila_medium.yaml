@@ -144,14 +144,14 @@ ingredients:
     label: boric acid
 - preferred_term: CoCl2 x 6 H2O
   term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
   concentration:
     value: '0.19'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -333,14 +333,14 @@ solutions:
   composition:
   - preferred_term: Vitamin B12
     term:
-      id: CHEBI:17439
-      label: cyanocob(III)alamin
+      id: CHEBI:176843
+      label: vitamin B12
     concentration:
       value: '0.1'
       unit: G_PER_L
     mediaingredientmech_chebi_term:
-      id: CHEBI:17439
-      label: cyanocob(III)alamin
+      id: CHEBI:176843
+      label: vitamin B12
   - preferred_term: Nicotinic acid
     term:
       id: CHEBI:15940

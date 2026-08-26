@@ -23,14 +23,14 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Sodium glutamate monohydrate
   term:
-    id: CHEBI:64243
-    label: monosodium L-glutamate
+    id: CHEBI:232425
+    label: monosodium L-glutamate hydrate
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:64243
-    label: monosodium L-glutamate
+    id: CHEBI:232425
+    label: monosodium L-glutamate hydrate
 - preferred_term: CaSO4 x 2 H2O
   term:
     id: CHEBI:32583
@@ -134,14 +134,14 @@ ingredients:
     label: manganese(II) chloride tetrahydrate
 - preferred_term: CoCl2 x 6 H2O
   term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
   concentration:
     value: '0.024'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158

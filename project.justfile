@@ -215,10 +215,10 @@ prioritize-deep-research-candidates *args="":
 score-review-need *args="":
     uv run --extra dev python scripts/score_review_need.py {{args}}
 
-# Turn the 25 NBRC records whose composition was crammed into one ingredient name
-# into a structured worklist (#166). REPORT ONLY — it never writes, because a parse
-# can round-trip and still be wrong: "KH2PO40.85g" splits equally well into
-# KH2PO4+0.85g and KH2PO+40.85g. Writes:
+# Detect recurrence of the NBRC shape where an entire composition was crammed
+# into one ingredient name. The original 25 records were repaired in #299, so
+# this narrower worklist is currently empty; the broader singular-named report
+# is owned by `audit-unparsed-composition` below.
 #   data/import_tracking/reports/unparsed_compositions.tsv
 [group('QC')]
 report-unparsed-compositions *args="":
@@ -280,7 +280,8 @@ refresh-derived:
 
 [group('QC')]
 triage-missing-compositions *args="":
-    uv run --extra dev python scripts/triage_missing_compositions.py {{args}}
+    uv run --extra dev python scripts/triage_missing_compositions.py \
+        --max-allowed 150 {{args}}
 
 # Keep medium_type populated and derived from composition_type (#165). It is a
 # MAINTAINED axis: kgx_export emits one edge per record from it, so a missing value
@@ -398,12 +399,11 @@ audit-selective-agent-mismatch *args="":
 [group('QC')]
 audit-concentration-plausibility *args="":
     uv run --extra dev python scripts/audit_concentration_plausibility.py \
-        --max-allowed 9757 --max-cocktails 186 {{args}}
+        --max-allowed 9688 --max-cocktails 183 {{args}}
 
 # Composition tables that were never parsed, plus prose sitting in name slots
-# (#299, #273). Baselines are today's counts: 64 findings, none of which reach
-# the KGX export. Lower them as the backlog is repaired; never raise one to make
-# a run pass.
+# (#299, #273). The 64-finding backlog is now cleared; both limits are absolute
+# zero gates. Never raise one to make a run pass.
 #
 # Was 169/31 before `just recover-nbrc-composition` restored 58 composition
 # tables from the preserved scrape and repaired 4 more surgically.
@@ -426,7 +426,7 @@ recover-nbrc-composition *args="":
 [group('QC')]
 audit-unparsed-composition *args="":
     uv run --extra dev python scripts/audit_unparsed_composition.py \
-        --max-allowed 64 --max-exported 0 {{args}}
+        --max-allowed 0 --max-exported 0 {{args}}
 
 # Historical CHEBI-only diagnostic against a sibling MIM SSSOM (#256).
 # KGX identity now comes from the pinned label-index resolver (#260); this report
@@ -437,8 +437,9 @@ audit-unparsed-composition *args="":
 # drift worth curating.
 #
 # Baselines are names, not rows -- one regrounding decision fixes every row of a
-# name. Today: 12 divergent, 75 internally split. Lower them as the backlog is
-# curated; never raise one to make a run pass.
+# name. The 2026-08-25 reconciliation reduced the gates to 5 divergent and 44
+# internally split names. Lower them as the backlog is curated; never raise one
+# to make a run pass.
 #
 # Needs MediaIngredientMech checked out beside this repo; pass --sssom otherwise.
 # Legacy recipe-local migration where we hold no CHEBI grounding (#308).
@@ -454,7 +455,7 @@ apply-mim-groundings *args="":
 [group('QC')]
 audit-mim-sssom *args="":
     uv run --extra dev python scripts/audit_mim_sssom_divergence.py \
-        --max-divergent 12 --max-split 75 {{args}}
+        --max-divergent 5 --max-split 44 {{args}}
 
 # Verify the immutable MediaIngredientMech label-index dependency used by KGX.
 # Entirely offline: hash, source pin, header, enums, row count, and label-group

@@ -136,11 +136,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
 - preferred_term: ZnSO4 x 7 H2O
   concentration:
     value: '28'
@@ -172,11 +172,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:86360
-    label: manganese(II) sulfate
+    id: CHEBI:131524
+    label: manganese(II) sulfate pentahydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:86360
-    label: manganese(II) sulfate
+    id: CHEBI:131524
+    label: manganese(II) sulfate pentahydrate
 - preferred_term: MoO3
   concentration:
     value: '4'

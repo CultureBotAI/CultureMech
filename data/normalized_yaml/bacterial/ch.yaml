@@ -10,43 +10,28 @@ media_term:
   term:
     id: mediadive.medium:C22
     label: CH
-notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_CH.pdf'
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_CH.pdf
+
+  Composition verified against https://www.ccap.ac.uk/wp-content/uploads/MR_CH.pdf
+  on 2026-08-25.'
 ingredients:
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
+- preferred_term: Deionized water
   concentration:
-    value: '5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: KCl
+    value: '1'
+    unit: L
   term:
-    id: CHEBI:32588
-    label: potassium chloride
-  concentration:
-    value: '5'
-    unit: G_PER_L
+    id: CHEBI:15377
+    label: water
   mediaingredientmech_chebi_term:
-    id: CHEBI:32588
-    label: potassium chloride
-- preferred_term: CaCl2
-  term:
-    id: CHEBI:3312
-    label: calcium dichloride
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:3312
-    label: calcium dichloride
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
+  action: MIX
+  description: Add 5 ml of each stock solution and make up to 1 L with deionized water.
+- step_number: 2
   action: AUTOCLAVE
-  description: Make up to 1 litre with deionised water. Autoclave at 15 psi for 15
-    minutes.
+  description: Autoclave at 15 psi for 15 minutes.
 applications:
 - Microbial cultivation
 curation_history:
@@ -72,4 +57,61 @@ curation_history:
   notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_ccap_duplicate_compositions.py
+  action: SOURCE_CORRECTED_CCAP_DUPLICATE_RECIPE
+  changes: ingredients 3 -> 1; solutions 0 -> 3
+  notes: Rebuilt ch from the reviewed CCAP PDF. Preserved stock boundaries and per-vessel
+    quantities; ingredient identities follow the MediaIngredientMech SSSOM.
 kg_microbe_match: mediadive.medium:C22
+solutions:
+- preferred_term: NaCl stock solution
+  composition:
+  - preferred_term: NaCl
+    concentration:
+      value: '20'
+      unit: G_PER_L
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  concentration:
+    value: '5.0'
+    unit: ML_PER_L
+  notes: Prepare with 2.0 g NaCl per 100 ml; add 5 ml/L.
+- preferred_term: KCl stock solution
+  composition:
+  - preferred_term: KCl
+    concentration:
+      value: '0.8'
+      unit: G_PER_L
+    term:
+      id: CHEBI:32588
+      label: potassium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32588
+      label: potassium chloride
+  concentration:
+    value: '5.0'
+    unit: ML_PER_L
+  notes: Prepare with 0.08 g KCl per 100 ml; add 5 ml/L.
+- preferred_term: CaCl2 stock solution
+  composition:
+  - preferred_term: CaCl2
+    concentration:
+      value: '1.2'
+      unit: G_PER_L
+    term:
+      id: CHEBI:3312
+      label: calcium dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:3312
+      label: calcium dichloride
+  concentration:
+    value: '5.0'
+    unit: ML_PER_L
+  notes: Prepare with 0.12 g CaCl2 per 100 ml; add 5 ml/L.
+sterilization:
+  method: AUTOCLAVE

@@ -17,25 +17,22 @@ unidentifiable — and each was calibrated against its corpus frequency so a
 signal firing on half the corpus cannot dominate one firing on 3%.
 
 STRUCTURAL — the composition is absent or unusable:
-  no ingredients               30   261 media (2.4%)
-  placeholder ingredient text  25    66 (0.6%)    "not specified"; the 100 "see
-                                                  source" placeholders were lifted
-                                                  to `ingredients: []` in #175, so
-                                                  they now score `no ingredients`
-  mangled ingredient name      25     1 (0.0%)   a whole recipe in one field (#166)
-  only 1-2 ingredients         15  1063 (9.6%)
+  no ingredients or solutions  30   no structured composition
+  placeholder component text   25   "not specified", "see source", etc.
+  mangled component name       25   a whole recipe in one field (#166)
+  only 1-2 components          15   suspiciously small composition
 
 GROUNDING — present but not machine-usable:
-  no ingredient grounded       20   398 (3.6%)
-  under half grounded          10   537 (4.8%)
+  no component grounded        20
+  under half grounded          10
 
 IDENTITY / PROVENANCE — cannot be traced to a source:
-  no media_term                10   695 (6.3%)
-  name is a bare strain pointer 10  248 (2.2%)   "For DSM 13514" names a strain
-  no notes / provenance         5   150 (1.4%)
+  no media_term                10
+  name is a bare strain pointer 10   "For DSM 13514" names a strain
+  no notes / provenance         5
 
 CONDITIONS — incomplete rather than wrong:
-  no pH and no temperature      5  5704 (51.4%)  deliberately low; it is the norm
+  no pH and no temperature      5   deliberately low; it is the norm
 
 Deliberately NOT scored here, because a dedicated audit already reports each and
 duplicating the logic would let the two drift: implausible concentrations
@@ -95,12 +92,36 @@ CONDITION_SLOTS = ("ph_value", "ph_range", "temperature_value", "temperature_ran
 NORM_LEVEL_SIGNALS = frozenset({"no pH and no temperature"})
 
 
-def _grounded(ing: dict[str, Any]) -> bool:
-    for key in ("term", "mediaingredientmech_chebi_term"):
-        term = ing.get(key)
+def _grounded(component: dict[str, Any]) -> bool:
+    for key in (
+        "term",
+        "mediaingredientmech_term",
+        "mediaingredientmech_chebi_term",
+        "culturemech_term",
+    ):
+        term = component.get(key)
         if isinstance(term, dict) and term.get("id"):
             return True
     return False
+
+
+def composition_components(doc: dict[str, Any]) -> list[dict[str, Any]]:
+    """Flatten the media-level composition for structural/grounding review.
+
+    A stock solution is one component when referenced by name or identifier only.
+    When its composition is inline, the ingredient entries are the more useful
+    grounding surface and replace the wrapper for scoring purposes.
+    """
+    components = [i for i in doc.get("ingredients") or [] if isinstance(i, dict)]
+    for solution in doc.get("solutions") or []:
+        if not isinstance(solution, dict):
+            continue
+        composition = solution.get("composition")
+        legacy_ingredients = solution.get("ingredients")
+        nested = composition or legacy_ingredients or []
+        nested_components = [i for i in nested if isinstance(i, dict)] if isinstance(nested, list) else []
+        components.extend(nested_components or [solution])
+    return components
 
 
 def score_record(doc: dict[str, Any]) -> tuple[int, list[str]]:
@@ -113,26 +134,26 @@ def score_record(doc: dict[str, Any]) -> tuple[int, list[str]]:
         score += points
         reasons.append(label)
 
-    ings = [i for i in doc.get("ingredients") or [] if isinstance(i, dict)]
-    names = [str(i.get("preferred_term") or "") for i in ings]
+    components = composition_components(doc)
+    names = [str(component.get("preferred_term") or "") for component in components]
 
     # --- structural
-    if not ings:
-        hit(30, "no ingredients")
-    elif len(ings) <= 2:
-        hit(15, f"only {len(ings)} ingredient(s)")
+    if not components:
+        hit(30, "no ingredients or solutions")
+    elif len(components) <= 2:
+        hit(15, f"only {len(components)} composition component(s)")
     if any(PLACEHOLDER.search(n) for n in names):
         hit(25, "placeholder ingredient text")
     if any(len(n) > 40 and MANGLED.search(n) for n in names):
         hit(25, "ingredient name contains an unparsed recipe")
 
     # --- grounding
-    if ings:
-        n_grounded = sum(1 for i in ings if _grounded(i))
+    if components:
+        n_grounded = sum(1 for component in components if _grounded(component))
         if n_grounded == 0:
-            hit(20, "no ingredient is grounded")
-        elif n_grounded / len(ings) < 0.5:
-            hit(10, f"only {n_grounded}/{len(ings)} ingredients grounded")
+            hit(20, "no composition component is grounded")
+        elif n_grounded / len(components) < 0.5:
+            hit(10, f"only {n_grounded}/{len(components)} composition components grounded")
 
     # --- identity / provenance
     if not doc.get("media_term"):
@@ -171,7 +192,7 @@ def score_parsed(records: list[tuple[str, dict[str, Any]]]) -> list[dict[str, An
             "file_path": rel,
             "record_id": str(doc.get("id") or ""),
             "name": str(doc.get("original_name") or doc.get("name") or ""),
-            "n_ingredients": str(len(doc.get("ingredients") or [])),
+            "n_components": str(len(composition_components(doc))),
             "reasons": "; ".join(reasons),
         })
     rows.sort(key=lambda r: (-r["score"], r["file_path"]))
@@ -202,7 +223,7 @@ def main(argv: list[str] | None = None) -> int:
     args.out.parent.mkdir(parents=True, exist_ok=True)
     with args.out.open("w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, delimiter="\t", fieldnames=[
-            "score", "file_path", "record_id", "name", "n_ingredients", "reasons"])
+            "score", "file_path", "record_id", "name", "n_components", "reasons"])
         w.writeheader()
         w.writerows(rows)
 

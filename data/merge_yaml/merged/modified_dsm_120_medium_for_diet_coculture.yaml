@@ -41,11 +41,11 @@ ingredients:
     value: '0.002'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:3312
-    label: calcium dichloride
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
   term:
-    id: CHEBI:3312
-    label: calcium dichloride
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: L-Cysteine
   concentration:
     value: '1.0'

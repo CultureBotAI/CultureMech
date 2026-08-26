@@ -21,6 +21,7 @@ Integration with cmm-ai-automation:
 """
 
 import json
+import re
 import yaml
 from pathlib import Path
 from typing import Any, Optional
@@ -29,6 +30,13 @@ import logging
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+
+_PERCENT_ATTRIBUTE = re.compile(r"(\d+(?:\.\d+)?)\s*%")
+_EMPTY_STOCK_ATTRIBUTE = re.compile(
+    r"^w/v\)\s*(?P<name>.+),\s*(?P<percent>\d+(?:\.\d+)?)%$",
+    re.IGNORECASE,
+)
 
 
 class MediaDiveImporter:
@@ -333,6 +341,10 @@ class MediaDiveImporter:
                 }
             ]
 
+        stock_solutions = self._parse_api_solutions(str(medium.get("id")))
+        if stock_solutions:
+            recipe["solutions"] = stock_solutions
+
         # Preparation steps - try to load from API data
         prep_steps = self._parse_preparation_steps(str(medium.get('id')))
         if prep_steps:
@@ -492,7 +504,66 @@ class MediaDiveImporter:
         Returns:
             List of ingredient dictionaries in CultureMech format
         """
-        # Check if API data file exists (sibling directory to mediadive_dir)
+        medium_data = self._get_api_medium_data(medium_id)
+        if not medium_data:
+            return None
+
+        # The first solution is the medium's primary formulation. Later entries
+        # define stocks referenced from that formulation; flattening all of them
+        # into ingredients turns stock-strength values into false final-medium
+        # concentrations.
+        primary_solutions = medium_data.get("solutions") or []
+        if not primary_solutions:
+            return None
+
+        ingredients = []
+        for item in primary_solutions[0].get("recipe") or []:
+            if self._is_api_stock_addition(item):
+                continue
+
+            compound_name = str(item.get("compound") or "").strip()
+            if not item.get("compound_id") or not compound_name:
+                continue
+
+            # Solvent volumes belong to the preparation volume, not the final
+            # ingredient list used for chemical composition edges.
+            if compound_name.lower() in ["water", "distilled water", "deionized water", "h2o"]:
+                continue
+
+            ingredient = {
+                "preferred_term": compound_name
+            }
+
+            ing_data = self.ingredients_by_name.get(compound_name.lower())
+            if ing_data and ing_data.get("ChEBI"):
+                ingredient["term"] = {
+                    "id": f"CHEBI:{ing_data['ChEBI']}",
+                    "label": ing_data.get("name", compound_name)
+                }
+
+            if item.get("g_l") is not None:
+                ingredient["concentration"] = {
+                    "value": str(item["g_l"]),
+                    "unit": "G_PER_L"
+                }
+            elif item.get("amount") is not None:
+                ingredient["concentration"] = {
+                    "value": str(item["amount"]),
+                    "unit": self._normalize_unit(item.get("unit", "g"))
+                }
+
+            if item.get("optional", 0) == 1:
+                ingredient["notes"] = "Optional ingredient"
+            if item.get("condition"):
+                condition_note = f" ({item['condition']})"
+                ingredient["notes"] = ingredient.get("notes", "") + condition_note
+
+            ingredients.append(ingredient)
+
+        return ingredients if ingredients else None
+
+    def _get_api_medium_data(self, medium_id: str) -> Optional[dict]:
+        """Return one cached MediaDive API medium payload by source identifier."""
         api_data_file = self.mediadive_dir.parent / "mediadive_api" / "mediadive_api_media.json"
         if not api_data_file.exists():
             return None
@@ -510,72 +581,71 @@ class MediaDiveImporter:
         if not self._api_data_cache:
             return None
 
-        # Find medium by ID
-        medium_data = None
         for medium in self._api_data_cache.get("data", []):
-            # API data has medium.id directly
             if str(medium.get("medium", {}).get("id")) == str(medium_id):
-                medium_data = medium
-                break
+                return medium
+        return None
 
-        if not medium_data:
+    @staticmethod
+    def _is_api_stock_addition(item: dict) -> bool:
+        """Whether a primary-recipe row adds a stock rather than a neat compound."""
+        if item.get("solution_id"):
+            return True
+        attribute = str(item.get("attribute") or "")
+        return str(item.get("unit") or "").lower() == "ml" and bool(
+            _PERCENT_ATTRIBUTE.search(attribute)
+        )
+
+    @staticmethod
+    def _api_stock_name(item: dict) -> str:
+        """Recover the source stock label, including three malformed API rows."""
+        referenced_name = str(item.get("solution") or "").strip()
+        if referenced_name:
+            return referenced_name
+
+        compound_name = str(item.get("compound") or "").strip()
+        attribute = str(item.get("attribute") or "").strip()
+        malformed = _EMPTY_STOCK_ATTRIBUTE.fullmatch(attribute)
+        if malformed and not compound_name:
+            recovered = malformed.group("name").strip()
+            recovered += ")" * max(0, recovered.count("(") - recovered.count(")"))
+            return f"{malformed.group('percent')}% (w/v) {recovered} solution"
+
+        percent = _PERCENT_ATTRIBUTE.search(attribute)
+        if percent and compound_name:
+            basis = " (w/v)" if "w/v" in attribute.lower() else ""
+            return f"{percent.group(1)}%{basis} {compound_name} solution"
+        return compound_name or "Unnamed stock solution"
+
+    def _parse_api_solutions(self, medium_id: str) -> Optional[list]:
+        """Preserve stocks referenced by a medium's primary MediaDive solution."""
+        medium_data = self._get_api_medium_data(medium_id)
+        primary_solutions = (medium_data or {}).get("solutions") or []
+        if not primary_solutions:
             return None
 
-        # Parse ingredients from solutions
-        ingredients = []
-        for solution in medium_data.get("solutions", []):
-            for item in solution.get("recipe", []):
-                # Skip if compound_id is None
-                if not item.get("compound_id"):
-                    continue
+        solutions = []
+        for item in primary_solutions[0].get("recipe") or []:
+            if not self._is_api_stock_addition(item):
+                continue
 
-                compound_name = item.get("compound", "")
-
-                # Skip solvents (water, distilled water) - these are implicit in concentrations
-                if compound_name.lower() in ["water", "distilled water", "deionized water", "h2o"]:
-                    continue
-
-                # Build ingredient descriptor
-                ingredient = {
-                    "preferred_term": compound_name
+            solution = {"preferred_term": self._api_stock_name(item)}
+            if item.get("solution_id"):
+                solution["term"] = {
+                    "id": f"mediadive.solution:{item['solution_id']}",
+                    "label": str(item.get("solution") or solution["preferred_term"]),
                 }
+            if item.get("amount") is not None:
+                solution["concentration"] = {
+                    "value": str(item["amount"]),
+                    "unit": self._normalize_unit(item.get("unit", "ml")),
+                }
+            attribute = str(item.get("attribute") or "").strip()
+            if attribute:
+                solution["notes"] = f"MediaDive source attribute: {attribute}"
+            solutions.append(solution)
 
-                # Look up ChEBI ID via ingredients database
-                ing_data = self.ingredients_by_name.get(compound_name.lower())
-                if ing_data and ing_data.get("ChEBI"):
-                    ingredient["term"] = {
-                        "id": f"CHEBI:{ing_data['ChEBI']}",
-                        "label": ing_data.get("name", compound_name)
-                    }
-
-                # Add concentration
-                if item.get("g_l") is not None:
-                    # Use normalized g/L value from API
-                    ingredient["concentration"] = {
-                        "value": str(item["g_l"]),
-                        "unit": "G_PER_L"
-                    }
-                elif item.get("amount") is not None:
-                    # Fallback to raw amount and unit
-                    unit = item.get("unit", "g")
-                    normalized_unit = self._normalize_unit(unit)
-                    ingredient["concentration"] = {
-                        "value": str(item["amount"]),
-                        "unit": normalized_unit
-                    }
-
-                # Add optional flag as note
-                if item.get("optional", 0) == 1:
-                    ingredient["notes"] = "Optional ingredient"
-
-                # Add condition if present
-                if item.get("condition"):
-                    condition_note = f" ({item['condition']})"
-                    ingredient["notes"] = ingredient.get("notes", "") + condition_note
-
-                ingredients.append(ingredient)
-
-        return ingredients if ingredients else None
+        return solutions if solutions else None
 
     def _normalize_unit(self, unit: str) -> str:
         """
@@ -596,6 +666,8 @@ class MediaDiveImporter:
             "µg/L": "MICROG_PER_L",
             "μg": "MICROG_PER_L",
             "μg/L": "MICROG_PER_L",
+            "ml": "ML_PER_L",
+            "ml/L": "ML_PER_L",
             "mM": "MILLIMOLAR",
             "µM": "MICROMOLAR",
             "μM": "MICROMOLAR",

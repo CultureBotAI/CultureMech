@@ -59,14 +59,14 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Vitamin B12
   term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
   concentration:
     value: '0.05'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
 - preferred_term: DL-Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -322,14 +322,14 @@ solutions:
       label: iron(2+) sulfate heptahydrate
   - preferred_term: CoCl2 x 6 H2O
     term:
-      id: CHEBI:35696
-      label: cobalt dichloride
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
     concentration:
       value: '1.8'
       unit: G_PER_L
     mediaingredientmech_chebi_term:
-      id: CHEBI:35696
-      label: cobalt dichloride
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
   - preferred_term: ZnSO4 x 7 H2O
     term:
       id: CHEBI:32312

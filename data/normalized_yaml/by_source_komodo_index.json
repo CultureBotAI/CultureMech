@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-19T22:22:07.239367+00:00",
+  "generated": "2026-08-26T06:20:03.310818+00:00",
   "source": "KOMODO",
   "count": 3637,
   "recipes": {
@@ -226,11 +226,11 @@
     "CultureMech:004073": {
       "name": "methanocella_conradii_medium",
       "filename": "KOMODO_1318_METHANOCELLA_CONRADII_medium.yaml",
-      "ingredient_count": 30,
+      "ingredient_count": 11,
       "id": "CultureMech:004073",
       "source_id": "komodo.medium:1318",
       "source": "KOMODO",
-      "solution_count": 3,
+      "solution_count": 5,
       "categories": [
         "archaea"
       ],
@@ -5807,14 +5807,14 @@
     "CultureMech:004707": {
       "name": "rhodospirillaceae_medium_modified",
       "filename": "KOMODO_27_RHODOSPIRILLACEAE_medium_modified.yaml",
-      "ingredient_count": 19,
+      "ingredient_count": 10,
       "id": "CultureMech:004707",
       "source_id": "komodo.medium:27",
       "source": "KOMODO",
+      "solution_count": 4,
       "categories": [
         "bacterial"
       ],
-      "has_hierarchy_enrichment": true,
       "category_dir": "bacterial"
     },
     "CultureMech:004734": {
@@ -10566,10 +10566,11 @@
     "CultureMech:006625": {
       "name": "dehalospirillum_medium",
       "filename": "KOMODO_833_DEHALOSPIRILLUM_medium.yaml",
-      "ingredient_count": 41,
+      "ingredient_count": 9,
       "id": "CultureMech:006625",
       "source_id": "komodo.medium:833",
       "source": "KOMODO",
+      "solution_count": 11,
       "categories": [
         "bacterial"
       ],

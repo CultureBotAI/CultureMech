@@ -6,8 +6,11 @@ composition_type: UNDEFINED
 physical_state: LIQUID
 description: Algae culture medium from SAG Culture Collection (Göttingen). Suitable
   for freshwater algae cultivation. Recipe available in PDF format.
-notes: Full recipe available at http://sagdb.uni-goettingen.de/culture_media/19 Z-Medium
+notes: 'Full recipe available at http://sagdb.uni-goettingen.de/culture_media/19 Z-Medium
   for Cyanos.pdf
+
+  Composition verified against https://sagdb.uni-goettingen.de/culture_media/19%20Z-Medium%20for%20Cyanos.pdf
+  on 2026-08-25 (SHA-256 4a1c1aa967637b9212a814bd01ebffa554338105e8c1a1bee7d03a93cd07b6d6).'
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -49,10 +52,265 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_sag_missing_compositions.py
+  action: RESTORED_SAG_SOURCE_COMPOSITION
+  changes: ingredients 0 -> 6; solutions 0 -> 2
+  notes: Restored the formulation from the reviewed SAG PDF, preserving final-medium
+    and stock-solution boundaries. Calculated stock concentrations are documented
+    in-place. Ingredient identities were selected from the MediaIngredientMech SSSOM.
 references:
 - reference: SAG:Z-Medium_for_Cyanos
 - reference: http://sagdb.uni-goettingen.de/culture_media/19 Z-Medium for Cyanos.pdf
-ingredients: []
-data_quality_flags:
-- incomplete_composition
+ingredients:
+- preferred_term: NaNO3
+  concentration:
+    value: '467.0'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:63005
+    label: sodium nitrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
+    label: sodium nitrate
+- preferred_term: Ca(NO3)2 x 4 H2O
+  concentration:
+    value: '59.0'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:86159
+    label: calcium nitrate tetrahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86159
+    label: calcium nitrate tetrahydrate
+- preferred_term: K2HPO4
+  concentration:
+    value: '31.0'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '25.0'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  notes: The source prints H20; interpreted as the heptahydrate used throughout the
+    SAG recipes.
+- preferred_term: Na2CO3
+  concentration:
+    value: '21.0'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+- preferred_term: Deionized or distilled water
+  concentration:
+    value: '1'
+    unit: L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 original_name: Z-Medium_for_Cyanos
+solutions:
+- preferred_term: Z-medium Fe-EDTA complex
+  composition:
+  - preferred_term: FeCl2 x 6 H2O
+    concentration:
+      value: '0.27'
+      unit: G_PER_L
+    term:
+      id: CHEBI:30812
+      label: iron dichloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:30812
+      label: iron dichloride
+  - preferred_term: Disodium EDTA
+    concentration:
+      value: '0.372'
+      unit: G_PER_L
+    notes: The source specifies the disodium salt without a hydration state.
+  - preferred_term: Deionized or distilled water
+    concentration:
+      value: '1'
+      unit: L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  notes: Calculated from 5 mL each of source primary stocks (27 and 37.2 g/L) made
+    to 500 mL.
+- preferred_term: Z-medium micronutrient solution
+  composition:
+  - preferred_term: H3BO3
+    concentration:
+      value: '3100'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+  - preferred_term: MnSO4 x 4 H2O
+    concentration:
+      value: '2230'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:86358
+      label: manganese(II) sulfate tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86358
+      label: manganese(II) sulfate tetrahydrate
+  - preferred_term: Na2WO4 x 2 H2O
+    concentration:
+      value: '33'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:63939
+      label: sodium tungstate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63939
+      label: sodium tungstate dihydrate
+  - preferred_term: (NH4)6Mo7O24 x 4 H2O
+    concentration:
+      value: '88'
+      unit: MG_PER_L
+  - preferred_term: KBr
+    concentration:
+      value: '119'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:32030
+      label: potassium bromide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32030
+      label: potassium bromide
+  - preferred_term: KI
+    concentration:
+      value: '83'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:8346
+      label: potassium iodide
+    mediaingredientmech_chebi_term:
+      id: CHEBI:8346
+      label: potassium iodide
+    notes: The PDF prints KJ; interpreted as potassium iodide from the formula context.
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '287'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+  - preferred_term: Cd(NO3)2 x 4 H2O
+    concentration:
+      value: '154'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:86156
+      label: cadmium nitrate tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86156
+      label: cadmium nitrate tetrahydrate
+  - preferred_term: Co(NO3)2 x 6 H2O
+    concentration:
+      value: '146'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:86214
+      label: cobalt dinitrate hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86214
+      label: cobalt dinitrate hexahydrate
+  - preferred_term: CuSO4 x 5 H2O
+    concentration:
+      value: '125'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+  - preferred_term: NiSO4(NH4)2SO4 x 6 H2O
+    concentration:
+      value: '198'
+      unit: MG_PER_L
+    notes: No exact MediaIngredientMech SSSOM mapping was available.
+  - preferred_term: Cr(NO3)3 x 7 H2O
+    concentration:
+      value: '37'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:86206
+      label: chromium trinitrate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86206
+      label: chromium trinitrate heptahydrate
+  - preferred_term: VOSO4 x 2 H2O
+    concentration:
+      value: '20'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:87009
+      label: vanadyl sulfate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:87009
+      label: vanadyl sulfate dihydrate
+  - preferred_term: Al2(SO4)3K2SO4 x 24 H2O
+    concentration:
+      value: '474'
+      unit: MG_PER_L
+    notes: No exact MediaIngredientMech SSSOM mapping was available.
+  - preferred_term: Deionized or distilled water
+    concentration:
+      value: '1'
+      unit: L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  concentration:
+    value: '0.08'
+    unit: ML_PER_L
+  notes: Source amounts per 100 mL were normalized to concentrations per litre.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare the stock solutions and combine them at the stated amounts.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 minutes following the SAG general preparation
+    guidance.
+- step_number: 3
+  action: MIX
+  description: The nitrogen-free Z 45/4 variant is listed separately and is not asserted
+    here.
+sterilization:
+  method: AUTOCLAVE

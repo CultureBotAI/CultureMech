@@ -40,12 +40,12 @@ Scope and honesty about it:
     delimiters (`MgSO4·7H2O0.5g` has no separator between name and amount), so
     re-splitting it here would be guesswork on hydrate dots and multi-digit
     numbers.
-  - PROSE_AS_INGREDIENT uses an instruction-verb list AND a length-or-sentence
-    test. Either alone is far noisier: on the current corpus the loose filters
-    flag 1,192 ingredient values, the conjunction flags 44, and spot-checking
-    says the 44 are all real.
+  - PROSE_AS_INGREDIENT normally uses an instruction-verb list AND a
+    length-or-sentence test. A small set of high-confidence starts (for example,
+    ``For agar, add`` and ``Make up to``) bypasses the length test because the
+    CCAP parser truncated real instructions to just those fragments.
   - Solution RECORDS are not excluded, and their reagents are genuinely scanned:
-    the 4,784 standalone stock-solution records keep their rows in a top-level
+    the 4,986 standalone solution records keep their rows in a top-level
     `composition:` rather than `ingredients:`, so an ingredients-only scan would
     silently skip 35,009 rows while appearing to cover the corpus. A name in a
     concentration field is wrong wherever it appears. The `location` column says
@@ -90,9 +90,26 @@ _RANGE_SPLIT = re.compile(r"(?<=[\d.])\s*-\s*(?=[\d.])")
 # name. Deliberately not a general English-verb test: `Add` is the signal, and a
 # reagent called "Sodium acetate" must not trip anything here.
 _INSTRUCTION = re.compile(
-    r"\b(add|adjust|make up|dissolve|autoclav|steriliz|mix|store|prepare"
-    r"|bring to|filter|boil|incubat|dispense|supplement|final concentration"
+    r"\b(add|adjust|make up|dissolve|autoclav|steriliz|mix|store"
+    r"|prepar(?:e|ed|ing|ation)"
+    r"|bring to|filter(?!-sterilized\b)|boil|incubat|dispense|final concentration"
     r"|per litre|per liter|after|before|if needed|as needed)\b",
+    re.IGNORECASE,
+)
+
+# `supplement` is also a common product noun ("C. difficile supplement",
+# "Trace Mineral Supplement, Catalog No. MD-TMS"). Only verbal constructions
+# requiring `with` are preparation instructions.
+_SUPPLEMENT_INSTRUCTION = re.compile(
+    r"\bsupplement(?:ed|ing)?(?:\s+(?:the\s+)?(?:medium|broth|solution))?\s+with\b",
+    re.IGNORECASE,
+)
+
+# These are complete parser-failure signatures even when the PDF extraction cut
+# them off before punctuation or the general prose-length threshold.
+_HIGH_CONFIDENCE_PROSE = re.compile(
+    r"^(?:make up(?:\s+to|\s+the)|for agar\b|add the above\b|add to \d+\b"
+    r"|soil is prepared\b|to make this medium\b)",
     re.IGNORECASE,
 )
 
@@ -166,7 +183,9 @@ def _holds_a_name(value: Any) -> bool:
 
 def _looks_like_prose(name: str) -> bool:
     """Instruction verb AND (long or sentence-shaped). See module docstring."""
-    if not _INSTRUCTION.search(name):
+    if _HIGH_CONFIDENCE_PROSE.search(name):
+        return True
+    if not (_INSTRUCTION.search(name) or _SUPPLEMENT_INSTRUCTION.search(name)):
         return False
     return len(name) > _PROSE_MIN_LEN or ". " in name or name.rstrip().endswith(".")
 

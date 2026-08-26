@@ -26,8 +26,8 @@ composition:
     id: mediadive.compound:1291
     label: Sodium glutamate monohydrate
   chebi_term:
-    id: CHEBI:64243
-    label: monosodium L-glutamate
+    id: CHEBI:232425
+    label: monosodium L-glutamate hydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: CaSO4 x 2 H2O

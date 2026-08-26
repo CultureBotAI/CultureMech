@@ -1,11 +1,5 @@
 ingredient	term_id	term_label	term_formula	name_demands	term_lacks	rows
-Sodium resazurin	CHEBI:8806	Resazurin	C12H7NO4	Na	Na	1280
-Sodium sulfide nonahydrate	CHEBI:85357	3-[(1E,4R)-4-hydroxycyclohex-2-en-1-ylidene]pyruvic acid	C9H10O4	Na S	Na S	35
+Sodium resazurin	CHEBI:8806	Resazurin	C12H7NO4	Na	Na	1276
 resazurin sodium salt	CHEBI:8806	Resazurin	C12H7NO4	Na	Na	25
-Sodium sulfide	CHEBI:85357	3-[(1E,4R)-4-hydroxycyclohex-2-en-1-ylidene]pyruvic acid	C9H10O4	Na S	Na S	8
-Co(NO ) .6H O	CHEBI:78038	3-nitroso-2-phenylimidazo[1,2-a]pyridine	C13H9N3O	Co	Co	4
 Na2 alpha-ketoglutarate	CHEBI:16810	2-oxoglutarate(2-)	C5H4O5	Na	Na	2
-Manganese sulfate monohydrate	CHEBI:86374	ninhydrin	C9H6O4	Mn S	Mn S	2
-H2SeO3	CHEBI:48854	sulfurous acid	H2O3S	Se	Se	2
-Na WO .2H O	CHEBI:86311	KGKGKGKGKGENPVVAFFKNIVTPRTP	C130H217N39O33	Na W	Na W	2
-Iron(II) sulfate	CHEBI:29033	iron(2+)	Fe	Fe S	S	1
+Na2glycerophosphate x 5 H2O	CHEBI:15978	sn-glycerol 3-phosphate	C3H9O6P	Na	Na	2

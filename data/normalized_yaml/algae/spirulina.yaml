@@ -6,8 +6,11 @@ composition_type: UNDEFINED
 physical_state: LIQUID
 description: Algae culture medium from SAG Culture Collection (Göttingen). Suitable
   for freshwater algae cultivation. Recipe available in PDF format.
-notes: Full recipe available at http://sagdb.uni-goettingen.de/culture_media/02 Spirulina
+notes: 'Full recipe available at http://sagdb.uni-goettingen.de/culture_media/02 Spirulina
   Medium.pdf
+
+  Composition verified against https://sagdb.uni-goettingen.de/culture_media/02%20Spirulina%20Medium.pdf
+  on 2026-08-25 (SHA-256 21e6036ced504681ada468b15e96f8e4693e13b87e621bcbfabe44be6a2c9cd8).'
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -48,10 +51,266 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_sag_missing_compositions.py
+  action: RESTORED_SAG_SOURCE_COMPOSITION
+  changes: ingredients 0 -> 0; solutions 0 -> 3
+  notes: Restored the formulation from the reviewed SAG PDF, preserving final-medium
+    and stock-solution boundaries. Calculated stock concentrations are documented
+    in-place. Ingredient identities were selected from the MediaIngredientMech SSSOM.
 references:
 - reference: SAG:Spirulina
 - reference: http://sagdb.uni-goettingen.de/culture_media/02 Spirulina Medium.pdf
 ingredients: []
-data_quality_flags:
-- incomplete_composition
 original_name: Spirulina
+solutions:
+- preferred_term: Spirulina solution I
+  composition:
+  - preferred_term: NaHCO3
+    concentration:
+      value: '27.22'
+      unit: G_PER_L
+    term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+  - preferred_term: Na2CO3
+    concentration:
+      value: '8.06'
+      unit: G_PER_L
+    term:
+      id: CHEBI:29377
+      label: sodium carbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:29377
+      label: sodium carbonate
+  - preferred_term: K2HPO4
+    concentration:
+      value: '1.00'
+      unit: G_PER_L
+    term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+  - preferred_term: Deionized or distilled water
+    concentration:
+      value: '1'
+      unit: L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: Prepare solution I to 500 mL.
+  concentration:
+    value: '500'
+    unit: ML_PER_L
+  notes: Composition normalized from the source 500 mL batch.
+- preferred_term: Spirulina solution II
+  composition:
+  - preferred_term: NaNO3
+    concentration:
+      value: '5.00'
+      unit: G_PER_L
+    term:
+      id: CHEBI:63005
+      label: sodium nitrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63005
+      label: sodium nitrate
+  - preferred_term: K2SO4
+    concentration:
+      value: '2.00'
+      unit: G_PER_L
+    term:
+      id: CHEBI:32036
+      label: potassium sulfate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32036
+      label: potassium sulfate
+  - preferred_term: NaCl
+    concentration:
+      value: '2.00'
+      unit: G_PER_L
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: MgSO4 x 7 H2O
+    concentration:
+      value: '0.40'
+      unit: G_PER_L
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+  - preferred_term: CaCl2 x 2 H2O
+    concentration:
+      value: '0.08'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+  - preferred_term: FeSO4 x 7 H2O
+    concentration:
+      value: '0.02'
+      unit: G_PER_L
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+  - preferred_term: EDTA
+    concentration:
+      value: '0.16'
+      unit: G_PER_L
+    term:
+      id: CHEBI:4735
+      label: ethylenediaminetetraacetic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:4735
+      label: ethylenediaminetetraacetic acid
+  - preferred_term: Deionized or distilled water
+    concentration:
+      value: '1'
+      unit: L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: Prepare solution II to 500 mL.
+  concentration:
+    value: '500'
+    unit: ML_PER_L
+  notes: Composition normalized from the source 500 mL batch. Its 5 mL micronutrient
+    addition is modeled as a separate final-recipe stock because all of solution II
+    is used.
+- preferred_term: SAG medium 1 micronutrient solution
+  composition:
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '1'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+  - preferred_term: MnSO4 x 4 H2O
+    concentration:
+      value: '2'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:86358
+      label: manganese(II) sulfate tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86358
+      label: manganese(II) sulfate tetrahydrate
+  - preferred_term: H3BO3
+    concentration:
+      value: '10'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+  - preferred_term: Co(NO3)2 x 6 H2O
+    concentration:
+      value: '1'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:86214
+      label: cobalt dinitrate hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86214
+      label: cobalt dinitrate hexahydrate
+  - preferred_term: Na2MoO4 x 2 H2O
+    concentration:
+      value: '1'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+  - preferred_term: CuSO4 x 5 H2O
+    concentration:
+      value: '0.005'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+  - preferred_term: FeSO4 x 7 H2O
+    concentration:
+      value: '700'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+  - preferred_term: EDTA
+    concentration:
+      value: '800'
+      unit: MG_PER_L
+    term:
+      id: CHEBI:4735
+      label: ethylenediaminetetraacetic acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:4735
+      label: ethylenediaminetetraacetic acid
+  - preferred_term: Deionized or distilled water
+    concentration:
+      value: '981'
+      unit: ML_PER_L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  concentration:
+    value: '5'
+    unit: ML_PER_L
+  notes: Stock concentrations are calculated from the source primary-stock volumes
+    into the 1 L applied solution. Prepare as two separately autoclaved solutions
+    and unite after cooling.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare solutions I and II separately.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave solutions I and II separately.
+- step_number: 3
+  action: COOL
+  description: Cool, then unite equal 500 mL portions.
+- step_number: 4
+  action: MIX
+  description: If required, add sterile vitamin B12 to 5 x 10^-6 g/L; it is optional
+    in the source.
+sterilization:
+  method: AUTOCLAVE

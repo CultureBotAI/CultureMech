@@ -15,14 +15,11 @@ import sys
 from pathlib import Path
 
 import pytest
-import yaml
 
 REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO / "scripts"))
 
-from audit_name_term_elements import (  # noqa: E402
-    formula_elements, name_elements,
-)
+from audit_name_term_elements import formula_elements, name_elements  # noqa: E402
 
 ROOTS = [REPO / "data" / "normalized_yaml", REPO / "data" / "merge_yaml" / "merged"]
 
@@ -35,6 +32,9 @@ KNOWN_NO_SALT_TERM = {
     ("resazurin sodium salt", "CHEBI:8806"),
     # ChEBI has `2-oxoglutarate(2-)` but no disodium salt.
     ("Na2 alpha-ketoglutarate", "CHEBI:16810"),
+    # MIM exact-matches CAS:13408-09-8 but has only a narrow ChEBI mapping;
+    # ChEBI has the phosphate anion, not the disodium pentahydrate substance.
+    ("Na2glycerophosphate x 5 H2O", "CHEBI:15978"),
     # ChEBI has the anions but no sodium salts.
     ("Na2-9,10-anthraquinone-2,6-disulfonate", "CHEBI:85112"),
     ("Sodium crotonate", "CHEBI:35899"),

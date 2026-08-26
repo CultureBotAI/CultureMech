@@ -178,14 +178,14 @@ ingredients:
   notes: Copied from referenced JCM Medium 636
 - preferred_term: CoCl2 x 6 H2O
   term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
   concentration:
     value: '0.19'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
   notes: Copied from referenced JCM Medium 636
 - preferred_term: CuCl2 x 2 H2O
   term:
@@ -299,14 +299,14 @@ ingredients:
   notes: Copied from referenced JCM Medium 636
 - preferred_term: Vitamin B12
   term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
   concentration:
     value: '0.0001'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
   notes: Copied from referenced JCM Medium 636
 - preferred_term: p-Aminobenzoic acid
   term:

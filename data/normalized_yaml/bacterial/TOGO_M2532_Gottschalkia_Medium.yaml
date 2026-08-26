@@ -101,8 +101,8 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
   term:
-    id: CHEBI:30066
-    label: thioglycolate(1-)
+    id: CHEBI:86481
+    label: sodium thioglycolate
   mediaingredientmech_term:
     id: MediaIngredientMech:000267
     label: Na-thioglycolate
@@ -165,11 +165,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
 - preferred_term: NiCl2 x 6 H2O
   concentration:
     value: '24'

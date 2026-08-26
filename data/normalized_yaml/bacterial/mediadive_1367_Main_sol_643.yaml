@@ -98,8 +98,8 @@ composition:
     id: mediadive.compound:1329
     label: L-Lysine HCl
   chebi_term:
-    id: CHEBI:53558
-    label: D-lysine hydrochloride
+    id: CHEBI:53633
+    label: L-lysine hydrochloride
     confidence: 1.0
     match_type: exact_match
 - preferred_term: Sodium resazurin

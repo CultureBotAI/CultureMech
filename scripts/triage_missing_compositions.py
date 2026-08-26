@@ -5,7 +5,7 @@ Classifies every record with nothing to work from, so the backlog can be attacke
 by cause rather than one record at a time. REPORT ONLY — see "the trap" below for
 why the obvious repair is not attempted.
 
-## The count is 226 — it was reported as 463, then 428
+## The count is 150 — historical measurements were 463, 428, 226, and 224
 
 Two corrections, both of which shrank the problem:
 
@@ -22,18 +22,22 @@ Two corrections, both of which shrank the problem:
               flattened into their parent media by the KOMODO import, so nothing
               is missing — the stubs are leftovers.
 
-## What the remaining 226 are
+The 2026-08-24 content review started at 224 after two further record-kind
+corrections. Source-backed remediation recovered 74 recipes; no composition was
+inferred from a medium name or copied from a related formula.
 
-  126  KOMODO ModelSEED, no ingredients and no solutions
-  100  a single placeholder ingredient ("See source for composition")
+## What the remaining 150 are
+
+  125  KOMODO ModelSEED records, with no ingredients and no solutions
+   25  other-source records, likewise with no ingredients and no solutions
 
 These are the genuine gap: media whose recipe the corpus does not hold. Unlike the
 202, no other record carries their composition.
 
-## The trap — why 217 records are NOT auto-repairable
+## The trap — why cited-medium matches are NOT auto-repairable
 
-Those names cite a medium number, and 217 of them resolve to a composition file in
-`data/raw/mediadive/compositions/`. Applying it would be wrong.
+Thirty-six remaining names cite a medium number present in the tracked MediaDive
+composition index. Applying that whole medium's recipe would be wrong.
 
 "Trace element solution (medium 1072)" means *the trace element solution defined
 inside medium 1072* — not medium 1072 itself. And `dsmz_1072`'s composition is the

@@ -10,6 +10,7 @@ from culturemech.schema.culturemech_dataclasses import (
 )
 from scripts import apply_media_variant_links
 from scripts.propose_media_variant_links import (
+    build_proposals,
     choose_parent,
     confidence_for_group,
     infer_relationship,
@@ -217,6 +218,26 @@ def test_variant_proposal_marks_algae_source_duplicates_for_review():
     assert confidence == "LOW"
     assert status_for_group(confidence, 2) == "REVIEW_REQUIRED"
     assert "algae source-duplicate candidate" in reason
+
+
+def test_variant_proposals_exclude_standalone_solution_records():
+    media = {
+        "yaml_path": "data/normalized_yaml/bacterial/media.yaml",
+        "record_kind": "MEDIA",
+        "ingredient_identity_signature": "same",
+        "ingredient_concentration_signature": "same-concentration",
+        "total_component_count": "1",
+    }
+    solution = {
+        **media,
+        "yaml_path": "data/normalized_yaml/bacterial/stock.yaml",
+        "record_kind": "SOLUTION",
+    }
+
+    proposals, groups = build_proposals([media, solution])
+
+    assert proposals == []
+    assert groups == []
 
 
 def test_apply_variant_links_plans_bidirectional_edits(tmp_path, monkeypatch):

@@ -139,6 +139,11 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 19 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-08-26T02:12:32.890619+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
 solutions:
 - preferred_term: Trace elements solution
   composition:
@@ -274,6 +279,9 @@ solutions:
     concentration:
       value: '0.01'
       unit: MG_PER_L
+    term:
+      id: CHEBI:176843
+      label: vitamin B12
   - preferred_term: Distilled water
     concentration:
       value: '1'

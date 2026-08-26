@@ -96,8 +96,8 @@ composition:
     id: mediadive.compound:38
     label: CoCl2 x 6 H2O
   chebi_term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: VOSO4 x 5 H2O
@@ -108,8 +108,8 @@ composition:
     id: mediadive.compound:277
     label: VOSO4 x 5 H2O
   chebi_term:
-    id: CHEBI:33146
-    label: vanadyl sulfate
+    id: CHEBI:132758
+    label: vanadyl sulfate pentahydrate
     match_type: manual_curated
 - preferred_term: Na2MoO4 x 2 H2O
   concentration:

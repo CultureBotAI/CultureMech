@@ -81,8 +81,8 @@ composition:
     id: mediadive.compound:24
     label: (NH4)3 citrate
   chebi_term:
-    id: CHEBI:72699
-    label: (2R)-trihomocitrate(3-)
+    id: CHEBI:63037
+    label: triammonium citrate
     confidence: 1.0
     match_type: exact_match
 - preferred_term: MgSO4 x 7 H2O

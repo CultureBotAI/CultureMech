@@ -122,14 +122,14 @@ ingredients:
     label: Calcium pantothenate
 - preferred_term: Vitamin B12
   term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
   concentration:
     value: '7.378e-07'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
 - preferred_term: Nicotinate
   concentration:
     value: '0.0004061'
@@ -155,8 +155,8 @@ ingredients:
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
   term:
-    id: CHEBI:30769
-    label: citric acid
+    id: CHEBI:16947
+    label: citrate(3-)
 - preferred_term: Cellobiose
   term:
     id: CHEBI:17057

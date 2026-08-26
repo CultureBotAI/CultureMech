@@ -9,13 +9,21 @@ reflows every long `notes:` string and buries the real edit).
 from __future__ import annotations
 
 import sys
+from collections import Counter
 from pathlib import Path
 
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 
-from fix_wrong_compound_groundings import fix_text  # noqa: E402
+from fix_wrong_compound_groundings import (  # noqa: E402
+    EXPECTED_REFERENCE_COUNTS,
+    MIM_EXACT_CORRECTIONS,
+    NAME_SETTLED_CORRECTIONS,
+    fix_text,
+    validate_mim_reconciliations,
+    validate_reference_counts,
+)
 
 
 def test_wrong_magnesium_id_is_corrected():
@@ -101,7 +109,9 @@ def test_unrelated_lines_are_untouched():
     new, _ = fix_text(text)
     before, after = text.splitlines(), new.splitlines()
     assert len(before) == len(after)
-    differing = [i for i, (a, b) in enumerate(zip(before, after)) if a != b]
+    differing = [
+        i for i, (a, b) in enumerate(zip(before, after, strict=True)) if a != b
+    ]
     assert differing == [6], "only the id line should differ"
     assert yaml.safe_load(new)["ingredients"][0]["notes"] == \
         yaml.safe_load(text)["ingredients"][0]["notes"]
@@ -243,3 +253,113 @@ def test_dextrose_collapses_onto_d_glucose_from_both_wrong_ids():
                 f"- preferred_term: Dextrose\n  term:\n    id: {wrong}\n    label: g\n")
         new, changes = fix_text(text)
         assert changes == [("Dextrose", wrong, "CHEBI:17634")], wrong
+
+
+def test_curated_mim_exact_reconciliations_are_name_and_id_scoped():
+    for (wrong, name), (correct, label) in MIM_EXACT_CORRECTIONS.items():
+        serialized_name = repr(name) if name != name.strip() else name
+        text = (
+            "ingredients:\n"
+            f"- preferred_term: {serialized_name}\n"
+            "  term:\n"
+            f"    id: {wrong}\n"
+            "    label: stale\n"
+        )
+        new, changes = fix_text(text)
+        assert changes == [(name, wrong, correct)]
+        assert f"id: {correct}" in new
+        assert f"label: {label}" in new
+
+        other_name = f"other {name}"
+        untouched, no_changes = fix_text(text.replace(name, other_name))
+        assert no_changes == []
+        assert untouched == text.replace(name, other_name)
+
+
+def test_unrelated_internal_split_ids_are_corrected():
+    cases = (
+        ("D(+)-Glucose", "CHEBI:15824", "CHEBI:17634"),
+        ("Dextrose", "CHEBI:15824", "CHEBI:17634"),
+        ("D-Trehalose dihydrate", "CHEBI:83760", "CHEBI:232797"),
+        ("KF", "CHEBI:73605", "CHEBI:66872"),
+        ("m-Inositol", "CHEBI:10642", "CHEBI:17268"),
+        ("m-Inositol", "CHEBI:166917", "CHEBI:17268"),
+    )
+    for name, wrong, correct in cases:
+        text = (
+            "composition:\n"
+            f"- preferred_term: {name}\n"
+            "  term:\n"
+            f"    id: {wrong}\n"
+            "    label: stale\n"
+        )
+        new, changes = fix_text(text)
+        assert changes == [(name, wrong, correct)]
+        assert f"id: {correct}" in new
+
+
+def test_name_settled_hydrate_and_salt_corrections_are_scoped():
+    for (wrong, name), (correct, label) in NAME_SETTLED_CORRECTIONS.items():
+        text = (
+            "ingredients:\n"
+            f"- preferred_term: {name}\n"
+            "  term:\n"
+            f"    id: {wrong}\n"
+            "    label: stale\n"
+        )
+        new, changes = fix_text(text)
+        assert changes == [(name, wrong, correct)]
+        assert f"id: {correct}" in new
+        assert f"label: {label}" in new
+
+        other_name = f"other {name}"
+        untouched, no_changes = fix_text(text.replace(name, other_name))
+        assert no_changes == []
+        assert untouched == text.replace(name, other_name)
+
+
+def _write_sssom(path: Path, overrides: dict[str, tuple[str, str]] | None = None):
+    overrides = overrides or {}
+    lines = [
+        '# mapping_set_version: "test-version"',
+        "subject_id\tsubject_label\tpredicate_id\tobject_id\tobject_label",
+    ]
+    for index, ((_old, name), target) in enumerate(MIM_EXACT_CORRECTIONS.items()):
+        object_id, object_label = overrides.get(name, target)
+        lines.append(
+            f"MIM:test{index}\t{name}\tskos:exactMatch\t{object_id}\t{object_label}"
+        )
+    path.write_text("\n".join(lines) + "\n")
+
+
+def test_mim_reconciliation_guard_accepts_only_the_asserted_targets(tmp_path):
+    sssom = tmp_path / "mappings.tsv"
+    _write_sssom(sssom)
+    assert validate_mim_reconciliations(sssom) == "test-version"
+
+    _write_sssom(sssom, {"EDTA": ("CHEBI:64755", "EDTA(2-)")})
+    try:
+        validate_mim_reconciliations(sssom)
+    except ValueError as exc:
+        assert "EDTA" in str(exc)
+    else:
+        raise AssertionError("SSSOM drift must abort the migration")
+
+
+def test_reference_count_guard_allows_pre_and_post_state_but_not_partial():
+    pre = Counter(EXPECTED_REFERENCE_COUNTS)
+    validate_reference_counts(pre)
+    validate_reference_counts(Counter())
+
+    key, expected = next(
+        (key, count)
+        for key, count in EXPECTED_REFERENCE_COUNTS.items()
+        if count > 1
+    )
+    partial = Counter({key: expected - 1})
+    try:
+        validate_reference_counts(partial)
+    except ValueError as exc:
+        assert "count guard failed" in str(exc)
+    else:
+        raise AssertionError("partial migration must fail the count guard")

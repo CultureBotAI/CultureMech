@@ -29,11 +29,11 @@ composition:
     value: '3.8'
     unit: G_PER_L
   term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
   mediaingredientmech_chebi_term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Tricine
   concentration:
     value: '25.0'
