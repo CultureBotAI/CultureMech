@@ -11,7 +11,10 @@ from collections.abc import Sequence
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-EXCLUDED = {"src/culturemech/schema/culturemech_dataclasses.py"}
+EXCLUDED = {
+    "scripts/check_vendored_sync.py",
+    "src/culturemech/schema/culturemech_dataclasses.py",
+}
 
 
 def select_python_files(paths: Sequence[str]) -> list[str]:

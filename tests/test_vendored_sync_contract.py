@@ -45,9 +45,7 @@ def test_checker_uses_only_the_pinned_public_claw_manifest(checker: ModuleType) 
     pin = PIN_PATH.read_text().strip()
 
     assert checker.CANONICAL_REPOSITORY == "CultureBotAI/culturebotai-claw"
-    assert checker.CANONICAL_MANIFEST_PATH == (
-        "src/kg_microbe_governance/vendored_artifacts.json"
-    )
+    assert checker.CANONICAL_MANIFEST_PATH == ("src/kg_microbe_governance/vendored_artifacts.json")
     assert checker.DEFAULT_PIN_PATH == "scripts/.vendored_canon_ref"
     assert len(pin) == 40 and all(character in "0123456789abcdef" for character in pin)
     assert checker.raw_url(pin, checker.CANONICAL_MANIFEST_PATH) == (
@@ -130,9 +128,9 @@ def test_workflow_retries_exit_one_but_not_exit_two(tmp_path: Path) -> None:
     fake_bash.write_text(
         "#!/bin/sh\n"
         "count=0\n"
-        "if [ -f \"$TEST_ATTEMPTS\" ]; then count=$(cat \"$TEST_ATTEMPTS\"); fi\n"
-        "printf '%s' \"$((count + 1))\" > \"$TEST_ATTEMPTS\"\n"
-        "case \"$TEST_CHECKER_SEQUENCE:$count\" in\n"
+        'if [ -f "$TEST_ATTEMPTS" ]; then count=$(cat "$TEST_ATTEMPTS"); fi\n'
+        'printf \'%s\' "$((count + 1))" > "$TEST_ATTEMPTS"\n'
+        'case "$TEST_CHECKER_SEQUENCE:$count" in\n'
         "  1,1,0:0) exit 1 ;;\n"
         "  1,1,0:1) exit 1 ;;\n"
         "  1,1,0:2) exit 0 ;;\n"

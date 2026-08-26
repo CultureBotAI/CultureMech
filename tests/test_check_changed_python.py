@@ -13,9 +13,17 @@ SPEC.loader.exec_module(check_changed_python)
 def test_changed_python_filter_excludes_generated_deleted_and_non_python(tmp_path: Path) -> None:
     existing = "src/culturemech/cli.py"
     generated = "src/culturemech/schema/culturemech_dataclasses.py"
+    governed = "scripts/check_vendored_sync.py"
 
     assert check_changed_python.select_python_files(
-        [existing, existing, generated, "README.md", "scripts/does_not_exist.py"]
+        [
+            existing,
+            existing,
+            generated,
+            governed,
+            "README.md",
+            "scripts/does_not_exist.py",
+        ]
     ) == [existing]
 
 
