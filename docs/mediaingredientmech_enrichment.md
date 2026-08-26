@@ -93,12 +93,51 @@ tests. Koza uses the verified packaged default lazily. A wheel smoke test loads
 it from `/tmp`, proving an installed distribution does not rely on the source
 checkout.
 
-The occurrence pipeline tracked by #337 must import this same resolver. That
-issue owns structural traversal, including the distinction between
-`MediaRecipe.ingredients` and root `SolutionRecipe.composition`, stable
-occurrence coordinates, placeholder exclusion, uncapped outputs, and parse
-errors. #260 deliberately does not conceal the existing root-solution traversal
-gap inside KGX.
+The ingredient-occurrence pipeline imports this same resolver and partitions
+its structured decisions without reinterpreting CURIE syntax:
+
+- `mim_exact`, `mim_normalized`, `local_fallback`, and
+  `ambiguous_local_fallback` are mapped because `GroundingDecision.identifier`
+  is present.
+- `authoritative_unmapped`, `ambiguous`, and `not_found` are unmapped because
+  the decision has no selected identifier.
+
+The selected value is exported as `resolved_identifier`. The accompanying
+`mim_ontology_id_diagnostic` is publisher metadata only. Likewise,
+`mediadive.compound:*` remains `source_compound_id`; a colon in an upstream ID
+does not make it an ontology grounding. `local_identifier`, MIM match/status/
+ambiguity fields, and `grounding_reason` remain available for audit.
+
+### Direct occurrence contract
+
+Occurrence extraction follows the root record's schema shape:
+
+- a MediaRecipe-shaped root contributes `ingredients`;
+- a SolutionRecipe-shaped root contributes `composition`.
+
+The fields are alternatives, not lists to concatenate. A solution's legacy
+`ingredients: [{preferred_term: See source for composition}]` stub is therefore
+not an occurrence, and nested `solutions[].composition` is not expanded once
+per referencing medium. The pipeline records direct containment only.
+
+Every occurrence carries the stable coordinate
+`(recipe_id, component_field, component_index)`, where `recipe_id` is the root
+`CultureMech:NNNNNN` identifier. Recipe labels are display metadata and are
+never used for identity or distinct-recipe counts.
+
+The canonical TSV is complete and uncapped. `occurrence_count` is the number of
+its rows in a group, while `distinct_recipe_count` is the number of unique
+`recipe_id` values. Summary YAML may retain convenient display fields, but no
+count is derived from an example sample.
+
+Input paths and occurrence coordinates are sorted before serialization. The
+outputs deliberately omit a wall-clock `generation_date`, use LF line endings,
+and atomically replace each destination from a fully staged publication set, so
+rerunning against identical recipe data and the same pinned MIM index is
+byte-identical. YAML/shape failures are always written
+to the machine-readable error TSV; `--verbose` affects progress only. Any such
+failure exits nonzero and leaves the last successful artifacts intact; a later
+replacement error rolls already-replaced members of the set back in-process.
 
 ## Refreshing the pin
 
