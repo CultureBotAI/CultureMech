@@ -83,14 +83,25 @@ classes:
       This is the root entity - one per YAML file.
     attributes:
       id:
-        description: Stable CultureMech identifier for this media recipe.
+        description: >-
+          Stable canonical external CultureMech identifier for this media recipe.
+          Immutable after issuance and never reused; lifecycle is published in
+          data/culturemech_recipe_catalog.tsv.
         range: string
-        required: false
-        pattern: "^CultureMech:\\d{6}$"
+        identifier: true
+        required: true
+        pattern: "^CultureMech:(?!000000)\\d{6}$"
+
+      id_lineage_token:
+        description: >-
+          Internal immutable lineage witness for legacy records that predate the
+          ID-assignment curation event. This is not an external identifier and
+          must never be copied to another record or changed after publication.
+        range: string
+        pattern: "^legacy:[0-9a-f]{64}$"
 
       name:
         description: Human-readable medium name (e.g., "LB Broth", "M9 Minimal Medium")
-        identifier: true
         required: true
         range: string
 
@@ -516,14 +527,25 @@ classes:
       the root form with its own id, curation history, and provenance.
     attributes:
       id:
-        description: Stable CultureMech identifier for this solution record.
+        description: >-
+          Stable canonical external CultureMech identifier for this solution record.
+          Immutable after issuance and never reused; lifecycle is published in
+          data/culturemech_recipe_catalog.tsv.
         range: string
-        required: false
-        pattern: "^CultureMech:\\d{6}$"
+        identifier: true
+        required: true
+        pattern: "^CultureMech:(?!000000)\\d{6}$"
+
+      id_lineage_token:
+        description: >-
+          Internal immutable lineage witness for legacy records that predate the
+          ID-assignment curation event. This is not an external identifier and
+          must never be copied to another record or changed after publication.
+        range: string
+        pattern: "^legacy:[0-9a-f]{64}$"
 
       preferred_term:
         description: Solution name (e.g., "Trace Metal Solution", "Vitamin Stock")
-        identifier: true
         required: true
         range: string
 

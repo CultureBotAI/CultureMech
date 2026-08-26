@@ -145,6 +145,7 @@ def test_unparseable_source_is_unknown_not_a_guess(aw):
     [
         ("research_media.py", "culturemech_id_registry.tsv", "no"),
         ("refresh_id_registry.py", "culturemech_id_registry.tsv", "yes"),
+        ("build_recipe_id_catalog.py", "culturemech_recipe_catalog.tsv", "yes"),
         ("triage_missing_compositions.py", "missing_compositions.tsv", "yes"),
         ("audit_selective_agent_mismatch.py", "selective_agent_mismatch.tsv", "yes"),
         ("score_review_need.py", "review_need_ranking.tsv", "yes"),

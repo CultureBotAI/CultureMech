@@ -130,7 +130,24 @@ category: bacterial
 - ✗ More complex to manage
 - ✗ Need to scan all files to find highest ID
 
-**CultureMech adds**: ID registry file (`data/culturemech_id_registry.tsv`)
+**CultureMech adds** an active compatibility registry plus an external lifecycle
+catalog. The catalog, not the active registry alone, is the all-time issued-ID
+ledger:
+
+- `data/culturemech_id_registry.tsv` — active ID → current path
+- `data/culturemech_recipe_catalog.tsv` — generated active + retired resolution surface
+- `data/culturemech_id_tombstones.tsv` — curator-owned retired-ID ledger
+- `docs/RECIPE_ID_LIFECYCLE.md` — producer and consumer contract
+
+The catalog also publishes an internal `lineage_signature` so CI rejects moving
+an issued ID onto a different record. Normal records derive it from the
+allocator's assignment event. Legacy records with no such event carry an opaque
+`id_lineage_token`; that token is not an external ID and must never be edited or
+copied to another record.
+
+Never calculate or hand-pick a CultureMech ID from the registry. Use
+`just assign-ids`; the allocator reserves IDs from all three artifacts.
+
 ```tsv
 culturemech_id	file_path
 CultureMech:000001	data/normalized_yaml/bacterial/LB_Medium.yaml
@@ -141,13 +158,14 @@ CultureMech:000002	data/normalized_yaml/bacterial/TSA_Medium.yaml
 - Data: `data/normalized_yaml/**/*.yaml`
 - ID script: `scripts/assign_culturemech_ids.py` (with registry)
 - Registry: `data/culturemech_id_registry.tsv` (CultureMech only)
+- Lifecycle catalog: `data/culturemech_recipe_catalog.tsv` (CultureMech only)
 
 ### Comparison Table
 
 | Feature | Single-File | Multi-File | Multi-File + Registry |
 |---------|-------------|------------|----------------------|
 | **Repo Example** | MediaIngredientMech | CommunityMech | CultureMech |
-| **Record Count** | 112 | 78 | 15,431 |
+| **Record Count** | 112 | 78 | 15,877 |
 | **Find Highest ID** | Parse YAML once | Scan all files | Read registry file |
 | **Add New Record** | Append to list | Create new file | Create file + update registry |
 | **Git Conflicts** | More likely | Rare | Rare |
@@ -289,47 +307,12 @@ find data/normalized_yaml -name "*.yaml" -exec grep -h 'id: CultureMech:' {} \; 
   cut -d: -f3 | sort -n | tail -1
 ```
 
-### Method 3: Using Registry File (CultureMech)
+### Method 3: CultureMech all-time high-water ID
 
-**Python approach**:
-```python
-import pandas as pd
-import re
-
-def find_highest_id_from_registry(
-    registry_path: Path,
-    prefix: str = "CultureMech"
-) -> int:
-    """Find highest ID from TSV registry file.
-
-    Args:
-        registry_path: Path to registry TSV
-        prefix: ID prefix (e.g., "CultureMech")
-
-    Returns:
-        Highest ID number (0 if none found)
-    """
-    registry = pd.read_csv(registry_path, sep='\t')
-
-    max_id = 0
-    for id_str in registry['culturemech_id']:
-        if match := re.match(rf'{prefix}:(\d+)', id_str):
-            max_id = max(max_id, int(match.group(1)))
-
-    return max_id
-
-# Usage
-registry_path = Path('data/culturemech_id_registry.tsv')
-highest = find_highest_id_from_registry(registry_path, 'CultureMech')
-print(f"Highest ID: {highest}")  # Output: 15431
-```
-
-**Bash approach**:
-```bash
-# Quick lookup from registry
-tail -n +2 data/culturemech_id_registry.tsv | \
-  cut -f1 | cut -d: -f2 | sort -n | tail -1
-```
+Do not derive a minting decision from the active registry or live corpus. Deleted
+IDs are absent from both. `just assign-ids` reads the published catalog and
+tombstone ledger and is the only supported CultureMech minting path. To inspect
+the lifecycle state without minting, use `data/culturemech_recipe_catalog.tsv`.
 
 ## Minting New IDs
 
@@ -417,98 +400,22 @@ def mint_next_id(
 
 ### Quick Mint Examples
 
-**CultureMech** (multi-file + registry):
-```python
-from pathlib import Path
-
-# Option 1: From registry (fastest)
-registry_path = Path('data/culturemech_id_registry.tsv')
-highest = find_highest_id_from_registry(registry_path, 'CultureMech')
-next_id = generate_xmech_id('CultureMech', highest + 1)
-print(f"Next ID: {next_id}")  # CultureMech:015432
-
-# Option 2: Scan files (slower but works if registry is missing)
-base_dir = Path('data/normalized_yaml')
-highest = find_highest_id_multi_file(base_dir, 'CultureMech')
-next_id = generate_xmech_id('CultureMech', highest + 1)
-print(f"Next ID: {next_id}")  # CultureMech:015432
+**CultureMech** (multi-file + lifecycle catalog):
+```bash
+just assign-ids --dry-run
 ```
 
 ## Adding New Records
 
-### Workflow: Multi-File + Registry (CultureMech)
+### Workflow: Multi-file + lifecycle catalog (CultureMech)
 
-**Step-by-step process**:
+1. Create valid recipe YAML files without inventing IDs.
+2. Run `just assign-ids --dry-run`, review the paths, then `just assign-ids`.
+3. Run `just refresh-id-registry` and `just refresh-id-catalog`.
+4. Run `just assign-ids-check` and `just check-id-catalog`.
 
-```python
-import yaml
-import pandas as pd
-from pathlib import Path
-from datetime import datetime, timezone
-
-# Step 1: Find next ID from registry
-registry_path = Path('data/culturemech_id_registry.tsv')
-registry = pd.read_csv(registry_path, sep='\t')
-highest = find_highest_id_from_registry(registry_path, 'CultureMech')
-next_id = generate_xmech_id('CultureMech', highest + 1)
-
-# Step 2: Create new record
-new_medium = {
-    'id': next_id,  # ALWAYS first field
-    'name': 'New Medium Name',
-    'original_name': 'New Medium Name',
-    'category': 'bacterial',  # bacterial, algae, fungi, etc.
-    'medium_type': 'COMPLEX',
-    'physical_state': 'SOLID_AGAR',
-    'ph_value': 7.0,
-    'ingredients': [],
-    'applications': ['Microbial cultivation'],
-    'curation_history': [
-        {
-            'timestamp': datetime.now(timezone.utc).isoformat() + 'Z',
-            'curator': 'manual_addition',
-            'action': 'Created new medium',
-            'notes': f'Manually added medium with ID {next_id}'
-        }
-    ]
-}
-
-# Step 3: Determine output path (based on category)
-category = new_medium['category']
-safe_name = new_medium['name'].replace(' ', '_').replace('/', '_')
-output_path = Path(f'data/normalized_yaml/{category}/{safe_name}.yaml')
-
-# Ensure category directory exists
-output_path.parent.mkdir(parents=True, exist_ok=True)
-
-# Step 4: Save to new file
-with open(output_path, 'w') as f:
-    yaml.dump(
-        new_medium,
-        f,
-        default_flow_style=False,
-        sort_keys=False,
-        allow_unicode=True
-    )
-
-# Step 5: Update registry
-new_entry = pd.DataFrame({
-    'culturemech_id': [next_id],
-    'file_path': [str(output_path)]
-})
-registry = pd.concat([registry, new_entry], ignore_index=True)
-registry.to_csv(registry_path, sep='\t', index=False)
-
-print(f"✓ Created {next_id} → {output_path}")
-print(f"✓ Updated registry: {registry_path}")
-```
-
-**Key points**:
-- ✓ Read registry to find highest ID
-- ✓ Create file in category-specific directory
-- ✓ Update registry with new ID and path
-- ✓ Registry columns: `culturemech_id`, `file_path`
-- ✓ `id` field ALWAYS first in YAML
+For a deletion, merge, or split, update the tombstone ledger in the same change
+according to `docs/RECIPE_ID_LIFECYCLE.md`; never edit the generated catalog.
 
 ## Batch ID Assignment
 
@@ -521,18 +428,16 @@ For bulk operations, use the existing repository-specific scripts.
 **Usage**:
 ```bash
 # Preview changes (dry-run)
-python scripts/assign_culturemech_ids.py --dry-run
+just assign-ids --dry-run
 
 # Execute assignment
-python scripts/assign_culturemech_ids.py
+just assign-ids
 
-# Custom start ID
-python scripts/assign_culturemech_ids.py --start-id 15432
-
-# Custom paths
-python scripts/assign_culturemech_ids.py \
-  --input-dir data/normalized_yaml \
-  --registry-output data/culturemech_id_registry.tsv
+# Refresh and verify both resolution surfaces
+just refresh-id-registry
+just refresh-id-catalog
+just assign-ids-check
+just check-id-catalog
 ```
 
 **Features**:
@@ -668,7 +573,11 @@ rebuild_registry(
 **Solution**:
 ```
 This is usually fine! IDs are persistent - once assigned, they should never be reused.
-If a record is deleted, its ID should remain unused (tombstone).
+If a CultureMech record is deleted, its ID must be recorded in
+`data/culturemech_id_tombstones.tsv` and retained in the generated lifecycle
+catalog. Use `MERGED` only with one established successor and `SPLIT` only with
+two or more established successors; otherwise use `DELETED` without guessing a
+redirect.
 
 To fill gaps (NOT RECOMMENDED):
 - Only if absolutely necessary for migration/cleanup
@@ -683,7 +592,7 @@ To fill gaps (NOT RECOMMENDED):
 ✓ **Validate after changes** using validation functions
 ✓ **Use zero-padding** (`{number:06d}`)
 ✓ **Place `id` field first** in YAML for readability
-✓ **Update registry** when adding/moving files (CultureMech)
+✓ **Refresh registry and lifecycle catalog** when adding/moving files (CultureMech)
 ✓ **Preserve ID history** - never reuse deleted IDs
 ✓ **Use existing scripts** for batch operations
 ✓ **Document manual additions** in curation history
@@ -692,39 +601,33 @@ To fill gaps (NOT RECOMMENDED):
 ✗ **Don't manually assign IDs** without checking highest ID first
 ✗ **Don't reuse IDs** from deleted records (breaks references)
 ✗ **Don't use `sort_keys=True`** when saving YAML (breaks field order)
-✗ **Don't skip registry updates** (CultureMech)
+✗ **Don't skip registry/catalog updates** (CultureMech)
 ✗ **Don't force-overwrite** existing IDs unless absolutely necessary
 ✗ **Don't create gaps intentionally** (sequential is better)
 ✗ **Don't use non-standard formats** (stick to `Prefix:NNNNNN`)
 
 ## CultureMech Quick Reference
 
-**Current state**: 15,431 media (`CultureMech:000001` to `CultureMech:015431`)
+**Current state**: use the tracked lifecycle catalog for the live count and
+all-time high-water ID; prose counts become stale.
 
-**Add single medium**:
-```python
-# 1. Find next ID from registry
-registry_path = Path('data/culturemech_id_registry.tsv')
-highest = find_highest_id_from_registry(registry_path, 'CultureMech')
-next_id = generate_xmech_id('CultureMech', highest + 1)
-
-# 2. Create record (see workflow above)
-# 3. Save to category directory
-# 4. Update registry
-```
+**Add records**: create the YAML without an ID, then use the allocator. Do not
+copy the apparent next number from a live-only view.
 
 **Batch operation**:
 ```bash
-python scripts/assign_culturemech_ids.py --dry-run
-python scripts/assign_culturemech_ids.py
+just assign-ids --dry-run
+just assign-ids
+just refresh-id-registry
+just refresh-id-catalog
+just assign-ids-check
+just check-id-catalog
 ```
 
-**Rebuild registry**:
-```python
-rebuild_registry(
-    Path('data/normalized_yaml'),
-    Path('data/culturemech_id_registry.tsv')
-)
+**Refresh active registry and lifecycle catalog**:
+```bash
+just refresh-id-registry
+just refresh-id-catalog
 ```
 
 **Verify no duplicates**:

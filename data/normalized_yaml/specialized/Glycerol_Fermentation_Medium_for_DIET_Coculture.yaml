@@ -5,6 +5,7 @@ medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
 id: CultureMech:015432
+id_lineage_token: legacy:01a2b83a07a5b3fa0e2a859e150728503c8d34129d9ba9a67ba72da664a5fb9f
 ingredients:
 - preferred_term: Glycerol
   concentration:

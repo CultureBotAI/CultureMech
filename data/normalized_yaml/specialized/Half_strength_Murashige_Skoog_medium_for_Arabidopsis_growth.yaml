@@ -5,6 +5,7 @@ medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
 id: CultureMech:015433
+id_lineage_token: legacy:1d3e956cf5d89e1ff1cc4fec4dd19e2952ae10997cfb287c070ed6e3660c17fd
 ingredients:
 - preferred_term: Murashige-Skoog basal salts
   concentration:

@@ -14,6 +14,7 @@ files while the dataclass API was broken — the same blind spot the id registry
 
 Regenerate with `just gen-dataclasses`.
 """
+
 from __future__ import annotations
 
 import dataclasses
@@ -28,6 +29,7 @@ import yaml
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SCHEMA = REPO_ROOT / "src" / "culturemech" / "schema" / "culturemech.yaml"
 GENERATED = REPO_ROOT / "src" / "culturemech" / "schema" / "culturemech_dataclasses.py"
+GENERATED_JSON_SCHEMA = REPO_ROOT / "src" / "culturemech" / "schema" / "culturemech.schema.json"
 CORPUS = REPO_ROOT / "data" / "normalized_yaml"
 
 STALE_HINT = "stale dataclasses — regenerate with `just gen-dataclasses`"
@@ -56,6 +58,19 @@ def regenerated() -> str:
 def test_generated_dataclasses_match_schema(regenerated: str) -> None:
     """The tracked file is what the current schema generates."""
     assert _normalize(GENERATED.read_text()) == _normalize(regenerated), STALE_HINT
+
+
+def test_generated_json_schema_matches_linkml_source() -> None:
+    proc = subprocess.run(
+        [sys.executable, "-m", "linkml.generators.jsonschemagen", str(SCHEMA)],
+        capture_output=True,
+        text=True,
+    )
+    if proc.returncode != 0:
+        pytest.skip(f"jsonschemagen unavailable: {proc.stderr[-300:]}")
+    assert (
+        GENERATED_JSON_SCHEMA.read_text() == proc.stdout
+    ), "stale JSON Schema — regenerate with `just gen-json-schema`"
 
 
 def _dataclasses_module():
@@ -108,5 +123,5 @@ def test_a_real_record_loads_through_the_dataclasses() -> None:
 
 def test_the_guard_is_not_vacuous() -> None:
     """A typo in the paths above would make every assertion pass trivially."""
-    assert SCHEMA.exists() and GENERATED.exists()
+    assert SCHEMA.exists() and GENERATED.exists() and GENERATED_JSON_SCHEMA.exists()
     assert "MediaRecipe" in GENERATED.read_text()

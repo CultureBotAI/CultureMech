@@ -28,6 +28,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          # Lifecycle tests compare every previously published catalog version;
+          # shallow history would make the never-forget invariant vacuous.
           fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
@@ -89,6 +91,10 @@ jobs:
     timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Lifecycle tests compare every previously published catalog version;
+          # shallow history would make the never-forget invariant vacuous.
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -107,6 +113,9 @@ jobs:
       # because they only invoke runtime deps.
       - name: Sync dependencies
         run: uv sync --frozen --extra dev
+
+      - name: Verify recipe ID lifecycle catalog
+        run: just check-id-catalog
 
       - name: Run full suite with coverage floor
         run: just test

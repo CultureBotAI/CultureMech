@@ -40,6 +40,7 @@ CORPUS_TEST_FILES = {
     "test_merge_yaml_freshness.py",
     "test_name_term_elements.py",
     "test_recipe_indexes.py",
+    "test_recipe_id_catalog.py",
     "test_record_io.py",
     "test_record_kinds.py",
     "test_ranking_duplicates.py",

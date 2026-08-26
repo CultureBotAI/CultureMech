@@ -286,6 +286,77 @@
             "title": "CommunityOrganismRoleEnum",
             "type": "string"
         },
+        "ConcentrationBasisEnum": {
+            "description": "How a proposed concentration was arrived at. Ordered from strongest to weakest, because the distinction is the whole point of recording a candidate rather than an asserted value.",
+            "enum": [
+                "READ_FROM_THIS_MEDIUM",
+                "READ_FROM_STOCK_DEFINITION",
+                "CROSS_MEDIUM_INFERENCE",
+                "TYPICAL_VALUE"
+            ],
+            "title": "ConcentrationBasisEnum",
+            "type": "string"
+        },
+        "ConcentrationCandidate": {
+            "additionalProperties": false,
+            "description": "A concentration that has been PROPOSED but not asserted, carrying the basis it rests on and the evidence for it.\nThis exists so an inferred value can be recorded without being mistaken for one that was read from a source. A candidate never overwrites an asserted `concentration`; promoting it is a curation decision, made after checking the record's own source.",
+            "properties": {
+                "basis": {
+                    "$ref": "#/$defs/ConcentrationBasisEnum",
+                    "description": "What kind of claim this is \u2014 how the value was arrived at."
+                },
+                "counterevidence": {
+                    "description": "Evidence AGAINST this candidate, where any is known. Recorded because a candidate offered without its known counterexample invites the reader to trust it more than the evidence allows.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "proposed_by": {
+                    "description": "Script or curator that proposed the value.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "proposed_on": {
+                    "description": "ISO-8601 date the proposal was made.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "source": {
+                    "description": "Citation or URL the support was read from.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "support": {
+                    "description": "The evidence, stated so it can be re-checked, e.g. \"10 of 11 MediaDive media citing this stock add it at this volume\".",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "unit": {
+                    "$ref": "#/$defs/ConcentrationUnitEnum",
+                    "description": "Concentration unit"
+                },
+                "value": {
+                    "description": "Numeric value or range, as the evidence gives it.",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "value",
+                "unit",
+                "basis"
+            ],
+            "title": "ConcentrationCandidate",
+            "type": "object"
+        },
         "ConcentrationUnitEnum": {
             "description": "Units for concentration",
             "enum": [
@@ -401,7 +472,8 @@
                     ]
                 },
                 "timestamp": {
-                    "description": "ISO 8601 timestamp",
+                    "description": "ISO 8601 timestamp with a plausible 21st-century curation year",
+                    "pattern": "^20[0-9]{2}-",
                     "type": "string"
                 }
             },
@@ -1460,6 +1532,10 @@
                         "null"
                     ]
                 },
+                "composition_type": {
+                    "$ref": "#/$defs/MediumCompositionTypeEnum",
+                    "description": "Composition axis \u2014 how chemically defined the medium is (DEFINED / UNDEFINED / SEMI_DEFINED). Supersedes the DEFINED/COMPLEX values of the deprecated medium_type slot."
+                },
                 "culture_vessel": {
                     "description": "Recommended culture container (e.g., \"Erlenmeyer flask\", \"test tube\", \"petri dish\")",
                     "type": [
@@ -1531,6 +1607,16 @@
                         "null"
                     ]
                 },
+                "functional_role": {
+                    "description": "Functional-role axis \u2014 what the medium is designed to do (SELECTIVE, DIFFERENTIAL, ENRICHMENT, GENERAL_PURPOSE, TRANSPORT, ASSAY, ENUMERATION). Multivalued: a medium may have more than one role.",
+                    "items": {
+                        "$ref": "#/$defs/MediumFunctionalRoleEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "high_metal": {
                     "description": "Indicates media with total metal concentration above the 90th percentile threshold (\u22651049.84 mM). Metals include Fe, Cu, Zn, Mn, Co, Ni, Mo, Se, W, V, Cr, Ca, Mg, K, Na. Based on automated concentration analysis of ingredient composition.",
                     "type": [
@@ -1546,8 +1632,13 @@
                     ]
                 },
                 "id": {
-                    "description": "Stable CultureMech identifier for this media recipe.",
-                    "pattern": "^CultureMech:\\d{6}$",
+                    "description": "Stable canonical external CultureMech identifier for this media recipe. Immutable after issuance and never reused; lifecycle is published in data/culturemech_recipe_catalog.tsv.",
+                    "pattern": "^CultureMech:(?!000000)\\d{6}$",
+                    "type": "string"
+                },
+                "id_lineage_token": {
+                    "description": "Internal immutable lineage witness for legacy records that predate the ID-assignment curation event. This is not an external identifier and must never be copied to another record or changed after publication.",
+                    "pattern": "^legacy:[0-9a-f]{64}$",
                     "type": [
                         "string",
                         "null"
@@ -1617,7 +1708,7 @@
                 },
                 "medium_type": {
                     "$ref": "#/$defs/MediumTypeEnum",
-                    "description": "Classification of the medium"
+                    "description": "MAINTAINED compatibility axis, derived from composition_type. It is the single-valued classification published to downstream consumers: kgx_export emits one edge per record from this slot, so it is load-bearing rather than vestigial. Populate it on every record, and keep it consistent with composition_type \u2014 DEFINED maps to DEFINED, UNDEFINED and SEMI_DEFINED both map to COMPLEX. BUFFER and NEGATIVE_CONTROL have no composition_type counterpart and are curated directly. Use `just curate-medium-type` to stamp it; a guard fails the build if any record is missing it or contradicts composition_type."
                 },
                 "merge_fingerprint": {
                     "description": "SHA256 hash of ingredient set for deduplication tracking",
@@ -1657,6 +1748,10 @@
                         "string",
                         "null"
                     ]
+                },
+                "nutritional_class": {
+                    "$ref": "#/$defs/MediumNutritionalClassEnum",
+                    "description": "Nutritional-level axis \u2014 MINIMAL / RICH / GENERAL_PURPOSE. Orthogonal to composition_type and functional_role."
                 },
                 "organism_culture_type": {
                     "$ref": "#/$defs/OrganismCultureTypeEnum",
@@ -1711,6 +1806,10 @@
                         "array",
                         "null"
                     ]
+                },
+                "record_kind": {
+                    "$ref": "#/$defs/RecordKindEnum",
+                    "description": "What kind of record this is: a growth MEDIUM, or a standalone stock SOLUTION. Normally inferred from the `term.id` prefix (`mediadive.solution:*`), and only stated explicitly for solutions that carry no upstream solution identifier \u2014 202 records imported from KOMODO as media (\"Trace element solution (medium 929)\", \"10 x M9 salts\") whose composition was flattened into their parent medium. A curated assertion, written by `just retype-solution-records` and reviewable in the diff. It is NOT derived from the name at read time: matching \"*solution*\" would silently reclassify a genuine medium such as Ringer's solution."
                 },
                 "references": {
                     "description": "Original literature sources",
@@ -1869,8 +1968,8 @@
                 }
             },
             "required": [
+                "id",
                 "name",
-                "medium_type",
                 "physical_state",
                 "ingredients"
             ],
@@ -2037,8 +2136,42 @@
             "title": "MediaVariantRelationshipEnum",
             "type": "string"
         },
+        "MediumCompositionTypeEnum": {
+            "description": "Composition axis: how chemically defined the medium is. Single-valued and orthogonal to nutritional level (MediumNutritionalClassEnum) and functional role (MediumFunctionalRoleEnum).",
+            "enum": [
+                "DEFINED",
+                "UNDEFINED",
+                "SEMI_DEFINED"
+            ],
+            "title": "MediumCompositionTypeEnum",
+            "type": "string"
+        },
+        "MediumFunctionalRoleEnum": {
+            "description": "Functional-role axis: what the medium is designed to do. MULTIVALUED \u2014 a medium may be both selective and differential, etc. Orthogonal to composition (MediumCompositionTypeEnum) and nutritional level (MediumNutritionalClassEnum).",
+            "enum": [
+                "GENERAL_PURPOSE",
+                "SELECTIVE",
+                "DIFFERENTIAL",
+                "ENRICHMENT",
+                "TRANSPORT",
+                "ASSAY",
+                "ENUMERATION"
+            ],
+            "title": "MediumFunctionalRoleEnum",
+            "type": "string"
+        },
+        "MediumNutritionalClassEnum": {
+            "description": "Nutritional-level axis: how nutrient-rich the medium is. Single-valued and orthogonal to composition (MediumCompositionTypeEnum) and functional role (MediumFunctionalRoleEnum).",
+            "enum": [
+                "MINIMAL",
+                "RICH",
+                "GENERAL_PURPOSE"
+            ],
+            "title": "MediumNutritionalClassEnum",
+            "type": "string"
+        },
         "MediumTypeEnum": {
-            "description": "Classification of culture medium",
+            "description": "Single-axis classification of culture medium, MAINTAINED alongside the three orthogonal axes rather than replaced by them. It conflates composition, nutritional level and functional role into one slot, which is why MediumCompositionTypeEnum (composition_type), MediumNutritionalClassEnum (nutritional_class) and MediumFunctionalRoleEnum (functional_role) exist and are the primary axes for new curation. This enum remains the published single-valued view: populate BOTH, and keep this slot derived from composition_type. The per-value \"Migrates to\" notes below define that derivation and are parsed by the consistency guard, so they are load-bearing documentation rather than historical commentary.",
             "enum": [
                 "DEFINED",
                 "COMPLEX",
@@ -2749,6 +2882,15 @@
             "title": "RecipeSynonym",
             "type": "object"
         },
+        "RecordKindEnum": {
+            "description": "Whether a normalized_yaml record describes a growth medium or a standalone stock solution. See the `record_kind` slot: this is stated only where the `term.id` prefix cannot carry the distinction.",
+            "enum": [
+                "MEDIUM",
+                "SOLUTION"
+            ],
+            "title": "RecordKindEnum",
+            "type": "string"
+        },
         "SolutionDescriptor": {
             "additionalProperties": false,
             "description": "A pre-prepared stock solution used as an ingredient",
@@ -2773,6 +2915,16 @@
                         }
                     ],
                     "description": "Working concentration when added to medium"
+                },
+                "concentration_candidates": {
+                    "description": "Proposed working concentrations that are NOT asserted \u2014 each carries the basis it rests on and the evidence for it. Never overwrites `concentration`; a curator promotes one by hand after checking it.",
+                    "items": {
+                        "$ref": "#/$defs/ConcentrationCandidate"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 },
                 "culturemech_term": {
                     "anyOf": [
@@ -2926,8 +3078,13 @@
                     ]
                 },
                 "id": {
-                    "description": "Stable CultureMech identifier for this solution record.",
-                    "pattern": "^CultureMech:\\d{6}$",
+                    "description": "Stable canonical external CultureMech identifier for this solution record. Immutable after issuance and never reused; lifecycle is published in data/culturemech_recipe_catalog.tsv.",
+                    "pattern": "^CultureMech:(?!000000)\\d{6}$",
+                    "type": "string"
+                },
+                "id_lineage_token": {
+                    "description": "Internal immutable lineage witness for legacy records that predate the ID-assignment curation event. This is not an external identifier and must never be copied to another record or changed after publication.",
+                    "pattern": "^legacy:[0-9a-f]{64}$",
                     "type": [
                         "string",
                         "null"
@@ -3045,6 +3202,7 @@
                 }
             },
             "required": [
+                "id",
                 "preferred_term",
                 "composition"
             ],
