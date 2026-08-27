@@ -113,8 +113,7 @@ arguments or `CMM_AUTOMATION_DATA_DIR`, `MICROBE_MEDIA_PARAM_DIR`, and
 - Recipe QA: `review-recipes`; broad schema/pipeline audits:
   `audit-schema-gaps`; quick diagnosis: `schema-gap-analysis`.
 - Sources: `fetch-source` or `scrape-jcm-media`.
-- Grounding: `id-label-correspondence`, `match-kg-microbe`, and
-  `manage-ingredient-hierarchy`.
+- Grounding: `id-label-correspondence` and `match-kg-microbe`.
 - Research: `deep-research-medium` and `research-ingredient-roles`.
 - Visualization: `generate-ingredient-umap` and `render-media-role-graph`.
 - Reporting/backlog: `stats-report` and `next-tasks`; full open-issue queue

@@ -27,11 +27,7 @@ from pathlib import Path
 import yaml
 
 from culturemech.curate.curation_event import record_curation_event
-from culturemech.enrich.hierarchy_importer import MediaIngredientMechHierarchyImporter
-from culturemech.merge.fingerprint import RecipeFingerprinter
-from culturemech.merge.hierarchy_fingerprint import HierarchyAwareFingerprinter
 from culturemech.merge.matcher import RecipeMatcher
-from culturemech.merge.merge_rules import MergeRuleEngine
 from culturemech.merge.merger import RecipeMerger
 
 CURATOR = "merge_recipes.py"
@@ -51,14 +47,14 @@ def unique_filename(name: str, fingerprint: str, used_keys: set[str]) -> tuple[s
     ``used_keys`` holds the LOWER-CASED names already taken and is mutated here.
     Returns ``(filename, collided)``.
     """
-    base = name.replace('/', '_').replace(' ', '_')
-    filename = base + '.yaml'
+    base = name.replace("/", "_").replace(" ", "_")
+    filename = base + ".yaml"
     collided = filename.lower() in used_keys
     if collided:
-        filename = f'{base}__{fingerprint[:8]}.yaml'
+        filename = f"{base}__{fingerprint[:8]}.yaml"
         n = 1
         while filename.lower() in used_keys:  # astronomically unlikely; never overwrite
-            filename = f'{base}__{fingerprint[:8]}_{n}.yaml'
+            filename = f"{base}__{fingerprint[:8]}_{n}.yaml"
             n += 1
     used_keys.add(filename.lower())
     return filename, collided
@@ -76,12 +72,12 @@ def find_all_recipes(normalized_dir: Path) -> list[Path]:
     recipes = []
     for category_dir in normalized_dir.iterdir():
         if category_dir.is_dir():
-            recipes.extend(category_dir.glob('*.yaml'))
+            recipes.extend(category_dir.glob("*.yaml"))
 
     return sorted(recipes)
 
 
-def progress_bar(current: int, total: int, prefix: str = '') -> None:
+def progress_bar(current: int, total: int, prefix: str = "") -> None:
     """Display progress bar.
 
     Args:
@@ -92,17 +88,14 @@ def progress_bar(current: int, total: int, prefix: str = '') -> None:
     bar_length = 50
     percent = current / total
     filled = int(bar_length * percent)
-    bar = '█' * filled + '░' * (bar_length - filled)
-    print(f'\r{prefix} [{bar}] {current}/{total} ({percent*100:.1f}%)', end='', flush=True)
+    bar = "█" * filled + "░" * (bar_length - filled)
+    print(f"\r{prefix} [{bar}] {current}/{total} ({percent*100:.1f}%)", end="", flush=True)
     if current == total:
         print()  # Newline when complete
 
 
 def generate_merge_stats(
-    input_count: int,
-    output_count: int,
-    groups: dict,
-    recipes_by_group: dict
+    input_count: int, output_count: int, groups: dict, recipes_by_group: dict
 ) -> dict:
     """Generate merge statistics.
 
@@ -126,7 +119,7 @@ def generate_merge_stats(
     for fp, paths in groups.items():
         if len(paths) > 1:
             recipes = recipes_by_group.get(fp, [])
-            categories = set(r.get('category') for r in recipes if r.get('category'))
+            categories = {r.get("category") for r in recipes if r.get("category")}
             if len(categories) > 1:
                 cross_category_count += 1
 
@@ -141,45 +134,47 @@ def generate_merge_stats(
             continue
 
         # Get canonical name (most common)
-        name_counts = Counter(r['name'] for r in recipes)
+        name_counts = Counter(r["name"] for r in recipes)
         canonical_name = name_counts.most_common(1)[0][0]
 
         # Get sources
         sources = set()
         for recipe in recipes:
-            media_term = recipe.get('media_term', {})
+            media_term = recipe.get("media_term", {})
             if isinstance(media_term, dict):
-                term = media_term.get('term', {})
+                term = media_term.get("term", {})
                 if isinstance(term, dict):
-                    term_id = term.get('id', '')
-                    if 'TOGO:' in term_id:
-                        sources.add('TOGO')
-                    elif 'mediadive.medium:' in term_id:
-                        sources.add('MediaDive')
-                    elif 'komodo.medium:' in term_id:
-                        sources.add('KOMODO')
-                    elif 'DSMZ' in term_id:
-                        sources.add('DSMZ')
+                    term_id = term.get("id", "")
+                    if "TOGO:" in term_id:
+                        sources.add("TOGO")
+                    elif "mediadive.medium:" in term_id:
+                        sources.add("MediaDive")
+                    elif "komodo.medium:" in term_id:
+                        sources.add("KOMODO")
+                    elif "DSMZ" in term_id:
+                        sources.add("DSMZ")
 
         # Get categories
-        categories = sorted(set(r.get('category') for r in recipes if r.get('category')))
+        categories = sorted({r.get("category") for r in recipes if r.get("category")})
 
-        top_duplicates.append({
-            'name': canonical_name,
-            'count': len(paths),
-            'sources': sorted(sources),
-            'categories': categories,
-        })
+        top_duplicates.append(
+            {
+                "name": canonical_name,
+                "count": len(paths),
+                "sources": sorted(sources),
+                "categories": categories,
+            }
+        )
 
     stats = {
-        'timestamp': datetime.now(timezone.utc).isoformat(),
-        'input_recipes': input_count,
-        'output_recipes': output_count,
-        'reduction': reduction,
-        'reduction_percentage': round(reduction_pct, 1),
-        'cross_category_merges': cross_category_count,
-        'largest_group_size': largest_group_size,
-        'top_duplicates': top_duplicates,
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "input_recipes": input_count,
+        "output_recipes": output_count,
+        "reduction": reduction,
+        "reduction_percentage": round(reduction_pct, 1),
+        "cross_category_merges": cross_category_count,
+        "largest_group_size": largest_group_size,
+        "top_duplicates": top_duplicates,
     }
 
     return stats
@@ -188,9 +183,9 @@ def generate_merge_stats(
 def main():
     """Main entry point."""
     parser = argparse.ArgumentParser(
-        description='Merge duplicate recipes from normalized_yaml to merge_yaml',
+        description="Merge duplicate recipes from normalized_yaml to merge_yaml",
         formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog='''
+        epilog="""
 Examples:
   # Dry run to see what would be merged
   python -m culturemech.merge.merge_recipes --dry-run
@@ -206,74 +201,45 @@ Examples:
 
   # Process only first 1000 recipes (for testing)
   python -m culturemech.merge.merge_recipes --limit 1000
-        '''
+        """,
     )
 
     parser.add_argument(
-        '--normalized-dir',
+        "--normalized-dir",
         type=Path,
-        default=Path('data/normalized_yaml'),
-        help='Path to normalized_yaml directory (default: data/normalized_yaml)'
+        default=Path("data/normalized_yaml"),
+        help="Path to normalized_yaml directory (default: data/normalized_yaml)",
     )
 
     parser.add_argument(
-        '--output-dir',
+        "--output-dir",
         type=Path,
-        default=Path('data/merge_yaml/merged'),
-        help='Path to output directory (default: data/merge_yaml/merged)'
+        default=Path("data/merge_yaml/merged"),
+        help="Path to output directory (default: data/merge_yaml/merged)",
     )
 
     parser.add_argument(
-        '--stats-file',
+        "--stats-file",
         type=Path,
-        default=Path('data/merge_yaml/merge_stats.json'),
-        help='Path to statistics output file (default: data/merge_yaml/merge_stats.json)'
+        default=Path("data/merge_yaml/merge_stats.json"),
+        help="Path to statistics output file (default: data/merge_yaml/merge_stats.json)",
     )
 
     parser.add_argument(
-        '--dry-run',
-        action='store_true',
-        help='Show what would be merged without writing files'
+        "--dry-run", action="store_true", help="Show what would be merged without writing files"
     )
 
     parser.add_argument(
-        '--stats-only',
-        action='store_true',
-        help='Generate statistics without merging recipes'
+        "--stats-only", action="store_true", help="Generate statistics without merging recipes"
     )
 
-    parser.add_argument(
-        '--limit',
-        type=int,
-        help='Process only first N recipes (for testing)'
-    )
+    parser.add_argument("--limit", type=int, help="Process only first N recipes (for testing)")
 
     parser.add_argument(
-        '--min-group-size',
+        "--min-group-size",
         type=int,
         default=1,
-        help='Minimum group size to process (default: 1, set to 2 to only merge duplicates)'
-    )
-
-    parser.add_argument(
-        '--mim-repo',
-        type=Path,
-        help='Path to MediaIngredientMech repository (enables hierarchy-aware features)'
-    )
-
-    parser.add_argument(
-        '--merge-mode',
-        type=str,
-        choices=['conservative', 'aggressive', 'variant-aware'],
-        help='Merge mode for hierarchy-aware merging (requires --mim-repo)'
-    )
-
-    parser.add_argument(
-        '--fingerprint-mode',
-        type=str,
-        choices=['chemical', 'variant', 'original'],
-        default='original',
-        help='Fingerprinting mode: chemical (merge variants), variant (preserve), original (baseline)'
+        help="Minimum group size to process (default: 1, set to 2 to only merge duplicates)",
     )
 
     args = parser.parse_args()
@@ -281,15 +247,6 @@ Examples:
     # Validate paths
     if not args.normalized_dir.exists():
         print(f"Error: Normalized directory not found: {args.normalized_dir}", file=sys.stderr)
-        return 1
-
-    # Validate hierarchy arguments
-    if args.merge_mode and not args.mim_repo:
-        print("Error: --merge-mode requires --mim-repo", file=sys.stderr)
-        return 1
-
-    if args.mim_repo and not args.mim_repo.exists():
-        print(f"Error: MediaIngredientMech repo not found: {args.mim_repo}", file=sys.stderr)
         return 1
 
     print("=" * 70)
@@ -301,35 +258,17 @@ Examples:
     print("This identifies recipes with the same base formulation (same chemicals).")
     print()
 
-    # Load hierarchy if provided
-    hierarchy = None
-    if args.mim_repo:
-        print(f"Loading MediaIngredientMech hierarchy from {args.mim_repo}...")
-        hierarchy = MediaIngredientMechHierarchyImporter(args.mim_repo)
-        hierarchy.load_hierarchy()
-        stats = hierarchy.get_stats()
-        print(f"  Loaded: {stats['total_ingredients']} ingredients, {stats['families']} families")
-        print(f"  Mode: fingerprint={args.fingerprint_mode}, merge={args.merge_mode or 'N/A'}")
-        print()
-
     # Find all recipes
     print(f"Scanning {args.normalized_dir} for recipes...")
     all_recipes = find_all_recipes(args.normalized_dir)
 
     if args.limit:
-        all_recipes = all_recipes[:args.limit]
+        all_recipes = all_recipes[: args.limit]
 
     print(f"Found {len(all_recipes)} recipes")
     print()
 
-    # Initialize matcher with appropriate fingerprinter
-    if hierarchy and args.fingerprint_mode != 'original':
-        fingerprinter = HierarchyAwareFingerprinter(hierarchy, mode=args.fingerprint_mode)
-        print(f"Using hierarchy-aware fingerprinting (mode: {args.fingerprint_mode})")
-        matcher = RecipeMatcher(fingerprinter=fingerprinter)
-    else:
-        print("Using original fingerprinting")
-        matcher = RecipeMatcher()
+    matcher = RecipeMatcher()
 
     # Group recipes by fingerprint
     print("Grouping recipes by ingredient fingerprint...")
@@ -338,23 +277,21 @@ Examples:
         progress_bar(current, total, prefix="Progress:")
 
     groups = matcher.group_recipes(
-        all_recipes,
-        min_group_size=args.min_group_size,
-        progress_callback=progress_callback
+        all_recipes, min_group_size=args.min_group_size, progress_callback=progress_callback
     )
 
     print()
     print(f"Found {len(groups)} unique recipe groups")
 
     # Show skip statistics if available
-    if hasattr(matcher, '_last_skip_stats'):
+    if hasattr(matcher, "_last_skip_stats"):
         stats = matcher._last_skip_stats
-        skipped_total = stats['skipped_no_fingerprint'] + stats['skipped_error']
+        skipped_total = stats["skipped_no_fingerprint"] + stats["skipped_error"]
 
         if skipped_total > 0:
             print()
             print(f"⚠ Skipped {skipped_total} recipes:")
-            for reason, count in stats['reasons'].items():
+            for reason, count in stats["reasons"].items():
                 print(f"  - {reason}: {count}")
             print()
             print(f"Successfully fingerprinted: {stats['successfully_fingerprinted']} recipes")
@@ -367,7 +304,7 @@ Examples:
         recipes = []
         for path in paths:
             try:
-                with open(path, 'r', encoding='utf-8') as f:
+                with open(path, encoding="utf-8") as f:
                     recipe = yaml.safe_load(f)
                     recipes.append(recipe)
             except Exception as e:
@@ -382,7 +319,7 @@ Examples:
         input_count=len(all_recipes),
         output_count=output_count,
         groups=groups,
-        recipes_by_group=recipes_by_group
+        recipes_by_group=recipes_by_group,
     )
 
     # Display statistics
@@ -391,18 +328,22 @@ Examples:
     print("=" * 70)
     print(f"Input recipes:          {stats['input_recipes']:,}")
     print(f"Output recipes:         {stats['output_recipes']:,}")
-    print(f"Reduction:              {stats['reduction']:,} recipes ({stats['reduction_percentage']}%)")
+    print(
+        f"Reduction:              {stats['reduction']:,} recipes ({stats['reduction_percentage']}%)"
+    )
     print(f"Cross-category merges:  {stats['cross_category_merges']}")
     print(f"Largest group size:     {stats['largest_group_size']}")
     print()
 
-    if stats['top_duplicates']:
+    if stats["top_duplicates"]:
         print("Top duplicate groups:")
-        for i, dup in enumerate(stats['top_duplicates'][:5], 1):
-            sources_str = ', '.join(dup['sources']) if dup['sources'] else 'unknown'
-            categories_str = ', '.join(dup['categories']) if dup['categories'] else 'none'
+        for i, dup in enumerate(stats["top_duplicates"][:5], 1):
+            sources_str = ", ".join(dup["sources"]) if dup["sources"] else "unknown"
+            categories_str = ", ".join(dup["categories"]) if dup["categories"] else "none"
             print(f"  {i}. {dup['name']}")
-            print(f"     Count: {dup['count']}, Sources: {sources_str}, Categories: {categories_str}")
+            print(
+                f"     Count: {dup['count']}, Sources: {sources_str}, Categories: {categories_str}"
+            )
         print()
 
     # If stats-only, stop here
@@ -420,7 +361,7 @@ Examples:
 
         for i, (fp, paths) in enumerate(duplicate_groups[:10], 1):
             recipes = recipes_by_group.get(fp, [])
-            names = [r['name'] for r in recipes]
+            names = [r["name"] for r in recipes]
             print(f"\n{i}. Group of {len(paths)} recipes:")
             for name in names:
                 print(f"   - {name}")
@@ -458,7 +399,7 @@ Examples:
             merged_recipe = merger.merge_group(paths, fingerprint=fp)
 
             # Generate a collision-free output filename (#218).
-            filename, collided = unique_filename(merged_recipe['name'], fp, used_keys)
+            filename, collided = unique_filename(merged_recipe["name"], fp, used_keys)
             collisions += collided
             output_path = args.output_dir / filename
 
@@ -473,8 +414,10 @@ Examples:
             )
 
             # Write merged recipe
-            with open(output_path, 'w', encoding='utf-8') as f:
-                yaml.dump(merged_recipe, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
+            with open(output_path, "w", encoding="utf-8") as f:
+                yaml.dump(
+                    merged_recipe, f, default_flow_style=False, allow_unicode=True, sort_keys=False
+                )
 
             if i % 500 == 0:
                 progress_bar(i, len(groups), prefix="Progress:")
@@ -486,20 +429,24 @@ Examples:
 
     progress_bar(len(groups), len(groups), prefix="Progress:")
     print()
-    print(f"Wrote {len(used_keys)} files from {len(groups)} groups "
-          f"({collisions} name collision(s) disambiguated with a fingerprint suffix).")
+    print(
+        f"Wrote {len(used_keys)} files from {len(groups)} groups "
+        f"({collisions} name collision(s) disambiguated with a fingerprint suffix)."
+    )
     if errors:
         # A skipped group is a dropped record too — surface it rather than leaving a
         # silent gap between the group count and the file count (#218).
-        print(f"WARNING: {len(errors)} group(s) failed to merge and were NOT written:",
-              file=sys.stderr)
+        print(
+            f"WARNING: {len(errors)} group(s) failed to merge and were NOT written:",
+            file=sys.stderr,
+        )
         for err in errors:
             print(f"  {err}", file=sys.stderr)
 
     # Write statistics
     print(f"Writing statistics to {args.stats_file}...")
     args.stats_file.parent.mkdir(parents=True, exist_ok=True)
-    with open(args.stats_file, 'w', encoding='utf-8') as f:
+    with open(args.stats_file, "w", encoding="utf-8") as f:
         json.dump(stats, f, indent=2)
 
     print()
@@ -516,5 +463,5 @@ Examples:
     return 0
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     sys.exit(main())

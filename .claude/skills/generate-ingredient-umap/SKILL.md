@@ -136,4 +136,3 @@ The generator extracts CHEBI IDs from each ingredient using this priority:
 
 - `match-kg-microbe` — matches CultureMech media (not ingredients) to KG-Microbe nodes
 - `cross-repo-sync` (culturebotai-claw) — sync MIM CHEBIs before regenerating (increases coverage)
-- `manage-ingredient-hierarchy` — hierarchy enrichment also populates ingredient CHEBI fields

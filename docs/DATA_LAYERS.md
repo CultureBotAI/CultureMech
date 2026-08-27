@@ -754,3 +754,28 @@ See `.gitignore` for complete patterns.
 - **IMPLEMENTATION_STATUS.md** - Current data coverage
 - **ENRICHMENT_GUIDE.md** - Enhancing recipes with ontology terms
 - **CONTRIBUTING.md** - Contributing new recipes or sources
+
+## Recipe families are not ingredient chemical forms
+
+Two different "hierarchies" touch this repo and they are easy to conflate — the
+conflation is what produced the dormant importer retired in #339.
+
+**CultureMech owns recipe relationships.** A recipe family groups media that are
+variants of one formulation (`R2A agar` and `R2A agar, modified`); a recipe
+variant is a documented alteration of another recipe. These live in
+`data/normalized_yaml/` and `data/merge_yaml/`, keyed by the stable
+`CultureMech:` id every recipe carries. Merging and fingerprinting operate here.
+
+**MediaIngredientMech owns ingredient chemical-form relationships.** Hydrates,
+salts and anhydrous parents (`MgSO4·7H2O` under `MgSO4`) are chemical identity
+questions, governed by `MAPPING_SEMANTICS.md` Section 3 in that repo, where a
+distinct hydration state is a distinct substance with its own formula weight.
+CultureMech does not model them and should not: a recipe listing
+`MgSO4 x 7 H2O` records what a protocol says to weigh out, and what that string
+denotes chemically is MIM's question.
+
+The retired interface assumed MIM published a recipe-shaped ingredient hierarchy
+CultureMech could merge on. It never did, and the two are not the same kind of
+relationship, so the right integration point is the ingredient-occurrence table
+(`output/ingredient_occurrences.tsv`, #337) — an ingredient-to-recipe membership
+edge keyed on stable ids in both repos — not a hierarchy import.

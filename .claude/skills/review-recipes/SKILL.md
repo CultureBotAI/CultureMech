@@ -150,7 +150,6 @@ Issues are graded by priority. Full definitions (checks, impact, fixes) are in
 
 - [`create-recipe`](../create-recipe/SKILL.md) — create new media/solution YAML records
 - [`manage-identifiers`](../manage-identifiers/SKILL.md) — CultureMech ID assignment
-- [`manage-ingredient-hierarchy`](../manage-ingredient-hierarchy/SKILL.md) — MediaIngredientMech integration
 
 ---
 
