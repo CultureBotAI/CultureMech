@@ -76,8 +76,11 @@ auto-paginates, so one call with a high enough limit returns the full set — bu
 omitting `--limit` caps silently at 30, which looks like a complete sweep.
 
 State the exact number reviewed and whether coverage was complete. Read every
-issue body and its comments; for a long queue, inspect related groups in
-parallel but preserve one disposition per issue.
+issue body and its comments. Batch independent `gh` and `git` calls into single
+rounds to keep the sweep cheap — but read the queue yourself rather than
+splitting it across agents. Steps 2 and 5 rank issues against each other, and a
+reader who only saw one group cannot do that; a split sweep is first-page
+sampling arriving by another route.
 
 ### 2. Build the dependency graph before assigning rank
 
@@ -95,8 +98,17 @@ data/raw/ capture (immutable; large payloads gitignored)
 
 An upstream identity or correctness problem invalidates every derived layer
 below it. Recommend fixing the root before regenerating or polishing downstream
-output. Group issues that share a root cause, but do not hide the individual
-issue numbers.
+output.
+
+Group issues that share a root cause. Most of this queue is filed in batches by
+review passes, so the duplicates cluster on:
+
+- a shared PR or commit reference in the title or body;
+- the same file, function, script, or `just` recipe named;
+- a near-identical failure scenario described from a different angle.
+
+Report groups explicitly and keep every individual issue number visible. A
+human may want to close duplicates deliberately, not have them hidden.
 
 For each issue, record when applicable:
 
@@ -135,9 +147,10 @@ For each issue or group representative:
   recorded observation as superseded when a separate open issue owns the only
   remaining work.
 - Verify counts against their actual immediate source. A committed report under
-  `data/import_tracking/reports/` is derived and can lag; `data/merge_yaml/` is
-  derived from `data/normalized_yaml/` and is currently drifted. Regenerate or
-  check the source before quoting a number from either.
+  `data/import_tracking/reports/` is derived and can lag, and `data/merge_yaml/`
+  is derived from `data/normalized_yaml/` rather than authoritative. Regenerate,
+  or run `just audit-merge-freshness` for the merge layer, before quoting a
+  number from either — do not assume today's drift state in either direction.
 - The local checkout can lag `origin/main`. Verify what the repository contains
   with `gh api` or a fresh `git fetch`, not the working tree alone.
 
@@ -160,12 +173,27 @@ Treat these as P0 when live or externally consequential:
 - a corpus-wide change landed without a canary, where the cost of being wrong
   multiplies across ~15,900 records.
 
-Prefer the gates over prose as evidence: `just validate-strict`,
-`just assign-ids-check`, `just audit-derived-artifacts`,
-`just audit-unparsed-composition`, `just audit-concentration-plausibility`,
-`just check-chebi-grounding`, `just check-mim-label-index`, and
-`just audit-merge-freshness`. An issue asserting a defect that one of these
-already blocks is P2 unless it shows the gate is porous.
+Prefer a gate run over prose as evidence — but check first whether the gate
+runs on its own. Only three block a pull request today:
+
+- `just validate-strict` (validate-strict.yaml, tests.yaml);
+- `just audit-concentration-plausibility` (concentration-plausibility.yaml);
+- `just check-chebi-grounding` (chebi-consistency.yaml).
+
+An issue asserting a defect that one of *these* already blocks is P2 unless it
+shows the gate is porous.
+
+The rest run only when someone types the command, so they contain nothing on
+their own: `just assign-ids-check`, `just audit-derived-artifacts`,
+`just audit-unparsed-composition` and `just check-mim-label-index` appear in no
+workflow, and `just audit-merge-freshness` is a nightly alert whose own
+workflow header says it runs "NOT as a blocking per-PR gate". They are the cheapest
+decisive evidence a triager can run — run them and cite the output — but never
+downgrade an issue because one of them exists. An invariant guarded only by an
+unrun command is unguarded, and a missing gate over a consequential invariant is
+itself worth an issue.
+
+Re-derive that split rather than trusting this list; workflows change.
 
 ### 5. Assign priority and execution order
 
@@ -297,8 +325,16 @@ Before citing any of the following, confirm how it was obtained:
 
 Do not close, comment on, relabel, retitle, or create issues or trackers during
 the review. If the user later asks to act, present the exact issue numbers and
-proposed mutation first. Apply closures one issue at a time with cited evidence;
-never treat general approval as authorization for an unattended bulk close.
+proposed mutation first. Apply closures one issue at a time, carrying the Step 3
+evidence into the comment so the reason survives with the issue:
+
+```bash
+gh issue close <N> --comment "<commit/PR/code that resolves this>"
+```
+
+Confirm each number before its own close. A general "yes, go ahead" is not
+authorization for an unattended loop — an agent closing a live issue because it
+*looks* stale is worse than leaving noise in the queue.
 
 If maintaining a tracker issue is requested, search first — `gh issue list
 --search "tracker" --state open` is authoritative — and update an existing one
