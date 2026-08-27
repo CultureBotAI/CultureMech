@@ -126,7 +126,7 @@ Run them yourself if an item claims they do.
 
 - `scrape-jcm-media`, `create-recipe` — find/add *new* media (outside this skill).
 - `deep-research-medium`, `review-recipes`, `match-kg-microbe`,
-  `manage-identifiers`, `manage-ingredient-hierarchy`, `audit-schema-gaps` —
+  `manage-identifiers`, `audit-schema-gaps` —
   the skills a chosen backlog item is usually handed off to.
 
 ## Related files

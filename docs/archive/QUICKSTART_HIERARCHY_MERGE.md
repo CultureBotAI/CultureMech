@@ -1,5 +1,12 @@
 # Quick Start: Hierarchy-Aware Recipe Merging
 
+> **RETIRED (#339).** The interface described below never had a working
+> producer: the four MIM files its importer reads have never existed in
+> MediaIngredientMech on any branch, so it loaded zero families, returned
+> without raising, and callers silently got baseline behaviour. The code was
+> removed in #339. This file is kept as a record of what was built, not as
+> instructions — none of the commands in it will run.
+
 **Status**: ✅ Infrastructure complete | ⏳ Baseline merge running
 **Last Updated**: March 14, 2026
 

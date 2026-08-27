@@ -435,7 +435,6 @@ pH 7.3, autoclave 121°C for 15 min
 ## Related Skills
 
 - `manage-identifiers` - ID assignment and management
-- `manage-ingredient-hierarchy` - MediaIngredientMech integration
 
 ## Script Support
 
