@@ -20,19 +20,51 @@ Reference:
 """
 
 import json
-import yaml
-import re
-from pathlib import Path
-from typing import Any, Dict, List, Optional
-from datetime import datetime, timezone
 import logging
+from datetime import datetime, timezone
 from importlib import import_module
+from pathlib import Path
+
+import yaml
 
 # Import from module with reserved keyword name
-ChemicalMapper = import_module('culturemech.import.chemical_mappings').ChemicalMapper
+ChemicalMapper = import_module("culturemech.import.chemical_mappings").ChemicalMapper
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+
+# The first four rows in the archived MediaDB compound export are corrupted
+# fragments rather than their KEGG identities. Rows 5 onward resume the expected
+# sequence (row 5 is C00005/NADPH, row 6 is C00006/NADP+, etc.). Keep the raw
+# snapshot immutable and restore the identities at the normalization boundary.
+# ChEBI labels/identifiers were verified with OAK sqlite:obo:chebi on 2026-08-25.
+MEDIADB_COMPOUND_CORRECTIONS = {
+    "1": {
+        "preferred_term": "Water",
+        "kegg_compound": "C00001",
+        "chebi_id": "CHEBI:15377",
+        "chebi_label": "water",
+    },
+    "2": {
+        "preferred_term": "ATP",
+        "kegg_compound": "C00002",
+        "chebi_id": "CHEBI:15422",
+        "chebi_label": "ATP",
+    },
+    "3": {
+        "preferred_term": "NAD+",
+        "kegg_compound": "C00003",
+        "chebi_id": "CHEBI:15846",
+        "chebi_label": "NAD(+)",
+    },
+    "4": {
+        "preferred_term": "NADH",
+        "kegg_compound": "C00004",
+        "chebi_id": "CHEBI:16908",
+        "chebi_label": "NADH",
+    },
+}
 
 
 class MediaDBImporter:
@@ -43,7 +75,7 @@ class MediaDBImporter:
         mediadb_data_dir: Path,
         output_dir: Path,
         curator: str = "mediadb-import",
-        chemical_mapper: Optional[ChemicalMapper] = None,
+        chemical_mapper: ChemicalMapper | None = None,
     ):
         """
         Initialize importer.
@@ -64,14 +96,12 @@ class MediaDBImporter:
         self.organisms_data = self._load_json("mediadb_organisms.json")
 
         # Extract lists from data structure
-        self.media = self.media_data.get('data', [])
-        self.compounds = self.compounds_data.get('data', [])
-        self.organisms = self.organisms_data.get('data', [])
+        self.media = self.media_data.get("data", [])
+        self.compounds = self.compounds_data.get("data", [])
+        self.organisms = self.organisms_data.get("data", [])
 
         # Index compounds by ID for quick lookup
-        self.compounds_by_id = {
-            comp['id']: comp for comp in self.compounds
-        }
+        self.compounds_by_id = {comp["id"]: comp for comp in self.compounds}
 
         # Initialize chemical mapper
         self.chemical_mapper = chemical_mapper
@@ -82,16 +112,18 @@ class MediaDBImporter:
         logger.info(f"Loaded {len(self.media)} MediaDB media recipes")
         logger.info(f"Loaded {len(self.compounds)} compounds")
         logger.info(f"Loaded {len(self.organisms)} organism associations")
-        logger.info(f"Cached {len(self.existing_media_names)} existing media names for deduplication")
+        logger.info(
+            f"Cached {len(self.existing_media_names)} existing media names for deduplication"
+        )
 
-    def _load_json(self, filename: str) -> Dict:
+    def _load_json(self, filename: str) -> dict:
         """Load JSON file from MediaDB data directory."""
         path = self.mediadb_dir / filename
         if not path.exists():
             logger.warning(f"File not found: {path}")
-            return {'count': 0, 'data': []}
+            return {"count": 0, "data": []}
 
-        with open(path, encoding='utf-8') as f:
+        with open(path, encoding="utf-8") as f:
             return json.load(f)
 
     def _load_existing_media_names(self) -> set:
@@ -99,28 +131,28 @@ class MediaDBImporter:
         existing_names = set()
 
         # Scan all categories
-        for category in ['bacterial', 'fungal', 'archaea', 'specialized', 'algae']:
+        for category in ["bacterial", "fungal", "archaea", "specialized", "algae"]:
             kb_dir = self.output_dir / category
             if not kb_dir.exists():
                 continue
 
-            for yaml_file in kb_dir.glob('*.yaml'):
+            for yaml_file in kb_dir.glob("*.yaml"):
                 # Skip MediaDB files (we're importing MediaDB)
-                if 'MEDIADB' in yaml_file.name:
+                if "MEDIADB" in yaml_file.name:
                     continue
 
                 try:
-                    with open(yaml_file, encoding='utf-8') as f:
+                    with open(yaml_file, encoding="utf-8") as f:
                         existing = yaml.safe_load(f)
 
-                    if existing and 'name' in existing:
-                        existing_names.add(existing['name'].lower())
+                    if existing and "name" in existing:
+                        existing_names.add(existing["name"].lower())
                 except Exception as e:
                     logger.debug(f"Error loading {yaml_file}: {e}")
 
         return existing_names
 
-    def import_all(self, limit: Optional[int] = None) -> List[Path]:
+    def import_all(self, limit: int | None = None) -> list[Path]:
         """
         Import all MediaDB media to CultureMech format.
 
@@ -150,15 +182,13 @@ class MediaDBImporter:
                     generated.append(yaml_path)
                     logger.info(f"✓ Imported {yaml_path.name}")
             except Exception as e:
-                logger.error(
-                    f"✗ Error importing {medium.get('name', 'Unknown')}: {e}"
-                )
+                logger.error(f"✗ Error importing {medium.get('name', 'Unknown')}: {e}")
 
         logger.info(f"\n✓ Imported {len(generated)}/{len(media_list)} media")
         logger.info(f"⊘ Skipped {duplicates} duplicates")
         return generated
 
-    def import_medium(self, medium: Dict) -> Optional[Path]:
+    def import_medium(self, medium: dict) -> Path | None:
         """
         Convert a single MediaDB medium to CultureMech YAML.
 
@@ -174,8 +204,8 @@ class MediaDBImporter:
             return None
 
         # Generate unique filename
-        medium_id = medium.get('id', 'unknown')
-        name = recipe['name']
+        medium_id = medium.get("id", "unknown")
+        name = recipe["name"]
 
         # Sanitize name for filename
         clean_name = self._sanitize_filename(name)
@@ -189,12 +219,12 @@ class MediaDBImporter:
         output_path.parent.mkdir(parents=True, exist_ok=True)
 
         # Write YAML
-        with open(output_path, 'w', encoding='utf-8') as f:
+        with open(output_path, "w", encoding="utf-8") as f:
             yaml.dump(recipe, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
 
         return output_path
 
-    def _convert_to_culturemech(self, medium: Dict) -> Optional[Dict]:
+    def _convert_to_culturemech(self, medium: dict) -> dict | None:
         """
         Convert MediaDB medium to CultureMech schema.
 
@@ -204,45 +234,42 @@ class MediaDBImporter:
         Returns:
             CultureMech recipe dictionary
         """
-        if not medium.get('name'):
+        if not medium.get("name"):
             return None
 
         recipe = {
-            'name': medium['name'],
-            'original_name': medium['name'],
-            'category': 'imported',
-            'medium_type': 'DEFINED',  # All MediaDB media are chemically defined
-            'physical_state': self._infer_physical_state(medium),
-            'ingredients': self._map_ingredients(medium),
-            'preparation_steps': self._create_preparation_steps(medium),
-            'curation_history': self._create_curation_history(medium)
+            "name": medium["name"],
+            "original_name": medium["name"],
+            "category": "imported",
+            "medium_type": "DEFINED",  # All MediaDB media are chemically defined
+            "physical_state": self._infer_physical_state(medium),
+            "ingredients": self._map_ingredients(medium),
+            "preparation_steps": self._create_preparation_steps(medium),
+            "curation_history": self._create_curation_history(medium),
         }
 
         # Add media term
-        if medium.get('id'):
-            recipe['media_term'] = {
-                'preferred_term': f"MediaDB Medium {medium['id']}",
-                'term': {
-                    'id': f"MEDIADB:{medium['id']}",
-                    'label': medium['name']
-                }
+        if medium.get("id"):
+            recipe["media_term"] = {
+                "preferred_term": f"MediaDB Medium {medium['id']}",
+                "term": {"id": f"MEDIADB:{medium['id']}", "label": medium["name"]},
             }
 
         # Add notes with organism associations
         notes = self._create_notes(medium)
         if notes:
-            recipe['notes'] = notes
+            recipe["notes"] = notes
 
         # Add applications
-        recipe['applications'] = [
-            'Cultivation of genome-sequenced organisms',
-            'Metabolic modeling',
-            'Systems biology research'
+        recipe["applications"] = [
+            "Cultivation of genome-sequenced organisms",
+            "Metabolic modeling",
+            "Systems biology research",
         ]
 
         return recipe
 
-    def _map_ingredients(self, medium: Dict) -> List[Dict]:
+    def _map_ingredients(self, medium: dict) -> list[dict]:
         """
         Map MediaDB ingredients to CultureMech format.
 
@@ -254,8 +281,8 @@ class MediaDBImporter:
         """
         ingredients = []
 
-        for comp in medium.get('composition', []):
-            compound_id = comp.get('compound_id')
+        for comp in medium.get("composition", []):
+            compound_id = str(comp.get("compound_id") or "")
             if not compound_id:
                 continue
 
@@ -265,87 +292,93 @@ class MediaDBImporter:
                 logger.debug(f"Compound not found for ID: {compound_id}")
                 continue
 
-            # MediaDB uses KEGG IDs as 'name' field
-            kegg_name = str(compound.get('name', compound_id))
-            # The 'chebi_id' field actually contains compound common names, not numeric IDs
-            common_name = str(compound.get('chebi_id', kegg_name))
+            correction = MEDIADB_COMPOUND_CORRECTIONS.get(compound_id)
+            if correction:
+                common_name = correction["preferred_term"]
+                ingredient = {
+                    "preferred_term": common_name,
+                    "term": {
+                        "id": correction["chebi_id"],
+                        "label": correction["chebi_label"],
+                    },
+                }
+            else:
+                # MediaDB uses KEGG IDs as 'name' field. Its misleadingly named
+                # 'chebi_id' field actually contains common names, not identifiers.
+                kegg_name = str(compound.get("name", compound_id))
+                common_name = str(compound.get("chebi_id", kegg_name))
+                ingredient = {"preferred_term": common_name}
 
-            # Use common name as preferred term
-            ingredient = {
-                'preferred_term': common_name
-            }
-
-            # Try to get ChEBI ID from chemical mapper
-            if self.chemical_mapper:
+            # Try to get ChEBI ID from the general mapper for ordinary rows. The
+            # four corrected rows above already carry an evidence-backed identity.
+            if self.chemical_mapper and not correction:
                 mapping = self.chemical_mapper.lookup(common_name)
-                if mapping and mapping.get('chebi_id'):
-                    chebi_id = str(mapping['chebi_id'])
-                    if not chebi_id.startswith('CHEBI:'):
+                if mapping and mapping.get("chebi_id"):
+                    chebi_id = str(mapping["chebi_id"])
+                    if not chebi_id.startswith("CHEBI:"):
                         chebi_id = f"CHEBI:{chebi_id}"
 
-                    ingredient['term'] = {
-                        'id': chebi_id,
-                        'label': mapping.get('chebi_label', common_name)
+                    ingredient["term"] = {
+                        "id": chebi_id,
+                        "label": mapping.get("chebi_label", common_name),
                     }
 
             # Add concentration if available
-            concentration = comp.get('concentration')
-            unit = comp.get('unit')
+            concentration = comp.get("concentration")
+            unit = comp.get("unit")
 
             if concentration and unit:
                 # Map unit to CultureMech enums
                 unit_map = {
-                    'g/L': 'G_PER_L',
-                    'mg/L': 'MG_PER_L',
-                    'ml/L': 'ML_PER_L',
-                    'µg/L': 'MICROG_PER_L',
-                    'μg/L': 'MICROG_PER_L',
-                    'mM': 'MILLIMOLAR',
-                    'µM': 'MICROMOLAR',
-                    'μM': 'MICROMOLAR',
-                    'M': 'MOLAR',
-                    '%': 'PERCENT_W_V',
-                    'g': 'G_PER_L',
-                    'mg': 'MG_PER_L',
-                    'ml': 'ML_PER_L',
+                    "g/L": "G_PER_L",
+                    "mg/L": "MG_PER_L",
+                    "ml/L": "ML_PER_L",
+                    "µg/L": "MICROG_PER_L",
+                    "μg/L": "MICROG_PER_L",
+                    "mM": "MILLIMOLAR",
+                    "µM": "MICROMOLAR",
+                    "μM": "MICROMOLAR",
+                    "M": "MOLAR",
+                    "%": "PERCENT_W_V",
+                    "g": "G_PER_L",
+                    "mg": "MG_PER_L",
+                    "ml": "ML_PER_L",
                 }
-                standard_unit = unit_map.get(unit, 'G_PER_L')
+                standard_unit = unit_map.get(unit, "G_PER_L")
 
-                ingredient['concentration'] = {
-                    'value': str(concentration),
-                    'unit': standard_unit
-                }
+                ingredient["concentration"] = {"value": str(concentration), "unit": standard_unit}
 
             # Add cross-references as notes
             xrefs = []
-            if compound.get('kegg_id'):
+            if correction:
+                xrefs.append(f"KEGG.COMPOUND:{correction['kegg_compound']}")
+            if compound.get("kegg_id"):
                 xrefs.append(f"KEGG:{compound['kegg_id']}")
-            if compound.get('bigg_id'):
+            if compound.get("bigg_id"):
                 xrefs.append(f"BiGG:{compound['bigg_id']}")
-            if compound.get('seed_id'):
+            if compound.get("seed_id"):
                 xrefs.append(f"SEED:{compound['seed_id']}")
-            if compound.get('pubchem_id'):
+            if compound.get("pubchem_id"):
                 xrefs.append(f"PubChem:{compound['pubchem_id']}")
 
             if xrefs:
-                ingredient['notes'] = f"Cross-references: {', '.join(xrefs)}"
+                ingredient["notes"] = f"Cross-references: {', '.join(xrefs)}"
 
             ingredients.append(ingredient)
 
         # Fallback if no ingredients found
         if not ingredients:
-            ingredients = [{
-                'preferred_term': 'See source for composition',
-                'concentration': {
-                    'value': 'variable',
-                    'unit': 'G_PER_L'
-                },
-                'notes': 'Full composition available at MediaDB'
-            }]
+            ingredients = [
+                {
+                    "preferred_term": "See source for composition",
+                    "concentration": {"value": "variable", "unit": "G_PER_L"},
+                    "notes": "Full composition available at MediaDB",
+                }
+            ]
 
         return ingredients
 
-    def _create_preparation_steps(self, medium: Dict) -> List[Dict]:
+    def _create_preparation_steps(self, medium: dict) -> list[dict]:
         """
         Create preparation steps for defined media.
 
@@ -357,25 +390,25 @@ class MediaDBImporter:
         """
         steps = [
             {
-                'step_number': 1,
-                'action': 'DISSOLVE',
-                'description': 'Dissolve all ingredients in distilled water to specified concentrations'
+                "step_number": 1,
+                "action": "DISSOLVE",
+                "description": "Dissolve all ingredients in distilled water to specified concentrations",
             },
             {
-                'step_number': 2,
-                'action': 'ADJUST_PH',
-                'description': 'Adjust pH if specified in original formulation'
+                "step_number": 2,
+                "action": "ADJUST_PH",
+                "description": "Adjust pH if specified in original formulation",
             },
             {
-                'step_number': 3,
-                'action': 'FILTER_STERILIZE',
-                'description': 'Sterilize by filtration (0.22 μm) to preserve heat-sensitive components'
-            }
+                "step_number": 3,
+                "action": "FILTER_STERILIZE",
+                "description": "Sterilize by filtration (0.22 μm) to preserve heat-sensitive components",
+            },
         ]
 
         return steps
 
-    def _infer_physical_state(self, medium: Dict) -> str:
+    def _infer_physical_state(self, medium: dict) -> str:
         """
         Infer physical state from name.
 
@@ -385,16 +418,16 @@ class MediaDBImporter:
         Returns:
             Physical state (LIQUID, SOLID_AGAR)
         """
-        name = medium.get('name', '').lower()
+        name = medium.get("name", "").lower()
 
         # Check for agar
-        if 'agar' in name:
-            return 'SOLID_AGAR'
+        if "agar" in name:
+            return "SOLID_AGAR"
 
         # Default to liquid for defined media
-        return 'LIQUID'
+        return "LIQUID"
 
-    def _infer_category(self, medium: Dict) -> str:
+    def _infer_category(self, medium: dict) -> str:
         """
         Determine media category for file organization.
 
@@ -404,19 +437,19 @@ class MediaDBImporter:
         Returns:
             Category name (bacterial, fungal, archaea, specialized)
         """
-        name = medium.get('name', '').lower()
+        name = medium.get("name", "").lower()
 
         # Category keywords
-        if any(term in name for term in ['fungi', 'fungal', 'yeast', 'mold']):
-            return 'fungal'
-        elif any(term in name for term in ['archaea', 'archaeal']):
-            return 'archaea'
-        elif any(term in name for term in ['marine', 'seawater']):
-            return 'specialized'
+        if any(term in name for term in ["fungi", "fungal", "yeast", "mold"]):
+            return "fungal"
+        elif any(term in name for term in ["archaea", "archaeal"]):
+            return "archaea"
+        elif any(term in name for term in ["marine", "seawater"]):
+            return "specialized"
         else:
-            return 'bacterial'  # Default (most MediaDB media are bacterial)
+            return "bacterial"  # Default (most MediaDB media are bacterial)
 
-    def _create_notes(self, medium: Dict) -> str:
+    def _create_notes(self, medium: dict) -> str:
         """
         Create notes with organism associations and source info.
 
@@ -433,13 +466,13 @@ class MediaDBImporter:
 
         # Add organism associations if available
         # Note: This would need to be populated during fetch if available
-        if medium.get('organisms'):
-            org_names = ', '.join(medium['organisms'])
+        if medium.get("organisms"):
+            org_names = ", ".join(medium["organisms"])
             notes.append(f"Organisms: {org_names}")
 
-        return ' '.join(notes)
+        return " ".join(notes)
 
-    def _create_curation_history(self, medium: Dict) -> List[Dict]:
+    def _create_curation_history(self, medium: dict) -> list[dict]:
         """
         Create curation history record.
 
@@ -451,14 +484,14 @@ class MediaDBImporter:
         """
         return [
             {
-                'timestamp': datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z'),
-                'curator': self.curator,
-                'action': 'Imported from MediaDB',
-                'notes': (
+                "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+                "curator": self.curator,
+                "action": "Imported from MediaDB",
+                "notes": (
                     f"Source: MediaDB (Institute for Systems Biology), "
                     f"Medium ID: {medium.get('id', 'unknown')}, "
                     f"Reference: Mazumdar et al. (2014) PLOS One"
-                )
+                ),
             }
         ]
 
@@ -473,19 +506,19 @@ class MediaDBImporter:
             Sanitized filename-safe string
         """
         # Replace non-alphanumeric characters with underscore
-        clean_name = ''
+        clean_name = ""
         for char in name:
-            if char.isalnum() or char in ['-', '.']:
+            if char.isalnum() or char in ["-", "."]:
                 clean_name += char
             else:
-                clean_name += '_'
+                clean_name += "_"
 
         # Collapse multiple underscores
-        while '__' in clean_name:
-            clean_name = clean_name.replace('__', '_')
+        while "__" in clean_name:
+            clean_name = clean_name.replace("__", "_")
 
         # Remove leading/trailing underscores
-        clean_name = clean_name.strip('_')
+        clean_name = clean_name.strip("_")
 
         # Limit length
         if len(clean_name) > 50:
@@ -493,7 +526,7 @@ class MediaDBImporter:
 
         return clean_name
 
-    def _check_duplicate(self, medium: Dict) -> bool:
+    def _check_duplicate(self, medium: dict) -> bool:
         """
         Check if medium already exists in knowledge base (cached version).
 
@@ -503,7 +536,7 @@ class MediaDBImporter:
         Returns:
             True if duplicate found, False otherwise
         """
-        name = medium.get('name', '').lower()
+        name = medium.get("name", "").lower()
 
         # Check for exact name match
         if name in self.existing_media_names:
@@ -543,22 +576,22 @@ class MediaDBImporter:
 
         return len(intersection) / len(union)
 
-    def get_statistics(self) -> Dict:
+    def get_statistics(self) -> dict:
         """Get statistics about MediaDB import."""
         stats = {
-            'total_media': len(self.media),
-            'total_compounds': len(self.compounds),
-            'total_organisms': len(self.organisms),
-            'media_by_category': {}
+            "total_media": len(self.media),
+            "total_compounds": len(self.compounds),
+            "total_organisms": len(self.organisms),
+            "media_by_category": {},
         }
 
         # Count by category
         for medium in self.media:
             category = self._infer_category(medium)
-            stats['media_by_category'][category] = stats['media_by_category'].get(category, 0) + 1
+            stats["media_by_category"][category] = stats["media_by_category"].get(category, 0) + 1
 
         # All MediaDB media are DEFINED
-        stats['all_defined'] = True
+        stats["all_defined"] = True
 
         return stats
 
@@ -567,41 +600,29 @@ def main():
     """CLI entry point."""
     import argparse
 
-    parser = argparse.ArgumentParser(
-        description="Import MediaDB media to CultureMech"
-    )
+    parser = argparse.ArgumentParser(description="Import MediaDB media to CultureMech")
     parser.add_argument(
-        "-i", "--input",
+        "-i",
+        "--input",
         type=Path,
         default="data/raw/mediadb",
-        help="Input directory with MediaDB raw JSON files (Layer 1: data/raw/mediadb/)"
+        help="Input directory with MediaDB raw JSON files (Layer 1: data/raw/mediadb/)",
     )
     parser.add_argument(
-        "-o", "--output",
+        "-o",
+        "--output",
         type=Path,
         default="data/normalized_yaml",
-        help="Output directory for normalized YAML files (Layer 3: data/normalized_yaml/)"
+        help="Output directory for normalized YAML files (Layer 3: data/normalized_yaml/)",
     )
-    parser.add_argument(
-        "-l", "--limit",
-        type=int,
-        help="Limit number of media to import"
-    )
-    parser.add_argument(
-        "--stats",
-        action="store_true",
-        help="Print statistics only (no import)"
-    )
+    parser.add_argument("-l", "--limit", type=int, help="Limit number of media to import")
+    parser.add_argument("--stats", action="store_true", help="Print statistics only (no import)")
     parser.add_argument(
         "--microbe-media-param",
         type=Path,
-        help="Path to MicrobeMediaParam mappings for ChEBI lookup"
+        help="Path to MicrobeMediaParam mappings for ChEBI lookup",
     )
-    parser.add_argument(
-        "--mediadive",
-        type=Path,
-        help="Path to MediaDive data for ChEBI lookup"
-    )
+    parser.add_argument("--mediadive", type=Path, help="Path to MediaDive data for ChEBI lookup")
 
     args = parser.parse_args()
 
@@ -609,14 +630,11 @@ def main():
     chemical_mapper = None
     if args.microbe_media_param or args.mediadive:
         chemical_mapper = ChemicalMapper(
-            microbe_media_param_dir=args.microbe_media_param,
-            mediadive_data_dir=args.mediadive
+            microbe_media_param_dir=args.microbe_media_param, mediadive_data_dir=args.mediadive
         )
 
     importer = MediaDBImporter(
-        mediadb_data_dir=args.input,
-        output_dir=args.output,
-        chemical_mapper=chemical_mapper
+        mediadb_data_dir=args.input, output_dir=args.output, chemical_mapper=chemical_mapper
     )
 
     if args.stats:

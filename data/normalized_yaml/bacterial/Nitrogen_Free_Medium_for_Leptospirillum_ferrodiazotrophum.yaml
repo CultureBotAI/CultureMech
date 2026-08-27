@@ -5,6 +5,7 @@ medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
 id: CultureMech:015436
+id_lineage_token: legacy:24127a2c4151612afce25675641f9ae3a3bc9bed063ecc869a1d58edda18c481
 ingredients:
 - preferred_term: Iron(II) sulfate
   concentration:

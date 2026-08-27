@@ -50,17 +50,30 @@ curation_history:
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
     category->lowercase=1
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_ccap_instruction_rows.py
+  action: REPAIRED_CCAP_INSTRUCTION_ROWS
+  changes: ingredients 6 -> 6
+  notes: Repaired preparation text and nested-recipe flattening against CCAP MR_C_Modified.pdf.
+    Moved process statements to preparation_steps and restored source-asserted components
+    or constituent-medium references where applicable.
 references:
 - reference: CCAP:C_Modified
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_C_Modified.pdf
 ingredients:
-- preferred_term: Add to 1000 ml of distilled water
-  notes: Ontology mapping not yet available; From CCAP Medium MR_C_Modified.pdf; Curated
-    from CCAP Medium MR_C_Modified.pdf specification
+- preferred_term: Na2EDTA
   concentration:
     value: '0.75'
     unit: G_PER_L
   source: CCAP Medium MR_C_Modified.pdf
+  notes: Na2EDTA in the source-defined trace-element stock; this is a stock composition,
+    not a final-medium concentration.
+  term:
+    id: CHEBI:64734
+    label: EDTA disodium salt (anhydrous)
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
+    label: EDTA disodium salt (anhydrous)
 - preferred_term: FeCl3 x 6 H2O
   term:
     id: CHEBI:86254
@@ -108,8 +121,8 @@ ingredients:
     specification
 - preferred_term: CoCl2 x 6 H2O
   term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -141,3 +154,20 @@ data_quality_flags:
 - ingredients_curated
 - curation_method:automated_expert_mapping
 original_name: C Medium, Modified
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve Tris in 900 mL distilled water, then add the remaining final-medium
+    components.
+- step_number: 2
+  action: MIX
+  description: Bring to 1 L with distilled water.
+- step_number: 3
+  action: ADD_AGAR
+  description: For an agar formulation, add 15 g/L Bacteriological Agar.
+- step_number: 4
+  action: ADJUST_PH
+  description: Ensure the final pH is 7.5.
+- step_number: 5
+  action: AUTOCLAVE
+  description: Autoclave at 15 psi for 15 minutes.

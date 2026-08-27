@@ -129,15 +129,15 @@ ingredients:
     label: Na2SeO4
 - preferred_term: Vitamin B12
   term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
   concentration:
     value: '0.0001495049'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 4.95049e-05, 0.0001]'
   mediaingredientmech_chebi_term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806

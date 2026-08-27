@@ -6,8 +6,11 @@ composition_type: UNDEFINED
 physical_state: LIQUID
 description: Algae culture medium from SAG Culture Collection (Göttingen). Suitable
   for freshwater algae cultivation. Recipe available in PDF format.
-notes: Full recipe available at http://sagdb.uni-goettingen.de/culture_media/08 Porphyridium
+notes: 'Full recipe available at http://sagdb.uni-goettingen.de/culture_media/08 Porphyridium
   Medium.pdf
+
+  Composition verified against https://sagdb.uni-goettingen.de/culture_media/08%20Porphyridium%20Medium.pdf
+  on 2026-08-25 (SHA-256 4af6add4c928721374b38132933f522d01fe62230c2b29747ed59c4291cc69d1).'
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -48,10 +51,139 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_sag_missing_compositions.py
+  action: RESTORED_SAG_SOURCE_COMPOSITION
+  changes: ingredients 0 -> 2; solutions 0 -> 6
+  notes: Restored the formulation from the reviewed SAG PDF, preserving final-medium
+    and stock-solution boundaries. Calculated stock concentrations are documented
+    in-place. Ingredient identities were selected from the MediaIngredientMech SSSOM.
 references:
 - reference: SAG:Porphyridium
 - reference: http://sagdb.uni-goettingen.de/culture_media/08 Porphyridium Medium.pdf
-ingredients: []
-data_quality_flags:
-- incomplete_composition
+ingredients:
+- preferred_term: Deionized or distilled water
+  concentration:
+    value: '390'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Filtered seawater
+  concentration:
+    value: '500'
+    unit: ML_PER_L
+  term:
+    id: MICRO:0001773
+    label: filtered seawater
 original_name: Porphyridium
+solutions:
+- preferred_term: KNO3 stock solution
+  composition:
+  - preferred_term: KNO3
+    concentration:
+      value: '10'
+      unit: G_PER_L
+    term:
+      id: CHEBI:63043
+      label: potassium nitrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63043
+      label: potassium nitrate
+  concentration:
+    value: '20'
+    unit: ML_PER_L
+- preferred_term: K2HPO4 stock solution
+  composition:
+  - preferred_term: K2HPO4
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+  concentration:
+    value: '20'
+    unit: ML_PER_L
+- preferred_term: MgSO4 x 7 H2O stock solution
+  composition:
+  - preferred_term: MgSO4 x 7 H2O
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+  concentration:
+    value: '20'
+    unit: ML_PER_L
+- preferred_term: Yeast extract stock solution
+  composition:
+  - preferred_term: Yeast extract
+    concentration:
+      value: '100'
+      unit: G_PER_L
+    term:
+      id: FOODON:03315426
+      label: yeast extract
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+- preferred_term: Bacto-tryptone stock solution
+  composition:
+  - preferred_term: Bacto-tryptone
+    concentration:
+      value: '100'
+      unit: G_PER_L
+    term:
+      id: MICRO:0000182
+      label: tryptone
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+- preferred_term: Soil extract
+  composition:
+  - preferred_term: Garden or leaf soil
+    concentration:
+      value: '1'
+      unit: VARIABLE
+    term:
+      id: ENVO:00002263
+      label: garden soil
+    notes: Fill one third of a vessel; the source gives a geometric amount.
+  - preferred_term: Deionized or distilled water
+    concentration:
+      value: '1'
+      unit: VARIABLE
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+    notes: Add until water stands 5 cm above the soil.
+  concentration:
+    value: '30'
+    unit: ML_PER_L
+  notes: Steam for 1 hour twice at a 24-hour interval, decant and centrifuge, then
+    autoclave aliquots for 20 minutes at 121 C. Concentrations are unspecified by
+    the source.
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare the stock solutions and combine them at the stated amounts.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 minutes following the SAG general preparation
+    guidance.
+sterilization:
+  method: AUTOCLAVE

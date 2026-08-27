@@ -1,7 +1,7 @@
 id: CultureMech:015787
 name: Xantho MME glucose casamino
-medium_type: DEFINED
-composition_type: DEFINED
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Potassium phosphate dibasic

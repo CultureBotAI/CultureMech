@@ -86,8 +86,8 @@ composition:
     id: mediadive.compound:671
     label: L-Cysteine
   chebi_term:
-    id: CHEBI:15356
-    label: cysteine
+    id: CHEBI:17561
+    label: L-cysteine
     confidence: 0.9
     match_type: manual_curated
 - preferred_term: Resazurin

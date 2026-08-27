@@ -5,6 +5,7 @@ medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
 id: CultureMech:015432
+id_lineage_token: legacy:01a2b83a07a5b3fa0e2a859e150728503c8d34129d9ba9a67ba72da664a5fb9f
 ingredients:
 - preferred_term: Glycerol
   concentration:
@@ -71,21 +72,21 @@ ingredients:
     value: '0.26'
     unit: G_PER_L
   term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Calcium chloride dihydrate
   concentration:
     value: '2.9'
     unit: MG_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:3312
-    label: calcium dichloride
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
   term:
-    id: CHEBI:3312
-    label: calcium dichloride
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: L-Cysteine
   concentration:
     value: '0.5'

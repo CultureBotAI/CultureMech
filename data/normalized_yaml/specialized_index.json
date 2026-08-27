@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-19T22:22:03.982346+00:00",
+  "generated": "2026-08-26T06:19:59.917942+00:00",
   "category": "specialized",
   "count": 455,
   "recipes": {
@@ -1580,7 +1580,7 @@
     "CultureMech:015402": {
       "name": "marine_medium_with_thiosulfate",
       "filename": "marine_medium_with_thiosulfate.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 14,
       "id": "CultureMech:015402",
       "source_id": "mediadive.medium:J376",
       "source": "MediaDive",

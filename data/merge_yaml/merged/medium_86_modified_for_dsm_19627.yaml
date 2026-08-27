@@ -76,14 +76,14 @@ ingredients:
     label: NaNO3
 - preferred_term: Na2HPO4 x 2 H2O
   term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
+    id: CHEBI:91258
+    label: disodium hydrogenphosphate dihydrate
   concentration:
     value: '0.14'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
+    id: CHEBI:91258
+    label: disodium hydrogenphosphate dihydrate
 - preferred_term: FeCl3 x 6 H2O
   term:
     id: CHEBI:86254
@@ -146,14 +146,14 @@ ingredients:
     label: sodium molybdate dihydrate
 - preferred_term: CoCl2 x 6 H2O
   term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
   concentration:
     value: '4.6e-05'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
 - preferred_term: Tryptone
   concentration:
     value: '1'

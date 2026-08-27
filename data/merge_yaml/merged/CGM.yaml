@@ -116,8 +116,8 @@ ingredients:
   notes: From CCAP Medium MR_CGM.pdf; Curated from CCAP Medium MR_CGM.pdf specification
 - preferred_term: CoCl2 x 6 H2O
   term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0

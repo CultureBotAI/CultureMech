@@ -89,16 +89,16 @@ Deliberately split:
 
 ## Where the schema lives
 
-Two copies, on purpose:
+Authority and consumer copies are separate on purpose:
 
-- **Canonical**: `culturebotai-claw/shared/history/history.yaml`, with the
-  scaffolder at `culturebotai-claw/src/kg_microbe_history/`.
+- **Canonical**:
+  `culturebotai-claw/src/kg_microbe_governance/artifacts/schema/history.yaml`.
 - **Vendored here**: `src/culturemech/schema/history.yaml`, byte-identical.
 
 Check that identity rather than trusting this file — with a claw checkout:
 
 ```bash
-diff "${CLAW_SRC:-../culturebotai-claw/src}/../shared/history/history.yaml" \
+diff "${CLAW_SRC:-../culturebotai-claw/src}/kg_microbe_governance/artifacts/schema/history.yaml" \
      src/culturemech/schema/history.yaml && echo "in sync"
 ```
 
@@ -108,18 +108,17 @@ field — which is the argument against a hash in prose at all: nothing recomput
 it, so it decays into a confident false negative. A runnable command cannot go
 stale.
 
-The vendored copy exists so validation has **no dependency on claw**, which is
-private — a public repo's CI cannot check it out without a token. `just
-validate-history` and the `curation-history` workflow both use the local copy and
-work with no claw checkout at all.
+The vendored copy exists so validation has **no dependency on a claw checkout**.
+`just validate-history` and the `curation-history` workflow both use the local
+copy. The public, pinned claw revision is consulted only by the separate
+`vendored-sync` governance gate.
 
 Only `just new-history` needs claw, via `CLAW_SRC` (default:
 `../culturebotai-claw/src`). That is a dev-time scaffolder, and anyone writing
 curation records has claw checked out.
 
-Changing the schema means changing the canonical copy and re-vendoring here — the
-same hub-and-spoke rule as `mech_shared.yaml`. Nothing automated enforces that rule
-for this file yet. CultureMech has no vendored-drift check of its own to append it
-to, and the obvious shortcut does not work: the canonical copy lives in claw, which
-is private, so a tokenless `raw.githubusercontent` fetch cannot reach it. Until
-that is solved, the `diff` above is the check, run by hand.
+Changing the schema means changing claw's canonical
+`src/kg_microbe_governance/artifacts/schema/history.yaml`, updating its artifact
+manifest, merging a reviewed claw commit, and coordinating that immutable pin
+across the five Mechs. The unfiltered `vendored-sync` workflow verifies this
+copy byte-for-byte against the public pinned manifest on every PR and main push.

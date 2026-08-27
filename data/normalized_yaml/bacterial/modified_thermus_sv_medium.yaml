@@ -24,14 +24,14 @@ ingredients:
   notes: Copied from referenced JCM Medium 624
 - preferred_term: Sodium glutamate monohydrate
   term:
-    id: CHEBI:64243
-    label: monosodium L-glutamate
+    id: CHEBI:232425
+    label: monosodium L-glutamate hydrate
   concentration:
     value: '0.990099'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:64243
-    label: monosodium L-glutamate
+    id: CHEBI:232425
+    label: monosodium L-glutamate hydrate
   notes: Copied from referenced JCM Medium 624
 - preferred_term: NaCl
   term:

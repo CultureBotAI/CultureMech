@@ -10,13 +10,100 @@ media_term:
   term:
     id: mediadive.medium:J260
     label: EG MEDIUM WITH 10% NaCl
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=260'
-ingredients: []
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=260
+
+  Composition recovery source: https://togomedium.org/medium/M252 (TOGO snapshot of
+  JCM medium J260).'
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '950'
+    unit: ML_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: NaCl
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Na2HPO4
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+- preferred_term: L--Cystine
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:16283
+    label: L-cystine
+- preferred_term: Glucose
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:17234
+    label: glucose
+- preferred_term: Soluble starch
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Undefined component'
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Proteose peptone No. 3 (BD-Difco)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: L--Cysteine・HCl・H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Organic compound, Simple component, Defined component'
+- preferred_term: Lab--Lemco powder (Oxoid)
+  concentration:
+    value: '2.4'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
 preparation_steps:
 - step_number: 1
+  action: ADJUST_PH
+  description: Add L--cystine to 50 ml of 1 N HCl and mix thoroughly. Add the remaining
+    components and bring volume to 950 ml. Adjust pH to 7.6--7.8. After autoclaving
+    and then cooling to 50C, aseptically add 50.0 ml of horse blood. Mix thoroughly
+    and pour into sterile petri dishes or distribute into sterile tubes.
+- step_number: 2
   action: MIX
-  description: Use EG medium (see Medium No. 14) with 100 g/L (final) NaCl, and omit
-    horse blood.
+  description: Use EG medium (see Medium No. [14]) with 100 g/L (final) NaCl, and
+    omit horse blood.
 applications:
 - Microbial cultivation
 curation_history:
@@ -53,6 +140,23 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
-data_quality_flags:
-- incomplete_composition
-- source_information_unavailable
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_jcm_missing_from_togo.py
+  action: RECOVERED_JCM_COMPOSITION_FROM_TOGO
+  changes: ingredients 0 -> 11; solutions 0 -> 1; preparation_steps 1 -> 2; removed
+    obsolete composition/source flags
+  notes: Recovered JCM J260 from source-equivalent TOGO M252. Preserved final ingredients
+    and stock-solution boundaries; did not flatten referenced media or stocks.
+- timestamp: '2026-08-26T02:12:54.934441+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 6 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
+solutions:
+- preferred_term: HCl
+  composition: []
+  concentration:
+    value: '50'
+    unit: ML_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Solution'

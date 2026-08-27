@@ -48,8 +48,8 @@ composition:
     id: mediadive.compound:2005
     label: KF
   chebi_term:
-    id: CHEBI:73605
-    label: Lys-Phe
+    id: CHEBI:66872
+    label: potassium fluoride
     confidence: 1.0
     match_type: exact_match
 - preferred_term: KCl

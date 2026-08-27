@@ -17,6 +17,25 @@ version: 1.0.0
 
 **Scope**: Integration between MediaIngredientMech (source of truth for ingredient hierarchy) and CultureMech (consumer of hierarchy data).
 
+## Canonical ingredient identity resolution
+
+New publication consumers must use
+`culturemech.ingredients.mim_label_index`, backed by the immutable packaged MIM
+`label_index.csv` and adjacent pin metadata. Run `just check-mim-label-index`
+offline; preview a full-SHA dependency bump with
+`just refresh-mim-label-index <sha>` and apply it only with `--apply`.
+
+The resolver uses exact labels before a conservative whitespace/hyphen/underscore
+fallback, preserves hydrate counts and chemical punctuation, obeys MIM's
+per-label ambiguity verdict, and never fuzzy-matches. MIM `identifier` is the
+semantic value; `ontology_id` is diagnostic only. Local terms are fallback,
+except that explicit MIM `UNMAPPED` suppresses them.
+
+The loader/linker and mutating enrichment actions below are legacy migration
+tools. They may still be used for their documented hierarchy fields, but their
+moving-checkout, first-wins synonym, and fuzzy matching must not decide KGX or
+other published ingredient identity.
+
 ## When to Use This Skill
 
 Use this skill when:

@@ -1,0 +1,5 @@
+culturemech_id	lineage_signature	display_name	lifecycle_status	successor_ids	reason
+CultureMech:000190	UNKNOWN	bg11	DELETED		Legacy SAG BG11 record was overwritten by a separately issued CultureBotHT import; identity with the replacement was not established.
+CultureMech:000306	UNKNOWN	test_medium_123	DELETED		Spurious test fixture removed in CultureMech issue 237.
+CultureMech:003009	UNKNOWN	nutrient_broth	DELETED		Legacy JCM J663 record was overwritten by a separately issued CultureBotHT import; identity with the replacement was not established.
+CultureMech:015406	UNKNOWN	marine_broth_2216	DELETED		Legacy JCM J41 record was overwritten by a separately issued CultureBotHT import; identity with the replacement was not established.

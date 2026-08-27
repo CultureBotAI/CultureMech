@@ -1,10 +1,11 @@
 id: https://w3id.org/culturemech/mapped-ingredients
 name: mapped-ingredients-schema
-title: Mapped Media Ingredients Schema
+title: Mapped Recipe Ingredients Schema
 description: >-
-  LinkML schema for aggregating successfully mapped media ingredients with proper ontology terms.
-  This provides statistics and tracking for ingredients that have been successfully mapped to
-  ontology terms (CHEBI, FOODON, etc.).
+  LinkML schema for deterministic summaries of direct recipe-ingredient
+  occurrences whose semantic identity was resolved through the pinned
+  MediaIngredientMech label index or an explicitly reported local fallback.
+  Identities are not CHEBI-only and upstream source identifiers remain separate.
 
 license: MIT
 see_also:
@@ -25,30 +26,30 @@ imports:
 classes:
   MappedIngredientsCollection:
     tree_root: true
-    description: Root container for all successfully mapped media ingredients
+    description: >-
+      Root container derived from the complete, uncapped direct-occurrence
+      population. It has no wall-clock generation field so identical inputs
+      produce byte-identical output.
     attributes:
-      generation_date:
-        range: datetime
-        description: Timestamp when this aggregation was generated
       total_mapped_count:
         range: integer
-        description: Total number of unique mapped ingredients found
+        description: Total number of mapped ingredient summary rows
       total_instances:
         range: integer
-        description: Total instances of mapped ingredients across all media
-      media_count:
+        description: Total direct occurrence rows represented by this collection
+      recipe_count:
         range: integer
-        description: Number of media containing mapped ingredients
+        description: Number of root recipes containing a mapped occurrence
       mapped_ingredients:
         range: MappedIngredient
         multivalued: true
         inlined_as_list: true
-        description: List of all mapped ingredients with ontology terms
+        description: List of all mapped ingredients with selected identities
       summary_by_category:
         range: MappedCategorySummary
         multivalued: true
         inlined_as_list: true
-        description: Summary statistics by media category
+        description: Summary statistics by root recipe category
       summary_by_ontology:
         range: OntologySummary
         multivalued: true
@@ -56,52 +57,114 @@ classes:
         description: Summary statistics by ontology source
 
   MappedIngredient:
-    description: A media ingredient with proper ontology mapping
+    description: A direct recipe ingredient with a selected semantic identity
     attributes:
       preferred_term:
+        required: true
+        description: Canonical display term for the selected identity
+      resolved_identifier:
         identifier: true
-        description: The preferred term label for the ingredient
+        required: true
+        description: >-
+          Semantic identity selected by GroundingDecision.identifier. May be
+          CHEBI, FOODON, CAS, MeSH, or a curated local identifier.
       ontology_id:
-        description: Ontology term ID (e.g., CHEBI:12345, FOODON:00001234)
+        description: >-
+          Legacy field retained for compatibility. It must not be populated
+          from MIM's diagnostic ontology_id in place of resolved_identifier.
       ontology_label:
-        description: Official label from the ontology
+        description: Human-readable label associated with resolved_identifier
       ontology_source:
         range: OntologySourceEnum
         description: Source ontology for this term
       occurrence_count:
         range: integer
-        description: Number of times this ingredient appears across all media
-      media_occurrences:
-        range: MappedMediaOccurrence
+        description: Number of complete direct-occurrence rows in this group
+      distinct_recipe_count:
+        range: integer
+        description: >-
+          Number of unique recipe_id values in the complete occurrence group;
+          never derived from a retained example list
+      recipe_occurrences:
+        range: MappedRecipeOccurrence
         multivalued: true
         inlined_as_list: true
-        description: List of media where this ingredient appears
+        description: Complete, uncapped direct occurrences in deterministic order
       concentration_info:
         range: MappedConcentrationInfo
         multivalued: true
         inlined_as_list: true
         description: Concentration values found for this ingredient
       synonyms:
-        description: Alternative names or synonyms found in media
+        description: Alternative names or synonyms found in recipe occurrences
         multivalued: true
       mapping_quality:
         range: MappingQualityEnum
         description: Quality assessment of the mapping
 
-  MappedMediaOccurrence:
-    description: Reference to a specific medium containing the mapped ingredient
+  MappedRecipeOccurrence:
+    description: >-
+      One direct root-recipe occurrence. The stable coordinate is the tuple
+      (recipe_id, component_field, component_index).
     attributes:
-      medium_name:
+      recipe_id:
         required: true
-        description: Name of the medium
-      medium_category:
+        pattern: "^CultureMech:(?!000000)\\d{6}$"
+        description: Stable CultureMech identifier of the root recipe
+      recipe_label:
+        required: true
+        description: >-
+          Root preferred_term, with name used only for legacy MediaRecipe-shaped
+          records
+      recipe_category:
         range: MediaCategoryEnum
-        description: Category of the medium (algae, bacterial, etc.)
-      medium_file_path:
-        description: Relative path to the medium YAML file
-      ingredient_index:
+        description: Category of the root recipe when available
+      source_path:
+        required: true
+        description: Input-root-relative POSIX path to the source YAML
+      component_field:
+        range: ComponentFieldEnum
+        required: true
+        description: Root field traversed according to the record's schema shape
+      component_index:
         range: integer
-        description: Index of this ingredient in the medium's ingredient list
+        required: true
+        minimum_value: 0
+        description: Zero-based index in component_field
+      preferred_term:
+        required: true
+        description: Source ingredient label used as the MIM resolver query
+      resolved_identifier:
+        required: true
+        description: Semantic identity selected by the shared MIM resolver
+      source_compound_id:
+        description: >-
+          Upstream mediadive.compound identifier, preserved as provenance and
+          never promoted to semantic identity
+      local_identifier:
+        description: Local chebi_term or non-MediaDive term considered as fallback
+      resolution_source:
+        range: ResolutionSourceEnum
+        required: true
+        description: Resolver path that selected resolved_identifier
+      mim_preferred_term:
+        description: Preferred term reported by the matched MIM identity
+      mim_matched_label:
+        description: Exact MIM label-index label that matched the recipe label
+      mim_match_type:
+        range: MIMMatchTypeEnum
+        description: Which MIM label surface matched
+      mim_mapping_status:
+        range: MIMMappingStatusEnum
+        description: Mapping status carried by the matched MIM row
+      mim_ambiguity:
+        description: MIM label-group ambiguity classification
+      mim_ontology_id_diagnostic:
+        description: >-
+          MIM publisher diagnostic only; never substituted for
+          resolved_identifier
+      grounding_reason:
+        description: Human-readable explanation emitted by GroundingDecision
 
   MappedConcentrationInfo:
     description: Concentration information for a mapped ingredient
@@ -109,21 +172,21 @@ classes:
       value:
         description: Concentration value
       unit:
-        range: ConcentrationUnitEnum
-        description: Unit of measurement
+        range: string
+        description: Canonical CultureMech concentration unit value
       notes:
         description: Additional notes about concentration
 
   MappedCategorySummary:
-    description: Summary statistics for mapped ingredients in a media category
+    description: Summary statistics for mapped ingredients in a recipe category
     attributes:
       category:
         range: MediaCategoryEnum
         required: true
-        description: Media category name
-      media_with_mapped:
+        description: Root recipe category name
+      recipes_with_mapped:
         range: integer
-        description: Number of media with mapped ingredients in this category
+        description: Number of root recipes with mapped ingredients in this category
       total_mapped_instances:
         range: integer
         description: Total mapped ingredient instances in this category
@@ -149,6 +212,52 @@ classes:
         description: Percentage of all mapped ingredients from this ontology
 
 enums:
+  ComponentFieldEnum:
+    description: Root component field selected by recipe schema shape
+    permissible_values:
+      ingredients:
+        description: Direct components of a MediaRecipe-shaped root record
+      composition:
+        description: Direct components of a SolutionRecipe-shaped root record
+
+  ResolutionSourceEnum:
+    description: Structured outcome class returned by the shared MIM resolver
+    permissible_values:
+      mim_exact:
+        description: Exact label group selected a trusted MIM identity
+      mim_normalized:
+        description: Conservative weak normalization selected a trusted MIM identity
+      authoritative_unmapped:
+        description: MIM explicitly declares the matched label unmapped
+      local_fallback:
+        description: MIM had no verdict and an explicit local identity was retained
+      ambiguous_local_fallback:
+        description: MIM was ambiguous and an explicit local identity was retained
+      ambiguous:
+        description: MIM was ambiguous and no identity was selected
+      not_found:
+        description: No MIM label or usable local identity was found
+
+  MIMMatchTypeEnum:
+    description: Label surface in the MIM index that matched the recipe label
+    permissible_values:
+      preferred_term:
+        description: MIM preferred term
+      synonym:
+        description: MIM synonym
+      ontology_label:
+        description: Ontology label indexed by MIM
+
+  MIMMappingStatusEnum:
+    description: Mapping lifecycle status carried by the matched MIM row
+    permissible_values:
+      MAPPED:
+        description: Live mapped MIM row
+      UNMAPPED:
+        description: Live intentionally-unmapped MIM row
+      REJECTED:
+        description: Rejected or merged MIM tombstone row
+
   MappingQualityEnum:
     permissible_values:
       DIRECT_MATCH:
@@ -174,6 +283,8 @@ enums:
         description: Fungal culture media
       SPECIALIZED:
         description: Specialized or mixed culture media
+      IMPORTED:
+        description: Imported recipe whose source domain has not been assigned
       UNKNOWN:
         description: Category not specified
 

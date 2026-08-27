@@ -15,14 +15,14 @@ notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_
 ingredients:
 - preferred_term: Na2HPO4 x 2 H2O
   term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
+    id: CHEBI:91258
+    label: disodium hydrogenphosphate dihydrate
   concentration:
     value: '79'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
+    id: CHEBI:91258
+    label: disodium hydrogenphosphate dihydrate
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -116,14 +116,14 @@ ingredients:
     label: manganese(II) chloride tetrahydrate
 - preferred_term: CoCl2 x 6 H2O
   term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
   concentration:
     value: '0.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
 - preferred_term: (NH4)6Mo7O24 x 4 H2O
   concentration:
     value: '0.5'

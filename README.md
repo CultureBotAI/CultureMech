@@ -72,6 +72,7 @@ just test-integration   # optional checkout/service boundaries
 just test               # full suite with coverage floor
 just validate-strict
 just assign-ids-check
+just check-id-catalog
 ```
 
 Build the browser and recipe pages:
@@ -106,6 +107,7 @@ Useful references:
 - [Schema](src/culturemech/schema/culturemech.yaml)
 - [Quick Reference](docs/QUICK_REFERENCE.md)
 - [Data Layers](docs/DATA_LAYERS.md)
+- [Recipe ID lifecycle](docs/RECIPE_ID_LIFECYCLE.md)
 - [Unmapped Ingredients Guide](docs/unmapped_ingredients_guide.md)
 - [Archived project-status snapshot](docs/archive/PROJECT_STATUS_SUMMARY.md)
 - [Archived gas-mapping snapshot](docs/archive/GAS_MAPPING_SUMMARY.md)

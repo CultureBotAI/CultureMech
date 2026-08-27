@@ -90,8 +90,8 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
     component'
   term:
-    id: CHEBI:48095
-    label: keto-D-fructose
+    id: CHEBI:15824
+    label: D-fructose
   mediaingredientmech_term:
     id: MediaIngredientMech:000344
     label: D-Fructose
@@ -171,11 +171,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
 - preferred_term: NiCl2 x 6 H2O
   concentration:
     value: '24'

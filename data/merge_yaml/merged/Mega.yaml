@@ -119,16 +119,16 @@ ingredients:
     value: '1'
     unit: G_PER_L
   term:
-    id: CHEBI:48095
-    label: keto-D-fructose
+    id: CHEBI:15824
+    label: D-fructose
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 57-48-7; MW: 180.16'
 - preferred_term: 'Starch '
   concentration:
     value: '0.5'
     unit: G_PER_L
   term:
-    id: CHEBI:85248
-    label: gellan gum
+    id: CHEBI:28017
+    label: starch
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
 - preferred_term: Hemin
   concentration:
@@ -242,8 +242,8 @@ ingredients:
     value: '5.0'
     unit: MG_PER_L
   term:
-    id: CHEBI:64755
-    label: EDTA(2-)
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 60-00-4; MW: 292.24;
     From ATCC Wolfe''s mineral mix'
 - preferred_term: Magnesium Sulfate Heptahydrate

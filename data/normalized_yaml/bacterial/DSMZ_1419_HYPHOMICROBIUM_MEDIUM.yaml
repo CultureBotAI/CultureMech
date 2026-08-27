@@ -15,15 +15,15 @@ notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_
 ingredients:
 - preferred_term: Vitamin B12
   term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
   concentration:
     value: '0.0001040099'
     unit: G_PER_L
   notes: ' [Merged 3 duplicates: 2.5e-06, 2.5e-06, 9.90099e-05]'
   mediaingredientmech_chebi_term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -36,14 +36,14 @@ ingredients:
     label: potassium dihydrogen phosphate
 - preferred_term: Na2HPO4 x 2 H2O
   term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
+    id: CHEBI:91258
+    label: disodium hydrogenphosphate dihydrate
   concentration:
     value: '53.6'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
+    id: CHEBI:91258
+    label: disodium hydrogenphosphate dihydrate
 - preferred_term: Methylamine hydrochloride
   term:
     id: CHEBI:59337

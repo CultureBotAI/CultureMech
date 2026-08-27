@@ -6,6 +6,13 @@ This document describes the semantic modeling used in CultureMech's KGX export, 
 
 The KGX export transforms CultureMech media recipes into a knowledge graph format with proper semantic relationships. The model focuses on creating meaningful edges between organisms, media, solutions, and ingredients using standardized ontology predicates.
 
+Ingredient objects are resolved at export time through CultureMech's immutable,
+packaged snapshot of MediaIngredientMech `label_index.csv`. MIM's `identifier`
+is authoritative when its per-label ambiguity verdict is safe; local recipe
+terms are fallback only. The result is not CHEBI-only: FOODON, BTO, NCIT, CAS,
+MeSH, and curated local identities can be valid ingredient objects. See
+[`mediaingredientmech_enrichment.md`](mediaingredientmech_enrichment.md).
+
 ## Entity Types
 
 ### Nodes
@@ -22,9 +29,9 @@ The KGX export transforms CultureMech media recipes into a knowledge graph forma
    - Pre-made stock solutions used in media preparation
    - Example: `culturemech:solution_Trace_Metal_Solution`
 
-4. **Ingredient** (`CHEBI:*`)
-   - Chemical entities in media or solutions
-   - Example: `CHEBI:17234` (Glucose)
+4. **Ingredient** (MIM-resolved external identity)
+   - Chemicals, food products, mixtures, and registry-identified materials in media or solutions
+   - Examples: `CHEBI:17234` (glucose), `FOODON:00004410` (beef heart food product)
 
 5. **Medium Type** (`culturemech:medium_type_*`)
    - Type classification nodes
@@ -106,7 +113,7 @@ culturemech:solution_Trace_Elements --[biolink:has_part]--> CHEBI:49976
 **Structure**:
 - **Subject**: Solution (culturemech solution ID)
 - **Predicate**: `biolink:has_part`
-- **Object**: Ingredient (CHEBI ID)
+- **Object**: Ingredient (MIM-resolved ontology or registry CURIE)
 
 **Qualifiers**:
 - `biolink:concentration` - Amount in solution (e.g., "0.07 g/L")
@@ -142,7 +149,7 @@ culturemech:LB_Broth --[biolink:has_part]--> CHEBI:17234
 **Structure**:
 - **Subject**: Medium (culturemech ID)
 - **Predicate**: `biolink:has_part`
-- **Object**: Ingredient (CHEBI ID)
+- **Object**: Ingredient (MIM-resolved ontology or registry CURIE)
 
 **Qualifiers**:
 - `biolink:concentration` - Amount in medium (e.g., "10 g/L")
@@ -244,6 +251,7 @@ just kgx-export
 
 - **NCBITaxon** - Taxonomic identifiers for organisms
 - **CHEBI** - Chemical Entities of Biological Interest
+- **FOODON/BTO/NCIT/MeSH/CAS** - Other identity spaces selected by MediaIngredientMech
 - **culturemech** - CultureMech internal identifiers
 - **METPO** - Metabolite Profiling Ontology
 

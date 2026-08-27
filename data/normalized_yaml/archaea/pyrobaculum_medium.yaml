@@ -2,8 +2,8 @@ id: CultureMech:001497
 name: pyrobaculum_medium
 original_name: PYROBACULUM MEDIUM
 category: archaea
-medium_type: DEFINED
-composition_type: DEFINED
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.0
 media_term:

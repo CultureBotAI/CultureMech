@@ -32,14 +32,14 @@ ingredients:
     label: phenylacetonitrile
 - preferred_term: Na2HPO4 x 2 H2O
   term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
+    id: CHEBI:91258
+    label: disodium hydrogenphosphate dihydrate
   concentration:
     value: '3.5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
+    id: CHEBI:91258
+    label: disodium hydrogenphosphate dihydrate
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -122,14 +122,14 @@ ingredients:
     label: boric acid
 - preferred_term: CoCl2 x 6 H2O
   term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318

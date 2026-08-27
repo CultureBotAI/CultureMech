@@ -42,8 +42,8 @@ ingredients:
     value: '5.0'
     unit: MG_PER_L
   term:
-    id: CHEBI:64755
-    label: EDTA(2-)
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 60-00-4; MW: 292.24;
     From ATCC Wolfe''s mineral mix'
 - preferred_term: Magnesium Sulfate Heptahydrate
@@ -263,8 +263,8 @@ ingredients:
     value: '2.43'
     unit: MILLIMOLAR
   term:
-    id: CHEBI:53258
-    label: sodium citrate
+    id: CHEBI:30769
+    label: citric acid
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
 - preferred_term: Sodium phosphate monobasic
   concentration:

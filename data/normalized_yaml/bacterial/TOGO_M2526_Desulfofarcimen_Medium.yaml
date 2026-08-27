@@ -148,8 +148,8 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
   term:
-    id: CHEBI:17968
-    label: butyrate
+    id: CHEBI:64103
+    label: sodium butyrate
   mediaingredientmech_term:
     id: MediaIngredientMech:000481
     label: Na-butyrate
@@ -212,11 +212,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
 - preferred_term: NiCl2 x 6 H2O
   concentration:
     value: '24'

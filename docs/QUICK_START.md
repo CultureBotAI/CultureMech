@@ -63,6 +63,7 @@ just test-integration
 just test              # full suite and coverage floor
 just validate-strict
 just assign-ids-check
+just check-id-catalog
 ```
 
 The fast tier avoids corpus parsing and is intended for immediate feedback. The

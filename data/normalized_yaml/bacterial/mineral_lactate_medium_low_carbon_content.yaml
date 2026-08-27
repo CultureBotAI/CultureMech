@@ -203,14 +203,14 @@ solutions:
       label: copper(II) sulfate pentahydrate
   - preferred_term: CoCl2 x 6 H2O
     term:
-      id: CHEBI:35696
-      label: cobalt dichloride
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
     concentration:
       value: '1.61'
       unit: G_PER_L
     mediaingredientmech_chebi_term:
-      id: CHEBI:35696
-      label: cobalt dichloride
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
   concentration:
     value: '1.2'
     unit: ML_PER_L

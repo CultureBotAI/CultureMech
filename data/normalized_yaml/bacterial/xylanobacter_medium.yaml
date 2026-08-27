@@ -11,12 +11,15 @@ media_term:
   term:
     id: mediadive.medium:J522
     label: XYLANOBACTER MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=522'
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=522
+
+  Composition recovery source: https://togomedium.org/medium/M523 (TOGO snapshot of
+  JCM medium J522).'
 ingredients: []
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Prepare PY4S agar (see Medium No. 363) and adjust pH to 6.0.
+  description: Prepare PY4S agar (see Medium No. [363]) and adjust pH to 6.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -53,6 +56,17 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
-data_quality_flags:
-- incomplete_composition
-- source_information_unavailable
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_jcm_missing_from_togo.py
+  action: RECOVERED_JCM_COMPOSITION_FROM_TOGO
+  changes: ingredients 0 -> 0; solutions 0 -> 1; preparation_steps 1 -> 1; removed
+    obsolete composition/source flags
+  notes: Recovered JCM J522 from source-equivalent TOGO M523. Preserved final ingredients
+    and stock-solution boundaries; did not flatten referenced media or stocks.
+solutions:
+- preferred_term: PY4S agar (see Medium [M357])
+  composition: []
+  concentration:
+    value: '1'
+    unit: L
+  notes: Defined in TOGO medium M357.

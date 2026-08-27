@@ -10,12 +10,24 @@ media_term:
   term:
     id: mediadive.medium:J1195
     label: ARCHAEOGLOBUS MCR MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1195'
-ingredients: []
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1195
+
+  Composition recovery source: https://togomedium.org/medium/M1280 (TOGO snapshot
+  of JCM medium J1195).'
+ingredients:
+- preferred_term: Na2SO4
+  concentration:
+    value: '2.8'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 1194 supplemented with 2.8 g/L Na2SO4.
+  description: Use Medium No. [1194] supplemented with 2.8 g/L Na2SO4.
 applications:
 - Microbial cultivation
 curation_history:
@@ -52,6 +64,22 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
-data_quality_flags:
-- incomplete_composition
-- source_information_unavailable
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_jcm_missing_from_togo.py
+  action: RECOVERED_JCM_COMPOSITION_FROM_TOGO
+  changes: ingredients 0 -> 1; solutions 0 -> 1; preparation_steps 1 -> 1; removed
+    obsolete composition/source flags
+  notes: Recovered JCM J1195 from source-equivalent TOGO M1280. Preserved final ingredients
+    and stock-solution boundaries; did not flatten referenced media or stocks.
+- timestamp: '2026-08-26T02:12:19.399036+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
+solutions:
+- preferred_term: METHANOTHERMOCOCCUS HHB MEDIUM (see Medium [M1279])
+  composition: []
+  concentration:
+    value: '1'
+    unit: L
+  notes: Defined in TOGO medium M1279.

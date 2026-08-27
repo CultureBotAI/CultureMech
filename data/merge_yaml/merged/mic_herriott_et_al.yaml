@@ -157,14 +157,14 @@ ingredients:
     label: hypoxanthine
 - preferred_term: EDTA
   term:
-    id: CHEBI:64755
-    label: EDTA(2-)
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
   concentration:
     value: '0.01369'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
-    id: CHEBI:64755
-    label: EDTA(2-)
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
 - preferred_term: Inosine
   concentration:
     value: '7.45434'
@@ -175,8 +175,8 @@ ingredients:
     label: inosine
 - preferred_term: Thiamine
   term:
-    id: CHEBI:26948
-    label: vitamin B1
+    id: CHEBI:18385
+    label: thiamine(1+)
   concentration:
     value: '0.0133'
     unit: MILLIMOLAR

@@ -159,14 +159,14 @@ ingredients:
 - preferred_term: EDTA
   notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
-    id: CHEBI:64755
-    label: EDTA(2-)
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
   concentration:
     value: variable
     unit: VARIABLE
   mediaingredientmech_chebi_term:
-    id: CHEBI:64755
-    label: EDTA(2-)
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
 media_term:
   preferred_term: TOGO Medium M3199
   term:

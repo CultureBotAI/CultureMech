@@ -65,8 +65,8 @@ ingredients:
     value: '5'
     unit: G_PER_L
   term:
-    id: CHEBI:85248
-    label: gellan gum
+    id: CHEBI:28017
+    label: starch
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
 - preferred_term: L-Cysteine HCL
   concentration:

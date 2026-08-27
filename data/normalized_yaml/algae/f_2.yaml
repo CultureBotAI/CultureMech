@@ -55,6 +55,13 @@ curation_history:
   action: BACKFILLED_SOURCE_ENVIRONMENT
   notes: added=1 env(s) from CommunityMech
   source: CommunityMech (environment_term + culturemech_id linkage)
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_ccap_instruction_rows.py
+  action: REPAIRED_CCAP_INSTRUCTION_ROWS
+  changes: ingredients 14 -> 13
+  notes: Repaired preparation text and nested-recipe flattening against CCAP MR_f2.pdf.
+    Moved process statements to preparation_steps and restored source-asserted components
+    or constituent-medium references where applicable.
 references:
 - reference: CCAP:f2
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_f2.pdf
@@ -117,8 +124,8 @@ ingredients:
   notes: From CCAP Medium MR_f2.pdf; Curated from CCAP Medium MR_f2.pdf specification
 - preferred_term: CoCl2 x 6 H2O
   term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -241,14 +248,6 @@ ingredients:
     unit: G_PER_L
   source: CCAP Medium MR_f2.pdf
   notes: From CCAP Medium MR_f2.pdf; Curated from CCAP Medium MR_f2.pdf specification
-- preferred_term: Make up to 1 litre with filtered natural seawater. Adjust pH to
-    8.0 with
-  notes: Ontology mapping not yet available; From CCAP Medium MR_f2.pdf; Curated from
-    CCAP Medium MR_f2.pdf specification
-  concentration:
-    value: '1'
-    unit: MOLAR
-  source: CCAP Medium MR_f2.pdf
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated
@@ -265,3 +264,16 @@ source_environment:
     the diatom and associated bacteria.
 
     '
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Bring to 1 L with filtered natural seawater.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 8.0 with 1 M NaOH or 1 M HCl before autoclaving.
+- step_number: 3
+  action: ADD_AGAR
+  description: For an agar formulation, add 15 g/L Bacteriological Agar.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Autoclave at 15 psi for 15 minutes.

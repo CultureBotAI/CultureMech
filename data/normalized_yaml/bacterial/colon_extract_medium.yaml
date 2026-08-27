@@ -110,14 +110,14 @@ ingredients:
     label: manganese(II) sulfate
 - preferred_term: CoCl2 x 6 H2O
   term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
   concentration:
     value: '0.06'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946

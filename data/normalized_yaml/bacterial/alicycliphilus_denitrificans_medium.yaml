@@ -15,14 +15,14 @@ notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=5
 ingredients:
 - preferred_term: Na2HPO4 x 2 H2O
   term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
+    id: CHEBI:91258
+    label: disodium hydrogenphosphate dihydrate
   concentration:
     value: '0.586932'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
+    id: CHEBI:91258
+    label: disodium hydrogenphosphate dihydrate
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -162,14 +162,14 @@ ingredients:
     label: boric acid
 - preferred_term: CoCl2 x 6 H2O
   term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
   concentration:
     value: '0.19'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -297,14 +297,14 @@ ingredients:
     label: thiamine hydrochloride
 - preferred_term: Vitamin B12
   term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
   concentration:
     value: '0.05'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

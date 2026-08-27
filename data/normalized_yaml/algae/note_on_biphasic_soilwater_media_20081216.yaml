@@ -3,10 +3,13 @@ name: note_on_biphasic_soilwater_media_20081216
 category: algae
 medium_type: COMPLEX
 composition_type: UNDEFINED
-physical_state: LIQUID
+physical_state: BIPHASIC
 description: Algae culture medium from SAG Culture Collection (Göttingen). Suitable
   for freshwater algae cultivation. Recipe available in PDF format.
-notes: Full recipe available at http://sagdb.uni-goettingen.de/culture_media/Note_on_biphasic_soilwater_media_20081216.pdf
+notes: 'Full recipe available at http://sagdb.uni-goettingen.de/culture_media/Note_on_biphasic_soilwater_media_20081216.pdf
+
+  Composition verified against https://sagdb.uni-goettingen.de/culture_media/Note_on_biphasic_soilwater_media_20081216.pdf
+  on 2026-08-25 (SHA-256 36370756f412e9d6e84491114f59ec91a7fc7099b1657f23a3fe07a484bfd518).'
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -47,10 +50,63 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_sag_missing_compositions.py
+  action: RESTORED_SAG_SOURCE_COMPOSITION
+  changes: ingredients 0 -> 2; solutions 0 -> 0
+  notes: Restored the formulation from the reviewed SAG PDF, preserving final-medium
+    and stock-solution boundaries. Calculated stock concentrations are documented
+    in-place. Ingredient identities were selected from the MediaIngredientMech SSSOM.
 references:
 - reference: SAG:Note_on_biphasic_soilwater_media_20081216
 - reference: http://sagdb.uni-goettingen.de/culture_media/Note_on_biphasic_soilwater_media_20081216.pdf
-ingredients: []
-data_quality_flags:
-- incomplete_composition
+ingredients:
+- preferred_term: Garden soil
+  concentration:
+    value: '1'
+    unit: VARIABLE
+  term:
+    id: ENVO:00002263
+    label: garden soil
+  notes: Place a 1-2 cm soil layer in the bottom of the vessel.
+- preferred_term: Deionized or distilled water
+  concentration:
+    value: '1'
+    unit: VARIABLE
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: Fill the vessel three-quarters full over the soil layer.
 original_name: Note_on_biphasic_soilwater_media_20081216
+solutions: []
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Optionally place a small amount of the selected insoluble organic or
+    inorganic supplement in the vessel.
+- step_number: 2
+  action: MIX
+  description: Add 1-2 cm garden soil and overlay with water to three-quarters full.
+- step_number: 3
+  action: HEAT
+  description: Steam for 1 hour on two consecutive days; do not autoclave.
+- step_number: 4
+  action: MIX
+  description: Source variants use CaCO3, NH4MgPO4, soaked pea, barley, wheat, sand,
+    loam, or peat.
+sterilization:
+  method: TYNDALLIZATION
+  duration: 1 hour on two consecutive days
+  notes: The source explicitly says not to autoclave so surviving soil bacteria remain.
+parent_media:
+  id: CultureMech:000212
+  name: soil_water_media
+  path: data/normalized_yaml/algae/soil_water_media.yaml
+  relationship: SOURCE_DUPLICATE
+  notes: This record is the separately imported SAG explanatory note for medium 3.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Adds explanatory background and examples but does not define a distinct base formulation.

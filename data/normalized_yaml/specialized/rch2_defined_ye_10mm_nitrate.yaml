@@ -1,7 +1,7 @@
 id: CultureMech:015727
 name: RCH2 defined YE 10mM Nitrate
-medium_type: DEFINED
-composition_type: DEFINED
+medium_type: COMPLEX
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Ammonium chloride

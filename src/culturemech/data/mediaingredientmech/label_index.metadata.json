@@ -1,0 +1,18 @@
+{
+  "byte_count": 854426,
+  "consumer_contract_version": 1,
+  "data_row_count": 9115,
+  "header": [
+    "label",
+    "match_type",
+    "identifier",
+    "preferred_term",
+    "ontology_id",
+    "mapping_status",
+    "ambiguity"
+  ],
+  "repository": "https://github.com/CultureBotAI/MediaIngredientMech",
+  "sha256": "7113b90cb82ea6d80c0abdb34b0620b71fe6b02e3000327b14dbf797062728ac",
+  "source_commit": "82694054f5bbf74b5392bf8858c9962c2152a35a",
+  "source_path": "docs/data/label_index.csv"
+}

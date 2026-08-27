@@ -11,17 +11,28 @@ media_term:
   term:
     id: mediadive.medium:J382
     label: AGC2 MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=382'
-ingredients: []
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=382
+
+  Composition recovery source: https://togomedium.org/medium/M377 (TOGO snapshot of
+  JCM medium J382).'
+ingredients:
+- preferred_term: yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
 preparation_steps:
 - step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 3.0.
+- step_number: 2
   action: AUTOCLAVE
-  description: Use Medium No. 92 with 44.2 g/L (final) FeSO4 x 7H2O, 5 ml 10 N H2SO4
-    and 0.5 g/L yeast extract. Dissolve ingredients except FeSO4 x 7H2O, yeast extract
-    and 10 N H2SO4 in 700 ml distilled water and autoclave. Separately dissolve FeSO4
-    x 7H2O in 300 ml distilled water with 10 N H2SO4 and autoclave at 110C for 30
-    min. After cooling, mix the both solutions. Before inoculation, add yeast extract
-    from a sterile stock solution (10%). Check the final pH to be 1.5 - 2.0.
+  description: Use Medium No. [92] with 44.2 g/L (final) FeSO4・7H2O, 5 ml 10 N H2SO4
+    and 0.5 g/L yeast extract. Dissolve ingredients except FeSO4・7H2O, yeast extract
+    and 10 N H2SO4 in 700 ml distilled water and autoclave. Separately dissolve FeSO4・7H2O
+    in 300 ml distilled water with 10 N H2SO4 and autoclave at 110C for 30 min. After
+    cooling, mix the both solutions. Before inoculation, add yeast extract from a
+    sterile stock solution (10%). Checkthe final pH to be 1.5 -- 2.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -57,6 +68,102 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
-data_quality_flags:
-- incomplete_composition
-- source_information_unavailable
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_jcm_missing_from_togo.py
+  action: RECOVERED_JCM_COMPOSITION_FROM_TOGO
+  changes: ingredients 0 -> 1; solutions 0 -> 2; preparation_steps 1 -> 2; removed
+    obsolete composition/source flags
+  notes: Recovered JCM J382 from source-equivalent TOGO M377. Preserved final ingredients
+    and stock-solution boundaries; did not flatten referenced media or stocks.
+- timestamp: '2026-08-26T02:12:46.189514+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 6 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
+solutions:
+- preferred_term: Sol. 1
+  composition:
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+      Defined component'
+    term:
+      id: CHEBI:15377
+      label: water
+  - preferred_term: MgSO4・7H2O
+    concentration:
+      value: '0.714285714'
+      unit: G_PER_L
+    notes: 'Role: Mineral source; Properties: Simple component, Defined component,
+      Inorganic compound'
+  - preferred_term: K2HPO4
+    concentration:
+      value: '0.714285714'
+      unit: G_PER_L
+    notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+      compound'
+    term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+  - preferred_term: KCl
+    concentration:
+      value: '0.142857143'
+      unit: G_PER_L
+    notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+      Defined component'
+    term:
+      id: CHEBI:32588
+      label: potassium chloride
+  - preferred_term: (NH4)2SO4
+    concentration:
+      value: '4.285714286'
+      unit: G_PER_L
+    notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
+      Defined component'
+    term:
+      id: CHEBI:62946
+      label: ammonium sulfate
+  - preferred_term: Ca(NO3)2
+    concentration:
+      value: '14.285714286'
+      unit: MG_PER_L
+    notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+      Simple component'
+    term:
+      id: CHEBI:64205
+      label: calcium nitrate
+  concentration:
+    value: '700'
+    unit: ML_PER_L
+  notes: Defined in TOGO medium M377. Local TOGO stock formulation is represented
+    as an inline composition; it is not flattened into final-medium ingredients.
+- preferred_term: Sol. 2
+  composition:
+  - preferred_term: 10 N H2SO4
+    concentration:
+      value: '16.666666667'
+      unit: ML_PER_L
+    notes: 'Role: Mineral source; Properties: Defined component, Solution, Inorganic
+      compound'
+  - preferred_term: Distilled water
+    concentration:
+      value: '1000'
+      unit: ML_PER_L
+    notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+      Defined component'
+    term:
+      id: CHEBI:15377
+      label: water
+  - preferred_term: FeSO4・7H2O
+    concentration:
+      value: '44.2'
+      unit: G_PER_L
+    notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+      Simple component'
+  concentration:
+    value: '300'
+    unit: ML_PER_L
+  notes: Defined in TOGO medium M377. Local TOGO stock formulation is represented
+    as an inline composition; it is not flattened into final-medium ingredients.

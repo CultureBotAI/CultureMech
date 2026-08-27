@@ -1,4 +1,5 @@
 id: CultureMech:015447
+id_lineage_token: legacy:e84cb2c31f49ae802e96b82ac992098576368e044f7d41ffd767ccd0f2e98461
 preferred_term: Macro Component 1 for J Medium
 term:
   id: MediaIngredientMech:UNMAPPED_0095
@@ -28,11 +29,11 @@ composition:
     value: '3.8'
     unit: G_PER_L
   term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
   mediaingredientmech_chebi_term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Tricine
   concentration:
     value: '25.0'

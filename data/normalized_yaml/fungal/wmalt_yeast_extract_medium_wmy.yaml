@@ -10,12 +10,58 @@ media_term:
   term:
     id: mediadive.medium:C109
     label: wMalt Yeast Extract Medium (wMY)
-notes: 'Source: CCAP | Link: https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/2/4/3/2/atcc-medium-2432.pdf'
-ingredients: []
+notes: 'Source: CCAP | Link: https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/2/4/3/2/atcc-medium-2432.pdf
+
+  Composition verified against https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/2/4/3/2/atcc-medium-2432.pdf
+  on 2026-08-25.'
+ingredients:
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Malt extract
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  term:
+    id: FOODON:03301056
+    label: malt extract
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: This medium recipe is coming very soon!
+  description: Add the constituents and make up to 1 L with distilled water.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust the final pH to 6.0-7.0.
+- step_number: 3
+  action: ADD_AGAR
+  description: For an agar formulation, add 15 g/L agar.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Autoclave at 121 C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -42,5 +88,15 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
-data_quality_flags:
-- incomplete_composition
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_ccap_missing_compositions.py
+  action: RESTORED_CCAP_SOURCE_COMPOSITION
+  changes: ingredients 0 -> 4; solutions 0 -> 0
+  notes: Restored wmy from the reviewed authoritative source. Preserved stock boundaries
+    and source alternatives; removed the incomplete flag where present. Ingredient
+    identities follow the MediaIngredientMech SSSOM.
+ph_range:
+  min: 6.0
+  max: 7.0
+sterilization:
+  method: AUTOCLAVE

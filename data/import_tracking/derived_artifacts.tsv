@@ -5,6 +5,8 @@ data/chemical_name_to_chebi_mapping_enhanced.json	UNKNOWN	writer purity unestabl
 data/compound_to_chebi_mapping.json	UNKNOWN	writer purity unestablished (build_compound_to_chebi_mapping.py)	scripts/build_compound_to_chebi_mapping.py	scripts/build_compound_to_chebi_mapping.py	
 data/compound_to_chebi_mapping_enhanced.json	UNKNOWN	writer purity unestablished (build_enhanced_compound_mapping.py)	scripts/build_enhanced_compound_mapping.py; scripts/build_fast_compound_mapping.py	scripts/build_enhanced_compound_mapping.py; scripts/build_fast_compound_mapping.py; scripts/enrich_solutions_with_chebi.py	
 data/culturemech_id_registry.tsv	CURRENT_VIEW	refresh_id_registry.py	scripts/refresh_id_registry.py; src/culturemech/utils/id_utils.py	scripts/artifact_writers.py; scripts/assign_culturemech_ids.py; scripts/refresh_id_registry.py; scripts/research_media.py; src/culturemech/utils/id_utils.py	
+data/culturemech_id_tombstones.tsv	AUTHORITATIVE	curator-owned append-only lifecycle ledger		scripts/build_recipe_id_catalog.py; scripts/refresh_id_registry.py	
+data/culturemech_recipe_catalog.tsv	CURRENT_VIEW	build_recipe_id_catalog.py	scripts/build_recipe_id_catalog.py	scripts/build_recipe_id_catalog.py	yes
 data/curation/atcc_crossref_candidates.json	UNKNOWN	no writer found			
 data/curation/multi_db_crossref_candidates.json	UNKNOWN	writer purity unestablished (multi_database_crossref.py)		src/culturemech/enrich/multi_database_crossref.py	
 data/curation/organism_candidates.json	UNKNOWN	writer purity unestablished (curation_validator.py)		src/culturemech/curate/curation_validator.py; src/culturemech/curate/organism_extractor.py; src/culturemech/enrich/backfill_pipeline.py	
@@ -41,7 +43,7 @@ data/import_tracking/reports/primary_term_reground_changes.tsv	UNKNOWN	no writer
 data/import_tracking/reports/review_need_ranking.tsv	CURRENT_VIEW	score_review_need.py	scripts/score_review_need.py	scripts/score_review_need.py	yes
 data/import_tracking/reports/selective_agent_mismatch.tsv	CURRENT_VIEW	audit_selective_agent_mismatch.py	scripts/audit_selective_agent_mismatch.py	scripts/audit_selective_agent_mismatch.py	yes
 data/import_tracking/reports/top5-curation-proposals.json	UNKNOWN	writer purity unestablished (apply_curation_proposals.py)		scripts/apply_curation_proposals.py	
-data/import_tracking/reports/unparsed_composition.tsv	CURRENT_VIEW	audit_unparsed_composition.py	scripts/audit_unparsed_composition.py	scripts/audit_unparsed_composition.py	
+data/import_tracking/reports/unparsed_composition.tsv	CURRENT_VIEW	audit_unparsed_composition.py	scripts/audit_unparsed_composition.py	scripts/audit_unparsed_composition.py	yes
 data/import_tracking/reports/unparsed_compositions.tsv	CURRENT_VIEW	report_unparsed_compositions.py	scripts/report_unparsed_compositions.py	scripts/report_unparsed_compositions.py	yes
 data/import_tracking/researched_media.json	CURRENT_VIEW	prioritize_deep_research_candidates.py		scripts/prioritize_deep_research_candidates.py; scripts/refresh_researched_manifest.py; scripts/researched_manifest.py	
 data/import_tracking/researched_stock_volumes.json	UNKNOWN	writer purity unestablished (apply_cocktail_nesting.py)		scripts/apply_cocktail_nesting.py	

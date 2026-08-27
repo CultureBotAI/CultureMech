@@ -28,6 +28,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          # Lifecycle tests compare every previously published catalog version;
+          # shallow history would make the never-forget invariant vacuous.
           fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
@@ -58,6 +60,8 @@ jobs:
             --file "$GITHUB_WORKSPACE/tests/fixtures/render_smoke.yaml" \
             --output-dir /tmp/culturemech-wheel-smoke/media \
             --index-dir /tmp/culturemech-wheel-smoke
+          "$GITHUB_WORKSPACE/.venv/bin/python" -c \
+            "from culturemech.ingredients import resolve_ingredient; assert resolve_ingredient({'preferred_term': 'EDTA'}).identifier == 'CHEBI:4735'"
 
   fast:
     name: Fast tests (Python ${{ matrix.python-version }})
@@ -89,6 +93,10 @@ jobs:
     timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Lifecycle tests compare every previously published catalog version;
+          # shallow history would make the never-forget invariant vacuous.
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -102,11 +110,13 @@ jobs:
       - name: Install just
         uses: extractions/setup-just@v2
 
-      # `--extra dev` is required: pytest lives in [project.optional-dependencies]
-      # dev, which a plain `uv sync` does not install. The other workflows omit it
-      # because they only invoke runtime deps.
+      # `dev` supplies pytest. `koza` keeps the real KGX TSV path from silently
+      # skipping, including the MIM identity-resolution publication checks.
       - name: Sync dependencies
-        run: uv sync --frozen --extra dev
+        run: uv sync --frozen --extra dev --extra koza
+
+      - name: Verify recipe ID lifecycle catalog
+        run: just check-id-catalog
 
       - name: Run full suite with coverage floor
         run: just test

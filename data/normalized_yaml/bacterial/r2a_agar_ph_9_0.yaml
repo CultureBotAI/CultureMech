@@ -4,20 +4,125 @@ original_name: R2A AGAR (pH 9.0)
 category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 9.0
 media_term:
   preferred_term: JCM Medium J1311
   term:
     id: mediadive.medium:J1311
     label: R2A AGAR (pH 9.0)
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1311'
-ingredients: []
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1311
+
+  Composition verified against https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1311
+  on 2026-08-25 (SHA-256 49ad5e1fc84575d78e62312592f5be1ec7e08b30e79f9ad89f534e73dcfc6577).
+  The delegated JCM 346 base was verified at https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=346
+  (SHA-256 63dfbe90d38e903a76836e23c42651ec98b3fe778c285ca0274ccd4f816ea8bb).'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+- preferred_term: Proteose peptone No. 3
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: MICRO:0000180
+    label: proteose peptone
+- preferred_term: Casamino acids
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: FOODON:03315719
+    label: mammalian milk protein (hydrolyzed)
+- preferred_term: Glucose
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17234
+    label: glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
+    label: glucose
+- preferred_term: Soluble starch
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:28017
+    label: starch
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
+    label: starch
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: Agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 preparation_steps:
 - step_number: 1
+  action: MIX
+  description: Combine the printed components with 1.0 L distilled water.
+- step_number: 2
   action: ADJUST_PH
-  description: Prepare R2A agar (see Medium No. 346). After autoclaving, adjust pH
-    to 9.0 with sterilized 10% Na2CO3 solution.
+  description: Adjust the R2A base to pH 7.2.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 minutes.
+- step_number: 4
+  action: ADJUST_PH
+  description: After autoclaving, adjust to pH 9.0 with separately sterilized 10%
+    Na2CO3 solution. JCM does not specify the volume added.
 applications:
 - Microbial cultivation
 curation_history:
@@ -54,6 +159,49 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
-data_quality_flags:
-- incomplete_composition
-- source_information_unavailable
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_jcm_r2a_family.py
+  action: RESTORED_JCM_R2A_FAMILY
+  changes: ingredients 0 -> 10; solutions 0 -> 1
+  notes: Restored the reviewed JCM R2A formulation, printed water, default sterilization,
+    and reciprocal variant semantics. Identity objects were verified against the MIM
+    SSSOM; unspecified carbonate volume remains explicitly variable.
+solutions:
+- preferred_term: 10% Na2CO3 solution
+  composition:
+  - preferred_term: Na2CO3
+    concentration:
+      value: '100'
+      unit: G_PER_L
+    term:
+      id: CHEBI:29377
+      label: sodium carbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:29377
+      label: sodium carbonate
+  - preferred_term: Distilled water
+    concentration:
+      value: '1.0'
+      unit: L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: Sterilize separately and add after autoclaving only as needed to reach pH
+    9.0; JCM 1311 gives no addition volume.
+sterilization:
+  method: AUTOCLAVE
+parent_media:
+  path: data/normalized_yaml/bacterial/r2a_agar.yaml
+  relationship: PH_VARIANT
+  id: CultureMech:002706
+  name: r2a_agar
+  notes: JCM 346 is the canonical R2A Agar formulation for this family.
+variant_relationship: PH_VARIANT
+variant_modifications:
+- After autoclaving, adjust to pH 9.0 with sterilized 10% Na2CO3 solution.

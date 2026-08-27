@@ -215,10 +215,10 @@ prioritize-deep-research-candidates *args="":
 score-review-need *args="":
     uv run --extra dev python scripts/score_review_need.py {{args}}
 
-# Turn the 25 NBRC records whose composition was crammed into one ingredient name
-# into a structured worklist (#166). REPORT ONLY — it never writes, because a parse
-# can round-trip and still be wrong: "KH2PO40.85g" splits equally well into
-# KH2PO4+0.85g and KH2PO+40.85g. Writes:
+# Detect recurrence of the NBRC shape where an entire composition was crammed
+# into one ingredient name. The original 25 records were repaired in #299, so
+# this narrower worklist is currently empty; the broader singular-named report
+# is owned by `audit-unparsed-composition` below.
 #   data/import_tracking/reports/unparsed_compositions.tsv
 [group('QC')]
 report-unparsed-compositions *args="":
@@ -280,7 +280,8 @@ refresh-derived:
 
 [group('QC')]
 triage-missing-compositions *args="":
-    uv run --extra dev python scripts/triage_missing_compositions.py {{args}}
+    uv run --extra dev python scripts/triage_missing_compositions.py \
+        --max-allowed 150 {{args}}
 
 # Keep medium_type populated and derived from composition_type (#165). It is a
 # MAINTAINED axis: kgx_export emits one edge per record from it, so a missing value
@@ -398,12 +399,11 @@ audit-selective-agent-mismatch *args="":
 [group('QC')]
 audit-concentration-plausibility *args="":
     uv run --extra dev python scripts/audit_concentration_plausibility.py \
-        --max-allowed 9757 --max-cocktails 186 {{args}}
+        --max-allowed 9688 --max-cocktails 183 {{args}}
 
 # Composition tables that were never parsed, plus prose sitting in name slots
-# (#299, #273). Baselines are today's counts: 64 findings, none of which reach
-# the KGX export. Lower them as the backlog is repaired; never raise one to make
-# a run pass.
+# (#299, #273). The 64-finding backlog is now cleared; both limits are absolute
+# zero gates. Never raise one to make a run pass.
 #
 # Was 169/31 before `just recover-nbrc-composition` restored 58 composition
 # tables from the preserved scrape and repaired 4 more surgically.
@@ -426,21 +426,24 @@ recover-nbrc-composition *args="":
 [group('QC')]
 audit-unparsed-composition *args="":
     uv run --extra dev python scripts/audit_unparsed_composition.py \
-        --max-allowed 64 --max-exported 0 {{args}}
+        --max-allowed 0 --max-exported 0 {{args}}
 
-# Compare our ingredient groundings against MIM's published SSSOM (#256).
+# Historical CHEBI-only diagnostic against a sibling MIM SSSOM (#256).
+# KGX identity now comes from the pinned label-index resolver (#260); this report
+# remains useful for recipe-local curation but does not decide publication.
 #
-# This has to live here rather than in MIM: kg-microbe resolves an ingredient
-# with `best_primary([chebi_id, culturemech_term_id, mim_id, ...])`, so OUR
-# `term.id` outranks MIM's. When MIM corrects a mapping the consumer still picks
-# ours, and MIM can only fix rows we hold no opinion on.
+# Before #260, kg-microbe's priority path let our stale `term.id` outrank MIM.
+# The resolver retires that publication defect; this audit still finds local
+# drift worth curating.
 #
 # Baselines are names, not rows -- one regrounding decision fixes every row of a
-# name. Today: 12 divergent, 75 internally split. Lower them as the backlog is
-# curated; never raise one to make a run pass.
+# name. The 2026-08-25 reconciliation reduced the gates to 5 divergent and 44
+# internally split names. Lower them as the backlog is curated; never raise one
+# to make a run pass.
 #
 # Needs MediaIngredientMech checked out beside this repo; pass --sssom otherwise.
-# Adopt MIM's published grounding where we hold none (#308).
+# Legacy recipe-local migration where we hold no CHEBI grounding (#308).
+# KGX publication no longer requires materializing this into recipe YAML.
 #
 # Applies only the audit's MISSING_GROUNDING finding. DIVERGENT runs both ways
 # and INTERNAL_SPLIT needs someone to pick a side, so neither is applied here.
@@ -452,7 +455,20 @@ apply-mim-groundings *args="":
 [group('QC')]
 audit-mim-sssom *args="":
     uv run --extra dev python scripts/audit_mim_sssom_divergence.py \
-        --max-divergent 12 --max-split 75 {{args}}
+        --max-divergent 5 --max-split 44 {{args}}
+
+# Verify the immutable MediaIngredientMech label-index dependency used by KGX.
+# Entirely offline: hash, source pin, header, enums, row count, and label-group
+# contiguity all have to agree with the checked-in metadata.
+[group('QC')]
+check-mim-label-index:
+    uv run python scripts/check_mim_label_index.py
+
+# Explicit dependency bump. A moving branch or short SHA is rejected; review
+# the printed label-resolution delta in the default preview, then pass --apply.
+[group('Curation')]
+refresh-mim-label-index commit *args="":
+    uv run python scripts/refresh_mim_label_index.py "{{commit}}" {{args}}
 
 # Merge locally-completed Edison runs (research/media/*-meta.yaml, gitignored)
 # into the tracked researched-media manifest. This is the only step that reads
@@ -1231,23 +1247,22 @@ validate-products:
 report-label-drift:
     uv run python scripts/validate_id_label_correspondence.py -c conf/id_label_targets.yaml --report reports/label_drift.tsv
 
-# NOTE: the id↔label validator + its shared tests are vendored byte-identical
+# NOTE: the id↔label validator + its shared tests are governed byte-identically
 # across the Mech repos. The old self-generated sha256 pin (verify-/refresh-
 # validator-pin) was retired — it could only compare a copy to a hash from the
-# SAME repo, so all four could pass while holding three different versions. Drift
-# is now caught by the shared-reference check in the spokes (scripts/
-# check_vendored_sync.sh, against CultureBotAI/CultureMech@<.vendored_canon_ref>)
-# plus the nightly fleet audit in culturebotai-claw (fleet-audit job).
-# See culturebotai-claw vendored_sync_action_plan (Phase 2).
+# SAME repo, so every repo could pass while holding different versions. Drift is
+# now caught by this repo's unfiltered scripts/check_vendored_sync.sh gate against
+# CultureBotAI/culturebotai-claw@<scripts/.vendored_canon_ref>; claw's manifest
+# selects the full applicable artifact set and its fleet audit checks all five
+# pinned consumers.
 
 # NOTE: the shared LinkML module (mech_shared.yaml) is vendored byte-identical
 # across the Mech repos (package-namespaced path per repo). Its self-generated
 # sha256 pin (verify-/refresh-schema-pin) was retired — same self-referential
-# flaw as the id-label pin. mech_shared.yaml is now covered by the shared-
-# reference drift check (spokes' scripts/check_vendored_sync.sh diffs their
-# src/<pkg>/schema/mech_shared.yaml against this hub's copy) and the nightly
-# claw's fleet-audit job. Propagation: change it in this hub → sync the
-# spokes → bump their .vendored_canon_ref.
+# flaw as the id-label pin. mech_shared.yaml is now selected by claw's canonical
+# manifest and verified by every Mech's scripts/check_vendored_sync.sh. Propagate
+# a change through a reviewed claw commit, then coordinate that immutable pin
+# across all five Mechs.
 #
 # The former mim-roles-pin was also retired: mim_roles.yaml is NOT a shared set —
 # it is empty in MIM/CommunityMech/TraitMech (the real role facets live in MIM's
@@ -1325,6 +1340,16 @@ check-chebi-grounding *args:
 [group('QC')]
 refresh-id-registry *args="":
     uv run --extra dev python scripts/refresh_id_registry.py {{args}}
+
+# Rebuild or verify the external, versioned recipe-ID lifecycle catalog. Unlike
+# the active compatibility registry, this includes every retired ID forever.
+[group('QC')]
+refresh-id-catalog *args="":
+    uv run python scripts/build_recipe_id_catalog.py {{args}}
+
+[group('QC')]
+check-id-catalog:
+    uv run python scripts/build_recipe_id_catalog.py --check
 
 # Scan-only collision check for CultureMech:NNNNNN IDs. Exits non-zero if any
 # cross-file duplicates are detected. Use as a pre-commit / CI safety net.
@@ -1811,6 +1836,14 @@ gen-dataclasses:
     echo "Generating Python dataclasses from schema..."
     uv run gen-python {{schema_path}} > src/culturemech/schema/culturemech_dataclasses.py
     echo "✓ Dataclasses regenerated at src/culturemech/schema/culturemech_dataclasses.py"
+
+[group('Schema')]
+gen-json-schema:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    echo "Generating JSON Schema from LinkML..."
+    uv run gen-json-schema {{schema_path}} > src/culturemech/schema/culturemech.schema.json
+    echo "✓ JSON Schema regenerated at src/culturemech/schema/culturemech.schema.json"
 
 [group('Schema')]
 validate-schema-file:
@@ -2617,39 +2650,61 @@ gen-media-umap-force-reload embeddings_path=kg_microbe_embeddings:
     echo ""
     echo "✓ UMAP visualization regenerated!"
 
-# Generate mapped ingredients file (ingredients with CHEBI/ontology IDs)
+# Generate mapped ingredients compatibility view through the shared occurrence scanner
 [group('Ingredients')]
 aggregate-mapped-ingredients output="output/mapped_ingredients.yaml" min_occurrences="1":
     #!/usr/bin/env bash
+    set -euo pipefail
     echo "Aggregating mapped ingredients from media YAML files..."
-    mkdir -p $(dirname {{output}})
+    mkdir -p -- "$(dirname -- "{{output}}")"
     uv run python scripts/aggregate_mapped_ingredients.py \
-        --output {{output}} \
-        --input-dir {{normalized_yaml_dir}} \
-        --min-occurrences {{min_occurrences}} \
+        --output "{{output}}" \
+        --input-dir "{{normalized_yaml_dir}}" \
+        --min-occurrences "{{min_occurrences}}" \
+        --occurrences-output "output/ingredient_occurrences.tsv" \
+        --errors-output "output/ingredient_aggregation_errors.tsv" \
         --verbose
     echo "✓ Mapped ingredients saved to {{output}}"
 
-# Generate unmapped ingredients file (ingredients without ontology mappings)
+# Generate unmapped ingredients compatibility view through the shared occurrence scanner
 [group('Ingredients')]
 aggregate-unmapped-ingredients output="output/unmapped_ingredients.yaml" min_occurrences="1":
     #!/usr/bin/env bash
+    set -euo pipefail
     echo "Aggregating unmapped ingredients from media YAML files..."
-    mkdir -p $(dirname {{output}})
+    mkdir -p -- "$(dirname -- "{{output}}")"
     uv run python scripts/aggregate_unmapped_ingredients.py \
-        --output {{output}} \
-        --input-dir {{normalized_yaml_dir}} \
-        --min-occurrences {{min_occurrences}} \
+        --output "{{output}}" \
+        --input-dir "{{normalized_yaml_dir}}" \
+        --min-occurrences "{{min_occurrences}}" \
+        --occurrences-output "output/ingredient_occurrences.tsv" \
+        --errors-output "output/ingredient_aggregation_errors.tsv" \
         --verbose
     echo "✓ Unmapped ingredients saved to {{output}}"
 
-# Generate both mapped and unmapped ingredient files
+# Scan once and generate the canonical occurrence table plus both compatibility views
 [group('Ingredients')]
-aggregate-all-ingredients: (aggregate-mapped-ingredients) (aggregate-unmapped-ingredients)
-    @echo ""
-    @echo "✓ Ingredient aggregation complete!"
-    @echo "  Mapped:   output/mapped_ingredients.yaml"
-    @echo "  Unmapped: output/unmapped_ingredients.yaml"
+aggregate-all-ingredients mapped_output="output/mapped_ingredients.yaml" unmapped_output="output/unmapped_ingredients.yaml" occurrences_output="output/ingredient_occurrences.tsv" errors_output="output/ingredient_aggregation_errors.tsv" min_occurrences="1":
+    #!/usr/bin/env bash
+    set -euo pipefail
+    mkdir -p -- \
+        "$(dirname -- "{{mapped_output}}")" \
+        "$(dirname -- "{{unmapped_output}}")" \
+        "$(dirname -- "{{occurrences_output}}")" \
+        "$(dirname -- "{{errors_output}}")"
+    uv run python scripts/aggregate_ingredients.py \
+        --input-dir "{{normalized_yaml_dir}}" \
+        --mapped-output "{{mapped_output}}" \
+        --unmapped-output "{{unmapped_output}}" \
+        --occurrences-output "{{occurrences_output}}" \
+        --errors-output "{{errors_output}}" \
+        --min-occurrences "{{min_occurrences}}" \
+        --verbose
+    echo "✓ Ingredient aggregation complete!"
+    echo "  Occurrences: {{occurrences_output}}"
+    echo "  Mapped:      {{mapped_output}}"
+    echo "  Unmapped:    {{unmapped_output}}"
+    echo "  Errors:      {{errors_output}}"
 
 # =============================================================================
 # INGREDIENT UMAP VISUALIZATION

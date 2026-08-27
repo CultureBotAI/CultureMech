@@ -6,8 +6,11 @@ Converts TOGO Medium JSON data to CultureMech LinkML YAML format.
 
 import argparse
 import json
+import re
 from datetime import datetime, timezone
+from decimal import ROUND_HALF_UP, Decimal, InvalidOperation
 from pathlib import Path
+from typing import Any
 
 import yaml
 
@@ -188,6 +191,448 @@ class TogoImporter:
             "src_url": src_url,
         }
 
+    @staticmethod
+    def _solution_name(value: object) -> str:
+        """Normalize TOGO's local section labels for exact matching."""
+        return str(value or "").strip().removesuffix(":").strip()
+
+    @staticmethod
+    def _decimal(value: object) -> Decimal | None:
+        if value in (None, ""):
+            return None
+        try:
+            return Decimal(str(value))
+        except (InvalidOperation, ValueError):
+            return None
+
+    @staticmethod
+    def _format_decimal(value: Decimal, places: int | None = None) -> str:
+        if places is not None:
+            quantum = Decimal(1).scaleb(-places)
+            return format(value.quantize(quantum, rounding=ROUND_HALF_UP), f".{places}f")
+        normalized = value.normalize()
+        return format(normalized, "f")
+
+    @staticmethod
+    def _item_notes(item: dict) -> str | None:
+        notes_parts = []
+        role_labels = [role.get("label") for role in item.get("roles", []) if role.get("label")]
+        if role_labels:
+            notes_parts.append(f"Role: {', '.join(role_labels)}")
+        property_labels = [
+            prop.get("label") for prop in item.get("properties", []) if prop.get("label")
+        ]
+        if property_labels:
+            notes_parts.append(f"Properties: {', '.join(property_labels)}")
+        return "; ".join(notes_parts) if notes_parts else None
+
+    @staticmethod
+    def _is_gas_item(item: dict) -> bool:
+        """Return whether TOGO explicitly classifies an item as a gas."""
+        return any(
+            str(prop.get("id") or "") == "GMO_000077"
+            or str(prop.get("label") or "").casefold() in {"gas", "ガス"}
+            for prop in item.get("properties", [])
+            if isinstance(prop, dict)
+        )
+
+    def _ingredient_from_item(
+        self,
+        item: dict,
+        *,
+        batch_volume_ml: Decimal | None = None,
+        allow_unquantified: bool = False,
+        allow_final_concentration: bool = False,
+    ) -> dict | None:
+        """Convert one quantified TOGO item, optionally normalizing a stock batch."""
+        amount = self._decimal(item.get("volume"))
+        if amount is None:
+            if not allow_unquantified:
+                return None
+            final_concentration = self._decimal(item.get("conc_value"))
+            if final_concentration is not None and allow_final_concentration:
+                ingredient = {
+                    "preferred_term": item.get("component_name", "Unknown"),
+                    "concentration": {
+                        "value": self._format_decimal(final_concentration),
+                        "unit": self._parse_unit(str(item.get("conc_unit") or "")),
+                    },
+                }
+                notes = self._item_notes(item)
+                if notes:
+                    ingredient["notes"] = notes
+                return ingredient
+            if not item.get("gmo_id") or not self._is_gas_item(item):
+                return None
+            ingredient = {
+                "preferred_term": item.get("component_name", "Unknown"),
+                "concentration": {"value": "variable", "unit": "VARIABLE"},
+            }
+            notes = self._item_notes(item)
+            if notes:
+                ingredient["notes"] = notes
+            return ingredient
+
+        unit = str(item.get("unit") or "")
+        concentration_unit = self._parse_unit(unit)
+        normalized_from_batch = False
+        if batch_volume_ml is not None and unit.casefold().replace(" ", "") in {
+            "g",
+            "mg",
+            "ml",
+            "l",
+        }:
+            if batch_volume_ml <= 0:
+                return None
+            amount = amount * Decimal(1000) / batch_volume_ml
+            normalized_from_batch = True
+
+        if normalized_from_batch:
+            amount_text = self._format_decimal(amount, places=9).rstrip("0").rstrip(".")
+        else:
+            amount_text = self._format_decimal(amount)
+
+        ingredient = {
+            "preferred_term": item.get("component_name", "Unknown"),
+            "concentration": {
+                "value": amount_text,
+                "unit": concentration_unit,
+            },
+        }
+        notes = self._item_notes(item)
+        if notes:
+            ingredient["notes"] = notes
+        return ingredient
+
+    def _assembled_solution_sections(self, medium: dict) -> list[tuple[dict, dict, Decimal]]:
+        """Recognize a medium assembled from complete, locally defined solution batches.
+
+        TOGO normally uses a local reference for a stock addition, where the referenced
+        amount is not the stock's preparation volume. We only accept the narrower case
+        where every primary component is local and each referenced millilitre amount
+        exactly equals the sum of millilitre components in its matching section. That
+        evidence makes both the stock-batch basis and final mixed-batch volume explicit.
+        """
+        components = [
+            section for section in medium.get("components", []) if isinstance(section, dict)
+        ]
+        primary_sections = [
+            section
+            for section in components
+            if not self._solution_name(section.get("subcomponent_name"))
+        ]
+        nested_sections = [
+            section
+            for section in components
+            if self._solution_name(section.get("subcomponent_name"))
+        ]
+        if not primary_sections or not nested_sections:
+            return []
+
+        own_id = str((medium.get("meta", {}).get("gm") or "").split("/")[-1])
+        primary_items = [
+            item
+            for section in primary_sections
+            for item in section.get("items", [])
+            if isinstance(item, dict)
+        ]
+        if not primary_items:
+            return []
+
+        section_by_name: dict[str, dict] = {}
+        for section in nested_sections:
+            name = self._solution_name(section.get("subcomponent_name"))
+            if name in section_by_name:
+                return []
+            section_by_name[name] = section
+
+        matches: list[tuple[dict, dict, Decimal]] = []
+        for item in primary_items:
+            amount = self._decimal(item.get("volume"))
+            if (
+                str(item.get("reference_media_id") or "") != own_id
+                or str(item.get("unit") or "").lower().replace(" ", "") != "ml"
+                or amount is None
+                or amount <= 0
+            ):
+                return []
+            name = self._solution_name(item.get("component_name"))
+            section = section_by_name.get(name)
+            if section is None:
+                return []
+            liquid_total = sum(
+                (
+                    self._decimal(component.get("volume")) or Decimal(0)
+                    for component in section.get("items", [])
+                    if str(component.get("unit") or "").lower().replace(" ", "") == "ml"
+                ),
+                Decimal(0),
+            )
+            if liquid_total != amount:
+                return []
+            matches.append((item, section, amount))
+
+        if len(matches) != len(nested_sections):
+            return []
+        return matches
+
+    def _extract_assembled_solutions(self, medium: dict) -> list[dict]:
+        matches = self._assembled_solution_sections(medium)
+        if not matches:
+            return []
+
+        total_batch_ml = sum((amount for _, _, amount in matches), Decimal(0))
+        comments = [
+            row
+            for row in medium.get("comments", [])
+            if isinstance(row, dict) and str(row.get("comment") or "").strip()
+        ]
+        section_indices = sorted(
+            int(section.get("paragraph_index") or 0) for _, section, _ in matches
+        )
+        solutions = []
+        for reference, section, batch_volume_ml in matches:
+            composition = []
+            for item in section.get("items", []):
+                ingredient = self._ingredient_from_item(item, batch_volume_ml=batch_volume_ml)
+                if ingredient is not None:
+                    composition.append(ingredient)
+
+            paragraph_index = int(section.get("paragraph_index") or 0)
+            later_indices = [index for index in section_indices if index > paragraph_index]
+            next_index = min(later_indices) if later_indices else None
+            section_comments = [
+                str(row["comment"]).strip()
+                for row in comments
+                if int(row.get("paragraph_index") or 0) > paragraph_index
+                and (next_index is None or int(row.get("paragraph_index") or 0) < next_index)
+            ]
+            source_amount = self._decimal(reference.get("volume")) or Decimal(0)
+            normalized_amount = source_amount * Decimal(1000) / total_batch_ml
+            solution = {
+                "preferred_term": self._solution_name(reference.get("component_name")),
+                "composition": composition,
+                "concentration": {
+                    "value": self._format_decimal(normalized_amount, places=3),
+                    "unit": "ML_PER_L",
+                },
+                "notes": (
+                    f"Source batch uses {self._format_decimal(source_amount)} ml in "
+                    f"{self._format_decimal(total_batch_ml)} ml total; normalized to ml/L."
+                ),
+            }
+            if section_comments:
+                solution["preparation_notes"] = " ".join(section_comments)
+            solutions.append(solution)
+        return solutions
+
+    @classmethod
+    def _is_primary_section(cls, section: dict) -> bool:
+        name = cls._solution_name(section.get("subcomponent_name"))
+        return not name or bool(re.fullmatch(r"main solution(?:\s+\d+)?", name, re.I))
+
+    @staticmethod
+    def _looks_like_solution_item(item: dict) -> bool:
+        if item.get("reference_media_id"):
+            return True
+        name = str(item.get("component_name") or "")
+        properties = {
+            str(row.get("label") or "").casefold()
+            for row in item.get("properties", [])
+            if isinstance(row, dict)
+        }
+        return "solution" in properties or bool(re.search(r"\bsolution\b", name, re.I))
+
+    def _local_batch_volume_ml(self, item: dict, section: dict) -> Decimal | None:
+        """Infer a local stock basis only when TOGO's volumes corroborate it."""
+        reference_amount = self._decimal(item.get("volume"))
+        reference_unit = str(item.get("unit") or "").casefold().replace(" ", "")
+        if reference_amount is None or reference_amount <= 0:
+            return None
+        if reference_unit == "l":
+            reference_amount *= Decimal(1000)
+        elif reference_unit != "ml":
+            return None
+
+        liquid_total = Decimal(0)
+        water_amounts = []
+        for component in section.get("items", []):
+            if not isinstance(component, dict):
+                continue
+            amount = self._decimal(component.get("volume"))
+            unit = str(component.get("unit") or "").casefold().replace(" ", "")
+            if amount is None or unit not in {"ml", "l"}:
+                continue
+            amount_ml = amount * Decimal(1000) if unit == "l" else amount
+            liquid_total += amount_ml
+            if str(component.get("gmo_id") or "") == "GMO_001001":
+                water_amounts.append(amount_ml)
+
+        if reference_amount == liquid_total or reference_amount in water_amounts:
+            return reference_amount
+        return None
+
+    def _local_solution_composition(
+        self, item: dict, section: dict
+    ) -> tuple[list[dict], list[str]]:
+        batch_volume_ml = self._local_batch_volume_ml(item, section)
+        if batch_volume_ml is None:
+            return [], []
+
+        composition = []
+        nested_references = []
+        for component in section.get("items", []):
+            if not isinstance(component, dict):
+                continue
+            if component.get("reference_media_id"):
+                nested_references.append(self._solution_name(component.get("component_name")))
+                continue
+            ingredient = self._ingredient_from_item(
+                component,
+                batch_volume_ml=batch_volume_ml,
+                allow_unquantified=True,
+            )
+            if ingredient is not None:
+                composition.append(ingredient)
+        return composition, nested_references
+
+    def _solution_from_item(self, item: dict, local_sections: dict[str, dict]) -> dict | None:
+        """Convert a primary-recipe stock addition without flattening its contents."""
+        # A concentration-only reagent such as 5 M NaOH is normally an adjustment
+        # reagent named in preparation prose, not a quantified stock addition.
+        amount = self._decimal(item.get("volume"))
+        if amount is None and item.get("conc_value") is not None:
+            return None
+
+        name = self._solution_name(item.get("component_name"))
+        if not name:
+            return None
+        local_section = local_sections.get(name)
+        if local_section is None:
+            composition: list[dict] = []
+            nested_references: list[str] = []
+        else:
+            composition, nested_references = self._local_solution_composition(item, local_section)
+        solution: dict[str, Any] = {
+            "preferred_term": name,
+            "composition": composition,
+        }
+        if amount is not None:
+            solution["concentration"] = {
+                "value": self._format_decimal(amount),
+                "unit": self._parse_unit(str(item.get("unit") or "")),
+            }
+
+        notes = []
+        item_notes = self._item_notes(item)
+        if item_notes:
+            notes.append(item_notes)
+        reference = str(item.get("reference_media_id") or "")
+        if reference:
+            notes.append(f"Defined in TOGO medium {reference}.")
+        if local_section is not None:
+            if composition:
+                notes.append(
+                    "Local TOGO stock formulation is represented as an inline "
+                    "composition; it is not flattened into final-medium ingredients."
+                )
+            else:
+                notes.append(
+                    "Local stock formulation is retained in the TOGO source payload; "
+                    "its batch basis was not explicit enough to normalize safely."
+                )
+        if nested_references:
+            solution["preparation_notes"] = (
+                "The source stock also adds these referenced stocks, retained without "
+                f"flattening: {', '.join(nested_references)}."
+            )
+        if notes:
+            solution["notes"] = " ".join(notes)
+        return solution
+
+    def _extract_primary_components(self, medium: dict) -> tuple[list[dict], list[dict]] | None:
+        """Extract final ingredients and stock additions from TOGO's primary layers.
+
+        TOGO calls each final-recipe paragraph ``main solution N``. Other named
+        sections describe locally defined stocks. Reading every section as final
+        ingredients was the flattening defect; this method keeps those layers apart.
+        """
+        components = [
+            section for section in medium.get("components", []) if isinstance(section, dict)
+        ]
+        primary_sections = [section for section in components if self._is_primary_section(section)]
+        if not primary_sections:
+            return None
+        local_sections = {
+            self._solution_name(section.get("subcomponent_name")): section
+            for section in components
+            if not self._is_primary_section(section)
+        }
+
+        ingredients: list[dict] = []
+        solutions: list[dict] = []
+        gas_keys: set[str] = set()
+        for section in primary_sections:
+            for item in section.get("items", []):
+                if not isinstance(item, dict):
+                    continue
+                if self._looks_like_solution_item(item):
+                    amount = self._decimal(item.get("volume"))
+                    name = self._solution_name(item.get("component_name"))
+                    explicit_solution_name = bool(re.search(r"\bsolution\b", name, re.I))
+                    if amount is not None or item.get("reference_media_id"):
+                        solution = self._solution_from_item(item, local_sections)
+                        if solution is not None:
+                            solutions.append(solution)
+                        continue
+                    if explicit_solution_name:
+                        # With no working amount this is normally an adjustment
+                        # stock described in the paragraph's preparation prose.
+                        continue
+                ingredient = self._ingredient_from_item(
+                    item,
+                    allow_unquantified=True,
+                    allow_final_concentration=True,
+                )
+                if ingredient is not None:
+                    if self._is_gas_item(item):
+                        gas_key = (
+                            str(item.get("gmo_id") or "").strip()
+                            or str(ingredient.get("preferred_term") or "").casefold()
+                        )
+                        if gas_key in gas_keys:
+                            continue
+                        gas_keys.add(gas_key)
+                    ingredients.append(ingredient)
+        return ingredients, solutions
+
+    @staticmethod
+    def _extract_preparation_steps(medium: dict) -> list[dict]:
+        steps = []
+        for row in medium.get("comments", []):
+            comment = str(row.get("comment") or "").strip() if isinstance(row, dict) else ""
+            if not comment:
+                continue
+            lowered = comment.lower()
+            if "autoclave" in lowered:
+                action = "AUTOCLAVE"
+            elif "filter" in lowered:
+                action = "FILTER_STERILIZE"
+            elif "adjust ph" in lowered:
+                action = "ADJUST_PH"
+            elif "dissolve" in lowered:
+                action = "DISSOLVE"
+            else:
+                action = "MIX"
+            steps.append(
+                {
+                    "step_number": len(steps) + 1,
+                    "action": action,
+                    "description": comment,
+                }
+            )
+        return steps
+
     def _extract_ingredients(self, medium: dict) -> list[dict]:
         """
         Extract ingredients from medium.
@@ -215,47 +660,9 @@ class TogoImporter:
         for comp_section in components:
             items = comp_section.get("items", [])
             for item in items:
-                component_name = item.get("component_name", "Unknown")
-
-                ingredient = {"preferred_term": component_name}
-
-                # Concentration
-                volume = item.get("volume")
-                unit = item.get("unit", "")
-                if volume:
-                    # Try to parse unit
-                    concentration_unit = self._parse_unit(unit)
-                    ingredient["concentration"] = {
-                        "value": str(volume),
-                        "unit": concentration_unit,
-                    }
-
-                # GMO component ID (could potentially map to ChEBI)
-                item.get("gmo_id")
-                item.get("label")
-
-                # For now, we don't have direct ChEBI mappings in TOGO data
-                # But we have GMO IDs which are ontology terms
-
-                # Role/notes from TOGO properties and roles
-                notes_parts = []
-
-                roles = item.get("roles", [])
-                if roles:
-                    role_labels = [r.get("label") for r in roles if r.get("label")]
-                    if role_labels:
-                        notes_parts.append(f"Role: {', '.join(role_labels)}")
-
-                properties = item.get("properties", [])
-                if properties:
-                    prop_labels = [p.get("label") for p in properties if p.get("label")]
-                    if prop_labels:
-                        notes_parts.append(f"Properties: {', '.join(prop_labels)}")
-
-                if notes_parts:
-                    ingredient["notes"] = "; ".join(notes_parts)
-
-                ingredients.append(ingredient)
+                ingredient = self._ingredient_from_item(item)
+                if ingredient is not None:
+                    ingredients.append(ingredient)
 
         return (
             ingredients
@@ -282,10 +689,15 @@ class TogoImporter:
         unit_lower = unit_str.lower().replace(" ", "")
 
         unit_map = {
+            "g": "G_PER_L",
             "g/l": "G_PER_L",
             "g/liter": "G_PER_L",
+            "mg": "MG_PER_L",
             "mg/l": "MG_PER_L",
             "mg/liter": "MG_PER_L",
+            "ml": "ML_PER_L",
+            "ml/l": "ML_PER_L",
+            "l": "L",
             "μg/l": "MICROG_PER_L",
             "ug/l": "MICROG_PER_L",
             "m": "MOLAR",
@@ -366,10 +778,30 @@ class TogoImporter:
         ph_info = self._extract_ph(medium)
         recipe.update(ph_info)
 
-        # Ingredients
-        ingredients = self._extract_ingredients(medium)
-        if ingredients:
-            recipe["ingredients"] = ingredients
+        # Preserve complete local batches as solutions when TOGO exposes enough
+        # volume evidence to distinguish stock composition from final ingredients.
+        solutions = self._extract_assembled_solutions(medium)
+        if solutions:
+            recipe["ingredients"] = []
+            recipe["solutions"] = solutions
+            preparation_steps = self._extract_preparation_steps(medium)
+            if preparation_steps:
+                recipe["preparation_steps"] = preparation_steps
+        else:
+            primary_components = self._extract_primary_components(medium)
+            if primary_components is None:
+                ingredients = self._extract_ingredients(medium)
+                referenced_solutions = []
+            else:
+                ingredients, referenced_solutions = primary_components
+            if ingredients:
+                recipe["ingredients"] = ingredients
+            if referenced_solutions:
+                recipe["solutions"] = referenced_solutions
+            if primary_components is not None:
+                preparation_steps = self._extract_preparation_steps(medium)
+                if preparation_steps:
+                    recipe["preparation_steps"] = preparation_steps
 
         # Media term (TOGO database reference)
         recipe["media_term"] = {

@@ -2,8 +2,8 @@ id: CultureMech:006845
 name: halorhabdus_utahensis_medium
 original_name: HALORHABDUS UTAHENSIS medium
 category: archaea
-medium_type: DEFINED
-composition_type: DEFINED
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.6
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 927 | DSMZ Medium: 927 (mediadive.medium:927)
@@ -135,14 +135,14 @@ ingredients:
     label: boric acid
 - preferred_term: CoCl2 x 6 H2O
   term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
   concentration:
     value: '190'
     unit: MG_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318

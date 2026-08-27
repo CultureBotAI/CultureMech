@@ -6,8 +6,11 @@ composition_type: UNDEFINED
 physical_state: LIQUID
 description: Algae culture medium from SAG Culture Collection (Göttingen). Suitable
   for freshwater algae cultivation. Recipe available in PDF format.
-notes: Full recipe available at http://sagdb.uni-goettingen.de/culture_media/24 WC
+notes: 'Full recipe available at http://sagdb.uni-goettingen.de/culture_media/24 WC
   Medium.pdf
+
+  Composition verified against https://sagdb.uni-goettingen.de/culture_media/24%20WC%20Medium.pdf
+  on 2026-08-25 (SHA-256 7c53c28713fc1b1b95f6dcc518e3b9e1324a25ee6ccf7a4064a2cd369f7dcaf7).'
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -49,10 +52,262 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_sag_missing_compositions.py
+  action: RESTORED_SAG_SOURCE_COMPOSITION
+  changes: ingredients 0 -> 2; solutions 0 -> 8
+  notes: Restored the formulation from the reviewed SAG PDF, preserving final-medium
+    and stock-solution boundaries. Calculated stock concentrations are documented
+    in-place. Ingredient identities were selected from the MediaIngredientMech SSSOM.
 references:
 - reference: SAG:WC
 - reference: http://sagdb.uni-goettingen.de/culture_media/24 WC Medium.pdf
-ingredients: []
-data_quality_flags:
-- incomplete_composition
+ingredients:
+- preferred_term: TES
+  concentration:
+    value: '0.115'
+    unit: G_PER_L
+  term:
+    id: CHEBI:39035
+    label: TES
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39035
+    label: TES
+- preferred_term: Deionized or distilled water
+  concentration:
+    value: '1'
+    unit: L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 original_name: Woods Hole MBL Medium
+solutions:
+- preferred_term: CaCl2 x 2 H2O stock solution
+  composition:
+  - preferred_term: CaCl2 x 2 H2O
+    concentration:
+      value: '36.8'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+- preferred_term: MgSO4 x 7 H2O stock solution
+  composition:
+  - preferred_term: MgSO4 x 7 H2O
+    concentration:
+      value: '37'
+      unit: G_PER_L
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+- preferred_term: NaHCO3 stock solution
+  composition:
+  - preferred_term: NaHCO3
+    concentration:
+      value: '12.6'
+      unit: G_PER_L
+    term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32139
+      label: sodium hydrogencarbonate
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+  notes: The PDF prints 'NaH CO3'; interpreted as sodium hydrogencarbonate.
+- preferred_term: K2HPO4 x 3 H2O stock solution
+  composition:
+  - preferred_term: K2HPO4 x 3 H2O
+    concentration:
+      value: '11.4'
+      unit: G_PER_L
+    term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:131527
+      label: dipotassium hydrogen phosphate
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+- preferred_term: NaNO3 stock solution
+  composition:
+  - preferred_term: NaNO3
+    concentration:
+      value: '85'
+      unit: G_PER_L
+    term:
+      id: CHEBI:63005
+      label: sodium nitrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63005
+      label: sodium nitrate
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+- preferred_term: Na2SiO3 x 9 H2O stock solution
+  composition:
+  - preferred_term: Na2SiO3 x 9 H2O
+    concentration:
+      value: '21.2'
+      unit: G_PER_L
+    term:
+      id: CHEBI:132108
+      label: sodium silicate nonahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:132108
+      label: sodium silicate nonahydrate
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+- preferred_term: WC micronutrient solution
+  composition:
+  - preferred_term: Na2EDTA
+    concentration:
+      value: '4.36'
+      unit: G_PER_L
+    notes: Disodium EDTA; hydration state unspecified.
+  - preferred_term: FeCl3 x 6 H2O
+    concentration:
+      value: '3.15'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86254
+      label: iron trichloride hexahydrate
+  - preferred_term: CuSO4 x 5 H2O
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+  - preferred_term: ZnSO4 x 7 H2O
+    concentration:
+      value: '0.022'
+      unit: G_PER_L
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+  - preferred_term: CoCl2 x 6 H2O
+    concentration:
+      value: '0.01'
+      unit: G_PER_L
+    term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+  - preferred_term: MnCl2 x 4 H2O
+    concentration:
+      value: '0.18'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+  - preferred_term: Na2MoO4 x 2 H2O
+    concentration:
+      value: '0.006'
+      unit: G_PER_L
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+  - preferred_term: H3BO3
+    concentration:
+      value: '1'
+      unit: G_PER_L
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+  - preferred_term: Deionized or distilled water
+    concentration:
+      value: '1'
+      unit: L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+- preferred_term: WC vitamin solution
+  composition:
+  - preferred_term: Thiamine HCl
+    concentration:
+      value: '0.1'
+      unit: G_PER_L
+    term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49105
+      label: thiamine hydrochloride
+  - preferred_term: Biotin
+    concentration:
+      value: '0.0005'
+      unit: G_PER_L
+    term:
+      id: CHEBI:15956
+      label: biotin
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15956
+      label: biotin
+  - preferred_term: Deionized or distilled water
+    concentration:
+      value: '1'
+      unit: L
+    term:
+      id: CHEBI:15377
+      label: water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  concentration:
+    value: '1'
+    unit: ML_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare the stock solutions and combine them at the stated amounts.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 minutes following the SAG general preparation
+    guidance.
+sterilization:
+  method: AUTOCLAVE

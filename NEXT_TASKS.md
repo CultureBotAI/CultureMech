@@ -143,6 +143,14 @@ edit template → all pages re-render.
 
 ## 3. Cross-Mech validator pin guard covers only the .py — DONE (all 4 Mech repos)
 
+**Current governance update (2026-08-25; supersedes the topology chronology
+below):** reviewed `CultureBotAI/culturebotai-claw#133` makes
+`CultureBotAI/culturebotai-claw` the canonical manifest and payload source.
+CultureMech is now one of five pinned consumers, not a hub. Shared changes land
+in claw first and then roll to all five Mechs at one immutable claw commit. The
+June–August notes below are retained as the incident history that motivated the
+new fail-closed design; their old propagation instructions are no longer active.
+
 **Done** (2026-06-14, culturebotai-claw#6 Option 1): `verify-validator-pin` /
 `refresh-validator-pin` now pin the full vendored set via a `VENDORED_IDLABEL_FILES`
 manifest — the validator `.py` **plus** the two byte-identical shared tests

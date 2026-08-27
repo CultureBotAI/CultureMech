@@ -4,7 +4,7 @@ original_name: S/W + AMP
 category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
-physical_state: LIQUID
+physical_state: BIPHASIC
 ph_range:
   min: 7.0
   max: 8.0
@@ -13,31 +13,52 @@ media_term:
   term:
     id: mediadive.medium:C100
     label: S/W + AMP
-notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_SW_AMP.pdf'
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_SW_AMP.pdf
+
+  Composition verified against https://www.ccap.ac.uk/wp-content/uploads/MR_SW_AMP.pdf
+  on 2026-08-25.'
 ingredients:
-- preferred_term: Soil
+- preferred_term: Ammonium magnesium phosphate
+  concentration:
+    value: 0.01 g per vessel
+    unit: VARIABLE
+  term:
+    id: CHEBI:149425
+    label: ammonium magnesium phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:149425
+    label: ammonium magnesium phosphate
+  notes: Place in the base of each vessel before adding soil and water.
+- preferred_term: Air-dried sieved calcareous soil
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: (NH4)MgPO4
+  notes: Add a layer approximately 1 cm deep to each vessel.
+- preferred_term: Deionized water
   concentration:
-    value: '0.01'
-    unit: G_PER_L
+    value: variable
+    unit: VARIABLE
+  notes: Add carefully to a depth of 7-10 cm above the soil layer.
 preparation_steps:
 - step_number: 1
-  action: AUTOCLAVE
-  description: "Put a layer about 1 cm deep of air-dried, sieved good calcareous garden\
-    \ loam into a\r\ntest tube or jar. (The use of mud from rivers or ponds is rarely\
-    \ satisfactory.)\r\nCarefully add deionised water to a depth of 7 to 10 cm, plug\
-    \ or cover, and steam\r\nfor one hour or autoclave for 15 minutes at 15 psi (longer\
-    \ for larger vessels) on\r\neach of 2 consecutive days; further sterilisation\
-    \ is not needed. Allow to stand for a\r\nfurther day before inoculating, when\
-    \ the pH should be between 7.0 - 8.0."
+  action: ALIQUOT
+  description: Place approximately 0.01 g ammonium magnesium phosphate in the base
+    of each vessel.
 - step_number: 2
+  action: ALIQUOT
+  description: Place a 1 cm layer of air-dried, sieved calcareous soil in each vessel.
+- step_number: 3
   action: MIX
-  description: "S/W is  prepared  as  above,  but approximately  0.01  g  ammonium\
-    \  magnesium \r\nphosphate is placed into the base of the test tube before adding\
-    \ the soil and water."
+  description: Optionally add one grain for organisms that benefit from it.
+- step_number: 4
+  action: ALIQUOT
+  description: Add deionized water carefully to a depth of 7-10 cm, then plug or cover.
+- step_number: 5
+  action: AUTOCLAVE
+  description: Autoclave at 15 psi for 15 minutes on each of two consecutive days.
+- step_number: 6
+  action: STORE
+  description: Let stand for at least one further day before inoculation.
 applications:
 - Microbial cultivation
 references:
@@ -67,3 +88,11 @@ curation_history:
   curator: migrate_ph_range.py
   action: MIGRATED_PH_RANGE
   notes: 'ph_range ''7-8'' -> {''min'': 7.0, ''max'': 8.0}'
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_ccap_duplicate_compositions.py
+  action: SOURCE_CORRECTED_CCAP_DUPLICATE_RECIPE
+  changes: ingredients 2 -> 3; solutions 0 -> 0
+  notes: Rebuilt sw_amp from the reviewed CCAP PDF. Preserved stock boundaries and
+    per-vessel quantities; ingredient identities follow the MediaIngredientMech SSSOM.
+sterilization:
+  method: AUTOCLAVE

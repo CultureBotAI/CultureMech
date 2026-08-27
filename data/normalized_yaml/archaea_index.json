@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-19T22:20:30.033441+00:00",
+  "generated": "2026-08-26T06:18:22.501374+00:00",
   "category": "archaea",
   "count": 743,
   "recipes": {
@@ -595,11 +595,11 @@
     "CultureMech:004073": {
       "name": "methanocella_conradii_medium",
       "filename": "KOMODO_1318_METHANOCELLA_CONRADII_medium.yaml",
-      "ingredient_count": 30,
+      "ingredient_count": 11,
       "id": "CultureMech:004073",
       "source_id": "komodo.medium:1318",
       "source": "KOMODO",
-      "solution_count": 3,
+      "solution_count": 5,
       "categories": [
         "archaea"
       ]
@@ -3015,7 +3015,7 @@
     "CultureMech:009130": {
       "name": "methanocella_conradii_medium",
       "filename": "TOGO_M2561_Methanocella_Conradii_Medium.yaml",
-      "ingredient_count": 39,
+      "ingredient_count": 11,
       "id": "CultureMech:009130",
       "source_id": "TOGO:M2561",
       "source": "TOGO",
@@ -4481,10 +4481,11 @@
     "CultureMech:002362": {
       "name": "archaeoglobus_mcr_medium",
       "filename": "archaeoglobus_mcr_medium.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 1,
       "id": "CultureMech:002362",
       "source_id": "mediadive.medium:J1195",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "archaea"
       ]
@@ -4686,10 +4687,11 @@
     "CultureMech:003283": {
       "name": "fervidicoccus_fontis_medium",
       "filename": "fervidicoccus_fontis_medium.yaml",
-      "ingredient_count": 29,
+      "ingredient_count": 8,
       "id": "CultureMech:003283",
       "source_id": "mediadive.medium:J935",
       "source": "MediaDive",
+      "solution_count": 6,
       "categories": [
         "archaea"
       ]
@@ -5763,10 +5765,11 @@
     "CultureMech:003049": {
       "name": "methanobacterium_medium_ii_with_formae",
       "filename": "methanobacterium_medium_ii_with_formae.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 15,
       "id": "CultureMech:003049",
       "source_id": "mediadive.medium:J703",
       "source": "MediaDive",
+      "solution_count": 4,
       "categories": [
         "archaea"
       ]
@@ -5943,10 +5946,11 @@
     "CultureMech:002720": {
       "name": "methanocaldococcus_indiensis_medium",
       "filename": "methanocaldococcus_indiensis_medium.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 18,
       "id": "CultureMech:002720",
       "source_id": "mediadive.medium:J361",
       "source": "MediaDive",
+      "solution_count": 3,
       "categories": [
         "archaea"
       ]
@@ -6010,11 +6014,11 @@
     "CultureMech:000776": {
       "name": "methanocella_conradii_medium",
       "filename": "methanocella_conradii_medium.yaml",
-      "ingredient_count": 30,
+      "ingredient_count": 11,
       "id": "CultureMech:000776",
       "source_id": "mediadive.medium:1318",
       "source": "MediaDive",
-      "solution_count": 3,
+      "solution_count": 5,
       "categories": [
         "archaea"
       ]
@@ -7392,10 +7396,11 @@
     "CultureMech:003286": {
       "name": "modified_halosimplex_medium",
       "filename": "modified_halosimplex_medium.yaml",
-      "ingredient_count": 0,
+      "ingredient_count": 8,
       "id": "CultureMech:003286",
       "source_id": "mediadive.medium:J939",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "archaea"
       ]
@@ -8504,6 +8509,7 @@
       "id": "CultureMech:002977",
       "source_id": "mediadive.medium:J630",
       "source": "MediaDive",
+      "solution_count": 1,
       "categories": [
         "archaea"
       ]

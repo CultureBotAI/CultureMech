@@ -144,8 +144,8 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
-    id: CHEBI:30066
-    label: thioglycolate(1-)
+    id: CHEBI:86481
+    label: sodium thioglycolate
   mediaingredientmech_term:
     id: MediaIngredientMech:000267
     label: Na-thioglycolate

@@ -5,6 +5,7 @@ medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
 id: CultureMech:015438
+id_lineage_token: legacy:7453a41617ead657f6e78638efd841eae0973e9c97e7b5d07b9262628fa420e1
 ingredients:
 - preferred_term: Potassium phosphate
   concentration:

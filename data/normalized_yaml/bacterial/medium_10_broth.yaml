@@ -10,13 +10,61 @@ media_term:
   term:
     id: mediadive.medium:J179
     label: MEDIUM 10 BROTH
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=179'
-ingredients: []
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=179
+
+  Composition recovery source: https://togomedium.org/medium/M172 (TOGO snapshot of
+  JCM medium J179).'
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '850'
+    unit: ML_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: water
+- preferred_term: Cellobiose
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+  term:
+    id: CHEBI:17057
+    label: cellobiose
+- preferred_term: Glucose
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+  term:
+    id: CHEBI:17234
+    label: glucose
+- preferred_term: Soluble starch
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Undefined component'
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Trypticase peptone (BD-BBL)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
 preparation_steps:
 - step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 6.7--6.8.
+- step_number: 2
   action: MIX
-  description: Use Medium 10 (see Medium No. 133) with 0.5 ml/L (final) of 0.2% hemin
-    solution, and omit agar and Toray silicone solution.
+  description: Use Medium 10 (see Medium No. [133]) with 0.5 ml/L (final) of 0.2%
+    hemin solution, and omit agar and Toray silicone solution.
 applications:
 - Microbial cultivation
 curation_history:
@@ -53,6 +101,65 @@ curation_history:
   notes: Removed the 'See source for composition' placeholder ingredient; the record
     carries no imported composition and is flagged incomplete (#175).
   changes: Dropped placeholder ingredient 'See source for composition'
-data_quality_flags:
-- incomplete_composition
-- source_information_unavailable
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_jcm_missing_from_togo.py
+  action: RECOVERED_JCM_COMPOSITION_FROM_TOGO
+  changes: ingredients 0 -> 6; solutions 0 -> 8; preparation_steps 1 -> 2; removed
+    obsolete composition/source flags
+  notes: Recovered JCM J179 from source-equivalent TOGO M172. Preserved final ingredients
+    and stock-solution boundaries; did not flatten referenced media or stocks.
+- timestamp: '2026-08-26T02:13:38.762734+00:00'
+  curator: apply_mim_groundings.py
+  action: Adopted MIM published grounding
+  notes: Grounded 3 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
+    exactMatch only, where this record carried no CHEBI term (#308).
+solutions:
+- preferred_term: 0.1% Resazurin solution
+  composition: []
+  concentration:
+    value: '0.5'
+    unit: ML_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Solution, Defined component'
+- preferred_term: 0.2% Hemin solution
+  composition: []
+  concentration:
+    value: '0.5'
+    unit: ML_PER_L
+  notes: 'Role: Growth factor; Properties: Solution, Organic compound, Defined component'
+- preferred_term: 4% Na2SO3 solution
+  composition: []
+  concentration:
+    value: '100'
+    unit: ML_PER_L
+  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
+    Solution'
+- preferred_term: 25% L--Ascorbic acid solution
+  composition: []
+  concentration:
+    value: '2'
+    unit: ML_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Solution, Defined component'
+- preferred_term: 5% L--Cysteine・HCl・H2O solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+  notes: 'Properties: Defined component, Organic compound, Solution'
+- preferred_term: VFA solution (see Medium [M124])
+  composition: []
+  concentration:
+    value: '3.1'
+    unit: ML_PER_L
+  notes: Defined in TOGO medium M124.
+- preferred_term: Salt solution No. 1 (see Medium [M124])
+  composition: []
+  concentration:
+    value: '37.5'
+    unit: ML_PER_L
+  notes: Defined in TOGO medium M124.
+- preferred_term: Salt solution No. 2 (see Medium [M124])
+  composition: []
+  concentration:
+    value: '37.5'
+    unit: ML_PER_L
+  notes: Defined in TOGO medium M124.

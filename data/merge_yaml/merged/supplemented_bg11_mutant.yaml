@@ -16,8 +16,8 @@ ingredients:
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
   term:
-    id: CHEBI:30769
-    label: citric acid
+    id: CHEBI:16947
+    label: citrate(3-)
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -42,14 +42,14 @@ ingredients:
   notes: 'Cross-references: KEGG:fe3dcit'
 - preferred_term: EDTA
   term:
-    id: CHEBI:64755
-    label: EDTA(2-)
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
   concentration:
     value: '0.003422'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
-    id: CHEBI:64755
-    label: EDTA(2-)
+    id: CHEBI:4735
+    label: ethylenediaminetetraacetic acid
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118

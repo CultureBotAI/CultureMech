@@ -81,11 +81,11 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
-    id: CHEBI:53258
-    label: sodium citrate
+    id: CHEBI:30769
+    label: citric acid
   mediaingredientmech_chebi_term:
-    id: CHEBI:53258
-    label: sodium citrate
+    id: CHEBI:30769
+    label: citric acid
 media_term:
   preferred_term: TOGO Medium M2196
   term:

@@ -49,17 +49,30 @@ curation_history:
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
     category->lowercase=1
+- timestamp: '2026-08-25T00:00:00-07:00'
+  curator: repair_ccap_instruction_rows.py
+  action: REPAIRED_CCAP_INSTRUCTION_ROWS
+  changes: ingredients 7 -> 6
+  notes: Repaired preparation text and nested-recipe flattening against CCAP MR_MAF6_SE.pdf.
+    Moved process statements to preparation_steps and restored source-asserted components
+    or constituent-medium references where applicable.
 references:
 - reference: CCAP:MAF6_SE
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_MAF6_SE.pdf
 ingredients:
-- preferred_term: Add to 1000 ml of distilled water
-  notes: Ontology mapping not yet available; From CCAP Medium MR_MAF6_SE.pdf; Curated
-    from CCAP Medium MR_MAF6_SE.pdf specification
+- preferred_term: Na2EDTA
   concentration:
     value: '0.75'
     unit: G_PER_L
   source: CCAP Medium MR_MAF6_SE.pdf
+  notes: Na2EDTA in the source-defined trace-element stock; this is a stock composition,
+    not a final-medium concentration.
+  term:
+    id: CHEBI:64734
+    label: EDTA disodium salt (anhydrous)
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
+    label: EDTA disodium salt (anhydrous)
 - preferred_term: FeCl3 x 6 H2O
   term:
     id: CHEBI:86254
@@ -107,8 +120,8 @@ ingredients:
     specification
 - preferred_term: CoCl2 x 6 H2O
   term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:53503
+    label: cobalt chloride hexahydrate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -135,15 +148,28 @@ ingredients:
   source: CCAP Medium MR_MAF6_SE.pdf
   notes: From CCAP Medium MR_MAF6_SE.pdf; Curated from CCAP Medium MR_MAF6_SE.pdf
     specification
-- preferred_term: Soil is prepared as above.
-  notes: Ontology mapping not yet available; From CCAP Medium MR_MAF6_SE.pdf; Curated
-    from CCAP Medium MR_MAF6_SE.pdf specification
-  concentration:
-    value: '105'
-    unit: G_PER_L
-  source: CCAP Medium MR_MAF6_SE.pdf
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated
 - curation_method:automated_expert_mapping
 original_name: MAF6:SE
+solutions:
+- preferred_term: SE2 (Soil Extract 2)
+  culturemech_term:
+    id: CultureMech:000129
+    label: SE2
+  concentration:
+    value: '30'
+    unit: ML_PER_L
+  notes: 'Source-asserted addition of constituent soil extract. Source: CCAP Medium
+    MR_MAF6_SE.pdf.'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Bring to 1 L with distilled water.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 6.6.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave at 15 psi for 15 minutes.

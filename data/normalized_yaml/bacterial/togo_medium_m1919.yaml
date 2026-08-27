@@ -133,11 +133,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
     component'
   term:
-    id: CHEBI:30924
-    label: L-tartrate(2-)
+    id: CHEBI:63017
+    label: sodium L-tartrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:30924
-    label: L-tartrate(2-)
+    id: CHEBI:63017
+    label: sodium L-tartrate
 - preferred_term: FeSO4
   concentration:
     value: '1.36'

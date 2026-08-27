@@ -10,6 +10,7 @@ from culturemech.schema.culturemech_dataclasses import (
 )
 from scripts import apply_media_variant_links
 from scripts.propose_media_variant_links import (
+    build_proposals,
     choose_parent,
     confidence_for_group,
     infer_relationship,
@@ -17,13 +18,7 @@ from scripts.propose_media_variant_links import (
 )
 from scripts.validate_media_variant_links import RecipeIndex, validate_links
 
-SCHEMA_PATH = (
-    Path(__file__).parent.parent
-    / "src"
-    / "culturemech"
-    / "schema"
-    / "culturemech.yaml"
-)
+SCHEMA_PATH = Path(__file__).parent.parent / "src" / "culturemech" / "schema" / "culturemech.yaml"
 
 
 def test_schema_has_parent_child_variant_slots():
@@ -56,6 +51,7 @@ def test_dataclasses_accept_parent_child_variant_links():
     }
 
     child = MediaRecipe(
+        id="CultureMech:000002",
         name="lb_low_salt_variant",
         medium_type="COMPLEX",
         physical_state="LIQUID",
@@ -71,6 +67,7 @@ def test_dataclasses_accept_parent_child_variant_links():
     )
 
     parent = MediaRecipe(
+        id="CultureMech:000001",
         name="lb_medium",
         medium_type="COMPLEX",
         physical_state="LIQUID",
@@ -123,9 +120,7 @@ def test_variant_link_validator_checks_bidirectional_links():
 
     assert validate_links(index) == []
 
-    index.path_to_recipe["data/normalized_yaml/bacterial/lb_medium.yaml"][
-        "variant_children"
-    ] = []
+    index.path_to_recipe["data/normalized_yaml/bacterial/lb_medium.yaml"]["variant_children"] = []
     findings = validate_links(index)
     assert len(findings) == 1
     assert findings[0].field == "parent_media"
@@ -223,6 +218,26 @@ def test_variant_proposal_marks_algae_source_duplicates_for_review():
     assert confidence == "LOW"
     assert status_for_group(confidence, 2) == "REVIEW_REQUIRED"
     assert "algae source-duplicate candidate" in reason
+
+
+def test_variant_proposals_exclude_standalone_solution_records():
+    media = {
+        "yaml_path": "data/normalized_yaml/bacterial/media.yaml",
+        "record_kind": "MEDIA",
+        "ingredient_identity_signature": "same",
+        "ingredient_concentration_signature": "same-concentration",
+        "total_component_count": "1",
+    }
+    solution = {
+        **media,
+        "yaml_path": "data/normalized_yaml/bacterial/stock.yaml",
+        "record_kind": "SOLUTION",
+    }
+
+    proposals, groups = build_proposals([media, solution])
+
+    assert proposals == []
+    assert groups == []
 
 
 def test_apply_variant_links_plans_bidirectional_edits(tmp_path, monkeypatch):

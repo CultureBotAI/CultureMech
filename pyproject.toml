@@ -96,6 +96,8 @@ where = ["src"]
 
 [tool.setuptools.package-data]
 culturemech = [
+    "data/mediaingredientmech/*.csv",
+    "data/mediaingredientmech/*.json",
     "schema/*.yaml",
     "templates/*.j2",
     "templates/*.html",

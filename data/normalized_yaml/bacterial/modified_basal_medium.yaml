@@ -297,8 +297,8 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
-    id: CHEBI:26948
-    label: vitamin B1
+    id: CHEBI:18385
+    label: thiamine(1+)
   mediaingredientmech_term:
     id: MediaIngredientMech:000898
     label: Thiamine

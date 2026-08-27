@@ -35,6 +35,69 @@ to require exact source, browser-record, and page coverage. The tracked
 `app/*.html`, JavaScript application code, root `index.html`, and
 `pages/media_growth_review.html` remain publication inputs.
 
+## Pinned external reference data
+
+`data/normalized_yaml/` remains authoritative for recipe content: labels,
+amounts, containment, preparation, and provenance. Published ingredient
+identity is resolved separately through the packaged MIM snapshot at
+`src/culturemech/data/mediaingredientmech/label_index.csv`, with its immutable
+source commit and SHA-256 recorded in adjacent metadata. This split lets MIM
+curation reach exports without rewriting 15,877 recipe records while keeping
+normal builds offline and reproducible.
+
+Use `just check-mim-label-index` for the offline integrity gate. A dependency
+bump is preview-only by default and requires a full MIM commit plus an explicit
+`--apply`; see
+[`mediaingredientmech_enrichment.md`](mediaingredientmech_enrichment.md).
+
+## Generated direct ingredient occurrences
+
+`just aggregate-all-ingredients` projects Layer 3 recipe content and the pinned
+MIM identity snapshot into four generated files under `output/`:
+
+- `ingredient_occurrences.tsv` is the canonical, complete direct-containment
+  table.
+- `mapped_ingredients.yaml` and `unmapped_ingredients.yaml` are summaries of
+  that same table.
+- `ingredient_aggregation_errors.tsv` reports YAML and extraction-blocking
+  schema/shape failures.
+
+The traversal follows root schema shape: MediaRecipe-shaped records contribute
+`ingredients`, while SolutionRecipe-shaped records contribute `composition`.
+The two fields are not concatenated, solution placeholder `ingredients` are not
+counted, and nested `solutions[].composition` is not expanded. This is direct
+root containment, distinct from any transitive recipe-to-solution expansion.
+
+Every occurrence carries `(recipe_id, component_field, component_index)` as its
+stable coordinate. `recipe_id` is the root `CultureMech:NNNNNN` identifier;
+recipe labels are display metadata only. `source_path` is a POSIX path relative
+to the selected input root, so custom scans do not embed worktree locations.
+`occurrence_count` is the number of complete rows and `distinct_recipe_count`
+is the number of unique stable recipe IDs, so neither count can be clipped by
+an examples limit.
+
+The #260 resolver partitions rows by whether `GroundingDecision.identifier` is
+present. `mim_exact`, `mim_normalized`, `local_fallback`, and
+`ambiguous_local_fallback` are mapped; `authoritative_unmapped`, `ambiguous`,
+and `not_found` are unmapped. The selected identity is
+`resolved_identifier`. MIM's `ontology_id` remains
+`mim_ontology_id_diagnostic`, and an upstream `mediadive.compound:*` remains
+`source_compound_id`; neither is silently promoted to semantic identity.
+
+The outputs are sorted, LF-terminated, uncapped, and contain no wall-clock
+`generation_date`, making identical reruns byte-identical. A fatal input error
+is always written to the error TSV and returns nonzero regardless of
+`--verbose`. Occurrence and summary outputs are staged as one publication set
+only after a successful complete scan. Each destination is replaced atomically,
+and an in-process replacement failure rolls the set back to the last successful
+artifacts.
+
+These files are reproducible projections, not a fifth curation layer. They are
+ignored by Git, must not be hand-edited, and never rewrite
+`data/normalized_yaml/`. See the
+[unmapped ingredient occurrence guide](unmapped_ingredients_guide.md) for the
+row and count contracts.
+
 ---
 
 ## Layer 1: Raw Data (`raw/`)

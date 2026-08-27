@@ -48,14 +48,14 @@ ingredients:
     label: riboflavin
 - preferred_term: Vitamin B12
   term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
   concentration:
     value: '7.378e-07'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
-    id: CHEBI:17439
-    label: cyanocob(III)alamin
+    id: CHEBI:176843
+    label: vitamin B12
 - preferred_term: Folate
   concentration:
     value: '4.531e-05'
