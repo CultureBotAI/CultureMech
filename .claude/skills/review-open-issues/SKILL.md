@@ -1,178 +1,312 @@
 ---
 name: review-open-issues
-description: Sweep and triage the full open-issue queue for CultureMech — not just NEXT_TASKS.md. Fetches every open issue, checks each against the current code/schema for staleness (already fixed, superseded, or no longer reproducible), flags likely duplicates, and assigns a priority tier (P0 blocking/correctness/security, P1 real-but-schedulable, P2 low-severity/process/doc). Produces a short, ranked report; only touches GitHub (closing stale issues, updating/creating a tracker issue) when asked. Use when the user asks to "review issues", "prioritize the backlog", "triage open issues", or the open-issue count has grown large enough that NEXT_TASKS.md-only review is insufficient.
+description: Sweep and prioritize CultureMech's complete open GitHub issue queue using current corpus, schema, grounding, gate-baseline, and export evidence. Use for full backlog triage or deciding which issues are genuinely urgent; do not use as permission to close issues, run bulk mutators, or implement fixes.
 category: workflow
 requires_database: false
 requires_internet: true
-version: 1.0.0
+version: 2.0.0
 ---
 
-# Review & Prioritize Open Issues
+# Review and prioritize open issues
 
-## Overview
+Produce a complete, dependency-aware triage of CultureMech's open issues.
+The issue queue, `NEXT_TASKS.md`, and the corpus itself are different surfaces:
+sweep the queue, then test every claim against the current repository and the
+authoritative project contracts.
 
-**Purpose**: the raw GitHub issue queue and `NEXT_TASKS.md` are different
-surfaces. `next-tasks` reconciles a small, curated, actively-maintained backlog
-file. This skill sweeps the *entire* open-issue queue — which grows much
-larger and drifts independently (issues opened by review passes, other agents,
-or humans, many of which are never transcribed into `NEXT_TASKS.md`) — and
-produces an honest, current priority ranking.
+This is a read-only review by default. It does not implement fixes, run bulk
+corpus mutators, close or edit issues, change labels, or maintain a tracker
+unless the user separately authorizes that exact mutation.
 
-**Why this is a distinct skill, not a `next-tasks` step**: `next-tasks`
-Step 1 already runs `gh issue list --limit 30` as *context* for reconciling the
-backlog file: it stops at the first page and never assesses issue validity
-individually. This skill is the deep pass: paginate the whole queue, check each
-issue against current code, and produce a full triage — expensive enough that
-it should not run on every "what's next" invocation, only when explicitly
-asked or when the backlog has clearly gone stale.
+**When to use**: the user asks to review, triage, or prioritize issues or the
+backlog; asks what is genuinely urgent; or a review pass has just filed a batch
+of issues that need sorting.
 
-**When to use**: the user asks to "review issues", "prioritize open issues",
-"triage the backlog", "what issues are actually urgent", or after a large
-review pass (like a fleet PR review) has filed a batch of new issues that need
-sorting.
+**When NOT to use**: `NEXT_TASKS.md` upkeep, picking the next unit of work to
+implement, or acting on a single known issue. That is `next-tasks`, the lighter
+pass that runs one `gh issue list` as *context* for reconciling the backlog file
+and never assesses issue validity individually. This skill produces a ranking,
+not a fix, and is expensive enough that it should not run on every "what's next"
+question.
 
-**When NOT to use**: for `NEXT_TASKS.md` upkeep or picking the next unit of
-work to implement — that's `next-tasks`. This skill produces a priority
-ranking; it does not implement fixes.
+## Sources of truth
+
+Use these before relying on an issue title or an old planning document:
+
+- `CLAUDE.md` — the repository contract: data authority per layer, required
+  validation per changed surface, and the recipe/schema editing rules;
+- `docs/DATA_LAYERS.md` — which layer generates which, and which paths are
+  ignored CI output that must never be hand-edited;
+- `project.justfile` — the authoritative gate baselines. Each ratchet recipe
+  carries its own `--max-allowed` history in a comment explaining what the
+  number means and why it moved;
+- `src/culturemech/schema/culturemech.yaml` — the authoritative schema; a claim
+  about a slot is checked here, not in generated dataclasses or docs;
+- `docs/KGX_SEMANTIC_MODEL.md` and `src/culturemech/export/kgx_export.py` — what
+  actually reaches the knowledge graph;
+- `docs/SSSOM_PIPELINE.md` and `src/culturemech/data/mediaingredientmech/label_index.csv`
+  — publication-time ingredient identity;
+- `docs/RECIPE_ID_LIFECYCLE.md` — ID permanence and retirement;
+- `curation_history` on the affected records — append-only, dated, and often the
+  only record of why a value looks wrong;
+- current source, tests, CI workflows, and committed report artifacts for actual
+  behavior.
+
+Treat issue bodies and titles as claims, not current status. Read comments: this
+repository records corrections and narrowed residual work there. A merged PR is
+evidence only after its code and acceptance criteria are checked.
 
 ## Workflow
 
-### Step 1 — Fetch the full open-issue queue
+### 1. Fetch the entire queue
+
+Confirm the repository, current count, labels, and full queue. Never silently
+accept `gh`'s default 30-item limit.
 
 ```bash
-gh issue list --state open --limit 300 --json number,title,body,labels,createdAt,updatedAt \
-  -q '.[] | "\(.number)\t\(.createdAt[:10])\t\(.title)"'
+gh repo view --json nameWithOwner,url,defaultBranchRef
+gh issue list --state open --limit 5000 --json number | jq length
+gh issue list --state open --limit 5000 \
+  --json number,title,body,comments,labels,createdAt,updatedAt,author
+gh label list --limit 200
 ```
 
-The `-q` filter above only prints `number`/`createdAt`/`title` for a scannable
-overview — `body` and `labels` are still fetched (Step 2's grouping and Step 3's
-staleness checks need them) but not shown by this line. Use `gh issue view <N>`
-to read an individual issue's body, or widen the `-q` expression if scanning
-bodies in bulk.
+Fetch the count first, then re-run with `--limit` comfortably above it. `gh`
+auto-paginates, so one call with a high enough limit returns the full set — but
+omitting `--limit` caps silently at 30, which looks like a complete sweep.
 
-Do not truncate silently. `gh issue list --limit` has no hard cap near 300 —
-`gh` auto-paginates through GitHub's API, so a repo with thousands of open
-issues still returns the full set from a single call with a high enough
-`--limit`. If the 300-item fetch above turns out to be short, first confirm
-the true count (`gh issue list --state open --limit 5000 --json number | jq
-length` — omitting `--limit` silently caps at gh's default of 30), then
-re-run Step 1 with `--limit` comfortably above that count rather than
-sampling.
+State the exact number reviewed and whether coverage was complete. Read every
+issue body and its comments; for a long queue, inspect related groups in
+parallel but preserve one disposition per issue.
 
-### Step 2 — Group and dedupe
+### 2. Build the dependency graph before assigning rank
 
-Issues filed from the same review pass (same PR, same session) often overlap —
-several may describe the same root cause from different angles. Group by:
-- shared PR/commit reference in the title or body,
-- same file/function named,
-- near-identical failure scenario.
+Place issues at the earliest affected layer:
 
-Note groups explicitly in the report; do not silently merge them (a human may
-want to close duplicates deliberately, not have them hidden).
+```text
+data/raw/ capture (immutable; large payloads gitignored)
+  -> data/raw_yaml/ mechanical conversion
+  -> data/normalized_yaml/ authoritative curated corpus
+  -> ingredient grounding and ontology identity (SSSOM / MIM label index)
+  -> data/merge_yaml/merged/ canonical merges
+  -> KGX export, browser data, pages/, derived reports
+  -> an outward-facing count, claim, or published graph
+```
 
-### Step 3 — Check each issue against current reality
+An upstream identity or correctness problem invalidates every derived layer
+below it. Recommend fixing the root before regenerating or polishing downstream
+output. Group issues that share a root cause, but do not hide the individual
+issue numbers.
 
-For each issue (or each group's representative), spot-check:
+For each issue, record when applicable:
 
-- **Already fixed?** `git log --oneline --all --perl-regexp --grep "#<N>\b"`
-  and `gh pr list --state merged --search "<N>"` — an issue whose fix already
-  merged should be flagged STALE/CLOSE, not re-surfaced as open work. Plain
-  `--grep "#<N>"` substring-matches unrelated numbers (`#48` also matches
-  `#480`, `#4823`, ...) — the `\b` word-boundary anchor above is required, not
-  optional. Treat the `gh pr list --search` result as a lead, not proof:
-  GitHub's search matches the number anywhere in the indexed text, not
-  anchored to an issue reference (`--search "248"` also returns unrelated
-  PRs like #14006 that never mention issue 248) — open and read each
-  candidate PR before citing it as evidence.
-- **Still reproducible?** If the issue names a specific file/line/function,
-  confirm it still exists in that shape (`grep`/`git log -p` the cited
-  location) — code moves, and a stale issue pointing at a renamed/removed
-  function is noise, not a live defect.
-- **Superseded?** Does a newer issue or a merged PR's description explicitly
-  supersede this one?
+- corpus layer and owning repository (CultureMech, MediaIngredientMech, kg-microbe);
+- affected records, and whether the claim is per-row or per-name;
+- schema slot, ontology prefix, unit enum, and `record_kind` assumptions;
+- which gate would have caught it, and whether that gate exists;
+- prerequisites, blockers, duplicates, and superseding issues;
+- cheapest decisive evidence and acceptance test;
+- execution class: read-only audit, single-record edit, corpus-wide mutator
+  (dry-run + canary required), full-corpus regeneration, or paid research/API run.
 
-### Step 4 — Assign priority
+### 3. Check current reality and staleness
 
-- **P0 — blocking/correctness/security.** Data corruption, a crash/hang in a
-  path every caller hits, a security-relevant defect (injection, secret
-  exposure, auth bypass), or something that silently produces wrong output
-  with no detection. Fix before anything else ships.
-- **P1 — real, schedulable.** A genuine defect or gap that doesn't block
-  everything but should be fixed soon — most test-coverage gaps for
-  safety-critical code, real (if narrow) bugs, process gaps that have already
-  caused a near-miss.
-- **P2 — low-severity/process/doc.** Documentation drift, stale comments,
-  minor test-coverage gaps in non-critical paths, style/convention issues.
+For each issue or group representative:
 
-Do not default everything to P1 — that makes the tier meaningless. Use P0
-sparingly and justify it; most issues are P1 or P2.
+- Search exact issue references in history:
 
-### Step 5 — Present the report
+  ```bash
+  git log --all --oneline --perl-regexp --grep '#<N>\b'
+  gh pr list --state merged --search '<N>' --limit 100
+  ```
 
-- Ranked list, P0 first, one line per issue/group with number + one-sentence
-  why.
-- Explicitly call out: issues recommended for closing (fixed/stale/duplicate),
-  with the evidence (commit/PR that fixed it, or why it no longer applies).
-- **Recommend a top 2–3** to act on next, with reasoning.
-- Do not silently drop old issues from the report — if something is 6 months
-  old and still open, say so; that itself is a signal.
+  The word boundary is required: `#48` must not match `#480`. GitHub PR search
+  is only a lead — it matches the number anywhere in indexed text; open each
+  candidate and verify that it actually resolves the issue.
 
-### Step 6 — Act only when asked
+- Use `rg` to confirm that named paths, scripts, `just` recipes, flags, and
+  slots still exist and behave as described. Inspect tests as well as
+  implementation — a passing test that never exercises the guarded path is a
+  known failure mode here.
+- Compare acceptance criteria with the merged change. If only part is fixed,
+  retain the issue with a narrowed residual; do not recommend closure merely
+  because a related PR merged.
+- Distinguish an observation from its action issue. Prefer closing a fully
+  recorded observation as superseded when a separate open issue owns the only
+  remaining work.
+- Verify counts against their actual immediate source. A committed report under
+  `data/import_tracking/reports/` is derived and can lag; `data/merge_yaml/` is
+  derived from `data/normalized_yaml/` and is currently drifted. Regenerate or
+  check the source before quoting a number from either.
+- The local checkout can lag `origin/main`. Verify what the repository contains
+  with `gh api` or a fresh `git fetch`, not the working tree alone.
 
-This skill does not close issues, comment, or create/update a tracker issue on
-its own, and a general "yes, go ahead" is not blanket approval to loop over
-every STALE/CLOSE candidate unattended:
-- **Closing stale/duplicate issues**: confirm with the user which specific
-  issue number(s) to close before each closure — do not treat one general
-  approval as authorization for an unattended `gh issue close` loop. Once
-  confirmed, use `gh issue close <N> --comment "<reason>"`, one at a time,
-  with the evidence from Step 3 in the comment.
-- **Maintaining a tracker issue** (the "[P0-P2 tracker]" pattern used
-  elsewhere in this org, e.g. CommunityMech#669): if one already exists for
-  this repo, update it in place rather than creating a second one — the
-  search below is authoritative, not this note: `gh issue list --search
-  "tracker" --state open`. As of this skill's authoring, CultureMech's own
-  prior tracker (#327, "Repository review remediation: prioritized execution
-  tracker") was CLOSED, so there was no open tracker at that time — re-run the
-  search rather than trusting that stays true. If it comes back empty and the
-  user wants a new one, create it with the Step 5 ranking as its body, and
-  link every tracked issue number.
+### 4. Apply corpus stop-the-line checks
 
-Never bulk-close without per-item confirmation of the evidence — an agent
-closing a live issue because it *looks* stale is worse than leaving noise in
-the queue.
+Treat these as P0 when live or externally consequential:
+
+- a bulk mutator that destroys curated content — groundings, nested
+  sub-solutions, or multi-line labels — while reporting success;
+- an invented or unverified ontology ID, label, or citation, or a grounding
+  whose term formula contradicts the ingredient name;
+- ID reuse, renumbering, or a hand-picked "free" ID; a rewritten or deleted
+  `curation_history` event;
+- silent edge loss or duplication in the KGX export, garbage nodes minted from
+  unparsed composition text, or an export that writes no file at all;
+- a derived artifact committed as if authoritative, or a hand-edited path that
+  `docs/DATA_LAYERS.md` lists as ignored CI output;
+- a gate baseline raised to make a run pass rather than lowered as the backlog
+  is repaired;
+- a corpus-wide change landed without a canary, where the cost of being wrong
+  multiplies across ~15,900 records.
+
+Prefer the gates over prose as evidence: `just validate-strict`,
+`just assign-ids-check`, `just audit-derived-artifacts`,
+`just audit-unparsed-composition`, `just audit-concentration-plausibility`,
+`just check-chebi-grounding`, `just check-mim-label-index`, and
+`just audit-merge-freshness`. An issue asserting a defect that one of these
+already blocks is P2 unless it shows the gate is porous.
+
+### 5. Assign priority and execution order
+
+Use priority for consequence and a separate readiness/cost annotation for
+ordering.
+
+- **P0 — stop the line.** Corpus corruption, a wrong published grounding or
+  count, silent wrong scientific output, or a blocker that must be resolved
+  before an already-planned costly operation.
+- **P1 — important and schedulable.** Correctness, reproducibility, provenance,
+  or gate-coverage gaps; defects that can waste a large curation or research
+  pass; missing guards for a likely workflow.
+- **P2 — low-risk or historical.** Documentation drift, refactors, theoretical
+  edge cases, optional audits, and work confined to legacy paths without active
+  spillover.
+- **CLOSE/UPDATE.** Fixed, superseded, duplicate, no-longer-applicable, or title
+  materially broader than the remaining work. Cite the exact commit/PR/code or
+  comment that supports the disposition.
+
+Calibrate P0 sparingly. Then order work within and across tiers using:
+
+1. upstream unblockers before downstream consumers;
+2. authoritative-corpus correctness before derived-layer regeneration;
+3. recover already-paid-for evidence before rerunning a billed research sweep;
+4. read-only audits before mutators; dry-run and canary before fan-out;
+5. add the missing gate before clearing the backlog it would protect;
+6. combine issues only when one patch genuinely satisfies each issue's
+   acceptance criteria.
+
+Do not prioritize by age, sunk effort, or a `P0` string in a stale title alone.
+
+### 6. Report
+
+Return a compact report with:
+
+1. coverage: repository, timestamp, number reviewed, and completeness;
+2. top 2–3 next actions, including why they unblock later work;
+3. a dependency-ordered P0/P1/P2 table with issue number, current status,
+   evidence, blockers, execution class, and next acceptance test;
+4. CLOSE/UPDATE candidates with specific evidence;
+5. unresolved evidence gaps and cross-repository ownership;
+6. a short sequence showing which costly work must wait.
+
+Call out old issues explicitly rather than silently dropping them. Separate
+measured findings, code inspection, inference, and proposed/untested work.
 
 ## Conventions this skill enforces
 
 - **Full-queue coverage, not first-page sampling.** State exactly how many
   issues were reviewed and whether coverage was complete.
-- **Evidence over vibes.** Every STALE/CLOSE/duplicate recommendation cites a
-  specific commit, PR, or code location — never "this looks done."
-- **P0 is rare.** If more than ~10% of issues land P0, the tier calibration is
-  probably wrong; recheck.
-- **Read-only by default.** Reporting and ranking happen automatically;
-  closing issues or touching a tracker issue requires explicit confirmation.
+- **Evidence over vibes.** Every CLOSE/UPDATE/duplicate recommendation cites a
+  specific commit, PR, artifact, or code location — never "this looks done."
+- **P0 is rare.** If more than ~10% of the queue lands P0, the calibration is
+  wrong; recheck. A stale `P0:` string in a title is not evidence.
+- **Titles are claims and they drift.** Issues get retitled mid-life, including
+  to `[WITHDRAWN/RESOLVED]`, while staying open. Re-read titles at report time
+  rather than trusting the ones fetched at the start of the sweep.
+- **The queue moves during the sweep.** Parallel PRs can resolve issues while
+  triage is in progress. Re-check the open set immediately before reporting,
+  and say so if it changed.
+- **Read-only by default.** Reporting and ranking happen automatically; closing
+  issues or touching a tracker requires explicit confirmation.
 
-## Notes & limitations
+## Measurement discipline
 
-- `gh issue list --json` doesn't include `comments` unless explicitly
-  requested (add `comments` to the `--json` field list) — Step 1's query
-  above doesn't request it, so a "fixed already" claim buried in a later
-  comment thread won't surface from that fetch alone; either widen the
-  `--json` fields or check `gh issue view <N> --comments` for issues that
-  look ambiguous.
-- Cross-repo issues (a defect described once but relevant to multiple Mechs)
-  are common in this org — note if an issue's fix should propagate elsewhere,
-  but do not open issues in sibling repos without being asked.
-- No @-mentions in issue comments or tracker updates without explicit
-  per-mention authorization (standing rule).
+The recurring failure here is not misreading evidence, it is mismeasuring it.
+Before citing any of the following, confirm how it was obtained:
+
+- **Rows versus names.** Several gates count distinct ingredient *names*, not
+  corpus rows, because one regrounding decision fixes every row of a name. A
+  count compared against the wrong denominator turns a 5-name backlog into a
+  thousand-row emergency, or hides one.
+- **Derived files are not sources.** A number read from a committed report, from
+  `data/merge_yaml/`, or from generated page assets can predate its source.
+  Confirm against the actual immediate source or regenerate.
+- **Exit codes through pipes.** `cmd | tail -3; echo $?` reports `tail`'s
+  status, not `cmd`'s, so a fail-closed gate looks like it passed. Use
+  `cmd >/tmp/o 2>/tmp/e; echo $?`, or `${PIPESTATUS[0]}`.
+- **Whitespace-splitting file lists.** `git status --porcelain | awk '{print $2}'`
+  turns one path containing spaces into several bogus entries — and this corpus
+  has many spaced filenames. Use `--porcelain -z | tr '\0' '\n'`.
+- **Glob patterns tested by shape.** A `case`/regex check on a `.gitignore`
+  pattern tests what it looks like; `git check-ignore --no-index <path>` tests
+  what it does. Only the second is evidence.
+- **Local git state is not repository state.** Sibling clones and `/tmp`
+  worktrees hold untracked scratch copies that can fake cross-repo alignment.
+  Verify with `gh api`, not the filesystem.
+- **A green diff is not an unchanged file.** YAML round-trips can reflow a whole
+  file while the intended node is correct. Review the diff, not just the value.
+- **Truncated tool output.** Several checkers elide long lines. Re-read the
+  cited file at the cited line before acting on it.
+- **Backticks in a double-quoted `-m`.** `git commit -m "...`cmd`..."` executes
+  the backticked text and ships the output in place of the example. Write
+  reports and commit messages containing shell examples via `-F <file>` or a
+  quoted heredoc, then read the result back before pushing.
+
+## Notes and limitations
+
+- `gh issue list --json` omits `comments` unless explicitly requested. This
+  repository records corrections, withdrawals, and narrowed residual scope in
+  comments, so a body-only fetch will systematically overstate what is open.
+- `gh pr list --search "<N>"` matches the number anywhere in indexed text, so it
+  returns unrelated PRs. Treat every hit as a lead and open it before citing it.
+  Likewise `git log --grep '#<N>'` needs the `\b` anchor.
+- An issue may be fully addressed in code while its acceptance criteria are not.
+  Partial fixes keep the issue open with a narrowed residual; say which part is
+  done and which is not.
+- Evidence recovery is sometimes impossible. When an issue's residual asks for a
+  value the sources do not carry, say so and recommend superseding it — a
+  plausible guess that round-trips is still false chemistry.
+- Cross-repository issues are common in this org. Note when a fix should
+  propagate to MediaIngredientMech or kg-microbe, but do not open issues in
+  sibling repos without being asked.
+- No @-mentions in issue comments or reports without explicit per-mention
+  authorization (standing rule).
 
 ## Related
 
-- `next-tasks` — the lighter, `NEXT_TASKS.md`-scoped backlog check; run that
-  for "what's next" during active work. Run this skill for a full-queue sweep.
+- `next-tasks` — the lighter, `NEXT_TASKS.md`-scoped check; run that for
+  "what's next" during active work, and this skill for a full-queue sweep.
+  Items promoted from this ranking are often logged there so `next-tasks` picks
+  them up on the next reconcile.
+- `review-recipes` — per-record QA; an issue about one record's content is
+  usually its job, not this one's.
+- `audit-schema-gaps` — broad schema and pipeline audits, when triage shows the
+  queue is a symptom of a missing contract.
 
-## Related files
+## Mutation boundary
 
-- `NEXT_TASKS.md` — items promoted from this skill's ranking often get logged
-  here too, so `next-tasks` picks them up on the next reconcile.
+Do not close, comment on, relabel, retitle, or create issues or trackers during
+the review. If the user later asks to act, present the exact issue numbers and
+proposed mutation first. Apply closures one issue at a time with cited evidence;
+never treat general approval as authorization for an unattended bulk close.
+
+If maintaining a tracker issue is requested, search first — `gh issue list
+--search "tracker" --state open` is authoritative — and update an existing one
+in place rather than creating a second.
+
+Do not run bulk corpus mutators, regenerate derived layers, or launch billed
+research sweeps as part of triage. A recommended command is a proposal, not
+permission to run it.
+
+Do not open cross-repository issues or use `@` mentions without explicit
+authorization.
