@@ -88,6 +88,28 @@ def normalize_name(value: str) -> str:
 # column mixes three things: CAS registry numbers, genuine aliases, and organism
 # trait annotations that leaked in (`carbon source: acetate`, `produces:
 # alanosine`, `electron acceptor: ...`). Only the middle group is a name.
+#
+# These are a GUARD, not a load-bearing filter, and the difference matters to
+# anyone reading this later (#359). Measured 2026-08-26 against MIM SSSOM
+# 2026-08-18: they drop 1,120 CAS and 46 trait tokens of the 10,126 this audit
+# reaches (1,727 and 50 across the raw column, which includes rows this audit
+# skips for having no CHEBI object), and disabling both changes no finding at
+# all -- DIVERGENT 84, INTERNAL_SPLIT 44, MISSING_GROUNDING 132, 1,046 matched
+# names, either way. The run prints its own yield, so re-read that rather than
+# quoting these. They cannot matter
+# today because the prefix stays part of the token: `normalize_name` collapses
+# whitespace and casing but keeps the colon, so these index under keys like
+# `carbon source: acetate` and `cas:64 19 7`. No ingredient name in this corpus
+# carries a colon, so nothing can ever reach them. What actually protects the
+# index is below -- an ambiguous alias is dropped, and a label beats an alias.
+#
+# They are kept because MediaIngredientMech#464 shows `other` is genuinely
+# contaminated and its shape is not stable. `test_alias_filters_are_a_guard_not_a_filter`
+# pins the claim so it cannot quietly become false in either direction.
+#
+# `_CAS_TOKEN` anchors at `^`, so an embedded marker survives: `KCl(CAS:
+# 7447-40-7)` is indexed as `kcl(cas`. Five such tokens exist today, unreachable
+# for the same reason. The filter tests token shape and cannot see content.
 _CAS_TOKEN = re.compile(r"^cas\s*:", re.IGNORECASE)
 _TRAIT_TOKEN = re.compile(
     r"^(?:produces|degradation|hydrolysis|reduction|oxidation|utilizes"
@@ -98,19 +120,33 @@ _TRAIT_TOKEN = re.compile(
 )
 
 
-def _synonyms(row: dict[str, str]) -> list[str]:
-    """The pipe-separated aliases in `other`, minus identifiers and annotations."""
+def _synonyms(row: dict[str, str], yield_counts: Counter | None = None) -> list[str]:
+    """The pipe-separated aliases in `other`, minus identifiers and annotations.
+
+    Pass ``yield_counts`` to tally kept/dropped tokens; the audit prints them so
+    a rotted blocklist is visible without writing a one-off script (#359).
+    """
     out = []
     for token in (row.get("other") or "").split("|"):
         token = token.strip()
-        if not token or _CAS_TOKEN.match(token) or _TRAIT_TOKEN.match(token):
+        if not token:
             continue
+        if _CAS_TOKEN.match(token):
+            if yield_counts is not None:
+                yield_counts["dropped_cas"] += 1
+            continue
+        if _TRAIT_TOKEN.match(token):
+            if yield_counts is not None:
+                yield_counts["dropped_trait"] += 1
+            continue
+        if yield_counts is not None:
+            yield_counts["kept"] += 1
         out.append(token)
     return out
 
 
 def load_sssom(
-    path: Path, *, match_synonyms: bool = False
+    path: Path, *, match_synonyms: bool = False, yield_counts: Counter | None = None
 ) -> tuple[dict[str, tuple[str, str]], str]:
     """Return ``({normalized_name: (chebi_id, chebi_label)}, mapping_set_version)``.
 
@@ -129,15 +165,23 @@ def load_sssom(
         CHEBI:16857. A label is MIM's primary assertion for that row; an alias is
         secondary, so preferring the label resolves those without guessing.
 
-    It is OPT-IN and should stay that way. Coverage rises from 14.5% to 29.5% of
-    names, but the 74 extra DIVERGENT names it produces are almost all noise:
+    It is OPT-IN and should stay that way. Coverage roughly doubles -- 14.5% to
+    29.5% of names on the measurement below -- but the extra DIVERGENT names it
+    produces are dominated by differences that are not disagreements: hydration
+    state first, then stereochemistry, with a substantive minority in which we
+    are right nearly every time (e.g. `Calcium chloride anhydrous`, where MIM's
+    alias points at the hexahydrate).
 
-        47 names (3,227 rows)  differ only in hydration state
-         3 names   (709 rows)  differ only in stereochemistry
-        24 names   (924 rows)  substantive -- and on inspection we are right in
-                               nearly all of them, e.g. `Calcium chloride
-                               anhydrous` where MIM's alias points at the
-                               hexahydrate
+    Exact counts move with the corpus, so treat the following as a dated
+    snapshot rather than a fact about the audit (#360). Measured 2026-08-26
+    against MIM SSSOM 2026-08-18, 79 extra DIVERGENT names:
+
+        49 names (3,744 rows)  differ only in hydration state
+         3 names   (547 rows)  differ only in stereochemistry
+        27 names (4,198 rows)  substantive
+
+    Re-measure before quoting these; the same numbers taken days earlier read
+    74/47/3/24, and the row counts moved by up to 4.5x.
 
     One is a contaminated alias rather than a disagreement: `Potassium dihydrogen
     phosphate` appears in the `other` column of MIM's `CaSO4 x 2 H2O` row and on
@@ -183,7 +227,7 @@ def load_sssom(
             entry = (object_id, row.get("object_label") or "")
             candidates[normalize_name(label)].add(entry)
             if match_synonyms:
-                for alias in _synonyms(row):
+                for alias in _synonyms(row, yield_counts):
                     aliases[normalize_name(alias)].add(entry)
 
     resolved = {name: next(iter(ids)) for name, ids in candidates.items() if len(ids) == 1}
@@ -258,7 +302,8 @@ def audit(
     normalized_dir: Path, sssom_path: Path, *, match_synonyms: bool = False
 ) -> tuple[list[dict[str, str]], str, dict[str, int]]:
     """Findings, the SSSOM version, and how much of the corpus was comparable."""
-    mim, version = load_sssom(sssom_path, match_synonyms=match_synonyms)
+    alias_yield: Counter = Counter()
+    mim, version = load_sssom(sssom_path, match_synonyms=match_synonyms, yield_counts=alias_yield)
     by_name, display, labels = collect(normalized_dir)
 
     # Coverage is part of the result, not a footnote. MIM's exactMatch labels
@@ -273,6 +318,8 @@ def audit(
         "matched_rows": sum(
             sum(counts.values()) for name, counts in by_name.items() if name in mim
         ),
+        # Filter yield, so a rotted blocklist is visible in the run itself (#359).
+        **{f"alias_{key}": value for key, value in alias_yield.items()},
     }
 
     def described(chebi_ids) -> str:
@@ -384,6 +431,25 @@ def main(argv: list[str] | None = None) -> int:
     )
     args = parser.parse_args(argv if argv is not None else sys.argv[1:])
 
+    # The baselines are calibrated against label-only matching, so a gated
+    # synonym run fails on visibility rather than on any change to the corpus,
+    # and its FAIL message would accuse a curator of a grounding they never made
+    # (#361). Refuse rather than mislead — and refuse rather than silently drop
+    # the gate, which would let a real regression through.
+    if args.match_synonyms and (args.max_divergent is not None or args.max_split is not None):
+        print(
+            "--match-synonyms cannot be combined with --max-divergent/--max-split.\n"
+            "The baselines are calibrated for label-only matching; synonym matching "
+            "roughly doubles what the audit can see, so a gated run would fail on "
+            "coverage, not on a corpus change. Run the gate and the investigation "
+            "separately:\n"
+            "    just audit-mim-sssom\n"
+            "    uv run --extra dev python scripts/audit_mim_sssom_divergence.py "
+            "--match-synonyms --out /tmp/mim-synonyms.tsv",
+            file=sys.stderr,
+        )
+        return 2
+
     rows, version, coverage = audit(
         args.normalized_dir, args.sssom, match_synonyms=args.match_synonyms
     )
@@ -431,6 +497,13 @@ def main(argv: list[str] | None = None) -> int:
     print(
         "  the rest are names MIM's exactMatch labels do not cover, so this " "gate cannot see them"
     )
+    if args.match_synonyms:
+        print(
+            f"  alias filter: kept {coverage.get('alias_kept', 0):,}, dropped "
+            f"{coverage.get('alias_dropped_cas', 0):,} CAS and "
+            f"{coverage.get('alias_dropped_trait', 0):,} trait tokens "
+            f"(a guard, not a filter — see _CAS_TOKEN)"
+        )
 
     relative = args.out.relative_to(REPO_ROOT) if args.out.is_relative_to(REPO_ROOT) else args.out
     print(f"\nWrote {relative}")

@@ -10,7 +10,9 @@ holds our CHEBI, and which SSSOM predicates count as a grounding verdict.
 from __future__ import annotations
 
 import importlib.util
+import re
 import sys
+from collections import Counter
 from pathlib import Path
 
 import pytest
@@ -466,3 +468,88 @@ def test_a_label_beats_an_alias(aud, tmp_path):
     )
     index, _ = aud.load_sssom(sssom, match_synonyms=True)
     assert index["threonine"][0] == "CHEBI:26986"
+
+
+def test_alias_filters_are_a_guard_not_a_filter(aud, tmp_path):
+    """Pin the measured claim in `_CAS_TOKEN`'s comment (#359).
+
+    Both filters drop tokens, and today neither can change a finding: a dropped
+    token keeps its prefix, so `carbon source: acetate` normalizes to
+    `carbon source acetate`, which cannot collide with an ingredient name. The
+    two tests above prove the tokens are dropped; this one proves that dropping
+    them is what makes NO difference — so nobody reads the blocklist as the
+    thing protecting the index. What protects it is the ambiguity rule and
+    label-beats-alias, both of which have their own tests.
+
+    If this ever fails, the filters have become load-bearing: say so in the
+    comment rather than deleting the test.
+    """
+    sssom = _sssom_with_other(
+        tmp_path,
+        [("Acetate", "CHEBI:30089", "acetate", "CAS:64-19-7|carbon source: acetate|AcOH")],
+    )
+    guarded, _ = aud.load_sssom(sssom, match_synonyms=True)
+
+    never = re.compile(r"^(?!)")
+    cas, trait = aud._CAS_TOKEN, aud._TRAIT_TOKEN
+    aud._CAS_TOKEN, aud._TRAIT_TOKEN = never, never
+    try:
+        unguarded, _ = aud.load_sssom(sssom, match_synonyms=True)
+    finally:
+        aud._CAS_TOKEN, aud._TRAIT_TOKEN = cas, trait
+
+    # The filters do drop the tokens...
+    assert set(unguarded) - set(guarded) == {"cas:64 19 7", "carbon source: acetate"}
+    # The colon survives normalization, which is why these keys are unreachable:
+    # no ingredient name in this corpus carries one.
+    assert all(":" in key for key in set(unguarded) - set(guarded))
+    # ...and every key an ingredient name could ever reach is identical.
+    assert guarded == {k: v for k, v in unguarded.items() if k in guarded}
+
+
+def test_the_filter_yield_is_reported_so_a_rotted_blocklist_is_visible(aud, tmp_path):
+    """The counts existed only in a one-off script before #359."""
+    sssom = _sssom_with_other(
+        tmp_path,
+        [("Acetate", "CHEBI:30089", "acetate", "CAS:64-19-7|produces: alanosine|AcOH|HOAc")],
+    )
+    counts: Counter = Counter()
+    aud.load_sssom(sssom, match_synonyms=True, yield_counts=counts)
+    assert counts["kept"] == 2
+    assert counts["dropped_cas"] == 1
+    assert counts["dropped_trait"] == 1
+
+    corpus = _corpus(tmp_path, [{"ingredients": [{"preferred_term": "AcOH"}]}])
+    _, _, coverage = aud.audit(corpus, sssom, match_synonyms=True)
+    assert coverage["alias_kept"] == 2
+    assert coverage["alias_dropped_cas"] == 1
+
+
+def test_a_gated_run_refuses_synonym_matching_instead_of_misreporting(aud, tmp_path, capsys):
+    """#361: the baselines are calibrated for label-only matching.
+
+    Gated + `--match-synonyms` fails on visibility, not on any corpus change,
+    and the FAIL message blames "a new grounding" that was never made — which
+    invites the one repair that must never happen, raising the baseline. Refuse
+    instead. Refusing is also why this must not silently DROP the gate: that
+    would let a real regression through unnoticed.
+    """
+    sssom = _sssom(tmp_path, [("Glucose", "skos:exactMatch", "CHEBI:17234", "glucose")])
+    corpus = _corpus(tmp_path, [{"ingredients": [{"preferred_term": "Glucose"}]}])
+    argv = [
+        "--normalized-dir",
+        str(corpus),
+        "--sssom",
+        str(sssom),
+        "--out",
+        str(tmp_path / "out.tsv"),
+    ]
+
+    # Ungated, the flag is fine.
+    assert aud.main([*argv, "--match-synonyms"]) == 0
+    # Gated, it refuses — distinctly from the 1 a real breach returns.
+    assert aud.main([*argv, "--match-synonyms", "--max-divergent", "5"]) == 2
+    assert aud.main([*argv, "--match-synonyms", "--max-split", "44"]) == 2
+    assert "cannot be combined" in capsys.readouterr().err
+    # The gate alone still works.
+    assert aud.main([*argv, "--max-divergent", "5"]) == 0
