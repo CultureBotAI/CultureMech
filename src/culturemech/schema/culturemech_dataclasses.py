@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-08-25T21:48:02
+# Generation date: 2026-08-27T12:35:42
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -61,7 +61,7 @@ from rdflib import (
 from linkml_runtime.linkml_model.types import Boolean, Date, Float, Integer, String, Uri, Uriorcurie
 from linkml_runtime.utils.metamodelcore import Bool, URI, URIorCURIE, XSDDate
 
-metamodel_version = "1.7.0"
+metamodel_version = "1.11.0"
 version = None
 
 # Namespaces
@@ -258,9 +258,7 @@ class MediaRecipe(YAMLRoot):
 
         if self._is_empty(self.ingredients):
             self.MissingRequiredField("ingredients")
-        if not isinstance(self.ingredients, list):
-            self.ingredients = [self.ingredients] if self.ingredients is not None else []
-        self.ingredients = [v if isinstance(v, IngredientDescriptor) else IngredientDescriptor(**as_dict(v)) for v in self.ingredients]
+        self._normalize_inlined_as_list(slot_name="ingredients", slot_type=IngredientDescriptor, key_name="preferred_term", keyed=False)
 
         if self.id_lineage_token is not None and not isinstance(self.id_lineage_token, str):
             self.id_lineage_token = str(self.id_lineage_token)
@@ -281,9 +279,7 @@ class MediaRecipe(YAMLRoot):
         if self.high_ree is not None and not isinstance(self.high_ree, Bool):
             self.high_ree = Bool(self.high_ree)
 
-        if not isinstance(self.synonyms, list):
-            self.synonyms = [self.synonyms] if self.synonyms is not None else []
-        self.synonyms = [v if isinstance(v, RecipeSynonym) else RecipeSynonym(**as_dict(v)) for v in self.synonyms]
+        self._normalize_inlined_as_list(slot_name="synonyms", slot_type=RecipeSynonym, key_name="name", keyed=False)
 
         if not isinstance(self.merged_from, list):
             self.merged_from = [self.merged_from] if self.merged_from is not None else []
@@ -315,9 +311,7 @@ class MediaRecipe(YAMLRoot):
 
         self._normalize_inlined_as_list(slot_name="target_organisms", slot_type=OrganismDescriptor, key_name="preferred_term", keyed=True)
 
-        if not isinstance(self.source_environment, list):
-            self.source_environment = [self.source_environment] if self.source_environment is not None else []
-        self.source_environment = [v if isinstance(v, SourceEnvironmentDescriptor) else SourceEnvironmentDescriptor(**as_dict(v)) for v in self.source_environment]
+        self._normalize_inlined_as_list(slot_name="source_environment", slot_type=SourceEnvironmentDescriptor, key_name="preferred_term", keyed=False)
 
         if self.organism_culture_type is not None and not isinstance(self.organism_culture_type, OrganismCultureTypeEnum):
             self.organism_culture_type = OrganismCultureTypeEnum(self.organism_culture_type)
@@ -368,13 +362,9 @@ class MediaRecipe(YAMLRoot):
         if self.culture_vessel is not None and not isinstance(self.culture_vessel, str):
             self.culture_vessel = str(self.culture_vessel)
 
-        if not isinstance(self.solutions, list):
-            self.solutions = [self.solutions] if self.solutions is not None else []
-        self.solutions = [v if isinstance(v, SolutionDescriptor) else SolutionDescriptor(**as_dict(v)) for v in self.solutions]
+        self._normalize_inlined_as_list(slot_name="solutions", slot_type=SolutionDescriptor, key_name="preferred_term", keyed=False)
 
-        if not isinstance(self.preparation_steps, list):
-            self.preparation_steps = [self.preparation_steps] if self.preparation_steps is not None else []
-        self.preparation_steps = [v if isinstance(v, PreparationStep) else PreparationStep(**as_dict(v)) for v in self.preparation_steps]
+        self._normalize_inlined_as_list(slot_name="preparation_steps", slot_type=PreparationStep, key_name="step_number", keyed=False)
 
         if self.sterilization is not None and not isinstance(self.sterilization, SterilizationDescriptor):
             self.sterilization = SterilizationDescriptor(**as_dict(self.sterilization))
@@ -402,9 +392,7 @@ class MediaRecipe(YAMLRoot):
             self.variant_modifications = [self.variant_modifications] if self.variant_modifications is not None else []
         self.variant_modifications = [v if isinstance(v, str) else str(v) for v in self.variant_modifications]
 
-        if not isinstance(self.references, list):
-            self.references = [self.references] if self.references is not None else []
-        self.references = [v if isinstance(v, PublicationReference) else PublicationReference(**as_dict(v)) for v in self.references]
+        self._normalize_inlined_as_list(slot_name="references", slot_type=PublicationReference, key_name="reference", keyed=False)
 
         if self.notes is not None and not isinstance(self.notes, str):
             self.notes = str(self.notes)
@@ -415,24 +403,18 @@ class MediaRecipe(YAMLRoot):
             self.datasets = [self.datasets] if self.datasets is not None else []
         self.datasets = [v if isinstance(v, Dataset) else Dataset(**as_dict(v)) for v in self.datasets]
 
-        if not isinstance(self.discussions, list):
-            self.discussions = [self.discussions] if self.discussions is not None else []
-        self.discussions = [v if isinstance(v, Discussion) else Discussion(**as_dict(v)) for v in self.discussions]
+        self._normalize_inlined_as_list(slot_name="discussions", slot_type=Discussion, key_name="discussion_id", keyed=False)
 
         if self.import_metadata is not None and not isinstance(self.import_metadata, ImportMetadata):
             self.import_metadata = ImportMetadata(**as_dict(self.import_metadata))
 
-        if not isinstance(self.curation_history, list):
-            self.curation_history = [self.curation_history] if self.curation_history is not None else []
-        self.curation_history = [v if isinstance(v, CurationEvent) else CurationEvent(**as_dict(v)) for v in self.curation_history]
+        self._normalize_inlined_as_list(slot_name="curation_history", slot_type=CurationEvent, key_name="timestamp", keyed=False)
 
         if not isinstance(self.data_quality_flags, list):
             self.data_quality_flags = [self.data_quality_flags] if self.data_quality_flags is not None else []
         self.data_quality_flags = [v if isinstance(v, str) else str(v) for v in self.data_quality_flags]
 
-        if not isinstance(self.sources, list):
-            self.sources = [self.sources] if self.sources is not None else []
-        self.sources = [v if isinstance(v, SourceReference) else SourceReference(**as_dict(v)) for v in self.sources]
+        self._normalize_inlined_as_list(slot_name="sources", slot_type=SourceReference, key_name="database", keyed=False)
 
         if self.incubation_atmosphere is not None and not isinstance(self.incubation_atmosphere, AtmosphereEnum):
             self.incubation_atmosphere = AtmosphereEnum(self.incubation_atmosphere)
@@ -491,9 +473,7 @@ class SolutionRecipe(YAMLRoot):
 
         if self._is_empty(self.composition):
             self.MissingRequiredField("composition")
-        if not isinstance(self.composition, list):
-            self.composition = [self.composition] if self.composition is not None else []
-        self.composition = [v if isinstance(v, IngredientDescriptor) else IngredientDescriptor(**as_dict(v)) for v in self.composition]
+        self._normalize_inlined_as_list(slot_name="composition", slot_type=IngredientDescriptor, key_name="preferred_term", keyed=False)
 
         if self.id_lineage_token is not None and not isinstance(self.id_lineage_token, str):
             self.id_lineage_token = str(self.id_lineage_token)
@@ -513,9 +493,7 @@ class SolutionRecipe(YAMLRoot):
         if self.category is not None and not isinstance(self.category, CategoryEnum):
             self.category = CategoryEnum(self.category)
 
-        if not isinstance(self.ingredients, list):
-            self.ingredients = [self.ingredients] if self.ingredients is not None else []
-        self.ingredients = [v if isinstance(v, IngredientDescriptor) else IngredientDescriptor(**as_dict(v)) for v in self.ingredients]
+        self._normalize_inlined_as_list(slot_name="ingredients", slot_type=IngredientDescriptor, key_name="preferred_term", keyed=False)
 
         if self.concentration is not None and not isinstance(self.concentration, ConcentrationValue):
             self.concentration = ConcentrationValue(**as_dict(self.concentration))
@@ -529,24 +507,18 @@ class SolutionRecipe(YAMLRoot):
         if self.shelf_life is not None and not isinstance(self.shelf_life, str):
             self.shelf_life = str(self.shelf_life)
 
-        if not isinstance(self.references, list):
-            self.references = [self.references] if self.references is not None else []
-        self.references = [v if isinstance(v, PublicationReference) else PublicationReference(**as_dict(v)) for v in self.references]
+        self._normalize_inlined_as_list(slot_name="references", slot_type=PublicationReference, key_name="reference", keyed=False)
 
         if self.source_data is not None and not isinstance(self.source_data, SourceData):
             self.source_data = SourceData(**as_dict(self.source_data))
 
-        if not isinstance(self.curation_history, list):
-            self.curation_history = [self.curation_history] if self.curation_history is not None else []
-        self.curation_history = [v if isinstance(v, CurationEvent) else CurationEvent(**as_dict(v)) for v in self.curation_history]
+        self._normalize_inlined_as_list(slot_name="curation_history", slot_type=CurationEvent, key_name="timestamp", keyed=False)
 
         if not isinstance(self.data_quality_flags, list):
             self.data_quality_flags = [self.data_quality_flags] if self.data_quality_flags is not None else []
         self.data_quality_flags = [v if isinstance(v, str) else str(v) for v in self.data_quality_flags]
 
-        if not isinstance(self.sources, list):
-            self.sources = [self.sources] if self.sources is not None else []
-        self.sources = [v if isinstance(v, SourceReference) else SourceReference(**as_dict(v)) for v in self.sources]
+        self._normalize_inlined_as_list(slot_name="sources", slot_type=SourceReference, key_name="database", keyed=False)
 
         if self.notes is not None and not isinstance(self.notes, str):
             self.notes = str(self.notes)
@@ -780,9 +752,7 @@ class IngredientDescriptor(Descriptor):
         if self.chemical_formula is not None and not isinstance(self.chemical_formula, str):
             self.chemical_formula = str(self.chemical_formula)
 
-        if not isinstance(self.synonyms, list):
-            self.synonyms = [self.synonyms] if self.synonyms is not None else []
-        self.synonyms = [v if isinstance(v, IngredientSynonym) else IngredientSynonym(**as_dict(v)) for v in self.synonyms]
+        self._normalize_inlined_as_list(slot_name="synonyms", slot_type=IngredientSynonym, key_name="synonym_text", keyed=False)
 
         if self.source is not None and not isinstance(self.source, str):
             self.source = str(self.source)
@@ -819,9 +789,7 @@ class IngredientDescriptor(Descriptor):
             self.role_curie = [self.role_curie] if self.role_curie is not None else []
         self.role_curie = [v if isinstance(v, URIorCURIE) else URIorCURIE(v) for v in self.role_curie]
 
-        if not isinstance(self.cofactors_provided, list):
-            self.cofactors_provided = [self.cofactors_provided] if self.cofactors_provided is not None else []
-        self.cofactors_provided = [v if isinstance(v, CofactorDescriptor) else CofactorDescriptor(**as_dict(v)) for v in self.cofactors_provided]
+        self._normalize_inlined_as_list(slot_name="cofactors_provided", slot_type=CofactorDescriptor, key_name="preferred_term", keyed=False)
 
         self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
 
@@ -878,16 +846,12 @@ class SolutionDescriptor(Descriptor):
         if self.culturemech_term is not None and not isinstance(self.culturemech_term, CultureMechTerm):
             self.culturemech_term = CultureMechTerm(**as_dict(self.culturemech_term))
 
-        if not isinstance(self.composition, list):
-            self.composition = [self.composition] if self.composition is not None else []
-        self.composition = [v if isinstance(v, IngredientDescriptor) else IngredientDescriptor(**as_dict(v)) for v in self.composition]
+        self._normalize_inlined_as_list(slot_name="composition", slot_type=IngredientDescriptor, key_name="preferred_term", keyed=False)
 
         if self.concentration is not None and not isinstance(self.concentration, ConcentrationValue):
             self.concentration = ConcentrationValue(**as_dict(self.concentration))
 
-        if not isinstance(self.concentration_candidates, list):
-            self.concentration_candidates = [self.concentration_candidates] if self.concentration_candidates is not None else []
-        self.concentration_candidates = [v if isinstance(v, ConcentrationCandidate) else ConcentrationCandidate(**as_dict(v)) for v in self.concentration_candidates]
+        self._normalize_inlined_as_list(slot_name="concentration_candidates", slot_type=ConcentrationCandidate, key_name="value", keyed=False)
 
         if self.preparation_notes is not None and not isinstance(self.preparation_notes, str):
             self.preparation_notes = str(self.preparation_notes)
@@ -969,19 +933,13 @@ class OrganismDescriptor(Descriptor):
             self.community_function = [self.community_function] if self.community_function is not None else []
         self.community_function = [v if isinstance(v, str) else str(v) for v in self.community_function]
 
-        if not isinstance(self.cofactor_requirements, list):
-            self.cofactor_requirements = [self.cofactor_requirements] if self.cofactor_requirements is not None else []
-        self.cofactor_requirements = [v if isinstance(v, CofactorRequirement) else CofactorRequirement(**as_dict(v)) for v in self.cofactor_requirements]
+        self._normalize_inlined_as_list(slot_name="cofactor_requirements", slot_type=CofactorRequirement, key_name="can_biosynthesize", keyed=False)
 
-        if not isinstance(self.transporters, list):
-            self.transporters = [self.transporters] if self.transporters is not None else []
-        self.transporters = [v if isinstance(v, TransporterAnnotation) else TransporterAnnotation(**as_dict(v)) for v in self.transporters]
+        self._normalize_inlined_as_list(slot_name="transporters", slot_type=TransporterAnnotation, key_name="name", keyed=False)
 
         self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
 
-        if not isinstance(self.strain_modifications, list):
-            self.strain_modifications = [self.strain_modifications] if self.strain_modifications is not None else []
-        self.strain_modifications = [v if isinstance(v, StrainModification) else StrainModification(**as_dict(v)) for v in self.strain_modifications]
+        self._normalize_inlined_as_list(slot_name="strain_modifications", slot_type=StrainModification, key_name="modification_type", keyed=False)
 
         super().__post_init__(**kwargs)
 
@@ -1355,13 +1313,9 @@ class GrowthMetrics(YAMLRoot):
         if self.growth_mode is not None and not isinstance(self.growth_mode, GrowthModeEnum):
             self.growth_mode = GrowthModeEnum(self.growth_mode)
 
-        if not isinstance(self.perturbations, list):
-            self.perturbations = [self.perturbations] if self.perturbations is not None else []
-        self.perturbations = [v if isinstance(v, PerturbationContext) else PerturbationContext(**as_dict(v)) for v in self.perturbations]
+        self._normalize_inlined_as_list(slot_name="perturbations", slot_type=PerturbationContext, key_name="perturbation_type", keyed=False)
 
-        if not isinstance(self.nutrient_overrides, list):
-            self.nutrient_overrides = [self.nutrient_overrides] if self.nutrient_overrides is not None else []
-        self.nutrient_overrides = [v if isinstance(v, NutrientOverride) else NutrientOverride(**as_dict(v)) for v in self.nutrient_overrides]
+        self._normalize_inlined_as_list(slot_name="nutrient_overrides", slot_type=NutrientOverride, key_name="role", keyed=False)
 
         super().__post_init__(**kwargs)
 
@@ -2338,9 +2292,7 @@ class ImportMetadata(YAMLRoot):
         if self.last_updated is not None and not isinstance(self.last_updated, str):
             self.last_updated = str(self.last_updated)
 
-        if not isinstance(self.update_history, list):
-            self.update_history = [self.update_history] if self.update_history is not None else []
-        self.update_history = [v if isinstance(v, UpdateEvent) else UpdateEvent(**as_dict(v)) for v in self.update_history]
+        self._normalize_inlined_as_list(slot_name="update_history", slot_type=UpdateEvent, key_name="timestamp", keyed=False)
 
         super().__post_init__(**kwargs)
 
@@ -2495,9 +2447,7 @@ class Discussion(YAMLRoot):
             self.proposed_experiments = [self.proposed_experiments] if self.proposed_experiments is not None else []
         self.proposed_experiments = [v if isinstance(v, ProposedExperiment) else ProposedExperiment(**as_dict(v)) for v in self.proposed_experiments]
 
-        if not isinstance(self.evidence, list):
-            self.evidence = [self.evidence] if self.evidence is not None else []
-        self.evidence = [v if isinstance(v, SupportingReference) else SupportingReference(**as_dict(v)) for v in self.evidence]
+        self._normalize_inlined_as_list(slot_name="evidence", slot_type=SupportingReference, key_name="reference", keyed=False)
 
         if self.posed_by is not None and not isinstance(self.posed_by, str):
             self.posed_by = str(self.posed_by)
@@ -2649,9 +2599,7 @@ class Dataset(YAMLRoot):
         if self.findings is not None and not isinstance(self.findings, str):
             self.findings = str(self.findings)
 
-        if not isinstance(self.evidence, list):
-            self.evidence = [self.evidence] if self.evidence is not None else []
-        self.evidence = [v if isinstance(v, SupportingReference) else SupportingReference(**as_dict(v)) for v in self.evidence]
+        self._normalize_inlined_as_list(slot_name="evidence", slot_type=SupportingReference, key_name="reference", keyed=False)
 
         if self.notes is not None and not isinstance(self.notes, str):
             self.notes = str(self.notes)

@@ -588,6 +588,7 @@
                 },
                 "url": {
                     "description": "Direct URL to the dataset landing page, if no CURIE applies.",
+                    "format": "uri",
                     "type": [
                         "string",
                         "null"
@@ -647,6 +648,12 @@
             ],
             "title": "DatasetTypeEnum",
             "type": "string"
+        },
+        "Descriptor": {
+            "additionalProperties": false,
+            "description": "Base class for descriptor pattern. Descriptors have a human-readable preferred_term and optional ontology term.",
+            "title": "Descriptor",
+            "type": "object"
         },
         "Discussion": {
             "additionalProperties": false,
@@ -3529,6 +3536,7 @@
                 },
                 "product_url": {
                     "description": "Direct product link",
+                    "format": "uri",
                     "type": [
                         "string",
                         "null"
@@ -3649,6 +3657,39 @@
                 "unit"
             ],
             "title": "TemperatureValue",
+            "type": "object"
+        },
+        "Term": {
+            "additionalProperties": false,
+            "description": "Base class for ontology term references. Subclasses specify id_prefixes for validation.",
+            "properties": {
+                "confidence": {
+                    "description": "Confidence score for the mapping (0.0-1.0). Populated by automated grounding pipelines.",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "Ontology identifier (CURIE)",
+                    "type": "string"
+                },
+                "label": {
+                    "description": "CANONICAL ontology label for `id` (e.g. \"magnesium sulfate\" for CHEBI:32599). Verified against the ontology by the id\u2194label gate; the sibling `preferred_term` holds the free/source name.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "match_type": {
+                    "$ref": "#/$defs/TermMatchTypeEnum",
+                    "description": "Provenance/method of the term mapping (e.g. \"kg_fallback\", \"exact\", \"manual_curated\")."
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "Term",
             "type": "object"
         },
         "TermMatchTypeEnum": {
@@ -3825,7 +3866,7 @@
     "$id": "https://w3id.org/culturemech",
     "$schema": "https://json-schema.org/draft/2019-09/schema",
     "additionalProperties": true,
-    "metamodel_version": "1.7.0",
+    "metamodel_version": "1.11.0",
     "title": "culturemech",
     "type": "object",
     "version": null
