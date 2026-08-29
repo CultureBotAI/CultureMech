@@ -48,9 +48,17 @@ def _paths_blocks(document: dict) -> list[tuple[str, list[str]]]:
     ]
 
 
+def _workflow_files() -> list[Path]:
+    """Both suffixes. GitHub accepts `.yml` and `.yaml` interchangeably, and
+    `.yml` is what most templates emit. Globbing one of them would let a new
+    gate arrive unguarded while this file kept reporting all-clear — the same
+    failure shape it exists to catch, one level up (#376)."""
+    return sorted({*WORKFLOWS.glob("*.yaml"), *WORKFLOWS.glob("*.yml")})
+
+
 def _blocks() -> list[tuple[str, str, list[str]]]:
     found = []
-    for path in sorted(WORKFLOWS.glob("*.yaml")):
+    for path in _workflow_files():
         for trigger, paths in _paths_blocks(yaml.safe_load(path.read_text())):
             found.append((path.name, trigger, paths))
     return found
@@ -78,6 +86,7 @@ def test_the_guard_is_not_vacuous():
     """
     blocks = _blocks()
     assert len(blocks) >= 8, f"expected the known path-filtered blocks, found {len(blocks)}"
+    assert len(_workflow_files()) >= 10, "workflow discovery found almost nothing"
     assert {w for w, _, _ in blocks} >= {
         "chebi-consistency.yaml",
         "concentration-plausibility.yaml",
