@@ -19,6 +19,8 @@ on:
       - 'data/merge_yaml/**'
       - 'scripts/audit_chebi_consistency.py'
       - 'project.justfile'
+      - 'pyproject.toml'
+      - 'uv.lock'
       - '.github/workflows/chebi-consistency.yaml'
   workflow_dispatch:
 

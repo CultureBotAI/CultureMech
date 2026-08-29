@@ -29,6 +29,8 @@ on:
       - 'data/merge_yaml/**'
       - 'scripts/audit_concentration_plausibility.py'
       - 'project.justfile'
+      - 'pyproject.toml'
+      - 'uv.lock'
       - '.github/workflows/concentration-plausibility.yaml'
   workflow_dispatch:
 

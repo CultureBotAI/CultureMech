@@ -25,6 +25,8 @@ on:
       - "src/culturemech/schema/**"
       - "scripts/validate_id_label_correspondence.py"
       - "conf/id_label_targets.yaml"
+      - "pyproject.toml"
+      - "uv.lock"
       - ".github/workflows/label-correspondence.yaml"
   push:
     branches: [main]
