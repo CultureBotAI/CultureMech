@@ -1,0 +1,641 @@
+chebi_id,label,formula,molecular_weight,charge
+CHEBI:2509,agar,,,
+CHEBI:2511,agarose,(C12H18O9)n.C12H20O10,630.549,0
+CHEBI:2682,amphotericin B,C47H73NO17,924.091,0
+CHEBI:3311,calcium carbonate,CO3.Ca,100.086,0
+CHEBI:3312,calcium dichloride,Ca.2Cl,110.984,0
+CHEBI:4178,D-glucuronic acid,C6H10O7,194.139,0
+CHEBI:4735,ethylenediaminetetraacetic acid,C10H16N2O8,292.244,0
+CHEBI:5291,gelatin,,,
+CHEBI:6104,kanamycin,,,
+CHEBI:6109,kanamycin A sulfate,C18H36N4O11.H2O4S,582.582,0
+CHEBI:6636,magnesium dichloride,2Cl.Mg,95.211,0
+CHEBI:6637,magnesium dihydroxide,2HO.Mg,58.319,0
+CHEBI:6650,malic acid,C4H6O5,134.087,0
+CHEBI:6731,melezitose,C18H32O16,504.438,0
+CHEBI:6872,methylene blue,C16H18N3S.Cl,319.861,0
+CHEBI:7507,neomycin,,,
+CHEBI:7916,pantothenic acid,C9H17NO5,219.237,0
+CHEBI:8006,Peptidoglycan(N-acetyl-D-glucosamine),C34H60N8O18,868.892,0
+CHEBI:8310,Polymyxin B sulfate,C55H95N16O13R.(H2O4S)x,,
+CHEBI:8346,potassium iodide,I.K,166.002,0
+CHEBI:8806,Resazurin,C12H7NO4,229.191,0
+CHEBI:9215,spectinomycin,C14H24N2O7,332.353,0
+CHEBI:9532,thiamine(1+) diphosphate,C12H19N4O7P2S,425.32,1
+CHEBI:9679,tricalcium bis(phosphate),3Ca.2O4P,310.174,0
+CHEBI:9754,tris,C4H11NO3,121.136,0
+CHEBI:12936,D-galactose,C6H12O6,180.156,0
+CHEBI:14314,D-glucose 6-phosphate,C6H13O9P,260.136,0
+CHEBI:15226,tetrathionate(2-),O6S4,224.262,-2
+CHEBI:15318,xanthine,C5H4N4O2,152.111,0
+CHEBI:15346,coenzyme A,C21H36N7O16P3S,767.541,0
+CHEBI:15347,acetone,C3H6O,58.08,0
+CHEBI:15354,choline,C5H14NO,104.173,1
+CHEBI:15356,cysteine,C3H7NO2S,121.161,0
+CHEBI:15361,pyruvate,C3H3O3,87.054,-1
+CHEBI:15366,acetic acid,C2H4O2,60.052,0
+CHEBI:15377,water,H2O,18.015,0
+CHEBI:15422,ATP,C10H16N5O13P3,507.182,0
+CHEBI:15428,glycine,C2H5NO2,75.067,0
+CHEBI:15443,inulin,(C12H20O11)n,,
+CHEBI:15447,(1->4)-beta-D-xylan,(C5H8O4)n.H2O,150.13,0
+CHEBI:15570,D-alanine,C3H7NO2,89.094,0
+CHEBI:15595,malate(2-),C4H4O5,132.071,-2
+CHEBI:15603,L-leucine,C6H13NO2,131.175,0
+CHEBI:15640,5-formyltetrahydrofolic acid,C20H23N7O7,473.446,0
+CHEBI:15671,L-tartaric acid,C4H6O6,150.086,0
+CHEBI:15676,allantoin,C4H6N4O3,158.117,0
+CHEBI:15688,acetoin,C4H8O2,88.106,0
+CHEBI:15728,4-guanidinobutanoic acid,C5H11N3O2,145.162,0
+CHEBI:15729,L-ornithine,C5H12N2O2,132.163,0
+CHEBI:15741,succinic acid,C4H6O4,118.088,0
+CHEBI:15824,D-fructose,C6H12O6,180.156,0
+CHEBI:15846,NAD(+),C21H28N7O14P2,664.438,1
+CHEBI:15882,phenol,C6H6O,94.113,0
+CHEBI:15887,5-aminopentanoic acid,C5H11NO2,117.148,0
+CHEBI:15891,taurine,C2H7NO3S,125.149,0
+CHEBI:15903,beta-D-glucose,C6H12O6,180.156,0
+CHEBI:15940,nicotinic acid,C6H5NO2,123.111,0
+CHEBI:15956,biotin,C10H16N2O3S,244.316,0
+CHEBI:15971,L-histidine,C6H9N3O2,155.157,0
+CHEBI:15978,sn-glycerol 3-phosphate,C3H9O6P,172.073,0
+CHEBI:16000,ethanolamine,C2H7NO,61.084,0
+CHEBI:16015,L-glutamic acid,C5H9NO4,147.13,0
+CHEBI:16024,D-mannose,C6H12O6,180.156,0
+CHEBI:16040,cytosine,C4H5N3O,111.104,0
+CHEBI:16113,cholesterol,C27H46O,386.664,0
+CHEBI:16119,shikimic acid,C7H10O5,174.152,0
+CHEBI:16135,isobutyric acid,C4H8O2,88.106,0
+CHEBI:16148,heptadecane,C17H36,240.475,0
+CHEBI:16150,benzoate,C7H5O2,121.115,-1
+CHEBI:16183,methane,CH4,16.043,0
+CHEBI:16189,sulfate,O4S,96.063,-2
+CHEBI:16196,oleic acid,C18H34O2,282.468,0
+CHEBI:16199,urea,CH4N2O,60.056,0
+CHEBI:16235,guanine,C5H5N5O,151.129,0
+CHEBI:16236,ethanol,C2H6O,46.069,0
+CHEBI:16238,FAD,C27H33N9O15P2,785.557,0
+CHEBI:16261,chitosan,(C6H11NO4)n.H2O,179.172,0
+CHEBI:16283,L-cystine,C6H12N2O4S2,240.306,0
+CHEBI:16335,adenosine,C10H13N5O4,267.245,0
+CHEBI:16349,L-citrulline,C6H13N3O3,175.188,0
+CHEBI:16354,N-methylhydantoin,C4H6N2O2,114.104,0
+CHEBI:16410,pyridoxamine,C8H12N2O2,168.196,0
+CHEBI:16411,indole-3-acetic acid,C10H9NO2,175.187,0
+CHEBI:16412,lipopolysaccharide,,,
+CHEBI:16414,L-valine,C5H11NO2,117.148,0
+CHEBI:16450,2'-deoxyuridine,C9H12N2O5,228.204,0
+CHEBI:16454,pantothenate,C9H16NO5,218.229,-1
+CHEBI:16467,L-arginine,C6H14N4O2,174.204,0
+CHEBI:16482,naphthalene,C10H8,128.174,0
+CHEBI:16494,lipoic acid,C8H14O2S2,206.332,0
+CHEBI:16526,carbon dioxide,CO2,44.009,0
+CHEBI:16602,trichloroethene,C2HCl3,131.389,0
+CHEBI:16610,spermidine,C7H19N3,145.25,0
+CHEBI:16634,raffinose,C18H32O16,504.438,0
+CHEBI:16643,L-methionine,C5H11NO2S,149.215,0
+CHEBI:16704,uridine,C9H12N2O6,244.203,0
+CHEBI:16708,adenine,C5H5N5,135.13,0
+CHEBI:16709,pyridoxine,C8H11NO3,169.18,0
+CHEBI:16716,benzene,C6H6,78.114,0
+CHEBI:16737,creatinine,C4H7N3O,113.12,0
+CHEBI:16742,orotic acid,C5H4N2O4,156.097,0
+CHEBI:16750,guanosine,C10H13N5O5,283.244,0
+CHEBI:16810,2-oxoglutarate(2-),C5H4O5,144.082,-2
+CHEBI:16811,methionine,C5H11NO2S,149.215,0
+CHEBI:16813,galactitol,C6H14O6,182.172,0
+CHEBI:16828,L-tryptophan,C11H12N2O2,204.229,0
+CHEBI:16830,methylamine,CH5N,31.058,0
+CHEBI:16856,glutathione,C10H17N3O6S,307.328,0
+CHEBI:16857,L-threonine,C4H9NO3,119.12,0
+CHEBI:16865,gamma-aminobutyric acid,C4H9NO2,103.121,0
+CHEBI:16867,D-methionine,C5H11NO2S,149.215,0
+CHEBI:16870,choline alfoscerate,C8H20NO6P,257.223,0
+CHEBI:16899,D-mannitol,C6H14O6,182.172,0
+CHEBI:16919,creatine,C4H9N3O2,131.135,0
+CHEBI:16947,citrate(3-),C6H5O7,189.099,-3
+CHEBI:16977,L-alanine,C3H7NO2,89.094,0
+CHEBI:16988,D-ribose,C5H10O5,150.13,0
+CHEBI:16991,deoxyribonucleic acid,,,
+CHEBI:17015,riboflavin,C17H20N4O6,376.369,0
+CHEBI:17029,chitin,(C8H13NO5)n.H2O,221.209,0
+CHEBI:17045,dinitrogen oxide,N2O,44.013,0
+CHEBI:17053,L-aspartic acid,C4H7NO4,133.103,0
+CHEBI:17057,cellobiose,C12H22O11,342.297,0
+CHEBI:17076,streptomycin,C21H39N7O12,581.58,0
+CHEBI:17097,biphenyl,C12H10,154.212,0
+CHEBI:17108,D-arabinose,C5H10O5,150.13,0
+CHEBI:17115,L-serine,C3H7NO3,105.093,0
+CHEBI:17126,carnitine,C7H15NO3,161.201,0
+CHEBI:17148,putrescine,C4H12N2,88.154,0
+CHEBI:17151,xylitol,C5H12O5,152.146,0
+CHEBI:17154,nicotinamide,C6H6N2O,122.127,0
+CHEBI:17189,"2,5-dihydroxybenzoic acid",C7H6O4,154.121,0
+CHEBI:17191,L-isoleucine,C6H13NO2,131.175,0
+CHEBI:17196,L-asparagine,C4H8N2O3,132.119,0
+CHEBI:17201,glycylglycine,C4H8N2O3,132.119,0
+CHEBI:17203,L-proline,C5H9NO2,115.132,0
+CHEBI:17234,glucose,C6H12O6,180.156,0
+CHEBI:17245,carbon monoxide,CO,28.01,0
+CHEBI:17268,myo-inositol,C6H12O6,180.156,0
+CHEBI:17295,L-phenylalanine,C9H11NO2,165.192,0
+CHEBI:17300,tetrachloroethene,C2Cl4,165.834,0
+CHEBI:17306,maltose,C12H22O11,342.297,0
+CHEBI:17309,pectin,,,
+CHEBI:17334,penicillin,C9H11N2O4SR,243.26,0
+CHEBI:17368,hypoxanthine,C5H4N4O,136.114,0
+CHEBI:17376,cystine,C6H12N2O4S2,240.306,0
+CHEBI:17418,valeric acid,C5H10O2,102.133,0
+CHEBI:17439,cyanocob(III)alamin,C63H88CoN14O14P,1355.388,0
+CHEBI:17521,(-)-quinic acid,C7H12O6,192.167,0
+CHEBI:17533,N-acetyl-L-glutamic acid,C7H11NO5,189.167,0
+CHEBI:17561,L-cysteine,C3H7NO2S,121.161,0
+CHEBI:17562,cytidine,C9H13N3O5,243.219,0
+CHEBI:17568,uracil,C4H4N2O2,112.088,0
+CHEBI:17578,toluene,C7H8,92.141,0
+CHEBI:17596,inosine,C10H12N4O5,268.229,0
+CHEBI:17597,4-hydroxybenzaldehyde,C7H6O2,122.123,0
+CHEBI:17632,nitrate,NO3,62.004,-1
+CHEBI:17634,D-glucose,C6H12O6,180.156,0
+CHEBI:17642,pentachlorophenol,C6HCl5O,266.338,0
+CHEBI:17698,chloramphenicol,C11H12Cl2N2O5,323.132,0
+CHEBI:17712,9H-xanthine,C5H4N4O2,152.113,0
+CHEBI:17716,lactose,C12H22O11,342.297,0
+CHEBI:17748,thymidine,C10H14N2O5,242.231,0
+CHEBI:17750,glycine betaine,C5H11NO2,117.148,0
+CHEBI:17754,glycerol,C3H8O3,92.094,0
+CHEBI:17790,methanol,CH4O,32.042,0
+CHEBI:17821,thymine,C5H6N2O2,126.115,0
+CHEBI:17822,serine,C3H7NO3,105.093,0
+CHEBI:17824,propan-2-ol,C3H8O,60.096,0
+CHEBI:17833,gentamycin,,,
+CHEBI:17836,4-aminobenzoate,C7H6NO2,136.13,-1
+CHEBI:17879,4-hydroxybenzoate,C7H5O3,137.114,-1
+CHEBI:17883,hydrogen chloride,HCl,36.461,0
+CHEBI:17895,L-tyrosine,C9H11NO3,181.191,0
+CHEBI:17905,coenzyme M,C2H6O3S2,142.201,0
+CHEBI:17909,polysulfur,(S)n.S2,96.201,0
+CHEBI:17924,D-glucitol,C6H14O6,182.172,0
+CHEBI:17925,alpha-D-glucose,C6H12O6,180.156,0
+CHEBI:17987,benzyl alcohol,C7H8O,108.14,0
+CHEBI:17992,sucrose,C12H22O11,342.297,0
+CHEBI:17997,dinitrogen,N2,28.014,0
+CHEBI:18012,fumaric acid,C4H4O4,116.072,0
+CHEBI:18019,L-lysine,C6H14N2O2,146.19,0
+CHEBI:18024,D-galacturonic acid,C6H10O7,194.14,0
+CHEBI:18026,"2,3-dihydroxybenzoic acid",C7H6O4,154.121,0
+CHEBI:18050,L-glutamine,C5H10N2O3,146.146,0
+CHEBI:18067,phylloquinone,C31H46O2,450.707,0
+CHEBI:18095,trans-4-hydroxy-L-proline,C5H9NO3,131.131,0
+CHEBI:18101,4-hydroxyphenylacetic acid,C8H8O3,152.149,0
+CHEBI:18107,xanthosine,C10H12N4O6,284.228,0
+CHEBI:18135,catechol,C6H6O2,110.112,0
+CHEBI:18139,trimethylamine,C3H9N,59.112,0
+CHEBI:18167,alpha-maltose,C12H22O11,342.297,0
+CHEBI:18186,tyrosine,C9H11NO3,181.191,0
+CHEBI:18222,xylose,C5H10O5,150.13,0
+CHEBI:18237,glutamic acid,C5H9NO4,147.13,0
+CHEBI:18240,4-hydroxy-L-proline,C5H9NO3,131.131,0
+CHEBI:18246,(1->4)-beta-D-glucan,(C6H10O5)n.H2O,180.156,0
+CHEBI:18248,iron atom,Fe,55.845,0
+CHEBI:18276,dihydrogen,H2,2.016,0
+CHEBI:18287,L-fucose,C6H12O5,164.156,0
+CHEBI:18290,thiamine(1+) diphosphate chloride,C12H19N4O7P2S.Cl,460.773,0
+CHEBI:18300,maleic acid,C4H4O4,116.072,0
+CHEBI:18320,"1,4-dithiothreitol",C4H10O2S2,154.256,0
+CHEBI:18385,thiamine(1+),C12H17N4OS,265.362,1
+CHEBI:18403,L-arabinitol,C5H12O5,152.146,0
+CHEBI:18405,pyridoxal 5'-phosphate,C8H10NO6P,247.143,0
+CHEBI:22599,arabinose,C5H10O5,150.13,0
+CHEBI:22651,ascorbate,,,
+CHEBI:22652,ascorbic acid,,,
+CHEBI:22653,asparagine,C4H8N2O3,132.119,0
+CHEBI:22660,aspartic acid,C4H7NO4,133.103,0
+CHEBI:22868,bile salt,,,
+CHEBI:23414,copper(II) sulfate,Cu.O4S,159.609,0
+CHEBI:23673,"2,6-diaminopimelic acid",C7H14N2O4,190.199,0
+CHEBI:24040,flavin adenine dinucleotide,,,
+CHEBI:24266,gluconic acid,C6H11O7,195.148,0
+CHEBI:24536,hexachlorocyclohexane,C6H6Cl6,290.832,0
+CHEBI:24848,inositol,C6H12O6,180.156,0
+CHEBI:24996,lactate,C3H5O3,89.07,-1
+CHEBI:25094,lysine,C6H14N2O2,146.19,0
+CHEBI:25115,malate,,,
+CHEBI:25140,maltodextrin,,,
+CHEBI:25351,mevalonic acid,C6H12O4,148.158,0
+CHEBI:25548,nitrilotriacetate(3-),C6H6NO6,188.115,-3
+CHEBI:25979,phenylacetonitrile,C8H7N,117.151,0
+CHEBI:26271,proline,C5H9NO2,115.132,0
+CHEBI:26490,quinate,,,
+CHEBI:26493,quinic acid,,,
+CHEBI:26546,rhamnose,C6H12O5,164.157,0
+CHEBI:26642,selenous acid,H2O3Se,128.973,0
+CHEBI:26709,sodium hydrogensulfite,HO3S.Na,104.062,0
+CHEBI:26710,sodium chloride,Cl.Na,58.443,0
+CHEBI:26806,succinate,,,
+CHEBI:26833,sulfur atom,S,32.067,0
+CHEBI:26836,sulfuric acid,H2O4S,98.079,0
+CHEBI:26977,thiosulfate,,,
+CHEBI:26986,threonine,C4H9NO3,119.119,0
+CHEBI:27082,trehalose,C12H22O11,342.297,0
+CHEBI:27226,uric acid,C5H4N4O3,168.11,0
+CHEBI:27374,1L-chiro-inositol,C6H12O6,180.156,0
+CHEBI:27418,"1,4-naphthoquinone",C10H6O2,158.156,0
+CHEBI:27470,folic acid,C19H19N7O6,441.404,0
+CHEBI:27570,histidine,C6H9N3O2,155.157,0
+CHEBI:27592,ectoine,C6H10N2O2,142.158,0
+CHEBI:27641,cycloheximide,C15H23NO4,281.352,0
+CHEBI:27897,tryptophan,C11H12N2O2,204.229,0
+CHEBI:27902,tetracycline,C22H24N2O8,444.44,0
+CHEBI:27941,pullulan,(C37H62O30)n,,
+CHEBI:28001,vancomycin,C66H75Cl2N9O24,1449.271,0
+CHEBI:28017,starch,,,
+CHEBI:28053,melibiose,C12H22O11,342.297,0
+CHEBI:28077,rifampicin,C43H58N4O12,822.953,0
+CHEBI:28145,dibenzofuran,C12H8O,168.195,0
+CHEBI:28260,galactose,C6H12O6,180.156,0
+CHEBI:28262,dimethyl sulfoxide,C2H6OS,78.136,0
+CHEBI:28484,isovaleric acid,C5H10O2,102.133,0
+CHEBI:28488,m-xylene,C8H10,106.168,0
+CHEBI:28591,guaiacol,C7H8O2,124.139,0
+CHEBI:28621,triethanolamine,C6H15NO3,149.19,0
+CHEBI:28631,3-phenylpropionic acid,C9H10O2,150.177,0
+CHEBI:28645,beta-D-fructofuranose,C6H12O6,180.156,0
+CHEBI:28669,bacitracin,C63H98N14O14S,,
+CHEBI:28675,dextrin,,,
+CHEBI:28741,sodium fluoride,F.Na,41.988,0
+CHEBI:28757,fructose,,,
+CHEBI:28842,octadecanoic acid,C18H36O2,284.484,0
+CHEBI:28869,menadione,C11H8O2,172.183,0
+CHEBI:28911,cob(III)alamin,C62H88CoN13O14P,1329.37,1
+CHEBI:28971,ampicillin,C16H19N3O4S,349.412,0
+CHEBI:28997,2'-deoxyinosine,C10H12N4O4,252.23,0
+CHEBI:29016,arginine,C6H14N4O2,174.204,0
+CHEBI:29032,(R)-pantothenate,C9H16NO5,218.229,-1
+CHEBI:29073,L-ascorbic acid,C6H8O6,176.124,0
+CHEBI:29125,arsenate(3-),AsO4,138.918,-3
+CHEBI:29377,sodium carbonate,CO3.2Na,105.988,0
+CHEBI:29805,glycolate,C2H3O3,75.043,-1
+CHEBI:29806,fumarate(2-),C4H2O4,114.056,-2
+CHEBI:29864,mannitol,C6H14O6,182.172,0
+CHEBI:29958,L-aspartic acid residue,C4H5NO3,115.088,0
+CHEBI:29991,L-aspartate(1-),C4H6NO4,132.095,-1
+CHEBI:29994,D-aspartate(2-),C4H5NO4,131.087,-2
+CHEBI:29995,aspartate(2-),C4H5NO4,131.087,-2
+CHEBI:30065,thioglycolic acid,C2H4O2S,92.119,0
+CHEBI:30066,thioglycolate(1-),C2H3O2S,91.111,-1
+CHEBI:30089,acetate,C2H3O2,59.044,-1
+CHEBI:30114,aluminium trichloride,AlCl3,133.341,0
+CHEBI:30115,aluminium trichloride hexahydrate,AlCl3.6H2O,241.431,0
+CHEBI:30314,(R)-lipoic acid,C8H14O2S2,206.332,0
+CHEBI:30411,cobalamin,,,
+CHEBI:30452,tellurium atom,Te,127.6,0
+CHEBI:30563,silicon dioxide,O2Si,60.084,0
+CHEBI:30612,D-glucarate(2-),C6H8O8,208.122,-2
+CHEBI:30621,diarsenic trioxide,As4O6,395.682,0
+CHEBI:30627,molybdenum trioxide,MoO3,143.937,0
+CHEBI:30729,ethylenediaminetetraacetatoferrate(1-),C10H12N2O8.Fe,344.057,-1
+CHEBI:30742,ethylene glycol,C2H6O2,62.068,0
+CHEBI:30745,phenylacetic acid,C8H8O2,136.15,0
+CHEBI:30746,benzoic acid,C7H6O2,122.123,0
+CHEBI:30751,formic acid,CH2O2,46.025,0
+CHEBI:30753,4-aminobenzoic acid,C7H7NO2,137.138,0
+CHEBI:30763,4-hydroxybenzoic acid,C7H6O3,138.122,0
+CHEBI:30764,3-hydroxybenzoic acid,C7H6O3,138.122,0
+CHEBI:30768,propionic acid,C3H6O2,74.079,0
+CHEBI:30769,citric acid,C6H8O7,192.123,0
+CHEBI:30772,butyric acid,C4H8O2,88.106,0
+CHEBI:30776,hexanoic acid,C6H12O2,116.16,0
+CHEBI:30808,iron trichloride,Cl3Fe,162.204,0
+CHEBI:30812,iron dichloride,Cl2Fe,126.751,0
+CHEBI:30845,2-furoic acid,C5H4O3,112.084,0
+CHEBI:30849,L-arabinose,C5H10O5,150.13,0
+CHEBI:30911,glucitol,C6H14O6,182.172,0
+CHEBI:30915,2-oxoglutaric acid,C5H6O5,146.098,0
+CHEBI:30951,potassium thiocyanate,CNS.K,97.183,0
+CHEBI:30961,pyridoxine hydrochloride,C8H11NO3.HCl,205.641,0
+CHEBI:31206,ammonium chloride,Cl.H4N,53.492,0
+CHEBI:31225,antipyrine,C11H12N2O,188.23,0
+CHEBI:31235,Arginine hydrochloride,C6H14N4O2.HCl,210.665,0
+CHEBI:31340,Calcium folinate,C20H21N7O7.Ca,511.508,0
+CHEBI:31345,Calcium pantothenate,2C9H16NO5.Ca,476.536,0
+CHEBI:31346,calcium sulfate,Ca.O4S,136.141,0
+CHEBI:31404,Citric acid monohydrate,C6H8O7.H2O,210.138,0
+CHEBI:31440,copper(II) sulfate pentahydrate,Cu.5H2O.O4S,249.684,0
+CHEBI:31604,ferric ammonium citrate,,,
+CHEBI:31695,indigo carmine,C16H8N2O8S2.2Na,466.36,0
+CHEBI:31795,magnesium sulfate heptahydrate,7H2O.Mg.O4S,246.473,0
+CHEBI:31991,phenol red,C19H14O5S,354.383,0
+CHEBI:32029,potassium acetate,C2H3O2.K,98.142,0
+CHEBI:32030,potassium bromide,Br.K,119.002,0
+CHEBI:32032,Potassium gluconate,C6H11O7.K,234.245,0
+CHEBI:32035,potassium hydroxide,HO.K,56.105,0
+CHEBI:32036,potassium sulfate,2K.O4S,174.259,0
+CHEBI:32138,sodium acetate trihydrate,C2H3O2.3H2O.Na,136.079,0
+CHEBI:32139,sodium hydrogencarbonate,CHO3.Na,84.006,0
+CHEBI:32142,sodium citrate dihydrate,C6H5O7.2H2O.3Na,294.099,0
+CHEBI:32145,sodium hydroxide,HO.Na,39.997,0
+CHEBI:32149,sodium sulfate,2Na.O4S,142.043,0
+CHEBI:32150,sodium thiosulfate pentahydrate,5H2O.2Na.O3S2,248.186,0
+CHEBI:32312,zinc sulfate heptahydrate,7H2O.O4S.Zn,287.558,0
+CHEBI:32583,calcium sulfate dihydrate,Ca.2H2O.O4S,172.171,0
+CHEBI:32586,sodium sulfate decahydrate,10H2O.2Na.O4S,322.193,0
+CHEBI:32588,potassium chloride,Cl.K,74.551,0
+CHEBI:32596,calcium hydrogenphosphate,Ca.HO4P,136.056,0
+CHEBI:32599,magnesium sulfate,Mg.O4S,120.368,0
+CHEBI:32696,argininium(1+),C6H15N4O2,175.212,1
+CHEBI:32816,pyruvic acid,C3H4O3,88.062,0
+CHEBI:32954,sodium acetate,C2H3O2.Na,82.034,0
+CHEBI:33083,fluoranthene,C16H10,202.256,0
+CHEBI:33118,boric acid,H3BO3,61.833,0
+CHEBI:33167,sodium iodide,I.Na,149.894,0
+CHEBI:33403,elemental sulfur,,,
+CHEBI:33942,ribose,C5H10O5,150.13,0
+CHEBI:33984,fucose,,,
+CHEBI:34535,ampicillin sodium,C16H18N3O4S.Na,371.394,0
+CHEBI:34545,Azimilide,C23H28ClN5O3,457.962,0
+CHEBI:34653,Congo Red,C32H22N6O6S2.2Na,696.678,0
+CHEBI:34683,disodium hydrogenphosphate,HO4P.2Na,141.958,0
+CHEBI:34887,nickel dichloride,Cl2Ni,129.599,0
+CHEBI:35176,zinc sulfate,O4S.Zn,161.453,0
+CHEBI:35195,surfactant,,,
+CHEBI:35366,fatty acid,CHO2R,45.017,0
+CHEBI:35458,cerium trichloride,CeCl3,246.475,0
+CHEBI:35607,trisodium vanadate,3Na.O4V,183.91,0
+CHEBI:35696,cobalt dichloride,2Cl.Co,129.839,0
+CHEBI:35697,trans-cinnamic acid,C9H8O2,148.161,0
+CHEBI:35704,N(2)-acetyl-L-lysine,C8H16N2O3,188.227,0
+CHEBI:35899,crotonate,C4H5O2,85.082,-1
+CHEBI:36018,"1,1,2-trichloroethane",C2H3Cl3,133.405,0
+CHEBI:36218,beta-lactose,C12H22O11,342.297,0
+CHEBI:36272,tungstic acid,H2O4W,249.852,0
+CHEBI:36336,naphthalenesulfonic acid,,,
+CHEBI:36383,strontium dichloride,2Cl.Sr,158.526,0
+CHEBI:36385,strontium dichloride hexahydrate,Cl2Sr.6H2O,266.616,0
+CHEBI:36702,2-acyl-1-alkyl-sn-glycero-3-phosphocholine,C9H18NO7PR2,283.216,0
+CHEBI:36751,pyrrole-2-carboxylic acid,C5H5NO2,111.1,0
+CHEBI:37070,2-methylbutyric acid,C5H10O2,102.133,0
+CHEBI:37166,xylan,,,
+CHEBI:37585,sodium dihydrogenphosphate,H2O4P.Na,119.976,0
+CHEBI:38267,boronic acid,H3BO2,45.834,0
+CHEBI:38892,disodium tetraborate,H4B4O9.2Na,237.251,0
+CHEBI:39005,2-(N-morpholino)ethanesulfonic acid,C6H13NO4S,195.24,0
+CHEBI:39010,MES,,,
+CHEBI:39033,PIPES,,,
+CHEBI:39035,TES,,,
+CHEBI:39054,NTA,,,
+CHEBI:39060,N-(2-acetamido)-2-aminoethanesulfonic acid,C4H10N2O4S,182.201,0
+CHEBI:39061,ACES,,,
+CHEBI:39063,N-tris(hydroxymethyl)methylglycine,C6H13NO5,179.172,0
+CHEBI:39065,bicine,,,
+CHEBI:39074,MOPS,,,
+CHEBI:40009,D-cycloserine,C3H6N2O2,102.093,0
+CHEBI:40666,"1,6-anhydro-N-acetyl-beta-muramic acid",C11H17NO7,275.257,0
+CHEBI:40957,"N,N-bis(2-hydroxyethyl)glycine",C6H13NO4,163.173,0
+CHEBI:41131,crotonic acid,C4H6O2,86.09,0
+CHEBI:41218,mercaptoethanol,C2H6OS,78.136,0
+CHEBI:41250,bis-tris,C8H19NO5,209.242,0
+CHEBI:41688,crystal violet,C25H30N3.Cl,407.989,0
+CHEBI:41808,decane,C10H22,142.286,0
+CHEBI:41981,dideuterium oxide,D2O,20.027,0
+CHEBI:42106,"L-1,4-dithiothreitol",C4H10O2S2,154.256,0
+CHEBI:42160,dithionite(2-),O4S2,128.13,-2
+CHEBI:42334,2-[4-(2-hydroxyethyl)piperazin-1-yl]ethanesulfonic acid,C8H18N2O4S,238.309,0
+CHEBI:43796,(S)-lipoic acid,C8H14O2S2,206.332,0
+CHEBI:44115,3-(N-morpholino)propanesulfonic acid,C7H15NO4S,209.267,0
+CHEBI:44557,nitrilotriacetic acid,C6H9NO6,191.139,0
+CHEBI:45165,pyromellitic acid,C10H6O8,254.15,0
+CHEBI:45296,hexadecane,C16H34,226.448,0
+CHEBI:45630,4-oxopentanoic acid,C5H8O3,116.116,0
+CHEBI:45924,trimethoprim,C14H18N4O3,290.323,0
+CHEBI:45931,thiamine(1+) diphosphate(1-),C12H18N4O7P2S,424.312,0
+CHEBI:45996,ribothymidine,C10H14N2O6,258.23,0
+CHEBI:46020,tetramethylammonium,C4H12N,74.147,1
+CHEBI:46345,5-fluorouracil,C4H3FN2O2,130.078,0
+CHEBI:46502,tungstate,O4W,247.836,-2
+CHEBI:46756,HEPES,,,
+CHEBI:46760,tricine,,,
+CHEBI:47869,thioglycolate(2-),C2H2O2S,90.103,-2
+CHEBI:47965,N-acetylmuramic acid,C11H19NO8,293.271,0
+CHEBI:47966,aldehydo-N-acetylmuramic acid,C11H19NO8,293.272,0
+CHEBI:48607,lithium chloride,Cl.Li,42.394,0
+CHEBI:48843,disodium selenite,2Na.O3Se,172.937,0
+CHEBI:48923,erythromycin,,,
+CHEBI:49105,thiamine hydrochloride,C12H17N4OS.Cl.HCl,337.276,0
+CHEBI:49474,argon(0),Ar,39.948,0
+CHEBI:49553,copper(II) chloride,Cl2Cu,134.452,0
+CHEBI:49976,zinc dichloride,2Cl.Zn,136.296,0
+CHEBI:50144,sodium pyruvate,C3H3O3.Na,110.044,0
+CHEBI:50385,hemin,C34H32ClFeN4O4,651.952,0
+CHEBI:51765,benzylpenicillin sodium,C16H17N2O4S.Na,356.379,0
+CHEBI:52071,dextran,,,
+CHEBI:53001,nickel sulfate,Ni.O4S,154.756,0
+CHEBI:53258,sodium citrate,C6H5O7.3Na,258.069,0
+CHEBI:53311,sodium alginate,(C6H7O6)n.H2NaO,216.121,0
+CHEBI:53389,poly(3-hydroxybutyrate),(C4H6O2)n,86.09,0
+CHEBI:53423,polysorbate 40,(C2H4O)w.(C2H4O)x.(C2H4O)y.(C2H4O)z.C22H42O6,578.784,0
+CHEBI:53424,polysorbate 20,(C2H4O)w.(C2H4O)x.(C2H4O)y.(C2H4O)z.C18H34O6,522.676,0
+CHEBI:53425,polysorbate 60,(C2H4O)w.(C2H4O)x.(C2H4O)y.(C2H4O)z.C24H46O6,606.838,0
+CHEBI:53426,polysorbate 80,(C2H4O)w.(C2H4O)x.(C2H4O)y.(C2H4O)z.C24H44O6,604.822,0
+CHEBI:53437,nickel sulfate hexahydrate,6H2O.Ni.O4S,262.846,0
+CHEBI:53438,iron(3+) sulfate,2Fe.3O4S,399.879,0
+CHEBI:53470,cobalt(2+) sulfate,Co.O4S,154.996,0
+CHEBI:53471,chromium(III) sulfate,2Cr.3O4S,392.181,0
+CHEBI:53472,copper(I) chloride,ClCu,98.999,0
+CHEBI:53503,cobalt chloride hexahydrate,2Cl.Co.6H2O,237.929,0
+CHEBI:53504,nickel sulfate heptahydrate,7H2O.Ni.O4S,280.861,0
+CHEBI:53542,nickel chloride hexahydrate,2Cl.6H2O.Ni,237.689,0
+CHEBI:53633,L-lysine hydrochloride,C6H14N2O2.HCl,182.651,0
+CHEBI:53696,disodium L-tyrosinate,C9H9NO3.2Na,225.155,0
+CHEBI:57912,L-tryptophan zwitterion,C11H12N2O2,204.229,0
+CHEBI:59337,methylamine hydrochloride,CH6N.Cl,67.519,0
+CHEBI:59640,N-acetylglucosamine,,,
+CHEBI:60720,sodium silicate,2Na.O3Si,122.063,0
+CHEBI:61930,N(6)-acetyl-L-lysine residue,C8H14N2O2,170.212,0
+CHEBI:62064,"butane-2,3-diol",C4H10O2,90.122,0
+CHEBI:62345,L-rhamnose,,,
+CHEBI:62946,ammonium sulfate,2H4N.O4S,132.141,0
+CHEBI:62947,ammonium acetate,C2H3O2.H4N,77.083,0
+CHEBI:62955,sodium 2-(N-morpholino)ethanesulfonate,C6H12NO4S.Na,217.222,0
+CHEBI:62964,magnesium acetate,2C2H3O2.Mg,142.393,0
+CHEBI:62965,sodium formate,CHO2.Na,68.007,0
+CHEBI:62982,ammonium dihydrogen phosphate,H2O4P.H4N,115.025,0
+CHEBI:63004,sodium bromide,Br.Na,102.894,0
+CHEBI:63005,sodium nitrate,NO3.Na,84.994,0
+CHEBI:63017,sodium L-tartrate,C4H4O6.2Na,194.05,0
+CHEBI:63036,potassium dihydrogen phosphate,H2O4P.K,136.084,0
+CHEBI:63037,triammonium citrate,C6H5O7.3H4N,243.216,0
+CHEBI:63038,ammonium nitrate,H4N.NO3,80.043,0
+CHEBI:63041,manganese(II) chloride,Cl2Mn,125.844,0
+CHEBI:63043,potassium nitrate,K.NO3,101.102,0
+CHEBI:63051,diammonium hydrogen phosphate,2H4N.HO4P,132.056,0
+CHEBI:63055,disodium PIPES,C8H16N2O6S2.2Na,346.338,0
+CHEBI:63076,diammonium citrate,C6H6O7.2H4N,226.185,0
+CHEBI:63125,EDTA trisodium salt,C10H13N2O8.3Na,358.19,0
+CHEBI:63317,barium chloride,Ba.2Cl,208.234,0
+CHEBI:63675,sodium succinate (anhydrous),C4H4O4.2Na,162.052,0
+CHEBI:63686,sodium succinate hexahydrate,C4H4O4.6H2O.2Na,270.142,0
+CHEBI:63939,sodium tungstate dihydrate,2H2O.2Na.O4W,329.846,0
+CHEBI:63940,sodium tungstate,2Na.O4W,293.816,0
+CHEBI:64103,sodium butyrate,C4H7O2.Na,110.088,0
+CHEBI:64139,"(2R,3S)-EHNA hydrochloride",C14H23N5O.HCl,313.833,0
+CHEBI:64205,calcium nitrate,Ca.2NO3,164.086,0
+CHEBI:64220,monosodium glutamate,C5H8NO4.Na,169.112,0
+CHEBI:64700,trimethylamine hydrochloride,C3H9N.HCl,95.573,0
+CHEBI:64734,EDTA disodium salt (anhydrous),C10H14N2O8.2Na,336.208,0
+CHEBI:64758,EDTA disodium salt dihydrate,C10H14N2O8.2H2O.2Na,372.238,0
+CHEBI:65242,sodium chlorate,ClO3.Na,106.44,0
+CHEBI:65327,D-xylose,C5H10O5,150.13,0
+CHEBI:66870,sodium dithionite,2Na.O4S2,174.11,0
+CHEBI:66872,potassium fluoride,F.K,58.096,0
+CHEBI:68329,syringic acid,C9H10O5,198.174,0
+CHEBI:71240,sodium diphosphate,4Na.O7P2,265.901,0
+CHEBI:72449,malachite green,C23H25N2.Cl,364.92,0
+CHEBI:73685,N(2)-acetylglutamine,C7H12N2O4,188.183,0
+CHEBI:74779,aluminium sulfate octadecahydrate,2Al.18H2O.3O4S,666.423,0
+CHEBI:75213,sodium molybdate dihydrate,2H2O.MoO4.2Na,241.946,0
+CHEBI:75215,sodium molybdate (anhydrous),MoO4.2Na,205.916,0
+CHEBI:75221,sodium metavanadate,Na.O3V,121.931,0
+CHEBI:75228,sodium lactate,C3H5O3.Na,112.06,0
+CHEBI:75249,potassium chromate,CrO4.2K,194.188,0
+CHEBI:75456,2-stearoylglycerol,C21H42O4,358.563,0
+CHEBI:75832,iron(2+) sulfate (anhydrous),Fe.O4S,151.908,0
+CHEBI:75834,iron(2+) sulfate monohydrate,Fe.H2O.O4S,169.923,0
+CHEBI:75836,iron(2+) sulfate heptahydrate,Fe.7H2O.O4S,278.013,0
+CHEBI:75937,monooleoylglycerol,C21H40O4,356.293,0
+CHEBI:76181,ferrous ammonium sulfate hexahydrate,Fe.6H2O.2H4N.2O4S,392.139,0
+CHEBI:76208,sodium sulfide (anhydrous),2Na.S,78.047,0
+CHEBI:76209,sodium sulfide nonahydrate,9H2O.2Na.S,240.182,0
+CHEBI:77775,sodium selenate,2Na.O4Se,188.936,0
+CHEBI:78018,dodecylphosphocholine,C17H38NO4P,351.468,0
+CHEBI:78036,copper(II) nitrate,Cu.2NO3,187.554,0
+CHEBI:78074,tin(II) chloride dihydrate,2Cl.2H2O.Sn,225.647,0
+CHEBI:78292,sodium feredetate,C10H12FeN2O8.Na,367.047,0
+CHEBI:78672,rubidium chloride,Cl.Rb,120.921,0
+CHEBI:78870,sodium nitrite,NO2.Na,68.995,0
+CHEBI:81860,Sodium oleate,C18H33O2.Na,304.45,0
+CHEBI:81862,potassium hydrogencarbonate,CHO3.K,100.114,0
+CHEBI:82664,iron(0),Fe,55.845,0
+CHEBI:84015,"(1R,2R)-diclocymet",C15H18Cl2N2O,313.228,0
+CHEBI:84997,sodium gluconate,C6H11O7.Na,218.137,0
+CHEBI:85146,carboxymethylcellulose,,,
+CHEBI:85248,gellan gum,,,
+CHEBI:86149,ammonium nickel sulfate hexahydrate,6H2O.2H4N.Ni.2O4S,394.987,0
+CHEBI:86153,barium chloride dihydrate,Ba.2Cl.2H2O,244.264,0
+CHEBI:86154,bromocresol purple,C21H16Br2O5S,540.229,0
+CHEBI:86155,bromothymol blue,C27H28Br2O5S,624.391,0
+CHEBI:86156,cadmium nitrate tetrahydrate,Cd.4H2O.2NO3,308.48,0
+CHEBI:86158,calcium chloride dihydrate,Ca.2Cl.2H2O,147.014,0
+CHEBI:86159,calcium nitrate tetrahydrate,Ca.4H2O.2NO3,236.146,0
+CHEBI:86202,chalcopyrite,Cu.Fe.2S,183.525,0
+CHEBI:86206,chromium trinitrate heptahydrate,Cr.7H2O.3NO3,364.113,0
+CHEBI:86209,cobalt dinitrate,Co.2NO3,182.941,0
+CHEBI:86214,cobalt dinitrate hexahydrate,Co.6H2O.2NO3,291.031,0
+CHEBI:86218,cresol red,C21H18O5S,382.437,0
+CHEBI:86222,borax,10H2O.H4B4O9.2Na,417.401,0
+CHEBI:86249,iron dichloride tetrahydrate,Cl2Fe.4H2O,198.811,0
+CHEBI:86254,iron trichloride hexahydrate,Cl3Fe.6H2O,270.294,0
+CHEBI:86318,copper(II) chloride dihydrate,Cl2Cu.2H2O,170.482,0
+CHEBI:86345,magnesium dichloride hexahydrate,2Cl.6H2O.Mg,203.301,0
+CHEBI:86355,magnesium dichloride monohydrate,2Cl.H2O.Mg,113.226,0
+CHEBI:86356,manganese(II) sulfate dihydrate,2H2O.Mn.O4S,187.031,0
+CHEBI:86358,manganese(II) sulfate tetrahydrate,4H2O.Mn.O4S,223.061,0
+CHEBI:86360,manganese(II) sulfate,Mn.O4S,151.001,0
+CHEBI:86364,manganese(II) sulfate monohydrate,H2O.Mn.O4S,169.016,0
+CHEBI:86368,manganese(II) chloride tetrahydrate,Cl2Mn.4H2O,197.904,0
+CHEBI:86370,neutral red,C15H16N4.HCl,288.782,0
+CHEBI:86416,"1-eicosanoyl-2-[(11Z,14Z,17Z)-eicosatrienoyl]-sn-glycero-3-phosphocholine",C48H90NO8P,840.221,0
+CHEBI:86463,potassium aluminium sulfate,Al.K.2O4S,258.206,0
+CHEBI:86465,potassium aluminium sulfate dodecahydrate,Al.12H2O.K.2O4S,474.386,0
+CHEBI:86466,potassium tetrathionate,2K.O6S4,302.458,0
+CHEBI:86473,sodium molybdate heptahydrate,7H2O.MoO4.2Na,332.021,0
+CHEBI:86477,sodium sulfite,2Na.O3S,126.044,0
+CHEBI:86481,sodium thioglycolate,C2H3O2S.Na,114.101,0
+CHEBI:87009,vanadyl sulfate dihydrate,2H2O.O4S.OV,199.036,0
+CHEBI:87020,vanadyl sulfate hydrate,(H2O)n.O5SV,181.021,0
+CHEBI:91090,charcoal,,,
+CHEBI:91241,ammonium oxalate,C2O4.2H4N,124.096,0
+CHEBI:91243,calcium chloride hexahydrate,Ca.2Cl.6H2O,219.074,0
+CHEBI:91244,cobalt(2+) sulfate heptahydrate,Co.7H2O.O4S,281.101,0
+CHEBI:91245,copper(II) chloride pentahydrate,Cl2Cu.5H2O,224.527,0
+CHEBI:91246,copper(II) sulfate hexahydrate,Cu.6H2O.O4S,267.699,0
+CHEBI:91247,L-cysteine hydrochloride,C3H7NO2S.HCl,157.622,0
+CHEBI:91248,L-cysteine hydrochloride hydrate,C3H7NO2S.H2O.HCl,175.637,0
+CHEBI:91249,ammonium molybdate,2H4N.MoO4,196.014,0
+CHEBI:91251,sodium glyoxylate,C2HO3.Na,96.017,0
+CHEBI:91257,disodium hydrogenarsenate heptahydrate,7H2O.HAsO4.2Na,312.011,0
+CHEBI:91258,disodium hydrogenphosphate dihydrate,2H2O.HO4P.2Na,177.988,0
+CHEBI:91260,disodium malate,,,
+CHEBI:91261,disodium (S)-malate,C4H4O5.2Na,178.051,0
+CHEBI:91263,disodium maleate,C4H2O4.2Na,160.036,0
+CHEBI:91318,(R)-oleoylcarnitine hydrochloride,C25H48NO4.Cl,462.115,0
+CHEBI:113373,sodium 3-hydroxybutyrate,C4H7O3.Na,126.087,0
+CHEBI:113451,sodium ascorbate,C6H7O6.Na,198.106,0
+CHEBI:113455,sodium benzoate,C7H5O2.Na,144.105,0
+CHEBI:114126,sodium hexanoate,C6H11O2.Na,138.142,0
+CHEBI:114249,sodium dihydrogenphosphate monohydrate,H2O.H2O4P.Na,137.991,0
+CHEBI:114786,sodium disulfite,2Na.O5S2,190.109,0
+CHEBI:114954,sodium ferulate,C10H9O4.Na,216.168,0
+CHEBI:115156,disodium fumarate,C4H2O4.2Na,160.036,0
+CHEBI:115197,sodium gallate,C7H5O5.Na,192.102,0
+CHEBI:131361,disodium selenite pentahydrate,5H2O.2Na.O3Se,263.012,0
+CHEBI:131366,disodium tetraborate decahydrate,10H2O.H4B4O9.2Na,417.401,0
+CHEBI:131371,iron(3+) phosphate,Fe.O4P,150.815,0
+CHEBI:131372,iron(3+) phosphate tetrahydrate,Fe.4H2O.O4P,222.875,0
+CHEBI:131378,ferrous ammonium sulfate heptahydrate,Fe.7H2O.2H4N.2O4S,410.154,0
+CHEBI:131383,"2,2,4,4,6,8,8-heptamethylnonane",C16H34,226.448,0
+CHEBI:131389,magnesium citrate,C6H6O7.Mg,214.412,0
+CHEBI:131394,magnesium dichloride dihydrate,2Cl.2H2O.Mg,131.241,0
+CHEBI:131395,manganese(II) chloride dihydrate,Cl2Mn.2H2O,161.874,0
+CHEBI:131523,manganese(II) sulfate hexahydrate,6H2O.Mn.O4S,259.091,0
+CHEBI:131524,manganese(II) sulfate pentahydrate,5H2O.Mn.O4S,241.076,0
+CHEBI:131526,potassium carbonate,CO3.2K,138.204,0
+CHEBI:131527,dipotassium hydrogen phosphate,HO4P.2K,174.174,0
+CHEBI:131529,pyridoxal hydrochloride,C8H9NO3.HCl,203.625,0
+CHEBI:131531,pyridoxamine hydrochloride,C8H12N2O2.HCl,204.657,0
+CHEBI:131532,pyridoxamine dihydrochloride,C8H12N2O2.2HCl,241.118,0
+CHEBI:131839,sodium dodecanoate,C12H23O2.Na,222.304,0
+CHEBI:132089,sodium glycerol 2-phosphate,C3H7O6P.2Na,216.037,0
+CHEBI:132095,sodium metavanadate hydrate,H2O.Na.O3V,139.946,0
+CHEBI:132100,sodium octanoate,C8H15O2.Na,166.196,0
+CHEBI:132101,sodium orotate,C5H3N2O4.Na,178.079,0
+CHEBI:132103,sodium perchlorate,ClO4.Na,122.439,0
+CHEBI:132106,sodium propionate,C3H5O2.Na,96.061,0
+CHEBI:132108,sodium silicate nonahydrate,9H2O.2Na.O3Si,284.198,0
+CHEBI:132109,sodium octadecanoate,C18H35O2.Na,306.466,0
+CHEBI:132112,sodium thiosulfate,2Na.O3S2,158.111,0
+CHEBI:132748,sodium vanillate,C8H7O4.Na,190.13,0
+CHEBI:132751,thiamine hydrochloride dihydrate,C12H18N4OS.2Cl.2H2O,373.306,0
+CHEBI:132758,vanadyl sulfate pentahydrate,5H2O.O4S.OV,253.081,0
+CHEBI:132762,zinc sulfate hexahydrate,6H2O.O4S.Zn,269.543,0
+CHEBI:132764,sodium oxalate,C2O4.2Na,133.998,0
+CHEBI:132766,sodium nitrilotriacetate,C6H6NO6.3Na,257.085,0
+CHEBI:132767,ferric pyrophosphate,4Fe.3O7P2,745.203,0
+CHEBI:133341,choline chloride,C5H14NO.Cl,139.626,0
+CHEBI:133362,N-acetyl-L-methionyl-L-glutaminyl residue,C12H20N3O4S,302.376,0
+CHEBI:136511,manganese dioxide,MnO2,86.936,0
+CHEBI:141517,tyloxapol,(C17H26O2)m.2(C2H4O)n.C29H44O2,775.168,0
+CHEBI:142468,"1,2-dichloropropane",C3H6Cl2,112.987,0
+CHEBI:144421,iron(III) citrate,C6H5FeO7,244.944,0
+CHEBI:144434,iron(III) citrate monohydrate,C6H5O7.Fe.H2O,262.959,0
+CHEBI:149425,ammonium magnesium phosphate,H4N.Mg.O4P,137.314,0
+CHEBI:172431,Acetyl-Glu,C7H11NO5,189.167,0
+CHEBI:176843,vitamin B12,,,
+CHEBI:177535,L-Glutathione (reduced),C10H17N3O6S,307.328,0
+CHEBI:183882,3-(cyclohexylamino)-2-hydroxy-1-propanesulfonic acid,C9H19NO4S,237.321,0
+CHEBI:184335,Ammonium bicarbonate,CHO3.H4N,79.055,0
+CHEBI:189426,Pyridoxine dihydrochloride,C8H11NO3.2HCl,242.102,0
+CHEBI:191088,Cyclohexylaminopropanesulfonic acid,C9H19NO3S,221.322,0
+CHEBI:192761,ferrihydrite,,,
+CHEBI:193555,isobutyramide,,,
+CHEBI:195690,L-Ornithine monochlorohydrate/ornithine,C5H12N2O2.HCl,168.624,0
+CHEBI:209807,cefoxitin,C16H17N3O7S2,427.46,0
+CHEBI:229203,Trigonelline HCl,C7H8NO2.Cl,173.599,0
+CHEBI:232425,monosodium L-glutamate hydrate,C5H8NO4.H2O.Na,187.127,0
+CHEBI:232610,potassium nitrite,K.NO2,85.103,0
+CHEBI:232797,trehalose dihydrate,C12H22O11.2H2O,378.327,0
+CHEBI:232798,sodium L-lactate,C3H5O3.Na,112.06,0
+CHEBI:234557,sodium palmitate,C16H31O2.Na,278.412,0
+CHEBI:326268,"1,4-butanediammonium",C4H14N2,90.17,2
+CHEBI:495055,beta-cyclodextrin,C42H70O35,1134.987,0
+CHEBI:506227,N-acetyl-D-glucosamine,C8H15NO6,221.209,0

@@ -109,3 +109,20 @@ a { color: var(--accent); }
     scroll-behavior: auto !important;
   }
 }
+
+/* Formula, mass and supplier sit under the ingredient name rather than in
+   columns of their own: they are properties of the shared ChEBI term, and a
+   seven-column ingredients table stops fitting on a laptop. */
+table.ingredients .structure,
+table.ingredients .supplier { margin-top: 0.15em; line-height: 1.35; }
+table.ingredients .formula {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  letter-spacing: 0.01em;
+}
+table.ingredients .formula + .mass::before { content: " \00B7 "; }
+
+/* Composition diagrams. Node geometry is set in mermaid-init.js — mermaid
+   measures label boxes in JS before any of this applies — so these rules only
+   keep the finished SVG inside the page. */
+pre.mermaid { margin: 1em 0; overflow-x: auto; }
+pre.mermaid svg { max-width: 100%; height: auto; }
