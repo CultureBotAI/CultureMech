@@ -52,8 +52,10 @@ def test_an_ungrounded_ingredient_resolves_to_nothing():
 
 def test_a_non_chebi_grounding_resolves_to_nothing():
     """FOODON terms are real groundings but carry no formula here."""
-    assert structure_for({"preferred_term": "Yeast Extract",
-                          "term": {"id": "FOODON:03315426"}}) is None
+    assert (
+        structure_for({"preferred_term": "Yeast Extract", "term": {"id": "FOODON:03315426"}})
+        is None
+    )
 
 
 def test_a_term_absent_from_the_table_does_not_raise():
@@ -75,9 +77,7 @@ def test_what_the_record_asserts_beats_the_shared_term():
 
 
 def test_a_record_asserting_only_a_weight_keeps_the_terms_formula():
-    structure = structure_for(
-        {"term": {"id": "CHEBI:17234"}, "molecular_weight": 999.0}
-    )
+    structure = structure_for({"term": {"id": "CHEBI:17234"}, "molecular_weight": 999.0})
     assert structure.molecular_weight == "999.0"
     assert structure.formula == "C6H12O6"
 

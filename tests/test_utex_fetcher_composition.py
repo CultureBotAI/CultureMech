@@ -56,9 +56,7 @@ def test_a_table_without_a_component_header_is_skipped():
 
 def test_column_order_does_not_matter():
     """The point of reading the header: a reordered table still parses."""
-    entries = parse_composition_table(
-        [["Amount", "Component"], ["10 g/L", "Glucose"]]
-    )
+    entries = parse_composition_table([["Amount", "Component"], ["10 g/L", "Glucose"]])
     assert entries == [{"ingredient": "Glucose", "amount": "10 g/L"}]
 
 

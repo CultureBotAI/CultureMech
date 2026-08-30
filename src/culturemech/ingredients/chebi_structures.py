@@ -66,9 +66,7 @@ def load() -> dict[str, Structure]:
 
     reader = csv.DictReader(text.splitlines())
     if reader.fieldnames != HEADER:
-        raise StructureIndexError(
-            f"{_INDEX_NAME} header is {reader.fieldnames}, expected {HEADER}"
-        )
+        raise StructureIndexError(f"{_INDEX_NAME} header is {reader.fieldnames}, expected {HEADER}")
 
     table: dict[str, Structure] = {}
     for row in reader:

@@ -81,8 +81,20 @@ ORIGINAL_AMOUNT = re.compile(r"^Original amount:\s*(.*)$")
 # end so a parenthetical that is part of the chemistry — "PABA(p-aminobenzoic
 # acid)" — is only stripped when a vendor/CAS one follows it.
 VENDORS = (
-    "Sigma", "Fisher", "Baker", "MCIB", "Bacto", "Difco", "ICN", "Aldrich",
-    "Mallinckrodt", "ACROS", "VWR", "EM Science", "J.T. Baker", "Alfa",
+    "Sigma",
+    "Fisher",
+    "Baker",
+    "MCIB",
+    "Bacto",
+    "Difco",
+    "ICN",
+    "Aldrich",
+    "Mallinckrodt",
+    "ACROS",
+    "VWR",
+    "EM Science",
+    "J.T. Baker",
+    "Alfa",
 )
 _VENDOR_ALT = "|".join(re.escape(v) for v in VENDORS)
 TRAILING_PAREN = re.compile(
@@ -128,10 +140,10 @@ def strip_vendor(name: str) -> tuple[str, str | None, str | None]:
 
 
 def split_supplier(text: str) -> dict[str, str]:
-    """"Sigma P 3786" -> {supplier_name: Sigma, catalog_number: P 3786}."""
+    """ "Sigma P 3786" -> {supplier_name: Sigma, catalog_number: P 3786}."""
     for vendor in sorted(VENDORS, key=len, reverse=True):
         if text.lower().startswith(vendor.lower()):
-            catalog = text[len(vendor):].strip()
+            catalog = text[len(vendor) :].strip()
             entry = {"supplier_name": vendor}
             if catalog:
                 entry["catalog_number"] = catalog
@@ -320,9 +332,7 @@ def main(argv: list[str] | None = None) -> int:
             failed.append((path.name, [f"UTEX:{source_id} is not in the capture"]))
             continue
 
-        record, repaired, failures = repair_record(
-            record, by_id[source_id]["composition"], stats
-        )
+        record, repaired, failures = repair_record(record, by_id[source_id]["composition"], stats)
         stats["ingredients_repaired"] += repaired
         if failures:
             failed.append((path.name, failures))
@@ -355,8 +365,10 @@ def main(argv: list[str] | None = None) -> int:
             break
 
     verb = "Repaired" if args.apply else "Would repair"
-    print(f"\n{verb} {stats['records_repaired']} records / "
-          f"{stats['ingredients_repaired']} ingredients")
+    print(
+        f"\n{verb} {stats['records_repaired']} records / "
+        f"{stats['ingredients_repaired']} ingredients"
+    )
     for key in sorted(stats):
         print(f"  {key}: {stats[key]}")
     if failed:

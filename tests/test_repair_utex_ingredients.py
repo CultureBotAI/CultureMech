@@ -101,8 +101,11 @@ def test_an_empty_cell_yields_no_concentration():
 
 def test_an_unconvertible_amount_becomes_variable_not_a_guessed_unit():
     repaired = build_ingredient(
-        {"preferred_term": "4", "concentration": {"value": "variable", "unit": "G_PER_L"},
-         "notes": "Original amount: DAS Vitamin Cocktail"},
+        {
+            "preferred_term": "4",
+            "concentration": {"value": "variable", "unit": "G_PER_L"},
+            "notes": "Original amount: DAS Vitamin Cocktail",
+        },
         {"ingredient": "DAS Vitamin Cocktail", "amount": "4 drops"},
     )
     assert repaired["preferred_term"] == "DAS Vitamin Cocktail"
