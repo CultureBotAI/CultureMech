@@ -103,14 +103,79 @@ def fetch(chebi_id: str, timeout: float = 30.0) -> dict[str, str] | None:
     }
 
 
+def check(records_dir: Path, out: Path) -> int:
+    """Verify the packaged table against its metadata and the corpus. Offline.
+
+    A stale or truncated table fails quietly — `structure_for` returns None for
+    an unknown id, which is right at render time and wrong as the only line of
+    defence. This is the loud check.
+    """
+    problems: list[str] = []
+
+    if not out.exists():
+        print(f"{out} is missing. Build it with --apply.", file=sys.stderr)
+        return 1
+    meta_path = out.parent / METADATA
+    if not meta_path.exists():
+        problems.append(f"{meta_path.name} is missing")
+        metadata = {}
+    else:
+        metadata = json.loads(meta_path.read_text())
+
+    with out.open(newline="") as handle:
+        reader = csv.DictReader(handle)
+        if reader.fieldnames != HEADER:
+            problems.append(f"header is {reader.fieldnames}, expected {HEADER}")
+        rows = list(reader)
+
+    if metadata.get("fields") not in (None, HEADER):
+        problems.append(f"metadata fields {metadata.get('fields')} do not match {HEADER}")
+    recorded = metadata.get("row_count")
+    if recorded is not None and recorded != len(rows):
+        problems.append(f"metadata says {recorded} rows, file holds {len(rows)}")
+
+    identifiers = [r["chebi_id"] for r in rows]
+    if len(set(identifiers)) != len(identifiers):
+        problems.append("the table has duplicate chebi_id rows")
+    if identifiers != sorted(identifiers, key=lambda c: int(c.split(":")[1])):
+        problems.append("rows are not in ascending CHEBI id order")
+
+    cited = set(cited_chebi_ids(records_dir))
+    missing = sorted(cited - set(identifiers), key=lambda c: int(c.split(":")[1]))
+    if missing:
+        problems.append(
+            f"{len(missing)} CHEBI id(s) cited by the corpus are absent from the "
+            f"table, so those rows render without a formula: "
+            f"{', '.join(missing[:10])}{' ...' if len(missing) > 10 else ''}"
+        )
+
+    print(f"{out.relative_to(REPO_ROOT)}: {len(rows)} rows, {len(cited)} cited by the corpus")
+    if problems:
+        print(f"\n{len(problems)} problem(s):", file=sys.stderr)
+        for problem in problems:
+            print(f"  {problem}", file=sys.stderr)
+        print("\nRebuild with: just fetch-chebi-properties --apply", file=sys.stderr)
+        return 1
+    print("✓ packaged, complete for every cited id, and consistent with its metadata")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--records-dir", type=Path, default=DEFAULT_RECORDS)
     parser.add_argument("--out", type=Path, default=DEFAULT_OUT)
     parser.add_argument("--apply", action="store_true", help="Write. Default is preview.")
+    parser.add_argument(
+        "--check",
+        action="store_true",
+        help="Verify the packaged table offline. No network, no writes.",
+    )
     parser.add_argument("--limit", type=int, default=0, help="Fetch at most N terms.")
     parser.add_argument("--rate-limit", type=float, default=0.15, help="Seconds between calls.")
     args = parser.parse_args(argv if argv is not None else sys.argv[1:])
+
+    if args.check:
+        return check(args.records_dir, args.out)
 
     ids = cited_chebi_ids(args.records_dir)
     if args.limit:
