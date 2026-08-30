@@ -15,6 +15,7 @@ Reports node and edge counts, and fails loudly if either file is missing or
 holds only its header — a silent empty export is the failure mode #294 was
 about.
 """
+
 from __future__ import annotations
 
 import argparse
@@ -28,13 +29,21 @@ CONFIG = REPO_ROOT / "src" / "culturemech" / "export" / "kgx.yaml"
 
 
 def find_records(records_dir: Path) -> list[str]:
-    """Every record YAML under `records_dir`, one directory deep.
+    """Every record YAML under `records_dir`, one directory deep, as absolute paths.
 
     Matches the corpus layout `data/normalized_yaml/<category>/<slug>.yaml`. The
     sibling `*_index.json` files live at the top level and are not YAML, so the
     `*/*.yaml` shape excludes them without needing a filter.
+
+    The paths must be absolute (#371). koza resolves a relative input path
+    against the directory holding its *configuration file*
+    (`src/culturemech/export/kgx.yaml`), not the working directory, so a
+    relative `--records-dir` produced
+    `src/culturemech/export/data/normalized_yaml/...` and the run died on the
+    first record. Resolving here fixes every caller at once rather than asking
+    each one to remember.
     """
-    return [str(p) for p in sorted(records_dir.glob("*/*.yaml"))]
+    return [str(p) for p in sorted(records_dir.expanduser().resolve().glob("*/*.yaml"))]
 
 
 def run(records_dir: Path, output_dir: Path, limit: int = 0) -> tuple[int, int]:
@@ -43,6 +52,16 @@ def run(records_dir: Path, output_dir: Path, limit: int = 0) -> tuple[int, int]:
     from koza.runner import KozaRunner
 
     sys.path.insert(0, str(REPO_ROOT / "src"))
+
+    # The asymmetry is the point of #371, and it is one-sided: koza resolves
+    # relative INPUT paths against its configuration file's directory, but the
+    # output directory against the working directory like anything else
+    # (measured — a relative output dir lands in the CWD, not beside kgx.yaml).
+    # So only the input side was broken. The output is resolved anyway, to keep
+    # the run independent of a later chdir and to keep `_display`'s
+    # `relative_to(REPO_ROOT)` meaningful.
+    records_dir = records_dir.expanduser().resolve()
+    output_dir = output_dir.expanduser().resolve()
 
     files = find_records(records_dir)
     if not files:
