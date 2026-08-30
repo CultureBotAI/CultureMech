@@ -14,6 +14,8 @@ on:
       - 'src/culturemech/schema/**'
       - 'scripts/validate_strict.py'
       - 'project.justfile'
+      - 'pyproject.toml'
+      - 'uv.lock'
       - '.github/workflows/validate-strict.yaml'
   workflow_dispatch:
 
