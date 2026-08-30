@@ -29,8 +29,13 @@ import time
 import urllib.parse
 import urllib.request
 from collections import Counter
-from datetime import UTC, datetime
+from collections.abc import Iterable, Mapping
+
+# `timezone.utc`, not `datetime.UTC`: the latter is 3.11+ and this project
+# supports >=3.10. The rest of scripts/ already uses timezone.utc.
+from datetime import datetime, timezone
 from pathlib import Path
+from typing import Any
 
 import yaml
 
@@ -46,26 +51,42 @@ HEADER = ["chebi_id", "label", "formula", "molecular_weight", "charge"]
 USER_AGENT = "CultureMech/1.0 (https://github.com/CultureBotAI/CultureMech)"
 
 
-def cited_chebi_ids(records_dir: Path) -> list[str]:
-    """Every distinct CHEBI id cited by an ingredient or solution component."""
-    found: set[str] = set()
-
-    def walk(items) -> None:
-        for item in items or []:
-            if not isinstance(item, dict):
-                continue
-            identifier = (item.get("term") or {}).get("id")
-            if isinstance(identifier, str) and identifier.startswith("CHEBI:"):
-                found.add(identifier)
-            walk(item.get("composition"))
-
-    for path in sorted(records_dir.glob("*/*.yaml")):
-        record = yaml.safe_load(path.read_text())
-        if not isinstance(record, dict):
+def _collect(items, found: set[str]) -> None:
+    for item in items or []:
+        if not isinstance(item, dict):
             continue
-        walk(record.get("ingredients"))
-        walk(record.get("solutions"))
+        identifier = (item.get("term") or {}).get("id")
+        if isinstance(identifier, str) and identifier.startswith("CHEBI:"):
+            found.add(identifier)
+        _collect(item.get("composition"), found)
+
+
+def cited_chebi_ids_from_records(records: Iterable[Mapping[str, Any]]) -> list[str]:
+    """Every distinct CHEBI id cited by already-parsed records.
+
+    Split out from `cited_chebi_ids` so the test can reuse conftest's
+    session-scoped `corpus` fixture. Re-walking `data/normalized_yaml` from the
+    test took 484s in CI and tripped the 120s slow-test budget.
+    """
+    found: set[str] = set()
+    for record in records:
+        if not isinstance(record, Mapping):
+            continue
+        _collect(record.get("ingredients"), found)
+        _collect(record.get("solutions"), found)
     return sorted(found, key=lambda c: int(c.split(":")[1]))
+
+
+def cited_chebi_ids(records_dir: Path) -> list[str]:
+    """Every distinct CHEBI id cited by the corpus on disk."""
+
+    def parsed():
+        for path in sorted(records_dir.glob("*/*.yaml")):
+            record = yaml.safe_load(path.read_text())
+            if isinstance(record, dict):
+                yield record
+
+    return cited_chebi_ids_from_records(parsed())
 
 
 def fetch(chebi_id: str, timeout: float = 30.0) -> dict[str, str] | None:
@@ -103,7 +124,7 @@ def fetch(chebi_id: str, timeout: float = 30.0) -> dict[str, str] | None:
     }
 
 
-def check(records_dir: Path, out: Path) -> int:
+def check(records_dir: Path | None, out: Path, cited: Iterable[str] | None = None) -> int:
     """Verify the packaged table against its metadata and the corpus. Offline.
 
     A stale or truncated table fails quietly — `structure_for` returns None for
@@ -140,7 +161,11 @@ def check(records_dir: Path, out: Path) -> int:
     if identifiers != sorted(identifiers, key=lambda c: int(c.split(":")[1])):
         problems.append("rows are not in ascending CHEBI id order")
 
-    cited = set(cited_chebi_ids(records_dir))
+    if cited is None:
+        if records_dir is None:
+            raise ValueError("check() needs either records_dir or cited")
+        cited = cited_chebi_ids(records_dir)
+    cited = set(cited)
     missing = sorted(cited - set(identifiers), key=lambda c: int(c.split(":")[1]))
     if missing:
         problems.append(
@@ -224,7 +249,7 @@ def main(argv: list[str] | None = None) -> int:
                 {
                     "source": OLS4,
                     "ontology": "chebi",
-                    "fetched": datetime.now(UTC).isoformat(),
+                    "fetched": datetime.now(timezone.utc).isoformat(),
                     "row_count": len(rows),
                     "ids_requested": len(ids),
                     "fields": HEADER,

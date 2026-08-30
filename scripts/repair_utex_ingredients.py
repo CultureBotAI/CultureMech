@@ -56,7 +56,10 @@ import json
 import re
 import sys
 from collections import Counter
-from datetime import UTC, datetime
+
+# `timezone.utc`, not `datetime.UTC`: the latter is 3.11+ and this project
+# supports >=3.10. The rest of scripts/ already uses timezone.utc.
+from datetime import datetime, timezone
 from decimal import Decimal, InvalidOperation
 from pathlib import Path
 from typing import Any
@@ -343,7 +346,7 @@ def main(argv: list[str] | None = None) -> int:
 
         record.setdefault("curation_history", []).append(
             {
-                "timestamp": datetime.now(UTC).isoformat(),
+                "timestamp": datetime.now(timezone.utc).isoformat(),
                 "curator": CURATOR,
                 "action": ACTION,
                 "notes": (

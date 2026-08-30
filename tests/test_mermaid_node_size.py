@@ -33,9 +33,9 @@ def test_html_labels_are_off_at_the_TOP_level():
     body = re.search(r"mermaid\.initialize\(\{(.*)\n\}\);", text, re.S)
     assert body, "could not find the mermaid.initialize call"
     # Two-space indent = a direct member of the config object, not nested.
-    assert re.search(r"^  htmlLabels:\s*false,", body.group(1), re.M), (
-        "htmlLabels: false is not set at the top level of mermaid.initialize"
-    )
+    assert re.search(
+        r"^  htmlLabels:\s*false,", body.group(1), re.M
+    ), "htmlLabels: false is not set at the top level of mermaid.initialize"
 
 
 def test_the_page_csp_still_blocks_inline_styles():

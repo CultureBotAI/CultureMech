@@ -24,7 +24,7 @@ import logging
 import time
 from datetime import datetime
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any
 
 import requests
 from bs4 import BeautifulSoup
@@ -121,7 +121,7 @@ class UTEXFetcher:
             {"User-Agent": "CultureMech/1.0 (Scientific Research; contact: info@culturemech.org)"}
         )
 
-    def fetch_media_index(self) -> List[Dict[str, str]]:
+    def fetch_media_index(self) -> list[dict[str, str]]:
         """Fetch media index page and extract recipe URLs.
 
         Returns:
@@ -157,7 +157,7 @@ class UTEXFetcher:
         logger.info(f"Found {len(unique_recipes)} unique media recipes")
         return unique_recipes
 
-    def fetch_recipe_details(self, recipe_url: str, recipe_name: str) -> Optional[Dict[str, Any]]:
+    def fetch_recipe_details(self, recipe_url: str, recipe_name: str) -> dict[str, Any] | None:
         """Fetch detailed recipe information from recipe page.
 
         Args:
@@ -258,7 +258,7 @@ class UTEXFetcher:
         else:
             return "general"
 
-    def fetch_all(self, limit: Optional[int] = None) -> Dict[str, Any]:
+    def fetch_all(self, limit: int | None = None) -> dict[str, Any]:
         """Fetch all media recipes.
 
         Args:

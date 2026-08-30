@@ -96,21 +96,20 @@ def test_an_empty_structure_is_falsy():
 
 
 @pytest.mark.corpus
-def test_the_packaged_table_passes_its_own_offline_check():
+def test_the_packaged_table_passes_its_own_offline_check(corpus):
     """`just check-chebi-structure-index`, as a test.
 
     A stale or truncated table fails quietly — `structure_for` returns None for
     an unknown id, which is right at render time and wrong as the only line of
     defence. Verified non-vacuous by truncating the file to 299 rows, which
     reports both the row-count mismatch and 341 uncovered ids.
+
+    Uses conftest's session-scoped `corpus` fixture rather than re-walking
+    `data/normalized_yaml`: walking it here took 484s in CI and tripped the
+    120s slow-test budget, for a parse the session had already done.
     """
-    from pathlib import Path
+    from fetch_chebi_properties import DEFAULT_OUT, check, cited_chebi_ids_from_records
 
-    from fetch_chebi_properties import DEFAULT_OUT, check
-
-    records = Path(__file__).resolve().parents[1] / "data" / "normalized_yaml"
-    if not records.is_dir():  # pragma: no cover - corpus always present in-repo
-        import pytest
-
-        pytest.skip("corpus not available")
-    assert check(records, DEFAULT_OUT) == 0
+    cited = cited_chebi_ids_from_records(record for _, record in corpus)
+    assert cited, "the corpus cites no CHEBI ids; the fixture looks empty"
+    assert check(None, DEFAULT_OUT, cited=cited) == 0
