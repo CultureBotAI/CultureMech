@@ -228,25 +228,17 @@ def run_codex_research(
                 check=False,
             )
         except subprocess.TimeoutExpired as exc:
-            raise ContractError(
-                f"codex exec timed out after {timeout} seconds"
-            ) from exc
+            raise ContractError(f"codex exec timed out after {timeout} seconds") from exc
         if completed.returncode:
             detail = (completed.stderr or completed.stdout or "").strip()[-800:]
-            raise ContractError(
-                f"codex exec failed with exit {completed.returncode}: {detail}"
-            )
+            raise ContractError(f"codex exec failed with exit {completed.returncode}: {detail}")
         if not response_path.is_file():
-            raise ContractError(
-                "codex exec succeeded without writing its structured response"
-            )
+            raise ContractError("codex exec succeeded without writing its structured response")
         try:
             payload = json.loads(response_path.read_text(encoding="utf-8"))
         except json.JSONDecodeError as exc:
             raise ContractError("codex exec returned invalid JSON") from exc
-        summary = validate_codex_payload(
-            payload, min_chars=min_chars, min_sources=min_sources
-        )
+        summary = validate_codex_payload(payload, min_chars=min_chars, min_sources=min_sources)
         rendered = render_codex_payload(payload)
         publish_path = destination.with_name(f".{destination.name}.tmp")
         publish_path.write_text(rendered, encoding="utf-8")
@@ -280,21 +272,15 @@ def codex_canary(
     )
     for command, required in checks:
         try:
-            completed = runner(
-                command, capture_output=True, text=True, timeout=20, check=False
-            )
+            completed = runner(command, capture_output=True, text=True, timeout=20, check=False)
         except (OSError, subprocess.TimeoutExpired) as exc:
-            return CanaryResult(
-                "codex", False, f"could not run {' '.join(command[:2])}: {exc}"
-            )
+            return CanaryResult("codex", False, f"could not run {' '.join(command[:2])}: {exc}")
         output = (completed.stdout or "") + (completed.stderr or "")
         if completed.returncode or any(token not in output for token in required):
             return CanaryResult(
                 "codex", False, f"{' '.join(command[:2])} failed the capability check"
             )
-    return CanaryResult(
-        "codex", True, "CLI authenticated; web search and schema output supported"
-    )
+    return CanaryResult("codex", True, "CLI authenticated; web search and schema output supported")
 
 
 def openscientist_canary(
