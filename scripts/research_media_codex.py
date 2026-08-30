@@ -35,8 +35,8 @@ problem (#286).
 The `--min-sources` gate exists because a thin run should announce itself: a report citing
 one URL has not researched anything, and must not look like a result.
 
-Requires `codex` on PATH and `web_search` enabled in `~/.codex/config.toml`; both are
-checked before anything runs.
+Requires an authenticated `codex` CLI whose help advertises native web search and
+schema-constrained output; the fleet canary checks both without starting a research run.
 
 Usage::
 
@@ -49,19 +49,18 @@ from __future__ import annotations
 
 import argparse
 import re
-import shutil
-import subprocess
 import sys
-
-try:
-    import tomllib
-except ModuleNotFoundError:  # Python 3.10
-    import tomli as tomllib
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 
+from deep_research_contract import (  # noqa: E402
+    ContractError,
+    codex_canary,
+    render_prompt_template,
+    run_codex_research,
+)
 from research_media import (  # noqa: E402
     DEFAULT_RESEARCH_DIR,
     DEFAULT_TEMPLATE,
@@ -70,7 +69,6 @@ from research_media import (  # noqa: E402
     template_vars,
 )
 
-CODEX_CONFIG = Path.home() / ".codex" / "config.toml"
 URL = re.compile(r"https?://[^\s)\]>,]+")
 
 PREAMBLE = (
@@ -83,57 +81,25 @@ PREAMBLE = (
 
 
 def preflight() -> list[str]:
-    """Reasons Codex cannot be used right now. Empty means go.
-
-    Checked up front because both failure modes are quiet otherwise: a missing binary
-    surfaces as a confusing subprocess error, and web search being off produces a
-    confident answer with no sources, which reads like a result.
-    """
-    problems: list[str] = []
-    if shutil.which("codex") is None:
-        problems.append("`codex` is not on PATH — install the Codex CLI")
-    if CODEX_CONFIG.is_file():
-        try:
-            cfg = tomllib.loads(CODEX_CONFIG.read_text())
-        except tomllib.TOMLDecodeError:
-            cfg = {}
-        if str(cfg.get("web_search", "")).lower() not in {"live", "true", "on"}:
-            problems.append(
-                f"`web_search` is not enabled in {CODEX_CONFIG} — Codex would answer "
-                "from memory and cite nothing"
-            )
-    else:
-        problems.append(f"{CODEX_CONFIG} not found — cannot confirm web search is on")
-    return problems
+    """Reasons the canonical Codex canary cannot be used right now."""
+    result = codex_canary()
+    return [] if result.ok else [result.detail]
 
 
 def build_prompt(doc: dict, media_file: Path, template: Path) -> str:
     """The research prompt: the shared media template, filled, behind a Codex preamble."""
-    body = template.read_text()
     variables = template_vars(doc, media_file)
     # Single-brace placeholders, matching the shared template that `research_media.py`
     # hands to deep-research-client via --var. Substituting `{{key}}` filled nothing and
     # shipped the raw template as the prompt — caught by --dry-run.
-    for key, value in variables.items():
-        body = body.replace("{" + key + "}", value)
-    missing = sorted(set(re.findall(r"\{([a-z_]+)\}", body)) - set(variables))
-    if missing:
+    try:
+        body = render_prompt_template(template, variables)
+    except ContractError as exc:
         raise ValueError(
-            f"template placeholders not filled: {missing}. research_media.template_vars "
-            "no longer covers this template — fix rather than send a prompt with holes."
-        )
+            f"{exc}. research_media.template_vars no longer covers this template — "
+            "fix rather than send a prompt with holes."
+        ) from exc
     return PREAMBLE + body
-
-
-def run_codex(prompt: str, out_file: Path, timeout: int) -> tuple[int, str]:
-    out_file.parent.mkdir(parents=True, exist_ok=True)
-    proc = subprocess.run(
-        ["codex", "exec", "--output-last-message", str(out_file), prompt],
-        capture_output=True,
-        text=True,
-        timeout=timeout,
-    )
-    return proc.returncode, (proc.stderr or "")[-800:]
 
 
 def source_count(text: str) -> int:
@@ -148,6 +114,12 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--template", type=Path, default=DEFAULT_TEMPLATE)
     ap.add_argument("--research-dir", type=Path, default=DEFAULT_RESEARCH_DIR)
     ap.add_argument("--timeout", type=int, default=1800)
+    ap.add_argument(
+        "--min-chars",
+        type=int,
+        default=1000,
+        help="Fail without replacing any prior report if the answer is shorter.",
+    )
     ap.add_argument(
         "--min-sources",
         type=int,
@@ -184,25 +156,22 @@ def main(argv: list[str] | None = None) -> int:
         print(f"--- prompt ({len(prompt)} chars) ---\n{prompt[:600]}...")
         return 0
 
-    code, err = run_codex(prompt, out_file, args.timeout)
-    if code != 0:
-        print(f"codex exec failed (exit {code}):\n{err}", file=sys.stderr)
-        return 1
-    if not out_file.exists() or not out_file.stat().st_size:
-        print(f"codex exec reported success but wrote nothing to {out_file}", file=sys.stderr)
-        return 1
-
-    text = out_file.read_text()
-    n = source_count(text)
-    print(f"Wrote {out_file.relative_to(REPO_ROOT)} — {len(text)} chars, {n} distinct source(s).")
-    if n < args.min_sources:
-        print(
-            f"  WARNING: only {n} source(s), below --min-sources {args.min_sources}. "
-            f"Treat this as a lead, not evidence; `claude_code` cites far more "
-            f"(22 vs 3 on the same query).",
-            file=sys.stderr,
+    try:
+        summary = run_codex_research(
+            prompt,
+            out_file,
+            repo_root=REPO_ROOT,
+            timeout=args.timeout,
+            min_chars=args.min_chars,
+            min_sources=args.min_sources,
         )
+    except ContractError as exc:
+        print(f"Codex research rejected: {exc}", file=sys.stderr)
         return 1
+    print(
+        f"Wrote {out_file.relative_to(REPO_ROOT)} — {summary.characters} chars, "
+        f"{summary.sources} distinct source(s)."
+    )
     return 0
 
 

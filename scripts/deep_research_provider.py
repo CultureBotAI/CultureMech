@@ -111,6 +111,25 @@ PROVIDERS: dict[str, Provider] = {
         "broad web/database source coverage",
         "quality depends on web access and local CLI authentication",
     ),
+    "codex": Provider(
+        "codex",
+        "Codex CLI (native)",
+        "open web",
+        "agentic",
+        "medium",
+        "slow",
+        frozenset(
+            {
+                "web_search",
+                "citation_tracking",
+                "synthesis",
+                "code_interpretation",
+                "structured_databases",
+            }
+        ),
+        "schema-validated web research through native codex exec",
+        "requires local CLI authentication; run through the native contract, not cyberian",
+    ),
     "openai": Provider(
         "openai",
         "OpenAI Deep Research",
@@ -301,6 +320,12 @@ def credential_status(
             ("available", "local CLI")
             if shutil.which("claude")
             else ("unavailable", "claude CLI not found")
+        )
+    if provider == "codex":
+        return (
+            ("available", "local CLI; run the contract canary before research")
+            if shutil.which("codex")
+            else ("unavailable", "codex CLI not found")
         )
     if provider == "cyberian":
         installed = importlib.util.find_spec("cyberian") is not None

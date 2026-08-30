@@ -14,9 +14,7 @@ import pytest
 REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO / "scripts"))
 
-from research_media_codex import (  # noqa: E402
-    PREAMBLE, build_prompt, preflight, source_count,
-)
+from research_media_codex import PREAMBLE, build_prompt, preflight, source_count  # noqa: E402
 
 
 def test_placeholders_are_actually_filled(tmp_path):

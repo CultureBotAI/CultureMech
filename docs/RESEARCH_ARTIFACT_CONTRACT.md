@@ -49,6 +49,31 @@ missed it because they call `build_command` directly, where passthrough always
 worked. The separator itself is stripped before the command is built, so the
 child never sees a bare `--`.
 
+### Canonical Codex provider
+
+Codex is a native lane, not a `deep-research-client cyberian` alias. The
+canonical implementation is `scripts/deep_research_contract.py`; invoke the
+domain adapter with `just research-media-codex <target>`. It executes
+`codex --search --ask-for-approval never exec` in an ephemeral, read-only
+sandbox, passes the filled prompt on stdin, and requires JSON conforming to an
+explicit output schema. Local validation requires a substantive report and at
+least three distinct HTTP(S) sources. A failed or thin run does not overwrite a
+previous report.
+
+Run `just deep-research-canary codex` first. The non-billing canary checks CLI
+authentication and that this installed CLI supports web search plus schema and
+last-message output.
+
+### OpenScientist credentials and canary
+
+Set `OPENSCIENTIST_API_KEY=name:secret`; a bare token is not the documented
+credential shape. `OPENSCIENTIST_URL` is optional and defaults to
+`https://www.openscientist.io`. Run
+`just deep-research-canary openscientist` to validate the shape and confirm
+provider discovery. That canary does not submit a job. Before a batch, run one
+real target, inspect the report and its citations, and only then authorize the
+batch.
+
 ### Focuses
 
 | focus | template | question it asks |

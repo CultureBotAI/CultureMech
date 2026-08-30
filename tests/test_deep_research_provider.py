@@ -76,6 +76,16 @@ def test_explicit_empty_environment_does_not_fall_back_to_process_credentials():
     assert reason == "set ASTA_API_KEY"
 
 
+def test_codex_is_a_native_cli_provider(monkeypatch):
+    monkeypatch.setattr(
+        drp.shutil, "which", lambda name: "/bin/codex" if name == "codex" else None
+    )
+    status, reason = drp.provider_status("codex", {})
+    assert status == "available"
+    assert "contract canary" in reason
+    assert "codex" in drp.PROVIDERS
+
+
 def test_every_focus_ranks_all_real_and_stub_providers(monkeypatch):
     monkeypatch.setenv("ASTA_API_KEY", "test-only")
     config = drp.load_config(CONFIG_PATH)
