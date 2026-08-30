@@ -7,66 +7,90 @@ physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
 ingredients:
-- preferred_term: '1'
+- preferred_term: NaNO3
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: NaNO3(Fisher BP360-500)'
-- preferred_term: '2'
+    value: '10'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 10 mL/L; stock 85.01 g/L; final 10 mM'
+  supplier_catalog:
+    supplier_name: Fisher
+    catalog_number: BP360-500
+- preferred_term: CaCl2•2H2O
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: CaCl2•2H2O(Sigma C-3881)'
-- preferred_term: '3'
+    value: '2.5'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 10 mL/L; stock 36.76 g/L; final 2.5 mM'
+  supplier_catalog:
+    supplier_name: Sigma
+    catalog_number: C-3881
+- preferred_term: MgSO4•7H2O
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: MgSO4•7H2O(Sigma 230391)'
-- preferred_term: '4'
+    value: '1.5'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 10 mL/L; stock 36.97 g/L; final 1.5 mM'
+  supplier_catalog:
+    supplier_name: Sigma
+    catalog_number: '230391'
+- preferred_term: NaHCO3
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: NaHCO3(Fisher S 233)'
-- preferred_term: '5'
+    value: '1.5'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 10 mL/L; stock 12.6 g/L; final 1.5 mM'
+  supplier_catalog:
+    supplier_name: Fisher
+    catalog_number: S 233
+- preferred_term: Na2SiO3•9H2O
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Na2SiO3•9H2O(Sigma 307815)'
-- preferred_term: '6'
+    value: '1'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 10 mL/L; stock 28.42 g/L; final 1 mM'
+  supplier_catalog:
+    supplier_name: Sigma
+    catalog_number: '307815'
+- preferred_term: K2HPO4
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: K2HPO4(Sigma P 3786)'
-- preferred_term: '7'
+    value: '0.5'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 1 mL/L; stock 8.71 g/L; final 0.5 mM'
+  supplier_catalog:
+    supplier_name: Sigma
+    catalog_number: P 3786
+- preferred_term: H3BO3
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: H3BO3(Baker 0084)'
-- preferred_term: '8'
+    value: '3.9'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 10 mL/L; stock 24 g/L; final 3.9 mM'
+  supplier_catalog:
+    supplier_name: Baker
+    catalog_number: 0084
+- preferred_term: KCl
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: KCl (Fisher P 217)'
-- preferred_term: '9'
+    value: '1'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 10 mL/L; stock 7.45 g/L; final 1 mM'
+  supplier_catalog:
+    supplier_name: Fisher
+    catalog_number: P 217
+- preferred_term: Algal Trace Elements Solution
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Algal Trace Elements Solution'
-- preferred_term: '10'
+    value: '10'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 10 mL/L'
+- preferred_term: Vitamin B12
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Vitamin B12'
-- preferred_term: '11'
+    value: '1'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 1 mL/L'
+- preferred_term: Biotin Vitamin Solution
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Biotin Vitamin Solution'
-- preferred_term: '12'
+    value: '1'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 1 mL/L'
+- preferred_term: Thiamine Vitamin Solution
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Thiamine Vitamin Solution'
+    value: '1'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 1 mL/L'
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -135,6 +159,14 @@ curation_history:
   curator: migrate_preparation_steps.py
   action: MIGRATED_PREPARATION_STEPS
   notes: instruction->action+description for 9 step(s)
+- timestamp: '2026-08-30T00:58:30.887192+00:00'
+  curator: repair_utex_ingredients.py
+  action: REPAIRED_UTEX_COMPOSITION
+  notes: 'Restored 12 ingredient name(s) and amount(s) from a re-fetched UTEX capture.
+    The original fetcher read fixed column positions, so the row ordinal was stored
+    as the ingredient name, the component name as the amount, and the Amount column
+    was never read; concentration was then filled in as G_PER_L regardless. Source:
+    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
 references:
 - reference: UTEX:modified-combo-medium
 - reference: https://utex.org/products/modified-combo-medium

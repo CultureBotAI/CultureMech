@@ -7,36 +7,42 @@ physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for saltwater
   algae cultivation.
 ingredients:
-- preferred_term: '1'
+- preferred_term: Supplemented Seawater
   concentration:
     value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Supplemented Seawater'
-- preferred_term: '2'
+    unit: VARIABLE
+  notes: 'UTEX lists: amount 3 L'
+- preferred_term: P-IV Metal Solution
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: P-IV Metal Solution'
-- preferred_term: '3'
+    value: '12'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 36 mL/3 L'
+- preferred_term: NaNO3
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: NaNO3(Fisher BP360-500)'
-- preferred_term: '4'
+    value: '2.3'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 10 mL/3 L; stock 0.7 M; final 2.3 mM'
+  supplier_catalog:
+    supplier_name: Fisher
+    catalog_number: BP360-500
+- preferred_term: Na2HPO4•7H2O
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Na2HPO4•7H2O(Sigma S-9390)'
-- preferred_term: '5'
+    value: '0.067'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 10 mL/3 L; stock 0.02 M; final 0.067 mM'
+  supplier_catalog:
+    supplier_name: Sigma
+    catalog_number: S-9390
+- preferred_term: 'Soilwater: GR+ Medium'
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Soilwater: GR+ Medium'
-- preferred_term: '6'
+    value: '50'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 150 mL/3 L'
+- preferred_term: Vitamin B12
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Vitamin B12'
+    value: '1'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 3 mL/3 L'
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -106,6 +112,14 @@ curation_history:
   curator: migrate_preparation_steps.py
   action: MIGRATED_PREPARATION_STEPS
   notes: instruction->action+description for 9 step(s)
+- timestamp: '2026-08-30T00:58:30.527184+00:00'
+  curator: repair_utex_ingredients.py
+  action: REPAIRED_UTEX_COMPOSITION
+  notes: 'Restored 6 ingredient name(s) and amount(s) from a re-fetched UTEX capture.
+    The original fetcher read fixed column positions, so the row ordinal was stored
+    as the ingredient name, the component name as the amount, and the Amount column
+    was never read; concentration was then filled in as G_PER_L regardless. Source:
+    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
 references:
 - reference: UTEX:2x-erdschreibers-medium
 - reference: https://utex.org/products/2x-erdschreibers-medium

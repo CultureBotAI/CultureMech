@@ -7,26 +7,29 @@ physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
 ingredients:
-- preferred_term: '1'
+- preferred_term: Macro Component 1 for J Medium
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Macro Component 1 for J Medium'
-- preferred_term: '2'
+    value: '10'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 10 mL/L'
+- preferred_term: Macro Component 2 for J medium
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Macro Component 2 for J medium'
-- preferred_term: '3'
+    value: '10'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 10 mL/L'
+- preferred_term: CaCl2•2H2O
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: CaCl2•2H2O(Sigma C-3881)'
-- preferred_term: '4'
+    value: '0.02'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 1 mL/L; stock 0.29 g/100 mL dH20; final 0.02 mM'
+  supplier_catalog:
+    supplier_name: Sigma
+    catalog_number: C-3881
+- preferred_term: G9 Trace Metals for J medium
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: G9 Trace Metals for J medium'
+    value: '1'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 1 mL/L'
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -94,6 +97,14 @@ curation_history:
   curator: migrate_preparation_steps.py
   action: MIGRATED_PREPARATION_STEPS
   notes: instruction->action+description for 9 step(s)
+- timestamp: '2026-08-30T00:58:30.833882+00:00'
+  curator: repair_utex_ingredients.py
+  action: REPAIRED_UTEX_COMPOSITION
+  notes: 'Restored 4 ingredient name(s) and amount(s) from a re-fetched UTEX capture.
+    The original fetcher read fixed column positions, so the row ordinal was stored
+    as the ingredient name, the component name as the amount, and the Amount column
+    was never read; concentration was then filled in as G_PER_L regardless. Source:
+    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
 references:
 - reference: UTEX:j-medium
 - reference: https://utex.org/products/j-medium

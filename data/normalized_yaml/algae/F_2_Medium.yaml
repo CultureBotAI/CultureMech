@@ -7,41 +7,50 @@ physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for saltwater
   algae cultivation.
 ingredients:
-- preferred_term: '1'
+- preferred_term: NaNO3
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: NaNO3(Fisher BP360-500)'
-- preferred_term: '2'
+    value: '880'
+    unit: MICROMOLAR
+  notes: 'UTEX lists: amount 1 mL; stock 7.5 g/100 mL d-H2O; final 880 µM'
+  supplier_catalog:
+    supplier_name: Fisher
+    catalog_number: BP360-500
+- preferred_term: NaH2PO4•H2O
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: NaH2PO4•H2O(MCIB 742)'
-- preferred_term: '3'
+    value: '36'
+    unit: MICROMOLAR
+  notes: 'UTEX lists: amount 1 mL; stock 0.5 g/100 mL d-H2O; final 36 µM'
+  supplier_catalog:
+    supplier_name: MCIB
+    catalog_number: '742'
+- preferred_term: Na2SiO3•9H2O
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Na2SiO3•9H2O(Sigma 307815)'
-- preferred_term: '4'
+    value: '106'
+    unit: MICROMOLAR
+  notes: 'UTEX lists: amount 1 mL; stock 3 g/100 mL d-H2O; final 106 µM'
+  supplier_catalog:
+    supplier_name: Sigma
+    catalog_number: '307815'
+- preferred_term: Trace Metals Solution
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Trace Metals Solution'
-- preferred_term: '5'
+    value: '1'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 1 mL/L'
+- preferred_term: Vitamin B12
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Vitamin B12'
-- preferred_term: '6'
+    value: '1'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 1 mL/L'
+- preferred_term: Biotin Vitamin Solution
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Biotin Vitamin Solution'
-- preferred_term: '7'
+    value: '1'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 1 mL/L'
+- preferred_term: Thiamine Vitamin Solution
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Thiamine Vitamin Solution'
+    value: '1'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 1 mL/L'
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -111,6 +120,14 @@ curation_history:
   action: SET_ORGANISM_CULTURE_TYPE
   notes: 'Inferred isolate: 4 specific strain(s) named, no community signal (#142)'
   changes: Set organism_culture_type=isolate (was unset)
+- timestamp: '2026-08-30T00:58:30.813745+00:00'
+  curator: repair_utex_ingredients.py
+  action: REPAIRED_UTEX_COMPOSITION
+  notes: 'Restored 7 ingredient name(s) and amount(s) from a re-fetched UTEX capture.
+    The original fetcher read fixed column positions, so the row ordinal was stored
+    as the ingredient name, the component name as the amount, and the Amount column
+    was never read; concentration was then filled in as G_PER_L regardless. Source:
+    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
 references:
 - reference: UTEX:f-2-medium
 - reference: https://utex.org/products/f-2-medium

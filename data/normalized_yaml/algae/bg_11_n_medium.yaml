@@ -7,52 +7,51 @@ physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
 ingredients:
-- preferred_term: '1'
+- preferred_term: K2HPO4
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: K2HPO4(Sigma P 3786)'
-- preferred_term: '2'
+    value: '0.22'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 10 mL/L; stock 0.8 g/200 mL; final 0.22 mM; CAS 7758-11-4'
+- preferred_term: MgSO4•7H2O
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: MgSO4•7H2O(Sigma 230391)'
-- preferred_term: '3'
+    value: '0.3'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 10 mL/L; stock 1.5 g/200 mL; final 0.3 mM; CAS 10034-99-8'
+- preferred_term: CaCl2•2H2O
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: CaCl2•2H2O(Sigma C-3881)'
-- preferred_term: '4'
+    value: '0.24'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 10 mL/L; stock 0.72 g/200 mL; final 0.24 mM; CAS 10035-04-8'
+- preferred_term: Citric Acid•H2O
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Citric Acid•H2O(Fisher A 104)'
-- preferred_term: '5'
+    value: '0.012'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 10 mL/L; stock 0.12 g/200 mL; final 0.012 mM; CAS 5949-29-1'
+- preferred_term: Ferric Ammonium Citrate
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Ferric Ammonium Citrate'
-- preferred_term: '6'
+    value: '0.02'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 10 mL/L; stock 0.12 g/200 mL; final 0.02 mM; CAS 1185-57-5'
+- preferred_term: Na2EDTA•2H2O
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Na2EDTA•2H2O(Sigma ED255)'
-- preferred_term: '7'
+    value: '0.002'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 10 mL/L; stock 0.02 g/200 mL; final 0.002 mM; CAS 6381-92-6'
+- preferred_term: Na2CO3
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Na2CO3(Baker 3604)'
-- preferred_term: '8'
+    value: '0.18'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 10 mL/L; stock 0.4 g/200 mL; final 0.18 mM; CAS 497-19-8'
+- preferred_term: BG-11 Trace Metals Solution
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: BG-11 Trace Metals Solution'
-- preferred_term: '9'
+    value: '1'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 1 mL/L'
+- preferred_term: Sodium Thiosulfate Pentahydrate (agar media only,sterile)
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Sodium Thiosulfate Pentahydrate (agar media only,sterile)(Baker
-    3946)'
+    value: '1'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 1 mL/L; stock 49.6 g/200 mL; final 1 mM; CAS 10102-17-7'
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -138,6 +137,14 @@ curation_history:
   curator: migrate_preparation_steps.py
   action: MIGRATED_PREPARATION_STEPS
   notes: instruction->action+description for 9 step(s)
+- timestamp: '2026-08-30T00:58:31.323761+00:00'
+  curator: repair_utex_ingredients.py
+  action: REPAIRED_UTEX_COMPOSITION
+  notes: 'Restored 9 ingredient name(s) and amount(s) from a re-fetched UTEX capture.
+    The original fetcher read fixed column positions, so the row ordinal was stored
+    as the ingredient name, the component name as the amount, and the Amount column
+    was never read; concentration was then filled in as G_PER_L regardless. Source:
+    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
 references:
 - reference: UTEX:bg-11-n-medium
 - reference: https://utex.org/products/bg-11-n-medium

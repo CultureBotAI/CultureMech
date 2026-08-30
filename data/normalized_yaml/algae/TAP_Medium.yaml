@@ -7,26 +7,26 @@ physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
 ingredients:
-- preferred_term: '1'
+- preferred_term: Beijerinck's Solution
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Beijerinck''s Solution'
-- preferred_term: '2'
+    value: '50'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 100 mL/2 L'
+- preferred_term: Phosphate Buffer Stock Solution
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Phosphate Buffer Stock Solution'
-- preferred_term: '3'
+    value: '8.5'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 17 mL/2 L'
+- preferred_term: Hunter's Trace Stock Solution
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Hunter''s Trace Stock Solution'
-- preferred_term: '4'
+    value: '1'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 2 mL/2 L'
+- preferred_term: Tris Acetate Stock Solution
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Tris Acetate Stock Solution'
+    value: '10'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 20 mL/2 L'
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -90,6 +90,14 @@ curation_history:
   action: SET_ORGANISM_CULTURE_TYPE
   notes: 'Inferred isolate: 2 specific strain(s) named, no community signal (#142)'
   changes: Set organism_culture_type=isolate (was unset)
+- timestamp: '2026-08-30T00:58:31.026248+00:00'
+  curator: repair_utex_ingredients.py
+  action: REPAIRED_UTEX_COMPOSITION
+  notes: 'Restored 4 ingredient name(s) and amount(s) from a re-fetched UTEX capture.
+    The original fetcher read fixed column positions, so the row ordinal was stored
+    as the ingredient name, the component name as the amount, and the Amount column
+    was never read; concentration was then filled in as G_PER_L regardless. Source:
+    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
 references:
 - reference: UTEX:tap-medium
 - reference: https://utex.org/products/tap-medium

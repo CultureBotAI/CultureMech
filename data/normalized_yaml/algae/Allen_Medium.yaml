@@ -7,51 +7,75 @@ physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
 ingredients:
-- preferred_term: '1'
+- preferred_term: HEPES buffer
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: HEPES buffer(Sigma H-3375)'
-- preferred_term: '2'
+    value: '0.01'
+    unit: MOLAR
+  notes: 'UTEX lists: amount 2.3 g/L; final 0.01 M'
+  supplier_catalog:
+    supplier_name: Sigma
+    catalog_number: H-3375
+- preferred_term: NaNO3
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: NaNO3(Fisher BP360-500)'
-- preferred_term: '3'
+    value: '0.018'
+    unit: MOLAR
+  notes: 'UTEX lists: amount 1.5 g/L; final 0.018 M'
+  supplier_catalog:
+    supplier_name: Fisher
+    catalog_number: BP360-500
+- preferred_term: P-IV Metal Solution
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: P-IV Metal Solution'
-- preferred_term: '4'
+    value: '1'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 1 mL/L'
+- preferred_term: K2HPO4
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: K2HPO4(Sigma P 3786)'
-- preferred_term: '5'
+    value: '0.215'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 5 mL/L; stock 1.5 g/200 mL dH2O; final 0.215 mM'
+  supplier_catalog:
+    supplier_name: Sigma
+    catalog_number: P 3786
+- preferred_term: MgSO4•7H2O
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: MgSO4•7H2O(Sigma 230391)'
-- preferred_term: '6'
+    value: '0.152'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 5 mL/L; stock 1.5 g/200 mL dH2O; final 0.152 mM'
+  supplier_catalog:
+    supplier_name: Sigma
+    catalog_number: '230391'
+- preferred_term: Na2CO3
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Na2CO3(Baker 3604)'
-- preferred_term: '7'
+    value: '0.19'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 5 mL/L; stock 0.8 g/200 mL dH2O; final 0.19 mM'
+  supplier_catalog:
+    supplier_name: Baker
+    catalog_number: '3604'
+- preferred_term: CaCl2•2H2O
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: CaCl2•2H2O(Sigma C-3881)'
-- preferred_term: '8'
+    value: '0.17'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 10 mL/L; stock 0.5 g/200 mL dH2O; final 0.17 mM'
+  supplier_catalog:
+    supplier_name: Sigma
+    catalog_number: C-3881
+- preferred_term: Na2SiO3•9H2O
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Na2SiO3•9H2O(Sigma 307815)'
-- preferred_term: '9'
+    value: '0.204'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 10 mL/L; stock 1.16 g/200 mL dH2O; final 0.204 mM'
+  supplier_catalog:
+    supplier_name: Sigma
+    catalog_number: '307815'
+- preferred_term: Citric Acid•H2O
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Citric Acid•H2O(Fisher A 104)'
+    value: '0.029'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 1 mL/L; stock 1.2 g/200 mL dH2O; final 0.029 mM'
+  supplier_catalog:
+    supplier_name: Fisher
+    catalog_number: A 104
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -119,6 +143,14 @@ curation_history:
   curator: migrate_preparation_steps.py
   action: MIGRATED_PREPARATION_STEPS
   notes: instruction->action+description for 9 step(s)
+- timestamp: '2026-08-30T00:58:30.578348+00:00'
+  curator: repair_utex_ingredients.py
+  action: REPAIRED_UTEX_COMPOSITION
+  notes: 'Restored 9 ingredient name(s) and amount(s) from a re-fetched UTEX capture.
+    The original fetcher read fixed column positions, so the row ordinal was stored
+    as the ingredient name, the component name as the amount, and the Amount column
+    was never read; concentration was then filled in as G_PER_L regardless. Source:
+    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
 references:
 - reference: UTEX:allen-medium
 - reference: https://utex.org/products/allen-medium

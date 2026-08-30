@@ -23,6 +23,7 @@ import re
 import sys
 from collections.abc import Sequence
 from pathlib import Path
+from typing import TYPE_CHECKING
 
 import yaml
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -45,6 +46,10 @@ except ImportError:
 
 else:
     COMPOSITION_GRAPHS_AVAILABLE = True
+
+
+if TYPE_CHECKING:  # the runtime import stays inside the function, see below
+    from culturemech.ingredients.chebi_structures import Structure
 
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -114,8 +119,26 @@ def make_env(templates_dir: Path = TEMPLATES_DIR) -> Environment:
         lstrip_blocks=True,
     )
     env.globals["curie_to_url"] = curie_to_url
+    env.globals["chebi_structure"] = chebi_structure
     env.filters["safe_mermaid"] = safe_mermaid
     return env
+
+
+def chebi_structure(ingredient: dict | None) -> Structure | None:
+    """Formula and mass for one ingredient, or None.
+
+    Degrades to None rather than raising: a missing structure table must cost
+    a column, not the whole publish. The renderer already has a degraded mode
+    for the composition graphs and this follows it.
+    """
+    try:
+        from culturemech.ingredients.chebi_structures import structure_for
+    except ImportError:  # pragma: no cover - packaging failure
+        return None
+    try:
+        return structure_for(ingredient)
+    except Exception:  # noqa: BLE001 - a broken table must not stop the publish
+        return None
 
 
 # Embedded in every rendered page so a template/renderer change forces a

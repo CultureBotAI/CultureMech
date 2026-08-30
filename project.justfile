@@ -464,6 +464,25 @@ audit-mim-sssom *args="":
 check-mim-label-index:
     uv run python scripts/check_mim_label_index.py
 
+# Offline verification of the packaged ChEBI structure table: metadata row
+# count, header, ordering, and that every CHEBI id the corpus cites is present.
+# A stale table costs the pages a column and reports nothing on its own.
+[group('Curation')]
+check-chebi-structure-index:
+    uv run python scripts/fetch_chebi_properties.py --check
+
+# Rebuild the packaged ChEBI structure table from the EBI OLS4 API (~640 terms,
+# a couple of minutes). Preview by default; pass --apply to write.
+[group('Curation')]
+fetch-chebi-properties *args="":
+    uv run python scripts/fetch_chebi_properties.py {{args}}
+
+# Restore UTEX ingredient names, amounts and concentrations from a fresh
+# capture (run `just fetch-utex` first). Preview by default; --apply writes.
+[group('Curation')]
+repair-utex-ingredients *args="":
+    uv run python scripts/repair_utex_ingredients.py {{args}}
+
 # Explicit dependency bump. A moving branch or short SHA is rejected; review
 # the printed label-resolution delta in the default preview, then pass --apply.
 [group('Curation')]

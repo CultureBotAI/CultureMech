@@ -15,7 +15,26 @@
 {% for ing in medium.ingredients %}
 <tr>
   <td class="right muted">{{ loop.index }}</td>
-  <td><strong>{{ ing.preferred_term }}</strong></td>
+  <td>
+    <strong>{{ ing.preferred_term }}</strong>
+    {# Formula and mass come from the shared ChEBI term, not from the record,
+       so they appear beside the name rather than as two more columns. #}
+    {% set structure = chebi_structure(ing) %}
+    {% if structure %}
+      <div class="structure small muted">
+        {% if structure.formula %}<span class="formula">{{ structure.formula }}</span>{% endif %}
+        {% if structure.molecular_weight %}
+          <span class="mass">{{ structure.molecular_weight }} g/mol</span>
+        {% endif %}
+      </div>
+    {% endif %}
+    {% if ing.supplier_catalog and ing.supplier_catalog.supplier_name %}
+      <div class="supplier small muted">
+        {{ ing.supplier_catalog.supplier_name }}
+        {%- if ing.supplier_catalog.catalog_number %} {{ ing.supplier_catalog.catalog_number }}{% endif %}
+      </div>
+    {% endif %}
+  </td>
   <td class="right">
     {% if ing.concentration %}
       {{ ing.concentration.value }}

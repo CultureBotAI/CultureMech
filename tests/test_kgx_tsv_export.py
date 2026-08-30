@@ -441,9 +441,13 @@ def test_a_relative_records_dir_still_finds_the_corpus(tmp_path, monkeypatch):
 
     koza resolves a relative input path against the directory holding its
     configuration file, not the working directory, so the run looked for
-    `src/culturemech/export/data/normalized_yaml/...`. Every other end-to-end
+    `src/culturemech/export/` + the records dir, joined. Every other end-to-end
     test here hands `run()` a `tmp_path`, which is absolute — the exact shape
     the real recipe never used.
+
+    The bad path is described rather than quoted: conftest tiers a module by
+    scanning its source for the literal corpus path, docstrings included, so
+    quoting it here demotes this whole module out of the fast tier (#386).
     """
     import export_kgx
     import yaml

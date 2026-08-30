@@ -101,6 +101,8 @@ where = ["src"]
 
 [tool.setuptools.package-data]
 culturemech = [
+    "data/chebi/*.csv",
+    "data/chebi/*.json",
     "data/mediaingredientmech/*.csv",
     "data/mediaingredientmech/*.json",
     "schema/*.yaml",

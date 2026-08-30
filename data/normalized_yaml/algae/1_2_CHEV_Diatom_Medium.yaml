@@ -7,26 +7,29 @@ physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
 ingredients:
-- preferred_term: '1'
+- preferred_term: CR1 Soil
   concentration:
     value: variable
-    unit: G_PER_L
-  notes: 'Original amount: CR1 Soil'
-- preferred_term: '2'
+    unit: VARIABLE
+  notes: 'UTEX lists: amount 1 cc'
+- preferred_term: MgCO3
+  concentration:
+    value: '0.5'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 0.5 mg/12 mL; final 0.5 mM'
+  supplier_catalog:
+    supplier_name: MCIB
+    catalog_number: CB486
+- preferred_term: dH2O
   concentration:
     value: variable
-    unit: G_PER_L
-  notes: 'Original amount: MgCO3(MCIB CB486)'
-- preferred_term: '3'
+    unit: VARIABLE
+  notes: 'UTEX lists: amount 11.5 mL'
+- preferred_term: Pasteurized Seawater
   concentration:
     value: variable
-    unit: G_PER_L
-  notes: 'Original amount: dH2O'
-- preferred_term: '4'
-  concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Pasteurized Seawater'
+    unit: VARIABLE
+  notes: 'UTEX lists: amount 0.5 mL'
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -95,6 +98,14 @@ curation_history:
   curator: migrate_preparation_steps.py
   action: MIGRATED_PREPARATION_STEPS
   notes: instruction->action+description for 9 step(s)
+- timestamp: '2026-08-30T00:58:30.408480+00:00'
+  curator: repair_utex_ingredients.py
+  action: REPAIRED_UTEX_COMPOSITION
+  notes: 'Restored 4 ingredient name(s) and amount(s) from a re-fetched UTEX capture.
+    The original fetcher read fixed column positions, so the row ordinal was stored
+    as the ingredient name, the component name as the amount, and the Amount column
+    was never read; concentration was then filled in as G_PER_L regardless. Source:
+    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
 references:
 - reference: UTEX:one-half-chev-diatom-medium
 - reference: https://utex.org/products/one-half-chev-diatom-medium

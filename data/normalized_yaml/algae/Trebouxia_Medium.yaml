@@ -7,26 +7,29 @@ physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
 ingredients:
-- preferred_term: '1'
+- preferred_term: Bristol Medium
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Bristol Medium'
-- preferred_term: '2'
+    value: '825'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 825 mL/L'
+- preferred_term: 'Soilwater: GR+ Medium'
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Soilwater: GR+ Medium'
-- preferred_term: '3'
+    value: '140'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 140 mL/L'
+- preferred_term: Proteose Peptone(BD 211684)
   concentration:
-    value: variable
+    value: '10'
     unit: G_PER_L
-  notes: 'Original amount: Proteose Peptone(BD 211684)'
-- preferred_term: '4'
+  notes: 'UTEX lists: amount 10 g/L'
+- preferred_term: Glucose
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Glucose(BACTO-dextrose or Sigma D 9634)'
+    value: '0.11'
+    unit: MOLAR
+  notes: 'UTEX lists: amount 20 g/L; final 0.11 M'
+  supplier_catalog:
+    supplier_name: Bacto
+    catalog_number: -dextrose or Sigma D 9634
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -95,6 +98,14 @@ curation_history:
   curator: migrate_preparation_steps.py
   action: MIGRATED_PREPARATION_STEPS
   notes: instruction->action+description for 9 step(s)
+- timestamp: '2026-08-30T00:58:31.034673+00:00'
+  curator: repair_utex_ingredients.py
+  action: REPAIRED_UTEX_COMPOSITION
+  notes: 'Restored 4 ingredient name(s) and amount(s) from a re-fetched UTEX capture.
+    The original fetcher read fixed column positions, so the row ordinal was stored
+    as the ingredient name, the component name as the amount, and the Amount column
+    was never read; concentration was then filled in as G_PER_L regardless. Source:
+    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
 references:
 - reference: UTEX:trebouxia-medium
 - reference: https://utex.org/products/trebouxia-medium

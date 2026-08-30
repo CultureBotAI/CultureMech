@@ -7,46 +7,55 @@ physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
 ingredients:
-- preferred_term: '1'
+- preferred_term: KNO3
+  concentration:
+    value: '0.9'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 10 mL/L; stock 1 g/100 mL; final 0.9 mM'
+  supplier_catalog:
+    supplier_name: Baker
+    catalog_number: '3190'
+- preferred_term: (NH4)2HPO4
+  concentration:
+    value: '0.075'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 5 mL/L; stock 0.2 g/100 mL; final 0.075 mM'
+  supplier_catalog:
+    supplier_name: Fisher
+    catalog_number: A686
+- preferred_term: MgSO4•7H2O
+  concentration:
+    value: '3.3'
+    unit: MICROMOLAR
+  notes: 'UTEX lists: amount 10 mL/L; stock 0.1 g/100 mL; final 3.3 µM'
+  supplier_catalog:
+    supplier_name: Sigma
+    catalog_number: '230391'
+- preferred_term: CaSO4•2H2Osaturated solution (Mallinckroft 4300)
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 10 mL/L'
+- preferred_term: 'Soilwater: GR+ Medium'
+  concentration:
+    value: '20'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 20 mL/L'
+- preferred_term: 'Soilwater: Peat Medium'
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 10 mL/L'
+- preferred_term: MWC Metal Solution
+  concentration:
+    value: '5'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 5 mL/L'
+- preferred_term: Barley grains autoclaved
   concentration:
     value: variable
-    unit: G_PER_L
-  notes: 'Original amount: KNO3(Baker 3190)'
-- preferred_term: '2'
-  concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: (NH4)2HPO4(Fisher A686)'
-- preferred_term: '3'
-  concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: MgSO4•7H2O(Sigma 230391)'
-- preferred_term: '4'
-  concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: CaSO4•2H2Osaturated solution (Mallinckroft 4300)'
-- preferred_term: '5'
-  concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Soilwater: GR+ Medium'
-- preferred_term: '6'
-  concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Soilwater: Peat Medium'
-- preferred_term: '7'
-  concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: MWC Metal Solution'
-- preferred_term: '8'
-  concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Barley grains autoclaved'
+    unit: VARIABLE
+  notes: 'UTEX lists: amount 1 grain/10 mL'
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -115,6 +124,14 @@ curation_history:
   curator: migrate_preparation_steps.py
   action: MIGRATED_PREPARATION_STEPS
   notes: instruction->action+description for 9 step(s)
+- timestamp: '2026-08-30T00:58:30.895449+00:00'
+  curator: repair_utex_ingredients.py
+  action: REPAIRED_UTEX_COMPOSITION
+  notes: 'Restored 8 ingredient name(s) and amount(s) from a re-fetched UTEX capture.
+    The original fetcher read fixed column positions, so the row ordinal was stored
+    as the ingredient name, the component name as the amount, and the Amount column
+    was never read; concentration was then filled in as G_PER_L regardless. Source:
+    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
 references:
 - reference: UTEX:modified-desmidiacean-medium
 - reference: https://utex.org/products/modified-desmidiacean-medium
