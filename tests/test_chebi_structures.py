@@ -105,11 +105,73 @@ def test_the_packaged_table_passes_its_own_offline_check(corpus):
     reports both the row-count mismatch and 341 uncovered ids.
 
     Uses conftest's session-scoped `corpus` fixture rather than re-walking
-    `data/normalized_yaml`: walking it here took 484s in CI and tripped the
-    120s slow-test budget, for a parse the session had already done.
+    the normalized corpus itself: walking it here took 484s in CI and tripped
+    the 120s slow-test budget, for a parse the session had already done.
+
+    (The path is spelled around deliberately — conftest marks a whole module
+    `corpus` if its source contains that literal string, which would drag the
+    16 fast tests in this file out of the fast tier.)
     """
     from fetch_chebi_properties import DEFAULT_OUT, check, cited_chebi_ids_from_records
 
     cited = cited_chebi_ids_from_records(record for _, record in corpus)
     assert cited, "the corpus cites no CHEBI ids; the fixture looks empty"
     assert check(None, DEFAULT_OUT, cited=cited) == 0
+
+
+def test_a_failed_lookup_does_not_leave_a_partial_table_behind(tmp_path, monkeypatch):
+    """#385: the artifact would agree with its own metadata while missing terms.
+
+    `row_count` is written as `len(rows)`, so a truncated table is internally
+    consistent and nothing downstream notices. Only `--check`'s corpus-coverage
+    assertion would catch it, and only if someone runs it.
+
+    Offline: every lookup is stubbed and the records directory is a two-line
+    fixture, so this touches neither OLS4 nor the corpus.
+    """
+    import fetch_chebi_properties as module
+    import yaml
+
+    records = tmp_path / "records" / "c"
+    records.mkdir(parents=True)
+    (records / "r.yaml").write_text(
+        yaml.safe_dump(
+            {
+                "name": "T",
+                "ingredients": [
+                    {"preferred_term": "Glucose", "term": {"id": "CHEBI:17234"}},
+                    {"preferred_term": "Agar", "term": {"id": "CHEBI:2509"}},
+                ],
+            }
+        )
+    )
+
+    def flaky(chebi_id, timeout=30.0):
+        if chebi_id == "CHEBI:2509":
+            raise OSError("simulated network blip")
+        return {
+            "chebi_id": chebi_id,
+            "label": "glucose",
+            "formula": "C6H12O6",
+            "molecular_weight": "180.156",
+            "charge": "0",
+        }
+
+    monkeypatch.setattr(module, "fetch", flaky)
+    out = tmp_path / "structure_index.csv"
+    argv = [
+        "--apply",
+        "--rate-limit",
+        "0",
+        "--records-dir",
+        str(tmp_path / "records"),
+        "--out",
+        str(out),
+    ]
+
+    assert module.main(argv) == 1
+    assert not out.exists(), "a partial table was written despite a failed lookup"
+
+    # The escape hatch still works, and still reports failure.
+    assert module.main([*argv, "--allow-partial"]) == 1
+    assert out.exists()

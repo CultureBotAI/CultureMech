@@ -197,6 +197,11 @@ def main(argv: list[str] | None = None) -> int:
     )
     parser.add_argument("--limit", type=int, default=0, help="Fetch at most N terms.")
     parser.add_argument("--rate-limit", type=float, default=0.15, help="Seconds between calls.")
+    parser.add_argument(
+        "--allow-partial",
+        action="store_true",
+        help="Write even when some lookups failed. Off by default (#385).",
+    )
     args = parser.parse_args(argv if argv is not None else sys.argv[1:])
 
     if args.check:
@@ -230,13 +235,27 @@ def main(argv: list[str] | None = None) -> int:
             print(f"  {index}/{len(ids)}")
         time.sleep(args.rate_limit)
 
-    print(f"\n{'Wrote' if args.apply else 'Would write'} {len(rows)} rows to {args.out}")
+    refusing = args.apply and failures and not args.allow_partial
+    if args.apply and not refusing:
+        verb = "Wrote"
+    else:
+        verb = "Would write"
+    print(f"\n{verb} {len(rows)} rows to {args.out}")
     for key in sorted(stats):
         print(f"  {key}: {stats[key]}")
     if failures:
         print(f"\n{len(failures)} id(s) not recorded:")
         for chebi_id, reason in failures[:20]:
             print(f"  {chebi_id}: {reason}")
+
+    if refusing:
+        print(
+            "\nRefusing to write a partial table. It would agree with its own "
+            "metadata while missing terms, so nothing downstream would notice. "
+            "Re-run, or pass --allow-partial to write it anyway.",
+            file=sys.stderr,
+        )
+        return 1
 
     if args.apply:
         args.out.parent.mkdir(parents=True, exist_ok=True)
@@ -252,6 +271,7 @@ def main(argv: list[str] | None = None) -> int:
                     "fetched": datetime.now(timezone.utc).isoformat(),
                     "row_count": len(rows),
                     "ids_requested": len(ids),
+                    "failed_lookups": len(failures),
                     "fields": HEADER,
                     "note": (
                         "Only properties ChEBI asserts are recorded. An empty formula "
