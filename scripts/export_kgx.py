@@ -15,6 +15,7 @@ Reports node and edge counts, and fails loudly if either file is missing or
 holds only its header — a silent empty export is the failure mode #294 was
 about.
 """
+
 from __future__ import annotations
 
 import argparse
