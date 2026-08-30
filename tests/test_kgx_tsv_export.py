@@ -471,3 +471,17 @@ def test_find_records_returns_absolute_paths(tmp_path, monkeypatch):
 
     assert files, "fixture record was not discovered"
     assert all(Path(f).is_absolute() for f in files)
+
+
+def test_find_records_expands_a_tilde_path(tmp_path, monkeypatch):
+    """`run()` expanduser'd and `find_records` did not, though both are public."""
+    import export_kgx
+
+    (tmp_path / "records" / "canary").mkdir(parents=True)
+    (tmp_path / "records" / "canary" / "r.yaml").write_text("name: X\n")
+    monkeypatch.setenv("HOME", str(tmp_path))
+
+    files = export_kgx.find_records(Path("~/records"))
+
+    assert files, "a ~-prefixed records dir found nothing"
+    assert all(Path(f).is_absolute() and "~" not in f for f in files)

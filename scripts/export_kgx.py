@@ -43,7 +43,7 @@ def find_records(records_dir: Path) -> list[str]:
     first record. Resolving here fixes every caller at once rather than asking
     each one to remember.
     """
-    return [str(p) for p in sorted(records_dir.resolve().glob("*/*.yaml"))]
+    return [str(p) for p in sorted(records_dir.expanduser().resolve().glob("*/*.yaml"))]
 
 
 def run(records_dir: Path, output_dir: Path, limit: int = 0) -> tuple[int, int]:
@@ -53,9 +53,13 @@ def run(records_dir: Path, output_dir: Path, limit: int = 0) -> tuple[int, int]:
 
     sys.path.insert(0, str(REPO_ROOT / "src"))
 
-    # Absolute for the same reason as `find_records` (#371): koza resolves a
-    # relative output path against its config file's directory too, which would
-    # scatter TSVs inside the package tree.
+    # The asymmetry is the point of #371, and it is one-sided: koza resolves
+    # relative INPUT paths against its configuration file's directory, but the
+    # output directory against the working directory like anything else
+    # (measured — a relative output dir lands in the CWD, not beside kgx.yaml).
+    # So only the input side was broken. The output is resolved anyway, to keep
+    # the run independent of a later chdir and to keep `_display`'s
+    # `relative_to(REPO_ROOT)` meaningful.
     records_dir = records_dir.expanduser().resolve()
     output_dir = output_dir.expanduser().resolve()
 
