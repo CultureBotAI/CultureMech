@@ -23,6 +23,7 @@ import re
 import sys
 from collections.abc import Sequence
 from pathlib import Path
+from typing import TYPE_CHECKING
 
 import yaml
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -45,6 +46,10 @@ except ImportError:
 
 else:
     COMPOSITION_GRAPHS_AVAILABLE = True
+
+
+if TYPE_CHECKING:  # the runtime import stays inside the function, see below
+    from culturemech.ingredients.chebi_structures import Structure
 
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -119,7 +124,7 @@ def make_env(templates_dir: Path = TEMPLATES_DIR) -> Environment:
     return env
 
 
-def chebi_structure(ingredient: dict | None):
+def chebi_structure(ingredient: dict | None) -> Structure | None:
     """Formula and mass for one ingredient, or None.
 
     Degrades to None rather than raising: a missing structure table must cost
