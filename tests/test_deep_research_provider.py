@@ -62,9 +62,7 @@ def test_falcon_platform_key_is_recognized_without_exposing_it():
     KNOWN_BLOCKED would silently drop the check that its env-var aliases are
     spelled right.
     """
-    status, reason = drp.credential_status(
-        "falcon", {"EDISON_PLATFORM_API_KEY": "secret"}
-    )
+    status, reason = drp.credential_status("falcon", {"EDISON_PLATFORM_API_KEY": "secret"})
     assert status == "available"
     assert reason == "credential configured"
     assert "secret" not in reason
@@ -77,9 +75,7 @@ def test_explicit_empty_environment_does_not_fall_back_to_process_credentials():
 
 
 def test_codex_is_a_native_cli_provider(monkeypatch):
-    monkeypatch.setattr(
-        drp.shutil, "which", lambda name: "/bin/codex" if name == "codex" else None
-    )
+    monkeypatch.setattr(drp.shutil, "which", lambda name: "/bin/codex" if name == "codex" else None)
     status, reason = drp.provider_status("codex", {})
     assert status == "available"
     assert "contract canary" in reason
@@ -375,8 +371,7 @@ def test_no_paid_keeps_the_medium_cost_provider(monkeypatch):
 def test_an_allowlist_confines_the_recommendation(monkeypatch):
     monkeypatch.setenv("ASTA_API_KEY", "test-only")
     config = drp.load_config(CONFIG_PATH)
-    report = drp.build_report(config, config["default_focus"],
-                              allow=frozenset({"asta"}))
+    report = drp.build_report(config, config["default_focus"], allow=frozenset({"asta"}))
     for stage in report["stages"]:
         recommended = stage["recommended_available"]
         assert recommended is None or recommended["provider"] == "asta"
@@ -530,6 +525,7 @@ def test_policy_filtered_empty_recommendation_names_the_actual_cause(monkeypatch
     out = _run_text(["--allow", "openai"])
     assert "no provider passes the current --allow/--no-paid filters" in out
     assert "configure a listed credential or CLI" not in out
+
 
 def test_all_negative_scores_keep_their_relative_order():
     """Fit may floor at zero, but routing must still prefer the least-bad score."""

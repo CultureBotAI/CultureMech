@@ -208,9 +208,7 @@ PROVIDERS: dict[str, Provider] = {
         "deep",
         "medium",
         "slow",
-        frozenset(
-            {"web_search", "citation_tracking", "synthesis", "code_interpretation"}
-        ),
+        frozenset({"web_search", "citation_tracking", "synthesis", "code_interpretation"}),
         "OpenAI-compatible research through the LBL proxy",
         "capabilities depend on the selected proxy model",
     ),
@@ -280,9 +278,7 @@ KNOWN_BLOCKED: dict[str, str] = {
 PAID_COSTS = frozenset({"high", "very_high"})
 
 
-def provider_status(
-    provider: str, environ: Mapping[str, str] | None = None
-) -> tuple[str, str]:
+def provider_status(provider: str, environ: Mapping[str, str] | None = None) -> tuple[str, str]:
     """Whether this provider can actually be routed to, and why.
 
     A measured-dead provider reports `blocked` however well its credential is
@@ -295,9 +291,7 @@ def provider_status(
     return credential_status(provider, environ)
 
 
-def credential_status(
-    provider: str, environ: Mapping[str, str] | None = None
-) -> tuple[str, str]:
+def credential_status(provider: str, environ: Mapping[str, str] | None = None) -> tuple[str, str]:
     """Status from local configuration alone, ignoring whether the provider works.
 
     Kept separate from `provider_status` so "do we recognise this env var name"
@@ -359,9 +353,7 @@ def load_config(path: Path) -> dict[str, Any]:
         raise ValueError("Provider profile requires a non-empty 'focuses' mapping")
     default_focus = data.get("default_focus")
     if default_focus not in focuses:
-        raise ValueError(
-            f"default_focus {default_focus!r} is not defined under focuses"
-        )
+        raise ValueError(f"default_focus {default_focus!r} is not defined under focuses")
     for focus_name, focus in focuses.items():
         if not isinstance(focus, dict) or not isinstance(focus.get("stages"), dict):
             raise ValueError(f"Focus {focus_name!r} requires a 'stages' mapping")
@@ -370,9 +362,7 @@ def load_config(path: Path) -> dict[str, Any]:
                 raise ValueError(f"Stage {focus_name}.{stage_name} must be a mapping")
             capabilities = stage.get("capabilities", {})
             if not isinstance(capabilities, dict):
-                raise ValueError(
-                    f"Stage {focus_name}.{stage_name}.capabilities must be a mapping"
-                )
+                raise ValueError(f"Stage {focus_name}.{stage_name}.capabilities must be a mapping")
             unknown_caps = {str(cap) for cap in capabilities} - _ALL_CAPABILITIES
             if unknown_caps:
                 raise ValueError(
@@ -408,9 +398,7 @@ def load_config(path: Path) -> dict[str, Any]:
         # rank_stage/_score with AttributeError instead of this ValueError.
         adjustments = focus.get("provider_adjustments", {})
         if not isinstance(adjustments, dict):
-            raise ValueError(
-                f"Focus {focus_name!r}.provider_adjustments must be a mapping"
-            )
+            raise ValueError(f"Focus {focus_name!r}.provider_adjustments must be a mapping")
         if adjustments:
             canonical: dict[str, Any] = {}
             for raw_name, value in adjustments.items():
@@ -437,34 +425,25 @@ def load_config(path: Path) -> dict[str, Any]:
     return data
 
 
-def _score(
-    provider: Provider, stage: Mapping[str, Any], adjustments: Mapping[str, Any]
-) -> float:
+def _score(provider: Provider, stage: Mapping[str, Any], adjustments: Mapping[str, Any]) -> float:
     capabilities = stage.get("capabilities", {})
     score = sum(
         float(weight)
         for capability, weight in capabilities.items()
         if capability in provider.capabilities
     )
-    score += (
-        float(stage.get("synthesis_weight", 0)) * SYNTHESIS_VALUE[provider.synthesis]
-    )
+    score += float(stage.get("synthesis_weight", 0)) * SYNTHESIS_VALUE[provider.synthesis]
     score += float(stage.get("speed_weight", 0)) * (5 - TIME_VALUE[provider.time])
     score += float(stage.get("cost_weight", 0)) * (5 - COST_VALUE[provider.cost])
     score += float(adjustments.get(provider.name, 0))
     return score
 
 
-def rank_stage(
-    config: Mapping[str, Any], focus_name: str, stage_name: str
-) -> list[dict[str, Any]]:
+def rank_stage(config: Mapping[str, Any], focus_name: str, stage_name: str) -> list[dict[str, Any]]:
     focus = config["focuses"][focus_name]
     stage = focus["stages"][stage_name]
     adjustments = focus.get("provider_adjustments", {})
-    raw = {
-        name: _score(provider, stage, adjustments)
-        for name, provider in PROVIDERS.items()
-    }
+    raw = {name: _score(provider, stage, adjustments) for name, provider in PROVIDERS.items()}
     # `or 1.0` only replaces an exact-zero max (e.g. every raw score landing
     # at precisely 0 through cancelling adjustments) — a real, if rare, case
     # this guards. It does NOT fix the harder case where every score is
@@ -504,8 +483,9 @@ def rank_stage(
     )
 
 
-def recommendable(rows: list[dict[str, Any]], *, allow: frozenset[str] | None = None,
-                  no_paid: bool = False) -> list[dict[str, Any]]:
+def recommendable(
+    rows: list[dict[str, Any]], *, allow: frozenset[str] | None = None, no_paid: bool = False
+) -> list[dict[str, Any]]:
     """The rows a recommendation may be drawn from, in ranked order.
 
     One place, so the text and JSON paths cannot disagree — the JSON filter used
@@ -513,8 +493,7 @@ def recommendable(rows: list[dict[str, Any]], *, allow: frozenset[str] | None = 
     `--provider asta --json` recommended `claude_code` out of a document whose
     only ranked provider was asta (#290).
     """
-    out = [row for row in rows
-           if row["status"] == "available" and row["provider"] != "mock"]
+    out = [row for row in rows if row["status"] == "available" and row["provider"] != "mock"]
     if allow is not None:
         out = [row for row in out if row["provider"] in allow]
     if no_paid:
@@ -522,9 +501,13 @@ def recommendable(rows: list[dict[str, Any]], *, allow: frozenset[str] | None = 
     return out
 
 
-def build_report(config: Mapping[str, Any], focus_name: str, *,
-                 allow: frozenset[str] | None = None,
-                 no_paid: bool = False) -> dict[str, Any]:
+def build_report(
+    config: Mapping[str, Any],
+    focus_name: str,
+    *,
+    allow: frozenset[str] | None = None,
+    no_paid: bool = False,
+) -> dict[str, Any]:
     focus = config["focuses"][focus_name]
     stages = []
     for stage_name, stage in focus["stages"].items():
@@ -566,14 +549,8 @@ def _table(rows: list[dict[str, Any]]) -> str:
                 row["source_scope"],
             )
         )
-    widths = [
-        max(len(str(row[index])) for row in values) for index in range(len(headers))
-    ]
-    lines = [
-        "  ".join(
-            str(value).ljust(widths[index]) for index, value in enumerate(values[0])
-        )
-    ]
+    widths = [max(len(str(row[index])) for row in values) for index in range(len(headers))]
+    lines = ["  ".join(str(value).ljust(widths[index]) for index, value in enumerate(values[0]))]
     lines.append("  ".join("-" * width for width in widths))
     lines.extend(
         "  ".join(str(value).ljust(widths[index]) for index, value in enumerate(row))
@@ -622,21 +599,15 @@ def print_report(report: Mapping[str, Any], provider_name: str | None = None) ->
 
 def parse_args(argv: list[str]) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument(
-        "--config", type=Path, required=True, help="Mech provider profile YAML"
-    )
+    parser.add_argument("--config", type=Path, required=True, help="Mech provider profile YAML")
     parser.add_argument(
         "--focus", help="Research focus from the profile (default: profile default)"
     )
     parser.add_argument(
         "--provider", help="Show one provider (aliases such as edison are accepted)"
     )
-    parser.add_argument(
-        "--list-focuses", action="store_true", help="List domain-specific focuses"
-    )
-    parser.add_argument(
-        "--json", action="store_true", help="Emit machine-readable triage JSON"
-    )
+    parser.add_argument("--list-focuses", action="store_true", help="List domain-specific focuses")
+    parser.add_argument("--json", action="store_true", help="Emit machine-readable triage JSON")
     parser.add_argument(
         "--allow",
         help="Comma-separated allowlist; only these providers may be recommended",
@@ -666,18 +637,17 @@ def main(argv: list[str] | None = None) -> int:
         raise ValueError(
             f"Unknown provider {args.provider!r}; choose one of: {', '.join(PROVIDERS)}"
         )
-    allow = (frozenset(canonical_provider(p) for p in args.allow.split(",") if p.strip())
-             if args.allow is not None else None)
+    allow = (
+        frozenset(canonical_provider(p) for p in args.allow.split(",") if p.strip())
+        if args.allow is not None
+        else None
+    )
     if allow is not None:
         if not allow:
-            raise ValueError(
-                f"--allow {args.allow!r} did not contain any provider names"
-            )
+            raise ValueError(f"--allow {args.allow!r} did not contain any provider names")
         unknown = allow - set(PROVIDERS)
         if unknown:
-            raise ValueError(
-                f"Unknown provider(s) in --allow: {', '.join(sorted(unknown))}"
-            )
+            raise ValueError(f"Unknown provider(s) in --allow: {', '.join(sorted(unknown))}")
         if "mock" in allow:
             raise ValueError(
                 "--allow may not include 'mock': recommendable() always excludes "
