@@ -7,56 +7,77 @@ physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
 ingredients:
-- preferred_term: '1'
+- preferred_term: CaCl2•2H2O
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: CaCl2•2H2O(Sigma C-3881)'
-- preferred_term: '2'
+    value: '0.03'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 1 mL/L; stock 0.5 g/100 mL dH2O; final 0.03 mM'
+  supplier_catalog:
+    supplier_name: Sigma
+    catalog_number: C-3881
+- preferred_term: NaNO3
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: NaNO3(Fisher BP360-500)'
-- preferred_term: '3'
+    value: '0.29'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 1 mL/L; stock 2.5 g/100 mL dH2O; final 0.29 mM'
+  supplier_catalog:
+    supplier_name: Fisher
+    catalog_number: BP360-500
+- preferred_term: NH4Cl
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: NH4Cl(Fisher A 649-500)'
-- preferred_term: '4'
+    value: '0.093'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 1 mL/L; stock 0.5 g/100 mL dH2O; final 0.093 mM'
+  supplier_catalog:
+    supplier_name: Fisher
+    catalog_number: A 649-500
+- preferred_term: CaSO4•2H2O(Mallinckroft 4300)
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: CaSO4•2H2O(Mallinckroft 4300)'
-- preferred_term: '5'
+    value: '0.023'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 1 mL/L; stock 0.4 g/100 mL dH2O; final 0.023 mM'
+- preferred_term: MgSO4•7H2O
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: MgSO4•7H2O(Sigma 230391)'
-- preferred_term: '6'
+    value: '0.02'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 1 mL/L; stock 0.5 g/100 mL dH2O; final 0.02 mM'
+  supplier_catalog:
+    supplier_name: Sigma
+    catalog_number: '230391'
+- preferred_term: Na2SiO3•9H2O
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Na2SiO3•9H2O(Sigma 307815)'
-- preferred_term: '7'
+    value: '0.007'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 1 mL/L; stock 0.2 g/100 mL dH2O; final 0.007 mM'
+  supplier_catalog:
+    supplier_name: Sigma
+    catalog_number: '307815'
+- preferred_term: FE EDTA
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: FE EDTA'
-- preferred_term: '8'
+    value: '250'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 250 mL/L'
+- preferred_term: Minor Nutrients
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Minor Nutrients'
-- preferred_term: '9'
+    value: '10'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 10 mL/L'
+- preferred_term: K2HPO4
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: K2HPO4(Sigma P 3786)'
-- preferred_term: '10'
+    value: '0.4'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 2 mL; stock 3.48 g/100 mL dH2O; final 0.4 mM'
+  supplier_catalog:
+    supplier_name: Sigma
+    catalog_number: P 3786
+- preferred_term: KH2PO4
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: KH2PO4(Sigma P 0662)'
+    value: '0.02'
+    unit: MOLAR
+  notes: 'UTEX lists: amount 98 mL; stock 2.72 g/100 mL dH2O; final 0.02 M'
+  supplier_catalog:
+    supplier_name: Sigma
+    catalog_number: P 0662
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -125,6 +146,14 @@ curation_history:
   curator: migrate_preparation_steps.py
   action: MIGRATED_PREPARATION_STEPS
   notes: instruction->action+description for 9 step(s)
+- timestamp: '2026-08-30T00:58:30.959798+00:00'
+  curator: repair_utex_ingredients.py
+  action: REPAIRED_UTEX_COMPOSITION
+  notes: 'Restored 10 ingredient name(s) and amount(s) from a re-fetched UTEX capture.
+    The original fetcher read fixed column positions, so the row ordinal was stored
+    as the ingredient name, the component name as the amount, and the Amount column
+    was never read; concentration was then filled in as G_PER_L regardless. Source:
+    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
 references:
 - reference: UTEX:snow-algae-medium
 - reference: https://utex.org/products/snow-algae-medium

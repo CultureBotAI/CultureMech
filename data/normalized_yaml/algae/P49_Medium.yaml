@@ -7,66 +7,67 @@ physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
 ingredients:
-- preferred_term: '1'
+- preferred_term: MgSO4•7H2O
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: MgSO4•7H2O(CAS: 10034-99-8)'
-- preferred_term: '2'
+    value: '0.16'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 1 mL/L; stock 4 g/100 mL dH2O; final 0.16 mM; CAS 10034-99-8'
+- preferred_term: Na2glycerophosphate•5H2O
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Na2glycerophosphate•5H2O(CAS: 13408-09-8)'
-- preferred_term: '3'
+    value: '0.16'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 1 mL/L; stock 5 g/100 mL dH2O; final 0.16 mM; CAS 13408-09-8'
+- preferred_term: KCl
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: KCl(CAS: 7447-40-7)'
-- preferred_term: '4'
+    value: '0.67'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 1 mL/L; stock 5 g/100 mL dH2O; final 0.67 mM; CAS 7447-40-7'
+- preferred_term: Glycylglycine
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Glycylglycine(CAS: 556-50-3)'
-- preferred_term: '5'
+    value: '3.8'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 10 mL/L; stock 5 g/100 mL dH2O; final 3.8 mM; CAS 556-50-3'
+- preferred_term: P-IV Metal Solution
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: P-IV Metal Solution'
-- preferred_term: '6'
+    value: '6'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 6 mL/L'
+- preferred_term: NH4NO3
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: NH4NO3(CAS: 6484-52-2)'
-- preferred_term: '7'
+    value: '1.2'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 10 mL/L; stock 1 g/100 mL dH2O; final 1.2 mM; CAS 6484-52-2'
+- preferred_term: CaCl2•2H2O
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: CaCl2•2H2O(CAS: 10035-04-8)'
-- preferred_term: '8'
+    value: '0.5'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 10 mL/L; stock 0.74 g/100 mL dH2O; final 0.5 mM; CAS
+    10035-04-8'
+- preferred_term: Yeast extract
   concentration:
-    value: variable
+    value: '0.2'
     unit: G_PER_L
-  notes: 'Original amount: Yeast extract(CAS: 8013-01-2)'
-- preferred_term: '9'
+  notes: 'UTEX lists: amount 0.2 g/L; CAS 8013-01-2'
+- preferred_term: Tryptone
   concentration:
-    value: variable
+    value: '0.4'
     unit: G_PER_L
-  notes: 'Original amount: Tryptone(CAS: 91079-40-2)'
-- preferred_term: '10'
+  notes: 'UTEX lists: amount 0.4 g/L; CAS 91079-40-2'
+- preferred_term: Vitamin B12
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Vitamin B12'
-- preferred_term: '11'
+    value: '1'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 1 mL/L'
+- preferred_term: Biotin Vitamin Solution
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Biotin Vitamin Solution'
-- preferred_term: '12'
+    value: '1'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 1 mL/L'
+- preferred_term: Thiamine Vitamin Solution
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Thiamine Vitamin Solution'
+    value: '1'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 1 mL/L'
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -134,6 +135,14 @@ curation_history:
   curator: migrate_preparation_steps.py
   action: MIGRATED_PREPARATION_STEPS
   notes: instruction->action+description for 9 step(s)
+- timestamp: '2026-08-30T00:58:30.919489+00:00'
+  curator: repair_utex_ingredients.py
+  action: REPAIRED_UTEX_COMPOSITION
+  notes: 'Restored 12 ingredient name(s) and amount(s) from a re-fetched UTEX capture.
+    The original fetcher read fixed column positions, so the row ordinal was stored
+    as the ingredient name, the component name as the amount, and the Amount column
+    was never read; concentration was then filled in as G_PER_L regardless. Source:
+    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
 references:
 - reference: UTEX:p49-medium
 - reference: https://utex.org/products/p49-medium

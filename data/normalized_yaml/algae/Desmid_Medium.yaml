@@ -7,26 +7,35 @@ physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
 ingredients:
-- preferred_term: '1'
+- preferred_term: 'Soilwater: GR+ Medium'
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Soilwater: GR+ Medium'
-- preferred_term: '2'
+    value: '50'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 50 mL/L'
+- preferred_term: MgSO4•7H2O
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: MgSO4•7H2O(Sigma 230391)'
-- preferred_term: '3'
+    value: '0.04'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 10 mL/L; stock 0.2 g/200 mL dH2O; final 0.04 mM'
+  supplier_catalog:
+    supplier_name: Sigma
+    catalog_number: '230391'
+- preferred_term: K2HPO4
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: K2HPO4(Sigma P 3786)'
-- preferred_term: '4'
+    value: '0.057'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 10 mL/L; stock 0.2 g/200 mL dH2O; final 0.057 mM'
+  supplier_catalog:
+    supplier_name: Sigma
+    catalog_number: P 3786
+- preferred_term: KNO3
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: KNO3(Baker 3190)'
+    value: '0.99'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 10 mL/L; stock 2 g/200 mL dH2O; final 0.99 mM'
+  supplier_catalog:
+    supplier_name: Baker
+    catalog_number: '3190'
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -94,6 +103,14 @@ curation_history:
   curator: migrate_preparation_steps.py
   action: MIGRATED_PREPARATION_STEPS
   notes: instruction->action+description for 9 step(s)
+- timestamp: '2026-08-30T00:58:30.763377+00:00'
+  curator: repair_utex_ingredients.py
+  action: REPAIRED_UTEX_COMPOSITION
+  notes: 'Restored 4 ingredient name(s) and amount(s) from a re-fetched UTEX capture.
+    The original fetcher read fixed column positions, so the row ordinal was stored
+    as the ingredient name, the component name as the amount, and the Amount column
+    was never read; concentration was then filled in as G_PER_L regardless. Source:
+    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
 references:
 - reference: UTEX:desmid-medium
 - reference: https://utex.org/products/desmid-medium

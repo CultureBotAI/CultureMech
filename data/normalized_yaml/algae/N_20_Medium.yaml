@@ -7,61 +7,85 @@ physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
 ingredients:
-- preferred_term: '1'
+- preferred_term: KH2PO4
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: KH2PO4(Sigma P 0662)'
-- preferred_term: '2'
+    value: '1.29'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 2 mL/L; stock 17.5 g/200 mL dH2O; final 1.29 mM'
+  supplier_catalog:
+    supplier_name: Sigma
+    catalog_number: P 0662
+- preferred_term: NaNO3
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: NaNO3(Fisher BP360-500)'
-- preferred_term: '3'
+    value: '0.14'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 100 µL/L; stock 25 g/200 mL dH2O; final 0.14 mM'
+  supplier_catalog:
+    supplier_name: Fisher
+    catalog_number: BP360-500
+- preferred_term: K2HPO4
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: K2HPO4(Sigma P 3786)'
-- preferred_term: '4'
+    value: '0.43'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 1 mL/L; stock 15 g/200 mL dH2O; final 0.43 mM'
+  supplier_catalog:
+    supplier_name: Sigma
+    catalog_number: P 3786
+- preferred_term: NaCl
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: NaCl(Fisher S271-500)'
-- preferred_term: '5'
+    value: '0.43'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 1 mL/L; stock 5 g/200 mL dH2O; final 0.43 mM'
+  supplier_catalog:
+    supplier_name: Fisher
+    catalog_number: S271-500
+- preferred_term: CaCl2•2H2O
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: CaCl2•2H2O(Sigma C-3881)'
-- preferred_term: '6'
+    value: '0.17'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 1 mL/L; stock 5 g/200 mL dH2O; final 0.17 mM'
+  supplier_catalog:
+    supplier_name: Sigma
+    catalog_number: C-3881
+- preferred_term: MgSO4•7H2O
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: MgSO4•7H2O(Sigma 230391)'
-- preferred_term: '7'
+    value: '0.3'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 1 mL/L; stock 15 g/200 mL dH2O; final 0.3 mM'
+  supplier_catalog:
+    supplier_name: Sigma
+    catalog_number: '230391'
+- preferred_term: P-IV Metal Solution
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: P-IV Metal Solution'
-- preferred_term: '8'
+    value: '6'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 6 mL/L'
+- preferred_term: Sodium acetate
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Sodium acetate(Fisher BP 333)'
-- preferred_term: '9'
+    value: '8.12'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 0.67 g/L; final 8.12 mM'
+  supplier_catalog:
+    supplier_name: Fisher
+    catalog_number: BP 333
+- preferred_term: TES buffer
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: TES buffer(Sigma T 1375)'
-- preferred_term: '10'
+    value: '4.01'
+    unit: MILLIMOLAR
+  notes: 'UTEX lists: amount 0.92 g/L; final 4.01 mM'
+  supplier_catalog:
+    supplier_name: Sigma
+    catalog_number: T 1375
+- preferred_term: Vitamin B12
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Vitamin B12'
-- preferred_term: '11'
+    value: '1'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 1 mL/L'
+- preferred_term: Thiamine Vitamin Solution
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Thiamine Vitamin Solution'
+    value: '1'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 1 mL/L'
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -129,6 +153,14 @@ curation_history:
   curator: migrate_preparation_steps.py
   action: MIGRATED_PREPARATION_STEPS
   notes: instruction->action+description for 9 step(s)
+- timestamp: '2026-08-30T00:58:30.903976+00:00'
+  curator: repair_utex_ingredients.py
+  action: REPAIRED_UTEX_COMPOSITION
+  notes: 'Restored 11 ingredient name(s) and amount(s) from a re-fetched UTEX capture.
+    The original fetcher read fixed column positions, so the row ordinal was stored
+    as the ingredient name, the component name as the amount, and the Amount column
+    was never read; concentration was then filled in as G_PER_L regardless. Source:
+    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
 references:
 - reference: UTEX:n-over-20-medium
 - reference: https://utex.org/products/n-over-20-medium

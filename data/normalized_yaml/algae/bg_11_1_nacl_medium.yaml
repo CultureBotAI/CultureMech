@@ -7,16 +7,19 @@ physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for saltwater
   algae cultivation.
 ingredients:
-- preferred_term: '1'
+- preferred_term: BG-11 Medium
   concentration:
     value: variable
-    unit: G_PER_L
-  notes: 'Original amount: BG-11 Medium'
-- preferred_term: '2'
+    unit: VARIABLE
+  notes: 'UTEX lists: amount 1 L'
+- preferred_term: NaCl
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: NaCl(Fisher S271-500)'
+    value: '0.17'
+    unit: MOLAR
+  notes: 'UTEX lists: amount 10 g/L; final 0.17 M'
+  supplier_catalog:
+    supplier_name: Fisher
+    catalog_number: S271-500
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -96,6 +99,14 @@ curation_history:
   curator: migrate_preparation_steps.py
   action: MIGRATED_PREPARATION_STEPS
   notes: instruction->action+description for 9 step(s)
+- timestamp: '2026-08-30T00:58:31.292090+00:00'
+  curator: repair_utex_ingredients.py
+  action: REPAIRED_UTEX_COMPOSITION
+  notes: 'Restored 2 ingredient name(s) and amount(s) from a re-fetched UTEX capture.
+    The original fetcher read fixed column positions, so the row ordinal was stored
+    as the ingredient name, the component name as the amount, and the Amount column
+    was never read; concentration was then filled in as G_PER_L regardless. Source:
+    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
 references:
 - reference: UTEX:bg-11-plus-1-percent-nacl-medium
 - reference: https://utex.org/products/bg-11-plus-1-percent-nacl-medium

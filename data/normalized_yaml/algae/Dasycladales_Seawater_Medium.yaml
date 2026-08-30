@@ -7,31 +7,31 @@ physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for saltwater
   algae cultivation.
 ingredients:
-- preferred_term: '1'
+- preferred_term: Pasteurized Seawater
   concentration:
     value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Pasteurized Seawater'
-- preferred_term: '2'
+    unit: VARIABLE
+  notes: 'UTEX lists: amount 3 L'
+- preferred_term: Soil+Seawater Medium
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Soil+Seawater Medium'
-- preferred_term: '3'
+    value: '16.66666666666666666666666667'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 50 mL/3 L'
+- preferred_term: DAS Macro Solution
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: DAS Macro Solution'
-- preferred_term: '4'
+    value: '13.33333333333333333333333333'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 40 mL/3 L'
+- preferred_term: Modified P-IV chelated Micronutrient Solution
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: Modified P-IV chelated Micronutrient Solution'
-- preferred_term: '5'
+    value: '10'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 30 mL/3 L'
+- preferred_term: DAS Vitamin Cocktail
   concentration:
-    value: variable
-    unit: G_PER_L
-  notes: 'Original amount: DAS Vitamin Cocktail'
+    value: '0.5'
+    unit: ML_PER_L
+  notes: 'UTEX lists: amount 1.5 mL/3 L'
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -101,6 +101,14 @@ curation_history:
   curator: migrate_preparation_steps.py
   action: MIGRATED_PREPARATION_STEPS
   notes: instruction->action+description for 9 step(s)
+- timestamp: '2026-08-30T00:58:30.756640+00:00'
+  curator: repair_utex_ingredients.py
+  action: REPAIRED_UTEX_COMPOSITION
+  notes: 'Restored 5 ingredient name(s) and amount(s) from a re-fetched UTEX capture.
+    The original fetcher read fixed column positions, so the row ordinal was stored
+    as the ingredient name, the component name as the amount, and the Amount column
+    was never read; concentration was then filled in as G_PER_L regardless. Source:
+    https://utex.org/pages/algal-culture-media, captured 2026-08-29T17:46:40.207779.'
 references:
 - reference: UTEX:dasycladales-seawater-medium
 - reference: https://utex.org/products/dasycladales-seawater-medium
