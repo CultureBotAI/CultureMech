@@ -434,3 +434,40 @@ def test_an_empty_corpus_fails_loudly(tmp_path):
     (tmp_path / "records" / "empty").mkdir(parents=True)
     with pytest.raises(SystemExit, match="No record YAMLs"):
         export_kgx.run(tmp_path / "records", tmp_path / "out")
+
+
+def test_a_relative_records_dir_still_finds_the_corpus(tmp_path, monkeypatch):
+    """#371: `just kgx-export` passed the tracked relative default and died.
+
+    koza resolves a relative input path against the directory holding its
+    configuration file, not the working directory, so the run looked for
+    `src/culturemech/export/data/normalized_yaml/...`. Every other end-to-end
+    test here hands `run()` a `tmp_path`, which is absolute — the exact shape
+    the real recipe never used.
+    """
+    import export_kgx
+    import yaml
+
+    records_dir = tmp_path / "records" / "canary"
+    records_dir.mkdir(parents=True)
+    (records_dir / "record.yaml").write_text(yaml.safe_dump(RECORD))
+
+    monkeypatch.chdir(tmp_path)
+    node_count, edge_count = export_kgx.run(Path("records"), Path("out"))
+
+    assert node_count > 0 and edge_count > 0
+    assert (tmp_path / "out" / "culturemech_nodes.tsv").exists()
+
+
+def test_find_records_returns_absolute_paths(tmp_path, monkeypatch):
+    """The narrow invariant behind #371, without paying for a koza run."""
+    import export_kgx
+
+    (tmp_path / "records" / "canary").mkdir(parents=True)
+    (tmp_path / "records" / "canary" / "record.yaml").write_text("name: X\n")
+
+    monkeypatch.chdir(tmp_path)
+    files = export_kgx.find_records(Path("records"))
+
+    assert files, "fixture record was not discovered"
+    assert all(Path(f).is_absolute() for f in files)

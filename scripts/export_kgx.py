@@ -28,13 +28,21 @@ CONFIG = REPO_ROOT / "src" / "culturemech" / "export" / "kgx.yaml"
 
 
 def find_records(records_dir: Path) -> list[str]:
-    """Every record YAML under `records_dir`, one directory deep.
+    """Every record YAML under `records_dir`, one directory deep, as absolute paths.
 
     Matches the corpus layout `data/normalized_yaml/<category>/<slug>.yaml`. The
     sibling `*_index.json` files live at the top level and are not YAML, so the
     `*/*.yaml` shape excludes them without needing a filter.
+
+    The paths must be absolute (#371). koza resolves a relative input path
+    against the directory holding its *configuration file*
+    (`src/culturemech/export/kgx.yaml`), not the working directory, so a
+    relative `--records-dir` produced
+    `src/culturemech/export/data/normalized_yaml/...` and the run died on the
+    first record. Resolving here fixes every caller at once rather than asking
+    each one to remember.
     """
-    return [str(p) for p in sorted(records_dir.glob("*/*.yaml"))]
+    return [str(p) for p in sorted(records_dir.resolve().glob("*/*.yaml"))]
 
 
 def run(records_dir: Path, output_dir: Path, limit: int = 0) -> tuple[int, int]:
@@ -43,6 +51,12 @@ def run(records_dir: Path, output_dir: Path, limit: int = 0) -> tuple[int, int]:
     from koza.runner import KozaRunner
 
     sys.path.insert(0, str(REPO_ROOT / "src"))
+
+    # Absolute for the same reason as `find_records` (#371): koza resolves a
+    # relative output path against its config file's directory too, which would
+    # scatter TSVs inside the package tree.
+    records_dir = records_dir.expanduser().resolve()
+    output_dir = output_dir.expanduser().resolve()
 
     files = find_records(records_dir)
     if not files:
