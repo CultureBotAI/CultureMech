@@ -21,8 +21,21 @@ INIT = Path(__file__).resolve().parents[1] / "src/culturemech/templates/mermaid-
 TEMPLATE = Path(__file__).resolve().parents[1] / "src/culturemech/templates/media.html.j2"
 
 
-def test_html_labels_are_off_so_labels_are_measured_from_font_metrics():
-    assert re.search(r"htmlLabels:\s*false", INIT.read_text())
+def test_html_labels_are_off_at_the_TOP_level():
+    """Nesting it only under `flowchart` does not work, and looks like it does.
+
+    Measured under the page CSP with mermaid 11, on the CultureMech:000001
+    diagram: `flowchart.htmlLabels: false` alone still emits 5 foreignObjects
+    and 64px nodes; the top-level key emits 0 and 26px nodes. A test that only
+    grepped for the string would have passed on the broken config.
+    """
+    text = INIT.read_text()
+    body = re.search(r"mermaid\.initialize\(\{(.*)\n\}\);", text, re.S)
+    assert body, "could not find the mermaid.initialize call"
+    # Two-space indent = a direct member of the config object, not nested.
+    assert re.search(r"^  htmlLabels:\s*false,", body.group(1), re.M), (
+        "htmlLabels: false is not set at the top level of mermaid.initialize"
+    )
 
 
 def test_the_page_csp_still_blocks_inline_styles():
