@@ -21,6 +21,7 @@ Reference:
 
 import json
 import logging
+import re
 from datetime import datetime, timezone
 from importlib import import_module
 from pathlib import Path
@@ -100,6 +101,8 @@ class MediaDBImporter:
         self.compounds = self.compounds_data.get("data", [])
         self.organisms = self.organisms_data.get("data", [])
 
+        self._refuse_a_stale_compound_export()
+
         # Index compounds by ID for quick lookup
         self.compounds_by_id = {comp["id"]: comp for comp in self.compounds}
 
@@ -114,6 +117,49 @@ class MediaDBImporter:
         logger.info(f"Loaded {len(self.organisms)} organism associations")
         logger.info(
             f"Cached {len(self.existing_media_names)} existing media names for deduplication"
+        )
+
+    # A KEGG compound id: the shape that appears in `name` only when the export
+    # predates the column-mapping fix.
+    _KEGG_ID = re.compile(r"^C\d{5}$")
+
+    def _refuse_a_stale_compound_export(self) -> None:
+        """Stop rather than re-import an export built by the old SQL parser.
+
+        Two bugs in `mediadb_fetcher` (#387) put a KEGG id in `name`, the real
+        name in `chebi_id`, and truncated any value containing a parenthesis at
+        that parenthesis. `mediadb_compounds.json` is gitignored, so a checkout
+        can hold a pre-fix copy indefinitely, and importing from it would put
+        fragments like `'Iron(III` back into the corpus — including from the
+        ~1,600 damaged rows that never reached a recipe the first time.
+
+        Detected on shape, not on a version stamp, because the export carries
+        no version: a `name` that is a KEGG id, or a `chebi_id` that is a
+        truncated quoted string, cannot happen in a correctly parsed export.
+        """
+        # `name` holding a KEGG id is not damage on its own: four MediaDB
+        # compounds are genuinely unnamed and carry their KEGG id as the name
+        # (`{'name': 'C15810', 'kegg_id': 'C15810'}`). Under the shifted mapping
+        # the two disagree, because `kegg_id` then holds the BiGG id
+        # (`{'name': 'C00149', 'kegg_id': 'mal-L'}`). The disagreement is the
+        # signal; a bare count of KEGG-shaped names refuses a good export.
+        shifted = sum(
+            1
+            for compound in self.compounds
+            if self._KEGG_ID.match(str(compound.get("name", "")))
+            and str(compound.get("name", "")) != str(compound.get("kegg_id", ""))
+        )
+        truncated = sum(
+            1 for compound in self.compounds if str(compound.get("chebi_id", "")).startswith("'")
+        )
+        if not shifted and not truncated:
+            return
+        raise RuntimeError(
+            f"{self.mediadb_dir / 'mediadb_compounds.json'} was built by the pre-#387 "
+            f"SQL parser: {shifted} compound(s) have a KEGG id in `name` and "
+            f"{truncated} have a truncated `chebi_id`. Importing from it would put "
+            f'names like "\'Iron(III" back into the corpus. Re-run `just fetch-mediadb` '
+            f"to regenerate it."
         )
 
     def _load_json(self, filename: str) -> dict:

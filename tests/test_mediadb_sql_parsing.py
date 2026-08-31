@@ -137,3 +137,71 @@ def test_the_real_dump_parses_without_fragmenting_names(fetcher):
     assert by_id["16413"]["name"] == "Iron(III) chloride"
     assert by_id["16416"]["name"] == "Chromium(III) Chloride"
     assert by_id["1"]["name"] == "Water"
+
+
+# --- the importer's stale-export guard ----------------------------------
+
+
+def _importer_class():
+    from importlib import import_module
+
+    module = import_module("culturemech.import.mediadb_importer")
+    return next(
+        value
+        for name, value in vars(module).items()
+        if name.endswith("Importer") and isinstance(value, type)
+    )
+
+
+def _export(tmp_path: Path, compounds: list[dict]) -> Path:
+    import json
+
+    directory = tmp_path / "mediadb"
+    directory.mkdir()
+    for name, payload in (
+        ("mediadb_compounds.json", compounds),
+        ("mediadb_media.json", []),
+        ("mediadb_organisms.json", []),
+    ):
+        (directory / name).write_text(json.dumps({"count": len(payload), "data": payload}))
+    return directory
+
+
+def test_a_correct_export_is_accepted(tmp_path):
+    directory = _export(
+        tmp_path,
+        [{"id": "1", "name": "Water", "kegg_id": "C00001", "bigg_id": "h2o", "chebi_id": "15377"}],
+    )
+    assert _importer_class()(str(directory), str(tmp_path / "out")).compounds
+
+
+def test_an_unnamed_compound_is_not_mistaken_for_damage(tmp_path):
+    """Four MediaDB compounds genuinely carry their KEGG id as the name.
+
+    `{'name': 'C15810', 'kegg_id': 'C15810'}` is real data. A guard that counted
+    KEGG-shaped names alone refused the correct export — verified, it did.
+    """
+    directory = _export(
+        tmp_path,
+        [{"id": "14209", "name": "C15810", "kegg_id": "C15810", "bigg_id": "", "chebi_id": ""}],
+    )
+    assert _importer_class()(str(directory), str(tmp_path / "out")).compounds
+
+
+def test_a_shifted_export_is_refused(tmp_path):
+    """The pre-#387 shape: name holds the KEGG id, kegg_id holds the BiGG id."""
+    directory = _export(
+        tmp_path,
+        [{"id": "145", "name": "C00149", "kegg_id": "mal-L", "chebi_id": "'(S"}],
+    )
+    with pytest.raises(RuntimeError, match="pre-#387 SQL parser"):
+        _importer_class()(str(directory), str(tmp_path / "out"))
+
+
+def test_a_truncated_chebi_id_alone_is_enough_to_refuse(tmp_path):
+    directory = _export(
+        tmp_path,
+        [{"id": "16413", "name": "Iron", "kegg_id": "", "chebi_id": "'Iron(III"}],
+    )
+    with pytest.raises(RuntimeError, match="truncated"):
+        _importer_class()(str(directory), str(tmp_path / "out"))
