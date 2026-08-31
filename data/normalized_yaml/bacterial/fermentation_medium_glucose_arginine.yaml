@@ -1,6 +1,6 @@
 id: CultureMech:007271
 name: fermentation_medium_glucose_arginine
-original_name: '''Fermentation Medium (Glucose+Arginine'
+original_name: Fermentation Medium (Glucose+Arginine)
 category: bacterial
 medium_type: DEFINED
 composition_type: DEFINED
@@ -144,11 +144,17 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-31T06:17:28.358267+00:00'
+  curator: repair_mediadb_names.py
+  action: REPAIRED_MEDIADB_TRUNCATED_NAME
+  notes: Restored the medium's own name in media_term.term.label, original_name. The
+    MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
+    recovered from media_database.07Oct2015.sql.
 media_term:
   preferred_term: MediaDB Medium 369
   term:
     id: MEDIADB:369
-    label: '''Fermentation Medium (Glucose+Arginine'
+    label: Fermentation Medium (Glucose+Arginine)
 notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
   Reference: https://mediadb.systemsbiology.net/'
 applications:

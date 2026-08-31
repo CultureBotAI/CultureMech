@@ -205,3 +205,66 @@ def test_a_truncated_chebi_id_alone_is_enough_to_refuse(tmp_path):
     )
     with pytest.raises(RuntimeError, match="truncated"):
         _importer_class()(str(directory), str(tmp_path / "out"))
+
+
+# --- medium-name damage -------------------------------------------------
+
+
+def test_a_leading_quote_marks_a_truncated_medium_name():
+    from repair_mediadb_names import damaged_medium_name
+
+    assert damaged_medium_name("'Defined freshwater medium (CoSO4")
+
+
+def test_a_glued_field_tail_marks_a_damaged_medium_name():
+    """From the escaped-quote bug: `Spizizen's medium` glued the next field on."""
+    from repair_mediadb_names import damaged_medium_name
+
+    assert damaged_medium_name("Spizizen's medium ... Nakano et al','N")
+
+
+def test_a_healthy_medium_name_is_left_alone():
+    from repair_mediadb_names import damaged_medium_name
+
+    assert not damaged_medium_name("M9 (gupta) with lactose")
+    assert not damaged_medium_name("Defined freshwater medium (CoSO4) + 100 mM Fe2O3")
+
+
+def test_trailing_whitespace_is_not_damage():
+    """`'Supplemented BG11 + Glucose '` is the dump's own value, space and all."""
+    from repair_mediadb_names import damaged_medium_name
+
+    assert not damaged_medium_name("Supplemented BG11 + Glucose ")
+
+
+def test_the_medium_name_repair_touches_only_the_two_damaged_fields():
+    from repair_mediadb_names import repair_medium_name
+
+    record = {
+        "name": "m9_gupta",
+        "original_name": "'M9 (gupta",
+        "media_term": {
+            "preferred_term": "MediaDB Medium 109",
+            "term": {"id": "MEDIADB:109", "label": "'M9 (gupta"},
+        },
+    }
+    changed = repair_medium_name(record, "M9 (gupta) with lactose")
+
+    assert sorted(changed) == ["media_term.term.label", "original_name"]
+    assert record["original_name"] == "M9 (gupta) with lactose"
+    assert record["media_term"]["term"]["label"] == "M9 (gupta) with lactose"
+    # The id and the record slug are identifiers; the repair must not touch them.
+    assert record["media_term"]["term"]["id"] == "MEDIADB:109"
+    assert record["media_term"]["preferred_term"] == "MediaDB Medium 109"
+    assert record["name"] == "m9_gupta"
+
+
+def test_an_undamaged_record_is_not_rewritten():
+    from repair_mediadb_names import repair_medium_name
+
+    record = {
+        "original_name": "M9 (gupta) with lactose",
+        "media_term": {"term": {"id": "MEDIADB:109", "label": "M9 (gupta) with lactose"}},
+    }
+    assert repair_medium_name(record, "Something Else Entirely") == []
+    assert record["original_name"] == "M9 (gupta) with lactose"

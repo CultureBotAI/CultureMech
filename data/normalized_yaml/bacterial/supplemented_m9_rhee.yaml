@@ -1,6 +1,6 @@
 id: CultureMech:007006
 name: supplemented_m9_rhee
-original_name: '''Supplemented m9 (rhee'
+original_name: Supplemented m9 (rhee)
 category: bacterial
 medium_type: DEFINED
 composition_type: DEFINED
@@ -179,11 +179,17 @@ curation_history:
   notes: Restored 1 ingredient name(s) truncated at a parenthesis by the MediaDB SQL
     parser. Resolved against MEDIADB:119's own compound list in media_database.07Oct2015.sql,
     requiring a unique prefix match and, where more than one matched, an equal Amount_mM.
+- timestamp: '2026-08-31T06:18:24.923577+00:00'
+  curator: repair_mediadb_names.py
+  action: REPAIRED_MEDIADB_TRUNCATED_NAME
+  notes: Restored the medium's own name in media_term.term.label, original_name. The
+    MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
+    recovered from media_database.07Oct2015.sql.
 media_term:
   preferred_term: MediaDB Medium 119
   term:
     id: MEDIADB:119
-    label: '''Supplemented m9 (rhee'
+    label: Supplemented m9 (rhee)
 notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
   Reference: https://mediadb.systemsbiology.net/'
 applications:

@@ -71,8 +71,10 @@ def looks_truncated(name: str) -> bool:
     return name.startswith("'")
 
 
-def load_mediadb(dump: Path) -> tuple[dict[str, dict[str, str]], dict[str, list[tuple[str, str]]]]:
-    """(compounds by id, medium id -> [(compound id, amount_mM)]) from the dump."""
+def load_mediadb(
+    dump: Path,
+) -> tuple[dict[str, dict[str, str]], dict[str, list[tuple[str, str]]], dict[str, str]]:
+    """(compounds by id, medium id -> [(compound id, amount_mM)], medium names)."""
     fetcher = MediaDBFetcher(output_dir=dump.parent)
     if not fetcher.parse_sql_dump(dump):
         raise SystemExit(f"Could not parse {dump}")
@@ -83,7 +85,8 @@ def load_mediadb(dump: Path) -> tuple[dict[str, dict[str, str]], dict[str, list[
             (str(entry.get("compound_id") or ""), str(entry.get("concentration") or ""))
             for entry in entries
         ]
-    return fetcher.compounds, compositions
+    medium_names = {m["id"]: str(m.get("name") or "").strip() for m in fetcher.media}
+    return fetcher.compounds, compositions, medium_names
 
 
 def medium_id(record: dict[str, Any]) -> str | None:
@@ -127,6 +130,53 @@ def resolve(
     return None, f"{len(names)} candidates at this medium: {sorted(names)[:4]}"
 
 
+def damaged_medium_name(value: str) -> bool:
+    """Whether a stored medium name shows parser damage.
+
+    Two shapes, from the two bugs:
+
+    * a leading quote, from the record splitter stopping at a paren —
+      `'Defined freshwater medium (CoSO4`;
+    * a glued-on `','...` tail, from the field splitter losing quote tracking
+      at an apostrophe — `Spizizen's medium ... Nakano et al','N`.
+
+    Deliberately narrow. The medium's MEDIADB id names its row exactly, so the
+    dump value could simply be imposed on every record — but that would also
+    overwrite deliberate curation. Only values carrying evidence of damage are
+    replaced. A name that differs from the dump only by trailing whitespace
+    (`'Supplemented BG11 + Glucose '`) is left alone: that is the dump's own
+    value, not damage.
+    """
+    return value.startswith("'") or "','" in value
+
+
+def repair_medium_name(record: dict[str, Any], true_name: str) -> list[str]:
+    """Restore the medium's own name where the same bug truncated it.
+
+    `media_term.term.label` and `original_name` were written from the truncated
+    `media_names` row, so `Defined freshwater medium (CoSO4) + 20 mM Iron
+    citrate + 113.2 mM Acetate` became `'Defined freshwater medium (CoSO4`.
+    That is not merely ugly: 29 distinct media collapse onto that one string,
+    and what the truncation removed is exactly what tells them apart.
+
+    Keyed on the record's MEDIADB id alone, so there is no inference here —
+    unlike the ingredient case, the id names the row directly.
+
+    `name` is deliberately left alone. It is the record's slug, used for
+    matching and deduplication, and renaming 182 of them is a different change
+    with different risks.
+    """
+    changed = []
+    term = (record.get("media_term") or {}).get("term") or {}
+    if damaged_medium_name(str(term.get("label", ""))):
+        term["label"] = true_name
+        changed.append("media_term.term.label")
+    if damaged_medium_name(str(record.get("original_name", ""))):
+        record["original_name"] = true_name
+        changed.append("original_name")
+    return changed
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--records-dir", type=Path, default=DEFAULT_RECORDS)
@@ -143,7 +193,7 @@ def main(argv: list[str] | None = None) -> int:
         )
         return 1
 
-    compounds, compositions = load_mediadb(args.dump)
+    compounds, compositions, medium_names = load_mediadb(args.dump)
     print(f"{len(compounds)} compounds, {len(compositions)} media from {args.dump.name}")
 
     stats: Counter = Counter()
@@ -155,48 +205,61 @@ def main(argv: list[str] | None = None) -> int:
         if not isinstance(record, dict):
             continue
 
+        source_id = medium_id(record)
+        true_name = medium_names.get(source_id or "", "")
+        name_fields = repair_medium_name(record, true_name) if true_name else []
+        if name_fields:
+            stats["medium_names_repaired"] += 1
+            stats["name_fields_repaired"] += len(name_fields)
+
         damaged = [
             ingredient
             for ingredient in record.get("ingredients") or []
             if isinstance(ingredient, dict)
             and looks_truncated(str(ingredient.get("preferred_term", "")))
         ]
-        if not damaged:
-            continue
-        stats["records_with_damage"] += 1
+        if damaged:
+            stats["records_with_damaged_ingredients"] += 1
 
-        source_id = medium_id(record)
-        if not source_id:
+        repaired = 0
+        if damaged and not source_id:
             for ingredient in damaged:
                 failures.append((path.name, str(ingredient["preferred_term"]), "no MEDIADB:<id>"))
-            continue
-
-        pool = compositions.get(source_id, [])
-        repaired = 0
-        for ingredient in damaged:
-            fragment = str(ingredient["preferred_term"])
-            concentration = (ingredient.get("concentration") or {}).get("value")
-            name, reason = resolve(fragment, concentration, pool, compounds)
-            if not name:
-                failures.append((path.name, fragment, reason))
-                continue
-            ingredient["preferred_term"] = name
-            renames[(fragment, name)] += 1
-            repaired += 1
-
-        if not repaired:
-            continue
+        elif damaged:
+            pool = compositions.get(source_id, [])
+            for ingredient in damaged:
+                fragment = str(ingredient["preferred_term"])
+                concentration = (ingredient.get("concentration") or {}).get("value")
+                name, reason = resolve(fragment, concentration, pool, compounds)
+                if not name:
+                    failures.append((path.name, fragment, reason))
+                    continue
+                ingredient["preferred_term"] = name
+                renames[(fragment, name)] += 1
+                repaired += 1
         stats["ingredients_repaired"] += repaired
+
+        if not repaired and not name_fields:
+            continue
+
+        summary = []
+        if repaired:
+            summary.append(
+                f"{repaired} ingredient name(s), resolved against MEDIADB:{source_id}'s own "
+                f"compound list by unique prefix match and, where more than one matched, "
+                f"an equal Amount_mM"
+            )
+        if name_fields:
+            summary.append(f"the medium's own name in {', '.join(name_fields)}")
         record.setdefault("curation_history", []).append(
             {
                 "timestamp": datetime.now(timezone.utc).isoformat(),
                 "curator": CURATOR,
                 "action": ACTION,
                 "notes": (
-                    f"Restored {repaired} ingredient name(s) truncated at a parenthesis by "
-                    f"the MediaDB SQL parser. Resolved against MEDIADB:{source_id}'s own "
-                    f"compound list in {args.dump.name}, requiring a unique prefix match "
-                    f"and, where more than one matched, an equal Amount_mM."
+                    f"Restored {' and '.join(summary)}. The MediaDB SQL parser truncated "
+                    f"every value containing a parenthesis at that parenthesis; recovered "
+                    f"from {args.dump.name}."
                 ),
             }
         )
@@ -207,7 +270,7 @@ def main(argv: list[str] | None = None) -> int:
             break
 
     verb = "Repaired" if args.apply else "Would repair"
-    print(f"\n{verb} {stats['records_repaired']} records / {stats['ingredients_repaired']} names")
+    print(f"\n{verb} {stats['records_repaired']} records")
     for key in sorted(stats):
         print(f"  {key}: {stats[key]}")
     if renames:

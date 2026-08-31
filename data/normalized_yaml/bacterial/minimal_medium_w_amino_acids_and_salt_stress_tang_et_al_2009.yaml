@@ -1,6 +1,6 @@
 id: CultureMech:007076
 name: minimal_medium_w_amino_acids_and_salt_stress_tang_et_al_2009
-original_name: '''Minimal Medium w/amino acids and salt stress (Tang et al 2009'
+original_name: Minimal Medium w/amino acids and salt stress (Tang et al 2009)
 category: bacterial
 medium_type: DEFINED
 composition_type: DEFINED
@@ -343,11 +343,17 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 3 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-08-31T06:18:15.630120+00:00'
+  curator: repair_mediadb_names.py
+  action: REPAIRED_MEDIADB_TRUNCATED_NAME
+  notes: Restored the medium's own name in media_term.term.label, original_name. The
+    MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
+    recovered from media_database.07Oct2015.sql.
 media_term:
   preferred_term: MediaDB Medium 185
   term:
     id: MEDIADB:185
-    label: '''Minimal Medium w/amino acids and salt stress (Tang et al 2009'
+    label: Minimal Medium w/amino acids and salt stress (Tang et al 2009)
 notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
   Reference: https://mediadb.systemsbiology.net/'
 applications:
