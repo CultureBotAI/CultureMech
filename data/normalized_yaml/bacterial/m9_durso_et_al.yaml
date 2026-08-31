@@ -1,6 +1,6 @@
 id: CultureMech:006990
 name: m9_durso_et_al
-original_name: '''M9 (Durso et al'
+original_name: M9 (Durso et al)
 category: bacterial
 medium_type: DEFINED
 composition_type: DEFINED
@@ -113,11 +113,17 @@ curation_history:
   notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-08-31T06:17:36.457494+00:00'
+  curator: repair_mediadb_names.py
+  action: REPAIRED_MEDIADB_TRUNCATED_NAME
+  notes: Restored the medium's own name in media_term.term.label, original_name. The
+    MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
+    recovered from media_database.07Oct2015.sql.
 media_term:
   preferred_term: MediaDB Medium 103
   term:
     id: MEDIADB:103
-    label: '''M9 (Durso et al'
+    label: M9 (Durso et al)
 notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
   Reference: https://mediadb.systemsbiology.net/'
 applications:

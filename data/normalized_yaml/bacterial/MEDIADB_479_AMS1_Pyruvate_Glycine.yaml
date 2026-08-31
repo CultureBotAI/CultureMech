@@ -1,6 +1,6 @@
 id: CultureMech:007386
 name: ams1_pyruvate_glycine
-original_name: '''AMS1 (Pyruvate+Glycine'
+original_name: AMS1 (Pyruvate+Glycine) + Thiamin + Phosphite
 category: bacterial
 medium_type: DEFINED
 composition_type: DEFINED
@@ -101,7 +101,7 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
-- preferred_term: '''Iron(III'
+- preferred_term: Iron(III) chloride
   concentration:
     value: '0.000117'
     unit: MILLIMOLAR
@@ -219,11 +219,23 @@ curation_history:
   notes: 'Replaced 11 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-08-31T04:05:56.109733+00:00'
+  curator: repair_mediadb_names.py
+  action: REPAIRED_MEDIADB_TRUNCATED_NAME
+  notes: Restored 1 ingredient name(s) truncated at a parenthesis by the MediaDB SQL
+    parser. Resolved against MEDIADB:479's own compound list in media_database.07Oct2015.sql,
+    requiring a unique prefix match and, where more than one matched, an equal Amount_mM.
+- timestamp: '2026-08-31T06:17:08.357932+00:00'
+  curator: repair_mediadb_names.py
+  action: REPAIRED_MEDIADB_TRUNCATED_NAME
+  notes: Restored the medium's own name in media_term.term.label, original_name. The
+    MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
+    recovered from media_database.07Oct2015.sql.
 media_term:
   preferred_term: MediaDB Medium 479
   term:
     id: MEDIADB:479
-    label: '''AMS1 (Pyruvate+Glycine'
+    label: AMS1 (Pyruvate+Glycine) + Thiamin + Phosphite
 notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
   Reference: https://mediadb.systemsbiology.net/'
 applications:

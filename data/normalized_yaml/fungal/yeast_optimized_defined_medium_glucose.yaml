@@ -1,6 +1,6 @@
 id: CultureMech:010554
 name: yeast_optimized_defined_medium_glucose
-original_name: '''Yeast Optimized Defined Medium (Glucose'
+original_name: Yeast Optimized Defined Medium (Glucose)
 category: fungal
 medium_type: DEFINED
 composition_type: DEFINED
@@ -308,11 +308,17 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-08-31T06:18:33.116933+00:00'
+  curator: repair_mediadb_names.py
+  action: REPAIRED_MEDIADB_TRUNCATED_NAME
+  notes: Restored the medium's own name in media_term.term.label, original_name. The
+    MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
+    recovered from media_database.07Oct2015.sql.
 media_term:
   preferred_term: MediaDB Medium 396
   term:
     id: MEDIADB:396
-    label: '''Yeast Optimized Defined Medium (Glucose'
+    label: Yeast Optimized Defined Medium (Glucose)
 notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
   Reference: https://mediadb.systemsbiology.net/'
 applications:

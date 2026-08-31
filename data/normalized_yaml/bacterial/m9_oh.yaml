@@ -1,6 +1,6 @@
 id: CultureMech:007008
 name: m9_oh
-original_name: '''M9 (oh'
+original_name: M9 (oh)
 category: bacterial
 medium_type: DEFINED
 composition_type: DEFINED
@@ -113,11 +113,17 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-08-31T06:17:36.552148+00:00'
+  curator: repair_mediadb_names.py
+  action: REPAIRED_MEDIADB_TRUNCATED_NAME
+  notes: Restored the medium's own name in media_term.term.label, original_name. The
+    MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
+    recovered from media_database.07Oct2015.sql.
 media_term:
   preferred_term: MediaDB Medium 120
   term:
     id: MEDIADB:120
-    label: '''M9 (oh'
+    label: M9 (oh)
 notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
   Reference: https://mediadb.systemsbiology.net/'
 applications:

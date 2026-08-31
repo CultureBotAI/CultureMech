@@ -1,6 +1,6 @@
 id: CultureMech:007293
 name: defined_freshwater_medium_coso4
-original_name: '''Defined freshwater medium (CoSO4'
+original_name: Defined freshwater medium (CoSO4) + Electron Donors/Acceptors
 category: bacterial
 medium_type: DEFINED
 composition_type: DEFINED
@@ -38,7 +38,7 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:16024
     label: D-mannose
-- preferred_term: '''Fe(III'
+- preferred_term: Fe(III)dicitrate
   concentration:
     value: '56.0'
     unit: MILLIMOLAR
@@ -422,11 +422,23 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 3 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-08-31T04:06:13.219304+00:00'
+  curator: repair_mediadb_names.py
+  action: REPAIRED_MEDIADB_TRUNCATED_NAME
+  notes: Restored 1 ingredient name(s) truncated at a parenthesis by the MediaDB SQL
+    parser. Resolved against MEDIADB:389's own compound list in media_database.07Oct2015.sql,
+    requiring a unique prefix match and, where more than one matched, an equal Amount_mM.
+- timestamp: '2026-08-31T06:17:25.158277+00:00'
+  curator: repair_mediadb_names.py
+  action: REPAIRED_MEDIADB_TRUNCATED_NAME
+  notes: Restored the medium's own name in media_term.term.label, original_name. The
+    MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
+    recovered from media_database.07Oct2015.sql.
 media_term:
   preferred_term: MediaDB Medium 389
   term:
     id: MEDIADB:389
-    label: '''Defined freshwater medium (CoSO4'
+    label: Defined freshwater medium (CoSO4) + Electron Donors/Acceptors
 notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
   Reference: https://mediadb.systemsbiology.net/'
 applications:

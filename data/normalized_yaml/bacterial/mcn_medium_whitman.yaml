@@ -1,6 +1,6 @@
 id: CultureMech:007380
 name: mcn_medium_whitman
-original_name: '''McN Medium (Whitman'
+original_name: McN Medium (Whitman)
 category: bacterial
 medium_type: COMPLEX
 composition_type: UNDEFINED
@@ -304,11 +304,17 @@ curation_history:
     row in this record, which made the recipe read as double-strength in those components
     (#263): Sodium chloride, Tryptone, Yeast extract.'
   changes: ingredients 30 -> 27
+- timestamp: '2026-08-31T06:17:37.792230+00:00'
+  curator: repair_mediadb_names.py
+  action: REPAIRED_MEDIADB_TRUNCATED_NAME
+  notes: Restored the medium's own name in media_term.term.label, original_name. The
+    MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
+    recovered from media_database.07Oct2015.sql.
 media_term:
   preferred_term: MediaDB Medium 473
   term:
     id: MEDIADB:473
-    label: '''McN Medium (Whitman'
+    label: McN Medium (Whitman)
 notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
   Reference: https://mediadb.systemsbiology.net/
 

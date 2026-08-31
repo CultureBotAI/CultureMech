@@ -1,7 +1,7 @@
 id: CultureMech:007112
 name: spizizens_medium_trace_elements_amino_acids_sln_1_glucose_1_pyruvate_nakano_et_al_n
 original_name: Spizizen's medium + trace elements + amino acids sln + 1% glucose +
-  1% pyruvate; Nakano et al','N
+  1% pyruvate; Nakano et al
 category: bacterial
 medium_type: DEFINED
 composition_type: DEFINED
@@ -264,7 +264,7 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:53258
     label: sodium citrate
-- preferred_term: '''Iron(III'
+- preferred_term: Iron(III) chloride
   concentration:
     value: '0.04994'
     unit: MILLIMOLAR
@@ -333,12 +333,24 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 3 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-08-31T04:07:11.253931+00:00'
+  curator: repair_mediadb_names.py
+  action: REPAIRED_MEDIADB_TRUNCATED_NAME
+  notes: Restored 1 ingredient name(s) truncated at a parenthesis by the MediaDB SQL
+    parser. Resolved against MEDIADB:218's own compound list in media_database.07Oct2015.sql,
+    requiring a unique prefix match and, where more than one matched, an equal Amount_mM.
+- timestamp: '2026-08-31T06:27:07.242195+00:00'
+  curator: repair_mediadb_names.py
+  action: REPAIRED_MEDIADB_TRUNCATED_NAME
+  notes: Restored the medium's own name in media_term.term.label, original_name. The
+    MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
+    recovered from media_database.07Oct2015.sql.
 media_term:
   preferred_term: MediaDB Medium 218
   term:
     id: MEDIADB:218
     label: Spizizen's medium + trace elements + amino acids sln + 1% glucose + 1%
-      pyruvate; Nakano et al','N
+      pyruvate; Nakano et al
 notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
   Reference: https://mediadb.systemsbiology.net/'
 applications:

@@ -1,6 +1,6 @@
 id: CultureMech:007224
 name: chemically_defined_fermentation_medium_70g_glucose_12_5g_msg
-original_name: '''Chemically Defined Fermentation Medium (70g glucose + 12.5g MSG'
+original_name: Chemically Defined Fermentation Medium (70g glucose + 12.5g MSG)
 category: bacterial
 medium_type: DEFINED
 composition_type: DEFINED
@@ -148,11 +148,17 @@ curation_history:
   notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-08-31T06:17:23.533137+00:00'
+  curator: repair_mediadb_names.py
+  action: REPAIRED_MEDIADB_TRUNCATED_NAME
+  notes: Restored the medium's own name in media_term.term.label, original_name. The
+    MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
+    recovered from media_database.07Oct2015.sql.
 media_term:
   preferred_term: MediaDB Medium 325
   term:
     id: MEDIADB:325
-    label: '''Chemically Defined Fermentation Medium (70g glucose + 12.5g MSG'
+    label: Chemically Defined Fermentation Medium (70g glucose + 12.5g MSG)
 notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
   Reference: https://mediadb.systemsbiology.net/'
 applications:

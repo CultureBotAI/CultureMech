@@ -1,6 +1,6 @@
 id: CultureMech:007019
 name: glucose_m9_medium_peng_zhao
-original_name: '''glucose m9 medium (peng/zhao'
+original_name: glucose m9 medium (peng/zhao)
 category: bacterial
 medium_type: DEFINED
 composition_type: DEFINED
@@ -102,7 +102,7 @@ ingredients:
   term:
     id: CHEBI:49553
     label: copper(II) chloride
-- preferred_term: '''Iron(III'
+- preferred_term: Iron(III) chloride
   concentration:
     value: '0.06165'
     unit: MILLIMOLAR
@@ -153,11 +153,23 @@ curation_history:
   action: Adopted MIM published grounding
   notes: Grounded 1 ingredient(s) from MIM's ingredient_mappings.sssom.tsv (2026-08-18),
     exactMatch only, where this record carried no CHEBI term (#308).
+- timestamp: '2026-08-31T04:06:21.338604+00:00'
+  curator: repair_mediadb_names.py
+  action: REPAIRED_MEDIADB_TRUNCATED_NAME
+  notes: Restored 1 ingredient name(s) truncated at a parenthesis by the MediaDB SQL
+    parser. Resolved against MEDIADB:130's own compound list in media_database.07Oct2015.sql,
+    requiring a unique prefix match and, where more than one matched, an equal Amount_mM.
+- timestamp: '2026-08-31T06:17:32.820627+00:00'
+  curator: repair_mediadb_names.py
+  action: REPAIRED_MEDIADB_TRUNCATED_NAME
+  notes: Restored the medium's own name in media_term.term.label, original_name. The
+    MediaDB SQL parser truncated every value containing a parenthesis at that parenthesis;
+    recovered from media_database.07Oct2015.sql.
 media_term:
   preferred_term: MediaDB Medium 130
   term:
     id: MEDIADB:130
-    label: '''glucose m9 medium (peng/zhao'
+    label: glucose m9 medium (peng/zhao)
 notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
   Reference: https://mediadb.systemsbiology.net/'
 applications:

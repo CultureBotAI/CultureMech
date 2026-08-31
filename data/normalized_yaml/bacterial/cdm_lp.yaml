@@ -384,7 +384,7 @@ ingredients:
     value: 1e-05
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:avite1'
-- preferred_term: '''Cyanocob(III'
+- preferred_term: Cyanocob(III)alamin
   concentration:
     value: '0.004'
     unit: MILLIMOLAR
@@ -640,6 +640,12 @@ curation_history:
   action: RESTORED_CORRUPT_SOURCE_COMPOUND
   notes: Restored C00002 as ATP (CHEBI:15422) from the MediaDB row sequence; resolves
     the 2026-08-24 EMPTY_INGREDIENT_NAME review finding.
+- timestamp: '2026-08-31T04:06:11.218057+00:00'
+  curator: repair_mediadb_names.py
+  action: REPAIRED_MEDIADB_TRUNCATED_NAME
+  notes: Restored 1 ingredient name(s) truncated at a parenthesis by the MediaDB SQL
+    parser. Resolved against MEDIADB:33's own compound list in media_database.07Oct2015.sql,
+    requiring a unique prefix match and, where more than one matched, an equal Amount_mM.
 media_term:
   preferred_term: MediaDB Medium 33
   term:
