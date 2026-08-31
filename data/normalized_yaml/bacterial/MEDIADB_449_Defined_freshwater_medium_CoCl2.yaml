@@ -101,7 +101,7 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:17836
     label: 4-aminobenzoate
-- preferred_term: '''Fe(III'
+- preferred_term: Fe(III)dicitrate
   concentration:
     value: '20.0'
     unit: MILLIMOLAR
@@ -322,11 +322,23 @@ curation_history:
 - timestamp: '2026-06-08T23:19:29.374315+00:00'
   curator: chebi-regrounding-v1.0
   action: Corrected CHEBI ingredient grounding (shared-id regrounding audit, G21/G22/G24)
-  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more ingredient groundings on this record that had been collapsed onto a chemically non-specific or shared CHEBI id were re-grounded to the correct chemically-specific term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
+  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more
+    ingredient groundings on this record that had been collapsed onto a chemically
+    non-specific or shared CHEBI id were re-grounded to the correct chemically-specific
+    term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
 - timestamp: '2026-06-09T01:42:16.202168+00:00'
   curator: chebi-regrounding-v1.0
   action: Corrected CHEBI ingredient grounding (shared-id regrounding audit, G21/G22/G24)
-  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more ingredient groundings on this record that had been collapsed onto a chemically non-specific or shared CHEBI id were re-grounded to the correct chemically-specific term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
+  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more
+    ingredient groundings on this record that had been collapsed onto a chemically
+    non-specific or shared CHEBI id were re-grounded to the correct chemically-specific
+    term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
+- timestamp: '2026-08-31T04:05:55.793474+00:00'
+  curator: repair_mediadb_names.py
+  action: REPAIRED_MEDIADB_TRUNCATED_NAME
+  notes: Restored 1 ingredient name(s) truncated at a parenthesis by the MediaDB SQL
+    parser. Resolved against MEDIADB:449's own compound list in media_database.07Oct2015.sql,
+    requiring a unique prefix match and, where more than one matched, an equal Amount_mM.
 media_term:
   preferred_term: MediaDB Medium 449
   term:

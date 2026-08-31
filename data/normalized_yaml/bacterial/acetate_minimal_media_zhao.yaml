@@ -106,7 +106,7 @@ ingredients:
   term:
     id: CHEBI:49553
     label: copper(II) chloride
-- preferred_term: '''Iron(III'
+- preferred_term: Iron(III) chloride
   concentration:
     value: '0.06165'
     unit: MILLIMOLAR
@@ -152,6 +152,12 @@ curation_history:
   notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-08-31T04:06:06.983360+00:00'
+  curator: repair_mediadb_names.py
+  action: REPAIRED_MEDIADB_TRUNCATED_NAME
+  notes: Restored 1 ingredient name(s) truncated at a parenthesis by the MediaDB SQL
+    parser. Resolved against MEDIADB:129's own compound list in media_database.07Oct2015.sql,
+    requiring a unique prefix match and, where more than one matched, an equal Amount_mM.
 media_term:
   preferred_term: MediaDB Medium 129
   term:

@@ -6,7 +6,7 @@ medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: '''(9Z'
+- preferred_term: (9Z)-Octadecenoic acid
   concentration:
     value: '111.0'
     unit: MILLIMOLAR
@@ -137,6 +137,12 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-08-31T04:06:16.840917+00:00'
+  curator: repair_mediadb_names.py
+  action: REPAIRED_MEDIADB_TRUNCATED_NAME
+  notes: Restored 1 ingredient name(s) truncated at a parenthesis by the MediaDB SQL
+    parser. Resolved against MEDIADB:362's own compound list in media_database.07Oct2015.sql,
+    requiring a unique prefix match and, where more than one matched, an equal Amount_mM.
 media_term:
   preferred_term: MediaDB Medium 362
   term:
