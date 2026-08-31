@@ -124,11 +124,17 @@ deep-research-provider provider focus="growth_evidence" *args="":
 # job is LITERATURE (PaperQA3). Pass `--job literature-high` etc. via
 # *args. Requires EDISON_PLATFORM_API_KEY (or EDISON_API_KEY) in env
 # or .env. See scripts/research_media_edison.py for details.
-# Media research via the local Codex CLI (#284). Needs `codex` on PATH and
-# web_search enabled in ~/.codex/config.toml; both are checked before it runs.
+# Media research via the canonical native Codex contract: explicit `--search`,
+# read-only/ephemeral execution, schema output, local validation, atomic publish.
 [group('Research')]
 research-media-codex target *args="":
     uv run --extra dev python scripts/research_media_codex.py --target {{target}} {{args}}
+
+# Non-billing canaries. OpenScientist validates name:secret and provider
+# discovery but deliberately does not submit a hosted research job.
+[group('Research')]
+deep-research-canary provider="all" *args="":
+    uv run --extra dev python scripts/deep_research_contract.py {{provider}} {{args}}
 
 [group('Research')]
 research-media-edison target *args="":

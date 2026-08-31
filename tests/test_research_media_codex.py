@@ -14,9 +14,7 @@ import pytest
 REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO / "scripts"))
 
-from research_media_codex import (  # noqa: E402
-    PREAMBLE, build_prompt, preflight, source_count,
-)
+from research_media_codex import PREAMBLE, build_prompt, preflight, source_count  # noqa: E402
 
 
 def test_placeholders_are_actually_filled(tmp_path):
@@ -46,8 +44,9 @@ def test_the_preamble_demands_web_search_and_urls():
 
 
 def test_source_count_is_distinct_urls_not_mentions():
-    text = ("see https://example.org/a and https://example.org/a again, "
-            "plus https://example.org/b).")
+    text = (
+        "see https://example.org/a and https://example.org/a again, " "plus https://example.org/b)."
+    )
     assert source_count(text) == 2
     assert source_count("no links here") == 0
     assert source_count("") == 0
