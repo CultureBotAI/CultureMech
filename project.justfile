@@ -427,6 +427,23 @@ audit-concentration-plausibility *args="":
 #                          #283 shape, where ucm.yaml lists eight ingredients
 #                          twice at 1000x/100x apart. Invisible to the three
 #                          above, which all key off the merge note.
+# Ingredient rows the KGX export drops for want of an identity (#372). The
+# export mints an edge only when the ingredient resolves and counts nothing it
+# discards, so the node/edge totals read as complete when they are not.
+#
+# Baselined on distinct NAMES, not rows: one grounding decision fixes every row
+# carrying a name, so the name count is the size of the work and the row count
+# is the size of the loss. 3,217 names / 14,793 rows today.
+#
+# The classification matters more than the total. Only 5,047 of those rows are
+# UNRESOLVED_CHEMICAL; the rest are one PLACEHOLDER string (4,775 rows),
+# SOLUTION_NAME (3,225) and CROSS_REFERENCE (1,746), none of which wants a
+# ChEBI id. See the issue before "fixing" this by emitting them.
+[group('Audit')]
+audit-ungrounded-ingredients *args="":
+    uv run --extra dev python scripts/audit_ungrounded_ingredients.py \
+        --max-names 3217 {{args}}
+
 [group('Audit')]
 audit-merged-duplicates *args="":
     uv run --extra dev python scripts/audit_merged_duplicates.py \
