@@ -36,52 +36,34 @@ on:
 permissions:
   contents: read
 
+# This job's body now lives in claw as a reusable workflow shared across the
+# fleet (culturebotai-claw#180, Phase 5). TraitMech was the canary and
+# MediaIngredientMech the second adopter; both passed on main before this.
+#
+# What stays here is what is CultureMech's: the trigger filter above, scoped to
+# this corpus, and the inputs below.
 jobs:
   label-drift-report:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: extractions/setup-just@v3
-      - uses: astral-sh/setup-uv@v3
-        with:
-          enable-cache: true
-      - name: Set up Python
-        run: uv python install 3.12
-      - name: Install dependencies
-        run: uv sync --frozen
-
-      # Cache OAK sqlite ontologies (CHEBI/NCBITaxon/ENVO/NCIT/...) across runs.
-      - name: Cache OAK ontologies
-        uses: actions/cache@v4
-        with:
-          path: ~/.data/oaklib
-          key: oaklib-${{ runner.os }}-v1
-
-      # The unfiltered vendored-sync workflow independently checks every governed
-      # artifact against the immutable culturebotai-claw manifest pin. This job
-      # remains focused on the validator's corpus behavior.
-
-      # Build the SSSOM product so the `required: true` sssom target is satisfied
-      # (output/ is gitignored, so it is never checked in). The generator resolves
-      # canonical object labels via OAK, so the product is drift-free by construction.
-      - name: Build SSSOM product
-        run: just generate-sssom
-
-      # Phase-2 blocking gate: fail the build on any ERROR-class id↔label verdict.
-      # Single validator pass (the full corpus + OAK load is the expensive part).
-      - name: Enforce id↔label correspondence (Engine B)
-        run: just validate-products
-
-      # On FAILURE only, regenerate + upload the drift report so failures are
-      # triageable without paying the second validator pass on every green run.
-      - name: Generate id↔label drift report (on failure)
-        if: failure()
-        run: just report-label-drift
-
-      - name: Upload drift report (on failure)
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: label-drift-report-${{ github.run_id }}
-          path: reports/label_drift.tsv
-          if-no-files-found: warn
+    # Pinned to a claw commit, not a branch: a moving ref would change this
+    # gate with no commit in this repository to show for it. This ref is the
+    # first that carries `report-when` (culturebotai-claw#300).
+    uses: CultureBotAI/culturebotai-claw/.github/workflows/label-correspondence-reusable.yaml@b61decd96352838f09cd7fee031905784b0df058
+    with:
+      python-version: "3.12"
+      # output/ is gitignored, so the SSSOM product the `required: true` sssom
+      # target reads has to be built before the gate runs.
+      prepare-recipe: "generate-sssom"
+      # `--frozen` refuses to update the lockfile in CI. Not a default in the
+      # reusable workflow; dropping it here would quietly remove a hardening
+      # this repository has.
+      uv-sync-args: "--frozen"
+      # Report only when the gate fails. `report-label-drift` is a SECOND full
+      # validator pass over the same corpus, and the enforce step alone is
+      # 6m14s of an ~11m50s run here -- reporting unconditionally would add
+      # about half again to every green PR. The reusable workflow's default is
+      # `always`, which suits Mechs whose pass is cheap; this one is not
+      # (culturebotai-claw#299).
+      report-when: "failure"
+      # report-label-drift / validate-products / reports/label_drift.tsv are
+      # the reusable workflow's defaults and match what ran here before, so
+      # they are left unstated rather than restated.
