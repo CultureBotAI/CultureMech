@@ -45,6 +45,7 @@ data/import_tracking/reports/primary_term_reground_changes.tsv	UNKNOWN	no writer
 data/import_tracking/reports/review_need_ranking.tsv	CURRENT_VIEW	score_review_need.py	scripts/score_review_need.py	scripts/score_review_need.py	yes
 data/import_tracking/reports/selective_agent_mismatch.tsv	CURRENT_VIEW	audit_selective_agent_mismatch.py	scripts/audit_selective_agent_mismatch.py	scripts/audit_selective_agent_mismatch.py	yes
 data/import_tracking/reports/top5-curation-proposals.json	UNKNOWN	writer purity unestablished (apply_curation_proposals.py)		scripts/apply_curation_proposals.py	
+data/import_tracking/reports/ungrounded_ingredients.tsv	CURRENT_VIEW	audit_ungrounded_ingredients.py	scripts/audit_ungrounded_ingredients.py	scripts/audit_ungrounded_ingredients.py	
 data/import_tracking/reports/unparsed_composition.tsv	CURRENT_VIEW	audit_unparsed_composition.py	scripts/audit_unparsed_composition.py	scripts/audit_unparsed_composition.py	yes
 data/import_tracking/reports/unparsed_compositions.tsv	CURRENT_VIEW	report_unparsed_compositions.py	scripts/report_unparsed_compositions.py	scripts/report_unparsed_compositions.py	yes
 data/import_tracking/researched_media.json	CURRENT_VIEW	prioritize_deep_research_candidates.py		scripts/prioritize_deep_research_candidates.py; scripts/refresh_researched_manifest.py; scripts/researched_manifest.py	
