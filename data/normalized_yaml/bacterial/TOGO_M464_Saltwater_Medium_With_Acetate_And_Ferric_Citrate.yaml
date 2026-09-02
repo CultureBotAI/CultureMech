@@ -12,10 +12,10 @@ ingredients:
     unit: G_PER_L
 - preferred_term: L--cysteine・HCl
   concentration:
-    value: '1.0'
+    value: '0.5'
     unit: G_PER_L
-  notes: 'Properties: Organic compound, Simple component, Defined component [Merged
-    2 duplicates: 0.5, 0.5]'
+  notes: 'Properties: Organic compound, Simple component, Defined component [Collapsed
+    2 identical duplicates: 0.5, 0.5]'
 - preferred_term: Distilled water
   concentration:
     value: '1141.3'
@@ -257,6 +257,13 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-02T07:37:49.830655+00:00'
+  curator: repair_merged_duplicates.py
+  action: REPAIRED_SUMMED_DUPLICATE_MERGE
+  notes: Collapsed 1 ingredient row(s) whose concentration was the SUM of identical
+    duplicate values written by cleanup_media_quality.py. Every merged part was the
+    same value, so the pre-merge value is unambiguous and no source lookup was needed.
+    Rows whose merged parts differ were left untouched.
 solutions:
 - preferred_term: sodium acetate solution
   composition: []

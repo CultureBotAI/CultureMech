@@ -226,7 +226,7 @@ archaea/TOGO_M485_Modified_Methanocaldococcus_Medium.yaml	CultureMech:009872	1	0
 archaea/TOGO_M507_Ignisphaera_Medium.yaml	CultureMech:009897	2	0	1	1	yes	no
 archaea/TOGO_M508_Methanocella_Medium.yaml	CultureMech:009898	1	0	0	1	yes	no
 archaea/TOGO_M514_Caldococcus_Medium.yaml	CultureMech:009905	4	0	3	1	yes	no
-archaea/TOGO_M526_Acidianus_SP._JP7_Medium.yaml	CultureMech:009918	3	1	2	0	no	no
+archaea/TOGO_M526_Acidianus_SP._JP7_Medium.yaml	CultureMech:009918	2	0	2	0	no	no
 archaea/TOGO_M527_Norris_Ferroplasma_Medium.yaml	CultureMech:009919	1	0	1	0	no	no
 archaea/TOGO_M576_Modified_Halobacteria_Medium.yaml	CultureMech:009972	1	0	1	0	yes	no
 archaea/TOGO_M598_Modified_9K_Medium_For_Ferroplasma_Aeolicum.yaml	CultureMech:009995	1	0	1	0	yes	no
@@ -861,7 +861,6 @@ bacterial/TOGO_M1143_Vulcanibacillus_B5_Medium.yaml	CultureMech:007666	1	0	0	1	y
 bacterial/TOGO_M1145_Alkaliphilus_Lact_Medium.yaml	CultureMech:007668	1	0	0	1	yes	no
 bacterial/TOGO_M1146_Alkaliphilus_LACV_Medium.yaml	CultureMech:007669	1	0	0	1	yes	no
 bacterial/TOGO_M1147_Alkaliphilus_3B_Medium.yaml	CultureMech:007670	1	0	0	1	yes	no
-bacterial/TOGO_M114_Acidomonas_Medium.yaml	CultureMech:007673	1	1	0	0	yes	no
 bacterial/TOGO_M1153_Thiobacillus_Prosperus_Medium.yaml	CultureMech:007677	2	0	2	0	yes	no
 bacterial/TOGO_M1154_Anaerobacter_Medium.yaml	CultureMech:007678	1	0	0	1	yes	no
 bacterial/TOGO_M1158_0.3_x_Hyphomicrobium_Medium.yaml	CultureMech:007681	5	0	0	5	yes	no
@@ -925,8 +924,6 @@ bacterial/TOGO_M1296_Halanaerobium_Hydrogeniformans_Medium.yaml	CultureMech:0078
 bacterial/TOGO_M1297_Marinitoga_Hydrogenitolerans_Medium.yaml	CultureMech:007830	1	0	0	1	yes	no
 bacterial/TOGO_M1299_Modified_Makkar_s_Medium_C.yaml	CultureMech:007832	1	0	0	1	yes	no
 bacterial/TOGO_M1300_PYG_Medium_J_Modified.yaml	CultureMech:007835	1	0	0	1	yes	no
-bacterial/TOGO_M1302_Modified_Haloalkaliphile_Medium.yaml	CultureMech:007837	1	1	0	0	yes	no
-bacterial/TOGO_M1303_Modified_Haloalkaliphile_Medium.yaml	CultureMech:007838	1	1	0	0	yes	no
 bacterial/TOGO_M1312_Modified_Nitrate_Mineral_Salts_Medium-2.yaml	CultureMech:007848	1	0	0	1	yes	no
 bacterial/TOGO_M1315_Widdel_Freshwater_Medium_With_Lactate.yaml	CultureMech:007851	1	0	0	1	yes	no
 bacterial/TOGO_M1316_Widdel_Freshwater_Medium_With_Glycerin.yaml	CultureMech:007852	1	0	0	1	yes	no
@@ -981,7 +978,6 @@ bacterial/TOGO_M1695_Sulfur-oxidizing_bacteria_Medium.yaml	CultureMech:008255	8	
 bacterial/TOGO_M1704_GS_medium.yaml	CultureMech:008266	10	0	0	10	yes	no
 bacterial/TOGO_M1707_Casamino_acids-peptone-Czapek_s_agar.yaml	CultureMech:008269	1	0	1	0	no	no
 bacterial/TOGO_M1714_Oceanithermus_profundus_medium.yaml	CultureMech:008277	7	0	0	7	yes	no
-bacterial/TOGO_M1739_YSG_Medium.yaml	CultureMech:008301	1	1	0	0	yes	no
 bacterial/TOGO_M1762_Thermus_Medium.yaml	CultureMech:008327	1	0	1	0	yes	no
 bacterial/TOGO_M1766_Clostridium_thermocellum_Medium_D58_Medium.yaml	CultureMech:008331	2	0	1	1	no	no
 bacterial/TOGO_M1767_S6_Medium.yaml	CultureMech:008332	2	0	2	0	yes	no
@@ -1034,7 +1030,6 @@ bacterial/TOGO_M2191_Trypticase_Soy_Yeast_Extract_Medium.yaml	CultureMech:008784
 bacterial/TOGO_M2192_Nutrient_Agar_Broth.yaml	CultureMech:008785	1	1	0	0	no	no
 bacterial/TOGO_M2193_Nutrient_Agar_Broth.yaml	CultureMech:008786	1	1	0	0	no	no
 bacterial/TOGO_M2199_LB_Agar_Broth_Miller.yaml	CultureMech:008791	1	1	0	0	no	no
-bacterial/TOGO_M2207_GC_Agar_Broth_Medium.yaml	CultureMech:008799	1	1	0	0	yes	no
 bacterial/TOGO_M2228_Friis_medium.yaml	CultureMech:008816	1	1	0	0	yes	no
 bacterial/TOGO_M2232_Anaerolinea_Medium.yaml	CultureMech:008821	20	1	10	9	yes	no
 bacterial/TOGO_M2243_Half_Strength_Bacto_Marine_Broth.yaml	CultureMech:008832	2	1	1	0	no	no
@@ -1211,11 +1206,7 @@ bacterial/TOGO_M290_EGGC_Medium.yaml	CultureMech:009446	7	0	0	7	yes	no
 bacterial/TOGO_M294_RC_Medium.yaml	CultureMech:009476	1	0	0	1	no	no
 bacterial/TOGO_M296_Thermodesulfobacterium_Hydrogenophilum_Medium.yaml	CultureMech:009492	1	0	0	1	yes	no
 bacterial/TOGO_M298_PE_Medium.yaml	CultureMech:009509	12	0	6	6	yes	no
-bacterial/TOGO_M2997_Acidiphilium_Medium.yaml	CultureMech:009513	1	1	0	0	yes	no
-bacterial/TOGO_M2998_Acidiphilium_Medium.yaml	CultureMech:009514	1	1	0	0	yes	no
-bacterial/TOGO_M2999_Acidobacterium_Medium.yaml	CultureMech:009515	1	1	0	0	yes	no
 bacterial/TOGO_M2_Xylose-YP_Broth.yaml	CultureMech:009518	2	0	2	0	no	no
-bacterial/TOGO_M3000_Acidobacterium_Medium.yaml	CultureMech:009519	1	1	0	0	yes	no
 bacterial/TOGO_M3015_Sulfuriflexus_Medium.yaml	CultureMech:009531	2	0	2	0	yes	no
 bacterial/TOGO_M3030_Ectothiorhodospira_Abdelmalekii_Medium.yaml	CultureMech:009542	1	1	0	0	yes	no
 bacterial/TOGO_M3032_Chloroflexus_Aggregans_Medium.yaml	CultureMech:009544	8	1	0	7	yes	no
@@ -1369,7 +1360,6 @@ bacterial/TOGO_M582_Desulfatirhabdium_Butyrativorans_Medium.yaml	CultureMech:009
 bacterial/TOGO_M585_Rhodobacter_Sphaeroides_Medium.yaml	CultureMech:009981	7	0	7	0	yes	no
 bacterial/TOGO_M593_Modified_Rhodobacter_Spaeroides_Medium.yaml	CultureMech:009990	7	0	7	0	yes	no
 bacterial/TOGO_M595_A-MMX_Medium.yaml	CultureMech:009992	1	0	0	1	yes	no
-bacterial/TOGO_M596_Half_Strength_Trypticase_Soy_Broth_Agar_pH_4.0.yaml	CultureMech:009993	1	1	0	0	yes	no
 bacterial/TOGO_M597_Modified_MMJS_Medium_B.yaml	CultureMech:009994	2	0	2	0	yes	no
 bacterial/TOGO_M599_Alicycliphilus_Denitrificans_Medium.yaml	CultureMech:009996	1	1	0	0	yes	no
 bacterial/TOGO_M600_Alicycliphilus_Denitrificans_Medium.yaml	CultureMech:009999	1	1	0	0	yes	no
@@ -1520,7 +1510,6 @@ bacterial/TOGO_M930_Metallibacterium_Medium.yaml	CultureMech:010352	1	0	1	0	yes	
 bacterial/TOGO_M933_MMJYP2_For_AC55.yaml	CultureMech:010355	2	0	2	0	yes	no
 bacterial/TOGO_M934_Mbbs_Medium_For_Hydrogenobacter.yaml	CultureMech:010356	3	0	3	0	yes	no
 bacterial/TOGO_M939_Syphc_Medium.yaml	CultureMech:010361	5	0	0	5	yes	no
-bacterial/TOGO_M93_Bacillus_Acidocaldarius_Medium.yaml	CultureMech:010362	1	1	0	0	yes	no
 bacterial/TOGO_M940_Thermobacter_Roseum_Medium.yaml	CultureMech:010363	16	0	8	8	yes	no
 bacterial/TOGO_M941_M13a_Medium.yaml	CultureMech:010364	8	1	1	6	yes	no
 bacterial/TOGO_M944_Thiomicrospira_V2501_Medium.yaml	CultureMech:010367	8	0	2	6	yes	no
@@ -1537,7 +1526,6 @@ bacterial/TOGO_M982_LX-D_Medium.yaml	CultureMech:010409	1	0	0	1	yes	no
 bacterial/TOGO_M983_IRD_Alkaliphilus_Medium.yaml	CultureMech:010410	1	0	0	1	yes	no
 bacterial/TOGO_M987_Aminivibrio_Asinoensis_Medium.yaml	CultureMech:010414	4	0	0	4	yes	no
 bacterial/TOGO_M988_Sulfurimonas_Hongkongensis_Medium.yaml	CultureMech:010415	1	1	0	0	yes	no
-bacterial/TOGO_M98_Half_Strength_Skim_Milk_Agar.yaml	CultureMech:010417	1	1	0	0	yes	no
 bacterial/TOGO_M994_Caldicellulosiruptor_Medium_With_2.5_NaCl.yaml	CultureMech:010422	2	0	1	1	yes	no
 bacterial/TOGO_M997_NH-JN4_Medium.yaml	CultureMech:010425	1	0	0	1	yes	no
 bacterial/TOGO_M998_C41_Medium.yaml	CultureMech:010426	2	0	1	1	yes	no
@@ -1590,8 +1578,6 @@ bacterial/ajs.yaml	CultureMech:000338	2	0	2	0	no	no
 bacterial/alcalilimnicola_ehrlichii_mhle_1_medium.yaml	CultureMech:000923	1	0	1	0	no	no
 bacterial/alicycliphilus_denitrificans_medium.yaml	CultureMech:002942	4	0	1	3	no	yes
 bacterial/alicyclobacillus_ferrooxydans_medium.yaml	CultureMech:000651	1	0	1	0	no	no
-bacterial/alkali_a_medium.yaml	CultureMech:008366	1	1	0	0	yes	no
-bacterial/alkali_b_medium.yaml	CultureMech:008367	1	1	0	0	yes	no
 bacterial/alkalic_mrs_ph_8_5_3_nacl.yaml	CultureMech:008441	1	1	0	0	yes	no
 bacterial/alkaline_malt_extract_agar.yaml	CultureMech:007924	1	1	0	0	yes	no
 bacterial/alkaline_nutrient_agar_for_sporulation.yaml	CultureMech:009004	2	1	1	0	yes	no
@@ -1730,7 +1716,6 @@ bacterial/bsw3_agar.yaml	CultureMech:002385	1	1	0	0	no	no
 bacterial/bt_medium.yaml	CultureMech:006540	1	0	1	0	no	no
 bacterial/bw_masm.yaml	CultureMech:000326	2	0	0	2	no	no
 bacterial/by_medium.yaml	CultureMech:009522	1	0	0	1	yes	no
-bacterial/byg_medium_for_acidiphilium_multivorum.yaml	CultureMech:008199	1	1	0	0	yes	no
 bacterial/c41_medium.yaml	CultureMech:003299	1	0	1	0	no	no
 bacterial/c_medium_modified.yaml	CultureMech:000328	2	0	0	2	no	no
 bacterial/caenicola_mobile_medium.yaml	CultureMech:002346	1	0	1	0	no	no
@@ -2253,7 +2238,6 @@ bacterial/gallionella_es_medium.yaml	CultureMech:000729	5	0	4	1	no	yes
 bacterial/gbs_salts_medium_for_rhodothermus.yaml	CultureMech:002432	1	0	1	0	no	no
 bacterial/gbs_salts_medium_for_thermanaeromonas_inyoensis.yaml	CultureMech:002431	1	0	1	0	no	no
 bacterial/gbs_salts_modified_for_thermocrinis_jamiesonii.yaml	CultureMech:000953	1	0	1	0	no	no
-bacterial/gc_agar_broth_medium.yaml	CultureMech:008798	1	1	0	0	yes	no
 bacterial/gelidivirgula_medium.yaml	CultureMech:002737	1	0	1	0	no	no
 bacterial/geoalkalibacter_medium.yaml	CultureMech:000491	1	0	1	0	no	no
 bacterial/geoalkalibacter_subterraneus_medium.yaml	CultureMech:000708	1	0	1	0	no	no
@@ -2695,7 +2679,6 @@ bacterial/medium_dh.yaml	CultureMech:008830	3	2	1	0	yes	no
 bacterial/medium_e_2.yaml	CultureMech:001831	1	1	0	0	no	no
 bacterial/medium_for_acidithiobacillus_ferrooxidans.yaml	CultureMech:008660	1	0	1	0	yes	no
 bacterial/medium_for_aerobic_growth_of_strain_sk43h.yaml	CultureMech:008470	17	1	10	6	yes	no
-bacterial/medium_for_alicyclobacillus_acidiphilus.yaml	CultureMech:008218	1	1	0	0	yes	no
 bacterial/medium_for_arhodomonas_and_marinobacter.yaml	CultureMech:002117	1	0	1	0	no	no
 bacterial/medium_for_campylobacter_dsm_806.yaml	CultureMech:003971	1	0	1	0	no	no
 bacterial/medium_for_carbon_dioxide_reducers.yaml	CultureMech:006792	1	0	0	1	no	no
@@ -3139,7 +3122,6 @@ bacterial/sbbm.yaml	CultureMech:000403	4	0	2	2	no	no
 bacterial/schlesneria_paludicola_medium.yaml	CultureMech:000703	1	0	1	0	no	no
 bacterial/sea_salts_yeast_extract_glucose_medium.yaml	CultureMech:007654	1	0	0	1	no	no
 bacterial/sea_salts_ytg_medium.yaml	CultureMech:002466	1	0	1	0	no	no
-bacterial/sea_water_yeast_peptone_medium.yaml	CultureMech:006887	1	1	0	0	no	no
 bacterial/seawater_medium.yaml	CultureMech:001225	1	1	0	0	no	no
 bacterial/seawater_pyruvate_thiosulfate_medium.yaml	CultureMech:002276	1	0	1	0	no	no
 bacterial/sedimentibacter_acidaminivorans_medium.yaml	CultureMech:001097	2	0	1	1	no	no
@@ -3370,13 +3352,11 @@ bacterial/togo_medium_m1515.yaml	CultureMech:008060	1	0	1	0	yes	no
 bacterial/togo_medium_m1516.yaml	CultureMech:008061	1	0	1	0	yes	no
 bacterial/togo_medium_m1518.yaml	CultureMech:008063	1	0	1	0	yes	no
 bacterial/togo_medium_m1519.yaml	CultureMech:008064	1	0	1	0	yes	no
-bacterial/togo_medium_m1532.yaml	CultureMech:008079	1	1	0	0	yes	no
 bacterial/togo_medium_m1560.yaml	CultureMech:008109	9	0	5	4	yes	no
 bacterial/togo_medium_m1566.yaml	CultureMech:008114	1	0	1	0	no	no
 bacterial/togo_medium_m158.yaml	CultureMech:008140	1	1	0	0	yes	no
 bacterial/togo_medium_m1609.yaml	CultureMech:008162	10	0	1	9	yes	no
 bacterial/togo_medium_m1611.yaml	CultureMech:008165	1	0	0	1	yes	no
-bacterial/togo_medium_m1689.yaml	CultureMech:008248	1	1	0	0	yes	no
 bacterial/togo_medium_m1728.yaml	CultureMech:008291	2	0	2	0	no	no
 bacterial/togo_medium_m1757.yaml	CultureMech:008321	7	0	0	7	yes	no
 bacterial/togo_medium_m1779.yaml	CultureMech:008345	3	0	0	3	yes	no
@@ -3415,7 +3395,6 @@ bacterial/togo_medium_m3153.yaml	CultureMech:009616	8	0	0	8	yes	no
 bacterial/togo_medium_m3164.yaml	CultureMech:009622	14	0	6	8	yes	no
 bacterial/togo_medium_m3252.yaml	CultureMech:009684	1	0	1	0	no	no
 bacterial/togo_medium_m619.yaml	CultureMech:010018	1	0	1	0	yes	no
-bacterial/togo_medium_m633.yaml	CultureMech:010033	1	1	0	0	yes	no
 bacterial/togo_medium_m706.yaml	CultureMech:010113	2	0	2	0	no	no
 bacterial/treponema_bryantii_medium.yaml	CultureMech:002370	1	0	0	1	no	no
 bacterial/treponema_caldarium_medium.yaml	CultureMech:009324	18	1	8	9	yes	no
@@ -3461,7 +3440,6 @@ bacterial/woodsholea_medium.yaml	CultureMech:000697	1	0	0	1	no	no
 bacterial/xy_agar.yaml	CultureMech:008349	1	0	0	1	no	no
 bacterial/ycfag_medium.yaml	CultureMech:009194	4	0	0	4	no	yes
 bacterial/yma_medium_modified.yaml	CultureMech:000454	1	0	1	0	no	no
-bacterial/ysg_medium_ph_4_5.yaml	CultureMech:008347	1	1	0	0	yes	no
 bacterial/ytbc_medium.yaml	CultureMech:000812	1	0	0	1	no	no
 bacterial/z45_4_medium_for_cyanobacteria.yaml	CultureMech:001204	2	0	2	0	no	no
 bacterial/zavarzinella_formosa_medium.yaml	CultureMech:000639	1	0	1	0	no	no
@@ -3477,7 +3455,6 @@ fungal/natronoanaeroarchaea_medium_with_yeast_extract_and_formate.yaml	CultureMe
 fungal/natronoanaeroarchaea_medium_with_yeast_extract_and_glucose.yaml	CultureMech:010503	1	0	1	0	no	no
 fungal/natronoarchaea_media_with_yeast_extract_and_lactate.yaml	CultureMech:010501	1	0	1	0	no	no
 fungal/pfennigs_medium_i_with_yeast_extract.yaml	CultureMech:010468	1	0	0	1	no	no
-fungal/sea_water_yeast_peptone_medium.yaml	CultureMech:010483	1	1	0	0	no	no
 fungal/tap_water_yeast_extract_medium_twye.yaml	CultureMech:010456	1	1	0	0	no	no
 fungal/yeast_extract_malt_extract_agar_isp_2_with_artificial_seawater.yaml	CultureMech:010536	1	1	0	0	no	no
 specialized/acetobacterium_medium_marine.yaml	CultureMech:015340	1	0	0	1	no	no

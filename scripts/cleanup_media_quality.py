@@ -11,11 +11,11 @@ Generates detailed report of all changes.
 """
 
 import re
-import yaml
 from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, List, Tuple, Optional
+
+import yaml
 
 
 class MediaQualityFixer:
@@ -23,29 +23,53 @@ class MediaQualityFixer:
 
     # Common pH buffers and their CHEBI IDs
     PH_BUFFERS = {
-        'naoh': {'id': 'CHEBI:32145', 'label': 'sodium hydroxide', 'preferred': 'NaOH'},
-        'sodium hydroxide': {'id': 'CHEBI:32145', 'label': 'sodium hydroxide', 'preferred': 'NaOH'},
-        'hcl': {'id': 'CHEBI:17883', 'label': 'hydrochloric acid', 'preferred': 'HCl'},
-        'hydrochloric acid': {'id': 'CHEBI:17883', 'label': 'hydrochloric acid', 'preferred': 'HCl'},
-        'h2so4': {'id': 'CHEBI:26836', 'label': 'sulfuric acid', 'preferred': 'H2SO4'},
-        'sulfuric acid': {'id': 'CHEBI:26836', 'label': 'sulfuric acid', 'preferred': 'H2SO4'},
-        'koh': {'id': 'CHEBI:32035', 'label': 'potassium hydroxide', 'preferred': 'KOH'},
-        'potassium hydroxide': {'id': 'CHEBI:32035', 'label': 'potassium hydroxide', 'preferred': 'KOH'},
-        'na2co3': {'id': 'CHEBI:29377', 'label': 'sodium carbonate', 'preferred': 'Na2CO3'},
-        'sodium carbonate': {'id': 'CHEBI:29377', 'label': 'sodium carbonate', 'preferred': 'Na2CO3'},
-        'nahco3': {'id': 'CHEBI:32139', 'label': 'sodium hydrogen carbonate', 'preferred': 'NaHCO3'},
-        'sodium bicarbonate': {'id': 'CHEBI:32139', 'label': 'sodium hydrogen carbonate', 'preferred': 'NaHCO3'},
-        'sodium hydrogen carbonate': {'id': 'CHEBI:32139', 'label': 'sodium hydrogen carbonate', 'preferred': 'NaHCO3'},
+        "naoh": {"id": "CHEBI:32145", "label": "sodium hydroxide", "preferred": "NaOH"},
+        "sodium hydroxide": {"id": "CHEBI:32145", "label": "sodium hydroxide", "preferred": "NaOH"},
+        "hcl": {"id": "CHEBI:17883", "label": "hydrochloric acid", "preferred": "HCl"},
+        "hydrochloric acid": {
+            "id": "CHEBI:17883",
+            "label": "hydrochloric acid",
+            "preferred": "HCl",
+        },
+        "h2so4": {"id": "CHEBI:26836", "label": "sulfuric acid", "preferred": "H2SO4"},
+        "sulfuric acid": {"id": "CHEBI:26836", "label": "sulfuric acid", "preferred": "H2SO4"},
+        "koh": {"id": "CHEBI:32035", "label": "potassium hydroxide", "preferred": "KOH"},
+        "potassium hydroxide": {
+            "id": "CHEBI:32035",
+            "label": "potassium hydroxide",
+            "preferred": "KOH",
+        },
+        "na2co3": {"id": "CHEBI:29377", "label": "sodium carbonate", "preferred": "Na2CO3"},
+        "sodium carbonate": {
+            "id": "CHEBI:29377",
+            "label": "sodium carbonate",
+            "preferred": "Na2CO3",
+        },
+        "nahco3": {
+            "id": "CHEBI:32139",
+            "label": "sodium hydrogen carbonate",
+            "preferred": "NaHCO3",
+        },
+        "sodium bicarbonate": {
+            "id": "CHEBI:32139",
+            "label": "sodium hydrogen carbonate",
+            "preferred": "NaHCO3",
+        },
+        "sodium hydrogen carbonate": {
+            "id": "CHEBI:32139",
+            "label": "sodium hydrogen carbonate",
+            "preferred": "NaHCO3",
+        },
     }
 
     def __init__(self):
         self.stats = {
-            'files_processed': 0,
-            'files_modified': 0,
-            'duplicates_merged': 0,
-            'duplicates_flagged': 0,
-            'ph_buffers_added': 0,
-            'errors': []
+            "files_processed": 0,
+            "files_modified": 0,
+            "duplicates_merged": 0,
+            "duplicates_flagged": 0,
+            "ph_buffers_added": 0,
+            "errors": [],
         }
         self.changes_log = []
 
@@ -53,11 +77,11 @@ class MediaQualityFixer:
         """Normalize ingredient name for comparison."""
         name = name.lower().strip()
         # Remove common variations
-        name = re.sub(r'\s+', ' ', name)
-        name = re.sub(r'^(d|l|dl)-', '', name)
+        name = re.sub(r"\s+", " ", name)
+        name = re.sub(r"^(d|l|dl)-", "", name)
         return name
 
-    def extract_ph_buffers_from_notes(self, notes: str) -> List[Dict]:
+    def extract_ph_buffers_from_notes(self, notes: str) -> list[dict]:
         """Extract pH buffers mentioned in notes."""
         if not notes:
             return []
@@ -67,10 +91,10 @@ class MediaQualityFixer:
 
         # Pattern 1: "pH buffer: NaOH" or "pH adjusted with HCl"
         patterns = [
-            r'ph\s+buffer:\s*([a-z0-9]+)',
-            r'ph\s+adjusted\s+with\s+([a-z0-9]+)',
-            r'adjusted\s+to\s+ph\s+[\d.]+\s+with\s+([a-z0-9]+)',
-            r'ph\s+adjustment:\s*([a-z0-9]+)',
+            r"ph\s+buffer:\s*([a-z0-9]+)",
+            r"ph\s+adjusted\s+with\s+([a-z0-9]+)",
+            r"adjusted\s+to\s+ph\s+[\d.]+\s+with\s+([a-z0-9]+)",
+            r"ph\s+adjustment:\s*([a-z0-9]+)",
         ]
 
         for pattern in patterns:
@@ -79,18 +103,17 @@ class MediaQualityFixer:
                 buffer_name = match.group(1).strip()
                 if buffer_name in self.PH_BUFFERS:
                     buffer_info = self.PH_BUFFERS[buffer_name]
-                    buffers.append({
-                        'preferred_term': buffer_info['preferred'],
-                        'term': {
-                            'id': buffer_info['id'],
-                            'label': buffer_info['label']
-                        },
-                        'notes': 'pH adjustment (extracted from notes)'
-                    })
+                    buffers.append(
+                        {
+                            "preferred_term": buffer_info["preferred"],
+                            "term": {"id": buffer_info["id"], "label": buffer_info["label"]},
+                            "notes": "pH adjustment (extracted from notes)",
+                        }
+                    )
 
         return buffers
 
-    def merge_duplicate_ingredients(self, ingredients: List[Dict]) -> Tuple[List[Dict], List[str]]:
+    def merge_duplicate_ingredients(self, ingredients: list[dict]) -> tuple[list[dict], list[str]]:
         """
         Merge duplicate ingredients.
 
@@ -103,13 +126,13 @@ class MediaQualityFixer:
         # Group by normalized name
         groups = defaultdict(list)
         for ing in ingredients:
-            norm_name = self.normalize_name(ing.get('preferred_term', ''))
+            norm_name = self.normalize_name(ing.get("preferred_term", ""))
             groups[norm_name].append(ing)
 
         merged = []
         warnings = []
 
-        for norm_name, group in groups.items():
+        for _norm_name, group in groups.items():
             if len(group) == 1:
                 # No duplicates
                 merged.append(group[0])
@@ -122,7 +145,7 @@ class MediaQualityFixer:
 
         return merged, warnings
 
-    def _merge_ingredient_group(self, group: List[Dict]) -> Tuple[Dict, Optional[str]]:
+    def _merge_ingredient_group(self, group: list[dict]) -> tuple[dict, str | None]:
         """Merge a group of duplicate ingredients."""
         # Use first as base
         base = group[0].copy()
@@ -132,12 +155,12 @@ class MediaQualityFixer:
         units = set()
 
         for ing in group:
-            if 'concentration' in ing and ing['concentration']:
-                conc = ing['concentration']
-                if 'value' in conc and 'unit' in conc:
+            if "concentration" in ing and ing["concentration"]:
+                conc = ing["concentration"]
+                if "value" in conc and "unit" in conc:
                     try:
-                        concentrations.append(float(conc['value']))
-                        units.add(conc['unit'])
+                        concentrations.append(float(conc["value"]))
+                        units.add(conc["unit"])
                     except (ValueError, TypeError):
                         pass
 
@@ -145,22 +168,50 @@ class MediaQualityFixer:
 
         if len(concentrations) > 1:
             if len(units) == 1:
-                # Same unit - sum concentrations
-                total = sum(concentrations)
-                base['concentration'] = {
-                    'value': str(total),
-                    'unit': list(units)[0]
-                }
-                base['notes'] = base.get('notes', '') + f' [Merged {len(group)} duplicates: {", ".join(map(str, concentrations))}]'
-                self.stats['duplicates_merged'] += 1
+                # Do NOT sum (#394). Duplicate rows for one ingredient almost
+                # always mean the importer listed the same addition twice, not
+                # that the medium receives the ingredient twice. Summing turned
+                # a transcription artifact into a fabricated quantity: it wrote
+                # `Agar 50.0 g/L` from `15.0, 15.0, 20.0` in 186 records, and
+                # `Methanol 1584.0 g/L` from `792.0, 792.0` — above the density
+                # of methanol. 4,503 rows corpus-wide carried a summed value.
+                #
+                # When every duplicate agrees, the collapsed value is that
+                # value and nothing is lost. When they disagree, which one the
+                # medium means is a curation question, so the row is flagged
+                # and left for a human rather than resolved by arithmetic.
+                distinct = sorted(set(concentrations))
+                parts = ", ".join(map(str, concentrations))
+                if len(distinct) == 1:
+                    base["concentration"] = {
+                        "value": str(distinct[0]),
+                        "unit": list(units)[0],
+                    }
+                    base["notes"] = base.get("notes", "") + (
+                        f" [Collapsed {len(group)} identical duplicates: {parts}]"
+                    )
+                    self.stats["duplicates_merged"] += 1
+                else:
+                    warning = (
+                        f"Duplicate '{base.get('preferred_term')}' with conflicting "
+                        f"concentrations: {parts}"
+                    )
+                    base["notes"] = base.get("notes", "") + (
+                        f" [WARNING: {len(group)} duplicates disagree: {parts}"
+                        f" — kept the first, needs curation]"
+                    )
+                    self.stats["duplicates_flagged"] += 1
             else:
                 # Different units - flag conflict
                 warning = f"Duplicate '{base.get('preferred_term')}' with different units: {units}"
-                base['notes'] = base.get('notes', '') + f' [WARNING: {len(group)} duplicates with conflicting units]'
-                self.stats['duplicates_flagged'] += 1
+                base["notes"] = (
+                    base.get("notes", "")
+                    + f" [WARNING: {len(group)} duplicates with conflicting units]"
+                )
+                self.stats["duplicates_flagged"] += 1
         elif len(concentrations) == 1:
             # Multiple entries but only one has concentration
-            self.stats['duplicates_merged'] += 1
+            self.stats["duplicates_merged"] += 1
 
         return base, warning
 
@@ -172,18 +223,18 @@ class MediaQualityFixer:
             True if file was modified
         """
         try:
-            with open(yaml_path, 'r') as f:
+            with open(yaml_path) as f:
                 data = yaml.safe_load(f)
 
             if not data:
                 return False
 
-            self.stats['files_processed'] += 1
+            self.stats["files_processed"] += 1
             modified = False
             file_changes = []
 
             # Get ingredients
-            ingredients = data.get('ingredients', [])
+            ingredients = data.get("ingredients", [])
             if not ingredients:
                 return False
 
@@ -199,61 +250,63 @@ class MediaQualityFixer:
             if warnings:
                 for warning in warnings:
                     file_changes.append(f"WARNING: {warning}")
-                    self.stats['errors'].append(f"{yaml_path.name}: {warning}")
+                    self.stats["errors"].append(f"{yaml_path.name}: {warning}")
 
             # 2. Extract pH buffers from notes
-            notes = data.get('notes', '')
+            notes = data.get("notes", "")
             ph_buffers = self.extract_ph_buffers_from_notes(notes)
 
             if ph_buffers:
                 # Check if already in ingredients
-                existing_names = {self.normalize_name(ing.get('preferred_term', ''))
-                                 for ing in merged_ingredients}
+                existing_names = {
+                    self.normalize_name(ing.get("preferred_term", "")) for ing in merged_ingredients
+                }
 
                 for buffer in ph_buffers:
-                    buffer_norm = self.normalize_name(buffer['preferred_term'])
+                    buffer_norm = self.normalize_name(buffer["preferred_term"])
                     if buffer_norm not in existing_names:
                         merged_ingredients.append(buffer)
                         file_changes.append(f"Added pH buffer: {buffer['preferred_term']}")
-                        self.stats['ph_buffers_added'] += 1
+                        self.stats["ph_buffers_added"] += 1
                         modified = True
 
             # Update data if modified
             if modified:
-                data['ingredients'] = merged_ingredients
+                data["ingredients"] = merged_ingredients
 
                 # Add curation history entry
-                if 'curation_history' not in data:
-                    data['curation_history'] = []
+                if "curation_history" not in data:
+                    data["curation_history"] = []
 
-                data['curation_history'].append({
-                    'timestamp': datetime.utcnow().isoformat() + 'Z',
-                    'curator': 'data-quality-cleanup-v1.0',
-                    'action': 'Data quality fixes',
-                    'notes': '; '.join(file_changes)
-                })
+                data["curation_history"].append(
+                    {
+                        "timestamp": datetime.utcnow().isoformat() + "Z",
+                        "curator": "data-quality-cleanup-v1.0",
+                        "action": "Data quality fixes",
+                        "notes": "; ".join(file_changes),
+                    }
+                )
 
                 # Write back to file
-                with open(yaml_path, 'w') as f:
-                    yaml.dump(data, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
+                with open(yaml_path, "w") as f:
+                    yaml.dump(
+                        data, f, default_flow_style=False, sort_keys=False, allow_unicode=True
+                    )
 
-                self.stats['files_modified'] += 1
-                self.changes_log.append({
-                    'file': yaml_path.name,
-                    'changes': file_changes
-                })
+                self.stats["files_modified"] += 1
+                self.changes_log.append({"file": yaml_path.name, "changes": file_changes})
 
             return modified
 
         except Exception as e:
             error_msg = f"Error processing {yaml_path.name}: {e}"
-            self.stats['errors'].append(error_msg)
+            self.stats["errors"].append(error_msg)
             print(f"⚠ {error_msg}")
             return False
 
     def process_directory(self, base_dir: Path):
         """Process all YAML files in directory tree."""
-        yaml_files = list(base_dir.rglob('*.yaml'))
+        yaml_files = list(base_dir.rglob("*.yaml"))
 
         print(f"🔍 Found {len(yaml_files)} YAML files to process\n")
 
@@ -273,7 +326,9 @@ class MediaQualityFixer:
         report.append(f"  Files processed: {self.stats['files_processed']}")
         report.append(f"  Files modified:  {self.stats['files_modified']}")
         report.append(f"  Duplicates merged: {self.stats['duplicates_merged']}")
-        report.append(f"  Duplicates flagged (conflicting units): {self.stats['duplicates_flagged']}")
+        report.append(
+            f"  Duplicates flagged (conflicting units): {self.stats['duplicates_flagged']}"
+        )
         report.append(f"  pH buffers added: {self.stats['ph_buffers_added']}")
         report.append(f"  Errors: {len(self.stats['errors'])}")
         report.append("")
@@ -284,15 +339,15 @@ class MediaQualityFixer:
             report.append("-" * 80)
             for entry in self.changes_log:
                 report.append(f"\n{entry['file']}:")
-                for change in entry['changes']:
+                for change in entry["changes"]:
                     report.append(f"  • {change}")
             report.append("")
 
         # Errors
-        if self.stats['errors']:
+        if self.stats["errors"]:
             report.append("ERRORS/WARNINGS:")
             report.append("-" * 80)
-            for error in self.stats['errors']:
+            for error in self.stats["errors"]:
                 report.append(f"  ⚠ {error}")
             report.append("")
 
@@ -311,7 +366,7 @@ def main():
     fixer = MediaQualityFixer()
 
     # Process all media YAML files
-    base_dir = Path('data/normalized_yaml')
+    base_dir = Path("data/normalized_yaml")
     if not base_dir.exists():
         print(f"❌ Directory not found: {base_dir}")
         return
@@ -323,12 +378,12 @@ def main():
     print("\n" + report)
 
     # Save report to file
-    report_path = Path('data/quality_cleanup_report.txt')
-    with open(report_path, 'w') as f:
+    report_path = Path("data/quality_cleanup_report.txt")
+    with open(report_path, "w") as f:
         f.write(report)
 
     print(f"\n✓ Report saved to: {report_path}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

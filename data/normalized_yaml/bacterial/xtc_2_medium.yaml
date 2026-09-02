@@ -24,14 +24,14 @@ ingredients:
   notes: ' [Merged 2 duplicates: 5.0, 2.0]'
 - preferred_term: Tryptose-phosphate
   concentration:
-    value: '4.0'
+    value: '2.0'
     unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 2.0, 2.0]'
+  notes: '[Collapsed 2 identical duplicates: 2.0, 2.0]'
 - preferred_term: Glutamine
   concentration:
-    value: '4.0'
+    value: '2.0'
     unit: MILLIMOLAR
-  notes: ' [Merged 2 duplicates: 2.0, 2.0]'
+  notes: '[Collapsed 2 identical duplicates: 2.0, 2.0]'
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -75,3 +75,10 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "XTC-2 MEDIUM" to "xtc_2_medium" for consistent matching
+- timestamp: '2026-09-02T07:39:05.577418+00:00'
+  curator: repair_merged_duplicates.py
+  action: REPAIRED_SUMMED_DUPLICATE_MERGE
+  notes: Collapsed 2 ingredient row(s) whose concentration was the SUM of identical
+    duplicate values written by cleanup_media_quality.py. Every merged part was the
+    same value, so the pre-merge value is unambiguous and no source lookup was needed.
+    Rows whose merged parts differ were left untouched.

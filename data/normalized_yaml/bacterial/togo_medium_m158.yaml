@@ -81,10 +81,10 @@ ingredients:
     label: potassium chloride
 - preferred_term: Na2CO3
   concentration:
-    value: '10.0'
+    value: '5.0'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component [Merged 2 duplicates: 5.0, 5.0]'
+    component [Collapsed 2 identical duplicates: 5.0, 5.0]'
   term:
     id: CHEBI:29377
     label: sodium carbonate
@@ -265,6 +265,13 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-02T07:39:03.053085+00:00'
+  curator: repair_merged_duplicates.py
+  action: REPAIRED_SUMMED_DUPLICATE_MERGE
+  notes: Collapsed 1 ingredient row(s) whose concentration was the SUM of identical
+    duplicate values written by cleanup_media_quality.py. Every merged part was the
+    same value, so the pre-merge value is unambiguous and no source lookup was needed.
+    Rows whose merged parts differ were left untouched.
 high_metal: true
 solutions:
 - preferred_term: Na2CO3 solution

@@ -98,9 +98,9 @@ ingredients:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
   concentration:
-    value: '0.2'
+    value: '0.1'
     unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 0.1, 0.1]'
+  notes: '[Collapsed 2 identical duplicates: 0.1, 0.1]'
   mediaingredientmech_chebi_term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
@@ -109,9 +109,9 @@ ingredients:
     id: CHEBI:86368
     label: manganese(II) chloride tetrahydrate
   concentration:
-    value: '0.06'
+    value: '0.03'
     unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 0.03, 0.03]'
+  notes: '[Collapsed 2 identical duplicates: 0.03, 0.03]'
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
     label: manganese(II) chloride tetrahydrate
@@ -120,9 +120,9 @@ ingredients:
     id: CHEBI:33118
     label: boric acid
   concentration:
-    value: '0.6'
+    value: '0.3'
     unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 0.3, 0.3]'
+  notes: '[Collapsed 2 identical duplicates: 0.3, 0.3]'
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
     label: boric acid
@@ -131,9 +131,9 @@ ingredients:
     id: CHEBI:53503
     label: cobalt chloride hexahydrate
   concentration:
-    value: '0.4'
+    value: '0.2'
     unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 0.2, 0.2]'
+  notes: '[Collapsed 2 identical duplicates: 0.2, 0.2]'
   mediaingredientmech_chebi_term:
     id: CHEBI:53503
     label: cobalt chloride hexahydrate
@@ -142,9 +142,9 @@ ingredients:
     id: CHEBI:86318
     label: copper(II) chloride dihydrate
   concentration:
-    value: '0.02'
+    value: '0.01'
     unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 0.01, 0.01]'
+  notes: '[Collapsed 2 identical duplicates: 0.01, 0.01]'
   mediaingredientmech_chebi_term:
     id: CHEBI:86318
     label: copper(II) chloride dihydrate
@@ -153,9 +153,9 @@ ingredients:
     id: CHEBI:34887
     label: nickel dichloride
   concentration:
-    value: '0.04'
+    value: '0.02'
     unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 0.02, 0.02]'
+  notes: '[Collapsed 2 identical duplicates: 0.02, 0.02]'
   mediaingredientmech_chebi_term:
     id: CHEBI:34887
     label: nickel dichloride
@@ -164,9 +164,9 @@ ingredients:
     id: CHEBI:75213
     label: sodium molybdate dihydrate
   concentration:
-    value: '0.06'
+    value: '0.03'
     unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 0.03, 0.03]'
+  notes: '[Collapsed 2 identical duplicates: 0.03, 0.03]'
   mediaingredientmech_chebi_term:
     id: CHEBI:75213
     label: sodium molybdate dihydrate
@@ -231,6 +231,13 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-02T07:38:49.770224+00:00'
+  curator: repair_merged_duplicates.py
+  action: REPAIRED_SUMMED_DUPLICATE_MERGE
+  notes: Collapsed 7 ingredient row(s) whose concentration was the SUM of identical
+    duplicate values written by cleanup_media_quality.py. Every merged part was the
+    same value, so the pre-merge value is unambiguous and no source lookup was needed.
+    Rows whose merged parts differ were left untouched.
 solutions:
 - preferred_term: Phosphates solution
   composition: []

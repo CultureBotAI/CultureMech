@@ -19,9 +19,9 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Bacto peptone
   concentration:
-    value: '19.04762'
+    value: '9.52381'
     unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 9.52381, 9.52381]'
+  notes: '[Collapsed 2 identical duplicates: 9.52381, 9.52381]'
 - preferred_term: Tryptic Digest of beef heart
   concentration:
     value: '2.85714'
@@ -118,4 +118,11 @@ curation_history:
   notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-02T07:38:00.592853+00:00'
+  curator: repair_merged_duplicates.py
+  action: REPAIRED_SUMMED_DUPLICATE_MERGE
+  notes: Collapsed 1 ingredient row(s) whose concentration was the SUM of identical
+    duplicate values written by cleanup_media_quality.py. Every merged part was the
+    same value, so the pre-merge value is unambiguous and no source lookup was needed.
+    Rows whose merged parts differ were left untouched.
 kg_microbe_match: mediadive.medium:687
