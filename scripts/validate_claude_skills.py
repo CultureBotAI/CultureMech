@@ -10,7 +10,7 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 SKILLS_DIR = ROOT / ".claude" / "skills"
-REQUIRED_FRONTMATTER = {"name", "description", "version"}
+REQUIRED_FRONTMATTER = {"name", "description"}
 LOCAL_REFERENCE = re.compile(
     r"`((?:scripts|src|docs|conf|\.claude)/[^`\s]+|(?:README|NEXT_TASKS|project\.justfile)[^`\s]*)`"
 )
@@ -57,6 +57,12 @@ def validate_skills() -> list[str]:
         missing = sorted(REQUIRED_FRONTMATTER - metadata.keys())
         if missing:
             errors.append(f"{skill_file.relative_to(ROOT)}: missing {', '.join(missing)}")
+        nested_metadata = metadata.get("metadata")
+        nested_version = (
+            nested_metadata.get("version") if isinstance(nested_metadata, dict) else None
+        )
+        if not metadata.get("version") and not nested_version:
+            errors.append(f"{skill_file.relative_to(ROOT)}: missing version")
         if metadata.get("name") != directory.name:
             errors.append(
                 f"{skill_file.relative_to(ROOT)}: name must match directory {directory.name!r}"
