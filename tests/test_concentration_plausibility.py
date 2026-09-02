@@ -229,7 +229,12 @@ def test_stock_solution_records_are_excluded(corpus_findings):
 # visible to it. `H BO` matched no trace-element pattern and was flagged 0 times on main;
 # `H3BO3` matches and is flagged. The concentrations were always wrong -- the corrupted
 # name was hiding them.
-CONCENTRATION_BACKLOG_BASELINE = 9_688
+# Lowered 9,757 -> 9,688 by #349, then 9,688 -> 9,664 by #394. That last move is
+# a genuine repair, not a re-baseline: collapsing 731 rows whose concentration was
+# the SUM of identical duplicate values (`Methanol 1584.0` from `792.0, 792.0`)
+# brought 24 of them back under a detector threshold. The rows were never real
+# measurements — a merge step had added duplicates together.
+CONCENTRATION_BACKLOG_BASELINE = 9_664
 # The sharper baseline (#150): a raw row count drifts with corpus size, whereas a
 # new flattened cocktail is a specific defect shape an import has reintroduced.
 # 185 -> 186 for the same reason as the row baseline above: a record whose repaired
