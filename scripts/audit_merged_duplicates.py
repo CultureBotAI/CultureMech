@@ -57,7 +57,7 @@ DEFAULT_REPORT = REPO_ROOT / "data" / "import_tracking" / "reports" / "merged_du
 # writes when it legitimately collapses identical duplicates.
 MERGE_NOTE = re.compile(r"\[(?:Merged|Collapsed) (\d+) (?:identical )?duplicates: ([^\]]+)\]")
 
-FINDINGS = ("IDENTICAL_PARTS", "DIFFERING_PARTS", "COEXISTING_ROW")
+FINDINGS = ("IDENTICAL_PARTS", "DIFFERING_PARTS", "COEXISTING_ROW", "REPEATED_INGREDIENT")
 HEADER = ["finding", "file_path", "record_id", "ingredient", "value", "unit", "parts", "detail"]
 
 
@@ -169,6 +169,46 @@ def scan(records_dir: Path) -> tuple[list[dict[str, str]], Counter]:
         for section in ("ingredients", "solutions"):
             _collect(record.get(section), by_name, merged_names, rows, stats, relative, identifier)
 
+        # Repeated rows that carry NO merge note. `ucm.yaml` (#283) lists eight
+        # ingredients twice at 1000x/100x apart — stock strength beside final
+        # concentration — and never went through the merge, so COEXISTING_ROW
+        # cannot see it. Reported whatever the ratio: two rows for one
+        # ingredient in one recipe is a question either way.
+        for key in sorted(by_name):
+            if key in merged_names or len(by_name[key]) < 2:
+                continue
+            values = [_decimal((i.get("concentration") or {}).get("value")) for i in by_name[key]]
+            numeric = [v for v in values if v is not None and v > 0]
+            if len(numeric) < 2:
+                continue
+            stats["REPEATED_INGREDIENT"] += 1
+            ratio = max(numeric) / min(numeric)
+            rows.append(
+                {
+                    "finding": "REPEATED_INGREDIENT",
+                    "file_path": relative,
+                    "record_id": identifier,
+                    "ingredient": key[0],
+                    "value": ";".join(str(v) for v in values),
+                    "unit": key[1],
+                    "parts": "",
+                    "detail": (
+                        f"{len(by_name[key])} rows name this ingredient in one record, "
+                        f"ratio {ratio:g}x"
+                        + (
+                            " — same value listed twice"
+                            if ratio == 1
+                            else (
+                                " — a power of ten suggests stock strength beside a final "
+                                "concentration"
+                                if ratio in (Decimal(10), Decimal(100), Decimal(1000))
+                                else ""
+                            )
+                        )
+                    ),
+                }
+            )
+
         for key in sorted(merged_names):
             if len(by_name[key]) > 1:
                 stats["COEXISTING_ROW"] += 1
@@ -214,6 +254,12 @@ def main(argv: list[str] | None = None) -> int:
         default=None,
         help="Fail if COEXISTING_ROW exceeds this.",
     )
+    parser.add_argument(
+        "--max-repeated",
+        type=int,
+        default=None,
+        help="Fail if REPEATED_INGREDIENT exceeds this (#283).",
+    )
     args = parser.parse_args(argv if argv is not None else sys.argv[1:])
 
     rows, stats = scan(args.records_dir)
@@ -236,6 +282,7 @@ def main(argv: list[str] | None = None) -> int:
         ("IDENTICAL_PARTS", args.max_identical),
         ("DIFFERING_PARTS", args.max_differing),
         ("COEXISTING_ROW", args.max_coexisting),
+        ("REPEATED_INGREDIENT", args.max_repeated),
     ):
         if cap is not None and stats[finding] > cap:
             failures.append(f"{finding}: {stats[finding]} > baseline {cap}")

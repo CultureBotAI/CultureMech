@@ -186,3 +186,88 @@ def test_a_collapse_the_mutator_writes_is_not_a_finding():
     """The mutator and the audit have to agree, or the gate reports its own output."""
     base, _ = _fixer()._merge_ingredient_group([_row("NaCl", "5.0"), _row("NaCl", "5.0")])
     assert classify(base) is None
+
+
+# --- repeated rows with no merge note (#283) ----------------------------
+
+
+def _scan_one(record: dict) -> dict:
+    """Findings for a single in-memory record, keyed by finding name."""
+    from collections import Counter, defaultdict
+
+    from audit_merged_duplicates import _collect
+
+    rows: list[dict] = []
+    stats: Counter = Counter()
+    by_name: dict = defaultdict(list)
+    merged: set = set()
+    for section in ("ingredients", "solutions"):
+        _collect(record.get(section), by_name, merged, rows, stats, "x.yaml", "CultureMech:1")
+    # mirror scan()'s per-record pass
+    from audit_merged_duplicates import _decimal
+
+    out = Counter(stats)
+    for key in sorted(by_name):
+        if key in merged or len(by_name[key]) < 2:
+            continue
+        numeric = [
+            v
+            for v in (_decimal((i.get("concentration") or {}).get("value")) for i in by_name[key])
+            if v is not None and v > 0
+        ]
+        if len(numeric) >= 2:
+            out["REPEATED_INGREDIENT"] += 1
+    return out
+
+
+def test_the_ucm_shape_is_caught_without_a_merge_note():
+    """#283: `ucm.yaml` lists trace elements twice, 1000x apart, and never merged."""
+    record = {
+        "ingredients": [
+            {"preferred_term": "As2O3", "concentration": {"value": "0.000093", "unit": "G_PER_L"}},
+            {"preferred_term": "As2O3", "concentration": {"value": "0.093", "unit": "G_PER_L"}},
+        ]
+    }
+    assert _scan_one(record)["REPEATED_INGREDIENT"] == 1
+
+
+def test_an_exact_duplicate_is_caught_too():
+    """`NaOH 4.0` twice has no ratio to notice, and is still redundancy."""
+    record = {
+        "ingredients": [
+            {"preferred_term": "NaOH", "concentration": {"value": "4.0", "unit": "G_PER_L"}},
+            {"preferred_term": "NaOH", "concentration": {"value": "4.0", "unit": "G_PER_L"}},
+        ]
+    }
+    assert _scan_one(record)["REPEATED_INGREDIENT"] == 1
+
+
+def test_the_same_name_in_different_units_is_not_a_repeat():
+    """Two units are two different claims, not a duplicated one."""
+    record = {
+        "ingredients": [
+            {"preferred_term": "NaCl", "concentration": {"value": "5.0", "unit": "G_PER_L"}},
+            {"preferred_term": "NaCl", "concentration": {"value": "5.0", "unit": "MILLIMOLAR"}},
+        ]
+    }
+    assert _scan_one(record)["REPEATED_INGREDIENT"] == 0
+
+
+def test_a_single_row_is_not_a_repeat():
+    record = {
+        "ingredients": [
+            {"preferred_term": "NaCl", "concentration": {"value": "5.0", "unit": "G_PER_L"}}
+        ]
+    }
+    assert _scan_one(record)["REPEATED_INGREDIENT"] == 0
+
+
+def test_a_merged_row_is_not_double_reported():
+    """A row with a merge note belongs to COEXISTING_ROW, not REPEATED_INGREDIENT."""
+    record = {
+        "ingredients": [
+            summed("Agar", "50.0", "15.0, 15.0, 20.0"),
+            {"preferred_term": "Agar", "concentration": {"value": "15.0", "unit": "G_PER_L"}},
+        ]
+    }
+    assert _scan_one(record)["REPEATED_INGREDIENT"] == 0

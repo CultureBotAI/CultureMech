@@ -423,10 +423,15 @@ audit-concentration-plausibility *args="":
 #                          means. Ratchet down as curation lands; never up.
 #   COEXISTING_ROW   276   a merge survivor sharing a record with another row of
 #                          the same ingredient, so a consumer double-counts.
+#   REPEATED_INGREDIENT 539 two rows for one ingredient with NO merge note — the
+#                          #283 shape, where ucm.yaml lists eight ingredients
+#                          twice at 1000x/100x apart. Invisible to the three
+#                          above, which all key off the merge note.
 [group('Audit')]
 audit-merged-duplicates *args="":
     uv run --extra dev python scripts/audit_merged_duplicates.py \
-        --max-identical 0 --max-differing 3772 --max-coexisting 276 {{args}}
+        --max-identical 0 --max-differing 3772 --max-coexisting 276 \
+        --max-repeated 539 {{args}}
 
 # Collapse summed rows back to their single distinct value. Preview by default;
 # refuses rows whose merged parts differ, because choosing between them is a
