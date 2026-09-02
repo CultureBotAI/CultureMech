@@ -245,9 +245,9 @@ ingredients:
     id: CHEBI:17306
     label: maltose
   concentration:
-    value: '16.0'
+    value: '8.0'
     unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 8.0, 8.0]'
+  notes: '[Collapsed 2 identical duplicates: 8.0, 8.0]'
   mediaingredientmech_chebi_term:
     id: CHEBI:17306
     label: maltose
@@ -371,6 +371,13 @@ curation_history:
   notes: 'Replaced 21 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-02T07:38:54.521282+00:00'
+  curator: repair_merged_duplicates.py
+  action: REPAIRED_SUMMED_DUPLICATE_MERGE
+  notes: Collapsed 1 ingredient row(s) whose concentration was the SUM of identical
+    duplicate values written by cleanup_media_quality.py. Every merged part was the
+    same value, so the pre-merge value is unambiguous and no source lookup was needed.
+    Rows whose merged parts differ were left untouched.
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1245_OTEB-MEDIUM.yaml
   relationship: SOURCE_DUPLICATE

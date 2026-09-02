@@ -19,10 +19,10 @@ ingredients:
     label: sodium hydroxide
 - preferred_term: Distilled water
   concentration:
-    value: '200.0'
+    value: '100.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component [Merged 2 duplicates: 100.0, 100.0]'
+    Defined component [Collapsed 2 identical duplicates: 100.0, 100.0]'
   term:
     id: CHEBI:15377
     label: water
@@ -121,6 +121,13 @@ curation_history:
   notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-09-02T07:37:49.870248+00:00'
+  curator: repair_merged_duplicates.py
+  action: REPAIRED_SUMMED_DUPLICATE_MERGE
+  notes: Collapsed 1 ingredient row(s) whose concentration was the SUM of identical
+    duplicate values written by cleanup_media_quality.py. Every merged part was the
+    same value, so the pre-merge value is unambiguous and no source lookup was needed.
+    Rows whose merged parts differ were left untouched.
 solutions:
 - preferred_term: TRYPTICASE SOY BLOOD AGAR (see Medium [M147])
   composition: []

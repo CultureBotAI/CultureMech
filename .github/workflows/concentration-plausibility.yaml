@@ -28,6 +28,7 @@ on:
       - 'data/normalized_yaml/**'
       - 'data/merge_yaml/**'
       - 'scripts/audit_concentration_plausibility.py'
+      - 'scripts/audit_merged_duplicates.py'
       - 'project.justfile'
       - 'pyproject.toml'
       - 'uv.lock'
@@ -62,6 +63,13 @@ jobs:
       - name: Check concentration plausibility
         run: just audit-concentration-plausibility
 
+      # Runs here rather than in its own workflow because it shares this one's
+      # path filter exactly and guards the same thing — a concentration that is
+      # not a real measurement. Its baselines are per-detector, so it cannot
+      # trade a repair in one class against a regression in another (#302).
+      - name: Check for summed duplicate-merge artifacts
+        run: just audit-merged-duplicates
+
       - name: Upload plausibility report
         if: always()
         uses: actions/upload-artifact@v4
@@ -70,3 +78,4 @@ jobs:
           path: |
             data/import_tracking/reports/concentration_plausibility.tsv
             data/import_tracking/reports/concentration_plausibility_by_record.tsv
+            data/import_tracking/reports/merged_duplicates.tsv

@@ -282,9 +282,9 @@ ingredients:
     label: pyridoxine hydrochloride
 - preferred_term: Sodium phosphate buffer
   concentration:
-    value: '200.0'
+    value: '100.0'
     unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 100.0, 100.0]'
+  notes: '[Collapsed 2 identical duplicates: 100.0, 100.0]'
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -363,4 +363,11 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-02T07:37:55.460438+00:00'
+  curator: repair_merged_duplicates.py
+  action: REPAIRED_SUMMED_DUPLICATE_MERGE
+  notes: Collapsed 1 ingredient row(s) whose concentration was the SUM of identical
+    duplicate values written by cleanup_media_quality.py. Every merged part was the
+    same value, so the pre-merge value is unambiguous and no source lookup was needed.
+    Rows whose merged parts differ were left untouched.
 high_metal: true

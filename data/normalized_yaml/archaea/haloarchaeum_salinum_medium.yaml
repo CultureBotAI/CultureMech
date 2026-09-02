@@ -18,20 +18,20 @@ ingredients:
     id: CHEBI:16015
     label: L-glutamic acid
   concentration:
-    value: '4.0'
+    value: '2.0'
     unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 2.0, 2.0]'
+  notes: '[Collapsed 2 identical duplicates: 2.0, 2.0]'
   mediaingredientmech_chebi_term:
     id: CHEBI:16015
     label: L-glutamic acid
 - preferred_term: Trisodium citrate x 2 H2O
   concentration:
-    value: '4.0'
+    value: '2.0'
     unit: G_PER_L
   term:
     id: CHEBI:53258
     label: sodium citrate
-  notes: ' [Merged 2 duplicates: 2.0, 2.0]'
+  notes: '[Collapsed 2 identical duplicates: 2.0, 2.0]'
   mediaingredientmech_chebi_term:
     id: CHEBI:53258
     label: sodium citrate
@@ -40,9 +40,9 @@ ingredients:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
   concentration:
-    value: '2.0'
+    value: '1.0'
     unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 1.0, 1.0]'
+  notes: '[Collapsed 2 identical duplicates: 1.0, 1.0]'
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
@@ -51,9 +51,9 @@ ingredients:
     id: CHEBI:31206
     label: ammonium chloride
   concentration:
-    value: '2.0'
+    value: '1.0'
     unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 1.0, 1.0]'
+  notes: '[Collapsed 2 identical duplicates: 1.0, 1.0]'
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -62,41 +62,41 @@ ingredients:
     id: CHEBI:32036
     label: potassium sulfate
   concentration:
-    value: '10.0'
+    value: '5.0'
     unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 5.0, 5.0]'
+  notes: '[Collapsed 2 identical duplicates: 5.0, 5.0]'
   mediaingredientmech_chebi_term:
     id: CHEBI:32036
     label: potassium sulfate
 - preferred_term: MgCl2 x 7 H2O
   concentration:
-    value: '80.0'
+    value: '40.0'
     unit: G_PER_L
   term:
     id: CHEBI:6636
     label: magnesium dichloride
-  notes: ' [Merged 2 duplicates: 40.0, 40.0]'
+  notes: '[Collapsed 2 identical duplicates: 40.0, 40.0]'
   mediaingredientmech_chebi_term:
     id: CHEBI:6636
     label: magnesium dichloride
 - preferred_term: Casamino acids
   concentration:
-    value: '8.0'
-    unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 4.0, 4.0]'
-- preferred_term: Yeast extract
-  concentration:
     value: '4.0'
     unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 2.0, 2.0]'
+  notes: '[Collapsed 2 identical duplicates: 4.0, 4.0]'
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  notes: '[Collapsed 2 identical duplicates: 2.0, 2.0]'
 - preferred_term: FeSO4
   term:
     id: CHEBI:75832
     label: iron(2+) sulfate (anhydrous)
   concentration:
-    value: '0.008'
+    value: '0.004'
     unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 0.004, 0.004]'
+  notes: '[Collapsed 2 identical duplicates: 0.004, 0.004]'
   mediaingredientmech_chebi_term:
     id: CHEBI:75832
     label: iron(2+) sulfate (anhydrous)
@@ -105,9 +105,9 @@ ingredients:
     id: CHEBI:26710
     label: sodium chloride
   concentration:
-    value: '400.0'
+    value: '200.0'
     unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 200.0, 200.0]'
+  notes: '[Collapsed 2 identical duplicates: 200.0, 200.0]'
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
@@ -279,9 +279,19 @@ curation_history:
 - timestamp: '2026-06-08T23:19:39.610222+00:00'
   curator: chebi-regrounding-v1.0
   action: Corrected CHEBI ingredient grounding (shared-id regrounding audit, G21/G22/G24)
-  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more ingredient groundings on this record that had been collapsed onto a chemically non-specific or shared CHEBI id were re-grounded to the correct chemically-specific term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
+  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more
+    ingredient groundings on this record that had been collapsed onto a chemically
+    non-specific or shared CHEBI id were re-grounded to the correct chemically-specific
+    term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
 - timestamp: '2026-06-10T07:46:59.442484+00:00'
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-02T07:37:28.797169+00:00'
+  curator: repair_merged_duplicates.py
+  action: REPAIRED_SUMMED_DUPLICATE_MERGE
+  notes: Collapsed 10 ingredient row(s) whose concentration was the SUM of identical
+    duplicate values written by cleanup_media_quality.py. Every merged part was the
+    same value, so the pre-merge value is unambiguous and no source lookup was needed.
+    Rows whose merged parts differ were left untouched.
 high_metal: true

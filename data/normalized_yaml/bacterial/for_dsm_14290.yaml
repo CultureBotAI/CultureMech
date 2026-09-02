@@ -268,9 +268,9 @@ ingredients:
     id: CHEBI:32145
     label: sodium hydroxide
   concentration:
-    value: '1.0'
+    value: '0.5'
     unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 0.5, 0.5]'
+  notes: '[Collapsed 2 identical duplicates: 0.5, 0.5]'
   mediaingredientmech_chebi_term:
     id: CHEBI:32145
     label: sodium hydroxide
@@ -386,6 +386,13 @@ curation_history:
     row in this record, which made the recipe read as double-strength in those components
     (#263): Sodium chloride, Tryptone, Yeast extract.'
   changes: ingredients 32 -> 29
+- timestamp: '2026-09-02T07:38:05.715984+00:00'
+  curator: repair_merged_duplicates.py
+  action: REPAIRED_SUMMED_DUPLICATE_MERGE
+  notes: Collapsed 1 ingredient row(s) whose concentration was the SUM of identical
+    duplicate values written by cleanup_media_quality.py. Every merged part was the
+    same value, so the pre-merge value is unambiguous and no source lookup was needed.
+    Rows whose merged parts differ were left untouched.
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_829_DESULFUROBACTERIUM_MEDIUM.yaml
   relationship: SOURCE_DUPLICATE

@@ -48,9 +48,9 @@ ingredients:
     id: CHEBI:86158
     label: calcium chloride dihydrate
   concentration:
-    value: '0.2'
+    value: '0.1'
     unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 0.1, 0.1]'
+  notes: '[Collapsed 2 identical duplicates: 0.1, 0.1]'
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
@@ -69,9 +69,9 @@ ingredients:
     id: CHEBI:26710
     label: sodium chloride
   concentration:
-    value: '2.0'
+    value: '1.0'
     unit: G_PER_L
-  notes: ' [Merged 2 duplicates: 1.0, 1.0]'
+  notes: '[Collapsed 2 identical duplicates: 1.0, 1.0]'
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
@@ -360,6 +360,13 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-02T07:38:09.131708+00:00'
+  curator: repair_merged_duplicates.py
+  action: REPAIRED_SUMMED_DUPLICATE_MERGE
+  notes: Collapsed 2 ingredient row(s) whose concentration was the SUM of identical
+    duplicate values written by cleanup_media_quality.py. Every merged part was the
+    same value, so the pre-merge value is unambiguous and no source lookup was needed.
+    Rows whose merged parts differ were left untouched.
 ph_value: 7.0
 parent_media:
   path: data/normalized_yaml/bacterial/for_geococcus_nitratireducens.yaml

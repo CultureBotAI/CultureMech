@@ -74,10 +74,10 @@ ingredients:
     label: ferric ammonium citrate
 - preferred_term: Deionized water
   concentration:
-    value: '2000.0'
+    value: '1000.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component [Merged 2 duplicates: 1000.0, 1000.0]'
+    Simple component [Collapsed 2 identical duplicates: 1000.0, 1000.0]'
 - preferred_term: Citric acid
   concentration:
     value: '0.006'
@@ -207,3 +207,10 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-02T07:37:57.731282+00:00'
+  curator: repair_merged_duplicates.py
+  action: REPAIRED_SUMMED_DUPLICATE_MERGE
+  notes: Collapsed 1 ingredient row(s) whose concentration was the SUM of identical
+    duplicate values written by cleanup_media_quality.py. Every merged part was the
+    same value, so the pre-merge value is unambiguous and no source lookup was needed.
+    Rows whose merged parts differ were left untouched.

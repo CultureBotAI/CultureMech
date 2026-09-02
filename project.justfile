@@ -405,7 +405,35 @@ audit-selective-agent-mismatch *args="":
 [group('QC')]
 audit-concentration-plausibility *args="":
     uv run --extra dev python scripts/audit_concentration_plausibility.py \
-        --max-allowed 9688 --max-cocktails 183 {{args}}
+        --max-allowed 9664 --max-cocktails 183 {{args}}
+
+# Rows whose concentration is the SUM of the duplicate values a merge consumed
+# (#394). `cleanup_media_quality.py` used to add duplicates together and record
+# the parts in a note, which is what makes this both findable and repairable.
+#
+# Three independent baselines rather than one total, deliberately (#302): a
+# single number would let a repair in one class pay for a regression in
+# another, and these classes have different remedies.
+#
+#   IDENTICAL_PARTS  0     mechanically repairable — the pre-merge value is the
+#                          one distinct part. Held at 0: `just repair-merged-duplicates`
+#                          clears any that appear, so a nonzero count is a new import
+#                          re-introducing the defect, not a backlog.
+#   DIFFERING_PARTS  3772  needs the source recipe to say which part the medium
+#                          means. Ratchet down as curation lands; never up.
+#   COEXISTING_ROW   276   a merge survivor sharing a record with another row of
+#                          the same ingredient, so a consumer double-counts.
+[group('Audit')]
+audit-merged-duplicates *args="":
+    uv run --extra dev python scripts/audit_merged_duplicates.py \
+        --max-identical 0 --max-differing 3772 --max-coexisting 276 {{args}}
+
+# Collapse summed rows back to their single distinct value. Preview by default;
+# refuses rows whose merged parts differ, because choosing between them is a
+# question about the source recipe rather than arithmetic.
+[group('Curation')]
+repair-merged-duplicates *args="":
+    uv run python scripts/repair_merged_duplicates.py {{args}}
 
 # Composition tables that were never parsed, plus prose sitting in name slots
 # (#299, #273). The 64-finding backlog is now cleared; both limits are absolute
