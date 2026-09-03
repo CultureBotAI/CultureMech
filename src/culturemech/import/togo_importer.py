@@ -14,6 +14,40 @@ from typing import Any
 
 import yaml
 
+# Characters that render as nothing and so survive every visual review while
+# being a different string to every matcher. TOGO serves at least one component
+# name containing a discretionary hyphen — `Trace metals 'Gaffron\xad+Se'`
+# (#406) — which is a soft-wrap artifact of the source page, not part of the
+# name. Stripping them is not a curation decision: none carries semantic content
+# inside a chemical name.
+_INVISIBLE = str.maketrans(
+    "",
+    "",
+    "".join(
+        chr(code)
+        for code in (
+            0x00AD,  # SOFT HYPHEN
+            0x200B,  # ZERO WIDTH SPACE
+            0x200C,  # ZERO WIDTH NON-JOINER
+            0x200D,  # ZERO WIDTH JOINER
+            0x2060,  # WORD JOINER
+            0xFEFF,  # ZERO WIDTH NO-BREAK SPACE / BOM
+        )
+    ),
+)
+
+
+def clean_component_name(name: str | None) -> str:
+    """A source component name with invisible characters removed.
+
+    NBSP (U+00A0) is deliberately NOT in the strip set: it is a visible space
+    and removing it would join two words. It is normalised to a plain space
+    instead, so the name still matches on whitespace.
+    """
+    if not name:
+        return ""
+    return str(name).translate(_INVISIBLE).replace("\u00a0", " ").strip()
+
 
 class TogoImporter:
     """Import TOGO Medium data to CultureMech format."""
@@ -252,7 +286,7 @@ class TogoImporter:
             final_concentration = self._decimal(item.get("conc_value"))
             if final_concentration is not None and allow_final_concentration:
                 ingredient = {
-                    "preferred_term": item.get("component_name", "Unknown"),
+                    "preferred_term": clean_component_name(item.get("component_name")) or "Unknown",
                     "concentration": {
                         "value": self._format_decimal(final_concentration),
                         "unit": self._parse_unit(str(item.get("conc_unit") or "")),
@@ -265,7 +299,7 @@ class TogoImporter:
             if not item.get("gmo_id") or not self._is_gas_item(item):
                 return None
             ingredient = {
-                "preferred_term": item.get("component_name", "Unknown"),
+                "preferred_term": clean_component_name(item.get("component_name")) or "Unknown",
                 "concentration": {"value": "variable", "unit": "VARIABLE"},
             }
             notes = self._item_notes(item)
@@ -293,7 +327,7 @@ class TogoImporter:
             amount_text = self._format_decimal(amount)
 
         ingredient = {
-            "preferred_term": item.get("component_name", "Unknown"),
+            "preferred_term": clean_component_name(item.get("component_name")) or "Unknown",
             "concentration": {
                 "value": amount_text,
                 "unit": concentration_unit,

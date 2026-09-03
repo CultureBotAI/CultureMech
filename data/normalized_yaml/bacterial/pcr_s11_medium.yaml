@@ -38,7 +38,7 @@ ingredients:
   concentration:
     value: '1'
     unit: MILLIMOLAR
-- preferred_term: Trace metals 'Gaffron­+Se'
+- preferred_term: Trace metals 'Gaffron+Se'
   concentration:
     value: '0.5'
     unit: G_PER_L
@@ -333,6 +333,13 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-09-03T07:08:46.323971+00:00'
+  curator: togo_importer.clean_component_name
+  action: REMOVED_INVISIBLE_CHARACTERS
+  notes: Removed a U+00AD SOFT HYPHEN from 1 ingredient name (#406). TOGO serves the
+    discretionary hyphen as part of the component name; it is a soft-wrap artifact
+    of the source page, renders as nothing, and made the name unmatchable. No other
+    content changed.
 solutions:
 - preferred_term: FeCl3 solution
   composition: []
