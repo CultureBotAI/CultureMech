@@ -11,6 +11,7 @@ import re
 import sys
 from collections import defaultdict
 from datetime import datetime
+from functools import cache
 from pathlib import Path
 
 import yaml
@@ -31,6 +32,19 @@ MIM_LINK_FIELD = "mediaingredientmech_chebi_term"
 LEGACY_MIM_LINK_FIELD = "mediaingredientmech_term"
 
 
+@cache
+def _schema() -> dict:
+    """The parsed schema, once.
+
+    Parsing it costs ~76 ms and `validate_recipe` asks for three enums per
+    record, so reading it per call meant ~143,000 parses over the corpus — an
+    hour of pure YAML, which is how the first full run of this change ended up
+    backgrounded. The schema cannot change while the process runs, so caching
+    is safe and the run goes back to minutes.
+    """
+    return yaml.safe_load(SCHEMA_PATH.read_text())
+
+
 def permissible_values(enum_name: str) -> list[str]:
     """The enum's values, read from the authoritative schema (#401).
 
@@ -41,8 +55,7 @@ def permissible_values(enum_name: str) -> list[str]:
     `migrate_medium_type_axes.py`. Being wrong permissively is the worse half:
     nobody investigates a check that stays green.
     """
-    schema = yaml.safe_load(SCHEMA_PATH.read_text())
-    enum = schema["enums"][enum_name]
+    enum = _schema()["enums"][enum_name]
     return list(enum.get("permissible_values") or {})
 
 
