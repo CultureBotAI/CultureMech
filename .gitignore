@@ -188,9 +188,15 @@ reports/media_growth_review_manifest_summary.md
 # since #15 -- and understated MIM coverage, because it predates #401/#403 by six
 # hours. Regenerate with
 # `PYTHONPATH=src python scripts/batch_review_recipes.py --output reports/validation_all`.
-reports/validation_all-*.json
-reports/validation_all-*.md
-reports/validation_all-*.tsv
+# `--output` is a path prefix and the script stamps no date (:618, :662-668), so
+# the documented invocations produce undated names: `reports/validation_all.*`
+# (SKILL.md:77), `reports/validation_bacterial.*` (:73), and the bare default
+# `reports/validation.*`. Matching only the hand-dated spelling would fix the
+# instance and not the class (#412). No tracked file starts with `validation`;
+# negate below if one ever should.
+reports/validation*.json
+reports/validation*.md
+reports/validation*.tsv
 
 # Cocktail-nesting proposal worklist: a regenerable diagnostic for the #150 repair,
 # not a tracked artifact. Regenerate with `just propose-cocktail-nesting`.
