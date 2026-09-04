@@ -182,6 +182,24 @@ reports/media_growth_review_manifest.tsv
 reports/media_growth_review_manifest.json
 reports/media_growth_review_manifest_summary.md
 
+# Date-stamped recipe-validation runs: regenerable, large (20 MB per run), and
+# they rot into false findings. The 2026-09-02 run reported two P1 criticals for
+# `medium_type: BUFFER` / `NEGATIVE_CONTROL` -- both valid MediumTypeEnum values
+# since #15 -- and understated MIM coverage, because it predates #401/#403 by six
+# hours. Regenerate with
+# `PYTHONPATH=src python scripts/batch_review_recipes.py --output reports/validation_all`.
+# `--output` is a path prefix and the script stamps no date (:618, :662-668), so
+# the documented invocations produce undated names: `reports/validation_all.*`
+# (SKILL.md:77), `reports/validation_bacterial.*` (:73), and the bare default
+# `reports/validation.*`. Matching only the hand-dated spelling would fix the
+# instance and not the class (#412). A run worth keeping goes under
+# `reports/archive/`, which this pattern deliberately cannot reach -- a rule
+# containing `/` is anchored and `*` does not cross `/` -- and where nine
+# validation reports are already tracked (#414).
+reports/validation*.json
+reports/validation*.md
+reports/validation*.tsv
+
 # Cocktail-nesting proposal worklist: a regenerable diagnostic for the #150 repair,
 # not a tracked artifact. Regenerate with `just propose-cocktail-nesting`.
 data/import_tracking/reports/cocktail_nesting_proposals.tsv
