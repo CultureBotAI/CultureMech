@@ -192,8 +192,10 @@ reports/media_growth_review_manifest_summary.md
 # the documented invocations produce undated names: `reports/validation_all.*`
 # (SKILL.md:77), `reports/validation_bacterial.*` (:73), and the bare default
 # `reports/validation.*`. Matching only the hand-dated spelling would fix the
-# instance and not the class (#412). No tracked file starts with `validation`;
-# negate below if one ever should.
+# instance and not the class (#412). A run worth keeping goes under
+# `reports/archive/`, which this pattern deliberately cannot reach -- a rule
+# containing `/` is anchored and `*` does not cross `/` -- and where nine
+# validation reports are already tracked (#414).
 reports/validation*.json
 reports/validation*.md
 reports/validation*.tsv
