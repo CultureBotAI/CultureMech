@@ -15,9 +15,9 @@ The packaged files are:
 - `src/culturemech/data/mediaingredientmech/label_index.metadata.json`
 
 The current pin is MIM commit
-`82694054f5bbf74b5392bf8858c9962c2152a35a`: 9,115 data rows, 854,426
+`9f09e4fb97fb0e6cbbd6f25baca40b36512adb88`: 9,876 data rows, 922,191
 bytes, SHA-256
-`7113b90cb82ea6d80c0abdb34b0620b71fe6b02e3000327b14dbf797062728ac`.
+`a36cd4683feb89e2fc2a1721dc15008d1e10c12044e89a36c27b6621a8aaf262`.
 Metadata also fixes the repository, source path, seven-column header, row count,
 and consumer-contract version. There is no moving-branch lookup in a normal
 build.

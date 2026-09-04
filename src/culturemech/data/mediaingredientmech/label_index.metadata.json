@@ -1,7 +1,7 @@
 {
-  "byte_count": 854426,
+  "byte_count": 922191,
   "consumer_contract_version": 1,
-  "data_row_count": 9115,
+  "data_row_count": 9876,
   "header": [
     "label",
     "match_type",
@@ -12,7 +12,7 @@
     "ambiguity"
   ],
   "repository": "https://github.com/CultureBotAI/MediaIngredientMech",
-  "sha256": "7113b90cb82ea6d80c0abdb34b0620b71fe6b02e3000327b14dbf797062728ac",
-  "source_commit": "82694054f5bbf74b5392bf8858c9962c2152a35a",
+  "sha256": "a36cd4683feb89e2fc2a1721dc15008d1e10c12044e89a36c27b6621a8aaf262",
+  "source_commit": "9f09e4fb97fb0e6cbbd6f25baca40b36512adb88",
   "source_path": "docs/data/label_index.csv"
 }
