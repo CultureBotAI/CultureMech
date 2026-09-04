@@ -9,7 +9,10 @@ import pytest
 
 from culturemech.export.kgx_export import transform
 from culturemech.ingredients.mim_label_index import (
+    AMBIGUITIES,
     INDEX_HEADER,
+    MAPPING_STATUSES,
+    MATCH_TYPES,
     LabelIndexError,
     MIMLabelIndex,
     ResolutionSource,
@@ -55,6 +58,21 @@ def test_packaged_artifact_is_verified_and_pinned():
     assert index.metadata["sha256"] == (
         "a36cd4683feb89e2fc2a1721dc15008d1e10c12044e89a36c27b6621a8aaf262"
     )
+
+
+def test_packaged_artifact_uses_only_known_enum_values():
+    """A pin bump must not introduce a column value the resolver cannot read.
+
+    `AMBIGUITIES`, `MATCH_TYPES` and `MAPPING_STATUSES` are closed sets here
+    while MIM grows them organically upstream, and an unsafe `ambiguity` fails
+    closed -- so a new value would silently stop labels resolving rather than
+    raise. The row count and hash both still match in that case (#417).
+    """
+
+    rows = get_default_mim_label_index().rows
+    assert {row.ambiguity for row in rows} <= AMBIGUITIES
+    assert {row.match_type for row in rows} <= MATCH_TYPES
+    assert {row.mapping_status for row in rows} <= MAPPING_STATUSES
 
 
 def test_mim_overrides_a_conflicting_local_grounding():
