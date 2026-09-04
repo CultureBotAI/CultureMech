@@ -182,6 +182,16 @@ reports/media_growth_review_manifest.tsv
 reports/media_growth_review_manifest.json
 reports/media_growth_review_manifest_summary.md
 
+# Date-stamped recipe-validation runs: regenerable, large (20 MB per run), and
+# they rot into false findings. The 2026-09-02 run reported two P1 criticals for
+# `medium_type: BUFFER` / `NEGATIVE_CONTROL` -- both valid MediumTypeEnum values
+# since #15 -- and understated MIM coverage, because it predates #401/#403 by six
+# hours. Regenerate with
+# `PYTHONPATH=src python scripts/batch_review_recipes.py --output reports/validation_all`.
+reports/validation_all-*.json
+reports/validation_all-*.md
+reports/validation_all-*.tsv
+
 # Cocktail-nesting proposal worklist: a regenerable diagnostic for the #150 repair,
 # not a tracked artifact. Regenerate with `just propose-cocktail-nesting`.
 data/import_tracking/reports/cocktail_nesting_proposals.tsv
