@@ -69,7 +69,7 @@ PYTHONPATH=src python scripts/generate_coverage_report.py \
 
 # 2. Check ingredient linkages
 PYTHONPATH=src python scripts/validate_ingredients.py \
-  data/normalized_yaml/solutions/DAS_Vitamin_Cocktail.yaml
+  data/normalized_yaml/bacterial/DAS_Vitamin_Cocktail.yaml
 
 # 3. Find usage in media
 grep -r "DAS_Vitamin_Cocktail" data/normalized_yaml/algae/

@@ -18,7 +18,7 @@
 **Solution:** Run `python -c "from culturemech.utils.id_utils import rebuild_culturemech_registry; rebuild_culturemech_registry()"`
 
 **Issue:** Solution reference broken
-**Solution:** Check solution exists in `data/normalized_yaml/solutions/`
+**Solution:** Check the solution record exists. Solutions are `record_kind: SOLUTION` records in the category directories, not a directory of their own (#422): `grep -rl 'preferred_term: <solution name>' data/normalized_yaml/`
 
 **Issue:** Concentration units invalid
 **Solution:** Convert to enum value from schema (e.g., "g/L" → "G_PER_L")
