@@ -154,7 +154,7 @@ The value is always a `mediadive.medium:XXX` node ID. When multiple KG-Microbe m
 
 **No matches found**: Check that `term.id` fields are populated in the media's ingredients. Unmapped ingredients cannot contribute to matching.
 
-**KG-Microbe path not found**: Verify the `--kg-microbe` path points to the repo root containing `data/transformed_last9/mediadive/edges.tsv`.
+**KG-Microbe path not found**: Verify the `--kg-microbe` path points to the repo root containing `<kg-microbe>/data/transformed_last9/mediadive/edges.tsv`.
 
 **Match seems wrong**: Use Option C to inspect the specific recipe. The match is purely by CHEBI set equality — verify both the CultureMech and KG-Microbe recipes actually represent the same medium.
 

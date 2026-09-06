@@ -69,7 +69,7 @@ just research-ingredient-roles-edison-batch \
 ```
 
 Uses the role-research template
-(`templates/ingredient_role_research.md`) that asks Edison for the three
+(`MediaIngredientMech/templates/ingredient_role_research.md`) that asks Edison for the three
 facets, cited primary evidence per role, organism-conditional caveats, and
 a machine-readable fenced YAML block.
 
