@@ -19,3 +19,22 @@ def test_stats_report_uses_discoverable_skill_layout() -> None:
     assert path.is_file()
     assert validate_claude_skills.frontmatter(path)["name"] == "stats-report"
     assert not (ROOT / ".claude" / "skills" / "stats-report.md").exists()
+
+
+def test_validator_accepts_standard_nested_skill_metadata(tmp_path, monkeypatch) -> None:
+    skill_dir = tmp_path / ".claude" / "skills" / "curate-yaml-record"
+    skill_dir.mkdir(parents=True)
+    (skill_dir / "SKILL.md").write_text(
+        "---\n"
+        "name: curate-yaml-record\n"
+        "description: Curate one record.\n"
+        "metadata:\n"
+        "  version: 1.0.0\n"
+        "---\n\n"
+        "# Curate one record\n",
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(validate_claude_skills, "ROOT", tmp_path)
+    monkeypatch.setattr(validate_claude_skills, "SKILLS_DIR", tmp_path / ".claude" / "skills")
+
+    assert validate_claude_skills.validate_skills() == []
