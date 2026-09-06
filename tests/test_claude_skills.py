@@ -1,6 +1,8 @@
 import importlib.util
 from pathlib import Path
 
+import pytest
+
 ROOT = Path(__file__).parents[1]
 SCRIPT = ROOT / "scripts" / "validate_claude_skills.py"
 SPEC = importlib.util.spec_from_file_location("validate_claude_skills", SCRIPT)
@@ -114,3 +116,38 @@ def test_sibling_repository_paths_are_not_checked_here(tmp_path, monkeypatch) ->
         "`<kg-microbe>/data/transformed_last9/mediadive/edges.tsv`.\n",
     )
     assert errors == []
+
+
+def test_a_tree_that_is_not_a_git_checkout_is_a_plain_error(tmp_path, monkeypatch) -> None:
+    """Outside a checkout the answer is "cannot validate", not a traceback."""
+    skill_dir = tmp_path / ".claude" / "skills" / "throwaway"
+    skill_dir.mkdir(parents=True)
+    (skill_dir / "SKILL.md").write_text(
+        "---\nname: throwaway\ndescription: x\nversion: 1.0.0\n---\n\nSee `docs/x.md`.\n",
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(validate_claude_skills, "ROOT", tmp_path)
+    monkeypatch.setattr(validate_claude_skills, "SKILLS_DIR", tmp_path / ".claude" / "skills")
+    validate_claude_skills._tracked_paths.cache_clear()
+    try:
+        with pytest.raises(validate_claude_skills.NotAGitCheckout):
+            validate_claude_skills.validate_skills()
+    finally:
+        validate_claude_skills._tracked_paths.cache_clear()
+
+
+def test_every_layout_error_survives_a_skills_dir_outside_root(tmp_path, monkeypatch) -> None:
+    """The crash #420 fixed for the missing-path message applied to all of them."""
+    skills = tmp_path / ".claude" / "skills"
+    (skills / "renamed").mkdir(parents=True)
+    (skills / "renamed" / "SKILL.md").write_text(
+        "---\nname: other\ndescription: x\n---\n", encoding="utf-8"
+    )
+    (skills / "empty").mkdir()
+    (skills / "loose.md").write_text("x", encoding="utf-8")
+    monkeypatch.setattr(validate_claude_skills, "SKILLS_DIR", skills)
+    errors = validate_claude_skills.validate_skills()
+    assert any("use <skill>/SKILL.md layout" in e for e in errors)
+    assert any("missing SKILL.md" in e for e in errors)
+    assert any("missing version" in e for e in errors)
+    assert any("name must match directory" in e for e in errors)

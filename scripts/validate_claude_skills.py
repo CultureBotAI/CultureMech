@@ -80,12 +80,23 @@ def normalize_reference(raw: str) -> str | None:
     return value
 
 
+class NotAGitCheckout(RuntimeError):
+    """The validator needs git to answer "is this path tracked or generated"."""
+
+
 @cache
 def _tracked_paths(root: Path) -> frozenset[str]:
     """Every tracked file, plus every directory that contains one."""
-    listing = subprocess.run(
-        ["git", "ls-files", "-z"], cwd=root, capture_output=True, text=True, check=True
-    ).stdout
+    try:
+        completed = subprocess.run(
+            ["git", "ls-files", "-z"], cwd=root, capture_output=True, text=True, check=True
+        )
+    except (OSError, subprocess.CalledProcessError) as error:
+        raise NotAGitCheckout(
+            f"{root} is not a git checkout (or git is not installed); local path "
+            f"references can only be validated against git"
+        ) from error
+    listing = completed.stdout
     paths: set[str] = set()
     for entry in listing.split("\0"):
         if not entry:
@@ -145,31 +156,29 @@ def validate_skills() -> list[str]:
     errors: list[str] = []
     loose_markdown = sorted(SKILLS_DIR.glob("*.md"))
     for path in loose_markdown:
-        errors.append(f"{path.relative_to(ROOT)}: use <skill>/SKILL.md layout")
+        errors.append(f"{_display(path)}: use <skill>/SKILL.md layout")
 
     for directory in sorted(path for path in SKILLS_DIR.iterdir() if path.is_dir()):
         skill_file = directory / "SKILL.md"
         if not skill_file.is_file():
-            errors.append(f"{directory.relative_to(ROOT)}: missing SKILL.md")
+            errors.append(f"{_display(directory)}: missing SKILL.md")
             continue
         try:
             metadata = frontmatter(skill_file)
         except ValueError as error:
-            errors.append(f"{skill_file.relative_to(ROOT)}: {error}")
+            errors.append(f"{_display(skill_file)}: {error}")
             continue
         missing = sorted(REQUIRED_FRONTMATTER - metadata.keys())
         if missing:
-            errors.append(f"{skill_file.relative_to(ROOT)}: missing {', '.join(missing)}")
+            errors.append(f"{_display(skill_file)}: missing {', '.join(missing)}")
         nested_metadata = metadata.get("metadata")
         nested_version = (
             nested_metadata.get("version") if isinstance(nested_metadata, dict) else None
         )
         if not metadata.get("version") and not nested_version:
-            errors.append(f"{skill_file.relative_to(ROOT)}: missing version")
+            errors.append(f"{_display(skill_file)}: missing version")
         if metadata.get("name") != directory.name:
-            errors.append(
-                f"{skill_file.relative_to(ROOT)}: name must match directory {directory.name!r}"
-            )
+            errors.append(f"{_display(skill_file)}: name must match directory {directory.name!r}")
 
         for document in sorted(directory.rglob("*.md")):
             seen: set[str] = set()
@@ -187,7 +196,11 @@ def validate_skills() -> list[str]:
 
 
 def main() -> int:
-    errors = validate_skills()
+    try:
+        errors = validate_skills()
+    except NotAGitCheckout as error:
+        print(f"error: {error}")
+        return 1
     if errors:
         for error in errors:
             print(f"error: {error}")
