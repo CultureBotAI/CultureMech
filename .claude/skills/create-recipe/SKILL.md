@@ -162,7 +162,15 @@ just assign-ids
 - `archaea/` - Archaeal media
 - `fungal/` - Fungal/yeast media
 - `specialized/` - Cross-kingdom or specialized
-- `solutions/` - Stock solutions (not complete media)
+
+There is no `solutions/` category. A stock solution is a record with
+`record_kind: SOLUTION`, saved in the category directory of the media it
+serves; most sit in `bacterial/`, as
+`data/normalized_yaml/bacterial/DAS_Vitamin_Cocktail.yaml` does. When the
+choice is not obvious, follow an existing solution record from the same source
+rather than guessing (see `docs/CONTRIBUTING.md`).
+`data/normalized_yaml/solutions/` holds one legacy index and no records
+(#422).
 
 **Filename Format**:
 ```
@@ -314,10 +322,10 @@ target_organisms:
 
 **Process**:
 1. Identify as solution (not complete medium)
-2. Save to `solutions/` directory
-3. Mark as stock solution
+2. Save to the category directory of the media it serves (`bacterial/` here)
+3. Set `record_kind: SOLUTION`
 
-**Output Location**: `data/normalized_yaml/solutions/<slug>.yaml` (here `10x_pbs.yaml`)
+**Output Location**: `data/normalized_yaml/<category>/<slug>.yaml` (here `bacterial/10x_pbs.yaml`)
 
 ### Pattern 4: Batch Import
 
@@ -421,7 +429,7 @@ pH 7.3, autoclave 121°C for 15 min
 
 **Input**: "Create 1 M Tris-HCl pH 8.0 stock solution"
 
-**Output**: `data/normalized_yaml/solutions/<slug>.yaml` (here `1m_tris_hcl_ph8.yaml`)
+**Output**: `data/normalized_yaml/<category>/<slug>.yaml` with `record_kind: SOLUTION` (here `bacterial/1m_tris_hcl_ph8.yaml`)
 
 ## Tips for Best Results
 

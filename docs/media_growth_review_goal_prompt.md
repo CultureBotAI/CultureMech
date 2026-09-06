@@ -13,7 +13,7 @@ Use the repo's media YAML records themselves as the target media list. Research 
 Targets:
 - Primary target corpus: every media recipe YAML record under `data/normalized_yaml/**/*.yaml`; this list of YAML records is the target media list.
 - Include these directories: `data/normalized_yaml/algae`, `data/normalized_yaml/archaea`, `data/normalized_yaml/bacterial`, `data/normalized_yaml/fungal`, and `data/normalized_yaml/specialized`.
-- Treat `data/normalized_yaml/solutions` as supporting stock-solution records, not primary growth-media targets, unless a solution record is clearly used as a growable medium or is needed to model a parent medium or variant.
+- Treat records with `record_kind: SOLUTION` (or a `mediadive.solution:` / `MediaIngredientMech:` term id) inside those directories as supporting stock-solution records, not primary growth-media targets, unless a solution record is clearly used as a growable medium or is needed to model a parent medium or variant.
 - Process the corpus in explicit batches when needed. Each batch report must state the exact YAML paths reviewed.
 
 Search strategy:

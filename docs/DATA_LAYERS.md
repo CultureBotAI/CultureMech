@@ -303,7 +303,19 @@ normalized_yaml/
     Anaerobic_Medium.yaml
     Marine_Broth.yaml
     ...
+  solutions/
+    mediadive_solution_index.json   # legacy index only; no records live here
 ```
+
+Stock solutions are **not a category**. A solution record carries
+`record_kind: SOLUTION` (or an upstream `mediadive.solution:` /
+`MediaIngredientMech:` term id; see `scripts/record_kinds.py`) and lives in the
+category directory of the media it serves -- 4,772 of them in `bacterial/`.
+`solutions/` held them until `fe5b2f016d` (2026-04-04) moved them, and now
+holds one legacy index. The schema's `CategoryEnum` lists the five directories
+above plus a transitional `imported` value that no record or directory uses;
+`tests/test_record_directories.py` pins that every directory holding records
+is a `CategoryEnum` value (#422).
 
 ### Importing from Raw to Normalized
 
