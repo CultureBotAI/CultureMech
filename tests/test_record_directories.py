@@ -47,6 +47,26 @@ def _directories_holding_records() -> set[str]:
     return holding
 
 
+def _records_at_the_top_level() -> list[str]:
+    """Tracked YAML directly under the corpus root. `validate-strict` would see
+    it (it uses `rglob`), but the audits, the index generator and the repair
+    scripts walk `*/*.yaml` and would not; the first version of this guard
+    skipped it too (review of #424). Depth is filtered here, not in the
+    pathspec: a git pathspec `*` matches across `/`."""
+    listing = subprocess.run(
+        ["git", "ls-files", "-z", "--", "data/normalized_yaml"],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        check=True,
+    ).stdout
+    return sorted(
+        entry
+        for entry in listing.split("\0")
+        if entry.endswith(".yaml") and len(Path(entry).parts) == 3
+    )
+
+
 def test_every_directory_holding_records_is_a_schema_category() -> None:
     categories = _category_values()
     holding = _directories_holding_records()
@@ -65,6 +85,14 @@ def test_the_guard_is_not_vacuous() -> None:
     populated = {"bacterial", "fungal", "archaea", "specialized", "algae"}
     assert _directories_holding_records() == populated
     assert _category_values() == populated | {"imported"}
+
+
+def test_no_record_sits_at_the_top_level_of_the_corpus() -> None:
+    stray = _records_at_the_top_level()
+    assert not stray, (
+        f"{len(stray)} record(s) directly under data/normalized_yaml/, where the "
+        f"`*/*.yaml` audits do not look: {stray[:5]}. Records go in a category directory."
+    )
 
 
 def test_the_legacy_solutions_directory_holds_no_records() -> None:

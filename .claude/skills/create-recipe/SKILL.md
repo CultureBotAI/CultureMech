@@ -166,7 +166,9 @@ just assign-ids
 There is no `solutions/` category. A stock solution is a record with
 `record_kind: SOLUTION`, saved in the category directory of the media it
 serves; most sit in `bacterial/`, as
-`data/normalized_yaml/bacterial/DAS_Vitamin_Cocktail.yaml` does.
+`data/normalized_yaml/bacterial/DAS_Vitamin_Cocktail.yaml` does. When the
+choice is not obvious, follow an existing solution record from the same source
+rather than guessing (see `docs/CONTRIBUTING.md`).
 `data/normalized_yaml/solutions/` holds one legacy index and no records
 (#422).
 
