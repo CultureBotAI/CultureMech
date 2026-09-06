@@ -91,7 +91,7 @@ ingredients:  # <-- Collection key
 - ✗ Git merge conflicts more likely
 
 **Files**:
-- Data: `data/curated/unmapped_ingredients.yaml`
+- Data, in the MediaIngredientMech checkout: `MediaIngredientMech/data/curated/unmapped_ingredients.yaml`
 - ID script in the MediaIngredientMech checkout:
   `MediaIngredientMech/scripts/add_mediaingredientmech_ids.py`
 

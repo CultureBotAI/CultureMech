@@ -317,7 +317,7 @@ target_organisms:
 2. Save to `solutions/` directory
 3. Mark as stock solution
 
-**Output Location**: `data/normalized_yaml/solutions/10x_PBS.yaml`
+**Output Location**: `data/normalized_yaml/solutions/<slug>.yaml` (here `10x_pbs.yaml`)
 
 ### Pattern 4: Batch Import
 
@@ -397,7 +397,7 @@ Create a recipe for TSB (Tryptic Soy Broth):
 pH 7.3, autoclave 121°C for 15 min
 ```
 
-**Output**: `data/normalized_yaml/bacterial/TSB.yaml` with CultureMech ID
+**Output**: `data/normalized_yaml/bacterial/tsb.yaml` with CultureMech ID
 
 ### Example 2: From JSON
 
@@ -421,7 +421,7 @@ pH 7.3, autoclave 121°C for 15 min
 
 **Input**: "Create 1 M Tris-HCl pH 8.0 stock solution"
 
-**Output**: `data/normalized_yaml/solutions/1M_Tris_HCl_pH8.yaml`
+**Output**: `data/normalized_yaml/solutions/<slug>.yaml` (here `1m_tris_hcl_ph8.yaml`)
 
 ## Tips for Best Results
 
