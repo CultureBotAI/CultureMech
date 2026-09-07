@@ -17,6 +17,7 @@ Example:
 """
 
 import argparse
+import os
 import sys
 from pathlib import Path
 
@@ -28,11 +29,14 @@ from culturemech.visualization.ingredient_umap_generator import IngredientUMAPGe
 _REPO_ROOT = Path(__file__).parent.parent
 
 _EMBEDDINGS_FILENAME = "DeepWalkSkipGramEnsmallen_degreenorm_embedding_512_v2_2026-05-26_00_56_15.tsv.gz"
-# Prefer local data/embeddings/; fall back to sibling CommunityMech location
+# Prefer local data/embeddings/; fall back to the CommunityMech checkout,
+# COMMUNITYMECH_ROOT or the sibling directory (CultureMech#430)
 _LOCAL_EMBEDDINGS = _REPO_ROOT / "data" / "embeddings" / _EMBEDDINGS_FILENAME
-_COMMUNITYMECH_EMBEDDINGS = (
-    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/CommunityMech"
-    "/CommunityMech/data/embeddings/" + _EMBEDDINGS_FILENAME
+_COMMUNITYMECH_ROOT = Path(
+    os.environ.get("COMMUNITYMECH_ROOT", _REPO_ROOT.parent / "CommunityMech")
+)
+_COMMUNITYMECH_EMBEDDINGS = str(
+    _COMMUNITYMECH_ROOT / "data" / "embeddings" / _EMBEDDINGS_FILENAME
 )
 KG_MICROBE_EMBEDDINGS = str(_LOCAL_EMBEDDINGS) if _LOCAL_EMBEDDINGS.exists() else _COMMUNITYMECH_EMBEDDINGS
 

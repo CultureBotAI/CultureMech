@@ -19,6 +19,7 @@ This script:
 
 import argparse
 import logging
+import os
 import sys
 from pathlib import Path
 from typing import Dict, Any, Optional
@@ -27,6 +28,13 @@ import yaml
 
 # Add src to path
 sys.path.insert(0, str(Path(__file__).parent.parent / 'src'))
+
+REPO_ROOT = Path(__file__).resolve().parent.parent
+# CULTUREBOTHT_ROOT names the outer CultureBotHT checkout; the repository
+# itself is nested one level down (CultureMech#430).
+CULTUREBOTHT_ROOT = Path(
+    os.environ.get('CULTUREBOTHT_ROOT', REPO_ROOT.parent / 'CultureBotHT')
+)
 
 logging.basicConfig(
     level=logging.INFO,
@@ -249,8 +257,8 @@ def main():
     parser.add_argument(
         '--culturebotht-dir',
         type=Path,
-        default=Path('/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/CultureBotHT/CultureBotHT'),
-        help='Path to CultureBotHT repository'
+        default=CULTUREBOTHT_ROOT / 'CultureBotHT',
+        help='Path to CultureBotHT repository (default: $CULTUREBOTHT_ROOT/CultureBotHT)'
     )
 
     parser.add_argument(

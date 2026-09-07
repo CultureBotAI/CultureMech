@@ -15,8 +15,9 @@ from pymongo import MongoClient
 MONGODB_URI = "mongodb://localhost:27017"
 DATABASE_NAME = "mediadive"
 
-# Output directory
-OUTPUT_DIR = Path("/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/CultureMech/data/raw/mediadive")
+# Output directory, inside this checkout
+REPO_ROOT = Path(__file__).resolve().parent.parent
+OUTPUT_DIR = REPO_ROOT / "data" / "raw" / "mediadive"
 
 
 def export_collection(db, collection_name: str, output_file: Path):
