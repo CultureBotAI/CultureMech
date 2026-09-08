@@ -9,6 +9,7 @@ This script connects to the local MongoDB database and exports:
 
 import json
 from pathlib import Path
+
 from pymongo import MongoClient
 
 # MongoDB connection
@@ -29,11 +30,11 @@ def export_collection(db, collection_name: str, output_file: Path):
 
     # Convert ObjectId to string
     for doc in documents:
-        if '_id' in doc:
-            doc['_id'] = str(doc['_id'])
+        if "_id" in doc:
+            doc["_id"] = str(doc["_id"])
 
     # Write to file
-    with open(output_file, 'w') as f:
+    with open(output_file, "w") as f:
         json.dump(documents, f, indent=2)
 
     print(f"✓ Exported {len(documents)} documents from {collection_name} to {output_file}")
@@ -64,17 +65,13 @@ def main():
         # Export medium_composition
         print("\n1. Exporting medium_composition...")
         comp_count = export_collection(
-            db,
-            "medium_composition",
-            OUTPUT_DIR / "medium_composition_data.json"
+            db, "medium_composition", OUTPUT_DIR / "medium_composition_data.json"
         )
 
         # Export medium_strains
         print("\n2. Exporting medium_strains...")
         strain_count = export_collection(
-            db,
-            "medium_strains",
-            OUTPUT_DIR / "medium_strains_data.json"
+            db, "medium_strains", OUTPUT_DIR / "medium_strains_data.json"
         )
 
         # Create summary
@@ -83,10 +80,10 @@ def main():
             "composition_records": comp_count,
             "strain_records": strain_count,
             "database": DATABASE_NAME,
-            "collections": ["medium_composition", "medium_strains"]
+            "collections": ["medium_composition", "medium_strains"],
         }
 
-        with open(OUTPUT_DIR / "composition_export_stats.json", 'w') as f:
+        with open(OUTPUT_DIR / "composition_export_stats.json", "w") as f:
             json.dump(summary, f, indent=2)
 
         print("\n" + "=" * 60)
