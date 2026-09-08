@@ -31,9 +31,15 @@ import yaml
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-# CULTUREBOTHT_ROOT names the outer CultureBotHT checkout; the repository
-# itself is nested one level down (CultureMech#430).
-CULTUREBOTHT_ROOT = Path(os.environ.get("CULTUREBOTHT_ROOT", REPO_ROOT.parent / "CultureBotHT"))
+# CULTUREBOTHT_ROOT names the CultureBotHT repository itself, matching
+# COMMUNITYMECH_ROOT in generate_ingredient_umap.py (#435). The sibling
+# fallback carries the doubled directory because the checkout nests
+# (CultureBotHT/CultureBotHT); the variable does not (#430).
+# `or`, not a get() default: an exported-but-empty variable is Path("") is
+# Path("."), which would resolve against the working directory (#434).
+CULTUREBOTHT_ROOT = Path(
+    os.environ.get("CULTUREBOTHT_ROOT") or REPO_ROOT.parent / "CultureBotHT" / "CultureBotHT"
+)
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 logger = logging.getLogger(__name__)
@@ -270,8 +276,8 @@ def main():
     parser.add_argument(
         "--culturebotht-dir",
         type=Path,
-        default=CULTUREBOTHT_ROOT / "CultureBotHT",
-        help="Path to CultureBotHT repository (default: $CULTUREBOTHT_ROOT/CultureBotHT)",
+        default=CULTUREBOTHT_ROOT,
+        help="Path to the CultureBotHT repository (default: $CULTUREBOTHT_ROOT)",
     )
 
     parser.add_argument(

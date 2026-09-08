@@ -10,6 +10,12 @@ from its fleet environment variable.
 
 A dot-directory under home (`~/.data/oaklib`, `/Users/x/.cache`) is a tool
 cache, not a checkout, and stays allowed.
+
+Scope is every Python source we ship, `scripts/*.py` and `src/**/*.py`, not
+one directory: the first cut globbed `scripts/*.py` and so could not see the
+same hardcode sitting in two importable modules that `just import-pfas-roles`
+and `just import-pfas-cofactors` run (#432). Python sources only — the
+`Documents/` branch is deliberately broad and would fire on prose.
 """
 
 from __future__ import annotations
@@ -21,6 +27,7 @@ import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = ROOT / "scripts"
+SRC = ROOT / "src"
 
 _MACHINE_PATH = re.compile(
     r"""(
@@ -37,13 +44,18 @@ def has_machine_path(source: str) -> bool:
     return _MACHINE_PATH.search(source) is not None
 
 
-def _scripts() -> list[Path]:
-    return sorted(SCRIPTS.glob("*.py"))
+def _python_sources() -> list[Path]:
+    """Every Python source in the repository, both trees."""
+    return sorted(SCRIPTS.glob("*.py")) + sorted(SRC.rglob("*.py"))
 
 
-def test_there_are_scripts_to_check():
-    """Guards the parametrization: an empty glob would pass everything."""
-    assert len(_scripts()) >= 10, f"only {len(_scripts())} scripts found"
+def test_both_trees_are_covered():
+    """Guards the parametrization: an empty glob would pass everything, and a
+    glob that reaches only one tree is how #432 stayed invisible."""
+    found = _python_sources()
+    assert len(found) >= 10, f"only {len(found)} Python sources found"
+    for tree in (SCRIPTS, SRC):
+        assert any(tree in p.parents for p in found), f"nothing found under {tree.name}/"
 
 
 @pytest.mark.parametrize(
@@ -73,10 +85,10 @@ def test_the_guard_allows_caches_and_derived_paths(snippet):
     assert not has_machine_path(snippet), snippet
 
 
-@pytest.mark.parametrize("path", _scripts(), ids=lambda p: p.name)
-def test_no_script_hardcodes_a_machine_path(path):
+@pytest.mark.parametrize("path", _python_sources(), ids=lambda p: str(p.relative_to(ROOT)))
+def test_no_python_source_hardcodes_a_machine_path(path):
     assert not has_machine_path(path.read_text(encoding="utf-8")), (
-        f"{path.name} embeds a path that exists on one machine; derive it from "
+        f"{path.relative_to(ROOT)} embeds a path that exists on one machine; derive it from "
         f"the file's own location or take the other checkout's root from its "
         f"environment variable"
     )

@@ -3,11 +3,19 @@ Import cofactor hierarchy from PFASCommunityAgents.
 Creates cofactor reference data and ingredient mappings.
 """
 
-import yaml
-from pathlib import Path
+import os
 import sys
+from pathlib import Path
 
-PFAS_REPO = Path("/Users/marcin/Documents/VIMSS/ontology/PFAS/PFASCommunityAgents")
+import yaml
+
+REPO_ROOT = Path(__file__).resolve().parents[3]
+# PFASCOMMUNITYAGENTS_ROOT names the PFASCommunityAgents checkout; the
+# fallback is the sibling directory. `or`, not a get() default, so an
+# exported-but-empty variable does not become Path(".") (#432, #434).
+PFAS_REPO = Path(
+    os.environ.get("PFASCOMMUNITYAGENTS_ROOT") or REPO_ROOT.parent / "PFASCommunityAgents"
+)
 COFACTOR_FILE = PFAS_REPO / "data/reference/cofactor_hierarchy.yaml"
 MAPPING_FILE = PFAS_REPO / "data/reference/ingredient_cofactor_mapping.csv"
 
@@ -31,54 +39,54 @@ def import_cofactor_hierarchy():
 
     cofactors = []
 
-    for cat_key, cat_data in pfas_data.get('cofactor_hierarchy', {}).items():
+    for cat_key, cat_data in pfas_data.get("cofactor_hierarchy", {}).items():
         category_enum = CATEGORY_MAPPING.get(cat_key, "OTHER_SPECIALIZED")
 
-        for cofactor_key, cofactor_data in cat_data.get('cofactors', {}).items():
+        for cofactor_key, cofactor_data in cat_data.get("cofactors", {}).items():
             cofactor = {
-                'preferred_term': cofactor_data.get('names', [cofactor_key])[0],
-                'category': category_enum,
+                "preferred_term": cofactor_data.get("names", [cofactor_key])[0],
+                "category": category_enum,
             }
 
             # Add CHEBI term
-            if 'id' in cofactor_data:
-                cofactor['term'] = {
-                    'id': cofactor_data['id'],
-                    'label': cofactor['preferred_term'],
+            if "id" in cofactor_data:
+                cofactor["term"] = {
+                    "id": cofactor_data["id"],
+                    "label": cofactor["preferred_term"],
                 }
 
             # Add precursor
-            if 'precursor' in cofactor_data:
-                cofactor['precursor'] = cofactor_data['precursor']
-                if 'precursor_id' in cofactor_data:
-                    cofactor['precursor_term'] = {
-                        'id': cofactor_data['precursor_id'],
-                        'label': cofactor_data['precursor'],
+            if "precursor" in cofactor_data:
+                cofactor["precursor"] = cofactor_data["precursor"]
+                if "precursor_id" in cofactor_data:
+                    cofactor["precursor_term"] = {
+                        "id": cofactor_data["precursor_id"],
+                        "label": cofactor_data["precursor"],
                     }
 
             # Add EC associations
-            if 'ec_associations' in cofactor_data:
-                cofactor['ec_associations'] = cofactor_data['ec_associations']
+            if "ec_associations" in cofactor_data:
+                cofactor["ec_associations"] = cofactor_data["ec_associations"]
 
             # Add KEGG pathways
-            if 'kegg_pathways' in cofactor_data:
-                cofactor['kegg_pathways'] = cofactor_data['kegg_pathways']
+            if "kegg_pathways" in cofactor_data:
+                cofactor["kegg_pathways"] = cofactor_data["kegg_pathways"]
 
             # Add enzyme examples
-            if 'enzyme_examples' in cofactor_data:
-                cofactor['enzyme_examples'] = cofactor_data['enzyme_examples']
+            if "enzyme_examples" in cofactor_data:
+                cofactor["enzyme_examples"] = cofactor_data["enzyme_examples"]
 
             # Add biosynthesis genes
-            if 'biosynthesis_genes' in cofactor_data:
-                cofactor['biosynthesis_genes'] = cofactor_data['biosynthesis_genes']
+            if "biosynthesis_genes" in cofactor_data:
+                cofactor["biosynthesis_genes"] = cofactor_data["biosynthesis_genes"]
 
             # Add bioavailability
-            if 'bioavailability' in cofactor_data:
-                cofactor['bioavailability'] = cofactor_data['bioavailability']
+            if "bioavailability" in cofactor_data:
+                cofactor["bioavailability"] = cofactor_data["bioavailability"]
 
             # Add notes
-            if 'notes' in cofactor_data:
-                cofactor['notes'] = cofactor_data['notes']
+            if "notes" in cofactor_data:
+                cofactor["notes"] = cofactor_data["notes"]
 
             cofactors.append(cofactor)
 
@@ -91,8 +99,14 @@ def write_cofactor_reference(cofactors: list, output_dir: Path):
     output_dir.mkdir(parents=True, exist_ok=True)
     output_file = output_dir / "cofactors.yaml"
 
-    with open(output_file, 'w') as f:
-        yaml.dump({'cofactors': cofactors}, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
+    with open(output_file, "w") as f:
+        yaml.dump(
+            {"cofactors": cofactors},
+            f,
+            default_flow_style=False,
+            allow_unicode=True,
+            sort_keys=False,
+        )
 
     print(f"✓ Wrote {len(cofactors)} cofactors to {output_file}")
 
@@ -102,8 +116,12 @@ def main():
     import argparse
 
     parser = argparse.ArgumentParser(description="Import cofactor hierarchy from PFAS data")
-    parser.add_argument("--output-dir", type=Path, default=Path("data/reference"),
-                        help="Output directory for cofactor reference (default: data/reference)")
+    parser.add_argument(
+        "--output-dir",
+        type=Path,
+        default=Path("data/reference"),
+        help="Output directory for cofactor reference (default: data/reference)",
+    )
 
     args = parser.parse_args()
 
@@ -118,7 +136,7 @@ def main():
     print("\nCofactors by category:")
     by_category = {}
     for cofactor in cofactors:
-        cat = cofactor.get('category', 'UNKNOWN')
+        cat = cofactor.get("category", "UNKNOWN")
         by_category[cat] = by_category.get(cat, 0) + 1
 
     for cat, count in sorted(by_category.items()):

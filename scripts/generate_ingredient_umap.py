@@ -26,7 +26,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
 from culturemech.visualization.ingredient_umap_generator import IngredientUMAPGenerator
 
-_REPO_ROOT = Path(__file__).parent.parent
+_REPO_ROOT = Path(__file__).resolve().parent.parent
 
 _EMBEDDINGS_FILENAME = (
     "DeepWalkSkipGramEnsmallen_degreenorm_embedding_512_v2_2026-05-26_00_56_15.tsv.gz"
@@ -34,8 +34,10 @@ _EMBEDDINGS_FILENAME = (
 # Prefer local data/embeddings/; fall back to the CommunityMech checkout,
 # COMMUNITYMECH_ROOT or the sibling directory (CultureMech#430)
 _LOCAL_EMBEDDINGS = _REPO_ROOT / "data" / "embeddings" / _EMBEDDINGS_FILENAME
+# `or`, not a get() default: an exported-but-empty variable is Path("") is
+# Path("."), which would resolve against the working directory (#434).
 _COMMUNITYMECH_ROOT = Path(
-    os.environ.get("COMMUNITYMECH_ROOT", _REPO_ROOT.parent / "CommunityMech")
+    os.environ.get("COMMUNITYMECH_ROOT") or _REPO_ROOT.parent / "CommunityMech"
 )
 _COMMUNITYMECH_EMBEDDINGS = str(_COMMUNITYMECH_ROOT / "data" / "embeddings" / _EMBEDDINGS_FILENAME)
 KG_MICROBE_EMBEDDINGS = (
