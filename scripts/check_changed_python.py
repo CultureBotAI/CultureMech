@@ -11,10 +11,30 @@ from collections.abc import Sequence
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-EXCLUDED = {
+# Generated files, and every Python file vendored from claw. A vendored file
+# is byte-identical to claw's canonical copy by contract -- check_vendored_sync
+# fails if it is not -- so it cannot be reformatted or lint-fixed here. Only
+# check_vendored_sync.py was listed, which held only while no other vendored
+# file changed; re-vendoring validate_id_label_correspondence.py made this
+# gate and the vendored-sync gate demand opposite things of the same bytes.
+# Source of truth is claw's vendored_artifacts.json (see #437 to derive it
+# rather than restate it here).
+VENDORED_FROM_CLAW = {
+    "scripts/_edison_capture.py",
     "scripts/check_vendored_sync.py",
-    "src/culturemech/schema/culturemech_dataclasses.py",
+    "scripts/chem_formula.py",
+    "scripts/deep_research_contract.py",
+    "scripts/validate_id_label_correspondence.py",
+    "tests/test_curation_timestamp_schema.py",
+    "tests/test_id_label_empty_adapter.py",
+    "tests/test_id_label_plausibility.py",
+    "tests/test_id_label_unknown_prefix.py",
+    "tests/test_provider_triage_contract.py",
+    "tests/test_skill_frontmatter.py",
 }
+EXCLUDED = {
+    "src/culturemech/schema/culturemech_dataclasses.py",
+} | VENDORED_FROM_CLAW
 
 
 def select_python_files(paths: Sequence[str]) -> list[str]:
