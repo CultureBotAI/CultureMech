@@ -19,19 +19,29 @@ This script:
 
 import argparse
 import logging
+import os
 import sys
-from pathlib import Path
-from typing import Dict, Any, Optional
 from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any
+
 import yaml
 
 # Add src to path
-sys.path.insert(0, str(Path(__file__).parent.parent / 'src'))
+sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(levelname)s: %(message)s'
+REPO_ROOT = Path(__file__).resolve().parent.parent
+# CULTUREBOTHT_ROOT names the CultureBotHT repository itself, matching
+# COMMUNITYMECH_ROOT in generate_ingredient_umap.py (#435). The sibling
+# fallback carries the doubled directory because the checkout nests
+# (CultureBotHT/CultureBotHT); the variable does not (#430).
+# `or`, not a get() default: an exported-but-empty variable is Path("") is
+# Path("."), which would resolve against the working directory (#434).
+CULTUREBOTHT_ROOT = Path(
+    os.environ.get("CULTUREBOTHT_ROOT") or REPO_ROOT.parent / "CultureBotHT" / "CultureBotHT"
 )
+
+logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 logger = logging.getLogger(__name__)
 
 
@@ -40,25 +50,35 @@ class CultureBotHTImporter:
 
     # Medium type mapping: CultureBotHT → CultureMech
     MEDIUM_TYPE_MAP = {
-        'MINIMAL': 'DEFINED',
-        'DEFINED': 'DEFINED',
-        'RICH': 'COMPLEX',
-        'COMPLEX': 'COMPLEX',
+        "MINIMAL": "DEFINED",
+        "DEFINED": "DEFINED",
+        "RICH": "COMPLEX",
+        "COMPLEX": "COMPLEX",
     }
 
     # Category inference from media name patterns
     CATEGORY_PATTERNS = {
-        'bacterial': [
-            'LB', 'TSB', 'nutrient', 'brain_heart', 'mueller_hinton',
-            'pseudomonas', 'bacillus', 'escherichia', 'salmonella'
+        "bacterial": [
+            "LB",
+            "TSB",
+            "nutrient",
+            "brain_heart",
+            "mueller_hinton",
+            "pseudomonas",
+            "bacillus",
+            "escherichia",
+            "salmonella",
         ],
-        'algae': [
-            'BG11', 'BG12', 'cyanobacteria', 'synechococcus', 'prochlorococcus',
-            'photosynthetic', 'blue_green'
+        "algae": [
+            "BG11",
+            "BG12",
+            "cyanobacteria",
+            "synechococcus",
+            "prochlorococcus",
+            "photosynthetic",
+            "blue_green",
         ],
-        'fungal': [
-            'PDA', 'sabouraud', 'malt', 'czapek', 'yeast_mold', 'fungal'
-        ],
+        "fungal": ["PDA", "sabouraud", "malt", "czapek", "yeast_mold", "fungal"],
     }
 
     def __init__(self, culturebotht_dir: Path, output_dir: Path, dry_run: bool = False):
@@ -68,16 +88,16 @@ class CultureBotHTImporter:
         self.dry_run = dry_run
 
         self.stats = {
-            'files_read': 0,
-            'files_imported': 0,
-            'files_skipped': 0,
-            'errors': 0,
-            'categories': {
-                'bacterial': 0,
-                'algae': 0,
-                'fungal': 0,
-                'specialized': 0,
-            }
+            "files_read": 0,
+            "files_imported": 0,
+            "files_skipped": 0,
+            "errors": 0,
+            "categories": {
+                "bacterial": 0,
+                "algae": 0,
+                "fungal": 0,
+                "specialized": 0,
+            },
         }
 
     def infer_category(self, medium_name: str) -> str:
@@ -90,93 +110,98 @@ class CultureBotHTImporter:
                 return category.upper()
 
         # Default to specialized
-        return 'SPECIALIZED'
+        return "SPECIALIZED"
 
-    def transform_medium(self, source_data: Dict[str, Any], source_file: str) -> Dict[str, Any]:
+    def transform_medium(self, source_data: dict[str, Any], source_file: str) -> dict[str, Any]:
         """Transform CultureBotHT medium to CultureMech schema."""
 
         # Start with source data (already mostly compatible)
         medium = source_data.copy()
 
         # Map medium type
-        if 'medium_type' in medium:
-            original_type = medium['medium_type']
-            medium['medium_type'] = self.MEDIUM_TYPE_MAP.get(original_type, original_type)
+        if "medium_type" in medium:
+            original_type = medium["medium_type"]
+            medium["medium_type"] = self.MEDIUM_TYPE_MAP.get(original_type, original_type)
 
         # Infer and add category
-        if 'category' not in medium:
-            medium['category'] = self.infer_category(medium.get('name', ''))
+        if "category" not in medium:
+            medium["category"] = self.infer_category(medium.get("name", ""))
 
         # Add source tracking
-        if 'sources' not in medium:
-            medium['sources'] = []
+        if "sources" not in medium:
+            medium["sources"] = []
 
-        medium['sources'].append({
-            'database': 'CultureBotHT',
-            'database_id': medium.get('name', ''),
-            'url': f'https://github.com/CultureBotAI/CultureBotHT'
-        })
+        medium["sources"].append(
+            {
+                "database": "CultureBotHT",
+                "database_id": medium.get("name", ""),
+                "url": "https://github.com/CultureBotAI/CultureBotHT",
+            }
+        )
 
         # Add import metadata
-        if 'curation_history' not in medium:
-            medium['curation_history'] = []
+        if "curation_history" not in medium:
+            medium["curation_history"] = []
 
-        medium['curation_history'].append({
-            'timestamp': datetime.now(timezone.utc).isoformat(),
-            'curator': 'import_from_culturebotht.py',
-            'action': 'IMPORTED',
-            'notes': f'Imported from CultureBotHT repository: {source_file}'
-        })
+        medium["curation_history"].append(
+            {
+                "timestamp": datetime.now(timezone.utc).isoformat(),
+                "curator": "import_from_culturebotht.py",
+                "action": "IMPORTED",
+                "notes": f"Imported from CultureBotHT repository: {source_file}",
+            }
+        )
 
         # Add data quality flags if needed
-        if 'data_quality_flags' not in medium:
-            medium['data_quality_flags'] = []
+        if "data_quality_flags" not in medium:
+            medium["data_quality_flags"] = []
 
         # Check for unmapped ingredients
         unmapped_count = 0
-        for ingredient in medium.get('ingredients', []):
-            if 'term' not in ingredient or not ingredient.get('term', {}).get('id'):
+        for ingredient in medium.get("ingredients", []):
+            if "term" not in ingredient or not ingredient.get("term", {}).get("id"):
                 unmapped_count += 1
 
         if unmapped_count > 0:
-            medium['data_quality_flags'].append('has_unmapped_ingredients')
+            medium["data_quality_flags"].append("has_unmapped_ingredients")
 
         return medium
 
     def sanitize_filename(self, name: str) -> str:
         """Convert name to safe filename (snake_case)."""
         import re
+
         # Convert to lowercase
         name = name.lower()
         # Replace spaces and special chars with underscore
-        name = re.sub(r'[^a-z0-9]+', '_', name)
+        name = re.sub(r"[^a-z0-9]+", "_", name)
         # Remove leading/trailing underscores
-        name = name.strip('_')
+        name = name.strip("_")
         # Collapse multiple underscores
-        name = re.sub(r'_+', '_', name)
+        name = re.sub(r"_+", "_", name)
         return name
 
     def import_file(self, yaml_file: Path) -> bool:
         """Import a single media YAML file."""
         try:
             # Read source file
-            with open(yaml_file, 'r', encoding='utf-8') as f:
+            with open(yaml_file, encoding="utf-8") as f:
                 source_data = yaml.safe_load(f)
 
-            if not source_data or 'name' not in source_data:
+            if not source_data or "name" not in source_data:
                 logger.warning(f"Skipping {yaml_file.name}: No name field")
-                self.stats['files_skipped'] += 1
+                self.stats["files_skipped"] += 1
                 return False
 
             # Transform to CultureMech schema
             medium = self.transform_medium(source_data, yaml_file.name)
 
             # Determine output category and filename
-            category = medium['category'].lower()
-            self.stats['categories'][category] = self.stats['categories'].get(category, 0) + 1
+            category = medium["category"].lower()
+            self.stats["categories"][category] = self.stats["categories"].get(category, 0) + 1
 
             # Create safe filename from name field
-            safe_name = self.sanitize_filename(medium['name'])
+            safe_name = self.sanitize_filename(medium["name"])
             output_filename = f"{safe_name}.yaml"
 
             # Determine output path
@@ -188,16 +213,18 @@ class CultureBotHTImporter:
                 output_category_dir.mkdir(parents=True, exist_ok=True)
 
                 # Write output file
-                with open(output_path, 'w', encoding='utf-8') as f:
-                    yaml.dump(medium, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
+                with open(output_path, "w", encoding="utf-8") as f:
+                    yaml.dump(
+                        medium, f, default_flow_style=False, allow_unicode=True, sort_keys=False
+                    )
 
             logger.info(f"✓ Imported {yaml_file.name} → {category}/{output_filename}")
-            self.stats['files_imported'] += 1
+            self.stats["files_imported"] += 1
             return True
 
         except Exception as e:
             logger.error(f"✗ Error importing {yaml_file}: {e}")
-            self.stats['errors'] += 1
+            self.stats["errors"] += 1
             return False
 
     def import_all(self) -> None:
@@ -222,7 +249,7 @@ class CultureBotHTImporter:
 
         # Import each file
         for yaml_file in yaml_files:
-            self.stats['files_read'] += 1
+            self.stats["files_read"] += 1
             self.import_file(yaml_file)
 
         # Print summary
@@ -234,7 +261,7 @@ class CultureBotHTImporter:
         logger.info(f"Files skipped: {self.stats['files_skipped']}")
         logger.info(f"Errors: {self.stats['errors']}")
         logger.info("\nBy category:")
-        for category, count in sorted(self.stats['categories'].items()):
+        for category, count in sorted(self.stats["categories"].items()):
             if count > 0:
                 logger.info(f"  {category}: {count}")
         logger.info("=" * 60)
@@ -247,23 +274,21 @@ def main():
     )
 
     parser.add_argument(
-        '--culturebotht-dir',
+        "--culturebotht-dir",
         type=Path,
-        default=Path('/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/CultureBotHT/CultureBotHT'),
-        help='Path to CultureBotHT repository'
+        default=CULTUREBOTHT_ROOT,
+        help="Path to the CultureBotHT repository (default: $CULTUREBOTHT_ROOT)",
     )
 
     parser.add_argument(
-        '--output-dir',
+        "--output-dir",
         type=Path,
-        default=Path('data/normalized_yaml'),
-        help='Output directory for normalized YAML files'
+        default=Path("data/normalized_yaml"),
+        help="Output directory for normalized YAML files",
     )
 
     parser.add_argument(
-        '--dry-run',
-        action='store_true',
-        help='Show what would be imported without writing files'
+        "--dry-run", action="store_true", help="Show what would be imported without writing files"
     )
 
     args = parser.parse_args()
@@ -275,15 +300,13 @@ def main():
 
     # Run import
     importer = CultureBotHTImporter(
-        culturebotht_dir=args.culturebotht_dir,
-        output_dir=args.output_dir,
-        dry_run=args.dry_run
+        culturebotht_dir=args.culturebotht_dir, output_dir=args.output_dir, dry_run=args.dry_run
     )
 
     importer.import_all()
 
-    return 0 if importer.stats['errors'] == 0 else 1
+    return 0 if importer.stats["errors"] == 0 else 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     sys.exit(main())

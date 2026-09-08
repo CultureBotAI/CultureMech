@@ -4,13 +4,21 @@ Enriches existing media recipes with role annotations.
 """
 
 import csv
-from pathlib import Path
-import yaml
+import os
 import sys
+from pathlib import Path
+
+import yaml
 
 from culturemech.curate.curation_event import record_curation_event
 
-PFAS_REPO = Path("/Users/marcin/Documents/VIMSS/ontology/PFAS/PFASCommunityAgents")
+REPO_ROOT = Path(__file__).resolve().parents[3]
+# PFASCOMMUNITYAGENTS_ROOT names the PFASCommunityAgents checkout; the
+# fallback is the sibling directory. `or`, not a get() default, so an
+# exported-but-empty variable does not become Path(".") (#432, #434).
+PFAS_REPO = Path(
+    os.environ.get("PFASCOMMUNITYAGENTS_ROOT") or REPO_ROOT.parent / "PFASCommunityAgents"
+)
 INGREDIENT_FILE = PFAS_REPO / "data/sheets_pfas/PFAS_Data_for_AI_media_ingredients_extended.tsv"
 
 # Map PFAS role tokens (lowercase source values) to CultureMech faceted role
@@ -28,16 +36,16 @@ INGREDIENT_FILE = PFAS_REPO / "data/sheets_pfas/PFAS_Data_for_AI_media_ingredien
 #   strength / osmotic pressure, not elemental supply); mapped to
 #   PhysicochemicalRoleEnum.OSMOTIC_AGENT.
 ROLE_MAPPING = {
-    "carbon source":      ("nutritional_roles",     "CARBON_SOURCE"),
-    "nitrogen source":    ("nutritional_roles",     "NITROGEN_SOURCE"),
-    "mineral":            ("nutritional_roles",     "TRACE_ELEMENT"),
-    "trace element":      ("nutritional_roles",     "TRACE_ELEMENT"),
-    "vitamin source":     ("nutritional_roles",     "VITAMIN_SOURCE"),
-    "protein source":     ("nutritional_roles",     "PROTEIN_SOURCE"),
-    "amino acid source":  ("nutritional_roles",     "AMINO_ACID_SOURCE"),
-    "buffer":             ("physicochemical_roles", "BUFFER"),
-    "salt":               ("physicochemical_roles", "OSMOTIC_AGENT"),
-    "solidifying agent":  ("physicochemical_roles", "SOLIDIFYING_AGENT"),
+    "carbon source": ("nutritional_roles", "CARBON_SOURCE"),
+    "nitrogen source": ("nutritional_roles", "NITROGEN_SOURCE"),
+    "mineral": ("nutritional_roles", "TRACE_ELEMENT"),
+    "trace element": ("nutritional_roles", "TRACE_ELEMENT"),
+    "vitamin source": ("nutritional_roles", "VITAMIN_SOURCE"),
+    "protein source": ("nutritional_roles", "PROTEIN_SOURCE"),
+    "amino acid source": ("nutritional_roles", "AMINO_ACID_SOURCE"),
+    "buffer": ("physicochemical_roles", "BUFFER"),
+    "salt": ("physicochemical_roles", "OSMOTIC_AGENT"),
+    "solidifying agent": ("physicochemical_roles", "SOLIDIFYING_AGENT"),
 }
 
 
@@ -55,10 +63,10 @@ def load_ingredient_roles():
     roles_db: dict[str, dict[str, list[str]]] = {}
 
     with open(INGREDIENT_FILE) as f:
-        reader = csv.DictReader(f, delimiter='\t')
+        reader = csv.DictReader(f, delimiter="\t")
         for row in reader:
-            chebi_id = row.get('ontology_id', '').strip()
-            role_raw = row.get('role', '').strip()
+            chebi_id = row.get("ontology_id", "").strip()
+            role_raw = row.get("role", "").strip()
             mapping = ROLE_MAPPING.get(role_raw)
 
             if chebi_id and mapping:
@@ -85,9 +93,9 @@ def enrich_recipe_with_roles(recipe_path: Path, roles_db: dict, dry_run: bool = 
     modified = False
     changes = []
 
-    for ingredient in recipe.get('ingredients', []):
-        term = ingredient.get('term', {})
-        chebi_id = term.get('id')
+    for ingredient in recipe.get("ingredients", []):
+        term = ingredient.get("term", {})
+        chebi_id = term.get("id")
 
         if chebi_id in roles_db:
             for slot, enum_values in roles_db[chebi_id].items():
@@ -109,7 +117,7 @@ def enrich_recipe_with_roles(recipe_path: Path, roles_db: dict, dry_run: bool = 
                 source="PFAS_Data_for_AI_media_ingredients_extended.tsv",
                 skip_if_recent=True,
             )
-            with open(recipe_path, 'w') as f:
+            with open(recipe_path, "w") as f:
                 yaml.dump(recipe, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
             print(f"✓ Updated {recipe_path.name}")
         else:
@@ -134,7 +142,9 @@ def enrich_all_recipes(kb_dir: Path, roles_db: dict, dry_run: bool = False):
         except Exception as e:
             print(f"Error processing {recipe_path}: {e}")
 
-    print(f"\n✓ {'Would update' if dry_run else 'Updated'} {updated_count} recipes with ingredient roles")
+    print(
+        f"\n✓ {'Would update' if dry_run else 'Updated'} {updated_count} recipes with ingredient roles"
+    )
 
 
 def main():
@@ -142,10 +152,15 @@ def main():
     import argparse
 
     parser = argparse.ArgumentParser(description="Import ingredient roles from PFAS data")
-    parser.add_argument("--kb-dir", type=Path, default=Path("data/normalized_yaml"),
-                        help="Knowledge base directory (default: data/normalized_yaml)")
-    parser.add_argument("--dry-run", action="store_true",
-                        help="Show what would be changed without modifying files")
+    parser.add_argument(
+        "--kb-dir",
+        type=Path,
+        default=Path("data/normalized_yaml"),
+        help="Knowledge base directory (default: data/normalized_yaml)",
+    )
+    parser.add_argument(
+        "--dry-run", action="store_true", help="Show what would be changed without modifying files"
+    )
 
     args = parser.parse_args()
 

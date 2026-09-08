@@ -17,6 +17,7 @@ Example:
 """
 
 import argparse
+import os
 import sys
 from pathlib import Path
 
@@ -25,16 +26,23 @@ sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
 from culturemech.visualization.ingredient_umap_generator import IngredientUMAPGenerator
 
-_REPO_ROOT = Path(__file__).parent.parent
+_REPO_ROOT = Path(__file__).resolve().parent.parent
 
-_EMBEDDINGS_FILENAME = "DeepWalkSkipGramEnsmallen_degreenorm_embedding_512_v2_2026-05-26_00_56_15.tsv.gz"
-# Prefer local data/embeddings/; fall back to sibling CommunityMech location
-_LOCAL_EMBEDDINGS = _REPO_ROOT / "data" / "embeddings" / _EMBEDDINGS_FILENAME
-_COMMUNITYMECH_EMBEDDINGS = (
-    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/CommunityMech"
-    "/CommunityMech/data/embeddings/" + _EMBEDDINGS_FILENAME
+_EMBEDDINGS_FILENAME = (
+    "DeepWalkSkipGramEnsmallen_degreenorm_embedding_512_v2_2026-05-26_00_56_15.tsv.gz"
 )
-KG_MICROBE_EMBEDDINGS = str(_LOCAL_EMBEDDINGS) if _LOCAL_EMBEDDINGS.exists() else _COMMUNITYMECH_EMBEDDINGS
+# Prefer local data/embeddings/; fall back to the CommunityMech checkout,
+# COMMUNITYMECH_ROOT or the sibling directory (CultureMech#430)
+_LOCAL_EMBEDDINGS = _REPO_ROOT / "data" / "embeddings" / _EMBEDDINGS_FILENAME
+# `or`, not a get() default: an exported-but-empty variable is Path("") is
+# Path("."), which would resolve against the working directory (#434).
+_COMMUNITYMECH_ROOT = Path(
+    os.environ.get("COMMUNITYMECH_ROOT") or _REPO_ROOT.parent / "CommunityMech"
+)
+_COMMUNITYMECH_EMBEDDINGS = str(_COMMUNITYMECH_ROOT / "data" / "embeddings" / _EMBEDDINGS_FILENAME)
+KG_MICROBE_EMBEDDINGS = (
+    str(_LOCAL_EMBEDDINGS) if _LOCAL_EMBEDDINGS.exists() else _COMMUNITYMECH_EMBEDDINGS
+)
 
 NAME_TO_CHEBI_PATH = Path("data/chemical_name_to_chebi_mapping_enhanced.json")
 # Sibling repo path: CultureMech/../culturebotai-claw/workspace/
@@ -125,7 +133,9 @@ def main():
     if unified_mapping:
         print(f"  Unified mapping: {unified_mapping}")
     else:
-        print(f"  Unified mapping: not found at {args.unified_mapping} (CAS-RN/KG annotations will be empty)")
+        print(
+            f"  Unified mapping: not found at {args.unified_mapping} (CAS-RN/KG annotations will be empty)"
+        )
 
     generator = IngredientUMAPGenerator(
         name_to_chebi_path=name_to_chebi,
