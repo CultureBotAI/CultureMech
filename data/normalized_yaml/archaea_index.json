@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-10T09:32:33.896890+00:00",
+  "generated": "2026-09-10T10:14:59.023843+00:00",
   "category": "archaea",
   "count": 743,
   "recipes": {
@@ -5549,21 +5549,23 @@
       ]
     },
     "CultureMech:014579": {
-      "name": null,
+      "name": "Filtrate of Desulfurococcus kamchatkensis (DSM18924)",
       "filename": "mediadive_5717_Filtrate_of_Desulfurococcus_kamchatkensis_DSM18924.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 2,
       "id": "CultureMech:014579",
-      "source": "unknown",
+      "source_id": "mediadive.solution:5717",
+      "source": "MediaDive-Solutions",
       "categories": [
         "archaea"
       ]
     },
     "CultureMech:014961": {
-      "name": null,
+      "name": "Trace element solution (Nitrososphaera)",
       "filename": "mediadive_6280_Trace_element_solution_Nitrososphaera.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 9,
       "id": "CultureMech:014961",
-      "source": "unknown",
+      "source_id": "mediadive.solution:6280",
+      "source": "MediaDive-Solutions",
       "categories": [
         "archaea"
       ]

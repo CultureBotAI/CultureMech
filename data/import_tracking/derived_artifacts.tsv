@@ -60,7 +60,9 @@ data/normalized_yaml/algae_index.json	UNKNOWN	no writer found
 data/normalized_yaml/archaea_index.json	UNKNOWN	no writer found			
 data/normalized_yaml/bacterial_index.json	UNKNOWN	no writer found			
 data/normalized_yaml/by_source_komodo_index.json	UNKNOWN	no writer found			
+data/normalized_yaml/by_source_mediadive-solutions_index.json	UNKNOWN	no writer found			
 data/normalized_yaml/by_source_mediadive_index.json	UNKNOWN	no writer found			
+data/normalized_yaml/by_source_mediaingredientmech_index.json	UNKNOWN	no writer found			
 data/normalized_yaml/by_source_togo_index.json	UNKNOWN	no writer found			
 data/normalized_yaml/by_source_unknown_index.json	UNKNOWN	no writer found			
 data/normalized_yaml/fungal_index.json	UNKNOWN	no writer found			

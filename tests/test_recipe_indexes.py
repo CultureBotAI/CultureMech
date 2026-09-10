@@ -13,6 +13,7 @@ just a count check.
 
 Regenerate with `just generate-indexes data/normalized_yaml`.
 """
+
 from __future__ import annotations
 
 import json
@@ -27,7 +28,8 @@ NORMALIZED = REPO_ROOT / "data" / "normalized_yaml"
 # by_source_*/recipe/statistics indexes are cross-cutting and have no single
 # directory to compare against.
 CATEGORY_INDEXES = sorted(
-    p for p in NORMALIZED.glob("*_index.json")
+    p
+    for p in NORMALIZED.glob("*_index.json")
     if not p.name.startswith(("by_source_", "recipe_"))
     and (NORMALIZED / p.name.replace("_index.json", "")).is_dir()
 )
@@ -59,9 +61,9 @@ def test_index_count_matches_directory(index_path: Path):
 @pytest.mark.parametrize("index_path", CATEGORY_INDEXES, ids=lambda p: p.name)
 def test_index_entry_count_matches_count_field(index_path: Path):
     doc, _ = _load(index_path)
-    assert len(doc["recipes"]) == doc["count"], (
-        f"{index_path.name} `count` disagrees with the number of entries it holds"
-    )
+    assert (
+        len(doc["recipes"]) == doc["count"]
+    ), f"{index_path.name} `count` disagrees with the number of entries it holds"
 
 
 @pytest.mark.parametrize("index_path", CATEGORY_INDEXES, ids=lambda p: p.name)
@@ -111,7 +113,8 @@ def _generator():
     import sys as _sys
 
     spec = importlib.util.spec_from_file_location(
-        "generate_recipe_indexes", REPO_ROOT / "scripts" / "generate_recipe_indexes.py")
+        "generate_recipe_indexes", REPO_ROOT / "scripts" / "generate_recipe_indexes.py"
+    )
     mod = importlib.util.module_from_spec(spec)
     _sys.modules["generate_recipe_indexes"] = mod
     spec.loader.exec_module(mod)
@@ -140,10 +143,43 @@ def test_index_entries_match_freshly_extracted_metadata(corpus):
             if fresh != entry:
                 differing = sorted(
                     set(fresh) ^ set(entry)
-                    | {k for k in set(fresh) & set(entry) if fresh[k] != entry[k]})
+                    | {k for k in set(fresh) & set(entry) if fresh[k] != entry[k]}
+                )
                 stale.append(f"{index_path.name}:{entry['filename']} fields={differing}")
 
     assert not stale, (
         f"{len(stale)} index entry/entries differ from freshly extracted metadata "
         f"(e.g. {stale[:3]}) — {STALE_HINT}"
     )
+
+
+# --- the solution-record shape (#452) ---------------------------------------
+
+
+def test_a_solution_record_indexes_with_its_label_reagents_and_source():
+    """4,773 MediaDive solution records indexed as name null, ingredient_count 1
+    (the placeholder) and source unknown, because the generator read only the
+    MediaRecipe shape."""
+    gen = _generator()
+    record = {
+        "id": "CultureMech:900901",
+        "preferred_term": "SL10 elements",
+        "term": {"id": "mediadive.solution:4367", "label": "SL10 elements"},
+        "composition": [{"preferred_term": "FeCl2 x 4 H2O"}, {"preferred_term": "CoCl2 x 6 H2O"}],
+        "ingredients": [{"preferred_term": "See source for composition"}],
+        "category": "bacterial",
+    }
+    meta = gen.extract_recipe_metadata(record, Path("mediadive_4367_SL10_elements.yaml"))
+    assert meta["name"] == "SL10 elements"
+    assert meta["ingredient_count"] == 2
+    assert meta["source"] == "MediaDive-Solutions"
+    assert meta["source_id"] == "mediadive.solution:4367"
+    # a medium is unchanged by this
+    medium = {
+        "id": "CultureMech:900902",
+        "name": "Canary",
+        "media_term": {"term": {"id": "TOGO:M1"}},
+        "ingredients": [{"preferred_term": "Glucose"}],
+    }
+    m = gen.extract_recipe_metadata(medium, Path("canary.yaml"))
+    assert (m["name"], m["ingredient_count"], m["source"]) == ("Canary", 1, "TOGO")

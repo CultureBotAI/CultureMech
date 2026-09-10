@@ -1,0 +1,134 @@
+{
+  "generated": "2026-09-10T10:16:30.432703+00:00",
+  "source": "MediaIngredientMech",
+  "count": 10,
+  "recipes": {
+    "CultureMech:015440": {
+      "name": "Beijerinck's Solution",
+      "filename": "Beijerinck_Solution.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:015440",
+      "source_id": "MediaIngredientMech:UNMAPPED_0074",
+      "source": "MediaIngredientMech",
+      "categories": [
+        "bacterial"
+      ],
+      "category_dir": "bacterial"
+    },
+    "CultureMech:015441": {
+      "name": "Bold Trace Stock",
+      "filename": "Bold_Trace_Stock.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:015441",
+      "source_id": "MediaIngredientMech:UNMAPPED_0065",
+      "source": "MediaIngredientMech",
+      "categories": [
+        "bacterial"
+      ],
+      "has_hierarchy_enrichment": true,
+      "category_dir": "bacterial"
+    },
+    "CultureMech:015442": {
+      "name": "Boron Stock",
+      "filename": "Boron_Stock.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:015442",
+      "source_id": "MediaIngredientMech:UNMAPPED_0064",
+      "source": "MediaIngredientMech",
+      "categories": [
+        "bacterial"
+      ],
+      "category_dir": "bacterial"
+    },
+    "CultureMech:015444": {
+      "name": "DAS Macro Solution",
+      "filename": "DAS_Macro_Solution.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015444",
+      "source_id": "MediaIngredientMech:UNMAPPED_0081",
+      "source": "MediaIngredientMech",
+      "categories": [
+        "bacterial"
+      ],
+      "has_hierarchy_enrichment": true,
+      "category_dir": "bacterial"
+    },
+    "CultureMech:015445": {
+      "name": "DAS Vitamin Cocktail",
+      "filename": "DAS_Vitamin_Cocktail.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:015445",
+      "source_id": "MediaIngredientMech:UNMAPPED_0045",
+      "source": "MediaIngredientMech",
+      "categories": [
+        "bacterial"
+      ],
+      "category_dir": "bacterial"
+    },
+    "CultureMech:015443": {
+      "name": "EDTA Stock",
+      "filename": "EDTA_Stock.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015443",
+      "source_id": "MediaIngredientMech:UNMAPPED_0062",
+      "source": "MediaIngredientMech",
+      "categories": [
+        "bacterial"
+      ],
+      "has_hierarchy_enrichment": true,
+      "category_dir": "bacterial"
+    },
+    "CultureMech:015446": {
+      "name": "G9 Trace Metals for J medium",
+      "filename": "G9_Trace_Metals_for_J_medium.yaml",
+      "ingredient_count": 7,
+      "id": "CultureMech:015446",
+      "source_id": "MediaIngredientMech:UNMAPPED_0097",
+      "source": "MediaIngredientMech",
+      "categories": [
+        "bacterial"
+      ],
+      "has_hierarchy_enrichment": true,
+      "category_dir": "bacterial"
+    },
+    "CultureMech:015447": {
+      "name": "Macro Component 1 for J Medium",
+      "filename": "Macro_Component_1_for_J_Medium.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:015447",
+      "source_id": "MediaIngredientMech:UNMAPPED_0095",
+      "source": "MediaIngredientMech",
+      "categories": [
+        "bacterial"
+      ],
+      "has_hierarchy_enrichment": true,
+      "category_dir": "bacterial"
+    },
+    "CultureMech:015448": {
+      "name": "Macro Component 2 for J medium",
+      "filename": "Macro_Component_2_for_J_medium.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:015448",
+      "source_id": "MediaIngredientMech:UNMAPPED_0096",
+      "source": "MediaIngredientMech",
+      "categories": [
+        "bacterial"
+      ],
+      "has_hierarchy_enrichment": true,
+      "category_dir": "bacterial"
+    },
+    "CultureMech:015449": {
+      "name": "Minor Nutrients",
+      "filename": "Minor_Nutrients.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:015449",
+      "source_id": "MediaIngredientMech:UNMAPPED_0099",
+      "source": "MediaIngredientMech",
+      "categories": [
+        "bacterial"
+      ],
+      "has_hierarchy_enrichment": true,
+      "category_dir": "bacterial"
+    }
+  }
+}

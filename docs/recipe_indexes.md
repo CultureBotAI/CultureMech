@@ -46,6 +46,12 @@ Recipes grouped by originating database
 - `by_source_togo_index.json` - 2,917 TOGO recipes
 - `by_source_mediadive_index.json` - 3,327 MediaDive recipes
 - `by_source_komodo_index.json` - 3,637 KOMODO recipes
+- `by_source_mediadive-solutions_index.json` - the MediaDive stock-solution records
+
+A solution record is indexed by its `preferred_term`, its `composition` row
+count, and the source named by its top-level `term.id`; before #452 the
+generator read only the MediaRecipe shape and listed 4,773 of them as unnamed,
+unsourced and holding one placeholder ingredient.
 
 ### Statistics (`recipe_statistics.json`)
 High-level statistics and breakdowns
