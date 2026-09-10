@@ -36,7 +36,7 @@ Primary Edges:
 5. Medium → has_attribute (biolink:has_attribute) → Medium Type
    - Subject: Medium
    - Predicate: biolink:has_attribute
-   - Object: Type node (e.g., culturemech:medium_type_COMPLEX)
+   - Object: Type node (e.g., CultureMech:medium_type_COMPLEX)
    - Qualifiers: attribute_type = "medium_type"
 
 Legacy Edges (for backward compatibility):
@@ -72,6 +72,12 @@ except ImportError:
 # and the module no longer needs the package at import time.
 
 KNOWLEDGE_SOURCE = "infores:culturemech"
+# The one CURIE prefix for every id this export mints. Record nodes carry the
+# record's own `CultureMech:NNNNNN`, so the auxiliary nodes use the same prefix
+# rather than a lower-cased twin of it (#440). The schema's `culturemech:` is the
+# LinkML class-URI prefix, a different artifact; both expand to
+# https://w3id.org/culturemech/, which is the mapping kg-microbe should register.
+PREFIX = "CultureMech"
 NAMESPACE_UUID = uuid.uuid5(uuid.NAMESPACE_URL, "https://w3id.org/culturemech")
 
 # A standalone stock-solution record is recognised by the same two explicit
@@ -369,7 +375,7 @@ def to_edge(edge_dict: dict[str, Any]) -> Edge:
 def nodes(record: dict[str, Any]) -> Iterator[dict[str, Any]]:
     """Every node this record mints, as dicts. Companion to ``transform``.
 
-    Yields duplicates across records by design — ``culturemech:medium_type_COMPLEX``
+    Yields duplicates across records by design — ``CultureMech:medium_type_COMPLEX``
     belongs to all 8,850 COMPLEX media. Deduplication is the writer's job (see
     ``koza_transform``), because it is a property of the run, not of the record.
     """
@@ -392,7 +398,7 @@ def nodes(record: dict[str, Any]) -> Iterator[dict[str, Any]]:
     if medium_type and not solution:
         yield asdict(
             Node(
-                id=f"culturemech:medium_type_{medium_type}",
+                id=f"{PREFIX}:medium_type_{medium_type}",
                 category=type_category,
                 name=str(medium_type),
             )
@@ -413,7 +419,7 @@ def nodes(record: dict[str, Any]) -> Iterator[dict[str, Any]]:
         if application:
             yield asdict(
                 Node(
-                    id=f"culturemech:application_{_sanitize_id(str(application))}",
+                    id=f"{PREFIX}:application_{_sanitize_id(str(application))}",
                     category=[ATTRIBUTE],
                     name=str(application),
                 )
@@ -423,7 +429,7 @@ def nodes(record: dict[str, Any]) -> Iterator[dict[str, Any]]:
     if physical_state:
         yield asdict(
             Node(
-                id=f"culturemech:state_{str(physical_state).lower()}",
+                id=f"{PREFIX}:state_{str(physical_state).lower()}",
                 category=[ATTRIBUTE],
                 name=str(physical_state),
             )
@@ -436,7 +442,7 @@ def nodes(record: dict[str, Any]) -> Iterator[dict[str, Any]]:
         if variant_name:
             yield asdict(
                 Node(
-                    id=f"culturemech:{_sanitize_id(str(variant_name))}",
+                    id=f"{PREFIX}:variant_{_sanitize_id(str(variant_name))}",
                     category=_DEFAULT_MEDIUM_CATEGORY,
                     name=str(variant_name),
                 )
@@ -649,11 +655,11 @@ def medium_to_type_edge(medium_id: str, medium_type: str) -> dict | None:
     Creates a type attribute node:
     - subject: medium
     - predicate: biolink:has_attribute
-    - object: type node (e.g., culturemech:medium_type_COMPLEX)
+    - object: type node (e.g., CultureMech:medium_type_COMPLEX)
 
     Data preserved: Medium type classification (COMPLEX, DEFINED, etc.)
     """
-    type_id = f"culturemech:medium_type_{medium_type}"
+    type_id = f"{PREFIX}:medium_type_{medium_type}"
 
     return _make_association(
         subject=medium_id,
@@ -671,7 +677,7 @@ def ingredient_to_edge(
     ingredient_resolver: IngredientResolver = resolve_ingredient,
 ) -> dict | None:
     """
-    Medium (culturemech:LB_Broth) → has_part → Glucose (CHEBI:17234)
+    Medium (CultureMech:000001) → has_part → Glucose (CHEBI:17234)
 
     Qualifiers:
     - concentration: 10 g/L
@@ -736,7 +742,7 @@ def application_to_edge(medium_id: str, application: str) -> dict | None:
     Data preserved: Application description
     """
     # Create a synthetic ID for the application
-    app_id = f"culturemech:application_{_sanitize_id(application)}"
+    app_id = f"{PREFIX}:application_{_sanitize_id(application)}"
 
     return _make_association(
         subject=medium_id,
@@ -754,7 +760,7 @@ def physical_state_to_edge(medium_id: str, physical_state: str) -> dict | None:
 
     Data preserved: Physical state
     """
-    state_id = f"culturemech:state_{physical_state.lower()}"
+    state_id = f"{PREFIX}:state_{physical_state.lower()}"
 
     return _make_association(
         subject=medium_id,
@@ -813,7 +819,7 @@ def variant_to_edge(medium_id: str, variant: dict) -> dict | None:
     if not variant_name:
         return None
 
-    variant_id = f"culturemech:{_sanitize_id(variant_name)}"
+    variant_id = f"{PREFIX}:variant_{_sanitize_id(variant_name)}"
 
     return _make_association(
         subject=variant_id,
@@ -873,8 +879,8 @@ def _format_evidence(evidence_items: list[dict] | None) -> tuple:
 # out spelled one way in the nodes file and another in the edges file, which is
 # how the full-corpus run produced 2 dangling references and 2 orphan nodes:
 #
-#   node: culturemech:solution_Mineral_salt_solution*_\"Hutner_Cohen-Bazire\"
-#   edge: culturemech:solution_Mineral_salt_solution*_Hutner_Cohen-Bazire
+#   node: CultureMech:solution_Mineral_salt_solution*_\"Hutner_Cohen-Bazire\"
+#   edge: CultureMech:solution_Mineral_salt_solution*_Hutner_Cohen-Bazire
 #
 # Stripping them here makes both sides agree regardless of koza's asymmetry, and
 # a CURIE has no business carrying a quote or an asterisk in the first place.
@@ -883,7 +889,7 @@ _ID_SEPARATOR_CHARS = " /"
 
 # The colon is separate because it is the one character that is not merely ugly:
 # it is the CURIE delimiter. Names like `Solution A:` produced
-# `culturemech:solution_Solution_A:`, a two-colon id that any consumer splitting
+# `CultureMech:solution_Solution_A:`, a two-colon id that any consumer splitting
 # on `:` reads wrongly — and this export exists to be consumed. 19 ids in the
 # corpus were affected. Mapped to an underscore rather than dropped so
 # `Autotrophic growth on ferrous sulfate:Add 13.9 g/l` does not weld two words
@@ -911,7 +917,7 @@ def _sanitize_id(text: str) -> str:
 def _create_solution_id(solution_name: str) -> str:
     """Create a CURIE for a solution."""
     sanitized = _sanitize_id(solution_name)
-    return f"culturemech:solution_{sanitized}"
+    return f"{PREFIX}:solution_{sanitized}"
 
 
 def _make_association(
@@ -941,7 +947,7 @@ def _make_association(
 
 # Node ids already written in this run. A medium-type or solution node is shared
 # by thousands of records, so without this the nodes file would carry ~8,850 rows
-# for `culturemech:medium_type_COMPLEX` alone. Run-scoped rather than per-record,
+# for `CultureMech:medium_type_COMPLEX` alone. Run-scoped rather than per-record,
 # which is why it cannot live in `nodes()`.
 _EMITTED_NODE_IDS: set = set()
 

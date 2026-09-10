@@ -31,15 +31,19 @@ MeSH, and curated local identities can be valid ingredient objects. See
      on its own `id`, like a medium: `CultureMech:013364`. Its reagents live in
      top-level `composition` and are exported as `has_part` edges from that id (#442)
    - A solution nested inside a medium record has no id of its own and is minted
-     as `culturemech:solution_*`, e.g. `culturemech:solution_Trace_Metal_Solution`
+     as `CultureMech:solution_*`, e.g. `CultureMech:solution_Trace_Metal_Solution`
 
 4. **Ingredient** (MIM-resolved external identity)
    - Chemicals, food products, mixtures, and registry-identified materials in media or solutions
    - Examples: `CHEBI:17234` (glucose), `FOODON:00004410` (beef heart food product)
 
-5. **Medium Type** (`culturemech:medium_type_*`)
+5. **Medium Type** (`CultureMech:medium_type_*`), **Application** (`CultureMech:application_*`),
+   **Physical State** (`CultureMech:state_*`), **Variant** (`CultureMech:variant_*`)
+   - Every id this export mints uses the one prefix `CultureMech`, which expands to
+     `https://w3id.org/culturemech/`, the same base as the schema's LinkML prefix
+     `culturemech` (#440). Register `CultureMech` in a consumer's prefix map.
    - Type classification nodes
-   - Example: `culturemech:medium_type_COMPLEX`
+   - Example: `CultureMech:medium_type_COMPLEX`
 
 ## Primary Edges (cmm-ai-automation semantic model)
 
@@ -80,7 +84,7 @@ NCBITaxon:562 --[METPO:2000517 (grows in)]--> CultureMech:000001
 **Relationship**: Medium contains a pre-made solution component
 
 ```
-CultureMech:000002 --[biolink:has_part]--> culturemech:solution_Trace_Elements
+CultureMech:000002 --[biolink:has_part]--> CultureMech:solution_Trace_Elements
 ```
 
 **Structure**:
@@ -96,7 +100,7 @@ CultureMech:000002 --[biolink:has_part]--> culturemech:solution_Trace_Elements
 {
   "subject": "CultureMech:000002",
   "predicate": "biolink:has_part",
-  "object": "culturemech:solution_Trace_Elements",
+  "object": "CultureMech:solution_Trace_Elements",
   "qualifiers": [
     {
       "qualifier_type_id": "biolink:concentration",
@@ -111,7 +115,7 @@ CultureMech:000002 --[biolink:has_part]--> culturemech:solution_Trace_Elements
 **Relationship**: Solution contains chemical ingredients
 
 ```
-culturemech:solution_Trace_Elements --[biolink:has_part]--> CHEBI:49976
+CultureMech:solution_Trace_Elements --[biolink:has_part]--> CHEBI:49976
 ```
 
 **Structure**:
@@ -126,7 +130,7 @@ culturemech:solution_Trace_Elements --[biolink:has_part]--> CHEBI:49976
 **Example**:
 ```json
 {
-  "subject": "culturemech:solution_Trace_Elements",
+  "subject": "CultureMech:solution_Trace_Elements",
   "predicate": "biolink:has_part",
   "object": "CHEBI:49976",
   "qualifiers": [
@@ -183,7 +187,7 @@ CultureMech:000001 --[biolink:has_part]--> CHEBI:17234
 **Relationship**: Medium has a type classification (COMPLEX, DEFINED, etc.)
 
 ```
-CultureMech:000001 --[biolink:has_attribute]--> culturemech:medium_type_COMPLEX
+CultureMech:000001 --[biolink:has_attribute]--> CultureMech:medium_type_COMPLEX
 ```
 
 **Structure**:
@@ -199,7 +203,7 @@ CultureMech:000001 --[biolink:has_attribute]--> culturemech:medium_type_COMPLEX
 {
   "subject": "CultureMech:000001",
   "predicate": "biolink:has_attribute",
-  "object": "culturemech:medium_type_COMPLEX",
+  "object": "CultureMech:medium_type_COMPLEX",
   "qualifiers": [
     {
       "qualifier_type_id": "biolink:attribute_type",
