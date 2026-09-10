@@ -1251,40 +1251,51 @@ install-koza:
 [group('QC')]
 validate file:
     #!/usr/bin/env bash
-    set -e
-    echo "=== Schema validation ==="
-    uv run linkml-validate --schema {{schema_path}} --target-class MediaRecipe {{file}}
+    # Strict shell, and the class comes from the record's shape: a solution
+    # record validated as MediaRecipe fails on its own slots (#450).
+    set -euo pipefail
+    cls=$(uv run python scripts/record_target_class.py "{{file}}")
+    echo "=== Schema validation ($cls) ==="
+    uv run linkml-validate --schema {{schema_path}} --target-class "$cls" "{{file}}"
     echo "✓ Schema validation passed"
 
     echo ""
     echo "=== Term validation ==="
-    uv run linkml-term-validator validate-data {{file}} -s {{schema_path}} -t MediaRecipe --labels -c {{oak_config}}
+    uv run linkml-term-validator validate-data "{{file}}" -s {{schema_path}} -t "$cls" --labels -c {{oak_config}}
     echo "✓ Term validation passed"
 
     echo ""
     echo "=== Reference validation ==="
-    uv run linkml-reference-validator validate data {{file}} --schema {{schema_path}} --target-class MediaRecipe
+    uv run linkml-reference-validator validate data "{{file}}" --schema {{schema_path}} --target-class "$cls"
     echo "✓ Reference validation passed"
 
 [group('QC')]
 validate-schema file:
     #!/usr/bin/env bash
-    echo "Validating schema structure..."
-    uv run linkml-validate --schema {{schema_path}} --target-class MediaRecipe "{{file}}"
+    set -euo pipefail
+    cls=$(uv run python scripts/record_target_class.py "{{file}}")
+    echo "Validating schema structure ($cls)..."
+    uv run linkml-validate --schema {{schema_path}} --target-class "$cls" "{{file}}"
     echo "✓ Schema validation passed"
 
 [group('QC')]
 validate-terms file:
     #!/usr/bin/env bash
-    echo "Validating ontology terms..."
-    uv run linkml-term-validator validate-data {{file}} -s {{schema_path}} -t MediaRecipe --labels -c {{oak_config}}
+    # `set -e` is the fix for #450: without it a validator that failed to spawn
+    # still ended in "✓ Term validation passed" and exit 0.
+    set -euo pipefail
+    cls=$(uv run python scripts/record_target_class.py "{{file}}")
+    echo "Validating ontology terms ($cls)..."
+    uv run linkml-term-validator validate-data "{{file}}" -s {{schema_path}} -t "$cls" --labels -c {{oak_config}}
     echo "✓ Term validation passed"
 
 [group('QC')]
 validate-references file:
     #!/usr/bin/env bash
-    echo "Validating evidence references..."
-    uv run linkml-reference-validator validate data {{file}} --schema {{schema_path}} --target-class MediaRecipe
+    set -euo pipefail
+    cls=$(uv run python scripts/record_target_class.py "{{file}}")
+    echo "Validating evidence references ($cls)..."
+    uv run linkml-reference-validator validate data "{{file}}" --schema {{schema_path}} --target-class "$cls"
     echo "✓ Reference validation passed"
 
 # id↔label gate (Engine A): the schema binds the organism/environment/precursor/
@@ -1300,10 +1311,12 @@ validate-terms-all:
     shopt -s globstar nullglob
     rc=0
     # `**/*.yaml` (recursive, matching Engine B) instead of one-level `*/*.yaml`.
-    for file in data/normalized_yaml/**/*.yaml; do
+    # One helper process for the whole corpus (#450); per file it would be
+    # 15,878 spawns. The class is the record's shape, as in the single-file recipes.
+    while IFS=$'\t' read -r file cls; do
         [ -e "$file" ] || continue
-        uv run linkml-term-validator validate-data "$file" -s {{schema_path}} -t MediaRecipe --labels -c {{oak_config}} || rc=1
-    done
+        uv run linkml-term-validator validate-data "$file" -s {{schema_path}} -t "$cls" --labels -c {{oak_config}} || rc=1
+    done < <(uv run python scripts/record_target_class.py --all data/normalized_yaml)
     exit $rc
 
 # id↔label gate (Engine B): runs the shared OAK validator over the full
