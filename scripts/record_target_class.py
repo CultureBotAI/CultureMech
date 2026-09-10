@@ -9,6 +9,10 @@ swallowed. The decision is `record_kinds.has_solution_shape`, the same one
 `validate_strict` routes on, so the recipes cannot disagree with the gate.
 
 Usage: record_target_class.py <record.yaml>   ->   SolutionRecipe | MediaRecipe
+       record_target_class.py --all <dir>     ->   one "<path>\t<class>" line per
+                                                  **/*.yaml under <dir>, so a whole-
+                                                  corpus recipe spawns one process,
+                                                  not one per record
 """
 
 from __future__ import annotations
@@ -28,6 +32,17 @@ def target_class(record: object) -> str:
 
 
 def main(argv: list[str]) -> int:
+    if len(argv) == 3 and argv[1] == "--all":
+        failed = 0
+        for path in sorted(Path(argv[2]).glob("**/*.yaml")):
+            try:
+                record = yaml.safe_load(path.read_text(encoding="utf-8"))
+            except (OSError, yaml.YAMLError) as exc:
+                print(f"error: cannot read {path}: {exc}", file=sys.stderr)
+                failed += 1
+                continue
+            print(f"{path}\t{target_class(record)}")
+        return 1 if failed else 0
     if len(argv) != 2:
         print(__doc__.strip(), file=sys.stderr)
         return 2

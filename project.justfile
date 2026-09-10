@@ -1311,11 +1311,12 @@ validate-terms-all:
     shopt -s globstar nullglob
     rc=0
     # `**/*.yaml` (recursive, matching Engine B) instead of one-level `*/*.yaml`.
-    for file in data/normalized_yaml/**/*.yaml; do
+    # One helper process for the whole corpus (#450); per file it would be
+    # 15,878 spawns. The class is the record's shape, as in the single-file recipes.
+    while IFS=$'\t' read -r file cls; do
         [ -e "$file" ] || continue
-        cls=$(uv run python scripts/record_target_class.py "$file")
         uv run linkml-term-validator validate-data "$file" -s {{schema_path}} -t "$cls" --labels -c {{oak_config}} || rc=1
-    done
+    done < <(uv run python scripts/record_target_class.py --all data/normalized_yaml)
     exit $rc
 
 # id↔label gate (Engine B): runs the shared OAK validator over the full

@@ -64,3 +64,18 @@ def test_an_unreadable_file_is_an_error_not_a_default_class(tmp_path):
         text=True,
     )
     assert out.returncode == 1 and out.stdout == ""
+
+
+def test_batch_mode_prints_one_line_per_record(tmp_path):
+    (tmp_path / "a").mkdir()
+    (tmp_path / "a" / "sol.yaml").write_text(
+        "id: CultureMech:900001\npreferred_term: SL10\nterm:\n  id: mediadive.solution:1\n"
+    )
+    (tmp_path / "a" / "med.yaml").write_text("id: CultureMech:900003\nname: LB\n")
+    out = subprocess.run(
+        [sys.executable, str(SCRIPT), "--all", str(tmp_path)], capture_output=True, text=True
+    )
+    assert out.returncode == 0, out.stderr
+    lines = dict(line.split("\t") for line in out.stdout.splitlines())
+    assert lines[str(tmp_path / "a" / "med.yaml")] == "MediaRecipe"
+    assert lines[str(tmp_path / "a" / "sol.yaml")] == "SolutionRecipe"
