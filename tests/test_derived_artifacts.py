@@ -198,3 +198,21 @@ def test_the_slow_test_allowlist_entries_all_carry_a_reason():
     preferred state."""
     for nodeid, reason in _conftest().SLOW_TEST_ALLOWLIST.items():
         assert reason and len(reason) > 20, f"{nodeid} exempted without a real reason"
+
+
+def test_indexes_named_by_fstring_are_attributed_to_the_generator(ada):
+    """#454: the category and source indexes are written from f-strings, invisible
+    to the literal-basename search, and sat at UNKNOWN / no writer found."""
+    for art in (
+        "data/normalized_yaml/bacterial_index.json",
+        "data/normalized_yaml/by_source_mediadive-solutions_index.json",
+        "data/merge_yaml/merged/algae_index.json",
+    ):
+        assert ada.pattern_writer(art) == "scripts/generate_recipe_indexes.py", art
+        assert ada.classify(art, ada.pattern_writer(art)) == (
+            "CURRENT_VIEW",
+            "generate_recipe_indexes.py",
+        )
+    # not everything under those directories is an index
+    assert ada.pattern_writer("data/normalized_yaml/recipe_statistics.json") is None
+    assert ada.pattern_writer("data/import_tracking/reports/foo_index.json") is None
