@@ -37,7 +37,8 @@ MeSH, and curated local identities can be valid ingredient objects. See
    - Chemicals, food products, mixtures, and registry-identified materials in media or solutions
    - Examples: `CHEBI:17234` (glucose), `FOODON:00004410` (beef heart food product)
 
-5. **Medium Type** (`CultureMech:medium_type_*`)
+5. **Medium Type** (`CultureMech:medium_type_*`), **Application** (`CultureMech:application_*`),
+   **Physical State** (`CultureMech:state_*`), **Variant** (`CultureMech:variant_*`)
    - Every id this export mints uses the one prefix `CultureMech`, which expands to
      `https://w3id.org/culturemech/`, the same base as the schema's LinkML prefix
      `culturemech` (#440). Register `CultureMech` in a consumer's prefix map.
