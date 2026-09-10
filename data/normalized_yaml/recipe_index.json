@@ -1,7 +1,7 @@
 {
-  "generated": "2026-08-26T06:20:03.195749+00:00",
+  "generated": "2026-09-10T09:34:06.786213+00:00",
   "description": "Master index of all CultureMech recipes",
-  "total_recipes": 15877,
+  "total_recipes": 15878,
   "categories": {
     "algae": {
       "count": 249,
@@ -12,7 +12,7 @@
       "index_file": "archaea_index.json"
     },
     "bacterial": {
-      "count": 14304,
+      "count": 14305,
       "index_file": "bacterial_index.json"
     },
     "fungal": {
@@ -115237,6 +115237,17 @@
       "filename": "mediadive_5058_Modified_Allen_s_trace_metal_solution.yaml",
       "ingredient_count": 1,
       "id": "CultureMech:013975",
+      "source": "unknown",
+      "categories": [
+        "bacterial"
+      ],
+      "category_dir": "bacterial"
+    },
+    "CultureMech:015882": {
+      "name": null,
+      "filename": "mediadive_5059_Iron_III_citrate_solution.yaml",
+      "ingredient_count": 0,
+      "id": "CultureMech:015882",
       "source": "unknown",
       "categories": [
         "bacterial"

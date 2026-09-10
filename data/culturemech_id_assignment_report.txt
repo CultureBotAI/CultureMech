@@ -3,16 +3,16 @@ CULTUREMECH ID ASSIGNMENT REPORT
 ================================================================================
 
 SUMMARY:
-  Files scanned:        15827
-  Files with IDs:       15446
-  Files assigned IDs:   381
-  Highest existing ID:  CultureMech:015449
-  Next available ID:    CultureMech:015831
-  Total IDs in registry: 15827
+  Files scanned:        15878
+  Files with IDs:       15877
+  Files assigned IDs:   1
+  Highest existing ID:  CultureMech:015881
+  Next available ID:    CultureMech:015883
+  Total IDs in registry: 15878
   Errors:               0
 
 ID RANGE:
   First ID: CultureMech:000001
-  Last ID:  CultureMech:015830
+  Last ID:  CultureMech:015882
 
 ================================================================================
