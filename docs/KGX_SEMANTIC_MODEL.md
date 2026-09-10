@@ -167,7 +167,8 @@ CultureMech:000001 --[biolink:has_part]--> CHEBI:17234
 written in the record) and `unit` (`"G_PER_L"`, the enum token), the shape the
 MediaDive transform kg-microbe ingests uses. Every `has_part` edge from a medium,
 a nested solution, or a solution record carries them when the row has a
-concentration; the joined qualifier stays for one release.
+concentration whose value parses as a number; `variable`, `-`, and prose values
+keep only the qualifier string. The joined qualifier stays for one release.
 
 **Example**:
 ```json

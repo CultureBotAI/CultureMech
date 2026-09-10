@@ -909,7 +909,7 @@ def _quantity(concentration: Any) -> tuple[list[dict], str | None, str | None]:
     `value` and `unit` are the typed columns kg-microbe reads from the MediaDive
     transform; the joined `biolink:concentration` qualifier is kept alongside
     (#445). Both come straight from the record: the value string as written
-    (`'10'`, `'5e-05'`, `'variable'`) and the unit as its enum token.
+    (`'10'`, `'5e-05'`) and the unit as its enum token.
     """
     if not isinstance(concentration, dict):
         return [], None, None
@@ -918,6 +918,15 @@ def _quantity(concentration: Any) -> tuple[list[dict], str | None, str | None]:
     if not (val and unit):
         return [], None, None
     qualifier = {"qualifier_type_id": "biolink:concentration", "qualifier_value": f"{val} {unit}"}
+    # The typed pair is for arithmetic, so it carries only a value that parses as
+    # a number: 3,598 corpus rows say `variable`, `-`, or prose such as
+    # `0.01 g per vessel`, and MediaDive's column is numeric. Those rows keep the
+    # qualifier string and leave the pair empty rather than hand a consumer a
+    # `value` that float() rejects (#301 owns the `-` placeholders).
+    try:
+        float(str(val))
+    except ValueError:
+        return [qualifier], None, None
     return [qualifier], str(val), str(unit)
 
 
