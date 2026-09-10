@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-10T10:10:14.295473+00:00",
+  "generated": "2026-09-10T10:16:30.233861+00:00",
   "description": "Master index of all CultureMech recipes",
   "total_recipes": 15878,
   "categories": {
@@ -13560,6 +13560,7 @@
       "categories": [
         "bacterial"
       ],
+      "has_hierarchy_enrichment": true,
       "category_dir": "bacterial"
     },
     "CultureMech:015442": {
@@ -13596,6 +13597,7 @@
       "categories": [
         "bacterial"
       ],
+      "has_hierarchy_enrichment": true,
       "category_dir": "bacterial"
     },
     "CultureMech:015445": {
@@ -14185,6 +14187,7 @@
       "categories": [
         "bacterial"
       ],
+      "has_hierarchy_enrichment": true,
       "category_dir": "bacterial"
     },
     "CultureMech:015446": {
@@ -14197,6 +14200,7 @@
       "categories": [
         "bacterial"
       ],
+      "has_hierarchy_enrichment": true,
       "category_dir": "bacterial"
     },
     "CultureMech:002194": {
@@ -27803,6 +27807,7 @@
       "categories": [
         "bacterial"
       ],
+      "has_hierarchy_enrichment": true,
       "category_dir": "bacterial"
     },
     "CultureMech:015448": {
@@ -27815,6 +27820,7 @@
       "categories": [
         "bacterial"
       ],
+      "has_hierarchy_enrichment": true,
       "category_dir": "bacterial"
     },
     "CultureMech:015449": {
@@ -27827,6 +27833,7 @@
       "categories": [
         "bacterial"
       ],
+      "has_hierarchy_enrichment": true,
       "category_dir": "bacterial"
     },
     "CultureMech:007449": {

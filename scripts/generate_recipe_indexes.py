@@ -102,7 +102,10 @@ def extract_recipe_metadata(recipe: dict, filepath: Path) -> dict:
     organism_culture_type = recipe.get("organism_culture_type")
 
     # Check for enrichment
-    has_hierarchy = "mediaingredientmech_term" in str(recipe.get("ingredients", []))
+    # Reagents live in `composition` on a solution record (#452, #453 review).
+    has_hierarchy = "mediaingredientmech_term" in str(
+        (recipe.get("ingredients") or []) + composition
+    )
 
     metadata = {
         # A solution record has no `name`; its label is `preferred_term` (#452).
