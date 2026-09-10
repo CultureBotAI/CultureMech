@@ -1,0 +1,41 @@
+id: CultureMech:015882
+preferred_term: Iron(III) citrate solution
+term:
+  id: mediadive.solution:5059
+  label: Iron(III) citrate solution
+composition:
+- preferred_term: Iron(III) citrate
+  concentration:
+    value: '24'
+    unit: G_PER_L
+  term:
+    id: CHEBI:144421
+    label: iron(III) citrate
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+preparation_notes: 'MediaDive solution 5059 states no recipe table, only a preparation
+  step: "Mix 2.4 g iron(III) citrate and 90 ml distilled water, and boil until dissolved.
+  Cool to an ambient temperature and adjust pH to 6.0 with 10 N NaOH solution. Fill
+  up to 100 ml with distilled water." Original volume: 100 mL; concentrations here
+  are per litre (2.4 g / 100 mL = 24 g/L). The NaOH used to reach pH 6.0 is unquantified
+  and is not a composition row.'
+curation_history:
+- timestamp: 2026-09-10T09:13:56.6N+00:00
+  curator: curate-yaml-record (#449)
+  action: CREATED
+  notes: Created from data/raw/mediadive_api/mediadive_api_solutions.json entry 5059,
+    which scripts/import_mediadive_solutions.py skips because it carries prose steps
+    and no recipe table. It is the one recipe-less MediaDive solution a corpus medium
+    references (CultureMech:002236, deferrisoma_paleochrorii_medium). Iron(III) citrate
+    grounded to CHEBI:144421, the id 66 corpus rows already use for Fe(III) citrate
+    / ferric citrate; water to CHEBI:15377 as in 6,600 rows.
+- timestamp: '2026-09-10T09:29:49.146223Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015882'
+category: bacterial
