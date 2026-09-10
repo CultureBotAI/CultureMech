@@ -918,17 +918,24 @@ _RECORD_ID_LINE = re.compile(r"^id: (CultureMech:\d{6})\n", re.M)
 _SOLUTION_TERM_LINES = re.compile(r"^term:\n  id: (\S+)", re.M)
 
 
-@lru_cache(maxsize=1)
 def _solution_record_index() -> dict[str, str]:
-    """Upstream solution id -> the standalone solution record that carries it.
+    """Upstream solution id -> the standalone solution record that carries it,
+    for the records directory named in the environment; empty when unset."""
+    root = os.environ.get(RECORDS_DIR_ENV)
+    return _index_records_under(root) if root else {}
+
+
+@lru_cache(maxsize=4)
+def _index_records_under(root: str) -> dict[str, str]:
+    """Build the index for one directory. Cached per directory, not per process:
+    the first cut cached the result of the first call regardless of which
+    directory the environment named, so a second run in the same process with a
+    different records directory reused a stale index (#448 review).
 
     `term.id` sits within the first four lines of all 4,784 solution records and
     `id:` is line one, so a regex over the file text is enough; a second YAML
     parse of the corpus would double the export's cost for nothing.
     """
-    root = os.environ.get(RECORDS_DIR_ENV)
-    if not root:
-        return {}
     index: dict[str, str] = {}
     for path in Path(root).glob("*/*.yaml"):
         head = path.read_text(errors="replace")[:600]

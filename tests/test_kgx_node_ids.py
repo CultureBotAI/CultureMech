@@ -17,7 +17,6 @@ import pytest
 
 from culturemech.export.kgx_export import (
     RECORDS_DIR_ENV,
-    _solution_record_index,
     is_solution_record,
     nested_solution_target,
     nodes,
@@ -260,30 +259,37 @@ def test_an_upstream_solution_id_resolves_to_the_record_that_carries_it(tmp_path
         "  label: SL10 elements\ncomposition:\n- preferred_term: ZnSO4\n  term:\n    id: CHEBI:32312\n"
     )
     monkeypatch.setenv(RECORDS_DIR_ENV, str(tmp_path))
-    _solution_record_index.cache_clear()
-    try:
-        ref = {"preferred_term": "SL10 elements", "term": {"id": "mediadive.solution:4367"}}
-        assert nested_solution_target(ref) == ("CultureMech:900301", False)
-        record = _with_solutions("CultureMech:900302", ref)
-        assert not any(n["id"].startswith("CultureMech:solution_") for n in nodes(record))
-        objects = [e["object"] for e in transform(record) if e["subject"] == "CultureMech:900302"]
-        assert "CultureMech:900301" in objects
-        # and an id the index does not know is minted as before
-        unknown = {"preferred_term": "Other", "term": {"id": "mediadive.solution:1"}}
-        assert nested_solution_target(unknown)[1] is True
-    finally:
-        _solution_record_index.cache_clear()
+    ref = {"preferred_term": "SL10 elements", "term": {"id": "mediadive.solution:4367"}}
+    assert nested_solution_target(ref) == ("CultureMech:900301", False)
+    record = _with_solutions("CultureMech:900302", ref)
+    assert not any(n["id"].startswith("CultureMech:solution_") for n in nodes(record))
+    objects = [e["object"] for e in transform(record) if e["subject"] == "CultureMech:900302"]
+    assert "CultureMech:900301" in objects
+    # and an id the index does not know is minted as before
+    unknown = {"preferred_term": "Other", "term": {"id": "mediadive.solution:1"}}
+    assert nested_solution_target(unknown)[1] is True
+
+
+def test_the_index_follows_the_records_directory_not_the_first_call(tmp_path, monkeypatch):
+    """Two runs in one process with different directories must not share an index:
+    the koza-path tests do exactly that with their per-test tmp dirs."""
+    ref = {"preferred_term": "SL10 elements", "term": {"id": "mediadive.solution:4367"}}
+    for n, rid in enumerate(("CultureMech:900311", "CultureMech:900312")):
+        d = tmp_path / f"run{n}" / "bacterial"
+        d.mkdir(parents=True)
+        (d / "sol.yaml").write_text(
+            f"id: {rid}\npreferred_term: SL10 elements\nterm:\n  id: mediadive.solution:4367\n"
+        )
+    monkeypatch.setenv(RECORDS_DIR_ENV, str(tmp_path / "run0"))
+    assert nested_solution_target(ref)[0] == "CultureMech:900311"
+    monkeypatch.setenv(RECORDS_DIR_ENV, str(tmp_path / "run1"))
+    assert nested_solution_target(ref)[0] == "CultureMech:900312"
 
 
 def test_without_a_records_dir_the_index_is_empty_and_everything_is_minted(monkeypatch):
     monkeypatch.delenv(RECORDS_DIR_ENV, raising=False)
-    _solution_record_index.cache_clear()
-    try:
-        assert _solution_record_index() == {}
-        ref = {"preferred_term": "SL10 elements", "term": {"id": "mediadive.solution:4367"}}
-        assert nested_solution_target(ref)[1] is True
-    finally:
-        _solution_record_index.cache_clear()
+    ref = {"preferred_term": "SL10 elements", "term": {"id": "mediadive.solution:4367"}}
+    assert nested_solution_target(ref)[1] is True
 
 
 def test_a_minted_nested_solution_still_exports_its_composition():
