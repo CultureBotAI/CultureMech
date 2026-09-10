@@ -187,9 +187,10 @@ def transform(
         if edge:
             yield edge
 
-    # NEW: Edge Type 5: Medium → Type (as node attribute)
+    # NEW: Edge Type 5: Medium → Type (as node attribute). A medium's attribute,
+    # so a stock-solution record (202 carry a medium_type) does not get one (#442).
     medium_type = record.get("medium_type")
-    if medium_type:
+    if medium_type and not is_solution_record(record):
         edge = medium_to_type_edge(medium_id, medium_type)
         if edge:
             yield edge
@@ -369,12 +370,13 @@ def nodes(record: dict[str, Any]) -> Iterator[dict[str, Any]]:
     )
     # A stock-solution record is a mixture, not a growth medium, matching the
     # `mediadive.solution:*` nodes kg-microbe already carries (#374).
-    if is_solution_record(record):
+    solution = is_solution_record(record)
+    if solution:
         medium_category = [CHEMICAL_MIXTURE]
 
     yield asdict(Node(id=medium_id, category=medium_category, name=name))
 
-    if medium_type:
+    if medium_type and not solution:
         yield asdict(
             Node(
                 id=f"culturemech:medium_type_{medium_type}",

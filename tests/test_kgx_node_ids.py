@@ -103,3 +103,13 @@ def test_edges_from_a_solution_record_use_its_id_not_the_empty_local_id():
     subjects = {e["subject"] for e in transform(CURATED_SOLUTION)}
     assert subjects == {"CultureMech:900105"}
     assert _record_node(CURATED_SOLUTION)["category"] == ["biolink:ChemicalMixture"]
+
+
+def test_a_solution_record_gets_no_medium_type_node_or_edge():
+    """202 solution records carry a medium_type; it is a medium's attribute (#442)."""
+    typed = {**CURATED_SOLUTION, "medium_type": "DEFINED"}
+    assert not any(n["id"].startswith("culturemech:medium_type_") for n in nodes(typed))
+    assert not any(e["predicate"] == "biolink:has_attribute" for e in transform(typed))
+    # and a medium with the same field still gets both
+    assert any(n["id"] == "culturemech:medium_type_DEFINED" for n in nodes(MEDIUM))
+    assert any(e["predicate"] == "biolink:has_attribute" for e in transform(MEDIUM))
