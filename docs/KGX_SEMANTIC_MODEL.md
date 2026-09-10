@@ -30,8 +30,12 @@ MeSH, and curated local identities can be valid ingredient objects. See
    - A standalone stock-solution record is a `biolink:ChemicalMixture` node keyed
      on its own `id`, like a medium: `CultureMech:013364`. Its reagents live in
      top-level `composition` and are exported as `has_part` edges from that id (#442)
-   - A solution nested inside a medium record has no id of its own and is minted
-     as `CultureMech:solution_*`, e.g. `CultureMech:solution_Trace_Metal_Solution`
+   - A solution nested inside a medium record links to the standalone solution
+     record that carries the same upstream id (`term.id`, 1,228 today) or that its
+     `culturemech_term` names, and mints nothing. Otherwise it is minted as
+     `CultureMech:solution_{name}_{fingerprint}`, the fingerprint taken over the
+     name and composition as written, so one stock shared by many media is one
+     node and two stocks that share a name are two (#441).
 
 4. **Ingredient** (MIM-resolved external identity)
    - Chemicals, food products, mixtures, and registry-identified materials in media or solutions
