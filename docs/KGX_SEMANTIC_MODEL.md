@@ -17,17 +17,20 @@ MeSH, and curated local identities can be valid ingredient objects. See
 
 ### Nodes
 
-1. **Medium** (`culturemech:*`)
-   - Growth medium formulations
-   - Example: `culturemech:LB_Broth`
+1. **Medium** (`CultureMech:*`)
+   - Growth medium formulations, one node per record, keyed on the record's
+     permanent `id` (never its name: names repeat, #438)
+   - Example: `CultureMech:000001`
 
 2. **Organism/Taxon** (`NCBITaxon:*`)
    - Microorganisms that grow in media
    - Example: `NCBITaxon:562` (Escherichia coli)
 
-3. **Solution** (`culturemech:solution_*`)
-   - Pre-made stock solutions used in media preparation
-   - Example: `culturemech:solution_Trace_Metal_Solution`
+3. **Solution**
+   - A standalone stock-solution record is a `biolink:ChemicalMixture` node keyed
+     on its own `id`, like a medium: `CultureMech:013364`
+   - A solution nested inside a medium record has no id of its own and is minted
+     as `culturemech:solution_*`, e.g. `culturemech:solution_Trace_Metal_Solution`
 
 4. **Ingredient** (MIM-resolved external identity)
    - Chemicals, food products, mixtures, and registry-identified materials in media or solutions
@@ -44,7 +47,7 @@ MeSH, and curated local identities can be valid ingredient objects. See
 **Relationship**: Organism grows in a specific medium
 
 ```
-NCBITaxon:562 --[METPO:2000517 (grows in)]--> culturemech:LB_Broth
+NCBITaxon:562 --[METPO:2000517 (grows in)]--> CultureMech:000001
 ```
 
 **Structure**:
@@ -61,7 +64,7 @@ NCBITaxon:562 --[METPO:2000517 (grows in)]--> culturemech:LB_Broth
 {
   "subject": "NCBITaxon:562",
   "predicate": "METPO:2000517",
-  "object": "culturemech:LB_Broth",
+  "object": "CultureMech:000001",
   "qualifiers": [
     {
       "qualifier_type_id": "biolink:strain",
@@ -76,7 +79,7 @@ NCBITaxon:562 --[METPO:2000517 (grows in)]--> culturemech:LB_Broth
 **Relationship**: Medium contains a pre-made solution component
 
 ```
-culturemech:M9_Minimal --[biolink:has_part]--> culturemech:solution_Trace_Elements
+CultureMech:000002 --[biolink:has_part]--> culturemech:solution_Trace_Elements
 ```
 
 **Structure**:
@@ -90,7 +93,7 @@ culturemech:M9_Minimal --[biolink:has_part]--> culturemech:solution_Trace_Elemen
 **Example**:
 ```json
 {
-  "subject": "culturemech:M9_Minimal",
+  "subject": "CultureMech:000002",
   "predicate": "biolink:has_part",
   "object": "culturemech:solution_Trace_Elements",
   "qualifiers": [
@@ -143,7 +146,7 @@ culturemech:solution_Trace_Elements --[biolink:has_part]--> CHEBI:49976
 **Relationship**: Medium directly contains chemical ingredients
 
 ```
-culturemech:LB_Broth --[biolink:has_part]--> CHEBI:17234
+CultureMech:000001 --[biolink:has_part]--> CHEBI:17234
 ```
 
 **Structure**:
@@ -158,7 +161,7 @@ culturemech:LB_Broth --[biolink:has_part]--> CHEBI:17234
 **Example**:
 ```json
 {
-  "subject": "culturemech:LB_Broth",
+  "subject": "CultureMech:000001",
   "predicate": "biolink:has_part",
   "object": "CHEBI:17234",
   "qualifiers": [
@@ -179,7 +182,7 @@ culturemech:LB_Broth --[biolink:has_part]--> CHEBI:17234
 **Relationship**: Medium has a type classification (COMPLEX, DEFINED, etc.)
 
 ```
-culturemech:LB_Broth --[biolink:has_attribute]--> culturemech:medium_type_COMPLEX
+CultureMech:000001 --[biolink:has_attribute]--> culturemech:medium_type_COMPLEX
 ```
 
 **Structure**:
@@ -193,7 +196,7 @@ culturemech:LB_Broth --[biolink:has_attribute]--> culturemech:medium_type_COMPLE
 **Example**:
 ```json
 {
-  "subject": "culturemech:LB_Broth",
+  "subject": "CultureMech:000001",
   "predicate": "biolink:has_attribute",
   "object": "culturemech:medium_type_COMPLEX",
   "qualifiers": [

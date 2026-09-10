@@ -28,6 +28,7 @@ class TestOrganismMediaQueries:
         """Test finding all media for E. coli."""
         # Load a test recipe with E. coli
         recipe_yaml = """
+id: CultureMech:900001
 name: LB Medium
 category: bacterial
 medium_type: complex
@@ -52,9 +53,9 @@ ingredients:
 
         # Find organism edges
         organism_edges = [
-            e for e in edges
-            if e.get("predicate") == "METPO:2000517"
-            and e.get("subject") == "NCBITaxon:562"
+            e
+            for e in edges
+            if e.get("predicate") == "METPO:2000517" and e.get("subject") == "NCBITaxon:562"
         ]
 
         assert len(organism_edges) > 0, "Should find E. coli edge"
@@ -63,6 +64,7 @@ ingredients:
     def test_organism_with_strain_designation(self, tmpdir):
         """Test organism with strain designation is queryable."""
         recipe_yaml = """
+id: CultureMech:900002
 name: E. coli K-12 Medium
 category: bacterial
 medium_type: complex
@@ -84,10 +86,7 @@ ingredients:
         recipe_file.write(recipe_yaml)
 
         edges = list(transform(yaml.safe_load(recipe_yaml)))
-        organism_edges = [
-            e for e in edges
-            if e.get("predicate") == "METPO:2000517"
-        ]
+        organism_edges = [e for e in edges if e.get("predicate") == "METPO:2000517"]
 
         assert len(organism_edges) > 0
         # Check that strain info is preserved in qualifiers
@@ -101,6 +100,7 @@ class TestStrainMediaQueries:
     def test_dsm_strain_identification(self, tmpdir):
         """Test that DSM strain numbers are captured in media names."""
         recipe_yaml = """
+id: CultureMech:900003
 name: MODIFIED FOR DSM 11573
 category: bacterial
 medium_type: complex
@@ -119,10 +119,7 @@ ingredients:
         recipe_file.write(recipe_yaml)
 
         edges = list(transform(yaml.safe_load(recipe_yaml)))
-        organism_edges = [
-            e for e in edges
-            if e.get("predicate") == "METPO:2000517"
-        ]
+        organism_edges = [e for e in edges if e.get("predicate") == "METPO:2000517"]
 
         assert len(organism_edges) > 0
         # Verify strain info is accessible
@@ -179,6 +176,7 @@ class TestIngredientMediaQueries:
     def test_find_media_with_glucose(self, tmpdir):
         """Test finding all media containing glucose."""
         recipe_yaml = """
+id: CultureMech:900004
 name: Glucose Medium
 category: bacterial
 medium_type: defined
@@ -199,9 +197,9 @@ ingredients:
 
         # Find ingredient edges
         glucose_edges = [
-            e for e in edges
-            if e.get("object") == "CHEBI:17234"
-            and e.get("predicate") == "biolink:has_part"
+            e
+            for e in edges
+            if e.get("object") == "CHEBI:17234" and e.get("predicate") == "biolink:has_part"
         ]
 
         assert len(glucose_edges) > 0, "Should find glucose edge"
@@ -210,6 +208,7 @@ ingredients:
     def test_ingredient_with_concentration_qualifier(self, tmpdir):
         """Test that concentration is captured as qualifier."""
         recipe_yaml = """
+id: CultureMech:900005
 name: Test Medium
 category: bacterial
 medium_type: defined
@@ -227,10 +226,7 @@ ingredients:
         recipe_file.write(recipe_yaml)
 
         edges = list(transform(yaml.safe_load(recipe_yaml)))
-        nacl_edges = [
-            e for e in edges
-            if e.get("object") == "CHEBI:26710"
-        ]
+        nacl_edges = [e for e in edges if e.get("object") == "CHEBI:26710"]
 
         assert len(nacl_edges) > 0
         edge = nacl_edges[0]
@@ -247,6 +243,7 @@ class TestMediaProperties:
     def test_media_by_physical_state(self, tmpdir):
         """Test finding solid vs liquid media."""
         recipe_yaml = """
+id: CultureMech:900006
 name: Agar Plate
 category: bacterial
 medium_type: complex
@@ -263,16 +260,14 @@ ingredients:
         edges = list(transform(yaml.safe_load(recipe_yaml)))
 
         # Physical state should generate an edge
-        state_edges = [
-            e for e in edges
-            if e.get("predicate") == "biolink:has_attribute"
-        ]
+        state_edges = [e for e in edges if e.get("predicate") == "biolink:has_attribute"]
 
         assert len(state_edges) > 0, "Should have physical state edge"
 
     def test_media_with_ph_value(self, tmpdir):
         """Test that pH is captured in media metadata."""
         recipe_yaml = """
+id: CultureMech:900007
 name: pH 7.0 Medium
 category: bacterial
 medium_type: defined
@@ -296,6 +291,7 @@ class TestCommunityVsIsolateCultures:
     def test_isolate_culture_type(self, tmpdir):
         """Test organism_culture_type: isolate."""
         recipe_yaml = """
+id: CultureMech:900008
 name: Pure Culture Medium
 category: bacterial
 medium_type: complex
@@ -313,16 +309,14 @@ ingredients:
         recipe_file.write(recipe_yaml)
 
         edges = list(transform(yaml.safe_load(recipe_yaml)))
-        organism_edges = [
-            e for e in edges
-            if e.get("predicate") == "METPO:2000517"
-        ]
+        organism_edges = [e for e in edges if e.get("predicate") == "METPO:2000517"]
 
         assert len(organism_edges) > 0
 
     def test_community_culture_type(self, tmpdir):
         """Test organism_culture_type: community."""
         recipe_yaml = """
+id: CultureMech:900009
 name: Co-culture Medium
 category: bacterial
 medium_type: complex
@@ -344,10 +338,7 @@ ingredients:
         recipe_file.write(recipe_yaml)
 
         edges = list(transform(yaml.safe_load(recipe_yaml)))
-        organism_edges = [
-            e for e in edges
-            if e.get("predicate") == "METPO:2000517"
-        ]
+        organism_edges = [e for e in edges if e.get("predicate") == "METPO:2000517"]
 
         # Should have edges for both organisms
         assert len(organism_edges) >= 2
@@ -371,7 +362,7 @@ class TestRealDataIntegration:
         assert len(organisms) >= 2000, f"Expected ~2,104 organisms, got {len(organisms)}"
 
         # Check structure
-        for filepath, org_data in list(organisms.items())[:5]:
+        for _filepath, org_data in list(organisms.items())[:5]:
             assert "organism_name" in org_data
             assert "culture_type" in org_data
 

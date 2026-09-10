@@ -40,6 +40,7 @@ from culturemech.export.kgx_export import (  # noqa: E402
 )
 
 RECORD = {
+    "id": "CultureMech:900001",
     "name": "Canary Medium",
     "medium_type": "COMPLEX",
     "physical_state": "LIQUID",
@@ -68,7 +69,17 @@ RECORD = {
     "variants": [{"name": "Canary Medium agar"}],
 }
 
-DEFINED_RECORD = {"name": "Defined Canary", "medium_type": "DEFINED", "physical_state": "LIQUID"}
+DEFINED_RECORD = {
+    "id": "CultureMech:900002",
+    "name": "Defined Canary",
+    "medium_type": "DEFINED",
+    "physical_state": "LIQUID",
+}
+
+
+def _minted(curie: str) -> bool:
+    """An id this export declares: a record id, or an auxiliary node it mints."""
+    return curie.startswith(("CultureMech:", "culturemech:"))
 
 
 # --- qualifier flattening -------------------------------------------------
@@ -147,7 +158,7 @@ def test_medium_and_type_categories_follow_the_consumer():
     """kg-microbe fixes these in transform_utils/constants.py; a medium node the
     loader does not recognise is worse than no node."""
     by_id = {n["id"]: n for n in nodes(RECORD)}
-    assert by_id["culturemech:Canary_Medium"]["category"] == [
+    assert by_id["CultureMech:900001"]["category"] == [
         "biolink:GrowthMedium",
         "biolink:ComplexMolecularMixture",
     ]
@@ -156,7 +167,7 @@ def test_medium_and_type_categories_follow_the_consumer():
     ]
 
     defined = {n["id"]: n for n in nodes(DEFINED_RECORD)}
-    assert defined["culturemech:Defined_Canary"]["category"] == [
+    assert defined["CultureMech:900002"]["category"] == [
         "biolink:GrowthMedium",
         "biolink:ChemicalMixture",
     ]
@@ -165,8 +176,11 @@ def test_medium_and_type_categories_follow_the_consumer():
 
 def test_a_medium_type_outside_the_table_falls_back_rather_than_guessing():
     """BUFFER and NEGATIVE_CONTROL assert nothing about composition."""
-    buffer_nodes = {n["id"]: n for n in nodes({"name": "B", "medium_type": "BUFFER"})}
-    assert buffer_nodes["culturemech:B"]["category"] == ["biolink:GrowthMedium"]
+    buffer_nodes = {
+        n["id"]: n
+        for n in nodes({"id": "CultureMech:900003", "name": "B", "medium_type": "BUFFER"})
+    }
+    assert buffer_nodes["CultureMech:900003"]["category"] == ["biolink:GrowthMedium"]
     assert buffer_nodes["culturemech:medium_type_BUFFER"]["category"] == ["biolink:ChemicalMixture"]
 
 
@@ -175,7 +189,8 @@ def test_only_minted_ids_get_nodes():
     authoritative labels. Minting name-less rows for them here would put a
     competing node into the merge."""
     ids = {n["id"] for n in nodes(RECORD)}
-    assert all(i.startswith("culturemech:") for i in ids)
+    # Record nodes carry the record id (#438); everything else is minted here.
+    assert all(i.startswith(("culturemech:", "CultureMech:")) for i in ids)
     assert not any(i.startswith(("CHEBI:", "NCBITaxon:")) for i in ids)
 
 
@@ -217,16 +232,22 @@ def test_ids_survive_kozas_asymmetric_sanitization():
     # And the medium id goes through the same sanitizer as the solution id --
     # before the fix it only replaced spaces, so a quoted medium name would drift
     # exactly the same way.
-    quoted = {n["id"] for n in nodes({"name": r"Foo \"Bar\"", "medium_type": "COMPLEX"})}
-    edge_subjects = {
-        e["subject"] for e in transform({"name": r"Foo \"Bar\"", "medium_type": "COMPLEX"})
-    }
+    quoted_record = {"id": "CultureMech:900004", "name": r"Foo \"Bar\"", "medium_type": "COMPLEX"}
+    quoted = {n["id"] for n in nodes(quoted_record)}
+    edge_subjects = {e["subject"] for e in transform(quoted_record)}
     assert edge_subjects <= quoted
 
 
-def test_a_record_with_no_name_mints_nothing():
-    """`culturemech:` alone would be a garbage node bound to every unnamed record."""
-    assert list(nodes({"medium_type": "COMPLEX"})) == []
+def test_a_record_with_no_name_still_mints_its_node_under_its_id():
+    """Before #438 an unnamed record minted nothing while its edges pointed at the
+    empty `culturemech:` -- the shape of all 4,784 MediaDive solution records."""
+    by_id = {n["id"]: n for n in nodes({"id": "CultureMech:900005", "medium_type": "COMPLEX"})}
+    assert by_id["CultureMech:900005"]["name"] == "CultureMech:900005"
+
+
+def test_a_record_with_no_id_is_refused_rather_than_name_keyed():
+    with pytest.raises(ValueError, match="no id"):
+        list(nodes({"name": "Anonymous", "medium_type": "COMPLEX"}))
 
 
 # --- the koza path, end to end -------------------------------------------
@@ -277,6 +298,7 @@ def exported_shared(tmp_path: Path) -> tuple[list[dict], list[dict]]:
         (records_dir / f"record_{i}.yaml").write_text(
             yaml.safe_dump(
                 {
+                    "id": f"CultureMech:90001{i}",
                     "name": name,
                     "medium_type": "COMPLEX",
                     "solutions": [SHARED_SOLUTION],
@@ -305,12 +327,7 @@ def test_no_culturemech_id_in_the_edges_dangles(exported):
     and 0 unused."""
     node_rows, edge_rows = exported
     declared = {n["id"] for n in node_rows}
-    referenced = {
-        end
-        for e in edge_rows
-        for end in (e["subject"], e["object"])
-        if end.startswith("culturemech:")
-    }
+    referenced = {end for e in edge_rows for end in (e["subject"], e["object"]) if _minted(end)}
     assert referenced - declared == set()
 
 
@@ -318,7 +335,7 @@ def test_ontology_ids_are_referenced_but_not_declared(exported):
     node_rows, edge_rows = exported
     declared = {n["id"] for n in node_rows}
     referenced = {end for e in edge_rows for end in (e["subject"], e["object"])}
-    external = {r for r in referenced if not r.startswith("culturemech:")}
+    external = {r for r in referenced if not _minted(r)}
     assert external, "fixture must reference ontology terms"
     assert external & declared == set()
 
