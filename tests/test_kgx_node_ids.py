@@ -108,10 +108,10 @@ def test_edges_from_a_solution_record_use_its_id_not_the_empty_local_id():
 def test_a_solution_record_gets_no_medium_type_node_or_edge():
     """202 solution records carry a medium_type; it is a medium's attribute (#442)."""
     typed = {**CURATED_SOLUTION, "medium_type": "DEFINED"}
-    assert not any(n["id"].startswith("culturemech:medium_type_") for n in nodes(typed))
+    assert not any(n["id"].startswith("CultureMech:medium_type_") for n in nodes(typed))
     assert not any(e["predicate"] == "biolink:has_attribute" for e in transform(typed))
     # and a medium with the same field still gets both
-    assert any(n["id"] == "culturemech:medium_type_DEFINED" for n in nodes(MEDIUM))
+    assert any(n["id"] == "CultureMech:medium_type_DEFINED" for n in nodes(MEDIUM))
     assert any(e["predicate"] == "biolink:has_attribute" for e in transform(MEDIUM))
 
 
@@ -123,3 +123,24 @@ def test_a_solution_record_emits_its_top_level_composition():
     objects = [e["object"] for e in transform(SOLUTION) if e["predicate"] == "biolink:has_part"]
     assert len(objects) == 1 and objects[0].startswith("CHEBI:")
     assert all(e["subject"] == "CultureMech:900103" for e in transform(SOLUTION))
+
+
+def test_everything_the_export_mints_shares_one_prefix():
+    """Records carry CultureMech:NNNNNN; auxiliary nodes used a lower-cased twin of
+    that prefix until #440, which no consumer treats as the same namespace."""
+    full = {
+        **MEDIUM,
+        "physical_state": "LIQUID",
+        "applications": ["Canary use"],
+        "solutions": [{"preferred_term": "Trace Elements", "composition": []}],
+        "variants": [{"name": "Canary agar"}],
+    }
+    minted = {n["id"] for n in nodes(full)}
+    minted |= {
+        end
+        for e in transform(full)
+        for end in (e["subject"], e["object"])
+        if ":" in end and end.split(":", 1)[0].lower() == "culturemech"
+    }
+    assert len(minted) >= 6, minted
+    assert all(i.startswith("CultureMech:") for i in minted), sorted(minted)

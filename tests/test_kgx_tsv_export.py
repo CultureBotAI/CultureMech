@@ -79,7 +79,7 @@ DEFINED_RECORD = {
 
 def _minted(curie: str) -> bool:
     """An id this export declares: a record id, or an auxiliary node it mints."""
-    return curie.startswith(("CultureMech:", "culturemech:"))
+    return curie.startswith("CultureMech:")
 
 
 # --- qualifier flattening -------------------------------------------------
@@ -162,7 +162,7 @@ def test_medium_and_type_categories_follow_the_consumer():
         "biolink:GrowthMedium",
         "biolink:ComplexMolecularMixture",
     ]
-    assert by_id["culturemech:medium_type_COMPLEX"]["category"] == [
+    assert by_id["CultureMech:medium_type_COMPLEX"]["category"] == [
         "biolink:ComplexMolecularMixture"
     ]
 
@@ -171,7 +171,7 @@ def test_medium_and_type_categories_follow_the_consumer():
         "biolink:GrowthMedium",
         "biolink:ChemicalMixture",
     ]
-    assert defined["culturemech:medium_type_DEFINED"]["category"] == ["biolink:ChemicalMixture"]
+    assert defined["CultureMech:medium_type_DEFINED"]["category"] == ["biolink:ChemicalMixture"]
 
 
 def test_a_medium_type_outside_the_table_falls_back_rather_than_guessing():
@@ -181,7 +181,7 @@ def test_a_medium_type_outside_the_table_falls_back_rather_than_guessing():
         for n in nodes({"id": "CultureMech:900003", "name": "B", "medium_type": "BUFFER"})
     }
     assert buffer_nodes["CultureMech:900003"]["category"] == ["biolink:GrowthMedium"]
-    assert buffer_nodes["culturemech:medium_type_BUFFER"]["category"] == ["biolink:ChemicalMixture"]
+    assert buffer_nodes["CultureMech:medium_type_BUFFER"]["category"] == ["biolink:ChemicalMixture"]
 
 
 def test_only_minted_ids_get_nodes():
@@ -189,8 +189,8 @@ def test_only_minted_ids_get_nodes():
     authoritative labels. Minting name-less rows for them here would put a
     competing node into the merge."""
     ids = {n["id"] for n in nodes(RECORD)}
-    # Record nodes carry the record id (#438); everything else is minted here.
-    assert all(i.startswith(("culturemech:", "CultureMech:")) for i in ids)
+    # One prefix for records (#438) and for everything minted here (#440).
+    assert all(i.startswith("CultureMech:") for i in ids)
     assert not any(i.startswith(("CHEBI:", "NCBITaxon:")) for i in ids)
 
 
@@ -203,8 +203,8 @@ def test_ids_survive_kozas_asymmetric_sanitization():
     from every edge column, but `TSVWriter.write_row` restores a node's `id` from
     the raw record and bypasses that, so the same solution was spelled two ways:
 
-        node: culturemech:solution_Mineral_salt_solution*_\"Hutner_Cohen-Bazire\"
-        edge: culturemech:solution_Mineral_salt_solution*_Hutner_Cohen-Bazire
+        node: CultureMech:solution_Mineral_salt_solution*_\"Hutner_Cohen-Bazire\"
+        edge: CultureMech:solution_Mineral_salt_solution*_Hutner_Cohen-Bazire
 
     Stripping the characters at the source makes both sides agree no matter what
     koza does downstream.
@@ -223,8 +223,8 @@ def test_ids_survive_kozas_asymmetric_sanitization():
 
     # The colon is the CURIE delimiter, so a name carrying one produced a
     # two-colon id that any consumer splitting on `:` reads wrongly. 19 in the
-    # corpus, e.g. `Solution A:` -> `culturemech:solution_Solution_A:`.
-    assert _create_solution_id("Solution A:") == "culturemech:solution_Solution_A"
+    # corpus, e.g. `Solution A:` -> `CultureMech:solution_Solution_A:`.
+    assert _create_solution_id("Solution A:") == "CultureMech:solution_Solution_A"
     assert _create_solution_id("Solution A:").count(":") == 1
     # Mapped to `_`, not dropped, so two words are not welded together.
     assert _sanitize_id("growth on sulfate:Add 13.9 g") == "growth_on_sulfate_Add_13.9_g"
@@ -394,7 +394,7 @@ def test_a_solution_shared_by_two_media_emits_its_composition_once(exported_shar
     composition = [
         e
         for e in edge_rows
-        if e["subject"].startswith("culturemech:solution_") and e["predicate"] == "biolink:has_part"
+        if e["subject"].startswith("CultureMech:solution_") and e["predicate"] == "biolink:has_part"
     ]
     assert composition, "fixture must reference a shared solution"
     assert len(composition) == len({e["id"] for e in composition})
@@ -403,7 +403,7 @@ def test_a_solution_shared_by_two_media_emits_its_composition_once(exported_shar
     to_solution = [
         e
         for e in edge_rows
-        if e["object"].startswith("culturemech:solution_") and e["predicate"] == "biolink:has_part"
+        if e["object"].startswith("CultureMech:solution_") and e["predicate"] == "biolink:has_part"
     ]
     assert len(to_solution) == 2, to_solution
 
@@ -414,7 +414,7 @@ def test_shared_nodes_are_written_once(exported):
     node_rows, _edge_rows = exported
     ids = [n["id"] for n in node_rows]
     assert len(ids) == len(set(ids))
-    assert "culturemech:state_liquid" in ids
+    assert "CultureMech:state_liquid" in ids
 
 
 def test_a_second_run_in_the_same_process_repeats_the_output(tmp_path):

@@ -128,7 +128,7 @@ class TestPhysicalStateToEdge:
 
         assert edge is not None
         assert edge["subject"] == "culturemech:LB"
-        assert edge["object"] == "culturemech:state_liquid"
+        assert edge["object"] == "CultureMech:state_liquid"
         assert edge["predicate"] == "biolink:has_attribute"
 
 
