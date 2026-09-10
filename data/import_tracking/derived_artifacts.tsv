@@ -54,23 +54,23 @@ data/import_tracking/schemas/manifest_v1.schema.json	UNKNOWN	no writer found
 data/merge_yaml/merge_stats.json	UNKNOWN	writer purity unestablished (merge_recipes.py)	src/culturemech/merge/merge_recipes.py	scripts/audit_merge_yaml_freshness.py; scripts/verify_merges.py; src/culturemech/merge/merge_recipes.py	
 data/merge_yaml/merge_stats_2026.json	UNKNOWN	no writer found			
 data/merge_yaml/merge_stats_test.json	UNKNOWN	no writer found			
-data/merge_yaml/merged/recipe_index.json	CURRENT_VIEW	generate_recipe_indexes.py		scripts/generate_recipe_indexes.py	
+data/merge_yaml/merged/recipe_index.json	CURRENT_VIEW	generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	
 data/merge_yaml/merged/recipe_statistics.json	CURRENT_VIEW	generate_recipe_indexes.py		scripts/generate_recipe_indexes.py	
-data/normalized_yaml/algae_index.json	UNKNOWN	no writer found			
-data/normalized_yaml/archaea_index.json	UNKNOWN	no writer found			
-data/normalized_yaml/bacterial_index.json	UNKNOWN	no writer found			
-data/normalized_yaml/by_source_komodo_index.json	UNKNOWN	no writer found			
-data/normalized_yaml/by_source_mediadive-solutions_index.json	UNKNOWN	no writer found			
-data/normalized_yaml/by_source_mediadive_index.json	UNKNOWN	no writer found			
-data/normalized_yaml/by_source_mediaingredientmech_index.json	UNKNOWN	no writer found			
-data/normalized_yaml/by_source_togo_index.json	UNKNOWN	no writer found			
-data/normalized_yaml/by_source_unknown_index.json	UNKNOWN	no writer found			
-data/normalized_yaml/fungal_index.json	UNKNOWN	no writer found			
-data/normalized_yaml/recipe_index.json	CURRENT_VIEW	generate_recipe_indexes.py		scripts/generate_recipe_indexes.py	
+data/normalized_yaml/algae_index.json	CURRENT_VIEW	generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	
+data/normalized_yaml/archaea_index.json	CURRENT_VIEW	generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	
+data/normalized_yaml/bacterial_index.json	CURRENT_VIEW	generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	
+data/normalized_yaml/by_source_komodo_index.json	CURRENT_VIEW	generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	
+data/normalized_yaml/by_source_mediadive-solutions_index.json	CURRENT_VIEW	generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	
+data/normalized_yaml/by_source_mediadive_index.json	CURRENT_VIEW	generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	
+data/normalized_yaml/by_source_mediaingredientmech_index.json	CURRENT_VIEW	generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	
+data/normalized_yaml/by_source_togo_index.json	CURRENT_VIEW	generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	
+data/normalized_yaml/by_source_unknown_index.json	CURRENT_VIEW	generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	
+data/normalized_yaml/fungal_index.json	CURRENT_VIEW	generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	
+data/normalized_yaml/recipe_index.json	CURRENT_VIEW	generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	
 data/normalized_yaml/recipe_statistics.json	CURRENT_VIEW	generate_recipe_indexes.py		scripts/generate_recipe_indexes.py	
 data/normalized_yaml/solutions/mediadive_solution_index.json	UNKNOWN	writer purity unestablished (import_mediadive_solutions.py)	scripts/import_mediadive_solutions.py	scripts/import_mediadive_solutions.py; scripts/migrate_solutions_from_ingredients.py	
-data/normalized_yaml/solutions_index.json	UNKNOWN	no writer found			
-data/normalized_yaml/specialized_index.json	UNKNOWN	no writer found			
+data/normalized_yaml/solutions_index.json	CURRENT_VIEW	generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	
+data/normalized_yaml/specialized_index.json	CURRENT_VIEW	generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	
 data/raw/microbe-media-param/compound_mappings_strict_final.tsv	UNKNOWN	writer purity unestablished (chemical_mappings.py)		src/culturemech/import/chemical_mappings.py	
 data/raw/microbe-media-param/compound_mappings_strict_final_hydrate.tsv	UNKNOWN	writer purity unestablished (chemical_mappings.py)		src/culturemech/import/chemical_mappings.py	
 data/solution_to_chebi_mapping.json	UNKNOWN	writer purity unestablished (build_compound_to_chebi_mapping.py)		scripts/build_compound_to_chebi_mapping.py; scripts/build_enhanced_compound_mapping.py; scripts/build_fast_compound_mapping.py; src/culturemech/embedding/aggregator.py; src/culturemech/embedding/aggregator_yaml_source.py; src/culturemech/visualization/umap_generator.py	

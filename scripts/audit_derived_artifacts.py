@@ -105,6 +105,30 @@ CHECKABLE: dict[str, list[str]] = {
     "reports/media_content_review_manifest.tsv": ["scripts/build_media_content_review_manifest.py"],
 }
 
+# Writers that name their outputs with an f-string, which the literal-basename
+# search below can never see (#454): generate_recipe_indexes.py writes
+# `{category}_index.json` and `by_source_{source}_index.json`, so every category
+# and source index sat at "no writer found" while recipe_index.json, named
+# literally, was CURRENT_VIEW. Declared by pattern, freshness guarded by
+# tests/test_recipe_indexes.py, which recomputes every entry with the generator.
+PATTERN_WRITERS: list[tuple[re.Pattern[str], str]] = [
+    (
+        re.compile(
+            r"^data/(?:normalized_yaml|merge_yaml/merged)/(?:[a-z]+|by_source_[a-z0-9-]+)_index\.json$"
+        ),
+        "scripts/generate_recipe_indexes.py",
+    ),
+]
+
+
+def pattern_writer(artifact: str) -> str | None:
+    """The declared writer for an artifact whose name is built at run time."""
+    for pattern, writer in PATTERN_WRITERS:
+        if pattern.match(artifact):
+            return writer
+    return None
+
+
 AUTHORITATIVE_INPUTS: dict[str, str] = {
     "data/culturemech_id_tombstones.tsv": "curator-owned append-only lifecycle ledger",
 }
@@ -173,10 +197,15 @@ def inventory() -> list[dict[str, str]]:
     for art in tracked_artifacts():
         mentions = find_writers(art)
         base = os.path.basename(art)
+        declared_by_pattern = pattern_writer(art)
+        if declared_by_pattern and declared_by_pattern not in mentions:
+            mentions = [declared_by_pattern] + mentions
         # Grep cannot tell a reader from a writer: research_media.py READS the id
         # registry to build an index and appeared among its "writers" (#209). This
         # traces the binding through the module instead.
         writers = [m for m in mentions if classify_file(REPO / m, base) == "yes"] or mentions
+        if declared_by_pattern and declared_by_pattern not in writers:
+            writers = [declared_by_pattern] + writers
         # A declared checkable artifact's writer is known exactly; re-deriving it
         # by grep would be guessing at something already stated.
         declared = CHECKABLE.get(art)
@@ -193,6 +222,8 @@ def inventory() -> list[dict[str, str]]:
         )
         kind, why = classify(art, primary)
         confirmed = [m for m in mentions if classify_file(REPO / m, base) == "yes"]
+        if declared_by_pattern and declared_by_pattern not in confirmed:
+            confirmed = [declared_by_pattern] + confirmed
         rows.append(
             {
                 "artifact": art,
