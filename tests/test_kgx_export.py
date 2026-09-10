@@ -178,6 +178,7 @@ class TestTransform:
     def test_full_recipe_transform(self):
         """Test complete recipe with multiple edge types."""
         record = {
+            "id": "CultureMech:900010",
             "name": "LB Broth",
             "medium_type": "COMPLEX",
             "physical_state": "LIQUID",
@@ -202,11 +203,12 @@ class TestTransform:
         # Should have: ingredient + organism + application + physical_state
         assert len(edges) >= 3
         subjects = [e["subject"] for e in edges]
-        assert "culturemech:LB_Broth" in subjects
+        assert "CultureMech:900010" in subjects
 
     def test_minimal_recipe(self):
         """Test recipe with minimal required fields."""
         record = {
+            "id": "CultureMech:900011",
             "name": "Minimal Medium",
             "medium_type": "DEFINED",
             "physical_state": "LIQUID",

@@ -269,6 +269,7 @@ def test_invalid_header_and_noncontiguous_groups_are_rejected():
 
 def test_kgx_uses_mim_for_override_non_chebi_and_authoritative_unmapped():
     record = {
+        "id": "CultureMech:900020",
         "name": "Resolver Canary",
         "ingredients": [
             {"preferred_term": "EDTA", "term": {"id": "CHEBI:64755"}},
@@ -284,6 +285,7 @@ def test_kgx_uses_mim_for_override_non_chebi_and_authoritative_unmapped():
 
 def test_kgx_labels_ambiguous_and_source_anchored_local_fallbacks():
     record = {
+        "id": "CultureMech:900021",
         "name": "Fallback Canary",
         "ingredients": [
             {

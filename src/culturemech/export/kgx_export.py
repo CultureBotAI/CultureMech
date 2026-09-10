@@ -74,6 +74,54 @@ except ImportError:
 KNOWLEDGE_SOURCE = "infores:culturemech"
 NAMESPACE_UUID = uuid.uuid5(uuid.NAMESPACE_URL, "https://w3id.org/culturemech")
 
+# A standalone stock-solution record is recognised by the same two explicit
+# signals scripts/record_kinds.py uses: a curated `record_kind: SOLUTION`, or an
+# upstream solution id in `term.id`. Shape heuristics would also match malformed
+# media, so neither side uses them.
+_SOLUTION_TERM_PREFIXES = ("mediadive.solution:", "MediaIngredientMech:")
+
+
+def record_node_id(record: dict[str, Any]) -> str:
+    """The node id for a record: its own permanent CultureMech identifier.
+
+    Until #438 this was ``culturemech:{sanitized name}``, and node emission dedupes
+    on id, so records sharing a name collapsed into one node with merged edges:
+    3,181 media and 4,787 solutions on the 2026-09-09 corpus. The 4,784 MediaDive
+    solution records carry ``preferred_term`` and no ``name`` at all, so every one
+    of them sanitized to the empty string and none emitted a node.
+
+    ``id`` is required by the schema, immutable, never reused, and pinned by
+    ``just check-id-catalog``; it is the only identifier a node can safely carry.
+    A record without one is a data error, not a case to paper over with a name.
+    """
+    record_id = record.get("id")
+    if not isinstance(record_id, str) or not record_id.strip():
+        raise ValueError(
+            f"record has no id (name={record.get('name')!r}, "
+            f"preferred_term={record.get('preferred_term')!r}); every record must "
+            "carry its permanent CultureMech identifier"
+        )
+    return record_id.strip()
+
+
+def record_label(record: dict[str, Any]) -> str:
+    """Display label: ``name`` for media, ``preferred_term`` for solution records."""
+    for key in ("name", "preferred_term", "original_name"):
+        value = record.get(key)
+        if isinstance(value, str) and value.strip():
+            return value.strip()
+    return record_node_id(record)
+
+
+def is_solution_record(record: dict[str, Any]) -> bool:
+    """True for a standalone stock-solution record (see scripts/record_kinds.py)."""
+    if record.get("record_kind") == "SOLUTION":
+        return True
+    term = record.get("term")
+    tid = term.get("id") if isinstance(term, dict) else None
+    return isinstance(tid, str) and tid.startswith(_SOLUTION_TERM_PREFIXES)
+
+
 # Predicates following cmm-ai-automation schema
 GROWS_IN_MEDIUM = "METPO:2000517"  # grows in
 HAS_PART = "biolink:has_part"  # For medium→ingredient, solution→ingredient
@@ -107,10 +155,7 @@ def transform(
     9. Medium → has_database_reference → Database ID (legacy)
     10. Variant → variant_of → Base Medium (legacy)
     """
-    # Sanitized, not just space-replaced: a name carrying a quote would
-    # otherwise be spelled differently in the nodes and edges files (see
-    # `_sanitize_id`).
-    medium_id = f"culturemech:{_sanitize_id(str(record.get('name') or ''))}"
+    medium_id = record_node_id(record)
 
     # NEW: Edge Type 1: Organism → Medium (grows_in_medium)
     for organism in record.get("target_organisms", []):
@@ -142,9 +187,10 @@ def transform(
         if edge:
             yield edge
 
-    # NEW: Edge Type 5: Medium → Type (as node attribute)
+    # NEW: Edge Type 5: Medium → Type (as node attribute). A medium's attribute,
+    # so a stock-solution record (202 carry a medium_type) does not get one (#442).
     medium_type = record.get("medium_type")
-    if medium_type:
+    if medium_type and not is_solution_record(record):
         edge = medium_to_type_edge(medium_id, medium_type)
         if edge:
             yield edge
@@ -314,20 +360,23 @@ def nodes(record: dict[str, Any]) -> Iterator[dict[str, Any]]:
     belongs to all 8,850 COMPLEX media. Deduplication is the writer's job (see
     ``koza_transform``), because it is a property of the run, not of the record.
     """
-    name = str(record.get("name") or "")
-    if not name:
-        return
-    medium_id = f"culturemech:{_sanitize_id(name)}"
+    medium_id = record_node_id(record)
+    name = record_label(record)
     medium_type = record.get("medium_type")
 
     medium_category, type_category = _MEDIUM_TYPE_CATEGORIES.get(
         str(medium_type or ""),
         (_DEFAULT_MEDIUM_CATEGORY, _DEFAULT_MEDIUM_TYPE_CATEGORY),
     )
+    # A stock-solution record is a mixture, not a growth medium, matching the
+    # `mediadive.solution:*` nodes kg-microbe already carries (#374).
+    solution = is_solution_record(record)
+    if solution:
+        medium_category = [CHEMICAL_MIXTURE]
 
     yield asdict(Node(id=medium_id, category=medium_category, name=name))
 
-    if medium_type:
+    if medium_type and not solution:
         yield asdict(
             Node(
                 id=f"culturemech:medium_type_{medium_type}",
