@@ -113,6 +113,8 @@ def test_qualifier_values_survive_the_conversion_to_a_row():
     row = to_edge(edge)
     assert row.concentration == "10 G_PER_L"
     assert row.role == "CARBON_SOURCE"
+    # and the typed pair beside it (#445)
+    assert (row.value, row.unit) == ("10", "G_PER_L")
 
 
 def test_an_unknown_qualifier_type_is_dropped_not_misfiled():
@@ -506,3 +508,18 @@ def test_find_records_expands_a_tilde_path(tmp_path, monkeypatch):
 
     assert files, "a ~-prefixed records dir found nothing"
     assert all(Path(f).is_absolute() and "~" not in f for f in files)
+
+
+def test_the_tsv_carries_value_and_unit_columns(exported):
+    """The MediaDive transform kg-microbe ingests puts the quantity in `value` and
+    `unit`; a consumer that sums or filters by amount reads those, not a string."""
+    _, edge_rows = exported
+    assert {"value", "unit"} <= set(edge_rows[0].keys())
+    quantified = [e for e in edge_rows if e["value"]]
+    assert quantified, "fixture must carry a concentration"
+    for e in quantified:
+        assert e["concentration"] == f"{e['value']} {e['unit']}"
+    glucose = next(e for e in edge_rows if e["object"] == "CHEBI:17234")
+    assert (glucose["value"], glucose["unit"]) == ("10", "G_PER_L")
+    unquantified = next(e for e in edge_rows if e["predicate"] == "biolink:has_attribute")
+    assert (unquantified["value"], unquantified["unit"]) == ("", "")
