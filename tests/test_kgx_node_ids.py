@@ -16,7 +16,9 @@ from __future__ import annotations
 import pytest
 
 from culturemech.export.kgx_export import (
+    RECORDS_DIR_ENV,
     is_solution_record,
+    nested_solution_target,
     nodes,
     record_label,
     record_node_id,
@@ -185,3 +187,116 @@ def test_a_value_that_is_not_a_number_keeps_the_qualifier_but_no_typed_pair(raw)
     edge = next(e for e in transform(record) if e["predicate"] == "biolink:has_part")
     assert edge["value"] is None and edge["unit"] is None
     assert edge["qualifiers"][0]["qualifier_value"] == f"{raw} G_PER_L"
+
+
+# --- nested solutions (#441) -------------------------------------------------
+
+VITAMINS_A = {
+    "preferred_term": "Vitamin solution",
+    "concentration": {"value": "1", "unit": "ML_PER_L"},
+    "composition": [{"preferred_term": "Biotin", "term": {"id": "CHEBI:15956"}}],
+}
+VITAMINS_B = {
+    "preferred_term": "Vitamin solution",
+    "concentration": {"value": "1", "unit": "ML_PER_L"},
+    "composition": [{"preferred_term": "Thiamine", "term": {"id": "CHEBI:18385"}}],
+}
+
+
+def _with_solutions(record_id, *solutions):
+    return {
+        "id": record_id,
+        "name": "Canary",
+        "medium_type": "DEFINED",
+        "solutions": list(solutions),
+    }
+
+
+def test_two_nested_solutions_with_one_name_and_different_reagents_are_different_nodes():
+    """The union node: `Vitamin solution` carried 15 compositions under one id."""
+    a, _ = nested_solution_target(VITAMINS_A)
+    b, _ = nested_solution_target(VITAMINS_B)
+    assert a != b
+    assert a.startswith("CultureMech:solution_Vitamin_solution_") and b.startswith(
+        "CultureMech:solution_Vitamin_solution_"
+    )
+
+
+def test_one_stock_shared_by_two_media_is_one_node():
+    """Same name, same reagents: one stock, one node, one composition (#312)."""
+    a, _ = nested_solution_target(VITAMINS_A)
+    b, _ = nested_solution_target(dict(VITAMINS_A))
+    assert a == b
+
+
+def test_footnote_marked_names_are_kept_apart_when_their_reagents_differ():
+    """MediaDive's `Vitamin solution*` and `**` are two stocks; the sanitizer drops
+    the asterisks, so the composition has to keep them apart."""
+    star = {**VITAMINS_A, "preferred_term": "Vitamin solution*"}
+    star2 = {**VITAMINS_B, "preferred_term": "Vitamin solution**"}
+    assert nested_solution_target(star)[0] != nested_solution_target(star2)[0]
+
+
+def test_a_nested_solution_naming_a_record_links_to_it_and_mints_nothing():
+    ref = {
+        "preferred_term": "SES",
+        "culturemech_term": {"id": "CultureMech:000130", "label": "SES"},
+    }
+    record = _with_solutions("CultureMech:900201", ref)
+    assert nested_solution_target(ref) == ("CultureMech:000130", False)
+    assert not any(n["id"].startswith("CultureMech:solution_") for n in nodes(record))
+    link = [e for e in transform(record) if e["object"] == "CultureMech:000130"]
+    assert len(link) == 1 and link[0]["subject"] == "CultureMech:900201"
+
+
+def test_an_upstream_solution_id_resolves_to_the_record_that_carries_it(tmp_path, monkeypatch):
+    """The 1,228 `mediadive.solution:` references; none carries a composition of
+    its own, so the record's exported composition (#442) is the depth."""
+    records = tmp_path / "bacterial"
+    records.mkdir()
+    (records / "sol.yaml").write_text(
+        "id: CultureMech:900301\npreferred_term: SL10 elements\nterm:\n  id: mediadive.solution:4367\n"
+        "  label: SL10 elements\ncomposition:\n- preferred_term: ZnSO4\n  term:\n    id: CHEBI:32312\n"
+    )
+    monkeypatch.setenv(RECORDS_DIR_ENV, str(tmp_path))
+    ref = {"preferred_term": "SL10 elements", "term": {"id": "mediadive.solution:4367"}}
+    assert nested_solution_target(ref) == ("CultureMech:900301", False)
+    record = _with_solutions("CultureMech:900302", ref)
+    assert not any(n["id"].startswith("CultureMech:solution_") for n in nodes(record))
+    objects = [e["object"] for e in transform(record) if e["subject"] == "CultureMech:900302"]
+    assert "CultureMech:900301" in objects
+    # and an id the index does not know is minted as before
+    unknown = {"preferred_term": "Other", "term": {"id": "mediadive.solution:1"}}
+    assert nested_solution_target(unknown)[1] is True
+
+
+def test_the_index_follows_the_records_directory_not_the_first_call(tmp_path, monkeypatch):
+    """Two runs in one process with different directories must not share an index:
+    the koza-path tests do exactly that with their per-test tmp dirs."""
+    ref = {"preferred_term": "SL10 elements", "term": {"id": "mediadive.solution:4367"}}
+    for n, rid in enumerate(("CultureMech:900311", "CultureMech:900312")):
+        d = tmp_path / f"run{n}" / "bacterial"
+        d.mkdir(parents=True)
+        (d / "sol.yaml").write_text(
+            f"id: {rid}\npreferred_term: SL10 elements\nterm:\n  id: mediadive.solution:4367\n"
+        )
+    monkeypatch.setenv(RECORDS_DIR_ENV, str(tmp_path / "run0"))
+    assert nested_solution_target(ref)[0] == "CultureMech:900311"
+    monkeypatch.setenv(RECORDS_DIR_ENV, str(tmp_path / "run1"))
+    assert nested_solution_target(ref)[0] == "CultureMech:900312"
+
+
+def test_without_a_records_dir_the_index_is_empty_and_everything_is_minted(monkeypatch):
+    monkeypatch.delenv(RECORDS_DIR_ENV, raising=False)
+    ref = {"preferred_term": "SL10 elements", "term": {"id": "mediadive.solution:4367"}}
+    assert nested_solution_target(ref)[1] is True
+
+
+def test_a_minted_nested_solution_still_exports_its_composition():
+    record = _with_solutions("CultureMech:900401", VITAMINS_A)
+    target, minted = nested_solution_target(VITAMINS_A)
+    assert minted
+    assert any(n["id"] == target for n in nodes(record))
+    assert any(
+        e["subject"] == target and e["predicate"] == "biolink:has_part" for e in transform(record)
+    )

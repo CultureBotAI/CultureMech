@@ -48,9 +48,14 @@ Legacy Edges (for backward compatibility):
 10. Variant → variant_of → Base Medium
 """
 
+import hashlib
+import os
+import re
 import uuid
 from collections.abc import Callable, Iterator, Mapping
 from dataclasses import asdict, dataclass
+from functools import lru_cache
+from pathlib import Path
 from typing import Any
 
 from culturemech.ingredients.mim_label_index import GroundingDecision, resolve_ingredient
@@ -171,16 +176,21 @@ def transform(
 
     # NEW: Edge Type 2: Medium → Solution (has_solution_component)
     for solution in record.get("solutions", []):
-        edge = medium_to_solution_edge(medium_id, solution)
+        target, minted = nested_solution_target(solution)
+        if not target:
+            continue
+        edge = medium_to_solution_edge(medium_id, solution, target)
         if edge:
             yield edge
 
-        # NEW: Edge Type 3: Solution → Ingredient (has_part)
-        # Extract ingredients from solution composition
-        solution_id = _create_solution_id(solution.get("preferred_term", ""))
+        # NEW: Edge Type 3: Solution → Ingredient (has_part). Only for a node we
+        # mint here: a solution record exports its own composition (#442), and
+        # the nested references that resolve to one carry none anyway (#441).
+        if not minted:
+            continue
         for ingredient in solution.get("composition", []):
             edge = solution_to_ingredient_edge(
-                solution_id, ingredient, ingredient_resolver=ingredient_resolver
+                target, ingredient, ingredient_resolver=ingredient_resolver
             )
             if edge:
                 yield edge
@@ -412,13 +422,13 @@ def nodes(record: dict[str, Any]) -> Iterator[dict[str, Any]]:
         )
 
     for solution in record.get("solutions", []) or []:
-        preferred_term = solution.get("preferred_term")
-        if preferred_term:
+        target, minted = nested_solution_target(solution)
+        if target and minted:
             yield asdict(
                 Node(
-                    id=_create_solution_id(preferred_term),
+                    id=target,
                     category=[CHEMICAL_MIXTURE],
-                    name=str(preferred_term),
+                    name=str(solution.get("preferred_term")),
                 )
             )
 
@@ -501,7 +511,9 @@ def organism_grows_in_medium_edge(organism: dict, medium_id: str) -> dict | None
     )
 
 
-def medium_to_solution_edge(medium_id: str, solution: dict) -> dict | None:
+def medium_to_solution_edge(
+    medium_id: str, solution: dict, solution_id: str | None = None
+) -> dict | None:
     """
     Medium → has_solution_component (biolink:has_part) → Solution
 
@@ -515,11 +527,10 @@ def medium_to_solution_edge(medium_id: str, solution: dict) -> dict | None:
 
     Data preserved: Solution reference, concentration
     """
-    solution_name = solution.get("preferred_term")
-    if not solution_name:
+    if solution_id is None:
+        solution_id, _minted = nested_solution_target(solution)
+    if not solution_id:
         return None
-
-    solution_id = _create_solution_id(solution_name)
 
     qualifiers, value, unit = _quantity(solution.get("concentration"))
 
@@ -895,6 +906,98 @@ def _sanitize_id(text: str) -> str:
     while "__" in text:
         text = text.replace("__", "_")
     return text.strip("_")
+
+
+# Where a run's records live, for the solution-record index below. Set by
+# scripts/export_kgx.py before koza starts; koza loads this module as a fresh
+# copy, so a module global set from the runner would not reach it, and the
+# environment is the one channel both copies share. Unset in unit tests, where
+# the index is empty and every nested solution is minted.
+RECORDS_DIR_ENV = "CULTUREMECH_RECORDS_DIR"
+_RECORD_ID_LINE = re.compile(r"^id: (CultureMech:\d{6})\n", re.M)
+_SOLUTION_TERM_LINES = re.compile(r"^term:\n  id: (\S+)", re.M)
+
+
+def _solution_record_index() -> dict[str, str]:
+    """Upstream solution id -> the standalone solution record that carries it,
+    for the records directory named in the environment; empty when unset."""
+    root = os.environ.get(RECORDS_DIR_ENV)
+    return _index_records_under(root) if root else {}
+
+
+@lru_cache(maxsize=4)
+def _index_records_under(root: str) -> dict[str, str]:
+    """Build the index for one directory. Cached per directory, not per process:
+    the first cut cached the result of the first call regardless of which
+    directory the environment named, so a second run in the same process with a
+    different records directory reused a stale index (#448 review).
+
+    `term.id` sits within the first four lines of all 4,784 solution records and
+    `id:` is line one, so a regex over the file text is enough; a second YAML
+    parse of the corpus would double the export's cost for nothing.
+    """
+    index: dict[str, str] = {}
+    for path in Path(root).glob("*/*.yaml"):
+        head = path.read_text(errors="replace")[:600]
+        record = _RECORD_ID_LINE.match(head)
+        term = _SOLUTION_TERM_LINES.search(head)
+        if record and term and term.group(1).startswith(_SOLUTION_TERM_PREFIXES):
+            index[term.group(1)] = record.group(1)
+    return index
+
+
+def _solution_fingerprint(solution: dict) -> str:
+    """Eight hex digits over the name and the composition as written.
+
+    Two nested solutions with one name and different reagents are different
+    stocks (`Vitamin solution` carries 15 compositions corpus-wide, #441); two
+    with the same name and reagents are one stock shared by many media. Keyed on
+    the record's own ids and values, not the resolver's, so the id is stable
+    across MIM pins; it does move when a grounding in the record is repaired,
+    which is acceptable for a node that has no permanent identifier.
+    """
+    rows = sorted(
+        (
+            str(
+                (row.get("term") or {}).get("id")
+                or (row.get("chebi_term") or {}).get("id")
+                or row.get("preferred_term")
+            ),
+            str((row.get("concentration") or {}).get("value")),
+            str((row.get("concentration") or {}).get("unit")),
+        )
+        for row in (solution.get("composition") or [])
+        if isinstance(row, dict)
+    )
+    payload = repr((str(solution.get("preferred_term") or ""), rows)).encode()
+    return hashlib.sha1(payload).hexdigest()[:8]
+
+
+def nested_solution_target(solution: dict) -> tuple[str | None, bool]:
+    """The node a medium's nested solution points at, and whether we mint it.
+
+    In order:
+    1. `culturemech_term.id` naming a record: that record (15 today).
+    2. `term.id` matching a standalone solution record: that record (1,228 today,
+       none of which carries a composition of its own, so nothing is lost).
+    3. Otherwise a minted `CultureMech:solution_{name}_{fingerprint}` node.
+
+    Until #441 every nested solution was `CultureMech:solution_{name}`, and
+    emission dedupes on id, so 51 names holding several different compositions
+    collapsed into union nodes and the sanitizer merged MediaDive's footnote-marked
+    names (`Vitamin solution*`, `**`) on top.
+    """
+    name = solution.get("preferred_term")
+    if not name:
+        return None, False
+    local = solution.get("culturemech_term")
+    if isinstance(local, dict) and str(local.get("id", "")).startswith(f"{PREFIX}:"):
+        return str(local["id"]), False
+    term = solution.get("term")
+    tid = term.get("id") if isinstance(term, dict) else None
+    if isinstance(tid, str) and tid in _solution_record_index():
+        return _solution_record_index()[tid], False
+    return f"{_create_solution_id(str(name))}_{_solution_fingerprint(solution)}", True
 
 
 def _create_solution_id(solution_name: str) -> str:

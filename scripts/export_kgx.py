@@ -19,6 +19,7 @@ about.
 from __future__ import annotations
 
 import argparse
+import os
 import sys
 from pathlib import Path
 
@@ -66,6 +67,11 @@ def run(records_dir: Path, output_dir: Path, limit: int = 0) -> tuple[int, int]:
     files = find_records(records_dir)
     if not files:
         raise SystemExit(f"No record YAMLs found under {records_dir}")
+    # The transform resolves a medium's nested solution to the standalone
+    # solution record that carries the same upstream id (#441). koza loads the
+    # transform as a fresh module copy, so the records directory travels in the
+    # environment rather than a module global.
+    os.environ["CULTUREMECH_RECORDS_DIR"] = str(records_dir)
 
     # No dedup reset here, and deliberately so. Koza loads the transform with
     # `importlib.util.spec_from_file_location` and, in its own words, "without
