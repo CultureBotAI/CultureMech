@@ -113,3 +113,13 @@ def test_a_solution_record_gets_no_medium_type_node_or_edge():
     # and a medium with the same field still gets both
     assert any(n["id"] == "culturemech:medium_type_DEFINED" for n in nodes(MEDIUM))
     assert any(e["predicate"] == "biolink:has_attribute" for e in transform(MEDIUM))
+
+
+def test_a_solution_record_emits_its_top_level_composition():
+    """The SolutionRecipe shape keeps reagents in `composition`, not `ingredients`;
+    until #442 transform() never walked it and 4,784 records emitted no has_part."""
+    # The object goes through the MIM resolver (ZnSO4 publishes as CHEBI:35176), so
+    # assert the edge and its identity class rather than the record's own id.
+    objects = [e["object"] for e in transform(SOLUTION) if e["predicate"] == "biolink:has_part"]
+    assert len(objects) == 1 and objects[0].startswith("CHEBI:")
+    assert all(e["subject"] == "CultureMech:900103" for e in transform(SOLUTION))

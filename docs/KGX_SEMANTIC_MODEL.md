@@ -28,7 +28,8 @@ MeSH, and curated local identities can be valid ingredient objects. See
 
 3. **Solution**
    - A standalone stock-solution record is a `biolink:ChemicalMixture` node keyed
-     on its own `id`, like a medium: `CultureMech:013364`
+     on its own `id`, like a medium: `CultureMech:013364`. Its reagents live in
+     top-level `composition` and are exported as `has_part` edges from that id (#442)
    - A solution nested inside a medium record has no id of its own and is minted
      as `culturemech:solution_*`, e.g. `culturemech:solution_Trace_Metal_Solution`
 

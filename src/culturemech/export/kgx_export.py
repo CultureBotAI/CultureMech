@@ -147,7 +147,7 @@ def transform(
     1. organism → medium (grows_in_medium: METPO:2000517)
     2. medium → solution (has_part)
     3. solution → ingredient (has_part)
-    4. medium → ingredient (has_part)
+    4. medium → ingredient (has_part); a solution record's own composition too
     5. medium → type (as node attribute via has_attribute)
     6. Medium → has_application → Use case (legacy)
     7. Medium → has_physical_state → State (legacy)
@@ -181,6 +181,19 @@ def transform(
 
     # Edge Type 4: Medium → Ingredient (has_part)
     for ingredient in record.get("ingredients", []):
+        edge = medium_to_ingredient_edge(
+            medium_id, ingredient, ingredient_resolver=ingredient_resolver
+        )
+        if edge:
+            yield edge
+
+    # Edge Type 4b: a stock-solution record's own composition (has_part). A
+    # SolutionRecipe-shaped record keeps its reagents in top-level `composition`,
+    # not `ingredients`; the 4,784 MediaDive solution records carry 35,009 such
+    # rows, all grounded, and until #442 none reached the graph. Their
+    # `ingredients` list is a single ungrounded placeholder, so walking both
+    # emits nothing twice.
+    for ingredient in record.get("composition", []) or []:
         edge = medium_to_ingredient_edge(
             medium_id, ingredient, ingredient_resolver=ingredient_resolver
         )
