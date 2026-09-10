@@ -1,11 +1,13 @@
 {
-  "generated": "2026-09-10T09:34:07.012674+00:00",
+  "generated": "2026-09-10T10:10:14.526153+00:00",
   "total_recipes": 15878,
   "by_source": {
     "KOMODO": 3637,
     "MediaDive": 3325,
+    "MediaDive-Solutions": 4775,
+    "MediaIngredientMech": 10,
     "TOGO": 2917,
-    "unknown": 5999
+    "unknown": 1214
   },
   "by_category": {
     "algae": 249,
@@ -19,6 +21,6 @@
   "ingredient_statistics": {
     "min": 0,
     "max": 99,
-    "avg": 10.7
+    "avg": 12.6
   }
 }
