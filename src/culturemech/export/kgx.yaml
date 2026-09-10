@@ -43,6 +43,8 @@ writer:
     - agent_type
     - publications
     - concentration
+    - value
+    - unit
     - role
     - strain
     - growth_phase

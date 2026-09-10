@@ -144,3 +144,25 @@ def test_everything_the_export_mints_shares_one_prefix():
     }
     assert len(minted) >= 6, minted
     assert all(i.startswith("CultureMech:") for i in minted), sorted(minted)
+
+
+def test_quantified_edges_carry_value_and_unit_as_typed_fields():
+    """#445: the quantity travels as two fields, the value string as written and the
+    unit enum token, beside the joined qualifier; unquantified edges carry neither."""
+    record = {
+        **MEDIUM,
+        "ingredients": [
+            {
+                "preferred_term": "Glucose",
+                "term": {"id": "CHEBI:17234"},
+                "concentration": {"value": "5e-05", "unit": "MOLAR"},
+            },
+            {"preferred_term": "Agar", "term": {"id": "CHEBI:2509"}},
+        ],
+    }
+    by_obj = {e["object"]: e for e in transform(record) if e["predicate"] == "biolink:has_part"}
+    q = next(e for o, e in by_obj.items() if e.get("value"))
+    assert (q["value"], q["unit"]) == ("5e-05", "MOLAR")
+    assert any(x["qualifier_value"] == "5e-05 MOLAR" for x in q["qualifiers"])
+    bare = next(e for o, e in by_obj.items() if not e.get("value"))
+    assert bare["unit"] is None and not bare.get("qualifiers")

@@ -342,6 +342,11 @@ class Edge:
     agent_type: str = "manual_validation_of_automated_agent"
     publications: list[str] | None = None
     concentration: str | None = None
+    # The quantity as two typed columns, the shape kg-microbe already ingests
+    # from the MediaDive transform (#445). `concentration` keeps the joined
+    # string for one release so no reader breaks on the same day.
+    value: str | None = None
+    unit: str | None = None
     role: str | None = None
     strain: str | None = None
     growth_phase: str | None = None
@@ -368,6 +373,8 @@ def to_edge(edge_dict: dict[str, Any]) -> Edge:
         predicate=edge_dict["predicate"],
         object=edge_dict["object"],
         publications=edge_dict.get("publications") or None,
+        value=edge_dict.get("value"),
+        unit=edge_dict.get("unit"),
         **columns,
     )
 
@@ -514,21 +521,15 @@ def medium_to_solution_edge(medium_id: str, solution: dict) -> dict | None:
 
     solution_id = _create_solution_id(solution_name)
 
-    qualifiers = []
-    concentration = solution.get("concentration", {})
-    if concentration:
-        val = concentration.get("value")
-        unit = concentration.get("unit")
-        if val and unit:
-            qualifiers.append(
-                {"qualifier_type_id": "biolink:concentration", "qualifier_value": f"{val} {unit}"}
-            )
+    qualifiers, value, unit = _quantity(solution.get("concentration"))
 
     return _make_association(
         subject=medium_id,
         predicate=HAS_SOLUTION_COMPONENT,  # biolink:has_part
         obj=solution_id,
         qualifiers=qualifiers if qualifiers else None,
+        value=value,
+        unit=unit,
     )
 
 
@@ -555,15 +556,7 @@ def solution_to_ingredient_edge(
     if not chem_id:
         return None
 
-    qualifiers = []
-    concentration = ingredient.get("concentration", {})
-    if concentration:
-        val = concentration.get("value")
-        unit = concentration.get("unit")
-        if val and unit:
-            qualifiers.append(
-                {"qualifier_type_id": "biolink:concentration", "qualifier_value": f"{val} {unit}"}
-            )
+    qualifiers, value, unit = _quantity(ingredient.get("concentration"))
 
     # Combine role tokens across the three facet slots (facet vocabulary
     # replaced the retired flat `role: IngredientRoleEnum` slot). Preserves
@@ -585,6 +578,8 @@ def solution_to_ingredient_edge(
         predicate=HAS_PART,  # biolink:has_part
         obj=chem_id,
         qualifiers=qualifiers if qualifiers else None,
+        value=value,
+        unit=unit,
     )
 
 
@@ -612,15 +607,7 @@ def medium_to_ingredient_edge(
     if not chem_id:
         return None
 
-    qualifiers = []
-    concentration = ingredient.get("concentration", {})
-    if concentration:
-        val = concentration.get("value")
-        unit = concentration.get("unit")
-        if val and unit:
-            qualifiers.append(
-                {"qualifier_type_id": "biolink:concentration", "qualifier_value": f"{val} {unit}"}
-            )
+    qualifiers, value, unit = _quantity(ingredient.get("concentration"))
 
     # Combine role tokens across the three facet slots (facet vocabulary
     # replaced the retired flat `role: IngredientRoleEnum` slot). Preserves
@@ -644,6 +631,8 @@ def medium_to_ingredient_edge(
         predicate=HAS_PART,  # biolink:has_part
         obj=chem_id,
         qualifiers=qualifiers if qualifiers else None,
+        value=value,
+        unit=unit,
         publications=pubs if pubs else None,
     )
 
@@ -689,15 +678,7 @@ def ingredient_to_edge(
     if not chem_id:
         return None
 
-    concentration = ingredient.get("concentration", {})
-    qualifiers = []
-    if concentration:
-        val = concentration.get("value")
-        unit = concentration.get("unit")
-        if val and unit:
-            qualifiers.append(
-                {"qualifier_type_id": "biolink:concentration", "qualifier_value": f"{val} {unit}"}
-            )
+    qualifiers, value, unit = _quantity(ingredient.get("concentration"))
 
     pubs, _ = _format_evidence(ingredient.get("evidence"))
 
@@ -706,6 +687,8 @@ def ingredient_to_edge(
         predicate="biolink:has_part",
         obj=chem_id,
         qualifiers=qualifiers if qualifiers else None,
+        value=value,
+        unit=unit,
         publications=pubs if pubs else None,
     )
 
@@ -920,12 +903,32 @@ def _create_solution_id(solution_name: str) -> str:
     return f"{PREFIX}:solution_{sanitized}"
 
 
+def _quantity(concentration: Any) -> tuple[list[dict], str | None, str | None]:
+    """The concentration of one row as (qualifiers, value, unit).
+
+    `value` and `unit` are the typed columns kg-microbe reads from the MediaDive
+    transform; the joined `biolink:concentration` qualifier is kept alongside
+    (#445). Both come straight from the record: the value string as written
+    (`'10'`, `'5e-05'`, `'variable'`) and the unit as its enum token.
+    """
+    if not isinstance(concentration, dict):
+        return [], None, None
+    val = concentration.get("value")
+    unit = concentration.get("unit")
+    if not (val and unit):
+        return [], None, None
+    qualifier = {"qualifier_type_id": "biolink:concentration", "qualifier_value": f"{val} {unit}"}
+    return [qualifier], str(val), str(unit)
+
+
 def _make_association(
     subject: str,
     predicate: str,
     obj: str,
     qualifiers: list[dict] | None = None,
     publications: list[str] | None = None,
+    value: str | None = None,
+    unit: str | None = None,
 ) -> dict:
     """Create an Association dictionary."""
     return {
@@ -935,6 +938,8 @@ def _make_association(
         "object": obj,
         "qualifiers": qualifiers,
         "publications": publications,
+        "value": value,
+        "unit": unit,
         "primary_knowledge_source": KNOWLEDGE_SOURCE,
         "knowledge_level": "knowledge_assertion",
         "agent_type": "manual_validation_of_automated_agent",
