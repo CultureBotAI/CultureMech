@@ -61,7 +61,12 @@ def test_every_solution_record_with_a_resolvable_composition_emits_a_has_part():
             silent.append(path.name)
         else:
             suppressed += 1
-    assert suppressed < 50, f"{suppressed} solution records have no resolvable row; expected ~10"
+    # Pinned, not bounded: the count is a property of the MIM pin, so a bump that
+    # changes it should show up here rather than slide under a loose ceiling (#417).
+    assert suppressed == 10, (
+        f"{suppressed} solution records have no resolvable composition row (baseline 10, "
+        "all single-row solutions MIM leaves unmapped); re-measure after a MIM pin bump"
+    )
     assert not silent, (
         f"{len(silent)} solution record(s) carry a resolvable composition but emit no "
         f"has_part (#442): " + ", ".join(silent[:10])
