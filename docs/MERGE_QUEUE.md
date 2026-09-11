@@ -11,6 +11,14 @@ After required PR checks pass, enqueue the reviewed revision with:
 gh pr merge PR_NUMBER --repo CultureBotAI/CultureMech --match-head-commit HEAD_SHA
 ```
 
+Enqueueing is asynchronous. Before deleting the branch or cleaning its worktree,
+confirm `state` is `MERGED`, `headRefOid` equals the reviewed `HEAD_SHA`, and
+`mergeCommit.oid` is present:
+
+```sh
+gh pr view PR_NUMBER --repo CultureBotAI/CultureMech --json state,headRefOid,mergeCommit
+```
+
 The queue selects the configured merge method. Avoid `--admin`, which bypasses
 the queue. On failure, inspect the PR timeline and the `merge_group` Actions
 run, fix the cause, and enqueue the updated revision after its PR checks pass.
