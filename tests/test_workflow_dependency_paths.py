@@ -85,12 +85,18 @@ def test_the_guard_is_not_vacuous():
     the likely way — every case above vanishes and the suite still passes.
     """
     blocks = _blocks()
-    assert len(blocks) >= 8, f"expected the known path-filtered blocks, found {len(blocks)}"
     assert len(_workflow_files()) >= 10, "workflow discovery found almost nothing"
-    assert {w for w, _, _ in blocks} >= {
-        "chebi-consistency.yaml",
-        "concentration-plausibility.yaml",
-        "curation-history.yaml",
-        "label-correspondence.yaml",
-        "validate-strict.yaml",
+    # PR checks are now unconditional for merge queues. These push scopes remain
+    # filtered, so discovering none is still a parser/discovery failure.
+    assert {(workflow, trigger) for workflow, trigger, _ in blocks} >= {
+        ("curation-history.yaml", "push"),
+        ("label-correspondence.yaml", "push"),
+        ("generate-pages.yaml", "push"),
     }
+
+
+@pytest.mark.parametrize("on_key", ["on", True])
+def test_path_discovery_handles_yaml_boolean_keys_and_unfiltered_events(on_key):
+    paths = ["data/**", "pyproject.toml", "uv.lock"]
+    document = {on_key: {"pull_request": None, "push": {"paths": paths}}}
+    assert _paths_blocks(document) == [("push", paths)]

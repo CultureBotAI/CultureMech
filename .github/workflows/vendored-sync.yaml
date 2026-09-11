@@ -14,8 +14,11 @@ name: vendored-sync
 
 on:
   pull_request:
+  merge_group:
+    types: [checks_requested]
   push:
-    branches: [main]
+    branches:
+    - main
   workflow_dispatch:
 
 permissions:

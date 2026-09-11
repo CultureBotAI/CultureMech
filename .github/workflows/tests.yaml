@@ -1,6 +1,6 @@
 name: tests
 
-# Deliberately NO `paths:` filter, unlike the data-integrity workflows.
+# Every pull request runs these tests, as does every merge queue candidate.
 #
 # Two reasons. First, this repo's tests span scripts/, src/, AND the corpus —
 # tests/test_record_kinds.py asserts against the real data/normalized_yaml/
@@ -8,18 +8,22 @@ name: tests
 # gates are how the repo ended up here: validate-strict and chebi-consistency
 # are both scoped to data/normalized_yaml/**, so a pure scripts/ + tests/ PR
 # could land with no checks at all (#129).
+# Required checks must report for every PR and merge queue candidate.
 on:
   pull_request:
+  merge_group:
+    types: [checks_requested]
   push:
-    branches: [main]
+    branches:
+    - main
   workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
-  group: tests-${{ github.ref }}
-  cancel-in-progress: true
+  group: ${{ github.workflow }}-${{ github.event_name == 'pull_request' && github.ref || github.run_id }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   changed-python-quality:
@@ -40,7 +44,7 @@ jobs:
         run: uv sync --frozen --extra dev
       - name: Ruff and Black on changed Python
         env:
-          GITHUB_EVENT_BEFORE: ${{ github.event.before }}
+          GITHUB_EVENT_BEFORE: ${{ github.event.merge_group.base_sha || github.event.before }}
         run: uv run python scripts/check_changed_python.py
       - name: Validate Claude skills
         run: uv run python scripts/validate_claude_skills.py

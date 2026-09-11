@@ -1,30 +1,18 @@
 name: validate-strict
 
+# Required checks must report for every PR and merge queue candidate.
 on:
   pull_request:
-      # data/merge_yaml/** is listed too, NOT because this gate reads it, but
-      # because GitHub evaluates these path filters against only the FIRST 300
-      # changed files. A corpus-wide PR changes ~20k files, merge_yaml sorts
-      # first, and a filter naming only normalized_yaml never matches — the
-      # workflow is then silently ABSENT from the checks rather than reported
-      # as skipped, and the PR reads as green. See #277.
-    paths:
-      - 'data/normalized_yaml/**'
-      - 'data/merge_yaml/**'
-      - 'src/culturemech/schema/**'
-      - 'scripts/validate_strict.py'
-      - 'project.justfile'
-      - 'pyproject.toml'
-      - 'uv.lock'
-      - '.github/workflows/validate-strict.yaml'
+  merge_group:
+    types: [checks_requested]
   workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
-  group: validate-strict-${{ github.ref }}
-  cancel-in-progress: true
+  group: ${{ github.workflow }}-${{ github.event_name == 'pull_request' && github.ref || github.run_id }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   validate:

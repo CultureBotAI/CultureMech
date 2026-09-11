@@ -13,34 +13,19 @@ name: concentration-plausibility
 # with corpus size; a new flattened cocktail is a specific defect shape that an
 # import has reintroduced.
 
+# Required checks must report for every PR and merge queue candidate.
 on:
   pull_request:
-    # Scoped to normalized_yaml: the detectors read only that tree. merge_yaml is
-    # derived from it, so a defect introduced *only* in merge_yaml would not be
-    # caught here — same caveat as chebi-consistency.
-      # data/merge_yaml/** is listed too, NOT because this gate reads it, but
-      # because GitHub evaluates these path filters against only the FIRST 300
-      # changed files. A corpus-wide PR changes ~20k files, merge_yaml sorts
-      # first, and a filter naming only normalized_yaml never matches — the
-      # workflow is then silently ABSENT from the checks rather than reported
-      # as skipped, and the PR reads as green. See #277.
-    paths:
-      - 'data/normalized_yaml/**'
-      - 'data/merge_yaml/**'
-      - 'scripts/audit_concentration_plausibility.py'
-      - 'scripts/audit_merged_duplicates.py'
-      - 'project.justfile'
-      - 'pyproject.toml'
-      - 'uv.lock'
-      - '.github/workflows/concentration-plausibility.yaml'
+  merge_group:
+    types: [checks_requested]
   workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
-  group: concentration-plausibility-${{ github.ref }}
-  cancel-in-progress: true
+  group: ${{ github.workflow }}-${{ github.event_name == 'pull_request' && github.ref || github.run_id }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   plausibility:
@@ -63,8 +48,7 @@ jobs:
       - name: Check concentration plausibility
         run: just audit-concentration-plausibility
 
-      # Runs here rather than in its own workflow because it shares this one's
-      # path filter exactly and guards the same thing — a concentration that is
+      # Runs here because it guards the same thing — a concentration that is
       # not a real measurement. Its baselines are per-detector, so it cannot
       # trade a repair in one class against a regression in another (#302).
       - name: Check for summed duplicate-merge artifacts
