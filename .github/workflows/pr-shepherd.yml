@@ -1,0 +1,231 @@
+# Governed by culturebotai-claw: vendored byte-identical into every Mech through
+# kg-microbe-governance, pinned in scripts/.vendored_canon_ref. Edit the canonical
+# copy in claw, not this file -- check_vendored_sync.sh fails on any local drift.
+name: PR shepherd
+
+# The fleet's FIRST agent workflow, piloted in TraitMech and now vendored to
+# every Mech, per culturebotai-claw docs/AUTONOMOUS_LOOPS.md section 5.4.
+#
+# pr-shepherd goes first among agents because it can only advance PRs that
+# already exist — it cannot invent work, so the worst case is a wrong comment
+# rather than a wrong change.
+#
+# ─────────────────────────────────────────────────────────────────────────────
+# THIS VERSION IS COMMENT-ONLY, AND THAT IS NOT A PLACEHOLDER — IT IS THE
+# CORRECT SCOPE UNTIL THE WRITER/REVIEWER APP SPLIT EXISTS.
+#
+# Two things are missing without it, and both are silent failures:
+#
+#   1. Pushes made with the built-in GITHUB_TOKEN do NOT trigger other
+#      workflows. An agent that pushed a fix commit would produce a PR whose
+#      checks never ran, showing green because nothing evaluated it.
+#   2. With a single identity, the bot that writes a PR can approve it. Review
+#      by the same actor that made the change is not review.
+#
+# So this agent may ONLY read and post one comment. It must not merge, push,
+# edit files, approve, or change labels. Those capabilities arrive with the
+# Apps — see culturebotai-claw docs/AUTONOMOUS_LOOPS.md section 5.7.
+# ─────────────────────────────────────────────────────────────────────────────
+#
+# NO `schedule:` TRIGGER, deliberately. culturebotai-claw/.github/cron-profiles.yaml
+# has `active: "off"`, and its `off` profile lists pr-shepherd with an empty
+# schedule. Shipping a cron here would make the fleet's kill switch a lie on the
+# very first agent it is supposed to govern. Run it by hand until the cadence is
+# deliberately changed there.
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Report only; post no comment (default true)"
+        required: false
+        default: "true"
+        type: choice
+        options: ["true", "false"]
+      max_prs:
+        description: "How many PRs to assess in one run"
+        required: false
+        default: "3"
+        type: string
+      pr_number:
+        description: "Assess only this PR (blank = scan open PRs)"
+        required: false
+        default: ""
+        type: string
+
+permissions:
+  contents: read          # read the diff; never push
+  pull-requests: write    # post one assessment comment
+  issues: read
+
+concurrency:
+  group: pr-shepherd
+  cancel-in-progress: false
+
+jobs:
+  shepherd:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      # Only needed to parse the fleet agent-config below, but that is enough:
+      # the alternative is a bare `python3` whose PyYAML is whatever the runner
+      # image happens to ship (#205). This pin deliberately matches every other
+      # setup-uv call site in this directory (#203) — keep them moving
+      # together. No version number is named here on purpose: the previous
+      # wording pinned "v7" into prose, and Dependabot bumps the SHA without
+      # ever touching a comment, so it went stale the moment v9.0.0 landed
+      # (#272, #273 — a version comment nobody checks is how a pin starts lying
+      # about what it is).
+      - name: Install uv
+        uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d # v10.0.1
+        with:
+          enable-cache: true
+
+      - name: Resolve model from the fleet agent-config
+        id: model
+        # Reads culturebotai-claw/.github/agent-config.yaml so the model lives in
+        # ONE place for the whole fleet rather than being restated per workflow.
+        # This is only possible because claw went public; while it was private a
+        # public repo's CI could not fetch it.
+        #
+        # Fails the job if the config cannot be read. A silent fallback to some
+        # default is how a repo ends up quietly running a model nobody chose.
+        run: |
+          set -euo pipefail
+          url=https://raw.githubusercontent.com/CultureBotAI/culturebotai-claw/main/.github/agent-config.yaml
+          curl -fsSL "$url" -o /tmp/agent-config.yaml
+          # `uv run --no-project --with pyyaml`, not bare python3: nothing here
+          # installs PyYAML, and the ubuntu-latest image happening to ship it in
+          # its system interpreter is an image detail, not a contract (#205).
+          # --no-project keeps uv from syncing this repo's whole dependency set
+          # just to parse one small YAML file.
+          model=$(uv run --no-project --with pyyaml python -c "
+          import yaml, sys
+          cfg = yaml.safe_load(open('/tmp/agent-config.yaml'))
+          wf = cfg.get('workflows', {}).get('pr-shepherd', {})
+          m = wf.get('model') or cfg.get('default_model')
+          if not m:
+              sys.exit('agent-config names no model for pr-shepherd and has no default_model')
+          print(m)
+          ")
+          echo "model=$model" >> "$GITHUB_OUTPUT"
+          echo "Using model: $model"
+
+      - name: Assess stuck PRs
+        uses: anthropics/claude-code-action@a874e9ecd7bb36efdad65429c6b35815f5a08f10 # v1.0.210
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          show_full_output: true
+        # NOTE: `gh api` is deliberately absent from --allowedTools below. It is a
+        # general HTTP client for the API, so allowlisting it would permit anything
+        # the token can do — including submitting an approving review, which
+        # `permissions:` grants and which is one of the two reasons this agent is
+        # comment-only (#195). `gh pr view/list/diff/checks --json` covers
+        # everything the shepherd legitimately needs.
+        #
+        # `Bash(gh pr comment:*)` is granted ONLY when dry_run is false. The prompt
+        # also says to post nothing in a dry run, but an instruction is not a
+        # constraint — and this agent reads untrusted PR diffs, which is where
+        # instruction-level limits are weakest. dry_run defaults to true, so the
+        # safest mode should be the one where the capability is simply absent.
+        # Same reasoning as excluding `gh api`: make it impossible, not forbidden
+        # (#204).
+        #
+        # This comment lives OUT here rather than inside `claude_args:`. That is a
+        # literal block scalar passed straight through as CLI arguments, so a `#`
+        # line in it would be handed to the binary as an argument, not ignored.
+          claude_args: |
+            --model ${{ steps.model.outputs.model }}
+            --allowedTools "Bash(gh pr list:*),Bash(gh pr view:*),Bash(gh pr diff:*),Bash(gh pr checks:*),Bash(git log:*),Bash(git diff:*),Read,Grep,Glob${{ inputs.dry_run == 'false' && ',Bash(gh pr comment:*)' || '' }}"
+          prompt: |
+            REPO: ${{ github.repository }}
+            DRY_RUN: ${{ inputs.dry_run }}
+            MAX_PRS: ${{ inputs.max_prs }}
+            SPECIFIC_PR: ${{ inputs.pr_number }}
+
+            You are the PR shepherd for this repository. Your job is to find pull
+            requests that are STUCK and say concisely why, so a human can unstick
+            them quickly.
+
+            ## What you may do
+
+            Read anything. Post AT MOST ONE comment, on the single most-stuck PR.
+
+            ## What you must NOT do — these are hard limits, not preferences
+
+            - Do NOT merge any PR, or enable auto-merge.
+            - Do NOT push commits, edit files, or create branches.
+            - Do NOT approve or request changes as a formal review.
+            - Do NOT add, remove or change labels, assignees or milestones.
+            - Do NOT open issues or new PRs.
+            - Do NOT close anything.
+
+            These are not arbitrary. This repository has no separate writer and
+            reviewer identity yet, so a push from you would produce a PR whose
+            checks never ran — green because nothing evaluated it — and an
+            approval from you would be the same actor reviewing its own work.
+            Until that is fixed, commenting is the only safe action.
+
+            If DRY_RUN is "true", post NOTHING. Report your assessment as your
+            final message only. In that mode the comment tool is not granted to
+            you at all, so this is a description of what you can do, not a rule
+            you are being trusted to follow.
+
+            ## Choosing
+
+            If SPECIFIC_PR is set, assess only that PR.
+
+            Otherwise list open PRs and consider at most MAX_PRS of them. Rank by
+            how stuck each is, most stuck first:
+
+            1. Approved but not merged, with checks complete — a pure oversight.
+            2. Approved but the branch is behind or conflicted.
+            3. Changes requested a long time ago with no follow-up, oldest first.
+            4. Checks failing, where the failure looks like a real defect rather
+               than flakiness.
+            5. Open a long time with no review at all.
+
+            Skip any PR that is a draft AND was updated recently — that is work in
+            progress, not a stuck PR. Skip anything labelled `needs-human`.
+
+            ## What to say
+
+            Begin with one sentence naming WHY you picked this PR over the others
+            you looked at — the deciding signal. That makes the selection
+            auditable rather than mysterious.
+
+            Then, briefly:
+            - what state the PR is in, with the concrete evidence (check names,
+              review state, how far behind the base branch)
+            - the single most useful next action a human could take
+            - anything that looks like a real defect in the diff, if you saw one
+
+            Be concrete and short. If a check is failing, name the check and quote
+            the salient line. Do not summarise the whole diff. Do not speculate
+            about intent.
+
+            If nothing is stuck, say so plainly and post nothing — a clean queue
+            is a good outcome and does not need a comment.
+
+      - name: Note the scope limits in the summary
+        if: always()
+        run: |
+          {
+            echo "## PR shepherd"
+            echo
+            echo "- model: \`${{ steps.model.outputs.model }}\` (from the fleet \`agent-config.yaml\`)"
+            echo "- dry run: \`${{ inputs.dry_run }}\`"
+            echo
+            echo "> [!NOTE]"
+            echo "> This agent is comment-only by design. It cannot merge, push,"
+            echo "> edit files, approve, or relabel. Those need the writer/reviewer"
+            echo "> App split — see culturebotai-claw docs/AUTONOMOUS_LOOPS.md section 5.7."
+          } >> "$GITHUB_STEP_SUMMARY"
