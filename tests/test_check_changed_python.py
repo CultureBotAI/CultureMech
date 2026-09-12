@@ -91,3 +91,30 @@ def test_the_vendored_exclusion_does_not_swallow_hand_written_scripts() -> None:
     hand_written = "scripts/export_kgx.py"
     assert (ROOT / hand_written).is_file()
     assert check_changed_python.select_python_files([hand_written]) == [hand_written]
+
+
+def test_merge_group_base_covers_changes_before_the_last_commit(tmp_path, monkeypatch):
+    """A queue candidate can include several PR commits; HEAD^ misses earlier ones."""
+
+    def git(*args):
+        return subprocess.check_output(
+            ["git", "-c", "user.name=Queue test", "-c", "user.email=queue@example.invalid", *args],
+            cwd=tmp_path,
+            text=True,
+        ).strip()
+
+    git("init", "--quiet")
+    git("commit", "--quiet", "--allow-empty", "-m", "base")
+    base = git("rev-parse", "HEAD")
+    for name in ("first.py", "second.py"):
+        (tmp_path / name).write_text("VALUE = 1\n")
+        git("add", name)
+        git("commit", "--quiet", "-m", name)
+    monkeypatch.setattr(check_changed_python, "ROOT", tmp_path)
+    monkeypatch.delenv("GITHUB_BASE_REF", raising=False)
+    monkeypatch.setenv("GITHUB_EVENT_BEFORE", base)
+    assert check_changed_python.changed_paths(check_changed_python.default_base()) == [
+        "first.py",
+        "second.py",
+    ]
+    assert check_changed_python.changed_paths("HEAD^") == ["second.py"]

@@ -16,21 +16,24 @@ name: label-correspondence
 # reloads the schema+OAK per file (~hours over the full corpus) and covers the
 # same canonical-label surface Engine B already enforces in one pass.
 
+# Required checks must report for every PR and merge queue candidate.
 on:
   pull_request:
-    paths: &trigger_paths
-      - "data/normalized_yaml/**"
-      - "data/merge_yaml/**"
-      - "output/**.sssom.tsv"
-      - "src/culturemech/schema/**"
-      - "scripts/validate_id_label_correspondence.py"
-      - "conf/id_label_targets.yaml"
-      - "pyproject.toml"
-      - "uv.lock"
-      - ".github/workflows/label-correspondence.yaml"
+  merge_group:
+    types: [checks_requested]
   push:
-    branches: [main]
-    paths: *trigger_paths
+    branches:
+    - main
+    paths:
+    - data/normalized_yaml/**
+    - data/merge_yaml/**
+    - output/**.sssom.tsv
+    - src/culturemech/schema/**
+    - scripts/validate_id_label_correspondence.py
+    - conf/id_label_targets.yaml
+    - pyproject.toml
+    - uv.lock
+    - .github/workflows/label-correspondence.yaml
   workflow_dispatch:
 
 permissions:
@@ -40,8 +43,7 @@ permissions:
 # fleet (culturebotai-claw#180, Phase 5). TraitMech was the canary and
 # MediaIngredientMech the second adopter; both passed on main before this.
 #
-# What stays here is what is CultureMech's: the trigger filter above, scoped to
-# this corpus, and the inputs below.
+# What stays here is what is CultureMech's: the trigger events and the inputs below.
 jobs:
   label-drift-report:
     # Pinned to a claw commit, not a branch: a moving ref would change this

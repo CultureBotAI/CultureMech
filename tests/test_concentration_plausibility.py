@@ -14,6 +14,7 @@ import sys
 from pathlib import Path
 
 import pytest
+import yaml
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
@@ -374,6 +375,17 @@ def test_the_gate_is_wired_into_ci():
     15 issues without ever being invoked."""
     wf = REPO_ROOT / ".github" / "workflows" / "concentration-plausibility.yaml"
     assert wf.is_file(), "no workflow runs the plausibility gate"
-    text = wf.read_text()
-    assert "just audit-concentration-plausibility" in text
-    assert "data/normalized_yaml/**" in text, "gate not triggered by corpus edits"
+    document = yaml.safe_load(wf.read_text())
+    events = document.get("on", document.get(True, {}))
+    # Unfiltered events cover corpus edits too; requiring a literal path would
+    # reject that stronger coverage. Missing events must still fail (#464).
+    assert "pull_request" in events, "corpus PRs do not trigger the gate"
+    assert events["pull_request"] in (None, {}), "required PR gate must be unfiltered"
+    assert events.get("merge_group") == {"types": ["checks_requested"]}
+    audit_steps = [
+        step
+        for step in document["jobs"]["plausibility"]["steps"]
+        if step.get("run") == "just audit-concentration-plausibility"
+    ]
+    assert audit_steps, "no executable step runs the plausibility gate"
+    assert all("if" not in step for step in audit_steps), "plausibility gate can be skipped"
