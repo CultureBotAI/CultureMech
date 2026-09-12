@@ -25,6 +25,10 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.event_name == 'pull_request' && github.ref || github.run_id }}
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
+# Keep uv commands on the fleet runtime, including --no-project invocations.
+env:
+  UV_PYTHON: "3.13"
+
 jobs:
   changed-python-quality:
     name: Changed Python quality + wheel smoke
@@ -68,17 +72,13 @@ jobs:
             "from culturemech.ingredients import resolve_ingredient; assert resolve_ingredient({'preferred_term': 'EDTA'}).identifier == 'CHEBI:4735'"
 
   fast:
-    name: Fast tests (Python ${{ matrix.python-version }})
+    name: Fast tests
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        python-version: ["3.10", "3.14"]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: ${{ matrix.python-version }}
+          python-version: "3.13"
       - uses: astral-sh/setup-uv@v6
       - uses: extractions/setup-just@v2
       - name: Sync dependencies

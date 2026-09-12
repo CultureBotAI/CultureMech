@@ -38,7 +38,11 @@ def checker() -> ModuleType:
 
 def _workflow_run_block() -> str:
     workflow = yaml.safe_load(WORKFLOW_PATH.read_text())
-    return workflow["jobs"]["vendored-sync"]["steps"][1]["run"]
+    return next(
+        step["run"]
+        for step in workflow["jobs"]["vendored-sync"]["steps"]
+        if step.get("name") == "Verify governed files against pinned claw manifest"
+    )
 
 
 def test_checker_uses_only_the_pinned_public_claw_manifest(checker: ModuleType) -> None:

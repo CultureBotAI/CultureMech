@@ -15,6 +15,7 @@ on:
       - "conf/qc_config.yaml"
       - "pyproject.toml"
       - "uv.lock"
+      - ".python-version"
       - ".github/workflows/generate-pages.yaml"
   workflow_dispatch:
 
@@ -26,6 +27,10 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: false
+
+# Keep uv commands on the fleet runtime, including --no-project invocations.
+env:
+  UV_PYTHON: "3.13"
 
 jobs:
   build:

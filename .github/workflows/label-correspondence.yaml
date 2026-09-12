@@ -33,6 +33,7 @@ on:
     - conf/id_label_targets.yaml
     - pyproject.toml
     - uv.lock
+    - .python-version
     - .github/workflows/label-correspondence.yaml
   workflow_dispatch:
 
@@ -51,7 +52,7 @@ jobs:
     # first that carries `report-when` (culturebotai-claw#300).
     uses: CultureBotAI/culturebotai-claw/.github/workflows/label-correspondence-reusable.yaml@b61decd96352838f09cd7fee031905784b0df058
     with:
-      python-version: "3.12"
+      python-version: "3.13"
       # output/ is gitignored, so the SSSOM product the `required: true` sssom
       # target reads has to be built before the gate runs.
       prepare-recipe: "generate-sssom"

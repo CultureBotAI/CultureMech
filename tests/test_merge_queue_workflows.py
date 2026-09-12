@@ -16,7 +16,7 @@ REQUIRED_JOBS = {
     "label-correspondence.yaml": {"label-drift-report": "label-drift-report"},
     "tests.yaml": {
         "changed-python-quality": "Changed Python quality + wheel smoke",
-        "fast": "Fast tests (Python ${{ matrix.python-version }})",
+        "fast": "Fast tests",
         "corpus-and-integration": "Full corpus and integration suite",
     },
     "validate-strict.yaml": {"validate": "validate"},
