@@ -47,10 +47,9 @@ permissions:
 # What stays here is what is CultureMech's: the trigger events and the inputs below.
 jobs:
   label-drift-report:
-    # Pinned to a claw commit, not a branch: a moving ref would change this
-    # gate with no commit in this repository to show for it. This ref is the
-    # first that carries `report-when` (culturebotai-claw#300).
-    uses: CultureBotAI/culturebotai-claw/.github/workflows/label-correspondence-reusable.yaml@b61decd96352838f09cd7fee031905784b0df058
+    # Immutable CLAW revision selects the fleet Python runtime while keeping
+    # shared validator changes reviewable in this repository.
+    uses: CultureBotAI/culturebotai-claw/.github/workflows/label-correspondence-reusable.yaml@c8b8f89ecf29574d7e24f6c65cfd925aefbdd007
     with:
       python-version: "3.13"
       # output/ is gitignored, so the SSSOM product the `required: true` sssom
