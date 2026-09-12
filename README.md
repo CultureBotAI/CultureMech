@@ -5,7 +5,7 @@ It combines LinkML validation, ontology grounding, provenance, deduplication,
 browser exports, and static recipe pages.
 
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/python-3.10--3.14-blue.svg)](pyproject.toml)
+[![Python](https://img.shields.io/badge/python-3.13-blue.svg)](.python-version)
 
 ## Corpus snapshot
 
@@ -31,8 +31,9 @@ outputs. Run `just update-readme-stats` after corpus changes. CI runs
 
 ## Install
 
-CultureMech supports Python 3.10 through 3.14 and uses
-[uv](https://docs.astral.sh/uv/) plus [just](https://just.systems/).
+Development and CI use Python 3.13, pinned in `.python-version`, with
+[uv](https://docs.astral.sh/uv/) plus [just](https://just.systems/). Package metadata
+continues to permit Python 3.10 through 3.14; CI tests the maintained 3.13 runtime.
 
 ```bash
 git clone https://github.com/CultureBotAI/CultureMech.git

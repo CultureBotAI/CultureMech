@@ -23,6 +23,10 @@ concurrency:
   group: merge-yaml-freshness
   cancel-in-progress: true
 
+# Keep uv commands on the fleet runtime, including --no-project invocations.
+env:
+  UV_PYTHON: "3.13"
+
 jobs:
   freshness:
     runs-on: ubuntu-latest

@@ -28,6 +28,7 @@ on:
     - src/culturemech/schema/history.yaml
     - pyproject.toml
     - uv.lock
+    - .python-version
     - .github/workflows/curation-history.yaml
   workflow_dispatch:
 
@@ -37,6 +38,10 @@ permissions:
 concurrency:
   group: ${{ github.workflow }}-${{ github.event_name == 'pull_request' && github.ref || github.run_id }}
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+# Keep uv commands on the fleet runtime, including --no-project invocations.
+env:
+  UV_PYTHON: "3.13"
 
 jobs:
   history:
