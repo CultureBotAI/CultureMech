@@ -40,9 +40,11 @@ cannot support a record-level verdict on their own.
 ## Scope
 
 <!-- canonical:begin scope -->
-Review only maintained YAML records from this repository's curated record
-corpus. Do not patch generated artifacts, generated pages, cache files, reports,
-or cross-repository outputs to make a reviewed record look correct.
+Review only YAML records from this repository's curated record corpus. If a
+record is generated from a maintained table, overlay, or source transform,
+report the maintained upstream input that owns any future fix. Do not patch
+generated artifacts, generated pages, cache files, reports, or cross-repository
+outputs to make a reviewed record look correct.
 
 Use the write boundaries, generated-output warnings, and curation ownership
 rules from `.claude/skills/curate-yaml-record/SKILL.md` to decide where a future
@@ -90,16 +92,19 @@ search, call the miss provisional.
 ## Workflow
 
 <!-- canonical:begin workflow -->
-1. Read the local guidance: `CLAUDE.md`,
+1. Read the local guidance that names exact validators and write boundaries:
+   `CLAUDE.md`, `justfile`,
    `.claude/skills/curate-yaml-record/SKILL.md`, and
    `.claude/skills/curate-yaml-record/references/review-checklist.md`.
 2. Resolve one YAML file under the curated record globs named above. Confirm
    its class, identifier, label, source provenance, grounding status, evidence
    entries, discussion or quality flags, generated status, and curation history
    shape.
-3. Run the focused schema, strict, term, reference, and history validators that
-   apply to a single record in this repository. Keep any missing dependency,
-   cache, network, or skipped check in the report.
+3. Run the schema, strict, term, reference, and history validators documented
+   for this record in this repository. Do not invent a focused validator for a
+   category the repository exposes only as a full-corpus check; run the
+   narrowest documented validator and report any full-corpus-only, missing
+   dependency, cache, network, or skipped check.
 4. Verify identity first: confirm the file denotes the requested biological or
    chemical thing, not a sibling, example, variant, source artifact, generated
    copy, or similarly named class.
